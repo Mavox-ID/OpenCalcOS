@@ -1,0 +1,6 @@
+v='z1.lib z2.lib'
+echo TEST >$v
+echo 'z1.lib:' `cat 'z1.lib' 2>/dev/null; echo $?`
+echo 'z2.lib:' `cat 'z2.lib' 2>/dev/null; echo $?`
+echo '"z1.lib z2.lib":' `cat 'z1.lib z2.lib' 2>/dev/null; echo $?`
+rm z*.lib
