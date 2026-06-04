@@ -1,0 +1,8 @@
+>tempfile0.lib
+>tempfile1.lib
+>tempfile9.lib
+# The [...] is interpreted as: "any of the chars 0, -, and 9"
+echo tempfile[0"$((-9))"].lib
+# The [...] is [0-9], interpreted as: "any digit"
+echo tempfile[0$((-9))].lib
+rm tempfile?.lib
