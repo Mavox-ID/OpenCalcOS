@@ -1,0 +1,10 @@
+>ZVAR=z.lib
+>z.lib
+ZVAR=*.lib echo ZVAR=*.lib "ZVAR=*.lib" "ZVAR=[z].lib"
+ZVAR=*.lib /bin/echo ZVAR=*.lib "ZVAR=*.lib" "ZVAR=[z].lib"
+ZVAR=*.lib
+echo "$ZVAR"
+echo $ZVAR
+echo ZVAR=*.lib "ZVAR=*.lib" "ZVAR=[z].lib"
+/bin/echo ZVAR=*.lib "ZVAR=*.lib" "ZVAR=[z].lib"
+rm ZVAR=z.lib z.lib
