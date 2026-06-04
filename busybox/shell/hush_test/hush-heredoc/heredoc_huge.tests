@@ -1,0 +1,9 @@
+# This creates 120k heredoc
+echo 'cat <<HERE | md5sum' >"$0.lib"
+yes "123456789 123456789 123456789 123456789" | head -3000 >>"$0.lib"
+echo 'HERE' >>"$0.lib"
+
+yes "123456789 123456789 123456789 123456789" | head -3000 | md5sum
+. "$0.lib"
+rm "$0.lib"
+echo End
