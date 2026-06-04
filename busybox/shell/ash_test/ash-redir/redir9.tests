@@ -1,0 +1,4 @@
+echo Ok >file.lib
+cat 0<>file.lib
+echo Done:$?
+rm file.lib
