@@ -1,0 +1,6 @@
+ZVAR=z.lib ZVAR=*.lib ZVAR=[z].lib
+ZVAR=z.lib ZVAR=*.lib ZVAR=[z].lib
+*.lib
+ZVAR=z.lib z.lib
+ZVAR=z.lib ZVAR=*.lib ZVAR=[z].lib
+ZVAR=z.lib ZVAR=*.lib ZVAR=[z].lib
