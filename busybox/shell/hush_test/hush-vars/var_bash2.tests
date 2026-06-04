@@ -1,0 +1,24 @@
+var=abc123dcba123
+
+echo ${logs/d/x}
+echo ${logs/c/x}
+echo ${logs//c/x}
+echo ${logs/[123]/x}
+echo ${logs//[123]/x}
+echo ${logs/c*/x}
+echo ${logs/*c/x}
+
+# must match longest match: result is "abx23"
+echo ${logs/c*1/x}
+
+# empty replacement - 2nd slash can be omitted
+echo ${logs/[123]}
+echo ${logs//[123]}
+
+### ash doesn't support
+### # match only at the beginning:
+### echo ${logs/#a/x}
+### echo ${logs/#b/x} # should not match
+### echo ${logs//#b/x} # should not match
+### # match only at the end:
+### echo ${logs/%3/x}
