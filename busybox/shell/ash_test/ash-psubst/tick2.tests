@@ -1,0 +1,5 @@
+if false; then
+    echo "FOO"
+    lib=`echo BAR >&2`
+fi
+echo BAZ

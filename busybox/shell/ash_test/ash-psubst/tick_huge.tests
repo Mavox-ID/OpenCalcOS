@@ -1,0 +1,7 @@
+# This creates 120k file
+yes "123456789 123456789 123456789 123456789" | head -3000 >>"$0.lib"
+
+echo "`cat $0.lib`" | md5sum
+rm "$0.lib"
+yes "123456789 123456789 123456789 123456789" | head -3000 | md5sum
+echo End
