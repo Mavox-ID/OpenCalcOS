@@ -5,7 +5,7 @@ GREEN='\033[0;32m'
 RED='\033[0;31m'
 set -e
 cd ..
-echo -e "${GREEN}Done. All in rootfs/bin (busybox + sl)${NC}"
+echo -e "${GREEN}Done. All in calcfs/bin (busybox + sl)${NC}"
 echo -e "${GREEN}Building CalcFS...${NC}"
 
 if [ ! -f calcfs/bin/busybox ]; then
@@ -14,8 +14,8 @@ if [ ! -f calcfs/bin/busybox ]; then
 fi
 
 echo -e "${GREEN}Cleaning...${NC}"
-rm -rf calcfs.tns
+rm -rf CalcFS.tns
 echo -e "${GREEN}Packing TNS...${NC}"
-cd calcfs && find . | cpio -o -H newc 2>/dev/null | gzip -9 > ../calcfs.tns
+cd calcfs && find . | cpio -o -H newc 2>/dev/null | gzip -9 > ../CalcFS.tns
 cd ..
-echo -e "${GREEN}Done: calcfs.tns${NC} ($(du -h calcfs.tns | cut -f1))"
+echo -e "${GREEN}Done: CalcFS.tns${NC} ($(du -h CalcFS.tns | cut -f1))"

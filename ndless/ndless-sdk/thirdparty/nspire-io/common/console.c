@@ -36,7 +36,7 @@
 #include <errno.h>
 #include <os.h>
 
-extern int nio_scrbuf_init(void);
+extern bool nio_scrbuf_init(void);
 extern void nio_scrbuf_free(void);
 static nio_console* nio_default = NULL;
 static unsigned int csl_count = 0;

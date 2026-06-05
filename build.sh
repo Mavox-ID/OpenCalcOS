@@ -10,7 +10,7 @@ NC='\033[0m'
 CURRENT_STEP="startup"
 ROOT_DIR="$(pwd)"
 
-trap 'echo -e "\n${RED}Error:${NC} Step: ${YELLOW}${CURRENT_STEP}${NC} failed (line $LINENO)"; rm -rf "$ROOT_DIR/build"; exit 1' ERR
+trap 'echo -e "\n${RED}Error:${NC} Step: ${YELLOW}${CURRENT_STEP}${NC} failed (line $LINENO)"; exit 1' ERR
 
 step() {
     CURRENT_STEP="$1"
@@ -18,11 +18,10 @@ step() {
 }
 
 step "Preparation to build"
-mkdir -p build
 cd tools
 echo -e "${GREEN}Done.${NC}"
 
-export PATH="$(pwd)/ndless/ndless-sdk/toolchain/install/bin:$(pwd)/ndless/ndless-sdk/bin:$PATH"
+export PATH="$ROOT_DIR/ndless/ndless-sdk/toolchain/install/bin:$ROOT_DIR/ndless/ndless-sdk/bin:$PATH"
 
 step "Cleaning all"
 bash clean.sh
@@ -45,13 +44,14 @@ bash loader.sh
 step "Commit"
 
 cd ..
+mkdir -p build
 echo -e "${GREEN}Starting commit...${NC}"
 mv zCalc.tns build/zCalc.tns
 echo -e "${GREEN}Moved zCalc${NC}"
-mv calcfs.tns build/calcfs.tns
+mv CalcFS.tns build/CalcFS.tns
 echo -e "${GREEN}Moved CalcFS${NC}"
 cp -r ndless/ndless/calcbin build/NDless
 echo -e "${GREEN}Copyed NDless${NC}"
-mv loader.tns build/loader.tns
+mv Loader.tns build/Loader.tns
 echo -e "${GREEN}Moved Loader${NC}"
 echo -e "\n${GREEN}Done. All in build folder${NC}"

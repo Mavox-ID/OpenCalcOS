@@ -22,7 +22,7 @@ else
     if ! (
 	export CXXFLAGS="$CXXFLAGS -fno-char8_t"
 	export CFLAGS="$CFLAGS -fno-char8_t"
-        (cd ndless/ndless-sdk/toolchain && rm -rf .built_* download install && ./toolchain.sh)
+        (cd ndless/ndless-sdk/toolchain && rm -rf .built_* install && ./toolchain.sh)
     ); then
         echo -e "${RED}Error: Toolchain compilation failed!${NC}"
         exit 1

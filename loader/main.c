@@ -25,7 +25,7 @@
 #include "debug.h"
 
 #define DEFAULT_KERNEL_LOCATION "/zCalc.tns"
-#define DEFAULT_FILESYSTEM_LOCATION "/calcfs.tns"
+#define DEFAULT_FILESYSTEM_LOCATION "/CalcFS.tns"
 #define DEFAULT_CMDLINE "earlyprintk debug keep_bootcon"
 #define MACHINE_ID  3503
 #define MAX_KERNEL_SIZE 0x400000
@@ -35,7 +35,7 @@
 void wait_key_pressed(void);
 void refresh_osscr(void);
 
-void __crt0_exit(void) {
+__attribute__((weak)) void __crt0_exit(void) {
     puts("\n[!] Loader Panic: Unexpected exit.");
     puts("Press any key to reboot...");
     

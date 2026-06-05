@@ -9,6 +9,5 @@ echo -e "${GREEN}Building Loader...${NC}"
 echo -e "${GREEN}Cleaning...${NC}"
 (make clean)
 echo -e "${GREEN}Building TNS...${NC}"
-(make -j"$(nproc)" && cp loader.tns ../loader.tns)
-pwd
+(make -j"$(nproc)" && cp Loader.tns ../Loader.tns)
 echo -e "${GREEN}Done:${NC} ${YELLOW}loader.tns${NC}"

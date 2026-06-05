@@ -392,7 +392,7 @@ endif
 # of make so .config is not included in this case either (for *config).
 
 no-dot-config-targets := clean mrproper distclean \
-			 cscope TAGS tags help %docs
+			 cscope TAGS tags help
 #bbox# check% is removed from above
 
 config-targets := 0
@@ -1061,8 +1061,6 @@ boards := $(notdir $(boards))
 
 # Documentation targets
 # ---------------------------------------------------------------------------
-%docs: scripts_basic FORCE
-	$(Q)$(MAKE) $(build)=Documentation/DocBook $@
 
 else # KBUILD_EXTMOD
 

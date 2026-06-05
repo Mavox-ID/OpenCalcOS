@@ -23,7 +23,7 @@ OBJCOPY := "$(shell which arm-elf-objcopy 2>/dev/null)"
 ifeq (${OBJCOPY},"")
 	OBJCOPY := arm-none-eabi-objcopy
 endif
-EXE = loader.tns
+EXE = Loader.tns
 OBJS = $(patsubst %.c,%.o,$(wildcard *.c))
 OBJS += $(patsubst %.S,%.o,$(wildcard *.S))
 DISTDIR = .
