@@ -10794,12 +10794,17 @@ static int FAST_FUNC builtin_help(char **argv UNUSED_PARAM)
 	const struct built_in_command *x;
 
 	printf(
-		"Built-in commands:\n"
-		"------------------\n");
+		"\n\033[1;32m=== Welcome to OpenCalcOS ===\033[0m\n"
+		"Developer: Mavox-ID\n\n"
+		"Available shell commands:\n"
+		"------------------------\n");
+
 	for (x = bltins1; x != &bltins1[ARRAY_SIZE(bltins1)]; x++) {
 		if (x->b_descr)
 			printf("%-10s%s\n", x->b_cmd, x->b_descr);
 	}
+
+	printf("\nUse '[command] --help' for core utilities.\n\n");
 	return EXIT_SUCCESS;
 }
 #endif

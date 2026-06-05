@@ -1,1 +1,1 @@
-#undef CONFIG_BASH_IS_HUSH
+#define CONFIG_BASH_IS_HUSH 1

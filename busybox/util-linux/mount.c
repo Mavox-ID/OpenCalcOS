@@ -233,6 +233,8 @@
 #define BB_MS_INVERTED_VALUE (1u << 31)
 
 #include "libbb.h"
+#define xhost2sockaddr(host, port) NULL
+#define xmalloc_sockaddr2dotted_noport(sa) NULL
 #include "common_bufsiz.h"
 #if ENABLE_FEATURE_MOUNT_LABEL
 # include "volume_id.h"
