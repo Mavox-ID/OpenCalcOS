@@ -94,7 +94,7 @@ To boot Linux, launch `Loader.tns`. The loader handles the entire boot sequence 
 5. To leave run `off` or `reboot` or just reboot calculator
 
 ## Features of OpenCalcOS
-- **Full support** for **Linux programs**, runtime, proc, etc. **(But not linux :)**
+- **Full support** for **Linux programs**, runtime, proc, etc. **(But not linux :)** [xq* Attention! This kernel, although it was made based on 50% of Linux files and has things like Ext from Linux or ELF, is a completely different kernel (Calc Kernel - calck) and has nothing to do with Linux, although you can call it Linux because it has full Linux support, just like the original kernel.]
 - Ready-to-use POSIX utilities with BusyBox such as 'gold standard', **i2c**, **disks** and **hex code**
 - Full support for **vi** and **nano** to suit your taste, now in **/bin**!
 - The build build is ready. After running bash build.sh, you'll have a built folder containing the files you need to place on the calculator. Follow the instructions and everything will work!
@@ -114,4 +114,5 @@ The project uses other projects, such as BusyBox and NDless, and they are distri
 ---
 
 *Happy Hacking!*
+
 
