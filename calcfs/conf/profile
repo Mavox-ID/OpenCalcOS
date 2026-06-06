@@ -1,5 +1,0 @@
-export PATH=/bin
-export HOME=/calc
-export CALCNAME=$(cat /conf/calcname 2>/dev/null || echo opencalc)
-export PS1="${CALCNAME}> "
-cd /calc

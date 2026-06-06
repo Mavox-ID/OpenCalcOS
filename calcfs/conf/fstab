@@ -1,4 +1,0 @@
-# OpenCalcOS fstab
-calcproc  /proc   proc      defaults  0 0
-calcsys   /sys   sysfs      defaults  0 0
-tmpfs     /temp  tmpfs      defaults  0 0
