@@ -1,4 +1,20 @@
 #!/bin/bash
+#    Mavox-ID | https://ye-a.pp.ua
+#    Copyright (C) 2026  Mavox-ID
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 set -e && cd ..
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
@@ -48,6 +64,37 @@ echo -e "${GREEN}Building libc...${NC}"
 
 echo -e "${GREEN}Building Ndless...${NC}"
 (cd ndless && make -j"$(nproc)" -C ndless && cd ..)
+
+echo -e "${GREEN}Building ncurses...${NC}"
+(
+    cd ndless/ncurses
+    ABS_DEST="$(pwd)/dest"
+
+    if [ ! -f Makefile ]; then
+        export CC=arm-linux-gnueabi-gcc
+        export CXX=arm-linux-gnueabi-g++
+        export AR=arm-linux-gnueabi-ar
+        export RANLIB=arm-linux-gnueabi-ranlib
+
+        ./configure \
+            --host=arm-linux-gnueabi \
+            --prefix="$ABS_DEST" \
+            --libdir="$ABS_DEST/libs" \
+            --with-shared \
+            --without-debug \
+            --without-ada \
+            --without-tests \
+            --without-progs \
+            --disable-stripping
+    fi
+    
+    make -j"$(nproc)"
+    make install.libs install.includes
+    
+    mkdir -p ../../calcfs/libs/
+    cp -d "$ABS_DEST/libs/"lib*.so* ../../calcfs/libs/
+    echo "Ncurses done. All in $ABS_DEST"
+)
 
 echo -e "${GREEN}Done.${NC} ${YELLOW}Installer: ndless/ndless/calcbin/${NC}"
 echo -e "${GREEN}Choose version${NC}   ${YELLOW}>>>>>>>>>>>>>>>>>>>>>>${NC}"
