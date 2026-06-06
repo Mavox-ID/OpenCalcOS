@@ -93,6 +93,15 @@ To boot Linux, launch `Loader.tns`. The loader handles the entire boot sequence 
 4. It launches `zCalc.tns`, successfully booting Linux!
 5. To leave run `off` or `reboot` or just reboot calculator
 
+## Features of OpenCalcOS
+- **Full support** for **Linux programs**, runtime, proc, etc. **(But not linux :)**
+- Ready-to-use POSIX utilities with BusyBox such as 'gold standard', **i2c**, **disks** and **hex code**
+- Full support for **vi** and **nano** to suit your taste, now in **/bin**!
+- The build build is ready. After running bash build.sh, you'll have a built folder containing the files you need to place on the calculator. Follow the instructions and everything will work!
+- I can help with calculator support for any bug!
+- Completely open source! Fork it, modify it, and do whatever you want. This is code that took one person about three months to build! This is busybox, calckernel, and so on. Where there's a `.config` file, just type `make menuconfig` and tweak it however you like!
+
+
 ## LICENSE
 The project uses other projects, such as BusyBox and NDless, and they are distributed under their own licenses. Also, please note that I have heavily modified the BusyBox and NDless projects, so downloading them from the internet and building them using bash busybox.sh or bash build.sh will not work and will result in errors (the same applies to NDless).
 
@@ -105,3 +114,4 @@ The project uses other projects, such as BusyBox and NDless, and they are distri
 ---
 
 *Happy Hacking!*
+
