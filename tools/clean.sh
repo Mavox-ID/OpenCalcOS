@@ -32,7 +32,7 @@ echo -e "${YELLOW}Cleaning Kernel...${NC}"
 (cd kernel && make clean && cd ..)
 
 echo -e "${YELLOW}Cleaning Busybox...${NC}"
-(cd busybox && make clean && cd ..)
+(cd busybox && make clean && rm -rf ../calcfs/bin && mkdir ../calcfs/bin && cd ..)
 
 echo -e "${YELLOW}Cleaning Nano...${NC}"
 if [ -d "nano" ] && [ -f "nano/Makefile" ]; then

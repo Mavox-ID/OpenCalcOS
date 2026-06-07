@@ -19,7 +19,6 @@ cd ..
 set -euo pipefail
 
 cd busybox && make clean && make -j"$(nproc)"
-rm -rf ../calcfs/bin && mkdir ../calcfs/bin
 cp busybox ../calcfs/bin/busybox
 cd ../calcfs/bin && ./busybox --install -s . && cd ../..
 

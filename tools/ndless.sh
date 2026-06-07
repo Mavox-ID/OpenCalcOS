@@ -75,6 +75,7 @@ echo -e "${GREEN}Building ncurses...${NC}"
         export CXX=arm-linux-gnueabi-g++
         export AR=arm-linux-gnueabi-ar
         export RANLIB=arm-linux-gnueabi-ranlib
+        export LDFLAGS="-Wl,-rpath,/libs -Wl,-dynamic-linker,/libs/ld-linux-armhf.so.3"
 
         ./configure \
             --host=arm-linux-gnueabi \
@@ -84,16 +85,24 @@ echo -e "${GREEN}Building ncurses...${NC}"
             --without-debug \
             --without-ada \
             --without-tests \
-            --without-progs \
             --disable-stripping
     fi
     
     make -j"$(nproc)"
-    make install.libs install.includes
+    make install.libs install.includes install.progs
     
-    mkdir -p ../../calcfs/libs/
+    echo -e "${GREEN}Deploying ncurses libraries...${NC}"
     cp -d "$ABS_DEST/libs/"lib*.so* ../../calcfs/libs/
-    echo "Ncurses done. All in $ABS_DEST"
+    cp -d "$ABS_DEST/libs/"lib*.a ../../calcfs/libs/
+
+    echo -e "${GREEN}Deploying system dependencies (libc, ld-linux)...${NC}"
+    cp -L $(arm-linux-gnueabi-gcc -print-file-name=ld-linux-armhf.so.3) ../../calcfs/libs/ld-linux-armhf.so.3
+    cp -L $(arm-linux-gnueabi-gcc -print-file-name=libc.so.6) ../../calcfs/libs/libc.so.6
+    
+    echo -e "${GREEN}Deploying cterm and gterm...${NC}"
+    cp "$ABS_DEST/bin/tic" ../../calcfs/bin/cterm
+    cp "$ABS_DEST/bin/infocmp" ../../calcfs/bin/gterm
+    echo -e "${GREEN}Ncurses done. All in $ABS_DEST${NC}"
 )
 
 echo -e "${GREEN}Done.${NC} ${YELLOW}Installer: ndless/ndless/calcbin/${NC}"
