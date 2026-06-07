@@ -6,7 +6,7 @@ OpenCalcOS is a complete, all-in-one toolkit designed to turn your TI-Nspire CX 
 
 ## Features
 
-* **CalcKernel (`zCalc.tns`)**: A modified Linux kernel optimized specifically for the TI-Nspire CX architecture.
+* **Beep (`zCalc.tns`)**: A modified Linux kernel optimized specifically for the TI-Nspire CX architecture.
 * **CalcFS (`CalcFS.tns`)**: A custom, temporary file system packed with a ready-to-build **BusyBox**, providing a full suite of POSIX commands.
 * **Custom Loader (`Loader.tns`)**: A smart bootloader that prepares the environment, maps memory addresses, unpacks the file system, and safely boots the kernel.
 * **Integrated Ndless**: Comes with a fully automated build environment for Ndless, allowing you to easily jailbreak your calculator and run unofficial compiled `.tns` packages.
@@ -62,7 +62,7 @@ Once the build is successful, a new `build/` directory will be created. This fol
 
 ### Step 1: Jailbreak with Ndless
 
-Ndless is required to jailbreak the calculator's firmware so it can run unofficial compiled `.tns` packages (like CalcKernel and Loader).
+Ndless is required to jailbreak the calculator's firmware so it can run unofficial compiled `.tns` packages (like Beep and Loader).
 
 1. Navigate to the compiled `build/NDless` folder.
 2. Find the Ndless installer file that matches your calculator's exact firmware version.
@@ -99,7 +99,7 @@ To boot Linux, launch `Loader.tns`. The loader handles the entire boot sequence 
 - Full support for **vi** and **nano** to suit your taste, now in **/bin**!
 - The build build is ready. After running bash build.sh, you'll have a built folder containing the files you need to place on the calculator. Follow the instructions and everything will work!
 - I can help with calculator support for any bug!
-- Completely open source! Fork it, modify it, and do whatever you want. This is code that took one person about three months to build! This is busybox, calckernel, and so on. Where there's a `.config` file, just type `make menuconfig` and tweak it however you like!
+- Completely open source! Fork it, modify it, and do whatever you want. This is code that took one person about three months to build! This is busybox, beep, and so on. Where there's a `.config` file, just type `make menuconfig` and tweak it however you like!
 
 
 ## LICENSE
@@ -107,7 +107,7 @@ The project uses other projects, such as BusyBox and NDless, and they are distri
 
 ### Licenses:
 
-- OpenCalcOS (Includes CalcKernel, CalcFS, and Loader): [GNU GPL v2.0](https://github.com/Mavox-ID/OpenCalcOS/blob/main/LICENSE)
+- OpenCalcOS (Includes Beep, CalcFS, and Loader): [GNU GPL v2.0](https://github.com/Mavox-ID/OpenCalcOS/blob/main/LICENSE)
 - BusyBox: [GNU GPL v2.0](https://github.com/Mavox-ID/OpenCalcOS/blob/main/busybox/LICENSE)
 - NDless: [Mozilla PL v1.1](https://github.com/Mavox-ID/OpenCalcOS/blob/main/ndless/Mozilla-Public-License-v1.1.html) (Download HTML & Open)
 
