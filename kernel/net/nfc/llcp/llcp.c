@@ -19,10 +19,10 @@
 
 #define pr_fmt(fmt) "llcp: %s: " fmt, __func__
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/nfc.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/nfc.h>
 
 #include "../nfc.h"
 #include "llcp.h"

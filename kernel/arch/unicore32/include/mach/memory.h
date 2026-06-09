@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/mach/memory.h
+ * beep/arch/unicore32/include/mach/memory.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *

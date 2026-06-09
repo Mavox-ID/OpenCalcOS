@@ -1,9 +1,9 @@
 #ifndef _ARCH_MIPS_LOCAL_H
 #define _ARCH_MIPS_LOCAL_H
 
-#include <linux/percpu.h>
-#include <linux/bitops.h>
-#include <linux/atomic.h>
+#include <beep/percpu.h>
+#include <beep/bitops.h>
+#include <beep/atomic.h>
 #include <asm/cmpxchg.h>
 #include <asm/war.h>
 

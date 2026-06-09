@@ -1,7 +1,7 @@
 #ifndef _NF_NAT_H
 #define _NF_NAT_H
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter/nf_nat.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/netfilter/nf_nat.h>
 #include <net/netfilter/nf_conntrack_tuple.h>
 
 enum nf_nat_manip_type {
@@ -22,8 +22,8 @@ struct nf_nat_seq {
 	int16_t offset_before, offset_after;
 };
 
-#include <linux/list.h>
-#include <linux/netfilter/nf_conntrack_pptp.h>
+#include <beep/list.h>
+#include <beep/netfilter/nf_conntrack_pptp.h>
 #include <net/netfilter/nf_conntrack_extend.h>
 
 /* per conntrack: nat application helper private data */

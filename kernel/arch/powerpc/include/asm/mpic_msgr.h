@@ -11,8 +11,8 @@
 #ifndef _ASM_MPIC_MSGR_H
 #define _ASM_MPIC_MSGR_H
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
 #include <asm/smp.h>
 #include <asm/io.h>
 
@@ -107,7 +107,7 @@ static inline void mpic_msgr_clear(struct mpic_msgr *msgr)
 /* Set the destination CPU for the message register
  *
  * @msgr:	the message register whose destination is to be set
- * @cpu_num:	the Linux CPU number to bind the message register to
+ * @cpu_num:	the Beep CPU number to bind the message register to
  *
  * Note that the CPU number given is the CPU number used by the kernel
  * and *not* the actual hardware CPU number.

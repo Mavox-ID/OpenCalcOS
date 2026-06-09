@@ -5,7 +5,7 @@
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armbeep.simtec.co.uk/
  *
  * SAMSUNG - GPIOlib support
  *
@@ -14,19 +14,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/of_address.h>
+#include <beep/kernel.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/ioport.h>
+#include <beep/of.h>
+#include <beep/slab.h>
+#include <beep/of_address.h>
 
 #include <asm/irq.h>
 

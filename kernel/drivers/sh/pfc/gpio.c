@@ -10,14 +10,14 @@
  */
 #define pr_fmt(fmt) "sh_pfc " KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/sh_pfc.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/sh_pfc.h>
 
 struct sh_pfc_chip {
 	struct sh_pfc		*pfc;

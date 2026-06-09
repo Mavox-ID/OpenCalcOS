@@ -9,7 +9,7 @@
  *   the GNU General Public License, incorporated herein by reference.
  *
  * Abstract:
- *   A Linux device driver supporting the Digital Equipment Corporation
+ *   A Beep device driver supporting the Digital Equipment Corporation
  *   FDDI TURBOchannel, EISA and PCI controller families.  Supported
  *   adapters include:
  *
@@ -21,19 +21,19 @@
  *   LVS	Lawrence V. Stefani <lstefani@yahoo.com>
  *
  * Maintainers:
- *   macro	Maciej W. Rozycki <macro@linux-mips.org>
+ *   macro	Maciej W. Rozycki <macro@beep-mips.org>
  *
  * Credits:
  *   I'd like to thank Patricia Cross for helping me get started with
- *   Linux, David Davies for a lot of help upgrading and configuring
+ *   Beep, David Davies for a lot of help upgrading and configuring
  *   my development system and for answering many OS and driver
  *   development questions, and Alan Cox for recommendations and
- *   integration help on getting FDDI support into Linux.  LVS
+ *   integration help on getting FDDI support into Beep.  LVS
  *
  * Driver Architecture:
  *   The driver architecture is largely based on previous driver work
  *   for other operating systems.  The upper edge interface and
- *   functions were largely taken from existing Linux device drivers
+ *   functions were largely taken from existing Beep device drivers
  *   such as David Davies' DE4X5.C driver and Donald Becker's TULIP.C
  *   driver.
  *
@@ -66,7 +66,7 @@
  *
  *   Driver Shutdown -
  *		Apparently, there is no shutdown or halt routine support under
- *		Linux.  This routine would be called during "reboot" or
+ *		Beep.  This routine would be called during "reboot" or
  *		"shutdown" to allow the driver to place the adapter in a safe
  *		state before a warm reboot occurs.  To be really safe, the user
  *		should close the adapter before shutdown (eg. ifconfig fddi0 down)
@@ -89,7 +89,7 @@
  *		controller interrupt enable/disable.
  *
  *		The driver currently enables and disables adapter interrupts at the
- *		bus-logic chip and assumes that Linux will take care of clearing or
+ *		bus-logic chip and assumes that Beep will take care of clearing or
  *		acknowledging any host-based interrupt chips.
  *
  *   Control Functions -
@@ -97,7 +97,7 @@
  *		or deleting multicast addresses, enabling or disabling packet
  *		reception filters, or other custom/proprietary commands.  Presently,
  *		the driver supports the "get statistics", "set multicast list", and
- *		"set mac address" functions defined by Linux.  A list of possible
+ *		"set mac address" functions defined by Beep.  A list of possible
  *		enhancements include:
  *
  *				- Custom ioctl interface for executing port interface commands
@@ -199,24 +199,24 @@
  */
 
 /* Include files */
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/eisa.h>
-#include <linux/errno.h>
-#include <linux/fddidevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/tc.h>
+#include <beep/bitops.h>
+#include <beep/compiler.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/eisa.h>
+#include <beep/errno.h>
+#include <beep/fddidevice.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/pci.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/tc.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>
@@ -3199,7 +3199,7 @@ static netdev_tx_t dfx_xmt_queue_pkt(struct sk_buff *skb,
 	 * Verify that incoming transmit request is OK
 	 *
 	 * Note: The packet size check is consistent with other
-	 *		 Linux device drivers, although the correct packet
+	 *		 Beep device drivers, although the correct packet
 	 *		 size should be verified before calling the
 	 *		 transmit routine.
 	 */

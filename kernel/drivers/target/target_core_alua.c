@@ -23,10 +23,10 @@
  *
  ******************************************************************************/
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/configfs.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/configfs.h>
+#include <beep/export.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <asm/unaligned.h>

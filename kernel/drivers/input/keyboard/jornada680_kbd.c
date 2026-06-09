@@ -16,15 +16,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input-polldev.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/input-polldev.h>
+#include <beep/interrupt.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 #include <asm/delay.h>
 #include <asm/io.h>

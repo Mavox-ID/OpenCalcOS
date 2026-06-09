@@ -1,8 +1,8 @@
-#include <linux/perf_event.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/perf_event.h>
+#include <beep/export.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 #include <asm/apicdef.h>
 
 #include "perf_event.h"

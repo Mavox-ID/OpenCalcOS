@@ -4,7 +4,7 @@
 #if !defined(_TRACE_9P_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_9P_H
 
-#include <linux/tracepoint.h>
+#include <beep/tracepoint.h>
 
 #define show_9p_op(type)						\
 	__print_symbolic(type,						\

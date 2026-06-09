@@ -1,7 +1,7 @@
 /* 
- *    Copyright (C) 2002 Richard Hirst <rhirst at parisc-linux.org>
- *    Copyright (C) 2003 James Bottomley <jejb at parisc-linux.org>
- *    Copyright (C) 2003 Randolph Chung <tausq with parisc-linux.org>
+ *    Copyright (C) 2002 Richard Hirst <rhirst at parisc-beep.org>
+ *    Copyright (C) 2003 James Bottomley <jejb at parisc-beep.org>
+ *    Copyright (C) 2003 Randolph Chung <tausq with parisc-beep.org>
  *
  *    This program is free software; you can redistribute it and/or modify
  *    it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 #ifndef _PARISC64_KERNEL_SYS32_H
 #define _PARISC64_KERNEL_SYS32_H
 
-#include <linux/compat.h>
+#include <beep/compat.h>
 
 /* Call a kernel syscall which will use kernel space instead of user
  * space for its copy_to/from_user.

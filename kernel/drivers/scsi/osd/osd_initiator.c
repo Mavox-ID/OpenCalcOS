@@ -39,8 +39,8 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include <scsi/osd_initiator.h>
 #include <scsi/osd_sec.h>
@@ -1899,7 +1899,7 @@ int osd_req_decode_sense_full(struct osd_request *or,
 analyze:
 	if (!osi->key) {
 		/* scsi sense is Empty, the request was never issued to target
-		 * linux return code might tell us what happened.
+		 * beep return code might tell us what happened.
 		 */
 		if (or->async_error == -ENOMEM)
 			osi->osd_err_pri = OSD_ERR_PRI_RESOURCE;

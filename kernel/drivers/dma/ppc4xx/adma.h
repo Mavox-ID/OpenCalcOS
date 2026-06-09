@@ -11,7 +11,7 @@
 #ifndef _PPC440SPE_ADMA_H
 #define _PPC440SPE_ADMA_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include "dma.h"
 #include "xor.h"
 

@@ -7,21 +7,21 @@
  *    Hiroyuki Kondo, Naoto Sugai, Hayato Fujiwara
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/timer.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/workqueue.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/bitops.h>
 #include <asm/irq.h>
 #include <asm/io.h>
 
@@ -261,7 +261,7 @@ static void pcc_set(u_short sock, unsigned int reg, unsigned int data)
 /*======================================================================
 
 	See if a card is present, powered up, in IO mode, and already
-	bound to a (non PC Card) Linux driver.  We leave these alone.
+	bound to a (non PC Card) Beep driver.  We leave these alone.
 
 	We make an exception for cards that seem to be serial devices.
 

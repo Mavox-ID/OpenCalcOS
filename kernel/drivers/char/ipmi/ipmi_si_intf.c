@@ -39,37 +39,37 @@
  * and drives the real SMI state machine.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/notifier.h>
-#include <linux/mutex.h>
-#include <linux/kthread.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/timer.h>
+#include <beep/errno.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/list.h>
+#include <beep/pci.h>
+#include <beep/ioport.h>
+#include <beep/notifier.h>
+#include <beep/mutex.h>
+#include <beep/kthread.h>
 #include <asm/irq.h>
-#include <linux/interrupt.h>
-#include <linux/rcupdate.h>
-#include <linux/ipmi.h>
-#include <linux/ipmi_smi.h>
+#include <beep/interrupt.h>
+#include <beep/rcupdate.h>
+#include <beep/ipmi.h>
+#include <beep/ipmi_smi.h>
 #include <asm/io.h>
 #include "ipmi_si_sm.h"
-#include <linux/init.h>
-#include <linux/dmi.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/pnp.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <beep/init.h>
+#include <beep/dmi.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/pnp.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
 
 #define PFX "ipmi_si: "
 
@@ -1911,7 +1911,7 @@ static int hardcode_find_bmc(void)
 
 #ifdef CONFIG_ACPI
 
-#include <linux/acpi.h>
+#include <beep/acpi.h>
 
 /*
  * Once we get an ACPI failure, we don't try any more, because we go

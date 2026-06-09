@@ -1,7 +1,7 @@
 #ifndef _PPC64_PPC32_H
 #define _PPC64_PPC32_H
 
-#include <linux/compat.h>
+#include <beep/compat.h>
 #include <asm/siginfo.h>
 #include <asm/signal.h>
 
@@ -22,7 +22,7 @@ struct __old_sigaction32 {
 	compat_uptr_t		sa_handler;
 	compat_old_sigset_t  	sa_mask;
 	unsigned int    	sa_flags;
-	compat_uptr_t		sa_restorer;     /* not used by Linux/SPARC yet */
+	compat_uptr_t		sa_restorer;     /* not used by Beep/SPARC yet */
 };
 
 

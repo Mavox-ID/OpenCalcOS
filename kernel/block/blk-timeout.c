@@ -1,10 +1,10 @@
 /*
  * Functions related to generic timeout handling of requests.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/fault-inject.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>
+#include <beep/fault-inject.h>
 
 #include "blk.h"
 

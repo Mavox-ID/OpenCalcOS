@@ -20,17 +20,17 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/list.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/if_ether.h>
+#include <beep/list.h>
+#include <beep/can/dev.h>
+#include <beep/can/error.h>
+#include <beep/io.h>
 
 #include "mscan.h"
 

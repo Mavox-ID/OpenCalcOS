@@ -24,15 +24,15 @@
    Use __KERNEL__ when you're about to use kernel functions,
        (which you should not do here anyway, since this file is
        used by glibc).
-   Use defined(__KERNEL__) || defined(__elinux__) when doing
-       things that only makes sense on an elinux system.
+   Use defined(__KERNEL__) || defined(__ebeep__) when doing
+       things that only makes sense on an ebeep system.
    Use __CRIS__ when you're about to do (really) CRIS-specific code.
 */
 
 /* We have dependencies all over the place for the host system
-   for xsim being a linux system, so let's not pretend anything
+   for xsim being a beep system, so let's not pretend anything
    else with #ifdef:s here until fixed.  */
-#include <linux/limits.h>
+#include <beep/limits.h>
 
 /* Maybe do sanity checking if file input. */
 #undef SANITYCHECK_RELOC

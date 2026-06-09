@@ -9,13 +9,13 @@
  * kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/of_mdio.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/phy.h>
+#include <beep/of_platform.h>
+#include <beep/slab.h>
+#include <beep/of_mdio.h>
 #include <asm/io.h>
 #include <asm/mpc52xx.h>
 #include "fec_mpc52xx.h"

@@ -5,17 +5,17 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/resource.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/mm.h>
+#include <beep/platform_device.h>
+#include <beep/pm.h>
+#include <beep/resource.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
 #include <pcmcia/ss.h>
 #include <pcmcia/cistpl.h>

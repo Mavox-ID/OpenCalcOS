@@ -6,11 +6,11 @@
  * This source code is licensed under the GNU General Public License,
  * Version 2. See the file COPYING for more details.
  */
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/scatterlist.h>
-#include <linux/highmem.h>
-#include <linux/kmemleak.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/scatterlist.h>
+#include <beep/highmem.h>
+#include <beep/kmemleak.h>
 
 /**
  * sg_next - return the next scatterlist entry in a list

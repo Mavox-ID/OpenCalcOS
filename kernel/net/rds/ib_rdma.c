@@ -30,10 +30,10 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/rculist.h>
-#include <linux/llist.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/rculist.h>
+#include <beep/llist.h>
 
 #include "rds.h"
 #include "ib.h"

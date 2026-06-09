@@ -9,9 +9,9 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/security.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/security.h>
 #include <keys/keyring-type.h>
 #include "internal.h"
 

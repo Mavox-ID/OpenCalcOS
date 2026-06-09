@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/board-h3.c
+ * beep/arch/arm/mach-omap1/board-h3.c
  *
  * This file contains OMAP1710 H3 specific code.
  *
@@ -13,26 +13,26 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/gpio.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/errno.h>
-#include <linux/workqueue.h>
-#include <linux/i2c.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/input.h>
-#include <linux/spi/spi.h>
-#include <linux/i2c/tps65010.h>
-#include <linux/smc91x.h>
-#include <linux/omapfb.h>
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/leds.h>
+#include <beep/gpio.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/major.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/errno.h>
+#include <beep/workqueue.h>
+#include <beep/i2c.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/input.h>
+#include <beep/spi/spi.h>
+#include <beep/i2c/tps65010.h>
+#include <beep/smc91x.h>
+#include <beep/omapfb.h>
+#include <beep/platform_data/gpio-omap.h>
+#include <beep/leds.h>
 
 #include <asm/setup.h>
 #include <asm/page.h>
@@ -42,8 +42,8 @@
 
 #include <mach/mux.h>
 #include <mach/tc.h>
-#include <linux/platform_data/keypad-omap.h>
-#include <linux/omap-dma.h>
+#include <beep/platform_data/keypad-omap.h>
+#include <beep/omap-dma.h>
 #include <mach/flash.h>
 
 #include <mach/hardware.h>

@@ -9,8 +9,8 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/module.h>
-#include <linux/errno.h>
+#include <beep/module.h>
+#include <beep/errno.h>
 #include <asm/byteorder.h>
 #include <asm/uaccess.h>
 #include <asm/checksum.h>

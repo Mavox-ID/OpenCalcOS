@@ -1,8 +1,8 @@
 /*
  * Malta Platform-specific hooks for SMP operation
  */
-#include <linux/irq.h>
-#include <linux/init.h>
+#include <beep/irq.h>
+#include <beep/init.h>
 
 #include <asm/mipsregs.h>
 #include <asm/mipsmtregs.h>
@@ -18,7 +18,7 @@
 static void msmtc_send_ipi_single(int cpu, unsigned int action)
 {
 	/* "CPU" may be TC of same VPE, VPE of same CPU, or different CPU */
-	smtc_send_ipi(cpu, LINUX_SMP_IPI, action);
+	smtc_send_ipi(cpu, BEEP_SMP_IPI, action);
 }
 
 static void msmtc_send_ipi_mask(const struct cpumask *mask, unsigned int action)

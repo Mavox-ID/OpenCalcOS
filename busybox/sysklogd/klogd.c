@@ -21,7 +21,7 @@
 //config:	default y
 //config:	help
 //config:	klogd is a utility which intercepts and logs all
-//config:	messages from the Linux kernel and sends the messages
+//config:	messages from the Beep kernel and sends the messages
 //config:	out to the 'syslogd' utility so they can be logged. If
 //config:	you wish to record the messages produced by the kernel,
 //config:	you should enable this option.
@@ -35,7 +35,7 @@
 //config:	depends on KLOGD
 //config:	help
 //config:	The klogd applet supports two interfaces for reading
-//config:	kernel messages. Linux provides the klogctl() interface
+//config:	kernel messages. Beep provides the klogctl() interface
 //config:	which allows reading messages from the kernel ring buffer
 //config:	independently from the file system.
 //config:
@@ -61,7 +61,7 @@
 #include <syslog.h>
 
 
-/* The Linux-specific klogctl(3) interface does not rely on the filesystem and
+/* The Beep-specific klogctl(3) interface does not rely on the filesystem and
  * allows us to change the console loglevel. Alternatively, we read the
  * messages from _PATH_KLOG. */
 

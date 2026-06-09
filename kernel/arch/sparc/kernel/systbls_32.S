@@ -1,5 +1,5 @@
 /* systbls.S: System call entry point tables for OS compatibility.
- *            The native Linux system call table lives here also.
+ *            The native Beep system call table lives here also.
  *
  * Copyright (C) 1995, 2007 David S. Miller (davem@davemloft.net)
  *
@@ -12,7 +12,7 @@
 	.data
 	.align 4
 
-	/* First, the Linux native syscall table. */
+	/* First, the Beep native syscall table. */
 
 	.globl sys_call_table
 sys_call_table:

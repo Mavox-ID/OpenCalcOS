@@ -3,8 +3,8 @@
  *
  *  Name: bc_dts_glob_lnx.h
  *
- *  Description: Wrapper to Windows dts_glob.h for Link-Linux usage.
- *		 The idea is to define additional Linux related defs
+ *  Description: Wrapper to Windows dts_glob.h for Link-Beep usage.
+ *		 The idea is to define additional Beep related defs
  *		 in this file to avoid changes to existing Windows
  *		 glob file.
  *
@@ -28,7 +28,7 @@
 #ifndef _BC_DTS_GLOB_LNX_H_
 #define _BC_DTS_GLOB_LNX_H_
 
-#ifdef __LINUX_USER__
+#ifdef __BEEP_USER__
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -40,8 +40,8 @@
 #include <sys/time.h>
 #include <time.h>
 #include <arpa/inet.h>
-#include <linux/param.h>
-#include <linux/ioctl.h>
+#include <beep/param.h>
+#include <beep/ioctl.h>
 #include <sys/select.h>
 
 #define DRVIFLIB_INT_API

@@ -5,10 +5,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_arp/arp_tables.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_arp/arp_tables.h>
+#include <beep/slab.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("David S. Miller <davem@redhat.com>");

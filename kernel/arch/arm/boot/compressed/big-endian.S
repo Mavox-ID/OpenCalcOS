@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/boot/compressed/big-endian.S
+ *  beep/arch/arm/boot/compressed/big-endian.S
  *
  *  Switch CPU into big endian mode.
  *  Author: Nicolas Pitre

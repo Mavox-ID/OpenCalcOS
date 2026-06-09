@@ -103,12 +103,12 @@
 //config:	default y
 //config:	depends on TAR
 //config:
-//config:config FEATURE_TAR_SELINUX
-//config:	bool "Support extracting SELinux labels"
+//config:config FEATURE_TAR_SEBEEP
+//config:	bool "Support extracting SEBeep labels"
 //config:	default n
-//config:	depends on TAR && SELINUX
+//config:	depends on TAR && SEBEEP
 //config:	help
-//config:	With this option busybox supports restoring SELinux labels
+//config:	With this option busybox supports restoring SEBeep labels
 //config:	when extracting files from tar archives.
 
 //applet:IF_TAR(APPLET(tar, BB_DIR_BIN, BB_SUID_DROP))
@@ -572,7 +572,7 @@ static int FAST_FUNC writeFileToTarball(struct recursive_state *state,
 /* Don't inline: vfork scares gcc and pessimizes code */
 static void NOINLINE vfork_compressor(int tar_fd, const char *gzip)
 {
-	// On Linux, vfork never unpauses parent early, although standard
+	// On Beep, vfork never unpauses parent early, although standard
 	// allows for that. Do we want to waste bytes checking for it?
 #  define WAIT_FOR_CHILD 0
 	volatile int vfork_exec_errno = 0;

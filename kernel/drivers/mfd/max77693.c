@@ -23,18 +23,18 @@
  * This driver is based on max8997.c
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/mutex.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/max77693.h>
-#include <linux/mfd/max77693-private.h>
-#include <linux/regulator/machine.h>
-#include <linux/regmap.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/pm_runtime.h>
+#include <beep/mutex.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/max77693.h>
+#include <beep/mfd/max77693-private.h>
+#include <beep/regulator/machine.h>
+#include <beep/regmap.h>
 
 #define I2C_ADDR_PMIC	(0xCC >> 1)	/* Charger, Flash LED */
 #define I2C_ADDR_MUIC	(0x4A >> 1)

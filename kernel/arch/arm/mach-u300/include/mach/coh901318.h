@@ -1,6 +1,6 @@
 /*
  *
- * include/linux/coh901318.h
+ * include/beep/coh901318.h
  *
  *
  * Copyright (C) 2007-2009 ST-Ericsson
@@ -12,8 +12,8 @@
 #ifndef COH901318_H
 #define COH901318_H
 
-#include <linux/device.h>
-#include <linux/dmaengine.h>
+#include <beep/device.h>
+#include <beep/dmaengine.h>
 
 #define MAX_DMA_PACKET_SIZE_SHIFT 11
 #define MAX_DMA_PACKET_SIZE (1 << MAX_DMA_PACKET_SIZE_SHIFT)

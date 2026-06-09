@@ -32,10 +32,10 @@
  * SOFTWARE.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/mlx4/cmd.h>
-#include <linux/module.h>
-#include <linux/cache.h>
+#include <beep/etherdevice.h>
+#include <beep/mlx4/cmd.h>
+#include <beep/module.h>
+#include <beep/cache.h>
 
 #include "fw.h"
 #include "icm.h"

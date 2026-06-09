@@ -9,18 +9,18 @@
  * published by the Free Software Foundation.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/types.h>
-#include <linux/inetdevice.h>
-#include <linux/ip.h>
-#include <linux/timer.h>
-#include <linux/module.h>
-#include <linux/netfilter.h>
+#include <beep/types.h>
+#include <beep/inetdevice.h>
+#include <beep/ip.h>
+#include <beep/timer.h>
+#include <beep/module.h>
+#include <beep/netfilter.h>
 #include <net/protocol.h>
 #include <net/ip.h>
 #include <net/checksum.h>
 #include <net/route.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter/x_tables.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/netfilter/x_tables.h>
 #include <net/netfilter/nf_nat.h>
 
 MODULE_LICENSE("GPL");

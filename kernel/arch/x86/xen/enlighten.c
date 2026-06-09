@@ -11,26 +11,26 @@
  * Jeremy Fitzhardinge <jeremy@xensource.com>, XenSource Inc, 2007
  */
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/preempt.h>
-#include <linux/hardirq.h>
-#include <linux/percpu.h>
-#include <linux/delay.h>
-#include <linux/start_kernel.h>
-#include <linux/sched.h>
-#include <linux/kprobes.h>
-#include <linux/bootmem.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/page-flags.h>
-#include <linux/highmem.h>
-#include <linux/console.h>
-#include <linux/pci.h>
-#include <linux/gfp.h>
-#include <linux/memblock.h>
+#include <beep/cpu.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/preempt.h>
+#include <beep/hardirq.h>
+#include <beep/percpu.h>
+#include <beep/delay.h>
+#include <beep/start_kernel.h>
+#include <beep/sched.h>
+#include <beep/kprobes.h>
+#include <beep/bootmem.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/page-flags.h>
+#include <beep/highmem.h>
+#include <beep/console.h>
+#include <beep/pci.h>
+#include <beep/gfp.h>
+#include <beep/memblock.h>
 
 #include <xen/xen.h>
 #include <xen/events.h>
@@ -69,7 +69,7 @@
 #include <asm/pci_x86.h>
 
 #ifdef CONFIG_ACPI
-#include <linux/acpi.h>
+#include <beep/acpi.h>
 #include <asm/acpi.h>
 #include <acpi/pdc_intel.h>
 #include <acpi/processor.h>

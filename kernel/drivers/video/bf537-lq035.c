@@ -1,6 +1,6 @@
 /*
  * Analog Devices Blackfin(BF537 STAMP) + SHARP TFT LCD.
- * http://docs.blackfin.uclinux.org/doku.php?id=hw:cards:tft-lcd
+ * http://docs.blackfin.ucbeep.org/doku.php?id=hw:cards:tft-lcd
  *
  * Copyright 2006-2010 Analog Devices Inc.
  * Licensed under the GPL-2.
@@ -8,28 +8,28 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/device.h>
-#include <linux/backlight.h>
-#include <linux/lcd.h>
-#include <linux/i2c.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/device.h>
+#include <beep/backlight.h>
+#include <beep/lcd.h>
+#include <beep/i2c.h>
+#include <beep/spinlock.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
 
 #include <asm/blackfin.h>
 #include <asm/irq.h>

@@ -1,5 +1,5 @@
 /*
- * linux/drivers/char/misc.c
+ * beep/drivers/char/misc.c
  *
  * Generic misc open routine by Johan Myreen
  *
@@ -33,22 +33,22 @@
  * Added devfs support. Richard Gooch <rgooch@atnf.csiro.au>  10-Jan-1998
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/mutex.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/tty.h>
-#include <linux/kmod.h>
-#include <linux/gfp.h>
+#include <beep/fs.h>
+#include <beep/errno.h>
+#include <beep/miscdevice.h>
+#include <beep/kernel.h>
+#include <beep/major.h>
+#include <beep/mutex.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/stat.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/tty.h>
+#include <beep/kmod.h>
+#include <beep/gfp.h>
 
 /*
  * Head entry for the doubly linked miscdevice list

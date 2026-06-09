@@ -6,17 +6,17 @@
  *
  * Copyright 2002,2003 Andi Kleen, SuSE Labs.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/nodemask.h>
-#include <linux/memblock.h>
-#include <linux/bootmem.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/module.h>
+#include <beep/nodemask.h>
+#include <beep/memblock.h>
+#include <beep/bootmem.h>
 
 #include <asm/io.h>
-#include <linux/pci_ids.h>
-#include <linux/acpi.h>
+#include <beep/pci_ids.h>
+#include <beep/acpi.h>
 #include <asm/types.h>
 #include <asm/mmzone.h>
 #include <asm/proto.h>

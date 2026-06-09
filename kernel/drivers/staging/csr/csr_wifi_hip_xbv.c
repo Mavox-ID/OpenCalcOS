@@ -19,7 +19,7 @@
  *
  * ---------------------------------------------------------------------------
  */
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 #ifdef CSR_WIFI_XBV_TEST
 /* Standalone test harness */

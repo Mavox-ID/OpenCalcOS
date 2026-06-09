@@ -18,9 +18,9 @@
  */
 
 #include <asm/byteorder.h>
-#include <linux/kthread.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <beep/kthread.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
 
 #include "usbip_common.h"
 #include "stub.h"

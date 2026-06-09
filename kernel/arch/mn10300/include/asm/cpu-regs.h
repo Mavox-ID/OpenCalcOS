@@ -12,7 +12,7 @@
 #define _ASM_CPU_REGS_H
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <beep/types.h>
 #endif
 
 /* we tell the compiler to pretend to be AM33 so that it doesn't try and use

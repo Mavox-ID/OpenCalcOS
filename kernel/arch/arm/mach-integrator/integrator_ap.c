@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-integrator/integrator_ap.c
+ *  beep/arch/arm/mach-integrator/integrator_ap.c
  *
  *  Copyright (C) 2000-2003 Deep Blue Solutions Ltd
  *
@@ -17,30 +17,30 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/syscore_ops.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/kmi.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irqchip/versatile-fpga.h>
-#include <linux/mtd/physmap.h>
-#include <linux/clk.h>
-#include <linux/platform_data/clk-integrator.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/stat.h>
-#include <linux/sys_soc.h>
-#include <linux/termios.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/syscore_ops.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/kmi.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/irqchip/versatile-fpga.h>
+#include <beep/mtd/physmap.h>
+#include <beep/clk.h>
+#include <beep/platform_data/clk-integrator.h>
+#include <beep/of_irq.h>
+#include <beep/of_address.h>
+#include <beep/of_platform.h>
+#include <beep/stat.h>
+#include <beep/sys_soc.h>
+#include <beep/termios.h>
 #include <video/vga.h>
 
 #include <mach/hardware.h>

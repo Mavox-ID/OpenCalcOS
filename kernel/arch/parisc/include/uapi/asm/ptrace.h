@@ -5,7 +5,7 @@
 #define _UAPI_PARISC_PTRACE_H
 
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* This struct defines the way the registers are stored on the 
  * stack during a system call.
@@ -35,7 +35,7 @@ struct pt_regs {
 
 /*
  * The numbers chosen here are somewhat arbitrary but absolutely MUST
- * not overlap with any of the number assigned in <linux/ptrace.h>.
+ * not overlap with any of the number assigned in <beep/ptrace.h>.
  *
  * These ones are taken from IA-64 on the assumption that theirs are
  * the most correct (and we also want to support PTRACE_SINGLEBLOCK

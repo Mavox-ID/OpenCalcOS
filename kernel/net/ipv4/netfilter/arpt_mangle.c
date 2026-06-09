@@ -1,7 +1,7 @@
 /* module that allows mangling of the arp payload */
-#include <linux/module.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_arp/arpt_mangle.h>
+#include <beep/module.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_arp/arpt_mangle.h>
 #include <net/sock.h>
 
 MODULE_LICENSE("GPL");

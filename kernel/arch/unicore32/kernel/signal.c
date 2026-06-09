@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/signal.c
+ * beep/arch/unicore32/kernel/signal.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -9,13 +9,13 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/personality.h>
-#include <linux/uaccess.h>
-#include <linux/tracehook.h>
-#include <linux/elf.h>
-#include <linux/unistd.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/personality.h>
+#include <beep/uaccess.h>
+#include <beep/tracehook.h>
+#include <beep/elf.h>
+#include <beep/unistd.h>
 
 #include <asm/cacheflush.h>
 #include <asm/ucontext.h>

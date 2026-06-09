@@ -6,25 +6,25 @@
  * Licensed under GPLv2 or later.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/irqdomain.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/bitops.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/irqdomain.h>
+#include <beep/pinctrl/pinctrl.h>
+#include <beep/pinctrl/pinmux.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/pinctrl/machine.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
+#include <beep/bitops.h>
+#include <beep/gpio.h>
+#include <beep/of_gpio.h>
 #include <asm/mach/irq.h>
 
 #define DRIVER_NAME "pinmux-sirf"

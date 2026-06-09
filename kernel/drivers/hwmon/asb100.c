@@ -1,5 +1,5 @@
 /*
- * asb100.c - Part of lm_sensors, Linux kernel modules for hardware
+ * asb100.c - Part of lm_sensors, Beep kernel modules for hardware
  *	      monitoring
  *
  * Copyright (C) 2004 Mark M. Hoffman <mhoffman@lightlink.com>
@@ -38,16 +38,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/hwmon-vid.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/jiffies.h>
+#include <beep/mutex.h>
 #include "lm75.h"
 
 /* I2C addresses to scan */

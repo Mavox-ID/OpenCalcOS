@@ -17,25 +17,25 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/dma-mapping.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/clcd.h>
-#include <linux/amba/pl08x.h>
-#include <linux/amba/mmci.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/clk.h>
-#include <linux/mtd/lpc32xx_slc.h>
-#include <linux/mtd/lpc32xx_mlc.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/dma-mapping.h>
+#include <beep/device.h>
+#include <beep/gpio.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/clcd.h>
+#include <beep/amba/pl08x.h>
+#include <beep/amba/mmci.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
+#include <beep/clk.h>
+#include <beep/mtd/lpc32xx_slc.h>
+#include <beep/mtd/lpc32xx_mlc.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>

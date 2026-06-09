@@ -24,18 +24,18 @@
 #define __UBIFS_H__
 
 #include <asm/div64.h>
-#include <linux/statfs.h>
-#include <linux/fs.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/mtd/ubi.h>
-#include <linux/pagemap.h>
-#include <linux/backing-dev.h>
+#include <beep/statfs.h>
+#include <beep/fs.h>
+#include <beep/err.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
+#include <beep/rwsem.h>
+#include <beep/mtd/ubi.h>
+#include <beep/pagemap.h>
+#include <beep/backing-dev.h>
 #include "ubifs-media.h"
 
 /* Version of this UBIFS implementation */

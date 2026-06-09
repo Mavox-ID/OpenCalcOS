@@ -17,17 +17,17 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/io.h>
-#include <linux/serial_sci.h>
-#include <linux/sh_intc.h>
-#include <linux/sh_timer.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/input.h>
+#include <beep/io.h>
+#include <beep/serial_sci.h>
+#include <beep/sh_intc.h>
+#include <beep/sh_timer.h>
 #include <mach/hardware.h>
 #include <mach/irqs.h>
 #include <mach/r8a7779.h>

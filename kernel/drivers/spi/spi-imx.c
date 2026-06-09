@@ -18,28 +18,28 @@
  * Boston, MA  02110-1301, USA.
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/types.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/clk.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_bitbang.h>
+#include <beep/types.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_gpio.h>
+#include <beep/pinctrl/consumer.h>
 
-#include <linux/platform_data/spi-imx.h>
+#include <beep/platform_data/spi-imx.h>
 
 #define DRIVER_NAME "spi_imx"
 

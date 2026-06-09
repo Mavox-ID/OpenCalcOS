@@ -17,11 +17,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/of.h>
 
 #include <asm/hardware/gic.h>
 

@@ -9,20 +9,20 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/sched.h>
-#include <linux/serial_core.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_irq.h>
-#include <linux/export.h>
-#include <linux/irqdomain.h>
-#include <linux/of_address.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/device.h>
+#include <beep/gpio.h>
+#include <beep/sched.h>
+#include <beep/serial_core.h>
+#include <beep/of.h>
+#include <beep/of_fdt.h>
+#include <beep/of_irq.h>
+#include <beep/export.h>
+#include <beep/irqdomain.h>
+#include <beep/of_address.h>
 
 #include <asm/proc-fns.h>
 #include <asm/exception.h>
@@ -605,7 +605,7 @@ static void __init combiner_init(void __iomem *combiner_base,
 	irq_base = irq_alloc_descs(COMBINER_IRQ(0, 0), 1, nr_irq, 0);
 	if (IS_ERR_VALUE(irq_base)) {
 		irq_base = COMBINER_IRQ(0, 0);
-		pr_warning("%s: irq desc alloc failed. Continuing with %d as linux irq base\n", __func__, irq_base);
+		pr_warning("%s: irq desc alloc failed. Continuing with %d as beep irq base\n", __func__, irq_base);
 	}
 
 	combiner_irq_domain = irq_domain_add_legacy(np, nr_irq, irq_base, 0,

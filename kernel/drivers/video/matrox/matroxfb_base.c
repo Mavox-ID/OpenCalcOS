@@ -99,7 +99,7 @@
  *
  */
 
-#include <linux/version.h>
+#include <beep/version.h>
 
 #include "matroxfb_base.h"
 #include "matroxfb_misc.h"
@@ -109,10 +109,10 @@
 #include "matroxfb_maven.h"
 #include "matroxfb_crtc2.h"
 #include "matroxfb_g450.h"
-#include <linux/matroxfb.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <beep/matroxfb.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
 
 #ifdef CONFIG_PPC_PMAC
 #include <asm/machdep.h>

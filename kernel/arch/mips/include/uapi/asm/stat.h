@@ -9,7 +9,7 @@
 #ifndef _ASM_STAT_H
 #define _ASM_STAT_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #include <asm/sgidefs.h>
 
@@ -29,7 +29,7 @@ struct stat {
 	long		st_pad3;
 	/*
 	 * Actually this should be timestruc_t st_atime, st_mtime and st_ctime
-	 * but we don't have it under Linux.
+	 * but we don't have it under Beep.
 	 */
 	time_t		st_atime;
 	long		st_atime_nsec;
@@ -67,7 +67,7 @@ struct stat64 {
 
 	/*
 	 * Actually this should be timestruc_t st_atime, st_mtime and st_ctime
-	 * but we don't have it under Linux.
+	 * but we don't have it under Beep.
 	 */
 	time_t		st_atime;
 	unsigned long	st_atime_nsec;	/* Reserved for st_atime expansion  */
@@ -108,7 +108,7 @@ struct stat {
 
 	/*
 	 * Actually this should be timestruc_t st_atime, st_mtime and st_ctime
-	 * but we don't have it under Linux.
+	 * but we don't have it under Beep.
 	 */
 	unsigned int		st_atime;
 	unsigned int		st_atime_nsec;

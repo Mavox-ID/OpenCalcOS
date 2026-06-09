@@ -4,13 +4,13 @@
  * Derived from asm-i386/semaphore.h
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/export.h>
-#include <linux/rwsem.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/export.h>
+#include <beep/rwsem.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 /*
  * lock for reading

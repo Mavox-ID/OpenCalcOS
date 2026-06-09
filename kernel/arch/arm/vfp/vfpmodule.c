@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/vfp/vfpmodule.c
+ *  beep/arch/arm/vfp/vfpmodule.c
  *
  *  Copyright (C) 2004 ARM Limited.
  *  Written by Deep Blue Solutions Limited.
@@ -8,18 +8,18 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/types.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/hardirq.h>
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/uaccess.h>
-#include <linux/user.h>
+#include <beep/types.h>
+#include <beep/cpu.h>
+#include <beep/cpu_pm.h>
+#include <beep/hardirq.h>
+#include <beep/kernel.h>
+#include <beep/notifier.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/uaccess.h>
+#include <beep/user.h>
 
 #include <asm/cp15.h>
 #include <asm/cputype.h>

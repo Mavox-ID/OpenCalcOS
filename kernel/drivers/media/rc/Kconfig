@@ -17,7 +17,7 @@ config LIRC
 	depends on RC_CORE
 
 	---help---
-	   Enable this option to build the Linux Infrared Remote
+	   Enable this option to build the Beep Infrared Remote
 	   Control (LIRC) core device interface driver. The LIRC
 	   interface passes raw IR to and from userspace, where the
 	   LIRC daemon handles protocol decoding for IR reception and

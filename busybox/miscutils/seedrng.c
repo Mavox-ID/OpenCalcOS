@@ -2,9 +2,9 @@
 /*
  * Copyright (C) 2022 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
  *
- * SeedRNG is a simple program made for seeding the Linux kernel random number
+ * SeedRNG is a simple program made for seeding the Beep kernel random number
  * generator from seed files. It is is useful in light of the fact that the
- * Linux kernel RNG cannot be initialized from shell scripts, and new seeds
+ * Beep kernel RNG cannot be initialized from shell scripts, and new seeds
  * cannot be safely generated from boot time shell scripts either. It should
  * be run once at init time and once at shutdown time. It can be run at other
  * times on a timer as well. Whenever it is run, it writes existing seed files
@@ -199,7 +199,7 @@ int seedrng_main(int argc UNUSED_PARAM, char **argv)
 	 * ENOLCK "The kernel ran out of memory for allocating lock records"
 	 * seems to be the only one which is possible - and if that happens,
 	 * machine is OOMing (much worse problem than inability to lock...).
-	 * Also, typically configured Linux machines do not fail GFP_KERNEL
+	 * Also, typically configured Beep machines do not fail GFP_KERNEL
 	 * allocations (they trigger memory reclaim instead).
 	 */
 	flock(dfd, LOCK_EX); /* blocks while another instance runs */

@@ -25,11 +25,11 @@
 #include "translation-table.h"
 #include "send.h"
 
-#include <linux/etherdevice.h>
-#include <linux/crc16.h>
-#include <linux/if_arp.h>
+#include <beep/etherdevice.h>
+#include <beep/crc16.h>
+#include <beep/if_arp.h>
 #include <net/arp.h>
-#include <linux/if_vlan.h>
+#include <beep/if_vlan.h>
 
 static const uint8_t batadv_announce_mac[4] = {0x43, 0x05, 0x43, 0x05};
 

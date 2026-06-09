@@ -16,17 +16,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_data/usb-omap.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/pm_runtime.h>
+#include <beep/platform_data/usb-omap.h>
 
 #define USBTLL_DRIVER_NAME	"usbhs_tll"
 

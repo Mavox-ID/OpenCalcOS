@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/sdio_ops.c
+ *  beep/drivers/mmc/sdio_ops.c
  *
  *  Copyright 2006-2007 Pierre Ossman
  *

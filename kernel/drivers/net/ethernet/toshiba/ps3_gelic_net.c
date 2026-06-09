@@ -28,20 +28,20 @@
 
 #undef DEBUG
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/if_vlan.h>
 
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
 
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 #include <net/checksum.h>
 #include <asm/firmware.h>
 #include <asm/ps3.h>

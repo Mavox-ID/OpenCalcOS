@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfsplus/bitmap.c
+ *  beep/fs/hfsplus/bitmap.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -8,7 +8,7 @@
  * Handling of allocation file
  */
 
-#include <linux/pagemap.h>
+#include <beep/pagemap.h>
 
 #include "hfsplus_fs.h"
 #include "hfsplus_raw.h"

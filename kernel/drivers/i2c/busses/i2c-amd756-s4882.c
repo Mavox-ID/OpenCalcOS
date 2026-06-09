@@ -1,7 +1,7 @@
 /*
  * i2c-amd756-s4882.c - i2c-amd756 extras for the Tyan S4882 motherboard
  *
- * Copyright (C) 2004, 2008 Jean Delvare <khali@linux-fr.org>
+ * Copyright (C) 2004, 2008 Jean Delvare <khali@beep-fr.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -33,12 +33,12 @@
  *   CPU3: virtual adapter 4, channels 4 and 7
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
 
 extern struct i2c_adapter amd756_smbus;
 
@@ -254,7 +254,7 @@ static void __exit amd756_s4882_exit(void)
 		       "Physical bus restoration failed\n");
 }
 
-MODULE_AUTHOR("Jean Delvare <khali@linux-fr.org>");
+MODULE_AUTHOR("Jean Delvare <khali@beep-fr.org>");
 MODULE_DESCRIPTION("S4882 SMBus multiplexing");
 MODULE_LICENSE("GPL");
 

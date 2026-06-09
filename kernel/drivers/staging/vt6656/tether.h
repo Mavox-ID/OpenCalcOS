@@ -29,7 +29,7 @@
 #ifndef __TETHER_H__
 #define __TETHER_H__
 
-#include <linux/if_ether.h>
+#include <beep/if_ether.h>
 #include "ttype.h"
 
 /*---------------------  Export Definitions -------------------------*/

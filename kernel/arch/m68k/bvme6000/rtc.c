@@ -1,22 +1,22 @@
 /*
- *	Real Time Clock interface for Linux on the BVME6000
+ *	Real Time Clock interface for Beep on the BVME6000
  *
  * Based on the PC driver by Paul Gortmaker.
  */
 
 #define RTC_VERSION		"1.00"
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/ioport.h>
-#include <linux/capability.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/module.h>
-#include <linux/mc146818rtc.h>	/* For struct rtc_time and ioctls, etc */
-#include <linux/bcd.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/miscdevice.h>
+#include <beep/ioport.h>
+#include <beep/capability.h>
+#include <beep/fcntl.h>
+#include <beep/init.h>
+#include <beep/poll.h>
+#include <beep/module.h>
+#include <beep/mc146818rtc.h>	/* For struct rtc_time and ioctls, etc */
+#include <beep/bcd.h>
 #include <asm/bvme6000hw.h>
 
 #include <asm/io.h>

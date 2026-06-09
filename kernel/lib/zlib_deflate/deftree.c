@@ -34,7 +34,7 @@
 
 /* #include "deflate.h" */
 
-#include <linux/zutil.h>
+#include <beep/zutil.h>
 #include "defutil.h"
 
 #ifdef DEBUG_ZLIB

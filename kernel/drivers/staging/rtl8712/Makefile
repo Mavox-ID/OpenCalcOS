@@ -7,10 +7,10 @@ r8712u-y :=				\
 		hal_init.o		\
 		usb_halinit.o		\
 		usb_ops.o		\
-		usb_ops_linux.o		\
+		usb_ops_beep.o		\
 		rtl871x_io.o		\
 		rtl8712_io.o		\
-		rtl871x_ioctl_linux.o	\
+		rtl871x_ioctl_beep.o	\
 		rtl871x_ioctl_rtl.o	\
 		rtl871x_ioctl_set.o	\
 		rtl8712_led.o		\
@@ -18,9 +18,9 @@ r8712u-y :=				\
 		ieee80211.o		\
 		rtl871x_mp_ioctl.o	\
 		rtl871x_mp.o		\
-		mlme_linux.o		\
-		recv_linux.o		\
-		xmit_linux.o		\
+		mlme_beep.o		\
+		recv_beep.o		\
+		xmit_beep.o		\
 		usb_intf.o		\
 		os_intfs.o		\
 		rtl871x_pwrctrl.o	\

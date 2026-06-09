@@ -1,9 +1,9 @@
 #ifndef _ENTRY_H
 #define _ENTRY_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
 
 /* irq */
 extern void handler_irq(int irq, struct pt_regs *regs);

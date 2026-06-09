@@ -3,7 +3,7 @@
  *
  * Copyright 2006-2011 Analog Devices Inc.
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucbeep.org/
  *
  * Licensed under the GPL-2 or later.
  */
@@ -15,22 +15,22 @@
 #define DRIVER_NAME "bfin-uart"
 #define pr_fmt(fmt) DRIVER_NAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/platform_device.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/kgdb.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/gfp.h>
+#include <beep/io.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/sysrq.h>
+#include <beep/platform_device.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial_core.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/kgdb.h>
+#include <beep/slab.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/portmux.h>
 #include <asm/cacheflush.h>

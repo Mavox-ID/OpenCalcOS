@@ -11,16 +11,16 @@
  * option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
 #include <asm/prom.h>
 #include "simple_gpio.h"
 

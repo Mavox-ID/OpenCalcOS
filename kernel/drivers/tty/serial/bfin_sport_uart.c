@@ -3,7 +3,7 @@
  *
  * Copyright 2006-2009 Analog Devices Inc.
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucbeep.org/
  *
  * Licensed under the GPL-2 or later.
  */
@@ -22,17 +22,17 @@
 #define DEVICE_NAME	"ttySS"
 #define pr_fmt(fmt) DRV_NAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/sysrq.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial_core.h>
 
 #include <asm/bfin_sport.h>
 #include <asm/delay.h>

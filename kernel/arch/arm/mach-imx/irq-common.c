@@ -16,8 +16,8 @@
  * MA  02110-1301, USA.
  */
 
-#include <linux/module.h>
-#include <linux/irq.h>
+#include <beep/module.h>
+#include <beep/irq.h>
 
 #include "irq-common.h"
 

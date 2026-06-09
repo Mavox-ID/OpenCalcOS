@@ -17,14 +17,14 @@
  *
  */
 
-#include <linux/netdevice.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/netdevice.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
-#include <linux/if_arp.h>
+#include <beep/if_arp.h>
 
 #include "prismcompat.h"
 #include "isl_38xx.h"

@@ -21,14 +21,14 @@
 
 #undef DEBUG
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/console.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/console.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/export.h>
 
 #include <asm/hvconsole.h>
 #include <asm/prom.h>
@@ -336,7 +336,7 @@ void __init hvc_opal_init_early(void)
 
 	/* find the boot console from /chosen/stdout */
 	if (of_chosen)
-		name = of_get_property(of_chosen, "linux,stdout-path", NULL);
+		name = of_get_property(of_chosen, "beep,stdout-path", NULL);
 	if (name) {
 		stdout_node = of_find_node_by_path(name);
 		if (!stdout_node) {

@@ -7,12 +7,12 @@
  *
  * Development of IPv6 NAT funded by Astaro.
  */
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ipv6.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/ipv6.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv6.h>
 #include <net/secure_seq.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>

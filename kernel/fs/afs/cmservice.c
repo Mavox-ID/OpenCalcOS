@@ -9,11 +9,11 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/ip.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/ip.h>
 #include "internal.h"
 #include "afs_cm.h"
 

@@ -21,10 +21,10 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
+#include <beep/kobject.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/init.h>
 
 unsigned long rtas_poweron_auto; /* default and normal state is 0 */
 

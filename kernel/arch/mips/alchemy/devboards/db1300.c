@@ -4,22 +4,22 @@
  * (c) 2009 Manuel Lauss <manuel.lauss@googlemail.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/init.h>
-#include <linux/input.h>	/* KEY_* codes */
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/leds.h>
-#include <linux/ata_platform.h>
-#include <linux/mmc/host.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/platform_device.h>
-#include <linux/smsc911x.h>
+#include <beep/dma-mapping.h>
+#include <beep/gpio.h>
+#include <beep/gpio_keys.h>
+#include <beep/init.h>
+#include <beep/input.h>	/* KEY_* codes */
+#include <beep/i2c.h>
+#include <beep/io.h>
+#include <beep/leds.h>
+#include <beep/ata_platform.h>
+#include <beep/mmc/host.h>
+#include <beep/module.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/platform_device.h>
+#include <beep/smsc911x.h>
 
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/au1100_mmc.h>

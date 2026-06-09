@@ -1,13 +1,13 @@
 /*
  * Author(s)......: Holger Smolinski <Holger.Smolinski@de.ibm.com>
  *                  Volker Sameske <sameske@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <Beep390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2012
  */
 
-#include <linux/buffer_head.h>
-#include <linux/hdreg.h>
-#include <linux/slab.h>
+#include <beep/buffer_head.h>
+#include <beep/hdreg.h>
+#include <beep/slab.h>
 #include <asm/dasd.h>
 #include <asm/ebcdic.h>
 #include <asm/uaccess.h>

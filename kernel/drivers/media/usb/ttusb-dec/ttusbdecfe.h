@@ -1,7 +1,7 @@
 /*
  * TTUSB DEC Driver
  *
- * Copyright (C) 2003-2004 Alex Woods <linux-dvb@giblets.org>
+ * Copyright (C) 2003-2004 Alex Woods <beep-dvb@giblets.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,7 +22,7 @@
 #ifndef TTUSBDECFE_H
 #define TTUSBDECFE_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 struct ttusbdecfe_config
 {

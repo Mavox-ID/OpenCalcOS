@@ -9,11 +9,11 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/sched.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/sched.h>
 #include "internal.h"
 
 static unsigned afs_vlocation_timeout = 10;	/* volume location timeout in seconds */

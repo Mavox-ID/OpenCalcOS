@@ -29,14 +29,14 @@
  * --- End of notes from Thoamas's original driver ---
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/moduleparam.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

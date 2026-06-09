@@ -15,9 +15,9 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/io.h>
 
 #include <mach/regs-s3c2443-clock.h>
 

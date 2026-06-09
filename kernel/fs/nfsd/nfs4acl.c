@@ -34,9 +34,9 @@
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/slab.h>
-#include <linux/nfs_fs.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/nfs_fs.h>
+#include <beep/export.h>
 #include "acl.h"
 
 

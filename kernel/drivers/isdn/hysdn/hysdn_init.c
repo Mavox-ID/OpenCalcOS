@@ -1,6 +1,6 @@
 /* $Id: hysdn_init.c,v 1.6.6.6 2001/09/23 22:24:54 kai Exp $
  *
- * Linux driver for HYSDN cards, init functions.
+ * Beep driver for HYSDN cards, init functions.
  *
  * Author    Werner Cornelius (werner@titro.de) for Hypercope GmbH
  * Copyright 1999 by Werner Cornelius (werner@titro.de)
@@ -10,12 +10,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/poll.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
 
 #include "hysdn_defs.h"
 
@@ -32,7 +32,7 @@ static struct pci_device_id hysdn_pci_tbl[] = {
 	{ }				/* Terminating entry */
 };
 MODULE_DEVICE_TABLE(pci, hysdn_pci_tbl);
-MODULE_DESCRIPTION("ISDN4Linux: Driver for HYSDN cards");
+MODULE_DESCRIPTION("ISDN4Beep: Driver for HYSDN cards");
 MODULE_AUTHOR("Werner Cornelius");
 MODULE_LICENSE("GPL");
 

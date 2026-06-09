@@ -1,7 +1,7 @@
-/* linux/arch/arm/plat-s3c24xx/s3c2410-cpufreq-utils.c
+/* beep/arch/arm/plat-s3c24xx/s3c2410-cpufreq-utils.c
  *
  * Copyright (c) 2009 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C24XX CPU Frequency scaling - utils for S3C2410/S3C2440/S3C2442
@@ -11,10 +11,10 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/cpufreq.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/cpufreq.h>
+#include <beep/io.h>
 
 #include <mach/map.h>
 #include <mach/regs-mem.h>

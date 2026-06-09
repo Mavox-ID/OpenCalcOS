@@ -18,14 +18,14 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/blkdev.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
+#include <beep/ctype.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/workqueue.h>
+#include <beep/blkdev.h>
+#include <beep/mutex.h>
+#include <beep/sysfs.h>
+#include <beep/slab.h>
 #include <scsi/scsi.h>
 #include "scsi_priv.h"
 #include <scsi/scsi_device.h>

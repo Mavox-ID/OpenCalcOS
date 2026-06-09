@@ -1,7 +1,7 @@
 /*
  * SDLA		An implementation of a driver for the Sangoma S502/S508 series
  *		multi-protocol PC interface card.  Initial offering is with 
- *		the DLCI driver, providing Frame Relay support for linux.
+ *		the DLCI driver, providing Frame Relay support for beep.
  *
  *		Global definitions for the Frame relay interface.
  *
@@ -14,7 +14,7 @@
  *		Gene Kozen <74604.152@compuserve.com> for providing me with
  *			important information about the cards.
  *
- * Author:	Mike McLagan <mike.mclagan@linux.org>
+ * Author:	Mike McLagan <mike.mclagan@beep.org>
  *
  * Changes:
  *		0.15	Mike McLagan	Improved error handling, packet dropping
@@ -34,31 +34,31 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/if_frad.h>
-#include <linux/sdla.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/ptrace.h>
+#include <beep/ioport.h>
+#include <beep/in.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
+#include <beep/if_frad.h>
+#include <beep/sdla.h>
+#include <beep/bitops.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>
 #include <asm/uaccess.h>
 
-static const char* version = "SDLA driver v0.30, 12 Sep 1996, mike.mclagan@linux.org";
+static const char* version = "SDLA driver v0.30, 12 Sep 1996, mike.mclagan@beep.org";
 
 static unsigned int valid_port[] = { 0x250, 0x270, 0x280, 0x300, 0x350, 0x360, 0x380, 0x390};
 
@@ -651,7 +651,7 @@ static int sdla_dlci_conf(struct net_device *slave, struct net_device *master, i
 
 /**************************
  *
- * now for the Linux driver 
+ * now for the Beep driver 
  *
  **************************/
 

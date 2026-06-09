@@ -9,20 +9,20 @@
  * more details.
  *
  */
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/gpio.h>
-#include <linux/err.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/iio/consumer.h>
-#include <linux/iio/types.h>
-#include <linux/power/generic-adc-battery.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/power_supply.h>
+#include <beep/gpio.h>
+#include <beep/err.h>
+#include <beep/timer.h>
+#include <beep/jiffies.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/iio/consumer.h>
+#include <beep/iio/types.h>
+#include <beep/power/generic-adc-battery.h>
 
 #define JITTER_DEFAULT 10 /* hope 10ms is enough */
 

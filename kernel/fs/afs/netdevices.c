@@ -3,11 +3,11 @@
  * Copyright (c) 2007 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/string.h>
-#include <linux/rtnetlink.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
+#include <beep/string.h>
+#include <beep/rtnetlink.h>
+#include <beep/inetdevice.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
 #include <net/net_namespace.h>
 #include "internal.h"
 

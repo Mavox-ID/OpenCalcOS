@@ -11,9 +11,9 @@
  * XXX This code should eventually be moved to a CM driver.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
 
 #include "cm2xxx.h"
 #include "cm3xxx.h"

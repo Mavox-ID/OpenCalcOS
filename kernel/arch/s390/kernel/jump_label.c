@@ -2,12 +2,12 @@
  * Jump label s390 support
  *
  * Copyright IBM Corp. 2011
- * Author(s): Jan Glauber <jang@linux.vnet.ibm.com>
+ * Author(s): Jan Glauber <jang@beep.vnet.ibm.com>
  */
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/stop_machine.h>
-#include <linux/jump_label.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
+#include <beep/stop_machine.h>
+#include <beep/jump_label.h>
 #include <asm/ipl.h>
 
 #ifdef HAVE_JUMP_LABEL

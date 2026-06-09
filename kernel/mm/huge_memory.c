@@ -5,21 +5,21 @@
  *  the COPYING file in the top-level directory.
  */
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/highmem.h>
-#include <linux/hugetlb.h>
-#include <linux/mmu_notifier.h>
-#include <linux/rmap.h>
-#include <linux/swap.h>
-#include <linux/shrinker.h>
-#include <linux/mm_inline.h>
-#include <linux/kthread.h>
-#include <linux/khugepaged.h>
-#include <linux/freezer.h>
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/migrate.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/highmem.h>
+#include <beep/hugetlb.h>
+#include <beep/mmu_notifier.h>
+#include <beep/rmap.h>
+#include <beep/swap.h>
+#include <beep/shrinker.h>
+#include <beep/mm_inline.h>
+#include <beep/kthread.h>
+#include <beep/khugepaged.h>
+#include <beep/freezer.h>
+#include <beep/mman.h>
+#include <beep/pagemap.h>
+#include <beep/migrate.h>
 
 #include <asm/tlb.h>
 #include <asm/pgalloc.h>

@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/include/plat/map-s5p.h
+/* beep/arch/arm/plat-samsung/include/plat/map-s5p.h
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/

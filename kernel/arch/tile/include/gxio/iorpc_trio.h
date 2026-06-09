@@ -13,16 +13,16 @@
  */
 
 /* This file is machine-generated; DO NOT EDIT! */
-#ifndef __GXIO_TRIO_LINUX_RPC_H__
-#define __GXIO_TRIO_LINUX_RPC_H__
+#ifndef __GXIO_TRIO_BEEP_RPC_H__
+#define __GXIO_TRIO_BEEP_RPC_H__
 
 #include <hv/iorpc.h>
 
 #include <hv/drv_trio_intf.h>
 #include <gxio/trio.h>
 #include <gxio/kiorpc.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <beep/string.h>
+#include <beep/module.h>
 #include <asm/pgtable.h>
 
 #define GXIO_TRIO_OP_DEALLOC_ASID      IORPC_OPCODE(IORPC_FORMAT_NONE, 0x1400)
@@ -96,4 +96,4 @@ int gxio_trio_get_mmio_base(gxio_trio_context_t * context, HV_PTE *base);
 int gxio_trio_check_mmio_offset(gxio_trio_context_t * context,
 				unsigned long offset, unsigned long size);
 
-#endif /* !__GXIO_TRIO_LINUX_RPC_H__ */
+#endif /* !__GXIO_TRIO_BEEP_RPC_H__ */

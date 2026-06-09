@@ -9,16 +9,16 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/device.h>
 
-#include <linux/ctype.h>
-#include <linux/string.h>
+#include <beep/ctype.h>
+#include <beep/string.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
 
 #include "gadget_chips.h"
 

@@ -9,7 +9,7 @@
  * Copyright (C) 2003 PMC-Sierra, Inc.,
  *	written by Manish Lachwani
  *
- * Copyright (C) 2003 Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2003 Ralf Baechle <ralf@beep-mips.org>
  *
  * Copyright (C) 2004-2006 MontaVista Software, Inc.
  *			   Dale Farnsworth <dale@farnsworth.org>
@@ -37,27 +37,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/phy.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/io.h>
-#include <linux/types.h>
-#include <linux/inet_lro.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/udp.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
+#include <beep/ethtool.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/phy.h>
+#include <beep/mv643xx_eth.h>
+#include <beep/io.h>
+#include <beep/types.h>
+#include <beep/inet_lro.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
 
 static char mv643xx_eth_driver_name[] = "mv643xx_eth";
 static char mv643xx_eth_driver_version[] = "1.4";

@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5pc100/include/mach/map.h
+/* beep/arch/arm/mach-s5pc100/include/mach/map.h
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/

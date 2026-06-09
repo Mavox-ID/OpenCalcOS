@@ -1,5 +1,5 @@
 /*
- *  linux/fs/affs/bitmap.c
+ *  beep/fs/affs/bitmap.c
  *
  *  (c) 1996 Hans-Joachim Widmaier
  *
@@ -7,7 +7,7 @@
  *  block allocation, deallocation, calculation of free space.
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include "affs.h"
 
 u32

@@ -1,5 +1,5 @@
 /*
- * JMicron JMC2x0 series PCIe Ethernet Linux Device Driver
+ * JMicron JMC2x0 series PCIe Ethernet Beep Device Driver
  *
  * Copyright 2008 JMicron Technology Corporation
  * http://www.jmicron.com/
@@ -24,24 +24,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pci-aspm.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/if_vlan.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/pci-aspm.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/crc32.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/tcp.h>
+#include <beep/udp.h>
+#include <beep/if_vlan.h>
+#include <beep/slab.h>
 #include <net/ip6_checksum.h>
 #include "jme.h"
 

@@ -1,20 +1,20 @@
 /*
- *  linux/fs/binfmt_script.c
+ *  beep/fs/binfmt_script.c
  *
  *  Copyright (C) 1996  Martin von Löwis
  *  original #!-checking implemented by tytso.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/binfmts.h>
-#include <linux/init.h>
-#include <linux/file.h>
-#include <linux/err.h>
-#include <linux/fs.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/stat.h>
+#include <beep/binfmts.h>
+#include <beep/init.h>
+#include <beep/file.h>
+#include <beep/err.h>
+#include <beep/fs.h>
 
-static int load_script(struct linux_binprm *bprm)
+static int load_script(struct beep_binprm *bprm)
 {
 	const char *i_arg, *i_name;
 	char *cp;
@@ -98,7 +98,7 @@ static int load_script(struct linux_binprm *bprm)
 	return search_binary_handler(bprm);
 }
 
-static struct linux_binfmt script_format = {
+static struct beep_binfmt script_format = {
 	.module		= THIS_MODULE,
 	.load_binary	= load_script,
 };

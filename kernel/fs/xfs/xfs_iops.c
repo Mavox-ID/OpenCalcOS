@@ -40,13 +40,13 @@
 #include "xfs_trace.h"
 #include "xfs_icache.h"
 
-#include <linux/capability.h>
-#include <linux/xattr.h>
-#include <linux/namei.h>
-#include <linux/posix_acl.h>
-#include <linux/security.h>
-#include <linux/fiemap.h>
-#include <linux/slab.h>
+#include <beep/capability.h>
+#include <beep/xattr.h>
+#include <beep/namei.h>
+#include <beep/posix_acl.h>
+#include <beep/security.h>
+#include <beep/fiemap.h>
+#include <beep/slab.h>
 
 static int
 xfs_initxattrs(
@@ -68,7 +68,7 @@ xfs_initxattrs(
 }
 
 /*
- * Hook in SELinux.  This is not quite correct yet, what we really need
+ * Hook in SEBeep.  This is not quite correct yet, what we really need
  * here (as we do for default ACLs) is a mechanism by which creation of
  * these attrs can be journalled at inode creation time (along with the
  * inode, of course, such that log replay can't cause these to be lost).
@@ -1129,14 +1129,14 @@ xfs_diflags_to_iflags(
 }
 
 /*
- * Initialize the Linux inode, set up the operation vectors and
+ * Initialize the Beep inode, set up the operation vectors and
  * unlock the inode.
  *
  * When reading existing inodes from disk this is called directly
  * from xfs_iget, when creating a new inode it is called from
  * xfs_ialloc after setting up the inode.
  *
- * We are always called with an uninitialised linux inode here.
+ * We are always called with an uninitialised beep inode here.
  * We need to initialise the necessary fields and take a reference
  * on it.
  */

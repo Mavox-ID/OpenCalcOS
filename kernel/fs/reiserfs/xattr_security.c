@@ -1,11 +1,11 @@
 #include "reiserfs.h"
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/xattr.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/xattr.h>
+#include <beep/slab.h>
 #include "xattr.h"
-#include <linux/security.h>
+#include <beep/security.h>
 #include <asm/uaccess.h>
 
 static int
@@ -62,7 +62,7 @@ int reiserfs_security_init(struct inode *dir, struct inode *inode,
 
 	sec->name = NULL;
 
-	/* Don't add selinux attributes on xattrs - they'll never get used */
+	/* Don't add sebeep attributes on xattrs - they'll never get used */
 	if (IS_PRIVATE(dir))
 		return 0;
 

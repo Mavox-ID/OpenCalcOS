@@ -1,8 +1,8 @@
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/personality.h>
-#include <linux/binfmts.h>
-#include <linux/elf.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/personality.h>
+#include <beep/binfmts.h>
+#include <beep/elf.h>
 #include <asm/system_info.h>
 
 int elf_check_arch(const struct elf32_hdr *x)
@@ -44,10 +44,10 @@ void elf_set_personality(const struct elf32_hdr *x)
 	unsigned int personality = current->personality & ~PER_MASK;
 
 	/*
-	 * We only support Linux ELF executables, so always set the
-	 * personality to LINUX.
+	 * We only support Beep ELF executables, so always set the
+	 * personality to BEEP.
 	 */
-	personality |= PER_LINUX;
+	personality |= PER_BEEP;
 
 	/*
 	 * APCS-26 is only valid for OABI executables

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-w90x900/gpio.c
+ * beep/arch/arm/mach-w90x900/gpio.c
  *
  * Generic nuc900 GPIO handling
  *
@@ -10,17 +10,17 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <beep/clk.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
 
 #include <mach/hardware.h>
 

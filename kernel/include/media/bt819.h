@@ -21,7 +21,7 @@
 #ifndef _BT819_H_
 #define _BT819_H_
 
-#include <linux/ioctl.h>
+#include <beep/ioctl.h>
 
 /* v4l2_device notifications. */
 

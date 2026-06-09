@@ -6,13 +6,13 @@
 #ifndef _IOMMU_COMMON_H
 #define _IOMMU_COMMON_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/device.h>
-#include <linux/iommu-helper.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/scatterlist.h>
+#include <beep/device.h>
+#include <beep/iommu-helper.h>
 
 #include <asm/iommu.h>
 #include <asm/scatterlist.h>

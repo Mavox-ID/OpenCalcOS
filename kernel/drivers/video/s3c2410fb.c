@@ -1,4 +1,4 @@
-/* linux/drivers/video/s3c2410fb.c
+/* beep/drivers/video/s3c2410fb.c
  *	Copyright (c) 2004,2005 Arnaud Patard
  *	Copyright (c) 2004-2008 Ben Dooks
  *
@@ -13,22 +13,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/cpufreq.h>
+#include <beep/io.h>
 
 #include <asm/div64.h>
 
@@ -38,7 +38,7 @@
 #include <mach/fb.h>
 
 #ifdef CONFIG_PM
-#include <linux/pm.h>
+#include <beep/pm.h>
 #endif
 
 #include "s3c2410fb.h"
@@ -1141,7 +1141,7 @@ module_init(s3c2410fb_init);
 module_exit(s3c2410fb_cleanup);
 
 MODULE_AUTHOR("Arnaud Patard <arnaud.patard@rtp-net.org>");
-MODULE_AUTHOR("Ben Dooks <ben-linux@fluff.org>");
+MODULE_AUTHOR("Ben Dooks <ben-beep@fluff.org>");
 MODULE_DESCRIPTION("Framebuffer driver for the s3c2410");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:s3c2410-lcd");

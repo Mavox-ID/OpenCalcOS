@@ -17,18 +17,18 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/device.h>
-#include <linux/hrtimer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/timex.h>
-#include <linux/io.h>
+#include <beep/device.h>
+#include <beep/hrtimer.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/timex.h>
+#include <beep/io.h>
 
-#include <linux/ptp_clock_kernel.h>
+#include <beep/ptp_clock_kernel.h>
 
 #include "gianfar.h"
 

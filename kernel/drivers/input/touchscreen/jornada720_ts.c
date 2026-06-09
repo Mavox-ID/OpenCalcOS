@@ -13,13 +13,13 @@
  * HP Jornada 710/720/729 Touchscreen Driver
  */
 
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <mach/jornada720.h>

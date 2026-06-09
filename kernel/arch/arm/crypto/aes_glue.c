@@ -2,8 +2,8 @@
  * Glue Code for the asm optimized version of the AES Cipher Algorithm
  */
 
-#include <linux/module.h>
-#include <linux/crypto.h>
+#include <beep/module.h>
+#include <beep/crypto.h>
 #include <crypto/aes.h>
 
 #define AES_MAXNR 14

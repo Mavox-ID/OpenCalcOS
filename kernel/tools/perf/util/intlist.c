@@ -7,7 +7,7 @@
 
 #include <errno.h>
 #include <stdlib.h>
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 #include "intlist.h"
 

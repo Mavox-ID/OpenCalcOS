@@ -5,12 +5,12 @@
  * Copyright 1997 Andi Kleen <ak@muc.de>
  * Copyright 1997 Linus Torvalds
  */
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/backing-dev.h>
-#include <linux/interrupt.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/blkdev.h>
+#include <beep/module.h>
+#include <beep/backing-dev.h>
+#include <beep/interrupt.h>
 #include <asm/uaccess.h>
 #include <asm/mmx.h>
 #include <asm/asm.h>
@@ -295,7 +295,7 @@ __copy_user_zeroing_intel(void *to, const void __user *from, unsigned long size)
 
 /*
  * Non Temporal Hint version of __copy_user_zeroing_intel.  It is cache aware.
- * hyoshiok@miraclelinux.com
+ * hyoshiok@miraclebeep.com
  */
 
 static unsigned long __copy_user_zeroing_intel_nocache(void *to,

@@ -4,14 +4,14 @@
  * Copyright (c) 2002 Eric Brower (ebrower@usa.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/pm.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/module.h>
 
 #include <asm/io.h>
 #include <asm/oplib.h>

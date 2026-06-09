@@ -1,5 +1,5 @@
 /*
- * file.c - NTFS kernel file operations.  Part of the Linux-NTFS project.
+ * file.c - NTFS kernel file operations.  Part of the Beep-NTFS project.
  *
  * Copyright (c) 2001-2011 Anton Altaparmakov and Tuxera Inc.
  *
@@ -14,19 +14,19 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/buffer_head.h>
-#include <linux/gfp.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/sched.h>
-#include <linux/swap.h>
-#include <linux/uio.h>
-#include <linux/writeback.h>
+#include <beep/buffer_head.h>
+#include <beep/gfp.h>
+#include <beep/pagemap.h>
+#include <beep/pagevec.h>
+#include <beep/sched.h>
+#include <beep/swap.h>
+#include <beep/uio.h>
+#include <beep/writeback.h>
 
 #include <asm/page.h>
 #include <asm/uaccess.h>
@@ -334,7 +334,7 @@ err_out:
  *
  * Fault a number of userspace pages into pagetables.
  *
- * Unlike include/linux/pagemap.h::fault_in_pages_readable(), this one copes
+ * Unlike include/beep/pagemap.h::fault_in_pages_readable(), this one copes
  * with more than two userspace pages as well as handling the single page case
  * elegantly.
  *

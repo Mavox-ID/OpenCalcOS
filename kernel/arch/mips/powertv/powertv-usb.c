@@ -28,10 +28,10 @@
  * address memory reservations must avoid this region.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
 #include <asm/mach-powertv/asic.h>
 #include <asm/mach-powertv/interrupts.h>
 

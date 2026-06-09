@@ -13,7 +13,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/thread_info.h>
+#include <beep/thread_info.h>
 
 struct task_struct;
 

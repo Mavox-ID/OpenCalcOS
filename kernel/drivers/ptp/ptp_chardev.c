@@ -17,11 +17,11 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/module.h>
-#include <linux/posix-clock.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/posix-clock.h>
+#include <beep/poll.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 #include "ptp_private.h"
 

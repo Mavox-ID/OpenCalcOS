@@ -1,13 +1,13 @@
 /*
- * linux/fs/nfs/callback.h
+ * beep/fs/nfs/callback.h
  *
  * Copyright (C) 2004 Trond Myklebust
  *
  * NFSv4 callback definitions
  */
-#ifndef __LINUX_FS_NFS_CALLBACK_H
-#define __LINUX_FS_NFS_CALLBACK_H
-#include <linux/sunrpc/svc.h>
+#ifndef __BEEP_FS_NFS_CALLBACK_H
+#define __BEEP_FS_NFS_CALLBACK_H
+#include <beep/sunrpc/svc.h>
 
 #define NFS4_CALLBACK 0x40000000
 #define NFS4_CALLBACK_XDRSIZE 2048
@@ -208,4 +208,4 @@ extern int nfs4_set_callback_sessionid(struct nfs_client *clp);
 extern unsigned int nfs_callback_set_tcpport;
 extern unsigned short nfs_callback_tcpport;
 
-#endif /* __LINUX_FS_NFS_CALLBACK_H */
+#endif /* __BEEP_FS_NFS_CALLBACK_H */

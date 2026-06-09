@@ -13,18 +13,18 @@
 
 #define DEBUG
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/cache.h>
-#include <linux/crc32.h>
-#include <linux/mii.h>
-#include <linux/eeprom_93cx6.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/cache.h>
+#include <beep/crc32.h>
+#include <beep/mii.h>
+#include <beep/eeprom_93cx6.h>
 
-#include <linux/spi/spi.h>
+#include <beep/spi/spi.h>
 
 #include "ks8851.h"
 

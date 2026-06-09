@@ -22,16 +22,16 @@
 #ifndef __GLOBAL_H__
 #define __GLOBAL_H__
 
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/console.h>
-#include <linux/timer.h>
+#include <beep/fb.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/console.h>
+#include <beep/timer.h>
 
 #include "debug.h"
 

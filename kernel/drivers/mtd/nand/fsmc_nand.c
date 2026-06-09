@@ -16,27 +16,27 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/resource.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand_ecc.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/mtd/partitions.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/mtd/fsmc.h>
-#include <linux/amba/bus.h>
+#include <beep/clk.h>
+#include <beep/completion.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-direction.h>
+#include <beep/dma-mapping.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/resource.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/nand_ecc.h>
+#include <beep/platform_device.h>
+#include <beep/of.h>
+#include <beep/mtd/partitions.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/mtd/fsmc.h>
+#include <beep/amba/bus.h>
 #include <mtd/mtd-abi.h>
 
 static struct nand_ecclayout fsmc_ecc1_128_layout = {

@@ -10,17 +10,17 @@
  *
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/idr.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/spinlock.h>
+#include <beep/idr.h>
+#include <beep/export.h>
+#include <beep/gfp.h>
+#include <beep/slab.h>
 
 #include <asm/mmu_context.h>
 

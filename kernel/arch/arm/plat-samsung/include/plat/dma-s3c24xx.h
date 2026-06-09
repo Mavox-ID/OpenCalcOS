@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/include/plat/dma-s3c24xx.h
+/* beep/arch/arm/plat-samsung/include/plat/dma-s3c24xx.h
  *
  * Copyright (C) 2006 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>

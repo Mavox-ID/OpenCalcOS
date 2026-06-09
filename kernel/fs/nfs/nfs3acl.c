@@ -1,10 +1,10 @@
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/nfs.h>
-#include <linux/nfs3.h>
-#include <linux/nfs_fs.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/nfsacl.h>
+#include <beep/fs.h>
+#include <beep/gfp.h>
+#include <beep/nfs.h>
+#include <beep/nfs3.h>
+#include <beep/nfs_fs.h>
+#include <beep/posix_acl_xattr.h>
+#include <beep/nfsacl.h>
 
 #include "internal.h"
 

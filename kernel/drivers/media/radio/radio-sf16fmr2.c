@@ -1,4 +1,4 @@
-/* SF16-FMR2 and SF16-FMD2 radio driver for Linux
+/* SF16-FMR2 and SF16-FMD2 radio driver for Beep
  * Copyright (c) 2011 Ondrej Zary
  *
  * Original driver was (c) 2000-2002 Ziglio Frediano, freddy77@angelfire.com
@@ -6,14 +6,14 @@
  * implementation
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>	/* Modules 			*/
-#include <linux/init.h>		/* Initdata			*/
-#include <linux/slab.h>
-#include <linux/ioport.h>	/* request_region		*/
-#include <linux/io.h>		/* outb, outb_p			*/
-#include <linux/isa.h>
-#include <linux/pnp.h>
+#include <beep/delay.h>
+#include <beep/module.h>	/* Modules 			*/
+#include <beep/init.h>		/* Initdata			*/
+#include <beep/slab.h>
+#include <beep/ioport.h>	/* request_region		*/
+#include <beep/io.h>		/* outb, outb_p			*/
+#include <beep/isa.h>
+#include <beep/pnp.h>
 #include <sound/tea575x-tuner.h>
 
 MODULE_AUTHOR("Ondrej Zary");

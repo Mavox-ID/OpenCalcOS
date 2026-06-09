@@ -3,7 +3,7 @@
  *	(c) Copyright 2001 Red Hat Inc.
  *
  * based on the old aacraid driver that is..
- * Adaptec aacraid device driver for Linux.
+ * Adaptec aacraid device driver for Beep.
  *
  * Copyright (c) 2000-2010 Adaptec, Inc.
  *               2010 PMC-Sierra, Inc. (aacraid@pmc-sierra.com)
@@ -29,17 +29,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/time.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/completion.h>
+#include <beep/time.h>
+#include <beep/interrupt.h>
 #include <scsi/scsi_host.h>
 
 #include "aacraid.h"

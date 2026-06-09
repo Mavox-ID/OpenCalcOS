@@ -7,10 +7,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
 #include "cb710-mmc.h"
 
 static const u8 cb710_clock_divider_log2[8] = {
@@ -782,7 +782,7 @@ static struct platform_driver cb710_mmc_driver = {
 
 module_platform_driver(cb710_mmc_driver);
 
-MODULE_AUTHOR("Michał Mirosław <mirq-linux@rere.qmqm.pl>");
+MODULE_AUTHOR("Michał Mirosław <mirq-beep@rere.qmqm.pl>");
 MODULE_DESCRIPTION("ENE CB710 memory card reader driver - MMC/SD part");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:cb710-mmc");

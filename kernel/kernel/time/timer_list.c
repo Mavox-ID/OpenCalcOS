@@ -10,13 +10,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/proc_fs.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/kallsyms.h>
-#include <linux/tick.h>
+#include <beep/proc_fs.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/kallsyms.h>
+#include <beep/tick.h>
 
 #include <asm/uaccess.h>
 

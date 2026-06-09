@@ -14,18 +14,18 @@
  * kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/kgdb.h>
-#include <linux/smp.h>
-#include <linux/signal.h>
-#include <linux/ptrace.h>
-#include <linux/kdebug.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/kgdb.h>
+#include <beep/smp.h>
+#include <beep/signal.h>
+#include <beep/ptrace.h>
+#include <beep/kdebug.h>
 #include <asm/current.h>
 #include <asm/processor.h>
 #include <asm/machdep.h>
 #include <asm/debug.h>
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 /*
  * This table contains the mapping between PowerPC hardware trap types, and
@@ -407,7 +407,7 @@ void kgdb_arch_set_pc(struct pt_regs *regs, unsigned long pc)
  */
 int kgdb_arch_handle_exception(int vector, int signo, int err_code,
 			       char *remcom_in_buffer, char *remcom_out_buffer,
-			       struct pt_regs *linux_regs)
+			       struct pt_regs *beep_regs)
 {
 	char *ptr = &remcom_in_buffer[1];
 	unsigned long addr;
@@ -421,7 +421,7 @@ int kgdb_arch_handle_exception(int vector, int signo, int err_code,
 	case 'c':
 		/* handle the optional parameter */
 		if (kgdb_hex2long(&ptr, &addr))
-			linux_regs->nip = addr;
+			beep_regs->nip = addr;
 
 		atomic_set(&kgdb_cpu_doing_single_step, -1);
 		/* set the trace bit if we're stepping */
@@ -429,9 +429,9 @@ int kgdb_arch_handle_exception(int vector, int signo, int err_code,
 #ifdef CONFIG_PPC_ADV_DEBUG_REGS
 			mtspr(SPRN_DBCR0,
 			      mfspr(SPRN_DBCR0) | DBCR0_IC | DBCR0_IDM);
-			linux_regs->msr |= MSR_DE;
+			beep_regs->msr |= MSR_DE;
 #else
-			linux_regs->msr |= MSR_SE;
+			beep_regs->msr |= MSR_SE;
 #endif
 			atomic_set(&kgdb_cpu_doing_single_step,
 				   raw_smp_processor_id());

@@ -25,7 +25,7 @@
 
 #include <sound/pcm.h>
 #include <sound/hwdep.h>
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 struct firmware;
 struct device;

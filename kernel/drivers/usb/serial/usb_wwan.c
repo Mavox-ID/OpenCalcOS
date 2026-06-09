@@ -22,18 +22,18 @@
 #define DRIVER_AUTHOR "Matthias Urlichs <smurf@smurf.noris.de>"
 #define DRIVER_DESC "USB Driver for GSM modems"
 
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/serial.h>
+#include <beep/kernel.h>
+#include <beep/jiffies.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/module.h>
+#include <beep/bitops.h>
+#include <beep/uaccess.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
+#include <beep/serial.h>
 #include "usb-wwan.h"
 
 void usb_wwan_dtr_rts(struct usb_serial_port *port, int on)

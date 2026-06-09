@@ -27,7 +27,7 @@
 #ifndef _DRM_MEM_UTIL_H_
 #define _DRM_MEM_UTIL_H_
 
-#include <linux/vmalloc.h>
+#include <beep/vmalloc.h>
 
 static __inline__ void *drm_calloc_large(size_t nmemb, size_t size)
 {

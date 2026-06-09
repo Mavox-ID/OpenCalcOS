@@ -1,41 +1,41 @@
 /*
- * Memory Migration functionality - linux/mm/migration.c
+ * Memory Migration functionality - beep/mm/migration.c
  *
  * Copyright (C) 2006 Silicon Graphics, Inc., Christoph Lameter
  *
  * Page migration was first developed in the context of the memory hotplug
  * project. The main authors of the migration code are:
  *
- * IWAMOTO Toshihiro <iwamoto@valinux.co.jp>
- * Hirokazu Takahashi <taka@valinux.co.jp>
+ * IWAMOTO Toshihiro <iwamoto@vabeep.co.jp>
+ * Hirokazu Takahashi <taka@vabeep.co.jp>
  * Dave Hansen <haveblue@us.ibm.com>
  * Christoph Lameter
  */
 
-#include <linux/migrate.h>
-#include <linux/export.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
-#include <linux/mm_inline.h>
-#include <linux/nsproxy.h>
-#include <linux/pagevec.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/topology.h>
-#include <linux/cpu.h>
-#include <linux/cpuset.h>
-#include <linux/writeback.h>
-#include <linux/mempolicy.h>
-#include <linux/vmalloc.h>
-#include <linux/security.h>
-#include <linux/memcontrol.h>
-#include <linux/syscalls.h>
-#include <linux/hugetlb.h>
-#include <linux/hugetlb_cgroup.h>
-#include <linux/gfp.h>
-#include <linux/balloon_compaction.h>
+#include <beep/migrate.h>
+#include <beep/export.h>
+#include <beep/swap.h>
+#include <beep/swapops.h>
+#include <beep/pagemap.h>
+#include <beep/buffer_head.h>
+#include <beep/mm_inline.h>
+#include <beep/nsproxy.h>
+#include <beep/pagevec.h>
+#include <beep/ksm.h>
+#include <beep/rmap.h>
+#include <beep/topology.h>
+#include <beep/cpu.h>
+#include <beep/cpuset.h>
+#include <beep/writeback.h>
+#include <beep/mempolicy.h>
+#include <beep/vmalloc.h>
+#include <beep/security.h>
+#include <beep/memcontrol.h>
+#include <beep/syscalls.h>
+#include <beep/hugetlb.h>
+#include <beep/hugetlb_cgroup.h>
+#include <beep/gfp.h>
+#include <beep/balloon_compaction.h>
 
 #include <asm/tlbflush.h>
 

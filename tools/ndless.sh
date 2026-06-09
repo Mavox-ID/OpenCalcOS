@@ -71,21 +71,22 @@ echo -e "${GREEN}Building ncurses...${NC}"
     ABS_DEST="$(pwd)/dest"
 
     if [ ! -f Makefile ]; then
-        export CC=arm-linux-gnueabi-gcc
-        export CXX=arm-linux-gnueabi-g++
-        export AR=arm-linux-gnueabi-ar
-        export RANLIB=arm-linux-gnueabi-ranlib
-        export LDFLAGS="-Wl,-rpath,/libs -Wl,-dynamic-linker,/libs/ld-linux-armhf.so.3"
+        export CC=arm-beep-gnueabi-gcc
+        export CXX=arm-beep-gnueabi-g++
+        export AR=arm-beep-gnueabi-ar
+        export RANLIB=arm-beep-gnueabi-ranlib
+        export LDFLAGS="-Wl,-rpath,/libs -Wl,-dynamic-linker=/libs/ld-beep-armhf.so.3"
 
         ./configure \
-            --host=arm-linux-gnueabi \
+            --host=arm-beep-gnueabi \
             --prefix="$ABS_DEST" \
             --libdir="$ABS_DEST/libs" \
             --with-shared \
             --without-debug \
             --without-ada \
             --without-tests \
-            --disable-stripping
+            --disable-stripping \
+            --build=x86_64-linux-gnu
     fi
     
     make -j"$(nproc)"
@@ -93,15 +94,34 @@ echo -e "${GREEN}Building ncurses...${NC}"
     
     echo -e "${GREEN}Deploying ncurses libraries...${NC}"
     cp -d "$ABS_DEST/libs/"lib*.so* ../../calcfs/libs/
-    cp -d "$ABS_DEST/libs/"lib*.a ../../calcfs/libs/
 
-    echo -e "${GREEN}Deploying system dependencies (libc, ld-linux)...${NC}"
-    cp -L $(arm-linux-gnueabi-gcc -print-file-name=ld-linux-armhf.so.3) ../../calcfs/libs/ld-linux-armhf.so.3
-    cp -L $(arm-linux-gnueabi-gcc -print-file-name=libc.so.6) ../../calcfs/libs/libc.so.6
+    echo -e "${GREEN}Deploying system dependencies...${NC}"
+    LD_PATH=$(arm-beep-gnueabi-gcc -print-file-name=ld-linux-armhf.so.3)
+    LIBC_PATH=$(arm-beep-gnueabi-gcc -print-file-name=libc.so.6)
+
+    if [ ! -f "$LD_PATH" ] || [ ! -f "$LIBC_PATH" ]; then
+        echo -e "${RED}Error: Could not locate system libraries!${NC}"
+        echo -e "LD path: $LD_PATH"
+        echo -e "Libc path: $LIBC_PATH"
+        exit 1
+    fi
+
+    cp -L "$LD_PATH" ../../calcfs/libs/ld-beep-armhf.so.3
+    cp -L "$LIBC_PATH" ../../calcfs/libs/libc.so.6
+    echo -e "${GREEN}Dependencies deployed successfully.${NC}"
     
     echo -e "${GREEN}Deploying cterm and gterm...${NC}"
     cp "$ABS_DEST/bin/tic" ../../calcfs/bin/cterm
     cp "$ABS_DEST/bin/infocmp" ../../calcfs/bin/gterm
+    
+    echo -e "${YELLOW}Optimizing target filesystem...${NC}"
+    arm-beep-gnueabi-strip --strip-unneeded ../../calcfs/libs/libc.so.6
+    arm-beep-gnueabi-strip --strip-unneeded ../../calcfs/libs/ld-beep-armhf.so.3
+    arm-beep-gnueabi-strip --strip-unneeded ../../calcfs/libs/lib*.so* 2>/dev/null || true
+    
+    arm-beep-gnueabi-strip --strip-all ../../calcfs/bin/cterm
+    arm-beep-gnueabi-strip --strip-all ../../calcfs/bin/gterm
+
     echo -e "${GREEN}Ncurses done. All in $ABS_DEST${NC}"
 )
 

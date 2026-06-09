@@ -10,14 +10,14 @@
  * Converted to V4L2 API by Mauro Carvalho Chehab <mchehab@infradead.org>
  */
 
-#include <linux/module.h>	/* Modules 			*/
-#include <linux/init.h>		/* Initdata			*/
-#include <linux/ioport.h>	/* request_region		*/
-#include <linux/delay.h>	/* udelay			*/
-#include <linux/videodev2.h>	/* kernel radio structs		*/
-#include <linux/mutex.h>
-#include <linux/io.h>		/* outb, outb_p			*/
-#include <linux/slab.h>
+#include <beep/module.h>	/* Modules 			*/
+#include <beep/init.h>		/* Initdata			*/
+#include <beep/ioport.h>	/* request_region		*/
+#include <beep/delay.h>	/* udelay			*/
+#include <beep/videodev2.h>	/* kernel radio structs		*/
+#include <beep/mutex.h>
+#include <beep/io.h>		/* outb, outb_p			*/
+#include <beep/slab.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include "radio-isa.h"

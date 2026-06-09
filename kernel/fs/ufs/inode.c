@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ufs/inode.c
+ *  beep/fs/ufs/inode.c
  *
  * Copyright (C) 1998
  * Daniel Pirkl <daniel.pirkl@email.cz>
@@ -7,7 +7,7 @@
  *
  *  from
  *
- *  linux/fs/ext2/inode.c
+ *  beep/fs/ext2/inode.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -16,7 +16,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  beep/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -27,14 +27,14 @@
 
 #include <asm/uaccess.h>
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/time.h>
+#include <beep/stat.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/buffer_head.h>
+#include <beep/writeback.h>
 
 #include "ufs_fs.h"
 #include "ufs.h"
@@ -600,7 +600,7 @@ static int ufs1_read_inode(struct inode *inode, struct ufs_inode *ufs_inode)
 	}
 	
 	/*
-	 * Linux now has 32-bit uid and gid, so we can support EFT.
+	 * Beep now has 32-bit uid and gid, so we can support EFT.
 	 */
 	i_uid_write(inode, ufs_get_inode_uid(sb, ufs_inode));
 	i_gid_write(inode, ufs_get_inode_gid(sb, ufs_inode));
@@ -648,7 +648,7 @@ static int ufs2_read_inode(struct inode *inode, struct ufs2_inode *ufs2_inode)
 	}
 
         /*
-         * Linux now has 32-bit uid and gid, so we can support EFT.
+         * Beep now has 32-bit uid and gid, so we can support EFT.
          */
 	i_uid_write(inode, fs32_to_cpu(sb, ufs2_inode->ui_uid));
 	i_gid_write(inode, fs32_to_cpu(sb, ufs2_inode->ui_gid));

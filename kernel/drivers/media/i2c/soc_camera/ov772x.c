@@ -15,14 +15,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/v4l2-mediabus.h>
-#include <linux/videodev2.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/v4l2-mediabus.h>
+#include <beep/videodev2.h>
 
 #include <media/ov772x.h>
 #include <media/soc_camera.h>

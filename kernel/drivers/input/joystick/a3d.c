@@ -3,7 +3,7 @@
  */
 
 /*
- * FP-Gaming Assassin 3D joystick driver for Linux
+ * FP-Gaming Assassin 3D joystick driver for Beep
  */
 
 /*
@@ -26,13 +26,13 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/gameport.h>
-#include <linux/input.h>
-#include <linux/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/gameport.h>
+#include <beep/input.h>
+#include <beep/jiffies.h>
 
 #define DRIVER_DESC	"FP-Gaming Assassin 3D joystick driver"
 

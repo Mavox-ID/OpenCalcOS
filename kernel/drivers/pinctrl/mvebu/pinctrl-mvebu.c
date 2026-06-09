@@ -10,19 +10,19 @@
  * (at your option) any later version.
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_platform.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/pinctrl/machine.h>
+#include <beep/pinctrl/pinconf.h>
+#include <beep/pinctrl/pinctrl.h>
+#include <beep/pinctrl/pinmux.h>
 
 #include "pinctrl-mvebu.h"
 

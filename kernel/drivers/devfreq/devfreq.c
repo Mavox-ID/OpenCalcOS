@@ -10,21 +10,21 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/opp.h>
-#include <linux/devfreq.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/printk.h>
-#include <linux/hrtimer.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/opp.h>
+#include <beep/devfreq.h>
+#include <beep/workqueue.h>
+#include <beep/platform_device.h>
+#include <beep/list.h>
+#include <beep/printk.h>
+#include <beep/hrtimer.h>
 #include "governor.h"
 
 static struct class *devfreq_class;

@@ -17,7 +17,7 @@ void FAST_FUNC data_extract_all(archive_handle_t *archive_handle)
 # define dst_name (file_header->name)
 #endif
 
-#if ENABLE_FEATURE_TAR_SELINUX
+#if ENABLE_FEATURE_TAR_SEBEEP
 	char *sctx = archive_handle->tar__sctx[PAX_NEXT_FILE];
 	if (!sctx)
 		sctx = archive_handle->tar__sctx[PAX_GLOBAL];
@@ -165,7 +165,7 @@ void FAST_FUNC data_extract_all(archive_handle_t *archive_handle)
 // GNU tar works around this by chmod-ing directories *after* all files are extracted.
 		res = mkdir(dst_name, file_header->mode);
 		if ((res != 0)
-		 && (errno != EISDIR) /* btw, Linux doesn't return this */
+		 && (errno != EISDIR) /* btw, Beep doesn't return this */
 		 && (errno != EEXIST)
 		) {
 			bb_perror_msg("can't make dir %s", dst_name);
@@ -250,7 +250,7 @@ void FAST_FUNC data_extract_all(archive_handle_t *archive_handle)
 	}
 
  ret: ;
-#if ENABLE_FEATURE_TAR_SELINUX
+#if ENABLE_FEATURE_TAR_SEBEEP
 	if (sctx) {
 		/* reset the context after creating an entry */
 		setfscreatecon(NULL);

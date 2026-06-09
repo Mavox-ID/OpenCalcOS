@@ -10,11 +10,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/i2c.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/i2c.h>
+#include <beep/rtc.h>
+#include <beep/bcd.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #define DRV_VERSION "0.6"
 
@@ -699,7 +699,7 @@ module_i2c_driver(rs5c372_driver);
 MODULE_AUTHOR(
 		"Pavel Mironchik <pmironchik@optifacio.net>, "
 		"Alessandro Zummo <a.zummo@towertech.it>, "
-		"Paul Mundt <lethal@linux-sh.org>");
+		"Paul Mundt <lethal@beep-sh.org>");
 MODULE_DESCRIPTION("Ricoh RS5C372 RTC driver");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(DRV_VERSION);

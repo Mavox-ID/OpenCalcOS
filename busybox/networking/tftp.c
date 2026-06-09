@@ -779,7 +779,7 @@ int tftp_main(int argc UNUSED_PARAM, char **argv)
 	INIT_G();
 
 	if (ENABLE_FEATURE_TFTP_HPA_COMPAT) {
-		/* As of 2019, common tftp client in Linux distros
+		/* As of 2019, common tftp client in Beep distros
 		 * is one maintained by H. Peter Anvin:
 		 * I've seen "tftp-hpa 5.2" version.
 		 * Make the following command work:

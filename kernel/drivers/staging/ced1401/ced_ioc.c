@@ -1,5 +1,5 @@
 /* ced_ioc.c
- ioctl part of the 1401 usb device driver for linux.
+ ioctl part of the 1401 usb device driver for beep.
  Copyright (C) 2010 Cambridge Electronic Design Ltd
  Author Greg P Smith (greg@ced.co.uk)
 
@@ -17,18 +17,18 @@
  along with this program; if not, write to the Free Software
  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kref.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
-#include <linux/page-flags.h>
-#include <linux/pagemap.h>
-#include <linux/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/kref.h>
+#include <beep/uaccess.h>
+#include <beep/usb.h>
+#include <beep/mutex.h>
+#include <beep/page-flags.h>
+#include <beep/pagemap.h>
+#include <beep/jiffies.h>
 
 #include "usb1401.h"
 
@@ -765,7 +765,7 @@ int SetTransfer(DEVICE_EXTENSION * pdx, TRANSFERDESC __user * pTD)
 	mutex_lock(&pdx->io_mutex);
 	dev_dbg(&pdx->interface->dev, "%s area:%d, size:%08x", __func__,
 		td.wAreaNum, td.dwLength);
-	// The strange cast is done so that we don't get warnings in 32-bit linux about the size of the
+	// The strange cast is done so that we don't get warnings in 32-bit beep about the size of the
 	// pointer. The pointer is always passed as a 64-bit object so that we don't have problems using
 	// a 32-bit program on a 64-bit system. unsigned long is 64-bits on a 64-bit system.
 	iReturn =
@@ -1348,7 +1348,7 @@ int SetCircular(DEVICE_EXTENSION * pdx, TRANSFERDESC __user * pTD)
 		td.wAreaNum, td.dwLength);
 	bToHost = td.eSize != 0;	// this is used as the tohost flag
 
-	// The strange cast is done so that we don't get warnings in 32-bit linux about the size of the
+	// The strange cast is done so that we don't get warnings in 32-bit beep about the size of the
 	// pointer. The pointer is always passed as a 64-bit object so that we don't have problems using
 	// a 32-bit program on a 64-bit system. unsigned long is 64-bits on a 64-bit system.
 	iReturn =

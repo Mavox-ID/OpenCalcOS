@@ -18,8 +18,8 @@
  *
  */
 
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 #include "pvrusb2-sysfs.h"
 #include "pvrusb2-hdw.h"
 #include "pvrusb2-debug.h"

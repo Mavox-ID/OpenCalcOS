@@ -15,12 +15,12 @@
  * 02110-1301, USA.
  */
 
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/err.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/errno.h>
+#include <beep/err.h>
 
 #include <asm/cacheflush.h>
 

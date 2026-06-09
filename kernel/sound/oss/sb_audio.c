@@ -6,7 +6,7 @@
  *
  * Copyright (C) by Hannu Savolainen 1993-1997
  *
- * OSS/Free for Linux is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
+ * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
  * Version 2 (June 1991). See the "COPYING" file distributed with this software
  * for more info.
  *
@@ -22,7 +22,7 @@
  * Chris Rankin:         Use spinlocks instead of CLI/STI
  */
 
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 
 #include "sound_config.h"
 

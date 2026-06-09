@@ -9,17 +9,17 @@
  * ad799x_ring.c
  */
 
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/i2c.h>
-#include <linux/bitops.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/i2c.h>
+#include <beep/bitops.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/buffer.h>
+#include <beep/iio/trigger_consumer.h>
+#include <beep/iio/triggered_buffer.h>
 
 #include "ad799x.h"
 

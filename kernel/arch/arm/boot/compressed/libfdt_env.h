@@ -1,8 +1,8 @@
 #ifndef _ARM_LIBFDT_ENV_H
 #define _ARM_LIBFDT_ENV_H
 
-#include <linux/types.h>
-#include <linux/string.h>
+#include <beep/types.h>
+#include <beep/string.h>
 #include <asm/byteorder.h>
 
 #define fdt16_to_cpu(x)		be16_to_cpu(x)

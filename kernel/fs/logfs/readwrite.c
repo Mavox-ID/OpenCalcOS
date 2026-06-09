@@ -1,7 +1,7 @@
 /*
  * fs/logfs/readwrite.c
  *
- * As should be obvious for Linux kernel code, license is GPLv2
+ * As should be obvious for Beep kernel code, license is GPLv2
  *
  * Copyright (c) 2005-2008 Joern Engel <joern@logfs.org>
  *
@@ -17,8 +17,8 @@
  * truncate	truncate a file
  */
 #include "logfs.h"
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 static u64 adjust_bix(u64 bix, level_t level)
 {

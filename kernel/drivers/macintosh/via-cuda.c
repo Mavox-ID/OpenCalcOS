@@ -9,14 +9,14 @@
  * Copyright (C) 1996 Paul Mackerras.
  */
 #include <stdarg.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/adb.h>
-#include <linux/cuda.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/adb.h>
+#include <beep/cuda.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
 #ifdef CONFIG_PPC
 #include <asm/prom.h>
 #include <asm/machdep.h>
@@ -26,7 +26,7 @@
 #include <asm/mac_via.h>
 #endif
 #include <asm/io.h>
-#include <linux/init.h>
+#include <beep/init.h>
 
 static volatile unsigned char __iomem *via;
 static DEFINE_SPINLOCK(cuda_lock);

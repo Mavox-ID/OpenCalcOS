@@ -17,28 +17,28 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/cdev.h>
-#include <linux/debugfs.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/freezer.h>
-#include <linux/fs.h>
-#include <linux/splice.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/virtio.h>
-#include <linux/virtio_console.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/kconfig.h>
+#include <beep/cdev.h>
+#include <beep/debugfs.h>
+#include <beep/completion.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/freezer.h>
+#include <beep/fs.h>
+#include <beep/splice.h>
+#include <beep/pagemap.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/poll.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/virtio.h>
+#include <beep/virtio_console.h>
+#include <beep/wait.h>
+#include <beep/workqueue.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/kconfig.h>
 #include "../tty/hvc/hvc_console.h"
 
 #define is_rproc_enabled IS_ENABLED(CONFIG_REMOTEPROC)

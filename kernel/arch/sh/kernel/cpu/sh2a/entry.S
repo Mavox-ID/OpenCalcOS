@@ -11,7 +11,7 @@
  * for more details.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/thread_info.h>
 #include <cpu/mmu_context.h>

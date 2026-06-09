@@ -1,14 +1,14 @@
 /*
- *  linux/arch/arm/mm/mmap.c
+ *  beep/arch/arm/mm/mmap.c
  */
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/shm.h>
-#include <linux/sched.h>
-#include <linux/io.h>
-#include <linux/personality.h>
-#include <linux/random.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/shm.h>
+#include <beep/sched.h>
+#include <beep/io.h>
+#include <beep/personality.h>
+#include <beep/random.h>
 #include <asm/cachetype.h>
 
 #define COLOUR_ALIGN(addr,pgoff)		\
@@ -215,7 +215,7 @@ int valid_mmap_phys_addr_range(unsigned long pfn, size_t size)
 
 #ifdef CONFIG_STRICT_DEVMEM
 
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 /*
  * devmem_is_allowed() checks to see if /dev/mem access to a certain

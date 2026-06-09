@@ -6,9 +6,9 @@
  * distribution for the license terms and conditions.
  */
 
-#include <linux/slab.h>
-#include <linux/math64.h>
-#include <linux/moduleparam.h>
+#include <beep/slab.h>
+#include <beep/math64.h>
+#include <beep/moduleparam.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include "ctatc.h"

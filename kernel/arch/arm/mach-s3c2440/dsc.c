@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2440/dsc.c
+/* beep/arch/arm/mach-s3c2440/dsc.c
  *
  * Copyright (c) 2004-2005 Simtec Electronics
  *   Ben Dooks <ben@simtec.co.uk>
@@ -10,12 +10,12 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/io.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

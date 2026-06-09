@@ -22,10 +22,10 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/llist.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/interrupt.h>
+#include <beep/llist.h>
 
 
 /**

@@ -3,10 +3,10 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2007 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2007 Ralf Baechle (ralf@beep-mips.org)
  */
-#include <linux/init.h>
-#include <linux/serial_8250.h>
+#include <beep/init.h>
+#include <beep/serial_8250.h>
 
 #define PORT(base, int)							\
 {									\
@@ -41,6 +41,6 @@ static int __init uart8250_init(void)
 
 module_init(uart8250_init);
 
-MODULE_AUTHOR("Ralf Baechle <ralf@linux-mips.org>");
+MODULE_AUTHOR("Ralf Baechle <ralf@beep-mips.org>");
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("Generic 8250 UART probe driver");

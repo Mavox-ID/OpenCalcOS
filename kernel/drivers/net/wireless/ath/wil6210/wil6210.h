@@ -17,8 +17,8 @@
 #ifndef __WIL6210_H__
 #define __WIL6210_H__
 
-#include <linux/netdevice.h>
-#include <linux/wireless.h>
+#include <beep/netdevice.h>
+#include <beep/wireless.h>
 #include <net/cfg80211.h>
 
 #include "dbg_hexdump.h"

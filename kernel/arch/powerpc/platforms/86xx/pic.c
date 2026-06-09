@@ -7,10 +7,10 @@
  * option) any later version.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/of_platform.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/of_platform.h>
 
 #include <asm/mpic.h>
 #include <asm/i8259.h>

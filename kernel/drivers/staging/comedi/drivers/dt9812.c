@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2005 Anders Blomdell <anders.blomdell@control.lth.se>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Beep Control and Measurement Device Interface
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -45,14 +45,14 @@ for my needs.
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kref.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/kref.h>
+#include <beep/uaccess.h>
+#include <beep/usb.h>
 
 #include "../comedidev.h"
 

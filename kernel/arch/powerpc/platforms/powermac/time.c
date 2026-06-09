@@ -9,20 +9,20 @@
  * Copyright (C) 2003-2005 Benjamin Herrenschmidt.
  *
  */
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/adb.h>
-#include <linux/cuda.h>
-#include <linux/pmu.h>
-#include <linux/interrupt.h>
-#include <linux/hardirq.h>
-#include <linux/rtc.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/adb.h>
+#include <beep/cuda.h>
+#include <beep/pmu.h>
+#include <beep/interrupt.h>
+#include <beep/hardirq.h>
+#include <beep/rtc.h>
 
 #include <asm/sections.h>
 #include <asm/prom.h>

@@ -1,8 +1,8 @@
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/init_task.h>
-#include <linux/fs.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/init_task.h>
+#include <beep/fs.h>
 
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>

@@ -33,7 +33,7 @@
  */
 
 #include "ubifs.h"
-#include <linux/list_sort.h>
+#include <beep/list_sort.h>
 
 /**
  * struct replay_entry - replay list entry.

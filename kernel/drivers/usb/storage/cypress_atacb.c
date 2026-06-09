@@ -19,11 +19,11 @@
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_eh.h>
-#include <linux/ata.h>
+#include <beep/ata.h>
 
 #include "usb.h"
 #include "protocol.h"

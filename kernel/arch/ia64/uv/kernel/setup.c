@@ -8,8 +8,8 @@
  * Copyright (C) 2008 Silicon Graphics, Inc. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/percpu.h>
+#include <beep/module.h>
+#include <beep/percpu.h>
 #include <asm/sn/simulator.h>
 #include <asm/uv/uv_mmrs.h>
 #include <asm/uv/uv_hub.h>

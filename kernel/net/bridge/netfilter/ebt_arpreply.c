@@ -8,12 +8,12 @@
  *  August, 2003
  *
  */
-#include <linux/if_arp.h>
+#include <beep/if_arp.h>
 #include <net/arp.h>
-#include <linux/module.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_arpreply.h>
+#include <beep/module.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_bridge/ebtables.h>
+#include <beep/netfilter_bridge/ebt_arpreply.h>
 
 static unsigned int
 ebt_arpreply_tg(struct sk_buff *skb, const struct xt_action_param *par)

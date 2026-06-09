@@ -4,11 +4,11 @@
  * License terms: GNU General Public License (GPL), version 2
  */
 
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/platform_data/pinctrl-nomadik.h>
-#include <linux/platform_data/dma-ste-dma40.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/platform_data/pinctrl-nomadik.h>
+#include <beep/platform_data/dma-ste-dma40.h>
 
 #include <mach/devices.h>
 #include <mach/hardware.h>

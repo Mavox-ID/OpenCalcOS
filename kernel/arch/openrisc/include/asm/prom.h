@@ -1,7 +1,7 @@
 /*
- * OpenRISC Linux
+ * OpenRISC Beep
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -15,22 +15,22 @@
  * (at your option) any later version.
  */
 
-#include <linux/of.h>	/* linux/of.h gets to determine #include ordering */
+#include <beep/of.h>	/* beep/of.h gets to determine #include ordering */
 
 #ifndef _ASM_OPENRISC_PROM_H
 #define _ASM_OPENRISC_PROM_H
 #ifdef __KERNEL__
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/atomic.h>
-#include <linux/of_irq.h>
-#include <linux/of_fdt.h>
-#include <linux/of_address.h>
-#include <linux/proc_fs.h>
-#include <linux/platform_device.h>
+#include <beep/irqdomain.h>
+#include <beep/atomic.h>
+#include <beep/of_irq.h>
+#include <beep/of_fdt.h>
+#include <beep/of_address.h>
+#include <beep/proc_fs.h>
+#include <beep/platform_device.h>
 #define HAVE_ARCH_DEVTREE_FIXUPS
 
 /* Other Prototypes */

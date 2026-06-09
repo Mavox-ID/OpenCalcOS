@@ -12,8 +12,8 @@
  * kind, whether express or implied.
  */
 
-#include <linux/pci.h>
-#include <linux/of_platform.h>
+#include <beep/pci.h>
+#include <beep/of_platform.h>
 #include <asm/div64.h>
 #include <asm/mpic.h>
 #include <asm/swiotlb.h>

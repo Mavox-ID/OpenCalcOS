@@ -5,7 +5,7 @@
  * See LICENSE.qla4xxx for copyright and licensing details.
  */
 
-#include <linux/ratelimit.h>
+#include <beep/ratelimit.h>
 
 #include "ql4_def.h"
 #include "ql4_version.h"

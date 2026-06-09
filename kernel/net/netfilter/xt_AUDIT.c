@@ -11,15 +11,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/audit.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/if_arp.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_AUDIT.h>
-#include <linux/netfilter_bridge/ebtables.h>
+#include <beep/audit.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/tcp.h>
+#include <beep/udp.h>
+#include <beep/if_arp.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_AUDIT.h>
+#include <beep/netfilter_bridge/ebtables.h>
 #include <net/ipv6.h>
 #include <net/ip.h>
 

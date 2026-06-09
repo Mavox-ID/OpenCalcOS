@@ -1,13 +1,13 @@
 /*
  *    Architecture-specific kernel symbols
  *
- *    Copyright (C) 2000-2001 Richard Hirst <rhirst with parisc-linux.org>
+ *    Copyright (C) 2000-2001 Richard Hirst <rhirst with parisc-beep.org>
  *    Copyright (C) 2001 Dave Kennedy
- *    Copyright (C) 2001 Paul Bame <bame at parisc-linux.org>
- *    Copyright (C) 2001-2003 Grant Grundler <grundler with parisc-linux.org>
- *    Copyright (C) 2002-2003 Matthew Wilcox <willy at parisc-linux.org>
- *    Copyright (C) 2002 Randolph Chung <tausq at parisc-linux.org>
- *    Copyright (C) 2002-2007 Helge Deller <deller with parisc-linux.org>
+ *    Copyright (C) 2001 Paul Bame <bame at parisc-beep.org>
+ *    Copyright (C) 2001-2003 Grant Grundler <grundler with parisc-beep.org>
+ *    Copyright (C) 2002-2003 Matthew Wilcox <willy at parisc-beep.org>
+ *    Copyright (C) 2002 Randolph Chung <tausq at parisc-beep.org>
+ *    Copyright (C) 2002-2007 Helge Deller <deller with parisc-beep.org>
  * 
  *    This program is free software; you can redistribute it and/or modify
  *    it under the terms of the GNU General Public License as published by
@@ -24,14 +24,14 @@
  *    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/syscalls.h>
 
-#include <linux/string.h>
+#include <beep/string.h>
 EXPORT_SYMBOL(memset);
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 EXPORT_SYMBOL(__xchg8);
 EXPORT_SYMBOL(__xchg32);
 EXPORT_SYMBOL(__cmpxchg_u32);

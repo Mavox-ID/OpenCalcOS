@@ -8,19 +8,19 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/ab8500.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/ab8500/gpio.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/mfd/ab8500.h>
+#include <beep/mfd/abx500.h>
+#include <beep/mfd/ab8500/gpio.h>
 
 /*
  * GPIO registers offset

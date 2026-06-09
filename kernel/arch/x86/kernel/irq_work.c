@@ -4,9 +4,9 @@
  * Copyright (C) 2010 Red Hat, Inc., Peter Zijlstra <pzijlstr@redhat.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/irq_work.h>
-#include <linux/hardirq.h>
+#include <beep/kernel.h>
+#include <beep/irq_work.h>
+#include <beep/hardirq.h>
 #include <asm/apic.h>
 
 void smp_irq_work_interrupt(struct pt_regs *regs)

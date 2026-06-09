@@ -9,11 +9,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/dccp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/skbuff.h>
+#include <beep/dccp.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_nat.h>

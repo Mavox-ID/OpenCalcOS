@@ -11,7 +11,7 @@
 #include <asm/addrspace.h>
 
 #ifndef __ASSEMBLY__
-#include <linux/sched.h>
+#include <beep/sched.h>
 
 #endif /* !__ASSEMBLY__ */
 

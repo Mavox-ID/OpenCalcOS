@@ -1,5 +1,5 @@
 /*
- *	linux/include/asm-alpha/err_common.h
+ *	beep/include/asm-alpha/err_common.h
  *
  *	Copyright (C) 2000 Jeff Wiedemeier (Compaq Computer Corporation)
  *

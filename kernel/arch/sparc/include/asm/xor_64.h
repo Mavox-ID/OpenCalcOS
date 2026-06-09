@@ -5,7 +5,7 @@
  * UltraSparc Visual Instruction Set and Niagara block-init
  * twin-load instructions.
  *
- * Copyright (C) 1997, 1999 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1997, 1999 Jakub Jelinek (jj@ultra.beep.cz)
  * Copyright (C) 2006 David S. Miller <davem@davemloft.net>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -14,7 +14,7 @@
  * any later version.
  *
  * You should have received a copy of the GNU General Public License
- * (for example /usr/src/linux/COPYING); if not, write to the Free
+ * (for example /usr/src/beep/COPYING); if not, write to the Free
  * Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 

@@ -1,6 +1,6 @@
 /*
  * etrap.S: Sparc trap window preparation for entry into the
- *          Linux kernel.
+ *          Beep kernel.
  *
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  */

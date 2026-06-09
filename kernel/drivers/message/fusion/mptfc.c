@@ -1,10 +1,10 @@
 /*
- *  linux/drivers/message/fusion/mptfc.c
+ *  beep/drivers/message/fusion/mptfc.c
  *      For use with LSI PCI chip/adapter(s)
  *      running LSI Fusion MPT (Message Passing Technology) firmware.
  *
  *  Copyright (c) 1999-2008 LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionBeep@lsi.com)
  *
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
@@ -43,18 +43,18 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kdev_t.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>	/* for mdelay */
-#include <linux/interrupt.h>	/* needed for in_interrupt() proto */
-#include <linux/reboot.h>	/* notifier code */
-#include <linux/workqueue.h>
-#include <linux/sort.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/kdev_t.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>	/* for mdelay */
+#include <beep/interrupt.h>	/* needed for in_interrupt() proto */
+#include <beep/reboot.h>	/* notifier code */
+#include <beep/workqueue.h>
+#include <beep/sort.h>
+#include <beep/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -68,7 +68,7 @@
 
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 #define my_NAME		"Fusion MPT FC Host driver"
-#define my_VERSION	MPT_LINUX_VERSION_COMMON
+#define my_VERSION	MPT_BEEP_VERSION_COMMON
 #define MYNAM		"mptfc"
 
 MODULE_AUTHOR(MODULEAUTHOR);

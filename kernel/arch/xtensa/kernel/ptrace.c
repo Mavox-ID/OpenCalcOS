@@ -13,14 +13,14 @@
  * Marc Gauthier<marc@tensilica.com> <marc@alumni.uwaterloo.ca>
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/smp.h>
-#include <linux/security.h>
-#include <linux/signal.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/smp.h>
+#include <beep/security.h>
+#include <beep/signal.h>
 
 #include <asm/pgtable.h>
 #include <asm/page.h>

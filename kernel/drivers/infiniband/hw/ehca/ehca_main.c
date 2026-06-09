@@ -1,5 +1,5 @@
 /*
- *  IBM eServer eHCA Infiniband device driver for Linux on POWER
+ *  IBM eServer eHCA Infiniband device driver for Beep on POWER
  *
  *  module start stop, hca detection
  *
@@ -41,11 +41,11 @@
  */
 
 #ifdef CONFIG_PPC_64K_PAGES
-#include <linux/slab.h>
+#include <beep/slab.h>
 #endif
 
-#include <linux/notifier.h>
-#include <linux/memory.h>
+#include <beep/notifier.h>
+#include <beep/memory.h>
 #include "ehca_classes.h"
 #include "ehca_iverbs.h"
 #include "ehca_mrmw.h"

@@ -9,13 +9,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/mtdram.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/ioport.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/mtdram.h>
 
 static unsigned long total_size = CONFIG_MTDRAM_TOTAL_SIZE;
 static unsigned long erase_size = CONFIG_MTDRAM_ERASE_SIZE;

@@ -24,16 +24,16 @@
  * This file may also be available under a different license from Cavium.
  * Contact Cavium Networks for more information
 **********************************************************************/
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/phy.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/of_net.h>
+#include <beep/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/phy.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/of_net.h>
 
 #include <net/dst.h>
 
@@ -92,7 +92,7 @@ MODULE_PARM_DESC(always_use_pow, "\n"
 	"\tapplication changes the config, packets will still be\n"
 	"\treceived from the low level hardware. Use this option\n"
 	"\tto allow a CVMX app to intercept all packets from the\n"
-	"\tlinux kernel. You must specify pow_send_group along with\n"
+	"\tbeep kernel. You must specify pow_send_group along with\n"
 	"\tthis option.");
 
 char pow_send_list[128] = "";
@@ -474,7 +474,7 @@ int cvm_oct_common_init(struct net_device *dev)
 			dev->features |= NETIF_F_IP_CSUM;
 	}
 
-	/* We do our own locking, Linux doesn't need to */
+	/* We do our own locking, Beep doesn't need to */
 	dev->features |= NETIF_F_LLTX;
 	SET_ETHTOOL_OPS(dev, &cvm_oct_ethtool_ops);
 

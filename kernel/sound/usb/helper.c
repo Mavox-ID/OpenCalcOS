@@ -15,9 +15,9 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
 
 #include "usbaudio.h"
 #include "helper.h"

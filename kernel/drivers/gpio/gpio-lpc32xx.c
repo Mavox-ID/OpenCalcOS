@@ -16,14 +16,14 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/errno.h>
+#include <beep/gpio.h>
+#include <beep/of_gpio.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
 
 #include <mach/hardware.h>
 #include <mach/platform.h>

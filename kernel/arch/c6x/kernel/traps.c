@@ -8,10 +8,10 @@
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/kallsyms.h>
-#include <linux/bug.h>
+#include <beep/module.h>
+#include <beep/ptrace.h>
+#include <beep/kallsyms.h>
+#include <beep/bug.h>
 
 #include <asm/soc.h>
 #include <asm/special_insns.h>

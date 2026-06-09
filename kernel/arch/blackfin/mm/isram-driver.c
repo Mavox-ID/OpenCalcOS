@@ -8,12 +8,12 @@
 
 #define pr_fmt(fmt) "isram: " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/sched.h>
 
 #include <asm/blackfin.h>
 #include <asm/dma.h>

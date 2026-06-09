@@ -12,8 +12,8 @@
  *   Document ID MV-S104858-00, Rev. A, October 23 2007.
  */
 
-#include <linux/init.h>
-#include <linux/highmem.h>
+#include <beep/init.h>
+#include <beep/highmem.h>
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>
 #include <plat/cache-feroceon-l2.h>
@@ -123,9 +123,9 @@ static inline void l2_inv_all(void)
 }
 
 /*
- * Linux primitives.
+ * Beep primitives.
  *
- * Note that the end addresses passed to Linux primitives are
+ * Note that the end addresses passed to Beep primitives are
  * noninclusive, while the hardware cache range operations use
  * inclusive start and end addresses.
  */

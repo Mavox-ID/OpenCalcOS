@@ -110,7 +110,7 @@ static volatile char *mpsc_get_virtreg_of_phandle(void *devp, char *prop)
 	if (n != sizeof(v))
 		goto err_out;
 
-	devp = find_node_by_linuxphandle((u32)v);
+	devp = find_node_by_beepphandle((u32)v);
 	if (devp == NULL)
 		goto err_out;
 

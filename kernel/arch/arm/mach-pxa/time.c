@@ -12,10 +12,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/clockchips.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/clockchips.h>
 
 #include <asm/div64.h>
 #include <asm/mach/irq.h>

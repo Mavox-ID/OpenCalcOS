@@ -1,7 +1,7 @@
 /*
  *  init.c, Common initialization routines for NEC VR4100 series.
  *
- *  Copyright (C) 2003-2009  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2003-2009  Yoichi Yuasa <yuasa@beep-mips.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -17,10 +17,10 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/irq.h>
+#include <beep/string.h>
 
 #include <asm/bootinfo.h>
 #include <asm/time.h>

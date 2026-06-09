@@ -10,8 +10,8 @@
  *     Costantino Leandro (Rxart Desktop) <le_costantino@pixartargentina.com.ar>
  */
 #include <net/mac80211.h>
-#include <linux/usb.h>
-#include <linux/module.h>
+#include <beep/usb.h>
+#include <beep/module.h>
 
 #include "core.h"
 #include "mds_f.h"

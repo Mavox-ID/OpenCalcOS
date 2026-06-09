@@ -1,7 +1,7 @@
 /* $Id: config.c,v 2.84.2.5 2004/02/11 13:21:33 keil Exp $
  *
  * Author       Karsten Keil
- * Copyright    by Karsten Keil      <keil@isdn4linux.de>
+ * Copyright    by Karsten Keil      <keil@isdn4beep.de>
  *              by Kai Germaschewski <kai.germaschewski@gmx.de>
  *
  * This software may be used and distributed according to the terms
@@ -14,16 +14,16 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/timer.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/stddef.h>
+#include <beep/timer.h>
+#include <beep/init.h>
 #include "hisax.h"
-#include <linux/module.h>
-#include <linux/kernel_stat.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel_stat.h>
+#include <beep/workqueue.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 #define HISAX_STATUS_BUFSIZE 4096
 
 /*
@@ -87,7 +87,7 @@ const char *CardType[] = {
 	"Creatix/Teles PnP", "AVM A1", "Elsa ML", "Elsa Quickstep",
 	"Teles PCMCIA",	"ITK ix1-micro Rev.2", "Elsa PCMCIA",
 	"Eicon.Diehl Diva", "ISDNLink",	"TeleInt", "Teles 16.3c",
-	"Sedlbauer Speed Card", "USR Sportster", "ith mic Linux",
+	"Sedlbauer Speed Card", "USR Sportster", "ith mic Beep",
 	"Elsa PCI", "Compaq ISA", "NETjet-S", "Teles PCI",
 	"Sedlbauer Speed Star (PCMCIA)", "AMD 7930", "NICCY", "S0Box",
 	"AVM A1 (PCMCIA)", "AVM Fritz PnP/PCI", "Sedlbauer Speed Fax +",
@@ -345,7 +345,7 @@ static int irq[HISAX_MAX_CARDS] = { 0, };
 static int mem[HISAX_MAX_CARDS] = { 0, };
 static char *id = HiSaxID;
 
-MODULE_DESCRIPTION("ISDN4Linux: Driver for passive ISDN cards");
+MODULE_DESCRIPTION("ISDN4Beep: Driver for passive ISDN cards");
 MODULE_AUTHOR("Karsten Keil");
 MODULE_LICENSE("GPL");
 module_param_array(type, int, NULL, 0);
@@ -380,7 +380,7 @@ static void __init HiSaxVersion(void)
 {
 	char tmp[64];
 
-	printk(KERN_INFO "HiSax: Linux Driver for passive ISDN cards\n");
+	printk(KERN_INFO "HiSax: Beep Driver for passive ISDN cards\n");
 #ifdef MODULE
 	printk(KERN_INFO "HiSax: Version 3.5 (module)\n");
 #else
@@ -1907,7 +1907,7 @@ static void EChannel_proc_rcv(struct hisax_d_if *d_if)
 }
 
 #ifdef CONFIG_PCI
-#include <linux/pci.h>
+#include <beep/pci.h>
 
 static struct pci_device_id hisax_pci_tbl[] __used = {
 #ifdef CONFIG_HISAX_FRITZPCI

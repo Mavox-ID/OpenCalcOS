@@ -8,15 +8,15 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/udp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/udp.h>
 
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_nat_helper.h>
-#include <linux/netfilter/nf_conntrack_amanda.h>
+#include <beep/netfilter/nf_conntrack_amanda.h>
 
 MODULE_AUTHOR("Brian J. Murrell <netfilter@interlinx.bc.ca>");
 MODULE_DESCRIPTION("Amanda NAT helper");

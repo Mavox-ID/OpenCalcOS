@@ -1,16 +1,16 @@
 #
-# linux/arch/s390/boot/compressed/Makefile
+# beep/arch/s390/boot/compressed/Makefile
 #
-# create a compressed vmlinux image from the original vmlinux
+# create a compressed vmbeep image from the original vmbeep
 #
 
 BITS := $(if $(CONFIG_64BIT),64,31)
 
-targets	:= vmlinux.lds vmlinux vmlinux.bin vmlinux.bin.gz vmlinux.bin.bz2 \
-	   vmlinux.bin.xz vmlinux.bin.lzma vmlinux.bin.lzo misc.o piggy.o \
+targets	:= vmbeep.lds vmbeep vmbeep.bin vmbeep.bin.gz vmbeep.bin.bz2 \
+	   vmbeep.bin.xz vmbeep.bin.lzma vmbeep.bin.lzo misc.o piggy.o \
 	   sizes.h head$(BITS).o
 
-KBUILD_CFLAGS := -m$(BITS) -D__KERNEL__ $(LINUX_INCLUDE) -O2
+KBUILD_CFLAGS := -m$(BITS) -D__KERNEL__ $(BEEP_INCLUDE) -O2
 KBUILD_CFLAGS += -DDISABLE_BRANCH_PROFILING
 KBUILD_CFLAGS += $(cflags-y)
 KBUILD_CFLAGS += $(call cc-option,-mpacked-stack)
@@ -21,8 +21,8 @@ GCOV_PROFILE := n
 OBJECTS := $(addprefix $(objtree)/arch/s390/kernel/, head.o sclp.o ebcdic.o)
 OBJECTS += $(obj)/head$(BITS).o $(obj)/misc.o $(obj)/piggy.o
 
-LDFLAGS_vmlinux := --oformat $(LD_BFD) -e startup -T
-$(obj)/vmlinux: $(obj)/vmlinux.lds $(OBJECTS)
+LDFLAGS_vmbeep := --oformat $(LD_BFD) -e startup -T
+$(obj)/vmbeep: $(obj)/vmbeep.lds $(OBJECTS)
 	$(call if_changed,ld)
 	@:
 
@@ -31,7 +31,7 @@ sed-sizes := -e 's/^\([0-9a-fA-F]*\) . \(__bss_start\|_end\)$$/\#define SZ\2 0x\
 quiet_cmd_sizes = GEN $@
       cmd_sizes = $(NM) $< | sed -n $(sed-sizes) > $@
 
-$(obj)/sizes.h: vmlinux
+$(obj)/sizes.h: vmbeep
 	$(call if_changed,sizes)
 
 AFLAGS_head$(BITS).o += -I$(obj)
@@ -40,11 +40,11 @@ $(obj)/head$(BITS).o: $(obj)/sizes.h
 CFLAGS_misc.o += -I$(obj)
 $(obj)/misc.o: $(obj)/sizes.h
 
-OBJCOPYFLAGS_vmlinux.bin :=  -R .comment -S
-$(obj)/vmlinux.bin: vmlinux
+OBJCOPYFLAGS_vmbeep.bin :=  -R .comment -S
+$(obj)/vmbeep.bin: vmbeep
 	$(call if_changed,objcopy)
 
-vmlinux.bin.all-y := $(obj)/vmlinux.bin
+vmbeep.bin.all-y := $(obj)/vmbeep.bin
 
 suffix-$(CONFIG_KERNEL_GZIP)  := gz
 suffix-$(CONFIG_KERNEL_BZIP2) := bz2
@@ -52,17 +52,17 @@ suffix-$(CONFIG_KERNEL_LZMA)  := lzma
 suffix-$(CONFIG_KERNEL_LZO)  := lzo
 suffix-$(CONFIG_KERNEL_XZ)  := xz
 
-$(obj)/vmlinux.bin.gz: $(vmlinux.bin.all-y)
+$(obj)/vmbeep.bin.gz: $(vmbeep.bin.all-y)
 	$(call if_changed,gzip)
-$(obj)/vmlinux.bin.bz2: $(vmlinux.bin.all-y)
+$(obj)/vmbeep.bin.bz2: $(vmbeep.bin.all-y)
 	$(call if_changed,bzip2)
-$(obj)/vmlinux.bin.lzma: $(vmlinux.bin.all-y)
+$(obj)/vmbeep.bin.lzma: $(vmbeep.bin.all-y)
 	$(call if_changed,lzma)
-$(obj)/vmlinux.bin.lzo: $(vmlinux.bin.all-y)
+$(obj)/vmbeep.bin.lzo: $(vmbeep.bin.all-y)
 	$(call if_changed,lzo)
-$(obj)/vmlinux.bin.xz: $(vmlinux.bin.all-y)
+$(obj)/vmbeep.bin.xz: $(vmbeep.bin.all-y)
 	$(call if_changed,xzkern)
 
 LDFLAGS_piggy.o := -r --format binary --oformat $(LD_BFD) -T
-$(obj)/piggy.o: $(obj)/vmlinux.scr $(obj)/vmlinux.bin.$(suffix-y)
+$(obj)/piggy.o: $(obj)/vmbeep.scr $(obj)/vmbeep.bin.$(suffix-y)
 	$(call if_changed,ld)

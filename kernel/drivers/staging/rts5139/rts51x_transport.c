@@ -23,10 +23,10 @@
  *   No. 450, Shenhu Road, Suzhou Industry Park, Suzhou, China
  */
 
-#include <linux/blkdev.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/blkdev.h>
+#include <beep/kthread.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_eh.h>

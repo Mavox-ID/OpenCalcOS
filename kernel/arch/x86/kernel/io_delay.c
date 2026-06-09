@@ -5,12 +5,12 @@
  * and possibly other systems. Also allow for the gradual elimination of
  * outb_p/inb_p API uses.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/dmi.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/dmi.h>
+#include <beep/io.h>
 
 int io_delay_type __read_mostly = CONFIG_DEFAULT_IO_DELAY_TYPE;
 

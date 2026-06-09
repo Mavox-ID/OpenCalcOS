@@ -7,12 +7,12 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/bootmem.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/linkage.h>
+#include <beep/bootmem.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/types.h>
+#include <beep/linkage.h>
 
 #include <video/atmel_lcdc.h>
 
@@ -67,7 +67,7 @@ struct atmel_lcdfb_info __initdata atstk1000_lcdc_data = {
 };
 
 #ifdef CONFIG_BOARD_ATSTK1000_J2_LED
-#include <linux/leds.h>
+#include <beep/leds.h>
 
 static struct gpio_led stk1000_j2_led[] = {
 #ifdef CONFIG_BOARD_ATSTK1000_J2_LED8

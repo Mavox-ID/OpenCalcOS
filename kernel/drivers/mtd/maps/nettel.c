@@ -9,18 +9,18 @@
 
 /****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/cfi.h>
-#include <linux/reboot.h>
-#include <linux/err.h>
-#include <linux/kdev_t.h>
-#include <linux/root_dev.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/cfi.h>
+#include <beep/reboot.h>
+#include <beep/err.h>
+#include <beep/kdev_t.h>
+#include <beep/root_dev.h>
 #include <asm/io.h>
 
 /****************************************************************************/

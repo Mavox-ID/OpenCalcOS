@@ -19,14 +19,14 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/pm_qos.h>
-#include <linux/uio.h>
-#include <linux/dma-mapping.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/file.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/pm_qos.h>
+#include <beep/uio.h>
+#include <beep/dma-mapping.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/info.h>

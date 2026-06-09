@@ -19,17 +19,17 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA        02110-1301, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <beep/kernel.h>
+#include <beep/i2c.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/iio/events.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
 #include "tsl2x7x.h"
 
 /* Cal defs*/

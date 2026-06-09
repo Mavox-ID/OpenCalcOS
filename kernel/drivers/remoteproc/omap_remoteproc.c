@@ -21,15 +21,15 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/remoteproc.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/remoteproc.h>
 
 #include <plat/mailbox.h>
-#include <linux/platform_data/remoteproc-omap.h>
+#include <beep/platform_data/remoteproc-omap.h>
 
 #include "omap_remoteproc.h"
 #include "remoteproc_internal.h"

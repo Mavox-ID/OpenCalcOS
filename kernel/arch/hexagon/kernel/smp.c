@@ -1,7 +1,7 @@
 /*
  * SMP support for Hexagon
  *
- * Copyright (c) 2010-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2012, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -18,17 +18,17 @@
  * 02110-1301, USA.
  */
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/cpu.h>
+#include <beep/err.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/percpu.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/spinlock.h>
+#include <beep/cpu.h>
 
 #include <asm/time.h>    /*  timer_interrupt  */
 #include <asm/hexagon_vm.h>

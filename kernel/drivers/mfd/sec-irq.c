@@ -11,16 +11,16 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/regmap.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/regmap.h>
 
-#include <linux/mfd/samsung/core.h>
-#include <linux/mfd/samsung/irq.h>
-#include <linux/mfd/samsung/s2mps11.h>
-#include <linux/mfd/samsung/s5m8763.h>
-#include <linux/mfd/samsung/s5m8767.h>
+#include <beep/mfd/samsung/core.h>
+#include <beep/mfd/samsung/irq.h>
+#include <beep/mfd/samsung/s2mps11.h>
+#include <beep/mfd/samsung/s5m8763.h>
+#include <beep/mfd/samsung/s5m8767.h>
 
 static struct regmap_irq s2mps11_irqs[] = {
 	[S2MPS11_IRQ_PWRONF] = {

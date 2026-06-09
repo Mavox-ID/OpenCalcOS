@@ -12,8 +12,8 @@
 #ifndef _CRYPTO_CRYPT_H
 #define _CRYPTO_CRYPT_H
 
-#include <linux/crypto.h>
-#include <linux/kernel.h>
+#include <beep/crypto.h>
+#include <beep/kernel.h>
 #include <crypto/hash.h>
 
 struct cryptd_ablkcipher {

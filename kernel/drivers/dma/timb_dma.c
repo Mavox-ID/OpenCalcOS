@@ -20,16 +20,16 @@
  * Timberdale FPGA DMA engine
  */
 
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
-#include <linux/timb_dma.h>
+#include <beep/timb_dma.h>
 
 #include "dmaengine.h"
 

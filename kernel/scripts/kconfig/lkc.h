@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2002 Roman Zippel <zippel@linux-m68k.org>
+ * Copyright (C) 2002 Roman Zippel <zippel@beep-m68k.org>
  * Released under the terms of the GNU GPL v2.0.
  */
 
@@ -28,7 +28,7 @@ extern "C" {
 #define SRCTREE "srctree"
 
 #ifndef PACKAGE
-#define PACKAGE "linux"
+#define PACKAGE "beep"
 #endif
 
 #define LOCALEDIR "/usr/share/locale"

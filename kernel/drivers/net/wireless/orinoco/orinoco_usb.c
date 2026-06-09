@@ -24,7 +24,7 @@
  * provisions above, a recipient may use your version of this file
  * under either the MPL or the GPL.
  *
- * Queueing code based on linux-wlan-ng 0.2.1-pre5
+ * Queueing code based on beep-wlan-ng 0.2.1-pre5
  *
  * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  *
@@ -46,25 +46,25 @@
 #define DRIVER_NAME "orinoco_usb"
 #define PFX DRIVER_NAME ": "
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/fcntl.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/timer.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
+#include <beep/errno.h>
+#include <beep/poll.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/fcntl.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
+#include <beep/usb.h>
+#include <beep/timer.h>
 
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/wireless.h>
-#include <linux/firmware.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/etherdevice.h>
+#include <beep/wireless.h>
+#include <beep/firmware.h>
 
 #include "mic.h"
 #include "orinoco.h"

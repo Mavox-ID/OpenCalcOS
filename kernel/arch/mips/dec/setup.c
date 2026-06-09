@@ -8,17 +8,17 @@
  * Copyright (C) 1998 Harald Koerfgen
  * Copyright (C) 2000, 2001, 2002, 2003, 2005  Maciej W. Rozycki
  */
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/pm.h>
-#include <linux/irq.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
+#include <beep/param.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/pm.h>
+#include <beep/irq.h>
 
 #include <asm/bootinfo.h>
 #include <asm/cpu.h>

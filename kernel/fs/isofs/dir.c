@@ -1,5 +1,5 @@
 /*
- *  linux/fs/isofs/dir.c
+ *  beep/fs/isofs/dir.c
  *
  *  (C) 1992, 1993, 1994  Eric Youngdale Modified for ISO 9660 filesystem.
  *
@@ -10,7 +10,7 @@
  *
  *  isofs directory handling functions
  */
-#include <linux/gfp.h>
+#include <beep/gfp.h>
 #include "isofs.h"
 
 int isofs_name_translate(struct iso_directory_record *de, char *new, struct inode *inode)

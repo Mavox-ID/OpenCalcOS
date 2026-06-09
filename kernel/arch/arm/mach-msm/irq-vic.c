@@ -13,14 +13,14 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/timer.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/ptrace.h>
+#include <beep/timer.h>
+#include <beep/irq.h>
+#include <beep/io.h>
 
 #include <asm/cacheflush.h>
 

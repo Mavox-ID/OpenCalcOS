@@ -1,15 +1,15 @@
 /*
- *  linux/fs/fat/misc.c
+ *  beep/fs/fat/misc.c
  *
  *  Written 1992,1993 by Werner Almesberger
  *  22/11/2000 - Fixed fat_date_unix2dos for dates earlier than 01/01/1980
  *		 and date_dos2unix for date==0 by Igor Zhbanov(bsg@uniyar.ac.ru)
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/time.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
+#include <beep/time.h>
 #include "fat.h"
 
 /*

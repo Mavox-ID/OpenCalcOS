@@ -2,11 +2,11 @@
 #define _RDS_RDS_H
 
 #include <net/sock.h>
-#include <linux/scatterlist.h>
-#include <linux/highmem.h>
+#include <beep/scatterlist.h>
+#include <beep/highmem.h>
 #include <rdma/rdma_cm.h>
-#include <linux/mutex.h>
-#include <linux/rds.h>
+#include <beep/mutex.h>
+#include <beep/rds.h>
 
 #include "info.h"
 

@@ -6,14 +6,14 @@
  * Copyright (C) 2012 Cavium, Inc.
  *
  * Copyright (C) 2009 Wind River Systems,
- *   written by Ralf Baechle <ralf@linux-mips.org>
+ *   written by Ralf Baechle <ralf@beep-mips.org>
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/edac.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/edac.h>
 
 #include "edac_core.h"
 #include "edac_module.h"
@@ -140,4 +140,4 @@ static struct platform_driver co_cache_error_driver = {
 module_platform_driver(co_cache_error_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Ralf Baechle <ralf@linux-mips.org>");
+MODULE_AUTHOR("Ralf Baechle <ralf@beep-mips.org>");

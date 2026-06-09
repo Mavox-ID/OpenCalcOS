@@ -1,33 +1,33 @@
 /*
- *  linux/drivers/mmc/s3cmci.h - Samsung S3C MCI driver
+ *  beep/drivers/mmc/s3cmci.h - Samsung S3C MCI driver
  *
  *  Copyright (C) 2004-2006 maintech GmbH, Thomas Kleffel <tk@maintech.de>
  *
  * Current driver maintained by Ben Dooks and Simtec Electronics
- *  Copyright (C) 2008 Simtec Electronics <ben-linux@fluff.org>
+ *  Copyright (C) 2008 Simtec Electronics <ben-beep@fluff.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/mmc/host.h>
-#include <linux/platform_device.h>
-#include <linux/cpufreq.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/clk.h>
+#include <beep/mmc/host.h>
+#include <beep/platform_device.h>
+#include <beep/cpufreq.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/io.h>
 
 #include <mach/dma.h>
 
 #include <mach/regs-sdi.h>
 
-#include <linux/platform_data/mmc-s3cmci.h>
+#include <beep/platform_data/mmc-s3cmci.h>
 
 #include "s3cmci.h"
 
@@ -1914,4 +1914,4 @@ module_platform_driver(s3cmci_driver);
 
 MODULE_DESCRIPTION("Samsung S3C MMC/SD Card Interface driver");
 MODULE_LICENSE("GPL v2");
-MODULE_AUTHOR("Thomas Kleffel <tk@maintech.de>, Ben Dooks <ben-linux@fluff.org>");
+MODULE_AUTHOR("Thomas Kleffel <tk@maintech.de>, Ben Dooks <ben-beep@fluff.org>");

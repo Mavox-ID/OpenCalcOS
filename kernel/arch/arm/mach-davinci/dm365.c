@@ -12,12 +12,12 @@
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/serial_8250.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/spi/spi.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/serial_8250.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/spi/spi.h>
 
 #include <asm/mach/map.h>
 
@@ -29,8 +29,8 @@
 #include <mach/time.h>
 #include <mach/serial.h>
 #include <mach/common.h>
-#include <linux/platform_data/keyscan-davinci.h>
-#include <linux/platform_data/spi-davinci.h>
+#include <beep/platform_data/keyscan-davinci.h>
+#include <beep/platform_data/spi-davinci.h>
 #include <mach/gpio-davinci.h>
 
 #include "davinci.h"

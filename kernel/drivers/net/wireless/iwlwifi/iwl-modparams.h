@@ -25,7 +25,7 @@
  * in the file called LICENSE.GPL.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel Beep Wireless <ilw@beep.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  * BSD LICENSE
@@ -63,9 +63,9 @@
 #ifndef __iwl_modparams_h__
 #define __iwl_modparams_h__
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/gfp.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/gfp.h>
 #include <net/mac80211.h>
 
 extern struct iwl_mod_params iwlwifi_mod_params;

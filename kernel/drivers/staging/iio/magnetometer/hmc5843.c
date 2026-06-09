@@ -19,13 +19,13 @@
     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
 
 #define HMC5843_CONFIG_REG_A			0x00
 #define HMC5843_CONFIG_REG_B			0x01

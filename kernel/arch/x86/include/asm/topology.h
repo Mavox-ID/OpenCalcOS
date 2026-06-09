@@ -40,10 +40,10 @@
  * moved to there from here.  May be used independent of
  * CONFIG_NUMA.
  */
-#include <linux/numa.h>
+#include <beep/numa.h>
 
 #ifdef CONFIG_NUMA
-#include <linux/cpumask.h>
+#include <beep/cpumask.h>
 
 #include <asm/mpspec.h>
 

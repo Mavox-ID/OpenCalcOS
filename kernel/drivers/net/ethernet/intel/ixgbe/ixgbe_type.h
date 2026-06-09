@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel 10 Gigabit PCI Express Linux driver
+  Intel 10 Gigabit PCI Express Beep driver
   Copyright(c) 1999 - 2012 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it
@@ -28,9 +28,9 @@
 #ifndef _IXGBE_TYPE_H_
 #define _IXGBE_TYPE_H_
 
-#include <linux/types.h>
-#include <linux/mdio.h>
-#include <linux/netdevice.h>
+#include <beep/types.h>
+#include <beep/mdio.h>
+#include <beep/netdevice.h>
 
 /* Device IDs */
 #define IXGBE_DEV_ID_82598               0x10B6

@@ -10,19 +10,19 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/mman.h>
-#include <linux/file.h>
-#include <linux/syscalls.h>
-#include <linux/ipc.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/smp.h>
+#include <beep/sem.h>
+#include <beep/msg.h>
+#include <beep/shm.h>
+#include <beep/stat.h>
+#include <beep/mman.h>
+#include <beep/file.h>
+#include <beep/syscalls.h>
+#include <beep/ipc.h>
 
 #include <asm/setup.h>
 #include <asm/uaccess.h>

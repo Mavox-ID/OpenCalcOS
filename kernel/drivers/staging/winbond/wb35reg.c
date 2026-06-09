@@ -1,7 +1,7 @@
 #include "wb35reg_f.h"
 
-#include <linux/usb.h>
-#include <linux/slab.h>
+#include <beep/usb.h>
+#include <beep/slab.h>
 
 extern void phy_calibration_winbond(struct hw_data *phw_data, u32 frequency);
 

@@ -3,14 +3,14 @@
  *               Stephane Eranian <eranian@hpl.hp.com>
  *
  * This file implements the default sampling buffer format
- * for the Linux/ia64 perfmon-2 subsystem.
+ * for the Beep/ia64 perfmon-2 subsystem.
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/init.h>
 #include <asm/delay.h>
-#include <linux/smp.h>
+#include <beep/smp.h>
 
 #include <asm/perfmon.h>
 #include <asm/perfmon_default_smpl.h>

@@ -1,7 +1,7 @@
 /*
- *  linux/drivers/net/ethernet/amd/am79c961a.c
+ *  beep/drivers/net/ethernet/amd/am79c961a.c
  *
- *  by Russell King <rmk@arm.linux.org.uk> 1995-2001.
+ *  by Russell King <rmk@arm.beep.org.uk> 1995-2001.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -13,21 +13,21 @@
  * Intel (formally Digital Equipment Corp) EBSA110 platform.  Please
  * note that this can not be built as a module (it doesn't make sense).
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/crc32.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/crc32.h>
+#include <beep/bitops.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 

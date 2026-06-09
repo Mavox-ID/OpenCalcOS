@@ -11,13 +11,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/rtc.h>
-#include <linux/spi/spi.h>
-#include <linux/bcd.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/rtc.h>
+#include <beep/spi/spi.h>
+#include <beep/bcd.h>
 
 #define MAX6902_REG_SECONDS		0x01
 #define MAX6902_REG_MINUTES		0x03

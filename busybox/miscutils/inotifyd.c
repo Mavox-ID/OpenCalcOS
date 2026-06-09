@@ -160,7 +160,7 @@ int inotifyd_main(int argc, char **argv)
 		// Signal interrupted us?
 		if (n < 0 && errno == EINTR)
 			goto again;
-		// Under Linux, above if() is not necessary.
+		// Under Beep, above if() is not necessary.
 		// Non-fatal signals, e.g. SIGCHLD, when set to SIG_DFL,
 		// are not interrupting poll().
 		// Thus we can just break if n <= 0 (see below),

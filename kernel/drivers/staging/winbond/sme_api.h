@@ -7,7 +7,7 @@
 #ifndef __SME_API_H__
 #define __SME_API_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #include "localpara.h"
 

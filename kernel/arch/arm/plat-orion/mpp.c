@@ -8,11 +8,11 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mbus.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/mbus.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
 #include <mach/hardware.h>
 #include <plat/orion-gpio.h>
 #include <plat/mpp.h>

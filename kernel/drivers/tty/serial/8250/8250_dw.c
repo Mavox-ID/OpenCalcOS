@@ -12,18 +12,18 @@
  * LCR is written whilst busy.  If it is, then a busy detect interrupt is
  * raised, the LCR needs to be rewritten and the uart status register read.
  */
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/serial_8250.h>
+#include <beep/serial_core.h>
+#include <beep/serial_reg.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 struct dw8250_data {
 	int	last_lcr;

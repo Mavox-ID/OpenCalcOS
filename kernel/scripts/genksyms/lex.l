@@ -1,10 +1,10 @@
 /* Lexical analysis for genksyms.
-   Copyright 1996, 1997 Linux International.
+   Copyright 1996, 1997 Beep International.
 
    New implementation contributed by Richard Henderson <rth@tamu.edu>
    Based on original work by Bjorn Ekwall <bj0rn@blox.se>
 
-   Taken from Linux modutils 2.4.22.
+   Taken from Beep modutils 2.4.22.
 
    This program is free software; you can redistribute it and/or modify it
    under the terms of the GNU General Public License as published by the
@@ -106,7 +106,7 @@ MC_TOKEN		([~%^&*+=|<>/-]=)|(&&)|("||")|(->)|(<<)|(>>)
  *    enum e { a, b }; struct s { int a, b; }
  * but in this case, the only effect will be, that the ABI checksums become
  * more volatile, which is acceptable. Also, such collisions are quite rare,
- * so far it was only observed in include/linux/telephony.h.
+ * so far it was only observed in include/beep/telephony.h.
  */
 #define _APP(T,L)	do {						   \
 			  cur_node = next_node;				   \

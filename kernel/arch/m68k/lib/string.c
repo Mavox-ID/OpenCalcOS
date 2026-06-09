@@ -6,8 +6,8 @@
 
 #define __IN_STRING_C
 
-#include <linux/module.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/string.h>
 
 char *strcpy(char *dest, const char *src)
 {

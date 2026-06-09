@@ -12,17 +12,17 @@
  * License.
  */
 
-#include <linux/security.h>
-#include <linux/moduleparam.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/ptrace.h>
-#include <linux/ctype.h>
-#include <linux/sysctl.h>
-#include <linux/audit.h>
-#include <linux/user_namespace.h>
+#include <beep/security.h>
+#include <beep/moduleparam.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/ptrace.h>
+#include <beep/ctype.h>
+#include <beep/sysctl.h>
+#include <beep/audit.h>
+#include <beep/user_namespace.h>
 #include <net/sock.h>
 
 #include "include/apparmor.h"

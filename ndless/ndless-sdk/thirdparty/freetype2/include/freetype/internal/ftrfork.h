@@ -66,9 +66,9 @@ FT_BEGIN_HEADER
     FT_RFork_Rule_darwin_newvfs,
     FT_RFork_Rule_darwin_hfsplus,
     FT_RFork_Rule_vfat,
-    FT_RFork_Rule_linux_cap,
-    FT_RFork_Rule_linux_double,
-    FT_RFork_Rule_linux_netatalk
+    FT_RFork_Rule_beep_cap,
+    FT_RFork_Rule_beep_double,
+    FT_RFork_Rule_beep_netatalk
   } FT_RFork_Rule;
 
   /* For fast translation between rule index and rule type,

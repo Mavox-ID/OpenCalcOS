@@ -1024,7 +1024,7 @@ static void do_display(const struct termios *mode, int all)
 	display_speed(mode, 1);
 	if (all)
 		display_window_size(1);
-#ifdef __linux__
+#ifdef __beep__
 	wrapf("line = %u;\n", mode->c_line);
 #else
 	newline();
@@ -1367,7 +1367,7 @@ int stty_main(int argc UNUSED_PARAM, char **argv)
 		}
 
 		switch (param) {
-#ifdef __linux__
+#ifdef __beep__
 		case param_line:
 # ifndef TIOCGWINSZ
 			xatoul_range_sfx(argnext, 1, INT_MAX, stty_suffixes);
@@ -1473,7 +1473,7 @@ int stty_main(int argc UNUSED_PARAM, char **argv)
 		}
 
 		switch (param) {
-#ifdef __linux__
+#ifdef __beep__
 		case param_line:
 			mode.c_line = xatoul_sfx(argnext, stty_suffixes);
 			stty_state |= STTY_require_set_attr;
@@ -1534,7 +1534,7 @@ int stty_main(int argc UNUSED_PARAM, char **argv)
 
 		if (memcmp(&mode, &new_mode, sizeof(mode)) != 0) {
 /*
- * I think the below chunk is not necessary on Linux.
+ * I think the below chunk is not necessary on Beep.
  * If you are deleting it, also delete STTY_speed_was_set bit -
  * it is only ever checked here.
  */

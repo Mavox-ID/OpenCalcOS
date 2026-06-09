@@ -22,10 +22,10 @@
  * soft-reset, but it might be extended in the future.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/of_address.h>
+#include <beep/io.h>
 
 static void __iomem *system_controller_base;
 

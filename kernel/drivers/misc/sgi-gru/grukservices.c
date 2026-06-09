@@ -20,18 +20,18 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/interrupt.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/spinlock.h>
+#include <beep/device.h>
+#include <beep/miscdevice.h>
+#include <beep/proc_fs.h>
+#include <beep/interrupt.h>
+#include <beep/uaccess.h>
+#include <beep/delay.h>
+#include <beep/export.h>
 #include <asm/io_apic.h>
 #include "gru.h"
 #include "grulib.h"

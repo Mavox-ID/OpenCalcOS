@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext4/inode.c
+ *  beep/fs/ext4/inode.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -8,7 +8,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  beep/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -18,25 +18,25 @@
  *  Assorted race fixes, rewrite of ext4_get_block() by Al Viro, 2000
  */
 
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/jbd2.h>
-#include <linux/highuid.h>
-#include <linux/pagemap.h>
-#include <linux/quotaops.h>
-#include <linux/string.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/pagevec.h>
-#include <linux/mpage.h>
-#include <linux/namei.h>
-#include <linux/uio.h>
-#include <linux/bio.h>
-#include <linux/workqueue.h>
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
+#include <beep/fs.h>
+#include <beep/time.h>
+#include <beep/jbd2.h>
+#include <beep/highuid.h>
+#include <beep/pagemap.h>
+#include <beep/quotaops.h>
+#include <beep/string.h>
+#include <beep/buffer_head.h>
+#include <beep/writeback.h>
+#include <beep/pagevec.h>
+#include <beep/mpage.h>
+#include <beep/namei.h>
+#include <beep/uio.h>
+#include <beep/bio.h>
+#include <beep/workqueue.h>
+#include <beep/kernel.h>
+#include <beep/printk.h>
+#include <beep/slab.h>
+#include <beep/ratelimit.h>
 
 #include "ext4_jbd2.h"
 #include "xattr.h"
@@ -80,7 +80,7 @@ static int ext4_inode_csum_verify(struct inode *inode, struct ext4_inode *raw,
 	__u32 provided, calculated;
 
 	if (EXT4_SB(inode->i_sb)->s_es->s_creator_os !=
-	    cpu_to_le32(EXT4_OS_LINUX) ||
+	    cpu_to_le32(EXT4_OS_BEEP) ||
 	    !EXT4_HAS_RO_COMPAT_FEATURE(inode->i_sb,
 		EXT4_FEATURE_RO_COMPAT_METADATA_CSUM))
 		return 1;
@@ -102,7 +102,7 @@ static void ext4_inode_csum_set(struct inode *inode, struct ext4_inode *raw,
 	__u32 csum;
 
 	if (EXT4_SB(inode->i_sb)->s_es->s_creator_os !=
-	    cpu_to_le32(EXT4_OS_LINUX) ||
+	    cpu_to_le32(EXT4_OS_BEEP) ||
 	    !EXT4_HAS_RO_COMPAT_FEATURE(inode->i_sb,
 		EXT4_FEATURE_RO_COMPAT_METADATA_CSUM))
 		return;

@@ -1,13 +1,13 @@
 /*
  * Functions related to io context handling
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/bootmem.h>	/* for max_pfn/max_low_pfn */
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/bio.h>
+#include <beep/blkdev.h>
+#include <beep/bootmem.h>	/* for max_pfn/max_low_pfn */
+#include <beep/slab.h>
 
 #include "blk.h"
 

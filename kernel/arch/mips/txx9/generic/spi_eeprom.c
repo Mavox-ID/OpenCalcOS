@@ -9,12 +9,12 @@
  *
  * Support for TX4938 in 2.6 - Manish Lachwani (mlachwani@mvista.com)
  */
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/eeprom.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/device.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/eeprom.h>
 #include <asm/txx9/spi.h>
 
 #define AT250X0_PAGE_SIZE	8

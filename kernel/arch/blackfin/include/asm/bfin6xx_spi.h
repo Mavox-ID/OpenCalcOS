@@ -20,7 +20,7 @@
 #ifndef _SPI_CHANNEL_H_
 #define _SPI_CHANNEL_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* SPI_CONTROL */
 #define SPI_CTL_EN                  0x00000001    /* Enable */

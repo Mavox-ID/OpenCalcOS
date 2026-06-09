@@ -20,41 +20,41 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/pci-aspm.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/bio.h>
-#include <linux/blkpg.h>
-#include <linux/timer.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/hdreg.h>
-#include <linux/spinlock.h>
-#include <linux/compat.h>
-#include <linux/mutex.h>
-#include <linux/bitmap.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/pci-aspm.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/major.h>
+#include <beep/fs.h>
+#include <beep/bio.h>
+#include <beep/blkpg.h>
+#include <beep/timer.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/jiffies.h>
+#include <beep/hdreg.h>
+#include <beep/spinlock.h>
+#include <beep/compat.h>
+#include <beep/mutex.h>
+#include <beep/bitmap.h>
+#include <beep/io.h>
 #include <asm/uaccess.h>
 
-#include <linux/dma-mapping.h>
-#include <linux/blkdev.h>
-#include <linux/genhd.h>
-#include <linux/completion.h>
+#include <beep/dma-mapping.h>
+#include <beep/blkdev.h>
+#include <beep/genhd.h>
+#include <beep/completion.h>
 #include <scsi/scsi.h>
 #include <scsi/sg.h>
 #include <scsi/scsi_ioctl.h>
-#include <linux/cdrom.h>
-#include <linux/scatterlist.h>
-#include <linux/kthread.h>
+#include <beep/cdrom.h>
+#include <beep/scatterlist.h>
+#include <beep/kthread.h>
 
 #define CCISS_DRIVER_VERSION(maj,min,submin) ((maj<<16)|(min<<8)|(submin))
 #define DRIVER_NAME "HP CISS Driver (v 3.6.26)"
@@ -80,7 +80,7 @@ static struct proc_dir_entry *proc_cciss;
 
 #include "cciss_cmd.h"
 #include "cciss.h"
-#include <linux/cciss_ioctl.h>
+#include <beep/cciss_ioctl.h>
 
 /* define the PCI info for the cards we can control */
 static const struct pci_device_id cciss_pci_device_id[] = {

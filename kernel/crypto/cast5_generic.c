@@ -22,12 +22,12 @@
 
 
 #include <asm/byteorder.h>
-#include <linux/init.h>
-#include <linux/crypto.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/crypto.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
 #include <crypto/cast5.h>
 
 static const u32 s5[256] = {

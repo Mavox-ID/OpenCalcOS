@@ -249,8 +249,8 @@ extern struct mips_abi mips_abi_n32;
 
 #define SET_PERSONALITY(ex)						\
 do {									\
-	if (personality(current->personality) != PER_LINUX)		\
-		set_personality(PER_LINUX);				\
+	if (personality(current->personality) != PER_BEEP)		\
+		set_personality(PER_BEEP);				\
 									\
 	current->thread.abi = &mips_abi;				\
 } while (0)
@@ -308,8 +308,8 @@ do {									\
 		current->thread.abi = &mips_abi;			\
 									\
 	p = personality(current->personality);				\
-	if (p != PER_LINUX32 && p != PER_LINUX)				\
-		set_personality(PER_LINUX);				\
+	if (p != PER_BEEP32 && p != PER_BEEP)				\
+		set_personality(PER_BEEP);				\
 } while (0)
 
 #endif /* CONFIG_64BIT */
@@ -373,8 +373,8 @@ extern const char *__elf_platform;
 #endif
 
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES 1
-struct linux_binprm;
-extern int arch_setup_additional_pages(struct linux_binprm *bprm,
+struct beep_binprm;
+extern int arch_setup_additional_pages(struct beep_binprm *bprm,
 				       int uses_interp);
 
 struct mm_struct;

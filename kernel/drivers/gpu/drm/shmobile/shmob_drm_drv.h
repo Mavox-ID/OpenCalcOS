@@ -14,9 +14,9 @@
 #ifndef __SHMOB_DRM_DRV_H__
 #define __SHMOB_DRM_DRV_H__
 
-#include <linux/kernel.h>
-#include <linux/platform_data/shmob_drm.h>
-#include <linux/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/platform_data/shmob_drm.h>
+#include <beep/spinlock.h>
 
 #include "shmob_drm_crtc.h"
 

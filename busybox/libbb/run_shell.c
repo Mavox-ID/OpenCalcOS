@@ -28,11 +28,11 @@
  * SUCH DAMAGE.
  */
 #include "libbb.h"
-#if ENABLE_SELINUX
-#include <selinux/selinux.h>  /* for setexeccon  */
+#if ENABLE_SEBEEP
+#include <sebeep/sebeep.h>  /* for setexeccon  */
 #endif
 
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 static security_context_t current_sid;
 
 void FAST_FUNC renew_current_security_context(void)
@@ -74,7 +74,7 @@ void FAST_FUNC exec_shell(const char *shell, int loginshell, const char **additi
 			args[++cnt] = *additional_args++;
 	}
 
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 	if (current_sid)
 		setexeccon(current_sid);
 	if (ENABLE_FEATURE_CLEAN_UP)

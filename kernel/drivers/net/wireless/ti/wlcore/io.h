@@ -25,7 +25,7 @@
 #ifndef __IO_H__
 #define __IO_H__
 
-#include <linux/irqreturn.h>
+#include <beep/irqreturn.h>
 
 #define HW_ACCESS_MEMORY_MAX_RANGE	0x1FFC0
 

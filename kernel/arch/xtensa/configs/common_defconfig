@@ -1,6 +1,6 @@
 #
 # Automatically generated make config: don't edit
-# Linux kernel version: 2.6.11-rc2
+# Beep kernel version: 2.6.11-rc2
 # Tue Mar  1 16:36:53 2005
 #
 # CONFIG_FRAME_POINTER is not set
@@ -59,9 +59,9 @@ CONFIG_KMOD=y
 #
 # Processor type and features
 #
-CONFIG_XTENSA_ARCH_LINUX_BE=y
-# CONFIG_XTENSA_ARCH_LINUX_LE is not set
-# CONFIG_XTENSA_ARCH_LINUX_TEST is not set
+CONFIG_XTENSA_ARCH_BEEP_BE=y
+# CONFIG_XTENSA_ARCH_BEEP_LE is not set
+# CONFIG_XTENSA_ARCH_BEEP_TEST is not set
 # CONFIG_XTENSA_ARCH_S5 is not set
 # CONFIG_XTENSA_CUSTOM is not set
 CONFIG_MMU=y
@@ -78,7 +78,7 @@ CONFIG_XTENSA_PLATFORM_XT2000=y
 CONFIG_XTENSA_CALIBRATE_CCOUNT=y
 CONFIG_GENERIC_CALIBRATE_DELAY=y
 CONFIG_CMDLINE_BOOL=y
-CONFIG_CMDLINE="console=ttyS0,38400 ip=bootp root=nfs nfsroot=/opt/montavista/pro/devkit/xtensa/linux_be/target"
+CONFIG_CMDLINE="console=ttyS0,38400 ip=bootp root=nfs nfsroot=/opt/montavista/pro/devkit/xtensa/beep_be/target"
 
 #
 # Bus options

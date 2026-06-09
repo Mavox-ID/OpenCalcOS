@@ -1,7 +1,7 @@
 /*
  * include/asm-sh/flat.h
  *
- * uClinux flat-format executables
+ * uCbeep flat-format executables
  *
  * Copyright (C) 2003  Paul Mundt
  *

@@ -9,11 +9,11 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/errno.h>
+#include <beep/init.h>
 #include <asm/dma.h>
 #include <asm/gpio-regs.h>
 #include <asm/irc-regs.h>

@@ -12,11 +12,11 @@
 #define KMSG_COMPONENT "tape"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/proc_fs.h>
-#include <linux/mtio.h>
-#include <linux/compat.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/proc_fs.h>
+#include <beep/mtio.h>
+#include <beep/compat.h>
 
 #include <asm/uaccess.h>
 

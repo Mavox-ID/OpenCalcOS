@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/setup.c
+ * beep/arch/unicore32/kernel/setup.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -9,27 +9,27 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/utsname.h>
-#include <linux/initrd.h>
-#include <linux/console.h>
-#include <linux/bootmem.h>
-#include <linux/seq_file.h>
-#include <linux/screen_info.h>
-#include <linux/init.h>
-#include <linux/root_dev.h>
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/memblock.h>
-#include <linux/elf.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/stddef.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/utsname.h>
+#include <beep/initrd.h>
+#include <beep/console.h>
+#include <beep/bootmem.h>
+#include <beep/seq_file.h>
+#include <beep/screen_info.h>
+#include <beep/init.h>
+#include <beep/root_dev.h>
+#include <beep/cpu.h>
+#include <beep/interrupt.h>
+#include <beep/smp.h>
+#include <beep/fs.h>
+#include <beep/proc_fs.h>
+#include <beep/memblock.h>
+#include <beep/elf.h>
+#include <beep/io.h>
 
 #include <asm/cputype.h>
 #include <asm/sections.h>

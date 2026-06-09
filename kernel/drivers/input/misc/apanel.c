@@ -1,7 +1,7 @@
 /*
  *  Fujitsu Lifebook Application Panel button drive
  *
- *  Copyright (C) 2007 Stephen Hemminger <shemminger@linux-foundation.org>
+ *  Copyright (C) 2007 Stephen Hemminger <shemminger@beep-foundation.org>
  *  Copyright (C) 2001-2003 Jochen Eisinger <jochen@penguin-breeder.org>
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -16,14 +16,14 @@
  *	http://apanel.sourceforge.net/tech.php
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/input-polldev.h>
-#include <linux/i2c.h>
-#include <linux/workqueue.h>
-#include <linux/leds.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
+#include <beep/input-polldev.h>
+#include <beep/i2c.h>
+#include <beep/workqueue.h>
+#include <beep/leds.h>
 
 #define APANEL_NAME	"Fujitsu Application Panel"
 #define APANEL_VERSION	"1.3.1"
@@ -341,7 +341,7 @@ static void __exit apanel_cleanup(void)
 }
 module_exit(apanel_cleanup);
 
-MODULE_AUTHOR("Stephen Hemminger <shemminger@linux-foundation.org>");
+MODULE_AUTHOR("Stephen Hemminger <shemminger@beep-foundation.org>");
 MODULE_DESCRIPTION(APANEL_NAME " driver");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(APANEL_VERSION);

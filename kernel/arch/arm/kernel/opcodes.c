@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/opcodes.c
+ *  beep/arch/arm/kernel/opcodes.c
  *
  *  A32 condition code lookup feature moved from nwfpe/fpopcode.c
  *
@@ -8,7 +8,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/opcodes.h>
 
 #define ARM_OPCODE_CONDITION_UNCOND 0xf

@@ -1,7 +1,7 @@
 /* drivers/leds/leds-s3c24xx.c
  *
  * (c) 2006 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C24XX - LEDs GPIO driver
@@ -11,17 +11,17 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/leds.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include <mach/hardware.h>
 #include <mach/regs-gpio.h>
-#include <linux/platform_data/leds-s3c24xx.h>
+#include <beep/platform_data/leds-s3c24xx.h>
 
 /* our context */
 

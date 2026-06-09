@@ -19,8 +19,8 @@
  * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/via-core.h>
-#include <linux/via_i2c.h>
+#include <beep/via-core.h>
+#include <beep/via_i2c.h>
 #include "global.h"
 
 static const struct IODATA common_init_data[] = {

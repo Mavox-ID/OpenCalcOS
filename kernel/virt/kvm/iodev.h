@@ -16,7 +16,7 @@
 #ifndef __KVM_IODEV_H__
 #define __KVM_IODEV_H__
 
-#include <linux/kvm_types.h>
+#include <beep/kvm_types.h>
 #include <asm/errno.h>
 
 struct kvm_io_device;

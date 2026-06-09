@@ -12,15 +12,15 @@
  * as published by the Free Software Foundation - version 2.
  */
 
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/jiffies.h>
+#include <beep/i2c.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
 #include "lm75.h"
 

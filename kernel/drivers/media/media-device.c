@@ -20,10 +20,10 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
-#include <linux/media.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/ioctl.h>
+#include <beep/media.h>
+#include <beep/export.h>
 
 #include <media/media-device.h>
 #include <media/media-devnode.h>

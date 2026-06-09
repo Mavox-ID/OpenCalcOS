@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-mmp/common.c
+ *  beep/arch/arm/mach-mmp/common.c
  *
  *  Code common to PXA168 processor lines
  *
@@ -8,9 +8,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 
 #include <asm/page.h>
 #include <asm/mach/map.h>

@@ -9,17 +9,17 @@
  *
  * Helper for the clk API to assist looking up a struct clk.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/mutex.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/string.h>
+#include <beep/mutex.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/of.h>
 
 static LIST_HEAD(clocks);
 static DEFINE_MUTEX(clocks_mutex);

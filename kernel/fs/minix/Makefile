@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux minix filesystem routines.
+# Makefile for the Beep minix filesystem routines.
 #
 
 obj-$(CONFIG_MINIX_FS) += minix.o

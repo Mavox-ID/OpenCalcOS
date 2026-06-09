@@ -13,15 +13,15 @@
  * any later version.
  */
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/input.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/power_supply.h>
-#include <linux/spinlock.h>
+#include <beep/completion.h>
+#include <beep/device.h>
+#include <beep/hid.h>
+#include <beep/input.h>
+#include <beep/leds.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/power_supply.h>
+#include <beep/spinlock.h>
 
 #define WIIMOTE_NAME "Nintendo Wii Remote"
 #define WIIMOTE_BUFSIZE 32

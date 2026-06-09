@@ -69,7 +69,7 @@
 
 #endif
 	;; Setup the stack to a suitably high address.
-	;; We assume 8 MB is the minimum DRAM in an eLinux
+	;; We assume 8 MB is the minimum DRAM in an eBeep
 	;; product and put the sp at the top for now.
 
 	move.d	0x40800000, $sp

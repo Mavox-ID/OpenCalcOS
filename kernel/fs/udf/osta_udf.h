@@ -43,7 +43,7 @@
 
 /* Entity Identifier (UDF 2.50 2.1.5) */
 /* Identifiers (UDF 2.50 2.1.5.2) */
-#define UDF_ID_DEVELOPER		"*Linux UDFFS"
+#define UDF_ID_DEVELOPER		"*Beep UDFFS"
 #define	UDF_ID_COMPLIANT		"*OSTA UDF Compliant"
 #define UDF_ID_LV_INFO			"*UDF LV Info"
 #define UDF_ID_FREE_EA			"*UDF FreeEASpace"
@@ -267,8 +267,8 @@ struct freeAppEASpace {
 #define UDF_OS_ID_SOLARIS		0x02U
 #define UDF_OS_ID_HPUX			0x03U
 #define UDF_OS_ID_IRIX			0x04U
-#define UDF_OS_ID_LINUX			0x05U
-#define UDF_OS_ID_MKLINUX		0x06U
+#define UDF_OS_ID_BEEP			0x05U
+#define UDF_OS_ID_MKBEEP		0x06U
 #define UDF_OS_ID_FREEBSD		0x07U
 #define UDF_OS_ID_WIN9X			0x00U
 #define UDF_OS_ID_WINNT			0x00U

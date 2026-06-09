@@ -18,11 +18,11 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/percpu.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/cpumask.h>
+#include <beep/kernel.h>
+#include <beep/percpu.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/cpumask.h>
 #include <asm/hvcall.h>
 #include <asm/firmware.h>
 #include <asm/cputable.h>

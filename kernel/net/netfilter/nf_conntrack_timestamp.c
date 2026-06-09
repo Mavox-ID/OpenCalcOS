@@ -6,10 +6,10 @@
  * published by the Free Software Foundation (or any later at your option).
  */
 
-#include <linux/netfilter.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
+#include <beep/netfilter.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/moduleparam.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_extend.h>

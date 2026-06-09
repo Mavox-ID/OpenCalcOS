@@ -13,23 +13,23 @@
 #define KMSG_COMPONENT "vmlogrdr"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/atomic.h>
 #include <asm/uaccess.h>
 #include <asm/cpcmd.h>
 #include <asm/debug.h>
 #include <asm/ebcdic.h>
 #include <net/iucv/iucv.h>
-#include <linux/kmod.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/string.h>
+#include <beep/kmod.h>
+#include <beep/cdev.h>
+#include <beep/device.h>
+#include <beep/string.h>
 
 MODULE_AUTHOR
 	("(C) 2004 IBM Corporation by Xenia Tkatschow (xenia@us.ibm.com)\n"

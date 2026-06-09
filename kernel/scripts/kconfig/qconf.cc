@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2002 Roman Zippel <zippel@linux-m68k.org>
+ * Copyright (C) 2002 Roman Zippel <zippel@beep-m68k.org>
  * Released under the terms of the GNU GPL v2.0.
  */
 
@@ -1678,7 +1678,7 @@ void ConfigMainWindow::showIntro(void)
 
 void ConfigMainWindow::showAbout(void)
 {
-	static const QString str = _("qconf is Copyright (C) 2002 Roman Zippel <zippel@linux-m68k.org>.\n\n"
+	static const QString str = _("qconf is Copyright (C) 2002 Roman Zippel <zippel@beep-m68k.org>.\n\n"
 		"Bug reports and feature request can also be entered at http://bugzilla.kernel.org/\n");
 
 	QMessageBox::information(this, "qconf", str);

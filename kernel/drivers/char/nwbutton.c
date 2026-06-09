@@ -1,20 +1,20 @@
 /*
  * 	NetWinder Button Driver-
- *	Copyright (C) Alex Holden <alex@linuxhacker.org> 1998, 1999.
+ *	Copyright (C) Alex Holden <alex@beephacker.org> 1998, 1999.
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/timer.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/time.h>
+#include <beep/timer.h>
+#include <beep/fs.h>
+#include <beep/miscdevice.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/init.h>
 
 #include <asm/uaccess.h>
 #include <asm/irq.h>
@@ -212,7 +212,7 @@ static int __init nwbutton_init(void)
 		return -ENODEV;
 
 	printk (KERN_INFO "NetWinder Button Driver Version %s (C) Alex Holden "
-			"<alex@linuxhacker.org> 1998.\n", VERSION);
+			"<alex@beephacker.org> 1998.\n", VERSION);
 
 	if (misc_register (&button_misc_device)) {
 		printk (KERN_WARNING "nwbutton: Couldn't register device 10, "

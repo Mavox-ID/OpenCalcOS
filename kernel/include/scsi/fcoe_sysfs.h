@@ -20,8 +20,8 @@
 #ifndef FCOE_SYSFS
 #define FCOE_SYSFS
 
-#include <linux/if_ether.h>
-#include <linux/device.h>
+#include <beep/if_ether.h>
+#include <beep/device.h>
 #include <scsi/fc/fc_fcoe.h>
 
 struct fcoe_ctlr_device;

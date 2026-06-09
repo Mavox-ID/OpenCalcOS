@@ -7,8 +7,8 @@
  *	modify it under the terms of the GNU General Public License
  *	version 2 as published by the Free Software Foundation.
  */
-#include <linux/types.h>
-#include <linux/if_vlan.h>
+#include <beep/types.h>
+#include <beep/if_vlan.h>
 #include <net/garp.h>
 #include "vlan.h"
 

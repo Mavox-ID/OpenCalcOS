@@ -20,9 +20,9 @@
 #ifndef __WHCD_H
 #define __WHCD_H
 
-#include <linux/uwb/whci.h>
-#include <linux/uwb/umc.h>
-#include <linux/workqueue.h>
+#include <beep/uwb/whci.h>
+#include <beep/uwb/umc.h>
+#include <beep/workqueue.h>
 
 #include "whci-hc.h"
 

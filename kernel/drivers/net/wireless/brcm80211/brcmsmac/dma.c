@@ -14,9 +14,9 @@
  * CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
 #include <net/cfg80211.h>
 #include <net/mac80211.h>
 

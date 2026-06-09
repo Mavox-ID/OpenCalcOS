@@ -8,19 +8,19 @@
 
 #include <asm/head.h>
 
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/threads.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/perf_event.h>
-#include <linux/interrupt.h>
-#include <linux/kdebug.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/threads.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/perf_event.h>
+#include <beep/interrupt.h>
+#include <beep/kdebug.h>
 
 #include <asm/page.h>
 #include <asm/pgtable.h>

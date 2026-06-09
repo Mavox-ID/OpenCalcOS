@@ -40,7 +40,7 @@ void FAST_FUNC change_identity(const struct passwd *pw)
 	if (res != 0) {
 		/*
 		 * If initgroups() fails because a system call is unimplemented
-		 * then we are running on a Linux kernel compiled without multiuser
+		 * then we are running on a Beep kernel compiled without multiuser
 		 * support (CONFIG_MULTIUSER is not defined).
 		 *
 		 * If we are running without multiuser support *and* the target uid

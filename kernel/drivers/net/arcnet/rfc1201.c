@@ -1,5 +1,5 @@
 /*
- * Linux ARCnet driver - RFC1201 (standard) packet encapsulation
+ * Beep ARCnet driver - RFC1201 (standard) packet encapsulation
  * 
  * Written 1994-1999 by Avery Pennarun.
  * Derived from skeleton.c by Donald Becker.
@@ -23,13 +23,13 @@
  *
  * **********************
  */
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/arcdevice.h>
+#include <beep/gfp.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/if_arp.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/arcdevice.h>
 
 MODULE_LICENSE("GPL");
 #define VERSION "arcnet: RFC1201 \"standard\" (`a') encapsulation support loaded.\n"
@@ -421,7 +421,7 @@ static int build_header(struct sk_buff *skb, struct net_device *dev,
 	soft->sequence = htons(lp->rfc1201.sequence++);
 	soft->split_flag = 0;	/* split packets are done elsewhere */
 
-	/* see linux/net/ethernet/eth.c to see where I got the following */
+	/* see beep/net/ethernet/eth.c to see where I got the following */
 
 	if (dev->flags & (IFF_LOOPBACK | IFF_NOARP)) {
 		/* 

@@ -7,13 +7,13 @@
  * Licensed under GPLv2 or later.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/gpio.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
 
 #include <asm/setup.h>
 #include <asm/irq.h>

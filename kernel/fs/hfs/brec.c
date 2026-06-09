@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfs/brec.c
+ *  beep/fs/hfs/brec.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)

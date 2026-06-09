@@ -19,18 +19,18 @@
  *
  */
 
-#include <linux/dma_remapping.h>
-#include <linux/init_task.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/dmar.h>
-#include <linux/cpu.h>
-#include <linux/pfn.h>
-#include <linux/mm.h>
-#include <linux/tboot.h>
+#include <beep/dma_remapping.h>
+#include <beep/init_task.h>
+#include <beep/spinlock.h>
+#include <beep/export.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/dmar.h>
+#include <beep/cpu.h>
+#include <beep/pfn.h>
+#include <beep/mm.h>
+#include <beep/tboot.h>
 
 #include <asm/realmode.h>
 #include <asm/processor.h>

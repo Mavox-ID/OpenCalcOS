@@ -1,8 +1,8 @@
 #
-# Makefile for the Linux/AVR32 kernel.
+# Makefile for the Beep/AVR32 kernel.
 #
 
-extra-y				:= head.o vmlinux.lds
+extra-y				:= head.o vmbeep.lds
 
 obj-$(CONFIG_SUBARCH_AVR32B)	+= entry-avr32b.o
 obj-y				+= syscall_table.o syscall-stubs.o irq.o

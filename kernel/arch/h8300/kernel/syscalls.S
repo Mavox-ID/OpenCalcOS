@@ -1,5 +1,5 @@
 /* Systemcall Entry Table */
-#include <linux/sys.h>
+#include <beep/sys.h>
 #include <asm/linkage.h>
 #include <asm/unistd.h>
 	

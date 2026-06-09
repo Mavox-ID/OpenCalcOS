@@ -1,9 +1,9 @@
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/leds.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/gpio_keys.h>
+#include <beep/input.h>
+#include <beep/leds.h>
 
 #include <asm/mach-types.h>
 

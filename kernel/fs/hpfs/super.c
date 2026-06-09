@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hpfs/super.c
+ *  beep/fs/hpfs/super.c
  *
  *  Mikulas Patocka (mikulas@artax.karlin.mff.cuni.cz), 1998-1999
  *
@@ -7,14 +7,14 @@
  */
 
 #include "hpfs_fn.h"
-#include <linux/module.h>
-#include <linux/parser.h>
-#include <linux/init.h>
-#include <linux/statfs.h>
-#include <linux/magic.h>
-#include <linux/sched.h>
-#include <linux/bitmap.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/parser.h>
+#include <beep/init.h>
+#include <beep/statfs.h>
+#include <beep/magic.h>
+#include <beep/sched.h>
+#include <beep/bitmap.h>
+#include <beep/slab.h>
 
 /* Mark the filesystem dirty, so that chkdsk checks it when os/2 booted */
 

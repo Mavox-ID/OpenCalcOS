@@ -13,13 +13,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/idr.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/types.h>
+#include <beep/platform_device.h>
+#include <beep/mutex.h>
+#include <beep/idr.h>
 
 #include "../w1.h"
 #include "../w1_int.h"

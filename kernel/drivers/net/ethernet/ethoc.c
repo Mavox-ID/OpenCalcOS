@@ -1,5 +1,5 @@
 /*
- * linux/drivers/net/ethernet/ethoc.c
+ * beep/drivers/net/ethernet/ethoc.c
  *
  * Copyright (C) 2007-2008 Avionic Design Development GmbH
  * Copyright (C) 2008-2009 Avionic Design GmbH
@@ -11,18 +11,18 @@
  * Written by Thierry Reding <thierry.reding@avionic-design.de>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/crc32.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/etherdevice.h>
+#include <beep/crc32.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/mii.h>
+#include <beep/phy.h>
+#include <beep/platform_device.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/module.h>
 #include <net/ethoc.h>
 
 static int buffer_size = 0x8000; /* 32 KBytes */

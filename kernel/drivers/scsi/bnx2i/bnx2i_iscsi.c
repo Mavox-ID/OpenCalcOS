@@ -13,7 +13,7 @@
  * Maintained by: Eddie Wai (eddie.wai@broadcom.com)
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include <scsi/scsi_tcq.h>
 #include <scsi/libiscsi.h>
 #include "bnx2i.h"

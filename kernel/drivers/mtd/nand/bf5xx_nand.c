@@ -1,7 +1,7 @@
-/* linux/drivers/mtd/nand/bf5xx_nand.c
+/* beep/drivers/mtd/nand/bf5xx_nand.c
  *
  * Copyright 2006-2008 Analog Devices Inc.
- *	http://blackfin.uclinux.org/
+ *	http://blackfin.ucbeep.org/
  *	Bryan Wu <bryan.wu@analog.com>
  *
  * Blackfin BF5xx on-chip NAND flash controller driver
@@ -35,24 +35,24 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/bitops.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand_ecc.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/nand_ecc.h>
+#include <beep/mtd/partitions.h>
 
 #include <asm/blackfin.h>
 #include <asm/dma.h>

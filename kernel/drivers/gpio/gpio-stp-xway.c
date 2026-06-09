@@ -7,17 +7,17 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/of_platform.h>
-#include <linux/mutex.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/of_gpio.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/of_platform.h>
+#include <beep/mutex.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
+#include <beep/of_gpio.h>
+#include <beep/clk.h>
+#include <beep/err.h>
 
 #include <lantiq_soc.h>
 

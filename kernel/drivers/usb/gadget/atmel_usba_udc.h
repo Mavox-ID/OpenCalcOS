@@ -7,8 +7,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#ifndef __LINUX_USB_GADGET_USBA_UDC_H__
-#define __LINUX_USB_GADGET_USBA_UDC_H__
+#ifndef __BEEP_USB_GADGET_USBA_UDC_H__
+#define __BEEP_USB_GADGET_USBA_UDC_H__
 
 /* USB register offsets */
 #define USBA_CTRL				0x0000
@@ -355,4 +355,4 @@ static inline struct usba_udc *to_usba_udc(struct usb_gadget *gadget)
 #define ep_is_control(ep)	((ep)->index == 0)
 #define ep_is_idle(ep)		((ep)->state == EP_STATE_IDLE)
 
-#endif /* __LINUX_USB_GADGET_USBA_UDC_H */
+#endif /* __BEEP_USB_GADGET_USBA_UDC_H */

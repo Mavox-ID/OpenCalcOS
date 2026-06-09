@@ -20,11 +20,11 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/i2c/twl.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/pwm.h>
+#include <beep/i2c/twl.h>
+#include <beep/slab.h>
 
 /*
  * This driver handles the PWM driven LED terminals of TWL4030 and TWL6030.

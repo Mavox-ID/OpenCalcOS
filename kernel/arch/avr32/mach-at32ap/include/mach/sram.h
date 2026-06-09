@@ -10,7 +10,7 @@
 #ifndef __ASM_AVR32_ARCH_SRAM_H
 #define __ASM_AVR32_ARCH_SRAM_H
 
-#include <linux/genalloc.h>
+#include <beep/genalloc.h>
 
 extern struct gen_pool *sram_pool;
 

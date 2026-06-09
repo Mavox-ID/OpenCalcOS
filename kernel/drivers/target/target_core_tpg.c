@@ -23,13 +23,13 @@
  *
  ******************************************************************************/
 
-#include <linux/net.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/in.h>
-#include <linux/export.h>
+#include <beep/net.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/in.h>
+#include <beep/export.h>
 #include <net/sock.h>
 #include <net/tcp.h>
 #include <scsi/scsi.h>

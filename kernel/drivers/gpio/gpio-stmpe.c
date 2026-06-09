@@ -5,16 +5,16 @@
  * Author: Rabin Vincent <rabin.vincent@stericsson.com> for ST-Ericsson
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/mfd/stmpe.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/interrupt.h>
+#include <beep/of.h>
+#include <beep/mfd/stmpe.h>
 
 /*
  * These registers are modified under the irq bus lock and cached to avoid

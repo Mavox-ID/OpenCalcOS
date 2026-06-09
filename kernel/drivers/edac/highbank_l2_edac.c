@@ -13,13 +13,13 @@
  * You should have received a copy of the GNU General Public License along with
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ctype.h>
-#include <linux/edac.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/ctype.h>
+#include <beep/edac.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/of_platform.h>
 
 #include "edac_core.h"
 #include "edac_module.h"

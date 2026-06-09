@@ -1,4 +1,4 @@
-/* delay.h: Linux delay routines on sparc64.
+/* delay.h: Beep delay routines on sparc64.
  *
  * Copyright (C) 1996, 2004, 2007 David S. Miller (davem@davemloft.net).
  */

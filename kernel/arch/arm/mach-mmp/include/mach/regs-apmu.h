@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-mmp/include/mach/regs-apmu.h
+ * beep/arch/arm/mach-mmp/include/mach/regs-apmu.h
  *
  *   Application Subsystem Power Management Unit
  *

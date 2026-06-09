@@ -1,5 +1,5 @@
 #
-# Makefile for the PowerPC 86xx linux kernel.
+# Makefile for the PowerPC 86xx beep kernel.
 #
 
 obj-y				:= pic.o

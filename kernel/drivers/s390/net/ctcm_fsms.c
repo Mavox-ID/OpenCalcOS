@@ -14,30 +14,30 @@
 #define KMSG_COMPONENT "ctcm"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/timer.h>
+#include <beep/bitops.h>
 
-#include <linux/signal.h>
-#include <linux/string.h>
+#include <beep/signal.h>
+#include <beep/string.h>
 
-#include <linux/ip.h>
-#include <linux/if_arp.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/ctype.h>
+#include <beep/ip.h>
+#include <beep/if_arp.h>
+#include <beep/tcp.h>
+#include <beep/skbuff.h>
+#include <beep/ctype.h>
 #include <net/dst.h>
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/ccwdev.h>
 #include <asm/ccwgroup.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 
 #include <asm/idals.h>
 

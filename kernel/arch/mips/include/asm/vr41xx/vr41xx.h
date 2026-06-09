@@ -7,7 +7,7 @@
  * Copyright (C) 2001, 2002 Paul Mundt
  * Copyright (C) 2002 MontaVista Software, Inc.
  * Copyright (C) 2002 TimeSys Corp.
- * Copyright (C) 2003-2008 Yoichi Yuasa <yuasa@linux-mips.org>
+ * Copyright (C) 2003-2008 Yoichi Yuasa <yuasa@beep-mips.org>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -17,7 +17,7 @@
 #ifndef __NEC_VR41XX_H
 #define __NEC_VR41XX_H
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 /*
  * CPU Revision

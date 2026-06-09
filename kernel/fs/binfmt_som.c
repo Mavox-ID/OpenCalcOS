@@ -1,5 +1,5 @@
 /*
- * linux/fs/binfmt_som.c
+ * beep/fs/binfmt_som.c
  *
  * These are the functions used to load SOM format executables as used
  * by HP-UX.  
@@ -9,33 +9,33 @@
  * Copyright 1993, 1994: Eric Youngdale (ericy@cais.com).
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/binfmts.h>
-#include <linux/som.h>
-#include <linux/string.h>
-#include <linux/file.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/shm.h>
-#include <linux/personality.h>
-#include <linux/init.h>
+#include <beep/fs.h>
+#include <beep/stat.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/binfmts.h>
+#include <beep/som.h>
+#include <beep/string.h>
+#include <beep/file.h>
+#include <beep/fcntl.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/shm.h>
+#include <beep/personality.h>
+#include <beep/init.h>
 
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>
 
 
-#include <linux/elf.h>
+#include <beep/elf.h>
 
-static int load_som_binary(struct linux_binprm * bprm);
+static int load_som_binary(struct beep_binprm * bprm);
 static int load_som_library(struct file *);
 
 /*
@@ -52,7 +52,7 @@ static int som_core_dump(struct coredump_params *cprm);
 #define SOM_PAGEOFFSET(_v) ((_v) & (SOM_PAGESIZE-1))
 #define SOM_PAGEALIGN(_v) (((_v) + SOM_PAGESIZE - 1) & ~(SOM_PAGESIZE - 1))
 
-static struct linux_binfmt som_format = {
+static struct beep_binfmt som_format = {
 	.module		= THIS_MODULE,
 	.load_binary	= load_som_binary,
 	.load_shlib	= load_som_library,
@@ -65,7 +65,7 @@ static struct linux_binfmt som_format = {
  * memory and creates the pointer tables from them, and puts their
  * addresses on the "stack", returning the new stack pointer value.
  */
-static void create_som_tables(struct linux_binprm *bprm)
+static void create_som_tables(struct beep_binprm *bprm)
 {
 	char **argv, **envp;
 	int argc = bprm->argc;
@@ -180,7 +180,7 @@ out:
  */
 
 static int
-load_som_binary(struct linux_binprm * bprm)
+load_som_binary(struct beep_binprm * bprm)
 {
 	int retval;
 	unsigned int size;

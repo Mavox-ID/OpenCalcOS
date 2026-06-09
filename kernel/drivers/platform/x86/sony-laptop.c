@@ -2,7 +2,7 @@
  * ACPI Sony Notebook Control Driver (SNC and SPIC)
  *
  * Copyright (C) 2004-2005 Stelian Pop <stelian@popies.net>
- * Copyright (C) 2007-2009 Mattia Dongili <malattia@linux.it>
+ * Copyright (C) 2007-2009 Mattia Dongili <malattia@beep.it>
  *
  * Parts of this driver inspired from asus_acpi.c and ibm_acpi.c
  * which are copyrighted by their respective authors.
@@ -22,7 +22,7 @@
  *
  * Copyright (C) 2000 Takaya Kinjo <t-kinjo@tc4.so-net.ne.jp>
  *
- * Copyright (C) 2000 Andrew Tridgell <tridge@valinux.com>
+ * Copyright (C) 2000 Andrew Tridgell <tridge@vabeep.com>
  *
  * Earlier work by Werner Almesberger, Paul `Rusty' Russell and Paul Mackerras.
  *
@@ -44,32 +44,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/backlight.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/dmi.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/kfifo.h>
-#include <linux/workqueue.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/backlight.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/dmi.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/input.h>
+#include <beep/kfifo.h>
+#include <beep/workqueue.h>
+#include <beep/acpi.h>
+#include <beep/slab.h>
 #include <acpi/acpi_drivers.h>
 #include <acpi/acpi_bus.h>
 #include <asm/uaccess.h>
-#include <linux/sonypi.h>
-#include <linux/sony-laptop.h>
-#include <linux/rfkill.h>
+#include <beep/sonypi.h>
+#include <beep/sony-laptop.h>
+#include <beep/rfkill.h>
 #ifdef CONFIG_SONYPI_COMPAT
-#include <linux/poll.h>
-#include <linux/miscdevice.h>
+#include <beep/poll.h>
+#include <beep/miscdevice.h>
 #endif
 
 #define dprintk(fmt, ...)			\

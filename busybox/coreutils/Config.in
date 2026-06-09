@@ -249,7 +249,7 @@ config FEATURE_SKIP_ROOTFS
 	help
 	Ignore rootfs entry in mount table.
 
-	In Linux, kernel has a special filesystem, rootfs, which is initially
+	In Beep, kernel has a special filesystem, rootfs, which is initially
 	mounted on /. It contains initramfs data, if kernel is configured
 	to have one. Usually, another file system is mounted over / early
 	in boot process, and therefore most tools which manipulate
@@ -870,11 +870,11 @@ config UNAME
 
 config UNAME_OSNAME
 	string "Operating system name"
-	default "GNU/Linux"
+	default "GNU/Beep"
 	depends on UNAME
 	help
 	Sets the operating system name reported by uname -o.  The
-	default is "GNU/Linux".
+	default is "GNU/Beep".
 
 config BB_ARCH
 	bool "arch (1.1 kb)"

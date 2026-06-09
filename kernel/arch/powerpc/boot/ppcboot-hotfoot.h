@@ -9,7 +9,7 @@
  * mainline kernel boot on the production board+bootloader, this was the 
  * least-offensive solution.  Please direct all flames to:
  *
- *  Solomon Peachy <solomon@linux-wlan.com>
+ *  Solomon Peachy <solomon@beep-wlan.com>
  *
  * (This header is identical to ppcboot.h except for the 
  *  TARGET_HOTFOOT bits)

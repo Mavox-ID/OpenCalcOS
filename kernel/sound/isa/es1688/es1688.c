@@ -19,13 +19,13 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/isapnp.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/isa.h>
+#include <beep/isapnp.h>
+#include <beep/time.h>
+#include <beep/wait.h>
+#include <beep/module.h>
 #include <asm/dma.h>
 #include <sound/core.h>
 #include <sound/es1688.h>

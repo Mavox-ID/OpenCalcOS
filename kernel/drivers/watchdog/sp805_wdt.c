@@ -4,30 +4,30 @@
  * Watchdog driver for ARM SP805 watchdog module
  *
  * Copyright (C) 2010 ST Microelectronics
- * Viresh Kumar <viresh.linux@gmail.com>
+ * Viresh Kumar <viresh.beep@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2 or later. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/device.h>
-#include <linux/resource.h>
-#include <linux/amba/bus.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
+#include <beep/device.h>
+#include <beep/resource.h>
+#include <beep/amba/bus.h>
+#include <beep/bitops.h>
+#include <beep/clk.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/math64.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/pm.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/watchdog.h>
 
 /* default timeout in seconds */
 #define DEFAULT_TIMEOUT		60
@@ -322,6 +322,6 @@ static struct amba_driver sp805_wdt_driver = {
 
 module_amba_driver(sp805_wdt_driver);
 
-MODULE_AUTHOR("Viresh Kumar <viresh.linux@gmail.com>");
+MODULE_AUTHOR("Viresh Kumar <viresh.beep@gmail.com>");
 MODULE_DESCRIPTION("ARM SP805 Watchdog Driver");
 MODULE_LICENSE("GPL");

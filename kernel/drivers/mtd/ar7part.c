@@ -20,15 +20,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/bootmem.h>
-#include <linux/module.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/bootmem.h>
+#include <beep/module.h>
 
-#include <uapi/linux/magic.h>
+#include <uapi/beep/magic.h>
 
 #define AR7_PARTS	4
 #define ROOT_OFFSET	0xe0000
@@ -117,7 +117,7 @@ static int create_mtd_partitions(struct mtd_info *master,
 		root_offset &= ~(master->erasesize - 1);
 	}
 
-	ar7_parts[2].name = "linux";
+	ar7_parts[2].name = "beep";
 	ar7_parts[2].offset = pre_size;
 	ar7_parts[2].size = master->size - pre_size - post_size;
 	ar7_parts[2].mask_flags = 0;

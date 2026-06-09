@@ -26,7 +26,7 @@
  *
  */
 
-#include <linux/platform_data/i2c-designware.h>
+#include <beep/platform_data/i2c-designware.h>
 
 #ifndef I2C_DESIGNWARE_CORE_H
 #define I2C_DESIGNWARE_CORE_H

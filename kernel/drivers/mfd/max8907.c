@@ -9,17 +9,17 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/max8907.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/max8907.h>
+#include <beep/module.h>
+#include <beep/of_device.h>
+#include <beep/regmap.h>
+#include <beep/slab.h>
 
 static struct mfd_cell max8907_cells[] = {
 	{ .name = "max8907-regulator", },

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-exynos4/mach-nuri.c
+ * beep/arch/arm/mach-exynos4/mach-nuri.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *
@@ -8,27 +8,27 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/i2c/atmel_mxt_ts.h>
-#include <linux/i2c-gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/gpio.h>
-#include <linux/power/max8903_charger.h>
-#include <linux/power/max17042_battery.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
-#include <linux/mfd/max8997.h>
-#include <linux/mfd/max8997-private.h>
-#include <linux/mmc/host.h>
-#include <linux/fb.h>
-#include <linux/pwm_backlight.h>
-#include <linux/platform_data/i2c-s3c2410.h>
-#include <linux/platform_data/mipi-csis.h>
-#include <linux/platform_data/s3c-hsotg.h>
-#include <linux/platform_data/usb-ehci-s5p.h>
+#include <beep/platform_device.h>
+#include <beep/serial_core.h>
+#include <beep/input.h>
+#include <beep/i2c.h>
+#include <beep/i2c/atmel_mxt_ts.h>
+#include <beep/i2c-gpio.h>
+#include <beep/gpio_keys.h>
+#include <beep/gpio.h>
+#include <beep/power/max8903_charger.h>
+#include <beep/power/max17042_battery.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/fixed.h>
+#include <beep/mfd/max8997.h>
+#include <beep/mfd/max8997-private.h>
+#include <beep/mmc/host.h>
+#include <beep/fb.h>
+#include <beep/pwm_backlight.h>
+#include <beep/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/mipi-csis.h>
+#include <beep/platform_data/s3c-hsotg.h>
+#include <beep/platform_data/usb-ehci-s5p.h>
 #include <drm/exynos_drm.h>
 
 #include <video/platform_lcd.h>

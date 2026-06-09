@@ -7,14 +7,14 @@
  * @author John Levon <levon@movementarian.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/smp.h>
-#include <linux/oprofile.h>
-#include <linux/profile.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/hrtimer.h>
+#include <beep/kernel.h>
+#include <beep/notifier.h>
+#include <beep/smp.h>
+#include <beep/oprofile.h>
+#include <beep/profile.h>
+#include <beep/init.h>
+#include <beep/cpu.h>
+#include <beep/hrtimer.h>
 #include <asm/irq_regs.h>
 #include <asm/ptrace.h>
 

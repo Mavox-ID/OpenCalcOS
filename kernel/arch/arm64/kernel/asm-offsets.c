@@ -18,14 +18,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/dma-mapping.h>
 #include <asm/thread_info.h>
 #include <asm/memory.h>
 #include <asm/cputable.h>
 #include <asm/vdso_datapage.h>
-#include <linux/kbuild.h>
+#include <beep/kbuild.h>
 
 int main(void)
 {

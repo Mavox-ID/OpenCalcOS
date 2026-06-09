@@ -23,11 +23,11 @@
 	Abstract: rt2x00 generic pci device routines.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
 
 #include "rt2x00.h"
 #include "rt2x00pci.h"

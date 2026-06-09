@@ -21,18 +21,18 @@
  *   along with this library; if not, write to the Free Software
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
-#include <linux/fs.h>
-#include <linux/backing-dev.h>
-#include <linux/stat.h>
-#include <linux/fcntl.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/writeback.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/delay.h>
-#include <linux/mount.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
+#include <beep/fs.h>
+#include <beep/backing-dev.h>
+#include <beep/stat.h>
+#include <beep/fcntl.h>
+#include <beep/pagemap.h>
+#include <beep/pagevec.h>
+#include <beep/writeback.h>
+#include <beep/task_io_accounting_ops.h>
+#include <beep/delay.h>
+#include <beep/mount.h>
+#include <beep/slab.h>
+#include <beep/swap.h>
 #include <asm/div64.h>
 #include "cifsfs.h"
 #include "cifspdu.h"
@@ -3438,7 +3438,7 @@ static int is_inode_writable(struct cifsInodeInfo *cifs_inode)
    the file - in the future we could consider allowing
    refreshing the inode only on increases in the file size
    but this is tricky to do without racing with writebehind
-   page caching in the current Linux kernel design */
+   page caching in the current Beep kernel design */
 bool is_size_safe_to_change(struct cifsInodeInfo *cifsInode, __u64 end_of_file)
 {
 	if (!cifsInode)

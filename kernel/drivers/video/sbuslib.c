@@ -3,14 +3,14 @@
  * Copyright (C) 2003 David S. Miller (davem@redhat.com)
  */
 
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fb.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/of_device.h>
+#include <beep/compat.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/fb.h>
+#include <beep/mm.h>
+#include <beep/uaccess.h>
+#include <beep/of_device.h>
 
 #include <asm/fbio.h>
 

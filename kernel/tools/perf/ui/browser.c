@@ -5,9 +5,9 @@
 #include <newt.h>
 #include "ui.h"
 #include "util.h"
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
+#include <beep/compiler.h>
+#include <beep/list.h>
+#include <beep/rbtree.h>
 #include <stdlib.h>
 #include <sys/ttydefaults.h>
 #include "browser.h"

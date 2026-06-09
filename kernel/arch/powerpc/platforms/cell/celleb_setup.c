@@ -27,21 +27,21 @@
 
 #undef DEBUG
 
-#include <linux/cpu.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/console.h>
-#include <linux/of_platform.h>
+#include <beep/cpu.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/mm.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/reboot.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/seq_file.h>
+#include <beep/root_dev.h>
+#include <beep/console.h>
+#include <beep/of_platform.h>
 
 #include <asm/mmu.h>
 #include <asm/processor.h>

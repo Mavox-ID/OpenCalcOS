@@ -8,20 +8,20 @@
  * by the Free Software Foundation, incorporated herein by reference.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/notifier.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/in.h>
-#include <linux/crc32.h>
-#include <linux/ethtool.h>
-#include <linux/topology.h>
-#include <linux/gfp.h>
-#include <linux/cpu_rmap.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
+#include <beep/notifier.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/in.h>
+#include <beep/crc32.h>
+#include <beep/ethtool.h>
+#include <beep/topology.h>
+#include <beep/gfp.h>
+#include <beep/cpu_rmap.h>
 #include "net_driver.h"
 #include "efx.h"
 #include "nic.h"

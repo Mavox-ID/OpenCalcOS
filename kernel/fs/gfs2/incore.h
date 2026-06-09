@@ -10,17 +10,17 @@
 #ifndef __INCORE_DOT_H__
 #define __INCORE_DOT_H__
 
-#include <linux/fs.h>
-#include <linux/kobject.h>
-#include <linux/workqueue.h>
-#include <linux/dlm.h>
-#include <linux/buffer_head.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist_bl.h>
-#include <linux/completion.h>
-#include <linux/rbtree.h>
-#include <linux/ktime.h>
-#include <linux/percpu.h>
+#include <beep/fs.h>
+#include <beep/kobject.h>
+#include <beep/workqueue.h>
+#include <beep/dlm.h>
+#include <beep/buffer_head.h>
+#include <beep/rcupdate.h>
+#include <beep/rculist_bl.h>
+#include <beep/completion.h>
+#include <beep/rbtree.h>
+#include <beep/ktime.h>
+#include <beep/percpu.h>
 
 #define DIO_WAIT	0x00000010
 #define DIO_METADATA	0x00000020

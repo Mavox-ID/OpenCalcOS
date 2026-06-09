@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-w90x900/cpu.c
+ * beep/arch/arm/mach-w90x900/cpu.c
  *
  * Copyright (c) 2009 Nuvoton corporation.
  *
@@ -13,16 +13,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/serial_8250.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/serial_8250.h>
+#include <beep/delay.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

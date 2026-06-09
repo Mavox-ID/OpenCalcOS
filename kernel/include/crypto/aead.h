@@ -13,9 +13,9 @@
 #ifndef _CRYPTO_AEAD_H
 #define _CRYPTO_AEAD_H
 
-#include <linux/crypto.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/crypto.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 
 /**
  *	struct aead_givcrypt_request - AEAD request with IV generation

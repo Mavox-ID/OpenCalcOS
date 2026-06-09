@@ -1,8 +1,8 @@
 #ifndef _KSTACK_H
 #define _KSTACK_H
 
-#include <linux/thread_info.h>
-#include <linux/sched.h>
+#include <beep/thread_info.h>
+#include <beep/sched.h>
 #include <asm/ptrace.h>
 #include <asm/irq.h>
 

@@ -1,9 +1,9 @@
-/* linux/arch/arm/mach-s3c2412/gpio.c
+/* beep/arch/arm/mach-s3c2412/gpio.c
  *
  * Copyright (c) 2007 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
  *
- * http://armlinux.simtec.co.uk/.
+ * http://armbeep.simtec.co.uk/.
  *
  * S3C2412/S3C2413 specific GPIO support
  *
@@ -12,11 +12,11 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

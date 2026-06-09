@@ -10,9 +10,9 @@
  */
 #include <asm/irqflags.h>
 #include <asm/hazards.h>
-#include <linux/compiler.h>
-#include <linux/preempt.h>
-#include <linux/export.h>
+#include <beep/compiler.h>
+#include <beep/preempt.h>
+#include <beep/export.h>
 
 #if !defined(CONFIG_CPU_MIPSR2) || defined(CONFIG_MIPS_MT_SMTC)
 

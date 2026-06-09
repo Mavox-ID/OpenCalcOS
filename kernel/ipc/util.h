@@ -1,5 +1,5 @@
 /*
- * linux/ipc/util.h
+ * beep/ipc/util.h
  * Copyright (C) 1999 Christoph Rohland
  *
  * ipc helper functions (c) 1999 Manfred Spraul <manfred@colorfullife.com>
@@ -10,8 +10,8 @@
 #ifndef _IPC_UTIL_H
 #define _IPC_UTIL_H
 
-#include <linux/unistd.h>
-#include <linux/err.h>
+#include <beep/unistd.h>
+#include <beep/err.h>
 
 #define SEQ_MULTIPLIER	(IPCMNI)
 

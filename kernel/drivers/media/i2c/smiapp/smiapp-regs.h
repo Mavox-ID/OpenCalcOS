@@ -25,8 +25,8 @@
 #ifndef SMIAPP_REGS_H
 #define SMIAPP_REGS_H
 
-#include <linux/i2c.h>
-#include <linux/types.h>
+#include <beep/i2c.h>
+#include <beep/types.h>
 
 /* Use upper 8 bits of the type field for flags */
 #define SMIA_REG_FLAG_FLOAT		(1 << 24)

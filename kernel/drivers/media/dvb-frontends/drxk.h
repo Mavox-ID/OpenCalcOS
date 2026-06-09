@@ -1,8 +1,8 @@
 #ifndef _DRXK_H_
 #define _DRXK_H_
 
-#include <linux/types.h>
-#include <linux/i2c.h>
+#include <beep/types.h>
+#include <beep/i2c.h>
 
 /**
  * struct drxk_config - Configure the initial parameters for DRX-K

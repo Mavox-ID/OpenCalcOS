@@ -11,10 +11,10 @@
 
 #undef DEBUG
 
-#include <linux/types.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/interrupt.h>
 #include <asm/opal.h>
 #include <asm/firmware.h>
 

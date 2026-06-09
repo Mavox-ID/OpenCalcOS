@@ -1,5 +1,5 @@
 /*
- * linux/sound/soc/pxa/ttc_dkb.c
+ * beep/sound/soc/pxa/ttc_dkb.c
  *
  * Copyright (C) 2012 Marvell International Ltd.
  *
@@ -18,8 +18,8 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

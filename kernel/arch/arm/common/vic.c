@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/common/vic.c
+ *  beep/arch/arm/common/vic.c
  *
  *  Copyright (C) 1999 - 2003 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd
@@ -19,17 +19,17 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/syscore_ops.h>
-#include <linux/device.h>
-#include <linux/amba/bus.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/io.h>
+#include <beep/irqdomain.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/syscore_ops.h>
+#include <beep/device.h>
+#include <beep/amba/bus.h>
 
 #include <asm/exception.h>
 #include <asm/mach/irq.h>

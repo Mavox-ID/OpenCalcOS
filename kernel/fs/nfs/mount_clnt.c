@@ -4,16 +4,16 @@
  * Copyright (C) 1997, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/uio.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/nfs_fs.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/uio.h>
+#include <beep/net.h>
+#include <beep/in.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/sched.h>
+#include <beep/nfs_fs.h>
 #include "internal.h"
 
 #ifdef NFS_DEBUG

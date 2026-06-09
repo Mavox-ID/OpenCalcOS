@@ -9,7 +9,7 @@
  *
  *               Copyright 2004-2007 Analog Devices Inc.
  *
- * Bugs:         Enter bugs at http://blackfin.uclinux.org/
+ * Bugs:         Enter bugs at http://blackfin.ucbeep.org/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,13 +27,13 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/gpio.h>
-#include <linux/bug.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/gpio.h>
+#include <beep/bug.h>
+#include <beep/module.h>
 #include <asm/portmux.h>
 #include <asm/dma.h>
 #include <asm/blackfin.h>

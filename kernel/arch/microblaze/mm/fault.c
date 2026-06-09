@@ -4,7 +4,7 @@
  *    Copyright (C) 2007 Xilinx, Inc.  All rights reserved.
  *
  *  Derived from "arch/ppc/mm/fault.c"
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  *  Derived from "arch/i386/mm/fault.c"
  *    Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
@@ -17,23 +17,23 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
 
 #include <asm/page.h>
 #include <asm/pgtable.h>
 #include <asm/mmu.h>
 #include <asm/mmu_context.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 #include <asm/exceptions.h>
 
 static unsigned long pte_misses;	/* updated by do_page_fault() */

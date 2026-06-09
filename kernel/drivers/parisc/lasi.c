@@ -14,13 +14,13 @@
  * 	   Alex deVries <alex@onefishtwo.ca>
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/types.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/pm.h>
+#include <beep/types.h>
 
 #include <asm/io.h>
 #include <asm/hardware.h>

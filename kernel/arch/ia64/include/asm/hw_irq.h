@@ -6,10 +6,10 @@
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/profile.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/profile.h>
 
 #include <asm/machvec.h>
 #include <asm/ptrace.h>
@@ -167,7 +167,7 @@ __ia64_local_vector_to_irq (ia64_vector vec)
 /*
  * Next follows the irq descriptor interface.  On IA-64, each CPU supports 256 interrupt
  * vectors.  On smaller systems, there is a one-to-one correspondence between interrupt
- * vectors and the Linux irq numbers.  However, larger systems may have multiple interrupt
+ * vectors and the Beep irq numbers.  However, larger systems may have multiple interrupt
  * domains meaning that the translation from vector number to irq number depends on the
  * interrupt domain that a CPU belongs to.  This API abstracts such platform-dependent
  * differences and provides a uniform means to translate between vector and irq numbers

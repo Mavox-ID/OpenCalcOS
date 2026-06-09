@@ -23,27 +23,27 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/vmalloc.h>
-#include <linux/math64.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand_bch.h>
-#include <linux/mtd/partitions.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/vmalloc.h>
+#include <beep/math64.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/nand_bch.h>
+#include <beep/mtd/partitions.h>
+#include <beep/delay.h>
+#include <beep/list.h>
+#include <beep/random.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/seq_file.h>
+#include <beep/debugfs.h>
 
 /* Default simulator parameters values */
 #if !defined(CONFIG_NANDSIM_FIRST_ID_BYTE)  || \

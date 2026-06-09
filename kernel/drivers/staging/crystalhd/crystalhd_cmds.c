@@ -4,7 +4,7 @@
  *  Name: crystalhd_cmds . c
  *
  *  Description:
- *		BCM70010 Linux driver user command interfaces.
+ *		BCM70010 Beep driver user command interfaces.
  *
  *  HISTORY:
  *

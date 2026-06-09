@@ -31,7 +31,7 @@
  * SOFTWARE.
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 #include "mlx4_ib.h"
 

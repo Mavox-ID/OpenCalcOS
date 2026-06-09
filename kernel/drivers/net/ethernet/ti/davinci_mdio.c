@@ -24,20 +24,20 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  * ---------------------------------------------------------------------------
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/phy.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/davinci_emac.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/phy.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/pm_runtime.h>
+#include <beep/davinci_emac.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
 /*
  * This timeout definition is a worst-case ultra defensive measure against

@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2440/mach-nexcoder.c
+/* beep/arch/arm/mach-s3c2440/mach-nexcoder.c
  *
  * Copyright (c) 2004 Nex Vision
  *   Guillaume GOURAT <guillaume.gourat@nexvision.tv>
@@ -12,19 +12,19 @@
  *     12-03-2005 BJD Updated for release
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/string.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/string.h>
+#include <beep/serial_core.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
 
-#include <linux/mtd/map.h>
+#include <beep/mtd/map.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -38,7 +38,7 @@
 //#include <asm/debug-ll.h>
 #include <mach/regs-gpio.h>
 #include <plat/regs-serial.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 
 #include <plat/gpio-cfg.h>
 #include <plat/s3c2410.h>

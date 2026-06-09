@@ -21,9 +21,9 @@
  * Alexander Smirnov <alex.bluesman.smirnov@gmail.com>
  */
 
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/crc-ccitt.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/crc-ccitt.h>
 
 #include <net/mac802154.h>
 #include <net/wpan-phy.h>

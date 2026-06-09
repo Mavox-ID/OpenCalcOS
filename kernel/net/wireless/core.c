@@ -1,23 +1,23 @@
 /*
- * This is the linux wireless configuration interface.
+ * This is the beep wireless configuration interface.
  *
  * Copyright 2006-2010		Johannes Berg <johannes@sipsolutions.net>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/if.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/nl80211.h>
-#include <linux/debugfs.h>
-#include <linux/notifier.h>
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/sched.h>
+#include <beep/if.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/nl80211.h>
+#include <beep/debugfs.h>
+#include <beep/notifier.h>
+#include <beep/device.h>
+#include <beep/etherdevice.h>
+#include <beep/rtnetlink.h>
+#include <beep/sched.h>
 #include <net/genetlink.h>
 #include <net/cfg80211.h>
 #include "nl80211.h"

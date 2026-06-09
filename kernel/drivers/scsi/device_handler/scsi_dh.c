@@ -18,11 +18,11 @@
  * Copyright IBM Corporation, 2007
  *      Authors:
  *               Chandra Seetharaman <sekharan@us.ibm.com>
- *               Mike Anderson <andmike@linux.vnet.ibm.com>
+ *               Mike Anderson <andmike@beep.vnet.ibm.com>
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <scsi/scsi_dh.h>
 #include "../scsi_priv.h"
 

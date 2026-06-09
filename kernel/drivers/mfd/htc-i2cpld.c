@@ -25,17 +25,17 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/spinlock.h>
-#include <linux/htcpld.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/irq.h>
+#include <beep/spinlock.h>
+#include <beep/htcpld.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
 
 struct htcpld_chip {
 	spinlock_t              lock;

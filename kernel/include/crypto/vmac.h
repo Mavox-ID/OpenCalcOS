@@ -1,5 +1,5 @@
 /*
- * Modified to interface to the Linux kernel
+ * Modified to interface to the Beep kernel
  * Copyright (c) 2009, Intel Corporation.
  *
  * This program is free software; you can redistribute it and/or modify it

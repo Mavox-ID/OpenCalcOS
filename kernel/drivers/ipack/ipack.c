@@ -9,11 +9,11 @@
  * Software Foundation; version 2 of the License.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/io.h>
-#include <linux/ipack.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/idr.h>
+#include <beep/io.h>
+#include <beep/ipack.h>
 
 #define to_ipack_dev(device) container_of(device, struct ipack_device, dev)
 #define to_ipack_driver(drv) container_of(drv, struct ipack_driver, driver)

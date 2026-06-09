@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2008 Matt Fleming <matt@console-pimps.org>
- * Copyright (C) 2008 Paul Mundt <lethal@linux-sh.org>
+ * Copyright (C) 2008 Paul Mundt <lethal@beep-sh.org>
  *
  * Code for replacing ftrace calls with jumps.
  *
@@ -11,12 +11,12 @@
  * Arjan van de Ven, for keeping me straight, and explaining to me
  * the dangers of modifying code on the run.
  */
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
+#include <beep/uaccess.h>
+#include <beep/ftrace.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
 #include <asm/ftrace.h>
 #include <asm/cacheflush.h>
 #include <asm/unistd.h>

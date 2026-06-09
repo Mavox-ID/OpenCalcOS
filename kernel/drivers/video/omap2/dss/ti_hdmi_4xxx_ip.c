@@ -19,16 +19,16 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/mutex.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/seq_file.h>
+#include <beep/gpio.h>
 #if defined(CONFIG_OMAP4_DSS_HDMI_AUDIO)
 #include <sound/asound.h>
 #include <sound/asoundef.h>

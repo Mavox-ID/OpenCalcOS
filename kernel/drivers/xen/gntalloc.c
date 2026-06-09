@@ -15,9 +15,9 @@
  */
 
 /*
- * This driver exists to allow userspace programs in Linux to allocate kernel
+ * This driver exists to allow userspace programs in Beep to allocate kernel
  * memory that will later be shared with another domain.  Without this device,
- * Linux userspace programs cannot create grant references.
+ * Beep userspace programs cannot create grant references.
  *
  * How this stuff works:
  *   X -> granting a page to Y
@@ -48,19 +48,19 @@
  * grant operation.
  */
 
-#include <linux/atomic.h>
-#include <linux/module.h>
-#include <linux/miscdevice.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/highmem.h>
+#include <beep/atomic.h>
+#include <beep/module.h>
+#include <beep/miscdevice.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/device.h>
+#include <beep/mm.h>
+#include <beep/uaccess.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/highmem.h>
 
 #include <xen/xen.h>
 #include <xen/page.h>

@@ -25,7 +25,7 @@
 #ifndef SMIAPP_PLL_H
 #define SMIAPP_PLL_H
 
-#include <linux/device.h>
+#include <beep/device.h>
 
 /* CSI-2 or CCP-2 */
 #define SMIAPP_PLL_BUS_TYPE_CSI2				0x00

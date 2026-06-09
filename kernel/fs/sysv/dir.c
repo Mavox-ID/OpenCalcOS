@@ -1,5 +1,5 @@
 /*
- *  linux/fs/sysv/dir.c
+ *  beep/fs/sysv/dir.c
  *
  *  minix/dir.c
  *  Copyright (C) 1991, 1992  Linus Torvalds
@@ -13,9 +13,9 @@
  *  SystemV/Coherent directory handling functions
  */
 
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/swap.h>
+#include <beep/pagemap.h>
+#include <beep/highmem.h>
+#include <beep/swap.h>
 #include "sysv.h"
 
 static int sysv_readdir(struct file *, void *, filldir_t);

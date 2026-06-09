@@ -1,10 +1,10 @@
 /* ATM driver model support. */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/kobject.h>
-#include <linux/atmdev.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/kobject.h>
+#include <beep/atmdev.h>
 #include "common.h"
 #include "resources.h"
 

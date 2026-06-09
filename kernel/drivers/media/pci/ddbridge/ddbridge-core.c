@@ -21,19 +21,19 @@
  * Or, point your browser to http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/timer.h>
-#include <linux/i2c.h>
-#include <linux/swab.h>
-#include <linux/vmalloc.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/poll.h>
+#include <beep/io.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/timer.h>
+#include <beep/i2c.h>
+#include <beep/swab.h>
+#include <beep/vmalloc.h>
 #include "ddbridge.h"
 
 #include "ddbridge-regs.h"

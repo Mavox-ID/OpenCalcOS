@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-integrator/cpu.c
+ *  beep/arch/arm/mach-integrator/cpu.c
  *
  *  Copyright (C) 2001-2002 Deep Blue Solutions Ltd.
  *
@@ -9,14 +9,14 @@
  *
  * CPU support functions
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/cpufreq.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/cpufreq.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <mach/platform.h>

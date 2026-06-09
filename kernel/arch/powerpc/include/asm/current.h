@@ -12,7 +12,7 @@
 struct task_struct;
 
 #ifdef __powerpc64__
-#include <linux/stddef.h>
+#include <beep/stddef.h>
 #include <asm/paca.h>
 
 static inline struct task_struct *get_current(void)

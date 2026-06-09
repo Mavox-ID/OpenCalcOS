@@ -7,25 +7,25 @@
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  * Copyright (C) 2001 MIPS Technologies, Inc.
  */
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/linkage.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/ptrace.h>
-#include <linux/string.h>
-#include <linux/syscalls.h>
-#include <linux/file.h>
-#include <linux/utsname.h>
-#include <linux/unistd.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/compiler.h>
-#include <linux/ipc.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/elf.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/linkage.h>
+#include <beep/fs.h>
+#include <beep/smp.h>
+#include <beep/ptrace.h>
+#include <beep/string.h>
+#include <beep/syscalls.h>
+#include <beep/file.h>
+#include <beep/utsname.h>
+#include <beep/unistd.h>
+#include <beep/sem.h>
+#include <beep/msg.h>
+#include <beep/shm.h>
+#include <beep/compiler.h>
+#include <beep/ipc.h>
+#include <beep/uaccess.h>
+#include <beep/slab.h>
+#include <beep/elf.h>
 
 #include <asm/asm.h>
 #include <asm/branch.h>
@@ -43,7 +43,7 @@
  * For historic reasons the pipe(2) syscall on MIPS has an unusual calling
  * convention.  It returns results in registers $v0 / $v1 which means there
  * is no need for it to do verify the validity of a userspace pointer
- * argument.  Historically that used to be expensive in Linux.  These days
+ * argument.  Historically that used to be expensive in Beep.  These days
  * the performance advantage is negligible.
  */
 asmlinkage int sysm_pipe(nabi_no_regargs volatile struct pt_regs regs)

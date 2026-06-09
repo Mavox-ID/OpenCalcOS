@@ -10,15 +10,15 @@
  * themselves.
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/sfi_acpi.h>
-#include <linux/bitmap.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/rculist.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/acpi.h>
+#include <beep/sfi_acpi.h>
+#include <beep/bitmap.h>
+#include <beep/dmi.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/rculist.h>
 #include <asm/e820.h>
 #include <asm/pci_x86.h>
 #include <asm/acpi.h>

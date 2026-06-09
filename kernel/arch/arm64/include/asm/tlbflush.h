@@ -21,7 +21,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include <asm/cputype.h>
 
 extern void __cpu_flush_user_tlb_range(unsigned long, unsigned long, struct vm_area_struct *);

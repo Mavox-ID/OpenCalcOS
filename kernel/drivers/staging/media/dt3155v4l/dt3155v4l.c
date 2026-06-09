@@ -18,12 +18,12 @@
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
 
-#include <linux/module.h>
-#include <linux/version.h>
-#include <linux/stringify.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/version.h>
+#include <beep/stringify.h>
+#include <beep/delay.h>
+#include <beep/kthread.h>
+#include <beep/slab.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-ioctl.h>
 #include <media/videobuf2-dma-contig.h>
@@ -990,7 +990,7 @@ static struct pci_driver pci_driver = {
 
 module_pci_driver(pci_driver);
 
-MODULE_DESCRIPTION("video4linux pci-driver for dt3155 frame grabber");
+MODULE_DESCRIPTION("video4beep pci-driver for dt3155 frame grabber");
 MODULE_AUTHOR("Marin Mitov <mitov@issp.bas.bg>");
 MODULE_VERSION(DT3155_VERSION);
 MODULE_LICENSE("GPL");

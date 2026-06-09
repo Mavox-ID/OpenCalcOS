@@ -1,10 +1,10 @@
 /*
- * linux/arch/arm/mach-at91/board-rm9200ek.c
+ * beep/arch/arm/mach-at91/board-rm9200ek.c
  *
  *  Copyright (C) 2005 SAN People
  *
  *  Epson S1D framebuffer glue code is:
- *     Copyright (C) 2005 Thibaut VARENE <varenet@parisc-linux.org>
+ *     Copyright (C) 2005 Thibaut VARENE <varenet@parisc-beep.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,14 +21,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/types.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/mtd/physmap.h>
+#include <beep/types.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/mtd/physmap.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>

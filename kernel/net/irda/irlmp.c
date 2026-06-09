@@ -24,16 +24,16 @@
  *
  ********************************************************************/
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/random.h>
-#include <linux/seq_file.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/skbuff.h>
+#include <beep/types.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
+#include <beep/kmod.h>
+#include <beep/random.h>
+#include <beep/seq_file.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/timer.h>
@@ -101,7 +101,7 @@ int __init irlmp_init(void)
 	spin_lock_init(&irlmp->cachelog->hb_spinlock);
 
 	irlmp->last_lsap_sel = 0x0f; /* Reserved 0x00-0x0f */
-	strcpy(sysctl_devname, "Linux");
+	strcpy(sysctl_devname, "Beep");
 
 	init_timer(&irlmp->discovery_timer);
 

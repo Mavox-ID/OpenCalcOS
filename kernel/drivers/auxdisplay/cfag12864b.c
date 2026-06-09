@@ -23,21 +23,21 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/cdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/ks0108.h>
-#include <linux/cfag12864b.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/cdev.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/jiffies.h>
+#include <beep/mutex.h>
+#include <beep/uaccess.h>
+#include <beep/vmalloc.h>
+#include <beep/workqueue.h>
+#include <beep/ks0108.h>
+#include <beep/cfag12864b.h>
 
 
 #define CFAG12864B_NAME "cfag12864b"

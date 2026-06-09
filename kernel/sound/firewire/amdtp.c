@@ -6,11 +6,11 @@
  * Licensed under the terms of the GNU General Public License, version 2.
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/firewire.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/firewire.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include <sound/pcm.h>
 #include "amdtp.h"
 

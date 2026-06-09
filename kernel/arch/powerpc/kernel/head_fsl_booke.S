@@ -1,7 +1,7 @@
 /*
  * Kernel execution entry point code.
  *
- *    Copyright (c) 1995-1996 Gary Thomas <gdt@linuxppc.org>
+ *    Copyright (c) 1995-1996 Gary Thomas <gdt@beepppc.org>
  *	Initial PowerPC version.
  *    Copyright (c) 1996 Cort Dougan <cort@cs.nmt.edu>
  *	Rewritten for PReP
@@ -30,8 +30,8 @@
  * option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/threads.h>
+#include <beep/init.h>
+#include <beep/threads.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 #include <asm/mmu.h>
@@ -279,7 +279,7 @@ _ENTRY(__early_start)
 	rlwinm.	r12, r11, 0, 0, 19;	/* Extract L2 (pte) base address */	\
 	beq	2f;			/* Bail if no table */			\
 	rlwimi	r12, r10, 22, 20, 29;	/* Compute PTE address */		\
-	lwz	r11, 0(r12);		/* Get Linux PTE */
+	lwz	r11, 0(r12);		/* Get Beep PTE */
 #endif
 
 /*
@@ -613,12 +613,12 @@ END_FTR_SECTION_IFSET(CPU_FTR_EMB_HV)
  * Both the instruction and data TLB miss get to this
  * point to load the TLB.
  *	r10 - tsize encoding (if HUGETLB_PAGE) or available to use
- *	r11 - TLB (info from Linux PTE)
+ *	r11 - TLB (info from Beep PTE)
  *	r12 - available to use
  *	r13 - upper bits of PTE (if PTE_64BIT) or available to use
  *	CR5 - results of addr >= PAGE_OFFSET
  *	MAS0, MAS1 - loaded with proper value when we get here
- *	MAS2, MAS3 - will need additional info from Linux PTE
+ *	MAS2, MAS3 - will need additional info from Beep PTE
  *	Upon exit, we reload everything and RFI.
  */
 finish_tlb_load:
@@ -684,7 +684,7 @@ finish_tlb_load:
 
 	/*
 	 * We set execute, because we don't have the granularity to
-	 * properly set this at the page level (Linux problem).
+	 * properly set this at the page level (Beep problem).
 	 * Many of these bits are software only.  Bits we don't set
 	 * here we (properly should) assume have the appropriate value.
 	 */

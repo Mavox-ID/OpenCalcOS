@@ -26,12 +26,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/vmalloc.h>
+#include <beep/interrupt.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>
 #include <media/v4l2-ioctl.h>

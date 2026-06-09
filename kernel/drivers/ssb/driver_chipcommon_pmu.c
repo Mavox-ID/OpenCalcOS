@@ -8,11 +8,11 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/ssb/ssb.h>
-#include <linux/ssb/ssb_regs.h>
-#include <linux/ssb/ssb_driver_chipcommon.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <beep/ssb/ssb.h>
+#include <beep/ssb/ssb_regs.h>
+#include <beep/ssb/ssb_driver_chipcommon.h>
+#include <beep/delay.h>
+#include <beep/export.h>
 #ifdef CONFIG_BCM47XX
 #include <asm/mach-bcm47xx/nvram.h>
 #endif

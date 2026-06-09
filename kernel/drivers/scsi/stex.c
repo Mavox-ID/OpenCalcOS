@@ -1,5 +1,5 @@
 /*
- * SuperTrak EX Series Storage Controller driver for Linux
+ * SuperTrak EX Series Storage Controller driver for Beep
  *
  *	Copyright (C) 2005-2009 Promise Technology Inc.
  *
@@ -9,22 +9,22 @@
  *	2 of the License, or (at your option) any later version.
  *
  *	Written By:
- *		Ed Lin <promise_linux@promise.com>
+ *		Ed Lin <promise_beep@promise.com>
  *
  */
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/pci.h>
+#include <beep/blkdev.h>
+#include <beep/interrupt.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/byteorder.h>

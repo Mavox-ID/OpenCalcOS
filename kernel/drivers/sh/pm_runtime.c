@@ -8,17 +8,17 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_clock.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/sh_clk.h>
-#include <linux/bitmap.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/pm_runtime.h>
+#include <beep/pm_domain.h>
+#include <beep/pm_clock.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/sh_clk.h>
+#include <beep/bitmap.h>
+#include <beep/slab.h>
 
 #ifdef CONFIG_PM_RUNTIME
 

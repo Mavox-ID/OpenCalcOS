@@ -9,14 +9,14 @@
  * (C) Copyright TOSHIBA CORPORATION 2005-2007
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/ide.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/scatterlist.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/ide.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/scatterlist.h>
 
 #include <asm/ide.h>
 

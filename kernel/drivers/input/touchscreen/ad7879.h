@@ -9,7 +9,7 @@
 #ifndef _AD7879_H_
 #define _AD7879_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct ad7879;
 struct device;

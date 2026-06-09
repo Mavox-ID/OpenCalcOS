@@ -1,11 +1,11 @@
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/quota.h>
-#include <linux/quotaops.h>
-#include <linux/dqblk_v1.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/quota.h>
+#include <beep/quotaops.h>
+#include <beep/dqblk_v1.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
 
 #include <asm/byteorder.h>
 

@@ -6,11 +6,11 @@
  * Copyright (C) 2004, 2005 Ralf Baechle
  * Copyright (C) 2005 MIPS Technologies, Inc.
  */
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/oprofile.h>
-#include <linux/smp.h>
+#include <beep/compiler.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/oprofile.h>
+#include <beep/smp.h>
 #include <asm/cpu-info.h>
 
 #include "op_impl.h"

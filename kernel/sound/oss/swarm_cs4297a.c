@@ -1,6 +1,6 @@
 /*******************************************************************************
 *
-*      "swarm_cs4297a.c" --  Cirrus Logic-Crystal CS4297a linux audio driver.
+*      "swarm_cs4297a.c" --  Cirrus Logic-Crystal CS4297a beep audio driver.
 *
 *      Copyright (C) 2001  Broadcom Corporation.
 *      Copyright (C) 2000,2001  Cirrus Logic Corp.  
@@ -12,7 +12,7 @@
 *               BCM1250 Synchronous Serial interface
 *               (Kip Walker, Broadcom Corp.)
 *      Copyright (C) 2004  Maciej W. Rozycki
-*      Copyright (C) 2005 Ralf Baechle (ralf@linux-mips.org)
+*      Copyright (C) 2005 Ralf Baechle (ralf@beep-mips.org)
 *
 *      This program is free software; you can redistribute it and/or modify
 *      it under the terms of the GNU General Public License as published by
@@ -60,22 +60,22 @@
 *
 *******************************************************************************/
 
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/sound.h>
-#include <linux/slab.h>
-#include <linux/soundcard.h>
-#include <linux/pci.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/kernel.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/sound.h>
+#include <beep/slab.h>
+#include <beep/soundcard.h>
+#include <beep/pci.h>
+#include <beep/bitops.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/poll.h>
+#include <beep/mutex.h>
+#include <beep/kernel.h>
 
 #include <asm/byteorder.h>
 #include <asm/dma.h>
@@ -104,7 +104,7 @@ static void start_adc(struct cs4297a_state *s);
 #define CS4297a_MAGIC           0xf00beef1
 
 // buffer order determines the size of the dma buffer for the driver.
-// under Linux, a smaller buffer allows more responsiveness from many of the 
+// under Beep, a smaller buffer allows more responsiveness from many of the 
 // applications (e.g. games).  A larger buffer allows some of the apps (esound) 
 // to not underrun the dma buffer as easily.  As default, use 32k (order=3)
 // rather than 64k as some of the games work more responsively.

@@ -20,13 +20,13 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/suspend.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/kthread.h>
+#include <beep/suspend.h>
 
 #include "saa7134-reg.h"
 #include "saa7134.h"

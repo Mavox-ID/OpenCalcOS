@@ -11,11 +11,11 @@
  * of the GNU General Public License, incorporated herein by reference.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #include <net/net_namespace.h>
 
 #include "platform.h"

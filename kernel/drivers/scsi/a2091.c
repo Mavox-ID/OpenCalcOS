@@ -1,11 +1,11 @@
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/zorro.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/zorro.h>
+#include <beep/module.h>
 
 #include <asm/page.h>
 #include <asm/pgtable.h>

@@ -2,7 +2,7 @@
  * Clock framework definitions for SPEAr platform
  *
  * Copyright (C) 2012 ST Microelectronics
- * Viresh Kumar <viresh.linux@gmail.com>
+ * Viresh Kumar <viresh.beep@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
@@ -12,9 +12,9 @@
 #ifndef __SPEAR_CLK_H
 #define __SPEAR_CLK_H
 
-#include <linux/clk-provider.h>
-#include <linux/spinlock_types.h>
-#include <linux/types.h>
+#include <beep/clk-provider.h>
+#include <beep/spinlock_types.h>
+#include <beep/types.h>
 
 /* Auxiliary Synth clk */
 /* Default masks */

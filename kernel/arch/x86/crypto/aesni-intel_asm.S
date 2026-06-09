@@ -29,7 +29,7 @@
  * (at your option) any later version.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/inst.h>
 
 #ifdef __x86_64__

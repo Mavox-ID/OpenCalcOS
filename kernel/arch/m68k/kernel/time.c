@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/kernel/time.c
+ *  beep/arch/m68k/kernel/time.c
  *
  *  Copyright (C) 1991, 1992, 1995  Linus Torvalds
  *
@@ -10,23 +10,23 @@
  *		"A Kernel Model for Precision Timekeeping" by Dave Mills
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/rtc.h>
+#include <beep/platform_device.h>
 
 #include <asm/machdep.h>
 #include <asm/io.h>
 #include <asm/irq_regs.h>
 
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/profile.h>
+#include <beep/time.h>
+#include <beep/timex.h>
+#include <beep/profile.h>
 
 /*
  * timer_interrupt() needs to keep up the real-time clock,

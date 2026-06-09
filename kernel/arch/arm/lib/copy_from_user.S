@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/lib/copy_from_user.S
+ *  beep/arch/arm/lib/copy_from_user.S
  *
  *  Author:	Nicolas Pitre
  *  Created:	Sep 29, 2005
@@ -10,7 +10,7 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 
 /*

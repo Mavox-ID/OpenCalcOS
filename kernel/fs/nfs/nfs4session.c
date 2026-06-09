@@ -4,17 +4,17 @@
  * Copyright (c) 2012 Trond Myklebust <Trond.Myklebust@netapp.com>
  *
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/bc_xprt.h>
-#include <linux/nfs.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/printk.h>
+#include <beep/slab.h>
+#include <beep/sunrpc/sched.h>
+#include <beep/sunrpc/bc_xprt.h>
+#include <beep/nfs.h>
+#include <beep/nfs4.h>
+#include <beep/nfs_fs.h>
+#include <beep/module.h>
 
 #include "nfs4_fs.h"
 #include "internal.h"

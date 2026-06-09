@@ -8,7 +8,7 @@
  *               Martin Peschke <peschke@fh-brandenburg.de>
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/types.h>
 #include <asm/ebcdic.h>
 

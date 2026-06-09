@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5pc100/setup-i2c1.c
+/* beep/arch/arm/mach-s5pc100/setup-i2c1.c
  *
  * Copyright 2009 Samsung Electronics Co.
  *	Byungho Min <bhmin@samsung.com>
@@ -12,13 +12,13 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
 
 struct platform_device; /* don't need the contents */
 
-#include <linux/gpio.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/gpio.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 #include <plat/gpio-cfg.h>
 
 void s3c_i2c1_cfg_gpio(struct platform_device *dev)

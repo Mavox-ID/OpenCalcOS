@@ -7,18 +7,18 @@
  *		Initial version.
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/pagevec.h>
-#include <linux/pagemap.h>
-#include <linux/syscalls.h>
-#include <linux/file.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/gfp.h>
+#include <beep/mm.h>
+#include <beep/export.h>
+#include <beep/blkdev.h>
+#include <beep/backing-dev.h>
+#include <beep/task_io_accounting_ops.h>
+#include <beep/pagevec.h>
+#include <beep/pagemap.h>
+#include <beep/syscalls.h>
+#include <beep/file.h>
 
 /*
  * Initialise a struct file's readahead state.  Assumes that the caller has

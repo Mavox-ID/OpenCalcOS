@@ -9,16 +9,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mii.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/mii.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/ethtool.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/gfp.h>
 
 #define DRV_MODULE_NAME		"w90p910-emc"
 #define DRV_MODULE_VERSION	"0.1"

@@ -24,15 +24,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/socket.h>
-#include <linux/sctp.h>
-#include <linux/proc_fs.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/kfifo.h>
-#include <linux/time.h>
+#include <beep/kernel.h>
+#include <beep/kprobes.h>
+#include <beep/socket.h>
+#include <beep/sctp.h>
+#include <beep/proc_fs.h>
+#include <beep/vmalloc.h>
+#include <beep/module.h>
+#include <beep/kfifo.h>
+#include <beep/time.h>
 #include <net/net_namespace.h>
 
 #include <net/sctp/sctp.h>

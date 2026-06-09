@@ -13,13 +13,13 @@
 #define KMSG_COMPONENT "tape"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>	     // for kernel parameters
-#include <linux/kmod.h>	     // for requesting modules
-#include <linux/spinlock.h>  // for locks
-#include <linux/vmalloc.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>	     // for kernel parameters
+#include <beep/kmod.h>	     // for requesting modules
+#include <beep/spinlock.h>  // for locks
+#include <beep/vmalloc.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 
 #include <asm/types.h>	     // for variable types
 
@@ -433,7 +433,7 @@ tape_cleanup_device(struct tape_device *device)
  * Called by the common I/O layer if the drive should be suspended on user
  * request. We refuse to suspend if the device is loaded or in use for the
  * following reason:
- * While the Linux guest is suspended, it might be logged off which causes
+ * While the Beep guest is suspended, it might be logged off which causes
  * devices to be detached. Tape devices are automatically rewound and unloaded
  * during DETACH processing (unless the tape device was attached with the
  * NOASSIGN or MULTIUSER option). After rewind/unload, there is no way to
@@ -1352,7 +1352,7 @@ tape_exit(void)
 
 MODULE_AUTHOR("(C) 2001 IBM Deutschland Entwicklung GmbH by Carsten Otte and "
 	      "Michael Holzheu (cotte@de.ibm.com,holzheu@de.ibm.com)");
-MODULE_DESCRIPTION("Linux on zSeries channel attached tape device driver");
+MODULE_DESCRIPTION("Beep on zSeries channel attached tape device driver");
 MODULE_LICENSE("GPL");
 
 module_init(tape_init);

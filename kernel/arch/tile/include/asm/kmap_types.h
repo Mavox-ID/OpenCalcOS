@@ -16,7 +16,7 @@
 #define _ASM_TILE_KMAP_TYPES_H
 
 /*
- * In 32-bit TILE Linux we have to balance the desire to have a lot of
+ * In 32-bit TILE Beep we have to balance the desire to have a lot of
  * nested atomic mappings with the fact that large page sizes and many
  * processors chew up address space quickly.  In a typical
  * 64-processor, 64KB-page layout build, making KM_TYPE_NR one larger

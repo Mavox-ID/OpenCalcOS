@@ -29,19 +29,19 @@
 /* Uncomment next line to get verbose printout */
 /* #define DEBUG */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
 #include <asm/io.h>
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
-#include <linux/dmi.h>
+#include <beep/dmi.h>
 
 #include "internal.h"
 
@@ -1039,7 +1039,7 @@ int __init acpi_ec_ecdt_probe(void)
 			pr_info(PREFIX "ASUSTek keeps feeding us with broken "
 			"ECDT tables, which are very hard to workaround. "
 			"Trying to use DSDT EC info instead. Please send "
-			"output of acpidump to linux-acpi@vger.kernel.org\n");
+			"output of acpidump to beep-acpi@vger.kernel.org\n");
 		kfree(saved_ec);
 		saved_ec = NULL;
 	} else {

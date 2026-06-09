@@ -10,8 +10,8 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/inet_diag.h>
+#include <beep/module.h>
+#include <beep/inet_diag.h>
 
 #include "ccid.h"
 #include "dccp.h"

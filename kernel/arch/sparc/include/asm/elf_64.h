@@ -204,8 +204,8 @@ do {	if ((ex).e_ident[EI_CLASS] == ELFCLASS32)	\
 	else						\
 		clear_thread_flag(TIF_32BIT);		\
 	/* flush_thread will update pgd cache */	\
-	if (personality(current->personality) != PER_LINUX32)	\
-		set_personality(PER_LINUX |		\
+	if (personality(current->personality) != PER_BEEP32)	\
+		set_personality(PER_BEEP |		\
 			(current->personality & (~PER_MASK)));	\
 } while (0)
 

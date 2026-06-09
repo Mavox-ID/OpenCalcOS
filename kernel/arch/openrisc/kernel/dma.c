@@ -1,7 +1,7 @@
 /*
- * OpenRISC Linux
+ * OpenRISC Beep
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -19,10 +19,10 @@
  * the only thing implemented properly.  The rest need looking into...
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/dma-debug.h>
-#include <linux/export.h>
-#include <linux/dma-attrs.h>
+#include <beep/dma-mapping.h>
+#include <beep/dma-debug.h>
+#include <beep/export.h>
+#include <beep/dma-attrs.h>
 
 #include <asm/cpuinfo.h>
 #include <asm/spr_defs.h>

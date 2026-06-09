@@ -4,18 +4,18 @@
  * Copyright 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/miscdevice.h>
-#include <linux/mm.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/miscdevice.h>
+#include <beep/mm.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>

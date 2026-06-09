@@ -23,9 +23,9 @@
 
 */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/types.h>
 
 #include "b43.h"
 #include "phy_n.h"

@@ -10,7 +10,7 @@
 */
 #define pr_fmt(fmt) "%s:%d " fmt, __func__, __LINE__
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include "camif-regs.h"
 
 #define camif_write(_camif, _off, _val)	writel(_val, (_camif)->io_base + (_off))

@@ -10,20 +10,20 @@
  *	modify it under the terms of the GNU General Public License
  *	version 2 or later, as published by the Free Software Foundation.
  */
-#include <linux/ip.h>
-#include <linux/module.h>
-#include <linux/percpu.h>
-#include <linux/route.h>
-#include <linux/skbuff.h>
-#include <linux/notifier.h>
+#include <beep/ip.h>
+#include <beep/module.h>
+#include <beep/percpu.h>
+#include <beep/route.h>
+#include <beep/skbuff.h>
+#include <beep/notifier.h>
 #include <net/checksum.h>
 #include <net/icmp.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 #include <net/ip6_route.h>
 #include <net/route.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_TEE.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_TEE.h>
 
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
 #	define WITH_CONNTRACK 1

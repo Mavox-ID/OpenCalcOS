@@ -22,8 +22,8 @@
 #ifndef P54SPI_H
 #define P54SPI_H
 
-#include <linux/mutex.h>
-#include <linux/list.h>
+#include <beep/mutex.h>
+#include <beep/list.h>
 #include <net/mac80211.h>
 
 #include "p54.h"

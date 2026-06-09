@@ -7,16 +7,16 @@
  * @author John Levon <levon@movementarian.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/oprofile.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/param.h>	/* for HZ */
+#include <beep/kernel.h>
+#include <beep/oprofile.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/param.h>	/* for HZ */
  
 #ifdef CONFIG_SPARC64
-#include <linux/notifier.h>
-#include <linux/rcupdate.h>
-#include <linux/kdebug.h>
+#include <beep/notifier.h>
+#include <beep/rcupdate.h>
+#include <beep/kdebug.h>
 #include <asm/nmi.h>
 
 static int profile_timer_exceptions_notify(struct notifier_block *self,

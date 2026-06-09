@@ -1,5 +1,5 @@
 /*
- * linux/sound/arm/ep93xx-pcm.c - EP93xx ALSA PCM interface
+ * beep/sound/arm/ep93xx-pcm.c - EP93xx ALSA PCM interface
  *
  * Copyright (C) 2006 Lennert Buytenhek <buytenh@wantstofly.org>
  * Copyright (C) 2006 Applied Data Systems
@@ -12,12 +12,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>
@@ -25,7 +25,7 @@
 #include <sound/soc.h>
 #include <sound/dmaengine_pcm.h>
 
-#include <linux/platform_data/dma-ep93xx.h>
+#include <beep/platform_data/dma-ep93xx.h>
 #include <mach/hardware.h>
 #include <mach/ep93xx-regs.h>
 

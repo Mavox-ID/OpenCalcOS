@@ -7,17 +7,17 @@
  * Aug 2002: Manfred Spraul <manfred@colorfullife.com>
  * 	Dynamically adjust the size of the bridge resource
  *
- * May 2003: Dominik Brodowski <linux@brodo.de>
+ * May 2003: Dominik Brodowski <beep@brodo.de>
  * 	Merge pci_socket.c and yenta.c into one file
  */
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/workqueue.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 #include <pcmcia/ss.h>
 

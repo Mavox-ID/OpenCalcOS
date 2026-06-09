@@ -23,10 +23,10 @@
  * resizing.
  */
 
-#include <linux/err.h>
-#include <linux/math64.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/err.h>
+#include <beep/math64.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include "ubi.h"
 
 static int self_check_volumes(struct ubi_device *ubi);

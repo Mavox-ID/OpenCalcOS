@@ -24,9 +24,9 @@
 #ifndef __NET_NFC_H
 #define __NET_NFC_H
 
-#include <linux/nfc.h>
-#include <linux/device.h>
-#include <linux/skbuff.h>
+#include <beep/nfc.h>
+#include <beep/device.h>
+#include <beep/skbuff.h>
 
 #define nfc_dev_info(dev, fmt, arg...) dev_info((dev), "NFC: " fmt "\n", ## arg)
 #define nfc_dev_err(dev, fmt, arg...) dev_err((dev), "NFC: " fmt "\n", ## arg)

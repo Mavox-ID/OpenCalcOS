@@ -56,21 +56,21 @@
  * in order to prevent random node placement.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 
-#include <linux/mm.h>
-#include <linux/swap.h> /* struct reclaim_state */
-#include <linux/cache.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/kmemleak.h>
+#include <beep/mm.h>
+#include <beep/swap.h> /* struct reclaim_state */
+#include <beep/cache.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/rcupdate.h>
+#include <beep/list.h>
+#include <beep/kmemleak.h>
 
 #include <trace/events/kmem.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include "slab.h"
 /*

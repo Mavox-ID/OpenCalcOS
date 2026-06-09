@@ -8,13 +8,13 @@
  * Licensed under GPLv2 or later.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/mtd/physmap.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/mtd/physmap.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>
@@ -26,7 +26,7 @@
 
 #include <mach/hardware.h>
 
-#include <linux/gpio.h>
+#include <beep/gpio.h>
 
 #include "at91_aic.h"
 #include "board.h"

@@ -4,14 +4,14 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  *
- * Copyright (C) 2006 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2006 Ralf Baechle (ralf@beep-mips.org)
  */
 #ifndef __ASM_IRQ_REGS_H
 #define __ASM_IRQ_REGS_H
 
 #define ARCH_HAS_OWN_IRQ_REGS
 
-#include <linux/thread_info.h>
+#include <beep/thread_info.h>
 
 static inline struct pt_regs *get_irq_regs(void)
 {

@@ -1,11 +1,11 @@
-#include <linux/interrupt.h>
-#include <linux/kdebug.h>
-#include <linux/kmemcheck.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/stacktrace.h>
-#include <linux/string.h>
+#include <beep/interrupt.h>
+#include <beep/kdebug.h>
+#include <beep/kmemcheck.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/stacktrace.h>
+#include <beep/string.h>
 
 #include "error.h"
 #include "shadow.h"

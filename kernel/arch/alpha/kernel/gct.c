@@ -1,10 +1,10 @@
 /*
- *	linux/arch/alpha/kernel/gct.c
+ *	beep/arch/alpha/kernel/gct.c
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/errno.h>
 
 #include <asm/hwrpb.h>
 #include <asm/gct.h>

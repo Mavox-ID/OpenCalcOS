@@ -11,12 +11,12 @@
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/agp_backend.h>
+#include <beep/acpi.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/agp_backend.h>
 #include <asm/sn/addrs.h>
 #include <asm/sn/io.h>
 #include <asm/sn/pcidev.h>

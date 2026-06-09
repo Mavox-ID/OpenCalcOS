@@ -19,13 +19,13 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/io.h>
-#include <linux/clockchips.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/io.h>
+#include <beep/clockchips.h>
 
 #include <asm/mach/time.h>
 #include <asm/system_misc.h>

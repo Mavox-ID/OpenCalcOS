@@ -16,15 +16,15 @@
  *  the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/dcache.h>
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/srcu.h>
+#include <beep/dcache.h>
+#include <beep/fs.h>
+#include <beep/gfp.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/mount.h>
+#include <beep/srcu.h>
 
-#include <linux/fsnotify_backend.h>
+#include <beep/fsnotify_backend.h>
 #include "fsnotify.h"
 #include "../mount.h"
 
@@ -196,7 +196,7 @@ static int send_to_group(struct inode *to_tell,
 
 /*
  * This is the main call to fsnotify.  The VFS calls into hook specific functions
- * in linux/fsnotify.h.  Those functions then in turn call here.  Here will call
+ * in beep/fsnotify.h.  Those functions then in turn call here.  Here will call
  * out to all of the registered fsnotify_group.  Those groups can then use the
  * notification event in whatever means they feel necessary.
  */

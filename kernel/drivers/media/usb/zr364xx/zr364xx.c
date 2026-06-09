@@ -28,13 +28,13 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/usb.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/highmem.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/usb.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
+#include <beep/proc_fs.h>
+#include <beep/highmem.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-device.h>

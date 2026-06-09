@@ -2,10 +2,10 @@
  *
  * Definitions for the Dreamcast System ASIC and related peripherals.
  *
- * Copyright (c) 2001 M. R. Brown <mrbrown@linuxdc.org>
- * Copyright (C) 2003 Paul Mundt <lethal@linux-sh.org>
+ * Copyright (c) 2001 M. R. Brown <mrbrown@beepdc.org>
+ * Copyright (C) 2003 Paul Mundt <lethal@beep-sh.org>
  *
- * This file is part of the LinuxDC project (www.linuxdc.org)
+ * This file is part of the BeepDC project (www.beepdc.org)
  *
  * Released under the terms of the GNU GPL v2.0.
  *

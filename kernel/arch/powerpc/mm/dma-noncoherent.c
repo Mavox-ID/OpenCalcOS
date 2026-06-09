@@ -22,15 +22,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/highmem.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/highmem.h>
+#include <beep/dma-mapping.h>
+#include <beep/export.h>
 
 #include <asm/tlbflush.h>
 

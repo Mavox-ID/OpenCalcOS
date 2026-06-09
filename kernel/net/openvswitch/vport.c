@@ -16,17 +16,17 @@
  * 02110-1301, USA
  */
 
-#include <linux/etherdevice.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/jhash.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/percpu.h>
-#include <linux/rcupdate.h>
-#include <linux/rtnetlink.h>
-#include <linux/compat.h>
+#include <beep/etherdevice.h>
+#include <beep/if.h>
+#include <beep/if_vlan.h>
+#include <beep/jhash.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/percpu.h>
+#include <beep/rcupdate.h>
+#include <beep/rtnetlink.h>
+#include <beep/compat.h>
 #include <net/net_namespace.h>
 
 #include "datapath.h"

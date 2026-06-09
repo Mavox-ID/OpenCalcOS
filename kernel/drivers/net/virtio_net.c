@@ -17,16 +17,16 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 //#define DEBUG
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/virtio.h>
-#include <linux/virtio_net.h>
-#include <linux/scatterlist.h>
-#include <linux/if_vlan.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/module.h>
+#include <beep/virtio.h>
+#include <beep/virtio_net.h>
+#include <beep/scatterlist.h>
+#include <beep/if_vlan.h>
+#include <beep/slab.h>
+#include <beep/cpu.h>
 
 static int napi_weight = 128;
 module_param(napi_weight, int, 0444);

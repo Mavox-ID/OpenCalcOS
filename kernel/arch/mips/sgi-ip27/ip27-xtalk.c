@@ -7,9 +7,9 @@
  * Generic XTALK initialization code
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/smp.h>
 #include <asm/sn/types.h>
 #include <asm/sn/klconfig.h>
 #include <asm/sn/hub.h>

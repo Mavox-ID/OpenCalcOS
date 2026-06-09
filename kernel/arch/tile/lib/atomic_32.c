@@ -12,12 +12,12 @@
  *   more details.
  */
 
-#include <linux/cache.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/atomic.h>
+#include <beep/cache.h>
+#include <beep/delay.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/atomic.h>
 #include <arch/chip.h>
 
 /* See <asm/atomic_32.h> */

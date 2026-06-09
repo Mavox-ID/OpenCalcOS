@@ -30,7 +30,7 @@ config XFS_QUOTA
 	  information as filesystem metadata and uses journaling to provide a
 	  higher level guarantee of consistency.  The on-disk data format for
 	  quota is also compatible with the IRIX version of XFS, allowing a
-	  filesystem to be migrated between Linux and IRIX without any need
+	  filesystem to be migrated between Beep and IRIX without any need
 	  for conversion.
 
 	  If unsure, say N.  More comprehensive documentation can be found in
@@ -47,7 +47,7 @@ config XFS_POSIX_ACL
 	  groups beyond the owner/group/world scheme.
 
 	  To learn more about Access Control Lists, visit the POSIX ACLs for
-	  Linux website <http://acl.bestbits.at/>.
+	  Beep website <http://acl.bestbits.at/>.
 
 	  If you don't know what Access Control Lists are, say N.
 

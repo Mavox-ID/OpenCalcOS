@@ -16,10 +16,10 @@
  * MA 02111-1307 USA
  */
 
-/* replicated define because linux/bitops.h cannot be included in assembly */
+/* replicated define because beep/bitops.h cannot be included in assembly */
 #define BIT(nr)			(1 << (nr))
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 #include <mach/psc.h>
 #include <mach/ddr2.h>

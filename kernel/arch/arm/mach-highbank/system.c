@@ -13,7 +13,7 @@
  * You should have received a copy of the GNU General Public License along with
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/proc-fns.h>
 
 #include "core.h"

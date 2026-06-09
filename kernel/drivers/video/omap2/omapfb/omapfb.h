@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/omap2/omapfb.h
+ * beep/drivers/video/omap2/omapfb.h
  *
  * Copyright (C) 2008 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -27,9 +27,9 @@
 #define DEBUG
 #endif
 
-#include <linux/rwsem.h>
-#include <linux/dma-attrs.h>
-#include <linux/dma-mapping.h>
+#include <beep/rwsem.h>
+#include <beep/dma-attrs.h>
+#include <beep/dma-mapping.h>
 
 #include <video/omapdss.h>
 

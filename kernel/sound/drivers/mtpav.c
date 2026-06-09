@@ -50,18 +50,18 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/moduleparam.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
+#include <beep/moduleparam.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/rawmidi.h>
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 /*
  *      globals

@@ -13,13 +13,13 @@
  *			initial version.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/rwsem.h>
-#include <linux/i2o.h>
-#include <linux/workqueue.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/rwsem.h>
+#include <beep/i2o.h>
+#include <beep/workqueue.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 #include "core.h"
 
 #define OSM_NAME	"i2o"

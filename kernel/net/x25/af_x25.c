@@ -35,27 +35,27 @@
  *					response
  */
 
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/string.h>
+#include <beep/net.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 #include <asm/uaccess.h>
-#include <linux/fcntl.h>
-#include <linux/termios.h>	/* For TIOCINQ/OUTQ */
-#include <linux/notifier.h>
-#include <linux/init.h>
-#include <linux/compat.h>
-#include <linux/ctype.h>
+#include <beep/fcntl.h>
+#include <beep/termios.h>	/* For TIOCINQ/OUTQ */
+#include <beep/notifier.h>
+#include <beep/init.h>
+#include <beep/compat.h>
+#include <beep/ctype.h>
 
 #include <net/x25.h>
 #include <net/compat.h>
@@ -1813,7 +1813,7 @@ static int __init x25_init(void)
 	if (rc != 0)
 		goto out_sock;
 
-	printk(KERN_INFO "X.25 for Linux Version 0.2\n");
+	printk(KERN_INFO "X.25 for Beep Version 0.2\n");
 
 	x25_register_sysctl();
 	rc = x25_proc_init();

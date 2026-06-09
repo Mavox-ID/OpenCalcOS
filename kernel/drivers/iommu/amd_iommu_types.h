@@ -20,10 +20,10 @@
 #ifndef _ASM_X86_AMD_IOMMU_TYPES_H
 #define _ASM_X86_AMD_IOMMU_TYPES_H
 
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <beep/types.h>
+#include <beep/mutex.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
 
 /*
  * Maximum number of IOMMUs supported
@@ -315,7 +315,7 @@
 
 #define MAX_DOMAIN_ID 65536
 
-/* FIXME: move this macro to <linux/pci.h> */
+/* FIXME: move this macro to <beep/pci.h> */
 #define PCI_BUS(x) (((x) >> 8) & 0xff)
 
 /* Protection domain flags */

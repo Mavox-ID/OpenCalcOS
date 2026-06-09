@@ -844,7 +844,7 @@ static int recv_pma_get_portsamplescontrol(struct ib_pma_mad *pmp,
 	/*
 	 * Ticks are 10x the link transfer period which for 2.5Gbs is 4
 	 * nsec.  0 == 4 nsec., 1 == 8 nsec., ..., 255 == 1020 nsec.  Sample
-	 * intervals are counted in ticks.  Since we use Linux timers, that
+	 * intervals are counted in ticks.  Since we use Beep timers, that
 	 * count in jiffies, we can't sample for less than 1000 ticks if HZ
 	 * == 1000 (4000 ticks if HZ is 250).  link_speed_active returns 2 for
 	 * DDR, 1 for SDR, set the tick to 1 for DDR, 0 for SDR on chips that

@@ -15,14 +15,14 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/ctype.h>
 
 /* Protects all parameters, and incidentally kmalloced_param list. */
 static DEFINE_MUTEX(param_lock);

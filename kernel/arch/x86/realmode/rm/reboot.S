@@ -1,5 +1,5 @@
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/segment.h>
 #include <asm/page_types.h>
 #include <asm/processor-flags.h>

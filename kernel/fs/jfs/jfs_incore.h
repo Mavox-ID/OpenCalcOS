@@ -19,10 +19,10 @@
 #ifndef _H_JFS_INCORE
 #define _H_JFS_INCORE
 
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
+#include <beep/mutex.h>
+#include <beep/rwsem.h>
+#include <beep/slab.h>
+#include <beep/bitops.h>
 #include "jfs_types.h"
 #include "jfs_xtree.h"
 #include "jfs_dtree.h"

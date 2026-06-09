@@ -1,8 +1,8 @@
 #
-# Makefile for the linux kernel.
+# Makefile for the beep kernel.
 #
 
-extra-y		:= head.o vmlinux.lds
+extra-y		:= head.o vmbeep.lds
 asflags-y	:= $(KBUILD_CFLAGS)
 ccflags-y	:= -Wno-sign-compare
 

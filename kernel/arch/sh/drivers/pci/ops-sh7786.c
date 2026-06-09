@@ -7,11 +7,11 @@
  * License v2. See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
 #include "pcie-sh7786.h"
 
 enum {

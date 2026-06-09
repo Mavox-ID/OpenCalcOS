@@ -1,5 +1,5 @@
 /*
- *  linux/fs/nfs/file.c
+ *  beep/fs/nfs/file.c
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -16,19 +16,19 @@
  *  nfs regular file handling functions
  */
 
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/aio.h>
-#include <linux/gfp.h>
-#include <linux/swap.h>
+#include <beep/module.h>
+#include <beep/time.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/fcntl.h>
+#include <beep/stat.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_mount.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/aio.h>
+#include <beep/gfp.h>
+#include <beep/swap.h>
 
 #include <asm/uaccess.h>
 

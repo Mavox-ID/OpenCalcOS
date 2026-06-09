@@ -1,5 +1,5 @@
 /*
- *  linux/fs/fat/cache.c
+ *  beep/fs/fat/cache.c
  *
  *  Written 1992,1993 by Werner Almesberger
  *
@@ -8,9 +8,9 @@
  *  May 1999. AV. Fixed the bogosity with FAT32 (read "FAT28"). Fscking lusers.
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/buffer_head.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/buffer_head.h>
 #include "fat.h"
 
 /* this must be > 0. */

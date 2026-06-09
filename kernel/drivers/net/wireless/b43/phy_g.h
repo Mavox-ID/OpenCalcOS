@@ -1,5 +1,5 @@
-#ifndef LINUX_B43_PHY_G_H_
-#define LINUX_B43_PHY_G_H_
+#ifndef BEEP_B43_PHY_G_H_
+#define BEEP_B43_PHY_G_H_
 
 /* OFDM PHY registers are defined in the A-PHY header. */
 #include "phy_a.h"
@@ -205,4 +205,4 @@ u8 * b43_generate_dyn_tssi2dbm_tab(struct b43_wldev *dev,
 struct b43_phy_operations;
 extern const struct b43_phy_operations b43_phyops_g;
 
-#endif /* LINUX_B43_PHY_G_H_ */
+#endif /* BEEP_B43_PHY_G_H_ */

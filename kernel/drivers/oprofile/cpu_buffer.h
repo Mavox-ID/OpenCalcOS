@@ -11,12 +11,12 @@
 #ifndef OPROFILE_CPU_BUFFER_H
 #define OPROFILE_CPU_BUFFER_H
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/cache.h>
-#include <linux/sched.h>
-#include <linux/ring_buffer.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/cache.h>
+#include <beep/sched.h>
+#include <beep/ring_buffer.h>
 
 struct task_struct;
 

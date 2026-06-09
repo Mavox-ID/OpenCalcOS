@@ -37,9 +37,9 @@
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/kmod.h>
-#include <linux/moduleparam.h>
-#include <linux/ratelimit.h>
+#include <beep/kmod.h>
+#include <beep/moduleparam.h>
+#include <beep/ratelimit.h>
 #include <scsi/osd_initiator.h>
 #include "objlayout.h"
 
@@ -666,7 +666,7 @@ struct __auto_login {
 static int __objlayout_upcall(struct __auto_login *login)
 {
 	static char *envp[] = { "HOME=/",
-		"TERM=linux",
+		"TERM=beep",
 		"PATH=/sbin:/usr/sbin:/bin:/usr/bin",
 		NULL
 	};

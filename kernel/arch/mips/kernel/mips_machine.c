@@ -6,9 +6,9 @@
  *  by the Free Software Foundation.
  *
  */
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 
 #include <asm/mips_machine.h>
 

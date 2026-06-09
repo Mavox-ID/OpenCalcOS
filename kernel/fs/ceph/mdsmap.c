@@ -1,14 +1,14 @@
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <beep/bug.h>
+#include <beep/err.h>
+#include <beep/random.h>
+#include <beep/slab.h>
+#include <beep/types.h>
 
-#include <linux/ceph/mdsmap.h>
-#include <linux/ceph/messenger.h>
-#include <linux/ceph/decode.h>
+#include <beep/ceph/mdsmap.h>
+#include <beep/ceph/messenger.h>
+#include <beep/ceph/decode.h>
 
 #include "super.h"
 

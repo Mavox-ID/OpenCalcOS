@@ -2,21 +2,21 @@
  * Tty port functions
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/serial.h>
+#include <beep/timer.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/wait.h>
+#include <beep/bitops.h>
+#include <beep/delay.h>
+#include <beep/module.h>
 
 void tty_port_init(struct tty_port *port)
 {

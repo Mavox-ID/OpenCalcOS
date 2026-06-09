@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/kernel/traps.c
+ *  beep/arch/m32r/kernel/traps.c
  *
  *  Copyright (C) 2001, 2002  Hirokazu Takata, Hiroyuki Kondo,
  *                            Hitoshi Yamamoto
@@ -9,22 +9,22 @@
  * 'traps.c' handles hardware traps and faults after we have saved some
  * state in 'entry.S'.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kallsyms.h>
-#include <linux/stddef.h>
-#include <linux/ptrace.h>
-#include <linux/mm.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/kallsyms.h>
+#include <beep/stddef.h>
+#include <beep/ptrace.h>
+#include <beep/mm.h>
 #include <asm/page.h>
 #include <asm/processor.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include <asm/smp.h>
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 asmlinkage void alignment_check(void);
 asmlinkage void ei_handler(void);

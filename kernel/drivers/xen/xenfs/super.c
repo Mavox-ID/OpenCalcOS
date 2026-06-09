@@ -7,11 +7,11 @@
  *                              Turned xenfs into a loadable module.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/magic.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/magic.h>
 
 #include <xen/xen.h>
 

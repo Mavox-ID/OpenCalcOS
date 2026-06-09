@@ -11,21 +11,21 @@
  * Copyright:	Jamal Hadi Salim (2002-4)
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/skbuff.h>
+#include <beep/rtnetlink.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
-#include <linux/tc_act/tc_ipt.h>
+#include <beep/tc_act/tc_ipt.h>
 #include <net/tc_act/tc_ipt.h>
 
-#include <linux/netfilter_ipv4/ip_tables.h>
+#include <beep/netfilter_ipv4/ip_tables.h>
 
 
 #define IPT_TAB_MASK     15

@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux ufs filesystem routines.
+# Makefile for the Beep ufs filesystem routines.
 #
 
 obj-$(CONFIG_UFS_FS) += ufs.o

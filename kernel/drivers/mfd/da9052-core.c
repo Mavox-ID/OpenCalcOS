@@ -11,17 +11,17 @@
  *  option) any later version.
  */
 
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/core.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/mfd/core.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
-#include <linux/mfd/da9052/da9052.h>
-#include <linux/mfd/da9052/pdata.h>
-#include <linux/mfd/da9052/reg.h>
+#include <beep/mfd/da9052/da9052.h>
+#include <beep/mfd/da9052/pdata.h>
+#include <beep/mfd/da9052/reg.h>
 
 static bool da9052_reg_readable(struct device *dev, unsigned int reg)
 {

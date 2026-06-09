@@ -49,36 +49,36 @@
  *			    thanks to Chris Wright <chrisw@osdl.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
-#include <linux/nvram.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/sysfs.h>
-#include <linux/backlight.h>
-#include <linux/fb.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/input.h>
-#include <linux/leds.h>
-#include <linux/rfkill.h>
+#include <beep/nvram.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/sysfs.h>
+#include <beep/backlight.h>
+#include <beep/fb.h>
+#include <beep/platform_device.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/input.h>
+#include <beep/leds.h>
+#include <beep/rfkill.h>
 #include <asm/uaccess.h>
 
-#include <linux/dmi.h>
-#include <linux/jiffies.h>
-#include <linux/workqueue.h>
+#include <beep/dmi.h>
+#include <beep/jiffies.h>
+#include <beep/workqueue.h>
 
 #include <sound/core.h>
 #include <sound/control.h>
@@ -86,7 +86,7 @@
 
 #include <acpi/acpi_drivers.h>
 
-#include <linux/pci_ids.h>
+#include <beep/pci_ids.h>
 
 
 /* ThinkPad CMOS commands */
@@ -1638,7 +1638,7 @@ static void tpacpi_remove_driver_attributes(struct device_driver *drv)
  *    1. Stable BIOS, listed because the unknown amount of
  *       bugs and bad ACPI behaviour on older versions
  *
- *    2. BIOS or EC fw with known bugs that trigger on Linux
+ *    2. BIOS or EC fw with known bugs that trigger on Beep
  *
  *    3. BIOS with known reduced functionality in older versions
  *
@@ -3084,7 +3084,7 @@ static int __init hotkey_init(struct ibm_init_struct *iibm)
 	 *    ware may react very differently if you change them to
 	 *    something else;
 	 *
-	 * 2. You must be subscribed to the linux-thinkpad and
+	 * 2. You must be subscribed to the beep-thinkpad and
 	 *    ibm-acpi-devel mailing lists, and you should read the
 	 *    list archives since 2007 if you want to change the
 	 *    keymaps.  This requirement exists so that you will
@@ -3093,7 +3093,7 @@ static int __init hotkey_init(struct ibm_init_struct *iibm)
 	 *    listening to any bug reports;
 	 *
 	 * 3. Do not send thinkpad-acpi specific patches directly to
-	 *    for merging, *ever*.  Send them to the linux-acpi
+	 *    for merging, *ever*.  Send them to the beep-acpi
 	 *    mailinglist for comments.  Merging is to be done only
 	 *    through acpi-test and the ACPI maintainer.
 	 *

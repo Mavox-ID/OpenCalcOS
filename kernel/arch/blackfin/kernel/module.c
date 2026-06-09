@@ -6,12 +6,12 @@
 
 #define pr_fmt(fmt) "module %s: " fmt, mod->name
 
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <beep/moduleloader.h>
+#include <beep/elf.h>
+#include <beep/vmalloc.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
 #include <asm/dma.h>
 #include <asm/cacheflush.h>
 #include <asm/uaccess.h>

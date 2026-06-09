@@ -11,14 +11,14 @@
 
 /*#define DEBUG*/
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/export.h>
 
 static struct clk *cpuclk;
 

@@ -16,12 +16,12 @@
 
 #include "ieee80211.h"
 
-#include <linux/random.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
+#include <beep/random.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
 #include <asm/uaccess.h>
-#include <linux/etherdevice.h>
+#include <beep/etherdevice.h>
 
 #include "dot11d.h"
 u8 rsn_authen_cipher_suite[16][4] = {
@@ -876,7 +876,7 @@ static struct sk_buff* ieee80211_probe_resp(struct ieee80211_device *ieee, u8 *d
 	if (wpa_ie_len)
 	{
 		if (ieee->iw_mode == IW_MODE_ADHOC)
-		{//as Windows will set pairwise key same as the group key which is not allowed in Linux, so set this for IOT issue. WB 2008.07.07
+		{//as Windows will set pairwise key same as the group key which is not allowed in Beep, so set this for IOT issue. WB 2008.07.07
 			memcpy(&ieee->wpa_ie[14], &ieee->wpa_ie[8], 4);
 		}
 

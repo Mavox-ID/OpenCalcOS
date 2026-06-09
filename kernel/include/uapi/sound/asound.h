@@ -1,5 +1,5 @@
 /*
- *  Advanced Linux Sound Architecture - ALSA - Driver
+ *  Advanced Beep Sound Architecture - ALSA - Driver
  *  Copyright (c) 1994-2003 by Jaroslav Kysela <perex@perex.cz>,
  *                             Abramo Bagnara <abramo@alsa-project.org>
  *
@@ -23,7 +23,7 @@
 #ifndef _UAPI__SOUND_ASOUND_H
 #define _UAPI__SOUND_ASOUND_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 
 /*

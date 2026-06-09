@@ -7,9 +7,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/gpio.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/gpio.h>
 #include <cpu/shx3.h>
 
 enum {

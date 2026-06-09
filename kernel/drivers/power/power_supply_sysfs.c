@@ -11,11 +11,11 @@
  *  You may use this code as per GPL version 2
  */
 
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
+#include <beep/ctype.h>
+#include <beep/device.h>
+#include <beep/power_supply.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
 
 #include "power_supply.h"
 

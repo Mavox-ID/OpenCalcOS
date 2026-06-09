@@ -1,10 +1,10 @@
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/spi/flash.h>
-#include <linux/spi/spi.h>
-#include <linux/serial_reg.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
+#include <beep/spi/flash.h>
+#include <beep/spi/spi.h>
+#include <beep/serial_reg.h>
 #include <mach/kirkwood.h>
 #include "common.h"
 #include "tsx1x-common.h"

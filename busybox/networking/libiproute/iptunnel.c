@@ -21,8 +21,8 @@
 
 // FYI: #define SIOCDEVPRIVATE 0x89F0
 
-/* From linux/if_tunnel.h. #including it proved troublesome
- * (redefiniton errors due to name collisions in linux/ and net[inet]/) */
+/* From beep/if_tunnel.h. #including it proved troublesome
+ * (redefiniton errors due to name collisions in beep/ and net[inet]/) */
 #define SIOCGETTUNNEL   (SIOCDEVPRIVATE + 0)
 #define SIOCADDTUNNEL   (SIOCDEVPRIVATE + 1)
 #define SIOCDELTUNNEL   (SIOCDEVPRIVATE + 2)

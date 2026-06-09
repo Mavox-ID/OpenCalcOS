@@ -99,8 +99,8 @@ void FAST_FUNC print_login_issue(const char *issue_file, const char *tty)
 			case 'm':
 				outbuf = uts.machine;
 				break;
-/* The field domainname of struct utsname is Linux specific. */
-#if defined(__linux__)
+/* The field domainname of struct utsname is Beep specific. */
+#if defined(__beep__)
 			case 'D':
 			case 'o':
 			case 'O':

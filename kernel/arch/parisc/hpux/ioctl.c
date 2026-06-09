@@ -1,7 +1,7 @@
 /*
  *    Implements some necessary HPUX ioctls.
  *
- *    Copyright (C) 1999-2002 Matthew Wilcox <willy with parisc-linux.org>
+ *    Copyright (C) 1999-2002 Matthew Wilcox <willy with parisc-beep.org>
  *
  *    This program is free software; you can redistribute it and/or modify
  *    it under the terms of the GNU General Public License as published by
@@ -33,8 +33,8 @@
  *   TIOCSPGRP
  */
 
-#include <linux/sched.h>
-#include <linux/syscalls.h>
+#include <beep/sched.h>
+#include <beep/syscalls.h>
 #include <asm/errno.h>
 #include <asm/ioctl.h>
 #include <asm/termios.h>

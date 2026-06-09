@@ -5,26 +5,26 @@
  *  Hacked together by Andi Kleen
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/a.out.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/binfmts.h>
-#include <linux/personality.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
+#include <beep/time.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/a.out.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/string.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/stat.h>
+#include <beep/fcntl.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/binfmts.h>
+#include <beep/personality.h>
+#include <beep/init.h>
+#include <beep/jiffies.h>
 
 #include <asm/uaccess.h>
 #include <asm/pgalloc.h>
@@ -35,7 +35,7 @@
 #undef WARN_OLD
 #undef CORE_DUMP /* definitely broken */
 
-static int load_aout_binary(struct linux_binprm *);
+static int load_aout_binary(struct beep_binprm *);
 static int load_aout_library(struct file *);
 
 #ifdef CORE_DUMP
@@ -103,7 +103,7 @@ static void dump_thread32(struct pt_regs *regs, struct user32 *dump)
 
 #endif
 
-static struct linux_binfmt aout_format = {
+static struct beep_binfmt aout_format = {
 	.module		= THIS_MODULE,
 	.load_binary	= load_aout_binary,
 	.load_shlib	= load_aout_library,
@@ -128,7 +128,7 @@ static void set_brk(unsigned long start, unsigned long end)
  * macros to write out all the necessary info.
  */
 
-#include <linux/coredump.h>
+#include <beep/coredump.h>
 
 #define DUMP_WRITE(addr, nr)			     \
 	if (!dump_write(file, (void *)(addr), (nr))) \
@@ -219,7 +219,7 @@ end_coredump:
  * memory and creates the pointer tables from them, and puts their
  * addresses on the "stack", returning the new stack pointer value.
  */
-static u32 __user *create_aout_tables(char __user *p, struct linux_binprm *bprm)
+static u32 __user *create_aout_tables(char __user *p, struct beep_binprm *bprm)
 {
 	u32 __user *argv, *envp, *sp;
 	int argc = bprm->argc, envc = bprm->envc;
@@ -260,7 +260,7 @@ static u32 __user *create_aout_tables(char __user *p, struct linux_binprm *bprm)
  * These are the functions used to load a.out style executables and shared
  * libraries.  There is no binary dependent code anywhere else.
  */
-static int load_aout_binary(struct linux_binprm *bprm)
+static int load_aout_binary(struct beep_binprm *bprm)
 {
 	unsigned long error, fd_offset, rlim;
 	struct pt_regs *regs = current_pt_regs();
@@ -294,7 +294,7 @@ static int load_aout_binary(struct linux_binprm *bprm)
 		return retval;
 
 	/* OK, This is the point of no return */
-	set_personality(PER_LINUX);
+	set_personality(PER_BEEP);
 	set_personality_ia32(false);
 
 	setup_new_exec(bprm);

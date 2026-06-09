@@ -12,8 +12,8 @@
 #ifndef _KEYS_KEYRING_TYPE_H
 #define _KEYS_KEYRING_TYPE_H
 
-#include <linux/key.h>
-#include <linux/rcupdate.h>
+#include <beep/key.h>
+#include <beep/rcupdate.h>
 
 /*
  * the keyring payload contains a list of the keys to which the keyring is

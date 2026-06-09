@@ -3,8 +3,8 @@
  *  ATI Mach64 Hardware Acceleration
  */
 
-#include <linux/delay.h>
-#include <linux/fb.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
 #include <video/mach64.h>
 #include "atyfb.h"
 

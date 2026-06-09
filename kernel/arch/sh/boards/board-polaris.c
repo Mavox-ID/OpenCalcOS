@@ -5,14 +5,14 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/smsc911x.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
+#include <beep/smsc911x.h>
+#include <beep/io.h>
 #include <asm/irq.h>
 #include <asm/machvec.h>
 #include <asm/heartbeat.h>

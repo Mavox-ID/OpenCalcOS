@@ -3,7 +3,7 @@
  *
  * Copyright IBM Corp. 2009, 2012
  * Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
- *	      Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ *	      Hendrik Brueckner <brueckner@beep.vnet.ibm.com>
  */
 
 #include <asm/cpu_mf.h>

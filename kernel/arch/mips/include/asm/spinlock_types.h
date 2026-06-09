@@ -1,11 +1,11 @@
 #ifndef _ASM_SPINLOCK_TYPES_H
 #define _ASM_SPINLOCK_TYPES_H
 
-#ifndef __LINUX_SPINLOCK_TYPES_H
+#ifndef __BEEP_SPINLOCK_TYPES_H
 # error "please don't include this file directly"
 #endif
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #include <asm/byteorder.h>
 

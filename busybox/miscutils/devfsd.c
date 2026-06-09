@@ -13,13 +13,13 @@
 
 	devfsd.c
 
-	Main file for  devfsd  (devfs daemon for Linux).
+	Main file for  devfsd  (devfs daemon for Beep).
 
     Copyright (C) 1998-2002  Richard Gooch
 
 	devfsd.h
 
-    Header file for  devfsd  (devfs daemon for Linux).
+    Header file for  devfsd  (devfs daemon for Beep).
 
     Copyright (C) 1998-2000  Richard Gooch
 
@@ -59,7 +59,7 @@
 //config:	select FEATURE_SYSLOG
 //config:	help
 //config:	This is deprecated and should NOT be used anymore.
-//config:	Use linux >= 2.6 (optionally with hotplug) and mdev instead!
+//config:	Use beep >= 2.6 (optionally with hotplug) and mdev instead!
 //config:	See docs/mdev.txt for detailed instructions on how to use mdev
 //config:	instead.
 //config:
@@ -100,7 +100,7 @@
 //config:	default n
 //config:	help
 //config:	This is obsolete and should NOT be used anymore.
-//config:	Use linux >= 2.6 (optionally with hotplug) and mdev instead!
+//config:	Use beep >= 2.6 (optionally with hotplug) and mdev instead!
 //config:
 //config:	For legacy systems -- if there is no way around devfsd -- this
 //config:	tells busybox to look for names like /dev/loop/0 instead of
@@ -132,7 +132,7 @@
 #include <sys/un.h>
 #include <sys/sysmacros.h>
 
-/* Various defines taken from linux/major.h */
+/* Various defines taken from beep/major.h */
 #define IDE0_MAJOR	3
 #define IDE1_MAJOR	22
 #define IDE2_MAJOR	33
@@ -145,7 +145,7 @@
 #define IDE9_MAJOR	91
 
 
-/* Various defines taken from linux/devfs_fs.h */
+/* Various defines taken from beep/devfs_fs.h */
 #define DEVFSD_PROTOCOL_REVISION_KERNEL  5
 #define DEVFSD_IOCTL_BASE	'd'
 /*  These are the various ioctls  */

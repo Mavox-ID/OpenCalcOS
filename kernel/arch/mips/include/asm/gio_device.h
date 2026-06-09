@@ -1,5 +1,5 @@
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
+#include <beep/device.h>
+#include <beep/mod_devicetable.h>
 
 struct gio_device_id {
 	__u8 id;

@@ -1,4 +1,4 @@
-#include <linux/ctype.h>
+#include <beep/ctype.h>
 #include "spk_types.h"
 #include "spk_priv.h"
 #include "speakup.h"

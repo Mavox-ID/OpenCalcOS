@@ -1,5 +1,5 @@
 /*
- *  linux/arch/parisc/kernel/time.c
+ *  beep/arch/parisc/kernel/time.c
  *
  *  Copyright (C) 1991, 1992, 1995  Linus Torvalds
  *  Modifications for ARM (C) 1994, 1995, 1996,1997 Russell King
@@ -10,21 +10,21 @@
  * 1998-12-20  Updated NTP code according to technical memorandum Jan '96
  *             "A Kernel Model for Precision Timekeeping" by Dave Mills
  */
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/profile.h>
-#include <linux/clocksource.h>
-#include <linux/platform_device.h>
-#include <linux/ftrace.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/time.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/profile.h>
+#include <beep/clocksource.h>
+#include <beep/platform_device.h>
+#include <beep/ftrace.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>
@@ -34,12 +34,12 @@
 #include <asm/pdc.h>
 #include <asm/led.h>
 
-#include <linux/timex.h>
+#include <beep/timex.h>
 
 static unsigned long clocktick __read_mostly;	/* timer cycles per tick */
 
 /*
- * We keep time on PA-RISC Linux by using the Interval Timer which is
+ * We keep time on PA-RISC Beep by using the Interval Timer which is
  * a pair of registers; one is read-only and one is write-only; both
  * accessed through CR16.  The read-only register is 32 or 64 bits wide,
  * and increments by 1 every CPU clock tick.  The architecture only

@@ -1,4 +1,4 @@
-/* Linux driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
+/* Beep driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
  * register descriptions
  * see flexcop.c for copyright information
  */

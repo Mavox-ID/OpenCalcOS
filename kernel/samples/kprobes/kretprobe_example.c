@@ -18,12 +18,12 @@
  * if syslogd is configured to eliminate duplicate messages.)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kprobes.h>
-#include <linux/ktime.h>
-#include <linux/limits.h>
-#include <linux/sched.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/kprobes.h>
+#include <beep/ktime.h>
+#include <beep/limits.h>
+#include <beep/sched.h>
 
 static char func_name[NAME_MAX] = "do_fork";
 module_param_string(func, func_name, NAME_MAX, S_IRUGO);

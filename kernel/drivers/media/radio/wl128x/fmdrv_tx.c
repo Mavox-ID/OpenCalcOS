@@ -19,7 +19,7 @@
  *
  */
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include "fmdrv.h"
 #include "fmdrv_common.h"
 #include "fmdrv_tx.h"

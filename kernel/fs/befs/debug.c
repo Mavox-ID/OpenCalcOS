@@ -1,5 +1,5 @@
 /*
- *  linux/fs/befs/debug.c
+ *  beep/fs/befs/debug.c
  * 
  * Copyright (C) 2001 Will Dyson (will_dyson at pobox.com)
  *
@@ -13,11 +13,11 @@
 #ifdef __KERNEL__
 
 #include <stdarg.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <beep/string.h>
+#include <beep/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
 
 #endif				/* __KERNEL__ */
 

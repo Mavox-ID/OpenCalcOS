@@ -8,13 +8,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/i2c/twl.h>
-#include <linux/spi/spi.h>
-#include <linux/platform_data/spi-omap2-mcspi.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/i2c/twl.h>
+#include <beep/spi/spi.h>
+#include <beep/platform_data/spi-omap2-mcspi.h>
 #include <video/omapdss.h>
 #include "board-zoom.h"
 

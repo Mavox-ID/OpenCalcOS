@@ -2,7 +2,7 @@
  * fs/sysfs/inode.c - basic sysfs inode and dentry operations
  *
  * Copyright (c) 2001-3 Patrick Mochel
- * Copyright (c) 2007 SUSE Linux Products GmbH
+ * Copyright (c) 2007 SUSE Beep Products GmbH
  * Copyright (c) 2007 Tejun Heo <teheo@suse.de>
  *
  * This file is released under the GPLv2.
@@ -12,16 +12,16 @@
 
 #undef DEBUG 
 
-#include <linux/pagemap.h>
-#include <linux/namei.h>
-#include <linux/backing-dev.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/xattr.h>
-#include <linux/security.h>
+#include <beep/pagemap.h>
+#include <beep/namei.h>
+#include <beep/backing-dev.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/sysfs.h>
+#include <beep/xattr.h>
+#include <beep/security.h>
 #include "sysfs.h"
 
 extern struct super_block * sysfs_sb;

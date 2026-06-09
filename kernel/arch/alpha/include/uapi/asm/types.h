@@ -3,8 +3,8 @@
 
 /*
  * This file is never included by application software unless
- * explicitly requested (e.g., via linux/types.h) in which case the
- * application is Linux specific so (user-) name space pollution is
+ * explicitly requested (e.g., via beep/types.h) in which case the
+ * application is Beep specific so (user-) name space pollution is
  * not a major issue.  However, for interoperability, libraries still
  * need to be careful to avoid a name clashes.
  */

@@ -8,11 +8,11 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/mfd/88pm860x.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/regmap.h>
+#include <beep/mfd/88pm860x.h>
 
 int pm860x_reg_read(struct i2c_client *i2c, int reg)
 {

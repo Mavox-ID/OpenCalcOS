@@ -46,18 +46,18 @@
  *
  ************************************************************************
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/ctype.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/list.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/delay.h>
+#include <beep/ctype.h>
+#include <beep/blkdev.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/pci.h>
+#include <beep/list.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
 #include <asm/io.h>
 
 #include <scsi/scsi.h>

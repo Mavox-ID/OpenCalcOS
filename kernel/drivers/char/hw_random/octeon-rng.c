@@ -9,13 +9,13 @@
  * Copyright (C) 2009 Cavium Networks
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/device.h>
+#include <beep/hw_random.h>
+#include <beep/io.h>
+#include <beep/gfp.h>
 
 #include <asm/octeon/octeon.h>
 #include <asm/octeon/cvmx-rnm-defs.h>

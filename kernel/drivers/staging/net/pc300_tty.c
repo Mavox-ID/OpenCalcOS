@@ -36,20 +36,20 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/if.h>
-#include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/if.h>
+#include <beep/skbuff.h>
 /* TTY includes */
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial.h>
 
 #include <asm/io.h>
 #include <asm/uaccess.h>

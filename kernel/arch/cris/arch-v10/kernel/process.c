@@ -1,5 +1,5 @@
 /*
- *  linux/arch/cris/kernel/process.c
+ *  beep/arch/cris/kernel/process.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  *  Copyright (C) 2000-2002  Axis Communications AB
@@ -10,14 +10,14 @@
  * This file handles the architecture-dependent parts of process handling..
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/fs.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/fs.h>
 #include <arch/svinto.h>
-#include <linux/init.h>
+#include <beep/init.h>
 #include <arch/system.h>
-#include <linux/ptrace.h>
+#include <beep/ptrace.h>
 
 #ifdef CONFIG_ETRAX_GPIO
 void etrax_gpio_wake_up_check(void); /* drivers/gpio.c */

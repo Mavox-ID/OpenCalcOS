@@ -32,8 +32,8 @@
 #ifndef __IWCH_PROVIDER_H__
 #define __IWCH_PROVIDER_H__
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
 #include <rdma/ib_verbs.h>
 #include <asm/types.h>
 #include "t3cdev.h"

@@ -18,7 +18,7 @@ TODO:
 	- the driver is split into a Hermes II and a Hermes II.5 part, it
 	  would be nice to handle both with one module instead of two
 	- review by the wireless developer community
-	- verify the code against the coding standards for a proper linux
+	- verify the code against the coding standards for a proper beep
 	  driver
 	- resolve license issues (?)
 

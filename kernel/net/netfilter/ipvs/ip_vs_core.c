@@ -1,11 +1,11 @@
 /*
  * IPVS         An implementation of the IP virtual server support for the
- *              LINUX operating system.  IPVS is now implemented as a module
+ *              BEEP operating system.  IPVS is now implemented as a module
  *              over the Netfilter framework. IPVS can be used to build a
  *              high-performance and highly available server based on a
  *              cluster of servers.
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@beepvirtualserver.org>
  *              Peter Kese <peter.kese@ijs.si>
  *              Julian Anastasov <ja@ssi.bg>
  *
@@ -27,13 +27,13 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sctp.h>
-#include <linux/icmp.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/sctp.h>
+#include <beep/icmp.h>
+#include <beep/slab.h>
 
 #include <net/ip.h>
 #include <net/tcp.h>
@@ -43,12 +43,12 @@
 #include <net/ip6_checksum.h>
 #include <net/netns/generic.h>		/* net_generic() */
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv4.h>
 
 #ifdef CONFIG_IP_VS_IPV6
 #include <net/ipv6.h>
-#include <linux/netfilter_ipv6.h>
+#include <beep/netfilter_ipv6.h>
 #include <net/ip6_route.h>
 #endif
 

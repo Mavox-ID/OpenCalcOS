@@ -8,18 +8,18 @@
  * under the terms of the GNU General Public License version 2 as published by
  * the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/wm97xx.h>
-#include <linux/timer.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/wm97xx.h>
+#include <beep/timer.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 #define AC97C_ICA		0x10
 #define AC97C_CBRHR		0x30

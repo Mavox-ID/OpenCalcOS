@@ -8,8 +8,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
+#include <beep/fs.h>
+#include <beep/f2fs_fs.h>
 #include "f2fs.h"
 #include "node.h"
 #include "acl.h"

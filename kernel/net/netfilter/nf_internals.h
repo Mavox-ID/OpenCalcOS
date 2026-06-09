@@ -1,9 +1,9 @@
 #ifndef _NF_INTERNALS_H
 #define _NF_INTERNALS_H
 
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <beep/list.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
 
 #ifdef CONFIG_NETFILTER_DEBUG
 #define NFDEBUG(format, args...)  printk(KERN_DEBUG format , ## args)

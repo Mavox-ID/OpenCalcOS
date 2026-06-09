@@ -5,10 +5,10 @@
  * This source code is licensed under the GNU General Public License,
  * Version 2.  See the file COPYING for more details.
  */
-#include <linux/compiler.h>
-#include <linux/kexec.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
+#include <beep/compiler.h>
+#include <beep/kexec.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
 
 #include <asm/cacheflush.h>
 #include <asm/page.h>

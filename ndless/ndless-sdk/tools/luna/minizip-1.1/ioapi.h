@@ -10,8 +10,8 @@
 
          Changes
 
-    Oct-2009 - Defined ZPOS64_T to fpos_t on windows and u_int64_t on linux. (might need to find a better why for this)
-    Oct-2009 - Change to fseeko64, ftello64 and fopen64 so large files would work on linux.
+    Oct-2009 - Defined ZPOS64_T to fpos_t on windows and u_int64_t on beep. (might need to find a better why for this)
+    Oct-2009 - Change to fseeko64, ftello64 and fopen64 so large files would work on beep.
                More if/def section may be needed to support other platforms
     Oct-2009 - Defined fxxxx64 calls to normal fopen/ftell/fseek so they would compile on windows.
                           (but you should use iowin32.c for windows instead)
@@ -23,7 +23,7 @@
 
 #if (!defined(_WIN32)) && (!defined(WIN32))
 
-  // Linux needs this to support file operation on files larger then 4+GB
+  // Beep needs this to support file operation on files larger then 4+GB
   // But might need better if/def to select just the platforms that needs them.
 
         #ifndef __USE_FILE_OFFSET64

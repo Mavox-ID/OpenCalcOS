@@ -1,7 +1,7 @@
 #ifndef _ASM_X86_PGTABLE_64_H
 #define _ASM_X86_PGTABLE_64_H
 
-#include <linux/const.h>
+#include <beep/const.h>
 #include <asm/pgtable_64_types.h>
 
 #ifndef __ASSEMBLY__
@@ -11,8 +11,8 @@
  * the x86-64 page table tree.
  */
 #include <asm/processor.h>
-#include <linux/bitops.h>
-#include <linux/threads.h>
+#include <beep/bitops.h>
+#include <beep/threads.h>
 
 extern pud_t level3_kernel_pgt[512];
 extern pud_t level3_ident_pgt[512];

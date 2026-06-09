@@ -10,11 +10,11 @@
  * (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/of_regulator.h>
 
 static void of_get_regulation_constraints(struct device_node *np,
 					struct regulator_init_data **init_data)

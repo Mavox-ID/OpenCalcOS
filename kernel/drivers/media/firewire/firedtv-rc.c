@@ -9,13 +9,13 @@
  *	the License, or (at your option) any later version.
  */
 
-#include <linux/bitops.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <beep/bitops.h>
+#include <beep/input.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/workqueue.h>
 
 #include "firedtv.h"
 

@@ -9,25 +9,25 @@
  * Copyright 2000 Nicolas Pitre <nico@fluxnic.net>
  * Copyright 2005-2008 Analog Devices Inc.
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucbeep.org/
  *
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/types.h>
 
 #include <asm/blackfin.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
 #include <asm/unaligned.h>
 
 #define pr_devinit(fmt, args...) \

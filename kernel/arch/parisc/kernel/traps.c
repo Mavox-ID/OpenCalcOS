@@ -1,5 +1,5 @@
 /*
- *  linux/arch/parisc/traps.c
+ *  beep/arch/parisc/traps.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  Copyright (C) 1999, 2000  Philipp Rumpf <prumpf@tux.org>
@@ -10,21 +10,21 @@
  * state in 'asm.s'.
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/console.h>
-#include <linux/bug.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/smp.h>
+#include <beep/spinlock.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/console.h>
+#include <beep/bug.h>
 
 #include <asm/assembly.h>
 #include <asm/uaccess.h>
@@ -32,7 +32,7 @@
 #include <asm/irq.h>
 #include <asm/traps.h>
 #include <asm/unaligned.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/smp.h>
 #include <asm/pdc.h>
 #include <asm/pdc_chassis.h>

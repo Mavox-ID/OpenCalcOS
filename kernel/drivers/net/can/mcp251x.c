@@ -58,23 +58,23 @@
  *
  */
 
-#include <linux/can/core.h>
-#include <linux/can/dev.h>
-#include <linux/can/platform/mcp251x.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/freezer.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/uaccess.h>
+#include <beep/can/core.h>
+#include <beep/can/dev.h>
+#include <beep/can/platform/mcp251x.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/freezer.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/spi/spi.h>
+#include <beep/uaccess.h>
 
 /* SPI interface instruction set */
 #define INSTRUCTION_WRITE	0x02

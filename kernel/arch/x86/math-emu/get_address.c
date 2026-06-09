@@ -17,7 +17,7 @@
  |    other processes using the emulator while swapping is in progress.      |
  +---------------------------------------------------------------------------*/
 
-#include <linux/stddef.h>
+#include <beep/stddef.h>
 
 #include <asm/uaccess.h>
 #include <asm/desc.h>

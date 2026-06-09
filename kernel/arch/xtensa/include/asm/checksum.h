@@ -11,7 +11,7 @@
 #ifndef _XTENSA_CHECKSUM_H
 #define _XTENSA_CHECKSUM_H
 
-#include <linux/in6.h>
+#include <beep/in6.h>
 #include <variant/core.h>
 
 /*

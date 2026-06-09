@@ -2,13 +2,13 @@
  * Serverworks AGPGART routines.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/agp_backend.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/jiffies.h>
+#include <beep/agp_backend.h>
 #include "agp.h"
 
 #define SVWRKS_COMMAND		0x04

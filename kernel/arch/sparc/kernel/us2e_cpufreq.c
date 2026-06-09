@@ -6,15 +6,15 @@
  * infrastructure in order to make this driver easier to implement.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/cpufreq.h>
-#include <linux/threads.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/cpufreq.h>
+#include <beep/threads.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/init.h>
 
 #include <asm/asi.h>
 #include <asm/timer.h>

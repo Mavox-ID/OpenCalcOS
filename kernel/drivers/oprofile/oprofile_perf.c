@@ -4,10 +4,10 @@
  *
  * Perf-events backend for OProfile.
  */
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/oprofile.h>
-#include <linux/slab.h>
+#include <beep/perf_event.h>
+#include <beep/platform_device.h>
+#include <beep/oprofile.h>
+#include <beep/slab.h>
 
 /*
  * Per performance monitor configuration as set via oprofilefs.

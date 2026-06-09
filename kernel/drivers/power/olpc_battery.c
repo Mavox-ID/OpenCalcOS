@@ -8,16 +8,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/olpc-ec.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/err.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/power_supply.h>
+#include <beep/jiffies.h>
+#include <beep/sched.h>
+#include <beep/olpc-ec.h>
 #include <asm/olpc.h>
 
 

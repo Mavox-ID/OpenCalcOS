@@ -16,14 +16,14 @@
  * Copyright (c) 2005 Linas Vepstas <linas@linas.org>
  */
 
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/kthread.h>
+#include <beep/delay.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/kthread.h>
 #include <asm/eeh_event.h>
 #include <asm/ppc-pci.h>
 

@@ -17,20 +17,20 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/stacktrace.h>
-#include <linux/dma-debug.h>
-#include <linux/spinlock.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/export.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/ctype.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/scatterlist.h>
+#include <beep/dma-mapping.h>
+#include <beep/stacktrace.h>
+#include <beep/dma-debug.h>
+#include <beep/spinlock.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
+#include <beep/export.h>
+#include <beep/device.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/ctype.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 
 #include <asm/sections.h>
 

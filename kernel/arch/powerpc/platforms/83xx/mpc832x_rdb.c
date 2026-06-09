@@ -14,13 +14,13 @@
  * option) any later version.
  */
 
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/mmc_spi.h>
-#include <linux/mmc/host.h>
-#include <linux/of_platform.h>
-#include <linux/fsl_devices.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/mmc_spi.h>
+#include <beep/mmc/host.h>
+#include <beep/of_platform.h>
+#include <beep/fsl_devices.h>
 
 #include <asm/time.h>
 #include <asm/ipic.h>

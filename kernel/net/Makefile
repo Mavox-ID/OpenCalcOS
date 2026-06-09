@@ -1,5 +1,5 @@
 #
-# Makefile for the linux networking.
+# Makefile for the beep networking.
 #
 # 2 Sep 2000, Christoph Hellwig <hch@infradead.org>
 # Rewritten to use lists instead of if-statements.

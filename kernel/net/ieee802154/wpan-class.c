@@ -16,10 +16,10 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/device.h>
 
 #include <net/wpan-phy.h>
 

@@ -29,17 +29,17 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel_stat.h>
-#include <linux/usb.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/stddef.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel_stat.h>
+#include <beep/usb.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/moduleparam.h>
+#include <beep/slab.h>
 #include "hisax.h"
 #include "hisax_if.h"
 #include "hfc_usb.h"

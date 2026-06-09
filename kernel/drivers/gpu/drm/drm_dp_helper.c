@@ -20,13 +20,13 @@
  * OF THIS SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/i2c.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/i2c.h>
 #include <drm/drm_dp_helper.h>
 #include <drm/drmP.h>
 

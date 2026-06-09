@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-mmp/avengers_lite.c
+ *  beep/arch/arm/mach-mmp/avengers_lite.c
  *
  *  Support for the Marvell PXA168-based Avengers lite Development Platform.
  *
@@ -10,9 +10,9 @@
  *  publishhed by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -23,7 +23,7 @@
 
 
 #include "common.h"
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 /* Avengers lite MFP configurations */
 static unsigned long avengers_lite_pin_config_V16F[] __initdata = {

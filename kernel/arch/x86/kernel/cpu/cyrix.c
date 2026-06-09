@@ -1,12 +1,12 @@
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
 #include <asm/dma.h>
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/processor-cyrix.h>
 #include <asm/processor-flags.h>
-#include <linux/timer.h>
+#include <beep/timer.h>
 #include <asm/pci-direct.h>
 #include <asm/tsc.h>
 
@@ -367,7 +367,7 @@ static void __cpuinit init_nsc(struct cpuinfo_x86 *c)
 	 * after NSC acquired Cyrix.
 	 *
 	 * If this breaks your GX1 horribly, please e-mail
-	 * info-linux@ldcmail.amd.com to tell us.
+	 * info-beep@ldcmail.amd.com to tell us.
 	 */
 
 	/* Handle the GX (Formally known as the GX2) */

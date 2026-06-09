@@ -12,10 +12,10 @@
  *  by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/mipsregs.h>

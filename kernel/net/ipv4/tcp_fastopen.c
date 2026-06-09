@@ -1,10 +1,10 @@
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/tcp.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/tcp.h>
+#include <beep/rcupdate.h>
+#include <beep/rculist.h>
 #include <net/inetpeer.h>
 #include <net/tcp.h>
 

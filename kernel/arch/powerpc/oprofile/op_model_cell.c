@@ -14,16 +14,16 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/cpufreq.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/kthread.h>
-#include <linux/oprofile.h>
-#include <linux/percpu.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
+#include <beep/cpufreq.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/jiffies.h>
+#include <beep/kthread.h>
+#include <beep/oprofile.h>
+#include <beep/percpu.h>
+#include <beep/smp.h>
+#include <beep/spinlock.h>
+#include <beep/timer.h>
 #include <asm/cell-pmu.h>
 #include <asm/cputable.h>
 #include <asm/firmware.h>

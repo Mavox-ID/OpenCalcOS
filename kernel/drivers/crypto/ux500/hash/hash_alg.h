@@ -8,7 +8,7 @@
 #ifndef _HASH_ALG_H
 #define _HASH_ALG_H
 
-#include <linux/bitops.h>
+#include <beep/bitops.h>
 
 #define HASH_BLOCK_SIZE			64
 #define HASH_DMA_ALIGN_SIZE		4

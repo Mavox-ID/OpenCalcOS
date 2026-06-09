@@ -12,13 +12,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
+#include <beep/io.h>
 
-#include <linux/platform_data/mtd-nand-omap2.h>
-#include <linux/platform_data/mtd-onenand-omap2.h>
+#include <beep/platform_data/mtd-nand-omap2.h>
+#include <beep/platform_data/mtd-onenand-omap2.h>
 
 #include "soc.h"
 #include "common.h"

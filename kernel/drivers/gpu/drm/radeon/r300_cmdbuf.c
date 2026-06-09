@@ -1,4 +1,4 @@
-/* r300_cmdbuf.c -- Command buffer emission for R300 -*- linux-c -*-
+/* r300_cmdbuf.c -- Command buffer emission for R300 -*- beep-c -*-
  *
  * Copyright (C) The Weather Channel, Inc.  2002.
  * Copyright (C) 2004 Nicolai Haehnle.

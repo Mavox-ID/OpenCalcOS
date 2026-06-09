@@ -10,17 +10,17 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/clk-provider.h>
-#include <linux/clk/mvebu.h>
-#include <linux/kexec.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/clk-provider.h>
+#include <beep/clk/mvebu.h>
+#include <beep/kexec.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 #include <mach/bridge-regs.h>
-#include <linux/platform_data/usb-ehci-orion.h>
+#include <beep/platform_data/usb-ehci-orion.h>
 #include <plat/irq.h>
 #include <plat/common.h>
 #include "common.h"

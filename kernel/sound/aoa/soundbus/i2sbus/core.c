@@ -6,11 +6,11 @@
  * GPL v2, can be found in COPYING.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
 
 #include <sound/core.h>
 

@@ -19,17 +19,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/version.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/version.h>
 #include "pvrusb2-context.h"
 #include "pvrusb2-hdw.h"
 #include "pvrusb2.h"
 #include "pvrusb2-debug.h"
 #include "pvrusb2-v4l2.h"
 #include "pvrusb2-ioread.h"
-#include <linux/videodev2.h>
-#include <linux/module.h>
+#include <beep/videodev2.h>
+#include <beep/module.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
@@ -92,7 +92,7 @@ static struct v4l2_capability pvr_capability ={
 	.driver         = "pvrusb2",
 	.card           = "Hauppauge WinTV pvr-usb2",
 	.bus_info       = "usb",
-	.version        = LINUX_VERSION_CODE,
+	.version        = BEEP_VERSION_CODE,
 	.capabilities   = (V4L2_CAP_VIDEO_CAPTURE |
 			   V4L2_CAP_TUNER | V4L2_CAP_AUDIO | V4L2_CAP_RADIO |
 			   V4L2_CAP_READWRITE),
@@ -152,7 +152,7 @@ static struct v4l2_format pvr_format [] = {
 
 
 /*
- * This is part of Video 4 Linux API. These procedures handle ioctl() calls.
+ * This is part of Video 4 Beep API. These procedures handle ioctl() calls.
  */
 static int pvr2_querycap(struct file *file, void *priv, struct v4l2_capability *cap)
 {

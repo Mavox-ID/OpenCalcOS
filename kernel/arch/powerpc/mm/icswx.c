@@ -10,14 +10,14 @@
  *
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
 
 #include "icswx.h"
 

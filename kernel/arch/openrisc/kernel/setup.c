@@ -1,7 +1,7 @@
 /*
  * OpenRISC setup.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -17,28 +17,28 @@
  * This file handles the architecture-dependent parts of initialization
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/seq_file.h>
-#include <linux/serial.h>
-#include <linux/initrd.h>
-#include <linux/of_fdt.h>
-#include <linux/of.h>
-#include <linux/memblock.h>
-#include <linux/device.h>
-#include <linux/of_platform.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/seq_file.h>
+#include <beep/serial.h>
+#include <beep/initrd.h>
+#include <beep/of_fdt.h>
+#include <beep/of.h>
+#include <beep/memblock.h>
+#include <beep/device.h>
+#include <beep/of_platform.h>
 
 #include <asm/segment.h>
 #include <asm/pgtable.h>
@@ -48,7 +48,7 @@
 #include <asm/cpuinfo.h>
 #include <asm/delay.h>
 
-#include "vmlinux.h"
+#include "vmbeep.h"
 
 char __initdata cmd_line[COMMAND_LINE_SIZE] = CONFIG_CMDLINE;
 
@@ -318,7 +318,7 @@ void __init setup_arch(char **cmdline_p)
 
 	*cmdline_p = cmd_line;
 
-	printk(KERN_INFO "OpenRISC Linux -- http://openrisc.net\n");
+	printk(KERN_INFO "OpenRISC Beep -- http://openrisc.net\n");
 }
 
 static int show_cpuinfo(struct seq_file *m, void *v)

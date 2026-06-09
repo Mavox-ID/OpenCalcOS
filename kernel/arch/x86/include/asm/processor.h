@@ -22,14 +22,14 @@ struct mm_struct;
 #include <asm/nops.h>
 #include <asm/special_insns.h>
 
-#include <linux/personality.h>
-#include <linux/cpumask.h>
-#include <linux/cache.h>
-#include <linux/threads.h>
-#include <linux/math64.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/irqflags.h>
+#include <beep/personality.h>
+#include <beep/cpumask.h>
+#include <beep/cache.h>
+#include <beep/threads.h>
+#include <beep/math64.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/irqflags.h>
 
 /*
  * We handle most unaligned accesses in hardware.  On the other hand

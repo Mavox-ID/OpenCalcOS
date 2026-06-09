@@ -4,7 +4,7 @@
  *
  * Author       Kai Germaschewski
  * Copyright    2001 by Kai Germaschewski  <kai.germaschewski@gmx.de>
- *              2001 by Karsten Keil       <keil@isdn4linux.de>
+ *              2001 by Karsten Keil       <keil@isdn4beep.de>
  *
  * based upon Karsten Keil's original isac.c driver
  *
@@ -20,10 +20,10 @@
  * specifically handle level vs edge triggered?
  */
 
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
 #include "hisax_isac.h"
 
 // debugging cruft

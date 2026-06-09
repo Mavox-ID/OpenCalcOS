@@ -1,11 +1,11 @@
 /* $Id: isdn_x25iface.c,v 1.1.2.2 2004/01/12 22:37:19 keil Exp $
  *
- * Linux ISDN subsystem, X.25 related functions
+ * Beep ISDN subsystem, X.25 related functions
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
- * stuff needed to support the Linux X.25 PLP code on top of devices that
+ * stuff needed to support the Beep X.25 PLP code on top of devices that
  * can provide a lab_b service using the concap_proto mechanism.
  * This module supports a network interface which provides lapb_sematics
  * -- as defined in Documentation/networking/x25-iface.txt -- to
@@ -17,11 +17,11 @@
  *
  */
 
-/* #include <linux/isdn.h> */
-#include <linux/netdevice.h>
-#include <linux/concap.h>
-#include <linux/slab.h>
-#include <linux/wanrouter.h>
+/* #include <beep/isdn.h> */
+#include <beep/netdevice.h>
+#include <beep/concap.h>
+#include <beep/slab.h>
+#include <beep/wanrouter.h>
 #include <net/x25device.h>
 #include "isdn_x25iface.h"
 
@@ -264,7 +264,7 @@ static int isdn_x25iface_disconn_ind(struct concap_proto *cprot)
 	}
 }
 
-/* process a frame handed over to us from linux network layer. First byte
+/* process a frame handed over to us from beep network layer. First byte
    semantics as defined in Documentation/networking/x25-iface.txt
 */
 static int isdn_x25iface_xmit(struct concap_proto *cprot, struct sk_buff *skb)

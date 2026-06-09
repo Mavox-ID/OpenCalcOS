@@ -15,15 +15,15 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/thermal.h>
+#include <beep/clk.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/of.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/thermal.h>
 
 #define MD_FACTOR	1000
 

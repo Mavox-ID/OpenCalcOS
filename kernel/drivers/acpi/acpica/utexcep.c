@@ -42,7 +42,7 @@
  */
 
 #define ACPI_DEFINE_EXCEPTION_TABLE
-#include <linux/export.h>
+#include <beep/export.h>
 #include <acpi/acpi.h>
 #include "accommon.h"
 

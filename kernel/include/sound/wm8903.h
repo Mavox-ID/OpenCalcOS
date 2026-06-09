@@ -1,5 +1,5 @@
 /*
- * linux/sound/wm8903.h -- Platform data for WM8903
+ * beep/sound/wm8903.h -- Platform data for WM8903
  *
  * Copyright 2010 Wolfson Microelectronics. PLC.
  *
@@ -8,8 +8,8 @@
  * published by the Free Software Foundation.
  */
 
-#ifndef __LINUX_SND_WM8903_H
-#define __LINUX_SND_WM8903_H
+#ifndef __BEEP_SND_WM8903_H
+#define __BEEP_SND_WM8903_H
 
 /*
  * Used to enable configuration of a GPIO to all zeros; a gpio_cfg value of

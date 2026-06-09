@@ -2,7 +2,7 @@
  * fs/sysfs/file.c - sysfs regular (text) file implementation
  *
  * Copyright (c) 2001-3 Patrick Mochel
- * Copyright (c) 2007 SUSE Linux Products GmbH
+ * Copyright (c) 2007 SUSE Beep Products GmbH
  * Copyright (c) 2007 Tejun Heo <teheo@suse.de>
  *
  * This file is released under the GPLv2.
@@ -10,16 +10,16 @@
  * Please see Documentation/filesystems/sysfs.txt for more information.
  */
 
-#include <linux/module.h>
-#include <linux/kobject.h>
-#include <linux/kallsyms.h>
-#include <linux/slab.h>
-#include <linux/fsnotify.h>
-#include <linux/namei.h>
-#include <linux/poll.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/limits.h>
+#include <beep/module.h>
+#include <beep/kobject.h>
+#include <beep/kallsyms.h>
+#include <beep/slab.h>
+#include <beep/fsnotify.h>
+#include <beep/namei.h>
+#include <beep/poll.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/limits.h>
 #include <asm/uaccess.h>
 
 #include "sysfs.h"

@@ -10,11 +10,11 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/time.h>
+#include <beep/bcd.h>
+#include <beep/rtc.h>
+#include <beep/delay.h>
 
 #include <asm/opal.h>
 #include <asm/firmware.h>

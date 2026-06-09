@@ -9,13 +9,13 @@
  * Copyright (C) 2001 MIPS Technologies, Inc.
  * Copyright (C) 2007 by Thomas Bogendoerfer
  */
-#include <linux/eisa.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/console.h>
-#include <linux/screen_info.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
+#include <beep/eisa.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/console.h>
+#include <beep/screen_info.h>
+#include <beep/platform_device.h>
+#include <beep/serial_8250.h>
 
 #include <asm/jazz.h>
 #include <asm/jazzdma.h>

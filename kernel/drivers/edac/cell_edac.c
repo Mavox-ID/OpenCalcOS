@@ -9,12 +9,12 @@
  */
 #undef DEBUG
 
-#include <linux/edac.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/stop_machine.h>
-#include <linux/io.h>
+#include <beep/edac.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/stop_machine.h>
+#include <beep/io.h>
 #include <asm/machdep.h>
 #include <asm/cell-regs.h>
 

@@ -16,17 +16,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/usb/omap_usb.h>
-#include <linux/usb/phy_companion.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/pm_runtime.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/io.h>
+#include <beep/usb/omap_usb.h>
+#include <beep/usb/phy_companion.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/pm_runtime.h>
+#include <beep/delay.h>
 
 /**
  * omap_usb2_set_comparator - links the comparator present in the sytem with

@@ -24,8 +24,8 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/thermal.h>
+#include <beep/module.h>
+#include <beep/thermal.h>
 
 #include "thermal_core.h"
 

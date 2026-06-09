@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext4/ialloc.c
+ *  beep/fs/ext4/ialloc.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -12,16 +12,16 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/jbd2.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/quotaops.h>
-#include <linux/buffer_head.h>
-#include <linux/random.h>
-#include <linux/bitops.h>
-#include <linux/blkdev.h>
+#include <beep/time.h>
+#include <beep/fs.h>
+#include <beep/jbd2.h>
+#include <beep/stat.h>
+#include <beep/string.h>
+#include <beep/quotaops.h>
+#include <beep/buffer_head.h>
+#include <beep/random.h>
+#include <beep/bitops.h>
+#include <beep/blkdev.h>
 #include <asm/byteorder.h>
 
 #include "ext4.h"

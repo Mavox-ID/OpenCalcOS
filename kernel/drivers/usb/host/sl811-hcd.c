@@ -31,23 +31,23 @@
 #undef	VERBOSE
 #undef	PACKET_TRACE
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/usb/sl811.h>
-#include <linux/usb/hcd.h>
-#include <linux/platform_device.h>
-#include <linux/prefetch.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/usb.h>
+#include <beep/usb/sl811.h>
+#include <beep/usb/hcd.h>
+#include <beep/platform_device.h>
+#include <beep/prefetch.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -1367,8 +1367,8 @@ static inline void remove_debug_file(struct sl811 *sl811) { }
 
 #else
 
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 
 static void dump_irq(struct seq_file *s, char *label, u8 mask)
 {

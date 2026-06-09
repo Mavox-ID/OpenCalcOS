@@ -1,7 +1,7 @@
-#include <linux/types.h>
-#include <linux/atmmpc.h>
-#include <linux/slab.h>
-#include <linux/time.h>
+#include <beep/types.h>
+#include <beep/atmmpc.h>
+#include <beep/slab.h>
+#include <beep/time.h>
 
 #include "mpoa_caches.h"
 #include "mpc.h"

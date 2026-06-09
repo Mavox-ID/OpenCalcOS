@@ -1,7 +1,7 @@
 /*
  *    ESCON CLAW network driver
  *
- *  Linux for zSeries version
+ *  Beep for zSeries version
  *    Copyright IBM Corp. 2002, 2009
  *  Author(s) Original code written by:
  *		Kazuo Iimura <iimura@jp.ibm.com>
@@ -21,7 +21,7 @@
  *   group  0.0.0200 0.0.0201
  *   read_buffer 25
  *   write_buffer 20
- *   host_name LINUX390
+ *   host_name BEEP390
  *   adapter_name RS6K
  *   api_type     TCPIP
  *
@@ -67,27 +67,27 @@
 #include <asm/debug.h>
 #include <asm/idals.h>
 #include <asm/io.h>
-#include <linux/bitops.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/tcp.h>
-#include <linux/timer.h>
-#include <linux/types.h>
+#include <beep/bitops.h>
+#include <beep/ctype.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/if_arp.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ip.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/proc_fs.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/tcp.h>
+#include <beep/timer.h>
+#include <beep/types.h>
 
 #include "claw.h"
 
@@ -3376,6 +3376,6 @@ module_init(claw_init);
 module_exit(claw_cleanup);
 
 MODULE_AUTHOR("Andy Richter <richtera@us.ibm.com>");
-MODULE_DESCRIPTION("Linux for System z CLAW Driver\n" \
+MODULE_DESCRIPTION("Beep for System z CLAW Driver\n" \
 			"Copyright IBM Corp. 2000, 2008\n");
 MODULE_LICENSE("GPL");

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/cache-v6.S
+ *  beep/arch/arm/mm/cache-v6.S
  *
  *  Copyright (C) 2001 Deep Blue Solutions Ltd.
  *
@@ -9,8 +9,8 @@
  *
  *  This is the "shell" of the ARMv6 processor support.
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/assembler.h>
 #include <asm/errno.h>
 #include <asm/unwind.h>

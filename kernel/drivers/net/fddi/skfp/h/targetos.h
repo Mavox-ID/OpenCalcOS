@@ -21,14 +21,14 @@
 #define TARGETOS_H
 
 
-//-------- those should go into include/linux/pci.h
+//-------- those should go into include/beep/pci.h
 #define PCI_VENDOR_ID_SK		0x1148
 #define PCI_DEVICE_ID_SK_FP		0x4000
 //--------
 
 
 
-//-------- those should go into include/linux/if_fddi.h
+//-------- those should go into include/beep/if_fddi.h
 #define FDDI_MAC_HDR_LEN 13
 
 #define FDDI_RII	0x01 /* routing information bit */
@@ -44,13 +44,13 @@
 #undef ADDR
 
 #include <asm/io.h>
-#include <linux/netdevice.h>
-#include <linux/fddidevice.h>
-#include <linux/skbuff.h>
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <beep/netdevice.h>
+#include <beep/fddidevice.h>
+#include <beep/skbuff.h>
+#include <beep/pci.h>
+#include <beep/init.h>
 
-// is redefined by linux, but we need our definition
+// is redefined by beep, but we need our definition
 #undef ADDR
 #ifdef MEM_MAPPED_IO
 #define	ADDR(a) (smc->hw.iop+(a))
@@ -103,7 +103,7 @@
 /*
 ** Include the IOCTL stuff
 */
-#include <linux/sockios.h>
+#include <beep/sockios.h>
 
 #define	SKFPIOCTL	SIOCDEVPRIVATE
 

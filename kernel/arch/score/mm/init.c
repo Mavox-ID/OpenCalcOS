@@ -23,17 +23,17 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/errno.h>
-#include <linux/bootmem.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>
-#include <linux/initrd.h>
+#include <beep/errno.h>
+#include <beep/bootmem.h>
+#include <beep/kernel.h>
+#include <beep/gfp.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/pagemap.h>
+#include <beep/proc_fs.h>
+#include <beep/sched.h>
+#include <beep/initrd.h>
 
 #include <asm/sections.h>
 #include <asm/tlb.h>

@@ -1,6 +1,6 @@
 #ifndef _ASM_SECCOMP_H
 
-#include <linux/unistd.h>
+#include <beep/unistd.h>
 
 #define __NR_seccomp_read __NR_read
 #define __NR_seccomp_write __NR_write

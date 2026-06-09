@@ -6,14 +6,14 @@
  *  Author(s): Arnd Bergmann (arndb@de.ibm.com)
  *	       Cornelia Huck (cornelia.huck@de.ibm.com)
  */
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/ctype.h>
-#include <linux/dcache.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/ctype.h>
+#include <beep/dcache.h>
 
 #include <asm/cio.h>
 #include <asm/ccwdev.h>
@@ -23,7 +23,7 @@
 
 #define CCW_BUS_ID_SIZE		10
 
-/* In Linux 2.4, we had a channel device layer called "chandev"
+/* In Beep 2.4, we had a channel device layer called "chandev"
  * that did all sorts of obscure stuff for networking devices.
  * This is another driver that serves as a replacement for just
  * one of its functions, namely the translation of single subchannels

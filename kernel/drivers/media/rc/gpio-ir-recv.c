@@ -10,14 +10,14 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
 #include <media/rc-core.h>
 #include <media/gpio-ir-recv.h>
 

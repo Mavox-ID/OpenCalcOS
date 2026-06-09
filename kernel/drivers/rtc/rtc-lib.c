@@ -11,8 +11,8 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
 
 static const unsigned char rtc_days_in_month[] = {
 	31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31

@@ -10,11 +10,11 @@
  * of the GNU General Public License, incorporated herein by reference.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/poll.h>
+#include <beep/mutex.h>
 #include <asm/uaccess.h>
 
 #include "platform.h"

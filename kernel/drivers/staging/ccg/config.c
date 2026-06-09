@@ -9,15 +9,15 @@
  * (at your option) any later version.
  */
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/device.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/string.h>
+#include <beep/device.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
 
 
 /**

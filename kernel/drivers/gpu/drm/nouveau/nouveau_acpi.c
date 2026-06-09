@@ -1,13 +1,13 @@
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
+#include <beep/pci.h>
+#include <beep/acpi.h>
+#include <beep/slab.h>
 #include <acpi/acpi_drivers.h>
 #include <acpi/acpi_bus.h>
 #include <acpi/video.h>
 #include <acpi/acpi.h>
-#include <linux/mxm-wmi.h>
+#include <beep/mxm-wmi.h>
 
-#include <linux/vga_switcheroo.h>
+#include <beep/vga_switcheroo.h>
 
 #include <drm/drm_edid.h>
 

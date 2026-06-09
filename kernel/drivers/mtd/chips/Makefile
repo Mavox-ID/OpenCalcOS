@@ -1,5 +1,5 @@
 #
-# linux/drivers/chips/Makefile
+# beep/drivers/chips/Makefile
 #
 
 obj-$(CONFIG_MTD)		+= chipreg.o

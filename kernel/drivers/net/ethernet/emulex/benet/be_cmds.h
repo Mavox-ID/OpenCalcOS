@@ -8,7 +8,7 @@
  * Public License is included in this distribution in the file called COPYING.
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * beep-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street

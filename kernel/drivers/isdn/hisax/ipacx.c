@@ -9,9 +9,9 @@
  * of the GNU General Public License, incorporated herein by reference.
  *
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
 #include "hisax_if.h"
 #include "hisax.h"
 #include "isdnl1.h"

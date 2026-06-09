@@ -12,8 +12,8 @@
 /*
  * User space memory access functions
  */
-#include <linux/sched.h>
-#include <linux/errno.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
 #include <asm/ctl_reg.h>
 
 #define VERIFY_READ     0

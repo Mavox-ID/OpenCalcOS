@@ -20,11 +20,11 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/pnp.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/pnp.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/mpu401.h>
 #include <sound/initval.h>

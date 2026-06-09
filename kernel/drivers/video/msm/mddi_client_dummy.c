@@ -15,12 +15,12 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
 
-#include <linux/platform_data/video-msm_fb.h>
+#include <beep/platform_data/video-msm_fb.h>
 
 struct panel_info {
 	struct platform_device pdev;

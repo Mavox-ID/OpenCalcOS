@@ -13,7 +13,7 @@ Devices: [Adlink] ACL-7225b (acl7225b), [ICP] P16R16DIO (p16r16dio)
 
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 #define ACL7225_SIZE   8	/* Requires 8 ioports, but only 4 are used */
 #define P16R16DIO_SIZE 4

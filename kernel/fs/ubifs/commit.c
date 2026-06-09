@@ -43,9 +43,9 @@
  * cache.
  */
 
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <beep/freezer.h>
+#include <beep/kthread.h>
+#include <beep/slab.h>
 #include "ubifs.h"
 
 /*

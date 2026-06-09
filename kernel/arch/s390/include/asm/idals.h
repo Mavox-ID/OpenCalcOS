@@ -1,7 +1,7 @@
 /* 
  * Author(s)......: Holger Smolinski <Holger.Smolinski@de.ibm.com>
  *		    Martin Schwidefsky <schwidefsky@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <Beep390@de.ibm.com>
  * Copyright IBM Corp. 2000
  *
  * History of changes
@@ -12,10 +12,10 @@
 #ifndef _S390_IDALS_H
 #define _S390_IDALS_H
 
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/types.h>
+#include <beep/slab.h>
 #include <asm/cio.h>
 #include <asm/uaccess.h>
 

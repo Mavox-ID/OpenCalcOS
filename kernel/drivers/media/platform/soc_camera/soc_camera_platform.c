@@ -10,12 +10,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-subdev.h>
 #include <media/soc_camera.h>
 #include <media/soc_camera_platform.h>

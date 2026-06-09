@@ -16,8 +16,8 @@
 
 #include "dm-bufio.h"
 
-#include <linux/module.h>
-#include <linux/device-mapper.h>
+#include <beep/module.h>
+#include <beep/device-mapper.h>
 #include <crypto/hash.h>
 
 #define DM_MSG_PREFIX			"verity"

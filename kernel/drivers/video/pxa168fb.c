@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/pxa168fb.c -- Marvell PXA168 LCD Controller
+ * beep/drivers/video/pxa168fb.c -- Marvell PXA168 LCD Controller
  *
  *  Copyright (C) 2008 Marvell International Ltd.
  *  All rights reserved.
@@ -12,22 +12,22 @@
  * more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/fb.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/uaccess.h>
 #include <video/pxa168fb.h>
 
 #include "pxa168fb.h"
@@ -250,7 +250,7 @@ static void set_clock_divider(struct pxa168fb_info *fbi,
 	u32 x = 0;
 
 	/*
-	 * Notice: The field pixclock is used by linux fb
+	 * Notice: The field pixclock is used by beep fb
 	 * is in pixel second. E.g. struct fb_videomode &
 	 * struct fb_var_screeninfo
 	 */

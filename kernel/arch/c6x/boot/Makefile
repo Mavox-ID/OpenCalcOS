@@ -2,9 +2,9 @@
 # Makefile for bootable kernel images
 #
 
-OBJCOPYFLAGS_vmlinux.bin := -O binary
-$(obj)/vmlinux.bin: vmlinux FORCE
+OBJCOPYFLAGS_vmbeep.bin := -O binary
+$(obj)/vmbeep.bin: vmbeep FORCE
 	$(call if_changed,objcopy)
 
-$(obj)/dtbImage.%: vmlinux
+$(obj)/dtbImage.%: vmbeep
 	$(call if_changed,objcopy)

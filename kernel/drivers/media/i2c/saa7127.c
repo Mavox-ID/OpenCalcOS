@@ -12,7 +12,7 @@
  *
  * Copyright (C) 1999 Nathan Laredo <laredo@gnu.org>
  *
- * This driver is designed for the Hauppauge 250/350 Linux driver
+ * This driver is designed for the Hauppauge 250/350 Beep driver
  * from the ivtv Project
  *
  * Copyright (C) 2003 Kevin Thayer <nufan_wfk@yahoo.com>
@@ -48,11 +48,11 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-chip-ident.h>
 #include <media/saa7127.h>

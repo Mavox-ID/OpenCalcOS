@@ -11,7 +11,7 @@
 
 
 /*
- * These five resource limit IDs have a MIPS/Linux-specific ordering,
+ * These five resource limit IDs have a MIPS/Beep-specific ordering,
  * the rest comes from the generic header:
  */
 #define RLIMIT_NOFILE		5	/* max number of open files */

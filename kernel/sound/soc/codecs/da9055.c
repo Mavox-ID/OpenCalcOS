@@ -13,11 +13,11 @@
  * option) any later version.
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/regmap.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

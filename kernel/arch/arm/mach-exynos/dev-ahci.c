@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-exynos4/dev-ahci.c
+/* beep/arch/arm/mach-exynos4/dev-ahci.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -10,11 +10,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/ahci_platform.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/ahci_platform.h>
 
 #include <plat/cpu.h>
 

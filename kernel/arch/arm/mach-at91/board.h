@@ -31,7 +31,7 @@
 #ifndef __ASM_ARCH_BOARD_H
 #define __ASM_ARCH_BOARD_H
 
-#include <linux/platform_data/atmel.h>
+#include <beep/platform_data/atmel.h>
 
  /* USB Device */
 extern void __init at91_add_device_udc(struct at91_udc_data *data);

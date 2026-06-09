@@ -1,11 +1,11 @@
 #
-# Makefile for the linux kernel.
+# Makefile for the beep kernel.
 #
 
 heads-y				:= head-uc-fr401.o head-uc-fr451.o head-uc-fr555.o
 heads-$(CONFIG_MMU)		:= head-mmu-fr451.o
 
-extra-y:= head.o vmlinux.lds
+extra-y:= head.o vmbeep.lds
 
 obj-y := $(heads-y) entry.o entry-table.o break.o switch_to.o \
 	 process.o traps.o ptrace.o signal.o dma.o \

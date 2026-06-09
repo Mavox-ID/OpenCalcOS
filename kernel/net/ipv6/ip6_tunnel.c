@@ -1,13 +1,13 @@
 /*
  *	IPv6 tunneling device
- *	Linux INET6 implementation
+ *	Beep INET6 implementation
  *
  *	Authors:
  *	Ville Nuorvala		<vnuorval@tcs.hut.fi>
- *	Yasuyuki Kozakai	<kozakai@linux-ipv6.org>
+ *	Yasuyuki Kozakai	<kozakai@beep-ipv6.org>
  *
  *      Based on:
- *      linux/net/ipv6/sit.c and linux/net/ipv4/ipip.c
+ *      beep/net/ipv6/sit.c and beep/net/ipv4/ipip.c
  *
  *      RFC 2473
  *
@@ -20,30 +20,30 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/sockios.h>
-#include <linux/icmp.h>
-#include <linux/if.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/if_tunnel.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/icmpv6.h>
-#include <linux/init.h>
-#include <linux/route.h>
-#include <linux/rtnetlink.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/slab.h>
-#include <linux/hash.h>
+#include <beep/module.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/sockios.h>
+#include <beep/icmp.h>
+#include <beep/if.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/if_tunnel.h>
+#include <beep/net.h>
+#include <beep/in6.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/icmpv6.h>
+#include <beep/init.h>
+#include <beep/route.h>
+#include <beep/rtnetlink.h>
+#include <beep/netfilter_ipv6.h>
+#include <beep/slab.h>
+#include <beep/hash.h>
 
 #include <asm/uaccess.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include <net/icmp.h>
 #include <net/ip.h>

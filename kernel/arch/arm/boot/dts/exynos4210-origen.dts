@@ -29,7 +29,7 @@
 	};
 
 	chosen {
-		bootargs ="root=/dev/ram0 rw ramdisk=8192 initrd=0x41000000,8M console=ttySAC2,115200 init=/linuxrc";
+		bootargs ="root=/dev/ram0 rw ramdisk=8192 initrd=0x41000000,8M console=ttySAC2,115200 init=/beeprc";
 	};
 
 	mmc_reg: voltage-regulator {
@@ -81,35 +81,35 @@
 		up {
 			label = "Up";
 			gpios = <&gpx2 0 1>;
-			linux,code = <103>;
+			beep,code = <103>;
 			gpio-key,wakeup;
 		};
 
 		down {
 			label = "Down";
 			gpios = <&gpx2 1 1>;
-			linux,code = <108>;
+			beep,code = <108>;
 			gpio-key,wakeup;
 		};
 
 		back {
 			label = "Back";
 			gpios = <&gpx1 7 1>;
-			linux,code = <158>;
+			beep,code = <158>;
 			gpio-key,wakeup;
 		};
 
 		home {
 			label = "Home";
 			gpios = <&gpx1 6 1>;
-			linux,code = <102>;
+			beep,code = <102>;
 			gpio-key,wakeup;
 		};
 
 		menu {
 			label = "Menu";
 			gpios = <&gpx1 5 1>;
-			linux,code = <139>;
+			beep,code = <139>;
 			gpio-key,wakeup;
 		};
 	};
@@ -118,7 +118,7 @@
 		compatible = "gpio-leds";
 		status {
 			gpios = <&gpx1 3 1>;
-			linux,default-trigger = "heartbeat";
+			beep,default-trigger = "heartbeat";
 		};
 	};
 };

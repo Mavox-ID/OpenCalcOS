@@ -4,7 +4,7 @@
  *  -- paulus
  *
  *  Derived from arch/ppc/mm/init.c:
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -20,22 +20,22 @@
  *
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/stddef.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/memblock.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/stddef.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/highmem.h>
+#include <beep/memblock.h>
 
 #include <asm/pgalloc.h>
 #include <asm/prom.h>

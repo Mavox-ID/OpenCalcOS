@@ -6,13 +6,13 @@
  * Licensed under GPLv2 or later.
  */
 
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <beep/kernel.h>
+#include <beep/mutex.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
 
 void __iomem *sirfsoc_rstc_base;
 static DEFINE_MUTEX(rstc_lock);

@@ -9,15 +9,15 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/device.h>
+#include <beep/io.h>
 #include <asm/div64.h>
 
 #include <mach/regs-clock.h>

@@ -24,19 +24,19 @@
  ******************************************************************************/
 
 #include <asm/page.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/usb/ch9.h>
-#include <linux/workqueue.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/firmware.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/timer.h>
+#include <beep/types.h>
+#include <beep/usb/ch9.h>
+#include <beep/workqueue.h>
 
 #include "usbatm.h"
 

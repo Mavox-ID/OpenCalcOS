@@ -11,14 +11,14 @@
  *  by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/usb/ehci_pdriver.h>
-#include <linux/usb/ohci_pdriver.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/usb/ehci_pdriver.h>
+#include <beep/usb/ohci_pdriver.h>
 
 #include <asm/mach-ath79/ath79.h>
 #include <asm/mach-ath79/ar71xx_regs.h>

@@ -9,21 +9,21 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 #include <asm/io.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>
 #include "hisax_cfg.h"
 
-MODULE_DESCRIPTION("ISDN4Linux: PCMCIA client driver for AVM A1/Fritz!PCMCIA cards");
+MODULE_DESCRIPTION("ISDN4Beep: PCMCIA client driver for AVM A1/Fritz!PCMCIA cards");
 MODULE_AUTHOR("Carsten Paeth");
 MODULE_LICENSE("GPL");
 

@@ -7,12 +7,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/perf_event.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
+#include <beep/perf_event.h>
 
 #include <asm/uaccess.h>
 #include <asm/processor.h>

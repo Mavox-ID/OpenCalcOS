@@ -11,11 +11,11 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_clock.h>
+#include <beep/console.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/pm.h>
+#include <beep/pm_clock.h>
 #include <asm/io.h>
 #include <mach/pm-rmobile.h>
 

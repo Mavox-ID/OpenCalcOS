@@ -36,20 +36,20 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/dwc3-omap.h>
-#include <linux/dma-mapping.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/platform_device.h>
+#include <beep/platform_data/dwc3-omap.h>
+#include <beep/dma-mapping.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
+#include <beep/of.h>
 
-#include <linux/usb/otg.h>
-#include <linux/usb/nop-usb-xceiv.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/nop-usb-xceiv.h>
 
 #include "core.h"
 

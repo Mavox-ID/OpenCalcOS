@@ -23,20 +23,20 @@
  * Whitney point.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/stddef.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/irqdomain.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/stddef.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
+#include <beep/irqdomain.h>
 
 /*
  * Langwell chip has 64 pins and thus there are 2 32bit registers to control

@@ -10,7 +10,7 @@
 #ifndef __ASM_ARM_HARDWARE_GIC_H
 #define __ASM_ARM_HARDWARE_GIC_H
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 #define GIC_CPU_CTRL			0x00
 #define GIC_CPU_PRIMASK			0x04
@@ -33,7 +33,7 @@
 #define GIC_DIST_SOFTINT		0xf00
 
 #ifndef __ASSEMBLY__
-#include <linux/irqdomain.h>
+#include <beep/irqdomain.h>
 struct device_node;
 
 extern struct irq_chip gic_arch_extn;

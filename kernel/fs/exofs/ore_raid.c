@@ -13,8 +13,8 @@
  *	"Free Software Foundation <info@fsf.org>"
  */
 
-#include <linux/gfp.h>
-#include <linux/async_tx.h>
+#include <beep/gfp.h>
+#include <beep/async_tx.h>
 
 #include "ore_raid.h"
 

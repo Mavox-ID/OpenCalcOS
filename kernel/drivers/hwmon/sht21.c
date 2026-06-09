@@ -20,16 +20,16 @@
  * http://www.sensirion.com/en/pdf/product_information/Datasheet-humidity-sensor-SHT21.pdf
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/jiffies.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/device.h>
+#include <beep/jiffies.h>
 
 /* I2C command bytes */
 #define SHT21_TRIG_T_MEASUREMENT_HM  0xe3

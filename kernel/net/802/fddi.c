@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -26,19 +26,19 @@
  *		Maciej W. Rozycki	:	IPv6 support
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/fddidevice.h>
-#include <linux/if_ether.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/inet.h>
+#include <beep/netdevice.h>
+#include <beep/fddidevice.h>
+#include <beep/if_ether.h>
+#include <beep/skbuff.h>
+#include <beep/errno.h>
 #include <net/arp.h>
 #include <net/sock.h>
 

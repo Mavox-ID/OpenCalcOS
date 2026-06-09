@@ -27,15 +27,15 @@
 #ifndef R2CLUSTER_TCP_H
 #define R2CLUSTER_TCP_H
 
-#include <linux/socket.h>
+#include <beep/socket.h>
 #ifdef __KERNEL__
 #include <net/sock.h>
-#include <linux/tcp.h>
+#include <beep/tcp.h>
 #else
 #include <sys/socket.h>
 #endif
-#include <linux/inet.h>
-#include <linux/in.h>
+#include <beep/inet.h>
+#include <beep/in.h>
 
 struct r2net_msg {
 	__be16 magic;

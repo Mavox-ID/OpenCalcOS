@@ -14,8 +14,8 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 
 #include "u_serial.h"
 
@@ -28,7 +28,7 @@
  * DO NOT REUSE THESE IDs with a protocol-incompatible driver!!  Ever!!
  * Instead:  allocate your own, using normal USB-IF procedures.
  */
-#define ACM_MS_VENDOR_NUM	0x1d6b	/* Linux Foundation */
+#define ACM_MS_VENDOR_NUM	0x1d6b	/* Beep Foundation */
 #define ACM_MS_PRODUCT_NUM	0x0106	/* Composite Gadget: ACM + MS*/
 
 /*-------------------------------------------------------------------------*/

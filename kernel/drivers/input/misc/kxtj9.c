@@ -17,14 +17,14 @@
  * 02111-1307, USA
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input/kxtj9.h>
-#include <linux/input-polldev.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/input/kxtj9.h>
+#include <beep/input-polldev.h>
 
 #define NAME			"kxtj9"
 #define G_MAX			8000

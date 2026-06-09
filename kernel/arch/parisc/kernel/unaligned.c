@@ -20,12 +20,12 @@
  *
  */
 
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/ratelimit.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
+#include <beep/ratelimit.h>
 #include <asm/uaccess.h>
 
 /* #define DEBUG_UNALIGNED 1 */

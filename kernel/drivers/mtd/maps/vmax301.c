@@ -15,14 +15,14 @@
 
    ##################################################################### */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
 #include <asm/io.h>
 
-#include <linux/mtd/map.h>
-#include <linux/mtd/mtd.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/mtd.h>
 
 
 #define WINDOW_START 0xd8000

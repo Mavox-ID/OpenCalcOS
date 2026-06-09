@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-msm/dma.c
+/* beep/arch/arm/mach-msm/dma.c
  *
  * Copyright (C) 2007 Google, Inc.
  *
@@ -13,11 +13,11 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/completion.h>
 #include <mach/dma.h>
 
 #define MSM_DMOV_CHANNEL_COUNT 16

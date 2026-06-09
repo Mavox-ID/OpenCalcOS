@@ -12,9 +12,9 @@
  * eliminate duplicate messages.)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kprobes.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/kprobes.h>
 
 /*
  * Jumper probe for do_fork.

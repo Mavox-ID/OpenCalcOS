@@ -23,20 +23,20 @@
  * address memory reservations must avoid this region.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/resource.h>
-#include <linux/serial_reg.h>
-#include <linux/io.h>
-#include <linux/bootmem.h>
-#include <linux/mm.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/resource.h>
+#include <beep/serial_reg.h>
+#include <beep/io.h>
+#include <beep/bootmem.h>
+#include <beep/mm.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
 #include <asm/page.h>
-#include <linux/swap.h>
-#include <linux/highmem.h>
-#include <linux/dma-mapping.h>
+#include <beep/swap.h>
+#include <beep/highmem.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/mach-powertv/asic.h>
 #include <asm/mach-powertv/asic_regs.h>

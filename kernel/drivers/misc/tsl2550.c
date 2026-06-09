@@ -1,7 +1,7 @@
 /*
- *  tsl2550.c - Linux kernel modules for ambient light sensor
+ *  tsl2550.c - Beep kernel modules for ambient light sensor
  *
- *  Copyright (C) 2007 Rodolfo Giometti <giometti@linux.it>
+ *  Copyright (C) 2007 Rodolfo Giometti <giometti@beep.it>
  *  Copyright (C) 2007 Eurotech S.p.A. <info@eurotech.it>
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -19,11 +19,11 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
 
 #define TSL2550_DRV_NAME	"tsl2550"
 #define DRIVER_VERSION		"1.2"
@@ -456,7 +456,7 @@ static struct i2c_driver tsl2550_driver = {
 
 module_i2c_driver(tsl2550_driver);
 
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
+MODULE_AUTHOR("Rodolfo Giometti <giometti@beep.it>");
 MODULE_DESCRIPTION("TSL2550 ambient light sensor driver");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(DRIVER_VERSION);

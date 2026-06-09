@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/include/asm/pmu.h
+ *  beep/arch/arm/include/asm/pmu.h
  *
  *  Copyright (C) 2009 picoChip Designs Ltd, Jamie Iles
  *
@@ -12,8 +12,8 @@
 #ifndef __ARM_PMU_H__
 #define __ARM_PMU_H__
 
-#include <linux/interrupt.h>
-#include <linux/perf_event.h>
+#include <beep/interrupt.h>
+#include <beep/perf_event.h>
 
 /*
  * struct arm_pmu_platdata - ARM PMU platform data

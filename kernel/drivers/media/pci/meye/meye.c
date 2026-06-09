@@ -1,15 +1,15 @@
 /*
- * Motion Eye video4linux driver for Sony Vaio PictureBook
+ * Motion Eye video4beep driver for Sony Vaio PictureBook
  *
  * Copyright (C) 2001-2004 Stelian Pop <stelian@popies.net>
  *
  * Copyright (C) 2001-2002 Alcôve <www.alcove.com>
  *
- * Copyright (C) 2000 Andrew Tridgell <tridge@valinux.com>
+ * Copyright (C) 2000 Andrew Tridgell <tridge@vabeep.com>
  *
  * Earlier work by Werner Almesberger, Paul `Rusty' Russell and Paul Mackerras.
  *
- * Some parts borrowed from various video4linux drivers, especially
+ * Some parts borrowed from various video4beep drivers, especially
  * bttv-driver.c and zoran.c, see original files for credits.
  *
  * This program is free software; you can redistribute it and/or modify
@@ -26,24 +26,24 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/videodev2.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/gfp.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <asm/uaccess.h>
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/vmalloc.h>
+#include <beep/dma-mapping.h>
 
 #include "meye.h"
-#include <linux/meye.h>
+#include <beep/meye.h>
 
 MODULE_AUTHOR("Stelian Pop <stelian@popies.net>");
 MODULE_DESCRIPTION("v4l2 driver for the MotionEye camera");
@@ -843,7 +843,7 @@ again:
 }
 
 /****************************************************************************/
-/* video4linux integration                                                  */
+/* video4beep integration                                                  */
 /****************************************************************************/
 
 static int meye_open(struct file *file)

@@ -50,7 +50,7 @@
  * - Added compare_gpts().
  * - moved le_efi_guid_to_cpus() back into this file.  GPT is the only
  *   thing that keeps EFI GUIDs on disk.
- * - Changed gpt structure names and members to be simpler and more Linux-like.
+ * - Changed gpt structure names and members to be simpler and more Beep-like.
  * 
  * Wed Oct 17 2001 Matt Domsch <Matt_Domsch@dell.com>
  * - Removed CONFIG_DEVFS_VOLUMES_UUID code entirely per Martin Wilck
@@ -79,7 +79,7 @@
  *   mounting file systems by the partition GUID. 
  *
  * Tue Dec  5 2000 Matt Domsch <Matt_Domsch@dell.com>
- * - Moved crc32() to linux/lib, added efi_crc32().
+ * - Moved crc32() to beep/lib, added efi_crc32().
  *
  * Thu Nov 30 2000 Matt Domsch <Matt_Domsch@dell.com>
  * - Replaced Intel's CRC32 function with an equivalent
@@ -93,10 +93,10 @@
  * - Code works, detects all the partitions.
  *
  ************************************************************/
-#include <linux/crc32.h>
-#include <linux/ctype.h>
-#include <linux/math64.h>
-#include <linux/slab.h>
+#include <beep/crc32.h>
+#include <beep/ctype.h>
+#include <beep/math64.h>
+#include <beep/slab.h>
 #include "check.h"
 #include "efi.h"
 
@@ -606,7 +606,7 @@ static int find_valid_gpt(struct parsed_partitions *state, gpt_header **gpt,
  * it will get handled by msdos_partition().
  * If it's a Protective MBR, we'll handle it here.
  *
- * We do not create a Linux partition for GPT, but
+ * We do not create a Beep partition for GPT, but
  * only for the actual data partitions.
  * Returns:
  * -1 if unable to read the partition table
@@ -644,7 +644,7 @@ int efi_partition(struct parsed_partitions *state)
 
 		/* If this is a RAID volume, tell md */
 		if (!efi_guidcmp(ptes[i].partition_type_guid,
-				 PARTITION_LINUX_RAID_GUID))
+				 PARTITION_BEEP_RAID_GUID))
 			state->parts[i + 1].flags = ADDPART_FLAG_RAID;
 
 		info = &state->parts[i + 1].info;

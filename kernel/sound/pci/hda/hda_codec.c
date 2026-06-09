@@ -19,13 +19,13 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include "hda_codec.h"
 #include <sound/asoundef.h>

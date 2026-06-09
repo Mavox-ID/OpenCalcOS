@@ -19,10 +19,10 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/hardirq.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/irq.h>
+#include <beep/hardirq.h>
+#include <beep/interrupt.h>
 #include <asm/mipsregs.h>
 #include <asm/irq_cpu.h>
 #include <asm/setup.h>

@@ -1,5 +1,5 @@
 /*
- * PC-Speaker driver for Linux
+ * PC-Speaker driver for Beep
  *
  * Copyright (C) 1993-1997  Michael Beck
  * Copyright (C) 1997-2001  David Woodhouse
@@ -9,9 +9,9 @@
 #ifndef __PCSP_H__
 #define __PCSP_H__
 
-#include <linux/hrtimer.h>
-#include <linux/i8253.h>
-#include <linux/timex.h>
+#include <beep/hrtimer.h>
+#include <beep/i8253.h>
+#include <beep/timex.h>
 
 #define PCSP_SOUND_VERSION 0x400	/* read 4.00 */
 #define PCSP_DEBUG 0

@@ -12,17 +12,17 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/mm.h>
-#include <linux/serial_sci.h>
-#include <linux/uio_driver.h>
-#include <linux/sh_dma.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_intc.h>
-#include <linux/io.h>
-#include <linux/notifier.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/serial.h>
+#include <beep/mm.h>
+#include <beep/serial_sci.h>
+#include <beep/uio_driver.h>
+#include <beep/sh_dma.h>
+#include <beep/sh_timer.h>
+#include <beep/sh_intc.h>
+#include <beep/io.h>
+#include <beep/notifier.h>
 
 #include <asm/suspend.h>
 #include <asm/clock.h>

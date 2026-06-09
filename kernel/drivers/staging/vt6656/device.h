@@ -29,26 +29,26 @@
 #ifndef __DEVICE_H__
 #define __DEVICE_H__
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
-#include <linux/suspend.h>
-#include <linux/if_arp.h>
-#include <linux/wireless.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/firmware.h>
+#include <beep/etherdevice.h>
+#include <beep/suspend.h>
+#include <beep/if_arp.h>
+#include <beep/wireless.h>
 #include <net/iw_handler.h>
 #include <net/cfg80211.h>
-#include <linux/timer.h>
-#include <linux/usb.h>
+#include <beep/timer.h>
+#include <beep/usb.h>
 
 
 #ifdef SIOCETHTOOL
 #define DEVICE_ETHTOOL_IOCTL_SUPPORT
-#include <linux/ethtool.h>
+#include <beep/ethtool.h>
 #else
 #undef DEVICE_ETHTOOL_IOCTL_SUPPORT
 #endif

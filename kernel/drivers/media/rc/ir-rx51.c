@@ -19,12 +19,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/uaccess.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/uaccess.h>
+#include <beep/platform_device.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
 
 #include <plat/dmtimer.h>
 #include <plat/clock.h>

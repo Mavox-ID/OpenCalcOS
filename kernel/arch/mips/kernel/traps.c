@@ -11,27 +11,27 @@
  * Copyright (C) 2000, 01 MIPS Technologies, Inc.
  * Copyright (C) 2002, 2003, 2004, 2005, 2007  Maciej W. Rozycki
  */
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/kexec.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/kallsyms.h>
-#include <linux/bootmem.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/kgdb.h>
-#include <linux/kdebug.h>
-#include <linux/kprobes.h>
-#include <linux/notifier.h>
-#include <linux/kdb.h>
-#include <linux/irq.h>
-#include <linux/perf_event.h>
+#include <beep/bug.h>
+#include <beep/compiler.h>
+#include <beep/kexec.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/spinlock.h>
+#include <beep/kallsyms.h>
+#include <beep/bootmem.h>
+#include <beep/interrupt.h>
+#include <beep/ptrace.h>
+#include <beep/kgdb.h>
+#include <beep/kdebug.h>
+#include <beep/kprobes.h>
+#include <beep/notifier.h>
+#include <beep/kdb.h>
+#include <beep/irq.h>
+#include <beep/perf_event.h>
 
 #include <asm/bootinfo.h>
 #include <asm/branch.h>
@@ -1800,7 +1800,7 @@ void __init trap_init(void)
 		 * check exception (similar to the R4000 cache error) and
 		 * unaligned ldc1/sdc1 exception.  The handlers have not been
 		 * written yet.  Well, anyway there is no R6000 machine on the
-		 * current list of targets for Linux/MIPS.
+		 * current list of targets for Beep/MIPS.
 		 * (Duh, crap, there is someone with a triple R6k machine)
 		 */
 		//set_except_vector(14, handle_mc);

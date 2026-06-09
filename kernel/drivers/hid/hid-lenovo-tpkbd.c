@@ -11,13 +11,13 @@
  * any later version.
  */
 
-#include <linux/module.h>
-#include <linux/sysfs.h>
-#include <linux/device.h>
-#include <linux/usb.h>
-#include <linux/hid.h>
-#include <linux/input.h>
-#include <linux/leds.h>
+#include <beep/module.h>
+#include <beep/sysfs.h>
+#include <beep/device.h>
+#include <beep/usb.h>
+#include <beep/hid.h>
+#include <beep/input.h>
+#include <beep/leds.h>
 #include "usbhid/usbhid.h"
 
 #include "hid-ids.h"

@@ -10,10 +10,10 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/sched.h>
 #include "smack.h"
 
 struct smack_known smack_known_huh = {

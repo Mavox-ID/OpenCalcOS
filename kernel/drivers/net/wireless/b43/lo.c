@@ -32,9 +32,9 @@
 #include "phy_g.h"
 #include "main.h"
 
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 
 static struct b43_lo_calib *b43_find_lo_calib(struct b43_txpower_lo_control *lo,

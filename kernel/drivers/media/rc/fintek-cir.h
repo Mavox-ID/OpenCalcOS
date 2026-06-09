@@ -23,8 +23,8 @@
  * USA
  */
 
-#include <linux/spinlock.h>
-#include <linux/ioctl.h>
+#include <beep/spinlock.h>
+#include <beep/ioctl.h>
 
 /* platform driver name to register */
 #define FINTEK_DRIVER_NAME	"fintek-cir"

@@ -13,7 +13,7 @@
  * rw semaphores implemented November 1999 by Benjamin LaHaise <bcrl@kvack.org>
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/alternative-asm.h>
 #include <asm/dwarf2.h>
 

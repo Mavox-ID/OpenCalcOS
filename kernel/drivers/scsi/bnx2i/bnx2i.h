@@ -15,21 +15,21 @@
 #ifndef _BNX2I_H_
 #define _BNX2I_H_
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
 
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/in.h>
-#include <linux/kfifo.h>
-#include <linux/netdevice.h>
-#include <linux/completion.h>
-#include <linux/kthread.h>
-#include <linux/cpu.h>
+#include <beep/errno.h>
+#include <beep/pci.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/in.h>
+#include <beep/kfifo.h>
+#include <beep/netdevice.h>
+#include <beep/completion.h>
+#include <beep/kthread.h>
+#include <beep/cpu.h>
 
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

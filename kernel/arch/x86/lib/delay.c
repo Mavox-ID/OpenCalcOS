@@ -11,12 +11,12 @@
  *	we have to worry about.
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/timex.h>
-#include <linux/preempt.h>
-#include <linux/delay.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/timex.h>
+#include <beep/preempt.h>
+#include <beep/delay.h>
+#include <beep/init.h>
 
 #include <asm/processor.h>
 #include <asm/delay.h>

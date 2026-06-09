@@ -12,11 +12,11 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/mtd/super.h>
-#include <linux/namei.h>
-#include <linux/export.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
+#include <beep/mtd/super.h>
+#include <beep/namei.h>
+#include <beep/export.h>
+#include <beep/ctype.h>
+#include <beep/slab.h>
 
 /*
  * compare superblocks to see if they're equivalent

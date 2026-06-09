@@ -19,13 +19,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/log2.h>
-#include <linux/uaccess.h>
-#include <linux/kfifo.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/log2.h>
+#include <beep/uaccess.h>
+#include <beep/kfifo.h>
 
 /*
  * internal helper to calculate the unused elements in a fifo

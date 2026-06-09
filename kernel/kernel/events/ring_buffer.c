@@ -9,9 +9,9 @@
  * For licensing details see kernel-base/COPYING
  */
 
-#include <linux/perf_event.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
+#include <beep/perf_event.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
 
 #include "internal.h"
 

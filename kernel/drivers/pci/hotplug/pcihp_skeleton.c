@@ -28,13 +28,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/pci_hotplug.h>
+#include <beep/init.h>
 
 #define SLOT_NAME_SIZE	10
 struct slot {

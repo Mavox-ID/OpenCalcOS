@@ -201,17 +201,17 @@
 
 #undef	DEBUG
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/kmod.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/wait.h>
+#include <beep/kmod.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
 #include <asm/prom.h>
 #include <asm/machdep.h>
 #include <asm/io.h>

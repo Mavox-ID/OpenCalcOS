@@ -23,10 +23,10 @@
  * FIXME: docs
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/uwb.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/uwb.h>
 #include "dfu/i1480-dfu.h"
 
 

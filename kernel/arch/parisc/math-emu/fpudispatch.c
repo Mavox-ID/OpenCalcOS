@@ -1,5 +1,5 @@
 /*
- * Linux/PA-RISC Project (http://www.parisc-linux.org/)
+ * Beep/PA-RISC Project (http://www.parisc-beep.org/)
  *
  * Floating-point emulation code
  *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
@@ -50,8 +50,8 @@
 #define FPUDEBUG 0
 
 #include "float.h"
-#include <linux/bug.h>
-#include <linux/kernel.h>
+#include <beep/bug.h>
+#include <beep/kernel.h>
 #include <asm/processor.h>
 /* #include <sys/debug.h> */
 /* #include <machine/sys/mdep_private.h> */
@@ -168,9 +168,9 @@ static void update_status_cbit();
 
 #define VASSERT(x)
 
-static void parisc_linux_get_fpu_type(u_int fpregs[])
+static void parisc_beep_get_fpu_type(u_int fpregs[])
 {
-	/* on pa-linux the fpu type is not filled in by the
+	/* on pa-beep the fpu type is not filled in by the
 	 * caller; it is constructed here  
 	 */ 
 	if (boot_cpu_data.cpu_type == pcxs)
@@ -200,7 +200,7 @@ fpudispatch(u_int ir, u_int excp_code, u_int holder, u_int fpregs[])
 	/* All FP emulation code assumes that ints are 4-bytes in length */
 	VASSERT(sizeof(int) == 4);
 
-	parisc_linux_get_fpu_type(fpregs);
+	parisc_beep_get_fpu_type(fpregs);
 
 	fpu_type_flags=fpregs[FPU_TYPE_FLAG_POS];  /* get fpu type flags */
 

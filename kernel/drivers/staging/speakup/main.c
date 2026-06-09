@@ -22,34 +22,34 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <linux/kernel.h>
-#include <linux/vt.h>
-#include <linux/tty.h>
-#include <linux/mm.h>		/* __get_free_page() and friends */
-#include <linux/vt_kern.h>
-#include <linux/ctype.h>
-#include <linux/selection.h>
-#include <linux/unistd.h>
-#include <linux/jiffies.h>
-#include <linux/kthread.h>
-#include <linux/keyboard.h>	/* for KT_SHIFT */
-#include <linux/kbd_kern.h>	/* for vc_kbd_* and friends */
-#include <linux/input.h>
-#include <linux/kmod.h>
+#include <beep/kernel.h>
+#include <beep/vt.h>
+#include <beep/tty.h>
+#include <beep/mm.h>		/* __get_free_page() and friends */
+#include <beep/vt_kern.h>
+#include <beep/ctype.h>
+#include <beep/selection.h>
+#include <beep/unistd.h>
+#include <beep/jiffies.h>
+#include <beep/kthread.h>
+#include <beep/keyboard.h>	/* for KT_SHIFT */
+#include <beep/kbd_kern.h>	/* for vc_kbd_* and friends */
+#include <beep/input.h>
+#include <beep/kmod.h>
 
-#include <linux/bootmem.h>	/* for alloc_bootmem */
+#include <beep/bootmem.h>	/* for alloc_bootmem */
 
 /* speakup_*_selection */
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/consolemap.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/consolemap.h>
 
-#include <linux/spinlock.h>
-#include <linux/notifier.h>
+#include <beep/spinlock.h>
+#include <beep/notifier.h>
 
-#include <linux/uaccess.h>	/* copy_from|to|user() and others */
+#include <beep/uaccess.h>	/* copy_from|to|user() and others */
 
 #include "spk_priv.h"
 #include "speakup.h"

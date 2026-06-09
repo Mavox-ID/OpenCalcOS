@@ -26,12 +26,12 @@
  *		for PPC64
  */
 
-#include <linux/kprobes.h>
-#include <linux/ptrace.h>
-#include <linux/preempt.h>
-#include <linux/module.h>
-#include <linux/kdebug.h>
-#include <linux/slab.h>
+#include <beep/kprobes.h>
+#include <beep/ptrace.h>
+#include <beep/preempt.h>
+#include <beep/module.h>
+#include <beep/kdebug.h>
+#include <beep/slab.h>
 #include <asm/cacheflush.h>
 #include <asm/sstep.h>
 #include <asm/uaccess.h>

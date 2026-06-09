@@ -27,24 +27,24 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/poll.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/ptrace.h>
+#include <beep/poll.h>
 
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/signal.h>
-#include <linux/ioctl.h>
-#include <linux/skbuff.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/signal.h>
+#include <beep/ioctl.h>
+#include <beep/skbuff.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

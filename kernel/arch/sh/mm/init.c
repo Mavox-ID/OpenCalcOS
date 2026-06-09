@@ -1,24 +1,24 @@
 /*
- * linux/arch/sh/mm/init.c
+ * beep/arch/sh/mm/init.c
  *
  *  Copyright (C) 1999  Niibe Yutaka
  *  Copyright (C) 2002 - 2011  Paul Mundt
  *
- *  Based on linux/arch/i386/mm/init.c:
+ *  Based on beep/arch/i386/mm/init.c:
  *   Copyright (C) 1995  Linus Torvalds
  */
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/bootmem.h>
-#include <linux/proc_fs.h>
-#include <linux/pagemap.h>
-#include <linux/percpu.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/init.h>
+#include <beep/gfp.h>
+#include <beep/bootmem.h>
+#include <beep/proc_fs.h>
+#include <beep/pagemap.h>
+#include <beep/percpu.h>
+#include <beep/io.h>
+#include <beep/memblock.h>
+#include <beep/dma-mapping.h>
+#include <beep/export.h>
 #include <asm/mmu_context.h>
 #include <asm/mmzone.h>
 #include <asm/kexec.h>

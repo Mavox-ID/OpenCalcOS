@@ -12,8 +12,8 @@
  *	published by the Free Software Foundation.
  */
 
-#include <linux/dccp.h>
-#include <linux/ktime.h>
+#include <beep/dccp.h>
+#include <beep/ktime.h>
 #include <net/snmp.h>
 #include <net/sock.h>
 #include <net/tcp.h>

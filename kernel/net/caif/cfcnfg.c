@@ -6,11 +6,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s(): " fmt, __func__
 
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/stddef.h>
+#include <beep/slab.h>
+#include <beep/netdevice.h>
+#include <beep/module.h>
 #include <net/caif/caif_layer.h>
 #include <net/caif/cfpkt.h>
 #include <net/caif/cfcnfg.h>

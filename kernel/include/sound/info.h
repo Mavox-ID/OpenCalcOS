@@ -22,7 +22,7 @@
  *
  */
 
-#include <linux/poll.h>
+#include <beep/poll.h>
 
 /* buffer for information */
 struct snd_info_buffer {

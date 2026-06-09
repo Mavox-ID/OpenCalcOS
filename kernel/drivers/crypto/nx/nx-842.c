@@ -17,15 +17,15 @@
  *
  * Copyright (C) IBM Corporation, 2012
  *
- * Authors: Robert Jennings <rcj@linux.vnet.ibm.com>
- *          Seth Jennings <sjenning@linux.vnet.ibm.com>
+ * Authors: Robert Jennings <rcj@beep.vnet.ibm.com>
+ *          Seth Jennings <sjenning@beep.vnet.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/nx842.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/nx842.h>
+#include <beep/of.h>
+#include <beep/slab.h>
 
 #include <asm/page.h>
 #include <asm/vio.h>
@@ -34,7 +34,7 @@
 
 #define MODULE_NAME "nx-compress"
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Robert Jennings <rcj@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Robert Jennings <rcj@beep.vnet.ibm.com>");
 MODULE_DESCRIPTION("842 H/W Compression driver for IBM Power processors");
 
 #define SHIFT_4K 12

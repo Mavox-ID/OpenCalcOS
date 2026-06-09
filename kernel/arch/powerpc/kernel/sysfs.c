@@ -1,13 +1,13 @@
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/export.h>
-#include <linux/nodemask.h>
-#include <linux/cpumask.h>
-#include <linux/notifier.h>
+#include <beep/device.h>
+#include <beep/cpu.h>
+#include <beep/smp.h>
+#include <beep/percpu.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/export.h>
+#include <beep/nodemask.h>
+#include <beep/cpumask.h>
+#include <beep/notifier.h>
 
 #include <asm/current.h>
 #include <asm/processor.h>

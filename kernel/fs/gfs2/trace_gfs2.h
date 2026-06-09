@@ -4,14 +4,14 @@
 #if !defined(_TRACE_GFS2_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_GFS2_H
 
-#include <linux/tracepoint.h>
+#include <beep/tracepoint.h>
 
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/dlmconstants.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/writeback.h>
-#include <linux/ktime.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
+#include <beep/dlmconstants.h>
+#include <beep/gfs2_ondisk.h>
+#include <beep/writeback.h>
+#include <beep/ktime.h>
 #include "incore.h"
 #include "glock.h"
 #include "rgrp.h"

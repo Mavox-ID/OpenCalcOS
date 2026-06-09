@@ -37,7 +37,7 @@
  * numbers. Thus, most of the common UBIFS mechanisms may be re-used for
  * extended attributes.
  *
- * The number of extended attributes is not limited, but there is Linux
+ * The number of extended attributes is not limited, but there is Beep
  * limitation on the maximum possible size of the list of all extended
  * attributes associated with an inode (%XATTR_LIST_MAX), so UBIFS makes sure
  * the sum of all extended attribute names of the inode does not exceed that
@@ -56,10 +56,10 @@
  */
 
 #include "ubifs.h"
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl_xattr.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/xattr.h>
+#include <beep/posix_acl_xattr.h>
 
 /*
  * Limit the number of extended attributes per inode so that the total size
@@ -110,7 +110,7 @@ static int create_xattr(struct ubifs_info *c, struct inode *host,
 	if (host_ui->xattr_cnt >= MAX_XATTRS_PER_INODE)
 		return -ENOSPC;
 	/*
-	 * Linux limits the maximum size of the extended attribute names list
+	 * Beep limits the maximum size of the extended attribute names list
 	 * to %XATTR_LIST_MAX. This means we should not allow creating more
 	 * extended attributes if the name list becomes larger. This limitation
 	 * is artificial for UBIFS, though.

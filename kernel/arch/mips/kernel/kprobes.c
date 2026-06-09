@@ -23,11 +23,11 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kprobes.h>
-#include <linux/preempt.h>
-#include <linux/uaccess.h>
-#include <linux/kdebug.h>
-#include <linux/slab.h>
+#include <beep/kprobes.h>
+#include <beep/preempt.h>
+#include <beep/uaccess.h>
+#include <beep/kdebug.h>
+#include <beep/slab.h>
 
 #include <asm/ptrace.h>
 #include <asm/branch.h>

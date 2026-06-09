@@ -13,11 +13,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/clk.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/ctype.h>
+#include <beep/debugfs.h>
+#include <beep/clk.h>
 #include "clock.h"
 
 static int clock_debug_rate_set(void *data, u64 val)

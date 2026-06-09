@@ -29,8 +29,8 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/sched.h>
-#include <linux/gfp.h>
+#include <beep/sched.h>
+#include <beep/gfp.h>
 #include "iwch_provider.h"
 #include "iwch.h"
 #include "iwch_cm.h"

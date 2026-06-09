@@ -13,9 +13,9 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 
 #include <asm/mach-jz4740/base.h>
 #include <asm/mach-jz4740/timer.h>

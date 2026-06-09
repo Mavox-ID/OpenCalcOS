@@ -9,15 +9,15 @@
  * Standard functionality for the common clock API.  See Documentation/clk.txt
  */
 
-#include <linux/clk-private.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/device.h>
+#include <beep/clk-private.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/err.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/device.h>
 
 static DEFINE_SPINLOCK(enable_lock);
 static DEFINE_MUTEX(prepare_lock);
@@ -29,7 +29,7 @@ static LIST_HEAD(clk_notifier_list);
 /***        debugfs support        ***/
 
 #ifdef CONFIG_COMMON_CLK_DEBUG
-#include <linux/debugfs.h>
+#include <beep/debugfs.h>
 
 static struct dentry *rootdir;
 static struct dentry *orphandir;
@@ -617,7 +617,7 @@ EXPORT_SYMBOL_GPL(clk_round_rate);
 /**
  * __clk_notify - call clk notifier chain
  * @clk: struct clk * that is changing rate
- * @msg: clk notifier type (see include/linux/clk.h)
+ * @msg: clk notifier type (see include/beep/clk.h)
  * @old_rate: old clk rate
  * @new_rate: new clk rate
  *
@@ -653,7 +653,7 @@ static int __clk_notify(struct clk *clk, unsigned long msg,
 /**
  * __clk_recalc_rates
  * @clk: first clk in the subtree
- * @msg: notification type (see include/linux/clk.h)
+ * @msg: notification type (see include/beep/clk.h)
  *
  * Walks the subtree of clks starting with clk and recalculates rates as it
  * goes.  Note that if a clk does not implement the .recalc_rate callback then

@@ -27,18 +27,18 @@
  * TODO:
  * - Allocate more than order 0 pages to avoid too much linear map splitting.
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/miscdevice.h>
-#include <linux/pm.h>
-#include <linux/agp_backend.h>
-#include <linux/vmalloc.h>
-#include <linux/dma-mapping.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/pagemap.h>
+#include <beep/miscdevice.h>
+#include <beep/pm.h>
+#include <beep/agp_backend.h>
+#include <beep/vmalloc.h>
+#include <beep/dma-mapping.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 #include <asm/io.h>
 #include <asm/cacheflush.h>
 #include <asm/pgtable.h>

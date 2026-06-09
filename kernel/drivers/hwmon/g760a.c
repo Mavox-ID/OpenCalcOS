@@ -13,16 +13,16 @@
  * (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/jiffies.h>
+#include <beep/i2c.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/sysfs.h>
 
 static const struct i2c_device_id g760a_id[] = {
 	{ "g760a", 0 },

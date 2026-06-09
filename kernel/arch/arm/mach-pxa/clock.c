@@ -1,12 +1,12 @@
 /*
- *  linux/arch/arm/mach-sa1100/clock.c
+ *  beep/arch/arm/mach-sa1100/clock.c
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/clkdev.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
+#include <beep/clkdev.h>
 
 #include "clock.h"
 

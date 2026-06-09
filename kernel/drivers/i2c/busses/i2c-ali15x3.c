@@ -58,16 +58,16 @@
 
 /* Note: we assume there can only be one ALI15X3, with one SMBus interface */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/stddef.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/acpi.h>
+#include <beep/io.h>
 
 /* ALI15X3 SMBus address offsets */
 #define SMBHSTSTS	(0 + ali15x3_smba)

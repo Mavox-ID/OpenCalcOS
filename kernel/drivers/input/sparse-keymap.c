@@ -5,7 +5,7 @@
  *
  * Derived from wistron button driver:
  * Copyright (C) 2005 Miloslav Trmac <mitr@volny.cz>
- * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arklinux.org>
+ * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arkbeep.org>
  * Copyright (C) 2005 Dmitry Torokhov <dtor@mail.ru>
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -13,10 +13,10 @@
  * the Free Software Foundation.
  */
 
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/input.h>
+#include <beep/input/sparse-keymap.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 MODULE_AUTHOR("Dmitry Torokhov <dtor@mail.ru>");
 MODULE_DESCRIPTION("Generic support for sparse keymaps");

@@ -2,7 +2,7 @@
 #define _ALPHA_IOCTL_H
 
 /*
- * The original linux ioctl numbering scheme was just a general
+ * The original beep ioctl numbering scheme was just a general
  * "anything goes" setup, where more or less random numbers were
  * assigned.  Sorry, I was clueless when I started out on this.
  *

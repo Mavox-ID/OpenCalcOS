@@ -17,13 +17,13 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/slab.h>
-#include <linux/regulator/max1586.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/slab.h>
+#include <beep/regulator/max1586.h>
 
 #define MAX1586_V3_MAX_VSEL 31
 #define MAX1586_V6_MAX_VSEL 3

@@ -28,10 +28,10 @@
  *		Alan Cox <alan@lxorguk.ukuu.org.uk>
  ****************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/module.h>
 
 #include "cpia2.h"
 

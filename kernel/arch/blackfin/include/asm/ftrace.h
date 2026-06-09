@@ -29,7 +29,7 @@ struct dyn_arch_ftrace {
 #endif
 
 #ifdef CONFIG_FRAME_POINTER
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 extern inline void *return_address(unsigned int level)
 {

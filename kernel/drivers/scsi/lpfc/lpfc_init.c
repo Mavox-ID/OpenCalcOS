@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex Beep Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2004-2012 Emulex.  All rights reserved.           *
  * EMULEX and SLI are trademarks of Emulex.                        *
@@ -19,20 +19,20 @@
  * included with this package.                                     *
  *******************************************************************/
 
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/ctype.h>
-#include <linux/aer.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/miscdevice.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/idr.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/kthread.h>
+#include <beep/pci.h>
+#include <beep/spinlock.h>
+#include <beep/ctype.h>
+#include <beep/aer.h>
+#include <beep/slab.h>
+#include <beep/firmware.h>
+#include <beep/miscdevice.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>
@@ -9533,10 +9533,10 @@ out:
 }
 
 /**
- * lpfc_sli4_request_firmware_update - Request linux generic firmware upgrade
+ * lpfc_sli4_request_firmware_update - Request beep generic firmware upgrade
  * @phba: pointer to lpfc hba data structure.
  *
- * This routine is called to perform Linux generic firmware upgrade on device
+ * This routine is called to perform Beep generic firmware upgrade on device
  * that supports such feature.
  **/
 int

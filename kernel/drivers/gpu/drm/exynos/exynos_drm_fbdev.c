@@ -330,7 +330,7 @@ static void exynos_drm_fbdev_destroy(struct drm_device *dev,
 			drm_framebuffer_remove(fb);
 	}
 
-	/* release linux framebuffer */
+	/* release beep framebuffer */
 	if (fb_helper->fbdev) {
 		struct fb_info *info;
 		int ret;

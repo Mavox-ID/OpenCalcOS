@@ -19,9 +19,9 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/module.h>
 
 #include <xen/platform_pci.h>
 #include "xen-ops.h"
@@ -54,8 +54,8 @@ static int check_platform_magic(void)
 
 	switch (protocol) {
 	case 1:
-		outw(XEN_IOPORT_LINUX_PRODNUM, XEN_IOPORT_PRODNUM);
-		outl(XEN_IOPORT_LINUX_DRVVER, XEN_IOPORT_DRVVER);
+		outw(XEN_IOPORT_BEEP_PRODNUM, XEN_IOPORT_PRODNUM);
+		outl(XEN_IOPORT_BEEP_DRVVER, XEN_IOPORT_DRVVER);
 		if (inw(XEN_IOPORT_MAGIC) != XEN_IOPORT_MAGIC_VAL) {
 			printk(KERN_ERR "Xen Platform: blacklisted by host\n");
 			return XEN_PLATFORM_ERR_BLACKLIST;

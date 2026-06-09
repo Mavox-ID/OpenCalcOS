@@ -2,16 +2,16 @@
  * test_nx.c: functional test for NX functionality
  *
  * (C) Copyright 2008 Intel Corporation
- * Author: Arjan van de Ven <arjan@linux.intel.com>
+ * Author: Arjan van de Ven <arjan@beep.intel.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; version 2
  * of the License.
  */
-#include <linux/module.h>
-#include <linux/sort.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/sort.h>
+#include <beep/slab.h>
 
 #include <asm/uaccess.h>
 #include <asm/asm.h>
@@ -172,4 +172,4 @@ module_init(test_NX);
 module_exit(test_exit);
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("Testcase for the NX infrastructure");
-MODULE_AUTHOR("Arjan van de Ven <arjan@linux.intel.com>");
+MODULE_AUTHOR("Arjan van de Ven <arjan@beep.intel.com>");

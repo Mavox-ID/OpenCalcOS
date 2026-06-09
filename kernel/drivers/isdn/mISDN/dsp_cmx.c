@@ -124,10 +124,10 @@
 
 /* delay.h is required for hw_lock.h */
 
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/mISDNif.h>
-#include <linux/mISDNdsp.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/mISDNif.h>
+#include <beep/mISDNdsp.h>
 #include "core.h"
 #include "dsp.h"
 /*

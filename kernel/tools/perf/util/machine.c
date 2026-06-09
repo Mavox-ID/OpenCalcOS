@@ -270,15 +270,15 @@ static void machine__set_kernel_mmap_len(struct machine *machine,
 	int i;
 
 	for (i = 0; i < MAP__NR_TYPES; i++) {
-		machine->vmlinux_maps[i]->start = event->mmap.start;
-		machine->vmlinux_maps[i]->end   = (event->mmap.start +
+		machine->vmbeep_maps[i]->start = event->mmap.start;
+		machine->vmbeep_maps[i]->end   = (event->mmap.start +
 						   event->mmap.len);
 		/*
 		 * Be a bit paranoid here, some perf.data file came with
 		 * a zero sized synthesized MMAP event for the kernel.
 		 */
-		if (machine->vmlinux_maps[i]->end == 0)
-			machine->vmlinux_maps[i]->end = ~0ULL;
+		if (machine->vmbeep_maps[i]->end == 0)
+			machine->vmbeep_maps[i]->end = ~0ULL;
 	}
 }
 
@@ -356,7 +356,7 @@ static int machine__process_kernel_mmap_event(struct machine *machine,
 		 * time /proc/sys/kernel/kptr_restrict was non zero.
 		 */
 		if (event->mmap.pgoff != 0) {
-			maps__set_kallsyms_ref_reloc_sym(machine->vmlinux_maps,
+			maps__set_kallsyms_ref_reloc_sym(machine->vmbeep_maps,
 							 symbol_name,
 							 event->mmap.pgoff);
 		}
@@ -365,7 +365,7 @@ static int machine__process_kernel_mmap_event(struct machine *machine,
 			/*
 			 * preload dso of guest kernel and modules
 			 */
-			dso__load(kernel, machine->vmlinux_maps[MAP__FUNCTION],
+			dso__load(kernel, machine->vmbeep_maps[MAP__FUNCTION],
 				  NULL);
 		}
 	}

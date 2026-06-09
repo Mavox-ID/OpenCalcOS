@@ -1,8 +1,8 @@
 /******************************************************************************
  * arch/ia64/kernel/paravirt.c
  *
- * Copyright (c) 2008 Isaku Yamahata <yamahata at valinux co jp>
- *                    VA Linux Systems Japan K.K.
+ * Copyright (c) 2008 Isaku Yamahata <yamahata at vabeep co jp>
+ *                    VA Beep Systems Japan K.K.
  *     Yaozu (Eddie) Dong <eddie.dong@intel.com>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -21,13 +21,13 @@
  *
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 
-#include <linux/compiler.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/module.h>
+#include <beep/types.h>
 
 #include <asm/iosapic.h>
 #include <asm/paravirt.h>

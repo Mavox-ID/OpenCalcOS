@@ -20,18 +20,18 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/radix-tree.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/string.h>
-#include <linux/bitops.h>
-#include <linux/rcupdate.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/radix-tree.h>
+#include <beep/percpu.h>
+#include <beep/slab.h>
+#include <beep/notifier.h>
+#include <beep/cpu.h>
+#include <beep/string.h>
+#include <beep/bitops.h>
+#include <beep/rcupdate.h>
 
 
 #ifdef __KERNEL__
@@ -1141,7 +1141,7 @@ radix_tree_gang_lookup_tag_slot(struct radix_tree_root *root, void ***results,
 EXPORT_SYMBOL(radix_tree_gang_lookup_tag_slot);
 
 #if defined(CONFIG_SHMEM) && defined(CONFIG_SWAP)
-#include <linux/sched.h> /* for cond_resched() */
+#include <beep/sched.h> /* for cond_resched() */
 
 /*
  * This linear search is at present only useful to shmem_unuse_inode().

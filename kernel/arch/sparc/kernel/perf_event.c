@@ -12,17 +12,17 @@
  *  Copyright (C) 2008-2009 Red Hat, Inc., Peter Zijlstra <pzijlstr@redhat.com>
  */
 
-#include <linux/perf_event.h>
-#include <linux/kprobes.h>
-#include <linux/ftrace.h>
-#include <linux/kernel.h>
-#include <linux/kdebug.h>
-#include <linux/mutex.h>
+#include <beep/perf_event.h>
+#include <beep/kprobes.h>
+#include <beep/ftrace.h>
+#include <beep/kernel.h>
+#include <beep/kdebug.h>
+#include <beep/mutex.h>
 
 #include <asm/stacktrace.h>
 #include <asm/cpudata.h>
 #include <asm/uaccess.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/nmi.h>
 #include <asm/pcr.h>
 #include <asm/cacheflush.h>

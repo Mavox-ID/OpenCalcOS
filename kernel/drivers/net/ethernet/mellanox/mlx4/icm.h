@@ -34,9 +34,9 @@
 #ifndef MLX4_ICM_H
 #define MLX4_ICM_H
 
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/mutex.h>
+#include <beep/list.h>
+#include <beep/pci.h>
+#include <beep/mutex.h>
 
 #define MLX4_ICM_CHUNK_LEN						\
 	((256 - sizeof (struct list_head) - 2 * sizeof (int)) /		\

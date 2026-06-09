@@ -8,11 +8,11 @@
  * for more details.
  */
 
-#include <linux/pm.h>
-#include <linux/cpuidle.h>
-#include <linux/suspend.h>
-#include <linux/module.h>
-#include <linux/err.h>
+#include <beep/pm.h>
+#include <beep/cpuidle.h>
+#include <beep/suspend.h>
+#include <beep/module.h>
+#include <beep/err.h>
 #include <asm/cpuidle.h>
 #include <asm/io.h>
 

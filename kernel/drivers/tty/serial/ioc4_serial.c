@@ -12,17 +12,17 @@
  * includes all the support functions needed (support functions, etc.)
  * and the serial driver itself.
  */
-#include <linux/errno.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/circ_buf.h>
-#include <linux/serial_reg.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/ioc4.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial.h>
+#include <beep/circ_buf.h>
+#include <beep/serial_reg.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/ioc4.h>
+#include <beep/serial_core.h>
+#include <beep/slab.h>
 
 /*
  * interesting things about the ioc4

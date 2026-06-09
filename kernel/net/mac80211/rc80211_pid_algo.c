@@ -9,11 +9,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
+#include <beep/netdevice.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
+#include <beep/debugfs.h>
+#include <beep/slab.h>
 #include <net/mac80211.h>
 #include "rate.h"
 #include "mesh.h"

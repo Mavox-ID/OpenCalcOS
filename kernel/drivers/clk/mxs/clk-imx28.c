@@ -9,12 +9,12 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/of.h>
 #include <mach/common.h>
 #include <mach/mx28.h>
 #include "clk.h"

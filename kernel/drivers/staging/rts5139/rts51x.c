@@ -23,18 +23,18 @@
  *   No. 450, Shenhu Road, Suzhou Industry Park, Suzhou, China
  */
 
-#include <linux/blkdev.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/workqueue.h>
-#include <linux/errno.h>
-#include <linux/freezer.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/utsname.h>
-#include <linux/usb.h>
+#include <beep/blkdev.h>
+#include <beep/kthread.h>
+#include <beep/sched.h>
+#include <beep/workqueue.h>
+#include <beep/errno.h>
+#include <beep/freezer.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/utsname.h>
+#include <beep/usb.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

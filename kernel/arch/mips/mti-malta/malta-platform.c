@@ -4,8 +4,8 @@
  * for more details.
  *
  * Copyright (C) 2006, 07 MIPS Technologies, Inc.
- *   written by Ralf Baechle (ralf@linux-mips.org)
- *     written by Ralf Baechle <ralf@linux-mips.org>
+ *   written by Ralf Baechle (ralf@beep-mips.org)
+ *     written by Ralf Baechle <ralf@beep-mips.org>
  *
  * Copyright (C) 2008 Wind River Systems, Inc.
  *   updated by Tiejun Chen <tiejun.chen@windriver.com>
@@ -21,14 +21,14 @@
  *
  * 2. Register RTC-CMOS platform device on Malta.
  */
-#include <linux/init.h>
-#include <linux/serial_8250.h>
-#include <linux/mc146818rtc.h>
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/serial_8250.h>
+#include <beep/mc146818rtc.h>
+#include <beep/module.h>
+#include <beep/irq.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/platform_device.h>
 #include <asm/mips-boards/maltaint.h>
 #include <mtd/mtd-abi.h>
 

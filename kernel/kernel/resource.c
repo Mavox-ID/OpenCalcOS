@@ -1,5 +1,5 @@
 /*
- *	linux/kernel/resource.c
+ *	beep/kernel/resource.c
  *
  * Copyright (C) 1999	Linus Torvalds
  * Copyright (C) 1999	Martin Mares <mj@ucw.cz>
@@ -9,18 +9,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/pfn.h>
+#include <beep/export.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/fs.h>
+#include <beep/proc_fs.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/device.h>
+#include <beep/pfn.h>
 #include <asm/io.h>
 
 

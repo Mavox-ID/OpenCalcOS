@@ -7,7 +7,7 @@
  * virt_to_page, page_address() to be implemented as a base offset
  * calculation without memory access.
  *
- * However, virtual mappings need a page table and TLBs. Many Linux
+ * However, virtual mappings need a page table and TLBs. Many Beep
  * architectures already map their physical space using 1-1 mappings
  * via TLBs. For those arches the virtual memory map is essentially
  * for free if we use the same page size as the 1-1 mappings. In that
@@ -17,14 +17,14 @@
  * The architecture is expected to provide a vmemmap_populate() function
  * to instantiate the mapping.
  */
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/bootmem.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
-#include <linux/sched.h>
+#include <beep/mm.h>
+#include <beep/mmzone.h>
+#include <beep/bootmem.h>
+#include <beep/highmem.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/vmalloc.h>
+#include <beep/sched.h>
 #include <asm/dma.h>
 #include <asm/pgalloc.h>
 #include <asm/pgtable.h>

@@ -20,9 +20,9 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include <sound/core.h>
 #include "hda_codec.h"
 #include "hda_local.h"

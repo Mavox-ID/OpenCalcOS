@@ -13,8 +13,8 @@
 *
 *
 * This driver was written by Tony Olech(tony.olech@elandigitalsystems.com)
-* based on various USB client drivers in the 2.6.15 linux kernel
-* with constant reference to the 3rd Edition of Linux Device Drivers
+* based on various USB client drivers in the 2.6.15 beep kernel
+* with constant reference to the 3rd Edition of Beep Device Drivers
 * published by O'Reilly
 *
 * The U132 adapter is a USB to CardBus adapter specifically designed
@@ -35,20 +35,20 @@
 * via an ELAN U132 adapter.
 *
 */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/ioctl.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kref.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/ioctl.h>
+#include <beep/pci_ids.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/kref.h>
+#include <beep/mutex.h>
 #include <asm/uaccess.h>
-#include <linux/usb.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
+#include <beep/usb.h>
+#include <beep/workqueue.h>
+#include <beep/platform_device.h>
 MODULE_AUTHOR("Tony Olech");
 MODULE_DESCRIPTION("FTDI ELAN driver");
 MODULE_LICENSE("GPL");
@@ -73,12 +73,12 @@ static struct list_head ftdi_static_list;
 */
 #include "usb_u132.h"
 #include <asm/io.h>
-#include <linux/usb/hcd.h>
+#include <beep/usb/hcd.h>
 
 	/* FIXME ohci.h is ONLY for internal use by the OHCI driver.
 	 * If you're going to try stuff like this, you need to split
 	 * out shareable stuff (register declarations?) into its own
-	 * file, maybe name <linux/usb/ohci.h>
+	 * file, maybe name <beep/usb/ohci.h>
 	 */
 
 #include "../host/ohci.h"

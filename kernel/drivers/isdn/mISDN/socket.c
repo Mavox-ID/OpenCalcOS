@@ -15,9 +15,9 @@
  *
  */
 
-#include <linux/mISDNif.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/mISDNif.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include "core.h"
 
 static u_int	*debug;

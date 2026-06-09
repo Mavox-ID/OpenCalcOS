@@ -3,7 +3,7 @@
 # builddeb 1.3
 # Copyright 2003 Wichert Akkerman <wichert@wiggy.net>
 #
-# Simple script to generate a deb package for a Linux kernel. All the
+# Simple script to generate a deb package for a Beep kernel. All the
 # complexity of what to do with a kernel after it is installed or removed
 # is left to other scripts and packages: they can install scripts in the
 # /etc/kernel/{pre,post}{inst,rm}.d/ directories (or an alternative location
@@ -78,13 +78,13 @@ tmpdir="$objtree/debian/tmp"
 fwdir="$objtree/debian/fwtmp"
 kernel_headers_dir="$objtree/debian/hdrtmp"
 libc_headers_dir="$objtree/debian/headertmp"
-packagename=linux-image-$version
-fwpackagename=linux-firmware-image
-kernel_headers_packagename=linux-headers-$version
-libc_headers_packagename=linux-libc-dev
+packagename=beep-image-$version
+fwpackagename=beep-firmware-image
+kernel_headers_packagename=beep-headers-$version
+libc_headers_packagename=beep-libc-dev
 
 if [ "$ARCH" = "um" ] ; then
-	packagename=user-mode-linux-$version
+	packagename=user-mode-beep-$version
 fi
 
 # Setup the directory structure
@@ -104,11 +104,11 @@ fi
 
 # Build and install the kernel
 if [ "$ARCH" = "um" ] ; then
-	$MAKE linux
+	$MAKE beep
 	cp System.map "$tmpdir/usr/lib/uml/modules/$version/System.map"
 	cp .config "$tmpdir/usr/share/doc/$packagename/config"
 	gzip "$tmpdir/usr/share/doc/$packagename/config"
-	cp $KBUILD_IMAGE "$tmpdir/usr/bin/linux-$version"
+	cp $KBUILD_IMAGE "$tmpdir/usr/bin/beep-$version"
 else 
 	cp System.map "$tmpdir/boot/System.map-$version"
 	cp .config "$tmpdir/boot/config-$version"
@@ -174,36 +174,36 @@ maintainer="$name <$email>"
 
 # Generate a simple changelog template
 cat <<EOF > debian/changelog
-linux-upstream ($packageversion) unstable; urgency=low
+beep-upstream ($packageversion) unstable; urgency=low
 
-  * Custom built Linux kernel.
+  * Custom built Beep kernel.
 
  -- $maintainer  $(date -R)
 EOF
 
 # Generate copyright file
 cat <<EOF > debian/copyright
-This is a packacked upstream version of the Linux kernel.
+This is a packacked upstream version of the Beep kernel.
 
-The sources may be found at most Linux ftp sites, including:
-ftp://ftp.kernel.org/pub/linux/kernel
+The sources may be found at most Beep ftp sites, including:
+ftp://ftp.kernel.org/pub/beep/kernel
 
 Copyright: 1991 - 2009 Linus Torvalds and others.
 
 The git repository for mainline kernel development is at:
-git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux-2.6.git
+git://git.kernel.org/pub/scm/beep/kernel/git/torvalds/beep-2.6.git
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation; version 2 dated June, 1991.
 
-On Debian GNU/Linux systems, the complete text of the GNU General Public
+On Debian GNU/Beep systems, the complete text of the GNU General Public
 License version 2 can be found in \`/usr/share/common-licenses/GPL-2'.
 EOF
 
 # Generate a control file
 cat <<EOF > debian/control
-Source: linux-upstream
+Source: beep-upstream
 Section: kernel
 Priority: optional
 Maintainer: $maintainer
@@ -215,16 +215,16 @@ if [ "$ARCH" = "um" ]; then
 	cat <<EOF >> debian/control
 
 Package: $packagename
-Provides: linux-image, linux-image-2.6, linux-modules-$version
+Provides: beep-image, beep-image-2.6, beep-modules-$version
 Architecture: any
-Description: User Mode Linux kernel, version $version
- User-mode Linux is a port of the Linux kernel to its own system call
- interface.  It provides a kind of virtual machine, which runs Linux
- as a user process under another Linux kernel.  This is useful for
+Description: User Mode Beep kernel, version $version
+ User-mode Beep is a port of the Beep kernel to its own system call
+ interface.  It provides a kind of virtual machine, which runs Beep
+ as a user process under another Beep kernel.  This is useful for
  kernel development, sandboxes, jails, experimentation, and
  many other things.
  .
- This package contains the Linux kernel, modules and corresponding other
+ This package contains the Beep kernel, modules and corresponding other
  files, version: $version.
 EOF
 
@@ -232,11 +232,11 @@ else
 	cat <<EOF >> debian/control
 
 Package: $packagename
-Provides: linux-image, linux-image-2.6, linux-modules-$version
+Provides: beep-image, beep-image-2.6, beep-modules-$version
 Suggests: $fwpackagename
 Architecture: any
-Description: Linux kernel, version $version
- This package contains the Linux kernel, modules and corresponding other
+Description: Beep kernel, version $version
+ This package contains the Beep kernel, modules and corresponding other
  files, version: $version.
 EOF
 
@@ -246,20 +246,20 @@ fi
 (cd $srctree; find . -name Makefile\* -o -name Kconfig\* -o -name \*.pl > "$objtree/debian/hdrsrcfiles")
 (cd $srctree; find arch/$SRCARCH/include include scripts -type f >> "$objtree/debian/hdrsrcfiles")
 (cd $objtree; find arch/$SRCARCH/include .config Module.symvers include scripts -type f >> "$objtree/debian/hdrobjfiles")
-destdir=$kernel_headers_dir/usr/src/linux-headers-$version
+destdir=$kernel_headers_dir/usr/src/beep-headers-$version
 mkdir -p "$destdir"
 (cd $srctree; tar -c -f - -T "$objtree/debian/hdrsrcfiles") | (cd $destdir; tar -xf -)
 (cd $objtree; tar -c -f - -T "$objtree/debian/hdrobjfiles") | (cd $destdir; tar -xf -)
-ln -sf "/usr/src/linux-headers-$version" "$kernel_headers_dir/lib/modules/$version/build"
+ln -sf "/usr/src/beep-headers-$version" "$kernel_headers_dir/lib/modules/$version/build"
 rm -f "$objtree/debian/hdrsrcfiles" "$objtree/debian/hdrobjfiles"
 arch=$(dpkg --print-architecture)
 
 cat <<EOF >> debian/control
 
 Package: $kernel_headers_packagename
-Provides: linux-headers, linux-headers-2.6
+Provides: beep-headers, beep-headers-2.6
 Architecture: $arch
-Description: Linux kernel headers for $KERNELRELEASE on $arch
+Description: Beep kernel headers for $KERNELRELEASE on $arch
  This package provides kernel header files for $KERNELRELEASE on $arch
  .
  This is useful for people who need to build external modules
@@ -274,8 +274,8 @@ if [ -e "$tmpdir/lib/firmware" ]; then
 
 Package: $fwpackagename
 Architecture: all
-Description: Linux kernel firmware, version $version
- This package contains firmware from the Linux kernel, version $version.
+Description: Beep kernel firmware, version $version
+ This package contains firmware from the Beep kernel, version $version.
 EOF
 
 	create_package "$fwpackagename" "$fwdir"
@@ -285,10 +285,10 @@ cat <<EOF >> debian/control
 
 Package: $libc_headers_packagename
 Section: devel
-Provides: linux-kernel-headers
+Provides: beep-kernel-headers
 Architecture: any
-Description: Linux support headers for userspace development
- This package provides userspaces headers from the Linux kernel.  These headers
+Description: Beep support headers for userspace development
+ This package provides userspaces headers from the Beep kernel.  These headers
  are used by the installed headers for GNU glibc and other system libraries.
 EOF
 

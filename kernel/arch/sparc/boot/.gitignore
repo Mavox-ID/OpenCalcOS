@@ -3,6 +3,6 @@ btfixupprep
 image
 zImage
 tftpboot.img
-vmlinux.aout
+vmbeep.aout
 piggyback
 

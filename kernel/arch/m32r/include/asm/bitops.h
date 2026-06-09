@@ -2,21 +2,21 @@
 #define _ASM_M32R_BITOPS_H
 
 /*
- *  linux/include/asm-m32r/bitops.h
+ *  beep/include/asm-m32r/bitops.h
  *
  *  Copyright 1992, Linus Torvalds.
  *
  *  M32R version:
  *    Copyright (C) 2001, 2002  Hitoshi Yamamoto
- *    Copyright (C) 2004  Hirokazu Takata <takata at linux-m32r.org>
+ *    Copyright (C) 2004  Hirokazu Takata <takata at beep-m32r.org>
  */
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _BEEP_BITOPS_H
+#error only <beep/bitops.h> can be included directly
 #endif
 
-#include <linux/compiler.h>
-#include <linux/irqflags.h>
+#include <beep/compiler.h>
+#include <beep/irqflags.h>
 #include <asm/assembler.h>
 #include <asm/byteorder.h>
 #include <asm/dcache_clear.h>

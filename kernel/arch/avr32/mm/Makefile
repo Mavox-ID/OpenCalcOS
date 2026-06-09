@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux/AVR32 kernel.
+# Makefile for the Beep/AVR32 kernel.
 #
 
 obj-y				+= init.o clear_page.o copy_page.o dma-coherent.o

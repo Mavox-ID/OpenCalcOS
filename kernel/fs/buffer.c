@@ -1,5 +1,5 @@
 /*
- *  linux/fs/buffer.c
+ *  beep/fs/buffer.c
  *
  *  Copyright (C) 1991, 1992, 2002  Linus Torvalds
  */
@@ -18,29 +18,29 @@
  * async buffer flushing, 1999 Andrea Arcangeli <andrea@suse.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/capability.h>
-#include <linux/blkdev.h>
-#include <linux/file.h>
-#include <linux/quotaops.h>
-#include <linux/highmem.h>
-#include <linux/export.h>
-#include <linux/writeback.h>
-#include <linux/hash.h>
-#include <linux/suspend.h>
-#include <linux/buffer_head.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/bio.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/bitops.h>
-#include <linux/mpage.h>
-#include <linux/bit_spinlock.h>
+#include <beep/kernel.h>
+#include <beep/syscalls.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/percpu.h>
+#include <beep/slab.h>
+#include <beep/capability.h>
+#include <beep/blkdev.h>
+#include <beep/file.h>
+#include <beep/quotaops.h>
+#include <beep/highmem.h>
+#include <beep/export.h>
+#include <beep/writeback.h>
+#include <beep/hash.h>
+#include <beep/suspend.h>
+#include <beep/buffer_head.h>
+#include <beep/task_io_accounting_ops.h>
+#include <beep/bio.h>
+#include <beep/notifier.h>
+#include <beep/cpu.h>
+#include <beep/bitops.h>
+#include <beep/mpage.h>
+#include <beep/bit_spinlock.h>
 
 static int fsync_buffers_list(spinlock_t *lock, struct list_head *list);
 

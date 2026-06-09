@@ -11,9 +11,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
+#include <beep/clk.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
 
 #include <sound/soc.h>
 #include <sound/s3c24xx_uda134x.h>

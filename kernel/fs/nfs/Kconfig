@@ -12,9 +12,9 @@ config NFS_FS
 
 	  To mount file systems exported by NFS servers, you also need to
 	  install the user space mount.nfs command which can be found in
-	  the Linux nfs-utils package, available from http://linux-nfs.org/.
+	  the Beep nfs-utils package, available from http://beep-nfs.org/.
 	  Information about using the mount command is available in the
-	  mount(8) man page.  More detail about the Linux NFS client
+	  mount(8) man page.  More detail about the Beep NFS client
 	  implementation is available via the nfs(5) man page.
 
 	  Below you can choose which versions of the NFS protocol are
@@ -81,8 +81,8 @@ config NFS_V4
 	  (RFC 3530) in the kernel's NFS client.
 
 	  To mount NFS servers using NFSv4, you also need to install user
-	  space programs which can be found in the Linux nfs-utils package,
-	  available from http://linux-nfs.org/.
+	  space programs which can be found in the Beep nfs-utils package,
+	  available from http://beep-nfs.org/.
 
 	  If unsure, say Y.
 

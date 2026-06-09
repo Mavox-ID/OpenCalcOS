@@ -1,3 +1,3 @@
-#include <linux/fs.h>
+#include <beep/fs.h>
 
 extern const struct file_operations xen_privcmd_fops;

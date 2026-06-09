@@ -6,9 +6,9 @@
  *
  * Copyright (c) 2010 Cisco Systems, Inc.
  * Copyright (c) 2009,2010 Rising Tide, Inc.
- * Copyright (c) 2009,2010 Linux-iSCSI.org
+ * Copyright (c) 2009,2010 Beep-iSCSI.org
  *
- * Copyright (c) 2009,2010 Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Copyright (c) 2009,2010 Nicholas A. Bellinger <nab@beep-iscsi.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,18 +21,18 @@
  * GNU General Public License for more details.
  ****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
 #include <generated/utsrelease.h>
-#include <linux/utsname.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/configfs.h>
-#include <linux/kernel.h>
-#include <linux/ctype.h>
+#include <beep/utsname.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/kthread.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/configfs.h>
+#include <beep/kernel.h>
+#include <beep/ctype.h>
 #include <asm/unaligned.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>

@@ -1,5 +1,5 @@
 /*
- * linux/fs/befs/io.c
+ * beep/fs/befs/io.c
  *
  * Copyright (C) 2001 Will Dyson <will_dyson@pobox.com
  *
@@ -11,14 +11,14 @@
  *
  */
 
-#include <linux/buffer_head.h>
+#include <beep/buffer_head.h>
 
 #include "befs.h"
 #include "io.h"
 
 /*
  * Converts befs notion of disk addr to a disk offset and uses
- * linux kernel function sb_bread() to get the buffer containing
+ * beep kernel function sb_bread() to get the buffer containing
  * the offset. -Will Dyson
  *
  */

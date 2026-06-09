@@ -252,7 +252,7 @@ struct ccdc_config_params_raw {
 };
 
 #ifdef __KERNEL__
-#include <linux/io.h>
+#include <beep/io.h>
 
 #define CCDC_WIN_PAL	{0, 0, 720, 576}
 #define CCDC_WIN_VGA	{0, 0, 640, 480}

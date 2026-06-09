@@ -23,13 +23,13 @@
  *
  */
 #define DEBUG
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>
 #include <net/bluetooth/hci.h>
 
-#include <linux/ti_wilink_st.h>
-#include <linux/module.h>
+#include <beep/ti_wilink_st.h>
+#include <beep/module.h>
 
 /* Bluetooth Driver Version */
 #define VERSION               "1.0"

@@ -1,5 +1,5 @@
 /*
- * quota.c - NTFS kernel quota ($Quota) handling.  Part of the Linux-NTFS
+ * quota.c - NTFS kernel quota ($Quota) handling.  Part of the Beep-NTFS
  *	     project.
  *
  * Copyright (c) 2004 Anton Altaparmakov
@@ -15,7 +15,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */

@@ -5,8 +5,8 @@
  *
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/init.h>
-#include <linux/i2c.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
 
 static struct i2c_board_info __initdata sead3_i2c_devices[] = {
 	{

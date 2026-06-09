@@ -10,9 +10,9 @@
  * layout-id or device-id property in the device tree.
  */
 #include <asm/prom.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include "../aoa.h"
 #include "../soundbus/soundbus.h"
 

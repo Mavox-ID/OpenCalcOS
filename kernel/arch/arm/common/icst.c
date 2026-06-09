@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/common/icst307.c
+ *  beep/arch/arm/common/icst307.c
  *
  *  Copyright (C) 2003 Deep Blue Solutions, Ltd, All Rights Reserved.
  *
@@ -14,8 +14,8 @@
  *  This is an almost identical implementation to the ICST525 clock generator.
  *  The s2div and idx2s files are different
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
 
 #include <asm/hardware/icst.h>
 

@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel(R) 82576 Virtual Function Linux driver
+  Intel(R) 82576 Virtual Function Beep driver
   Copyright(c) 2009 - 2012 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it
@@ -27,23 +27,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/tcp.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/vmalloc.h>
+#include <beep/pagemap.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/tcp.h>
+#include <beep/ipv6.h>
+#include <beep/slab.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/prefetch.h>
+#include <beep/mii.h>
+#include <beep/ethtool.h>
+#include <beep/if_vlan.h>
+#include <beep/prefetch.h>
 
 #include "igbvf.h"
 

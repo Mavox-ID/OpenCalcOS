@@ -14,10 +14,10 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/clk/sunxi.h>
-#include <linux/of.h>
+#include <beep/clk-provider.h>
+#include <beep/clkdev.h>
+#include <beep/clk/sunxi.h>
+#include <beep/of.h>
 
 static const __initconst struct of_device_id clk_match[] = {
 	{ .compatible = "fixed-clock", .data = of_fixed_clk_setup, },

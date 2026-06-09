@@ -26,16 +26,16 @@
  *	review conversion of r/m/w sequences
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/param.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/err.h>
+#include <beep/param.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
+#include <beep/delay.h>
 #include <asm/intel_scu_ipc.h>
 
 /* PMIC Interrupt registers */

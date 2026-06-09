@@ -8,9 +8,9 @@
 #include <hwregs/reg_map.h>
 #include <hwregs/reg_rdwr.h>
 #include <hwregs/timer_defs.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/module.h>
 
 /*
  * On ETRAX FS, we can check the free-running read-only 100MHz timer

@@ -1,7 +1,7 @@
 #ifdef CONFIG_SCHED_AUTOGROUP
 
-#include <linux/kref.h>
-#include <linux/rwsem.h>
+#include <beep/kref.h>
+#include <beep/rwsem.h>
 
 struct autogroup {
 	/*

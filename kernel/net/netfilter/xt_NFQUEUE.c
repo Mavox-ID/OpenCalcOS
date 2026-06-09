@@ -8,17 +8,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
 
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/jhash.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/jhash.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_arp.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_NFQUEUE.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_arp.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_NFQUEUE.h>
 
 MODULE_AUTHOR("Harald Welte <laforge@netfilter.org>");
 MODULE_DESCRIPTION("Xtables: packet forwarding to netlink");

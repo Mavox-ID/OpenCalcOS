@@ -21,8 +21,8 @@
 /*
  * intel_idle is a cpuidle driver that loads on specific Intel processors
  * in lieu of the legacy ACPI processor_idle driver.  The intent is to
- * make Linux more efficient on these processors, as intel_idle knows
- * more than ACPI, as well as make Linux more immune to ACPI BIOS bugs.
+ * make Beep more efficient on these processors, as intel_idle knows
+ * more than ACPI, as well as make Beep more immune to ACPI BIOS bugs.
  */
 
 /*
@@ -53,14 +53,14 @@
 /* un-comment DEBUG to enable pr_debug() statements */
 #define DEBUG
 
-#include <linux/kernel.h>
-#include <linux/cpuidle.h>
-#include <linux/clockchips.h>
+#include <beep/kernel.h>
+#include <beep/cpuidle.h>
+#include <beep/clockchips.h>
 #include <trace/events/power.h>
-#include <linux/sched.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
+#include <beep/sched.h>
+#include <beep/notifier.h>
+#include <beep/cpu.h>
+#include <beep/module.h>
 #include <asm/cpu_device_id.h>
 #include <asm/mwait.h>
 #include <asm/msr.h>

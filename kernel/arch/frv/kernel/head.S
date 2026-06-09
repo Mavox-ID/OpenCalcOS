@@ -9,9 +9,9 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/threads.h>
-#include <linux/linkage.h>
+#include <beep/init.h>
+#include <beep/threads.h>
+#include <beep/linkage.h>
 #include <asm/thread_info.h>
 #include <asm/ptrace.h>
 #include <asm/page.h>
@@ -103,7 +103,7 @@ __head_no_parameters:
 
 ###############################################################################
 #
-# we need to relocate the SDRAM to 0x00000000 (linux) or 0xC0000000 (uClinux)
+# we need to relocate the SDRAM to 0x00000000 (beep) or 0xC0000000 (uCbeep)
 # - note that we're going to have to run entirely out of the icache whilst
 #   fiddling with the SDRAM controller registers
 #

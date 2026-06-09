@@ -8,7 +8,7 @@
  *
  * Copyright 1993, Drew Eckhardt
  *	Visionary Computing
- *	(Unix and Linux consulting and custom programming)
+ *	(Unix and Beep consulting and custom programming)
  *	drew@colorado.edu
  *      +1 (303) 440-4894
  *
@@ -106,14 +106,14 @@
  * $Log: t128.c,v $
  */
 
-#include <linux/signal.h>
-#include <linux/io.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/delay.h>
+#include <beep/signal.h>
+#include <beep/io.h>
+#include <beep/blkdev.h>
+#include <beep/interrupt.h>
+#include <beep/stat.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/delay.h>
 
 #include "scsi.h"
 #include <scsi/scsi_host.h>
@@ -320,7 +320,7 @@ static int t128_release(struct Scsi_Host *shost)
 /* 
  * XXX Most SCSI boards use this mapping, I could be incorrect.  Some one
  * using hard disks on a trantor should verify that this mapping corresponds
- * to that used by the BIOS / ASPI driver by running the linux fdisk program
+ * to that used by the BIOS / ASPI driver by running the beep fdisk program
  * and matching the H_C_S coordinates to what DOS uses.
  */
 

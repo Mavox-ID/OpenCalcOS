@@ -1,10 +1,10 @@
 /*
  * Serial Sound Interface (I2S) support for SH7760/SH7780
  *
- * Copyright (c) 2007 Manuel Lauss <mano@roarinelk.homelinux.net>
+ * Copyright (c) 2007 Manuel Lauss <mano@roarinelk.homebeep.net>
  *
  *  licensed under the terms outlined in the file COPYING at the root
- *  of the linux kernel sources.
+ *  of the beep kernel sources.
  *
  * dont forget to set IPSEL/OMSEL register bits (in your board code) to
  * enable SSI output pins!
@@ -27,9 +27,9 @@
  *	fixed TDM slot size, regardless of sample resolution.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>
@@ -405,4 +405,4 @@ module_platform_driver(sh4_ssi_driver);
 
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("SuperH onchip SSI (I2S) audio driver");
-MODULE_AUTHOR("Manuel Lauss <mano@roarinelk.homelinux.net>");
+MODULE_AUTHOR("Manuel Lauss <mano@roarinelk.homebeep.net>");

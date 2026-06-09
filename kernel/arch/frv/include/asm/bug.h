@@ -11,7 +11,7 @@
 #ifndef _ASM_BUG_H
 #define _ASM_BUG_H
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #ifdef CONFIG_BUG
 /*

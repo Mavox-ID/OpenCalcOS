@@ -13,13 +13,13 @@
  */
 
 /* This file is machine-generated; DO NOT EDIT! */
-#ifndef __IORPC_LINUX_RPC_H__
-#define __IORPC_LINUX_RPC_H__
+#ifndef __IORPC_BEEP_RPC_H__
+#define __IORPC_BEEP_RPC_H__
 
 #include <hv/iorpc.h>
 
-#include <linux/string.h>
-#include <linux/module.h>
+#include <beep/string.h>
+#include <beep/module.h>
 #include <asm/pgtable.h>
 
 #define IORPC_OP_ARM_POLLFD            IORPC_OPCODE(IORPC_FORMAT_KERNEL_POLLFD, 0x9000)
@@ -35,4 +35,4 @@ int __iorpc_get_mmio_base(int fd, HV_PTE *base);
 
 int __iorpc_check_mmio_offset(int fd, unsigned long offset, unsigned long size);
 
-#endif /* !__IORPC_LINUX_RPC_H__ */
+#endif /* !__IORPC_BEEP_RPC_H__ */

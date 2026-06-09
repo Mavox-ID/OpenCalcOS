@@ -1,8 +1,8 @@
 #ifndef _INET_ECN_H_
 #define _INET_ECN_H_
 
-#include <linux/ip.h>
-#include <linux/skbuff.h>
+#include <beep/ip.h>
+#include <beep/skbuff.h>
 
 #include <net/inet_sock.h>
 #include <net/dsfield.h>

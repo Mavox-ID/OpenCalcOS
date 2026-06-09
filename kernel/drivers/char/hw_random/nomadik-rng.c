@@ -8,15 +8,15 @@
  *  (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/amba/bus.h>
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/amba/bus.h>
+#include <beep/hw_random.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/err.h>
 
 static struct clk *rng_clk;
 

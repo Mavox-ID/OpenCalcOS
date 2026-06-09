@@ -1,14 +1,14 @@
 /*
- *  linux/arch/arm/mach-footbridge/dc21285-timer.c
+ *  beep/arch/arm/mach-footbridge/dc21285-timer.c
  *
  *  Copyright (C) 1998 Russell King.
  *  Copyright (C) 1998 Phil Blundell
  */
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/clockchips.h>
+#include <beep/clocksource.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 
 #include <asm/irq.h>
 

@@ -5,15 +5,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/irq_work.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/irq_work.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/trigger.h>
 
 struct iio_sysfs_trig {
 	struct iio_trigger *trig;
@@ -221,7 +221,7 @@ static void __exit iio_sysfs_trig_exit(void)
 }
 module_exit(iio_sysfs_trig_exit);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("Sysfs based trigger for the iio subsystem");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("platform:iio-trig-sysfs");

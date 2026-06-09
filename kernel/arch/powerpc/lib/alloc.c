@@ -1,8 +1,8 @@
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/bootmem.h>
-#include <linux/string.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/bootmem.h>
+#include <beep/string.h>
 #include <asm/setup.h>
 
 

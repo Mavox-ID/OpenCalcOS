@@ -4,11 +4,11 @@
  * Copyright (C) 2008 Nick Piggin
  * Copyright (C) 2008 Novell Inc.
  */
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/vmstat.h>
-#include <linux/highmem.h>
-#include <linux/swap.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/vmstat.h>
+#include <beep/highmem.h>
+#include <beep/swap.h>
 
 #include <asm/pgtable.h>
 

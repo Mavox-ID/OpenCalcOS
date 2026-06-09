@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/backlight/pwm_bl.c
+ * beep/drivers/video/backlight/pwm_bl.c
  *
  * simple PWM based backlight control, board code has to setup
  * 1) pin configuration so PWM waveforms can output
@@ -10,16 +10,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/fb.h>
+#include <beep/backlight.h>
+#include <beep/err.h>
+#include <beep/pwm.h>
+#include <beep/pwm_backlight.h>
+#include <beep/slab.h>
 
 struct pwm_bl_data {
 	struct pwm_device	*pwm;

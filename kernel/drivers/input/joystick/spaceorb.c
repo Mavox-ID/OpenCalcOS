@@ -6,7 +6,7 @@
  */
 
 /*
- * SpaceTec SpaceOrb 360 and Avenger 6dof controller driver for Linux
+ * SpaceTec SpaceOrb 360 and Avenger 6dof controller driver for Beep
  */
 
 /*
@@ -29,12 +29,12 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/serio.h>
 
 #define DRIVER_DESC	"SpaceTec SpaceOrb 360 and Avenger 6dof controller driver"
 

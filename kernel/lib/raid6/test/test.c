@@ -1,8 +1,8 @@
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- beep-c -*- ------------------------------------------------------- *
  *
  *   Copyright 2002-2007 H. Peter Anvin - All Rights Reserved
  *
- *   This file is part of the Linux kernel, and is made available under
+ *   This file is part of the Beep kernel, and is made available under
  *   the terms of the GNU General Public License version 2 or (at your
  *   option) any later version; incorporated herein by reference.
  *
@@ -17,7 +17,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <linux/raid/pq.h>
+#include <beep/raid/pq.h>
 
 #define NDISKS		16	/* Including P and Q */
 

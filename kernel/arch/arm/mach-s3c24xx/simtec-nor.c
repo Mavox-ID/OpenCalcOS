@@ -1,7 +1,7 @@
-/* linux/arch/arm/mach-s3c2410/nor-simtec.c
+/* beep/arch/arm/mach-s3c2410/nor-simtec.c
  *
  * Copyright (c) 2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * Simtec NOR mapping
@@ -11,16 +11,16 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/partitions.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

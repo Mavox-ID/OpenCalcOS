@@ -6,29 +6,29 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/capability.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/bitops.h>
+#include <beep/capability.h>
 
 /* We are ethernet device */
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <beep/if_ether.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
 #include <net/sock.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
+#include <beep/skbuff.h>
+#include <beep/ip.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 #include <net/arp.h>
 #include <net/dst.h>
-#include <linux/proc_fs.h>
-#include <linux/spinlock.h>
-#include <linux/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/spinlock.h>
+#include <beep/seq_file.h>
 
 /* And atm device */
-#include <linux/atmdev.h>
-#include <linux/atmlec.h>
+#include <beep/atmdev.h>
+#include <beep/atmlec.h>
 
 /* Proxy LEC knows about bridging */
 #if defined(CONFIG_BRIDGE) || defined(CONFIG_BRIDGE_MODULE)
@@ -38,8 +38,8 @@ static unsigned char bridge_ula_lec[] = { 0x01, 0x80, 0xc2, 0x00, 0x00 };
 #endif
 
 /* Modular too */
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
 #include "lec.h"
 #include "lec_arpc.h"
@@ -1220,11 +1220,11 @@ static void lane2_associate_ind(struct net_device *dev, const u8 *mac_addr,
  * lane client modular. October 1997
  */
 
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/param.h>
-#include <linux/atomic.h>
-#include <linux/inetdevice.h>
+#include <beep/types.h>
+#include <beep/timer.h>
+#include <beep/param.h>
+#include <beep/atomic.h>
+#include <beep/inetdevice.h>
 #include <net/route.h>
 
 #if 0

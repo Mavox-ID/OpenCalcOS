@@ -9,14 +9,14 @@
  *
  */
 
-#include <linux/sched.h>
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
+#include <beep/sched.h>
+#include <beep/platform_device.h>
+#include <beep/videodev2.h>
 
 #include <media/videobuf-dma-contig.h>
 #include <media/v4l2-device.h>
 
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 #include <video/omapvrfb.h>
 
 #include "omap_voutdef.h"

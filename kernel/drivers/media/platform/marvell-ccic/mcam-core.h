@@ -6,7 +6,7 @@
 #ifndef _MCAM_CORE_H
 #define _MCAM_CORE_H
 
-#include <linux/list.h>
+#include <beep/list.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-dev.h>
 #include <media/videobuf2-core.h>

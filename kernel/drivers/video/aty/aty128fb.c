@@ -1,5 +1,5 @@
 /* $Id: aty128fb.c,v 1.1.1.1.36.1 1999/12/11 09:03:05 Exp $
- *  linux/drivers/video/aty128fb.c -- Frame buffer device for ATI Rage128
+ *  beep/drivers/video/aty128fb.c -- Frame buffer device for ATI Rage128
  *
  *  Copyright (C) 1999-2003, Brad Douglas <brad@neruo.com>
  *  Copyright (C) 1999, Anthony Tong <atong@uiuc.edu>
@@ -46,22 +46,22 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/uaccess.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/console.h>
-#include <linux/backlight.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/uaccess.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/ioport.h>
+#include <beep/console.h>
+#include <beep/backlight.h>
 #include <asm/io.h>
 
 #ifdef CONFIG_PPC_PMAC

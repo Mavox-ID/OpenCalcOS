@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex Beep Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2007-2012 Emulex.  All rights reserved.           *
  * EMULEX and SLI are trademarks of Emulex.                        *
@@ -18,17 +18,17 @@
  * included with this package.                                     *
  *******************************************************************/
 
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/ctype.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/idr.h>
+#include <beep/interrupt.h>
+#include <beep/kthread.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/spinlock.h>
+#include <beep/ctype.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>
@@ -104,7 +104,7 @@ module_param(lpfc_debugfs_mask_disc_trc, int, S_IRUGO);
 MODULE_PARM_DESC(lpfc_debugfs_mask_disc_trc,
 	"Set debugfs discovery trace mask");
 
-#include <linux/debugfs.h>
+#include <beep/debugfs.h>
 
 static atomic_t lpfc_debugfs_seq_trc_cnt = ATOMIC_INIT(0);
 static unsigned long lpfc_debugfs_start_time = 0L;

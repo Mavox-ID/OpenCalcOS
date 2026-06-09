@@ -9,9 +9,9 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/fs.h>
-#include <linux/mtd/super.h>
-#include <linux/buffer_head.h>
+#include <beep/fs.h>
+#include <beep/mtd/super.h>
+#include <beep/buffer_head.h>
 #include "internal.h"
 
 #if !defined(CONFIG_ROMFS_ON_MTD) && !defined(CONFIG_ROMFS_ON_BLOCK)

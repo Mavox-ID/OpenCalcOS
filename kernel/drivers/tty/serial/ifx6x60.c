@@ -36,31 +36,31 @@
  *	you need to use this driver for another platform.
  *
  *****************************************************************************/
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/termios.h>
-#include <linux/tty.h>
-#include <linux/device.h>
-#include <linux/spi/spi.h>
-#include <linux/kfifo.h>
-#include <linux/tty_flip.h>
-#include <linux/timer.h>
-#include <linux/serial.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/rfkill.h>
-#include <linux/fs.h>
-#include <linux/ip.h>
-#include <linux/dmapool.h>
-#include <linux/gpio.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/spi/ifx_modem.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
+#include <beep/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/termios.h>
+#include <beep/tty.h>
+#include <beep/device.h>
+#include <beep/spi/spi.h>
+#include <beep/kfifo.h>
+#include <beep/tty_flip.h>
+#include <beep/timer.h>
+#include <beep/serial.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/rfkill.h>
+#include <beep/fs.h>
+#include <beep/ip.h>
+#include <beep/dmapool.h>
+#include <beep/gpio.h>
+#include <beep/sched.h>
+#include <beep/time.h>
+#include <beep/wait.h>
+#include <beep/pm.h>
+#include <beep/pm_runtime.h>
+#include <beep/spi/ifx_modem.h>
+#include <beep/delay.h>
+#include <beep/reboot.h>
 
 #include "ifx6x60.h"
 
@@ -310,8 +310,8 @@ static void ifx_spi_timeout(unsigned long arg)
  *	@tty: our tty device
  *	@filp: file handle issuing the request
  *
- *	Map the signal state into Linux modem flags and report the value
- *	in Linux terms
+ *	Map the signal state into Beep modem flags and report the value
+ *	in Beep terms
  */
 static int ifx_spi_tiocmget(struct tty_struct *tty)
 {

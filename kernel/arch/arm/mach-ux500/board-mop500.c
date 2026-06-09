@@ -8,35 +8,35 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/i2c-nomadik.h>
-#include <linux/platform_data/db8500_thermal.h>
-#include <linux/gpio.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/pl022.h>
-#include <linux/amba/serial.h>
-#include <linux/spi/spi.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/regulator/ab8500.h>
-#include <linux/regulator/fixed.h>
-#include <linux/mfd/tc3589x.h>
-#include <linux/mfd/tps6105x.h>
-#include <linux/mfd/abx500/ab8500-gpio.h>
-#include <linux/mfd/abx500/ab8500-codec.h>
-#include <linux/leds-lp5521.h>
-#include <linux/input.h>
-#include <linux/smsc911x.h>
-#include <linux/gpio_keys.h>
-#include <linux/delay.h>
-#include <linux/leds.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_data/pinctrl-nomadik.h>
-#include <linux/platform_data/dma-ste-dma40.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/i2c.h>
+#include <beep/platform_data/i2c-nomadik.h>
+#include <beep/platform_data/db8500_thermal.h>
+#include <beep/gpio.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/pl022.h>
+#include <beep/amba/serial.h>
+#include <beep/spi/spi.h>
+#include <beep/mfd/abx500/ab8500.h>
+#include <beep/regulator/ab8500.h>
+#include <beep/regulator/fixed.h>
+#include <beep/mfd/tc3589x.h>
+#include <beep/mfd/tps6105x.h>
+#include <beep/mfd/abx500/ab8500-gpio.h>
+#include <beep/mfd/abx500/ab8500-codec.h>
+#include <beep/leds-lp5521.h>
+#include <beep/input.h>
+#include <beep/smsc911x.h>
+#include <beep/gpio_keys.h>
+#include <beep/delay.h>
+#include <beep/leds.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/platform_data/pinctrl-nomadik.h>
+#include <beep/platform_data/dma-ste-dma40.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -46,7 +46,7 @@
 #include <mach/setup.h>
 #include <mach/devices.h>
 #include <mach/irqs.h>
-#include <linux/platform_data/crypto-ux500.h>
+#include <beep/platform_data/crypto-ux500.h>
 
 #include "ste-dma40-db8500.h"
 #include "devices-db8500.h"

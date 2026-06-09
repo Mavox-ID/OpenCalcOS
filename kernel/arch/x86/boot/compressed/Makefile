@@ -1,12 +1,12 @@
 #
-# linux/arch/x86/boot/compressed/Makefile
+# beep/arch/x86/boot/compressed/Makefile
 #
-# create a compressed vmlinux image from the original vmlinux
+# create a compressed vmbeep image from the original vmbeep
 #
 
-targets := vmlinux.lds vmlinux vmlinux.bin vmlinux.bin.gz vmlinux.bin.bz2 vmlinux.bin.lzma vmlinux.bin.xz vmlinux.bin.lzo head_$(BITS).o misc.o string.o cmdline.o early_serial_console.o piggy.o
+targets := vmbeep.lds vmbeep vmbeep.bin vmbeep.bin.gz vmbeep.bin.bz2 vmbeep.bin.lzma vmbeep.bin.xz vmbeep.bin.lzo head_$(BITS).o misc.o string.o cmdline.o early_serial_console.o piggy.o
 
-KBUILD_CFLAGS := -m$(BITS) -D__KERNEL__ $(LINUX_INCLUDE) -O2
+KBUILD_CFLAGS := -m$(BITS) -D__KERNEL__ $(BEEP_INCLUDE) -O2
 KBUILD_CFLAGS += -fno-strict-aliasing -fPIC
 KBUILD_CFLAGS += -DDISABLE_BRANCH_PROFILING
 cflags-$(CONFIG_X86_32) := -march=i386
@@ -19,12 +19,12 @@ KBUILD_AFLAGS  := $(KBUILD_CFLAGS) -D__ASSEMBLY__
 GCOV_PROFILE := n
 
 LDFLAGS := -m elf_$(UTS_MACHINE)
-LDFLAGS_vmlinux := -T
+LDFLAGS_vmbeep := -T
 
 hostprogs-y	:= mkpiggy
 HOST_EXTRACFLAGS += -I$(srctree)/tools/include
 
-VMLINUX_OBJS = $(obj)/vmlinux.lds $(obj)/head_$(BITS).o $(obj)/misc.o \
+VMBEEP_OBJS = $(obj)/vmbeep.lds $(obj)/head_$(BITS).o $(obj)/misc.o \
 	$(obj)/string.o $(obj)/cmdline.o $(obj)/early_serial_console.o \
 	$(obj)/piggy.o
 
@@ -32,37 +32,37 @@ $(obj)/eboot.o: KBUILD_CFLAGS += -fshort-wchar -mno-red-zone
 $(obj)/efi_stub_$(BITS).o: KBUILD_CLFAGS += -fshort-wchar -mno-red-zone
 
 ifeq ($(CONFIG_EFI_STUB), y)
-	VMLINUX_OBJS += $(obj)/eboot.o $(obj)/efi_stub_$(BITS).o
+	VMBEEP_OBJS += $(obj)/eboot.o $(obj)/efi_stub_$(BITS).o
 endif
 
-$(obj)/vmlinux: $(VMLINUX_OBJS) FORCE
+$(obj)/vmbeep: $(VMBEEP_OBJS) FORCE
 	$(call if_changed,ld)
 	@:
 
-OBJCOPYFLAGS_vmlinux.bin :=  -R .comment -S
-$(obj)/vmlinux.bin: vmlinux FORCE
+OBJCOPYFLAGS_vmbeep.bin :=  -R .comment -S
+$(obj)/vmbeep.bin: vmbeep FORCE
 	$(call if_changed,objcopy)
 
-targets += vmlinux.bin.all vmlinux.relocs
+targets += vmbeep.bin.all vmbeep.relocs
 
 CMD_RELOCS = arch/x86/tools/relocs
 quiet_cmd_relocs = RELOCS  $@
       cmd_relocs = $(CMD_RELOCS) $< > $@;$(CMD_RELOCS) --abs-relocs $<
-$(obj)/vmlinux.relocs: vmlinux FORCE
+$(obj)/vmbeep.relocs: vmbeep FORCE
 	$(call if_changed,relocs)
 
-vmlinux.bin.all-y := $(obj)/vmlinux.bin
-vmlinux.bin.all-$(CONFIG_X86_NEED_RELOCS) += $(obj)/vmlinux.relocs
+vmbeep.bin.all-y := $(obj)/vmbeep.bin
+vmbeep.bin.all-$(CONFIG_X86_NEED_RELOCS) += $(obj)/vmbeep.relocs
 
-$(obj)/vmlinux.bin.gz: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmbeep.bin.gz: $(vmbeep.bin.all-y) FORCE
 	$(call if_changed,gzip)
-$(obj)/vmlinux.bin.bz2: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmbeep.bin.bz2: $(vmbeep.bin.all-y) FORCE
 	$(call if_changed,bzip2)
-$(obj)/vmlinux.bin.lzma: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmbeep.bin.lzma: $(vmbeep.bin.all-y) FORCE
 	$(call if_changed,lzma)
-$(obj)/vmlinux.bin.xz: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmbeep.bin.xz: $(vmbeep.bin.all-y) FORCE
 	$(call if_changed,xzkern)
-$(obj)/vmlinux.bin.lzo: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmbeep.bin.lzo: $(vmbeep.bin.all-y) FORCE
 	$(call if_changed,lzo)
 
 suffix-$(CONFIG_KERNEL_GZIP)	:= gz
@@ -75,5 +75,5 @@ quiet_cmd_mkpiggy = MKPIGGY $@
       cmd_mkpiggy = $(obj)/mkpiggy $< > $@ || ( rm -f $@ ; false )
 
 targets += piggy.S
-$(obj)/piggy.S: $(obj)/vmlinux.bin.$(suffix-y) $(obj)/mkpiggy FORCE
+$(obj)/piggy.S: $(obj)/vmbeep.bin.$(suffix-y) $(obj)/mkpiggy FORCE
 	$(call if_changed,mkpiggy)

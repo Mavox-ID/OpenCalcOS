@@ -23,7 +23,7 @@
  *
  *      Release 0.02.
  *	Author: Florian Fainelli florian@openwrt.org
- *		use the Linux watchdog/timer APIs
+ *		use the Beep watchdog/timer APIs
  *
  *      The Watchdog is configured to reset the MTX-1
  *      if it is not triggered for 100 seconds.
@@ -34,22 +34,22 @@
  *      it MUST be triggered every 2..95 seconds.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/timer.h>
-#include <linux/completion.h>
-#include <linux/jiffies.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/miscdevice.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/timer.h>
+#include <beep/completion.h>
+#include <beep/jiffies.h>
+#include <beep/watchdog.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
+#include <beep/gpio.h>
 
 #include <asm/mach-au1x00/au1000.h>
 

@@ -4,7 +4,7 @@
  * Copyright (c) 2003 Patrick Mochel
  * Copyright (c) 2003 Matthew Wilcox
  * Copyright (c) 2004 Silicon Graphics, Inc.
- * Copyright (c) 2007 SUSE Linux Products GmbH
+ * Copyright (c) 2007 SUSE Beep Products GmbH
  * Copyright (c) 2007 Tejun Heo <teheo@suse.de>
  *
  * This file is released under the GPLv2.
@@ -14,14 +14,14 @@
 
 #undef DEBUG
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/kobject.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/mm.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/kobject.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/mm.h>
 
 #include <asm/uaccess.h>
 

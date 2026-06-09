@@ -1,4 +1,4 @@
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/visasm.h>
 #include <asm/asi.h>
 

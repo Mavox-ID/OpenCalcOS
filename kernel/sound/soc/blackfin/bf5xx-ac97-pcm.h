@@ -1,5 +1,5 @@
 /*
- * linux/sound/arm/bf5xx-ac97-pcm.h -- ALSA PCM interface for the Blackfin
+ * beep/sound/arm/bf5xx-ac97-pcm.h -- ALSA PCM interface for the Blackfin
  *
  * Copyright 2007 Analog Device Inc.
  *

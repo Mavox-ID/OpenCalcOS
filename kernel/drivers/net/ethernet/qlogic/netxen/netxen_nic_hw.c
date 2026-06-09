@@ -23,7 +23,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include "netxen_nic.h"
 #include "netxen_nic_hw.h"
 

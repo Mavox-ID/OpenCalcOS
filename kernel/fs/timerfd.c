@@ -8,21 +8,21 @@
  *
  */
 
-#include <linux/file.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/time.h>
-#include <linux/hrtimer.h>
-#include <linux/anon_inodes.h>
-#include <linux/timerfd.h>
-#include <linux/syscalls.h>
-#include <linux/rcupdate.h>
+#include <beep/file.h>
+#include <beep/poll.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/time.h>
+#include <beep/hrtimer.h>
+#include <beep/anon_inodes.h>
+#include <beep/timerfd.h>
+#include <beep/syscalls.h>
+#include <beep/rcupdate.h>
 
 struct timerfd_ctx {
 	struct hrtimer tmr;

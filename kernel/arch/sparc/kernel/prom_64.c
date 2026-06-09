@@ -15,12 +15,12 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/memblock.h>
+#include <beep/of.h>
 
 #include <asm/prom.h>
 #include <asm/oplib.h>
@@ -71,7 +71,7 @@ void * __init prom_early_alloc(unsigned long size)
  */
 static void __init sun4v_path_component(struct device_node *dp, char *tmp_buf)
 {
-	struct linux_prom64_registers *regs;
+	struct beep_prom64_registers *regs;
 	struct property *rprop;
 	u32 high_bits, low_bits, type;
 
@@ -112,7 +112,7 @@ static void __init sun4v_path_component(struct device_node *dp, char *tmp_buf)
 
 static void __init sun4u_path_component(struct device_node *dp, char *tmp_buf)
 {
-	struct linux_prom64_registers *regs;
+	struct beep_prom64_registers *regs;
 	struct property *prop;
 
 	prop = of_find_property(dp, "reg", NULL);
@@ -147,7 +147,7 @@ static void __init sun4u_path_component(struct device_node *dp, char *tmp_buf)
 /* "name@slot,offset"  */
 static void __init sbus_path_component(struct device_node *dp, char *tmp_buf)
 {
-	struct linux_prom_registers *regs;
+	struct beep_prom_registers *regs;
 	struct property *prop;
 
 	prop = of_find_property(dp, "reg", NULL);
@@ -164,7 +164,7 @@ static void __init sbus_path_component(struct device_node *dp, char *tmp_buf)
 /* "name@devnum[,func]" */
 static void __init pci_path_component(struct device_node *dp, char *tmp_buf)
 {
-	struct linux_prom_pci_registers *regs;
+	struct beep_prom_pci_registers *regs;
 	struct property *prop;
 	unsigned int devfn;
 
@@ -189,7 +189,7 @@ static void __init pci_path_component(struct device_node *dp, char *tmp_buf)
 /* "name@UPA_PORTID,offset" */
 static void __init upa_path_component(struct device_node *dp, char *tmp_buf)
 {
-	struct linux_prom64_registers *regs;
+	struct beep_prom64_registers *regs;
 	struct property *prop;
 
 	prop = of_find_property(dp, "reg", NULL);
@@ -226,7 +226,7 @@ static void __init vdev_path_component(struct device_node *dp, char *tmp_buf)
 /* "name@addrhi,addrlo" */
 static void __init ebus_path_component(struct device_node *dp, char *tmp_buf)
 {
-	struct linux_prom64_registers *regs;
+	struct beep_prom64_registers *regs;
 	struct property *prop;
 
 	prop = of_find_property(dp, "reg", NULL);

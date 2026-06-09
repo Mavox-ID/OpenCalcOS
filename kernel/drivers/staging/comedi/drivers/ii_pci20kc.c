@@ -7,7 +7,7 @@
  *	with suggestions from David Schleef
  *			16.06.2000
  *
- *	Linux device driver for COMEDI
+ *	Beep device driver for COMEDI
  *	Intelligent Instrumentation
  *	PCI-20001 C-2A Carrier Board
  *	PCI-20341 M-1A 16-Bit analog input module

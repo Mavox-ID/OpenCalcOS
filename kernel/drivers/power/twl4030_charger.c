@@ -12,17 +12,17 @@
  * (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/i2c/twl.h>
-#include <linux/power_supply.h>
-#include <linux/notifier.h>
-#include <linux/usb/otg.h>
-#include <linux/regulator/machine.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/i2c/twl.h>
+#include <beep/power_supply.h>
+#include <beep/notifier.h>
+#include <beep/usb/otg.h>
+#include <beep/regulator/machine.h>
 
 #define TWL4030_BCIMSTATEC	0x02
 #define TWL4030_BCIICHG		0x08

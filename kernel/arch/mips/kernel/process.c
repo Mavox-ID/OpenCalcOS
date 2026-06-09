@@ -4,27 +4,27 @@
  * for more details.
  *
  * Copyright (C) 1994 - 1999, 2000 by Ralf Baechle and others.
- * Copyright (C) 2005, 2006 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2005, 2006 by Ralf Baechle (ralf@beep-mips.org)
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  * Copyright (C) 2004 Thiemo Seufer
  */
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/tick.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/export.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/personality.h>
-#include <linux/sys.h>
-#include <linux/user.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/kallsyms.h>
-#include <linux/random.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/tick.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/export.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/personality.h>
+#include <beep/sys.h>
+#include <beep/user.h>
+#include <beep/init.h>
+#include <beep/completion.h>
+#include <beep/kallsyms.h>
+#include <beep/random.h>
 
 #include <asm/asm.h>
 #include <asm/bootinfo.h>

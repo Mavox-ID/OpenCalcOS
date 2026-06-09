@@ -15,7 +15,7 @@
 #ifndef __APPARMOR_H
 #define __APPARMOR_H
 
-#include <linux/fs.h>
+#include <beep/fs.h>
 
 #include "match.h"
 

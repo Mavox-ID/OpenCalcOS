@@ -14,12 +14,12 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/capability.h>
-#include <linux/iscsi_boot_sysfs.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/sysfs.h>
+#include <beep/capability.h>
+#include <beep/iscsi_boot_sysfs.h>
 
 
 MODULE_AUTHOR("Mike Christie <michaelc@cs.wisc.edu>");

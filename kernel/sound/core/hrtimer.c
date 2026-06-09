@@ -18,11 +18,11 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/hrtimer.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/hrtimer.h>
 #include <sound/core.h>
 #include <sound/timer.h>
 

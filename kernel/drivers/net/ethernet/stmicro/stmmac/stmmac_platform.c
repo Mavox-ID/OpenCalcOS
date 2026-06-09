@@ -22,10 +22,10 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 *******************************************************************************/
 
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_net.h>
 #include "stmmac.h"
 
 #ifdef CONFIG_OF

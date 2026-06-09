@@ -33,38 +33,38 @@
  *  Please note that this driver is based on information in the Discretix
  *  CryptoCell 5.2 Driver Implementation Guide; the Discretix CryptoCell 5.2
  *  Integration Intel Medfield appendix; the Discretix CryptoCell 5.2
- *  Linux Driver Integration Guide; and the Discretix CryptoCell 5.2 System
+ *  Beep Driver Integration Guide; and the Discretix CryptoCell 5.2 System
  *  Overview and Integration Guide.
  */
 /* #define DEBUG */
 /* #define SEP_PERF_DEBUG */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/miscdevice.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/kdev_t.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/poll.h>
-#include <linux/wait.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/ioctl.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/miscdevice.h>
+#include <beep/fs.h>
+#include <beep/cdev.h>
+#include <beep/kdev_t.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/poll.h>
+#include <beep/wait.h>
+#include <beep/pci.h>
+#include <beep/pm_runtime.h>
+#include <beep/slab.h>
+#include <beep/ioctl.h>
 #include <asm/current.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/pagemap.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/pagemap.h>
 #include <asm/cacheflush.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/async.h>
-#include <linux/crypto.h>
+#include <beep/delay.h>
+#include <beep/jiffies.h>
+#include <beep/async.h>
+#include <beep/crypto.h>
 #include <crypto/internal/hash.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/sha.h>

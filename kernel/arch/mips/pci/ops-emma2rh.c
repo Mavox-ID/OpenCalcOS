@@ -20,9 +20,9 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
 
 #include <asm/addrspace.h>
 #include <asm/debug.h>

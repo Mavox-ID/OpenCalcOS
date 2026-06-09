@@ -4,9 +4,9 @@
  *
  * \u00a9 Copyright 2007-2011 RisingTide Systems LLC.
  *
- * Licensed to the Linux Foundation under the General Public License (GPL) version 2.
+ * Licensed to the Beep Foundation under the General Public License (GPL) version 2.
  *
- * Author: Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Author: Nicholas A. Bellinger <nab@beep-iscsi.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,9 +19,9 @@
  * GNU General Public License for more details.
  ****************************************************************************/
 
-#include <linux/configfs.h>
-#include <linux/export.h>
-#include <linux/inet.h>
+#include <beep/configfs.h>
+#include <beep/export.h>
+#include <beep/inet.h>
 #include <target/target_core_base.h>
 #include <target/target_core_fabric.h>
 #include <target/target_core_fabric_configfs.h>
@@ -1266,7 +1266,7 @@ static ssize_t lio_target_wwn_show_attr_lio_version(
 	struct target_fabric_configfs *tf,
 	char *page)
 {
-	return sprintf(page, "RisingTide Systems Linux-iSCSI Target "ISCSIT_VERSION"\n");
+	return sprintf(page, "RisingTide Systems Beep-iSCSI Target "ISCSIT_VERSION"\n");
 }
 
 TF_WWN_ATTR_RO(lio_target, lio_version);

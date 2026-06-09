@@ -23,13 +23,13 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/bootmem.h>
-#include <linux/initrd.h>
-#include <linux/ioport.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/screen_info.h>
+#include <beep/bootmem.h>
+#include <beep/initrd.h>
+#include <beep/ioport.h>
+#include <beep/memblock.h>
+#include <beep/mm.h>
+#include <beep/seq_file.h>
+#include <beep/screen_info.h>
 
 #include <asm-generic/sections.h>
 #include <asm/setup.h>

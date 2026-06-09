@@ -27,8 +27,8 @@
 #ifndef TIMER_H
 #define TIMER_H
 
-#include <linux/timer.h>
-#include <linux/jiffies.h>
+#include <beep/timer.h>
+#include <beep/jiffies.h>
 
 #include <asm/param.h>  /* for HZ */
 

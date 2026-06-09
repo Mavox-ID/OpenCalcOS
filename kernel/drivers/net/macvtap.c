@@ -1,26 +1,26 @@
-#include <linux/etherdevice.h>
-#include <linux/if_macvlan.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/nsproxy.h>
-#include <linux/compat.h>
-#include <linux/if_tun.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/cache.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/cdev.h>
-#include <linux/idr.h>
-#include <linux/fs.h>
+#include <beep/etherdevice.h>
+#include <beep/if_macvlan.h>
+#include <beep/if_vlan.h>
+#include <beep/interrupt.h>
+#include <beep/nsproxy.h>
+#include <beep/compat.h>
+#include <beep/if_tun.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/cache.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/wait.h>
+#include <beep/cdev.h>
+#include <beep/idr.h>
+#include <beep/fs.h>
 
 #include <net/net_namespace.h>
 #include <net/rtnetlink.h>
 #include <net/sock.h>
-#include <linux/virtio_net.h>
+#include <beep/virtio_net.h>
 
 /*
  * A macvtap queue is the central object of this driver, it connects

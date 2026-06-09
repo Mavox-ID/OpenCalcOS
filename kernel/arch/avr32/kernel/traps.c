@@ -6,15 +6,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/bug.h>
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/kallsyms.h>
-#include <linux/kdebug.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
+#include <beep/bug.h>
+#include <beep/hardirq.h>
+#include <beep/init.h>
+#include <beep/kallsyms.h>
+#include <beep/kdebug.h>
+#include <beep/module.h>
+#include <beep/notifier.h>
+#include <beep/sched.h>
+#include <beep/uaccess.h>
 
 #include <asm/addrspace.h>
 #include <asm/mmu_context.h>

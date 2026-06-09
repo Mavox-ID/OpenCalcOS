@@ -5,13 +5,13 @@
  * only version 2 as published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/usb/msm_hsusb_hw.h>
-#include <linux/usb/ulpi.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/chipidea.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/usb/msm_hsusb_hw.h>
+#include <beep/usb/ulpi.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb/chipidea.h>
 
 #include "ci.h"
 

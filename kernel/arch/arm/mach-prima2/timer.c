@@ -6,17 +6,17 @@
  * Licensed under GPLv2 or later.
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/bitops.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/clockchips.h>
+#include <beep/clocksource.h>
+#include <beep/bitops.h>
+#include <beep/irq.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
 #include <mach/map.h>
 #include <asm/sched_clock.h>
 #include <asm/mach/time.h>

@@ -15,31 +15,31 @@
  * kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/debugfs.h>
-#include <linux/dmaengine.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/timer.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/of_device.h>
-#include <linux/omap-dma.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/core.h>
-#include <linux/mmc/mmc.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_data/mmc-omap.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/debugfs.h>
+#include <beep/dmaengine.h>
+#include <beep/seq_file.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/timer.h>
+#include <beep/clk.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
+#include <beep/of_device.h>
+#include <beep/omap-dma.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/core.h>
+#include <beep/mmc/mmc.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/regulator/consumer.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/pm_runtime.h>
+#include <beep/platform_data/mmc-omap.h>
 
 /* OMAP HSMMC Host Controller Registers */
 #define OMAP_HSMMC_SYSSTATUS	0x0014

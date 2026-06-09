@@ -10,17 +10,17 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/pm_runtime.h>
 
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
 
-#include <linux/platform_data/asoc-s3c.h>
+#include <beep/platform_data/asoc-s3c.h>
 
 #include "dma.h"
 #include "idma.h"

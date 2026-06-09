@@ -10,16 +10,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/power_supply.h>
-#include <linux/max17040_battery.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/mutex.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/delay.h>
+#include <beep/power_supply.h>
+#include <beep/max17040_battery.h>
+#include <beep/slab.h>
 
 #define MAX17040_VCELL_MSB	0x02
 #define MAX17040_VCELL_LSB	0x03

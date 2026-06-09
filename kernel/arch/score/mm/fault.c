@@ -23,17 +23,17 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/module.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
 
 /*
  * This routine handles page faults.  It determines the address,

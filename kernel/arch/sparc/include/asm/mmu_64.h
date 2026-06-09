@@ -1,7 +1,7 @@
 #ifndef __MMU_H
 #define __MMU_H
 
-#include <linux/const.h>
+#include <beep/const.h>
 #include <asm/page.h>
 #include <asm/hypervisor.h>
 

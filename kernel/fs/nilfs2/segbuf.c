@@ -21,11 +21,11 @@
  *
  */
 
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/crc32.h>
-#include <linux/backing-dev.h>
-#include <linux/slab.h>
+#include <beep/buffer_head.h>
+#include <beep/writeback.h>
+#include <beep/crc32.h>
+#include <beep/backing-dev.h>
+#include <beep/slab.h>
 #include "page.h"
 #include "segbuf.h"
 

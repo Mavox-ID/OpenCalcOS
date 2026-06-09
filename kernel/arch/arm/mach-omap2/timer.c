@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/timer.c
+ * beep/arch/arm/mach-omap2/timer.c
  *
  * OMAP2 GP timer support.
  *
@@ -26,21 +26,21 @@
  * License. See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/dmtimer-omap.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/interrupt.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/platform_device.h>
+#include <beep/platform_data/dmtimer-omap.h>
 
 #include <asm/mach/time.h>
 #include <asm/smp_twd.h>

@@ -1,8 +1,8 @@
-/* typhoon.c: A Linux Ethernet device driver for 3Com 3CR990 family of NICs */
+/* typhoon.c: A Beep Ethernet device driver for 3Com 3CR990 family of NICs */
 /*
 	Written 2002-2004 by David Dillow <dave@thedillows.org>
 	Based on code written 1998-2000 by Donald Becker <becker@scyld.com> and
-	Linux 2.2.x driver by David P. McLean <davidpmclean@yahoo.com>.
+	Beep 2.2.x driver by David P. McLean <davidpmclean@yahoo.com>.
 
 	This software may be used and distributed according to the terms of
 	the GNU General Public License (GPL), incorporated herein by reference.
@@ -98,31 +98,31 @@ static const int multicast_filter_limit = 32;
 
 #define pr_fmt(fmt)		KBUILD_MODNAME " " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/crc32.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/ethtool.h>
+#include <beep/if_vlan.h>
+#include <beep/crc32.h>
+#include <beep/bitops.h>
 #include <asm/processor.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
-#include <linux/in6.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
+#include <beep/in6.h>
+#include <beep/dma-mapping.h>
+#include <beep/firmware.h>
 
 #include "typhoon.h"
 
@@ -910,7 +910,7 @@ typhoon_do_get_stats(struct typhoon *tp)
 	if(err < 0)
 		return err;
 
-	/* 3Com's Linux driver uses txMultipleCollisions as it's
+	/* 3Com's Beep driver uses txMultipleCollisions as it's
 	 * collisions value, but there is some other collision info as well...
 	 *
 	 * The extra status reported would be a good candidate for

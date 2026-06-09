@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/atafb.c -- Atari builtin chipset frame buffer device
+ * beep/drivers/video/atafb.c -- Atari builtin chipset frame buffer device
  *
  *  Copyright (C) 1994 Martin Schaller & Roman Hodek
  *
@@ -47,17 +47,17 @@
 #define ATAFB_EXT
 #define ATAFB_FALCON
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
 
 #include <asm/setup.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 #include <asm/pgtable.h>
 #include <asm/irq.h>
 #include <asm/io.h>
@@ -66,7 +66,7 @@
 #include <asm/atariints.h>
 #include <asm/atari_stram.h>
 
-#include <linux/fb.h>
+#include <beep/fb.h>
 #include <asm/atarikb.h>
 
 #include "c2p.h"

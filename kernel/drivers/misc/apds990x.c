@@ -22,17 +22,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/delay.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/i2c/apds990x.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/mutex.h>
+#include <beep/regulator/consumer.h>
+#include <beep/pm_runtime.h>
+#include <beep/delay.h>
+#include <beep/wait.h>
+#include <beep/slab.h>
+#include <beep/i2c/apds990x.h>
 
 /* Register map */
 #define APDS990X_ENABLE	 0x00 /* Enable of states and interrupts */

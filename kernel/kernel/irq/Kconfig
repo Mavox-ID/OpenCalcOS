@@ -52,7 +52,7 @@ config IRQ_EDGE_EOI_HANDLER
 config GENERIC_IRQ_CHIP
        bool
 
-# Generic irq_domain hw <--> linux irq number translation
+# Generic irq_domain hw <--> beep irq number translation
 config IRQ_DOMAIN
 	bool
 
@@ -61,7 +61,7 @@ config IRQ_DOMAIN_DEBUG
 	depends on IRQ_DOMAIN && DEBUG_FS
 	help
 	  This option will show the mapping relationship between hardware irq
-	  numbers and Linux irq numbers. The mapping is exposed via debugfs
+	  numbers and Beep irq numbers. The mapping is exposed via debugfs
 	  in the file "irq_domain_mapping".
 
 	  If you don't know what this means you don't need it.

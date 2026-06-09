@@ -22,10 +22,10 @@
  */
 
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <beep/device.h>
+#include <beep/hid.h>
+#include <beep/module.h>
+#include <beep/usb.h>
 #include <asm/unaligned.h>
 #include "usbhid/usbhid.h"
 #include "hid-ids.h"

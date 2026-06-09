@@ -1,7 +1,7 @@
 /*
  * OpenRISC asm-offsets.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -23,18 +23,18 @@
  * #defines from the assembly-language output.
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/thread_info.h>
-#include <linux/kbuild.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/io.h>
+#include <beep/thread_info.h>
+#include <beep/kbuild.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>
 #include <asm/processor.h>

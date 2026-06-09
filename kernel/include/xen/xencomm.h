@@ -19,8 +19,8 @@
  *          Jerone Young <jyoung5@us.ibm.com>
  */
 
-#ifndef _LINUX_XENCOMM_H_
-#define _LINUX_XENCOMM_H_
+#ifndef _BEEP_XENCOMM_H_
+#define _BEEP_XENCOMM_H_
 
 #include <xen/interface/xencomm.h>
 
@@ -74,4 +74,4 @@ static inline void *xencomm_pa(void *ptr)
 
 #define xen_guest_handle(hnd)  ((hnd).p)
 
-#endif /* _LINUX_XENCOMM_H_ */
+#endif /* _BEEP_XENCOMM_H_ */

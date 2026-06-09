@@ -1,9 +1,9 @@
 /* Copyright (C) 1995, 1996, 1997 Olaf Kirch <okir@monad.swb.de> */
 
-#ifndef _LINUX_NFSD_FH_INT_H
-#define _LINUX_NFSD_FH_INT_H
+#ifndef _BEEP_NFSD_FH_INT_H
+#define _BEEP_NFSD_FH_INT_H
 
-#include <linux/nfsd/nfsfh.h>
+#include <beep/nfsd/nfsfh.h>
 
 enum nfsd_fsid {
 	FSID_DEV = 0,
@@ -203,4 +203,4 @@ fh_unlock(struct svc_fh *fhp)
 	}
 }
 
-#endif /* _LINUX_NFSD_FH_INT_H */
+#endif /* _BEEP_NFSD_FH_INT_H */

@@ -4,7 +4,7 @@
  *
  * PURPOSE:
  *      Use the HIP core lib to initialise the UniFi chip.
- *      It is part of the porting exercise in Linux.
+ *      It is part of the porting exercise in Beep.
  *
  * Copyright (C) 2009 by Cambridge Silicon Radio Ltd.
  *
@@ -32,7 +32,7 @@ extern int led_mask;
  *
  *      In a simple implementation, all this function needs to do is call
  *      unifi_init_card() and then unifi_card_info().
- *      In the Linux implementation, it will retry to initialise UniFi or
+ *      In the Beep implementation, it will retry to initialise UniFi or
  *      try to debug the reasons if unifi_init_card() returns an error.
  *
  *  Arguments:

@@ -12,23 +12,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/etherdevice.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/ssb/ssb.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/if_ether.h>
+#include <beep/if_vlan.h>
+#include <beep/etherdevice.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/ssb/ssb.h>
+#include <beep/slab.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>

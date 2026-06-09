@@ -1,7 +1,7 @@
 #ifndef _ASM_M32R_PGALLOC_H
 #define _ASM_M32R_PGALLOC_H
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 #include <asm/io.h>
 

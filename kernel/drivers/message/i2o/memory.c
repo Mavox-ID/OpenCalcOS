@@ -10,11 +10,11 @@
  *	option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/i2o.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/i2o.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 #include "core.h"
 
 /* Protects our 32/64bit mask switching */

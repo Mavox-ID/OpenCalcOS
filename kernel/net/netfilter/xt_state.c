@@ -8,11 +8,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
 #include <net/netfilter/nf_conntrack.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_state.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_state.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Rusty Russell <rusty@rustcorp.com.au>");

@@ -1,16 +1,16 @@
 /*
  * fs/logfs/dev_bdev.c	- Device access methods for block devices
  *
- * As should be obvious for Linux kernel code, license is GPLv2
+ * As should be obvious for Beep kernel code, license is GPLv2
  *
  * Copyright (c) 2005-2008 Joern Engel <joern@logfs.org>
  */
 #include "logfs.h"
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/gfp.h>
-#include <linux/prefetch.h>
+#include <beep/bio.h>
+#include <beep/blkdev.h>
+#include <beep/buffer_head.h>
+#include <beep/gfp.h>
+#include <beep/prefetch.h>
 
 #define PAGE_OFS(ofs) ((ofs) & (PAGE_SIZE-1))
 

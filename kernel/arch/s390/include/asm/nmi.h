@@ -11,7 +11,7 @@
 #ifndef _ASM_S390_NMI_H
 #define _ASM_S390_NMI_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct mci {
 	__u32 sd :  1; /* 00 system damage */

@@ -1,5 +1,5 @@
 /*
- * Colour AR M64278(VGA) driver for Video4Linux
+ * Colour AR M64278(VGA) driver for Video4Beep
  *
  * Copyright (C) 2003	Takeo Takahashi <takahashi.takeo@renesas.com>
  *
@@ -18,21 +18,21 @@
  * 2003-09-01:	Support w3cam by Takeo Takahashi
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/videodev2.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-fh.h>
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 
 #include <asm/uaccess.h>
 #include <asm/m32r.h>
@@ -50,7 +50,7 @@
 
 /*
  * USE_INT is always 0, interrupt mode is not available
- * on linux due to lack of speed
+ * on beep due to lack of speed
  */
 #define USE_INT		0	/* Don't modify */
 
@@ -227,7 +227,7 @@ static void init_iic(void)
 
 /**************************************************************************
  *
- * Video4Linux Interface functions
+ * Video4Beep Interface functions
  *
  **************************************************************************/
 
@@ -705,7 +705,7 @@ static int ar_initialize(struct ar *ar)
 
 /****************************************************************************
  *
- * Video4Linux Module functions
+ * Video4Beep Module functions
  *
  ****************************************************************************/
 
@@ -880,6 +880,6 @@ module_init(ar_init_module);
 module_exit(ar_cleanup_module);
 
 MODULE_AUTHOR("Takeo Takahashi <takahashi.takeo@renesas.com>");
-MODULE_DESCRIPTION("Colour AR M64278(VGA) for Video4Linux");
+MODULE_DESCRIPTION("Colour AR M64278(VGA) for Video4Beep");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(VERSION);

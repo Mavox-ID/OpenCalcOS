@@ -33,9 +33,9 @@
 #ifndef XILINX_HWICAP_H_	/* prevent circular inclusions */
 #define XILINX_HWICAP_H_	/* by using protection macros */
 
-#include <linux/types.h>
-#include <linux/cdev.h>
-#include <linux/platform_device.h>
+#include <beep/types.h>
+#include <beep/cdev.h>
+#include <beep/platform_device.h>
 
 #include <asm/io.h>
 

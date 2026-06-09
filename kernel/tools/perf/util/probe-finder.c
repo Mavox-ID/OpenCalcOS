@@ -32,7 +32,7 @@
 #include <stdarg.h>
 #include <dwarf-regs.h>
 
-#include <linux/bitops.h>
+#include <beep/bitops.h>
 #include "event.h"
 #include "debug.h"
 #include "util.h"
@@ -150,7 +150,7 @@ error:
 
 #if _ELFUTILS_PREREQ(0, 148)
 /* This method is buggy if elfutils is older than 0.148 */
-static int __linux_kernel_find_elf(Dwfl_Module *mod,
+static int __beep_kernel_find_elf(Dwfl_Module *mod,
 				   void **userdata,
 				   const char *module_name,
 				   Dwarf_Addr base,
@@ -168,7 +168,7 @@ static int __linux_kernel_find_elf(Dwfl_Module *mod,
 		}
 	}
 	/* If failed, try to call standard method */
-	return dwfl_linux_kernel_find_elf(mod, userdata, module_name, base,
+	return dwfl_beep_kernel_find_elf(mod, userdata, module_name, base,
 					  file_name, elfp);
 }
 
@@ -176,8 +176,8 @@ static const Dwfl_Callbacks kernel_callbacks = {
 	.find_debuginfo = dwfl_standard_find_debuginfo,
 	.debuginfo_path = &debuginfo_path,
 
-	.find_elf = __linux_kernel_find_elf,
-	.section_address = dwfl_linux_kernel_module_section_address,
+	.find_elf = __beep_kernel_find_elf,
+	.section_address = dwfl_beep_kernel_module_section_address,
 };
 
 /* Get a Dwarf from live kernel image */
@@ -189,8 +189,8 @@ static int debuginfo__init_online_kernel_dwarf(struct debuginfo *self,
 		return -EINVAL;
 
 	/* Load the kernel dwarves: Don't care the result here */
-	dwfl_linux_kernel_report_kernel(self->dwfl);
-	dwfl_linux_kernel_report_modules(self->dwfl);
+	dwfl_beep_kernel_report_kernel(self->dwfl);
+	dwfl_beep_kernel_report_modules(self->dwfl);
 
 	self->dbg = dwfl_addrdwarf(self->dwfl, addr, &self->bias);
 	/* Here, check whether we could get a real dwarf */
@@ -212,7 +212,7 @@ static int debuginfo__init_online_kernel_dwarf(struct debuginfo *self,
 	const char *path = kernel_get_module_path("kernel");
 
 	if (!path) {
-		pr_err("Failed to find vmlinux path\n");
+		pr_err("Failed to find vmbeep path\n");
 		return -ENOENT;
 	}
 

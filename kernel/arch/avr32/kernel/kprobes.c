@@ -11,11 +11,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kprobes.h>
-#include <linux/ptrace.h>
+#include <beep/kprobes.h>
+#include <beep/ptrace.h>
 
 #include <asm/cacheflush.h>
-#include <linux/kdebug.h>
+#include <beep/kdebug.h>
 #include <asm/ocd.h>
 
 DEFINE_PER_CPU(struct kprobe *, current_kprobe);

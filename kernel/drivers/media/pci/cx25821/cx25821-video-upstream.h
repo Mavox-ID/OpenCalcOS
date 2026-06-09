@@ -20,8 +20,8 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
 
 #define OUTPUT_FRMT_656       0
 #define OPEN_FILE_1           0

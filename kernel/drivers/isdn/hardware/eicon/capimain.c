@@ -10,12 +10,12 @@
  * of the GNU General Public License, incorporated herein by reference.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
 #include <asm/uaccess.h>
-#include <linux/seq_file.h>
-#include <linux/skbuff.h>
+#include <beep/seq_file.h>
+#include <beep/skbuff.h>
 
 #include "os_capi.h"
 

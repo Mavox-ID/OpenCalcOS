@@ -9,15 +9,15 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_fs_sb.h>
-#include <linux/in6.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_fs_sb.h>
+#include <beep/in6.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
 
 #include "internal.h"
 #include "iostat.h"

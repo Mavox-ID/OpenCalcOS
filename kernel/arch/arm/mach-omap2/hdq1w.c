@@ -22,10 +22,10 @@
  * 02110-1301 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
 
 #include "omap_hwmod.h"
 #include "omap_device.h"

@@ -50,14 +50,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>		/* __init */
-#include <linux/module.h>
-#include <linux/kernel.h>	/* printk(), and other useful stuff */
-#include <linux/stddef.h>	/* offsetof(), etc. */
-#include <linux/errno.h>	/* return codes */
-#include <linux/cycx_drv.h>	/* API definitions */
-#include <linux/cycx_cfm.h>	/* CYCX firmware module definitions */
-#include <linux/delay.h>	/* udelay, msleep_interruptible */
+#include <beep/init.h>		/* __init */
+#include <beep/module.h>
+#include <beep/kernel.h>	/* printk(), and other useful stuff */
+#include <beep/stddef.h>	/* offsetof(), etc. */
+#include <beep/errno.h>	/* return codes */
+#include <beep/cycx_drv.h>	/* API definitions */
+#include <beep/cycx_cfm.h>	/* CYCX firmware module definitions */
+#include <beep/delay.h>	/* udelay, msleep_interruptible */
 #include <asm/io.h>		/* read[wl], write[wl], ioremap, iounmap */
 
 #define	MOD_VERSION	0

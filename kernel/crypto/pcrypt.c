@@ -20,13 +20,13 @@
 
 #include <crypto/algapi.h>
 #include <crypto/internal/aead.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
-#include <linux/kobject.h>
-#include <linux/cpu.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/notifier.h>
+#include <beep/kobject.h>
+#include <beep/cpu.h>
 #include <crypto/pcrypt.h>
 
 struct padata_pcrypt {

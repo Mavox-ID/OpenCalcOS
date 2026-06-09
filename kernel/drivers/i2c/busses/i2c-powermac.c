@@ -20,13 +20,13 @@
 
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
 #include <asm/prom.h>
 #include <asm/pmac_low_i2c.h>
 

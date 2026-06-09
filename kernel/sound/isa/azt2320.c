@@ -30,12 +30,12 @@
 */
 
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/pnp.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/wait.h>
+#include <beep/pnp.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/wss.h>

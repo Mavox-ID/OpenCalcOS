@@ -1,5 +1,5 @@
 /*
- *	linux/arch/alpha/kernel/sys_jensen.c
+ *	beep/arch/alpha/kernel/sys_jensen.c
  *
  *	Copyright (C) 1995 Linus Torvalds
  *	Copyright (C) 1998, 1999 Richard Henderson
@@ -7,12 +7,12 @@
  * Code supporting the Jensen.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/pci.h>
+#include <beep/init.h>
 
 #include <asm/ptrace.h>
 

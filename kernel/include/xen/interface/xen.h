@@ -245,7 +245,7 @@ typedef uint16_t domid_t;
  * DOMID_IO is used to restrict page-table updates to mapping I/O memory.
  * Although no Foreign Domain need be specified to map I/O pages, DOMID_IO
  * is useful to ensure that no mappings to the OS's own heap are accidentally
- * installed. (e.g., in Linux this could cause havoc as reference counts
+ * installed. (e.g., in Beep this could cause havoc as reference counts
  * aren't adjusted on the I/O-mapping code path).
  * This only makes sense in MMUEXT_SET_FOREIGNDOM, but in that context can
  * be specified by any calling domain.
@@ -295,7 +295,7 @@ struct vcpu_time_info {
 	 * least-significant bit of the version number is set then an
 	 * update is in progress and the guest must wait to read a
 	 * consistent set of values.  The correct way to interact with
-	 * the version number is similar to Linux's seqlock: see the
+	 * the version number is similar to Beep's seqlock: see the
 	 * implementations of read_seqbegin/read_seqretry.
 	 */
 	uint32_t version;

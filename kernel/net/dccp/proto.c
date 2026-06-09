@@ -9,18 +9,18 @@
  *	published by the Free Software Foundation.
  */
 
-#include <linux/dccp.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/in.h>
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <beep/dccp.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/in.h>
+#include <beep/if_arp.h>
+#include <beep/init.h>
+#include <beep/random.h>
+#include <beep/slab.h>
 #include <net/checksum.h>
 
 #include <net/inet_sock.h>
@@ -28,10 +28,10 @@
 #include <net/xfrm.h>
 
 #include <asm/ioctls.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/poll.h>
+#include <beep/spinlock.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/poll.h>
 
 #include "ccid.h"
 #include "dccp.h"

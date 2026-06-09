@@ -1,10 +1,10 @@
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/io.h>
-#include <linux/atmel_pwm.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/leds.h>
+#include <beep/io.h>
+#include <beep/atmel_pwm.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 
 struct pwmled {

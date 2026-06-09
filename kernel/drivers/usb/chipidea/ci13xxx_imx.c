@@ -11,16 +11,16 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/dma-mapping.h>
-#include <linux/usb/chipidea.h>
-#include <linux/clk.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/module.h>
+#include <beep/of_platform.h>
+#include <beep/of_gpio.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/dma-mapping.h>
+#include <beep/usb/chipidea.h>
+#include <beep/clk.h>
+#include <beep/regulator/consumer.h>
+#include <beep/pinctrl/consumer.h>
 
 #include "ci.h"
 #include "ci13xxx_imx.h"

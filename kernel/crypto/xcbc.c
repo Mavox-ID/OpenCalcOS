@@ -16,13 +16,13 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  * Author:
- * 	Kazunori Miyazawa <miyazawa@linux-ipv6.org>
+ * 	Kazunori Miyazawa <miyazawa@beep-ipv6.org>
  */
 
 #include <crypto/internal/hash.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/err.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 
 static u_int32_t ks[12] = {0x01010101, 0x01010101, 0x01010101, 0x01010101,
 			   0x02020202, 0x02020202, 0x02020202, 0x02020202,

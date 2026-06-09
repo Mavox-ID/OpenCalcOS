@@ -39,24 +39,24 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/firmware.h>
-#include <linux/vmalloc.h>
+#include <beep/module.h>
+#include <beep/kmod.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/poll.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/completion.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/firmware.h>
+#include <beep/vmalloc.h>
 
-#include <linux/mutex.h>
-#include <linux/kthread.h>
+#include <beep/mutex.h>
+#include <beep/kthread.h>
 
 #include <media/lirc_dev.h>
 #include <media/lirc.h>

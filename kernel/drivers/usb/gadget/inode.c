@@ -13,23 +13,23 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/uts.h>
-#include <linux/wait.h>
-#include <linux/compiler.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/uts.h>
+#include <beep/wait.h>
+#include <beep/compiler.h>
 #include <asm/uaccess.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/poll.h>
 
-#include <linux/device.h>
-#include <linux/moduleparam.h>
+#include <beep/device.h>
+#include <beep/moduleparam.h>
 
-#include <linux/usb/gadgetfs.h>
-#include <linux/usb/gadget.h>
+#include <beep/usb/gadgetfs.h>
+#include <beep/usb/gadget.h>
 
 
 /*

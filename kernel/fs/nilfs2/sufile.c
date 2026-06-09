@@ -21,12 +21,12 @@
  * Revised by Ryusuke Konishi <ryusuke@osrg.net>.
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/buffer_head.h>
-#include <linux/errno.h>
-#include <linux/nilfs2_fs.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/buffer_head.h>
+#include <beep/errno.h>
+#include <beep/nilfs2_fs.h>
 #include "mdt.h"
 #include "sufile.h"
 

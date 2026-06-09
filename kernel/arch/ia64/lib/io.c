@@ -1,5 +1,5 @@
-#include <linux/module.h>
-#include <linux/types.h>
+#include <beep/module.h>
+#include <beep/types.h>
 
 #include <asm/io.h>
 

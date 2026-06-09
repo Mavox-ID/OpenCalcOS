@@ -8,9 +8,9 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
+#include <beep/spinlock.h>
+#include <beep/vmalloc.h>
+#include <beep/highmem.h>
 #include <asm/pgtable.h>
 #include "internal.h"
 

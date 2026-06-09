@@ -12,21 +12,21 @@
  *   more details.
  */
 
-#include <linux/sched.h>
-#include <linux/preempt.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/kprobes.h>
-#include <linux/elfcore.h>
-#include <linux/tick.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/compat.h>
-#include <linux/hardirq.h>
-#include <linux/syscalls.h>
-#include <linux/kernel.h>
-#include <linux/tracehook.h>
-#include <linux/signal.h>
+#include <beep/sched.h>
+#include <beep/preempt.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/kprobes.h>
+#include <beep/elfcore.h>
+#include <beep/tick.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/compat.h>
+#include <beep/hardirq.h>
+#include <beep/syscalls.h>
+#include <beep/kernel.h>
+#include <beep/tracehook.h>
+#include <beep/signal.h>
 #include <asm/stack.h>
 #include <asm/switch_to.h>
 #include <asm/homecache.h>

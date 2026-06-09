@@ -10,15 +10,15 @@
  * Copyright (C) 2002 David S. Miller (davem@redhat.com)
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/serial_core.h>
-#include <linux/sunserialcore.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/console.h>
+#include <beep/tty.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/serial_core.h>
+#include <beep/sunserialcore.h>
+#include <beep/init.h>
 
 #include <asm/prom.h>
 

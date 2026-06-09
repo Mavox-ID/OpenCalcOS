@@ -17,12 +17,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/gfp.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
-#include <linux/swiotlb.h>
+#include <beep/gfp.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/vmalloc.h>
+#include <beep/swiotlb.h>
 
 #include <asm/cacheflush.h>
 

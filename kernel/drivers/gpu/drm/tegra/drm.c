@@ -7,12 +7,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <beep/module.h>
+#include <beep/of_address.h>
+#include <beep/of_platform.h>
 
 #include <mach/clk.h>
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 #include <asm/dma-iommu.h>
 
 #include "drm.h"

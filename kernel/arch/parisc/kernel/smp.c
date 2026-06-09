@@ -1,9 +1,9 @@
 /*
 ** SMP Support
 **
-** Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+** Copyright (C) 1999 Walt Drummond <drummond@vabeep.com>
 ** Copyright (C) 1999 David Mosberger-Tang <davidm@hpl.hp.com>
-** Copyright (C) 2001,2004 Grant Grundler <grundler@parisc-linux.org>
+** Copyright (C) 2001,2004 Grant Grundler <grundler@parisc-beep.org>
 ** 
 ** Lots of stuff stolen from arch/alpha/kernel/smp.c
 ** ...and then parisc stole from arch/ia64/kernel/smp.c. Thanks David! :^)
@@ -16,24 +16,24 @@
 **      the Free Software Foundation; either version 2 of the License, or
 **      (at your option) any later version.
 */
-#include <linux/types.h>
-#include <linux/spinlock.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/kernel_stat.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/ftrace.h>
-#include <linux/cpu.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/smp.h>
+#include <beep/kernel_stat.h>
+#include <beep/mm.h>
+#include <beep/err.h>
+#include <beep/delay.h>
+#include <beep/bitops.h>
+#include <beep/ftrace.h>
+#include <beep/cpu.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/current.h>
 #include <asm/delay.h>
 #include <asm/tlbflush.h>
@@ -290,7 +290,7 @@ smp_cpu_init(int cpunum)
 
 	mb();
 
-	/* Well, support 2.4 linux scheme as well. */
+	/* Well, support 2.4 beep scheme as well. */
 	if (cpu_online(cpunum))	{
 		extern void machine_halt(void); /* arch/parisc.../process.c */
 

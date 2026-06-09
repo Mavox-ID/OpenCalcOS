@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/core/core.h
+ *  beep/drivers/mmc/core/core.h
  *
  *  Copyright (C) 2003 Russell King, All Rights Reserved.
  *  Copyright 2007 Pierre Ossman
@@ -11,7 +11,7 @@
 #ifndef _MMC_CORE_CORE_H
 #define _MMC_CORE_CORE_H
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 #define MMC_CMD_RETRIES        3
 

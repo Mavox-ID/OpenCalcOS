@@ -13,23 +13,23 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/mfd/htc-egpio.h>
-#include <linux/mfd/htc-pasic3.h>
-#include <linux/mtd/physmap.h>
-#include <linux/pda_power.h>
-#include <linux/pwm_backlight.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/gpio-regulator.h>
-#include <linux/regulator/machine.h>
-#include <linux/usb/gpio_vbus.h>
-#include <linux/i2c/pxa-i2c.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/gpio_keys.h>
+#include <beep/input.h>
+#include <beep/mfd/htc-egpio.h>
+#include <beep/mfd/htc-pasic3.h>
+#include <beep/mtd/physmap.h>
+#include <beep/pda_power.h>
+#include <beep/pwm_backlight.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/gpio-regulator.h>
+#include <beep/regulator/machine.h>
+#include <beep/usb/gpio_vbus.h>
+#include <beep/i2c/pxa-i2c.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>
@@ -38,10 +38,10 @@
 
 #include <mach/pxa27x.h>
 #include <mach/magician.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/irda-pxaficp.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/video-pxafb.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/irda-pxaficp.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
 
 #include "devices.h"
 #include "generic.h"

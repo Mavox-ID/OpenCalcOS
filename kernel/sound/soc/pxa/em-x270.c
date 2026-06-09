@@ -19,9 +19,9 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/device.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

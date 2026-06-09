@@ -16,12 +16,12 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/sched.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/rbtree.h>
-#include <linux/slab.h>
+#include <beep/sched.h>
+#include <beep/pagemap.h>
+#include <beep/writeback.h>
+#include <beep/blkdev.h>
+#include <beep/rbtree.h>
+#include <beep/slab.h>
 #include "ctree.h"
 #include "disk-io.h"
 #include "transaction.h"

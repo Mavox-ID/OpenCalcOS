@@ -21,8 +21,8 @@
  * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/nfc.h>
-#include <linux/module.h>
+#include <beep/nfc.h>
+#include <beep/module.h>
 
 #include "nfc.h"
 

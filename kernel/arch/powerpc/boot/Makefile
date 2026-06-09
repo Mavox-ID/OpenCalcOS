@@ -51,10 +51,10 @@ $(obj)/virtex405-head.o: BOOTAFLAGS += -mcpu=405
 
 zlib       := inffast.c inflate.c inftrees.c
 zlibheader := inffast.h inffixed.h inflate.h inftrees.h infutil.h
-zliblinuxheader := zlib.h zconf.h zutil.h
+zlibbeepheader := zlib.h zconf.h zutil.h
 
 $(addprefix $(obj)/,$(zlib) cuboot-c2k.o gunzip_util.o main.o prpmc2800.o): \
-	$(addprefix $(obj)/,$(zliblinuxheader)) $(addprefix $(obj)/,$(zlibheader))
+	$(addprefix $(obj)/,$(zlibbeepheader)) $(addprefix $(obj)/,$(zlibheader))
 
 libfdt       := fdt.c fdt_ro.c fdt_wip.c fdt_sw.c fdt_rw.c fdt_strerror.c
 libfdtheader := fdt.h libfdt.h libfdt_internal.h
@@ -110,13 +110,13 @@ obj-plat := $(addsuffix .o, $(basename $(addprefix $(obj)/, $(src-plat))))
 obj-plat: $(libfdt)
 
 quiet_cmd_copy_zlib = COPY    $@
-      cmd_copy_zlib = sed "s@__used@@;s@<linux/\([^>]*\).*@\"\1\"@" $< > $@
+      cmd_copy_zlib = sed "s@__used@@;s@<beep/\([^>]*\).*@\"\1\"@" $< > $@
 
 quiet_cmd_copy_zlibheader = COPY    $@
-      cmd_copy_zlibheader = sed "s@<linux/\([^>]*\).*@\"\1\"@" $< > $@
+      cmd_copy_zlibheader = sed "s@<beep/\([^>]*\).*@\"\1\"@" $< > $@
 # stddef.h for NULL
-quiet_cmd_copy_zliblinuxheader = COPY    $@
-      cmd_copy_zliblinuxheader = sed "s@<linux/string.h>@\"string.h\"@;s@<linux/kernel.h>@<stddef.h>@;s@<linux/\([^>]*\).*@\"\1\"@" $< > $@
+quiet_cmd_copy_zlibbeepheader = COPY    $@
+      cmd_copy_zlibbeepheader = sed "s@<beep/string.h>@\"string.h\"@;s@<beep/kernel.h>@<stddef.h>@;s@<beep/\([^>]*\).*@\"\1\"@" $< > $@
 
 $(addprefix $(obj)/,$(zlib)): $(obj)/%: $(srctree)/lib/zlib_inflate/%
 	$(call cmd,copy_zlib)
@@ -124,8 +124,8 @@ $(addprefix $(obj)/,$(zlib)): $(obj)/%: $(srctree)/lib/zlib_inflate/%
 $(addprefix $(obj)/,$(zlibheader)): $(obj)/%: $(srctree)/lib/zlib_inflate/%
 	$(call cmd,copy_zlibheader)
 
-$(addprefix $(obj)/,$(zliblinuxheader)): $(obj)/%: $(srctree)/include/linux/%
-	$(call cmd,copy_zliblinuxheader)
+$(addprefix $(obj)/,$(zlibbeepheader)): $(obj)/%: $(srctree)/include/beep/%
+	$(call cmd,copy_zlibbeepheader)
 
 quiet_cmd_copy_libfdt = COPY    $@
       cmd_copy_libfdt = cp $< $@
@@ -139,7 +139,7 @@ $(obj)/empty.c:
 $(obj)/zCalc.lds $(obj)/zCalc.coff.lds $(obj)/zCalc.ps3.lds: $(obj)/%: $(srctree)/$(src)/%.S
 	@cp $< $@
 
-clean-files := $(zlib) $(zlibheader) $(zliblinuxheader) \
+clean-files := $(zlib) $(zlibheader) $(zlibbeepheader) \
 		$(libfdt) $(libfdtheader) \
 		empty.c zCalc.coff.lds zCalc.ps3.lds zCalc.lds
 
@@ -190,7 +190,7 @@ endif
 # args (to if_changed): 1 = (this rule), 2 = platform, 3 = dts 4=dtb 5=initrd
 quiet_cmd_wrap	= WRAP    $@
       cmd_wrap	=$(CONFIG_SHELL) $(wrapper) -c -o $@ -p $2 $(CROSSWRAP) \
-		$(if $3, -s $3)$(if $4, -d $4)$(if $5, -i $5) vmlinux
+		$(if $3, -s $3)$(if $4, -d $4)$(if $5, -i $5) vmbeep
 
 image-$(CONFIG_PPC_PSERIES)		+= zCalc.pseries
 image-$(CONFIG_PPC_POWERNV)		+= zCalc.pseries
@@ -311,58 +311,58 @@ $(addprefix $(obj)/, $(initrd-y)): $(obj)/ramdisk.image.gz
 # Don't put the ramdisk on the pattern rule; when its missing make will try
 # the pattern rule with less dependencies that also matches (even with the
 # hard dependency listed).
-$(obj)/zCalc.initrd.%: vmlinux $(wrapperbits)
+$(obj)/zCalc.initrd.%: vmbeep $(wrapperbits)
 	$(call if_changed,wrap,$*,,,$(obj)/ramdisk.image.gz)
 
-$(obj)/zCalc.%: vmlinux $(wrapperbits)
+$(obj)/zCalc.%: vmbeep $(wrapperbits)
 	$(call if_changed,wrap,$*)
 
 # dtbImage% - a dtbImage is a zCalc with an embedded device tree blob
-$(obj)/dtbImage.initrd.%: vmlinux $(wrapperbits) $(obj)/%.dtb
+$(obj)/dtbImage.initrd.%: vmbeep $(wrapperbits) $(obj)/%.dtb
 	$(call if_changed,wrap,$*,,$(obj)/$*.dtb,$(obj)/ramdisk.image.gz)
 
-$(obj)/dtbImage.%: vmlinux $(wrapperbits) $(obj)/%.dtb
+$(obj)/dtbImage.%: vmbeep $(wrapperbits) $(obj)/%.dtb
 	$(call if_changed,wrap,$*,,$(obj)/$*.dtb)
 
 # This cannot be in the root of $(src) as the zCalc rule always adds a $(obj)
 # prefix
-$(obj)/vmlinux.strip: vmlinux
+$(obj)/vmbeep.strip: vmbeep
 	$(STRIP) -s -R .comment $< -o $@
 
-$(obj)/uImage: vmlinux $(wrapperbits)
+$(obj)/uImage: vmbeep $(wrapperbits)
 	$(call if_changed,wrap,uboot)
 
-$(obj)/uImage.initrd.%: vmlinux $(obj)/%.dtb $(wrapperbits)
+$(obj)/uImage.initrd.%: vmbeep $(obj)/%.dtb $(wrapperbits)
 	$(call if_changed,wrap,uboot-$*,,$(obj)/$*.dtb,$(obj)/ramdisk.image.gz)
 
-$(obj)/uImage.%: vmlinux $(obj)/%.dtb $(wrapperbits)
+$(obj)/uImage.%: vmbeep $(obj)/%.dtb $(wrapperbits)
 	$(call if_changed,wrap,uboot-$*,,$(obj)/$*.dtb)
 
-$(obj)/cuImage.initrd.%: vmlinux $(obj)/%.dtb $(wrapperbits)
+$(obj)/cuImage.initrd.%: vmbeep $(obj)/%.dtb $(wrapperbits)
 	$(call if_changed,wrap,cuboot-$*,,$(obj)/$*.dtb,$(obj)/ramdisk.image.gz)
 
-$(obj)/cuImage.%: vmlinux $(obj)/%.dtb $(wrapperbits)
+$(obj)/cuImage.%: vmbeep $(obj)/%.dtb $(wrapperbits)
 	$(call if_changed,wrap,cuboot-$*,,$(obj)/$*.dtb)
 
-$(obj)/simpleImage.initrd.%: vmlinux $(obj)/%.dtb $(wrapperbits)
+$(obj)/simpleImage.initrd.%: vmbeep $(obj)/%.dtb $(wrapperbits)
 	$(call if_changed,wrap,simpleboot-$*,,$(obj)/$*.dtb,$(obj)/ramdisk.image.gz)
 
-$(obj)/simpleImage.%: vmlinux $(obj)/%.dtb $(wrapperbits)
+$(obj)/simpleImage.%: vmbeep $(obj)/%.dtb $(wrapperbits)
 	$(call if_changed,wrap,simpleboot-$*,,$(obj)/$*.dtb)
 
-$(obj)/treeImage.initrd.%: vmlinux $(obj)/%.dtb $(wrapperbits)
+$(obj)/treeImage.initrd.%: vmbeep $(obj)/%.dtb $(wrapperbits)
 	$(call if_changed,wrap,treeboot-$*,,$(obj)/$*.dtb,$(obj)/ramdisk.image.gz)
 
-$(obj)/treeImage.%: vmlinux $(obj)/%.dtb $(wrapperbits)
+$(obj)/treeImage.%: vmbeep $(obj)/%.dtb $(wrapperbits)
 	$(call if_changed,wrap,treeboot-$*,,$(obj)/$*.dtb)
 
 # Rule to build device tree blobs
 $(obj)/%.dtb: $(src)/dts/%.dts FORCE
 	$(call if_changed_dep,dtc)
 
-# If there isn't a platform selected then just strip the vmlinux.
+# If there isn't a platform selected then just strip the vmbeep.
 ifeq (,$(image-y))
-image-y := vmlinux.strip
+image-y := vmbeep.strip
 endif
 
 $(obj)/zCalc:		$(addprefix $(obj)/, $(image-y))
@@ -371,7 +371,7 @@ $(obj)/zCalc.initrd:	$(addprefix $(obj)/, $(initrd-y))
 	@rm -f $@; ln $< $@
 
 install: $(CONFIGURE) $(addprefix $(obj)/, $(image-y))
-	sh -x $(srctree)/$(src)/install.sh "$(KERNELRELEASE)" vmlinux System.map "$(INSTALL_PATH)" $^
+	sh -x $(srctree)/$(src)/install.sh "$(KERNELRELEASE)" vmbeep System.map "$(INSTALL_PATH)" $^
 
 # anything not in $(targets)
 clean-files += $(image-) $(initrd-) cuImage.* dtbImage.* treeImage.* \
@@ -380,7 +380,7 @@ clean-files += $(image-) $(initrd-) cuImage.* dtbImage.* treeImage.* \
 	zCalc.maple simpleImage.* otheros.bld *.dtb
 
 # clean up files cached by wrapper
-clean-kernel := vmlinux.strip vmlinux.bin
+clean-kernel := vmbeep.strip vmbeep.bin
 clean-kernel += $(addsuffix .gz,$(clean-kernel))
 # If not absolute clean-files are relative to $(obj).
 clean-files += $(addprefix $(objtree)/, $(clean-kernel))

@@ -19,13 +19,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/export.h>
+#include <beep/debugfs.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
 
 #include "common.h"
 

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/cache-fa.S
+ *  beep/arch/arm/mm/cache-fa.S
  *
  *  Copyright (C) 2005 Faraday Corp.
  *  Copyright (C) 2008-2009 Paulius Zaleckas <paulius.zaleckas@teltonika.lt>
@@ -13,8 +13,8 @@
  *
  *  Processors: FA520 FA526 FA626	
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/memory.h>
 #include <asm/page.h>
 

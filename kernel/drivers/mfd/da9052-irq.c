@@ -13,17 +13,17 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
-#include <linux/mfd/da9052/da9052.h>
-#include <linux/mfd/da9052/reg.h>
+#include <beep/mfd/da9052/da9052.h>
+#include <beep/mfd/da9052/reg.h>
 
 #define DA9052_NUM_IRQ_REGS		4
 #define DA9052_IRQ_MASK_POS_1		0x01

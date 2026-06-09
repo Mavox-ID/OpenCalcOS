@@ -12,9 +12,9 @@
  * any later version.
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/hid.h>
+#include <beep/module.h>
 
 #include "hid-ids.h"
 
@@ -42,7 +42,7 @@
  * keys. This code generates a lookup table that makes
  * translation quick.
  *
- * #include <linux/input.h>
+ * #include <beep/input.h>
  * #include <stdio.h>
  * #include <assert.h>
  *

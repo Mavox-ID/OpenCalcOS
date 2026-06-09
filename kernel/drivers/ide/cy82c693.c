@@ -1,6 +1,6 @@
 /*
  *  Copyright (C) 1998-2000 Andreas S. Krebs (akrebs@altavista.net), Maintainer
- *  Copyright (C) 1998-2002 Andre Hedrick <andre@linux-ide.org>, Integrator
+ *  Copyright (C) 1998-2002 Andre Hedrick <andre@beep-ide.org>, Integrator
  *  Copyright (C) 2007-2011 Bartlomiej Zolnierkiewicz
  *
  * CYPRESS CY82C693 chipset IDE controller
@@ -8,11 +8,11 @@
  * The CY82C693 chipset is used on Digital's PC-Alpha 164SX boards.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/ide.h>
+#include <beep/init.h>
 
 #include <asm/io.h>
 

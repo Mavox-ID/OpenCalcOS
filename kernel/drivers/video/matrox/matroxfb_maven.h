@@ -1,9 +1,9 @@
 #ifndef __MATROXFB_MAVEN_H__
 #define __MATROXFB_MAVEN_H__
 
-#include <linux/ioctl.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <beep/ioctl.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
 #include "matroxfb_base.h"
 
 struct i2c_bit_adapter {

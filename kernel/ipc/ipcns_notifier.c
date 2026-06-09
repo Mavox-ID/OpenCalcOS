@@ -1,5 +1,5 @@
 /*
- * linux/ipc/ipcns_notifier.c
+ * beep/ipc/ipcns_notifier.c
  * Copyright (C) 2007 BULL SA. Nadia Derbey
  *
  * Notification mechanism for ipc namespaces:
@@ -9,11 +9,11 @@
  * for the owning namespace.
  */
 
-#include <linux/msg.h>
-#include <linux/rcupdate.h>
-#include <linux/notifier.h>
-#include <linux/nsproxy.h>
-#include <linux/ipc_namespace.h>
+#include <beep/msg.h>
+#include <beep/rcupdate.h>
+#include <beep/notifier.h>
+#include <beep/nsproxy.h>
+#include <beep/ipc_namespace.h>
 
 #include "util.h"
 

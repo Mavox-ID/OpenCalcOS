@@ -2,7 +2,7 @@
     comedi/drivers/comedi_parport.c
     hardware driver for standard parallel port
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1998,2001 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -78,12 +78,12 @@ pin, which can be used to wake up tasks.
 */
 /*
    see http://www.beyondlogic.org/ for information.
-   or http://www.linux-magazin.de/ausgabe/1999/10/IO/io.html
+   or http://www.beep-magazin.de/ausgabe/1999/10/IO/io.html
  */
 
 #include "../comedidev.h"
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
 
 #include "comedi_fc.h"
 

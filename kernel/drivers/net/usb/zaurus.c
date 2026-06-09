@@ -20,16 +20,16 @@
 // #define	DEBUG			// error path messages, extra info
 // #define	VERBOSE			// more; success messages
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/usbnet.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/workqueue.h>
+#include <beep/mii.h>
+#include <beep/crc32.h>
+#include <beep/usb.h>
+#include <beep/usb/cdc.h>
+#include <beep/usb/usbnet.h>
 
 
 /*
@@ -41,7 +41,7 @@
  * There are non-Zaurus products that use these same protocols too.
  *
  * The annoying thing is that at the same time Sharp was developing
- * that annoying standards-breaking software, the Linux community had
+ * that annoying standards-breaking software, the Beep community had
  * a simple "CDC Subset" working reliably on the same SA-1100 hardware.
  * That is, the same functionality but not violating standards.
  *

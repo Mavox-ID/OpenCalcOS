@@ -6,13 +6,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ipv6.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_ipv6/ip6t_NPT.h>
-#include <linux/netfilter/x_tables.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/ipv6.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv6.h>
+#include <beep/netfilter_ipv6/ip6t_NPT.h>
+#include <beep/netfilter/x_tables.h>
 
 static int ip6t_npt_checkentry(const struct xt_tgchk_param *par)
 {

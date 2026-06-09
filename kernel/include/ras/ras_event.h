@@ -5,9 +5,9 @@
 #if !defined(_TRACE_HW_EVENT_MC_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_HW_EVENT_MC_H
 
-#include <linux/tracepoint.h>
-#include <linux/edac.h>
-#include <linux/ktime.h>
+#include <beep/tracepoint.h>
+#include <beep/edac.h>
+#include <beep/ktime.h>
 
 /*
  * Hardware Events Report

@@ -1,5 +1,5 @@
 /*
- *  Linux MegaRAID driver for SAS based RAID controllers
+ *  Beep MegaRAID driver for SAS based RAID controllers
  *
  *  Copyright (c) 2009-2012  LSI Corporation.
  *
@@ -23,10 +23,10 @@
  *           Manoj Jose
  *           Sumant Patro
  *
- *  Send feedback to: <megaraidlinux@lsi.com>
+ *  Send feedback to: <megaraidbeep@lsi.com>
  *
  *  Mail to: LSI Corporation, 1621 Barber Lane, Milpitas, CA 95035
- *     ATTN: Linuxraid
+ *     ATTN: Beepraid
  */
 
 #ifndef _MEGARAID_SAS_FUSION_H_

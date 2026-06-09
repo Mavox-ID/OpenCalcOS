@@ -9,11 +9,11 @@
  *	Which is available from ftp.novell.com
  */
 
-#include <linux/netdevice.h>
+#include <beep/netdevice.h>
 #include <net/datalink.h>
-#include <linux/ipx.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/ipx.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 
 struct ipx_address {
 	__be32  net;

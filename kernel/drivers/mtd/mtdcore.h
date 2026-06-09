@@ -1,4 +1,4 @@
-/* linux/drivers/mtd/mtdcore.h
+/* beep/drivers/mtd/mtdcore.h
  *
  * Header file for driver private mtdcore exports
  *

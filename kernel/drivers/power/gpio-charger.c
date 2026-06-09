@@ -13,17 +13,17 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/power_supply.h>
+#include <beep/slab.h>
 
-#include <linux/power/gpio-charger.h>
+#include <beep/power/gpio-charger.h>
 
 struct gpio_charger {
 	const struct gpio_charger_platform_data *pdata;

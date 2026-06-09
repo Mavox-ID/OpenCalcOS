@@ -19,9 +19,9 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <beep/compiler.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
 
 /*
  * dns_key.c

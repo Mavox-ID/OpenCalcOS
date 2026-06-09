@@ -9,11 +9,11 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/sched.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/quicklist.h>
+#include <beep/sched.h>
+#include <beep/gfp.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/quicklist.h>
 #include <asm/pgalloc.h>
 #include <asm/page.h>
 #include <asm/cacheflush.h>

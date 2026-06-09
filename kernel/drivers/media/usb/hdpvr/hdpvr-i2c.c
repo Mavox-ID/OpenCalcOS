@@ -15,9 +15,9 @@
 
 #if defined(CONFIG_I2C) || defined(CONFIG_I2C_MODULE)
 
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #include "hdpvr.h"
 

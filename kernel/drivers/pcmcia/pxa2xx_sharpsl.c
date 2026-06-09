@@ -11,12 +11,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
 
 #include <asm/mach-types.h>
 #include <mach/hardware.h>

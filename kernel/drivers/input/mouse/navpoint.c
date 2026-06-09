@@ -8,19 +8,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/input/navpoint.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/pxa2xx_ssp.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/input.h>
+#include <beep/input/navpoint.h>
+#include <beep/interrupt.h>
+#include <beep/mutex.h>
+#include <beep/pxa2xx_ssp.h>
+#include <beep/slab.h>
 
 /*
  * Synaptics Modular Embedded Protocol: Module Packet Format.
@@ -233,7 +233,7 @@ static int navpoint_probe(struct platform_device *pdev)
 		goto err_free_gpio;
 	}
 
-	/* HaRET does not disable devices before jumping into Linux */
+	/* HaRET does not disable devices before jumping into Beep */
 	if (pxa_ssp_read_reg(ssp, SSCR0) & SSCR0_SSE) {
 		pxa_ssp_write_reg(ssp, SSCR0, 0);
 		dev_warn(&pdev->dev, "ssp%d already enabled\n", pdata->port);

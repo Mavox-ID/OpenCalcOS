@@ -1,4 +1,4 @@
-#include <linux/buffer_head.h>
+#include <beep/buffer_head.h>
 #include "minix.h"
 
 enum {DIRECT = 7, DEPTH = 4};	/* Have triple indirect */

@@ -1,5 +1,5 @@
 /*
- * linux/include/net/ethoc.h
+ * beep/include/net/ethoc.h
  *
  * Copyright (C) 2008-2009 Avionic Design GmbH
  *
@@ -10,13 +10,13 @@
  * Written by Thierry Reding <thierry.reding@avionic-design.de>
  */
 
-#ifndef LINUX_NET_ETHOC_H
-#define LINUX_NET_ETHOC_H 1
+#ifndef BEEP_NET_ETHOC_H
+#define BEEP_NET_ETHOC_H 1
 
 struct ethoc_platform_data {
 	u8 hwaddr[IFHWADDRLEN];
 	s8 phy_id;
 };
 
-#endif /* !LINUX_NET_ETHOC_H */
+#endif /* !BEEP_NET_ETHOC_H */
 

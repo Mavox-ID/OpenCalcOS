@@ -1,6 +1,6 @@
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/mm.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/mm.h>
 
 #include <asm/processor-cyrix.h>
 #include <asm/processor-flags.h>

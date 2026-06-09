@@ -3,7 +3,7 @@
  * German 1TR6 D-channel protocol
  *
  * Author       Karsten Keil
- * Copyright    by Karsten Keil      <keil@isdn4linux.de>
+ * Copyright    by Karsten Keil      <keil@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
@@ -16,7 +16,7 @@
 #include "hisax.h"
 #include "l3_1tr6.h"
 #include "isdnl3.h"
-#include <linux/ctype.h>
+#include <beep/ctype.h>
 
 extern char *HiSax_getrev(const char *revision);
 static const char *l3_1tr6_revision = "$Revision: 2.15.2.3 $";

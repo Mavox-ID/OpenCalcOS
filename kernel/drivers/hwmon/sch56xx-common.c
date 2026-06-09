@@ -19,19 +19,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/watchdog.h>
-#include <linux/miscdevice.h>
-#include <linux/uaccess.h>
-#include <linux/kref.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/acpi.h>
+#include <beep/delay.h>
+#include <beep/fs.h>
+#include <beep/watchdog.h>
+#include <beep/miscdevice.h>
+#include <beep/uaccess.h>
+#include <beep/kref.h>
+#include <beep/slab.h>
 #include "sch56xx-common.h"
 
 /* Insmod parameters */

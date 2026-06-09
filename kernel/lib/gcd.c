@@ -1,6 +1,6 @@
-#include <linux/kernel.h>
-#include <linux/gcd.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/gcd.h>
+#include <beep/export.h>
 
 /* Greatest common divisor */
 unsigned long gcd(unsigned long a, unsigned long b)

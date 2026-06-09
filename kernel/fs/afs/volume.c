@@ -9,13 +9,13 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/sched.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/sched.h>
 #include "internal.h"
 
 static const char *afs_voltypes[] = { "R/W", "R/O", "BAK" };

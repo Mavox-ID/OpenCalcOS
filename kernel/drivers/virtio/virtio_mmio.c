@@ -88,18 +88,18 @@
 
 #define pr_fmt(fmt) "virtio-mmio: " fmt
 
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/virtio.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_mmio.h>
-#include <linux/virtio_ring.h>
+#include <beep/highmem.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/virtio.h>
+#include <beep/virtio_config.h>
+#include <beep/virtio_mmio.h>
+#include <beep/virtio_ring.h>
 
 
 

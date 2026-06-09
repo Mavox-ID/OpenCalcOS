@@ -11,7 +11,7 @@
 #ifndef _INFUTIL_H
 #define _INFUTIL_H
 
-#include <linux/zlib.h>
+#include <beep/zlib.h>
 
 /* memory allocation for inflation */
 

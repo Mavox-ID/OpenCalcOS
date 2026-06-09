@@ -14,13 +14,13 @@
  *
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include "hisax.h"
 #include "icc.h"
 // #include "arcofi.h"
 #include "isdnl1.h"
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 
 #define DBUSY_TIMER_VALUE 80
 #define ARCOFI_USE 0

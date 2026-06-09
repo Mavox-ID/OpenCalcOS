@@ -7,10 +7,10 @@
  *   Free Software Foundation; either version 2 of the License, or (at your
  *   option) any later version.
  */
-#include <linux/fb.h>
+#include <beep/fb.h>
 #include <asm/io.h>
 #include <asm/msr.h>
-#include <linux/cs5535.h>
+#include <beep/cs5535.h>
 #include <asm/delay.h>
 
 #include "gxfb.h"

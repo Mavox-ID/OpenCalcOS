@@ -21,7 +21,7 @@
 #ifndef _IO_WORKAROUNDS_H
 #define _IO_WORKAROUNDS_H
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/pci-bridge.h>
 
 /* Bus info */

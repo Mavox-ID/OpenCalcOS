@@ -1,6 +1,6 @@
 /*
  *
- * Linux/PARISC Project (http://www.parisc-linux.org/)
+ * Beep/PARISC Project (http://www.parisc-beep.org/)
  *
  * System call entry code Copyright (c) Matthew Wilcox 1999 <willy@bofh.ai>
  * Licensed under the GNU GPL.
@@ -12,7 +12,7 @@
 #include <asm/asm-offsets.h>
 #include <asm/unistd.h>
 #include <asm/errno.h>
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 	.level	LEVEL
 	.text

@@ -5,7 +5,7 @@
  *
  * Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 /*
  * Calling convention:

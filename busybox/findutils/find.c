@@ -267,7 +267,7 @@
 //config:config FEATURE_FIND_CONTEXT
 //config:	bool "Enable -context: security context matching"
 //config:	default n
-//config:	depends on FIND && SELINUX
+//config:	depends on FIND && SEBEEP
 //config:	help
 //config:	Support the 'find -context' option for matching security context.
 //config:
@@ -1128,7 +1128,7 @@ static action*** parse_params(char **argv)
 	IF_FEATURE_FIND_PATH(   PARM_path      ,)
 #if ENABLE_DESKTOP
 	/* -wholename is a synonym for -path */
-	/* We support it because Linux kernel's "make tags" uses it */
+	/* We support it because Beep kernel's "make tags" uses it */
 	IF_FEATURE_FIND_PATH(   PARM_wholename ,)
 #endif
 	IF_FEATURE_FIND_PATH(   PARM_ipath     ,)
@@ -1600,8 +1600,8 @@ static action*** parse_params(char **argv)
 			dbg("%d", __LINE__);
 			ap = ALLOC_ACTION(context);
 			/*ap->context = NULL; - ALLOC_ACTION did it */
-			/* SELinux headers erroneously declare non-const parameter */
-			if (selinux_raw_to_trans_context((char*)arg1, &ap->context))
+			/* SEBeep headers erroneously declare non-const parameter */
+			if (sebeep_raw_to_trans_context((char*)arg1, &ap->context))
 				bb_simple_perror_msg(arg1);
 		}
 #endif

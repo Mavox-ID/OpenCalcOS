@@ -30,8 +30,8 @@
 #include "ramster_nodemanager.h"
 
 /* This totally doesn't belong here. */
-#include <linux/configfs.h>
-#include <linux/rbtree.h>
+#include <beep/configfs.h>
+#include <beep/rbtree.h>
 
 enum r2nm_fence_method {
 	R2NM_FENCE_RESET	= 0,

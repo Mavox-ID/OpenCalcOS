@@ -20,16 +20,16 @@
  * flag.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/slab.h>
 
 #include <mach/hardware.h>
-#include <linux/platform_data/keypad-ep93xx.h>
+#include <beep/platform_data/keypad-ep93xx.h>
 
 /*
  * Keypad Interface Register offsets

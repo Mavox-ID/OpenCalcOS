@@ -15,7 +15,7 @@
 /*
  * Duplicated here because of <asm-generic/siginfo.h> braindamage ...
  */
-#include <linux/string.h>
+#include <beep/string.h>
 
 static inline void copy_siginfo(struct siginfo *to, struct siginfo *from)
 {

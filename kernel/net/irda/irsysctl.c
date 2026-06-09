@@ -23,10 +23,10 @@
  *
  ********************************************************************/
 
-#include <linux/mm.h>
-#include <linux/ctype.h>
-#include <linux/sysctl.h>
-#include <linux/init.h>
+#include <beep/mm.h>
+#include <beep/ctype.h>
+#include <beep/sysctl.h>
+#include <beep/init.h>
 
 #include <net/irda/irda.h>		/* irda_debug */
 #include <net/irda/irlmp.h>

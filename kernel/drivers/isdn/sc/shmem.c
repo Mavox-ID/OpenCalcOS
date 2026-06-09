@@ -2,7 +2,7 @@
  *
  * Copyright (C) 1996  SpellCaster Telecommunications Inc.
  *
- * Card functions implementing ISDN4Linux functionality
+ * Card functions implementing ISDN4Beep functionality
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.

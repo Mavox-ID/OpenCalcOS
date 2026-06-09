@@ -9,11 +9,11 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/syscore_ops.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/syscore_ops.h>
 #include <asm/mach-au1x00/au1000.h>
 
 /* control register offsets */

@@ -1,5 +1,5 @@
-#include <linux/clkdev.h>
-#include <linux/syscore_ops.h>
+#include <beep/clkdev.h>
+#include <beep/syscore_ops.h>
 
 struct clkops {
 	void			(*enable)(struct clk *);

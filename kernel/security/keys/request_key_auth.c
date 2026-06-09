@@ -11,11 +11,11 @@
  * See Documentation/security/keys-request-key.txt
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/err.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/err.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 #include "internal.h"
 

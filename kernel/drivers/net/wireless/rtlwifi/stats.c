@@ -28,7 +28,7 @@
  *****************************************************************************/
 #include "wifi.h"
 #include "stats.h"
-#include <linux/export.h>
+#include <beep/export.h>
 
 u8 rtl_query_rxpwrpercentage(char antpower)
 {

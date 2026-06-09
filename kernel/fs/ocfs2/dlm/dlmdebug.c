@@ -24,13 +24,13 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/sysctl.h>
-#include <linux/spinlock.h>
-#include <linux/debugfs.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>
+#include <beep/sysctl.h>
+#include <beep/spinlock.h>
+#include <beep/debugfs.h>
+#include <beep/export.h>
 
 #include "cluster/heartbeat.h"
 #include "cluster/nodemanager.h"

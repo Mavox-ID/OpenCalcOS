@@ -1,5 +1,5 @@
 /*
- * arch/m68k/atari/ataints.c -- Atari Linux interrupt handling code
+ * arch/m68k/atari/ataints.c -- Atari Beep interrupt handling code
  *
  * 5/2/94 Roman Hodek:
  *  Added support for TT interrupts; setup for TT SCU (may someone has
@@ -35,12 +35,12 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/kernel_stat.h>
+#include <beep/init.h>
+#include <beep/seq_file.h>
+#include <beep/module.h>
 
 #include <asm/traps.h>
 

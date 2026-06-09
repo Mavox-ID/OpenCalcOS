@@ -10,7 +10,7 @@
  * Copyright (c) 2002-2003, Jouni Malinen <j@w1.fi>
  *
  * Adaption to a generic IEEE 802.11 stack by James Ketrenos
- * <jketreno@linux.intel.com>
+ * <jketreno@beep.intel.com>
  * Copyright (c) 2004-2005, Intel Corporation
  *
  * This program is free software; you can redistribute it and/or modify
@@ -25,10 +25,10 @@
  */
 #ifndef LIBIPW_H
 #define LIBIPW_H
-#include <linux/if_ether.h>	/* ETH_ALEN */
-#include <linux/kernel.h>	/* ARRAY_SIZE */
-#include <linux/wireless.h>
-#include <linux/ieee80211.h>
+#include <beep/if_ether.h>	/* ETH_ALEN */
+#include <beep/kernel.h>	/* ARRAY_SIZE */
+#include <beep/wireless.h>
+#include <beep/ieee80211.h>
 
 #include <net/lib80211.h>
 #include <net/cfg80211.h>
@@ -121,8 +121,8 @@ do { if (libipw_debug_level & (level)) \
 #define LIBIPW_DEBUG_TX(f, a...)  LIBIPW_DEBUG(LIBIPW_DL_TX, f, ## a)
 #define LIBIPW_DEBUG_RX(f, a...)  LIBIPW_DEBUG(LIBIPW_DL_RX, f, ## a)
 #define LIBIPW_DEBUG_QOS(f, a...)  LIBIPW_DEBUG(LIBIPW_DL_QOS, f, ## a)
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>	/* ARPHRD_ETHER */
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>	/* ARPHRD_ETHER */
 
 #ifndef WIRELESS_SPY
 #define WIRELESS_SPY		/* enable iwspy support */

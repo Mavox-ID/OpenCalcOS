@@ -10,17 +10,17 @@
  *	(at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/video.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb/video.h>
+#include <beep/vmalloc.h>
+#include <beep/wait.h>
 
 #include <media/v4l2-dev.h>
 #include <media/v4l2-event.h>

@@ -9,14 +9,14 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/fsl_devices.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of_platform.h>
-#include <linux/clk.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/fsl_devices.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/of_platform.h>
+#include <beep/clk.h>
+#include <beep/module.h>
 
 struct fsl_usb2_dev_data {
 	char *dr_mode;		/* controller mode */

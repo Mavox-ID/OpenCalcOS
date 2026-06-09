@@ -1,5 +1,5 @@
 /*
- * linux/sound/wm8993.h -- Platform data for WM8993
+ * beep/sound/wm8993.h -- Platform data for WM8993
  *
  * Copyright 2009 Wolfson Microelectronics. PLC.
  *
@@ -8,8 +8,8 @@
  * published by the Free Software Foundation.
  */
 
-#ifndef __LINUX_SND_WM8993_H
-#define __LINUX_SND_WM8993_H
+#ifndef __BEEP_SND_WM8993_H
+#define __BEEP_SND_WM8993_H
 
 /* Note that EQ1 only contains the enable/disable bit so will be
    ignored but is included for simplicity.

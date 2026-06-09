@@ -18,11 +18,11 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/of_platform.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
+#include <beep/pci.h>
+#include <beep/of_platform.h>
 
 #include <asm/machdep.h>
 

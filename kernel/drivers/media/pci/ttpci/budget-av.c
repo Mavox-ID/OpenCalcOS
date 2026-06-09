@@ -30,7 +30,7 @@
  * Or, point your browser to http://www.gnu.org/copyleft/gpl.html
  *
  *
- * the project's page is at http://www.linuxtv.org/ 
+ * the project's page is at http://www.beeptv.org/ 
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
@@ -47,12 +47,12 @@
 #include "tua6100.h"
 #include "dvb-pll.h"
 #include <media/saa7146_vv.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/spinlock.h>
 
 #include "dvb_ca_en50221.h"
 

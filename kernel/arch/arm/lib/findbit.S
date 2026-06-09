@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/lib/findbit.S
+ *  beep/arch/arm/lib/findbit.S
  *
  *  Copyright (C) 1995-2000 Russell King
  *
@@ -13,7 +13,7 @@
  *   also call with zero size.
  * Reworked by rmk.
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
                 .text
 
@@ -173,7 +173,7 @@ ENDPROC(_find_next_bit_be)
  * One or more bits in the LSB of r3 are assumed to be set.
  */
 .L_found:
-#if __LINUX_ARM_ARCH__ >= 5
+#if __BEEP_ARM_ARCH__ >= 5
 		rsb	r0, r3, #0
 		and	r3, r3, r0
 		clz	r3, r3

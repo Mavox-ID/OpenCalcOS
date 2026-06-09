@@ -29,8 +29,8 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
 
 #include <rdma/ib_verbs.h>
 

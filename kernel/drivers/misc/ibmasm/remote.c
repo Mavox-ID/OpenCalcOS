@@ -24,7 +24,7 @@
 
 /* Remote mouse and keyboard event handling functions */
 
-#include <linux/pci.h>
+#include <beep/pci.h>
 #include "ibmasm.h"
 #include "remote.h"
 

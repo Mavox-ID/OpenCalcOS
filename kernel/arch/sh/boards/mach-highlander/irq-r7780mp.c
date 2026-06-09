@@ -9,9 +9,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/io.h>
 #include <mach/highlander.h>
 
 enum {

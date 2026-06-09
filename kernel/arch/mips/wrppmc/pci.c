@@ -7,10 +7,10 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/types.h>
+#include <beep/pci.h>
 
 #include <asm/gt64120.h>
 

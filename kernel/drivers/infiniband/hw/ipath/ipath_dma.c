@@ -30,8 +30,8 @@
  * SOFTWARE.
  */
 
-#include <linux/scatterlist.h>
-#include <linux/gfp.h>
+#include <beep/scatterlist.h>
+#include <beep/gfp.h>
 #include <rdma/ib_verbs.h>
 
 #include "ipath_verbs.h"

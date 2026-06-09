@@ -1,8 +1,8 @@
 /*
  *  PARISC TLB and cache flushing support
  *  Copyright (C) 2000-2001 Hewlett-Packard (John Marvin)
- *  Copyright (C) 2001 Matthew Wilcox (willy at parisc-linux.org)
- *  Copyright (C) 2002 Richard Hirst (rhirst with parisc-linux.org)
+ *  Copyright (C) 2001 Matthew Wilcox (willy at parisc-beep.org)
+ *  Copyright (C) 2002 Richard Hirst (rhirst with parisc-beep.org)
  *
  *    This program is free software; you can redistribute it and/or modify
  *    it under the terms of the GNU General Public License as published by
@@ -36,7 +36,7 @@
 #include <asm/assembly.h>
 #include <asm/pgtable.h>
 #include <asm/cache.h>
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 	.text
 	.align	128

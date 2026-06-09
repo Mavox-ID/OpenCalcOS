@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-mmp/sram.c
+ *  beep/arch/arm/mach-mmp/sram.c
  *
  *  based on mach-davinci/sram.c - DaVinci simple SRAM allocator
  *
@@ -14,15 +14,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/genalloc.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/genalloc.h>
 
-#include <linux/platform_data/dma-mmp_tdma.h>
+#include <beep/platform_data/dma-mmp_tdma.h>
 
 struct sram_bank_info {
 	char *pool_name;

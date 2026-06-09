@@ -3,20 +3,20 @@
  *
  *  Copyright (C) 2008 Renesas Solutions
  *
- * Based on linux/arch/sh/kernel/cpu/sh4a/setup-sh7722.c
+ * Based on beep/arch/sh/kernel/cpu/sh4a/setup-sh7722.c
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/serial_sci.h>
-#include <linux/uio_driver.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_intc.h>
-#include <linux/usb/r8a66597.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/serial.h>
+#include <beep/serial_sci.h>
+#include <beep/uio_driver.h>
+#include <beep/sh_timer.h>
+#include <beep/sh_intc.h>
+#include <beep/usb/r8a66597.h>
 #include <asm/clock.h>
 
 static struct plat_sci_port scif0_platform_data = {

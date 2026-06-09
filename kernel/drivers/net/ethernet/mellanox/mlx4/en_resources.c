@@ -31,9 +31,9 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mlx4/qp.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/mlx4/qp.h>
 
 #include "mlx4_en.h"
 

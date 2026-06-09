@@ -20,13 +20,13 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/firmware.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/asoundef.h>

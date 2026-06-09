@@ -1,14 +1,14 @@
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/stddef.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/stddef.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/ptrace.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 #include <asm/current.h>
 #include <asm/processor.h>
 #include <asm/uaccess.h>

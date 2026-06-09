@@ -18,10 +18,10 @@
  * Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/bug.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/bug.h>
 
 #include "dma_fifo.h"
 

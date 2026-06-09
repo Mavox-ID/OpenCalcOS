@@ -22,15 +22,15 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/platform_data/leds-kirkwood-ns2.h>
-#include <linux/of_gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/gpio.h>
+#include <beep/leds.h>
+#include <beep/module.h>
+#include <beep/platform_data/leds-kirkwood-ns2.h>
+#include <beep/of_gpio.h>
 
 /*
  * The Network Space v2 dual-GPIO LED is wired to a CPLD and can blink in
@@ -286,7 +286,7 @@ ns2_leds_get_of_pdata(struct device *dev, struct ns2_led_platform_data *pdata)
 		leds[i].slow = ret;
 		ret = of_property_read_string(child, "label", &string);
 		leds[i].name = (ret == 0) ? string : child->name;
-		ret = of_property_read_string(child, "linux,default-trigger",
+		ret = of_property_read_string(child, "beep,default-trigger",
 					      &string);
 		if (ret == 0)
 			leds[i].default_trigger = string;

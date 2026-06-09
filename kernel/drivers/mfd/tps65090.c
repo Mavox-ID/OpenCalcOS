@@ -16,16 +16,16 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps65090.h>
-#include <linux/err.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/tps65090.h>
+#include <beep/err.h>
 
 #define NUM_INT_REG 2
 #define TOTAL_NUM_REG 0x18

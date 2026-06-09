@@ -1,5 +1,5 @@
 /*
- * linux/drivers/i2c/chips/twl4030-power.c
+ * beep/drivers/i2c/chips/twl4030-power.c
  *
  * Handle TWL4030 Power initialization
  *
@@ -24,10 +24,10 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/i2c/twl.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/pm.h>
+#include <beep/i2c/twl.h>
+#include <beep/platform_device.h>
 
 #include <asm/mach-types.h>
 

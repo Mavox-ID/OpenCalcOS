@@ -13,24 +13,24 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/ioport.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/partitions.h>
 
 #include <asm/io.h>
 #include <asm/mach/flash.h>
 
-#include <linux/reboot.h>
+#include <beep/reboot.h>
 
 /*
  * Read/write a 16 bit word from flash address 'addr'.

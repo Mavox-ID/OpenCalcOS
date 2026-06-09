@@ -8,12 +8,12 @@
  *
  * (C) Copyright TOSHIBA CORPORATION 2005-2007
  */
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/gfp.h>
+#include <beep/rtc.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/gfp.h>
 #include <asm/txx9/tx4939.h>
 
 struct tx4939rtc_plat_data {

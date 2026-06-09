@@ -23,13 +23,13 @@
  *
  ******************************************************************************/
 
-#include <linux/string.h>
-#include <linux/parser.h>
-#include <linux/timer.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
+#include <beep/string.h>
+#include <beep/parser.h>
+#include <beep/timer.h>
+#include <beep/blkdev.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 
@@ -523,7 +523,7 @@ static void fileio_module_exit(void)
 }
 
 MODULE_DESCRIPTION("TCM FILEIO subsystem plugin");
-MODULE_AUTHOR("nab@Linux-iSCSI.org");
+MODULE_AUTHOR("nab@Beep-iSCSI.org");
 MODULE_LICENSE("GPL");
 
 module_init(fileio_module_init);

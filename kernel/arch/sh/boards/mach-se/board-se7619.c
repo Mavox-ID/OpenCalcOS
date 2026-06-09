@@ -6,8 +6,8 @@
  * Hitachi SH7619 SolutionEngine Support.
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
 #include <asm/io.h>
 #include <asm/machvec.h>
 

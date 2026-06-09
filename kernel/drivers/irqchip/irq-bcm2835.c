@@ -44,12 +44,12 @@
  * otherwise both handlers will fire at the same time!
  */
 
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip/bcm2835.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/irqdomain.h>
+#include <beep/irqchip/bcm2835.h>
 
 #include <asm/exception.h>
 

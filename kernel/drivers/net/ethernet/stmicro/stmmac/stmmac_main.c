@@ -23,29 +23,29 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 
   Documentation available at:
-	http://www.stlinux.com
+	http://www.stbeep.com
   Support available at:
-	https://bugzilla.stlinux.com/
+	https://bugzilla.stbeep.com/
 *******************************************************************************/
 
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/if_ether.h>
-#include <linux/crc32.h>
-#include <linux/mii.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
+#include <beep/clk.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/skbuff.h>
+#include <beep/ethtool.h>
+#include <beep/if_ether.h>
+#include <beep/crc32.h>
+#include <beep/mii.h>
+#include <beep/if.h>
+#include <beep/if_vlan.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/prefetch.h>
 #ifdef CONFIG_STMMAC_DEBUG_FS
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 #endif
 #include "stmmac.h"
 

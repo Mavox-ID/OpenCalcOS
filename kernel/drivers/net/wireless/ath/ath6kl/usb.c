@@ -15,8 +15,8 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <beep/module.h>
+#include <beep/usb.h>
 
 #include "debug.h"
 #include "core.h"

@@ -22,11 +22,11 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/dma-buf.h>
-#include <linux/anon_inodes.h>
-#include <linux/export.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/dma-buf.h>
+#include <beep/anon_inodes.h>
+#include <beep/export.h>
 
 static inline int is_dma_buf_file(struct file *);
 

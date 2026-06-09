@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-clps711x/common.h
+ * beep/arch/arm/mach-clps711x/common.h
  *
  * Common bits.
  */

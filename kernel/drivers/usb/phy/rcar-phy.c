@@ -9,12 +9,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/usb/otg.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/usb/otg.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
 
 /* USBH common register */
 #define USBPCTRL0	0x0800

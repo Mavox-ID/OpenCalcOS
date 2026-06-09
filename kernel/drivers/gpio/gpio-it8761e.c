@@ -17,14 +17,14 @@
  *  the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
 
-#include <linux/gpio.h>
+#include <beep/gpio.h>
 
 #define SIO_CHIP_ID		0x8761
 #define CHIP_ID_HIGH_BYTE	0x20

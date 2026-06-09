@@ -7,7 +7,7 @@
  * Initial work by:
  *   (c) 2000 Adam J. Richter (adam@yggdrasil.com), Yggdrasil Computing, Inc.
  *
- * Please see http://www.one-eyed-alien.net/~mdharm/linux-usb for more
+ * Please see http://www.one-eyed-alien.net/~mdharm/beep-usb for more
  * information about this driver.
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -43,7 +43,7 @@
  *	  running with this patch.
  * Send your submission to either Phil Dibowitz <phil@ipom.com> or
  * Alan Stern <stern@rowland.harvard.edu>, and don't forget to CC: the
- * USB development list <linux-usb@vger.kernel.org> and the USB storage list
+ * USB development list <beep-usb@vger.kernel.org> and the USB storage list
  * <usb-storage@lists.one-eyed-alien.net>
  */
 
@@ -85,7 +85,7 @@ UNUSUAL_DEV(  0x03f0, 0x070c, 0x0000, 0x0000,
 		USB_SC_DEVICE, USB_PR_DEVICE, NULL,
 		US_FL_SANE_SENSE ),
 
-/* Reported by Grant Grundler <grundler@parisc-linux.org>
+/* Reported by Grant Grundler <grundler@parisc-beep.org>
  * HP r707 camera in "Disk" mode with 2.00.23 or 2.00.24 firmware.
  */
 UNUSUAL_DEV(  0x03f0, 0x4002, 0x0001, 0x0001,
@@ -365,7 +365,7 @@ UNUSUAL_DEV(  0x04cb, 0x0100, 0x0000, 0x2210,
 		"FinePix 1400Zoom",
 		USB_SC_UFI, USB_PR_DEVICE, NULL, US_FL_FIX_INQUIRY | US_FL_SINGLE_LUN),
 
-/* Reported by Ondrej Zary <linux@rainbow-software.org>
+/* Reported by Ondrej Zary <beep@rainbow-software.org>
  * The device reports one sector more and breaks when that sector is accessed
  */
 UNUSUAL_DEV(  0x04ce, 0x0002, 0x026c, 0x026c,
@@ -481,7 +481,7 @@ UNUSUAL_DEV(  0x04e8, 0x507c, 0x0220, 0x0220,
 		USB_SC_DEVICE, USB_PR_DEVICE, NULL,
 		US_FL_MAX_SECTORS_64),
 
-/* Reported by Vitaly Kuznetsov <vitty@altlinux.ru> */
+/* Reported by Vitaly Kuznetsov <vitty@altbeep.ru> */
 UNUSUAL_DEV(  0x04e8, 0x5122, 0x0000, 0x9999,
 		"Samsung",
 		"YP-CP3",
@@ -517,7 +517,7 @@ UNUSUAL_DEV(  0x0525, 0xa140, 0x0100, 0x0100,
 
 /* Added by Alan Stern <stern@rowland.harvard.edu> */
 COMPLIANT_DEV(0x0525, 0xa4a5, 0x0000, 0x9999,
-		"Linux",
+		"Beep",
 		"File-backed Storage Gadget",
 		USB_SC_DEVICE, USB_PR_DEVICE, NULL,
 		US_FL_CAPACITY_OK ),
@@ -715,7 +715,7 @@ UNUSUAL_DEV(  0x05ab, 0x0060, 0x1104, 0x1110,
 		USB_SC_SCSI, USB_PR_BULK, NULL,
 		US_FL_NEED_OVERRIDE ),
 
-/* Submitted by Sven Anderson <sven-linux@anderson.de>
+/* Submitted by Sven Anderson <sven-beep@anderson.de>
  * There are at least four ProductIDs used for iPods, so I added 0x1202 and
  * 0x1204. They just need the US_FL_FIX_CAPACITY. As the bcdDevice appears
  * to change with firmware updates, I changed the range to maximum for all
@@ -1106,7 +1106,7 @@ UNUSUAL_DEV(  0x090a, 0x1050, 0x0100, 0x0100,
 		USB_SC_UFI, USB_PR_DEVICE, NULL,
 		0),
 
-/* Trumpion Microelectronics MP3 player (felipe_alfaro@linuxmail.org) */
+/* Trumpion Microelectronics MP3 player (felipe_alfaro@beepmail.org) */
 UNUSUAL_DEV( 0x090a, 0x1200, 0x0000, 0x9999,
 		"Trumpion",
 		"MP3 player",
@@ -1120,7 +1120,7 @@ UNUSUAL_DEV( 0x090c, 0x1132, 0x0000, 0xffff,
 		USB_SC_DEVICE, USB_PR_DEVICE, NULL,
 		US_FL_FIX_CAPACITY ),
 
-/* Reported by Paul Hartman <paul.hartman+linux@gmail.com>
+/* Reported by Paul Hartman <paul.hartman+beep@gmail.com>
  * This card reader returns "Illegal Request, Logical Block Address
  * Out of Range" for the first READ(10) after a new card is inserted.
  */
@@ -1337,7 +1337,7 @@ UNUSUAL_DEV( 0x0dd8, 0x1060, 0x0000, 0xffff,
 		USB_SC_DEVICE, USB_PR_DEVICE, NULL,
 		US_FL_FIX_INQUIRY ),
 
-/* Reported by Edward Chapman (taken from linux-usb mailing list)
+/* Reported by Edward Chapman (taken from beep-usb mailing list)
    Netac OnlyDisk Mini U2CV2 512MB USB 2.0 Flash Drive */
 UNUSUAL_DEV( 0x0dd8, 0xd202, 0x0000, 0x9999,
 		"Netac",
@@ -1503,7 +1503,7 @@ UNUSUAL_DEV(  0x1186, 0x3e04, 0x0000, 0x0000,
            "USB Mass Storage",
            USB_SC_DEVICE, USB_PR_DEVICE, option_ms_init, US_FL_IGNORE_DEVICE),
 
-/* Reported by Kevin Lloyd <linux@sierrawireless.com>
+/* Reported by Kevin Lloyd <beep@sierrawireless.com>
  * Entry is needed for the initializer function override,
  * which instructs the device to load as a modem
  * device.
@@ -1997,7 +1997,7 @@ UNUSUAL_DEV(  0x3340, 0xffff, 0x0000, 0x0000,
 		USB_SC_DEVICE,USB_PR_DEVICE,NULL,
 		US_FL_MAX_SECTORS_64 ),
 
-/* Reported by Andrey Rahmatullin <wrar@altlinux.org> */
+/* Reported by Andrey Rahmatullin <wrar@altbeep.org> */
 UNUSUAL_DEV(  0x4102, 0x1020, 0x0100,  0x0100,
 		"iRiver",
 		"MP3 T10",

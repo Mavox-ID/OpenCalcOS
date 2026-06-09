@@ -7,17 +7,17 @@
  * published by the Free Software Foundation (or any later at your option).
  */
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/stddef.h>
-#include <linux/err.h>
-#include <linux/percpu.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/netfilter.h>
+#include <beep/skbuff.h>
+#include <beep/vmalloc.h>
+#include <beep/stddef.h>
+#include <beep/err.h>
+#include <beep/percpu.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_core.h>

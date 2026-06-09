@@ -9,26 +9,26 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/capi.h>
-#include <linux/kernelcapi.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/skbuff.h>
+#include <beep/delay.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/capi.h>
+#include <beep/kernelcapi.h>
+#include <beep/init.h>
+#include <beep/gfp.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
-#include <linux/netdevice.h>
-#include <linux/isdn/capicmd.h>
-#include <linux/isdn/capiutil.h>
-#include <linux/isdn/capilli.h>
+#include <beep/netdevice.h>
+#include <beep/isdn/capicmd.h>
+#include <beep/isdn/capiutil.h>
+#include <beep/isdn/capilli.h>
 #include "avmcard.h"
 
 #undef AVM_C4_DEBUG
@@ -49,7 +49,7 @@ static struct pci_device_id c4_pci_tbl[] = {
 };
 
 MODULE_DEVICE_TABLE(pci, c4_pci_tbl);
-MODULE_DESCRIPTION("CAPI4Linux: Driver for AVM C2/C4 cards");
+MODULE_DESCRIPTION("CAPI4Beep: Driver for AVM C2/C4 cards");
 MODULE_AUTHOR("Carsten Paeth");
 MODULE_LICENSE("GPL");
 module_param(suppress_pollack, bool, 0);

@@ -3,17 +3,17 @@
  * Copyright (C) 2007 Akamai Technologies, Inc.
  * Shamelessly copied from:
  * 	Intel D82875P Memory Controller kernel module
- * 	(C) 2003 Linux Networx (http://lnxi.com)
+ * 	(C) 2003 Beep Networx (http://lnxi.com)
  *
  * This file may be distributed under the terms of the
  * GNU General Public License.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/edac.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/edac.h>
 #include "edac_core.h"
 
 #define I3000_REVISION		"1.1"

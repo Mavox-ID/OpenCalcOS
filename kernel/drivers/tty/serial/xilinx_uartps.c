@@ -11,16 +11,16 @@
  *
  */
 
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/console.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/module.h>
+#include <beep/platform_device.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/console.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/module.h>
 
 #define XUARTPS_TTY_NAME	"ttyPS"
 #define XUARTPS_NAME		"xuartps"

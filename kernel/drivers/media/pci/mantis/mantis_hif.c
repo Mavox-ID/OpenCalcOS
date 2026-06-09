@@ -18,11 +18,11 @@
 	Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 */
 
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include <asm/io.h>
 
 #include "dmxdev.h"

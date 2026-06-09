@@ -11,20 +11,20 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/uaccess.h>
+#include <beep/fs.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
-#include <linux/mmc/core.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio_func.h>
+#include <beep/mmc/core.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/sdio_func.h>
 
-#include <linux/firmware.h>
+#include <beep/firmware.h>
 
 #include "gdm_sdio.h"
 

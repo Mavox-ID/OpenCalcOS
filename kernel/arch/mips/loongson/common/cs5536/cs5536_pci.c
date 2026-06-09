@@ -20,7 +20,7 @@
  *	the PCI-2.2 spec.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <cs5536/cs5536_vsm.h>
 
 enum {

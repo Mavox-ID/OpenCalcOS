@@ -26,7 +26,7 @@
 #ifndef _MVS64XX_REG_H_
 #define _MVS64XX_REG_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define MAX_LINK_RATE		SAS_LINK_RATE_3_0_GBPS
 

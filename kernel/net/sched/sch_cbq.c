@@ -10,13 +10,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/skbuff.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 
@@ -62,7 +62,7 @@
 	from NS. Anyone is advised to find these differences
 	and explain to me, why I am wrong 8).
 
-	--- Linux has no EOI event, so that we cannot estimate true class
+	--- Beep has no EOI event, so that we cannot estimate true class
 	idle time. Workaround is to consider the next dequeue event
 	as sign that previous packet is finished. This is wrong because of
 	internal device queueing, but on a permanently loaded link it is true.

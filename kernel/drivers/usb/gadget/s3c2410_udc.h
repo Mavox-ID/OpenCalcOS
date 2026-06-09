@@ -1,9 +1,9 @@
 /*
- * linux/drivers/usb/gadget/s3c2410_udc.h
+ * beep/drivers/usb/gadget/s3c2410_udc.h
  * Samsung on-chip full speed USB device controllers
  *
  * Copyright (C) 2004-2007 Herbert Pötzl - Arnaud Patard
- *	Additional cleanups by Ben Dooks <ben-linux@fluff.org>
+ *	Additional cleanups by Ben Dooks <ben-beep@fluff.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

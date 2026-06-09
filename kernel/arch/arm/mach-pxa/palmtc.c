@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/palmtc.c
+ * beep/arch/arm/mach-pxa/palmtc.c
  *
  * Support for the Palm Tungsten|C
  *
@@ -14,18 +14,18 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/input.h>
-#include <linux/pwm_backlight.h>
-#include <linux/gpio.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/ucb1400.h>
-#include <linux/power_supply.h>
-#include <linux/gpio_keys.h>
-#include <linux/mtd/physmap.h>
-#include <linux/usb/gpio_vbus.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/input.h>
+#include <beep/pwm_backlight.h>
+#include <beep/gpio.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/ucb1400.h>
+#include <beep/power_supply.h>
+#include <beep/gpio_keys.h>
+#include <beep/mtd/physmap.h>
+#include <beep/usb/gpio_vbus.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -34,9 +34,9 @@
 #include <mach/pxa25x.h>
 #include <mach/audio.h>
 #include <mach/palmtc.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/irda-pxaficp.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/video-pxafb.h>
+#include <beep/platform_data/irda-pxaficp.h>
 #include <mach/udc.h>
 
 #include "generic.h"
@@ -437,7 +437,7 @@ static struct mtd_partition palmtc_flash_parts[] = {
 		.size	= 0x40000,
 	},
 	{
-		.name	= "Linux Kernel",
+		.name	= "Beep Kernel",
 		.offset	= 0x40000,
 		.size	= 0x2c0000,
 	},

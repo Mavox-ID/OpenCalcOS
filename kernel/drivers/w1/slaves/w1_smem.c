@@ -21,11 +21,11 @@
 
 #include <asm/types.h>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/types.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/device.h>
+#include <beep/types.h>
 
 #include "../w1.h"
 #include "../w1_int.h"

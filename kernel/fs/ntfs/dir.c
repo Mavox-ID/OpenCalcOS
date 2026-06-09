@@ -1,5 +1,5 @@
 /**
- * dir.c - NTFS kernel directory operations. Part of the Linux-NTFS project.
+ * dir.c - NTFS kernel directory operations. Part of the Beep-NTFS project.
  *
  * Copyright (c) 2001-2007 Anton Altaparmakov
  * Copyright (c) 2002 Richard Russon
@@ -15,13 +15,13 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
+#include <beep/buffer_head.h>
+#include <beep/slab.h>
 
 #include "dir.h"
 #include "aops.h"
@@ -218,7 +218,7 @@ found_it:
 						"and if that doesn't find any "
 						"errors please report you saw "
 						"this message to "
-						"linux-ntfs-dev@lists."
+						"beep-ntfs-dev@lists."
 						"sourceforge.net.");
 				goto dir_err_out;
 			}
@@ -478,7 +478,7 @@ found_it2:
 						"and if that doesn't find any "
 						"errors please report you saw "
 						"this message to "
-						"linux-ntfs-dev@lists."
+						"beep-ntfs-dev@lists."
 						"sourceforge.net.");
 				unlock_page(page);
 				ntfs_unmap_page(page);
@@ -704,7 +704,7 @@ u64 ntfs_lookup_inode_by_name(ntfs_inode *dir_ni, const ntfschar *uname,
 		 * after the non-POSIX one when they only differ in case, but
 		 * anyone doing screwy stuff like that deserves to burn in
 		 * hell... Doing that kind of stuff on NT4 actually causes
-		 * corruption on the partition even when using SP6a and Linux
+		 * corruption on the partition even when using SP6a and Beep
 		 * is not involved at all.
 		 */
 		ic = ie->key.file_name.file_name_type ? IGNORE_CASE :
@@ -891,7 +891,7 @@ fast_descend_into_child_node:
 		 * after the non-POSIX one when they only differ in case, but
 		 * anyone doing screwy stuff like that deserves to burn in
 		 * hell... Doing that kind of stuff on NT4 actually causes
-		 * corruption on the partition even when using SP6a and Linux
+		 * corruption on the partition even when using SP6a and Beep
 		 * is not involved at all.
 		 */
 		ic = ie->key.file_name.file_name_type ? IGNORE_CASE :

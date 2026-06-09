@@ -7,9 +7,9 @@
  * ... and again Southern-Winter 2001 to support export_operations
  */
 
-#include <linux/exportfs.h>
+#include <beep/exportfs.h>
 
-#include <linux/sunrpc/svcauth_gss.h>
+#include <beep/sunrpc/svcauth_gss.h>
 #include "nfsd.h"
 #include "vfs.h"
 #include "auth.h"
@@ -285,12 +285,12 @@ out:
  * the current task's credentials.
  *
  * @type specifies the type of object expected using one of the S_IF*
- * constants defined in include/linux/stat.h.  The caller may use zero
+ * constants defined in include/beep/stat.h.  The caller may use zero
  * to indicate that it doesn't care, or a negative integer to indicate
  * that it expects something not of the given type.
  *
  * @access is formed from the NFSD_MAY_* constants defined in
- * include/linux/nfsd/nfsd.h.
+ * include/beep/nfsd/nfsd.h.
  */
 __be32
 fh_verify(struct svc_rqst *rqstp, struct svc_fh *fhp, umode_t type, int access)

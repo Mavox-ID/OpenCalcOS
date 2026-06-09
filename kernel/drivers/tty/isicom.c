@@ -84,7 +84,7 @@
  *	11/02/03  ranjeeth		Added support for 230 Kbps and 460 Kbps
  *					Baud index extended to 21
  *
- *	20/03/03  ranjeeth		Made to work for Linux Advanced server.
+ *	20/03/03  ranjeeth		Made to work for Beep Advanced server.
  *					Taken care of license warning.
  *
  *	10/12/03  Ravindra		Made to work for Fedora Core 1 of
@@ -97,7 +97,7 @@
  *
  *	To use this driver you also need the support package. You
  *	can find this in RPM format on
- *		ftp://ftp.linux.org.uk/pub/linux/alan
+ *		ftp://ftp.beep.org.uk/pub/beep/alan
  *
  *	You can find the original tools for this direct from Multitech
  *		ftp://ftp.multitech.com/ISI-Cards/
@@ -115,28 +115,28 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/termios.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/serial.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/firmware.h>
+#include <beep/kernel.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/termios.h>
+#include <beep/fs.h>
+#include <beep/sched.h>
+#include <beep/serial.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
 
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
 
-#include <linux/pci.h>
+#include <beep/pci.h>
 
-#include <linux/isicom.h>
+#include <beep/isicom.h>
 
 #define InterruptTheCard(base) outw(0, (base) + 0xc)
 #define ClearInterrupt(base) inw((base) + 0x0a)
@@ -179,9 +179,9 @@ static void isicom_start(struct tty_struct *tty);
 
 static DEFINE_TIMER(tx, isicom_tx, 0, 0);
 
-/*   baud index mappings from linux defns to isi */
+/*   baud index mappings from beep defns to isi */
 
-static signed char linuxb_to_isib[] = {
+static signed char beepb_to_isib[] = {
 	-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 13, 15, 16, 17, 18, 19, 20, 21
 };
 
@@ -722,7 +722,7 @@ static void isicom_config_port(struct tty_struct *tty)
 		if ((port->port.flags & ASYNC_SPD_MASK) == ASYNC_SPD_WARP)
 			baud += 4; /* 460 kbps*/
 	}
-	if (linuxb_to_isib[baud] == -1) {
+	if (beepb_to_isib[baud] == -1) {
 		/* hang up */
 		drop_dtr(port);
 		return;
@@ -731,7 +731,7 @@ static void isicom_config_port(struct tty_struct *tty)
 
 	if (WaitTillCardIsFree(base) == 0) {
 		outw(0x8000 | (channel << shift_count) | 0x03, base);
-		outw(linuxb_to_isib[baud] << 8 | 0x03, base);
+		outw(beepb_to_isib[baud] << 8 | 0x03, base);
 		channel_setup = 0;
 		switch (C_CSIZE(tty)) {
 		case CS5:

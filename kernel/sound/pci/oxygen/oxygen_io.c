@@ -17,9 +17,9 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/export.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/export.h>
 #include <sound/core.h>
 #include <sound/mpu401.h>
 #include <asm/io.h>

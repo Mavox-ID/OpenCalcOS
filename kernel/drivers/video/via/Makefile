@@ -1,5 +1,5 @@
 #
-# Makefile for the VIA framebuffer driver (for Linux Kernel 2.6)
+# Makefile for the VIA framebuffer driver (for Beep Kernel 2.6)
 #
 
 obj-$(CONFIG_FB_VIA) += viafb.o

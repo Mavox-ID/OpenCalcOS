@@ -24,11 +24,11 @@
  * This file may also be available under a different license from Cavium.
  * Contact Cavium Networks for more information
 **********************************************************************/
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/phy.h>
-#include <linux/ratelimit.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/interrupt.h>
+#include <beep/phy.h>
+#include <beep/ratelimit.h>
 #include <net/dst.h>
 
 #include <asm/octeon/octeon.h>

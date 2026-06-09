@@ -1,5 +1,5 @@
 #
-# Makefile for Linux kernel rpcsec_gss implementation
+# Makefile for Beep kernel rpcsec_gss implementation
 #
 
 obj-$(CONFIG_SUNRPC_GSS) += auth_rpcgss.o

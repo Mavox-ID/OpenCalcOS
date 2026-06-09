@@ -7,7 +7,7 @@
  *  Copyright (C) 2004 Karen Spearel
  *
  * Author: Alessandro Zummo <a.zummo@towertech.it>
- * Maintainers: http://www.nslu2-linux.org/
+ * Maintainers: http://www.nslu2-beep.org/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -15,11 +15,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/input.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
 #include <mach/hardware.h>
 
 MODULE_AUTHOR("Alessandro Zummo <a.zummo@towertech.it>");

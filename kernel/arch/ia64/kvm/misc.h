@@ -1,7 +1,7 @@
 #ifndef __KVM_IA64_MISC_H
 #define __KVM_IA64_MISC_H
 
-#include <linux/kvm_host.h>
+#include <beep/kvm_host.h>
 /*
  * misc.h
  * 	Copyright (C) 2007, Intel Corporation.

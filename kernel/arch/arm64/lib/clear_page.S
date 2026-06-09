@@ -14,8 +14,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/linkage.h>
-#include <linux/const.h>
+#include <beep/linkage.h>
+#include <beep/const.h>
 #include <asm/assembler.h>
 #include <asm/page.h>
 

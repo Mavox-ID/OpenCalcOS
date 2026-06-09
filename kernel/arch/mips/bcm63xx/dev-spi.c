@@ -7,12 +7,12 @@
  * Copyright (C) 2010 Tanguy Bouzeloc <tanguy.bouzeloc@efixo.com>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/clk.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/clk.h>
 
 #include <bcm63xx_cpu.h>
 #include <bcm63xx_dev_spi.h>

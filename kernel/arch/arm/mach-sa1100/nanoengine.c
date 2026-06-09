@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-sa1100/nanoengine.c
+ * beep/arch/arm/mach-sa1100/nanoengine.c
  *
  * Bright Star Engineering's nanoEngine board init code.
  *
@@ -11,12 +11,12 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/root_dev.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_data/sa11x0-serial.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/root_dev.h>
 
 #include <asm/mach-types.h>
 #include <asm/setup.h>

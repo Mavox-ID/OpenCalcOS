@@ -18,13 +18,13 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/input-polldev.h>
-#include <linux/of_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/input-polldev.h>
+#include <beep/of_device.h>
 
 #define MMA8450_DRV_NAME	"mma8450"
 

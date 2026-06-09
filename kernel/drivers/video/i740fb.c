@@ -11,20 +11,20 @@
  *  i740fb by Patrick LERDA, v0.9
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/console.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
+#include <beep/console.h>
 #include <video/vga.h>
 
 #ifdef CONFIG_MTRR
@@ -1323,7 +1323,7 @@ static void __exit i740fb_exit(void)
 module_init(i740fb_init);
 module_exit(i740fb_exit);
 
-MODULE_AUTHOR("(c) 2011 Ondrej Zary <linux@rainbow-software.org>");
+MODULE_AUTHOR("(c) 2011 Ondrej Zary <beep@rainbow-software.org>");
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("fbdev driver for Intel740");
 

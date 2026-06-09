@@ -13,18 +13,18 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/iio/iio.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/iio/iio.h>
 
-#include <linux/mfd/ti_am335x_tscadc.h>
-#include <linux/platform_data/ti_am335x_adc.h>
+#include <beep/mfd/ti_am335x_tscadc.h>
+#include <beep/platform_data/ti_am335x_adc.h>
 
 struct tiadc_device {
 	struct ti_tscadc_dev *mfd_tscadc;

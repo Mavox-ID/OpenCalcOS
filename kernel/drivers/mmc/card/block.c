@@ -17,29 +17,29 @@
  * Author:  Andrew Christian
  *          28 May 2002
  */
-#include <linux/moduleparam.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/moduleparam.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/hdreg.h>
-#include <linux/kdev_t.h>
-#include <linux/blkdev.h>
-#include <linux/mutex.h>
-#include <linux/scatterlist.h>
-#include <linux/string_helpers.h>
-#include <linux/delay.h>
-#include <linux/capability.h>
-#include <linux/compat.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/hdreg.h>
+#include <beep/kdev_t.h>
+#include <beep/blkdev.h>
+#include <beep/mutex.h>
+#include <beep/scatterlist.h>
+#include <beep/string_helpers.h>
+#include <beep/delay.h>
+#include <beep/capability.h>
+#include <beep/compat.h>
 
-#include <linux/mmc/ioctl.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
+#include <beep/mmc/ioctl.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/mmc.h>
+#include <beep/mmc/sd.h>
 
 #include <asm/uaccess.h>
 

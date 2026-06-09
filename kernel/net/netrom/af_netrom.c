@@ -8,41 +8,41 @@
  * Copyright Alan Cox GW4PTS (alan@lxorguk.ukuu.org.uk)
  * Copyright Darryl Miles G7LED (dlm@g7led.demon.co.uk)
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/stat.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/string.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/stat.h>
 #include <net/ax25.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
+#include <beep/inet.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/skbuff.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 #include <asm/uaccess.h>
-#include <linux/fcntl.h>
-#include <linux/termios.h>	/* For TIOCINQ/OUTQ */
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
+#include <beep/fcntl.h>
+#include <beep/termios.h>	/* For TIOCINQ/OUTQ */
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/notifier.h>
 #include <net/netrom.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #include <net/ip.h>
 #include <net/tcp_states.h>
 #include <net/arp.h>
-#include <linux/init.h>
+#include <beep/init.h>
 
 static int nr_ndevs = 4;
 

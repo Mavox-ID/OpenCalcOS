@@ -12,7 +12,7 @@
  * - Set r8 with 0, r7 with the architecture ID for head.S
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #include <asm/assembler.h>
 	

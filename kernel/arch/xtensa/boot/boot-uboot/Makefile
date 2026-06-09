@@ -7,7 +7,7 @@
 UIMAGE_LOADADDR = 0xd0001000
 UIMAGE_COMPRESSION = gzip
 
-$(obj)/../uImage: vmlinux.bin.gz FORCE
+$(obj)/../uImage: vmbeep.bin.gz FORCE
 	$(call if_changed,uimage)
 	$(Q)$(kecho) '  Kernel: $@ is ready'
 

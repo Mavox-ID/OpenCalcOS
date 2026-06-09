@@ -1,5 +1,5 @@
 /*
- * linux/drivers/pcmcia/pxa2xx_vpac270.c
+ * beep/drivers/pcmcia/pxa2xx_vpac270.c
  *
  * Driver for Voipac PXA270 PCMCIA and CF sockets
  *
@@ -11,9 +11,9 @@
  *
  */
 
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 
 #include <asm/mach-types.h>
 

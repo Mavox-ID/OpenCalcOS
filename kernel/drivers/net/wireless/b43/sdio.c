@@ -12,12 +12,12 @@
  * your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/slab.h>
-#include <linux/ssb/ssb.h>
+#include <beep/kernel.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/sdio_func.h>
+#include <beep/mmc/sdio_ids.h>
+#include <beep/slab.h>
+#include <beep/ssb/ssb.h>
 
 #include "sdio.h"
 #include "b43.h"

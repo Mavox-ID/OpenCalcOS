@@ -10,12 +10,12 @@
  */
 
 #define pr_fmt(fmt) "X.509: "fmt
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/mpi.h>
-#include <linux/asn1_decoder.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/mpi.h>
+#include <beep/asn1_decoder.h>
 #include <keys/asymmetric-subtype.h>
 #include <keys/asymmetric-parser.h>
 #include <crypto/hash.h>

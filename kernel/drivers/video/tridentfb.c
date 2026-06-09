@@ -15,13 +15,13 @@
  *	timing value tweaking so it looks good on every monitor in every mode
  */
 
-#include <linux/module.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include <video/vga.h>
 #include <video/trident.h>
 

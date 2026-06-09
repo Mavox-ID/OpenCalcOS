@@ -36,9 +36,9 @@
 #include "xfs_ioctl.h"
 #include "xfs_trace.h"
 
-#include <linux/dcache.h>
-#include <linux/falloc.h>
-#include <linux/pagevec.h>
+#include <beep/dcache.h>
+#include <beep/falloc.h>
+#include <beep/pagevec.h>
 
 static const struct vm_operations_struct xfs_file_vm_ops;
 
@@ -918,7 +918,7 @@ xfs_file_readdir(
 	size_t		bufsize;
 
 	/*
-	 * The Linux API doesn't pass down the total size of the buffer
+	 * The Beep API doesn't pass down the total size of the buffer
 	 * we read into down to the filesystem.  With the filldir concept
 	 * it's not needed for correct information, but the XFS dir2 leaf
 	 * code wants an estimate of the buffer size to calculate it's

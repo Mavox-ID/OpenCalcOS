@@ -3,10 +3,10 @@
  * See ../COPYING for licensing terms.
  */
 
-#include <linux/mm.h>
-#include <linux/mmu_context.h>
-#include <linux/export.h>
-#include <linux/sched.h>
+#include <beep/mm.h>
+#include <beep/mmu_context.h>
+#include <beep/export.h>
+#include <beep/sched.h>
 
 #include <asm/mmu_context.h>
 

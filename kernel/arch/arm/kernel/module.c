@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/module.c
+ *  beep/arch/arm/kernel/module.c
  *
  *  Copyright (C) 2002 Russell King.
  *  Modified for nommu by Hyok S. Choi
@@ -10,15 +10,15 @@
  *
  * Module allocation method suggested by Andi Kleen.
  */
-#include <linux/module.h>
-#include <linux/moduleloader.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/moduleloader.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/elf.h>
+#include <beep/vmalloc.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/gfp.h>
 
 #include <asm/pgtable.h>
 #include <asm/sections.h>

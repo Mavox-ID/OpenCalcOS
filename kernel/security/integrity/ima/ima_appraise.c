@@ -8,13 +8,13 @@
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, version 2 of the License.
  */
-#include <linux/module.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/xattr.h>
-#include <linux/magic.h>
-#include <linux/ima.h>
-#include <linux/evm.h>
+#include <beep/module.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/xattr.h>
+#include <beep/magic.h>
+#include <beep/ima.h>
+#include <beep/evm.h>
 
 #include "ima.h"
 

@@ -9,17 +9,17 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/sctp.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/timer.h>
+#include <beep/netfilter.h>
+#include <beep/module.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/sctp.h>
+#include <beep/string.h>
+#include <beep/seq_file.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_l4proto.h>
@@ -480,8 +480,8 @@ static bool sctp_new(struct nf_conn *ct, const struct sk_buff *skb,
 
 #if IS_ENABLED(CONFIG_NF_CT_NETLINK)
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_conntrack.h>
 
 static int sctp_to_nlattr(struct sk_buff *skb, struct nlattr *nla,
 			  struct nf_conn *ct)
@@ -559,8 +559,8 @@ static int sctp_nlattr_size(void)
 
 #if IS_ENABLED(CONFIG_NF_CT_NETLINK_TIMEOUT)
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_cttimeout.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_cttimeout.h>
 
 static int sctp_timeout_nlattr_to_obj(struct nlattr *tb[],
 				      struct net *net, void *data)

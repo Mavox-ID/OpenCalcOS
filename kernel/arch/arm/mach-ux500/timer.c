@@ -4,12 +4,12 @@
  * License Terms: GNU General Public License v2
  * Author: Mattias Wallin <mattias.wallin@stericsson.com> for ST-Ericsson
  */
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/clksrc-dbx500-prcmu.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_data/clocksource-nomadik-mtu.h>
+#include <beep/io.h>
+#include <beep/errno.h>
+#include <beep/clksrc-dbx500-prcmu.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/platform_data/clocksource-nomadik-mtu.h>
 
 #include <asm/smp_twd.h>
 

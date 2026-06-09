@@ -8,9 +8,9 @@
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/io.h>
 #include <asm/soc.h>
 #include <asm/dscr.h>
 

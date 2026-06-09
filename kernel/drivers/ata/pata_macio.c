@@ -11,17 +11,17 @@
 #undef DEBUG
 #undef DEBUG_DMA
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/scatterlist.h>
-#include <linux/of.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/ata.h>
+#include <beep/libata.h>
+#include <beep/adb.h>
+#include <beep/pmu.h>
+#include <beep/scatterlist.h>
+#include <beep/of.h>
+#include <beep/gfp.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>

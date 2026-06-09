@@ -5,7 +5,7 @@
  * Copyright (C) 1999 David S. Miller (davem@redhat.com)
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 	.text
 ENTRY(__ashldi3)

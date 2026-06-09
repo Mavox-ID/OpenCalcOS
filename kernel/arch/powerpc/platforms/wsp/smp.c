@@ -10,11 +10,11 @@
  *
  */
 
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/smp.h>
+#include <beep/cpumask.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/of.h>
+#include <beep/smp.h>
 
 #include <asm/dbell.h>
 #include <asm/machdep.h>

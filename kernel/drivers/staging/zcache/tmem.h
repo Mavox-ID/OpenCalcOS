@@ -9,13 +9,13 @@
 #ifndef _TMEM_H_
 #define _TMEM_H_
 
-#include <linux/types.h>
-#include <linux/highmem.h>
-#include <linux/hash.h>
-#include <linux/atomic.h>
+#include <beep/types.h>
+#include <beep/highmem.h>
+#include <beep/hash.h>
+#include <beep/atomic.h>
 
 /*
- * These are pre-defined by the Xen<->Linux ABI
+ * These are pre-defined by the Xen<->Beep ABI
  */
 #define TMEM_PUT_PAGE			4
 #define TMEM_GET_PAGE			5

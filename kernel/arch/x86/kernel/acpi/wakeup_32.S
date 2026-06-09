@@ -1,5 +1,5 @@
 	.section .text..page_aligned
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/segment.h>
 #include <asm/page_types.h>
 

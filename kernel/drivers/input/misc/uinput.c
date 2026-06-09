@@ -29,15 +29,15 @@
  *	0.1	20/06/2002
  *		- first public version
  */
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/uinput.h>
-#include <linux/input/mt.h>
+#include <beep/poll.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/miscdevice.h>
+#include <beep/uinput.h>
+#include <beep/input/mt.h>
 #include "../input-compat.h"
 
 static int uinput_dev_event(struct input_dev *dev,

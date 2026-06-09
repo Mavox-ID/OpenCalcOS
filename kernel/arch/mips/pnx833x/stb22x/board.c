@@ -22,9 +22,9 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/bootinfo.h>
-#include <linux/mm.h>
+#include <beep/mm.h>
 #include <pnx833x.h>
 #include <gpio.h>
 

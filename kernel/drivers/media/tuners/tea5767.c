@@ -10,10 +10,10 @@
  * from their contributions on DScaler.
  */
 
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/videodev2.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/videodev2.h>
 #include "tuner-i2c.h"
 #include "tea5767.h"
 

@@ -8,7 +8,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/gpio.h>
+#include <beep/gpio.h>
 #include <plat/gpio-cfg.h>
 
 /* Number of camera port pins, without FIELD */

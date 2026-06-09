@@ -3,7 +3,7 @@
 
 #if !defined(_TRACE_TASK_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_TASK_H
-#include <linux/tracepoint.h>
+#include <beep/tracepoint.h>
 
 TRACE_EVENT(task_newtask,
 

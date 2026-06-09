@@ -36,23 +36,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/kdev_t.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/kdev_t.h>
 #include "bttvp.h"
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/tvaudio.h>
 #include <media/msp3400.h>
 
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/io.h>
 #include <asm/byteorder.h>
@@ -1715,7 +1715,7 @@ bttv_switch_overlay(struct bttv *btv, struct bttv_fh *fh,
 }
 
 /* ----------------------------------------------------------------------- */
-/* video4linux (1) interface                                               */
+/* video4beep (1) interface                                               */
 
 static int bttv_prepare_buffer(struct videobuf_queue *q,struct bttv *btv,
 			       struct bttv_buffer *buf,
@@ -4198,7 +4198,7 @@ static void bttv_unregister_video(struct bttv *btv)
 	}
 }
 
-/* register video4linux devices */
+/* register video4beep devices */
 static int bttv_register_video(struct bttv *btv)
 {
 	if (no_overlay > 0)
@@ -4409,7 +4409,7 @@ static int bttv_probe(struct pci_dev *dev, const struct pci_device_id *pci_id)
 	bttv_init_tuner(btv);
 	init_irqreg(btv);
 
-	/* register video4linux + input */
+	/* register video4beep + input */
 	if (!bttv_tvcards[btv->c.type].no_video) {
 		bttv_register_video(btv);
 		bt848_bright(btv,32768);
@@ -4480,7 +4480,7 @@ static void bttv_remove(struct pci_dev *pci_dev)
 	/* unregister i2c_bus + input */
 	fini_bttv_i2c(btv);
 
-	/* unregister video4linux */
+	/* unregister video4beep */
 	bttv_unregister_video(btv);
 
 	/* free allocated memory */

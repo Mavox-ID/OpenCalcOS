@@ -11,15 +11,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
-#include <linux/mfd/core.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/acpi.h>
+#include <beep/mfd/core.h>
+#include <beep/pm_runtime.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/irqdomain.h>
+#include <beep/of.h>
 
 static struct device_type mfd_dev_type = {
 	.name	= "mfd_device",

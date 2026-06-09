@@ -3,8 +3,8 @@
  *
  * This file is released under the GPL.
  */
-#ifndef _LINUX_DM_BTREE_H
-#define _LINUX_DM_BTREE_H
+#ifndef _BEEP_DM_BTREE_H
+#define _BEEP_DM_BTREE_H
 
 #include "dm-block-manager.h"
 
@@ -142,4 +142,4 @@ int dm_btree_remove(struct dm_btree_info *info, dm_block_t root,
 int dm_btree_find_highest_key(struct dm_btree_info *info, dm_block_t root,
 			      uint64_t *result_keys);
 
-#endif	/* _LINUX_DM_BTREE_H */
+#endif	/* _BEEP_DM_BTREE_H */

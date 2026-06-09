@@ -14,26 +14,26 @@
  * From i386 code copyright (C) 1995  Linus Torvalds
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/vt_kern.h>		/* For unblank_screen() */
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/kprobes.h>
-#include <linux/hugetlb.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/tty.h>
+#include <beep/vt_kern.h>		/* For unblank_screen() */
+#include <beep/highmem.h>
+#include <beep/module.h>
+#include <beep/kprobes.h>
+#include <beep/hugetlb.h>
+#include <beep/syscalls.h>
+#include <beep/uaccess.h>
 
 #include <asm/pgalloc.h>
 #include <asm/sections.h>
@@ -197,7 +197,7 @@ static pgd_t *get_current_pgd(void)
  * Handle it by just waiting until the fault resolves.
  *
  * It's also possible to get a migrating kernel PTE that resolves
- * itself during the downcall from hypervisor to Linux.  We just check
+ * itself during the downcall from hypervisor to Beep.  We just check
  * here to see if the PTE seems valid, and if so we retry it.
  *
  * NOTE! We MUST NOT take any locks for this case.  We may be in an

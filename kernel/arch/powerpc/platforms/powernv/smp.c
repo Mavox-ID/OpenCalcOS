@@ -9,15 +9,15 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/cpu.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/cpu.h>
 
 #include <asm/irq.h>
 #include <asm/smp.h>

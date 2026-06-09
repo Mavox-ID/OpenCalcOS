@@ -8,12 +8,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kprobes.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/preempt.h>
-#include <linux/kdebug.h>
-#include <linux/slab.h>
+#include <beep/kprobes.h>
+#include <beep/module.h>
+#include <beep/ptrace.h>
+#include <beep/preempt.h>
+#include <beep/kdebug.h>
+#include <beep/slab.h>
 #include <asm/cacheflush.h>
 #include <asm/uaccess.h>
 

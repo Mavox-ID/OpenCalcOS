@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-w90x900/clock.c
+ * beep/arch/arm/mach-w90x900/clock.c
  *
  * Copyright (c) 2008 Nuvoton technology corporation
  *
@@ -10,16 +10,16 @@
  * the Free Software Foundation; either version 2 of the License.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/clk.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/string.h>
+#include <beep/clk.h>
+#include <beep/spinlock.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 

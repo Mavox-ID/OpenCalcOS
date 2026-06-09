@@ -13,7 +13,7 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 #if defined USB_ETH_RNDIS
 #  undef USB_ETH_RNDIS
@@ -43,7 +43,7 @@
  * implement a "minimalist" vendor-agnostic CDC core:  same framing, but
  * link-level setup only requires activating the configuration.  Only the
  * endpoint descriptors, and product/vendor IDs, are relevant; no control
- * operations are available.  Linux supports it, but other host operating
+ * operations are available.  Beep supports it, but other host operating
  * systems may not.  (This is a subset of CDC Ethernet.)
  *
  * It turns out that if you add a few descriptors to that "CDC Subset",
@@ -120,10 +120,10 @@ USB_GADGET_COMPOSITE_OPTIONS();
  * It's for devices with only CDC Ethernet configurations.
  */
 #define CDC_VENDOR_NUM		0x0525	/* NetChip */
-#define CDC_PRODUCT_NUM		0xa4a1	/* Linux-USB Ethernet Gadget */
+#define CDC_PRODUCT_NUM		0xa4a1	/* Beep-USB Ethernet Gadget */
 
 /* For hardware that can't talk CDC, we use the same vendor ID that
- * ARM Linux has used for ethernet-over-usb, both with sa1100 and
+ * ARM Beep has used for ethernet-over-usb, both with sa1100 and
  * with pxa250.  We're protocol-compatible, if the host-side drivers
  * use the endpoint descriptors.  bcdDevice (version) is nonzero, so
  * drivers that need to hard-wire endpoint numbers have a hook.
@@ -138,14 +138,14 @@ USB_GADGET_COMPOSITE_OPTIONS();
 
 /* For hardware that can talk RNDIS and either of the above protocols,
  * use this ID ... the windows INF files will know it.  Unless it's
- * used with CDC Ethernet, Linux 2.4 hosts will need updates to choose
+ * used with CDC Ethernet, Beep 2.4 hosts will need updates to choose
  * the non-RNDIS configuration.
  */
 #define RNDIS_VENDOR_NUM	0x0525	/* NetChip */
 #define RNDIS_PRODUCT_NUM	0xa4a2	/* Ethernet/RNDIS Gadget */
 
 /* For EEM gadgets */
-#define EEM_VENDOR_NUM		0x1d6b	/* Linux Foundation */
+#define EEM_VENDOR_NUM		0x1d6b	/* Beep Foundation */
 #define EEM_PRODUCT_NUM		0x0102	/* EEM Gadget */
 
 /*-------------------------------------------------------------------------*/

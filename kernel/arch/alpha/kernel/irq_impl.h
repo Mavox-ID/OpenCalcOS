@@ -1,5 +1,5 @@
 /*
- *	linux/arch/alpha/kernel/irq_impl.h
+ *	beep/arch/alpha/kernel/irq_impl.h
  *
  *	Copyright (C) 1995 Linus Torvalds
  *	Copyright (C) 1998, 2000 Richard Henderson
@@ -8,9 +8,9 @@
  * with the IRQ handling routines in irq.c.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/profile.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/profile.h>
 
 
 #define RTC_IRQ    8

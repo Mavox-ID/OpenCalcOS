@@ -16,8 +16,8 @@
 #ifndef __INTEGRITY_EVM_H
 #define __INTEGRITY_EVM_H
 
-#include <linux/xattr.h>
-#include <linux/security.h>
+#include <beep/xattr.h>
+#include <beep/security.h>
 
 #include "../integrity.h"
 

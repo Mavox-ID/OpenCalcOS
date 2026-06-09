@@ -5,11 +5,11 @@
  *    Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com)
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/smp.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/init.h>
+#include <beep/smp.h>
 #include <asm/io.h>
 
 int spin_retry = 1000;

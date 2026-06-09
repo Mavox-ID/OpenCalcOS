@@ -50,7 +50,7 @@
 /* After libbb.h, since it needs sys/types.h on some systems */
 #include <sys/utsname.h>
 
-#ifdef __linux__
+#ifdef __beep__
 # include <sys/mount.h>
 # ifndef MS_SILENT
 #  define MS_SILENT      (1 << 15)
@@ -189,7 +189,7 @@ static char *make_tempdir(void)
 	char template[] = "/libs/bootchart.XXXXXX";
 	char *tempdir = xstrdup(mkdtemp(template));
 	if (!tempdir) {
-#ifdef __linux__
+#ifdef __beep__
 		/* /libs is not writable (happens when we are used as init).
 		 * Try to mount a tmpfs, then cd and lazily unmount it.
 		 * Since we unmount it at once, we can mount it anywhere.

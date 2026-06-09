@@ -21,7 +21,7 @@
 		heartbeat {
 			label = "overo:red:gpio21";
 			gpios = <&gpio1 21 0>;
-			linux,default-trigger = "heartbeat";
+			beep,default-trigger = "heartbeat";
 		};
 	};
 };

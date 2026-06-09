@@ -1,4 +1,4 @@
-/* DVB USB compliant linux driver for
+/* DVB USB compliant beep driver for
  *
  * DM04/QQBOX DVB-S USB BOX	LME2510C + SHARP:BS2F7HZ7395
  *				LME2510C + LG TDQY-P001F

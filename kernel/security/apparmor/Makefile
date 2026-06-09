@@ -1,4 +1,4 @@
-# Makefile for AppArmor Linux Security Module
+# Makefile for AppArmor Beep Security Module
 #
 obj-$(CONFIG_SECURITY_APPARMOR) += apparmor.o
 
@@ -57,7 +57,7 @@ cmd_make-rlim = echo "static const char *const rlim_names[RLIM_NLIMITS] = {" \
 
 $(obj)/capability.o : $(obj)/capability_names.h
 $(obj)/resource.o : $(obj)/rlim_names.h
-$(obj)/capability_names.h : $(srctree)/include/uapi/linux/capability.h \
+$(obj)/capability_names.h : $(srctree)/include/uapi/beep/capability.h \
 			    $(src)/Makefile
 	$(call cmd,make-caps)
 $(obj)/rlim_names.h : $(srctree)/include/uapi/asm-generic/resource.h \

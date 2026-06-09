@@ -4,8 +4,8 @@
 #if !defined(_TRACE_RANDOM_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_RANDOM_H
 
-#include <linux/writeback.h>
-#include <linux/tracepoint.h>
+#include <beep/writeback.h>
+#include <beep/tracepoint.h>
 
 DECLARE_EVENT_CLASS(random__mix_pool_bytes,
 	TP_PROTO(const char *pool_name, int bytes, unsigned long IP),

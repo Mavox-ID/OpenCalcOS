@@ -2,7 +2,7 @@
  *
  * Copyright (C) 2003,4 Red Hat, Inc. All Rights Reserved.
  * Written by David Howells (dhowells@redhat.com)
- * - Derived from Linux/MIPS version, Copyright (C) 1995 Andreas Busse
+ * - Derived from Beep/MIPS version, Copyright (C) 1995 Andreas Busse
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -82,12 +82,12 @@
  *    $ frv-elf-gdb
  *
  *  Step 2:
- *  Configure linux for remote debugging and build it.
+ *  Configure beep for remote debugging and build it.
  *
  *  Example:
- *    $ cd ~/linux
+ *    $ cd ~/beep
  *    $ make menuconfig <go to "Kernel Hacking" and turn on remote debugging>
- *    $ make vmlinux
+ *    $ make vmbeep
  *
  *  Step 3:
  *  Download the kernel to the remote target and start
@@ -103,7 +103,7 @@
  *  Start the gdb session on the host.
  *
  *  Example:
- *    $ frv-elf-gdb vmlinux
+ *    $ frv-elf-gdb vmbeep
  *    (gdb) set remotebaud 115200
  *    (gdb) target remote /dev/ttyS1
  *    ...at this point you are connected to
@@ -114,15 +114,15 @@
  *
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/nmi.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/nmi.h>
 
 #include <asm/asm-offsets.h>
 #include <asm/pgtable.h>
@@ -167,7 +167,7 @@ static struct __debug_mmu __debug_mmu;
 
 #define BREAK_INSN	0x801000c0	/* use "break" as bkpt */
 
-static const char gdbstub_banner[] = "Linux/FR-V GDB Stub (c) RedHat 2003\n";
+static const char gdbstub_banner[] = "Beep/FR-V GDB Stub (c) RedHat 2003\n";
 
 volatile u8	gdbstub_rx_buffer[PAGE_SIZE] __attribute__((aligned(PAGE_SIZE)));
 volatile u32	gdbstub_rx_inp = 0;

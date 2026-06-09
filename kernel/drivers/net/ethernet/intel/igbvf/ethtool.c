@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel(R) 82576 Virtual Function Linux driver
+  Intel(R) 82576 Virtual Function Beep driver
   Copyright(c) 2009 - 2012 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it
@@ -27,14 +27,14 @@
 
 /* ethtool support for igbvf */
 
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/pci.h>
+#include <beep/vmalloc.h>
+#include <beep/delay.h>
 
 #include "igbvf.h"
-#include <linux/if_vlan.h>
+#include <beep/if_vlan.h>
 
 
 struct igbvf_stats {

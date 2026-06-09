@@ -9,10 +9,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/netfilter_ipv6/ip6_tables.h>
+#include <beep/slab.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Netfilter Core Team <coreteam@netfilter.org>");

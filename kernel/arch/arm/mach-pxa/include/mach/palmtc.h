@@ -1,5 +1,5 @@
 /*
- * linux/include/asm-arm/arch-pxa/palmtc-gpio.h
+ * beep/include/asm-arm/arch-pxa/palmtc-gpio.h
  *
  * GPIOs and interrupts for Palm Tungsten|C Handheld Computer
  *

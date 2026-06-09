@@ -1,7 +1,7 @@
 #ifndef _ASM_S390_JUMP_LABEL_H
 #define _ASM_S390_JUMP_LABEL_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define JUMP_LABEL_NOP_SIZE 6
 

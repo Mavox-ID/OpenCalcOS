@@ -17,7 +17,7 @@
  */
 
 /*  ----------------------------------- Host OS */
-#include <linux/types.h>
+#include <beep/types.h>
 #include <dspbridge/host_os.h>
 
 /*  ----------------------------------- DSP/BIOS Bridge */

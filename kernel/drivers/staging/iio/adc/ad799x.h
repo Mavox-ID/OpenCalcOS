@@ -113,7 +113,7 @@ struct ad799x_state {
 };
 
 /*
- * TODO: struct ad799x_platform_data needs to go into include/linux/iio
+ * TODO: struct ad799x_platform_data needs to go into include/beep/iio
  */
 
 struct ad799x_platform_data {

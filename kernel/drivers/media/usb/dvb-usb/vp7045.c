@@ -1,4 +1,4 @@
-/* DVB USB compliant Linux driver for the
+/* DVB USB compliant Beep driver for the
  *  - TwinhanDTV Alpha/MagicBoxII USB2.0 DVB-T receiver
  *  - DigitalNow TinyUSB2 DVB-t receiver
  *

@@ -1,5 +1,5 @@
 /*
- *	linux/arch/arm/mach-nspire/nspire_clp.c
+ *	beep/arch/arm/mach-nspire/nspire_clp.c
  *
  *	Copyright (C) 2012 Daniel Tang <tangrs@tangrs.id.au>
  *
@@ -9,18 +9,18 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/clkdev.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/clcd.h>
-#include <linux/input.h>
-#include <linux/usb/ehci_pdriver.h>
-#include <linux/mtd/nand.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/clkdev.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/clcd.h>
+#include <beep/input.h>
+#include <beep/usb/ehci_pdriver.h>
+#include <beep/mtd/nand.h>
 
 #include <mach/nspire_mmio.h>
 #include <mach/irqs.h>

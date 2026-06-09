@@ -8,15 +8,15 @@
  * Martin Bligh, Andi Kleen, James Bottomley, John Stultz, and
  * James Cleverdon.
  */
-#include <linux/threads.h>
-#include <linux/cpumask.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/hardirq.h>
-#include <linux/dmar.h>
+#include <beep/threads.h>
+#include <beep/cpumask.h>
+#include <beep/string.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/ctype.h>
+#include <beep/init.h>
+#include <beep/hardirq.h>
+#include <beep/dmar.h>
 
 #include <asm/smp.h>
 #include <asm/apic.h>

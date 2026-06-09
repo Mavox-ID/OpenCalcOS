@@ -39,14 +39,14 @@
  *
  * Author: James Morris <jmorris@intercode.com.au>
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/udp.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/udp.h>
 #include <net/checksum.h>
 #include <net/udp.h>
 
@@ -54,7 +54,7 @@
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_nat_helper.h>
-#include <linux/netfilter/nf_conntrack_snmp.h>
+#include <beep/netfilter/nf_conntrack_snmp.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("James Morris <jmorris@intercode.com.au>");

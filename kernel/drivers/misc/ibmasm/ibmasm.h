@@ -22,18 +22,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/kref.h>
-#include <linux/device.h>
-#include <linux/input.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/list.h>
+#include <beep/wait.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/kref.h>
+#include <beep/device.h>
+#include <beep/input.h>
 
 /* Driver identification */
 #define DRIVER_NAME	"ibmasm"

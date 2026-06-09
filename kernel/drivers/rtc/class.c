@@ -11,12 +11,12 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/kdev_t.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
+#include <beep/kdev_t.h>
+#include <beep/idr.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
 
 #include "rtc-core.h"
 

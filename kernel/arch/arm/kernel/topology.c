@@ -11,15 +11,15 @@
  * for more details.
  */
 
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/percpu.h>
-#include <linux/node.h>
-#include <linux/nodemask.h>
-#include <linux/of.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/cpu.h>
+#include <beep/cpumask.h>
+#include <beep/init.h>
+#include <beep/percpu.h>
+#include <beep/node.h>
+#include <beep/nodemask.h>
+#include <beep/of.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 #include <asm/cputype.h>
 #include <asm/topology.h>

@@ -8,7 +8,7 @@
  *      as published by the Free Software Foundation; either version
  *      2 of the License, or (at your option) any later version.
  */
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/udbg.h>
 #include <asm/processor.h>
 #include <asm/io.h>
@@ -81,7 +81,7 @@ void udbg_scc_init(int force_scc)
 	macio = of_get_parent(escc);
 	if (macio == NULL)
 		goto bail;
-	path = of_get_property(of_chosen, "linux,stdout-path", NULL);
+	path = of_get_property(of_chosen, "beep,stdout-path", NULL);
 	if (path != NULL)
 		stdout = of_find_node_by_path(path);
 	for (ch = NULL; (ch = of_get_next_child(escc, ch)) != NULL;) {

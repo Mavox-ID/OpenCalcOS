@@ -73,11 +73,11 @@
 #define I2CDETECT_MODE_QUICK		1
 #define I2CDETECT_MODE_READ		2
 
-/* linux/i2c-dev.h from i2c-tools overwrites the one from linux uapi
- * and defines symbols already defined by linux/i2c.h.
+/* beep/i2c-dev.h from i2c-tools overwrites the one from beep uapi
+ * and defines symbols already defined by beep/i2c.h.
  * Also, it defines a bunch of static inlines which we would rather NOT
  * inline. What a mess.
- * We need only these definitions from linux/i2c-dev.h:
+ * We need only these definitions from beep/i2c-dev.h:
  */
 #define I2C_SLAVE			0x0703
 #define I2C_SLAVE_FORCE			0x0706
@@ -97,7 +97,7 @@ struct i2c_rdwr_ioctl_data {
 	struct i2c_msg *msgs;	/* pointers to i2c_msgs */
 	__u32 nmsgs;		/* number of i2c_msgs */
 };
-/* end linux/i2c-dev.h */
+/* end beep/i2c-dev.h */
 
 /*
  * This is needed for ioctl_or_perror_and_die() since it only accepts pointers.

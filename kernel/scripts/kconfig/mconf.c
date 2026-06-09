@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2002 Roman Zippel <zippel@linux-m68k.org>
+ * Copyright (C) 2002 Roman Zippel <zippel@beep-m68k.org>
  * Released under the terms of the GNU GPL v2.0.
  *
  * Introduced single menu mode (show all sub-menus in one large tree).

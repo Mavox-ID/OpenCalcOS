@@ -1,4 +1,4 @@
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include "asm/ptrace.h"
 
 int putreg(struct task_struct *child, unsigned long regno, 

@@ -18,7 +18,7 @@
 #include <asm-generic/mman-common.h>
 #include <arch/chip.h>
 
-/* Standard Linux flags */
+/* Standard Beep flags */
 
 #define MAP_POPULATE	0x0040		/* populate (prefault) pagetables */
 #define MAP_NONBLOCK	0x0080		/* do not block on IO */

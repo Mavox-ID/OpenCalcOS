@@ -30,12 +30,12 @@
  *
  ********************************************************************/
 
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/string.h>
+#include <beep/socket.h>
+#include <beep/fs.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/irlmp.h>

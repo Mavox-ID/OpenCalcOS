@@ -1,4 +1,4 @@
-/* linux/drivers/video/exynos/exynos_mipi_dsi.c
+/* beep/drivers/video/exynos/exynos_mipi_dsi.c
  *
  * Samsung SoC MIPI-DSIM driver.
  *
@@ -12,26 +12,26 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/clk.h>
-#include <linux/mutex.h>
-#include <linux/wait.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/ctype.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/memory.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kthread.h>
-#include <linux/notifier.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/clk.h>
+#include <beep/mutex.h>
+#include <beep/wait.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/fb.h>
+#include <beep/ctype.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/memory.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/kthread.h>
+#include <beep/notifier.h>
+#include <beep/regulator/consumer.h>
+#include <beep/pm_runtime.h>
 
 #include <video/exynos_mipi_dsim.h>
 

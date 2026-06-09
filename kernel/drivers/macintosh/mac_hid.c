@@ -8,12 +8,12 @@
  * This file will soon be removed in favor of an uinput userspace tool.
  */
 
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/sysctl.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/sysctl.h>
+#include <beep/input.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 MODULE_LICENSE("GPL");
 

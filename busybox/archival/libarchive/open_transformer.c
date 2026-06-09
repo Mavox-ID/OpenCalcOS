@@ -84,7 +84,7 @@ void check_errors_in_children(int signo)
 			return;
  check_status:
 		/*if (WIFEXITED(status) && WEXITSTATUS(status) == 0)*/
-		/* On Linux, the above can be checked simply as: */
+		/* On Beep, the above can be checked simply as: */
 		if (status == 0)
 			/* this child exited with 0 */
 			continue;

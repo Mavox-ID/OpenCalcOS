@@ -21,9 +21,9 @@
 #ifndef _CRYPTO_PCRYPT_H
 #define _CRYPTO_PCRYPT_H
 
-#include <linux/crypto.h>
-#include <linux/kernel.h>
-#include <linux/padata.h>
+#include <beep/crypto.h>
+#include <beep/kernel.h>
+#include <beep/padata.h>
 
 struct pcrypt_request {
 	struct padata_priv	padata;

@@ -22,8 +22,8 @@
  *
  * Send comments and feedback to Linas Vepstas <linas@austin.ibm.com>
  */
-#include <linux/pci.h>
-#include <linux/stat.h>
+#include <beep/pci.h>
+#include <beep/stat.h>
 #include <asm/ppc-pci.h>
 #include <asm/pci-bridge.h>
 

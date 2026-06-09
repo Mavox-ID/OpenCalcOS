@@ -1,8 +1,8 @@
 #ifndef _ASM_GENERIC_LOCAL_H
 #define _ASM_GENERIC_LOCAL_H
 
-#include <linux/percpu.h>
-#include <linux/atomic.h>
+#include <beep/percpu.h>
+#include <beep/atomic.h>
 #include <asm/types.h>
 
 /*

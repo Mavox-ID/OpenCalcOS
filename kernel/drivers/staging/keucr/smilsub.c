@@ -1,4 +1,4 @@
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include "usb.h"
 #include "scsiglue.h"
 #include "transport.h"

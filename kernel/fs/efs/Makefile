@@ -1,5 +1,5 @@
 #
-# Makefile for the linux efs-filesystem routines.
+# Makefile for the beep efs-filesystem routines.
 #
 
 obj-$(CONFIG_EFS_FS) += efs.o

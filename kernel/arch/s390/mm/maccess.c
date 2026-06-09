@@ -7,12 +7,12 @@
  *
  */
 
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/cpu.h>
+#include <beep/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/gfp.h>
+#include <beep/cpu.h>
 #include <asm/ctl_reg.h>
 
 /*

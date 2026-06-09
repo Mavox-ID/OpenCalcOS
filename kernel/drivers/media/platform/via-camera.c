@@ -6,26 +6,26 @@
  *
  * This work was supported by the One Laptop Per Child project
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/list.h>
+#include <beep/pci.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-chip-ident.h>
 #include <media/ov7670.h>
 #include <media/videobuf-dma-sg.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm_qos.h>
-#include <linux/via-core.h>
-#include <linux/via-gpio.h>
-#include <linux/via_i2c.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/pm_qos.h>
+#include <beep/via-core.h>
+#include <beep/via-gpio.h>
+#include <beep/via_i2c.h>
 #include <asm/olpc.h>
 
 #include "via-camera.h"

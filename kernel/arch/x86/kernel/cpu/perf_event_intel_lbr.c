@@ -1,5 +1,5 @@
-#include <linux/perf_event.h>
-#include <linux/types.h>
+#include <beep/perf_event.h>
+#include <beep/types.h>
 
 #include <asm/perf_event.h>
 #include <asm/msr.h>
@@ -257,7 +257,7 @@ static void intel_pmu_lbr_read_32(struct cpu_hw_events *cpuc)
 }
 
 /*
- * Due to lack of segmentation in Linux the effective address (offset)
+ * Due to lack of segmentation in Beep the effective address (offset)
  * is the same as the linear address, allowing us to merge the LIP and EIP
  * LBR formats.
  */

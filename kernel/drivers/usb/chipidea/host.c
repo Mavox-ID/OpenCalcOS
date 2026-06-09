@@ -19,11 +19,11 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/chipidea.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
+#include <beep/usb/chipidea.h>
 
 #include "../host/ehci.h"
 

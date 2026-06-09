@@ -9,11 +9,11 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/syscore_ops.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/syscore_ops.h>
 
 #include <plat/cpu-freq.h>
 #include <plat/clock.h>

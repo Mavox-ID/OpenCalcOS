@@ -6,32 +6,32 @@
  * and only uses a centralized lock to manage a pool of partial slabs.
  *
  * (C) 2007 SGI, Christoph Lameter
- * (C) 2011 Linux Foundation, Christoph Lameter
+ * (C) 2011 Beep Foundation, Christoph Lameter
  */
 
-#include <linux/mm.h>
-#include <linux/swap.h> /* struct reclaim_state */
-#include <linux/module.h>
-#include <linux/bit_spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <beep/mm.h>
+#include <beep/swap.h> /* struct reclaim_state */
+#include <beep/module.h>
+#include <beep/bit_spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/bitops.h>
+#include <beep/slab.h>
 #include "slab.h"
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/kmemcheck.h>
-#include <linux/cpu.h>
-#include <linux/cpuset.h>
-#include <linux/mempolicy.h>
-#include <linux/ctype.h>
-#include <linux/debugobjects.h>
-#include <linux/kallsyms.h>
-#include <linux/memory.h>
-#include <linux/math64.h>
-#include <linux/fault-inject.h>
-#include <linux/stacktrace.h>
-#include <linux/prefetch.h>
-#include <linux/memcontrol.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/kmemcheck.h>
+#include <beep/cpu.h>
+#include <beep/cpuset.h>
+#include <beep/mempolicy.h>
+#include <beep/ctype.h>
+#include <beep/debugobjects.h>
+#include <beep/kallsyms.h>
+#include <beep/memory.h>
+#include <beep/math64.h>
+#include <beep/fault-inject.h>
+#include <beep/stacktrace.h>
+#include <beep/prefetch.h>
+#include <beep/memcontrol.h>
 
 #include <trace/events/kmem.h>
 

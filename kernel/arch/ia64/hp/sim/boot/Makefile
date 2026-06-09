@@ -9,12 +9,12 @@
 #
 
 targets-$(CONFIG_IA64_HP_SIM)  += bootloader
-targets := vmlinux.bin vmlinux.gz $(targets-y)
+targets := vmbeep.bin vmbeep.gz $(targets-y)
 
 quiet_cmd_cptotop = LN      $@
       cmd_cptotop = ln -f $< $@
 
-vmlinux.gz: $(obj)/vmlinux.gz $(addprefix $(obj)/,$(targets-y))
+vmbeep.gz: $(obj)/vmbeep.gz $(addprefix $(obj)/,$(targets-y))
 	$(call cmd,cptotop)
 	@echo '  Kernel: $@ is ready'
 
@@ -23,10 +23,10 @@ boot: bootloader
 bootloader: $(obj)/bootloader
 	$(call cmd,cptotop)
 
-$(obj)/vmlinux.gz: $(obj)/vmlinux.bin FORCE
+$(obj)/vmbeep.gz: $(obj)/vmbeep.bin FORCE
 	$(call if_changed,gzip)
 
-$(obj)/vmlinux.bin: vmlinux FORCE
+$(obj)/vmbeep.bin: vmbeep FORCE
 	$(call if_changed,objcopy)
 
 

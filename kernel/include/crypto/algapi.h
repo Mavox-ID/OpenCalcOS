@@ -12,10 +12,10 @@
 #ifndef _CRYPTO_ALGAPI_H
 #define _CRYPTO_ALGAPI_H
 
-#include <linux/crypto.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
+#include <beep/crypto.h>
+#include <beep/list.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
 
 struct module;
 struct rtattr;

@@ -1,8 +1,8 @@
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/user.h>
-#include <linux/regset.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/user.h>
+#include <beep/regset.h>
 
 #include <asm/uaccess.h>
 #include <asm/desc.h>

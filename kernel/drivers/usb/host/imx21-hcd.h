@@ -21,10 +21,10 @@
  * Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#ifndef __LINUX_IMX21_HCD_H__
-#define __LINUX_IMX21_HCD_H__
+#ifndef __BEEP_IMX21_HCD_H__
+#define __BEEP_IMX21_HCD_H__
 
-#include <linux/platform_data/usb-mx2.h>
+#include <beep/platform_data/usb-mx2.h>
 
 #define NUM_ISO_ETDS 	2
 #define USB_NUM_ETD	32

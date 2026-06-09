@@ -25,11 +25,11 @@
  *
  */
 
-#include <linux/signal.h>
+#include <beep/signal.h>
 
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/of_address.h>
 
 /**
  * ehci_xilinx_port_handed_over - hand the port out if failed to enable it

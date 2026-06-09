@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/w100fb.h
+ * beep/drivers/video/w100fb.h
  *
  * Frame Buffer Device for ATI w100 (Wallaby)
  *

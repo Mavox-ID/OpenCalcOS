@@ -8,9 +8,9 @@
  * for more details.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/thread_info.h>
-#include <linux/errno.h>
+#include <beep/errno.h>
 #include <asm/entry.h>
 #include <asm/asm-offsets.h>
 #include <asm/registers.h>

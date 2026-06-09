@@ -29,17 +29,17 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <beep/types.h>
+#include <beep/rcupdate.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/in.h>
+#include <beep/in6.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
-#include <linux/audit.h>
+#include <beep/audit.h>
 
 #include "netlabel_addrlist.h"
 

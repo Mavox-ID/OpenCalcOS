@@ -13,8 +13,8 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/signal.h>
-#include <linux/of_platform.h>
+#include <beep/signal.h>
+#include <beep/of_platform.h>
 
 #include <asm/prom.h>
 

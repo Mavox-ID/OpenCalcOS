@@ -11,15 +11,15 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/device.h>
-#include <linux/mfd/lp8788.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/device.h>
+#include <beep/mfd/lp8788.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 /* register address */
 #define LP8788_INT_1			0x00

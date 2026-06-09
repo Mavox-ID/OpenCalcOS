@@ -33,7 +33,7 @@
 #ifndef IRLAP_FRAME_H
 #define IRLAP_FRAME_H
 
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 
 #include <net/irda/irda.h>
 

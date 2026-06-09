@@ -14,20 +14,20 @@
  * option) any later version.
  *
  */
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/reboot.h>
-#include <linux/kdev_t.h>
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/stringify.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/reboot.h>
+#include <beep/kdev_t.h>
+#include <beep/types.h>
+#include <beep/major.h>
+#include <beep/console.h>
+#include <beep/delay.h>
+#include <beep/stringify.h>
+#include <beep/platform_device.h>
+#include <beep/serial.h>
+#include <beep/serial_8250.h>
 
 #include <asm/processor.h>
 #include <asm/platform.h>
@@ -85,7 +85,7 @@ void platform_restart(void)
 
 void __init platform_setup(char** cmdline)
 {
-	led_print (0, "LINUX   ");
+	led_print (0, "BEEP   ");
 }
 
 /* early initialization */

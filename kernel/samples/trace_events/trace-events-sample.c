@@ -1,5 +1,5 @@
-#include <linux/module.h>
-#include <linux/kthread.h>
+#include <beep/module.h>
+#include <beep/kthread.h>
 
 /*
  * Any file that uses trace points, must include the header.

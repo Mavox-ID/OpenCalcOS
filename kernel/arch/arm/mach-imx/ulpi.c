@@ -17,12 +17,12 @@
  * MA  02110-1301, USA.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/ulpi.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/ulpi.h>
 
 #include "ulpi.h"
 

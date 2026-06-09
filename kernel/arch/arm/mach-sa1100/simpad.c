@@ -1,21 +1,21 @@
 /*
- * linux/arch/arm/mach-sa1100/simpad.c
+ * beep/arch/arm/mach-sa1100/simpad.c
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/proc_fs.h>
-#include <linux/string.h>
-#include <linux/pm.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/ucb1x00.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/tty.h>
+#include <beep/proc_fs.h>
+#include <beep/string.h>
+#include <beep/pm.h>
+#include <beep/platform_data/sa11x0-serial.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/ucb1x00.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
 
 #include <mach/hardware.h>
 #include <asm/setup.h>
@@ -24,16 +24,16 @@
 #include <asm/mach/arch.h>
 #include <asm/mach/flash.h>
 #include <asm/mach/map.h>
-#include <linux/platform_data/mfd-mcp-sa11x0.h>
+#include <beep/platform_data/mfd-mcp-sa11x0.h>
 #include <mach/simpad.h>
 #include <mach/irqs.h>
 
-#include <linux/serial_core.h>
-#include <linux/ioport.h>
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
-#include <linux/leds.h>
-#include <linux/i2c-gpio.h>
+#include <beep/serial_core.h>
+#include <beep/ioport.h>
+#include <beep/input.h>
+#include <beep/gpio_keys.h>
+#include <beep/leds.h>
+#include <beep/i2c-gpio.h>
 
 #include "generic.h"
 

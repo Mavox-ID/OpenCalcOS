@@ -11,12 +11,12 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/device.h>
-#include <linux/string.h>
-#include <linux/list.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/export.h>
+#include <beep/device.h>
+#include <beep/string.h>
+#include <beep/list.h>
 
 #include <mach/chip.h>
 
@@ -184,9 +184,9 @@ EXPORT_SYMBOL(clk_get_parent);
 
 /* /sys/kernel/debug/at32ap_clk */
 
-#include <linux/io.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/io.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 #include "pm.h"
 
 

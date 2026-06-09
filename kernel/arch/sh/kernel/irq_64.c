@@ -7,8 +7,8 @@
  * License. See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/irqflags.h>
-#include <linux/module.h>
+#include <beep/irqflags.h>
+#include <beep/module.h>
 #include <cpu/registers.h>
 
 void notrace arch_local_irq_restore(unsigned long flags)

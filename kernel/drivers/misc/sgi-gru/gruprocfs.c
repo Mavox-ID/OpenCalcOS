@@ -22,10 +22,10 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/proc_fs.h>
-#include <linux/device.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
+#include <beep/proc_fs.h>
+#include <beep/device.h>
+#include <beep/seq_file.h>
+#include <beep/uaccess.h>
 #include "gru.h"
 #include "grulib.h"
 #include "grutables.h"

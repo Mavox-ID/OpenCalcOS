@@ -18,9 +18,9 @@
 
 #define __TRACE_BRCMSMAC_H
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/tracepoint.h>
+#include <beep/types.h>
+#include <beep/device.h>
+#include <beep/tracepoint.h>
 #include "mac80211_if.h"
 
 #ifndef CONFIG_BRCM_TRACING

@@ -2,20 +2,20 @@
  * Driver for Intel MSIC
  *
  * Copyright (C) 2011, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@beep.intel.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
 
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/intel_msic.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/intel_msic.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 #include <asm/intel_scu_ipc.h>
 
@@ -467,5 +467,5 @@ static struct platform_driver intel_msic_driver = {
 module_platform_driver(intel_msic_driver);
 
 MODULE_DESCRIPTION("Driver for Intel MSIC");
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@beep.intel.com>");
 MODULE_LICENSE("GPL");

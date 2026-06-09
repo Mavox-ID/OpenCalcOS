@@ -21,12 +21,12 @@
 #ifndef STACKGLUE_H
 #define STACKGLUE_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/dlmconstants.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/dlmconstants.h>
 
 #include "dlm/dlmapi.h"
-#include <linux/dlm.h>
+#include <beep/dlm.h>
 
 /* Needed for plock-related prototypes */
 struct file;

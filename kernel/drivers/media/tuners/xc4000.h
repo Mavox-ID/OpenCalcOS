@@ -1,7 +1,7 @@
 /*
  *  Driver for Xceive XC4000 "QAM/8VSB single chip tuner"
  *
- *  Copyright (c) 2007 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2007 Steven Toth <stoth@beeptv.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -22,7 +22,7 @@
 #ifndef __XC4000_H__
 #define __XC4000_H__
 
-#include <linux/firmware.h>
+#include <beep/firmware.h>
 
 struct dvb_frontend;
 struct i2c_adapter;

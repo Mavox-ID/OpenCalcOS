@@ -41,8 +41,8 @@
  * "current" is in register %ebx during any slow entries.
  */
 
-#include <linux/linkage.h>
-#include <linux/err.h>
+#include <beep/linkage.h>
+#include <beep/err.h>
 #include <asm/thread_info.h>
 #include <asm/irqflags.h>
 #include <asm/errno.h>
@@ -59,8 +59,8 @@
 #include <asm/asm.h>
 #include <asm/smap.h>
 
-/* Avoid __ASSEMBLER__'ifying <linux/audit.h> just for this.  */
-#include <linux/elf-em.h>
+/* Avoid __ASSEMBLER__'ifying <beep/audit.h> just for this.  */
+#include <beep/elf-em.h>
 #define AUDIT_ARCH_I386		(EM_386|__AUDIT_ARCH_LE)
 #define __AUDIT_ARCH_LE	   0x40000000
 
@@ -1047,7 +1047,7 @@ ENDPROC(xen_hypervisor_callback)
 # Category 1 we fix up by reattempting the load, and zeroing the segment
 # register if the load fails.
 # Category 2 we fix up by jumping to do_iret_error. We cannot use the
-# normal Linux return path in this case because if we use the IRET hypercall
+# normal Beep return path in this case because if we use the IRET hypercall
 # to pop the stack frame we end up in an infinite loop of failsafe callbacks.
 # We distinguish between categories by maintaining a status value in EAX.
 ENTRY(xen_failsafe_callback)

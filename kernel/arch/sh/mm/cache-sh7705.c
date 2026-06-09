@@ -9,11 +9,11 @@
  * for more details.
  *
  */
-#include <linux/init.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/threads.h>
+#include <beep/init.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/threads.h>
 #include <asm/addrspace.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>

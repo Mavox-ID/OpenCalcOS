@@ -2,7 +2,7 @@
 #include "debugfs.h"
 #include "cache.h"
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <sys/mount.h>
 
 static int debugfs_premounted;

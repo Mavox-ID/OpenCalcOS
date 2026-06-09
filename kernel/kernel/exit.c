@@ -1,58 +1,58 @@
 /*
- *  linux/kernel/exit.c
+ *  beep/kernel/exit.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/completion.h>
-#include <linux/personality.h>
-#include <linux/tty.h>
-#include <linux/iocontext.h>
-#include <linux/key.h>
-#include <linux/security.h>
-#include <linux/cpu.h>
-#include <linux/acct.h>
-#include <linux/tsacct_kern.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/binfmts.h>
-#include <linux/nsproxy.h>
-#include <linux/pid_namespace.h>
-#include <linux/ptrace.h>
-#include <linux/profile.h>
-#include <linux/mount.h>
-#include <linux/proc_fs.h>
-#include <linux/kthread.h>
-#include <linux/mempolicy.h>
-#include <linux/taskstats_kern.h>
-#include <linux/delayacct.h>
-#include <linux/freezer.h>
-#include <linux/cgroup.h>
-#include <linux/syscalls.h>
-#include <linux/signal.h>
-#include <linux/posix-timers.h>
-#include <linux/cn_proc.h>
-#include <linux/mutex.h>
-#include <linux/futex.h>
-#include <linux/pipe_fs_i.h>
-#include <linux/audit.h> /* for audit_free() */
-#include <linux/resource.h>
-#include <linux/blkdev.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/tracehook.h>
-#include <linux/fs_struct.h>
-#include <linux/init_task.h>
-#include <linux/perf_event.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/capability.h>
+#include <beep/completion.h>
+#include <beep/personality.h>
+#include <beep/tty.h>
+#include <beep/iocontext.h>
+#include <beep/key.h>
+#include <beep/security.h>
+#include <beep/cpu.h>
+#include <beep/acct.h>
+#include <beep/tsacct_kern.h>
+#include <beep/file.h>
+#include <beep/fdtable.h>
+#include <beep/binfmts.h>
+#include <beep/nsproxy.h>
+#include <beep/pid_namespace.h>
+#include <beep/ptrace.h>
+#include <beep/profile.h>
+#include <beep/mount.h>
+#include <beep/proc_fs.h>
+#include <beep/kthread.h>
+#include <beep/mempolicy.h>
+#include <beep/taskstats_kern.h>
+#include <beep/delayacct.h>
+#include <beep/freezer.h>
+#include <beep/cgroup.h>
+#include <beep/syscalls.h>
+#include <beep/signal.h>
+#include <beep/posix-timers.h>
+#include <beep/cn_proc.h>
+#include <beep/mutex.h>
+#include <beep/futex.h>
+#include <beep/pipe_fs_i.h>
+#include <beep/audit.h> /* for audit_free() */
+#include <beep/resource.h>
+#include <beep/blkdev.h>
+#include <beep/task_io_accounting_ops.h>
+#include <beep/tracehook.h>
+#include <beep/fs_struct.h>
+#include <beep/init_task.h>
+#include <beep/perf_event.h>
 #include <trace/events/sched.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/oom.h>
-#include <linux/writeback.h>
-#include <linux/shm.h>
+#include <beep/hw_breakpoint.h>
+#include <beep/oom.h>
+#include <beep/writeback.h>
+#include <beep/shm.h>
 
 #include <asm/uaccess.h>
 #include <asm/unistd.h>
@@ -541,7 +541,7 @@ static struct task_struct *find_new_reaper(struct task_struct *father)
 		 * Note that the code below checks same_thread_group(reaper,
 		 * pid_ns->child_reaper).  This is what we need to DTRT in a
 		 * PID namespace. However we still need the check above, see
-		 * http://marc.info/?l=linux-kernel&m=131385460420380
+		 * http://marc.info/?l=beep-kernel&m=131385460420380
 		 */
 		for (reaper = father->real_parent;
 		     reaper != &init_task;

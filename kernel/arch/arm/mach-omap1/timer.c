@@ -2,7 +2,7 @@
  * OMAP1 Dual-Mode Timers - platform device registration
  *
  * Contains first level initialization routines which internally
- * generates timer device information and registers with linux
+ * generates timer device information and registers with beep
  * device model. It also has low level function to chnage the timer
  * input clock source.
  *
@@ -20,12 +20,12 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/dmtimer-omap.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/platform_data/dmtimer-omap.h>
 
 #include <mach/irqs.h>
 

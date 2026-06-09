@@ -11,13 +11,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/param.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/idr.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/param.h>
+#include <beep/pm.h>
+#include <beep/platform_device.h>
+#include <beep/power_supply.h>
+#include <beep/idr.h>
 
 #include "../w1/w1.h"
 #include "../w1/slaves/w1_ds2781.h"

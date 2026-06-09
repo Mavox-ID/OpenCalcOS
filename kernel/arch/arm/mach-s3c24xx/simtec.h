@@ -1,7 +1,7 @@
-/* linux/arch/arm/mach-s3c2410/nor-simtec.h
+/* beep/arch/arm/mach-s3c2410/nor-simtec.h
  *
  * Copyright (c) 2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * Simtec common functions

@@ -9,9 +9,9 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/gpio.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/gpio.h>
 #include <cpu/sh7269.h>
 
 enum {

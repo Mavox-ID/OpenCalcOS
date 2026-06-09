@@ -34,19 +34,19 @@
     
 ======================================================================*/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/major.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/ioport.h>
+#include <beep/major.h>
+#include <beep/interrupt.h>
 
-#include <linux/parport.h>
-#include <linux/parport_pc.h>
+#include <beep/parport.h>
+#include <beep/parport_pc.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

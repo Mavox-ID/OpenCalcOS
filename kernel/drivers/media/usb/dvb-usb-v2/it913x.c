@@ -1,5 +1,5 @@
 /*
- * DVB USB compliant linux driver for ITE IT9135 and IT9137
+ * DVB USB compliant beep driver for ITE IT9135 and IT9137
  *
  * Copyright (C) 2011 Malcolm Priestley (tvboxspy@gmail.com)
  * IT9135 (C) ITE Tech Inc.
@@ -25,8 +25,8 @@
  */
 #define DVB_USB_LOG_PREFIX "it913x"
 
-#include <linux/usb.h>
-#include <linux/usb/input.h>
+#include <beep/usb.h>
+#include <beep/usb/input.h>
 #include <media/rc-core.h>
 
 #include "dvb_usb.h"

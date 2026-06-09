@@ -1,9 +1,9 @@
-/* linux/arch/arm/plat-s3c64xx/dma.c
+/* beep/arch/arm/plat-s3c64xx/dma.c
  *
  * Copyright 2009 Openmoko, Inc.
  * Copyright 2009 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * S3C64XX DMA core
  *
@@ -12,17 +12,17 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/dmapool.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/dmapool.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
 
 #include <mach/dma.h>
 #include <mach/map.h>

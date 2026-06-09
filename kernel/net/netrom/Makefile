@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux NET/ROM layer.
+# Makefile for the Beep NET/ROM layer.
 #
 
 obj-$(CONFIG_NETROM) += netrom.o

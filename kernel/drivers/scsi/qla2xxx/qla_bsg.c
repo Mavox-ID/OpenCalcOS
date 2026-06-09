@@ -6,9 +6,9 @@
  */
 #include "qla_def.h"
 
-#include <linux/kthread.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
+#include <beep/kthread.h>
+#include <beep/vmalloc.h>
+#include <beep/delay.h>
 
 /* BSG support for ELS/CT pass through */
 void

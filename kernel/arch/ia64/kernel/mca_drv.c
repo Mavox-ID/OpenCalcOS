@@ -8,21 +8,21 @@
  * Copyright (C) 2005 Keith Owens <kaos@sgi.com>
  * Copyright (C) 2006 Russ Anderson <rja@sgi.com>
  */
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kallsyms.h>
-#include <linux/bootmem.h>
-#include <linux/acpi.h>
-#include <linux/timer.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/workqueue.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/kallsyms.h>
+#include <beep/bootmem.h>
+#include <beep/acpi.h>
+#include <beep/timer.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/smp.h>
+#include <beep/workqueue.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
 
 #include <asm/delay.h>
 #include <asm/machvec.h>

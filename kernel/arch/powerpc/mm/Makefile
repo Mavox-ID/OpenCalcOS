@@ -1,5 +1,5 @@
 #
-# Makefile for the linux ppc-specific parts of the memory manager.
+# Makefile for the beep ppc-specific parts of the memory manager.
 #
 
 subdir-ccflags-$(CONFIG_PPC_WERROR) := -Werror

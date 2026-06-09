@@ -6,20 +6,20 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
-#include <linux/irq.h>
+#include <beep/device.h>
+#include <beep/etherdevice.h>
+#include <beep/export.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
+#include <beep/irq.h>
 #include <asm/dma.h>
 #include <asm/bfin5xx_spi.h>
 #include <asm/portmux.h>
 
-#include <linux/spi/ad7877.h>
+#include <beep/spi/ad7877.h>
 
 /*
  * Name the Board for the /proc/cpuinfo
@@ -67,7 +67,7 @@ static struct platform_device rtc_device = {
 #endif
 
 #if defined(CONFIG_SMC91X) || defined(CONFIG_SMC91X_MODULE)
-#include <linux/smc91x.h>
+#include <beep/smc91x.h>
 
 static struct smc91x_platdata smc91x_info = {
 	.flags = SMC91X_USE_16BIT | SMC91X_NOWAIT,
@@ -100,7 +100,7 @@ static struct platform_device smc91x_device = {
 #endif
 
 #if defined(CONFIG_BFIN_MAC) || defined(CONFIG_BFIN_MAC_MODULE)
-#include <linux/bfin_mac.h>
+#include <beep/bfin_mac.h>
 static const unsigned short bfin_mac_peripherals[] = P_RMII0;
 
 static struct bfin_phydev_platform_data bfin_phydev_data[] = {
@@ -165,7 +165,7 @@ static struct mtd_partition bfin_spi_flash_partitions[] = {
 		.offset = 0,
 		.mask_flags = MTD_CAP_ROM
 	}, {
-		.name = "linux kernel(spi)",
+		.name = "beep kernel(spi)",
 		.size = 0xe0000,
 		.offset = 0x20000
 	}, {

@@ -2,19 +2,19 @@
  * High-level sync()-related operations
  */
 
-#include <linux/kernel.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/namei.h>
-#include <linux/sched.h>
-#include <linux/writeback.h>
-#include <linux/syscalls.h>
-#include <linux/linkage.h>
-#include <linux/pagemap.h>
-#include <linux/quotaops.h>
-#include <linux/backing-dev.h>
+#include <beep/kernel.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/namei.h>
+#include <beep/sched.h>
+#include <beep/writeback.h>
+#include <beep/syscalls.h>
+#include <beep/linkage.h>
+#include <beep/pagemap.h>
+#include <beep/quotaops.h>
+#include <beep/backing-dev.h>
 #include "internal.h"
 
 #define VALID_FLAGS (SYNC_FILE_RANGE_WAIT_BEFORE|SYNC_FILE_RANGE_WRITE| \

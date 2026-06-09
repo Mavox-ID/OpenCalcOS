@@ -15,12 +15,12 @@
 #define MAP_FIXED	0x100		/* Interpret addr exactly */
 #define MAP_ANONYMOUS	0x10		/* don't use a file */
 
-/* not used by linux, but here to make sure we don't clash with OSF/1 defines */
+/* not used by beep, but here to make sure we don't clash with OSF/1 defines */
 #define _MAP_HASSEMAPHORE 0x0200
 #define _MAP_INHERIT	0x0400
 #define _MAP_UNALIGNED	0x0800
 
-/* These are linux-specific */
+/* These are beep-specific */
 #define MAP_GROWSDOWN	0x01000		/* stack-like segment */
 #define MAP_DENYWRITE	0x02000		/* ETXTBSY */
 #define MAP_EXECUTABLE	0x04000		/* mark it as an executable */

@@ -2,14 +2,14 @@
  * Implement CPU time clocks for the POSIX clock interface.
  */
 
-#include <linux/sched.h>
-#include <linux/posix-timers.h>
-#include <linux/errno.h>
-#include <linux/math64.h>
+#include <beep/sched.h>
+#include <beep/posix-timers.h>
+#include <beep/errno.h>
+#include <beep/math64.h>
 #include <asm/uaccess.h>
-#include <linux/kernel_stat.h>
+#include <beep/kernel_stat.h>
 #include <trace/events/timer.h>
-#include <linux/random.h>
+#include <beep/random.h>
 
 /*
  * Called after updating RLIMIT_CPU to run cpu timer and update

@@ -33,26 +33,26 @@
  *   But there might still be some ...
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/module.h>
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
 
 /* HZ */
-#include <linux/param.h>
+#include <beep/param.h>
 /* jiffies, time_*() */
-#include <linux/jiffies.h>
+#include <beep/jiffies.h>
 /* schedule_timeout*() */
-#include <linux/sched.h>
+#include <beep/sched.h>
 /* spin_lock*() */
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 /* struct mutex, mutex_init(), mutex_*lock() */
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 
 /* snd_printk(), snd_printd() */
 #include <sound/core.h>

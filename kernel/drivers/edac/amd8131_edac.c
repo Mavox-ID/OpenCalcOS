@@ -21,13 +21,13 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/edac.h>
-#include <linux/pci_ids.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/bitops.h>
+#include <beep/edac.h>
+#include <beep/pci_ids.h>
 
 #include "edac_core.h"
 #include "edac_module.h"

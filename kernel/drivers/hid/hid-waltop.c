@@ -11,9 +11,9 @@
  * any later version.
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/hid.h>
+#include <beep/module.h>
 
 #include "hid-ids.h"
 

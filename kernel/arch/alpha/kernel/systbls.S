@@ -317,7 +317,7 @@ sys_call_table:
 	.quad alpha_ni_syscall
 	.quad alpha_ni_syscall
 	.quad alpha_ni_syscall
-/* linux-specific system calls start at 300 */
+/* beep-specific system calls start at 300 */
 	.quad sys_bdflush			/* 300 */
 	.quad sys_sethae
 	.quad sys_mount

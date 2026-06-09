@@ -1,4 +1,4 @@
-/* DVB USB compliant linux driver for Conexant USB reference design.
+/* DVB USB compliant beep driver for Conexant USB reference design.
  *
  * The Conexant reference design I saw on their website was only for analogue
  * capturing (using the cx25842). The box I took to write this driver (reverse
@@ -14,7 +14,7 @@
  * TODO: Use the cx25840-driver for the analogue part
  *
  * Copyright (C) 2005 Patrick Boettcher (patrick.boettcher@desy.de)
- * Copyright (C) 2006 Michael Krufky (mkrufky@linuxtv.org)
+ * Copyright (C) 2006 Michael Krufky (mkrufky@beeptv.org)
  * Copyright (C) 2006, 2007 Chris Pascoe (c.pascoe@itee.uq.edu.au)
  *
  *   This program is free software; you can redistribute it and/or modify it
@@ -24,8 +24,8 @@
  * see Documentation/dvb/README.dvb-usb for more information
  */
 #include <media/tuner.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
 
 #include "cxusb.h"
 
@@ -2036,7 +2036,7 @@ static struct usb_driver cxusb_driver = {
 module_usb_driver(cxusb_driver);
 
 MODULE_AUTHOR("Patrick Boettcher <patrick.boettcher@desy.de>");
-MODULE_AUTHOR("Michael Krufky <mkrufky@linuxtv.org>");
+MODULE_AUTHOR("Michael Krufky <mkrufky@beeptv.org>");
 MODULE_AUTHOR("Chris Pascoe <c.pascoe@itee.uq.edu.au>");
 MODULE_DESCRIPTION("Driver for Conexant USB2.0 hybrid reference design");
 MODULE_VERSION("1.0-alpha");

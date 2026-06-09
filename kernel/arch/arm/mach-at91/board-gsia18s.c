@@ -19,13 +19,13 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/w1-gpio.h>
-#include <linux/i2c.h>
-#include <linux/i2c/pcf857x.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/w1-gpio.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pcf857x.h>
+#include <beep/gpio_keys.h>
+#include <beep/input.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

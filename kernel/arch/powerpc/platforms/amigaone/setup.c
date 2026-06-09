@@ -12,10 +12,10 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/seq_file.h>
+#include <beep/kernel.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/seq_file.h>
 #include <generated/utsrelease.h>
 
 #include <asm/machdep.h>
@@ -79,7 +79,7 @@ void __init amigaone_setup_arch(void)
 	BUG_ON(phb != 0);
 
 	if (ppc_md.progress)
-		ppc_md.progress("Linux/PPC "UTS_RELEASE"\n", 0);
+		ppc_md.progress("Beep/PPC "UTS_RELEASE"\n", 0);
 }
 
 void __init amigaone_init_IRQ(void)

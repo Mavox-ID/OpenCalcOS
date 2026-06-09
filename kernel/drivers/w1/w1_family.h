@@ -22,9 +22,9 @@
 #ifndef __W1_FAMILY_H
 #define __W1_FAMILY_H
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/atomic.h>
+#include <beep/types.h>
+#include <beep/device.h>
+#include <beep/atomic.h>
 
 #define W1_FAMILY_DEFAULT	0
 #define W1_FAMILY_SMEM_01	0x01

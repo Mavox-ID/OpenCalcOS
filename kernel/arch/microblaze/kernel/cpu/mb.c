@@ -9,18 +9,18 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/cpu.h>
-#include <linux/initrd.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/seq_file.h>
+#include <beep/cpu.h>
+#include <beep/initrd.h>
 
-#include <linux/bug.h>
+#include <beep/bug.h>
 #include <asm/cpuinfo.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <beep/delay.h>
+#include <beep/io.h>
 #include <asm/page.h>
-#include <linux/param.h>
+#include <beep/param.h>
 #include <asm/pvr.h>
 #include <asm/sections.h>
 #include <asm/setup.h>

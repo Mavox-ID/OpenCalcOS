@@ -14,11 +14,11 @@
  * TILE SMP support routines.
  */
 
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/module.h>
 #include <asm/cacheflush.h>
 
 HV_Topology smp_topology __write_once;

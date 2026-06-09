@@ -1,5 +1,5 @@
 /*
- *	linux/drivers/cpufreq/nspire-cpufreq.c
+ *	beep/drivers/cpufreq/nspire-cpufreq.c
  *
  *	Copyright (C) 2012 Daniel Tang <tangrs@tangrs.id.au>
  *
@@ -9,12 +9,12 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/cpufreq.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <beep/types.h>
+#include <beep/cpufreq.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
 
 #include <mach/nspire_clock.h>
 #include <mach/irqs.h>

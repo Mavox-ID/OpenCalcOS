@@ -18,15 +18,15 @@
  * General Public License for more details.
  */
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/fs.h>
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
-#include <linux/sysctl.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/kmod.h>
+#include <beep/fs.h>
+#include <beep/kobject.h>
+#include <beep/sysfs.h>
+#include <beep/sysctl.h>
 
 #include "ocfs2_fs.h"
 

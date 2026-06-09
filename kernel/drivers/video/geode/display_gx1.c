@@ -12,9 +12,9 @@
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  */
-#include <linux/spinlock.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
+#include <beep/spinlock.h>
+#include <beep/fb.h>
+#include <beep/delay.h>
 #include <asm/io.h>
 #include <asm/div64.h>
 #include <asm/delay.h>

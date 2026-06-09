@@ -3,7 +3,7 @@
  * Finite state machine
  *
  * Author       Karsten Keil
- * Copyright    by Karsten Keil      <keil@isdn4linux.de>
+ * Copyright    by Karsten Keil      <keil@isdn4beep.de>
  *              by Kai Germaschewski <kai.germaschewski@gmx.de>
  *
  * This software may be used and distributed according to the terms
@@ -14,7 +14,7 @@
 #ifndef __FSM_H__
 #define __FSM_H__
 
-#include <linux/timer.h>
+#include <beep/timer.h>
 
 struct FsmInst;
 

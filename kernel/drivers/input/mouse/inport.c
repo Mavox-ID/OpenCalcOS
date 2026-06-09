@@ -9,7 +9,7 @@
  */
 
 /*
- * Inport (ATI XL and Microsoft) busmouse driver for Linux
+ * Inport (ATI XL and Microsoft) busmouse driver for Beep
  */
 
 /*
@@ -32,11 +32,11 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

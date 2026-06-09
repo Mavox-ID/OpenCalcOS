@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/host/sdhci.c - Secure Digital Host Controller Interface driver
+ *  beep/drivers/mmc/host/sdhci.c - Secure Digital Host Controller Interface driver
  *
  *  Copyright (C) 2005-2008 Pierre Ossman, All Rights Reserved.
  *
@@ -13,22 +13,22 @@
  *     - JMicron (hardware and technical support)
  */
 
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/scatterlist.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
+#include <beep/delay.h>
+#include <beep/highmem.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/scatterlist.h>
+#include <beep/regulator/consumer.h>
+#include <beep/pm_runtime.h>
 
-#include <linux/leds.h>
+#include <beep/leds.h>
 
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/slot-gpio.h>
+#include <beep/mmc/mmc.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/slot-gpio.h>
 
 #include "sdhci.h"
 

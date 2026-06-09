@@ -7,17 +7,17 @@
  * This file contains interrupt related functions.
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/interrupt.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/profile.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ftrace.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
+#include <beep/kernel_stat.h>
+#include <beep/interrupt.h>
+#include <beep/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/profile.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/ftrace.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/cpu.h>
 #include <asm/irq_regs.h>
 #include <asm/cputime.h>
 #include <asm/lowcore.h>

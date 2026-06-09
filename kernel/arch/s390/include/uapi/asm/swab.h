@@ -7,7 +7,7 @@
  *    Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com)
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #ifndef __s390x__
 # define __SWAB_64_THRU_32__

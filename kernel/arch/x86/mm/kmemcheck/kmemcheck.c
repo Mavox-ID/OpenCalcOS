@@ -1,5 +1,5 @@
 /**
- * kmemcheck - a heavyweight memory checker for the linux kernel
+ * kmemcheck - a heavyweight memory checker for the beep kernel
  * Copyright (C) 2007, 2008  Vegard Nossum <vegardno@ifi.uio.no>
  * (With a lot of help from Ingo Molnar and Pekka Enberg.)
  *
@@ -8,18 +8,18 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kallsyms.h>
-#include <linux/kernel.h>
-#include <linux/kmemcheck.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/page-flags.h>
-#include <linux/percpu.h>
-#include <linux/ptrace.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kallsyms.h>
+#include <beep/kernel.h>
+#include <beep/kmemcheck.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/page-flags.h>
+#include <beep/percpu.h>
+#include <beep/ptrace.h>
+#include <beep/string.h>
+#include <beep/types.h>
 
 #include <asm/cacheflush.h>
 #include <asm/kmemcheck.h>

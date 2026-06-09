@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2440/mach-rx1950.c
+/* beep/arch/arm/mach-s3c2440/mach-rx1950.c
  *
  * Copyright (c) 2006-2009 Victor Chukhantsev, Denis Grigoriev,
  * Copyright (c) 2007-2010 Vasily Khoruzhick
@@ -11,31 +11,31 @@
  *
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/memblock.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
-#include <linux/device.h>
-#include <linux/pda_power.h>
-#include <linux/pwm_backlight.h>
-#include <linux/pwm.h>
-#include <linux/s3c_adc_battery.h>
-#include <linux/leds.h>
-#include <linux/i2c.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/memblock.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/serial_core.h>
+#include <beep/input.h>
+#include <beep/gpio_keys.h>
+#include <beep/device.h>
+#include <beep/pda_power.h>
+#include <beep/pwm_backlight.h>
+#include <beep/pwm.h>
+#include <beep/s3c_adc_battery.h>
+#include <beep/leds.h>
+#include <beep/i2c.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
 
-#include <linux/mmc/host.h>
+#include <beep/mmc/host.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -49,15 +49,15 @@
 #include <plat/clock.h>
 #include <plat/regs-serial.h>
 #include <plat/regs-iic.h>
-#include <linux/platform_data/mmc-s3cmci.h>
-#include <linux/platform_data/usb-s3c2410_udc.h>
-#include <linux/platform_data/mtd-nand-s3c2410.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/mmc-s3cmci.h>
+#include <beep/platform_data/usb-s3c2410_udc.h>
+#include <beep/platform_data/mtd-nand-s3c2410.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 #include <plat/devs.h>
 #include <plat/cpu.h>
 #include <plat/pm.h>
 #include <plat/irq.h>
-#include <linux/platform_data/touchscreen-s3c2410.h>
+#include <beep/platform_data/touchscreen-s3c2410.h>
 
 #include <sound/uda1380.h>
 

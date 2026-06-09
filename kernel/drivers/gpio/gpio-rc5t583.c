@@ -20,14 +20,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/mfd/rc5t583.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/device.h>
+#include <beep/gpio.h>
+#include <beep/mfd/rc5t583.h>
 
 struct rc5t583_gpio {
 	struct gpio_chip gpio_chip;

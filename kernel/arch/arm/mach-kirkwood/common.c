@@ -8,33 +8,33 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
-#include <linux/ata_platform.h>
-#include <linux/mtd/nand.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk-provider.h>
-#include <linux/spinlock.h>
-#include <linux/mv643xx_i2c.h>
-#include <linux/timex.h>
-#include <linux/kexec.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/serial_8250.h>
+#include <beep/ata_platform.h>
+#include <beep/mtd/nand.h>
+#include <beep/dma-mapping.h>
+#include <beep/clk-provider.h>
+#include <beep/spinlock.h>
+#include <beep/mv643xx_i2c.h>
+#include <beep/timex.h>
+#include <beep/kexec.h>
 #include <net/dsa.h>
 #include <asm/page.h>
 #include <asm/mach/map.h>
 #include <asm/mach/time.h>
 #include <mach/kirkwood.h>
 #include <mach/bridge-regs.h>
-#include <linux/platform_data/asoc-kirkwood.h>
+#include <beep/platform_data/asoc-kirkwood.h>
 #include <plat/cache-feroceon-l2.h>
-#include <linux/platform_data/mmc-mvsdio.h>
-#include <linux/platform_data/mtd-orion_nand.h>
-#include <linux/platform_data/usb-ehci-orion.h>
+#include <beep/platform_data/mmc-mvsdio.h>
+#include <beep/platform_data/mtd-orion_nand.h>
+#include <beep/platform_data/usb-ehci-orion.h>
 #include <plat/common.h>
 #include <plat/time.h>
 #include <plat/addr-map.h>
-#include <linux/platform_data/dma-mv_xor.h>
+#include <beep/platform_data/dma-mv_xor.h>
 #include "common.h"
 
 /*****************************************************************************

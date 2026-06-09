@@ -15,20 +15,20 @@
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h> /* platform_device() */
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/time.h>
-#include <linux/list.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h> /* platform_device() */
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/delay.h>
+#include <beep/mm.h>
+#include <beep/time.h>
+#include <beep/list.h>
 
 #include "omap_dmm_tiler.h"
 #include "omap_dmm_priv.h"

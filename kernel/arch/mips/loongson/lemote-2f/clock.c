@@ -6,14 +6,14 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
+#include <beep/clk.h>
+#include <beep/cpufreq.h>
+#include <beep/errno.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
 
 #include <asm/clock.h>
 #include <asm/mach-loongson/loongson.h>

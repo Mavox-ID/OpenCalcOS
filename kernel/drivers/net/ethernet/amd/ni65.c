@@ -1,5 +1,5 @@
 /*
- * ni6510 (am7990 'lance' chip) driver for Linux-net-3
+ * ni6510 (am7990 'lance' chip) driver for Beep-net-3
  * BETAcode v0.71 (96/09/29) for 2.0.0 (or later)
  * copyrights (c) 1994,1995,1996 by M.Hipp
  *
@@ -9,8 +9,8 @@
  *
  * driver probes: io: 0x360,0x300,0x320,0x340 / dma: 3,5,6,7
  *
- * This is an extension to the Linux operating system, and is covered by the
- * same GNU General Public License that covers the Linux-kernel.
+ * This is an extension to the Beep operating system, and is covered by the
+ * same GNU General Public License that covers the Beep-kernel.
  *
  * comments/bugs/suggestions can be sent to:
  *   Michael Hipp
@@ -59,19 +59,19 @@
  * 94.July.16: fixed bugs in recv_skb and skb-alloc stuff  (MH)
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/module.h>
+#include <beep/bitops.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

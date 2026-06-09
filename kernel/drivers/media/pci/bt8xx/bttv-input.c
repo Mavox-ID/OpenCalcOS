@@ -20,12 +20,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/slab.h>
 
 #include "bttv.h"
 #include "bttvp.h"

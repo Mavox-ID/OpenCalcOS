@@ -16,7 +16,7 @@
 
 targets := Image Image.gz
 
-$(obj)/Image: vmlinux FORCE
+$(obj)/Image: vmbeep FORCE
 	$(call if_changed,objcopy)
 
 $(obj)/Image.gz: $(obj)/Image FORCE

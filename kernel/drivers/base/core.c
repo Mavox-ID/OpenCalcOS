@@ -10,22 +10,22 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/kdev_t.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/genhd.h>
-#include <linux/kallsyms.h>
-#include <linux/mutex.h>
-#include <linux/async.h>
-#include <linux/pm_runtime.h>
-#include <linux/netdevice.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/kdev_t.h>
+#include <beep/notifier.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/genhd.h>
+#include <beep/kallsyms.h>
+#include <beep/mutex.h>
+#include <beep/async.h>
+#include <beep/pm_runtime.h>
+#include <beep/netdevice.h>
 
 #include "base.h"
 #include "power/power.h"

@@ -8,8 +8,8 @@
 
 /***************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 #include <asm/dma.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>

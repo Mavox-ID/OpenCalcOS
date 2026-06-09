@@ -10,10 +10,10 @@
  */
 
 #include <stdarg.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/console.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/console.h>
+#include <beep/init.h>
 #include <asm/processor.h>
 #include <asm/udbg.h>
 

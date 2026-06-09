@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/arm946.S: utility functions for ARM946E-S
+ *  beep/arch/arm/mm/arm946.S: utility functions for ARM946E-S
  *
  *  Copyright (C) 2004-2006 Hyok S. Choi (hyok.choi@samsung.com)
  *
@@ -10,8 +10,8 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/assembler.h>
 #include <asm/hwcap.h>
 #include <asm/pgtable-hwdef.h>

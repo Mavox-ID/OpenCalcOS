@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/fb_defio.c
+ *  beep/drivers/video/fb_defio.c
  *
  *  Copyright (C) 2006 Jaya Kumar
  *
@@ -8,20 +8,20 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/list.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/fb.h>
+#include <beep/list.h>
 
 /* to support deferred IO */
-#include <linux/rmap.h>
-#include <linux/pagemap.h>
+#include <beep/rmap.h>
+#include <beep/pagemap.h>
 
 static struct page *fb_deferred_io_page(struct fb_info *info, unsigned long offs)
 {

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-nspire/include/mach/timex.h
+ *  beep/arch/arm/mach-nspire/include/mach/timex.h
  *
  *  Copyright (C) 2012 Daniel Tang <tangrs@tangrs.id.au>
  *

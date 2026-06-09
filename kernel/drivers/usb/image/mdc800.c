@@ -22,7 +22,7 @@
  *	(c) 1999/2000 Henning Zabel <henning@uni-paderborn.de>
  *
  *
- * The driver brings the USB functions of the MDC800 to Linux.
+ * The driver brings the USB functions of the MDC800 to Beep.
  * To use the Camera you must support the USB Protocol of the camera
  * to the Kernel Node.
  * The Driver uses a misc device Node. Create it with :
@@ -85,20 +85,20 @@
  * (20/10/1999)
  */
 
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/random.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
+#include <beep/spinlock.h>
+#include <beep/errno.h>
+#include <beep/random.h>
+#include <beep/poll.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/wait.h>
+#include <beep/mutex.h>
 
-#include <linux/usb.h>
-#include <linux/fs.h>
+#include <beep/usb.h>
+#include <beep/fs.h>
 
 /*
  * Version Information

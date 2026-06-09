@@ -1,5 +1,5 @@
 /*
- * SBE 2T3E3 synchronous serial card driver for Linux
+ * SBE 2T3E3 synchronous serial card driver for Beep
  *
  * Copyright (C) 2009-2010 Krzysztof Halasa <khc@pm.waw.pl>
  *

@@ -14,7 +14,7 @@
 
 #include <asm/cpu-regs.h>
 #ifndef __ASSEMBLY__
-#include <linux/smp.h>
+#include <beep/smp.h>
 #endif
 
 /*
@@ -26,7 +26,7 @@
  *   - level 6 - timer interrupt
  * - "enabled":  run in IM7
  */
-#define MN10300_CLI_LEVEL	(CONFIG_LINUX_CLI_LEVEL << EPSW_IM_SHIFT)
+#define MN10300_CLI_LEVEL	(CONFIG_BEEP_CLI_LEVEL << EPSW_IM_SHIFT)
 
 #ifndef __ASSEMBLY__
 

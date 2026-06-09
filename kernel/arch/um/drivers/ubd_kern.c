@@ -19,19 +19,19 @@
 
 #define UBD_SHIFT 4
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/ata.h>
-#include <linux/hdreg.h>
-#include <linux/cdrom.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/ata.h>
+#include <beep/hdreg.h>
+#include <beep/cdrom.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/ctype.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/platform_device.h>
+#include <beep/scatterlist.h>
 #include <asm/tlbflush.h>
 #include <kern_util.h>
 #include "mconsole_kern.h"

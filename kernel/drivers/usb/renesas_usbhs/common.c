@@ -14,11 +14,11 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
  */
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/pm_runtime.h>
+#include <beep/slab.h>
+#include <beep/sysfs.h>
 #include "common.h"
 
 /*

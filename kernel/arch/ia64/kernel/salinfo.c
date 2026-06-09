@@ -36,15 +36,15 @@
  *   Modify the locking to make the test for "work to do" an atomic operation.
  */
 
-#include <linux/capability.h>
-#include <linux/cpu.h>
-#include <linux/types.h>
-#include <linux/proc_fs.h>
-#include <linux/module.h>
-#include <linux/smp.h>
-#include <linux/timer.h>
-#include <linux/vmalloc.h>
-#include <linux/semaphore.h>
+#include <beep/capability.h>
+#include <beep/cpu.h>
+#include <beep/types.h>
+#include <beep/proc_fs.h>
+#include <beep/module.h>
+#include <beep/smp.h>
+#include <beep/timer.h>
+#include <beep/vmalloc.h>
+#include <beep/semaphore.h>
 
 #include <asm/sal.h>
 #include <asm/uaccess.h>

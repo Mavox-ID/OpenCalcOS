@@ -1,7 +1,7 @@
 #ifndef _ALPHA_ATOMIC_H
 #define _ALPHA_ATOMIC_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/barrier.h>
 #include <asm/cmpxchg.h>
 

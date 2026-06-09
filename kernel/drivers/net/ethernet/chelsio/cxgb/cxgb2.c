@@ -37,15 +37,15 @@
  ****************************************************************************/
 
 #include "common.h"
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/mii.h>
-#include <linux/sockios.h>
-#include <linux/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/if_vlan.h>
+#include <beep/mii.h>
+#include <beep/sockios.h>
+#include <beep/dma-mapping.h>
 #include <asm/uaccess.h>
 
 #include "cpl5_cmd.h"
@@ -57,7 +57,7 @@
 #include "espi.h"
 #include "elmer0.h"
 
-#include <linux/workqueue.h>
+#include <beep/workqueue.h>
 
 static inline void schedule_mac_stats_update(struct adapter *ap, int secs)
 {

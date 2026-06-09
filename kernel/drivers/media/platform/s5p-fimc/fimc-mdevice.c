@@ -10,17 +10,17 @@
  * or (at your option) any later version.
  */
 
-#include <linux/bug.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <beep/bug.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/i2c.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/types.h>
+#include <beep/slab.h>
 #include <media/v4l2-ctrls.h>
 #include <media/media-device.h>
 #include <media/s5p_fimc.h>

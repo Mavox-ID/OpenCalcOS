@@ -9,8 +9,8 @@
 #define __ASM_POWERPC_BACKLIGHT_H
 #ifdef __KERNEL__
 
-#include <linux/fb.h>
-#include <linux/mutex.h>
+#include <beep/fb.h>
+#include <beep/mutex.h>
 
 /* For locking instructions, see the implementation file */
 extern struct backlight_device *pmac_backlight;

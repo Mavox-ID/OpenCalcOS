@@ -3,9 +3,9 @@
 
 #include "b43legacy.h"
 
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/skbuff.h>
 
 
 #define B43legacy_PIO_TXCTL		0x00

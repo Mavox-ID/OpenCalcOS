@@ -1,13 +1,13 @@
 /*
- *  linux/fs/isofs/joliet.c
+ *  beep/fs/isofs/joliet.c
  *
  *  (C) 1996 Gordon Chaffee
  *
  *  Joliet: Microsoft's Unicode extensions to iso9660
  */
 
-#include <linux/types.h>
-#include <linux/nls.h>
+#include <beep/types.h>
+#include <beep/nls.h>
 #include "isofs.h"
 
 /*

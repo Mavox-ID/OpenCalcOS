@@ -8,23 +8,23 @@
  *  published by the Free Software Foundation.
  *
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/partitions.h>
-#include <linux/sm501.h>
-#include <linux/smsc911x.h>
-#include <linux/i2c/pxa-i2c.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/partitions.h>
+#include <beep/sm501.h>
+#include <beep/smsc911x.h>
+#include <beep/i2c/pxa-i2c.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <mach/csb726.h>
 #include <mach/pxa27x.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
 #include <mach/audio.h>
 #include <mach/smemc.h>
 

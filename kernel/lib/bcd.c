@@ -1,5 +1,5 @@
-#include <linux/bcd.h>
-#include <linux/export.h>
+#include <beep/bcd.h>
+#include <beep/export.h>
 
 unsigned _bcd2bin(unsigned char val)
 {

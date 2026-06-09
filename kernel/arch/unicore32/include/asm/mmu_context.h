@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/asm/mmu_context.h
+ * beep/arch/unicore32/include/asm/mmu_context.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -12,9 +12,9 @@
 #ifndef __UNICORE_MMU_CONTEXT_H__
 #define __UNICORE_MMU_CONTEXT_H__
 
-#include <linux/compiler.h>
-#include <linux/sched.h>
-#include <linux/io.h>
+#include <beep/compiler.h>
+#include <beep/sched.h>
+#include <beep/io.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cpu-single.h>

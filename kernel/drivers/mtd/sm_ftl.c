@@ -7,16 +7,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/hdreg.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/sysfs.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/mtd/nand_ecc.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/random.h>
+#include <beep/hdreg.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
+#include <beep/sysfs.h>
+#include <beep/bitops.h>
+#include <beep/slab.h>
+#include <beep/mtd/nand_ecc.h>
 #include "nand/sm_common.h"
 #include "sm_ftl.h"
 

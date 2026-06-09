@@ -19,9 +19,9 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/wl12xx.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/wl12xx.h>
 
 static struct wl12xx_platform_data *platform_data;
 

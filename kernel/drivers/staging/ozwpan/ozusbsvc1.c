@@ -5,13 +5,13 @@
  * This file implements the protocol specific parts of the USB service for a PD.
  * -----------------------------------------------------------------------------
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
-#include <linux/netdevice.h>
-#include <linux/errno.h>
-#include <linux/input.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/timer.h>
+#include <beep/sched.h>
+#include <beep/netdevice.h>
+#include <beep/errno.h>
+#include <beep/input.h>
 #include <asm/unaligned.h>
 #include "ozconfig.h"
 #include "ozprotocol.h"

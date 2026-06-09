@@ -7,10 +7,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
-#include <linux/thread_info.h>
-#include <linux/module.h>
+#include <beep/sched.h>
+#include <beep/stacktrace.h>
+#include <beep/thread_info.h>
+#include <beep/module.h>
 
 register unsigned long current_frame_pointer asm("r7");
 

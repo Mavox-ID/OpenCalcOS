@@ -8,18 +8,18 @@
  * Author: Deepak Saxena <dsaxena@plexity.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/serial_8250.h>
-#include <linux/i2c-gpio.h>
-#include <linux/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/serial.h>
+#include <beep/tty.h>
+#include <beep/serial_8250.h>
+#include <beep/i2c-gpio.h>
+#include <beep/io.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/delay.h>
 #include <asm/types.h>
 #include <asm/setup.h>
 #include <asm/memory.h>

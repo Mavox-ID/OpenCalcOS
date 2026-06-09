@@ -10,11 +10,11 @@
  * Some parts are based on David Boucher's viafb (http://davesdomain.org.uk/viafb/)
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/fb.h>
-#include <linux/svga.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/fb.h>
+#include <beep/svga.h>
 #include <asm/types.h>
 #include <asm/io.h>
 

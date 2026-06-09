@@ -1,13 +1,13 @@
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mod_devicetable.h>
-#include <linux/errno.h>
-#include <linux/irq.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/of.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/mod_devicetable.h>
+#include <beep/errno.h>
+#include <beep/irq.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
 
 #include "of_device_common.h"
 

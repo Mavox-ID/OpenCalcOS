@@ -3,8 +3,8 @@
  * Derived from fixup.c of i386 tree.
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <beep/pci.h>
+#include <beep/init.h>
 
 #include <asm/machvec.h>
 

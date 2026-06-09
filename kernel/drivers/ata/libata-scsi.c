@@ -2,7 +2,7 @@
  *  libata-scsi.c - helper library for ATA
  *
  *  Maintained by:  Jeff Garzik <jgarzik@pobox.com>
- *    		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *    		    Please ALWAYS copy beep-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2003-2004 Red Hat, Inc.  All rights reserved.
@@ -33,11 +33,11 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/blkdev.h>
+#include <beep/spinlock.h>
+#include <beep/export.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
@@ -45,10 +45,10 @@
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_tcq.h>
 #include <scsi/scsi_transport.h>
-#include <linux/libata.h>
-#include <linux/hdreg.h>
-#include <linux/uaccess.h>
-#include <linux/suspend.h>
+#include <beep/libata.h>
+#include <beep/hdreg.h>
+#include <beep/uaccess.h>
+#include <beep/suspend.h>
 #include <asm/unaligned.h>
 
 #include "libata.h"
@@ -2113,7 +2113,7 @@ static unsigned int ata_scsiop_inq_89(struct ata_scsi_args *args, u8 *rbuf)
 	rbuf[2] = (0x238 >> 8);		/* page size fixed at 238h */
 	rbuf[3] = (0x238 & 0xff);
 
-	memcpy(&rbuf[8], "linux   ", 8);
+	memcpy(&rbuf[8], "beep   ", 8);
 	memcpy(&rbuf[16], "libata          ", 16);
 	memcpy(&rbuf[32], DRV_VERSION, 4);
 	ata_id_string(args->id, &rbuf[32], ATA_ID_FW_REV, 4);
@@ -2657,7 +2657,7 @@ static void atapi_qc_complete(struct ata_queued_cmd *qc)
 	 * and sometimes deviate from the spec WRT response data
 	 * format.  If SCSI version is reported as zero like normal,
 	 * then we make the following fixups:  1) Fake MMC-5 version,
-	 * to indicate to the Linux scsi midlayer this is a modern
+	 * to indicate to the Beep scsi midlayer this is a modern
 	 * device.  2) Ensure response data format / ATAPI information
 	 * are always correct.
 	 */

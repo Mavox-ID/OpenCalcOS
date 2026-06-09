@@ -26,24 +26,24 @@ suffix-$(CONFIG_KERNEL_LZMA)	:= lzma
 suffix-$(CONFIG_KERNEL_XZ)	:= xz
 suffix-$(CONFIG_KERNEL_LZO)	:= lzo
 
-targets := zCalc vmlinux.srec romImage uImage uImage.srec uImage.gz \
+targets := zCalc vmbeep.srec romImage uImage uImage.srec uImage.gz \
 	   uImage.bz2 uImage.lzma uImage.xz uImage.lzo uImage.bin
-extra-y += vmlinux.bin vmlinux.bin.gz vmlinux.bin.bz2 vmlinux.bin.lzma \
-	   vmlinux.bin.xz vmlinux.bin.lzo
+extra-y += vmbeep.bin vmbeep.bin.gz vmbeep.bin.bz2 vmbeep.bin.lzma \
+	   vmbeep.bin.xz vmbeep.bin.lzo
 subdir- := compressed romimage
 
-$(obj)/zCalc: $(obj)/compressed/vmlinux FORCE
+$(obj)/zCalc: $(obj)/compressed/vmbeep FORCE
 	$(call if_changed,objcopy)
 	@echo '  Kernel: $@ is ready'
 
-$(obj)/compressed/vmlinux: FORCE
+$(obj)/compressed/vmbeep: FORCE
 	$(Q)$(MAKE) $(build)=$(obj)/compressed $@
 
-$(obj)/romImage: $(obj)/romimage/vmlinux FORCE
+$(obj)/romImage: $(obj)/romimage/vmbeep FORCE
 	$(call if_changed,objcopy)
 	@echo '  Kernel: $@ is ready'
 
-$(obj)/romimage/vmlinux: $(obj)/zCalc FORCE
+$(obj)/romimage/vmbeep: $(obj)/zCalc FORCE
 	$(Q)$(MAKE) $(build)=$(obj)/romimage $@
 
 KERNEL_MEMORY	:= $(shell /bin/bash -c 'printf "0x%08x" \
@@ -62,44 +62,44 @@ KERNEL_ENTRY	:= $(shell /bin/bash -c 'printf "0x%08x" \
 UIMAGE_LOADADDR = $(KERNEL_LOAD)
 UIMAGE_ENTRYADDR = $(KERNEL_ENTRY)
 
-$(obj)/vmlinux.bin: vmlinux FORCE
+$(obj)/vmbeep.bin: vmbeep FORCE
 	$(call if_changed,objcopy)
 
-$(obj)/vmlinux.bin.gz: $(obj)/vmlinux.bin FORCE
+$(obj)/vmbeep.bin.gz: $(obj)/vmbeep.bin FORCE
 	$(call if_changed,gzip)
 
-$(obj)/vmlinux.bin.bz2: $(obj)/vmlinux.bin FORCE
+$(obj)/vmbeep.bin.bz2: $(obj)/vmbeep.bin FORCE
 	$(call if_changed,bzip2)
 
-$(obj)/vmlinux.bin.lzma: $(obj)/vmlinux.bin FORCE
+$(obj)/vmbeep.bin.lzma: $(obj)/vmbeep.bin FORCE
 	$(call if_changed,lzma)
 
-$(obj)/vmlinux.bin.xz: $(obj)/vmlinux.bin FORCE
+$(obj)/vmbeep.bin.xz: $(obj)/vmbeep.bin FORCE
 	$(call if_changed,xzkern)
 
-$(obj)/vmlinux.bin.lzo: $(obj)/vmlinux.bin FORCE
+$(obj)/vmbeep.bin.lzo: $(obj)/vmbeep.bin FORCE
 	$(call if_changed,lzo)
 
-$(obj)/uImage.bz2: $(obj)/vmlinux.bin.bz2
+$(obj)/uImage.bz2: $(obj)/vmbeep.bin.bz2
 	$(call if_changed,uimage,bzip2)
 
-$(obj)/uImage.gz: $(obj)/vmlinux.bin.gz
+$(obj)/uImage.gz: $(obj)/vmbeep.bin.gz
 	$(call if_changed,uimage,gzip)
 
-$(obj)/uImage.lzma: $(obj)/vmlinux.bin.lzma
+$(obj)/uImage.lzma: $(obj)/vmbeep.bin.lzma
 	$(call if_changed,uimage,lzma)
 
-$(obj)/uImage.xz: $(obj)/vmlinux.bin.xz
+$(obj)/uImage.xz: $(obj)/vmbeep.bin.xz
 	$(call if_changed,uimage,xz)
 
-$(obj)/uImage.lzo: $(obj)/vmlinux.bin.lzo
+$(obj)/uImage.lzo: $(obj)/vmbeep.bin.lzo
 	$(call if_changed,uimage,lzo)
 
-$(obj)/uImage.bin: $(obj)/vmlinux.bin
+$(obj)/uImage.bin: $(obj)/vmbeep.bin
 	$(call if_changed,uimage,none)
 
-OBJCOPYFLAGS_vmlinux.srec := -I binary -O srec
-$(obj)/vmlinux.srec: $(obj)/compressed/vmlinux
+OBJCOPYFLAGS_vmbeep.srec := -I binary -O srec
+$(obj)/vmbeep.srec: $(obj)/compressed/vmbeep
 	$(call if_changed,objcopy)
 
 OBJCOPYFLAGS_uImage.srec := -I binary -O srec

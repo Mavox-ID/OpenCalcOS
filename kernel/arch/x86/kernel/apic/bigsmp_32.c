@@ -3,12 +3,12 @@
  *
  * Drives the local APIC in "clustered mode".
  */
-#include <linux/threads.h>
-#include <linux/cpumask.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/dmi.h>
-#include <linux/smp.h>
+#include <beep/threads.h>
+#include <beep/cpumask.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/dmi.h>
+#include <beep/smp.h>
 
 #include <asm/apicdef.h>
 #include <asm/fixmap.h>

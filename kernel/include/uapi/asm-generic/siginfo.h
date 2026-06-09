@@ -1,8 +1,8 @@
 #ifndef _UAPI_ASM_GENERIC_SIGINFO_H
 #define _UAPI_ASM_GENERIC_SIGINFO_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/types.h>
 
 typedef union sigval {
 	int sival_int;

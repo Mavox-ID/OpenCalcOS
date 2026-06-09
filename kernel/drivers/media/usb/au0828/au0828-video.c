@@ -1,7 +1,7 @@
 /*
  * Auvitek AU0828 USB Bridge (Analog video support)
  *
- * Copyright (C) 2009 Devin Heitmueller <dheitmueller@linuxtv.org>
+ * Copyright (C) 2009 Devin Heitmueller <dheitmueller@beeptv.org>
  * Copyright (C) 2005-2008 Auvitek International, Ltd.
  *
  * This program is free software; you can redistribute it and/or
@@ -28,11 +28,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/suspend.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/suspend.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-chip-ident.h>

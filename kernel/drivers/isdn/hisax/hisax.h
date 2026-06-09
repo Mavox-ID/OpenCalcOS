@@ -6,24 +6,24 @@
  * of the GNU General Public License, incorporated herein by reference.
  *
  */
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/major.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/major.h>
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/isdnif.h>
-#include <linux/tty.h>
-#include <linux/serial_reg.h>
-#include <linux/netdevice.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/timer.h>
+#include <beep/wait.h>
+#include <beep/isdnif.h>
+#include <beep/tty.h>
+#include <beep/serial_reg.h>
+#include <beep/netdevice.h>
 
 #define ERROR_STATISTIC
 
@@ -1330,7 +1330,7 @@ void TeiFree(void);
 
 #ifdef CONFIG_PCI
 
-#include <linux/pci.h>
+#include <beep/pci.h>
 
 /* adaptation wrapper for old usage
  * WARNING! This is unfit for use in a PCI hotplug environment,

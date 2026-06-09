@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-exynos4/setup-i2c4.c
+ * beep/arch/arm/mach-exynos4/setup-i2c4.c
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *
@@ -12,8 +12,8 @@
 
 struct platform_device; /* don't need the contents */
 
-#include <linux/gpio.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/gpio.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 #include <plat/gpio-cfg.h>
 
 void s3c_i2c4_cfg_gpio(struct platform_device *dev)

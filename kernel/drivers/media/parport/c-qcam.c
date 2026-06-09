@@ -1,5 +1,5 @@
 /*
- *	Video4Linux Colour QuickCam driver
+ *	Video4Beep Colour QuickCam driver
  *	Copyright 1997-2000 Philip Blundell <philb@gnu.org>
  *
  *    Module parameters:
@@ -23,19 +23,19 @@
  *       -- May 28, 2000  Claudio Matsuoka <claudio@conectiva.com>
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/parport.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/jiffies.h>
-#include <linux/videodev2.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/parport.h>
+#include <beep/sched.h>
+#include <beep/mutex.h>
+#include <beep/jiffies.h>
+#include <beep/videodev2.h>
 #include <asm/uaccess.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-common.h>
@@ -72,7 +72,7 @@ struct qcam {
 #define QC_DECIMATION_2		2
 #define QC_DECIMATION_4		4
 
-#define BANNER "Colour QuickCam for Video4Linux v0.06"
+#define BANNER "Colour QuickCam for Video4Beep v0.06"
 
 static int parport[MAX_CAMS] = { [1 ... MAX_CAMS-1] = -1 };
 static int probe = 2;
@@ -508,7 +508,7 @@ static long qc_capture(struct qcam *qcam, char __user *buf, unsigned long len)
 }
 
 /*
- *	Video4linux interfacing
+ *	Video4beep interfacing
  */
 
 static int qcam_querycap(struct file *file, void  *priv,

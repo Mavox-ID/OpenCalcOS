@@ -2,7 +2,7 @@
  * Pixart PAC207BCA library
  *
  * Copyright (C) 2008 Hans de Goede <hdegoede@redhat.com>
- * Copyright (C) 2005 Thomas Kaiser thomas@kaiser-linux.li
+ * Copyright (C) 2005 Thomas Kaiser thomas@kaiser-beep.li
  * Copyleft (C) 2005 Michel Xhaard mxhaard@magic.fr
  *
  * V4L2 by Jean-Francois Moine <http://moinejf.free.fr>
@@ -27,7 +27,7 @@
 
 #define MODULE_NAME "pac207"
 
-#include <linux/input.h>
+#include <beep/input.h>
 #include "gspca.h"
 /* Include pac common sof detection functions */
 #include "pac_common.h"

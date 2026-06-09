@@ -9,18 +9,18 @@
  * (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
-#include <linux/platform_data/i2c-davinci.h>
+#include <beep/platform_data/i2c-davinci.h>
 #include <mach/irqs.h>
 #include <mach/cputype.h>
 #include <mach/mux.h>
 #include <mach/edma.h>
-#include <linux/platform_data/mmc-davinci.h>
+#include <beep/platform_data/mmc-davinci.h>
 #include <mach/time.h>
 
 #include "davinci.h"

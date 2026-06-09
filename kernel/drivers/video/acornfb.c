@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/acornfb.c
+ *  beep/drivers/video/acornfb.c
  *
  *  Copyright (C) 1998-2001 Russell King
  *
@@ -17,18 +17,18 @@
  *  - Blanking 8bpp displays with VIDC
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/fb.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/fb.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/io.h>
+#include <beep/gfp.h>
 
 #include <mach/hardware.h>
 #include <asm/irq.h>

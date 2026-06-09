@@ -14,31 +14,31 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/hw_random.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/hw_random.h>
+#include <beep/platform_device.h>
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/crypto.h>
-#include <linux/cryptohash.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/scatterlist.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/crypto.h>
+#include <beep/cryptohash.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/algapi.h>
 #include <crypto/aes.h>
 #include <crypto/hash.h>
 #include <crypto/internal/hash.h>
-#include <linux/platform_data/atmel-aes.h>
+#include <beep/platform_data/atmel-aes.h>
 #include "atmel-aes-regs.h"
 
 #define CFB8_BLOCK_SIZE		1

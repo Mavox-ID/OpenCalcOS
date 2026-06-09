@@ -1,8 +1,8 @@
 #ifndef _S390_TLBFLUSH_H
 #define _S390_TLBFLUSH_H
 
-#include <linux/mm.h>
-#include <linux/sched.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
 #include <asm/processor.h>
 #include <asm/pgalloc.h>
 

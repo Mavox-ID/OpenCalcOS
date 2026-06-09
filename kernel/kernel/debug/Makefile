@@ -1,5 +1,5 @@
 #
-# Makefile for the linux kernel debugger
+# Makefile for the beep kernel debugger
 #
 
 obj-$(CONFIG_KGDB) += debug_core.o gdbstub.o

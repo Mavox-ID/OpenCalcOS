@@ -1,9 +1,9 @@
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/export.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/export.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/slab.h>
 
 #include <asm/uaccess.h>
 

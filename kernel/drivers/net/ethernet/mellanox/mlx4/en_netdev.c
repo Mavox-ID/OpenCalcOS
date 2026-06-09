@@ -31,18 +31,18 @@
  *
  */
 
-#include <linux/etherdevice.h>
-#include <linux/tcp.h>
-#include <linux/if_vlan.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/hash.h>
+#include <beep/etherdevice.h>
+#include <beep/tcp.h>
+#include <beep/if_vlan.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/hash.h>
 #include <net/ip.h>
 
-#include <linux/mlx4/driver.h>
-#include <linux/mlx4/device.h>
-#include <linux/mlx4/cmd.h>
-#include <linux/mlx4/cq.h>
+#include <beep/mlx4/driver.h>
+#include <beep/mlx4/device.h>
+#include <beep/mlx4/cmd.h>
+#include <beep/mlx4/cq.h>
 
 #include "mlx4_en.h"
 #include "en_port.h"

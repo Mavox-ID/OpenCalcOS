@@ -22,22 +22,22 @@
     Foundation, Inc., 675 Mvss Ave, Cambridge, MA 02139, USA.
   */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/i2c.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/poll.h>
+#include <beep/i2c.h>
+#include <beep/types.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-chip-ident.h>
-#include <linux/init.h>
-#include <linux/crc32.h>
+#include <beep/init.h>
+#include <beep/crc32.h>
 
 #define MPEG_VIDEO_TARGET_BITRATE_MAX  27000
 #define MPEG_VIDEO_MAX_BITRATE_MAX     27000

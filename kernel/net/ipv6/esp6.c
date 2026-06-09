@@ -28,22 +28,22 @@
 
 #include <crypto/aead.h>
 #include <crypto/authenc.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <beep/err.h>
+#include <beep/module.h>
 #include <net/ip.h>
 #include <net/xfrm.h>
 #include <net/esp.h>
-#include <linux/scatterlist.h>
-#include <linux/kernel.h>
-#include <linux/pfkeyv2.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/scatterlist.h>
+#include <beep/kernel.h>
+#include <beep/pfkeyv2.h>
+#include <beep/random.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 #include <net/ip6_route.h>
 #include <net/icmp.h>
 #include <net/ipv6.h>
 #include <net/protocol.h>
-#include <linux/icmpv6.h>
+#include <beep/icmpv6.h>
 
 struct esp_skb_cb {
 	struct xfrm_skb_cb xfrm;

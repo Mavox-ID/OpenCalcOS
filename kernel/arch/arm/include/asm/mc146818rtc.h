@@ -4,8 +4,8 @@
 #ifndef _ASM_MC146818RTC_H
 #define _ASM_MC146818RTC_H
 
-#include <linux/io.h>
-#include <linux/kernel.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
 
 #define RTC_IRQ BUILD_BUG_ON(1)
 

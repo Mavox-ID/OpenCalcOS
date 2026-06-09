@@ -2,7 +2,7 @@
     comedi/drivers/das08_cs.c
     DAS08 driver
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000 David A. Schleef <ds@schleef.org>
     Copyright (C) 2001,2002,2003 Frank Mori Hess <fmhess@users.sourceforge.net>
 
@@ -21,7 +21,7 @@
     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
     PCMCIA support code for this driver is adapted from the dummy_cs.c
-    driver of the Linux PCMCIA Card Services package.
+    driver of the Beep PCMCIA Card Services package.
 
     The initial developer of the original code is David A. Hinds
     <dahinds@users.sourceforge.net>.  Portions created by David A. Hinds
@@ -48,9 +48,9 @@ Command support does not exist, but could be added for this board.
 
 #include "../comedidev.h"
 
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
 
 #include "das08.h"
 

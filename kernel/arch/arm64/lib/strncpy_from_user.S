@@ -17,7 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 #include <asm/errno.h>
 

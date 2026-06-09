@@ -20,12 +20,12 @@
  * Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  *
  */
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/raid/pq.h>
-#include <linux/async_tx.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/raid/pq.h>
+#include <beep/async_tx.h>
 
 static struct dma_async_tx_descriptor *
 async_sum_product(struct page *dest, struct page **srcs, unsigned char *coef,

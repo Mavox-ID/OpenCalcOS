@@ -1,5 +1,5 @@
 /*
- *	linux/arch/alpha/kernel/core_mcpcia.c
+ *	beep/arch/alpha/kernel/core_mcpcia.c
  *
  * Based on code written by David A Rusling (david.rusling@reo.mts.dec.com).
  *
@@ -11,11 +11,11 @@
 #include <asm/core_mcpcia.h>
 #undef __EXTERN_INLINE
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/delay.h>
 
 #include <asm/ptrace.h>
 

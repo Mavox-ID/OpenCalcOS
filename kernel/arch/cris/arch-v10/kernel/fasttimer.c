@@ -1,21 +1,21 @@
 /*
- * linux/arch/cris/kernel/fasttimer.c
+ * beep/arch/cris/kernel/fasttimer.c
  *
  * Fast timers for ETRAX100/ETRAX100LX
  *
  * Copyright (C) 2000-2007 Axis Communications AB, Lund, Sweden
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/delay.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/interrupt.h>
+#include <beep/time.h>
+#include <beep/delay.h>
 
 #include <asm/segment.h>
 #include <asm/io.h>
@@ -24,7 +24,7 @@
 
 #include <arch/svinto.h>
 #include <asm/fasttimer.h>
-#include <linux/proc_fs.h>
+#include <beep/proc_fs.h>
 
 
 #define DEBUG_LOG_INCLUDED

@@ -18,12 +18,12 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmaengine.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 
 #include <sound/control.h>
 #include <sound/core.h>

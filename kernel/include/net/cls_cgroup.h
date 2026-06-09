@@ -13,9 +13,9 @@
 #ifndef _NET_CLS_CGROUP_H
 #define _NET_CLS_CGROUP_H
 
-#include <linux/cgroup.h>
-#include <linux/hardirq.h>
-#include <linux/rcupdate.h>
+#include <beep/cgroup.h>
+#include <beep/hardirq.h>
+#include <beep/rcupdate.h>
 
 #if IS_ENABLED(CONFIG_NET_CLS_CGROUP)
 struct cgroup_cls_state

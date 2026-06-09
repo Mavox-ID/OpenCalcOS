@@ -1,5 +1,5 @@
 /*
- *  IBM eServer eHCA Infiniband device driver for Linux on POWER
+ *  IBM eServer eHCA Infiniband device driver for Beep on POWER
  *
  *  Completion queue handling
  *
@@ -43,7 +43,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 #include "ehca_iverbs.h"
 #include "ehca_classes.h"

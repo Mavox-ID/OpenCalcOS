@@ -18,23 +18,23 @@
  * Copyright (C) 2000, 2001 Silicon Graphics, Inc.
  * Copyright (C) 2000, 2001, 2003 Broadcom Corporation
  */
-#include <linux/cache.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/threads.h>
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/sched.h>
-#include <linux/cpumask.h>
-#include <linux/cpu.h>
-#include <linux/err.h>
-#include <linux/ftrace.h>
+#include <beep/cache.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/smp.h>
+#include <beep/spinlock.h>
+#include <beep/threads.h>
+#include <beep/module.h>
+#include <beep/time.h>
+#include <beep/timex.h>
+#include <beep/sched.h>
+#include <beep/cpumask.h>
+#include <beep/cpu.h>
+#include <beep/err.h>
+#include <beep/ftrace.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/cpu.h>
 #include <asm/processor.h>
 #include <asm/r4k-timer.h>

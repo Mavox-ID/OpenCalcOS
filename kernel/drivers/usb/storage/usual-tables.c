@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2009 Alan Stern (stern@rowland.harvard.edu)
  *
- * Please see http://www.one-eyed-alien.net/~mdharm/linux-usb for more
+ * Please see http://www.one-eyed-alien.net/~mdharm/beep-usb for more
  * information about this driver.
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -21,10 +21,10 @@
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb_usual.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/usb_usual.h>
 
 
 /*

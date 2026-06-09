@@ -1,5 +1,5 @@
 /*
- * Advanced  Micro Devices Inc. AMD8111E Linux Network Driver
+ * Advanced  Micro Devices Inc. AMD8111E Beep Network Driver
  * Copyright (C) 2003 Advanced Micro Devices
  *
  * This program is free software; you can redistribute it and/or modify

@@ -26,16 +26,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/initrd.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/seq_file.h>
+#include <beep/kernel.h>
+#include <beep/initrd.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/seq_file.h>
 #define PCI_DEBUG
-#include <linux/pci.h>
+#include <beep/pci.h>
 #undef PCI_DEBUG
-#include <linux/proc_fs.h>
-#include <linux/export.h>
+#include <beep/proc_fs.h>
+#include <beep/export.h>
 
 #include <asm/processor.h>
 #include <asm/pdc.h>
@@ -93,7 +93,7 @@ void __init dma_ops_init(void)
 		 * We've got way too many dependencies on 1.1 semantics
 		 * to support 1.0 boxes at this point.
 		 */
-		panic(	"PA-RISC Linux currently only supports machines that conform to\n"
+		panic(	"PA-RISC Beep currently only supports machines that conform to\n"
 			"the PA-RISC 1.1 or 2.0 architecture specification.\n");
 
 	case pcxs:
@@ -300,7 +300,7 @@ extern void eisa_init(void);
 
 static int __init parisc_init(void)
 {
-	u32 osid = (OS_ID_LINUX << 16);
+	u32 osid = (OS_ID_BEEP << 16);
 
 	parisc_proc_mkdir();
 	parisc_init_resources();
@@ -311,7 +311,7 @@ static int __init parisc_init(void)
 	/* set up a new led state on systems shipped LED State panel */
 	pdc_chassis_send_status(PDC_CHASSIS_DIRECT_BSTART);
 
-	/* tell PDC we're Linux. Nevermind failure. */
+	/* tell PDC we're Beep. Nevermind failure. */
 	pdc_stable_write(0x40, &osid, sizeof(osid));
 	
 	processor_init();
@@ -387,7 +387,7 @@ void start_parisc(void)
 
 		asm volatile ("fstd	%fr0,8(%sp)");
 	} else {
-		panic("must have an fpu to boot linux");
+		panic("must have an fpu to boot beep");
 	}
 
 	start_kernel();

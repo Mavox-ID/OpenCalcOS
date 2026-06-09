@@ -1,4 +1,4 @@
-/* toshiba.c -- Linux driver for accessing the SMM on Toshiba laptops
+/* toshiba.c -- Beep driver for accessing the SMM on Toshiba laptops
  *
  * Copyright (c) 1996-2001  Jonathan A. Buzzard (jonathan@buzzard.org.uk)
  *
@@ -56,20 +56,20 @@
 #define TOSH_VERSION "1.11 26/9/2001"
 #define TOSH_DEBUG 0
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/miscdevice.h>
-#include <linux/ioport.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/miscdevice.h>
+#include <beep/ioport.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
-#include <linux/init.h>
-#include <linux/stat.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/mutex.h>
-#include <linux/toshiba.h>
+#include <beep/init.h>
+#include <beep/stat.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/mutex.h>
+#include <beep/toshiba.h>
 
 #define TOSH_MINOR_DEV 181
 
@@ -309,7 +309,7 @@ static int proc_toshiba_show(struct seq_file *m, void *v)
 	key = tosh_fn_status();
 
 	/* Arguments
-	     0) Linux driver version (this will change if format changes)
+	     0) Beep driver version (this will change if format changes)
 	     1) Machine ID
 	     2) SCI version
 	     3) BIOS version (major, minor)

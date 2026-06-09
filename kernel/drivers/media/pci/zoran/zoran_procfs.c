@@ -1,6 +1,6 @@
 /*
  * Zoran zr36057/zr36067 PCI controller driver, for the
- * Pinnacle/Miro DC10/DC10+/DC30/DC30+, Iomega Buz, Linux
+ * Pinnacle/Miro DC10/DC10+/DC30/DC30+, Iomega Buz, Beep
  * Media Labs LML33/LML33R10.
  *
  * This part handles the procFS entries (/proc/ZORAN[%d])
@@ -27,22 +27,22 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/vmalloc.h>
 
-#include <linux/proc_fs.h>
-#include <linux/pci.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/videodev2.h>
-#include <linux/spinlock.h>
-#include <linux/sem.h>
-#include <linux/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/pci.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
+#include <beep/videodev2.h>
+#include <beep/spinlock.h>
+#include <beep/sem.h>
+#include <beep/seq_file.h>
 
-#include <linux/ctype.h>
-#include <linux/poll.h>
+#include <beep/ctype.h>
+#include <beep/poll.h>
 #include <asm/io.h>
 
 #include "videocodec.h"

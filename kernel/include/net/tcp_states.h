@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -10,8 +10,8 @@
  *		as published by the Free Software Foundation; either version
  *		2 of the License, or (at your option) any later version.
  */
-#ifndef _LINUX_TCP_STATES_H
-#define _LINUX_TCP_STATES_H
+#ifndef _BEEP_TCP_STATES_H
+#define _BEEP_TCP_STATES_H
 
 enum {
 	TCP_ESTABLISHED = 1,
@@ -47,4 +47,4 @@ enum {
 	TCPF_CLOSING	 = (1 << 11) 
 };
 
-#endif	/* _LINUX_TCP_STATES_H */
+#endif	/* _BEEP_TCP_STATES_H */

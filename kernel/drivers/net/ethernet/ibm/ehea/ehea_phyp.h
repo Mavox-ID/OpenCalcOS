@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/net/ethernet/ibm/ehea/ehea_phyp.h
+ *  beep/drivers/net/ethernet/ibm/ehea/ehea_phyp.h
  *
  *  eHEA ethernet device driver for IBM eServer System p
  *
@@ -29,7 +29,7 @@
 #ifndef __EHEA_PHYP_H__
 #define __EHEA_PHYP_H__
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include <asm/hvcall.h>
 #include "ehea.h"
 #include "ehea_hw.h"

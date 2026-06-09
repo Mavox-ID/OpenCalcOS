@@ -3,16 +3,16 @@
  *	Library for filesystems writers.
  */
 
-#include <linux/export.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/mount.h>
-#include <linux/vfs.h>
-#include <linux/quotaops.h>
-#include <linux/mutex.h>
-#include <linux/exportfs.h>
-#include <linux/writeback.h>
-#include <linux/buffer_head.h> /* sync_mapping_buffers */
+#include <beep/export.h>
+#include <beep/pagemap.h>
+#include <beep/slab.h>
+#include <beep/mount.h>
+#include <beep/vfs.h>
+#include <beep/quotaops.h>
+#include <beep/mutex.h>
+#include <beep/exportfs.h>
+#include <beep/writeback.h>
+#include <beep/buffer_head.h> /* sync_mapping_buffers */
 
 #include <asm/uaccess.h>
 
@@ -848,7 +848,7 @@ out:
  * @get_inode:	filesystem callback to retrieve inode
  *
  * This function decodes @fid as long as it has one of the well-known
- * Linux filehandle types and calls @get_inode on it to retrieve the
+ * Beep filehandle types and calls @get_inode on it to retrieve the
  * inode for the object specified in the file handle.
  */
 struct dentry *generic_fh_to_dentry(struct super_block *sb, struct fid *fid,
@@ -880,7 +880,7 @@ EXPORT_SYMBOL_GPL(generic_fh_to_dentry);
  * @get_inode:	filesystem callback to retrieve inode
  *
  * This function decodes @fid as long as it has one of the well-known
- * Linux filehandle types and calls @get_inode on it to retrieve the
+ * Beep filehandle types and calls @get_inode on it to retrieve the
  * inode for the _parent_ object specified in the file handle if it
  * is specified in the file handle, or NULL otherwise.
  */

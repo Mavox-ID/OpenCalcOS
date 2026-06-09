@@ -30,12 +30,12 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <net/sock.h>
-#include <linux/in.h>
-#include <linux/if_arp.h>
-#include <linux/jhash.h>
-#include <linux/ratelimit.h>
+#include <beep/in.h>
+#include <beep/if_arp.h>
+#include <beep/jhash.h>
+#include <beep/ratelimit.h>
 #include "rds.h"
 
 #define BIND_HASH_SIZE 1024

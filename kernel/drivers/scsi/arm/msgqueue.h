@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/acorn/scsi/msgqueue.h
+ *  beep/drivers/acorn/scsi/msgqueue.h
  *
  *  Copyright (C) 1997 Russell King
  *

@@ -18,18 +18,18 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/omap-dma.h>
-#include <linux/platform_data/gpio-omap.h>
+#include <beep/pm.h>
+#include <beep/suspend.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/omap-dma.h>
+#include <beep/platform_data/gpio-omap.h>
 
 #include <trace/events/power.h>
 

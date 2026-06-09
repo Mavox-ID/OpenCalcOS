@@ -11,7 +11,7 @@
  * No overlap between the memory of DST and of SRC are assumed.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 ENTRY(memcpy)
 	tst	r6,r6
 	bt/s	9f		! if n=0, do nothing

@@ -1,20 +1,20 @@
 /*
- * linux/net/sunrpc/auth.c
+ * beep/net/sunrpc/auth.c
  *
  * Generic RPC client authentication API.
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/hash.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/gss_api.h>
-#include <linux/spinlock.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/hash.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/gss_api.h>
+#include <beep/spinlock.h>
 
 #ifdef RPC_DEBUG
 # define RPCDBG_FACILITY	RPCDBG_AUTH

@@ -30,8 +30,8 @@
  * SOFTWARE.
  */
 
-#include <linux/spinlock.h>
-#include <linux/gfp.h>
+#include <beep/spinlock.h>
+#include <beep/gfp.h>
 
 #include "ipath_kernel.h"
 #include "ipath_verbs.h"

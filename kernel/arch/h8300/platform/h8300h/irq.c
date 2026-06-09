@@ -4,8 +4,8 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/errno.h>
+#include <beep/init.h>
+#include <beep/errno.h>
 
 #include <asm/ptrace.h>
 #include <asm/traps.h>

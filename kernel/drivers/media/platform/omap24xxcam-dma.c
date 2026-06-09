@@ -25,9 +25,9 @@
  * 02110-1301 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/scatterlist.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/scatterlist.h>
 
 #include "omap24xxcam.h"
 

@@ -15,12 +15,12 @@
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#include <linux/kernel.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/sched.h>
-#include <linux/gfp.h>
-#include <linux/bootmem.h>
+#include <beep/kernel.h>
+#include <beep/percpu.h>
+#include <beep/notifier.h>
+#include <beep/sched.h>
+#include <beep/gfp.h>
+#include <beep/bootmem.h>
 #include <asm/fixmap.h>
 #include <asm/pvclock.h>
 

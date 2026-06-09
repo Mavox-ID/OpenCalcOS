@@ -1,5 +1,5 @@
 /*
- * linux/include/asm-m68k/timex.h
+ * beep/include/asm-m68k/timex.h
  *
  * m68k architecture timex specifications
  */

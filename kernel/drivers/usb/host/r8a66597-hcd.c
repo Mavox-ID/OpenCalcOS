@@ -23,22 +23,22 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/mm.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
 #include <asm/cacheflush.h>
 
 #include "r8a66597.h"

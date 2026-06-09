@@ -1,5 +1,5 @@
 #
-# Makefile for Red Hat Linux AFS client.
+# Makefile for Red Hat Beep AFS client.
 #
 
 afs-cache-$(CONFIG_AFS_FSCACHE) := cache.o

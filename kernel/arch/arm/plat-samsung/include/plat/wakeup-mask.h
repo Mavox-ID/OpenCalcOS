@@ -1,6 +1,6 @@
 /* arch/arm/plat-samsung/include/plat/wakeup-mask.h
  *
- * Copyright 2010 Ben Dooks <ben-linux@fluff.org>
+ * Copyright 2010 Ben Dooks <ben-beep@fluff.org>
  *
  * Support for wakeup mask interrupts on newer SoCs
  *

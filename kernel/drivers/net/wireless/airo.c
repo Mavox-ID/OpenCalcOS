@@ -13,43 +13,43 @@
     code in the Developer's manual was granted for this driver by
     Aironet.  Major code contributions were received from Javier Achirica
     <achirica@users.sourceforge.net> and Jean Tourrilhes <jt@hpl.hp.com>.
-    Code was also integrated from the Cisco Aironet driver for Linux.
+    Code was also integrated from the Cisco Aironet driver for Beep.
     Support for MPI350 cards was added by Fabrice Bellet
     <fabrice@bellet.info>.
 
 ======================================================================*/
 
-#include <linux/err.h>
-#include <linux/init.h>
+#include <beep/err.h>
+#include <beep/init.h>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
 
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/bitops.h>
-#include <linux/scatterlist.h>
-#include <linux/crypto.h>
+#include <beep/sched.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/in.h>
+#include <beep/bitops.h>
+#include <beep/scatterlist.h>
+#include <beep/crypto.h>
 #include <asm/io.h>
 #include <asm/unaligned.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
 #include <asm/uaccess.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
 
-#include <linux/ieee80211.h>
+#include <beep/ieee80211.h>
 #include <net/iw_handler.h>
 
 #include "airo.h"
@@ -85,12 +85,12 @@ static struct pci_driver airo_driver = {
 #endif /* CONFIG_PCI */
 
 /* Include Wireless Extension definition and check version - Jean II */
-#include <linux/wireless.h>
+#include <beep/wireless.h>
 #define WIRELESS_SPY		/* enable iwspy support */
 
 #define CISCO_EXT		/* enable Cisco extensions */
 #ifdef CISCO_EXT
-#include <linux/delay.h>
+#include <beep/delay.h>
 #endif
 
 /* Hack to do some power saving */
@@ -1176,7 +1176,7 @@ struct airo_info {
 #define FLAG_UPDATE_MULTI 5
 #define FLAG_UPDATE_UNI 6
 #define FLAG_802_11	7
-#define FLAG_PROMISC	8	/* IFF_PROMISC 0x100 - include/linux/if.h */
+#define FLAG_PROMISC	8	/* IFF_PROMISC 0x100 - include/beep/if.h */
 #define FLAG_PENDING_XMIT 9
 #define FLAG_PENDING_XMIT11 10
 #define FLAG_MPI	11

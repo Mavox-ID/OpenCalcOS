@@ -24,18 +24,18 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kref.h>
-#include <linux/suspend.h>
-#include <linux/usb/quirks.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/firmware.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/kref.h>
+#include <beep/suspend.h>
+#include <beep/usb/quirks.h>
+#include <beep/ctype.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/firmware.h>
 
 #include "vendorcmds.h"
 #include "pd-common.h"

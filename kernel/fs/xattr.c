@@ -4,23 +4,23 @@
   Extended attribute handling.
 
   Copyright (C) 2001 by Andreas Gruenbacher <a.gruenbacher@computer.org>
-  Copyright (C) 2001 SGI - Silicon Graphics, Inc <linux-xfs@oss.sgi.com>
+  Copyright (C) 2001 SGI - Silicon Graphics, Inc <beep-xfs@oss.sgi.com>
   Copyright (c) 2004 Red Hat, Inc., James Morris <jmorris@redhat.com>
  */
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/xattr.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/security.h>
-#include <linux/evm.h>
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/fsnotify.h>
-#include <linux/audit.h>
-#include <linux/vmalloc.h>
-#include <linux/posix_acl_xattr.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/file.h>
+#include <beep/xattr.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/security.h>
+#include <beep/evm.h>
+#include <beep/syscalls.h>
+#include <beep/export.h>
+#include <beep/fsnotify.h>
+#include <beep/audit.h>
+#include <beep/vmalloc.h>
+#include <beep/posix_acl_xattr.h>
 
 #include <asm/uaccess.h>
 

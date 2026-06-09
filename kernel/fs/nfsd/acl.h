@@ -32,10 +32,10 @@
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LINUX_NFS4_ACL_H
-#define LINUX_NFS4_ACL_H
+#ifndef BEEP_NFS4_ACL_H
+#define BEEP_NFS4_ACL_H
 
-#include <linux/posix_acl.h>
+#include <beep/posix_acl.h>
 
 /* Maximum ACL we'll accept from client; chosen (somewhat arbitrarily) to
  * fit in a page: */
@@ -56,4 +56,4 @@ struct nfs4_acl *nfs4_acl_posix_to_nfsv4(struct posix_acl *,
 int nfs4_acl_nfsv4_to_posix(struct nfs4_acl *, struct posix_acl **,
 				struct posix_acl **, unsigned int flags);
 
-#endif /* LINUX_NFS4_ACL_H */
+#endif /* BEEP_NFS4_ACL_H */

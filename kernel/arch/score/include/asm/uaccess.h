@@ -1,9 +1,9 @@
 #ifndef __SCORE_UACCESS_H
 #define __SCORE_UACCESS_H
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/thread_info.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/thread_info.h>
 
 #define VERIFY_READ		0
 #define VERIFY_WRITE		1

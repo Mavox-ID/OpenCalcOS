@@ -10,22 +10,22 @@
 
 extern struct atmel_lcdfb_info mimc200_lcdc_data;
 
-#include <linux/clk.h>
-#include <linux/etherdevice.h>
-#include <linux/i2c-gpio.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/leds.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/eeprom.h>
+#include <beep/clk.h>
+#include <beep/etherdevice.h>
+#include <beep/i2c-gpio.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
+#include <beep/platform_device.h>
+#include <beep/types.h>
+#include <beep/leds.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/eeprom.h>
 
 #include <video/atmel_lcdc.h>
-#include <linux/fb.h>
+#include <beep/fb.h>
 
-#include <linux/atmel-mci.h>
-#include <linux/io.h>
+#include <beep/atmel-mci.h>
+#include <beep/io.h>
 #include <asm/setup.h>
 
 #include <mach/at32ap700x.h>

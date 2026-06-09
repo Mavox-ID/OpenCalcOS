@@ -1,6 +1,6 @@
 /*
  *	Ioctl handler
- *	Linux ethernet bridge
+ *	Beep ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -11,12 +11,12 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/capability.h>
-#include <linux/kernel.h>
-#include <linux/if_bridge.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/times.h>
+#include <beep/capability.h>
+#include <beep/kernel.h>
+#include <beep/if_bridge.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
+#include <beep/times.h>
 #include <net/net_namespace.h>
 #include <asm/uaccess.h>
 #include "br_private.h"

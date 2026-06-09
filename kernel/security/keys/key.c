@@ -9,15 +9,15 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/poison.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/security.h>
-#include <linux/workqueue.h>
-#include <linux/random.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/poison.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/security.h>
+#include <beep/workqueue.h>
+#include <beep/random.h>
+#include <beep/err.h>
 #include "internal.h"
 
 struct kmem_cache *key_jar;

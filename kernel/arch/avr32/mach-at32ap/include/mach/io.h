@@ -1,7 +1,7 @@
 #ifndef __ASM_AVR32_ARCH_AT32AP_IO_H
 #define __ASM_AVR32_ARCH_AT32AP_IO_H
 
-#include <linux/swab.h>
+#include <beep/swab.h>
 
 #if defined(CONFIG_AP700X_32_BIT_SMC)
 # define __swizzle_addr_b(addr)	(addr ^ 3UL)

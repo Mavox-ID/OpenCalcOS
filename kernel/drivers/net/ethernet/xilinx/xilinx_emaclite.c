@@ -1,5 +1,5 @@
 /*
- * Xilinx EmacLite Linux driver for the Xilinx Ethernet MAC Lite device.
+ * Xilinx EmacLite Beep driver for the Xilinx Ethernet MAC Lite device.
  *
  * This is a new flat driver which is based on the original emac_lite
  * driver from John Williams <john.williams@petalogix.com>.
@@ -12,21 +12,21 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/phy.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/of_address.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
+#include <beep/of_mdio.h>
+#include <beep/of_net.h>
+#include <beep/phy.h>
+#include <beep/interrupt.h>
 
 #define DRIVER_NAME "xilinx_emaclite"
 

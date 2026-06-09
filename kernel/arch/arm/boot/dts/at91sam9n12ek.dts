@@ -83,19 +83,19 @@
 		d8 {
 			label = "d8";
 			gpios = <&pioB 4 1>;
-			linux,default-trigger = "mmc0";
+			beep,default-trigger = "mmc0";
 		};
 
 		d9 {
 			label = "d6";
 			gpios = <&pioB 5 1>;
-			linux,default-trigger = "nand-disk";
+			beep,default-trigger = "nand-disk";
 		};
 
 		d10 {
 			label = "d7";
 			gpios = <&pioB 6 0>;
-			linux,default-trigger = "heartbeat";
+			beep,default-trigger = "heartbeat";
 		};
 	};
 
@@ -107,7 +107,7 @@
 		enter {
 			label = "Enter";
 			gpios = <&pioB 4 1>;
-			linux,code = <28>;
+			beep,code = <28>;
 			gpio-key,wakeup;
 		};
 	};

@@ -161,7 +161,7 @@ enum {
 	//OPT_e = (1 << 3), /* with -F, print unresolved symbols */
 	//OPT_F = (1 << 4), /* System.map that contains the symbols */
 	OPT_n = (1 << 5), /* dry-run, print to stdout only */
-	OPT_r = (1 << 6), /* Compat dummy. Linux Makefile uses it */
+	OPT_r = (1 << 6), /* Compat dummy. Beep Makefile uses it */
 	OPT_u = (1 << 7), /* -u,--unresolved-error: ignored */
 	OPT_q = (1 << 8), /* -q,--quiet: ignored */
 	OPT_C = (1 << 9), /* -C,--config etc_modules_conf: ignored */

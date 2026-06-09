@@ -12,7 +12,7 @@ config DEBUG_DECOMPRESS_KERNEL
 	default n
 	help
 	  If you say Y here you will confirm the start and the end of
-	  decompressing Linux seeing "Uncompressing Linux... " and
+	  decompressing Beep seeing "Uncompressing Beep... " and
 	  "Ok, booting the kernel.\n" on console.
 
 config TEST_MISALIGNMENT_HANDLER

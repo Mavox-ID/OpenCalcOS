@@ -40,13 +40,13 @@
  */
 
 #include <crypto/twofish.h>
-#include <linux/bitops.h>
-#include <linux/crypto.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <beep/bitops.h>
+#include <beep/crypto.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
 
 
 /* The large precomputed tables for the Twofish cipher (twofish.c)

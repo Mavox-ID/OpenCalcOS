@@ -185,9 +185,9 @@
  * ES1946	yes		This is a PCI chip; not handled by this driver
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
 
 #include "sound_config.h"
 #include "sb_mixer.h"

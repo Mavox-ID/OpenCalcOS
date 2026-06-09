@@ -8,11 +8,11 @@
 
 #define pr_fmt(fmt) "TCP: " fmt
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/gfp.h>
 #include <net/tcp.h>
 
 int sysctl_tcp_max_ssthresh = 0;

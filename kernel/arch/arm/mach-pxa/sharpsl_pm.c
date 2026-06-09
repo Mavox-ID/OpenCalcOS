@@ -14,17 +14,17 @@
 
 #undef DEBUG
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/apm-emulation.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/leds.h>
-#include <linux/suspend.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/apm-emulation.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/leds.h>
+#include <beep/suspend.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
 
 #include <asm/mach-types.h>
 #include <mach/pm.h>

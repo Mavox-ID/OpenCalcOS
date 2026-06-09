@@ -7,9 +7,9 @@
 #
 
 ifeq ($(CROSS_COMPILE),)
-CROSS_COMPILE    := bfin-uclinux-
+CROSS_COMPILE    := bfin-ucbeep-
 endif
-LDFLAGS_vmlinux  := -X
+LDFLAGS_vmbeep  := -X
 OBJCOPYFLAGS     := -O binary -R .note -R .comment -S
 GZFLAGS          := -9
 
@@ -147,7 +147,7 @@ KBUILD_IMAGE := $(boot)/vmImage
 
 all: vmImage
 
-$(BOOT_TARGETS): vmlinux
+$(BOOT_TARGETS): vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 install:

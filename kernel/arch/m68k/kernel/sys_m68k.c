@@ -1,25 +1,25 @@
 /*
- * linux/arch/m68k/kernel/sys_m68k.c
+ * beep/arch/m68k/kernel/sys_m68k.c
  *
  * This file contains various random system calls that
- * have a non-standard calling sequence on the Linux/m68k
+ * have a non-standard calling sequence on the Beep/m68k
  * platform.
  */
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/file.h>
-#include <linux/ipc.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/smp.h>
+#include <beep/sem.h>
+#include <beep/msg.h>
+#include <beep/shm.h>
+#include <beep/stat.h>
+#include <beep/syscalls.h>
+#include <beep/mman.h>
+#include <beep/file.h>
+#include <beep/ipc.h>
 
 #include <asm/setup.h>
 #include <asm/uaccess.h>

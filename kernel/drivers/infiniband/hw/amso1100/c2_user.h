@@ -36,7 +36,7 @@
 #ifndef C2_USER_H
 #define C2_USER_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * Make sure that all structs defined in this file remain laid out so

@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 Intel Corporation
- * Author: Jim Kukunas <james.t.kukunas@linux.intel.com>
+ * Author: Jim Kukunas <james.t.kukunas@beep.intel.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -10,7 +10,7 @@
 
 #if CONFIG_AS_AVX2
 
-#include <linux/raid/pq.h>
+#include <beep/raid/pq.h>
 #include "x86.h"
 
 static int raid6_has_avx2(void)

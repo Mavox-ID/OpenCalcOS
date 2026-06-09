@@ -4,7 +4,7 @@
  * Copyright (C) 2001 Will Dyson <will_dyson@pobox.com>
  */
 
-#include <linux/fs.h>
+#include <beep/fs.h>
 
 #include "befs.h"
 #include "inode.h"

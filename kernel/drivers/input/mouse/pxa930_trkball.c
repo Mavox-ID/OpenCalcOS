@@ -10,17 +10,17 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 #include <mach/hardware.h>
-#include <linux/platform_data/mouse-pxa930_trkball.h>
+#include <beep/platform_data/mouse-pxa930_trkball.h>
 
 /* Trackball Controller Register Definitions */
 #define TBCR		(0x000C)

@@ -9,30 +9,30 @@
  * is licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/i2c/pcf857x.h>
-#include <linux/i2c/at24.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pcf857x.h>
+#include <beep/i2c/at24.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 
 #include <mach/cp_intc.h>
 #include <mach/mux.h>
-#include <linux/platform_data/mtd-davinci.h>
+#include <beep/platform_data/mtd-davinci.h>
 #include <mach/da8xx.h>
-#include <linux/platform_data/usb-davinci.h>
-#include <linux/platform_data/mtd-davinci-aemif.h>
-#include <linux/platform_data/spi-davinci.h>
+#include <beep/platform_data/usb-davinci.h>
+#include <beep/platform_data/mtd-davinci-aemif.h>
+#include <beep/platform_data/spi-davinci.h>
 
 #define DA830_EVM_PHY_ID		""
 /*

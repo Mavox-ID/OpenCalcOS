@@ -6,7 +6,7 @@
  *  Paul Mackerras (paulus@cs.anu.edu.au)
  *
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  *  This program is free software; you can redistribute it and/or
  *  modify it under the terms of the GNU General Public License
@@ -14,30 +14,30 @@
  *  2 of the License, or (at your option) any later version.
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/user.h>
-#include <linux/elf.h>
-#include <linux/init.h>
-#include <linux/prctl.h>
-#include <linux/init_task.h>
-#include <linux/export.h>
-#include <linux/kallsyms.h>
-#include <linux/mqueue.h>
-#include <linux/hardirq.h>
-#include <linux/utsname.h>
-#include <linux/ftrace.h>
-#include <linux/kernel_stat.h>
-#include <linux/personality.h>
-#include <linux/random.h>
-#include <linux/hw_breakpoint.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/user.h>
+#include <beep/elf.h>
+#include <beep/init.h>
+#include <beep/prctl.h>
+#include <beep/init_task.h>
+#include <beep/export.h>
+#include <beep/kallsyms.h>
+#include <beep/mqueue.h>
+#include <beep/hardirq.h>
+#include <beep/utsname.h>
+#include <beep/ftrace.h>
+#include <beep/kernel_stat.h>
+#include <beep/personality.h>
+#include <beep/random.h>
+#include <beep/hw_breakpoint.h>
 
 #include <asm/pgtable.h>
 #include <asm/uaccess.h>
@@ -54,8 +54,8 @@
 #ifdef CONFIG_PPC64
 #include <asm/firmware.h>
 #endif
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
+#include <beep/kprobes.h>
+#include <beep/kdebug.h>
 
 extern unsigned long _get_SP(void);
 

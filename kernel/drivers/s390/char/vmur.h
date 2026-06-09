@@ -1,5 +1,5 @@
 /*
- * Linux driver for System z and s390 unit record devices
+ * Beep driver for System z and s390 unit record devices
  * (z/VM virtual punch, reader, printer)
  *
  * Copyright IBM Corp. 2001, 2007

@@ -9,7 +9,7 @@
 #define IIO_ADC_AD7780_H_
 
 /*
- * TODO: struct ad7780_platform_data needs to go into include/linux/iio
+ * TODO: struct ad7780_platform_data needs to go into include/beep/iio
  */
 
 /* NOTE:

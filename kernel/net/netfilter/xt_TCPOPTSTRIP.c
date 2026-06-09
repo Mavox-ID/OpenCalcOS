@@ -9,15 +9,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/tcp.h>
 #include <net/ipv6.h>
 #include <net/tcp.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_TCPOPTSTRIP.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_TCPOPTSTRIP.h>
 
 static inline unsigned int optlen(const u_int8_t *opt, unsigned int offset)
 {

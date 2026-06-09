@@ -17,11 +17,11 @@
  * the CPU clock speed on the fly.
  */
 
-#include <linux/module.h>
-#include <linux/cpufreq.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/cpufreq.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 
 #include "hardware.h"
 

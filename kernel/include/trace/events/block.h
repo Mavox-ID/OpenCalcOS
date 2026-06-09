@@ -4,9 +4,9 @@
 #if !defined(_TRACE_BLOCK_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_BLOCK_H
 
-#include <linux/blktrace_api.h>
-#include <linux/blkdev.h>
-#include <linux/tracepoint.h>
+#include <beep/blktrace_api.h>
+#include <beep/blkdev.h>
+#include <beep/tracepoint.h>
 
 #define RWBS_LEN	8
 

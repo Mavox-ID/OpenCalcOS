@@ -1,7 +1,7 @@
 /* 
  *    EISA "eeprom" support routines
  *
- *    Copyright (C) 2001 Thomas Bogendoerfer <tsbogend at parisc-linux.org>
+ *    Copyright (C) 2001 Thomas Bogendoerfer <tsbogend at parisc-beep.org>
  *
  *
  *    This program is free software; you can redistribute it and/or modify
@@ -19,12 +19,12 @@
  *    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/miscdevice.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
 #include <asm/eisa_eeprom.h>

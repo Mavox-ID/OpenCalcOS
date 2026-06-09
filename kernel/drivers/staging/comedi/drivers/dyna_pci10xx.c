@@ -38,7 +38,7 @@
 */
 
 #include "../comedidev.h"
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 
 #define READ_TIMEOUT 50
 

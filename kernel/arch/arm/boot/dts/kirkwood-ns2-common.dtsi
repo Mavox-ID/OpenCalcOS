@@ -63,7 +63,7 @@
 
 		button@1 {
 			label = "Power push button";
-			linux,code = <116>;
+			beep,code = <116>;
 			gpios = <&gpio1 0 0>;
 		};
 	};

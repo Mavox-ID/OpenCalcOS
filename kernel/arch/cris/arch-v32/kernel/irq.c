@@ -3,18 +3,18 @@
  */
 
 #include <asm/irq.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/profile.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/threads.h>
-#include <linux/spinlock.h>
-#include <linux/kernel_stat.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/smp.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/profile.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/threads.h>
+#include <beep/spinlock.h>
+#include <beep/kernel_stat.h>
 #include <hwregs/reg_map.h>
 #include <hwregs/reg_rdwr.h>
 #include <hwregs/intr_vect.h>

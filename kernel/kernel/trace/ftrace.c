@@ -13,25 +13,25 @@
  *  Copyright (C) 2004 Nadia Yvette Chambers
  */
 
-#include <linux/stop_machine.h>
-#include <linux/clocksource.h>
-#include <linux/kallsyms.h>
-#include <linux/seq_file.h>
-#include <linux/suspend.h>
-#include <linux/debugfs.h>
-#include <linux/hardirq.h>
-#include <linux/kthread.h>
-#include <linux/uaccess.h>
-#include <linux/bsearch.h>
-#include <linux/module.h>
-#include <linux/ftrace.h>
-#include <linux/sysctl.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/sort.h>
-#include <linux/list.h>
-#include <linux/hash.h>
-#include <linux/rcupdate.h>
+#include <beep/stop_machine.h>
+#include <beep/clocksource.h>
+#include <beep/kallsyms.h>
+#include <beep/seq_file.h>
+#include <beep/suspend.h>
+#include <beep/debugfs.h>
+#include <beep/hardirq.h>
+#include <beep/kthread.h>
+#include <beep/uaccess.h>
+#include <beep/bsearch.h>
+#include <beep/module.h>
+#include <beep/ftrace.h>
+#include <beep/sysctl.h>
+#include <beep/slab.h>
+#include <beep/ctype.h>
+#include <beep/sort.h>
+#include <beep/list.h>
+#include <beep/hash.h>
+#include <beep/rcupdate.h>
 
 #include <trace/events/sched.h>
 

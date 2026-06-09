@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-versatile/versatile_pb.c
+ *  beep/arch/arm/mach-versatile/versatile_pb.c
  *
  *  Copyright (C) 2004 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd
@@ -19,12 +19,12 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/pl061.h>
-#include <linux/amba/mmci.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/pl061.h>
+#include <beep/amba/mmci.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <asm/hardware/vic.h>

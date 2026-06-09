@@ -23,12 +23,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_fdt.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <beep/kernel.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_fdt.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
 
 #include <asm/mach/arch.h>
 #include <asm/hardware/gic.h>

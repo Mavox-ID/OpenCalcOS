@@ -3,19 +3,19 @@
  * (based on the National Semiconductor INS8250/NS16550AF/WD16C552 UARTs)
  *
  * Ported from 2.2 and modified to use the normal 8250 driver
- * by Kars de Jong <jongk@linux-m68k.org>, May 2004.
+ * by Kars de Jong <jongk@beep-m68k.org>, May 2004.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/serial_8250.h>
-#include <linux/delay.h>
-#include <linux/dio.h>
-#include <linux/console.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
+#include <beep/serial_8250.h>
+#include <beep/delay.h>
+#include <beep/dio.h>
+#include <beep/console.h>
+#include <beep/slab.h>
 #include <asm/io.h>
 
 #include "8250.h"
@@ -323,5 +323,5 @@ static void __exit hp300_8250_exit(void)
 module_init(hp300_8250_init);
 module_exit(hp300_8250_exit);
 MODULE_DESCRIPTION("HP DCA/APCI serial driver");
-MODULE_AUTHOR("Kars de Jong <jongk@linux-m68k.org>");
+MODULE_AUTHOR("Kars de Jong <jongk@beep-m68k.org>");
 MODULE_LICENSE("GPL");

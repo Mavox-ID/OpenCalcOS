@@ -53,12 +53,12 @@ CsrResult __attribute__((weak)) CsrSdioResume(CsrSdioFunction *function)
     return CSR_RESULT_SUCCESS;
 }
 
-int __attribute__((weak)) csr_sdio_linux_install_irq(CsrSdioFunction *function)
+int __attribute__((weak)) csr_sdio_beep_install_irq(CsrSdioFunction *function)
 {
     return 0;
 }
 
-int __attribute__((weak)) csr_sdio_linux_remove_irq(CsrSdioFunction *function)
+int __attribute__((weak)) csr_sdio_beep_remove_irq(CsrSdioFunction *function)
 {
     return 0;
 }

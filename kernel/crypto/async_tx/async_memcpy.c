@@ -23,12 +23,12 @@
  * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  *
  */
-#include <linux/kernel.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/async_tx.h>
+#include <beep/kernel.h>
+#include <beep/highmem.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/dma-mapping.h>
+#include <beep/async_tx.h>
 
 /**
  * async_memcpy - attempt to copy memory with a dma engine.

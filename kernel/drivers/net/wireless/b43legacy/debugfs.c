@@ -23,12 +23,12 @@
 
 */
 
-#include <linux/fs.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/mutex.h>
+#include <beep/fs.h>
+#include <beep/debugfs.h>
+#include <beep/slab.h>
+#include <beep/netdevice.h>
+#include <beep/pci.h>
+#include <beep/mutex.h>
 
 #include "b43legacy.h"
 #include "main.h"

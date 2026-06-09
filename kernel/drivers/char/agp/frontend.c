@@ -26,19 +26,19 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mman.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/miscdevice.h>
-#include <linux/agp_backend.h>
-#include <linux/agpgart.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mman.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/miscdevice.h>
+#include <beep/agp_backend.h>
+#include <beep/agpgart.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/sched.h>
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>
 #include "agp.h"

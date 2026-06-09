@@ -11,11 +11,11 @@
  * option) any later version.
  *
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/pm_runtime.h>
 #include <plat/map-base.h>
 
 #include <drm/drmP.h>

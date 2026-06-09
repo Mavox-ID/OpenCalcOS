@@ -13,16 +13,16 @@
 
 #define pr_fmt(fmt) "vexpress-config: " fmt
 
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/vexpress.h>
+#include <beep/bitops.h>
+#include <beep/completion.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/vexpress.h>
 
 
 #define VEXPRESS_CONFIG_MAX_BRIDGES 2

@@ -476,7 +476,7 @@ static smallint detect_link(void)
 static NOINLINE int check_existence_through_netlink(void)
 {
 	int iface_len;
-	/* Buffer was 1K, but on linux-3.9.9 it was reported to be too small.
+	/* Buffer was 1K, but on beep-3.9.9 it was reported to be too small.
 	 * netlink.h: "limit to 8K to avoid MSG_TRUNC when PAGE_SIZE is very large".
 	 * Note: on error returns (-1) we exit, no need to free replybuf.
 	 */

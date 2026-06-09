@@ -7,8 +7,8 @@
  * Copyright (C) 1997 Anton Blanchard (anton@progsoc.uts.edu.au)
  */
 
-#include <linux/linkage.h>
-#include <linux/errno.h>
+#include <beep/linkage.h>
+#include <beep/errno.h>
 
 #include <asm/head.h>
 #include <asm/asi.h>
@@ -310,8 +310,8 @@ maybe_smp4m_msg_out:
 	RESTORE_ALL
 
 	.align	4
-	.globl	linux_trap_ipi15_sun4m
-linux_trap_ipi15_sun4m:
+	.globl	beep_trap_ipi15_sun4m
+beep_trap_ipi15_sun4m:
 	SAVE_ALL
 	sethi	%hi(0x80000000), %o2
 	GET_PROCESSOR4M_ID(o0)
@@ -356,8 +356,8 @@ smp4d_ticker:
 	RESTORE_ALL
 
 	.align	4
-	.globl	linux_trap_ipi15_sun4d
-linux_trap_ipi15_sun4d:
+	.globl	beep_trap_ipi15_sun4d
+beep_trap_ipi15_sun4d:
 	SAVE_ALL
 	sethi	%hi(CC_BASE), %o4
 	sethi	%hi(MXCC_ERR_ME|MXCC_ERR_PEW|MXCC_ERR_ASE|MXCC_ERR_PEE), %o2
@@ -410,8 +410,8 @@ smpleon_ipi:
 	RESTORE_ALL
 
 	.align	4
-	.globl	linux_trap_ipi15_leon
-linux_trap_ipi15_leon:
+	.globl	beep_trap_ipi15_leon
+beep_trap_ipi15_leon:
 	SAVE_ALL
 	or	%l0, PSR_PIL, %l4
 	wr	%l4, 0x0, %psr
@@ -753,8 +753,8 @@ sun4m_nmi_error:
 
 #ifndef CONFIG_SMP
 	.align	4
-	.globl	linux_trap_ipi15_sun4m
-linux_trap_ipi15_sun4m:
+	.globl	beep_trap_ipi15_sun4m
+beep_trap_ipi15_sun4m:
 	SAVE_ALL
 
 	ba	sun4m_nmi_error
@@ -944,12 +944,12 @@ flush_patch_four:
 	 add	%sp, STACKFRAME_SZ, %o2
 
         .align  4
-linux_sparc_ni_syscall:
+beep_sparc_ni_syscall:
 	sethi   %hi(sys_ni_syscall), %l7
 	b       do_syscall
 	 or     %l7, %lo(sys_ni_syscall), %l7
 
-linux_syscall_trace:
+beep_syscall_trace:
 	add	%sp, STACKFRAME_SZ, %o0
 	call	syscall_trace
 	 mov	0, %o1
@@ -987,15 +987,15 @@ ret_from_kernel_thread:
 	b	ret_sys_call
 	 mov	0, %o0
 
-	/* Linux native system calls enter here... */
+	/* Beep native system calls enter here... */
 	.align	4
-	.globl	linux_sparc_syscall
-linux_sparc_syscall:
+	.globl	beep_sparc_syscall
+beep_sparc_syscall:
 	sethi	%hi(PSR_SYSCALL), %l4
 	or	%l0, %l4, %l0
 	/* Direct access to user regs, must faster. */
 	cmp	%g1, NR_syscalls
-	bgeu	linux_sparc_ni_syscall
+	bgeu	beep_sparc_ni_syscall
 	 sll	%g1, 2, %l4
 	ld	[%l7 + %l4], %l7
 
@@ -1012,7 +1012,7 @@ do_syscall:
 	mov	%i3, %o3
 	andcc	%l5, _TIF_SYSCALL_TRACE, %g0
 	mov	%i4, %o4
-	bne	linux_syscall_trace
+	bne	beep_syscall_trace
 	 mov	%i0, %l5
 2:
 	call	%l7
@@ -1033,7 +1033,7 @@ ret_sys_call:
 	andn	%g3, %g2, %g3
 	clr	%l6
 	st	%g3, [%sp + STACKFRAME_SZ + PT_PSR]	
-	bne	linux_syscall_trace2
+	bne	beep_syscall_trace2
 	 ld	[%sp + STACKFRAME_SZ + PT_NPC], %l1 /* pc = npc */
 	add	%l1, 0x4, %l2			/* npc = npc+4 */
 	st	%l1, [%sp + STACKFRAME_SZ + PT_PC]
@@ -1048,14 +1048,14 @@ ret_sys_call:
 	st	%o0, [%sp + STACKFRAME_SZ + PT_I0]
 	mov	1, %l6
 	st	%g3, [%sp + STACKFRAME_SZ + PT_PSR]
-	bne	linux_syscall_trace2
+	bne	beep_syscall_trace2
 	 ld	[%sp + STACKFRAME_SZ + PT_NPC], %l1 /* pc = npc */
 	add	%l1, 0x4, %l2			/* npc = npc+4 */
 	st	%l1, [%sp + STACKFRAME_SZ + PT_PC]
 	b	ret_trap_entry
 	 st	%l2, [%sp + STACKFRAME_SZ + PT_NPC]
 
-linux_syscall_trace2:
+beep_syscall_trace2:
 	add	%sp, STACKFRAME_SZ, %o0
 	mov	1, %o1
 	call	syscall_trace
@@ -1289,8 +1289,8 @@ restore_current:
 #include <asm/pcic.h>
 
 	.align	4
-	.globl	linux_trap_ipi15_pcic
-linux_trap_ipi15_pcic:
+	.globl	beep_trap_ipi15_pcic
+beep_trap_ipi15_pcic:
 	rd	%wim, %l3
 	SAVE_ALL
 
@@ -1326,8 +1326,8 @@ linux_trap_ipi15_pcic:
 
 	.globl	pcic_nmi_trap_patch
 pcic_nmi_trap_patch:
-	sethi	%hi(linux_trap_ipi15_pcic), %l3
-	jmpl	%l3 + %lo(linux_trap_ipi15_pcic), %g0
+	sethi	%hi(beep_trap_ipi15_pcic), %l3
+	jmpl	%l3 + %lo(beep_trap_ipi15_pcic), %g0
 	 rd	%psr, %l0
 	.word	0
 

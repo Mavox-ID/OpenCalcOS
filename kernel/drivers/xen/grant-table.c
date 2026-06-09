@@ -9,7 +9,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the Beep kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -31,15 +31,15 @@
  * IN THE SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/hardirq.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/hardirq.h>
 
 #include <xen/xen.h>
 #include <xen/interface/xen.h>

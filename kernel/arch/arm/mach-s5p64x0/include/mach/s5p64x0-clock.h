@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5p64x0/include/mach/s5p64x0-clock.h
+/* beep/arch/arm/mach-s5p64x0/include/mach/s5p64x0-clock.h
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -13,7 +13,7 @@
 #ifndef __ASM_ARCH_CLOCK_H
 #define __ASM_ARCH_CLOCK_H __FILE__
 
-#include <linux/clk.h>
+#include <beep/clk.h>
 
 extern struct clksrc_clk clk_mout_apll;
 extern struct clksrc_clk clk_mout_mpll;

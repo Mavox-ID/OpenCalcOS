@@ -19,8 +19,8 @@
 
 #include "udfdecl.h"
 
-#include <linux/blkdev.h>
-#include <linux/cdrom.h>
+#include <beep/blkdev.h>
+#include <beep/cdrom.h>
 #include <asm/uaccess.h>
 
 #include "udf_sb.h"

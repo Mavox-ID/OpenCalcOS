@@ -13,18 +13,18 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/notifier.h>
-#include <linux/netdevice.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/cache.h>
-#include <linux/audit.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/kmod.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/notifier.h>
+#include <beep/netdevice.h>
+#include <beep/netfilter.h>
+#include <beep/module.h>
+#include <beep/cache.h>
+#include <beep/audit.h>
 #include <net/dst.h>
 #include <net/flow.h>
 #include <net/xfrm.h>
@@ -1644,13 +1644,13 @@ xfrm_resolve_and_create_bundle(struct xfrm_policy **pols, int num_pols,
 	err = xfrm_tmpl_resolve(pols, num_pols, fl, xfrm, family);
 	if (err <= 0) {
 		if (err != 0 && err != -EAGAIN)
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTPOLERROR);
+			XFRM_INC_STATS(net, BEEP_MIB_XFRMOUTPOLERROR);
 		return ERR_PTR(err);
 	}
 
 	dst = xfrm_bundle_create(pols[0], xfrm, err, fl, dst_orig);
 	if (IS_ERR(dst)) {
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTBUNDLEGENERROR);
+		XFRM_INC_STATS(net, BEEP_MIB_XFRMOUTBUNDLEGENERROR);
 		return ERR_CAST(dst);
 	}
 
@@ -1662,7 +1662,7 @@ xfrm_resolve_and_create_bundle(struct xfrm_policy **pols, int num_pols,
 		err = xfrm_dst_update_origin(dst, fl);
 	if (unlikely(err)) {
 		dst_free(dst);
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTBUNDLECHECKERROR);
+		XFRM_INC_STATS(net, BEEP_MIB_XFRMOUTBUNDLECHECKERROR);
 		return ERR_PTR(err);
 	}
 
@@ -1764,7 +1764,7 @@ make_dummy_bundle:
 	return &xdst->flo;
 
 inc_error:
-	XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTPOLERROR);
+	XFRM_INC_STATS(net, BEEP_MIB_XFRMOUTPOLERROR);
 error:
 	if (xdst != NULL)
 		dst_free(&xdst->u.dst);
@@ -1885,7 +1885,7 @@ restart:
 			 * a one-shot blackhole route. */
 			dst_release(dst);
 			xfrm_pols_put(pols, drop_pols);
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTNOSTATES);
+			XFRM_INC_STATS(net, BEEP_MIB_XFRMOUTNOSTATES);
 
 			return make_blackhole(net, family, dst_orig);
 		}
@@ -1907,7 +1907,7 @@ restart:
 		} else
 			err = -EAGAIN;
 
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTNOSTATES);
+		XFRM_INC_STATS(net, BEEP_MIB_XFRMOUTNOSTATES);
 		goto error;
 	}
 
@@ -1926,7 +1926,7 @@ no_transform:
 
 	if (num_xfrms < 0) {
 		/* Prohibit the flow */
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTPOLBLOCK);
+		XFRM_INC_STATS(net, BEEP_MIB_XFRMOUTPOLBLOCK);
 		err = -EPERM;
 		goto error;
 	} else if (num_xfrms > 0) {
@@ -2071,7 +2071,7 @@ int __xfrm_policy_check(struct sock *sk, int dir, struct sk_buff *skb,
 	fl_dir = policy_to_flow_dir(dir);
 
 	if (__xfrm_decode_session(skb, &fl, family, reverse) < 0) {
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMINHDRERROR);
+		XFRM_INC_STATS(net, BEEP_MIB_XFRMINHDRERROR);
 		return 0;
 	}
 
@@ -2084,7 +2084,7 @@ int __xfrm_policy_check(struct sock *sk, int dir, struct sk_buff *skb,
 		for (i=skb->sp->len-1; i>=0; i--) {
 			struct xfrm_state *x = skb->sp->xvec[i];
 			if (!xfrm_selector_match(&x->sel, &fl, family)) {
-				XFRM_INC_STATS(net, LINUX_MIB_XFRMINSTATEMISMATCH);
+				XFRM_INC_STATS(net, BEEP_MIB_XFRMINSTATEMISMATCH);
 				return 0;
 			}
 		}
@@ -2094,7 +2094,7 @@ int __xfrm_policy_check(struct sock *sk, int dir, struct sk_buff *skb,
 	if (sk && sk->sk_policy[dir]) {
 		pol = xfrm_sk_policy_lookup(sk, dir, &fl);
 		if (IS_ERR(pol)) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINPOLERROR);
+			XFRM_INC_STATS(net, BEEP_MIB_XFRMINPOLERROR);
 			return 0;
 		}
 	}
@@ -2111,14 +2111,14 @@ int __xfrm_policy_check(struct sock *sk, int dir, struct sk_buff *skb,
 	}
 
 	if (IS_ERR(pol)) {
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMINPOLERROR);
+		XFRM_INC_STATS(net, BEEP_MIB_XFRMINPOLERROR);
 		return 0;
 	}
 
 	if (!pol) {
 		if (skb->sp && secpath_has_nontransport(skb->sp, 0, &xerr_idx)) {
 			xfrm_secpath_reject(xerr_idx, skb, &fl);
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINNOPOLS);
+			XFRM_INC_STATS(net, BEEP_MIB_XFRMINNOPOLS);
 			return 0;
 		}
 		return 1;
@@ -2135,7 +2135,7 @@ int __xfrm_policy_check(struct sock *sk, int dir, struct sk_buff *skb,
 						    XFRM_POLICY_IN);
 		if (pols[1]) {
 			if (IS_ERR(pols[1])) {
-				XFRM_INC_STATS(net, LINUX_MIB_XFRMINPOLERROR);
+				XFRM_INC_STATS(net, BEEP_MIB_XFRMINPOLERROR);
 				return 0;
 			}
 			pols[1]->curlft.use_time = get_seconds();
@@ -2159,11 +2159,11 @@ int __xfrm_policy_check(struct sock *sk, int dir, struct sk_buff *skb,
 		for (pi = 0; pi < npols; pi++) {
 			if (pols[pi] != pol &&
 			    pols[pi]->action != XFRM_POLICY_ALLOW) {
-				XFRM_INC_STATS(net, LINUX_MIB_XFRMINPOLBLOCK);
+				XFRM_INC_STATS(net, BEEP_MIB_XFRMINPOLBLOCK);
 				goto reject;
 			}
 			if (ti + pols[pi]->xfrm_nr >= XFRM_MAX_DEPTH) {
-				XFRM_INC_STATS(net, LINUX_MIB_XFRMINBUFFERERROR);
+				XFRM_INC_STATS(net, BEEP_MIB_XFRMINBUFFERERROR);
 				goto reject_error;
 			}
 			for (i = 0; i < pols[pi]->xfrm_nr; i++)
@@ -2187,20 +2187,20 @@ int __xfrm_policy_check(struct sock *sk, int dir, struct sk_buff *skb,
 				if (k < -1)
 					/* "-2 - errored_index" returned */
 					xerr_idx = -(2+k);
-				XFRM_INC_STATS(net, LINUX_MIB_XFRMINTMPLMISMATCH);
+				XFRM_INC_STATS(net, BEEP_MIB_XFRMINTMPLMISMATCH);
 				goto reject;
 			}
 		}
 
 		if (secpath_has_nontransport(sp, k, &xerr_idx)) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINTMPLMISMATCH);
+			XFRM_INC_STATS(net, BEEP_MIB_XFRMINTMPLMISMATCH);
 			goto reject;
 		}
 
 		xfrm_pols_put(pols, npols);
 		return 1;
 	}
-	XFRM_INC_STATS(net, LINUX_MIB_XFRMINPOLBLOCK);
+	XFRM_INC_STATS(net, BEEP_MIB_XFRMINPOLBLOCK);
 
 reject:
 	xfrm_secpath_reject(xerr_idx, skb, &fl);
@@ -2218,7 +2218,7 @@ int __xfrm_route_forward(struct sk_buff *skb, unsigned short family)
 	int res = 1;
 
 	if (xfrm_decode_session(skb, &fl, family) < 0) {
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMFWDHDRERROR);
+		XFRM_INC_STATS(net, BEEP_MIB_XFRMFWDHDRERROR);
 		return 0;
 	}
 
@@ -2555,8 +2555,8 @@ static int __net_init xfrm_statistics_init(struct net *net)
 	int rv;
 
 	if (snmp_mib_init((void __percpu **)net->mib.xfrm_statistics,
-			  sizeof(struct linux_xfrm_mib),
-			  __alignof__(struct linux_xfrm_mib)) < 0)
+			  sizeof(struct beep_xfrm_mib),
+			  __alignof__(struct beep_xfrm_mib)) < 0)
 		return -ENOMEM;
 	rv = xfrm_proc_init(net);
 	if (rv < 0)

@@ -9,9 +9,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/i2c.h>
-#include <linux/rtc.h>
-#include <linux/module.h>
+#include <beep/i2c.h>
+#include <beep/rtc.h>
+#include <beep/module.h>
 
 #define DRV_VERSION "0.4"
 

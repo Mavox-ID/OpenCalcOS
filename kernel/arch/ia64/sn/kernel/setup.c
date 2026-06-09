@@ -6,29 +6,29 @@
  * Copyright (C) 1999,2001-2006 Silicon Graphics, Inc. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/kdev_t.h>
-#include <linux/string.h>
-#include <linux/screen_info.h>
-#include <linux/console.h>
-#include <linux/timex.h>
-#include <linux/sched.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/serial.h>
-#include <linux/irq.h>
-#include <linux/bootmem.h>
-#include <linux/mmzone.h>
-#include <linux/interrupt.h>
-#include <linux/acpi.h>
-#include <linux/compiler.h>
-#include <linux/root_dev.h>
-#include <linux/nodemask.h>
-#include <linux/pm.h>
-#include <linux/efi.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/kdev_t.h>
+#include <beep/string.h>
+#include <beep/screen_info.h>
+#include <beep/console.h>
+#include <beep/timex.h>
+#include <beep/sched.h>
+#include <beep/ioport.h>
+#include <beep/mm.h>
+#include <beep/serial.h>
+#include <beep/irq.h>
+#include <beep/bootmem.h>
+#include <beep/mmzone.h>
+#include <beep/interrupt.h>
+#include <beep/acpi.h>
+#include <beep/compiler.h>
+#include <beep/root_dev.h>
+#include <beep/nodemask.h>
+#include <beep/pm.h>
+#include <beep/efi.h>
 
 #include <asm/io.h>
 #include <asm/sal.h>

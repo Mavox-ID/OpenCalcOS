@@ -1,14 +1,14 @@
 /*
- * linux/arch/arm/mach-sa1100/shannon.c
+ * beep/arch/arm/mach-sa1100/shannon.c
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/tty.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/platform_data/sa11x0-serial.h>
+#include <beep/tty.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
 
 #include <video/sa1100fb.h>
 
@@ -19,7 +19,7 @@
 #include <asm/mach/arch.h>
 #include <asm/mach/flash.h>
 #include <asm/mach/map.h>
-#include <linux/platform_data/mfd-mcp-sa11x0.h>
+#include <beep/platform_data/mfd-mcp-sa11x0.h>
 #include <mach/shannon.h>
 #include <mach/irqs.h>
 

@@ -8,13 +8,13 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/profile.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
+#include <beep/module.h>
+#include <beep/profile.h>
+#include <beep/interrupt.h>
+#include <beep/time.h>
+#include <beep/irq.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
 
 #include <asm/blackfin.h>
 #include <asm/time.h>

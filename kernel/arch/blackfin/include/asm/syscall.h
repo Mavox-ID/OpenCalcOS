@@ -18,8 +18,8 @@
  *		r0: return/error value
  */
 
-#include <linux/err.h>
-#include <linux/sched.h>
+#include <beep/err.h>
+#include <beep/sched.h>
 #include <asm/ptrace.h>
 
 static inline long

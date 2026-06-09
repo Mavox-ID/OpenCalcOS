@@ -8,7 +8,7 @@
  * http://www.opensource.org/licenses/gpl-license.html
  * http://www.gnu.org/copyleft/gpl.html
  */
-#include <linux/io.h>
+#include <beep/io.h>
 
 #include "common.h"
 #include "crmregs-imx3.h"

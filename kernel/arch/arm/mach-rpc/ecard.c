@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/ecard.c
+ *  beep/arch/arm/kernel/ecard.c
  *
  *  Copyright 1995-2001 Russell King
  *
@@ -18,7 +18,7 @@
  *			- cards can now register their own routine to control
  *			interrupts (recommended).
  *  29-Sep-1997	RMK	Expansion card interrupt hardware not being re-enabled
- *			on reset from Linux. (Caused cards not to respond
+ *			on reset from Beep. (Caused cards not to respond
  *			under RiscOS without hard reset).
  *  15-Feb-1998	RMK	Added DMA support
  *  12-Sep-1998	RMK	Added EASI support
@@ -27,23 +27,23 @@
  */
 #define ECARD_C
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
-#include <linux/reboot.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/kthread.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/completion.h>
+#include <beep/reboot.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/kthread.h>
+#include <beep/irq.h>
+#include <beep/io.h>
 
 #include <asm/dma.h>
 #include <asm/ecard.h>
@@ -109,7 +109,7 @@ static inline ecard_t *slot_to_ecard(unsigned int slot)
  * environment up, and pass requests to this task as and when we
  * need to.
  *
- * This should allow 99% of loaders to be called from Linux.
+ * This should allow 99% of loaders to be called from Beep.
  *
  * From a security standpoint, we trust the card vendors.  This
  * may be a misplaced trust.

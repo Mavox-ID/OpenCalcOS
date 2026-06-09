@@ -15,8 +15,8 @@
  *
  * ---------------------------------------------------------------------------
  */
-#include <linux/inetdevice.h>
-#include <linux/notifier.h>
+#include <beep/inetdevice.h>
+#include <beep/notifier.h>
 
 #include "unifi_priv.h"
 #include "csr_wifi_hip_conversions.h"

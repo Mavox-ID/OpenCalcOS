@@ -26,14 +26,14 @@
  * Or, point your browser to http://www.gnu.org/copyleft/gpl.html
  *
  *
- * the project's page is at http://www.linuxtv.org/
+ * the project's page is at http://www.beeptv.org/
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
 #include <media/rc-core.h>
 
 #include "budget.h"

@@ -20,10 +20,10 @@
  * Written by Koji Sato <koji@osrg.net>.
  */
 
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/pagevec.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/pagevec.h>
 #include "nilfs.h"
 #include "page.h"
 #include "btnode.h"

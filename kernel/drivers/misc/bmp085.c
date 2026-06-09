@@ -45,12 +45,12 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/of.h>
 #include "bmp085.h"
 
 #define BMP085_CHIP_ID			0x55

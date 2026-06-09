@@ -8,7 +8,7 @@
 	PCI-6216V    | 16 channels       | -
 	PCI-6208A    |  8 channels       | 8 channels
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify

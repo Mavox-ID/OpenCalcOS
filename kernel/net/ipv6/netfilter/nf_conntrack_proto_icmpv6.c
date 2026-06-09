@@ -9,17 +9,17 @@
  *	Yasuyuki Kozakai @USAGI <yasuyuki.kozakai@toshiba.co.jp>
  */
 
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/module.h>
-#include <linux/netfilter.h>
-#include <linux/in6.h>
-#include <linux/icmpv6.h>
-#include <linux/ipv6.h>
+#include <beep/types.h>
+#include <beep/timer.h>
+#include <beep/module.h>
+#include <beep/netfilter.h>
+#include <beep/in6.h>
+#include <beep/icmpv6.h>
+#include <beep/ipv6.h>
 #include <net/ipv6.h>
 #include <net/ip6_checksum.h>
-#include <linux/seq_file.h>
-#include <linux/netfilter_ipv6.h>
+#include <beep/seq_file.h>
+#include <beep/netfilter_ipv6.h>
 #include <net/netfilter/nf_conntrack_tuple.h>
 #include <net/netfilter/nf_conntrack_l4proto.h>
 #include <net/netfilter/nf_conntrack_core.h>
@@ -234,8 +234,8 @@ icmpv6_error(struct net *net, struct nf_conn *tmpl,
 
 #if IS_ENABLED(CONFIG_NF_CT_NETLINK)
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_conntrack.h>
 static int icmpv6_tuple_to_nlattr(struct sk_buff *skb,
 				  const struct nf_conntrack_tuple *t)
 {
@@ -283,8 +283,8 @@ static int icmpv6_nlattr_tuple_size(void)
 
 #if IS_ENABLED(CONFIG_NF_CT_NETLINK_TIMEOUT)
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_cttimeout.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_cttimeout.h>
 
 static int icmpv6_timeout_nlattr_to_obj(struct nlattr *tb[],
 					struct net *net, void *data)

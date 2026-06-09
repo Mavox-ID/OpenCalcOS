@@ -1,8 +1,8 @@
 /* $Id: isdn_audio.c,v 1.1.2.2 2004/01/12 22:37:18 keil Exp $
  *
- * Linux ISDN subsystem, audio conversion and compression (linklevel).
+ * Beep ISDN subsystem, audio conversion and compression (linklevel).
  *
- * Copyright 1994-1999 by Fritz Elfert (fritz@isdn4linux.de)
+ * Copyright 1994-1999 by Fritz Elfert (fritz@isdn4beep.de)
  * DTMF code (c) 1996 by Christian Mock (cm@kukuruz.ping.at)
  * Silence detection (c) 1998 by Armin Schindler (mac@gismo.telekom.de)
  *
@@ -11,8 +11,8 @@
  *
  */
 
-#include <linux/isdn.h>
-#include <linux/slab.h>
+#include <beep/isdn.h>
+#include <beep/slab.h>
 #include "isdn_audio.h"
 #include "isdn_common.h"
 

@@ -1,7 +1,7 @@
 /*
  * Based on arch/arm/kernel/sys_arm.c
  *
- * Copyright (C) People who wrote linux/arch/i386/kernel/sys_i386.c
+ * Copyright (C) People who wrote beep/arch/i386/kernel/sys_i386.c
  * Copyright (C) 1995, 1996 Russell King.
  * Copyright (C) 2012 ARM Ltd.
  *
@@ -18,12 +18,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/compat.h>
-#include <linux/personality.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <beep/compat.h>
+#include <beep/personality.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/syscalls.h>
+#include <beep/uaccess.h>
 
 #include <asm/cacheflush.h>
 #include <asm/unistd32.h>

@@ -15,23 +15,23 @@
  * Kevin Chea
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/elf.h>
-#include <linux/init.h>
-#include <linux/prctl.h>
-#include <linux/init_task.h>
-#include <linux/module.h>
-#include <linux/mqueue.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/rcupdate.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/ptrace.h>
+#include <beep/elf.h>
+#include <beep/init.h>
+#include <beep/prctl.h>
+#include <beep/init_task.h>
+#include <beep/module.h>
+#include <beep/mqueue.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/rcupdate.h>
 
 #include <asm/pgtable.h>
 #include <asm/uaccess.h>
@@ -40,7 +40,7 @@
 #include <asm/platform.h>
 #include <asm/mmu.h>
 #include <asm/irq.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/asm-offsets.h>
 #include <asm/regs.h>
 

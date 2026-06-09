@@ -28,12 +28,12 @@
  * SUCH DAMAGES.
  */
 
-#include <linux/types.h>
-#include <linux/jiffies.h>
-#include <linux/sunrpc/gss_krb5.h>
-#include <linux/random.h>
-#include <linux/pagemap.h>
-#include <linux/crypto.h>
+#include <beep/types.h>
+#include <beep/jiffies.h>
+#include <beep/sunrpc/gss_krb5.h>
+#include <beep/random.h>
+#include <beep/pagemap.h>
+#include <beep/crypto.h>
 
 #ifdef RPC_DEBUG
 # define RPCDBG_FACILITY	RPCDBG_AUTH

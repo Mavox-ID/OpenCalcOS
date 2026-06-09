@@ -10,12 +10,12 @@
  * Adjustable divider clock implementation
  */
 
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/string.h>
+#include <beep/clk-provider.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/string.h>
 
 /*
  * DOC: basic adjustable divider clock that cannot gate

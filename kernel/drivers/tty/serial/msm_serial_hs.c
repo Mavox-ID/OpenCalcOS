@@ -14,7 +14,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  *
- * Has optional support for uart power management independent of linux
+ * Has optional support for uart power management independent of beep
  * suspend/resume:
  *
  * RX wakeup.
@@ -26,34 +26,34 @@
  * of operation. See msm_serial_hs_platform_data.rx_wakeup_irq.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmapool.h>
+#include <beep/wait.h>
+#include <beep/workqueue.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/irq.h>
 
 #include <mach/hardware.h>
 #include <mach/dma.h>
-#include <linux/platform_data/msm_serial_hs.h>
+#include <beep/platform_data/msm_serial_hs.h>
 
 /* HSUART Registers */
 #define UARTDM_MR1_ADDR 0x0
@@ -475,7 +475,7 @@ static void msm_hs_pm(struct uart_port *uport, unsigned int state,
 
 	if (use_low_power_rx_wakeup(msm_uport) ||
 	    msm_uport->exit_lpm_cb)
-		return;  /* ignore linux PM states,
+		return;  /* ignore beep PM states,
 			    use msm_hs_request_clock API */
 
 	switch (state) {

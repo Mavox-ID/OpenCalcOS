@@ -15,14 +15,14 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sd.h>
+#include <beep/module.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/mmc.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/sdio_func.h>
+#include <beep/mmc/sdio_ids.h>
+#include <beep/mmc/sdio.h>
+#include <beep/mmc/sd.h>
 #include "hif.h"
 #include "hif-ops.h"
 #include "target.h"

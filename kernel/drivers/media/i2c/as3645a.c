@@ -25,11 +25,11 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 
 #include <media/as3645a.h>
 #include <media/v4l2-ctrls.h>

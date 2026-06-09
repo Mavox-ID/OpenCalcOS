@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/mfp.c
+ * beep/arch/arm/mach-pxa/mfp.c
  *
  * PXA3xx Multi-Function Pin Support
  *
@@ -13,11 +13,11 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/syscore_ops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/syscore_ops.h>
 
 #include <mach/hardware.h>
 #include <mach/mfp-pxa3xx.h>

@@ -6,14 +6,14 @@
  * Licensed under the GPL-2 or later
  */
 
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/ptrace.h>
-#include <linux/hardirq.h>
-#include <linux/irq.h>
-#include <linux/thread_info.h>
-#include <linux/kbuild.h>
+#include <beep/stddef.h>
+#include <beep/sched.h>
+#include <beep/kernel_stat.h>
+#include <beep/ptrace.h>
+#include <beep/hardirq.h>
+#include <beep/irq.h>
+#include <beep/thread_info.h>
+#include <beep/kbuild.h>
 #include <asm/pda.h>
 
 int main(void)

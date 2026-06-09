@@ -6,14 +6,14 @@
  *  Copyright (C) 2010 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/mm.h>
 #include <asm/addrspace.h>
-#include <linux/vmalloc.h>
+#include <beep/vmalloc.h>
 
 #include <lantiq_soc.h>
 

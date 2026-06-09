@@ -37,8 +37,8 @@
 #ifndef __sctp_auth_h__
 #define __sctp_auth_h__
 
-#include <linux/list.h>
-#include <linux/crypto.h>
+#include <beep/list.h>
+#include <beep/crypto.h>
 
 struct sctp_endpoint;
 struct sctp_association;

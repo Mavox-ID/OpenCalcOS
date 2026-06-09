@@ -3,8 +3,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/futex.h>
-#include <linux/uaccess.h>
+#include <beep/futex.h>
+#include <beep/uaccess.h>
 #include <asm/errno.h>
 
 /* XXX: UP variants, fix for SH-4A and SMP.. */

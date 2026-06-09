@@ -11,8 +11,8 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/ioport.h>
-#include <linux/mtd/mtd.h>
+#include <beep/ioport.h>
+#include <beep/mtd/mtd.h>
 
 /*
  * Addresses are decoded as follows:

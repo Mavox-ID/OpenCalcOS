@@ -12,11 +12,11 @@
  * by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/irq.h>
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/irq.h>
+#include <beep/types.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 #include <asm/prom.h>

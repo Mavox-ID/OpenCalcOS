@@ -21,15 +21,15 @@
  *            Seiji Kihara <kihara@osrg.net>.
  */
 
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/swap.h>
-#include <linux/bitops.h>
-#include <linux/page-flags.h>
-#include <linux/list.h>
-#include <linux/highmem.h>
-#include <linux/pagevec.h>
-#include <linux/gfp.h>
+#include <beep/pagemap.h>
+#include <beep/writeback.h>
+#include <beep/swap.h>
+#include <beep/bitops.h>
+#include <beep/page-flags.h>
+#include <beep/list.h>
+#include <beep/highmem.h>
+#include <beep/pagevec.h>
+#include <beep/gfp.h>
 #include "nilfs.h"
 #include "page.h"
 #include "mdt.h"

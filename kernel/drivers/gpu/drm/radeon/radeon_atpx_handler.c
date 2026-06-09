@@ -6,11 +6,11 @@
  *
  * ATPX support for both Intel/ATI
  */
-#include <linux/vga_switcheroo.h>
-#include <linux/slab.h>
+#include <beep/vga_switcheroo.h>
+#include <beep/slab.h>
 #include <acpi/acpi.h>
 #include <acpi/acpi_bus.h>
-#include <linux/pci.h>
+#include <beep/pci.h>
 
 #include "radeon_acpi.h"
 

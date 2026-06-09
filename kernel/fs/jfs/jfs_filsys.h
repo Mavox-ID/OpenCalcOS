@@ -78,7 +78,7 @@
 #define JFS_DIR_INDEX	0x00200000	/* Persistent index for */
 
 /* platform options */
-#define JFS_LINUX	0x10000000	/* Linux support */
+#define JFS_BEEP	0x10000000	/* Beep support */
 #define JFS_DFS		0x20000000	/* DCE DFS LFS support */
 /*	Never implemented */
 

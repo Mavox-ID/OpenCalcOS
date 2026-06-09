@@ -5,20 +5,20 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dw_dmac.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/spi/spi.h>
-#include <linux/usb/atmel_usba_udc.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/dw_dmac.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/gpio.h>
+#include <beep/spi/spi.h>
+#include <beep/usb/atmel_usba_udc.h>
 
 #include <mach/atmel-mci.h>
-#include <linux/atmel-mci.h>
+#include <beep/atmel-mci.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

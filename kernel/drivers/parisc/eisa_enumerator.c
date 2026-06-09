@@ -10,10 +10,10 @@
  *
  */
 
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
 #include <asm/byteorder.h>

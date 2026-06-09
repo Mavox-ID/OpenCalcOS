@@ -30,11 +30,11 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
+#include <beep/module.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
 #include <asm/pgtable.h>
 
 #include "ipath_verbs.h"

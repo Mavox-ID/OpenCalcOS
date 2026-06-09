@@ -6,22 +6,22 @@
  * Licensed under the GPL-2.
  */
 
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/sysfs.h>
-#include <linux/i2c.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/sysfs.h>
+#include <beep/i2c.h>
+#include <beep/regulator/consumer.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/err.h>
+#include <beep/delay.h>
+#include <beep/module.h>
 #include <asm/div64.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
+#include <beep/iio/buffer.h>
 #include "../ring_sw.h"
 
 #include "ad5933.h"
@@ -822,6 +822,6 @@ static struct i2c_driver ad5933_driver = {
 };
 module_i2c_driver(ad5933_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("Analog Devices AD5933 Impedance Conv. Network Analyzer");
 MODULE_LICENSE("GPL v2");

@@ -1,5 +1,5 @@
 /*
- * linux/drivers/media/platform/s5p-mfc/s5p_mfc_pm.c
+ * beep/drivers/media/platform/s5p-mfc/s5p_mfc_pm.c
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/
@@ -10,11 +10,11 @@
  * (at your option) any later version.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
 #ifdef CONFIG_PM_RUNTIME
-#include <linux/pm_runtime.h>
+#include <beep/pm_runtime.h>
 #endif
 #include "s5p_mfc_common.h"
 #include "s5p_mfc_debug.h"

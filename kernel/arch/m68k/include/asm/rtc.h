@@ -13,7 +13,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/rtc.h>
+#include <beep/rtc.h>
 #include <asm/errno.h>
 #include <asm/machdep.h>
 

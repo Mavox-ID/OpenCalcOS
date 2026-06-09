@@ -17,17 +17,17 @@
  * General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/hwspinlock.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/bitops.h>
+#include <beep/pm_runtime.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/hwspinlock.h>
+#include <beep/platform_device.h>
 
 #include "hwspinlock_internal.h"
 

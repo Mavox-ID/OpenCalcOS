@@ -17,8 +17,8 @@
 #ifndef __ARCH_ARM_MACH_MSM_GPIOMUX_H
 #define __ARCH_ARM_MACH_MSM_GPIOMUX_H
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
+#include <beep/bitops.h>
+#include <beep/errno.h>
 #include <mach/msm_gpiomux.h>
 
 #if defined(CONFIG_MSM_V2_TLMM)

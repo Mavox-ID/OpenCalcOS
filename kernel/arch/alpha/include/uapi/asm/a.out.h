@@ -1,7 +1,7 @@
 #ifndef _UAPI__ALPHA_A_OUT_H__
 #define _UAPI__ALPHA_A_OUT_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * OSF/1 ECOFF header structs.  ECOFF files consist of:

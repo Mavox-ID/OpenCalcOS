@@ -10,7 +10,7 @@
  * for more details.
  */
 
-#include <linux/sys.h>
+#include <beep/sys.h>
 
 	.section .data, "aw"
 	.balign 32

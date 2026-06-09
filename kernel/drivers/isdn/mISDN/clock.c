@@ -33,12 +33,12 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/spinlock.h>
-#include <linux/mISDNif.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/stddef.h>
+#include <beep/spinlock.h>
+#include <beep/mISDNif.h>
+#include <beep/export.h>
 #include "core.h"
 
 static u_int *debug;

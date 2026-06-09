@@ -21,8 +21,8 @@
 
 #include "ctresource.h"
 #include "ctimap.h"
-#include <linux/spinlock.h>
-#include <linux/list.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
 
 #define SRC_STATE_OFF	0x0
 #define SRC_STATE_INIT	0x4

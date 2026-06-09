@@ -16,14 +16,14 @@
  *	implements the IMA hooks: ima_bprm_check, ima_file_mmap,
  *	and ima_file_check.
  */
-#include <linux/module.h>
-#include <linux/file.h>
-#include <linux/binfmts.h>
-#include <linux/mount.h>
-#include <linux/mman.h>
-#include <linux/slab.h>
-#include <linux/xattr.h>
-#include <linux/ima.h>
+#include <beep/module.h>
+#include <beep/file.h>
+#include <beep/binfmts.h>
+#include <beep/mount.h>
+#include <beep/mman.h>
+#include <beep/slab.h>
+#include <beep/xattr.h>
+#include <beep/ima.h>
 
 #include "ima.h"
 
@@ -236,7 +236,7 @@ int ima_file_mmap(struct file *file, unsigned long prot)
 
 /**
  * ima_bprm_check - based on policy, collect/store measurement.
- * @bprm: contains the linux_binprm structure
+ * @bprm: contains the beep_binprm structure
  *
  * The OS protects against an executable file, already open for write,
  * from being executed in deny_write_access() and an executable file,
@@ -247,7 +247,7 @@ int ima_file_mmap(struct file *file, unsigned long prot)
  * Return 0 on success, an error code on failure.
  * (Based on the results of appraise_measurement().)
  */
-int ima_bprm_check(struct linux_binprm *bprm)
+int ima_bprm_check(struct beep_binprm *bprm)
 {
 	int rc;
 

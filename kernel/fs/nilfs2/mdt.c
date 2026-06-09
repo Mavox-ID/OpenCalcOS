@@ -20,13 +20,13 @@
  * Written by Ryusuke Konishi <ryusuke@osrg.net>
  */
 
-#include <linux/buffer_head.h>
-#include <linux/mpage.h>
-#include <linux/mm.h>
-#include <linux/writeback.h>
-#include <linux/backing-dev.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
+#include <beep/buffer_head.h>
+#include <beep/mpage.h>
+#include <beep/mm.h>
+#include <beep/writeback.h>
+#include <beep/backing-dev.h>
+#include <beep/swap.h>
+#include <beep/slab.h>
 #include "nilfs.h"
 #include "btnode.h"
 #include "segment.h"

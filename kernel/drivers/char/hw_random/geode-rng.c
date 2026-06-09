@@ -24,11 +24,11 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/hw_random.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/hw_random.h>
+#include <beep/delay.h>
 #include <asm/io.h>
 
 

@@ -26,7 +26,7 @@
 #ifndef STV0900_PRIV_H
 #define STV0900_PRIV_H
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 
 #define ABS(X) ((X) < 0 ? (-1 * (X)) : (X))
 #define INRANGE(X, Y, Z) ((((X) <= (Y)) && ((Y) <= (Z))) \

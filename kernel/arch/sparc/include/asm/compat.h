@@ -3,7 +3,7 @@
 /*
  * Architecture specific compatibility types
  */
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define COMPAT_USER_HZ		100
 #define COMPAT_UTS_MACHINE	"sparc\0\0"

@@ -11,9 +11,9 @@
  *	published by the Free Software Foundation, version 2.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
 
 #include "dvb_frontend.h"
 

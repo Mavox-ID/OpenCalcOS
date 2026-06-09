@@ -9,7 +9,7 @@
 #ifndef __MACH_BF609_PM_H__
 #define __MACH_BF609_PM_H__
 
-#include <linux/suspend.h>
+#include <beep/suspend.h>
 
 extern int bfin609_pm_enter(suspend_state_t state);
 extern int bf609_pm_prepare(void);

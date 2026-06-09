@@ -20,15 +20,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/max77686.h>
-#include <linux/mfd/max77686-private.h>
-#include <linux/clk-provider.h>
-#include <linux/mutex.h>
-#include <linux/clkdev.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/max77686.h>
+#include <beep/mfd/max77686-private.h>
+#include <beep/clk-provider.h>
+#include <beep/mutex.h>
+#include <beep/clkdev.h>
 
 enum {
 	MAX77686_CLK_AP = 0,

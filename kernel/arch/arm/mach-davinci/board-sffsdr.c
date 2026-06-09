@@ -23,23 +23,23 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/i2c/at24.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/i2c/at24.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/flash.h>
 
 #include <mach/common.h>
-#include <linux/platform_data/i2c-davinci.h>
+#include <beep/platform_data/i2c-davinci.h>
 #include <mach/serial.h>
 #include <mach/mux.h>
-#include <linux/platform_data/usb-davinci.h>
+#include <beep/platform_data/usb-davinci.h>
 
 #include "davinci.h"
 
@@ -52,13 +52,13 @@ static struct mtd_partition davinci_sffsdr_nandflash_partition[] = {
 	 * Integrity Data:     Blocks 100-END
 	 */
 	{
-		.name		= "Linux Kernel",
+		.name		= "Beep Kernel",
 		.offset		= 32 * SZ_128K,
 		.size		= 16 * SZ_128K, /* 2 Mb */
 		.mask_flags	= MTD_WRITEABLE, /* Force read-only */
 	},
 	{
-		.name		= "Linux ROOT",
+		.name		= "Beep ROOT",
 		.offset		= MTDPART_OFS_APPEND,
 		.size		= 256 * SZ_128K, /* 32 Mb */
 		.mask_flags	= 0, /* R/W */

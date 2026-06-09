@@ -15,11 +15,11 @@
 #define PS_TIMEOUT_DISK		(15*HZ)
 #define PS_TIMEOUT_OTHER	(500*HZ)
 
-#include <linux/device.h>
+#include <beep/device.h>
 #include <scsi/scsi_driver.h>
 #include <scsi/scsi_device.h>
-#include <linux/kref.h>
-#include <linux/kobject.h>
+#include <beep/kref.h>
+#include <beep/kobject.h>
 
 struct pscsi_plugin_task {
 	unsigned char pscsi_sense[SCSI_SENSE_BUFFERSIZE];

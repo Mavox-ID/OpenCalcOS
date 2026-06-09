@@ -1,8 +1,8 @@
 /* $Id: isdn_net.c,v 1.1.2.2 2004/01/12 22:37:19 keil Exp $
  *
- * Linux ISDN subsystem, network interfaces and related functions (linklevel).
+ * Beep ISDN subsystem, network interfaces and related functions (linklevel).
  *
- * Copyright 1994-1998  by Fritz Elfert (fritz@isdn4linux.de)
+ * Copyright 1994-1998  by Fritz Elfert (fritz@isdn4beep.de)
  * Copyright 1995,96    by Thinking Objects Software GmbH Wuerzburg
  * Copyright 1995,96    by Michael Hipp (Michael.Hipp@student.uni-tuebingen.de)
  *
@@ -22,19 +22,19 @@
  *           http://i4l.zabbadoz.net/i4l/cisco-hdlc.txt
  */
 
-#include <linux/isdn.h>
-#include <linux/slab.h>
+#include <beep/isdn.h>
+#include <beep/slab.h>
 #include <net/arp.h>
 #include <net/dst.h>
 #include <net/pkt_sched.h>
-#include <linux/inetdevice.h>
+#include <beep/inetdevice.h>
 #include "isdn_common.h"
 #include "isdn_net.h"
 #ifdef CONFIG_ISDN_PPP
 #include "isdn_ppp.h"
 #endif
 #ifdef CONFIG_ISDN_X25
-#include <linux/concap.h>
+#include <beep/concap.h>
 #include "isdn_concap.h"
 #endif
 

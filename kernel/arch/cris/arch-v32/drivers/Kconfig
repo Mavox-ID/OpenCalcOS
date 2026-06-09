@@ -473,7 +473,7 @@ config ETRAX_GPIO
 	  Enables the ETRAX general port device (major 120, minors 0-4).
 	  You can use this driver to access the general port bits. It supports
 	  these ioctl's:
-	  #include <linux/etraxgpio.h>
+	  #include <beep/etraxgpio.h>
 	  fd = open("/dev/gpioa", O_RDWR); // or /dev/gpiob
 	  ioctl(fd, _IO(ETRAXGPIO_IOCTYPE, IO_SETBITS), bits_to_set);
 	  ioctl(fd, _IO(ETRAXGPIO_IOCTYPE, IO_CLRBITS), bits_to_clear);

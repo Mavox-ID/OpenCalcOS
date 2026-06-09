@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-mmp/include/mach/dma.h
+ * beep/arch/arm/mach-mmp/include/mach/dma.h
  */
 
 #ifndef __ASM_MACH_DMA_H

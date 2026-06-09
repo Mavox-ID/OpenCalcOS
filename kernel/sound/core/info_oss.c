@@ -19,15 +19,15 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/string.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/string.h>
+#include <beep/export.h>
 #include <sound/core.h>
 #include <sound/minors.h>
 #include <sound/info.h>
-#include <linux/utsname.h>
-#include <linux/mutex.h>
+#include <beep/utsname.h>
+#include <beep/mutex.h>
 
 #if defined(CONFIG_SND_OSSEMUL) && defined(CONFIG_PROC_FS)
 

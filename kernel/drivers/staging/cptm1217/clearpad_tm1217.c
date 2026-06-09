@@ -23,18 +23,18 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/timer.h>
-#include <linux/gpio.h>
-#include <linux/hrtimer.h>
-#include <linux/kthread.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/i2c.h>
+#include <beep/timer.h>
+#include <beep/gpio.h>
+#include <beep/hrtimer.h>
+#include <beep/kthread.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 #include "cp_tm1217.h"
 
 #define CPTM1217_DEVICE_NAME		"cptm1217"

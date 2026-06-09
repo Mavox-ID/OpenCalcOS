@@ -1,7 +1,7 @@
 #ifndef __KVM_IA64_LAPIC_H
 #define __KVM_IA64_LAPIC_H
 
-#include <linux/kvm_host.h>
+#include <beep/kvm_host.h>
 
 /*
  * vlsapic

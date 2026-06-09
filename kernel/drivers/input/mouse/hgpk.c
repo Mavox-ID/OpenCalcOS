@@ -30,12 +30,12 @@
  */
 
 #define DEBUG
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/serio.h>
-#include <linux/libps2.h>
-#include <linux/delay.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/module.h>
+#include <beep/serio.h>
+#include <beep/libps2.h>
+#include <beep/delay.h>
 #include <asm/olpc.h>
 
 #include "psmouse.h"

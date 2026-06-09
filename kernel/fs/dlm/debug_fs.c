@@ -10,12 +10,12 @@
 *******************************************************************************
 ******************************************************************************/
 
-#include <linux/pagemap.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
+#include <beep/pagemap.h>
+#include <beep/seq_file.h>
+#include <beep/module.h>
+#include <beep/ctype.h>
+#include <beep/debugfs.h>
+#include <beep/slab.h>
 
 #include "dlm_internal.h"
 #include "lock.h"

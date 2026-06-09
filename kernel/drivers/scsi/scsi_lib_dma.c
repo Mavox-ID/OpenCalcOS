@@ -2,10 +2,10 @@
  * SCSI library functions depending on DMA
  */
 
-#include <linux/blkdev.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
+#include <beep/blkdev.h>
+#include <beep/device.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

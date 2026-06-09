@@ -12,11 +12,11 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/clk.h>
-#include <linux/clk-private.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/mv643xx_eth.h>
+#include <beep/clk.h>
+#include <beep/clk-private.h>
 #include "common.h"
 
 static struct mv643xx_eth_platform_data km_kirkwood_ge00_data = {

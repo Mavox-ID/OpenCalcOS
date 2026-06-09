@@ -8,12 +8,12 @@
  * Multiple stack unwinders can be available on a system, usually with
  * the most accurate unwinder being the currently active one.
  */
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
+#include <beep/errno.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
 #include <asm/unwinder.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 /*
  * This is the most basic stack unwinder an architecture can

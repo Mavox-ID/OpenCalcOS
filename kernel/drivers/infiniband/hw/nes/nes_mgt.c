@@ -31,11 +31,11 @@
  *
  */
 
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/kthread.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
+#include <beep/skbuff.h>
+#include <beep/etherdevice.h>
+#include <beep/kthread.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
 #include <net/tcp.h>
 #include "nes.h"
 #include "nes_mgt.h"

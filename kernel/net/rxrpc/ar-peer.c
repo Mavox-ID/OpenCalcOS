@@ -9,14 +9,14 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/udp.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/icmp.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/net.h>
+#include <beep/skbuff.h>
+#include <beep/udp.h>
+#include <beep/in.h>
+#include <beep/in6.h>
+#include <beep/icmp.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 #include <net/af_rxrpc.h>
 #include <net/ip.h>

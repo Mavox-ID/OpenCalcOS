@@ -1,8 +1,8 @@
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- beep-c -*- ------------------------------------------------------- *
  *
  *   Copyright 2002-2007 H. Peter Anvin - All Rights Reserved
  *
- *   This file is part of the Linux kernel, and is made available under
+ *   This file is part of the Beep kernel, and is made available under
  *   the terms of the GNU General Public License version 2 or (at your
  *   option) any later version; incorporated herein by reference.
  *
@@ -59,8 +59,8 @@ int main(int argc, char *argv[])
 	uint8_t v;
 	uint8_t exptbl[256], invtbl[256];
 
-	printf("#include <linux/raid/pq.h>\n");
-	printf("#include <linux/export.h>\n");
+	printf("#include <beep/raid/pq.h>\n");
+	printf("#include <beep/export.h>\n");
 
 	/* Compute multiplication table */
 	printf("\nconst u8  __attribute__((aligned(256)))\n"

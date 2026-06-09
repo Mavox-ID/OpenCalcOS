@@ -6,13 +6,13 @@
  *
  * Released under the terms of the GNU GPL v2.0.
  */
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/fs.h>
+#include <beep/smp.h>
+#include <beep/highmem.h>
+#include <beep/module.h>
 #include <asm/mmu_context.h>
 #include <asm/cacheflush.h>
 

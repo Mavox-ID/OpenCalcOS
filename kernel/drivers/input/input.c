@@ -12,21 +12,21 @@
 
 #define pr_fmt(fmt) KBUILD_BASENAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/idr.h>
-#include <linux/input/mt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/major.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/poll.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/idr.h>
+#include <beep/input/mt.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/random.h>
+#include <beep/major.h>
+#include <beep/proc_fs.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/poll.h>
+#include <beep/device.h>
+#include <beep/mutex.h>
+#include <beep/rcupdate.h>
 #include "input-compat.h"
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@suse.cz>");

@@ -33,15 +33,15 @@
  *   interrupts.
  */
 
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/irqdomain.h>
-#include <linux/io.h>
-#include <linux/of_irq.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/module.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
+#include <beep/irqdomain.h>
+#include <beep/io.h>
+#include <beep/of_irq.h>
+#include <beep/of_device.h>
+#include <beep/pinctrl/consumer.h>
 
 /*
  * GPIO unit register offsets.

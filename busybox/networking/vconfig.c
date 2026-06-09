@@ -32,7 +32,7 @@
 
 /* BB_AUDIT SUSv3 N/A */
 
-/* Stuff from linux/if_vlan.h, kernel version 2.4.23 */
+/* Stuff from beep/if_vlan.h, kernel version 2.4.23 */
 enum vlan_ioctl_cmds {
 	ADD_VLAN_CMD,
 	DEL_VLAN_CMD,

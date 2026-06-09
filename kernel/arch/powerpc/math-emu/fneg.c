@@ -1,5 +1,5 @@
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <beep/types.h>
+#include <beep/errno.h>
 #include <asm/uaccess.h>
 
 int

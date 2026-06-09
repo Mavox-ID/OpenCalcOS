@@ -1,10 +1,10 @@
 /*
- *  linux/arch/m32r/mm/mmu.S
+ *  beep/arch/m32r/mm/mmu.S
  *
  *  Copyright (C) 2001 by Hiroyuki Kondo
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 #include <asm/smp.h>
 

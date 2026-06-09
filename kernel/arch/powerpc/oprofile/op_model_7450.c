@@ -15,9 +15,9 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/oprofile.h>
-#include <linux/init.h>
-#include <linux/smp.h>
+#include <beep/oprofile.h>
+#include <beep/init.h>
+#include <beep/smp.h>
 #include <asm/ptrace.h>
 #include <asm/processor.h>
 #include <asm/cputable.h>

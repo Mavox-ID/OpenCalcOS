@@ -10,7 +10,7 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #if !defined(CONFIG_MMU)
 #define	tlb_miss_load			exception_error

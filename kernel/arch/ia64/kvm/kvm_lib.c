@@ -11,7 +11,7 @@
  *
  */
 #undef CONFIG_MODULES
-#include <linux/module.h>
+#include <beep/module.h>
 #undef CONFIG_KALLSYMS
 #undef EXPORT_SYMBOL
 #undef EXPORT_SYMBOL_GPL

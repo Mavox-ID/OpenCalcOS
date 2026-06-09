@@ -10,14 +10,14 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/err.h>
 
 #include <media/v4l2-subdev.h>
 

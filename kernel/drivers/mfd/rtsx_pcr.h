@@ -23,7 +23,7 @@
 #ifndef __RTSX_PCR_H
 #define __RTSX_PCR_H
 
-#include <linux/mfd/rtsx_pci.h>
+#include <beep/mfd/rtsx_pci.h>
 
 void rts5209_init_params(struct rtsx_pcr *pcr);
 void rts5229_init_params(struct rtsx_pcr *pcr);

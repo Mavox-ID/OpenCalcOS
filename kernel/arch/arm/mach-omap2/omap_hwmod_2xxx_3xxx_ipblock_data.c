@@ -10,8 +10,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/dmaengine.h>
-#include <linux/omap-dma.h>
+#include <beep/dmaengine.h>
+#include <beep/omap-dma.h>
 
 #include "omap_hwmod.h"
 #include "hdq1w.h"

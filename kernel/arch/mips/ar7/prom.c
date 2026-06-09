@@ -17,13 +17,13 @@
  *
  * Putting things on the screen/serial line using YAMONs facilities.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/serial_reg.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/serial_reg.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/io.h>
 #include <asm/bootinfo.h>
 
 #include <asm/mach-ar7/ar7.h>

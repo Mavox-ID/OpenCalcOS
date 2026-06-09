@@ -1,7 +1,7 @@
 /*
  *  Driver for the Auvitek USB bridge
  *
- *  Copyright (c) 2008 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2008 Steven Toth <stoth@beeptv.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -19,11 +19,11 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/suspend.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/suspend.h>
 #include <media/v4l2-common.h>
 #include <media/tuner.h>
 

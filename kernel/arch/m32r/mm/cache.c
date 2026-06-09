@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/mm/cache.c
+ *  beep/arch/m32r/mm/cache.c
  *
  *  Copyright (C) 2002-2005  Hirokazu Takata, Hayato Fujiwara
  */

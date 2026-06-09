@@ -14,7 +14,7 @@
 #error "You should not be including tcm.h unless you have a TCM!"
 #endif
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 /* Tag variables with this */
 #define __tcmdata __section(.tcm.data)

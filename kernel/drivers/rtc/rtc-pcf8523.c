@@ -6,11 +6,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/bcd.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/of.h>
+#include <beep/bcd.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
+#include <beep/of.h>
 
 #define DRIVER_NAME "rtc-pcf8523"
 

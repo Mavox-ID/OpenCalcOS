@@ -1,5 +1,5 @@
 /*
- * Roccat Savu driver for Linux
+ * Roccat Savu driver for Beep
  *
  * Copyright (c) 2012 Stefan Achatz <erazor_de@users.sourceforge.net>
  */
@@ -15,12 +15,12 @@
  * 5 profiles.
  */
 
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/hid-roccat.h>
+#include <beep/device.h>
+#include <beep/input.h>
+#include <beep/hid.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/hid-roccat.h>
 #include "hid-ids.h"
 #include "hid-roccat-common.h"
 #include "hid-roccat-savu.h"

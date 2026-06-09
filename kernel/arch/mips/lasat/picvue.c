@@ -4,14 +4,14 @@
  * Brian Murphy <brian@murphy.dk>
  *
  */
-#include <linux/kernel.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
 #include <asm/bootinfo.h>
 #include <asm/lasat/lasat.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/string.h>
 
 #include "picvue.h"
 

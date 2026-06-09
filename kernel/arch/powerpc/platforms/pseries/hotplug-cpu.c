@@ -18,12 +18,12 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/sched.h>	/* for idle_task_exit */
-#include <linux/cpu.h>
-#include <linux/of.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/sched.h>	/* for idle_task_exit */
+#include <beep/cpu.h>
+#include <beep/of.h>
 #include <asm/prom.h>
 #include <asm/rtas.h>
 #include <asm/firmware.h>

@@ -12,11 +12,11 @@
  * about using the kobject interface.
  */
 
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
+#include <beep/kobject.h>
+#include <beep/string.h>
+#include <beep/export.h>
+#include <beep/stat.h>
+#include <beep/slab.h>
 
 /*
  * populate_dir - populate directory with attributes.

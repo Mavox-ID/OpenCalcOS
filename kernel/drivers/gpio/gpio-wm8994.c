@@ -12,19 +12,19 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/mfd/core.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/regmap.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/gpio.h>
+#include <beep/mfd/core.h>
+#include <beep/platform_device.h>
+#include <beep/seq_file.h>
+#include <beep/regmap.h>
 
-#include <linux/mfd/wm8994/core.h>
-#include <linux/mfd/wm8994/pdata.h>
-#include <linux/mfd/wm8994/gpio.h>
-#include <linux/mfd/wm8994/registers.h>
+#include <beep/mfd/wm8994/core.h>
+#include <beep/mfd/wm8994/pdata.h>
+#include <beep/mfd/wm8994/gpio.h>
+#include <beep/mfd/wm8994/registers.h>
 
 struct wm8994_gpio {
 	struct wm8994 *wm8994;

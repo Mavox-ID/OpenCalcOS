@@ -7,7 +7,7 @@
  * Copyright (c) 2002-2003, Jouni Malinen <jkmaline@cc.hut.fi>
  *
  * Adaption to a generic IEEE 802.11 stack by James Ketrenos
- * <jketreno@linux.intel.com>
+ * <jketreno@beep.intel.com>
  *
  * Copyright (c) 2004, Intel Corporation
  *
@@ -23,7 +23,7 @@
 #ifndef IEEE80211_CRYPT_H
 #define IEEE80211_CRYPT_H
 
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 
 struct ieee80211_crypto_ops {
 	const char *name;

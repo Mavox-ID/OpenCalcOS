@@ -10,12 +10,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/highmem.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/io.h>
+#include <beep/mutex.h>
+#include <beep/fs.h>
+#include <beep/highmem.h>
 #include <asm/pgtable.h>
 #include <asm/mmu_context.h>
 #include <asm/cache_insns.h>

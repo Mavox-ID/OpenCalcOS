@@ -3,7 +3,7 @@
  * Copyright (C) 2002,2003 Frank Mori Hess <fmhess@users.sourceforge.net>
  *
  * I modified this file from the plx9060.h header for the
- * wanXL device driver in the linux kernel,
+ * wanXL device driver in the beep kernel,
  * for the register offsets and bit definitions.  Made minor modifications,
  * added plx9080 registers and
  * stripped out stuff that was specifically for the wanXL driver.

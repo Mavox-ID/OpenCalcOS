@@ -24,11 +24,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
-#include <linux/fs.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/kobject.h>
+#include <beep/sysfs.h>
+#include <beep/fs.h>
 
 #include "ocfs2_nodemanager.h"
 #include "masklog.h"

@@ -11,7 +11,7 @@
 #ifndef __ARCH_ARM_MACH_OMAP2_PM_H
 #define __ARCH_ARM_MACH_OMAP2_PM_H
 
-#include <linux/err.h>
+#include <beep/err.h>
 
 #include "powerdomain.h"
 

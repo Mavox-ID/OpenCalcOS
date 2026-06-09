@@ -8,23 +8,23 @@
  * is licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/i2c/pcf857x.h>
-#include <linux/i2c/at24.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/phy.h>
-#include <linux/clk.h>
-#include <linux/videodev2.h>
-#include <linux/v4l2-dv-timings.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pcf857x.h>
+#include <beep/i2c/at24.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/phy.h>
+#include <beep/clk.h>
+#include <beep/videodev2.h>
+#include <beep/v4l2-dv-timings.h>
+#include <beep/export.h>
 
 #include <media/tvp514x.h>
 
@@ -32,13 +32,13 @@
 #include <asm/mach/arch.h>
 
 #include <mach/common.h>
-#include <linux/platform_data/i2c-davinci.h>
+#include <beep/platform_data/i2c-davinci.h>
 #include <mach/serial.h>
 #include <mach/mux.h>
-#include <linux/platform_data/mtd-davinci.h>
-#include <linux/platform_data/mmc-davinci.h>
-#include <linux/platform_data/usb-davinci.h>
-#include <linux/platform_data/mtd-davinci-aemif.h>
+#include <beep/platform_data/mtd-davinci.h>
+#include <beep/platform_data/mmc-davinci.h>
+#include <beep/platform_data/usb-davinci.h>
+#include <beep/platform_data/mtd-davinci-aemif.h>
 
 #include "davinci.h"
 
@@ -135,7 +135,7 @@ static struct mtd_partition davinci_evm_nandflash_partition[] = {
 	}
 	/* A few blocks at end hold a flash BBT ... created by TI's CCS
 	 * using flashwriter_nand.out, but ignored by TI's versions of
-	 * Linux and u-boot.  We boot faster by using them.
+	 * Beep and u-boot.  We boot faster by using them.
 	 */
 };
 

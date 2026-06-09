@@ -13,19 +13,19 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/of_platform.h>
-#include <linux/of_i2c.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/of_platform.h>
+#include <beep/of_i2c.h>
+#include <beep/slab.h>
 
-#include <linux/io.h>
-#include <linux/fsl_devices.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <beep/io.h>
+#include <beep/fsl_devices.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
 
 #include <asm/mpc52xx.h>
 #include <sysdev/fsl_soc.h>

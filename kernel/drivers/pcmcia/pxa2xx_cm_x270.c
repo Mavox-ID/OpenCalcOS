@@ -1,5 +1,5 @@
 /*
- * linux/drivers/pcmcia/pxa/pxa_cm_x270.c
+ * beep/drivers/pcmcia/pxa/pxa_cm_x270.c
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -10,11 +10,11 @@
  *
  */
 
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/export.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/export.h>
 
 #include "soc_common.h"
 

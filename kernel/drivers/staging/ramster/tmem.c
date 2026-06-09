@@ -32,11 +32,11 @@
  * registered by the tmem host implementation (e.g. see tmem_register_hostops).
  */
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/atomic.h>
 #ifdef CONFIG_RAMSTER
-#include <linux/delay.h>
+#include <beep/delay.h>
 #endif
 
 #include "tmem.h"

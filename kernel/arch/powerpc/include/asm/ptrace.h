@@ -132,8 +132,8 @@ do {									      \
  * kprobe-based event tracer support
  */
 
-#include <linux/stddef.h>
-#include <linux/thread_info.h>
+#include <beep/stddef.h>
+#include <beep/thread_info.h>
 extern int regs_query_register_offset(const char *name);
 extern const char *regs_query_register_name(unsigned int offset);
 #define MAX_REG_OFFSET (offsetof(struct pt_regs, dsisr))

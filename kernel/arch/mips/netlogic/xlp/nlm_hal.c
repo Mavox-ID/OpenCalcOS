@@ -32,10 +32,10 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
 
 #include <asm/mipsregs.h>
 #include <asm/time.h>

@@ -1,7 +1,7 @@
 /*
  * Wistron laptop button driver
  * Copyright (C) 2005 Miloslav Trmac <mitr@volny.cz>
- * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arklinux.org>
+ * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arkbeep.org>
  * Copyright (C) 2005 Dmitry Torokhov <dtor@mail.ru>
  *
  * You can redistribute and/or modify this program under the terms of the
@@ -17,22 +17,22 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 59 Temple Place Suite 330, Boston, MA 02111-1307, USA.
  */
-#include <linux/io.h>
-#include <linux/dmi.h>
-#include <linux/init.h>
-#include <linux/input-polldev.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/mc146818rtc.h>
-#include <linux/module.h>
-#include <linux/preempt.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
+#include <beep/io.h>
+#include <beep/dmi.h>
+#include <beep/init.h>
+#include <beep/input-polldev.h>
+#include <beep/input/sparse-keymap.h>
+#include <beep/interrupt.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/mc146818rtc.h>
+#include <beep/module.h>
+#include <beep/preempt.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/platform_device.h>
+#include <beep/leds.h>
 
 /* How often we poll keys - msecs */
 #define POLL_INTERVAL_DEFAULT	500 /* when idle */

@@ -13,13 +13,13 @@
  * (alarms, trickle charger, different control registers) are unavailable.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/spi/spi.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/rtc.h>
+#include <beep/spi/spi.h>
+#include <beep/bcd.h>
+#include <beep/slab.h>
 
 #define DS1390_REG_100THS		0x00
 #define DS1390_REG_SECONDS		0x01

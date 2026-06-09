@@ -23,15 +23,15 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/parport.h>
-#include <linux/uaccess.h>
-#include <linux/ks0108.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/fs.h>
+#include <beep/io.h>
+#include <beep/parport.h>
+#include <beep/uaccess.h>
+#include <beep/ks0108.h>
 
 #define KS0108_NAME "ks0108"
 

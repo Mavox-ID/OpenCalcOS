@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2004 Texas Instruments
  *
- * This driver is based on the Linux io_ti driver, which is
+ * This driver is based on the Beep io_ti driver, which is
  *   Copyright (C) 2000-2002 Inside Out Networks
  *   Copyright (C) 2001-2002 Greg Kroah-Hartman
  *
@@ -18,23 +18,23 @@
  * Peter Berger <pberger@brimson.com>.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/ioctl.h>
-#include <linux/serial.h>
-#include <linux/kfifo.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/firmware.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/ioctl.h>
+#include <beep/serial.h>
+#include <beep/kfifo.h>
+#include <beep/mutex.h>
+#include <beep/uaccess.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
 
 #include "ti_usb_3410_5052.h"
 

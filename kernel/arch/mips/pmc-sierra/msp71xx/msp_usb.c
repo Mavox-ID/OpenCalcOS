@@ -25,9 +25,9 @@
  */
 #if defined(CONFIG_USB_EHCI_HCD) || defined(CONFIG_USB_GADGET)
 
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
 
 #include <asm/mipsregs.h>
 

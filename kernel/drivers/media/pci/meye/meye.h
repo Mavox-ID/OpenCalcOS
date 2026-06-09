@@ -1,15 +1,15 @@
 /*
- * Motion Eye video4linux driver for Sony Vaio PictureBook
+ * Motion Eye video4beep driver for Sony Vaio PictureBook
  *
  * Copyright (C) 2001-2004 Stelian Pop <stelian@popies.net>
  *
  * Copyright (C) 2001-2002 Alcôve <www.alcove.com>
  *
- * Copyright (C) 2000 Andrew Tridgell <tridge@valinux.com>
+ * Copyright (C) 2000 Andrew Tridgell <tridge@vabeep.com>
  *
  * Earlier work by Werner Almesberger, Paul `Rusty' Russell and Paul Mackerras.
  *
- * Some parts borrowed from various video4linux drivers, especially
+ * Some parts borrowed from various video4beep drivers, especially
  * bttv-driver.c and zoran.c, see original files for credits.
  *
  * This program is free software; you can redistribute it and/or modify
@@ -36,9 +36,9 @@
 #define MEYE_DRIVER_VERSION __stringify(MEYE_DRIVER_MAJORVERSION) "." \
 			    __stringify(MEYE_DRIVER_MINORVERSION)
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kfifo.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/kfifo.h>
 
 /****************************************************************************/
 /* Motion JPEG chip registers                                               */
@@ -255,11 +255,11 @@
 /****************************************************************************/
 
 /* Sony Programmable I/O Controller for accessing the camera commands */
-#include <linux/sony-laptop.h>
+#include <beep/sony-laptop.h>
 
 /* private API definitions */
-#include <linux/meye.h>
-#include <linux/mutex.h>
+#include <beep/meye.h>
+#include <beep/mutex.h>
 
 
 /* Enable jpg software correction */

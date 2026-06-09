@@ -9,14 +9,14 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/regulator/consumer.h>
-#include <linux/cpufreq.h>
-#include <linux/suspend.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/regulator/consumer.h>
+#include <beep/cpufreq.h>
+#include <beep/suspend.h>
 
 #include <mach/cpufreq.h>
 

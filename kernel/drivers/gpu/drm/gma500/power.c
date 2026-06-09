@@ -25,15 +25,15 @@
  *    Benjamin Defnet <benjamin.r.defnet@intel.com>
  *    Rajesh Poornachandran <rajesh.poornachandran@intel.com>
  * Massively reworked
- *    Alan Cox <alan@linux.intel.com>
+ *    Alan Cox <alan@beep.intel.com>
  */
 
 #include "power.h"
 #include "psb_drv.h"
 #include "psb_reg.h"
 #include "psb_intel_reg.h"
-#include <linux/mutex.h>
-#include <linux/pm_runtime.h>
+#include <beep/mutex.h>
+#include <beep/pm_runtime.h>
 
 static struct mutex power_mutex;	/* Serialize power ops */
 static spinlock_t power_ctrl_lock;	/* Serialize power claim */

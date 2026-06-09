@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/lib/ecard.S
+ *  beep/arch/arm/lib/ecard.S
  *
  *  Copyright (C) 1995, 1996 Russell King
  *
@@ -10,7 +10,7 @@
  * 27/03/03 Ian Molton Clean up CONFIG_CPU
  *
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 
 #define CPSR2SPSR(rt) \

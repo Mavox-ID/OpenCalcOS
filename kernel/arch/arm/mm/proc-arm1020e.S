@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/proc-arm1020e.S: MMU functions for ARM1020
+ *  beep/arch/arm/mm/proc-arm1020e.S: MMU functions for ARM1020
  *
  *  Copyright (C) 2000 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd.
@@ -25,8 +25,8 @@
  *
  *  CONFIG_CPU_ARM1020_CPU_IDLE -> nohlt
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/hwcap.h>

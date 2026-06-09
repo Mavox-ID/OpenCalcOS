@@ -32,10 +32,10 @@
 #ifndef _IWCH_CM_H_
 #define _IWCH_CM_H_
 
-#include <linux/inet.h>
-#include <linux/wait.h>
-#include <linux/spinlock.h>
-#include <linux/kref.h>
+#include <beep/inet.h>
+#include <beep/wait.h>
+#include <beep/spinlock.h>
+#include <beep/kref.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/iw_cm.h>

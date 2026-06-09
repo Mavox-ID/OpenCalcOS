@@ -2,7 +2,7 @@
  * Algorithm testing framework and tests.
  *
  * Copyright (c) 2002 James Morris <jmorris@intercode.com.au>
- * Copyright (c) 2002 Jean-Francois Dive <jef@linuxbe.org>
+ * Copyright (c) 2002 Jean-Francois Dive <jef@beepbe.org>
  * Copyright (c) 2007 Nokia Siemens Networks
  * Copyright (c) 2008 Herbert Xu <herbert@gondor.apana.org.au>
  *
@@ -21,11 +21,11 @@
  */
 
 #include <crypto/hash.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 #include <crypto/rng.h>
 
 #include "internal.h"

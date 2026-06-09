@@ -27,7 +27,7 @@
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  *
  * Note: for more information, please refer "AMD Alchemy Au1200/Au1550 IDE
- *       Interface and Linux Device Driver" Application Note.
+ *       Interface and Beep Device Driver" Application Note.
  */
 
 #ifdef CONFIG_BLK_DEV_IDE_AU1XXX_MDMA2_DBDMA

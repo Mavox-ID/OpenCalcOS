@@ -11,9 +11,9 @@
  * option) any later version.
  */
 
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/types.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/types.h>
 
 #include <asm/bootinfo.h>
 

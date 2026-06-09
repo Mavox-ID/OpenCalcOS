@@ -5,7 +5,7 @@
  * Copyright (C) 2005-2008 Intel Co.
  *	Fenghua Yu <fenghua.yu@intel.com>
  *	Bibo Mao <bibo.mao@intel.com>
- *	Chandramouli Narayanan <mouli@linux.intel.com>
+ *	Chandramouli Narayanan <mouli@beep.intel.com>
  *	Huang Ying <ying.huang@intel.com>
  *
  * Code to convert EFI to E820 map has been implemented in elilo bootloader
@@ -15,18 +15,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/bootmem.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/efi.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/reboot.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/bootmem.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
+#include <beep/efi.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
+#include <beep/reboot.h>
 
 #include <asm/setup.h>
 #include <asm/page.h>

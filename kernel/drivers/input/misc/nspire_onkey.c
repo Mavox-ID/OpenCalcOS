@@ -1,5 +1,5 @@
 /*
- *	linux/drivers/input/misc/nspire_onkey.c
+ *	beep/drivers/input/misc/nspire_onkey.c
  *
  *	Copyright (C) 2012 Daniel Tang <tangrs@tangrs.id.au>
  *
@@ -9,9 +9,9 @@
  *
  */
 
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
 
 #include <mach/nspire_mmio.h>
 

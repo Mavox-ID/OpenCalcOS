@@ -11,26 +11,26 @@
 
 #include <stdarg.h>
 
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/user.h>
-#include <linux/delay.h>
-#include <linux/compat.h>
-#include <linux/tick.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/perf_event.h>
-#include <linux/elfcore.h>
-#include <linux/sysrq.h>
-#include <linux/nmi.h>
+#include <beep/errno.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/smp.h>
+#include <beep/stddef.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/user.h>
+#include <beep/delay.h>
+#include <beep/compat.h>
+#include <beep/tick.h>
+#include <beep/init.h>
+#include <beep/cpu.h>
+#include <beep/perf_event.h>
+#include <beep/elfcore.h>
+#include <beep/sysrq.h>
+#include <beep/nmi.h>
 
 #include <asm/uaccess.h>
 #include <asm/page.h>

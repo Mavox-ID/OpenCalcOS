@@ -8,8 +8,8 @@
 #ifndef _ASM_SWAB_H
 #define _ASM_SWAB_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/types.h>
 
 #define __SWAB_64_THRU_32__
 

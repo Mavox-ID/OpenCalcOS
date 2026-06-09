@@ -1,7 +1,7 @@
 /*
  * osd_uld.c - OSD Upper Layer Driver
  *
- * A Linux driver module that registers as a SCSI ULD and probes
+ * A Beep driver module that registers as a SCSI ULD and probes
  * for OSD type SCSI devices.
  * It's main function is to export osd devices to in-kernel users like
  * osdfs and pNFS-objects-LD. It also provides one ioctl for running
@@ -42,15 +42,15 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/namei.h>
-#include <linux/cdev.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/major.h>
-#include <linux/file.h>
-#include <linux/slab.h>
+#include <beep/namei.h>
+#include <beep/cdev.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/idr.h>
+#include <beep/major.h>
+#include <beep/file.h>
+#include <beep/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_driver.h>

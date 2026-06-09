@@ -1,10 +1,10 @@
 /* Glue code to lib/swiotlb.c */
 
-#include <linux/pci.h>
-#include <linux/gfp.h>
-#include <linux/cache.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <beep/pci.h>
+#include <beep/gfp.h>
+#include <beep/cache.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/swiotlb.h>
 #include <asm/dma.h>

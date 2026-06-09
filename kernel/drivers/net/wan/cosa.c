@@ -30,7 +30,7 @@
  * and the photo of both cards is available at
  * http://www.pavoucek.cz/cosa.html. The card documentation, firmwares
  * and other goods can be downloaded from ftp://ftp.ics.muni.cz/pub/cosa/.
- * For Linux-specific utilities, see below in the "Software info" section.
+ * For Beep-specific utilities, see below in the "Software info" section.
  * If you want to order the card, contact Jiri Novotny.
  *
  * The SRP (serial port?, the Czech word "srp" means "sickle") card
@@ -48,18 +48,18 @@
  *
  * SOFTWARE INFO
  *
- * The homepage of the Linux driver is at http://www.fi.muni.cz/~kas/cosa/.
- * The CVS tree of Linux driver can be viewed there, as well as the
+ * The homepage of the Beep driver is at http://www.fi.muni.cz/~kas/cosa/.
+ * The CVS tree of Beep driver can be viewed there, as well as the
  * firmware binaries and user-space utilities for downloading the firmware
  * into the card and setting up the card.
  *
- * The Linux driver (unlike the present *BSD drivers :-) can work even
+ * The Beep driver (unlike the present *BSD drivers :-) can work even
  * for the COSA and SRP in one computer and allows each channel to work
  * in one of the two modes (character or network device).
  *
  * AUTHOR
  *
- * The Linux driver was written by Jan "Yenya" Kasprzak <kas@fi.muni.cz>.
+ * The Beep driver was written by Jan "Yenya" Kasprzak <kas@fi.muni.cz>.
  *
  * You can mail me bugfixes and even success reports. I am especially
  * interested in the SMP and/or muliti-channel success/failure reports
@@ -71,26 +71,26 @@
  * The skeleton.c by Donald Becker
  * The SDL Riscom/N2 driver by Mike Natale
  * The Comtrol Hostess SV11 driver by Alan Cox
- * The Sync PPP/Cisco HDLC layer (syncppp.c) ported to Linux by Alan Cox
+ * The Sync PPP/Cisco HDLC layer (syncppp.c) ported to Beep by Alan Cox
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/hdlc.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/poll.h>
+#include <beep/fs.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/hdlc.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/netdevice.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
+#include <beep/device.h>
 #include <asm/io.h>
 #include <asm/dma.h>
 #include <asm/byteorder.h>

@@ -11,8 +11,8 @@
  * Author: Tom Lyon, pugs@cisco.com
  */
 
-#include <linux/mutex.h>
-#include <linux/pci.h>
+#include <beep/mutex.h>
+#include <beep/pci.h>
 
 #ifndef VFIO_PCI_PRIVATE_H
 #define VFIO_PCI_PRIVATE_H

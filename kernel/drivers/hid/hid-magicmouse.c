@@ -14,12 +14,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/input/mt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <beep/device.h>
+#include <beep/hid.h>
+#include <beep/input/mt.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
 
 #include "hid-ids.h"
 

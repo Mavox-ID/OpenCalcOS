@@ -9,15 +9,15 @@
  * Jozsef Kadlecsik <kadlec@blackhole.kfki.hu>
  */
 
-#include <linux/module.h>
-#include <linux/tcp.h>
+#include <beep/module.h>
+#include <beep/tcp.h>
 #include <net/tcp.h>
 
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_helper.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_expect.h>
-#include <linux/netfilter/nf_conntrack_h323.h>
+#include <beep/netfilter/nf_conntrack_h323.h>
 
 /****************************************************************************/
 static int set_addr(struct sk_buff *skb, unsigned int protoff,

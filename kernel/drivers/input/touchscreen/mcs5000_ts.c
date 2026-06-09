@@ -13,14 +13,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/i2c/mcs.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/i2c/mcs.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
 
 /* Registers */
 #define MCS5000_TS_STATUS		0x00

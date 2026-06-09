@@ -20,9 +20,9 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/ioport.h>
 
 #include <asm/pgtable.h>
 #include <asm/prom.h>

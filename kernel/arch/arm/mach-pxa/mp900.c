@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/mp900.c
+ *  beep/arch/arm/mach-pxa/mp900.c
  *
  *  Support for the NEC MobilePro900/C platform
  *
@@ -13,11 +13,11 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/usb/isp116x.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/types.h>
+#include <beep/usb/isp116x.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

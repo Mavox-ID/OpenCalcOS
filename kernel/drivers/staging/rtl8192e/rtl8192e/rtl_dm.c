@@ -196,7 +196,7 @@ static void dm_check_ac_dc_power(struct net_device *dev)
 	static char *ac_dc_check_script_path = "/etc/acpi/wireless-rtl-ac-dc-power.sh";
 	char *argv[] = {ac_dc_check_script_path, DRV_NAME, NULL};
 	static char *envp[] = {"HOME=/",
-			"TERM=linux",
+			"TERM=beep",
 			"PATH=/usr/bin:/bin",
 			 NULL};
 
@@ -2257,7 +2257,7 @@ void dm_CheckRfCtrlGPIO(void *data)
 	bool bActuallySet = false;
 	char *argv[3];
 	static char *RadioPowerPath = "/etc/acpi/events/RadioPower.sh";
-	static char *envp[] = {"HOME=/", "TERM=linux", "PATH=/usr/bin:/bin", NULL};
+	static char *envp[] = {"HOME=/", "TERM=beep", "PATH=/usr/bin:/bin", NULL};
 
 	bActuallySet = false;
 

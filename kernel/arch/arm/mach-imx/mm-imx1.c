@@ -15,10 +15,10 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/pinctrl/machine.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/pinctrl/machine.h>
 
 #include <asm/mach/map.h>
 

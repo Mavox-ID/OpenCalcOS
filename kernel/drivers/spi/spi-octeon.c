@@ -6,14 +6,14 @@
  * Copyright (C) 2011, 2012 Cavium, Inc.
  */
 
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/spi/spi.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/of.h>
 
 #include <asm/octeon/octeon.h>
 #include <asm/octeon/cvmx-mpi-defs.h>

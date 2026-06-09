@@ -4,7 +4,7 @@
  * Copyright 2007 IBM Corporation
  *
  * Stephen Winiecki <stevewin@us.ibm.com>
- * Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Josh Boyer <jwboyer@beep.vnet.ibm.com>
  *
  * Based on code from mpc7448_hpc2.c
  *
@@ -13,20 +13,20 @@
  * version 2 as published by the Free Software Foundation.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/kdev_t.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/serial_core.h>
-#include <linux/of_platform.h>
-#include <linux/module.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/kdev_t.h>
+#include <beep/console.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/seq_file.h>
+#include <beep/root_dev.h>
+#include <beep/serial.h>
+#include <beep/tty.h>
+#include <beep/serial_core.h>
+#include <beep/of_platform.h>
+#include <beep/module.h>
 
 #include <asm/time.h>
 #include <asm/machdep.h>

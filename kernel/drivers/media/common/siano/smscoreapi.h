@@ -22,14 +22,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifndef __SMS_CORE_API_H__
 #define __SMS_CORE_API_H__
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/wait.h>
-#include <linux/timer.h>
+#include <beep/device.h>
+#include <beep/list.h>
+#include <beep/mm.h>
+#include <beep/scatterlist.h>
+#include <beep/types.h>
+#include <beep/mutex.h>
+#include <beep/wait.h>
+#include <beep/timer.h>
 
 #include <asm/page.h>
 

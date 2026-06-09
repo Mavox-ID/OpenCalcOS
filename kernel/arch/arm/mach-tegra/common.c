@@ -17,11 +17,11 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/of_irq.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/of_irq.h>
 
 #include <asm/hardware/cache-l2x0.h>
 #include <asm/hardware/gic.h>

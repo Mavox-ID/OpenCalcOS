@@ -10,12 +10,12 @@
  * the Free Software Foundation.
  */
 
-#include <linux/dma-buf.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
+#include <beep/dma-buf.h>
+#include <beep/module.h>
+#include <beep/scatterlist.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/dma-mapping.h>
 
 #include <media/videobuf2-core.h>
 #include <media/videobuf2-dma-contig.h>

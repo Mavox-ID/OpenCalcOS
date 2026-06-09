@@ -12,19 +12,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/irqreturn.h>
-#include <linux/init.h>
-#include <linux/spi/spi.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/gpio.h>
-#include <linux/regulator/consumer.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/irqreturn.h>
+#include <beep/init.h>
+#include <beep/spi/spi.h>
+#include <beep/firmware.h>
+#include <beep/delay.h>
+#include <beep/fs.h>
+#include <beep/miscdevice.h>
+#include <beep/gpio.h>
+#include <beep/regulator/consumer.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
 
 #include <sound/soc.h>
 #include <sound/wm0010.h>

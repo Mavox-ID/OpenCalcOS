@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/usb-musb.c
+ * beep/arch/arm/mach-omap2/usb-musb.c
  *
  * This file will contain the board specific details for the
  * MENTOR USB OTG controller on OMAP3430
@@ -16,14 +16,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/usb/musb.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/dma-mapping.h>
+#include <beep/io.h>
+#include <beep/usb/musb.h>
 
 #include "omap_device.h"
 #include "soc.h"

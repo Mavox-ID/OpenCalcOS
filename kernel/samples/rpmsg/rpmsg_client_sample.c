@@ -17,9 +17,9 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/rpmsg.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/rpmsg.h>
 
 #define MSG		"hello world!"
 #define MSG_LIMIT	100

@@ -41,7 +41,7 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/pci.h>
+#include <beep/pci.h>
 #include "ath5k.h"
 
 #define ATH_SDEVICE(subv, subd) \

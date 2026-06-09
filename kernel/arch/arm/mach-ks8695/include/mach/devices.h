@@ -11,7 +11,7 @@
 #ifndef __ASM_ARCH_DEVICES_H
 #define __ASM_ARCH_DEVICES_H
 
-#include <linux/pci.h>
+#include <beep/pci.h>
 
  /* Ethernet */
 extern void __init ks8695_add_device_wan(void);

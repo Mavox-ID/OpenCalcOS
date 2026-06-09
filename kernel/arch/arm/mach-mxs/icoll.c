@@ -16,13 +16,13 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
 #include <asm/exception.h>
 #include <mach/mxs.h>
 #include <mach/common.h>

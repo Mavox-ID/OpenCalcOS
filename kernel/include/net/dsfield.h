@@ -6,9 +6,9 @@
 #ifndef __NET_DSFIELD_H
 #define __NET_DSFIELD_H
 
-#include <linux/types.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <beep/types.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
 #include <asm/byteorder.h>
 
 

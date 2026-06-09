@@ -1,17 +1,17 @@
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
-#include <linux/writeback.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/wait.h>
+#include <beep/writeback.h>
 
 #include "super.h"
 #include "mds_client.h"
-#include <linux/ceph/decode.h>
-#include <linux/ceph/messenger.h>
+#include <beep/ceph/decode.h>
+#include <beep/ceph/messenger.h>
 
 /*
  * Capability management

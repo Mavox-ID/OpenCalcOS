@@ -1,5 +1,5 @@
 /***************************************************************************
-  BCM70010 Linux driver
+  BCM70010 Beep driver
   Copyright (c) 2005-2009, Broadcom Corporation.
 
   This driver is free software; you can redistribute it and/or modify
@@ -17,8 +17,8 @@
 
 #include "crystalhd.h"
 
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 
 
 static DEFINE_MUTEX(chd_dec_mutex);

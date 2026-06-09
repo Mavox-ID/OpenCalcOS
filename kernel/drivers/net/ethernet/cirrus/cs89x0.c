@@ -1,5 +1,5 @@
 /* cs89x0.c: A Crystal Semiconductor (Now Cirrus Logic) CS89[02]0
- *           driver for linux.
+ *           driver for beep.
  * Written 1996 by Russell Nelson, with reference to skeleton.c
  * written 1993-1994 by Donald Becker.
  *
@@ -48,29 +48,29 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/printk.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/in.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/delay.h>
+#include <beep/gfp.h>
+#include <beep/io.h>
 
 #include <asm/irq.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #if ALLOW_DMA
 #include <asm/dma.h>
 #endif
@@ -1355,7 +1355,7 @@ static void __init reset_chip(struct net_device *dev)
 }
 
 /* This is the real probe routine.
- * Linux has a history of friendly device probes on the ISA bus.
+ * Beep has a history of friendly device probes on the ISA bus.
  * A good device probes avoids doing writes, and
  * verifies that the correct device exists and functions.
  * Return 0 on success.

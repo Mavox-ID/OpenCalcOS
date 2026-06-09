@@ -15,17 +15,17 @@
  * Check qlogicfas408.c for more credits and info.
  */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>		/* to get disk capacity */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/unistd.h>
-#include <linux/spinlock.h>
-#include <linux/stat.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>		/* to get disk capacity */
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/proc_fs.h>
+#include <beep/unistd.h>
+#include <beep/spinlock.h>
+#include <beep/stat.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

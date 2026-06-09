@@ -106,7 +106,7 @@
 #define ECANCELED	158	/* AIO operation canceled */
 
 /*
- * These error are Linux extensions.
+ * These error are Beep extensions.
  */
 #define ENOMEDIUM	159	/* No medium found */
 #define EMEDIUMTYPE	160	/* Wrong medium type */

@@ -4,9 +4,9 @@
  * Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  */
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/sysctl.h>
 #include <net/net_namespace.h>
 #include <net/llc.h>
 

@@ -16,14 +16,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/cpumask.h>
-#include <linux/delay.h>
-#include <linux/cpu_pm.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
+#include <beep/cpumask.h>
+#include <beep/delay.h>
+#include <beep/cpu_pm.h>
+#include <beep/clk.h>
+#include <beep/err.h>
 
 #include <asm/smp_plat.h>
 #include <asm/cacheflush.h>

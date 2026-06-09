@@ -1,5 +1,5 @@
 /*
- * linux/fs/mbcache.c
+ * beep/fs/mbcache.c
  * (C) 2001-2002 Andreas Gruenbacher, <a.gruenbacher@computer.org>
  */
 
@@ -26,16 +26,16 @@
  * back on the lru list.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 
-#include <linux/hash.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/mbcache.h>
+#include <beep/hash.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/mbcache.h>
 
 
 #ifdef MB_CACHE_DEBUG

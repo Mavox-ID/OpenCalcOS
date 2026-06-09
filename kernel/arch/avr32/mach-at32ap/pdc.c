@@ -6,10 +6,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
 
 static int __init pdc_probe(struct platform_device *pdev)
 {

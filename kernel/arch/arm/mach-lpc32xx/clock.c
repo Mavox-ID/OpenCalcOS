@@ -22,9 +22,9 @@
  * The LPC32XX contains a number of high level system clocks that can be
  * generated from different sources. These system clocks are used to
  * generate the CPU and bus rates and the individual peripheral clocks in
- * the system. When Linux is started by the boot loader, the system
+ * the system. When Beep is started by the boot loader, the system
  * clocks are already running. Stopping a system clock during normal
- * Linux operation should never be attempted, as peripherals that require
+ * Beep operation should never be attempted, as peripherals that require
  * those clocks will quit working (ie, DRAM).
  *
  * The LPC32xx high level clock tree looks as follows. Clocks marked with
@@ -65,7 +65,7 @@
  * or oscillators. If USB operation is required, the main oscillator must
  * be used in the system.
  *
- * Switching SYSCLK between sources during normal Linux operation is not
+ * Switching SYSCLK between sources during normal Beep operation is not
  * supported. SYSCLK is preset in the bootloader. Because of the
  * complexities of clock management during clock frequency changes,
  * there are some limitations to the clock driver explained below:
@@ -82,17 +82,17 @@
  *   will also impact the individual peripheral rates.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/clcd.h>
-#include <linux/clkdev.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/clcd.h>
+#include <beep/clkdev.h>
 
 #include <mach/hardware.h>
 #include <mach/platform.h>

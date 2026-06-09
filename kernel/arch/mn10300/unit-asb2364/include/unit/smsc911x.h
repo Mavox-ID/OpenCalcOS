@@ -11,7 +11,7 @@
 #ifndef _ASM_UNIT_SMSC911X_H
 #define _ASM_UNIT_SMSC911X_H
 
-#include <linux/netdevice.h>
+#include <beep/netdevice.h>
 #include <proc/irq.h>
 #include <unit/fpga-regs.h>
 
@@ -34,7 +34,7 @@ do {								\
 } while (0)
 
 #ifdef MN10300_USE_EXT_EEPROM
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include <unit/clock.h>
 
 #define EEPROM_ADDRESS	0xA0

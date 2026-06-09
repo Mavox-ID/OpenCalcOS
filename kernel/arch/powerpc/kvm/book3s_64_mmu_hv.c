@@ -15,18 +15,18 @@
  * Copyright 2010 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/highmem.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/hugetlb.h>
-#include <linux/vmalloc.h>
-#include <linux/srcu.h>
-#include <linux/anon_inodes.h>
-#include <linux/file.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/kvm.h>
+#include <beep/kvm_host.h>
+#include <beep/highmem.h>
+#include <beep/gfp.h>
+#include <beep/slab.h>
+#include <beep/hugetlb.h>
+#include <beep/vmalloc.h>
+#include <beep/srcu.h>
+#include <beep/anon_inodes.h>
+#include <beep/file.h>
 
 #include <asm/tlbflush.h>
 #include <asm/kvm_ppc.h>
@@ -393,7 +393,7 @@ long kvmppc_virtmode_do_h_enter(struct kvm *kvm, unsigned long flags,
 	}
 
  do_insert:
-	/* Protect linux PTE lookup from page table destruction */
+	/* Protect beep PTE lookup from page table destruction */
 	rcu_read_lock_sched();	/* this disables preemption too */
 	ret = kvmppc_do_h_enter(kvm, flags, pte_index, pteh, ptel,
 				current->mm->pgd, false, pte_idx_ret);
@@ -682,10 +682,10 @@ int kvmppc_book3s_hv_page_fault(struct kvm_run *run, struct kvm_vcpu *vcpu,
 			 * while looking up and updating the pte.
 			 */
 			rcu_read_lock_sched();
-			ptep = find_linux_pte_or_hugepte(current->mm->pgd,
+			ptep = find_beep_pte_or_hugepte(current->mm->pgd,
 							 hva, NULL);
 			if (ptep && pte_present(*ptep)) {
-				pte = kvmppc_read_update_linux_pte(ptep, 1);
+				pte = kvmppc_read_update_beep_pte(ptep, 1);
 				if (pte_write(pte))
 					write_ok = 1;
 			}

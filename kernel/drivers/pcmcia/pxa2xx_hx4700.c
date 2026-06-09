@@ -6,11 +6,11 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
 
 #include <asm/mach-types.h>
 #include <mach/hx4700.h>

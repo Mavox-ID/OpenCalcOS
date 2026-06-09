@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/card/queue.c
+ *  beep/drivers/mmc/card/queue.c
  *
  *  Copyright (C) 2003 Russell King, All Rights Reserved.
  *  Copyright 2006-2007 Pierre Ossman
@@ -9,15 +9,15 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/scatterlist.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>
+#include <beep/freezer.h>
+#include <beep/kthread.h>
+#include <beep/scatterlist.h>
 
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/host.h>
 #include "queue.h"
 
 #define MMC_QUEUE_BOUNCESZ	65536

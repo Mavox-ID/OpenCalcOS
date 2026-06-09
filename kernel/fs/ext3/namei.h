@@ -1,4 +1,4 @@
-/*  linux/fs/ext3/namei.h
+/*  beep/fs/ext3/namei.h
  *
  * Copyright (C) 2005 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>

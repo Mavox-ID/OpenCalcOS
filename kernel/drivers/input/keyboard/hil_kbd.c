@@ -1,5 +1,5 @@
 /*
- * Generic linux-input device driver for keyboard devices
+ * Generic beep-input device driver for keyboard devices
  *
  * Copyright (c) 2001 Brian S. Julin
  * All rights reserved.
@@ -31,15 +31,15 @@
  *
  */
 
-#include <linux/hil.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
-#include <linux/pci_ids.h>
+#include <beep/hil.h>
+#include <beep/input.h>
+#include <beep/serio.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/completion.h>
+#include <beep/slab.h>
+#include <beep/pci_ids.h>
 
 #define PREFIX "HIL: "
 

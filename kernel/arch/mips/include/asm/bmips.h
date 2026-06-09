@@ -10,8 +10,8 @@
 #ifndef _ASM_BMIPS_H
 #define _ASM_BMIPS_H
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
+#include <beep/compiler.h>
+#include <beep/linkage.h>
 #include <asm/addrspace.h>
 #include <asm/mipsregs.h>
 #include <asm/hazards.h>
@@ -44,7 +44,7 @@
 
 #if !defined(__ASSEMBLY__)
 
-#include <linux/cpumask.h>
+#include <beep/cpumask.h>
 #include <asm/r4kcache.h>
 
 extern struct plat_smp_ops bmips_smp_ops;

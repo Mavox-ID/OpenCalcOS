@@ -11,21 +11,21 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/of_platform.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/jiffies.h>
+#include <beep/module.h>
+#include <beep/gpio.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
+#include <beep/of_platform.h>
 
 struct matrix_keypad {
 	const struct matrix_keypad_platform_data *pdata;
@@ -423,9 +423,9 @@ matrix_keypad_parse_dt(struct device *dev)
 		return ERR_PTR(-EINVAL);
 	}
 
-	if (of_get_property(np, "linux,no-autorepeat", NULL))
+	if (of_get_property(np, "beep,no-autorepeat", NULL))
 		pdata->no_autorepeat = true;
-	if (of_get_property(np, "linux,wakeup", NULL))
+	if (of_get_property(np, "beep,wakeup", NULL))
 		pdata->wakeup = true;
 	if (of_get_property(np, "gpio-activelow", NULL))
 		pdata->active_low = true;

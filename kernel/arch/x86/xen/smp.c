@@ -12,11 +12,11 @@
  * result, all CPUs are treated as if they're single-core and
  * single-threaded.
  */
-#include <linux/sched.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/irq_work.h>
+#include <beep/sched.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/smp.h>
+#include <beep/irq_work.h>
 
 #include <asm/paravirt.h>
 #include <asm/desc.h>
@@ -211,7 +211,7 @@ static void __init xen_filter_cpu_maps(void)
 		}
 	}
 #ifdef CONFIG_HOTPLUG_CPU
-	/* This is akin to using 'nr_cpus' on the Linux command line.
+	/* This is akin to using 'nr_cpus' on the Beep command line.
 	 * Which is OK as when we use 'dom0_max_vcpus=X' we can only
 	 * have up to X, while nr_cpu_ids is greater than X. This
 	 * normally is not a problem, except when CPU hotplugging

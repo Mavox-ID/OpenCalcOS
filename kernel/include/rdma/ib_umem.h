@@ -33,9 +33,9 @@
 #ifndef IB_UMEM_H
 #define IB_UMEM_H
 
-#include <linux/list.h>
-#include <linux/scatterlist.h>
-#include <linux/workqueue.h>
+#include <beep/list.h>
+#include <beep/scatterlist.h>
+#include <beep/workqueue.h>
 
 struct ib_ucontext;
 
@@ -68,7 +68,7 @@ int ib_umem_page_count(struct ib_umem *umem);
 
 #else /* CONFIG_INFINIBAND_USER_MEM */
 
-#include <linux/err.h>
+#include <beep/err.h>
 
 static inline struct ib_umem *ib_umem_get(struct ib_ucontext *context,
 					  unsigned long addr, size_t size,

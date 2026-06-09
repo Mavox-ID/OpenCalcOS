@@ -1,7 +1,7 @@
 #ifndef ARCH__X86__MM__KMEMCHECK__PTE_H
 #define ARCH__X86__MM__KMEMCHECK__PTE_H
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 #include <asm/pgtable.h>
 

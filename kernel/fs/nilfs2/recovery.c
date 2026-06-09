@@ -20,11 +20,11 @@
  * Written by Ryusuke Konishi <ryusuke@osrg.net>
  */
 
-#include <linux/buffer_head.h>
-#include <linux/blkdev.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
-#include <linux/crc32.h>
+#include <beep/buffer_head.h>
+#include <beep/blkdev.h>
+#include <beep/swap.h>
+#include <beep/slab.h>
+#include <beep/crc32.h>
 #include "nilfs.h"
 #include "segment.h"
 #include "sufile.h"

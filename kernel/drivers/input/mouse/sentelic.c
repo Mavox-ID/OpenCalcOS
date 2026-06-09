@@ -19,14 +19,14 @@
  *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/ctype.h>
-#include <linux/libps2.h>
-#include <linux/serio.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/input.h>
+#include <beep/input/mt.h>
+#include <beep/ctype.h>
+#include <beep/libps2.h>
+#include <beep/serio.h>
+#include <beep/jiffies.h>
+#include <beep/slab.h>
 
 #include "psmouse.h"
 #include "sentelic.h"

@@ -11,17 +11,17 @@
  * Copyright (C) 2012 ARM Limited
  */
 
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/leds.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/timer.h>
-#include <linux/vexpress.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
+#include <beep/leds.h>
+#include <beep/of_address.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/timer.h>
+#include <beep/vexpress.h>
 
 #define SYS_ID			0x000
 #define SYS_SW			0x004

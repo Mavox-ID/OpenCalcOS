@@ -47,10 +47,10 @@
  * transport switch. All others are RPC RDMA internal.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/seq_file.h>
 
 #include "xprt_rdma.h"
 
@@ -60,7 +60,7 @@
 
 MODULE_LICENSE("Dual BSD/GPL");
 
-MODULE_DESCRIPTION("RPC/RDMA Transport for Linux kernel NFS");
+MODULE_DESCRIPTION("RPC/RDMA Transport for Beep kernel NFS");
 MODULE_AUTHOR("Network Appliance, Inc.");
 
 /*

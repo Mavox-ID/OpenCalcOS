@@ -18,14 +18,14 @@
  *
  * Licensed under the GNU/GPL. See COPYING for details.
  */
-#include <linux/kernel.h>
-#include <linux/hrtimer.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/ehci_pdriver.h>
+#include <beep/kernel.h>
+#include <beep/hrtimer.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
+#include <beep/usb/ehci_pdriver.h>
 
 #include "ehci.h"
 

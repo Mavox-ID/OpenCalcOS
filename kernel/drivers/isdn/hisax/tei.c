@@ -2,7 +2,7 @@
  *
  * Author       Karsten Keil
  *              based on the teles driver from Jan den Ouden
- * Copyright    by Karsten Keil      <keil@isdn4linux.de>
+ * Copyright    by Karsten Keil      <keil@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
@@ -17,9 +17,9 @@
 
 #include "hisax.h"
 #include "isdnl2.h"
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/random.h>
+#include <beep/gfp.h>
+#include <beep/init.h>
+#include <beep/random.h>
 
 const char *tei_revision = "$Revision: 2.20.2.3 $";
 

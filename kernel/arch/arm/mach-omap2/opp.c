@@ -16,9 +16,9 @@
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#include <linux/module.h>
-#include <linux/opp.h>
-#include <linux/cpu.h>
+#include <beep/module.h>
+#include <beep/opp.h>
+#include <beep/cpu.h>
 
 #include "omap_device.h"
 

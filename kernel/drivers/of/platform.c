@@ -11,17 +11,17 @@
  *  2 of the License, or (at your option) any later version.
  *
  */
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/amba/bus.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/amba/bus.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/of_address.h>
+#include <beep/of_device.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
+#include <beep/platform_device.h>
 
 const struct of_device_id of_default_bus_match_table[] = {
 	{ .compatible = "simple-bus", },
@@ -191,7 +191,7 @@ EXPORT_SYMBOL(of_device_alloc);
  * @np: pointer to node to create device for
  * @bus_id: name to assign device
  * @platform_data: pointer to populate platform_data pointer with
- * @parent: Linux device model parent device.
+ * @parent: Beep device model parent device.
  *
  * Returns pointer to created platform device, or NULL if a device was not
  * registered.  Unavailable devices will not get registered.
@@ -235,7 +235,7 @@ struct platform_device *of_platform_device_create_pdata(
  * of_platform_device_create - Alloc, initialize and register an of_device
  * @np: pointer to node to create device for
  * @bus_id: name to assign device
- * @parent: Linux device model parent device.
+ * @parent: Beep device model parent device.
  *
  * Returns pointer to created platform device, or NULL if a device was not
  * registered.  Unavailable devices will not get registered.
@@ -314,7 +314,7 @@ static struct amba_device *of_amba_device_create(struct device_node *node,
 #endif /* CONFIG_ARM_AMBA */
 
 /**
- * of_devname_lookup() - Given a device node, lookup the preferred Linux name
+ * of_devname_lookup() - Given a device node, lookup the preferred Beep name
  */
 static const struct of_dev_auxdata *of_dev_lookup(const struct of_dev_auxdata *lookup,
 				 struct device_node *np)

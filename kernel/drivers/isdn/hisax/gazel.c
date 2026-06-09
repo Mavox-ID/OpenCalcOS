@@ -11,13 +11,13 @@
  *
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include "hisax.h"
 #include "isac.h"
 #include "hscx.h"
 #include "isdnl1.h"
 #include "ipac.h"
-#include <linux/pci.h>
+#include <beep/pci.h>
 
 static const char *gazel_revision = "$Revision: 2.19.2.4 $";
 

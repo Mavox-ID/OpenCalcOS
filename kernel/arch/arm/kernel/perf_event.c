@@ -12,10 +12,10 @@
  */
 #define pr_fmt(fmt) "hw perfevents: " fmt
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/uaccess.h>
 
 #include <asm/irq_regs.h>
 #include <asm/pmu.h>

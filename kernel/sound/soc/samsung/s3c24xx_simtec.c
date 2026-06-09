@@ -7,13 +7,13 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/gpio.h>
-#include <linux/clk.h>
-#include <linux/module.h>
+#include <beep/gpio.h>
+#include <beep/clk.h>
+#include <beep/module.h>
 
 #include <sound/soc.h>
 
-#include <linux/platform_data/asoc-s3c24xx_simtec.h>
+#include <beep/platform_data/asoc-s3c24xx_simtec.h>
 
 #include "s3c24xx-i2s.h"
 #include "s3c24xx_simtec.h"

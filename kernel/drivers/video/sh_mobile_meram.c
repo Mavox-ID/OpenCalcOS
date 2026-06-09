@@ -9,16 +9,16 @@
  * for more details.
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/genalloc.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/export.h>
+#include <beep/genalloc.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/slab.h>
 
 #include <video/sh_mobile_meram.h>
 

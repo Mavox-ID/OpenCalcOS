@@ -1,5 +1,5 @@
 /*
- *  linux/fs/adfs/dir_fplus.c
+ *  beep/fs/adfs/dir_fplus.c
  *
  *  Copyright (C) 1997-1999 Russell King
  *
@@ -7,8 +7,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
+#include <beep/buffer_head.h>
+#include <beep/slab.h>
 #include "adfs.h"
 #include "dir_fplus.h"
 

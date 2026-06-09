@@ -15,7 +15,7 @@
 #ifndef __XTENSA_XTAVNET_HARDWARE_H
 #define __XTENSA_XTAVNET_HARDWARE_H
 
-/* By default NO_IRQ is defined to 0 in Linux, but we use the
+/* By default NO_IRQ is defined to 0 in Beep, but we use the
    interrupt 0 for UART... */
 #define NO_IRQ                 -1
 

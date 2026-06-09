@@ -14,12 +14,12 @@
  * CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-/* Toplevel file. Relies on dhd_linux.c to send commands to the dongle. */
+/* Toplevel file. Relies on dhd_beep.c to send commands to the dongle. */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/etherdevice.h>
+#include <beep/kernel.h>
+#include <beep/etherdevice.h>
 #include <net/cfg80211.h>
 #include <net/netlink.h>
 

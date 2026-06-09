@@ -28,8 +28,8 @@
  *
  ********************************************************************/
 
-#include <linux/proc_fs.h>
-#include <linux/init.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/irlmp.h>

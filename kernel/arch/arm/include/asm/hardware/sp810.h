@@ -4,7 +4,7 @@
  * ARM PrimeXsys System Controller SP810 header file
  *
  * Copyright (C) 2009 ST Microelectronics
- * Viresh Kumar <viresh.linux@gmail.com>
+ * Viresh Kumar <viresh.beep@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
@@ -14,7 +14,7 @@
 #ifndef __ASM_ARM_SP810_H
 #define __ASM_ARM_SP810_H
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 /* sysctl registers offset */
 #define SCCTRL			0x000

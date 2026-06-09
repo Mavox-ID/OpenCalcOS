@@ -12,7 +12,7 @@
  */
 
 /*
- * The following is for compatibility across the various Linux
+ * The following is for compatibility across the various Beep
  * platforms.  The generic ioctl numbering scheme doesn't really enforce
  * a type field.  De facto, however, the top 8 bits of the lower 16
  * bits are indeed used as a type field, so we might just as well make

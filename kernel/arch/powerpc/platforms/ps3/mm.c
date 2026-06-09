@@ -18,10 +18,10 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/memblock.h>
+#include <beep/slab.h>
 
 #include <asm/cell-regs.h>
 #include <asm/firmware.h>
@@ -101,7 +101,7 @@ struct mem_region {
  *
  * ps3 addresses
  * virt_addr: a cpu 'translated' effective address
- * phys_addr: an address in what Linux thinks is the physical address space
+ * phys_addr: an address in what Beep thinks is the physical address space
  * lpar_addr: an address in the HV virtual address space
  * bus_addr: an io controller 'translated' address on a device bus
  */
@@ -130,8 +130,8 @@ static void __maybe_unused _debug_dump_map(const struct map *m,
 static struct map map;
 
 /**
- * ps3_mm_phys_to_lpar - translate a linux physical address to lpar address
- * @phys_addr: linux physical address
+ * ps3_mm_phys_to_lpar - translate a beep physical address to lpar address
+ * @phys_addr: beep physical address
  */
 
 unsigned long ps3_mm_phys_to_lpar(unsigned long phys_addr)

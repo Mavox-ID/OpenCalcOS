@@ -14,9 +14,9 @@
 #include "udfdecl.h"
 #include "udf_i.h"
 
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/buffer_head.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/buffer_head.h>
 
 struct fileIdentDesc *udf_fileident_read(struct inode *dir, loff_t *nf_pos,
 					 struct udf_fileident_bh *fibh,

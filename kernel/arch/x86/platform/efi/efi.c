@@ -2,15 +2,15 @@
  * Common EFI (Extensible Firmware Interface) support functions
  * Based on Extensible Firmware Interface Specification version 1.0
  *
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA Beep Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@vabeep.com>
  * Copyright (C) 1999-2002 Hewlett-Packard Co.
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  *	Stephane Eranian <eranian@hpl.hp.com>
  * Copyright (C) 2005-2008 Intel Co.
  *	Fenghua Yu <fenghua.yu@intel.com>
  *	Bibo Mao <bibo.mao@intel.com>
- *	Chandramouli Narayanan <mouli@linux.intel.com>
+ *	Chandramouli Narayanan <mouli@beep.intel.com>
  *	Huang Ying <ying.huang@intel.com>
  *
  * Copied from efi_32.c to eliminate the duplicated code between EFI
@@ -28,19 +28,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/efi.h>
-#include <linux/efi-bgrt.h>
-#include <linux/export.h>
-#include <linux/bootmem.h>
-#include <linux/memblock.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/time.h>
-#include <linux/io.h>
-#include <linux/reboot.h>
-#include <linux/bcd.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/efi.h>
+#include <beep/efi-bgrt.h>
+#include <beep/export.h>
+#include <beep/bootmem.h>
+#include <beep/memblock.h>
+#include <beep/spinlock.h>
+#include <beep/uaccess.h>
+#include <beep/time.h>
+#include <beep/io.h>
+#include <beep/reboot.h>
+#include <beep/bcd.h>
 
 #include <asm/setup.h>
 #include <asm/efi.h>

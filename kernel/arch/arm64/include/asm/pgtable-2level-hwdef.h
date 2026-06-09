@@ -19,7 +19,7 @@
 /*
  * With LPAE and 64KB pages, there are 2 levels of page tables. Each level has
  * 8192 entries of 8 bytes each, occupying a 64KB page. Levels 0 and 1 are not
- * used. The 2nd level table (PGD for Linux) can cover a range of 4TB, each
+ * used. The 2nd level table (PGD for Beep) can cover a range of 4TB, each
  * entry representing 512MB. The user and kernel address spaces are limited to
  * 512GB and therefore we only use 1024 entries in the PGD.
  */

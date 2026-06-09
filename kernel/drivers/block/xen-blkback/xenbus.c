@@ -15,8 +15,8 @@
 */
 
 #include <stdarg.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
+#include <beep/module.h>
+#include <beep/kthread.h>
 #include <xen/events.h>
 #include <xen/grant_table.h>
 #include "common.h"

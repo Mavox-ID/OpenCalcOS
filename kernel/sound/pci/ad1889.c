@@ -3,8 +3,8 @@
  * This is a driver for the AD1889 PCI audio chipset found
  * on the HP PA-RISC [BCJ]-xxx0 workstations.
  *
- * Copyright (C) 2004-2005, Kyle McMartin <kyle@parisc-linux.org>
- * Copyright (C) 2005, Thibaut Varene <varenet@parisc-linux.org>
+ * Copyright (C) 2004-2005, Kyle McMartin <kyle@parisc-beep.org>
+ * Copyright (C) 2005, Thibaut Varene <varenet@parisc-beep.org>
  *   Based on the OSS AD1889 driver by Randolph Chung <tausq@debian.org>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -32,14 +32,14 @@
  *	SG DMA support (this will need *a lot* of work)
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/compiler.h>
+#include <beep/delay.h>
+#include <beep/module.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>
@@ -53,7 +53,7 @@
 
 #define	AD1889_DRVVER	"Version: 1.7"
 
-MODULE_AUTHOR("Kyle McMartin <kyle@parisc-linux.org>, Thibaut Varene <t-bone@parisc-linux.org>");
+MODULE_AUTHOR("Kyle McMartin <kyle@parisc-beep.org>, Thibaut Varene <t-bone@parisc-beep.org>");
 MODULE_DESCRIPTION("Analog Devices AD1889 ALSA sound driver");
 MODULE_LICENSE("GPL");
 MODULE_SUPPORTED_DEVICE("{{Analog Devices,AD1889}}");

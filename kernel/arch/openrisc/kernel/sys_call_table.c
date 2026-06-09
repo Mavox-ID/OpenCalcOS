@@ -1,7 +1,7 @@
 /*
  * OpenRISC sys_call_table.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -14,9 +14,9 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/syscalls.h>
-#include <linux/signal.h>
-#include <linux/unistd.h>
+#include <beep/syscalls.h>
+#include <beep/signal.h>
+#include <beep/unistd.h>
 
 #include <asm/syscalls.h>
 

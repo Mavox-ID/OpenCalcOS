@@ -6,10 +6,10 @@
  * found in some MIPS systems.
  *
  */
-#include <linux/bcd.h>
-#include <linux/init.h>
-#include <linux/mc146818rtc.h>
-#include <linux/param.h>
+#include <beep/bcd.h>
+#include <beep/init.h>
+#include <beep/mc146818rtc.h>
+#include <beep/param.h>
 
 #include <asm/cpu-features.h>
 #include <asm/ds1287.h>

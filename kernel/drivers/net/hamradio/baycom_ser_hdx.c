@@ -61,17 +61,17 @@
 
 /*****************************************************************************/
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <beep/capability.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
 #include <asm/uaccess.h>
 #include <asm/io.h>
-#include <linux/hdlcdrv.h>
-#include <linux/baycom.h>
-#include <linux/jiffies.h>
+#include <beep/hdlcdrv.h>
+#include <beep/baycom.h>
+#include <beep/jiffies.h>
 
 /* --------------------------------------------------------------------- */
 

@@ -1,7 +1,7 @@
 #ifndef __ASM_ARCH_SPINLOCK_H
 #define __ASM_ARCH_SPINLOCK_H
 
-#include <linux/spinlock_types.h>
+#include <beep/spinlock_types.h>
 
 #define RW_LOCK_BIAS 0x01000000
 

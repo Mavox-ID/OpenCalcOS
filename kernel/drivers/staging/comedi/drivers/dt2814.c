@@ -2,7 +2,7 @@
     comedi/drivers/dt2814.c
     Hardware driver for Data Translation DT2814
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1998 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -39,11 +39,11 @@ a power of 10, from 1 to 10^7, of which only 3 or 4 are useful.  In
 addition, the clock does not seem to be very accurate.
 */
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
-#include <linux/delay.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
 
 #include "comedi_fc.h"
 

@@ -4,9 +4,9 @@
 #if !defined(_TRACE_SCHED_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_SCHED_H
 
-#include <linux/sched.h>
-#include <linux/tracepoint.h>
-#include <linux/binfmts.h>
+#include <beep/sched.h>
+#include <beep/tracepoint.h>
+#include <beep/binfmts.h>
 
 /*
  * Tracepoint for calling kthread_stop, performed to end a kthread:
@@ -285,7 +285,7 @@ TRACE_EVENT(sched_process_fork,
 TRACE_EVENT(sched_process_exec,
 
 	TP_PROTO(struct task_struct *p, pid_t old_pid,
-		 struct linux_binprm *bprm),
+		 struct beep_binprm *bprm),
 
 	TP_ARGS(p, old_pid, bprm),
 

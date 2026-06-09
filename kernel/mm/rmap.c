@@ -42,21 +42,21 @@
  *     pte map lock
  */
 
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/rcupdate.h>
-#include <linux/export.h>
-#include <linux/memcontrol.h>
-#include <linux/mmu_notifier.h>
-#include <linux/migrate.h>
-#include <linux/hugetlb.h>
-#include <linux/backing-dev.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/swap.h>
+#include <beep/swapops.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/ksm.h>
+#include <beep/rmap.h>
+#include <beep/rcupdate.h>
+#include <beep/export.h>
+#include <beep/memcontrol.h>
+#include <beep/mmu_notifier.h>
+#include <beep/migrate.h>
+#include <beep/hugetlb.h>
+#include <beep/backing-dev.h>
 
 #include <asm/tlbflush.h>
 

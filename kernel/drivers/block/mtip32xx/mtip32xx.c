@@ -18,26 +18,26 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/ata.h>
-#include <linux/delay.h>
-#include <linux/hdreg.h>
-#include <linux/uaccess.h>
-#include <linux/random.h>
-#include <linux/smp.h>
-#include <linux/compat.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/genhd.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/kthread.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/ata.h>
+#include <beep/delay.h>
+#include <beep/hdreg.h>
+#include <beep/uaccess.h>
+#include <beep/random.h>
+#include <beep/smp.h>
+#include <beep/compat.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/genhd.h>
+#include <beep/blkdev.h>
+#include <beep/bio.h>
+#include <beep/dma-mapping.h>
+#include <beep/idr.h>
+#include <beep/kthread.h>
 #include <../drivers/ata/ahci.h>
-#include <linux/export.h>
-#include <linux/debugfs.h>
+#include <beep/export.h>
+#include <beep/debugfs.h>
 #include "mtip32xx.h"
 
 #define HW_CMD_SLOT_SZ		(MTIP_MAX_COMMAND_SLOTS * 32)

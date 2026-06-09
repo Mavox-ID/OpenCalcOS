@@ -5,16 +5,16 @@
  * Added /proc/sys/net/ipv4 directory entry (empty =) ). [MS]
  */
 
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/sysctl.h>
-#include <linux/igmp.h>
-#include <linux/inetdevice.h>
-#include <linux/seqlock.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/nsproxy.h>
-#include <linux/swap.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/sysctl.h>
+#include <beep/igmp.h>
+#include <beep/inetdevice.h>
+#include <beep/seqlock.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/nsproxy.h>
+#include <beep/swap.h>
 #include <net/snmp.h>
 #include <net/icmp.h>
 #include <net/ip.h>

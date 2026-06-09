@@ -3,7 +3,7 @@
  * Debugfs interfaces to manipulate driver and device information
  *
  *
- * Copyright (C) 2007 Intel Corporation <linux-wimax@intel.com>
+ * Copyright (C) 2007 Intel Corporation <beep-wimax@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *
  * This program is free software; you can redistribute it and/or
@@ -21,12 +21,12 @@
  * 02110-1301, USA.
  */
 
-#include <linux/debugfs.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/export.h>
+#include <beep/debugfs.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/spinlock.h>
+#include <beep/device.h>
+#include <beep/export.h>
 #include "i2400m.h"
 
 

@@ -30,17 +30,17 @@
  *
  ********************************************************************/
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/termios.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>		/* for MODULE_ALIAS_CHARDEV_MAJOR */
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/termios.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>		/* for MODULE_ALIAS_CHARDEV_MAJOR */
 
 #include <asm/uaccess.h>
 

@@ -7,15 +7,15 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/timer.h>
-#include <linux/err.h>
-#include <linux/ctype.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/device.h>
+#include <beep/timer.h>
+#include <beep/err.h>
+#include <beep/ctype.h>
 #include "merisc.h"
 
 static ssize_t merisc_model_show(struct class *class, char *buf)

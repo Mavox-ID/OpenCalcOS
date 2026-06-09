@@ -11,7 +11,7 @@
 //config:	default n  # off: it is too limited compared to upstream version
 //config:	help
 //config:	tune2fs allows the system administrator to adjust various tunable
-//config:	filesystem parameters on Linux ext2/ext3 filesystems.
+//config:	filesystem parameters on Beep ext2/ext3 filesystems.
 
 //applet:IF_TUNE2FS(APPLET_NOEXEC(tune2fs, tune2fs, BB_DIR_SBIN, BB_SUID_DROP, tune2fs))
 

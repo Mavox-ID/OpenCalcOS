@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/zylonite.c
+ * beep/arch/arm/mach-pxa/zylonite.c
  *
  * Support for the PXA3xx Development Platform (aka Zylonite)
  *
@@ -13,25 +13,25 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/pwm_backlight.h>
-#include <linux/smc91x.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/pwm_backlight.h>
+#include <beep/smc91x.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <mach/pxa3xx.h>
 #include <mach/audio.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <beep/platform_data/video-pxafb.h>
 #include <mach/zylonite.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/keypad-pxa27x.h>
-#include <linux/platform_data/mtd-nand-pxa3xx.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/keypad-pxa27x.h>
+#include <beep/platform_data/mtd-nand-pxa3xx.h>
 
 #include "devices.h"
 #include "generic.h"

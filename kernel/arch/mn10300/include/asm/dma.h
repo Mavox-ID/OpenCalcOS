@@ -11,11 +11,11 @@
 #ifndef _ASM_DMA_H
 #define _ASM_DMA_H
 
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 #include <asm/io.h>
-#include <linux/delay.h>
+#include <beep/delay.h>
 
-#undef MAX_DMA_CHANNELS		/* switch off linux/kernel/dma.c */
+#undef MAX_DMA_CHANNELS		/* switch off beep/kernel/dma.c */
 #define MAX_DMA_ADDRESS		0xbfffffff
 
 extern spinlock_t dma_spin_lock;

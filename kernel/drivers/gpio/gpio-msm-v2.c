@@ -17,16 +17,16 @@
  */
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <beep/bitmap.h>
+#include <beep/bitops.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
 
 #include <asm/mach/irq.h>
 

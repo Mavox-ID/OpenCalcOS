@@ -17,20 +17,20 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_data/gpio-em.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/bitops.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/platform_data/gpio-em.h>
 
 struct em_gio_priv {
 	void __iomem *base0;

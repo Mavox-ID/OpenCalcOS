@@ -7,9 +7,9 @@
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  */
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/io.h>
 #include <mach/hardware.h>
 #include <mach/global_reg.h>
 #include <asm/mach/time.h>

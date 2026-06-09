@@ -10,14 +10,14 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/mfd/pm8xxx/core.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/slab.h>
+#include <beep/mfd/pm8xxx/core.h>
 
 #define VIB_DRV			0x4A
 

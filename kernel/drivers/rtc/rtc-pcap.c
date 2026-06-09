@@ -12,13 +12,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mfd/ezx-pcap.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/mfd/ezx-pcap.h>
+#include <beep/rtc.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
 
 struct pcap_rtc {
 	struct pcap_chip *pcap;

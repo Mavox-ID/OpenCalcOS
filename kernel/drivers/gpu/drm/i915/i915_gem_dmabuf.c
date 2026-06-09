@@ -25,7 +25,7 @@
  */
 #include <drm/drmP.h>
 #include "i915_drv.h"
-#include <linux/dma-buf.h>
+#include <beep/dma-buf.h>
 
 static struct sg_table *i915_gem_map_dma_buf(struct dma_buf_attachment *attachment,
 					     enum dma_data_direction dir)

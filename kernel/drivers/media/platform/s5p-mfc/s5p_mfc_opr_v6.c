@@ -14,14 +14,14 @@
 
 #undef DEBUG
 
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/firmware.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/mm.h>
+#include <beep/io.h>
+#include <beep/jiffies.h>
+#include <beep/firmware.h>
+#include <beep/err.h>
+#include <beep/sched.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/cacheflush.h>
 

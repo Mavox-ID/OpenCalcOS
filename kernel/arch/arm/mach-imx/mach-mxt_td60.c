@@ -14,19 +14,19 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/i2c.h>
+#include <beep/irq.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/time.h>
 #include <asm/mach/map.h>
-#include <linux/gpio.h>
-#include <linux/i2c/pca953x.h>
+#include <beep/gpio.h>
+#include <beep/i2c/pca953x.h>
 
 #include "common.h"
 #include "devices-imx27.h"

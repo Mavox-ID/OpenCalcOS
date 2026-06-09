@@ -5,12 +5,12 @@
  * Based off the Assabet.
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>

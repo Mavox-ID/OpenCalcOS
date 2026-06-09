@@ -2,7 +2,7 @@
     comedi/drivers/rtd520.c
     Comedi driver for Real Time Devices (RTD) PCI4520/DM7520
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2001 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -101,8 +101,8 @@ Configuration options:
 
 */
 
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
 
 #include "../comedidev.h"
 

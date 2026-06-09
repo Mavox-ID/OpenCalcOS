@@ -1,5 +1,5 @@
 /*
- * linux/drivers/scsi/scsi_proc.c
+ * beep/drivers/scsi/scsi_proc.c
  *
  * The functions in this file provide an interface between
  * the PROC file system and the SCSI device drivers
@@ -16,16 +16,16 @@
  * Michael A. Griffith <grif@acm.org>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/errno.h>
-#include <linux/blkdev.h>
-#include <linux/seq_file.h>
-#include <linux/mutex.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/proc_fs.h>
+#include <beep/errno.h>
+#include <beep/blkdev.h>
+#include <beep/seq_file.h>
+#include <beep/mutex.h>
+#include <beep/gfp.h>
 #include <asm/uaccess.h>
 
 #include <scsi/scsi.h>

@@ -3,7 +3,7 @@
     generic comedi driver for SSV Embedded Systems' DIL/Net-PCs
     Copyright (C) 2001 Robert Schwebel <robert@schwebel.de>
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify

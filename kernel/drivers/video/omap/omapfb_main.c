@@ -24,13 +24,13 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
-#include <linux/platform_device.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
+#include <beep/platform_device.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
 
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 
 #include "omapfb.h"
 #include "lcdc.h"

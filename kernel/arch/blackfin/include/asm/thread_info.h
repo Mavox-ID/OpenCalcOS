@@ -10,7 +10,7 @@
 #include <asm/page.h>
 #include <asm/entry.h>
 #include <asm/l1layout.h>
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 #ifdef __KERNEL__
 

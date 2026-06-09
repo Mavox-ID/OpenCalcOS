@@ -11,11 +11,11 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/crc32.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/etherdevice.h>
+#include <beep/crc32.h>
+#include <beep/slab.h>
 
 #include "u_ether.h"
 

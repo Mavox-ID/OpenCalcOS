@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/console/sticore.c -
+ *  beep/drivers/video/console/sticore.c -
  *	core code for console driver using HP's STI firmware
  *
  *	Copyright (C) 2000 Philipp Rumpf <prumpf@tux.org>
@@ -13,13 +13,13 @@
  * 
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/font.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/font.h>
 
 #include <asm/hardware.h>
 #include <asm/page.h>
@@ -274,7 +274,7 @@ static int sti_setup(char *str)
 }
 
 /*	Assuming the machine has multiple STI consoles (=graphic cards) which
- *	all get detected by sticon, the user may define with the linux kernel
+ *	all get detected by sticon, the user may define with the beep kernel
  *	parameter sti=<x> which of them will be the initial boot-console.
  *	<x> is a number between 0 and MAX_STI_ROMS, with 0 as the default 
  *	STI screen.
@@ -319,11 +319,11 @@ static int sti_font_setup(char *str)
 	return 1;
 }
 
-/*	The optional linux kernel parameter "sti_font" defines which font
+/*	The optional beep kernel parameter "sti_font" defines which font
  *	should be used by the sticon driver to draw characters to the screen.
  *	Possible values are:
  *	- sti_font=<fb_fontname>:
- *		<fb_fontname> is the name of one of the linux-kernel built-in 
+ *		<fb_fontname> is the name of one of the beep-kernel built-in 
  *		framebuffer font names (e.g. VGA8x16, SUN22x18). 
  *		This is only available if the fonts have been statically compiled 
  *		in with e.g. the CONFIG_FONT_8x16 or CONFIG_FONT_SUN12x22 options.
@@ -788,7 +788,7 @@ ok:
 
 msg_not_supported:
 	printk(KERN_ERR "Sorry, this GSC/STI card is not yet supported.\n");
-	printk(KERN_ERR "Please see http://parisc-linux.org/faq/"
+	printk(KERN_ERR "Please see http://parisc-beep.org/faq/"
 			"graphics-howto.html for more info.\n");
 	/* fall through */
 out_err:

@@ -8,13 +8,13 @@
 //====================================================
 // 20090926; aelias; removed compiler warnings; ubuntu 9.04; 2.6.28-15-generic
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/usb.h>
-#include <linux/vmalloc.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/usb.h>
+#include <beep/vmalloc.h>
 #include "ft1000_usb.h"
 
 

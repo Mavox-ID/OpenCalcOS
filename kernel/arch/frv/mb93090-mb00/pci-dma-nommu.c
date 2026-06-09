@@ -9,12 +9,12 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/dma-mapping.h>
-#include <linux/list.h>
-#include <linux/pci.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/dma-mapping.h>
+#include <beep/list.h>
+#include <beep/pci.h>
 #include <asm/io.h>
 
 #if 1

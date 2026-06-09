@@ -2,7 +2,7 @@
 # Makefile for arch/c6x/kernel/
 #
 
-extra-y := head.o vmlinux.lds
+extra-y := head.o vmbeep.lds
 
 obj-y := process.o traps.o irq.o signal.o ptrace.o
 obj-y += setup.o sys_c6x.o time.o devicetree.o

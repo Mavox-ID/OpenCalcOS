@@ -14,10 +14,10 @@
  * (trickle charger, eeprom, T° compensation) are unavailable.
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/bcd.h>
+#include <beep/rtc.h>
 
 /* Register map */
 /* control section */

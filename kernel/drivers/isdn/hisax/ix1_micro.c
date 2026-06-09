@@ -6,7 +6,7 @@
  * Author       Klaus-Peter Nischke
  * Copyright    by Klaus-Peter Nischke, ITK AG
  *                                   <klaus@nischke.do.eunet.de>
- *              by Karsten Keil      <keil@isdn4linux.de>
+ *              by Karsten Keil      <keil@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
@@ -17,8 +17,8 @@
  * Germany
  */
 
-#include <linux/init.h>
-#include <linux/isapnp.h>
+#include <beep/init.h>
+#include <beep/isapnp.h>
 #include "hisax.h"
 #include "isac.h"
 #include "hscx.h"

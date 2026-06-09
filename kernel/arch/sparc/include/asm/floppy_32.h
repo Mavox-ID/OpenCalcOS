@@ -6,8 +6,8 @@
 #ifndef __ASM_SPARC_FLOPPY_H
 #define __ASM_SPARC_FLOPPY_H
 
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
 #include <asm/page.h>
 #include <asm/pgtable.h>
@@ -278,7 +278,7 @@ static int sun_fd_request_irq(void)
 	}
 }
 
-static struct linux_prom_registers fd_regs[2];
+static struct beep_prom_registers fd_regs[2];
 
 static int sun_floppy_init(void)
 {

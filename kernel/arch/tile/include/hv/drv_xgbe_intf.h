@@ -47,15 +47,15 @@ netio_ipp_address_t;
  */
 typedef enum
 {
-  /** Inform the Linux driver of the address of the NetIO arena memory.
+  /** Inform the Beep driver of the address of the NetIO arena memory.
    *  This offset is actually only used to convey information from netio
-   *  to the Linux driver; it never makes it from there to the hypervisor.
+   *  to the Beep driver; it never makes it from there to the hypervisor.
    *  Write-only; takes a uint32_t specifying the VA address. */
   NETIO_FIXED_ADDR               = 0x5000000000000000ULL,
 
-  /** Inform the Linux driver of the size of the NetIO arena memory.
+  /** Inform the Beep driver of the size of the NetIO arena memory.
    *  This offset is actually only used to convey information from netio
-   *  to the Linux driver; it never makes it from there to the hypervisor.
+   *  to the Beep driver; it never makes it from there to the hypervisor.
    *  Write-only; takes a uint32_t specifying the VA size. */
   NETIO_FIXED_SIZE               = 0x5100000000000000ULL,
 
@@ -106,7 +106,7 @@ typedef enum
   /** Unregister I/O memory.  Write-only, takes a netio_ipp_address_t. */
   NETIO_IPP_IOMEM_UNREGISTER_OFF = 0x7100000000000000ULL,
 
-  /* Offsets greater than 0x7FFFFFFF can't be used directly from Linux
+  /* Offsets greater than 0x7FFFFFFF can't be used directly from Beep
    * userspace code due to limitations in the pread/pwrite syscalls. */
 
   /** Drain LIPP buffers. */
@@ -457,7 +457,7 @@ typedef void* lepp_comp_t;
 
 
 /** Maximum number of frags for one TSO command.  This is adapted from
- *  linux's "MAX_SKB_FRAGS", and presumably over-estimates by one, for
+ *  beep's "MAX_SKB_FRAGS", and presumably over-estimates by one, for
  *  our page size of exactly 65536.  We add one for a "body" fragment.
  */
 #define LEPP_MAX_FRAGS (65536 / HV_DEFAULT_PAGE_SIZE_SMALL + 2 + 1)
@@ -586,7 +586,7 @@ lepp_qsub(int v1, int v2)
 }
 
 
-/** FIXME: Check this from linux, via a new "pwrite()" call. */
+/** FIXME: Check this from beep, via a new "pwrite()" call. */
 #define LIPP_VERSION 1
 
 

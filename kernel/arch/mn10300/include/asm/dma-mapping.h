@@ -11,8 +11,8 @@
 #ifndef _ASM_DMA_MAPPING_H
 #define _ASM_DMA_MAPPING_H
 
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
+#include <beep/mm.h>
+#include <beep/scatterlist.h>
 
 #include <asm/cache.h>
 #include <asm/io.h>

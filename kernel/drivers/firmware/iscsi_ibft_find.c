@@ -2,7 +2,7 @@
  *  Copyright 2007-2010 Red Hat, Inc.
  *  by Peter Jones <pjones@redhat.com>
  *  Copyright 2007 IBM, Inc.
- *  by Konrad Rzeszutek <konradr@linux.vnet.ibm.com>
+ *  by Konrad Rzeszutek <konradr@beep.vnet.ibm.com>
  *  Copyright 2008
  *  by Konrad Rzeszutek <ketuzsezr@darnok.org>
  *
@@ -18,21 +18,21 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/bootmem.h>
-#include <linux/blkdev.h>
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/efi.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/acpi.h>
-#include <linux/iscsi_ibft.h>
+#include <beep/bootmem.h>
+#include <beep/blkdev.h>
+#include <beep/ctype.h>
+#include <beep/device.h>
+#include <beep/efi.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/limits.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/stat.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/acpi.h>
+#include <beep/iscsi_ibft.h>
 
 #include <asm/mmzone.h>
 

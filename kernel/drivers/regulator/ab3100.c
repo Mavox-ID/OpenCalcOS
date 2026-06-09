@@ -9,14 +9,14 @@
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/mfd/ab3100.h>
-#include <linux/mfd/abx500.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/mfd/ab3100.h>
+#include <beep/mfd/abx500.h>
 
 /* LDO registers and some handy masking definitions for AB3100 */
 #define AB3100_LDO_A		0x40

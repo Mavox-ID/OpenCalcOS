@@ -44,7 +44,7 @@
 		ds1 {
 			label = "ds1";
 			gpios = <&pioB 9 0>;
-			linux,default-trigger = "heartbeat";
+			beep,default-trigger = "heartbeat";
 		};
 
 		ds5 {

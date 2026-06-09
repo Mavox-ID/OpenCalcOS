@@ -15,7 +15,7 @@
 #include "regs-mixer.h"
 #include "regs-vp.h"
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 /* Register access subroutines */
 

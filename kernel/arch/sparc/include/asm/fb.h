@@ -1,8 +1,8 @@
 #ifndef _SPARC_FB_H_
 #define _SPARC_FB_H_
-#include <linux/console.h>
-#include <linux/fb.h>
-#include <linux/fs.h>
+#include <beep/console.h>
+#include <beep/fb.h>
+#include <beep/fs.h>
 #include <asm/page.h>
 #include <asm/prom.h>
 

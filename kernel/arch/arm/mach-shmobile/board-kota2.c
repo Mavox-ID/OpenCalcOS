@@ -20,26 +20,26 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/smsc911x.h>
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/input/sh_keysc.h>
-#include <linux/gpio_keys.h>
-#include <linux/leds.h>
-#include <linux/platform_data/leds-renesas-tpu.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sh_mmcif.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/sh_mobile_sdhi.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
+#include <beep/smsc911x.h>
+#include <beep/gpio.h>
+#include <beep/input.h>
+#include <beep/input/sh_keysc.h>
+#include <beep/gpio_keys.h>
+#include <beep/leds.h>
+#include <beep/platform_data/leds-renesas-tpu.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/sh_mmcif.h>
+#include <beep/mfd/tmio.h>
+#include <beep/mmc/sh_mobile_sdhi.h>
 #include <mach/hardware.h>
 #include <mach/irqs.h>
 #include <mach/sh73a0.h>

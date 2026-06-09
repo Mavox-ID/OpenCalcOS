@@ -16,34 +16,34 @@
  * Included Files
  **************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/leds.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/i2c/at24.h>
-#include <linux/i2c/pcf857x.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/leds.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/i2c/at24.h>
+#include <beep/i2c/pcf857x.h>
 
 #include <media/tvp514x.h>
 #include <media/adv7343.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/clk.h>
-#include <linux/export.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/clk.h>
+#include <beep/export.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 
 #include <mach/common.h>
 #include <mach/serial.h>
-#include <linux/platform_data/i2c-davinci.h>
-#include <linux/platform_data/mtd-davinci.h>
+#include <beep/platform_data/i2c-davinci.h>
+#include <beep/platform_data/mtd-davinci.h>
 #include <mach/clock.h>
 #include <mach/cdce949.h>
-#include <linux/platform_data/mtd-davinci-aemif.h>
+#include <beep/platform_data/mtd-davinci-aemif.h>
 
 #include "davinci.h"
 #include "clock.h"

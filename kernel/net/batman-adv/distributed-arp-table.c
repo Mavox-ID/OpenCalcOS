@@ -17,8 +17,8 @@
  * 02110-1301, USA
  */
 
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
+#include <beep/if_ether.h>
+#include <beep/if_arp.h>
 #include <net/arp.h>
 
 #include "main.h"

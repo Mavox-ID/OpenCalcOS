@@ -21,9 +21,9 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
  * USA
  */
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_transport_srp.h>
@@ -665,7 +665,7 @@ static void process_crq(struct viosrp_crq *crq,	struct srp_target *target)
 			break;
 		case VIOSRP_OS400_FORMAT:
 		case VIOSRP_AIX_FORMAT:
-		case VIOSRP_LINUX_FORMAT:
+		case VIOSRP_BEEP_FORMAT:
 		case VIOSRP_INLINE_FORMAT:
 			eprintk("Unsupported format %u\n", crq->format);
 			break;

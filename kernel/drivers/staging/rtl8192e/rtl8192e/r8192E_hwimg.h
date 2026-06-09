@@ -21,7 +21,7 @@
 
 /*Created on  2008/11/18,  3: 7*/
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define BootArrayLengthPciE 344
 extern u8 Rtl8192PciEFwBootArray[BootArrayLengthPciE];

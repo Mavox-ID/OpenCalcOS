@@ -1,5 +1,5 @@
 /*
- * linux/driver/usb/host/ehci-w90x900.c
+ * beep/driver/usb/host/ehci-w90x900.c
  *
  * Copyright (c) 2008 Nuvoton technology corporation.
  *
@@ -11,7 +11,7 @@
  *
  */
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 
 /* enable phy0 and phy1 for w90p910 */
 #define	ENPHY		(0x01<<8)

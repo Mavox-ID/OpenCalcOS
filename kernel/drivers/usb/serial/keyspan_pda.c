@@ -15,20 +15,20 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/usb/ezusb.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/uaccess.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
+#include <beep/usb/ezusb.h>
 
 /* make a simple define to handle if we are compiling keyspan_pda or xircom support */
 #if defined(CONFIG_USB_SERIAL_KEYSPAN_PDA) || defined(CONFIG_USB_SERIAL_KEYSPAN_PDA_MODULE)

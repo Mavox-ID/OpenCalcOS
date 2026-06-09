@@ -27,13 +27,13 @@
 */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/moduleparam.h>
 #include <net/pkt_sched.h>
 #include <net/net_namespace.h>
 

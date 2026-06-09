@@ -1,5 +1,5 @@
 # Hexagon configuration
-comment "Linux Kernel Configuration for Hexagon"
+comment "Beep Kernel Configuration for Hexagon"
 
 config HEXAGON
 	def_bool y

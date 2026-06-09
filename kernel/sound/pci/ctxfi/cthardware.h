@@ -18,8 +18,8 @@
 #ifndef CTHARDWARE_H
 #define CTHARDWARE_H
 
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <beep/types.h>
+#include <beep/pci.h>
 
 enum CHIPTYP {
 	ATC20K1,

@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/console/fbcon_ud.c -- Software Rotation - 90 degrees
+ *  beep/drivers/video/console/fbcon_ud.c -- Software Rotation - 90 degrees
  *
  *      Copyright (C) 2005 Antonino Daplas <adaplas @pol.net>
  *
@@ -8,12 +8,12 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/fb.h>
-#include <linux/vt_kern.h>
-#include <linux/console.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/fb.h>
+#include <beep/vt_kern.h>
+#include <beep/console.h>
 #include <asm/types.h>
 #include "fbcon.h"
 #include "fbcon_rotate.h"

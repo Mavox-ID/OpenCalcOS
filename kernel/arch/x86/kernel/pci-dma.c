@@ -1,11 +1,11 @@
-#include <linux/dma-mapping.h>
-#include <linux/dma-debug.h>
-#include <linux/dmar.h>
-#include <linux/export.h>
-#include <linux/bootmem.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
-#include <linux/kmemleak.h>
+#include <beep/dma-mapping.h>
+#include <beep/dma-debug.h>
+#include <beep/dmar.h>
+#include <beep/export.h>
+#include <beep/bootmem.h>
+#include <beep/gfp.h>
+#include <beep/pci.h>
+#include <beep/kmemleak.h>
 
 #include <asm/proto.h>
 #include <asm/dma.h>

@@ -9,7 +9,7 @@
 #ifndef __ASM_BFIN_PPI_H__
 #define __ASM_BFIN_PPI_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/blackfin.h>
 
 /*

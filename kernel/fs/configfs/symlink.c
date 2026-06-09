@@ -24,12 +24,12 @@
  * configfs Copyright (C) 2005 Oracle.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/namei.h>
+#include <beep/slab.h>
 
-#include <linux/configfs.h>
+#include <beep/configfs.h>
 #include "configfs_internal.h"
 
 /* Protects attachments of new symlinks */

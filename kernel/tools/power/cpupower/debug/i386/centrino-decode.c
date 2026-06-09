@@ -1,10 +1,10 @@
 /*
- *  (C) 2003 - 2004  Dominik Brodowski <linux@dominikbrodowski.de>
+ *  (C) 2003 - 2004  Dominik Brodowski <beep@dominikbrodowski.de>
  *
  *  Licensed under the terms of the GNU GPL License version 2.
  *
  * Based on code found in
- * linux/arch/i386/kernel/cpu/cpufreq/speedstep-centrino.c
+ * beep/arch/i386/kernel/cpu/cpufreq/speedstep-centrino.c
  * and originally developed by Jeremy Fitzhardinge.
  *
  * USAGE: simply run it to decode the current settings on CPU 0,

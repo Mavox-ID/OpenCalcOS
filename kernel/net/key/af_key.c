@@ -6,27 +6,27 @@
  *		as published by the Free Software Foundation; either version
  *		2 of the License, or (at your option) any later version.
  *
- * Authors:	Maxim Giryaev	<gem@asplinux.ru>
+ * Authors:	Maxim Giryaev	<gem@aspbeep.ru>
  *		David S. Miller	<davem@redhat.com>
  *		Alexey Kuznetsov <kuznet@ms2.inr.ac.ru>
  *		Kunihiro Ishiguro <kunihiro@ipinfusion.com>
- *		Kazunori MIYAZAWA / USAGI Project <miyazawa@linux-ipv6.org>
+ *		Kazunori MIYAZAWA / USAGI Project <miyazawa@beep-ipv6.org>
  *		Derek Atkins <derek@ihtfp.com>
  */
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/socket.h>
-#include <linux/pfkeyv2.h>
-#include <linux/ipsec.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/capability.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/socket.h>
+#include <beep/pfkeyv2.h>
+#include <beep/ipsec.h>
+#include <beep/skbuff.h>
+#include <beep/rtnetlink.h>
+#include <beep/in.h>
+#include <beep/in6.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/xfrm.h>

@@ -8,15 +8,15 @@
  * Free Software Foundation; version 2 of the License.
  */
 
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/filter.h>
-#include <linux/moduleloader.h>
-#include <linux/netdevice.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/if_vlan.h>
+#include <beep/bitops.h>
+#include <beep/compiler.h>
+#include <beep/errno.h>
+#include <beep/filter.h>
+#include <beep/moduleloader.h>
+#include <beep/netdevice.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/if_vlan.h>
 #include <asm/cacheflush.h>
 #include <asm/hwcap.h>
 
@@ -63,7 +63,7 @@ struct jit_ctx {
 	u32 flags;
 	u32 *offsets;
 	u32 *target;
-#if __LINUX_ARM_ARCH__ < 7
+#if __BEEP_ARM_ARCH__ < 7
 	u16 epilogue_bytes;
 	u16 imm_count;
 	u32 *imms;
@@ -256,7 +256,7 @@ static int16_t imm8m(u32 x)
 	return -1;
 }
 
-#if __LINUX_ARM_ARCH__ < 7
+#if __BEEP_ARM_ARCH__ < 7
 
 static u16 imm_offset(u32 k, struct jit_ctx *ctx)
 {
@@ -292,14 +292,14 @@ static u16 imm_offset(u32 k, struct jit_ctx *ctx)
 	return imm;
 }
 
-#endif /* __LINUX_ARM_ARCH__ */
+#endif /* __BEEP_ARM_ARCH__ */
 
 /*
  * Move an immediate that's not an imm8m to a core register.
  */
 static inline void emit_mov_i_no8m(int rd, u32 val, struct jit_ctx *ctx)
 {
-#if __LINUX_ARM_ARCH__ < 7
+#if __BEEP_ARM_ARCH__ < 7
 	emit(ARM_LDR_I(rd, ARM_PC, imm_offset(val, ctx)), ctx);
 #else
 	emit(ARM_MOVW(rd, val & 0xffff), ctx);
@@ -318,7 +318,7 @@ static inline void emit_mov_i(int rd, u32 val, struct jit_ctx *ctx)
 		emit_mov_i_no8m(rd, val, ctx);
 }
 
-#if __LINUX_ARM_ARCH__ < 6
+#if __BEEP_ARM_ARCH__ < 6
 
 static void emit_load_be32(u8 cond, u8 r_res, u8 r_addr, struct jit_ctx *ctx)
 {
@@ -374,7 +374,7 @@ static inline void emit_swap16(u8 r_dst __maybe_unused,
 #endif
 }
 
-#endif /* __LINUX_ARM_ARCH__ < 6 */
+#endif /* __BEEP_ARM_ARCH__ < 6 */
 
 
 /* Compute the immediate value for a PC-relative branch. */
@@ -418,7 +418,7 @@ static inline void emit_err_ret(u8 cond, struct jit_ctx *ctx)
 
 static inline void emit_blx_r(u8 tgt_reg, struct jit_ctx *ctx)
 {
-#if __LINUX_ARM_ARCH__ < 5
+#if __BEEP_ARM_ARCH__ < 5
 	emit(ARM_MOV_R(ARM_LR, ARM_PC), ctx);
 
 	if (elf_hwcap & HWCAP_THUMB)
@@ -432,7 +432,7 @@ static inline void emit_blx_r(u8 tgt_reg, struct jit_ctx *ctx)
 
 static inline void emit_udiv(u8 rd, u8 rm, u8 rn, struct jit_ctx *ctx)
 {
-#if __LINUX_ARM_ARCH__ == 7
+#if __BEEP_ARM_ARCH__ == 7
 	if (elf_hwcap & HWCAP_IDIVA) {
 		emit(ARM_UDIV(rd, rm, rn), ctx);
 		return;
@@ -876,7 +876,7 @@ void bpf_jit_compile(struct sk_filter *fp)
 	build_prologue(&ctx);
 	ctx.prologue_bytes = (ctx.idx - tmp_idx) * 4;
 
-#if __LINUX_ARM_ARCH__ < 7
+#if __BEEP_ARM_ARCH__ < 7
 	tmp_idx = ctx.idx;
 	build_epilogue(&ctx);
 	ctx.epilogue_bytes = (ctx.idx - tmp_idx) * 4;
@@ -905,7 +905,7 @@ void bpf_jit_compile(struct sk_filter *fp)
 
 	flush_icache_range((u32)ctx.target, (u32)(ctx.target + ctx.idx));
 
-#if __LINUX_ARM_ARCH__ < 7
+#if __BEEP_ARM_ARCH__ < 7
 	if (ctx.imm_count)
 		kfree(ctx.imms);
 #endif

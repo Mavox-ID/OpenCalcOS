@@ -11,7 +11,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 /* Beholder Intl. Ltd. 2008
  * Dmitry Belimov d.belimov@google.com

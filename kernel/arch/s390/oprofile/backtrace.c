@@ -4,7 +4,7 @@
  *   Author(s): Andreas Krebbel <Andreas.Krebbel@de.ibm.com>
  */
 
-#include <linux/oprofile.h>
+#include <beep/oprofile.h>
 
 #include <asm/processor.h> /* for struct stack_frame */
 

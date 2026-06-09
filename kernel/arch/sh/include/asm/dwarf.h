@@ -195,10 +195,10 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
-#include <linux/bug.h>
-#include <linux/list.h>
-#include <linux/module.h>
+#include <beep/compiler.h>
+#include <beep/bug.h>
+#include <beep/list.h>
+#include <beep/module.h>
 
 /*
  * Read either the frame pointer (r14) or the stack pointer (r15).

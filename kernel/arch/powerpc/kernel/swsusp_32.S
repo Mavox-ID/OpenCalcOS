@@ -1,4 +1,4 @@
-#include <linux/threads.h>
+#include <beep/threads.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 #include <asm/cputable.h>

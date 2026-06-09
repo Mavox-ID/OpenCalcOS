@@ -28,13 +28,13 @@
 #ifndef TTM_MEMORY_H
 #define TTM_MEMORY_H
 
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/bug.h>
-#include <linux/wait.h>
-#include <linux/errno.h>
-#include <linux/kobject.h>
-#include <linux/mm.h>
+#include <beep/workqueue.h>
+#include <beep/spinlock.h>
+#include <beep/bug.h>
+#include <beep/wait.h>
+#include <beep/errno.h>
+#include <beep/kobject.h>
+#include <beep/mm.h>
 
 /**
  * struct ttm_mem_shrink - callback to shrink TTM memory usage.

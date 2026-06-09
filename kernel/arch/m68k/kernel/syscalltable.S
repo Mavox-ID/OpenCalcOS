@@ -8,10 +8,10 @@
  *  Copyright (C) 2000  Lineo Inc. (www.lineo.com) 
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
- *  Linux/m68k support by Hamish Macdonald
+ *  Beep/m68k support by Hamish Macdonald
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #ifndef CONFIG_MMU
 #define sys_mmap2		sys_mmap_pgoff

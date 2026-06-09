@@ -5,16 +5,16 @@
  * and should work with all USB controllers, regardles of bus type.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/mm.h>
+#include <beep/io.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmapool.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
 
 
 /*

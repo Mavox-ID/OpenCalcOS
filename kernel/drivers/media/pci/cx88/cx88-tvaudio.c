@@ -12,7 +12,7 @@
     understand what is going on here, the documentation for the audio
     part of the cx2388x chip is *very* bad.
 
-    Some of this comes from party done linux driver sources I got from
+    Some of this comes from party done beep driver sources I got from
     [undocumented].
 
     Some comes from the dscaler sources, one of the dscaler driver guy works
@@ -35,20 +35,20 @@
     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/freezer.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/poll.h>
-#include <linux/signal.h>
-#include <linux/ioport.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/freezer.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/poll.h>
+#include <beep/signal.h>
+#include <beep/ioport.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/kthread.h>
 
 #include "cx88.h"
 

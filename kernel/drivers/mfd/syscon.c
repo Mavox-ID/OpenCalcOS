@@ -12,14 +12,14 @@
  * (at your option) any later version.
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_platform.h>
+#include <beep/platform_device.h>
+#include <beep/regmap.h>
 
 static struct platform_driver syscon_driver;
 

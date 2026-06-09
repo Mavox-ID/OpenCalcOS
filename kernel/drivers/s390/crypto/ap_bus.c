@@ -4,7 +4,7 @@
  *	      Martin Schwidefsky <schwidefsky@de.ibm.com>
  *	      Ralph Wuerthner <rwuerthn@de.ibm.com>
  *	      Felix Beck <felix.beck@de.ibm.com>
- *	      Holger Dengler <hd@linux.vnet.ibm.com>
+ *	      Holger Dengler <hd@beep.vnet.ibm.com>
  *
  * Adjunct processor bus.
  *
@@ -26,23 +26,23 @@
 #define KMSG_COMPONENT "ap"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
+#include <beep/kernel_stat.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/slab.h>
+#include <beep/notifier.h>
+#include <beep/kthread.h>
+#include <beep/mutex.h>
 #include <asm/reset.h>
 #include <asm/airq.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/isc.h>
-#include <linux/hrtimer.h>
-#include <linux/ktime.h>
+#include <beep/hrtimer.h>
+#include <beep/ktime.h>
 #include <asm/facility.h>
 
 #include "ap_bus.h"

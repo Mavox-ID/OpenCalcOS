@@ -17,7 +17,7 @@
 
 ;;  uint64_t __c6xabi_llshr(uint64_t val, uint shift)
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 	.text
 ENTRY(__c6xabi_llshr)

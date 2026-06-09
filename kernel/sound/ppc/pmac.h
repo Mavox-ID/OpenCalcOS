@@ -26,16 +26,16 @@
 #include <sound/pcm.h>
 #include "awacs.h"
 
-#include <linux/adb.h>
+#include <beep/adb.h>
 #ifdef CONFIG_ADB_CUDA
-#include <linux/cuda.h>
+#include <beep/cuda.h>
 #endif
 #ifdef CONFIG_ADB_PMU
-#include <linux/pmu.h>
+#include <beep/pmu.h>
 #endif
-#include <linux/nvram.h>
-#include <linux/tty.h>
-#include <linux/vt_kern.h>
+#include <beep/nvram.h>
+#include <beep/tty.h>
+#include <beep/vt_kern.h>
 #include <asm/dbdma.h>
 #include <asm/prom.h>
 #include <asm/machdep.h>

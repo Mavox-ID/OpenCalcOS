@@ -42,14 +42,14 @@
  *  	- parse available sample rates again when clock sources changed
  */
 
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/audio-v2.h>
+#include <beep/bitops.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/usb.h>
+#include <beep/usb/audio.h>
+#include <beep/usb/audio-v2.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

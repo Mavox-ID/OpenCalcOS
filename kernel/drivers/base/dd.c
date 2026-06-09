@@ -17,13 +17,13 @@
  * This file is released under the GPLv2
  */
 
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/wait.h>
-#include <linux/async.h>
-#include <linux/pm_runtime.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/kthread.h>
+#include <beep/wait.h>
+#include <beep/async.h>
+#include <beep/pm_runtime.h>
 
 #include "base.h"
 #include "power/power.h"

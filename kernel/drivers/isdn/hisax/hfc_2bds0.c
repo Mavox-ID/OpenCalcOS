@@ -3,20 +3,20 @@
  * specific routines for CCD's HFC 2BDS0
  *
  * Author       Karsten Keil
- * Copyright    by Karsten Keil      <keil@isdn4linux.de>
+ * Copyright    by Karsten Keil      <keil@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 #include "hisax.h"
 #include "hfc_2bds0.h"
 #include "isdnl1.h"
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 /*
   #define KDEBUG_DEF
   #include "kdebug.h"

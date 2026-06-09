@@ -2,7 +2,7 @@
  * IPv6 library code, needed by static components when full IPv6 support is
  * not configured or static.
  */
-#include <linux/export.h>
+#include <beep/export.h>
 #include <net/ipv6.h>
 
 /*
@@ -40,7 +40,7 @@ EXPORT_SYMBOL(ipv6_ext_hdr);
  * ICMP error messages).
  *
  * But I see no other way to do this. This might need to be reexamined
- * when Linux implements ESP (and maybe AUTH) headers.
+ * when Beep implements ESP (and maybe AUTH) headers.
  * --AK
  *
  * This function parses (probably truncated) exthdr set "hdr".

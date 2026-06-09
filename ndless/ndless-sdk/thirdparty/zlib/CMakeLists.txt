@@ -189,7 +189,7 @@ set_target_properties(zlib PROPERTIES DEFINE_SYMBOL ZLIB_DLL)
 set_target_properties(zlib PROPERTIES SOVERSION 1)
 
 if(NOT CYGWIN)
-    # This property causes shared libraries on Linux to have the full version
+    # This property causes shared libraries on Beep to have the full version
     # encoded into their final filename.  We disable this on Cygwin because
     # it causes cygz-${ZLIB_FULL_VERSION}.dll to be created when cygz.dll
     # seems to be the default.

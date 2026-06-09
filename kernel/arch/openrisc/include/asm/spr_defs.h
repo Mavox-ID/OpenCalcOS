@@ -1,5 +1,5 @@
 /*
- * OpenRISC Linux
+ * OpenRISC Beep
  *
  * SPR Definitions
  *

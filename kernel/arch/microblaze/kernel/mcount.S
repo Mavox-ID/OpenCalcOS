@@ -9,7 +9,7 @@
  * archive for more details.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #define NOALIGN_ENTRY(name)	.globl name; name:
 

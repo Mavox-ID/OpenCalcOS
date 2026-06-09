@@ -18,12 +18,12 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/dma-mapping.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 
 #include <asm/udbg.h>
 #include <asm/lv1call.h>

@@ -17,29 +17,29 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/dmaengine.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/bitops.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/semaphore.h>
+#include <beep/spinlock.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/firmware.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/dmaengine.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
 #include <asm/irq.h>
-#include <linux/platform_data/dma-imx-sdma.h>
-#include <linux/platform_data/dma-imx.h>
+#include <beep/platform_data/dma-imx-sdma.h>
+#include <beep/platform_data/dma-imx.h>
 
 #include "dmaengine.h"
 

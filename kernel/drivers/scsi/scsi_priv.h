@@ -1,8 +1,8 @@
 #ifndef _SCSI_PRIV_H
 #define _SCSI_PRIV_H
 
-#include <linux/device.h>
-#include <linux/async.h>
+#include <beep/device.h>
+#include <beep/async.h>
 #include <scsi/scsi_device.h>
 
 struct request_queue;

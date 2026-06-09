@@ -8,7 +8,7 @@
  */
 #if !ENABLE_USE_BB_CRYPT
 # if !defined(__FreeBSD__)
-#  include <crypt.h>
+/* # include <crypt.h> */ extern char *crypt(const char *key, const char *salt);
 # endif
 #endif
 #include "libbb.h"

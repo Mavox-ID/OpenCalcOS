@@ -2,13 +2,13 @@
  * arch/sh/boot/compressed/misc.c
  *
  * This is a collection of several routines from gzip-1.0.3
- * adapted for Linux.
+ * adapted for Beep.
  *
  * malloc by Hannu Savolainen 1993 and Matthias Urlichs 1994
  *
  * Adapted for SH by Stuart Menefy, Aug 1999
  *
- * Modified to use standard LinuxSH BIOS by Greg Banks 7Jul2000
+ * Modified to use standard BeepSH BIOS by Greg Banks 7Jul2000
  */
 
 #include <asm/uaccess.h>
@@ -38,7 +38,7 @@ static void error(char *m);
 
 int puts(const char *);
 
-extern int _text;		/* Defined in vmlinux.lds.S */
+extern int _text;		/* Defined in vmbeep.lds.S */
 extern int _end;
 static unsigned long free_mem_ptr;
 static unsigned long free_mem_end_ptr;
@@ -130,7 +130,7 @@ void decompress_kernel(void)
 	free_mem_ptr = (unsigned long)&_end;
 	free_mem_end_ptr = free_mem_ptr + HEAP_SIZE;
 
-	puts("Uncompressing Linux... ");
+	puts("Uncompressing Beep... ");
 	cache_control(CACHE_ENABLE);
 	decompress(input_data, input_len, NULL, NULL, output, NULL, error);
 	cache_control(CACHE_DISABLE);

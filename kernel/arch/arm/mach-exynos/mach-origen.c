@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-exynos4/mach-origen.c
+/* beep/arch/arm/mach-exynos4/mach-origen.c
  *
  * Copyright (c) 2011 Insignal Co., Ltd.
  *		http://www.insignal.co.kr/
@@ -8,25 +8,25 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/serial_core.h>
-#include <linux/leds.h>
-#include <linux/gpio.h>
-#include <linux/mmc/host.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/input.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/gpio_keys.h>
-#include <linux/i2c.h>
-#include <linux/regulator/machine.h>
-#include <linux/mfd/max8997.h>
-#include <linux/lcd.h>
-#include <linux/rfkill-gpio.h>
-#include <linux/platform_data/i2c-s3c2410.h>
-#include <linux/platform_data/s3c-hsotg.h>
-#include <linux/platform_data/usb-ehci-s5p.h>
-#include <linux/platform_data/usb-exynos.h>
+#include <beep/serial_core.h>
+#include <beep/leds.h>
+#include <beep/gpio.h>
+#include <beep/mmc/host.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/input.h>
+#include <beep/pwm.h>
+#include <beep/pwm_backlight.h>
+#include <beep/gpio_keys.h>
+#include <beep/i2c.h>
+#include <beep/regulator/machine.h>
+#include <beep/mfd/max8997.h>
+#include <beep/lcd.h>
+#include <beep/rfkill-gpio.h>
+#include <beep/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/s3c-hsotg.h>
+#include <beep/platform_data/usb-ehci-s5p.h>
+#include <beep/platform_data/usb-exynos.h>
 
 #include <asm/mach/arch.h>
 #include <asm/hardware/gic.h>

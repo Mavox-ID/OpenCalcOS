@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5pv210/mach-aquila.c
+/* beep/arch/arm/mach-s5pv210/mach-aquila.c
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/
@@ -8,19 +8,19 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/fb.h>
-#include <linux/i2c.h>
-#include <linux/i2c-gpio.h>
-#include <linux/mfd/max8998.h>
-#include <linux/mfd/wm8994/pdata.h>
-#include <linux/regulator/fixed.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/serial_core.h>
+#include <beep/fb.h>
+#include <beep/i2c.h>
+#include <beep/i2c-gpio.h>
+#include <beep/mfd/max8998.h>
+#include <beep/mfd/wm8994/pdata.h>
+#include <beep/regulator/fixed.h>
+#include <beep/gpio_keys.h>
+#include <beep/input.h>
+#include <beep/gpio.h>
 
 #include <asm/hardware/vic.h>
 #include <asm/mach/arch.h>

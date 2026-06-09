@@ -13,7 +13,7 @@
 #ifndef __ASM_ARCH_AT91RM9200_GPIO_H
 #define __ASM_ARCH_AT91RM9200_GPIO_H
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <asm/irq.h>
 
 #define MAX_GPIO_BANKS		5

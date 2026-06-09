@@ -12,19 +12,19 @@
  * to the pair and can be looked up from userspace.
  */
 
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/mount.h>
-#include <linux/capability.h>
-#include <linux/dcache.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/dcookies.h>
-#include <linux/mutex.h>
-#include <linux/path.h>
+#include <beep/syscalls.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/mount.h>
+#include <beep/capability.h>
+#include <beep/dcache.h>
+#include <beep/mm.h>
+#include <beep/err.h>
+#include <beep/errno.h>
+#include <beep/dcookies.h>
+#include <beep/mutex.h>
+#include <beep/path.h>
 #include <asm/uaccess.h>
 
 /* The dcookies are allocated from a kmem_cache and

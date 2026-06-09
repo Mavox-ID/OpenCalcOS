@@ -1,12 +1,12 @@
-#ifndef LINUX_BCMA_PRIVATE_H_
-#define LINUX_BCMA_PRIVATE_H_
+#ifndef BEEP_BCMA_PRIVATE_H_
+#define BEEP_BCMA_PRIVATE_H_
 
 #ifndef pr_fmt
 #define pr_fmt(fmt)		KBUILD_MODNAME ": " fmt
 #endif
 
-#include <linux/bcma/bcma.h>
-#include <linux/delay.h>
+#include <beep/bcma/bcma.h>
+#include <beep/delay.h>
 
 #define BCMA_CORE_SIZE		0x1000
 

@@ -1,10 +1,10 @@
 /*
- * linux/sound/oss/waveartist.c
+ * beep/sound/oss/waveartist.c
  *
  * The low level driver for the RWA010 Rockwell Wave Artist
  * codec chip used in the Rebel.com NetWinder.
  *
- * Cleaned up and integrated into 2.1 by Russell King (rmk@arm.linux.org.uk)
+ * Cleaned up and integrated into 2.1 by Russell King (rmk@arm.beep.org.uk)
  * and Pat Beirne (patb@corel.ca)
  *
  *
@@ -14,12 +14,12 @@
  *
  * Copyright (C) by Hannu Savolainen 1993-1997
  *
- * OSS/Free for Linux is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
+ * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
  * Version 2 (June 1991). See the "COPYING" file distributed with this software
  * for more info.
  *
  * Changes:
- * 11-10-2000	Bartlomiej Zolnierkiewicz <bkz@linux-ide.org>
+ * 11-10-2000	Bartlomiej Zolnierkiewicz <bkz@beep-ide.org>
  *		Added __init to waveartist_init()
  */
 
@@ -33,14 +33,14 @@
 
 #define debug_flg (0)
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/bitops.h>
 
 
 #include "sound_config.h"

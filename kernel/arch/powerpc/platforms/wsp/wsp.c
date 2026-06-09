@@ -7,12 +7,12 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/smp.h>
-#include <linux/delay.h>
-#include <linux/time.h>
+#include <beep/kernel.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/smp.h>
+#include <beep/delay.h>
+#include <beep/time.h>
 
 #include <asm/scom.h>
 

@@ -20,19 +20,19 @@
  *   K. Y. Srinivasan <kys@microsoft.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/hyperv.h>
-#include <linux/mempool.h>
+#include <beep/kernel.h>
+#include <beep/wait.h>
+#include <beep/sched.h>
+#include <beep/completion.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/hyperv.h>
+#include <beep/mempool.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_host.h>

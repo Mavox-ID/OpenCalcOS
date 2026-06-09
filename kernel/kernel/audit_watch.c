@@ -19,17 +19,17 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/audit.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/fsnotify_backend.h>
-#include <linux/namei.h>
-#include <linux/netlink.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/security.h>
+#include <beep/kernel.h>
+#include <beep/audit.h>
+#include <beep/kthread.h>
+#include <beep/mutex.h>
+#include <beep/fs.h>
+#include <beep/fsnotify_backend.h>
+#include <beep/namei.h>
+#include <beep/netlink.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/security.h>
 #include "audit.h"
 
 /*

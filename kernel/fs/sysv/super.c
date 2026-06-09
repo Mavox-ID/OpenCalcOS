@@ -1,5 +1,5 @@
 /*
- *  linux/fs/sysv/inode.c
+ *  beep/fs/sysv/inode.c
  *
  *  minix/inode.c
  *  Copyright (C) 1991, 1992  Linus Torvalds
@@ -20,10 +20,10 @@
  *  This file contains code for read/parsing the superblock.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/buffer_head.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/buffer_head.h>
 #include "sysv.h"
 
 /*

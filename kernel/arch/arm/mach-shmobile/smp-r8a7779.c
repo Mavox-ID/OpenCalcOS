@@ -17,12 +17,12 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
+#include <beep/delay.h>
 #include <mach/common.h>
 #include <mach/r8a7779.h>
 #include <asm/smp_plat.h>

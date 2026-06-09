@@ -19,18 +19,18 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/device.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/rawmidi.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/midi.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb/audio.h>
+#include <beep/usb/midi.h>
 
 MODULE_AUTHOR("Ben Williamson");
 MODULE_LICENSE("GPL v2");

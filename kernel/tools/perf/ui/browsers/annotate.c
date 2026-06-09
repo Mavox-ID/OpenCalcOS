@@ -737,7 +737,7 @@ show_help:
 		case K_ENTER:
 		case K_RIGHT:
 			if (browser->selection == NULL)
-				ui_helpline__puts("Huh? No selection. Report to linux-kernel@vger.kernel.org");
+				ui_helpline__puts("Huh? No selection. Report to beep-kernel@vger.kernel.org");
 			else if (browser->selection->offset == -1)
 				ui_helpline__puts("Actions are only available for assembly lines.");
 			else if (!browser->selection->ins) {

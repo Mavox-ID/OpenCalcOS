@@ -1,10 +1,10 @@
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/cpu.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/mutex.h>
+#include <beep/cpu.h>
 
-#include <linux/jump_label.h>
-#include <linux/memory.h>
+#include <beep/jump_label.h>
+#include <beep/memory.h>
 
 #include <asm/cacheflush.h>
 

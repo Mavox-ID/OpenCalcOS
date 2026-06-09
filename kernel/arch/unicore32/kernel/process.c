@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/process.c
+ * beep/arch/unicore32/kernel/process.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -11,26 +11,26 @@
  */
 #include <stdarg.h>
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/interrupt.h>
-#include <linux/kallsyms.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/elfcore.h>
-#include <linux/pm.h>
-#include <linux/tick.h>
-#include <linux/utsname.h>
-#include <linux/uaccess.h>
-#include <linux/random.h>
-#include <linux/gpio.h>
-#include <linux/stacktrace.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/delay.h>
+#include <beep/reboot.h>
+#include <beep/interrupt.h>
+#include <beep/kallsyms.h>
+#include <beep/init.h>
+#include <beep/cpu.h>
+#include <beep/elfcore.h>
+#include <beep/pm.h>
+#include <beep/tick.h>
+#include <beep/utsname.h>
+#include <beep/uaccess.h>
+#include <beep/random.h>
+#include <beep/gpio.h>
+#include <beep/stacktrace.h>
 
 #include <asm/cacheflush.h>
 #include <asm/processor.h>

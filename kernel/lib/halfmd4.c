@@ -1,6 +1,6 @@
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/cryptohash.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/cryptohash.h>
 
 /* F, G and H are basic MD4 functions: selection, majority, parity */
 #define F(x, y, z) ((z) ^ ((x) & ((y) ^ (z))))

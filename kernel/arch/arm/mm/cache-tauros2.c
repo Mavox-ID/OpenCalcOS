@@ -14,9 +14,9 @@
  *   Document ID MV-S105190-00, Rev 0.7, March 14 2008.
  */
 
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <beep/init.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>
 #include <asm/cputype.h>
@@ -33,7 +33,7 @@
  * outer cache operations into the kernel image if the kernel has been
  * configured to support a pre-v7 CPU.
  */
-#if __LINUX_ARM_ARCH__ < 7
+#if __BEEP_ARM_ARCH__ < 7
 /*
  * Low-level cache maintenance operations.
  */
@@ -54,9 +54,9 @@ static inline void tauros2_inv_pa(unsigned long addr)
 
 
 /*
- * Linux primitives.
+ * Beep primitives.
  *
- * Note that the end addresses passed to Linux primitives are
+ * Note that the end addresses passed to Beep primitives are
  * noninclusive.
  */
 #define CACHE_LINE_SIZE		32

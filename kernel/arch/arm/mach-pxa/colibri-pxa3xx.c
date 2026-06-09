@@ -10,11 +10,11 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/etherdevice.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/etherdevice.h>
 #include <asm/mach-types.h>
 #include <mach/hardware.h>
 #include <asm/sizes.h>
@@ -24,9 +24,9 @@
 #include <mach/pxa3xx-regs.h>
 #include <mach/mfp-pxa300.h>
 #include <mach/colibri.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mtd-nand-pxa3xx.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/video-pxafb.h>
+#include <beep/platform_data/mtd-nand-pxa3xx.h>
 
 #include "generic.h"
 #include "devices.h"

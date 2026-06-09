@@ -1,9 +1,9 @@
 /*
- *  linux/fs/ext4/indirect.c
+ *  beep/fs/ext4/indirect.c
  *
  *  from
  *
- *  linux/fs/ext4/inode.c
+ *  beep/fs/ext4/inode.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -12,7 +12,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  beep/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *

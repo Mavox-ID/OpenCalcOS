@@ -22,23 +22,23 @@
  *
  *
  * Original version/author:
- *      CVSROOT=:pserver:anonymous@198.186.203.37:/cvsroot/linux-parisc
- *      cvs -z3 co linux/arch/parisc/kernel/dma-rm.c
+ *      CVSROOT=:pserver:anonymous@198.186.203.37:/cvsroot/beep-parisc
+ *      cvs -z3 co beep/arch/parisc/kernel/dma-rm.c
  *
  *	(C) Copyright 2000 Philipp Rumpf <prumpf@tux.org>
  *
  *
- * Adopted for The Puffin Group's parisc-linux port by Grant Grundler.
+ * Adopted for The Puffin Group's parisc-beep port by Grant Grundler.
  *	(C) Copyright 2000 Grant Grundler <grundler@puffin.external.hp.com>
  *	
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/gfp.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/pci.h>
+#include <beep/gfp.h>
 
 #include <asm/uaccess.h>
 

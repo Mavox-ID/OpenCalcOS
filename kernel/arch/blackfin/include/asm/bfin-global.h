@@ -11,8 +11,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/linkage.h>
-#include <linux/types.h>
+#include <beep/linkage.h>
+#include <beep/types.h>
 
 #if defined(CONFIG_DMA_UNCACHED_32M)
 # define DMA_UNCACHED_REGION (32 * 1024 * 1024)

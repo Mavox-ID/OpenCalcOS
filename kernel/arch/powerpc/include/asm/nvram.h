@@ -10,8 +10,8 @@
 #define _ASM_POWERPC_NVRAM_H
 
 
-#include <linux/errno.h>
-#include <linux/list.h>
+#include <beep/errno.h>
+#include <beep/list.h>
 #include <uapi/asm/nvram.h>
 
 #ifdef CONFIG_PPC_PSERIES

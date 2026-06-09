@@ -289,7 +289,7 @@
 /*
 ** Include the IOCTL stuff
 */
-#include <linux/sockios.h>
+#include <beep/sockios.h>
 
 #define	EWRK3IOCTL	SIOCDEVPRIVATE
 

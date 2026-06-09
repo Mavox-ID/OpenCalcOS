@@ -51,7 +51,7 @@ displays the statistics gathered since it was forked.
 .nf
 \fBpk\fP processor package number.
 \fBcor\fP processor core number.
-\fBCPU\fP Linux CPU (logical processor) number.
+\fBCPU\fP Beep CPU (logical processor) number.
 Note that multiple CPUs per core indicate support for Intel(R) Hyper-Threading Technology.
 \fB%c0\fP percent of the interval that the CPU retired instructions.
 \fBGHz\fP average clock rate while the CPU was in c0 state.
@@ -218,7 +218,7 @@ So it will not interfere with the OS or other programs, including
 multiple invocations of itself.
 
 \fBturbostat \fP
-may work poorly on Linux-2.6.20 through 2.6.29,
+may work poorly on Beep-2.6.20 through 2.6.29,
 as \fBacpi-cpufreq \fPperiodically cleared the APERF and MPERF
 in those kernels.
 

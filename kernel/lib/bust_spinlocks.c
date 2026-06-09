@@ -7,12 +7,12 @@
  * and panic() information from reaching the user.
  */
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/tty.h>
-#include <linux/wait.h>
-#include <linux/vt_kern.h>
-#include <linux/console.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/tty.h>
+#include <beep/wait.h>
+#include <beep/vt_kern.h>
+#include <beep/console.h>
 
 
 void __attribute__((weak)) bust_spinlocks(int yes)

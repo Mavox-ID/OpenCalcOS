@@ -32,9 +32,9 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/serial_8250.h>
-#include <linux/pm.h>
+#include <beep/kernel.h>
+#include <beep/serial_8250.h>
+#include <beep/pm.h>
 
 #include <asm/reboot.h>
 #include <asm/time.h>
@@ -78,7 +78,7 @@ static void __init nlm_early_serial_setup(void)
 	early_serial_setup(&s);
 }
 
-static void nlm_linux_exit(void)
+static void nlm_beep_exit(void)
 {
 	uint64_t gpiobase;
 
@@ -92,9 +92,9 @@ static void nlm_linux_exit(void)
 void __init plat_mem_setup(void)
 {
 	panic_timeout	= 5;
-	_machine_restart = (void (*)(char *))nlm_linux_exit;
-	_machine_halt	= nlm_linux_exit;
-	pm_power_off	= nlm_linux_exit;
+	_machine_restart = (void (*)(char *))nlm_beep_exit;
+	_machine_halt	= nlm_beep_exit;
+	pm_power_off	= nlm_beep_exit;
 }
 
 const char *get_system_type(void)

@@ -9,15 +9,15 @@
  * are in one chunk. Holes between them will be included in the node.
  */
 
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/mmzone.h>
-#include <linux/bitmap.h>
-#include <linux/module.h>
-#include <linux/topology.h>
-#include <linux/bootmem.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
+#include <beep/kernel.h>
+#include <beep/acpi.h>
+#include <beep/mmzone.h>
+#include <beep/bitmap.h>
+#include <beep/module.h>
+#include <beep/topology.h>
+#include <beep/bootmem.h>
+#include <beep/memblock.h>
+#include <beep/mm.h>
 #include <asm/proto.h>
 #include <asm/numa.h>
 #include <asm/e820.h>

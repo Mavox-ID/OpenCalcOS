@@ -21,10 +21,10 @@
 #define KMSG_COMPONENT "SFI"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/sfi.h>
-#include <linux/io.h>
+#include <beep/acpi.h>
+#include <beep/init.h>
+#include <beep/sfi.h>
+#include <beep/io.h>
 
 #include <asm/io_apic.h>
 #include <asm/mpspec.h>

@@ -12,7 +12,7 @@
 #ifndef _XTENSA_COPROCESSOR_H
 #define _XTENSA_COPROCESSOR_H
 
-#include <linux/stringify.h>
+#include <beep/stringify.h>
 #include <variant/core.h>
 #include <variant/tie.h>
 #include <asm/types.h>

@@ -15,15 +15,15 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/bcd.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/bcd.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/of.h>
 
 /*
  * Register definitions

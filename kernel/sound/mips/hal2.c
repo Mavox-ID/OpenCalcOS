@@ -2,7 +2,7 @@
  *  Driver for A2 audio system used in SGI machines
  *  Copyright (c) 2008 Thomas Bogendoerfer <tsbogend@alpha.fanken.de>
  *
- *  Based on OSS code from Ladislav Michl <ladis@linux-mips.org>, which
+ *  Based on OSS code from Ladislav Michl <ladis@beep-mips.org>, which
  *  was based on code from Ulf Carlsson
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -19,14 +19,14 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include <asm/sgi/hpc3.h>
 #include <asm/sgi/ip22.h>

@@ -13,18 +13,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/platform_device.h>
 
-#include <linux/clk.h>
-#include <linux/delay.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
 
-#include <linux/console.h>
-#include <linux/fb.h>
+#include <beep/console.h>
+#include <beep/fb.h>
 
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/mach-jz4740/jz4740_fb.h>
 #include <asm/mach-jz4740/gpio.h>

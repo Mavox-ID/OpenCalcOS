@@ -30,12 +30,12 @@
  * SOFTWARE.
  */
 
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/vmalloc.h>
-#include <linux/aer.h>
-#include <linux/module.h>
+#include <beep/pci.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/vmalloc.h>
+#include <beep/aer.h>
+#include <beep/module.h>
 
 #include "qib.h"
 
@@ -74,7 +74,7 @@ int qib_pcie_init(struct pci_dev *pdev, const struct pci_device_id *ent)
 		 *
 		 * Both reset cases set the BAR back to initial state.  For
 		 * the latter case, the AER sticky error bit at offset 0x718
-		 * should be set, but the Linux kernel doesn't yet know
+		 * should be set, but the Beep kernel doesn't yet know
 		 * about that, it appears.  If the original BAR was retained
 		 * in the kernel data structures, this may be OK.
 		 */

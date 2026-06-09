@@ -13,7 +13,7 @@
 #ifndef	_PPC440SPE_DMA_H
 #define _PPC440SPE_DMA_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* Number of elements in the array with statical CDBs */
 #define	MAX_STAT_DMA_CDBS	16

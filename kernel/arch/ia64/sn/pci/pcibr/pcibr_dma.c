@@ -6,9 +6,9 @@
  * Copyright (C) 2001-2005 Silicon Graphics, Inc. All rights reserved.
  */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/export.h>
 #include <asm/sn/addrs.h>
 #include <asm/sn/geo.h>
 #include <asm/sn/pcibr_provider.h>
@@ -49,7 +49,7 @@ pcibr_dmamap_ate32(struct pcidev_info *info,
 	struct pcibus_info *pcibus_info = (struct pcibus_info *)pcidev_info->
 	    pdi_pcibus_info;
 	u8 internal_device = (PCI_SLOT(pcidev_info->pdi_host_pcidev_info->
-					    pdi_linux_pcidev->devfn)) - 1;
+					    pdi_beep_pcidev->devfn)) - 1;
 	int ate_count;
 	int ate_index;
 	u64 ate_flags = flags | PCI32_ATE_V;
@@ -156,7 +156,7 @@ pcibr_dmatrans_direct64(struct pcidev_info * info, u64 paddr,
 				TIOCP_PCI64_CMDTYPE_MEM;
 
 	/* If PCI mode, func zero uses VCHAN0, every other func uses VCHAN1 */
-	if (!IS_PCIX(pcibus_info) && PCI_FUNC(info->pdi_linux_pcidev->devfn))
+	if (!IS_PCIX(pcibus_info) && PCI_FUNC(info->pdi_beep_pcidev->devfn))
 		pci_addr |= PCI64_ATTR_VIRTUAL;
 
 	return pci_addr;

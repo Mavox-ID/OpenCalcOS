@@ -32,16 +32,16 @@
 
 #define pr_fmt(fmt) PFX fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/parser.h>
-#include <linux/random.h>
-#include <linux/jiffies.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/string.h>
+#include <beep/parser.h>
+#include <beep/random.h>
+#include <beep/jiffies.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>

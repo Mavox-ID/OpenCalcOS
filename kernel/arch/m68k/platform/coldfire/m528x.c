@@ -1,7 +1,7 @@
 /***************************************************************************/
 
 /*
- *	linux/arch/m68knommu/platform/528x/config.c
+ *	beep/arch/m68knommu/platform/528x/config.c
  *
  *	Sub-architcture dependent initialization code for the Freescale
  *	5280, 5281 and 5282 CPUs.
@@ -12,11 +12,11 @@
 
 /***************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
 #include <asm/machdep.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>

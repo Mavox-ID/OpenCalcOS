@@ -6,7 +6,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/serial_reg.h>
+#include <beep/serial_reg.h>
 #include <mach/addr-map.h>
 #include <asm/mach-types.h>
 

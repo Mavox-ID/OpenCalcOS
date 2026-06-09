@@ -15,14 +15,14 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/kernel_stat.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/smp.h>
+#include <beep/mm.h>
+#include <beep/kernel_stat.h>
 
 #include <asm/errno.h>
 #include <asm/signal.h>

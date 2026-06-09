@@ -8,10 +8,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/rtc.h>
+#include <beep/platform_device.h>
 
 static struct platform_device *test0 = NULL, *test1 = NULL;
 

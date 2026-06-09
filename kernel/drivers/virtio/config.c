@@ -5,8 +5,8 @@
  * Copyright 2007 Rusty Russell, IBM Corporation.
  * GPL v2 or later.
  */
-#include <linux/err.h>
-#include <linux/virtio.h>
-#include <linux/virtio_config.h>
-#include <linux/bug.h>
+#include <beep/err.h>
+#include <beep/virtio.h>
+#include <beep/virtio_config.h>
+#include <beep/bug.h>
 

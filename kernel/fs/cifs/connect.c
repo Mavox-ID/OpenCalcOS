@@ -18,29 +18,29 @@
  *   along with this library; if not, write to the Free Software
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
-#include <linux/fs.h>
-#include <linux/net.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/ctype.h>
-#include <linux/utsname.h>
-#include <linux/mempool.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/kthread.h>
-#include <linux/pagevec.h>
-#include <linux/freezer.h>
-#include <linux/namei.h>
+#include <beep/fs.h>
+#include <beep/net.h>
+#include <beep/string.h>
+#include <beep/list.h>
+#include <beep/wait.h>
+#include <beep/slab.h>
+#include <beep/pagemap.h>
+#include <beep/ctype.h>
+#include <beep/utsname.h>
+#include <beep/mempool.h>
+#include <beep/delay.h>
+#include <beep/completion.h>
+#include <beep/kthread.h>
+#include <beep/pagevec.h>
+#include <beep/freezer.h>
+#include <beep/namei.h>
 #include <asm/uaccess.h>
 #include <asm/processor.h>
-#include <linux/inet.h>
-#include <linux/module.h>
+#include <beep/inet.h>
+#include <beep/module.h>
 #include <keys/user-type.h>
 #include <net/ipv6.h>
-#include <linux/parser.h>
+#include <beep/parser.h>
 
 #include "cifspdu.h"
 #include "cifsglob.h"
@@ -134,7 +134,7 @@ static const match_table_t cifs_mount_option_tokens = {
 	{ Opt_posixpaths, "posixpaths" },
 	{ Opt_noposixpaths, "noposixpaths" },
 	{ Opt_nounix, "nounix" },
-	{ Opt_nounix, "nolinux" },
+	{ Opt_nounix, "nobeep" },
 	{ Opt_nocase, "nocase" },
 	{ Opt_nocase, "ignorecase" },
 	{ Opt_brl, "brl" },
@@ -1185,8 +1185,8 @@ cifs_parse_mount_options(const char *mountdata, const char *devname,
 	   if we end up sending RFC1001 session initialize */
 	vol->target_rfc1001_name[0] = 0;
 	vol->cred_uid = current_uid();
-	vol->linux_uid = current_uid();
-	vol->linux_gid = current_gid();
+	vol->beep_uid = current_uid();
+	vol->beep_gid = current_gid();
 
 	/* default to only allowing write access to owner of the mount */
 	vol->dir_mode = vol->file_mode = S_IRUGO | S_IXUGO | S_IWUSR;
@@ -1312,7 +1312,7 @@ cifs_parse_mount_options(const char *mountdata, const char *devname,
 			vol->posix_paths = 0;
 			break;
 		case Opt_nounix:
-			vol->no_linux_ext = 1;
+			vol->no_beep_ext = 1;
 			break;
 		case Opt_nocase:
 			vol->nocase = 1;
@@ -1447,7 +1447,7 @@ cifs_parse_mount_options(const char *mountdata, const char *devname,
 					__func__);
 				goto cifs_parse_mount_err;
 			}
-			vol->linux_uid = option;
+			vol->beep_uid = option;
 			uid_specified = true;
 			break;
 		case Opt_cruid:
@@ -1464,7 +1464,7 @@ cifs_parse_mount_options(const char *mountdata, const char *devname,
 						__func__);
 				goto cifs_parse_mount_err;
 			}
-			vol->linux_gid = option;
+			vol->beep_gid = option;
 			gid_specified = true;
 			break;
 		case Opt_file_mode:
@@ -2509,7 +2509,7 @@ cifs_get_smb_ses(struct TCP_Server_Info *server, struct smb_vol *volume_info)
 			goto get_ses_fail;
 	}
 	ses->cred_uid = volume_info->cred_uid;
-	ses->linux_uid = volume_info->linux_uid;
+	ses->beep_uid = volume_info->beep_uid;
 
 	ses->overrideSecFlg = volume_info->secFlg;
 
@@ -2927,7 +2927,7 @@ ip_rfc1001_connect(struct TCP_Server_Info *server)
 		else
 			rfc1002mangle(ses_init_buf->trailer.
 				      session_req.calling_name,
-				      "LINUX_CIFS_CLNT",
+				      "BEEP_CIFS_CLNT",
 				      RFC1001_NAME_LEN_WITH_NULL);
 
 		ses_init_buf->trailer.session_req.scope1 = 0;
@@ -3087,10 +3087,10 @@ void reset_cifs_unix_caps(unsigned int xid, struct cifs_tcon *tcon,
 	 * and once without posixacls or posix paths? */
 	__u64 saved_cap = le64_to_cpu(tcon->fsUnixInfo.Capability);
 
-	if (vol_info && vol_info->no_linux_ext) {
+	if (vol_info && vol_info->no_beep_ext) {
 		tcon->fsUnixInfo.Capability = 0;
 		tcon->unix_ext = 0; /* Unix Extensions disabled */
-		cFYI(1, "Linux protocol extensions disabled");
+		cFYI(1, "Beep protocol extensions disabled");
 		return;
 	} else if (vol_info)
 		tcon->unix_ext = 1; /* Unix Extensions supported */
@@ -3193,8 +3193,8 @@ void cifs_setup_cifs_sb(struct smb_vol *pvolume_info,
 	cifs_sb->rsize = pvolume_info->rsize;
 	cifs_sb->wsize = pvolume_info->wsize;
 
-	cifs_sb->mnt_uid = pvolume_info->linux_uid;
-	cifs_sb->mnt_gid = pvolume_info->linux_gid;
+	cifs_sb->mnt_uid = pvolume_info->beep_uid;
+	cifs_sb->mnt_gid = pvolume_info->beep_gid;
 	cifs_sb->mnt_file_mode = pvolume_info->file_mode;
 	cifs_sb->mnt_dir_mode = pvolume_info->dir_mode;
 	cFYI(1, "file mode: 0x%hx  dir mode: 0x%hx",
@@ -3597,7 +3597,7 @@ remote_path_check:
 		goto mount_fail_check;
 	}
 
-	tlink->tl_uid = ses->linux_uid;
+	tlink->tl_uid = ses->beep_uid;
 	tlink->tl_tcon = tcon;
 	tlink->tl_time = jiffies;
 	set_bit(TCON_LINK_MASTER, &tlink->tl_flags);
@@ -3856,7 +3856,7 @@ cifs_setup_session(const unsigned int xid, struct cifs_ses *ses,
 
 	ses->flags = 0;
 	ses->capabilities = server->capabilities;
-	if (linuxExtEnabled == 0)
+	if (beepExtEnabled == 0)
 		ses->capabilities &= (~server->vals->cap_unix);
 
 	cFYI(1, "Security Mode: 0x%x Capabilities: 0x%x TimeAdjust: %d",
@@ -3932,13 +3932,13 @@ cifs_construct_tcon(struct cifs_sb_info *cifs_sb, uid_t fsuid)
 		return ERR_PTR(-ENOMEM);
 
 	vol_info->local_nls = cifs_sb->local_nls;
-	vol_info->linux_uid = fsuid;
+	vol_info->beep_uid = fsuid;
 	vol_info->cred_uid = fsuid;
 	vol_info->UNC = master_tcon->treeName;
 	vol_info->retry = master_tcon->retry;
 	vol_info->nocase = master_tcon->nocase;
 	vol_info->local_lease = master_tcon->local_lease;
-	vol_info->no_linux_ext = !master_tcon->unix_ext;
+	vol_info->no_beep_ext = !master_tcon->unix_ext;
 
 	rc = cifs_set_vol_auth(vol_info, master_tcon->ses);
 	if (rc) {

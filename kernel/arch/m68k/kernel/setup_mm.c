@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/kernel/setup.c
+ *  beep/arch/m68k/kernel/setup.c
  *
  *  Copyright (C) 1995  Hamish Macdonald
  */
@@ -8,22 +8,22 @@
  * This file handles the architecture-dependent parts of system setup
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fs.h>
-#include <linux/console.h>
-#include <linux/genhd.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
-#include <linux/initrd.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/fs.h>
+#include <beep/console.h>
+#include <beep/genhd.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/module.h>
+#include <beep/initrd.h>
 
 #include <asm/bootinfo.h>
 #include <asm/sections.h>
@@ -534,7 +534,7 @@ void check_bugs(void)
 #ifndef CONFIG_M68KFPU_EMU
 	if (m68k_fputype == 0) {
 		printk(KERN_EMERG "*** YOU DO NOT HAVE A FLOATING POINT UNIT, "
-			"WHICH IS REQUIRED BY LINUX/M68K ***\n");
+			"WHICH IS REQUIRED BY BEEP/M68K ***\n");
 		printk(KERN_EMERG "Upgrade your hardware or join the FPU "
 			"emulation project\n");
 		panic("no FPU");

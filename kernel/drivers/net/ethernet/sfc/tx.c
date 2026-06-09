@@ -8,15 +8,15 @@
  * by the Free Software Foundation, incorporated herein by reference.
  */
 
-#include <linux/pci.h>
-#include <linux/tcp.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <beep/pci.h>
+#include <beep/tcp.h>
+#include <beep/ip.h>
+#include <beep/in.h>
+#include <beep/ipv6.h>
+#include <beep/slab.h>
 #include <net/ipv6.h>
-#include <linux/if_ether.h>
-#include <linux/highmem.h>
+#include <beep/if_ether.h>
+#include <beep/highmem.h>
 #include "net_driver.h"
 #include "efx.h"
 #include "nic.h"
@@ -987,7 +987,7 @@ static int tso_start_new_packet(struct efx_tx_queue *tx_queue,
 
 		tsoh_iph->tot_len = htons(ip_length);
 
-		/* Linux leaves suitable gaps in the IP ID space for us to fill. */
+		/* Beep leaves suitable gaps in the IP ID space for us to fill. */
 		tsoh_iph->id = htons(st->ipv4_id);
 		st->ipv4_id++;
 	} else {

@@ -12,17 +12,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cpufreq.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/kobject.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/percpu-defs.h>
-#include <linux/sysfs.h>
-#include <linux/tick.h>
-#include <linux/types.h>
+#include <beep/cpufreq.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/kernel_stat.h>
+#include <beep/kobject.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/percpu-defs.h>
+#include <beep/sysfs.h>
+#include <beep/tick.h>
+#include <beep/types.h>
 
 #include "cpufreq_governor.h"
 

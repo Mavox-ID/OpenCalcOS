@@ -2,7 +2,7 @@
 #define _CRIS_ARCH_SWAB_H
 
 #include <asm/types.h>
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 #define __SWAB_64_THRU_32__
 

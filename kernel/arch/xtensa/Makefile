@@ -16,7 +16,7 @@
 variant-$(CONFIG_XTENSA_VARIANT_FSF)		:= fsf
 variant-$(CONFIG_XTENSA_VARIANT_DC232B)		:= dc232b
 variant-$(CONFIG_XTENSA_VARIANT_S6000)		:= s6000
-variant-$(CONFIG_XTENSA_VARIANT_LINUX_CUSTOM)	:= custom
+variant-$(CONFIG_XTENSA_VARIANT_BEEP_CUSTOM)	:= custom
 
 VARIANT = $(variant-y)
 export VARIANT
@@ -44,7 +44,7 @@ PLATFORM = $(platform-y)
 export PLATFORM
 
 # temporarily until string.h is fixed
-KBUILD_CFLAGS += -ffreestanding -D__linux__
+KBUILD_CFLAGS += -ffreestanding -D__beep__
 
 KBUILD_CFLAGS += -pipe -mlongcalls
 
@@ -97,7 +97,7 @@ all: zCalc
 
 bzImage : zCalc
 
-zCalc: vmlinux
+zCalc: vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $@
 
 %.dtb:

@@ -9,10 +9,10 @@
  * (at your option) any later version.
  */
 
-#include <linux/mc146818rtc.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/of.h>
+#include <beep/mc146818rtc.h>
+#include <beep/platform_device.h>
+#include <beep/rtc.h>
+#include <beep/of.h>
 
 #include <asm/msr.h>
 #include <asm/olpc.h>

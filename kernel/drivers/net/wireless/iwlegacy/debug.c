@@ -22,11 +22,11 @@
  * in the file called LICENSE.GPL.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel Beep Wireless <ilw@beep.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *****************************************************************************/
-#include <linux/ieee80211.h>
-#include <linux/export.h>
+#include <beep/ieee80211.h>
+#include <beep/export.h>
 #include <net/mac80211.h>
 
 #include "common.h"

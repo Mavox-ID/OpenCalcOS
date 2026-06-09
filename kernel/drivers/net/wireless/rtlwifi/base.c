@@ -35,8 +35,8 @@
 #include "ps.h"
 #include "regd.h"
 
-#include <linux/ip.h>
-#include <linux/module.h>
+#include <beep/ip.h>
+#include <beep/module.h>
 
 /*
  *NOTICE!!!: This file will be very big, we should

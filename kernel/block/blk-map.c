@@ -1,10 +1,10 @@
 /*
  * Functions related to mapping data to requests
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/bio.h>
+#include <beep/blkdev.h>
 #include <scsi/sg.h>		/* for struct sg_iovec */
 
 #include "blk.h"

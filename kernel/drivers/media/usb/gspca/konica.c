@@ -32,7 +32,7 @@
 
 #define MODULE_NAME "konica"
 
-#include <linux/input.h>
+#include <beep/input.h>
 #include "gspca.h"
 
 MODULE_AUTHOR("Hans de Goede <hdegoede@redhat.com>");

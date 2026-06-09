@@ -16,17 +16,17 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-
  *
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/capability.h>
-#include <linux/completion.h>
-#include <linux/cdrom.h>
-#include <linux/ratelimit.h>
-#include <linux/slab.h>
-#include <linux/times.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>
+#include <beep/capability.h>
+#include <beep/completion.h>
+#include <beep/cdrom.h>
+#include <beep/ratelimit.h>
+#include <beep/slab.h>
+#include <beep/times.h>
 #include <asm/uaccess.h>
 
 #include <scsi/scsi.h>

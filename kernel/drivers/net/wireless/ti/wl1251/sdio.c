@@ -19,15 +19,15 @@
  * Copyright (C) 2008 Google Inc
  * Copyright (C) 2009 Bob Copeland (me@bobcopeland.com)
  */
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/platform_device.h>
-#include <linux/wl12xx.h>
-#include <linux/irq.h>
-#include <linux/pm_runtime.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/mod_devicetable.h>
+#include <beep/mmc/sdio_func.h>
+#include <beep/mmc/sdio_ids.h>
+#include <beep/platform_device.h>
+#include <beep/wl12xx.h>
+#include <beep/irq.h>
+#include <beep/pm_runtime.h>
 
 #include "wl1251.h"
 

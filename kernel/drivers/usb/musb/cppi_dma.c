@@ -6,10 +6,10 @@
  * The TUSB6020, using VLYNQ, has CPPI that looks much like DaVinci.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
 
 #include "musb_core.h"
 #include "musb_debug.h"
@@ -687,7 +687,7 @@ cppi_next_tx_segment(struct musb *musb, struct cppi_channel *tx)
  * packets back-to-back, and (b) it's fed two 512 byte packets back-to-back.
  * (Full speed transfers have similar scenarios.)
  *
- * The correct behavior for Linux is that (a) fills the buffer with 300 bytes,
+ * The correct behavior for Beep is that (a) fills the buffer with 300 bytes,
  * and the next packet goes into a buffer that's queued later; while (b) fills
  * the buffer with 1024 bytes.  How to do that with CPPI?
  *

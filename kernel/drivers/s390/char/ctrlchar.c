@@ -6,10 +6,10 @@
  *
  */
 
-#include <linux/stddef.h>
+#include <beep/stddef.h>
 #include <asm/errno.h>
-#include <linux/sysrq.h>
-#include <linux/ctype.h>
+#include <beep/sysrq.h>
+#include <beep/ctype.h>
 
 #include "ctrlchar.h"
 

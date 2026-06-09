@@ -128,14 +128,14 @@
 		led@3 {
 			label = "evmsk:green:mmc0";
 			gpios = <&gpio2 6 0>;
-			linux,default-trigger = "mmc0";
+			beep,default-trigger = "mmc0";
 			default-state = "off";
 		};
 
 		led@4 {
 			label = "evmsk:green:heartbeat";
 			gpios = <&gpio2 7 0>;
-			linux,default-trigger = "heartbeat";
+			beep,default-trigger = "heartbeat";
 			default-state = "off";
 		};
 	};
@@ -147,26 +147,26 @@
 
 		switch@1 {
 			label = "button0";
-			linux,code = <0x100>;
+			beep,code = <0x100>;
 			gpios = <&gpio3 3 0>;
 		};
 
 		switch@2 {
 			label = "button1";
-			linux,code = <0x101>;
+			beep,code = <0x101>;
 			gpios = <&gpio3 2 0>;
 		};
 
 		switch@3 {
 			label = "button2";
-			linux,code = <0x102>;
+			beep,code = <0x102>;
 			gpios = <&gpio1 30 0>;
 			gpio-key,wakeup;
 		};
 
 		switch@4 {
 			label = "button3";
-			linux,code = <0x103>;
+			beep,code = <0x103>;
 			gpios = <&gpio3 5 0>;
 		};
 	};

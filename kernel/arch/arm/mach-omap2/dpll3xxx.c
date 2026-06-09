@@ -18,15 +18,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/clkdev.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/bitops.h>
+#include <beep/clkdev.h>
 
 #include "soc.h"
 #include "clockdomain.h"

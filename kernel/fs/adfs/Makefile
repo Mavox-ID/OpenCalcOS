@@ -1,5 +1,5 @@
 #
-# Makefile for the linux adfs filesystem routines.
+# Makefile for the beep adfs filesystem routines.
 #
 
 obj-$(CONFIG_ADFS_FS) += adfs.o

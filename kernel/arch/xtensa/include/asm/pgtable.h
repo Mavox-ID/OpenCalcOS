@@ -22,8 +22,8 @@
 #define KERNEL_RING		0	/* kernel ring level */
 
 /*
- * The Xtensa architecture port of Linux has a two-level page table system,
- * i.e. the logical three-level Linux page table layout is folded.
+ * The Xtensa architecture port of Beep has a two-level page table system,
+ * i.e. the logical three-level Beep page table layout is folded.
  * Each task has the following memory page tables:
  *
  *   PGD table (page directory), ie. 3rd-level page table:
@@ -71,7 +71,7 @@
 #define TLBTEMP_BASE_2		0xC7FF8000
 
 /*
- * Xtensa Linux config PTE layout (when present):
+ * Xtensa Beep config PTE layout (when present):
  *	31-12:	PPN
  *	11-6:	Software
  *	5-4:	RING
@@ -148,11 +148,11 @@
 #endif
 
 /*
- * On certain configurations of Xtensa MMUs (eg. the initial Linux config),
+ * On certain configurations of Xtensa MMUs (eg. the initial Beep config),
  * the MMU can't do page protection for execute, and considers that the same as
  * read.  Also, write permissions may imply read permissions.
  * What follows is the closest we can get by reasonable means..
- * See linux/mm/mmap.c for protection_map[] array that uses these definitions.
+ * See beep/mm/mmap.c for protection_map[] array that uses these definitions.
  */
 #define __P000	PAGE_NONE		/* private --- */
 #define __P001	PAGE_READONLY		/* private --r */

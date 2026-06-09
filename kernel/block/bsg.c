@@ -9,18 +9,18 @@
  *  archive for more details.
  *
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/file.h>
-#include <linux/blkdev.h>
-#include <linux/poll.h>
-#include <linux/cdev.h>
-#include <linux/jiffies.h>
-#include <linux/percpu.h>
-#include <linux/uio.h>
-#include <linux/idr.h>
-#include <linux/bsg.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/file.h>
+#include <beep/blkdev.h>
+#include <beep/poll.h>
+#include <beep/cdev.h>
+#include <beep/jiffies.h>
+#include <beep/percpu.h>
+#include <beep/uio.h>
+#include <beep/idr.h>
+#include <beep/bsg.h>
+#include <beep/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_ioctl.h>

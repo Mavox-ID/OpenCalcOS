@@ -1,9 +1,9 @@
 #ifndef __ASM_COMPAT_SIGNAL_H
 #define __ASM_COMPAT_SIGNAL_H
 
-#include <linux/bug.h>
-#include <linux/compat.h>
-#include <linux/compiler.h>
+#include <beep/bug.h>
+#include <beep/compat.h>
+#include <beep/compiler.h>
 
 #include <asm/signal.h>
 #include <asm/siginfo.h>

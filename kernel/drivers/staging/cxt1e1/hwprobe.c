@@ -14,14 +14,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/netdevice.h>
-#include <linux/hdlc.h>
-#include <linux/if_arp.h>
+#include <beep/netdevice.h>
+#include <beep/hdlc.h>
+#include <beep/if_arp.h>
 #include <asm/uaccess.h>
-#include <linux/rtnetlink.h>
-#include <linux/pci.h>
+#include <beep/rtnetlink.h>
+#include <beep/pci.h>
 #include "pmcc4_sysdep.h"
-#include "sbecom_inline_linux.h"
+#include "sbecom_inline_beep.h"
 #include "libsbew.h"
 #include "pmcc4_private.h"
 #include "pmcc4.h"

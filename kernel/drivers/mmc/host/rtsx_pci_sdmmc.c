@@ -20,16 +20,16 @@
  *   No. 450, Shenhu Road, Suzhou Industry Park, Suzhou, China
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
-#include <linux/mmc/card.h>
-#include <linux/mfd/rtsx_pci.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/mmc.h>
+#include <beep/mmc/sd.h>
+#include <beep/mmc/card.h>
+#include <beep/mfd/rtsx_pci.h>
 #include <asm/unaligned.h>
 
 /* SD Tuning Data Structure

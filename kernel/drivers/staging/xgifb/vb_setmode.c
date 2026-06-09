@@ -1,4 +1,4 @@
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include "XGIfb.h"
 
 #include "vb_def.h"
@@ -5980,7 +5980,7 @@ unsigned char XGISetModeNew(struct xgifb_video_info *xgifb_info,
 	pVBInfo->Part4Port = pVBInfo->BaseAddr + SIS_CRT2_PORT_14;
 	pVBInfo->Part5Port = pVBInfo->BaseAddr + SIS_CRT2_PORT_14 + 2;
 
-	/* for x86 Linux, XG21 LVDS */
+	/* for x86 Beep, XG21 LVDS */
 	if (HwDeviceExtension->jChipType == XG21) {
 		if ((xgifb_reg_get(pVBInfo->P3d4, 0x38) & 0xE0) == 0xC0)
 			pVBInfo->IF_DEF_LVDS = 1;

@@ -24,7 +24,7 @@
 **	The different between Built-in Dino and Card-Mode
 **	dino is in chip initialization and pci device initialization.
 **
-**	Linux drivers can only use Card-Mode Dino if pci devices I/O port
+**	Beep drivers can only use Card-Mode Dino if pci devices I/O port
 **	BARs are configured and used by the driver. Programming MMIO address 
 **	requires substantial knowledge of available Host I/O address ranges
 **	is currently not supported.  Port/Config accessor functions are the
@@ -43,15 +43,15 @@
 **       for PCI drivers devices which implement/use MMIO registers.
 */
 
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>	/* for struct irqaction */
-#include <linux/spinlock.h>	/* for spinlock_t and prototypes */
+#include <beep/delay.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>	/* for struct irqaction */
+#include <beep/spinlock.h>	/* for spinlock_t and prototypes */
 
 #include <asm/pdc.h>
 #include <asm/page.h>

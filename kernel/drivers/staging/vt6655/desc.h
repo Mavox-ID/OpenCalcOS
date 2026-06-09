@@ -31,8 +31,8 @@
 #ifndef __DESC_H__
 #define __DESC_H__
 
-#include <linux/types.h>
-#include <linux/mm.h>
+#include <beep/types.h>
+#include <beep/mm.h>
 #include "ttype.h"
 #include "tether.h"
 

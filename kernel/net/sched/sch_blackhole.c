@@ -11,10 +11,10 @@
  * Note: Quantum tunneling is not supported.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
 #include <net/pkt_sched.h>
 
 static int blackhole_enqueue(struct sk_buff *skb, struct Qdisc *sch)

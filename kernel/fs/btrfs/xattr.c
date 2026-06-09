@@ -16,12 +16,12 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/rwsem.h>
-#include <linux/xattr.h>
-#include <linux/security.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/rwsem.h>
+#include <beep/xattr.h>
+#include <beep/security.h>
 #include "ctree.h"
 #include "btrfs_inode.h"
 #include "transaction.h"

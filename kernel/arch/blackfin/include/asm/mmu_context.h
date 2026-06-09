@@ -7,8 +7,8 @@
 #ifndef __BLACKFIN_MMU_CONTEXT_H__
 #define __BLACKFIN_MMU_CONTEXT_H__
 
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
 #include <asm/setup.h>
 #include <asm/page.h>
 #include <asm/pgalloc.h>

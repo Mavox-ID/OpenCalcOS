@@ -1,5 +1,5 @@
 /*
- *	Linux INET6 implementation
+ *	Beep INET6 implementation
  *	FIB front-end.
  *
  *	Authors:
@@ -26,24 +26,24 @@
 
 #define pr_fmt(fmt) "IPv6: " fmt
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/times.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/route.h>
-#include <linux/netdevice.h>
-#include <linux/in6.h>
-#include <linux/mroute6.h>
-#include <linux/init.h>
-#include <linux/if_arp.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/nsproxy.h>
-#include <linux/slab.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/export.h>
+#include <beep/types.h>
+#include <beep/times.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/route.h>
+#include <beep/netdevice.h>
+#include <beep/in6.h>
+#include <beep/mroute6.h>
+#include <beep/init.h>
+#include <beep/if_arp.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/nsproxy.h>
+#include <beep/slab.h>
 #include <net/net_namespace.h>
 #include <net/snmp.h>
 #include <net/ipv6.h>
@@ -52,7 +52,7 @@
 #include <net/ndisc.h>
 #include <net/addrconf.h>
 #include <net/tcp.h>
-#include <linux/rtnetlink.h>
+#include <beep/rtnetlink.h>
 #include <net/dst.h>
 #include <net/xfrm.h>
 #include <net/netevent.h>
@@ -62,7 +62,7 @@
 #include <asm/uaccess.h>
 
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <beep/sysctl.h>
 #endif
 
 static struct rt6_info *ip6_rt_copy(struct rt6_info *ort,

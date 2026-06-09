@@ -1,5 +1,5 @@
 /*
- * linux/drivers/net/irda/pxaficp_ir.c
+ * beep/drivers/net/irda/pxaficp_ir.c
  *
  * Based on sa1100_ir.c by Russell King
  *
@@ -12,15 +12,15 @@
  * Infra-red driver (SIR/FIR) for the PXA2xx embedded microprocessor
  *
  */
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/irmod.h>
@@ -28,7 +28,7 @@
 #include <net/irda/irda_device.h>
 
 #include <mach/dma.h>
-#include <linux/platform_data/irda-pxaficp.h>
+#include <beep/platform_data/irda-pxaficp.h>
 #include <mach/regs-ost.h>
 #include <mach/regs-uart.h>
 

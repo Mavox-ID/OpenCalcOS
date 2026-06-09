@@ -6,12 +6,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
 
-#include <linux/iio/iio.h>
-#include <linux/regulator/consumer.h>
+#include <beep/iio/iio.h>
+#include <beep/regulator/consumer.h>
 
 struct adc081c {
 	struct i2c_client *i2c;

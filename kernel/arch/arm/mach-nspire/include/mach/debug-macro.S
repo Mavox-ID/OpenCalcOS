@@ -1,5 +1,5 @@
 /*
- *	linux/arch/arm/mach-nspire/include/mach/debug-macro.S
+ *	beep/arch/arm/mach-nspire/include/mach/debug-macro.S
  *
  *	Copyright (C) 2012 Daniel Tang <tangrs@tangrs.id.au>
  *

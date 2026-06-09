@@ -23,9 +23,9 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/moduleloader.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
+#include <beep/moduleloader.h>
+#include <beep/module.h>
+#include <beep/vmalloc.h>
 
 int apply_relocate(Elf_Shdr *sechdrs, const char *strtab,
 		unsigned int symindex, unsigned int relindex,

@@ -7,29 +7,29 @@
  * of the GNU General Public License version 2.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/buffer_head.h>
-#include <linux/delay.h>
-#include <linux/sort.h>
-#include <linux/jhash.h>
-#include <linux/kallsyms.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/module.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/buffer_head.h>
+#include <beep/delay.h>
+#include <beep/sort.h>
+#include <beep/jhash.h>
+#include <beep/kallsyms.h>
+#include <beep/gfs2_ondisk.h>
+#include <beep/list.h>
+#include <beep/wait.h>
+#include <beep/module.h>
 #include <asm/uaccess.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/workqueue.h>
-#include <linux/jiffies.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist_bl.h>
-#include <linux/bit_spinlock.h>
-#include <linux/percpu.h>
+#include <beep/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
+#include <beep/workqueue.h>
+#include <beep/jiffies.h>
+#include <beep/rcupdate.h>
+#include <beep/rculist_bl.h>
+#include <beep/bit_spinlock.h>
+#include <beep/percpu.h>
 
 #include "gfs2.h"
 #include "incore.h"

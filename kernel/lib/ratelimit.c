@@ -9,9 +9,9 @@
  * This file is released under the GPLv2.
  */
 
-#include <linux/ratelimit.h>
-#include <linux/jiffies.h>
-#include <linux/export.h>
+#include <beep/ratelimit.h>
+#include <beep/jiffies.h>
+#include <beep/export.h>
 
 /*
  * __ratelimit - rate limiting

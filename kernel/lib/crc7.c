@@ -5,9 +5,9 @@
  * Version 2. See the file COPYING for more details.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/crc7.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/crc7.h>
 
 
 /* Table for CRC-7 (polynomial x^7 + x^3 + 1) */

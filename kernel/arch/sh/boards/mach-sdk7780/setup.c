@@ -8,10 +8,10 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/platform_device.h>
+#include <beep/ata_platform.h>
 #include <asm/machvec.h>
 #include <mach/sdk7780.h>
 #include <asm/heartbeat.h>

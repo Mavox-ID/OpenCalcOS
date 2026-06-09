@@ -1,8 +1,8 @@
 #ifndef DW_SPI_HEADER_H
 #define DW_SPI_HEADER_H
 
-#include <linux/io.h>
-#include <linux/scatterlist.h>
+#include <beep/io.h>
+#include <beep/scatterlist.h>
 
 /* Register offsets */
 #define DW_SPI_CTRL0			0x00

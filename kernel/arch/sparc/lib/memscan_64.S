@@ -1,7 +1,7 @@
 /*
  * memscan.S: Optimized memscan for Sparc64.
  *
- * Copyright (C) 1997,1998 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1997,1998 Jakub Jelinek (jj@ultra.beep.cz)
  * Copyright (C) 1998 David S. Miller (davem@redhat.com)
  */
 

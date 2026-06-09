@@ -33,13 +33,13 @@
 #include <drm/ttm/ttm_module.h>
 #include <drm/ttm/ttm_bo_driver.h>
 #include <drm/ttm/ttm_placement.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/file.h>
-#include <linux/module.h>
-#include <linux/atomic.h>
+#include <beep/jiffies.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/file.h>
+#include <beep/module.h>
+#include <beep/atomic.h>
 
 #define TTM_ASSERT_LOCKED(param)
 #define TTM_DEBUG(fmt, arg...)

@@ -11,19 +11,19 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/of_irq.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/mmc_spi.h>
-#include <linux/mmc/core.h>
-#include <linux/mmc/host.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
+#include <beep/of_irq.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/mmc_spi.h>
+#include <beep/mmc/core.h>
+#include <beep/mmc/host.h>
 
 /* For archs that don't support NO_IRQ (such as mips), provide a dummy value */
 #ifndef NO_IRQ

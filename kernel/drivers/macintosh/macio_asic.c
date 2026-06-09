@@ -17,13 +17,13 @@
  *    sub-devices.
  */
  
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #include <asm/machdep.h>
 #include <asm/macio.h>
@@ -446,7 +446,7 @@ static int macio_skip_device(struct device_node *np)
  * 
  * This function will do the job of extracting devices from the
  * Open Firmware device tree, build macio_dev structures and add
- * them to the Linux device tree.
+ * them to the Beep device tree.
  * 
  * For now, childs of media-bay are added now as well. This will
  * change rsn though.

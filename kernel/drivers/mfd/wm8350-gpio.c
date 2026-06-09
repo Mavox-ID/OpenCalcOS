@@ -12,13 +12,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/errno.h>
 
-#include <linux/mfd/wm8350/core.h>
-#include <linux/mfd/wm8350/gpio.h>
-#include <linux/mfd/wm8350/pmic.h>
+#include <beep/mfd/wm8350/core.h>
+#include <beep/mfd/wm8350/gpio.h>
+#include <beep/mfd/wm8350/pmic.h>
 
 static int gpio_set_dir(struct wm8350 *wm8350, int gpio, int dir)
 {

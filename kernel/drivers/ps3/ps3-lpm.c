@@ -18,11 +18,11 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/uaccess.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/uaccess.h>
 #include <asm/smp.h>
 #include <asm/time.h>
 #include <asm/ps3.h>

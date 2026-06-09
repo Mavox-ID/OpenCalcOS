@@ -44,7 +44,7 @@ CsrResult unifi_remove_udi_hook(card_t *card, udi_func_t udi_fn);
 
 /*
  * Function to print current status info to a string.
- * This is used in the linux /proc interface and might be useful
+ * This is used in the beep /proc interface and might be useful
  * in other systems.
  */
 s32 unifi_print_status(card_t *card, char *str, s32 *remain);

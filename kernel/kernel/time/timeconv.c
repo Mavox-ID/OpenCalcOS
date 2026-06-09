@@ -27,8 +27,8 @@
  *   Moved from glibc-2.6 to kernel by Zhaolei<zhaolei@cn.fujitsu.com>
  */
 
-#include <linux/time.h>
-#include <linux/module.h>
+#include <beep/time.h>
+#include <beep/module.h>
 
 /*
  * Nonzero if YEAR is a leap year (every 4 years,

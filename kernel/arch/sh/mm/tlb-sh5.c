@@ -1,15 +1,15 @@
 /*
  * arch/sh/mm/tlb-sh5.c
  *
- * Copyright (C) 2003  Paul Mundt <lethal@linux-sh.org>
+ * Copyright (C) 2003  Paul Mundt <lethal@beep-sh.org>
  * Copyright (C) 2003  Richard Curnow <richard.curnow@superh.com>
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/mm.h>
-#include <linux/init.h>
+#include <beep/mm.h>
+#include <beep/init.h>
 #include <asm/page.h>
 #include <asm/tlb.h>
 #include <asm/mmu_context.h>

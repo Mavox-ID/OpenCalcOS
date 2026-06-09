@@ -1,15 +1,15 @@
 /*
- *  linux/arch/arm/mach-shark/arch.c
+ *  beep/arch/arm/mach-shark/arch.c
  *
  *  Architecture specific stuff.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/sched.h>
-#include <linux/serial_8250.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/sched.h>
+#include <beep/serial_8250.h>
+#include <beep/io.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>

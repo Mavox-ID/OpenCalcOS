@@ -1,7 +1,7 @@
 /*
  *  Driver for the Auvitek AU0828 USB bridge
  *
- *  Copyright (c) 2008 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2008 Steven Toth <stoth@beeptv.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -19,11 +19,11 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/io.h>
 
 #include "au0828.h"
 #include "media/tuner.h"

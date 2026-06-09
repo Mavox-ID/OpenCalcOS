@@ -22,23 +22,23 @@
 
 #undef DEBUG
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/vmalloc.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/numa.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/kthread.h>
-#include <linux/pid_namespace.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/completion.h>
+#include <beep/vmalloc.h>
+#include <beep/smp.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/numa.h>
+#include <beep/mutex.h>
+#include <beep/notifier.h>
+#include <beep/kthread.h>
+#include <beep/pid_namespace.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 
 #include <asm/io.h>
 #include <asm/mmu_context.h>

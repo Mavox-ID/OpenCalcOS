@@ -6,8 +6,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/highmem.h>
-#include <linux/unistd.h>
+#include <beep/highmem.h>
+#include <beep/unistd.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cachectl.h>

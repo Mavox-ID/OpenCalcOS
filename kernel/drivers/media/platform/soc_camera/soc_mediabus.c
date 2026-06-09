@@ -8,8 +8,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-mediabus.h>

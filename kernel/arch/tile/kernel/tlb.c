@@ -13,9 +13,9 @@
  *
  */
 
-#include <linux/cpumask.h>
-#include <linux/module.h>
-#include <linux/hugetlb.h>
+#include <beep/cpumask.h>
+#include <beep/module.h>
+#include <beep/hugetlb.h>
 #include <asm/tlbflush.h>
 #include <asm/homecache.h>
 #include <hv/hypervisor.h>

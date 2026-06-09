@@ -3,7 +3,7 @@
  */
 
 /*
- * Magellan and Space Mouse 6dof controller driver for Linux
+ * Magellan and Space Mouse 6dof controller driver for Beep
  */
 
 /*
@@ -26,12 +26,12 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/serio.h>
+#include <beep/init.h>
 
 #define DRIVER_DESC	"Magellan and SpaceMouse 6dof controller driver"
 

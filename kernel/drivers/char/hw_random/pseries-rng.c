@@ -17,8 +17,8 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/hw_random.h>
+#include <beep/module.h>
+#include <beep/hw_random.h>
 #include <asm/vio.h>
 
 #define MODULE_NAME "pseries-rng"

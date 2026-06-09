@@ -9,11 +9,11 @@
  * option) any later version.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/threads.h>
-#include <linux/hardirq.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/smp.h>
+#include <beep/threads.h>
+#include <beep/hardirq.h>
 
 #include <asm/dbell.h>
 #include <asm/irq_regs.h>

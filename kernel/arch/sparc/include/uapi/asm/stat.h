@@ -1,7 +1,7 @@
 #ifndef __SPARC_STAT_H
 #define __SPARC_STAT_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #if defined(__sparc__) && defined(__arch64__)
 /* 64 bit sparc */

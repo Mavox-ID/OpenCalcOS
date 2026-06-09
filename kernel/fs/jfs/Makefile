@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux JFS filesystem routines.
+# Makefile for the Beep JFS filesystem routines.
 #
 
 obj-$(CONFIG_JFS_FS) += jfs.o

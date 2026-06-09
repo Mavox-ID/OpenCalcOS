@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux Bluetooth HIDP layer
+# Makefile for the Beep Bluetooth HIDP layer
 #
 
 obj-$(CONFIG_BT_HIDP) += hidp.o

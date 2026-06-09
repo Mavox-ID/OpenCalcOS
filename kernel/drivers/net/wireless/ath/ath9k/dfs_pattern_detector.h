@@ -17,9 +17,9 @@
 #ifndef DFS_PATTERN_DETECTOR_H
 #define DFS_PATTERN_DETECTOR_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/nl80211.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/nl80211.h>
 
 /**
  * struct pulse_event - describing pulses reported by PHY

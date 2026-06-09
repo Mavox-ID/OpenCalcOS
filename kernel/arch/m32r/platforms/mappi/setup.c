@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/platforms/mappi/setup.c
+ *  beep/arch/m32r/platforms/mappi/setup.c
  *
  *  Setup routines for Renesas MAPPI Board
  *
@@ -7,10 +7,10 @@
  *                           Hitoshi Yamamoto
  */
 
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
 
 #include <asm/m32r.h>
 #include <asm/io.h>

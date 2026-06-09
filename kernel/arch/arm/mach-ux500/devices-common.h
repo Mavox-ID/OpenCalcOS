@@ -8,12 +8,12 @@
 #ifndef __DEVICES_COMMON_H
 #define __DEVICES_COMMON_H
 
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/sys_soc.h>
-#include <linux/amba/bus.h>
-#include <linux/platform_data/i2c-nomadik.h>
-#include <linux/platform_data/crypto-ux500.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/sys_soc.h>
+#include <beep/amba/bus.h>
+#include <beep/platform_data/i2c-nomadik.h>
+#include <beep/platform_data/crypto-ux500.h>
 
 struct spi_master_cntlr;
 

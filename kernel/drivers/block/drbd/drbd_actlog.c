@@ -23,11 +23,11 @@
 
  */
 
-#include <linux/slab.h>
-#include <linux/crc32c.h>
-#include <linux/drbd.h>
-#include <linux/drbd_limits.h>
-#include <linux/dynamic_debug.h>
+#include <beep/slab.h>
+#include <beep/crc32c.h>
+#include <beep/drbd.h>
+#include <beep/drbd_limits.h>
+#include <beep/dynamic_debug.h>
 #include "drbd_int.h"
 #include "drbd_wrappers.h"
 

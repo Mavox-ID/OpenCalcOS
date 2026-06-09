@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfsplus/options.c
+ *  beep/fs/hfsplus/options.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -8,14 +8,14 @@
  * Option parsing
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/parser.h>
-#include <linux/nls.h>
-#include <linux/mount.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/parser.h>
+#include <beep/nls.h>
+#include <beep/mount.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
 #include "hfsplus_fs.h"
 
 enum {

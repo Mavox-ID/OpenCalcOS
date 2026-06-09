@@ -17,15 +17,15 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/err.h>
-#include <linux/dma-mapping.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/list.h>
+#include <beep/err.h>
+#include <beep/dma-mapping.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
 
 /**
  * struct usb_udc - describes one usb device controller

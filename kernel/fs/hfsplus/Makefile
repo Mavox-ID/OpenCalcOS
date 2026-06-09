@@ -1,5 +1,5 @@
 #
-## Makefile for the linux hfsplus filesystem routines.
+## Makefile for the beep hfsplus filesystem routines.
 #
 
 obj-$(CONFIG_HFSPLUS_FS) += hfsplus.o

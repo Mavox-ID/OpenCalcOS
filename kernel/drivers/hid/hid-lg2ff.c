@@ -21,10 +21,10 @@
  */
 
 
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/hid.h>
+#include <beep/input.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/hid.h>
 
 #include "usbhid/usbhid.h"
 #include "hid-lg.h"

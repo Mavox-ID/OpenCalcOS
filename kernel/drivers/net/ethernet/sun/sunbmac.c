@@ -3,29 +3,29 @@
  * Copyright (C) 1997, 1998, 1999, 2003, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/crc32.h>
-#include <linux/errno.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/in.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/crc32.h>
+#include <beep/errno.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/bitops.h>
+#include <beep/dma-mapping.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/gfp.h>
 
 #include <asm/auxio.h>
 #include <asm/byteorder.h>

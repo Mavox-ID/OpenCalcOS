@@ -3,10 +3,10 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 1999, 2000, 04, 06 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1999, 2000, 04, 06 Ralf Baechle (ralf@beep-mips.org)
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  */
-#include <linux/pci.h>
+#include <beep/pci.h>
 #include <asm/paccess.h>
 #include <asm/pci/bridge.h>
 #include <asm/sn/arch.h>

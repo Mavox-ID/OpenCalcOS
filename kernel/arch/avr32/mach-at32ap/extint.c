@@ -8,13 +8,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/random.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 

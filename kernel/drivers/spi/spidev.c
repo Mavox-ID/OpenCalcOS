@@ -20,22 +20,22 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/ioctl.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/ioctl.h>
+#include <beep/fs.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/compat.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spidev.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spidev.h>
 
 #include <asm/uaccess.h>
 

@@ -11,7 +11,7 @@
  * more details.
  *
  * You should find a copy of v2 of the GNU General Public License somewhere on
- * your Linux system; if not, write to the Free Software Foundation, Inc., 59
+ * your Beep system; if not, write to the Free Software Foundation, Inc., 59
  * Temple Place, Suite 330, Boston, MA 02111-1307 USA.
  *
  * Copyright (C) 2009 Intel corporation
@@ -34,8 +34,8 @@
 #include <sys/fcntl.h>
 #include <sys/mount.h>
 #include <sys/statfs.h>
-#include "../../include/uapi/linux/magic.h"
-#include "../../include/uapi/linux/kernel-page-flags.h"
+#include "../../include/uapi/beep/magic.h"
+#include "../../include/uapi/beep/kernel-page-flags.h"
 
 
 #ifndef MAX_PATH

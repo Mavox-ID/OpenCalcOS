@@ -1,5 +1,5 @@
- /*-*- linux-c -*-
- *  linux/drivers/video/i810_main.c -- Intel 810 frame buffer device
+ /*-*- beep-c -*-
+ *  beep/drivers/video/i810_main.c -- Intel 810 frame buffer device
  *
  *      Copyright (C) 2001 Antonino Daplas<adaplas@pol.net>
  *      All Rights Reserved      
@@ -10,7 +10,7 @@
  *                                        external VGA connectors for 
  *                                        secondary displays
  *
- *         Fredrik Andersson <krueger@shell.linux.se> - alpha testing of
+ *         Fredrik Andersson <krueger@shell.beep.se> - alpha testing of
  *                                        the VESA GTF
  *
  *         Brad Corrion <bcorrion@web-co.com> - alpha testing of customized
@@ -28,19 +28,19 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/resource.h>
-#include <linux/unistd.h>
-#include <linux/console.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/resource.h>
+#include <beep/unistd.h>
+#include <beep/console.h>
 
 #include <asm/io.h>
 #include <asm/div64.h>

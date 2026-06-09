@@ -11,25 +11,25 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/version.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/skbuff.h>
-#include <linux/inetdevice.h>
-#include <linux/mbus.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/version.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/platform_device.h>
+#include <beep/skbuff.h>
+#include <beep/inetdevice.h>
+#include <beep/mbus.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_address.h>
-#include <linux/phy.h>
-#include <linux/clk.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/of_mdio.h>
+#include <beep/of_net.h>
+#include <beep/of_address.h>
+#include <beep/phy.h>
+#include <beep/clk.h>
 
 /* Registers */
 #define MVNETA_RXQ_CONFIG_REG(q)                (0x1400 + ((q) << 2))
@@ -1389,7 +1389,7 @@ static int mvneta_rx(struct mvneta_port *pp, int rx_todo,
 		pp->rx_stats.bytes += rx_bytes;
 		u64_stats_update_end(&pp->rx_stats.syncp);
 
-		/* Linux processing */
+		/* Beep processing */
 		skb_reserve(skb, MVNETA_MH_SIZE);
 		skb_put(skb, rx_bytes);
 
@@ -1402,7 +1402,7 @@ static int mvneta_rx(struct mvneta_port *pp, int rx_todo,
 		/* Refill processing */
 		err = mvneta_rx_refill(pp, rx_desc);
 		if (err) {
-			netdev_err(pp->dev, "Linux processing - Can't refill\n");
+			netdev_err(pp->dev, "Beep processing - Can't refill\n");
 			rxq->missed++;
 			rx_filled--;
 		}

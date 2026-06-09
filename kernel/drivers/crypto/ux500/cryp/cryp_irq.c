@@ -8,9 +8,9 @@
  * License terms: GNU General Public License (GPL) version 2.
  */
 
-#include <linux/kernel.h>
-#include <linux/bitmap.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/bitmap.h>
+#include <beep/device.h>
 
 #include "cryp.h"
 #include "cryp_p.h"

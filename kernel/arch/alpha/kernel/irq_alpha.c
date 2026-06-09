@@ -2,11 +2,11 @@
  * Alpha specific irq code.
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/irq.h>
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/irq.h>
+#include <beep/kernel_stat.h>
+#include <beep/module.h>
 
 #include <asm/machvec.h>
 #include <asm/dma.h>

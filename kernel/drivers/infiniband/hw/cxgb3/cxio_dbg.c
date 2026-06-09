@@ -30,8 +30,8 @@
  * SOFTWARE.
  */
 #ifdef DEBUG
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/slab.h>
 #include "common.h"
 #include "cxgb3_ioctl.h"
 #include "cxio_hal.h"

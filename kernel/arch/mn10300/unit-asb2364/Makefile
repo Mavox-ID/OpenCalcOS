@@ -1,5 +1,5 @@
 #
-# Makefile for the linux kernel.
+# Makefile for the beep kernel.
 #
 # Note! Dependencies are done automagically by 'make dep', which also
 # removes any old dependencies. DON'T put your own dependencies here

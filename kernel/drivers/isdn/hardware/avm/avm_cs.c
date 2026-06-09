@@ -9,14 +9,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/string.h>
-#include <linux/tty.h>
-#include <linux/serial.h>
-#include <linux/major.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/ptrace.h>
+#include <beep/string.h>
+#include <beep/tty.h>
+#include <beep/serial.h>
+#include <beep/major.h>
 #include <asm/io.h>
 
 #include <pcmcia/cistpl.h>
@@ -24,14 +24,14 @@
 #include <pcmcia/ds.h>
 #include <pcmcia/cisreg.h>
 
-#include <linux/skbuff.h>
-#include <linux/capi.h>
-#include <linux/b1lli.h>
-#include <linux/b1pcmcia.h>
+#include <beep/skbuff.h>
+#include <beep/capi.h>
+#include <beep/b1lli.h>
+#include <beep/b1pcmcia.h>
 
 /*====================================================================*/
 
-MODULE_DESCRIPTION("CAPI4Linux: PCMCIA client driver for AVM B1/M1/M2");
+MODULE_DESCRIPTION("CAPI4Beep: PCMCIA client driver for AVM B1/M1/M2");
 MODULE_AUTHOR("Carsten Paeth");
 MODULE_LICENSE("GPL");
 

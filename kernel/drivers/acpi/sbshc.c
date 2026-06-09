@@ -10,11 +10,11 @@
 
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
+#include <beep/wait.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
 #include "sbshc.h"
 
 #define PREFIX "ACPI: "

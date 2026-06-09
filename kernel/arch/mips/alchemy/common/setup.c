@@ -25,10 +25,10 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/jiffies.h>
+#include <beep/module.h>
 
 #include <asm/mipsregs.h>
 #include <asm/time.h>

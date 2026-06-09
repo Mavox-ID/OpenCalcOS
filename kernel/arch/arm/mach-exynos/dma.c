@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-exynos4/dma.c
+/* beep/arch/arm/mach-exynos4/dma.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -21,10 +21,10 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/pl330.h>
-#include <linux/of.h>
+#include <beep/dma-mapping.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/pl330.h>
+#include <beep/of.h>
 
 #include <asm/irq.h>
 #include <plat/devs.h>

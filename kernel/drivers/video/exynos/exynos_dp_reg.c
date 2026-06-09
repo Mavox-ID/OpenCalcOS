@@ -10,9 +10,9 @@
  * option) any later version.
  */
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <beep/device.h>
+#include <beep/io.h>
+#include <beep/delay.h>
 
 #include <video/exynos_dp.h>
 

@@ -1,8 +1,8 @@
 #ifndef _ALPHA_TLBFLUSH_H
 #define _ALPHA_TLBFLUSH_H
 
-#include <linux/mm.h>
-#include <linux/sched.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
 #include <asm/compiler.h>
 #include <asm/pgalloc.h>
 

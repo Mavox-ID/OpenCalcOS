@@ -17,7 +17,7 @@
  *
  **************************************************************************/
 
-#include <linux/backlight.h>
+#include <beep/backlight.h>
 #include <drm/drmP.h>
 #include <drm/drm.h>
 #include <drm/gma_drm.h>

@@ -2,15 +2,15 @@
  *	vfsv0 quota IO operations on file
  */
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/dqblk_v2.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/quotaops.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/dqblk_v2.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/quotaops.h>
 
 #include <asm/byteorder.h>
 

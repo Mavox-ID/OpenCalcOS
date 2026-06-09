@@ -10,12 +10,12 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/err.h>
+#include <beep/clk.h>
+#include <beep/clk-provider.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/jiffies.h>
+#include <beep/err.h>
 #include "clk.h"
 
 static int clk_busy_wait(void __iomem *reg, u8 shift)

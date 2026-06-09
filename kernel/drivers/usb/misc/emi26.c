@@ -9,15 +9,15 @@
  * 
  * emi26.c,v 1.13 2002/03/08 13:10:26 tapio Exp
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/usb.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/ihex.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/usb.h>
+#include <beep/delay.h>
+#include <beep/firmware.h>
+#include <beep/ihex.h>
 
 #define EMI26_VENDOR_ID 		0x086a  /* Emagic Soft-und Hardware GmBH */
 #define EMI26_PRODUCT_ID		0x0100	/* EMI 2|6 without firmware */

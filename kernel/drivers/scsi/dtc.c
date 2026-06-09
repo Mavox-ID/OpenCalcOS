@@ -17,7 +17,7 @@
  *
  * 	Drew Eckhardt
  *	Visionary Computing
- *	(Unix and Linux consulting and custom programming)
+ *	(Unix and Beep consulting and custom programming)
  *	drew@colorado.edu
  *      +1 (303) 440-4894
  *
@@ -72,15 +72,15 @@
 #endif
 
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/signal.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/stat.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
 #include "scsi.h"
 #include <scsi/scsi_host.h>
 #include "dtc.h"
@@ -326,7 +326,7 @@ found:
 /* 
  * XXX Most SCSI boards use this mapping, I could be incorrect.  Some one
  * using hard disks on a trantor should verify that this mapping corresponds
- * to that used by the BIOS / ASPI driver by running the linux fdisk program
+ * to that used by the BIOS / ASPI driver by running the beep fdisk program
  * and matching the H_C_S coordinates to what DOS uses.
 */
 

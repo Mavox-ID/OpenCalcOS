@@ -21,13 +21,13 @@
   *
   */
 
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/usb.h>
-#include <linux/usb/musb.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/usb.h>
+#include <beep/usb/musb.h>
 
 #include "soc.h"
 #include "control.h"

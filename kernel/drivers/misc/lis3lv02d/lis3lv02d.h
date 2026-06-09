@@ -18,10 +18,10 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/platform_device.h>
-#include <linux/input-polldev.h>
-#include <linux/regulator/consumer.h>
-#include <linux/miscdevice.h>
+#include <beep/platform_device.h>
+#include <beep/input-polldev.h>
+#include <beep/regulator/consumer.h>
+#include <beep/miscdevice.h>
 
 /*
  * This driver tries to support the "digital" accelerometer chips from
@@ -34,7 +34,7 @@
  * a register. They can be connected either via I²C or SPI.
  */
 
-#include <linux/lis3lv02d.h>
+#include <beep/lis3lv02d.h>
 
 enum lis3_reg {
 	WHO_AM_I	= 0x0F,

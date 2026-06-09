@@ -15,7 +15,7 @@
  *      RFC1071 Computing the Internet Checksum
  */
 
-#include <linux/in6.h>
+#include <beep/in6.h>
 #include <asm/uaccess.h>
 
 /* computes the checksum of a memory block at buff, length len,

@@ -6,10 +6,10 @@
 
 #include "dm.h"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/bio.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kmod.h>
+#include <beep/bio.h>
 
 #define DM_MSG_PREFIX "target"
 

@@ -7,7 +7,7 @@
 *!              ioctl()'s
 *!
 *! Nov 30 1998  Torbjorn Eliasson  Initial version.
-*!              Bjorn Wesen        Elinux kernel version.
+*!              Bjorn Wesen        Ebeep kernel version.
 *! Jan 14 2000  Johan Adolfsson    Fixed PB shadow register stuff -
 *!                                 don't use PB_I2C if DS1302 uses same bits,
 *!                                 use PB.
@@ -25,14 +25,14 @@
 
 /****************** INCLUDE FILES SECTION ***********************************/
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
 
 #include <asm/etraxi2c.h>
 

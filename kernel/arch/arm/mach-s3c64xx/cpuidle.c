@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c64xx/cpuidle.c
+/* beep/arch/arm/mach-s3c64xx/cpuidle.c
  *
  * Copyright (c) 2011 Wolfson Microelectronics, plc
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
@@ -9,12 +9,12 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/cpuidle.h>
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/time.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/cpuidle.h>
+#include <beep/io.h>
+#include <beep/export.h>
+#include <beep/time.h>
 
 #include <asm/proc-fns.h>
 

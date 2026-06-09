@@ -17,11 +17,11 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
-#include <linux/dma-mapping.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/export.h>
+#include <beep/dma-mapping.h>
 
 #include <drm/drmP.h>
 #include <drm/drm.h>

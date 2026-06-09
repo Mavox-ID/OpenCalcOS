@@ -21,26 +21,26 @@
  * are evil.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>  /* for in_interrupt() */
-#include <linux/kmod.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/string.h>
+#include <beep/bitops.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>  /* for in_interrupt() */
+#include <beep/kmod.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/errno.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
+#include <beep/debugfs.h>
 
 #include <asm/io.h>
-#include <linux/scatterlist.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
+#include <beep/scatterlist.h>
+#include <beep/mm.h>
+#include <beep/dma-mapping.h>
 
 #include "usb.h"
 

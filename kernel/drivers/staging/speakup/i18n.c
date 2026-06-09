@@ -1,10 +1,10 @@
 /* Internationalization implementation.  Includes definitions of English
  * string arrays, and the i18n pointer. */
 
-#include <linux/slab.h>		/* For kmalloc. */
-#include <linux/ctype.h>
-#include <linux/module.h>
-#include <linux/string.h>
+#include <beep/slab.h>		/* For kmalloc. */
+#include <beep/ctype.h>
+#include <beep/module.h>
+#include <beep/string.h>
 #include "speakup.h"
 #include "spk_priv.h"
 

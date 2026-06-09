@@ -17,30 +17,30 @@
  * "shrinker" interface.
  *
  * [1] For a definition of page-accessible memory (aka PAM), see:
- *   http://marc.info/?l=linux-mm&m=127811271605009
+ *   http://marc.info/?l=beep-mm&m=127811271605009
  */
 
-#include <linux/module.h>
-#include <linux/cpu.h>
-#include <linux/highmem.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/math64.h>
-#include <linux/crypto.h>
-#include <linux/string.h>
-#include <linux/idr.h>
+#include <beep/module.h>
+#include <beep/cpu.h>
+#include <beep/highmem.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/atomic.h>
+#include <beep/math64.h>
+#include <beep/crypto.h>
+#include <beep/string.h>
+#include <beep/idr.h>
 #include "tmem.h"
 
 #include "../zsmalloc/zsmalloc.h"
 
 #ifdef CONFIG_CLEANCACHE
-#include <linux/cleancache.h>
+#include <beep/cleancache.h>
 #endif
 #ifdef CONFIG_FRONTSWAP
-#include <linux/frontswap.h>
+#include <beep/frontswap.h>
 #endif
 
 #if 0

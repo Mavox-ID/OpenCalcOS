@@ -10,8 +10,8 @@
 #ifndef __ASM_MIPS_MACHINE_H
 #define __ASM_MIPS_MACHINE_H
 
-#include <linux/init.h>
-#include <linux/stddef.h>
+#include <beep/init.h>
+#include <beep/stddef.h>
 
 #include <asm/bootinfo.h>
 

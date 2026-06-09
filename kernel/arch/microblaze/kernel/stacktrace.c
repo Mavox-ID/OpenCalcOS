@@ -9,11 +9,11 @@
  * for more details.
  */
 
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
-#include <linux/thread_info.h>
-#include <linux/ptrace.h>
-#include <linux/module.h>
+#include <beep/sched.h>
+#include <beep/stacktrace.h>
+#include <beep/thread_info.h>
+#include <beep/ptrace.h>
+#include <beep/module.h>
 #include <asm/unwind.h>
 
 void save_stack_trace(struct stack_trace *trace)

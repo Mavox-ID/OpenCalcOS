@@ -1,5 +1,5 @@
 /*
- *  linux/fs/nfs/inode.c
+ *  beep/fs/nfs/inode.c
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -13,32 +13,32 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/metrics.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/nfs4_mount.h>
-#include <linux/lockd/bind.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/vfs.h>
-#include <linux/inet.h>
-#include <linux/nfs_xdr.h>
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/freezer.h>
-#include <linux/crc32.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/time.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/stat.h>
+#include <beep/errno.h>
+#include <beep/unistd.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/stats.h>
+#include <beep/sunrpc/metrics.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_mount.h>
+#include <beep/nfs4_mount.h>
+#include <beep/lockd/bind.h>
+#include <beep/seq_file.h>
+#include <beep/mount.h>
+#include <beep/vfs.h>
+#include <beep/inet.h>
+#include <beep/nfs_xdr.h>
+#include <beep/slab.h>
+#include <beep/compat.h>
+#include <beep/freezer.h>
+#include <beep/crc32.h>
 
 #include <asm/uaccess.h>
 

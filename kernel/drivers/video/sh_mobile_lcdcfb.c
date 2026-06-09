@@ -8,25 +8,25 @@
  * for more details.
  */
 
-#include <linux/atomic.h>
-#include <linux/backlight.h>
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/ctype.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/vmalloc.h>
+#include <beep/atomic.h>
+#include <beep/backlight.h>
+#include <beep/clk.h>
+#include <beep/console.h>
+#include <beep/ctype.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioctl.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/slab.h>
+#include <beep/videodev2.h>
+#include <beep/vmalloc.h>
 
 #include <video/sh_mobile_lcdc.h>
 #include <video/sh_mobile_meram.h>

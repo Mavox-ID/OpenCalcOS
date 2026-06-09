@@ -10,19 +10,19 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/syscore_ops.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/syscore_ops.h>
+#include <beep/cpu.h>
+#include <beep/module.h>
+#include <beep/bitops.h>
+#include <beep/debugfs.h>
+#include <beep/fs.h>
+#include <beep/seq_file.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
+#include <beep/vmalloc.h>
 #include <asm/cacheflush.h>
 #include <asm/sizes.h>
 #include <asm/uaccess.h>

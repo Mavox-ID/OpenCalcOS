@@ -15,15 +15,15 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 #include <mach/jornada720.h>
 #include <mach/hardware.h>

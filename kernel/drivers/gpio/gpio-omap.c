@@ -12,21 +12,21 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/syscore_ops.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/irqdomain.h>
-#include <linux/gpio.h>
-#include <linux/platform_data/gpio-omap.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/syscore_ops.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/device.h>
+#include <beep/pm_runtime.h>
+#include <beep/pm.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/irqdomain.h>
+#include <beep/gpio.h>
+#include <beep/platform_data/gpio-omap.h>
 
 #include <asm/mach/irq.h>
 

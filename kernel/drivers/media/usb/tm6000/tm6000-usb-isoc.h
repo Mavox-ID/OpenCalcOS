@@ -17,7 +17,7 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 
 #define TM6000_URB_MSG_LEN 180
 

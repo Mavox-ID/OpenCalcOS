@@ -19,9 +19,9 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/configfs.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/configfs.h>
 
 #include "heartbeat.h"
 #include "tcp.h"

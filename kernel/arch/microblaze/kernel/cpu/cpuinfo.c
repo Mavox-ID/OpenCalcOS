@@ -8,7 +8,7 @@
  * for more details.
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/cpuinfo.h>
 #include <asm/pvr.h>
 

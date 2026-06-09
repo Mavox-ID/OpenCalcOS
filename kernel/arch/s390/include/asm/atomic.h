@@ -13,8 +13,8 @@
 #ifndef __ARCH_S390_ATOMIC__
 #define __ARCH_S390_ATOMIC__
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/types.h>
 #include <asm/cmpxchg.h>
 
 #define ATOMIC_INIT(i)  { (i) }

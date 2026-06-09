@@ -14,10 +14,10 @@
  * @author Suravee Suthikulpanit <suravee.suthikulpanit@amd.com>
  */
 
-#include <linux/oprofile.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/percpu.h>
+#include <beep/oprofile.h>
+#include <beep/device.h>
+#include <beep/pci.h>
+#include <beep/percpu.h>
 
 #include <asm/ptrace.h>
 #include <asm/msr.h>

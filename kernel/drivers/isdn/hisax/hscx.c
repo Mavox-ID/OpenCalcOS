@@ -3,20 +3,20 @@
  * HSCX specific routines
  *
  * Author       Karsten Keil
- * Copyright    by Karsten Keil      <keil@isdn4linux.de>
+ * Copyright    by Karsten Keil      <keil@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include "hisax.h"
 #include "hscx.h"
 #include "isac.h"
 #include "isdnl1.h"
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 
 static char *HSCXVer[] =
 {"A1", "?1", "A2", "?3", "A3", "V2.1", "?6", "?7",

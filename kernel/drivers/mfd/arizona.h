@@ -13,8 +13,8 @@
 #ifndef _WM5102_H
 #define _WM5102_H
 
-#include <linux/regmap.h>
-#include <linux/pm.h>
+#include <beep/regmap.h>
+#include <beep/pm.h>
 
 struct wm_arizona;
 

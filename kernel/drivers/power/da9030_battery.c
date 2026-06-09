@@ -9,19 +9,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/workqueue.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/mfd/da903x.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/device.h>
+#include <beep/workqueue.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/power_supply.h>
+#include <beep/mfd/da903x.h>
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 #define DA9030_FAULT_LOG		0x0a
 #define DA9030_FAULT_LOG_OVER_TEMP	(1 << 7)

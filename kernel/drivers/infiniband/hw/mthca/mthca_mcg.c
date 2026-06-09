@@ -30,8 +30,8 @@
  * SOFTWARE.
  */
 
-#include <linux/string.h>
-#include <linux/gfp.h>
+#include <beep/string.h>
+#include <beep/gfp.h>
 
 #include "mthca_dev.h"
 #include "mthca_cmd.h"

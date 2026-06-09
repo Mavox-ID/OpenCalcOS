@@ -20,16 +20,16 @@
  * kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/mdio-gpio.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/mdio-gpio.h>
 
-#include <linux/of_gpio.h>
-#include <linux/of_mdio.h>
+#include <beep/of_gpio.h>
+#include <beep/of_mdio.h>
 
 struct mdio_gpio_info {
 	struct mdiobb_ctrl ctrl;

@@ -10,8 +10,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/mm.h>
-#include <linux/init.h>
+#include <beep/mm.h>
+#include <beep/init.h>
 #include <asm/mach/map.h>
 #include <asm/hardware/iop3xx.h>
 

@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hpfs/anode.c
+ *  beep/fs/hpfs/anode.c
  *
  *  Mikulas Patocka (mikulas@artax.karlin.mff.cuni.cz), 1998-1999
  *

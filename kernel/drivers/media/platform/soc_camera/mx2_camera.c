@@ -11,25 +11,25 @@
  * (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/gcd.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/mm.h>
-#include <linux/moduleparam.h>
-#include <linux/time.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/clk.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/gcd.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/math64.h>
+#include <beep/mm.h>
+#include <beep/moduleparam.h>
+#include <beep/time.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/mutex.h>
+#include <beep/clk.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-dev.h>
@@ -38,9 +38,9 @@
 #include <media/soc_camera.h>
 #include <media/soc_mediabus.h>
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 
-#include <linux/platform_data/camera-mx2.h>
+#include <beep/platform_data/camera-mx2.h>
 
 #include <asm/dma.h>
 

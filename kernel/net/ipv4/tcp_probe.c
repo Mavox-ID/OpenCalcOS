@@ -20,20 +20,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/socket.h>
-#include <linux/tcp.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/module.h>
-#include <linux/ktime.h>
-#include <linux/time.h>
+#include <beep/kernel.h>
+#include <beep/kprobes.h>
+#include <beep/socket.h>
+#include <beep/tcp.h>
+#include <beep/slab.h>
+#include <beep/proc_fs.h>
+#include <beep/module.h>
+#include <beep/ktime.h>
+#include <beep/time.h>
 #include <net/net_namespace.h>
 
 #include <net/tcp.h>
 
-MODULE_AUTHOR("Stephen Hemminger <shemminger@linux-foundation.org>");
+MODULE_AUTHOR("Stephen Hemminger <shemminger@beep-foundation.org>");
 MODULE_DESCRIPTION("TCP cwnd snooper");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("1.1");

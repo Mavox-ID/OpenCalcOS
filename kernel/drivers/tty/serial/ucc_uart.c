@@ -18,20 +18,20 @@
  * (e.g. "11" for 1.1).
  */
 
-#include <linux/module.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/io.h>
-#include <linux/of_platform.h>
-#include <linux/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/io.h>
+#include <beep/of_platform.h>
+#include <beep/dma-mapping.h>
 
-#include <linux/fs_uart_pd.h>
+#include <beep/fs_uart_pd.h>
 #include <asm/ucc_slow.h>
 
-#include <linux/firmware.h>
+#include <beep/firmware.h>
 #include <asm/reg.h>
 
 /*

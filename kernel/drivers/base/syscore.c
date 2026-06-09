@@ -6,10 +6,10 @@
  *  This file is released under the GPLv2.
  */
 
-#include <linux/syscore_ops.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
+#include <beep/syscore_ops.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
 
 static LIST_HEAD(syscore_ops_list);
 static DEFINE_MUTEX(syscore_ops_lock);

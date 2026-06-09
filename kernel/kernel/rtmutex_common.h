@@ -12,7 +12,7 @@
 #ifndef __KERNEL_RTMUTEX_COMMON_H
 #define __KERNEL_RTMUTEX_COMMON_H
 
-#include <linux/rtmutex.h>
+#include <beep/rtmutex.h>
 
 /*
  * The rtmutex in kernel tester is independent of rtmutex debugging. We

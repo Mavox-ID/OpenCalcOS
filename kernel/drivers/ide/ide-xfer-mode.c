@@ -1,10 +1,10 @@
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/ide.h>
-#include <linux/bitops.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/interrupt.h>
+#include <beep/ide.h>
+#include <beep/bitops.h>
 
 static const char *udma_str[] =
 	 { "UDMA/16", "UDMA/25",  "UDMA/33",  "UDMA/44",

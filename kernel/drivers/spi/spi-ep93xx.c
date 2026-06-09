@@ -16,23 +16,23 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
-#include <linux/scatterlist.h>
-#include <linux/spi/spi.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/dmaengine.h>
+#include <beep/bitops.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/workqueue.h>
+#include <beep/sched.h>
+#include <beep/scatterlist.h>
+#include <beep/spi/spi.h>
 
-#include <linux/platform_data/dma-ep93xx.h>
-#include <linux/platform_data/spi-ep93xx.h>
+#include <beep/platform_data/dma-ep93xx.h>
+#include <beep/platform_data/spi-ep93xx.h>
 
 #define SSPCR0			0x0000
 #define SSPCR0_MODE_SHIFT	6

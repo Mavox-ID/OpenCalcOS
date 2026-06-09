@@ -1,9 +1,9 @@
 /*
  * mISDNisar.c   ISAR (Siemens PSB 7110) specific functions
  *
- * Author Karsten Keil (keil@isdn4linux.de)
+ * Author Karsten Keil (keil@isdn4beep.de)
  *
- * Copyright 2009  by Karsten Keil <keil@isdn4linux.de>
+ * Copyright 2009  by Karsten Keil <keil@isdn4beep.de>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -25,11 +25,11 @@
  */
 /* #define DEBUG */
 
-#include <linux/gfp.h>
-#include <linux/delay.h>
-#include <linux/vmalloc.h>
-#include <linux/mISDNhw.h>
-#include <linux/module.h>
+#include <beep/gfp.h>
+#include <beep/delay.h>
+#include <beep/vmalloc.h>
+#include <beep/mISDNhw.h>
+#include <beep/module.h>
 #include "isar.h"
 
 #define ISAR_REV	"2.1"

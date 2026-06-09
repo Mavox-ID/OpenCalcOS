@@ -6,13 +6,13 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
-#include <linux/iio/iio.h>
+#include <beep/iio/iio.h>
 #include "ade7854.h"
 
 static int ade7854_i2c_write_reg_8(struct device *dev,

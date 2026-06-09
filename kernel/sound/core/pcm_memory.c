@@ -20,12 +20,12 @@
  */
 
 #include <asm/io.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/moduleparam.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
+#include <beep/time.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/moduleparam.h>
+#include <beep/vmalloc.h>
+#include <beep/export.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/info.h>

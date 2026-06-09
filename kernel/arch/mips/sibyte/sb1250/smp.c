@@ -16,12 +16,12 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/kernel_stat.h>
-#include <linux/sched.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/smp.h>
+#include <beep/kernel_stat.h>
+#include <beep/sched.h>
 
 #include <asm/mmu_context.h>
 #include <asm/io.h>

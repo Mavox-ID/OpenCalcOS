@@ -16,20 +16,20 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/scatterlist.h>
-#include <linux/swap.h>
-#include <linux/radix-tree.h>
-#include <linux/writeback.h>
-#include <linux/buffer_head.h>
-#include <linux/workqueue.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/crc32c.h>
-#include <linux/slab.h>
-#include <linux/migrate.h>
-#include <linux/ratelimit.h>
+#include <beep/fs.h>
+#include <beep/blkdev.h>
+#include <beep/scatterlist.h>
+#include <beep/swap.h>
+#include <beep/radix-tree.h>
+#include <beep/writeback.h>
+#include <beep/buffer_head.h>
+#include <beep/workqueue.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
+#include <beep/crc32c.h>
+#include <beep/slab.h>
+#include <beep/migrate.h>
+#include <beep/ratelimit.h>
 #include <asm/unaligned.h>
 #include "compat.h"
 #include "ctree.h"

@@ -16,32 +16,32 @@
  *               David Mosberger-Tang <davidm@hpl.hp.com>
  *
  * More information about perfmon available at:
- * 	http://www.hpl.hp.com/research/linux/perfmon
+ * 	http://www.hpl.hp.com/research/beep/perfmon
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/sysctl.h>
-#include <linux/list.h>
-#include <linux/file.h>
-#include <linux/poll.h>
-#include <linux/vfs.h>
-#include <linux/smp.h>
-#include <linux/pagemap.h>
-#include <linux/mount.h>
-#include <linux/bitops.h>
-#include <linux/capability.h>
-#include <linux/rcupdate.h>
-#include <linux/completion.h>
-#include <linux/tracehook.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/vmalloc.h>
+#include <beep/mm.h>
+#include <beep/sysctl.h>
+#include <beep/list.h>
+#include <beep/file.h>
+#include <beep/poll.h>
+#include <beep/vfs.h>
+#include <beep/smp.h>
+#include <beep/pagemap.h>
+#include <beep/mount.h>
+#include <beep/bitops.h>
+#include <beep/capability.h>
+#include <beep/rcupdate.h>
+#include <beep/completion.h>
+#include <beep/tracehook.h>
+#include <beep/slab.h>
 
 #include <asm/errno.h>
 #include <asm/intrinsics.h>

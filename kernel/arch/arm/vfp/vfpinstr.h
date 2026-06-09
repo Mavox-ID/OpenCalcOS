@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/vfp/vfpinstr.h
+ *  beep/arch/arm/vfp/vfpinstr.h
  *
  *  Copyright (C) 2004 ARM Limited.
  *  Written by Deep Blue Solutions Limited.

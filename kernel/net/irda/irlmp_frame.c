@@ -24,8 +24,8 @@
  *
  ********************************************************************/
 
-#include <linux/skbuff.h>
-#include <linux/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/kernel.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/irlap.h>

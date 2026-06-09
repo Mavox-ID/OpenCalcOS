@@ -22,7 +22,7 @@
 #ifndef __I2C_IBM_IIC_H_
 #define __I2C_IBM_IIC_H_
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 
 struct iic_regs {
 	u16 mdbuf;

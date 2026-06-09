@@ -1,5 +1,5 @@
 /*
- * Transparent proxy support for Linux/iptables
+ * Transparent proxy support for Beep/iptables
  *
  * Copyright (C) 2007-2008 BalaBit IT Ltd.
  * Author: Krisztian Kovacs
@@ -10,10 +10,10 @@
  *
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_ipv4/ip_tables.h>
 #include <net/tcp.h>
 #include <net/udp.h>
 #include <net/icmp.h>
@@ -24,11 +24,11 @@
 
 #if IS_ENABLED(CONFIG_IP6_NF_IPTABLES)
 #define XT_SOCKET_HAVE_IPV6 1
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <beep/netfilter_ipv6/ip6_tables.h>
 #include <net/netfilter/ipv6/nf_defrag_ipv6.h>
 #endif
 
-#include <linux/netfilter/xt_socket.h>
+#include <beep/netfilter/xt_socket.h>
 
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
 #define XT_SOCKET_HAVE_CONNTRACK 1

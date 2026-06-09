@@ -39,17 +39,17 @@
  * them to the hw and transfer the replies/notifications back to the
  * UWB stack through the UWB daemon (UWBD).
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/uwb.h>
-#include <linux/uwb/whci.h>
-#include <linux/uwb/umc.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/sched.h>
+#include <beep/dma-mapping.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/uwb.h>
+#include <beep/uwb/whci.h>
+#include <beep/uwb/umc.h>
 
 #include "uwb-internal.h"
 

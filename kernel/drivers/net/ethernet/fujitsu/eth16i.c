@@ -1,4 +1,4 @@
-/* eth16i.c An ICL EtherTeam 16i and 32 EISA ethernet driver for Linux
+/* eth16i.c An ICL EtherTeam 16i and 32 EISA ethernet driver for Beep
 
    Written 1994-1999 by Mika Kuoppala
 
@@ -27,7 +27,7 @@
    and 486/33Mhz as a ftp server. Top speed was 1128.37 kilobytes/sec.
 
    Sources:
-     - skeleton.c  a sample network driver core for linux,
+     - skeleton.c  a sample network driver core for beep,
        written by Donald Becker <becker@scyld.com>
      - at1700.c a driver for Allied Telesis AT1700, written
        by Donald Becker.
@@ -145,23 +145,23 @@
 static char *version =
     "eth16i.c: v0.35 01-Jul-1999 Mika Kuoppala (miku@iki.fi)\n";
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/in.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/bitops.h>
+#include <beep/jiffies.h>
+#include <beep/io.h>
 
 #include <asm/dma.h>
 

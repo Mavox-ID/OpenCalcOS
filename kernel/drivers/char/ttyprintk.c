@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/char/ttyprintk.c
+ *  beep/drivers/char/ttyprintk.c
  *
  *  Copyright (C) 2010  Samo Pogacnik
  *
@@ -14,10 +14,10 @@
  * of the boot process, for example.
  */
 
-#include <linux/device.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/export.h>
+#include <beep/device.h>
+#include <beep/serial.h>
+#include <beep/tty.h>
+#include <beep/export.h>
 
 struct ttyprintk_port {
 	struct tty_port port;

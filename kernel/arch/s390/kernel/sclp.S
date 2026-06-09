@@ -8,7 +8,7 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 LC_EXT_NEW_PSW		= 0x58			# addr of ext int handler
 LC_EXT_NEW_PSW_64	= 0x1b0			# addr of ext int handler 64 bit

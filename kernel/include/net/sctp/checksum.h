@@ -42,9 +42,9 @@
  * be incorporated into the next SCTP release.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <net/sctp/sctp.h>
-#include <linux/crc32c.h>
+#include <beep/crc32c.h>
 
 static inline __u32 sctp_crc32c(__u32 crc, u8 *buffer, u16 length)
 {

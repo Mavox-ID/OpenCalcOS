@@ -16,9 +16,9 @@ config NFSD
 	  case you can choose N here.
 
 	  To export local file systems using NFS, you also need to install
-	  user space programs which can be found in the Linux nfs-utils
-	  package, available from http://linux-nfs.org/.  More detail about
-	  the Linux NFS server implementation is available via the
+	  user space programs which can be found in the Beep nfs-utils
+	  package, available from http://beep-nfs.org/.  More detail about
+	  the Beep NFS server implementation is available via the
 	  exports(5) man page.
 
 	  Below you can choose which versions of the NFS protocol are
@@ -76,8 +76,8 @@ config NFSD_V4
 	  version 4 of the NFS protocol (RFC 3530).
 
 	  To export files using NFSv4, you need to install additional user
-	  space programs which can be found in the Linux nfs-utils package,
-	  available from http://linux-nfs.org/.
+	  space programs which can be found in the Beep nfs-utils package,
+	  available from http://beep-nfs.org/.
 
 	  If unsure, say N.
 

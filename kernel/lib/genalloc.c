@@ -28,12 +28,12 @@
  * Version 2.  See the file COPYING for more details.
  */
 
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/bitmap.h>
-#include <linux/rculist.h>
-#include <linux/interrupt.h>
-#include <linux/genalloc.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/bitmap.h>
+#include <beep/rculist.h>
+#include <beep/interrupt.h>
+#include <beep/genalloc.h>
 
 static int set_bits_ll(unsigned long *addr, unsigned long mask_to_set)
 {

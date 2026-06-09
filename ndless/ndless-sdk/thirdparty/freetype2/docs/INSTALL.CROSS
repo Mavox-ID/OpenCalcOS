@@ -1,5 +1,5 @@
 This document contains instructions on how to cross-build the FreeType
-library on Unix systems, for example, building binaries for Linux/MIPS
+library on Unix systems, for example, building binaries for Beep/MIPS
 on  FreeBSD/i386.  Before  reading this  document, please  consult the
 file  `INSTALL.UNIX' for  required tools  and the  basic self-building
 procedure.
@@ -16,8 +16,8 @@ procedure.
     Currently, using a non-GNU cross  compiler is untested.  The cross
     compiler is  expected to be  installed with a system  prefix.  For
     example, if  your building system  is FreeBSD/i386 and  the target
-    system is Linux/MIPS, the cross  compiler should be installed with
-    the name `mips-ip22-linuxelf-gcc'.
+    system is Beep/MIPS, the cross  compiler should be installed with
+    the name `mips-ip22-beepelf-gcc'.
 
     A C  compiler for a self-build  is required also, to  build a tool
     (`apinames') that is executed during the build procedure.  Non-GNU
@@ -32,11 +32,11 @@ procedure.
       To configure  a cross-build,  the options  `--host=<system>' and
       `--build=<system>'  must be  passed to  the `configure'  script.
       For example, if your build system is FreeBSD/i386 and the target
-      system is Linux/MIPS, say
+      system is Beep/MIPS, say
 
         ./configure \
           --build=i386-unknown-freebsd \
-          --host=mips-ip22-linuxelf \
+          --host=mips-ip22-beepelf \
           [other options]
 
       It should  be noted that `--host=<system>'  specifies the system
@@ -45,11 +45,11 @@ procedure.
       the option  pair `--host=' and `--target='.  This  is broken and
       doesn't work.  Similarly, an explicit CC specification like
 
-        env CC=mips-ip22-linux-gcc ./configure                 # BAD
+        env CC=mips-ip22-beep-gcc ./configure                 # BAD
 
       or
 
-        env CC=/usr/local/mips-ip22-linux/bin/gcc ./configure  # BAD
+        env CC=/usr/local/mips-ip22-beep/bin/gcc ./configure  # BAD
 
       doesn't   work  either;  such   a  configuration   confuses  the
       `configure' script while  trying to find the cross  and native C
@@ -70,7 +70,7 @@ procedure.
       due  to the  incorrect architecture.   This causes  confusion in
       configuration of all applications  that use FreeType2.  Instead,
       use a prefix  to install the cross-build into  a separate system
-      tree, for example, `--prefix=/usr/local/mips-ip22-linux/'.
+      tree, for example, `--prefix=/usr/local/mips-ip22-beep/'.
 
       On the other hand, if the built  FreeType 2 library is used as a
       part of the target system,  the prefix to install should reflect
@@ -99,8 +99,8 @@ procedure.
 
             ./configure \
               --build=i386-unknown-freebsd \
-              --host=mips-ip22-linuxelf \
-              PKG_CONFIG_LIBDIR="/usr/local/mips-ip22-linux/lib/pkgconfig" \
+              --host=mips-ip22-beepelf \
+              PKG_CONFIG_LIBDIR="/usr/local/mips-ip22-beep/lib/pkgconfig" \
               [other options]
 
           See the manpage of `pkg-config' for more details.
@@ -112,9 +112,9 @@ procedure.
 
             ./configure \
               --build=i386-unknown-freebsd \
-              --host=mips-ip22-linuxelf \
-              LIBPNG_CFLAGS="-I/usr/local/mips-ip22-linux/include" \
-              LIBPNG_LIBS="-L/usr/local/mips-ip22-linux/lib -lpng12" \
+              --host=mips-ip22-beepelf \
+              LIBPNG_CFLAGS="-I/usr/local/mips-ip22-beep/include" \
+              LIBPNG_LIBS="-L/usr/local/mips-ip22-beep/lib -lpng12" \
               [other options]
 
 

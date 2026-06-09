@@ -20,29 +20,29 @@
  *	Paul Diefenbaugh	:	Added full ACPI support
  */
 
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/mc146818rtc.h>
-#include <linux/compiler.h>
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/syscore_ops.h>
-#include <linux/msi.h>
-#include <linux/htirq.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/jiffies.h>	/* time_after() */
-#include <linux/slab.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/pci.h>
+#include <beep/mc146818rtc.h>
+#include <beep/compiler.h>
+#include <beep/acpi.h>
+#include <beep/module.h>
+#include <beep/syscore_ops.h>
+#include <beep/msi.h>
+#include <beep/htirq.h>
+#include <beep/freezer.h>
+#include <beep/kthread.h>
+#include <beep/jiffies.h>	/* time_after() */
+#include <beep/slab.h>
 #ifdef CONFIG_ACPI
 #include <acpi/acpi_bus.h>
 #endif
-#include <linux/bootmem.h>
-#include <linux/dmar.h>
-#include <linux/hpet.h>
+#include <beep/bootmem.h>
+#include <beep/dmar.h>
+#include <beep/hpet.h>
 
 #include <asm/idle.h>
 #include <asm/io.h>

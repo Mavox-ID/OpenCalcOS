@@ -1,4 +1,4 @@
-/*    -*- linux-c -*-
+/*    -*- beep-c -*-
 
 GTCO digitizer USB driver
 
@@ -50,19 +50,19 @@ Scott Hill shill@gtcocalcomp.com
 
 /*#define DEBUG*/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/usb.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/usb.h>
 #include <asm/uaccess.h>
 #include <asm/unaligned.h>
 #include <asm/byteorder.h>
 
 
-#include <linux/usb/input.h>
+#include <beep/usb/input.h>
 
 /* Version with a Major number of 2 is for kernel inclusion only. */
 #define  GTCO_VERSION   "2.00.0006"

@@ -1,12 +1,12 @@
 /*
- * linux/arch/arm/mach-at91/clock.h
+ * beep/arch/arm/mach-at91/clock.h
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
 
-#include <linux/clkdev.h>
+#include <beep/clkdev.h>
 
 #define CLK_TYPE_PRIMARY	0x1
 #define CLK_TYPE_PLL		0x2

@@ -18,18 +18,18 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/leds.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/i2c-gpio.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/pm.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/leds.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/i2c-gpio.h>
 #include <asm/bootinfo.h>
 #include <asm/reboot.h>
 #include <asm/mach-au1x00/au1000.h>

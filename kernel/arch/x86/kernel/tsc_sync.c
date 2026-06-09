@@ -14,11 +14,11 @@
  * ( The serial nature of the boot logic and the CPU hotplug lock
  *   protects against more than 2 CPUs entering this code. )
  */
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/nmi.h>
+#include <beep/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/nmi.h>
 #include <asm/tsc.h>
 
 /*

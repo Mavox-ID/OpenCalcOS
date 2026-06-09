@@ -27,13 +27,13 @@
  * As well, provides common functions used by the rest of the code.
  */
 #include "i1480-dfu.h"
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/device.h>
-#include <linux/uwb.h>
-#include <linux/random.h>
-#include <linux/export.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/device.h>
+#include <beep/uwb.h>
+#include <beep/random.h>
+#include <beep/export.h>
 
 /*
  * i1480_rceb_check - Check RCEB for expected field values

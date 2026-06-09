@@ -33,10 +33,10 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/tty.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
+#include <beep/errno.h>
+#include <beep/tty.h>
+#include <beep/sched.h>
+#include <beep/cred.h>
 
 #include "dgrp_common.h"
 

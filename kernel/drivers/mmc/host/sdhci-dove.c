@@ -19,14 +19,14 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/mmc/host.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
+#include <beep/mmc/host.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
 
 #include "sdhci-pltfm.h"
 

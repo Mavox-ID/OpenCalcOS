@@ -8,9 +8,9 @@
 
 #ifdef CONFIG_NCPFS_PACKET_SIGNING
 
-#include <linux/string.h>
-#include <linux/ncp.h>
-#include <linux/bitops.h>
+#include <beep/string.h>
+#include <beep/ncp.h>
+#include <beep/bitops.h>
 #include "ncp_fs.h"
 #include "ncpsign_kernel.h"
 

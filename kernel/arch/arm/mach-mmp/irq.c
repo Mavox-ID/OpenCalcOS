@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-mmp/irq.c
+ *  beep/arch/arm/mach-mmp/irq.c
  *
  *  Generic IRQ handling, GPIO IRQ demultiplexing, etc.
  *  Copyright (C) 2008 - 2012 Marvell Technology Group Ltd.
@@ -12,14 +12,14 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
 
 #include <mach/irqs.h>
 

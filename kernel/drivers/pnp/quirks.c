@@ -13,13 +13,13 @@
  *  Copyright (c) 1999 Martin Mares <mj@ucw.cz>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/pnp.h>
-#include <linux/io.h>
-#include <linux/kallsyms.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/pnp.h>
+#include <beep/io.h>
+#include <beep/kallsyms.h>
 #include "base.h"
 
 static void quirk_awe32_add_ports(struct pnp_dev *dev,
@@ -225,7 +225,7 @@ static void quirk_ad1815_mpu_resources(struct pnp_dev *dev)
 	dev_info(&dev->dev, "made independent IRQ optional\n");
 }
 
-#include <linux/pci.h>
+#include <beep/pci.h>
 
 static void quirk_system_pci_resources(struct pnp_dev *dev)
 {

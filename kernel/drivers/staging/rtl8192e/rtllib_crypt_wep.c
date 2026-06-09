@@ -9,18 +9,18 @@
  * more details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/random.h>
+#include <beep/skbuff.h>
+#include <beep/string.h>
 #include "rtllib.h"
 
-#include <linux/crypto.h>
+#include <beep/crypto.h>
 
-#include <linux/scatterlist.h>
-#include <linux/crc32.h>
+#include <beep/scatterlist.h>
+#include <beep/crc32.h>
 
 struct prism2_wep_data {
 	u32 iv;

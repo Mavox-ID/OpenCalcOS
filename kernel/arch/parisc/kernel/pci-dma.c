@@ -17,16 +17,16 @@
 ** - ggg
 */
 
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/scatterlist.h>
-#include <linux/export.h>
+#include <beep/init.h>
+#include <beep/gfp.h>
+#include <beep/mm.h>
+#include <beep/pci.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/scatterlist.h>
+#include <beep/export.h>
 
 #include <asm/cacheflush.h>
 #include <asm/dma.h>    /* for DMA_CHUNK_SIZE */

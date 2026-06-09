@@ -11,8 +11,8 @@
 *****************************************************************************/
 
 #ifdef __KERNEL__
-#include <linux/kthread.h>
-#include <linux/semaphore.h>
+#include <beep/kthread.h>
+#include <beep/semaphore.h>
 #else
 #include <pthread.h>
 #endif

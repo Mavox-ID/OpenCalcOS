@@ -15,11 +15,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/export.h>
 
 #include "../../wusbcore/wusbhc.h"
 

@@ -9,19 +9,19 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/backing-dev.h>
-#include <linux/ramfs.h>
-#include <linux/pagevec.h>
-#include <linux/mman.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/highmem.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/backing-dev.h>
+#include <beep/ramfs.h>
+#include <beep/pagevec.h>
+#include <beep/mman.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 #include <asm/uaccess.h>
 #include "internal.h"

@@ -21,10 +21,10 @@
 **-----------------------------------------------------------------------------
 */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/enclosure.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/enclosure.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

@@ -1,5 +1,5 @@
 /*
- * Linux ARCnet driver - "raw mode" packet encapsulation (no soft headers)
+ * Beep ARCnet driver - "raw mode" packet encapsulation (no soft headers)
  * 
  * Written 1994-1999 by Avery Pennarun.
  * Derived from skeleton.c by Donald Becker.
@@ -24,14 +24,14 @@
  * **********************
  */
 
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/if_arp.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
+#include <beep/init.h>
+#include <beep/if_arp.h>
 #include <net/arp.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/arcdevice.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/arcdevice.h>
 
 #define VERSION "arcnet: raw mode (`r') encapsulation support loaded.\n"
 
@@ -147,7 +147,7 @@ static int build_header(struct sk_buff *skb, struct net_device *dev,
 	 */
 	pkt->hard.source = *dev->dev_addr;
 
-	/* see linux/net/ethernet/eth.c to see where I got the following */
+	/* see beep/net/ethernet/eth.c to see where I got the following */
 
 	if (dev->flags & (IFF_LOOPBACK | IFF_NOARP)) {
 		/* 

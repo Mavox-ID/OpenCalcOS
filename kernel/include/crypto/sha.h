@@ -5,7 +5,7 @@
 #ifndef _CRYPTO_SHA_H
 #define _CRYPTO_SHA_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define SHA1_DIGEST_SIZE        20
 #define SHA1_BLOCK_SIZE         64

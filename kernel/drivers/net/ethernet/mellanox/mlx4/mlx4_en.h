@@ -34,23 +34,23 @@
 #ifndef _MLX4_EN_H_
 #define _MLX4_EN_H_
 
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
+#include <beep/bitops.h>
+#include <beep/compiler.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/netdevice.h>
+#include <beep/if_vlan.h>
 #ifdef CONFIG_MLX4_EN_DCB
-#include <linux/dcbnl.h>
+#include <beep/dcbnl.h>
 #endif
-#include <linux/cpu_rmap.h>
+#include <beep/cpu_rmap.h>
 
-#include <linux/mlx4/device.h>
-#include <linux/mlx4/qp.h>
-#include <linux/mlx4/cq.h>
-#include <linux/mlx4/srq.h>
-#include <linux/mlx4/doorbell.h>
-#include <linux/mlx4/cmd.h>
+#include <beep/mlx4/device.h>
+#include <beep/mlx4/qp.h>
+#include <beep/mlx4/cq.h>
+#include <beep/mlx4/srq.h>
+#include <beep/mlx4/doorbell.h>
+#include <beep/mlx4/cmd.h>
 
 #include "en_port.h"
 

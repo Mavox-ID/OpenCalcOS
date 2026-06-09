@@ -21,9 +21,9 @@
 #define _POWERPC_EEH_H
 #ifdef __KERNEL__
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/string.h>
 
 struct pci_dev;
 struct pci_bus;

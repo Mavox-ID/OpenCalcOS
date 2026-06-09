@@ -13,8 +13,8 @@
 #ifndef _ASM_SYSCALL_H
 #define _ASM_SYSCALL_H	1
 
-#include <linux/sched.h>
-#include <linux/err.h>
+#include <beep/sched.h>
+#include <beep/err.h>
 
 static inline long syscall_get_nr(struct task_struct *task,
 				  struct pt_regs *regs)

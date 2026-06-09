@@ -18,18 +18,18 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  *
  * Copyright 2010 IBM Corporation
- * Author: K.Prasad <prasad@linux.vnet.ibm.com>
+ * Author: K.Prasad <prasad@beep.vnet.ibm.com>
  *
  */
 
-#include <linux/hw_breakpoint.h>
-#include <linux/notifier.h>
-#include <linux/kprobes.h>
-#include <linux/percpu.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/smp.h>
+#include <beep/hw_breakpoint.h>
+#include <beep/notifier.h>
+#include <beep/kprobes.h>
+#include <beep/percpu.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/smp.h>
 
 #include <asm/hw_breakpoint.h>
 #include <asm/processor.h>

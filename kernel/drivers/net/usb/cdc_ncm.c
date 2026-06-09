@@ -38,20 +38,20 @@
  * SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/ctype.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/usb.h>
-#include <linux/hrtimer.h>
-#include <linux/atomic.h>
-#include <linux/usb/usbnet.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/cdc_ncm.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/ctype.h>
+#include <beep/ethtool.h>
+#include <beep/workqueue.h>
+#include <beep/mii.h>
+#include <beep/crc32.h>
+#include <beep/usb.h>
+#include <beep/hrtimer.h>
+#include <beep/atomic.h>
+#include <beep/usb/usbnet.h>
+#include <beep/usb/cdc.h>
+#include <beep/usb/cdc_ncm.h>
 
 #define	DRIVER_VERSION				"14-Mar-2012"
 

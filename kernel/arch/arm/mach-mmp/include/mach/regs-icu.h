@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-mmp/include/mach/regs-icu.h
+ * beep/arch/arm/mach-mmp/include/mach/regs-icu.h
  *
  *   Interrupt Control Unit
  *

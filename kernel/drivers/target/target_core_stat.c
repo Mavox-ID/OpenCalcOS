@@ -6,7 +6,7 @@
  *
  * (c) Copyright 2006-2012 RisingTide Systems LLC.
  *
- * Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Nicholas A. Bellinger <nab@beep-iscsi.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,16 +24,16 @@
  *
  ******************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/utsname.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/blkdev.h>
-#include <linux/configfs.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/string.h>
+#include <beep/utsname.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/blkdev.h>
+#include <beep/configfs.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_host.h>

@@ -18,18 +18,18 @@
 
 #undef DEBUG
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/fd.h>
-#include <linux/ioctl.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/fd.h>
+#include <beep/ioctl.h>
+#include <beep/blkdev.h>
+#include <beep/interrupt.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
 #include <asm/io.h>
 #include <asm/dbdma.h>
 #include <asm/prom.h>

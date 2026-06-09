@@ -1,4 +1,4 @@
-/* hp.c: A HP LAN ethernet driver for linux. */
+/* hp.c: A HP LAN ethernet driver for beep. */
 /*
 	Written 1993-94 by Donald Becker.
 
@@ -23,15 +23,15 @@ static const char version[] =
 	"hp.c:v1.10 9/23/94 Donald Becker (becker@cesdis.gsfc.nasa.gov)\n";
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
 
 #include <asm/io.h>
 

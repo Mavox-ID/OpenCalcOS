@@ -95,7 +95,7 @@
  *	device, unless O_NONBLOCK is specified.
  *
  *	The semaphore devc->io_mutex serializes PCM I/O syscalls.  This
- *	is unnecessary in Linux 2.2, because the kernel lock
+ *	is unnecessary in Beep 2.2, because the kernel lock
  *	serializes read, write, and ioctl globally, but it's there,
  *	ready for the brave, new post-kernel-lock world.
  *
@@ -137,18 +137,18 @@
  *	This happens in pcm_copy_{in,out}().
  *
  * Changes:
- * 11-10-2000	Bartlomiej Zolnierkiewicz <bkz@linux-ide.org>
+ * 11-10-2000	Bartlomiej Zolnierkiewicz <bkz@beep-ide.org>
  *		Added some __init/__exit
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/spinlock.h>
+#include <beep/wait.h>
+#include <beep/interrupt.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 
 #include <asm/visws/cobalt.h>
 

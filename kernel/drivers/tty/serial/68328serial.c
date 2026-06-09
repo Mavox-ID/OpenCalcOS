@@ -2,7 +2,7 @@
  *
  * Copyright (C) 1995       David S. Miller    <davem@caip.rutgers.edu>
  * Copyright (C) 1998       Kenneth Albanowski <kjahds@kjahds.com>
- * Copyright (C) 1998, 1999 D. Jeff Dionne     <jeff@uclinux.org>
+ * Copyright (C) 1998, 1999 D. Jeff Dionne     <jeff@ucbeep.org>
  * Copyright (C) 1999       Vladimir Gurevich  <vgurevic@cisco.com>
  * Copyright (C) 2002-2003  David McCullough   <davidm@snapgear.com>
  * Copyright (C) 2002       Greg Ungerer       <gerg@snapgear.com>
@@ -15,28 +15,28 @@
  */
 
 #include <asm/dbg.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/serial.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/reboot.h>
-#include <linux/keyboard.h>
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/serial.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/major.h>
+#include <beep/string.h>
+#include <beep/fcntl.h>
+#include <beep/mm.h>
+#include <beep/kernel.h>
+#include <beep/console.h>
+#include <beep/reboot.h>
+#include <beep/keyboard.h>
+#include <beep/init.h>
+#include <beep/pm.h>
+#include <beep/bitops.h>
+#include <beep/delay.h>
+#include <beep/gfp.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

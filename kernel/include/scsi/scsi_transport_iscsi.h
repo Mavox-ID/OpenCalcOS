@@ -23,9 +23,9 @@
 #ifndef SCSI_TRANSPORT_ISCSI_H
 #define SCSI_TRANSPORT_ISCSI_H
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
+#include <beep/device.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
 #include <scsi/iscsi_if.h>
 
 struct scsi_transport_template;

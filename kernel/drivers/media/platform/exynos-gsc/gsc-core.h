@@ -12,13 +12,13 @@
 #ifndef GSC_CORE_H_
 #define GSC_CORE_H_
 
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/videodev2.h>
+#include <beep/io.h>
+#include <beep/pm_runtime.h>
 #include <media/videobuf2-core.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

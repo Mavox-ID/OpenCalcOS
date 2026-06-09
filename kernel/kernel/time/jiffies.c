@@ -1,5 +1,5 @@
 /***********************************************************************
-* linux/kernel/time/jiffies.c
+* beep/kernel/time/jiffies.c
 *
 * This file contains the jiffies based clocksource.
 *
@@ -20,10 +20,10 @@
 * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 *
 ************************************************************************/
-#include <linux/clocksource.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/clocksource.h>
+#include <beep/jiffies.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
 #include "tick-internal.h"
 

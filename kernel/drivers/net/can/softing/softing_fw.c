@@ -17,8 +17,8 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/firmware.h>
-#include <linux/sched.h>
+#include <beep/firmware.h>
+#include <beep/sched.h>
 #include <asm/div64.h>
 #include <asm/io.h>
 

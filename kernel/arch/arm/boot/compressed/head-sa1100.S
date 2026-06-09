@@ -1,5 +1,5 @@
 /* 
- * linux/arch/arm/boot/compressed/head-sa1100.S
+ * beep/arch/arm/boot/compressed/head-sa1100.S
  * 
  * Copyright (C) 1999 Nicolas Pitre <nico@fluxnic.net>
  * 
@@ -7,7 +7,7 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/mach-types.h>
 
 		.section        ".start", "ax"

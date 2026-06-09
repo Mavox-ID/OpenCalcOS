@@ -9,9 +9,9 @@
  *		2 of the License, or (at your option) any later version.
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/sysctl.h>
 
 #include <net/af_unix.h>
 

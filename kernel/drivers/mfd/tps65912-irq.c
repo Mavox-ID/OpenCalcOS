@@ -13,15 +13,15 @@
  * This driver is based on wm8350 implementation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/bug.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/mfd/tps65912.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/bug.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
+#include <beep/mfd/tps65912.h>
 
 static inline int irq_to_tps65912_irq(struct tps65912 *tps65912,
 							int irq)

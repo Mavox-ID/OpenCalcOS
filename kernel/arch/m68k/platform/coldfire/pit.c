@@ -12,13 +12,13 @@
 
 /***************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/param.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/clockchips.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/param.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/clockchips.h>
 #include <asm/machdep.h>
 #include <asm/io.h>
 #include <asm/coldfire.h>

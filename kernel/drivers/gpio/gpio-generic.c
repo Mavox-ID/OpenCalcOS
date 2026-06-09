@@ -44,23 +44,23 @@ o        `                     ~~~~\___/~~~~    ` controller in FPGA is ,.`
  *               `.......````.```
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/log2.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/basic_mmio_gpio.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/bug.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/compiler.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/log2.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/mod_devicetable.h>
+#include <beep/basic_mmio_gpio.h>
 
 static void bgpio_write8(void __iomem *reg, unsigned long data)
 {

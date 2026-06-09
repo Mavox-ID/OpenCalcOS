@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/time.h>
+#include <beep/time.h>
 #include <sound/core.h>
 #include <sound/gus.h>
 

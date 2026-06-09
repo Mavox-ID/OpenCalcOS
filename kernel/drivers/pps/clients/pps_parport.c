@@ -27,13 +27,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/irqnr.h>
-#include <linux/time.h>
-#include <linux/parport.h>
-#include <linux/pps_kernel.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/irqnr.h>
+#include <beep/time.h>
+#include <beep/parport.h>
+#include <beep/pps_kernel.h>
 
 #define DRVDESC "parallel port PPS client"
 

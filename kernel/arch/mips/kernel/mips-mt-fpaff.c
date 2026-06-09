@@ -2,15 +2,15 @@
  * General MIPS MT support routines, usable in AP/SP, SMVP, or SMTC kernels
  * Copyright (C) 2005 Mips Technologies, Inc
  */
-#include <linux/cpu.h>
-#include <linux/cpuset.h>
-#include <linux/cpumask.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/security.h>
-#include <linux/types.h>
+#include <beep/cpu.h>
+#include <beep/cpuset.h>
+#include <beep/cpumask.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/security.h>
+#include <beep/types.h>
 #include <asm/uaccess.h>
 
 /*

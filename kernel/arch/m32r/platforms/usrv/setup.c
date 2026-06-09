@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/platforms/usrv/setup.c
+ *  beep/arch/m32r/platforms/usrv/setup.c
  *
  *  Setup routines for MITSUBISHI uServer
  *
@@ -7,9 +7,9 @@
  *                                  Hitoshi Yamamoto
  */
 
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
 
 #include <asm/m32r.h>
 #include <asm/io.h>

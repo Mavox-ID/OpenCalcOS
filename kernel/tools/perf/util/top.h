@@ -30,7 +30,7 @@ struct perf_top {
 	bool		   sort_has_symbols;
 	bool		   dont_use_callchains;
 	bool		   kptr_restrict_warned;
-	bool		   vmlinux_warned;
+	bool		   vmbeep_warned;
 	bool		   inherit;
 	bool		   group;
 	bool		   sample_id_all_missing;

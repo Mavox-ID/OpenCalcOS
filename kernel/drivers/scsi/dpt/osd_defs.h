@@ -52,8 +52,8 @@
 /*Definitions - Defines & Constants ----------------------------------------- */
 
   /* Define the operating system */
-#if (defined(__linux__))
-# define _DPT_LINUX
+#if (defined(__beep__))
+# define _DPT_BEEP
 #elif (defined(__bsdi__))
 # define _DPT_BSDI
 #elif (defined(__FreeBSD__))

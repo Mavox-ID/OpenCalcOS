@@ -23,23 +23,23 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/seq_file.h>
-#include <linux/in.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/timer.h>
+#include <beep/list.h>
+#include <beep/seq_file.h>
+#include <beep/in.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
 #include <net/dst.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/netfilter/nf_conntrack_l4proto.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_core.h>
-#include <linux/netfilter/nf_conntrack_proto_gre.h>
-#include <linux/netfilter/nf_conntrack_pptp.h>
+#include <beep/netfilter/nf_conntrack_proto_gre.h>
+#include <beep/netfilter/nf_conntrack_pptp.h>
 
 enum grep_conntrack {
 	GRE_CT_UNREPLIED,
@@ -301,8 +301,8 @@ static void gre_destroy(struct nf_conn *ct)
 
 #if IS_ENABLED(CONFIG_NF_CT_NETLINK_TIMEOUT)
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_cttimeout.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_cttimeout.h>
 
 static int gre_timeout_nlattr_to_obj(struct nlattr *tb[],
 				     struct net *net, void *data)

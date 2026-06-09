@@ -31,18 +31,18 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/irq.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial_core.h>
+#include <beep/serial_reg.h>
 
-#include <linux/kthread.h>
-#include <linux/spi/spi.h>
+#include <beep/kthread.h>
+#include <beep/spi/spi.h>
 
 #include "mrst_max3110.h"
 

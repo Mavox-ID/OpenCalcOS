@@ -18,14 +18,14 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/clk.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
 
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 
 #include "omapfb.h"
 #include "lcdc.h"

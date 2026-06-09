@@ -104,7 +104,7 @@
 //usage:	IF_FEATURE_HUMAN_READABLE("h")
 //usage:	IF_FEATURE_LS_SORTFILES("rSXv")
 //usage:	IF_FEATURE_LS_TIMESTAMPS("ctu")
-//usage:	IF_SELINUX("kZ") "]"
+//usage:	IF_SEBEEP("kZ") "]"
 //usage:	IF_FEATURE_LS_WIDTH(" [-w WIDTH]") " [FILE]..."
 //usage:#define ls_full_usage "\n\n"
 //usage:       "List directory contents\n"
@@ -153,7 +153,7 @@
 //usage:     "\n	-tu	Sort by atime"
 //usage:	)
 //usage:     "\n	-r	Reverse sort order"
-//usage:	IF_SELINUX(
+//usage:	IF_SEBEEP(
 //usage:     "\n	-Z	List security context and permission"
 //usage:	)
 //usage:	IF_FEATURE_LS_WIDTH(
@@ -205,12 +205,12 @@ SPLIT_SUBDIR    = 2,
 /* -Fp      Std options, busybox optionally supports */
 /* -SXvhTw  GNU options, busybox optionally supports */
 /* -T WIDTH Ignored (we don't use tabs on output) */
-/* -Z       SELinux mandated option, busybox optionally supports */
+/* -Z       SEBeep mandated option, busybox optionally supports */
 #define ls_options \
 	"Cadi1lgnsxAk"       /* 12 opts, total 12 */ \
 	IF_FEATURE_LS_FILETYPES("Fp")    /* 2, 14 */ \
 	IF_FEATURE_LS_RECURSIVE("R")     /* 1, 15 */ \
-	IF_SELINUX("Z")                  /* 1, 16 */ \
+	IF_SEBEEP("Z")                  /* 1, 16 */ \
 	"Q"                              /* 1, 17 */ \
 	IF_FEATURE_LS_TIMESTAMPS("ctu")  /* 3, 20 */ \
 	IF_FEATURE_LS_SORTFILES("SXrv")  /* 4, 24 */ \
@@ -236,7 +236,7 @@ enum {
 	OPTBIT_p, /* 13 */
 	OPTBIT_R = OPTBIT_F + 2 * ENABLE_FEATURE_LS_FILETYPES,
 	OPTBIT_Z = OPTBIT_R + 1 * ENABLE_FEATURE_LS_RECURSIVE,
-	OPTBIT_Q = OPTBIT_Z + 1 * ENABLE_SELINUX,
+	OPTBIT_Q = OPTBIT_Z + 1 * ENABLE_SEBEEP,
 	OPTBIT_c, /* 17 */
 	OPTBIT_t, /* 18 */
 	OPTBIT_u, /* 19 */
@@ -257,7 +257,7 @@ enum {
 	OPT_F = (1 << OPTBIT_F) * ENABLE_FEATURE_LS_FILETYPES,
 	OPT_p = (1 << OPTBIT_p) * ENABLE_FEATURE_LS_FILETYPES,
 	OPT_R = (1 << OPTBIT_R) * ENABLE_FEATURE_LS_RECURSIVE,
-	OPT_Z = (1 << OPTBIT_Z) * ENABLE_SELINUX,
+	OPT_Z = (1 << OPTBIT_Z) * ENABLE_SEBEEP,
 	OPT_Q = (1 << OPTBIT_Q),
 	OPT_c = (1 << OPTBIT_c) * ENABLE_FEATURE_LS_TIMESTAMPS,
 	OPT_t = (1 << OPTBIT_t) * ENABLE_FEATURE_LS_TIMESTAMPS,
@@ -283,7 +283,7 @@ struct dnode {
 	const char *name;       /* usually basename, but think "ls -l dir/file" */
 	const char *fullname;   /* full name (usable for stat etc) */
 	struct dnode *dn_next;  /* for linked list */
-	IF_SELINUX(security_context_t sid;)
+	IF_SEBEEP(security_context_t sid;)
 	smallint fname_allocated;
 
 	/* Used to avoid re-doing [l]stat at printout stage
@@ -535,7 +535,7 @@ static NOINLINE unsigned display_single(const struct dnode *dn)
 			}
 		}
 #endif
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 	}
 	if (opt & OPT_Z) {
 		column += printf("%-32s ", dn->sid ? dn->sid : "?");
@@ -711,7 +711,7 @@ static struct dnode *my_stat(const char *fullname, const char *name, int force_f
 	cur->name = name;
 
 	if ((option_mask32 & OPT_L) || force_follow) {
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 		if (option_mask32 & OPT_Z) {
 			getfilecon(fullname, &cur->sid);
 		}
@@ -724,7 +724,7 @@ static struct dnode *my_stat(const char *fullname, const char *name, int force_f
 		}
 		cur->dn_mode_stat = statbuf.st_mode;
 	} else {
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 		if (option_mask32 & OPT_Z) {
 			lgetfilecon(fullname, &cur->sid);
 		}
@@ -1144,9 +1144,9 @@ int ls_main(int argc UNUSED_PARAM, char **argv)
 	exit(0);
 #endif
 
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 	if (opt & OPT_Z) {
-		if (!is_selinux_enabled())
+		if (!is_sebeep_enabled())
 			option_mask32 &= ~OPT_Z;
 	}
 #endif

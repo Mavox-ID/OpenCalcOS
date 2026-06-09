@@ -11,15 +11,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/omap-iommu.h>
-#include <linux/slab.h>
-#include <linux/stringify.h>
-#include <linux/platform_data/iommu-omap.h>
+#include <beep/err.h>
+#include <beep/device.h>
+#include <beep/io.h>
+#include <beep/jiffies.h>
+#include <beep/module.h>
+#include <beep/omap-iommu.h>
+#include <beep/slab.h>
+#include <beep/stringify.h>
+#include <beep/platform_data/iommu-omap.h>
 
 #include "omap-iommu.h"
 

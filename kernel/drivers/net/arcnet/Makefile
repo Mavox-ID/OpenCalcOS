@@ -1,4 +1,4 @@
-# Makefile for linux/drivers/net/arcnet
+# Makefile for beep/drivers/net/arcnet
 #
 
 obj-$(CONFIG_ARCNET) += arcnet.o

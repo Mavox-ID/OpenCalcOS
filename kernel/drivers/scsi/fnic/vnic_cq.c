@@ -15,9 +15,9 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/pci.h>
 #include "vnic_dev.h"
 #include "vnic_cq.h"
 

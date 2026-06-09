@@ -26,8 +26,8 @@
  * 02110-1301 USA
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
 #include <media/v4l2-int-device.h>
 
 #include "tcm825x.h"

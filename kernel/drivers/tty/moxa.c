@@ -5,7 +5,7 @@
  *      Copyright (C) 1999-2000  Moxa Technologies (support@moxa.com).
  *      Copyright (c) 2007 Jiri Slaby <jirislaby@gmail.com>
  *
- *      This code is loosely based on the Linux serial driver, written by
+ *      This code is loosely based on the Beep serial driver, written by
  *      Linus Torvalds, Theodore T'so and others.
  *
  *      This program is free software; you can redistribute it and/or modify
@@ -16,35 +16,35 @@
 
 /*
  *    MOXA Intellio Series Driver
- *      for             : LINUX
+ *      for             : BEEP
  *      date            : 1999/1/7
  *      version         : 5.1
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/serial.h>
-#include <linux/tty_driver.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/ioport.h>
+#include <beep/errno.h>
+#include <beep/firmware.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/major.h>
+#include <beep/string.h>
+#include <beep/fcntl.h>
+#include <beep/ptrace.h>
+#include <beep/serial.h>
+#include <beep/tty_driver.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/slab.h>
+#include <beep/ratelimit.h>
 
 #include <asm/io.h>
 #include <asm/uaccess.h>
@@ -769,7 +769,7 @@ static int moxa_load_fw(struct moxa_board_conf *brd, const struct firmware *fw)
 		goto err;
 	}
 	if (hdr->type != 3) {
-		sprintf(rsn, "not for linux, type is %u", hdr->type);
+		sprintf(rsn, "not for beep, type is %u", hdr->type);
 		goto err;
 	}
 	if (moxa_check_fw_model(brd, hdr->model)) {

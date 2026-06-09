@@ -46,19 +46,19 @@
 *	First release to the public
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/miscdevice.h>
-#include <linux/device.h>
-#include <linux/serial.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/serial_8250.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/major.h>
+#include <beep/miscdevice.h>
+#include <beep/device.h>
+#include <beep/serial.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
+#include <beep/delay.h>
+#include <beep/serial_8250.h>
 #include "smapi.h"
 #include "mwavedd.h"
 #include "3780i.h"

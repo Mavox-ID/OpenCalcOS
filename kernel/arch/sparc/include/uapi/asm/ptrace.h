@@ -16,7 +16,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct pt_regs {
 	unsigned long u_regs[16]; /* globals and ins */
@@ -98,7 +98,7 @@ struct sparc_trapf {
  */
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct pt_regs {
 	unsigned long psr;

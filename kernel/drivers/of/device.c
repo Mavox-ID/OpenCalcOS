@@ -1,11 +1,11 @@
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/slab.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/mod_devicetable.h>
+#include <beep/slab.h>
 
 #include <asm/errno.h>
 

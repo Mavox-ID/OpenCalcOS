@@ -22,9 +22,9 @@
 #include "xfs_inode.h"
 #include "xfs_vnodeops.h"
 #include "xfs_trace.h"
-#include <linux/slab.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl_xattr.h>
+#include <beep/slab.h>
+#include <beep/xattr.h>
+#include <beep/posix_acl_xattr.h>
 
 
 /*

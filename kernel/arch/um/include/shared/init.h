@@ -1,5 +1,5 @@
-#ifndef _LINUX_UML_INIT_H
-#define _LINUX_UML_INIT_H
+#ifndef _BEEP_UML_INIT_H
+#define _BEEP_UML_INIT_H
 
 /* These macros are used to mark some functions or
  * initialized data (doesn't apply to uninitialized data)
@@ -27,7 +27,7 @@
  * sign followed by value, e.g.:
  *
  * static int init_variable __initdata = 0;
- * static const char linux_logo[] __initconst = { 0x32, 0x36, ... };
+ * static const char beep_logo[] __initconst = { 0x32, 0x36, ... };
  *
  * Don't forget to initialize data not at file scope, i.e. within a function,
  * as gcc otherwise puts the data into the bss section and not into the init
@@ -36,7 +36,7 @@
  * Also note, that this data cannot be "const".
  */
 
-#ifndef _LINUX_INIT_H
+#ifndef _BEEP_INIT_H
 typedef int (*initcall_t)(void);
 typedef void (*exitcall_t)(void);
 
@@ -60,7 +60,7 @@ typedef void (*exitcall_t)(void);
 #endif
 
 #else
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #endif
 /* These are for everybody (although not all archs will actually
    discard it in modules) */
@@ -148,4 +148,4 @@ extern struct uml_param __uml_setup_start, __uml_setup_end;
 
 #endif
 
-#endif /* _LINUX_UML_INIT_H */
+#endif /* _BEEP_UML_INIT_H */

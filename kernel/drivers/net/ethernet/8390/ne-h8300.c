@@ -1,4 +1,4 @@
-/* ne-h8300.c: A NE2000 clone on H8/300 driver for linux. */
+/* ne-h8300.c: A NE2000 clone on H8/300 driver for beep. */
 /*
     original ne.c
     Written 1992-94 by Donald Becker.
@@ -19,15 +19,15 @@
 static const char version1[] =
 "ne-h8300.c:v1.00 2004/04/11 ysato\n";
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/jiffies.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/jiffies.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

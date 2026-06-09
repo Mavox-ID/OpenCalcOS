@@ -39,7 +39,7 @@
 //config:	help
 //config:	fsck is used to check and optionally repair one or more filesystems.
 //config:	In actuality, fsck is simply a front-end for the various file system
-//config:	checkers (fsck.fstype) available under Linux.
+//config:	checkers (fsck.fstype) available under Beep.
 
 //applet:IF_FSCK(APPLET(fsck, BB_DIR_SBIN, BB_SUID_DROP))
 

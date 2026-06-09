@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/host/omap.c
+ *  beep/drivers/mmc/host/omap.c
  *
  *  Copyright (C) 2004 Nokia Corporation
  *  Written by Tuukka Tikkanen and Juha Yrjölä<juha.yrjola@nokia.com>
@@ -11,24 +11,24 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/omap-dma.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/clk.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/platform_data/mmc-omap.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/timer.h>
+#include <beep/omap-dma.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/card.h>
+#include <beep/clk.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
+#include <beep/platform_data/mmc-omap.h>
 
 
 #define	OMAP_MMC_REG_CMD	0x00

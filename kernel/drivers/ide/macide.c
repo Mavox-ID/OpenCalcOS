@@ -11,13 +11,13 @@
  *  more details.
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/ide.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/ide.h>
+#include <beep/module.h>
 
 #include <asm/macintosh.h>
 #include <asm/macints.h>
@@ -27,7 +27,7 @@
 
 /*
  * Generic IDE registers as offsets from the base
- * These match MkLinux so they should be correct.
+ * These match MkBeep so they should be correct.
  */
 
 #define IDE_CONTROL	0x38	/* control/altstatus */

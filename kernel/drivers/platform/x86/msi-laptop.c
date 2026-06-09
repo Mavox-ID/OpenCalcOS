@@ -1,4 +1,4 @@
-/*-*-linux-c-*-*/
+/*-*-beep-c-*-*/
 
 /*
   Copyright (C) 2006 Lennart Poettering <mzxreary (at) 0pointer (dot) de>
@@ -42,7 +42,7 @@
  *   hardware is available. (ro)
  *
  * In addition to these platform device attributes the driver
- * registers itself in the Linux backlight control subsystem and is
+ * registers itself in the Beep backlight control subsystem and is
  * available to userspace under /sys/class/backlight/msi-laptop-bl/.
  *
  * This driver might work on other laptops produced by MSI. If you
@@ -53,17 +53,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/backlight.h>
-#include <linux/platform_device.h>
-#include <linux/rfkill.h>
-#include <linux/i8042.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/acpi.h>
+#include <beep/dmi.h>
+#include <beep/backlight.h>
+#include <beep/platform_device.h>
+#include <beep/rfkill.h>
+#include <beep/i8042.h>
+#include <beep/input.h>
+#include <beep/input/sparse-keymap.h>
 
 #define MSI_DRIVER_VERSION "0.5"
 
@@ -117,7 +117,7 @@ static int threeg_exists;
  * Wlan/Bluetooth control by BIOS when user press fn key, then control
  * Wlan/Bluetooth/3G by SCM (software control by OS). Without SCM, user
  * cann't on/off 3G module on those 3G netbook.
- * On Linux, msi-laptop driver will do the same thing to disable the
+ * On Beep, msi-laptop driver will do the same thing to disable the
  * original BIOS control, then might need use HAL or other userland
  * application to do the software control that simulate with SCM.
  * e.g. MSI N034 netbook

@@ -15,25 +15,25 @@
  * Inc., 59 Temple Place - Suite 330, Boston MA 02111-1307, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/version.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/unistd.h>
-#include <linux/time.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/videodev2.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/version.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/unistd.h>
+#include <beep/time.h>
+#include <beep/vmalloc.h>
+#include <beep/pagemap.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-subdev.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
+#include <beep/uaccess.h>
 
 #include "go7007.h"
 #include "go7007-priv.h"

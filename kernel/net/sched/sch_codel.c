@@ -4,7 +4,7 @@
  *  Copyright (C) 2011-2012 Kathleen Nichols <nichols@pollere.com>
  *  Copyright (C) 2011-2012 Van Jacobson <van@pollere.net>
  *
- *  Implemented on linux by :
+ *  Implemented on beep by :
  *  Copyright (C) 2012 Michael D. Taht <dave.taht@bufferbloat.net>
  *  Copyright (C) 2012 Eric Dumazet <edumazet@google.com>
  *
@@ -40,13 +40,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/prefetch.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/skbuff.h>
+#include <beep/prefetch.h>
 #include <net/pkt_sched.h>
 #include <net/codel.h>
 

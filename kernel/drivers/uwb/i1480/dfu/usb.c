@@ -34,14 +34,14 @@
  * uses to do its job. All the ops in the common code are i1480->NAME,
  * the functions are i1480_usb_NAME().
  */
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/uwb.h>
-#include <linux/usb/wusb.h>
-#include <linux/usb/wusb-wa.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/uwb.h>
+#include <beep/usb/wusb.h>
+#include <beep/usb/wusb-wa.h>
 #include "i1480-dfu.h"
 
 struct i1480_usb {

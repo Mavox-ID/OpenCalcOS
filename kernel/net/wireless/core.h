@@ -5,15 +5,15 @@
  */
 #ifndef __NET_WIRELESS_CORE_H
 #define __NET_WIRELESS_CORE_H
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/kref.h>
-#include <linux/rbtree.h>
-#include <linux/debugfs.h>
-#include <linux/rfkill.h>
-#include <linux/workqueue.h>
-#include <linux/rtnetlink.h>
+#include <beep/mutex.h>
+#include <beep/list.h>
+#include <beep/netdevice.h>
+#include <beep/kref.h>
+#include <beep/rbtree.h>
+#include <beep/debugfs.h>
+#include <beep/rfkill.h>
+#include <beep/workqueue.h>
+#include <beep/rtnetlink.h>
 #include <net/genetlink.h>
 #include <net/cfg80211.h>
 #include "reg.h"

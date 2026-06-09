@@ -18,13 +18,13 @@
 	Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/delay.h>
 #include <asm/div64.h>
 #include "dvb_frontend.h"
 #include "dst_priv.h"
@@ -1157,7 +1157,7 @@ static int dst_get_device_id(struct dst_state *state)
 
 	if (i >= ARRAY_SIZE(dst_tlist)) {
 		dprintk(verbose, DST_ERROR, 1, "Unable to recognize %s or %s", &state->rxbuffer[0], &state->rxbuffer[1]);
-		dprintk(verbose, DST_ERROR, 1, "please email linux-dvb@linuxtv.org with this type in");
+		dprintk(verbose, DST_ERROR, 1, "please email beep-dvb@beeptv.org with this type in");
 		use_dst_type = DST_TYPE_IS_SAT;
 		use_type_flags = DST_TYPE_HAS_SYMDIV;
 	}
@@ -1747,7 +1747,7 @@ struct dst_state *dst_attach(struct dst_state *state, struct dvb_adapter *dvb_ad
 		memcpy(&state->frontend.ops, &dst_atsc_ops, sizeof(struct dvb_frontend_ops));
 		break;
 	default:
-		dprintk(verbose, DST_ERROR, 1, "unknown DST type. please report to the LinuxTV.org DVB mailinglist.");
+		dprintk(verbose, DST_ERROR, 1, "unknown DST type. please report to the BeepTV.org DVB mailinglist.");
 		kfree(state);
 		return NULL;
 	}

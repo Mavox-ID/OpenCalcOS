@@ -19,17 +19,17 @@
  * SMD Packet Driver -- Provides userspace interface to SMD packet ports.
  */
 
-#include <linux/slab.h>
-#include <linux/cdev.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
-#include <linux/poll.h>
+#include <beep/slab.h>
+#include <beep/cdev.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/device.h>
+#include <beep/sched.h>
+#include <beep/mutex.h>
+#include <beep/delay.h>
+#include <beep/uaccess.h>
+#include <beep/workqueue.h>
+#include <beep/poll.h>
 
 #include <mach/msm_smd.h>
 

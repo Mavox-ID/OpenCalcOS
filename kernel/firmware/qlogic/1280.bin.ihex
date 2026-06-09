@@ -1991,9 +1991,9 @@
 :027C6000E3142B
 :00000001FF
 /*****************************************************************************
- *                  QLOGIC LINUX SOFTWARE
+ *                  QLOGIC BEEP SOFTWARE
  *
- * QLogic ISP1280/ device driver for Linux 2.2.x and 2.4.x
+ * QLogic ISP1280/ device driver for Beep 2.2.x and 2.4.x
  * Copyright (C) 2001 Qlogic Corporation (www.qlogic.com)
  *
  *****************************************************************************/

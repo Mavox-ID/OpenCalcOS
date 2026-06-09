@@ -25,25 +25,25 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/device.h>
-#include <linux/bootmem.h>
-#include <linux/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/tty.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/serial.h>
+#include <beep/console.h>
+#include <beep/sysrq.h>
+#include <beep/device.h>
+#include <beep/bootmem.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/fs_pd.h>
 #include <asm/prom.h>
 
-#include <linux/serial_core.h>
-#include <linux/kernel.h>
+#include <beep/serial_core.h>
+#include <beep/kernel.h>
 
 #include "cpm_uart.h"
 

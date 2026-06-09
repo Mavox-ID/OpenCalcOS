@@ -10,17 +10,17 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/bitmap.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/prefetch.h>
+#include <beep/init.h>
+#include <beep/cpu.h>
+#include <beep/bitmap.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/mm.h>
+#include <beep/io.h>
+#include <beep/prefetch.h>
 #include <asm/page.h>
 #include <asm/cacheflush.h>
 #include <cpu/sq.h>
@@ -411,6 +411,6 @@ static void __exit sq_api_exit(void)
 module_init(sq_api_init);
 module_exit(sq_api_exit);
 
-MODULE_AUTHOR("Paul Mundt <lethal@linux-sh.org>, M. R. Brown <mrbrown@0xd6.org>");
+MODULE_AUTHOR("Paul Mundt <lethal@beep-sh.org>, M. R. Brown <mrbrown@0xd6.org>");
 MODULE_DESCRIPTION("Simple API for SH-4 integrated Store Queues");
 MODULE_LICENSE("GPL");

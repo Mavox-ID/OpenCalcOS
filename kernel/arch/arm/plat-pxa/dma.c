@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/plat-pxa/dma.c
+ *  beep/arch/arm/plat-pxa/dma.c
  *
  *  PXA DMA registration and IRQ dispatching
  *
@@ -12,13 +12,13 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/irq.h>
 #include <asm/memory.h>
@@ -43,9 +43,9 @@ static int num_dma_channels;
  * Debug fs
  */
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
+#include <beep/seq_file.h>
 
 static struct dentry *dbgfs_root, *dbgfs_state, **dbgfs_chan;
 

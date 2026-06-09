@@ -8,26 +8,26 @@
  * the reader.
  */
 
-#include <linux/module.h> /* for EXPORT_SYMBOL */
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/errno.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/netdevice.h>
-#include <linux/atmclip.h>
-#include <linux/init.h> /* for __init */
-#include <linux/slab.h>
+#include <beep/module.h> /* for EXPORT_SYMBOL */
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/stat.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/errno.h>
+#include <beep/atm.h>
+#include <beep/atmdev.h>
+#include <beep/netdevice.h>
+#include <beep/atmclip.h>
+#include <beep/init.h> /* for __init */
+#include <beep/slab.h>
 #include <net/net_namespace.h>
 #include <net/atmclip.h>
-#include <linux/uaccess.h>
-#include <linux/param.h> /* for HZ */
-#include <linux/atomic.h>
+#include <beep/uaccess.h>
+#include <beep/param.h> /* for HZ */
+#include <beep/atomic.h>
 #include "resources.h"
 #include "common.h" /* atm_proc_init prototype */
 #include "signaling.h" /* to get sigd - ugly too */

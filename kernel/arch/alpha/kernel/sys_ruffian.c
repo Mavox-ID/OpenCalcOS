@@ -1,5 +1,5 @@
 /*
- *	linux/arch/alpha/kernel/sys_ruffian.c
+ *	beep/arch/alpha/kernel/sys_ruffian.c
  *
  *	Copyright (C) 1995 David A Rusling
  *	Copyright (C) 1996 Jay A Estabrook
@@ -8,14 +8,14 @@
  * Code supporting the RUFFIAN.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/timex.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/pci.h>
+#include <beep/ioport.h>
+#include <beep/timex.h>
+#include <beep/init.h>
 
 #include <asm/ptrace.h>
 #include <asm/dma.h>

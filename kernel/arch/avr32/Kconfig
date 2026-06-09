@@ -22,8 +22,8 @@ config AVR32
 	  designed for cost-sensitive embedded applications, with particular
 	  emphasis on low power consumption and high code density.
 
-	  There is an AVR32 Linux project with a web page at
-	  http://avr32linux.org/.
+	  There is an AVR32 Beep project with a web page at
+	  http://avr32beep.org/.
 
 config GENERIC_GPIO
 	def_bool y

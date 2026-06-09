@@ -18,10 +18,10 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/uuid.h>
-#include <linux/random.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/uuid.h>
+#include <beep/random.h>
 
 static void __uuid_gen_common(__u8 b[16])
 {

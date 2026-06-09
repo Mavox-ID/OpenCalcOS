@@ -7,15 +7,15 @@
 
 #include "dm.h"
 
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/miscdevice.h>
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/dm-ioctl.h>
-#include <linux/hdreg.h>
-#include <linux/compat.h>
+#include <beep/module.h>
+#include <beep/vmalloc.h>
+#include <beep/miscdevice.h>
+#include <beep/init.h>
+#include <beep/wait.h>
+#include <beep/slab.h>
+#include <beep/dm-ioctl.h>
+#include <beep/hdreg.h>
+#include <beep/compat.h>
 
 #include <asm/uaccess.h>
 

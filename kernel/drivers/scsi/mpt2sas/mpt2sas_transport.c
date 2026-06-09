@@ -3,7 +3,7 @@
  *
  * This code is based on drivers/scsi/mpt2sas/mpt2_transport.c
  * Copyright (C) 2007-2012  LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionBeep@lsi.com)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -41,15 +41,15 @@
  * USA.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/workqueue.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

@@ -2,11 +2,11 @@
  * Copyright (c) 1996-2002 Russell King.
  */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/errno.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>
+#include <beep/errno.h>
+#include <beep/ide.h>
+#include <beep/init.h>
 
 #include <asm/ecard.h>
 

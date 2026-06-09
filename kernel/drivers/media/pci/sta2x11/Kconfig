@@ -1,5 +1,5 @@
 config STA2X11_VIP
-	tristate "STA2X11 VIP Video For Linux"
+	tristate "STA2X11 VIP Video For Beep"
 	depends on STA2X11
 	select VIDEO_ADV7180 if MEDIA_SUBDRV_AUTOSELECT
 	select VIDEOBUF_DMA_CONTIG

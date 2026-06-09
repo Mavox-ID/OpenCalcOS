@@ -1,7 +1,7 @@
 #ifndef S390_IO_SCH_H
 #define S390_IO_SCH_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/schid.h>
 #include <asm/ccwdev.h>
 #include <asm/irq.h>

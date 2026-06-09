@@ -6,7 +6,7 @@
  * Copyright (C) 2004, 2008 Oracle.  All rights reserved.
  *
  * CREDITS:
- * Lots of code in this file is copy from linux/fs/ext3/xattr.c.
+ * Lots of code in this file is copy from beep/fs/ext3/xattr.c.
  * Copyright (C) 2001-2003 Andreas Gruenbacher, <agruen@suse.de>
  *
  * This program is free software; you can redistribute it and/or
@@ -19,23 +19,23 @@
  * General Public License for more details.
  */
 
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
-#include <linux/sched.h>
-#include <linux/splice.h>
-#include <linux/mount.h>
-#include <linux/writeback.h>
-#include <linux/falloc.h>
-#include <linux/sort.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/security.h>
+#include <beep/capability.h>
+#include <beep/fs.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/uio.h>
+#include <beep/sched.h>
+#include <beep/splice.h>
+#include <beep/mount.h>
+#include <beep/writeback.h>
+#include <beep/falloc.h>
+#include <beep/sort.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/security.h>
 
 #include <cluster/masklog.h>
 

@@ -1,9 +1,9 @@
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irqnr.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irqnr.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 
 /*
  * /proc/interrupts

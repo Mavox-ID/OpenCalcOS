@@ -12,11 +12,11 @@
  *
  */
 
-#include <linux/ssb/ssb.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/etherdevice.h>
-#include <linux/mmc/sdio_func.h>
+#include <beep/ssb/ssb.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/etherdevice.h>
+#include <beep/mmc/sdio_func.h>
 
 #include "ssb_private.h"
 

@@ -14,15 +14,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/mfd/pcf50633/pmic.h>
+#include <beep/mfd/pcf50633/core.h>
+#include <beep/mfd/pcf50633/pmic.h>
 
 #define PCF50633_REGULATOR(_name, _id, _min_uV, _uV_step, _min_sel, _n) \
 	{							\

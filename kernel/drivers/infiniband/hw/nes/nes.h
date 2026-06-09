@@ -34,17 +34,17 @@
 #ifndef __NES_H
 #define __NES_H
 
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
+#include <beep/netdevice.h>
+#include <beep/inetdevice.h>
+#include <beep/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/workqueue.h>
+#include <beep/slab.h>
 #include <asm/io.h>
-#include <linux/crc32c.h>
+#include <beep/crc32c.h>
 
 #include <rdma/ib_smi.h>
 #include <rdma/ib_verbs.h>

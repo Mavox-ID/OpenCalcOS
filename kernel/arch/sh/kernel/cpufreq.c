@@ -16,19 +16,19 @@
  */
 #define pr_fmt(fmt) "cpufreq: " fmt
 
-#include <linux/types.h>
-#include <linux/cpufreq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/cpumask.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/sched.h>	/* set_cpus_allowed() */
-#include <linux/clk.h>
-#include <linux/percpu.h>
-#include <linux/sh_clk.h>
+#include <beep/types.h>
+#include <beep/cpufreq.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/cpumask.h>
+#include <beep/cpu.h>
+#include <beep/smp.h>
+#include <beep/sched.h>	/* set_cpus_allowed() */
+#include <beep/clk.h>
+#include <beep/percpu.h>
+#include <beep/sh_clk.h>
 
 static DEFINE_PER_CPU(struct clk, sh_cpuclk);
 
@@ -196,6 +196,6 @@ static void __exit sh_cpufreq_module_exit(void)
 module_init(sh_cpufreq_module_init);
 module_exit(sh_cpufreq_module_exit);
 
-MODULE_AUTHOR("Paul Mundt <lethal@linux-sh.org>");
+MODULE_AUTHOR("Paul Mundt <lethal@beep-sh.org>");
 MODULE_DESCRIPTION("cpufreq driver for SuperH");
 MODULE_LICENSE("GPL");

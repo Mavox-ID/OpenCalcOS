@@ -10,14 +10,14 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/dmi.h>
-#include <linux/device.h>
-#include <linux/suspend.h>
-#include <linux/reboot.h>
-#include <linux/acpi.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/dmi.h>
+#include <beep/device.h>
+#include <beep/suspend.h>
+#include <beep/reboot.h>
+#include <beep/acpi.h>
+#include <beep/module.h>
 
 #include <asm/io.h>
 

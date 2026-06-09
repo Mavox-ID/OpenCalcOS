@@ -20,7 +20,7 @@
  * Thanks to Ingo Molnar for his many suggestions.
  *
  * Authors: Alan Stern <stern@rowland.harvard.edu>
- *          K.Prasad <prasad@linux.vnet.ibm.com>
+ *          K.Prasad <prasad@beep.vnet.ibm.com>
  *          Frederic Weisbecker <fweisbec@gmail.com>
  */
 
@@ -30,22 +30,22 @@
  * This file contains the arch-independent routines.
  */
 
-#include <linux/irqflags.h>
-#include <linux/kallsyms.h>
-#include <linux/notifier.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
+#include <beep/irqflags.h>
+#include <beep/kallsyms.h>
+#include <beep/notifier.h>
+#include <beep/kprobes.h>
+#include <beep/kdebug.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/percpu.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/cpu.h>
+#include <beep/smp.h>
 
-#include <linux/hw_breakpoint.h>
+#include <beep/hw_breakpoint.h>
 
 
 /*

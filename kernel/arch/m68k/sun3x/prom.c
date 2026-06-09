@@ -1,12 +1,12 @@
 /* Prom access routines for the sun3x */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/string.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/tty.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/string.h>
 
 #include <asm/page.h>
 #include <asm/pgtable.h>
@@ -26,7 +26,7 @@ int (*sun3x_mayget)(void);
 int (*sun3x_mayput)(int);
 void (*sun3x_prom_reboot)(void);
 e_vector sun3x_prom_abort;
-struct linux_romvec *romvec;
+struct beep_romvec *romvec;
 
 /* prom vector table */
 e_vector *sun3x_prom_vbr;
@@ -70,7 +70,7 @@ void sun3x_reboot(void)
 	sun3_enable_irq(7);
 
 	/* Let 'er rip */
-	(*romvec->pv_reboot)("vmlinux");
+	(*romvec->pv_reboot)("vmbeep");
 }
 
 static void sun3x_prom_write(struct console *co, const char *s,
@@ -102,7 +102,7 @@ void __init sun3x_prom_init(void)
 	sun3x_mayput = *(int (**)(int))   (SUN3X_P_MAYPUT);
 	sun3x_prom_reboot = *(void (**)(void)) (SUN3X_P_REBOOT);
 	sun3x_prom_abort = *(e_vector *)  (SUN3X_P_ABORT);
-	romvec = (struct linux_romvec *)SUN3X_PROM_BASE;
+	romvec = (struct beep_romvec *)SUN3X_PROM_BASE;
 
 	idprom_init();
 

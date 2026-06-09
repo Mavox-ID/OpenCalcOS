@@ -24,15 +24,15 @@
  *   are Copyright (C) 1999 David A. Hinds.  All Rights Reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 #include <scsi/scsi_host.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
+#include <beep/ata.h>
+#include <beep/libata.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

@@ -11,12 +11,12 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/gpio.h>
-#include <linux/of.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/mv643xx_eth.h>
+#include <beep/gpio.h>
+#include <beep/of.h>
 #include "common.h"
 
 static struct mv643xx_eth_platform_data ns2_ge00_data = {

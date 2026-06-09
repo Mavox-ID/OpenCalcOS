@@ -12,11 +12,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/io.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
 #include "s5p_mfc_common.h"
 #include "s5p_mfc_debug.h"
 #include "s5p_mfc_intr.h"

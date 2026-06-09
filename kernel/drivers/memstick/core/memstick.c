@@ -12,12 +12,12 @@
  *
  */
 
-#include <linux/memstick.h>
-#include <linux/idr.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/memstick.h>
+#include <beep/idr.h>
+#include <beep/fs.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #define DRIVER_NAME "memstick"
 

@@ -49,7 +49,7 @@
 /* UART Controller (0xFFC00400 - 0xFFC004FF) */
 
 /*
- * Because include/linux/serial_reg.h have defined UART_*,
+ * Because include/beep/serial_reg.h have defined UART_*,
  * So we define blackfin uart regs to BFIN_UART_*.
  */
 #define BFIN_UART_THR			0xFFC00400	/* Transmit Holding register */

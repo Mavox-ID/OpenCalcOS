@@ -8,15 +8,15 @@
  * kind, whether express or implied.
  *
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/sched.h>
-#include <linux/pm_runtime.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/sched.h>
+#include <beep/pm_runtime.h>
 
 #include "../w1.h"
 #include "../w1_int.h"

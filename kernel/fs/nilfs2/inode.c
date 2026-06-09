@@ -21,11 +21,11 @@
  *
  */
 
-#include <linux/buffer_head.h>
-#include <linux/gfp.h>
-#include <linux/mpage.h>
-#include <linux/writeback.h>
-#include <linux/uio.h>
+#include <beep/buffer_head.h>
+#include <beep/gfp.h>
+#include <beep/mpage.h>
+#include <beep/writeback.h>
+#include <beep/uio.h>
 #include "nilfs.h"
 #include "btnode.h"
 #include "segment.h"

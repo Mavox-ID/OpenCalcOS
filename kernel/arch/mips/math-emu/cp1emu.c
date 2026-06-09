@@ -33,10 +33,10 @@
  * Note if you know that you won't have an fpu, then you'll get much
  * better performance by compiling with -msoft-float!
  */
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/perf_event.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/debugfs.h>
+#include <beep/perf_event.h>
 
 #include <asm/inst.h>
 #include <asm/bootinfo.h>
@@ -168,7 +168,7 @@ static int isBranchInstr(mips_instruction * i)
 }
 
 /*
- * In the Linux kernel, we support selection of FPR format on the
+ * In the Beep kernel, we support selection of FPR format on the
  * basis of the Status.FR bit.  If an FPU is not present, the FR bit
  * is hardwired to zero, which would imply a 32-bit FPU even for
  * 64-bit CPUs so we rather look at TIF_32BIT_REGS.
@@ -241,7 +241,7 @@ static int cop1Emulate(struct pt_regs *xcp, struct mips_fpu_struct *ctx,
 		 * would have had a trap for that instruction, and would not
 		 * come through this route.
 		 *
-		 * Linux MIPS branch emulator operates on context, updating the
+		 * Beep MIPS branch emulator operates on context, updating the
 		 * cp0_epc.
 		 */
 		emulpc = xcp->cp0_epc + 4;	/* Snapshot emulation target */

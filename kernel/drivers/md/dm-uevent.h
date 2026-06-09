@@ -16,7 +16,7 @@
  * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  *
  * Copyright IBM Corporation, 2007
- * 	Author: Mike Anderson <andmike@linux.vnet.ibm.com>
+ * 	Author: Mike Anderson <andmike@beep.vnet.ibm.com>
  */
 #ifndef DM_UEVENT_H
 #define DM_UEVENT_H

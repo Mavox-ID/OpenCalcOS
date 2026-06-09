@@ -2,9 +2,9 @@
  * avm_fritz.c    low level stuff for AVM FRITZ!CARD PCI ISDN cards
  *                Thanks to AVM, Berlin for informations
  *
- * Author       Karsten Keil <keil@isdn4linux.de>
+ * Author       Karsten Keil <keil@isdn4beep.de>
  *
- * Copyright 2009  by Karsten Keil <keil@isdn4linux.de>
+ * Copyright 2009  by Karsten Keil <keil@isdn4beep.de>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -20,12 +20,12 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
  */
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/mISDNhw.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/mISDNhw.h>
+#include <beep/slab.h>
 #include <asm/unaligned.h>
 #include "ipac.h"
 

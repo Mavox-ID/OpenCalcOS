@@ -10,9 +10,9 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/usb.h>
+#include <beep/slab.h>
 #include "st5481.h"
 
 static int st5481_isoc_flatten(struct urb *urb);

@@ -1,6 +1,6 @@
 /* $Id: hysdn_sched.c,v 1.5.6.4 2001/11/06 21:58:19 kai Exp $
  *
- * Linux driver for HYSDN cards
+ * Beep driver for HYSDN cards
  * scheduler routines for handling exchange card <-> pc.
  *
  * Author    Werner Cornelius (werner@titro.de) for Hypercope GmbH
@@ -11,11 +11,11 @@
  *
  */
 
-#include <linux/signal.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <beep/signal.h>
+#include <beep/kernel.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
 #include <asm/io.h>
 
 #include "hysdn_defs.h"

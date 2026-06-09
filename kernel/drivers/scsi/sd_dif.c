@@ -20,8 +20,8 @@
  *
  */
 
-#include <linux/blkdev.h>
-#include <linux/crc-t10dif.h>
+#include <beep/blkdev.h>
+#include <beep/crc-t10dif.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

@@ -5,16 +5,16 @@
  *
  */
 
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/buffer.h>
+#include <beep/iio/trigger_consumer.h>
+#include <beep/iio/triggered_buffer.h>
 
 #include "ad7606.h"
 

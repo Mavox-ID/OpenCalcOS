@@ -1,7 +1,7 @@
 /*
     tda18271-fe.c - driver for the Philips / NXP TDA18271 silicon tuner
 
-    Copyright (C) 2007, 2008 Michael Krufky <mkrufky@linuxtv.org>
+    Copyright (C) 2007, 2008 Michael Krufky <mkrufky@beeptv.org>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -18,8 +18,8 @@
     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 */
 
-#include <linux/delay.h>
-#include <linux/videodev2.h>
+#include <beep/delay.h>
+#include <beep/videodev2.h>
 #include "tda18271-priv.h"
 
 int tda18271_debug;
@@ -1349,7 +1349,7 @@ fail:
 }
 EXPORT_SYMBOL_GPL(tda18271_attach);
 MODULE_DESCRIPTION("NXP TDA18271HD analog / digital tuner driver");
-MODULE_AUTHOR("Michael Krufky <mkrufky@linuxtv.org>");
+MODULE_AUTHOR("Michael Krufky <mkrufky@beeptv.org>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.4");
 

@@ -18,7 +18,7 @@
 
 #ifdef __KERNEL__
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <beep/compat.h>
 
 #define AARCH32_KERN_SIGRET_CODE_OFFSET	0x500
 

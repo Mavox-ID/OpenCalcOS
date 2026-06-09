@@ -19,8 +19,8 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
+#include <beep/init.h>
+#include <beep/export.h>
 #include <sound/core.h>
 
 #include "seq_info.h"

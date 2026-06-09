@@ -15,17 +15,17 @@
  * option) any later version.
  *
  */
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/reboot.h>
-#include <linux/kdev_t.h>
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/of.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/reboot.h>
+#include <beep/kdev_t.h>
+#include <beep/types.h>
+#include <beep/major.h>
+#include <beep/console.h>
+#include <beep/delay.h>
+#include <beep/of.h>
 
 #include <asm/timex.h>
 #include <asm/processor.h>
@@ -185,8 +185,8 @@ void platform_calibrate_ccount(void)
 
 #ifndef CONFIG_OF
 
-#include <linux/serial_8250.h>
-#include <linux/if.h>
+#include <beep/serial_8250.h>
+#include <beep/if.h>
 #include <net/ethoc.h>
 
 /*----------------------------------------------------------------------------

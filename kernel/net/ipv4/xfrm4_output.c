@@ -8,11 +8,11 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/if_ether.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter_ipv4.h>
+#include <beep/if_ether.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/netfilter_ipv4.h>
 #include <net/dst.h>
 #include <net/ip.h>
 #include <net/xfrm.h>

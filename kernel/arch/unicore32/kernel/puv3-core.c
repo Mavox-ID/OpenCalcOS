@@ -1,5 +1,5 @@
 /*
- *  linux/arch/unicore32/kernel/puv3-core.c
+ *  beep/arch/unicore32/kernel/puv3-core.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -11,13 +11,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/amba/bus.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/cnt32_to_63.h>
-#include <linux/usb/musb.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/amba/bus.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/cnt32_to_63.h>
+#include <beep/usb/musb.h>
 
 #include <asm/irq.h>
 #include <mach/hardware.h>

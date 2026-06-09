@@ -1,7 +1,7 @@
 /*
- *  Silicon Labs C2 port core Linux support
+ *  Silicon Labs C2 port core Beep support
  *
- *  Copyright (c) 2007 Rodolfo Giometti <giometti@linux.it>
+ *  Copyright (c) 2007 Rodolfo Giometti <giometti@beep.it>
  *  Copyright (c) 2007 Eurotech S.p.A. <info@eurotech.it>
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -9,20 +9,20 @@
  * the Free Software Foundation
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/kmemcheck.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/idr.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/kernel.h>
+#include <beep/kmemcheck.h>
+#include <beep/ctype.h>
+#include <beep/delay.h>
+#include <beep/idr.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
-#include <linux/c2port.h>
+#include <beep/c2port.h>
 
 #define DRIVER_NAME             "c2port"
 #define DRIVER_VERSION          "0.51.0"
@@ -1001,6 +1001,6 @@ static void __exit c2port_exit(void)
 module_init(c2port_init);
 module_exit(c2port_exit);
 
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
+MODULE_AUTHOR("Rodolfo Giometti <giometti@beep.it>");
 MODULE_DESCRIPTION("Silicon Labs C2 port support v. " DRIVER_VERSION);
 MODULE_LICENSE("GPL");

@@ -1,5 +1,5 @@
 /*
-   The compile-time configurable defaults for the Linux SCSI tape driver.
+   The compile-time configurable defaults for the Beep SCSI tape driver.
 
    Copyright 1995-2003 Kai Makisara.
 

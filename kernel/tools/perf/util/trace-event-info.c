@@ -33,8 +33,8 @@
 #include <unistd.h>
 #include <errno.h>
 #include <stdbool.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
+#include <beep/list.h>
+#include <beep/kernel.h>
 
 #include "../perf.h"
 #include "trace-event.h"

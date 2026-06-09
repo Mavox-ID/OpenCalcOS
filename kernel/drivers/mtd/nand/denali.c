@@ -16,14 +16,14 @@
  * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  *
  */
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/module.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/wait.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/mtd/mtd.h>
+#include <beep/module.h>
 
 #include "denali.h"
 

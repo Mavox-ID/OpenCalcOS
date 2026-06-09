@@ -1,11 +1,11 @@
 /* Glue code to lib/swiotlb.c */
 
-#include <linux/pci.h>
-#include <linux/cache.h>
-#include <linux/module.h>
-#include <linux/swiotlb.h>
-#include <linux/bootmem.h>
-#include <linux/dma-mapping.h>
+#include <beep/pci.h>
+#include <beep/cache.h>
+#include <beep/module.h>
+#include <beep/swiotlb.h>
+#include <beep/bootmem.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/iommu.h>
 #include <asm/swiotlb.h>

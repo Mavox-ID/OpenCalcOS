@@ -4,14 +4,14 @@
  * Licensed under the GPL-2 or later
  */
 
-#include <linux/signal.h>
-#include <linux/syscalls.h>
-#include <linux/ptrace.h>
-#include <linux/tty.h>
-#include <linux/personality.h>
-#include <linux/binfmts.h>
-#include <linux/uaccess.h>
-#include <linux/tracehook.h>
+#include <beep/signal.h>
+#include <beep/syscalls.h>
+#include <beep/ptrace.h>
+#include <beep/tty.h>
+#include <beep/personality.h>
+#include <beep/binfmts.h>
+#include <beep/uaccess.h>
+#include <beep/tracehook.h>
 
 #include <asm/cacheflush.h>
 #include <asm/ucontext.h>

@@ -8,14 +8,14 @@
  * Distributed under the terms of the GNU GPL, version two.
  */
 
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/storage.h>
-#include <linux/usb/uas.h>
+#include <beep/blkdev.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
+#include <beep/usb/storage.h>
+#include <beep/usb/uas.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_dbg.h>

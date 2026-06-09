@@ -5,7 +5,7 @@
 #if !defined(_TRACE_HDA_INTEL_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_HDA_INTEL_H
 
-#include <linux/tracepoint.h>
+#include <beep/tracepoint.h>
 
 struct azx;
 struct azx_dev;

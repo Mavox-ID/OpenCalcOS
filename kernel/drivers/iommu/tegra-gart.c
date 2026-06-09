@@ -19,17 +19,17 @@
 
 #define pr_fmt(fmt)	"%s(): " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/iommu.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/mm.h>
+#include <beep/list.h>
+#include <beep/device.h>
+#include <beep/io.h>
+#include <beep/iommu.h>
+#include <beep/of.h>
 
 #include <asm/cacheflush.h>
 

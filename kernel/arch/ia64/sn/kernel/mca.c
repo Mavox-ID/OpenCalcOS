@@ -6,11 +6,11 @@
  * Copyright (c) 2000-2006 Silicon Graphics, Inc.  All Rights Reserved.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/vmalloc.h>
-#include <linux/mutex.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/vmalloc.h>
+#include <beep/mutex.h>
 #include <asm/mca.h>
 #include <asm/sal.h>
 #include <asm/sn/sn_sal.h>

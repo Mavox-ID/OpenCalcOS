@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2410/mach-tct_hammer.c
+/* beep/arch/arm/mach-s3c2410/mach-tct_hammer.c
  *
  * Copyright (c) 2007 TinCanTools
  *	David Anders <danders@amltd.com>
@@ -19,21 +19,21 @@
  * MA 02111-1307 USA
  *
  * @History:
- * derived from linux/arch/arm/mach-s3c2410/mach-bast.c, written by
+ * derived from beep/arch/arm/mach-s3c2410/mach-bast.c, written by
  * Ben Dooks <ben@simtec.co.uk>
  *
  ***********************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/serial_core.h>
+#include <beep/io.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -45,14 +45,14 @@
 #include <asm/mach-types.h>
 
 #include <plat/regs-serial.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 #include <plat/devs.h>
 #include <plat/cpu.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/physmap.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/physmap.h>
 
 #include "common.h"
 

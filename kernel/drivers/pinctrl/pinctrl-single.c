@@ -9,19 +9,19 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/list.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/list.h>
 
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_address.h>
 
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <beep/pinctrl/pinctrl.h>
+#include <beep/pinctrl/pinmux.h>
 
 #include "core.h"
 

@@ -3,7 +3,7 @@
  *
  * Watchdog driver for integrated watchdog in the SuperH processors.
  *
- * Copyright (C) 2001 - 2012  Paul Mundt <lethal@linux-sh.org>
+ * Copyright (C) 2001 - 2012  Paul Mundt <lethal@beep-sh.org>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -20,20 +20,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/pm_runtime.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/clk.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/miscdevice.h>
+#include <beep/watchdog.h>
+#include <beep/pm_runtime.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/clk.h>
 #include <asm/watchdog.h>
 
 #define DRV_NAME "sh-wdt"
@@ -348,7 +348,7 @@ static void __exit sh_wdt_exit(void)
 module_init(sh_wdt_init);
 module_exit(sh_wdt_exit);
 
-MODULE_AUTHOR("Paul Mundt <lethal@linux-sh.org>");
+MODULE_AUTHOR("Paul Mundt <lethal@beep-sh.org>");
 MODULE_DESCRIPTION("SuperH watchdog driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:" DRV_NAME);

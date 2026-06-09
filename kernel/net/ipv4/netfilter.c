@@ -1,11 +1,11 @@
 /* IPv4 specific functions of netfilter core */
-#include <linux/kernel.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/ip.h>
-#include <linux/skbuff.h>
-#include <linux/gfp.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/ip.h>
+#include <beep/skbuff.h>
+#include <beep/gfp.h>
+#include <beep/export.h>
 #include <net/route.h>
 #include <net/xfrm.h>
 #include <net/ip.h>

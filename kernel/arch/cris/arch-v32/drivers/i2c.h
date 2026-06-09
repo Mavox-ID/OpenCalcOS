@@ -1,5 +1,5 @@
 
-#include <linux/init.h>
+#include <beep/init.h>
 
 /* High level I2C actions */
 int __init i2c_init(void);

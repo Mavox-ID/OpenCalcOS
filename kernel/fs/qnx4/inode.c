@@ -1,5 +1,5 @@
 /*
- * QNX4 file system, Linux implementation.
+ * QNX4 file system, Beep implementation.
  *
  * Version : 0.2.1
  *
@@ -8,18 +8,18 @@
  * History :
  *
  * 01-06-1998 by Richard Frowijn : first release.
- * 20-06-1998 by Frank Denis : Linux 2.1.99+ support, boot signature, misc.
+ * 20-06-1998 by Frank Denis : Beep 2.1.99+ support, boot signature, misc.
  * 30-06-1998 by Frank Denis : first step to write inodes.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/highuid.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/statfs.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/highuid.h>
+#include <beep/pagemap.h>
+#include <beep/buffer_head.h>
+#include <beep/writeback.h>
+#include <beep/statfs.h>
 #include "qnx4.h"
 
 #define QNX4_VERSION  4

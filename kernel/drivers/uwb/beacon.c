@@ -22,13 +22,13 @@
  *
  * FIXME: docs
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/kdev_t.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/kdev_t.h>
+#include <beep/slab.h>
 
 #include "uwb-internal.h"
 

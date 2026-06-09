@@ -1,8 +1,8 @@
 #ifndef __ARM_A_OUT_H__
 #define __ARM_A_OUT_H__
 
-#include <linux/personality.h>
-#include <linux/types.h>
+#include <beep/personality.h>
+#include <beep/types.h>
 
 struct exec
 {

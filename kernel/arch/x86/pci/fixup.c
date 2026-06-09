@@ -2,11 +2,11 @@
  * Exceptions for specific devices. Usually work-arounds for fatal design flaws.
  */
 
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/vgaarb.h>
+#include <beep/delay.h>
+#include <beep/dmi.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/vgaarb.h>
 #include <asm/pci_x86.h>
 
 static void pci_fixup_i450nx(struct pci_dev *d)

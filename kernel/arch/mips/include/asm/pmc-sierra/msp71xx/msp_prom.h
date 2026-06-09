@@ -1,5 +1,5 @@
 /*
- * MIPS boards bootprom interface for the Linux kernel.
+ * MIPS boards bootprom interface for the Beep kernel.
  *
  * Copyright (C) 2000 MIPS Technologies, Inc.  All rights reserved.
  * Author: Carsten Langgaard, carstenl@mips.com
@@ -25,7 +25,7 @@
 #ifndef _ASM_MSP_PROM_H
 #define _ASM_MSP_PROM_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define DEVICEID			"deviceid"
 #define FEATURES			"features"

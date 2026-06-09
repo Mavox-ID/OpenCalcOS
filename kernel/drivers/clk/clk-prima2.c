@@ -6,14 +6,14 @@
  * Licensed under GPLv2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/of_address.h>
-#include <linux/syscore_ops.h>
+#include <beep/module.h>
+#include <beep/bitops.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/clk-provider.h>
+#include <beep/of_address.h>
+#include <beep/syscore_ops.h>
 
 #define SIRFSOC_CLKC_CLK_EN0    0x0000
 #define SIRFSOC_CLKC_CLK_EN1    0x0004

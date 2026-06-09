@@ -2,11 +2,11 @@
  *  Implementation of operations over local quota file
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/quota.h>
-#include <linux/quotaops.h>
-#include <linux/module.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/quota.h>
+#include <beep/quotaops.h>
+#include <beep/module.h>
 
 #include <cluster/masklog.h>
 

@@ -16,11 +16,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/firmware.h>
+#include <beep/etherdevice.h>
+#include <beep/module.h>
 
 #include <net/mac80211.h>
 

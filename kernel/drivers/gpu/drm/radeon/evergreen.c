@@ -21,9 +21,9 @@
  *
  * Authors: Alex Deucher
  */
-#include <linux/firmware.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/firmware.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 #include <drm/drmP.h>
 #include "radeon.h"
 #include "radeon_asic.h"

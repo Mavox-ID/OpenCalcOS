@@ -1,7 +1,7 @@
 /*
  *  Interrupt handing routines for NEC VR4100 series.
  *
- *  Copyright (C) 2005-2007  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2005-2007  Yoichi Yuasa <yuasa@beep-mips.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -17,9 +17,9 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/irq.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/irq.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/vr41xx/irq.h>

@@ -1,20 +1,20 @@
 /*
- *  linux/fs/ioctl.c
+ *  beep/fs/ioctl.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/syscalls.h>
-#include <linux/mm.h>
-#include <linux/capability.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/security.h>
-#include <linux/export.h>
-#include <linux/uaccess.h>
-#include <linux/writeback.h>
-#include <linux/buffer_head.h>
-#include <linux/falloc.h>
+#include <beep/syscalls.h>
+#include <beep/mm.h>
+#include <beep/capability.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/security.h>
+#include <beep/export.h>
+#include <beep/uaccess.h>
+#include <beep/writeback.h>
+#include <beep/buffer_head.h>
+#include <beep/falloc.h>
 
 #include <asm/ioctls.h>
 

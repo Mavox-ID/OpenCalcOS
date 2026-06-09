@@ -1,23 +1,23 @@
-/* linux/arch/arm/plat-samsung/clock-clksrc.c
+/* beep/arch/arm/plat-samsung/clock-clksrc.c
  *
  * Copyright 2008 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
 */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/device.h>
+#include <beep/io.h>
 
 #include <plat/clock.h>
 #include <plat/clock-clksrc.h>

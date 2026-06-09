@@ -21,7 +21,7 @@
 #include "r8192E_hw.h"
 #include "r8192E_hwimg.h"
 #include "r8192E_firmware.h"
-#include <linux/firmware.h>
+#include <beep/firmware.h>
 
 void firmware_init_param(struct net_device *dev)
 {

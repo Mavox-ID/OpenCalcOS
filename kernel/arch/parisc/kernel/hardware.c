@@ -5,7 +5,7 @@
  * 
  *    Based on the document "PA-RISC 1.1 I/O Firmware Architecture 
  *    Reference Specification", March 7, 1999, version 0.96.  This
- *    is available at http://parisc-linux.org/documentation/
+ *    is available at http://parisc-beep.org/documentation/
  *
  *    Copyright 1999 by Alex deVries <alex@onefishtwo.ca>
  *    and copyright 1999 The Puffin Group Inc.
@@ -28,9 +28,9 @@
 
 
 #include <asm/hardware.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
 
 /*
  *	HP PARISC Hardware Database

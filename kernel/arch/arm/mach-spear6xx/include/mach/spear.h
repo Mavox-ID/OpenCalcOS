@@ -35,7 +35,7 @@
 #define SPEAR6XX_ICM3_MISC_REG_BASE	UL(0xFCA80000)
 #define VA_SPEAR6XX_ICM3_MISC_REG_BASE	(VA_SPEAR6XX_ICM3_SMI_CTRL_BASE | SPEAR6XX_ICM3_MISC_REG_BASE)
 
-/* Debug uart for linux, will be used for debug and uncompress messages */
+/* Debug uart for beep, will be used for debug and uncompress messages */
 #define SPEAR_DBG_UART_BASE		SPEAR6XX_ICM1_UART0_BASE
 #define VA_SPEAR_DBG_UART_BASE		VA_SPEAR6XX_ICM1_UART0_BASE
 

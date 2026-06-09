@@ -1,8 +1,8 @@
 /******************************************************************************
  * arch/ia64/xen/xen_pv_ops.c
  *
- * Copyright (c) 2008 Isaku Yamahata <yamahata at valinux co jp>
- *                    VA Linux Systems Japan K.K.
+ * Copyright (c) 2008 Isaku Yamahata <yamahata at vabeep co jp>
+ *                    VA Beep Systems Japan K.K.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,11 +20,11 @@
  *
  */
 
-#include <linux/console.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/pm.h>
-#include <linux/unistd.h>
+#include <beep/console.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/pm.h>
+#include <beep/unistd.h>
 
 #include <asm/xen/hypervisor.h>
 #include <asm/xen/xencomm.h>
@@ -50,7 +50,7 @@ static struct pv_info xen_info __initdata = {
 static void __init
 xen_info_init(void)
 {
-	/* Xenified Linux/ia64 may run on pl = 1 or 2.
+	/* Xenified Beep/ia64 may run on pl = 1 or 2.
 	 * determin at run time. */
 	unsigned long rsc = ia64_getreg(_IA64_REG_AR_RSC);
 	unsigned int rpl = (rsc & IA64_RSC_PL_MASK) >> IA64_RSC_PL_SHIFT;

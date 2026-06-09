@@ -7,7 +7,7 @@
  * anyway...)
  *
  * Note that the open routine for N_TTY is guaranteed never to return
- * an error.  This is because Linux will fall back to setting a line
+ * an error.  This is because Beep will fall back to setting a line
  * to N_TTY if it can not switch to any other line discipline.
  *
  * Written by Theodore Ts'o, Copyright 1994.
@@ -30,25 +30,25 @@
  *		EAGAIN
  */
 
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/fcntl.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/timer.h>
-#include <linux/ctype.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/bitops.h>
-#include <linux/audit.h>
-#include <linux/file.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/major.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/fcntl.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/tty.h>
+#include <beep/timer.h>
+#include <beep/ctype.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/poll.h>
+#include <beep/bitops.h>
+#include <beep/audit.h>
+#include <beep/file.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
 
 
 /* number of characters left in xmit buffer before select has we have room */
@@ -326,7 +326,7 @@ static inline int is_continuation(unsigned char c, struct tty_struct *tty)
  *	doing OPOST processing and putting the results in the
  *	tty driver's write buffer.
  *
- *	Note that Linux currently ignores TABDLY, CRDLY, VTDLY, FFDLY
+ *	Note that Beep currently ignores TABDLY, CRDLY, VTDLY, FFDLY
  *	and NLDLY.  They simply aren't relevant in the world today.
  *	If you ever need them, add them here.
  *

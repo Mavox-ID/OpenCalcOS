@@ -20,15 +20,15 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/spi/spi.h>
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/backlight.h>
-#include <linux/fb.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/spi/spi.h>
+#include <beep/jiffies.h>
+#include <beep/sched.h>
+#include <beep/backlight.h>
+#include <beep/fb.h>
 
 #include <video/omapdss.h>
 

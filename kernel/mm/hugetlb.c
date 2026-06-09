@@ -2,34 +2,34 @@
  * Generic hugetlb support.
  * (C) Nadia Yvette Chambers, April 2004
  */
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/sysctl.h>
-#include <linux/highmem.h>
-#include <linux/mmu_notifier.h>
-#include <linux/nodemask.h>
-#include <linux/pagemap.h>
-#include <linux/mempolicy.h>
-#include <linux/cpuset.h>
-#include <linux/mutex.h>
-#include <linux/bootmem.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
-#include <linux/rmap.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
+#include <beep/list.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/seq_file.h>
+#include <beep/sysctl.h>
+#include <beep/highmem.h>
+#include <beep/mmu_notifier.h>
+#include <beep/nodemask.h>
+#include <beep/pagemap.h>
+#include <beep/mempolicy.h>
+#include <beep/cpuset.h>
+#include <beep/mutex.h>
+#include <beep/bootmem.h>
+#include <beep/sysfs.h>
+#include <beep/slab.h>
+#include <beep/rmap.h>
+#include <beep/swap.h>
+#include <beep/swapops.h>
 
 #include <asm/page.h>
 #include <asm/pgtable.h>
 #include <asm/tlb.h>
 
-#include <linux/io.h>
-#include <linux/hugetlb.h>
-#include <linux/hugetlb_cgroup.h>
-#include <linux/node.h>
+#include <beep/io.h>
+#include <beep/hugetlb.h>
+#include <beep/hugetlb_cgroup.h>
+#include <beep/node.h>
 #include "internal.h"
 
 const unsigned long hugetlb_zero = 0, hugetlb_infinity = ~0UL;

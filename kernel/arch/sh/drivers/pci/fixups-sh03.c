@@ -1,8 +1,8 @@
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/sh_intc.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/sh_intc.h>
 
 int __init pcibios_map_platform_irq(const struct pci_dev *dev, u8 slot, u8 pin)
 {

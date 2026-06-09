@@ -29,20 +29,20 @@
  *
  ********************************************************************/
 
-#include <linux/string.h>
-#include <linux/proc_fs.h>
-#include <linux/skbuff.h>
-#include <linux/capability.h>
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/kmod.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/string.h>
+#include <beep/proc_fs.h>
+#include <beep/skbuff.h>
+#include <beep/capability.h>
+#include <beep/if.h>
+#include <beep/if_ether.h>
+#include <beep/if_arp.h>
+#include <beep/netdevice.h>
+#include <beep/init.h>
+#include <beep/tty.h>
+#include <beep/kmod.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #include <asm/ioctls.h>
 #include <asm/uaccess.h>

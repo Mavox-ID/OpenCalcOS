@@ -1,10 +1,10 @@
 /* 
-   3w-xxxx.h -- 3ware Storage Controller device driver for Linux.
+   3w-xxxx.h -- 3ware Storage Controller device driver for Beep.
    
-   Written By: Adam Radford <linuxraid@lsi.com>
-   Modifications By: Joel Jacobson <linux@3ware.com>
+   Written By: Adam Radford <beepraid@lsi.com>
+   Modifications By: Joel Jacobson <beep@3ware.com>
    		     Arnaldo Carvalho de Melo <acme@conectiva.com.br>
-                     Brad Strand <linux@3ware.com>
+                     Brad Strand <beep@3ware.com>
 
    Copyright (C) 1999-2010 3ware Inc.
 
@@ -45,7 +45,7 @@
    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA 
 
    Bugs/Comments/Suggestions should be mailed to:                            
-   linuxraid@lsi.com
+   beepraid@lsi.com
    
    For more information, goto:
    http://www.lsi.com
@@ -54,7 +54,7 @@
 #ifndef _3W_XXXX_H
 #define _3W_XXXX_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* AEN strings */
 static char *tw_aen_string[] = {

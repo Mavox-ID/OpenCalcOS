@@ -9,8 +9,8 @@
 #include <asm/pgtable.h>
 #include <asm/paravirt.h>
 #include <asm/xen/privop.h>
-#include <linux/elfnote.h>
-#include <linux/init.h>
+#include <beep/elfnote.h>
+#include <beep/init.h>
 #include <xen/interface/elfnote.h>
 
 	.section .data..read_mostly
@@ -24,7 +24,7 @@ xen_domain_type:
 ENTRY(startup_xen)
 	// Calculate load offset.
 	// The constant, LOAD_OFFSET, can't be used because the boot
-	// loader doesn't always load to the LMA specified by the vmlinux.lds.
+	// loader doesn't always load to the LMA specified by the vmbeep.lds.
 	mov r9=ip	// must be the first instruction to make sure
 			// that r9 = the physical address of startup_xen.
 			// Usually r9 = startup_xen - LOAD_OFFSET
@@ -46,7 +46,7 @@ ENTRY(startup_xen)
 	;;
 END(startup_xen)
 
-	ELFNOTE(Xen, XEN_ELFNOTE_GUEST_OS,	.asciz "linux")
+	ELFNOTE(Xen, XEN_ELFNOTE_GUEST_OS,	.asciz "beep")
 	ELFNOTE(Xen, XEN_ELFNOTE_GUEST_VERSION,	.asciz "2.6")
 	ELFNOTE(Xen, XEN_ELFNOTE_XEN_VERSION,	.asciz "xen-3.0")
 	ELFNOTE(Xen, XEN_ELFNOTE_ENTRY,		data8.ua startup_xen - LOAD_OFFSET)

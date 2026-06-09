@@ -9,8 +9,8 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 #include "internal.h"
 
 static unsigned afs_server_timeout = 10;	/* server timeout in seconds */

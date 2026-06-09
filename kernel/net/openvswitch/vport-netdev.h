@@ -19,8 +19,8 @@
 #ifndef VPORT_NETDEV_H
 #define VPORT_NETDEV_H 1
 
-#include <linux/netdevice.h>
-#include <linux/rcupdate.h>
+#include <beep/netdevice.h>
+#include <beep/rcupdate.h>
 
 #include "vport.h"
 

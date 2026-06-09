@@ -15,15 +15,15 @@
  *   Copyright (C) 2007 David Sterba
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/ppp_channel.h>
-#include <linux/ppp_defs.h>
-#include <linux/slab.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/skbuff.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/mutex.h>
+#include <beep/netdevice.h>
+#include <beep/ppp_channel.h>
+#include <beep/ppp_defs.h>
+#include <beep/slab.h>
+#include <beep/ppp-ioctl.h>
+#include <beep/skbuff.h>
 
 #include "network.h"
 #include "hardware.h"

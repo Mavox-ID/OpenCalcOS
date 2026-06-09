@@ -17,21 +17,21 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/seq_file.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/sta2x11-mfd.h>
-#include <linux/regmap.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/errno.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/seq_file.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/sta2x11-mfd.h>
+#include <beep/regmap.h>
 
 #include <asm/sta2x11.h>
 

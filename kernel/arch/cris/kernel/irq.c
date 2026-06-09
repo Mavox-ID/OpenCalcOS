@@ -1,6 +1,6 @@
 /*
  *
- *	linux/arch/cris/kernel/irq.c
+ *	beep/arch/cris/kernel/irq.c
  *
  *      Copyright (c) 2000,2007 Axis Communications AB
  *
@@ -19,21 +19,21 @@
  * Naturally it's not a 1:1 relation, but there are similarities.
  */
 
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/irq.h>
+#include <beep/module.h>
+#include <beep/ptrace.h>
+#include <beep/irq.h>
 
-#include <linux/kernel_stat.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/timex.h>
-#include <linux/random.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
+#include <beep/kernel_stat.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/timex.h>
+#include <beep/random.h>
+#include <beep/init.h>
+#include <beep/seq_file.h>
+#include <beep/errno.h>
+#include <beep/spinlock.h>
 
 #include <asm/io.h>
 #include <arch/system.h>

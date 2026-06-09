@@ -6,8 +6,8 @@
 #ifndef _UAPI_ASM_S390_CHPID_H
 #define _UAPI_ASM_S390_CHPID_H
 
-#include <linux/string.h>
-#include <linux/types.h>
+#include <beep/string.h>
+#include <beep/types.h>
 
 #define __MAX_CHPID 255
 

@@ -23,10 +23,10 @@
  * 
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/time.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/emu10k1.h>
 #include <sound/initval.h>

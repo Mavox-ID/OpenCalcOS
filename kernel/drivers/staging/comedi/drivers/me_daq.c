@@ -34,9 +34,9 @@
  *    Analog Input, Analog Output, Digital I/O
  */
 
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/firmware.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/firmware.h>
 #include "../comedidev.h"
 
 #define ME2600_FIRMWARE		"me2600_firmware.bin"

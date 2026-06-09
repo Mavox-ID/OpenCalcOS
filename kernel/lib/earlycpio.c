@@ -2,7 +2,7 @@
  *
  *   Copyright 2012 Intel Corporation; author H. Peter Anvin
  *
- *   This file is part of the Linux kernel, and is made available
+ *   This file is part of the Beep kernel, and is made available
  *   under the terms of the GNU General Public License version 2, as
  *   published by the Free Software Foundation.
  *
@@ -25,9 +25,9 @@
  * separate file or part of the same file.
  */
 
-#include <linux/earlycpio.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <beep/earlycpio.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
 
 enum cpio_fields {
 	C_MAGIC,

@@ -1,5 +1,5 @@
 /*
- * linux/arch/sh/boards/se/7722/setup.c
+ * beep/arch/sh/boards/se/7722/setup.c
  *
  * Copyright (C) 2007 Nobuhiro Iwamatsu
  * Copyright (C) 2012 Paul Mundt
@@ -11,14 +11,14 @@
  * for more details.
  *
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/input.h>
-#include <linux/input/sh_keysc.h>
-#include <linux/irqdomain.h>
-#include <linux/smc91x.h>
-#include <linux/sh_intc.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/ata_platform.h>
+#include <beep/input.h>
+#include <beep/input/sh_keysc.h>
+#include <beep/irqdomain.h>
+#include <beep/smc91x.h>
+#include <beep/sh_intc.h>
 #include <mach-se/mach/se7722.h>
 #include <mach-se/mach/mrshpc.h>
 #include <asm/machvec.h>

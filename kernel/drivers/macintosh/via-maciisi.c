@@ -15,13 +15,13 @@
  * Works about 30% of the time now.
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/adb.h>
-#include <linux/cuda.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/adb.h>
+#include <beep/cuda.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
 #include <asm/macintosh.h>
 #include <asm/macints.h>
 #include <asm/mac_via.h>

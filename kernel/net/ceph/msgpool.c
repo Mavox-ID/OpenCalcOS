@@ -1,11 +1,11 @@
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/vmalloc.h>
+#include <beep/err.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/vmalloc.h>
 
-#include <linux/ceph/msgpool.h>
+#include <beep/ceph/msgpool.h>
 
 static void *msgpool_alloc(gfp_t gfp_mask, void *arg)
 {

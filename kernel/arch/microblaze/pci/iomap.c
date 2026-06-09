@@ -3,10 +3,10 @@
  *
  * (C) Copyright 2004 Linus Torvalds
  */
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/mm.h>
-#include <linux/export.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/mm.h>
+#include <beep/export.h>
 #include <asm/io.h>
 #include <asm/pci-bridge.h>
 

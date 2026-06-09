@@ -22,8 +22,8 @@
 #ifndef __ASM_ARCH_UNCOMPRESS_H
 #define __ASM_ARCH_UNCOMPRESS_H
 
-#include <linux/io.h>
-#include <linux/atmel_serial.h>
+#include <beep/io.h>
+#include <beep/atmel_serial.h>
 #include <mach/hardware.h>
 
 #include <mach/at91_dbgu.h>

@@ -111,11 +111,11 @@
 	nop;
 
 #ifdef CONFIG_COMPAT
-#define	LINUX_32BIT_SYSCALL_TRAP SYSCALL_TRAP(linux_sparc_syscall32, sys_call_table32)
+#define	BEEP_32BIT_SYSCALL_TRAP SYSCALL_TRAP(beep_sparc_syscall32, sys_call_table32)
 #else
-#define	LINUX_32BIT_SYSCALL_TRAP BTRAP(0x110)
+#define	BEEP_32BIT_SYSCALL_TRAP BTRAP(0x110)
 #endif
-#define LINUX_64BIT_SYSCALL_TRAP SYSCALL_TRAP(linux_sparc_syscall, sys_call_table64)
+#define BEEP_64BIT_SYSCALL_TRAP SYSCALL_TRAP(beep_sparc_syscall, sys_call_table64)
 #define GETCC_TRAP TRAP(getcc)
 #define SETCC_TRAP TRAP(setcc)
 #define BREAKPOINT_TRAP TRAP(breakpoint_trap)

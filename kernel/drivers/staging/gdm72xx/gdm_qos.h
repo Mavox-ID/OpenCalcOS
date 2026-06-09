@@ -14,9 +14,9 @@
 #if !defined(GDM_QOS_H_20090403)
 #define GDM_QOS_H_20090403
 
-#include <linux/types.h>
-#include <linux/usb.h>
-#include <linux/list.h>
+#include <beep/types.h>
+#include <beep/usb.h>
+#include <beep/list.h>
 
 #define BOOLEAN	u8
 

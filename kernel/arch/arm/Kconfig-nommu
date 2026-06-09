@@ -1,5 +1,5 @@
 #
-# Kconfig for uClinux(non-paged MM) depend configurations
+# Kconfig for uCbeep(non-paged MM) depend configurations
 # Hyok S. Choi <hyok.choi@samsung.com>
 # 
 

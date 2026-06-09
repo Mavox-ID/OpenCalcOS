@@ -8,16 +8,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/i2c/twl.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/consumer.h>
-#include <linux/platform_data/mtd-onenand-omap2.h>
+#include <beep/io.h>
+#include <beep/i2c.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/i2c/twl.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/consumer.h>
+#include <beep/platform_data/mtd-onenand-omap2.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach-types.h>

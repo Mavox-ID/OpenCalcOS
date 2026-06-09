@@ -10,12 +10,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/timex.h>
-#include <linux/param.h>
-#include <linux/types.h>
-#include <linux/init.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/timex.h>
+#include <beep/param.h>
+#include <beep/types.h>
+#include <beep/init.h>
 
 #include <asm/processor.h>
 #include <asm/sysreg.h>

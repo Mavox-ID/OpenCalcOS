@@ -15,15 +15,15 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/suspend.h>
-#include <linux/opp.h>
-#include <linux/devfreq.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/suspend.h>
+#include <beep/opp.h>
+#include <beep/devfreq.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/consumer.h>
+#include <beep/module.h>
 
 /* Exynos4 ASV has been in the mailing list, but not upstreamed, yet. */
 #ifdef CONFIG_EXYNOS_ASV

@@ -7,7 +7,7 @@
 #ifndef __ASM_SWITCH_TO_H
 #define __ASM_SWITCH_TO_H
 
-#include <linux/thread_info.h>
+#include <beep/thread_info.h>
 
 extern struct task_struct *__switch_to(void *, void *);
 extern void update_per_regs(struct task_struct *task);

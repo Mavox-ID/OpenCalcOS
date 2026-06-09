@@ -11,7 +11,7 @@
  *	    Dave Airlie
  */
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 #include <drm/drmP.h>
 #include <drm/drm_crtc_helper.h>

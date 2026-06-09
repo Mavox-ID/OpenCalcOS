@@ -40,7 +40,7 @@ Notes:
 */
 
 #include "../comedidev.h"
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 #include "8255.h"
 
 /*

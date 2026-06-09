@@ -11,10 +11,10 @@
 #ifndef _CRYP_H_
 #define _CRYP_H_
 
-#include <linux/completion.h>
-#include <linux/dmaengine.h>
-#include <linux/klist.h>
-#include <linux/mutex.h>
+#include <beep/completion.h>
+#include <beep/dmaengine.h>
+#include <beep/klist.h>
+#include <beep/mutex.h>
 
 #define DEV_DBG_NAME "crypX crypX:"
 

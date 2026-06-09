@@ -13,11 +13,11 @@
 #define _CRYPTO_INTERNAL_H
 
 
-//#include <linux/crypto.h>
+//#include <beep/crypto.h>
 #include "rtl_crypto.h"
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/init.h>
 #include <asm/hardirq.h>
 #include <asm/softirq.h>
 #include <asm/kmap_types.h>

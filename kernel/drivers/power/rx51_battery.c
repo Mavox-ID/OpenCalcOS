@@ -18,12 +18,12 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/i2c/twl4030-madc.h>
+#include <beep/module.h>
+#include <beep/param.h>
+#include <beep/platform_device.h>
+#include <beep/power_supply.h>
+#include <beep/slab.h>
+#include <beep/i2c/twl4030-madc.h>
 
 struct rx51_device_info {
 	struct device *dev;

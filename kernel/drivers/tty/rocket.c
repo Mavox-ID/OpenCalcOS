@@ -1,5 +1,5 @@
 /*
- * RocketPort device driver for Linux
+ * RocketPort device driver for Beep
  *
  * Written by Theodore Ts'o, 1995, 1996, 1997, 1998, 1999, 2000.
  * 
@@ -59,35 +59,35 @@
 
 /****** Kernel includes ******/
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/major.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/mutex.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/wait.h>
-#include <linux/pci.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/major.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/serial.h>
+#include <beep/string.h>
+#include <beep/fcntl.h>
+#include <beep/ptrace.h>
+#include <beep/mutex.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/completion.h>
+#include <beep/wait.h>
+#include <beep/pci.h>
+#include <beep/uaccess.h>
+#include <beep/atomic.h>
 #include <asm/unaligned.h>
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
+#include <beep/bitops.h>
+#include <beep/spinlock.h>
+#include <beep/init.h>
 
 /****** RocketPort includes ******/
 

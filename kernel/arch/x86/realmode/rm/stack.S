@@ -2,7 +2,7 @@
  * Common heap and stack allocations
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 	.data
 GLOBAL(HEAP)

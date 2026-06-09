@@ -2,7 +2,7 @@
  *  libata-eh.c - libata error handling
  *
  *  Maintained by:  Jeff Garzik <jgarzik@pobox.com>
- *    		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *    		    Please ALWAYS copy beep-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2006 Tejun Heo <htejun@gmail.com>
@@ -32,10 +32,10 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/export.h>
-#include <linux/pci.h>
+#include <beep/kernel.h>
+#include <beep/blkdev.h>
+#include <beep/export.h>
+#include <beep/pci.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_eh.h>
@@ -44,7 +44,7 @@
 #include <scsi/scsi_dbg.h>
 #include "../scsi/scsi_transport_api.h"
 
-#include <linux/libata.h>
+#include <beep/libata.h>
 
 #include "libata.h"
 

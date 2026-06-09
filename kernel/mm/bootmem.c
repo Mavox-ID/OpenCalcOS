@@ -8,14 +8,14 @@
  * Access to this subsystem has to be serialized externally (which is true
  * for the boot process anyway).
  */
-#include <linux/init.h>
-#include <linux/pfn.h>
-#include <linux/slab.h>
-#include <linux/bootmem.h>
-#include <linux/export.h>
-#include <linux/kmemleak.h>
-#include <linux/range.h>
-#include <linux/memblock.h>
+#include <beep/init.h>
+#include <beep/pfn.h>
+#include <beep/slab.h>
+#include <beep/bootmem.h>
+#include <beep/export.h>
+#include <beep/kmemleak.h>
+#include <beep/range.h>
+#include <beep/memblock.h>
 
 #include <asm/bug.h>
 #include <asm/io.h>
@@ -434,7 +434,7 @@ void __init free_bootmem(unsigned long physaddr, unsigned long size)
  * @pgdat: node the range resides on
  * @physaddr: starting address of the range
  * @size: size of the range in bytes
- * @flags: reservation flags (see linux/bootmem.h)
+ * @flags: reservation flags (see beep/bootmem.h)
  *
  * Partial pages will be reserved.
  *
@@ -455,7 +455,7 @@ int __init reserve_bootmem_node(pg_data_t *pgdat, unsigned long physaddr,
  * reserve_bootmem - mark a page range as reserved
  * @addr: starting address of the range
  * @size: size of the range in bytes
- * @flags: reservation flags (see linux/bootmem.h)
+ * @flags: reservation flags (see beep/bootmem.h)
  *
  * Partial pages will be reserved.
  *

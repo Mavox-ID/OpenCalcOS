@@ -63,37 +63,37 @@
 #define STATS_TIMER_INTERVAL			2
 #define PING_TIMER_INTERVAL			    1
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/timer.h>
+#include <beep/pci.h>
+#include <beep/spinlock.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/io.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/delay.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/kthread.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
 
-#include <linux/firmware.h>
-#include <linux/types.h>
-#include <linux/dma-mapping.h>
-#include <linux/mii.h>
-#include <linux/if_vlan.h>
+#include <beep/firmware.h>
+#include <beep/types.h>
+#include <beep/dma-mapping.h>
+#include <beep/mii.h>
+#include <beep/if_vlan.h>
 #include <asm/unaligned.h>
 
-#include <linux/ethtool.h>
-#include <linux/uaccess.h>
+#include <beep/ethtool.h>
+#include <beep/uaccess.h>
 #include "slichw.h"
 #include "slic.h"
 

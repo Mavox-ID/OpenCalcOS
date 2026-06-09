@@ -24,16 +24,16 @@
 #ifndef	_USBATM_H_
 #define	_USBATM_H_
 
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/stringify.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
+#include <beep/atm.h>
+#include <beep/atmdev.h>
+#include <beep/completion.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/kref.h>
+#include <beep/list.h>
+#include <beep/stringify.h>
+#include <beep/usb.h>
+#include <beep/mutex.h>
 
 /*
 #define VERBOSE_DEBUG

@@ -5,14 +5,14 @@
  * License terms: GNU General Public License (GPL) version 2
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/pl022.h>
-#include <linux/platform_data/dma-ste-dma40.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/pl022.h>
+#include <beep/platform_data/dma-ste-dma40.h>
 
 #include <mach/hardware.h>
 #include <mach/setup.h>

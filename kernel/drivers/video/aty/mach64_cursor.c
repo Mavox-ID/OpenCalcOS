@@ -2,9 +2,9 @@
  *  ATI Mach64 CT/VT/GT/LT Cursor Support
  */
 
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/string.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/string.h>
 
 #include <asm/io.h>
 

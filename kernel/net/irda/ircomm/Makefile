@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux IrDA IrCOMM protocol layer.
+# Makefile for the Beep IrDA IrCOMM protocol layer.
 #
 
 obj-$(CONFIG_IRCOMM) += ircomm.o ircomm-tty.o

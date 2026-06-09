@@ -6,7 +6,7 @@
  *
  * Copyright (C) by Hannu Savolainen 1993-1997
  *
- * OSS/Free for Linux is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
+ * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
  * Version 2 (June 1991). See the "COPYING" file distributed with this software
  * for more info.
  */
@@ -15,7 +15,7 @@
 #ifndef _DEV_TABLE_H_
 #define _DEV_TABLE_H_
 
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 /*
  * Sound card numbers 27 to 999. (1 to 26 are defined in soundcard.h)
  * Numbers 1000 to N are reserved for driver's internal use.

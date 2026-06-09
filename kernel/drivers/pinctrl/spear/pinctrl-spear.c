@@ -2,7 +2,7 @@
  * Driver for the ST Microelectronics SPEAr pinmux
  *
  * Copyright (C) 2012 ST Microelectronics
- * Viresh Kumar <viresh.linux@gmail.com>
+ * Viresh Kumar <viresh.beep@gmail.com>
  *
  * Inspired from:
  * - U300 Pinctl drivers
@@ -13,16 +13,16 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_gpio.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_gpio.h>
+#include <beep/pinctrl/machine.h>
+#include <beep/pinctrl/pinctrl.h>
+#include <beep/pinctrl/pinmux.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 #include "pinctrl-spear.h"
 

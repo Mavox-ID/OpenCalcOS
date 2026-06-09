@@ -11,16 +11,16 @@
  * For more information, please see http://nath323.sourceforge.net/
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ctype.h>
-#include <linux/inet.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/slab.h>
-#include <linux/udp.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/ctype.h>
+#include <beep/inet.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/slab.h>
+#include <beep/udp.h>
+#include <beep/tcp.h>
+#include <beep/skbuff.h>
 #include <net/route.h>
 #include <net/ip6_route.h>
 
@@ -31,7 +31,7 @@
 #include <net/netfilter/nf_conntrack_ecache.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_zones.h>
-#include <linux/netfilter/nf_conntrack_h323.h>
+#include <beep/netfilter/nf_conntrack_h323.h>
 
 /* Parameters */
 static unsigned int default_rrq_ttl __read_mostly = 300;

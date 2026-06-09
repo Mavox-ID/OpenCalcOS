@@ -17,9 +17,9 @@
  * (C) Copyright 2004-2007 Alan Stern, stern@rowland.harvard.edu
  */
 
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <beep/of_irq.h>
+#include <beep/of_address.h>
+#include <beep/of_platform.h>
 
 static int uhci_grlib_init(struct usb_hcd *hcd)
 {

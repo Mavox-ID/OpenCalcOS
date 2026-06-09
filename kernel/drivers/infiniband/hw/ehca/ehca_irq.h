@@ -1,5 +1,5 @@
 /*
- *  IBM eServer eHCA Infiniband device driver for Linux on POWER
+ *  IBM eServer eHCA Infiniband device driver for Beep on POWER
  *
  *  Function definitions and structs for EQs, NEQs and interrupts
  *
@@ -45,8 +45,8 @@
 
 struct ehca_shca;
 
-#include <linux/interrupt.h>
-#include <linux/types.h>
+#include <beep/interrupt.h>
+#include <beep/types.h>
 
 int ehca_error_data(struct ehca_shca *shca, void *data, u64 resource);
 

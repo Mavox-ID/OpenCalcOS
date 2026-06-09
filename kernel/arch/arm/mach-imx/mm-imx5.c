@@ -11,10 +11,10 @@
  * Create static mapping between physical to virtual memory.
  */
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/pinctrl/machine.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/pinctrl/machine.h>
 
 #include <asm/mach/map.h>
 

@@ -28,7 +28,7 @@
 #include <drm/radeon_drm.h>
 #include "radeon.h"
 #include "atom.h"
-#include <linux/backlight.h>
+#include <beep/backlight.h>
 #ifdef CONFIG_PMAC_BACKLIGHT
 #include <asm/backlight.h>
 #endif

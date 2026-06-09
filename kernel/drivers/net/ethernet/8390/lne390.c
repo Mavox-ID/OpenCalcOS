@@ -1,7 +1,7 @@
 /*
 	lne390.c
 
-	Linux driver for Mylex LNE390 EISA Network Adapter
+	Beep driver for Mylex LNE390 EISA Network Adapter
 
 	Copyright (C) 1996-1998, Paul Gortmaker.
 
@@ -11,7 +11,7 @@
 	Information and Code Sources:
 
 	1) Based upon framework of es3210 driver.
-	2) The existing myriad of other Linux 8390 drivers by Donald Becker.
+	2) The existing myriad of other Beep 8390 drivers by Donald Becker.
 	3) Russ Nelson's asm packet driver provided additional info.
 	4) Info for getting IRQ and sh-mem gleaned from the EISA cfg files.
 
@@ -34,16 +34,16 @@
 static const char *version =
 	"lne390.c: Driver revision v0.99.1, 01/09/2000\n";
 
-#include <linux/module.h>
-#include <linux/eisa.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <beep/module.h>
+#include <beep/eisa.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
 
 #include <asm/io.h>
 

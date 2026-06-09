@@ -4,11 +4,11 @@
  * This file is released under the GPLv2
  *
  */
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 #include "base.h"
 
 static char *make_driver_name(struct device_driver *drv)

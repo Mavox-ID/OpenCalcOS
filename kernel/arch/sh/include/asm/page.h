@@ -5,7 +5,7 @@
  * Copyright (C) 1999  Niibe Yutaka
  */
 
-#include <linux/const.h>
+#include <beep/const.h>
 
 /* PAGE_SHIFT determines the page size */
 #if defined(CONFIG_PAGE_SIZE_4KB)

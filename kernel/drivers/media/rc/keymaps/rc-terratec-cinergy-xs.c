@@ -11,10 +11,10 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 /* Terratec Cinergy Hybrid T USB XS
-   Devin Heitmueller <dheitmueller@linuxtv.org>
+   Devin Heitmueller <dheitmueller@beeptv.org>
  */
 
 static struct rc_map_table terratec_cinergy_xs[] = {

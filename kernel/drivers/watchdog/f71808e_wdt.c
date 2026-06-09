@@ -21,18 +21,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/uaccess.h>
-#include <linux/watchdog.h>
+#include <beep/err.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/notifier.h>
+#include <beep/reboot.h>
+#include <beep/uaccess.h>
+#include <beep/watchdog.h>
 
 #define DRVNAME "f71808e_wdt"
 

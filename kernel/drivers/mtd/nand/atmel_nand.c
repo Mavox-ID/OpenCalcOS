@@ -24,24 +24,24 @@
  *
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/of_mtd.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/platform_device.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_gpio.h>
+#include <beep/of_mtd.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
 
-#include <linux/dmaengine.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/platform_data/atmel.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/dmaengine.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
+#include <beep/platform_data/atmel.h>
+#include <beep/pinctrl/consumer.h>
 
 #include <mach/cpu.h>
 

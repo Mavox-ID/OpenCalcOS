@@ -14,26 +14,26 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
 
-#include <linux/gpio_keys.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/timer.h>
-#include <linux/io.h>
-#include <linux/mmc/host.h>
+#include <beep/gpio_keys.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/serial_core.h>
+#include <beep/timer.h>
+#include <beep/io.h>
+#include <beep/mmc/host.h>
 
 #include <mach/hardware.h>
 #include <asm/irq.h>
 #include <asm/mach-types.h>
 
 #include <mach/fb.h>
-#include <linux/platform_data/leds-s3c24xx.h>
+#include <beep/platform_data/leds-s3c24xx.h>
 #include <mach/regs-gpio.h>
 #include <mach/regs-lcd.h>
 
@@ -41,15 +41,15 @@
 #include <asm/mach/irq.h>
 #include <asm/mach/map.h>
 
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 #include <plat/regs-serial.h>
 
 #include <plat/clock.h>
 #include <plat/cpu.h>
 #include <plat/devs.h>
-#include <linux/platform_data/mmc-s3cmci.h>
+#include <beep/platform_data/mmc-s3cmci.h>
 #include <plat/s3c2410.h>
-#include <linux/platform_data/usb-s3c2410_udc.h>
+#include <beep/platform_data/usb-s3c2410_udc.h>
 
 #include "common.h"
 
@@ -393,7 +393,7 @@ static struct s3c2410_platform_i2c __initdata n30_i2ccfg = {
 };
 
 /* Lots of hardcoded stuff, but it sets up the hardware in a useful
- * state so that we can boot Linux directly from flash. */
+ * state so that we can boot Beep directly from flash. */
 static void __init n30_hwinit(void)
 {
 	/* GPA0-11 special functions -- unknown what they do
@@ -586,7 +586,7 @@ static void __init n30_init(void)
 
 MACHINE_START(N30, "Acer-N30")
 	/* Maintainer: Christer Weinigel <christer@weinigel.se>,
-				Ben Dooks <ben-linux@fluff.org>
+				Ben Dooks <ben-beep@fluff.org>
 	*/
 	.atag_offset	= 0x100,
 	.timer		= &s3c24xx_timer,

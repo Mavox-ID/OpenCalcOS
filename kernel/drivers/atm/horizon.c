@@ -17,7 +17,7 @@
   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
   
   The GNU GPL is contained in /usr/doc/copyright/GPL on a Debian
-  system and in the file COPYING in the Linux kernel source.
+  system and in the file COPYING in the Beep kernel source.
 */
 
 /*
@@ -25,26 +25,26 @@
   supported by this driver and makes no commitment to maintain it.
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/sonet.h>
-#include <linux/skbuff.h>
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/uio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/pci.h>
+#include <beep/errno.h>
+#include <beep/atm.h>
+#include <beep/atmdev.h>
+#include <beep/sonet.h>
+#include <beep/skbuff.h>
+#include <beep/time.h>
+#include <beep/delay.h>
+#include <beep/uio.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/wait.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/uaccess.h>
 #include <asm/string.h>
 #include <asm/byteorder.h>
@@ -116,7 +116,7 @@ static inline void __init show_version (void) {
   2. Detection
   
   All Horizon-based cards present with the same PCI Vendor and Device
-  IDs. The standard Linux 2.2 PCI API is used to locate any cards and
+  IDs. The standard Beep 2.2 PCI API is used to locate any cards and
   to enable bus-mastering (with appropriate latency).
   
   ATM_LAYER_STATUS in the control register distinguishes between the
@@ -190,7 +190,7 @@ static inline void __init show_version (void) {
   It can be used both to filter incoming cells and shape out-going
   cells.
   
-  ATM Linux actually supports:
+  ATM Beep actually supports:
   
   ATM_NONE() (no traffic in this direction)
   ATM_UBR(max_frame_size)
@@ -199,7 +199,7 @@ static inline void __init show_version (void) {
   0 or ATM_MAX_PCR are used to indicate maximum available PCR
   
   A traffic specification consists of the AAL type and separate
-  traffic specifications for either direction. In ATM Linux it is:
+  traffic specifications for either direction. In ATM Beep it is:
   
   struct atm_qos {
   struct atm_trafprm txtp;
@@ -219,7 +219,7 @@ static inline void __init show_version (void) {
   
   The Horizon has support for AAL frame types: 0, 3/4 and 5. However,
   it does not implement AAL 3/4 SAR and it has a different notion of
-  "raw cell" to ATM Linux's (48 bytes vs. 52 bytes) so neither are
+  "raw cell" to ATM Beep's (48 bytes vs. 52 bytes) so neither are
   supported by this driver.
   
   The Horizon has limited support for ABR (including UBR), VBR and
@@ -232,7 +232,7 @@ static inline void __init show_version (void) {
   configurable divider and a configurable timer preload value).
   
   At the moment only UBR and CBR are supported by the driver. VBR will
-  be supported as soon as ATM for Linux supports it. ABR support is
+  be supported as soon as ATM for Beep supports it. ABR support is
   very unlikely as RM cell handling is completely up to the driver.
   
   1. TX (TX channel setup and TX transfer)
@@ -347,7 +347,7 @@ static inline void __init show_version (void) {
     order to reduce the chances of TX buffer exhaustion.
   
   . Implement VBR (bucket and timers not understood) and ABR (need to
-    do RM cells manually); also no Linux support for either.
+    do RM cells manually); also no Beep support for either.
   
   . Implement QoS changes on open VCs (involves extracting parts of VC open
     and close into separate functions and using them to make changes).
@@ -1445,7 +1445,7 @@ static void do_housekeeping (unsigned long arg) {
   // just stats at the moment
   hrz_dev * dev = (hrz_dev *) arg;
 
-  // collect device-specific (not driver/atm-linux) stats here
+  // collect device-specific (not driver/atm-beep) stats here
   dev->tx_cell_count += rd_regw (dev, TX_CELL_COUNT_OFF);
   dev->rx_cell_count += rd_regw (dev, RX_CELL_COUNT_OFF);
   dev->hec_error_count += rd_regw (dev, HEC_ERROR_COUNT_OFF);
@@ -2097,7 +2097,7 @@ static int check_max_sdu (hrz_aal aal, struct atm_trafprm * tp, unsigned int max
 
 /********** check pcr **********/
 
-// something like this should be part of ATM Linux
+// something like this should be part of ATM Beep
 static int atm_pcr_check (struct atm_trafprm * tp, unsigned int pcr) {
   // we are assuming non-UBR, and non-special values of pcr
   if (tp->min_pcr == ATM_MAX_PCR)

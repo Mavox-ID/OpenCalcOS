@@ -4,7 +4,7 @@
  * Copyright (C) 2005-2006 Anthony Liguori <aliguori@us.ibm.com>
  * Copyright (C) 2006-2008 Red Hat, Inc., Markus Armbruster <armbru@redhat.com>
  *
- *  Based on linux/drivers/video/q40fb.c
+ *  Based on beep/drivers/video/q40fb.c
  *
  *  This file is subject to the terms and conditions of the GNU General Public
  *  License. See the file COPYING in the main directory of this archive for
@@ -18,14 +18,14 @@
  * frame buffer.
  */
 
-#include <linux/console.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
+#include <beep/console.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/fb.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/mm.h>
 
 #include <asm/xen/hypervisor.h>
 

@@ -20,7 +20,7 @@
 		white-power {
 			label = "dns325:white:power";
 			gpios = <&gpio0 26 1>; /* GPIO 26 Active Low */
-			linux,default-trigger = "default-on";
+			beep,default-trigger = "default-on";
 		};
 		white-usb {
 			label = "dns325:white:usb";

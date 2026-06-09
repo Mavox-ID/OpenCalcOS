@@ -1,5 +1,5 @@
 /*
- *  linux/fs/exec.c
+ *  beep/fs/exec.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -12,7 +12,7 @@
  * the header into memory. The inode of the executable is put into
  * "current->executable", and page faults do the actual loading. Clean.
  *
- * Once more I can proudly say that linux stood up to being changed: it
+ * Once more I can proudly say that beep stood up to being changed: it
  * was less than 2 hours work to get demand-loading completely implemented.
  *
  * Demand loading changed July 1993 by Eric Youngdale.   Use mmap instead,
@@ -22,39 +22,39 @@
  * formats. 
  */
 
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/mm.h>
-#include <linux/stat.h>
-#include <linux/fcntl.h>
-#include <linux/swap.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/perf_event.h>
-#include <linux/highmem.h>
-#include <linux/spinlock.h>
-#include <linux/key.h>
-#include <linux/personality.h>
-#include <linux/binfmts.h>
-#include <linux/utsname.h>
-#include <linux/pid_namespace.h>
-#include <linux/module.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/tsacct_kern.h>
-#include <linux/cn_proc.h>
-#include <linux/audit.h>
-#include <linux/tracehook.h>
-#include <linux/kmod.h>
-#include <linux/fsnotify.h>
-#include <linux/fs_struct.h>
-#include <linux/pipe_fs_i.h>
-#include <linux/oom.h>
-#include <linux/compat.h>
+#include <beep/slab.h>
+#include <beep/file.h>
+#include <beep/fdtable.h>
+#include <beep/mm.h>
+#include <beep/stat.h>
+#include <beep/fcntl.h>
+#include <beep/swap.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/pagemap.h>
+#include <beep/perf_event.h>
+#include <beep/highmem.h>
+#include <beep/spinlock.h>
+#include <beep/key.h>
+#include <beep/personality.h>
+#include <beep/binfmts.h>
+#include <beep/utsname.h>
+#include <beep/pid_namespace.h>
+#include <beep/module.h>
+#include <beep/namei.h>
+#include <beep/mount.h>
+#include <beep/security.h>
+#include <beep/syscalls.h>
+#include <beep/tsacct_kern.h>
+#include <beep/cn_proc.h>
+#include <beep/audit.h>
+#include <beep/tracehook.h>
+#include <beep/kmod.h>
+#include <beep/fsnotify.h>
+#include <beep/fs_struct.h>
+#include <beep/pipe_fs_i.h>
+#include <beep/oom.h>
+#include <beep/compat.h>
 
 #include <asm/uaccess.h>
 #include <asm/mmu_context.h>
@@ -71,7 +71,7 @@ int suid_dumpable = 0;
 static LIST_HEAD(formats);
 static DEFINE_RWLOCK(binfmt_lock);
 
-void __register_binfmt(struct linux_binfmt * fmt, int insert)
+void __register_binfmt(struct beep_binfmt * fmt, int insert)
 {
 	BUG_ON(!fmt);
 	write_lock(&binfmt_lock);
@@ -82,7 +82,7 @@ void __register_binfmt(struct linux_binfmt * fmt, int insert)
 
 EXPORT_SYMBOL(__register_binfmt);
 
-void unregister_binfmt(struct linux_binfmt * fmt)
+void unregister_binfmt(struct beep_binfmt * fmt)
 {
 	write_lock(&binfmt_lock);
 	list_del(&fmt->lh);
@@ -91,7 +91,7 @@ void unregister_binfmt(struct linux_binfmt * fmt)
 
 EXPORT_SYMBOL(unregister_binfmt);
 
-static inline void put_binfmt(struct linux_binfmt * fmt)
+static inline void put_binfmt(struct beep_binfmt * fmt)
 {
 	module_put(fmt->module);
 }
@@ -134,7 +134,7 @@ SYSCALL_DEFINE1(uselib, const char __user *, library)
 
 	error = -ENOEXEC;
 	if(file->f_op) {
-		struct linux_binfmt * fmt;
+		struct beep_binfmt * fmt;
 
 		read_lock(&binfmt_lock);
 		list_for_each_entry(fmt, &formats, lh) {
@@ -164,7 +164,7 @@ out:
  * for oom_badness()->get_mm_rss(). Once exec succeeds or fails, we
  * change the counter back via acct_arg_size(0).
  */
-static void acct_arg_size(struct linux_binprm *bprm, unsigned long pages)
+static void acct_arg_size(struct beep_binprm *bprm, unsigned long pages)
 {
 	struct mm_struct *mm = current->mm;
 	long diff = (long)(pages - bprm->vma_pages);
@@ -176,7 +176,7 @@ static void acct_arg_size(struct linux_binprm *bprm, unsigned long pages)
 	add_mm_counter(mm, MM_ANONPAGES, diff);
 }
 
-static struct page *get_arg_page(struct linux_binprm *bprm, unsigned long pos,
+static struct page *get_arg_page(struct beep_binprm *bprm, unsigned long pos,
 		int write)
 {
 	struct page *page;
@@ -229,21 +229,21 @@ static void put_arg_page(struct page *page)
 	put_page(page);
 }
 
-static void free_arg_page(struct linux_binprm *bprm, int i)
+static void free_arg_page(struct beep_binprm *bprm, int i)
 {
 }
 
-static void free_arg_pages(struct linux_binprm *bprm)
+static void free_arg_pages(struct beep_binprm *bprm)
 {
 }
 
-static void flush_arg_page(struct linux_binprm *bprm, unsigned long pos,
+static void flush_arg_page(struct beep_binprm *bprm, unsigned long pos,
 		struct page *page)
 {
 	flush_cache_page(bprm->vma, pos, page_to_pfn(page));
 }
 
-static int __bprm_mm_init(struct linux_binprm *bprm)
+static int __bprm_mm_init(struct beep_binprm *bprm)
 {
 	int err;
 	struct vm_area_struct *vma = NULL;
@@ -284,18 +284,18 @@ err:
 	return err;
 }
 
-static bool valid_arg_len(struct linux_binprm *bprm, long len)
+static bool valid_arg_len(struct beep_binprm *bprm, long len)
 {
 	return len <= MAX_ARG_STRLEN;
 }
 
 #else
 
-static inline void acct_arg_size(struct linux_binprm *bprm, unsigned long pages)
+static inline void acct_arg_size(struct beep_binprm *bprm, unsigned long pages)
 {
 }
 
-static struct page *get_arg_page(struct linux_binprm *bprm, unsigned long pos,
+static struct page *get_arg_page(struct beep_binprm *bprm, unsigned long pos,
 		int write)
 {
 	struct page *page;
@@ -315,7 +315,7 @@ static void put_arg_page(struct page *page)
 {
 }
 
-static void free_arg_page(struct linux_binprm *bprm, int i)
+static void free_arg_page(struct beep_binprm *bprm, int i)
 {
 	if (bprm->page[i]) {
 		__free_page(bprm->page[i]);
@@ -323,7 +323,7 @@ static void free_arg_page(struct linux_binprm *bprm, int i)
 	}
 }
 
-static void free_arg_pages(struct linux_binprm *bprm)
+static void free_arg_pages(struct beep_binprm *bprm)
 {
 	int i;
 
@@ -331,18 +331,18 @@ static void free_arg_pages(struct linux_binprm *bprm)
 		free_arg_page(bprm, i);
 }
 
-static void flush_arg_page(struct linux_binprm *bprm, unsigned long pos,
+static void flush_arg_page(struct beep_binprm *bprm, unsigned long pos,
 		struct page *page)
 {
 }
 
-static int __bprm_mm_init(struct linux_binprm *bprm)
+static int __bprm_mm_init(struct beep_binprm *bprm)
 {
 	bprm->p = PAGE_SIZE * MAX_ARG_PAGES - sizeof(void *);
 	return 0;
 }
 
-static bool valid_arg_len(struct linux_binprm *bprm, long len)
+static bool valid_arg_len(struct beep_binprm *bprm, long len)
 {
 	return len <= bprm->p;
 }
@@ -355,7 +355,7 @@ static bool valid_arg_len(struct linux_binprm *bprm, long len)
  * flags, permissions, and offset, so we use temporary values.  We'll update
  * them later in setup_arg_pages().
  */
-int bprm_mm_init(struct linux_binprm *bprm)
+int bprm_mm_init(struct beep_binprm *bprm)
 {
 	int err;
 	struct mm_struct *mm = NULL;
@@ -452,7 +452,7 @@ static int count(struct user_arg_ptr argv, int max)
  * ensures the destination page is created and not swapped out.
  */
 static int copy_strings(int argc, struct user_arg_ptr argv,
-			struct linux_binprm *bprm)
+			struct beep_binprm *bprm)
 {
 	struct page *kmapped_page = NULL;
 	char *kaddr = NULL;
@@ -543,7 +543,7 @@ out:
  * Like copy_strings, but get argv and its values from kernel memory.
  */
 int copy_strings_kernel(int argc, const char *const *__argv,
-			struct linux_binprm *bprm)
+			struct beep_binprm *bprm)
 {
 	int r;
 	mm_segment_t oldfs = get_fs();
@@ -638,7 +638,7 @@ static int shift_arg_pages(struct vm_area_struct *vma, unsigned long shift)
  * Finalizes the stack vm_area_struct. The flags and permissions are updated,
  * the stack is optionally relocated, and some extra space is added.
  */
-int setup_arg_pages(struct linux_binprm *bprm,
+int setup_arg_pages(struct beep_binprm *bprm,
 		    unsigned long stack_top,
 		    int executable_stack)
 {
@@ -1058,7 +1058,7 @@ static void filename_to_taskname(char *tcomm, const char *fn, unsigned int len)
 	tcomm[i] = '\0';
 }
 
-int flush_old_exec(struct linux_binprm * bprm)
+int flush_old_exec(struct beep_binprm * bprm)
 {
 	int retval;
 
@@ -1096,14 +1096,14 @@ out:
 }
 EXPORT_SYMBOL(flush_old_exec);
 
-void would_dump(struct linux_binprm *bprm, struct file *file)
+void would_dump(struct beep_binprm *bprm, struct file *file)
 {
 	if (inode_permission(file->f_path.dentry->d_inode, MAY_READ) < 0)
 		bprm->interp_flags |= BINPRM_FLAGS_ENFORCE_NONDUMP;
 }
 EXPORT_SYMBOL(would_dump);
 
-void setup_new_exec(struct linux_binprm * bprm)
+void setup_new_exec(struct beep_binprm * bprm)
 {
 	arch_pick_mmap_layout(current->mm);
 
@@ -1156,7 +1156,7 @@ EXPORT_SYMBOL(setup_new_exec);
  * Or, if exec fails before, free_bprm() should release ->cred and
  * and unlock.
  */
-int prepare_bprm_creds(struct linux_binprm *bprm)
+int prepare_bprm_creds(struct beep_binprm *bprm)
 {
 	if (mutex_lock_interruptible(&current->signal->cred_guard_mutex))
 		return -ERESTARTNOINTR;
@@ -1169,7 +1169,7 @@ int prepare_bprm_creds(struct linux_binprm *bprm)
 	return -ENOMEM;
 }
 
-void free_bprm(struct linux_binprm *bprm)
+void free_bprm(struct beep_binprm *bprm)
 {
 	free_arg_pages(bprm);
 	if (bprm->cred) {
@@ -1182,7 +1182,7 @@ void free_bprm(struct linux_binprm *bprm)
 	kfree(bprm);
 }
 
-int bprm_change_interp(char *interp, struct linux_binprm *bprm)
+int bprm_change_interp(char *interp, struct beep_binprm *bprm)
 {
 	/* If a binfmt changed the interp, free it first. */
 	if (bprm->interp != bprm->filename)
@@ -1197,7 +1197,7 @@ EXPORT_SYMBOL(bprm_change_interp);
 /*
  * install the new credentials for this executable
  */
-void install_exec_creds(struct linux_binprm *bprm)
+void install_exec_creds(struct beep_binprm *bprm)
 {
 	security_bprm_committing_creds(bprm);
 
@@ -1218,7 +1218,7 @@ EXPORT_SYMBOL(install_exec_creds);
  * - the caller must hold ->cred_guard_mutex to protect against
  *   PTRACE_ATTACH
  */
-static int check_unsafe_exec(struct linux_binprm *bprm)
+static int check_unsafe_exec(struct beep_binprm *bprm)
 {
 	struct task_struct *p = current, *t;
 	unsigned n_fs;
@@ -1267,7 +1267,7 @@ static int check_unsafe_exec(struct linux_binprm *bprm)
  *
  * This may be called multiple times for binary chains (scripts for example).
  */
-int prepare_binprm(struct linux_binprm *bprm)
+int prepare_binprm(struct beep_binprm *bprm)
 {
 	umode_t mode;
 	struct inode * inode = bprm->file->f_path.dentry->d_inode;
@@ -1320,7 +1320,7 @@ EXPORT_SYMBOL(prepare_binprm);
  * points to; chop off the first by relocating brpm->p to right after
  * the first '\0' encountered.
  */
-int remove_arg_zero(struct linux_binprm *bprm)
+int remove_arg_zero(struct beep_binprm *bprm)
 {
 	int ret = 0;
 	unsigned long offset;
@@ -1362,11 +1362,11 @@ EXPORT_SYMBOL(remove_arg_zero);
 /*
  * cycle the list of binary formats handler, until one recognizes the image
  */
-int search_binary_handler(struct linux_binprm *bprm)
+int search_binary_handler(struct beep_binprm *bprm)
 {
 	unsigned int depth = bprm->recursion_depth;
 	int try,retval;
-	struct linux_binfmt *fmt;
+	struct beep_binfmt *fmt;
 	pid_t old_pid, old_vpid;
 
 	/* This allows 4 levels of binfmt rewrites before failing hard. */
@@ -1391,7 +1391,7 @@ int search_binary_handler(struct linux_binprm *bprm)
 	for (try=0; try<2; try++) {
 		read_lock(&binfmt_lock);
 		list_for_each_entry(fmt, &formats, lh) {
-			int (*fn)(struct linux_binprm *) = fmt->load_binary;
+			int (*fn)(struct beep_binprm *) = fmt->load_binary;
 			if (!fn)
 				continue;
 			if (!try_module_get(fmt->module))
@@ -1454,7 +1454,7 @@ static int do_execve_common(const char *filename,
 				struct user_arg_ptr argv,
 				struct user_arg_ptr envp)
 {
-	struct linux_binprm *bprm;
+	struct beep_binprm *bprm;
 	struct file *file;
 	struct files_struct *displaced;
 	bool clear_in_exec;
@@ -1602,7 +1602,7 @@ static int compat_do_execve(const char *filename,
 }
 #endif
 
-void set_binfmt(struct linux_binfmt *new)
+void set_binfmt(struct beep_binfmt *new)
 {
 	struct mm_struct *mm = current->mm;
 

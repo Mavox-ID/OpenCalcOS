@@ -26,9 +26,9 @@
 #include <media/v4l2-fh.h>
 #include <media/v4l2-event.h>
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 static unsigned sev_pos(const struct v4l2_subscribed_event *sev, unsigned idx)
 {

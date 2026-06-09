@@ -40,12 +40,12 @@
 
 #include <asm/byteorder.h>
 #include <crypto/twofish.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/crypto.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/crypto.h>
+#include <beep/bitops.h>
 
 /* Macros to compute the g() function in the encryption and decryption
  * rounds.  G1 is the straight g() function; G2 includes the 8-bit

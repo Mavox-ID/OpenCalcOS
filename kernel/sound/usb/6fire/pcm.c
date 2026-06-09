@@ -1,5 +1,5 @@
 /*
- * Linux driver for TerraTec DMX 6Fire USB
+ * Beep driver for TerraTec DMX 6Fire USB
  *
  * PCM driver
  *

@@ -9,10 +9,10 @@
  * Copyright (C) 2005-2006 Thomas Bogendoerfer (tsbogend@alpha.franken.de)
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/console.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/console.h>
 
 #include <asm/addrspace.h>
 #include <asm/sni.h>

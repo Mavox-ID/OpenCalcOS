@@ -8,11 +8,11 @@
  * __always_inline to avoid problems with older gcc's inlining heuristics.
  */
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _BEEP_BITOPS_H
+#error only <beep/bitops.h> can be included directly
 #endif
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/alternative.h>
 
 #define BIT_64(n)			(U64_C(1) << (n))

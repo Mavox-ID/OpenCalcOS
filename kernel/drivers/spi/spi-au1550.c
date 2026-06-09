@@ -21,18 +21,18 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/resource.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/dma-mapping.h>
-#include <linux/completion.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/resource.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_bitbang.h>
+#include <beep/dma-mapping.h>
+#include <beep/completion.h>
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/au1xxx_psc.h>
 #include <asm/mach-au1x00/au1xxx_dbdma.h>

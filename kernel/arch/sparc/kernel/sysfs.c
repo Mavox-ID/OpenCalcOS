@@ -2,12 +2,12 @@
  *
  * Copyright (C) 2007 David S. Miller <davem@davemloft.net>
  */
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
+#include <beep/sched.h>
+#include <beep/device.h>
+#include <beep/cpu.h>
+#include <beep/smp.h>
+#include <beep/percpu.h>
+#include <beep/init.h>
 
 #include <asm/cpudata.h>
 #include <asm/hypervisor.h>

@@ -1,24 +1,24 @@
 /*
- *  linux/arch/m68k/kernel/ptrace.c
+ *  beep/arch/m68k/kernel/ptrace.c
  *
  *  Copyright (C) 1994 by Hamish Macdonald
- *  Taken from linux/kernel/ptrace.c and modified for M680x0.
- *  linux/kernel/ptrace.c is by Ross Biro 1/23/92, edited by Linus Torvalds
+ *  Taken from beep/kernel/ptrace.c and modified for M680x0.
+ *  beep/kernel/ptrace.c is by Ross Biro 1/23/92, edited by Linus Torvalds
  *
  * This file is subject to the terms and conditions of the GNU General
  * Public License.  See the file COPYING in the main directory of
  * this archive for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/signal.h>
-#include <linux/tracehook.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/signal.h>
+#include <beep/tracehook.h>
 
 #include <asm/uaccess.h>
 #include <asm/page.h>

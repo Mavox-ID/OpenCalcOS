@@ -11,7 +11,7 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/pci.h>
+#include <beep/pci.h>
 #include <mach/lboxre2.h>
 #include <mach/r2d.h>
 #include "pci-sh4.h"

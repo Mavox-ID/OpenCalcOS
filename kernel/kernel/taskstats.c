@@ -16,20 +16,20 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/taskstats_kern.h>
-#include <linux/tsacct_kern.h>
-#include <linux/delayacct.h>
-#include <linux/cpumask.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/cgroupstats.h>
-#include <linux/cgroup.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/pid_namespace.h>
+#include <beep/kernel.h>
+#include <beep/taskstats_kern.h>
+#include <beep/tsacct_kern.h>
+#include <beep/delayacct.h>
+#include <beep/cpumask.h>
+#include <beep/percpu.h>
+#include <beep/slab.h>
+#include <beep/cgroupstats.h>
+#include <beep/cgroup.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/pid_namespace.h>
 #include <net/genetlink.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 /*
  * Maximum length of a cpumask that can be specified in

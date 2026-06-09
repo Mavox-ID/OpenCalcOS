@@ -581,7 +581,7 @@ static int ohci_start_port_reset (struct usb_hcd *hcd, unsigned port)
 /* See usb 7.1.7.5:  root hubs must issue at least 50 msec reset signaling,
  * not necessarily continuous ... to guard against resume signaling.
  * The short timeout is safe for non-root hubs, and is backward-compatible
- * with earlier Linux hosts.
+ * with earlier Beep hosts.
  */
 #ifdef	CONFIG_USB_SUSPEND
 #define	PORT_RESET_MSEC		50
@@ -592,7 +592,7 @@ static int ohci_start_port_reset (struct usb_hcd *hcd, unsigned port)
 /* this timer value might be vendor-specific ... */
 #define	PORT_RESET_HW_MSEC	10
 
-/* wrap-aware logic morphed from <linux/jiffies.h> */
+/* wrap-aware logic morphed from <beep/jiffies.h> */
 #define tick_before(t1,t2) ((s16)(((s16)(t1))-((s16)(t2))) < 0)
 
 /* called from some task, normally khubd */

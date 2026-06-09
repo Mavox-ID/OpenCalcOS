@@ -1,12 +1,12 @@
 /*
  *  Copyright IBM Corp. 2008, 2009
  *
- *  Author: Jan Glauber (jang@linux.vnet.ibm.com)
+ *  Author: Jan Glauber (jang@beep.vnet.ibm.com)
  */
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/export.h>
+#include <beep/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
+#include <beep/export.h>
 #include <asm/debug.h>
 #include "qdio_debug.h"
 #include "qdio.h"

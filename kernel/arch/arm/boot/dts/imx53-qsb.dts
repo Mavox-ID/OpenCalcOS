@@ -221,20 +221,20 @@
 		power {
 			label = "Power Button";
 			gpios = <&gpio1 8 0>;
-			linux,code = <116>; /* KEY_POWER */
+			beep,code = <116>; /* KEY_POWER */
 			gpio-key,wakeup;
 		};
 
 		volume-up {
 			label = "Volume Up";
 			gpios = <&gpio2 14 0>;
-			linux,code = <115>; /* KEY_VOLUMEUP */
+			beep,code = <115>; /* KEY_VOLUMEUP */
 		};
 
 		volume-down {
 			label = "Volume Down";
 			gpios = <&gpio2 15 0>;
-			linux,code = <114>; /* KEY_VOLUMEDOWN */
+			beep,code = <114>; /* KEY_VOLUMEDOWN */
 		};
 	};
 
@@ -246,7 +246,7 @@
 		user {
 			label = "Heartbeat";
 			gpios = <&gpio7 7 0>;
-			linux,default-trigger = "heartbeat";
+			beep,default-trigger = "heartbeat";
 		};
 	};
 

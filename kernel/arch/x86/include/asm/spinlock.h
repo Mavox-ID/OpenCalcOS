@@ -1,10 +1,10 @@
 #ifndef _ASM_X86_SPINLOCK_H
 #define _ASM_X86_SPINLOCK_H
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/page.h>
 #include <asm/processor.h>
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/paravirt.h>
 /*
  * Your basic SMP spinlocks, allowing only a single CPU anywhere

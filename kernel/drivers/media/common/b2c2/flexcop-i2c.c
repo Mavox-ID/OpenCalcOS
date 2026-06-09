@@ -1,5 +1,5 @@
 /*
- * Linux driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
+ * Beep driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
  * flexcop-i2c.c - flexcop internal 2Wire bus (I2C) and dvb i2c initialization
  * see flexcop.c for copyright information
  */

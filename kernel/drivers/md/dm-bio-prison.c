@@ -7,10 +7,10 @@
 #include "dm.h"
 #include "dm-bio-prison.h"
 
-#include <linux/spinlock.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/spinlock.h>
+#include <beep/mempool.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 /*----------------------------------------------------------------*/
 

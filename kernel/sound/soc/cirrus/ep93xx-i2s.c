@@ -1,5 +1,5 @@
 /*
- * linux/sound/soc/ep93xx-i2s.c
+ * beep/sound/soc/ep93xx-i2s.c
  * EP93xx I2S driver
  *
  * Copyright (C) 2010 Ryan Mallon
@@ -14,11 +14,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
+#include <beep/io.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>
@@ -28,7 +28,7 @@
 
 #include <mach/hardware.h>
 #include <mach/ep93xx-regs.h>
-#include <linux/platform_data/dma-ep93xx.h>
+#include <beep/platform_data/dma-ep93xx.h>
 
 #include "ep93xx-pcm.h"
 

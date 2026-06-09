@@ -12,7 +12,7 @@
 #ifndef _ASM_POWERPC_PPC_OPCODE_H
 #define _ASM_POWERPC_PPC_OPCODE_H
 
-#include <linux/stringify.h>
+#include <beep/stringify.h>
 #include <asm/asm-compat.h>
 
 #define	__REG_R0	0

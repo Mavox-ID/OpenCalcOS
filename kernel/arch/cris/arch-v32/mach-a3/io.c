@@ -4,13 +4,13 @@
  * Copyright (c) 2005-2007 Axis Communications AB.
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 #include <asm/io.h>
 #include <mach/pinmux.h>
 #include <hwregs/gio_defs.h>

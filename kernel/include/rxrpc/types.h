@@ -9,15 +9,15 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#ifndef _LINUX_RXRPC_TYPES_H
-#define _LINUX_RXRPC_TYPES_H
+#ifndef _BEEP_RXRPC_TYPES_H
+#define _BEEP_RXRPC_TYPES_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/spinlock.h>
+#include <beep/atomic.h>
 
 typedef uint32_t	rxrpc_seq_t;	/* Rx message sequence number */
 typedef uint32_t	rxrpc_serial_t;	/* Rx message serial number */
@@ -38,4 +38,4 @@ typedef void (*rxrpc_call_attn_func_t)(struct rxrpc_call *call);
 typedef void (*rxrpc_call_error_func_t)(struct rxrpc_call *call);
 typedef void (*rxrpc_call_aemap_func_t)(struct rxrpc_call *call);
 
-#endif /* _LINUX_RXRPC_TYPES_H */
+#endif /* _BEEP_RXRPC_TYPES_H */

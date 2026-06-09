@@ -17,10 +17,10 @@
 
 struct ipu_soc;
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
+#include <beep/types.h>
+#include <beep/device.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
 
 #include "imx-ipu-v3.h"
 

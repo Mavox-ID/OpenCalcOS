@@ -18,18 +18,18 @@
  * Author: Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/clocksource.h>
-#include <linux/elf.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/timekeeper_internal.h>
-#include <linux/vmalloc.h>
+#include <beep/kernel.h>
+#include <beep/clocksource.h>
+#include <beep/elf.h>
+#include <beep/err.h>
+#include <beep/errno.h>
+#include <beep/gfp.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
+#include <beep/slab.h>
+#include <beep/timekeeper_internal.h>
+#include <beep/vmalloc.h>
 
 #include <asm/cacheflush.h>
 #include <asm/signal32.h>
@@ -81,7 +81,7 @@ static int alloc_vectors_page(void)
 }
 arch_initcall(alloc_vectors_page);
 
-int aarch32_setup_vectors_page(struct linux_binprm *bprm, int uses_interp)
+int aarch32_setup_vectors_page(struct beep_binprm *bprm, int uses_interp)
 {
 	struct mm_struct *mm = current->mm;
 	unsigned long addr = AARCH32_VECTORS_BASE;
@@ -149,7 +149,7 @@ unmap:
 }
 arch_initcall(vdso_init);
 
-int arch_setup_additional_pages(struct linux_binprm *bprm,
+int arch_setup_additional_pages(struct beep_binprm *bprm,
 				int uses_interp)
 {
 	struct mm_struct *mm = current->mm;
@@ -203,7 +203,7 @@ const char *arch_vma_name(struct vm_area_struct *vma)
 
 /*
  * We define AT_SYSINFO_EHDR, so we need these function stubs to keep
- * Linux happy.
+ * Beep happy.
  */
 int in_gate_area_no_mm(unsigned long addr)
 {

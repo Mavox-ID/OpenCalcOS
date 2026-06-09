@@ -6,7 +6,7 @@
     Copyright (C) 2000, 2003 Brent Baccala <baccala@freesoft.org>
     The DAQP interface code in this file is released into the public domain.
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1998 David A. Schleef <ds@schleef.org>
     http://www.comedi.org/
 
@@ -50,13 +50,13 @@ Devices: [Quatech] DAQP-208 (daqp), DAQP-308
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include "../comedidev.h"
-#include <linux/semaphore.h>
+#include <beep/semaphore.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/cisreg.h>
 #include <pcmcia/ds.h>
 
-#include <linux/completion.h>
+#include <beep/completion.h>
 
 #include "comedi_fc.h"
 
@@ -894,7 +894,7 @@ static void daqp_detach(struct comedi_device *dev)
     PCMCIA interface code
 
     The rest of the code in this file is based on dummy_cs.c v1.24
-    from the Linux pcmcia_cs distribution v3.1.8 and is subject
+    from the Beep pcmcia_cs distribution v3.1.8 and is subject
     to the following license agreement.
 
     The remaining contents of this file are subject to the Mozilla Public

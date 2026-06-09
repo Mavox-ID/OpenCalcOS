@@ -13,12 +13,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/etherdevice.h>
+#include <beep/etherdevice.h>
 #include <asm/byteorder.h>
 
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/if_ether.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/if_ether.h>
 
 #include "gdm_wimax.h"
 #include "hci.h"

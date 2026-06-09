@@ -39,23 +39,23 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/hrtimer.h>
-#include <linux/list.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/uio.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/socket.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/can.h>
-#include <linux/can/core.h>
-#include <linux/can/bcm.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/hrtimer.h>
+#include <beep/list.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/uio.h>
+#include <beep/net.h>
+#include <beep/netdevice.h>
+#include <beep/socket.h>
+#include <beep/if_arp.h>
+#include <beep/skbuff.h>
+#include <beep/can.h>
+#include <beep/can/core.h>
+#include <beep/can/bcm.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 #include <net/net_namespace.h>
 

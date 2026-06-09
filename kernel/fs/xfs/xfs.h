@@ -24,6 +24,6 @@
 #define XFS_BUF_LOCK_TRACKING 1
 #endif
 
-#include "xfs_linux.h"
+#include "xfs_beep.h"
 
 #endif	/* __XFS_H__ */

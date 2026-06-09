@@ -8,8 +8,8 @@
  * published by the Free Software Foundation.
  */
 
-#ifndef _LINUX_VIDEO_AUO_K190XFB_H_
-#define _LINUX_VIDEO_AUO_K190XFB_H_
+#ifndef _BEEP_VIDEO_AUO_K190XFB_H_
+#define _BEEP_VIDEO_AUO_K190XFB_H_
 
 /* Controller standby command needs a param */
 #define AUOK190X_QUIRK_STANDBYPARAM	(1 << 0)

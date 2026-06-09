@@ -24,14 +24,14 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/console.h>
-#include <linux/bootmem.h>
-#include <linux/ioport.h>
-#include <linux/blkdev.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/console.h>
+#include <beep/bootmem.h>
+#include <beep/ioport.h>
+#include <beep/blkdev.h>
 
 #include <asm/bootinfo.h>
 #include <asm/mach-rc32434/ddr.h>

@@ -12,13 +12,13 @@
  * License.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/err.h>
-#include <linux/kref.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/err.h>
+#include <beep/kref.h>
 
 #include "include/apparmor.h"
 #include "include/match.h"

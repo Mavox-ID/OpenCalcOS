@@ -16,12 +16,12 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/gpio.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/platform_data/gpio-omap.h>
+#include <beep/gpio.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/of.h>
+#include <beep/platform_data/gpio-omap.h>
 
 #include "omap_hwmod.h"
 #include "omap_device.h"

@@ -1,5 +1,5 @@
 /*
- * linux/sound/soc/pxa/mmp-sspa.h
+ * beep/sound/soc/pxa/mmp-sspa.h
  *
  * Copyright (C) 2011 Marvell International Ltd.
  *

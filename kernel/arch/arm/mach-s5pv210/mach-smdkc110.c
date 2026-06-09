@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5pv210/mach-smdkc110.c
+/* beep/arch/arm/mach-s5pv210/mach-smdkc110.c
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/
@@ -8,12 +8,12 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/i2c.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/serial_core.h>
+#include <beep/i2c.h>
+#include <beep/device.h>
 
 #include <asm/hardware/vic.h>
 #include <asm/mach/arch.h>
@@ -27,8 +27,8 @@
 #include <plat/regs-serial.h>
 #include <plat/devs.h>
 #include <plat/cpu.h>
-#include <linux/platform_data/ata-samsung_cf.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/ata-samsung_cf.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 #include <plat/pm.h>
 #include <plat/s5p-time.h>
 #include <plat/mfc.h>

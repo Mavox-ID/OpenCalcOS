@@ -3,7 +3,7 @@
  * Utility routines.
  *
  * Copyright (C) 2008 Rob Landley <rob@landley.net>
- * Copyright (C) 2008 Denys Vlasenko <vda.linux@googlemail.com>
+ * Copyright (C) 2008 Denys Vlasenko <vda.beep@googlemail.com>
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
@@ -65,21 +65,21 @@ int64_t FAST_FUNC read_key(int fd, char *buffer, int timeout)
 		'[','F'        |0x80,KEYCODE_END     , /* xterm */
 		/* [ESC] ESC [ [2] H - [Alt-][Shift-]Home (End similarly?) */
 		/* '[','Z'        |0x80,KEYCODE_SHIFT_TAB, */
-		'[','1','~'    |0x80,KEYCODE_HOME    , /* vt100? linux vt? or what? */
+		'[','1','~'    |0x80,KEYCODE_HOME    , /* vt100? beep vt? or what? */
 		'[','2','~'    |0x80,KEYCODE_INSERT  ,
 		/* ESC [ 2 ; 3 ~ - Alt-Insert */
 		'[','3','~'    |0x80,KEYCODE_DELETE  ,
 		/* [ESC] ESC [ 3 [;2] ~ - [Alt-][Shift-]Delete */
 		/* ESC [ 3 ; 3 ~ - Alt-Delete */
 		/* ESC [ 3 ; 5 ~ - Ctrl-Delete */
-		'[','4','~'    |0x80,KEYCODE_END     , /* vt100? linux vt? or what? */
+		'[','4','~'    |0x80,KEYCODE_END     , /* vt100? beep vt? or what? */
 		'[','5','~'    |0x80,KEYCODE_PAGEUP  ,
 		/* ESC [ 5 ; 3 ~ - Alt-PgUp */
 		/* ESC [ 5 ; 5 ~ - Ctrl-PgUp */
 		/* ESC [ 5 ; 7 ~ - Ctrl-Alt-PgUp */
 		'[','6','~'    |0x80,KEYCODE_PAGEDOWN,
-		'[','7','~'    |0x80,KEYCODE_HOME    , /* vt100? linux vt? or what? */
-		'[','8','~'    |0x80,KEYCODE_END     , /* vt100? linux vt? or what? */
+		'[','7','~'    |0x80,KEYCODE_HOME    , /* vt100? beep vt? or what? */
+		'[','8','~'    |0x80,KEYCODE_END     , /* vt100? beep vt? or what? */
 #if 0
 		'[','1','1','~'|0x80,KEYCODE_FUN1    , /* old xterm, deprecated by ESC O P */
 		'[','1','2','~'|0x80,KEYCODE_FUN2    , /* old xterm... */

@@ -6,8 +6,8 @@
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  */
-#ifndef __LINUX_USB_SERIAL_OTI6858_H
-#define __LINUX_USB_SERIAL_OTI6858_H
+#ifndef __BEEP_USB_SERIAL_OTI6858_H
+#define __BEEP_USB_SERIAL_OTI6858_H
 
 #define OTI6858_VENDOR_ID	0x0ea0
 #define OTI6858_PRODUCT_ID	0x6858

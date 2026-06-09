@@ -1,8 +1,8 @@
-#include <linux/module.h>
-#include <linux/sock_diag.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/packet_diag.h>
+#include <beep/module.h>
+#include <beep/sock_diag.h>
+#include <beep/net.h>
+#include <beep/netdevice.h>
+#include <beep/packet_diag.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 

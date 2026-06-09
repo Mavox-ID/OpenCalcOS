@@ -7,10 +7,10 @@
  * @author Richard Henderson <rth@twiddle.net>
  */
 
-#include <linux/oprofile.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
+#include <beep/oprofile.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/errno.h>
 #include <asm/ptrace.h>
 #include <asm/special_insns.h>
 

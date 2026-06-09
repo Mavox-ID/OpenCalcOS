@@ -6,7 +6,7 @@
  *
  * (c) Copyright 2010-2012 RisingTide Systems LLC.
  *
- * Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Nicholas A. Bellinger <nab@beep-iscsi.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,11 +24,11 @@
  *
  ******************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/spinlock.h>
+#include <beep/export.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 

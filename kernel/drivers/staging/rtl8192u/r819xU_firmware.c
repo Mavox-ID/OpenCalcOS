@@ -16,7 +16,7 @@
 #include "r8192U_hw.h"
 #include "r819xU_firmware_img.h"
 #include "r819xU_firmware.h"
-#include <linux/firmware.h>
+#include <beep/firmware.h>
 void firmware_init_param(struct net_device *dev)
 {
 	struct r8192_priv 	*priv = ieee80211_priv(dev);

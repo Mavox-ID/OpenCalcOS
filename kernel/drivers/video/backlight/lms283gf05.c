@@ -8,16 +8,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/lcd.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/gpio.h>
+#include <beep/lcd.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/lms283gf05.h>
-#include <linux/module.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/lms283gf05.h>
+#include <beep/module.h>
 
 struct lms283gf05_state {
 	struct spi_device	*spi;

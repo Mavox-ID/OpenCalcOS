@@ -9,11 +9,11 @@
  * any later version.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pfkeyv2.h>
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/pfkeyv2.h>
+#include <beep/crypto.h>
+#include <beep/scatterlist.h>
 #include <net/xfrm.h>
 #if defined(CONFIG_INET_ESP) || defined(CONFIG_INET_ESP_MODULE) || defined(CONFIG_INET6_ESP) || defined(CONFIG_INET6_ESP_MODULE)
 #include <net/esp.h>

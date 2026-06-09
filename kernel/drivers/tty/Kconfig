@@ -28,7 +28,7 @@ config VT
 	  or network connection.
 
 	  If unsure, say Y, or else you won't be able to do much with your new
-	  shiny Linux system :-)
+	  shiny Beep system :-)
 
 config CONSOLE_TRANSLATIONS
 	depends on VT
@@ -97,7 +97,7 @@ config UNIX98_PTYS
 	  terminal. Typical programs for the master side are telnet servers
 	  and xterms.
 
-	  Linux has traditionally used the BSD-like names /dev/ptyxx for
+	  Beep has traditionally used the BSD-like names /dev/ptyxx for
 	  masters and /dev/ttyxx for slaves of pseudo terminals. This scheme
 	  has a number of problems. The GNU C library glibc 2.1 and later,
 	  however, supports the Unix98 naming standard: in order to acquire a
@@ -106,7 +106,7 @@ config UNIX98_PTYS
 	  terminal slave can be accessed as /dev/pts/<number>. What was
 	  traditionally /dev/ttyp2 will then be /dev/pts/2, for example.
 
-	  All modern Linux systems use the Unix98 ptys.  Say Y unless
+	  All modern Beep systems use the Unix98 ptys.  Say Y unless
 	  you're on an embedded system and want to conserve memory.
 
 config DEVPTS_MULTIPLE_INSTANCES
@@ -131,7 +131,7 @@ config LEGACY_PTYS
 	  terminal. Typical programs for the master side are telnet servers
 	  and xterms.
 
-	  Linux has traditionally used the BSD-like names /dev/ptyxx
+	  Beep has traditionally used the BSD-like names /dev/ptyxx
 	  for masters and /dev/ttyxx for slaves of pseudo
 	  terminals. This scheme has a number of problems, including
 	  security.  This option enables these legacy devices; on most
@@ -203,7 +203,7 @@ config CYCLADES
 	---help---
 	  This driver supports Cyclades Z and Y multiserial boards.
 	  You would need something like this to connect more than two modems to
-	  your Linux box, for instance in order to become a dial-in server.
+	  your Beep box, for instance in order to become a dial-in server.
 
 	  For information about the Cyclades-Z card, read
 	  <file:Documentation/serial/README.cycladesZ>.
@@ -327,7 +327,7 @@ config TRACE_ROUTER
 	depends on TRACE_SINK
 	default n
 	help
-	  The trace router uses the Linux tty line discipline framework to
+	  The trace router uses the Beep tty line discipline framework to
 	  route trace data coming from a tty port (say UART for example) to
 	  the trace sink line discipline driver and to another tty port (say
 	  USB). This is part of a solution for the MIPI P1149.7, compact JTAG,
@@ -343,7 +343,7 @@ config TRACE_SINK
 	tristate "Trace data sink for MIPI P1149.7 cJTAG standard"
 	default n
 	help
-	  The trace sink uses the Linux line discipline framework to receive
+	  The trace sink uses the Beep line discipline framework to receive
 	  trace data coming from the trace router line discipline driver
 	  to a user-defined tty port target, like USB.
 	  This is to provide a way to extract modem trace data on

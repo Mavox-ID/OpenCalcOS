@@ -1,5 +1,5 @@
 /*
- * Transparent proxy support for Linux/iptables
+ * Transparent proxy support for Beep/iptables
  *
  * Copyright (c) 2006-2010 BalaBit IT Ltd.
  * Author: Balazs Scheidler, Krisztian Kovacs
@@ -10,15 +10,15 @@
  *
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/ip.h>
 #include <net/checksum.h>
 #include <net/udp.h>
 #include <net/inet_sock.h>
-#include <linux/inetdevice.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
+#include <beep/inetdevice.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_ipv4/ip_tables.h>
 
 #include <net/netfilter/ipv4/nf_defrag_ipv4.h>
 
@@ -26,12 +26,12 @@
 #define XT_TPROXY_HAVE_IPV6 1
 #include <net/if_inet6.h>
 #include <net/addrconf.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <beep/netfilter_ipv6/ip6_tables.h>
 #include <net/netfilter/ipv6/nf_defrag_ipv6.h>
 #endif
 
 #include <net/netfilter/nf_tproxy_core.h>
-#include <linux/netfilter/xt_TPROXY.h>
+#include <beep/netfilter/xt_TPROXY.h>
 
 static bool tproxy_sk_is_transparent(struct sock *sk)
 {

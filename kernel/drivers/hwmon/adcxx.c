@@ -34,18 +34,18 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/sysfs.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/mutex.h>
-#include <linux/mod_devicetable.h>
-#include <linux/spi/spi.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/sysfs.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/mutex.h>
+#include <beep/mod_devicetable.h>
+#include <beep/spi/spi.h>
 
 #define DRVNAME		"adcxx"
 
@@ -246,5 +246,5 @@ static struct spi_driver adcxx_driver = {
 module_spi_driver(adcxx_driver);
 
 MODULE_AUTHOR("Marc Pignat");
-MODULE_DESCRIPTION("National Semiconductor adcxx8sxxx Linux driver");
+MODULE_DESCRIPTION("National Semiconductor adcxx8sxxx Beep driver");
 MODULE_LICENSE("GPL");

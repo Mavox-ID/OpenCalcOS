@@ -1,4 +1,4 @@
-/* generic HDLC line discipline for Linux
+/* generic HDLC line discipline for Beep
  *
  * Written by Paul Fulghum paulkf@microgate.com
  * for Microgate Corporation
@@ -79,28 +79,28 @@
 
 #define HDLC_MAGIC 0x239e
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/ptrace.h>
 
 #undef VERSION
 #define VERSION(major,minor,patch) (((((major)<<8)+(minor))<<8)+(patch))
 
-#include <linux/poll.h>
-#include <linux/in.h>
-#include <linux/ioctl.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/string.h>	/* used in new tty drivers */
-#include <linux/signal.h>	/* used in new tty drivers */
-#include <linux/if.h>
-#include <linux/bitops.h>
+#include <beep/poll.h>
+#include <beep/in.h>
+#include <beep/ioctl.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/errno.h>
+#include <beep/string.h>	/* used in new tty drivers */
+#include <beep/signal.h>	/* used in new tty drivers */
+#include <beep/if.h>
+#include <beep/bitops.h>
 
 #include <asm/termios.h>
 #include <asm/uaccess.h>

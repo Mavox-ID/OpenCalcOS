@@ -4,13 +4,13 @@
  * Copyright (C) 2003, Axis Communications AB.
  */
 
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/delay.h>
-#include <linux/param.h>
+#include <beep/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/delay.h>
+#include <beep/param.h>
 
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/platform_device.h>
 
 #ifdef CONFIG_PROC_FS
 
@@ -114,10 +114,10 @@ int show_cpuinfo(struct seq_file *m, void *v)
 void show_etrax_copyright(void)
 {
 #ifdef CONFIG_ETRAXFS
-	printk(KERN_INFO "Linux/CRISv32 port on ETRAX FS "
+	printk(KERN_INFO "Beep/CRISv32 port on ETRAX FS "
 		"(C) 2003, 2004 Axis Communications AB\n");
 #else
-	printk(KERN_INFO "Linux/CRISv32 port on ARTPEC-3 "
+	printk(KERN_INFO "Beep/CRISv32 port on ARTPEC-3 "
 		"(C) 2003-2009 Axis Communications AB\n");
 #endif
 }

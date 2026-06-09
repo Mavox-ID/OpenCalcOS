@@ -8,8 +8,8 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/module.h>
-#include <linux/mtd/nand.h>
+#include <beep/module.h>
+#include <beep/mtd/nand.h>
 /*
 *	Chip ID list
 *

@@ -20,9 +20,9 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/irqflags.h>
+#include <beep/compiler.h>
+#include <beep/linkage.h>
+#include <beep/irqflags.h>
 
 struct pt_regs;
 

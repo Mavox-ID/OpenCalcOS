@@ -12,7 +12,7 @@
  *  authors:
  *  Copyright (c) 2003 Nils-Erik Mattsson, Joacim Haggmark, Magnus Erixzon
  *
- *  Changes to meet Linux coding standards, to make it meet latest ccid3 draft
+ *  Changes to meet Beep coding standards, to make it meet latest ccid3 draft
  *  and to make it work as a loadable module in the DCCP stack written by
  *  Arnaldo Carvalho de Melo <acme@conectiva.com.br>.
  *
@@ -33,8 +33,8 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 #include "packet_history.h"
 #include "../../dccp.h"
 

@@ -22,11 +22,11 @@
  *                                Amagai Yoshiji <amagai@osrg.net>.
  */
 
-#include <linux/types.h>
-#include <linux/buffer_head.h>
-#include <linux/fs.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/buffer_head.h>
+#include <beep/fs.h>
+#include <beep/bitops.h>
+#include <beep/slab.h>
 #include "mdt.h"
 #include "alloc.h"
 

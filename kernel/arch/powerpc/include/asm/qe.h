@@ -16,9 +16,9 @@
 #define _ASM_POWERPC_QE_H
 #ifdef __KERNEL__
 
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/err.h>
+#include <beep/spinlock.h>
+#include <beep/errno.h>
+#include <beep/err.h>
 #include <asm/cpm.h>
 #include <asm/immap_qe.h>
 

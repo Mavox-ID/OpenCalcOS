@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/armksyms.c
+ *  beep/arch/arm/kernel/armksyms.c
  *
  *  Copyright (C) 2000 Russell King
  *
@@ -7,15 +7,15 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/cryptohash.h>
-#include <linux/delay.h>
-#include <linux/in6.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/cryptohash.h>
+#include <beep/delay.h>
+#include <beep/in6.h>
+#include <beep/syscalls.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
 
 #include <asm/checksum.h>
 #include <asm/ftrace.h>

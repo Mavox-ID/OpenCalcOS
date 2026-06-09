@@ -4,22 +4,22 @@
  *  Copyright (C) 1999  Tetsuya Okada & Niibe Yutaka
  *  Copyright (C) 2000  Philipp Rumpf <prumpf@tux.org>
  *  Copyright (C) 2002 - 2009  Paul Mundt
- *  Copyright (C) 2002  M. R. Brown  <mrbrown@linux-sh.org>
+ *  Copyright (C) 2002  M. R. Brown  <mrbrown@beep-sh.org>
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/profile.h>
-#include <linux/timex.h>
-#include <linux/sched.h>
-#include <linux/clockchips.h>
-#include <linux/platform_device.h>
-#include <linux/smp.h>
-#include <linux/rtc.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/profile.h>
+#include <beep/timex.h>
+#include <beep/sched.h>
+#include <beep/clockchips.h>
+#include <beep/platform_device.h>
+#include <beep/smp.h>
+#include <beep/rtc.h>
 #include <asm/clock.h>
 #include <asm/rtc.h>
 

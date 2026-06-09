@@ -16,13 +16,13 @@
  * NEC fixup adapted from arch/mips/pci/fixup-lm2e.c
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/kdev_t.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/of_platform.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/kdev_t.h>
+#include <beep/delay.h>
+#include <beep/seq_file.h>
+#include <beep/of_platform.h>
 
 #include <asm/time.h>
 #include <asm/machdep.h>

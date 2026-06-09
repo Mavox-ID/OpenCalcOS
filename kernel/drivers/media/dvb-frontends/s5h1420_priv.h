@@ -4,7 +4,7 @@
  *    PnpNetwork PN1010 QPSK Demodulator
  *
  * Copyright (C) 2005 Andrew de Quincey <adq_dvb@lidskialf.net>
- * Copyright (C) 2005 Patrick Boettcher <pb@linuxtv.org>
+ * Copyright (C) 2005 Patrick Boettcher <pb@beeptv.org>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the Free

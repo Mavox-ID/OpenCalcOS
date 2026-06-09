@@ -18,8 +18,8 @@
 #ifndef MSM_IOMMU_H
 #define MSM_IOMMU_H
 
-#include <linux/interrupt.h>
-#include <linux/clk.h>
+#include <beep/interrupt.h>
+#include <beep/clk.h>
 
 /* Sharability attributes of MSM IOMMU mappings */
 #define MSM_IOMMU_ATTR_NON_SH		0x0

@@ -1,5 +1,5 @@
 /*
- * linux/kernel/dma.c: A DMA channel allocator. Inspired by linux/kernel/irq.c.
+ * beep/kernel/dma.c: A DMA channel allocator. Inspired by beep/kernel/irq.c.
  *
  * Written by Hennus Bergman, 1992.
  *
@@ -9,14 +9,14 @@
  *   [It also happened to remove the sizeof(char *) == sizeof(int)
  *   assumption introduced because of those /proc/dma patches. -- Hennus]
  */
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
 #include <asm/dma.h>
 
 

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/x86_64/kernel/head.S -- start in 32bit and switch to 64bit
+ *  beep/arch/x86_64/kernel/head.S -- start in 32bit and switch to 64bit
  *
  *  Copyright (C) 2000 Andrea Arcangeli <andrea@suse.de> SuSE
  *  Copyright (C) 2000 Pavel Machek <pavel@suse.cz>
@@ -9,9 +9,9 @@
  */
 
 
-#include <linux/linkage.h>
-#include <linux/threads.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/threads.h>
+#include <beep/init.h>
 #include <asm/segment.h>
 #include <asm/pgtable.h>
 #include <asm/page.h>

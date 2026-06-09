@@ -1,11 +1,11 @@
 /*
- * Copyright (C) 2003 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2003 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Copyright 2003 PathScale, Inc.
  *
  * Licensed under the GPL
  */
 
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include <asm/prctl.h> /* XXX This should get the constants from libc */
 #include <os.h>
 

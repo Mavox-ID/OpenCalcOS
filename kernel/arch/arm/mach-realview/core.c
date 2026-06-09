@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-realview/core.c
+ *  beep/arch/arm/mach-realview/core.c
  *
  *  Copyright (C) 1999 - 2003 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd
@@ -18,19 +18,19 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/clcd.h>
-#include <linux/io.h>
-#include <linux/smsc911x.h>
-#include <linux/ata_platform.h>
-#include <linux/amba/mmci.h>
-#include <linux/gfp.h>
-#include <linux/mtd/physmap.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/clcd.h>
+#include <beep/io.h>
+#include <beep/smsc911x.h>
+#include <beep/ata_platform.h>
+#include <beep/amba/mmci.h>
+#include <beep/gfp.h>
+#include <beep/mtd/physmap.h>
 
 #include <mach/hardware.h>
 #include <asm/irq.h>

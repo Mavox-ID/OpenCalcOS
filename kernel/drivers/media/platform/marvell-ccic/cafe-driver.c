@@ -17,21 +17,21 @@
  * This file may be distributed under the terms of the GNU General
  * Public License, version 2.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-chip-ident.h>
-#include <linux/device.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <beep/device.h>
+#include <beep/wait.h>
+#include <beep/delay.h>
+#include <beep/io.h>
 
 #include "mcam-core.h"
 
@@ -86,7 +86,7 @@ struct cafe_camera {
 #define	  TWSIC0_SID	  0x000003fc	/* Slave ID */
 /*
  * Subtle trickery: the slave ID field starts with bit 2.  But the
- * Linux i2c stack wants to treat the bottommost bit as a separate
+ * Beep i2c stack wants to treat the bottommost bit as a separate
  * read/write bit, which is why slave ID's are usually presented
  * >>1.  For consistency with that behavior, we shift over three
  * bits instead of two.

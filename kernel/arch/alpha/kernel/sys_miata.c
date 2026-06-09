@@ -1,5 +1,5 @@
 /*
- *	linux/arch/alpha/kernel/sys_miata.c
+ *	beep/arch/alpha/kernel/sys_miata.c
  *
  *	Copyright (C) 1995 David A Rusling
  *	Copyright (C) 1996 Jay A Estabrook
@@ -8,13 +8,13 @@
  * Code supporting the MIATA (EV56+PYXIS).
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/reboot.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/reboot.h>
 
 #include <asm/ptrace.h>
 #include <asm/dma.h>
@@ -245,16 +245,16 @@ miata_kill_arch(int mode)
 
 #ifndef ALPHA_RESTORE_SRM_SETUP
 	switch(mode) {
-	case LINUX_REBOOT_CMD_RESTART:
+	case BEEP_REBOOT_CMD_RESTART:
 		/* Who said DEC engineers have no sense of humor? ;-)  */ 
 		if (alpha_using_srm) {
 			*(vuip) PYXIS_RESET = 0x0000dead; 
 			mb(); 
 		}
 		break;
-	case LINUX_REBOOT_CMD_HALT:
+	case BEEP_REBOOT_CMD_HALT:
 		break;
-	case LINUX_REBOOT_CMD_POWER_OFF:
+	case BEEP_REBOOT_CMD_POWER_OFF:
 		break;
 	}
 

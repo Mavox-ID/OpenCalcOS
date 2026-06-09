@@ -1,5 +1,5 @@
 /*
- *  linux/mm/vmscan.c
+ *  beep/mm/vmscan.c
  *
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  *
@@ -11,42 +11,42 @@
  *  Multiqueue VM started 5.8.00, Rik van Riel.
  */
 
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/kernel_stat.h>
-#include <linux/swap.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/vmstat.h>
-#include <linux/file.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>	/* for try_to_release_page(),
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
+#include <beep/kernel_stat.h>
+#include <beep/swap.h>
+#include <beep/pagemap.h>
+#include <beep/init.h>
+#include <beep/highmem.h>
+#include <beep/vmstat.h>
+#include <beep/file.h>
+#include <beep/writeback.h>
+#include <beep/blkdev.h>
+#include <beep/buffer_head.h>	/* for try_to_release_page(),
 					buffer_heads_over_limit */
-#include <linux/mm_inline.h>
-#include <linux/backing-dev.h>
-#include <linux/rmap.h>
-#include <linux/topology.h>
-#include <linux/cpu.h>
-#include <linux/cpuset.h>
-#include <linux/compaction.h>
-#include <linux/notifier.h>
-#include <linux/rwsem.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/memcontrol.h>
-#include <linux/delayacct.h>
-#include <linux/sysctl.h>
-#include <linux/oom.h>
-#include <linux/prefetch.h>
+#include <beep/mm_inline.h>
+#include <beep/backing-dev.h>
+#include <beep/rmap.h>
+#include <beep/topology.h>
+#include <beep/cpu.h>
+#include <beep/cpuset.h>
+#include <beep/compaction.h>
+#include <beep/notifier.h>
+#include <beep/rwsem.h>
+#include <beep/delay.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
+#include <beep/memcontrol.h>
+#include <beep/delayacct.h>
+#include <beep/sysctl.h>
+#include <beep/oom.h>
+#include <beep/prefetch.h>
 
 #include <asm/tlbflush.h>
 #include <asm/div64.h>
 
-#include <linux/swapops.h>
+#include <beep/swapops.h>
 
 #include "internal.h"
 
@@ -3480,7 +3480,7 @@ static void warn_scan_unevictable_pages(void)
 	printk_once(KERN_WARNING
 		    "%s: The scan_unevictable_pages sysctl/node-interface has been "
 		    "disabled for lack of a legitimate use case.  If you have "
-		    "one, please send an email to linux-mm@kvack.org.\n",
+		    "one, please send an email to beep-mm@kvack.org.\n",
 		    current->comm);
 }
 

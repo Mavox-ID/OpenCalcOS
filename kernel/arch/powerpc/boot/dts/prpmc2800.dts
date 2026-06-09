@@ -297,6 +297,6 @@
 
 	chosen {
 		bootargs = "ip=on";
-		linux,stdout-path = &MPSC0;
+		beep,stdout-path = &MPSC0;
 	};
 };

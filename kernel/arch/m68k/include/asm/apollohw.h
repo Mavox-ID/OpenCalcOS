@@ -3,7 +3,7 @@
 #ifndef _ASMm68k_APOLLOHW_H_
 #define _ASMm68k_APOLLOHW_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
    apollo models

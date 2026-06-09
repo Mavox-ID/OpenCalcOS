@@ -11,10 +11,10 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mfd/max8998-private.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/mfd/max8998-private.h>
 
 struct max8998_irq_data {
 	int reg;

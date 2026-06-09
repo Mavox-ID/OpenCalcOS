@@ -1,5 +1,5 @@
 /*
- *	linux/arch/alpha/kernel/irq.c
+ *	beep/arch/alpha/kernel/irq.c
  *
  *	Copyright (C) 1995 Linus Torvalds
  *
@@ -10,21 +10,21 @@
  * should be easier.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel_stat.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/interrupt.h>
-#include <linux/random.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/profile.h>
-#include <linux/bitops.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/kernel_stat.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/ptrace.h>
+#include <beep/interrupt.h>
+#include <beep/random.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/profile.h>
+#include <beep/bitops.h>
 
 #include <asm/io.h>
 #include <asm/uaccess.h>

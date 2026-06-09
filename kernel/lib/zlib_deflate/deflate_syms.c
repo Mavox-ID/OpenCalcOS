@@ -1,14 +1,14 @@
 /*
- * linux/lib/zlib_deflate/deflate_syms.c
+ * beep/lib/zlib_deflate/deflate_syms.c
  *
  * Exported symbols for the deflate functionality.
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
-#include <linux/zlib.h>
+#include <beep/zlib.h>
 
 EXPORT_SYMBOL(zlib_deflate_workspacesize);
 EXPORT_SYMBOL(zlib_deflate);

@@ -11,8 +11,8 @@
  * Create static mapping between physical to virtual memory.
  */
 
-#include <linux/mm.h>
-#include <linux/init.h>
+#include <beep/mm.h>
+#include <beep/init.h>
 
 #include <asm/mach/map.h>
 

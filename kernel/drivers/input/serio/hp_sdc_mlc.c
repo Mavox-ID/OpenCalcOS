@@ -33,14 +33,14 @@
  *
  */
 
-#include <linux/hil_mlc.h>
-#include <linux/hp_sdc.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/semaphore.h>
+#include <beep/hil_mlc.h>
+#include <beep/hp_sdc.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/semaphore.h>
 
 #define PREFIX "HP SDC MLC: "
 

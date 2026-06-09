@@ -16,9 +16,9 @@
 #ifndef __ASM_SYSCALLS_H
 #define __ASM_SYSCALLS_H
 
-#include <linux/linkage.h>
-#include <linux/compiler.h>
-#include <linux/signal.h>
+#include <beep/linkage.h>
+#include <beep/compiler.h>
+#include <beep/signal.h>
 
 /*
  * System call wrappers implemented in kernel/entry.S.

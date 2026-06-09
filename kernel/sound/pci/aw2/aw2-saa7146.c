@@ -23,10 +23,10 @@
 
 #define AW2_SAA7146_M
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
 #include <asm/io.h>
 #include <sound/core.h>
 #include <sound/initval.h>

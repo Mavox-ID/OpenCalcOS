@@ -20,9 +20,9 @@
 #ifndef __AR7_H__
 #define __AR7_H__
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/errno.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/errno.h>
 
 #include <asm/addrspace.h>
 

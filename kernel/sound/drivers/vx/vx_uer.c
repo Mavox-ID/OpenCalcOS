@@ -20,7 +20,7 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include <sound/core.h>
 #include <sound/vx_core.h>
 #include "vx_cmd.h"

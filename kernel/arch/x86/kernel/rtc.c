@@ -1,13 +1,13 @@
 /*
  * RTC related functions
  */
-#include <linux/platform_device.h>
-#include <linux/mc146818rtc.h>
-#include <linux/acpi.h>
-#include <linux/bcd.h>
-#include <linux/export.h>
-#include <linux/pnp.h>
-#include <linux/of.h>
+#include <beep/platform_device.h>
+#include <beep/mc146818rtc.h>
+#include <beep/acpi.h>
+#include <beep/bcd.h>
+#include <beep/export.h>
+#include <beep/pnp.h>
+#include <beep/of.h>
 
 #include <asm/vsyscall.h>
 #include <asm/x86_init.h>

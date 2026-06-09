@@ -10,10 +10,10 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <beep/io.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
 #include <mach-landisk/mach/iodata_landisk.h>
 #include <asm/push-switch.h>
 

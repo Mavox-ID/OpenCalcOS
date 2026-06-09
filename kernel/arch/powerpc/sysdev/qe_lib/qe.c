@@ -14,21 +14,21 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/bootmem.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/crc32.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of_platform.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/string.h>
+#include <beep/spinlock.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/bootmem.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/crc32.h>
+#include <beep/mod_devicetable.h>
+#include <beep/of_platform.h>
 #include <asm/irq.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>

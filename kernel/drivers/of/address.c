@@ -1,11 +1,11 @@
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/pci_regs.h>
-#include <linux/string.h>
+#include <beep/device.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
+#include <beep/of_address.h>
+#include <beep/pci_regs.h>
+#include <beep/string.h>
 
 /* Max address size we deal with */
 #define OF_MAX_ADDR_CELLS	4

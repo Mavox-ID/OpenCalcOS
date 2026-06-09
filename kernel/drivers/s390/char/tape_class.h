@@ -9,14 +9,14 @@
 #ifndef __TAPE_CLASS_H__
 #define __TAPE_CLASS_H__
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/major.h>
-#include <linux/cdev.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/major.h>
+#include <beep/cdev.h>
 
-#include <linux/device.h>
-#include <linux/kdev_t.h>
+#include <beep/device.h>
+#include <beep/kdev_t.h>
 
 #define TAPECLASS_NAME_LEN	32
 

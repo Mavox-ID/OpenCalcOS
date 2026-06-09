@@ -35,7 +35,7 @@
 #ifndef __MUSB_GADGET_H
 #define __MUSB_GADGET_H
 
-#include <linux/list.h>
+#include <beep/list.h>
 
 enum buffer_map_state {
 	UN_MAPPED = 0,

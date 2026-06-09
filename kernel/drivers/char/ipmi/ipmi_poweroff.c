@@ -31,15 +31,15 @@
  *  with this program; if not, write to the Free Software Foundation, Inc.,
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/proc_fs.h>
-#include <linux/string.h>
-#include <linux/completion.h>
-#include <linux/pm.h>
-#include <linux/kdev_t.h>
-#include <linux/ipmi.h>
-#include <linux/ipmi_smi.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/proc_fs.h>
+#include <beep/string.h>
+#include <beep/completion.h>
+#include <beep/pm.h>
+#include <beep/kdev_t.h>
+#include <beep/ipmi.h>
+#include <beep/ipmi_smi.h>
 
 #define PFX "IPMI poweroff: "
 
@@ -657,7 +657,7 @@ static struct ipmi_smi_watcher smi_watcher = {
 
 
 #ifdef CONFIG_PROC_FS
-#include <linux/sysctl.h>
+#include <beep/sysctl.h>
 
 static ctl_table ipmi_table[] = {
 	{ .procname	= "poweroff_powercycle",

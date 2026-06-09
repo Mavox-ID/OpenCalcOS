@@ -33,7 +33,7 @@
 #define LNBH24_TTX	0x40
 #define LNBH24_PCL	0x80
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 #if defined(CONFIG_DVB_LNBP21) || (defined(CONFIG_DVB_LNBP21_MODULE) \
 							&& defined(MODULE))

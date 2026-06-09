@@ -6,7 +6,7 @@ struct sock;
 
 #if defined(CONFIG_COMPAT)
 
-#include <linux/compat.h>
+#include <beep/compat.h>
 
 struct compat_msghdr {
 	compat_uptr_t	msg_name;	/* void * */

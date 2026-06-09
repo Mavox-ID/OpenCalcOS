@@ -6,9 +6,9 @@
  */
 #include "qla_def.h"
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
 #include <asm/uaccess.h>
 
 /*

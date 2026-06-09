@@ -10,8 +10,8 @@
 #ifndef _KEYS_TRUSTED_TYPE_H
 #define _KEYS_TRUSTED_TYPE_H
 
-#include <linux/key.h>
-#include <linux/rcupdate.h>
+#include <beep/key.h>
+#include <beep/rcupdate.h>
 
 #define MIN_KEY_SIZE			32
 #define MAX_KEY_SIZE			128

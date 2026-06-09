@@ -6,26 +6,26 @@
  * Based upon code written by Ross Biro, Linus Torvalds, Bob Manson,
  * and David Mosberger.
  *
- * Added Linux support -miguel (weird, eh?, the original code was meant
+ * Added Beep support -miguel (weird, eh?, the original code was meant
  * to emulate SunOS).
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/smp.h>
-#include <linux/security.h>
-#include <linux/seccomp.h>
-#include <linux/audit.h>
-#include <linux/signal.h>
-#include <linux/regset.h>
-#include <linux/tracehook.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/smp.h>
+#include <beep/security.h>
+#include <beep/seccomp.h>
+#include <beep/audit.h>
+#include <beep/signal.h>
+#include <beep/regset.h>
+#include <beep/tracehook.h>
 #include <trace/syscall.h>
-#include <linux/compat.h>
-#include <linux/elf.h>
+#include <beep/compat.h>
+#include <beep/elf.h>
 
 #include <asm/asi.h>
 #include <asm/pgtable.h>

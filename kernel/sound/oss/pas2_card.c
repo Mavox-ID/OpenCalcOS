@@ -4,10 +4,10 @@
  * Detection routine for the Pro Audio Spectrum cards.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
 #include "sound_config.h"
 
 #include "pas2.h"

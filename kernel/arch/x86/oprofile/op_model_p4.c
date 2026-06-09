@@ -8,9 +8,9 @@
  * @author Graydon Hoare
  */
 
-#include <linux/oprofile.h>
-#include <linux/smp.h>
-#include <linux/ptrace.h>
+#include <beep/oprofile.h>
+#include <beep/smp.h>
+#include <beep/ptrace.h>
 #include <asm/nmi.h>
 #include <asm/msr.h>
 #include <asm/fixmap.h>

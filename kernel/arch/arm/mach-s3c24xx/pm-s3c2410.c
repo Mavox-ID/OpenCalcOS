@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2410/pm.c
+/* beep/arch/arm/mach-s3c2410/pm.c
  *
  * Copyright (c) 2006 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
@@ -20,14 +20,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/device.h>
-#include <linux/syscore_ops.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/suspend.h>
+#include <beep/errno.h>
+#include <beep/time.h>
+#include <beep/device.h>
+#include <beep/syscore_ops.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 

@@ -75,16 +75,16 @@ static int convert_name_to_addr(struct perf_probe_event *pev,
 				const char *exec);
 static struct machine machine;
 
-/* Initialize symbol maps and path of vmlinux/modules */
-static int init_vmlinux(void)
+/* Initialize symbol maps and path of vmbeep/modules */
+static int init_vmbeep(void)
 {
 	int ret;
 
 	symbol_conf.sort_by_name = true;
-	if (symbol_conf.vmlinux_name == NULL)
-		symbol_conf.try_vmlinux_path = true;
+	if (symbol_conf.vmbeep_name == NULL)
+		symbol_conf.try_vmbeep_path = true;
 	else
-		pr_debug("Use vmlinux: %s\n", symbol_conf.vmlinux_name);
+		pr_debug("Use vmbeep: %s\n", symbol_conf.vmbeep_name);
 	ret = symbol__init();
 	if (ret < 0) {
 		pr_debug("Failed to init symbol map.\n");
@@ -101,7 +101,7 @@ static int init_vmlinux(void)
 	}
 out:
 	if (ret < 0)
-		pr_warning("Failed to init vmlinux path.\n");
+		pr_warning("Failed to init vmbeep path.\n");
 	return ret;
 }
 
@@ -138,7 +138,7 @@ static struct dso *kernel_get_module_dso(const char *module)
 {
 	struct dso *dso;
 	struct map *map;
-	const char *vmlinux_name;
+	const char *vmbeep_name;
 
 	if (module) {
 		list_for_each_entry(dso, &machine.kernel_dsos, node) {
@@ -150,15 +150,15 @@ static struct dso *kernel_get_module_dso(const char *module)
 		return NULL;
 	}
 
-	map = machine.vmlinux_maps[MAP__FUNCTION];
+	map = machine.vmbeep_maps[MAP__FUNCTION];
 	dso = map->dso;
 
-	vmlinux_name = symbol_conf.vmlinux_name;
-	if (vmlinux_name) {
-		if (dso__load_vmlinux(dso, map, vmlinux_name, NULL) <= 0)
+	vmbeep_name = symbol_conf.vmbeep_name;
+	if (vmbeep_name) {
+		if (dso__load_vmbeep(dso, map, vmbeep_name, NULL) <= 0)
 			return NULL;
 	} else {
-		if (dso__load_vmlinux_path(dso, map, NULL) <= 0) {
+		if (dso__load_vmbeep_path(dso, map, NULL) <= 0) {
 			pr_debug("Failed to load kernel map.\n");
 			return NULL;
 		}
@@ -177,7 +177,7 @@ static int init_user_exec(void)
 {
 	int ret = 0;
 
-	symbol_conf.try_vmlinux_path = false;
+	symbol_conf.try_vmbeep_path = false;
 	symbol_conf.sort_by_name = true;
 	ret = symbol__init();
 
@@ -347,7 +347,7 @@ static int try_to_find_probe_trace_events(struct perf_probe_event *pev,
 	/* Error path : ntevs < 0 */
 	pr_debug("An error occurred in debuginfo analysis (%d).\n", ntevs);
 	if (ntevs == -EBADF) {
-		pr_warning("Warning: No dwarf info found in the vmlinux - "
+		pr_warning("Warning: No dwarf info found in the vmbeep - "
 			"please rebuild kernel with CONFIG_DEBUG_INFO=y.\n");
 		if (!need_dwarf) {
 			pr_debug("Trying to use symbols.\n");
@@ -476,7 +476,7 @@ int show_line_range(struct line_range *lr, const char *module)
 	char *tmp;
 
 	/* Search a line range */
-	ret = init_vmlinux();
+	ret = init_vmbeep();
 	if (ret < 0)
 		return ret;
 
@@ -610,7 +610,7 @@ int show_available_vars(struct perf_probe_event *pevs, int npevs,
 	int i, ret = 0;
 	struct debuginfo *dinfo;
 
-	ret = init_vmlinux();
+	ret = init_vmbeep();
 	if (ret < 0)
 		return ret;
 
@@ -1708,7 +1708,7 @@ int show_perf_probe_events(void)
 	if (fd < 0)
 		return fd;
 
-	ret = init_vmlinux();
+	ret = init_vmbeep();
 	if (ret < 0)
 		return ret;
 
@@ -2022,8 +2022,8 @@ int add_perf_probe_events(struct perf_probe_event *pevs, int npevs,
 		return -ENOMEM;
 
 	if (!pevs->uprobes)
-		/* Init vmlinux path */
-		ret = init_vmlinux();
+		/* Init vmbeep path */
+		ret = init_vmbeep();
 	else
 		ret = init_user_exec();
 
@@ -2233,7 +2233,7 @@ static int available_kernel_funcs(const char *module)
 	struct map *map;
 	int ret;
 
-	ret = init_vmlinux();
+	ret = init_vmbeep();
 	if (ret < 0)
 		return ret;
 

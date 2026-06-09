@@ -1,5 +1,5 @@
 /*
- * linux/mm/compaction.c
+ * beep/mm/compaction.c
  *
  * Memory compaction for the reduction of external fragmentation. Note that
  * this heavily depends upon page migration to do all the real heavy
@@ -7,14 +7,14 @@
  *
  * Copyright IBM Corp. 2007-2010 Mel Gorman <mel@csn.ul.ie>
  */
-#include <linux/swap.h>
-#include <linux/migrate.h>
-#include <linux/compaction.h>
-#include <linux/mm_inline.h>
-#include <linux/backing-dev.h>
-#include <linux/sysctl.h>
-#include <linux/sysfs.h>
-#include <linux/balloon_compaction.h>
+#include <beep/swap.h>
+#include <beep/migrate.h>
+#include <beep/compaction.h>
+#include <beep/mm_inline.h>
+#include <beep/backing-dev.h>
+#include <beep/sysctl.h>
+#include <beep/sysfs.h>
+#include <beep/balloon_compaction.h>
 #include "internal.h"
 
 #ifdef CONFIG_COMPACTION

@@ -21,8 +21,8 @@
  *
  */
 
-#include <linux/time.h>
-#include <linux/init.h>
+#include <beep/time.h>
+#include <beep/init.h>
 #include <sound/core.h>
 #include <sound/mpu401.h>
 #include "au88x0.h"

@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <errno.h>
-#include <linux/msg.h>
+#include <beep/msg.h>
 #include <fcntl.h>
 
 #define MAX_MSG_SIZE		32

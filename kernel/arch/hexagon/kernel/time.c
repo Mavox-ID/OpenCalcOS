@@ -1,7 +1,7 @@
 /*
  * Time related functions for Hexagon architecture
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -18,17 +18,17 @@
  * 02110-1301, USA.
  */
 
-#include <linux/init.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/clockchips.h>
+#include <beep/clocksource.h>
+#include <beep/interrupt.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/ioport.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/module.h>
 
 #include <asm/timer-regs.h>
 #include <asm/hexagon_vm.h>

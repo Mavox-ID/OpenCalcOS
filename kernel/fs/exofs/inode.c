@@ -10,7 +10,7 @@
  *     Laboratoire MASI - Institut Blaise Pascal
  *     Universite Pierre et Marie Curie (Paris VI)
  *     from
- *     linux/fs/minix/inode.c
+ *     beep/fs/minix/inode.c
  *     Copyright (C) 1991, 1992  Linus Torvalds
  *
  * This file is part of exofs.
@@ -18,7 +18,7 @@
  * exofs is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation.  Since it is based on ext2, and the only
- * valid version of GPL for the Linux kernel is version 2, the only valid
+ * valid version of GPL for the Beep kernel is version 2, the only valid
  * version of GPL for exofs is version 2.
  *
  * exofs is distributed in the hope that it will be useful,
@@ -31,7 +31,7 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 #include "exofs.h"
 
@@ -1055,7 +1055,7 @@ static const struct osd_attr g_attr_inode_dir_layout = ATTR_DEF(
 	0);
 
 /*
- * Read the Linux inode info from the OSD, and return it as is. In exofs the
+ * Read the Beep inode info from the OSD, and return it as is. In exofs the
  * inode info is in an application specific page/attribute of the osd-object.
  */
 static int exofs_get_inode(struct super_block *sb, struct exofs_i_info *oi,

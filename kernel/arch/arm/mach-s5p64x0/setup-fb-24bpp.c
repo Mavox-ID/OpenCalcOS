@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5p64x0/setup-fb-24bpp.c
+/* beep/arch/arm/mach-s5p64x0/setup-fb-24bpp.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
@@ -10,8 +10,8 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/fb.h>
-#include <linux/gpio.h>
+#include <beep/fb.h>
+#include <beep/gpio.h>
 
 #include <plat/cpu.h>
 #include <plat/fb.h>

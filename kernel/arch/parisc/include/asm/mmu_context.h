@@ -1,9 +1,9 @@
 #ifndef __PARISC_MMU_CONTEXT_H
 #define __PARISC_MMU_CONTEXT_H
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/atomic.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/atomic.h>
 #include <asm/pgalloc.h>
 #include <asm/pgtable.h>
 #include <asm-generic/mm_hooks.h>

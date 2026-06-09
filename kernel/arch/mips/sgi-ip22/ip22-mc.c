@@ -3,13 +3,13 @@
  *
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1999 Andrew R. Baker (andrewb@uab.edu) - Indigo2 changes
- * Copyright (C) 2003 Ladislav Michl  (ladis@linux-mips.org)
+ * Copyright (C) 2003 Ladislav Michl  (ladis@beep-mips.org)
  * Copyright (C) 2004 Peter Fuerst    (pf@net.alphadv.de) - IP28
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
 
 #include <asm/io.h>
 #include <asm/bootinfo.h>

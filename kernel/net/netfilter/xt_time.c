@@ -9,12 +9,12 @@
  *	This file is distributed under the terms of the GNU General Public
  *	License (GPL). Copies of the GPL can be obtained from gnu.org/gpl.
  */
-#include <linux/ktime.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_time.h>
+#include <beep/ktime.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/types.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_time.h>
 
 struct xtm {
 	u_int8_t month;    /* (1-12) */

@@ -9,17 +9,17 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/sa11x0-dma.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/sched.h>
+#include <beep/device.h>
+#include <beep/dmaengine.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/sa11x0-dma.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
 #include "virt-dma.h"
 

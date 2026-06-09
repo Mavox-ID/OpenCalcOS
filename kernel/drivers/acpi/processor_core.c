@@ -7,9 +7,9 @@
  *	Venkatesh Pallipadi <venkatesh.pallipadi@intel.com>
  *	- Added _PDC for platforms with Intel CPUs
  */
-#include <linux/export.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
+#include <beep/export.h>
+#include <beep/dmi.h>
+#include <beep/slab.h>
 
 #include <acpi/acpi_drivers.h>
 #include <acpi/processor.h>

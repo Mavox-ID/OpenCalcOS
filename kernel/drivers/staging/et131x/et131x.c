@@ -55,32 +55,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
 
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
+#include <beep/sched.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/ctype.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/in.h>
+#include <beep/delay.h>
+#include <beep/bitops.h>
+#include <beep/io.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/crc32.h>
-#include <linux/random.h>
-#include <linux/phy.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
+#include <beep/ioport.h>
+#include <beep/crc32.h>
+#include <beep/random.h>
+#include <beep/phy.h>
 
 #include "et131x.h"
 
@@ -3192,14 +3192,14 @@ static int et131x_send_packets(struct sk_buff *skb, struct net_device *netdev)
 
 	/* Send these packets
 	 *
-	 * NOTE: The Linux Tx entry point is only given one packet at a time
+	 * NOTE: The Beep Tx entry point is only given one packet at a time
 	 * to Tx, so the PacketCount and it's array used makes no sense here
 	 */
 
 	/* TCB is not available */
 	if (adapter->tx_ring.used >= NUM_TCB) {
 		/* NOTE: If there's an error on send, no need to queue the
-		 * packet under Linux; if we just send an error up to the
+		 * packet under Beep; if we just send an error up to the
 		 * netif layer, it will resend the skb to us.
 		 */
 		status = -ENOMEM;
@@ -3735,7 +3735,7 @@ static void et131x_error_timer_handler(unsigned long data)
 		if (!phydev->link) {
 			if (!et1310_in_phy_coma(adapter)) {
 				/* NOTE - This was originally a 'sync with
-				 *  interrupt'. How to do that under Linux?
+				 *  interrupt'. How to do that under Beep?
 				 */
 				et131x_enable_interrupts(adapter);
 				et1310_enable_phy_coma(adapter);
@@ -4994,7 +4994,7 @@ static int et131x_pci_setup(struct pci_dev *pdev,
 	 *         point
 	 */
 
-	/* Register the net_device struct with the Linux network layer */
+	/* Register the net_device struct with the Beep network layer */
 	rc = register_netdev(netdev);
 	if (rc < 0) {
 		dev_err(&pdev->dev, "register_netdev() failed\n");

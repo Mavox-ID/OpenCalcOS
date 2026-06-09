@@ -10,14 +10,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mfd/tc6387xb.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/tmio.h>
+#include <beep/mfd/tc6387xb.h>
+#include <beep/slab.h>
 
 enum {
 	TC6387XB_CELL_MMC,

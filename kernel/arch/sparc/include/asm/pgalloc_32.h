@@ -1,8 +1,8 @@
 #ifndef _SPARC_PGALLOC_H
 #define _SPARC_PGALLOC_H
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
 
 #include <asm/pgtsrmmu.h>
 #include <asm/pgtable.h>

@@ -1,9 +1,9 @@
-/* radio-trust.c - Trust FM Radio card driver for Linux 2.2
+/* radio-trust.c - Trust FM Radio card driver for Beep 2.2
  * by Eric Lammerts <eric@scintilla.utwente.nl>
  *
  * Based on radio-aztech.c. Original notes:
  *
- * Adapted to support the Video for Linux API by
+ * Adapted to support the Video for Beep API by
  * Russell Kroll <rkroll@exploits.org>.  Based on original tuner code by:
  *
  * Quay Ly
@@ -16,12 +16,12 @@
  */
 
 #include <stdarg.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/videodev2.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/videodev2.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include "radio-isa.h"

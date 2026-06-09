@@ -10,9 +10,9 @@
  *
  * FIXME! These routines have not been tested for big endian case.
  */
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/io.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
+#include <beep/io.h>
 #include <cpu/fpu.h>
 #include <asm/processor.h>
 #include <asm/fpu.h>

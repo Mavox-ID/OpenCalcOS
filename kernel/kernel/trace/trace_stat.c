@@ -9,10 +9,10 @@
  */
 
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/rbtree.h>
-#include <linux/debugfs.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/rbtree.h>
+#include <beep/debugfs.h>
 #include "trace_stat.h"
 #include "trace.h"
 

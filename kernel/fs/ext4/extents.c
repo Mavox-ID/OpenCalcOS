@@ -29,17 +29,17 @@
  *   - smart tree reduction
  */
 
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/jbd2.h>
-#include <linux/highuid.h>
-#include <linux/pagemap.h>
-#include <linux/quotaops.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/falloc.h>
+#include <beep/fs.h>
+#include <beep/time.h>
+#include <beep/jbd2.h>
+#include <beep/highuid.h>
+#include <beep/pagemap.h>
+#include <beep/quotaops.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/falloc.h>
 #include <asm/uaccess.h>
-#include <linux/fiemap.h>
+#include <beep/fiemap.h>
 #include "ext4_jbd2.h"
 #include "ext4_extents.h"
 #include "xattr.h"

@@ -1,5 +1,5 @@
 /*
- * linux/fs/ext4/xattr.c
+ * beep/fs/ext4/xattr.c
  *
  * Copyright (C) 2001-2003 Andreas Gruenbacher, <agruen@suse.de>
  *
@@ -50,12 +50,12 @@
  * by the buffer lock.
  */
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/mbcache.h>
-#include <linux/quotaops.h>
-#include <linux/rwsem.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/mbcache.h>
+#include <beep/quotaops.h>
+#include <beep/rwsem.h>
 #include "ext4_jbd2.h"
 #include "ext4.h"
 #include "xattr.h"

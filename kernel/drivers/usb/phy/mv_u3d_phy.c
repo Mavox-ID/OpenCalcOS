@@ -6,14 +6,14 @@
  * version 2, as published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/usb/otg.h>
-#include <linux/platform_data/mv_usb.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/usb/otg.h>
+#include <beep/platform_data/mv_usb.h>
 
 #include "mv_u3d_phy.h"
 

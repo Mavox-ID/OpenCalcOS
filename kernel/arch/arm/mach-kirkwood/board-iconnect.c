@@ -8,10 +8,10 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/mv643xx_eth.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/of.h>
+#include <beep/mv643xx_eth.h>
 #include "common.h"
 
 static struct mv643xx_eth_platform_data iconnect_ge00_data = {

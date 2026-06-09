@@ -19,16 +19,16 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/max8952.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/max8952.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 /* Registers */
 enum {

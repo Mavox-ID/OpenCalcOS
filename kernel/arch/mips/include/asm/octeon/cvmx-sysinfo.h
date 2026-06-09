@@ -40,7 +40,7 @@
  * no versioning is required.
  *
  * This structure must be provided with some fields set in order to
- * use simple executive functions in other applications (Linux kernel,
+ * use simple executive functions in other applications (Beep kernel,
  * u-boot, etc.)  The cvmx_sysinfo_minimal_initialize() function is
  * provided to set the required values in these cases.
  */
@@ -123,7 +123,7 @@ extern struct cvmx_sysinfo *cvmx_sysinfo_get(void);
 
 /**
  * This function is used in non-simple executive environments (such as
- * Linux kernel, u-boot, etc.)  to configure the minimal fields that
+ * Beep kernel, u-boot, etc.)  to configure the minimal fields that
  * are required to use simple executive files directly.
  *
  * Locking (if required) must be handled outside of this

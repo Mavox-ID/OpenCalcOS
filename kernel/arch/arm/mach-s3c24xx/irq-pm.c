@@ -1,8 +1,8 @@
-/* linux/arch/arm/plat-s3c24xx/irq-om.c
+/* beep/arch/arm/plat-s3c24xx/irq-om.c
  *
  * Copyright (c) 2003-2004 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * S3C24XX - IRQ PM code
  *
@@ -11,10 +11,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 
 #include <plat/cpu.h>
 #include <plat/pm.h>

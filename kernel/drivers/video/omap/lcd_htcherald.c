@@ -4,7 +4,7 @@
  * LCD panel support for the HTC Herald
  *
  * Copyright (C) 2009 Cory Maccarrone <darkstar6262@gmail.com>
- * Copyright (C) 2009 Wing Linux
+ * Copyright (C) 2009 Wing Beep
  *
  * Based on the lcd_htcwizard.c file from the linwizard project:
  * Copyright (C) linwizard.sourceforge.net
@@ -26,8 +26,8 @@
  * 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 
 #include "omapfb.h"
 

@@ -50,9 +50,9 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 #include "ibmasm.h"
 #include "lowlevel.h"
 #include "remote.h"

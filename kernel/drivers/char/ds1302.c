@@ -13,16 +13,16 @@
 *!***************************************************************************/
 
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/miscdevice.h>
-#include <linux/delay.h>
-#include <linux/bcd.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/miscdevice.h>
+#include <beep/delay.h>
+#include <beep/bcd.h>
+#include <beep/mutex.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
 
 #include <asm/rtc.h>
 #if defined(CONFIG_M32R)

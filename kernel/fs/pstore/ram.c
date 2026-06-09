@@ -22,18 +22,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/version.h>
-#include <linux/pstore.h>
-#include <linux/time.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/compiler.h>
-#include <linux/pstore_ram.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/version.h>
+#include <beep/pstore.h>
+#include <beep/time.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/compiler.h>
+#include <beep/pstore_ram.h>
 
 #define RAMOOPS_KERNMSG_HDR "===="
 #define MIN_MEM_SIZE 4096UL
@@ -418,7 +418,7 @@ static int ramoops_probe(struct platform_device *pdev)
 		goto fail_init_cprz;
 
 	err = ramoops_init_prz(dev, cxt, &cxt->fprz, &paddr, cxt->ftrace_size,
-			       LINUX_VERSION_CODE);
+			       BEEP_VERSION_CODE);
 	if (err)
 		goto fail_init_fprz;
 

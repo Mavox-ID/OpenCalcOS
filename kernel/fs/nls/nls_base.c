@@ -1,5 +1,5 @@
 /*
- * linux/fs/nls/nls_base.c
+ * beep/fs/nls/nls_base.c
  *
  * Native language support--charsets and unicode translations.
  * By Gordon Chaffee 1996, 1997
@@ -8,13 +8,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/nls.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/kmod.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/nls.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/kmod.h>
+#include <beep/spinlock.h>
 #include <asm/byteorder.h>
 
 static struct nls_table default_table;

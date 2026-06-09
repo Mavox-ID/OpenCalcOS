@@ -1,5 +1,5 @@
 /*
- *  linux/mm/page_io.c
+ *  beep/mm/page_io.c
  *
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  *
@@ -10,16 +10,16 @@
  *  Always use brw_page, life becomes simpler. 12 May 1998 Eric Biederman
  */
 
-#include <linux/mm.h>
-#include <linux/kernel_stat.h>
-#include <linux/gfp.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/bio.h>
-#include <linux/swapops.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/frontswap.h>
+#include <beep/mm.h>
+#include <beep/kernel_stat.h>
+#include <beep/gfp.h>
+#include <beep/pagemap.h>
+#include <beep/swap.h>
+#include <beep/bio.h>
+#include <beep/swapops.h>
+#include <beep/buffer_head.h>
+#include <beep/writeback.h>
+#include <beep/frontswap.h>
 #include <asm/pgtable.h>
 
 static struct bio *get_swap_bio(gfp_t gfp_flags,

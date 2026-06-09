@@ -9,10 +9,10 @@
  *	David Mosberger-Tang, Martin Mares
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/zorro.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/zorro.h>
 
 
 #ifdef CONFIG_ZORRO_NAMES

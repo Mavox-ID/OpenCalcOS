@@ -14,13 +14,13 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
 #include <drm/drmP.h>
 #include <drm/drm_fb_helper.h>
 #include <drm/drm_crtc_helper.h>
-#include <linux/fb.h>
-#include <linux/module.h>
+#include <beep/fb.h>
+#include <beep/module.h>
 #include <drm/drm_gem_cma_helper.h>
 #include <drm/drm_fb_cma_helper.h>
 

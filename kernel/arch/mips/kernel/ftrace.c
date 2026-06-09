@@ -8,9 +8,9 @@
  * Thanks goes to Steven Rostedt for writing the original x86 version.
  */
 
-#include <linux/uaccess.h>
-#include <linux/init.h>
-#include <linux/ftrace.h>
+#include <beep/uaccess.h>
+#include <beep/init.h>
+#include <beep/ftrace.h>
 
 #include <asm/asm.h>
 #include <asm/asm-offsets.h>

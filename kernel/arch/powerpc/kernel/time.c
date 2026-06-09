@@ -31,28 +31,28 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/timex.h>
-#include <linux/kernel_stat.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/profile.h>
-#include <linux/cpu.h>
-#include <linux/security.h>
-#include <linux/percpu.h>
-#include <linux/rtc.h>
-#include <linux/jiffies.h>
-#include <linux/posix-timers.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/irq_work.h>
+#include <beep/errno.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/timex.h>
+#include <beep/kernel_stat.h>
+#include <beep/time.h>
+#include <beep/init.h>
+#include <beep/profile.h>
+#include <beep/cpu.h>
+#include <beep/security.h>
+#include <beep/percpu.h>
+#include <beep/rtc.h>
+#include <beep/jiffies.h>
+#include <beep/posix-timers.h>
+#include <beep/irq.h>
+#include <beep/delay.h>
+#include <beep/irq_work.h>
 #include <asm/trace.h>
 
 #include <asm/io.h>
@@ -72,8 +72,8 @@
 
 /* powerpc clocksource/clockevent code */
 
-#include <linux/clockchips.h>
-#include <linux/timekeeper_internal.h>
+#include <beep/clockchips.h>
+#include <beep/timekeeper_internal.h>
 
 static cycle_t rtc_read(struct clocksource *);
 static struct clocksource clocksource_rtc = {

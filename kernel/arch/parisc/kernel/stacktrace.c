@@ -7,8 +7,8 @@
  *
  *  TODO: Userspace stacktrace (CONFIG_USER_STACKTRACE_SUPPORT)
  */
-#include <linux/module.h>
-#include <linux/stacktrace.h>
+#include <beep/module.h>
+#include <beep/stacktrace.h>
 
 #include <asm/unwind.h>
 

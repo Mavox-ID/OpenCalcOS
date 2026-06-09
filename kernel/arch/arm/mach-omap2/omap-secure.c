@@ -10,10 +10,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/memblock.h>
 
 #include <asm/cacheflush.h>
 #include <asm/memblock.h>

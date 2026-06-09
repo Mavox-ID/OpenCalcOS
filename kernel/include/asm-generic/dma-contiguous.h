@@ -4,8 +4,8 @@
 #ifdef __KERNEL__
 #ifdef CONFIG_CMA
 
-#include <linux/device.h>
-#include <linux/dma-contiguous.h>
+#include <beep/device.h>
+#include <beep/dma-contiguous.h>
 
 static inline struct cma *dev_get_cma_area(struct device *dev)
 {

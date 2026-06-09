@@ -11,10 +11,10 @@
 * warranty of any kind, whether express or implied.
 */
 
-#include <linux/signal.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/of.h>
+#include <beep/signal.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/of.h>
 
 struct spear_ohci {
 	struct ohci_hcd ohci;

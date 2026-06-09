@@ -6,13 +6,13 @@
  *
  * This file is released under the GPLv2.
  */
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/rwsem.h>
-#include <linux/acpi.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/rwsem.h>
+#include <beep/acpi.h>
 
 #include "internal.h"
 

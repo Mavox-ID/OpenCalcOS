@@ -10,7 +10,7 @@
  * Licensed under the Clear BSD license or the GPL-2 (or later)
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 /* void *memcpy(void *dest, const void *src, size_t n);
  * R0 = To Address (dest) (leave unchanged to form result)

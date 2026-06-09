@@ -1,10 +1,10 @@
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/irq.h>
-#include <linux/dma-mapping.h>
+#include <beep/kernel.h>
+#include <beep/stddef.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
+#include <beep/irq.h>
+#include <beep/dma-mapping.h>
 #include <asm/prom.h>
 #include <asm/irq.h>
 #include <asm/io.h>

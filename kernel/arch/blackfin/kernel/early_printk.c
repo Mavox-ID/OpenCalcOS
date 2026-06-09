@@ -7,12 +7,12 @@
  * Licensed under the GPL-2
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/reboot.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/serial_core.h>
+#include <beep/console.h>
+#include <beep/string.h>
+#include <beep/reboot.h>
 #include <asm/blackfin.h>
 #include <asm/irq_handler.h>
 #include <asm/early_printk.h>
@@ -172,7 +172,7 @@ asmlinkage void __init init_early_exception_vectors(void)
 	 * setup arch
 	 */
 	mark_shadow_error();
-	early_shadow_puts(linux_banner);
+	early_shadow_puts(beep_banner);
 	early_shadow_stamp();
 
 	if (CPUID != bfin_cpuid()) {

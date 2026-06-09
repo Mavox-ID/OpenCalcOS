@@ -1,8 +1,8 @@
 #ifndef OLPC_DCON_H_
 #define OLPC_DCON_H_
 
-#include <linux/notifier.h>
-#include <linux/workqueue.h>
+#include <beep/notifier.h>
+#include <beep/workqueue.h>
 
 /* DCON registers */
 
@@ -87,7 +87,7 @@ struct dcon_platform_data {
 	int (*read_status)(u8 *);
 };
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 extern irqreturn_t dcon_interrupt(int irq, void *id);
 

@@ -3,7 +3,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct hvtramp_mapping {
 	__u64		vaddr;

@@ -9,14 +9,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

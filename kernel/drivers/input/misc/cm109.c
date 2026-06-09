@@ -28,13 +28,13 @@
  *   - Read/write EEPROM
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/rwsem.h>
-#include <linux/usb/input.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/rwsem.h>
+#include <beep/usb/input.h>
 
 #define DRIVER_VERSION "20080805"
 #define DRIVER_AUTHOR  "Alfred E. Heggestad"
@@ -600,7 +600,7 @@ static int cm109_input_ev(struct input_dev *idev, unsigned int type,
 
 
 /******************************************************************************
- * Linux interface and usb initialisation
+ * Beep interface and usb initialisation
  *****************************************************************************/
 
 struct driver_info {

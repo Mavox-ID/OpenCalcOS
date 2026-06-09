@@ -6,8 +6,8 @@
  *    Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>,
  */
 
-#include <linux/bitops.h>
-#include <linux/module.h>
+#include <beep/bitops.h>
+#include <beep/module.h>
 
 const char _oi_bitmap[] = { 0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80 };
 EXPORT_SYMBOL(_oi_bitmap);

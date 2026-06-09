@@ -2,14 +2,14 @@
  * probe.c - PCI detection and setup code
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/cpumask.h>
-#include <linux/pci-aspm.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/cpumask.h>
+#include <beep/pci-aspm.h>
 #include <asm-generic/pci-bridge.h>
 #include "pci.h"
 

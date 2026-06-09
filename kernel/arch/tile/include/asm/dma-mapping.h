@@ -15,10 +15,10 @@
 #ifndef _ASM_TILE_DMA_MAPPING_H
 #define _ASM_TILE_DMA_MAPPING_H
 
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/cache.h>
-#include <linux/io.h>
+#include <beep/mm.h>
+#include <beep/scatterlist.h>
+#include <beep/cache.h>
+#include <beep/io.h>
 
 extern struct dma_map_ops *tile_dma_map_ops;
 extern struct dma_map_ops *gx_pci_dma_map_ops;

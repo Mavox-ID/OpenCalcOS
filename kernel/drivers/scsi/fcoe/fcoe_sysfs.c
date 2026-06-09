@@ -17,10 +17,10 @@
  * Maintained at www.Open-FCoE.org
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/etherdevice.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/etherdevice.h>
 
 #include <scsi/fcoe_sysfs.h>
 

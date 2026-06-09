@@ -1,5 +1,5 @@
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for Beep
  * cpuid support routines
  *
  * derived from arch/x86/kvm/x86.c
@@ -12,10 +12,10 @@
  *
  */
 
-#include <linux/kvm_host.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/uaccess.h>
+#include <beep/kvm_host.h>
+#include <beep/module.h>
+#include <beep/vmalloc.h>
+#include <beep/uaccess.h>
 #include <asm/user.h>
 #include <asm/xsave.h>
 #include "cpuid.h"

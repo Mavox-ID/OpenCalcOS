@@ -6,15 +6,15 @@
  *   Based in part on ide-pnp.c by Andrey Panin <pazke@donpac.ru>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/isapnp.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/isapnp.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
+#include <beep/ata.h>
+#include <beep/libata.h>
 
 #define DRV_NAME "pata_isapnp"
 #define DRV_VERSION "0.2.5"

@@ -1,6 +1,6 @@
 /*
  *
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) Beep driver
  * Copyright (c) 2003-2012, Intel Corporation.
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -13,18 +13,18 @@
  * more details.
  *
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/watchdog.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/device.h>
+#include <beep/pci.h>
+#include <beep/sched.h>
+#include <beep/watchdog.h>
 
 #include "mei_dev.h"
 #include "hw.h"
 #include "interface.h"
-#include <linux/mei.h>
+#include <beep/mei.h>
 
 static const u8 mei_start_wd_params[] = { 0x02, 0x12, 0x13, 0x10 };
 static const u8 mei_stop_wd_params[] = { 0x02, 0x02, 0x14, 0x10 };

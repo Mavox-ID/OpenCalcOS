@@ -16,18 +16,18 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/time.h>
-#include <linux/fsl/mxs-dma.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/time.h>
+#include <beep/fsl/mxs-dma.h>
+#include <beep/pinctrl/consumer.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

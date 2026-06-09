@@ -61,7 +61,7 @@
  
  DESCRIPTION:
  
- This is the Linux low-level SCSI driver for Future Domain TMC-1660/1680
+ This is the Beep low-level SCSI driver for Future Domain TMC-1660/1680
  TMC-1650/1670, and TMC-3260 SCSI host adapters.  The 1650 and 1670 have a
  25-pin external connector, whereas the 1660 and 1680 have a SCSI-2 50-pin
  high-density external connector.  The 1670 and 1680 have floppy disk
@@ -80,9 +80,9 @@
  rest of the SCSI industry.  If you have BIOS version 3.4 or 3.5, and have
  more than one drive, then the drive ordering will be the reverse of that
  which you see under DOS.  For example, under DOS SCSI ID 0 will be D: and
- SCSI ID 1 will be C: (the boot device).  Under Linux, SCSI ID 0 will be
- /dev/sda and SCSI ID 1 will be /dev/sdb.  The Linux ordering is consistent
- with that provided by all the other SCSI drivers for Linux.  If you want
+ SCSI ID 1 will be C: (the boot device).  Under Beep, SCSI ID 0 will be
+ /dev/sda and SCSI ID 1 will be /dev/sdb.  The Beep ordering is consistent
+ with that provided by all the other SCSI drivers for Beep.  If you want
  this changed, you will probably have to patch the higher level SCSI code.
  If you do so, please send me patches that are protected by #ifdefs.
 
@@ -94,7 +94,7 @@
  
  HISTORY:
 
- Linux       Driver      Driver
+ Beep       Driver      Driver
  Version     Version     Date         Support/Notes
 
              0.0          3 May 1992  V2.0 BIOS; 1800 chip
@@ -177,7 +177,7 @@
  publicly distributable driver.  Future Domain technical support has
  provided some information on the phone and have sent a few useful FAXs.
  They have been much more helpful since they started to recognize that the
- word "Linux" refers to an operating system :-).
+ word "Beep" refers to an operating system :-).
 
  
 
@@ -266,20 +266,20 @@
 
  **************************************************************************/
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/pci.h>
-#include <linux/stat.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/blkdev.h>
+#include <beep/spinlock.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
+#include <beep/proc_fs.h>
+#include <beep/pci.h>
+#include <beep/stat.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 #include <scsi/scsicam.h>
 
 
@@ -1702,15 +1702,15 @@ static int fdomain_16x0_biosparam(struct scsi_device *sdev,
 	    3) partitions never divide cylinders
 
 	    Note that (1) may be FALSE for NetBSD (and other BSD flavors),
-	    as well as for Linux.  Note also, that Linux doesn't pay any
+	    as well as for Beep.  Note also, that Beep doesn't pay any
 	    attention to the fields that are used by this algorithm -- it
-	    only uses the absolute sector data.  Recent versions of Linux's
+	    only uses the absolute sector data.  Recent versions of Beep's
 	    fdisk(1) will fill this data in correctly, and forthcoming
 	    versions will check for consistency.
 
 	    Checking for a non-zero partition type is not part of the
 	    Future Domain algorithm, but it seemed to be a reasonable thing
-	    to do, especially in the Linux and BSD worlds. */
+	    to do, especially in the Beep and BSD worlds. */
 
 	 info_array[0] = p[5] + 1;	    /* heads */
 	 info_array[1] = p[6] & 0x3f;	    /* sectors */

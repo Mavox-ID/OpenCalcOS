@@ -12,7 +12,7 @@
 #define _ASM_C6X_STRING_H
 
 #include <asm/page.h>
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 asmlinkage extern void *memcpy(void *to, const void *from, size_t n);
 

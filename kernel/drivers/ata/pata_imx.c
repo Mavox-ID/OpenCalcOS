@@ -13,15 +13,15 @@
  * - dmaengine support
  * - check if timing stuff needed
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
 #include <scsi/scsi_host.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
+#include <beep/ata.h>
+#include <beep/libata.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
 
 #define DRV_NAME "pata_imx"
 

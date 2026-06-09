@@ -8,9 +8,9 @@
  *
  * Released under the terms of the GNU GPL v2.0.
  */
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/io.h>
 #include <asm/mmu_context.h>
 #include <asm/cacheflush.h>
 

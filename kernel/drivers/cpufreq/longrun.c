@@ -1,16 +1,16 @@
 /*
- * (C) 2002 - 2003  Dominik Brodowski <linux@brodo.de>
+ * (C) 2002 - 2003  Dominik Brodowski <beep@brodo.de>
  *
  *  Licensed under the terms of the GNU GPL License version 2.
  *
  *  BIG FAT DISCLAIMER: Work in progress code. Possibly *dangerous*
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/timex.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/timex.h>
 
 #include <asm/msr.h>
 #include <asm/processor.h>
@@ -318,7 +318,7 @@ static void __exit longrun_exit(void)
 }
 
 
-MODULE_AUTHOR("Dominik Brodowski <linux@brodo.de>");
+MODULE_AUTHOR("Dominik Brodowski <beep@brodo.de>");
 MODULE_DESCRIPTION("LongRun driver for Transmeta Crusoe and "
 		"Efficeon processors.");
 MODULE_LICENSE("GPL");

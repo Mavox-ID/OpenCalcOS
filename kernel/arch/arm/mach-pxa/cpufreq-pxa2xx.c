@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/cpufreq-pxa2xx.c
+ *  beep/arch/arm/mach-pxa/cpufreq-pxa2xx.c
  *
  *  Copyright (C) 2002,2003 Intrinsyc Software
  *
@@ -31,14 +31,14 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/err.h>
-#include <linux/regulator/consumer.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/err.h>
+#include <beep/regulator/consumer.h>
+#include <beep/io.h>
 
 #include <mach/pxa2xx-regs.h>
 #include <mach/smemc.h>

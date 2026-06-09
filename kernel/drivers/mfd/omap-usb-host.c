@@ -16,18 +16,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/spinlock.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/usb-omap.h>
-#include <linux/pm_runtime.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/dma-mapping.h>
+#include <beep/spinlock.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/platform_data/usb-omap.h>
+#include <beep/pm_runtime.h>
 
 #include "omap-usb.h"
 

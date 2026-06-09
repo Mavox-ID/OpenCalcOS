@@ -8,13 +8,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/icmp.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/ip.h>
+#include <beep/icmp.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv4.h>
 #include <net/secure_seq.h>
 #include <net/checksum.h>
 #include <net/route.h>

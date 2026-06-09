@@ -2,7 +2,7 @@
 #define _ASM_IA64_BREAK_H
 
 /*
- * IA-64 Linux break numbers.
+ * IA-64 Beep break numbers.
  *
  * Copyright (C) 1999 Hewlett-Packard Co
  * Copyright (C) 1999 David Mosberger-Tang <davidm@hpl.hp.com>

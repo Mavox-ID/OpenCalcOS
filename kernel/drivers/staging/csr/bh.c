@@ -4,7 +4,7 @@
  *
  * PURPOSE:
  *      Provides an implementation for the driver bottom-half.
- *      It is part of the porting exercise in Linux.
+ *      It is part of the porting exercise in Beep.
  *
  * Copyright (C) 2005-2009 by Cambridge Silicon Radio Ltd.
  *
@@ -29,7 +29,7 @@
  *      func            The thread function
  *
  *  Returns:
- *      0 on success or else a Linux error code.
+ *      0 on success or else a Beep error code.
  * ---------------------------------------------------------------------------
  */
 int uf_start_thread(unifi_priv_t *priv,
@@ -182,14 +182,14 @@ handle_bh_error(unifi_priv_t *priv)
 			netif_carrier_off(priv->netdev[interfaceTag]);
 	}
 
-#ifdef CSR_NATIVE_LINUX
+#ifdef CSR_NATIVE_BEEP
 	/* Force any client waiting on an mlme_wait_for_reply() to abort. */
 	uf_abort_mlme(priv);
 
 	/* Cancel any pending workqueue tasks */
 	flush_workqueue(priv->unifi_workqueue);
 
-#endif /* CSR_NATIVE_LINUX */
+#endif /* CSR_NATIVE_BEEP */
 
 	unifi_error(priv,
 		"handle_bh_error: fatal error is reported to the SME.\n");
@@ -296,7 +296,7 @@ static int bh_thread_function(void *arg)
      * However, the MMC/SDIO driver tries to kill its' interrupt thread.
      * The kernel threads implementation does not allow to kill threads
      * from a signalled to stop thread.
-     * So, instead call csr_sdio_linux_remove_irq() always after calling
+     * So, instead call csr_sdio_beep_remove_irq() always after calling
      * uf_stop_thread() to kill this thread.
      */
 
@@ -316,7 +316,7 @@ static int bh_thread_function(void *arg)
  *      priv            Pointer to OS driver structure for the device.
  *
  *  Returns:
- *      0 on success or else a Linux error code.
+ *      0 on success or else a Beep error code.
  * ---------------------------------------------------------------------------
  */
     int
@@ -337,7 +337,7 @@ uf_init_bh(unifi_priv_t *priv)
     }
 
     /* Allow interrupts */
-    r = csr_sdio_linux_install_irq(priv->sdio);
+    r = csr_sdio_beep_install_irq(priv->sdio);
     if (r) {
         unifi_error(priv,
                 "uf_init_bh: failed to install the IRQ.\n");
@@ -363,7 +363,7 @@ uf_init_bh(unifi_priv_t *priv)
  *      ospriv          Pointer to OS driver structure for the device.
  *
  *  Returns:
- *      0 on success or else a Linux error code.
+ *      0 on success or else a Beep error code.
  *
  *  Notes:
  * ---------------------------------------------------------------------------

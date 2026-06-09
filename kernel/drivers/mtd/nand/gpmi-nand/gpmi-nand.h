@@ -17,10 +17,10 @@
 #ifndef __DRIVERS_MTD_NAND_GPMI_NAND_H
 #define __DRIVERS_MTD_NAND_GPMI_NAND_H
 
-#include <linux/mtd/nand.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/fsl/mxs-dma.h>
+#include <beep/mtd/nand.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/fsl/mxs-dma.h>
 
 #define GPMI_CLK_MAX 5 /* MX6Q needs five clocks */
 struct resources {

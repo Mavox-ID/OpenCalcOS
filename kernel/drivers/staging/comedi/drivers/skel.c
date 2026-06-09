@@ -2,7 +2,7 @@
     comedi/drivers/skel.c
     Skeleton code for a Comedi driver
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -74,7 +74,7 @@ Configuration Options:
 
 #include "../comedidev.h"
 
-#include <linux/pci.h>		/* for PCI devices */
+#include <beep/pci.h>		/* for PCI devices */
 
 #include "comedi_fc.h"
 

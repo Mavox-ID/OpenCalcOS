@@ -1,5 +1,5 @@
 /*
- * Linux ARCnet driver - COM20020 PCI support
+ * Beep ARCnet driver - COM20020 PCI support
  * Contemporary Controls PCI20 and SOHARD SH-ARC PCI
  * 
  * Written 1994-1999 by Avery Pennarun,
@@ -26,18 +26,18 @@
  *
  * **********************
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/arcdevice.h>
-#include <linux/com20020.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/ioport.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/arcdevice.h>
+#include <beep/com20020.h>
 
 #include <asm/io.h>
 

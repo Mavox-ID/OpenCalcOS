@@ -1,4 +1,4 @@
-/* -*- linux-c -*- *
+/* -*- beep-c -*- *
  *
  * ALSA driver for the digigram lx6464es interface
  * low-level interface
@@ -24,9 +24,9 @@
 
 /* #define RMH_DEBUG 1 */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
 
 #include "lx6464es.h"
 #include "lx_core.h"

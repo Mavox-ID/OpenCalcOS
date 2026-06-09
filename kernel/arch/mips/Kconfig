@@ -177,7 +177,7 @@ config MACH_DECSTATION
 	select SYS_SUPPORTS_1024HZ
 	help
 	  This enables support for DEC's MIPS based workstations.  For details
-	  see the Linux/MIPS FAQ on <http://www.linux-mips.org/> and the
+	  see the Beep/MIPS FAQ on <http://www.beep-mips.org/> and the
 	  DECstation porting pages on <http://decstation.unix-ag.org/>.
 
 	  If you have one of the following DECstation Models you definitely
@@ -462,7 +462,7 @@ config SGI_IP22
 	# Disable EARLY_PRINTK for now since it leads to overwritten prom
 	# memory during early boot on some machines.
 	#
-	# See http://www.linux-mips.org/cgi-bin/mesg.cgi?a=linux-mips&i=20091119164009.GA15038%40deprecation.cyrius.com
+	# See http://www.beep-mips.org/cgi-bin/mesg.cgi?a=beep-mips&i=20091119164009.GA15038%40deprecation.cyrius.com
 	# for a more details discussion
 	#
 	# select SYS_HAS_EARLY_PRINTK
@@ -471,7 +471,7 @@ config SGI_IP22
 	select SYS_SUPPORTS_BIG_ENDIAN
 	help
 	  This are the SGI Indy, Challenge S and Indigo2, as well as certain
-	  OEM variants like the Tandem CMN B006S. To compile a Linux kernel
+	  OEM variants like the Tandem CMN B006S. To compile a Beep kernel
 	  that runs on these, say Y here.
 
 config SGI_IP27
@@ -491,7 +491,7 @@ config SGI_IP27
 	select SYS_SUPPORTS_SMP
 	help
 	  This are the SGI Origin 200, Origin 2000 and Onyx 2 Graphics
-	  workstations.  To compile a Linux kernel that runs on these, say Y
+	  workstations.  To compile a Beep kernel that runs on these, say Y
 	  here.
 
 config SGI_IP28
@@ -521,14 +521,14 @@ config SGI_IP28
 	# Disable EARLY_PRINTK for now since it leads to overwritten prom
 	# memory during early boot on some machines.
 	#
-	# See http://www.linux-mips.org/cgi-bin/mesg.cgi?a=linux-mips&i=20091119164009.GA15038%40deprecation.cyrius.com
+	# See http://www.beep-mips.org/cgi-bin/mesg.cgi?a=beep-mips&i=20091119164009.GA15038%40deprecation.cyrius.com
 	# for a more details discussion
 	#
 	# select SYS_HAS_EARLY_PRINTK
 	select SYS_SUPPORTS_64BIT_KERNEL
 	select SYS_SUPPORTS_BIG_ENDIAN
       help
-        This is the SGI Indigo2 with R10000 processor.  To compile a Linux
+        This is the SGI Indigo2 with R10000 processor.  To compile a Beep
         kernel that runs on these, say Y here.
 
 config SGI_IP32
@@ -1018,7 +1018,7 @@ choice
 	help
 	  Some MIPS machines can be configured for either little or big endian
 	  byte order. These modes require different kernels and a different
-	  Linux distribution.  In general there is one preferred byteorder for a
+	  Beep distribution.  In general there is one preferred byteorder for a
 	  particular system but some systems are just as commonly used in the
 	  one or the other endianness.
 
@@ -1298,7 +1298,7 @@ config CPU_R3000
 	select CPU_SUPPORTS_32BIT_KERNEL
 	select CPU_SUPPORTS_HIGHMEM
 	help
-	  Please make sure to pick the right CPU type. Linux/MIPS is not
+	  Please make sure to pick the right CPU type. Beep/MIPS is not
 	  designed to be generic, i.e. Kernels compiled for R3000 CPUs will
 	  *not* work on R4000 machines and vice versa.  However, since most
 	  of the supported machines have an R4000 (or similar) CPU, R4x00
@@ -1761,7 +1761,7 @@ config PAGE_SIZE_4KB
 	bool "4kB"
 	depends on !CPU_LOONGSON2
 	help
-	 This option select the standard 4kB Linux page size.  On some
+	 This option select the standard 4kB Beep page size.  On some
 	 R3000-family processors this is the only available page size.  Using
 	 4kB page size will minimize memory consumption and is therefore
 	 recommended for low memory systems.
@@ -1773,7 +1773,7 @@ config PAGE_SIZE_8KB
 	  Using 8kB page size will result in higher performance kernel at
 	  the price of higher memory consumption.  This option is available
 	  only on R8000 and cnMIPS processors.  Note that you will need a
-	  suitable Linux distribution to support this.
+	  suitable Beep distribution to support this.
 
 config PAGE_SIZE_16KB
 	bool "16kB"
@@ -1782,7 +1782,7 @@ config PAGE_SIZE_16KB
 	  Using 16kB page size will result in higher performance kernel at
 	  the price of higher memory consumption.  This option is available on
 	  all non-R3000 family processors.  Note that you will need a suitable
-	  Linux distribution to support this.
+	  Beep distribution to support this.
 
 config PAGE_SIZE_32KB
 	bool "32kB"
@@ -1790,7 +1790,7 @@ config PAGE_SIZE_32KB
 	help
 	  Using 32kB page size will result in higher performance kernel at
 	  the price of higher memory consumption.  This option is available
-	  only on cnMIPS cores.  Note that you will need a suitable Linux
+	  only on cnMIPS cores.  Note that you will need a suitable Beep
 	  distribution to support this.
 
 config PAGE_SIZE_64KB
@@ -1856,7 +1856,7 @@ config SIBYTE_DMA_PAGEOPS
 	help
 	  Instead of using the CPU to zero and copy pages, use a Data Mover
 	  channel.  These DMA channels are otherwise unused by the standard
-	  SiByte Linux port.  Seems to give a small performance benefit.
+	  SiByte Beep port.  Seems to give a small performance benefit.
 
 config CPU_HAS_PREFETCH
 	bool
@@ -1906,7 +1906,7 @@ config MIPS_MT_SMP
 	  exclusive use. For a layman this model can be described as similar to
 	  what Intel calls Hyperthreading.
 
-	  For further information see http://www.linux-mips.org/wiki/34K#VSMP
+	  For further information see http://www.beep-mips.org/wiki/34K#VSMP
 
 config MIPS_MT_SMTC
 	bool "SMTC: Use all TCs on all VPEs for SMP"
@@ -1923,14 +1923,14 @@ config MIPS_MT_SMTC
 	help
 	  This is a kernel model which is known a SMTC or lately has been
 	  marketesed into SMVP.
-	  is presenting the available TC's of the core as processors to Linux.
-	  On currently available 34K processors this means a Linux system will
+	  is presenting the available TC's of the core as processors to Beep.
+	  On currently available 34K processors this means a Beep system will
 	  see up to 5 processors. The implementation of the SMTC kernel differs
 	  significantly from VSMP and cannot efficiently coexist in the same
 	  kernel binary so the choice between VSMP and SMTC is a compile time
 	  decision.
 
-	  For further information see http://www.linux-mips.org/wiki/34K#SMTC
+	  For further information see http://www.beep-mips.org/wiki/34K#SMTC
 
 endchoice
 
@@ -1985,18 +1985,18 @@ config MIPS_MT_SMTC_IRQAFF
 	default n
 	help
 	  Enables SMP IRQ affinity API (/proc/irq/*/smp_affinity, etc.)
-	  for SMTC Linux kernel. Requires platform support, of which
+	  for SMTC Beep kernel. Requires platform support, of which
 	  an example can be found in the MIPS kernel i8259 and Malta
 	  platform code.  Adds some overhead to interrupt dispatch, and
 	  should be used only if you know what you are doing.
 
 config MIPS_VPE_LOADER_TOM
-	bool "Load VPE program into memory hidden from linux"
+	bool "Load VPE program into memory hidden from beep"
 	depends on MIPS_VPE_LOADER
 	default y
 	help
 	  The loader can use memory that is present but has been hidden from
-	  Linux using the kernel command line option "mem=xxMB". It's up to
+	  Beep using the kernel command line option "mem=xxMB". It's up to
 	  you to ensure the amount you put in the option and the space your
 	  program requires is less or equal to the amount physically present.
 
@@ -2046,7 +2046,7 @@ config CPU_HAS_SMARTMIPS
 	  SmartMIPS is a extension of the MIPS32 architecture aimed at
 	  increased security at both hardware and software level for
 	  smartcards.  Enabling this option will allow proper use of the
-	  SmartMIPS instructions by Linux applications.  However a kernel with
+	  SmartMIPS instructions by Beep applications.  However a kernel with
 	  this option will not work on a MIPS core without SmartMIPS core.  If
 	  you don't know you probably don't have SmartMIPS and should say N
 	  here.
@@ -2318,7 +2318,7 @@ config KEXEC
 	  kexec is a system call that implements the ability to shutdown your
 	  current kernel, and to start another kernel.  It is like a reboot
 	  but it is independent of the system firmware.   And like a reboot
-	  you can start any kernel with it, not just Linux.
+	  you can start any kernel with it, not just Beep.
 
 	  The name comes from the similarity to the exec system call.
 
@@ -2452,8 +2452,8 @@ config TC
 	  <ftp://ftp.hp.com/pub/alphaserver/archive/triadd/>
 	  and:
 	  <http://www.computer-refuge.org/classiccmp/ftp.digital.com/pub/DEC/TriAdd/>
-	  Linux driver support status is documented at:
-	  <http://www.linux-mips.org/wiki/DECstation>
+	  Beep driver support status is documented at:
+	  <http://www.beep-mips.org/wiki/DECstation>
 
 config MMU
 	bool
@@ -2492,11 +2492,11 @@ config TRAD_SIGNALS
 	bool
 
 config MIPS32_COMPAT
-	bool "Kernel support for Linux/MIPS 32-bit binary compatibility"
+	bool "Kernel support for Beep/MIPS 32-bit binary compatibility"
 	depends on 64BIT
 	help
-	  Select this option if you want Linux/MIPS 32-bit binary
-	  compatibility. Since all software available for Linux/MIPS is
+	  Select this option if you want Beep/MIPS 32-bit binary
+	  compatibility. Since all software available for Beep/MIPS is
 	  currently 32-bit you should say Y here.
 
 config COMPAT
@@ -2515,7 +2515,7 @@ config MIPS32_O32
 	depends on MIPS32_COMPAT
 	help
 	  Select this option if you want to run o32 binaries.  These are pure
-	  32-bit binaries as used by the 32-bit Linux/MIPS port.  Most of
+	  32-bit binaries as used by the 32-bit Beep/MIPS port.  Most of
 	  existing binaries are in this format.
 
 	  If unsure, say Y.

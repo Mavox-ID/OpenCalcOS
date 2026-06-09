@@ -31,9 +31,9 @@
  * SOFTWARE.
  */
 
-#include <linux/mlx4/qp.h>
-#include <linux/mlx4/srq.h>
-#include <linux/slab.h>
+#include <beep/mlx4/qp.h>
+#include <beep/mlx4/srq.h>
+#include <beep/slab.h>
 
 #include "mlx4_ib.h"
 #include "user.h"

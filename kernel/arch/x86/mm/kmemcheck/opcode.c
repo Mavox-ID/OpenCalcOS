@@ -1,4 +1,4 @@
-#include <linux/types.h>
+#include <beep/types.h>
 
 #include "opcode.h"
 

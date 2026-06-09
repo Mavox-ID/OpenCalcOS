@@ -12,13 +12,13 @@
  * License.
  */
 
-#include <linux/security.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/namei.h>
-#include <linux/capability.h>
+#include <beep/security.h>
+#include <beep/vmalloc.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
+#include <beep/uaccess.h>
+#include <beep/namei.h>
+#include <beep/capability.h>
 
 #include "include/apparmor.h"
 #include "include/apparmorfs.h"

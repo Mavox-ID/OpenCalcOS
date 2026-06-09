@@ -21,18 +21,18 @@
 #undef DEBUG
 #undef DEBUG_LOW
 
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/sysctl.h>
-#include <linux/export.h>
-#include <linux/ctype.h>
-#include <linux/cache.h>
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/memblock.h>
+#include <beep/spinlock.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/proc_fs.h>
+#include <beep/stat.h>
+#include <beep/sysctl.h>
+#include <beep/export.h>
+#include <beep/ctype.h>
+#include <beep/cache.h>
+#include <beep/init.h>
+#include <beep/signal.h>
+#include <beep/memblock.h>
 
 #include <asm/processor.h>
 #include <asm/pgtable.h>
@@ -73,7 +73,7 @@
 #define GB (1024L*MB)
 
 /*
- * Note:  pte   --> Linux PTE
+ * Note:  pte   --> Beep PTE
  *        HPTE  --> PowerPC Hashed Page Table Entry
  *
  * Execution context:
@@ -979,7 +979,7 @@ int hash_page(unsigned long ea, unsigned long access, unsigned long trap)
 #endif /* CONFIG_PPC_64K_PAGES */
 
 	/* Get PTE and page size from page tables */
-	ptep = find_linux_pte_or_hugepte(pgdir, ea, &hugeshift);
+	ptep = find_beep_pte_or_hugepte(pgdir, ea, &hugeshift);
 	if (ptep == NULL || !pte_present(*ptep)) {
 		DBG_LOW(" no PTE !\n");
 		return 1;
@@ -1103,11 +1103,11 @@ void hash_preload(struct mm_struct *mm, unsigned long ea,
 	DBG_LOW("hash_preload(mm=%p, mm->pgdir=%p, ea=%016lx, access=%lx,"
 		" trap=%lx\n", mm, mm->pgd, ea, access, trap);
 
-	/* Get Linux PTE if available */
+	/* Get Beep PTE if available */
 	pgdir = mm->pgd;
 	if (pgdir == NULL)
 		return;
-	ptep = find_linux_pte(pgdir, ea);
+	ptep = find_beep_pte(pgdir, ea);
 	if (!ptep)
 		return;
 

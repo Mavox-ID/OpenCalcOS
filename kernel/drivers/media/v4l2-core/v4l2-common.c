@@ -1,7 +1,7 @@
 /*
- *	Video for Linux Two
+ *	Video for Beep Two
  *
- *	A generic video device interface for the LINUX operating system
+ *	A generic video device interface for the BEEP operating system
  *	using a set of device structures/vectors for low level operations.
  *
  *	This file replaces the videodev.c file that comes with the
@@ -18,9 +18,9 @@
  */
 
 /*
- * Video capture interface for Linux
+ * Video capture interface for Beep
  *
- *	A generic video device interface for the LINUX operating system
+ *	A generic video device interface for the BEEP operating system
  *	using a set of device structures/vectors for low level operations.
  *
  *		This program is free software; you can redistribute it and/or
@@ -34,7 +34,7 @@
  */
 
 /*
- * Video4linux 1/2 integration by Justin Schoeman
+ * Video4beep 1/2 integration by Justin Schoeman
  * <justin@suntiger.ee.up.ac.za>
  * 2.4 PROCFS support ported from 2.4 kernels by
  *  Iñaki García Etxebarria <garetxe@euskalnet.net>
@@ -44,15 +44,15 @@
  * Added Gerd Knorrs v4l1 enhancements (Justin Schoeman)
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/i2c.h>
 #if defined(CONFIG_SPI)
-#include <linux/spi/spi.h>
+#include <beep/spi/spi.h>
 #endif
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>
@@ -63,7 +63,7 @@
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-chip-ident.h>
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 
 MODULE_AUTHOR("Bill Dirks, Justin Schoeman, Gerd Knorr");
 MODULE_DESCRIPTION("misc helper functions for v4l2 device drivers");

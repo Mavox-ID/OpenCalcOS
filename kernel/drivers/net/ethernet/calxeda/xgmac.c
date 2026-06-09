@@ -13,19 +13,19 @@
  * You should have received a copy of the GNU General Public License along with
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/circ_buf.h>
-#include <linux/interrupt.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/if.h>
-#include <linux/crc32.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/circ_buf.h>
+#include <beep/interrupt.h>
+#include <beep/etherdevice.h>
+#include <beep/platform_device.h>
+#include <beep/skbuff.h>
+#include <beep/ethtool.h>
+#include <beep/if.h>
+#include <beep/crc32.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
 
 /* XGMAC Register definitions */
 #define XGMAC_CONTROL		0x00000000	/* MAC Configuration */
@@ -998,7 +998,7 @@ static int xgmac_open(struct net_device *dev)
 
 	/* Check that the MAC address is valid.  If its not, refuse
 	 * to bring the device up. The user must specify an
-	 * address using the following linux command:
+	 * address using the following beep command:
 	 *      ifconfig eth0 hw ether xx:xx:xx:xx:xx:xx  */
 	if (!is_valid_ether_addr(dev->dev_addr)) {
 		eth_hw_addr_random(dev);

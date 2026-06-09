@@ -1,5 +1,5 @@
 /*
- * linux/drivers/media/platform/s5p-mfc/s5p_mfc_cmd_v6.c
+ * beep/drivers/media/platform/s5p-mfc/s5p_mfc_cmd_v6.c
  *
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/

@@ -69,20 +69,20 @@
  * Global TODO:
  * - Break out common code from arch/arm/mach-s3c64xx and share
  */
-#include <linux/amba/bus.h>
-#include <linux/amba/pl08x.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/dmapool.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/pl08x.h>
+#include <beep/debugfs.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/dmaengine.h>
+#include <beep/dmapool.h>
+#include <beep/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/pm_runtime.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
 #include <asm/hardware/pl080.h>
 
 #include "dmaengine.h"

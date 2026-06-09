@@ -9,11 +9,11 @@
  *
  */
 
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/i8253.h>
-#include <linux/time.h>
-#include <linux/export.h>
+#include <beep/clockchips.h>
+#include <beep/interrupt.h>
+#include <beep/i8253.h>
+#include <beep/time.h>
+#include <beep/export.h>
 
 #include <asm/vsyscall.h>
 #include <asm/x86_init.h>

@@ -26,11 +26,11 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/ssb/ssb.h>
-#include <linux/ssb/ssb_embedded.h>
-#include <linux/bcma/bcma_soc.h>
+#include <beep/export.h>
+#include <beep/types.h>
+#include <beep/ssb/ssb.h>
+#include <beep/ssb/ssb_embedded.h>
+#include <beep/bcma/bcma_soc.h>
 #include <asm/bootinfo.h>
 #include <asm/reboot.h>
 #include <asm/time.h>

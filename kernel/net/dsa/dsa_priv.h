@@ -11,12 +11,12 @@
 #ifndef __DSA_PRIV_H
 #define __DSA_PRIV_H
 
-#include <linux/phy.h>
+#include <beep/phy.h>
 #include <net/dsa.h>
 
 struct dsa_slave_priv {
 	/*
-	 * The linux network interface corresponding to this
+	 * The beep network interface corresponding to this
 	 * switch port.
 	 */
 	struct net_device	*dev;

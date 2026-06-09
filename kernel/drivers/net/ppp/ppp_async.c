@@ -1,5 +1,5 @@
 /*
- * PPP async serial channel driver for Linux.
+ * PPP async serial channel driver for Beep.
  *
  * Copyright 1999 Paul Mackerras.
  *
@@ -18,21 +18,21 @@
  * subsequently hacked by Paul Mackerras.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/tty.h>
-#include <linux/netdevice.h>
-#include <linux/poll.h>
-#include <linux/crc-ccitt.h>
-#include <linux/ppp_defs.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/ppp_channel.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/tty.h>
+#include <beep/netdevice.h>
+#include <beep/poll.h>
+#include <beep/crc-ccitt.h>
+#include <beep/ppp_defs.h>
+#include <beep/ppp-ioctl.h>
+#include <beep/ppp_channel.h>
+#include <beep/spinlock.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/jiffies.h>
+#include <beep/slab.h>
 #include <asm/unaligned.h>
 #include <asm/uaccess.h>
 #include <asm/string.h>

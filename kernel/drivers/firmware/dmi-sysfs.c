@@ -15,16 +15,16 @@
  * Copyright 2011 Google, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kobject.h>
-#include <linux/dmi.h>
-#include <linux/capability.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kobject.h>
+#include <beep/dmi.h>
+#include <beep/capability.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/io.h>
 
 #define MAX_ENTRY_TYPE 255 /* Most of these aren't used, but we consider
 			      the top entry type is only 8 bits */

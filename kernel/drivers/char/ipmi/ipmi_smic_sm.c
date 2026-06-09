@@ -41,11 +41,11 @@
  *  with this program; if not, write to the Free Software Foundation, Inc.,
  *  675 Mass Ave, Cambridge, MA 02139, USA.  */
 
-#include <linux/kernel.h> /* For printk. */
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ipmi_msgdefs.h>		/* for completion codes */
+#include <beep/kernel.h> /* For printk. */
+#include <beep/string.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/ipmi_msgdefs.h>		/* for completion codes */
 #include "ipmi_si_sm.h"
 
 /* smic_debug is a bit-field

@@ -13,10 +13,10 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/delay.h>
-#include <linux/suspend.h>
+#include <beep/init.h>
+#include <beep/pm.h>
+#include <beep/delay.h>
+#include <beep/suspend.h>
 
 #include <asm/mach-jz4740/clock.h>
 

@@ -38,14 +38,14 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/clnt.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/sunrpc/sched.h>
+#include <beep/sunrpc/clnt.h>
 
-#include <linux/nfs.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
+#include <beep/nfs.h>
+#include <beep/nfs4.h>
+#include <beep/nfs_fs.h>
 #include "nfs4_fs.h"
 #include "delegation.h"
 

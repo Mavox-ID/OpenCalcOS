@@ -11,10 +11,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/io.h>
 
 #include "common.h"
 #include "powerdomain.h"

@@ -21,9 +21,9 @@
  *
  * See arch/x86/kernel/kprobes.c for x86 kprobes history.
  */
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/percpu.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/percpu.h>
 #include <asm/insn.h>
 
 #define  __ARCH_WANT_KPROBES_INSN_SLOT

@@ -1,10 +1,10 @@
 #ifndef _ASM_IA64_CPU_H_
 #define _ASM_IA64_CPU_H_
 
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/topology.h>
-#include <linux/percpu.h>
+#include <beep/device.h>
+#include <beep/cpu.h>
+#include <beep/topology.h>
+#include <beep/percpu.h>
 
 struct ia64_cpu {
 	struct cpu cpu;

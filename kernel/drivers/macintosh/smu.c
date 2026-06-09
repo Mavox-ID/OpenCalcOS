@@ -19,24 +19,24 @@
  *    the userland interface
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/dmapool.h>
-#include <linux/bootmem.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/rtc.h>
-#include <linux/completion.h>
-#include <linux/miscdevice.h>
-#include <linux/delay.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/dmapool.h>
+#include <beep/bootmem.h>
+#include <beep/vmalloc.h>
+#include <beep/highmem.h>
+#include <beep/jiffies.h>
+#include <beep/interrupt.h>
+#include <beep/rtc.h>
+#include <beep/completion.h>
+#include <beep/miscdevice.h>
+#include <beep/delay.h>
+#include <beep/poll.h>
+#include <beep/mutex.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
+#include <beep/slab.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>

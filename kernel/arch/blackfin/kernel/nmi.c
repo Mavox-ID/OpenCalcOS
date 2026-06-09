@@ -5,20 +5,20 @@
  * Copyright 2010-2010 Analog Devices Inc.
  *		Graff Yang <graf.yang@analog.com>
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucbeep.org/
  *
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/bitops.h>
-#include <linux/hardirq.h>
-#include <linux/syscore_ops.h>
-#include <linux/pm.h>
-#include <linux/nmi.h>
-#include <linux/smp.h>
-#include <linux/timer.h>
+#include <beep/bitops.h>
+#include <beep/hardirq.h>
+#include <beep/syscore_ops.h>
+#include <beep/pm.h>
+#include <beep/nmi.h>
+#include <beep/smp.h>
+#include <beep/timer.h>
 #include <asm/blackfin.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/cacheflush.h>
 #include <asm/bfin_watchdog.h>
 

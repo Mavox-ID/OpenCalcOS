@@ -5,13 +5,13 @@
  * Copyright (C) 2009, Broadcom Corporation
  *
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/hw_random.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/hw_random.h>
 
 #include <bcm63xx_io.h>
 #include <bcm63xx_regs.h>

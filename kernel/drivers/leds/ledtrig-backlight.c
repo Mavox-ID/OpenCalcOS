@@ -1,7 +1,7 @@
 /*
  * Backlight emulation LED trigger
  *
- * Copyright 2008 (C) Rodolfo Giometti <giometti@linux.it>
+ * Copyright 2008 (C) Rodolfo Giometti <giometti@beep.it>
  * Copyright 2008 (C) Eurotech S.p.A. <info@eurotech.it>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -10,12 +10,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/fb.h>
-#include <linux/leds.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/fb.h>
+#include <beep/leds.h>
 #include "leds.h"
 
 #define BLANK		1
@@ -161,6 +161,6 @@ static void __exit bl_trig_exit(void)
 module_init(bl_trig_init);
 module_exit(bl_trig_exit);
 
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
+MODULE_AUTHOR("Rodolfo Giometti <giometti@beep.it>");
 MODULE_DESCRIPTION("Backlight emulation LED trigger");
 MODULE_LICENSE("GPL v2");

@@ -1,5 +1,5 @@
 /*
- * LoCoMo keyboard driver for Linux-based ARM PDAs:
+ * LoCoMo keyboard driver for Beep-based ARM PDAs:
  * 	- SHARP Zaurus Collie (SL-5500)
  * 	- SHARP Zaurus Poodle (SL-5600)
  *
@@ -23,14 +23,14 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
 
 #include <asm/hardware/locomo.h>
 #include <asm/irq.h>

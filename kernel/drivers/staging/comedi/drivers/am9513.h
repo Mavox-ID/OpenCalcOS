@@ -2,7 +2,7 @@
     module/am9513.h
     value added preprocessor definitions for Am9513 timer chip
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1998 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify

@@ -14,22 +14,22 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/ctype.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/videodev2.h>
+#include <beep/slab.h>
 
 #include <mach/hardware.h>
 #include <mach/mux.h>
-#include <linux/platform_data/i2c-davinci.h>
+#include <beep/platform_data/i2c-davinci.h>
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 #include <media/davinci/vpbe_types.h>
 #include <media/davinci/vpbe_venc.h>

@@ -10,7 +10,7 @@
 
 //***************************************************************************
 
-// PPC 6 Code in C sanitized for LINUX
+// PPC 6 Code in C sanitized for BEEP
 // Original x86 ASM by Ron, Converted to C by Clive
 
 //***************************************************************************

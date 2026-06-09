@@ -6,15 +6,15 @@
  * published by the Free Software Foundation.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/jhash.h>
-#include <linux/ip.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/jhash.h>
+#include <beep/ip.h>
 #include <net/ipv6.h>
 
-#include <linux/netfilter/x_tables.h>
+#include <beep/netfilter/x_tables.h>
 #include <net/netfilter/nf_conntrack.h>
-#include <linux/netfilter/xt_cluster.h>
+#include <beep/netfilter/xt_cluster.h>
 
 static inline u32 nf_ct_orig_ipv4_src(const struct nf_conn *ct)
 {

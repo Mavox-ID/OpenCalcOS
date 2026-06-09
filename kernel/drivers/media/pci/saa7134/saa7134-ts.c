@@ -1,7 +1,7 @@
 /*
  *
  * device driver for philips saa7134 based TV cards
- * video4linux video interface
+ * video4beep video interface
  *
  * (c) 2001,02 Gerd Knorr <kraxel@bytesex.org> [SuSE Labs]
  *
@@ -20,11 +20,11 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
 
 #include "saa7134-reg.h"
 #include "saa7134.h"

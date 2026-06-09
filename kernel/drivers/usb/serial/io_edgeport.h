@@ -1,6 +1,6 @@
 /************************************************************************
  *
- *	io_edgeport.h	Edgeport Linux Interface definitions
+ *	io_edgeport.h	Edgeport Beep Interface definitions
  *
  *	Copyright (C) 2000 Inside Out Networks, Inc.
  *

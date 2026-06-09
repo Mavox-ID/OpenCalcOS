@@ -1,16 +1,16 @@
 /*
  * Copyright IBM Corp. 2012
- * Author(s): Jan Glauber <jang@linux.vnet.ibm.com>
+ * Author(s): Jan Glauber <jang@beep.vnet.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
-#include <linux/signal.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel_stat.h>
+#include <beep/kernel.h>
+#include <beep/syscalls.h>
+#include <beep/signal.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/kernel_stat.h>
 #include <asm/runtime_instr.h>
 #include <asm/cpu_mf.h>
 #include <asm/irq.h>

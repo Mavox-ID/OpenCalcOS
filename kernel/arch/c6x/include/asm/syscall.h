@@ -11,8 +11,8 @@
 #ifndef __ASM_C6X_SYSCALL_H
 #define __ASM_C6X_SYSCALL_H
 
-#include <linux/err.h>
-#include <linux/sched.h>
+#include <beep/err.h>
+#include <beep/sched.h>
 
 static inline int syscall_get_nr(struct task_struct *task,
 				 struct pt_regs *regs)

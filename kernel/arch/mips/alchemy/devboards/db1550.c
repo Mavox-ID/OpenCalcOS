@@ -4,19 +4,19 @@
  * (c) 2011 Manuel Lauss <manuel.lauss@googlemail.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
+#include <beep/dma-mapping.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/platform_device.h>
+#include <beep/pm.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
 #include <asm/bootinfo.h>
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/au1xxx_eth.h>

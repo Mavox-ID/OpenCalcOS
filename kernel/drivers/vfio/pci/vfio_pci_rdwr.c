@@ -13,10 +13,10 @@
  * Author: Tom Lyon, pugs@cisco.com
  */
 
-#include <linux/fs.h>
-#include <linux/pci.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <beep/fs.h>
+#include <beep/pci.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
 
 #include "vfio_pci_private.h"
 

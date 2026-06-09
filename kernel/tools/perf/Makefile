@@ -23,7 +23,6 @@ include config/utilities.mak
 # Define PYTHON_CONFIG to point to the python-config binary if
 # the default `$(PYTHON)-config' is not correct.
 #
-# Define ASCIIDOC8 if you want to format documentation with AsciiDoc 8
 #
 # Define DOCBOOK_XSL_172 if you want to format man pages with DocBook XSL v1.72.
 #
@@ -289,28 +288,28 @@ $(OUTPUT)util/pmu.o: $(OUTPUT)util/pmu-flex.c $(OUTPUT)util/pmu-bison.c
 
 LIB_FILE=$(OUTPUT)libperf.a
 
-LIB_H += ../../include/uapi/linux/perf_event.h
-LIB_H += ../../include/linux/rbtree.h
-LIB_H += ../../include/linux/list.h
-LIB_H += ../../include/uapi/linux/const.h
-LIB_H += ../../include/linux/hash.h
-LIB_H += ../../include/linux/stringify.h
-LIB_H += util/include/linux/bitmap.h
-LIB_H += util/include/linux/bitops.h
-LIB_H += util/include/linux/compiler.h
-LIB_H += util/include/linux/const.h
-LIB_H += util/include/linux/ctype.h
-LIB_H += util/include/linux/kernel.h
-LIB_H += util/include/linux/list.h
-LIB_H += util/include/linux/export.h
-LIB_H += util/include/linux/magic.h
-LIB_H += util/include/linux/poison.h
-LIB_H += util/include/linux/prefetch.h
-LIB_H += util/include/linux/rbtree.h
-LIB_H += util/include/linux/rbtree_augmented.h
-LIB_H += util/include/linux/string.h
-LIB_H += util/include/linux/types.h
-LIB_H += util/include/linux/linkage.h
+LIB_H += ../../include/uapi/beep/perf_event.h
+LIB_H += ../../include/beep/rbtree.h
+LIB_H += ../../include/beep/list.h
+LIB_H += ../../include/uapi/beep/const.h
+LIB_H += ../../include/beep/hash.h
+LIB_H += ../../include/beep/stringify.h
+LIB_H += util/include/beep/bitmap.h
+LIB_H += util/include/beep/bitops.h
+LIB_H += util/include/beep/compiler.h
+LIB_H += util/include/beep/const.h
+LIB_H += util/include/beep/ctype.h
+LIB_H += util/include/beep/kernel.h
+LIB_H += util/include/beep/list.h
+LIB_H += util/include/beep/export.h
+LIB_H += util/include/beep/magic.h
+LIB_H += util/include/beep/poison.h
+LIB_H += util/include/beep/prefetch.h
+LIB_H += util/include/beep/rbtree.h
+LIB_H += util/include/beep/rbtree_augmented.h
+LIB_H += util/include/beep/string.h
+LIB_H += util/include/beep/types.h
+LIB_H += util/include/beep/linkage.h
 LIB_H += util/include/asm/asm-offsets.h
 LIB_H += util/include/asm/bug.h
 LIB_H += util/include/asm/byteorder.h
@@ -461,7 +460,7 @@ LIB_OBJS += $(OUTPUT)arch/common.o
 LIB_OBJS += $(OUTPUT)tests/parse-events.o
 LIB_OBJS += $(OUTPUT)tests/dso-data.o
 LIB_OBJS += $(OUTPUT)tests/attr.o
-LIB_OBJS += $(OUTPUT)tests/vmlinux-kallsyms.o
+LIB_OBJS += $(OUTPUT)tests/vmbeep-kallsyms.o
 LIB_OBJS += $(OUTPUT)tests/open-syscall.o
 LIB_OBJS += $(OUTPUT)tests/open-syscall-all-cpus.o
 LIB_OBJS += $(OUTPUT)tests/open-syscall-tp-fields.o
@@ -906,7 +905,6 @@ $(OUTPUT)builtin-timechart.o: builtin-timechart.c $(OUTPUT)common-cmds.h $(OUTPU
 
 $(OUTPUT)common-cmds.h: util/generate-cmdlist.sh command-list.txt
 
-$(OUTPUT)common-cmds.h: $(wildcard Documentation/perf-*.txt)
 	$(QUIET_GEN). util/generate-cmdlist.sh > $@+ && mv $@+ $@
 
 $(SCRIPTS) : % : %.sh
@@ -1013,29 +1011,16 @@ $(LIBTRACEEVENT)-clean:
 
 help:
 	@echo 'Perf make targets:'
-	@echo '  doc		- make *all* documentation (see below)'
-	@echo '  man		- make manpage documentation (access with man <foo>)'
-	@echo '  html		- make html documentation'
-	@echo '  info		- make GNU info documentation (access with info <foo>)'
-	@echo '  pdf		- make pdf documentation'
 	@echo '  TAGS		- use etags to make tag information for source browsing'
 	@echo '  tags		- use ctags to make tag information for source browsing'
 	@echo '  cscope	- use cscope to make interactive browsing database'
 	@echo ''
 	@echo 'Perf install targets:'
-	@echo '  NOTE: documentation build requires asciidoc, xmlto packages to be installed'
 	@echo '  HINT: use "make prefix=<path> <install target>" to install to a particular'
 	@echo '        path like make prefix=/usr/local install install-doc'
 	@echo '  install	- install compiled binaries'
-	@echo '  install-doc	- install *all* documentation'
-	@echo '  install-man	- install manpage documentation'
-	@echo '  install-html	- install html documentation'
-	@echo '  install-info	- install GNU info documentation'
-	@echo '  install-pdf	- install pdf documentation'
 	@echo ''
 	@echo '  quick-install-doc	- alias for quick-install-man'
-	@echo '  quick-install-man	- install the documentation quickly'
-	@echo '  quick-install-html	- install the html documentation quickly'
 	@echo ''
 	@echo 'Perf maintainer targets:'
 	@echo '  clean			- clean all binary objects and build output'
@@ -1046,9 +1031,7 @@ DOC_TARGETS := doc man html info pdf
 INSTALL_DOC_TARGETS := $(patsubst %,install-%,$(DOC_TARGETS)) try-install-man
 INSTALL_DOC_TARGETS += quick-install-doc quick-install-man quick-install-html
 
-# 'make doc' should call 'make -C Documentation all'
 $(DOC_TARGETS):
-	$(QUIET_SUBDIR0)Documentation $(QUIET_SUBDIR1) $(@:doc=all)
 
 TAGS:
 	$(RM) TAGS
@@ -1123,9 +1106,7 @@ install: all try-install-man
 install-python_ext:
 	$(PYTHON_WORD) util/setup.py --quiet install --root='/$(DESTDIR_SQ)'
 
-# 'make install-doc' should call 'make -C Documentation install'
 $(INSTALL_DOC_TARGETS):
-	$(QUIET_SUBDIR0)Documentation $(QUIET_SUBDIR1) $(@:-doc=)
 
 ### Cleaning rules
 
@@ -1133,7 +1114,6 @@ clean: $(LIBTRACEEVENT)-clean
 	$(RM) $(LIB_OBJS) $(BUILTIN_OBJS) $(LIB_FILE) $(OUTPUT)perf-archive $(OUTPUT)perf.o $(LANG_BINDINGS)
 	$(RM) $(ALL_PROGRAMS) perf
 	$(RM) *.spec *.pyc *.pyo */*.pyc */*.pyo $(OUTPUT)common-cmds.h TAGS tags cscope*
-	$(QUIET_SUBDIR0)Documentation $(QUIET_SUBDIR1) clean
 	$(RM) $(OUTPUT)PERF-VERSION-FILE $(OUTPUT)PERF-CFLAGS
 	$(RM) $(OUTPUT)util/*-bison*
 	$(RM) $(OUTPUT)util/*-flex*

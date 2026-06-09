@@ -1,5 +1,5 @@
 /******************************************************************************
-*                  QLOGIC LINUX SOFTWARE
+*                  QLOGIC BEEP SOFTWARE
 *
 * QLogic ISP1280 (Ultra2) /12160 (Ultra3) SCSI driver
 * Copyright (C) 2000 Qlogic Corporation
@@ -1013,10 +1013,10 @@ struct qla_driver_setup {
 
 
 /*
- * Linux Host Adapter structure
+ * Beep Host Adapter structure
  */
 struct scsi_qla_host {
-	/* Linux adapter configuration data */
+	/* Beep adapter configuration data */
 	struct Scsi_Host *host;	/* pointer to host data */
 	struct scsi_qla_host *next;
 	struct device_reg __iomem *iobase;	/* Base Memory-mapped I/O address */

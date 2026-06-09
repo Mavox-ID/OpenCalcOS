@@ -1,5 +1,5 @@
 /*
- *	procfs handler for Linux I2O subsystem
+ *	procfs handler for Beep I2O subsystem
  *
  *	(c) Copyright 1999	Deepak Saxena
  *
@@ -36,18 +36,18 @@
 #define FMT_U64_HEX "0x%08x%08x"
 #define U64_VAL(pu64) *((u32*)(pu64)+1), *((u32*)(pu64))
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/i2o.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/i2o.h>
+#include <beep/slab.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
 
 #include <asm/io.h>
 #include <asm/uaccess.h>

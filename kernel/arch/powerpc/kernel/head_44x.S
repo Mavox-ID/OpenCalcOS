@@ -1,7 +1,7 @@
 /*
  * Kernel execution entry point code.
  *
- *    Copyright (c) 1995-1996 Gary Thomas <gdt@linuxppc.org>
+ *    Copyright (c) 1995-1996 Gary Thomas <gdt@beepppc.org>
  *      Initial PowerPC version.
  *    Copyright (c) 1996 Cort Dougan <cort@cs.nmt.edu>
  *      Rewritten for PReP
@@ -28,7 +28,7 @@
  * option) any later version.
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 #include <asm/mmu.h>

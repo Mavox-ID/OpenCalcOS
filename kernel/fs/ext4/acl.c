@@ -1,14 +1,14 @@
 /*
- * linux/fs/ext4/acl.c
+ * beep/fs/ext4/acl.c
  *
  * Copyright (C) 2001-2003 Andreas Gruenbacher, <agruen@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/capability.h>
-#include <linux/fs.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/capability.h>
+#include <beep/fs.h>
 #include "ext4_jbd2.h"
 #include "ext4.h"
 #include "xattr.h"

@@ -23,7 +23,7 @@
 #include "h/smc.h"
 #include "h/supern_2.h"
 #include "h/skfbiinc.h"
-#include <linux/bitrev.h>
+#include <beep/bitrev.h>
 
 #ifndef	lint
 static const char ID_sccs[] = "@(#)drvfbi.c	1.63 99/02/11 (C) SK " ;

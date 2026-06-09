@@ -15,9 +15,9 @@
 #ifndef ARCH_S390_KVM_S390_H
 #define ARCH_S390_KVM_S390_H
 
-#include <linux/hrtimer.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
+#include <beep/hrtimer.h>
+#include <beep/kvm.h>
+#include <beep/kvm_host.h>
 
 /* The current code can have up to 256 pages for virtio */
 #define VIRTIODESCSPACE (256ul * 4096ul)

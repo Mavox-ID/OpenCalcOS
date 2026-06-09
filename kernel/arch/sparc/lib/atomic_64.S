@@ -3,7 +3,7 @@
  * Copyright (C) 1999, 2007 2012 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/asi.h>
 #include <asm/backoff.h>
 

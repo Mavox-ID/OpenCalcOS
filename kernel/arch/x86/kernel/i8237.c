@@ -9,8 +9,8 @@
  * your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/syscore_ops.h>
+#include <beep/init.h>
+#include <beep/syscore_ops.h>
 
 #include <asm/dma.h>
 

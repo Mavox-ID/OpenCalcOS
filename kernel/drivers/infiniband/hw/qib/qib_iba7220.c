@@ -36,11 +36,11 @@
  * QLogic_IB 7220 chip (except that specific to the SerDes)
  */
 
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/io.h>
 #include <rdma/ib_verbs.h>
 
 #include "qib.h"

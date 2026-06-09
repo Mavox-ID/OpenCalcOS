@@ -2,22 +2,22 @@
  *  gendisk handling
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/genhd.h>
-#include <linux/kdev_t.h>
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/kobj_map.h>
-#include <linux/mutex.h>
-#include <linux/idr.h>
-#include <linux/log2.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/genhd.h>
+#include <beep/kdev_t.h>
+#include <beep/kernel.h>
+#include <beep/blkdev.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/kmod.h>
+#include <beep/kobj_map.h>
+#include <beep/mutex.h>
+#include <beep/idr.h>
+#include <beep/log2.h>
 
 #include "blk.h"
 

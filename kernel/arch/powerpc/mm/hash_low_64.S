@@ -75,7 +75,7 @@ _GLOBAL(__hash_page_4K)
 	
 	/* Step 1:
 	 *
-	 * Check permissions, atomically mark the linux PTE busy
+	 * Check permissions, atomically mark the beep PTE busy
 	 * and hashed.
 	 */ 
 1:
@@ -96,7 +96,7 @@ _GLOBAL(__hash_page_4K)
 	rlwinm	r30,r4,32-9+7,31-7,31-7	/* _PAGE_RW -> _PAGE_DIRTY */
 	or	r30,r30,r31
 	ori	r30,r30,_PAGE_BUSY | _PAGE_ACCESSED | _PAGE_HASHPTE
-	/* Write the linux PTE atomically (setting busy) */
+	/* Write the beep PTE atomically (setting busy) */
 	stdcx.	r30,0,r6
 	bne-	1b
 	isync
@@ -137,7 +137,7 @@ END_MMU_FTR_SECTION_IFSET(MMU_FTR_1T_SEGMENT)
 	xor	r28,r28,r5
 	xor	r28,r28,r0		/* hash */
 
-	/* Convert linux PTE bits into HW equivalents */
+	/* Convert beep PTE bits into HW equivalents */
 4:	andi.	r3,r30,0x1fe		/* Get basic set of flags */
 	xori	r3,r3,HPTE_R_N		/* _PAGE_EXEC -> NOEXEC */
 	rlwinm	r0,r30,32-9+1,30,30	/* _PAGE_RW -> _PAGE_USER (r0) */
@@ -360,7 +360,7 @@ _GLOBAL(__hash_page_4K)
 
 	/* Step 1:
 	 *
-	 * Check permissions, atomically mark the linux PTE busy
+	 * Check permissions, atomically mark the beep PTE busy
 	 * and hashed.
 	 */
 1:
@@ -381,7 +381,7 @@ _GLOBAL(__hash_page_4K)
 	or	r30,r30,r31
 	ori	r30,r30,_PAGE_BUSY | _PAGE_ACCESSED
 	oris	r30,r30,_PAGE_COMBO@h
-	/* Write the linux PTE atomically (setting busy) */
+	/* Write the beep PTE atomically (setting busy) */
 	stdcx.	r30,0,r6
 	bne-	1b
 	isync
@@ -433,7 +433,7 @@ END_MMU_FTR_SECTION_IFSET(MMU_FTR_1T_SEGMENT)
 	xor	r28,r28,r5
 	xor	r28,r28,r0		/* hash */
 
-	/* Convert linux PTE bits into HW equivalents */
+	/* Convert beep PTE bits into HW equivalents */
 4:
 #ifdef CONFIG_PPC_SUBPAGE_PROT
 	andc	r10,r30,r10
@@ -572,7 +572,7 @@ htab_inval_old_hpte:
 	ld	r7,STK_PARAM(R9)(r1)	/* ssize */
 	ld	r8,STK_PARAM(R8)(r1)	/* local */
 	bl	.flush_hash_page
-	/* Clear out _PAGE_HPTE_SUB bits in the new linux PTE */
+	/* Clear out _PAGE_HPTE_SUB bits in the new beep PTE */
 	lis	r0,_PAGE_HPTE_SUB@h
 	ori	r0,r0,_PAGE_HPTE_SUB@l
 	andc	r30,r30,r0
@@ -706,7 +706,7 @@ _GLOBAL(__hash_page_64K)
 
 	/* Step 1:
 	 *
-	 * Check permissions, atomically mark the linux PTE busy
+	 * Check permissions, atomically mark the beep PTE busy
 	 * and hashed.
 	 */
 1:
@@ -732,7 +732,7 @@ END_MMU_FTR_SECTION_IFCLR(MMU_FTR_CI_LARGE_PAGE)
 	rlwinm	r30,r4,32-9+7,31-7,31-7	/* _PAGE_RW -> _PAGE_DIRTY */
 	or	r30,r30,r31
 	ori	r30,r30,_PAGE_BUSY | _PAGE_ACCESSED
-	/* Write the linux PTE atomically (setting busy) */
+	/* Write the beep PTE atomically (setting busy) */
 	stdcx.	r30,0,r6
 	bne-	1b
 	isync
@@ -773,7 +773,7 @@ END_MMU_FTR_SECTION_IFSET(MMU_FTR_1T_SEGMENT)
 	xor	r28,r28,r5
 	xor	r28,r28,r0		/* hash */
 
-	/* Convert linux PTE bits into HW equivalents */
+	/* Convert beep PTE bits into HW equivalents */
 4:	andi.	r3,r30,0x1fe		/* Get basic set of flags */
 	xori	r3,r3,HPTE_R_N		/* _PAGE_EXEC -> NOEXEC */
 	rlwinm	r0,r30,32-9+1,30,30	/* _PAGE_RW -> _PAGE_USER (r0) */

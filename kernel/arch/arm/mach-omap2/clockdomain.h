@@ -14,8 +14,8 @@
 #ifndef __ARCH_ARM_MACH_OMAP2_CLOCKDOMAIN_H
 #define __ARCH_ARM_MACH_OMAP2_CLOCKDOMAIN_H
 
-#include <linux/init.h>
-#include <linux/spinlock.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
 
 #include "powerdomain.h"
 #include "clock.h"

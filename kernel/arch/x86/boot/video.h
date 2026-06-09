@@ -1,9 +1,9 @@
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- beep-c -*- ------------------------------------------------------- *
  *
  *   Copyright (C) 1991, 1992 Linus Torvalds
  *   Copyright 2007 rPath, Inc. - All Rights Reserved
  *
- *   This file is part of the Linux kernel, and is made available under
+ *   This file is part of the Beep kernel, and is made available under
  *   the terms of the GNU General Public License version 2.
  *
  * ----------------------------------------------------------------------- */
@@ -15,7 +15,7 @@
 #ifndef BOOT_VIDEO_H
 #define BOOT_VIDEO_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * This code uses an extended set of video mode numbers. These include:

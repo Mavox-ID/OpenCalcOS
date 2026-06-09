@@ -7,18 +7,18 @@
  * of the GNU General Public License version 2.
  */
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/namei.h>
-#include <linux/mm.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/crc32.h>
-#include <linux/fiemap.h>
-#include <linux/security.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
+#include <beep/buffer_head.h>
+#include <beep/namei.h>
+#include <beep/mm.h>
+#include <beep/xattr.h>
+#include <beep/posix_acl.h>
+#include <beep/gfs2_ondisk.h>
+#include <beep/crc32.h>
+#include <beep/fiemap.h>
+#include <beep/security.h>
 #include <asm/uaccess.h>
 
 #include "gfs2.h"
@@ -796,7 +796,7 @@ static int gfs2_create(struct inode *dir, struct dentry *dentry,
  * gfs2_lookup - Look up a filename in a directory and return its inode
  * @dir: The directory inode
  * @dentry: The dentry of the new inode
- * @nd: passed from Linux VFS, ignored by us
+ * @nd: passed from Beep VFS, ignored by us
  *
  * Called by the VFS layer. Lock dir and call gfs2_lookupi()
  *

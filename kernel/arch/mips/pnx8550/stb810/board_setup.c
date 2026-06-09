@@ -14,13 +14,13 @@
  *  option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/console.h>
-#include <linux/mc146818rtc.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/ioport.h>
+#include <beep/mm.h>
+#include <beep/console.h>
+#include <beep/mc146818rtc.h>
+#include <beep/delay.h>
 
 #include <asm/cpu.h>
 #include <asm/bootinfo.h>

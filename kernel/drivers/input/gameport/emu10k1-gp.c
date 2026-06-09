@@ -3,7 +3,7 @@
  */
 
 /*
- * EMU10k1 - SB Live / Audigy - gameport driver for Linux
+ * EMU10k1 - SB Live / Audigy - gameport driver for Beep
  */
 
 /*
@@ -28,12 +28,12 @@
 
 #include <asm/io.h>
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/gameport.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/gameport.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("EMU10k1 gameport driver");

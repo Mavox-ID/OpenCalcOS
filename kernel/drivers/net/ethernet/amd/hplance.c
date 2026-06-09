@@ -1,26 +1,26 @@
-/* hplance.c  : the  Linux/hp300/lance ethernet driver
+/* hplance.c  : the  Beep/hp300/lance ethernet driver
  *
  * Copyright (C) 05/1998 Peter Maydell <pmaydell@chiark.greenend.org.uk>
  * Based on the Sun Lance driver and the NetBSD HP Lance driver
  * Uses the generic 7990.c LANCE code.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/errno.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/errno.h>
 /* Used for the temporal inet entries and routing */
-#include <linux/socket.h>
-#include <linux/route.h>
-#include <linux/dio.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <beep/socket.h>
+#include <beep/route.h>
+#include <beep/dio.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
 
 #include <asm/io.h>
 #include <asm/pgtable.h>

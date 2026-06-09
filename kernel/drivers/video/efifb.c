@@ -6,14 +6,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/platform_device.h>
-#include <linux/screen_info.h>
-#include <linux/dmi.h>
-#include <linux/pci.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/fb.h>
+#include <beep/platform_device.h>
+#include <beep/screen_info.h>
+#include <beep/dmi.h>
+#include <beep/pci.h>
 #include <video/vga.h>
 
 static bool request_mem_succeeded = false;

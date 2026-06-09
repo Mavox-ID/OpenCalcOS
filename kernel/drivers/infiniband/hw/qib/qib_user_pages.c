@@ -31,8 +31,8 @@
  * SOFTWARE.
  */
 
-#include <linux/mm.h>
-#include <linux/device.h>
+#include <beep/mm.h>
+#include <beep/device.h>
 
 #include "qib.h"
 

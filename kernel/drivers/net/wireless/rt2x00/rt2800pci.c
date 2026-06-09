@@ -31,14 +31,14 @@
 	Supported chipsets: RT2800E & RT2800ED.
  */
 
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/eeprom_93cx6.h>
+#include <beep/delay.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/platform_device.h>
+#include <beep/eeprom_93cx6.h>
 
 #include "rt2x00.h"
 #include "rt2x00pci.h"

@@ -9,14 +9,14 @@
  * (at your option) any later version.
  *
  *   Author:
- *        Wang Qiang(rurality.linux@gmail.com)  2009/12/16
+ *        Wang Qiang(rurality.beep@gmail.com)  2009/12/16
  */
 
 #ifndef __NUC900FB_H
 #define __NUC900FB_H
 
 #include <mach/map.h>
-#include <linux/platform_data/video-nuc900fb.h>
+#include <beep/platform_data/video-nuc900fb.h>
 
 enum nuc900_lcddrv_type {
 	LCDDRV_NUC910,

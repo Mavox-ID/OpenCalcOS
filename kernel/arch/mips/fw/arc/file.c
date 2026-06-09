@@ -8,20 +8,20 @@
  * Copyright (C) 1994, 1995, 1996, 1999 Ralf Baechle
  * Copyright (C) 1999 Silicon Graphics, Inc.
  */
-#include <linux/init.h>
+#include <beep/init.h>
 
 #include <asm/fw/arc/types.h>
 #include <asm/sgialib.h>
 
 LONG
-ArcGetDirectoryEntry(ULONG FileID, struct linux_vdirent *Buffer,
+ArcGetDirectoryEntry(ULONG FileID, struct beep_vdirent *Buffer,
                      ULONG N, ULONG *Count)
 {
 	return ARC_CALL4(get_vdirent, FileID, Buffer, N, Count);
 }
 
 LONG
-ArcOpen(CHAR *Path, enum linux_omode OpenMode, ULONG *FileID)
+ArcOpen(CHAR *Path, enum beep_omode OpenMode, ULONG *FileID)
 {
 	return ARC_CALL3(open, Path, OpenMode, FileID);
 }
@@ -51,19 +51,19 @@ ArcWrite(ULONG FileID, PVOID Buffer, ULONG N, PULONG Count)
 }
 
 LONG
-ArcSeek(ULONG FileID, struct linux_bigint *Position, enum linux_seekmode SeekMode)
+ArcSeek(ULONG FileID, struct beep_bigint *Position, enum beep_seekmode SeekMode)
 {
 	return ARC_CALL3(seek, FileID, Position, SeekMode);
 }
 
 LONG
-ArcMount(char *name, enum linux_mountops op)
+ArcMount(char *name, enum beep_mountops op)
 {
 	return ARC_CALL2(mount, name, op);
 }
 
 LONG
-ArcGetFileInformation(ULONG FileID, struct linux_finfo *Information)
+ArcGetFileInformation(ULONG FileID, struct beep_finfo *Information)
 {
 	return ARC_CALL2(get_finfo, FileID, Information);
 }

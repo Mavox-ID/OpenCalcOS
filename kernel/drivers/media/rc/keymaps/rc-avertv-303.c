@@ -11,7 +11,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 /* AVERTV STUDIO 303 Remote */
 

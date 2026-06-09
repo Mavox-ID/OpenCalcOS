@@ -5,7 +5,7 @@
  *
  * Copyright 1998--1999 Red Hat corp --- All Rights Reserved
  *
- * This file is part of the Linux kernel and is made available under
+ * This file is part of the Beep kernel and is made available under
  * the terms of the GNU General Public License, version 2, or at your
  * option, any later version, incorporated herein by reference.
  *
@@ -15,8 +15,8 @@
 #ifndef _EXT4_JBD2_H
 #define _EXT4_JBD2_H
 
-#include <linux/fs.h>
-#include <linux/jbd2.h>
+#include <beep/fs.h>
+#include <beep/jbd2.h>
 #include "ext4.h"
 
 #define EXT4_JOURNAL(inode)	(EXT4_SB((inode)->i_sb)->s_journal)

@@ -1,18 +1,18 @@
 /*
- * Based upon linux/arch/m68k/mm/sun3mmu.c
- * Based upon linux/arch/ppc/mm/mmu_context.c
+ * Based upon beep/arch/m68k/mm/sun3mmu.c
+ * Based upon beep/arch/ppc/mm/mmu_context.c
  *
  * Implementations of mm routines specific to the Coldfire MMU.
  *
  * Copyright (c) 2008 Freescale Semiconductor, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/bootmem.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/bootmem.h>
 
 #include <asm/setup.h>
 #include <asm/page.h>

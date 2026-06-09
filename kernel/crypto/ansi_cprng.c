@@ -14,11 +14,11 @@
  */
 
 #include <crypto/internal/rng.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/string.h>
 
 #include "internal.h"
 

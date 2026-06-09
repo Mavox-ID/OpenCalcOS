@@ -13,17 +13,17 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/timex.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/timex.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 #include <asm/io.h>
 #include <asm/mipsregs.h>

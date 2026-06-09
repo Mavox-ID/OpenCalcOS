@@ -17,10 +17,10 @@
  * USA.
  */
 
-#include <linux/device.h>
-#include <linux/file.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/file.h>
+#include <beep/kthread.h>
+#include <beep/module.h>
 
 #include "usbip_common.h"
 #include "stub.h"

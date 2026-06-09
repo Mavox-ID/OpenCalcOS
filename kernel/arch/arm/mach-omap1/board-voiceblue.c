@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/board-voiceblue.c
+ * beep/arch/arm/mach-omap1/board-voiceblue.c
  *
  * Modified from board-generic.c
  *
@@ -12,20 +12,20 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mtd/physmap.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_reg.h>
-#include <linux/smc91x.h>
-#include <linux/export.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/mtd/physmap.h>
+#include <beep/notifier.h>
+#include <beep/reboot.h>
+#include <beep/serial_8250.h>
+#include <beep/serial_reg.h>
+#include <beep/smc91x.h>
+#include <beep/export.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

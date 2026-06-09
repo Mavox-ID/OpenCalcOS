@@ -1,5 +1,5 @@
 #include <asm/types.h>
-#include <linux/serial_reg.h>
+#include <beep/serial_reg.h>
 #include <mach/hardware.h>
 
 #define UART_BASE ((volatile u32 *)IOP13XX_UART1_PHYS)

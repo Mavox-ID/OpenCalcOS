@@ -7,13 +7,13 @@
  * option) any later version.
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/phy.h>
-#include <linux/serial_8250.h>
-#include <linux/stmmac.h>
-#include <linux/usb/ehci_pdriver.h>
+#include <beep/clk.h>
+#include <beep/dma-mapping.h>
+#include <beep/err.h>
+#include <beep/phy.h>
+#include <beep/serial_8250.h>
+#include <beep/stmmac.h>
+#include <beep/usb/ehci_pdriver.h>
 #include <asm-generic/sizes.h>
 
 #include <loongson1.h>

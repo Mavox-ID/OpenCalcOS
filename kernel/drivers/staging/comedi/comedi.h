@@ -2,7 +2,7 @@
     include/comedi.h (installed as /usr/include/comedi.h)
     header file for comedi
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1998-2001 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify

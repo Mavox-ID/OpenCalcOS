@@ -1,4 +1,4 @@
-# Makefile for the linux Sparc-specific parts of the memory manager.
+# Makefile for the beep Sparc-specific parts of the memory manager.
 #
 
 asflags-y := -ansi

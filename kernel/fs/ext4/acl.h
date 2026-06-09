@@ -4,7 +4,7 @@
   (C) 2001 Andreas Gruenbacher, <a.gruenbacher@computer.org>
 */
 
-#include <linux/posix_acl_xattr.h>
+#include <beep/posix_acl_xattr.h>
 
 #define EXT4_ACL_VERSION	0x0001
 
@@ -59,7 +59,7 @@ extern int ext4_acl_chmod(struct inode *);
 extern int ext4_init_acl(handle_t *, struct inode *, struct inode *);
 
 #else  /* CONFIG_EXT4_FS_POSIX_ACL */
-#include <linux/sched.h>
+#include <beep/sched.h>
 #define ext4_get_acl NULL
 
 static inline int

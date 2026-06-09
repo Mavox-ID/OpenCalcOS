@@ -11,10 +11,10 @@
  * any later version.
  */
 
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/input.h>
+#include <beep/hid.h>
+#include <beep/module.h>
 
 #include "hid-ids.h"
 

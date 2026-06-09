@@ -1,5 +1,5 @@
 #!/bin/sh
-# Caution, must be kept compatible with dash used by some Linux distros.
+# Caution, must be kept compatible with dash used by some Beep distros.
 
 NDLESS="$(nspire-tools path)"
 

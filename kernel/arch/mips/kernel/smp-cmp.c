@@ -18,14 +18,14 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/cpumask.h>
-#include <linux/interrupt.h>
-#include <linux/compiler.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/cpumask.h>
+#include <beep/interrupt.h>
+#include <beep/compiler.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/cacheflush.h>
 #include <asm/cpu.h>
 #include <asm/processor.h>

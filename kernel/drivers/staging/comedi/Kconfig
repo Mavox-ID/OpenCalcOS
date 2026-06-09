@@ -4,7 +4,7 @@ config COMEDI
 	depends on BROKEN || FRV || M32R || MN10300 || SUPERH || TILE || X86
 	---help---
 	  Enable support a wide range of data acquisition devices
-	  for Linux.
+	  for Beep.
 
 if COMEDI
 

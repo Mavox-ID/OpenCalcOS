@@ -23,23 +23,23 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/smsc911x.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mtd/physmap.h>
-#include <linux/io.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/ulpi.h>
-#include <linux/delay.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/smsc911x.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/mtd/physmap.h>
+#include <beep/io.h>
+#include <beep/input.h>
+#include <beep/i2c.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/ulpi.h>
+#include <beep/delay.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/fixed.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

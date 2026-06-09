@@ -10,9 +10,9 @@
  */
 
 /* includes */
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/usb.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/usb.h>
 #include <msp_usb.h>
 
 /* stream disable*/

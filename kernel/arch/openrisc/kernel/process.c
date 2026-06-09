@@ -1,7 +1,7 @@
 /*
  * OpenRISC process.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -20,21 +20,21 @@
 #define __KERNEL_SYSCALLS__
 #include <stdarg.h>
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/elfcore.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/init_task.h>
-#include <linux/mqueue.h>
-#include <linux/fs.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/elfcore.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/init_task.h>
+#include <beep/mqueue.h>
+#include <beep/fs.h>
 
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>
@@ -42,7 +42,7 @@
 #include <asm/processor.h>
 #include <asm/spr_defs.h>
 
-#include <linux/smp.h>
+#include <beep/smp.h>
 
 /*
  * Pointer to Current thread info structure.

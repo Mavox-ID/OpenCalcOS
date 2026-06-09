@@ -2,8 +2,8 @@
  * Based on arch/arm/mm/extable.c
  */
 
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
 
 int fixup_exception(struct pt_regs *regs)
 {

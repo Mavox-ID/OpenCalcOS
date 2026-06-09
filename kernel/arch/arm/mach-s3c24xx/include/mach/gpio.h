@@ -1,7 +1,7 @@
 /* arch/arm/mach-s3c2410/include/mach/gpio.h
  *
  * Copyright (c) 2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C2410 - GPIO lib support

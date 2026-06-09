@@ -9,10 +9,10 @@
  * General Public License.  See the file "COPYING" in the main
  * directory of this archive for more details.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/superhyway.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/superhyway.h>
+#include <beep/string.h>
 #include <asm/addrspace.h>
 #include <asm/io.h>
 

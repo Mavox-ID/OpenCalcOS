@@ -13,18 +13,18 @@
 #ifndef MAC80211_H
 #define MAC80211_H
 
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/if_ether.h>
-#include <linux/skbuff.h>
-#include <linux/ieee80211.h>
+#include <beep/bug.h>
+#include <beep/kernel.h>
+#include <beep/if_ether.h>
+#include <beep/skbuff.h>
+#include <beep/ieee80211.h>
 #include <net/cfg80211.h>
 #include <asm/unaligned.h>
 
 /**
  * DOC: Introduction
  *
- * mac80211 is the Linux stack for 802.11 hardware that implements
+ * mac80211 is the Beep stack for 802.11 hardware that implements
  * only partial functionality in hard- or firmware. This document
  * defines the interface between mac80211 and low-level hardware
  * drivers.

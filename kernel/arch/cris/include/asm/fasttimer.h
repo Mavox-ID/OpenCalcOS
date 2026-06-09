@@ -1,11 +1,11 @@
 /*
- * linux/include/asm-cris/fasttimer.h
+ * beep/include/asm-cris/fasttimer.h
  *
  * Fast timers for ETRAX100LX
  * Copyright (C) 2000-2007 Axis Communications AB
  */
-#include <linux/time.h> /* struct timeval */
-#include <linux/timex.h>
+#include <beep/time.h> /* struct timeval */
+#include <beep/timex.h>
 
 #ifdef CONFIG_ETRAX_FAST_TIMER
 

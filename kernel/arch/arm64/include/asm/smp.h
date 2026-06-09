@@ -16,9 +16,9 @@
 #ifndef __ASM_SMP_H
 #define __ASM_SMP_H
 
-#include <linux/threads.h>
-#include <linux/cpumask.h>
-#include <linux/thread_info.h>
+#include <beep/threads.h>
+#include <beep/cpumask.h>
+#include <beep/thread_info.h>
 
 #ifndef CONFIG_SMP
 # error "<asm/smp.h> included in non-SMP build"

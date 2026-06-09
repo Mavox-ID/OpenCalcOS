@@ -68,7 +68,7 @@ typedef enum {
 #define NICKNAME_MAX_LEN 21
 
 /* Basic discovery information about a peer */
-typedef struct irda_device_info		discinfo_t;	/* linux/irda.h */
+typedef struct irda_device_info		discinfo_t;	/* beep/irda.h */
 
 /*
  * The DISCOVERY structure is used for both discovery requests and responses

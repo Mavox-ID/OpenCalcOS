@@ -11,13 +11,13 @@
  *
 */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/lcd.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/fb.h>
+#include <beep/backlight.h>
+#include <beep/lcd.h>
+#include <beep/of.h>
+#include <beep/slab.h>
 
 #include <video/platform_lcd.h>
 
@@ -169,6 +169,6 @@ static struct platform_driver platform_lcd_driver = {
 
 module_platform_driver(platform_lcd_driver);
 
-MODULE_AUTHOR("Ben Dooks <ben-linux@fluff.org>");
+MODULE_AUTHOR("Ben Dooks <ben-beep@fluff.org>");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("platform:platform-lcd");

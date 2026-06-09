@@ -8,7 +8,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include <asm/unaligned.h>
 #include "ieee80211_i.h"
 #include "mesh.h"

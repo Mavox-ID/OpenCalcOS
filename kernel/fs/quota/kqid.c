@@ -1,6 +1,6 @@
-#include <linux/fs.h>
-#include <linux/quota.h>
-#include <linux/export.h>
+#include <beep/fs.h>
+#include <beep/quota.h>
+#include <beep/export.h>
 
 /**
  *	qid_eq - Test to see if to kquid values are the same

@@ -1,9 +1,9 @@
 /* arch/arm/mach-s3c2410/pll.c
  *
  * Copyright (c) 2006-2007 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
- *	Vincent Sanders <vince@arm.linux.org.uk>
+ *	Vincent Sanders <vince@arm.beep.org.uk>
  *
  * S3C2410 CPU PLL tables
  *
@@ -22,13 +22,13 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/list.h>
+#include <beep/clk.h>
+#include <beep/err.h>
 
 #include <plat/cpu.h>
 #include <plat/cpu-freq-core.h>

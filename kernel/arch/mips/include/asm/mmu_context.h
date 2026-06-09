@@ -11,10 +11,10 @@
 #ifndef _ASM_MMU_CONTEXT_H
 #define _ASM_MMU_CONTEXT_H
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/slab.h>
 #include <asm/cacheflush.h>
 #include <asm/hazards.h>
 #include <asm/tlbflush.h>

@@ -1,5 +1,5 @@
 /*
- * linux/include/asm-generic/topology.h
+ * beep/include/asm-generic/topology.h
  *
  * Written by: Matthew Dobson, IBM Corporation
  *

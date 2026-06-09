@@ -9,16 +9,16 @@
  * (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/i2c.h>
-#include <linux/i2c/dm355evm_msp.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/leds.h>
+#include <beep/i2c.h>
+#include <beep/i2c/dm355evm_msp.h>
 
 
 /*

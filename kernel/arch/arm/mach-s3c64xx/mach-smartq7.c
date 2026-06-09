@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-s3c64xx/mach-smartq7.c
+ * beep/arch/arm/mach-s3c64xx/mach-smartq7.c
  *
  * Copyright (C) 2010 Maurus Cuelenaere
  *
@@ -9,13 +9,13 @@
  *
  */
 
-#include <linux/fb.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
+#include <beep/fb.h>
+#include <beep/gpio.h>
+#include <beep/gpio_keys.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/leds.h>
+#include <beep/platform_device.h>
 
 #include <asm/hardware/vic.h>
 #include <asm/mach-types.h>

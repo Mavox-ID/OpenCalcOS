@@ -8,10 +8,10 @@
 #define _ASM_UACCESS_H
 
 #ifdef __KERNEL__
-#include <linux/compiler.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/errno.h>
+#include <beep/compiler.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/errno.h>
 #endif
 
 #ifndef __ASSEMBLY__

@@ -1,5 +1,5 @@
 /*
- * linux/sound/soc-dai.h -- ALSA SoC Layer
+ * beep/sound/soc-dai.h -- ALSA SoC Layer
  *
  * Copyright:	2005-2008 Wolfson Microelectronics. PLC.
  *
@@ -10,11 +10,11 @@
  * Digital Audio Interface (DAI) API.
  */
 
-#ifndef __LINUX_SND_SOC_DAI_H
-#define __LINUX_SND_SOC_DAI_H
+#ifndef __BEEP_SND_SOC_DAI_H
+#define __BEEP_SND_SOC_DAI_H
 
 
-#include <linux/list.h>
+#include <beep/list.h>
 
 struct snd_pcm_substream;
 struct snd_soc_dapm_widget;

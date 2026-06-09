@@ -1,4 +1,4 @@
-/* 3c501.c: A 3Com 3c501 Ethernet driver for Linux. */
+/* 3c501.c: A 3Com 3c501 Ethernet driver for Beep. */
 /*
     Written 1992,1993,1994  Donald Becker
 
@@ -111,26 +111,26 @@ static const char version[] =
  *	The 3c501 board.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/kernel.h>
-#include <linux/fcntl.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
+#include <beep/kernel.h>
+#include <beep/fcntl.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/spinlock.h>
+#include <beep/ethtool.h>
+#include <beep/delay.h>
+#include <beep/bitops.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
 
 #include "3c501.h"
 

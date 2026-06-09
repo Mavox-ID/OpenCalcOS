@@ -1,5 +1,5 @@
 /*
- * IA-64 Linux syscall numbers and inline-functions.
+ * IA-64 Beep syscall numbers and inline-functions.
  *
  * Copyright (C) 1998-2005 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>

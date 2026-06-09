@@ -25,15 +25,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
 
-#include <linux/usb.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
+#include <beep/usb.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
 #include <media/saa7115.h>
 
 #include "stk1160.h"

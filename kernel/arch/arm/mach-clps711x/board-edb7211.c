@@ -7,17 +7,17 @@
  * (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/memblock.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/backlight.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/memblock.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/backlight.h>
+#include <beep/platform_device.h>
 
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/partitions.h>
 
 #include <asm/setup.h>
 #include <asm/mach/map.h>

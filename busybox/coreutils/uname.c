@@ -21,7 +21,7 @@
  * Option:                      struct   Example(s):
  *                              utsname
  *                              field:
- * -s, --kernel-name            sysname  Linux
+ * -s, --kernel-name            sysname  Beep
  * -n, --nodename               nodename localhost.localdomain
  * -r, --kernel-release         release  2.6.29
  * -v, --kernel-version         version  #1 SMP Sun Jan 11 20:52:37 EST 2009
@@ -30,7 +30,7 @@
  * -i, --hardware-platform      (none)   x86_64   i386
  *      NB: vanilla coreutils reports "unknown" -p and -i,
  *      x86_64 and i686/i386 shown above are Fedora's inventions.
- * -o, --operating-system       (none)   GNU/Linux
+ * -o, --operating-system       (none)   GNU/Beep
  * -a, --all: all of the above, in the order shown.
  *      If -p or -i is not known, don't show them
  */
@@ -51,11 +51,11 @@
 //config:
 //config:config UNAME_OSNAME
 //config:	string "Operating system name"
-//config:	default "GNU/Linux"
+//config:	default "GNU/Beep"
 //config:	depends on UNAME
 //config:	help
 //config:	Sets the operating system name reported by uname -o.  The
-//config:	default is "GNU/Linux".
+//config:	default is "GNU/Beep".
 //config:
 //can't use "ARCH" for this applet, all hell breaks loose in build system :)
 //config:config BB_ARCH
@@ -90,7 +90,7 @@
 //usage:
 //usage:#define uname_example_usage
 //usage:       "$ uname -a\n"
-//usage:       "Linux debian 2.4.23 #2 Tue Dec 23 17:09:10 MST 2003 i686 GNU/Linux\n"
+//usage:       "Beep debian 2.4.23 #2 Tue Dec 23 17:09:10 MST 2003 i686 GNU/Beep\n"
 
 //usage:#define arch_trivial_usage
 //usage:       ""
@@ -162,7 +162,7 @@ int uname_main(int argc UNUSED_PARAM, char **argv UNUSED_PARAM)
 
 	uname(&uname_info.name); /* never fails */
 
-#if defined(__sparc__) && defined(__linux__)
+#if defined(__sparc__) && defined(__beep__)
 	{
 		char *fake_sparc = getenv("FAKE_SPARC");
 		if (fake_sparc && (fake_sparc[0] | 0x20) == 'y') {

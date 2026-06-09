@@ -19,10 +19,10 @@
 
 #define pr_fmt(fmt) "hci: %s: " fmt, __func__
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/module.h>
 
 #include <net/nfc/hci.h>
 
@@ -44,7 +44,7 @@ static int nfc_hci_execute_cmd_async(struct nfc_hci_dev *hdev, u8 pipe, u8 cmd,
 
 /*
  * HCI command execution completion callback.
- * err will be a standard linux error (may be converted from HCI response)
+ * err will be a standard beep error (may be converted from HCI response)
  * skb contains the response data and must be disposed, or may be NULL if
  * an error occured
  */

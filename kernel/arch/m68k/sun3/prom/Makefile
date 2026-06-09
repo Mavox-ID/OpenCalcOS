@@ -1,5 +1,5 @@
 # Makefile for the Sun Boot PROM interface library under
-# Linux.
+# Beep.
 #
 
 obj-y := init.o console.o printf.o  misc.o

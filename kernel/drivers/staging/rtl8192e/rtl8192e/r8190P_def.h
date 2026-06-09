@@ -21,7 +21,7 @@
 #ifndef R8190P_DEF_H
 #define R8190P_DEF_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define		MAX_SILENT_RESET_RX_SLOT_NUM	10
 

@@ -36,11 +36,11 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/export.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_cache.h>

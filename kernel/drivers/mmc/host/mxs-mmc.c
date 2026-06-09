@@ -20,30 +20,30 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/highmem.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/completion.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sdio.h>
-#include <linux/gpio.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/stmp_device.h>
-#include <linux/spi/mxs-spi.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_gpio.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmaengine.h>
+#include <beep/highmem.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/completion.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/mmc.h>
+#include <beep/mmc/sdio.h>
+#include <beep/gpio.h>
+#include <beep/regulator/consumer.h>
+#include <beep/module.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/stmp_device.h>
+#include <beep/spi/mxs-spi.h>
 
 #define DRIVER_NAME	"mxs-mmc"
 

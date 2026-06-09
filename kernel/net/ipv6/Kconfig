@@ -12,9 +12,9 @@ menuconfig IPV6
 
 	  For general information about IPv6, see
 	  <http://playground.sun.com/pub/ipng/html/ipng-main.html>.
-	  For Linux IPv6 development information, see <http://www.linux-ipv6.org>.
-	  For specific information about IPv6 under Linux, read the HOWTO at
-	  <http://www.bieringer.de/linux/IPv6/>.
+	  For Beep IPv6 development information, see <http://www.beep-ipv6.org>.
+	  For specific information about IPv6 under Beep, read the HOWTO at
+	  <http://www.bieringer.de/beep/IPv6/>.
 
 	  To compile this protocol support as a module, choose M here: the 
 	  module will be called ipv6.
@@ -211,7 +211,7 @@ config IPV6_GRE
 	  GRE (Generic Routing Encapsulation) and at this time allows
 	  encapsulating of IPv4 or IPv6 over existing IPv6 infrastructure.
 	  This driver is useful if the other endpoint is a Cisco router: Cisco
-	  likes GRE much better than the other Linux tunneling driver ("IP
+	  likes GRE much better than the other Beep tunneling driver ("IP
 	  tunneling" above). In addition, GRE allows multicast redistribution
 	  through the tunnel.
 

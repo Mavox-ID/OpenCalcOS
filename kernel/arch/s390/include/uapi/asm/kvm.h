@@ -1,5 +1,5 @@
-#ifndef __LINUX_KVM_S390_H
-#define __LINUX_KVM_S390_H
+#ifndef __BEEP_KVM_S390_H
+#define __BEEP_KVM_S390_H
 /*
  * KVM s390 specific structures and definitions
  *
@@ -12,7 +12,7 @@
  *    Author(s): Carsten Otte <cotte@de.ibm.com>
  *               Christian Borntraeger <borntraeger@de.ibm.com>
  */
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define __KVM_S390
 

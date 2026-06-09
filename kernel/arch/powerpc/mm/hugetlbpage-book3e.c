@@ -5,8 +5,8 @@
  * Copyright (C) 2011 Becky Bruce, Freescale Semiconductor
  *
  */
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
+#include <beep/mm.h>
+#include <beep/hugetlb.h>
 
 static inline int mmu_get_tsize(int psize)
 {

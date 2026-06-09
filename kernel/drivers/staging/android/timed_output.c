@@ -16,11 +16,11 @@
 
 #define pr_fmt(fmt) "timed_output: " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/device.h>
+#include <beep/fs.h>
+#include <beep/err.h>
 
 #include "timed_output.h"
 

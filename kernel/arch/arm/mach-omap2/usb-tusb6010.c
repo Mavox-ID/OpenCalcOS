@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/usb-tusb6010.c
+ * beep/arch/arm/mach-omap2/usb-tusb6010.c
  *
  * Copyright (C) 2006 Nokia Corporation
  *
@@ -8,16 +8,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/export.h>
-#include <linux/platform_data/usb-omap.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/export.h>
+#include <beep/platform_data/usb-omap.h>
 
-#include <linux/usb/musb.h>
+#include <beep/usb/musb.h>
 
 #include "gpmc.h"
 

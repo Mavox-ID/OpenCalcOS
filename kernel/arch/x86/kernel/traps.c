@@ -3,7 +3,7 @@
  *  Copyright (C) 2000, 2001, 2002 Andi Kleen, SuSE Labs
  *
  *  Pentium III FXSR, SSE support
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@vabeep.com>, May 2000
  */
 
 /*
@@ -12,43 +12,43 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/interrupt.h>
-#include <linux/kallsyms.h>
-#include <linux/spinlock.h>
-#include <linux/kprobes.h>
-#include <linux/uaccess.h>
-#include <linux/kdebug.h>
-#include <linux/kgdb.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/kexec.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/bug.h>
-#include <linux/nmi.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/io.h>
+#include <beep/interrupt.h>
+#include <beep/kallsyms.h>
+#include <beep/spinlock.h>
+#include <beep/kprobes.h>
+#include <beep/uaccess.h>
+#include <beep/kdebug.h>
+#include <beep/kgdb.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/ptrace.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/kexec.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/bug.h>
+#include <beep/nmi.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/io.h>
 
 #ifdef CONFIG_EISA
-#include <linux/ioport.h>
-#include <linux/eisa.h>
+#include <beep/ioport.h>
+#include <beep/eisa.h>
 #endif
 
 #if defined(CONFIG_EDAC)
-#include <linux/edac.h>
+#include <beep/edac.h>
 #endif
 
 #include <asm/kmemcheck.h>
 #include <asm/stacktrace.h>
 #include <asm/processor.h>
 #include <asm/debugreg.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/ftrace.h>
 #include <asm/traps.h>
 #include <asm/desc.h>

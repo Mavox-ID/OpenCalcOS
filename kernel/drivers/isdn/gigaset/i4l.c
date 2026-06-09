@@ -14,8 +14,8 @@
  */
 
 #include "gigaset.h"
-#include <linux/isdnif.h>
-#include <linux/export.h>
+#include <beep/isdnif.h>
+#include <beep/export.h>
 
 #define SBUFSIZE	4096	/* sk_buff payload size */
 #define TRANSBUFSIZE	768	/* bytes per skb for transparent receive */
@@ -682,7 +682,7 @@ void gigaset_isdn_unregdev(struct cardstate *cs)
  */
 void gigaset_isdn_regdrv(void)
 {
-	pr_info("ISDN4Linux interface\n");
+	pr_info("ISDN4Beep interface\n");
 	/* nothing to do */
 }
 

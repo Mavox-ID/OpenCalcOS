@@ -14,13 +14,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
+#include <beep/module.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

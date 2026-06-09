@@ -31,10 +31,10 @@
 #ifndef _NETLABEL_USER_H
 #define _NETLABEL_USER_H
 
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/capability.h>
-#include <linux/audit.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
+#include <beep/capability.h>
+#include <beep/audit.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>
 #include <net/netlabel.h>

@@ -24,7 +24,7 @@
  *
  * This chip is a bit nasty because it is a write-only device. Thus, the driver
  * uses shadow registers to keep track of its values. The main problem appears
- * to be the initialization: When Linux boots up, we cannot know if the chip is
+ * to be the initialization: When Beep boots up, we cannot know if the chip is
  * in the default state or not, so we would have to pass such information in
  * platform_data. As this adds a bit of complexity to the driver, this is left
  * out for now until it is really needed.
@@ -37,13 +37,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/slab.h>
-#include <linux/regulator/max8660.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/slab.h>
+#include <beep/regulator/max8660.h>
 
 #define MAX8660_DCDC_MIN_UV	 725000
 #define MAX8660_DCDC_MAX_UV	1800000

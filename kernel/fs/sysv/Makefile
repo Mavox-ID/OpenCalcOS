@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux SystemV/Coherent filesystem routines.
+# Makefile for the Beep SystemV/Coherent filesystem routines.
 #
 
 obj-$(CONFIG_SYSV_FS) += sysv.o

@@ -29,7 +29,7 @@
  * 		ever possible.
  */
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 #undef SERIAL_PARANOIA_CHECK
 #define SERIAL_DO_RESTART
@@ -54,34 +54,34 @@
  * End of serial driver configuration section.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/types.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
+#include <beep/types.h>
+#include <beep/serial.h>
+#include <beep/serial_reg.h>
 static char *serial_version = "4.30";
 
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/circ_buf.h>
-#include <linux/console.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/circ_buf.h>
+#include <beep/console.h>
+#include <beep/major.h>
+#include <beep/string.h>
+#include <beep/fcntl.h>
+#include <beep/ptrace.h>
+#include <beep/ioport.h>
+#include <beep/mm.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/platform_device.h>
 
 #include <asm/setup.h>
 

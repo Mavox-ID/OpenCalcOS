@@ -1,5 +1,5 @@
 /*
- *	linux/arch/alpha/kernel/pci.c
+ *	beep/arch/alpha/kernel/pci.c
  *
  * Extruded from code written by
  *	Dave Rusling (david.rusling@reo.mts.dec.com)
@@ -12,15 +12,15 @@
  * Nov 2000, Ivan Kokshaysky <ink@jurassic.park.msu.ru>
  *	     PCI-PCI bridges cleanup
  */
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/bootmem.h>
-#include <linux/module.h>
-#include <linux/cache.h>
-#include <linux/slab.h>
+#include <beep/string.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/bootmem.h>
+#include <beep/module.h>
+#include <beep/cache.h>
+#include <beep/slab.h>
 #include <asm/machvec.h>
 
 #include "proto.h"

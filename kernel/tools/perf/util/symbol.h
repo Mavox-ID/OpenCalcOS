@@ -6,8 +6,8 @@
 #include <stdint.h>
 #include "map.h"
 #include "../perf.h"
-#include <linux/list.h>
-#include <linux/rbtree.h>
+#include <beep/list.h>
+#include <beep/rbtree.h>
 #include <stdio.h>
 #include <byteswap.h>
 #include <libgen.h>
@@ -84,7 +84,7 @@ struct strlist;
 struct symbol_conf {
 	unsigned short	priv_size;
 	unsigned short	nr_events;
-	bool		try_vmlinux_path,
+	bool		try_vmbeep_path,
 			show_kernel_path,
 			use_modules,
 			sort_by_name,
@@ -97,11 +97,11 @@ struct symbol_conf {
 			kptr_restrict,
 			annotate_asm_raw,
 			annotate_src;
-	const char	*vmlinux_name,
+	const char	*vmbeep_name,
 			*kallsyms_name,
 			*source_prefix,
 			*field_sep;
-	const char	*default_guest_vmlinux_name,
+	const char	*default_guest_vmbeep_name,
 			*default_guest_kallsyms,
 			*default_guest_modules;
 	const char	*guestmount;
@@ -194,9 +194,9 @@ bool symsrc__has_symtab(struct symsrc *ss);
 bool symsrc__possibly_runtime(struct symsrc *ss);
 
 int dso__load(struct dso *dso, struct map *map, symbol_filter_t filter);
-int dso__load_vmlinux(struct dso *dso, struct map *map,
-		      const char *vmlinux, symbol_filter_t filter);
-int dso__load_vmlinux_path(struct dso *dso, struct map *map,
+int dso__load_vmbeep(struct dso *dso, struct map *map,
+		      const char *vmbeep, symbol_filter_t filter);
+int dso__load_vmbeep_path(struct dso *dso, struct map *map,
 			   symbol_filter_t filter);
 int dso__load_kallsyms(struct dso *dso, const char *filename, struct map *map,
 		       symbol_filter_t filter);

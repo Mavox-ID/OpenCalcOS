@@ -9,13 +9,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/if_ether.h>
-#include <linux/etherdevice.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/if_ether.h>
+#include <beep/etherdevice.h>
+#include <beep/list.h>
+#include <beep/rcupdate.h>
+#include <beep/rtnetlink.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include <net/mac80211.h>
 #include <asm/unaligned.h>
 #include "ieee80211_i.h"

@@ -3,7 +3,7 @@
  */
 
 /*
- * Newton keyboard driver for Linux
+ * Newton keyboard driver for Beep
  */
 
 /*
@@ -26,11 +26,11 @@
  * Justin Cormack, 68 Dartmouth Park Road, London NW5 1SN, UK.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/init.h>
-#include <linux/serio.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/input.h>
+#include <beep/init.h>
+#include <beep/serio.h>
 
 #define DRIVER_DESC	"Newton keyboard driver"
 

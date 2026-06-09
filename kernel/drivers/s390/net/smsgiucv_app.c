@@ -6,21 +6,21 @@
  * as uevents.
  *
  * Copyright IBM Corp. 2010
- * Author(s): Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ * Author(s): Hendrik Brueckner <brueckner@beep.vnet.ibm.com>
  *
  */
 #define KMSG_COMPONENT		"smsgiucv_app"
 #define pr_fmt(fmt)		KMSG_COMPONENT ": " fmt
 
-#include <linux/ctype.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/kobject.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <beep/ctype.h>
+#include <beep/err.h>
+#include <beep/device.h>
+#include <beep/list.h>
+#include <beep/kobject.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
 #include <net/iucv/iucv.h>
 #include "smsgiucv.h"
 
@@ -215,4 +215,4 @@ module_exit(smsgiucv_app_exit);
 
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("Deliver z/VM CP SMSG as uevents");
-MODULE_AUTHOR("Hendrik Brueckner <brueckner@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Hendrik Brueckner <brueckner@beep.vnet.ibm.com>");

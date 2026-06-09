@@ -1,15 +1,15 @@
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/stddef.h>
-#include <linux/module.h>
-#include <linux/bootmem.h>
-#include <linux/highmem.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
+#include <beep/stddef.h>
+#include <beep/module.h>
+#include <beep/bootmem.h>
+#include <beep/highmem.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/slab.h>
 #include <asm/fixmap.h>
 #include <asm/page.h>
 #include <as-layout.h>

@@ -23,10 +23,10 @@
 #ifndef _DVBDEV_H_
 #define _DVBDEV_H_
 
-#include <linux/types.h>
-#include <linux/poll.h>
-#include <linux/fs.h>
-#include <linux/list.h>
+#include <beep/types.h>
+#include <beep/poll.h>
+#include <beep/fs.h>
+#include <beep/list.h>
 
 #define DVB_MAJOR 212
 

@@ -17,15 +17,15 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/signal.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/signal.h>
 
 #include <asm/mach-types.h>
 #include <asm/irq.h>

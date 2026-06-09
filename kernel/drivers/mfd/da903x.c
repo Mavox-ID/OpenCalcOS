@@ -12,13 +12,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/mfd/da903x.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/mfd/da903x.h>
+#include <beep/slab.h>
 
 #define DA9030_CHIP_ID		0x00
 #define DA9030_EVENT_A		0x01

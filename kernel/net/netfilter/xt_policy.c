@@ -7,15 +7,15 @@
  * published by the Free Software Foundation.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
 #include <net/xfrm.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter/xt_policy.h>
-#include <linux/netfilter/x_tables.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter/xt_policy.h>
+#include <beep/netfilter/x_tables.h>
 
 MODULE_AUTHOR("Patrick McHardy <kaber@trash.net>");
 MODULE_DESCRIPTION("Xtables: IPsec policy match");

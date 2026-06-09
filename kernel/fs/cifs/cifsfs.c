@@ -23,20 +23,20 @@
 
 /* Note that BB means BUGBUG (ie something to fix eventually) */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/seq_file.h>
-#include <linux/vfs.h>
-#include <linux/mempool.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/namei.h>
-#include <linux/random.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/seq_file.h>
+#include <beep/vfs.h>
+#include <beep/mempool.h>
+#include <beep/delay.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
+#include <beep/namei.h>
+#include <beep/random.h>
 #include <net/ipv6.h>
 #include "cifsfs.h"
 #include "cifspdu.h"
@@ -45,8 +45,8 @@
 #include "cifsproto.h"
 #include "cifs_debug.h"
 #include "cifs_fs_sb.h"
-#include <linux/mm.h>
-#include <linux/key-type.h>
+#include <beep/mm.h>
+#include <beep/key-type.h>
 #include "cifs_spnego.h"
 #include "fscache.h"
 #ifdef CONFIG_CIFS_SMB2
@@ -56,7 +56,7 @@
 int cifsFYI = 0;
 int traceSMB = 0;
 bool enable_oplocks = true;
-unsigned int linuxExtEnabled = 1;
+unsigned int beepExtEnabled = 1;
 unsigned int lookupCacheEnabled = 1;
 unsigned int global_secflags = CIFSSEC_DEF;
 /* unsigned int ntlmv2_support = 0; */

@@ -39,7 +39,7 @@
 #include "trx.h"
 #include "led.h"
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 static void rtl92d_init_aspm_vars(struct ieee80211_hw *hw)
 {

@@ -1,8 +1,8 @@
-#ifndef __LINUX_UDF_SB_H
-#define __LINUX_UDF_SB_H
+#ifndef __BEEP_UDF_SB_H
+#define __BEEP_UDF_SB_H
 
-#include <linux/mutex.h>
-#include <linux/bitops.h>
+#include <beep/mutex.h>
+#include <beep/bitops.h>
 
 /* Since UDF 2.01 is ISO 13346 based... */
 #define UDF_SUPER_MAGIC			0x15013346
@@ -182,4 +182,4 @@ static inline void UDF_CLEAR_FLAG(struct super_block *sb, int flag)
 	clear_bit(flag, &UDF_SB(sb)->s_flags);
 }
 
-#endif /* __LINUX_UDF_SB_H */
+#endif /* __BEEP_UDF_SB_H */

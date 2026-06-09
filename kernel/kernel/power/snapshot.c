@@ -1,5 +1,5 @@
 /*
- * linux/kernel/power/snapshot.c
+ * beep/kernel/power/snapshot.c
  *
  * This file provides system snapshot/restore functionality for swsusp.
  *
@@ -10,23 +10,23 @@
  *
  */
 
-#include <linux/version.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/suspend.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/pm.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/syscalls.h>
-#include <linux/console.h>
-#include <linux/highmem.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/version.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/suspend.h>
+#include <beep/delay.h>
+#include <beep/bitops.h>
+#include <beep/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/pm.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/syscalls.h>
+#include <beep/console.h>
+#include <beep/highmem.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 
 #include <asm/uaccess.h>
 #include <asm/mmu_context.h>
@@ -1623,13 +1623,13 @@ asmlinkage int swsusp_save(void)
 static int init_header_complete(struct swsusp_info *info)
 {
 	memcpy(&info->uts, init_utsname(), sizeof(struct new_utsname));
-	info->version_code = LINUX_VERSION_CODE;
+	info->version_code = BEEP_VERSION_CODE;
 	return 0;
 }
 
 static char *check_image_kernel(struct swsusp_info *info)
 {
-	if (info->version_code != LINUX_VERSION_CODE)
+	if (info->version_code != BEEP_VERSION_CODE)
 		return "kernel version";
 	if (strcmp(info->uts.sysname,init_utsname()->sysname))
 		return "system type";

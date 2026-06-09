@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/mm/mmu.c
+ * beep/arch/unicore32/mm/mmu.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -9,16 +9,16 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/mman.h>
-#include <linux/nodemask.h>
-#include <linux/memblock.h>
-#include <linux/fs.h>
-#include <linux/bootmem.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/mman.h>
+#include <beep/nodemask.h>
+#include <beep/memblock.h>
+#include <beep/fs.h>
+#include <beep/bootmem.h>
+#include <beep/io.h>
 
 #include <asm/cputype.h>
 #include <asm/sections.h>

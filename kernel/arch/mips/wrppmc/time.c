@@ -7,12 +7,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 1996, 1997, 2004 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1996, 1997, 2004 by Ralf Baechle (ralf@beep-mips.org)
  * Copyright (C) 2006, Wind River System Inc.
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 
 #include <asm/gt64120.h>
 #include <asm/time.h>

@@ -32,16 +32,16 @@
  * SOFTWARE.
  */
 
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/moduleparam.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/igmp.h>
-#include <linux/inetdevice.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
+#include <beep/skbuff.h>
+#include <beep/rtnetlink.h>
+#include <beep/moduleparam.h>
+#include <beep/ip.h>
+#include <beep/in.h>
+#include <beep/igmp.h>
+#include <beep/inetdevice.h>
+#include <beep/delay.h>
+#include <beep/completion.h>
+#include <beep/slab.h>
 
 #include <net/dst.h>
 

@@ -27,7 +27,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE.
  */
-#include <linux/compat.h>
+#include <beep/compat.h>
 
 #include <drm/drmP.h>
 #include <drm/radeon_drm.h>

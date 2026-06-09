@@ -2,7 +2,7 @@
 #define _ASM_X86_PGTABLE_3LEVEL_DEFS_H
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <beep/types.h>
 
 typedef u64	pteval_t;
 typedef u64	pmdval_t;

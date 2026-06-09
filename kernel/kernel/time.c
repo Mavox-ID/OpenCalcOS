@@ -1,5 +1,5 @@
 /*
- *  linux/kernel/time.c
+ *  beep/kernel/time.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -27,16 +27,16 @@
  *	with nanosecond accuracy
  */
 
-#include <linux/export.h>
-#include <linux/timex.h>
-#include <linux/capability.h>
-#include <linux/timekeeper_internal.h>
-#include <linux/errno.h>
-#include <linux/syscalls.h>
-#include <linux/security.h>
-#include <linux/fs.h>
-#include <linux/math64.h>
-#include <linux/ptrace.h>
+#include <beep/export.h>
+#include <beep/timex.h>
+#include <beep/capability.h>
+#include <beep/timekeeper_internal.h>
+#include <beep/errno.h>
+#include <beep/syscalls.h>
+#include <beep/security.h>
+#include <beep/fs.h>
+#include <beep/math64.h>
+#include <beep/ptrace.h>
 
 #include <asm/uaccess.h>
 #include <asm/unistd.h>
@@ -352,7 +352,7 @@ void set_normalized_timespec(struct timespec *ts, time_t sec, s64 nsec)
 		/*
 		 * The following asm() prevents the compiler from
 		 * optimising this loop into a modulo operation. See
-		 * also __iter_div_u64_rem() in include/linux/time.h
+		 * also __iter_div_u64_rem() in include/beep/time.h
 		 */
 		asm("" : "+rm"(nsec));
 		nsec -= NSEC_PER_SEC;

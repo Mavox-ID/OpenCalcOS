@@ -9,13 +9,13 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/types.h>
-#include <linux/dma-mapping.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/export.h>
-#include <linux/highmem.h>
-#include <linux/scatterlist.h>
+#include <beep/types.h>
+#include <beep/dma-mapping.h>
+#include <beep/list.h>
+#include <beep/pci.h>
+#include <beep/export.h>
+#include <beep/highmem.h>
+#include <beep/scatterlist.h>
 #include <asm/io.h>
 
 void *dma_alloc_coherent(struct device *hwdev, size_t size, dma_addr_t *dma_handle, gfp_t gfp)

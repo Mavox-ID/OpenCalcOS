@@ -1,11 +1,11 @@
 /*
  * IPVS         An implementation of the IP virtual server support for the
- *              LINUX operating system.  IPVS is now implemented as a module
+ *              BEEP operating system.  IPVS is now implemented as a module
  *              over the Netfilter framework. IPVS can be used to build a
  *              high-performance and highly available server based on a
  *              cluster of servers.
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@beepvirtualserver.org>
  *              Peter Kese <peter.kese@ijs.si>
  *              Julian Anastasov <ja@ssi.bg>
  *
@@ -25,17 +25,17 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/net.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/proc_fs.h>		/* for proc_net_* */
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/jhash.h>
-#include <linux/random.h>
+#include <beep/interrupt.h>
+#include <beep/in.h>
+#include <beep/net.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/vmalloc.h>
+#include <beep/proc_fs.h>		/* for proc_net_* */
+#include <beep/slab.h>
+#include <beep/seq_file.h>
+#include <beep/jhash.h>
+#include <beep/random.h>
 
 #include <net/net_namespace.h>
 #include <net/ip_vs.h>

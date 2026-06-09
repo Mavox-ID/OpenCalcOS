@@ -13,8 +13,8 @@
  */
 
 /* This file is machine-generated; DO NOT EDIT! */
-#ifndef __GXIO_USB_HOST_LINUX_RPC_H__
-#define __GXIO_USB_HOST_LINUX_RPC_H__
+#ifndef __GXIO_USB_HOST_BEEP_RPC_H__
+#define __GXIO_USB_HOST_BEEP_RPC_H__
 
 #include <hv/iorpc.h>
 
@@ -22,8 +22,8 @@
 #include <asm/page.h>
 #include <gxio/kiorpc.h>
 #include <gxio/usb_host.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <beep/string.h>
+#include <beep/module.h>
 #include <asm/pgtable.h>
 
 #define GXIO_USB_HOST_OP_CFG_INTERRUPT IORPC_OPCODE(IORPC_FORMAT_KERNEL_INTERRUPT, 0x1800)
@@ -43,4 +43,4 @@ int gxio_usb_host_get_mmio_base(gxio_usb_host_context_t * context,
 int gxio_usb_host_check_mmio_offset(gxio_usb_host_context_t * context,
 				    unsigned long offset, unsigned long size);
 
-#endif /* !__GXIO_USB_HOST_LINUX_RPC_H__ */
+#endif /* !__GXIO_USB_HOST_BEEP_RPC_H__ */

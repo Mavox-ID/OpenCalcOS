@@ -6,9 +6,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
+#include <beep/io.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/map.h>
 
 #include <mach/tc.h>
 #include <mach/flash.h>

@@ -2,9 +2,9 @@
  *    User Space Access Routines
  *
  *    Copyright (C) 2000-2002 Hewlett-Packard (John Marvin)
- *    Copyright (C) 2000 Richard Hirst <rhirst with parisc-linux.org>
+ *    Copyright (C) 2000 Richard Hirst <rhirst with parisc-beep.org>
  *    Copyright (C) 2001 Matthieu Delahaye <delahaym at esiee.fr>
- *    Copyright (C) 2003 Randolph Chung <tausq with parisc-linux.org>
+ *    Copyright (C) 2003 Randolph Chung <tausq with parisc-beep.org>
  *
  *
  *    This program is free software; you can redistribute it and/or modify
@@ -37,7 +37,7 @@
 	
 #include <asm/assembly.h>
 #include <asm/errno.h>
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 	/*
 	 * get_sr gets the appropriate space value into

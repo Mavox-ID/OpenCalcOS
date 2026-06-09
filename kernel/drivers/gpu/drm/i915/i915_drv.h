@@ -1,4 +1,4 @@
-/* i915_drv.h -- Private header for the I915 driver -*- linux-c -*-
+/* i915_drv.h -- Private header for the I915 driver -*- beep-c -*-
  */
 /*
  *
@@ -33,13 +33,13 @@
 #include "i915_reg.h"
 #include "intel_bios.h"
 #include "intel_ringbuffer.h"
-#include <linux/io-mapping.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <beep/io-mapping.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
 #include <drm/intel-gtt.h>
-#include <linux/backlight.h>
-#include <linux/intel-iommu.h>
-#include <linux/kref.h>
+#include <beep/backlight.h>
+#include <beep/intel-iommu.h>
+#include <beep/kref.h>
 
 /* General customization:
  */

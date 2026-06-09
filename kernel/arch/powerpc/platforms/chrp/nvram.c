@@ -10,9 +10,9 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
 #include <asm/uaccess.h>
 #include <asm/prom.h>
 #include <asm/machdep.h>

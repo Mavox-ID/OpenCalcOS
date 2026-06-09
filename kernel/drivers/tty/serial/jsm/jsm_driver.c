@@ -24,9 +24,9 @@
  *
  *
  ***********************************************************************/
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
 
 #include "jsm.h"
 

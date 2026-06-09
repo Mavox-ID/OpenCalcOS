@@ -11,16 +11,16 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/leds.h>
-#include <linux/mfd/core.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/leds.h>
+#include <beep/mfd/core.h>
+#include <beep/mutex.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
 
-#include <linux/mfd/lm3533.h>
+#include <beep/mfd/lm3533.h>
 
 
 #define LM3533_LVCTRLBANK_MIN		2

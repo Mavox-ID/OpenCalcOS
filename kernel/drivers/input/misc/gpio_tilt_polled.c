@@ -14,16 +14,16 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/input-polldev.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/input/gpio_tilt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/input-polldev.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/input/gpio_tilt.h>
 
 #define DRV_NAME	"gpio-tilt-polled"
 

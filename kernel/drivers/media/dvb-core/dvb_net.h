@@ -22,11 +22,11 @@
 #ifndef _DVB_NET_H_
 #define _DVB_NET_H_
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/inetdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
 
 #include "dvbdev.h"
 

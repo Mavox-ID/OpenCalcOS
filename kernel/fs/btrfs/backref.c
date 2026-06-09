@@ -16,7 +16,7 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/vmalloc.h>
+#include <beep/vmalloc.h>
 #include "ctree.h"
 #include "disk-io.h"
 #include "backref.h"

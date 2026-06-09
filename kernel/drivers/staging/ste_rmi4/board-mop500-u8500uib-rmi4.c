@@ -2,9 +2,9 @@
  * Some platform data for the RMI4 touchscreen that will override the __weak
  * platform data in the Ux500 machine if this driver is activated.
  */
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
 #include <mach/irqs.h>
 #include "synaptics_i2c_rmi4.h"
 

@@ -1,21 +1,21 @@
 /* drivers/atm/idt77105.c - IDT77105 (PHY) driver */
  
-/* Written 1999 by Greg Banks, NEC Australia <gnb@linuxfan.com>. Based on suni.c */
+/* Written 1999 by Greg Banks, NEC Australia <gnb@beepfan.com>. Based on suni.c */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/atmdev.h>
-#include <linux/sonet.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/capability.h>
-#include <linux/atm_idt77105.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/atmdev.h>
+#include <beep/sonet.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/capability.h>
+#include <beep/atm_idt77105.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
 #include <asm/param.h>
 #include <asm/uaccess.h>
 

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/h8300/kernel/gpio.c
+ *  beep/arch/h8300/kernel/gpio.c
  *
  *  Yoshinori Sato <ysato@users.sourceforge.jp>
  *
@@ -9,12 +9,12 @@
  * Internal I/O Port Management
  */
 
-#include <linux/stddef.h>
-#include <linux/proc_fs.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/init.h>
+#include <beep/stddef.h>
+#include <beep/proc_fs.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/fs.h>
+#include <beep/init.h>
 
 #define _(addr) (volatile unsigned char *)(addr)
 #if defined(CONFIG_H83007) || defined(CONFIG_H83068)

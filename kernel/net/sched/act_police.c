@@ -10,15 +10,15 @@
  * 		J Hadi Salim (action changes)
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/skbuff.h>
+#include <beep/rtnetlink.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 #include <net/act_api.h>
 #include <net/netlink.h>
 

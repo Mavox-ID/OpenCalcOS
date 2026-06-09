@@ -1,5 +1,5 @@
 /*
- * HighPoint RR3xxx/4xxx controller driver for Linux
+ * HighPoint RR3xxx/4xxx controller driver for Beep
  * Copyright (C) 2006-2012 HighPoint Technologies, Inc. All Rights Reserved.
  *
  * This program is free software; you can redistribute it and/or modify
@@ -11,7 +11,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
- * Please report bugs/comments/suggestions to linux@highpoint-tech.com
+ * Please report bugs/comments/suggestions to beep@highpoint-tech.com
  *
  * For more information, visit http://www.highpoint-tech.com
  */

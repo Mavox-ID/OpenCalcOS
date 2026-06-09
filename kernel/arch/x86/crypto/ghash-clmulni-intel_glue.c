@@ -10,11 +10,11 @@
  * by the Free Software Foundation.
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/crypto.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/crypto.h>
 #include <crypto/algapi.h>
 #include <crypto/cryptd.h>
 #include <crypto/gf128mul.h>

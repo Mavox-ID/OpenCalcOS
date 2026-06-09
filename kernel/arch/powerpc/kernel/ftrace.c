@@ -10,14 +10,14 @@
  *
  */
 
-#include <linux/spinlock.h>
-#include <linux/hardirq.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/ftrace.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/list.h>
+#include <beep/spinlock.h>
+#include <beep/hardirq.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
+#include <beep/ftrace.h>
+#include <beep/percpu.h>
+#include <beep/init.h>
+#include <beep/list.h>
 
 #include <asm/cacheflush.h>
 #include <asm/code-patching.h>

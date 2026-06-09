@@ -37,24 +37,24 @@
  *  out_of_space hacks, D. Gilbert (dpg) 990608
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/unistd.h>
-#include <linux/spinlock.h>
-#include <linux/kmod.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/mutex.h>
-#include <linux/async.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/completion.h>
+#include <beep/unistd.h>
+#include <beep/spinlock.h>
+#include <beep/kmod.h>
+#include <beep/interrupt.h>
+#include <beep/notifier.h>
+#include <beep/cpu.h>
+#include <beep/mutex.h>
+#include <beep/async.h>
 #include <asm/unaligned.h>
 
 #include <scsi/scsi.h>

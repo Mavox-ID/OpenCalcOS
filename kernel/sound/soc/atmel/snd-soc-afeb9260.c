@@ -19,13 +19,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
 
-#include <linux/atmel-ssc.h>
+#include <beep/atmel-ssc.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
@@ -33,7 +33,7 @@
 
 #include <asm/mach-types.h>
 #include <mach/hardware.h>
-#include <linux/gpio.h>
+#include <beep/gpio.h>
 
 #include "../codecs/tlv320aic23.h"
 #include "atmel-pcm.h"

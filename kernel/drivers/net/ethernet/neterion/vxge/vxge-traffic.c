@@ -11,8 +11,8 @@
  *                 Virtualized Server Adapter.
  * Copyright(c) 2002-2010 Exar Corp.
  ******************************************************************************/
-#include <linux/etherdevice.h>
-#include <linux/prefetch.h>
+#include <beep/etherdevice.h>
+#include <beep/prefetch.h>
 
 #include "vxge-traffic.h"
 #include "vxge-config.h"

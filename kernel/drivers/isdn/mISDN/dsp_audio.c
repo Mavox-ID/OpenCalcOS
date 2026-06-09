@@ -9,10 +9,10 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/mISDNif.h>
-#include <linux/mISDNdsp.h>
-#include <linux/export.h>
+#include <beep/delay.h>
+#include <beep/mISDNif.h>
+#include <beep/mISDNdsp.h>
+#include <beep/export.h>
 #include "core.h"
 #include "dsp.h"
 

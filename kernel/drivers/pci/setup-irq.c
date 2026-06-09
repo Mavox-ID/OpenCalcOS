@@ -10,12 +10,12 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/cache.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/cache.h>
 
 void __weak pcibios_update_irq(struct pci_dev *dev, int irq)
 {

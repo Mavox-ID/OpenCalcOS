@@ -16,11 +16,11 @@
  * other SOC units
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
-#include <linux/smp.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/of_address.h>
+#include <beep/io.h>
+#include <beep/smp.h>
 #include <asm/smp_plat.h>
 
 static void __iomem *pmsu_mp_base;

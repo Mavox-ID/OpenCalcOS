@@ -11,14 +11,14 @@ OBJCOPYFLAGS = -O binary $(objcopyflags-y)
 subdir- := compressed rescue
 targets := Image
 
-$(obj)/Image: vmlinux FORCE
+$(obj)/Image: vmbeep FORCE
 	$(call if_changed,objcopy)
 	@echo '  Kernel: $@ is ready'
 
-$(obj)/compressed/vmlinux: $(obj)/Image FORCE
+$(obj)/compressed/vmbeep: $(obj)/Image FORCE
 	$(Q)$(MAKE) $(build)=$(obj)/compressed $@
 	$(Q)$(MAKE) $(build)=$(obj)/rescue $(obj)/rescue/rescue.bin
 
-$(obj)/zCalc:  $(obj)/compressed/vmlinux
+$(obj)/zCalc:  $(obj)/compressed/vmbeep
 	@cp $< $@
 	@echo '  Kernel: $@ is ready'

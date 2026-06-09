@@ -7,8 +7,8 @@
  *				leaking kernel bits.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
 #include <asm/uaccess.h>
 #include <asm/processor.h>
 

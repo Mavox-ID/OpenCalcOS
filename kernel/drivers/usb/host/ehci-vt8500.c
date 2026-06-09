@@ -16,8 +16,8 @@
  *
  */
 
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
 
 static const struct hc_driver vt8500_ehci_hc_driver = {
 	.description		= hcd_name,

@@ -13,19 +13,19 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/skbuff.h>
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
-#include <linux/pci.h>
+#include <beep/skbuff.h>
+#include <beep/crypto.h>
+#include <beep/scatterlist.h>
+#include <beep/pci.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_host.h>
-#include <linux/if_vlan.h>
-#include <linux/inet.h>
+#include <beep/if_vlan.h>
+#include <beep/inet.h>
 #include <net/dst.h>
 #include <net/route.h>
-#include <linux/inetdevice.h>	/* ip_dev_find */
-#include <linux/module.h>
+#include <beep/inetdevice.h>	/* ip_dev_find */
+#include <beep/module.h>
 #include <net/tcp.h>
 
 static unsigned int dbg_level;

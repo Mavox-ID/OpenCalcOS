@@ -14,15 +14,15 @@
  *	internal Integrity Measurement Architecture (IMA) definitions
  */
 
-#ifndef __LINUX_IMA_H
-#define __LINUX_IMA_H
+#ifndef __BEEP_IMA_H
+#define __BEEP_IMA_H
 
-#include <linux/types.h>
-#include <linux/crypto.h>
-#include <linux/security.h>
-#include <linux/hash.h>
-#include <linux/tpm.h>
-#include <linux/audit.h>
+#include <beep/types.h>
+#include <beep/crypto.h>
+#include <beep/security.h>
+#include <beep/hash.h>
+#include <beep/tpm.h>
+#include <beep/audit.h>
 
 #include "../integrity.h"
 

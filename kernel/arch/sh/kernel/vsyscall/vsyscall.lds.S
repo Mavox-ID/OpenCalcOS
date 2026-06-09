@@ -6,9 +6,9 @@
 #include <asm/asm-offsets.h>
 
 #ifdef CONFIG_CPU_LITTLE_ENDIAN
-OUTPUT_FORMAT("elf32-sh-linux", "elf32-sh-linux", "elf32-sh-linux")
+OUTPUT_FORMAT("elf32-sh-beep", "elf32-sh-beep", "elf32-sh-beep")
 #else
-OUTPUT_FORMAT("elf32-shbig-linux", "elf32-shbig-linux", "elf32-shbig-linux")
+OUTPUT_FORMAT("elf32-shbig-beep", "elf32-shbig-beep", "elf32-shbig-beep")
 #endif
 OUTPUT_ARCH(sh)
 
@@ -73,7 +73,7 @@ PHDRS
  */
 VERSION
 {
-	LINUX_2.6 {
+	BEEP_2.6 {
 	global:
 		__kernel_vsyscall;
 		__kernel_sigreturn;

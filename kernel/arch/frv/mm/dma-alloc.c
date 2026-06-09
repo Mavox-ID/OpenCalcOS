@@ -5,7 +5,7 @@
  *  PowerPC version derived from arch/arm/mm/consistent.c
  *    Copyright (C) 2001 Dan Malek (dmalek@jlc.net)
  *
- *  linux/arch/arm/mm/consistent.c
+ *  beep/arch/arm/mm/consistent.c
  *
  *  Copyright (C) 2000 Russell King
  *
@@ -21,23 +21,23 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/stddef.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/hardirq.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/stddef.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/hardirq.h>
+#include <beep/gfp.h>
 
 #include <asm/pgalloc.h>
 #include <asm/io.h>

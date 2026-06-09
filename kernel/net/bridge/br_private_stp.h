@@ -1,5 +1,5 @@
 /*
- *	Linux ethernet bridge
+ *	Beep ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>

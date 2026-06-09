@@ -3,7 +3,7 @@
  * TLB and MMU hash table.
  *
  *  Derived from arch/ppc64/mm/init.c:
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -21,11 +21,11 @@
  *  2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/percpu.h>
+#include <beep/hardirq.h>
 #include <asm/pgalloc.h>
 #include <asm/tlbflush.h>
 #include <asm/tlb.h>
@@ -34,7 +34,7 @@
 DEFINE_PER_CPU(struct ppc64_tlb_batch, ppc64_tlb_batch);
 
 /*
- * A linux PTE was changed and the corresponding hash table entry
+ * A beep PTE was changed and the corresponding hash table entry
  * neesd to be flushed. This function will either perform the flush
  * immediately or will batch it up if the current CPU has an active
  * batch on it.
@@ -171,7 +171,7 @@ void tlb_flush(struct mmu_gather *tlb)
 /**
  * __flush_hash_table_range - Flush all HPTEs for a given address range
  *                            from the hash table (and the TLB). But keeps
- *                            the linux PTEs intact.
+ *                            the beep PTEs intact.
  *
  * @mm		: mm_struct of the target address space (generally init_mm)
  * @start	: starting address
@@ -206,7 +206,7 @@ void __flush_hash_table_range(struct mm_struct *mm, unsigned long start,
 	local_irq_save(flags);
 	arch_enter_lazy_mmu_mode();
 	for (; start < end; start += PAGE_SIZE) {
-		pte_t *ptep = find_linux_pte(mm->pgd, start);
+		pte_t *ptep = find_beep_pte(mm->pgd, start);
 		unsigned long pte;
 
 		if (ptep == NULL)

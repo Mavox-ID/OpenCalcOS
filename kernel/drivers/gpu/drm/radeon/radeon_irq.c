@@ -1,4 +1,4 @@
-/* radeon_irq.c -- IRQ handling for radeon -*- linux-c -*- */
+/* radeon_irq.c -- IRQ handling for radeon -*- beep-c -*- */
 /*
  * Copyright (C) The Weather Channel, Inc.  2002.  All Rights Reserved.
  *

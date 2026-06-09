@@ -30,10 +30,10 @@
  * SOFTWARE.
  */
 
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
+#include <beep/jiffies.h>
+#include <beep/module.h>
+#include <beep/timer.h>
+#include <beep/workqueue.h>
 
 #include "mthca_dev.h"
 

@@ -19,13 +19,13 @@
  */
 
 #include <sound/core.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <pcmcia/ciscode.h>
 #include <pcmcia/cisreg.h>
 #include "pdaudiocf.h"
 #include <sound/initval.h>
-#include <linux/init.h>
+#include <beep/init.h>
 
 /*
  */

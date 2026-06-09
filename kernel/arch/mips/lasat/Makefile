@@ -1,5 +1,5 @@
 #
-# Makefile for the LASAT specific kernel interface routines under Linux.
+# Makefile for the LASAT specific kernel interface routines under Beep.
 #
 
 obj-y	 			+= reset.o setup.o prom.o lasat_board.o \

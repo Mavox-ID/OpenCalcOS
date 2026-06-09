@@ -17,22 +17,22 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/edma.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/edma.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_bitbang.h>
+#include <beep/slab.h>
 
-#include <linux/platform_data/spi-davinci.h>
+#include <beep/platform_data/spi-davinci.h>
 
 #define SPI_NO_RESOURCE		((resource_size_t)-1)
 
@@ -762,7 +762,7 @@ rx_dma_failed:
  * davinci_spi_probe - probe function for SPI Master Controller
  * @pdev: platform_device structure which contains plateform specific data
  *
- * According to Linux Device Model this function will be invoked by Linux
+ * According to Beep Device Model this function will be invoked by Beep
  * with platform_device struct which contains the device specific info.
  * This function will map the SPI controller's memory, register IRQ,
  * Reset SPI controller and setting its registers to default value.

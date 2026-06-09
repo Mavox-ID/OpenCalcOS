@@ -21,19 +21,19 @@
 
 #define DSS_SUBSYS_NAME "HDMI"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/regulator/consumer.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/mutex.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/clk.h>
+#include <beep/gpio.h>
+#include <beep/regulator/consumer.h>
 #include <video/omapdss.h>
 
 #include "ti_hdmi.h"

@@ -1,8 +1,8 @@
 #
-# Makefile for the linux kernel.
+# Makefile for the beep kernel.
 #
 
-extra-y := vmlinux.lds
+extra-y := vmbeep.lds
 
 obj-y := process.o traps.o ptrace.o irq.o \
 	 sys_h8300.o time.o signal.o \

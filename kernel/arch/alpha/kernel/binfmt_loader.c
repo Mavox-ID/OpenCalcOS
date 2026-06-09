@@ -1,11 +1,11 @@
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/mm_types.h>
-#include <linux/binfmts.h>
-#include <linux/a.out.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/mm_types.h>
+#include <beep/binfmts.h>
+#include <beep/a.out.h>
 
-static int load_binary(struct linux_binprm *bprm)
+static int load_binary(struct beep_binprm *bprm)
 {
 	struct exec *eh = (struct exec *)bprm->buf;
 	unsigned long loader;
@@ -40,7 +40,7 @@ static int load_binary(struct linux_binprm *bprm)
 	return search_binary_handler(bprm);
 }
 
-static struct linux_binfmt loader_format = {
+static struct beep_binfmt loader_format = {
 	.load_binary	= load_binary,
 };
 

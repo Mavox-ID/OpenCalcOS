@@ -1,8 +1,8 @@
 #ifndef _ENTRY_H
 #define _ENTRY_H
 
-#include <linux/types.h>
-#include <linux/signal.h>
+#include <beep/types.h>
+#include <beep/signal.h>
 #include <asm/ptrace.h>
 #include <asm/cputime.h>
 

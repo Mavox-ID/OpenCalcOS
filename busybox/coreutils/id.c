@@ -33,10 +33,10 @@
 /* BB_AUDIT SUSv3 compliant. */
 
 //usage:#define id_trivial_usage
-//usage:       "[-ugGnr"IF_SELINUX("Z")"] [USER]"
+//usage:       "[-ugGnr"IF_SEBEEP("Z")"] [USER]"
 //usage:#define id_full_usage "\n\n"
 //usage:       "Print information about USER or the current user\n"
-//usage:	IF_SELINUX(
+//usage:	IF_SEBEEP(
 //usage:     "\n	-Z	Security context"
 //usage:	)
 //usage:     "\n	-u	User ID"
@@ -74,7 +74,7 @@ enum {
 	JUST_USER       = (1 << 2),
 	JUST_GROUP      = (1 << 3),
 	JUST_ALL_GROUPS = (1 << 4),
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 	JUST_CONTEXT    = (1 << 5),
 #endif
 };
@@ -155,7 +155,7 @@ int id_main(int argc UNUSED_PARAM, char **argv)
 	int status = EXIT_SUCCESS;
 	const char *prefix;
 	const char *username;
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 	security_context_t scontext = NULL;
 #endif
 
@@ -171,10 +171,10 @@ int id_main(int argc UNUSED_PARAM, char **argv)
 		/* Don't allow -n -r -nr -ug -rug -nug -rnug -uZ -gZ -GZ*/
 		/* Don't allow more than one username */
 		opt = getopt32(argv, "^"
-			"rnugG" IF_SELINUX("Z")
+			"rnugG" IF_SEBEEP("Z")
 			"\0"
 			"?1:u--g:g--u:G--u:u--G:g--G:G--g:r?ugG:n?ugG"
-			IF_SELINUX(":u--Z:Z--u:g--Z:Z--g:G--Z:Z--G")
+			IF_SEBEEP(":u--Z:Z--u:g--Z:Z--g:G--Z:Z--G")
 		);
 	}
 
@@ -236,8 +236,8 @@ int id_main(int argc UNUSED_PARAM, char **argv)
 		}
 		if (ENABLE_FEATURE_CLEAN_UP)
 			free(groups);
-#if ENABLE_SELINUX
-		if (is_selinux_enabled()) {
+#if ENABLE_SEBEEP
+		if (is_sebeep_enabled()) {
 			if (getcon(&scontext) == 0)
 				printf(" context=%s", scontext);
 		}
@@ -251,9 +251,9 @@ int id_main(int argc UNUSED_PARAM, char **argv)
 		status |= print_user(euid, NULL);
 	else if (opt & JUST_GROUP)
 		status |= print_group(egid, NULL);
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 	else if (opt & JUST_CONTEXT) {
-		selinux_or_die();
+		sebeep_or_die();
 		if (username || getcon(&scontext)) {
 			bb_error_msg_and_die("can't get process context%s",
 				username ? " for a different user" : "");

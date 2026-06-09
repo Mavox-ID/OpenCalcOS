@@ -1,9 +1,9 @@
-#include <linux/gfp.h>
-#include <linux/initrd.h>
-#include <linux/ioport.h>
-#include <linux/swap.h>
-#include <linux/memblock.h>
-#include <linux/bootmem.h>	/* for max_low_pfn */
+#include <beep/gfp.h>
+#include <beep/initrd.h>
+#include <beep/ioport.h>
+#include <beep/swap.h>
+#include <beep/memblock.h>
+#include <beep/bootmem.h>	/* for max_low_pfn */
 
 #include <asm/cacheflush.h>
 #include <asm/e820.h>

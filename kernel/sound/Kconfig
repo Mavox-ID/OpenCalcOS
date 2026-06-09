@@ -59,9 +59,9 @@ source "sound/oss/dmasound/Kconfig"
 if !M68K && !UML
 
 menuconfig SND
-	tristate "Advanced Linux Sound Architecture"
+	tristate "Advanced Beep Sound Architecture"
 	help
-	  Say 'Y' or 'M' to enable ALSA (Advanced Linux Sound Architecture),
+	  Say 'Y' or 'M' to enable ALSA (Advanced Beep Sound Architecture),
 	  the new base sound system.
 
 	  For more information, see <http://www.alsa-project.org/>

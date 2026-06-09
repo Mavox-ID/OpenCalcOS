@@ -9,23 +9,23 @@
  *
 */
 
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/spi/s3c24xx.h>
-#include <linux/module.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_bitbang.h>
+#include <beep/spi/s3c24xx.h>
+#include <beep/module.h>
 
 #include <plat/regs-spi.h>
 

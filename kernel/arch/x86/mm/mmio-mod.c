@@ -24,18 +24,18 @@
 
 #define DEBUG 1
 
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/kallsyms.h>
+#include <beep/module.h>
+#include <beep/debugfs.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
+#include <beep/kallsyms.h>
 #include <asm/pgtable.h>
-#include <linux/mmiotrace.h>
+#include <beep/mmiotrace.h>
 #include <asm/e820.h> /* for ISA_START_ADDRESS */
-#include <linux/atomic.h>
-#include <linux/percpu.h>
-#include <linux/cpu.h>
+#include <beep/atomic.h>
+#include <beep/percpu.h>
+#include <beep/cpu.h>
 
 #include "pf_in.h"
 

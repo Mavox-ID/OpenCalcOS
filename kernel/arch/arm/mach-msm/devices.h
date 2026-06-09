@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-msm/devices.h
+/* beep/arch/arm/mach-msm/devices.h
  *
  * Copyright (C) 2008 Google, Inc.
  *
@@ -16,7 +16,7 @@
 #ifndef __ARCH_ARM_MACH_MSM_DEVICES_H
 #define __ARCH_ARM_MACH_MSM_DEVICES_H
 
-#include <linux/clkdev.h>
+#include <beep/clkdev.h>
 
 #include "clock.h"
 

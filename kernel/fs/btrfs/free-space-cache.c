@@ -16,11 +16,11 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/pagemap.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/math64.h>
-#include <linux/ratelimit.h>
+#include <beep/pagemap.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/math64.h>
+#include <beep/ratelimit.h>
 #include "ctree.h"
 #include "free-space-cache.h"
 #include "transaction.h"

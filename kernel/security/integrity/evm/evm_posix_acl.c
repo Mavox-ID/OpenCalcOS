@@ -9,8 +9,8 @@
  * the Free Software Foundation, version 2 of the License.
  */
 
-#include <linux/module.h>
-#include <linux/xattr.h>
+#include <beep/module.h>
+#include <beep/xattr.h>
 
 int posix_xattr_acl(char *xattr)
 {

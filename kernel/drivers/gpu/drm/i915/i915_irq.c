@@ -1,4 +1,4 @@
-/* i915_irq.c -- IRQ support for the I915 -*- linux-c -*-
+/* i915_irq.c -- IRQ support for the I915 -*- beep-c -*-
  */
 /*
  * Copyright 2003 Tungsten Graphics, Inc., Cedar Park, Texas.
@@ -28,8 +28,8 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sysrq.h>
-#include <linux/slab.h>
+#include <beep/sysrq.h>
+#include <beep/slab.h>
 #include <drm/drmP.h>
 #include <drm/i915_drm.h>
 #include "i915_drv.h"

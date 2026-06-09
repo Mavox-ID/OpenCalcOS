@@ -30,8 +30,8 @@
  * the mutex locked.
  */
 
-#include <linux/crc32.h>
-#include <linux/slab.h>
+#include <beep/crc32.h>
+#include <beep/slab.h>
 #include "ubifs.h"
 
 /*

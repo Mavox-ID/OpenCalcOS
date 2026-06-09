@@ -9,15 +9,15 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/cache.h>
-#include <linux/init.h>
-#include <linux/time.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/random.h>
+#include <beep/slab.h>
+#include <beep/cache.h>
+#include <beep/init.h>
+#include <beep/time.h>
 
 #include <net/icmp.h>
 #include <net/tcp.h>
@@ -29,11 +29,11 @@
 #include <net/inet6_hashtables.h>
 #include <net/netlink.h>
 
-#include <linux/inet.h>
-#include <linux/stddef.h>
+#include <beep/inet.h>
+#include <beep/stddef.h>
 
-#include <linux/inet_diag.h>
-#include <linux/sock_diag.h>
+#include <beep/inet_diag.h>
+#include <beep/sock_diag.h>
 
 static const struct inet_diag_handler **inet_diag_table;
 

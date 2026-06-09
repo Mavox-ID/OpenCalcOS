@@ -8,18 +8,18 @@
  * more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/backlight.h>
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/platform_data/atmel.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/interrupt.h>
+#include <beep/clk.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/backlight.h>
+#include <beep/gfp.h>
+#include <beep/module.h>
+#include <beep/platform_data/atmel.h>
 
 #include <mach/cpu.h>
 #include <asm/gpio.h>

@@ -26,23 +26,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>	/* For module specific items */
-#include <linux/moduleparam.h>	/* For new moduleparam's */
-#include <linux/types.h>	/* For standard types (like size_t) */
-#include <linux/errno.h>	/* For the -ENODEV/... values */
-#include <linux/kernel.h>	/* For printk/panic/... */
-#include <linux/delay.h>	/* For mdelay function */
-#include <linux/miscdevice.h>	/* For MODULE_ALIAS_MISCDEV(WATCHDOG_MINOR) */
-#include <linux/watchdog.h>	/* For the watchdog specific items */
-#include <linux/notifier.h>	/* For notifier support */
-#include <linux/reboot.h>	/* For reboot_notifier stuff */
-#include <linux/init.h>		/* For __init/__exit/... */
-#include <linux/fs.h>		/* For file operations */
-#include <linux/usb.h>		/* For USB functions */
-#include <linux/slab.h>		/* For kmalloc, ... */
-#include <linux/mutex.h>	/* For mutex locking */
-#include <linux/hid.h>		/* For HID_REQ_SET_REPORT & HID_DT_REPORT */
-#include <linux/uaccess.h>	/* For copy_to_user/put_user/... */
+#include <beep/module.h>	/* For module specific items */
+#include <beep/moduleparam.h>	/* For new moduleparam's */
+#include <beep/types.h>	/* For standard types (like size_t) */
+#include <beep/errno.h>	/* For the -ENODEV/... values */
+#include <beep/kernel.h>	/* For printk/panic/... */
+#include <beep/delay.h>	/* For mdelay function */
+#include <beep/miscdevice.h>	/* For MODULE_ALIAS_MISCDEV(WATCHDOG_MINOR) */
+#include <beep/watchdog.h>	/* For the watchdog specific items */
+#include <beep/notifier.h>	/* For notifier support */
+#include <beep/reboot.h>	/* For reboot_notifier stuff */
+#include <beep/init.h>		/* For __init/__exit/... */
+#include <beep/fs.h>		/* For file operations */
+#include <beep/usb.h>		/* For USB functions */
+#include <beep/slab.h>		/* For kmalloc, ... */
+#include <beep/mutex.h>	/* For mutex locking */
+#include <beep/hid.h>		/* For HID_REQ_SET_REPORT & HID_DT_REPORT */
+#include <beep/uaccess.h>	/* For copy_to_user/put_user/... */
 
 #ifdef CONFIG_USB_DEBUG
 static int debug = 1;

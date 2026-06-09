@@ -21,11 +21,11 @@
 #ifndef _SN9C102_SENSOR_H_
 #define _SN9C102_SENSOR_H_
 
-#include <linux/usb.h>
-#include <linux/videodev2.h>
-#include <linux/device.h>
-#include <linux/stddef.h>
-#include <linux/errno.h>
+#include <beep/usb.h>
+#include <beep/videodev2.h>
+#include <beep/device.h>
+#include <beep/stddef.h>
+#include <beep/errno.h>
 #include <asm/types.h>
 
 struct sn9c102_device;

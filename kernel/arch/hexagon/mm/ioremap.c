@@ -1,7 +1,7 @@
 /*
  * I/O remap functions for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -18,8 +18,8 @@
  * 02110-1301, USA.
  */
 
-#include <linux/io.h>
-#include <linux/vmalloc.h>
+#include <beep/io.h>
+#include <beep/vmalloc.h>
 
 void __iomem *ioremap_nocache(unsigned long phys_addr, unsigned long size)
 {

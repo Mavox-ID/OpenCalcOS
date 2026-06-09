@@ -17,25 +17,25 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/dmaengine.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/of_mdio.h>
-#include <linux/etherdevice.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/dmaengine.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/of_mdio.h>
+#include <beep/etherdevice.h>
 #include <asm/dma-mapping.h>
-#include <linux/in.h>
-#include <linux/skbuff.h>
+#include <beep/in.h>
+#include <beep/skbuff.h>
 
-#include <linux/ip.h>
-#include <linux/tcp.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
 #include <net/checksum.h>
-#include <linux/inet_lro.h>
-#include <linux/prefetch.h>
+#include <beep/inet_lro.h>
+#include <beep/prefetch.h>
 
 #include <asm/irq.h>
 #include <asm/firmware.h>

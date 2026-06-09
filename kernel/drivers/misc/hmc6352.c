@@ -21,13 +21,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/sysfs.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/err.h>
+#include <beep/delay.h>
+#include <beep/sysfs.h>
 
 static DEFINE_MUTEX(compass_mutex);
 

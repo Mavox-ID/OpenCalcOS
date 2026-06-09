@@ -24,15 +24,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/acpi.h>
-#include <linux/pci-acpi.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/pci_hotplug.h>
+#include <beep/acpi.h>
+#include <beep/pci-acpi.h>
+#include <beep/slab.h>
 
 #define MY_NAME	"acpi_pcihp"
 

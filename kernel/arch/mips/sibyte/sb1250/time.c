@@ -15,7 +15,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
-#include <linux/init.h>
+#include <beep/init.h>
 
 extern void sb1250_clocksource_init(void);
 extern void sb1250_clockevent_init(void);

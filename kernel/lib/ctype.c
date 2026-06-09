@@ -1,12 +1,12 @@
 /*
- *  linux/lib/ctype.c
+ *  beep/lib/ctype.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/ctype.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
+#include <beep/ctype.h>
+#include <beep/compiler.h>
+#include <beep/export.h>
 
 const unsigned char _ctype[] = {
 _C,_C,_C,_C,_C,_C,_C,_C,				/* 0-7 */

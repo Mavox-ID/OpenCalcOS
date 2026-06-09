@@ -12,19 +12,19 @@
  *   more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/capability.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/bootmem.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/capability.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/bootmem.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
+#include <beep/export.h>
 
 #include <asm/processor.h>
 #include <asm/sections.h>
@@ -48,7 +48,7 @@
  * 2) pcibios_init
  *    This probes the PCI bus(es) for any attached hardware.  It's
  *    called by subsys_initcall.  All of the real work is done by the
- *    generic Linux PCI layer.
+ *    generic Beep PCI layer.
  *
  */
 
@@ -305,12 +305,12 @@ int __init pcibios_init(void)
 			pr_info("PCI: initializing controller #%d\n", i);
 
 			/*
-			 * This comes from the generic Linux PCI driver.
+			 * This comes from the generic Beep PCI driver.
 			 *
-			 * It reads the PCI tree for this bus into the Linux
+			 * It reads the PCI tree for this bus into the Beep
 			 * data structures.
 			 *
-			 * This is inlined in linux/pci.h and calls into
+			 * This is inlined in beep/pci.h and calls into
 			 * pci_scan_bus_parented() in probe.c.
 			 */
 			pci_add_resource(&resources, &ioport_resource);
@@ -325,7 +325,7 @@ int __init pcibios_init(void)
 	pci_fixup_irqs(pci_common_swizzle, tile_map_irq);
 
 	/*
-	 * This comes from the generic Linux PCI driver.
+	 * This comes from the generic Beep PCI driver.
 	 *
 	 * It allocates all of the resources (I/O memory, etc)
 	 * associated with the devices read in above.

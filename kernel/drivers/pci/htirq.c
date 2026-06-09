@@ -2,16 +2,16 @@
  * File:	htirq.c
  * Purpose:	Hypertransport Interrupt Capability
  *
- * Copyright (C) 2006 Linux Networx
+ * Copyright (C) 2006 Beep Networx
  * Copyright (C) Eric Biederman <ebiederman@lnxi.com>
  */
 
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/htirq.h>
+#include <beep/irq.h>
+#include <beep/pci.h>
+#include <beep/spinlock.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/htirq.h>
 
 /* Global ht irq lock.
  *

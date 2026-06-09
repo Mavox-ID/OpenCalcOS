@@ -22,24 +22,24 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/console.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/kbd_kern.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/major.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/freezer.h>
-#include <linux/slab.h>
-#include <linux/serial_core.h>
+#include <beep/console.h>
+#include <beep/cpumask.h>
+#include <beep/init.h>
+#include <beep/kbd_kern.h>
+#include <beep/kernel.h>
+#include <beep/kthread.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/major.h>
+#include <beep/sysrq.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
+#include <beep/freezer.h>
+#include <beep/slab.h>
+#include <beep/serial_core.h>
 
 #include <asm/uaccess.h>
 

@@ -15,13 +15,13 @@
 #include <crypto/internal/hash.h>
 #include <crypto/padlock.h>
 #include <crypto/sha.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/scatterlist.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/scatterlist.h>
 #include <asm/cpu_device_id.h>
 #include <asm/i387.h>
 

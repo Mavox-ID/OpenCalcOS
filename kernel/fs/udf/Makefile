@@ -1,5 +1,5 @@
 #
-# Makefile for the linux udf-filesystem routines.
+# Makefile for the beep udf-filesystem routines.
 #
 
 obj-$(CONFIG_UDF_FS) += udf.o

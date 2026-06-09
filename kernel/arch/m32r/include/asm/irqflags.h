@@ -4,13 +4,13 @@
  * for more details.
  *
  * Copyright (C) 2001  Hiroyuki Kondo, Hirokazu Takata, and Hitoshi Yamamoto
- * Copyright (C) 2004, 2006  Hirokazu Takata <takata at linux-m32r.org>
+ * Copyright (C) 2004, 2006  Hirokazu Takata <takata at beep-m32r.org>
  */
 
 #ifndef _ASM_M32R_IRQFLAGS_H
 #define _ASM_M32R_IRQFLAGS_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 static inline unsigned long arch_local_save_flags(void)
 {

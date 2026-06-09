@@ -30,11 +30,11 @@
  *   [2] See finite automation theory
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/textsearch.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/textsearch.h>
 
 struct ts_kmp
 {

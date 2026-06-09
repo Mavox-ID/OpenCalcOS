@@ -16,10 +16,10 @@
  **/
 
 #include <asm/uaccess.h>
-#include <linux/time.h>
+#include <beep/time.h>
 #include "reiserfs.h"
-#include <linux/buffer_head.h>
-#include <linux/kernel.h>
+#include <beep/buffer_head.h>
+#include <beep/kernel.h>
 
 static inline void buffer_info_init_left(struct tree_balance *tb,
                                          struct buffer_info *bi)

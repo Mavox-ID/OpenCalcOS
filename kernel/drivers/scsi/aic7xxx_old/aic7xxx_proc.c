@@ -1,5 +1,5 @@
 /*+M*************************************************************************
- * Adaptec AIC7xxx device driver proc support for Linux.
+ * Adaptec AIC7xxx device driver proc support for Beep.
  *
  * Copyright (c) 1995, 1996 Dean W. Gehnert
  *

@@ -25,11 +25,11 @@
  *
  ********************************************************************/
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/irlap_event.h>

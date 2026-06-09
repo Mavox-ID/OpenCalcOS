@@ -26,24 +26,24 @@
 #ifndef _NETXEN_NIC_H_
 #define _NETXEN_NIC_H_
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/firmware.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ip.h>
+#include <beep/in.h>
+#include <beep/tcp.h>
+#include <beep/skbuff.h>
+#include <beep/firmware.h>
 
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/timer.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/timer.h>
 
-#include <linux/vmalloc.h>
+#include <beep/vmalloc.h>
 
 #include <asm/io.h>
 #include <asm/byteorder.h>
@@ -51,10 +51,10 @@
 #include "netxen_nic_hdr.h"
 #include "netxen_nic_hw.h"
 
-#define _NETXEN_NIC_LINUX_MAJOR 4
-#define _NETXEN_NIC_LINUX_MINOR 0
-#define _NETXEN_NIC_LINUX_SUBVERSION 80
-#define NETXEN_NIC_LINUX_VERSIONID  "4.0.80"
+#define _NETXEN_NIC_BEEP_MAJOR 4
+#define _NETXEN_NIC_BEEP_MINOR 0
+#define _NETXEN_NIC_BEEP_SUBVERSION 80
+#define NETXEN_NIC_BEEP_VERSIONID  "4.0.80"
 
 #define NETXEN_VERSION_CODE(a, b, c)	(((a) << 24) + ((b) << 16) + (c))
 #define _major(v)	(((v) >> 24) & 0xff)

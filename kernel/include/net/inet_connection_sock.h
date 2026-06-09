@@ -15,10 +15,10 @@
 #ifndef _INET_CONNECTION_SOCK_H
 #define _INET_CONNECTION_SOCK_H
 
-#include <linux/compiler.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/poll.h>
+#include <beep/compiler.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/poll.h>
 
 #include <net/inet_sock.h>
 #include <net/request_sock.h>

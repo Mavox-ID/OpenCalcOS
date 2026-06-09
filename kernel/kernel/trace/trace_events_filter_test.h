@@ -4,7 +4,7 @@
 #if !defined(_TRACE_TEST_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_TEST_H
 
-#include <linux/tracepoint.h>
+#include <beep/tracepoint.h>
 
 TRACE_EVENT(ftrace_test_filter,
 

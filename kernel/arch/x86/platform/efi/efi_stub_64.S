@@ -1,12 +1,12 @@
 /*
- * Function calling ABI conversion from Linux to EFI for x86_64
+ * Function calling ABI conversion from Beep to EFI for x86_64
  *
  * Copyright (C) 2007 Intel Corp
  *	Bibo Mao <bibo.mao@intel.com>
  *	Huang Ying <ying.huang@intel.com>
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #define SAVE_XMM			\
 	mov %rsp, %rax;			\

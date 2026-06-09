@@ -6,12 +6,12 @@
  * (C) Copyright 1995 1996 Linus Torvalds
  * (C) Copyright 2001, 2002 Ralf Baechle
  */
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/addrspace.h>
 #include <asm/byteorder.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
 #include <asm/cacheflush.h>
 #include <asm/io.h>
 #include <asm/tlbflush.h>

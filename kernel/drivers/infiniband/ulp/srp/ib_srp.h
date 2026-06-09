@@ -33,10 +33,10 @@
 #ifndef IB_SRP_H
 #define IB_SRP_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/scatterlist.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/scatterlist.h>
 
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>

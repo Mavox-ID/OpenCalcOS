@@ -1,14 +1,14 @@
-#include <linux/bootmem.h>
-#include <linux/compiler.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/ksm.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/hugetlb.h>
-#include <linux/kernel-page-flags.h>
+#include <beep/bootmem.h>
+#include <beep/compiler.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/ksm.h>
+#include <beep/mm.h>
+#include <beep/mmzone.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/hugetlb.h>
+#include <beep/kernel-page-flags.h>
 #include <asm/uaccess.h>
 #include "internal.h"
 

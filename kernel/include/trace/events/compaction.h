@@ -4,8 +4,8 @@
 #if !defined(_TRACE_COMPACTION_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_COMPACTION_H
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <beep/types.h>
+#include <beep/tracepoint.h>
 #include <trace/events/gfpflags.h>
 
 DECLARE_EVENT_CLASS(mm_compaction_isolate_template,

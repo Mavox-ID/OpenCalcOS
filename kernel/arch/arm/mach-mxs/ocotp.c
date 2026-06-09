@@ -12,9 +12,9 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
 
 #include <asm/processor.h>	/* for cpu_relax() */
 

@@ -56,7 +56,7 @@
 #ifdef HAVE_AFINET6
 # ifndef _LINUX_IN6_H
 /*
- * This is from linux/include/net/ipv6.h
+ * This is from beep/include/net/ipv6.h
  */
 struct in6_ifreq {
 	struct in6_addr ifr6_addr;
@@ -291,8 +291,8 @@ struct user_net_device_stats {
 	unsigned long long tx_bytes;	/* total bytes transmitted      */
 	unsigned long rx_errors;	/* bad packets received         */
 	unsigned long tx_errors;	/* packet transmit problems     */
-	unsigned long rx_dropped;	/* no space in linux buffers    */
-	unsigned long tx_dropped;	/* no space available in linux  */
+	unsigned long rx_dropped;	/* no space in beep buffers    */
+	unsigned long tx_dropped;	/* no space available in beep  */
 	unsigned long rx_multicast;	/* multicast packets received   */
 	unsigned long rx_compressed;
 	unsigned long tx_compressed;

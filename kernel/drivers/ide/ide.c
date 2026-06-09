@@ -6,9 +6,9 @@
 /*
  *  Mostly written by Mark Lord  <mlord@pobox.com>
  *                and Gadi Oxman <gadio@netvision.net.il>
- *                and Andre Hedrick <andre@linux-ide.org>
+ *                and Andre Hedrick <andre@beep-ide.org>
  *
- *  See linux/MAINTAINERS for address of current maintainer.
+ *  See beep/MAINTAINERS for address of current maintainer.
  *
  * This is the multiple IDE interface driver, as evolved from hd.c.
  * It supports up to MAX_HWIFS IDE interfaces, on one or more IRQs
@@ -33,7 +33,7 @@
  *  | IRQ-unmask, drive-id, multiple-mode, support for ">16 heads",
  *  | and general streamlining by Mark Lord (mlord@pobox.com).
  *
- *  October, 1994 -- Complete line-by-line overhaul for linux 1.1.x, by:
+ *  October, 1994 -- Complete line-by-line overhaul for beep 1.1.x, by:
  *
  *	Mark Lord	(mlord@pobox.com)		(IDE Perf.Pkg)
  *	Delman Lee	(delman@ieee.org)		("Mr. atdisk2")
@@ -41,23 +41,23 @@
  *
  *  This was a rewrite of just about everything from hd.c, though some original
  *  code is still sprinkled about.  Think of it as a major evolution, with
- *  inspiration from lots of linux users, esp.  hamish@zot.apana.org.au
+ *  inspiration from lots of beep users, esp.  hamish@zot.apana.org.au
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/genhd.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
-#include <linux/hdreg.h>
-#include <linux/completion.h>
-#include <linux/device.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/major.h>
+#include <beep/errno.h>
+#include <beep/genhd.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/ide.h>
+#include <beep/hdreg.h>
+#include <beep/completion.h>
+#include <beep/device.h>
 
 struct class *ide_port_class;
 

@@ -10,13 +10,13 @@
  * The implementation of this service uses ozhcd.c to implement a USB HCD.
  * -----------------------------------------------------------------------------
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
-#include <linux/netdevice.h>
-#include <linux/errno.h>
-#include <linux/input.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/timer.h>
+#include <beep/sched.h>
+#include <beep/netdevice.h>
+#include <beep/errno.h>
+#include <beep/input.h>
 #include <asm/unaligned.h>
 #include "ozconfig.h"
 #include "ozprotocol.h"

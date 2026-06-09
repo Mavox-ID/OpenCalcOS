@@ -10,19 +10,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/string.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/rtc/ds1307.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/string.h>
+#include <beep/rtc.h>
+#include <beep/bcd.h>
+#include <beep/rtc/ds1307.h>
 
 /*
- * We can't determine type by probing, but if we expect pre-Linux code
+ * We can't determine type by probing, but if we expect pre-Beep code
  * to have set the chip up as a clock (turning on the oscillator and
- * setting the date and time), Linux can ignore the non-clock features.
+ * setting the date and time), Beep can ignore the non-clock features.
  * That's a natural job for a factory or repair bench.
  */
 enum ds_type {

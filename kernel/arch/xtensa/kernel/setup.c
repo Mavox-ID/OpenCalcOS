@@ -14,29 +14,29 @@
  * Marc Gauthier<marc@tensilica.com> <marc@alumni.uwaterloo.ca>
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/screen_info.h>
-#include <linux/bootmem.h>
-#include <linux/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/proc_fs.h>
+#include <beep/screen_info.h>
+#include <beep/bootmem.h>
+#include <beep/kernel.h>
 
 #ifdef CONFIG_OF
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
+#include <beep/of_fdt.h>
+#include <beep/of_platform.h>
 #endif
 
 #if defined(CONFIG_VGA_CONSOLE) || defined(CONFIG_DUMMY_CONSOLE)
-# include <linux/console.h>
+# include <beep/console.h>
 #endif
 
 #ifdef CONFIG_RTC
-# include <linux/timex.h>
+# include <beep/timex.h>
 #endif
 
 #ifdef CONFIG_PROC_FS
-# include <linux/seq_file.h>
+# include <beep/seq_file.h>
 #endif
 
 #include <asm/bootparam.h>

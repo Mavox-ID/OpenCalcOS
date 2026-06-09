@@ -1,7 +1,7 @@
 /* -*- mode: c; c-basic-offset: 8; -*-
  * vim: noexpandtab sw=8 ts=8 sts=0:
  *
- *  linux/cluster/ssi/cfs/symlink.c
+ *  beep/cluster/ssi/cfs/symlink.c
  *
  *	This program is free software; you can redistribute it and/or
  *	modify it under the terms of the GNU General Public License as
@@ -18,7 +18,7 @@
  * 	along with this program; if not, write to the Free Software
  * 	Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
- *	Questions/Comments/Bugfixes to ssic-linux-devel@lists.sourceforge.net
+ *	Questions/Comments/Bugfixes to ssic-beep-devel@lists.sourceforge.net
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -34,11 +34,11 @@
  *
  */
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/namei.h>
+#include <beep/fs.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/pagemap.h>
+#include <beep/namei.h>
 
 #include <cluster/masklog.h>
 

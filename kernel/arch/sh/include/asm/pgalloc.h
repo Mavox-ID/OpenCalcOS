@@ -1,7 +1,7 @@
 #ifndef __ASM_SH_PGALLOC_H
 #define __ASM_SH_PGALLOC_H
 
-#include <linux/quicklist.h>
+#include <beep/quicklist.h>
 #include <asm/page.h>
 
 #define QUICK_PT 0	/* Other page table pages that are zero on free */

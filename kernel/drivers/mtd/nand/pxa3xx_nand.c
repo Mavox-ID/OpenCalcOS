@@ -9,24 +9,24 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
 #include <mach/dma.h>
-#include <linux/platform_data/mtd-nand-pxa3xx.h>
+#include <beep/platform_data/mtd-nand-pxa3xx.h>
 
 #define	CHIP_DELAY_TIMEOUT	(2 * HZ/10)
 #define NAND_STOP_DELAY		(2 * HZ/50)

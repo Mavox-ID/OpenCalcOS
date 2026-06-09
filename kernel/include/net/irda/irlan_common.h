@@ -28,10 +28,10 @@
 
 #include <asm/param.h>  /* for HZ */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
 
 #include <net/irda/irttp.h>
 

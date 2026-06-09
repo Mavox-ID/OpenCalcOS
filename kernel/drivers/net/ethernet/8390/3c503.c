@@ -1,4 +1,4 @@
-/* 3c503.c: A shared-memory NS8390 ethernet driver for linux. */
+/* 3c503.c: A shared-memory NS8390 ethernet driver for beep. */
 /*
     Written 1992-94 by Donald Becker.
 
@@ -41,16 +41,16 @@
 static const char version[] =
     DRV_NAME ".c:v" DRV_VERSION " " DRV_RELDATE "  Donald Becker (becker@scyld.com)\n";
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ethtool.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ethtool.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>

@@ -19,21 +19,21 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/ioctl.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/wait.h>
-#include <linux/unistd.h>
-#include <linux/kthread.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/ioctl.h>
+#include <beep/fs.h>
+#include <beep/poll.h>
+#include <beep/completion.h>
+#include <beep/mutex.h>
+#include <beep/wait.h>
+#include <beep/unistd.h>
+#include <beep/kthread.h>
+#include <beep/bitops.h>
+#include <beep/device.h>
+#include <beep/cdev.h>
 
 #include <media/lirc.h>
 #include <media/lirc_dev.h>

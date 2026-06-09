@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux Bluetooth HCI device drivers.
+# Makefile for the Beep Bluetooth HCI device drivers.
 #
 
 obj-$(CONFIG_BT_HCIVHCI)	+= hci_vhci.o

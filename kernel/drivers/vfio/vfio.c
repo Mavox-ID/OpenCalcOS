@@ -13,23 +13,23 @@
  * Author: Tom Lyon, pugs@cisco.com
  */
 
-#include <linux/cdev.h>
-#include <linux/compat.h>
-#include <linux/device.h>
-#include <linux/file.h>
-#include <linux/anon_inodes.h>
-#include <linux/fs.h>
-#include <linux/idr.h>
-#include <linux/iommu.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/vfio.h>
-#include <linux/wait.h>
+#include <beep/cdev.h>
+#include <beep/compat.h>
+#include <beep/device.h>
+#include <beep/file.h>
+#include <beep/anon_inodes.h>
+#include <beep/fs.h>
+#include <beep/idr.h>
+#include <beep/iommu.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/uaccess.h>
+#include <beep/vfio.h>
+#include <beep/wait.h>
 
 #define DRIVER_VERSION	"0.3"
 #define DRIVER_AUTHOR	"Alex Williamson <alex.williamson@redhat.com>"

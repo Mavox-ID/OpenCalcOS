@@ -8,8 +8,8 @@
 
 *****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include "csr_macro.h"
 #include "csr_msgconv.h"
 #include "csr_wifi_msgconv.h"

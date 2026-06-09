@@ -1,8 +1,8 @@
 #ifndef _HW_IRQ_H
 #define _HW_IRQ_H
 
-#include <linux/msi.h>
-#include <linux/pci.h>
+#include <beep/msi.h>
+#include <beep/pci.h>
 
 static inline struct msi_desc *irq_get_msi_desc(unsigned int irq)
 {

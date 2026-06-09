@@ -16,8 +16,8 @@
 #define _ASM_MICROBLAZE_CACHEFLUSH_H
 
 /* Somebody depends on this; sigh... */
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <beep/mm.h>
+#include <beep/io.h>
 
 /* Look at Documentation/cachetlb.txt */
 

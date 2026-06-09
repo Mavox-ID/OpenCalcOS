@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/generic.h
+ *  beep/arch/arm/mach-pxa/generic.h
  *
  * Author:	Nicolas Pitre
  * Copyright:	MontaVista Software Inc.

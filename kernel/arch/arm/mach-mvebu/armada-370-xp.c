@@ -12,13 +12,13 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
-#include <linux/time-armada-370-xp.h>
-#include <linux/clk/mvebu.h>
-#include <linux/dma-mapping.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/of_platform.h>
+#include <beep/io.h>
+#include <beep/time-armada-370-xp.h>
+#include <beep/clk/mvebu.h>
+#include <beep/dma-mapping.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 #include <asm/mach/time.h>

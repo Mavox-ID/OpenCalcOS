@@ -46,7 +46,7 @@
 
 #include "qla_def.h"
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 static uint32_t ql_dbg_offset = 0x800;
 

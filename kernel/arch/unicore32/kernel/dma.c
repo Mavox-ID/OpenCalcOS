@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/dma.c
+ * beep/arch/unicore32/kernel/dma.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -11,12 +11,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/io.h>
 
 #include <asm/irq.h>
 #include <mach/hardware.h>

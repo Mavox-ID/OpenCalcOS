@@ -1,11 +1,11 @@
-#include <linux/mm_types.h>
-#include <linux/rbtree.h>
-#include <linux/rwsem.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/cpumask.h>
+#include <beep/mm_types.h>
+#include <beep/rbtree.h>
+#include <beep/rwsem.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
+#include <beep/cpumask.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/pgtable.h>
 #include <asm/mmu.h>
 

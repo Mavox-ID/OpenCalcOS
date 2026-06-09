@@ -11,7 +11,7 @@
 #ifndef CSR_WIFI_FSM_TYPES_H
 #define CSR_WIFI_FSM_TYPES_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include "csr_macro.h"
 #include "csr_sched.h"
 

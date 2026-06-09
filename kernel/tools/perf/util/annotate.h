@@ -6,8 +6,8 @@
 #include "types.h"
 #include "symbol.h"
 #include "hist.h"
-#include <linux/list.h>
-#include <linux/rbtree.h>
+#include <beep/list.h>
+#include <beep/rbtree.h>
 #include <pthread.h>
 
 struct ins;

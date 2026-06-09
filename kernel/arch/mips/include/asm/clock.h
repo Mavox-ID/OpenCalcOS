@@ -1,10 +1,10 @@
 #ifndef __ASM_MIPS_CLOCK_H
 #define __ASM_MIPS_CLOCK_H
 
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/seq_file.h>
-#include <linux/clk.h>
+#include <beep/kref.h>
+#include <beep/list.h>
+#include <beep/seq_file.h>
+#include <beep/clk.h>
 
 extern void (*cpu_wait) (void);
 

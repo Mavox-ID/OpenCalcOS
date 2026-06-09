@@ -49,28 +49,28 @@
 ******************************************************************************/
 
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/console.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/backlight.h>
-#include <linux/reboot.h>
-#include <linux/dmi.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/delay.h>
+#include <beep/console.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/wait.h>
+#include <beep/backlight.h>
+#include <beep/reboot.h>
+#include <beep/dmi.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 
 #include <video/mach64.h>
 #include "atyfb.h"
@@ -88,8 +88,8 @@
 #endif
 
 #ifdef CONFIG_ADB_PMU
-#include <linux/adb.h>
-#include <linux/pmu.h>
+#include <beep/adb.h>
+#include <beep/pmu.h>
 #endif
 #ifdef CONFIG_BOOTX_TEXT
 #include <asm/btext.h>

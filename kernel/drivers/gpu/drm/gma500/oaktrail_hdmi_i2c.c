@@ -24,12 +24,12 @@
  *	Li Peng <peng.li@intel.com>
  */
 
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <beep/export.h>
+#include <beep/mutex.h>
+#include <beep/pci.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
 #include "psb_drv.h"
 
 #define HDMI_READ(reg)		readl(hdmi_dev->regs + (reg))

@@ -9,7 +9,7 @@
 #ifndef WACOM_WAC_H
 #define WACOM_WAC_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* maximum packet length for USB devices */
 #define WACOM_PKGLEN_MAX	64

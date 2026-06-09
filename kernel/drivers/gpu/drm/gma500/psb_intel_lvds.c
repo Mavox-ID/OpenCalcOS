@@ -16,11 +16,11 @@
  *
  * Authors:
  *	Eric Anholt <eric@anholt.net>
- *	Dave Airlie <airlied@linux.ie>
+ *	Dave Airlie <airlied@beep.ie>
  *	Jesse Barnes <jesse.barnes@intel.com>
  */
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 #include <drm/drmP.h>
 
 #include "intel_bios.h"
@@ -28,7 +28,7 @@
 #include "psb_intel_drv.h"
 #include "psb_intel_reg.h"
 #include "power.h"
-#include <linux/pm_runtime.h>
+#include <beep/pm_runtime.h>
 
 /*
  * LVDS I2C backlight control macros

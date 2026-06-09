@@ -13,14 +13,14 @@
  */
 
 /* #define DEBUG 1 */
-#include <linux/kallsyms.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <beep/kallsyms.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/stacktrace.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/io.h>
 #include <asm/sections.h>
 #include <asm/exceptions.h>
 #include <asm/unwind.h>

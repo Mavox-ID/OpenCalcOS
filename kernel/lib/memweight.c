@@ -1,6 +1,6 @@
-#include <linux/export.h>
-#include <linux/bug.h>
-#include <linux/bitmap.h>
+#include <beep/export.h>
+#include <beep/bug.h>
+#include <beep/bitmap.h>
 
 /**
  * memweight - count the total number of bits set in memory area

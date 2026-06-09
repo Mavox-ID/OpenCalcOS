@@ -1,7 +1,7 @@
 /*
 	drivers/net/ethernet/dec/tulip/eeprom.c
 
-	Copyright 2000,2001  The Linux Kernel Team
+	Copyright 2000,2001  The Beep Kernel Team
 	Written/copyright 1994-2001 by Donald Becker.
 
 	This software may be used and distributed according to the terms
@@ -10,10 +10,10 @@
 	Please submit bug reports to http://bugzilla.kernel.org/.
 */
 
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
 #include "tulip.h"
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/unaligned.h>
 
 
@@ -98,7 +98,7 @@ static const char *const block_name[] = {
  * still need a valid mediatable entry for correct csr12 setup and
  * mii handling.
  *
- * Since this is currently a parisc-linux specific function, the
+ * Since this is currently a parisc-beep specific function, the
  * #ifdef __hppa__ should completely optimize this function away for
  * non-parisc hardware.
  */

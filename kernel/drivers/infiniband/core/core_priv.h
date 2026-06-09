@@ -33,8 +33,8 @@
 #ifndef _CORE_PRIV_H
 #define _CORE_PRIV_H
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
 
 #include <rdma/ib_verbs.h>
 

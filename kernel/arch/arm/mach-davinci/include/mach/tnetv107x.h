@@ -32,12 +32,12 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/serial_8250.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/mfd/ti_ssp.h>
+#include <beep/serial_8250.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/mfd/ti_ssp.h>
 
-#include <linux/platform_data/mmc-davinci.h>
-#include <linux/platform_data/mtd-davinci.h>
+#include <beep/platform_data/mmc-davinci.h>
+#include <beep/platform_data/mtd-davinci.h>
 #include <mach/serial.h>
 
 struct tnetv107x_device_info {

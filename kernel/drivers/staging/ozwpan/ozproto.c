@@ -3,13 +3,13 @@
  * Released under the GNU General Public License Version 2 (GPLv2).
  * -----------------------------------------------------------------------------
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
-#include <linux/netdevice.h>
-#include <linux/errno.h>
-#include <linux/ieee80211.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/timer.h>
+#include <beep/sched.h>
+#include <beep/netdevice.h>
+#include <beep/errno.h>
+#include <beep/ieee80211.h>
 #include "ozconfig.h"
 #include "ozprotocol.h"
 #include "ozeltbuf.h"
@@ -20,7 +20,7 @@
 #include "ozappif.h"
 #include "ozevent.h"
 #include <asm/unaligned.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 #include <net/psnap.h>
 /*------------------------------------------------------------------------------
  */

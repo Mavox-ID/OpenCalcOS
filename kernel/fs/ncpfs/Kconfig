@@ -13,11 +13,11 @@ config NCP_FS
 	  <file:Documentation/filesystems/ncpfs.txt> in the kernel source and
 	  the IPX-HOWTO from <http://www.tldp.org/docs.html#howto>.
 
-	  You do not have to say Y here if you want your Linux box to act as a
+	  You do not have to say Y here if you want your Beep box to act as a
 	  file *server* for Novell NetWare clients.
 
-	  General information about how to connect Linux, Windows machines and
-	  Macs is on the WWW at <http://www.eats.com/linux_mac_win.html>.
+	  General information about how to connect Beep, Windows machines and
+	  Macs is on the WWW at <http://www.eats.com/beep_mac_win.html>.
 
 	  To compile this as a module, choose M here: the module will be called
 	  ncpfs.  Say N unless you are connected to a Novell network.
@@ -78,7 +78,7 @@ config NCPFS_SMALLDOS
 	  Long filenames (created by Win95) will not be affected.
 
 	  This option does not solve the problem that filenames appear
-	  differently under Linux and under Windows, since Windows does an
+	  differently under Beep and under Windows, since Windows does an
 	  additional conversions on the client side. You can achieve similar
 	  effects by saying Y to "Allow using of Native Language Support"
 	  below.

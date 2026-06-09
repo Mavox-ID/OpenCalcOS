@@ -9,18 +9,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/dmaengine.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/dmaengine.h>
+#include <beep/platform_device.h>
+#include <beep/device.h>
 #include <mach/regs-icu.h>
-#include <linux/platform_data/dma-mmp_tdma.h>
-#include <linux/of_device.h>
+#include <beep/platform_data/dma-mmp_tdma.h>
+#include <beep/of_device.h>
 
 #include "dmaengine.h"
 

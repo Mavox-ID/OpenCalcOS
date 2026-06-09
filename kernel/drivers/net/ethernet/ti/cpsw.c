@@ -13,27 +13,27 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/timer.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/irqreturn.h>
-#include <linux/interrupt.h>
-#include <linux/if_ether.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/phy.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/of_device.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/timer.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/irqreturn.h>
+#include <beep/interrupt.h>
+#include <beep/if_ether.h>
+#include <beep/etherdevice.h>
+#include <beep/netdevice.h>
+#include <beep/net_tstamp.h>
+#include <beep/phy.h>
+#include <beep/workqueue.h>
+#include <beep/delay.h>
+#include <beep/pm_runtime.h>
+#include <beep/of.h>
+#include <beep/of_net.h>
+#include <beep/of_device.h>
 
-#include <linux/platform_data/cpsw.h>
+#include <beep/platform_data/cpsw.h>
 
 #include "cpsw_ale.h"
 #include "cpts.h"

@@ -7,8 +7,8 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/jump_label.h>
+#include <beep/kernel.h>
+#include <beep/jump_label.h>
 #include <asm/code-patching.h>
 
 #ifdef HAVE_JUMP_LABEL

@@ -9,10 +9,10 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/serio.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/serio.h>
 
 MODULE_AUTHOR("Dmitry Eremin-Solenikov <dbaryshkov@gmail.com>");
 MODULE_DESCRIPTION("TQC PS/2 Multiplexer driver");

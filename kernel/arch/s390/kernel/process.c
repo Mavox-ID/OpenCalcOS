@@ -7,22 +7,22 @@
  *		 Denis Joseph Barrow,
  */
 
-#include <linux/compiler.h>
-#include <linux/cpu.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/elfcore.h>
-#include <linux/smp.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/tick.h>
-#include <linux/personality.h>
-#include <linux/syscalls.h>
-#include <linux/compat.h>
-#include <linux/kprobes.h>
-#include <linux/random.h>
-#include <linux/module.h>
+#include <beep/compiler.h>
+#include <beep/cpu.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/elfcore.h>
+#include <beep/smp.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/tick.h>
+#include <beep/personality.h>
+#include <beep/syscalls.h>
+#include <beep/compat.h>
+#include <beep/kprobes.h>
+#include <beep/random.h>
+#include <beep/module.h>
 #include <asm/io.h>
 #include <asm/processor.h>
 #include <asm/vtimer.h>

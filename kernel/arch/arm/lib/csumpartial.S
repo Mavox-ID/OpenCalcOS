@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/lib/csumpartial.S
+ *  beep/arch/arm/lib/csumpartial.S
  *
  *  Copyright (C) 1995-1998 Russell King
  *
@@ -7,7 +7,7 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 
 		.text
@@ -50,7 +50,7 @@ td3	.req	lr
 		/* we are now half-word aligned */
 
 .Lless8_wordlp:
-#if __LINUX_ARM_ARCH__ >= 4
+#if __BEEP_ARM_ARCH__ >= 4
 		ldrh	td0, [buf], #2
 		sub	len, len, #2
 #else
@@ -83,7 +83,7 @@ td3	.req	lr
 		adcnes	sum, sum, td0, put_byte_1	@ update checksum
 
 		tst	buf, #2			@ 32-bit aligned?
-#if __LINUX_ARM_ARCH__ >= 4
+#if __BEEP_ARM_ARCH__ >= 4
 		ldrneh	td0, [buf], #2		@ make 32-bit aligned
 		subne	len, len, #2
 #else

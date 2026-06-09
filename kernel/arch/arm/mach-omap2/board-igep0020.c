@@ -8,30 +8,30 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
 
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
-#include <linux/i2c/twl.h>
-#include <linux/mmc/host.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/fixed.h>
+#include <beep/i2c/twl.h>
+#include <beep/mmc/host.h>
 
-#include <linux/mtd/nand.h>
+#include <beep/mtd/nand.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 
 #include <video/omapdss.h>
 #include <video/omap-panel-tfp410.h>
-#include <linux/platform_data/mtd-onenand-omap2.h>
+#include <beep/platform_data/mtd-onenand-omap2.h>
 
 #include "common.h"
 #include "gpmc.h"
@@ -190,7 +190,7 @@ static void __init igep_flash_init(void) {}
 
 #if defined(CONFIG_SMSC911X) || defined(CONFIG_SMSC911X_MODULE)
 
-#include <linux/smsc911x.h>
+#include <beep/smsc911x.h>
 #include "gpmc-smsc911x.h"
 
 static struct omap_smsc911x_platform_data smsc911x_cfg = {
@@ -296,7 +296,7 @@ static struct omap2_hsmmc_info mmc[] = {
 };
 
 #if defined(CONFIG_LEDS_GPIO) || defined(CONFIG_LEDS_GPIO_MODULE)
-#include <linux/leds.h>
+#include <beep/leds.h>
 
 static struct gpio_led igep_gpio_leds[] = {
 	[0] = {

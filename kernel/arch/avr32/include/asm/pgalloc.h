@@ -8,8 +8,8 @@
 #ifndef __ASM_AVR32_PGALLOC_H
 #define __ASM_AVR32_PGALLOC_H
 
-#include <linux/mm.h>
-#include <linux/quicklist.h>
+#include <beep/mm.h>
+#include <beep/quicklist.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>
 

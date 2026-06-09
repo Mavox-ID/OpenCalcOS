@@ -5,7 +5,7 @@
  *
  * Copyright (c) 2004,2006 Simtec Electronics
  *	Ben Dooks, <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -14,20 +14,20 @@
  * S3C2410/S3C2440/S3C24XX Internal RTC Driver
 */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/clk.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/rtc.h>
+#include <beep/bcd.h>
+#include <beep/clk.h>
+#include <beep/log2.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <asm/irq.h>

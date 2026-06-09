@@ -8,7 +8,7 @@
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 #include "nfsd.h"
 #include "cache.h"

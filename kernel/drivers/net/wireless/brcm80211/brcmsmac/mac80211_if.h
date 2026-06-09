@@ -17,9 +17,9 @@
 #ifndef _BRCM_MAC80211_IF_H_
 #define _BRCM_MAC80211_IF_H_
 
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
 
 #include "ucode_loader.h"
 /*

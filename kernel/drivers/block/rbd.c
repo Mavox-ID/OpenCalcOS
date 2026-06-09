@@ -1,5 +1,5 @@
 /*
-   rbd.c -- Export ceph rados objects as a Linux block device
+   rbd.c -- Export ceph rados objects as a Beep block device
 
 
    based on drivers/block/osdblk.c:
@@ -27,17 +27,17 @@
 
  */
 
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/osd_client.h>
-#include <linux/ceph/mon_client.h>
-#include <linux/ceph/decode.h>
-#include <linux/parser.h>
+#include <beep/ceph/libceph.h>
+#include <beep/ceph/osd_client.h>
+#include <beep/ceph/mon_client.h>
+#include <beep/ceph/decode.h>
+#include <beep/parser.h>
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/blkdev.h>
 
 #include "rbd_types.h"
 
@@ -45,7 +45,7 @@
 
 /*
  * The basic unit of block I/O is a sector.  It is interpreted in a
- * number of contexts in Linux (blk, bio, genhd), but the default is
+ * number of contexts in Beep (blk, bio, genhd), but the default is
  * universally 512 bytes.  These symbols are just slightly more
  * meaningful than the bare numbers they represent.
  */

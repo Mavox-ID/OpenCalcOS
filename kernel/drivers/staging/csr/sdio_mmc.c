@@ -9,18 +9,18 @@
  *
  * ---------------------------------------------------------------------------
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/gfp.h>
-#include <linux/mmc/core.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio.h>
-#include <linux/suspend.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/mutex.h>
+#include <beep/gfp.h>
+#include <beep/mmc/core.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/sdio_func.h>
+#include <beep/mmc/sdio_ids.h>
+#include <beep/mmc/sdio.h>
+#include <beep/suspend.h>
 
 #include "unifi_priv.h"
 
@@ -812,10 +812,10 @@ uf_glue_sdio_int_handler(struct sdio_func *func)
 
 /*
  * ---------------------------------------------------------------------------
- *  csr_sdio_linux_remove_irq
+ *  csr_sdio_beep_remove_irq
  *
  *      Unregister the interrupt handler.
- *      This means that the linux layer can not process interrupts any more.
+ *      This means that the beep layer can not process interrupts any more.
  *
  *  Arguments:
  *      sdio      SDIO context pointer
@@ -824,12 +824,12 @@ uf_glue_sdio_int_handler(struct sdio_func *func)
  *      Status of the removal.
  * ---------------------------------------------------------------------------
  */
-int csr_sdio_linux_remove_irq(CsrSdioFunction *function)
+int csr_sdio_beep_remove_irq(CsrSdioFunction *function)
 {
 	struct sdio_func *func = (struct sdio_func *)function->priv;
 	int r;
 
-	unifi_trace(NULL, UDBG1, "csr_sdio_linux_remove_irq\n");
+	unifi_trace(NULL, UDBG1, "csr_sdio_beep_remove_irq\n");
 
 	sdio_claim_host(func);
 	r = sdio_release_irq(func);
@@ -837,15 +837,15 @@ int csr_sdio_linux_remove_irq(CsrSdioFunction *function)
 
 	return r;
 
-} /* csr_sdio_linux_remove_irq() */
+} /* csr_sdio_beep_remove_irq() */
 
 
 /*
  * ---------------------------------------------------------------------------
- *  csr_sdio_linux_install_irq
+ *  csr_sdio_beep_install_irq
  *
  *      Register the interrupt handler.
- *      This means that the linux layer can process interrupts.
+ *      This means that the beep layer can process interrupts.
  *
  *  Arguments:
  *      sdio      SDIO context pointer
@@ -854,12 +854,12 @@ int csr_sdio_linux_remove_irq(CsrSdioFunction *function)
  *      Status of the removal.
  * ---------------------------------------------------------------------------
  */
-int csr_sdio_linux_install_irq(CsrSdioFunction *function)
+int csr_sdio_beep_install_irq(CsrSdioFunction *function)
 {
 	struct sdio_func *func = (struct sdio_func *)function->priv;
 	int r;
 
-	unifi_trace(NULL, UDBG1, "csr_sdio_linux_install_irq\n");
+	unifi_trace(NULL, UDBG1, "csr_sdio_beep_install_irq\n");
 
 	/* Register our interrupt handle */
 	sdio_claim_host(func);
@@ -871,7 +871,7 @@ int csr_sdio_linux_install_irq(CsrSdioFunction *function)
 		r = 0;
 
 	return r;
-} /* csr_sdio_linux_install_irq() */
+} /* csr_sdio_beep_install_irq() */
 
 #ifdef CONFIG_PM
 
@@ -1223,7 +1223,7 @@ static struct sdio_driver unifi_driver = {
  *
  *      These functions are called from the main module load and unload
  *      functions. They perform the appropriate operations for the
- *      linux MMC/SDIO driver.
+ *      beep MMC/SDIO driver.
  *
  *  Arguments:
  *      sdio_drv    Pointer to the function driver's SDIO structure.
@@ -1237,7 +1237,7 @@ CsrSdioFunctionDriverRegister(CsrSdioFunctionDriver *sdio_drv)
 {
     int r;
 
-    printk("UniFi: Using native Linux MMC driver for SDIO.\n");
+    printk("UniFi: Using native Beep MMC driver for SDIO.\n");
 
     if (sdio_func_drv) {
         unifi_error(NULL, "sdio_mmc: UniFi driver already registered\n");

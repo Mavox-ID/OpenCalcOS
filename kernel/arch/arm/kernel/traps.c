@@ -1,32 +1,32 @@
 /*
- *  linux/arch/arm/kernel/traps.c
+ *  beep/arch/arm/kernel/traps.c
  *
  *  Copyright (C) 1995-2009 Russell King
- *  Fragments that appear the same as linux/arch/i386/kernel/traps.c (C) Linus Torvalds
+ *  Fragments that appear the same as beep/arch/i386/kernel/traps.c (C) Linus Torvalds
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  *
  *  'traps.c' handles hardware exceptions after we have saved some state in
- *  'linux/arch/arm/lib/traps.S'.  Mostly a debugging aid, but will probably
+ *  'beep/arch/arm/lib/traps.S'.  Mostly a debugging aid, but will probably
  *  kill the offending process.
  */
-#include <linux/signal.h>
-#include <linux/personality.h>
-#include <linux/kallsyms.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/hardirq.h>
-#include <linux/kdebug.h>
-#include <linux/module.h>
-#include <linux/kexec.h>
-#include <linux/bug.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/sched.h>
+#include <beep/signal.h>
+#include <beep/personality.h>
+#include <beep/kallsyms.h>
+#include <beep/spinlock.h>
+#include <beep/uaccess.h>
+#include <beep/hardirq.h>
+#include <beep/kdebug.h>
+#include <beep/module.h>
+#include <beep/kexec.h>
+#include <beep/bug.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/sched.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/cacheflush.h>
 #include <asm/exception.h>
 #include <asm/unistd.h>
@@ -481,7 +481,7 @@ static int bad_syscall(int n, struct pt_regs *regs)
 	struct thread_info *thread = current_thread_info();
 	siginfo_t info;
 
-	if ((current->personality & PER_MASK) != PER_LINUX &&
+	if ((current->personality & PER_MASK) != PER_BEEP &&
 	    thread->exec_domain->handler) {
 		thread->exec_domain->handler(n, regs);
 		return regs->ARM_r0;

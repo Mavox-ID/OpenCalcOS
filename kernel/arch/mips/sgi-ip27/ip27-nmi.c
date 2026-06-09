@@ -1,9 +1,9 @@
-#include <linux/kernel.h>
-#include <linux/mmzone.h>
-#include <linux/nodemask.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/atomic.h>
+#include <beep/kernel.h>
+#include <beep/mmzone.h>
+#include <beep/nodemask.h>
+#include <beep/spinlock.h>
+#include <beep/smp.h>
+#include <beep/atomic.h>
 #include <asm/sn/types.h>
 #include <asm/sn/addrs.h>
 #include <asm/sn/nmi.h>

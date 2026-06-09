@@ -1,5 +1,5 @@
 /*
- * linux/sound/soc/pxa/mmp-pcm.c
+ * beep/sound/soc/pxa/mmp-pcm.c
  *
  * Copyright (C) 2011 Marvell International Ltd.
  *
@@ -9,14 +9,14 @@
  * (at your option) any later version.
  *
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/platform_data/dma-mmp_tdma.h>
-#include <linux/platform_data/mmp_audio.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmaengine.h>
+#include <beep/platform_data/dma-mmp_tdma.h>
+#include <beep/platform_data/mmp_audio.h>
 #include <sound/pxa2xx-lib.h>
 #include <sound/core.h>
 #include <sound/pcm.h>

@@ -8,14 +8,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/log2.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/v4l2-mediabus.h>
-#include <linux/videodev2.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/i2c.h>
+#include <beep/log2.h>
+#include <beep/pm.h>
+#include <beep/slab.h>
+#include <beep/v4l2-mediabus.h>
+#include <beep/videodev2.h>
+#include <beep/module.h>
 
 #include <media/soc_camera.h>
 #include <media/v4l2-chip-ident.h>

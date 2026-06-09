@@ -40,12 +40,12 @@
  * at the end of nfs4svc_decode_compoundargs.
  */
 
-#include <linux/slab.h>
-#include <linux/namei.h>
-#include <linux/statfs.h>
-#include <linux/utsname.h>
-#include <linux/pagemap.h>
-#include <linux/sunrpc/svcauth_gss.h>
+#include <beep/slab.h>
+#include <beep/namei.h>
+#include <beep/statfs.h>
+#include <beep/utsname.h>
+#include <beep/pagemap.h>
+#include <beep/sunrpc/svcauth_gss.h>
 
 #include "idmap.h"
 #include "acl.h"

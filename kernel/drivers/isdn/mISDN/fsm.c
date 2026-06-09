@@ -18,10 +18,10 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/string.h>
 #include "fsm.h"
 
 #define FSM_TIMER_DEBUG 0

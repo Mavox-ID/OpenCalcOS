@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68knommu/platform/68360/entry.S
+ *  beep/arch/m68knommu/platform/68360/entry.S
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  Copyright (C) 2001 SED Systems, a Division of Calian Ltd.
@@ -8,11 +8,11 @@
  * License.  See the file README.legal in the main directory of this archive
  * for more details.
  *
- * Linux/m68k support by Hamish Macdonald
+ * Beep/m68k support by Hamish Macdonald
  * M68360 Port by SED Systems, and Lineo.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/thread_info.h>
 #include <asm/unistd.h>
 #include <asm/errno.h>

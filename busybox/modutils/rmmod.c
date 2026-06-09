@@ -58,7 +58,7 @@ int rmmod_main(int argc UNUSED_PARAM, char **argv)
 	if (!*argv)
 		bb_show_usage();
 
-	n = ENABLE_FEATURE_2_4_MODULES && get_linux_version_code() < KERNEL_VERSION(2,6,0);
+	n = ENABLE_FEATURE_2_4_MODULES && get_beep_version_code() < KERNEL_VERSION(2,6,0);
 	while (*argv) {
 		char modname[MODULE_NAME_LEN];
 		const char *bname;

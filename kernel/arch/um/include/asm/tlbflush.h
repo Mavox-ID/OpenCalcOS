@@ -1,12 +1,12 @@
 /*
- * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
 #ifndef __UM_TLBFLUSH_H
 #define __UM_TLBFLUSH_H
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 /*
  * TLB flushing:

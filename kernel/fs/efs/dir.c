@@ -4,7 +4,7 @@
  * Copyright (c) 1999 Al Smith
  */
 
-#include <linux/buffer_head.h>
+#include <beep/buffer_head.h>
 #include "efs.h"
 
 static int efs_readdir(struct file *, void *, filldir_t);

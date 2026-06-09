@@ -7,11 +7,11 @@
 #ifndef _SPARC64_BITOPS_H
 #define _SPARC64_BITOPS_H
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _BEEP_BITOPS_H
+#error only <beep/bitops.h> can be included directly
 #endif
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/byteorder.h>
 
 extern int test_and_set_bit(unsigned long nr, volatile unsigned long *addr);

@@ -12,7 +12,7 @@
 #ifndef _MAGICIAN_H_
 #define _MAGICIAN_H_
 
-#include <linux/gpio.h>
+#include <beep/gpio.h>
 #include <mach/irqs.h>
 
 /*

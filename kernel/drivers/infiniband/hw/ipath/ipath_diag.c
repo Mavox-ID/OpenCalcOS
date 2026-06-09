@@ -41,11 +41,11 @@
  * through the /sys/bus/pci resource mmap interface.
  */
 
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/export.h>
+#include <beep/io.h>
+#include <beep/pci.h>
+#include <beep/vmalloc.h>
+#include <beep/fs.h>
+#include <beep/export.h>
 #include <asm/uaccess.h>
 
 #include "ipath_kernel.h"

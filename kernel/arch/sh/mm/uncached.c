@@ -1,5 +1,5 @@
-#include <linux/init.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/module.h>
 #include <asm/sizes.h>
 #include <asm/page.h>
 #include <asm/addrspace.h>

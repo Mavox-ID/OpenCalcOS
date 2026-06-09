@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5pv210/pm.c
+/* beep/arch/arm/mach-s5pv210/pm.c
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -14,10 +14,10 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/suspend.h>
+#include <beep/syscore_ops.h>
+#include <beep/io.h>
 
 #include <plat/cpu.h>
 #include <plat/pm.h>

@@ -1,4 +1,4 @@
-/* linux/net/ipv4/arp.c
+/* beep/net/ipv4/arp.c
  *
  * Copyright (C) 1994 by Florian  La Roche
  *
@@ -75,32 +75,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/capability.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/mm.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/fddidevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/net.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/capability.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/errno.h>
+#include <beep/in.h>
+#include <beep/mm.h>
+#include <beep/inet.h>
+#include <beep/inetdevice.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/fddidevice.h>
+#include <beep/if_arp.h>
+#include <beep/skbuff.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/stat.h>
+#include <beep/init.h>
+#include <beep/net.h>
+#include <beep/rcupdate.h>
+#include <beep/slab.h>
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <beep/sysctl.h>
 #endif
 
 #include <net/net_namespace.h>
@@ -114,9 +114,9 @@
 #include <net/ax25.h>
 #include <net/netrom.h>
 
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 
-#include <linux/netfilter_arp.h>
+#include <beep/netfilter_arp.h>
 
 /*
  *	Interface to generic neighbour cache.
@@ -424,7 +424,7 @@ static int arp_filter(__be32 sip, __be32 tip, struct net_device *dev)
 	if (IS_ERR(rt))
 		return 1;
 	if (rt->dst.dev != dev) {
-		NET_INC_STATS_BH(net, LINUX_MIB_ARPFILTER);
+		NET_INC_STATS_BH(net, BEEP_MIB_ARPFILTER);
 		flag = 1;
 	}
 	ip_rt_put(rt);

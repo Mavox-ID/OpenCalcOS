@@ -15,12 +15,12 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
 #include "fhci.h"
 
 void fhci_dbg_isr(struct fhci_hcd *fhci, int usb_er)

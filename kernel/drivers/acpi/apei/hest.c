@@ -3,8 +3,8 @@
  *
  * HEST describes error sources in detail; communicates operational
  * parameters (i.e. severity levels, masking bits, and threshold
- * values) to Linux as necessary. It also allows the BIOS to report
- * non-standard error sources to Linux (for example, chipset-specific
+ * values) to Beep as necessary. It also allows the BIOS to report
+ * non-standard error sources to Beep (for example, chipset-specific
  * error registers).
  *
  * For more information about HEST, please refer to ACPI Specification
@@ -27,14 +27,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/kdebug.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/acpi.h>
+#include <beep/kdebug.h>
+#include <beep/highmem.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
 #include <acpi/apei.h>
 
 #include "apei-internal.h"

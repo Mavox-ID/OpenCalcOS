@@ -1,8 +1,8 @@
 /*
  *  acpi.c - Architecture-Specific Low-Level ACPI Support
  *
- *  Copyright (C) 1999 VA Linux Systems
- *  Copyright (C) 1999,2000 Walt Drummond <drummond@valinux.com>
+ *  Copyright (C) 1999 VA Beep Systems
+ *  Copyright (C) 1999,2000 Walt Drummond <drummond@vabeep.com>
  *  Copyright (C) 2000, 2002-2003 Hewlett-Packard Co.
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  *  Copyright (C) 2000 Intel Corp.
@@ -32,19 +32,19 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/irq.h>
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/mmzone.h>
-#include <linux/nodemask.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/irq.h>
+#include <beep/acpi.h>
+#include <beep/efi.h>
+#include <beep/mmzone.h>
+#include <beep/nodemask.h>
+#include <beep/slab.h>
 #include <acpi/processor.h>
 #include <asm/io.h>
 #include <asm/iosapic.h>

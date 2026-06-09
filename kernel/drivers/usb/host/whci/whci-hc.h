@@ -20,7 +20,7 @@
 #ifndef _WHCI_WHCI_HC_H
 #define _WHCI_WHCI_HC_H
 
-#include <linux/list.h>
+#include <beep/list.h>
 
 /**
  * WHCI_PAGE_SIZE - page size use by WHCI

@@ -17,13 +17,13 @@
  * (c) 2004-2005, Eugene Surovegin <ebs@ebshome.net>
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/netdevice.h>
+#include <beep/mii.h>
+#include <beep/ethtool.h>
+#include <beep/delay.h>
 
 #include "emac.h"
 #include "phy.h"

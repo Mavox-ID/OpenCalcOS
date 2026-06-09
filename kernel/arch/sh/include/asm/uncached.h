@@ -1,7 +1,7 @@
 #ifndef __ASM_SH_UNCACHED_H
 #define __ASM_SH_UNCACHED_H
 
-#include <linux/bug.h>
+#include <beep/bug.h>
 
 #ifdef CONFIG_UNCACHED_MAPPING
 extern unsigned long cached_to_uncached;

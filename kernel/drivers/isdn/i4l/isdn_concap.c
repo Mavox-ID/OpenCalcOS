@@ -1,23 +1,23 @@
 /* $Id: isdn_concap.c,v 1.1.2.2 2004/01/12 22:37:19 keil Exp $
  *
- * Linux ISDN subsystem, protocol encapsulation
+ * Beep ISDN subsystem, protocol encapsulation
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
  */
 
-/* Stuff to support the concap_proto by isdn4linux. isdn4linux - specific
+/* Stuff to support the concap_proto by isdn4beep. isdn4beep - specific
  * stuff goes here. Stuff that depends only on the concap protocol goes to
  * another -- protocol specific -- source file.
  *
  */
 
 
-#include <linux/isdn.h>
+#include <beep/isdn.h>
 #include "isdn_x25iface.h"
 #include "isdn_net.h"
-#include <linux/concap.h>
+#include <beep/concap.h>
 #include "isdn_concap.h"
 
 

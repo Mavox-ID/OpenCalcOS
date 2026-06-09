@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/irq.c
+ *  beep/arch/arm/mach-pxa/irq.c
  *
  *  Generic PXA IRQ handling
  *
@@ -11,14 +11,14 @@
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/syscore_ops.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/syscore_ops.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
 
 #include <asm/exception.h>
 

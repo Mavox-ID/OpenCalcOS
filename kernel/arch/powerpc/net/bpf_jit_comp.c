@@ -9,11 +9,11 @@
  * as published by the Free Software Foundation; version 2
  * of the License.
  */
-#include <linux/moduleloader.h>
+#include <beep/moduleloader.h>
 #include <asm/cacheflush.h>
-#include <linux/netdevice.h>
-#include <linux/filter.h>
-#include <linux/if_vlan.h>
+#include <beep/netdevice.h>
+#include <beep/filter.h>
+#include <beep/if_vlan.h>
 
 #include "bpf_jit.h"
 

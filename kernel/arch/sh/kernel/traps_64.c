@@ -9,22 +9,22 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/kallsyms.h>
-#include <linux/interrupt.h>
-#include <linux/sysctl.h>
-#include <linux/module.h>
-#include <linux/perf_event.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/timer.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/kallsyms.h>
+#include <beep/interrupt.h>
+#include <beep/sysctl.h>
+#include <beep/module.h>
+#include <beep/perf_event.h>
 #include <asm/uaccess.h>
 #include <asm/io.h>
 #include <asm/alignment.h>

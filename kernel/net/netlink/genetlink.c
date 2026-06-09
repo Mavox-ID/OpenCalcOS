@@ -6,16 +6,16 @@
  *				Johannes Berg <johannes@sipsolutions.net>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/mutex.h>
-#include <linux/bitmap.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/string.h>
+#include <beep/skbuff.h>
+#include <beep/mutex.h>
+#include <beep/bitmap.h>
 #include <net/sock.h>
 #include <net/genetlink.h>
 

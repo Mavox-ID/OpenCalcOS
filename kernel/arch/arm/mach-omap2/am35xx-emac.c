@@ -15,8 +15,8 @@
  * General Public License for more details.
  */
 
-#include <linux/err.h>
-#include <linux/davinci_emac.h>
+#include <beep/err.h>
+#include <beep/davinci_emac.h>
 #include <asm/system.h>
 #include "omap_device.h"
 #include "am35xx.h"

@@ -1,27 +1,27 @@
 /*
- * linux/arch/sh/kernel/sys_sh.c
+ * beep/arch/sh/kernel/sys_sh.c
  *
  * This file contains various random system calls that
- * have a non-standard calling sequence on the Linux/SuperH
+ * have a non-standard calling sequence on the Beep/SuperH
  * platform.
  *
  * Taken from i386 version.
  */
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/file.h>
-#include <linux/utsname.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/ipc.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/sem.h>
+#include <beep/msg.h>
+#include <beep/shm.h>
+#include <beep/stat.h>
+#include <beep/syscalls.h>
+#include <beep/mman.h>
+#include <beep/file.h>
+#include <beep/utsname.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/ipc.h>
 #include <asm/syscalls.h>
 #include <asm/uaccess.h>
 #include <asm/unistd.h>

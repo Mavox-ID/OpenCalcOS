@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/board-cm-t3517.c
+ * beep/arch/arm/mach-omap2/board-cm-t3517.c
  *
  * Support for the CompuLab CM-T3517 modules
  *
@@ -22,24 +22,24 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/rtc-v3020.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/can/platform/ti_hecc.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/leds.h>
+#include <beep/rtc-v3020.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/can/platform/ti_hecc.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 
 #include "common.h"
-#include <linux/platform_data/mtd-nand-omap2.h>
+#include <beep/platform_data/mtd-nand-omap2.h>
 #include "gpmc.h"
 
 #include "am35xx.h"
@@ -221,7 +221,7 @@ static struct mtd_partition cm_t3517_nand_partitions[] = {
 		.size           = 2 * NAND_BLOCK_SIZE,
 	},
 	{
-		.name           = "linux",
+		.name           = "beep",
 		.offset         = MTDPART_OFS_APPEND,	/* Offset = 0x2A0000 */
 		.size           = 32 * NAND_BLOCK_SIZE,
 	},

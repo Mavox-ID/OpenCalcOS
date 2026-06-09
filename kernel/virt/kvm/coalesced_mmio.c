@@ -10,9 +10,9 @@
 
 #include "iodev.h"
 
-#include <linux/kvm_host.h>
-#include <linux/slab.h>
-#include <linux/kvm.h>
+#include <beep/kvm_host.h>
+#include <beep/slab.h>
+#include <beep/kvm.h>
 
 #include "coalesced_mmio.h"
 

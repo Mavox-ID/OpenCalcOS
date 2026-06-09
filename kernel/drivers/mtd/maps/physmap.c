@@ -7,19 +7,19 @@
  * 031022 - [jsun] add run-time configure and partition setup
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/concat.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/concat.h>
+#include <beep/io.h>
 
 #define MAX_RESOURCES		4
 

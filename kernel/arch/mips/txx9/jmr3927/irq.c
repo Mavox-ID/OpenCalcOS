@@ -29,10 +29,10 @@
  *  with this program; if not, write  to the Free Software Foundation, Inc.,
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 
 #include <asm/io.h>
 #include <asm/mipsregs.h>

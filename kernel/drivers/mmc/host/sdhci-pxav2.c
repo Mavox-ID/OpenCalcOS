@@ -17,19 +17,19 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/platform_data/pxa_sdhci.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/host.h>
+#include <beep/platform_data/pxa_sdhci.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
 #include "sdhci.h"
 #include "sdhci-pltfm.h"

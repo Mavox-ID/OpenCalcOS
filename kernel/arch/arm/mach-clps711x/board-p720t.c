@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-clps711x/p720t.c
+ *  beep/arch/arm/mach-clps711x/p720t.c
  *
  *  Copyright (C) 2000-2001 Deep Blue Solutions Ltd
  *
@@ -17,19 +17,19 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
-#include <linux/sizes.h>
-#include <linux/backlight.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/nand-gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/leds.h>
+#include <beep/sizes.h>
+#include <beep/backlight.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/nand-gpio.h>
 
 #include <mach/hardware.h>
 #include <asm/pgtable.h>

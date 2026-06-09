@@ -77,7 +77,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 
 #include <asm/io.h>
 

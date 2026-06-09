@@ -20,19 +20,19 @@
  *   Authors: Anthony Liguori <aliguori@us.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/kvm_para.h>
-#include <linux/cpu.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/hardirq.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/hash.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/kprobes.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/kvm_para.h>
+#include <beep/cpu.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/hardirq.h>
+#include <beep/notifier.h>
+#include <beep/reboot.h>
+#include <beep/hash.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/kprobes.h>
 #include <asm/timer.h>
 #include <asm/cpu.h>
 #include <asm/traps.h>

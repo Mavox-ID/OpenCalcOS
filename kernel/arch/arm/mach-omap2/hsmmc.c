@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/hsmmc.c
+ * beep/arch/arm/mach-omap2/hsmmc.c
  *
  * Copyright (C) 2007-2008 Texas Instruments
  * Copyright (C) 2008 Nokia Corporation
@@ -9,12 +9,12 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/platform_data/gpio-omap.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/platform_data/gpio-omap.h>
 
 #include "soc.h"
 #include "omap_device.h"

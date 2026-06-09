@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/include/plat/s3c2412.h
+/* beep/arch/arm/plat-samsung/include/plat/s3c2412.h
  *
  * Copyright (c) 2006 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>

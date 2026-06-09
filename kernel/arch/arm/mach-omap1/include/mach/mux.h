@@ -439,7 +439,7 @@ struct omap_mux_cfg {
 };
 
 #ifdef	CONFIG_OMAP_MUX
-/* setup pin muxing in Linux */
+/* setup pin muxing in Beep */
 extern int omap1_mux_init(void);
 extern int omap_mux_register(struct omap_mux_cfg *);
 extern int omap_cfg_reg(unsigned long reg_cfg);

@@ -26,12 +26,12 @@
  *	- Add a few missing ioctls
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/timer.h>
-#include <linux/io.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/miscdevice.h>
+#include <beep/watchdog.h>
+#include <beep/timer.h>
+#include <beep/io.h>
 
 #define WDT_VERSION	"0.4"
 

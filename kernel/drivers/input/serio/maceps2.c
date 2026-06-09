@@ -1,5 +1,5 @@
 /*
- * SGI O2 MACE PS2 controller driver for linux
+ * SGI O2 MACE PS2 controller driver for beep
  *
  * Copyright (C) 2002 Vivien Chappelier
  *
@@ -7,24 +7,24 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/serio.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/serio.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/err.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/ip32/mace.h>
 #include <asm/ip32/ip32_ints.h>
 
-MODULE_AUTHOR("Vivien Chappelier <vivien.chappelier@linux-mips.org");
+MODULE_AUTHOR("Vivien Chappelier <vivien.chappelier@beep-mips.org");
 MODULE_DESCRIPTION("SGI O2 MACE PS2 controller driver");
 MODULE_LICENSE("GPL");
 

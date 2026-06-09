@@ -1,4 +1,4 @@
-# uClinux H8/300 Target Board Selection Menu (IDE)
+# uCbeep H8/300 Target Board Selection Menu (IDE)
 
 if (H8300H_AKI3068NET)
 menu "IDE Extra configuration"

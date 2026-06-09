@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/viper.c
+ *  beep/arch/arm/mach-pxa/viper.c
  *
  *  Support for the Arcom VIPER SBC.
  *
@@ -20,37 +20,37 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/memory.h>
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/major.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/sched.h>
-#include <linux/gpio.h>
-#include <linux/jiffies.h>
-#include <linux/i2c-gpio.h>
-#include <linux/i2c/pxa-i2c.h>
-#include <linux/serial_8250.h>
-#include <linux/smc91x.h>
-#include <linux/pwm_backlight.h>
-#include <linux/usb/isp116x.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/syscore_ops.h>
+#include <beep/types.h>
+#include <beep/memory.h>
+#include <beep/cpu.h>
+#include <beep/cpufreq.h>
+#include <beep/delay.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/major.h>
+#include <beep/module.h>
+#include <beep/pm.h>
+#include <beep/sched.h>
+#include <beep/gpio.h>
+#include <beep/jiffies.h>
+#include <beep/i2c-gpio.h>
+#include <beep/i2c/pxa-i2c.h>
+#include <beep/serial_8250.h>
+#include <beep/smc91x.h>
+#include <beep/pwm_backlight.h>
+#include <beep/usb/isp116x.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/syscore_ops.h>
 
 #include <mach/pxa25x.h>
 #include <mach/audio.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <beep/platform_data/video-pxafb.h>
 #include <mach/regs-uart.h>
-#include <linux/platform_data/pcmcia-pxa2xx_viper.h>
+#include <beep/platform_data/pcmcia-pxa2xx_viper.h>
 #include <mach/viper.h>
 
 #include <asm/setup.h>

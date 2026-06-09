@@ -16,10 +16,10 @@
  * them.
  */
 
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
+#include <beep/pci.h>
+#include <beep/module.h>
+#include <beep/acpi.h>
+#include <beep/slab.h>
 #include <acpi/acpi_bus.h>
 
 struct ioapic {

@@ -18,7 +18,7 @@
 #ifndef _MDDI_HW_H_
 #define _MDDI_HW_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define MDDI_CMD                0x0000
 #define MDDI_VERSION            0x0004

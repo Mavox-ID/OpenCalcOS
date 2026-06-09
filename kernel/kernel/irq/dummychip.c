@@ -4,9 +4,9 @@
  *
  * This file contains the dummy interrupt chip implementation
  */
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/export.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/export.h>
 
 #include "internals.h"
 

@@ -17,8 +17,8 @@
 #ifndef __ARCH_ARM_MACH_MSM_CLOCK_H
 #define __ARCH_ARM_MACH_MSM_CLOCK_H
 
-#include <linux/init.h>
-#include <linux/list.h>
+#include <beep/init.h>
+#include <beep/list.h>
 #include <mach/clk.h>
 
 #define CLKFLAG_INVERT			0x00000001

@@ -6,12 +6,12 @@
  * of the GNU General Public License version 2.
  */
 
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/poll.h>
-#include <linux/dlm.h>
-#include <linux/dlm_plock.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/miscdevice.h>
+#include <beep/poll.h>
+#include <beep/dlm.h>
+#include <beep/dlm_plock.h>
+#include <beep/slab.h>
 
 #include "dlm_internal.h"
 #include "lockspace.h"

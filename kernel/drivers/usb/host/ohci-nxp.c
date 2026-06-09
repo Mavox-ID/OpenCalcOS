@@ -18,11 +18,11 @@
  * is licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/of.h>
-#include <linux/usb/isp1301.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/of.h>
+#include <beep/usb/isp1301.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>

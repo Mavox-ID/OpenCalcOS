@@ -7,12 +7,12 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
-#include <linux/mtd/physmap.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/serial_8250.h>
+#include <beep/mtd/physmap.h>
 
 #include <mach/irqs.h>
 #include <mach/hardware.h>

@@ -23,9 +23,9 @@
  * 2005-Apr     Rusty Lynch <rusty.lynch@intel.com> and Anil S Keshavamurthy
  *              <anil.s.keshavamurthy@intel.com> adapted from i386
  */
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/percpu.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/percpu.h>
 #include <asm/break.h>
 
 #define __ARCH_WANT_KPROBES_INSN_SLOT

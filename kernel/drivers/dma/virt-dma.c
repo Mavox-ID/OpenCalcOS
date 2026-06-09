@@ -7,10 +7,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <beep/device.h>
+#include <beep/dmaengine.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
 
 #include "virt-dma.h"
 

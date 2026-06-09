@@ -7,8 +7,8 @@
  *
  * Copyright (C) 1994 David S. Miller (davem@caip.rutgers.edu)
  */
-#ifndef __LINUX_SPARC_PSR_H
-#define __LINUX_SPARC_PSR_H
+#ifndef __BEEP_SPARC_PSR_H
+#define __BEEP_SPARC_PSR_H
 
 #include <uapi/asm/psr.h>
 
@@ -64,4 +64,4 @@ static inline unsigned int get_fsr(void)
 
 #endif /* !(__ASSEMBLY__) */
 
-#endif /* !(__LINUX_SPARC_PSR_H) */
+#endif /* !(__BEEP_SPARC_PSR_H) */

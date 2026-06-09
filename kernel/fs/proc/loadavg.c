@@ -1,11 +1,11 @@
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/pid_namespace.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/seqlock.h>
-#include <linux/time.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/pid_namespace.h>
+#include <beep/proc_fs.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/seqlock.h>
+#include <beep/time.h>
 
 #define LOAD_INT(x) ((x) >> FSHIFT)
 #define LOAD_FRAC(x) LOAD_INT(((x) & (FIXED_1-1)) * 100)

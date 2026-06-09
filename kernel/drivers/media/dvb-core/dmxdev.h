@@ -23,18 +23,18 @@
 #ifndef _DMXDEV_H_
 #define _DMXDEV_H_
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/time.h>
+#include <beep/timer.h>
+#include <beep/wait.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 
-#include <linux/dvb/dmx.h>
+#include <beep/dvb/dmx.h>
 
 #include "dvbdev.h"
 #include "demux.h"

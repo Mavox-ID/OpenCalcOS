@@ -2,12 +2,12 @@
 
 #include "sched.h"
 
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/kallsyms.h>
-#include <linux/utsname.h>
-#include <linux/security.h>
-#include <linux/export.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/kallsyms.h>
+#include <beep/utsname.h>
+#include <beep/security.h>
+#include <beep/export.h>
 
 unsigned int __read_mostly sysctl_sched_autogroup_enabled = 1;
 static struct autogroup autogroup_default;

@@ -3,13 +3,13 @@
  *    Author(s): Heiko Carstens <heiko.carstens@de.ibm.com>
  */
 
-#include <linux/bootmem.h>
-#include <linux/pfn.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/hugetlb.h>
-#include <linux/slab.h>
+#include <beep/bootmem.h>
+#include <beep/pfn.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/hugetlb.h>
+#include <beep/slab.h>
 #include <asm/pgalloc.h>
 #include <asm/pgtable.h>
 #include <asm/setup.h>

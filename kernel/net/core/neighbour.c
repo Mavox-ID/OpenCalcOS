@@ -17,27 +17,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/socket.h>
-#include <linux/netdevice.h>
-#include <linux/proc_fs.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/socket.h>
+#include <beep/netdevice.h>
+#include <beep/proc_fs.h>
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <beep/sysctl.h>
 #endif
-#include <linux/times.h>
+#include <beep/times.h>
 #include <net/net_namespace.h>
 #include <net/neighbour.h>
 #include <net/dst.h>
 #include <net/sock.h>
 #include <net/netevent.h>
 #include <net/netlink.h>
-#include <linux/rtnetlink.h>
-#include <linux/random.h>
-#include <linux/string.h>
-#include <linux/log2.h>
+#include <beep/rtnetlink.h>
+#include <beep/random.h>
+#include <beep/string.h>
+#include <beep/log2.h>
 
 #define NEIGH_DEBUG 1
 

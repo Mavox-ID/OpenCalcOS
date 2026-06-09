@@ -17,11 +17,11 @@
  * is not parsed in any way).
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/root_dev.h>
-#include <linux/screen_info.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/root_dev.h>
+#include <beep/screen_info.h>
 
 #include <asm/setup.h>
 #include <asm/system_info.h>

@@ -3,7 +3,7 @@
     Driver for Keitley das1700/das1800 series boards
     Copyright (C) 2000 Frank Mori Hess <fmhess@users.sourceforge.net>
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -100,12 +100,12 @@ TODO:
 	read insn for analog out
 */
 
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/io.h>
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 #include <asm/dma.h>
 
 #include "8253.h"

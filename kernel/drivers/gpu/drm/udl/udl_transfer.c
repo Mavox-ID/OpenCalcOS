@@ -10,10 +10,10 @@
  * more details.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/prefetch.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/fb.h>
+#include <beep/prefetch.h>
 
 #include <drm/drmP.h>
 #include "udl_drv.h"

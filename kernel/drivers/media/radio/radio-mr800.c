@@ -4,7 +4,7 @@
  * only deals with initialization and frequency setting, the
  * audio data has to be handled by a sound driver.
  *
- * Copyright (c) 2008 Alexey Klimov <klimov.linux@gmail.com>
+ * Copyright (c) 2008 Alexey Klimov <klimov.beep@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -32,7 +32,7 @@
  * achievements (specifications given).
  * Also, Faidon Liambotis <paravoid@debian.org> wrote nice driver for this radio
  * in 2007. He allowed to use his driver to improve current mr800 radio driver.
- * http://kerneltrap.org/mailarchive/linux-usb-devel/2007/10/11/342492
+ * http://kerneltrap.org/mailarchive/beep-usb-devel/2007/10/11/342492
  *
  * Version 0.01:	First working version.
  * 			It's required to blacklist AverMedia USB Radio
@@ -54,21 +54,21 @@
  */
 
 /* kernel includes */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/videodev2.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-event.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
+#include <beep/usb.h>
+#include <beep/mutex.h>
 
 /* driver and module definitions */
-#define DRIVER_AUTHOR "Alexey Klimov <klimov.linux@gmail.com>"
+#define DRIVER_AUTHOR "Alexey Klimov <klimov.beep@gmail.com>"
 #define DRIVER_DESC "AverMedia MR 800 USB FM radio driver"
 #define DRIVER_VERSION "0.1.2"
 

@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/sgivw.h -- SGI DBE frame buffer device header
+ *  beep/drivers/video/sgivw.h -- SGI DBE frame buffer device header
  *
  *      Copyright (C) 1999 Silicon Graphics, Inc.
  *      Jeffrey Newquist, newquist@engr.sgi.som

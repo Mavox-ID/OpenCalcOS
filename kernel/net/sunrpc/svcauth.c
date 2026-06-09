@@ -1,5 +1,5 @@
 /*
- * linux/net/sunrpc/svcauth.c
+ * beep/net/sunrpc/svcauth.c
  *
  * The generic interface for RPC authentication on the server side.
  *
@@ -9,14 +9,14 @@
  * 19-Apr-2000 Chris Evans      - Security fix
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/svcauth.h>
-#include <linux/err.h>
-#include <linux/hash.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/sunrpc/types.h>
+#include <beep/sunrpc/xdr.h>
+#include <beep/sunrpc/svcsock.h>
+#include <beep/sunrpc/svcauth.h>
+#include <beep/err.h>
+#include <beep/hash.h>
 
 #define RPCDBG_FACILITY	RPCDBG_AUTH
 

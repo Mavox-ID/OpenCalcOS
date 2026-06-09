@@ -1,11 +1,11 @@
 /*
- * linux/fs/jbd2/recovery.c
+ * beep/fs/jbd2/recovery.c
  *
  * Written by Stephen C. Tweedie <sct@redhat.com>, 1999
  *
  * Copyright 1999-2000 Red Hat Software --- All Rights Reserved
  *
- * This file is part of the Linux kernel and is made available under
+ * This file is part of the Beep kernel and is made available under
  * the terms of the GNU General Public License, version 2, or at your
  * option, any later version, incorporated herein by reference.
  *
@@ -16,12 +16,12 @@
 #ifndef __KERNEL__
 #include "jfs_user.h"
 #else
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/jbd2.h>
-#include <linux/errno.h>
-#include <linux/crc32.h>
-#include <linux/blkdev.h>
+#include <beep/time.h>
+#include <beep/fs.h>
+#include <beep/jbd2.h>
+#include <beep/errno.h>
+#include <beep/crc32.h>
+#include <beep/blkdev.h>
 #endif
 
 /*

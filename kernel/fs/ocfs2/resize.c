@@ -24,8 +24,8 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/fs.h>
-#include <linux/types.h>
+#include <beep/fs.h>
+#include <beep/types.h>
 
 #include <cluster/masklog.h>
 

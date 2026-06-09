@@ -19,9 +19,9 @@
 /* #define DEBUG */
 /* #define VERBOSE_DEBUG */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb/composite.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/usb/composite.h>
 
 #include "u_ether.h"
 
@@ -49,7 +49,7 @@
  * It's for devices with only CDC Ethernet configurations.
  */
 #define CDC_VENDOR_NUM		0x0525	/* NetChip */
-#define CDC_PRODUCT_NUM		0xa4a1	/* Linux-USB Ethernet Gadget */
+#define CDC_PRODUCT_NUM		0xa4a1	/* Beep-USB Ethernet Gadget */
 
 /*-------------------------------------------------------------------------*/
 USB_GADGET_COMPOSITE_OPTIONS();

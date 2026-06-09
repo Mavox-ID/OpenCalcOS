@@ -14,20 +14,20 @@
  *
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/io.h>
 
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/mfd/core.h>
-#include <linux/power_supply.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/mfd/core.h>
+#include <beep/power_supply.h>
 
-#include <linux/power/jz4740-battery.h>
-#include <linux/jz4740-adc.h>
+#include <beep/power/jz4740-battery.h>
+#include <beep/jz4740-adc.h>
 
 struct jz_battery {
 	struct jz_battery_platform_data *pdata;

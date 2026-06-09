@@ -7,15 +7,15 @@
  *	Bjorn Helgaas <bjorn.helgaas@hp.com>
  */
 
-#include <linux/pnp.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/stat.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <beep/pnp.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/list.h>
+#include <beep/types.h>
+#include <beep/stat.h>
+#include <beep/ctype.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
 
 #include <asm/uaccess.h>
 

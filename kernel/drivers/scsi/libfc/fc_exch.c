@@ -23,10 +23,10 @@
  * Fibre Channel exchange and sequence handling.
  */
 
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/export.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/export.h>
 
 #include <scsi/fc/fc_fc2.h>
 

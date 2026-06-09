@@ -23,11 +23,11 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/of_platform.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/of_platform.h>
 #include <asm/pgtable.h>
 #include <asm/fsl_85xx_cache_sram.h>
 

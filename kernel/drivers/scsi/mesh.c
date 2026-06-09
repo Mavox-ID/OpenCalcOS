@@ -18,17 +18,17 @@
  * - retry arbitration if lost (unless higher levels do this for us)
  * - power down the chip when no device is detected
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/blkdev.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/interrupt.h>
-#include <linux/reboot.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/blkdev.h>
+#include <beep/proc_fs.h>
+#include <beep/stat.h>
+#include <beep/interrupt.h>
+#include <beep/reboot.h>
+#include <beep/spinlock.h>
 #include <asm/dbdma.h>
 #include <asm/io.h>
 #include <asm/pgtable.h>

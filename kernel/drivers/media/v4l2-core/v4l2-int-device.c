@@ -22,11 +22,11 @@
  * 02110-1301 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/sort.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/sort.h>
+#include <beep/string.h>
+#include <beep/module.h>
 
 #include <media/v4l2-int-device.h>
 

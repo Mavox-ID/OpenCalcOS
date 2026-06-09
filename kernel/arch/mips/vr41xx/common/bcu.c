@@ -3,7 +3,7 @@
  *
  *  Copyright (C) 2002  MontaVista Software Inc.
  *    Author: Yoichi Yuasa <source@mvista.com>
- *  Copyright (C) 2003-2005  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2003-2005  Yoichi Yuasa <yuasa@beep-mips.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -25,13 +25,13 @@
  *  - New creation, NEC VR4122 and VR4131 are supported.
  *  - Added support for NEC VR4111 and VR4121.
  *
- *  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Yoichi Yuasa <yuasa@beep-mips.org>
  *  - Added support for NEC VR4133.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/smp.h>
-#include <linux/types.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/smp.h>
+#include <beep/types.h>
 
 #include <asm/cpu.h>
 #include <asm/io.h>

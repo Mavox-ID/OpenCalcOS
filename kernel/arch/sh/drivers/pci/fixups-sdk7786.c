@@ -9,9 +9,9 @@
  */
 #define pr_fmt(fmt) "PCI: " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
 #include <mach/fpga.h>
 
 /*

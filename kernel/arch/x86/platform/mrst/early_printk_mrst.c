@@ -16,14 +16,14 @@
  * Speed UART device which only exists in the Medfield platform
  */
 
-#include <linux/serial_reg.h>
-#include <linux/serial_mfd.h>
-#include <linux/kmsg_dump.h>
-#include <linux/console.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/serial_reg.h>
+#include <beep/serial_mfd.h>
+#include <beep/kmsg_dump.h>
+#include <beep/console.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/io.h>
 
 #include <asm/fixmap.h>
 #include <asm/pgtable.h>

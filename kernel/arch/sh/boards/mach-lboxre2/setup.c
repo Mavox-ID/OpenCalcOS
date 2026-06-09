@@ -1,5 +1,5 @@
 /*
- * linux/arch/sh/boards/lbox/setup.c
+ * beep/arch/sh/boards/lbox/setup.c
  *
  * Copyright (C) 2007 Nobuhiro Iwamatsu
  *
@@ -11,9 +11,9 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/ata_platform.h>
 #include <asm/machvec.h>
 #include <asm/addrspace.h>
 #include <mach/lboxre2.h>

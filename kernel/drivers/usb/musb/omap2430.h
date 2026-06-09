@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2005-2006 by Texas Instruments
  *
- * The Inventra Controller Driver for Linux is free software; you
+ * The Inventra Controller Driver for Beep is free software; you
  * can redistribute it and/or modify it under the terms of the GNU
  * General Public License version 2 as published by the Free Software
  * Foundation.
@@ -10,7 +10,7 @@
 #ifndef __MUSB_OMAP243X_H__
 #define __MUSB_OMAP243X_H__
 
-#include <linux/platform_data/usb-omap.h>
+#include <beep/platform_data/usb-omap.h>
 
 /*
  * OMAP2430-specific definitions

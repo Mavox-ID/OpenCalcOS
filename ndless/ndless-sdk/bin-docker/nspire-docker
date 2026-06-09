@@ -4,7 +4,7 @@ script=`basename $0`
 sudo_prefix=
 if ! groups | tr ' ' '\n' | grep docker >/dev/null; then
 	echo "Warning: You should add your user to the 'docker' group to avoid sudo password prompt"
-	echo "see https://docs.docker.com/installation/ubuntulinux/#giving-non-root-access"
+	echo "see https://docs.docker.com/installation/ubuntubeep/#giving-non-root-access"
 	sudo_prefix='sudo'
 fi
 uid=`id -u`

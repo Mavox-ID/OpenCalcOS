@@ -22,11 +22,11 @@
 #ifndef SPUFS_H
 #define SPUFS_H
 
-#include <linux/kref.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/fs.h>
-#include <linux/cpumask.h>
+#include <beep/kref.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/fs.h>
+#include <beep/cpumask.h>
 
 #include <asm/spu.h>
 #include <asm/spu_csa.h>

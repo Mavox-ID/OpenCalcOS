@@ -2,14 +2,14 @@
 #define _ASM_M32R_ATOMIC_H
 
 /*
- *  linux/include/asm-m32r/atomic.h
+ *  beep/include/asm-m32r/atomic.h
  *
  *  M32R version:
  *    Copyright (C) 2001, 2002  Hitoshi Yamamoto
- *    Copyright (C) 2004  Hirokazu Takata <takata at linux-m32r.org>
+ *    Copyright (C) 2004  Hirokazu Takata <takata at beep-m32r.org>
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/assembler.h>
 #include <asm/cmpxchg.h>
 #include <asm/dcache_clear.h>

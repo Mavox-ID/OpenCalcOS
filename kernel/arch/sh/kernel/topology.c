@@ -7,14 +7,14 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/percpu.h>
-#include <linux/topology.h>
-#include <linux/node.h>
-#include <linux/nodemask.h>
-#include <linux/export.h>
+#include <beep/cpu.h>
+#include <beep/cpumask.h>
+#include <beep/init.h>
+#include <beep/percpu.h>
+#include <beep/topology.h>
+#include <beep/node.h>
+#include <beep/nodemask.h>
+#include <beep/export.h>
 
 static DEFINE_PER_CPU(struct cpu, cpu_devices);
 

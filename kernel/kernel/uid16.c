@@ -3,16 +3,16 @@
  *	together in the faint hope we can take the out in five years time.
  */
 
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/prctl.h>
-#include <linux/capability.h>
-#include <linux/init.h>
-#include <linux/highuid.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/notifier.h>
+#include <beep/reboot.h>
+#include <beep/prctl.h>
+#include <beep/capability.h>
+#include <beep/init.h>
+#include <beep/highuid.h>
+#include <beep/security.h>
+#include <beep/syscalls.h>
 
 #include <asm/uaccess.h>
 

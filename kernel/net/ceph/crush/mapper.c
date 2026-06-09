@@ -1,9 +1,9 @@
 
 #ifdef __KERNEL__
-# include <linux/string.h>
-# include <linux/slab.h>
-# include <linux/bug.h>
-# include <linux/kernel.h>
+# include <beep/string.h>
+# include <beep/slab.h>
+# include <beep/bug.h>
+# include <beep/kernel.h>
 # ifndef dprintk
 #  define dprintk(args...)
 # endif
@@ -18,9 +18,9 @@
 # define kfree(x) free(x)
 #endif
 
-#include <linux/crush/crush.h>
-#include <linux/crush/hash.h>
-#include <linux/crush/mapper.h>
+#include <beep/crush/crush.h>
+#include <beep/crush/hash.h>
+#include <beep/crush/mapper.h>
 
 /*
  * Implement the core CRUSH mapping algorithm.

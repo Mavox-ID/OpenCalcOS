@@ -79,12 +79,12 @@
  *     availability of the different required components (blocks,
  *     rpipes, segment slots, etc), we go scheduling them. Painful.
  */
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/hash.h>
-#include <linux/ratelimit.h>
-#include <linux/export.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/hash.h>
+#include <beep/ratelimit.h>
+#include <beep/export.h>
 
 #include "wa-hc.h"
 #include "wusbhc.h"
@@ -1012,7 +1012,7 @@ EXPORT_SYMBOL_GPL(wa_urb_enqueue_run);
  * enqueue_b(), for the rpipe_get() and the mutex_lock()]. If we are
  * in an atomic section, we defer the enqueue_b() call--else we call direct.
  *
- * @urb: We own a reference to it done by the HCI Linux USB stack that
+ * @urb: We own a reference to it done by the HCI Beep USB stack that
  *       will be given up by calling usb_hcd_giveback_urb() or by
  *       returning error from this function -> ergo we don't have to
  *       refcount it.

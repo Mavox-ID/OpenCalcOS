@@ -2,7 +2,7 @@
  * arch/powerpc/boot/gamecube.c
  *
  * Nintendo GameCube bootwrapper support
- * Copyright (C) 2004-2009 The GameCube Linux Team
+ * Copyright (C) 2004-2009 The GameCube Beep Team
  * Copyright (C) 2008,2009 Albert Herranz
  *
  * This program is free software; you can redistribute it and/or

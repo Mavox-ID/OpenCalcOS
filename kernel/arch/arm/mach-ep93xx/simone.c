@@ -15,14 +15,14 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/i2c-gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/i2c-gpio.h>
 
 #include <mach/hardware.h>
-#include <linux/platform_data/video-ep93xx.h>
+#include <beep/platform_data/video-ep93xx.h>
 #include <mach/gpio-ep93xx.h>
 
 #include <asm/hardware/vic.h>

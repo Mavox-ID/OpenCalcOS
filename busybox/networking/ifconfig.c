@@ -22,7 +22,7 @@
  * Still missing:  media, tunnel.
  *
  * 2002-04-20
- * IPV6 support added by Bart Visscher <magick@linux-fan.com>
+ * IPV6 support added by Bart Visscher <magick@beep-fan.com>
  */
 //config:config IFCONFIG
 //config:	bool "ifconfig (12 kb)"

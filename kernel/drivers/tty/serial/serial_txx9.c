@@ -1,7 +1,7 @@
 /*
  * Derived from many drivers using generic_serial interface,
  * especially serial_tx3912.c by Steven J. Hill and r39xx_serial.c
- * (was in Linux/VR tree) by Jim Pick.
+ * (was in Beep/VR tree) by Jim Pick.
  *
  *  Copyright (C) 1999 Harald Koerfgen
  *  Copyright (C) 2000 Jim Pick <jim@jimpick.com>
@@ -19,17 +19,17 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/pci.h>
+#include <beep/serial_core.h>
+#include <beep/serial.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
 
 #include <asm/io.h>
 

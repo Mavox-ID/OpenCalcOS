@@ -1,7 +1,7 @@
 /*
 net-3-driver for the IBM LAN Adapter/A
 
-This is an extension to the Linux operating system, and is covered by the
+This is an extension to the Beep operating system, and is covered by the
 same GNU General Public License that covers that work.
 
 Copyright 1999 by Alfred Arnold (alfred@ccac.rwth-aachen.de,
@@ -14,7 +14,7 @@ paper sources:
   'PC Hardware: Aufbau, Funktionsweise, Programmierung' by
   Hans-Peter Messmer for the basic Microchannel stuff
 
-  'Linux Geraetetreiber' by Allesandro Rubini, Kalle Dalheimer
+  'Beep Geraetetreiber' by Allesandro Rubini, Kalle Dalheimer
   for help on Ethernet driver programming
 
   'DP83934CVUL-20/25 MHz SONIC-T Ethernet Controller Datasheet' by National
@@ -49,10 +49,10 @@ History:
   Dec 15th, 1999
 	transmission part works
   Dec 28th, 1999
-	added usage of the isa_functions for Linux 2.3 .  Things should
+	added usage of the isa_functions for Beep 2.3 .  Things should
 	still work with 2.0.x....
   Jan 28th, 2000
-	in Linux 2.2.13, the version.h file mysteriously didn't get
+	in Beep 2.2.13, the version.h file mysteriously didn't get
 	included.  Added a workaround for this.  Furthermore, it now
 	not only compiles as a modules ;-)
   Jan 30th, 2000
@@ -75,20 +75,20 @@ History:
 
  *************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/time.h>
-#include <linux/mca.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/skbuff.h>
-#include <linux/bitops.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/time.h>
+#include <beep/mca.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/if_ether.h>
+#include <beep/skbuff.h>
+#include <beep/bitops.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>

@@ -7,13 +7,13 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/serial_sci.h>
-#include <linux/uio_driver.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_intc.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/serial.h>
+#include <beep/serial_sci.h>
+#include <beep/uio_driver.h>
+#include <beep/sh_timer.h>
+#include <beep/sh_intc.h>
 #include <asm/clock.h>
 
 /* Serial */

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/common/timer-sp.c
+ *  beep/arch/arm/common/timer-sp.c
  *
  *  Copyright (C) 1999 - 2003 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd
@@ -18,13 +18,13 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/clk.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <beep/clk.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/io.h>
 
 #include <asm/sched_clock.h>
 #include <asm/hardware/arm_timer.h>

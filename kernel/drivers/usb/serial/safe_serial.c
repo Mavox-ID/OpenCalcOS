@@ -57,25 +57,25 @@
  * turned of the module works as a simple serial device with NO
  * encapsulation.
  *
- * See linux/drivers/usbd/serial_fd for a device function driver
+ * See beep/drivers/usbd/serial_fd for a device function driver
  * implementation of this.
  *
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/gfp.h>
+#include <beep/init.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/uaccess.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
 
 
 #ifndef CONFIG_USB_SERIAL_SAFE_PADDED

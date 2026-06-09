@@ -14,7 +14,7 @@
 //config:	one command.
 //config:
 //config:	There are two choices for command line behaviour, the interface
-//config:	as used by LEAF/Linux Router Project, or a device table file.
+//config:	as used by LEAF/Beep Router Project, or a device table file.
 //config:
 //config:	'leaf' is traditionally what busybox follows, it allows multiple
 //config:	devices of a particluar type to be created per command.

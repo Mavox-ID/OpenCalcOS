@@ -7,14 +7,14 @@
  * Copyright 2010 Google Inc. All rights reserved.
  */
 
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/kobject.h>
-#include <linux/module.h>
-#include <linux/dmi.h>
+#include <beep/ctype.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/sysfs.h>
+#include <beep/kobject.h>
+#include <beep/module.h>
+#include <beep/dmi.h>
 #include <asm/bios_ebda.h>
 
 #define BIOS_MEMCONSOLE_V1_MAGIC	0xDEADBABE

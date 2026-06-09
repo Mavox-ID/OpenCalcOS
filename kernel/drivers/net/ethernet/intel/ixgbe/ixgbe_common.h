@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel 10 Gigabit PCI Express Linux driver
+  Intel 10 Gigabit PCI Express Beep driver
   Copyright(c) 1999 - 2012 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it

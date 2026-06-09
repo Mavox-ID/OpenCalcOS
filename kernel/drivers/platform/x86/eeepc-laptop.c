@@ -3,7 +3,7 @@
  *
  *  Based on asus_acpi.c as patched for the Eee PC by Asus:
  *  ftp://ftp.asus.com/pub/ASUS/EeePC/701/ASUS_ACPI_071126.rar
- *  Based on eee.c from eeepc-linux
+ *  Based on eee.c from eeepc-beep
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -18,26 +18,26 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/backlight.h>
-#include <linux/fb.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/platform_device.h>
+#include <beep/backlight.h>
+#include <beep/fb.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/slab.h>
 #include <acpi/acpi_drivers.h>
 #include <acpi/acpi_bus.h>
-#include <linux/uaccess.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/rfkill.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/leds.h>
-#include <linux/dmi.h>
+#include <beep/uaccess.h>
+#include <beep/input.h>
+#include <beep/input/sparse-keymap.h>
+#include <beep/rfkill.h>
+#include <beep/pci.h>
+#include <beep/pci_hotplug.h>
+#include <beep/leds.h>
+#include <beep/dmi.h>
 
 #define EEEPC_LAPTOP_VERSION	"0.1"
 #define EEEPC_LAPTOP_NAME	"Eee PC Hotkey Driver"

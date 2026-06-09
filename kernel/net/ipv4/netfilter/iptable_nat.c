@@ -7,11 +7,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/ip.h>
+#include <beep/module.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/netfilter_ipv4/ip_tables.h>
+#include <beep/ip.h>
 #include <net/ip.h>
 
 #include <net/netfilter/nf_nat.h>

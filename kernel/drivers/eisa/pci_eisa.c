@@ -9,12 +9,12 @@
  * Generalisation from i82375 to PCI_CLASS_BRIDGE_EISA.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/eisa.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/eisa.h>
+#include <beep/pci.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
 /* There is only *one* pci_eisa device per machine, right ? */
 static struct eisa_root_device pci_eisa_root;

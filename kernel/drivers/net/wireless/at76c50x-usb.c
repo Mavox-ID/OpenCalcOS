@@ -25,24 +25,24 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/wireless.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
+#include <beep/usb.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/wireless.h>
 #include <net/iw_handler.h>
 #include <net/ieee80211_radiotap.h>
-#include <linux/firmware.h>
-#include <linux/leds.h>
+#include <beep/firmware.h>
+#include <beep/leds.h>
 #include <net/mac80211.h>
 
 #include "at76c50x-usb.h"

@@ -5,12 +5,12 @@
  *
  * This file is released under the GNU GPL v2.
  */
-#include <linux/kernel.h>
-#include <linux/sysfs.h>
-#include <linux/workqueue.h>
-#include <linux/module.h>
-#include <linux/uwb/umc.h>
-#include <linux/pci.h>
+#include <beep/kernel.h>
+#include <beep/sysfs.h>
+#include <beep/workqueue.h>
+#include <beep/module.h>
+#include <beep/uwb/umc.h>
+#include <beep/pci.h>
 
 static int umc_bus_pre_reset_helper(struct device *dev, void *data)
 {

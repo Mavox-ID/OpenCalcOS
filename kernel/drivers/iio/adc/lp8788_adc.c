@@ -10,15 +10,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/driver.h>
-#include <linux/iio/machine.h>
-#include <linux/mfd/lp8788.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/driver.h>
+#include <beep/iio/machine.h>
+#include <beep/mfd/lp8788.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 /* register address */
 #define LP8788_ADC_CONF			0x60

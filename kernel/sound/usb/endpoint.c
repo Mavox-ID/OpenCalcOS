@@ -15,12 +15,12 @@
  *
  */
 
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/ratelimit.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
-#include <linux/slab.h>
+#include <beep/gfp.h>
+#include <beep/init.h>
+#include <beep/ratelimit.h>
+#include <beep/usb.h>
+#include <beep/usb/audio.h>
+#include <beep/slab.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

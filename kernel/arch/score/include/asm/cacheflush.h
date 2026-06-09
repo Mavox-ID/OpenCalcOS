@@ -2,7 +2,7 @@
 #define _ASM_SCORE_CACHEFLUSH_H
 
 /* Keep includes the same across arches. */
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 extern void flush_cache_all(void);
 extern void flush_cache_mm(struct mm_struct *mm);

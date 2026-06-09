@@ -21,9 +21,9 @@
  * option) any later version.
  *
  */
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/ethtool.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/ethtool.h>
 #include <asm/io.h>
 
 #include "emac.h"

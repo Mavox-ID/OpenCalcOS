@@ -16,8 +16,8 @@
 
 #ifndef _DYNAMIC_LOADER_H_
 #define _DYNAMIC_LOADER_H_
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
 
 /*
  * Dynamic Loader

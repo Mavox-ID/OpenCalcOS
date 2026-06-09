@@ -30,12 +30,12 @@
 
 #include <drm/ttm/ttm_bo_driver.h>
 #include <drm/ttm/ttm_placement.h>
-#include <linux/io.h>
-#include <linux/highmem.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
+#include <beep/io.h>
+#include <beep/highmem.h>
+#include <beep/wait.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/module.h>
 
 void ttm_bo_free_old_node(struct ttm_buffer_object *bo)
 {

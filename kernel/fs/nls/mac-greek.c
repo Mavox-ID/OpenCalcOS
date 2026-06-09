@@ -1,5 +1,5 @@
 /*
- * linux/fs/nls/mac-greek.c
+ * beep/fs/nls/mac-greek.c
  *
  * Charset macgreek translation tables.
  * Generated automatically from the Unicode and charset
@@ -43,11 +43,11 @@
  * authorization of the copyright holder.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/nls.h>
-#include <linux/errno.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/nls.h>
+#include <beep/errno.h>
 
 static const wchar_t charset2uni[256] = {
 	/* 0x00 */

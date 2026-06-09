@@ -22,7 +22,7 @@
  *
  */
 
-#include <linux/notifier.h>
+#include <beep/notifier.h>
 #include "ibmasm.h"
 #include "dot_command.h"
 #include "lowlevel.h"

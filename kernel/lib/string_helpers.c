@@ -3,10 +3,10 @@
  *
  * Copyright 31 August 2008 James Bottomley
  */
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/export.h>
-#include <linux/string_helpers.h>
+#include <beep/kernel.h>
+#include <beep/math64.h>
+#include <beep/export.h>
+#include <beep/string_helpers.h>
 
 /**
  * string_get_size - get the size in the specified units

@@ -1,5 +1,5 @@
 /*
- * linux/kernel/capability.c
+ * beep/kernel/capability.c
  *
  * Copyright (C) 1997  Andrew Main <zefram@fysh.org>
  *
@@ -7,14 +7,14 @@
  * 30 May 2002:	Cleanup, Robert M. Love <rml@tech9.net>
  */
 
-#include <linux/audit.h>
-#include <linux/capability.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/pid_namespace.h>
-#include <linux/user_namespace.h>
+#include <beep/audit.h>
+#include <beep/capability.h>
+#include <beep/mm.h>
+#include <beep/export.h>
+#include <beep/security.h>
+#include <beep/syscalls.h>
+#include <beep/pid_namespace.h>
+#include <beep/user_namespace.h>
 #include <asm/uaccess.h>
 
 /*
@@ -37,7 +37,7 @@ __setup("no_file_caps", file_caps_disable);
 /*
  * More recent versions of libcap are available from:
  *
- *   http://www.kernel.org/pub/linux/lib/security/linux-privs/
+ *   http://www.kernel.org/pub/beep/lib/security/beep-privs/
  */
 
 static void warn_legacy_capability_use(void)
@@ -54,7 +54,7 @@ static void warn_legacy_capability_use(void)
 }
 
 /*
- * Version 2 capabilities worked fine, but the linux/capability.h file
+ * Version 2 capabilities worked fine, but the beep/capability.h file
  * that accompanied their introduction encouraged their use without
  * the necessary user-space source code changes. As such, we have
  * created a version 3 with equivalent functionality to version 2, but
@@ -95,17 +95,17 @@ static int cap_validate_magic(cap_user_header_t header, unsigned *tocopy)
 		return -EFAULT;
 
 	switch (version) {
-	case _LINUX_CAPABILITY_VERSION_1:
+	case _BEEP_CAPABILITY_VERSION_1:
 		warn_legacy_capability_use();
-		*tocopy = _LINUX_CAPABILITY_U32S_1;
+		*tocopy = _BEEP_CAPABILITY_U32S_1;
 		break;
-	case _LINUX_CAPABILITY_VERSION_2:
+	case _BEEP_CAPABILITY_VERSION_2:
 		warn_deprecated_v2();
 		/*
 		 * fall through - v3 is otherwise equivalent to v2.
 		 */
-	case _LINUX_CAPABILITY_VERSION_3:
-		*tocopy = _LINUX_CAPABILITY_U32S_3;
+	case _BEEP_CAPABILITY_VERSION_3:
+		*tocopy = _BEEP_CAPABILITY_U32S_3;
 		break;
 	default:
 		if (put_user((u32)_KERNEL_CAPABILITY_VERSION, &header->version))

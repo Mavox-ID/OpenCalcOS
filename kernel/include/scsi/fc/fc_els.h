@@ -20,7 +20,7 @@
 #ifndef _FC_ELS_H_
 #define	_FC_ELS_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * Fibre Channel Switch - Enhanced Link Services definitions.

@@ -1,9 +1,9 @@
 #include "audit.h"
-#include <linux/fsnotify_backend.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <beep/fsnotify_backend.h>
+#include <beep/namei.h>
+#include <beep/mount.h>
+#include <beep/kthread.h>
+#include <beep/slab.h>
 
 struct audit_tree;
 struct audit_chunk;

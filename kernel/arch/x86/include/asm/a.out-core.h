@@ -15,8 +15,8 @@
 #ifdef __KERNEL__
 #ifdef CONFIG_X86_32
 
-#include <linux/user.h>
-#include <linux/elfcore.h>
+#include <beep/user.h>
+#include <beep/elfcore.h>
 #include <asm/debugreg.h>
 
 /*

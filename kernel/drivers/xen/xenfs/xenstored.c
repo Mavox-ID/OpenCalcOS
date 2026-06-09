@@ -1,7 +1,7 @@
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
 
 #include <xen/page.h>
 

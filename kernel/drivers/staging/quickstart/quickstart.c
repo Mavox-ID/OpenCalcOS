@@ -27,13 +27,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
 #include <acpi/acpi_drivers.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
 
 MODULE_AUTHOR("Angelo Arrifano");
 MODULE_DESCRIPTION("ACPI Direct App Launch driver");

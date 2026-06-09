@@ -1,5 +1,5 @@
 /*
- *  linux/fs/fifo.c
+ *  beep/fs/fifo.c
  *
  *  written by Paul H. Hargrove
  *
@@ -9,10 +9,10 @@
  *			allocation of pipe_inode_info.
  */
 
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/pipe_fs_i.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/sched.h>
+#include <beep/pipe_fs_i.h>
 
 static int wait_for_partner(struct inode* inode, unsigned int *cnt)
 {

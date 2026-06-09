@@ -14,9 +14,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/slab.h>
 #include <sound/soc.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>

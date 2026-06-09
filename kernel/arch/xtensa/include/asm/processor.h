@@ -14,7 +14,7 @@
 #include <variant/core.h>
 #include <platform/hardware.h>
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/ptrace.h>
 #include <asm/types.h>
 #include <asm/regs.h>
@@ -22,7 +22,7 @@
 /* Assertions. */
 
 #if (XCHAL_HAVE_WINDOWED != 1)
-# error Linux requires the Xtensa Windowed Registers Option.
+# error Beep requires the Xtensa Windowed Registers Option.
 #endif
 
 #define ARCH_SLAB_MINALIGN	XCHAL_DATA_WIDTH

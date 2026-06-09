@@ -43,11 +43,11 @@
     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/spinlock.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
 
 /* Steal the hardware definitions from the bttv driver. */
 #include "../media/pci/bt8xx/bt848.h"

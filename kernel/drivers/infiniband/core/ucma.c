@@ -30,18 +30,18 @@
  * SOFTWARE.
  */
 
-#include <linux/completion.h>
-#include <linux/file.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/idr.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/module.h>
+#include <beep/completion.h>
+#include <beep/file.h>
+#include <beep/mutex.h>
+#include <beep/poll.h>
+#include <beep/sched.h>
+#include <beep/idr.h>
+#include <beep/in.h>
+#include <beep/in6.h>
+#include <beep/miscdevice.h>
+#include <beep/slab.h>
+#include <beep/sysctl.h>
+#include <beep/module.h>
 
 #include <rdma/rdma_user_cm.h>
 #include <rdma/ib_marshall.h>

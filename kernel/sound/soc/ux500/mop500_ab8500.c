@@ -12,10 +12,10 @@
  * by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/clk.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/io.h>
+#include <beep/clk.h>
 
 #include <mach/hardware.h>
 

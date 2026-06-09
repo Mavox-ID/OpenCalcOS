@@ -8,12 +8,12 @@
  * version 2 as published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/pkt_sched.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/pkt_sched.h>
 #include <net/sch_generic.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>

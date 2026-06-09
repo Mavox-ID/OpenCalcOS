@@ -15,12 +15,12 @@
 #include <crypto/scatterwalk.h>
 #include <crypto/skcipher.h>
 #include <crypto/if_alg.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/net.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/net.h>
 #include <net/sock.h>
 
 struct skcipher_sg_list {

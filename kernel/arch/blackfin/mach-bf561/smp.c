@@ -5,10 +5,10 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
 #include <asm/smp.h>
 #include <asm/dma.h>
 #include <asm/time.h>

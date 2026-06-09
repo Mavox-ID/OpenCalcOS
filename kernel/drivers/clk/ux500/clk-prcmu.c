@@ -7,12 +7,12 @@
  * License terms: GNU General Public License (GPL) version 2
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk-private.h>
-#include <linux/mfd/dbx500-prcmu.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
+#include <beep/clk-provider.h>
+#include <beep/clk-private.h>
+#include <beep/mfd/dbx500-prcmu.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/err.h>
 #include "clk.h"
 
 #define to_clk_prcmu(_hw) container_of(_hw, struct clk_prcmu, hw)

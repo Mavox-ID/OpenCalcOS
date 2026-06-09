@@ -3,8 +3,8 @@
 #ifndef __ASM_CRIS_ATOMIC__
 #define __ASM_CRIS_ATOMIC__
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/types.h>
 #include <asm/cmpxchg.h>
 #include <arch/atomic.h>
 

@@ -9,20 +9,20 @@
  * is licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mv643xx_i2c.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_i2c.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/mv643xx_i2c.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/of_i2c.h>
+#include <beep/clk.h>
+#include <beep/err.h>
 
 /* Register defines */
 #define	MV64XXX_I2C_REG_SLAVE_ADDR			0x00

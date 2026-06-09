@@ -32,13 +32,13 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
+#include <beep/interrupt.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/irq.h>
 
 #include <asm/errno.h>
 #include <asm/signal.h>

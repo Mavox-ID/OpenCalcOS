@@ -2,7 +2,7 @@
 #define __PERF_MACHINE_H
 
 #include <sys/types.h>
-#include <linux/rbtree.h>
+#include <beep/rbtree.h>
 #include "map.h"
 
 struct branch_stack;
@@ -27,13 +27,13 @@ struct machine {
 	struct list_head  user_dsos;
 	struct list_head  kernel_dsos;
 	struct map_groups kmaps;
-	struct map	  *vmlinux_maps[MAP__NR_TYPES];
+	struct map	  *vmbeep_maps[MAP__NR_TYPES];
 };
 
 static inline
 struct map *machine__kernel_map(struct machine *machine, enum map_type type)
 {
-	return machine->vmlinux_maps[type];
+	return machine->vmbeep_maps[type];
 }
 
 struct thread *machine__find_thread(struct machine *machine, pid_t pid);
@@ -126,7 +126,7 @@ struct map *machine__new_module(struct machine *machine, u64 start,
 
 int machine__load_kallsyms(struct machine *machine, const char *filename,
 			   enum map_type type, symbol_filter_t filter);
-int machine__load_vmlinux_path(struct machine *machine, enum map_type type,
+int machine__load_vmbeep_path(struct machine *machine, enum map_type type,
 			       symbol_filter_t filter);
 
 size_t machine__fprintf_dsos_buildid(struct machine *machine,
@@ -143,6 +143,6 @@ int machines__create_kernel_maps(struct rb_root *machines, pid_t pid);
 int machines__create_guest_kernel_maps(struct rb_root *machines);
 void machines__destroy_guest_kernel_maps(struct rb_root *machines);
 
-size_t machine__fprintf_vmlinux_path(struct machine *machine, FILE *fp);
+size_t machine__fprintf_vmbeep_path(struct machine *machine, FILE *fp);
 
 #endif /* __PERF_MACHINE_H */

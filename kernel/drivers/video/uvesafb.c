@@ -5,20 +5,20 @@
  *     Loosely based upon the vesafb driver.
  *
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/skbuff.h>
-#include <linux/timer.h>
-#include <linux/completion.h>
-#include <linux/connector.h>
-#include <linux/random.h>
-#include <linux/platform_device.h>
-#include <linux/limits.h>
-#include <linux/fb.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/skbuff.h>
+#include <beep/timer.h>
+#include <beep/completion.h>
+#include <beep/connector.h>
+#include <beep/random.h>
+#include <beep/platform_device.h>
+#include <beep/limits.h>
+#include <beep/fb.h>
+#include <beep/io.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 #include <video/edid.h>
 #include <video/uvesafb.h>
 #ifdef CONFIG_X86

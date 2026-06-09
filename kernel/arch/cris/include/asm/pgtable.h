@@ -9,13 +9,13 @@
 #include <asm-generic/pgtable-nopmd.h>
 
 #ifndef __ASSEMBLY__
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include <asm/mmu.h>
 #endif
 #include <arch/pgtable.h>
 
 /*
- * The Linux memory management assumes a three-level page table setup. On
+ * The Beep memory management assumes a three-level page table setup. On
  * CRIS, we use that, but "fold" the mid level into the top-level page
  * table. Since the MMU TLB is software loaded through an interrupt, it
  * supports any page table structure, so we could have used a three-level

@@ -5,27 +5,27 @@
  *
  * Copyright (C) 1995 - 2000 by Ralf Baechle
  */
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/module.h>
-#include <linux/kprobes.h>
-#include <linux/perf_event.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/module.h>
+#include <beep/kprobes.h>
+#include <beep/perf_event.h>
 
 #include <asm/branch.h>
 #include <asm/mmu_context.h>
 #include <asm/uaccess.h>
 #include <asm/ptrace.h>
 #include <asm/highmem.h>		/* For VMALLOC_END */
-#include <linux/kdebug.h>
+#include <beep/kdebug.h>
 
 /*
  * This routine handles page faults.  It determines the address,

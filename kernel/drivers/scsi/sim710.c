@@ -26,14 +26,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
-#include <linux/blkdev.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/eisa.h>
-#include <linux/interrupt.h>
+#include <beep/blkdev.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/eisa.h>
+#include <beep/interrupt.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_transport.h>

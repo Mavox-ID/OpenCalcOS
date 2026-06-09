@@ -1,7 +1,7 @@
 /*
  * arch/hexagon/kernel/kgdb.c - Hexagon KGDB Support
  *
- * Copyright (c) 2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -18,8 +18,8 @@
  * 02110-1301, USA.
  */
 
-#include <linux/kdebug.h>
-#include <linux/kgdb.h>
+#include <beep/kdebug.h>
+#include <beep/kgdb.h>
 
 /* All registers are 4 bytes, for now */
 #define GDB_SIZEOF_REG 4
@@ -180,7 +180,7 @@ void sleeping_thread_to_gdb_regs(unsigned long *gdb_regs,
  */
 int kgdb_arch_handle_exception(int vector, int signo, int err_code,
 			       char *remcom_in_buffer, char *remcom_out_buffer,
-			       struct pt_regs *linux_regs)
+			       struct pt_regs *beep_regs)
 {
 	switch (remcom_in_buffer[0]) {
 	case 's':

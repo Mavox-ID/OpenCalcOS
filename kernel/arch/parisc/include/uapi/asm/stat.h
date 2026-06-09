@@ -1,7 +1,7 @@
 #ifndef _PARISC_STAT_H
 #define _PARISC_STAT_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct stat {
 	unsigned int	st_dev;		/* dev_t is 32 bits on parisc */

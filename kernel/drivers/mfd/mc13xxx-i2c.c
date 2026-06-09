@@ -7,17 +7,17 @@
  * Free Software Foundation.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/mc13xxx.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/mutex.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/mc13xxx.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_gpio.h>
+#include <beep/i2c.h>
+#include <beep/err.h>
 
 #include "mc13xxx.h"
 

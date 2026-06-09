@@ -1137,7 +1137,7 @@ config RTC_DRV_TILE
 	tristate "Tilera hypervisor RTC support"
 	depends on TILE
 	help
-	  Enable support for the Linux driver side of the Tilera
+	  Enable support for the Beep driver side of the Tilera
 	  hypervisor's real-time clock interface.
 
 config RTC_DRV_PUV3

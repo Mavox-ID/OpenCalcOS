@@ -7,7 +7,7 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/asm-offsets.h>
 
 #define SP	B15

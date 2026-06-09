@@ -1,4 +1,4 @@
-/* include/linux/logger.h
+/* include/beep/logger.h
  *
  * Copyright (C) 2007-2008 Google, Inc.
  * Author: Robert Love <rlove@android.com>
@@ -14,11 +14,11 @@
  *
  */
 
-#ifndef _LINUX_LOGGER_H
-#define _LINUX_LOGGER_H
+#ifndef _BEEP_LOGGER_H
+#define _BEEP_LOGGER_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <beep/types.h>
+#include <beep/ioctl.h>
 
 /**
  * struct logger_entry - defines a single entry that is given to a logger
@@ -56,4 +56,4 @@ struct logger_entry {
 #define LOGGER_GET_NEXT_ENTRY_LEN	_IO(__LOGGERIO, 3) /* next entry len */
 #define LOGGER_FLUSH_LOG		_IO(__LOGGERIO, 4) /* flush log */
 
-#endif /* _LINUX_LOGGER_H */
+#endif /* _BEEP_LOGGER_H */

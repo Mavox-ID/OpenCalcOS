@@ -7,14 +7,14 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/export.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/spi/spi.h>
+#include <beep/export.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/imu/adis.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/trigger.h>
+#include <beep/iio/imu/adis.h>
 
 static int adis_data_rdy_trigger_set_state(struct iio_trigger *trig,
 						bool state)

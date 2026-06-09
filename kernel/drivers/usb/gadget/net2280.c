@@ -38,23 +38,23 @@
 #undef	DEBUG		/* messages on error and most fault paths */
 #undef	VERBOSE		/* extra debug messages (success too) */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/prefetch.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/moduleparam.h>
+#include <beep/device.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
+#include <beep/prefetch.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>
@@ -2796,7 +2796,7 @@ static int net2280_probe (struct pci_dev *pdev, const struct pci_device_id *id)
 			| (1 << DMA_READ_MULTIPLE_ENABLE)
 			| (1 << DMA_READ_LINE_ENABLE)
 			, &dev->pci->pcimstctl);
-	/* erratum 0115 shouldn't appear: Linux inits PCI_LATENCY_TIMER */
+	/* erratum 0115 shouldn't appear: Beep inits PCI_LATENCY_TIMER */
 	pci_set_master (pdev);
 	pci_try_set_mwi (pdev);
 

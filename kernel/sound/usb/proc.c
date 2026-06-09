@@ -15,8 +15,8 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/usb.h>
+#include <beep/init.h>
+#include <beep/usb.h>
 
 #include <sound/core.h>
 #include <sound/info.h>

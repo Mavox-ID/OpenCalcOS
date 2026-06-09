@@ -2,7 +2,7 @@
  * fs/sysfs/symlink.c - sysfs symlink implementation
  *
  * Copyright (c) 2001-3 Patrick Mochel
- * Copyright (c) 2007 SUSE Linux Products GmbH
+ * Copyright (c) 2007 SUSE Beep Products GmbH
  * Copyright (c) 2007 Tejun Heo <teheo@suse.de>
  *
  * This file is released under the GPLv2.
@@ -10,14 +10,14 @@
  * Please see Documentation/filesystems/sysfs.txt for more information.
  */
 
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/mount.h>
-#include <linux/module.h>
-#include <linux/kobject.h>
-#include <linux/namei.h>
-#include <linux/mutex.h>
-#include <linux/security.h>
+#include <beep/fs.h>
+#include <beep/gfp.h>
+#include <beep/mount.h>
+#include <beep/module.h>
+#include <beep/kobject.h>
+#include <beep/namei.h>
+#include <beep/mutex.h>
+#include <beep/security.h>
 
 #include "sysfs.h"
 

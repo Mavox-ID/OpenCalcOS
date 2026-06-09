@@ -6,7 +6,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 #include <asm/page.h>
 #include <asm/mman.h>
 

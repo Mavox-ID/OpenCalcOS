@@ -17,17 +17,17 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/irqdomain.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/of_device.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/irqdomain.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/pm.h>
 
 #include <asm/mach/irq.h>
 
@@ -513,8 +513,8 @@ postcore_initcall(tegra_gpio_init);
 
 #ifdef	CONFIG_DEBUG_FS
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 static int dbg_gpio_show(struct seq_file *s, void *unused)
 {

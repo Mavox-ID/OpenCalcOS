@@ -8,15 +8,15 @@
  * This file handles the architecture-dependent parts of process handling..
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/fs.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/fs.h>
 #include <hwregs/reg_rdwr.h>
 #include <hwregs/reg_map.h>
 #include <hwregs/timer_defs.h>
 #include <hwregs/intr_vect_defs.h>
-#include <linux/ptrace.h>
+#include <beep/ptrace.h>
 
 extern void stop_watchdog(void);
 

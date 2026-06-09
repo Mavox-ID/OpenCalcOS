@@ -3,11 +3,11 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
 #include <asm/proc-fns.h>
 #include <asm/system_misc.h>
 

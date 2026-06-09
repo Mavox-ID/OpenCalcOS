@@ -10,11 +10,11 @@
  * access of oprofile.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/oprofile.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/oprofile.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
 #include <asm/uaccess.h>
 
 #include "oprof.h"

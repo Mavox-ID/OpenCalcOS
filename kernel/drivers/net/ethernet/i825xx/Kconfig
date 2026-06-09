@@ -48,7 +48,7 @@ config ARM_ETHER1
 	depends on ARM && ARCH_ACORN
 	---help---
 	  If you have an Acorn system with one of these (AKA25) network cards,
-	  you should say Y to this option if you wish to use it with Linux.
+	  you should say Y to this option if you wish to use it with Beep.
 
 config APRICOT
 	tristate "Apricot Xen-II on board Ethernet"
@@ -153,7 +153,7 @@ config ZNET
 	depends on EXPERIMENTAL && ISA_DMA_API && X86
 	---help---
 	  The Zenith Z-Note notebook computer has a built-in network
-	  (Ethernet) card, and this is the Linux driver for it. Note that the
+	  (Ethernet) card, and this is the Beep driver for it. Note that the
 	  IBM Thinkpad 300 is compatible with the Z-Note and is also supported
 	  by this driver. Read the Ethernet-HOWTO, available from
 	  <http://www.tldp.org/docs.html#howto>.

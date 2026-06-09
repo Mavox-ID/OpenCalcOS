@@ -4,7 +4,7 @@
  * Licensed under the GPL-2 or later
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/thread_info.h>
 #include <asm/errno.h>
 #include <asm/blackfin.h>

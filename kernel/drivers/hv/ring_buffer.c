@@ -23,9 +23,9 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/hyperv.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/hyperv.h>
 
 #include "hyperv_vmbus.h"
 

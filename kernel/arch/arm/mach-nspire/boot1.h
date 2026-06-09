@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-nspire/boot1.h
+ *  beep/arch/arm/mach-nspire/boot1.h
  *
  *  Copyright (C) 2012 Daniel Tang <tangrs@tangrs.id.au>
  *

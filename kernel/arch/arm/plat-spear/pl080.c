@@ -4,19 +4,19 @@
  * DMAC pl080 definitions for SPEAr platform
  *
  * Copyright (C) 2012 ST Microelectronics
- * Viresh Kumar <viresh.linux@gmail.com>
+ * Viresh Kumar <viresh.beep@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/amba/pl08x.h>
-#include <linux/amba/bus.h>
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/spinlock_types.h>
+#include <beep/amba/pl08x.h>
+#include <beep/amba/bus.h>
+#include <beep/bug.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/spinlock_types.h>
 #include <mach/spear.h>
 #include <mach/misc_regs.h>
 

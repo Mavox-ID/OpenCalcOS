@@ -1,11 +1,11 @@
-/* linux/arch/arm/mach-s5p64x0/include/mach/tick.h
+/* beep/arch/arm/mach-s5p64x0/include/mach/tick.h
  *
  * Copyright (c) 2009-2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S5P64X0 - Timer tick support definitions

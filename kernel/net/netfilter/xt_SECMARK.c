@@ -13,11 +13,11 @@
  *
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/security.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_SECMARK.h>
+#include <beep/module.h>
+#include <beep/security.h>
+#include <beep/skbuff.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_SECMARK.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("James Morris <jmorris@redhat.com>");

@@ -4,11 +4,11 @@
  *
  * Copyright (C) 1999-2001  Gerard Roudier <groudier@free.fr>
  *
- * This driver is derived from the Linux sym53c8xx driver.
+ * This driver is derived from the Beep sym53c8xx driver.
  * Copyright (C) 1998-2000  Gerard Roudier
  *
  * The sym53c8xx driver is derived from the ncr53c8xx driver that had been 
- * a port of the FreeBSD ncr driver to Linux-1.2.13.
+ * a port of the FreeBSD ncr driver to Beep-1.2.13.
  *
  * The original ncr driver has been written for 386bsd and FreeBSD by
  *         Wolfgang Stanglmeier        <wolf@cologne.de>
@@ -50,7 +50,7 @@
  *  from the SCRIPTS code. In addition, cache line alignment 
  *  is guaranteed for power of 2 cache line size.
  *
- *  This allocator has been developed for the Linux sym53c8xx  
+ *  This allocator has been developed for the Beep sym53c8xx  
  *  driver, since this O/S does not provide naturally aligned 
  *  allocations.
  *  It has the advantage of allowing the driver to use private 

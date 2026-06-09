@@ -16,12 +16,12 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
 
 #include <asm/cacheflush.h>
 #include <asm/hardware/cache-l2x0.h>
@@ -427,7 +427,7 @@ void __init l2x0_init(void __iomem *base, u32 aux_val, u32 aux_mask)
 static int l2_wt_override;
 
 /*
- * Note that the end addresses passed to Linux primitives are
+ * Note that the end addresses passed to Beep primitives are
  * noninclusive, while the hardware cache range operations use
  * inclusive start and end addresses.
  */

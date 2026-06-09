@@ -20,9 +20,9 @@
  *   No. 450, Shenhu Road, Suzhou Industry Park, Suzhou, China
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/mfd/rtsx_pci.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/mfd/rtsx_pci.h>
 
 #include "rtsx_pcr.h"
 

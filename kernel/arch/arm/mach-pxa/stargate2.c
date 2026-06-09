@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/stargate2.c
+ *  beep/arch/arm/mach-pxa/stargate2.c
  *
  *  Author:	Ed C. Epp
  *  Created:	Nov 05, 2002
@@ -12,25 +12,25 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/machine.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/plat-ram.h>
-#include <linux/mtd/partitions.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/bitops.h>
+#include <beep/fb.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/machine.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/plat-ram.h>
+#include <beep/mtd/partitions.h>
 
-#include <linux/i2c/pxa-i2c.h>
-#include <linux/i2c/pcf857x.h>
-#include <linux/i2c/at24.h>
-#include <linux/smc91x.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
+#include <beep/i2c/pxa-i2c.h>
+#include <beep/i2c/pcf857x.h>
+#include <beep/i2c/at24.h>
+#include <beep/smc91x.h>
+#include <beep/gpio.h>
+#include <beep/leds.h>
 
 #include <asm/types.h>
 #include <asm/setup.h>
@@ -44,15 +44,15 @@
 #include <asm/mach/flash.h>
 
 #include <mach/pxa27x.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/mmc-pxamci.h>
 #include <mach/udc.h>
 #include <mach/pxa27x-udc.h>
 #include <mach/smemc.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/mfd/da903x.h>
-#include <linux/platform_data/sht15.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/pxa2xx_spi.h>
+#include <beep/mfd/da903x.h>
+#include <beep/platform_data/sht15.h>
 
 #include "devices.h"
 #include "generic.h"

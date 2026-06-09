@@ -36,7 +36,7 @@
 #include <media/tveeprom.h>
 #include <media/v4l2-chip-ident.h>
 #include <media/v4l2-event.h>
-#include <linux/dvb/audio.h>
+#include <beep/dvb/audio.h>
 
 u16 ivtv_service2vbi(int type)
 {

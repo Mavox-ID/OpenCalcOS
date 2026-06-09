@@ -1,5 +1,5 @@
 /*
- * Written for linux by Johan Myreen as a translation from
+ * Written for beep by Johan Myreen as a translation from
  * the assembly version by Linus (with diacriticals added)
  *
  * Some additional features added by Christoph Niemann (ChN), March 1993
@@ -24,24 +24,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/consolemap.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/consolemap.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 
-#include <linux/kbd_kern.h>
-#include <linux/kbd_diacr.h>
-#include <linux/vt_kern.h>
-#include <linux/input.h>
-#include <linux/reboot.h>
-#include <linux/notifier.h>
-#include <linux/jiffies.h>
-#include <linux/uaccess.h>
+#include <beep/kbd_kern.h>
+#include <beep/kbd_diacr.h>
+#include <beep/vt_kern.h>
+#include <beep/input.h>
+#include <beep/reboot.h>
+#include <beep/notifier.h>
+#include <beep/jiffies.h>
+#include <beep/uaccess.h>
 
 #include <asm/irq_regs.h>
 

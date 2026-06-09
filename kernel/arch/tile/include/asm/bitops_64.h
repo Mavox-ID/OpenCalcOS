@@ -15,8 +15,8 @@
 #ifndef _ASM_TILE_BITOPS_64_H
 #define _ASM_TILE_BITOPS_64_H
 
-#include <linux/compiler.h>
-#include <linux/atomic.h>
+#include <beep/compiler.h>
+#include <beep/atomic.h>
 
 /* See <asm/bitops.h> for API comments. */
 

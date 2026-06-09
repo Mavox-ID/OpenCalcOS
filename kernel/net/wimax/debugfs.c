@@ -1,9 +1,9 @@
 /*
- * Linux WiMAX
+ * Beep WiMAX
  * Debugfs support
  *
  *
- * Copyright (C) 2005-2006 Intel Corporation <linux-wimax@intel.com>
+ * Copyright (C) 2005-2006 Intel Corporation <beep-wimax@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *
  * This program is free software; you can redistribute it and/or
@@ -20,8 +20,8 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
  * 02110-1301, USA.
  */
-#include <linux/debugfs.h>
-#include <linux/wimax.h>
+#include <beep/debugfs.h>
+#include <beep/wimax.h>
 #include "wimax-internal.h"
 
 #define D_SUBMODULE debugfs

@@ -13,21 +13,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/dmi.h>
-#include <linux/io.h>
-#include <linux/power_supply.h>
-#include <linux/acpi.h>
-#include <linux/mm.h>
-#include <linux/i8042.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/backlight.h>
+#include <beep/err.h>
+#include <beep/dmi.h>
+#include <beep/io.h>
+#include <beep/power_supply.h>
+#include <beep/acpi.h>
+#include <beep/mm.h>
+#include <beep/i8042.h>
+#include <beep/slab.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 #include "../../firmware/dcdbas.h"
 
 #define BRIGHTNESS_TOKEN 0x7d

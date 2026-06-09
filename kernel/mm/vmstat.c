@@ -1,5 +1,5 @@
 /*
- *  linux/mm/vmstat.c
+ *  beep/mm/vmstat.c
  *
  *  Manages VM statistics
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
@@ -8,17 +8,17 @@
  *  Copyright (C) 2006 Silicon Graphics, Inc.,
  *		Christoph Lameter <christoph@lameter.com>
  */
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/vmstat.h>
-#include <linux/sched.h>
-#include <linux/math64.h>
-#include <linux/writeback.h>
-#include <linux/compaction.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/cpu.h>
+#include <beep/vmstat.h>
+#include <beep/sched.h>
+#include <beep/math64.h>
+#include <beep/writeback.h>
+#include <beep/compaction.h>
 
 #ifdef CONFIG_VM_EVENT_COUNTERS
 DEFINE_PER_CPU(struct vm_event_state, vm_event_states) = {{0}};
@@ -617,8 +617,8 @@ int fragmentation_index(struct zone *zone, unsigned int order)
 #endif
 
 #if defined(CONFIG_PROC_FS) || defined(CONFIG_COMPACTION)
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 
 static char * const migratetype_names[MIGRATE_TYPES] = {
 	"Unmovable",
@@ -1248,7 +1248,7 @@ static int __init setup_vmstat(void)
 module_init(setup_vmstat)
 
 #if defined(CONFIG_DEBUG_FS) && defined(CONFIG_COMPACTION)
-#include <linux/debugfs.h>
+#include <beep/debugfs.h>
 
 
 /*

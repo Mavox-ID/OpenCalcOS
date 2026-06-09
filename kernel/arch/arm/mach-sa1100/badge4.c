@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-sa1100/badge4.c
+ * beep/arch/arm/mach-sa1100/badge4.c
  *
  * BadgePAD 4 specific initialization
  *
@@ -13,18 +13,18 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/tty.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/errno.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_data/sa11x0-serial.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/tty.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/errno.h>
+#include <beep/gpio.h>
+#include <beep/leds.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>

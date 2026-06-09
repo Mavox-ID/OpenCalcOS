@@ -4,12 +4,12 @@
  * Copyright (C) 1996,1997 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/string.h>
+#include <beep/spinlock.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>

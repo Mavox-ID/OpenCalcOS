@@ -13,7 +13,7 @@
 #ifndef _INET6_CONNECTION_SOCK_H
 #define _INET6_CONNECTION_SOCK_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct in6_addr;
 struct inet_bind_bucket;

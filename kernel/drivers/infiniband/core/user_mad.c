@@ -33,20 +33,20 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/dma-mapping.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/kref.h>
-#include <linux/compat.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/fs.h>
+#include <beep/cdev.h>
+#include <beep/dma-mapping.h>
+#include <beep/poll.h>
+#include <beep/mutex.h>
+#include <beep/kref.h>
+#include <beep/compat.h>
+#include <beep/sched.h>
+#include <beep/semaphore.h>
+#include <beep/slab.h>
 
 #include <asm/uaccess.h>
 

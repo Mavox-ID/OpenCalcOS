@@ -26,7 +26,7 @@
 #include <dspbridge/dspapi.h>
 #include <dspbridge/dspdefs.h>
 
-#include <linux/list.h>
+#include <beep/list.h>
 #include <dspbridge/ntfy.h>
 
 /*

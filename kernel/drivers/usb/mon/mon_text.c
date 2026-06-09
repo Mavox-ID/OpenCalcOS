@@ -4,15 +4,15 @@
  * This is a text format reader.
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/debugfs.h>
-#include <linux/scatterlist.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/usb.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/export.h>
+#include <beep/mutex.h>
+#include <beep/debugfs.h>
+#include <beep/scatterlist.h>
 #include <asm/uaccess.h>
 
 #include "usb_mon.h"

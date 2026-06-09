@@ -10,23 +10,23 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/profile.h>
-#include <linux/irq.h>
-#include <linux/mm.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/string.h>
+#include <beep/interrupt.h>
+#include <beep/profile.h>
+#include <beep/irq.h>
+#include <beep/mm.h>
 
 #include <asm/io.h>
 #include <asm/timer-regs.h>
 #include <asm/mb-regs.h>
 #include <asm/mb86943a.h>
 
-#include <linux/timex.h>
+#include <beep/timex.h>
 
 #define TICK_SIZE (tick_nsec / 1000)
 

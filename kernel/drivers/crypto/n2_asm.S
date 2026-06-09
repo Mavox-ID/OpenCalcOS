@@ -3,7 +3,7 @@
  * Copyright (C) 2009 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/hypervisor.h>
 #include "n2_core.h"
 

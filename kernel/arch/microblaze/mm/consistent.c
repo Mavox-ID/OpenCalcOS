@@ -13,33 +13,33 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/stddef.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/bootmem.h>
-#include <linux/highmem.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/stddef.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/bootmem.h>
+#include <beep/highmem.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/gfp.h>
 
 #include <asm/pgalloc.h>
-#include <linux/io.h>
-#include <linux/hardirq.h>
+#include <beep/io.h>
+#include <beep/hardirq.h>
 #include <asm/mmu_context.h>
 #include <asm/mmu.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 #include <asm/pgtable.h>
 #include <asm/cpuinfo.h>
 #include <asm/tlbflush.h>

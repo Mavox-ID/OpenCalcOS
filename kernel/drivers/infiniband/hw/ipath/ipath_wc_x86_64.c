@@ -36,7 +36,7 @@
  * versions of the functions exported from here are used.
  */
 
-#include <linux/pci.h>
+#include <beep/pci.h>
 #include <asm/mtrr.h>
 #include <asm/processor.h>
 
@@ -59,7 +59,7 @@ int ipath_enable_wc(struct ipath_devdata *dd)
 
 	/*
 	 * Set the PIO buffers to be WCCOMB, so we get HT bursts to the
-	 * chip.  Linux (possibly the hardware) requires it to be on a power
+	 * chip.  Beep (possibly the hardware) requires it to be on a power
 	 * of 2 address matching the length (which has to be a power of 2).
 	 * For rev1, that means the base address, for rev2, it will be just
 	 * the PIO buffers themselves.

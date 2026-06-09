@@ -1,8 +1,8 @@
 #ifndef _ASM_X86_TLBFLUSH_H
 #define _ASM_X86_TLBFLUSH_H
 
-#include <linux/mm.h>
-#include <linux/sched.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
 
 #include <asm/processor.h>
 #include <asm/special_insns.h>

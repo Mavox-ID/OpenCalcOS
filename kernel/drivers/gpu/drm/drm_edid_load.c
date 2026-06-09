@@ -19,8 +19,8 @@
    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA.
 */
 
-#include <linux/module.h>
-#include <linux/firmware.h>
+#include <beep/module.h>
+#include <beep/firmware.h>
 #include <drm/drmP.h>
 #include <drm/drm_crtc.h>
 #include <drm/drm_crtc_helper.h>

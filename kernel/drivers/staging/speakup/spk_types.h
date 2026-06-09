@@ -5,17 +5,17 @@
  * This file includes all of the typedefs and structs used in speakup.
  */
 
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/wait.h>		/* for wait_queue */
-#include <linux/init.h> /* for __init */
-#include <linux/module.h>
-#include <linux/vt_kern.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/io.h>		/* for inb_p, outb_p, inb, outb, etc... */
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/wait.h>		/* for wait_queue */
+#include <beep/init.h> /* for __init */
+#include <beep/module.h>
+#include <beep/vt_kern.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
+#include <beep/io.h>		/* for inb_p, outb_p, inb, outb, etc... */
 
 enum var_type_t {
 	VAR_NUM = 0,

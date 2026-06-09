@@ -7,14 +7,14 @@
  *  2 of the License, or (at your option) any later version.
  */
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/of.h>
+#include <beep/list.h>
+#include <beep/notifier.h>
 
 #include <asm/machdep.h>
 #include <asm/rtas.h>

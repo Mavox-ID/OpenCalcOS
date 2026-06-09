@@ -8,13 +8,13 @@
  * is licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/serial_8250.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/serial_8250.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
 
-#include <linux/spi/spi.h>
+#include <beep/spi/spi.h>
 
 #include <asm/mach/map.h>
 
@@ -26,7 +26,7 @@
 #include <mach/time.h>
 #include <mach/serial.h>
 #include <mach/common.h>
-#include <linux/platform_data/spi-davinci.h>
+#include <beep/platform_data/spi-davinci.h>
 #include <mach/gpio-davinci.h>
 
 #include "davinci.h"
@@ -172,7 +172,7 @@ static struct clk arm_clk = {
 };
 
 /*
- * NOT LISTED below, and not touched by Linux
+ * NOT LISTED below, and not touched by Beep
  *   - in SyncReset state by default
  *	.lpsc = DAVINCI_LPSC_TPCC,
  *	.lpsc = DAVINCI_LPSC_TPTC0,

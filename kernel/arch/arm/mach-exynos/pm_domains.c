@@ -13,14 +13,14 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/pm_domain.h>
-#include <linux/delay.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/sched.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/pm_domain.h>
+#include <beep/delay.h>
+#include <beep/of_address.h>
+#include <beep/of_platform.h>
+#include <beep/sched.h>
 
 #include <mach/regs-pmu.h>
 #include <plat/devs.h>

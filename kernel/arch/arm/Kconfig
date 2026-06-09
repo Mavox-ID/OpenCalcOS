@@ -61,8 +61,8 @@ config ARM
 	  licensed by ARM Ltd and targeted at embedded applications and
 	  handhelds such as the Compaq IPAQ.  ARM-based PCs are no longer
 	  manufactured, but legacy ARM-based PC hardware remains popular in
-	  Europe.  There is an ARM Linux project with a web page at
-	  <http://www.arm.linux.org.uk/>.
+	  Europe.  There is an ARM Beep project with a web page at
+	  <http://www.arm.beep.org.uk/>.
 
 config ARM_HAS_SG_CHAIN
 	bool
@@ -732,7 +732,7 @@ config ARCH_RPC
 	select NEED_MACH_MEMORY_H
 	select NO_IOPORT
 	help
-	  On the Acorn Risc-PC, Linux can support the internal IDE disk and
+	  On the Acorn Risc-PC, Beep can support the internal IDE disk and
 	  CD-ROM interface, serial and parallel port, and the floppy drive.
 
 config ARCH_SA1100
@@ -874,7 +874,7 @@ config ARCH_SHARK
 	select ZONE_DMA
 	help
 	  Support for the StrongARM based Digital DNARD machine, also known
-	  as "Shark" (<http://www.shark-linux.de/shark.html>).
+	  as "Shark" (<http://www.shark-beep.de/shark.html>).
 
 config ARCH_U300
 	bool "ST-Ericsson U300 Series"
@@ -1880,7 +1880,7 @@ config XEN
 	depends on EXPERIMENTAL && ARM && OF
 	depends on CPU_V7 && !CPU_V6
 	help
-	  Say Y if you want to run Linux in a Virtual Machine on Xen on ARM.
+	  Say Y if you want to run Beep in a Virtual Machine on Xen on ARM.
 
 endmenu
 
@@ -2098,7 +2098,7 @@ config KEXEC
 	  kexec is a system call that implements the ability to shutdown your
 	  current kernel, and to start another kernel.  It is like a reboot
 	  but it is independent of the system firmware.   And like a reboot
-	  you can start any kernel with it, not just Linux.
+	  you can start any kernel with it, not just Beep.
 
 	  It is an ongoing process to be certain the hardware in a machine
 	  is properly shutdown, so do not be surprised if this code does not
@@ -2236,7 +2236,7 @@ config FPE_NWFPE
 	depends on (!AEABI || OABI_COMPAT) && !THUMB2_KERNEL
 	---help---
 	  Say Y to include the NWFPE floating point emulator in the kernel.
-	  This is necessary to run most binaries. Linux does not currently
+	  This is necessary to run most binaries. Beep does not currently
 	  support floating point hardware so you need to say Y here even if
 	  your machine has an FPA or floating point co-processor podule.
 
@@ -2304,7 +2304,7 @@ config ARTHUR
 	depends on !AEABI
 	help
 	  Say Y here to include the kernel code necessary if you want to run
-	  Acorn RISC OS/Arthur binaries under Linux. This code is still very
+	  Acorn RISC OS/Arthur binaries under Beep. This code is still very
 	  experimental; if this sounds frightening, say N and sleep in peace.
 	  You can also say M here to compile this support as a module (which
 	  will be called arthur).

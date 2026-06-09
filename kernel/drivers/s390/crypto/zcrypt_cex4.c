@@ -1,14 +1,14 @@
 /*
  *  Copyright IBM Corp. 2012
- *  Author(s): Holger Dengler <hd@linux.vnet.ibm.com>
+ *  Author(s): Holger Dengler <hd@beep.vnet.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/atomic.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/atomic.h>
+#include <beep/uaccess.h>
 
 #include "ap_bus.h"
 #include "zcrypt_api.h"

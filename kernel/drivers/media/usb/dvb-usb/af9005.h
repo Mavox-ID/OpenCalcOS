@@ -1,4 +1,4 @@
-/* Common header-file of the Linux driver for the Afatech 9005
+/* Common header-file of the Beep driver for the Afatech 9005
  * USB1.1 DVB-T receiver.
  *
  * Copyright (C) 2007 Luca Olivetti (luca@ventoso.org)

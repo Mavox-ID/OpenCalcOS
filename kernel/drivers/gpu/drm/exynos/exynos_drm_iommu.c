@@ -12,9 +12,9 @@
 #include <drmP.h>
 #include <drm/exynos_drm.h>
 
-#include <linux/dma-mapping.h>
-#include <linux/iommu.h>
-#include <linux/kref.h>
+#include <beep/dma-mapping.h>
+#include <beep/iommu.h>
+#include <beep/kref.h>
 
 #include <asm/dma-iommu.h>
 

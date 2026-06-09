@@ -56,7 +56,7 @@
 #ifndef _MODULE_LIST_H_
 #define _MODULE_LIST_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* Global pointer to the modules_header structure */
 #define MODULES_HEADER "_DLModules"

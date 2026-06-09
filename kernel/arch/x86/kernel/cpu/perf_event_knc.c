@@ -1,7 +1,7 @@
 /* Driver for Intel Xeon Phi "Knights Corner" PMU */
 
-#include <linux/perf_event.h>
-#include <linux/types.h>
+#include <beep/perf_event.h>
+#include <beep/types.h>
 
 #include <asm/hardirq.h>
 

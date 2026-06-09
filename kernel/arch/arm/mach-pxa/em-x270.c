@@ -9,30 +9,30 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
 
-#include <linux/dm9000.h>
-#include <linux/rtc-v3020.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
-#include <linux/gpio.h>
-#include <linux/mfd/da903x.h>
-#include <linux/regulator/machine.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/tdo24m.h>
-#include <linux/spi/libertas_spi.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/power_supply.h>
-#include <linux/apm-emulation.h>
-#include <linux/i2c.h>
-#include <linux/i2c/pca953x.h>
-#include <linux/i2c/pxa-i2c.h>
-#include <linux/regulator/userspace-consumer.h>
+#include <beep/dm9000.h>
+#include <beep/rtc-v3020.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/input.h>
+#include <beep/gpio_keys.h>
+#include <beep/gpio.h>
+#include <beep/mfd/da903x.h>
+#include <beep/regulator/machine.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/tdo24m.h>
+#include <beep/spi/libertas_spi.h>
+#include <beep/spi/pxa2xx_spi.h>
+#include <beep/power_supply.h>
+#include <beep/apm-emulation.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pca953x.h>
+#include <beep/i2c/pxa-i2c.h>
+#include <beep/regulator/userspace-consumer.h>
 
 #include <media/soc_camera.h>
 
@@ -42,11 +42,11 @@
 #include <mach/pxa27x.h>
 #include <mach/pxa27x-udc.h>
 #include <mach/audio.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/keypad-pxa27x.h>
-#include <linux/platform_data/camera-pxa.h>
+#include <beep/platform_data/video-pxafb.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/keypad-pxa27x.h>
+#include <beep/platform_data/camera-pxa.h>
 
 #include "generic.h"
 #include "devices.h"

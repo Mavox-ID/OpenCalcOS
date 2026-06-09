@@ -26,7 +26,7 @@
 #ifndef __MDFLD_DSI_PKG_SENDER_H__
 #define __MDFLD_DSI_PKG_SENDER_H__
 
-#include <linux/kthread.h>
+#include <beep/kthread.h>
 
 #define MDFLD_MAX_DCS_PARAM	8
 

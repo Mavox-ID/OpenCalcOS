@@ -3,16 +3,16 @@
  *
  * Copyright (C) 2008 Steven Rostedt <srostedt@redhat.com>
  */
-#include <linux/kallsyms.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/irqflags.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/ftrace.h>
-#include <linux/hash.h>
-#include <linux/fs.h>
+#include <beep/kallsyms.h>
+#include <beep/seq_file.h>
+#include <beep/spinlock.h>
+#include <beep/irqflags.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
+#include <beep/ftrace.h>
+#include <beep/hash.h>
+#include <beep/fs.h>
 #include <asm/local.h>
 
 #include "trace.h"

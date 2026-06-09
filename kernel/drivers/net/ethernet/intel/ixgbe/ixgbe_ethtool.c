@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel 10 Gigabit PCI Express Linux driver
+  Intel 10 Gigabit PCI Express Beep driver
   Copyright(c) 1999 - 2012 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it
@@ -27,16 +27,16 @@
 
 /* ethtool support for ixgbe */
 
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/uaccess.h>
+#include <beep/interrupt.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/vmalloc.h>
+#include <beep/highmem.h>
+#include <beep/uaccess.h>
 
 #include "ixgbe.h"
 

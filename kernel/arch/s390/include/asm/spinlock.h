@@ -9,7 +9,7 @@
 #ifndef __ASM_SPINLOCK_H
 #define __ASM_SPINLOCK_H
 
-#include <linux/smp.h>
+#include <beep/smp.h>
 
 extern int spin_retry;
 

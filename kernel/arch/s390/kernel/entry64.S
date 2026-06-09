@@ -8,8 +8,8 @@
  *		 Heiko Carstens <heiko.carstens@de.ibm.com>
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
 #include <asm/processor.h>
 #include <asm/cache.h>
 #include <asm/errno.h>

@@ -17,25 +17,25 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
 
-#include <linux/spi/spi.h>
-#include <linux/regulator/machine.h>
-#include <linux/i2c/twl.h>
-#include <linux/wl12xx.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/nand.h>
-#include <linux/leds.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/regulator/fixed.h>
-#include <linux/platform_data/spi-omap2-mcspi.h>
+#include <beep/spi/spi.h>
+#include <beep/regulator/machine.h>
+#include <beep/i2c/twl.h>
+#include <beep/wl12xx.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/nand.h>
+#include <beep/leds.h>
+#include <beep/input.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/gpio.h>
+#include <beep/gpio_keys.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/card.h>
+#include <beep/regulator/fixed.h>
+#include <beep/platform_data/spi-omap2-mcspi.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -43,7 +43,7 @@
 
 #include "common.h"
 #include <video/omapdss.h>
-#include <linux/platform_data/mtd-nand-omap2.h>
+#include <beep/platform_data/mtd-nand-omap2.h>
 
 #include "mux.h"
 #include "sdram-micron-mt46h32m32lf-6.h"

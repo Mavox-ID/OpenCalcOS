@@ -28,7 +28,7 @@
  * configfs Copyright (C) 2005 Oracle.  All rights reserved.
  *
  * Added CONFIGFS_EATTR() macros from original configfs.h macros
- * Copright (C) 2008-2009 Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Copright (C) 2008-2009 Nicholas A. Bellinger <nab@beep-iscsi.org>
  *
  * Please read Documentation/filesystems/configfs/configfs.txt before using
  * the configfs interface, ESPECIALLY the parts about reference counts and
@@ -38,7 +38,7 @@
 #ifndef _CONFIGFS_MACROS_H_
 #define _CONFIGFS_MACROS_H_
 
-#include <linux/configfs.h>
+#include <beep/configfs.h>
 
 /*
  * Users often need to create attribute structures for their configurable

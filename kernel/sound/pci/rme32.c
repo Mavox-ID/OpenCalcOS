@@ -69,12 +69,12 @@
  */
 
 
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/gfp.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/module.h>
 
 #include <sound/core.h>
 #include <sound/info.h>

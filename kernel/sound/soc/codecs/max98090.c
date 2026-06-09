@@ -10,7 +10,7 @@
  * max98095.c
  * Copyright 2011 Maxim Integrated Products
  *
- * https://github.com/hardkernel/linux/commit/\
+ * https://github.com/hardkernel/beep/commit/\
  *	3417d7166b17113b3b33b0a337c74d1c7cc313df#sound/soc/codecs/max98090.c
  * Copyright 2011 Maxim Integrated Products
  *
@@ -19,9 +19,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
+#include <beep/regmap.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>
 

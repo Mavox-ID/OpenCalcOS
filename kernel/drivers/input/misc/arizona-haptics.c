@@ -10,17 +10,17 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/slab.h>
 
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>
 
-#include <linux/mfd/arizona/core.h>
-#include <linux/mfd/arizona/pdata.h>
-#include <linux/mfd/arizona/registers.h>
+#include <beep/mfd/arizona/core.h>
+#include <beep/mfd/arizona/pdata.h>
+#include <beep/mfd/arizona/registers.h>
 
 struct arizona_haptics {
 	struct arizona *arizona;

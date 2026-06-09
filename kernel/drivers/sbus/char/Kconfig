@@ -1,5 +1,5 @@
 
-menu "Misc Linux/SPARC drivers"
+menu "Misc Beep/SPARC drivers"
 
 config SUN_OPENPROMIO
 	tristate "/dev/openprom device support"

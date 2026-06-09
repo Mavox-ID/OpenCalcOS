@@ -1,12 +1,12 @@
 /*
- *  linux/fs/hpfs/buffer.c
+ *  beep/fs/hpfs/buffer.c
  *
  *  Mikulas Patocka (mikulas@artax.karlin.mff.cuni.cz), 1998-1999
  *
  *  general buffer i/o
  */
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 #include "hpfs_fn.h"
 
 /* Map a sector into a buffer and return pointers to it and to the buffer. */

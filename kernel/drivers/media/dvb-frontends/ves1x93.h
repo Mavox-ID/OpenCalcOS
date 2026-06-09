@@ -4,7 +4,7 @@
     Copyright (C) 1999 Convergence Integrated Media GmbH <ralph@convergence.de>
     Copyright (C) 2001 Ronny Strutz <3des@elitedvb.de>
     Copyright (C) 2002 Dennis Noermann <dennis.noermann@noernet.de>
-    Copyright (C) 2002-2003 Andreas Oberritter <obi@linuxtv.org>
+    Copyright (C) 2002-2003 Andreas Oberritter <obi@beeptv.org>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -26,7 +26,7 @@
 #ifndef VES1X93_H
 #define VES1X93_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 struct ves1x93_config
 {

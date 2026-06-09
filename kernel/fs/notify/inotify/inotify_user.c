@@ -22,22 +22,22 @@
  * General Public License for more details.
  */
 
-#include <linux/file.h>
-#include <linux/fs.h> /* struct inode */
-#include <linux/fsnotify_backend.h>
-#include <linux/idr.h>
-#include <linux/init.h> /* module_init */
-#include <linux/inotify.h>
-#include <linux/kernel.h> /* roundup() */
-#include <linux/namei.h> /* LOOKUP_FOLLOW */
-#include <linux/sched.h> /* struct user */
-#include <linux/slab.h> /* struct kmem_cache */
-#include <linux/syscalls.h>
-#include <linux/types.h>
-#include <linux/anon_inodes.h>
-#include <linux/uaccess.h>
-#include <linux/poll.h>
-#include <linux/wait.h>
+#include <beep/file.h>
+#include <beep/fs.h> /* struct inode */
+#include <beep/fsnotify_backend.h>
+#include <beep/idr.h>
+#include <beep/init.h> /* module_init */
+#include <beep/inotify.h>
+#include <beep/kernel.h> /* roundup() */
+#include <beep/namei.h> /* LOOKUP_FOLLOW */
+#include <beep/sched.h> /* struct user */
+#include <beep/slab.h> /* struct kmem_cache */
+#include <beep/syscalls.h>
+#include <beep/types.h>
+#include <beep/anon_inodes.h>
+#include <beep/uaccess.h>
+#include <beep/poll.h>
+#include <beep/wait.h>
 
 #include "inotify.h"
 #include "../fdinfo.h"
@@ -54,7 +54,7 @@ struct kmem_cache *event_priv_cachep __read_mostly;
 
 #ifdef CONFIG_SYSCTL
 
-#include <linux/sysctl.h>
+#include <beep/sysctl.h>
 
 static int zero;
 

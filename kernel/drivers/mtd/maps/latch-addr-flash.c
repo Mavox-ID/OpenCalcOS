@@ -10,15 +10,15 @@
  * kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/latch-addr-flash.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/partitions.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/latch-addr-flash.h>
+#include <beep/slab.h>
 
 #define DRIVER_NAME "latch-addr-flash"
 

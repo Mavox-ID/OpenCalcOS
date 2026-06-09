@@ -1,12 +1,12 @@
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/audit.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/tracehook.h>
+#include <beep/audit.h>
+#include <beep/ptrace.h>
+#include <beep/sched.h>
+#include <beep/tracehook.h>
 #include <asm/uaccess.h>
 #include <skas_ptrace.h>
 

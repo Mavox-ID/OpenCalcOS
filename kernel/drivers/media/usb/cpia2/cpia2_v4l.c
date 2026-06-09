@@ -31,13 +31,13 @@
 
 #define CPIA_VERSION "3.0.1"
 
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/videodev2.h>
-#include <linux/stringify.h>
+#include <beep/module.h>
+#include <beep/time.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/videodev2.h>
+#include <beep/stringify.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-event.h>
 

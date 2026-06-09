@@ -3,8 +3,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/futex.h>
-#include <linux/uaccess.h>
+#include <beep/futex.h>
+#include <beep/uaccess.h>
 #include <asm/errno.h>
 #include <asm/synch.h>
 #include <asm/asm-compat.h>

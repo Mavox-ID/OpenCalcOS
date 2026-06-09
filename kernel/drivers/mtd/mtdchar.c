@@ -17,24 +17,24 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/backing-dev.h>
-#include <linux/compat.h>
-#include <linux/mount.h>
-#include <linux/blkpg.h>
-#include <linux/magic.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/map.h>
+#include <beep/device.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/mutex.h>
+#include <beep/backing-dev.h>
+#include <beep/compat.h>
+#include <beep/mount.h>
+#include <beep/blkpg.h>
+#include <beep/magic.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/map.h>
 
 #include <asm/uaccess.h>
 

@@ -5,9 +5,9 @@
  *
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/io.h>
 
 #include <asm/gic.h>
 #include <asm/irq_cpu.h>

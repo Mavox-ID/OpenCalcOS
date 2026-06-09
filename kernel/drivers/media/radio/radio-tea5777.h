@@ -27,7 +27,7 @@
  *
  */
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-device.h>

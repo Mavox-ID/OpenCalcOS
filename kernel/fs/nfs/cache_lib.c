@@ -1,18 +1,18 @@
 /*
- * linux/fs/nfs/cache_lib.c
+ * beep/fs/nfs/cache_lib.c
  *
  * Helper routines for the NFS client caches
  *
  * Copyright (c) 2009 Trond Myklebust <Trond.Myklebust@netapp.com>
  */
-#include <linux/kmod.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/sunrpc/cache.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
+#include <beep/kmod.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/slab.h>
+#include <beep/sunrpc/cache.h>
+#include <beep/sunrpc/rpc_pipe_fs.h>
 #include <net/net_namespace.h>
 
 #include "cache_lib.h"
@@ -34,7 +34,7 @@ MODULE_PARM_DESC(cache_getent_timeout, "Timeout (in seconds) after which "
 int nfs_cache_upcall(struct cache_detail *cd, char *entry_name)
 {
 	static char *envp[] = { "HOME=/",
-		"TERM=linux",
+		"TERM=beep",
 		"PATH=/sbin:/usr/sbin:/bin:/usr/bin",
 		NULL
 	};

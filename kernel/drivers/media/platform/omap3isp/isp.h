@@ -29,11 +29,11 @@
 
 #include <media/omap3isp.h>
 #include <media/v4l2-device.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/iommu.h>
-#include <linux/platform_device.h>
-#include <linux/wait.h>
+#include <beep/device.h>
+#include <beep/io.h>
+#include <beep/iommu.h>
+#include <beep/platform_device.h>
+#include <beep/wait.h>
 
 #include "ispstat.h"
 #include "ispccdc.h"

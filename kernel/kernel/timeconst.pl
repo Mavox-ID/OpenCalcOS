@@ -3,7 +3,7 @@
 #
 #   Copyright 2007-2008 rPath, Inc. - All Rights Reserved
 #
-#   This file is part of the Linux kernel, and is made available under
+#   This file is part of the Beep kernel, and is made available under
 #   the terms of the GNU General Public License version 2 or (at your
 #   option) any later version; incorporated herein by reference.
 #
@@ -290,8 +290,8 @@ sub output($@)
 	print "#define KERNEL_TIMECONST_H\n";
 	print "\n";
 
-	print "#include <linux/param.h>\n";
-	print "#include <linux/types.h>\n";
+	print "#include <beep/param.h>\n";
+	print "#include <beep/types.h>\n";
 
 	print "\n";
 	print "#if HZ != $hz\n";

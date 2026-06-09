@@ -1,5 +1,5 @@
 /*
- *  linux/arch/unicore32/kernel/hibernate.c
+ *  beep/arch/unicore32/kernel/hibernate.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -11,9 +11,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/gfp.h>
-#include <linux/suspend.h>
-#include <linux/bootmem.h>
+#include <beep/gfp.h>
+#include <beep/suspend.h>
+#include <beep/bootmem.h>
 
 #include <asm/page.h>
 #include <asm/pgtable.h>

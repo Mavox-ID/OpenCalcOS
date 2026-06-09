@@ -147,11 +147,11 @@ lib-y:=
 include findutils/Kbuild
 lib-all-y += $(patsubst %,findutils/%,$(sort $(lib-y)))
 lib-y:=
-include util-linux/Kbuild
-lib-all-y += $(patsubst %,util-linux/%,$(sort $(lib-y)))
+include util-beep/Kbuild
+lib-all-y += $(patsubst %,util-beep/%,$(sort $(lib-y)))
 lib-y:=
-include util-linux/volume_id/Kbuild
-lib-all-y += $(patsubst %,util-linux/volume_id/%,$(sort $(lib-y)))
+include util-beep/volume_id/Kbuild
+lib-all-y += $(patsubst %,util-beep/volume_id/%,$(sort $(lib-y)))
 lib-y:=
 include init/Kbuild
 lib-all-y += $(patsubst %,init/%,$(sort $(lib-y)))
@@ -165,8 +165,8 @@ lib-y:=
 include printutils/Kbuild
 lib-all-y += $(patsubst %,printutils/%,$(sort $(lib-y)))
 lib-y:=
-include selinux/Kbuild
-lib-all-y += $(patsubst %,selinux/%,$(sort $(lib-y)))
+include sebeep/Kbuild
+lib-all-y += $(patsubst %,sebeep/%,$(sort $(lib-y)))
 lib-y:=
 include scripts/Kbuild
 lib-all-y += $(patsubst %,scripts/%,$(sort $(lib-y)))

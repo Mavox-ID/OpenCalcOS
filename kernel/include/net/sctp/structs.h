@@ -54,16 +54,16 @@
 #ifndef __sctp_structs_h__
 #define __sctp_structs_h__
 
-#include <linux/time.h>		/* We get struct timespec.    */
-#include <linux/socket.h>	/* linux/in.h needs this!!    */
-#include <linux/in.h>		/* We get struct sockaddr_in. */
-#include <linux/in6.h>		/* We get struct in6_addr     */
-#include <linux/ipv6.h>
+#include <beep/time.h>		/* We get struct timespec.    */
+#include <beep/socket.h>	/* beep/in.h needs this!!    */
+#include <beep/in.h>		/* We get struct sockaddr_in. */
+#include <beep/in6.h>		/* We get struct in6_addr     */
+#include <beep/ipv6.h>
 #include <asm/param.h>		/* We get MAXHOSTNAMELEN.     */
-#include <linux/atomic.h>		/* This gets us atomic counters.  */
-#include <linux/skbuff.h>	/* We need sk_buff_head. */
-#include <linux/workqueue.h>	/* We need tq_struct.	 */
-#include <linux/sctp.h>		/* We need sctp* header structs.  */
+#include <beep/atomic.h>		/* This gets us atomic counters.  */
+#include <beep/skbuff.h>	/* We need sk_buff_head. */
+#include <beep/workqueue.h>	/* We need tq_struct.	 */
+#include <beep/sctp.h>		/* We need sctp* header structs.  */
 #include <net/sctp/auth.h>	/* We need auth specific structs */
 
 /* A convenience structure for handling sockaddr structures.

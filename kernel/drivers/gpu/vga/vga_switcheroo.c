@@ -17,17 +17,17 @@
  - switch_check  - check if the device is in a position to switch now
  */
 
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
-#include <linux/fb.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
+#include <beep/uaccess.h>
+#include <beep/fs.h>
+#include <beep/debugfs.h>
+#include <beep/fb.h>
 
-#include <linux/pci.h>
-#include <linux/vga_switcheroo.h>
+#include <beep/pci.h>
+#include <beep/vga_switcheroo.h>
 
-#include <linux/vgaarb.h>
+#include <beep/vgaarb.h>
 
 struct vga_switcheroo_client {
 	struct pci_dev *pdev;

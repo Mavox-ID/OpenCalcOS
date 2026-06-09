@@ -28,8 +28,8 @@
  *****************************************************************************/
 
 #include "../wifi.h"
-#include <linux/vmalloc.h>
-#include <linux/module.h>
+#include <beep/vmalloc.h>
+#include <beep/module.h>
 
 #include "../core.h"
 #include "../pci.h"

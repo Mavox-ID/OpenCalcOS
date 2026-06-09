@@ -63,7 +63,7 @@
 		pb18 {
 			label = "pb18";
 			gpios = <&pioB 18 1>;
-			linux,default-trigger = "heartbeat";
+			beep,default-trigger = "heartbeat";
 		};
 
 		pd21 {

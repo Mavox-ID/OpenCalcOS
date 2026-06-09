@@ -5,7 +5,7 @@
  * Copyright (C) 1996, 1997 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/asm.h>
 
 #define LO_MAGIC 0x01010101

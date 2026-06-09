@@ -15,14 +15,14 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/platform_data/video-msm_fb.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/platform_data/video-msm_fb.h>
 
 
 #define LCD_CONTROL_BLOCK_BASE 0x110000

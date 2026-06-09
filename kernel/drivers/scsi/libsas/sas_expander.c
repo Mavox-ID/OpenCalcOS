@@ -22,9 +22,9 @@
  *
  */
 
-#include <linux/scatterlist.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
+#include <beep/scatterlist.h>
+#include <beep/blkdev.h>
+#include <beep/slab.h>
 
 #include "sas_internal.h"
 

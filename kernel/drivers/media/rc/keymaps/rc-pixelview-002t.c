@@ -11,7 +11,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 /*
  * Keytable for 002-T IR remote provided together with Pixelview

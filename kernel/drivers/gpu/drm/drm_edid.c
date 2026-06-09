@@ -27,10 +27,10 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
 #include <drm/drmP.h>
 #include <drm/drm_edid.h>
 #include "drm_edid_modes.h"

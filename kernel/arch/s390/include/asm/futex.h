@@ -1,8 +1,8 @@
 #ifndef _ASM_S390_FUTEX_H
 #define _ASM_S390_FUTEX_H
 
-#include <linux/futex.h>
-#include <linux/uaccess.h>
+#include <beep/futex.h>
+#include <beep/uaccess.h>
 #include <asm/errno.h>
 
 static inline int futex_atomic_op_inuser (int encoded_op, u32 __user *uaddr)

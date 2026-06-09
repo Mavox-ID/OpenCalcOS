@@ -17,7 +17,7 @@
 #ifndef __TUNER_SIMPLE_H__
 #define __TUNER_SIMPLE_H__
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 #include "dvb_frontend.h"
 
 #if defined(CONFIG_MEDIA_TUNER_SIMPLE) || (defined(CONFIG_MEDIA_TUNER_SIMPLE_MODULE) && defined(MODULE))

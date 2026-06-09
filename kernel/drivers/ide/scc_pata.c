@@ -4,7 +4,7 @@
  * (C) Copyright 2006 TOSHIBA CORPORATION
  *
  * This code is based on drivers/ide/pci/siimage.c:
- * Copyright (C) 2001-2002	Andre Hedrick <andre@linux-ide.org>
+ * Copyright (C) 2001-2002	Andre Hedrick <andre@beep-ide.org>
  * Copyright (C) 2003		Red Hat
  *
  * This program is free software; you can redistribute it and/or modify
@@ -22,12 +22,12 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/ide.h>
+#include <beep/init.h>
 
 #define PCI_DEVICE_ID_TOSHIBA_SCC_ATA            0x01b4
 

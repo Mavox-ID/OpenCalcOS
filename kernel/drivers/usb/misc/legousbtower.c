@@ -75,16 +75,16 @@
  *   - move reset into open to clean out spurious data
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/completion.h>
+#include <beep/mutex.h>
 #include <asm/uaccess.h>
-#include <linux/usb.h>
-#include <linux/poll.h>
+#include <beep/usb.h>
+#include <beep/poll.h>
 
 
 #ifdef CONFIG_USB_DEBUG

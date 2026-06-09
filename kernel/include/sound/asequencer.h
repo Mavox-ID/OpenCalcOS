@@ -22,7 +22,7 @@
 #ifndef __SOUND_ASEQUENCER_H
 #define __SOUND_ASEQUENCER_H
 
-#include <linux/ioctl.h>
+#include <beep/ioctl.h>
 #include <sound/asound.h>
 #include <uapi/sound/asequencer.h>
 

@@ -6,9 +6,9 @@
  * Dynamic registration, added aarp entries. (5/30/97 Chris Horn)
  */
 
-#include <linux/sysctl.h>
+#include <beep/sysctl.h>
 #include <net/sock.h>
-#include <linux/atalk.h>
+#include <beep/atalk.h>
 
 static struct ctl_table atalk_table[] = {
 	{

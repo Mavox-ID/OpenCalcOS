@@ -7,7 +7,7 @@
  *
  * Copyright (C) 2002, 2004 Oracle.  All rights reserved.
  *
- *  Portions of this code from linux/fs/ext3/dir.c
+ *  Portions of this code from beep/fs/ext3/dir.c
  *
  *  Copyright (C) 1992, 1993, 1994, 1995
  *  Remy Card (card@masi.ibp.fr)
@@ -16,9 +16,9 @@
  *
  *   from
  *
- *   linux/fs/minix/dir.c
+ *   beep/fs/minix/dir.c
  *
- *   Copyright (C) 1991, 1992 Linux Torvalds
+ *   Copyright (C) 1991, 1992 Beep Torvalds
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -36,12 +36,12 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/quotaops.h>
-#include <linux/sort.h>
+#include <beep/fs.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>
+#include <beep/quotaops.h>
+#include <beep/sort.h>
 
 #include <cluster/masklog.h>
 

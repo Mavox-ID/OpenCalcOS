@@ -2,7 +2,7 @@
 /*
  * Mini start-stop-daemon implementation(s) for busybox
  *
- * Written by Marek Michalkiewicz <marekm@i17linuxb.ists.pwr.wroc.pl>,
+ * Written by Marek Michalkiewicz <marekm@i17beepb.ists.pwr.wroc.pl>,
  * Adapted for busybox David Kimdon <dwhedon@gordian.com>
  *
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
@@ -236,7 +236,7 @@ static int pid_is_name(pid_t pid)
 		return 0;
 	*pe = '\0';
 	/* we require comm to match and to not be truncated */
-	/* in Linux, if comm is 15 chars, it may be a truncated
+	/* in Beep, if comm is 15 chars, it may be a truncated
 	 * name, so we don't allow that to match */
 	if (strlen(p) >= COMM_LEN - 1) /* COMM_LEN is 16 */
 		return 0;
@@ -510,7 +510,7 @@ int start_stop_daemon_main(int argc UNUSED_PARAM, char **argv)
 		 * bb_daemonize(DAEMON_DEVNULL_STDIO | DAEMON_CLOSE_EXTRA_FDS | DAEMON_DOUBLE_FORK)
 		 * can be used on MMU systems, but use of vfork()
 		 * is preferable since we want to create pidfile
-		 * _before_ parent returns, and vfork() on Linux
+		 * _before_ parent returns, and vfork() on Beep
 		 * ensures that (by blocking parent until exec in the child).
 		 */
 		pid_t pid = xvfork();
@@ -525,7 +525,7 @@ int start_stop_daemon_main(int argc UNUSED_PARAM, char **argv)
 		setsid(); /* detach from controlling tty */
 		/* Redirect stdio to /dev/null, close extra FDs */
 		bb_daemon_helper(DAEMON_DEVNULL_STDIO + DAEMON_CLOSE_EXTRA_FDS);
-		/* On Linux, session leader can acquire ctty
+		/* On Beep, session leader can acquire ctty
 		 * unknowingly, by opening a tty.
 		 * Prevent this: stop being a session leader.
 		 */

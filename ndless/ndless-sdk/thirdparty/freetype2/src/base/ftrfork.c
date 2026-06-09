@@ -382,21 +382,21 @@
                       FT_Long    *result_offset );
 
   static FT_Error
-  raccess_guess_linux_cap( FT_Library  library,
+  raccess_guess_beep_cap( FT_Library  library,
                            FT_Stream   stream,
                            char       *base_file_name,
                            char      **result_file_name,
                            FT_Long    *result_offset );
 
   static FT_Error
-  raccess_guess_linux_double( FT_Library  library,
+  raccess_guess_beep_double( FT_Library  library,
                               FT_Stream   stream,
                               char       *base_file_name,
                               char      **result_file_name,
                               FT_Long    *result_offset );
 
   static FT_Error
-  raccess_guess_linux_netatalk( FT_Library  library,
+  raccess_guess_beep_netatalk( FT_Library  library,
                                 FT_Stream   stream,
                                 char       *base_file_name,
                                 char      **result_file_name,
@@ -411,9 +411,9 @@
   CONST_FT_RFORK_RULE_ARRAY_ENTRY(darwin_newvfs,     darwin_newvfs)
   CONST_FT_RFORK_RULE_ARRAY_ENTRY(darwin_hfsplus,    darwin_hfsplus)
   CONST_FT_RFORK_RULE_ARRAY_ENTRY(vfat,              vfat)
-  CONST_FT_RFORK_RULE_ARRAY_ENTRY(linux_cap,         linux_cap)
-  CONST_FT_RFORK_RULE_ARRAY_ENTRY(linux_double,      linux_double)
-  CONST_FT_RFORK_RULE_ARRAY_ENTRY(linux_netatalk,    linux_netatalk)
+  CONST_FT_RFORK_RULE_ARRAY_ENTRY(beep_cap,         beep_cap)
+  CONST_FT_RFORK_RULE_ARRAY_ENTRY(beep_double,      beep_double)
+  CONST_FT_RFORK_RULE_ARRAY_ENTRY(beep_netatalk,    beep_netatalk)
   CONST_FT_RFORK_RULE_ARRAY_END
 
 
@@ -431,7 +431,7 @@
                                FT_Long    *result_offset );
 
   static FT_Error
-  raccess_guess_linux_double_from_file_name( FT_Library  library,
+  raccess_guess_beep_double_from_file_name( FT_Library  library,
                                              char *      file_name,
                                              FT_Long    *result_offset );
 
@@ -569,7 +569,7 @@
     if ( !newpath )
       return FT_THROW( Out_Of_Memory );
 
-    error = raccess_guess_linux_double_from_file_name( library, newpath,
+    error = raccess_guess_beep_double_from_file_name( library, newpath,
                                                        result_offset );
     if ( !error )
       *result_file_name = newpath;
@@ -680,7 +680,7 @@
 
 
   static FT_Error
-  raccess_guess_linux_cap( FT_Library  library,
+  raccess_guess_beep_cap( FT_Library  library,
                            FT_Stream   stream,
                            char       *base_file_name,
                            char      **result_file_name,
@@ -706,7 +706,7 @@
 
 
   static FT_Error
-  raccess_guess_linux_double( FT_Library  library,
+  raccess_guess_beep_double( FT_Library  library,
                               FT_Stream   stream,
                               char       *base_file_name,
                               char      **result_file_name,
@@ -725,7 +725,7 @@
     if ( !newpath )
       return FT_THROW( Out_Of_Memory );
 
-    error = raccess_guess_linux_double_from_file_name( library, newpath,
+    error = raccess_guess_beep_double_from_file_name( library, newpath,
                                                        result_offset );
     if ( !error )
       *result_file_name = newpath;
@@ -737,7 +737,7 @@
 
 
   static FT_Error
-  raccess_guess_linux_netatalk( FT_Library  library,
+  raccess_guess_beep_netatalk( FT_Library  library,
                                 FT_Stream   stream,
                                 char       *base_file_name,
                                 char      **result_file_name,
@@ -757,7 +757,7 @@
     if ( !newpath )
       return FT_THROW( Out_Of_Memory );
 
-    error = raccess_guess_linux_double_from_file_name( library, newpath,
+    error = raccess_guess_beep_double_from_file_name( library, newpath,
                                                        result_offset );
     if ( !error )
       *result_file_name = newpath;
@@ -835,7 +835,7 @@
 
 
   static FT_Error
-  raccess_guess_linux_double_from_file_name( FT_Library  library,
+  raccess_guess_beep_double_from_file_name( FT_Library  library,
                                              char       *file_name,
                                              FT_Long    *result_offset )
   {

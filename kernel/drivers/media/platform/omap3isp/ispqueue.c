@@ -24,14 +24,14 @@
  */
 
 #include <asm/cacheflush.h>
-#include <linux/dma-mapping.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/poll.h>
-#include <linux/scatterlist.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <beep/dma-mapping.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/poll.h>
+#include <beep/scatterlist.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
 
 #include "ispqueue.h"
 

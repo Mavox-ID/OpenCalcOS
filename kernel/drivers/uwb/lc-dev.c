@@ -22,14 +22,14 @@
  *
  * FIXME: docs
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/kdev_t.h>
-#include <linux/random.h>
-#include <linux/stat.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/export.h>
+#include <beep/err.h>
+#include <beep/kdev_t.h>
+#include <beep/random.h>
+#include <beep/stat.h>
 #include "uwb-internal.h"
 
 /* We initialize addresses to 0xff (invalid, as it is bcast) */

@@ -85,7 +85,7 @@ static inline void local_flush_tlb_mm(struct mm_struct *mm)
  * TLB flushing for 64-bit hash-MMU CPUs
  */
 
-#include <linux/percpu.h>
+#include <beep/percpu.h>
 #include <asm/page.h>
 
 #define PPC64_TLB_BATCH_NR 192

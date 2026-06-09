@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/lib/csumpartialcopygeneric.S
+ *  beep/arch/arm/lib/csumpartialcopygeneric.S
  *
  *  Copyright (C) 1995-2001 Russell King
  *

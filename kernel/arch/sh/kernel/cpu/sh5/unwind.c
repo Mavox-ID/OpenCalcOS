@@ -8,10 +8,10 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kallsyms.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <beep/kallsyms.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/errno.h>
 #include <asm/page.h>
 #include <asm/ptrace.h>
 #include <asm/processor.h>

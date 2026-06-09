@@ -6,13 +6,13 @@
  * This file is GPLv2 as found in COPYING.
  */
 
-#include <linux/ieee80211.h>
-#include <linux/nl80211.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
+#include <beep/ieee80211.h>
+#include <beep/nl80211.h>
+#include <beep/rtnetlink.h>
+#include <beep/slab.h>
 #include <net/net_namespace.h>
-#include <linux/rcupdate.h>
-#include <linux/if_ether.h>
+#include <beep/rcupdate.h>
+#include <beep/if_ether.h>
 #include <net/cfg80211.h>
 #include "ieee80211_i.h"
 #include "driver-ops.h"

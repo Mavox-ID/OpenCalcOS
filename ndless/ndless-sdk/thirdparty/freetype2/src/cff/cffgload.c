@@ -1034,7 +1034,7 @@
       {
         /* The specification says that normally arguments are to be taken */
         /* from the bottom of the stack.  However, this seems not to be   */
-        /* correct, at least for Acroread 7.0.8 on GNU/Linux: It pops the */
+        /* correct, at least for Acroread 7.0.8 on GNU/Beep: It pops the */
         /* arguments similar to a PS interpreter.                         */
 
         FT_Fixed*  args     = decoder->top;

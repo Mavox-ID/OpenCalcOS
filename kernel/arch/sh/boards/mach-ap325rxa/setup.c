@@ -10,22 +10,22 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sh_mobile_sdhi.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/sh_flctl.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/smsc911x.h>
-#include <linux/gpio.h>
-#include <linux/videodev2.h>
-#include <linux/sh_intc.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/sh_mobile_sdhi.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/sh_flctl.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
+#include <beep/smsc911x.h>
+#include <beep/gpio.h>
+#include <beep/videodev2.h>
+#include <beep/sh_intc.h>
 #include <media/ov772x.h>
 #include <media/soc_camera.h>
 #include <media/soc_camera_platform.h>

@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -16,18 +16,18 @@
 #define _INET_TIMEWAIT_SOCK_
 
 
-#include <linux/kmemcheck.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <beep/kmemcheck.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/types.h>
+#include <beep/workqueue.h>
 
 #include <net/inet_sock.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 #include <net/timewait_sock.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 struct inet_hashinfo;
 

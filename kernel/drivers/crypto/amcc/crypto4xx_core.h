@@ -14,8 +14,8 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
- * This is the header file for AMCC Crypto offload Linux device driver for
- * use with Linux CryptoAPI.
+ * This is the header file for AMCC Crypto offload Beep device driver for
+ * use with Beep CryptoAPI.
 
  */
 

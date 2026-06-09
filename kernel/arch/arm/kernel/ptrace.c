@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/ptrace.c
+ *  beep/arch/arm/kernel/ptrace.c
  *
  *  By Ross Biro 1/23/92
  * edited by Linus Torvalds
@@ -9,23 +9,23 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/elf.h>
-#include <linux/smp.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/security.h>
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/uaccess.h>
-#include <linux/perf_event.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/regset.h>
-#include <linux/audit.h>
-#include <linux/tracehook.h>
-#include <linux/unistd.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/elf.h>
+#include <beep/smp.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/security.h>
+#include <beep/init.h>
+#include <beep/signal.h>
+#include <beep/uaccess.h>
+#include <beep/perf_event.h>
+#include <beep/hw_breakpoint.h>
+#include <beep/regset.h>
+#include <beep/audit.h>
+#include <beep/tracehook.h>
+#include <beep/unistd.h>
 
 #include <asm/pgtable.h>
 #include <asm/traps.h>

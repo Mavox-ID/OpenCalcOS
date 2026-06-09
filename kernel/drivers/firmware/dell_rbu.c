@@ -7,7 +7,7 @@
  * Copyright (C) 2005 Dell Inc.
  *
  * Remote BIOS Update (rbu) driver is used for updating DELL BIOS by
- * creating entries in the /sys file systems on Linux 2.6 and higher
+ * creating entries in the /sys file systems on Beep 2.6 and higher
  * kernels. The driver supports two mechanism to update the BIOS namely
  * contiguous and packetized. Both these methods still require having some
  * application to set the CMOS bit indicating the BIOS to update itself
@@ -34,17 +34,17 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/blkdev.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/moduleparam.h>
-#include <linux/firmware.h>
-#include <linux/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/blkdev.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/moduleparam.h>
+#include <beep/firmware.h>
+#include <beep/dma-mapping.h>
 
 MODULE_AUTHOR("Abhay Salunke <abhay_salunke@dell.com>");
 MODULE_DESCRIPTION("Driver for updating BIOS image on DELL systems");

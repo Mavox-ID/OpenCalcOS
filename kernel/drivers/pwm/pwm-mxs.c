@@ -9,18 +9,18 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
-#include <linux/stmp_device.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/platform_device.h>
+#include <beep/pwm.h>
+#include <beep/slab.h>
+#include <beep/stmp_device.h>
 
 #define SET	0x4
 #define CLR	0x8

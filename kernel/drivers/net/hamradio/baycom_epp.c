@@ -40,20 +40,20 @@
 
 /*****************************************************************************/
 
-#include <linux/crc-ccitt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/workqueue.h>
-#include <linux/fs.h>
-#include <linux/parport.h>
-#include <linux/if_arp.h>
-#include <linux/hdlcdrv.h>
-#include <linux/baycom.h>
-#include <linux/jiffies.h>
-#include <linux/random.h>
+#include <beep/crc-ccitt.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/workqueue.h>
+#include <beep/fs.h>
+#include <beep/parport.h>
+#include <beep/if_arp.h>
+#include <beep/hdlcdrv.h>
+#include <beep/baycom.h>
+#include <beep/jiffies.h>
+#include <beep/random.h>
 #include <net/ax25.h> 
 #include <asm/uaccess.h>
 
@@ -301,7 +301,7 @@ static inline void baycom_int_freq(struct baycom_state *bc)
 
 static char eppconfig_path[256] = "/usr/sbin/eppfpga";
 
-static char *envp[] = { "HOME=/", "TERM=linux", "PATH=/usr/bin:/bin", NULL };
+static char *envp[] = { "HOME=/", "TERM=beep", "PATH=/usr/bin:/bin", NULL };
 
 /* eppconfig: called during ifconfig up to configure the modem */
 static int eppconfig(struct baycom_state *bc)

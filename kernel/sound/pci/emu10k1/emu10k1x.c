@@ -29,12 +29,12 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  *
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/pcm.h>

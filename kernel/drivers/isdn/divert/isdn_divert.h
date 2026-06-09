@@ -9,8 +9,8 @@
  *
  */
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <beep/ioctl.h>
+#include <beep/types.h>
 
 /******************************************/
 /* IOCTL codes for interface to user prog */
@@ -96,8 +96,8 @@ typedef union
 
 #ifdef __KERNEL__
 
-#include <linux/isdnif.h>
-#include <linux/isdn_divertif.h>
+#include <beep/isdnif.h>
+#include <beep/isdn_divertif.h>
 
 #define AUTODEL_TIME 30 /* timeout in s to delete internal entries */
 

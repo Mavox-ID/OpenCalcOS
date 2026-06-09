@@ -1,7 +1,7 @@
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <beep/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/module.h>
+#include <beep/mm.h>
 #include <asm/sections.h>
 #include <asm/pgtable.h>
 

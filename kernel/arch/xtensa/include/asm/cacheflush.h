@@ -13,7 +13,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 

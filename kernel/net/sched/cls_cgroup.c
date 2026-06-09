@@ -9,15 +9,15 @@
  * Authors:	Thomas Graf <tgraf@suug.ch>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/cgroup.h>
-#include <linux/rcupdate.h>
-#include <linux/fdtable.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/skbuff.h>
+#include <beep/cgroup.h>
+#include <beep/rcupdate.h>
+#include <beep/fdtable.h>
 #include <net/rtnetlink.h>
 #include <net/pkt_cls.h>
 #include <net/sock.h>

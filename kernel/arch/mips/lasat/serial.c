@@ -17,11 +17,11 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
+#include <beep/serial_8250.h>
 
 #include <asm/lasat/lasat.h>
 #include <asm/lasat/serial.h>

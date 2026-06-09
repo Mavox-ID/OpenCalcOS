@@ -3,12 +3,12 @@
  * Copyright (C) 2006 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/bootmem.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/xfrm.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/bootmem.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
+#include <beep/xfrm.h>
 
 #include "xfrm_hash.h"
 

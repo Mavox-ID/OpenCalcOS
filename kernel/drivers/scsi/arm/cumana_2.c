@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/acorn/scsi/cumana_2.c
+ *  beep/drivers/acorn/scsi/cumana_2.c
  *
  *  Copyright (C) 1997-2005 Russell King
  *
@@ -12,20 +12,20 @@
  *   22-01-1998	RMK	0.0.1	Updated to 2.1.80.
  *   15-04-1998	RMK	0.0.1	Only do PIO if FAS216 will allow it.
  *   02-05-1998	RMK	0.0.2	Updated & added DMA support.
- *   27-06-1998	RMK		Changed asm/delay.h to linux/delay.h
+ *   27-06-1998	RMK		Changed asm/delay.h to beep/delay.h
  *   18-08-1998	RMK	0.0.3	Fixed synchronous transfer depth.
  *   02-04-2000	RMK	0.0.4	Updated for new error handling code.
  */
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
+#include <beep/proc_fs.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/dma.h>
 #include <asm/ecard.h>

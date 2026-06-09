@@ -11,15 +11,15 @@
  * @author Suravee Suthikulpanit <suravee.suthikulpanit@amd.com>
  */
 
-#include <linux/init.h>
-#include <linux/notifier.h>
-#include <linux/smp.h>
-#include <linux/oprofile.h>
-#include <linux/syscore_ops.h>
-#include <linux/slab.h>
-#include <linux/moduleparam.h>
-#include <linux/kdebug.h>
-#include <linux/cpu.h>
+#include <beep/init.h>
+#include <beep/notifier.h>
+#include <beep/smp.h>
+#include <beep/oprofile.h>
+#include <beep/syscore_ops.h>
+#include <beep/slab.h>
+#include <beep/moduleparam.h>
+#include <beep/kdebug.h>
+#include <beep/cpu.h>
 #include <asm/nmi.h>
 #include <asm/msr.h>
 #include <asm/apic.h>

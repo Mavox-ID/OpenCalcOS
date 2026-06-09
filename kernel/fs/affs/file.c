@@ -1,5 +1,5 @@
 /*
- *  linux/fs/affs/file.c
+ *  beep/fs/affs/file.c
  *
  *  (c) 1996  Hans-Joachim Widmaier - Rewritten
  *

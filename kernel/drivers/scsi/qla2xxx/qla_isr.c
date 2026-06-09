@@ -7,8 +7,8 @@
 #include "qla_def.h"
 #include "qla_target.h"
 
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 #include <scsi/scsi_tcq.h>
 #include <scsi/scsi_bsg_fc.h>
 #include <scsi/scsi_eh.h>
@@ -2004,7 +2004,7 @@ qla2x00_status_entry(scsi_qla_host_t *vha, struct rsp_que *rsp, void *pkt)
 		comp_status = CS_DATA_OVERRUN;
 
 	/*
-	 * Based on Host and scsi status generate status code for Linux
+	 * Based on Host and scsi status generate status code for Beep
 	 */
 	switch (comp_status) {
 	case CS_COMPLETE:

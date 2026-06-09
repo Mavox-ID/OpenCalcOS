@@ -15,11 +15,11 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/ssb/ssb.h>
-#include <linux/ssb/ssb_regs.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <beep/ssb/ssb.h>
+#include <beep/ssb/ssb_regs.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
 
 #include "ssb_private.h"
 

@@ -6,9 +6,9 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
+#include <beep/list.h>
+#include <beep/kernel.h>
+#include <beep/bitops.h>
 #include <sys/utsname.h>
 
 #include "evlist.h"

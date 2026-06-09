@@ -15,9 +15,9 @@
 #ifndef _ASM_TILE_PGALLOC_H
 #define _ASM_TILE_PGALLOC_H
 
-#include <linux/threads.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
+#include <beep/threads.h>
+#include <beep/mm.h>
+#include <beep/mmzone.h>
 #include <asm/fixmap.h>
 #include <asm/page.h>
 #include <hv/hypervisor.h>

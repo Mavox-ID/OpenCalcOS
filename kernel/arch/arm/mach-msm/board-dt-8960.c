@@ -1,4 +1,4 @@
-/* Copyright (c) 2012, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -10,9 +10,9 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/init.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <beep/init.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
 
 #include <asm/hardware/gic.h>
 #include <asm/mach/arch.h>

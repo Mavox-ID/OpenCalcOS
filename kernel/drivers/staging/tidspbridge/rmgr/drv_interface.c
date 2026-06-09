@@ -16,16 +16,16 @@
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#include <linux/platform_data/dsp-omap.h>
+#include <beep/platform_data/dsp-omap.h>
 
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/cdev.h>
+#include <beep/types.h>
+#include <beep/platform_device.h>
+#include <beep/pm.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/moduleparam.h>
+#include <beep/cdev.h>
 
 /*  ----------------------------------- DSP/BIOS Bridge */
 #include <dspbridge/dbdefs.h>

@@ -10,10 +10,10 @@
 #ifndef IEEE80211_KEY_H
 #define IEEE80211_KEY_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/crypto.h>
-#include <linux/rcupdate.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/crypto.h>
+#include <beep/rcupdate.h>
 #include <net/mac80211.h>
 
 #define NUM_DEFAULT_KEYS 4

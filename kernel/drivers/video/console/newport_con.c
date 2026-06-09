@@ -9,16 +9,16 @@
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1997 Miguel de Icaza (miguel@nuclecu.unam.mx)
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/kd.h>
-#include <linux/selection.h>
-#include <linux/console.h>
-#include <linux/vt_kern.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/kd.h>
+#include <beep/selection.h>
+#include <beep/console.h>
+#include <beep/vt_kern.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 #include <asm/uaccess.h>
@@ -28,8 +28,8 @@
 
 #include <video/newport.h>
 
-#include <linux/linux_logo.h>
-#include <linux/font.h>
+#include <beep/beep_logo.h>
+#include <beep/font.h>
 
 #define FONT_DATA ((unsigned char *)font_vga_8x16.data)
 
@@ -96,10 +96,10 @@ static inline void newport_init_cmap(void)
 	}
 }
 
-static const struct linux_logo *newport_show_logo(void)
+static const struct beep_logo *newport_show_logo(void)
 {
 #ifdef CONFIG_LOGO_SGI_CLUT224
-	const struct linux_logo *logo = fb_find_logo(8);
+	const struct beep_logo *logo = fb_find_logo(8);
 	const unsigned char *clut;
 	const unsigned char *data;
 	unsigned long i;

@@ -1,10 +1,10 @@
 #ifndef __CPM_H
 #define __CPM_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/of.h>
+#include <beep/compiler.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/of.h>
 
 /*
  * SPI Parameter RAM common to QE and CPM.

@@ -8,9 +8,9 @@
  * option) any later version.
  */
 
-#include <linux/err.h>
-#include <linux/smp.h>
-#include <linux/platform_device.h>
+#include <beep/err.h>
+#include <beep/smp.h>
+#include <beep/platform_device.h>
 
 static struct platform_device loongson2_cpufreq_device = {
 	.name = "loongson2_cpufreq",

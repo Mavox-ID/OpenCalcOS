@@ -22,17 +22,17 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/sysctl.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/sysctl.h>
+#include <beep/slab.h>
+#include <beep/acpi.h>
 #include <acpi/acpi_bus.h>
-#include <linux/completion.h>
-#include <linux/hyperv.h>
+#include <beep/completion.h>
+#include <beep/hyperv.h>
 #include <asm/hyperv.h>
 #include <asm/hypervisor.h>
 #include "hyperv_vmbus.h"
@@ -553,7 +553,7 @@ err_cleanup:
  * @owner: owner module of the drv
  * @mod_name: module name string
  *
- * Registers the given driver with Linux through the 'driver_register()' call
+ * Registers the given driver with Beep through the 'driver_register()' call
  * and sets up the hyper-v vmbus handling for this driver.
  * It will return the state of the 'driver_register()' call.
  *

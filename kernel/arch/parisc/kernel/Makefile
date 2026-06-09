@@ -2,7 +2,7 @@
 # Makefile for arch/parisc/kernel
 #
 
-extra-y			:= head.o vmlinux.lds
+extra-y			:= head.o vmbeep.lds
 
 obj-y	     	:= cache.o pacache.o setup.o traps.o time.o irq.o \
 		   pa7300lc.o syscall.o entry.o sys_parisc.o firmware.o \

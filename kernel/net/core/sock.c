@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -91,47 +91,47 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/poll.h>
-#include <linux/tcp.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/user_namespace.h>
-#include <linux/static_key.h>
-#include <linux/memcontrol.h>
-#include <linux/prefetch.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/string.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/poll.h>
+#include <beep/tcp.h>
+#include <beep/init.h>
+#include <beep/highmem.h>
+#include <beep/user_namespace.h>
+#include <beep/static_key.h>
+#include <beep/memcontrol.h>
+#include <beep/prefetch.h>
 
 #include <asm/uaccess.h>
 
-#include <linux/netdevice.h>
+#include <beep/netdevice.h>
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 #include <net/net_namespace.h>
 #include <net/request_sock.h>
 #include <net/sock.h>
-#include <linux/net_tstamp.h>
+#include <beep/net_tstamp.h>
 #include <net/xfrm.h>
-#include <linux/ipsec.h>
+#include <beep/ipsec.h>
 #include <net/cls_cgroup.h>
 #include <net/netprio_cgroup.h>
 
-#include <linux/filter.h>
+#include <beep/filter.h>
 
 #include <trace/events/sock.h>
 

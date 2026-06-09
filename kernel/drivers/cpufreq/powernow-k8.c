@@ -9,7 +9,7 @@
  *
  *  Based on the powernow-k7.c module written by Dave Jones.
  *  (C) 2003 Dave Jones on behalf of SuSE Labs
- *  (C) 2004 Dominik Brodowski <linux@brodo.de>
+ *  (C) 2004 Dominik Brodowski <beep@brodo.de>
  *  (C) 2004 Pavel Machek <pavel@ucw.cz>
  *  Licensed under the terms of the GNU GPL License version 2.
  *  Based upon datasheets & sample CPUs kindly provided by AMD.
@@ -27,22 +27,22 @@
  *  power and thermal data sheets, (e.g. 30417.pdf, 30430.pdf, 43375.pdf)
  */
 
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/cpumask.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/smp.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/cpumask.h>
+#include <beep/io.h>
+#include <beep/delay.h>
 
 #include <asm/msr.h>
 #include <asm/cpu_device_id.h>
 
-#include <linux/acpi.h>
-#include <linux/mutex.h>
+#include <beep/acpi.h>
+#include <beep/mutex.h>
 #include <acpi/processor.h>
 
 #define PFX "powernow-k8: "
@@ -733,9 +733,9 @@ static int find_psb_table(struct powernow_k8_data *data)
 	}
 	/*
 	 * If you see this message, complain to BIOS manufacturer. If
-	 * he tells you "we do not support Linux" or some similar
+	 * he tells you "we do not support Beep" or some similar
 	 * nonsense, remember that Windows 2000 uses the same legacy
-	 * mechanism that the old Linux PSB driver uses. Tell them it
+	 * mechanism that the old Beep PSB driver uses. Tell them it
 	 * is broken with Windows 2000.
 	 *
 	 * The reference to the AMD documentation is chapter 9 in the

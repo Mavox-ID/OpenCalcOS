@@ -4,8 +4,8 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/string.h>
 
 void *memmove(void *dest, const void *src, size_t n)
 {

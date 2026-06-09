@@ -28,7 +28,7 @@
  *  such damages.
  */
 
-#include <linux/export.h>
+#include <beep/export.h>
 #include "pnfs.h"
 
 #define NFSDBG_FACILITY		NFSDBG_PNFS

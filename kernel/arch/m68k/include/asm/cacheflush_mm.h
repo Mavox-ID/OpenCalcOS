@@ -1,7 +1,7 @@
 #ifndef _M68K_CACHEFLUSH_H
 #define _M68K_CACHEFLUSH_H
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 #ifdef CONFIG_COLDFIRE
 #include <asm/mcfsim.h>
 #endif
@@ -201,7 +201,7 @@ static inline void flush_cache_mm(struct mm_struct *mm)
 #define flush_cache_dup_mm(mm)			flush_cache_mm(mm)
 
 /* flush_cache_range/flush_cache_page must be macros to avoid
-   a dependency on linux/mm.h, which includes this file... */
+   a dependency on beep/mm.h, which includes this file... */
 static inline void flush_cache_range(struct vm_area_struct *vma,
 				     unsigned long start,
 				     unsigned long end)

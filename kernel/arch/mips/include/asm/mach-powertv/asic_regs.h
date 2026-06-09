@@ -18,7 +18,7 @@
 
 #ifndef __ASM_MACH_POWERTV_ASIC_H_
 #define __ASM_MACH_POWERTV_ASIC_H_
-#include <linux/io.h>
+#include <beep/io.h>
 
 /* ASIC types */
 enum asic_type {

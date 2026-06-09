@@ -14,7 +14,7 @@
 #ifndef __ASM_IPIC_H__
 #define __ASM_IPIC_H__
 
-#include <linux/irq.h>
+#include <beep/irq.h>
 
 /* Flags when we init the IPIC */
 #define IPIC_SPREADMODE_GRP_A	0x00000001

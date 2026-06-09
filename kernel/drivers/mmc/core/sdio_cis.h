@@ -1,5 +1,5 @@
 /*
- * linux/drivers/mmc/core/sdio_cis.h
+ * beep/drivers/mmc/core/sdio_cis.h
  *
  * Author:	Nicolas Pitre
  * Created:	June 11, 2007

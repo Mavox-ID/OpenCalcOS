@@ -16,14 +16,14 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/export.h>
-#include <linux/debugfs.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/pm_runtime.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/export.h>
+#include <beep/debugfs.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

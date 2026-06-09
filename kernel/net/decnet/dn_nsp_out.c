@@ -1,5 +1,5 @@
 /*
- * DECnet       An implementation of the DECnet protocol suite for the LINUX
+ * DECnet       An implementation of the DECnet protocol suite for the BEEP
  *              operating system.  DECnet is implemented using the  BSD Socket
  *              interface as the means of communication with the user level.
  *
@@ -37,29 +37,29 @@
     GNU General Public License for more details.
 *******************************************************************************/
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/inet.h>
-#include <linux/route.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/string.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/netdevice.h>
+#include <beep/inet.h>
+#include <beep/route.h>
+#include <beep/slab.h>
 #include <net/sock.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/termios.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/if_packet.h>
+#include <beep/fcntl.h>
+#include <beep/mm.h>
+#include <beep/termios.h>
+#include <beep/interrupt.h>
+#include <beep/proc_fs.h>
+#include <beep/stat.h>
+#include <beep/init.h>
+#include <beep/poll.h>
+#include <beep/if_packet.h>
 #include <net/neighbour.h>
 #include <net/dst.h>
 #include <net/flow.h>

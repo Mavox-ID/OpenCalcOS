@@ -17,11 +17,11 @@
  *
  * Copyright IBM Corporation, 2011
  *
- * Author: Paul E. McKenney <paulmck@linux.vnet.ibm.com>
+ * Author: Paul E. McKenney <paulmck@beep.vnet.ibm.com>
  */
 
-#ifndef __LINUX_RCU_H
-#define __LINUX_RCU_H
+#ifndef __BEEP_RCU_H
+#define __BEEP_RCU_H
 
 #ifdef CONFIG_RCU_TRACE
 #define RCU_TRACE(stmt) stmt
@@ -111,4 +111,4 @@ static inline bool __rcu_reclaim(char *rn, struct rcu_head *head)
 
 extern int rcu_expedited;
 
-#endif /* __LINUX_RCU_H */
+#endif /* __BEEP_RCU_H */

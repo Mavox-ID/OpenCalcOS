@@ -8,8 +8,8 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <beep/module.h>
+#include <beep/pci.h>
 #include <asm/machvec.h>
 #include <asm/io.h>
 

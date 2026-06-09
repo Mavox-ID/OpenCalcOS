@@ -21,8 +21,8 @@
  * the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_dbg.h>
 #include <scsi/scsi_eh.h>

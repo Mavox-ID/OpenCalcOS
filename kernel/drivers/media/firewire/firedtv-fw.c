@@ -2,22 +2,22 @@
  * FireDTV driver -- firewire I/O backend
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/firewire.h>
+#include <beep/firewire-constants.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/mm.h>
+#include <beep/mod_devicetable.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/wait.h>
+#include <beep/workqueue.h>
 
 #include <asm/page.h>
 

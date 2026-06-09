@@ -118,7 +118,7 @@
 #define PF_NAME		"pf"
 #define PF_UNITS	4
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* Here are things one can override from the insmod command.
    Most are autoprobed by paride unless set here.  Verbose is off
@@ -145,16 +145,16 @@ enum {D_PRT, D_PRO, D_UNI, D_MOD, D_SLV, D_LUN, D_DLY};
 
 /* end of parameters */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/hdreg.h>
-#include <linux/cdrom.h>
-#include <linux/spinlock.h>
-#include <linux/blkdev.h>
-#include <linux/blkpg.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/delay.h>
+#include <beep/hdreg.h>
+#include <beep/cdrom.h>
+#include <beep/spinlock.h>
+#include <beep/blkdev.h>
+#include <beep/blkpg.h>
+#include <beep/mutex.h>
 #include <asm/uaccess.h>
 
 static DEFINE_MUTEX(pf_mutex);

@@ -7,13 +7,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ipv6.h>
-#include <linux/if_ether.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/ipv6.h>
+#include <beep/if_ether.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_ipv6/ip6_tables.h>
 
 MODULE_DESCRIPTION("Xtables: IPv6 EUI64 address match");
 MODULE_LICENSE("GPL");

@@ -17,15 +17,15 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #include "u_serial.h"
 
@@ -1264,7 +1264,7 @@ int gserial_connect(struct gserial *gser, u8 port_num)
 	port->port_usb = gser;
 
 	/* REVISIT unclear how best to handle this state...
-	 * we don't really couple it with the Linux TTY.
+	 * we don't really couple it with the Beep TTY.
 	 */
 	gser->port_line_coding = port->port_line_coding;
 

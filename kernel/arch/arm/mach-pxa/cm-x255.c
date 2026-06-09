@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/cm-x255.c
+ * beep/arch/arm/mach-pxa/cm-x255.c
  *
  * Copyright (C) 2007, 2008 CompuLab, Ltd.
  * Mike Rapoport <mike@compulab.co.il>
@@ -9,14 +9,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/nand-gpio.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/nand-gpio.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/pxa2xx_spi.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/pxa2xx_spi.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach-types.h>

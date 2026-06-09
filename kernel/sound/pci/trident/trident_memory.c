@@ -24,9 +24,9 @@
  */
 
 #include <asm/io.h>
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
+#include <beep/pci.h>
+#include <beep/time.h>
+#include <beep/mutex.h>
 
 #include <sound/core.h>
 #include "trident.h"

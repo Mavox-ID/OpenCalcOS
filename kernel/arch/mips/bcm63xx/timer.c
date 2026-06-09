@@ -6,12 +6,12 @@
  * Copyright (C) 2008 Maxime Bizon <mbizon@freebox.fr>
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/clk.h>
 #include <bcm63xx_cpu.h>
 #include <bcm63xx_io.h>
 #include <bcm63xx_timer.h>

@@ -19,16 +19,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/miscdevice.h>
-#include <linux/of_platform.h>
-#include <linux/module.h>
-#include <linux/watchdog.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/miscdevice.h>
+#include <beep/of_platform.h>
+#include <beep/module.h>
+#include <beep/watchdog.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
 #include <sysdev/fsl_soc.h>
 
 struct mpc8xxx_wdt {

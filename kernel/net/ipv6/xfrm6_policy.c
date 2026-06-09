@@ -11,9 +11,9 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
+#include <beep/err.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
 #include <net/addrconf.h>
 #include <net/dst.h>
 #include <net/xfrm.h>

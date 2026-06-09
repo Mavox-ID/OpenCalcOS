@@ -12,9 +12,9 @@
  *   more details.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/thread_info.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/thread_info.h>
 #include <asm/timex.h>
 
 void __udelay(unsigned long usecs)

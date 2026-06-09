@@ -7,7 +7,7 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  *
- * Please forward _all_ changes to this file to rmk@arm.linux.org.uk,
+ * Please forward _all_ changes to this file to rmk@arm.beep.org.uk,
  * no matter what the change is.  Thanks!
  */
 #ifndef _UAPI__ASM_ARM_UNISTD_H

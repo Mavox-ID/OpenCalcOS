@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/board-ldp.c
+ * beep/arch/arm/mach-omap2/board-ldp.c
  *
  * Copyright (C) 2008 Texas Instruments Inc.
  * Nishant Kamat <nskamat@ti.com>
@@ -10,25 +10,25 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/gpio_keys.h>
-#include <linux/workqueue.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/i2c/twl.h>
-#include <linux/io.h>
-#include <linux/smsc911x.h>
-#include <linux/mmc/host.h>
-#include <linux/platform_data/spi-omap2-mcspi.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/input.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/gpio_keys.h>
+#include <beep/workqueue.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/spi/spi.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
+#include <beep/i2c/twl.h>
+#include <beep/io.h>
+#include <beep/smsc911x.h>
+#include <beep/mmc/host.h>
+#include <beep/platform_data/spi-omap2-mcspi.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

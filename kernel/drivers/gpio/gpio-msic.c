@@ -2,7 +2,7 @@
  * Intel Medfield MSIC GPIO driver>
  * Copyright (c) 2011, Intel Corporation.
  *
- * Author: Mathias Nyman <mathias.nyman@linux.intel.com>
+ * Author: Mathias Nyman <mathias.nyman@beep.intel.com>
  * Based on intel_pmic_gpio.c
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -20,14 +20,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/intel_msic.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/intel_msic.h>
 
 /* the offset for the mapping of global gpio pin to irq */
 #define MSIC_GPIO_IRQ_OFFSET	0x100
@@ -334,6 +334,6 @@ static int __init platform_msic_gpio_init(void)
 
 subsys_initcall(platform_msic_gpio_init);
 
-MODULE_AUTHOR("Mathias Nyman <mathias.nyman@linux.intel.com>");
+MODULE_AUTHOR("Mathias Nyman <mathias.nyman@beep.intel.com>");
 MODULE_DESCRIPTION("Intel Medfield MSIC GPIO driver");
 MODULE_LICENSE("GPL v2");

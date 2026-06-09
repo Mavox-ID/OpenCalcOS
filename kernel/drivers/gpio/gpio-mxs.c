@@ -20,19 +20,19 @@
  * MA  02110-1301, USA.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/gpio.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/basic_mmio_gpio.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/gpio.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_device.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/basic_mmio_gpio.h>
+#include <beep/module.h>
 
 #define MXS_SET		0x4
 #define MXS_CLR		0x8

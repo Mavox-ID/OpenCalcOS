@@ -10,20 +10,20 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/device.h>
-#include <linux/bootmem.h>
-#include <linux/spinlock.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/reboot.h>
+#include <beep/slab.h>
+#include <beep/stddef.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
+#include <beep/device.h>
+#include <beep/bootmem.h>
+#include <beep/spinlock.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
 #include <asm/irq.h>
 #include <asm/io.h>
 #include <asm/prom.h>

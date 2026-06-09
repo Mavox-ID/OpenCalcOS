@@ -1,34 +1,34 @@
 /*
- *  linux/mm/memory_hotplug.c
+ *  beep/mm/memory_hotplug.c
  *
  *  Copyright (C)
  */
 
-#include <linux/stddef.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/interrupt.h>
-#include <linux/pagemap.h>
-#include <linux/bootmem.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
-#include <linux/pagevec.h>
-#include <linux/writeback.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/cpu.h>
-#include <linux/memory.h>
-#include <linux/memory_hotplug.h>
-#include <linux/highmem.h>
-#include <linux/vmalloc.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/migrate.h>
-#include <linux/page-isolation.h>
-#include <linux/pfn.h>
-#include <linux/suspend.h>
-#include <linux/mm_inline.h>
-#include <linux/firmware-map.h>
+#include <beep/stddef.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/interrupt.h>
+#include <beep/pagemap.h>
+#include <beep/bootmem.h>
+#include <beep/compiler.h>
+#include <beep/export.h>
+#include <beep/pagevec.h>
+#include <beep/writeback.h>
+#include <beep/slab.h>
+#include <beep/sysctl.h>
+#include <beep/cpu.h>
+#include <beep/memory.h>
+#include <beep/memory_hotplug.h>
+#include <beep/highmem.h>
+#include <beep/vmalloc.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/migrate.h>
+#include <beep/page-isolation.h>
+#include <beep/pfn.h>
+#include <beep/suspend.h>
+#include <beep/mm_inline.h>
+#include <beep/firmware-map.h>
 
 #include <asm/tlbflush.h>
 

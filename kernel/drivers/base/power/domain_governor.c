@@ -6,11 +6,11 @@
  * This file is released under the GPLv2.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_qos.h>
-#include <linux/hrtimer.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/pm_domain.h>
+#include <beep/pm_qos.h>
+#include <beep/hrtimer.h>
 
 #ifdef CONFIG_PM_RUNTIME
 

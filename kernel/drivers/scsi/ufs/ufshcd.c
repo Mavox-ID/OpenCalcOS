@@ -43,20 +43,20 @@
  * USA.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/wait.h>
+#include <beep/bitops.h>
 
 #include <asm/irq.h>
 #include <asm/byteorder.h>

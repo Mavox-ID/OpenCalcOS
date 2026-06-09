@@ -17,12 +17,12 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/cpu_cooling.h>
-#include <linux/cpufreq.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/cpu_cooling.h>
+#include <beep/cpufreq.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 static int db8500_cpufreq_cooling_probe(struct platform_device *pdev)
 {

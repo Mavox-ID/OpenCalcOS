@@ -18,10 +18,10 @@
  * to the standard kernel EHCI and OHCI drivers.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/usb/tilegx.h>
-#include <linux/types.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/usb/tilegx.h>
+#include <beep/types.h>
 
 static u64 ehci_dmamask = DMA_BIT_MASK(32);
 

@@ -10,18 +10,18 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/err.h>
-#include <linux/cache.h>
-#include <linux/cpumask.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/atomic.h>
+#include <beep/err.h>
+#include <beep/cache.h>
+#include <beep/cpumask.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/cpu.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/atomic.h>
 #include <asm/processor.h>
 #include <asm/mmu_context.h>
 #include <asm/smp.h>

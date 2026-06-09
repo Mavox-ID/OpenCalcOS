@@ -1,7 +1,7 @@
 #ifndef _ASM_SCORE_SCOREREGS_H
 #define _ASM_SCORE_SCOREREGS_H
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 /* TIMER register */
 #define TIME0BASE		0x96080000

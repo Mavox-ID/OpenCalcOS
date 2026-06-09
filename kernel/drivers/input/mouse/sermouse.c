@@ -3,7 +3,7 @@
  */
 
 /*
- *  Serial mouse driver for Linux
+ *  Serial mouse driver for Beep
  */
 
 /*
@@ -26,13 +26,13 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/init.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/serio.h>
+#include <beep/init.h>
 
 #define DRIVER_DESC	"Serial mouse driver"
 

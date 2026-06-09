@@ -20,11 +20,11 @@
 
 /* This file mostly implements UBI kernel API functions */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/namei.h>
-#include <linux/fs.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/namei.h>
+#include <beep/fs.h>
 #include <asm/div64.h>
 #include "ubi.h"
 

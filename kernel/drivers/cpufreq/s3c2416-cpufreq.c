@@ -12,15 +12,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reboot.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/regulator/consumer.h>
+#include <beep/reboot.h>
+#include <beep/module.h>
 
 static DEFINE_MUTEX(cpufreq_lock);
 

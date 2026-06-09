@@ -2,16 +2,16 @@
  *  Copyright IBM Corp. 2012
  *
  *  Author(s):
- *    Jan Glauber <jang@linux.vnet.ibm.com>
+ *    Jan Glauber <jang@beep.vnet.ibm.com>
  */
 
 #define COMPONENT "zPCI"
 #define pr_fmt(fmt) COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/pci.h>
+#include <beep/kernel.h>
+#include <beep/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/pci.h>
 #include <asm/debug.h>
 
 #include <asm/pci_dma.h>

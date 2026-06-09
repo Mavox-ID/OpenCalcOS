@@ -9,9 +9,9 @@
  *  2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/init.h>
 #include <generated/utsrelease.h>
 #include <asm/sections.h>
 #include <asm/prom.h>
@@ -162,7 +162,7 @@ static void __init bootx_add_chosen_props(unsigned long base,
 {
 	u32 val;
 
-	bootx_dt_add_prop("linux,bootx", NULL, 0, mem_end);
+	bootx_dt_add_prop("beep,bootx", NULL, 0, mem_end);
 
 	if (bootx_info->kernelParamsOffset) {
 		char *args = (char *)((unsigned long)bootx_info) +
@@ -171,12 +171,12 @@ static void __init bootx_add_chosen_props(unsigned long base,
 	}
 	if (bootx_info->ramDisk) {
 		val = ((unsigned long)bootx_info) + bootx_info->ramDisk;
-		bootx_dt_add_prop("linux,initrd-start", &val, 4, mem_end);
+		bootx_dt_add_prop("beep,initrd-start", &val, 4, mem_end);
 		val += bootx_info->ramDiskSize;
-		bootx_dt_add_prop("linux,initrd-end", &val, 4, mem_end);
+		bootx_dt_add_prop("beep,initrd-end", &val, 4, mem_end);
 	}
 	if (strlen(bootx_disp_path))
-		bootx_dt_add_prop("linux,stdout-path", bootx_disp_path,
+		bootx_dt_add_prop("beep,stdout-path", bootx_disp_path,
 				  strlen(bootx_disp_path) + 1, mem_end);
 }
 
@@ -188,25 +188,25 @@ static void __init bootx_add_display_props(unsigned long base,
 	u32 tmp;
 
 	if (has_real_node) {
-		bootx_dt_add_prop("linux,boot-display", NULL, 0, mem_end);
-		bootx_dt_add_prop("linux,opened", NULL, 0, mem_end);
+		bootx_dt_add_prop("beep,boot-display", NULL, 0, mem_end);
+		bootx_dt_add_prop("beep,opened", NULL, 0, mem_end);
 	} else
-		bootx_dt_add_prop("linux,bootx-noscreen", NULL, 0, mem_end);
+		bootx_dt_add_prop("beep,bootx-noscreen", NULL, 0, mem_end);
 
 	tmp = bi->dispDeviceDepth;
-	bootx_dt_add_prop("linux,bootx-depth", &tmp, 4, mem_end);
+	bootx_dt_add_prop("beep,bootx-depth", &tmp, 4, mem_end);
 	tmp = bi->dispDeviceRect[2] - bi->dispDeviceRect[0];
-	bootx_dt_add_prop("linux,bootx-width", &tmp, 4, mem_end);
+	bootx_dt_add_prop("beep,bootx-width", &tmp, 4, mem_end);
 	tmp = bi->dispDeviceRect[3] - bi->dispDeviceRect[1];
-	bootx_dt_add_prop("linux,bootx-height", &tmp, 4, mem_end);
+	bootx_dt_add_prop("beep,bootx-height", &tmp, 4, mem_end);
 	tmp = bi->dispDeviceRowBytes;
-	bootx_dt_add_prop("linux,bootx-linebytes", &tmp, 4, mem_end);
+	bootx_dt_add_prop("beep,bootx-linebytes", &tmp, 4, mem_end);
 	tmp = (u32)bi->dispDeviceBase;
 	if (tmp == 0)
 		tmp = (u32)bi->logicalDisplayBase;
 	tmp += bi->dispDeviceRect[1] * bi->dispDeviceRowBytes;
 	tmp += bi->dispDeviceRect[0] * ((bi->dispDeviceDepth + 7) / 8);
-	bootx_dt_add_prop("linux,bootx-addr", &tmp, 4, mem_end);
+	bootx_dt_add_prop("beep,bootx-addr", &tmp, 4, mem_end);
 }
 
 static void __init bootx_dt_add_string(char *s, unsigned long *mem_end)
@@ -235,17 +235,17 @@ static void __init bootx_scan_dt_build_strings(unsigned long base,
 
 	if (!strcmp(namep, "/chosen")) {
 		DBG(" detected /chosen ! adding properties names !\n");
-		bootx_dt_add_string("linux,bootx", mem_end);
-		bootx_dt_add_string("linux,stdout-path", mem_end);
-		bootx_dt_add_string("linux,initrd-start", mem_end);
-		bootx_dt_add_string("linux,initrd-end", mem_end);
+		bootx_dt_add_string("beep,bootx", mem_end);
+		bootx_dt_add_string("beep,stdout-path", mem_end);
+		bootx_dt_add_string("beep,initrd-start", mem_end);
+		bootx_dt_add_string("beep,initrd-end", mem_end);
 		bootx_dt_add_string("bootargs", mem_end);
 		bootx_node_chosen = node;
 	}
 	if (node == bootx_info->dispDeviceRegEntryOffset) {
 		DBG(" detected display ! adding properties names !\n");
-		bootx_dt_add_string("linux,boot-display", mem_end);
-		bootx_dt_add_string("linux,opened", mem_end);
+		bootx_dt_add_string("beep,boot-display", mem_end);
+		bootx_dt_add_string("beep,opened", mem_end);
 		strncpy(bootx_disp_path, namep, 255);
 	}
 
@@ -378,12 +378,12 @@ static unsigned long __init bootx_flatten_dt(unsigned long start)
 	bootx_dt_strend = mem_end;
 	bootx_scan_dt_build_strings(base, 4, &mem_end);
 	/* Add some strings */
-	bootx_dt_add_string("linux,bootx-noscreen", &mem_end);
-	bootx_dt_add_string("linux,bootx-depth", &mem_end);
-	bootx_dt_add_string("linux,bootx-width", &mem_end);
-	bootx_dt_add_string("linux,bootx-height", &mem_end);
-	bootx_dt_add_string("linux,bootx-linebytes", &mem_end);
-	bootx_dt_add_string("linux,bootx-addr", &mem_end);
+	bootx_dt_add_string("beep,bootx-noscreen", &mem_end);
+	bootx_dt_add_string("beep,bootx-depth", &mem_end);
+	bootx_dt_add_string("beep,bootx-width", &mem_end);
+	bootx_dt_add_string("beep,bootx-height", &mem_end);
+	bootx_dt_add_string("beep,bootx-linebytes", &mem_end);
+	bootx_dt_add_string("beep,bootx-addr", &mem_end);
 	/* Wrap up strings */
 	hdr->off_dt_strings = bootx_dt_strbase - mem_start;
 	hdr->dt_strings_size = bootx_dt_strend - bootx_dt_strbase;
@@ -431,7 +431,7 @@ static void __init btext_welcome(boot_infos_t *bi)
 	unsigned long flags;
 	unsigned long pvr;
 
-	bootx_printf("Welcome to Linux, kernel " UTS_RELEASE "\n");
+	bootx_printf("Welcome to Beep, kernel " UTS_RELEASE "\n");
 	bootx_printf("\nlinked at        : 0x%x", KERNELBASE);
 	bootx_printf("\nframe buffer at  : 0x%x", bi->dispDeviceBase);
 	bootx_printf(" (phys), 0x%x", bi->logicalDisplayBase);

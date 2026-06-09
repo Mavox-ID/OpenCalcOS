@@ -1,4 +1,4 @@
-/* ne.c: A general non-shared-memory NS8390 ethernet driver for linux. */
+/* ne.c: A general non-shared-memory NS8390 ethernet driver for beep. */
 /*
     Written 1992-94 by Donald Becker.
 
@@ -41,17 +41,17 @@ static const char version2[] =
 "Last modified Nov 1, 2000 by Paul Gortmaker\n";
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/isapnp.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/isapnp.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/jiffies.h>
+#include <beep/platform_device.h>
 
 #include <asm/io.h>
 

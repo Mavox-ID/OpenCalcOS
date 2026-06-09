@@ -8,7 +8,7 @@
 #define KU_KERN	0x00
 
 #include <asm/page.h>
-#include <linux/const.h>
+#include <beep/const.h>
 
 /* thread information allocation */
 #define THREAD_SIZE_ORDER	(1)

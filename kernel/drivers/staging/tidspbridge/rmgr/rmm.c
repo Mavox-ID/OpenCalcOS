@@ -37,8 +37,8 @@
  *  been allocated, and not yet freed.
  */
 
-#include <linux/types.h>
-#include <linux/list.h>
+#include <beep/types.h>
+#include <beep/list.h>
 
 /*  ----------------------------------- Host OS */
 #include <dspbridge/host_os.h>

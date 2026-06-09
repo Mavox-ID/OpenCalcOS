@@ -6,16 +6,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/init.h>
-#include <linux/mmzone.h>
-#include <linux/module.h>
-#include <linux/bootmem.h>
-#include <linux/pagemap.h>
-#include <linux/nodemask.h>
+#include <beep/kernel.h>
+#include <beep/gfp.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/init.h>
+#include <beep/mmzone.h>
+#include <beep/module.h>
+#include <beep/bootmem.h>
+#include <beep/pagemap.h>
+#include <beep/nodemask.h>
 
 #include <asm/page.h>
 #include <asm/mmu_context.h>

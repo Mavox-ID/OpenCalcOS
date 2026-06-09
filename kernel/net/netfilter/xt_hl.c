@@ -10,14 +10,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ipt_ttl.h>
-#include <linux/netfilter_ipv6/ip6t_hl.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_ipv4/ipt_ttl.h>
+#include <beep/netfilter_ipv6/ip6t_hl.h>
 
 MODULE_AUTHOR("Maciej Soltysiak <solt@dns.toxicfilms.tv>");
 MODULE_DESCRIPTION("Xtables: Hoplimit/TTL field match");

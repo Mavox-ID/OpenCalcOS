@@ -17,11 +17,11 @@
  *  more details.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/ide.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/ide.h>
+#include <beep/init.h>
+#include <beep/pci.h>
 
 #include <asm/io.h>
 

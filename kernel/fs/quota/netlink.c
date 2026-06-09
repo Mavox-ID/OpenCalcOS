@@ -1,11 +1,11 @@
 
-#include <linux/cred.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/quotaops.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/cred.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/quotaops.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>
 

@@ -1,20 +1,20 @@
 /*
- * Copytight (C) 1999, 2000, 05, 06 Ralf Baechle (ralf@linux-mips.org)
+ * Copytight (C) 1999, 2000, 05, 06 Ralf Baechle (ralf@beep-mips.org)
  * Copytight (C) 1999, 2000 Silicon Graphics, Inc.
  */
-#include <linux/bcd.h>
-#include <linux/clockchips.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/param.h>
-#include <linux/smp.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/mm.h>
-#include <linux/platform_device.h>
+#include <beep/bcd.h>
+#include <beep/clockchips.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/param.h>
+#include <beep/smp.h>
+#include <beep/time.h>
+#include <beep/timex.h>
+#include <beep/mm.h>
+#include <beep/platform_device.h>
 
 #include <asm/time.h>
 #include <asm/pgtable.h>

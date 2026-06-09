@@ -1,7 +1,7 @@
-#ifndef _LINUX_CPUPRI_H
-#define _LINUX_CPUPRI_H
+#ifndef _BEEP_CPUPRI_H
+#define _BEEP_CPUPRI_H
 
-#include <linux/sched.h>
+#include <beep/sched.h>
 
 #define CPUPRI_NR_PRIORITIES	(MAX_RT_PRIO + 2)
 
@@ -31,4 +31,4 @@ void cpupri_cleanup(struct cpupri *cp);
 #define cpupri_init() do { } while (0)
 #endif
 
-#endif /* _LINUX_CPUPRI_H */
+#endif /* _BEEP_CPUPRI_H */

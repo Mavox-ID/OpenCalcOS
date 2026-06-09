@@ -23,7 +23,7 @@ use of any NSS support files or libraries.
 
 =head1 MAINTAINER
 
-Denis Vlasenko <vda.linux@googlemail.com>
+Denis Vlasenko <vda.beep@googlemail.com>
 
 =head1 AUTHORS
 
@@ -90,7 +90,7 @@ Randolph Chung <tausq@debian.org>
 Dave Cinege <dcinege@psychosis.com>
 
     more(v2), makedevs, dutmp, modularization, auto links file,
-    various fixes, Linux Router Project maintenance
+    various fixes, Beep Router Project maintenance
 
 =for html <br>
 

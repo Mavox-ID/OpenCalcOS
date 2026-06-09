@@ -11,7 +11,7 @@
 #ifndef _LXFB_H_
 #define _LXFB_H_
 
-#include <linux/fb.h>
+#include <beep/fb.h>
 
 #define GP_REG_COUNT	(0x7c / 4)
 #define DC_REG_COUNT	(0xf0 / 4)
@@ -423,7 +423,7 @@ static inline void write_fp(struct lxfb_par *par, int reg, uint32_t val)
 }
 
 
-/* MSRs are defined in linux/cs5535.h; their bitfields are here */
+/* MSRs are defined in beep/cs5535.h; their bitfields are here */
 
 #define MSR_GLCP_DOTPLL_LOCK		(1 << 25)	/* r/o */
 #define MSR_GLCP_DOTPLL_HALFPIX		(1 << 24)

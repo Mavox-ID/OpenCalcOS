@@ -25,10 +25,10 @@
 
 #define pr_fmt(fmt)    "%s: " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/remoteproc.h>
-#include <linux/elf.h>
+#include <beep/module.h>
+#include <beep/firmware.h>
+#include <beep/remoteproc.h>
+#include <beep/elf.h>
 
 #include "remoteproc_internal.h"
 

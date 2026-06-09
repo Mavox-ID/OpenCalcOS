@@ -1,7 +1,7 @@
 /*
     tda18271-priv.h - private header for the NXP TDA18271 silicon tuner
 
-    Copyright (C) 2007, 2008 Michael Krufky <mkrufky@linuxtv.org>
+    Copyright (C) 2007, 2008 Michael Krufky <mkrufky@beeptv.org>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -21,9 +21,9 @@
 #ifndef __TDA18271_PRIV_H__
 #define __TDA18271_PRIV_H__
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/mutex.h>
 #include "tuner-i2c.h"
 #include "tda18271.h"
 

@@ -1,4 +1,4 @@
-/* Hey EMACS -*- linux-c -*- */
+/* Hey EMACS -*- beep-c -*- */
 /*
  *
  * Copyright (C) 2002-2003 Romain Lievin <roms@tilp.info>

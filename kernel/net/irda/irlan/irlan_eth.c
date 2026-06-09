@@ -25,12 +25,12 @@
  *
  ********************************************************************/
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/if_arp.h>
-#include <linux/module.h>
-#include <linux/sched.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/inetdevice.h>
+#include <beep/if_arp.h>
+#include <beep/module.h>
+#include <beep/sched.h>
 #include <net/arp.h>
 
 #include <net/irda/irda.h>

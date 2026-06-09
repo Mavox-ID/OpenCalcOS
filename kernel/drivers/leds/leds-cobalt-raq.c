@@ -1,7 +1,7 @@
 /*
  *  LEDs driver for the Cobalt Raq series.
  *
- *  Copyright (C) 2007  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2007  Yoichi Yuasa <yuasa@beep-mips.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -17,14 +17,14 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  */
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/export.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/leds.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/export.h>
 
 #define LED_WEB		0x04
 #define LED_POWER_OFF	0x08

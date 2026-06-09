@@ -1,9 +1,9 @@
 /*
  *	common UDP/RAW code
- *	Linux INET implementation
+ *	Beep INET implementation
  *
  * Authors:
- * 	Hideaki YOSHIFUJI <yoshfuji@linux-ipv6.org>
+ * 	Hideaki YOSHIFUJI <yoshfuji@beep-ipv6.org>
  *
  * 	This program is free software; you can redistribute it and/or
  * 	modify it under the terms of the GNU General Public License
@@ -11,10 +11,10 @@
  * 	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/ip.h>
-#include <linux/in.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/ip.h>
+#include <beep/in.h>
 #include <net/ip.h>
 #include <net/sock.h>
 #include <net/route.h>

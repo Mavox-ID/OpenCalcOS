@@ -7,10 +7,10 @@
  *  April, 2003
  *
  */
-#include <linux/module.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_pkttype.h>
+#include <beep/module.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_bridge/ebtables.h>
+#include <beep/netfilter_bridge/ebt_pkttype.h>
 
 static bool
 ebt_pkttype_mt(const struct sk_buff *skb, struct xt_action_param *par)

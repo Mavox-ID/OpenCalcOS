@@ -22,7 +22,7 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <drm/drmP.h>
 #include <drm/via_drm.h>

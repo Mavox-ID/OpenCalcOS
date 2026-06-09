@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-at91/sam9_smc.c
+ * beep/arch/arm/mach-at91/sam9_smc.c
  *
  * Copyright (C) 2008 Andrew Victor
  * Copyright (C) 2011 Jean-Christophe PLAGNIOL-VILLARD <plagnioj@jcrosoft.com>
@@ -9,10 +9,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
 
 #include <mach/at91sam9_smc.h>
 

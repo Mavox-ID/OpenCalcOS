@@ -13,14 +13,14 @@
  *
  *  Jan, 2008
  */
-#include <linux/ipv6.h>
+#include <beep/ipv6.h>
 #include <net/ipv6.h>
-#include <linux/in.h>
-#include <linux/module.h>
+#include <beep/in.h>
+#include <beep/module.h>
 #include <net/dsfield.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_ip6.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_bridge/ebtables.h>
+#include <beep/netfilter_bridge/ebt_ip6.h>
 
 union pkthdr {
 	struct {

@@ -12,7 +12,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/psr.h>
 
 extern void arch_local_irq_restore(unsigned long);

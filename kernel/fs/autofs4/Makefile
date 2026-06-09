@@ -1,5 +1,5 @@
 #
-# Makefile for the linux autofs-filesystem routines.
+# Makefile for the beep autofs-filesystem routines.
 #
 
 obj-$(CONFIG_AUTOFS4_FS) += autofs4.o

@@ -1,4 +1,4 @@
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/io.h>
 #include <arch/cache.h>
 #include <arch/hwregs/dma.h>

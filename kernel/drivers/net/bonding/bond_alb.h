@@ -23,7 +23,7 @@
 #ifndef __BOND_ALB_H__
 #define __BOND_ALB_H__
 
-#include <linux/if_ether.h>
+#include <beep/if_ether.h>
 
 struct bonding;
 struct slave;

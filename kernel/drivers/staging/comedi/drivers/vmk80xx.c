@@ -4,7 +4,7 @@
 
     Copyright (C) 2009 Manuel Gebele <forensixs@gmx.de>, Germany
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -52,15 +52,15 @@ Changelog:
 0.7.76  -1-  support for digital and counter subdevice
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/usb.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/errno.h>
+#include <beep/input.h>
+#include <beep/slab.h>
+#include <beep/poll.h>
+#include <beep/usb.h>
+#include <beep/uaccess.h>
 
 #include "../comedidev.h"
 

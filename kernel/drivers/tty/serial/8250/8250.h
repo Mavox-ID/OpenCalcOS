@@ -11,7 +11,7 @@
  * (at your option) any later version.
  */
 
-#include <linux/serial_8250.h>
+#include <beep/serial_8250.h>
 
 struct old_serial_port {
 	unsigned int uart;

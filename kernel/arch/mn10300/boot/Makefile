@@ -10,19 +10,19 @@
 # 2 of the Licence, or (at your option) any later version.
 #
 
-targets		:= vmlinux.bin zCalc
+targets		:= vmbeep.bin zCalc
 
 subdir- 	:= compressed
 
 # ---------------------------------------------------------------------------
 
 
-$(obj)/zCalc: $(obj)/compressed/vmlinux FORCE
+$(obj)/zCalc: $(obj)/compressed/vmbeep FORCE
 	$(call if_changed,objcopy)
 	@echo 'Kernel: $@ is ready'
 
-$(obj)/vmlinux.bin: $(obj)/compressed/vmlinux FORCE
+$(obj)/vmbeep.bin: $(obj)/compressed/vmbeep FORCE
 	$(call if_changed,objcopy)
 
-$(obj)/compressed/vmlinux: FORCE
+$(obj)/compressed/vmbeep: FORCE
 	$(Q)$(MAKE) $(build)=$(obj)/compressed IMAGE_OFFSET=$(IMAGE_OFFSET) $@

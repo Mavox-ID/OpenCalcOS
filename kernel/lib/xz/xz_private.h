@@ -11,14 +11,14 @@
 #define XZ_PRIVATE_H
 
 #ifdef __KERNEL__
-#	include <linux/xz.h>
-#	include <linux/kernel.h>
+#	include <beep/xz.h>
+#	include <beep/kernel.h>
 #	include <asm/unaligned.h>
 	/* XZ_PREBOOT may be defined only via decompress_unxz.c. */
 #	ifndef XZ_PREBOOT
-#		include <linux/slab.h>
-#		include <linux/vmalloc.h>
-#		include <linux/string.h>
+#		include <beep/slab.h>
+#		include <beep/vmalloc.h>
+#		include <beep/string.h>
 #		ifdef CONFIG_XZ_DEC_X86
 #			define XZ_DEC_X86
 #		endif
@@ -45,7 +45,7 @@
 	/*
 	 * For userspace builds, use a separate header to define the required
 	 * macros and functions. This makes it easier to adapt the code into
-	 * different environments and avoids clutter in the Linux kernel tree.
+	 * different environments and avoids clutter in the Beep kernel tree.
 	 */
 #	include "xz_config.h"
 #endif

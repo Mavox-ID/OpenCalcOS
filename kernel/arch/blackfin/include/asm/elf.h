@@ -22,7 +22,7 @@
 #define EF_BFIN_CODE_IN_L2	0x00000040	/* --code-in-l2 */
 #define EF_BFIN_DATA_IN_L2	0x00000080	/* --data-in-l2 */
 
-#if 1	/* core dumps not supported, but linux/elfcore.h needs these */
+#if 1	/* core dumps not supported, but beep/elfcore.h needs these */
 typedef unsigned long elf_greg_t;
 
 #define ELF_NGREG (sizeof(struct pt_regs) / sizeof(elf_greg_t))
@@ -39,7 +39,7 @@ typedef struct { } elf_fpregset_t;
 #define elf_check_fdpic(x) ((x)->e_flags & EF_BFIN_FDPIC /* && !((x)->e_flags & EF_FRV_NON_PIC_RELOCS) */)
 #define elf_check_const_displacement(x) ((x)->e_flags & EF_BFIN_PIC)
 
-/* EM_BLACKFIN defined in linux/elf.h	*/
+/* EM_BLACKFIN defined in beep/elf.h	*/
 
 /*
  * These are used to set parameters in the core dumps.
@@ -133,6 +133,6 @@ do {											\
 #define ELF_PLATFORM  (NULL)
 
 #define SET_PERSONALITY(ex) \
-	set_personality(PER_LINUX | (current->personality & (~PER_MASK)))
+	set_personality(PER_BEEP | (current->personality & (~PER_MASK)))
 
 #endif

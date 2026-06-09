@@ -13,21 +13,21 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/fb.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/leds.h>
-#include <linux/atmel-mci.h>
-#include <linux/delay.h>
+#include <beep/types.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/fb.h>
+#include <beep/gpio_keys.h>
+#include <beep/input.h>
+#include <beep/leds.h>
+#include <beep/atmel-mci.h>
+#include <beep/delay.h>
 
-#include <linux/platform_data/at91_adc.h>
+#include <beep/platform_data/at91_adc.h>
 
 #include <mach/hardware.h>
 #include <video/atmel_lcdc.h>

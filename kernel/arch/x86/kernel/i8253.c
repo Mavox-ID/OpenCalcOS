@@ -2,10 +2,10 @@
  * 8253/PIT functions
  *
  */
-#include <linux/clockchips.h>
-#include <linux/module.h>
-#include <linux/timex.h>
-#include <linux/i8253.h>
+#include <beep/clockchips.h>
+#include <beep/module.h>
+#include <beep/timex.h>
+#include <beep/i8253.h>
 
 #include <asm/hpet.h>
 #include <asm/time.h>

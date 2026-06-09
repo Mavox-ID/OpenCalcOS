@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-tegra/platsmp.c
+ *  beep/arch/arm/mach-tegra/platsmp.c
  *
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
@@ -11,13 +11,13 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/smp.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/jiffies.h>
+#include <beep/smp.h>
+#include <beep/io.h>
 
 #include <asm/cacheflush.h>
 #include <asm/hardware/gic.h>

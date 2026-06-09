@@ -6,10 +6,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/sctp.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/sctp.h>
+#include <beep/module.h>
 #include <net/sctp/checksum.h>
 
 #include <net/netfilter/nf_nat_l4proto.h>

@@ -26,19 +26,19 @@
 // #define	DEBUG			// error path messages, extra info
 // #define	VERBOSE			// more; success messages
 
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/crc32.h>
-#include <linux/usb/usbnet.h>
-#include <linux/slab.h>
-#include <linux/if_vlan.h>
+#include <beep/module.h>
+#include <beep/kmod.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/workqueue.h>
+#include <beep/mii.h>
+#include <beep/usb.h>
+#include <beep/crc32.h>
+#include <beep/usb/usbnet.h>
+#include <beep/slab.h>
+#include <beep/if_vlan.h>
 
 #define DRIVER_VERSION "22-Dec-2011"
 #define DRIVER_NAME "asix"

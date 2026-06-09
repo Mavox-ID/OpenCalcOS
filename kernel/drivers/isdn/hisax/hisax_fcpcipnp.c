@@ -3,7 +3,7 @@
  *
  * Author       Kai Germaschewski
  * Copyright    2001 by Kai Germaschewski  <kai.germaschewski@gmx.de>
- *              2001 by Karsten Keil       <keil@isdn4linux.de>
+ *              2001 by Karsten Keil       <keil@isdn4beep.de>
  *
  * based upon Karsten Keil's original avm_pci.c driver
  *
@@ -23,16 +23,16 @@
  * o tx_skb at PH_DEACTIVATE time
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/isapnp.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/isapnp.h>
+#include <beep/kmod.h>
+#include <beep/slab.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/delay.h>
 
 #include <asm/io.h>
 

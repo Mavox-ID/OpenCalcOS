@@ -53,7 +53,7 @@
  */
 #define atomic_set(v, i) (((v)->counter) = (i))
 
-#include <linux/irqflags.h>
+#include <beep/irqflags.h>
 
 /**
  * atomic_add_return - add integer to atomic variable

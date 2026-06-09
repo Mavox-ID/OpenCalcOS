@@ -24,7 +24,7 @@
  *    Eric Anholt <eric@anholt.net>
  *
  */
-#include <linux/dmi.h>
+#include <beep/dmi.h>
 #include <drm/drm_dp_helper.h>
 #include <drm/drmP.h>
 #include <drm/i915_drm.h>

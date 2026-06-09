@@ -1,5 +1,5 @@
 /*
- *  linux/arch/cris/mm/fault.c
+ *  beep/arch/cris/mm/fault.c
  *
  *  Low level bus fault handler
  *
@@ -10,7 +10,7 @@
  *
  */
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>
 #include <arch/svinto.h>

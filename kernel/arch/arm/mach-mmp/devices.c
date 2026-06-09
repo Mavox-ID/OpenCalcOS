@@ -1,15 +1,15 @@
 /*
- * linux/arch/arm/mach-mmp/devices.c
+ * beep/arch/arm/mach-mmp/devices.c
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
 
 #include <asm/irq.h>
 #include <mach/irqs.h>

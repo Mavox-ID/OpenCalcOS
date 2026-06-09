@@ -6,10 +6,10 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/input.h>	/* BUS_SPI */
-#include <linux/pm.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
+#include <beep/input.h>	/* BUS_SPI */
+#include <beep/pm.h>
+#include <beep/spi/spi.h>
+#include <beep/module.h>
 
 #include "ad7879.h"
 
@@ -159,7 +159,7 @@ static struct spi_driver ad7879_spi_driver = {
 
 module_spi_driver(ad7879_spi_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("AD7879(-1) touchscreen SPI bus driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("spi:ad7879");

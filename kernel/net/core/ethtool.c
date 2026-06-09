@@ -11,20 +11,20 @@
  * (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/phy.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/rtnetlink.h>
-#include <linux/sched.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/ethtool.h>
+#include <beep/netdevice.h>
+#include <beep/net_tstamp.h>
+#include <beep/phy.h>
+#include <beep/bitops.h>
+#include <beep/uaccess.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
+#include <beep/rtnetlink.h>
+#include <beep/sched.h>
 
 /*
  * Some useful ethtool_ops methods that're device independent.

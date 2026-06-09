@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5pv210/include/mach/tick.h
+/* beep/arch/arm/mach-s5pv210/include/mach/tick.h
  *
  * Copyright (c) 2009 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/

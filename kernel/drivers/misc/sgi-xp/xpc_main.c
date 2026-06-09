@@ -43,14 +43,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/kdebug.h>
-#include <linux/kthread.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/sysctl.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/reboot.h>
+#include <beep/kdebug.h>
+#include <beep/kthread.h>
 #include "xpc.h"
 
 #ifdef CONFIG_X86_64

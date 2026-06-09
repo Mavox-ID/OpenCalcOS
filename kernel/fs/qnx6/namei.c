@@ -1,5 +1,5 @@
 /*
- * QNX6 file system, Linux implementation.
+ * QNX6 file system, Beep implementation.
  *
  * Version : 1.0.0
  *

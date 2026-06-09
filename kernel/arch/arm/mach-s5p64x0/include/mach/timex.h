@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5p64x0/include/mach/timex.h
+/* beep/arch/arm/mach-s5p64x0/include/mach/timex.h
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com

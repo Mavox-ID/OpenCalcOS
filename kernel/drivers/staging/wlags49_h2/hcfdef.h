@@ -635,7 +635,7 @@ err: ;
 #if defined HCF_YIELD
 #define HCF_WAIT_WHILE( x ) while ( prot_cnt && (x) && (HCF_YIELD) ) prot_cnt--;
 #else
-#include <linux/delay.h>
+#include <beep/delay.h>
 #define HCF_WAIT_WHILE( x ) while ( prot_cnt && (x) ) { udelay(2); prot_cnt--; }
 #endif // HCF_YIELD
 #endif // HCF_PROT_TIME

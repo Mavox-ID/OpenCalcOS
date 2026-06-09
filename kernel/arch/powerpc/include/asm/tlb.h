@@ -23,7 +23,7 @@
 #include <asm/mmu.h>
 #endif
 
-#include <linux/pagemap.h>
+#include <beep/pagemap.h>
 
 #define tlb_start_vma(tlb, vma)	do { } while (0)
 #define tlb_end_vma(tlb, vma)	do { } while (0)

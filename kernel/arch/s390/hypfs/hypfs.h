@@ -1,5 +1,5 @@
 /*
- *    Hypervisor filesystem for Linux on s390.
+ *    Hypervisor filesystem for Beep on s390.
  *
  *    Copyright IBM Corp. 2006
  *    Author(s): Michael Holzheu <holzheu@de.ibm.com>
@@ -8,11 +8,11 @@
 #ifndef _HYPFS_H_
 #define _HYPFS_H_
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/debugfs.h>
-#include <linux/workqueue.h>
-#include <linux/kref.h>
+#include <beep/fs.h>
+#include <beep/types.h>
+#include <beep/debugfs.h>
+#include <beep/workqueue.h>
+#include <beep/kref.h>
 
 #define REG_FILE_MODE    0440
 #define UPDATE_FILE_MODE 0220

@@ -17,10 +17,10 @@
  *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/isapnp.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/isapnp.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
 #include <asm/uaccess.h>
 
 extern struct pnp_protocol isapnp_protocol;

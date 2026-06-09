@@ -17,13 +17,13 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/usb.h>
+#include <beep/slab.h>
 #include <media/v4l2-common.h>
 #include <media/tuner.h>
 #include <media/tvaudio.h>

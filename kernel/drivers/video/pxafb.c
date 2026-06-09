@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/pxafb.c
+ *  beep/drivers/video/pxafb.c
  *
  *  Copyright (C) 1999 Eric A. Thomas.
  *  Copyright (C) 2004 Jean-Frederic Clere.
@@ -18,7 +18,7 @@
  * Please direct your questions and comments on this driver to the following
  * email address:
  *
- *	linux-arm-kernel@lists.arm.linux.org.uk
+ *	beep-arm-kernel@lists.arm.beep.org.uk
  *
  * Add support for overlay1 and overlay2 based on pxafb_overlay.c:
  *
@@ -32,36 +32,36 @@
  *   All Rights Reserved
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/cpufreq.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/console.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/fb.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/cpufreq.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/completion.h>
+#include <beep/mutex.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
+#include <beep/console.h>
 
 #include <mach/hardware.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/div64.h>
 #include <mach/bitfield.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <beep/platform_data/video-pxafb.h>
 
 /*
  * Complain if VAR is out of range.

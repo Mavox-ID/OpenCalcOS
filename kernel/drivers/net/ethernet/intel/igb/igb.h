@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel(R) Gigabit Ethernet Linux driver
+  Intel(R) Gigabit Ethernet Beep driver
   Copyright(c) 2007-2012 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it
@@ -26,7 +26,7 @@
 *******************************************************************************/
 
 
-/* Linux PRO/1000 Ethernet Driver main header file */
+/* Beep PRO/1000 Ethernet Driver main header file */
 
 #ifndef _IGB_H_
 #define _IGB_H_
@@ -34,11 +34,11 @@
 #include "e1000_mac.h"
 #include "e1000_82575.h"
 
-#include <linux/clocksource.h>
-#include <linux/net_tstamp.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/bitops.h>
-#include <linux/if_vlan.h>
+#include <beep/clocksource.h>
+#include <beep/net_tstamp.h>
+#include <beep/ptp_clock_kernel.h>
+#include <beep/bitops.h>
+#include <beep/if_vlan.h>
 
 struct igb_adapter;
 

@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux FDDI network device drivers.
+# Makefile for the Beep FDDI network device drivers.
 #
 
 obj-$(CONFIG_DEFXX) += defxx.o

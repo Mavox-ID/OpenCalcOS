@@ -19,18 +19,18 @@
  *
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/spi/spi.h>
-#include <linux/pm_runtime.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/platform_device.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/spi/spi.h>
+#include <beep/pm_runtime.h>
 
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>

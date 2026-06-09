@@ -6,8 +6,8 @@
  *   Author(s):	Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/thread_info.h>
 #include <asm/page.h>

@@ -18,30 +18,30 @@
 #ifndef R8180H
 #define R8180H
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 #define RTL8180_MODULE_NAME "r8180"
 #define DMESG(x,a...) printk(KERN_INFO RTL8180_MODULE_NAME ": " x "\n", ## a)
 #define DMESGW(x,a...) printk(KERN_WARNING RTL8180_MODULE_NAME ": WW:" x "\n", ## a)
 #define DMESGE(x,a...) printk(KERN_WARNING RTL8180_MODULE_NAME ": EE:" x "\n", ## a)
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-//#include <linux/config.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/rtnetlink.h>	//for rtnl_lock()
-#include <linux/wireless.h>
-#include <linux/timer.h>
-#include <linux/proc_fs.h>	// Necessary because we use the proc fs
-#include <linux/if_arp.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+//#include <beep/config.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/netdevice.h>
+#include <beep/pci.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
+#include <beep/rtnetlink.h>	//for rtnl_lock()
+#include <beep/wireless.h>
+#include <beep/timer.h>
+#include <beep/proc_fs.h>	// Necessary because we use the proc fs
+#include <beep/if_arp.h>
 #include "ieee80211/ieee80211.h"
 #include <asm/io.h>
 //#include <asm/semaphore.h>

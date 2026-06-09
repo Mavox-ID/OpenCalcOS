@@ -12,14 +12,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/leds.h>
-#include <linux/leds-bd2802.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/leds.h>
+#include <beep/leds-bd2802.h>
+#include <beep/slab.h>
+#include <beep/pm.h>
 
 #define LED_CTL(rgb2en, rgb1en) ((rgb2en) << 4 | ((rgb1en) << 0))
 

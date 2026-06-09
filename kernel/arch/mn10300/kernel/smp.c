@@ -13,18 +13,18 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/cpumask.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/profile.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/init.h>
+#include <beep/jiffies.h>
+#include <beep/cpumask.h>
+#include <beep/err.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/profile.h>
+#include <beep/smp.h>
+#include <beep/cpu.h>
 #include <asm/tlbflush.h>
 #include <asm/bitops.h>
 #include <asm/processor.h>

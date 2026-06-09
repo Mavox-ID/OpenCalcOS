@@ -7,13 +7,13 @@
  * the Free Software Foundation; either version 2 of the License.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/input/lm8333.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/irq.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/input/lm8333.h>
 
 #define LM8333_FIFO_READ		0x20
 #define LM8333_DEBOUNCE			0x22

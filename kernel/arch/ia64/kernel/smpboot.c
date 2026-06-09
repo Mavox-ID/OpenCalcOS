@@ -22,25 +22,25 @@
  *						Setup cpu_sibling_map and cpu_core_map
  */
 
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/bootmem.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/mm.h>
-#include <linux/notifier.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/efi.h>
-#include <linux/percpu.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/acpi.h>
+#include <beep/bootmem.h>
+#include <beep/cpu.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/kernel_stat.h>
+#include <beep/mm.h>
+#include <beep/notifier.h>
+#include <beep/smp.h>
+#include <beep/spinlock.h>
+#include <beep/efi.h>
+#include <beep/percpu.h>
+#include <beep/bitops.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/cache.h>
 #include <asm/current.h>
 #include <asm/delay.h>

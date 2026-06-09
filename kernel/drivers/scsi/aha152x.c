@@ -235,25 +235,25 @@
 
  **************************************************************************/
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/irq.h>
-#include <linux/io.h>
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/wait.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/proc_fs.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/isapnp.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/io.h>
+#include <beep/blkdev.h>
+#include <beep/completion.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/wait.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/proc_fs.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/isapnp.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 #include <scsi/scsicam.h>
 
 #include "scsi.h"

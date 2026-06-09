@@ -1,4 +1,4 @@
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- beep-c -*- ------------------------------------------------------- *
  *
  *   Copyright 2002 H. Peter Anvin - All Rights Reserved
  *
@@ -17,7 +17,7 @@
  *
  */
 
-#include <linux/raid/pq.h>
+#include <beep/raid/pq.h>
 #include "x86.h"
 
 static const struct raid6_sse_constants {

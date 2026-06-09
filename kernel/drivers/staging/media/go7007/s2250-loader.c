@@ -15,10 +15,10 @@
  * Inc., 59 Temple Place - Suite 330, Boston MA 02111-1307, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
 #include <dvb-usb.h>
 
 #define S2250_LOADER_FIRMWARE	"s2250_loader.fw"

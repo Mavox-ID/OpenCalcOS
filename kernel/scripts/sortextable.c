@@ -8,12 +8,12 @@
  * Copyright 2009 John F. Reiser <jreiser@BitWagon.com>.  All rights reserved.
  * Licensed under the GNU General Public License, version 2 (GPLv2).
  *
- * Restructured to fit Linux format, as well as other updates:
+ * Restructured to fit Beep format, as well as other updates:
  *  Copyright 2010 Steven Rostedt <srostedt@redhat.com>, Red Hat Inc.
  */
 
 /*
- * Strategy: alter the vmlinux file in-place.
+ * Strategy: alter the vmbeep file in-place.
  */
 
 #include <sys/types.h>
@@ -61,7 +61,7 @@ fail_file(void)
 }
 
 static void __attribute__((noreturn))
-succeed_file(void)
+__attribute__((unused)) succeed_file(void)
 {
 	cleanup();
 	longjmp(jmpenv, SJ_SUCCEED);
@@ -291,7 +291,7 @@ main(int argc, char *argv[])
 	int i;
 
 	if (argc < 2) {
-		fprintf(stderr, "usage: sortextable vmlinux...\n");
+		fprintf(stderr, "usage: sortextable vmbeep...\n");
 		return 0;
 	}
 

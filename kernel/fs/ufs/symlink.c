@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ufs/symlink.c
+ *  beep/fs/ufs/symlink.c
  *
  * Only fast symlinks left here - the rest is done by generic code. AV, 1999
  *
@@ -9,7 +9,7 @@
  *
  *  from
  *
- *  linux/fs/ext2/symlink.c
+ *  beep/fs/ext2/symlink.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -18,15 +18,15 @@
  *
  *  from
  *
- *  linux/fs/minix/symlink.c
+ *  beep/fs/minix/symlink.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
  *  ext2 symlink handling code
  */
 
-#include <linux/fs.h>
-#include <linux/namei.h>
+#include <beep/fs.h>
+#include <beep/namei.h>
 
 #include "ufs_fs.h"
 #include "ufs.h"

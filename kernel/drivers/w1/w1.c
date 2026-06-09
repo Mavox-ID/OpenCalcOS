@@ -19,21 +19,21 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/timer.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include "w1.h"
 #include "w1_log.h"

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-at91/board-usb-a926x.c
+ * beep/arch/arm/mach-at91/board-usb-a926x.c
  *
  *  Copyright (C) 2005 SAN People
  *  Copyright (C) 2007 Atmel Corporation.
@@ -21,16 +21,16 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/gpio_keys.h>
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/spi/mmc_spi.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/gpio_keys.h>
+#include <beep/gpio.h>
+#include <beep/input.h>
+#include <beep/spi/mmc_spi.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>

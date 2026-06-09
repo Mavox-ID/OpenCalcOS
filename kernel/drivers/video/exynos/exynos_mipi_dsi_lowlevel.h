@@ -1,4 +1,4 @@
-/* linux/drivers/video/exynos/exynos_mipi_dsi_lowlevel.h
+/* beep/drivers/video/exynos/exynos_mipi_dsi_lowlevel.h
  *
  * Header file for Samsung SoC MIPI-DSI lowlevel driver.
  *

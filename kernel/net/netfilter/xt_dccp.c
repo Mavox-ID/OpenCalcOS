@@ -8,18 +8,18 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 #include <net/ip.h>
-#include <linux/dccp.h>
+#include <beep/dccp.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_dccp.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_dccp.h>
 
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <beep/netfilter_ipv4/ip_tables.h>
+#include <beep/netfilter_ipv6/ip6_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Harald Welte <laforge@netfilter.org>");

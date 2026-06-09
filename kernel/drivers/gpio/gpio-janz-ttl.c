@@ -9,17 +9,17 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
 
-#include <linux/mfd/janz.h>
+#include <beep/mfd/janz.h>
 
 #define DRV_NAME "janz-ttl"
 

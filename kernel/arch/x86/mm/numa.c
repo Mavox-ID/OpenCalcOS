@@ -1,16 +1,16 @@
 /* Common code for 32 and 64-bit NUMA */
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/memblock.h>
-#include <linux/mmzone.h>
-#include <linux/ctype.h>
-#include <linux/module.h>
-#include <linux/nodemask.h>
-#include <linux/sched.h>
-#include <linux/topology.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/memblock.h>
+#include <beep/mmzone.h>
+#include <beep/ctype.h>
+#include <beep/module.h>
+#include <beep/nodemask.h>
+#include <beep/sched.h>
+#include <beep/topology.h>
 
 #include <asm/e820.h>
 #include <asm/proto.h>

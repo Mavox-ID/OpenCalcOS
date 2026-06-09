@@ -1,15 +1,15 @@
 /*
  * drivers/base/dma-mapping.c - arch-independent dma-mapping routines
  *
- * Copyright (c) 2006  SUSE Linux Products GmbH
+ * Copyright (c) 2006  SUSE Beep Products GmbH
  * Copyright (c) 2006  Tejun Heo <teheo@suse.de>
  *
  * This file is released under the GPLv2.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
+#include <beep/dma-mapping.h>
+#include <beep/export.h>
+#include <beep/gfp.h>
 #include <asm-generic/dma-coherent.h>
 
 /*

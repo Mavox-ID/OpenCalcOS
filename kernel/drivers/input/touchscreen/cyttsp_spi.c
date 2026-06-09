@@ -29,9 +29,9 @@
 
 #include "cyttsp_core.h"
 
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/spi/spi.h>
+#include <beep/delay.h>
+#include <beep/input.h>
+#include <beep/spi/spi.h>
 
 #define CY_SPI_WR_OP		0x00 /* r/~w */
 #define CY_SPI_RD_OP		0x01

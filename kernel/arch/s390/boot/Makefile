@@ -1,8 +1,8 @@
 #
-# Makefile for the linux s390-specific parts of the memory manager.
+# Makefile for the beep s390-specific parts of the memory manager.
 #
 
-COMPILE_VERSION := __linux_compile_version_id__`hostname |  \
+COMPILE_VERSION := __beep_compile_version_id__`hostname |  \
 			tr -c '[0-9A-Za-z]' '_'`__`date | \
 			tr -c '[0-9A-Za-z]' '_'`_t
 
@@ -12,13 +12,13 @@ targets := image
 targets += bzImage
 subdir- := compressed
 
-$(obj)/image: vmlinux FORCE
+$(obj)/image: vmbeep FORCE
 	$(call if_changed,objcopy)
 
-$(obj)/bzImage: $(obj)/compressed/vmlinux FORCE
+$(obj)/bzImage: $(obj)/compressed/vmbeep FORCE
 	$(call if_changed,objcopy)
 
-$(obj)/compressed/vmlinux: FORCE
+$(obj)/compressed/vmbeep: FORCE
 	$(Q)$(MAKE) $(build)=$(obj)/compressed $@
 
 install: $(CONFIGURE) $(obj)/image

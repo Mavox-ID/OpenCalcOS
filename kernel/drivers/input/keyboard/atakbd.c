@@ -12,7 +12,7 @@
  */
 
 /*
- * Atari keyboard driver for Linux/m68k
+ * Atari keyboard driver for Beep/m68k
  *
  * The low level init and interrupt stuff is handled in arch/mm68k/atari/atakeyb.c
  * (the keyboard ACIA also handles the mouse and joystick data, and the keyboard
@@ -40,11 +40,11 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
 
 #include <asm/atariints.h>
 #include <asm/atarihw.h>

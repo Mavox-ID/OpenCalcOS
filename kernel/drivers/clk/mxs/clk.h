@@ -12,9 +12,9 @@
 #ifndef __MXS_CLK_H
 #define __MXS_CLK_H
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/spinlock.h>
+#include <beep/clk.h>
+#include <beep/clk-provider.h>
+#include <beep/spinlock.h>
 
 #define SET	0x4
 #define CLR	0x8

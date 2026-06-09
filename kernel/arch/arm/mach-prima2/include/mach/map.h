@@ -9,7 +9,7 @@
 #ifndef __MACH_PRIMA2_MAP_H__
 #define __MACH_PRIMA2_MAP_H__
 
-#include <linux/const.h>
+#include <beep/const.h>
 
 #define SIRFSOC_VA_BASE		_AC(0xFEC00000, UL)
 

@@ -17,8 +17,8 @@
  * USA.
  */
 
-#include <linux/kthread.h>
-#include <linux/socket.h>
+#include <beep/kthread.h>
+#include <beep/socket.h>
 
 #include "usbip_common.h"
 #include "stub.h"

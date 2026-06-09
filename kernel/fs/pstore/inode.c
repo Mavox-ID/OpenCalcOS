@@ -17,25 +17,25 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/fsnotify.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/mount.h>
-#include <linux/seq_file.h>
-#include <linux/ramfs.h>
-#include <linux/parser.h>
-#include <linux/sched.h>
-#include <linux/magic.h>
-#include <linux/pstore.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/fsnotify.h>
+#include <beep/pagemap.h>
+#include <beep/highmem.h>
+#include <beep/time.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/string.h>
+#include <beep/mount.h>
+#include <beep/seq_file.h>
+#include <beep/ramfs.h>
+#include <beep/parser.h>
+#include <beep/sched.h>
+#include <beep/magic.h>
+#include <beep/pstore.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/uaccess.h>
 
 #include "internal.h"
 

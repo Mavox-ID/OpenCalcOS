@@ -35,7 +35,7 @@
 #define SO_PROTOCOL	0x1028
 #define SO_DOMAIN	0x1029
 
-/* linux-specific, might as well be the same as on i386 */
+/* beep-specific, might as well be the same as on i386 */
 #define SO_NO_CHECK	11
 #define SO_PRIORITY	12
 #define SO_BSDCOMPAT	14

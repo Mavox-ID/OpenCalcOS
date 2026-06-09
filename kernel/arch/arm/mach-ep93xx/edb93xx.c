@@ -24,19 +24,19 @@
  * your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/i2c-gpio.h>
-#include <linux/spi/spi.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/i2c-gpio.h>
+#include <beep/spi/spi.h>
 
 #include <sound/cs4271.h>
 
 #include <mach/hardware.h>
-#include <linux/platform_data/video-ep93xx.h>
-#include <linux/platform_data/spi-ep93xx.h>
+#include <beep/platform_data/video-ep93xx.h>
+#include <beep/platform_data/spi-ep93xx.h>
 #include <mach/gpio-ep93xx.h>
 
 #include <asm/hardware/vic.h>

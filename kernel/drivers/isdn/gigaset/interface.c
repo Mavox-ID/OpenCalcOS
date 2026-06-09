@@ -12,9 +12,9 @@
  */
 
 #include "gigaset.h"
-#include <linux/gigaset_dev.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
+#include <beep/gigaset_dev.h>
+#include <beep/tty_flip.h>
+#include <beep/module.h>
 
 /*** our ioctls ***/
 

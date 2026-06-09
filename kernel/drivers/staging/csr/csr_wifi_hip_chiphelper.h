@@ -12,7 +12,7 @@
 #define CSR_WIFI_HIP_CHIPHELPER_H__
 
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* The age of the BlueCore chip.  This is probably not useful, if
    you know the age then you can probably work out the version directly. */

@@ -9,10 +9,10 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/clk.h>
+#include <beep/clk-provider.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 #include "clk.h"
 
 /**

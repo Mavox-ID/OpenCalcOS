@@ -1,13 +1,13 @@
 /*
- * lirc.h - linux infrared remote control header file
+ * lirc.h - beep infrared remote control header file
  * last modified 2010/07/13 by Jarod Wilson
  */
 
-#ifndef _LINUX_LIRC_H
-#define _LINUX_LIRC_H
+#ifndef _BEEP_LIRC_H
+#define _BEEP_LIRC_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <beep/types.h>
+#include <beep/ioctl.h>
 
 #define PULSE_BIT       0x01000000
 #define PULSE_MASK      0x00FFFFFF

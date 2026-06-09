@@ -7,12 +7,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/udp.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/udp.h>
 
-#include <linux/netfilter.h>
-#include <linux/module.h>
+#include <beep/netfilter.h>
+#include <beep/module.h>
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_l3proto.h>
 #include <net/netfilter/nf_nat_l4proto.h>

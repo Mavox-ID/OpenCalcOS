@@ -5,11 +5,11 @@
  * space mapped. This allows lockless config space operation.
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/bitmap.h>
-#include <linux/rcupdate.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/acpi.h>
+#include <beep/bitmap.h>
+#include <beep/rcupdate.h>
 #include <asm/e820.h>
 #include <asm/pci_x86.h>
 

@@ -11,10 +11,10 @@
  */
 
 #include "gigaset.h"
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/completion.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/platform_device.h>
+#include <beep/completion.h>
 
 /* Version Information */
 #define DRIVER_AUTHOR "Tilman Schmidt"

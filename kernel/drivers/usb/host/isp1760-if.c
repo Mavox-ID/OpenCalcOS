@@ -9,26 +9,26 @@
  *
  */
 
-#include <linux/usb.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/usb/isp1760.h>
-#include <linux/usb/hcd.h>
+#include <beep/usb.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/usb/isp1760.h>
+#include <beep/usb/hcd.h>
 
 #include "isp1760-hcd.h"
 
 #if defined(CONFIG_OF) && defined(CONFIG_OF_IRQ)
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_gpio.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/of_gpio.h>
 #endif
 
 #ifdef CONFIG_PCI
-#include <linux/pci.h>
+#include <beep/pci.h>
 #endif
 
 #if defined(CONFIG_OF) && defined(CONFIG_OF_IRQ)

@@ -9,16 +9,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
-#include <linux/err.h>
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/mfd/wm831x/status.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/leds.h>
+#include <beep/err.h>
+#include <beep/mfd/wm831x/core.h>
+#include <beep/mfd/wm831x/pdata.h>
+#include <beep/mfd/wm831x/status.h>
+#include <beep/module.h>
 
 
 struct wm831x_status {

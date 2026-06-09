@@ -26,8 +26,8 @@
 #include "fpmodule.h"
 #include "fpmodule.inl"
 
-#include <linux/compiler.h>
-#include <linux/string.h>
+#include <beep/compiler.h>
+#include <beep/string.h>
 
 /* Reset the FPA11 chip.  Called to initialize and reset the emulator. */
 static void resetFPA11(void)

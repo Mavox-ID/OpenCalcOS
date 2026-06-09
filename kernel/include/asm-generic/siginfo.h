@@ -19,7 +19,7 @@ void do_schedule_next_timer(struct siginfo *info);
 
 #ifndef HAVE_ARCH_COPY_SIGINFO
 
-#include <linux/string.h>
+#include <beep/string.h>
 
 static inline void copy_siginfo(struct siginfo *to, struct siginfo *from)
 {

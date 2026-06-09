@@ -6,9 +6,9 @@
  * helper functions when coping with rational numbers
  */
 
-#include <linux/rational.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
+#include <beep/rational.h>
+#include <beep/compiler.h>
+#include <beep/export.h>
 
 /*
  * calculate best rational approximation for a given fraction

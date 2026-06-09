@@ -22,7 +22,7 @@
 #include "drm_crtc.h"
 #include "drm_crtc_helper.h"
 
-#include <linux/list.h>
+#include <beep/list.h>
 
 
 /*

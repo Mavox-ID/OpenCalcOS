@@ -1,5 +1,5 @@
 /*
- *  i8042 keyboard and mouse controller driver for Linux
+ *  i8042 keyboard and mouse controller driver for Beep
  *
  *  Copyright (c) 1999-2004 Vojtech Pavlik
  */
@@ -12,18 +12,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/serio.h>
-#include <linux/err.h>
-#include <linux/rcupdate.h>
-#include <linux/platform_device.h>
-#include <linux/i8042.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/serio.h>
+#include <beep/err.h>
+#include <beep/rcupdate.h>
+#include <beep/platform_device.h>
+#include <beep/i8042.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 

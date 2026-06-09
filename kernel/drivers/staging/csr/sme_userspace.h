@@ -11,10 +11,10 @@
  *
  * ***************************************************************************
  */
-#ifndef __LINUX_SME_USERSPACE_H__
-#define __LINUX_SME_USERSPACE_H__ 1
+#ifndef __BEEP_SME_USERSPACE_H__
+#define __BEEP_SME_USERSPACE_H__ 1
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 int uf_sme_init(unifi_priv_t *priv);
 void uf_sme_deinit(unifi_priv_t *priv);
@@ -35,4 +35,4 @@ void CsrWifiRouterTransportInit(unifi_priv_t *priv);
 void CsrWifiRouterTransportRecv(unifi_priv_t *priv, u8 *buffer, size_t bufferLength);
 void CsrWifiRouterTransportDeInit(unifi_priv_t *priv);
 
-#endif /* __LINUX_SME_USERSPACE_H__ */
+#endif /* __BEEP_SME_USERSPACE_H__ */

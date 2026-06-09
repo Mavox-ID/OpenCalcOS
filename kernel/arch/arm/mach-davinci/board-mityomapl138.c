@@ -8,17 +8,17 @@
  * any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/partitions.h>
-#include <linux/regulator/machine.h>
-#include <linux/i2c.h>
-#include <linux/i2c/at24.h>
-#include <linux/etherdevice.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/partitions.h>
+#include <beep/regulator/machine.h>
+#include <beep/i2c.h>
+#include <beep/i2c/at24.h>
+#include <beep/etherdevice.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
 
 #include <asm/io.h>
 #include <asm/mach-types.h>
@@ -26,9 +26,9 @@
 #include <mach/common.h>
 #include <mach/cp_intc.h>
 #include <mach/da8xx.h>
-#include <linux/platform_data/mtd-davinci.h>
+#include <beep/platform_data/mtd-davinci.h>
 #include <mach/mux.h>
-#include <linux/platform_data/spi-davinci.h>
+#include <beep/platform_data/spi-davinci.h>
 
 #define MITYOMAPL138_PHY_ID		""
 

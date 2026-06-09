@@ -17,13 +17,13 @@
  *
  * Routines specific to the LASAT boards
  */
-#include <linux/types.h>
-#include <linux/crc32.h>
+#include <beep/types.h>
+#include <beep/crc32.h>
 #include <asm/lasat/lasat.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/mutex.h>
 #include <asm/addrspace.h>
 #include "at93c.h"
 /* New model description table */

@@ -34,13 +34,13 @@
  *     allocated and free'd.
  */
 
-#include <linux/pm_qos.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
-#include <linux/pm_runtime.h>
+#include <beep/pm_qos.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/mutex.h>
+#include <beep/export.h>
+#include <beep/pm_runtime.h>
 
 #include "power.h"
 

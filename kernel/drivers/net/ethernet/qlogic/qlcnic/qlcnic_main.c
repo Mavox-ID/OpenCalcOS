@@ -5,29 +5,29 @@
  * See LICENSE.qlcnic for copyright and licensing details.
  */
 
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/interrupt.h>
 
 #include "qlcnic.h"
 
-#include <linux/swab.h>
-#include <linux/dma-mapping.h>
+#include <beep/swab.h>
+#include <beep/dma-mapping.h>
 #include <net/ip.h>
-#include <linux/ipv6.h>
-#include <linux/inetdevice.h>
-#include <linux/sysfs.h>
-#include <linux/aer.h>
-#include <linux/log2.h>
+#include <beep/ipv6.h>
+#include <beep/inetdevice.h>
+#include <beep/sysfs.h>
+#include <beep/aer.h>
+#include <beep/log2.h>
 
 MODULE_DESCRIPTION("QLogic 1/10 GbE Converged/Intelligent Ethernet Driver");
 MODULE_LICENSE("GPL");
-MODULE_VERSION(QLCNIC_LINUX_VERSIONID);
+MODULE_VERSION(QLCNIC_BEEP_VERSIONID);
 MODULE_FIRMWARE(QLCNIC_UNIFIED_ROMIMAGE_NAME);
 
 char qlcnic_driver_name[] = "qlcnic";
 static const char qlcnic_driver_string[] = "QLogic 1/10 GbE "
-	"Converged/Intelligent Ethernet Driver v" QLCNIC_LINUX_VERSIONID;
+	"Converged/Intelligent Ethernet Driver v" QLCNIC_BEEP_VERSIONID;
 
 static struct workqueue_struct *qlcnic_wq;
 static int qlcnic_mac_learn;

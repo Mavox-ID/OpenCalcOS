@@ -6,19 +6,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/module.h>
-#include <linux/udp.h>
-#include <linux/seq_file.h>
-#include <linux/skbuff.h>
-#include <linux/ipv6.h>
+#include <beep/types.h>
+#include <beep/timer.h>
+#include <beep/module.h>
+#include <beep/udp.h>
+#include <beep/seq_file.h>
+#include <beep/skbuff.h>
+#include <beep/ipv6.h>
 #include <net/ip6_checksum.h>
 #include <net/checksum.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/netfilter_ipv6.h>
 #include <net/netfilter/nf_conntrack_l4proto.h>
 #include <net/netfilter/nf_conntrack_ecache.h>
 #include <net/netfilter/nf_log.h>
@@ -153,8 +153,8 @@ static int udp_error(struct net *net, struct nf_conn *tmpl, struct sk_buff *skb,
 
 #if IS_ENABLED(CONFIG_NF_CT_NETLINK_TIMEOUT)
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_cttimeout.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_cttimeout.h>
 
 static int udp_timeout_nlattr_to_obj(struct nlattr *tb[],
 				     struct net *net, void *data)

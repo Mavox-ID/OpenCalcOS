@@ -11,10 +11,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/leds.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/leds.h>
 #include "leds.h"
 
 static void defon_trig_activate(struct led_classdev *led_cdev)

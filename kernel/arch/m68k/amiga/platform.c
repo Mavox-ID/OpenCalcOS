@@ -6,10 +6,10 @@
  * for more details.
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/zorro.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/zorro.h>
 
 #include <asm/amigahw.h>
 #include <asm/amigayle.h>

@@ -2,7 +2,7 @@
  *  This file contains ioremap and related functions for 64-bit machines.
  *
  *  Derived from arch/ppc64/mm/init.c
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@samba.org)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -21,22 +21,22 @@
  *
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/stddef.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/export.h>
+#include <beep/types.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/stddef.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/memblock.h>
+#include <beep/slab.h>
 
 #include <asm/pgalloc.h>
 #include <asm/page.h>
@@ -141,7 +141,7 @@ int map_kernel_page(unsigned long ea, unsigned long pa, int flags)
 #else /* CONFIG_PPC_MMU_NOHASH */
 		/*
 		 * If the mm subsystem is not fully up, we cannot create a
-		 * linux page table entry for this mapping.  Simply bolt an
+		 * beep page table entry for this mapping.  Simply bolt an
 		 * entry in the hardware page table.
 		 *
 		 */

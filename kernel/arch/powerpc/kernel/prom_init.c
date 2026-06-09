@@ -16,18 +16,18 @@
 #undef DEBUG_PROM
 
 #include <stdarg.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/threads.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/stringify.h>
-#include <linux/delay.h>
-#include <linux/initrd.h>
-#include <linux/bitops.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/threads.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/proc_fs.h>
+#include <beep/stringify.h>
+#include <beep/delay.h>
+#include <beep/initrd.h>
+#include <beep/bitops.h>
 #include <asm/prom.h>
 #include <asm/rtas.h>
 #include <asm/page.h>
@@ -44,7 +44,7 @@
 #include <asm/machdep.h>
 #include <asm/opal.h>
 
-#include <linux/linux_logo.h>
+#include <beep/beep_logo.h>
 
 /*
  * Eventually bump that one up
@@ -711,7 +711,7 @@ static void __init early_cmdline_parse(void)
 #define OV5_SUB_PROCESSORS	0x01    /* 1,2,or 4 Sub-Processors supported */
 
 /* Option Vector 6: IBM PAPR hints */
-#define OV6_LINUX		0x02	/* Linux is our OS */
+#define OV6_BEEP		0x02	/* Beep is our OS */
 
 /*
  * The architecture vector has an array of PVR mask/value pairs,
@@ -785,7 +785,7 @@ static unsigned char ibm_architecture_vec[] = {
 	4 - 2,				/* length */
 	0,
 	0,
-	OV6_LINUX,
+	OV6_BEEP,
 
 };
 
@@ -973,7 +973,7 @@ static void __init prom_send_capabilities(void)
 /*
  * Memory allocation strategy... our layout is normally:
  *
- *  at 14Mb or more we have vmlinux, then a gap and initrd.  In some
+ *  at 14Mb or more we have vmbeep, then a gap and initrd.  In some
  *  rare cases, initrd might end up being before the kernel though.
  *  We assume this won't override the final kernel at 0, we have no
  *  provision to handle that in this version, but it should hopefully
@@ -1609,9 +1609,9 @@ static void __init prom_instantiate_rtas(void)
 
 	reserve_mem(base, size);
 
-	prom_setprop(rtas_node, "/rtas", "linux,rtas-base",
+	prom_setprop(rtas_node, "/rtas", "beep,rtas-base",
 		     &base, sizeof(base));
-	prom_setprop(rtas_node, "/rtas", "linux,rtas-entry",
+	prom_setprop(rtas_node, "/rtas", "beep,rtas-entry",
 		     &entry, sizeof(entry));
 
 #ifdef CONFIG_PPC_POWERNV
@@ -1674,9 +1674,9 @@ static void __init prom_instantiate_sml(void)
 
 	reserve_mem(base, size);
 
-	prom_setprop(ibmvtpm_node, "/ibm,vtpm", "linux,sml-base",
+	prom_setprop(ibmvtpm_node, "/ibm,vtpm", "beep,sml-base",
 		     &base, sizeof(base));
-	prom_setprop(ibmvtpm_node, "/ibm,vtpm", "linux,sml-size",
+	prom_setprop(ibmvtpm_node, "/ibm,vtpm", "beep,sml-size",
 		     &size, sizeof(size));
 
 	prom_debug("sml base     = 0x%x\n", base);
@@ -1775,8 +1775,8 @@ static void __init prom_initialize_tce_table(void)
 		}
 
 		/* Save away the TCE table attributes for later use. */
-		prom_setprop(node, path, "linux,tce-base", &base, sizeof(base));
-		prom_setprop(node, path, "linux,tce-size", &minsize, sizeof(minsize));
+		prom_setprop(node, path, "beep,tce-base", &base, sizeof(base));
+		prom_setprop(node, path, "beep,tce-size", &minsize, sizeof(minsize));
 
 		prom_debug("TCE table: %s\n", path);
 		prom_debug("\tnode = 0x%x\n", node);
@@ -1990,17 +1990,17 @@ static void __init prom_init_stdout(void)
 	memset(path, 0, 256);
 	call_prom("instance-to-path", 3, 1, _prom->stdout, path, 255);
 	val = call_prom("instance-to-package", 1, 1, _prom->stdout);
-	prom_setprop(_prom->chosen, "/chosen", "linux,stdout-package",
+	prom_setprop(_prom->chosen, "/chosen", "beep,stdout-package",
 		     &val, sizeof(val));
 	prom_printf("OF stdout device is: %s\n", RELOC(of_stdout_device));
-	prom_setprop(_prom->chosen, "/chosen", "linux,stdout-path",
+	prom_setprop(_prom->chosen, "/chosen", "beep,stdout-path",
 		     path, strlen(path) + 1);
 
 	/* If it's a display, note it */
 	memset(type, 0, sizeof(type));
 	prom_getprop(val, "device_type", type, sizeof(type));
 	if (strcmp(type, RELOC("display")) == 0)
-		prom_setprop(val, path, "linux,boot-display", NULL, 0);
+		prom_setprop(val, path, "beep,boot-display", NULL, 0);
 }
 
 static int __init prom_find_machine_type(void)
@@ -2139,7 +2139,7 @@ static void __init prom_check_displays(void)
 
 		/* Success */
 		prom_printf("done\n");
-		prom_setprop(node, path, "linux,opened", NULL, 0);
+		prom_setprop(node, path, "beep,opened", NULL, 0);
 
 		/* Setup a usable color table when the appropriate
 		 * method is available. Should update this to set-colors */
@@ -2149,13 +2149,13 @@ static void __init prom_check_displays(void)
 					   clut[2]) != 0)
 				break;
 
-#ifdef CONFIG_LOGO_LINUX_CLUT224
-		clut = PTRRELOC(RELOC(logo_linux_clut224.clut));
-		for (i = 0; i < RELOC(logo_linux_clut224.clutsize); i++, clut += 3)
+#ifdef CONFIG_LOGO_BEEP_CLUT224
+		clut = PTRRELOC(RELOC(logo_beep_clut224.clut));
+		for (i = 0; i < RELOC(logo_beep_clut224.clutsize); i++, clut += 3)
 			if (prom_set_color(ih, i + 32, clut[0], clut[1],
 					   clut[2]) != 0)
 				break;
-#endif /* CONFIG_LOGO_LINUX_CLUT224 */
+#endif /* CONFIG_LOGO_BEEP_CLUT224 */
 	}
 }
 
@@ -2352,14 +2352,14 @@ static void __init scan_dt_build_struct(phandle node, unsigned long *mem_start,
 			has_phandle = 1;
 	}
 
-	/* Add a "linux,phandle" property if no "phandle" property already
+	/* Add a "beep,phandle" property if no "phandle" property already
 	 * existed (can happen with OPAL)
 	 */
 	if (!has_phandle) {
-		soff = dt_find_string(RELOC("linux,phandle"));
+		soff = dt_find_string(RELOC("beep,phandle"));
 		if (soff == 0)
 			prom_printf("WARNING: Can't find string index for"
-				    " <linux-phandle> node %s\n", path);
+				    " <beep-phandle> node %s\n", path);
 		else {
 			dt_push_token(OF_DT_PROP, mem_start, mem_end);
 			dt_push_token(4, mem_start, mem_end);
@@ -2420,9 +2420,9 @@ static void __init flatten_device_tree(void)
 	RELOC(dt_string_start) = mem_start;
 	mem_start += 4; /* hole */
 
-	/* Add "linux,phandle" in there, we'll need it */
+	/* Add "beep,phandle" in there, we'll need it */
 	namep = make_room(&mem_start, &mem_end, 16, 1);
-	strcpy(namep, RELOC("linux,phandle"));
+	strcpy(namep, RELOC("beep,phandle"));
 	mem_start = (unsigned long)namep + strlen(namep) + 1;
 
 	/* Build string array */
@@ -2835,10 +2835,10 @@ static void __init prom_check_initrd(unsigned long r3, unsigned long r4)
 		RELOC(prom_initrd_end) = RELOC(prom_initrd_start) + r4;
 
 		val = RELOC(prom_initrd_start);
-		prom_setprop(_prom->chosen, "/chosen", "linux,initrd-start",
+		prom_setprop(_prom->chosen, "/chosen", "beep,initrd-start",
 			     &val, sizeof(val));
 		val = RELOC(prom_initrd_end);
-		prom_setprop(_prom->chosen, "/chosen", "linux,initrd-end",
+		prom_setprop(_prom->chosen, "/chosen", "beep,initrd-end",
 			     &val, sizeof(val));
 
 		reserve_mem(RELOC(prom_initrd_start),
@@ -2893,7 +2893,7 @@ unsigned long __init prom_init(unsigned long r3, unsigned long r4,
 	 */
 	prom_init_stdout();
 
-	prom_printf("Preparing to boot %s", RELOC(linux_banner));
+	prom_printf("Preparing to boot %s", RELOC(beep_banner));
 
 	/*
 	 * Get default machine type. At this point, we do not differentiate
@@ -2996,23 +2996,23 @@ unsigned long __init prom_init(unsigned long r3, unsigned long r4,
 	 * Fill in some infos for use by the kernel later on
 	 */
 	if (RELOC(prom_memory_limit))
-		prom_setprop(_prom->chosen, "/chosen", "linux,memory-limit",
+		prom_setprop(_prom->chosen, "/chosen", "beep,memory-limit",
 			     &RELOC(prom_memory_limit),
 			     sizeof(prom_memory_limit));
 #ifdef CONFIG_PPC64
 	if (RELOC(prom_iommu_off))
-		prom_setprop(_prom->chosen, "/chosen", "linux,iommu-off",
+		prom_setprop(_prom->chosen, "/chosen", "beep,iommu-off",
 			     NULL, 0);
 
 	if (RELOC(prom_iommu_force_on))
-		prom_setprop(_prom->chosen, "/chosen", "linux,iommu-force-on",
+		prom_setprop(_prom->chosen, "/chosen", "beep,iommu-force-on",
 			     NULL, 0);
 
 	if (RELOC(prom_tce_alloc_start)) {
-		prom_setprop(_prom->chosen, "/chosen", "linux,tce-alloc-start",
+		prom_setprop(_prom->chosen, "/chosen", "beep,tce-alloc-start",
 			     &RELOC(prom_tce_alloc_start),
 			     sizeof(prom_tce_alloc_start));
-		prom_setprop(_prom->chosen, "/chosen", "linux,tce-alloc-end",
+		prom_setprop(_prom->chosen, "/chosen", "beep,tce-alloc-end",
 			     &RELOC(prom_tce_alloc_end),
 			     sizeof(prom_tce_alloc_end));
 	}

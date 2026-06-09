@@ -13,13 +13,13 @@
  * the GNU General Public License for more details.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/taskstats.h>
-#include <linux/time.h>
-#include <linux/sysctl.h>
-#include <linux/delayacct.h>
-#include <linux/module.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/taskstats.h>
+#include <beep/time.h>
+#include <beep/sysctl.h>
+#include <beep/delayacct.h>
+#include <beep/module.h>
 
 int delayacct_on __read_mostly = 1;	/* Delay accounting turned on/off */
 EXPORT_SYMBOL_GPL(delayacct_on);

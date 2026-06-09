@@ -1,4 +1,4 @@
-/* epic100.c: A SMC 83c170 EPIC/100 Fast Ethernet driver for Linux. */
+/* epic100.c: A SMC 83c170 EPIC/100 Fast Ethernet driver for Beep. */
 /*
 	Written/copyright 1997-2001 by Donald Becker.
 
@@ -67,24 +67,24 @@ static int rx_copybreak;
 #define TX_FIFO_THRESH 256
 #define RX_FIFO_THRESH 1		/* 0-3, 0==32, 64,96, or 3==128 bytes  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/crc32.h>
+#include <beep/bitops.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
 #include <asm/byteorder.h>

@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/cyber2000fb.h
+ *  beep/drivers/video/cyber2000fb.h
  *
  *  Copyright (C) 1998-2000 Russell King
  *

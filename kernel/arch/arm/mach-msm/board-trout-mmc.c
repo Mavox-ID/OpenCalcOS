@@ -1,21 +1,21 @@
-/* linux/arch/arm/mach-msm/board-trout-mmc.c
+/* beep/arch/arm/mach-msm/board-trout-mmc.c
 ** Author: Brian Swetland <swetland@google.com>
 */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/err.h>
-#include <linux/debugfs.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/sdio_ids.h>
+#include <beep/err.h>
+#include <beep/debugfs.h>
 
 #include <asm/io.h>
 
 #include <mach/vreg.h>
 
-#include <linux/platform_data/mmc-msm_sdcc.h>
+#include <beep/platform_data/mmc-msm_sdcc.h>
 
 #include "devices.h"
 

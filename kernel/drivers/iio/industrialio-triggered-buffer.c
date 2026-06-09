@@ -7,14 +7,14 @@
  * the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/kfifo_buf.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/module.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/buffer.h>
+#include <beep/iio/kfifo_buf.h>
+#include <beep/iio/triggered_buffer.h>
+#include <beep/iio/trigger_consumer.h>
 
 static const struct iio_buffer_setup_ops iio_triggered_buffer_setup_ops = {
 	.preenable = &iio_sw_buffer_preenable,

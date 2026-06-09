@@ -33,7 +33,7 @@
 #ifndef IB_USER_SA_H
 #define IB_USER_SA_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 enum {
 	IB_PATH_GMP		= 1,

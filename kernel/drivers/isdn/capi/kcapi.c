@@ -13,34 +13,34 @@
 #define AVMB1_COMPAT
 
 #include "kcapi.h"
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/skbuff.h>
-#include <linux/workqueue.h>
-#include <linux/capi.h>
-#include <linux/kernelcapi.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/proc_fs.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/skbuff.h>
+#include <beep/workqueue.h>
+#include <beep/capi.h>
+#include <beep/kernelcapi.h>
+#include <beep/init.h>
+#include <beep/moduleparam.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
-#include <linux/isdn/capicmd.h>
-#include <linux/isdn/capiutil.h>
+#include <beep/isdn/capicmd.h>
+#include <beep/isdn/capiutil.h>
 #ifdef AVMB1_COMPAT
-#include <linux/b1lli.h>
+#include <beep/b1lli.h>
 #endif
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
+#include <beep/mutex.h>
+#include <beep/rcupdate.h>
 
 static int showcapimsgs = 0;
 static struct workqueue_struct *kcapi_wq;
 
-MODULE_DESCRIPTION("CAPI4Linux: kernel CAPI layer");
+MODULE_DESCRIPTION("CAPI4Beep: kernel CAPI layer");
 MODULE_AUTHOR("Carsten Paeth");
 MODULE_LICENSE("GPL");
 module_param(showcapimsgs, uint, 0);

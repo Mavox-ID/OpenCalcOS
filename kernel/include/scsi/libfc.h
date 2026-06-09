@@ -20,9 +20,9 @@
 #ifndef _LIBFC_H_
 #define _LIBFC_H_
 
-#include <linux/timer.h>
-#include <linux/if.h>
-#include <linux/percpu.h>
+#include <beep/timer.h>
+#include <beep/if.h>
+#include <beep/percpu.h>
 
 #include <scsi/scsi_transport.h>
 #include <scsi/scsi_transport_fc.h>

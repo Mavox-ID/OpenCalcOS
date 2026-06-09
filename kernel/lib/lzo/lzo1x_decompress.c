@@ -12,12 +12,12 @@
  */
 
 #ifndef STATIC
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
 #endif
 
 #include <asm/unaligned.h>
-#include <linux/lzo.h>
+#include <beep/lzo.h>
 #include "lzodefs.h"
 
 #define HAVE_IP(x, ip_end, ip) ((size_t)(ip_end - ip) < (x))

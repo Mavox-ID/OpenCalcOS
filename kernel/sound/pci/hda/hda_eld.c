@@ -4,7 +4,7 @@
  * Copyright(c) 2008 Intel Corporation.
  *
  * Authors:
- * 		Wu Fengguang <wfg@linux.intel.com>
+ * 		Wu Fengguang <wfg@beep.intel.com>
  *
  *  This driver is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -21,8 +21,8 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 #include <sound/core.h>
 #include <asm/unaligned.h>
 #include "hda_codec.h"

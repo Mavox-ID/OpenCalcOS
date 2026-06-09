@@ -1,5 +1,5 @@
 /*
- * Support for 32-bit Linux/Parisc ELF binaries on 64 bit kernels
+ * Support for 32-bit Beep/Parisc ELF binaries on 64 bit kernels
  *
  * Copyright (C) 2000 John Marvin
  * Copyright (C) 2000 Hewlett Packard Co.
@@ -34,11 +34,11 @@
 
 typedef unsigned int elf_greg_t;
 
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 #include <asm/processor.h>
-#include <linux/module.h>
-#include <linux/elfcore.h>
-#include <linux/compat.h>		/* struct compat_timeval */
+#include <beep/module.h>
+#include <beep/elfcore.h>
+#include <beep/compat.h>		/* struct compat_timeval */
 
 #define elf_prstatus elf_prstatus32
 struct elf_prstatus32
@@ -81,7 +81,7 @@ struct elf_prpsinfo32
 
 /*
  * We should probably use this macro to set a flag somewhere to indicate
- * this is a 32 on 64 process. We could use PER_LINUX_32BIT, or we
+ * this is a 32 on 64 process. We could use PER_BEEP_32BIT, or we
  * could set a processor dependent flag in the thread_struct.
  */
 

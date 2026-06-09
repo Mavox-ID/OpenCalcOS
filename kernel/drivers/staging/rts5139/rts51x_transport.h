@@ -27,12 +27,12 @@
 #ifndef __RTS51X_TRANSPORT_H
 #define __RTS51X_TRANSPORT_H
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 #include "rts51x.h"
 #include "rts51x_chip.h"
 
-#if 1 /* LINUX_VERSION_CODE > KERNEL_VERSION(2, 6, 34) */
+#if 1 /* BEEP_VERSION_CODE > KERNEL_VERSION(2, 6, 34) */
 #define URB_NO_SETUP_DMA_MAP		0
 #endif
 

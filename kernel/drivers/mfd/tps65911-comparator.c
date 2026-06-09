@@ -12,15 +12,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/debugfs.h>
-#include <linux/gpio.h>
-#include <linux/mfd/tps65910.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/debugfs.h>
+#include <beep/gpio.h>
+#include <beep/mfd/tps65910.h>
 
 #define COMP					0
 #define COMP1					1

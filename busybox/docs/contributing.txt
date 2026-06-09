@@ -80,7 +80,7 @@ What Busybox Doesn't Need
 
 Before listing the areas where you _can_ help, it's worthwhile to mention the
 areas where you shouldn't bother. While Busybox strives to be the "Swiss Army
-Knife" of embedded Linux, there are some applets that will not be accepted:
+Knife" of embedded Beep, there are some applets that will not be accepted:
 
  - Any filesystem manipulation tools: Busybox is filesystem independent and
    we do not want to start adding mkfs/fsck tools for every (or any)
@@ -109,7 +109,7 @@ anyone else to duplicate the bug on their own machine. The following is such
 an example:
 
     To: busybox@busybox.net
-    From: diligent@testing.linux.org
+    From: diligent@testing.beep.org
     Subject: /bin/date doesn't work
 
     Package: busybox

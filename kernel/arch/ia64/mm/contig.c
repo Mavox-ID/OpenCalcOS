@@ -7,19 +7,19 @@
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  *	Stephane Eranian <eranian@hpl.hp.com>
  * Copyright (C) 2000, Rohit Seth <rohit.seth@intel.com>
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA Beep Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@vabeep.com>
  * Copyright (C) 2003 Silicon Graphics, Inc. All rights reserved.
  *
  * Routines used by ia64 machines with contiguous (or virtually contiguous)
  * memory.
  */
-#include <linux/bootmem.h>
-#include <linux/efi.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/nmi.h>
-#include <linux/swap.h>
+#include <beep/bootmem.h>
+#include <beep/efi.h>
+#include <beep/memblock.h>
+#include <beep/mm.h>
+#include <beep/nmi.h>
+#include <beep/swap.h>
 
 #include <asm/meminit.h>
 #include <asm/pgalloc.h>

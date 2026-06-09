@@ -19,18 +19,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/i2c/twl.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/i2c.h>
+#include <beep/platform_device.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
+#include <beep/i2c/twl.h>
+#include <beep/slab.h>
+#include <beep/gpio.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
@@ -39,7 +39,7 @@
 #include <sound/tlv.h>
 
 /* Register descriptions are here */
-#include <linux/mfd/twl4030-audio.h>
+#include <beep/mfd/twl4030-audio.h>
 
 /* Shadow register used by the audio driver */
 #define TWL4030_REG_SW_SHADOW		0x4A

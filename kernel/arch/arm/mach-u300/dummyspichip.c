@@ -6,16 +6,16 @@
  * This is a dummy loopback SPI "chip" used for testing SPI.
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/sysfs.h>
-#include <linux/mutex.h>
-#include <linux/spi/spi.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/sysfs.h>
+#include <beep/mutex.h>
+#include <beep/spi/spi.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
 /*
  * WARNING! Do not include this pl022-specific controller header
  * for any generic driver. It is only done in this dummy chip
@@ -23,7 +23,7 @@
  * different settings on the loopback device. Normal chip configs
  * shall be STATIC and not altered by the driver!
  */
-#include <linux/amba/pl022.h>
+#include <beep/amba/pl022.h>
 
 struct dummy {
 	struct device *dev;
@@ -286,5 +286,5 @@ module_init(pl022_init_dummy);
 module_exit(pl022_exit_dummy);
 
 MODULE_AUTHOR("Linus Walleij <linus.walleij@stericsson.com>");
-MODULE_DESCRIPTION("PL022 SSP/SPI DUMMY Linux driver");
+MODULE_DESCRIPTION("PL022 SSP/SPI DUMMY Beep driver");
 MODULE_LICENSE("GPL");

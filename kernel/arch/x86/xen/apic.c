@@ -1,4 +1,4 @@
-#include <linux/init.h>
+#include <beep/init.h>
 
 #include <asm/x86_init.h>
 #include <asm/apic.h>

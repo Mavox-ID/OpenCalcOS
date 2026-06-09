@@ -1,4 +1,4 @@
-/* -*- linux-c -*- */
+/* -*- beep-c -*- */
 
 /* fs/reiserfs/procfs.c */
 
@@ -8,13 +8,13 @@
 
 /* proc info support a la one created by Sizif@Botik.RU for PGC */
 
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/seq_file.h>
+#include <beep/module.h>
+#include <beep/time.h>
+#include <beep/seq_file.h>
 #include <asm/uaccess.h>
 #include "reiserfs.h"
-#include <linux/init.h>
-#include <linux/proc_fs.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
 
 /*
  * LOCKING:

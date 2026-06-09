@@ -24,12 +24,12 @@ unsigned int max_bh = 0;
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include "pmcc4_sysdep.h"
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include "sbecom_inline_linux.h"
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include "sbecom_inline_beep.h"
 #include "libsbew.h"
 #include "pmcc4_private.h"
 #include "pmcc4.h"

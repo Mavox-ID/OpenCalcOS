@@ -10,8 +10,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/netdevice.h>
-#include <linux/wireless.h>
+#include <beep/netdevice.h>
+#include <beep/wireless.h>
 #include <net/iw_handler.h>
 
 /*

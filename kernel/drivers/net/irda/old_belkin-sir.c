@@ -28,9 +28,9 @@
  *     
  ********************************************************************/
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/init.h>
 
 #include <net/irda/irda.h>
 // #include <net/irda/irda_device.h>
@@ -50,12 +50,12 @@
  * The new SmartBeam does 115 kb/s, and I've not tested it...
  *
  * Belkin claim that the correct driver for the old dongle (in Windows)
- * is the generic Parallax 9500a driver, but the Linux LiteLink driver
- * fails for me (probably because Linux-IrDA doesn't rate fallback),
+ * is the generic Parallax 9500a driver, but the Beep LiteLink driver
+ * fails for me (probably because Beep-IrDA doesn't rate fallback),
  * so I created this really dumb driver...
  *
  * In fact, this driver doesn't do much. The only thing it does is to
- * prevent Linux-IrDA to use any other speed than 9600 b/s ;-) This
+ * prevent Beep-IrDA to use any other speed than 9600 b/s ;-) This
  * driver is called "old_belkin" so that when the new SmartBeam is supported
  * its driver can be called "belkin" instead of "new_belkin".
  *

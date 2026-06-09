@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/plat-omap/i2c.c
+ * beep/arch/arm/plat-omap/i2c.c
  *
  * Helper module for board specific I2C bus registration
  *
@@ -23,13 +23,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/i2c-omap.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/clk.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/i2c-omap.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/clk.h>
 
 #include <plat/i2c.h>
 

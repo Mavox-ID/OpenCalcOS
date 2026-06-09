@@ -23,8 +23,8 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
 
 #include <asm/pci-bridge.h>
 #include <asm/machdep.h>

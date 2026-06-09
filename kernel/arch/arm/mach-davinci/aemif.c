@@ -8,14 +8,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/time.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/module.h>
+#include <beep/time.h>
 
-#include <linux/platform_data/mtd-davinci-aemif.h>
+#include <beep/platform_data/mtd-davinci-aemif.h>
 
 /* Timing value configuration */
 

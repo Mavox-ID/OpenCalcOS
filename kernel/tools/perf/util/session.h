@@ -7,8 +7,8 @@
 #include "machine.h"
 #include "symbol.h"
 #include "thread.h"
-#include <linux/rbtree.h>
-#include <linux/perf_event.h>
+#include <beep/rbtree.h>
+#include <beep/perf_event.h>
 
 struct sample_queue;
 struct ip_callchain;

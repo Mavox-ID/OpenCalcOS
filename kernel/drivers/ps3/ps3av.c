@@ -18,13 +18,13 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/notifier.h>
-#include <linux/ioctl.h>
-#include <linux/fb.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/notifier.h>
+#include <beep/ioctl.h>
+#include <beep/fb.h>
+#include <beep/slab.h>
 
 #include <asm/firmware.h>
 #include <asm/ps3av.h>

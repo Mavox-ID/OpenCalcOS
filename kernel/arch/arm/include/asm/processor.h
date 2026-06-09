@@ -79,7 +79,7 @@ extern void release_thread(struct task_struct *);
 
 unsigned long get_wchan(struct task_struct *p);
 
-#if __LINUX_ARM_ARCH__ == 6 || defined(CONFIG_ARM_ERRATA_754327)
+#if __BEEP_ARM_ARCH__ == 6 || defined(CONFIG_ARM_ERRATA_754327)
 #define cpu_relax()			smp_mb()
 #else
 #define cpu_relax()			barrier()
@@ -94,7 +94,7 @@ unsigned long get_wchan(struct task_struct *p);
 /*
  * Prefetching support - only ARMv5.
  */
-#if __LINUX_ARM_ARCH__ >= 5
+#if __BEEP_ARM_ARCH__ >= 5
 
 #define ARCH_HAS_PREFETCH
 static inline void prefetch(const void *ptr)

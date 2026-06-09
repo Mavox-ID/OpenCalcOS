@@ -8,8 +8,8 @@
 #ifndef __SCLP_H__
 #define __SCLP_H__
 
-#include <linux/types.h>
-#include <linux/list.h>
+#include <beep/types.h>
+#include <beep/list.h>
 #include <asm/sclp.h>
 #include <asm/ebcdic.h>
 

@@ -7,24 +7,24 @@
  * Licensed under the GPL-2.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/cache.h>
-#include <linux/clockchips.h>
-#include <linux/profile.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/cpumask.h>
-#include <linux/seq_file.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/cache.h>
+#include <beep/clockchips.h>
+#include <beep/profile.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/cpu.h>
+#include <beep/smp.h>
+#include <beep/cpumask.h>
+#include <beep/seq_file.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
+#include <beep/atomic.h>
 #include <asm/cacheflush.h>
 #include <asm/irq_handler.h>
 #include <asm/mmu_context.h>
@@ -34,7 +34,7 @@
 #include <asm/ptrace.h>
 #include <asm/cpu.h>
 #include <asm/time.h>
-#include <linux/err.h>
+#include <beep/err.h>
 
 /*
  * Anomaly notes:

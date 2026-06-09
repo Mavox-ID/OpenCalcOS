@@ -18,19 +18,19 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/dmaengine.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/sh_dma.h>
-#include <linux/notifier.h>
-#include <linux/kdebug.h>
-#include <linux/spinlock.h>
-#include <linux/rculist.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/dmaengine.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/sh_dma.h>
+#include <beep/notifier.h>
+#include <beep/kdebug.h>
+#include <beep/spinlock.h>
+#include <beep/rculist.h>
 
 #include "../dmaengine.h"
 #include "shdma.h"

@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux Journalling Flash File System v2 (JFFS2)
+# Makefile for the Beep Journalling Flash File System v2 (JFFS2)
 #
 #
 

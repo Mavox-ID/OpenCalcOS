@@ -1,6 +1,6 @@
 /*
  * (C) 2001  Dave Jones, Arjan van de ven.
- * (C) 2002 - 2003  Dominik Brodowski <linux@brodo.de>
+ * (C) 2002 - 2003  Dominik Brodowski <beep@brodo.de>
  *
  *  Licensed under the terms of the GNU GPL License version 2.
  *  Based upon reverse engineered information, and on Intel documentation
@@ -18,12 +18,12 @@
  *                        SPEEDSTEP - DEFINITIONS                    *
  *********************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/pci.h>
+#include <beep/sched.h>
 
 #include <asm/cpu_device_id.h>
 
@@ -454,7 +454,7 @@ static void __exit speedstep_exit(void)
 
 
 MODULE_AUTHOR("Dave Jones <davej@redhat.com>, "
-		"Dominik Brodowski <linux@brodo.de>");
+		"Dominik Brodowski <beep@brodo.de>");
 MODULE_DESCRIPTION("Speedstep driver for Intel mobile processors on chipsets "
 		"with ICH-M southbridges.");
 MODULE_LICENSE("GPL");

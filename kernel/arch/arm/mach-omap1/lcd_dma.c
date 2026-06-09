@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/lcd_dma.c
+ * beep/arch/arm/mach-omap1/lcd_dma.c
  *
  * Extracted from arch/arm/plat-omap/dma.c
  * Copyright (C) 2003 - 2008 Nokia Corporation
@@ -22,12 +22,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
 
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 
 #include <mach/hardware.h>
 #include <mach/lcdc.h>

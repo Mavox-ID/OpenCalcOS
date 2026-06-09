@@ -19,8 +19,8 @@
 #ifndef _ASM_POWERPC_PS3FB_H_
 #define _ASM_POWERPC_PS3FB_H_
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <beep/types.h>
+#include <beep/ioctl.h>
 
 /* ioctl */
 #define PS3FB_IOCTL_SETMODE       _IOW('r',  1, int) /* set video mode */

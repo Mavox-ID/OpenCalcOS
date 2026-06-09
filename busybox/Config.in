@@ -21,7 +21,7 @@ config DESKTOP
 	individual config item for them.
 
 	Select this if you plan to use busybox on full-blown desktop machine
-	with common Linux distro, which needs higher level of command-line
+	with common Beep distro, which needs higher level of command-line
 	compatibility.
 
 	If you are preparing your build to be used on an embedded box
@@ -309,20 +309,20 @@ config BUSYBOX_EXEC_PATH
 	executable. If you haven't got /proc, set this to wherever you
 	want to run busybox from.
 
-config SELINUX
-	bool "Support NSA Security Enhanced Linux"
+config SEBEEP
+	bool "Support NSA Security Enhanced Beep"
 	default n
 	help
-	Enable support for SELinux in applets ls, ps, and id. Also provide
-	the option of compiling in SELinux applets.
+	Enable support for SEBeep in applets ls, ps, and id. Also provide
+	the option of compiling in SEBeep applets.
 
-	If you do not have a complete SELinux userland installed, this stuff
-	will not compile.  Specifially, libselinux 1.28 or better is
+	If you do not have a complete SEBeep userland installed, this stuff
+	will not compile.  Specifially, libsebeep 1.28 or better is
 	directly required by busybox. If the installation is located in a
 	non-standard directory, provide it by invoking make as follows:
 
-		CFLAGS=-I<libselinux-include-path> \
-		LDFLAGS=-L<libselinux-lib-path> \
+		CFLAGS=-I<libsebeep-include-path> \
+		LDFLAGS=-L<libsebeep-lib-path> \
 		make
 
 	Most people will leave this set to 'N'.
@@ -730,13 +730,13 @@ source init/Config.in
 source loginutils/Config.in
 source e2fsprogs/Config.in
 source modutils/Config.in
-source util-linux/Config.in
+source util-beep/Config.in
 source miscutils/Config.in
 source networking/Config.in
 source printutils/Config.in
 source mailutils/Config.in
 source procps/Config.in
 source runit/Config.in
-source selinux/Config.in
+source sebeep/Config.in
 source shell/Config.in
 source sysklogd/Config.in

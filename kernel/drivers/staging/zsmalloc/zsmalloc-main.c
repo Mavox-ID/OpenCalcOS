@@ -62,22 +62,22 @@
 #define DEBUG
 #endif
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/bitops.h>
+#include <beep/errno.h>
+#include <beep/highmem.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 #include <asm/tlbflush.h>
 #include <asm/pgtable.h>
-#include <linux/cpumask.h>
-#include <linux/cpu.h>
-#include <linux/vmalloc.h>
-#include <linux/hardirq.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <beep/cpumask.h>
+#include <beep/cpu.h>
+#include <beep/vmalloc.h>
+#include <beep/hardirq.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
 
 #include "zsmalloc.h"
 

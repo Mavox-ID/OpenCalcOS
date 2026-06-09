@@ -24,45 +24,45 @@
  * History:
  * 0-5 A number of folks worked on this driver in bits and pieces but the major
  *     contribution came from Suraj Iyer and Anant Gole
- * 6.0 Anant Gole - rewrote the driver as per Linux conventions
+ * 6.0 Anant Gole - rewrote the driver as per Beep conventions
  * 6.1 Chaithrika U S - added support for Gigabit and RMII features,
  *     PHY layer usage
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/highmem.h>
-#include <linux/proc_fs.h>
-#include <linux/ctype.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/semaphore.h>
-#include <linux/phy.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/pm_runtime.h>
-#include <linux/davinci_emac.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_net.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/errno.h>
+#include <beep/in.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/ethtool.h>
+#include <beep/highmem.h>
+#include <beep/proc_fs.h>
+#include <beep/ctype.h>
+#include <beep/spinlock.h>
+#include <beep/dma-mapping.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/semaphore.h>
+#include <beep/phy.h>
+#include <beep/bitops.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
+#include <beep/pm_runtime.h>
+#include <beep/davinci_emac.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/of_net.h>
 
 #include <asm/irq.h>
 #include <asm/page.h>
@@ -95,7 +95,7 @@ MODULE_PARM_DESC(debug_level, "DaVinci EMAC debug level (NETIF_MSG bits)");
 #define EMAC_MINOR_VERSION	1
 #define EMAC_MODULE_VERSION	"6.1"
 MODULE_VERSION(EMAC_MODULE_VERSION);
-static const char emac_version_string[] = "TI DaVinci EMAC Linux v6.1";
+static const char emac_version_string[] = "TI DaVinci EMAC Beep v6.1";
 
 /* Configuration items */
 #define EMAC_DEF_PASS_CRC		(0) /* Do not pass CRC up to frames */
@@ -1487,7 +1487,7 @@ static void emac_adjust_link(struct net_device *ndev)
 }
 
 /*************************************************************************
- *  Linux Driver Model
+ *  Beep Driver Model
  *************************************************************************/
 
 /**

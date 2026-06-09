@@ -4,7 +4,7 @@
 
     Copyright (C) 2002 MEV Ltd. <http://www.mev.co.uk/>
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -52,7 +52,7 @@ the IRQ jumper.  If no interrupt is connected, then subdevice 1 is
 unused.
 */
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 #include "../comedidev.h"
 

@@ -1,5 +1,5 @@
 /*
- * linux/kernel/power/swap.c
+ * beep/kernel/power/swap.c
  *
  * This file provides functions for reading the suspend image from
  * and writing it to a swap partition.
@@ -12,24 +12,24 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/file.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/genhd.h>
-#include <linux/device.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/lzo.h>
-#include <linux/vmalloc.h>
-#include <linux/cpumask.h>
-#include <linux/atomic.h>
-#include <linux/kthread.h>
-#include <linux/crc32.h>
+#include <beep/module.h>
+#include <beep/file.h>
+#include <beep/delay.h>
+#include <beep/bitops.h>
+#include <beep/genhd.h>
+#include <beep/device.h>
+#include <beep/bio.h>
+#include <beep/blkdev.h>
+#include <beep/swap.h>
+#include <beep/swapops.h>
+#include <beep/pm.h>
+#include <beep/slab.h>
+#include <beep/lzo.h>
+#include <beep/vmalloc.h>
+#include <beep/cpumask.h>
+#include <beep/atomic.h>
+#include <beep/kthread.h>
+#include <beep/crc32.h>
 
 #include "power.h"
 

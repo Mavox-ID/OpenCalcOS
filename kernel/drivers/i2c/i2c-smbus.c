@@ -2,7 +2,7 @@
  * i2c-smbus.c - SMBus extensions to the I2C protocol
  *
  * Copyright (C) 2008 David Brownell
- * Copyright (C) 2010 Jean Delvare <khali@linux-fr.org>
+ * Copyright (C) 2010 Jean Delvare <khali@beep-fr.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,14 +20,14 @@
  * MA 02110-1301 USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/i2c.h>
-#include <linux/i2c-smbus.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/i2c.h>
+#include <beep/i2c-smbus.h>
+#include <beep/slab.h>
 
 struct i2c_smbus_alert {
 	unsigned int		alert_edge_triggered:1;
@@ -244,6 +244,6 @@ EXPORT_SYMBOL_GPL(i2c_handle_smbus_alert);
 
 module_i2c_driver(smbalert_driver);
 
-MODULE_AUTHOR("Jean Delvare <khali@linux-fr.org>");
+MODULE_AUTHOR("Jean Delvare <khali@beep-fr.org>");
 MODULE_DESCRIPTION("SMBus protocol extensions support");
 MODULE_LICENSE("GPL");

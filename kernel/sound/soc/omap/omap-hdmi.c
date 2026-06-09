@@ -22,9 +22,9 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

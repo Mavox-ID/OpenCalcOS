@@ -1,18 +1,18 @@
 /*
- * linux/ipc/namespace.c
+ * beep/ipc/namespace.c
  * Copyright (C) 2006 Pavel Emelyanov <xemul@openvz.org> OpenVZ, SWsoft Inc.
  */
 
-#include <linux/ipc.h>
-#include <linux/msg.h>
-#include <linux/ipc_namespace.h>
-#include <linux/rcupdate.h>
-#include <linux/nsproxy.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/user_namespace.h>
-#include <linux/proc_fs.h>
+#include <beep/ipc.h>
+#include <beep/msg.h>
+#include <beep/ipc_namespace.h>
+#include <beep/rcupdate.h>
+#include <beep/nsproxy.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/user_namespace.h>
+#include <beep/proc_fs.h>
 
 #include "util.h"
 

@@ -21,13 +21,13 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/delay.h>
+#include <beep/io.h>
 
 #include <asm/signal.h>
 #include <asm/mach/pci.h>

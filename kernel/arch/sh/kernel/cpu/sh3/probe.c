@@ -11,7 +11,7 @@
  * for more details.
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/processor.h>
 #include <asm/cache.h>
 #include <asm/io.h>

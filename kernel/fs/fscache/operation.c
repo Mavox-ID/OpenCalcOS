@@ -12,9 +12,9 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL OPERATION
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
 #include "internal.h"
 
 atomic_t fscache_op_debug_id;

@@ -1,6 +1,6 @@
 /*
  *	common UDP/RAW code
- *	Linux INET6 implementation
+ *	Beep INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
@@ -11,18 +11,18 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/in6.h>
-#include <linux/ipv6.h>
-#include <linux/route.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/in6.h>
+#include <beep/ipv6.h>
+#include <beep/route.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #include <net/ipv6.h>
 #include <net/ndisc.h>
@@ -31,7 +31,7 @@
 #include <net/ip6_route.h>
 #include <net/tcp_states.h>
 
-#include <linux/errqueue.h>
+#include <beep/errqueue.h>
 #include <asm/uaccess.h>
 
 static bool ipv6_mapped_addr_any(const struct in6_addr *a)

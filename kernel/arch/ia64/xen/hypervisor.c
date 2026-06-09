@@ -1,8 +1,8 @@
 /******************************************************************************
  * arch/ia64/xen/hypervisor.c
  *
- * Copyright (c) 2006 Isaku Yamahata <yamahata at valinux co jp>
- *                    VA Linux Systems Japan K.K.
+ * Copyright (c) 2006 Isaku Yamahata <yamahata at vabeep co jp>
+ *                    VA Beep Systems Japan K.K.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,8 +20,8 @@
  *
  */
 
-#include <linux/efi.h>
-#include <linux/export.h>
+#include <beep/efi.h>
+#include <beep/export.h>
 #include <asm/xen/hypervisor.h>
 #include <asm/xen/privop.h>
 
@@ -92,6 +92,6 @@ xen_ia64_enable_opt_feature(void)
 	optf.cmd = XEN_IA64_OPTF_IDENT_MAP_REG7;
 	optf.on = XEN_IA64_OPTF_ON;
 	optf.pgprot = pgprot_val(PAGE_KERNEL);
-	optf.key = 0;	/* No key on linux. */
+	optf.key = 0;	/* No key on beep. */
 	HYPERVISOR_opt_feature(&optf);
 }

@@ -2,7 +2,7 @@
     MaxLinear MXL5005S VSB/QAM/DVBT tuner driver
 
     Copyright (C) 2008 MaxLinear
-    Copyright (C) 2008 Steven Toth <stoth@linuxtv.org>
+    Copyright (C) 2008 Steven Toth <stoth@beeptv.org>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -23,7 +23,7 @@
 #ifndef __MXL5005S_H
 #define __MXL5005S_H
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 #include "dvb_frontend.h"
 
 struct mxl5005s_config {

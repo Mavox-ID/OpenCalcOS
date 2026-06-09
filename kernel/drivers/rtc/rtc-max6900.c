@@ -11,11 +11,11 @@
  * or implied.
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/bcd.h>
+#include <beep/rtc.h>
+#include <beep/delay.h>
 
 #define DRV_VERSION "0.2"
 

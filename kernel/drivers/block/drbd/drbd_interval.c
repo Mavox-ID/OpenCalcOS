@@ -1,5 +1,5 @@
 #include <asm/bug.h>
-#include <linux/rbtree_augmented.h>
+#include <beep/rbtree_augmented.h>
 #include "drbd_interval.h"
 
 /**

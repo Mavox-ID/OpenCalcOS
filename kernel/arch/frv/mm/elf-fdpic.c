@@ -9,10 +9,10 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/elf-fdpic.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/elf-fdpic.h>
 #include <asm/mman.h>
 
 /*****************************************************************************/

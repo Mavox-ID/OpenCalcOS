@@ -1,5 +1,5 @@
 /*
- * smsc47m1.c - Part of lm_sensors, Linux kernel modules
+ * smsc47m1.c - Part of lm_sensors, Beep kernel modules
  *		for hardware monitoring
  *
  * Supports the SMSC LPC47B27x, LPC47M10x, LPC47M112, LPC47M13x,
@@ -7,8 +7,8 @@
  * Super-I/O chips.
  *
  * Copyright (C) 2002 Mark D. Studebaker <mdsxyz123@yahoo.com>
- * Copyright (C) 2004-2007 Jean Delvare <khali@linux-fr.org>
- * Ported to Linux 2.6 by Gabriele Gorla <gorlik@yahoo.com>
+ * Copyright (C) 2004-2007 Jean Delvare <khali@beep-fr.org>
+ * Ported to Beep 2.6 by Gabriele Gorla <gorlik@yahoo.com>
  *			and Jean Delvare
  *
  * This program is free software; you can redistribute it and/or modify
@@ -28,19 +28,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/ioport.h>
+#include <beep/jiffies.h>
+#include <beep/platform_device.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/sysfs.h>
+#include <beep/acpi.h>
+#include <beep/io.h>
 
 static unsigned short force_id;
 module_param(force_id, ushort, 0);

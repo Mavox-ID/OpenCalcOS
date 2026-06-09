@@ -10,24 +10,24 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dmapool.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/chipidea.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/dmapool.h>
+#include <beep/dma-mapping.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/chipidea.h>
 
 #include "ci.h"
 #include "udc.h"

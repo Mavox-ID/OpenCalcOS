@@ -1,8 +1,8 @@
 #ifndef _OMFS_H
 #define _OMFS_H
 
-#include <linux/module.h>
-#include <linux/fs.h>
+#include <beep/module.h>
+#include <beep/fs.h>
 
 #include "omfs_fs.h"
 

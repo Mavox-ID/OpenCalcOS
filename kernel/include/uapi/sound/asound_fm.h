@@ -2,7 +2,7 @@
 #define __SOUND_ASOUND_FM_H
 
 /*
- *  Advanced Linux Sound Architecture - ALSA
+ *  Advanced Beep Sound Architecture - ALSA
  *
  *  Interface file between ALSA driver & user space
  *  Copyright (c) 1994-98 by Jaroslav Kysela <perex@perex.cz>,

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-ebsa110/isamem.c
+ *  beep/arch/arm/mach-ebsa110/isamem.c
  *
  *  Copyright (C) 2001 Russell King
  *
@@ -20,10 +20,10 @@
  * Luckily, the work-around for this is not too horrible.  See
  * __isamem_convert_addr for the details.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <asm/page.h>

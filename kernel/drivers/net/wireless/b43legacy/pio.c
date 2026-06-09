@@ -28,8 +28,8 @@
 #include "main.h"
 #include "xmit.h"
 
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
 
 static void tx_start(struct b43legacy_pioqueue *queue)

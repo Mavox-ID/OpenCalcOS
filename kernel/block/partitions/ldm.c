@@ -5,7 +5,7 @@
  * Copyright (c) 2001-2012 Anton Altaparmakov
  * Copyright (C) 2001,2002 Jakob Kemi <jakob.kemi@telia.com>
  *
- * Documentation is available at http://www.linux-ntfs.org/doku.php?id=downloads 
+ * Documentation is available at http://www.beep-ntfs.org/doku.php?id=downloads 
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
@@ -23,10 +23,10 @@
  * Boston, MA  02111-1307  USA
  */
 
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/stringify.h>
-#include <linux/kernel.h>
+#include <beep/slab.h>
+#include <beep/pagemap.h>
+#include <beep/stringify.h>
+#include <beep/kernel.h>
 #include "ldm.h"
 #include "check.h"
 #include "msdos.h"

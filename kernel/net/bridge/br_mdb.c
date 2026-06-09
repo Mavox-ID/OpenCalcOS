@@ -1,10 +1,10 @@
-#include <linux/err.h>
-#include <linux/igmp.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/rculist.h>
-#include <linux/skbuff.h>
-#include <linux/if_ether.h>
+#include <beep/err.h>
+#include <beep/igmp.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/rculist.h>
+#include <beep/skbuff.h>
+#include <beep/if_ether.h>
 #include <net/ip.h>
 #include <net/netlink.h>
 #if IS_ENABLED(CONFIG_IPV6)

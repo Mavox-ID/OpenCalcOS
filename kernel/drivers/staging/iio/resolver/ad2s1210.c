@@ -8,18 +8,18 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/mutex.h>
+#include <beep/device.h>
+#include <beep/spi/spi.h>
+#include <beep/slab.h>
+#include <beep/sysfs.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
 #include "ad2s1210.h"
 
 #define DRV_NAME "ad2s1210"

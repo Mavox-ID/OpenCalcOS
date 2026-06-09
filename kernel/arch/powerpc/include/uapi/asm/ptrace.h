@@ -24,7 +24,7 @@
 #define _UAPI_ASM_POWERPC_PTRACE_H
 
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #ifndef __ASSEMBLY__
 
@@ -57,7 +57,7 @@ struct pt_regs {
 /*
  * Offsets used by 'ptrace' system call interface.
  * These can't be changed without breaking binary compatibility
- * with MkLinux, etc.
+ * with MkBeep, etc.
  */
 #define PT_R0	0
 #define PT_R1	1

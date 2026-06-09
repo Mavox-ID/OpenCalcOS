@@ -13,11 +13,11 @@
  *			initial version.
  */
 
-#include <linux/module.h>
-#include <linux/i2o.h>
-#include <linux/dcache.h>
-#include <linux/namei.h>
-#include <linux/fs.h>
+#include <beep/module.h>
+#include <beep/i2o.h>
+#include <beep/dcache.h>
+#include <beep/namei.h>
+#include <beep/fs.h>
 
 #include <asm/uaccess.h>
 

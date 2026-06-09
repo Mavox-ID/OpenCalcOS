@@ -1,9 +1,9 @@
-/* r128_cce.c -- ATI Rage 128 driver -*- linux-c -*-
+/* r128_cce.c -- ATI Rage 128 driver -*- beep-c -*-
  * Created: Wed Apr  5 19:24:19 2000 by kevin@precisioninsight.com
  */
 /*
  * Copyright 2000 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA Beep Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -26,13 +26,13 @@
  * DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Gareth Hughes <gareth@valinux.com>
+ *    Gareth Hughes <gareth@vabeep.com>
  */
 
-#include <linux/firmware.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/firmware.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include <drm/drmP.h>
 #include <drm/r128_drm.h>

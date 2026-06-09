@@ -9,7 +9,7 @@ KBUILD_DEFCONFIG := m32700ut.smp_defconfig
 
 LDFLAGS		:=
 OBJCOPYFLAGS	:= -O binary -R .note -R .comment -S
-LDFLAGS_vmlinux	:=
+LDFLAGS_vmbeep	:=
 
 KBUILD_CFLAGS += -pipe -fno-schedule-insns
 KBUILD_CFLAGS_KERNEL += -mmodel=medium
@@ -49,7 +49,7 @@ PHONY += zCalc
 
 all: zCalc
 
-zCalc: vmlinux
+zCalc: vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 compressed: zCalc

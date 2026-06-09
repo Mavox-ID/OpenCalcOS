@@ -24,11 +24,11 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
 #include <msp_regs.h>
 #include <msp_int.h>
 #include <msp_gpio_macros.h>

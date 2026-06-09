@@ -4,12 +4,12 @@
  * Clears the a test pte bit on random pages in the direct mapping,
  * then reverts and compares page tables forwards and afterwards.
  */
-#include <linux/bootmem.h>
-#include <linux/kthread.h>
-#include <linux/random.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
+#include <beep/bootmem.h>
+#include <beep/kthread.h>
+#include <beep/random.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/mm.h>
 
 #include <asm/cacheflush.h>
 #include <asm/pgtable.h>

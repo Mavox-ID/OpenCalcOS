@@ -1,6 +1,6 @@
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_eh.h>

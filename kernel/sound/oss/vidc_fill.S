@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/sound/vidc_fill.S
+ *  beep/drivers/sound/vidc_fill.S
  *
  *  Copyright (C) 1997 Russell King
  *
@@ -9,7 +9,7 @@
  *
  *  Filler routines for DMA buffers
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 #include <mach/hardware.h>
 #include <asm/hardware/iomd.h>

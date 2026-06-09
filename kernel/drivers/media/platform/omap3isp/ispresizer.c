@@ -24,9 +24,9 @@
  * 02110-1301 USA
  */
 
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/mm.h>
+#include <beep/module.h>
 
 #include "isp.h"
 #include "ispreg.h"

@@ -10,11 +10,11 @@
  * the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/gpio.h>
-#include <linux/cs5535.h>
+#include <beep/module.h>
+#include <beep/fb.h>
+#include <beep/backlight.h>
+#include <beep/gpio.h>
+#include <beep/cs5535.h>
 
 static struct cs5535_mfgpt_timer *pwm_timer;
 

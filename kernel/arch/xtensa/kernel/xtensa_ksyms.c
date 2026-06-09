@@ -12,12 +12,12 @@
  * Joe Taylor <joe@tensilica.com>
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
 #include <asm/irq.h>
-#include <linux/in6.h>
+#include <beep/in6.h>
 
 #include <asm/uaccess.h>
 #include <asm/checksum.h>

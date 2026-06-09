@@ -19,8 +19,8 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/time.h>
+#include <beep/delay.h>
+#include <beep/time.h>
 #include <sound/core.h>
 #include <sound/gus.h>
 

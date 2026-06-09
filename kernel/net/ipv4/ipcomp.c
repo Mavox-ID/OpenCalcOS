@@ -13,9 +13,9 @@
  *   - Compression stats.
  *   - Adaptive compression.
  */
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/rtnetlink.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/rtnetlink.h>
 #include <net/ip.h>
 #include <net/xfrm.h>
 #include <net/icmp.h>

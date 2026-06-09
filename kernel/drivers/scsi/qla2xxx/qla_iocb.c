@@ -7,8 +7,8 @@
 #include "qla_def.h"
 #include "qla_target.h"
 
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
 
 #include <scsi/scsi_tcq.h>
 

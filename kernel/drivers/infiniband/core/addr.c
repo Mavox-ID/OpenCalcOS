@@ -33,11 +33,11 @@
  * SOFTWARE.
  */
 
-#include <linux/mutex.h>
-#include <linux/inetdevice.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/module.h>
+#include <beep/mutex.h>
+#include <beep/inetdevice.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/module.h>
 #include <net/arp.h>
 #include <net/neighbour.h>
 #include <net/route.h>

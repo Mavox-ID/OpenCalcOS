@@ -1,7 +1,7 @@
-/* linux/include/asm-arm/plat-s3c24xx/regs-s3c2412-iis.h
+/* beep/include/asm-arm/plat-s3c24xx/regs-s3c2412-iis.h
  *
- * Copyright 2007 Simtec Electronics <linux@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ * Copyright 2007 Simtec Electronics <beep@simtec.co.uk>
+ *	http://armbeep.simtec.co.uk/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as

@@ -10,17 +10,17 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/syscore_ops.h>
-#include <linux/mutex.h>
-#include <linux/olpc-ec.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/string.h>
+#include <beep/platform_device.h>
+#include <beep/of.h>
+#include <beep/syscore_ops.h>
+#include <beep/mutex.h>
+#include <beep/olpc-ec.h>
 
 #include <asm/geode.h>
 #include <asm/setup.h>

@@ -2380,9 +2380,9 @@ sub process {
 # 			$clean = 0;
 # 		}
 
-		if ($line =~ /\bLINUX_VERSION_CODE\b/) {
-			WARN("LINUX_VERSION_CODE",
-			     "LINUX_VERSION_CODE should be avoided, code should be for the version to which it is merged\n" . $herecurr);
+		if ($line =~ /\bBEEP_VERSION_CODE\b/) {
+			WARN("BEEP_VERSION_CODE",
+			     "BEEP_VERSION_CODE should be avoided, code should be for the version to which it is merged\n" . $herecurr);
 		}
 
 # check for uses of printk_ratelimit
@@ -2928,20 +2928,20 @@ sub process {
 			     "Whitepspace after \\ makes next lines useless\n" . $herecurr);
 		}
 
-#warn if <asm/foo.h> is #included and <linux/foo.h> is available (uses RAW line)
+#warn if <asm/foo.h> is #included and <beep/foo.h> is available (uses RAW line)
 		if ($tree && $rawline =~ m{^.\s*\#\s*include\s*\<asm\/(.*)\.h\>}) {
 			my $file = "$1.h";
-			my $checkfile = "include/linux/$file";
+			my $checkfile = "include/beep/$file";
 			if (-f "$root/$checkfile" &&
 			    $realfile ne $checkfile &&
 			    $1 !~ /$allowed_asm_includes/)
 			{
 				if ($realfile =~ m{^arch/}) {
-					CHK("ARCH_INCLUDE_LINUX",
-					    "Consider using #include <linux/$file> instead of <asm/$file>\n" . $herecurr);
+					CHK("ARCH_INCLUDE_BEEP",
+					    "Consider using #include <beep/$file> instead of <asm/$file>\n" . $herecurr);
 				} else {
-					WARN("INCLUDE_LINUX",
-					     "Use #include <linux/$file> instead of <asm/$file>\n" . $herecurr);
+					WARN("INCLUDE_BEEP",
+					     "Use #include <beep/$file> instead of <asm/$file>\n" . $herecurr);
 				}
 			}
 		}
@@ -2949,7 +2949,7 @@ sub process {
 # multi-statement macros should be enclosed in a do while loop, grab the
 # first statement and ensure its the whole macro if its not enclosed
 # in a known good container
-		if ($realfile !~ m@/vmlinux.lds.h$@ &&
+		if ($realfile !~ m@/vmbeep.lds.h$@ &&
 		    $line =~ /^.\s*\#\s*define\s*$Ident(\()?/) {
 			my $ln = $linenr;
 			my $cnt = $realcnt;
@@ -3039,7 +3039,7 @@ sub process {
 # single-statement macros do not need to be enclosed in do while (0) loop,
 # macro should not end with a semicolon
 		if ($^V && $^V ge 5.10.0 &&
-		    $realfile !~ m@/vmlinux.lds.h$@ &&
+		    $realfile !~ m@/vmbeep.lds.h$@ &&
 		    $line =~ /^.\s*\#\s*define\s+$Ident(\()?/) {
 			my $ln = $linenr;
 			my $cnt = $realcnt;
@@ -3075,14 +3075,14 @@ sub process {
 			}
 		}
 
-# make sure symbols are always wrapped with VMLINUX_SYMBOL() ...
+# make sure symbols are always wrapped with VMBEEP_SYMBOL() ...
 # all assignments may have only one of the following with an assignment:
 #	.
 #	ALIGN(...)
-#	VMLINUX_SYMBOL(...)
-		if ($realfile eq 'vmlinux.lds.h' && $line =~ /(?:(?:^|\s)$Ident\s*=|=\s*$Ident(?:\s|$))/) {
-			WARN("MISSING_VMLINUX_SYMBOL",
-			     "vmlinux.lds.h needs VMLINUX_SYMBOL() around C-visible symbols\n" . $herecurr);
+#	VMBEEP_SYMBOL(...)
+		if ($realfile eq 'vmbeep.lds.h' && $line =~ /(?:(?:^|\s)$Ident\s*=|=\s*$Ident(?:\s|$))/) {
+			WARN("MISSING_VMBEEP_SYMBOL",
+			     "vmbeep.lds.h needs VMBEEP_SYMBOL() around C-visible symbols\n" . $herecurr);
 		}
 
 # check for redundant bracing round if etc
@@ -3595,7 +3595,7 @@ sub process {
 		if ($line =~ /^.\s*lockdep_set_novalidate_class\s*\(/ ||
 		    $line =~ /__lockdep_no_validate__\s*\)/ ) {
 			if ($realfile !~ m@^kernel/lockdep@ &&
-			    $realfile !~ m@^include/linux/lockdep@ &&
+			    $realfile !~ m@^include/beep/lockdep@ &&
 			    $realfile !~ m@^drivers/base/core@) {
 				ERROR("LOCKDEP",
 				      "lockdep_no_validate class is reserved for device->mutex.\n" . $herecurr);

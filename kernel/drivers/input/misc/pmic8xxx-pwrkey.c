@@ -10,18 +10,18 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/log2.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/log2.h>
 
-#include <linux/mfd/pm8xxx/core.h>
-#include <linux/input/pmic8xxx-pwrkey.h>
+#include <beep/mfd/pm8xxx/core.h>
+#include <beep/input/pmic8xxx-pwrkey.h>
 
 #define PON_CNTL_1 0x1C
 #define PON_CNTL_PULL_UP BIT(7)

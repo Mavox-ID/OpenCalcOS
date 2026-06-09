@@ -2,7 +2,7 @@
 #define _ASM_MATH_EMU_H
 
 #include <asm/setup.h>
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 /* Status Register bits */
 
@@ -68,8 +68,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
 
 union fp_mant64 {
 	unsigned long long m64;

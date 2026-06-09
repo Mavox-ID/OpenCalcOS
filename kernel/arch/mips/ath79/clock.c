@@ -11,11 +11,11 @@
  *  by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/clk.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/clk.h>
 
 #include <asm/div64.h>
 
@@ -323,7 +323,7 @@ void __init ath79_clocks_init(void)
 }
 
 /*
- * Linux clock API
+ * Beep clock API
  */
 struct clk *clk_get(struct device *dev, const char *id)
 {

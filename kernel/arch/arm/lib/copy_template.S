@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/lib/copy_template.s
+ *  beep/arch/arm/lib/copy_template.s
  *
  *  Code template for optimized memory copy functions
  *

@@ -1,6 +1,6 @@
 /*******************************************************************************
  *
- *  Linux ThunderLAN Driver
+ *  Beep ThunderLAN Driver
  *
  *  tlan.c
  *  by James Banks
@@ -29,20 +29,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/hardirq.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/eisa.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/mii.h>
+#include <beep/hardirq.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/eisa.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/mii.h>
 
 #include "tlan.h"
 
@@ -275,7 +275,7 @@ tlan_set_timer(struct net_device *dev, u32 ticks, u32 type)
 
 ThunderLAN driver primary functions
 
-these functions are more or less common to all linux network drivers.
+these functions are more or less common to all beep network drivers.
 
 ******************************************************************************
 *****************************************************************************/

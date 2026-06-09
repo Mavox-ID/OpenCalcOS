@@ -14,23 +14,23 @@
  * This code maintains the "home" for each page in the system.
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/bootmem.h>
-#include <linux/rmap.h>
-#include <linux/pagemap.h>
-#include <linux/mutex.h>
-#include <linux/interrupt.h>
-#include <linux/sysctl.h>
-#include <linux/pagevec.h>
-#include <linux/ptrace.h>
-#include <linux/timex.h>
-#include <linux/cache.h>
-#include <linux/smp.h>
-#include <linux/module.h>
-#include <linux/hugetlb.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
+#include <beep/bootmem.h>
+#include <beep/rmap.h>
+#include <beep/pagemap.h>
+#include <beep/mutex.h>
+#include <beep/interrupt.h>
+#include <beep/sysctl.h>
+#include <beep/pagevec.h>
+#include <beep/ptrace.h>
+#include <beep/timex.h>
+#include <beep/cache.h>
+#include <beep/smp.h>
+#include <beep/module.h>
+#include <beep/hugetlb.h>
 
 #include <asm/page.h>
 #include <asm/sections.h>
@@ -102,7 +102,7 @@ static void hv_flush_update(const struct cpumask *cache_cpumask,
  *  - Provides a return value error-checking panic path, since
  *    there's never any good reason for hv_flush_remote() to fail.
  *  - Accepts a 32-bit PFN rather than a 64-bit PA, which generally
- *    is the type that Linux wants to pass around anyway.
+ *    is the type that Beep wants to pass around anyway.
  *  - Canonicalizes that lengths of zero make cpumasks NULL.
  *  - Handles deferring TLB flushes for dataplane tiles.
  *  - Tracks remote interrupts in the per-cpu irq_cpustat_t.

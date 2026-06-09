@@ -7,13 +7,13 @@
  *
  * Jeremy Fitzhardinge <jeremy@xensource.com>, XenSource Inc, 2007
  */
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/kernel_stat.h>
-#include <linux/math64.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/kernel_stat.h>
+#include <beep/math64.h>
+#include <beep/gfp.h>
 
 #include <asm/pvclock.h>
 #include <asm/xen/hypervisor.h>

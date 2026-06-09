@@ -1,7 +1,7 @@
 /*
- *  Implementation of various system calls for Linux/PowerPC
+ *  Implementation of various system calls for Beep/PowerPC
  *
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  * Derived from "arch/i386/kernel/sys_i386.c"
  * Adapted from the i386 version by Gary Thomas
@@ -9,7 +9,7 @@
  * and Paul Mackerras (paulus@cs.anu.edu.au).
  *
  * This file contains various random system calls that
- * have a non-standard calling sequence on the Linux/PPC
+ * have a non-standard calling sequence on the Beep/PPC
  * platform.
  *
  *  This program is free software; you can redistribute it and/or
@@ -19,23 +19,23 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/syscalls.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/mman.h>
-#include <linux/sys.h>
-#include <linux/ipc.h>
-#include <linux/utsname.h>
-#include <linux/file.h>
-#include <linux/init.h>
-#include <linux/personality.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/syscalls.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/smp.h>
+#include <beep/sem.h>
+#include <beep/msg.h>
+#include <beep/shm.h>
+#include <beep/stat.h>
+#include <beep/mman.h>
+#include <beep/sys.h>
+#include <beep/ipc.h>
+#include <beep/utsname.h>
+#include <beep/file.h>
+#include <beep/init.h>
+#include <beep/personality.h>
 
 #include <asm/uaccess.h>
 #include <asm/syscalls.h>
@@ -106,12 +106,12 @@ long ppc64_personality(unsigned long personality)
 {
 	long ret;
 
-	if (personality(current->personality) == PER_LINUX32
-	    && personality(personality) == PER_LINUX)
-		personality = (personality & ~PER_MASK) | PER_LINUX32;
+	if (personality(current->personality) == PER_BEEP32
+	    && personality(personality) == PER_BEEP)
+		personality = (personality & ~PER_MASK) | PER_BEEP32;
 	ret = sys_personality(personality);
-	if (personality(ret) == PER_LINUX32)
-		ret = (ret & ~PER_MASK) | PER_LINUX;
+	if (personality(ret) == PER_BEEP32)
+		ret = (ret & ~PER_MASK) | PER_BEEP;
 	return ret;
 }
 #endif

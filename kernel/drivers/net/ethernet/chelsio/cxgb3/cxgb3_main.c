@@ -29,24 +29,24 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/mdio.h>
-#include <linux/sockios.h>
-#include <linux/workqueue.h>
-#include <linux/proc_fs.h>
-#include <linux/rtnetlink.h>
-#include <linux/firmware.h>
-#include <linux/log2.h>
-#include <linux/stringify.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/if_vlan.h>
+#include <beep/mdio.h>
+#include <beep/sockios.h>
+#include <beep/workqueue.h>
+#include <beep/proc_fs.h>
+#include <beep/rtnetlink.h>
+#include <beep/firmware.h>
+#include <beep/log2.h>
+#include <beep/stringify.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 
 #include "common.h"

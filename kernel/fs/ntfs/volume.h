@@ -1,6 +1,6 @@
 /*
- * volume.h - Defines for volume structures in NTFS Linux kernel driver. Part
- *	      of the Linux-NTFS project.
+ * volume.h - Defines for volume structures in NTFS Beep kernel driver. Part
+ *	      of the Beep-NTFS project.
  *
  * Copyright (c) 2001-2006 Anton Altaparmakov
  * Copyright (c) 2002 Richard Russon
@@ -16,16 +16,16 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#ifndef _LINUX_NTFS_VOLUME_H
-#define _LINUX_NTFS_VOLUME_H
+#ifndef _BEEP_NTFS_VOLUME_H
+#define _BEEP_NTFS_VOLUME_H
 
-#include <linux/rwsem.h>
-#include <linux/uidgid.h>
+#include <beep/rwsem.h>
+#include <beep/uidgid.h>
 
 #include "types.h"
 #include "layout.h"
@@ -175,4 +175,4 @@ DEFINE_NVOL_BIT_OPS(QuotaOutOfDate)
 DEFINE_NVOL_BIT_OPS(UsnJrnlStamped)
 DEFINE_NVOL_BIT_OPS(SparseEnabled)
 
-#endif /* _LINUX_NTFS_VOLUME_H */
+#endif /* _BEEP_NTFS_VOLUME_H */

@@ -38,7 +38,7 @@
   1. Configure your memory controller (the best)
   2. Implement platform-specific delay function possibly
   combined with configuring the memory controller; see
-  include/linux/usb-isp116x.h for more info. Some broken
+  include/beep/usb-isp116x.h for more info. Some broken
   memory controllers line LH7A400 SMC need this. Also,
   uncomment for that to work the following
   USE_PLATFORM_DELAY macro.
@@ -55,18 +55,18 @@
 /* enqueuing/finishing log of urbs */
 //#define URB_TRACE
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/isp116x.h>
-#include <linux/usb/hcd.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/usb/isp116x.h>
+#include <beep/usb/hcd.h>
+#include <beep/platform_device.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

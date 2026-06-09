@@ -15,7 +15,7 @@
 #ifndef _ASM_TILE_PAGE_H
 #define _ASM_TILE_PAGE_H
 
-#include <linux/const.h>
+#include <beep/const.h>
 #include <hv/hypervisor.h>
 #include <arch/chip.h>
 
@@ -41,7 +41,7 @@
 /*
  * If the Kconfig doesn't specify, set a maximum zone order that
  * is enough so that we can create huge pages from small pages given
- * the respective sizes of the two page types.  See <linux/mmzone.h>.
+ * the respective sizes of the two page types.  See <beep/mmzone.h>.
  */
 #ifndef CONFIG_FORCE_MAX_ZONEORDER
 #define CONFIG_FORCE_MAX_ZONEORDER (HPAGE_SHIFT - PAGE_SHIFT + 1)
@@ -49,8 +49,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
-#include <linux/string.h>
+#include <beep/types.h>
+#include <beep/string.h>
 
 struct page;
 
@@ -196,7 +196,7 @@ static inline __attribute_const__ int get_order(unsigned long size)
  * If you want more physical memory than this then see the CONFIG_HIGHMEM
  * option in the kernel configuration.
  *
- * The top 16MB chunk in the table below is unavailable to Linux.  Since
+ * The top 16MB chunk in the table below is unavailable to Beep.  Since
  * the kernel interrupt vectors must live at ether 0xfe000000 or 0xfd000000
  * (depending on whether the kernel is at PL2 or Pl1), we map all of the
  * bottom of RAM at this address with a huge page table entry to minimize
@@ -281,7 +281,7 @@ static inline void *phys_to_virt(phys_addr_t paddr)
 /* With HIGHMEM, we pack PAGE_OFFSET through high_memory with all valid VAs. */
 static inline int virt_addr_valid(const volatile void *kaddr)
 {
-	extern void *high_memory;  /* copied from <linux/mm.h> */
+	extern void *high_memory;  /* copied from <beep/mm.h> */
 	return ((unsigned long)kaddr >= PAGE_OFFSET && kaddr < high_memory);
 }
 

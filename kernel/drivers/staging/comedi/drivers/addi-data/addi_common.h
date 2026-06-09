@@ -15,8 +15,8 @@
  * any later version.
  */
 
-#include <linux/sched.h>
-#include <linux/interrupt.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
 
 #define LOBYTE(W)	(unsigned char)((W) & 0xFF)
 #define HIBYTE(W)	(unsigned char)(((W) >> 8) & 0xFF)

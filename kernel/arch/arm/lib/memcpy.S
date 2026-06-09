@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/lib/memcpy.S
+ *  beep/arch/arm/lib/memcpy.S
  *
  *  Author:	Nicolas Pitre
  *  Created:	Sep 28, 2005
@@ -10,7 +10,7 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 
 #define LDR1W_SHIFT	0

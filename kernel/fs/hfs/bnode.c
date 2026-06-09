@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfs/bnode.c
+ *  beep/fs/hfs/bnode.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -8,9 +8,9 @@
  * Handle basic btree node operations
  */
 
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
+#include <beep/pagemap.h>
+#include <beep/slab.h>
+#include <beep/swap.h>
 
 #include "btree.h"
 

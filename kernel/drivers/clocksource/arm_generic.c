@@ -17,17 +17,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/clockchips.h>
-#include <linux/of_irq.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/smp.h>
+#include <beep/cpu.h>
+#include <beep/jiffies.h>
+#include <beep/interrupt.h>
+#include <beep/clockchips.h>
+#include <beep/of_irq.h>
+#include <beep/io.h>
 
 #include <clocksource/arm_generic.h>
 

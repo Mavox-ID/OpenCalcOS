@@ -8,11 +8,11 @@
  * Copyright (c) Matthew Wilcox 2003
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
 
 static int sock_no_open(struct inode *irrelevant, struct file *dontcare)
 {

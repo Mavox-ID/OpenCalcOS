@@ -29,13 +29,13 @@
 #ifndef _SHPCHP_H
 #define _SHPCHP_H
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/delay.h>
-#include <linux/sched.h>	/* signal_pending(), struct timer_list */
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/pci_hotplug.h>
+#include <beep/delay.h>
+#include <beep/sched.h>	/* signal_pending(), struct timer_list */
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
 
 #if !defined(MODULE)
 	#define MY_NAME	"shpchp"
@@ -188,7 +188,7 @@ static inline const char *slot_name(struct slot *slot)
 }
 
 #ifdef CONFIG_ACPI
-#include <linux/pci-acpi.h>
+#include <beep/pci-acpi.h>
 static inline int get_hp_hw_control_from_firmware(struct pci_dev *dev)
 {
 	u32 flags = OSC_SHPC_NATIVE_HP_CONTROL;

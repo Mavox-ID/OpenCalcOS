@@ -7,12 +7,12 @@
  *		Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/hardirq.h>
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/kprobes.h>
+#include <beep/hardirq.h>
+#include <beep/uaccess.h>
+#include <beep/ftrace.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/kprobes.h>
 #include <trace/syscall.h>
 #include <asm/asm-offsets.h>
 

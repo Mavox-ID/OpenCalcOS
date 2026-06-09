@@ -6,9 +6,9 @@
  *	Original code comment copied from the i386 version of this file
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/crash_dump.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/crash_dump.h>
 
 #include <asm/page.h>
 #include <asm/uaccess.h>

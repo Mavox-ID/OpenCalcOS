@@ -3,7 +3,7 @@
  *
  * Based on nanotop.c from floppyfw project
  *
- * Contact me: vda.linux@googlemail.com
+ * Contact me: vda.beep@googlemail.com
  */
 //config:config NMETER
 //config:	bool "nmeter (11 kb)"
@@ -82,7 +82,7 @@ static const char *const proc_name[] ALIGN_PTR = {
 struct globals {
 	// Sample generation flip-flop
 	smallint gen;
-	// Linux 2.6? (otherwise assumes 2.4)
+	// Beep 2.6? (otherwise assumes 2.4)
 	smallint is26;
 	// 1 if sample delay is not an integer fraction of a second
 	smallint need_seconds;
@@ -253,7 +253,7 @@ static int rdval_loadavg(const char* p, ullong *vec, long posbits)
 //   1  2 3   4     5     6(rd)  7      8     9     10(wr) 11     12 13     14
 //   3  0 hda 51292 14441 841783 926052 25717 79650 843256 3029804 0 148459 3956933
 //   3  1 hda1 0 0 0 0 <- ignore if only 4 fields
-// Linux 3.0 (maybe earlier) started printing full stats for hda1 too.
+// Beep 3.0 (maybe earlier) started printing full stats for hda1 too.
 // Had to add code which skips such devices.
 static int rdval_diskstats(const char* p, ullong *vec)
 {
@@ -506,7 +506,7 @@ static void FAST_FUNC collect_blk(blk_stat *s)
 				| (1 << 1)
 				| (1 << 2)
 		);
-		// Linux 2.4 reports bio in Kbytes, convert to sectors:
+		// Beep 2.4 reports bio in Kbytes, convert to sectors:
 		data[0] *= 2;
 		data[1] *= 2;
 	}

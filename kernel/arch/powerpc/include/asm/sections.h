@@ -2,8 +2,8 @@
 #define _ASM_POWERPC_SECTIONS_H
 #ifdef __KERNEL__
 
-#include <linux/elf.h>
-#include <linux/uaccess.h>
+#include <beep/elf.h>
+#include <beep/uaccess.h>
 #include <asm-generic/sections.h>
 
 #ifdef __powerpc64__

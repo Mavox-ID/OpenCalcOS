@@ -39,20 +39,20 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/can.h>
-#include <linux/can/core.h>
-#include <linux/can/gw.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/rcupdate.h>
+#include <beep/rculist.h>
+#include <beep/net.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/skbuff.h>
+#include <beep/can.h>
+#include <beep/can/core.h>
+#include <beep/can/gw.h>
 #include <net/rtnetlink.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>

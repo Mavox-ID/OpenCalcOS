@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/mm/proc-macros.S
+ * beep/arch/unicore32/mm/proc-macros.S
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *

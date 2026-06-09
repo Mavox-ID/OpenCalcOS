@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/mac/config.c
+ *  beep/arch/m68k/mac/config.c
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file COPYING in the main directory of this archive
@@ -7,24 +7,24 @@
  */
 
 /*
- * Miscellaneous linux stuff
+ * Miscellaneous beep stuff
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/tty.h>
+#include <beep/console.h>
+#include <beep/interrupt.h>
 /* keyb */
-#include <linux/random.h>
-#include <linux/delay.h>
+#include <beep/random.h>
+#include <beep/delay.h>
 /* keyb */
-#include <linux/init.h>
-#include <linux/vt_kern.h>
-#include <linux/platform_device.h>
-#include <linux/adb.h>
-#include <linux/cuda.h>
+#include <beep/init.h>
+#include <beep/vt_kern.h>
+#include <beep/platform_device.h>
+#include <beep/adb.h>
+#include <beep/cuda.h>
 
 #define BOOTINFO_COMPAT_1_0
 #include <asm/setup.h>

@@ -12,20 +12,20 @@
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/ratelimit.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/spi/spi.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/dma-mapping.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/ratelimit.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/input.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/spi/spi.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach-types.h>

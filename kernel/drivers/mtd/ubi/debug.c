@@ -19,9 +19,9 @@
  */
 
 #include "ubi.h"
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
 
 
 /**

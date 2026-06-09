@@ -8,7 +8,7 @@
 #ifndef _TMSCSIM_H
 #define _TMSCSIM_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define SCSI_IRQ_NONE 255
 

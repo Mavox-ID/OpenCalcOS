@@ -44,20 +44,20 @@
  *      Erez Zilber
  */
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/hardirq.h>
-#include <linux/kfifo.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/ioctl.h>
-#include <linux/cdev.h>
-#include <linux/in.h>
-#include <linux/net.h>
-#include <linux/scatterlist.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/hardirq.h>
+#include <beep/kfifo.h>
+#include <beep/blkdev.h>
+#include <beep/init.h>
+#include <beep/ioctl.h>
+#include <beep/cdev.h>
+#include <beep/in.h>
+#include <beep/net.h>
+#include <beep/scatterlist.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include <net/sock.h>
 

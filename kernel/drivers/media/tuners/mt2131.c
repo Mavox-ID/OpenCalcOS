@@ -1,7 +1,7 @@
 /*
  *  Driver for Microtune MT2131 "QAM/8VSB single chip tuner"
  *
- *  Copyright (c) 2006 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2006 Steven Toth <stoth@beeptv.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -19,11 +19,11 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/dvb/frontend.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/dvb/frontend.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
 
 #include "dvb_frontend.h"
 

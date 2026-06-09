@@ -1,20 +1,20 @@
 #define pr_fmt(fmt)  "irq: " fmt
 
-#include <linux/debugfs.h>
-#include <linux/hardirq.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdesc.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/topology.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/fs.h>
+#include <beep/debugfs.h>
+#include <beep/hardirq.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/irqdesc.h>
+#include <beep/irqdomain.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/topology.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/smp.h>
+#include <beep/fs.h>
 
 #define IRQ_DOMAIN_MAP_LEGACY 0 /* driver allocated fixed range of irqs.
 				 * ie. legacy 8259, gets irqs 1..15 */
@@ -500,7 +500,7 @@ EXPORT_SYMBOL_GPL(irq_domain_associate_many);
  *
  * This routine is used for irq controllers which can choose the hardware
  * interrupt numbers they generate. In such a case it's simplest to use
- * the linux irq as the hardware interrupt number.
+ * the beep irq as the hardware interrupt number.
  */
 unsigned int irq_create_direct_mapping(struct irq_domain *domain)
 {
@@ -535,11 +535,11 @@ unsigned int irq_create_direct_mapping(struct irq_domain *domain)
 EXPORT_SYMBOL_GPL(irq_create_direct_mapping);
 
 /**
- * irq_create_mapping() - Map a hardware interrupt into linux irq space
+ * irq_create_mapping() - Map a hardware interrupt into beep irq space
  * @domain: domain owning this hardware interrupt or NULL for default domain
  * @hwirq: hardware irq number in that domain space
  *
- * Only one mapping per hardware interrupt is permitted. Returns a linux
+ * Only one mapping per hardware interrupt is permitted. Returns a beep
  * irq number.
  * If the sense/trigger is to be specified, set_irq_type() should be called
  * on the number returned from that call.
@@ -599,14 +599,14 @@ unsigned int irq_create_mapping(struct irq_domain *domain,
 EXPORT_SYMBOL_GPL(irq_create_mapping);
 
 /**
- * irq_create_strict_mappings() - Map a range of hw irqs to fixed linux irqs
+ * irq_create_strict_mappings() - Map a range of hw irqs to fixed beep irqs
  * @domain: domain owning the interrupt range
- * @irq_base: beginning of linux IRQ range
+ * @irq_base: beginning of beep IRQ range
  * @hwirq_base: beginning of hardware IRQ range
  * @count: Number of interrupts to map
  *
  * This routine is used for allocating and mapping a range of hardware
- * irqs to linux irqs where the linux irq numbers are at pre-defined
+ * irqs to beep irqs where the beep irq numbers are at pre-defined
  * locations. For use by controllers that already have static mappings
  * to insert in to the domain.
  *
@@ -652,7 +652,7 @@ unsigned int irq_create_of_mapping(struct device_node *controller,
 		 * that don't yet register an irq_domain.  This is temporary
 		 * code. ~~~gcl, Feb 24, 2012
 		 *
-		 * Scheduled for removal in Linux v3.6.  That should be enough
+		 * Scheduled for removal in Beep v3.6.  That should be enough
 		 * time.
 		 */
 		if (intsize > 0)
@@ -687,7 +687,7 @@ EXPORT_SYMBOL_GPL(irq_create_of_mapping);
 
 /**
  * irq_dispose_mapping() - Unmap an interrupt
- * @virq: linux irq number of the interrupt to unmap
+ * @virq: beep irq number of the interrupt to unmap
  */
 void irq_dispose_mapping(unsigned int virq)
 {
@@ -711,7 +711,7 @@ void irq_dispose_mapping(unsigned int virq)
 EXPORT_SYMBOL_GPL(irq_dispose_mapping);
 
 /**
- * irq_find_mapping() - Find a linux irq from an hw irq number.
+ * irq_find_mapping() - Find a beep irq from an hw irq number.
  * @domain: domain owning this hardware interrupt
  * @hwirq: hardware irq number in that domain space
  */
@@ -750,7 +750,7 @@ unsigned int irq_find_mapping(struct irq_domain *domain,
 EXPORT_SYMBOL_GPL(irq_find_mapping);
 
 /**
- * irq_linear_revmap() - Find a linux irq from a hw irq number.
+ * irq_linear_revmap() - Find a beep irq from a hw irq number.
  * @domain: domain owning this hardware interrupt
  * @hwirq: hardware irq number in that domain space
  *
@@ -866,7 +866,7 @@ EXPORT_SYMBOL_GPL(irq_domain_xlate_onecell);
  *
  * Device Tree IRQ specifier translation function which works with two cell
  * bindings where the cell values map directly to the hwirq number
- * and linux irq flags.
+ * and beep irq flags.
  */
 int irq_domain_xlate_twocell(struct irq_domain *d, struct device_node *ctrlr,
 			const u32 *intspec, unsigned int intsize,
@@ -885,7 +885,7 @@ EXPORT_SYMBOL_GPL(irq_domain_xlate_twocell);
  *
  * Device Tree IRQ specifier translation function which works with either one
  * or two cell bindings where the cell values map directly to the hwirq number
- * and linux irq flags.
+ * and beep irq flags.
  *
  * Note: don't use this function unless your interrupt controller explicitly
  * supports both one and two cell bindings.  For the majority of controllers

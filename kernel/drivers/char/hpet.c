@@ -11,37 +11,37 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/miscdevice.h>
-#include <linux/major.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/spinlock.h>
-#include <linux/sysctl.h>
-#include <linux/wait.h>
-#include <linux/bcd.h>
-#include <linux/seq_file.h>
-#include <linux/bitops.h>
-#include <linux/compat.h>
-#include <linux/clocksource.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/miscdevice.h>
+#include <beep/major.h>
+#include <beep/ioport.h>
+#include <beep/fcntl.h>
+#include <beep/init.h>
+#include <beep/poll.h>
+#include <beep/mm.h>
+#include <beep/proc_fs.h>
+#include <beep/spinlock.h>
+#include <beep/sysctl.h>
+#include <beep/wait.h>
+#include <beep/bcd.h>
+#include <beep/seq_file.h>
+#include <beep/bitops.h>
+#include <beep/compat.h>
+#include <beep/clocksource.h>
+#include <beep/uaccess.h>
+#include <beep/slab.h>
+#include <beep/io.h>
 
 #include <asm/current.h>
 #include <asm/irq.h>
 #include <asm/div64.h>
 
-#include <linux/acpi.h>
+#include <beep/acpi.h>
 #include <acpi/acpi_bus.h>
-#include <linux/hpet.h>
+#include <beep/hpet.h>
 
 /*
  * The High Precision Event Timer driver.

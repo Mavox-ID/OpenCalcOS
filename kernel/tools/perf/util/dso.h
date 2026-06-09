@@ -2,15 +2,15 @@
 #define __PERF_DSO
 
 #include <linux/types.h>
-#include <linux/rbtree.h>
+#include <beep/rbtree.h>
 #include "types.h"
 #include "map.h"
 
 enum dso_binary_type {
 	DSO_BINARY_TYPE__KALLSYMS = 0,
 	DSO_BINARY_TYPE__GUEST_KALLSYMS,
-	DSO_BINARY_TYPE__VMLINUX,
-	DSO_BINARY_TYPE__GUEST_VMLINUX,
+	DSO_BINARY_TYPE__VMBEEP,
+	DSO_BINARY_TYPE__GUEST_VMBEEP,
 	DSO_BINARY_TYPE__JAVA_JIT,
 	DSO_BINARY_TYPE__DEBUGLINK,
 	DSO_BINARY_TYPE__BUILD_ID_CACHE,

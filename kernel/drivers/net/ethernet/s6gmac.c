@@ -9,20 +9,20 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if.h>
-#include <linux/stddef.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/if.h>
+#include <beep/stddef.h>
+#include <beep/mii.h>
+#include <beep/phy.h>
+#include <beep/platform_device.h>
 #include <variant/hardware.h>
 #include <variant/dmac.h>
 

@@ -7,9 +7,9 @@
  * devices may be working.
  */
 
-#include <linux/resume-trace.h>
-#include <linux/export.h>
-#include <linux/rtc.h>
+#include <beep/resume-trace.h>
+#include <beep/export.h>
+#include <beep/rtc.h>
 
 #include <asm/rtc.h>
 

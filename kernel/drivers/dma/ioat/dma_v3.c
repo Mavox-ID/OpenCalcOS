@@ -56,11 +56,11 @@
  * Support routines for v3+ hardware
  */
 
-#include <linux/pci.h>
-#include <linux/gfp.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/prefetch.h>
+#include <beep/pci.h>
+#include <beep/gfp.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/prefetch.h>
 #include "../dmaengine.h"
 #include "registers.h"
 #include "hw.h"
@@ -672,7 +672,7 @@ __ioat3_prep_pq_lock(struct dma_chan *c, enum sum_check_flags *result,
 		for (s = 0; s < src_cnt; s++)
 			pq_set_src(descs, src[s], offset, scf[s], s);
 
-		/* see the comment for dma_maxpq in include/linux/dmaengine.h */
+		/* see the comment for dma_maxpq in include/beep/dmaengine.h */
 		if (dmaf_p_disabled_continue(flags))
 			pq_set_src(descs, dst[1], offset, 1, s++);
 		else if (dmaf_continue(flags)) {

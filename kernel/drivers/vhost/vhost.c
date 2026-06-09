@@ -11,20 +11,20 @@
  * Generic code for virtio server in host kernel.
  */
 
-#include <linux/eventfd.h>
-#include <linux/vhost.h>
-#include <linux/virtio_net.h>
-#include <linux/mm.h>
-#include <linux/mmu_context.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
-#include <linux/poll.h>
-#include <linux/file.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/cgroup.h>
+#include <beep/eventfd.h>
+#include <beep/vhost.h>
+#include <beep/virtio_net.h>
+#include <beep/mm.h>
+#include <beep/mmu_context.h>
+#include <beep/miscdevice.h>
+#include <beep/mutex.h>
+#include <beep/rcupdate.h>
+#include <beep/poll.h>
+#include <beep/file.h>
+#include <beep/highmem.h>
+#include <beep/slab.h>
+#include <beep/kthread.h>
+#include <beep/cgroup.h>
 
 #include "vhost.h"
 

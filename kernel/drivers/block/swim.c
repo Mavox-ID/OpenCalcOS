@@ -16,15 +16,15 @@
  * 2008-10-30 (lv) - Port to 2.6
  */
 
-#include <linux/module.h>
-#include <linux/fd.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/mutex.h>
-#include <linux/hdreg.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/fd.h>
+#include <beep/slab.h>
+#include <beep/blkdev.h>
+#include <beep/mutex.h>
+#include <beep/hdreg.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
 
 #include <asm/mac_via.h>
 

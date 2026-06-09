@@ -12,12 +12,12 @@
 
 #undef DEBUG
 
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
-#include <linux/export.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/of_platform.h>
+#include <beep/of_gpio.h>
+#include <beep/export.h>
 #include <asm/io.h>
 #include <asm/prom.h>
 #include <asm/mpc52xx.h>
@@ -51,7 +51,7 @@ static struct mpc52xx_gpt __iomem *mpc52xx_wdt;
 static struct mpc52xx_cdm __iomem *mpc52xx_cdm;
 
 /*
- * Configure the XLB arbiter settings to match what Linux expects.
+ * Configure the XLB arbiter settings to match what Beep expects.
  */
 void __init
 mpc5200_setup_xlb_arbiter(void)

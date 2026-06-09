@@ -20,19 +20,19 @@
  * Sysfs file creation and management
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/unistd.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/etherdevice.h>
+#include <beep/spinlock.h>
+#include <beep/mm.h>
+#include <beep/device.h>
 
 #include <asm/uaccess.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include "gianfar.h"
 

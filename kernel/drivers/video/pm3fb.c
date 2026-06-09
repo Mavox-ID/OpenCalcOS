@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/pm3fb.c -- 3DLabs Permedia3 frame buffer device
+ *  beep/drivers/video/pm3fb.c -- 3DLabs Permedia3 frame buffer device
  *
  *  Copyright (C) 2001 Romain Dolbeau <romain@dolbeau.org>.
  *
@@ -9,10 +9,10 @@
  *  Based on code written by:
  *	   Sven Luther, <luther@dpt-info.u-strasbg.fr>
  *	   Alan Hourihane, <alanh@fairlite.demon.co.uk>
- *	   Russell King, <rmk@arm.linux.org.uk>
- *  Based on linux/drivers/video/skeletonfb.c:
+ *	   Russell King, <rmk@arm.beep.org.uk>
+ *  Based on beep/drivers/video/skeletonfb.c:
  *	Copyright (C) 1997 Geert Uytterhoeven
- *  Based on linux/driver/video/pm2fb.c:
+ *  Based on beep/driver/video/pm2fb.c:
  *	Copyright (C) 1998-1999 Ilario Nardinocchi (nardinoc@CS.UniBO.IT)
  *	Copyright (C) 1999 Jakub Jelinek (jakub@redhat.com)
  *
@@ -22,16 +22,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/pci.h>
 #ifdef CONFIG_MTRR
 #include <asm/mtrr.h>
 #endif
@@ -66,7 +66,7 @@ static bool nomtrr;
 
 /*
  * This structure defines the hardware state of the graphics card. Normally
- * you place this in a header file in linux/include/video. This file usually
+ * you place this in a header file in beep/include/video. This file usually
  * also includes register information. That allows other driver subsystems
  * and userland applications the ability to use the same header file to
  * avoid duplicate work and easy porting of software.

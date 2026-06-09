@@ -1,5 +1,5 @@
-#include <linux/module.h>
-#include <linux/preempt.h>
+#include <beep/module.h>
+#include <beep/preempt.h>
 #include <asm/msr.h>
 
 struct msr *msrs_alloc(void)

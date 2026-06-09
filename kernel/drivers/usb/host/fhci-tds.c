@@ -15,14 +15,14 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/io.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
 #include "fhci.h"
 
 #define DUMMY_BD_BUFFER  0xdeadbeef

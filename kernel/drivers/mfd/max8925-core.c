@@ -9,15 +9,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/machine.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/max8925.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/machine.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/max8925.h>
 
 static struct resource bk_resources[] = {
 	{ 0x84, 0x84, "mode control", IORESOURCE_REG, },

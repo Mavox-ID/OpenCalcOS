@@ -1,5 +1,5 @@
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for Beep
  *
  * derived from drivers/kvm/kvm_main.c
  *
@@ -19,7 +19,7 @@
  *
  */
 
-#include <linux/kvm_host.h>
+#include <beep/kvm_host.h>
 #include "irq.h"
 #include "mmu.h"
 #include "i8254.h"
@@ -28,26 +28,26 @@
 #include "x86.h"
 #include "cpuid.h"
 
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/kvm.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/mman.h>
-#include <linux/highmem.h>
-#include <linux/iommu.h>
-#include <linux/intel-iommu.h>
-#include <linux/cpufreq.h>
-#include <linux/user-return-notifier.h>
-#include <linux/srcu.h>
-#include <linux/slab.h>
-#include <linux/perf_event.h>
-#include <linux/uaccess.h>
-#include <linux/hash.h>
-#include <linux/pci.h>
-#include <linux/timekeeper_internal.h>
-#include <linux/pvclock_gtod.h>
+#include <beep/clocksource.h>
+#include <beep/interrupt.h>
+#include <beep/kvm.h>
+#include <beep/fs.h>
+#include <beep/vmalloc.h>
+#include <beep/module.h>
+#include <beep/mman.h>
+#include <beep/highmem.h>
+#include <beep/iommu.h>
+#include <beep/intel-iommu.h>
+#include <beep/cpufreq.h>
+#include <beep/user-return-notifier.h>
+#include <beep/srcu.h>
+#include <beep/slab.h>
+#include <beep/perf_event.h>
+#include <beep/uaccess.h>
+#include <beep/hash.h>
+#include <beep/pci.h>
+#include <beep/timekeeper_internal.h>
+#include <beep/pvclock_gtod.h>
 #include <trace/events/kvm.h>
 
 #define CREATE_TRACE_POINTS
@@ -1673,7 +1673,7 @@ static int set_msr_mce(struct kvm_vcpu *vcpu, u32 msr, u64 data)
 		    msr < MSR_IA32_MC0_CTL + 4 * bank_num) {
 			u32 offset = msr - MSR_IA32_MC0_CTL;
 			/* only 0 or all 1s can be written to IA32_MCi_CTL
-			 * some Linux kernels though clear bit 10 in bank 4 to
+			 * some Beep kernels though clear bit 10 in bank 4 to
 			 * workaround a BIOS/GART TBL issue on AMD K8s, ignore
 			 * this to avoid an uncatched #GP in the guest
 			 */

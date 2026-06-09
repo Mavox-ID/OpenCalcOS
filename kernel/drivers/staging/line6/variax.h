@@ -1,5 +1,5 @@
 /*
- * Line6 Linux USB driver - 0.9.1beta
+ * Line6 Beep USB driver - 0.9.1beta
  *
  * Copyright (C) 2004-2010 Markus Grabner (grabner@icg.tugraz.at)
  *
@@ -12,9 +12,9 @@
 #ifndef VARIAX_H
 #define VARIAX_H
 
-#include <linux/spinlock.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
+#include <beep/spinlock.h>
+#include <beep/usb.h>
+#include <beep/wait.h>
 #include <sound/core.h>
 
 #include "driver.h"

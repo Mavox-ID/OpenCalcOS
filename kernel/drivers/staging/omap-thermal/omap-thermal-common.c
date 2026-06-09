@@ -21,16 +21,16 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/workqueue.h>
-#include <linux/thermal.h>
-#include <linux/cpufreq.h>
-#include <linux/cpumask.h>
-#include <linux/cpu_cooling.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/gfp.h>
+#include <beep/kernel.h>
+#include <beep/workqueue.h>
+#include <beep/thermal.h>
+#include <beep/cpufreq.h>
+#include <beep/cpumask.h>
+#include <beep/cpu_cooling.h>
 
 #include "omap-thermal.h"
 #include "omap-bandgap.h"

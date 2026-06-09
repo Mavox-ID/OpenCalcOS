@@ -1,5 +1,5 @@
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 
 #include <asm/cache.h>
 #include <asm/asm-offsets.h>

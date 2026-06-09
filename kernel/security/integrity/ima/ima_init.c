@@ -14,10 +14,10 @@
  * File: ima_init.c
  *             initialization and cleanup functions
  */
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
+#include <beep/err.h>
 #include "ima.h"
 
 /* name for boot aggregate entry */

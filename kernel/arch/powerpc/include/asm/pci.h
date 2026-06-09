@@ -9,10 +9,10 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/dma-mapping.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/machdep.h>
 #include <asm/scatterlist.h>

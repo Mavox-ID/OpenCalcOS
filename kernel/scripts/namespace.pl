@@ -2,7 +2,7 @@
 #
 #	namespace.pl.  Mon Aug 30 2004
 #
-#	Perform a name space analysis on the linux kernel.
+#	Perform a name space analysis on the beep kernel.
 #
 #	Copyright Keith Owens <kaos@ocs.com.au>.  GPL.
 #
@@ -17,7 +17,7 @@
 #
 #	The source must be compiled/assembled first, the object files
 #	are the primary input to this script.  Incomplete or missing
-#	objects will result in a flawed analysis.  Compile both vmlinux
+#	objects will result in a flawed analysis.  Compile both vmbeep
 #	and modules.
 #
 #	Even with complete objects, treat the result of the analysis
@@ -142,14 +142,14 @@ my %nameexception = (
 );
 
 
-&find(\&linux_objects, '.');	# find the objects and do_nm on them
+&find(\&beep_objects, '.');	# find the objects and do_nm on them
 &list_multiply_defined();
 &resolve_external_references();
 &list_extra_externals();
 
 exit(0);
 
-sub linux_objects
+sub beep_objects
 {
 	# Select objects, ignoring objects which are only created by
 	# merging other objects.  Also ignore all of modules, scripts
@@ -206,7 +206,7 @@ sub linux_objects
 		|| m:sound/.*/snd-:
 		|| m:^.*/\.tmp_:
 		|| m:^\.tmp_:
-		|| m:/vmlinux-obj.o$:
+		|| m:/vmbeep-obj.o$:
 		|| m:^tools/:
 		)
 	) {

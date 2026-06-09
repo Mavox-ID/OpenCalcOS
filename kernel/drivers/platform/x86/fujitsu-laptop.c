@@ -1,4 +1,4 @@
-/*-*-linux-c-*-*/
+/*-*-beep-c-*-*/
 
 /*
   Copyright (C) 2007,2008 Jonathan Woithe <jwoithe@just42.net>
@@ -39,7 +39,7 @@
  *   range 0..7. (rw)
  *
  * In addition to these platform device attributes the driver
- * registers itself in the Linux backlight control subsystem and is
+ * registers itself in the Beep backlight control subsystem and is
  * available to userspace under /sys/class/backlight/fujitsu-laptop/.
  *
  * Hotkeys present on certain Fujitsu laptops (eg: the S6xxx series) are
@@ -58,19 +58,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/backlight.h>
-#include <linux/input.h>
-#include <linux/kfifo.h>
-#include <linux/video_output.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/acpi.h>
+#include <beep/dmi.h>
+#include <beep/backlight.h>
+#include <beep/input.h>
+#include <beep/kfifo.h>
+#include <beep/video_output.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 #if defined(CONFIG_LEDS_CLASS) || defined(CONFIG_LEDS_CLASS_MODULE)
-#include <linux/leds.h>
+#include <beep/leds.h>
 #endif
 
 #define FUJITSU_DRIVER_VERSION "0.6.0"

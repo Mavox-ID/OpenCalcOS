@@ -18,15 +18,15 @@
  * Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
  */
 
-#include <linux/mfd/mc13xxx.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/hwmon.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/err.h>
+#include <beep/mfd/mc13xxx.h>
+#include <beep/platform_device.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/hwmon.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/err.h>
 
 #define DRIVER_NAME	"mc13783-adc"
 

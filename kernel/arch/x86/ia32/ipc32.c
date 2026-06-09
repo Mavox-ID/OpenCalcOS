@@ -1,13 +1,13 @@
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/syscalls.h>
-#include <linux/time.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/ipc.h>
-#include <linux/compat.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
+#include <beep/syscalls.h>
+#include <beep/time.h>
+#include <beep/sem.h>
+#include <beep/msg.h>
+#include <beep/shm.h>
+#include <beep/ipc.h>
+#include <beep/compat.h>
 #include <asm/sys_ia32.h>
 
 asmlinkage long sys32_ipc(u32 call, int first, int second, int third,

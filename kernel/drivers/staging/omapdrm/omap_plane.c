@@ -17,7 +17,7 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/kfifo.h>
+#include <beep/kfifo.h>
 
 #include "omap_drv.h"
 #include "omap_dmm_tiler.h"

@@ -13,10 +13,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/i2c/twl.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/i2c/twl.h>
 
 #include "soc.h"
 #include "voltage.h"

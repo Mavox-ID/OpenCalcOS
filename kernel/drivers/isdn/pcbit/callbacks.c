@@ -15,16 +15,16 @@
  * NULL pointer dereference in cb_in_1 (originally fixed in 2.0)
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/skbuff.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/skbuff.h>
 
 #include <asm/io.h>
 
-#include <linux/isdnif.h>
+#include <beep/isdnif.h>
 
 #include "pcbit.h"
 #include "layer2.h"

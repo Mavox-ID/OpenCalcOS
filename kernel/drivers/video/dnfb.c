@@ -1,18 +1,18 @@
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
 
 #include <asm/setup.h>
 #include <asm/irq.h>
 #include <asm/amigahw.h>
 #include <asm/amigaints.h>
 #include <asm/apollohw.h>
-#include <linux/fb.h>
-#include <linux/module.h>
+#include <beep/fb.h>
+#include <beep/module.h>
 
 /* apollo video HW definitions */
 

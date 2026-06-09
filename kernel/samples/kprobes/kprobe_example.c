@@ -10,9 +10,9 @@
  * whenever do_fork() is invoked to create a new process.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kprobes.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/kprobes.h>
 
 /* For each probe you need to allocate a kprobe structure */
 static struct kprobe kp = {

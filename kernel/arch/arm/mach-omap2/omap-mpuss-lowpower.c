@@ -37,11 +37,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/linkage.h>
-#include <linux/smp.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/errno.h>
+#include <beep/linkage.h>
+#include <beep/smp.h>
 
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>

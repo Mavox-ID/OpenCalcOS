@@ -66,7 +66,7 @@ void platform_init(unsigned long a1, unsigned long a2, void *promptr)
 	platform_ops.image_hdr = of_image_hdr;
 	platform_ops.malloc = of_try_claim;
 	platform_ops.exit = of_exit;
-	platform_ops.vmlinux_alloc = of_vmlinux_alloc;
+	platform_ops.vmbeep_alloc = of_vmbeep_alloc;
 
 	dt_ops.finddevice = of_finddevice;
 	dt_ops.getprop = of_getprop;

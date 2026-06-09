@@ -25,14 +25,14 @@
 #include <crypto/sha.h>
 #include <crypto/algapi.h>
 #include <crypto/scatterwalk.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
-#include <linux/device.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/crypto.h>
+#include <beep/scatterlist.h>
+#include <beep/device.h>
+#include <beep/of.h>
 #include <asm/hvcall.h>
 #include <asm/vio.h>
 
@@ -133,11 +133,11 @@ struct nx_sg *nx_build_sg_list(struct nx_sg *sg_head,
 }
 
 /**
- * nx_walk_and_build - walk a linux scatterlist and build an nx scatterlist
+ * nx_walk_and_build - walk a beep scatterlist and build an nx scatterlist
  *
  * @nx_dst: pointer to the first nx_sg element to write
  * @sglen: max number of nx_sg entries we're allowed to write
- * @sg_src: pointer to the source linux scatterlist to walk
+ * @sg_src: pointer to the source beep scatterlist to walk
  * @start: number of bytes to fast-forward past at the beginning of @sg_src
  * @src_len: number of bytes to walk in @sg_src
  */

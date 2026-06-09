@@ -1,5 +1,5 @@
 /*
- *	linux/arch/alpha/kernel/core_apecs.c
+ *	beep/arch/alpha/kernel/core_apecs.c
  *
  * Rewritten for Apecs from the lca.c from:
  *
@@ -15,9 +15,9 @@
 #include <asm/core_apecs.h>
 #undef __EXTERN_INLINE
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/init.h>
 
 #include <asm/ptrace.h>
 #include <asm/smp.h>

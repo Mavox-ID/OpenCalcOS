@@ -11,15 +11,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/serio.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/of.h>
 
 #define DRV_NAME "altera_ps2"
 

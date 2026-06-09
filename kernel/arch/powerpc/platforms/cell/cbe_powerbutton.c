@@ -20,9 +20,9 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/input.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 #include <asm/pmi.h>
 #include <asm/prom.h>
 

@@ -17,7 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 #include <asm/page.h>
 #include <asm/cacheflush.h>

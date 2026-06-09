@@ -3,7 +3,7 @@
  *
  *  Copyright (C) 2001-5, B2C2 inc.
  *
- *  GPL/Linux driver written by Patrick Boettcher <patrick.boettcher@desy.de>
+ *  GPL/Beep driver written by Patrick Boettcher <patrick.boettcher@desy.de>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,8 +22,8 @@
 #ifndef BCM3510_H
 #define BCM3510_H
 
-#include <linux/dvb/frontend.h>
-#include <linux/firmware.h>
+#include <beep/dvb/frontend.h>
+#include <beep/firmware.h>
 
 struct bcm3510_config
 {

@@ -17,14 +17,14 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/bootmem.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/bootmem.h>
 
 #include <asm/pci-bridge.h>
 #include <asm/platform.h>

@@ -18,12 +18,12 @@
  * Author: Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/cpu.h>
-#include <linux/debugfs.h>
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/stat.h>
+#include <beep/cpu.h>
+#include <beep/debugfs.h>
+#include <beep/hardirq.h>
+#include <beep/init.h>
+#include <beep/ptrace.h>
+#include <beep/stat.h>
 
 #include <asm/debug-monitors.h>
 #include <asm/local.h>

@@ -1,7 +1,7 @@
 /*
  * Event entry/exit for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -24,7 +24,7 @@
 #include <asm/thread_info.h>
 
 /*
- * Entry into guest-mode Linux under Hexagon Virtual Machine.
+ * Entry into guest-mode Beep under Hexagon Virtual Machine.
  * Stack pointer points to event record - build pt_regs on top of it,
  * set up a plausible C stack frame, and dispatch to the C handler.
  * On return, do vmrte virtual instruction with SP where we started.

@@ -12,17 +12,17 @@
  *   more details.
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/module.h>
-#include <linux/pfn.h>
-#include <linux/kallsyms.h>
-#include <linux/stacktrace.h>
-#include <linux/uaccess.h>
-#include <linux/mmzone.h>
-#include <linux/dcache.h>
-#include <linux/fs.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/kprobes.h>
+#include <beep/module.h>
+#include <beep/pfn.h>
+#include <beep/kallsyms.h>
+#include <beep/stacktrace.h>
+#include <beep/uaccess.h>
+#include <beep/mmzone.h>
+#include <beep/dcache.h>
+#include <beep/fs.h>
 #include <asm/backtrace.h>
 #include <asm/page.h>
 #include <asm/ucontext.h>
@@ -455,7 +455,7 @@ void show_stack(struct task_struct *task, unsigned long *esp)
 
 #ifdef CONFIG_STACKTRACE
 
-/* Support generic Linux stack API too */
+/* Support generic Beep stack API too */
 
 void save_stack_trace_tsk(struct task_struct *task, struct stack_trace *trace)
 {

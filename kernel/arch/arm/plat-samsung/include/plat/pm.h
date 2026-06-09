@@ -1,7 +1,7 @@
 /* arch/arm/plat-samsung/include/plat/pm.h
  *
  * Copyright (c) 2004 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Written by Ben Dooks, <ben@simtec.co.uk>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -15,7 +15,7 @@
  * management
 */
 
-#include <linux/irq.h>
+#include <beep/irq.h>
 
 struct device;
 

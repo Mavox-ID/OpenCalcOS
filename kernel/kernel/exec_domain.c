@@ -7,18 +7,18 @@
  * 2001-05-06	Complete rewrite,  Christoph Hellwig (hch@infradead.org)
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/module.h>
-#include <linux/personality.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/syscalls.h>
-#include <linux/sysctl.h>
-#include <linux/types.h>
-#include <linux/fs_struct.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/kmod.h>
+#include <beep/module.h>
+#include <beep/personality.h>
+#include <beep/proc_fs.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/syscalls.h>
+#include <beep/sysctl.h>
+#include <beep/types.h>
+#include <beep/fs_struct.h>
 
 
 static void default_handler(int, struct pt_regs *);
@@ -35,10 +35,10 @@ static unsigned long ident_map[32] = {
 };
 
 struct exec_domain default_exec_domain = {
-	.name		= "Linux",		/* name */
+	.name		= "Beep",		/* name */
 	.handler	= default_handler,	/* lcall7 causes a seg fault. */
-	.pers_low	= 0, 			/* PER_LINUX personality. */
-	.pers_high	= 0,			/* PER_LINUX personality. */
+	.pers_low	= 0, 			/* PER_BEEP personality. */
+	.pers_high	= 0,			/* PER_BEEP personality. */
 	.signal_map	= ident_map,		/* Identity map signals. */
 	.signal_invmap	= ident_map,		/*  - both ways. */
 };

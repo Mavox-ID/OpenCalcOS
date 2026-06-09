@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/mach/uncompress.h
+ * beep/arch/unicore32/include/mach/uncompress.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *

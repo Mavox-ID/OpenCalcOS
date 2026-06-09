@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2010 Paul Mundt <lethal@linux-sh.org>
+ *  Copyright (C) 2010 Paul Mundt <lethal@beep-sh.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -11,9 +11,9 @@
 #ifndef __CLKDEV__H_
 #define __CLKDEV__H_
 
-#include <linux/bootmem.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <beep/bootmem.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
 
 #include <asm/clock.h>
 

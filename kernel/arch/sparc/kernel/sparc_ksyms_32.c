@@ -5,8 +5,8 @@
  * Copyright (C) 1996 Eddie C. Dost (ecd@skynet.be)
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
 #include <asm/pgtable.h>
 #include <asm/uaccess.h>

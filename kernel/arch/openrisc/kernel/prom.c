@@ -1,7 +1,7 @@
 /*
  * OpenRISC prom.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -19,29 +19,29 @@
  */
 
 #include <stdarg.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/threads.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/stringify.h>
-#include <linux/delay.h>
-#include <linux/initrd.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/kexec.h>
-#include <linux/debugfs.h>
-#include <linux/irq.h>
-#include <linux/memblock.h>
-#include <linux/of_fdt.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/threads.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/stringify.h>
+#include <beep/delay.h>
+#include <beep/initrd.h>
+#include <beep/bitops.h>
+#include <beep/module.h>
+#include <beep/kexec.h>
+#include <beep/debugfs.h>
+#include <beep/irq.h>
+#include <beep/memblock.h>
+#include <beep/of_fdt.h>
 
 #include <asm/prom.h>
 #include <asm/page.h>
 #include <asm/processor.h>
 #include <asm/irq.h>
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/mmu.h>
 #include <asm/pgtable.h>
 #include <asm/sections.h>

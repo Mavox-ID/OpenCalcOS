@@ -8,9 +8,9 @@
 #include "qlcnic.h"
 #include "qlcnic_hdr.h"
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include <net/ip.h>
-#include <linux/bitops.h>
+#include <beep/bitops.h>
 
 #define MASK(n) ((1ULL<<(n))-1)
 #define OCM_WIN_P3P(addr) (addr & 0xffc0000)

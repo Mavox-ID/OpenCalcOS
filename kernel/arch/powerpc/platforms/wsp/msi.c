@@ -7,11 +7,11 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/msi.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
 
 #include "msi.h"
 #include "ics.h"

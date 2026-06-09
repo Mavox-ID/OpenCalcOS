@@ -1,6 +1,6 @@
 /*
  *	Sysfs attributes of bridge ports
- *	Linux ethernet bridge
+ *	Beep ethernet bridge
  *
  *	Authors:
  *	Stephen Hemminger		<shemminger@osdl.org>
@@ -11,12 +11,12 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/capability.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/rtnetlink.h>
-#include <linux/spinlock.h>
+#include <beep/capability.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/if_bridge.h>
+#include <beep/rtnetlink.h>
+#include <beep/spinlock.h>
 
 #include "br_private.h"
 

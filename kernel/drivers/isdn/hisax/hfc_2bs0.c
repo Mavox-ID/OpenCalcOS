@@ -3,20 +3,20 @@
  * specific routines for CCD's HFC 2BS0
  *
  * Author       Karsten Keil
- * Copyright    by Karsten Keil      <keil@isdn4linux.de>
+ * Copyright    by Karsten Keil      <keil@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include "hisax.h"
 #include "hfc_2bs0.h"
 #include "isac.h"
 #include "isdnl1.h"
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 
 static inline int
 WaitForBusy(struct IsdnCardState *cs)

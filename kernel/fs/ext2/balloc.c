@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext2/balloc.c
+ *  beep/fs/ext2/balloc.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -12,11 +12,11 @@
  */
 
 #include "ext2.h"
-#include <linux/quotaops.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/buffer_head.h>
-#include <linux/capability.h>
+#include <beep/quotaops.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/buffer_head.h>
+#include <beep/capability.h>
 
 /*
  * balloc.c contains the blocks allocation and deallocation routines

@@ -12,9 +12,9 @@
  * License.
  */
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/gfp.h>
 
 #include "include/apparmor.h"
 #include "include/capability.h"

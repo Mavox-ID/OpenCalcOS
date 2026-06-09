@@ -22,7 +22,7 @@
 
 #include <arch/chip.h>
 
-/* Linux builds want unsigned long constants, but assembler wants numbers */
+/* Beep builds want unsigned long constants, but assembler wants numbers */
 #ifdef __ASSEMBLER__
 /** One, for assembler */
 #define __HV_SIZE_ONE 1
@@ -30,7 +30,7 @@
 /** One, for 64-bit on host */
 #define __HV_SIZE_ONE 1ULL
 #else
-/** One, for Linux */
+/** One, for Beep */
 #define __HV_SIZE_ONE 1UL
 #endif
 

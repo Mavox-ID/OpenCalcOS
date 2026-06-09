@@ -1,13 +1,13 @@
 /*
- * linux/fs/nfs/nfs4sysctl.c
+ * beep/fs/nfs/nfs4sysctl.c
  *
  * Sysctl interface to NFS v4 parameters
  *
  * Copyright (c) 2006 Trond Myklebust <Trond.Myklebust@netapp.com>
  */
-#include <linux/sysctl.h>
-#include <linux/nfs_idmap.h>
-#include <linux/nfs_fs.h>
+#include <beep/sysctl.h>
+#include <beep/nfs_idmap.h>
+#include <beep/nfs_fs.h>
 
 #include "nfs4_fs.h"
 #include "callback.h"

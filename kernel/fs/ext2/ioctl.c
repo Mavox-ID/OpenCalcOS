@@ -1,5 +1,5 @@
 /*
- * linux/fs/ext2/ioctl.c
+ * beep/fs/ext2/ioctl.c
  *
  * Copyright (C) 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -8,11 +8,11 @@
  */
 
 #include "ext2.h"
-#include <linux/capability.h>
-#include <linux/time.h>
-#include <linux/sched.h>
-#include <linux/compat.h>
-#include <linux/mount.h>
+#include <beep/capability.h>
+#include <beep/time.h>
+#include <beep/sched.h>
+#include <beep/compat.h>
+#include <beep/mount.h>
 #include <asm/current.h>
 #include <asm/uaccess.h>
 
@@ -67,7 +67,7 @@ long ext2_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 		 * This test looks nicer. Thanks to Pauline Middelink
 		 */
 		if ((flags ^ oldflags) & (EXT2_APPEND_FL | EXT2_IMMUTABLE_FL)) {
-			if (!capable(CAP_LINUX_IMMUTABLE)) {
+			if (!capable(CAP_BEEP_IMMUTABLE)) {
 				mutex_unlock(&inode->i_mutex);
 				ret = -EPERM;
 				goto setflags_out;

@@ -6,9 +6,9 @@
  * Copyright (C) 2012 Rafael J. Wysocki <rjw@sisk.pl>
  */
 
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/pm_wakeup.h>
+#include <beep/device.h>
+#include <beep/mutex.h>
+#include <beep/pm_wakeup.h>
 
 #include "power.h"
 

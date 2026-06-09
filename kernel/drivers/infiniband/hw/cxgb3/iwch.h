@@ -32,11 +32,11 @@
 #ifndef __IWCH_H__
 #define __IWCH_H__
 
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/idr.h>
-#include <linux/workqueue.h>
+#include <beep/mutex.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/idr.h>
+#include <beep/workqueue.h>
 
 #include <rdma/ib_verbs.h>
 

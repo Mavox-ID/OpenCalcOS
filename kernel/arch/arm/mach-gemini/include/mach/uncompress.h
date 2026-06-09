@@ -13,7 +13,7 @@
 #ifndef __MACH_UNCOMPRESS_H
 #define __MACH_UNCOMPRESS_H
 
-#include <linux/serial_reg.h>
+#include <beep/serial_reg.h>
 #include <mach/hardware.h>
 
 static volatile unsigned long * const UART = (unsigned long *)GEMINI_UART_BASE;

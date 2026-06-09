@@ -1,11 +1,11 @@
 /*
- *  linux/drivers/message/fusion/mptlan.h
+ *  beep/drivers/message/fusion/mptlan.h
  *      IP Over Fibre Channel device driver.
  *      For use with LSI Fibre Channel PCI chip/adapters
  *      running LSI Fusion MPT (Message Passing Technology) firmware.
  *
  *  Copyright (c) 2000-2008 LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionBeep@lsi.com)
  *
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
@@ -47,28 +47,28 @@
 
 /* mptlan.h */
 
-#ifndef LINUX_MPTLAN_H_INCLUDED
-#define LINUX_MPTLAN_H_INCLUDED
+#ifndef BEEP_MPTLAN_H_INCLUDED
+#define BEEP_MPTLAN_H_INCLUDED
 /*****************************************************************************/
 
 #if !defined(__GENKSYMS__)
-#include <linux/module.h>
+#include <beep/module.h>
 #endif
 
-#include <linux/netdevice.h>
-#include <linux/errno.h>
-// #include <linux/etherdevice.h>
-#include <linux/fcdevice.h>
-// #include <linux/fddidevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/miscdevice.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
+#include <beep/netdevice.h>
+#include <beep/errno.h>
+// #include <beep/etherdevice.h>
+#include <beep/fcdevice.h>
+// #include <beep/fddidevice.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/miscdevice.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/delay.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>
@@ -80,7 +80,7 @@
 
 /*****************************************************************************/
 #define LANAME		"Fusion MPT LAN driver"
-#define LANVER		MPT_LINUX_VERSION_COMMON
+#define LANVER		MPT_BEEP_VERSION_COMMON
 
 #ifdef MODULE
 MODULE_AUTHOR(MODULEAUTHOR);

@@ -1,14 +1,14 @@
 /*
- * linux/arch/arm/mach-sa1100/lart.c
+ * beep/arch/arm/mach-sa1100/lart.c
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/tty.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_data/sa11x0-serial.h>
+#include <beep/tty.h>
+#include <beep/gpio.h>
+#include <beep/leds.h>
+#include <beep/platform_device.h>
 
 #include <video/sa1100fb.h>
 
@@ -19,7 +19,7 @@
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
-#include <linux/platform_data/mfd-mcp-sa11x0.h>
+#include <beep/platform_data/mfd-mcp-sa11x0.h>
 #include <mach/irqs.h>
 
 #include "generic.h"

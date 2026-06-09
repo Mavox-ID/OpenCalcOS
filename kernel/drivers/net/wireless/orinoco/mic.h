@@ -5,7 +5,7 @@
 #ifndef _ORINOCO_MIC_H_
 #define _ORINOCO_MIC_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define MICHAEL_MIC_LEN 8
 

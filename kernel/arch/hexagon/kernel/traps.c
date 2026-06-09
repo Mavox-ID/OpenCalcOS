@@ -1,7 +1,7 @@
 /*
  * Kernel traps/events for Hexagon processor
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -18,14 +18,14 @@
  * 02110-1301, USA.
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/kallsyms.h>
-#include <linux/kdebug.h>
-#include <linux/syscalls.h>
-#include <linux/signal.h>
-#include <linux/tracehook.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/kallsyms.h>
+#include <beep/kdebug.h>
+#include <beep/syscalls.h>
+#include <beep/signal.h>
+#include <beep/tracehook.h>
 #include <asm/traps.h>
 #include <asm/vm_fault.h>
 #include <asm/syscall.h>
@@ -33,7 +33,7 @@
 #include <asm/unistd.h>
 #include <asm/sections.h>
 #ifdef CONFIG_KGDB
-# include <linux/kgdb.h>
+# include <beep/kgdb.h>
 #endif
 
 #define TRAP_SYSCALL	1
@@ -373,7 +373,7 @@ void do_trap0(struct pt_regs *regs)
 
 		/*
 		 * System call number is in r6, arguments in r0..r5.
-		 * Fortunately, no Linux syscall has more than 6 arguments,
+		 * Fortunately, no Beep syscall has more than 6 arguments,
 		 * and Hexagon ABI passes first 6 arguments in registers.
 		 * 64-bit arguments are passed in odd/even register pairs.
 		 * Fortunately, we have no system calls that take more

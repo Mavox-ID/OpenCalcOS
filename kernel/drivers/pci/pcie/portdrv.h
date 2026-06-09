@@ -9,7 +9,7 @@
 #ifndef _PORTDRV_H_
 #define _PORTDRV_H_
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 #define PCIE_PORT_DEVICE_MAXSERVICES   4
 /*

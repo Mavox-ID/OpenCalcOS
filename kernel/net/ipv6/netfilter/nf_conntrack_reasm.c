@@ -14,20 +14,20 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/jiffies.h>
-#include <linux/net.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/in6.h>
-#include <linux/ipv6.h>
-#include <linux/icmpv6.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/jiffies.h>
+#include <beep/net.h>
+#include <beep/list.h>
+#include <beep/netdevice.h>
+#include <beep/in6.h>
+#include <beep/ipv6.h>
+#include <beep/icmpv6.h>
+#include <beep/random.h>
+#include <beep/slab.h>
 
 #include <net/sock.h>
 #include <net/snmp.h>
@@ -40,11 +40,11 @@
 #include <net/ndisc.h>
 #include <net/addrconf.h>
 #include <net/netfilter/ipv6/nf_conntrack_ipv6.h>
-#include <linux/sysctl.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/sysctl.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv6.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 #include <net/netfilter/ipv6/nf_defrag_ipv6.h>
 
 

@@ -7,7 +7,7 @@
 /*
  * Copyright (C) by Hannu Savolainen 1993-1997
  *
- * OSS/Free for Linux is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
+ * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
  * Version 2 (June 1991). See the "COPYING" file distributed with this software
  * for more info.
  */
@@ -20,15 +20,15 @@
  * Thomas Sailer   : use more logical O_NONBLOCK semantics
  * Daniel Rodriksson: reworked the use of the device specific copy_user
  *                    still generic
- * Horst von Brand:  Add missing #include <linux/string.h>
+ * Horst von Brand:  Add missing #include <beep/string.h>
  * Chris Rankin    : Update the module-usage counter for the coprocessor,
  *                   and decrement the counters again if we cannot open
  *                   the audio device.
  */
 
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/kmod.h>
+#include <beep/stddef.h>
+#include <beep/string.h>
+#include <beep/kmod.h>
 
 #include "sound_config.h"
 #include "ulaw.h"

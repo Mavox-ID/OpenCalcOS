@@ -5,14 +5,14 @@
  *
  * Copyright (C) 2004, 2005, 2006, 2008  Thiemo Seufer
  * Copyright (C) 2005  Maciej W. Rozycki
- * Copyright (C) 2006  Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2006  Ralf Baechle (ralf@beep-mips.org)
  * Copyright (C) 2012  MIPS Technologies, Inc.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #ifdef CONFIG_EXPORT_UASM
-#include <linux/export.h>
+#include <beep/export.h>
 #define __uasminit
 #define __uasminitdata
 #define UASM_EXPORT_SYMBOL(sym) EXPORT_SYMBOL(sym)

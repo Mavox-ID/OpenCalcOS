@@ -5,7 +5,7 @@
  *
  * ifenslave.c: Configure network interfaces for parallel routing.
  *
- *      This program controls the Linux implementation of running multiple
+ *      This program controls the Beep implementation of running multiple
  *      network interfaces in parallel.
  *
  * Author:      Donald Becker <becker@cesdis.gsfc.nasa.gov>
@@ -136,7 +136,7 @@
 
 #include "libbb.h"
 
-/* #include <net/if.h> - no. linux/if_bonding.h pulls in linux/if.h */
+/* #include <net/if.h> - no. beep/if_bonding.h pulls in beep/if.h */
 #include <linux/if.h>
 //#include <net/if_arp.h> - not needed?
 #include <linux/if_bonding.h>

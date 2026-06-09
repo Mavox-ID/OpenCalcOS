@@ -21,13 +21,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/irq.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/of_irq.h>
-#include <linux/seq_file.h>
-#include <linux/ratelimit.h>
+#include <beep/kernel_stat.h>
+#include <beep/irq.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/of_irq.h>
+#include <beep/seq_file.h>
+#include <beep/ratelimit.h>
 
 unsigned long irq_err_count;
 

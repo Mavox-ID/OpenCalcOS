@@ -7,19 +7,19 @@
  *  Copyright (C) 2010 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/cfi.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/cfi.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
+#include <beep/of.h>
 
 #include <lantiq_soc.h>
 

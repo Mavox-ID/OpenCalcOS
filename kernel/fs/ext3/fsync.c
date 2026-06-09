@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext3/fsync.c
+ *  beep/fs/ext3/fsync.c
  *
  *  Copyright (C) 1993  Stephen Tweedie (sct@redhat.com)
  *  from
@@ -7,7 +7,7 @@
  *                      Laboratoire MASI - Institut Blaise Pascal
  *                      Universite Pierre et Marie Curie (Paris VI)
  *  from
- *  linux/fs/minix/truncate.c   Copyright (C) 1991, 1992  Linus Torvalds
+ *  beep/fs/minix/truncate.c   Copyright (C) 1991, 1992  Linus Torvalds
  *
  *  ext3fs fsync primitive
  *
@@ -22,8 +22,8 @@
  * we can depend on generic_block_fdatasync() to sync the data blocks.
  */
 
-#include <linux/blkdev.h>
-#include <linux/writeback.h>
+#include <beep/blkdev.h>
+#include <beep/writeback.h>
 #include "ext3.h"
 
 /*

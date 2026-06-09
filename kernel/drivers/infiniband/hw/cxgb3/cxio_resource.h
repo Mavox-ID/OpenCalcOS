@@ -32,13 +32,13 @@
 #ifndef __CXIO_RESOURCE_H__
 #define __CXIO_RESOURCE_H__
 
-#include <linux/kernel.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/kfifo.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/genalloc.h>
+#include <beep/kernel.h>
+#include <beep/random.h>
+#include <beep/slab.h>
+#include <beep/kfifo.h>
+#include <beep/spinlock.h>
+#include <beep/errno.h>
+#include <beep/genalloc.h>
 #include "cxio_hal.h"
 
 extern int cxio_hal_init_rhdl_resource(u32 nr_rhdl);

@@ -11,11 +11,11 @@
 #define __ASM_MICROBLAZE_PCI_H
 #ifdef __KERNEL__
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/dma-mapping.h>
+#include <beep/pci.h>
 
 #include <asm/scatterlist.h>
 #include <asm/io.h>

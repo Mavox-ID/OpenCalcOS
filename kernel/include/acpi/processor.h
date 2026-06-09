@@ -1,9 +1,9 @@
 #ifndef __ACPI_PROCESSOR_H
 #define __ACPI_PROCESSOR_H
 
-#include <linux/kernel.h>
-#include <linux/cpu.h>
-#include <linux/thermal.h>
+#include <beep/kernel.h>
+#include <beep/cpu.h>
+#include <beep/thermal.h>
 #include <asm/acpi.h>
 
 #define ACPI_PROCESSOR_BUSY_METRIC	10

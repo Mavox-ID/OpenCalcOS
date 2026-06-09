@@ -21,7 +21,7 @@
  * driver for Chrontel CH7301 DVI Transmitter
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include "via_aux.h"
 
 

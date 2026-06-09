@@ -10,7 +10,7 @@
  *	Cisco 5500
  *	Sun Trunking (Solaris)
  *	Alteon AceDirector Trunks
- *	Linux Bonding
+ *	Beep Bonding
  *	and probably many L2 switches ...
  *
  * How it works:
@@ -33,46 +33,46 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/ptrace.h>
+#include <beep/ioport.h>
+#include <beep/in.h>
 #include <net/ip.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/socket.h>
-#include <linux/ctype.h>
-#include <linux/inet.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/udp.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/socket.h>
+#include <beep/ctype.h>
+#include <beep/inet.h>
+#include <beep/bitops.h>
+#include <beep/io.h>
 #include <asm/dma.h>
-#include <linux/uaccess.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <beep/uaccess.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/inetdevice.h>
+#include <beep/igmp.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
 #include <net/sock.h>
-#include <linux/rtnetlink.h>
-#include <linux/smp.h>
-#include <linux/if_ether.h>
+#include <beep/rtnetlink.h>
+#include <beep/smp.h>
+#include <beep/if_ether.h>
 #include <net/arp.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/if_bonding.h>
-#include <linux/jiffies.h>
-#include <linux/preempt.h>
+#include <beep/mii.h>
+#include <beep/ethtool.h>
+#include <beep/if_vlan.h>
+#include <beep/if_bonding.h>
+#include <beep/jiffies.h>
+#include <beep/preempt.h>
 #include <net/route.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>

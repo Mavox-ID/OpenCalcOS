@@ -11,14 +11,14 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/backlight.h>
-#include <linux/fb.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/backlight.h>
+#include <beep/fb.h>
+#include <beep/slab.h>
 
-#include <linux/mfd/lm3533.h>
+#include <beep/mfd/lm3533.h>
 
 
 #define LM3533_HVCTRLBANK_COUNT		2

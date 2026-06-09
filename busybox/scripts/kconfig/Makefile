@@ -41,7 +41,7 @@ silentoldconfig: $(obj)/conf
 	$(MTIME_IS_COARSE) && sleep 1
 
 update-po-config: $(obj)/kxgettext
-	xgettext --default-domain=linux \
+	xgettext --default-domain=beep \
           --add-comments --keyword=_ --keyword=N_ \
           --files-from=scripts/kconfig/POTFILES.in \
           --output scripts/kconfig/config.pot
@@ -49,15 +49,15 @@ update-po-config: $(obj)/kxgettext
 	$(Q)for i in `ls arch/`; \
 	do \
 	  scripts/kconfig/kxgettext arch/$$i/Kconfig \
-	    | msguniq -o scripts/kconfig/linux_$${i}.pot; \
+	    | msguniq -o scripts/kconfig/beep_$${i}.pot; \
 	done
 	$(Q)msgcat scripts/kconfig/config.pot \
-	  `find scripts/kconfig/ -type f -name linux_*.pot` \
-	  --output scripts/kconfig/linux_raw.pot
-	$(Q)msguniq --sort-by-file scripts/kconfig/linux_raw.pot \
-	    --output scripts/kconfig/linux.pot
+	  `find scripts/kconfig/ -type f -name beep_*.pot` \
+	  --output scripts/kconfig/beep_raw.pot
+	$(Q)msguniq --sort-by-file scripts/kconfig/beep_raw.pot \
+	    --output scripts/kconfig/beep.pot
 	$(Q)rm -f arch/um/Kconfig_arch
-	$(Q)rm -f scripts/kconfig/linux_*.pot scripts/kconfig/config.pot
+	$(Q)rm -f scripts/kconfig/beep_*.pot scripts/kconfig/config.pot
 
 PHONY += randconfig allyesconfig allnoconfig allmodconfig defconfig
 

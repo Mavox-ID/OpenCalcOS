@@ -1,6 +1,6 @@
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -17,24 +17,24 @@
  *
  */
 
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/gfp.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/highmem.h>
-#include <linux/initrd.h>
-#include <linux/pagemap.h>
-#include <linux/suspend.h>
-#include <linux/memblock.h>
-#include <linux/hugetlb.h>
-#include <linux/slab.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/gfp.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/stddef.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/highmem.h>
+#include <beep/initrd.h>
+#include <beep/pagemap.h>
+#include <beep/suspend.h>
+#include <beep/memblock.h>
+#include <beep/hugetlb.h>
+#include <beep/slab.h>
 
 #include <asm/pgalloc.h>
 #include <asm/prom.h>
@@ -519,9 +519,9 @@ EXPORT_SYMBOL(flush_icache_user_range);
 
 /*
  * This is called at the end of handling a user page fault, when the
- * fault has been handled by updating a PTE in the linux page tables.
+ * fault has been handled by updating a PTE in the beep page tables.
  * We use it to preload an HPTE into the hash table corresponding to
- * the updated linux PTE.
+ * the updated beep PTE.
  * 
  * This must always be called with the pte lock held.
  */
@@ -531,7 +531,7 @@ void update_mmu_cache(struct vm_area_struct *vma, unsigned long address,
 #ifdef CONFIG_PPC_STD_MMU
 	unsigned long access = 0, trap;
 
-	/* We only want HPTEs for linux PTEs that have _PAGE_ACCESSED set */
+	/* We only want HPTEs for beep PTEs that have _PAGE_ACCESSED set */
 	if (!pte_young(*ptep) || address >= TASK_SIZE)
 		return;
 

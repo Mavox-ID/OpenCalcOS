@@ -1,5 +1,5 @@
 /*
- * Modified to interface to the Linux kernel
+ * Modified to interface to the Beep kernel
  * Copyright (c) 2009, Intel Corporation.
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -24,11 +24,11 @@
  * Last modified: 17 APR 08, 1700 PDT
  * ----------------------------------------------------------------------- */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/crypto.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/crypto.h>
+#include <beep/module.h>
+#include <beep/scatterlist.h>
 #include <asm/byteorder.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/vmac.h>

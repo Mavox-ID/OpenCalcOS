@@ -8,11 +8,11 @@
  * is licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/serial_8250.h>
-#include <linux/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/serial_8250.h>
+#include <beep/platform_device.h>
 
 #include <asm/mach/map.h>
 

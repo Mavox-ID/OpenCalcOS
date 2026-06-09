@@ -11,11 +11,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/mtd/blktrans.h>
-#include <linux/kfifo.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/mtd/mtd.h>
+#include <beep/mtd/blktrans.h>
+#include <beep/kfifo.h>
+#include <beep/sched.h>
+#include <beep/completion.h>
+#include <beep/mtd/mtd.h>
 
 
 

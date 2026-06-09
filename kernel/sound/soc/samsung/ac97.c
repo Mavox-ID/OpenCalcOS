@@ -12,16 +12,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/module.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/module.h>
 
 #include <sound/soc.h>
 
 #include <mach/dma.h>
 #include <plat/regs-ac97.h>
-#include <linux/platform_data/asoc-s3c.h>
+#include <beep/platform_data/asoc-s3c.h>
 
 #include "dma.h"
 

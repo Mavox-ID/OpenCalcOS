@@ -20,11 +20,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/lpc_ich.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/lpc_ich.h>
 
 #define DRV_NAME "gpio_ich"
 

@@ -24,24 +24,24 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/serial_reg.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/serial_core.h>
-#include <linux/irq.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/gpio.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_data/serial-omap.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/serial_reg.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/serial_core.h>
+#include <beep/irq.h>
+#include <beep/pm_runtime.h>
+#include <beep/of.h>
+#include <beep/gpio.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/platform_data/serial-omap.h>
 
 #define OMAP_MAX_HSUART_PORTS	6
 

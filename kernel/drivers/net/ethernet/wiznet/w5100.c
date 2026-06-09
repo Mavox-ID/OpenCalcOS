@@ -7,25 +7,25 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kconfig.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/wiznet.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/kconfig.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/platform_device.h>
+#include <beep/platform_data/wiznet.h>
+#include <beep/ethtool.h>
+#include <beep/skbuff.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
 
 #define DRV_NAME	"w5100"
 #define DRV_VERSION	"2012-04-04"

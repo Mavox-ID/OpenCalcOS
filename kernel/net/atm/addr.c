@@ -2,10 +2,10 @@
 
 /* Written 1995-2000 by Werner Almesberger, EPFL LRC/ICA */
 
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <beep/atm.h>
+#include <beep/atmdev.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
 
 #include "signaling.h"
 #include "addr.h"

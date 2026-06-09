@@ -6,21 +6,21 @@
  * Licensed under the GPL-2.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/gcd.h>
-#include <linux/gpio.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/sysfs.h>
+#include <beep/spi/spi.h>
+#include <beep/regulator/consumer.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/gcd.h>
+#include <beep/gpio.h>
 #include <asm/div64.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/frequency/adf4350.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
+#include <beep/iio/frequency/adf4350.h>
 
 enum {
 	ADF4350_FREQ,
@@ -481,6 +481,6 @@ static struct spi_driver adf4350_driver = {
 };
 module_spi_driver(adf4350_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("Analog Devices ADF4350/ADF4351 PLL");
 MODULE_LICENSE("GPL v2");

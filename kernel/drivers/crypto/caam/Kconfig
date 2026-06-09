@@ -68,7 +68,7 @@ config CRYPTO_DEV_FSL_CAAM_CRYPTO_API
 	select CRYPTO_AUTHENC
 	help
 	  Selecting this will offload crypto for users of the
-	  scatterlist crypto API (such as the linux native IPSec
+	  scatterlist crypto API (such as the beep native IPSec
 	  stack) to the SEC4 via job ring.
 
 	  To compile this as a module, choose M here: the module

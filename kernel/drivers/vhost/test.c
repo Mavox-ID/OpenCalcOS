@@ -6,16 +6,16 @@
  * test virtio server in host kernel.
  */
 
-#include <linux/compat.h>
-#include <linux/eventfd.h>
-#include <linux/vhost.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/rcupdate.h>
-#include <linux/file.h>
-#include <linux/slab.h>
+#include <beep/compat.h>
+#include <beep/eventfd.h>
+#include <beep/vhost.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
+#include <beep/rcupdate.h>
+#include <beep/file.h>
+#include <beep/slab.h>
 
 #include "test.h"
 #include "vhost.c"

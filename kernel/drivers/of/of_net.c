@@ -5,14 +5,14 @@
  *
  * Initially copied out of arch/powerpc/kernel/prom_parse.c
  */
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/of_net.h>
-#include <linux/phy.h>
-#include <linux/export.h>
+#include <beep/etherdevice.h>
+#include <beep/kernel.h>
+#include <beep/of_net.h>
+#include <beep/phy.h>
+#include <beep/export.h>
 
 /**
- * It maps 'enum phy_interface_t' found in include/linux/phy.h
+ * It maps 'enum phy_interface_t' found in include/beep/phy.h
  * into the device tree binding of 'phy-mode', so that Ethernet
  * device driver can get phy interface from device tree.
  */

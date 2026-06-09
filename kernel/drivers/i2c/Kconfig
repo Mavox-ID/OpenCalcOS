@@ -14,7 +14,7 @@ menuconfig I2C
 	  especially in the file called "summary" there.
 
 	  Both I2C and SMBus are supported here. You will need this for
-	  hardware sensors support, and also for Video For Linux support.
+	  hardware sensors support, and also for Video For Beep support.
 
 	  If you want I2C support, you should say Y here and also to the
 	  specific driver for your bus adapter(s) below.

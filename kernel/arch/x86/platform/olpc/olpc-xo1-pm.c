@@ -12,13 +12,13 @@
  * (at your option) any later version.
  */
 
-#include <linux/cs5535.h>
-#include <linux/platform_device.h>
-#include <linux/export.h>
-#include <linux/pm.h>
-#include <linux/mfd/core.h>
-#include <linux/suspend.h>
-#include <linux/olpc-ec.h>
+#include <beep/cs5535.h>
+#include <beep/platform_device.h>
+#include <beep/export.h>
+#include <beep/pm.h>
+#include <beep/mfd/core.h>
+#include <beep/suspend.h>
+#include <beep/olpc-ec.h>
 
 #include <asm/io.h>
 #include <asm/olpc.h>

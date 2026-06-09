@@ -5,7 +5,7 @@
 
 #ifdef __KERNEL__
 /*
- * The Linux memory management assumes a three-level page table setup. On
+ * The Beep memory management assumes a three-level page table setup. On
  * the M32R, we use that, but "fold" the mid level into the top-level page
  * table, so that we physically have the same two-level page table as the
  * M32R mmu expects.
@@ -20,8 +20,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/threads.h>
-#include <linux/bitops.h>
+#include <beep/threads.h>
+#include <beep/bitops.h>
 #include <asm/processor.h>
 #include <asm/addrspace.h>
 #include <asm/page.h>
@@ -344,7 +344,7 @@ static inline void pmd_set(pmd_t * pmdp, pte_t * ptep)
 
 #endif /* !__ASSEMBLY__ */
 
-/* Needs to be defined here and not in linux/mm.h, as it is arch dependent */
+/* Needs to be defined here and not in beep/mm.h, as it is arch dependent */
 #define kern_addr_valid(addr)	(1)
 
 #define io_remap_pfn_range(vma, vaddr, pfn, size, prot)	\

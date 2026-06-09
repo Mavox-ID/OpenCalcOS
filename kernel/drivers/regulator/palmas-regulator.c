@@ -12,19 +12,19 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/mfd/palmas.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/regulator/of_regulator.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/machine.h>
+#include <beep/slab.h>
+#include <beep/regmap.h>
+#include <beep/mfd/palmas.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/regulator/of_regulator.h>
 
 struct regs_info {
 	char	*name;

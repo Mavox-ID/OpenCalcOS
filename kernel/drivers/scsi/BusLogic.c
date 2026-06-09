@@ -1,7 +1,7 @@
 
 /*
 
-  Linux Driver for BusLogic MultiMaster and FlashPoint SCSI Host Adapters
+  Beep Driver for BusLogic MultiMaster and FlashPoint SCSI Host Adapters
 
   Copyright 1995-1998 by Leonard N. Zubkoff <lnz@dandelion.com>
 
@@ -18,7 +18,7 @@
   sent directly to him for evaluation and testing.
 
   Special thanks to Wayne Yen, Jin-Lon Hon, and Alex Win of BusLogic, whose
-  advice has been invaluable, to David Gentzel, for writing the original Linux
+  advice has been invaluable, to David Gentzel, for writing the original Beep
   BusLogic driver, and to Paul Gortmaker, for being such a dedicated test site.
 
   Finally, special thanks to Mylex/BusLogic for making the FlashPoint SCCB
@@ -29,20 +29,20 @@
 #define BusLogic_DriverVersion		"2.1.16"
 #define BusLogic_DriverDate		"18 July 2002"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/stat.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/jiffies.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/types.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/mm.h>
+#include <beep/stat.h>
+#include <beep/pci.h>
+#include <beep/spinlock.h>
+#include <beep/jiffies.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
 #include <scsi/scsicam.h>
 
 #include <asm/dma.h>
@@ -64,7 +64,7 @@ static struct scsi_host_template Bus_Logic_template;
 
 /*
   BusLogic_DriverOptionsCount is a count of the number of BusLogic Driver
-  Options specifications provided via the Linux Kernel Command Line or via
+  Options specifications provided via the Beep Kernel Command Line or via
   the Loadable Kernel Module Installation Facility.
 */
 
@@ -73,7 +73,7 @@ static int BusLogic_DriverOptionsCount;
 
 /*
   BusLogic_DriverOptions is an array of Driver Options structures representing
-  BusLogic Driver Options specifications provided via the Linux Kernel Command
+  BusLogic Driver Options specifications provided via the Beep Kernel Command
   Line or via the Loadable Kernel Module Installation Facility.
 */
 
@@ -3383,7 +3383,7 @@ static bool __init BusLogic_ParseKeyword(char **StringPointer, char *Keyword)
   BusLogic_ParseDriverOptions handles processing of BusLogic Driver Options
   specifications.
 
-  BusLogic Driver Options may be specified either via the Linux Kernel Command
+  BusLogic Driver Options may be specified either via the Beep Kernel Command
   Line or via the Loadable Kernel Module Installation Facility.  Driver Options
   for multiple host adapters may be specified either by separating the option
   strings by a semicolon, or by specifying multiple "BusLogic=" strings on the

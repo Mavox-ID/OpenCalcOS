@@ -20,7 +20,7 @@
 
 #include "rtl2832_priv.h"
 #include "dvb_math.h"
-#include <linux/bitops.h>
+#include <beep/bitops.h>
 
 int rtl2832_debug;
 module_param_named(debug, rtl2832_debug, int, 0644);

@@ -5,12 +5,12 @@
  *
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/errno.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/errno.h>
 
 #define PIC32_NULL	0x00
 #define PIC32_RD	0x01

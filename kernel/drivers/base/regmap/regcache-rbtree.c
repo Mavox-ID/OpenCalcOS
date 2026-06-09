@@ -10,11 +10,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/debugfs.h>
-#include <linux/rbtree.h>
-#include <linux/seq_file.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/debugfs.h>
+#include <beep/rbtree.h>
+#include <beep/seq_file.h>
 
 #include "internal.h"
 

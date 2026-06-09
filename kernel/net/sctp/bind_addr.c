@@ -42,9 +42,9 @@
  * be incorporated into the next SCTP release.
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/in.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/in.h>
 #include <net/sock.h>
 #include <net/ipv6.h>
 #include <net/if_inet6.h>

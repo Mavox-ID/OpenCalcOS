@@ -10,8 +10,8 @@
  * option) any later version.
  */
 
-#include <linux/rio.h>
-#include <linux/module.h>
+#include <beep/rio.h>
+#include <beep/module.h>
 
 /*
  * These interrupt-safe spinlocks protect all accesses to RIO

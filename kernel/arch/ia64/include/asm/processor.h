@@ -67,17 +67,17 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/cache.h>
-#include <linux/compiler.h>
-#include <linux/threads.h>
-#include <linux/types.h>
+#include <beep/cache.h>
+#include <beep/compiler.h>
+#include <beep/threads.h>
+#include <beep/types.h>
 
 #include <asm/fpu.h>
 #include <asm/page.h>
 #include <asm/percpu.h>
 #include <asm/rse.h>
 #include <asm/unwind.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #ifdef CONFIG_NUMA
 #include <asm/nodedata.h>
 #endif

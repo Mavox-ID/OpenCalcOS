@@ -1,26 +1,26 @@
 /*
- *  Copyright (C) 2000-2002	Andre Hedrick <andre@linux-ide.org>
+ *  Copyright (C) 2000-2002	Andre Hedrick <andre@beep-ide.org>
  *  Copyright (C) 2003		Red Hat
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/genhd.h>
-#include <linux/blkpg.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/ide.h>
-#include <linux/bitops.h>
-#include <linux/nmi.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/major.h>
+#include <beep/errno.h>
+#include <beep/genhd.h>
+#include <beep/blkpg.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/ide.h>
+#include <beep/bitops.h>
+#include <beep/nmi.h>
 
 #include <asm/byteorder.h>
 #include <asm/irq.h>

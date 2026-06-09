@@ -1,7 +1,7 @@
 #ifndef __ACPI_CONTAINER_H
 #define __ACPI_CONTAINER_H
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 struct acpi_container {
 	acpi_handle handle;

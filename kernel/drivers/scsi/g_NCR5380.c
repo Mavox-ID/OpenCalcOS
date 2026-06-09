@@ -3,7 +3,7 @@
  *	
  * Copyright 1993, Drew Eckhardt
  *	Visionary Computing
- *	(Unix and Linux consulting and custom programming)
+ *	(Unix and Beep consulting and custom programming)
  *	drew@colorado.edu
  *      +1 (303) 440-4894
  *
@@ -101,18 +101,18 @@
 #endif
 
 #include <asm/io.h>
-#include <linux/signal.h>
-#include <linux/blkdev.h>
+#include <beep/signal.h>
+#include <beep/blkdev.h>
 #include "scsi.h"
 #include <scsi/scsi_host.h>
 #include "g_NCR5380.h"
 #include "NCR5380.h"
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/isapnp.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
+#include <beep/stat.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/isapnp.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
 
 #define NCR_NOT_SET 0
 static int ncr_irq = NCR_NOT_SET;
@@ -540,7 +540,7 @@ int generic_NCR5380_release_resources(struct Scsi_Host *instance)
  * 
  * 	XXX Most SCSI boards use this mapping, I could be incorrect.  Someone
  *	using hard disks on a trantor should verify that this mapping
- *	corresponds to that used by the BIOS / ASPI driver by running the linux
+ *	corresponds to that used by the BIOS / ASPI driver by running the beep
  *	fdisk program and matching the H_C_S coordinates to what DOS uses.
  *
  *	Locks: none
@@ -926,7 +926,7 @@ static struct scsi_host_template driver_template = {
 	.cmd_per_lun    	= CMD_PER_LUN,
         .use_clustering		= DISABLE_CLUSTERING,
 };
-#include <linux/module.h>
+#include <beep/module.h>
 #include "scsi_module.c"
 
 module_param(ncr_irq, int, 0);

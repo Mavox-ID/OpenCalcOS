@@ -16,32 +16,32 @@
  * bootup setup stuff..
  */
 
-#include <linux/cpu.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/user.h>
-#include <linux/tty.h>
-#include <linux/major.h>
-#include <linux/interrupt.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/console.h>
-#include <linux/pci.h>
-#include <linux/utsname.h>
-#include <linux/adb.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/cpuidle.h>
-#include <linux/of.h>
-#include <linux/kexec.h>
+#include <beep/cpu.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/user.h>
+#include <beep/tty.h>
+#include <beep/major.h>
+#include <beep/interrupt.h>
+#include <beep/reboot.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/console.h>
+#include <beep/pci.h>
+#include <beep/utsname.h>
+#include <beep/adb.h>
+#include <beep/export.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/seq_file.h>
+#include <beep/root_dev.h>
+#include <beep/cpuidle.h>
+#include <beep/of.h>
+#include <beep/kexec.h>
 
 #include <asm/mmu.h>
 #include <asm/processor.h>
@@ -475,7 +475,7 @@ static void __init pSeries_setup_arch(void)
 static int __init pSeries_init_panel(void)
 {
 	/* Manually leave the kernel version on the panel. */
-	ppc_md.progress("Linux ppc64\n", 0);
+	ppc_md.progress("Beep ppc64\n", 0);
 	ppc_md.progress(init_utsname()->version, 0);
 
 	return 0;

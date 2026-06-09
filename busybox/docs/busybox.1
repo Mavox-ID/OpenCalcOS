@@ -58,13 +58,13 @@
 .\" ========================================================================
 .\"
 .IX Title "BUSYBOX 1"
-.TH BUSYBOX 1 2026-06-07 "version 1.36.1" busybox
+.TH BUSYBOX 1 2026-06-09 "version 1.36.1" busybox
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
 .nh
 .SH NAME
-BusyBox \- The Swiss Army Knife of Embedded Linux
+BusyBox \- The Swiss Army Knife of Embedded Beep
 .SH SYNTAX
 .IX Header "SYNTAX"
 .Vb 1
@@ -76,7 +76,7 @@ BusyBox \- The Swiss Army Knife of Embedded Linux
 .IX Header "DESCRIPTION"
 BusyBox combines tiny versions of many common UNIX utilities into a single
 small executable. It provides minimalist replacements for most of the utilities
-you usually find in GNU coreutils, util\-linux, etc. The utilities in BusyBox
+you usually find in GNU coreutils, util\-beep, etc. The utilities in BusyBox
 generally have fewer options than their full\-featured GNU cousins; however, the
 options that are included provide the expected functionality and behave very
 much like their GNU counterparts.
@@ -84,7 +84,7 @@ much like their GNU counterparts.
 BusyBox has been written with size\-optimization and limited resources in mind.
 It is also extremely modular so you can easily include or exclude commands (or
 features) at compile time. This makes it easy to customize your embedded
-systems. To create a working system, just add /dev, /conf, and a Linux kernel.
+systems. To create a working system, just add /dev, /conf, and a Beep kernel.
 BusyBox provides a fairly complete POSIX environment for any small or embedded
 system.
 .PP
@@ -144,19 +144,14 @@ been enabled, more detailed usage information will also be available.
 .IX Header "COMMANDS"
 Currently available applets include:
 .PP
-.Vb 6
-\&        [, [[, basename, bash, cat, chmod, clear, cp, dd, dirname, dmesg,
-\&        echo, find, free, hd, hexdump, hexedit, hush, i2cdetect, i2cdump,
-\&        i2cget, i2cset, i2ctransfer, init, kill, linuxrc, ln, ls, mkdir,
-\&        mount, mountpoint, mv, poweroff, printf, ps, pwd, reboot, rm, rmdir,
-\&        setsid, sh, sha256sum, sleep, su, test, top, touch, true, umount,
-\&        uname, uptime, vi, watch, which, xxd, yes
+.Vb 4
+\&        bash, beeprc, busybox, cat, chmod, clear, cp, dd, dmesg, echo, free,
+\&        halt, hexdump, hexedit, hush, init, kill, ln, ls, mkdir, mount,
+\&        mountpoint, mv, poweroff, printf, pwd, reboot, rm, rmdir, sh,
+\&        sha256sum, sleep, top, touch, umount, uname, uptime, watch
 .Ve
 .SH "COMMAND DESCRIPTIONS"
 .IX Header "COMMAND DESCRIPTIONS"
-.IP \fBbasename\fR 4
-.IX Item "basename"
-basename FILE [SUFFIX] | \-a FILE... | \-s SUFFIX FILE...
 .IP \fBbash\fR 4
 .IX Item "bash"
 bash [\-enxl] [\-c \*(AqSCRIPT\*(Aq [ARG0 ARGS] | FILE ARGS | \-s ARGS]
@@ -178,24 +173,18 @@ or: cp [\-arPLHpfinlsu] SOURCE... { \-t DIRECTORY | DIRECTORY }
 dd [if=FILE] [of=FILE] [ibs=N obs=N/bs=N] [count=N] [skip=N] [seek=N]
 	[conv=notrunc|noerror|sync|fsync]
 	[iflag=skip_bytes|count_bytes|fullblock|direct] [oflag=seek_bytes|append|direct]
-.IP \fBdirname\fR 4
-.IX Item "dirname"
-dirname FILENAME
 .IP \fBdmesg\fR 4
 .IX Item "dmesg"
 dmesg [\-cr] [\-n LEVEL] [\-s SIZE]
 .IP \fBecho\fR 4
 .IX Item "echo"
 echo [\-neE] [ARG]...
-.IP \fBfind\fR 4
-.IX Item "find"
-find [\-HL] [PATH]... [OPTIONS] [ACTIONS]
 .IP \fBfree\fR 4
 .IX Item "free"
 free
-.IP \fBhd\fR 4
-.IX Item "hd"
-hd FILE...
+.IP \fBhalt\fR 4
+.IX Item "halt"
+halt [\-d DELAY] [\-nfw]
 .IP \fBhexdump\fR 4
 .IX Item "hexdump"
 hexdump [\-bcdoxCv] [\-e FMT] [\-f FMT_FILE] [\-n LEN] [\-s OFS] [FILE]...
@@ -205,21 +194,6 @@ hexedit FILE
 .IP \fBhush\fR 4
 .IX Item "hush"
 hush [\-enxl] [\-c \*(AqSCRIPT\*(Aq [ARG0 ARGS] | FILE ARGS | \-s ARGS]
-.IP \fBi2cdetect\fR 4
-.IX Item "i2cdetect"
-i2cdetect \-l | \-F I2CBUS | [\-ya] [\-q|\-r] I2CBUS [FIRST LAST]
-.IP \fBi2cdump\fR 4
-.IX Item "i2cdump"
-i2cdump [\-fy] [\-r FIRST\-LAST] BUS ADDR [MODE]
-.IP \fBi2cget\fR 4
-.IX Item "i2cget"
-i2cget [\-fy] BUS CHIP\-ADDRESS [DATA\-ADDRESS [MODE]]
-.IP \fBi2cset\fR 4
-.IX Item "i2cset"
-i2cset [\-fy] [\-m MASK] BUS CHIP\-ADDRESS DATA\-ADDRESS [VALUE] ... [MODE]
-.IP \fBi2ctransfer\fR 4
-.IX Item "i2ctransfer"
-i2ctransfer [\-fay] I2CBUS { rLENGTH[@ADDR] | wLENGTH[@ADDR] DATA...}...
 .IP \fBinit\fR 4
 .IX Item "init"
 init
@@ -251,9 +225,6 @@ poweroff [\-d DELAY] [\-nf]
 .IP \fBprintf\fR 4
 .IX Item "printf"
 printf FORMAT [ARG]...
-.IP \fBps\fR 4
-.IX Item "ps"
-ps
 .IP \fBpwd\fR 4
 .IX Item "pwd"
 pwd
@@ -266,9 +237,6 @@ rm [\-irf] FILE...
 .IP \fBrmdir\fR 4
 .IX Item "rmdir"
 rmdir [\-p] DIRECTORY...
-.IP \fBsetsid\fR 4
-.IX Item "setsid"
-setsid [\-c] PROG ARGS
 .IP \fBsh\fR 4
 .IX Item "sh"
 sh [\-enxl] [\-c \*(AqSCRIPT\*(Aq [ARG0 ARGS] | FILE ARGS | \-s ARGS]
@@ -278,9 +246,6 @@ sha256sum [\-c[sw]] [FILE]...
 .IP \fBsleep\fR 4
 .IX Item "sleep"
 sleep [N]...
-.IP \fBsu\fR 4
-.IX Item "su"
-su [\-lmp] [\-s SH] [\-] [USER [FILE ARGS | \-c \*(AqCMD\*(Aq [ARG0 ARGS]]]
 .IP \fBtop\fR 4
 .IX Item "top"
 top [\-bmH] [\-n COUNT] [\-d SECONDS]
@@ -296,21 +261,9 @@ uname [\-amnrspvio]
 .IP \fBuptime\fR 4
 .IX Item "uptime"
 uptime
-.IP \fBvi\fR 4
-.IX Item "vi"
-vi [\-c CMD] [\-R] [\-H] [FILE]...
 .IP \fBwatch\fR 4
 .IX Item "watch"
 watch [\-n SEC] [\-t] PROG ARGS
-.IP \fBwhich\fR 4
-.IX Item "which"
-which [\-a] COMMAND...
-.IP \fBxxd\fR 4
-.IX Item "xxd"
-xxd [\-pri] [\-g N] [\-c N] [\-l LEN] [\-s OFS] [\-o OFS] [FILE]
-.IP \fByes\fR 4
-.IX Item "yes"
-yes [STRING]
 .SH "LIBC NSS"
 .IX Header "LIBC NSS"
 GNU Libc (glibc) uses the Name Service Switch (NSS) to configure the behavior
@@ -335,7 +288,7 @@ addition to making your system significantly smaller, uClibc does not require th
 use of any NSS support files or libraries.
 .SH MAINTAINER
 .IX Header "MAINTAINER"
-Denis Vlasenko <vda.linux@googlemail.com>
+Denis Vlasenko <vda.beep@googlemail.com>
 .SH AUTHORS
 .IX Header "AUTHORS"
 The following people have contributed code to BusyBox whether they know it or
@@ -399,7 +352,7 @@ Dave Cinege <dcinege@psychosis.com>
 .PP
 .Vb 2
 \&    more(v2), makedevs, dutmp, modularization, auto links file,
-\&    various fixes, Linux Router Project maintenance
+\&    various fixes, Beep Router Project maintenance
 .Ve
 .PP
 Jordan Crouse <jordan@cosmicpenguin.net>

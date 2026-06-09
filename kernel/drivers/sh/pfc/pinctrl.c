@@ -11,18 +11,18 @@
 
 #define pr_fmt(fmt) DRV_NAME " " KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/sh_pfc.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf-generic.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/sh_pfc.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/platform_device.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/pinctrl/pinctrl.h>
+#include <beep/pinctrl/pinconf.h>
+#include <beep/pinctrl/pinmux.h>
+#include <beep/pinctrl/pinconf-generic.h>
 
 struct sh_pfc_pinctrl {
 	struct pinctrl_dev *pctl;
@@ -368,7 +368,7 @@ static int sh_pfc_map_gpios(struct sh_pfc *pfc, struct sh_pfc_pinctrl *pmx)
 	spin_lock_irqsave(&pfc->lock, flags);
 
 	/*
-	 * We don't necessarily have a 1:1 mapping between pin and linux
+	 * We don't necessarily have a 1:1 mapping between pin and beep
 	 * GPIO number, as the latter maps to the associated enum_id.
 	 * Care needs to be taken to translate back to pin space when
 	 * dealing with any pin configurations.

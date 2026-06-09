@@ -1,8 +1,8 @@
-/*  D-Link DL2000-based Gigabit Ethernet Adapter Linux driver */
+/*  D-Link DL2000-based Gigabit Ethernet Adapter Beep driver */
 /*
     Copyright (c) 2001, 2002 by D-Link Corporation
     Written by Edward Peng.<edward_peng@dlink.com.tw>
-    Created 03-May-2001, base on Linux' sundance.c.
+    Created 03-May-2001, base on Beep' sundance.c.
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -10,11 +10,11 @@
     (at your option) any later version.
 */
 
-#define DRV_NAME	"DL2000/TC902x-based linux driver"
+#define DRV_NAME	"DL2000/TC902x-based beep driver"
 #define DRV_VERSION	"v1.19"
 #define DRV_RELDATE	"2007/08/12"
 #include "dl2k.h"
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 
 #define dw32(reg, val)	iowrite32(val, ioaddr + (reg))
 #define dw16(reg, val)	iowrite16(val, ioaddr + (reg))
@@ -1763,7 +1763,7 @@ module_pci_driver(rio_driver);
 
 Compile command:
 
-gcc -D__KERNEL__ -DMODULE -I/usr/src/linux/include -Wall -Wstrict-prototypes -O2 -c dl2k.c
+gcc -D__KERNEL__ -DMODULE -I/usr/src/beep/include -Wall -Wstrict-prototypes -O2 -c dl2k.c
 
 Read Documentation/networking/dl2k.txt for details.
 

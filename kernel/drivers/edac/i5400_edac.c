@@ -11,7 +11,7 @@
  * Red Hat Inc. http://www.redhat.com
  *
  * Forked and adapted from the i5000_edac driver which was
- * written by Douglas Thompson Linux Networx <norsk5@xmission.com>
+ * written by Douglas Thompson Beep Networx <norsk5@xmission.com>
  *
  * This module is based on the following document:
  *
@@ -24,13 +24,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
-#include <linux/edac.h>
-#include <linux/mmzone.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/slab.h>
+#include <beep/edac.h>
+#include <beep/mmzone.h>
 
 #include "edac_core.h"
 

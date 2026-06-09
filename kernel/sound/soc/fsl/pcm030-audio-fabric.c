@@ -10,11 +10,11 @@
  * kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
 
 #include <sound/soc.h>
 

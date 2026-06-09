@@ -18,11 +18,11 @@
  * problems, but...
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
 #include <asm/hardware.h>
 #include <asm/io.h>
 #include <asm/mmzone.h>

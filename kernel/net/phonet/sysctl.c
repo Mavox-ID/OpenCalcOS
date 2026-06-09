@@ -22,13 +22,13 @@
  * 02110-1301 USA
  */
 
-#include <linux/seqlock.h>
-#include <linux/sysctl.h>
-#include <linux/errno.h>
-#include <linux/init.h>
+#include <beep/seqlock.h>
+#include <beep/sysctl.h>
+#include <beep/errno.h>
+#include <beep/init.h>
 
 #include <net/sock.h>
-#include <linux/phonet.h>
+#include <beep/phonet.h>
 #include <net/phonet/phonet.h>
 
 #define DYNAMIC_PORT_MIN	0x40

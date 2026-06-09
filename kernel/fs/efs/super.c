@@ -6,16 +6,16 @@
  * Portions derived from work (c) 1995,1996 Christian Vogelgsang.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/exportfs.h>
-#include <linux/slab.h>
-#include <linux/buffer_head.h>
-#include <linux/vfs.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/exportfs.h>
+#include <beep/slab.h>
+#include <beep/buffer_head.h>
+#include <beep/vfs.h>
 
 #include "efs.h"
-#include <linux/efs_vh.h>
-#include <linux/efs_fs_sb.h>
+#include <beep/efs_vh.h>
+#include <beep/efs_fs_sb.h>
 
 static int efs_statfs(struct dentry *dentry, struct kstatfs *buf);
 static int efs_fill_super(struct super_block *s, void *d, int silent);
@@ -48,8 +48,8 @@ static struct pt_types sgi_pt_types[] = {
 	{0x0A,		"SGI xfs"},
 	{0x0B,		"SGI xfslog"},
 	{0x0C,		"SGI xlv"},
-	{0x82,		"Linux swap"},
-	{0x83,		"Linux native"},
+	{0x82,		"Beep swap"},
+	{0x83,		"Beep native"},
 	{0,		NULL}
 };
 

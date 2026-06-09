@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/dev-uart.c
+/* beep/arch/arm/plat-samsung/dev-uart.c
  *	originally from arch/arm/plat-s3c24xx/devs.c
  *x
  * Copyright (c) 2004 Simtec Electronics
@@ -12,8 +12,8 @@
  *
 */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
 
 #include <plat/devs.h>
 

@@ -1,8 +1,8 @@
 /*
-   3w-9xxx.c -- 3ware 9000 Storage Controller device driver for Linux.
+   3w-9xxx.c -- 3ware 9000 Storage Controller device driver for Beep.
 
-   Written By: Adam Radford <linuxraid@lsi.com>
-   Modifications By: Tom Couch <linuxraid@lsi.com>
+   Written By: Adam Radford <beepraid@lsi.com>
+   Modifications By: Tom Couch <beepraid@lsi.com>
 
    Copyright (C) 2004-2009 Applied Micro Circuits Corporation.
    Copyright (C) 2010 LSI Corporation.
@@ -41,7 +41,7 @@
    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
    Bugs/Comments/Suggestions should be mailed to:
-   linuxraid@lsi.com
+   beepraid@lsi.com
 
    For more information, goto:
    http://www.lsi.com
@@ -81,18 +81,18 @@
    2.26.02.014 - Force 60 second timeout default.
 */
 
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/reboot.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/moduleparam.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/time.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/uaccess.h>
@@ -112,7 +112,7 @@ extern struct timezone sys_tz;
 
 /* Module parameters */
 MODULE_AUTHOR ("LSI");
-MODULE_DESCRIPTION ("3ware 9000 Storage Controller Linux Driver");
+MODULE_DESCRIPTION ("3ware 9000 Storage Controller Beep Driver");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(TW_DRIVER_VERSION);
 
@@ -2334,7 +2334,7 @@ static struct pci_driver twa_driver = {
 /* This function is called on driver initialization */
 static int __init twa_init(void)
 {
-	printk(KERN_WARNING "3ware 9000 Storage Controller device driver for Linux v%s.\n", TW_DRIVER_VERSION);
+	printk(KERN_WARNING "3ware 9000 Storage Controller device driver for Beep v%s.\n", TW_DRIVER_VERSION);
 
 	return pci_register_driver(&twa_driver);
 } /* End twa_init() */

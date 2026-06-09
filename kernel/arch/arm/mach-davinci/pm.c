@@ -8,12 +8,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/spinlock.h>
+#include <beep/pm.h>
+#include <beep/suspend.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/spinlock.h>
 
 #include <asm/cacheflush.h>
 #include <asm/delay.h>

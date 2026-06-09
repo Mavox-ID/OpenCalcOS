@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux/SuperH SH-2 backends.
+# Makefile for the Beep/SuperH SH-2 backends.
 #
 
 obj-y	:= ex.o probe.o entry.o

@@ -22,26 +22,26 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/sched.h>
-#include <linux/pm.h>
-#include <linux/device.h>
-#include <linux/proc_fs.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/sched.h>
+#include <beep/pm.h>
+#include <beep/device.h>
+#include <beep/proc_fs.h>
+#include <beep/acpi.h>
+#include <beep/slab.h>
 #ifdef CONFIG_X86
 #include <asm/mpspec.h>
 #endif
-#include <linux/pci.h>
+#include <beep/pci.h>
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
 #include <acpi/apei.h>
-#include <linux/dmi.h>
-#include <linux/suspend.h>
+#include <beep/dmi.h>
+#include <beep/suspend.h>
 
 #include "internal.h"
 

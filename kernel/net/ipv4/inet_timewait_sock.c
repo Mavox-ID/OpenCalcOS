@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -8,10 +8,10 @@
  *		From code orinally in TCP
  */
 
-#include <linux/kernel.h>
-#include <linux/kmemcheck.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/kmemcheck.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <net/inet_hashtables.h>
 #include <net/inet_timewait_sock.h>
 #include <net/ip.h>
@@ -234,7 +234,7 @@ rescan:
 		spin_unlock(&twdr->death_lock);
 		__inet_twsk_kill(tw, twdr->hashinfo);
 #ifdef CONFIG_NET_NS
-		NET_INC_STATS_BH(twsk_net(tw), LINUX_MIB_TIMEWAITED);
+		NET_INC_STATS_BH(twsk_net(tw), BEEP_MIB_TIMEWAITED);
 #endif
 		inet_twsk_put(tw);
 		killed++;
@@ -255,7 +255,7 @@ rescan:
 
 	twdr->tw_count -= killed;
 #ifndef CONFIG_NET_NS
-	NET_ADD_STATS_BH(&init_net, LINUX_MIB_TIMEWAITED, killed);
+	NET_ADD_STATS_BH(&init_net, BEEP_MIB_TIMEWAITED, killed);
 #endif
 	return ret;
 }
@@ -356,7 +356,7 @@ void inet_twsk_schedule(struct inet_timewait_sock *tw,
 	 * time to detect the loss is about RTO*(2^N - 1) with exponential
 	 * backoff). Normal timewait length is calculated so, that we
 	 * waited at least for one retransmitted FIN (maximal RTO is 120sec).
-	 * [ BTW Linux. following BSD, violates this requirement waiting
+	 * [ BTW Beep. following BSD, violates this requirement waiting
 	 *   only for 60sec, we should wait at least for 240 secs.
 	 *   Well, 240 consumes too much of resources 8)
 	 * ]
@@ -446,7 +446,7 @@ void inet_twdr_twcal_tick(unsigned long data)
 				__inet_twsk_del_dead_node(tw);
 				__inet_twsk_kill(tw, twdr->hashinfo);
 #ifdef CONFIG_NET_NS
-				NET_INC_STATS_BH(twsk_net(tw), LINUX_MIB_TIMEWAITKILLED);
+				NET_INC_STATS_BH(twsk_net(tw), BEEP_MIB_TIMEWAITKILLED);
 #endif
 				inet_twsk_put(tw);
 				killed++;
@@ -472,7 +472,7 @@ out:
 	if ((twdr->tw_count -= killed) == 0)
 		del_timer(&twdr->tw_timer);
 #ifndef CONFIG_NET_NS
-	NET_ADD_STATS_BH(&init_net, LINUX_MIB_TIMEWAITKILLED, killed);
+	NET_ADD_STATS_BH(&init_net, BEEP_MIB_TIMEWAITKILLED, killed);
 #endif
 	spin_unlock(&twdr->death_lock);
 }

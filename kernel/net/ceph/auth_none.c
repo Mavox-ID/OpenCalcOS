@@ -1,13 +1,13 @@
 
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/random.h>
+#include <beep/slab.h>
 
-#include <linux/ceph/decode.h>
-#include <linux/ceph/auth.h>
+#include <beep/ceph/decode.h>
+#include <beep/ceph/auth.h>
 
 #include "auth_none.h"
 

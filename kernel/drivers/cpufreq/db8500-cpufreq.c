@@ -8,13 +8,13 @@
  * Author: Jonas Aaberg <jonas.aberg@stericsson.com>
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/cpufreq.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/cpufreq.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
 #include <mach/id.h>
 
 static struct cpufreq_frequency_table *freq_table;

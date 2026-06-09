@@ -8,11 +8,11 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
 #include <asm/mach/arch.h>
 #include <plat/irq.h>
 #include <asm/mach/irq.h>

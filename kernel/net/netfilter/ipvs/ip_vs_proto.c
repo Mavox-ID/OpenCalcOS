@@ -1,7 +1,7 @@
 /*
  * ip_vs_proto.c: transport protocol load balancing support for IPVS
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@beepvirtualserver.org>
  *              Julian Anastasov <ja@ssi.bg>
  *
  *              This program is free software; you can redistribute it and/or
@@ -16,17 +16,17 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/gfp.h>
-#include <linux/in.h>
-#include <linux/ip.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/gfp.h>
+#include <beep/in.h>
+#include <beep/ip.h>
 #include <net/protocol.h>
 #include <net/tcp.h>
 #include <net/udp.h>
-#include <linux/stat.h>
-#include <linux/proc_fs.h>
+#include <beep/stat.h>
+#include <beep/proc_fs.h>
 
 #include <net/ip_vs.h>
 

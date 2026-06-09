@@ -12,9 +12,9 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/crypto.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/crypto.h>
 #include <crypto/algapi.h>
 
 #define ARC4_MIN_KEY_SIZE	1

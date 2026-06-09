@@ -12,9 +12,9 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/of_platform.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/of_platform.h>
 
 #include <asm/machdep.h>
 #include <asm/ipic.h>
@@ -23,10 +23,10 @@
 
 #if defined(CONFIG_TOUCHSCREEN_ADS7846) || \
     defined(CONFIG_TOUCHSCREEN_ADS7846_MODULE)
-#include <linux/interrupt.h>
-#include <linux/spi/ads7846.h>
-#include <linux/spi/spi.h>
-#include <linux/notifier.h>
+#include <beep/interrupt.h>
+#include <beep/spi/ads7846.h>
+#include <beep/spi/spi.h>
+#include <beep/notifier.h>
 
 static void *pdm360ng_gpio_base;
 

@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/arcfb.c -- FB driver for Arc monochrome LCD board
+ * beep/drivers/video/arcfb.c -- FB driver for Arc monochrome LCD board
  *
  * Copyright (C) 2005, Jaya Kumar <jayalk@intworks.biz>
  *
@@ -33,20 +33,20 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/arcfb.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/arcfb.h>
+#include <beep/platform_device.h>
 
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 
 #define floor8(a) (a&(~0x07))
 #define floorXres(a,xres) (a&(~(xres - 1)))

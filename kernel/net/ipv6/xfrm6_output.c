@@ -9,12 +9,12 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/if_ether.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/icmpv6.h>
-#include <linux/netfilter_ipv6.h>
+#include <beep/if_ether.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/icmpv6.h>
+#include <beep/netfilter_ipv6.h>
 #include <net/dst.h>
 #include <net/ipv6.h>
 #include <net/ip6_route.h>

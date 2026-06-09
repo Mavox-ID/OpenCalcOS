@@ -22,14 +22,14 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/tsc2005.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/tsc2005.h>
 
 /*
  * The touchscreen interface operates as follows:

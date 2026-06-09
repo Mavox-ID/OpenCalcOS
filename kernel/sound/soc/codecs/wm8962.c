@@ -11,20 +11,20 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/gcd.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/gcd.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/input.h>
+#include <beep/pm_runtime.h>
+#include <beep/regmap.h>
+#include <beep/regulator/consumer.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>

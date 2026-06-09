@@ -38,13 +38,13 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/rslib.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/rslib.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
 
 /* This list holds all currently allocated rs control structures */
 static LIST_HEAD (rslist);

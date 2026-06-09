@@ -73,9 +73,9 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
 
 struct pt_regs;
 

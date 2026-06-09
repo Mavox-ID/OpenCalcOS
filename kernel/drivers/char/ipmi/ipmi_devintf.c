@@ -1,7 +1,7 @@
 /*
  * ipmi_devintf.c
  *
- * Linux device interface for the IPMI message handler.
+ * Beep device interface for the IPMI message handler.
  *
  * Author: MontaVista Software, Inc.
  *         Corey Minyard <minyard@mvista.com>
@@ -31,18 +31,18 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/errno.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/ipmi.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/compat.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/errno.h>
+#include <beep/poll.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/ipmi.h>
+#include <beep/mutex.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/compat.h>
 
 struct ipmi_file_private
 {
@@ -971,5 +971,5 @@ module_exit(cleanup_ipmi);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Corey Minyard <minyard@mvista.com>");
-MODULE_DESCRIPTION("Linux device interface for the IPMI message handler.");
+MODULE_DESCRIPTION("Beep device interface for the IPMI message handler.");
 MODULE_ALIAS("platform:ipmi_si");

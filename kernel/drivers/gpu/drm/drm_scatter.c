@@ -2,13 +2,13 @@
  * \file drm_scatter.c
  * IOCTLs to manage scatter/gather memory
  *
- * \author Gareth Hughes <gareth@valinux.com>
+ * \author Gareth Hughes <gareth@vabeep.com>
  */
 
 /*
- * Created: Mon Dec 18 23:20:54 2000 by gareth@valinux.com
+ * Created: Mon Dec 18 23:20:54 2000 by gareth@vabeep.com
  *
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA Beep Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -31,8 +31,8 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
 #include <drm/drmP.h>
 
 #define DEBUG_SCATTER 0

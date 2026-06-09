@@ -16,17 +16,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/of_address.h>
-#include <linux/of_mdio.h>
-#include <linux/of_device.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/mii.h>
+#include <beep/of_address.h>
+#include <beep/of_mdio.h>
+#include <beep/of_device.h>
 
 #include <asm/io.h>
 #include <asm/ucc.h>	/* for ucc_set_qe_mux_mii_mng() */

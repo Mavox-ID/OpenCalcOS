@@ -23,9 +23,9 @@
 
 #include "pcmcia.h"
 
-#include <linux/ssb/ssb.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/ssb/ssb.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ciscode.h>

@@ -2,7 +2,7 @@
    comedi/drivers/dt2811.c
    Hardware driver for Data Translation DT2811
 
-   COMEDI - Linux Control and Measurement Device Interface
+   COMEDI - Beep Control and Measurement Device Interface
    History:
    Base Version  - David A. Schleef <ds@schleef.org>
    December 1998 - Updated to work.  David does not have a DT2811
@@ -45,10 +45,10 @@ Configuration options:
   [4] - D/A 1 range (same choices)
 */
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 static const char *driver_name = "dt2811";
 

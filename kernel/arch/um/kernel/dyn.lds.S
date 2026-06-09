@@ -1,4 +1,4 @@
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmbeep.lds.h>
 #include <asm/page.h>
 
 OUTPUT_FORMAT(ELF_FORMAT)

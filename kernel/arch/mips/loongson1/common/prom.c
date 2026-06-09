@@ -9,7 +9,7 @@
  * option) any later version.
  */
 
-#include <linux/serial_reg.h>
+#include <beep/serial_reg.h>
 #include <asm/bootinfo.h>
 
 #include <loongson1.h>

@@ -1,5 +1,5 @@
 /*
- * logfile.c - NTFS kernel journal handling. Part of the Linux-NTFS project.
+ * logfile.c - NTFS kernel journal handling. Part of the Beep-NTFS project.
  *
  * Copyright (c) 2002-2007 Anton Altaparmakov
  *
@@ -14,19 +14,19 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
 #ifdef NTFS_RW
 
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/buffer_head.h>
-#include <linux/bitops.h>
-#include <linux/log2.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/highmem.h>
+#include <beep/buffer_head.h>
+#include <beep/bitops.h>
+#include <beep/log2.h>
 
 #include "attrib.h"
 #include "aops.h"

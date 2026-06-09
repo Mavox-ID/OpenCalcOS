@@ -13,12 +13,12 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/clk.h>
+#include <beep/init.h>
+#include <beep/suspend.h>
+#include <beep/syscore_ops.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/clk.h>
 
 #include <asm/cacheflush.h>
 #include <asm/hardware/cache-l2x0.h>

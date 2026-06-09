@@ -15,7 +15,7 @@
 #define WM5100_ASOC_H
 
 #include <sound/soc.h>
-#include <linux/regmap.h>
+#include <beep/regmap.h>
 
 int wm5100_detect(struct snd_soc_codec *codec, struct snd_soc_jack *jack);
 

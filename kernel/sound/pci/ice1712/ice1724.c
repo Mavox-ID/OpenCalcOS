@@ -22,13 +22,13 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
 #include <sound/core.h>
 #include <sound/info.h>
 #include <sound/rawmidi.h>

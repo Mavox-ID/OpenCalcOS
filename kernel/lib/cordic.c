@@ -13,8 +13,8 @@
  * OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
  * CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#include <linux/module.h>
-#include <linux/cordic.h>
+#include <beep/module.h>
+#include <beep/cordic.h>
 
 #define CORDIC_ANGLE_GEN	39797
 #define CORDIC_PRECISION_SHIFT	16

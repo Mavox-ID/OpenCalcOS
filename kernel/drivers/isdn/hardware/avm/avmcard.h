@@ -10,9 +10,9 @@
 #ifndef _AVMCARD_H_
 #define _AVMCARD_H_
 
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
 
 #define	AVMB1_PORTLEN		0x1f
 #define AVM_MAXVERSION		8

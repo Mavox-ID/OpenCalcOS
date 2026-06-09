@@ -8,13 +8,13 @@
  * Copyright (C) 2009  Matt Fleming
  */
 
-#include <linux/vmalloc.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/bootmem.h>
-#include <linux/proc_fs.h>
+#include <beep/vmalloc.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/io.h>
+#include <beep/bootmem.h>
+#include <beep/proc_fs.h>
 #include <asm/fixmap.h>
 #include <asm/page.h>
 #include <asm/pgalloc.h>

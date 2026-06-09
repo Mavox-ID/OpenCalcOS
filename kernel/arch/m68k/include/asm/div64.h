@@ -5,7 +5,7 @@
 #include <asm-generic/div64.h>
 #else
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* n = n / base; return rem; */
 

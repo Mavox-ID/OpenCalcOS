@@ -35,14 +35,14 @@
  * devices.
  */
 
-#include <linux/module.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/ioctl.h>
-#include <linux/capability.h>
-#include <linux/uaccess.h>
-#include <linux/compat.h>
-#include <linux/math64.h>
+#include <beep/module.h>
+#include <beep/stat.h>
+#include <beep/slab.h>
+#include <beep/ioctl.h>
+#include <beep/capability.h>
+#include <beep/uaccess.h>
+#include <beep/compat.h>
+#include <beep/math64.h>
 #include <mtd/ubi-user.h>
 #include "ubi.h"
 

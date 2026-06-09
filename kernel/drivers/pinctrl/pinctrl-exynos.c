@@ -18,15 +18,15 @@
  * external gpio and wakeup interrupt support.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/irq.h>
-#include <linux/of_irq.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/irqdomain.h>
+#include <beep/irq.h>
+#include <beep/of_irq.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/err.h>
 
 #include <asm/mach/irq.h>
 

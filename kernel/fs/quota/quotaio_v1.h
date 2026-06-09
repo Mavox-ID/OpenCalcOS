@@ -1,7 +1,7 @@
-#ifndef _LINUX_QUOTAIO_V1_H
-#define _LINUX_QUOTAIO_V1_H
+#ifndef _BEEP_QUOTAIO_V1_H
+#define _BEEP_QUOTAIO_V1_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * The following constants define the amount of time given a user
@@ -30,4 +30,4 @@ struct v1_disk_dqblk {
 
 #define v1_dqoff(UID)      ((loff_t)((UID) * sizeof (struct v1_disk_dqblk)))
 
-#endif	/* _LINUX_QUOTAIO_V1_H */
+#endif	/* _BEEP_QUOTAIO_V1_H */

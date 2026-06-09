@@ -1,5 +1,5 @@
 /*
- *	linux/arch/cris/kernel/irq.c
+ *	beep/arch/cris/kernel/irq.c
  *
  *      Copyright (c) 2000-2002 Axis Communications AB
  *
@@ -12,10 +12,10 @@
 
 #include <asm/irq.h>
 #include <asm/current.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
 
 #define crisv10_mask_irq(irq_nr) (*R_VECT_MASK_CLR = 1 << (irq_nr));
 #define crisv10_unmask_irq(irq_nr) (*R_VECT_MASK_SET = 1 << (irq_nr));
@@ -23,7 +23,7 @@
 extern void kgdb_init(void);
 extern void breakpoint(void);
 
-/* don't use set_int_vector, it bypasses the linux interrupt handlers. it is
+/* don't use set_int_vector, it bypasses the beep interrupt handlers. it is
  * global just so that the kernel gdb can use it.
  */
 

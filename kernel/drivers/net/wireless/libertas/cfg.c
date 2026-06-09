@@ -8,11 +8,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/hardirq.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/ieee80211.h>
+#include <beep/hardirq.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
+#include <beep/slab.h>
+#include <beep/ieee80211.h>
 #include <net/cfg80211.h>
 #include <asm/unaligned.h>
 

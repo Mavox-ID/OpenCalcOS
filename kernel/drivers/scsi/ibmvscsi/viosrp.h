@@ -28,7 +28,7 @@
 /* SRP Information Units (IUs) are sent on a "Command/Response Queue" (CRQ)  */
 /* between partitions.  The definitions in this file are architected,        */
 /* and cannot be changed without breaking compatibility with other versions  */
-/* of Linux and other operating systems (AIX, OS/400) that talk this protocol*/
+/* of Beep and other operating systems (AIX, OS/400) that talk this protocol*/
 /* between logical partitions                                                */
 /*****************************************************************************/
 #ifndef VIOSRP_H
@@ -56,7 +56,7 @@ enum viosrp_crq_formats {
 	VIOSRP_MAD_FORMAT = 0x02,
 	VIOSRP_OS400_FORMAT = 0x03,
 	VIOSRP_AIX_FORMAT = 0x04,
-	VIOSRP_LINUX_FORMAT = 0x06,
+	VIOSRP_BEEP_FORMAT = 0x06,
 	VIOSRP_INLINE_FORMAT = 0x07
 };
 

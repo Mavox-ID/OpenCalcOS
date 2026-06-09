@@ -303,7 +303,7 @@ acpi_ut_initialize_buffer(struct acpi_buffer * buffer,
 	return (AE_OK);
 }
 
-#ifdef NOT_USED_BY_LINUX
+#ifdef NOT_USED_BY_BEEP
 /*******************************************************************************
  *
  * FUNCTION:    acpi_ut_allocate

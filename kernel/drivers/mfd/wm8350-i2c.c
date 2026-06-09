@@ -4,7 +4,7 @@
  * Copyright 2007, 2008 Wolfson Microelectronics PLC.
  *
  * Author: Liam Girdwood
- *         linux@wolfsonmicro.com
+ *         beep@wolfsonmicro.com
  *
  *  This program is free software; you can redistribute  it and/or modify it
  *  under  the terms of  the GNU General  Public License as published by the
@@ -13,15 +13,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/wm8350/core.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/wm8350/core.h>
+#include <beep/regmap.h>
+#include <beep/slab.h>
 
 static int wm8350_i2c_probe(struct i2c_client *i2c,
 			    const struct i2c_device_id *id)

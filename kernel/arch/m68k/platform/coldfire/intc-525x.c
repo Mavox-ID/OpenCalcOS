@@ -9,12 +9,12 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/io.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>
 

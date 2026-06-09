@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-versatile/pci.c
+ *  beep/arch/arm/mach-versatile/pci.c
  *
  * (C) Copyright Koninklijke Philips Electronics NV 2004. All rights reserved.
  * You can redistribute and/or modify this software under the terms of version 2
@@ -14,13 +14,13 @@
  * 14/04/2005 Initial version, colin.king@philips.com
  *
  */
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/init.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <asm/irq.h>

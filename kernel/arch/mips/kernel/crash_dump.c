@@ -1,6 +1,6 @@
-#include <linux/highmem.h>
-#include <linux/bootmem.h>
-#include <linux/crash_dump.h>
+#include <beep/highmem.h>
+#include <beep/bootmem.h>
+#include <beep/crash_dump.h>
 #include <asm/uaccess.h>
 
 static int __init parse_savemaxmem(char *p)

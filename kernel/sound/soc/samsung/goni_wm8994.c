@@ -11,7 +11,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <sound/soc.h>
 #include <sound/jack.h>
 

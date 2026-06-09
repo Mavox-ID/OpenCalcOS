@@ -10,7 +10,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the Beep kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -32,17 +32,17 @@
  * IN THE SOFTWARE.
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/uaccess.h>
-#include <linux/capability.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/device.h>
+#include <beep/miscdevice.h>
+#include <beep/uaccess.h>
+#include <beep/capability.h>
+#include <beep/poll.h>
+#include <beep/sched.h>
 
 #include <xen/interface/xen.h>
 #include <xen/events.h>

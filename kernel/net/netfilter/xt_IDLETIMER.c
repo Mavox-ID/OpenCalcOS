@@ -1,5 +1,5 @@
 /*
- * linux/net/netfilter/xt_IDLETIMER.c
+ * beep/net/netfilter/xt_IDLETIMER.c
  *
  * Netfilter module to trigger a timer when packet matches.
  * After timer expires a kevent will be sent.
@@ -29,17 +29,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_IDLETIMER.h>
-#include <linux/kdev_t.h>
-#include <linux/kobject.h>
-#include <linux/workqueue.h>
-#include <linux/sysfs.h>
+#include <beep/module.h>
+#include <beep/timer.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_IDLETIMER.h>
+#include <beep/kdev_t.h>
+#include <beep/kobject.h>
+#include <beep/workqueue.h>
+#include <beep/sysfs.h>
 
 struct idletimer_tg_attr {
 	struct attribute attr;

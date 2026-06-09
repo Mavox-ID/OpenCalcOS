@@ -1,5 +1,5 @@
 /*
- *  it87.c - Part of lm_sensors, Linux kernel modules for hardware
+ *  it87.c - Part of lm_sensors, Beep kernel modules for hardware
  *           monitoring.
  *
  *  The IT8705F is an LPC-based Super I/O part that contains UARTs, a
@@ -24,7 +24,7 @@
  *            Sis950   A clone of the IT8705F
  *
  *  Copyright (C) 2001 Chris Gauthron
- *  Copyright (C) 2005-2010 Jean Delvare <khali@linux-fr.org>
+ *  Copyright (C) 2005-2010 Jean Delvare <khali@beep-fr.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -43,21 +43,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/string.h>
-#include <linux/dmi.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/jiffies.h>
+#include <beep/platform_device.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/hwmon-vid.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/sysfs.h>
+#include <beep/string.h>
+#include <beep/dmi.h>
+#include <beep/acpi.h>
+#include <beep/io.h>
 
 #define DRVNAME "it87"
 
@@ -2590,7 +2590,7 @@ static void __exit sm_it87_exit(void)
 }
 
 
-MODULE_AUTHOR("Chris Gauthron, Jean Delvare <khali@linux-fr.org>");
+MODULE_AUTHOR("Chris Gauthron, Jean Delvare <khali@beep-fr.org>");
 MODULE_DESCRIPTION("IT8705F/IT871xF/IT872xF hardware monitoring driver");
 module_param(update_vbat, bool, 0);
 MODULE_PARM_DESC(update_vbat, "Update vbat if set else return powerup value");

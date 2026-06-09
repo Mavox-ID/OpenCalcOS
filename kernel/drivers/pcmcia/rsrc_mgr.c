@@ -12,9 +12,9 @@
  * (C) 1999		David A. Hinds
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
 
 #include <pcmcia/ss.h>
 #include <pcmcia/cistpl.h>

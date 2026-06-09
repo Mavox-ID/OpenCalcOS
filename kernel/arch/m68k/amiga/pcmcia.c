@@ -1,5 +1,5 @@
 /*
-** asm-m68k/pcmcia.c -- Amiga Linux PCMCIA support
+** asm-m68k/pcmcia.c -- Amiga Beep PCMCIA support
 **                      most information was found by disassembling card.resource
 **                      I'm still looking for an official doc !
 **
@@ -12,10 +12,10 @@
 ** Created: 12/10/97 by Alain Malek
 */
 
-#include <linux/types.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/jiffies.h>
+#include <beep/timer.h>
+#include <beep/module.h>
 
 #include <asm/amigayle.h>
 #include <asm/amipcmcia.h>

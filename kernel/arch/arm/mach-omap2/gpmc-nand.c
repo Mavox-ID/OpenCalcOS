@@ -9,11 +9,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/mtd/nand.h>
-#include <linux/platform_data/mtd-nand-omap2.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/mtd/nand.h>
+#include <beep/platform_data/mtd-nand-omap2.h>
 
 #include <asm/mach/flash.h>
 

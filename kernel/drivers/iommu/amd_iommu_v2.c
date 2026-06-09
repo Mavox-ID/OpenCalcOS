@@ -16,16 +16,16 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/mmu_notifier.h>
-#include <linux/amd-iommu.h>
-#include <linux/mm_types.h>
-#include <linux/profile.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/iommu.h>
-#include <linux/wait.h>
-#include <linux/pci.h>
-#include <linux/gfp.h>
+#include <beep/mmu_notifier.h>
+#include <beep/amd-iommu.h>
+#include <beep/mm_types.h>
+#include <beep/profile.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/iommu.h>
+#include <beep/wait.h>
+#include <beep/pci.h>
+#include <beep/gfp.h>
 
 #include "amd_iommu_types.h"
 #include "amd_iommu_proto.h"

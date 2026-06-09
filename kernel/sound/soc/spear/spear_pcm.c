@@ -11,13 +11,13 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
 #include <sound/core.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm.h>

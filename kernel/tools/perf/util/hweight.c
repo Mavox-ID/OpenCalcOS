@@ -1,4 +1,4 @@
-#include <linux/bitops.h>
+#include <beep/bitops.h>
 
 /**
  * hweightN - returns the hamming weight of a N-bit word

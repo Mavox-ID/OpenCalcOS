@@ -33,18 +33,18 @@
  */
 
 
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/usb.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/audio-v2.h>
-#include <linux/module.h>
+#include <beep/bitops.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/usb.h>
+#include <beep/moduleparam.h>
+#include <beep/mutex.h>
+#include <beep/usb/audio.h>
+#include <beep/usb/audio-v2.h>
+#include <beep/module.h>
 
 #include <sound/control.h>
 #include <sound/core.h>
@@ -705,7 +705,7 @@ static struct usb_device_id usb_audio_ids [] = {
 MODULE_DEVICE_TABLE (usb, usb_audio_ids);
 
 /*
- * entry point for linux usb interface
+ * entry point for beep usb interface
  */
 
 static struct usb_driver usb_audio_driver = {

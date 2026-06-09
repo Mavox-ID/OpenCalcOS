@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2412/mach-vstms.c
+/* beep/arch/arm/mach-s3c2412/mach-vstms.c
  *
  * (C) 2006 Thomas Gleixner <tglx@linutronix.de>
  *
@@ -9,19 +9,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand_ecc.h>
-#include <linux/mtd/partitions.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/serial_core.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/nand_ecc.h>
+#include <beep/mtd/partitions.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -39,8 +39,8 @@
 #include <mach/idle.h>
 #include <mach/fb.h>
 
-#include <linux/platform_data/i2c-s3c2410.h>
-#include <linux/platform_data/mtd-nand-s3c2410.h>
+#include <beep/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/mtd-nand-s3c2410.h>
 
 #include <plat/s3c2410.h>
 #include <plat/s3c2412.h>

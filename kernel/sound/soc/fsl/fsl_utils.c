@@ -10,8 +10,8 @@
  * kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/of_address.h>
+#include <beep/module.h>
+#include <beep/of_address.h>
 #include <sound/soc.h>
 
 #include "fsl_utils.h"

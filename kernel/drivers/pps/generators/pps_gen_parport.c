@@ -27,12 +27,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/hrtimer.h>
-#include <linux/parport.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/hrtimer.h>
+#include <beep/parport.h>
 
 #define DRVDESC "parallel port PPS signal generator"
 

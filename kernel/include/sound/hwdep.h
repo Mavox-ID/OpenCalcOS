@@ -23,7 +23,7 @@
  */
 
 #include <sound/asound.h>
-#include <linux/poll.h>
+#include <beep/poll.h>
 
 struct snd_hwdep;
 

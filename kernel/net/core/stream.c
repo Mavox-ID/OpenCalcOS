@@ -12,11 +12,11 @@
  *                     Alan Cox <alan@lxorguk.ukuu.org.uk> (Borrowed comments 8-))
  */
 
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/signal.h>
-#include <linux/tcp.h>
-#include <linux/wait.h>
+#include <beep/module.h>
+#include <beep/net.h>
+#include <beep/signal.h>
+#include <beep/tcp.h>
+#include <beep/wait.h>
 #include <net/sock.h>
 
 /**

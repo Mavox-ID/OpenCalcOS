@@ -26,16 +26,16 @@
  *	Zhenyu Wang
  */
 
-#include <linux/types.h>
-#include <linux/inet.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/blkdev.h>
-#include <linux/crypto.h>
-#include <linux/delay.h>
-#include <linux/kfifo.h>
-#include <linux/scatterlist.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/inet.h>
+#include <beep/slab.h>
+#include <beep/file.h>
+#include <beep/blkdev.h>
+#include <beep/crypto.h>
+#include <beep/delay.h>
+#include <beep/kfifo.h>
+#include <beep/scatterlist.h>
+#include <beep/module.h>
 #include <net/tcp.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

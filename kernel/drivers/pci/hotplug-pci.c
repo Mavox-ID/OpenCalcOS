@@ -1,7 +1,7 @@
 /* Core PCI functionality used only by PCI hotplug */
 
-#include <linux/pci.h>
-#include <linux/export.h>
+#include <beep/pci.h>
+#include <beep/export.h>
 #include "pci.h"
 
 int __ref pci_hp_add_bridge(struct pci_dev *dev)

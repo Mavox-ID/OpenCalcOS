@@ -16,13 +16,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_data/omap_ocp2scp.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/pm_runtime.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/platform_data/omap_ocp2scp.h>
 
 /**
  * _count_resources - count for the number of resources

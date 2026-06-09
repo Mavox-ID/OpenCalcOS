@@ -4,22 +4,22 @@
  *    Copyright (C) 2003-2007  Axis Communications AB
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/stddef.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/spinlock.h>
+#include <beep/stddef.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
-#include <linux/list.h>
-#include <linux/interrupt.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
 
 #include <asm/signal.h>
 #include <asm/irq.h>

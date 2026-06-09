@@ -30,7 +30,7 @@
 #ifndef __BSSDB_H__
 #define __BSSDB_H__
 
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 #include "80211hdr.h"
 #include "80211mgr.h"
 #include "card.h"

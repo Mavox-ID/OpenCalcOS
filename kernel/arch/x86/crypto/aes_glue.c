@@ -3,7 +3,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <crypto/aes.h>
 #include <asm/crypto/aes.h>
 

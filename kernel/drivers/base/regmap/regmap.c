@@ -10,12 +10,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/rbtree.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/mutex.h>
+#include <beep/err.h>
+#include <beep/rbtree.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/regmap.h>

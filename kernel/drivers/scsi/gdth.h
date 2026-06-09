@@ -2,7 +2,7 @@
 #define _GDTH_H
 
 /*
- * Header file for the GDT Disk Array/Storage RAID controllers driver for Linux
+ * Header file for the GDT Disk Array/Storage RAID controllers driver for Beep
  * 
  * gdth.h Copyright (C) 1995-06 ICP vortex, Achim Leubner
  * See gdth.c for further informations and 
@@ -13,7 +13,7 @@
  * $Id: gdth.h,v 1.58 2006/01/11 16:14:09 achim Exp $
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #ifndef TRUE
 #define TRUE 1
@@ -295,7 +295,7 @@
 #define EISAREG         0x0cc0                  /* EISA configuration */
 
 /* other defines */
-#define LINUX_OS        8                       /* used for cache optim. */
+#define BEEP_OS        8                       /* used for cache optim. */
 #define SECS32          0x1f                    /* round capacity */
 #define BIOS_ID_OFFS    0x10                    /* offset contr-ID in ISABIOS */
 #define LOCALBOARD      0                       /* board node always 0 */

@@ -1,5 +1,5 @@
 /*
-  SCSI Tape Driver for Linux version 1.1 and newer. See the accompanying
+  SCSI Tape Driver for Beep version 1.1 and newer. See the accompanying
   file Documentation/scsi/st.txt for more information.
 
   History:
@@ -31,27 +31,27 @@ static const char * osst_version = "0.99.4";
 #define OSST_FW_NEED_POLL_MAX 10704 /*(108D)*/
 #define OSST_FW_NEED_POLL(x,d) ((x) >= OSST_FW_NEED_POLL_MIN && (x) <= OSST_FW_NEED_POLL_MAX && d->host->this_id != 7)
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/proc_fs.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/mtio.h>
-#include <linux/ioctl.h>
-#include <linux/fcntl.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
-#include <linux/blkdev.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/proc_fs.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/mtio.h>
+#include <beep/ioctl.h>
+#include <beep/fcntl.h>
+#include <beep/spinlock.h>
+#include <beep/vmalloc.h>
+#include <beep/blkdev.h>
+#include <beep/moduleparam.h>
+#include <beep/delay.h>
+#include <beep/jiffies.h>
+#include <beep/mutex.h>
 #include <asm/uaccess.h>
 #include <asm/dma.h>
 
@@ -639,14 +639,14 @@ static int osst_verify_frame(struct osst_tape * STp, int frame_seq_number, int q
 		goto err_out;
 	}
 	if (memcmp(aux->application_sig, STp->application_sig, 4) != 0 &&
-	    (memcmp(aux->application_sig, "LIN3", 4) != 0 || STp->linux_media_version != 4)) {
+	    (memcmp(aux->application_sig, "LIN3", 4) != 0 || STp->beep_media_version != 4)) {
 #if DEBUG
 		printk(OSST_DEB_MSG "%s:D: Skipping frame, incorrect application signature\n", name);
 #endif
 		goto err_out;
 	}
 	if (par->partition_num != OS_DATA_PARTITION) {
-		if (!STp->linux_media || STp->linux_media_version != 2) {
+		if (!STp->beep_media || STp->beep_media_version != 2) {
 #if DEBUG
 			printk(OSST_DEB_MSG "%s:D: Skipping frame, partition num %d\n",
 					    name, par->partition_num);
@@ -1860,7 +1860,7 @@ static int osst_space_over_filemarks_backward(struct osst_tape * STp, struct oss
 #endif
 		return -EIO;
 	}
-	if (STp->linux_media_version >= 4) {
+	if (STp->beep_media_version >= 4) {
 		/*
 		 * direct lookup in header filemark list
 		 */
@@ -1995,7 +1995,7 @@ static int osst_space_over_filemarks_forward_slow(struct osst_tape * STp, struct
 }
 
 /*
- * Fast linux specific version of OnStream FSF
+ * Fast beep specific version of OnStream FSF
  */
 static int osst_space_over_filemarks_forward_fast(struct osst_tape * STp, struct osst_request ** aSRpnt,
 								     int mt_op, int mt_count)
@@ -2014,7 +2014,7 @@ static int osst_space_over_filemarks_forward_fast(struct osst_tape * STp, struct
 		return (-EIO);
 	}
 
-	if (STp->linux_media_version >= 4) {
+	if (STp->beep_media_version >= 4) {
 		/*
 		 * direct lookup in header filemark list
 		 */
@@ -2350,8 +2350,8 @@ static int osst_write_header(struct osst_tape * STp, struct osst_request ** aSRp
 		printk(KERN_ERR "%s:E: Write header failed\n", name);
 	else {
 		memcpy(STp->application_sig, "LIN4", 4);
-		STp->linux_media         = 1;
-		STp->linux_media_version = 4;
+		STp->beep_media         = 1;
+		STp->beep_media_version = 4;
 		STp->header_ok           = 1;
 	}
 	return result;
@@ -2376,7 +2376,7 @@ static int __osst_analyze_headers(struct osst_tape * STp, struct osst_request **
 	os_header_t * header;
 	os_aux_t    * aux;
 	char          id_string[8];
-	int	      linux_media_version,
+	int	      beep_media_version,
 		      update_frame_cntr;
 
 	if (STp->raw)
@@ -2452,29 +2452,29 @@ static int __osst_analyze_headers(struct osst_tape * STp, struct osst_request **
 	memcpy(id_string, aux->application_sig, 4);
 	id_string[4] = 0;
 	if (memcmp(id_string, "LIN", 3) == 0) {
-		STp->linux_media = 1;
-		linux_media_version = id_string[3] - '0';
-		if (linux_media_version != 4)
-			printk(KERN_INFO "%s:I: Linux media version %d detected (current 4)\n",
-					 name, linux_media_version);
+		STp->beep_media = 1;
+		beep_media_version = id_string[3] - '0';
+		if (beep_media_version != 4)
+			printk(KERN_INFO "%s:I: Beep media version %d detected (current 4)\n",
+					 name, beep_media_version);
 	} else {
-		printk(KERN_WARNING "%s:W: Non Linux media detected (%s)\n", name, id_string);
+		printk(KERN_WARNING "%s:W: Non Beep media detected (%s)\n", name, id_string);
 		return 0;
 	}
-	if (linux_media_version < STp->linux_media_version) {
+	if (beep_media_version < STp->beep_media_version) {
 #if DEBUG
-		printk(OSST_DEB_MSG "%s:D: Skipping frame %d with linux_media_version %d\n",
-				  name, ppos, linux_media_version);
+		printk(OSST_DEB_MSG "%s:D: Skipping frame %d with beep_media_version %d\n",
+				  name, ppos, beep_media_version);
 #endif
 		return 0;
 	}
-	if (linux_media_version > STp->linux_media_version) {
+	if (beep_media_version > STp->beep_media_version) {
 #if DEBUG
-		printk(OSST_DEB_MSG "%s:D: Frame %d sets linux_media_version to %d\n",
-				   name, ppos, linux_media_version);
+		printk(OSST_DEB_MSG "%s:D: Frame %d sets beep_media_version to %d\n",
+				   name, ppos, beep_media_version);
 #endif
 		memcpy(STp->application_sig, id_string, 5);
-		STp->linux_media_version = linux_media_version;
+		STp->beep_media_version = beep_media_version;
 		STp->update_frame_cntr = -1;
 	}
 	if (update_frame_cntr > STp->update_frame_cntr) {
@@ -2513,7 +2513,7 @@ static int __osst_analyze_headers(struct osst_tape * STp, struct osst_request **
 	printk(OSST_DEB_MSG "%s:D: first mark on tape = %d, last = %d, eod frame = %d\n", 
 			  name, STp->first_mark_ppos, STp->last_mark_ppos, STp->eod_frame_ppos);
 #endif
-		if (header->minor_rev < 4 && STp->linux_media_version == 4) {
+		if (header->minor_rev < 4 && STp->beep_media_version == 4) {
 #if DEBUG
 			printk(OSST_DEB_MSG "%s:D: Moving filemark list to ADR 1.4 location\n", name);
 #endif
@@ -2557,11 +2557,11 @@ static int osst_analyze_headers(struct osst_tape * STp, struct osst_request ** a
 	position = osst_get_frame_position(STp, aSRpnt);
 
 	if (STp->raw) {
-		STp->header_ok = STp->linux_media = 1;
-		STp->linux_media_version = 0;
+		STp->header_ok = STp->beep_media = 1;
+		STp->beep_media_version = 0;
 		return 1;
 	}
-	STp->header_ok = STp->linux_media = STp->linux_media_version = 0;
+	STp->header_ok = STp->beep_media = STp->beep_media_version = 0;
 	STp->wrt_pass_cntr = STp->update_frame_cntr = -1;
 	STp->eod_frame_ppos = STp->first_data_ppos = -1;
 	STp->first_mark_ppos = STp->last_mark_ppos = STp->last_mark_lbn = -1;
@@ -2623,7 +2623,7 @@ static int osst_verify_position(struct osst_tape * STp, struct osst_request ** a
 #endif
 		return (-EIO);
 	}
-	if (STp->linux_media_version >= 4) {
+	if (STp->beep_media_version >= 4) {
 		for (i=0; i<STp->filemark_cnt; i++)
 			if ((n=ntohl(STp->header_cache->dat_fm_tab.fm_tab_ent[i])) < frame_position)
 				prev_mark_ppos = n;
@@ -2766,7 +2766,7 @@ static int osst_configure_onstream(struct osst_tape *STp, struct osst_request **
 #endif
 
 	/*
-	 * Set vendor name to 'LIN4' for "Linux support version 4".
+	 * Set vendor name to 'LIN4' for "Beep support version 4".
 	 */
 
 	memset(cmd, 0, MAX_COMMAND_SIZE);
@@ -4085,7 +4085,7 @@ static int osst_int_ioctl(struct osst_tape * STp, struct osst_request ** aSRpnt,
 	 case MTFSF:
 		if (STp->raw)
 		   return (-EIO);
-		if (STp->linux_media)
+		if (STp->beep_media)
 		   ioctl_result = osst_space_over_filemarks_forward_fast(STp, &SRpnt, cmd_in, arg);
 		else
 		   ioctl_result = osst_space_over_filemarks_forward_slow(STp, &SRpnt, cmd_in, arg);
@@ -5690,26 +5690,26 @@ static ssize_t osst_adr_rev_show(struct device *dev,
 	struct osst_tape * STp = (struct osst_tape *) dev_get_drvdata (dev);
 	ssize_t l = 0;
 
-	if (STp && STp->header_ok && STp->linux_media)
+	if (STp && STp->header_ok && STp->beep_media)
 		l = snprintf(buf, PAGE_SIZE, "%d.%d\n", STp->header_cache->major_rev, STp->header_cache->minor_rev);
 	return l;
 }
 
 DEVICE_ATTR(ADR_rev, S_IRUGO, osst_adr_rev_show, NULL);
 
-static ssize_t osst_linux_media_version_show(struct device *dev,
+static ssize_t osst_beep_media_version_show(struct device *dev,
 					     struct device_attribute *attr,
 					     char *buf)
 {
 	struct osst_tape * STp = (struct osst_tape *) dev_get_drvdata (dev);
 	ssize_t l = 0;
 
-	if (STp && STp->header_ok && STp->linux_media)
-		l = snprintf(buf, PAGE_SIZE, "LIN%d\n", STp->linux_media_version);
+	if (STp && STp->header_ok && STp->beep_media)
+		l = snprintf(buf, PAGE_SIZE, "LIN%d\n", STp->beep_media_version);
 	return l;
 }
 
-DEVICE_ATTR(media_version, S_IRUGO, osst_linux_media_version_show, NULL);
+DEVICE_ATTR(media_version, S_IRUGO, osst_beep_media_version_show, NULL);
 
 static ssize_t osst_capacity_show(struct device *dev,
 				  struct device_attribute *attr, char *buf)
@@ -5717,7 +5717,7 @@ static ssize_t osst_capacity_show(struct device *dev,
 	struct osst_tape * STp = (struct osst_tape *) dev_get_drvdata (dev);
 	ssize_t l = 0;
 
-	if (STp && STp->header_ok && STp->linux_media)
+	if (STp && STp->header_ok && STp->beep_media)
 		l = snprintf(buf, PAGE_SIZE, "%d\n", STp->capacity);
 	return l;
 }
@@ -5731,7 +5731,7 @@ static ssize_t osst_first_data_ppos_show(struct device *dev,
 	struct osst_tape * STp = (struct osst_tape *) dev_get_drvdata (dev);
 	ssize_t l = 0;
 
-	if (STp && STp->header_ok && STp->linux_media)
+	if (STp && STp->header_ok && STp->beep_media)
 		l = snprintf(buf, PAGE_SIZE, "%d\n", STp->first_data_ppos);
 	return l;
 }
@@ -5745,7 +5745,7 @@ static ssize_t osst_eod_frame_ppos_show(struct device *dev,
 	struct osst_tape * STp = (struct osst_tape *) dev_get_drvdata (dev);
 	ssize_t l = 0;
 
-	if (STp && STp->header_ok && STp->linux_media)
+	if (STp && STp->header_ok && STp->beep_media)
 		l = snprintf(buf, PAGE_SIZE, "%d\n", STp->eod_frame_ppos);
 	return l;
 }
@@ -5758,7 +5758,7 @@ static ssize_t osst_filemark_cnt_show(struct device *dev,
 	struct osst_tape * STp = (struct osst_tape *) dev_get_drvdata (dev);
 	ssize_t l = 0;
 
-	if (STp && STp->header_ok && STp->linux_media)
+	if (STp && STp->header_ok && STp->beep_media)
 		l = snprintf(buf, PAGE_SIZE, "%d\n", STp->filemark_cnt);
 	return l;
 }
@@ -5930,7 +5930,7 @@ static int osst_probe(struct device *dev)
 		     (strncmp(SDp->model, "FW-", 3) == 0) || OSST_FW_NEED_POLL(tpnt->os_fw_rev,SDp);
 	tpnt->frame_in_buffer = 0;
 	tpnt->header_ok = 0;
-	tpnt->linux_media = 0;
+	tpnt->beep_media = 0;
 	tpnt->header_cache = NULL;
 
 	for (i=0; i < ST_NBR_MODES; i++) {

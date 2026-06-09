@@ -8,7 +8,7 @@ CONFIG_MODULE_UNLOAD=y
 CONFIG_ARCH_S5PC100=y
 CONFIG_MACH_SMDKC100=y
 CONFIG_AEABI=y
-CONFIG_CMDLINE="root=/dev/mtdblock2 rootfstype=cramfs init=/linuxrc console=ttySAC2,115200 mem=128M"
+CONFIG_CMDLINE="root=/dev/mtdblock2 rootfstype=cramfs init=/beeprc console=ttySAC2,115200 mem=128M"
 CONFIG_UEVENT_HELPER_PATH="/sbin/hotplug"
 CONFIG_BLK_DEV_LOOP=y
 CONFIG_BLK_DEV_RAM=y

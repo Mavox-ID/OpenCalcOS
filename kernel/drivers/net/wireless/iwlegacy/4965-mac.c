@@ -22,27 +22,27 @@
  * file called LICENSE.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel Beep Wireless <ilw@beep.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci-aspm.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/pci-aspm.h>
+#include <beep/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/firmware.h>
+#include <beep/etherdevice.h>
+#include <beep/if_arp.h>
 
 #include <net/mac80211.h>
 
@@ -62,7 +62,7 @@
 /*
  * module name, copyright, version, etc.
  */
-#define DRV_DESCRIPTION	"Intel(R) Wireless WiFi 4965 driver for Linux"
+#define DRV_DESCRIPTION	"Intel(R) Wireless WiFi 4965 driver for Beep"
 
 #ifdef CONFIG_IWLEGACY_DEBUG
 #define VD "d"
@@ -4794,7 +4794,7 @@ il4965_ucode_callback(const struct firmware *ucode_raw, void *context)
 	if (api_ver != api_max)
 		IL_ERR("Firmware has old API version. Expected v%u, "
 		       "got v%u. New firmware can be obtained "
-		       "from http://www.intellinuxwireless.org.\n", api_max,
+		       "from http://www.intelbeepwireless.org.\n", api_max,
 		       api_ver);
 
 	IL_INFO("loaded firmware version %u.%u.%u.%u\n",

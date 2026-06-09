@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux Bluetooth CMTP layer
+# Makefile for the Beep Bluetooth CMTP layer
 #
 
 obj-$(CONFIG_BT_CMTP) += cmtp.o

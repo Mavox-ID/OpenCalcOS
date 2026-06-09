@@ -17,26 +17,26 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/completion.h>
-#include <linux/of_device.h>
-#include <linux/of_mtd.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/completion.h>
+#include <beep/of_device.h>
+#include <beep/of_mtd.h>
 
 #include <asm/mach/flash.h>
-#include <linux/platform_data/mtd-mxc_nand.h>
+#include <beep/platform_data/mtd-mxc_nand.h>
 
 #define DRIVER_NAME "mxc_nand"
 

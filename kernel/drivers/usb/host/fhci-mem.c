@@ -15,13 +15,13 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
 #include "fhci.h"
 
 static void init_td(struct td *td)

@@ -10,10 +10,10 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/isdn/capilli.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
+#include <beep/isdn/capilli.h>
 
 #ifdef KCAPI_DEBUG
 #define DBG(format, arg...) do {					\

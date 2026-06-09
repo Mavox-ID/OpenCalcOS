@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/id.c
+ * beep/arch/arm/mach-omap1/id.c
  *
  * OMAP1 CPU identification code
  *
@@ -11,10 +11,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
 #include <asm/system_info.h>
 
 #include "soc.h"

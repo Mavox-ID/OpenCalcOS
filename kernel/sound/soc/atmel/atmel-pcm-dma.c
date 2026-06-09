@@ -24,14 +24,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/atmel-ssc.h>
-#include <linux/platform_data/dma-atmel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmaengine.h>
+#include <beep/atmel-ssc.h>
+#include <beep/platform_data/dma-atmel.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

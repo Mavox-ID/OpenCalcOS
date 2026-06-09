@@ -10,14 +10,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/i2c/twl.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/backlight.h>
+#include <beep/i2c/twl.h>
+#include <beep/err.h>
 
 #define TWL_PWM0_ON		0x00
 #define TWL_PWM0_OFF		0x01

@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux kernel pci hotplug controller drivers.
+# Makefile for the Beep kernel pci hotplug controller drivers.
 #
 
 obj-$(CONFIG_HOTPLUG_PCI)		+= pci_hotplug.o

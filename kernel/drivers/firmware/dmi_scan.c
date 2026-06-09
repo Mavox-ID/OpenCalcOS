@@ -1,12 +1,12 @@
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/dmi.h>
-#include <linux/efi.h>
-#include <linux/bootmem.h>
-#include <linux/random.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/ctype.h>
+#include <beep/dmi.h>
+#include <beep/efi.h>
+#include <beep/bootmem.h>
+#include <beep/random.h>
 #include <asm/dmi.h>
 
 /*

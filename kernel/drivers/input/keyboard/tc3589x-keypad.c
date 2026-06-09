@@ -9,15 +9,15 @@
  * TC35893 MFD Keypad Controller driver
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/mfd/tc3589x.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/platform_device.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/mfd/tc3589x.h>
 
 /* Maximum supported keypad matrix row/columns size */
 #define TC3589x_MAX_KPROW               8

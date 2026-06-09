@@ -19,10 +19,10 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
 
 #include "saa7164.h"
 

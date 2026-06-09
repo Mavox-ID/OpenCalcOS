@@ -36,7 +36,7 @@ config RUN_INIT
 	does a mount --move that overmounts rootfs with the new root, and
 	then execs the specified init program.
 
-	util-linux has a similar tool, switch-root.
+	util-beep has a similar tool, switch-root.
 	run-init differs by also having a "-d CAPS_TO_DROP" option.
 
 endmenu

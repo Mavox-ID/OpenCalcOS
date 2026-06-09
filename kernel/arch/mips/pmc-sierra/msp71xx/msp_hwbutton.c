@@ -25,9 +25,9 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
 
 #include <msp_int.h>
 #include <msp_regs.h>
@@ -42,7 +42,7 @@
  */
 struct hwbutton_interrupt {
 	char *name;			/* Name of button */
-	int irq;			/* Actual LINUX IRQ */
+	int irq;			/* Actual BEEP IRQ */
 	int eirq;			/* Extended IRQ number (0-7) */
 	int initial_state;		/* The "normal" state of the switch */
 	void (*handle_hi)(void *);	/* Handler: switch input has gone HI */

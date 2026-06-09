@@ -8,10 +8,10 @@
  * Copyright (C) 1995, 1996, 1997, 2002, 2003 by Ralf Baechle
  * Copyright (C) 2001, 2002, 2003 by Liam Davies (ldavies@agile.tv)
  */
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
 
 #include <asm/pci.h>
 #include <asm/io.h>

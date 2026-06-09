@@ -1,8 +1,8 @@
 #ifndef BCM63XX_DEV_ENET_H_
 #define BCM63XX_DEV_ENET_H_
 
-#include <linux/if_ether.h>
-#include <linux/init.h>
+#include <beep/if_ether.h>
+#include <beep/init.h>
 
 /*
  * on board ethernet platform data

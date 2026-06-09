@@ -49,16 +49,16 @@
   * (and fail if unavailable).
   */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
+#include <beep/dma-mapping.h>
+#include <beep/module.h>
 
 #include "imx21-hcd.h"
 

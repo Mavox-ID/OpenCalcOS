@@ -5,7 +5,7 @@
  *
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/bootmem.h>
+#include <beep/bootmem.h>
 
 #include <asm/bootinfo.h>
 #include <asm/sections.h>

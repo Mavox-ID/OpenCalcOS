@@ -1,5 +1,5 @@
 /*
- *  linux/kernel/fork.c
+ *  beep/kernel/fork.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -11,65 +11,65 @@
  * management can be a bitch. See 'mm/memory.c': 'copy_page_range()'
  */
 
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/unistd.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/completion.h>
-#include <linux/personality.h>
-#include <linux/mempolicy.h>
-#include <linux/sem.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/iocontext.h>
-#include <linux/key.h>
-#include <linux/binfmts.h>
-#include <linux/mman.h>
-#include <linux/mmu_notifier.h>
-#include <linux/fs.h>
-#include <linux/nsproxy.h>
-#include <linux/capability.h>
-#include <linux/cpu.h>
-#include <linux/cgroup.h>
-#include <linux/security.h>
-#include <linux/hugetlb.h>
-#include <linux/seccomp.h>
-#include <linux/swap.h>
-#include <linux/syscalls.h>
-#include <linux/jiffies.h>
-#include <linux/futex.h>
-#include <linux/compat.h>
-#include <linux/kthread.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/rcupdate.h>
-#include <linux/ptrace.h>
-#include <linux/mount.h>
-#include <linux/audit.h>
-#include <linux/memcontrol.h>
-#include <linux/ftrace.h>
-#include <linux/proc_fs.h>
-#include <linux/profile.h>
-#include <linux/rmap.h>
-#include <linux/ksm.h>
-#include <linux/acct.h>
-#include <linux/tsacct_kern.h>
-#include <linux/cn_proc.h>
-#include <linux/freezer.h>
-#include <linux/delayacct.h>
-#include <linux/taskstats_kern.h>
-#include <linux/random.h>
-#include <linux/tty.h>
-#include <linux/blkdev.h>
-#include <linux/fs_struct.h>
-#include <linux/magic.h>
-#include <linux/perf_event.h>
-#include <linux/posix-timers.h>
-#include <linux/user-return-notifier.h>
-#include <linux/oom.h>
-#include <linux/khugepaged.h>
-#include <linux/signalfd.h>
-#include <linux/uprobes.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/unistd.h>
+#include <beep/module.h>
+#include <beep/vmalloc.h>
+#include <beep/completion.h>
+#include <beep/personality.h>
+#include <beep/mempolicy.h>
+#include <beep/sem.h>
+#include <beep/file.h>
+#include <beep/fdtable.h>
+#include <beep/iocontext.h>
+#include <beep/key.h>
+#include <beep/binfmts.h>
+#include <beep/mman.h>
+#include <beep/mmu_notifier.h>
+#include <beep/fs.h>
+#include <beep/nsproxy.h>
+#include <beep/capability.h>
+#include <beep/cpu.h>
+#include <beep/cgroup.h>
+#include <beep/security.h>
+#include <beep/hugetlb.h>
+#include <beep/seccomp.h>
+#include <beep/swap.h>
+#include <beep/syscalls.h>
+#include <beep/jiffies.h>
+#include <beep/futex.h>
+#include <beep/compat.h>
+#include <beep/kthread.h>
+#include <beep/task_io_accounting_ops.h>
+#include <beep/rcupdate.h>
+#include <beep/ptrace.h>
+#include <beep/mount.h>
+#include <beep/audit.h>
+#include <beep/memcontrol.h>
+#include <beep/ftrace.h>
+#include <beep/proc_fs.h>
+#include <beep/profile.h>
+#include <beep/rmap.h>
+#include <beep/ksm.h>
+#include <beep/acct.h>
+#include <beep/tsacct_kern.h>
+#include <beep/cn_proc.h>
+#include <beep/freezer.h>
+#include <beep/delayacct.h>
+#include <beep/taskstats_kern.h>
+#include <beep/random.h>
+#include <beep/tty.h>
+#include <beep/blkdev.h>
+#include <beep/fs_struct.h>
+#include <beep/magic.h>
+#include <beep/perf_event.h>
+#include <beep/posix-timers.h>
+#include <beep/user-return-notifier.h>
+#include <beep/oom.h>
+#include <beep/khugepaged.h>
+#include <beep/signalfd.h>
+#include <beep/uprobes.h>
 
 #include <asm/pgtable.h>
 #include <asm/pgalloc.h>
@@ -86,7 +86,7 @@
 /*
  * Protected counters by write_lock_irq(&tasklist_lock)
  */
-unsigned long total_forks;	/* Handle normal Linux uptimes. */
+unsigned long total_forks;	/* Handle normal Beep uptimes. */
 int nr_threads;			/* The idle threads do not count.. */
 
 int max_threads;		/* tunable limit on nr_threads */
@@ -517,7 +517,7 @@ static int __init coredump_filter_setup(char *s)
 
 __setup("coredump_filter=", coredump_filter_setup);
 
-#include <linux/init_task.h>
+#include <beep/init_task.h>
 
 static void mm_init_aio(struct mm_struct *mm)
 {

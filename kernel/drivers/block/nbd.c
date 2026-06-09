@@ -12,31 +12,31 @@
  * (part of code stolen from loop.c)
  */
 
-#include <linux/major.h>
+#include <beep/major.h>
 
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/bio.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/ioctl.h>
-#include <linux/mutex.h>
-#include <linux/compiler.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/blkdev.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/bio.h>
+#include <beep/stat.h>
+#include <beep/errno.h>
+#include <beep/file.h>
+#include <beep/ioctl.h>
+#include <beep/mutex.h>
+#include <beep/compiler.h>
+#include <beep/err.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 #include <net/sock.h>
-#include <linux/net.h>
-#include <linux/kthread.h>
+#include <beep/net.h>
+#include <beep/kthread.h>
 
 #include <asm/uaccess.h>
 #include <asm/types.h>
 
-#include <linux/nbd.h>
+#include <beep/nbd.h>
 
 #define NBD_MAGIC 0x68797548
 
@@ -808,7 +808,7 @@ static int __init nbd_init(void)
 			goto out;
 		nbd_dev[i].disk = disk;
 		/*
-		 * The new linux 2.5 block layer implementation requires
+		 * The new beep 2.5 block layer implementation requires
 		 * every gendisk to have its very own request_queue struct.
 		 * These structs are big so we dynamically allocate them.
 		 */

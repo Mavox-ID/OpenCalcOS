@@ -8,8 +8,8 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/sched.h>
-#include <linux/mm.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
 #include <asm/mmu_context.h>
 #include <asm/tlbflush.h>
 

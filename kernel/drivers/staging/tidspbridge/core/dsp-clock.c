@@ -18,12 +18,12 @@
 
 #define L4_34XX_BASE		0x48000000
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*  ----------------------------------- Host OS */
 #include <dspbridge/host_os.h>
 #include <plat/dmtimer.h>
-#include <linux/platform_data/asoc-ti-mcbsp.h>
+#include <beep/platform_data/asoc-ti-mcbsp.h>
 
 /*  ----------------------------------- DSP/BIOS Bridge */
 #include <dspbridge/dbdefs.h>

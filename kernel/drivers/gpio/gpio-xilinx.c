@@ -12,15 +12,15 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
+#include <beep/of_gpio.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
 
 /* Register Offset Definitions */
 #define XGPIO_DATA_OFFSET   (0x0)	/* Data register  */

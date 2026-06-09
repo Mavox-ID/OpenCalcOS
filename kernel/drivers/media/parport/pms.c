@@ -20,21 +20,21 @@
  *                      - pms_capture: report back -EFAULT
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/isa.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/uaccess.h>
+#include <beep/isa.h>
 #include <asm/io.h>
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>
@@ -669,7 +669,7 @@ static int pms_capture(struct pms *dev, char __user *buf, int rgb555, int count)
 
 
 /*
- *	Video4linux interfacing
+ *	Video4beep interfacing
  */
 
 static int pms_querycap(struct file *file, void  *priv,

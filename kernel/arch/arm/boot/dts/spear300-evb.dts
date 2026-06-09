@@ -1,7 +1,7 @@
 /*
  * DTS file for SPEAr300 Evaluation Baord
  *
- * Copyright 2012 Viresh Kumar <viresh.linux@gmail.com>
+ * Copyright 2012 Viresh Kumar <viresh.beep@gmail.com>
  *
  * The code contained herein is licensed under the GNU General Public
  * License. You may obtain a copy of the GNU General Public License
@@ -111,7 +111,7 @@
 					reg = <0x70000 0x10000>;
 				};
 				partition@80000 {
-					label = "linux";
+					label = "beep";
 					reg = <0x80000 0x310000>;
 				};
 				partition@390000 {
@@ -151,7 +151,7 @@
 			};
 
 			kbd@a0000000 {
-				linux,keymap = < 0x00000001
+				beep,keymap = < 0x00000001
 						 0x00010002
 						 0x00020003
 						 0x00030004

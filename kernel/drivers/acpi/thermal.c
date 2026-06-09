@@ -31,18 +31,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/dmi.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/jiffies.h>
-#include <linux/kmod.h>
-#include <linux/reboot.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/dmi.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/jiffies.h>
+#include <beep/kmod.h>
+#include <beep/reboot.h>
+#include <beep/device.h>
 #include <asm/uaccess.h>
-#include <linux/thermal.h>
+#include <beep/thermal.h>
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
 
@@ -288,7 +288,7 @@ do {	\
 	if (flags != ACPI_TRIPS_INIT)	\
 		ACPI_EXCEPTION((AE_INFO, AE_ERROR,	\
 		"ACPI thermal trip point %s changed\n"	\
-		"Please send acpidump to linux-acpi@vger.kernel.org\n", str)); \
+		"Please send acpidump to beep-acpi@vger.kernel.org\n", str)); \
 } while (0)
 
 static int acpi_thermal_trips_update(struct acpi_thermal *tz, int flag)

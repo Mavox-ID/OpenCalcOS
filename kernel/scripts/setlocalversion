@@ -5,7 +5,7 @@
 #
 # If something goes wrong, send a mail the kernel build mailinglist
 # (see MAINTAINERS) and CC Nico Schottelius
-# <nico-linuxsetlocalversion -at- schottelius.org>.
+# <nico-beepsetlocalversion -at- schottelius.org>.
 #
 #
 

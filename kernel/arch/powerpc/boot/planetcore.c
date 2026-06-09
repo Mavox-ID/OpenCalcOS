@@ -114,7 +114,7 @@ void planetcore_set_stdout_path(const char *table)
 	if (!label)
 		return;
 
-	node = find_node_by_prop_value_str(NULL, "linux,planetcore-label",
+	node = find_node_by_prop_value_str(NULL, "beep,planetcore-label",
 	                                   label);
 	if (!node)
 		return;
@@ -129,7 +129,7 @@ void planetcore_set_stdout_path(const char *table)
 	if (!chosen)
 		return;
 
-	setprop_str(chosen, "linux,stdout-path", path);
+	setprop_str(chosen, "beep,stdout-path", path);
 }
 
 void planetcore_set_serial_speed(const char *table)
@@ -143,14 +143,14 @@ void planetcore_set_serial_speed(const char *table)
 	if (!chosen)
 		return;
 
-	len = getprop(chosen, "linux,stdout-path", prop_buf, MAX_PROP_LEN);
+	len = getprop(chosen, "beep,stdout-path", prop_buf, MAX_PROP_LEN);
 	if (len <= 0)
 		return;
 
 	stdout = finddevice(prop_buf);
 	if (!stdout) {
 		printf("planetcore_set_serial_speed: "
-		       "Bad /chosen/linux,stdout-path.\r\n");
+		       "Bad /chosen/beep,stdout-path.\r\n");
 
 		return;
 	}

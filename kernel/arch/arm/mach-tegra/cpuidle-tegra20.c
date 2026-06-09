@@ -19,9 +19,9 @@
  * more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/cpuidle.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/cpuidle.h>
 
 #include <asm/cpuidle.h>
 

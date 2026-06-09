@@ -20,7 +20,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/ac97_codec.h>

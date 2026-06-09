@@ -22,7 +22,7 @@
 #ifndef DVB_DUMMY_FE_H
 #define DVB_DUMMY_FE_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 #include "dvb_frontend.h"
 
 #if defined(CONFIG_DVB_DUMMY_FE) || (defined(CONFIG_DVB_DUMMY_FE_MODULE) && \

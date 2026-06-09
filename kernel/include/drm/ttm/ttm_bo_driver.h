@@ -35,9 +35,9 @@
 #include <ttm/ttm_module.h>
 #include <drm/drm_mm.h>
 #include <drm/drm_global.h>
-#include <linux/workqueue.h>
-#include <linux/fs.h>
-#include <linux/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/fs.h>
+#include <beep/spinlock.h>
 
 struct ttm_backend_func {
 	/**
@@ -984,7 +984,7 @@ extern const struct ttm_mem_type_manager_func ttm_bo_manager_func;
 
 #if (defined(CONFIG_AGP) || (defined(CONFIG_AGP_MODULE) && defined(MODULE)))
 #define TTM_HAS_AGP
-#include <linux/agp_backend.h>
+#include <beep/agp_backend.h>
 
 /**
  * ttm_agp_tt_create
@@ -997,7 +997,7 @@ extern const struct ttm_mem_type_manager_func ttm_bo_manager_func;
  *
  *
  * Create a TTM backend that uses the indicated AGP bridge as an aperture
- * for TT memory. This function uses the linux agpgart interface to
+ * for TT memory. This function uses the beep agpgart interface to
  * bind and unbind memory backing a ttm_tt.
  */
 extern struct ttm_tt *ttm_agp_tt_create(struct ttm_bo_device *bdev,

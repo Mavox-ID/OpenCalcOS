@@ -8,20 +8,20 @@
  * This code is covered by the GPL.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/mtd/xip.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/cfi.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/mtd/xip.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/cfi.h>
 
 int __xipram cfi_qry_present(struct map_info *map, __u32 base,
 			     struct cfi_private *cfi)

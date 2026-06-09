@@ -11,12 +11,12 @@
  * option) any later version.
  *
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/mii.h>
+#include <beep/phy.h>
 
 #define PHY_ID_AM79C874		0x0022561b
 

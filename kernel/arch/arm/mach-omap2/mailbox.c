@@ -10,12 +10,12 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
+#include <beep/module.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/pm_runtime.h>
 
 #include <plat/mailbox.h>
 

@@ -40,29 +40,29 @@
 
 #include "udfdecl.h"
 
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/parser.h>
-#include <linux/stat.h>
-#include <linux/cdrom.h>
-#include <linux/nls.h>
-#include <linux/buffer_head.h>
-#include <linux/vfs.h>
-#include <linux/vmalloc.h>
-#include <linux/errno.h>
-#include <linux/mount.h>
-#include <linux/seq_file.h>
-#include <linux/bitmap.h>
-#include <linux/crc-itu-t.h>
-#include <linux/log2.h>
+#include <beep/blkdev.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/parser.h>
+#include <beep/stat.h>
+#include <beep/cdrom.h>
+#include <beep/nls.h>
+#include <beep/buffer_head.h>
+#include <beep/vfs.h>
+#include <beep/vmalloc.h>
+#include <beep/errno.h>
+#include <beep/mount.h>
+#include <beep/seq_file.h>
+#include <beep/bitmap.h>
+#include <beep/crc-itu-t.h>
+#include <beep/log2.h>
 #include <asm/byteorder.h>
 
 #include "udf_sb.h"
 #include "udf_i.h"
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/uaccess.h>
 
 #define VDS_POS_PRIMARY_VOL_DESC	0
@@ -1853,7 +1853,7 @@ static void udf_open_lvid(struct super_block *sb)
 	lvidiu = udf_sb_lvidiu(sbi);
 
 	lvidiu->impIdent.identSuffix[0] = UDF_OS_CLASS_UNIX;
-	lvidiu->impIdent.identSuffix[1] = UDF_OS_ID_LINUX;
+	lvidiu->impIdent.identSuffix[1] = UDF_OS_ID_BEEP;
 	udf_time_to_disk_stamp(&lvid->recordingDateAndTime,
 				CURRENT_TIME);
 	lvid->integrityType = cpu_to_le32(LVID_INTEGRITY_TYPE_OPEN);
@@ -1882,7 +1882,7 @@ static void udf_close_lvid(struct super_block *sb)
 	lvid = (struct logicalVolIntegrityDesc *)bh->b_data;
 	lvidiu = udf_sb_lvidiu(sbi);
 	lvidiu->impIdent.identSuffix[0] = UDF_OS_CLASS_UNIX;
-	lvidiu->impIdent.identSuffix[1] = UDF_OS_ID_LINUX;
+	lvidiu->impIdent.identSuffix[1] = UDF_OS_ID_BEEP;
 	udf_time_to_disk_stamp(&lvid->recordingDateAndTime, CURRENT_TIME);
 	if (UDF_MAX_WRITE_VERSION > le16_to_cpu(lvidiu->maxUDFWriteRev))
 		lvidiu->maxUDFWriteRev = cpu_to_le16(UDF_MAX_WRITE_VERSION);

@@ -12,15 +12,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/max8998.h>
-#include <linux/mfd/max8998-private.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/bcd.h>
+#include <beep/rtc.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/max8998.h>
+#include <beep/mfd/max8998-private.h>
+#include <beep/delay.h>
 
 #define MAX8998_RTC_SEC			0x00
 #define MAX8998_RTC_MIN			0x01

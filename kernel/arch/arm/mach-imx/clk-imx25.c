@@ -16,16 +16,16 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/clkdev.h>
+#include <beep/err.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
 
 #include "clk.h"
 #include "common.h"

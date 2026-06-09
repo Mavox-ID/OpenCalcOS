@@ -1,9 +1,9 @@
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/amigaffs.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
+#include <beep/amigaffs.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
 
 /* AmigaOS allows file names with up to 30 characters length.
  * Names longer than that will be silently truncated. If you

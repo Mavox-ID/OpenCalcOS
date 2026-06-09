@@ -1,7 +1,7 @@
-#include <linux/pci.h>
-#include <linux/usb.h>
-#include <linux/usb/ehci_def.h>
-#include <linux/usb/hcd.h>
+#include <beep/pci.h>
+#include <beep/usb.h>
+#include <beep/usb/ehci_def.h>
+#include <beep/usb/hcd.h>
 #include <asm/xen/hypercall.h>
 #include <xen/interface/physdev.h>
 #include <xen/xen.h>
@@ -44,7 +44,7 @@ int xen_dbgp_external_startup(struct usb_hcd *hcd)
 }
 
 #ifndef CONFIG_EARLY_PRINTK_DBGP
-#include <linux/export.h>
+#include <beep/export.h>
 EXPORT_SYMBOL_GPL(xen_dbgp_reset_prep);
 EXPORT_SYMBOL_GPL(xen_dbgp_external_startup);
 #endif

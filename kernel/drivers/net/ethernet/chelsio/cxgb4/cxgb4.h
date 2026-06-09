@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for Beep.
  *
  * Copyright (c) 2003-2010 Chelsio Communications, Inc. All rights reserved.
  *
@@ -37,15 +37,15 @@
 
 #include "t4_hw.h"
 
-#include <linux/bitops.h>
-#include <linux/cache.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/vmalloc.h>
+#include <beep/bitops.h>
+#include <beep/cache.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/netdevice.h>
+#include <beep/pci.h>
+#include <beep/spinlock.h>
+#include <beep/timer.h>
+#include <beep/vmalloc.h>
 #include <asm/io.h>
 #include "cxgb4_uld.h"
 #include "t4_hw.h"

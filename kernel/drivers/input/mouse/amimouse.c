@@ -1,5 +1,5 @@
 /*
- *  Amiga mouse driver for Linux/m68k
+ *  Amiga mouse driver for Beep/m68k
  *
  *  Copyright (c) 2000-2002 Vojtech Pavlik
  *
@@ -17,11 +17,11 @@
  * the Free Software Foundation
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
 
 #include <asm/irq.h>
 #include <asm/setup.h>

@@ -1,7 +1,7 @@
 /*
  *  Copyright (C) 1994-1998	   Linus Torvalds & authors (see below)
- *  Copyright (C) 1998-2002	   Linux ATA Development
- *				      Andre Hedrick <andre@linux-ide.org>
+ *  Copyright (C) 1998-2002	   Beep ATA Development
+ *				      Andre Hedrick <andre@beep-ide.org>
  *  Copyright (C) 2003		   Red Hat
  *  Copyright (C) 2003-2005, 2007  Bartlomiej Zolnierkiewicz
  */
@@ -9,25 +9,25 @@
 /*
  *  Mostly written by Mark Lord <mlord@pobox.com>
  *                and Gadi Oxman <gadio@netvision.net.il>
- *                and Andre Hedrick <andre@linux-ide.org>
+ *                and Andre Hedrick <andre@beep-ide.org>
  *
  * This is the IDE/ATA disk driver, as evolved from hd.c and ide.c.
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/genhd.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/leds.h>
-#include <linux/ide.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/major.h>
+#include <beep/errno.h>
+#include <beep/genhd.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
+#include <beep/leds.h>
+#include <beep/ide.h>
 
 #include <asm/byteorder.h>
 #include <asm/irq.h>

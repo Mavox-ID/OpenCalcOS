@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/atari/config.c
+ *  beep/arch/m68k/atari/config.c
  *
  *  Copyright (C) 1994 Bjoern Brauel
  *
@@ -24,15 +24,15 @@
  * Miscellaneous atari stuff
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/vt_kern.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/seq_file.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/vt_kern.h>
+#include <beep/module.h>
 
 #include <asm/bootinfo.h>
 #include <asm/setup.h>

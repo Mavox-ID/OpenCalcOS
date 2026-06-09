@@ -1,5 +1,5 @@
 /*
- *  linux/fs/affs/inode.c
+ *  beep/fs/affs/inode.c
  *
  *  (c) 1996  Hans-Joachim Widmaier - Rewritten
  *
@@ -9,8 +9,8 @@
  *
  *  (C) 1991  Linus Torvalds - minix filesystem
  */
-#include <linux/sched.h>
-#include <linux/gfp.h>
+#include <beep/sched.h>
+#include <beep/gfp.h>
 #include "affs.h"
 
 extern const struct inode_operations affs_symlink_inode_operations;

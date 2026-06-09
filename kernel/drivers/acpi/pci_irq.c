@@ -27,16 +27,16 @@
  */
 
 
-#include <linux/dmi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/pm.h>
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
+#include <beep/dmi.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/pm.h>
+#include <beep/pci.h>
+#include <beep/acpi.h>
+#include <beep/slab.h>
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
 

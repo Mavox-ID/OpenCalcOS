@@ -1,5 +1,5 @@
 /*
- *  linux/fs/affs/namei.c
+ *  beep/fs/affs/namei.c
  *
  *  (c) 1996  Hans-Joachim Widmaier - Rewritten
  *

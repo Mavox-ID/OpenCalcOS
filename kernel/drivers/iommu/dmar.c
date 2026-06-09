@@ -28,16 +28,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt /* has to precede printk.h */
 
-#include <linux/pci.h>
-#include <linux/dmar.h>
-#include <linux/iova.h>
-#include <linux/intel-iommu.h>
-#include <linux/timer.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/tboot.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
+#include <beep/pci.h>
+#include <beep/dmar.h>
+#include <beep/iova.h>
+#include <beep/intel-iommu.h>
+#include <beep/timer.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/tboot.h>
+#include <beep/dmi.h>
+#include <beep/slab.h>
 #include <asm/irq_remapping.h>
 #include <asm/iommu_table.h>
 

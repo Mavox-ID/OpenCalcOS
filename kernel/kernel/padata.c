@@ -20,16 +20,16 @@
  * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/export.h>
-#include <linux/cpumask.h>
-#include <linux/err.h>
-#include <linux/cpu.h>
-#include <linux/padata.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/rcupdate.h>
+#include <beep/export.h>
+#include <beep/cpumask.h>
+#include <beep/err.h>
+#include <beep/cpu.h>
+#include <beep/padata.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/sysfs.h>
+#include <beep/rcupdate.h>
 
 #define MAX_OBJ_NUM 1000
 

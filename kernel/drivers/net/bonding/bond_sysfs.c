@@ -22,24 +22,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/in.h>
-#include <linux/sysfs.h>
-#include <linux/ctype.h>
-#include <linux/inet.h>
-#include <linux/rtnetlink.h>
-#include <linux/etherdevice.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/netdevice.h>
+#include <beep/inetdevice.h>
+#include <beep/in.h>
+#include <beep/sysfs.h>
+#include <beep/ctype.h>
+#include <beep/inet.h>
+#include <beep/rtnetlink.h>
+#include <beep/etherdevice.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
-#include <linux/nsproxy.h>
+#include <beep/nsproxy.h>
 
 #include "bonding.h"
 

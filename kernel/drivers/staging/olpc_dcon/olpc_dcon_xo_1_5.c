@@ -8,12 +8,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
+#include <beep/acpi.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
 #include <asm/olpc.h>
 
-/* TODO: this eventually belongs in linux/vx855.h */
+/* TODO: this eventually belongs in beep/vx855.h */
 #define NR_VX855_GPI    14
 #define NR_VX855_GPO    13
 #define NR_VX855_GPIO   15

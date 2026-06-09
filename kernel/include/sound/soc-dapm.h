@@ -1,5 +1,5 @@
 /*
- * linux/sound/soc-dapm.h -- ALSA SoC Dynamic Audio Power Management
+ * beep/sound/soc-dapm.h -- ALSA SoC Dynamic Audio Power Management
  *
  * Author:		Liam Girdwood
  * Created:		Aug 11th 2005
@@ -10,10 +10,10 @@
  * published by the Free Software Foundation.
  */
 
-#ifndef __LINUX_SND_SOC_DAPM_H
-#define __LINUX_SND_SOC_DAPM_H
+#ifndef __BEEP_SND_SOC_DAPM_H
+#define __BEEP_SND_SOC_DAPM_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <sound/control.h>
 
 struct device;

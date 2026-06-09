@@ -11,26 +11,26 @@
  *		This software was originally developed in conformance with
  *		Microsoft's Remote NDIS Specification License Agreement.
  *
- * 03/12/2004 Kai-Uwe Bloem <linux-development@auerswald.de>
+ * 03/12/2004 Kai-Uwe Bloem <beep-development@auerswald.de>
  *		Fixed message length bug in init_response
  *
- * 03/25/2004 Kai-Uwe Bloem <linux-development@auerswald.de>
+ * 03/25/2004 Kai-Uwe Bloem <beep-development@auerswald.de>
  *		Fixed rndis_rm_hdr length bug.
  *
  * Copyright (C) 2004 by David Brownell
- *		updates to merge with Linux 2.6, better match RNDIS spec
+ *		updates to merge with Beep 2.6, better match RNDIS spec
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/proc_fs.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/netdevice.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/proc_fs.h>
+#include <beep/slab.h>
+#include <beep/seq_file.h>
+#include <beep/netdevice.h>
 
 #include <asm/io.h>
 #include <asm/byteorder.h>
@@ -45,7 +45,7 @@
 /* The driver for your USB chip needs to support ep0 OUT to work with
  * RNDIS, plus all three CDC Ethernet endpoints (interrupt not optional).
  *
- * Windows hosts need an INF file like Documentation/usb/linux.inf
+ * Windows hosts need an INF file like Documentation/usb/beep.inf
  * and will be happier if you provide the host_addr module parameter.
  */
 

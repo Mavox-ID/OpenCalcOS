@@ -1,7 +1,7 @@
 
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/ide.h>
+#include <beep/kernel.h>
+#include <beep/gfp.h>
+#include <beep/ide.h>
 
 DEFINE_MUTEX(ide_setting_mtx);
 

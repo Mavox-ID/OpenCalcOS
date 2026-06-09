@@ -13,10 +13,10 @@
 #ifndef __DRIVERS_USB_CHIPIDEA_CI_H
 #define __DRIVERS_USB_CHIPIDEA_CI_H
 
-#include <linux/list.h>
-#include <linux/irqreturn.h>
-#include <linux/usb.h>
-#include <linux/usb/gadget.h>
+#include <beep/list.h>
+#include <beep/irqreturn.h>
+#include <beep/usb.h>
+#include <beep/usb/gadget.h>
 
 /******************************************************************************
  * DEFINE

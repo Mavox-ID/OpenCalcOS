@@ -44,7 +44,7 @@
  */
 
 
-#include <linux/usb/storage.h>
+#include <beep/usb/storage.h>
 #include <scsi/scsi.h>
 #include <asm/unaligned.h>
 
@@ -56,7 +56,7 @@
  * Instead:  allocate your own, using normal USB-IF procedures.
  */
 #define FSG_VENDOR_ID	0x0525	/* NetChip */
-#define FSG_PRODUCT_ID	0xa4a5	/* Linux-USB File-backed Storage Gadget */
+#define FSG_PRODUCT_ID	0xa4a5	/* Beep-USB File-backed Storage Gadget */
 
 
 /*-------------------------------------------------------------------------*/
@@ -80,7 +80,7 @@
 
 /*
  * Keep those macros in sync with those in
- * include/linux/usb/composite.h or else GCC will complain.  If they
+ * include/beep/usb/composite.h or else GCC will complain.  If they
  * are identical (the same names of arguments, white spaces in the
  * same places) GCC will allow redefinition otherwise (even if some
  * white space is removed or added) warning will be issued.

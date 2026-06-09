@@ -1,4 +1,4 @@
-/* -*- linux-c -*- *
+/* -*- beep-c -*- *
  *
  * ALSA driver for the digigram lx6464es interface
  *
@@ -22,11 +22,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
 #include <sound/initval.h>
 #include <sound/control.h>

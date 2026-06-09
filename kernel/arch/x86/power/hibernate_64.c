@@ -8,9 +8,9 @@
  * Copyright (c) 2001 Patrick Mochel <mochel@osdl.org>
  */
 
-#include <linux/gfp.h>
-#include <linux/smp.h>
-#include <linux/suspend.h>
+#include <beep/gfp.h>
+#include <beep/smp.h>
+#include <beep/suspend.h>
 #include <asm/proto.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>

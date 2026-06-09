@@ -17,12 +17,12 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/serial_8250.h>
-#include <linux/mtd/physmap.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/ioport.h>
+#include <beep/serial_8250.h>
+#include <beep/mtd/physmap.h>
 
 #include <asm/cpu.h>
 #include <asm/bootinfo.h>

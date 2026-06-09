@@ -6,18 +6,18 @@
  * Licensed under the GPL-2.
  */
 
-#include <linux/interrupt.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/regulator/consumer.h>
+#include <beep/interrupt.h>
+#include <beep/fs.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/spi/spi.h>
+#include <beep/slab.h>
+#include <beep/sysfs.h>
+#include <beep/regulator/consumer.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
 
 #define AD5686_DAC_CHANNELS			4
 
@@ -417,6 +417,6 @@ static struct spi_driver ad5686_driver = {
 };
 module_spi_driver(ad5686_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("Analog Devices AD5686/85/84 DAC");
 MODULE_LICENSE("GPL v2");

@@ -4,8 +4,8 @@
  * Copyright (C) 1996-1998, Olaf Kirch <okir@monad.swb.de>
  */
 
-#ifndef _LINUX_NFSD_XDR3_H
-#define _LINUX_NFSD_XDR3_H
+#ifndef _BEEP_NFSD_XDR3_H
+#define _BEEP_NFSD_XDR3_H
 
 #include "xdr.h"
 
@@ -341,4 +341,4 @@ __be32 *nfs3svc_encode_post_op_attr(struct svc_rqst *rqstp, __be32 *p,
 __be32 *nfs3svc_decode_fh(__be32 *p, struct svc_fh *fhp);
 
 
-#endif /* _LINUX_NFSD_XDR3_H */
+#endif /* _BEEP_NFSD_XDR3_H */

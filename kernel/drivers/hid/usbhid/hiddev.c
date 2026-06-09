@@ -25,16 +25,16 @@
  * e-mail - mail your message to Paul Stewart <stewart@wetlogic.net>
  */
 
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/usb.h>
-#include <linux/hid.h>
-#include <linux/hiddev.h>
-#include <linux/compat.h>
-#include <linux/vmalloc.h>
+#include <beep/poll.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/usb.h>
+#include <beep/hid.h>
+#include <beep/hiddev.h>
+#include <beep/compat.h>
+#include <beep/vmalloc.h>
 #include "usbhid.h"
 
 #ifdef CONFIG_USB_DYNAMIC_MINORS

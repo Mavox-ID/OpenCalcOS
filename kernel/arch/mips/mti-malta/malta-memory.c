@@ -18,11 +18,11 @@
  * PROM library functions for acquiring/using memory descriptors given to
  * us from the YAMON.
  */
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/bootmem.h>
-#include <linux/pfn.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/bootmem.h>
+#include <beep/pfn.h>
+#include <beep/string.h>
 
 #include <asm/bootinfo.h>
 #include <asm/page.h>

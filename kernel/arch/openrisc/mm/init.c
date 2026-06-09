@@ -1,7 +1,7 @@
 /*
  * OpenRISC idle.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -15,23 +15,23 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/bootmem.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/blkdev.h>	/* for initrd_* */
-#include <linux/pagemap.h>
-#include <linux/memblock.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/smp.h>
+#include <beep/bootmem.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/blkdev.h>	/* for initrd_* */
+#include <beep/pagemap.h>
+#include <beep/memblock.h>
 
 #include <asm/segment.h>
 #include <asm/pgalloc.h>
@@ -80,7 +80,7 @@ static void __init map_ram(void)
 	pmd_t *pme;
 	pte_t *pte;
 	/* These mark extents of read-only kernel pages...
-	 * ...from vmlinux.lds.S
+	 * ...from vmbeep.lds.S
 	 */
 	struct memblock_region *region;
 

@@ -27,16 +27,16 @@
  * timer, but by default APB timer has higher rating than local APIC timers.
  */
 
-#include <linux/delay.h>
-#include <linux/dw_apb_timer.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
-#include <linux/sfi.h>
-#include <linux/interrupt.h>
-#include <linux/cpu.h>
-#include <linux/irq.h>
+#include <beep/delay.h>
+#include <beep/dw_apb_timer.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/pm.h>
+#include <beep/sfi.h>
+#include <beep/interrupt.h>
+#include <beep/cpu.h>
+#include <beep/irq.h>
 
 #include <asm/fixmap.h>
 #include <asm/apb_timer.h>

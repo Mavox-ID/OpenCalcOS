@@ -1,4 +1,4 @@
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- beep-c -*- ------------------------------------------------------- *
  *
  *   Copyright 2002-2004 H. Peter Anvin - All Rights Reserved
  *
@@ -22,7 +22,7 @@
  * bracked this with preempt_disable/enable or in a lock)
  */
 
-#include <linux/raid/pq.h>
+#include <beep/raid/pq.h>
 
 #include <altivec.h>
 #ifdef __KERNEL__

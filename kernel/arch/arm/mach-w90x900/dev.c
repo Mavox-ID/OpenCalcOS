@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-w90x900/dev.c
+ * beep/arch/arm/mach-w90x900/dev.c
  *
  * Copyright (C) 2009 Nuvoton corporation.
  *
@@ -11,21 +11,21 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
 
 #include <asm/system_misc.h>
 #include <asm/mach/arch.h>
@@ -34,11 +34,11 @@
 #include <asm/mach-types.h>
 
 #include <mach/regs-serial.h>
-#include <linux/platform_data/spi-nuc900.h>
+#include <beep/platform_data/spi-nuc900.h>
 #include <mach/map.h>
-#include <linux/platform_data/video-nuc900fb.h>
+#include <beep/platform_data/video-nuc900fb.h>
 #include <mach/regs-ldm.h>
-#include <linux/platform_data/keypad-w90p910.h>
+#include <beep/platform_data/keypad-w90p910.h>
 
 #include "cpu.h"
 

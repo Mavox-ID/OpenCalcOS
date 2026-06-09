@@ -1,5 +1,5 @@
 /*
- * linux/kernel/posix-timers.c
+ * beep/kernel/posix-timers.c
  *
  *
  * 2002-10-15  Posix Clocks & timers
@@ -30,23 +30,23 @@
 /* These are all the functions necessary to implement
  * POSIX clocks & timers
  */
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/mutex.h>
 
 #include <asm/uaccess.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/compiler.h>
-#include <linux/idr.h>
-#include <linux/posix-clock.h>
-#include <linux/posix-timers.h>
-#include <linux/syscalls.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/export.h>
+#include <beep/list.h>
+#include <beep/init.h>
+#include <beep/compiler.h>
+#include <beep/idr.h>
+#include <beep/posix-clock.h>
+#include <beep/posix-timers.h>
+#include <beep/syscalls.h>
+#include <beep/wait.h>
+#include <beep/workqueue.h>
+#include <beep/export.h>
 
 /*
  * Management arrays for POSIX timers.	 Timers are kept in slab memory

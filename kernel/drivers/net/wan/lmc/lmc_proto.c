@@ -19,26 +19,26 @@
   * Driver for the LanMedia LMC5200, LMC5245, LMC1000, LMC1200 cards.
   */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/ptrace.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/inet.h>
-#include <linux/workqueue.h>
-#include <linux/proc_fs.h>
-#include <linux/bitops.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/ptrace.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/in.h>
+#include <beep/if_arp.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/inet.h>
+#include <beep/workqueue.h>
+#include <beep/proc_fs.h>
+#include <beep/bitops.h>
 #include <asm/processor.h>             /* Processor type for cache alignment. */
 #include <asm/io.h>
 #include <asm/dma.h>
-#include <linux/smp.h>
+#include <beep/smp.h>
 
 #include "lmc.h"
 #include "lmc_var.h"

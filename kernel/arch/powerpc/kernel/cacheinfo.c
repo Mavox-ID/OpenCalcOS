@@ -10,16 +10,16 @@
  * 2 as published by the Free Software Foundation.
  */
 
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kobject.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
+#include <beep/cpu.h>
+#include <beep/cpumask.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/kobject.h>
+#include <beep/list.h>
+#include <beep/notifier.h>
+#include <beep/of.h>
+#include <beep/percpu.h>
+#include <beep/slab.h>
 #include <asm/prom.h>
 
 #include "cacheinfo.h"
@@ -218,7 +218,7 @@ static int cache_size_kb(const struct cache *cache, unsigned int *ret)
 	return 0;
 }
 
-/* not cache_line_size() because that's a macro in include/linux/cache.h */
+/* not cache_line_size() because that's a macro in include/beep/cache.h */
 static int cache_get_line_size(const struct cache *cache, unsigned int *ret)
 {
 	const u32 *line_size;

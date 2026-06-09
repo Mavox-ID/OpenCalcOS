@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/mfb.c -- Low level frame buffer operations for
+ *  beep/drivers/video/mfb.c -- Low level frame buffer operations for
  *				 monochrome
  *
  *	Created 5 Apr 1997 by Geert Uytterhoeven
@@ -9,9 +9,9 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fb.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/fb.h>
 
 #include "atafb.h"
 #include "atafb_utils.h"

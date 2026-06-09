@@ -1,5 +1,5 @@
 /* Hewlett-Packard Harmony audio driver
- * Copyright (C) 2004, Kyle McMartin <kyle@parisc-linux.org>
+ * Copyright (C) 2004, Kyle McMartin <kyle@parisc-beep.org>
  */
 
 #ifndef __HARMONY_H__

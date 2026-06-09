@@ -1,20 +1,20 @@
 /*
- *  linux/fs/hfs/hfs_fs.h
+ *  beep/fs/hfs/hfs_fs.h
  *
  * Copyright (C) 1995-1997  Paul H. Hargrove
  * (C) 2003 Ardis Technologies <roman@ardistech.com>
  * This file may be distributed under the terms of the GNU General Public License.
  */
 
-#ifndef _LINUX_HFS_FS_H
-#define _LINUX_HFS_FS_H
+#ifndef _BEEP_HFS_FS_H
+#define _BEEP_HFS_FS_H
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/buffer_head.h>
-#include <linux/fs.h>
-#include <linux/workqueue.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/mutex.h>
+#include <beep/buffer_head.h>
+#include <beep/fs.h>
+#include <beep/workqueue.h>
 
 #include <asm/byteorder.h>
 #include <asm/uaccess.h>
@@ -40,7 +40,7 @@
 /*
  * struct hfs_inode_info
  *
- * The HFS-specific part of a Linux (struct inode)
+ * The HFS-specific part of a Beep (struct inode)
  */
 struct hfs_inode_info {
 	atomic_t opencnt;
@@ -78,7 +78,7 @@ struct hfs_inode_info {
 /*
  * struct hfs_sb_info
  *
- * The HFS-specific part of a Linux (struct super_block)
+ * The HFS-specific part of a Beep (struct super_block)
  */
 struct hfs_sb_info {
 	struct buffer_head *mdb_bh;		/* The hfs_buffer

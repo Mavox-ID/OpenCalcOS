@@ -9,8 +9,8 @@
 #define KMSG_COMPONENT "qeth"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/list.h>
-#include <linux/rwsem.h>
+#include <beep/list.h>
+#include <beep/rwsem.h>
 #include <asm/ebcdic.h>
 
 #include "qeth_core.h"

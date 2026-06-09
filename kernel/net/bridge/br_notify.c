@@ -1,6 +1,6 @@
 /*
  *	Device event handling
- *	Linux ethernet bridge
+ *	Beep ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -11,8 +11,8 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/rtnetlink.h>
+#include <beep/kernel.h>
+#include <beep/rtnetlink.h>
 #include <net/net_namespace.h>
 
 #include "br_private.h"

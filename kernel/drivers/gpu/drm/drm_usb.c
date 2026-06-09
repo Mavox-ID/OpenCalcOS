@@ -1,6 +1,6 @@
 #include <drm/drmP.h>
-#include <linux/usb.h>
-#include <linux/module.h>
+#include <beep/usb.h>
+#include <beep/module.h>
 
 int drm_get_usb_dev(struct usb_interface *interface,
 		    const struct usb_device_id *id,

@@ -1,6 +1,6 @@
-/* This file is auto generated, version 18 */
+/* This file is auto generated, version 16 */
 #define UTS_MACHINE "arm"
-#define UTS_VERSION "#18 Sun Jun 7 15:14:45 EEST 2026"
-#define LINUX_COMPILE_BY "mark"
-#define LINUX_COMPILE_HOST "mark"
-#define LINUX_COMPILER "gcc version 7.5.0 (Linaro GCC 7.5-2019.12) "
+#define UTS_VERSION "#16 Tue Jun 9 16:46:44 EEST 2026"
+#define BEEP_COMPILE_BY "mark"
+#define BEEP_COMPILE_HOST "mark"
+#define BEEP_COMPILER "gcc version 14.2.0 (GCC) "

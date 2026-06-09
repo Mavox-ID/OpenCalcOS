@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/common/it8152.c
+ * beep/arch/arm/common/it8152.c
  *
  * Copyright Compulab Ltd, 2002-2007
  * Mike Rapoport <mike@compulab.co.il>
@@ -15,17 +15,17 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/ptrace.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/export.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/ptrace.h>
+#include <beep/interrupt.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/export.h>
 
 #include <asm/mach/pci.h>
 #include <asm/hardware/it8152.h>

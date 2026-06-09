@@ -6,7 +6,7 @@ help:
 	@echo '  cpupower   - a tool for all things x86 CPU power'
 	@echo '  firewire   - the userspace part of nosy, an IEEE-1394 traffic sniffer'
 	@echo '  lguest     - a minimal 32-bit x86 hypervisor'
-	@echo '  perf       - Linux performance measurement and analysis tool'
+	@echo '  perf       - Beep performance measurement and analysis tool'
 	@echo '  selftests  - various kernel selftests'
 	@echo '  turbostat  - Intel CPU idle stats and freq reporting tool'
 	@echo '  usb        - USB testing tools'

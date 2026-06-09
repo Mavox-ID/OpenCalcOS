@@ -17,11 +17,11 @@
 #ifndef _CPUFREQ_GOVERNER_H
 #define _CPUFREQ_GOVERNER_H
 
-#include <linux/cpufreq.h>
-#include <linux/kobject.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/sysfs.h>
+#include <beep/cpufreq.h>
+#include <beep/kobject.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
+#include <beep/sysfs.h>
 
 /*
  * The polling frequency depends on the capability of the processor. Default

@@ -14,7 +14,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/user.h>
+#include <beep/user.h>
 
 /*
  * Fill in the user structure for an ECOFF core dump.

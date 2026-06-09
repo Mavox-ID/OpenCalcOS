@@ -22,7 +22,7 @@
 #ifndef __STB_6100_REG_H
 #define __STB_6100_REG_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 #include "dvb_frontend.h"
 
 #define STB6100_LD			0x00

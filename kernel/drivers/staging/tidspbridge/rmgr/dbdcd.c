@@ -22,7 +22,7 @@
  * IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  */
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*  ----------------------------------- Host OS */
 #include <dspbridge/host_os.h>

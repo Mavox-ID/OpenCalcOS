@@ -7,8 +7,8 @@
  *
  * Copyright (C) 2006, Wind River Inc. Rongkai.zhan (rongkai.zhan@windriver.com)
  */
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <beep/init.h>
+#include <beep/pci.h>
 #include <asm/gt64120.h>
 
 /* PCI interrupt pins */

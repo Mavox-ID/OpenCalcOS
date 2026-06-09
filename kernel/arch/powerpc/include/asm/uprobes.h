@@ -22,7 +22,7 @@
  * Adapted from the x86 port by Ananth N Mavinakayanahalli <ananth@in.ibm.com>
  */
 
-#include <linux/notifier.h>
+#include <beep/notifier.h>
 #include <asm/probes.h>
 
 typedef ppc_opcode_t uprobe_opcode_t;

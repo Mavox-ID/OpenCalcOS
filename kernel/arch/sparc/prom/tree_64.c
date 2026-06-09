@@ -1,16 +1,16 @@
 /*
- * tree.c: Basic device tree traversal/scanning for the Linux
+ * tree.c: Basic device tree traversal/scanning for the Beep
  *         prom library.
  *
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  * Copyright (C) 1996,1997 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/module.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/module.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>

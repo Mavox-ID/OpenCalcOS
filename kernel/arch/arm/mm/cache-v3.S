@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/cache-v3.S
+ *  beep/arch/arm/mm/cache-v3.S
  *
  *  Copyright (C) 1997-2002 Russell king
  *
@@ -7,8 +7,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/page.h>
 #include "proc-macros.S"
 

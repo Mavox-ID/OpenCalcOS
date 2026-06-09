@@ -7,8 +7,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
-#include <linux/mmzone.h>
+#include <beep/compiler.h>
+#include <beep/mmzone.h>
 #include <asm/setup.h>
 #include <asm/page.h>
 

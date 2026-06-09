@@ -22,8 +22,8 @@
  */
 #ifndef _SMB2PROTO_H
 #define _SMB2PROTO_H
-#include <linux/nls.h>
-#include <linux/key-type.h>
+#include <beep/nls.h>
+#include <beep/key-type.h>
 
 struct statfs;
 struct smb_rqst;
@@ -33,7 +33,7 @@ struct smb_rqst;
  * All Prototypes
  *****************************************************************
  */
-extern int map_smb2_to_linux_error(char *buf, bool log_err);
+extern int map_smb2_to_beep_error(char *buf, bool log_err);
 extern int smb2_check_message(char *buf, unsigned int length);
 extern unsigned int smb2_calc_size(void *buf);
 extern char *smb2_get_data_area_len(int *off, int *len, struct smb2_hdr *hdr);

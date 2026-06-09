@@ -1,6 +1,6 @@
 /*
     A Davicom DM9102/DM9102A/DM9102A+DM9801/DM9102A+DM9802 NIC fast
-    ethernet driver for Linux.
+    ethernet driver for Beep.
     Copyright (C) 1997  Sten Wang
 
     This program is free software; you can redistribute it and/or
@@ -67,25 +67,25 @@
 #define DRV_VERSION	"1.36.4"
 #define DRV_RELDATE	"2002-01-17"
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/ptrace.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/crc32.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/ptrace.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/skbuff.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/crc32.h>
+#include <beep/bitops.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>
@@ -94,7 +94,7 @@
 #include <asm/irq.h>
 
 #ifdef CONFIG_TULIP_DM910X
-#include <linux/of.h>
+#include <beep/of.h>
 #endif
 
 

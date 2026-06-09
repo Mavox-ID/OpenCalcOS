@@ -1,8 +1,8 @@
-#ifndef LINUX_MLD_H
-#define LINUX_MLD_H
+#ifndef BEEP_MLD_H
+#define BEEP_MLD_H
 
-#include <linux/in6.h>
-#include <linux/icmpv6.h>
+#include <beep/in6.h>
+#include <beep/icmpv6.h>
 
 /* MLDv1 Query/Report/Done */
 struct mld_msg {

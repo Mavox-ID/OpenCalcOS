@@ -1,6 +1,6 @@
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/audit.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/audit.h>
 #include <asm/unistd.h>
 #include "audit.h"
 

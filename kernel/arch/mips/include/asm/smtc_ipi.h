@@ -4,7 +4,7 @@
 #ifndef __ASM_SMTC_IPI_H
 #define __ASM_SMTC_IPI_H
 
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 
 //#define SMTC_IPI_DEBUG
 
@@ -32,7 +32,7 @@ struct smtc_ipi {
  * Defined IPI Types
  */
 
-#define LINUX_SMP_IPI 1
+#define BEEP_SMP_IPI 1
 #define SMTC_CLOCK_TICK 2
 #define IRQ_AFFINITY_IPI 3
 

@@ -8,7 +8,7 @@
 #ifndef _ASM_IA64_SN_PCI_PCIDEV_H
 #define _ASM_IA64_SN_PCI_PCIDEV_H
 
-#include <linux/pci.h>
+#include <beep/pci.h>
 
 /*
  * In ia64, pci_dev->sysdata must be a *pci_controller. To provide access to
@@ -58,7 +58,7 @@ struct pcidev_info {
 
 	struct pcibus_bussoft	*pdi_pcibus_info;	/* Kernel common bus soft */
 	struct pcidev_info	*pdi_host_pcidev_info;	/* Kernel Host pci_dev */
-	struct pci_dev		*pdi_linux_pcidev;	/* Kernel pci_dev */
+	struct pci_dev		*pdi_beep_pcidev;	/* Kernel pci_dev */
 
 	struct sn_irq_info	*pdi_sn_irq_info;
 	struct sn_pcibus_provider *pdi_provider;	/* sn pci ops */

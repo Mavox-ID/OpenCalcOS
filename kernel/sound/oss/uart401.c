@@ -6,12 +6,12 @@
  *
  * Copyright (C) by Hannu Savolainen 1993-1997
  *
- * OSS/Free for Linux is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
+ * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
  * Version 2 (June 1991). See the "COPYING" file distributed with this software
  * for more info.
  *
  * Changes:
- *	Alan Cox		Reformatted, removed sound_mem usage, use normal Linux
+ *	Alan Cox		Reformatted, removed sound_mem usage, use normal Beep
  *				interrupt allocation. Protect against bogus unload
  *				Fixed to allow IRQ > 15
  *	Christoph Hellwig	Adapted to module_init/module_exit
@@ -21,11 +21,11 @@
  *		Untested
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 #include "sound_config.h"
 
 #include "mpu401.h"

@@ -12,12 +12,12 @@
  * 		Generalized, added support for multiple lists and
  * 		constructors / destructors.
  */
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/quicklist.h>
+#include <beep/gfp.h>
+#include <beep/mm.h>
+#include <beep/mmzone.h>
+#include <beep/quicklist.h>
 
 DEFINE_PER_CPU(struct quicklist [CONFIG_NR_QUICK], quicklist);
 

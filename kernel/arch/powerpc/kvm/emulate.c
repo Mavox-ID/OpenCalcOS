@@ -18,12 +18,12 @@
  * Authors: Hollis Blanchard <hollisb@us.ibm.com>
  */
 
-#include <linux/jiffies.h>
-#include <linux/hrtimer.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kvm_host.h>
-#include <linux/clockchips.h>
+#include <beep/jiffies.h>
+#include <beep/hrtimer.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/kvm_host.h>
+#include <beep/clockchips.h>
 
 #include <asm/reg.h>
 #include <asm/time.h>

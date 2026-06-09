@@ -34,7 +34,7 @@
 #ifndef _ATMEL_PCM_H
 #define _ATMEL_PCM_H
 
-#include <linux/atmel-ssc.h>
+#include <beep/atmel-ssc.h>
 
 #define ATMEL_SSC_DMABUF_SIZE	(64 * 1024)
 

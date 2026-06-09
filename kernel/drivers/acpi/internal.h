@@ -1,6 +1,6 @@
 /*
  * acpi/internal.h
- * For use by Linux/ACPI infrastructure, not drivers
+ * For use by Beep/ACPI infrastructure, not drivers
  *
  * Copyright (c) 2009, Intel Corporation.
  *

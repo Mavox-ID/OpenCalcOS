@@ -17,14 +17,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
+#include <beep/compiler.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/syscalls.h>
 
 asmlinkage long sys_mmap(unsigned long addr, unsigned long len,
 			 unsigned long prot, unsigned long flags,

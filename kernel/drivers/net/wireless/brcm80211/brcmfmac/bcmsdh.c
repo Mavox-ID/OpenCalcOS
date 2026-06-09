@@ -17,16 +17,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/card.h>
+#include <beep/types.h>
+#include <beep/netdevice.h>
+#include <beep/export.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/sched.h>
+#include <beep/completion.h>
+#include <beep/mmc/sdio.h>
+#include <beep/mmc/sdio_func.h>
+#include <beep/mmc/card.h>
 
 #include <defs.h>
 #include <brcm_hw_ids.h>

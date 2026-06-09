@@ -11,7 +11,7 @@
  *   NON INFRINGEMENT.  See the GNU General Public License for
  *   more details.
  *
- * Do not include directly; use <linux/atomic.h>.
+ * Do not include directly; use <beep/atomic.h>.
  */
 
 #ifndef _ASM_TILE_ATOMIC_64_H
@@ -28,7 +28,7 @@
 
 /*
  * The smp_mb() operations throughout are to support the fact that
- * Linux requires memory barriers before and after the operation,
+ * Beep requires memory barriers before and after the operation,
  * on any routine which updates memory and returns a value.
  */
 

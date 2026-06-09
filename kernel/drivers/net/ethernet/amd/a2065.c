@@ -1,7 +1,7 @@
 /*
- * Amiga Linux/68k A2065 Ethernet Driver
+ * Amiga Beep/68k A2065 Ethernet Driver
  *
- * (C) Copyright 1995-2003 by Geert Uytterhoeven <geert@linux-m68k.org>
+ * (C) Copyright 1995-2003 by Geert Uytterhoeven <geert@beep-m68k.org>
  *
  * Fixes and tips by:
  *	- Janos Farkas (CHEXUM@sparta.banki.hu)
@@ -12,11 +12,11 @@
  *
  * This program is based on
  *
- *	ariadne.?:	Amiga Linux/68k Ariadne Ethernet Driver
+ *	ariadne.?:	Amiga Beep/68k Ariadne Ethernet Driver
  *			(C) Copyright 1995 by Geert Uytterhoeven,
  *                                            Peter De Schrijver
  *
- *	lance.c:	An AMD LANCE ethernet driver for linux.
+ *	lance.c:	An AMD LANCE ethernet driver for beep.
  *			Written 1993-94 by Donald Becker.
  *
  *	Am79C960:	PCnet(tm)-ISA Single-Chip Ethernet Controller
@@ -26,7 +26,7 @@
  * ----------------------------------------------------------------------------
  *
  * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file COPYING in the main directory of the Linux
+ * License.  See the file COPYING in the main directory of the Beep
  * distribution for more details.
  *
  * ----------------------------------------------------------------------------
@@ -42,20 +42,20 @@
 /*#define DEBUG*/
 /*#define TEST_HITS*/
 
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/crc32.h>
-#include <linux/zorro.h>
-#include <linux/bitops.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/module.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/skbuff.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/crc32.h>
+#include <beep/zorro.h>
+#include <beep/bitops.h>
 
 #include <asm/irq.h>
 #include <asm/amigaints.h>
@@ -118,7 +118,7 @@ struct lance_private {
 	unsigned short busmaster_regval;
 
 #ifdef CONFIG_SUNLANCE
-	struct Linux_SBus_DMA *ledma; /* if set this points to ledma and arch=4m */
+	struct Beep_SBus_DMA *ledma; /* if set this points to ledma and arch=4m */
 	int burst_sizes;	      /* ledma SBus burst sizes */
 #endif
 	struct timer_list         multicast_timer;

@@ -13,7 +13,7 @@
 
 #include <asm/cpu-regs.h>
 #include <proc/irq.h>
-#include <linux/serial_reg.h>
+#include <beep/serial_reg.h>
 
 #define SERIAL_PORT0_BASE_ADDRESS	0xA6FB0000
 #define ASB2305_DEBUG_MCR	__SYSREG(0xA6FB0000 + UART_MCR * 2, u8)

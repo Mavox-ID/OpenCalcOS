@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5pv210/dev-audio.c
+/* beep/arch/arm/mach-s5pv210/dev-audio.c
  *
  * Copyright (c) 2010 Samsung Electronics Co. Ltd
  *	Jaswinder Singh <jassi.brar@samsung.com>
@@ -8,12 +8,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/gpio.h>
 
 #include <plat/gpio-cfg.h>
-#include <linux/platform_data/asoc-s3c.h>
+#include <beep/platform_data/asoc-s3c.h>
 
 #include <mach/map.h>
 #include <mach/dma.h>

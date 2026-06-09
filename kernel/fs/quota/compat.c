@@ -1,7 +1,7 @@
 
-#include <linux/syscalls.h>
-#include <linux/compat.h>
-#include <linux/quotaops.h>
+#include <beep/syscalls.h>
+#include <beep/compat.h>
+#include <beep/quotaops.h>
 
 /*
  * This code works only for 32 bit quota tools over 64 bit OS (x86_64, ia64)

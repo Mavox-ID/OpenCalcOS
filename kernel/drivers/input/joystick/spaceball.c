@@ -7,7 +7,7 @@
  */
 
 /*
- * SpaceTec SpaceBall 2003/3003/4000 FLX driver for Linux
+ * SpaceTec SpaceBall 2003/3003/4000 FLX driver for Beep
  */
 
 /*
@@ -30,12 +30,12 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/serio.h>
 
 #define DRIVER_DESC	"SpaceTec SpaceBall 2003/3003/4000 FLX driver"
 

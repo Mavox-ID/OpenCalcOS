@@ -12,15 +12,15 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/list.h>
+#include <beep/mii.h>
+#include <beep/phy.h>
+#include <beep/phy_fixed.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 
 #define MII_REGS_NUM 29
 

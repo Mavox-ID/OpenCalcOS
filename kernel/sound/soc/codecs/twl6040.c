@@ -19,14 +19,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/mfd/twl6040.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/mfd/twl6040.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

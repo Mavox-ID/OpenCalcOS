@@ -16,11 +16,11 @@
  *		Improved for non-egineering-sample Athlons
  *
  */
-#include <linux/hardirq.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/types.h>
+#include <beep/hardirq.h>
+#include <beep/string.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/types.h>
 
 #include <asm/i387.h>
 #include <asm/asm.h>

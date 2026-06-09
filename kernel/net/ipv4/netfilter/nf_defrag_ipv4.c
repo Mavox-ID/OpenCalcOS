@@ -6,16 +6,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/ip.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <beep/types.h>
+#include <beep/ip.h>
+#include <beep/netfilter.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
 #include <net/route.h>
 #include <net/ip.h>
 
-#include <linux/netfilter_bridge.h>
-#include <linux/netfilter_ipv4.h>
+#include <beep/netfilter_bridge.h>
+#include <beep/netfilter_ipv4.h>
 #include <net/netfilter/ipv4/nf_defrag_ipv4.h>
 #if defined(CONFIG_NF_CONNTRACK) || defined(CONFIG_NF_CONNTRACK_MODULE)
 #include <net/netfilter/nf_conntrack.h>

@@ -2,17 +2,17 @@
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  Copyright (C) 2000, 2001, 2002 Andi Kleen, SuSE Labs
  */
-#include <linux/kallsyms.h>
-#include <linux/kprobes.h>
-#include <linux/uaccess.h>
-#include <linux/hardirq.h>
-#include <linux/kdebug.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/kexec.h>
-#include <linux/sysfs.h>
-#include <linux/bug.h>
-#include <linux/nmi.h>
+#include <beep/kallsyms.h>
+#include <beep/kprobes.h>
+#include <beep/uaccess.h>
+#include <beep/hardirq.h>
+#include <beep/kdebug.h>
+#include <beep/module.h>
+#include <beep/ptrace.h>
+#include <beep/kexec.h>
+#include <beep/sysfs.h>
+#include <beep/bug.h>
+#include <beep/nmi.h>
 
 #include <asm/stacktrace.h>
 

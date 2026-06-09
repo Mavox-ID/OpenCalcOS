@@ -5,11 +5,11 @@
  * License terms: GNU General Public License (GPL) version 2
  * Author: Linus Walleij <triad@df.lth.se>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/leds.h>
 
 #include <mach/hardware.h>
 #include <mach/platform.h>

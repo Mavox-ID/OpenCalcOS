@@ -17,7 +17,7 @@
 #ifndef	_BRCM_DEFS_H_
 #define	_BRCM_DEFS_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define	SI_BUS			0
 #define	PCI_BUS			1

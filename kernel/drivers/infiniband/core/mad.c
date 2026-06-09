@@ -33,9 +33,9 @@
  * SOFTWARE.
  *
  */
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <rdma/ib_cache.h>
 
 #include "mad_priv.h"

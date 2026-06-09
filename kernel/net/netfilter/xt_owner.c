@@ -10,12 +10,12 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/file.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/file.h>
 #include <net/sock.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_owner.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_owner.h>
 
 static int owner_check(const struct xt_mtchk_param *par)
 {

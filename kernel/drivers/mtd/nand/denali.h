@@ -17,7 +17,7 @@
  *
  */
 
-#include <linux/mtd/nand.h>
+#include <beep/mtd/nand.h>
 
 #define DEVICE_RESET				0x0
 #define     DEVICE_RESET__BANK0				0x0001

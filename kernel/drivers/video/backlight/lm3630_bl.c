@@ -7,16 +7,16 @@
 * published by the Free Software Foundation.
 *
 */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/platform_data/lm3630_bl.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/backlight.h>
+#include <beep/err.h>
+#include <beep/delay.h>
+#include <beep/uaccess.h>
+#include <beep/interrupt.h>
+#include <beep/regmap.h>
+#include <beep/platform_data/lm3630_bl.h>
 
 #define REG_CTRL	0x00
 #define REG_CONFIG	0x01

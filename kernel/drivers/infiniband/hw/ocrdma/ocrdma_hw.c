@@ -18,17 +18,17 @@
  * included with this package.                                     *
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * beep-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
  * Costa Mesa, CA 92626
  *******************************************************************/
 
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/log2.h>
-#include <linux/dma-mapping.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/log2.h>
+#include <beep/dma-mapping.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_user_verbs.h>

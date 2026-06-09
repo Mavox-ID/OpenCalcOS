@@ -6,13 +6,13 @@
  *
  * Copyright (c) 2005-2006, Christopher Clark
  * Copyright (c) 2004-2005, K A Fraser
- * Copyright (c) 2008 Isaku Yamahata <yamahata at valinux co jp>
- *                    VA Linux Systems Japan. Split out x86 specific part.
+ * Copyright (c) 2008 Isaku Yamahata <yamahata at vabeep co jp>
+ *                    VA Beep Systems Japan. Split out x86 specific part.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the Beep kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -34,9 +34,9 @@
  * IN THE SOFTWARE.
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
 
 #include <xen/interface/xen.h>
 #include <xen/page.h>

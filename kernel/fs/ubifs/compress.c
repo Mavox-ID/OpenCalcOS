@@ -27,7 +27,7 @@
  * decompression.
  */
 
-#include <linux/crypto.h>
+#include <beep/crypto.h>
 #include "ubifs.h"
 
 /* Fake description object for the "none" compressor */

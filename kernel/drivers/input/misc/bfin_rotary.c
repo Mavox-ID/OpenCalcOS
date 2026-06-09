@@ -5,14 +5,14 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/pm.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/slab.h>
 
 #include <asm/portmux.h>
 #include <asm/bfin_rotary.h>
@@ -267,6 +267,6 @@ static struct platform_driver bfin_rotary_device_driver = {
 module_platform_driver(bfin_rotary_device_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("Rotary Counter driver for Blackfin Processors");
 MODULE_ALIAS("platform:bfin-rotary");

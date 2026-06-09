@@ -1,12 +1,12 @@
 /*
- * sis5595.c - Part of lm_sensors, Linux kernel modules
+ * sis5595.c - Part of lm_sensors, Beep kernel modules
  *	       for hardware monitoring
  *
  * Copyright (C) 1998 - 2001 Frodo Looijaard <frodol@dds.nl>,
  *			     Kyösti Mälkki <kmalkki@cc.hut.fi>, and
  *			     Mark D. Studebaker <mdsxyz123@yahoo.com>
- * Ported to Linux 2.6 by Aurelien Jarno <aurelien@aurel32.net> with
- * the help of Jean Delvare <khali@linux-fr.org>
+ * Ported to Beep 2.6 by Aurelien Jarno <aurelien@aurel32.net> with
+ * the help of Jean Delvare <khali@beep-fr.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -52,20 +52,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/platform_device.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/jiffies.h>
+#include <beep/mutex.h>
+#include <beep/sysfs.h>
+#include <beep/acpi.h>
+#include <beep/io.h>
 
 
 /*

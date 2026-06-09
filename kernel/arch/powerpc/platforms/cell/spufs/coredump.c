@@ -20,13 +20,13 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/elf.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/list.h>
-#include <linux/syscalls.h>
+#include <beep/elf.h>
+#include <beep/file.h>
+#include <beep/fdtable.h>
+#include <beep/fs.h>
+#include <beep/gfp.h>
+#include <beep/list.h>
+#include <beep/syscalls.h>
 
 #include <asm/uaccess.h>
 

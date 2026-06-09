@@ -12,9 +12,9 @@
  */
 #include <keys/asymmetric-subtype.h>
 #include <keys/asymmetric-parser.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/seq_file.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include "asymmetric_keys.h"
 
 MODULE_LICENSE("GPL");

@@ -1,9 +1,9 @@
-/* linux/arch/arm/mach-exynos4/platsmp.c
+/* beep/arch/arm/mach-exynos4/platsmp.c
  *
  * Copyright (c) 2010-2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
  *
- * Cloned from linux/arch/arm/mach-vexpress/platsmp.c
+ * Cloned from beep/arch/arm/mach-vexpress/platsmp.c
  *
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
@@ -13,13 +13,13 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/smp.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/jiffies.h>
+#include <beep/smp.h>
+#include <beep/io.h>
 
 #include <asm/cacheflush.h>
 #include <asm/hardware/gic.h>
@@ -112,7 +112,7 @@ static int __cpuinit exynos_boot_secondary(unsigned int cpu, struct task_struct 
 	 * that it has been released by resetting pen_release.
 	 *
 	 * Note that "pen_release" is the hardware CPU ID, whereas
-	 * "cpu" is Linux's internal ID.
+	 * "cpu" is Beep's internal ID.
 	 */
 	write_pen_release(phys_cpu);
 

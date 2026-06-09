@@ -8,16 +8,16 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/map.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/map.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
 #include <asm/machvec.h>
 #include <asm/io.h>
 

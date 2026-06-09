@@ -6,8 +6,8 @@
  * Licensed under GPLv2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/irq.h>
 #include <asm/mach/arch.h>

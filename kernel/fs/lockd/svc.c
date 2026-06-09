@@ -1,5 +1,5 @@
 /*
- * linux/fs/lockd/svc.c
+ * beep/fs/lockd/svc.c
  *
  * This is the central lockd service.
  *
@@ -12,28 +12,28 @@
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sysctl.h>
+#include <beep/moduleparam.h>
 
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/uio.h>
-#include <linux/smp.h>
-#include <linux/mutex.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/in.h>
+#include <beep/uio.h>
+#include <beep/smp.h>
+#include <beep/mutex.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
 
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/svcsock.h>
+#include <beep/sunrpc/types.h>
+#include <beep/sunrpc/stats.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/svc.h>
+#include <beep/sunrpc/svcsock.h>
 #include <net/ip.h>
-#include <linux/lockd/lockd.h>
-#include <linux/nfs.h>
+#include <beep/lockd/lockd.h>
+#include <beep/nfs.h>
 
 #include "netns.h"
 

@@ -10,14 +10,14 @@
 
 #define pr_fmt(fmt) "cpufreq: " fmt
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/regulator/consumer.h>
+#include <beep/module.h>
 
 static struct clk *armclk;
 static struct regulator *vddarm;

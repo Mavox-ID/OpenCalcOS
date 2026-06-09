@@ -1,7 +1,7 @@
 #ifndef __PERF_RBLIST_H
 #define __PERF_RBLIST_H
 
-#include <linux/rbtree.h>
+#include <beep/rbtree.h>
 #include <stdbool.h>
 
 /*

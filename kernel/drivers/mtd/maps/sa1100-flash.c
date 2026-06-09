@@ -3,21 +3,21 @@
  *
  * (C) 2000 Nicolas Pitre <nico@fluxnic.net>
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/io.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/concat.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/concat.h>
 
 #include <mach/hardware.h>
 #include <asm/sizes.h>

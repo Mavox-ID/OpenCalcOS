@@ -11,14 +11,14 @@
  * for more details.
  */
 
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/serial_sci.h>
-#include <linux/sh_timer.h>
-#include <linux/io.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/serial.h>
+#include <beep/mm.h>
+#include <beep/dma-mapping.h>
+#include <beep/serial_sci.h>
+#include <beep/sh_timer.h>
+#include <beep/io.h>
 #include <asm/clock.h>
 #include <asm/irq.h>
 #include <cpu/sh7734.h>

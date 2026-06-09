@@ -32,7 +32,7 @@
  */
 #ifndef _C2_VQ_H_
 #define _C2_VQ_H_
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include "c2.h"
 #include "c2_wr.h"
 #include "c2_provider.h"

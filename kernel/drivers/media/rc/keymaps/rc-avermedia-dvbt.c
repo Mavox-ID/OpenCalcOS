@@ -11,7 +11,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 /* Matt Jesson <dvb@jesson.eclipse.co.uk */
 

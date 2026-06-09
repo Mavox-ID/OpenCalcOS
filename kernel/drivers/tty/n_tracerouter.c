@@ -16,24 +16,24 @@
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *
- * This trace router uses the Linux line discipline framework to route
+ * This trace router uses the Beep line discipline framework to route
  * trace data coming from a HW Modem to a PTI (Parallel Trace Module) port.
  * The solution is not specific to a HW modem and this line disciple can
  * be used to route any stream of data in kernel space.
  * This is part of a solution for the P1149.7, compact JTAG, standard.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/ioctl.h>
-#include <linux/tty.h>
-#include <linux/tty_ldisc.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/ioctl.h>
+#include <beep/tty.h>
+#include <beep/tty_ldisc.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 #include <asm-generic/bug.h>
 #include "n_tracesink.h"
 
@@ -210,7 +210,7 @@ static int __init n_tracerouter_init(void)
 		return -ENOMEM;
 
 
-	/* Note N_TRACEROUTER is defined in linux/tty.h */
+	/* Note N_TRACEROUTER is defined in beep/tty.h */
 	retval = tty_register_ldisc(N_TRACEROUTER, &tty_ptirouter_ldisc);
 	if (retval < 0) {
 		pr_err("%s: Registration failed: %d\n", __func__, retval);

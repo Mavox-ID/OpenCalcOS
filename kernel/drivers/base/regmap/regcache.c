@@ -10,12 +10,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/device.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/device.h>
 #include <trace/events/regmap.h>
-#include <linux/bsearch.h>
-#include <linux/sort.h>
+#include <beep/bsearch.h>
+#include <beep/sort.h>
 
 #include "internal.h"
 

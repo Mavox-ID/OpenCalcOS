@@ -1,7 +1,7 @@
 #ifndef _UAPIS390_CMB_H
 #define _UAPIS390_CMB_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /**
  * struct cmbdata - channel measurement block data for user space

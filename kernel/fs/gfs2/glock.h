@@ -10,8 +10,8 @@
 #ifndef __GLOCK_DOT_H__
 #define __GLOCK_DOT_H__
 
-#include <linux/sched.h>
-#include <linux/parser.h>
+#include <beep/sched.h>
+#include <beep/parser.h>
 #include "incore.h"
 
 /* Options for hostdata parser */

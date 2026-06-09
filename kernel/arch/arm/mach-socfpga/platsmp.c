@@ -16,12 +16,12 @@
  * You should have received a copy of the GNU General Public License along with
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
 
 #include <asm/cacheflush.h>
 #include <asm/hardware/gic.h>

@@ -11,12 +11,12 @@
  *		2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/tcp.h>
-#include <linux/vmalloc.h>
+#include <beep/module.h>
+#include <beep/random.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/tcp.h>
+#include <beep/vmalloc.h>
 
 #include <net/request_sock.h>
 

@@ -1,5 +1,5 @@
 /*
- * linux/sound/mpc5200-ac97.c -- AC97 support for the Freescale MPC52xx chip.
+ * beep/sound/mpc5200-ac97.c -- AC97 support for the Freescale MPC52xx chip.
  *
  * Copyright (C) 2009 Jon Smirl, Digispeaker
  * Author: Jon Smirl <jonsmirl@gmail.com>
@@ -9,10 +9,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
+#include <beep/delay.h>
 
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

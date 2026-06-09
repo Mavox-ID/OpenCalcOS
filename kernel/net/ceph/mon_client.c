@@ -1,16 +1,16 @@
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/sched.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/random.h>
+#include <beep/sched.h>
 
-#include <linux/ceph/mon_client.h>
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/debugfs.h>
-#include <linux/ceph/decode.h>
-#include <linux/ceph/auth.h>
+#include <beep/ceph/mon_client.h>
+#include <beep/ceph/libceph.h>
+#include <beep/ceph/debugfs.h>
+#include <beep/ceph/decode.h>
+#include <beep/ceph/auth.h>
 
 /*
  * Interact with Ceph monitor cluster.  Handle requests for new map

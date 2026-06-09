@@ -14,7 +14,7 @@
 
 /**
  * @file drv_mshim_intf.h
- * Interface definitions for the Linux EDAC memory controller driver.
+ * Interface definitions for the Beep EDAC memory controller driver.
  */
 
 #ifndef _SYS_HV_INCLUDE_DRV_MSHIM_INTF_H

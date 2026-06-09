@@ -12,8 +12,8 @@
 #ifndef __PINCTRL_MXS_H
 #define __PINCTRL_MXS_H
 
-#include <linux/platform_device.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <beep/platform_device.h>
+#include <beep/pinctrl/pinctrl.h>
 
 #define SET	0x4
 #define CLR	0x8

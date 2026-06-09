@@ -20,20 +20,20 @@
  *		Deepak Saxena <deepak@plexity.net>
  *		Boji T Kannanthanam <boji.t.kannanthanam@intel.com>
  *		Alan Cox <alan@lxorguk.ukuu.org.uk>:
- *			Ported to Linux 2.5.
+ *			Ported to Beep 2.5.
  *		Markus Lidel <Markus.Lidel@shadowconnect.com>:
  *			Minor fixes for 2.6.
  *		Markus Lidel <Markus.Lidel@shadowconnect.com>:
  *			Support for sysfs included.
  */
 
-#include <linux/module.h>
-#include <linux/i2o.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/sched.h>	/* wait_event_interruptible_timeout() needs this */
+#include <beep/module.h>
+#include <beep/i2o.h>
+#include <beep/delay.h>
+#include <beep/workqueue.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/sched.h>	/* wait_event_interruptible_timeout() needs this */
 #include <asm/param.h>		/* HZ */
 #include "core.h"
 

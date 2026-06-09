@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel 10 Gigabit PCI Express Linux driver
+  Intel 10 Gigabit PCI Express Beep driver
   Copyright(c) 1999 - 2012 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it
@@ -25,27 +25,27 @@
 
 *******************************************************************************/
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sctp.h>
-#include <linux/pkt_sched.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/vmalloc.h>
+#include <beep/string.h>
+#include <beep/in.h>
+#include <beep/interrupt.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/sctp.h>
+#include <beep/pkt_sched.h>
+#include <beep/ipv6.h>
+#include <beep/slab.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>
-#include <linux/ethtool.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/if_bridge.h>
-#include <linux/prefetch.h>
+#include <beep/ethtool.h>
+#include <beep/if.h>
+#include <beep/if_vlan.h>
+#include <beep/if_bridge.h>
+#include <beep/prefetch.h>
 #include <scsi/fc/fc_fcoe.h>
 
 #include "ixgbe.h"
@@ -144,7 +144,7 @@ static int debug = -1;
 module_param(debug, int, 0);
 MODULE_PARM_DESC(debug, "Debug level (0=none,...,16=all)");
 
-MODULE_AUTHOR("Intel Corporation, <linux.nics@intel.com>");
+MODULE_AUTHOR("Intel Corporation, <beep.nics@intel.com>");
 MODULE_DESCRIPTION("Intel(R) 10 Gigabit PCI Express Network Driver");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(DRV_VERSION);

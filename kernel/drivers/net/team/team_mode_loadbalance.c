@@ -8,14 +8,14 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/filter.h>
-#include <linux/if_team.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/filter.h>
+#include <beep/if_team.h>
 
 struct lb_priv;
 

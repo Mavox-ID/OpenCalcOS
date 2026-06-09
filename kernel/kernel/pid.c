@@ -26,17 +26,17 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/rculist.h>
-#include <linux/bootmem.h>
-#include <linux/hash.h>
-#include <linux/pid_namespace.h>
-#include <linux/init_task.h>
-#include <linux/syscalls.h>
-#include <linux/proc_fs.h>
+#include <beep/mm.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/rculist.h>
+#include <beep/bootmem.h>
+#include <beep/hash.h>
+#include <beep/pid_namespace.h>
+#include <beep/init_task.h>
+#include <beep/syscalls.h>
+#include <beep/proc_fs.h>
 
 #define pid_hashfn(nr, ns)	\
 	hash_long((unsigned long)nr + (unsigned long)ns, pidhash_shift)

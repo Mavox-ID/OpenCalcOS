@@ -7,10 +7,10 @@
  *   International Journal on satellite Communications,
  *				       September 2004
  *    Daniele Lacamera
- *    root at danielinux.net
+ *    root at daniebeep.net
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <net/tcp.h>
 
 /* Tcp Hybla structure. */

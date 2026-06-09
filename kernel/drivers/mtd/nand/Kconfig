@@ -7,7 +7,7 @@ config MTD_NAND_ECC_SMC
 	default n
 	help
 	  Software ECC according to the Smart Media Specification.
-	  The original Linux implementation had byte 0 and 1 swapped.
+	  The original Beep implementation had byte 0 and 1 swapped.
 
 
 menuconfig MTD_NAND
@@ -18,7 +18,7 @@ menuconfig MTD_NAND
 	help
 	  This enables support for accessing all type of NAND flash
 	  devices. For further information see
-	  <http://www.linux-mtd.infradead.org/doc/nand.html>.
+	  <http://www.beep-mtd.infradead.org/doc/nand.html>.
 
 if MTD_NAND
 
@@ -197,7 +197,7 @@ config MTD_NAND_BF5XX_BOOTROM_ECC
 	  If you wish to modify NAND pages and allow the Blackfin on-chip
 	  BootROM to boot from them, say Y here.  This is only necessary
 	  if you are booting U-Boot out of NAND and you wish to update
-	  U-Boot from Linux' userspace.  Otherwise, you should say N here.
+	  U-Boot from Beep' userspace.  Otherwise, you should say N here.
 
 	  If unsure, say N.
 
@@ -278,7 +278,7 @@ config MTD_NAND_DISKONCHIP_PROBE_ADVANCED
         help
           This option allows you to specify nonstandard address at which to
           probe for a DiskOnChip, or to change the detection options.  You
-          are unlikely to need any of this unless you are using LinuxBIOS.
+          are unlikely to need any of this unless you are using BeepBIOS.
           Say 'N'.
 
 config MTD_NAND_DISKONCHIP_PROBE_ADDRESS
@@ -305,7 +305,7 @@ config MTD_NAND_DISKONCHIP_PROBE_HIGH
           By default, the probe for DiskOnChip devices will look for a
           DiskOnChip at every multiple of 0x2000 between 0xC8000 and 0xEE000.
           This option changes to make it probe between 0xFFFC8000 and
-          0xFFFEE000.  Unless you are using LinuxBIOS, this is unlikely to be
+          0xFFFEE000.  Unless you are using BeepBIOS, this is unlikely to be
           useful to you.  Say 'N'.
 
 config MTD_NAND_DISKONCHIP_BBTWRITE
@@ -313,17 +313,17 @@ config MTD_NAND_DISKONCHIP_BBTWRITE
 	depends on MTD_NAND_DISKONCHIP
 	help
 	  On DiskOnChip devices shipped with the INFTL filesystem (Millennium
-	  and 2000 TSOP/Alon), Linux reserves some space at the end of the
+	  and 2000 TSOP/Alon), Beep reserves some space at the end of the
 	  device for the Bad Block Table (BBT).  If you have existing INFTL
-	  data on your device (created by non-Linux tools such as M-Systems'
-	  DOS drivers), your data might overlap the area Linux wants to use for
+	  data on your device (created by non-Beep tools such as M-Systems'
+	  DOS drivers), your data might overlap the area Beep wants to use for
 	  the BBT.  If this is a concern for you, leave this option disabled and
-	  Linux will not write BBT data into this area.
+	  Beep will not write BBT data into this area.
 	  The downside of leaving this option disabled is that if bad blocks
-	  are detected by Linux, they will not be recorded in the BBT, which
+	  are detected by Beep, they will not be recorded in the BBT, which
 	  could cause future problems.
 	  Once you enable this option, new filesystems (INFTL or others, created
-	  in Linux or other operating systems) will not use the reserved area.
+	  in Beep or other operating systems) will not use the reserved area.
 	  The only reason not to enable this option is to prevent damage to
 	  preexisting filesystems.
 	  Even if you leave this disabled, you can enable BBT writes at module

@@ -1,20 +1,20 @@
 /*
- * linux/fs/lockd/clntlock.c
+ * beep/fs/lockd/clntlock.c
  *
  * Lock handling for the client side NLM implementation
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/nfs_fs.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/lockd/lockd.h>
-#include <linux/kthread.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/nfs_fs.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/svc.h>
+#include <beep/lockd/lockd.h>
+#include <beep/kthread.h>
 
 #define NLMDBG_FACILITY		NLMDBG_CLIENT
 

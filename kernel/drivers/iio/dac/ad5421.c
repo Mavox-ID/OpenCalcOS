@@ -6,20 +6,20 @@
  * Licensed under the GPL-2.
  */
 
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/spi/spi.h>
+#include <beep/slab.h>
+#include <beep/sysfs.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/iio/dac/ad5421.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
+#include <beep/iio/events.h>
+#include <beep/iio/dac/ad5421.h>
 
 
 #define AD5421_REG_DAC_DATA		0x1

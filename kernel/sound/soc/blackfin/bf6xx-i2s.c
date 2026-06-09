@@ -17,10 +17,10 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
@@ -230,5 +230,5 @@ static struct platform_driver bfin_i2s_driver = {
 module_platform_driver(bfin_i2s_driver);
 
 MODULE_DESCRIPTION("Analog Devices BF6XX i2s interface driver");
-MODULE_AUTHOR("Scott Jiang <Scott.Jiang.Linux@gmail.com>");
+MODULE_AUTHOR("Scott Jiang <Scott.Jiang.Beep@gmail.com>");
 MODULE_LICENSE("GPL v2");

@@ -12,13 +12,13 @@
  * published by the Free Software Foundation, version 2.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/i2c.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/i2c.h>
 
 #define DRIVER_NAME		"i2c-diolan-u2c"
 
@@ -518,6 +518,6 @@ static struct usb_driver diolan_u2c_driver = {
 
 module_usb_driver(diolan_u2c_driver);
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <beep@roeck-us.net>");
 MODULE_DESCRIPTION(DRIVER_NAME " driver");
 MODULE_LICENSE("GPL");

@@ -1,5 +1,5 @@
 /*
- *  linux/include/asm-arm/arch-pxa/balloon3.h
+ *  beep/include/asm-arm/arch-pxa/balloon3.h
  *
  *  Authors:	Nick Bane and Wookey
  *  Created:	Oct, 2005

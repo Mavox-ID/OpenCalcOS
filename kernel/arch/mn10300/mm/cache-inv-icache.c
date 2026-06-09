@@ -9,8 +9,8 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <beep/module.h>
+#include <beep/mm.h>
 #include <asm/cacheflush.h>
 #include <asm/smp.h>
 #include "cache-smp.h"

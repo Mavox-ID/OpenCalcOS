@@ -17,15 +17,15 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/stddef.h>
+#include <beep/sched.h>
+#include <beep/i2c.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/io.h>
 
 static struct pci_driver pasemi_smb_driver;
 

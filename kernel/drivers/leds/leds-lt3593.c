@@ -16,15 +16,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/leds.h>
+#include <beep/workqueue.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 struct lt3593_led_data {
 	struct led_classdev cdev;

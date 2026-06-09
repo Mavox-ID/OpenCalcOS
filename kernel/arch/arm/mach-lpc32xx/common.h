@@ -20,7 +20,7 @@
 #define __LPC32XX_COMMON_H
 
 #include <mach/board.h>
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 
 /*
  * Other arch specific structures and functions

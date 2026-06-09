@@ -1,7 +1,7 @@
 /*
- * OpenRISC Linux
+ * OpenRISC Beep
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -26,7 +26,7 @@
  */
 #define FIXADDR_TOP	((unsigned long) (-2*PAGE_SIZE))
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <asm/page.h>
 
 /*

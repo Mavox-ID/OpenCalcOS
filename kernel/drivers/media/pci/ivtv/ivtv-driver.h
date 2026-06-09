@@ -36,28 +36,28 @@
  *                using information provided by Jiun-Kuei Jung @ AVerMedia.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/list.h>
-#include <linux/unistd.h>
-#include <linux/pagemap.h>
-#include <linux/scatterlist.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
+#include <beep/list.h>
+#include <beep/unistd.h>
+#include <beep/pagemap.h>
+#include <beep/scatterlist.h>
+#include <beep/kthread.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 #include <asm/byteorder.h>
 
-#include <linux/dvb/video.h>
-#include <linux/dvb/audio.h>
+#include <beep/dvb/video.h>
+#include <beep/dvb/audio.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>
@@ -67,7 +67,7 @@
 #include <media/cx2341x.h>
 #include <media/ir-kbd-i2c.h>
 
-#include <linux/ivtv.h>
+#include <beep/ivtv.h>
 
 /* Memory layout */
 #define IVTV_ENCODER_OFFSET	0x00000000

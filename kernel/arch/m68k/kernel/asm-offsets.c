@@ -10,14 +10,14 @@
 
 #define ASM_OFFSETS_C
 
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/kbuild.h>
+#include <beep/stddef.h>
+#include <beep/sched.h>
+#include <beep/kernel_stat.h>
+#include <beep/kbuild.h>
 #include <asm/bootinfo.h>
 #include <asm/irq.h>
 #include <asm/amigahw.h>
-#include <linux/font.h>
+#include <beep/font.h>
 
 int main(void)
 {

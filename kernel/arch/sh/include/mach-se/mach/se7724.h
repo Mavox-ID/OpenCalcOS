@@ -2,7 +2,7 @@
 #define __ASM_SH_SE7724_H
 
 /*
- * linux/include/asm-sh/se7724.h
+ * beep/include/asm-sh/se7724.h
  *
  * Copyright (C) 2009 Renesas Solutions Corp.
  *
@@ -18,7 +18,7 @@
  * for more details.
  *
  */
-#include <linux/sh_intc.h>
+#include <beep/sh_intc.h>
 #include <asm/addrspace.h>
 
 /* SH Eth */

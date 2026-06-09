@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/plat-mxc/time.c
+ *  beep/arch/arm/plat-mxc/time.c
  *
  *  Copyright (C) 2000-2001 Deep Blue Solutions
  *  Copyright (C) 2002 Shane Nay (shane@minirl.com)
@@ -21,11 +21,11 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/clockchips.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/clockchips.h>
+#include <beep/clk.h>
+#include <beep/err.h>
 
 #include <asm/sched_clock.h>
 #include <asm/mach/time.h>

@@ -40,7 +40,7 @@ struct mntent* FAST_FUNC find_mount_point(const char *name, int subdir_too)
 		return NULL;
 
 	while ((mountEntry = getmntent(mtab_fp)) != NULL) {
-		/* rootfs mount in Linux 2.6 exists always,
+		/* rootfs mount in Beep 2.6 exists always,
 		 * and it makes sense to always ignore it.
 		 * Otherwise people can't reference their "real" root! */
 		if (ENABLE_FEATURE_SKIP_ROOTFS && strcmp(mountEntry->mnt_fsname, "rootfs") == 0)

@@ -6,11 +6,11 @@
  * is Copyright (c) Steven Rostedt <srostedt@redhat.com>
  *
  */
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
+#include <beep/ftrace.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
 
 #include "trace.h"
 #include "trace_output.h"

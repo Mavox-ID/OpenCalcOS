@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/core/bus.c
+ *  beep/drivers/mmc/core/bus.c
  *
  *  Copyright (C) 2003 Russell King, All Rights Reserved.
  *  Copyright (C) 2007 Pierre Ossman
@@ -11,15 +11,15 @@
  *  MMC card bus driver model
  */
 
-#include <linux/export.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/pm_runtime.h>
+#include <beep/export.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/pm_runtime.h>
 
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/host.h>
 
 #include "core.h"
 #include "sdio_cis.h"

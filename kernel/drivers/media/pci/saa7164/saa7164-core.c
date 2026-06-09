@@ -19,19 +19,19 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kmod.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kmod.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
 #include <asm/div64.h>
 
 #ifdef CONFIG_PROC_FS
-#include <linux/proc_fs.h>
+#include <beep/proc_fs.h>
 #endif
 #include "saa7164.h"
 

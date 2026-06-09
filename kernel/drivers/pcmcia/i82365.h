@@ -27,8 +27,8 @@
  * under either the MPL or the GPL.
  */
 
-#ifndef _LINUX_I82365_H
-#define _LINUX_I82365_H
+#ifndef _BEEP_I82365_H
+#define _BEEP_I82365_H
 
 /* register definitions for the Intel 82365SL PCMCIA controller */
 
@@ -133,4 +133,4 @@
 
 #define I365_REG(slot, reg)	(((slot) << 6) + reg)
 
-#endif /* _LINUX_I82365_H */
+#endif /* _BEEP_I82365_H */

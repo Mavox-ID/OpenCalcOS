@@ -16,13 +16,13 @@
 #include <crypto/internal/skcipher.h>
 #include <crypto/rng.h>
 #include <crypto/crypto_wq.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/workqueue.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/workqueue.h>
 
 enum {
 	CHAINIV_STATE_INUSE = 0,

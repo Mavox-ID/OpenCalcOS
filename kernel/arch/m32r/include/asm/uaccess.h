@@ -2,17 +2,17 @@
 #define _ASM_M32R_UACCESS_H
 
 /*
- *  linux/include/asm-m32r/uaccess.h
+ *  beep/include/asm-m32r/uaccess.h
  *
  *  M32R version.
- *    Copyright (C) 2004, 2006  Hirokazu Takata <takata at linux-m32r.org>
+ *    Copyright (C) 2004, 2006  Hirokazu Takata <takata at beep-m32r.org>
  */
 
 /*
  * User space memory access functions
  */
-#include <linux/errno.h>
-#include <linux/thread_info.h>
+#include <beep/errno.h>
+#include <beep/thread_info.h>
 #include <asm/page.h>
 #include <asm/setup.h>
 

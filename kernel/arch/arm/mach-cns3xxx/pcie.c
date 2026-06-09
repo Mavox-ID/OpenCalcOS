@@ -11,14 +11,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/bug.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/bug.h>
+#include <beep/pci.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/ptrace.h>
 #include <asm/mach/map.h>
 #include <mach/cns3xxx.h>
 #include "core.h"
@@ -111,7 +111,7 @@ static int cns3xxx_pci_read_config(struct pci_bus *bus, unsigned int devfn,
 	if (bus->number == 0 && devfn == 0 &&
 			(where & 0xffc) == PCI_CLASS_REVISION) {
 		/*
-		 * RC's class is 0xb, but Linux PCI driver needs 0x604
+		 * RC's class is 0xb, but Beep PCI driver needs 0x604
 		 * for a PCIe bridge. So we must fixup the class code
 		 * to 0x604 here.
 		 */

@@ -9,20 +9,20 @@
  * option) any later version.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/major.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/export.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/of_net.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/major.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/export.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/of_net.h>
 #include <asm/tsi108.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/prom.h>

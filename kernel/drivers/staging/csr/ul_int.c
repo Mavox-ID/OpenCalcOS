@@ -460,7 +460,7 @@ static void
 reset_driver_status(unifi_priv_t *priv)
 {
     priv->sta_wmm_capabilities = 0;
-#ifdef CSR_NATIVE_LINUX
+#ifdef CSR_NATIVE_BEEP
 #ifdef CSR_SUPPORT_WEXT
     priv->wext_conf.flag_associated = 0;
     priv->wext_conf.block_controlled_port = CSR_WIFI_ROUTER_PORT_ACTION_8021X_PORT_OPEN;

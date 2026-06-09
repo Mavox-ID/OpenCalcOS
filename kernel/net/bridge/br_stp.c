@@ -1,6 +1,6 @@
 /*
  *	Spanning tree protocol; generic parts
- *	Linux ethernet bridge
+ *	Beep ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -10,8 +10,8 @@
  *	as published by the Free Software Foundation; either version
  *	2 of the License, or (at your option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/rculist.h>
+#include <beep/kernel.h>
+#include <beep/rculist.h>
 
 #include "br_private.h"
 #include "br_private_stp.h"

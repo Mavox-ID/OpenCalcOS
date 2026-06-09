@@ -8,10 +8,10 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
 #include <video/vga.h>
 #include <asm/irq.h>
 #include <asm/mach/pci.h>
@@ -211,7 +211,7 @@ static int __init kirkwood_pcie_setup(int nr, struct pci_sys_data *sys)
 /*
  * The root complex has a hardwired class of PCI_CLASS_MEMORY_OTHER, when it
  * is operating as a root complex this needs to be switched to
- * PCI_CLASS_BRIDGE_HOST or Linux will errantly try to process the BAR's on
+ * PCI_CLASS_BRIDGE_HOST or Beep will errantly try to process the BAR's on
  * the device. Decoding setup is handled by the orion code.
  */
 static void rc_pci_fixup(struct pci_dev *dev)

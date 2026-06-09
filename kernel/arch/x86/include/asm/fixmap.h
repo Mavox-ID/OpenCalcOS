@@ -15,13 +15,13 @@
 #define _ASM_X86_FIXMAP_H
 
 #ifndef __ASSEMBLY__
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <asm/acpi.h>
 #include <asm/apicdef.h>
 #include <asm/page.h>
 #include <asm/pvclock.h>
 #ifdef CONFIG_X86_32
-#include <linux/threads.h>
+#include <beep/threads.h>
 #include <asm/kmap_types.h>
 #else
 #include <asm/vsyscall.h>

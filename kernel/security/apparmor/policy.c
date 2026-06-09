@@ -73,9 +73,9 @@
  * FIXME: move profile lists to using rcu_lists
  */
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
 
 #include "include/apparmor.h"
 #include "include/capability.h"

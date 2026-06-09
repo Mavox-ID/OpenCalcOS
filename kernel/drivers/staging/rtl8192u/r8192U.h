@@ -18,25 +18,25 @@
 #ifndef R819xU_H
 #define R819xU_H
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-//#include <linux/config.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-//#include <linux/pci.h>
-#include <linux/usb.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/rtnetlink.h>	//for rtnl_lock()
-#include <linux/wireless.h>
-#include <linux/timer.h>
-#include <linux/proc_fs.h>	// Necessary because we use the proc fs
-#include <linux/if_arp.h>
-#include <linux/random.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+//#include <beep/config.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/netdevice.h>
+//#include <beep/pci.h>
+#include <beep/usb.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
+#include <beep/rtnetlink.h>	//for rtnl_lock()
+#include <beep/wireless.h>
+#include <beep/timer.h>
+#include <beep/proc_fs.h>	// Necessary because we use the proc fs
+#include <beep/if_arp.h>
+#include <beep/random.h>
 #include <asm/io.h>
 #include "ieee80211/ieee80211.h"
 

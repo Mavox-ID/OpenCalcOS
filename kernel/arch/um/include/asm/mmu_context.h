@@ -1,12 +1,12 @@
 /* 
- * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
 #ifndef __UM_MMU_CONTEXT_H
 #define __UM_MMU_CONTEXT_H
 
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include <asm/mmu.h>
 
 extern void uml_setup_stubs(struct mm_struct *mm);

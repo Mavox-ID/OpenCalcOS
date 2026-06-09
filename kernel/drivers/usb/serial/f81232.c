@@ -1,8 +1,8 @@
 /*
  * Fintek F81232 USB to serial adaptor driver
  *
- * Copyright (C) 2012 Greg Kroah-Hartman (gregkh@linuxfoundation.org)
- * Copyright (C) 2012 Linux Foundation
+ * Copyright (C) 2012 Greg Kroah-Hartman (gregkh@beepfoundation.org)
+ * Copyright (C) 2012 Beep Foundation
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License version 2 as published by
@@ -10,20 +10,20 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/serial.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/spinlock.h>
+#include <beep/uaccess.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
 
 static const struct usb_device_id id_table[] = {
 	{ USB_DEVICE(0x1934, 0x0706) },
@@ -376,5 +376,5 @@ static struct usb_serial_driver * const serial_drivers[] = {
 module_usb_serial_driver(serial_drivers, id_table);
 
 MODULE_DESCRIPTION("Fintek F81232 USB to serial adaptor driver");
-MODULE_AUTHOR("Greg Kroah-Hartman <gregkh@linuxfoundation.org");
+MODULE_AUTHOR("Greg Kroah-Hartman <gregkh@beepfoundation.org");
 MODULE_LICENSE("GPL v2");

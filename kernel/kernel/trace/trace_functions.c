@@ -9,11 +9,11 @@
  *  Copyright (C) 2004-2006 Ingo Molnar
  *  Copyright (C) 2004 Nadia Yvette Chambers
  */
-#include <linux/ring_buffer.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
-#include <linux/fs.h>
+#include <beep/ring_buffer.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
+#include <beep/ftrace.h>
+#include <beep/fs.h>
 
 #include "trace.h"
 

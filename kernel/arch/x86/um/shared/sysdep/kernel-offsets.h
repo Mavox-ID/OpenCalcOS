@@ -1,7 +1,7 @@
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/elf.h>
-#include <linux/crypto.h>
+#include <beep/stddef.h>
+#include <beep/sched.h>
+#include <beep/elf.h>
+#include <beep/crypto.h>
 #include <asm/mman.h>
 
 #define DEFINE(sym, val) \

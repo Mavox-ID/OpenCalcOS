@@ -1,7 +1,7 @@
 /* cpwd.c - driver implementation for hardware watchdog
  * timers found on Sun Microsystems CP1400 and CP1500 boards.
  *
- * This device supports both the generic Linux watchdog
+ * This device supports both the generic Beep watchdog
  * interface and Solaris-compatible ioctls as best it is
  * able.
  *
@@ -16,22 +16,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/major.h>
-#include <linux/init.h>
-#include <linux/miscdevice.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/errno.h>
+#include <beep/major.h>
+#include <beep/init.h>
+#include <beep/miscdevice.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/uaccess.h>
 
 #include <asm/irq.h>
 #include <asm/watchdog.h>
@@ -417,7 +417,7 @@ static long cpwd_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
 	int setopt = 0;
 
 	switch (cmd) {
-	/* Generic Linux IOCTLs */
+	/* Generic Beep IOCTLs */
 	case WDIOC_GETSUPPORT:
 		if (copy_to_user(argp, &info, sizeof(struct watchdog_info)))
 			return -EFAULT;

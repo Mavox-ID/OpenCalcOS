@@ -3,9 +3,9 @@
  *
  *  Copyright (C) 2006 Atsushi Nemoto <anemo@mba.ocn.ne.jp>
  */
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
-#include <linux/export.h>
+#include <beep/sched.h>
+#include <beep/stacktrace.h>
+#include <beep/export.h>
 #include <asm/stacktrace.h>
 
 /*

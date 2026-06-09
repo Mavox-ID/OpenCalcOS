@@ -1,5 +1,5 @@
 /*
- * Linux driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
+ * Beep driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
  * flexcop-usb.c - covers the USB part
  * see flexcop.c for copyright information
  */

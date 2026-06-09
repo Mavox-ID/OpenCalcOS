@@ -19,9 +19,9 @@
  * 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA.
  */
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/uaccess.h>
 #include <asm/cacheflush.h>
 #include <asm/pgtable.h>
 #include <asm/tlbflush.h>

@@ -6,13 +6,13 @@
  * Licensed under GPLv2 or later.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
 #include <asm/sizes.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
 #include "common.h"
 
 static struct of_device_id sirfsoc_of_bus_ids[] __initdata = {

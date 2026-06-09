@@ -6,10 +6,10 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
 
 #include <asm/current.h>
 #include <asm/uaccess.h>

@@ -29,18 +29,18 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
 
-#include <linux/pinctrl/consumer.h>
+#include <beep/pinctrl/consumer.h>
 
-#include <linux/atmel-ssc.h>
+#include <beep/atmel-ssc.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

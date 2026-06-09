@@ -15,14 +15,14 @@
  * 2 as published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/serial.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/tty.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
+#include <beep/serial.h>
 #include <asm/unaligned.h>
 
 #define DEFAULT_BAUD_RATE 9600

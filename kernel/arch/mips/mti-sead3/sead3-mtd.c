@@ -5,9 +5,9 @@
  *
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
 
 static struct mtd_partition sead3_mtd_partitions[] = {
 	{

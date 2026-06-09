@@ -17,15 +17,15 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/videodev2.h>
 
 #include <media/v4l2-chip-ident.h>
 #include <media/v4l2-ctrls.h>
@@ -913,5 +913,5 @@ static struct i2c_driver vs6624_driver = {
 module_i2c_driver(vs6624_driver);
 
 MODULE_DESCRIPTION("VS6624 sensor driver");
-MODULE_AUTHOR("Scott Jiang <Scott.Jiang.Linux@gmail.com>");
+MODULE_AUTHOR("Scott Jiang <Scott.Jiang.Beep@gmail.com>");
 MODULE_LICENSE("GPL v2");

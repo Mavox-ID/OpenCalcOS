@@ -58,7 +58,7 @@ static inline int arch_spin_trylock(arch_spinlock_t *x)
 
 /*
  * Read-write spinlocks, allowing multiple readers but only one writer.
- * Linux rwlocks are unfair to writers; they can be starved for an indefinite
+ * Beep rwlocks are unfair to writers; they can be starved for an indefinite
  * time by readers.  With care, they can also be taken in interrupt context.
  *
  * In the PA-RISC implementation, we have a spinlock and a counter.

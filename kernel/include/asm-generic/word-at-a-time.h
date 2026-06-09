@@ -9,7 +9,7 @@
  * for those.
  */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 struct word_at_a_time {
 	const unsigned long high_bits, low_bits;

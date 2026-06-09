@@ -24,11 +24,11 @@
  * This file may also be available under a different license from Cavium.
  * Contact Cavium Networks for more information
 **********************************************************************/
-#include <linux/kernel.h>
-#include <linux/ethtool.h>
-#include <linux/phy.h>
-#include <linux/ratelimit.h>
-#include <linux/of_mdio.h>
+#include <beep/kernel.h>
+#include <beep/ethtool.h>
+#include <beep/phy.h>
+#include <beep/ratelimit.h>
+#include <beep/of_mdio.h>
 
 #include <net/dst.h>
 

@@ -5,7 +5,7 @@
  * trigger various real hardware errors. Software based error
  * injection can fake almost all kinds of errors with the help of a
  * user space helper tool aer-inject, which can be gotten from:
- *   http://www.kernel.org/pub/linux/utils/pci/aer-inject/
+ *   http://www.kernel.org/pub/beep/utils/pci/aer-inject/
  *
  * Copyright 2009 Intel Corporation.
  *     Huang Ying <ying.huang@intel.com>
@@ -17,14 +17,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/miscdevice.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/stddef.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/miscdevice.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/uaccess.h>
+#include <beep/stddef.h>
 #include "aerdrv.h"
 
 /* Override the existing corrected and uncorrected error masks */

@@ -18,10 +18,10 @@
  * this program; if not, write to the Free Software Foundation, Inc., 59
  * Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/mii.h>
+#include <beep/crc32.h>
 
 #include "atl1e.h"
 

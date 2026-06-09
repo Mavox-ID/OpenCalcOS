@@ -1,8 +1,8 @@
 #include <asm/cpu_device_id.h>
 #include <asm/processor.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/cpu.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 /**
  * x86_match_cpu - match current CPU again an array of x86_cpu_ids

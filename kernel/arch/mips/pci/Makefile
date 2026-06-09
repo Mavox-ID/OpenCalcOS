@@ -1,5 +1,5 @@
 #
-# Makefile for the PCI specific kernel interface routines under Linux.
+# Makefile for the PCI specific kernel interface routines under Beep.
 #
 
 obj-y				+= pci.o

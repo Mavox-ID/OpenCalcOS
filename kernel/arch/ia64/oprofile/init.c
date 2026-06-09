@@ -7,10 +7,10 @@
  * @author John Levon <levon@movementarian.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/oprofile.h>
-#include <linux/init.h>
-#include <linux/errno.h>
+#include <beep/kernel.h>
+#include <beep/oprofile.h>
+#include <beep/init.h>
+#include <beep/errno.h>
  
 extern int perfmon_init(struct oprofile_operations *ops);
 extern void perfmon_exit(void);

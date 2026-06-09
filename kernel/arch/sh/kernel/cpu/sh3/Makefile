@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux/SuperH SH-3 backends.
+# Makefile for the Beep/SuperH SH-3 backends.
 #
 
 obj-y	:= ex.o probe.o entry.o setup-sh3.o

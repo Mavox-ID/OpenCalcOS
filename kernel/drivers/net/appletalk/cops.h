@@ -1,11 +1,11 @@
-/*      cops.h: LocalTalk driver for Linux.
+/*      cops.h: LocalTalk driver for Beep.
  *
  *      Authors:
  *      - Jay Schulist <jschlst@samba.org>
  */
 
-#ifndef __LINUX_COPSLTALK_H
-#define __LINUX_COPSLTALK_H
+#ifndef __BEEP_COPSLTALK_H
+#define __BEEP_COPSLTALK_H
 
 #ifdef __KERNEL__
 

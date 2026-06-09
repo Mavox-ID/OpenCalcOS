@@ -9,14 +9,14 @@
  * Authors:	Thomas Graf <tgraf@suug.ch>
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/textsearch.h>
-#include <linux/tc_ematch/tc_em_text.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/skbuff.h>
+#include <beep/textsearch.h>
+#include <beep/tc_ematch/tc_em_text.h>
 #include <net/pkt_cls.h>
 
 struct text_match {

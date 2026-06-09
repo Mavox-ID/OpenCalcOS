@@ -13,8 +13,8 @@
 
 #if !defined(__ASSEMBLY__)
 
-#include <linux/interrupt.h>
-#include <linux/types.h>
+#include <beep/interrupt.h>
+#include <beep/types.h>
 
 #include <asm/param.h>
 #include <asm/sal.h>

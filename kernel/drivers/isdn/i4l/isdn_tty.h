@@ -1,8 +1,8 @@
 /* $Id: isdn_tty.h,v 1.1.2.2 2004/01/12 22:37:19 keil Exp $
  *
- * header for Linux ISDN subsystem, tty related functions (linklevel).
+ * header for Beep ISDN subsystem, tty related functions (linklevel).
  *
- * Copyright 1994-1999  by Fritz Elfert (fritz@isdn4linux.de)
+ * Copyright 1994-1999  by Fritz Elfert (fritz@isdn4beep.de)
  * Copyright 1995,96    by Thinking Objects Software GmbH Wuerzburg
  *
  * This software may be used and distributed according to the terms

@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/host/msm_sdcc.c - Qualcomm MSM 7X00A SDCC Driver
+ *  beep/drivers/mmc/host/msm_sdcc.c - Qualcomm MSM 7X00A SDCC Driver
  *
  *  Copyright (C) 2007 Google Inc,
  *  Copyright (C) 2003 Deep Blue Solutions, Ltd, All Rights Reserved.
@@ -15,34 +15,34 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/highmem.h>
-#include <linux/log2.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio.h>
-#include <linux/clk.h>
-#include <linux/scatterlist.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/debugfs.h>
-#include <linux/io.h>
-#include <linux/memory.h>
-#include <linux/gfp.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/highmem.h>
+#include <beep/log2.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/sdio.h>
+#include <beep/clk.h>
+#include <beep/scatterlist.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/debugfs.h>
+#include <beep/io.h>
+#include <beep/memory.h>
+#include <beep/gfp.h>
+#include <beep/gpio.h>
 
 #include <asm/cacheflush.h>
 #include <asm/div64.h>
 #include <asm/sizes.h>
 
-#include <linux/platform_data/mmc-msm_sdcc.h>
+#include <beep/platform_data/mmc-msm_sdcc.h>
 #include <mach/msm_iomap.h>
 #include <mach/dma.h>
 #include <mach/clk.h>

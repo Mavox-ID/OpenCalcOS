@@ -20,11 +20,11 @@
 
 #define DSS_SUBSYS_NAME "OVERLAY"
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/sysfs.h>
-#include <linux/kobject.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/sysfs.h>
+#include <beep/kobject.h>
+#include <beep/platform_device.h>
 
 #include <video/omapdss.h>
 

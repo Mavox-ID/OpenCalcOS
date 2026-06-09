@@ -9,11 +9,11 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/ssb/ssb.h>
-#include <linux/ssb/ssb_regs.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/bcm47xx_wdt.h>
+#include <beep/ssb/ssb.h>
+#include <beep/ssb/ssb_regs.h>
+#include <beep/export.h>
+#include <beep/pci.h>
+#include <beep/bcm47xx_wdt.h>
 
 #include "ssb_private.h"
 

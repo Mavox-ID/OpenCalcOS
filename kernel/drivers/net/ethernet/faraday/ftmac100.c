@@ -21,16 +21,16 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/mii.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/platform_device.h>
 
 #include "ftmac100.h"
 

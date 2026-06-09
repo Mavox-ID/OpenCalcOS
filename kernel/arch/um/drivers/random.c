@@ -1,4 +1,4 @@
-/* Copyright (C) 2005 - 2008 Jeff Dike <jdike@{linux.intel,addtoit}.com> */
+/* Copyright (C) 2005 - 2008 Jeff Dike <jdike@{beep.intel,addtoit}.com> */
 
 /* Much of this ripped from drivers/char/hw_random.c, see there for other
  * copyright.
@@ -6,12 +6,12 @@
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  */
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/miscdevice.h>
-#include <linux/delay.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/interrupt.h>
+#include <beep/miscdevice.h>
+#include <beep/delay.h>
 #include <asm/uaccess.h>
 #include <irq_kern.h>
 #include <os.h>

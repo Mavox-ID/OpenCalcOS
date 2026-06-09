@@ -15,17 +15,17 @@
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/uio_driver.h>
-#include <linux/platform_data/uio_pruss.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/genalloc.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/platform_device.h>
+#include <beep/uio_driver.h>
+#include <beep/platform_data/uio_pruss.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/genalloc.h>
 
 #define DRV_NAME "pruss_uio"
 #define DRV_VERSION "1.0"

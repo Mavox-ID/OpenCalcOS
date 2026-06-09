@@ -15,7 +15,7 @@
 #include "debug.h"
 #include "annotate.h"
 #include <pthread.h>
-#include <linux/bitops.h>
+#include <beep/bitops.h>
 
 const char 	*disassembler_style;
 const char	*objdump_path;
@@ -807,11 +807,11 @@ fallback:
 		err = -ENOENT;
 		dso->annotate_warned = 1;
 		pr_err("Can't annotate %s:\n\n"
-		       "No vmlinux file%s\nwas found in the path.\n\n"
+		       "No vmbeep file%s\nwas found in the path.\n\n"
 		       "Please use:\n\n"
-		       "  perf buildid-cache -av vmlinux\n\n"
+		       "  perf buildid-cache -av vmbeep\n\n"
 		       "or:\n\n"
-		       "  --vmlinux vmlinux\n",
+		       "  --vmbeep vmbeep\n",
 		       sym->name, build_id_msg ?: "");
 		goto out_free_filename;
 	}

@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/lib/strnlen_user.S
+ * beep/arch/unicore32/lib/strnlen_user.S
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -9,7 +9,7 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 #include <asm/errno.h>
 

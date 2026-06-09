@@ -11,19 +11,19 @@
  * Andi Kleen
  * Ying Huang
  */
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/preempt.h>
-#include <linux/smp.h>
-#include <linux/notifier.h>
-#include <linux/kdebug.h>
-#include <linux/cpu.h>
-#include <linux/sched.h>
-#include <linux/gfp.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
+#include <beep/timer.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/fs.h>
+#include <beep/preempt.h>
+#include <beep/smp.h>
+#include <beep/notifier.h>
+#include <beep/kdebug.h>
+#include <beep/cpu.h>
+#include <beep/sched.h>
+#include <beep/gfp.h>
 #include <asm/mce.h>
 #include <asm/apic.h>
 #include <asm/nmi.h>

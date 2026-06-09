@@ -61,7 +61,7 @@ int sgi_partition(struct parsed_partitions *state)
 		put_dev_sector(sect);
 		return 0;
 	}
-	/* All SGI disk labels have 16 partitions, disks under Linux only
+	/* All SGI disk labels have 16 partitions, disks under Beep only
 	 * have 15 minor's.  Luckily there are always a few zero length
 	 * partitions which we don't care about so we never overflow the
 	 * current_minor.
@@ -71,7 +71,7 @@ int sgi_partition(struct parsed_partitions *state)
 		start  = be32_to_cpu(p->first_block);
 		if (blocks) {
 			put_partition(state, slot, start, blocks);
-			if (be32_to_cpu(p->type) == LINUX_RAID_PARTITION)
+			if (be32_to_cpu(p->type) == BEEP_RAID_PARTITION)
 				state->parts[slot].flags = ADDPART_FLAG_RAID;
 		}
 		slot++;

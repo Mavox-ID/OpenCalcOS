@@ -1,5 +1,5 @@
 /*
- *	linux/arch/alpha/kernel/core_marvel.c
+ *	beep/arch/alpha/kernel/core_marvel.c
  *
  * Code common to all Marvel based systems.
  */
@@ -9,15 +9,15 @@
 #include <asm/core_marvel.h>
 #undef __EXTERN_INLINE
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/mc146818rtc.h>
-#include <linux/rtc.h>
-#include <linux/module.h>
-#include <linux/bootmem.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/vmalloc.h>
+#include <beep/mc146818rtc.h>
+#include <beep/rtc.h>
+#include <beep/module.h>
+#include <beep/bootmem.h>
 
 #include <asm/ptrace.h>
 #include <asm/smp.h>
@@ -885,10 +885,10 @@ marvel_node_mem_size(int nid)
 /* 
  * AGP GART Support.
  */
-#include <linux/agp_backend.h>
+#include <beep/agp_backend.h>
 #include <asm/agp_backend.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
 
 struct marvel_agp_aperture {
 	struct pci_iommu_arena *arena;

@@ -23,10 +23,10 @@
  * AK4648 is tested.
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <sound/soc.h>
 #include <sound/initval.h>
 #include <sound/tlv.h>

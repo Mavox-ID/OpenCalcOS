@@ -10,7 +10,7 @@
 #define _UAPI_ASM_POWERPC_ELF_H
 
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #include <asm/ptrace.h>
 #include <asm/cputable.h>

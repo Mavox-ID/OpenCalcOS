@@ -22,7 +22,7 @@
  *
  */
 
-#include <linux/export.h>
+#include <beep/export.h>
 #include <scsi/scsi_host.h>
 #include "sas_internal.h"
 #include "sas_dump.h"

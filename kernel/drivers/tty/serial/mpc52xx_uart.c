@@ -31,18 +31,18 @@
 
 #undef DEBUG
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/sysrq.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/clk.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial.h>
+#include <beep/sysrq.h>
+#include <beep/console.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/clk.h>
 
 #include <asm/mpc52xx.h>
 #include <asm/mpc52xx_psc.h>
@@ -51,7 +51,7 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/serial_core.h>
+#include <beep/serial_core.h>
 
 
 /* We've been assigned a range on the "Low-density serial ports" major */

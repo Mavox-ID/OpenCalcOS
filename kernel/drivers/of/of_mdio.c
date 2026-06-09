@@ -9,15 +9,15 @@
  * out of the OpenFirmware device tree and using it to populate an mii_bus.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
-#include <linux/err.h>
-#include <linux/phy.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/netdevice.h>
+#include <beep/err.h>
+#include <beep/phy.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/of_mdio.h>
+#include <beep/module.h>
 
 MODULE_AUTHOR("Grant Likely <grant.likely@secretlab.ca>");
 MODULE_LICENSE("GPL");

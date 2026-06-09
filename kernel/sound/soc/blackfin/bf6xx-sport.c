@@ -17,12 +17,12 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 #include <asm/blackfin.h>
 #include <asm/dma.h>
@@ -425,5 +425,5 @@ void sport_delete(struct sport_device *sport)
 EXPORT_SYMBOL(sport_delete);
 
 MODULE_DESCRIPTION("Analog Devices BF6XX SPORT driver");
-MODULE_AUTHOR("Scott Jiang <Scott.Jiang.Linux@gmail.com>");
+MODULE_AUTHOR("Scott Jiang <Scott.Jiang.Beep@gmail.com>");
 MODULE_LICENSE("GPL v2");

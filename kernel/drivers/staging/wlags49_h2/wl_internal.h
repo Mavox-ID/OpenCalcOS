@@ -1,6 +1,6 @@
 /*******************************************************************************
  * Agere Systems Inc.
- * Wireless device driver for Linux (wlags49).
+ * Wireless device driver for Beep (wlags49).
  *
  * Copyright (c) 1998-2003 Agere Systems Inc.
  * All rights reserved.
@@ -74,12 +74,12 @@
 #include <pcmcia/ds.h>
 #endif  // BUS_PCMCIA
 
-#include <linux/wireless.h>
+#include <beep/wireless.h>
 #include <net/iw_handler.h>
 
-#include <linux/list.h>
+#include <beep/list.h>
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 
 
@@ -112,7 +112,7 @@
 /* Min/Max/Default Parameter Values */
 #if 0 //;? (HCF_TYPE) & HCF_TYPE_AP
 //;? why this difference depending on compile option, seems to me it should depend on runtime if anything
-#define PARM_DEFAULT_SSID                       "LinuxAP"
+#define PARM_DEFAULT_SSID                       "BeepAP"
 #else
 #define PARM_DEFAULT_SSID                       "ANY"
 #endif // HCF_TYPE_AP
@@ -297,7 +297,7 @@
 
 #define PARM_OWN_NAME                           OwnName
 #define PARM_NAME_OWN_NAME                      TEXT("OwnName")
-#define PARM_DEFAULT_OWN_NAME                   "Linux"
+#define PARM_DEFAULT_OWN_NAME                   "Beep"
 
 #define PARM_OWN_SSID                           OwnSSID
 #define PARM_NAME_OWN_SSID                      TEXT("OwnSSID")

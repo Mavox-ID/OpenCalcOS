@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-mmp/include/mach/addr-map.h
+ * beep/arch/arm/mach-mmp/include/mach/addr-map.h
  *
  *   Common address map definitions
  *

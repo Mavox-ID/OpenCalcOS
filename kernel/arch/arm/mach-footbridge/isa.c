@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-footbridge/isa.c
+ *  beep/arch/arm/mach-footbridge/isa.c
  *
  *  Copyright (C) 2004 Russell King.
  *
@@ -7,8 +7,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/serial_8250.h>
+#include <beep/init.h>
+#include <beep/serial_8250.h>
 
 #include <asm/irq.h>
 #include <asm/hardware/dec21285.h>

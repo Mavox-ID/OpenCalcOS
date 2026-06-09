@@ -10,10 +10,10 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/time.h>
-#include <linux/clocksource.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/time.h>
+#include <beep/clocksource.h>
+#include <beep/module.h>
 #include <asm/processor.h>
 #include <asm/hypervisor.h>
 #include <asm/hyperv.h>

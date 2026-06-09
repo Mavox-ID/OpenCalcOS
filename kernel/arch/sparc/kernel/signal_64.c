@@ -9,20 +9,20 @@
  */
 
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>	/* for compat_old_sigset_t */
+#include <beep/compat.h>	/* for compat_old_sigset_t */
 #endif
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/tracehook.h>
-#include <linux/unistd.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/binfmts.h>
-#include <linux/bitops.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/errno.h>
+#include <beep/wait.h>
+#include <beep/ptrace.h>
+#include <beep/tracehook.h>
+#include <beep/unistd.h>
+#include <beep/mm.h>
+#include <beep/tty.h>
+#include <beep/binfmts.h>
+#include <beep/bitops.h>
 
 #include <asm/uaccess.h>
 #include <asm/ptrace.h>
@@ -38,7 +38,7 @@
 #include "systbls.h"
 #include "sigutil.h"
 
-/* {set, get}context() needed for 64-bit SparcLinux userland. */
+/* {set, get}context() needed for 64-bit SparcBeep userland. */
 asmlinkage void sparc64_set_context(struct pt_regs *regs)
 {
 	struct ucontext __user *ucp = (struct ucontext __user *)

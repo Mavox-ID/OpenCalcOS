@@ -1,20 +1,20 @@
 /*
- * linux/arch/h8300/kernel/irq.c
+ * beep/arch/h8300/kernel/irq.c
  *
  * Copyright 2007 Yoshinori Sato <ysato@users.sourceforge.jp>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/bootmem.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/kernel_stat.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/random.h>
+#include <beep/bootmem.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
 
 #include <asm/traps.h>
 #include <asm/io.h>

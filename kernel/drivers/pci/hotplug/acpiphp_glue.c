@@ -39,16 +39,16 @@
  *    bus. It loses the refcount when the the driver unloads.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/module.h>
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/pci-acpi.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/pci_hotplug.h>
+#include <beep/pci-acpi.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/acpi.h>
 
 #include "../pci.h"
 #include "acpiphp.h"

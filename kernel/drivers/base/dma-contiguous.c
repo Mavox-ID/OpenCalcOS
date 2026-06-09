@@ -22,16 +22,16 @@
 #include <asm/page.h>
 #include <asm/dma-contiguous.h>
 
-#include <linux/memblock.h>
-#include <linux/err.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/page-isolation.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/mm_types.h>
-#include <linux/dma-contiguous.h>
+#include <beep/memblock.h>
+#include <beep/err.h>
+#include <beep/mm.h>
+#include <beep/mutex.h>
+#include <beep/page-isolation.h>
+#include <beep/sizes.h>
+#include <beep/slab.h>
+#include <beep/swap.h>
+#include <beep/mm_types.h>
+#include <beep/dma-contiguous.h>
 
 struct cma {
 	unsigned long	base_pfn;

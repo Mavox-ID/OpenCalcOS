@@ -31,17 +31,17 @@
  * SOFTWARE.
  */
 
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/idr.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/bitmap.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/idr.h>
+#include <beep/pci.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/vmalloc.h>
+#include <beep/bitmap.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include "ipath_kernel.h"
 #include "ipath_verbs.h"
@@ -418,7 +418,7 @@ static int ipath_init_one(struct pci_dev *pdev, const struct pci_device_id *ent)
 		 *
 		 * Both reset cases set the BAR back to initial state.  For
 		 * the latter case, the AER sticky error bit at offset 0x718
-		 * should be set, but the Linux kernel doesn't yet know
+		 * should be set, but the Beep kernel doesn't yet know
 		 * about that, it appears.  If the original BAR was retained
 		 * in the kernel data structures, this may be OK.
 		 */

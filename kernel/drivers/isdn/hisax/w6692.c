@@ -10,13 +10,13 @@
  *
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include "hisax.h"
 #include "w6692.h"
 #include "isdnl1.h"
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
 
 /* table entry in the PCI devices list */
 typedef struct {

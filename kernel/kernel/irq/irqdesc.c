@@ -7,13 +7,13 @@
  * Detailed information is available in Documentation/DocBook/genericirq
  *
  */
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/radix-tree.h>
-#include <linux/bitmap.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/radix-tree.h>
+#include <beep/bitmap.h>
 
 #include "internals.h"
 

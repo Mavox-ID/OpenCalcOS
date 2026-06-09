@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux IrDA protocol layer.
+# Makefile for the Beep IrDA protocol layer.
 #
 
 obj-$(CONFIG_IRDA) += irda.o

@@ -1,5 +1,5 @@
-#include <linux/kthread.h>
-#include <linux/wait.h>
+#include <beep/kthread.h>
+#include <beep/wait.h>
 
 #include "spk_types.h"
 #include "speakup.h"

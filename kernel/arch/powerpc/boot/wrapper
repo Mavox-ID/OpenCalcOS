@@ -58,7 +58,7 @@ tmpdir=.
 usage() {
     echo 'Usage: wrapper [-o output] [-p platform] [-i initrd]' >&2
     echo '       [-d devtree] [-s tree.dts] [-c] [-C cross-prefix]' >&2
-    echo '       [-D datadir] [-W workingdir] [--no-gzip] [vmlinux]' >&2
+    echo '       [-D datadir] [-W workingdir] [--no-gzip] [vmbeep]' >&2
     exit 1
 }
 
@@ -133,7 +133,7 @@ if [ -n "$dts" ]; then
 fi
 
 if [ -z "$kernel" ]; then
-    kernel=vmlinux
+    kernel=vmbeep
 fi
 
 platformo=$object/"$platform".o
@@ -141,7 +141,7 @@ lds=$object/zImage.lds
 ext=strip
 objflags=-S
 tmp=$tmpdir/zImage.$$.o
-ksection=.kernel:vmlinux.strip
+ksection=.kernel:vmbeep.strip
 isection=.kernel:initrd
 link_address='0x400000'
 make_space=y
@@ -208,7 +208,7 @@ ps3)
     gzip=
     ext=bin
     objflags="-O binary --set-section-flags=.bss=contents,alloc,load,data"
-    ksection=.kernel:vmlinux.bin
+    ksection=.kernel:vmbeep.bin
     isection=.kernel:initrd
     link_address=''
     make_space=n
@@ -274,7 +274,7 @@ if [ -z "$cacheit" -o ! -f "$vmz$gzip" -o "$vmz$gzip" -ot "$kernel" ]; then
 	vmz="$vmz.$$"
     fi
 else
-    # Calculate the vmlinux.strip size
+    # Calculate the vmbeep.strip size
     ${CROSS}objcopy $objflags "$kernel" "$vmz.$$"
     strip_size=$(stat -c %s $vmz.$$)
     rm -f $vmz.$$
@@ -299,10 +299,10 @@ vmz="$vmz$gzip"
 
 # Extract kernel version information, some platforms want to include
 # it in the image header
-version=`${CROSS}strings "$kernel" | grep '^Linux version [-0-9.]' | \
+version=`${CROSS}strings "$kernel" | grep '^Beep version [-0-9.]' | \
     cut -d' ' -f3`
 if [ -n "$version" ]; then
-    uboot_version="-n Linux-$version"
+    uboot_version="-n Beep-$version"
 fi
 
 # physical offset of kernel image
@@ -311,7 +311,7 @@ membase=`${CROSS}objdump -p "$kernel" | grep -m 1 LOAD | awk '{print $7}'`
 case "$platform" in
 uboot)
     rm -f "$ofile"
-    ${MKIMAGE} -A ppc -O linux -T kernel -C gzip -a $membase -e $membase \
+    ${MKIMAGE} -A ppc -O beep -T kernel -C gzip -a $membase -e $membase \
 	$uboot_version -d "$vmz" "$ofile"
     if [ -z "$cacheit" ]; then
 	rm -f "$vmz"
@@ -328,7 +328,7 @@ uboot-obs600)
 	real_rd=`mktemp`
 	echo "\0" >>"$real_rd"
     fi
-    ${MKIMAGE} -A ppc -O linux -T multi -C gzip -a $membase -e $membase \
+    ${MKIMAGE} -A ppc -O beep -T multi -C gzip -a $membase -e $membase \
 	$uboot_version -d "$vmz":"$real_rd":"$dtb" "$ofile"
     if [ -z "$initrd" ]; then
 	rm -f "$real_rd"
@@ -391,7 +391,7 @@ coff)
     ;;
 cuboot*)
     gzip -n -f -9 "$ofile"
-    ${MKIMAGE} -A ppc -O linux -T kernel -C gzip -a "$base" -e "$entry" \
+    ${MKIMAGE} -A ppc -O beep -T kernel -C gzip -a "$base" -e "$entry" \
             $uboot_version -d "$ofile".gz "$ofile"
     ;;
 treeboot*)

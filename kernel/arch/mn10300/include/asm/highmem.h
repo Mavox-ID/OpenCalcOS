@@ -14,9 +14,9 @@
 
 #ifdef __KERNEL__
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/highmem.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/highmem.h>
 #include <asm/kmap_types.h>
 #include <asm/pgtable.h>
 

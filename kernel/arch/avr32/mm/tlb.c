@@ -7,7 +7,7 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 #include <asm/mmu_context.h>
 
@@ -269,9 +269,9 @@ void flush_tlb_all(void)
 
 #ifdef CONFIG_PROC_FS
 
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
+#include <beep/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
 
 static void *tlb_start(struct seq_file *tlb, loff_t *pos)
 {

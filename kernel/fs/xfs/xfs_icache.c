@@ -38,8 +38,8 @@
 #include "xfs_fsops.h"
 #include "xfs_icache.h"
 
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
 
 STATIC void __xfs_inode_clear_reclaim_tag(struct xfs_mount *mp,
 				struct xfs_perag *pag, struct xfs_inode *ip);

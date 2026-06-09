@@ -1,5 +1,5 @@
 /*
- * PCBIT-D interface with isdn4linux
+ * PCBIT-D interface with isdn4beep
  *
  * Copyright (C) 1996 Universidade de Lisboa
  *
@@ -17,23 +17,23 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/string.h>
+#include <beep/skbuff.h>
 
-#include <linux/isdnif.h>
+#include <beep/isdnif.h>
 #include <asm/string.h>
 #include <asm/io.h>
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 #include "pcbit.h"
 #include "edss1.h"

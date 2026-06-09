@@ -11,7 +11,7 @@
  */
 
 #include <memory/jedec_ddr.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 /* LPDDR2 addressing details from JESD209-2 section 2.4 */
 const struct lpddr2_addressing

@@ -4,7 +4,7 @@
  *    Copyright IBM Corp. 2012
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #ifdef CONFIG_32BIT
 #define PGM_CHECK_64BIT(handler) .long default_trap_handler

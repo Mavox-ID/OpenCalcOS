@@ -14,14 +14,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/module.h>
-#include <linux/v4l2-mediabus.h>
+#include <beep/bitops.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/videodev2.h>
+#include <beep/module.h>
+#include <beep/v4l2-mediabus.h>
 
 #include <media/soc_camera.h>
 #include <media/v4l2-chip-ident.h>

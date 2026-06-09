@@ -1,14 +1,14 @@
 /*
- * linux/fs/ext2/acl.c
+ * beep/fs/ext2/acl.c
  *
  * Copyright (C) 2001-2003 Andreas Gruenbacher, <agruen@suse.de>
  */
 
-#include <linux/capability.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
+#include <beep/capability.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
 #include "ext2.h"
 #include "xattr.h"
 #include "acl.h"

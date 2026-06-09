@@ -1,7 +1,7 @@
 /*
  * ibmvfc.c -- driver for IBM Power Virtual Fibre Channel Adapter
  *
- * Written By: Brian King <brking@linux.vnet.ibm.com>, IBM Corporation
+ * Written By: Brian King <brking@beep.vnet.ibm.com>, IBM Corporation
  *
  * Copyright (C) IBM Corporation, 2008
  *
@@ -21,17 +21,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/stringify.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmapool.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/kthread.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/pm.h>
+#include <beep/stringify.h>
 #include <asm/firmware.h>
 #include <asm/irq.h>
 #include <asm/vio.h>
@@ -57,7 +57,7 @@ static DEFINE_SPINLOCK(ibmvfc_driver_lock);
 static struct scsi_transport_template *ibmvfc_transport_template;
 
 MODULE_DESCRIPTION("IBM Virtual Fibre Channel Driver");
-MODULE_AUTHOR("Brian King <brking@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Brian King <brking@beep.vnet.ibm.com>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(IBMVFC_DRIVER_VERSION);
 
@@ -1171,7 +1171,7 @@ static void ibmvfc_set_login_info(struct ibmvfc_host *vhost)
 
 	memset(login_info, 0, sizeof(*login_info));
 
-	login_info->ostype = IBMVFC_OS_LINUX;
+	login_info->ostype = IBMVFC_OS_BEEP;
 	login_info->max_dma_len = IBMVFC_MAX_SECTORS << 9;
 	login_info->max_payload = sizeof(struct ibmvfc_fcp_cmd_iu);
 	login_info->max_response = sizeof(struct ibmvfc_fcp_rsp);

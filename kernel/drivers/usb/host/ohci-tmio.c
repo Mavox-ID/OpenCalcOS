@@ -24,16 +24,16 @@
  * published by the Free Software Foundation.
  */
 
-/*#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/namei.h>
-#include <linux/sched.h>*/
-#include <linux/platform_device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tmio.h>
-#include <linux/dma-mapping.h>
+/*#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/pagemap.h>
+#include <beep/init.h>
+#include <beep/namei.h>
+#include <beep/sched.h>*/
+#include <beep/platform_device.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/tmio.h>
+#include <beep/dma-mapping.h>
 
 /*-------------------------------------------------------------------------*/
 

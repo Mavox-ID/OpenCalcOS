@@ -8,9 +8,9 @@
  * Licensed under the GPLv2.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/io.h>
 
 #include <asm/blackfin.h>
 #include <asm/gptimers.h>

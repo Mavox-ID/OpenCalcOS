@@ -22,11 +22,11 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/pm_qos.h>
-#include <linux/pm_runtime.h>
+#include <beep/device.h>
+#include <beep/export.h>
+#include <beep/mutex.h>
+#include <beep/pm_qos.h>
+#include <beep/pm_runtime.h>
 
 #include <acpi/acpi.h>
 #include <acpi/acpi_bus.h>

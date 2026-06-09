@@ -242,7 +242,7 @@
 			};
 
 			EMAC0: ethernet@ef600900 {
-				linux,network-index = <0x0>;
+				beep,network-index = <0x0>;
 				device_type = "network";
 				compatible = "ibm,emac-405ex", "ibm,emac4sync";
 				interrupt-parent = <&EMAC0>;
@@ -272,7 +272,7 @@
 			};
 
 			EMAC1: ethernet@ef600a00 {
-				linux,network-index = <0x1>;
+				beep,network-index = <0x1>;
 				device_type = "network";
 				compatible = "ibm,emac-405ex", "ibm,emac4sync";
 				interrupt-parent = <&EMAC1>;
@@ -309,6 +309,6 @@
 		};
 	};
         chosen {
-                linux,stdout-path = "/plb/opb/serial@ef600200";
+                beep,stdout-path = "/plb/opb/serial@ef600200";
         };
 };

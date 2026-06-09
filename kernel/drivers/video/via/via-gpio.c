@@ -5,12 +5,12 @@
  * Distributable under version 2 of the GNU General Public License.
  */
 
-#include <linux/spinlock.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/via-core.h>
-#include <linux/via-gpio.h>
-#include <linux/export.h>
+#include <beep/spinlock.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/via-core.h>
+#include <beep/via-gpio.h>
+#include <beep/export.h>
 
 /*
  * The ports we know about.  Note that the port-25 gpios are not

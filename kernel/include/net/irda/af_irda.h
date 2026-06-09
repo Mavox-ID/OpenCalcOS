@@ -26,7 +26,7 @@
 #ifndef AF_IRDA_H
 #define AF_IRDA_H
 
-#include <linux/irda.h>
+#include <beep/irda.h>
 #include <net/irda/irda.h>
 #include <net/irda/iriap.h>		/* struct iriap_cb */
 #include <net/irda/irias_object.h>	/* struct ias_value */

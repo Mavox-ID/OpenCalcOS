@@ -1,6 +1,6 @@
-#include <linux/kmemcheck.h>
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <beep/kmemcheck.h>
+#include <beep/module.h>
+#include <beep/mm.h>
 
 #include <asm/page.h>
 #include <asm/pgtable.h>

@@ -1,5 +1,5 @@
 /*
- * linux/sound/soc/pxa/brownstone.c
+ * beep/sound/soc/pxa/brownstone.c
  *
  * Copyright (C) 2011 Marvell International Ltd.
  *
@@ -10,7 +10,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

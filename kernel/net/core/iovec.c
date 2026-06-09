@@ -16,12 +16,12 @@
  *		Andi Kleen	:	Fix csum*fromiovecend for IPv6.
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/net.h>
-#include <linux/in6.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/net.h>
+#include <beep/in6.h>
 #include <asm/uaccess.h>
 #include <asm/byteorder.h>
 #include <net/checksum.h>

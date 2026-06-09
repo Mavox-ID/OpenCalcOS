@@ -17,15 +17,15 @@
  * General Public License for more details.
  */
 
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
 
 #include <asm/mach-types.h>
-#include <linux/platform_data/asoc-ti-mcbsp.h>
+#include <beep/platform_data/asoc-ti-mcbsp.h>
 
 #include "omap-mcbsp.h"
 #include "omap-pcm.h"

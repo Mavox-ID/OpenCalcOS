@@ -10,11 +10,11 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
+#include <beep/mm.h>
+#include <beep/ptrace.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
 
 #include <asm/uaccess.h>
 #include <asm/traps.h>

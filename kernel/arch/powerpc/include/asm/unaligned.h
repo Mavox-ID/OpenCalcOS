@@ -6,8 +6,8 @@
 /*
  * The PowerPC can do unaligned accesses itself in big endian mode.
  */
-#include <linux/unaligned/access_ok.h>
-#include <linux/unaligned/generic.h>
+#include <beep/unaligned/access_ok.h>
+#include <beep/unaligned/generic.h>
 
 #define get_unaligned	__get_unaligned_be
 #define put_unaligned	__put_unaligned_be

@@ -1,5 +1,5 @@
 #
-# Makefile for the linux kernel.
+# Makefile for the beep kernel.
 #
 
 # Object file lists.
@@ -28,4 +28,4 @@ obj-$(CONFIG_PUV3_NB0916)	+= puv3-nb0916.o
 head-y				:= head.o
 obj-$(CONFIG_DEBUG_LL)		+= debug.o
 
-extra-y				:= $(head-y) vmlinux.lds
+extra-y				:= $(head-y) vmbeep.lds

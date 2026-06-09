@@ -17,11 +17,11 @@
 #ifndef ATH9K_H
 #define ATH9K_H
 
-#include <linux/etherdevice.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/leds.h>
-#include <linux/completion.h>
+#include <beep/etherdevice.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/leds.h>
+#include <beep/completion.h>
 
 #include "debug.h"
 #include "common.h"

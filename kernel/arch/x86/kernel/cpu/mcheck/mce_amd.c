@@ -15,17 +15,17 @@
  *
  *  All MC4_MISCi registers are shared between multi-cores
  */
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/kobject.h>
-#include <linux/percpu.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
+#include <beep/interrupt.h>
+#include <beep/notifier.h>
+#include <beep/kobject.h>
+#include <beep/percpu.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/sysfs.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/cpu.h>
+#include <beep/smp.h>
 
 #include <asm/amd_nb.h>
 #include <asm/apic.h>

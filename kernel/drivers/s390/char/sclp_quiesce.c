@@ -6,13 +6,13 @@
  *             Peter Oberparleiter <peter.oberparleiter@de.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/cpumask.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/reboot.h>
-#include <linux/atomic.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/cpumask.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/reboot.h>
+#include <beep/atomic.h>
 #include <asm/ptrace.h>
 #include <asm/smp.h>
 

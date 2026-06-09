@@ -10,15 +10,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/nsc_gpio.h>
-#include <linux/scx200_gpio.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/leds.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/nsc_gpio.h>
+#include <beep/scx200_gpio.h>
+#include <beep/module.h>
 
 #define DRVNAME "net48xx-led"
 #define NET48XX_ERROR_LED_GPIO	20

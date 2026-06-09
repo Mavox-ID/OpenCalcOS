@@ -1,6 +1,6 @@
 /*
  *
- * handle saa7134 IR remotes via linux kernel input layer.
+ * handle saa7134 IR remotes via beep kernel input layer.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,11 +18,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 
 #include "saa7134-reg.h"
 #include "saa7134.h"

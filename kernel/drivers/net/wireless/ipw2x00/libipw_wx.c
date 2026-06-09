@@ -25,19 +25,19 @@
   file called LICENSE.
 
   Contact Information:
-  Intel Linux Wireless <ilw@linux.intel.com>
+  Intel Beep Wireless <ilw@beep.intel.com>
   Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
 
 ******************************************************************************/
 
-#include <linux/hardirq.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
+#include <beep/hardirq.h>
+#include <beep/kmod.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/jiffies.h>
 
 #include <net/lib80211.h>
-#include <linux/wireless.h>
+#include <beep/wireless.h>
 
 #include "libipw.h"
 

@@ -12,10 +12,10 @@
 #define _ASM_X86_UV_UV_HUB_H
 
 #ifdef CONFIG_X86_64
-#include <linux/numa.h>
-#include <linux/percpu.h>
-#include <linux/timer.h>
-#include <linux/io.h>
+#include <beep/numa.h>
+#include <beep/percpu.h>
+#include <beep/timer.h>
+#include <beep/io.h>
 #include <asm/types.h>
 #include <asm/percpu.h>
 #include <asm/uv/uv_mmrs.h>
@@ -501,7 +501,7 @@ static inline int uv_cpu_to_blade_id(int cpu)
 	return uv_cpu_to_blade[cpu];
 }
 
-/* Convert linux node number to the UV blade number */
+/* Convert beep node number to the UV blade number */
 static inline int uv_node_to_blade_id(int nid)
 {
 	return uv_node_to_blade[nid];
@@ -537,7 +537,7 @@ static inline int uv_cpu_to_pnode(int cpu)
 	return uv_blade_info[uv_cpu_to_blade_id(cpu)].pnode;
 }
 
-/* Convert a linux node number to the PNODE of the blade */
+/* Convert a beep node number to the PNODE of the blade */
 static inline int uv_node_to_pnode(int nid)
 {
 	return uv_blade_info[uv_node_to_blade_id(nid)].pnode;

@@ -50,27 +50,27 @@
  *
  *****************************************************************************/
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/module.h>
-#include <linux/ethtool.h>
-#include <linux/usb.h>
-#include <linux/timer.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/kmod.h>
-#include <linux/rfkill.h>
-#include <linux/ip.h>
-#include <linux/uaccess.h>
-#include <linux/usb/cdc.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/module.h>
+#include <beep/ethtool.h>
+#include <beep/usb.h>
+#include <beep/timer.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/kmod.h>
+#include <beep/rfkill.h>
+#include <beep/ip.h>
+#include <beep/uaccess.h>
+#include <beep/usb/cdc.h>
 #include <net/arp.h>
 #include <asm/byteorder.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
+#include <beep/serial_core.h>
+#include <beep/serial.h>
 
 
 #define MOD_AUTHOR			"Option Wireless"

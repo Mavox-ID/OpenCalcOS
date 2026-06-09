@@ -19,32 +19,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/crc32.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/clk.h>
-#include <linux/workqueue.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/phy.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/crc32.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/clk.h>
+#include <beep/workqueue.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/phy.h>
+#include <beep/dma-mapping.h>
+#include <beep/of.h>
+#include <beep/of_net.h>
+#include <beep/types.h>
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include <mach/board.h>
 #include <mach/platform.h>
 #include <mach/hardware.h>

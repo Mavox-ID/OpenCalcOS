@@ -2,7 +2,7 @@
 #define __ASMARM_ARCH_TIMER_H
 
 #include <asm/errno.h>
-#include <linux/clocksource.h>
+#include <beep/clocksource.h>
 
 #ifdef CONFIG_ARM_ARCH_TIMER
 int arch_timer_of_register(void);

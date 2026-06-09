@@ -10,16 +10,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sysfs.h>
-#include <linux/platform_device.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/ata_platform.h>
-#include <linux/m48t86.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/timeriomem-rng.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/sysfs.h>
+#include <beep/platform_device.h>
+#include <beep/mv643xx_eth.h>
+#include <beep/ata_platform.h>
+#include <beep/m48t86.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/timeriomem-rng.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

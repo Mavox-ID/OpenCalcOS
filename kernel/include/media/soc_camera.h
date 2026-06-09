@@ -12,11 +12,11 @@
 #ifndef SOC_CAMERA_H
 #define SOC_CAMERA_H
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/pm.h>
-#include <linux/videodev2.h>
+#include <beep/bitops.h>
+#include <beep/device.h>
+#include <beep/mutex.h>
+#include <beep/pm.h>
+#include <beep/videodev2.h>
 #include <media/videobuf-core.h>
 #include <media/videobuf2-core.h>
 #include <media/v4l2-ctrls.h>
@@ -267,7 +267,7 @@ static inline int soc_camera_set_power(struct device *dev,
 }
 
 /* This is only temporary here - until v4l2-subdev begins to link to video_device */
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 static inline struct video_device *soc_camera_i2c_to_vdev(const struct i2c_client *client)
 {
 	struct v4l2_subdev *sd = i2c_get_clientdata(client);

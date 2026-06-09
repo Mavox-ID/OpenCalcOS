@@ -13,10 +13,10 @@
  * ioctls.
  */
 
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/videodev2.h>
-#include <linux/v4l2-subdev.h>
+#include <beep/compat.h>
+#include <beep/module.h>
+#include <beep/videodev2.h>
+#include <beep/v4l2-subdev.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-ioctl.h>
 

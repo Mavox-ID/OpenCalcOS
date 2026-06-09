@@ -1,8 +1,8 @@
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/tsacct_kern.h>
-#include <linux/kernel_stat.h>
-#include <linux/static_key.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/tsacct_kern.h>
+#include <beep/kernel_stat.h>
+#include <beep/static_key.h>
 #include "sched.h"
 
 

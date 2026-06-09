@@ -16,14 +16,14 @@
  *    - tune the timings using the speed-register
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/zorro.h>
-#include <linux/ide.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/blkdev.h>
+#include <beep/zorro.h>
+#include <beep/ide.h>
+#include <beep/init.h>
+#include <beep/module.h>
 
 #include <asm/amigahw.h>
 #include <asm/amigaints.h>

@@ -7,11 +7,11 @@
 #ifndef _QLGE_H_
 #define _QLGE_H_
 
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_vlan.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/rtnetlink.h>
+#include <beep/if_vlan.h>
 
 /*
  * General definitions...

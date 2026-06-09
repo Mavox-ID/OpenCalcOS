@@ -14,8 +14,8 @@
 
 #include "wacom_wac.h"
 #include "wacom.h"
-#include <linux/input/mt.h>
-#include <linux/hid.h>
+#include <beep/input/mt.h>
+#include <beep/hid.h>
 
 /* resolution for penabled devices */
 #define WACOM_PL_RES		20

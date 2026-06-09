@@ -11,17 +11,17 @@
 
 /*************************** INCLUDES *****************************************/
 
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/major.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/mempool.h>
-#include <linux/syscalls.h>
-#include <linux/scatterlist.h>
-#include <linux/ioctl.h>
+#include <beep/init.h>
+#include <beep/moduleparam.h>
+#include <beep/major.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/mempool.h>
+#include <beep/syscalls.h>
+#include <beep/scatterlist.h>
+#include <beep/ioctl.h>
 #include <scsi/fc/fc_fs.h>
 #include <scsi/fc/fc_gs.h>
 #include <scsi/scsi.h>

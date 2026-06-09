@@ -9,12 +9,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/suspend.h>
-#include <linux/cpuidle.h>
-#include <linux/export.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/suspend.h>
+#include <beep/cpuidle.h>
+#include <beep/export.h>
 #include <asm/suspend.h>
 #include <asm/uaccess.h>
 

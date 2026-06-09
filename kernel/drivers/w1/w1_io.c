@@ -21,9 +21,9 @@
 
 #include <asm/io.h>
 
-#include <linux/delay.h>
-#include <linux/moduleparam.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/moduleparam.h>
+#include <beep/module.h>
 
 #include "w1.h"
 #include "w1_log.h"

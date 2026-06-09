@@ -4,7 +4,7 @@
  * published by the Free Software Foundation version 2.
  *
  * Parts of this driver are based on the following:
- *  - Kvaser linux leaf driver (version 4.78)
+ *  - Kvaser beep leaf driver (version 4.78)
  *  - CAN driver for esd CAN-USB/2
  *
  * Copyright (C) 2002-2006 KVASER AB, Sweden. All rights reserved.
@@ -12,15 +12,15 @@
  * Copyright (C) 2012 Olivier Sobrie <olivier@sobrie.be>
  */
 
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/usb.h>
+#include <beep/init.h>
+#include <beep/completion.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/usb.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
+#include <beep/can.h>
+#include <beep/can/dev.h>
+#include <beep/can/error.h>
 
 #define MAX_TX_URBS			16
 #define MAX_RX_URBS			4

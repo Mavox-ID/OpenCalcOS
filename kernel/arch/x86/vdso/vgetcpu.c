@@ -5,10 +5,10 @@
  * Fast user context implementation of getcpu()
  */
 
-#include <linux/kernel.h>
-#include <linux/getcpu.h>
-#include <linux/jiffies.h>
-#include <linux/time.h>
+#include <beep/kernel.h>
+#include <beep/getcpu.h>
+#include <beep/jiffies.h>
+#include <beep/time.h>
 #include <asm/vsyscall.h>
 #include <asm/vgtod.h>
 

@@ -5,16 +5,16 @@
  * Please see those files for relevant copyright info and historical
  * changelogs.
  */
-#include <linux/capability.h>
-#include <linux/clocksource.h>
-#include <linux/workqueue.h>
-#include <linux/hrtimer.h>
-#include <linux/jiffies.h>
-#include <linux/math64.h>
-#include <linux/timex.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/module.h>
+#include <beep/capability.h>
+#include <beep/clocksource.h>
+#include <beep/workqueue.h>
+#include <beep/hrtimer.h>
+#include <beep/jiffies.h>
+#include <beep/math64.h>
+#include <beep/timex.h>
+#include <beep/time.h>
+#include <beep/mm.h>
+#include <beep/module.h>
 
 #include "tick-internal.h"
 
@@ -495,7 +495,7 @@ static void sync_cmos_clock(struct work_struct *work)
 	int fail = 1;
 
 	/*
-	 * If we have an externally synchronized Linux clock, then update
+	 * If we have an externally synchronized Beep clock, then update
 	 * CMOS clock accordingly every ~11 minutes. Set_rtc_mmss() has to be
 	 * called as close as possible to 500 ms before the new second starts.
 	 * This code is run on a timer.  If the clock is set, that timer

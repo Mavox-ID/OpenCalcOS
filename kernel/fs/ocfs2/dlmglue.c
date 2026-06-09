@@ -23,16 +23,16 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/mm.h>
-#include <linux/kthread.h>
-#include <linux/pagemap.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/time.h>
-#include <linux/quotaops.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>
+#include <beep/mm.h>
+#include <beep/kthread.h>
+#include <beep/pagemap.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/time.h>
+#include <beep/quotaops.h>
 
 #define MLOG_MASK_PREFIX ML_DLM_GLUE
 #include <cluster/masklog.h>

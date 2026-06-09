@@ -13,8 +13,8 @@
 #ifndef _ASM_PROCESSOR_H
 #define _ASM_PROCESSOR_H
 
-#include <linux/threads.h>
-#include <linux/thread_info.h>
+#include <beep/threads.h>
+#include <beep/thread_info.h>
 #include <asm/page.h>
 #include <asm/ptrace.h>
 #include <asm/cpu-regs.h>

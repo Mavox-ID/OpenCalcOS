@@ -8,14 +8,14 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/nmi.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/nmi.h>
 
 #include <asm/pgtable.h>
 #include <asm/gdb-stub.h>

@@ -18,13 +18,13 @@
  * along with this driver; if not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/bitops.h>
+#include <beep/err.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/bitops.h>
 #include <asm/processor.h>
 
 MODULE_DESCRIPTION("AMD Family 15h CPU processor power monitor");

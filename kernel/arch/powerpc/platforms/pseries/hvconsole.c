@@ -23,9 +23,9 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/errno.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/errno.h>
 #include <asm/hvcall.h>
 #include <asm/hvconsole.h>
 #include "plpar_wrappers.h"

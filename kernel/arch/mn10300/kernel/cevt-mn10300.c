@@ -8,10 +8,10 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/smp.h>
+#include <beep/clockchips.h>
+#include <beep/interrupt.h>
+#include <beep/percpu.h>
+#include <beep/smp.h>
 #include <asm/timex.h>
 #include "internal.h"
 

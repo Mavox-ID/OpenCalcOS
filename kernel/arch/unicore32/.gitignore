@@ -5,7 +5,7 @@ include/generated
 #
 # Generated ld script file
 #
-kernel/vmlinux.lds
+kernel/vmbeep.lds
 #
 # Generated images in boot
 #
@@ -17,5 +17,5 @@ boot/uImage
 #
 boot/compressed/piggy.S
 boot/compressed/piggy.gzip
-boot/compressed/vmlinux
-boot/compressed/vmlinux.lds
+boot/compressed/vmbeep
+boot/compressed/vmbeep.lds

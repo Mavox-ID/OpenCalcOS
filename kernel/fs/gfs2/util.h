@@ -10,7 +10,7 @@
 #ifndef __UTIL_DOT_H__
 #define __UTIL_DOT_H__
 
-#include <linux/mempool.h>
+#include <beep/mempool.h>
 
 #include "incore.h"
 

@@ -29,16 +29,16 @@
     We assume there can only be one SiS96x with one SMBus interface.
 */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/stddef.h>
+#include <beep/ioport.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/acpi.h>
+#include <beep/io.h>
 
 /* base address register in PCI config space */
 #define SIS96x_BAR 0x04

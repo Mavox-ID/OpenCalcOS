@@ -19,11 +19,11 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/pci.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/videodev2.h>
-#include <linux/kdev_t.h>
+#include <beep/pci.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
+#include <beep/videodev2.h>
+#include <beep/kdev_t.h>
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-fh.h>
@@ -40,7 +40,7 @@
 #include "cx88-reg.h"
 #include "tuner-xc2028.h"
 
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 
 #define CX88_VERSION "0.0.9"
 

@@ -4,7 +4,7 @@
  *
  * Author: Mark A. Greer <mgreer@mvista.com>
  *
- * Based on an old MPSC driver that was in the linuxppc tree.  It appears to
+ * Based on an old MPSC driver that was in the beepppc tree.  It appears to
  * have been created by Chris Zankel (formerly of MontaVista) but there
  * is no proper Copyright so I'm not sure.  Apparently, parts were also
  * taken from PPCBoot (now U-Boot).  Also based on drivers/serial/8250.c
@@ -55,22 +55,22 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/mv643xx.h>
-#include <linux/platform_device.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/sysrq.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/mv643xx.h>
+#include <beep/platform_device.h>
+#include <beep/gfp.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

@@ -1,5 +1,5 @@
 /*
- * Linux ARCnet driver - COM90xx chipset (memory-mapped buffers)
+ * Beep ARCnet driver - COM90xx chipset (memory-mapped buffers)
  * 
  * Written 1994-1999 by Avery Pennarun.
  * Written 1999 by Martin Mares <mj@ucw.cz>.
@@ -24,16 +24,16 @@
  *
  * **********************
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
 #include <asm/io.h>
-#include <linux/arcdevice.h>
+#include <beep/arcdevice.h>
 
 
 #define VERSION "arcnet: COM90xx chipset support\n"

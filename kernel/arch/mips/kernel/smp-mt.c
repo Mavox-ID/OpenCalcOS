@@ -14,17 +14,17 @@
  *
  * Copyright (C) 2004, 05, 06 MIPS Technologies, Inc.
  *    Elizabeth Clarke (beth@mips.com)
- *    Ralf Baechle (ralf@linux-mips.org)
- * Copyright (C) 2006 Ralf Baechle (ralf@linux-mips.org)
+ *    Ralf Baechle (ralf@beep-mips.org)
+ * Copyright (C) 2006 Ralf Baechle (ralf@beep-mips.org)
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/cpumask.h>
-#include <linux/interrupt.h>
-#include <linux/compiler.h>
-#include <linux/smp.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/cpumask.h>
+#include <beep/interrupt.h>
+#include <beep/compiler.h>
+#include <beep/smp.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/cacheflush.h>
 #include <asm/cpu.h>
 #include <asm/processor.h>

@@ -1,5 +1,5 @@
 /*
- *	linux/drivers/net/wireless/libertas/if_spi.c
+ *	beep/drivers/net/wireless/libertas/if_spi.c
  *
  *	Driver for Marvell SPI WLAN cards.
  *

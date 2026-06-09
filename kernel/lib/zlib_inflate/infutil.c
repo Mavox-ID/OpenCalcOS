@@ -1,7 +1,7 @@
-#include <linux/zutil.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <beep/zutil.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
 
 /* Utility function: initialize zlib, unpack binary blob, clean up zlib,
  * return len or negative error code.

@@ -33,17 +33,17 @@
 
 #define pr_fmt(fmt) "[TTM] " fmt
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/highmem.h>
-#include <linux/mm_types.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h> /* for seq_printf */
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/highmem.h>
+#include <beep/mm_types.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/seq_file.h> /* for seq_printf */
+#include <beep/slab.h>
+#include <beep/dma-mapping.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include <drm/ttm/ttm_bo_driver.h>
 #include <drm/ttm/ttm_page_alloc.h>

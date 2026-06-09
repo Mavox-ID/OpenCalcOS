@@ -14,12 +14,12 @@
  *		  since we now have a functional IOP manager.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/irq.h>
 
 #include <asm/bootinfo.h>
 #include <asm/macintosh.h>

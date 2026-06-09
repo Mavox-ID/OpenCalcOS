@@ -2,7 +2,7 @@
 /*
  * prioritynames[] and facilitynames[]
  *
- * Copyright (C) 2008 by Denys Vlasenko <vda.linux@gmail.com>
+ * Copyright (C) 2008 by Denys Vlasenko <vda.beep@gmail.com>
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */

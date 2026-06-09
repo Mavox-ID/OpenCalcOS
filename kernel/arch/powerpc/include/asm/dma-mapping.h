@@ -8,13 +8,13 @@
 #define _ASM_DMA_MAPPING_H
 #ifdef __KERNEL__
 
-#include <linux/types.h>
-#include <linux/cache.h>
+#include <beep/types.h>
+#include <beep/cache.h>
 /* need struct page definitions */
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-attrs.h>
-#include <linux/dma-debug.h>
+#include <beep/mm.h>
+#include <beep/scatterlist.h>
+#include <beep/dma-attrs.h>
+#include <beep/dma-debug.h>
 #include <asm/io.h>
 #include <asm/swiotlb.h>
 

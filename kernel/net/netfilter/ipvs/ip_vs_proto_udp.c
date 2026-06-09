@@ -1,7 +1,7 @@
 /*
  * ip_vs_proto_udp.c:	UDP load balancing support for IPVS
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@beepvirtualserver.org>
  *              Julian Anastasov <ja@ssi.bg>
  *
  *              This program is free software; you can redistribute it and/or
@@ -17,12 +17,12 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/udp.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/kernel.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/udp.h>
 
 #include <net/ip_vs.h>
 #include <net/ip.h>

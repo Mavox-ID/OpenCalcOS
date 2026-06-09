@@ -3,12 +3,12 @@
  * Copyright (C) 2009 Outpost Embedded, LLC
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/tty.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
 
 #define DRIVER_DESC "ViVOpay USB Serial Driver"
 

@@ -9,21 +9,21 @@
  * kind, whether express or implied.
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/console.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
 #include <asm/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
 
 #define ULITE_NAME		"ttyUL"
 #define ULITE_MAJOR		204

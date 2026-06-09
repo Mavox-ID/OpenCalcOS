@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2440/mach-at2440evb.c
+/* beep/arch/arm/mach-s3c2440/mach-at2440evb.c
  *
  * Copyright (c) 2008 Ramax Lo <ramaxlo@gmail.com>
  *      Based on mach-anubis.c by Ben Dooks <ben@simtec.co.uk>
@@ -12,16 +12,16 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/serial_core.h>
-#include <linux/dm9000.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/serial_core.h>
+#include <beep/dm9000.h>
+#include <beep/platform_device.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -36,18 +36,18 @@
 #include <mach/regs-gpio.h>
 #include <mach/regs-mem.h>
 #include <mach/regs-lcd.h>
-#include <linux/platform_data/mtd-nand-s3c2410.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/mtd-nand-s3c2410.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand_ecc.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/nand_ecc.h>
+#include <beep/mtd/partitions.h>
 
 #include <plat/clock.h>
 #include <plat/devs.h>
 #include <plat/cpu.h>
-#include <linux/platform_data/mmc-s3cmci.h>
+#include <beep/platform_data/mmc-s3cmci.h>
 
 #include "common.h"
 

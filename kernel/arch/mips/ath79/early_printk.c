@@ -9,9 +9,9 @@
  *  by the Free Software Foundation.
  */
 
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/serial_reg.h>
+#include <beep/io.h>
+#include <beep/errno.h>
+#include <beep/serial_reg.h>
 #include <asm/addrspace.h>
 
 #include <asm/mach-ath79/ath79.h>

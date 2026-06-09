@@ -6,10 +6,10 @@
  * fs/namespace.c, thus here instead of fs/proc
  *
  */
-#include <linux/mnt_namespace.h>
-#include <linux/nsproxy.h>
-#include <linux/security.h>
-#include <linux/fs_struct.h>
+#include <beep/mnt_namespace.h>
+#include <beep/nsproxy.h>
+#include <beep/security.h>
+#include <beep/fs_struct.h>
 #include "proc/internal.h" /* only for get_proc_task() in ->open() */
 
 #include "pnode.h"

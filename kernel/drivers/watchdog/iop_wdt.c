@@ -26,14 +26,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/miscdevice.h>
+#include <beep/watchdog.h>
+#include <beep/uaccess.h>
 #include <mach/hardware.h>
 
 static bool nowayout = WATCHDOG_NOWAYOUT;

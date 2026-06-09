@@ -1,7 +1,7 @@
 #ifndef __ASM_ARM_DIV64
 #define __ASM_ARM_DIV64
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/compiler.h>
 
 /*
@@ -74,7 +74,7 @@
 ({									\
 	unsigned int __r, __b = (base);					\
 	if (!__builtin_constant_p(__b) || __b == 0 ||			\
-	    (__LINUX_ARM_ARCH__ < 4 && (__b & (__b - 1)) != 0)) {	\
+	    (__BEEP_ARM_ARCH__ < 4 && (__b & (__b - 1)) != 0)) {	\
 		/* non-constant divisor (or zero): slow path */		\
 		__r = __do_div_asm(n, __b);				\
 	} else if ((__b & (__b - 1)) == 0) {				\

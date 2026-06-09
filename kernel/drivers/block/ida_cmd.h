@@ -24,7 +24,7 @@
 
 #include <asm/types.h>
 #if 0
-#include <linux/blkdev.h>
+#include <beep/blkdev.h>
 #endif
 
 /* for the Smart Array 42XX cards */

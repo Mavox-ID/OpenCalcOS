@@ -1,6 +1,6 @@
 /*
  *
- *  linux/arch/cris/kernel/setup.c
+ *  beep/arch/cris/kernel/setup.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  *  Copyright (c) 2001  Axis Communications AB
@@ -10,15 +10,15 @@
  * This file handles the architecture-dependent parts of initialization
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/bootmem.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/bootmem.h>
 #include <asm/pgtable.h>
-#include <linux/seq_file.h>
-#include <linux/screen_info.h>
-#include <linux/utsname.h>
-#include <linux/pfn.h>
-#include <linux/cpu.h>
+#include <beep/seq_file.h>
+#include <beep/screen_info.h>
+#include <beep/utsname.h>
+#include <beep/pfn.h>
+#include <beep/cpu.h>
 #include <asm/setup.h>
 #include <arch/system.h>
 

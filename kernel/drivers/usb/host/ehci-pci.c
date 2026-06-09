@@ -18,11 +18,11 @@
  * Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
 
 #include "ehci.h"
 #include "pci-quirks.h"

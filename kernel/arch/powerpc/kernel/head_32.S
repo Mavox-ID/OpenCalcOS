@@ -1,6 +1,6 @@
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  *  Rewritten by Cort Dougan (cort@cs.nmt.edu) for PReP
  *    Copyright (C) 1996 Cort Dougan <cort@cs.nmt.edu>
@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/reg.h>
 #include <asm/page.h>
 #include <asm/mmu.h>
@@ -489,11 +489,11 @@ SystemCall:
 InstructionTLBMiss:
 /*
  * r0:	scratch
- * r1:	linux style pte ( later becomes ppc hardware pte )
- * r2:	ptr to linux-style pte
+ * r1:	beep style pte ( later becomes ppc hardware pte )
+ * r2:	ptr to beep-style pte
  * r3:	scratch
  */
-	/* Get PTE (linux-style) and check access */
+	/* Get PTE (beep-style) and check access */
 	mfspr	r3,SPRN_IMISS
 	lis	r1,PAGE_OFFSET@h		/* check if kernel address */
 	cmplw	0,r1,r3
@@ -511,7 +511,7 @@ InstructionTLBMiss:
 	rlwinm.	r2,r2,0,0,19		/* extract address of pte page */
 	beq-	InstructionAddressInvalid	/* return if no mapping */
 	rlwimi	r2,r3,22,20,29		/* insert next 10 bits of address */
-	lwz	r0,0(r2)		/* get linux-style pte */
+	lwz	r0,0(r2)		/* get beep-style pte */
 	andc.	r1,r1,r0		/* check access & ~permission */
 	bne-	InstructionAddressInvalid /* return if access not permitted */
 	ori	r0,r0,_PAGE_ACCESSED	/* set _PAGE_ACCESSED in pte */
@@ -520,7 +520,7 @@ InstructionTLBMiss:
 	 * we would need to update the pte atomically with lwarx/stwcx.
 	 */
 	stw	r0,0(r2)		/* update PTE (accessed bit) */
-	/* Convert linux-style PTE to low word of PPC-style PTE */
+	/* Convert beep-style PTE to low word of PPC-style PTE */
 	rlwinm	r1,r0,32-10,31,31	/* _PAGE_RW -> PP lsb */
 	rlwinm	r2,r0,32-7,31,31	/* _PAGE_DIRTY -> PP lsb */
 	and	r1,r1,r2		/* writable if _RW and _DIRTY */
@@ -563,11 +563,11 @@ InstructionAddressInvalid:
 DataLoadTLBMiss:
 /*
  * r0:	scratch
- * r1:	linux style pte ( later becomes ppc hardware pte )
- * r2:	ptr to linux-style pte
+ * r1:	beep style pte ( later becomes ppc hardware pte )
+ * r2:	ptr to beep-style pte
  * r3:	scratch
  */
-	/* Get PTE (linux-style) and check access */
+	/* Get PTE (beep-style) and check access */
 	mfspr	r3,SPRN_DMISS
 	lis	r1,PAGE_OFFSET@h		/* check if kernel address */
 	cmplw	0,r1,r3
@@ -585,7 +585,7 @@ DataLoadTLBMiss:
 	rlwinm.	r2,r2,0,0,19		/* extract address of pte page */
 	beq-	DataAddressInvalid	/* return if no mapping */
 	rlwimi	r2,r3,22,20,29		/* insert next 10 bits of address */
-	lwz	r0,0(r2)		/* get linux-style pte */
+	lwz	r0,0(r2)		/* get beep-style pte */
 	andc.	r1,r1,r0		/* check access & ~permission */
 	bne-	DataAddressInvalid	/* return if access not permitted */
 	ori	r0,r0,_PAGE_ACCESSED	/* set _PAGE_ACCESSED in pte */
@@ -594,7 +594,7 @@ DataLoadTLBMiss:
 	 * we would need to update the pte atomically with lwarx/stwcx.
 	 */
 	stw	r0,0(r2)		/* update PTE (accessed bit) */
-	/* Convert linux-style PTE to low word of PPC-style PTE */
+	/* Convert beep-style PTE to low word of PPC-style PTE */
 	rlwinm	r1,r0,32-10,31,31	/* _PAGE_RW -> PP lsb */
 	rlwinm	r2,r0,32-7,31,31	/* _PAGE_DIRTY -> PP lsb */
 	and	r1,r1,r2		/* writable if _RW and _DIRTY */
@@ -647,11 +647,11 @@ DataAddressInvalid:
 DataStoreTLBMiss:
 /*
  * r0:	scratch
- * r1:	linux style pte ( later becomes ppc hardware pte )
- * r2:	ptr to linux-style pte
+ * r1:	beep style pte ( later becomes ppc hardware pte )
+ * r2:	ptr to beep-style pte
  * r3:	scratch
  */
-	/* Get PTE (linux-style) and check access */
+	/* Get PTE (beep-style) and check access */
 	mfspr	r3,SPRN_DMISS
 	lis	r1,PAGE_OFFSET@h		/* check if kernel address */
 	cmplw	0,r1,r3
@@ -669,7 +669,7 @@ DataStoreTLBMiss:
 	rlwinm.	r2,r2,0,0,19		/* extract address of pte page */
 	beq-	DataAddressInvalid	/* return if no mapping */
 	rlwimi	r2,r3,22,20,29		/* insert next 10 bits of address */
-	lwz	r0,0(r2)		/* get linux-style pte */
+	lwz	r0,0(r2)		/* get beep-style pte */
 	andc.	r1,r1,r0		/* check access & ~permission */
 	bne-	DataAddressInvalid	/* return if access not permitted */
 	ori	r0,r0,_PAGE_ACCESSED|_PAGE_DIRTY
@@ -678,7 +678,7 @@ DataStoreTLBMiss:
 	 * we would need to update the pte atomically with lwarx/stwcx.
 	 */
 	stw	r0,0(r2)		/* update PTE (accessed/dirty bits) */
-	/* Convert linux-style PTE to low word of PPC-style PTE */
+	/* Convert beep-style PTE to low word of PPC-style PTE */
 	rlwimi	r0,r0,32-1,30,30	/* _PAGE_USER -> PP msb */
 	li	r1,0xe05		/* clear out reserved bits & PP lsb */
 	andc	r1,r0,r1		/* PP = user? 2: 0 */

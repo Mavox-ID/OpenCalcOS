@@ -13,9 +13,9 @@
  *	 Using root's kernel master key (kmk), calculate the HMAC
  */
 
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/xattr.h>
+#include <beep/module.h>
+#include <beep/crypto.h>
+#include <beep/xattr.h>
 #include <keys/encrypted-type.h>
 #include <crypto/hash.h>
 #include "evm.h"

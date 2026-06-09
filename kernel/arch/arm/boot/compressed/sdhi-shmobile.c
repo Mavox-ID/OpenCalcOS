@@ -12,12 +12,12 @@
  * Parts inspired by u-boot
  */
 
-#include <linux/io.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/core.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
-#include <linux/mmc/tmio.h>
+#include <beep/io.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/core.h>
+#include <beep/mmc/mmc.h>
+#include <beep/mmc/sd.h>
+#include <beep/mmc/tmio.h>
 #include <mach/sdhi.h>
 
 #define OCR_FASTBOOT		(1<<29)

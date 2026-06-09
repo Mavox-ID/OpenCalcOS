@@ -17,30 +17,30 @@
    Suite 330, Boston, MA 02111-1307, USA.
 -----------------------------------------------------------------------------*/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
 
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
+#include <beep/sched.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/in.h>
 #include <asm/io.h>
 #include <asm/bitops.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/wait.h>
-#include <linux/vmalloc.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
+#include <beep/ioport.h>
+#include <beep/wait.h>
+#include <beep/vmalloc.h>
 
-#include <linux/firmware.h>
-#include <linux/ethtool.h>
+#include <beep/firmware.h>
+#include <beep/ethtool.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/cisreg.h>
@@ -52,7 +52,7 @@
 #define DEBUG(n, args...)
 #endif
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include "ft1000.h"
 
 static const struct firmware *fw_entry;

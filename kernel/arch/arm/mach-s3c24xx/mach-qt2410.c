@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2410/mach-qt2410.c
+/* beep/arch/arm/mach-s3c2410/mach-qt2410.c
  *
  * Copyright (C) 2006 by OpenMoko, Inc.
  * Author: Harald Welte <laforge@openmoko.org>
@@ -21,23 +21,23 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_gpio.h>
-#include <linux/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand_ecc.h>
-#include <linux/mtd/partitions.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/serial_core.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_gpio.h>
+#include <beep/io.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/nand_ecc.h>
+#include <beep/mtd/partitions.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -47,13 +47,13 @@
 #include <asm/irq.h>
 #include <asm/mach-types.h>
 
-#include <linux/platform_data/leds-s3c24xx.h>
+#include <beep/platform_data/leds-s3c24xx.h>
 #include <mach/regs-lcd.h>
 #include <plat/regs-serial.h>
 #include <mach/fb.h>
-#include <linux/platform_data/mtd-nand-s3c2410.h>
-#include <linux/platform_data/usb-s3c2410_udc.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/mtd-nand-s3c2410.h>
+#include <beep/platform_data/usb-s3c2410_udc.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 
 #include <plat/common-smdk.h>
 #include <plat/gpio-cfg.h>

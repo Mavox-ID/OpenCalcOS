@@ -37,11 +37,11 @@
  *    OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/vmalloc.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
+#include <beep/vmalloc.h>
 #include "carl9170.h"
 #include "cmd.h"
 

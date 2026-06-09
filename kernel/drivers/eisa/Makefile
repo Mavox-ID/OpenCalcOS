@@ -1,4 +1,4 @@
-# Makefile for the Linux device tree
+# Makefile for the Beep device tree
 
 obj-$(CONFIG_EISA)	        += eisa-bus.o
 obj-${CONFIG_EISA_PCI_EISA}     += pci_eisa.o
@@ -17,5 +17,5 @@ quiet_cmd_eisaid = GEN     $@
       cmd_eisaid = sed -e '/^\#/D' -e 's/^\([[:alnum:]]\{7\}\) \+"\([^"]\{1,$(DEVICE_NAME_SIZE)\}\).*"/EISA_DEVINFO ("\1", "\2"),/' $< > $@
 
 clean-files := devlist.h
-$(obj)/devlist.h: $(src)/eisa.ids include/linux/device.h
+$(obj)/devlist.h: $(src)/eisa.ids include/beep/device.h
 	$(call cmd,eisaid)

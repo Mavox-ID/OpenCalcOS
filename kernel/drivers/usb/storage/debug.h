@@ -5,7 +5,7 @@
  *   (c) 1999-2002 Matthew Dharm (mdharm-usb@one-eyed-alien.net)
  *
  * Initial work by:
- *   (c) 1999 Michael Gee (michael@linuxspecific.com)
+ *   (c) 1999 Michael Gee (michael@beepspecific.com)
  *
  * This driver is based on the 'USB Mass Storage Class' document. This
  * describes in detail the protocol used to communicate with such
@@ -21,7 +21,7 @@
  * Also, for certain devices, the interrupt endpoint is used to convey
  * status of a command.
  *
- * Please see http://www.one-eyed-alien.net/~mdharm/linux-usb for more
+ * Please see http://www.one-eyed-alien.net/~mdharm/beep-usb for more
  * information about this driver.
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -42,7 +42,7 @@
 #ifndef _DEBUG_H_
 #define _DEBUG_H_
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 #define USB_STORAGE "usb-storage: "
 

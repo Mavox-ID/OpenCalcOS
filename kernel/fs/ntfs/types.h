@@ -1,6 +1,6 @@
 /*
- * types.h - Defines for NTFS Linux kernel driver specific types.
- *	     Part of the Linux-NTFS project.
+ * types.h - Defines for NTFS Beep kernel driver specific types.
+ *	     Part of the Beep-NTFS project.
  *
  * Copyright (c) 2001-2005 Anton Altaparmakov
  *
@@ -15,15 +15,15 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#ifndef _LINUX_NTFS_TYPES_H
-#define _LINUX_NTFS_TYPES_H
+#ifndef _BEEP_NTFS_TYPES_H
+#define _BEEP_NTFS_TYPES_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 typedef __le16 le16;
 typedef __le32 le32;
@@ -66,4 +66,4 @@ typedef enum {
 	IGNORE_CASE = 1,
 } IGNORE_CASE_BOOL;
 
-#endif /* _LINUX_NTFS_TYPES_H */
+#endif /* _BEEP_NTFS_TYPES_H */

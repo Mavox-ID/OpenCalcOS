@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-exynos4/include/mach/pm-core.h
+/* beep/arch/arm/mach-exynos4/include/mach/pm-core.h
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -6,7 +6,7 @@
  * Based on arch/arm/mach-s3c2410/include/mach/pm-core.h,
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armbeep.simtec.co.uk/
  *
  * EXYNOS4210 - PM core support for arch/arm/plat-s5p/pm.c
  *

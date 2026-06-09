@@ -2,7 +2,7 @@
  *
  * msnd.c - Driver Base
  *
- * Turtle Beach MultiSound Sound Card Driver for Linux
+ * Turtle Beach MultiSound Sound Card Driver for Beep
  *
  * Copyright (C) 1998 Andrew Veliath
  *
@@ -22,18 +22,18 @@
  *
  ********************************************************************/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/vmalloc.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
 
 #include <asm/io.h>
 #include <asm/uaccess.h>
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 #include <asm/irq.h>
 #include "msnd.h"
 
@@ -373,7 +373,7 @@ int msnd_disable_irq(multisound_dev_t *dev)
 	return -EIO;
 }
 
-#ifndef LINUX20
+#ifndef BEEP20
 EXPORT_SYMBOL(msnd_register);
 EXPORT_SYMBOL(msnd_unregister);
 

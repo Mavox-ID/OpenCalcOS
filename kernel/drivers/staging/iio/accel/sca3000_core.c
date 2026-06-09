@@ -10,18 +10,18 @@
  * See industrialio/accels/sca3000.h for comments.
  */
 
-#include <linux/interrupt.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/iio/buffer.h>
+#include <beep/interrupt.h>
+#include <beep/fs.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/spi/spi.h>
+#include <beep/sysfs.h>
+#include <beep/module.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
+#include <beep/iio/events.h>
+#include <beep/iio/buffer.h>
 
 #include "sca3000.h"
 

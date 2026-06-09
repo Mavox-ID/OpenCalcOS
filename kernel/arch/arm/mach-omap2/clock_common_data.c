@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-omap2/clock_common_data.c
+ *  beep/arch/arm/mach-omap2/clock_common_data.c
  *
  *  Copyright (C) 2005-2009 Texas Instruments, Inc.
  *  Copyright (C) 2004-2009 Nokia Corporation
@@ -16,7 +16,7 @@
  * OMAP3xxx clock definition files.
  */
 
-#include <linux/clk-private.h>
+#include <beep/clk-private.h>
 #include "clock.h"
 
 /* clksel_rate data common to 24xx/343x */

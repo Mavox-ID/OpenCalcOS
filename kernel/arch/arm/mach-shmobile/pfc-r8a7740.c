@@ -18,9 +18,9 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sh_pfc.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sh_pfc.h>
 #include <mach/r8a7740.h>
 #include <mach/irqs.h>
 

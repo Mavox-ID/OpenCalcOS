@@ -53,13 +53,13 @@
  */
 
 #include "multiface.h"
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/parport.h>
-#include <linux/delay.h>
-#include <linux/mc6821.h>
-#include <linux/zorro.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/parport.h>
+#include <beep/delay.h>
+#include <beep/mc6821.h>
+#include <beep/zorro.h>
+#include <beep/interrupt.h>
 #include <asm/setup.h>
 #include <asm/amigahw.h>
 #include <asm/irq.h>

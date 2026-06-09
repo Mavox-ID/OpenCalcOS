@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-mmp/pxa910.c
+ *  beep/arch/arm/mach-mmp/pxa910.c
  *
  *  Code specific to PXA910
  *
@@ -7,12 +7,12 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
 
 #include <asm/hardware/cache-tauros2.h>
 #include <asm/mach/time.h>

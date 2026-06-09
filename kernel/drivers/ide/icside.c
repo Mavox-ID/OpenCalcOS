@@ -4,18 +4,18 @@
  * Please note that this platform does not support 32-bit IDE IO.
  */
 
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/errno.h>
-#include <linux/ide.h>
-#include <linux/dma-mapping.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/scatterlist.h>
-#include <linux/io.h>
+#include <beep/string.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/blkdev.h>
+#include <beep/errno.h>
+#include <beep/ide.h>
+#include <beep/dma-mapping.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/scatterlist.h>
+#include <beep/io.h>
 
 #include <asm/dma.h>
 #include <asm/ecard.h>
@@ -683,7 +683,7 @@ static void __exit icside_exit(void)
 	ecard_remove_driver(&icside_driver);
 }
 
-MODULE_AUTHOR("Russell King <rmk@arm.linux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk@arm.beep.org.uk>");
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("ICS IDE driver");
 

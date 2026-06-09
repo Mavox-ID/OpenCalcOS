@@ -532,15 +532,15 @@ void FAST_FUNC xfstat(int fd, struct stat *stat_buf, const char *errmsg)
 		bb_simple_perror_msg_and_die(errmsg);
 }
 
-#if ENABLE_SELINUX
-// selinux_or_die() - die if SELinux is disabled.
-void FAST_FUNC selinux_or_die(void)
+#if ENABLE_SEBEEP
+// sebeep_or_die() - die if SEBeep is disabled.
+void FAST_FUNC sebeep_or_die(void)
 {
-	int rc = is_selinux_enabled();
+	int rc = is_sebeep_enabled();
 	if (rc == 0) {
-		bb_simple_error_msg_and_die("SELinux is disabled");
+		bb_simple_error_msg_and_die("SEBeep is disabled");
 	} else if (rc < 0) {
-		bb_simple_error_msg_and_die("is_selinux_enabled() failed");
+		bb_simple_error_msg_and_die("is_sebeep_enabled() failed");
 	}
 }
 #else
@@ -736,7 +736,7 @@ void FAST_FUNC xgettimeofday(struct timeval *tv)
 	if (gettimeofday(tv, NULL))
 		bb_simple_perror_msg_and_die("gettimeofday");
 #else
-	/* Never fails on Linux */
+	/* Never fails on Beep */
 	gettimeofday(tv, NULL);
 #endif
 }

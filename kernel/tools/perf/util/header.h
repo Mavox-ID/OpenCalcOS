@@ -1,13 +1,13 @@
 #ifndef __PERF_HEADER_H
 #define __PERF_HEADER_H
 
-#include <linux/perf_event.h>
+#include <beep/perf_event.h>
 #include <sys/types.h>
 #include <stdbool.h>
 #include "types.h"
 #include "event.h"
 
-#include <linux/bitmap.h>
+#include <beep/bitmap.h>
 
 enum {
 	HEADER_RESERVED		= 0,	/* always cleared */

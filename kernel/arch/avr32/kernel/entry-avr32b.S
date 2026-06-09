@@ -11,7 +11,7 @@
  * exception handlers, debug trap handlers, interrupt handlers and the
  * system call handler.
  */
-#include <linux/errno.h>
+#include <beep/errno.h>
 
 #include <asm/asm.h>
 #include <asm/hardirq.h>

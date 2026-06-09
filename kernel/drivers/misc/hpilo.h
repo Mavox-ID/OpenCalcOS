@@ -1,5 +1,5 @@
 /*
- * linux/drivers/char/hpilo.h
+ * beep/drivers/char/hpilo.h
  *
  * Copyright (C) 2008 Hewlett-Packard Development Company, L.P.
  *	David Altobelli <david.altobelli@hp.com>

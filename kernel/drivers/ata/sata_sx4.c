@@ -2,7 +2,7 @@
  *  sata_sx4.c - Promise SATA
  *
  *  Maintained by:  Jeff Garzik <jgarzik@pobox.com>
- *  		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *  		    Please ALWAYS copy beep-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2003-2004 Red Hat, Inc.
@@ -50,7 +50,7 @@
 	submitted and waited-on as a single unit), and an optional
 	microprocessor.
 
-	The limiting factor is largely software.  This Linux driver was
+	The limiting factor is largely software.  This Beep driver was
 	written to multiplex the single HDMA engine to copy disk
 	transactions into a fixed DIMM memory space, from where an ATA
 	engine takes over.  As a result, each WRITE looks like this:
@@ -78,18 +78,18 @@
 
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
-#include <linux/libata.h>
+#include <beep/libata.h>
 #include "sata_promise.h"
 
 #define DRV_NAME	"sata_sx4"

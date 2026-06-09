@@ -9,16 +9,16 @@
  *  version 2 as published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/string.h>
 
-#include <linux/ppp_defs.h>
-#include <linux/ppp-comp.h>
+#include <beep/ppp_defs.h>
+#include <beep/ppp-comp.h>
 
-#include <linux/zlib.h>
+#include <beep/zlib.h>
 #include <asm/unaligned.h>
 
 /*

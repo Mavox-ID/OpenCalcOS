@@ -1,8 +1,8 @@
 #ifndef __MPC83XX_H__
 #define __MPC83XX_H__
 
-#include <linux/init.h>
-#include <linux/device.h>
+#include <beep/init.h>
+#include <beep/device.h>
 #include <asm/pci-bridge.h>
 
 /* System Clock Control Register */

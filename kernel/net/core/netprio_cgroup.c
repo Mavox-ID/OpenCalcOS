@@ -11,21 +11,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/cgroup.h>
-#include <linux/rcupdate.h>
-#include <linux/atomic.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/skbuff.h>
+#include <beep/cgroup.h>
+#include <beep/rcupdate.h>
+#include <beep/atomic.h>
 #include <net/rtnetlink.h>
 #include <net/pkt_cls.h>
 #include <net/sock.h>
 #include <net/netprio_cgroup.h>
 
-#include <linux/fdtable.h>
+#include <beep/fdtable.h>
 
 #define PRIOMAP_MIN_SZ		128
 

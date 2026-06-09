@@ -1,6 +1,6 @@
 /*
  * Zoran zr36057/zr36067 PCI controller driver, for the
- * Pinnacle/Miro DC10/DC10+/DC30/DC30+, Iomega Buz, Linux
+ * Pinnacle/Miro DC10/DC10+/DC30/DC30+, Iomega Buz, Beep
  * Media Labs LML33/LML33R10.
  *
  * This part handles card-specific data and detection
@@ -27,28 +27,28 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
 
-#include <linux/proc_fs.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/videodev2.h>
-#include <linux/spinlock.h>
-#include <linux/sem.h>
-#include <linux/kmod.h>
-#include <linux/wait.h>
+#include <beep/proc_fs.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
+#include <beep/videodev2.h>
+#include <beep/spinlock.h>
+#include <beep/sem.h>
+#include <beep/kmod.h>
+#include <beep/wait.h>
 
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/mutex.h>
+#include <beep/io.h>
 #include <media/v4l2-common.h>
 #include <media/bt819.h>
 
@@ -346,7 +346,7 @@ static struct tvnorm f60sqpixel_dc10 = { 780, 640, 0, 716, 525, 480, 12 };
 
 /* FIXME: I cannot swap U and V in saa7114, so i do one
  * pixel left shift in zoran (75 -> 74)
- * (Maxim Yevtyushkin <max@linuxmedialabs.com>) */
+ * (Maxim Yevtyushkin <max@beepmedialabs.com>) */
 static struct tvnorm f50ccir601_lm33r10 = { 864, 720, 74+54, 804, 625, 576, 18 };
 static struct tvnorm f60ccir601_lm33r10 = { 858, 720, 56+54, 788, 525, 480, 16 };
 

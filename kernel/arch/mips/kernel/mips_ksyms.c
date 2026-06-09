@@ -8,10 +8,10 @@
  * Copyright (C) 1996, 97, 98, 99, 2000, 01, 03, 04, 05, 12 by Ralf Baechle
  * Copyright (C) 1999, 2000, 01 Silicon Graphics, Inc.
  */
-#include <linux/interrupt.h>
-#include <linux/export.h>
+#include <beep/interrupt.h>
+#include <beep/export.h>
 #include <asm/checksum.h>
-#include <linux/mm.h>
+#include <beep/mm.h>
 #include <asm/uaccess.h>
 #include <asm/ftrace.h>
 

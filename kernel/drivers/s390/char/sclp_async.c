@@ -2,23 +2,23 @@
  * Enable Asynchronous Notification via SCLP.
  *
  * Copyright IBM Corp. 2009
- * Author(s): Hans-Joachim Picht <hans@linux.vnet.ibm.com>
+ * Author(s): Hans-Joachim Picht <hans@beep.vnet.ibm.com>
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/kmod.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/proc_fs.h>
-#include <linux/sysctl.h>
-#include <linux/utsname.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/stat.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/ctype.h>
+#include <beep/kmod.h>
+#include <beep/err.h>
+#include <beep/errno.h>
+#include <beep/proc_fs.h>
+#include <beep/sysctl.h>
+#include <beep/utsname.h>
 #include "sclp.h"
 
 static int callhome_enabled;
@@ -135,7 +135,7 @@ static int sclp_async_send_wait(char *message)
 	strncpy(sccb->evbuf.data, message, sizeof(sccb->evbuf.data));
 	/*
 	 * Retain Queue
-	 * e.g. 5639CC140 500 Red Hat RHEL5 Linux for zSeries (RHEL AS)
+	 * e.g. 5639CC140 500 Red Hat RHEL5 Beep for zSeries (RHEL AS)
 	 */
 	strncpy(sccb->evbuf.comp_id, "000000000", sizeof(sccb->evbuf.comp_id));
 	sccb->evbuf.header.length = sizeof(sccb->evbuf);
@@ -206,6 +206,6 @@ static void __exit sclp_async_exit(void)
 module_exit(sclp_async_exit);
 
 MODULE_AUTHOR("Copyright IBM Corp. 2009");
-MODULE_AUTHOR("Hans-Joachim Picht <hans@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Hans-Joachim Picht <hans@beep.vnet.ibm.com>");
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("SCLP Asynchronous Notification Records");

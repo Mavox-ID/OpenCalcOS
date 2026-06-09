@@ -9,20 +9,20 @@
  *
  * Data sheet: ARM DDI 0190B, September 2000
  */
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/bitops.h>
-#include <linux/workqueue.h>
-#include <linux/gpio.h>
-#include <linux/device.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/pl061.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
+#include <beep/spinlock.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/irq.h>
+#include <beep/bitops.h>
+#include <beep/workqueue.h>
+#include <beep/gpio.h>
+#include <beep/device.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/pl061.h>
+#include <beep/slab.h>
+#include <beep/pm.h>
 #include <asm/mach/irq.h>
 
 #define GPIODIR 0x400

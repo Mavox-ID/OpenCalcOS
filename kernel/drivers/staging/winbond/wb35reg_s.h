@@ -1,9 +1,9 @@
 #ifndef __WINBOND_WB35REG_S_H
 #define __WINBOND_WB35REG_S_H
 
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/atomic.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/atomic.h>
 
 struct hw_data;
 

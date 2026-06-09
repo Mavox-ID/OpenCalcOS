@@ -20,15 +20,15 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/freezer.h>
-#include <linux/videodev2.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/freezer.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/msp3400.h>
-#include <linux/kthread.h>
-#include <linux/suspend.h>
+#include <beep/kthread.h>
+#include <beep/suspend.h>
 #include "msp3400-driver.h"
 
 /* this one uses the automatic sound standard detection of newer msp34xx

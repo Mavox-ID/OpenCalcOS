@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2008 Rodolfo Giometti <giometti@linux.it>
+ * Copyright (c) 2008 Rodolfo Giometti <giometti@beep.it>
  * Copyright (c) 2008 Eurotech S.p.A. <info@eurtech.it>
  *
  * This code is *strongly* based on EHCI-HCD code by David Brownell since
@@ -20,30 +20,30 @@
  * Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dmapool.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/dmapool.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
+#include <beep/moduleparam.h>
+#include <beep/dma-mapping.h>
+#include <beep/io.h>
 
 #include <asm/irq.h>
 #include <asm/unaligned.h>
 
-#include <linux/irq.h>
-#include <linux/platform_device.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
 
 #include "oxu210hp.h"
 
@@ -3954,5 +3954,5 @@ static struct platform_driver oxu_driver = {
 module_platform_driver(oxu_driver);
 
 MODULE_DESCRIPTION("Oxford OXU210HP HCD driver - ver. " DRIVER_VERSION);
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
+MODULE_AUTHOR("Rodolfo Giometti <giometti@beep.it>");
 MODULE_LICENSE("GPL");

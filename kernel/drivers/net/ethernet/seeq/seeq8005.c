@@ -1,4 +1,4 @@
-/* seeq8005.c: A network driver for linux. */
+/* seeq8005.c: A network driver for beep. */
 /*
 	Based on skeleton.c,
 	Written 1993-94 by Donald Becker.
@@ -10,7 +10,7 @@
 	The author may be reached as hamish@zot.apana.org.au
 
 	This file is a network device driver for the SEEQ 8005 chipset and
-	the Linux operating system.
+	the Beep operating system.
 
 */
 
@@ -30,22 +30,22 @@ static const char version[] =
   	0.48	Receive working
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/in.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/bitops.h>
+#include <beep/jiffies.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>
@@ -153,7 +153,7 @@ static const struct net_device_ops seeq8005_netdev_ops = {
 	.ndo_validate_addr	= eth_validate_addr,
 };
 
-/* This is the real probe routine.  Linux has a history of friendly device
+/* This is the real probe routine.  Beep has a history of friendly device
    probes on the ISA bus.  A good device probes avoids doing writes, and
    verifies that the correct device exists and functions.  */
 

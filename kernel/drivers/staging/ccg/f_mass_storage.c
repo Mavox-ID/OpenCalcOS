@@ -197,27 +197,27 @@
 /* #define VERBOSE_DEBUG */
 /* #define DUMP_MSGS */
 
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/dcache.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/fcntl.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/kref.h>
-#include <linux/kthread.h>
-#include <linux/limits.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/freezer.h>
-#include <linux/utsname.h>
+#include <beep/blkdev.h>
+#include <beep/completion.h>
+#include <beep/dcache.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/fcntl.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/kref.h>
+#include <beep/kthread.h>
+#include <beep/limits.h>
+#include <beep/rwsem.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/freezer.h>
+#include <beep/utsname.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/composite.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb/composite.h>
 
 #include "gadget_chips.h"
 
@@ -2786,7 +2786,7 @@ buffhds_first_it:
 		}
 	}
 	snprintf(common->inquiry_string, sizeof common->inquiry_string,
-		 "%-8s%-16s%04x", cfg->vendor_name ?: "Linux",
+		 "%-8s%-16s%04x", cfg->vendor_name ?: "Beep",
 		 /* Assume product name dependent on the first LUN */
 		 cfg->product_name ?: (common->luns->cdrom
 				     ? "File-Stor Gadget"

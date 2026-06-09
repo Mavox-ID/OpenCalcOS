@@ -18,7 +18,7 @@
 
 #include "ctmixer.h"
 #include "ctamixer.h"
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/asoundef.h>

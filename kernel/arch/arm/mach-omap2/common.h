@@ -26,11 +26,11 @@
 #define __ARCH_ARM_MACH_OMAP2PLUS_COMMON_H
 #ifndef __ASSEMBLER__
 
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/i2c/twl.h>
-#include <linux/i2c-omap.h>
+#include <beep/irq.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/i2c/twl.h>
+#include <beep/i2c-omap.h>
 
 #include <asm/proc-fns.h>
 

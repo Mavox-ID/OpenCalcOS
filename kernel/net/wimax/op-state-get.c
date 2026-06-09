@@ -1,11 +1,11 @@
 /*
- * Linux WiMAX
+ * Beep WiMAX
  * Implement and export a method for getting a WiMAX device current state
  *
  * Copyright (C) 2009 Paulius Zaleckas <paulius.zaleckas@teltonika.lt>
  *
  * Based on previous WiMAX core work by:
- *  Copyright (C) 2008 Intel Corporation <linux-wimax@intel.com>
+ *  Copyright (C) 2008 Intel Corporation <beep-wimax@intel.com>
  *  Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *
  * This program is free software; you can redistribute it and/or
@@ -25,8 +25,8 @@
 
 #include <net/wimax.h>
 #include <net/genetlink.h>
-#include <linux/wimax.h>
-#include <linux/security.h>
+#include <beep/wimax.h>
+#include <beep/security.h>
 #include "wimax-internal.h"
 
 #define D_SUBMODULE op_state_get

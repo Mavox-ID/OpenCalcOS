@@ -16,10 +16,10 @@
  * General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/hwspinlock.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/hwspinlock.h>
 
 #include "omap_hwmod.h"
 #include "omap_device.h"

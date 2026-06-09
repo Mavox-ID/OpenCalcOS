@@ -1,5 +1,5 @@
 /*
- * ntfs.h - Defines for NTFS Linux kernel driver. Part of the Linux-NTFS
+ * ntfs.h - Defines for NTFS Beep kernel driver. Part of the Beep-NTFS
  *	    project.
  *
  * Copyright (c) 2001-2005 Anton Altaparmakov
@@ -16,22 +16,22 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#ifndef _LINUX_NTFS_H
-#define _LINUX_NTFS_H
+#ifndef _BEEP_NTFS_H
+#define _BEEP_NTFS_H
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/fs.h>
-#include <linux/nls.h>
-#include <linux/smp.h>
-#include <linux/pagemap.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/compiler.h>
+#include <beep/fs.h>
+#include <beep/nls.h>
+#include <beep/smp.h>
+#include <beep/pagemap.h>
 
 #include "types.h"
 #include "volume.h"
@@ -161,4 +161,4 @@ static inline int ntfs_ffs(int x)
 	return r;
 }
 
-#endif /* _LINUX_NTFS_H */
+#endif /* _BEEP_NTFS_H */

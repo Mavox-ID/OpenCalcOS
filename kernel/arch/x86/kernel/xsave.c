@@ -6,8 +6,8 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bootmem.h>
-#include <linux/compat.h>
+#include <beep/bootmem.h>
+#include <beep/compat.h>
 #include <asm/i387.h>
 #include <asm/fpu-internal.h>
 #include <asm/sigframe.h>

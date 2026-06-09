@@ -23,8 +23,8 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
 
 #include "dlmfsver.h"
 

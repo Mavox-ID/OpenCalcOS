@@ -60,14 +60,14 @@
 #define OSC_R2V_bm	(1<<1)
 #define OSC_RBG_bm	(1<<0)
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/spi/spi.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/spi/spi.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/delay.h>
 
 #define DEVICE_NAME	"ads7871"
 

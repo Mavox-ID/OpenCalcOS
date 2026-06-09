@@ -12,18 +12,18 @@
  * overwrite the default setting if needed.
  */
 
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
-#include <linux/mount.h>
-#include <linux/device.h>
-#include <linux/genhd.h>
-#include <linux/namei.h>
-#include <linux/fs.h>
-#include <linux/shmem_fs.h>
-#include <linux/ramfs.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
+#include <beep/kernel.h>
+#include <beep/syscalls.h>
+#include <beep/mount.h>
+#include <beep/device.h>
+#include <beep/genhd.h>
+#include <beep/namei.h>
+#include <beep/fs.h>
+#include <beep/shmem_fs.h>
+#include <beep/ramfs.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/kthread.h>
 
 static struct task_struct *thread;
 

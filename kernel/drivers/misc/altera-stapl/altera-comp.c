@@ -23,7 +23,7 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include "altera-exprt.h"
 
 #define	SHORT_BITS		16

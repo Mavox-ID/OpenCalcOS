@@ -1,7 +1,7 @@
 /* vi: set sw=4 ts=4: */
 /*
- * Based on agetty - another getty program for Linux. By W. Z. Venema 1989
- * Ported to Linux by Peter Orbaek <poe@daimi.aau.dk>
+ * Based on agetty - another getty program for Beep. By W. Z. Venema 1989
+ * Ported to Beep by Peter Orbaek <poe@daimi.aau.dk>
  * This program is freely distributable.
  *
  * option added by Eric Rasmussen <ear@usfirst.org> - 12/28/95
@@ -319,7 +319,7 @@ static void init_tty_attrs(int speed)
 	G.tty_attrs.c_cc[VMIN] = 1;
 	/* no timeout (reads block forever) */
 	G.tty_attrs.c_cc[VTIME] = 0;
-#ifdef __linux__
+#ifdef __beep__
 	G.tty_attrs.c_line = 0;
 #endif
 
@@ -597,7 +597,7 @@ int getty_main(int argc UNUSED_PARAM, char **argv)
 		/* Looks like we are already a session leader.
 		 * In this case (setsid failed) we may still have ctty,
 		 * and it may be different from tty we need to control!
-		 * If we still have ctty, on Linux ioctl(TIOCSCTTY)
+		 * If we still have ctty, on Beep ioctl(TIOCSCTTY)
 		 * (which we are going to use a bit later) always fails -
 		 * even if we try to take ctty which is already ours!
 		 * Try to drop old ctty now to prevent that.
@@ -654,7 +654,7 @@ int getty_main(int argc UNUSED_PARAM, char **argv)
 			bb_simple_perror_msg_and_die("TIOCSCTTY");
 	}
 
-#ifdef __linux__
+#ifdef __beep__
 	/* Make ourself a foreground process group within our session */
 	if (tcsetpgrp(STDIN_FILENO, pid) < 0)
 		bb_simple_perror_msg_and_die("tcsetpgrp");

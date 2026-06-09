@@ -18,23 +18,23 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/leds.h>
-#include <linux/mmc/host.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
-#include <linux/smc91x.h>
+#include <beep/dma-mapping.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/leds.h>
+#include <beep/mmc/host.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/platform_device.h>
+#include <beep/serial_8250.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
+#include <beep/smc91x.h>
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/au1100_mmc.h>
 #include <asm/mach-au1x00/au1xxx_dbdma.h>

@@ -12,15 +12,15 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/types.h>
 
-#include <linux/usb/otg.h>
+#include <beep/usb/otg.h>
 
 #include "common.h"
 #include "devices-imx31.h"

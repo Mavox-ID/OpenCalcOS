@@ -1,13 +1,13 @@
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/namei.h>
-#include <linux/writeback.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/file.h>
+#include <beep/namei.h>
+#include <beep/writeback.h>
 
-#include <linux/ceph/libceph.h>
+#include <beep/ceph/libceph.h>
 
 /*
  * build a vector of user pages

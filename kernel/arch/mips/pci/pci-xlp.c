@@ -32,15 +32,15 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/msi.h>
-#include <linux/mm.h>
-#include <linux/irq.h>
-#include <linux/irqdesc.h>
-#include <linux/console.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/msi.h>
+#include <beep/mm.h>
+#include <beep/irq.h>
+#include <beep/irqdesc.h>
+#include <beep/console.h>
 
 #include <asm/io.h>
 

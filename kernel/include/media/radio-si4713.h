@@ -15,7 +15,7 @@
 #ifndef RADIO_SI4713_H
 #define RADIO_SI4713_H
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 
 #define SI4713_NAME "radio-si4713"
 

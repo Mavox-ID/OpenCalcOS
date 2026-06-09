@@ -1,7 +1,7 @@
 /*
  * Simplistic strlen() implementation for SHmedia.
  *
- * Copyright (C) 2003  Paul Mundt <lethal@linux-sh.org>
+ * Copyright (C) 2003  Paul Mundt <lethal@beep-sh.org>
  */
 
 	.section .text..SHmedia32,"ax"

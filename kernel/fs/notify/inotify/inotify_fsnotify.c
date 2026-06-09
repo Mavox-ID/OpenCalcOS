@@ -22,14 +22,14 @@
  * General Public License for more details.
  */
 
-#include <linux/dcache.h> /* d_unlinked */
-#include <linux/fs.h> /* struct inode */
-#include <linux/fsnotify_backend.h>
-#include <linux/inotify.h>
-#include <linux/path.h> /* struct path */
-#include <linux/slab.h> /* kmem_* */
-#include <linux/types.h>
-#include <linux/sched.h>
+#include <beep/dcache.h> /* d_unlinked */
+#include <beep/fs.h> /* struct inode */
+#include <beep/fsnotify_backend.h>
+#include <beep/inotify.h>
+#include <beep/path.h> /* struct path */
+#include <beep/slab.h> /* kmem_* */
+#include <beep/types.h>
+#include <beep/sched.h>
 
 #include "inotify.h"
 

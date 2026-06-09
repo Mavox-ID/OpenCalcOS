@@ -2,7 +2,7 @@
     comedi/drivers/dt3000.c
     Data Translation DT3000 series driver
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1999 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -55,9 +55,9 @@ AO commands are not supported.
 
 #define DEBUG 1
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include "../comedidev.h"
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 #include "comedi_fc.h"
 

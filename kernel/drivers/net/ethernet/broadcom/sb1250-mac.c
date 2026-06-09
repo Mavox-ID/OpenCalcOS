@@ -24,26 +24,26 @@
  * by Maciej W. Rozycki.
  */
 
-#include <linux/bug.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/prefetch.h>
+#include <beep/bug.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/err.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/phy.h>
+#include <beep/platform_device.h>
+#include <beep/prefetch.h>
 
 #include <asm/cache.h>
 #include <asm/io.h>
@@ -234,9 +234,9 @@ struct sbmacdma {
 struct sbmac_softc {
 
 	/*
-	 * Linux-specific things
+	 * Beep-specific things
 	 */
-	struct net_device	*sbm_dev;	/* pointer to linux device */
+	struct net_device	*sbm_dev;	/* pointer to beep device */
 	struct napi_struct	napi;
 	struct phy_device	*phy_dev;	/* the associated PHY device */
 	struct mii_bus		*mii_bus;	/* the MII bus */
@@ -927,7 +927,7 @@ static int sbdma_add_txbuffer(struct sbmacdma *d, struct sk_buff *sb)
 	}
 
 	/*
-	 * Under Linux, it's not necessary to copy/coalesce buffers
+	 * Under Beep, it's not necessary to copy/coalesce buffers
 	 * like it is on NetBSD.  We think they're all contiguous,
 	 * but that may not be true for GBE.
 	 */
@@ -2189,7 +2189,7 @@ static const struct net_device_ops sbmac_netdev_ops = {
 /**********************************************************************
  *  SBMAC_INIT(dev)
  *
- *  Attach routine - init hardware and hook ourselves into linux
+ *  Attach routine - init hardware and hook ourselves into beep
  *
  *  Input parameters:
  *  	   dev - net_device structure
@@ -2237,7 +2237,7 @@ static int sbmac_init(struct platform_device *pldev, long long base)
 	sbmac_initctx(sc);
 
 	/*
-	 * Set up Linux device callins
+	 * Set up Beep device callins
 	 */
 
 	spin_lock_init(&(sc->sbm_lock));

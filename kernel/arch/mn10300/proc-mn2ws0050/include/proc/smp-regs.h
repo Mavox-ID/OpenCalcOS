@@ -19,7 +19,7 @@
 #ifdef __KERNEL__
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <beep/types.h>
 #endif
 #include <asm/cpu-regs.h>
 

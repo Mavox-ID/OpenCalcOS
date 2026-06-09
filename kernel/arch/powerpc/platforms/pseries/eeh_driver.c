@@ -22,11 +22,11 @@
  *
  * Send comments and feedback to Linas Vepstas <linas@austin.ibm.com>
  */
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/module.h>
+#include <beep/pci.h>
 #include <asm/eeh.h>
 #include <asm/eeh_event.h>
 #include <asm/ppc-pci.h>

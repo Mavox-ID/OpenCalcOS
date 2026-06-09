@@ -37,17 +37,17 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/user_namespace.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/pagemap.h>
+#include <beep/user_namespace.h>
 
-#include <linux/sunrpc/auth_gss.h>
-#include <linux/sunrpc/gss_err.h>
-#include <linux/sunrpc/svcauth.h>
-#include <linux/sunrpc/svcauth_gss.h>
-#include <linux/sunrpc/cache.h>
+#include <beep/sunrpc/auth_gss.h>
+#include <beep/sunrpc/gss_err.h>
+#include <beep/sunrpc/svcauth.h>
+#include <beep/sunrpc/svcauth_gss.h>
+#include <beep/sunrpc/cache.h>
 
 #include "../netns.h"
 

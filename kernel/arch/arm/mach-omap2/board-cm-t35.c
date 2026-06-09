@@ -16,33 +16,33 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/platform_data/gpio-omap.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/platform_data/gpio-omap.h>
 
-#include <linux/i2c/at24.h>
-#include <linux/i2c/twl.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/mmc/host.h>
+#include <beep/i2c/at24.h>
+#include <beep/i2c/twl.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
+#include <beep/mmc/host.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/tdo24m.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/tdo24m.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 
-#include <linux/platform_data/mtd-nand-omap2.h>
+#include <beep/platform_data/mtd-nand-omap2.h>
 #include <video/omapdss.h>
 #include <video/omap-panel-generic-dpi.h>
 #include <video/omap-panel-tfp410.h>
-#include <linux/platform_data/spi-omap2-mcspi.h>
+#include <beep/platform_data/spi-omap2-mcspi.h>
 
 #include "common.h"
 #include "mux.h"
@@ -61,7 +61,7 @@
 #define SB_T35_SMSC911X_GPIO	65
 
 #if defined(CONFIG_SMSC911X) || defined(CONFIG_SMSC911X_MODULE)
-#include <linux/smsc911x.h>
+#include <beep/smsc911x.h>
 #include "gpmc-smsc911x.h"
 
 static struct omap_smsc911x_platform_data cm_t35_smsc911x_cfg = {
@@ -105,7 +105,7 @@ static inline void __init cm_t35_init_ethernet(void) { return; }
 #endif
 
 #if defined(CONFIG_LEDS_GPIO) || defined(CONFIG_LEDS_GPIO_MODULE)
-#include <linux/leds.h>
+#include <beep/leds.h>
 
 static struct gpio_led cm_t35_leds[] = {
 	[0] = {
@@ -138,9 +138,9 @@ static inline void cm_t35_init_led(void) {}
 #endif
 
 #if defined(CONFIG_MTD_NAND_OMAP2) || defined(CONFIG_MTD_NAND_OMAP2_MODULE)
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
 
 static struct mtd_partition cm_t35_nand_partitions[] = {
 	{
@@ -160,7 +160,7 @@ static struct mtd_partition cm_t35_nand_partitions[] = {
 		.size           = 2 * NAND_BLOCK_SIZE,
 	},
 	{
-		.name           = "linux",
+		.name           = "beep",
 		.offset         = MTDPART_OFS_APPEND,	/* Offset = 0x2A0000 */
 		.size           = 32 * NAND_BLOCK_SIZE,
 	},

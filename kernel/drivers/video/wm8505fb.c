@@ -14,25 +14,25 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/wait.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/memblock.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/wait.h>
+#include <beep/of.h>
+#include <beep/of_fdt.h>
+#include <beep/memblock.h>
 
-#include <linux/platform_data/video-vt8500lcdfb.h>
+#include <beep/platform_data/video-vt8500lcdfb.h>
 
 #include "wm8505fb_regs.h"
 #include "wmt_ge_rops.h"

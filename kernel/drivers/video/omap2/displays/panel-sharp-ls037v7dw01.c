@@ -17,13 +17,13 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/backlight.h>
-#include <linux/fb.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/backlight.h>
+#include <beep/fb.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 
 #include <video/omapdss.h>
 

@@ -27,8 +27,8 @@
 #ifndef _DVB_RINGBUFFER_H_
 #define _DVB_RINGBUFFER_H_
 
-#include <linux/spinlock.h>
-#include <linux/wait.h>
+#include <beep/spinlock.h>
+#include <beep/wait.h>
 
 struct dvb_ringbuffer {
 	u8               *data;

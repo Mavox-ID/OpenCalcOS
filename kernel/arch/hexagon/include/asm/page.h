@@ -1,7 +1,7 @@
 /*
  * Page management definitions for the Hexagon architecture
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -21,7 +21,7 @@
 #ifndef _ASM_PAGE_H
 #define _ASM_PAGE_H
 
-#include <linux/const.h>
+#include <beep/const.h>
 
 /*  This is probably not the most graceful way to handle this.  */
 
@@ -72,7 +72,7 @@
 /*
  * This is for PFN_DOWN, which mm.h needs.  Seems the right place to pull it in.
  */
-#include <linux/pfn.h>
+#include <beep/pfn.h>
 
 /*
  * We implement a two-level architecture-specific page table structure.
@@ -99,7 +99,7 @@ typedef struct page *pgtable_t;
 #define __pa(x) ((unsigned long)(x) - PAGE_OFFSET)
 #define __va(x) ((void *)((unsigned long)(x) + PAGE_OFFSET))
 
-/* The "page frame" descriptor is defined in linux/mm.h */
+/* The "page frame" descriptor is defined in beep/mm.h */
 struct page;
 
 /* Returns page frame descriptor for virtual address. */

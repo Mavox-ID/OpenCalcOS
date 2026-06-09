@@ -7,14 +7,14 @@
  *
  * Copyright (C) 2000 Harald Koerfgen
  * Copyright (C) 2002, 2003, 2005 Ilya A. Volynets
- * Copyright (C) 2006 Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2006 Ralf Baechle <ralf@beep-mips.org>
  */
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/mc146818rtc.h>
-#include <linux/param.h>
-#include <linux/sched.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/mc146818rtc.h>
+#include <beep/param.h>
+#include <beep/sched.h>
 
 #include <asm/bootinfo.h>
 #include <asm/mc146818-time.h>

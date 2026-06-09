@@ -12,14 +12,14 @@
  *
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/backlight.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 
-#include <linux/mfd/da9052/da9052.h>
-#include <linux/mfd/da9052/reg.h>
+#include <beep/mfd/da9052/da9052.h>
+#include <beep/mfd/da9052/reg.h>
 
 #define DA9052_MAX_BRIGHTNESS		0xFF
 

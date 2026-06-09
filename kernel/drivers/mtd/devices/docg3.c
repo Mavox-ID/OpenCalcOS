@@ -19,22 +19,22 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/bitmap.h>
-#include <linux/bitrev.h>
-#include <linux/bch.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/platform_device.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/bitmap.h>
+#include <beep/bitrev.h>
+#include <beep/bch.h>
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 #define CREATE_TRACE_POINTS
 #include "docg3.h"

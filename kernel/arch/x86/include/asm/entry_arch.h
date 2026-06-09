@@ -5,7 +5,7 @@
  */
 
 /*
- * The following vectors are part of the Linux architecture, there
+ * The following vectors are part of the Beep architecture, there
  * is no hardware IRQ pin equivalent for them, they are triggered
  * through the ICC by us (IPIs)
  */
@@ -23,7 +23,7 @@ BUILD_INTERRUPT(x86_platform_ipi, X86_PLATFORM_IPI_VECTOR)
  * every pentium local APIC has two 'local interrupts', with a
  * soft-definable vector attached to both interrupts, one of
  * which is a timer interrupt, the other one is error counter
- * overflow. Linux uses the local APIC timer interrupt to get
+ * overflow. Beep uses the local APIC timer interrupt to get
  * a much simpler SMP time architecture:
  */
 #ifdef CONFIG_X86_LOCAL_APIC

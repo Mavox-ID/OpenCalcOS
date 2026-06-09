@@ -1,6 +1,6 @@
 /*
  *
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) Beep driver
  * Copyright (c) 2003-2012, Intel Corporation.
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -14,15 +14,15 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
+#include <beep/pci.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
+#include <beep/delay.h>
 
 #include "mei_dev.h"
 #include "hw.h"
 #include "interface.h"
-#include <linux/mei.h>
+#include <beep/mei.h>
 
 const char *mei_dev_state_str(int state)
 {

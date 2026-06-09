@@ -1,6 +1,6 @@
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  *  Derived from "arch/i386/mm/fault.c"
  *    Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
@@ -15,23 +15,23 @@
  *  2 of the License, or (at your option) any later version.
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/perf_event.h>
-#include <linux/magic.h>
-#include <linux/ratelimit.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/highmem.h>
+#include <beep/module.h>
+#include <beep/kprobes.h>
+#include <beep/kdebug.h>
+#include <beep/perf_event.h>
+#include <beep/magic.h>
+#include <beep/ratelimit.h>
 
 #include <asm/firmware.h>
 #include <asm/page.h>
@@ -355,7 +355,7 @@ good_area:
 #endif /* CONFIG_6xx */
 #if defined(CONFIG_8xx)
 	/* 8xx sometimes need to load a invalid/non-present TLBs.
-	 * These must be invalidated separately as linux mm don't.
+	 * These must be invalidated separately as beep mm don't.
 	 */
 	if (error_code & 0x40000000) /* no translation? */
 		_tlbil_va(address, 0, 0, 0);

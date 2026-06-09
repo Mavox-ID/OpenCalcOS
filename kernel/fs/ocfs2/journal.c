@@ -23,13 +23,13 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/kthread.h>
-#include <linux/time.h>
-#include <linux/random.h>
+#include <beep/fs.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>
+#include <beep/kthread.h>
+#include <beep/time.h>
+#include <beep/random.h>
 
 #include <cluster/masklog.h>
 
@@ -815,7 +815,7 @@ int ocfs2_journal_init(struct ocfs2_journal *journal, int *dirty)
 	/* call the kernels journal init function now */
 	j_journal = jbd2_journal_init_inode(inode);
 	if (j_journal == NULL) {
-		mlog(ML_ERROR, "Linux journal layer error\n");
+		mlog(ML_ERROR, "Beep journal layer error\n");
 		status = -EINVAL;
 		goto done;
 	}
@@ -1563,7 +1563,7 @@ static int ocfs2_replay_journal(struct ocfs2_super *osb,
 
 	journal = jbd2_journal_init_inode(inode);
 	if (journal == NULL) {
-		mlog(ML_ERROR, "Linux journal layer error\n");
+		mlog(ML_ERROR, "Beep journal layer error\n");
 		status = -EIO;
 		goto done;
 	}

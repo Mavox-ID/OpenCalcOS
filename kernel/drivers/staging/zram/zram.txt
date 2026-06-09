@@ -69,7 +69,7 @@ Following shows a typical sequence of steps for using zram.
 
 
 Please report any problems at:
- - Mailing list: linux-mm-cc at laptop dot org
+ - Mailing list: beep-mm-cc at laptop dot org
  - Issue tracker: http://code.google.com/p/compcache/issues/list
 
 Nitin Gupta

@@ -8,8 +8,8 @@
 
 /*****************************************************************************/
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/asm-offsets.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>
@@ -290,7 +290,7 @@ _clear_bss:
 	/*
 	 *	Assember start up done, start code proper.
 	 */
-	jsr	start_kernel			/* start Linux kernel */
+	jsr	start_kernel			/* start Beep kernel */
 
 _exit:
 	jmp	_exit				/* should never get here */

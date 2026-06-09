@@ -8,7 +8,7 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/irq.h>
+#include <beep/irq.h>
 #include <mach/fpga.h>
 #include <mach/irq.h>
 

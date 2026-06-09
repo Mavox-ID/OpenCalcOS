@@ -12,8 +12,8 @@
  * The idea of this driver is based on cpint from Neale Ferguson
  */
 
-#include <linux/ioctl.h>
-#include <linux/mutex.h>
+#include <beep/ioctl.h>
+#include <beep/mutex.h>
 
 #define VMCP_GETCODE _IOR(0x10, 1, int)
 #define VMCP_SETBUF _IOW(0x10, 2, int)

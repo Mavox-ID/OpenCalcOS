@@ -12,7 +12,7 @@
 #ifndef _ASM_C6X_DMA_MAPPING_H
 #define _ASM_C6X_DMA_MAPPING_H
 
-#include <linux/dma-debug.h>
+#include <beep/dma-debug.h>
 #include <asm-generic/dma-coherent.h>
 
 #define dma_supported(d, m)	1

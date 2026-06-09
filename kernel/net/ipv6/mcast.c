@@ -1,11 +1,11 @@
 /*
  *	Multicast support for IPv6
- *	Linux INET6 implementation
+ *	Beep INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *
- *	Based on linux/ipv4/igmp.c and linux/ipv4/ip_sockglue.c
+ *	Based on beep/ipv4/igmp.c and beep/ipv4/ip_sockglue.c
  *
  *	This program is free software; you can redistribute it and/or
  *      modify it under the terms of the GNU General Public License
@@ -26,28 +26,28 @@
  *		- MLDv2 support
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/jiffies.h>
-#include <linux/times.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/route.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/jiffies.h>
+#include <beep/times.h>
+#include <beep/net.h>
+#include <beep/in.h>
+#include <beep/in6.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/route.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
 #include <net/mld.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv6.h>
 
 #include <net/net_namespace.h>
 #include <net/sock.h>

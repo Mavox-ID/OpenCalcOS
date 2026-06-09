@@ -7,9 +7,9 @@
  */
 
 #include <asm/iommu.h>
-#include <linux/irq.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
+#include <beep/irq.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
 
 void do_after_copyback(void)
 {

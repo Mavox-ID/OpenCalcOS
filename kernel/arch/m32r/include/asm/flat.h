@@ -1,7 +1,7 @@
 /*
  * include/asm-m32r/flat.h
  *
- * uClinux flat-format executables
+ * uCbeep flat-format executables
  *
  * Copyright (C) 2004  Kazuhiro Inaoka
  *

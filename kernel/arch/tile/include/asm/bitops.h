@@ -16,10 +16,10 @@
 #ifndef _ASM_TILE_BITOPS_H
 #define _ASM_TILE_BITOPS_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _BEEP_BITOPS_H
+#error only <beep/bitops.h> can be included directly
 #endif
 
 #ifdef __tilegx__

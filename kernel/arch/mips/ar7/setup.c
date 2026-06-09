@@ -15,10 +15,10 @@
  *  with this program; if not, write to the Free Software Foundation, Inc.,
  *  59 Temple Place - Suite 330, Boston MA 02111-1307, USA.
  */
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/pm.h>
-#include <linux/time.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/pm.h>
+#include <beep/time.h>
 
 #include <asm/reboot.h>
 #include <asm/mach-ar7/ar7.h>

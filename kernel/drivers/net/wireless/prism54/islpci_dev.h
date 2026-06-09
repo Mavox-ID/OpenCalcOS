@@ -22,12 +22,12 @@
 #ifndef _ISLPCI_DEV_H
 #define _ISLPCI_DEV_H
 
-#include <linux/irqreturn.h>
-#include <linux/netdevice.h>
-#include <linux/wireless.h>
+#include <beep/irqreturn.h>
+#include <beep/netdevice.h>
+#include <beep/wireless.h>
 #include <net/iw_handler.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
 
 #include "isl_38xx.h"
 #include "isl_oid.h"

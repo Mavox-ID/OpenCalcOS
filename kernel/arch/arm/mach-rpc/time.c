@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/common/time-acorn.c
+ *  beep/arch/arm/common/time-acorn.c
  *
  *  Copyright (c) 1996-2000 Russell King.
  *
@@ -13,11 +13,11 @@
  *   04-Dec-1997	RMK	Updated for new arch/arm/time.c
  *   13=Jun-2004	DS	Moved to arch/arm/common b/c shared w/CLPS7500
  */
-#include <linux/timex.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <beep/timex.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <asm/hardware/ioc.h>

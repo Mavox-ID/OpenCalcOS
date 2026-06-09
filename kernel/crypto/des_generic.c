@@ -13,12 +13,12 @@
  */
 
 #include <asm/byteorder.h>
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/crypto.h>
-#include <linux/types.h>
+#include <beep/bitops.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/crypto.h>
+#include <beep/types.h>
 
 #include <crypto/des.h>
 

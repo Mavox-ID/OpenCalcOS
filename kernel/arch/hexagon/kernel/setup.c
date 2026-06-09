@@ -1,7 +1,7 @@
 /*
  * Arch related setup for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -18,13 +18,13 @@
  * 02110-1301, USA.
  */
 
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/mmzone.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/console.h>
-#include <linux/of_fdt.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/mmzone.h>
+#include <beep/mm.h>
+#include <beep/seq_file.h>
+#include <beep/console.h>
+#include <beep/of_fdt.h>
 #include <asm/io.h>
 #include <asm/sections.h>
 #include <asm/setup.h>

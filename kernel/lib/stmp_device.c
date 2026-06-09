@@ -12,11 +12,11 @@
  * (at your option) any later version.
  */
 
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/stmp_device.h>
+#include <beep/io.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/stmp_device.h>
 
 #define STMP_MODULE_CLKGATE	(1 << 30)
 #define STMP_MODULE_SFTRST	(1 << 31)

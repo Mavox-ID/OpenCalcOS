@@ -34,7 +34,7 @@
 
 #ifndef C2_PROVIDER_H
 #define C2_PROVIDER_H
-#include <linux/inetdevice.h>
+#include <beep/inetdevice.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_pack.h>

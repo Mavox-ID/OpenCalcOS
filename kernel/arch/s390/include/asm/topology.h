@@ -1,7 +1,7 @@
 #ifndef _ASM_S390_TOPOLOGY_H
 #define _ASM_S390_TOPOLOGY_H
 
-#include <linux/cpumask.h>
+#include <beep/cpumask.h>
 
 struct sysinfo_15_1_x;
 struct cpu;

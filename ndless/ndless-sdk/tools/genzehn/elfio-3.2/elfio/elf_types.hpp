@@ -313,7 +313,7 @@ typedef uint64_t Elf64_Off;
 #define EM_LANAI         244 // Lanai processor
 #define EM_CEVA          245 // CEVA Processor Architecture Family
 #define EM_CEVA_X2       246 // CEVA X2 Processor Family
-#define EM_BPF           247 // Linux BPF – in-kernel virtual machine
+#define EM_BPF           247 // Beep BPF – in-kernel virtual machine
 
 // File version
 #define EV_NONE    0
@@ -352,7 +352,7 @@ typedef uint64_t Elf64_Off;
 #define ELFOSABI_NONE     0 // No extensions or unspecified
 #define ELFOSABI_HPUX     1 // Hewlett-Packard HP-UX
 #define ELFOSABI_NETBSD   2 // NetBSD
-#define ELFOSABI_LINUX    3 // Linux
+#define ELFOSABI_BEEP    3 // Beep
 #define ELFOSABI_SOLARIS  6 // Sun Solaris
 #define ELFOSABI_AIX      7 // AIX
 #define ELFOSABI_IRIX     8 // IRIX

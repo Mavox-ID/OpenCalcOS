@@ -15,7 +15,7 @@
  *     +1 (416) 297-6433 Facsimile
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include "includes.h"		/* This must be first */
 #include "hardware.h"
 #include "message.h"
@@ -55,7 +55,7 @@ static char *commands[] = { "ISDN_CMD_IOCTL",
 			    NULL, };
 
 /*
- * Translates ISDN4Linux protocol codes to strings for debug messages
+ * Translates ISDN4Beep protocol codes to strings for debug messages
  */
 static char *l3protos[] = { "ISDN_PROTO_L3_TRANS" };
 static char *l2protos[] = { "ISDN_PROTO_L2_X75I",

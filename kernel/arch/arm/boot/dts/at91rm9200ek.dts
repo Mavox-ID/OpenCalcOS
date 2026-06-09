@@ -62,13 +62,13 @@
 		ds2 {
 			label = "green";
 			gpios = <&pioB 0 0x1>;
-			linux,default-trigger = "mmc0";
+			beep,default-trigger = "mmc0";
 		};
 
 		ds4 {
 			label = "yellow";
 			gpios = <&pioB 1 0x1>;
-			linux,default-trigger = "heartbeat";
+			beep,default-trigger = "heartbeat";
 		};
 
 		ds6 {

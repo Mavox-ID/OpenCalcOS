@@ -6,19 +6,19 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
-#include <linux/spi/mmc_spi.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
+#include <beep/spi/mmc_spi.h>
 #if defined(CONFIG_USB_ISP1362_HCD) || defined(CONFIG_USB_ISP1362_HCD_MODULE)
-#include <linux/usb/isp1362.h>
+#include <beep/usb/isp1362.h>
 #endif
-#include <linux/irq.h>
-#include <linux/i2c.h>
+#include <beep/irq.h>
+#include <beep/i2c.h>
 #include <asm/dma.h>
 #include <asm/bfin5xx_spi.h>
 #include <asm/reboot.h>
@@ -41,7 +41,7 @@ static struct platform_device rtc_device = {
  *  Driver needs to know address, irq and flag pin.
  */
 #if defined(CONFIG_SMC91X) || defined(CONFIG_SMC91X_MODULE)
-#include <linux/smc91x.h>
+#include <beep/smc91x.h>
 
 static struct smc91x_platdata smc91x_info = {
 	.flags = SMC91X_USE_16BIT | SMC91X_NOWAIT,
@@ -104,7 +104,7 @@ static struct mtd_partition stamp_partitions[] = {
 		.size   = 0x40000,
 		.offset = 0,
 	}, {
-		.name   = "linux kernel(nor)",
+		.name   = "beep kernel(nor)",
 		.size   = 0x180000,
 		.offset = MTDPART_OFS_APPEND,
 	}, {
@@ -155,7 +155,7 @@ static struct mtd_partition bfin_spi_flash_partitions[] = {
 		.offset = 0,
 		.mask_flags = MTD_CAP_ROM
 	}, {
-		.name = "linux kernel(spi)",
+		.name = "beep kernel(spi)",
 		.size = 0x180000,
 		.offset = MTDPART_OFS_APPEND,
 	}, {
@@ -442,8 +442,8 @@ static struct platform_device bfin_sport1_uart_device = {
 #endif
 
 #if defined(CONFIG_KEYBOARD_GPIO) || defined(CONFIG_KEYBOARD_GPIO_MODULE)
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
+#include <beep/input.h>
+#include <beep/gpio_keys.h>
 
 static struct gpio_keys_button bfin_gpio_keys_table[] = {
 	{BTN_0, GPIO_PF5, 0, "gpio-keys: BTN0"},
@@ -465,7 +465,7 @@ static struct platform_device bfin_device_gpiokeys = {
 #endif
 
 #if defined(CONFIG_I2C_GPIO) || defined(CONFIG_I2C_GPIO_MODULE)
-#include <linux/i2c-gpio.h>
+#include <beep/i2c-gpio.h>
 
 static struct i2c_gpio_platform_data i2c_gpio_data = {
 	.sda_pin		= GPIO_PF2,

@@ -6,16 +6,16 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/rtc.h>
+#include <beep/bcd.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/of.h>
+#include <beep/delay.h>
+#include <beep/gfp.h>
+#include <beep/module.h>
 
 
 #define RTC_TIME_REG_OFFS	0

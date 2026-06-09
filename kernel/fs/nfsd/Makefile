@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux nfs server
+# Makefile for the Beep nfs server
 #
 
 obj-$(CONFIG_NFSD)	+= nfsd.o

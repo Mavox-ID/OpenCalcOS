@@ -10,13 +10,13 @@
  *	the License, or (at your option) any later version.
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <beep/bitops.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/types.h>
 
 #include <dmxdev.h>
 #include <dvb_demux.h>

@@ -29,7 +29,7 @@
  * This module provides system/board/application information obtained
  * by the bootloader.
  */
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <asm/octeon/cvmx.h>
 #include <asm/octeon/cvmx-spinlock.h>
@@ -52,10 +52,10 @@ static struct {
  * Global variables that define the min/max of the memory region set
  * up for 32 bit userspace access.
  */
-uint64_t linux_mem32_min;
-uint64_t linux_mem32_max;
-uint64_t linux_mem32_wired;
-uint64_t linux_mem32_offset;
+uint64_t beep_mem32_min;
+uint64_t beep_mem32_max;
+uint64_t beep_mem32_wired;
+uint64_t beep_mem32_offset;
 
 /**
  * This function returns the application information as obtained
@@ -74,7 +74,7 @@ EXPORT_SYMBOL(cvmx_sysinfo_get);
 
 /**
  * This function is used in non-simple executive environments (such as
- * Linux kernel, u-boot, etc.)  to configure the minimal fields that
+ * Beep kernel, u-boot, etc.)  to configure the minimal fields that
  * are required to use simple executive files directly.
  *
  * Locking (if required) must be handled outside of this

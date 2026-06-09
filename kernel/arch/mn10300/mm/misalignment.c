@@ -8,24 +8,24 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/timer.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
 #include <asm/processor.h>
 #include <asm/uaccess.h>
 #include <asm/io.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/smp.h>
 #include <asm/pgalloc.h>
 #include <asm/cpu-regs.h>

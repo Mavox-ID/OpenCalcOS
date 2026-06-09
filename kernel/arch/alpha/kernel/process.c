@@ -1,5 +1,5 @@
 /*
- *  linux/arch/alpha/kernel/process.c
+ *  beep/arch/alpha/kernel/process.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  */
@@ -8,27 +8,27 @@
  * This file handles the architecture-dependent parts of process handling.
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/time.h>
-#include <linux/major.h>
-#include <linux/stat.h>
-#include <linux/vt.h>
-#include <linux/mman.h>
-#include <linux/elfcore.h>
-#include <linux/reboot.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/slab.h>
-#include <linux/rcupdate.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/time.h>
+#include <beep/major.h>
+#include <beep/stat.h>
+#include <beep/vt.h>
+#include <beep/mman.h>
+#include <beep/elfcore.h>
+#include <beep/reboot.h>
+#include <beep/tty.h>
+#include <beep/console.h>
+#include <beep/slab.h>
+#include <beep/rcupdate.h>
 
 #include <asm/reg.h>
 #include <asm/uaccess.h>
@@ -101,7 +101,7 @@ common_shutdown_1(void *generic_ptr)
 	}
 #endif
 
-	if (how->mode == LINUX_REBOOT_CMD_RESTART) {
+	if (how->mode == BEEP_REBOOT_CMD_RESTART) {
 		if (!how->restart_cmd) {
 			flags |= 0x00020000UL; /* "cold bootstrap" */
 		} else {
@@ -145,7 +145,7 @@ common_shutdown_1(void *generic_ptr)
 	if (alpha_mv.kill_arch)
 		alpha_mv.kill_arch(how->mode);
 
-	if (! alpha_using_srm && how->mode != LINUX_REBOOT_CMD_RESTART) {
+	if (! alpha_using_srm && how->mode != BEEP_REBOOT_CMD_RESTART) {
 		/* Unfortunately, since MILO doesn't currently understand
 		   the hwrpb bits above, we can't reliably halt the 
 		   processor and keep it halted.  So just loop.  */
@@ -170,21 +170,21 @@ common_shutdown(int mode, char *restart_cmd)
 void
 machine_restart(char *restart_cmd)
 {
-	common_shutdown(LINUX_REBOOT_CMD_RESTART, restart_cmd);
+	common_shutdown(BEEP_REBOOT_CMD_RESTART, restart_cmd);
 }
 
 
 void
 machine_halt(void)
 {
-	common_shutdown(LINUX_REBOOT_CMD_HALT, NULL);
+	common_shutdown(BEEP_REBOOT_CMD_HALT, NULL);
 }
 
 
 void
 machine_power_off(void)
 {
-	common_shutdown(LINUX_REBOOT_CMD_POWER_OFF, NULL);
+	common_shutdown(BEEP_REBOOT_CMD_POWER_OFF, NULL);
 }
 
 

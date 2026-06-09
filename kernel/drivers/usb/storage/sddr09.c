@@ -40,9 +40,9 @@
  * EF: compute checksum (?)
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -111,7 +111,7 @@ static struct us_unusual_dev sddr09_unusual_dev_list[] = {
  * First some stuff that does not belong here:
  * data on SmartMedia and other cards, completely
  * unrelated to this driver.
- * Similar stuff occurs in <linux/mtd/nand_ids.h>.
+ * Similar stuff occurs in <beep/mtd/nand_ids.h>.
  */
 
 struct nand_flash_dev {

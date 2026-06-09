@@ -15,7 +15,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/anon_inodes.h>
+#include <beep/anon_inodes.h>
 
 #include <asm/uaccess.h>
 #include <asm/kvm_ppc.h>

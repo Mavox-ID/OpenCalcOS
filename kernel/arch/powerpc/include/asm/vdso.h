@@ -10,7 +10,7 @@
 /* Default map addresses for 32bit vDSO */
 #define VDSO32_MBASE	VDSO32_LBASE
 
-#define VDSO_VERSION_STRING	LINUX_2.6.15
+#define VDSO_VERSION_STRING	BEEP_2.6.15
 
 /* Define if 64 bits VDSO has procedure descriptors */
 #undef VDS64_HAS_DESCRIPTORS

@@ -131,34 +131,34 @@
 		home {
 			label = "Home";
 			gpios = <&gpio5 10 0>;
-			linux,code = <102>; /* KEY_HOME */
+			beep,code = <102>; /* KEY_HOME */
 			gpio-key,wakeup;
 		};
 
 		back {
 			label = "Back";
 			gpios = <&gpio5 11 0>;
-			linux,code = <158>; /* KEY_BACK */
+			beep,code = <158>; /* KEY_BACK */
 			gpio-key,wakeup;
 		};
 
 		program {
 			label = "Program";
 			gpios = <&gpio5 12 0>;
-			linux,code = <362>; /* KEY_PROGRAM */
+			beep,code = <362>; /* KEY_PROGRAM */
 			gpio-key,wakeup;
 		};
 
 		volume-up {
 			label = "Volume Up";
 			gpios = <&gpio5 13 0>;
-			linux,code = <115>; /* KEY_VOLUMEUP */
+			beep,code = <115>; /* KEY_VOLUMEUP */
 		};
 
 		volume-down {
 			label = "Volume Down";
 			gpios = <&gpio4 0 0>;
-			linux,code = <114>; /* KEY_VOLUMEDOWN */
+			beep,code = <114>; /* KEY_VOLUMEDOWN */
 		};
 	};
 };

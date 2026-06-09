@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-exynos4/setup-fimd0.c
+/* beep/arch/arm/mach-exynos4/setup-fimd0.c
  *
  * Copyright (c) 2009-2011 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com
@@ -10,8 +10,8 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/fb.h>
-#include <linux/gpio.h>
+#include <beep/fb.h>
+#include <beep/gpio.h>
 
 #include <video/samsung_fimd.h>
 #include <plat/gpio-cfg.h>

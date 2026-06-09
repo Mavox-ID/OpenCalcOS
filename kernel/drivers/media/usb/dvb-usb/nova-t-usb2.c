@@ -1,4 +1,4 @@
-/* DVB USB framework compliant Linux driver for the Hauppauge WinTV-NOVA-T usb2
+/* DVB USB framework compliant Beep driver for the Hauppauge WinTV-NOVA-T usb2
  * DVB-T receiver.
  *
  * Copyright (C) 2004-5 Patrick Boettcher (patrick.boettcher@desy.de)

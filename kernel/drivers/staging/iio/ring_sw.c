@@ -7,15 +7,15 @@
  * the Free Software Foundation.
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
-#include <linux/poll.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/workqueue.h>
+#include <beep/sched.h>
+#include <beep/poll.h>
 #include "ring_sw.h"
-#include <linux/iio/trigger.h>
+#include <beep/iio/trigger.h>
 
 /**
  * struct iio_sw_ring_buffer - software ring buffer

@@ -1,7 +1,7 @@
 #ifndef _SCSI_GENERIC_H
 #define _SCSI_GENERIC_H
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 /*
    History:
@@ -18,7 +18,7 @@ Version 2 and 3 extensions to driver:
 
     For a full changelog see http://www.torque.net/sg
 
-Map of SG verions to the Linux kernels in which they appear:
+Map of SG verions to the Beep kernels in which they appear:
        ----------        ----------------------------------
        original          all kernels < 2.2.6
        2.1.40            2.2.20
@@ -76,7 +76,7 @@ extern int sg_big_buff; /* for sysctl */
 
 /* New interface introduced in the 3.x SG drivers follows */
 
-typedef struct sg_iovec /* same structure as used by readv() Linux system */
+typedef struct sg_iovec /* same structure as used by readv() Beep system */
 {                       /* call. It defines one scatter-gather element. */
     void __user *iov_base;      /* Starting address  */
     size_t iov_len;             /* Length in bytes  */

@@ -1,5 +1,5 @@
 /*
- * linux/fs/reiserfs/xattr.c
+ * beep/fs/reiserfs/xattr.c
  *
  * Copyright (c) 2002 by Jeff Mahoney, <jeffm@suse.com>
  *
@@ -34,22 +34,22 @@
  */
 
 #include "reiserfs.h"
-#include <linux/capability.h>
-#include <linux/dcache.h>
-#include <linux/namei.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/pagemap.h>
-#include <linux/xattr.h>
+#include <beep/capability.h>
+#include <beep/dcache.h>
+#include <beep/namei.h>
+#include <beep/errno.h>
+#include <beep/gfp.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/pagemap.h>
+#include <beep/xattr.h>
 #include "xattr.h"
 #include "acl.h"
 #include <asm/uaccess.h>
 #include <net/checksum.h>
-#include <linux/stat.h>
-#include <linux/quotaops.h>
-#include <linux/security.h>
+#include <beep/stat.h>
+#include <beep/quotaops.h>
+#include <beep/security.h>
 
 #define PRIVROOT_NAME ".reiserfs_priv"
 #define XAROOT_NAME   "xattrs"

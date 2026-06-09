@@ -9,19 +9,19 @@
 #ifndef _FS_FUSE_I_H
 #define _FS_FUSE_I_H
 
-#include <linux/fuse.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/wait.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/backing-dev.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/rbtree.h>
-#include <linux/poll.h>
-#include <linux/workqueue.h>
+#include <beep/fuse.h>
+#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/wait.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/mm.h>
+#include <beep/backing-dev.h>
+#include <beep/mutex.h>
+#include <beep/rwsem.h>
+#include <beep/rbtree.h>
+#include <beep/poll.h>
+#include <beep/workqueue.h>
 
 /** Max number of pages that can be used in a single read request */
 #define FUSE_MAX_PAGES_PER_REQ 32

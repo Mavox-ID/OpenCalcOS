@@ -8,10 +8,10 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/threads.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/threads.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>
 #include <asm/processor.h>

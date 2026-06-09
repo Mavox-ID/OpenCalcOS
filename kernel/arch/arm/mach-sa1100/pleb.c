@@ -1,16 +1,16 @@
 /*
- * linux/arch/arm/mach-sa1100/pleb.c
+ * beep/arch/arm/mach-sa1100/pleb.c
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/ioport.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/mtd/partitions.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/tty.h>
+#include <beep/ioport.h>
+#include <beep/platform_data/sa11x0-serial.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/mtd/partitions.h>
 
 #include <mach/hardware.h>
 #include <asm/setup.h>

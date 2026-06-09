@@ -9,11 +9,11 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/ctype.h>
-#include <linux/sched.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/ctype.h>
+#include <beep/sched.h>
 #include <keys/rxrpc-type.h>
 #include "internal.h"
 

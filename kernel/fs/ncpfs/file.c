@@ -8,14 +8,14 @@
 
 #include <asm/uaccess.h>
 
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/sched.h>
+#include <beep/time.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/fcntl.h>
+#include <beep/stat.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/sched.h>
 
 #include "ncp_fs.h"
 
@@ -149,7 +149,7 @@ ncp_file_read(struct file *file, char __user *buf, size_t count, loff_t *ppos)
 				pos, to_read, buf, &read_this_time, 
 				freepage, freelen);
 		if (error) {
-			error = -EIO;	/* NW errno -> Linux errno */
+			error = -EIO;	/* NW errno -> Beep errno */
 			break;
 		}
 		pos += read_this_time;

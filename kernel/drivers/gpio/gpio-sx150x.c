@@ -14,16 +14,16 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
  * 02110-1301, USA.
  */
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/i2c/sx150x.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/i2c/sx150x.h>
 
 #define NO_UPDATE_PENDING	-1
 

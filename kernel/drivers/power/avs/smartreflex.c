@@ -17,15 +17,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/power/smartreflex.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/debugfs.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
+#include <beep/power/smartreflex.h>
 
 #define SMARTREFLEX_NAME_LEN	16
 #define NVALUE_NAME_LEN		40

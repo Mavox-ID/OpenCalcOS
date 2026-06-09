@@ -33,8 +33,8 @@
 
 #ifndef _C2_MQ_H_
 #define _C2_MQ_H_
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
+#include <beep/kernel.h>
+#include <beep/dma-mapping.h>
 #include "c2_wr.h"
 
 enum c2_shared_regs {

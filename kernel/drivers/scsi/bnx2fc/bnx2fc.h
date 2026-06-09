@@ -1,6 +1,6 @@
 #ifndef _BNX2FC_H_
 #define _BNX2FC_H_
-/* bnx2fc.h: Broadcom NetXtreme II Linux FCoE offload driver.
+/* bnx2fc.h: Broadcom NetXtreme II Beep FCoE offload driver.
  *
  * Copyright (c) 2008 - 2011 Broadcom Corporation
  *
@@ -13,33 +13,33 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/kthread.h>
-#include <linux/crc32.h>
-#include <linux/cpu.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
-#include <linux/log2.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/if_ether.h>
+#include <beep/if_vlan.h>
+#include <beep/kthread.h>
+#include <beep/crc32.h>
+#include <beep/cpu.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/errno.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
+#include <beep/workqueue.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/bitops.h>
+#include <beep/log2.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/io.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>

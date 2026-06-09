@@ -9,7 +9,7 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/hw_irq.h>
 
 #define MAX_HWEVENTS		8
@@ -65,7 +65,7 @@ extern unsigned long perf_misc_flags(struct pt_regs *regs);
 extern unsigned long perf_instruction_pointer(struct pt_regs *regs);
 
 /*
- * Only override the default definitions in include/linux/perf_event.h
+ * Only override the default definitions in include/beep/perf_event.h
  * if we have hardware PMU support.
  */
 #ifdef CONFIG_PPC_PERF_CTRS

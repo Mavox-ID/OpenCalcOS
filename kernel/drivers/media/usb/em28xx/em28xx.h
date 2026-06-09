@@ -25,10 +25,10 @@
 #ifndef _EM28XX_H
 #define _EM28XX_H
 
-#include <linux/workqueue.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/videodev2.h>
+#include <beep/workqueue.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
+#include <beep/videodev2.h>
 
 #include <media/videobuf-vmalloc.h>
 #include <media/v4l2-device.h>
@@ -530,9 +530,9 @@ struct em28xx {
 	/* i2c i/o */
 	struct i2c_adapter i2c_adap;
 	struct i2c_client i2c_client;
-	/* video for linux */
+	/* video for beep */
 	int users;		/* user count for exclusive use */
-	struct video_device *vdev;	/* video for linux device struct */
+	struct video_device *vdev;	/* video for beep device struct */
 	v4l2_std_id norm;	/* selected tv norm */
 	int ctl_freq;		/* selected frequency */
 	unsigned int ctl_input;	/* selected input */

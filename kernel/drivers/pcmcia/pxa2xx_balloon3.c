@@ -1,5 +1,5 @@
 /*
- * linux/drivers/pcmcia/pxa2xx_balloon3.c
+ * beep/drivers/pcmcia/pxa2xx_balloon3.c
  *
  * Balloon3 PCMCIA specific routines.
  *
@@ -15,13 +15,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/gpio.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
+#include <beep/io.h>
 
 #include <mach/balloon3.h>
 

@@ -19,11 +19,11 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/input.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/export.h>
+#include <beep/input.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/export.h>
 #include <sound/core.h>
 #include "hda_beep.h"
 #include "hda_local.h"

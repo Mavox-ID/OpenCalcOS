@@ -3,13 +3,13 @@
  * Copyright (C) 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/leds.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/leds.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 #include <asm/fhc.h>
 #include <asm/upa.h>

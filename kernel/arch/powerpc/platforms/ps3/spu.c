@@ -18,13 +18,13 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mmzone.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/mm.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/mmzone.h>
+#include <beep/export.h>
+#include <beep/io.h>
+#include <beep/mm.h>
 
 #include <asm/spu.h>
 #include <asm/spu_priv1.h>

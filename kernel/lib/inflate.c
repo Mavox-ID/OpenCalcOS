@@ -4,7 +4,7 @@
    version c10p1, 10 January 1993 */
 
 /* 
- * Adapted for booting Linux by Hannu Savolainen 1993
+ * Adapted for booting Beep by Hannu Savolainen 1993
  * based on gzip-1.0.3 
  *
  * Nicolas Pitre <nico@fluxnic.net>, 1999/04/14 :
@@ -102,9 +102,9 @@
       a repeat code (16, 17, or 18) to go across the boundary between
       the two sets of lengths.
  */
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #ifdef NO_INFLATE_MALLOC
-#include <linux/slab.h>
+#include <beep/slab.h>
 #endif
 
 #ifdef RCSID

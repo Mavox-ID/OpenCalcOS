@@ -20,11 +20,11 @@
  *
  */
 
-#include <linux/gpio.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
+#include <beep/gpio.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/ads7846.h>
 
-#include <linux/platform_data/spi-omap2-mcspi.h>
+#include <beep/platform_data/spi-omap2-mcspi.h>
 
 #include "common.h"
 #include "common-board-devices.h"

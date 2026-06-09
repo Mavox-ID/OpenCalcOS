@@ -18,10 +18,10 @@
  *  Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/vmalloc.h>
+#include <beep/io.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

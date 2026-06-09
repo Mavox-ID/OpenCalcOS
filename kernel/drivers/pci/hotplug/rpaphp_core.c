@@ -22,14 +22,14 @@
  * Send feedback to <lxie@us.ibm.com>
  *
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/pci.h>
+#include <beep/pci_hotplug.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/vmalloc.h>
 #include <asm/eeh.h>       /* for eeh_add_device() */
 #include <asm/rtas.h>		/* rtas_call */
 #include <asm/pci-bridge.h>	/* for pci_controller */

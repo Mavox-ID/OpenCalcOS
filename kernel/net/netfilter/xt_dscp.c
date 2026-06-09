@@ -7,14 +7,14 @@
  * published by the Free Software Foundation.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
 #include <net/dsfield.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_dscp.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_dscp.h>
 
 MODULE_AUTHOR("Harald Welte <laforge@netfilter.org>");
 MODULE_DESCRIPTION("Xtables: DSCP/TOS field match");

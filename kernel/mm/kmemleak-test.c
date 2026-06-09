@@ -18,16 +18,16 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/list.h>
-#include <linux/percpu.h>
-#include <linux/fdtable.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/list.h>
+#include <beep/percpu.h>
+#include <beep/fdtable.h>
 
-#include <linux/kmemleak.h>
+#include <beep/kmemleak.h>
 
 struct test_node {
 	long header[25];

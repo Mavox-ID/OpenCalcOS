@@ -16,12 +16,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/tsacct_kern.h>
-#include <linux/acct.h>
-#include <linux/jiffies.h>
-#include <linux/mm.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/tsacct_kern.h>
+#include <beep/acct.h>
+#include <beep/jiffies.h>
+#include <beep/mm.h>
 
 /*
  * fill in basic accounting fields

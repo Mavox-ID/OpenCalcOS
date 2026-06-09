@@ -1,9 +1,9 @@
-/* linux/arch/arm/plat-s3c64xx/pm.c
+/* beep/arch/arm/plat-s3c64xx/pm.c
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * S3C64XX CPU PM support.
  *
@@ -12,12 +12,12 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/serial_core.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/pm_domain.h>
+#include <beep/init.h>
+#include <beep/suspend.h>
+#include <beep/serial_core.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/pm_domain.h>
 
 #include <mach/map.h>
 #include <mach/irqs.h>

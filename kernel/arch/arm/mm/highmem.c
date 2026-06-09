@@ -10,9 +10,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/highmem.h>
+#include <beep/interrupt.h>
 #include <asm/fixmap.h>
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>

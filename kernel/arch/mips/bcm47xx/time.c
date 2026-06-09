@@ -23,8 +23,8 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/ssb/ssb.h>
+#include <beep/init.h>
+#include <beep/ssb/ssb.h>
 #include <asm/time.h>
 #include <bcm47xx.h>
 

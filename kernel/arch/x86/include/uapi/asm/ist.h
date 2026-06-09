@@ -17,7 +17,7 @@
 
 
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct ist_info {
 	__u32 signature;

@@ -14,11 +14,11 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/gpio.h>
 
 #define GPIO_GROUP_NUM 2
 #define GPIO_NUM_PER_GROUP 8

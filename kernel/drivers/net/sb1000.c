@@ -1,4 +1,4 @@
-/* sb1000.c: A General Instruments SB1000 driver for linux. */
+/* sb1000.c: A General Instruments SB1000 driver for beep. */
 /*
 	Written 1998 by Franco Venturi.
 
@@ -27,31 +27,31 @@
 	980608 Steven Hirsch <shirsch@adelphia.net>
 
 	Small changes to make it work with 2.1.x kernels. Hopefully,
-	nothing major will change before official release of Linux 2.2.
+	nothing major will change before official release of Beep 2.2.
 
 	Merged with 2.2 - Alan Cox
 */
 
 static char version[] = "sb1000.c:v1.1.2 6/01/98 (fventuri@mediaone.net)\n";
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/if_cablemodem.h> /* for SIOGCM/SIOSCM stuff */
-#include <linux/in.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>	/* for udelay() */
-#include <linux/etherdevice.h>
-#include <linux/pnp.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/if_cablemodem.h> /* for SIOGCM/SIOSCM stuff */
+#include <beep/in.h>
+#include <beep/ioport.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/skbuff.h>
+#include <beep/delay.h>	/* for udelay() */
+#include <beep/etherdevice.h>
+#include <beep/pnp.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/gfp.h>
 
 #include <asm/io.h>
 #include <asm/processor.h>
@@ -79,7 +79,7 @@ struct sb1000_private {
 	unsigned char rx_pkt_type[NPIDS];
 };
 
-/* prototypes for Linux interface */
+/* prototypes for Beep interface */
 extern int sb1000_probe(struct net_device *dev);
 static int sb1000_open(struct net_device *dev);
 static int sb1000_dev_ioctl (struct net_device *dev, struct ifreq *ifr, int cmd);
@@ -926,7 +926,7 @@ sb1000_error_dpc(struct net_device *dev)
 
 
 /*
- * Linux interface functions
+ * Beep interface functions
  */
 static int
 sb1000_open(struct net_device *dev)

@@ -13,16 +13,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/platform_device.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/module.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_bitbang.h>
+#include <beep/module.h>
 
 #include <asm/spi.h>
 #include <asm/io.h>

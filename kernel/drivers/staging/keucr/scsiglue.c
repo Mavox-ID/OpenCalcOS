@@ -1,8 +1,8 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

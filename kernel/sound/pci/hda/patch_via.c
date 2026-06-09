@@ -46,10 +46,10 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/asoundef.h>
 #include "hda_codec.h"

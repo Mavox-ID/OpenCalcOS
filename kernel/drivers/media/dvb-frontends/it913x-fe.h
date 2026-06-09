@@ -21,7 +21,7 @@
 #ifndef IT913X_FE_H
 #define IT913X_FE_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 #include "dvb_frontend.h"
 
 struct ite_config {

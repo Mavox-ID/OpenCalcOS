@@ -7,11 +7,11 @@
 /*
  * First, the common part.
  */
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/kdev_t.h>
+#include <beep/major.h>
 #include <sound/core.h>
 
 #ifdef CONFIG_SOUND_OSS_CORE
@@ -102,12 +102,12 @@ module_exit(cleanup_soundcore);
  *	locking at some point in 2.3.x.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sound.h>
-#include <linux/kmod.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/sound.h>
+#include <beep/kmod.h>
 
 #define SOUND_STEP 16
 

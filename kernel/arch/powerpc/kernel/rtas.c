@@ -12,19 +12,19 @@
  */
 
 #include <stdarg.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/capability.h>
-#include <linux/delay.h>
-#include <linux/smp.h>
-#include <linux/completion.h>
-#include <linux/cpumask.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
-#include <linux/reboot.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/capability.h>
+#include <beep/delay.h>
+#include <beep/smp.h>
+#include <beep/completion.h>
+#include <beep/cpumask.h>
+#include <beep/memblock.h>
+#include <beep/slab.h>
+#include <beep/reboot.h>
 
 #include <asm/prom.h>
 #include <asm/rtas.h>
@@ -38,7 +38,7 @@
 #include <asm/udbg.h>
 #include <asm/syscalls.h>
 #include <asm/smp.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/time.h>
 #include <asm/mmu.h>
 #include <asm/topology.h>
@@ -986,13 +986,13 @@ void __init rtas_initialize(void)
 	if (rtas.dev) {
 		const u32 *basep, *entryp, *sizep;
 
-		basep = of_get_property(rtas.dev, "linux,rtas-base", NULL);
+		basep = of_get_property(rtas.dev, "beep,rtas-base", NULL);
 		sizep = of_get_property(rtas.dev, "rtas-size", NULL);
 		if (basep != NULL && sizep != NULL) {
 			rtas.base = *basep;
 			rtas.size = *sizep;
 			entryp = of_get_property(rtas.dev,
-					"linux,rtas-entry", NULL);
+					"beep,rtas-entry", NULL);
 			if (entryp == NULL) /* Ugh */
 				rtas.entry = rtas.base;
 			else
@@ -1027,8 +1027,8 @@ int __init early_init_dt_scan_rtas(unsigned long node,
 	if (depth != 1 || strcmp(uname, "rtas") != 0)
 		return 0;
 
-	basep  = of_get_flat_dt_prop(node, "linux,rtas-base", NULL);
-	entryp = of_get_flat_dt_prop(node, "linux,rtas-entry", NULL);
+	basep  = of_get_flat_dt_prop(node, "beep,rtas-base", NULL);
+	entryp = of_get_flat_dt_prop(node, "beep,rtas-entry", NULL);
 	sizep  = of_get_flat_dt_prop(node, "rtas-size", NULL);
 
 	if (basep && entryp && sizep) {

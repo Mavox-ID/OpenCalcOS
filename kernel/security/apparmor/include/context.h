@@ -15,9 +15,9 @@
 #ifndef __AA_CONTEXT_H
 #define __AA_CONTEXT_H
 
-#include <linux/cred.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <beep/cred.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
 
 #include "policy.h"
 

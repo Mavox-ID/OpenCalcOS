@@ -1,7 +1,7 @@
 #include "dvb_filter.h"
 #include "av7110_ipack.h"
-#include <linux/string.h>	/* for memcpy() */
-#include <linux/vmalloc.h>
+#include <beep/string.h>	/* for memcpy() */
+#include <beep/vmalloc.h>
 
 
 void av7110_ipack_reset(struct ipack *p)

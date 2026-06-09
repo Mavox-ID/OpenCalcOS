@@ -1,54 +1,54 @@
 /*
- *  linux/kernel/sys.c
+ *  beep/kernel/sys.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/utsname.h>
-#include <linux/mman.h>
-#include <linux/reboot.h>
-#include <linux/prctl.h>
-#include <linux/highuid.h>
-#include <linux/fs.h>
-#include <linux/kmod.h>
-#include <linux/perf_event.h>
-#include <linux/resource.h>
-#include <linux/kernel.h>
-#include <linux/kexec.h>
-#include <linux/workqueue.h>
-#include <linux/capability.h>
-#include <linux/device.h>
-#include <linux/key.h>
-#include <linux/times.h>
-#include <linux/posix-timers.h>
-#include <linux/security.h>
-#include <linux/dcookies.h>
-#include <linux/suspend.h>
-#include <linux/tty.h>
-#include <linux/signal.h>
-#include <linux/cn_proc.h>
-#include <linux/getcpu.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/seccomp.h>
-#include <linux/cpu.h>
-#include <linux/personality.h>
-#include <linux/ptrace.h>
-#include <linux/fs_struct.h>
-#include <linux/file.h>
-#include <linux/mount.h>
-#include <linux/gfp.h>
-#include <linux/syscore_ops.h>
-#include <linux/version.h>
-#include <linux/ctype.h>
+#include <beep/export.h>
+#include <beep/mm.h>
+#include <beep/utsname.h>
+#include <beep/mman.h>
+#include <beep/reboot.h>
+#include <beep/prctl.h>
+#include <beep/highuid.h>
+#include <beep/fs.h>
+#include <beep/kmod.h>
+#include <beep/perf_event.h>
+#include <beep/resource.h>
+#include <beep/kernel.h>
+#include <beep/kexec.h>
+#include <beep/workqueue.h>
+#include <beep/capability.h>
+#include <beep/device.h>
+#include <beep/key.h>
+#include <beep/times.h>
+#include <beep/posix-timers.h>
+#include <beep/security.h>
+#include <beep/dcookies.h>
+#include <beep/suspend.h>
+#include <beep/tty.h>
+#include <beep/signal.h>
+#include <beep/cn_proc.h>
+#include <beep/getcpu.h>
+#include <beep/task_io_accounting_ops.h>
+#include <beep/seccomp.h>
+#include <beep/cpu.h>
+#include <beep/personality.h>
+#include <beep/ptrace.h>
+#include <beep/fs_struct.h>
+#include <beep/file.h>
+#include <beep/mount.h>
+#include <beep/gfp.h>
+#include <beep/syscore_ops.h>
+#include <beep/version.h>
+#include <beep/ctype.h>
 
-#include <linux/compat.h>
-#include <linux/syscalls.h>
-#include <linux/kprobes.h>
-#include <linux/user_namespace.h>
+#include <beep/compat.h>
+#include <beep/syscalls.h>
+#include <beep/kprobes.h>
+#include <beep/user_namespace.h>
 
-#include <linux/kmsg_dump.h>
+#include <beep/kmsg_dump.h>
 /* Move somewhere else to avoid recompiling? */
 #include <generated/utsrelease.h>
 
@@ -441,11 +441,11 @@ SYSCALL_DEFINE4(reboot, int, magic1, int, magic2, unsigned int, cmd,
 		return -EPERM;
 
 	/* For safety, we require "magic" arguments. */
-	if (magic1 != LINUX_REBOOT_MAGIC1 ||
-	    (magic2 != LINUX_REBOOT_MAGIC2 &&
-	                magic2 != LINUX_REBOOT_MAGIC2A &&
-			magic2 != LINUX_REBOOT_MAGIC2B &&
-	                magic2 != LINUX_REBOOT_MAGIC2C))
+	if (magic1 != BEEP_REBOOT_MAGIC1 ||
+	    (magic2 != BEEP_REBOOT_MAGIC2 &&
+	                magic2 != BEEP_REBOOT_MAGIC2A &&
+			magic2 != BEEP_REBOOT_MAGIC2B &&
+	                magic2 != BEEP_REBOOT_MAGIC2C))
 		return -EINVAL;
 
 	/*
@@ -460,34 +460,34 @@ SYSCALL_DEFINE4(reboot, int, magic1, int, magic2, unsigned int, cmd,
 	/* Instead of trying to make the power_off code look like
 	 * halt when pm_power_off is not set do it the easy way.
 	 */
-	if ((cmd == LINUX_REBOOT_CMD_POWER_OFF) && !pm_power_off)
-		cmd = LINUX_REBOOT_CMD_HALT;
+	if ((cmd == BEEP_REBOOT_CMD_POWER_OFF) && !pm_power_off)
+		cmd = BEEP_REBOOT_CMD_HALT;
 
 	mutex_lock(&reboot_mutex);
 	switch (cmd) {
-	case LINUX_REBOOT_CMD_RESTART:
+	case BEEP_REBOOT_CMD_RESTART:
 		kernel_restart(NULL);
 		break;
 
-	case LINUX_REBOOT_CMD_CAD_ON:
+	case BEEP_REBOOT_CMD_CAD_ON:
 		C_A_D = 1;
 		break;
 
-	case LINUX_REBOOT_CMD_CAD_OFF:
+	case BEEP_REBOOT_CMD_CAD_OFF:
 		C_A_D = 0;
 		break;
 
-	case LINUX_REBOOT_CMD_HALT:
+	case BEEP_REBOOT_CMD_HALT:
 		kernel_halt();
 		do_exit(0);
 		panic("cannot halt");
 
-	case LINUX_REBOOT_CMD_POWER_OFF:
+	case BEEP_REBOOT_CMD_POWER_OFF:
 		kernel_power_off();
 		do_exit(0);
 		break;
 
-	case LINUX_REBOOT_CMD_RESTART2:
+	case BEEP_REBOOT_CMD_RESTART2:
 		if (strncpy_from_user(&buffer[0], arg, sizeof(buffer) - 1) < 0) {
 			ret = -EFAULT;
 			break;
@@ -498,13 +498,13 @@ SYSCALL_DEFINE4(reboot, int, magic1, int, magic2, unsigned int, cmd,
 		break;
 
 #ifdef CONFIG_KEXEC
-	case LINUX_REBOOT_CMD_KEXEC:
+	case BEEP_REBOOT_CMD_KEXEC:
 		ret = kernel_kexec();
 		break;
 #endif
 
 #ifdef CONFIG_HIBERNATION
-	case LINUX_REBOOT_CMD_SW_SUSPEND:
+	case BEEP_REBOOT_CMD_SW_SUSPEND:
 		ret = hibernate();
 		break;
 #endif
@@ -1254,7 +1254,7 @@ DECLARE_RWSEM(uts_sem);
 
 #ifdef COMPAT_UTS_MACHINE
 #define override_architecture(name) \
-	(personality(current->personality) == PER_LINUX32 && \
+	(personality(current->personality) == PER_BEEP32 && \
 	 copy_to_user(name->machine, COMPAT_UTS_MACHINE, \
 		      sizeof(COMPAT_UTS_MACHINE)))
 #else
@@ -1262,7 +1262,7 @@ DECLARE_RWSEM(uts_sem);
 #endif
 
 /*
- * Work around broken programs that cannot handle "Linux 3.0".
+ * Work around broken programs that cannot handle "Beep 3.0".
  * Instead we map 3.x to 2.6.40+x, so e.g. 3.0 would be 2.6.40
  */
 static int override_release(char __user *release, size_t len)
@@ -1283,7 +1283,7 @@ static int override_release(char __user *release, size_t len)
 				break;
 			rest++;
 		}
-		v = ((LINUX_VERSION_CODE >> 8) & 0xff) + 40;
+		v = ((BEEP_VERSION_CODE >> 8) & 0xff) + 40;
 		copy = clamp_t(size_t, len, 1, sizeof(buf));
 		copy = scnprintf(buf, copy, "2.6.%u%s", v, rest);
 		ret = copy_to_user(release, buf, copy + 1);

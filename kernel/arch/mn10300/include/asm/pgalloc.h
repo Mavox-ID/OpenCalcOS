@@ -12,8 +12,8 @@
 #define _ASM_PGALLOC_H
 
 #include <asm/page.h>
-#include <linux/threads.h>
-#include <linux/mm.h>		/* for struct page */
+#include <beep/threads.h>
+#include <beep/mm.h>		/* for struct page */
 
 struct mm_struct;
 struct page;

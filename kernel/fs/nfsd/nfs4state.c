@@ -32,15 +32,15 @@
 *
 */
 
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/namei.h>
-#include <linux/swap.h>
-#include <linux/pagemap.h>
-#include <linux/ratelimit.h>
-#include <linux/sunrpc/svcauth_gss.h>
-#include <linux/sunrpc/clnt.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/namei.h>
+#include <beep/swap.h>
+#include <beep/pagemap.h>
+#include <beep/ratelimit.h>
+#include <beep/sunrpc/svcauth_gss.h>
+#include <beep/sunrpc/clnt.h>
 #include "xdr4.h"
 #include "vfs.h"
 #include "current_stateid.h"
@@ -3910,7 +3910,7 @@ static unsigned int lockowner_ino_hashval(struct inode *inode, u32 cl_id, struct
 }
 
 /*
- * TODO: Linux file offsets are _signed_ 64-bit quantities, which means that
+ * TODO: Beep file offsets are _signed_ 64-bit quantities, which means that
  * we can't properly handle lock requests that go beyond the (2^63 - 1)-th
  * byte, because of sign extension problems.  Since NFSv4 calls for 64-bit
  * locking, this prevents us from being completely protocol-compliant.  The

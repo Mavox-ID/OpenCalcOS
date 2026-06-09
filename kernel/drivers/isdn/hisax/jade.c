@@ -11,13 +11,13 @@
  */
 
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include "hisax.h"
 #include "hscx.h"
 #include "jade.h"
 #include "isdnl1.h"
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 
 
 int

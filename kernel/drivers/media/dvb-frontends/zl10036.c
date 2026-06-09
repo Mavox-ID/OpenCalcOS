@@ -27,10 +27,10 @@
  * A driver for zl10038 should be very similar.
  */
 
-#include <linux/module.h>
-#include <linux/dvb/frontend.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <beep/module.h>
+#include <beep/dvb/frontend.h>
+#include <beep/slab.h>
+#include <beep/types.h>
 
 #include "zl10036.h"
 

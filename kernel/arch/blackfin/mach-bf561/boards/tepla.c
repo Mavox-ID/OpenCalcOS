@@ -10,9 +10,9 @@
  * Licensed under the GPL-2
  */
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
 
 const char bfin_board_name[] = "Tepla-BF561";
 

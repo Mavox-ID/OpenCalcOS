@@ -7,13 +7,13 @@
  *
  * For licencing details see kernel-base/COPYING
  */
-#include <linux/debugobjects.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/hash.h>
+#include <beep/debugobjects.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/slab.h>
+#include <beep/hash.h>
 
 #define ODEBUG_HASH_BITS	14
 #define ODEBUG_HASH_SIZE	(1 << ODEBUG_HASH_BITS)

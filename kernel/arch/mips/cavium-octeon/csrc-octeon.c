@@ -6,10 +6,10 @@
  * Copyright (C) 2007 by Ralf Baechle
  * Copyright (C) 2009, 2012 Cavium, Inc.
  */
-#include <linux/clocksource.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/smp.h>
+#include <beep/clocksource.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/smp.h>
 
 #include <asm/cpu-info.h>
 #include <asm/time.h>

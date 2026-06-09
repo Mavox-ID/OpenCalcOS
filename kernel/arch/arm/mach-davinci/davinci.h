@@ -17,13 +17,13 @@
 #ifndef __DAVINCI_H
 #define __DAVINCI_H
 
-#include <linux/clk.h>
-#include <linux/videodev2.h>
-#include <linux/davinci_emac.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/platform_data/davinci_asp.h>
-#include <linux/platform_data/keyscan-davinci.h>
+#include <beep/clk.h>
+#include <beep/videodev2.h>
+#include <beep/davinci_emac.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/platform_data/davinci_asp.h>
+#include <beep/platform_data/keyscan-davinci.h>
 #include <mach/hardware.h>
 #include <mach/edma.h>
 

@@ -4,11 +4,11 @@
  * High speed xor_block operation for RAID4/5 utilizing the
  * UltraSparc Visual Instruction Set and Niagara store-init/twin-load.
  *
- * Copyright (C) 1997, 1999 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1997, 1999 Jakub Jelinek (jj@ultra.beep.cz)
  * Copyright (C) 2006 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/visasm.h>
 #include <asm/asi.h>
 #include <asm/dcu.h>

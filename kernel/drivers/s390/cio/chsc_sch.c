@@ -7,13 +7,13 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/miscdevice.h>
-#include <linux/kernel_stat.h>
+#include <beep/slab.h>
+#include <beep/compat.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
+#include <beep/miscdevice.h>
+#include <beep/kernel_stat.h>
 
 #include <asm/compat.h>
 #include <asm/cio.h>

@@ -1,5 +1,5 @@
-#include <linux/init.h>
-#include <linux/mm.h>
+#include <beep/init.h>
+#include <beep/mm.h>
 #include <asm/mtrr.h>
 #include <asm/msr.h>
 

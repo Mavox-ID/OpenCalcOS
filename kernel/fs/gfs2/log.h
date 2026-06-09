@@ -10,9 +10,9 @@
 #ifndef __LOG_DOT_H__
 #define __LOG_DOT_H__
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/writeback.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/writeback.h>
 #include "incore.h"
 
 /**

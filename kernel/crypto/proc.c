@@ -13,14 +13,14 @@
  *
  */
 
-#include <linux/atomic.h>
-#include <linux/init.h>
-#include <linux/crypto.h>
-#include <linux/module.h>	/* for module_name() */
-#include <linux/rwsem.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/sysctl.h>
+#include <beep/atomic.h>
+#include <beep/init.h>
+#include <beep/crypto.h>
+#include <beep/module.h>	/* for module_name() */
+#include <beep/rwsem.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/sysctl.h>
 #include "internal.h"
 
 #ifdef CONFIG_CRYPTO_FIPS

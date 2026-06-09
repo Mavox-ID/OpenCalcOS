@@ -14,10 +14,10 @@
 #ifndef _ASM_X86_NUMACHIP_NUMACHIP_CSR_H
 #define _ASM_X86_NUMACHIP_NUMACHIP_CSR_H
 
-#include <linux/numa.h>
-#include <linux/percpu.h>
-#include <linux/io.h>
-#include <linux/swab.h>
+#include <beep/numa.h>
+#include <beep/percpu.h>
+#include <beep/io.h>
+#include <beep/swab.h>
 #include <asm/types.h>
 #include <asm/processor.h>
 

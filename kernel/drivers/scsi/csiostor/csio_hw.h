@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio FCoE driver for Linux.
+ * This file is part of the Chelsio FCoE driver for Beep.
  *
  * Copyright (c) 2008-2012 Chelsio Communications, Inc. All rights reserved.
  *
@@ -35,16 +35,16 @@
 #ifndef __CSIO_HW_H__
 #define __CSIO_HW_H__
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/device.h>
-#include <linux/workqueue.h>
-#include <linux/compiler.h>
-#include <linux/cdev.h>
-#include <linux/list.h>
-#include <linux/mempool.h>
-#include <linux/io.h>
-#include <linux/spinlock_types.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/device.h>
+#include <beep/workqueue.h>
+#include <beep/compiler.h>
+#include <beep/cdev.h>
+#include <beep/list.h>
+#include <beep/mempool.h>
+#include <beep/io.h>
+#include <beep/spinlock_types.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_transport_fc.h>
 

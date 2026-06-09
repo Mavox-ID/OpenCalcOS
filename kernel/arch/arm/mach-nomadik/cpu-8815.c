@@ -16,17 +16,17 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/amba/bus.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_data/clk-nomadik.h>
-#include <linux/platform_data/pinctrl-nomadik.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/amba/bus.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/irq.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_data/clk-nomadik.h>
+#include <beep/platform_data/pinctrl-nomadik.h>
 
 #include <mach/hardware.h>
 #include <mach/irqs.h>

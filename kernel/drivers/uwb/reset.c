@@ -28,11 +28,11 @@
  *    execution; it should be parallelized as much as possible some
  *    day.
  */
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/export.h>
 
 #include "uwb-internal.h"
 

@@ -17,20 +17,20 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/memory.h>
-#include <linux/gpio.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
+#include <beep/memory.h>
+#include <beep/gpio.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/time.h>
 
-#include <linux/i2c.h>
-#include <linux/i2c/at24.h>
-#include <linux/mfd/mc13xxx.h>
+#include <beep/i2c.h>
+#include <beep/i2c/at24.h>
+#include <beep/mfd/mc13xxx.h>
 
 #include "common.h"
 #include "devices-imx35.h"

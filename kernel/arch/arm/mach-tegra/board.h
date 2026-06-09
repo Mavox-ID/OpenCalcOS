@@ -21,7 +21,7 @@
 #ifndef __MACH_TEGRA_BOARD_H
 #define __MACH_TEGRA_BOARD_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 void tegra_assert_system_reset(char mode, const char *cmd);
 

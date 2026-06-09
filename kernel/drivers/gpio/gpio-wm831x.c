@@ -12,18 +12,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/mfd/core.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/gpio.h>
+#include <beep/mfd/core.h>
+#include <beep/platform_device.h>
+#include <beep/seq_file.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/mfd/wm831x/gpio.h>
-#include <linux/mfd/wm831x/irq.h>
+#include <beep/mfd/wm831x/core.h>
+#include <beep/mfd/wm831x/pdata.h>
+#include <beep/mfd/wm831x/gpio.h>
+#include <beep/mfd/wm831x/irq.h>
 
 struct wm831x_gpio {
 	struct wm831x *wm831x;

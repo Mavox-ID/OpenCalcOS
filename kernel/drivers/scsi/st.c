@@ -1,5 +1,5 @@
 /*
-   SCSI Tape Driver for Linux version 1.1 and newer. See the accompanying
+   SCSI Tape Driver for Beep version 1.1 and newer. See the accompanying
    file Documentation/scsi/st.txt for more information.
 
    History:
@@ -19,27 +19,27 @@
 
 static const char *verstr = "20101219";
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/mtio.h>
-#include <linux/cdrom.h>
-#include <linux/ioctl.h>
-#include <linux/fcntl.h>
-#include <linux/spinlock.h>
-#include <linux/blkdev.h>
-#include <linux/moduleparam.h>
-#include <linux/cdev.h>
-#include <linux/idr.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/mtio.h>
+#include <beep/cdrom.h>
+#include <beep/ioctl.h>
+#include <beep/fcntl.h>
+#include <beep/spinlock.h>
+#include <beep/blkdev.h>
+#include <beep/moduleparam.h>
+#include <beep/cdev.h>
+#include <beep/idr.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
 
 #include <asm/uaccess.h>
 #include <asm/dma.h>

@@ -20,9 +20,9 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/irq.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/irq.h>
 
 #include <asm/machdep.h>
 #include <asm/reg.h>

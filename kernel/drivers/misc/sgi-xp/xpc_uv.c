@@ -13,15 +13,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/cpu.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 #include <asm/uv/uv_hub.h>
 #if defined CONFIG_X86_64
 #include <asm/uv/bios.h>

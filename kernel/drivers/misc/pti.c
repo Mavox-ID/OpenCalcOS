@@ -21,20 +21,20 @@
  * compact JTAG, standard.
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/console.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/pci.h>
-#include <linux/mutex.h>
-#include <linux/miscdevice.h>
-#include <linux/pti.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/console.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/pci.h>
+#include <beep/mutex.h>
+#include <beep/miscdevice.h>
+#include <beep/pti.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
 
 #define DRIVERNAME		"pti"
 #define PCINAME			"pciPTI"

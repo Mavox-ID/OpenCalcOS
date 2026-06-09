@@ -5,7 +5,7 @@
 #ifndef _IDE_CD_H
 #define _IDE_CD_H
 
-#include <linux/cdrom.h>
+#include <beep/cdrom.h>
 #include <asm/byteorder.h>
 
 #define IDECD_DEBUG_LOG		0

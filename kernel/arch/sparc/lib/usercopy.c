@@ -1,6 +1,6 @@
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bug.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/bug.h>
 
 void copy_from_user_overflow(void)
 {

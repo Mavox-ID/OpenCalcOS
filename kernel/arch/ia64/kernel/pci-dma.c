@@ -2,20 +2,20 @@
  * Dynamic DMA mapping support.
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/dmar.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/pci.h>
+#include <beep/module.h>
+#include <beep/dmar.h>
 #include <asm/iommu.h>
 #include <asm/machvec.h>
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 
 
 #ifdef CONFIG_INTEL_IOMMU
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 #include <asm/page.h>
 

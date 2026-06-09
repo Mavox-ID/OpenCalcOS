@@ -23,9 +23,9 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
 
 #include <asm/asmmacro.h>
 #include <asm/thread_info.h>

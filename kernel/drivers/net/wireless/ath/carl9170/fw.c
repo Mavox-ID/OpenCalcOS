@@ -20,10 +20,10 @@
  * http://www.gnu.org/licenses/.
  */
 
-#include <linux/kernel.h>
-#include <linux/firmware.h>
-#include <linux/crc32.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/firmware.h>
+#include <beep/crc32.h>
+#include <beep/module.h>
 #include "carl9170.h"
 #include "fwcmd.h"
 #include "version.h"

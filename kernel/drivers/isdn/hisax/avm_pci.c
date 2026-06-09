@@ -3,7 +3,7 @@
  * low level stuff for AVM Fritz!PCI and ISA PnP isdn cards
  *
  * Author       Karsten Keil
- * Copyright    by Karsten Keil      <keil@isdn4linux.de>
+ * Copyright    by Karsten Keil      <keil@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
@@ -12,14 +12,14 @@
  *
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include "hisax.h"
 #include "isac.h"
 #include "isdnl1.h"
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/isapnp.h>
-#include <linux/interrupt.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/isapnp.h>
+#include <beep/interrupt.h>
 
 static const char *avm_pci_rev = "$Revision: 1.29.2.4 $";
 

@@ -41,9 +41,9 @@
 #undef DEBUG_TX_ALLOC
 #undef DEBUG_TX_DESC
 
-#include <linux/uaccess.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
+#include <beep/uaccess.h>
+#include <beep/pci.h>
+#include <beep/vmalloc.h>
 #include "rtl_core.h"
 #include "r8192E_phy.h"
 #include "r8192E_phyreg.h"
@@ -3090,7 +3090,7 @@ bool NicIFDisableNIC(struct net_device *dev)
 
 static int __init rtl8192_pci_module_init(void)
 {
-	printk(KERN_INFO "\nLinux kernel driver for RTL8192E WLAN cards\n");
+	printk(KERN_INFO "\nBeep kernel driver for RTL8192E WLAN cards\n");
 	printk(KERN_INFO "Copyright (c) 2007-2008, Realsil Wlan Driver\n");
 
 	rtl8192_proc_module_init();
@@ -3128,7 +3128,7 @@ void check_rfctrl_gpio_timer(unsigned long data)
 module_init(rtl8192_pci_module_init);
 module_exit(rtl8192_pci_module_exit);
 
-MODULE_DESCRIPTION("Linux driver for Realtek RTL819x WiFi cards");
+MODULE_DESCRIPTION("Beep driver for Realtek RTL819x WiFi cards");
 MODULE_AUTHOR(DRV_COPYRIGHT " " DRV_AUTHOR);
 MODULE_VERSION(DRV_VERSION);
 MODULE_LICENSE("GPL");

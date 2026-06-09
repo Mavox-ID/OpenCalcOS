@@ -22,10 +22,10 @@
  *
  ********************************************************************/
 
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/module.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/socket.h>
+#include <beep/module.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/irias_object.h>

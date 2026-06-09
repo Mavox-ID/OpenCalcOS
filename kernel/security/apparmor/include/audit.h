@@ -15,11 +15,11 @@
 #ifndef __AA_AUDIT_H
 #define __AA_AUDIT_H
 
-#include <linux/audit.h>
-#include <linux/fs.h>
-#include <linux/lsm_audit.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/audit.h>
+#include <beep/fs.h>
+#include <beep/lsm_audit.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 #include "file.h"
 

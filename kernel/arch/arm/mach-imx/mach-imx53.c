@@ -10,13 +10,13 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/time.h>
 

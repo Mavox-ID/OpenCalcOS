@@ -8,13 +8,13 @@
  * Copyright (C) 1997, 1998, 1999, 2000, 06 by Ralf Baechle
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/smp.h>
-#include <linux/mmzone.h>
-#include <linux/nodemask.h>
-#include <linux/pm.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/smp.h>
+#include <beep/mmzone.h>
+#include <beep/nodemask.h>
+#include <beep/pm.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

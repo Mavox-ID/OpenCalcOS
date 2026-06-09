@@ -4,15 +4,15 @@
  * Copyright 2007 IBM Corp
  */
 
-#include <linux/device_cgroup.h>
-#include <linux/cgroup.h>
-#include <linux/ctype.h>
-#include <linux/list.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/rcupdate.h>
-#include <linux/mutex.h>
+#include <beep/device_cgroup.h>
+#include <beep/cgroup.h>
+#include <beep/ctype.h>
+#include <beep/list.h>
+#include <beep/uaccess.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/rcupdate.h>
+#include <beep/mutex.h>
 
 #define ACC_MKNOD 1
 #define ACC_READ  2

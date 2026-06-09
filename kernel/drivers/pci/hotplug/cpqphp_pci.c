@@ -26,14 +26,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/proc_fs.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/proc_fs.h>
+#include <beep/pci.h>
+#include <beep/pci_hotplug.h>
 #include "../pci.h"
 #include "cpqphp.h"
 #include "cpqphp_nvram.h"

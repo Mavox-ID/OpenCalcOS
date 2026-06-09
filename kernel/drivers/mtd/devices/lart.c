@@ -17,7 +17,7 @@
  *           - January 2000
  *
  *    [2] MTD internal API documentation
- *           - http://www.linux-mtd.infradead.org/ 
+ *           - http://www.beep-mtd.infradead.org/ 
  *
  * Limitations:
  *
@@ -34,14 +34,14 @@
 /* debugging */
 //#define LART_DEBUG
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
 
 #ifndef CONFIG_SA1100_LART
 #error This is for LART architecture only
@@ -71,7 +71,7 @@ static char module_name[] = "lart";
 
 /* general */
 #define BUSWIDTH			4				/* don't change this - a lot of the code _will_ break if you change this */
-#define FLASH_OFFSET		0xe8000000		/* see linux/arch/arm/mach-sa1100/lart.c */
+#define FLASH_OFFSET		0xe8000000		/* see beep/arch/arm/mach-sa1100/lart.c */
 
 /* blob */
 #define NUM_BLOB_BLOCKS		FLASH_NUMBLOCKS_16m_PARAM

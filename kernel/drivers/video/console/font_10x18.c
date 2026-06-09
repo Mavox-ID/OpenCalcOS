@@ -3,7 +3,7 @@
  * by Jurriaan Kalkman 06-2005  *
  ********************************/
 
-#include <linux/font.h>
+#include <beep/font.h>
 
 #define FONTDATAMAX 9216
 

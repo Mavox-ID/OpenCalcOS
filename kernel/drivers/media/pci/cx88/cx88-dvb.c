@@ -21,13 +21,13 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/kthread.h>
-#include <linux/file.h>
-#include <linux/suspend.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/fs.h>
+#include <beep/kthread.h>
+#include <beep/file.h>
+#include <beep/suspend.h>
 
 #include "cx88.h"
 #include "dvb-pll.h"

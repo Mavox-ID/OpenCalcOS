@@ -18,18 +18,18 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/parport.h>
-#include <linux/sysfs.h>
-#include <linux/workqueue.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/parport.h>
+#include <beep/sysfs.h>
+#include <beep/workqueue.h>
 
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_bitbang.h>
 
 
 /*

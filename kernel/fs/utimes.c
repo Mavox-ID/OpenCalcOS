@@ -1,13 +1,13 @@
-#include <linux/compiler.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/linkage.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/sched.h>
-#include <linux/stat.h>
-#include <linux/utime.h>
-#include <linux/syscalls.h>
+#include <beep/compiler.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/linkage.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/sched.h>
+#include <beep/stat.h>
+#include <beep/utime.h>
+#include <beep/syscalls.h>
 #include <asm/uaccess.h>
 #include <asm/unistd.h>
 

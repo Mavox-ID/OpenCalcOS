@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-sa1100/assabet.c
+ * beep/arch/arm/mach-sa1100/assabet.c
  *
  * Author: Nicolas Pitre
  *
@@ -9,20 +9,20 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/serial_core.h>
-#include <linux/mfd/ucb1x00.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/platform_data/sa11x0-serial.h>
+#include <beep/serial_core.h>
+#include <beep/mfd/ucb1x00.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/delay.h>
+#include <beep/mm.h>
+#include <beep/leds.h>
+#include <beep/slab.h>
 
 #include <video/sa1100fb.h>
 
@@ -39,7 +39,7 @@
 #include <asm/mach/irda.h>
 #include <asm/mach/map.h>
 #include <mach/assabet.h>
-#include <linux/platform_data/mfd-mcp-sa11x0.h>
+#include <beep/platform_data/mfd-mcp-sa11x0.h>
 #include <mach/irqs.h>
 
 #include "generic.h"

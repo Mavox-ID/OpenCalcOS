@@ -64,9 +64,9 @@
 #ifndef __i1480_DFU_H__
 #define __i1480_DFU_H__
 
-#include <linux/uwb/spec.h>
-#include <linux/types.h>
-#include <linux/completion.h>
+#include <beep/uwb/spec.h>
+#include <beep/types.h>
+#include <beep/completion.h>
 
 #define i1480_FW_UPLOAD_MODE_MASK (cpu_to_le32(0x00000018))
 

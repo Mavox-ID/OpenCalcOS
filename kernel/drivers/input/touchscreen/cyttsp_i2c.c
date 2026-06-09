@@ -29,8 +29,8 @@
 
 #include "cyttsp_core.h"
 
-#include <linux/i2c.h>
-#include <linux/input.h>
+#include <beep/i2c.h>
+#include <beep/input.h>
 
 #define CY_I2C_DATA_SIZE	128
 

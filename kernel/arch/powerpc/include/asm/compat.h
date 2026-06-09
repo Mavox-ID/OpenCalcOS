@@ -4,8 +4,8 @@
 /*
  * Architecture specific compatibility types
  */
-#include <linux/types.h>
-#include <linux/sched.h>
+#include <beep/types.h>
+#include <beep/sched.h>
 
 #define COMPAT_USER_HZ		100
 #define COMPAT_UTS_MACHINE	"ppc\0\0"

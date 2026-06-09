@@ -21,21 +21,21 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 /* Includes */
-#include <linux/module.h>		/* For module specific items */
-#include <linux/moduleparam.h>		/* For new moduleparam's */
-#include <linux/types.h>		/* For standard types (like size_t) */
-#include <linux/errno.h>		/* For the -ENODEV/... values */
-#include <linux/kernel.h>		/* For printk/... */
-#include <linux/miscdevice.h>		/* For MODULE_ALIAS_MISCDEV
+#include <beep/module.h>		/* For module specific items */
+#include <beep/moduleparam.h>		/* For new moduleparam's */
+#include <beep/types.h>		/* For standard types (like size_t) */
+#include <beep/errno.h>		/* For the -ENODEV/... values */
+#include <beep/kernel.h>		/* For printk/... */
+#include <beep/miscdevice.h>		/* For MODULE_ALIAS_MISCDEV
 							(WATCHDOG_MINOR) */
-#include <linux/watchdog.h>		/* For the watchdog specific items */
-#include <linux/init.h>			/* For __init/__exit/... */
-#include <linux/fs.h>			/* For file operations */
-#include <linux/platform_device.h>	/* For platform_driver framework */
-#include <linux/ioport.h>		/* For io-port access */
-#include <linux/spinlock.h>		/* For spin_lock/spin_unlock/... */
-#include <linux/uaccess.h>		/* For copy_to_user/put_user/... */
-#include <linux/io.h>			/* For inb/outb/... */
+#include <beep/watchdog.h>		/* For the watchdog specific items */
+#include <beep/init.h>			/* For __init/__exit/... */
+#include <beep/fs.h>			/* For file operations */
+#include <beep/platform_device.h>	/* For platform_driver framework */
+#include <beep/ioport.h>		/* For io-port access */
+#include <beep/spinlock.h>		/* For spin_lock/spin_unlock/... */
+#include <beep/uaccess.h>		/* For copy_to_user/put_user/... */
+#include <beep/io.h>			/* For inb/outb/... */
 
 /* Module and version information */
 #define DRV_NAME	"sch311x_wdt"

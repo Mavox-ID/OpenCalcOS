@@ -4,18 +4,18 @@
  * for more details.
  *
  * Copyright (C) 2000  Ani Joshi <ajoshi@unixbox.com>
- * Copyright (C) 2000, 2001, 06  Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2000, 2001, 06  Ralf Baechle <ralf@beep-mips.org>
  * swiped from i386, and cloned for MIPS by Geert, polished by Ralf.
  */
 
-#include <linux/types.h>
-#include <linux/dma-mapping.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/string.h>
-#include <linux/gfp.h>
-#include <linux/highmem.h>
+#include <beep/types.h>
+#include <beep/dma-mapping.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/scatterlist.h>
+#include <beep/string.h>
+#include <beep/gfp.h>
+#include <beep/highmem.h>
 
 #include <asm/cache.h>
 #include <asm/io.h>
@@ -30,7 +30,7 @@ static inline struct page *dma_addr_to_page(struct device *dev,
 }
 
 /*
- * Warning on the terminology - Linux calls an uncached area coherent;
+ * Warning on the terminology - Beep calls an uncached area coherent;
  * MIPS terminology calls memory areas with hardware maintained coherency
  * coherent.
  */

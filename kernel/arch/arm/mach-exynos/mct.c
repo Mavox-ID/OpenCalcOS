@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-exynos4/mct.c
+/* beep/arch/arm/mach-exynos4/mct.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -10,16 +10,16 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/percpu.h>
-#include <linux/of.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/clockchips.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/percpu.h>
+#include <beep/of.h>
 
 #include <asm/arch_timer.h>
 #include <asm/hardware/gic.h>

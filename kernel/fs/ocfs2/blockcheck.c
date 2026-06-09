@@ -17,14 +17,14 @@
  * General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/crc32.h>
-#include <linux/buffer_head.h>
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/fs.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/crc32.h>
+#include <beep/buffer_head.h>
+#include <beep/bitops.h>
+#include <beep/debugfs.h>
+#include <beep/module.h>
+#include <beep/fs.h>
 #include <asm/byteorder.h>
 
 #include <cluster/masklog.h>

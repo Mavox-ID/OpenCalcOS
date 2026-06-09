@@ -30,7 +30,7 @@
 
 #define MODULE_NAME "cpia1"
 
-#include <linux/input.h>
+#include <beep/input.h>
 #include "gspca.h"
 
 MODULE_AUTHOR("Hans de Goede <hdegoede@redhat.com>");

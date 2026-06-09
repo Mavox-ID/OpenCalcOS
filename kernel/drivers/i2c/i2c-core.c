@@ -21,25 +21,25 @@
 /* With some changes from Kyösti Mälkki <kmalkki@cc.hut.fi>.
    All SMBus-related things are written by Frodo Looijaard <frodol@dds.nl>
    SMBus 2.0 support by Mark Studebaker <mdsxyz123@yahoo.com> and
-   Jean Delvare <khali@linux-fr.org>
+   Jean Delvare <khali@beep-fr.org>
    Mux support by Rodolfo Giometti <giometti@enneenne.com> and
    Michael Lawnick <michael.lawnick.ext@nsn.com> */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/idr.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/completion.h>
-#include <linux/hardirq.h>
-#include <linux/irqflags.h>
-#include <linux/rwsem.h>
-#include <linux/pm_runtime.h>
-#include <linux/acpi.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/idr.h>
+#include <beep/mutex.h>
+#include <beep/of_device.h>
+#include <beep/completion.h>
+#include <beep/hardirq.h>
+#include <beep/irqflags.h>
+#include <beep/rwsem.h>
+#include <beep/pm_runtime.h>
+#include <beep/acpi.h>
 #include <asm/uaccess.h>
 
 #include "i2c-core.h"

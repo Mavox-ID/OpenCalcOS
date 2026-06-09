@@ -11,13 +11,13 @@
  *  by the Free Software Foundation.
  */
 
-#include <linux/resource.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/interrupt.h>
+#include <beep/resource.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/bitops.h>
+#include <beep/pci.h>
+#include <beep/pci_regs.h>
+#include <beep/interrupt.h>
 
 #include <asm/mach-ath79/ar71xx_regs.h>
 #include <asm/mach-ath79/ath79.h>

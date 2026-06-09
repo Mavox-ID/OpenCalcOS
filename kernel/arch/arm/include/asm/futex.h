@@ -8,8 +8,8 @@
 #include <asm-generic/futex.h>
 #else
 
-#include <linux/futex.h>
-#include <linux/uaccess.h>
+#include <beep/futex.h>
+#include <beep/uaccess.h>
 #include <asm/errno.h>
 
 #define __futex_atomic_ex_table(err_reg)			\
@@ -71,7 +71,7 @@ futex_atomic_cmpxchg_inatomic(u32 *uval, u32 __user *uaddr,
 
 #else /* !SMP, we can work around lack of atomic ops by disabling preemption */
 
-#include <linux/preempt.h>
+#include <beep/preempt.h>
 #include <asm/domain.h>
 
 #define __futex_atomic_op(insn, ret, oldval, tmp, uaddr, oparg)	\

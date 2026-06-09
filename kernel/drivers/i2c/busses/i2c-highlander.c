@@ -11,15 +11,15 @@
  * Public License version 2. See the file "COPYING" in the main directory
  * of this archive for more details.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/completion.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/platform_device.h>
+#include <beep/completion.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
 #define SMCR		0x00
 #define SMCR_START	(1 << 0)

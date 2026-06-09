@@ -3,11 +3,11 @@
  *
  * Extracted from init.c
  */
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/cache.h>
+#include <beep/percpu.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/cache.h>
 
 #include <asm/tlb.h>
 #include <asm/tlbflush.h>

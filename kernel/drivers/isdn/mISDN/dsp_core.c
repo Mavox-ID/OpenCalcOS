@@ -1,7 +1,7 @@
 /*
  * Author       Andreas Eversberg (jolly@eversberg.eu)
  * Based on source code structure by
- *		Karsten Keil (keil@isdn4linux.de)
+ *		Karsten Keil (keil@isdn4beep.de)
  *
  *		This file is (c) under GNU PUBLIC LICENSE
  *		For changes and modifications please read
@@ -153,12 +153,12 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/mISDNif.h>
-#include <linux/mISDNdsp.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
+#include <beep/delay.h>
+#include <beep/gfp.h>
+#include <beep/mISDNif.h>
+#include <beep/mISDNdsp.h>
+#include <beep/module.h>
+#include <beep/vmalloc.h>
 #include "core.h"
 #include "dsp.h"
 

@@ -13,14 +13,14 @@
  */
 
 /* #define DEBUG */
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/namei.h>
-#include <linux/security.h>
-#include <linux/magic.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/pagemap.h>
+#include <beep/init.h>
+#include <beep/namei.h>
+#include <beep/security.h>
+#include <beep/magic.h>
 
 static struct vfsmount *mount;
 static int mount_count;

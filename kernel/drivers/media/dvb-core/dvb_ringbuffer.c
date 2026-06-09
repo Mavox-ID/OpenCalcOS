@@ -26,11 +26,11 @@
 
 
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/string.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/string.h>
 #include <asm/uaccess.h>
 
 #include "dvb_ringbuffer.h"

@@ -10,7 +10,7 @@
 #ifndef __INCLUDE_SOUND_ATMEL_ABDAC_H
 #define __INCLUDE_SOUND_ATMEL_ABDAC_H
 
-#include <linux/dw_dmac.h>
+#include <beep/dw_dmac.h>
 
 /**
  * struct atmel_abdac_pdata - board specific ABDAC configuration

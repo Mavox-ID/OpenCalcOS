@@ -6,13 +6,13 @@
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/init_task.h>
-#include <linux/mqueue.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/init_task.h>
+#include <beep/mqueue.h>
 
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>

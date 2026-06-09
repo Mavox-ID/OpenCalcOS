@@ -13,16 +13,16 @@
 
 #define JFFS2_XATTR_IS_CORRUPTED	1
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/crc32.h>
-#include <linux/jffs2.h>
-#include <linux/xattr.h>
-#include <linux/mtd/mtd.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/time.h>
+#include <beep/pagemap.h>
+#include <beep/highmem.h>
+#include <beep/crc32.h>
+#include <beep/jffs2.h>
+#include <beep/xattr.h>
+#include <beep/mtd/mtd.h>
 #include "nodelist.h"
 /* -------- xdatum related functions ----------------
  * xattr_datum_hashkey(xprefix, xname, xvalue, xsize)

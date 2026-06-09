@@ -34,7 +34,7 @@
 #ifndef MLX4_IB_USER_H
 #define MLX4_IB_USER_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * Increment this value if any changes that break userspace ABI

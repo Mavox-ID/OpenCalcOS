@@ -8,20 +8,20 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/nand.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/serial_reg.h>
-#include <linux/ata_platform.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/pci.h>
+#include <beep/irq.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/nand.h>
+#include <beep/mv643xx_eth.h>
+#include <beep/gpio_keys.h>
+#include <beep/input.h>
+#include <beep/i2c.h>
+#include <beep/serial_reg.h>
+#include <beep/ata_platform.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/pci.h>

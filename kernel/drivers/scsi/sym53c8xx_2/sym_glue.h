@@ -4,11 +4,11 @@
  *
  * Copyright (C) 1999-2001  Gerard Roudier <groudier@free.fr>
  *
- * This driver is derived from the Linux sym53c8xx driver.
+ * This driver is derived from the Beep sym53c8xx driver.
  * Copyright (C) 1998-2000  Gerard Roudier
  *
  * The sym53c8xx driver is derived from the ncr53c8xx driver that had been 
- * a port of the FreeBSD ncr driver to Linux-1.2.13.
+ * a port of the FreeBSD ncr driver to Beep-1.2.13.
  *
  * The original ncr driver has been written for 386bsd and FreeBSD by
  *         Wolfgang Stanglmeier        <wolf@cologne.de>
@@ -40,14 +40,14 @@
 #ifndef SYM_GLUE_H
 #define SYM_GLUE_H
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/types.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/types.h>
 
 #include <asm/io.h>
 #ifdef __sparc__
@@ -65,7 +65,7 @@
 #include "sym_misc.h"
 
 /*
- * Configuration addendum for Linux.
+ * Configuration addendum for Beep.
  */
 #define	SYM_CONF_TIMER_INTERVAL		((HZ+1)/2)
 
@@ -143,14 +143,14 @@
 
 /*
  *  These ones are used as return code from 
- *  error recovery handlers under Linux.
+ *  error recovery handlers under Beep.
  */
 #define SCSI_SUCCESS	SUCCESS
 #define SCSI_FAILED	FAILED
 
 /*
  *  System specific target data structure.
- *  None for now, under Linux.
+ *  None for now, under Beep.
  */
 /* #define SYM_HAVE_STCB */
 
@@ -165,7 +165,7 @@ struct sym_slcb {
 
 /*
  *  System specific command data structure.
- *  Not needed under Linux.
+ *  Not needed under Beep.
  */
 /* struct sym_sccb */
 

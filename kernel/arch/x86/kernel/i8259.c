@@ -1,20 +1,20 @@
-#include <linux/linkage.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/timex.h>
-#include <linux/random.h>
-#include <linux/init.h>
-#include <linux/kernel_stat.h>
-#include <linux/syscore_ops.h>
-#include <linux/bitops.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <beep/linkage.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/timex.h>
+#include <beep/random.h>
+#include <beep/init.h>
+#include <beep/kernel_stat.h>
+#include <beep/syscore_ops.h>
+#include <beep/bitops.h>
+#include <beep/acpi.h>
+#include <beep/io.h>
+#include <beep/delay.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/timer.h>
 #include <asm/hw_irq.h>
 #include <asm/pgtable.h>
@@ -212,7 +212,7 @@ spurious_8259A_irq:
 		atomic_inc(&irq_err_count);
 		/*
 		 * Theoretically we do not have to handle this IRQ,
-		 * but in Linux this does not cause problems and is
+		 * but in Beep this does not cause problems and is
 		 * simpler for us.
 		 */
 		goto handle_real_irq;

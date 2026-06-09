@@ -23,8 +23,8 @@
 #ifndef __SOUND_PCXHR_H
 #define __SOUND_PCXHR_H
 
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
+#include <beep/interrupt.h>
+#include <beep/mutex.h>
 #include <sound/pcm.h>
 
 #define PCXHR_DRIVER_VERSION		0x000906	/* 0.9.6 */

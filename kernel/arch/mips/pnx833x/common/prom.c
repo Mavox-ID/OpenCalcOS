@@ -22,9 +22,9 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/bootinfo.h>
-#include <linux/string.h>
+#include <beep/string.h>
 
 void __init prom_init_cmdline(void)
 {

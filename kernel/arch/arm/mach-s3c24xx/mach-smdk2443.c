@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2443/mach-smdk2443.c
+/* beep/arch/arm/mach-s3c2443/mach-smdk2443.c
  *
  * Copyright (c) 2007 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
@@ -13,15 +13,15 @@
  *
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/serial_core.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -37,7 +37,7 @@
 
 #include <mach/idle.h>
 #include <mach/fb.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 
 #include <plat/s3c2410.h>
 #include <plat/s3c2443.h>
@@ -138,7 +138,7 @@ static void __init smdk2443_machine_init(void)
 }
 
 MACHINE_START(SMDK2443, "SMDK2443")
-	/* Maintainer: Ben Dooks <ben-linux@fluff.org> */
+	/* Maintainer: Ben Dooks <ben-beep@fluff.org> */
 	.atag_offset	= 0x100,
 
 	.init_irq	= s3c24xx_init_irq,

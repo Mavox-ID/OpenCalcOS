@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/head-common.S
+ *  beep/arch/arm/kernel/head-common.S
  *
  *  Copyright (C) 1994-2002 Russell King
  *  Copyright (c) 2003 ARM Limited

@@ -5,11 +5,11 @@
 
 /* C.f. ETRAX100LX Designer's Reference chapter 19.9 */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
 #include <arch/svinto.h>
 #include <asm/io.h>

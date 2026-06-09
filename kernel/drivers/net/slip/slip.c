@@ -54,39 +54,39 @@
  *					from multislip BSDI driver which was
  *					written by Igor Chechik, RELCOM Corp.
  *					Only algorithms have been ported to
- *					Linux SLIP driver.
+ *					Beep SLIP driver.
  *	Vitaly E. Lavrov	:	Sane behaviour on tty hangup.
  *	Alexey Kuznetsov	:	Cleanup interfaces to tty & netdevice
  *					modules.
  */
 
 #define SL_CHECK_TRANSMIT
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
 
 #include <asm/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_arp.h>
-#include <linux/if_slip.h>
-#include <linux/compat.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/bitops.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/in.h>
+#include <beep/tty.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/rtnetlink.h>
+#include <beep/if_arp.h>
+#include <beep/if_slip.h>
+#include <beep/compat.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 #include "slip.h"
 #ifdef CONFIG_INET
-#include <linux/ip.h>
-#include <linux/tcp.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
 #include <net/slhc_vj.h>
 #endif
 

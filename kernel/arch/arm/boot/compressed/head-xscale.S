@@ -1,11 +1,11 @@
 /*
- * linux/arch/arm/boot/compressed/head-xscale.S
+ * beep/arch/arm/boot/compressed/head-xscale.S
  *
  * XScale specific tweaks.  This is merged into head.S by the linker.
  *
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 		.section        ".start", "ax"
 

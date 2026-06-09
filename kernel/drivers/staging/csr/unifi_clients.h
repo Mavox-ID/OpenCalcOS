@@ -14,10 +14,10 @@
  *
  *****************************************************************************
  */
-#ifndef __LINUX_UNIFI_CLIENTS_H__
-#define __LINUX_UNIFI_CLIENTS_H__ 1
+#ifndef __BEEP_UNIFI_CLIENTS_H__
+#define __BEEP_UNIFI_CLIENTS_H__ 1
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 #define MAX_UDI_CLIENTS 8
 
@@ -90,7 +90,7 @@ struct ul_client {
     struct semaphore udi_sem;
 
     /*
-     * Linux waitqueue to support blocking read and poll.
+     * Beep waitqueue to support blocking read and poll.
      * Logging clients should wait on udi_log. while
      * blocking clients should wait on wake_up_wq.
      */
@@ -126,4 +126,4 @@ struct ul_client {
 }; /* struct ul_client */
 
 
-#endif /* __LINUX_UNIFI_CLIENTS_H__ */
+#endif /* __BEEP_UNIFI_CLIENTS_H__ */

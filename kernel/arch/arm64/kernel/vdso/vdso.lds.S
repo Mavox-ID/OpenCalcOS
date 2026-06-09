@@ -19,7 +19,7 @@
  * Heavily based on the vDSO linker scripts for other archs.
  */
 
-#include <linux/const.h>
+#include <beep/const.h>
 #include <asm/page.h>
 #include <asm/vdso.h>
 
@@ -84,7 +84,7 @@ PHDRS
  */
 VERSION
 {
-	LINUX_2.6.39 {
+	BEEP_2.6.39 {
 	global:
 		__kernel_rt_sigreturn;
 		__kernel_gettimeofday;

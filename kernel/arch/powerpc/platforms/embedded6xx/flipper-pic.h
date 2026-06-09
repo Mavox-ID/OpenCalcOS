@@ -2,7 +2,7 @@
  * arch/powerpc/platforms/embedded6xx/flipper-pic.h
  *
  * Nintendo GameCube/Wii "Flipper" interrupt controller support.
- * Copyright (C) 2004-2009 The GameCube Linux Team
+ * Copyright (C) 2004-2009 The GameCube Beep Team
  * Copyright (C) 2007,2008,2009 Albert Herranz
  *
  * This program is free software; you can redistribute it and/or

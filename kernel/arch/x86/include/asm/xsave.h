@@ -1,7 +1,7 @@
 #ifndef __ASM_X86_XSAVE_H
 #define __ASM_X86_XSAVE_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/processor.h>
 
 #define XSTATE_CPUID		0x0000000d

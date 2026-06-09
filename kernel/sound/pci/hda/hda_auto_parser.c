@@ -9,9 +9,9 @@
  * (at your option) any later version.
  */
 
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/sort.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/sort.h>
 #include <sound/core.h>
 #include "hda_codec.h"
 #include "hda_local.h"

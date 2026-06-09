@@ -1,6 +1,6 @@
 /*
  *	Pentium 4/Xeon CPU on demand clock modulation/speed scaling
- *	(C) 2002 - 2003 Dominik Brodowski <linux@brodo.de>
+ *	(C) 2002 - 2003 Dominik Brodowski <beep@brodo.de>
  *	(C) 2002 Zwane Mwaikambo <zwane@commfireservices.com>
  *	(C) 2002 Arjan van de Ven <arjanv@redhat.com>
  *	(C) 2002 Tora T. Engstad
@@ -20,13 +20,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/cpufreq.h>
-#include <linux/cpumask.h>
-#include <linux/timex.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/cpufreq.h>
+#include <beep/cpumask.h>
+#include <beep/timex.h>
 
 #include <asm/processor.h>
 #include <asm/msr.h>

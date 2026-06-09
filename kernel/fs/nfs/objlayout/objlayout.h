@@ -41,8 +41,8 @@
 #ifndef _OBJLAYOUT_H
 #define _OBJLAYOUT_H
 
-#include <linux/nfs_fs.h>
-#include <linux/pnfs_osd_xdr.h>
+#include <beep/nfs_fs.h>
+#include <beep/pnfs_osd_xdr.h>
 #include "../pnfs.h"
 
 /*

@@ -214,23 +214,23 @@ static const char rcsid[] =
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/spinlock.h>
-#include <linux/if.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/net.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/spinlock.h>
+#include <beep/if.h>
+#include <beep/slab.h>
 #include <net/arp.h>
 
 #include <asm/io.h>

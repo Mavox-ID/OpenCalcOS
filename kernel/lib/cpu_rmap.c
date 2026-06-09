@@ -7,11 +7,11 @@
  * by the Free Software Foundation, incorporated herein by reference.
  */
 
-#include <linux/cpu_rmap.h>
+#include <beep/cpu_rmap.h>
 #ifdef CONFIG_GENERIC_HARDIRQS
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #endif
-#include <linux/export.h>
+#include <beep/export.h>
 
 /*
  * These functions maintain a mapping from CPUs to some ordered set of

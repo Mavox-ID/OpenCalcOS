@@ -5,7 +5,7 @@
  */
 
 #include "common.h"
-#include <linux/magic.h>
+#include <beep/magic.h>
 
 /**
  * tomoyo_encode2 - Encode binary string to ascii string.

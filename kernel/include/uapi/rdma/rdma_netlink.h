@@ -1,7 +1,7 @@
 #ifndef _UAPI_RDMA_NETLINK_H
 #define _UAPI_RDMA_NETLINK_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 enum {
 	RDMA_NL_RDMA_CM = 1

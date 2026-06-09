@@ -12,11 +12,11 @@
  */
 
 #define pr_fmt(fmt) "PKEY: "fmt
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
+#include <beep/module.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/seq_file.h>
 #include <keys/asymmetric-subtype.h>
 #include "public_key.h"
 

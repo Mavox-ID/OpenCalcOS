@@ -1,7 +1,7 @@
 #ifndef _ASM_X86_PAGE_H
 #define _ASM_X86_PAGE_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #ifdef __KERNEL__
 

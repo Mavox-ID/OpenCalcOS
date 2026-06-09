@@ -8,24 +8,24 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/cpu.h>
-#include <linux/initrd.h>
-#include <linux/console.h>
-#include <linux/debugfs.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/seq_file.h>
+#include <beep/cpu.h>
+#include <beep/initrd.h>
+#include <beep/console.h>
+#include <beep/debugfs.h>
 
 #include <asm/setup.h>
 #include <asm/sections.h>
 #include <asm/page.h>
-#include <linux/io.h>
-#include <linux/bug.h>
-#include <linux/param.h>
-#include <linux/pci.h>
-#include <linux/cache.h>
-#include <linux/of_platform.h>
-#include <linux/dma-mapping.h>
+#include <beep/io.h>
+#include <beep/bug.h>
+#include <beep/param.h>
+#include <beep/pci.h>
+#include <beep/cache.h>
+#include <beep/of_platform.h>
+#include <beep/dma-mapping.h>
 #include <asm/cacheflush.h>
 #include <asm/entry.h>
 #include <asm/cpuinfo.h>
@@ -81,7 +81,7 @@ void __init setup_arch(char **cmdline_p)
 #endif
 }
 
-#ifdef CONFIG_MTD_UCLINUX
+#ifdef CONFIG_MTD_UCBEEP
 /* Handle both romfs and cramfs types, without generating unnecessary
  code (ie no point checking for CRAMFS if it's not even enabled) */
 inline unsigned get_romfs_len(unsigned *addr)
@@ -97,7 +97,7 @@ inline unsigned get_romfs_len(unsigned *addr)
 #endif
 	return 0;
 }
-#endif	/* CONFIG_MTD_UCLINUX_EBSS */
+#endif	/* CONFIG_MTD_UCBEEP_EBSS */
 
 unsigned long kernel_tlb;
 
@@ -108,11 +108,11 @@ void __init machine_early_init(const char *cmdline, unsigned int ram,
 	unsigned long *src, *dst;
 	unsigned int offset = 0;
 
-	/* If CONFIG_MTD_UCLINUX is defined, assume ROMFS is at the
+	/* If CONFIG_MTD_UCBEEP is defined, assume ROMFS is at the
 	 * end of kernel. There are two position which we want to check.
 	 * The first is __init_end and the second __bss_start.
 	 */
-#ifdef CONFIG_MTD_UCLINUX
+#ifdef CONFIG_MTD_UCBEEP
 	int romfs_size;
 	unsigned int romfs_base;
 	char *old_klimit = klimit;
@@ -157,7 +157,7 @@ void __init machine_early_init(const char *cmdline, unsigned int ram,
 		printk("Compiled-in FDT at 0x%08x\n",
 					(unsigned int)_fdt_start);
 
-#ifdef CONFIG_MTD_UCLINUX
+#ifdef CONFIG_MTD_UCBEEP
 	printk("Found romfs @ 0x%08x (0x%08x)\n",
 			romfs_base, romfs_size);
 	printk("#### klimit %p ####\n", old_klimit);

@@ -28,7 +28,7 @@
  * Created on  2010/12/23,  6:38
  *****************************************************************************/
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #include "table.h"
 

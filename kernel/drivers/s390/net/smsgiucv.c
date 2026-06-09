@@ -20,11 +20,11 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/device.h>
+#include <beep/slab.h>
 #include <net/iucv/iucv.h>
 #include <asm/cpcmd.h>
 #include <asm/ebcdic.h>
@@ -39,7 +39,7 @@ struct smsg_callback {
 
 MODULE_AUTHOR
    ("(C) 2003 IBM Corporation by Martin Schwidefsky (schwidefsky@de.ibm.com)");
-MODULE_DESCRIPTION ("Linux for S/390 IUCV special message driver");
+MODULE_DESCRIPTION ("Beep for S/390 IUCV special message driver");
 
 static struct iucv_path *smsg_path;
 /* dummy device used as trigger for PM functions */

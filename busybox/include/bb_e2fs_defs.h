@@ -1,6 +1,6 @@
 /* vi: set sw=4 ts=4: */
 /*
- *  linux/include/linux/ext2_fs.h
+ *  beep/include/beep/ext2_fs.h
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -227,7 +227,7 @@ struct ext2_inode {
 	union {
 		struct {
 			uint32_t  l_i_reserved1;
-		} linux1;
+		} beep1;
 		struct {
 			uint32_t  h_i_translator;
 		} hurd1;
@@ -248,7 +248,7 @@ struct ext2_inode {
 			uint16_t	l_i_uid_high;	/* these 2 fields    */
 			uint16_t	l_i_gid_high;	/* were reserved2[0] */
 			uint32_t	l_i_reserved2;
-		} linux2;
+		} beep2;
 		struct {
 			uint8_t		h_i_frag;	/* Fragment number */
 			uint8_t		h_i_fsize;	/* Fragment size */
@@ -284,7 +284,7 @@ struct ext2_inode_large {
 	union {
 		struct {
 			uint32_t  l_i_reserved1;
-		} linux1;
+		} beep1;
 		struct {
 			uint32_t  h_i_translator;
 		} hurd1;
@@ -305,7 +305,7 @@ struct ext2_inode_large {
 			uint16_t	l_i_uid_high;	/* these 2 fields    */
 			uint16_t	l_i_gid_high;	/* were reserved2[0] */
 			uint32_t	l_i_reserved2;
-		} linux2;
+		} beep2;
 		struct {
 			uint8_t		h_i_frag;	/* Fragment number */
 			uint8_t		h_i_fsize;	/* Fragment size */
@@ -461,7 +461,7 @@ struct BUG_ext2_super_block {
 /*
  * Codes for operating systems
  */
-#define EXT2_OS_LINUX		0
+#define EXT2_OS_BEEP		0
 #define EXT2_OS_HURD		1
 #define EXT2_OS_MASIX		2
 #define EXT2_OS_FREEBSD		3

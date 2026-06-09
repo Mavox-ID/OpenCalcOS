@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/devs.c
+/* beep/arch/arm/plat-samsung/devs.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -10,27 +10,27 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/dma-mapping.h>
-#include <linux/fb.h>
-#include <linux/gfp.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/onenand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mmc/host.h>
-#include <linux/ioport.h>
-#include <linux/platform_data/s3c-hsudc.h>
-#include <linux/platform_data/s3c-hsotg.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/serial_core.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/dma-mapping.h>
+#include <beep/fb.h>
+#include <beep/gfp.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/onenand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mmc/host.h>
+#include <beep/ioport.h>
+#include <beep/platform_data/s3c-hsudc.h>
+#include <beep/platform_data/s3c-hsotg.h>
 
 #include <media/s5p_hdmi.h>
 
@@ -47,25 +47,25 @@
 #include <plat/cpu.h>
 #include <plat/devs.h>
 #include <plat/adc.h>
-#include <linux/platform_data/ata-samsung_cf.h>
-#include <linux/platform_data/usb-ehci-s5p.h>
+#include <beep/platform_data/ata-samsung_cf.h>
+#include <beep/platform_data/usb-ehci-s5p.h>
 #include <plat/fb.h>
 #include <plat/fb-s3c2410.h>
 #include <plat/hdmi.h>
-#include <linux/platform_data/hwmon-s3c.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/hwmon-s3c.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 #include <plat/keypad.h>
-#include <linux/platform_data/mmc-s3cmci.h>
-#include <linux/platform_data/mtd-nand-s3c2410.h>
+#include <beep/platform_data/mmc-s3cmci.h>
+#include <beep/platform_data/mtd-nand-s3c2410.h>
 #include <plat/sdhci.h>
-#include <linux/platform_data/touchscreen-s3c2410.h>
-#include <linux/platform_data/usb-s3c2410_udc.h>
-#include <linux/platform_data/usb-ohci-s3c2410.h>
+#include <beep/platform_data/touchscreen-s3c2410.h>
+#include <beep/platform_data/usb-s3c2410_udc.h>
+#include <beep/platform_data/usb-ohci-s3c2410.h>
 #include <plat/usb-phy.h>
 #include <plat/regs-iic.h>
 #include <plat/regs-serial.h>
 #include <plat/regs-spi.h>
-#include <linux/platform_data/spi-s3c64xx.h>
+#include <beep/platform_data/spi-s3c64xx.h>
 
 static u64 samsung_device_dma_mask = DMA_BIT_MASK(32);
 

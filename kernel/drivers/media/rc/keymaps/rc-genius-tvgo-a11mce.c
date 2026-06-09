@@ -11,7 +11,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 /*
  * Remote control for the Genius TVGO A11MCE

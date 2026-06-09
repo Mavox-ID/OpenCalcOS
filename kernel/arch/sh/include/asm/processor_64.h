@@ -14,7 +14,7 @@
  */
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/page.h>
 #include <asm/types.h>
 #include <cpu/registers.h>

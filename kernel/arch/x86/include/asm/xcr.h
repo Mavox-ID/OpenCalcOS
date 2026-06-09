@@ -1,8 +1,8 @@
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- beep-c -*- ------------------------------------------------------- *
  *
  *   Copyright 2008 rPath, Inc. - All Rights Reserved
  *
- *   This file is part of the Linux kernel, and is made available under
+ *   This file is part of the Beep kernel, and is made available under
  *   the terms of the GNU General Public License version 2 or (at your
  *   option) any later version; incorporated herein by reference.
  *
@@ -22,7 +22,7 @@
 #ifdef __KERNEL__
 # ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 static inline u64 xgetbv(u32 index)
 {

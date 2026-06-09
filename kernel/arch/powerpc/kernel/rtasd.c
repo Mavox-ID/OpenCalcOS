@@ -9,25 +9,25 @@
  * Communication to userspace based on kernel/printk.c
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/spinlock.h>
-#include <linux/cpu.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/poll.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
+#include <beep/vmalloc.h>
+#include <beep/spinlock.h>
+#include <beep/cpu.h>
+#include <beep/workqueue.h>
+#include <beep/slab.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>
 #include <asm/rtas.h>
 #include <asm/prom.h>
 #include <asm/nvram.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/machdep.h>
 
 

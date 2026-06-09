@@ -9,13 +9,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/platform_data/lp855x.h>
-#include <linux/pwm.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/backlight.h>
+#include <beep/err.h>
+#include <beep/platform_data/lp855x.h>
+#include <beep/pwm.h>
 
 /* Registers */
 #define BRIGHTNESS_CTRL		0x00

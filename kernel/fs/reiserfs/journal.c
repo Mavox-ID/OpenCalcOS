@@ -34,22 +34,22 @@
 **		        from within kupdate, it will ignore the immediate flag
 */
 
-#include <linux/time.h>
-#include <linux/semaphore.h>
-#include <linux/vmalloc.h>
+#include <beep/time.h>
+#include <beep/semaphore.h>
+#include <beep/vmalloc.h>
 #include "reiserfs.h"
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/buffer_head.h>
-#include <linux/workqueue.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/fcntl.h>
+#include <beep/stat.h>
+#include <beep/string.h>
+#include <beep/buffer_head.h>
+#include <beep/workqueue.h>
+#include <beep/writeback.h>
+#include <beep/blkdev.h>
+#include <beep/backing-dev.h>
+#include <beep/uaccess.h>
+#include <beep/slab.h>
 
 
 /* gets a struct reiserfs_journal_list * from a list head */

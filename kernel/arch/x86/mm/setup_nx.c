@@ -1,6 +1,6 @@
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/init.h>
+#include <beep/spinlock.h>
+#include <beep/errno.h>
+#include <beep/init.h>
 
 #include <asm/pgtable.h>
 #include <asm/proto.h>

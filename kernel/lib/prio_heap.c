@@ -3,8 +3,8 @@
  * pointers, based on CLR, chapter 7
  */
 
-#include <linux/slab.h>
-#include <linux/prio_heap.h>
+#include <beep/slab.h>
+#include <beep/prio_heap.h>
 
 int heap_init(struct ptr_heap *heap, size_t size, gfp_t gfp_mask,
 	      int (*gt)(void *, void *))

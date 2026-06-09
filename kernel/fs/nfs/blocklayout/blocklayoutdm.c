@@ -1,5 +1,5 @@
 /*
- *  linux/fs/nfs/blocklayout/blocklayoutdm.c
+ *  beep/fs/nfs/blocklayout/blocklayoutdm.c
  *
  *  Module for the NFSv4.1 pNFS block layout driver.
  *
@@ -30,9 +30,9 @@
  * possibility of such damages.
  */
 
-#include <linux/genhd.h> /* gendisk - used in a dprintk*/
-#include <linux/sched.h>
-#include <linux/hash.h>
+#include <beep/genhd.h> /* gendisk - used in a dprintk*/
+#include <beep/sched.h>
+#include <beep/hash.h>
 
 #include "blocklayout.h"
 

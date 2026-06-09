@@ -15,8 +15,8 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/of_fdt.h>
+#include <beep/kernel.h>
+#include <beep/of_fdt.h>
 #include <asm/machdep.h>
 #include <asm/time.h>
 #include <asm/udbg.h>

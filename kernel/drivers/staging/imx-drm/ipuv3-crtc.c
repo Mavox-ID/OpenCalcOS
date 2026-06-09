@@ -17,15 +17,15 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
  * MA 02110-1301, USA.
  */
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/export.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
 #include <drm/drmP.h>
 #include <drm/drm_fb_helper.h>
 #include <drm/drm_crtc_helper.h>
-#include <linux/fb.h>
-#include <linux/clk.h>
+#include <beep/fb.h>
+#include <beep/clk.h>
 #include <drm/drm_gem_cma_helper.h>
 #include <drm/drm_fb_cma_helper.h>
 

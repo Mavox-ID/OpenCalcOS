@@ -11,7 +11,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/power/smartreflex.h>
+#include <beep/power/smartreflex.h>
 #include "voltage.h"
 
 static int sr_class3_enable(struct omap_sr *sr)

@@ -1,18 +1,18 @@
 /*
- * linux/arch/m68k/amiga/amisound.c
+ * beep/arch/m68k/amiga/amisound.c
  *
- * amiga sound driver for Linux/m68k
+ * amiga sound driver for Beep/m68k
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file COPYING in the main directory of this archive
  * for more details.
  */
 
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <beep/jiffies.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/module.h>
 
 #include <asm/amigahw.h>
 

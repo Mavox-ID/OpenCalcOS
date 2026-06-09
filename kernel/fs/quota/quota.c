@@ -5,18 +5,18 @@
  * variables, etc - things needed even when quota support disabled.
  */
 
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/namei.h>
+#include <beep/slab.h>
 #include <asm/current.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/capability.h>
-#include <linux/quotaops.h>
-#include <linux/types.h>
-#include <linux/writeback.h>
+#include <beep/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/security.h>
+#include <beep/syscalls.h>
+#include <beep/capability.h>
+#include <beep/quotaops.h>
+#include <beep/types.h>
+#include <beep/writeback.h>
 
 static int check_quotactl_permission(struct super_block *sb, int type, int cmd,
 				     qid_t id)

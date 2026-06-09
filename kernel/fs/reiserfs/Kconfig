@@ -71,7 +71,7 @@ config REISERFS_FS_POSIX_ACL
 	  groups beyond the owner/group/world scheme.
 
 	  To learn more about Access Control Lists, visit the Posix ACLs for
-	  Linux website <http://acl.bestbits.at/>.
+	  Beep website <http://acl.bestbits.at/>.
 
 	  If you don't know what Access Control Lists are, say N
 
@@ -80,7 +80,7 @@ config REISERFS_FS_SECURITY
 	depends on REISERFS_FS_XATTR
 	help
 	  Security labels support alternative access control models
-	  implemented by security modules like SELinux.  This option
+	  implemented by security modules like SEBeep.  This option
 	  enables an extended attribute handler for file security
 	  labels in the ReiserFS filesystem.
 

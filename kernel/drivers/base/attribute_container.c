@@ -11,14 +11,14 @@
  * to via a matching function.
  */
 
-#include <linux/attribute_container.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <beep/attribute_container.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
 
 #include "base.h"
 

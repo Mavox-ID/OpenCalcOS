@@ -3,16 +3,16 @@
  * Copyright (C) 2007, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/gfp.h>
 
 #include <asm/irq.h>
 #include <asm/io.h>

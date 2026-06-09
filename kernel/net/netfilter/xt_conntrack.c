@@ -10,11 +10,11 @@
  *	published by the Free Software Foundation.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
 #include <net/ipv6.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_conntrack.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_conntrack.h>
 #include <net/netfilter/nf_conntrack.h>
 
 MODULE_LICENSE("GPL");

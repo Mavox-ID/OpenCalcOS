@@ -22,18 +22,18 @@
  * option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/of_platform.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/dma-mapping.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/of_platform.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
 #include <asm/machdep.h>
 
 #include "fsl_rio.h"

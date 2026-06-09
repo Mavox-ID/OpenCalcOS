@@ -15,12 +15,12 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/crc32.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/etherdevice.h>
+#include <beep/crc32.h>
 
-#include <linux/usb/cdc.h>
+#include <beep/usb/cdc.h>
 
 #include "u_ether.h"
 
@@ -86,7 +86,7 @@ static inline unsigned ncm_bitrate(struct usb_gadget *g)
  * We cannot group frames so use just the minimal size which ok to put
  * one max-size ethernet frame.
  * If the host can group frames, allow it to do that, 16K is selected,
- * because it's used by default by the current linux host driver
+ * because it's used by default by the current beep host driver
  */
 #define NTB_DEFAULT_IN_SIZE	USB_CDC_NCM_NTB_MIN_IN_SIZE
 #define NTB_OUT_SIZE		16384
@@ -517,7 +517,7 @@ static void ncm_do_notify(struct f_ncm *ncm)
 static void ncm_notify(struct f_ncm *ncm)
 {
 	/*
-	 * NOTE on most versions of Linux, host side cdc-ethernet
+	 * NOTE on most versions of Beep, host side cdc-ethernet
 	 * won't listen for notifications until its netdevice opens.
 	 * The first notification then sits in the FIFO for a long
 	 * time, and the second one is queued.

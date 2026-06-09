@@ -2,7 +2,7 @@
  *  Derived from arch/i386/kernel/irq.c
  *    Copyright (C) 1992 Linus Torvalds
  *  Adapted from arch/i386 by Gary Thomas
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *  Updated and modified by Cort Dougan <cort@fsmlabs.com>
  *    Copyright (C) 1996-2001 Cort Dougan
  *  Adapted for Power Macintosh by Paul Mackerras
@@ -18,16 +18,16 @@
  * driver.
  */
 
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 
 /**
- * irq_of_parse_and_map - Parse and map an interrupt into linux virq space
+ * irq_of_parse_and_map - Parse and map an interrupt into beep virq space
  * @device: Device node of the device whose interrupt is to be mapped
  * @index: Index of the interrupt to map
  *
@@ -131,7 +131,7 @@ int of_irq_map_raw(struct device_node *parent, const __be32 *intspec,
 	if (ointsize != intsize)
 		return -EINVAL;
 
-	/* Look for this #address-cells. We have to implement the old linux
+	/* Look for this #address-cells. We have to implement the old beep
 	 * trick of looking for the parent here as some device-trees rely on it
 	 */
 	old = of_node_get(ipar);

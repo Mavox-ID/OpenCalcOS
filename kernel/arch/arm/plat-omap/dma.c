@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/plat-omap/dma.c
+ * beep/arch/arm/plat-omap/dma.c
  *
  * Copyright (C) 2003 - 2008 Nokia Corporation
  * Author: Juha Yrjölä <juha.yrjola@nokia.com>
@@ -25,18 +25,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
 
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 
 /*
  * MAX_LOGICAL_DMA_CH_COUNT: the maximum number of logical DMA

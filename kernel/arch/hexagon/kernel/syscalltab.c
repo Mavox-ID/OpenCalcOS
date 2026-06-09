@@ -1,7 +1,7 @@
 /*
  * System call table for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -18,9 +18,9 @@
  * 02110-1301, USA.
  */
 
-#include <linux/syscalls.h>
-#include <linux/signal.h>
-#include <linux/unistd.h>
+#include <beep/syscalls.h>
+#include <beep/signal.h>
+#include <beep/unistd.h>
 
 #include <asm/syscall.h>
 

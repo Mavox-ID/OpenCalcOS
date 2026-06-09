@@ -8,13 +8,13 @@
  * For details on why we do all the strange and hairy things in here
  * take a look at Documentation/filesystems/nfs/Exporting.
  */
-#include <linux/exportfs.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/sched.h>
+#include <beep/exportfs.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/module.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/sched.h>
 
 #define dprintk(fmt, args...) do{}while(0)
 

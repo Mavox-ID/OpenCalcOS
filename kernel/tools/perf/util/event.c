@@ -479,7 +479,7 @@ int perf_event__synthesize_kernel_mmap(struct perf_tool *tool,
 	if (kallsyms__parse(filename, &args, find_symbol_cb) <= 0)
 		return -ENOENT;
 
-	map = machine->vmlinux_maps[MAP__FUNCTION];
+	map = machine->vmbeep_maps[MAP__FUNCTION];
 	size = snprintf(event->mmap.filename, sizeof(event->mmap.filename),
 			"%s%s", mmap_name, symbol_name) + 1;
 	size = PERF_ALIGN(size, sizeof(u64));
@@ -693,7 +693,7 @@ int perf_event__preprocess_sample(const union perf_event *event,
 	 * it now.
 	 */
 	if (cpumode == PERF_RECORD_MISC_KERNEL &&
-	    machine->vmlinux_maps[MAP__FUNCTION] == NULL)
+	    machine->vmbeep_maps[MAP__FUNCTION] == NULL)
 		machine__create_kernel_maps(machine);
 
 	thread__find_addr_map(thread, machine, cpumode, MAP__FUNCTION,

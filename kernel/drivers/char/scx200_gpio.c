@@ -1,25 +1,25 @@
-/* linux/drivers/char/scx200_gpio.c
+/* beep/drivers/char/scx200_gpio.c
 
    National Semiconductor SCx200 GPIO driver.  Allows a user space
    process to play with the GPIO pins.
 
    Copyright (c) 2001,2002 Christer Weinigel <wingel@nano-system.com> */
 
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <beep/device.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
 #include <asm/uaccess.h>
 #include <asm/io.h>
 
-#include <linux/types.h>
-#include <linux/cdev.h>
+#include <beep/types.h>
+#include <beep/cdev.h>
 
-#include <linux/scx200_gpio.h>
-#include <linux/nsc_gpio.h>
+#include <beep/scx200_gpio.h>
+#include <beep/nsc_gpio.h>
 
 #define DRVNAME "scx200_gpio"
 

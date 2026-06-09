@@ -17,14 +17,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/mman.h>
-#include <linux/nodemask.h>
-#include <linux/memblock.h>
-#include <linux/fs.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/mman.h>
+#include <beep/nodemask.h>
+#include <beep/memblock.h>
+#include <beep/fs.h>
 
 #include <asm/cputype.h>
 #include <asm/sections.h>

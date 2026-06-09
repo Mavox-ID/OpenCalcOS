@@ -2,27 +2,27 @@
  * Copyright 2008 Red Hat, Inc. All rights reserved.
  * Copyright 2008 Ian Kent <raven@themaw.net>
  *
- * This file is part of the Linux kernel and is made available under
+ * This file is part of the Beep kernel and is made available under
  * the terms of the GNU General Public License, version 2, or at your
  * option, any later version, incorporated herein by reference.
  */
 
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/miscdevice.h>
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/namei.h>
-#include <linux/fcntl.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/sched.h>
-#include <linux/compat.h>
-#include <linux/syscalls.h>
-#include <linux/magic.h>
-#include <linux/dcache.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/vmalloc.h>
+#include <beep/miscdevice.h>
+#include <beep/init.h>
+#include <beep/wait.h>
+#include <beep/namei.h>
+#include <beep/fcntl.h>
+#include <beep/file.h>
+#include <beep/fdtable.h>
+#include <beep/sched.h>
+#include <beep/compat.h>
+#include <beep/syscalls.h>
+#include <beep/magic.h>
+#include <beep/dcache.h>
+#include <beep/uaccess.h>
+#include <beep/slab.h>
 
 #include "autofs_i.h"
 

@@ -6,7 +6,7 @@
  *
  * Based very heavily on
  *
- * linux/drivers/ide/pci/sc1200.c		Version 0.91	28-Jan-2003
+ * beep/drivers/ide/pci/sc1200.c		Version 0.91	28-Jan-2003
  *
  * Copyright (C) 2000-2002		Mark Lord <mlord@pobox.com>
  * May be copied or modified under the terms of the GNU General Public License
@@ -29,14 +29,14 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <beep/libata.h>
 
 #define DRV_NAME	"pata_sc1200"
 #define DRV_VERSION	"0.2.6"

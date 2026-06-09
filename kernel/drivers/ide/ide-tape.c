@@ -9,7 +9,7 @@
  * Institute Of Technology, with the guide of Avner Lottem and Dr. Ilana David.
  *
  * It is hereby placed under the terms of the GNU general public license.
- * (See linux/COPYING).
+ * (See beep/COPYING).
  *
  * For a historical changelog see
  * Documentation/ide/ChangeLog.ide-tape.1995-2002
@@ -19,32 +19,32 @@
 
 #define IDETAPE_VERSION "1.20"
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/genhd.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
-#include <linux/completion.h>
-#include <linux/bitops.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/jiffies.h>
+#include <beep/major.h>
+#include <beep/errno.h>
+#include <beep/genhd.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/ide.h>
+#include <beep/completion.h>
+#include <beep/bitops.h>
+#include <beep/mutex.h>
 #include <scsi/scsi.h>
 
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
 #include <asm/unaligned.h>
-#include <linux/mtio.h>
+#include <beep/mtio.h>
 
 /* define to see debug info */
 #undef IDETAPE_DEBUG_LOG

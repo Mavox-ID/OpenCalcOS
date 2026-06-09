@@ -9,12 +9,12 @@
  * option) any later version.
  */
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/time.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/of.h>
+#include <beep/slab.h>
+#include <beep/time.h>
 
 #include <asm/reg_a2.h>
 #include <asm/irq.h>
@@ -219,7 +219,7 @@ irqreturn_t opb_irq_handler(int irq, void *private)
 		src = 32 - ffs(ir);
 
 		/* Translate from the OPB's conception of interrupt number to
-		 * Linux's virtual IRQ */
+		 * Beep's virtual IRQ */
 
 		subvirq = irq_linear_revmap(opb->host, src);
 
@@ -252,7 +252,7 @@ struct opb_pic *opb_pic_init_one(struct device_node *dn)
 		goto free_opb;
 	}
 
-	/* Allocate an irq domain so that Linux knows that despite only
+	/* Allocate an irq domain so that Beep knows that despite only
 	 * having one interrupt to issue, we're the controller for multiple
 	 * hardware IRQs, so later we can lookup their virtual IRQs. */
 

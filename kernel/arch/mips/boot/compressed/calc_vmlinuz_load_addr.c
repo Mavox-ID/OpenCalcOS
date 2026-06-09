@@ -16,11 +16,11 @@
 
 int main(int argc, char *argv[])
 {
-	unsigned long long vmlinux_size, vmlinux_load_addr, vmlinuz_load_addr;
+	unsigned long long vmbeep_size, vmbeep_load_addr, vmlinuz_load_addr;
 	struct stat sb;
 
 	if (argc != 3) {
-		fprintf(stderr, "Usage: %s <pathname> <vmlinux_load_addr>\n",
+		fprintf(stderr, "Usage: %s <pathname> <vmbeep_load_addr>\n",
 				argv[0]);
 		return EXIT_FAILURE;
 	}
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
 	/* Convert hex characters to dec number */
 	errno = 0;
-	if (sscanf(argv[2], "%llx", &vmlinux_load_addr) != 1) {
+	if (sscanf(argv[2], "%llx", &vmbeep_load_addr) != 1) {
 		if (errno != 0)
 			perror("sscanf");
 		else
@@ -41,15 +41,15 @@ int main(int argc, char *argv[])
 		return EXIT_FAILURE;
 	}
 
-	vmlinux_size = (uint64_t)sb.st_size;
-	vmlinuz_load_addr = vmlinux_load_addr + vmlinux_size;
+	vmbeep_size = (uint64_t)sb.st_size;
+	vmlinuz_load_addr = vmbeep_load_addr + vmbeep_size;
 
 	/*
 	 * Align with 16 bytes: "greater than that used for any standard data
-	 * types by a MIPS compiler." -- See MIPS Run Linux (Second Edition).
+	 * types by a MIPS compiler." -- See MIPS Run Beep (Second Edition).
 	 */
 
-	vmlinuz_load_addr += (16 - vmlinux_size % 16);
+	vmlinuz_load_addr += (16 - vmbeep_size % 16);
 
 	printf("0x%llx\n", vmlinuz_load_addr);
 

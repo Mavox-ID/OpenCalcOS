@@ -34,7 +34,7 @@ static inline void copy_page(void *to, void *from)
 	mmx_copy_page(to, from);
 }
 #else  /* !CONFIG_X86_USE_3DNOW */
-#include <linux/string.h>
+#include <beep/string.h>
 
 static inline void clear_page(void *page)
 {

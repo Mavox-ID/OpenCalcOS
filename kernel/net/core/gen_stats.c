@@ -13,13 +13,13 @@
  * See Documentation/networking/gen_stats.txt
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/socket.h>
-#include <linux/rtnetlink.h>
-#include <linux/gen_stats.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/socket.h>
+#include <beep/rtnetlink.h>
+#include <beep/gen_stats.h>
 #include <net/netlink.h>
 #include <net/gen_stats.h>
 

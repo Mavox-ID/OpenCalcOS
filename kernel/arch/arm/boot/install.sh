@@ -31,7 +31,7 @@ if [ "$(basename $2)" = "zCalc" ]; then
 else
 # Normal install
   echo "Installing normal kernel"
-  base=vmlinux
+  base=vmbeep
 fi
 
 if [ -f $4/$base-$1 ]; then

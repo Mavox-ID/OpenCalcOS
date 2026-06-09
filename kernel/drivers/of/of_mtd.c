@@ -6,13 +6,13 @@
  * This file is released under the GPLv2
  *
  */
-#include <linux/kernel.h>
-#include <linux/of_mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/of_mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/export.h>
 
 /**
- * It maps 'enum nand_ecc_modes_t' found in include/linux/mtd/nand.h
+ * It maps 'enum nand_ecc_modes_t' found in include/beep/mtd/nand.h
  * into the device tree binding of 'nand-ecc', so that MTD
  * device driver can get nand ecc from device tree.
  */

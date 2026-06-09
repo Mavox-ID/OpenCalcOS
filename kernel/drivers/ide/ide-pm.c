@@ -1,6 +1,6 @@
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/ide.h>
+#include <beep/kernel.h>
+#include <beep/gfp.h>
+#include <beep/ide.h>
 
 int generic_ide_suspend(struct device *dev, pm_message_t mesg)
 {

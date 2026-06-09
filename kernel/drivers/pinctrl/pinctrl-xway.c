@@ -1,6 +1,6 @@
 /*
- *  linux/drivers/pinctrl/pinmux-xway.c
- *  based on linux/drivers/pinctrl/pinmux-pxa910.c
+ *  beep/drivers/pinctrl/pinmux-xway.c
+ *  based on beep/drivers/pinctrl/pinmux-pxa910.c
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License version 2 as
@@ -9,15 +9,15 @@
  *  Copyright (C) 2012 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/of_gpio.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/of_platform.h>
+#include <beep/of_address.h>
+#include <beep/of_gpio.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
 
 #include "pinctrl-lantiq.h"
 

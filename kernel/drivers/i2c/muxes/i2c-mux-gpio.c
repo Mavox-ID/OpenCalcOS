@@ -8,16 +8,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/i2c.h>
-#include <linux/i2c-mux.h>
-#include <linux/i2c-mux-gpio.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/of_i2c.h>
-#include <linux/of_gpio.h>
+#include <beep/i2c.h>
+#include <beep/i2c-mux.h>
+#include <beep/i2c-mux-gpio.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/gpio.h>
+#include <beep/of_i2c.h>
+#include <beep/of_gpio.h>
 
 struct gpiomux {
 	struct i2c_adapter *parent;

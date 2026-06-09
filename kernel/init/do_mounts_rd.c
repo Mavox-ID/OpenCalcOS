@@ -8,20 +8,20 @@
 #warning "Sparse checking disabled for this file"
 #endif
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/minix_fs.h>
-#include <linux/ext2_fs.h>
-#include <linux/romfs_fs.h>
-#include <linux/cramfs_fs.h>
-#include <linux/initrd.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/minix_fs.h>
+#include <beep/ext2_fs.h>
+#include <beep/romfs_fs.h>
+#include <beep/cramfs_fs.h>
+#include <beep/initrd.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 
 #include "do_mounts.h"
 #include "../fs/squashfs/squashfs_fs.h"
 
-#include <linux/decompress/generic.h>
+#include <beep/decompress/generic.h>
 
 
 int __initdata rd_prompt = 1;/* 1 = prompt for RAM disk, 0 = don't prompt */

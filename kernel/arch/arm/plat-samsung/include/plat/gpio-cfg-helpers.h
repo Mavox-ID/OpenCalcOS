@@ -1,8 +1,8 @@
-/* linux/arch/arm/plat-samsung/include/plat/gpio-cfg-helper.h
+/* beep/arch/arm/plat-samsung/include/plat/gpio-cfg-helper.h
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * Samsung Platform - GPIO pin configuration helper definitions

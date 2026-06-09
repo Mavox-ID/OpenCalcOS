@@ -24,9 +24,9 @@
 #define _SPU_H
 #ifdef __KERNEL__
 
-#include <linux/workqueue.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
+#include <beep/workqueue.h>
+#include <beep/device.h>
+#include <beep/mutex.h>
 
 #define LS_SIZE (256 * 1024)
 #define LS_ADDR_MASK (LS_SIZE - 1)

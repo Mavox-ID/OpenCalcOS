@@ -1,10 +1,10 @@
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/capability.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
+#include <beep/capability.h>
 
 #include <xen/xen.h>
 #include <xen/page.h>

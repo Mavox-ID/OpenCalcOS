@@ -1,8 +1,8 @@
 #ifndef ASM_IA64__SWIOTLB_H
 #define ASM_IA64__SWIOTLB_H
 
-#include <linux/dma-mapping.h>
-#include <linux/swiotlb.h>
+#include <beep/dma-mapping.h>
+#include <beep/swiotlb.h>
 
 #ifdef CONFIG_SWIOTLB
 extern int swiotlb;

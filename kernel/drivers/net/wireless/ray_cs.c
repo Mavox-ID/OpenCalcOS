@@ -30,26 +30,26 @@
  *
 =============================================================================*/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/ptrace.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/skbuff.h>
-#include <linux/ieee80211.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/proc_fs.h>
+#include <beep/ptrace.h>
+#include <beep/seq_file.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/if_arp.h>
+#include <beep/ioport.h>
+#include <beep/skbuff.h>
+#include <beep/ieee80211.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/cisreg.h>
 #include <pcmcia/ds.h>
 
-#include <linux/wireless.h>
+#include <beep/wireless.h>
 #include <net/iw_handler.h>
 
 #include <asm/io.h>
@@ -807,7 +807,7 @@ static int ray_dev_init(struct net_device *dev)
 	      local->card_status);
 #endif /* RAY_IMMEDIATE_INIT */
 
-	/* copy mac and broadcast addresses to linux device */
+	/* copy mac and broadcast addresses to beep device */
 	memcpy(dev->dev_addr, &local->sparm.b4.a_mac_addr, ADDRLEN);
 	memset(dev->broadcast, 0xff, ETH_ALEN);
 

@@ -30,7 +30,7 @@
  */
 
 #include <asm/addrspace.h>
-#include <linux/types.h>
+#include <beep/types.h>
 
 #ifndef _ASM_MSP_REGS_H
 #define _ASM_MSP_REGS_H

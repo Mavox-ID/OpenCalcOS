@@ -1,26 +1,26 @@
 /*
  * SPI bus via the Blackfin SPORT peripheral
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucbeep.org/
  *
  * Copyright 2009-2011 Analog Devices Inc.
  *
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/workqueue.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/irq.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/workqueue.h>
 
 #include <asm/portmux.h>
 #include <asm/bfin5xx_spi.h>

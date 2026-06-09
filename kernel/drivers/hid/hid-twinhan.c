@@ -3,7 +3,7 @@
  *
  * Based on hid-gyration.c
  *
- * Copyright (c) 2009 Bruno Prémont <bonbons@linux-vserver.org>
+ * Copyright (c) 2009 Bruno Prémont <bonbons@beep-vserver.org>
  */
 
 /*
@@ -12,10 +12,10 @@
  * Software Foundation; either version 2 of the License.
  */
 
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/input.h>
+#include <beep/hid.h>
+#include <beep/module.h>
 
 #include "hid-ids.h"
 

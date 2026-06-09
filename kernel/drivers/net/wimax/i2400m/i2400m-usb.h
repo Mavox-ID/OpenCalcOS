@@ -32,7 +32,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  *
- * Intel Corporation <linux-wimax@intel.com>
+ * Intel Corporation <beep-wimax@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  * Yanir Lubetkin <yanirx.lubetkin@intel.com>
  *  - Initial implementation
@@ -65,7 +65,7 @@
 #define __I2400M_USB_H__
 
 #include "i2400m.h"
-#include <linux/kthread.h>
+#include <beep/kthread.h>
 
 
 /*

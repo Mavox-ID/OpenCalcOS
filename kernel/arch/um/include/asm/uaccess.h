@@ -11,8 +11,8 @@ typedef struct {
 	unsigned long seg;
 } mm_segment_t;
 
-#include <linux/thread_info.h>
-#include <linux/errno.h>
+#include <beep/thread_info.h>
+#include <beep/errno.h>
 #include <asm/processor.h>
 #include <asm/elf.h>
 

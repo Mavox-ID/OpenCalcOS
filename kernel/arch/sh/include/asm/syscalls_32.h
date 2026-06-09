@@ -3,9 +3,9 @@
 
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/linkage.h>
+#include <beep/types.h>
 
 struct pt_regs;
 

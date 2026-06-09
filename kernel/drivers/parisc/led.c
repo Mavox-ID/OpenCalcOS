@@ -23,26 +23,26 @@
  *	  			  David Pye <dmp@davidmpye.dyndns.org>
  */
 
-#include <linux/module.h>
-#include <linux/stddef.h>	/* for offsetof() */
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/utsname.h>
-#include <linux/capability.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/reboot.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/ctype.h>
-#include <linux/blkdev.h>
-#include <linux/workqueue.h>
-#include <linux/rcupdate.h>
+#include <beep/module.h>
+#include <beep/stddef.h>	/* for offsetof() */
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/ioport.h>
+#include <beep/utsname.h>
+#include <beep/capability.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/inetdevice.h>
+#include <beep/in.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/reboot.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/ctype.h>
+#include <beep/blkdev.h>
+#include <beep/workqueue.h>
+#include <beep/rcupdate.h>
 #include <asm/io.h>
 #include <asm/processor.h>
 #include <asm/hardware.h>
@@ -689,7 +689,7 @@ int __init led_init(void)
 	int ret;
 
 	snprintf(lcd_text_default, sizeof(lcd_text_default),
-		"Linux %s", init_utsname()->release);
+		"Beep %s", init_utsname()->release);
 
 	/* Work around the buggy PDC of KittyHawk-machines */
 	switch (CPU_HVERSION) {

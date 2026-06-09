@@ -43,9 +43,9 @@
 
 #include <drm/drmP.h>
 #include <drm/drm_mm.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/seq_file.h>
+#include <beep/export.h>
 
 #define MM_UNUSED_TARGET 4
 

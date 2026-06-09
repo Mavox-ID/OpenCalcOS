@@ -9,8 +9,8 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/bitops.h>
-#include <linux/export.h>
+#include <beep/bitops.h>
+#include <beep/export.h>
 #include <asm/types.h>
 #include <asm/byteorder.h>
 
@@ -165,7 +165,7 @@ EXPORT_SYMBOL(find_first_zero_bit);
 
 #ifdef __BIG_ENDIAN
 
-/* include/linux/byteorder does not support "unsigned long" type */
+/* include/beep/byteorder does not support "unsigned long" type */
 static inline unsigned long ext2_swabp(const unsigned long * x)
 {
 #if BITS_PER_LONG == 64
@@ -177,7 +177,7 @@ static inline unsigned long ext2_swabp(const unsigned long * x)
 #endif
 }
 
-/* include/linux/byteorder doesn't support "unsigned long" type */
+/* include/beep/byteorder doesn't support "unsigned long" type */
 static inline unsigned long ext2_swab(const unsigned long y)
 {
 #if BITS_PER_LONG == 64

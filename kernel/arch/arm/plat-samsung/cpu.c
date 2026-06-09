@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/cpu.c
+/* beep/arch/arm/plat-samsung/cpu.c
  *
  * Copyright (c) 2009-2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -10,10 +10,10 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
 
 
 #include <mach/map.h>

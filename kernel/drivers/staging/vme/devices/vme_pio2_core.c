@@ -12,16 +12,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/ctype.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/vme.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/device.h>
+#include <beep/ctype.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
+#include <beep/vme.h>
 
 #include "vme_pio2.h"
 

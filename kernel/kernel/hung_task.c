@@ -5,16 +5,16 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/cpu.h>
-#include <linux/nmi.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/lockdep.h>
-#include <linux/export.h>
-#include <linux/sysctl.h>
+#include <beep/mm.h>
+#include <beep/cpu.h>
+#include <beep/nmi.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/freezer.h>
+#include <beep/kthread.h>
+#include <beep/lockdep.h>
+#include <beep/export.h>
+#include <beep/sysctl.h>
 
 /*
  * The number of tasks checked:

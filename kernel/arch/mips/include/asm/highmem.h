@@ -19,9 +19,9 @@
 
 #ifdef __KERNEL__
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/uaccess.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/uaccess.h>
 #include <asm/kmap_types.h>
 
 /* undef for production */

@@ -4,7 +4,7 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  *
- * Portions of this code from linux/fs/ext2/xattr.c
+ * Portions of this code from beep/fs/ext2/xattr.c
  *
  * Copyright (C) 2001-2003 Andreas Gruenbacher <agruen@suse.de>
  *
@@ -18,8 +18,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/rwsem.h>
-#include <linux/f2fs_fs.h>
+#include <beep/rwsem.h>
+#include <beep/f2fs_fs.h>
 #include "f2fs.h"
 #include "xattr.h"
 

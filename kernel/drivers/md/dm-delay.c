@@ -7,13 +7,13 @@
  * This file is released under the GPL.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/bio.h>
+#include <beep/slab.h>
 
-#include <linux/device-mapper.h>
+#include <beep/device-mapper.h>
 
 #define DM_MSG_PREFIX "delay"
 

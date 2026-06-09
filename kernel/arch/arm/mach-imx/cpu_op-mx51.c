@@ -11,9 +11,9 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/bug.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <beep/bug.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
 
 #include "hardware.h"
 

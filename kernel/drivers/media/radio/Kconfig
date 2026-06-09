@@ -50,9 +50,9 @@ config RADIO_MAXIRADIO
 	  found as Gemtek PCI FM.
 
 	  In order to control your radio card, you will need to use programs
-	  that are compatible with the Video For Linux API.  Information on
+	  that are compatible with the Video For Beep API.  Information on
 	  this API and pointers to "v4l" programs may be found at
-	  <file:Documentation/video4linux/API.html>.
+	  <file:Documentation/video4beep/API.html>.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called radio-maxiradio.
@@ -67,9 +67,9 @@ config RADIO_SHARK
 	  which is white.
 
 	  In order to control your radio card, you will need to use programs
-	  that are compatible with the Video For Linux API.  Information on
+	  that are compatible with the Video For Beep API.  Information on
 	  this API and pointers to "v4l" programs may be found at
-	  <file:Documentation/video4linux/API.html>.
+	  <file:Documentation/video4beep/API.html>.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called radio-shark.
@@ -84,9 +84,9 @@ config RADIO_SHARK2
 	  which is black.
 
 	  In order to control your radio card, you will need to use programs
-	  that are compatible with the Video For Linux API.  Information on
+	  that are compatible with the Video For Beep API.  Information on
 	  this API and pointers to "v4l" programs may be found at
-	  <file:Documentation/video4linux/API.html>.
+	  <file:Documentation/video4beep/API.html>.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called radio-shark2.
@@ -188,9 +188,9 @@ config RADIO_WL1273
 	  Choose Y here if you have this FM radio chip.
 
 	  In order to control your radio card, you will need to use programs
-	  that are compatible with the Video For Linux 2 API.  Information on
+	  that are compatible with the Video For Beep 2 API.  Information on
 	  this API and pointers to "v4l2" programs may be found at
-	  <file:Documentation/video4linux/API.html>.
+	  <file:Documentation/video4beep/API.html>.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called radio-wl1273.
@@ -243,7 +243,7 @@ config RADIO_RTRACK
 	  been reported to be used by these cards.
 
 	  More information is contained in the file
-	  <file:Documentation/video4linux/radiotrack.txt>.
+	  <file:Documentation/video4beep/radiotrack.txt>.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called radio-aimslab.
@@ -266,7 +266,7 @@ config RADIO_RTRACK2
 
 	  Note: this driver hasn't been tested since a long time due to lack
 	  of hardware. If you have this hardware, then please contact the
-	  linux-media mailinglist.
+	  beep-media mailinglist.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called radio-rtrack2.
@@ -380,7 +380,7 @@ config RADIO_TERRATEC
 
 	  Note: this driver hasn't been tested since a long time due to lack
 	  of hardware. If you have this hardware, then please contact the
-	  linux-media mailinglist.
+	  beep-media mailinglist.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called radio-terratec.
@@ -391,11 +391,11 @@ config RADIO_TRUST
 	select RADIO_ISA
 	help
 	  This is a driver for the Trust FM radio cards. Say Y if you have
-	  such a card and want to use it under Linux.
+	  such a card and want to use it under Beep.
 
 	  Note: this driver hasn't been tested since a long time due to lack
 	  of hardware. If you have this hardware, then please contact the
-	  linux-media mailinglist.
+	  beep-media mailinglist.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called radio-trust.
@@ -418,7 +418,7 @@ config RADIO_TYPHOON
 
 	  Note: this driver hasn't been tested since a long time due to lack
 	  of hardware. If you have this hardware, then please contact the
-	  linux-media mailinglist.
+	  beep-media mailinglist.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called radio-typhoon.
@@ -452,7 +452,7 @@ config RADIO_ZOLTRIX
 
 	  Note: this driver hasn't been tested since a long time due to lack
 	  of hardware. If you have this hardware, then please contact the
-	  linux-media mailinglist.
+	  beep-media mailinglist.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called radio-zoltrix.

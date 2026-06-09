@@ -18,11 +18,11 @@
  * 02110-1301 USA
  */
 
-#include <linux/device.h>
-#include <linux/gcd.h>
-#include <linux/kernel.h>
-#include <linux/lcm.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/gcd.h>
+#include <beep/kernel.h>
+#include <beep/lcm.h>
+#include <beep/module.h>
 
 #include "aptina-pll.h"
 

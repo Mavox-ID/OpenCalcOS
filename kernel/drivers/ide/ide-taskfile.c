@@ -1,6 +1,6 @@
 /*
  *  Copyright (C) 2000-2002	   Michael Cornwell <cornwell@acm.org>
- *  Copyright (C) 2000-2002	   Andre Hedrick <andre@linux-ide.org>
+ *  Copyright (C) 2000-2002	   Andre Hedrick <andre@beep-ide.org>
  *  Copyright (C) 2001-2002	   Klaus Smolin
  *					IBM Storage Technology Division
  *  Copyright (C) 2003-2004, 2007  Bartlomiej Zolnierkiewicz
@@ -8,19 +8,19 @@
  *  The big the bad and the ugly.
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/hdreg.h>
-#include <linux/ide.h>
-#include <linux/scatterlist.h>
-#include <linux/uaccess.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/hdreg.h>
+#include <beep/ide.h>
+#include <beep/scatterlist.h>
+#include <beep/uaccess.h>
 
 #include <asm/io.h>
 

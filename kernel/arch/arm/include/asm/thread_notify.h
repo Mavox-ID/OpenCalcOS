@@ -14,7 +14,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/notifier.h>
+#include <beep/notifier.h>
 #include <asm/thread_info.h>
 
 static inline int thread_register_notifier(struct notifier_block *n)

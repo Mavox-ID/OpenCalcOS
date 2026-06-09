@@ -1,5 +1,5 @@
 /*
- * linux/arch/m68k/mm/sun3mmu.c
+ * beep/arch/m68k/mm/sun3mmu.c
  *
  * Implementations of mm routines specific to the sun3 MMU.
  *
@@ -7,15 +7,15 @@
  *
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
 
 #include <asm/setup.h>
 #include <asm/uaccess.h>

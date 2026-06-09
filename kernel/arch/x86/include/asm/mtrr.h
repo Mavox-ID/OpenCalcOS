@@ -89,7 +89,7 @@ static inline void mtrr_centaur_report_mcr(int mcr, u32 lo, u32 hi)
 #  endif
 
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <beep/compat.h>
 
 struct mtrr_sentry32 {
     compat_ulong_t base;    /*  Base address     */

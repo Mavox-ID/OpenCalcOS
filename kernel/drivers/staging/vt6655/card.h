@@ -30,7 +30,7 @@
 #define __CARD_H__
 
 #include "ttype.h"
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*---------------------  Export Definitions -------------------------*/
 //

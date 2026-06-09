@@ -12,9 +12,9 @@
  *   more details.
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/module.h>
 /* EXPORT_SYMBOL() is in arch/tile/lib/exports.c since this should be asm. */
 
 /* Must be 8 bytes in size. */

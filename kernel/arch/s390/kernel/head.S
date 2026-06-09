@@ -21,8 +21,8 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/thread_info.h>
 #include <asm/page.h>
@@ -423,7 +423,7 @@ ENTRY(startup_kdump)
 	basr	%r14,%r3
 	lpsw	3f-.LPG0(%r13)		# machine type not good enough, crash
 .Lals_string:
-	.asciz	"The Linux kernel requires more recent processor hardware"
+	.asciz	"The Beep kernel requires more recent processor hardware"
 .Lsclp_print:
 	.long	_sclp_print_early
 .Lstack:

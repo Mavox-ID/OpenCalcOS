@@ -1,6 +1,6 @@
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/debugfs.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/debugfs.h>
 
 struct dentry *arch_debugfs_dir;
 EXPORT_SYMBOL(arch_debugfs_dir);

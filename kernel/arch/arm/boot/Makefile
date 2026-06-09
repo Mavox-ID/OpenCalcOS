@@ -29,7 +29,7 @@ targets := Calc zCalc xipImage bootpImage uImage
 
 ifeq ($(CONFIG_XIP_KERNEL),y)
 
-$(obj)/xipImage: vmlinux FORCE
+$(obj)/xipImage: vmbeep FORCE
 	$(call if_changed,objcopy)
 	@$(kecho) '  Kernel: $@ is ready (physical address: $(CONFIG_XIP_PHYS_ADDR))'
 
@@ -44,14 +44,14 @@ $(obj)/xipImage: FORCE
 	@echo 'Kernel not configured for XIP (CONFIG_XIP_KERNEL!=y)'
 	@false
 
-$(obj)/Calc: vmlinux FORCE
+$(obj)/Calc: vmbeep FORCE
 	$(call if_changed,objcopy)
 	@$(kecho) '  Kernel: $@ is ready'
 
-$(obj)/compressed/vmlinux: $(obj)/Calc FORCE
+$(obj)/compressed/vmbeep: $(obj)/Calc FORCE
 	$(Q)$(MAKE) $(build)=$(obj)/compressed $@
 
-$(obj)/zCalc:	$(obj)/compressed/vmlinux FORCE
+$(obj)/zCalc:	$(obj)/compressed/vmbeep FORCE
 	$(call if_changed,objcopy)
 	@$(kecho) '  Kernel: $@ is ready'
 

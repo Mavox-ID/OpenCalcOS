@@ -9,11 +9,11 @@
  * any later version.
  *
  * You should have received a copy of the GNU General Public License
- * (for example /usr/src/linux/COPYING); if not, write to the Free
+ * (for example /usr/src/beep/COPYING); if not, write to the Free
  * Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/prefetch.h>
+#include <beep/prefetch.h>
 
 static void
 xor_8regs_2(unsigned long bytes, unsigned long *p1, unsigned long *p2)

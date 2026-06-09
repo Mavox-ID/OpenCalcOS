@@ -4,7 +4,7 @@
  * Copyright (C) 2008 Intel Corp.
  *
  * Author: Sarah Sharp
- * Some code borrowed from the Linux EHCI driver.
+ * Some code borrowed from the Beep EHCI driver.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -64,8 +64,8 @@
  *   endpoint rings; it generates events on the event ring for these.
  */
 
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
 #include "xhci.h"
 
 static int handle_cmd_in_cmd_wait_list(struct xhci_hcd *xhci,

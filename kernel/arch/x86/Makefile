@@ -22,7 +22,7 @@ ifeq ($(CONFIG_X86_32),y)
         KBUILD_CFLAGS += $(biarch)
 
         ifdef CONFIG_RELOCATABLE
-                LDFLAGS_vmlinux := --emit-relocs
+                LDFLAGS_vmbeep := --emit-relocs
         endif
 
         KBUILD_CFLAGS += -msoft-float -mregparm=3 -freg-struct-return
@@ -191,7 +191,7 @@ all: bzImage
 # KBUILD_IMAGE specify target image being built
 KBUILD_IMAGE := $(boot)/bzImage
 
-bzImage: vmlinux
+bzImage: vmbeep
 ifeq ($(CONFIG_X86_DECODER_SELFTEST),y)
 	$(Q)$(MAKE) $(build)=arch/x86/tools posttest
 endif
@@ -199,7 +199,7 @@ endif
 	$(Q)mkdir -p $(objtree)/arch/$(UTS_MACHINE)/boot
 	$(Q)ln -fsn ../../x86/boot/bzImage $(objtree)/arch/$(UTS_MACHINE)/boot/$@
 
-$(BOOT_TARGETS): vmlinux
+$(BOOT_TARGETS): vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $@
 
 PHONY += install

@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/time.c
+ * beep/arch/unicore32/kernel/time.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -10,12 +10,12 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/timex.h>
-#include <linux/clockchips.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/timex.h>
+#include <beep/clockchips.h>
 
 #include <mach/hardware.h>
 

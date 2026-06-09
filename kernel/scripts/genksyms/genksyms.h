@@ -1,10 +1,10 @@
 /* Generate kernel symbol version hashes.
-   Copyright 1996, 1997 Linux International.
+   Copyright 1996, 1997 Beep International.
 
    New implementation contributed by Richard Henderson <rth@tamu.edu>
    Based on original work by Bjorn Ekwall <bj0rn@blox.se>
 
-   This file is part of the Linux modutils.
+   This file is part of the Beep modutils.
 
    This program is free software; you can redistribute it and/or modify it
    under the terms of the GNU General Public License as published by the

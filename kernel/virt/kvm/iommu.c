@@ -23,14 +23,14 @@
  * Author: Ben-Ami Yassour <benami@il.ibm.com>
  */
 
-#include <linux/list.h>
-#include <linux/kvm_host.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/stat.h>
-#include <linux/dmar.h>
-#include <linux/iommu.h>
-#include <linux/intel-iommu.h>
+#include <beep/list.h>
+#include <beep/kvm_host.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/stat.h>
+#include <beep/dmar.h>
+#include <beep/iommu.h>
+#include <beep/intel-iommu.h>
 
 static bool allow_unsafe_assigned_interrupts;
 module_param_named(allow_unsafe_assigned_interrupts,

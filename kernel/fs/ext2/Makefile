@@ -1,5 +1,5 @@
 #
-# Makefile for the linux ext2-filesystem routines.
+# Makefile for the beep ext2-filesystem routines.
 #
 
 obj-$(CONFIG_EXT2_FS) += ext2.o

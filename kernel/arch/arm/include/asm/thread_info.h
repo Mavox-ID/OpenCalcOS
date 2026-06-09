@@ -12,7 +12,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/fpstate.h>
 
 #define THREAD_SIZE_ORDER	1

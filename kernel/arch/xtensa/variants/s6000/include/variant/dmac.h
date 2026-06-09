@@ -14,7 +14,7 @@
 
 #ifndef __ASM_XTENSA_S6000_DMAC_H
 #define __ASM_XTENSA_S6000_DMAC_H
-#include <linux/io.h>
+#include <beep/io.h>
 #include <variant/hardware.h>
 
 /* DMA global */

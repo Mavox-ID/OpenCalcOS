@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux ACPI interpreter
+# Makefile for the Beep ACPI interpreter
 #
 
 ccflags-y			:= -Os

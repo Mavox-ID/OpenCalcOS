@@ -27,7 +27,7 @@ static const char *const capabilities[] ALIGN_PTR = {
 	"setgid",
 	"setuid",
 	"setpcap",
-	"linux_immutable",
+	"beep_immutable",
 	"net_bind_service",
 	"net_broadcast",
 	"net_admin",

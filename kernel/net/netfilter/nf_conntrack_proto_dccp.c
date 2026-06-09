@@ -8,19 +8,19 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/dccp.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sysctl.h>
+#include <beep/spinlock.h>
+#include <beep/skbuff.h>
+#include <beep/dccp.h>
+#include <beep/slab.h>
 
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <beep/netfilter/nfnetlink_conntrack.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_l4proto.h>
 #include <net/netfilter/nf_conntrack_ecache.h>
@@ -709,8 +709,8 @@ static int dccp_nlattr_size(void)
 
 #if IS_ENABLED(CONFIG_NF_CT_NETLINK_TIMEOUT)
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_cttimeout.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_cttimeout.h>
 
 static int dccp_timeout_nlattr_to_obj(struct nlattr *tb[],
 				      struct net *net, void *data)

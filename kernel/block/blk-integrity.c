@@ -20,12 +20,12 @@
  *
  */
 
-#include <linux/blkdev.h>
-#include <linux/mempool.h>
-#include <linux/bio.h>
-#include <linux/scatterlist.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <beep/blkdev.h>
+#include <beep/mempool.h>
+#include <beep/bio.h>
+#include <beep/scatterlist.h>
+#include <beep/export.h>
+#include <beep/slab.h>
 
 #include "blk.h"
 

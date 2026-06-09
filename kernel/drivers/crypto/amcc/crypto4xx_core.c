@@ -14,21 +14,21 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
- * This file implements AMCC crypto offload Linux device driver for use with
- * Linux CryptoAPI.
+ * This file implements AMCC crypto offload Beep device driver for use with
+ * Beep CryptoAPI.
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock_types.h>
-#include <linux/random.h>
-#include <linux/scatterlist.h>
-#include <linux/crypto.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock_types.h>
+#include <beep/random.h>
+#include <beep/scatterlist.h>
+#include <beep/crypto.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/of_platform.h>
+#include <beep/slab.h>
 #include <asm/dcr.h>
 #include <asm/dcr-regs.h>
 #include <asm/cacheflush.h>
@@ -1233,7 +1233,7 @@ static int __init crypto4xx_probe(struct platform_device *ofdev)
 	/* need to setup pdr, rdr, gdr and sdr before this */
 	crypto4xx_hw_init(core_dev->dev);
 
-	/* Register security algorithms with Linux CryptoAPI */
+	/* Register security algorithms with Beep CryptoAPI */
 	rc = crypto4xx_register_alg(core_dev->dev, crypto4xx_alg,
 			       ARRAY_SIZE(crypto4xx_alg));
 	if (rc)
@@ -1270,7 +1270,7 @@ static int __exit crypto4xx_remove(struct platform_device *ofdev)
 	irq_dispose_mapping(core_dev->irq);
 
 	tasklet_kill(&core_dev->tasklet);
-	/* Un-register with Linux CryptoAPI */
+	/* Un-register with Beep CryptoAPI */
 	crypto4xx_unregister_alg(core_dev->dev);
 	/* Free all allocated memory */
 	crypto4xx_stop_all(core_dev);

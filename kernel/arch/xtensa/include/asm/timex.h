@@ -14,25 +14,25 @@
 #ifdef __KERNEL__
 
 #include <asm/processor.h>
-#include <linux/stringify.h>
+#include <beep/stringify.h>
 
 #define _INTLEVEL(x)	XCHAL_INT ## x ## _LEVEL
 #define INTLEVEL(x)	_INTLEVEL(x)
 
 #if INTLEVEL(XCHAL_TIMER0_INTERRUPT) == 1
-# define LINUX_TIMER     0
-# define LINUX_TIMER_INT XCHAL_TIMER0_INTERRUPT
+# define BEEP_TIMER     0
+# define BEEP_TIMER_INT XCHAL_TIMER0_INTERRUPT
 #elif INTLEVEL(XCHAL_TIMER1_INTERRUPT) == 1
-# define LINUX_TIMER     1
-# define LINUX_TIMER_INT XCHAL_TIMER1_INTERRUPT
+# define BEEP_TIMER     1
+# define BEEP_TIMER_INT XCHAL_TIMER1_INTERRUPT
 #elif INTLEVEL(XCHAL_TIMER2_INTERRUPT) == 1
-# define LINUX_TIMER     2
-# define LINUX_TIMER_INT XCHAL_TIMER2_INTERRUPT
+# define BEEP_TIMER     2
+# define BEEP_TIMER_INT XCHAL_TIMER2_INTERRUPT
 #else
-# error "Bad timer number for Linux configurations!"
+# error "Bad timer number for Beep configurations!"
 #endif
 
-#define LINUX_TIMER_MASK        (1L << LINUX_TIMER_INT)
+#define BEEP_TIMER_MASK        (1L << BEEP_TIMER_INT)
 
 #define CLOCK_TICK_RATE 	1193180	/* (everyone is using this value) */
 #define CLOCK_TICK_FACTOR       20 /* Factor of both 10^6 and CLOCK_TICK_RATE */
@@ -80,16 +80,16 @@ static inline void set_ccount (unsigned long ccount)
 	WSR_CCOUNT(ccount);
 }
 
-static inline unsigned long get_linux_timer (void)
+static inline unsigned long get_beep_timer (void)
 {
 	unsigned ccompare;
-	RSR_CCOMPARE(LINUX_TIMER, ccompare);
+	RSR_CCOMPARE(BEEP_TIMER, ccompare);
 	return ccompare;
 }
 
-static inline void set_linux_timer (unsigned long ccompare)
+static inline void set_beep_timer (unsigned long ccompare)
 {
-	WSR_CCOMPARE(LINUX_TIMER, ccompare);
+	WSR_CCOMPARE(BEEP_TIMER, ccompare);
 }
 
 #endif	/* __KERNEL__ */

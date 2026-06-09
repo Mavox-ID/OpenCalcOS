@@ -12,17 +12,17 @@
  * published by the Free Software Foundation.
 **/
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
-#include <linux/power/charger-manager.h>
-#include <linux/regulator/consumer.h>
-#include <linux/sysfs.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/rtc.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/platform_device.h>
+#include <beep/power/charger-manager.h>
+#include <beep/regulator/consumer.h>
+#include <beep/sysfs.h>
 
 static const char * const default_event_names[] = {
 	[CM_EVENT_UNKNOWN] = "Unknown",

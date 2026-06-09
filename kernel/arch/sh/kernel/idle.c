@@ -7,17 +7,17 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/pm.h>
-#include <linux/tick.h>
-#include <linux/preempt.h>
-#include <linux/thread_info.h>
-#include <linux/irqflags.h>
-#include <linux/smp.h>
-#include <linux/cpuidle.h>
-#include <linux/atomic.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/pm.h>
+#include <beep/tick.h>
+#include <beep/preempt.h>
+#include <beep/thread_info.h>
+#include <beep/irqflags.h>
+#include <beep/smp.h>
+#include <beep/cpuidle.h>
+#include <beep/atomic.h>
 #include <asm/pgalloc.h>
 #include <asm/smp.h>
 #include <asm/bl_bit.h>

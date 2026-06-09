@@ -1,9 +1,9 @@
 /*
- * linux/fs/ext2/namei.c
+ * beep/fs/ext2/namei.c
  *
  * Rewrite to pagecache. Almost all code had been changed, so blame me
  * if the things go wrong. Please, send bug reports to
- * viro@parcelfarce.linux.theplanet.co.uk
+ * viro@parcelfarce.beep.theplanet.co.uk
  *
  * Stuff here is basically a glue between the VFS and generic UNIXish
  * filesystem that keeps everything in pagecache. All knowledge of the
@@ -22,7 +22,7 @@
  *
  *  from
  *
- *  linux/fs/minix/namei.c
+ *  beep/fs/minix/namei.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -30,8 +30,8 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/pagemap.h>
-#include <linux/quotaops.h>
+#include <beep/pagemap.h>
+#include <beep/quotaops.h>
 #include "ext2.h"
 #include "xattr.h"
 #include "acl.h"

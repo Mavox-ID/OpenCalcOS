@@ -1,4 +1,4 @@
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- beep-c -*- ------------------------------------------------------- *
  *   
  *   Copyright 2001 H. Peter Anvin - All Rights Reserved
  *
@@ -11,16 +11,16 @@
  * ----------------------------------------------------------------------- */
 
 /*
- * linux/fs/isofs/compress.c
+ * beep/fs/isofs/compress.c
  *
  * Transparent decompression of files on an iso9660 filesystem
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
-#include <linux/vmalloc.h>
-#include <linux/zlib.h>
+#include <beep/vmalloc.h>
+#include <beep/zlib.h>
 
 #include "isofs.h"
 #include "zisofs.h"

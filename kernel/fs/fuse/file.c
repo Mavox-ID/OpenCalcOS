@@ -8,13 +8,13 @@
 
 #include "fuse_i.h"
 
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/compat.h>
-#include <linux/swap.h>
+#include <beep/pagemap.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/compat.h>
+#include <beep/swap.h>
 
 static const struct file_operations fuse_direct_io_file_operations;
 

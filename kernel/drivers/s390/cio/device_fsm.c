@@ -6,10 +6,10 @@
  *		 Martin Schwidefsky (schwidefsky@de.ibm.com)
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/jiffies.h>
+#include <beep/string.h>
 
 #include <asm/ccwdev.h>
 #include <asm/cio.h>

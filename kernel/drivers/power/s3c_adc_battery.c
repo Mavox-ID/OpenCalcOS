@@ -9,18 +9,18 @@
  *
  */
 
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/leds.h>
-#include <linux/gpio.h>
-#include <linux/err.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/s3c_adc_battery.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/power_supply.h>
+#include <beep/leds.h>
+#include <beep/gpio.h>
+#include <beep/err.h>
+#include <beep/timer.h>
+#include <beep/jiffies.h>
+#include <beep/s3c_adc_battery.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/module.h>
 
 #include <plat/adc.h>
 

@@ -11,11 +11,11 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/rtc.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/log2.h>
-#include <linux/workqueue.h>
+#include <beep/rtc.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/log2.h>
+#include <beep/workqueue.h>
 
 static int rtc_timer_enqueue(struct rtc_device *rtc, struct rtc_timer *timer);
 static void rtc_timer_remove(struct rtc_device *rtc, struct rtc_timer *timer);
@@ -159,9 +159,9 @@ int __rtc_read_alarm(struct rtc_device *rtc, struct rtc_wkalrm *alarm)
 	 *     day/month/year calendar data.
 	 *
 	 *   - Some hardware uses illegal values as "wildcard" match
-	 *     values, which non-Linux firmware (like a BIOS) may try
+	 *     values, which non-Beep firmware (like a BIOS) may try
 	 *     to set up as e.g. "alarm 15 minutes after each hour".
-	 *     Linux uses only oneshot alarms.
+	 *     Beep uses only oneshot alarms.
 	 *
 	 * When we see that here, we deal with it by using values from
 	 * a current RTC timestamp for any missing (-1) values.  The

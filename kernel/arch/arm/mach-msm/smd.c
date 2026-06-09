@@ -16,18 +16,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/wait.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/cdev.h>
+#include <beep/device.h>
+#include <beep/wait.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/debugfs.h>
+#include <beep/delay.h>
 
 #include <mach/msm_smd.h>
 

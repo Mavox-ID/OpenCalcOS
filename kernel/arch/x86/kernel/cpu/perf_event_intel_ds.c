@@ -1,6 +1,6 @@
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <beep/bitops.h>
+#include <beep/types.h>
+#include <beep/slab.h>
 
 #include <asm/perf_event.h>
 #include <asm/insn.h>

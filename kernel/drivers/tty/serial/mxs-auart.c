@@ -14,28 +14,28 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/of_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/fsl/mxs-dma.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/wait.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
+#include <beep/platform_device.h>
+#include <beep/device.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/of_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/fsl/mxs-dma.h>
 
 #include <asm/cacheflush.h>
 

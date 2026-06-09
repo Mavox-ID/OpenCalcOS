@@ -1,6 +1,6 @@
-#include <linux/serial_core.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <beep/serial_core.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
 
 #define SCxSR_TEND(port)	(((port)->type == PORT_SCI) ? SCI_TEND   : SCIF_TEND)
 #define SCxSR_RDxF(port)	(((port)->type == PORT_SCI) ? SCI_RDRF   : SCIF_RDF)

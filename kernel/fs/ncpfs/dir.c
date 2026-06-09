@@ -11,13 +11,13 @@
  */
 
 
-#include <linux/time.h>
-#include <linux/errno.h>
-#include <linux/stat.h>
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/namei.h>
+#include <beep/time.h>
+#include <beep/errno.h>
+#include <beep/stat.h>
+#include <beep/kernel.h>
+#include <beep/vmalloc.h>
+#include <beep/mm.h>
+#include <beep/namei.h>
 #include <asm/uaccess.h>
 #include <asm/byteorder.h>
 

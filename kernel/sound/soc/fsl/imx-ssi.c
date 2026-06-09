@@ -31,15 +31,15 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>
@@ -47,7 +47,7 @@
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 
-#include <linux/platform_data/asoc-imx-ssi.h>
+#include <beep/platform_data/asoc-imx-ssi.h>
 
 #include "imx-ssi.h"
 

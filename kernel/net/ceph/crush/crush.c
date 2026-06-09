@@ -1,6 +1,6 @@
 
 #ifdef __KERNEL__
-# include <linux/slab.h>
+# include <beep/slab.h>
 #else
 # include <stdlib.h>
 # include <assert.h>
@@ -8,7 +8,7 @@
 # define BUG_ON(x) assert(!(x))
 #endif
 
-#include <linux/crush/crush.h>
+#include <beep/crush/crush.h>
 
 const char *crush_bucket_alg_name(int alg)
 {

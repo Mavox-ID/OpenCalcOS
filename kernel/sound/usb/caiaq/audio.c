@@ -16,10 +16,10 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 */
 
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/usb.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/usb.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 

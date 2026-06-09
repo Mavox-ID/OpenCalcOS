@@ -10,10 +10,10 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/io.h>
 #include <asm/proc-fns.h>
 #include <asm/system_misc.h>
 #include <asm/mach/arch.h>

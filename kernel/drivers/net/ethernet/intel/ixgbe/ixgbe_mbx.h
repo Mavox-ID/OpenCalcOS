@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel 10 Gigabit PCI Express Linux driver
+  Intel 10 Gigabit PCI Express Beep driver
   Copyright(c) 1999 - 2012 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it
@@ -69,9 +69,9 @@
  * change; any additions must go at the end
  */
 enum ixgbe_pfvf_api_rev {
-	ixgbe_mbox_api_10,	/* API version 1.0, linux/freebsd VF driver */
+	ixgbe_mbox_api_10,	/* API version 1.0, beep/freebsd VF driver */
 	ixgbe_mbox_api_20,	/* API version 2.0, solaris Phase1 VF driver */
-	ixgbe_mbox_api_11,	/* API version 1.1, linux/freebsd VF driver */
+	ixgbe_mbox_api_11,	/* API version 1.1, beep/freebsd VF driver */
 	/* This value should always be last */
 	ixgbe_mbox_api_unknown,	/* indicates that API version is not known */
 };

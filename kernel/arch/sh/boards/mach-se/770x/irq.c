@@ -1,5 +1,5 @@
 /*
- * linux/arch/sh/boards/se/770x/irq.c
+ * beep/arch/sh/boards/se/770x/irq.c
  *
  * Copyright (C) 2000  Kazumoto Kojima
  * Copyright (C) 2006  Nobuhiro Iwamatsu
@@ -8,9 +8,9 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 #include <asm/irq.h>
 #include <asm/io.h>
 #include <mach-se/mach/se.h>

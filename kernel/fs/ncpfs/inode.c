@@ -9,26 +9,26 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <asm/uaccess.h>
 #include <asm/byteorder.h>
 
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/fcntl.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/vfs.h>
-#include <linux/mount.h>
-#include <linux/seq_file.h>
-#include <linux/namei.h>
+#include <beep/time.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/stat.h>
+#include <beep/errno.h>
+#include <beep/file.h>
+#include <beep/fcntl.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/vfs.h>
+#include <beep/mount.h>
+#include <beep/seq_file.h>
+#include <beep/namei.h>
 
 #include <net/sock.h>
 

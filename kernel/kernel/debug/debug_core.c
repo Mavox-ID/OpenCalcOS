@@ -27,32 +27,32 @@
  * version 2. This program is licensed "as is" without any warranty of any
  * kind, whether express or implied.
  */
-#include <linux/pid_namespace.h>
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/console.h>
-#include <linux/threads.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/sysrq.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/kgdb.h>
-#include <linux/kdb.h>
-#include <linux/pid.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/rcupdate.h>
+#include <beep/pid_namespace.h>
+#include <beep/clocksource.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/console.h>
+#include <beep/threads.h>
+#include <beep/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/ptrace.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/sysrq.h>
+#include <beep/reboot.h>
+#include <beep/init.h>
+#include <beep/kgdb.h>
+#include <beep/kdb.h>
+#include <beep/pid.h>
+#include <beep/smp.h>
+#include <beep/mm.h>
+#include <beep/rcupdate.h>
 
 #include <asm/cacheflush.h>
 #include <asm/byteorder.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include "debug_core.h"
 
@@ -408,7 +408,7 @@ static int kgdb_reenter_check(struct kgdb_state *ks)
 
 	/* Panic on recursive debugger calls: */
 	exception_level++;
-	addr = kgdb_arch_pc(ks->ex_vector, ks->linux_regs);
+	addr = kgdb_arch_pc(ks->ex_vector, ks->beep_regs);
 	dbg_deactivate_sw_breakpoints();
 
 	/*
@@ -419,7 +419,7 @@ static int kgdb_reenter_check(struct kgdb_state *ks)
 	 */
 	if (dbg_remove_sw_break(addr) == 0) {
 		exception_level = 0;
-		kgdb_skipexception(ks->ex_vector, ks->linux_regs);
+		kgdb_skipexception(ks->ex_vector, ks->beep_regs);
 		dbg_activate_sw_breakpoints();
 		printk(KERN_CRIT "KGDB: re-enter error: breakpoint removed %lx\n",
 			addr);
@@ -428,7 +428,7 @@ static int kgdb_reenter_check(struct kgdb_state *ks)
 		return 1;
 	}
 	dbg_remove_all_break();
-	kgdb_skipexception(ks->ex_vector, ks->linux_regs);
+	kgdb_skipexception(ks->ex_vector, ks->beep_regs);
 
 	if (exception_level > 1) {
 		dump_stack();
@@ -559,7 +559,7 @@ return_normal:
 	/*
 	 * Don't enter if we have hit a removed breakpoint.
 	 */
-	if (kgdb_skipexception(ks->ex_vector, ks->linux_regs))
+	if (kgdb_skipexception(ks->ex_vector, ks->beep_regs))
 		goto kgdb_restore;
 
 	/* Call the I/O driver's pre_exception routine */
@@ -682,7 +682,7 @@ kgdb_handle_exception(int evector, int signo, int ecode, struct pt_regs *regs)
 	ks->signo		= signo;
 	ks->err_code		= ecode;
 	ks->kgdb_usethreadid	= 0;
-	ks->linux_regs		= regs;
+	ks->beep_regs		= regs;
 
 	if (kgdb_reenter_check(ks))
 		goto out; /* Ouch, double exception ! */
@@ -720,7 +720,7 @@ int kgdb_nmicallback(int cpu, void *regs)
 
 	memset(ks, 0, sizeof(struct kgdb_state));
 	ks->cpu			= cpu;
-	ks->linux_regs		= regs;
+	ks->beep_regs		= regs;
 
 	if (kgdb_info[ks->cpu].enter_kgdb == 0 &&
 			raw_spin_is_locked(&dbg_master_lock)) {

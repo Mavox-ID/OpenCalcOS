@@ -4,7 +4,7 @@
  * Licensed under the Clear BSD license or the GPL-2 (or later)
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 /* void *strncpy(char *s1, const char *s2, size_t n);
  * R0 = address (dest)

@@ -24,9 +24,9 @@
 #include "radeon.h"
 #include "avivod.h"
 #include "atom.h"
-#include <linux/power_supply.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <beep/power_supply.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
 
 #define RADEON_IDLE_LOOP_MS 100
 #define RADEON_RECLOCK_DELAY_MS 200

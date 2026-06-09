@@ -20,16 +20,16 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/log2.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/log2.h>
 #include <sound/core.h>
 #include <sound/timer.h>
 
 #if defined(CONFIG_RTC) || defined(CONFIG_RTC_MODULE)
 
-#include <linux/mc146818rtc.h>
+#include <beep/mc146818rtc.h>
 
 #define RTC_FREQ	1024		/* default frequency */
 #define NANO_SEC	1000000000L	/* 10^9 in sec */

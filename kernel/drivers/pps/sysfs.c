@@ -2,7 +2,7 @@
  * PPS sysfs support
  *
  *
- * Copyright (C) 2007-2009   Rodolfo Giometti <giometti@linux.it>
+ * Copyright (C) 2007-2009   Rodolfo Giometti <giometti@beep.it>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -20,10 +20,10 @@
  */
 
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/pps_kernel.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/pps_kernel.h>
 
 /*
  * Attribute functions

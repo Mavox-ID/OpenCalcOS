@@ -19,12 +19,12 @@
  *
  */
 
-#include <linux/threads.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/time.h>
+#include <beep/threads.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/time.h>
 #include <sound/core.h>
 #include <sound/minors.h>
 #include <sound/info.h>

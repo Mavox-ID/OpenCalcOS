@@ -1,15 +1,15 @@
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/netdevice.h>
 
 #include "bonding.h"
 #include "bond_alb.h"
 
 #if defined(CONFIG_DEBUG_FS) && !defined(CONFIG_NET_NS)
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 static struct dentry *bonding_debug_root;
 

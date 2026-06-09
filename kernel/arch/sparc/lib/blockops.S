@@ -4,7 +4,7 @@
  * Copyright (C) 1996 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/page.h>
 
 	/* Zero out 64 bytes of memory at (buf + offset).

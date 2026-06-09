@@ -6,21 +6,21 @@
  * Author: Daniel Willerud <daniel.willerud@stericsson.com>
  * Author: Johan Palsson <johan.palsson@stericsson.com>
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/completion.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/mfd/abx500/ab8500-gpadc.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/completion.h>
+#include <beep/regulator/consumer.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/mfd/abx500.h>
+#include <beep/mfd/abx500/ab8500.h>
+#include <beep/mfd/abx500/ab8500-gpadc.h>
 
 /*
  * GPADC register offsets

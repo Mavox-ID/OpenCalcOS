@@ -10,13 +10,13 @@
  *                         2002/08/07 Erich Focht <efocht@ess.nec.de>
  */
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/node.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/module.h>
+#include <beep/cpu.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/node.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/module.h>
 #include <asm/mmzone.h>
 #include <asm/numa.h>
 

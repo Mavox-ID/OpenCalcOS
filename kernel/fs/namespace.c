@@ -1,5 +1,5 @@
 /*
- *  linux/fs/namespace.c
+ *  beep/fs/namespace.c
  *
  * (C) Copyright Al Viro 2000, 2001
  *	Released under GPL v2.
@@ -8,20 +8,20 @@
  * Heavily rewritten.
  */
 
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/capability.h>
-#include <linux/mnt_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/namei.h>
-#include <linux/security.h>
-#include <linux/idr.h>
-#include <linux/acct.h>		/* acct_auto_close_mnt */
-#include <linux/ramfs.h>	/* init_rootfs */
-#include <linux/fs_struct.h>	/* get_fs_root et.al. */
-#include <linux/fsnotify.h>	/* fsnotify_vfsmount_delete */
-#include <linux/uaccess.h>
-#include <linux/proc_fs.h>
+#include <beep/syscalls.h>
+#include <beep/export.h>
+#include <beep/capability.h>
+#include <beep/mnt_namespace.h>
+#include <beep/user_namespace.h>
+#include <beep/namei.h>
+#include <beep/security.h>
+#include <beep/idr.h>
+#include <beep/acct.h>		/* acct_auto_close_mnt */
+#include <beep/ramfs.h>	/* init_rootfs */
+#include <beep/fs_struct.h>	/* get_fs_root et.al. */
+#include <beep/fsnotify.h>	/* fsnotify_vfsmount_delete */
+#include <beep/uaccess.h>
+#include <beep/proc_fs.h>
 #include "pnode.h"
 #include "internal.h"
 

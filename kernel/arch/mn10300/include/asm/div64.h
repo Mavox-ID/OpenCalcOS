@@ -11,7 +11,7 @@
 #ifndef _ASM_DIV64
 #define _ASM_DIV64
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 extern void ____unhandled_size_in_do_div___(void);
 

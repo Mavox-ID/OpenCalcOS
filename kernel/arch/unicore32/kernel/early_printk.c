@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/early_printk.c
+ * beep/arch/unicore32/kernel/early_printk.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -9,9 +9,9 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/string.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/string.h>
 #include <mach/ocd.h>
 
 /* On-Chip-Debugger functions */

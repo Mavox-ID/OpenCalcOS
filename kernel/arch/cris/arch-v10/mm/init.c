@@ -1,11 +1,11 @@
 /*
- *  linux/arch/cris/arch-v10/mm/init.c
+ *  beep/arch/cris/arch-v10/mm/init.c
  *
  */
-#include <linux/mmzone.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/mm.h>
+#include <beep/mmzone.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/mm.h>
 #include <asm/pgtable.h>
 #include <asm/page.h>
 #include <asm/types.h>

@@ -28,17 +28,17 @@
 #ifndef _DVB_FRONTEND_H_
 #define _DVB_FRONTEND_H_
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/ioctl.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/ioctl.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 #include "dvbdev.h"
 

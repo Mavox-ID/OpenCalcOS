@@ -22,10 +22,10 @@
  */
 
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/pci.h>
 
 #include <xen/platform_pci.h>
 #include <xen/grant_table.h>

@@ -10,9 +10,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

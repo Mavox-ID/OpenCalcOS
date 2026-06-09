@@ -1,7 +1,7 @@
 /* vi: set sw=4 ts=4: */
 /*
  * Support code for the hexdump and od applets,
- * based on code from util-linux v 2.11l
+ * based on code from util-beep v 2.11l
  *
  * Copyright (c) 1989
  * The Regents of the University of California.  All rights reserved.
@@ -783,7 +783,7 @@ void FAST_FUNC bb_dump_add(dumper_t* pub_dumper, const char *fmt)
 // Other than this, formats can be pretty much jammed together:
 // "%07_ax:"8/2 "%04x|""\n"
 // but this space is required. The check *can* be removed, but
-// keeping it to stay compat with util-linux hexdump.
+// keeping it to stay compat with util-beep hexdump.
 			tfu->bcnt = atoi(savep);
 			/* skip trailing white space */
 			p = skip_whitespace(p + 1);

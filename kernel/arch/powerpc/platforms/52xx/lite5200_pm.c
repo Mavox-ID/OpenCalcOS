@@ -1,5 +1,5 @@
-#include <linux/init.h>
-#include <linux/suspend.h>
+#include <beep/init.h>
+#include <beep/suspend.h>
 #include <asm/io.h>
 #include <asm/time.h>
 #include <asm/mpc52xx.h>

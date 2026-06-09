@@ -1,6 +1,6 @@
 ################################################################################
 #
-# Intel PRO/10GbE Linux driver
+# Intel PRO/10GbE Beep driver
 # Copyright(c) 1999 - 2008 Intel Corporation.
 #
 # This program is free software; you can redistribute it and/or modify it
@@ -20,7 +20,7 @@
 # the file called "COPYING".
 #
 # Contact Information:
-# Linux NICS <linux.nics@intel.com>
+# Beep NICS <beep.nics@intel.com>
 # e1000-devel Mailing List <e1000-devel@lists.sourceforge.net>
 # Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
 #

@@ -19,22 +19,22 @@
  * by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500-sysctrl.h>
-#include <linux/mfd/abx500/ab8500-codec.h>
-#include <linux/regulator/consumer.h>
-#include <linux/of.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/platform_device.h>
+#include <beep/mutex.h>
+#include <beep/mfd/abx500/ab8500.h>
+#include <beep/mfd/abx500.h>
+#include <beep/mfd/abx500/ab8500-sysctrl.h>
+#include <beep/mfd/abx500/ab8500-codec.h>
+#include <beep/regulator/consumer.h>
+#include <beep/of.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

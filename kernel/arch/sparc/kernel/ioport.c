@@ -25,19 +25,19 @@
  * <zaitcev> Sounds reasonable
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/pci.h>		/* struct pci_dev */
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/scatterlist.h>
-#include <linux/of_device.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/ioport.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/pci.h>		/* struct pci_dev */
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/scatterlist.h>
+#include <beep/of_device.h>
 
 #include <asm/io.h>
 #include <asm/vaddrs.h>

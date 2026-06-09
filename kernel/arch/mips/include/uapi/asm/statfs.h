@@ -8,12 +8,12 @@
 #ifndef _ASM_STATFS_H
 #define _ASM_STATFS_H
 
-#include <linux/posix_types.h>
+#include <beep/posix_types.h>
 #include <asm/sgidefs.h>
 
 #ifndef __KERNEL_STRICT_NAMES
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 typedef __kernel_fsid_t        fsid_t;
 
@@ -30,7 +30,7 @@ struct statfs {
 	long		f_ffree;
 	long		f_bavail;
 
-	/* Linux specials */
+	/* Beep specials */
 	__kernel_fsid_t	f_fsid;
 	long		f_namelen;
 	long		f_flags;
@@ -72,7 +72,7 @@ struct statfs64 {			/* Same as struct statfs */
 	long		f_ffree;
 	long		f_bavail;
 
-	/* Linux specials */
+	/* Beep specials */
 	__kernel_fsid_t	f_fsid;
 	long		f_namelen;
 	long		f_flags;

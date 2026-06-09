@@ -28,10 +28,10 @@
 #ifndef _MEDIA_DEVNODE_H
 #define _MEDIA_DEVNODE_H
 
-#include <linux/poll.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
+#include <beep/poll.h>
+#include <beep/fs.h>
+#include <beep/device.h>
+#include <beep/cdev.h>
 
 /*
  * Flag to mark the media_devnode struct as registered. Drivers must not touch

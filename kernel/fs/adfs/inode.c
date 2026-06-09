@@ -1,5 +1,5 @@
 /*
- *  linux/fs/adfs/inode.c
+ *  beep/fs/adfs/inode.c
  *
  *  Copyright (C) 1997-1999 Russell King
  *
@@ -7,8 +7,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
+#include <beep/buffer_head.h>
+#include <beep/writeback.h>
 #include "adfs.h"
 
 /*
@@ -83,7 +83,7 @@ static const struct address_space_operations adfs_aops = {
 };
 
 /*
- * Convert ADFS attributes and filetype to Linux permission.
+ * Convert ADFS attributes and filetype to Beep permission.
  */
 static umode_t
 adfs_atts2mode(struct super_block *sb, struct inode *inode)
@@ -126,7 +126,7 @@ adfs_atts2mode(struct super_block *sb, struct inode *inode)
 }
 
 /*
- * Convert Linux permission to ADFS attribute.  We try to do the reverse
+ * Convert Beep permission to ADFS attribute.  We try to do the reverse
  * of atts2mode, but there is not a 1:1 translation.
  */
 static int

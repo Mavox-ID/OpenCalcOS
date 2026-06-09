@@ -7,35 +7,35 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/dmapool.h>
-#include <linux/mempool.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_vlan.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/prefetch.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/dmapool.h>
+#include <beep/mempool.h>
+#include <beep/spinlock.h>
+#include <beep/kthread.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/ip.h>
+#include <beep/in.h>
+#include <beep/if_arp.h>
+#include <beep/if_ether.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/skbuff.h>
+#include <beep/rtnetlink.h>
+#include <beep/if_vlan.h>
+#include <beep/delay.h>
+#include <beep/mm.h>
+#include <beep/prefetch.h>
 
 #include "qla3xxx.h"
 

@@ -27,7 +27,7 @@
 #ifndef __RTS51X_DEBUG_H
 #define __RTS51X_DEBUG_H
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 #define RTS51X_TIP "rts51x: "
 

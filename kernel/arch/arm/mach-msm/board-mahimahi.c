@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-msm/board-mahimahi.c
+/* beep/arch/arm/mach-msm/board-mahimahi.c
  *
  * Copyright (C) 2009 Google, Inc.
  * Copyright (C) 2009 HTC Corporation.
@@ -15,13 +15,13 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

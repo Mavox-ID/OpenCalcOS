@@ -8,7 +8,7 @@
 #ifndef _JZ4740_PCM_H
 #define _JZ4740_PCM_H
 
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 #include <asm/mach-jz4740/dma.h>
 
 

@@ -17,19 +17,19 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  */
 
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/wait.h>
-#include <linux/spi/spi.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/spi/spidev.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/wait.h>
+#include <beep/spi/spi.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/spi/spidev.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
 
-#include <linux/dmaengine.h>
-#include <linux/pch_dma.h>
+#include <beep/dmaengine.h>
+#include <beep/pch_dma.h>
 
 /* Register offsets */
 #define PCH_SPCR		0x00	/* SPI control register */

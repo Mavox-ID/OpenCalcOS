@@ -11,7 +11,7 @@
 #ifndef __OMAP2_GPMC_H
 #define __OMAP2_GPMC_H
 
-#include <linux/platform_data/mtd-nand-omap2.h>
+#include <beep/platform_data/mtd-nand-omap2.h>
 
 /* Maximum Number of Chip Selects */
 #define GPMC_CS_NUM		8

@@ -5,7 +5,7 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/smp.h>
+#include <beep/smp.h>
 #include <asm/blackfin.h>
 #include <asm/cacheflush.h>
 #include <mach/pll.h>

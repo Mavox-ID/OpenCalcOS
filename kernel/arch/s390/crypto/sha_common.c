@@ -14,7 +14,7 @@
  */
 
 #include <crypto/internal/hash.h>
-#include <linux/module.h>
+#include <beep/module.h>
 #include "sha.h"
 #include "crypt_s390.h"
 

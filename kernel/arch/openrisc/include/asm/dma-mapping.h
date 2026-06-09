@@ -1,7 +1,7 @@
 /*
- * OpenRISC Linux
+ * OpenRISC Beep
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -22,10 +22,10 @@
  * Documentation/DMA-API.txt for documentation.
  */
 
-#include <linux/dma-debug.h>
+#include <beep/dma-debug.h>
 #include <asm-generic/dma-coherent.h>
-#include <linux/kmemcheck.h>
-#include <linux/dma-mapping.h>
+#include <beep/kmemcheck.h>
+#include <beep/dma-mapping.h>
 
 #define DMA_ERROR_CODE		(~(dma_addr_t)0x0)
 

@@ -10,10 +10,10 @@
  * any later version.
  */
 
-#include <linux/atomic.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <beep/atomic.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
 #include "hid-wiimote.h"
 
 struct wiimote_ext {

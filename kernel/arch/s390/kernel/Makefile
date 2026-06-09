@@ -1,5 +1,5 @@
 #
-# Makefile for the linux kernel.
+# Makefile for the beep kernel.
 #
 
 ifdef CONFIG_FUNCTION_TRACER
@@ -29,7 +29,7 @@ obj-y	+= $(if $(CONFIG_64BIT),entry64.o,entry.o)
 obj-y	+= $(if $(CONFIG_64BIT),reipl64.o,reipl.o)
 obj-y	+= $(if $(CONFIG_64BIT),relocate_kernel64.o,relocate_kernel.o)
 
-extra-y				+= head.o vmlinux.lds
+extra-y				+= head.o vmbeep.lds
 extra-y				+= $(if $(CONFIG_64BIT),head64.o,head31.o)
 
 obj-$(CONFIG_MODULES)		+= s390_ksyms.o module.o
@@ -38,7 +38,7 @@ obj-$(CONFIG_SCHED_BOOK)	+= topology.o
 obj-$(CONFIG_HIBERNATION)	+= suspend.o swsusp_asm64.o
 obj-$(CONFIG_AUDIT)		+= audit.o
 compat-obj-$(CONFIG_AUDIT)	+= compat_audit.o
-obj-$(CONFIG_COMPAT)		+= compat_linux.o compat_signal.o \
+obj-$(CONFIG_COMPAT)		+= compat_beep.o compat_signal.o \
 					compat_wrapper.o compat_exec_domain.o \
 					$(compat-obj-y)
 

@@ -5,11 +5,11 @@
  * License terms: GNU General Public License (GPL) version 2
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/amba/bus.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/amba/bus.h>
 
 #include <mach/hardware.h>
 #include <mach/setup.h>

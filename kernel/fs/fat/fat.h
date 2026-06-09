@@ -1,14 +1,14 @@
 #ifndef _FAT_H
 #define _FAT_H
 
-#include <linux/buffer_head.h>
-#include <linux/string.h>
-#include <linux/nls.h>
-#include <linux/fs.h>
-#include <linux/hash.h>
-#include <linux/mutex.h>
-#include <linux/ratelimit.h>
-#include <linux/msdos_fs.h>
+#include <beep/buffer_head.h>
+#include <beep/string.h>
+#include <beep/nls.h>
+#include <beep/fs.h>
+#include <beep/hash.h>
+#include <beep/mutex.h>
+#include <beep/ratelimit.h>
+#include <beep/msdos_fs.h>
 
 /*
  * vfat shortname flags

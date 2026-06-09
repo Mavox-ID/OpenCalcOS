@@ -12,22 +12,22 @@
  *  Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/un.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/un.h>
+#include <beep/in.h>
+#include <beep/in6.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 #include <net/ipv6.h>
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/xprtsock.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/sched.h>
+#include <beep/sunrpc/xprtsock.h>
 
 #include "netns.h"
 
@@ -961,7 +961,7 @@ out_fail:
 
 /*
  * Not all rpcbind procedures described in RFC 1833 are implemented
- * since the Linux kernel RPC code requires only these.
+ * since the Beep kernel RPC code requires only these.
  */
 
 static struct rpc_procinfo rpcb_procedures2[] = {

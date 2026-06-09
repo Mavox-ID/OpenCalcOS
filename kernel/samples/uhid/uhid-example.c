@@ -24,7 +24,7 @@
  *
  * If uhid is not available as /dev/uhid, then you can pass a different path as
  * first argument.
- * If <linux/uhid.h> is not installed in /usr, then compile this with:
+ * If <beep/uhid.h> is not installed in /usr, then compile this with:
  *   gcc -o ./uhid_test -Wall -I./include ./samples/uhid/uhid-example.c
  * And ignore the warning about kernel headers. However, it is recommended to
  * use the installed uhid.h if available.
@@ -39,7 +39,7 @@
 #include <string.h>
 #include <termios.h>
 #include <unistd.h>
-#include <linux/uhid.h>
+#include <beep/uhid.h>
 
 /* HID Report Desciptor
  * We emulate a basic 3 button mouse with wheel. This is the report-descriptor

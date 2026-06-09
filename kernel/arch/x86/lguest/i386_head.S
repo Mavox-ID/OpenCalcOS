@@ -1,5 +1,5 @@
-#include <linux/linkage.h>
-#include <linux/lguest.h>
+#include <beep/linkage.h>
+#include <beep/lguest.h>
 #include <asm/lguest_hcall.h>
 #include <asm/asm-offsets.h>
 #include <asm/thread_info.h>
@@ -145,7 +145,7 @@ ENTRY(lg_restore_fl)
  * processor is the one to push eflags onto the stack, and the interrupt bit
  * will be 1 (in reality, interrupts are always enabled in the Guest).
  *
- * This turns out to be harmless: the only trap which should happen under Linux
+ * This turns out to be harmless: the only trap which should happen under Beep
  * with interrupts disabled is Page Fault (due to our lazy mapping of vmalloc
  * regions), which has to be reflected through the Host anyway.  If another
  * trap *does* go off when interrupts are disabled, the Guest will panic, and

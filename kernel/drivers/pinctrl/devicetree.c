@@ -16,10 +16,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/of.h>
+#include <beep/pinctrl/pinctrl.h>
+#include <beep/slab.h>
 
 #include "core.h"
 #include "devicetree.h"

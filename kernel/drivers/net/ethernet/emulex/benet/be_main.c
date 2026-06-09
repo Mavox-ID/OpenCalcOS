@@ -8,19 +8,19 @@
  * Public License is included in this distribution in the file called COPYING.
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * beep-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
  * Costa Mesa, CA 92626
  */
 
-#include <linux/prefetch.h>
-#include <linux/module.h>
+#include <beep/prefetch.h>
+#include <beep/module.h>
 #include "be.h"
 #include "be_cmds.h"
 #include <asm/div64.h>
-#include <linux/aer.h>
+#include <beep/aer.h>
 
 MODULE_VERSION(DRV_VER);
 MODULE_DEVICE_TABLE(pci, be_dev_ids);

@@ -13,16 +13,16 @@
 #ifndef _FIREDTV_H
 #define _FIREDTV_H
 
-#include <linux/time.h>
-#include <linux/dvb/dmx.h>
-#include <linux/dvb/frontend.h>
-#include <linux/list.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/spinlock_types.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <beep/time.h>
+#include <beep/dvb/dmx.h>
+#include <beep/dvb/frontend.h>
+#include <beep/list.h>
+#include <beep/mod_devicetable.h>
+#include <beep/mutex.h>
+#include <beep/spinlock_types.h>
+#include <beep/types.h>
+#include <beep/wait.h>
+#include <beep/workqueue.h>
 
 #include <demux.h>
 #include <dmxdev.h>

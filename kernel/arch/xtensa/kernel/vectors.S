@@ -42,7 +42,7 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/ptrace.h>
 #include <asm/current.h>
 #include <asm/asm-offsets.h>
@@ -231,7 +231,7 @@ ENTRY(_DoubleExceptionVector)
 	/* This explicit literal and the following references to it are made
 	 * in order to fit DoubleExceptionVector.literals into the available
 	 * 16-byte gap before DoubleExceptionVector.text in the absence of
-	 * link time relaxation. See kernel/vmlinux.lds.S
+	 * link time relaxation. See kernel/vmbeep.lds.S
 	 */
 	.literal .Lexc_table, exc_table
 	l32r	a2, .Lexc_table

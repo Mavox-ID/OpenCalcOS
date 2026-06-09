@@ -7,20 +7,20 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/clk.h>
-#include <linux/etherdevice.h>
-#include <linux/bootmem.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/linkage.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/atmel-mci.h>
-#include <linux/atmel-pwm-bl.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
+#include <beep/clk.h>
+#include <beep/etherdevice.h>
+#include <beep/bootmem.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/types.h>
+#include <beep/linkage.h>
+#include <beep/gpio.h>
+#include <beep/leds.h>
+#include <beep/atmel-mci.h>
+#include <beep/atmel-pwm-bl.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/ads7846.h>
 
 #include <sound/atmel-abdac.h>
 

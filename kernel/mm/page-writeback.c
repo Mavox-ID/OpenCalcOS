@@ -11,30 +11,30 @@
  *		Initial version
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/init.h>
-#include <linux/backing-dev.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/blkdev.h>
-#include <linux/mpage.h>
-#include <linux/rmap.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/smp.h>
-#include <linux/sysctl.h>
-#include <linux/cpu.h>
-#include <linux/syscalls.h>
-#include <linux/buffer_head.h> /* __set_page_dirty_buffers */
-#include <linux/pagevec.h>
-#include <linux/timer.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/spinlock.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/slab.h>
+#include <beep/pagemap.h>
+#include <beep/writeback.h>
+#include <beep/init.h>
+#include <beep/backing-dev.h>
+#include <beep/task_io_accounting_ops.h>
+#include <beep/blkdev.h>
+#include <beep/mpage.h>
+#include <beep/rmap.h>
+#include <beep/percpu.h>
+#include <beep/notifier.h>
+#include <beep/smp.h>
+#include <beep/sysctl.h>
+#include <beep/cpu.h>
+#include <beep/syscalls.h>
+#include <beep/buffer_head.h> /* __set_page_dirty_buffers */
+#include <beep/pagevec.h>
+#include <beep/timer.h>
 #include <trace/events/writeback.h>
 
 /*

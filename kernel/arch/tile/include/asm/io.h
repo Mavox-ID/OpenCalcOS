@@ -15,8 +15,8 @@
 #ifndef _ASM_TILE_IO_H
 #define _ASM_TILE_IO_H
 
-#include <linux/kernel.h>
-#include <linux/bug.h>
+#include <beep/kernel.h>
+#include <beep/bug.h>
 #include <asm/page.h>
 
 #define IO_SPACE_LIMIT 0xfffffffful

@@ -1,5 +1,5 @@
 /*
- * Linux ARCnet driver - COM20020 chipset support
+ * Beep ARCnet driver - COM20020 chipset support
  * 
  * Written 1997 by David Woodhouse.
  * Written 1994-1999 by Avery Pennarun.
@@ -25,19 +25,19 @@
  *
  * **********************
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/bootmem.h>
-#include <linux/arcdevice.h>
-#include <linux/com20020.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/ioport.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/bootmem.h>
+#include <beep/arcdevice.h>
+#include <beep/com20020.h>
 
 #include <asm/io.h>
 

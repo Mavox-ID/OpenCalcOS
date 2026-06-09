@@ -36,20 +36,20 @@
  * the quota file, so it is not being constantly read.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/sort.h>
-#include <linux/fs.h>
-#include <linux/bio.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/quota.h>
-#include <linux/dqblk_xfs.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
+#include <beep/buffer_head.h>
+#include <beep/sort.h>
+#include <beep/fs.h>
+#include <beep/bio.h>
+#include <beep/gfs2_ondisk.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
+#include <beep/quota.h>
+#include <beep/dqblk_xfs.h>
 
 #include "gfs2.h"
 #include "incore.h"

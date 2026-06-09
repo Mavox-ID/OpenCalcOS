@@ -4,8 +4,8 @@
 #if !defined(_TRACE_KMEM_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_KMEM_H
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <beep/types.h>
+#include <beep/tracepoint.h>
 #include <trace/events/gfpflags.h>
 
 DECLARE_EVENT_CLASS(kmem_alloc,

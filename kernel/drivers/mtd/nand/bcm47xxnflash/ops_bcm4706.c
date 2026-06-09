@@ -9,10 +9,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/bcma/bcma.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/bcma/bcma.h>
 
 #include "bcm47xxnflash.h"
 

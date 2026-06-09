@@ -12,14 +12,14 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/memory.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/nand.h>
-#include <linux/gpio.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/memory.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/nand.h>
+#include <beep/gpio.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

@@ -39,8 +39,8 @@
  * under either the MPL or the GPL.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/delay.h>
 #include "hermes.h"
 #include "hermes_dld.h"
 

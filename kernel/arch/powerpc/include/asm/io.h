@@ -28,10 +28,10 @@ extern struct pci_dev *isa_bridge_pcidev;
 #define arch_has_dev_port()	(isa_bridge_pcidev != NULL)
 #endif
 
-#include <linux/device.h>
-#include <linux/io.h>
+#include <beep/device.h>
+#include <beep/io.h>
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/page.h>
 #include <asm/byteorder.h>
 #include <asm/synch.h>
@@ -91,7 +91,7 @@ extern resource_size_t isa_mem_base;
  *
  * Those operate directly on a kernel virtual address. Note that the prototype
  * for the out_* accessors has the arguments in opposite order from the usual
- * linux PCI accessors. Unlike those, they take the address first and the value
+ * beep PCI accessors. Unlike those, they take the address first and the value
  * next.
  *
  * Note: I might drop the _ns suffix on the stream operations soon as it is
@@ -221,8 +221,8 @@ extern void _memcpy_toio(volatile void __iomem *dest, const void *src,
  *
  * PCI and standard ISA accessors
  *
- * Those are globally defined linux accessors for devices on PCI or ISA
- * busses. They follow the Linux defined semantics. The current implementation
+ * Those are globally defined beep accessors for devices on PCI or ISA
+ * busses. They follow the Beep defined semantics. The current implementation
  * for PowerPC is as close as possible to the x86 version of these, and thus
  * provides fairly heavy weight barriers for the non-raw versions
  *

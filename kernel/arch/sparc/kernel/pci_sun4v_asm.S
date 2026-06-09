@@ -3,7 +3,7 @@
  * Copyright (C) 2006, 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/hypervisor.h>
 
 	/* %o0: devhandle

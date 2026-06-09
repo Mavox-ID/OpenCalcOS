@@ -1,4 +1,4 @@
-#include <linux/module.h>
+#include <beep/module.h>
 #include "libgcc.h"
 
 word_type __ucmpdi2(unsigned long long a, unsigned long long b)

@@ -1,7 +1,7 @@
 /*
  * arch/arm/mach-w90x900/cpu.h
  *
- * Based on linux/include/asm-arm/plat-s3c24xx/cpu.h by Ben Dooks
+ * Based on beep/include/asm-arm/plat-s3c24xx/cpu.h by Ben Dooks
  *
  * Copyright (c) 2008 Nuvoton technology corporation
  * All rights reserved.

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-integrator/core.c
+ *  beep/arch/arm/mach-integrator/core.c
  *
  *  Copyright (C) 2000-2003 Deep Blue Solutions Ltd
  *
@@ -7,21 +7,21 @@
  * it under the terms of the GNU General Public License version 2, as
  * published by the Free Software Foundation.
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/memblock.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/serial.h>
-#include <linux/io.h>
-#include <linux/stat.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/export.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/memblock.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/serial.h>
+#include <beep/io.h>
+#include <beep/stat.h>
 
 #include <mach/hardware.h>
 #include <mach/platform.h>

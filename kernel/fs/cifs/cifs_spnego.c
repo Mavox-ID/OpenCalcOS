@@ -19,12 +19,12 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 #include <keys/user-type.h>
-#include <linux/key-type.h>
-#include <linux/inet.h>
+#include <beep/key-type.h>
+#include <beep/inet.h>
 #include "cifsglob.h"
 #include "cifs_spnego.h"
 #include "cifs_debug.h"
@@ -149,7 +149,7 @@ cifs_get_spnego_key(struct cifs_ses *sesInfo)
 		goto out;
 
 	dp = description + strlen(description);
-	sprintf(dp, ";uid=0x%x", sesInfo->linux_uid);
+	sprintf(dp, ";uid=0x%x", sesInfo->beep_uid);
 
 	dp = description + strlen(description);
 	sprintf(dp, ";creduid=0x%x", sesInfo->cred_uid);

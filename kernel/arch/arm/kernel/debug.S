@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/debug.S
+ *  beep/arch/arm/kernel/debug.S
  *
  *  Copyright (C) 1994-1999 Russell King
  *
@@ -9,7 +9,7 @@
  *
  *  32-bit debugging code
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 
 		.text

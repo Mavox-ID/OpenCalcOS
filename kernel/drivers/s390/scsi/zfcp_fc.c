@@ -9,9 +9,9 @@
 #define KMSG_COMPONENT "zfcp"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/utsname.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/utsname.h>
 #include <scsi/fc/fc_els.h>
 #include <scsi/libfc.h>
 #include "zfcp_ext.h"
@@ -802,7 +802,7 @@ static void zfcp_fc_rspn(struct zfcp_adapter *adapter,
  * the hardware using the GSPN request and update the fc_host
  * symbolic_name sysfs attribute. When running in NPIV mode (and hence
  * the port name is unique for this system), update the symbolic port
- * name to add Linux specific information and update the FC nameserver
+ * name to add Beep specific information and update the FC nameserver
  * using the RSPN request.
  */
 void zfcp_fc_sym_name_update(struct work_struct *work)

@@ -17,15 +17,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/debugfs.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/seq_file.h>
+#include <beep/spinlock.h>
 
 #include <mach/clk.h>
 #include <mach/powergate.h>

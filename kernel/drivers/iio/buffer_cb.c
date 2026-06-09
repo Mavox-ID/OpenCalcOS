@@ -1,9 +1,9 @@
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/consumer.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/export.h>
+#include <beep/iio/buffer.h>
+#include <beep/iio/consumer.h>
 
 struct iio_cb_buffer {
 	struct iio_buffer buffer;

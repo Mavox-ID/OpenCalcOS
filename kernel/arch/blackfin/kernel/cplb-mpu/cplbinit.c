@@ -6,7 +6,7 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <asm/blackfin.h>
 #include <asm/cplb.h>

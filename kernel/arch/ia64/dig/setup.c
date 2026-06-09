@@ -4,21 +4,21 @@
  * Copyright (C) 1999 Intel Corp.
  * Copyright (C) 1999, 2001 Hewlett-Packard Co
  * Copyright (C) 1999, 2001, 2003 David Mosberger-Tang <davidm@hpl.hp.com>
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA Beep Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@vabeep.com>
  * Copyright (C) 1999 Vijay Chander <vijay@engr.sgi.com>
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/kdev_t.h>
-#include <linux/string.h>
-#include <linux/screen_info.h>
-#include <linux/console.h>
-#include <linux/timex.h>
-#include <linux/sched.h>
-#include <linux/root_dev.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/kdev_t.h>
+#include <beep/string.h>
+#include <beep/screen_info.h>
+#include <beep/console.h>
+#include <beep/timex.h>
+#include <beep/sched.h>
+#include <beep/root_dev.h>
 
 #include <asm/io.h>
 #include <asm/machvec.h>
@@ -31,7 +31,7 @@ dig_setup (char **cmdline_p)
 
 	/*
 	 * Default to /dev/sda2.  This assumes that the EFI partition
-	 * is physical disk 1 partition 1 and the Linux root disk is
+	 * is physical disk 1 partition 1 and the Beep root disk is
 	 * physical disk 1 partition 2.
 	 */
 	ROOT_DEV = Root_SDA2;		/* default to second partition on first drive */

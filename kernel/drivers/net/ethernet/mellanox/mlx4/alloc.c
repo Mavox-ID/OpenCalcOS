@@ -31,13 +31,13 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/bitmap.h>
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/export.h>
+#include <beep/bitmap.h>
+#include <beep/dma-mapping.h>
+#include <beep/vmalloc.h>
 
 #include "mlx4.h"
 

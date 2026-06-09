@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/entry-common.S
+ *  beep/arch/arm/kernel/entry-common.S
  *
  *  Copyright (C) 2000 Russell King
  *

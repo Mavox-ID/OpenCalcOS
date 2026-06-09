@@ -1,5 +1,5 @@
 /*
- * Linux/PA-RISC Project (http://www.parisc-linux.org/)
+ * Beep/PA-RISC Project (http://www.parisc-beep.org/)
  *
  * Floating-point emulation code
  *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>

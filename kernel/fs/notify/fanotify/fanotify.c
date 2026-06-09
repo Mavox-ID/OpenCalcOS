@@ -1,13 +1,13 @@
-#include <linux/fanotify.h>
-#include <linux/fdtable.h>
-#include <linux/fsnotify_backend.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h> /* UINT_MAX */
-#include <linux/mount.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <beep/fanotify.h>
+#include <beep/fdtable.h>
+#include <beep/fsnotify_backend.h>
+#include <beep/init.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h> /* UINT_MAX */
+#include <beep/mount.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/wait.h>
 
 static bool should_merge(struct fsnotify_event *old, struct fsnotify_event *new)
 {

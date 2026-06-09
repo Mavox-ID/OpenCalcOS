@@ -6,9 +6,9 @@
  * Portions derived from work (c) 1995,1996 Christian Vogelgsang.
  */
 
-#include <linux/string.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
+#include <beep/string.h>
+#include <beep/pagemap.h>
+#include <beep/buffer_head.h>
 #include "efs.h"
 
 static int efs_symlink_readpage(struct file *file, struct page *page)

@@ -24,11 +24,11 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/personality.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/limits.h>
-#include <linux/sched.h>
+#include <beep/personality.h>
+#include <beep/mm.h>
+#include <beep/random.h>
+#include <beep/limits.h>
+#include <beep/sched.h>
 #include <asm/elf.h>
 
 struct __read_mostly va_alignment va_align = {

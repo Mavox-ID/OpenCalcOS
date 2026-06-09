@@ -24,14 +24,14 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/completion.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
+#include <beep/workqueue.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
 
 #include <asm/io.h>
 #include <asm/pmi.h>

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-realview/hotplug.c
+ *  beep/arch/arm/mach-realview/hotplug.c
  *
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
@@ -8,9 +8,9 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/smp.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/smp.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>

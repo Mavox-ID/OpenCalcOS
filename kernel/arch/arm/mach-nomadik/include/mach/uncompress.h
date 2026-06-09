@@ -25,7 +25,7 @@
 
 /* we need the constants in amba/serial.h, but it refers to amba_device */
 struct amba_device;
-#include <linux/amba/serial.h>
+#include <beep/amba/serial.h>
 
 #define NOMADIK_UART_DR		(void __iomem *)0x101FB000
 #define NOMADIK_UART_LCRH	(void __iomem *)0x101FB02c

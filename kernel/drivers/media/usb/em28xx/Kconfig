@@ -10,7 +10,7 @@ config VIDEO_EM28XX
 	select VIDEO_MT9V011 if MEDIA_SUBDRV_AUTOSELECT
 
 	---help---
-	  This is a video4linux driver for Empia 28xx based TV cards.
+	  This is a video4beep driver for Empia 28xx based TV cards.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called em28xx

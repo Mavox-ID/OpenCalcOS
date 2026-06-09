@@ -9,11 +9,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/usb.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/idr.h>
+#include <beep/usb.h>
 #include "usb.h"
 
 struct ep_device {

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/cm-x270.c
+ * beep/arch/arm/mach-pxa/cm-x270.c
  *
  * Copyright (C) 2007, 2008 CompuLab, Ltd.
  * Mike Rapoport <mike@compulab.co.il>
@@ -9,21 +9,21 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
 
-#include <linux/rtc-v3020.h>
+#include <beep/rtc-v3020.h>
 #include <video/mbxfb.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/spi/libertas_spi.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/pxa2xx_spi.h>
+#include <beep/spi/libertas_spi.h>
 
 #include <mach/pxa27x.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/mmc-pxamci.h>
 
 #include "generic.h"
 

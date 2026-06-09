@@ -35,26 +35,26 @@
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/ratelimit.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfs.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_page.h>
-#include <linux/nfs_mount.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/module.h>
-#include <linux/nfs_idmap.h>
-#include <linux/xattr.h>
-#include <linux/utsname.h>
-#include <linux/freezer.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/ratelimit.h>
+#include <beep/printk.h>
+#include <beep/slab.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/nfs.h>
+#include <beep/nfs4.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_page.h>
+#include <beep/nfs_mount.h>
+#include <beep/namei.h>
+#include <beep/mount.h>
+#include <beep/module.h>
+#include <beep/nfs_idmap.h>
+#include <beep/xattr.h>
+#include <beep/utsname.h>
+#include <beep/freezer.h>
 
 #include "nfs4_fs.h"
 #include "delegation.h"
@@ -341,7 +341,7 @@ static int nfs4_handle_exception(struct nfs_server *server, int errorcode, struc
 			exception->retry = 1;
 			break;
 		case -NFS4ERR_BADOWNER:
-			/* The following works around a Linux server bug! */
+			/* The following works around a Beep server bug! */
 		case -NFS4ERR_BADNAME:
 			if (server->caps & NFS_CAP_UIDGID_NOMAP) {
 				server->caps &= ~NFS_CAP_UIDGID_NOMAP;
@@ -4014,7 +4014,7 @@ nfs4_init_nonuniform_client_string(const struct nfs_client *clp,
 	unsigned int result;
 
 	rcu_read_lock();
-	result = scnprintf(buf, len, "Linux NFSv4.0 %s/%s %s",
+	result = scnprintf(buf, len, "Beep NFSv4.0 %s/%s %s",
 				clp->cl_ipaddr,
 				rpc_peeraddr2str(clp->cl_rpcclient,
 							RPC_DISPLAY_ADDR),
@@ -4032,7 +4032,7 @@ nfs4_init_uniform_client_string(const struct nfs_client *clp,
 
 	if (nfs4_client_id_uniquifier[0] != '\0')
 		nodename = nfs4_client_id_uniquifier;
-	return scnprintf(buf, len, "Linux NFSv%u.%u %s",
+	return scnprintf(buf, len, "Beep NFSv%u.%u %s",
 				clp->rpc_ops->version, clp->cl_minorversion,
 				nodename);
 }

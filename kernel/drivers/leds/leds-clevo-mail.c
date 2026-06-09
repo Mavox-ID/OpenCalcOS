@@ -1,15 +1,15 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/leds.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/leds.h>
 
-#include <linux/io.h>
-#include <linux/dmi.h>
+#include <beep/io.h>
+#include <beep/dmi.h>
 
-#include <linux/i8042.h>
+#include <beep/i8042.h>
 
 #define CLEVO_MAIL_LED_OFF		0x0084
 #define CLEVO_MAIL_LED_BLINK_1HZ	0x008A

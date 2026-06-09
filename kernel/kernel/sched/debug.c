@@ -10,11 +10,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/proc_fs.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/kallsyms.h>
-#include <linux/utsname.h>
+#include <beep/proc_fs.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/kallsyms.h>
+#include <beep/utsname.h>
 
 #include "sched.h"
 

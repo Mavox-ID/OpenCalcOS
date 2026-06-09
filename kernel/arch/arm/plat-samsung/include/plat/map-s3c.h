@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/include/plat/map-s3c.h
+/* beep/arch/arm/plat-samsung/include/plat/map-s3c.h
  *
  * Copyright (c) 2008 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>

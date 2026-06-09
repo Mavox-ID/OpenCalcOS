@@ -1,4 +1,4 @@
-/* i915_dma.c -- DMA support for the I915 -*- linux-c -*-
+/* i915_dma.c -- DMA support for the I915 -*- beep-c -*-
  */
 /*
  * Copyright 2003 Tungsten Graphics, Inc., Cedar Park, Texas.
@@ -35,12 +35,12 @@
 #include <drm/i915_drm.h>
 #include "i915_drv.h"
 #include "i915_trace.h"
-#include <linux/pci.h>
-#include <linux/vgaarb.h>
-#include <linux/acpi.h>
-#include <linux/pnp.h>
-#include <linux/vga_switcheroo.h>
-#include <linux/slab.h>
+#include <beep/pci.h>
+#include <beep/vgaarb.h>
+#include <beep/acpi.h>
+#include <beep/pnp.h>
+#include <beep/vga_switcheroo.h>
+#include <beep/slab.h>
 #include <acpi/video.h>
 #include <asm/pat.h>
 
@@ -1864,7 +1864,7 @@ struct drm_ioctl_desc i915_ioctls[] = {
 int i915_max_ioctl = DRM_ARRAY_SIZE(i915_ioctls);
 
 /*
- * This is really ugly: Because old userspace abused the linux agp interface to
+ * This is really ugly: Because old userspace abused the beep agp interface to
  * manage the gtt, we need to claim that all intel devices are agp.  For
  * otherwise the drm core refuses to initialize the agp support code.
  */

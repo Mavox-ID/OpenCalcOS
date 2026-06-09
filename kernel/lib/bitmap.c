@@ -5,13 +5,13 @@
  * This source code is licensed under the GNU General Public License,
  * Version 2.  See the file COPYING for more details.
  */
-#include <linux/export.h>
-#include <linux/thread_info.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/bug.h>
+#include <beep/export.h>
+#include <beep/thread_info.h>
+#include <beep/ctype.h>
+#include <beep/errno.h>
+#include <beep/bitmap.h>
+#include <beep/bitops.h>
+#include <beep/bug.h>
 #include <asm/uaccess.h>
 
 /*
@@ -498,7 +498,7 @@ EXPORT_SYMBOL(__bitmap_parse);
  * Wrapper for __bitmap_parse(), providing it with user buffer.
  *
  * We cannot have this as an inline function in bitmap.h because it needs
- * linux/uaccess.h to get the access_ok() declaration and this causes
+ * beep/uaccess.h to get the access_ok() declaration and this causes
  * cyclic dependencies.
  */
 int bitmap_parse_user(const char __user *ubuf,
@@ -689,7 +689,7 @@ EXPORT_SYMBOL(bitmap_parselist);
  * Wrapper for bitmap_parselist(), providing it with user buffer.
  *
  * We cannot have this as an inline function in bitmap.h because it needs
- * linux/uaccess.h to get the access_ok() declaration and this causes
+ * beep/uaccess.h to get the access_ok() declaration and this causes
  * cyclic dependencies.
  */
 int bitmap_parselist_user(const char __user *ubuf,

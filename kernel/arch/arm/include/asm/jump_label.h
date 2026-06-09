@@ -3,7 +3,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/system.h>
 
 #define JUMP_LABEL_NOP_SIZE 4

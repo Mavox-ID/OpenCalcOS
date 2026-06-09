@@ -10,15 +10,15 @@
  *	(at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/videodev2.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
-#include <linux/atomic.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/videodev2.h>
+#include <beep/vmalloc.h>
+#include <beep/wait.h>
+#include <beep/atomic.h>
 
 #include "uvc.h"
 

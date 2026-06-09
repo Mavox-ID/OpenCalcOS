@@ -9,13 +9,13 @@
  * (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/spi/spi.h>
+#include <beep/regulator/consumer.h>
+#include <beep/gpio.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 
 #include <video/omapdss.h>
 

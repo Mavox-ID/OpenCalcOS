@@ -22,7 +22,7 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 *******************************************************************************/
 
-#include <linux/stmmac.h>
+#include <beep/stmmac.h>
 #include "common.h"
 #include "descs_com.h"
 

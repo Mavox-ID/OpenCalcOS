@@ -24,11 +24,11 @@
 	Abstract: rt2x00 generic soc device routines.
  */
 
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/bug.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 #include "rt2x00.h"
 #include "rt2x00soc.h"

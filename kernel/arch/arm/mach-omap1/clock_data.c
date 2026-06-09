@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-omap1/clock_data.c
+ *  beep/arch/arm/mach-omap1/clock_data.c
  *
  *  Copyright (C) 2004 - 2005, 2009-2010 Nokia Corporation
  *  Written by Tuukka Tikkanen <tuukka.tikkanen@elektrobit.com>
@@ -14,11 +14,11 @@
  *   chips that they are present on.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/cpufreq.h>
+#include <beep/delay.h>
 
 #include <asm/mach-types.h>  /* for machine_is_* */
 

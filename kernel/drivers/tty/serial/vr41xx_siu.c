@@ -1,7 +1,7 @@
 /*
  *  Driver for NEC VR4100 series Serial Interface Unit.
  *
- *  Copyright (C) 2004-2008  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2004-2008  Yoichi Yuasa <yuasa@beep-mips.org>
  *
  *  Based on drivers/serial/8250.c, by Russell King.
  *
@@ -24,18 +24,18 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/console.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <beep/console.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
+#include <beep/serial_reg.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
 
 #include <asm/io.h>
 #include <asm/vr41xx/siu.h>

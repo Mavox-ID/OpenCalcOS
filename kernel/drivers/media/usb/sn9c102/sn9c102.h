@@ -21,22 +21,22 @@
 #ifndef _SN9C102_H_
 #define _SN9C102_H_
 
-#include <linux/usb.h>
-#include <linux/videodev2.h>
+#include <beep/usb.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/types.h>
-#include <linux/param.h>
-#include <linux/rwsem.h>
-#include <linux/mutex.h>
-#include <linux/string.h>
-#include <linux/stddef.h>
-#include <linux/kref.h>
+#include <beep/device.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/time.h>
+#include <beep/wait.h>
+#include <beep/types.h>
+#include <beep/param.h>
+#include <beep/rwsem.h>
+#include <beep/mutex.h>
+#include <beep/string.h>
+#include <beep/stddef.h>
+#include <beep/kref.h>
 
 #include "sn9c102_config.h"
 #include "sn9c102_sensor.h"

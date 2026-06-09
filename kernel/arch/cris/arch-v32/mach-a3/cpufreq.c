@@ -1,6 +1,6 @@
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/cpufreq.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/cpufreq.h>
 #include <hwregs/reg_map.h>
 #include <hwregs/reg_rdwr.h>
 #include <hwregs/clkgen_defs.h>

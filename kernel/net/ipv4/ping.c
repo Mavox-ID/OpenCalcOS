@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -12,33 +12,33 @@
  *
  * Based on ipv4/udp.c code.
  *
- * Authors:	Vasiliy Kulikov / Openwall (for Linux 2.6),
- *		Pavel Kankovsky (for Linux 2.4.32)
+ * Authors:	Vasiliy Kulikov / Openwall (for Beep 2.6),
+ *		Pavel Kankovsky (for Beep 2.4.32)
  *
  * Pavel gave all rights to bugs to Vasiliy,
  * none of the bugs are Pavel's now.
  *
  */
 
-#include <linux/uaccess.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/in.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
+#include <beep/uaccess.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/in.h>
+#include <beep/errno.h>
+#include <beep/timer.h>
+#include <beep/mm.h>
+#include <beep/inet.h>
+#include <beep/netdevice.h>
 #include <net/snmp.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 #include <net/icmp.h>
 #include <net/protocol.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/export.h>
+#include <beep/skbuff.h>
+#include <beep/proc_fs.h>
+#include <beep/export.h>
 #include <net/sock.h>
 #include <net/ping.h>
 #include <net/udp.h>

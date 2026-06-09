@@ -20,7 +20,7 @@
  *
  */
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 #include <sound/core.h>
 #include <sound/ac97_codec.h>
 #include <media/videobuf2-core.h>

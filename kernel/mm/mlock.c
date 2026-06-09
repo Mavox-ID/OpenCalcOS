@@ -1,23 +1,23 @@
 /*
- *	linux/mm/mlock.c
+ *	beep/mm/mlock.c
  *
  *  (C) Copyright 1995 Linus Torvalds
  *  (C) Copyright 2002 Christoph Hellwig
  */
 
-#include <linux/capability.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/pagemap.h>
-#include <linux/mempolicy.h>
-#include <linux/syscalls.h>
-#include <linux/sched.h>
-#include <linux/export.h>
-#include <linux/rmap.h>
-#include <linux/mmzone.h>
-#include <linux/hugetlb.h>
+#include <beep/capability.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/swapops.h>
+#include <beep/pagemap.h>
+#include <beep/mempolicy.h>
+#include <beep/syscalls.h>
+#include <beep/sched.h>
+#include <beep/export.h>
+#include <beep/rmap.h>
+#include <beep/mmzone.h>
+#include <beep/hugetlb.h>
 
 #include "internal.h"
 

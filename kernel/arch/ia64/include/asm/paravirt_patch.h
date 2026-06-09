@@ -1,6 +1,6 @@
 /******************************************************************************
- * Copyright (c) 2008 Isaku Yamahata <yamahata at valinux co jp>
- *                    VA Linux Systems Japan K.K.
+ * Copyright (c) 2008 Isaku Yamahata <yamahata at vabeep co jp>
+ *                    VA Beep Systems Japan K.K.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -37,7 +37,7 @@
 
 #else
 
-#include <linux/stringify.h>
+#include <beep/stringify.h>
 #include <asm/intrinsics.h>
 
 /* for binary patch */
@@ -135,7 +135,7 @@ void paravirt_patch_apply(void);
 /*
  * Local variables:
  * mode: C
- * c-set-style: "linux"
+ * c-set-style: "beep"
  * c-basic-offset: 8
  * tab-width: 8
  * indent-tabs-mode: t

@@ -1,5 +1,5 @@
 /*
- *  linux/fs/nfs/dir.c
+ *  beep/fs/nfs/dir.c
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -17,25 +17,25 @@
  *  6 Jun 1999	Cache readdir lookups in the page cache. -DaveM
  */
 
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/errno.h>
-#include <linux/stat.h>
-#include <linux/fcntl.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/sched.h>
-#include <linux/kmemleak.h>
-#include <linux/xattr.h>
+#include <beep/module.h>
+#include <beep/time.h>
+#include <beep/errno.h>
+#include <beep/stat.h>
+#include <beep/fcntl.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_mount.h>
+#include <beep/pagemap.h>
+#include <beep/pagevec.h>
+#include <beep/namei.h>
+#include <beep/mount.h>
+#include <beep/sched.h>
+#include <beep/kmemleak.h>
+#include <beep/xattr.h>
 
 #include "delegation.h"
 #include "iostat.h"
@@ -1795,7 +1795,7 @@ EXPORT_SYMBOL_GPL(nfs_link);
 
 /*
  * RENAME
- * FIXME: Some nfsds, like the Linux user space nfsd, may generate a
+ * FIXME: Some nfsds, like the Beep user space nfsd, may generate a
  * different file handle for the same inode after a rename (e.g. when
  * moving to a different directory). A fail-safe method to do so would
  * be to look up old_dir/old_name, create a link to new_dir/new_name and

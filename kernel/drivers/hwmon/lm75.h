@@ -1,5 +1,5 @@
 /*
-    lm75.h - Part of lm_sensors, Linux kernel modules for hardware
+    lm75.h - Part of lm_sensors, Beep kernel modules for hardware
 	      monitoring
     Copyright (c) 2003 Mark M. Hoffman <mhoffman@lightlink.com>
 
@@ -25,7 +25,7 @@
     which contains this code, we don't worry about the wasted space.
 */
 
-#include <linux/hwmon.h>
+#include <beep/hwmon.h>
 
 /* straight from the datasheet */
 #define LM75_TEMP_MIN (-55000)

@@ -8,14 +8,14 @@
  * Copyright (C) 2003 Guido Guenther <agx@sigxcpu.org>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/notifier.h>
-#include <linux/delay.h>
-#include <linux/ds17287rtc.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/notifier.h>
+#include <beep/delay.h>
+#include <beep/ds17287rtc.h>
+#include <beep/interrupt.h>
+#include <beep/pm.h>
 
 #include <asm/addrspace.h>
 #include <asm/irq.h>

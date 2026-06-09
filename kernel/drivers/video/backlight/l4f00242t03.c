@@ -13,17 +13,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/lcd.h>
-#include <linux/slab.h>
-#include <linux/regulator/consumer.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/gpio.h>
+#include <beep/lcd.h>
+#include <beep/slab.h>
+#include <beep/regulator/consumer.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/l4f00242t03.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/l4f00242t03.h>
 
 struct l4f00242t03_priv {
 	struct spi_device	*spi;

@@ -8,14 +8,14 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/ptrace.h>
-#include <linux/hardirq.h>
-#include <linux/thread_info.h>
-#include <linux/kbuild.h>
+#include <beep/init.h>
+#include <beep/stddef.h>
+#include <beep/sched.h>
+#include <beep/kernel_stat.h>
+#include <beep/ptrace.h>
+#include <beep/hardirq.h>
+#include <beep/thread_info.h>
+#include <beep/kbuild.h>
 #include <asm/cpuinfo.h>
 
 int main(int argc, char *argv[])

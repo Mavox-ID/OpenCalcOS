@@ -19,7 +19,7 @@
 #ifndef CTRESOURCE_H
 #define CTRESOURCE_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 enum RSCTYP {
 	SRC,

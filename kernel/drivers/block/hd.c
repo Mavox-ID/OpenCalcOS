@@ -26,20 +26,20 @@
 /* Uncomment the following if you want verbose error reports. */
 /* #define VERBOSE_ERRORS */
 
-#include <linux/blkdev.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/genhd.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/blkpg.h>
-#include <linux/ata.h>
-#include <linux/hdreg.h>
+#include <beep/blkdev.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/interrupt.h>
+#include <beep/timer.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/genhd.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/blkpg.h>
+#include <beep/ata.h>
+#include <beep/hdreg.h>
 
 #define HD_IRQ 14
 
@@ -154,7 +154,7 @@ else \
 
 #if (HD_DELAY > 0)
 
-#include <linux/i8253.h>
+#include <beep/i8253.h>
 
 unsigned long last_req;
 

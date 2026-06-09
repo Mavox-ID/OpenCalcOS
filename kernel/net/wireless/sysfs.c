@@ -8,11 +8,11 @@
  * This file is GPLv2 as found in COPYING.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/nl80211.h>
-#include <linux/rtnetlink.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/nl80211.h>
+#include <beep/rtnetlink.h>
 #include <net/cfg80211.h>
 #include "sysfs.h"
 #include "core.h"

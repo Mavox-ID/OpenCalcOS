@@ -20,11 +20,11 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
-#include <linux/sched.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/atomic.h>
+#include <beep/sched.h>
 #include <asm/spu.h>
 #include <asm/spu_csa.h>
 #include "spufs.h"

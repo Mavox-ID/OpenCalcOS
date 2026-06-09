@@ -17,20 +17,20 @@
 #define DEBUG
 #endif
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/i2c.h>
+#include <beep/platform_device.h>
 #include <media/v4l2-subdev.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/bug.h>
-#include <linux/pm_runtime.h>
-#include <linux/clk.h>
-#include <linux/regulator/consumer.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/delay.h>
+#include <beep/bug.h>
+#include <beep/pm_runtime.h>
+#include <beep/clk.h>
+#include <beep/regulator/consumer.h>
 
 #include <media/s5p_hdmi.h>
 #include <media/v4l2-common.h>

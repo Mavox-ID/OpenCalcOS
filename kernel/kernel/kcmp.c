@@ -1,16 +1,16 @@
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
-#include <linux/fdtable.h>
-#include <linux/string.h>
-#include <linux/random.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/cache.h>
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/kcmp.h>
+#include <beep/kernel.h>
+#include <beep/syscalls.h>
+#include <beep/fdtable.h>
+#include <beep/string.h>
+#include <beep/random.h>
+#include <beep/module.h>
+#include <beep/ptrace.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/cache.h>
+#include <beep/bug.h>
+#include <beep/err.h>
+#include <beep/kcmp.h>
 
 #include <asm/unistd.h>
 

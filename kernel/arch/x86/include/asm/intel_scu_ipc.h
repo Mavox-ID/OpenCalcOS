@@ -1,7 +1,7 @@
 #ifndef _ASM_X86_INTEL_SCU_IPC_H_
 #define  _ASM_X86_INTEL_SCU_IPC_H_
 
-#include <linux/notifier.h>
+#include <beep/notifier.h>
 
 #define IPCMSG_WARM_RESET	0xF0
 #define IPCMSG_COLD_RESET	0xF1

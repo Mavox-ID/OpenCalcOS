@@ -10,15 +10,15 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
 
 #include "clk.h"
 #include "common.h"

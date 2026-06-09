@@ -19,7 +19,7 @@
 #ifndef CTIMAP_H
 #define CTIMAP_H
 
-#include <linux/list.h>
+#include <beep/list.h>
 
 struct imapper {
 	unsigned short slot; /* the id of the slot containing input data */

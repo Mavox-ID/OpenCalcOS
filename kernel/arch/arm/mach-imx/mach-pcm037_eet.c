@@ -6,10 +6,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
+#include <beep/gpio.h>
+#include <beep/input.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
 
 #include <asm/mach-types.h>
 

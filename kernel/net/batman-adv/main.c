@@ -17,8 +17,8 @@
  * 02110-1301, USA
  */
 
-#include <linux/crc32c.h>
-#include <linux/highmem.h>
+#include <beep/crc32c.h>
+#include <beep/highmem.h>
 #include "main.h"
 #include "sysfs.h"
 #include "debugfs.h"

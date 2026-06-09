@@ -20,11 +20,11 @@
  *
  */
 
-#include <linux/i2c.h>
-#include <linux/i2c/twl.h>
-#include <linux/gpio.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
+#include <beep/i2c.h>
+#include <beep/i2c/twl.h>
+#include <beep/gpio.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/fixed.h>
 
 #include "soc.h"
 #include "twl-common.h"
@@ -526,7 +526,7 @@ void __init omap4_pmic_get_config(struct twl4030_platform_data *pmic_data,
 
 #if defined(CONFIG_SND_OMAP_SOC_OMAP_TWL4030) || \
 	defined(CONFIG_SND_OMAP_SOC_OMAP_TWL4030_MODULE)
-#include <linux/platform_data/omap-twl4030.h>
+#include <beep/platform_data/omap-twl4030.h>
 
 static struct omap_tw4030_pdata omap_twl4030_audio_data;
 

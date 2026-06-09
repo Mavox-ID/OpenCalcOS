@@ -17,13 +17,13 @@
  * Maintained at www.Open-FCoE.org
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/errno.h>
-#include <linux/crc32.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/netdevice.h>
+#include <beep/errno.h>
+#include <beep/crc32.h>
 #include <scsi/libfcoe.h>
 
 #include "libfcoe.h"

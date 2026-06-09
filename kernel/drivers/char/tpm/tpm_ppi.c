@@ -1,4 +1,4 @@
-#include <linux/acpi.h>
+#include <beep/acpi.h>
 #include <acpi/acpi_drivers.h>
 #include "tpm.h"
 

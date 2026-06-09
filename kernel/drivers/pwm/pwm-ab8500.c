@@ -4,13 +4,13 @@
  * Author: Arun R Murthy <arun.murthy@stericsson.com>
  * License terms: GNU General Public License (GPL) version 2
  */
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/pwm.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/module.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/pwm.h>
+#include <beep/mfd/abx500.h>
+#include <beep/mfd/abx500/ab8500.h>
+#include <beep/module.h>
 
 /*
  * PWM Out generators

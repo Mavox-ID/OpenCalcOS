@@ -8,7 +8,7 @@
  * kind, whether express or implied.
  *
  * Based on the OMAP2 camera driver
- * Video-for-Linux (Version 2) camera capture driver for
+ * Video-for-Beep (Version 2) camera capture driver for
  * the OMAP24xx camera controller.
  *
  * Author: Andy Lowe (source@mvista.com)
@@ -18,13 +18,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/videodev2.h>
 
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 
 #include <video/omapdss.h>
 

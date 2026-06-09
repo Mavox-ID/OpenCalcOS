@@ -10,10 +10,10 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/usb.h>
-#include <linux/usb/quirks.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/usb.h>
+#include <beep/usb/quirks.h>
 #include "usb.h"
 
 /* Active configuration fields */

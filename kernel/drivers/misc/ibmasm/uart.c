@@ -22,11 +22,11 @@
  *
  */
 
-#include <linux/termios.h>
-#include <linux/tty.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/serial_8250.h>
+#include <beep/termios.h>
+#include <beep/tty.h>
+#include <beep/serial_core.h>
+#include <beep/serial_reg.h>
+#include <beep/serial_8250.h>
 #include "ibmasm.h"
 #include "lowlevel.h"
 

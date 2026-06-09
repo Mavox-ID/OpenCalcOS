@@ -20,9 +20,9 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/cpufreq.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
+#include <beep/cpufreq.h>
+#include <beep/module.h>
+#include <beep/of_platform.h>
 
 #include <asm/machdep.h>
 #include <asm/prom.h>

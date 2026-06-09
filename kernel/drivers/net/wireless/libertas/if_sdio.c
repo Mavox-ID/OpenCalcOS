@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/net/wireless/libertas/if_sdio.c
+ *  beep/drivers/net/wireless/libertas/if_sdio.c
  *
  *  Copyright 2007-2008 Pierre Ossman
  *
@@ -28,18 +28,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/host.h>
-#include <linux/pm_runtime.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/firmware.h>
+#include <beep/netdevice.h>
+#include <beep/delay.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/sdio_func.h>
+#include <beep/mmc/sdio_ids.h>
+#include <beep/mmc/sdio.h>
+#include <beep/mmc/host.h>
+#include <beep/pm_runtime.h>
 
 #include "host.h"
 #include "decl.h"

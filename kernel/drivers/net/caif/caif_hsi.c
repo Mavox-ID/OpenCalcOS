@@ -8,19 +8,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/if_arp.h>
-#include <linux/timer.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/netdevice.h>
+#include <beep/string.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/if_arp.h>
+#include <beep/timer.h>
 #include <net/rtnetlink.h>
-#include <linux/pkt_sched.h>
+#include <beep/pkt_sched.h>
 #include <net/caif/caif_layer.h>
 #include <net/caif/caif_hsi.h>
 

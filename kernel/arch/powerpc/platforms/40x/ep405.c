@@ -8,7 +8,7 @@
  *
  * Rewritten and ported to the merged powerpc tree:
  * Copyright 2007 IBM Corporation
- * Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Josh Boyer <jwboyer@beep.vnet.ibm.com>
  *
  * Adapted to EP405 by Ben. Herrenschmidt <benh@kernel.crashing.org>
  *
@@ -20,8 +20,8 @@
  * or implied.
  */
 
-#include <linux/init.h>
-#include <linux/of_platform.h>
+#include <beep/init.h>
+#include <beep/of_platform.h>
 
 #include <asm/machdep.h>
 #include <asm/prom.h>

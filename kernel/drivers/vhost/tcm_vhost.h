@@ -11,7 +11,7 @@ struct tcm_vhost_cmd {
 	enum dma_data_direction tvc_data_direction;
 	/* Expected data transfer length from virtio-scsi header */
 	u32 tvc_exp_data_len;
-	/* The Tag from include/linux/virtio_scsi.h:struct virtio_scsi_cmd_req */
+	/* The Tag from include/beep/virtio_scsi.h:struct virtio_scsi_cmd_req */
 	u64 tvc_tag;
 	/* The number of scatterlists associated with this cmd */
 	u32 tvc_sgl_count;
@@ -83,10 +83,10 @@ struct tcm_vhost_tport {
 
 /*
  * As per request from MST, keep TCM_VHOST related ioctl defines out of
- * linux/vhost.h (user-space) for now..
+ * beep/vhost.h (user-space) for now..
  */
 
-#include <linux/vhost.h>
+#include <beep/vhost.h>
 
 /*
  * Used by QEMU userspace to ensure a consistent vhost-scsi ABI.

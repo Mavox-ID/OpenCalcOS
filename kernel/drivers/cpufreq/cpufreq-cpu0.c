@@ -11,15 +11,15 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/opp.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <beep/clk.h>
+#include <beep/cpu.h>
+#include <beep/cpufreq.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/opp.h>
+#include <beep/regulator/consumer.h>
+#include <beep/slab.h>
 
 static unsigned int transition_latency;
 static unsigned int voltage_tolerance; /* in percentage */

@@ -5,22 +5,22 @@
  * This file is released under the GPL.
  */
 
-#include <linux/device-mapper.h>
+#include <beep/device-mapper.h>
 
 #include "dm-path-selector.h"
 #include "dm-uevent.h"
 
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
+#include <beep/ctype.h>
+#include <beep/init.h>
+#include <beep/mempool.h>
+#include <beep/module.h>
+#include <beep/pagemap.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/workqueue.h>
+#include <beep/delay.h>
 #include <scsi/scsi_dh.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #define DM_MSG_PREFIX "multipath"
 #define DM_PG_INIT_DELAY_MSECS 2000

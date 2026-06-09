@@ -1,7 +1,7 @@
 #ifndef _ASM_POWERPC_CPUTHREADS_H
 #define _ASM_POWERPC_CPUTHREADS_H
 
-#include <linux/cpumask.h>
+#include <beep/cpumask.h>
 
 /*
  * Mapping of threads to cores

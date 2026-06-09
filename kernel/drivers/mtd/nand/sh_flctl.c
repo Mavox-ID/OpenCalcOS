@@ -21,27 +21,27 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_mtd.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/sh_dma.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_mtd.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/sh_dma.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/sh_flctl.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/sh_flctl.h>
 
 static struct nand_ecclayout flctl_4secc_oob_16 = {
 	.eccbytes = 10,

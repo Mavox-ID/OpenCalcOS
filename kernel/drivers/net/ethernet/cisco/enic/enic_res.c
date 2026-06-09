@@ -17,11 +17,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
 
 #include "wq_enet_desc.h"
 #include "rq_enet_desc.h"

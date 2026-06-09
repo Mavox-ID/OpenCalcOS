@@ -1,5 +1,5 @@
 /*
- *  linux/boot/head.S
+ *  beep/boot/head.S
  *
  *  Copyright (C) 1991, 1992, 1993  Linus Torvalds
  */
@@ -24,8 +24,8 @@
 	.code32
 	.text
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
 #include <asm/segment.h>
 #include <asm/pgtable_types.h>
 #include <asm/page_types.h>

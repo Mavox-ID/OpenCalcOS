@@ -6,7 +6,7 @@
  * Copyright (c) 2000-2007 Silicon Graphics, Inc.  All Rights Reserved.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/sn/nodepda.h>
 #include <asm/sn/addrs.h>
 #include <asm/sn/arch.h>
@@ -16,10 +16,10 @@
 #include <asm/nodedata.h>
 #include <asm/delay.h>
 
-#include <linux/bootmem.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/bootmem.h>
+#include <beep/string.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 #include <asm/sn/bte.h>
 

@@ -14,7 +14,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/ieee80211.h>
+#include <beep/ieee80211.h>
 #include <net/cfg80211.h>
 #include <net/mac80211.h>
 #include "ieee80211_i.h"

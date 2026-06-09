@@ -1,12 +1,12 @@
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/pfn.h>
-#include <linux/memblock.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/pfn.h>
+#include <beep/memblock.h>
 
 static u64 patterns[] __initdata = {
 	0,

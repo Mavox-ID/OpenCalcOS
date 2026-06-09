@@ -17,17 +17,17 @@
  * converter.
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/workqueue.h>
-#include <linux/libps2.h>
-#include <linux/mutex.h>
-#include <linux/dmi.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/serio.h>
+#include <beep/workqueue.h>
+#include <beep/libps2.h>
+#include <beep/mutex.h>
+#include <beep/dmi.h>
 
 #define DRIVER_DESC	"AT and PS/2 keyboard driver"
 

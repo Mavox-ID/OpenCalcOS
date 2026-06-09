@@ -104,12 +104,12 @@
  * should execute quickly.)
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
 
 #include <asm/bootinfo.h>
 #include <asm/macintosh.h>

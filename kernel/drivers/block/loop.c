@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/block/loop.c
+ *  beep/drivers/block/loop.c
  *
  *  Written by Theodore Ts'o, 3/29/93
  *
@@ -49,33 +49,33 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/major.h>
-#include <linux/wait.h>
-#include <linux/blkdev.h>
-#include <linux/blkpg.h>
-#include <linux/init.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
-#include <linux/loop.h>
-#include <linux/compat.h>
-#include <linux/suspend.h>
-#include <linux/freezer.h>
-#include <linux/mutex.h>
-#include <linux/writeback.h>
-#include <linux/completion.h>
-#include <linux/highmem.h>
-#include <linux/kthread.h>
-#include <linux/splice.h>
-#include <linux/sysfs.h>
-#include <linux/miscdevice.h>
-#include <linux/falloc.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/stat.h>
+#include <beep/errno.h>
+#include <beep/major.h>
+#include <beep/wait.h>
+#include <beep/blkdev.h>
+#include <beep/blkpg.h>
+#include <beep/init.h>
+#include <beep/swap.h>
+#include <beep/slab.h>
+#include <beep/loop.h>
+#include <beep/compat.h>
+#include <beep/suspend.h>
+#include <beep/freezer.h>
+#include <beep/mutex.h>
+#include <beep/writeback.h>
+#include <beep/completion.h>
+#include <beep/highmem.h>
+#include <beep/kthread.h>
+#include <beep/splice.h>
+#include <beep/sysfs.h>
+#include <beep/miscdevice.h>
+#include <beep/falloc.h>
 
 #include <asm/uaccess.h>
 

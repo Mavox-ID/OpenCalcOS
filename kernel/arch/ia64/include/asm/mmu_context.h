@@ -23,10 +23,10 @@
 # include <asm/page.h>
 # ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
+#include <beep/compiler.h>
+#include <beep/percpu.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
 
 #include <asm/processor.h>
 #include <asm-generic/mm_hooks.h>

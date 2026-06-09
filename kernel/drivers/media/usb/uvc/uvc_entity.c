@@ -11,9 +11,9 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/videodev2.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/videodev2.h>
 
 #include <media/v4l2-common.h>
 

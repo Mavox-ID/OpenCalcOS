@@ -17,11 +17,11 @@
  * MA  02110-1301, USA.
  */
 
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/io.h>
+#include <beep/of.h>
 #include <asm/mach/irq.h>
 #include <asm/exception.h>
 

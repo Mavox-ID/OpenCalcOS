@@ -9,24 +9,24 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/bootmem.h>
-#include <linux/gfp.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/initrd.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/bootmem.h>
+#include <beep/gfp.h>
 
 #include <asm/processor.h>
 #include <asm/uaccess.h>

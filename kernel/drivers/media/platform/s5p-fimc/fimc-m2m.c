@@ -10,19 +10,19 @@
  * or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/bug.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/bug.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/list.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
 #include <media/v4l2-ioctl.h>
 #include <media/videobuf2-core.h>
 #include <media/videobuf2-dma-contig.h>

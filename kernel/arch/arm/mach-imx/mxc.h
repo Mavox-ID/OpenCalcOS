@@ -20,7 +20,7 @@
 #ifndef __ASM_ARCH_MXC_H__
 #define __ASM_ARCH_MXC_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #ifndef __ASM_ARCH_MXC_HARDWARE_H__
 #error "Do not include directly."

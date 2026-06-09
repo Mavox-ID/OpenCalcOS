@@ -7,19 +7,19 @@
  * Licensed under the GPL-2.
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/spi/spi.h>
+#include <beep/slab.h>
+#include <beep/sysfs.h>
+#include <beep/regmap.h>
+#include <beep/regulator/consumer.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
 
 #define AD5380_REG_DATA(x)	(((x) << 2) | 3)
 #define AD5380_REG_OFFSET(x)	(((x) << 2) | 2)

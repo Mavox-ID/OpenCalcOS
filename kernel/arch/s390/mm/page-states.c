@@ -6,12 +6,12 @@
  * Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/gfp.h>
+#include <beep/init.h>
 
 #define ESSA_SET_STABLE		1
 #define ESSA_SET_UNUSED		2

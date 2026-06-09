@@ -1,5 +1,5 @@
 /*
- * linux/sound/soc/pxa/z2.c
+ * beep/sound/soc/pxa/z2.c
  *
  * SoC Audio driver for Aeronix Zipit Z2
  *
@@ -11,12 +11,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

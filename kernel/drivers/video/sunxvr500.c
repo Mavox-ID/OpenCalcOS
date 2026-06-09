@@ -3,12 +3,12 @@
  * Copyright (C) 2007 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/fb.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/of_device.h>
 
 #include <asm/io.h>
 

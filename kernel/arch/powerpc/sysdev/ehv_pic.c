@@ -10,15 +10,15 @@
  * kind, whether express or implied.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/of.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/of.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -39,7 +39,7 @@ static u32 __iomem *mpic_percpu_base_vaddr;
 #define MPIC_EOI  0x00B0
 
 /*
- * Linux descriptor level callbacks
+ * Beep descriptor level callbacks
  */
 
 void ehv_pic_unmask_irq(struct irq_data *d)
@@ -226,10 +226,10 @@ static int ehv_pic_host_xlate(struct irq_domain *h, struct device_node *ct,
 	 * interrupt sense values coming from the guest device tree
 	 * interrupt specifiers can have four possible sense and
 	 * level encoding information and they need to
-	 * be translated between firmware type & linux type.
+	 * be translated between firmware type & beep type.
 	 */
 
-	static unsigned char map_of_senses_to_linux_irqtype[4] = {
+	static unsigned char map_of_senses_to_beep_irqtype[4] = {
 		IRQ_TYPE_EDGE_FALLING,
 		IRQ_TYPE_EDGE_RISING,
 		IRQ_TYPE_LEVEL_LOW,
@@ -239,7 +239,7 @@ static int ehv_pic_host_xlate(struct irq_domain *h, struct device_node *ct,
 	*out_hwirq = intspec[0];
 	if (intsize > 1) {
 		hwirq_intspec[intspec[0]] = intspec[1];
-		*out_flags = map_of_senses_to_linux_irqtype[intspec[1] &
+		*out_flags = map_of_senses_to_beep_irqtype[intspec[1] &
 							~IRQ_TYPE_MPIC_DIRECT];
 	} else {
 		*out_flags = IRQ_TYPE_NONE;

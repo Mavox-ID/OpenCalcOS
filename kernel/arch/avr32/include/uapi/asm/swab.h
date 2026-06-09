@@ -4,8 +4,8 @@
 #ifndef __ASM_AVR32_SWAB_H
 #define __ASM_AVR32_SWAB_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <beep/types.h>
+#include <beep/compiler.h>
 
 #define __SWAB_64_THRU_32__
 
@@ -15,7 +15,7 @@ extern unsigned short __builtin_bswap_16(unsigned short x);
 #endif
 
 /*
- * avr32-linux-gcc versions earlier than 4.2 improperly sign-extends
+ * avr32-beep-gcc versions earlier than 4.2 improperly sign-extends
  * the result.
  */
 #if !(__GNUC__ == 4 && __GNUC_MINOR__ < 2)

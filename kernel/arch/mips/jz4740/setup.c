@@ -14,9 +14,9 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
 
 #include <asm/bootinfo.h>
 

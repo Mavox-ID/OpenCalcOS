@@ -25,7 +25,7 @@
 #ifndef CX24110_H
 #define CX24110_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 struct cx24110_config
 {

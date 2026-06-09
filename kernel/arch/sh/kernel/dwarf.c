@@ -15,15 +15,15 @@
  */
 
 /* #define DEBUG */
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/mempool.h>
-#include <linux/mm.h>
-#include <linux/elf.h>
-#include <linux/ftrace.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/list.h>
+#include <beep/mempool.h>
+#include <beep/mm.h>
+#include <beep/elf.h>
+#include <beep/ftrace.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include <asm/dwarf.h>
 #include <asm/unwinder.h>
 #include <asm/sections.h>

@@ -27,7 +27,7 @@
 **
 ** The code was vigorously pruned in DEC 2010 to remove the macintosh options
 ** and to get rid of the 16-bit support. It has also been aligned with the
-** Linux version. See CVS for revisions. This will work for Win 9x onwards.
+** Beep version. See CVS for revisions. This will work for Win 9x onwards.
 ****************************************************************************
 **
 ** Notes on Windows interface to driver
@@ -191,7 +191,7 @@
 #include "use14_ioc.h"          // links to device driver stuff
 #endif
 
-#ifdef LINUX
+#ifdef BEEP
 #include <fcntl.h>
 #include <unistd.h>
 #include <sys/ioctl.h>
@@ -261,7 +261,7 @@ static BOOL   abUseNTDIOC[MAX1401];             // Use NT-style DIOC parameters 
 
 #endif
 
-#ifdef LINUX
+#ifdef BEEP
 static int aHand1401[MAX1401] = {0};    // handles for 1401s
 #define INVALID_HANDLE_VALUE 0          // to avoid code differences
 #endif
@@ -381,7 +381,7 @@ static long SafeTickCount()
 #ifdef _IS_WINDOWS_
     return GetTickCount();
 #endif
-#ifdef LINUX
+#ifdef BEEP
     struct timeval tv;
     gettimeofday(&tv, NULL);
     return (tv.tv_sec*1000 + tv.tv_usec/1000);
@@ -411,7 +411,7 @@ static int ExtForType(short sType, char* szExt)
 /****************************************************************************
 **   U14WhenToTimeOut
 **       Returns the time to time out in time units suitable for the machine
-** we are running on  ie millsecs for pc/linux, or Mac/
+** we are running on  ie millsecs for pc/beep, or Mac/
 ****************************************************************************/
 U14API(int) U14WhenToTimeOut(short hand)
 {
@@ -601,7 +601,7 @@ U14API(short) U14OutBufSpace(short hand)
         sErr = csBlock.ints[0];
     return sErr;
 #endif
-#ifdef LINUX
+#ifdef BEEP
     short sErr = CheckHandle(hand);
     return (sErr == U14ERR_NOERROR) ? CED_GetOutBufSpace(aHand1401[hand]) : sErr;
 #endif
@@ -621,7 +621,7 @@ U14API(int) U14BaseAddr1401(short hand)
         iError = csBlock.longs[0];
     return iError;
 #endif
-#ifdef LINUX
+#ifdef BEEP
     short sErr = CheckHandle(hand);
     return (sErr == U14ERR_NOERROR) ? CED_GetBaseAddress(aHand1401[hand]) : sErr;
 #endif
@@ -643,7 +643,7 @@ U14API(short) U14StateOf1401(short hand)
             sErr = U14ERR_NOERROR;
     }
 #endif
-#ifdef LINUX
+#ifdef BEEP
     short sErr = CheckHandle(hand);
     if (sErr == U14ERR_NOERROR)
     {
@@ -711,7 +711,7 @@ U14API(short) U14BlkTransState(short hand)
         sErr = csBlock.ints[0];
     return sErr;
 #endif
-#ifdef LINUX
+#ifdef BEEP
     short sErr = CheckHandle(hand);
     return (sErr == U14ERR_NOERROR) ? CED_BlkTransState(aHand1401[hand]) : sErr;
 #endif
@@ -735,7 +735,7 @@ U14API(short) U14Grab1401(short hand)
             sErr = U14Control1401(hand, U14_GRAB1401, &csBlock);
         }
 #endif
-#ifdef LINUX
+#ifdef BEEP
         // 1401 should not have been grabbed
         sErr = abGrabbed[hand] ? U14ERR_ALREADYSET : CED_Grab1401(aHand1401[hand]);
 #endif
@@ -762,7 +762,7 @@ U14API(short)  U14Free1401(short hand)
         else
             sErr = U14ERR_NOTSET;
 #endif
-#ifdef LINUX
+#ifdef BEEP
         // 1401 should not have been grabbed
         sErr = abGrabbed[hand] ? CED_Free1401(aHand1401[hand]) : U14ERR_NOTSET;
 #endif
@@ -793,7 +793,7 @@ U14API(short) U14Peek1401(short hand, DWORD dwAddr, int nSize, int nRepeats)
             csBlock.longs[2] = nRepeats;
             sErr = U14Control1401(hand, U14_DBGPEEK, &csBlock);
 #endif
-#ifdef LINUX
+#ifdef BEEP
             TDBGBLOCK dbb;
             dbb.iAddr = (int)dwAddr;
             dbb.iWidth = nSize;
@@ -829,7 +829,7 @@ U14API(short) U14Poke1401(short hand, DWORD dwAddr, DWORD dwValue,
             csBlock.longs[3] = (long)dwValue;
             sErr = U14Control1401(hand, U14_DBGPOKE, &csBlock);
 #endif
-#ifdef LINUX
+#ifdef BEEP
             TDBGBLOCK dbb;
             dbb.iAddr = (int)dwAddr;
             dbb.iWidth = nSize;
@@ -866,7 +866,7 @@ U14API(short) U14Ramp1401(short hand, DWORD dwAddr, DWORD dwDef, DWORD dwEnable,
             csBlock.longs[4] = nRepeats;
             sErr = U14Control1401(hand, U14_DBGRAMPDATA, &csBlock);
 #endif
-#ifdef LINUX
+#ifdef BEEP
             TDBGBLOCK dbb;
             dbb.iAddr = (int)dwAddr;
             dbb.iDefault = (int)dwDef;
@@ -903,7 +903,7 @@ U14API(short) U14RampAddr(short hand, DWORD dwDef, DWORD dwEnable,
             csBlock.longs[3] = nRepeats;
             sErr = U14Control1401(hand, U14_DBGRAMPADDR, &csBlock);
 #endif
-#ifdef LINUX
+#ifdef BEEP
             TDBGBLOCK dbb;
             dbb.iDefault = (int)dwDef;
             dbb.iMask = (int)dwEnable;
@@ -938,7 +938,7 @@ U14API(short) U14StopDebugLoop(short hand)
             sErr = U14ERR_NOTSET;
     }
 #endif
-#ifdef LINUX
+#ifdef BEEP
         sErr = abGrabbed[hand] ? CED_DbgStopLoop(aHand1401[hand]) : U14ERR_NOTSET;
 #endif
     return sErr;
@@ -961,7 +961,7 @@ U14API(short) U14GetDebugData(short hand, U14LONG* plValue)
             if (sErr == U14ERR_NOERROR)
                 *plValue = csBlock.longs[0];    // Return the data
 #endif
-#ifdef LINUX
+#ifdef BEEP
             TDBGBLOCK dbb;
             sErr = CED_DbgGetData(aHand1401[hand], &dbb);
             if (sErr == U14ERR_NOERROR)
@@ -983,7 +983,7 @@ U14API(short) U14StartSelfTest(short hand)
     TCSBLOCK csBlock;
     return U14Control1401(hand, U14_STARTSELFTEST, &csBlock);
 #endif
-#ifdef LINUX
+#ifdef BEEP
     short sErr = CheckHandle(hand);
     return (sErr == U14ERR_NOERROR) ? CED_StartSelfTest(aHand1401[hand]) : sErr;
 #endif
@@ -1004,7 +1004,7 @@ U14API(short) U14CheckSelfTest(short hand, U14LONG *pData)
         pData[2] = csBlock.longs[2];
     }
 #endif
-#ifdef LINUX
+#ifdef BEEP
     short sErr = CheckHandle(hand);
     if (sErr == U14ERR_NOERROR)                /* Check parameters */
     {
@@ -1096,7 +1096,7 @@ U14API(short) U14TransferFlags(short hand)
     short sErr = U14Status1401(hand, U14_TRANSFERFLAGS, &csBlock);
     return (sErr == U14ERR_NOERROR) ? (short)csBlock.ints[0] : sErr;
 #endif
-#ifdef LINUX
+#ifdef BEEP
     short sErr = CheckHandle(hand);
     return (sErr == U14ERR_NOERROR) ? CED_TransferFlags(aHand1401[hand]) : sErr;
 #endif
@@ -1117,7 +1117,7 @@ static int GetDriverVersion(short hand)
         iErr = csBlock.longs[0];
     return iErr;
 #endif
-#ifdef LINUX
+#ifdef BEEP
     return CED_GetDriverRevision(aHand1401[hand]);
 #endif
 }
@@ -1292,7 +1292,7 @@ static short U14TryToOpen(int n1401, long* plRetVal, short* psHandle)
     return sErr;
 }
 #endif
-#ifdef LINUX
+#ifdef BEEP
 static short U14TryToOpen(int n1401, long* plRetVal, short* psHandle)
 {
     short sErr = U14ERR_NOERROR;
@@ -1466,7 +1466,7 @@ U14API(short) U14Close1401(short hand)
 
     if (CloseHandle(aHand1401[hand]))
 #endif
-#ifdef LINUX
+#ifdef BEEP
     if (close(aHand1401[hand]) == 0)            // make sure that close works
 #endif
     {
@@ -1500,7 +1500,7 @@ U14API(short) U14Reset1401(short hand)
     TCSBLOCK csBlock;
     return U14Control1401(hand, U14_RESET1401, &csBlock);
 #endif
-#ifdef LINUX
+#ifdef BEEP
     short sErr = CheckHandle(hand);
     return (sErr == U14ERR_NOERROR) ? CED_Reset1401(aHand1401[hand]) : sErr;
 #endif
@@ -1517,7 +1517,7 @@ U14API(short) U14ForceReset(short hand)
     TCSBLOCK csBlock;
     return U14Control1401(hand, U14_FULLRESET, &csBlock);
 #endif
-#ifdef LINUX
+#ifdef BEEP
     short sErr = CheckHandle(hand);
     return (sErr == U14ERR_NOERROR) ? CED_FullReset(aHand1401[hand]) : sErr;
 #endif
@@ -1533,7 +1533,7 @@ U14API(short) U14KillIO1401(short hand)
     TCSBLOCK csBlock;
     return U14Control1401(hand, U14_KILLIO1401, &csBlock);
 #endif
-#ifdef LINUX
+#ifdef BEEP
     short sErr = CheckHandle(hand);
     return (sErr == U14ERR_NOERROR) ? CED_KillIO1401(aHand1401[hand]) : sErr;
 #endif
@@ -1628,7 +1628,7 @@ U14API(short) U14SendString(short hand, const char* pString)
     else
         return asLastRetCode[hand];
 #endif
-#ifdef LINUX
+#ifdef BEEP
     // Just try to send it and see what happens!
     sErr = CED_SendString(aHand1401[hand], pString, nChars);
     if (sErr != U14ERR_NOOUT)       // if any result except "no room in output"...
@@ -1680,7 +1680,7 @@ U14API(short) U14SendChar(short hand, char cChar)
     sz[1] = 0;
     return(U14SendString(hand, sz));        // String routines are better
 #endif
-#ifdef LINUX
+#ifdef BEEP
     short sErr = CheckHandle(hand);
     return (sErr == U14ERR_NOERROR) ? CED_SendChar(aHand1401[hand], cChar) : sErr;
 #endif
@@ -1814,7 +1814,7 @@ U14API(short) U14GetString(short hand, char* pBuffer, WORD wMaxLen)
         sErr = U14ERR_BUFF_SMALL;
     return sErr;
 #endif
-#ifdef LINUX
+#ifdef BEEP
     if (wMaxLen>1)                          // we need space for terminating 0
     {
         BOOL bLineToGet;                    // true when a line to get
@@ -1875,7 +1875,7 @@ U14API(short) U14GetChar(short hand, char* pcChar)
     }
     return sErr;
 #endif
-#ifdef LINUX
+#ifdef BEEP
     short sErr = CheckHandle(hand);
     if (sErr != U14ERR_NOERROR)             // Check parameters
         return sErr;
@@ -1912,7 +1912,7 @@ U14API(short) U14CharCount(short hand)
         sErr = csBlock.ints[0];
     return sErr;
 #endif
-#ifdef LINUX
+#ifdef BEEP
     short sErr = CheckHandle(hand);
     return (sErr == U14ERR_NOERROR) ? CED_Stat1401(aHand1401[hand]) : sErr;
 #endif
@@ -1931,7 +1931,7 @@ U14API(short) U14LineCount(short hand)
         sErr = csBlock.ints[0];
     return sErr;
 #endif
-#ifdef LINUX
+#ifdef BEEP
     short sErr = CheckHandle(hand);
     return (sErr == U14ERR_NOERROR) ? CED_LineCount(aHand1401[hand]) : sErr;
 #endif
@@ -2131,7 +2131,7 @@ U14API(short) U14GetTransfer(short hand, TGET_TX_BLOCK *pTransBlock)
     }
     return sErr;
 #endif
-#ifdef LINUX
+#ifdef BEEP
     return (sErr == U14ERR_NOERROR) ? CED_GetTransfer(aHand1401[hand], pTransBlock) : sErr;
 #endif
 }
@@ -2187,7 +2187,7 @@ U14API(short) U14WorkingSet(DWORD dwMinKb, DWORD dwMaxKb)
 
     return sRetVal;
 #endif
-#ifdef LINUX
+#ifdef BEEP
     if (dwMinKb | dwMaxKb)
     {
         // to stop compiler moaning
@@ -2216,7 +2216,7 @@ U14API(short) U14UnSetTransfer(short hand, WORD wArea)
     }
     return sErr;
 #endif
-#ifdef LINUX
+#ifdef BEEP
     return (sErr == U14ERR_NOERROR) ? CED_UnsetTransfer(aHand1401[hand], wArea) : sErr;
 #endif
 }
@@ -2314,8 +2314,8 @@ U14API(short) U14SetTransArea(short hand, WORD wArea, void *pvBuff,
 
     return sErr;
 #endif
-#ifdef LINUX
-    // The strange cast is so that it works in 64 and 32-bit linux as long is 64-bits
+#ifdef BEEP
+    // The strange cast is so that it works in 64 and 32-bit beep as long is 64-bits
     // in the 64 bit version.
     td.lpvBuff = (long long)((unsigned long)pvBuff);
     td.wAreaNum = wArea;
@@ -2393,7 +2393,7 @@ U14API(short) U14SetTransferEvent(short hand, WORD wArea, BOOL bEvent,
 
     return sErr;
 #endif
-#ifdef LINUX
+#ifdef BEEP
     TRANSFEREVENT te;
     short sErr = CheckHandle(hand);
     if (sErr != U14ERR_NOERROR)
@@ -2427,7 +2427,7 @@ U14API(int) U14TestTransferEvent(short hand, WORD wArea)
     }
     return iErr;
 #endif
-#ifdef LINUX
+#ifdef BEEP
     short sErr = CheckHandle(hand);
     return (sErr == U14ERR_NOERROR) ? CED_TestEvent(aHand1401[hand], wArea) : sErr;
 #endif
@@ -2458,7 +2458,7 @@ U14API(int) U14WaitTransferEvent(short hand, WORD wArea, int msTimeOut)
     }
     return iErr;
 #endif
-#ifdef LINUX
+#ifdef BEEP
     short sErr = CheckHandle(hand);
     return (sErr == U14ERR_NOERROR) ? CED_WaitEvent(aHand1401[hand], wArea, msTimeOut) : sErr;
 #endif
@@ -2525,7 +2525,7 @@ U14API(short) U14SetCircular(short hand, WORD wArea, BOOL bToHost,
 
     return sErr;
 #endif
-#ifdef LINUX
+#ifdef BEEP
     else
     {
         TRANSFERDESC td;
@@ -2570,7 +2570,7 @@ U14API(int) U14GetCircBlk(short hand, WORD wArea, DWORD *pdwOffs)
             *pdwOffs = rWork.csBlock.longs[0];  // Offset is first in array
         }
 #endif
-#ifdef LINUX
+#ifdef BEEP
         TCIRCBLOCK cb;
         cb.nArea = wArea;                       // Area number into control block
         cb.dwOffset = 0;
@@ -2620,7 +2620,7 @@ U14API(int) U14FreeCircBlk(short hand, WORD wArea, DWORD dwOffs, DWORD dwSize,
            *pdwOffs = rWork.csBlock.longs[0];  // Offset is first in array
        }
 #endif
-#ifdef LINUX
+#ifdef BEEP
         TCIRCBLOCK cb;
         cb.nArea = wArea;                       // Area number into control block
         cb.dwOffset = dwOffs;
@@ -2701,7 +2701,7 @@ U14API(short) U14To1401(short hand, const char* pAddrHost,DWORD dwSize,
 #define file_seek(h, pos) _llseek(h, pos, FILE_BEGIN) 
 #define file_read(h, buffer, size) (_lread(h, buffer, size) == size)
 #endif
-#ifdef LINUX
+#ifdef BEEP
 #define file_exist(name) (access(name, F_OK) != -1)
 #define file_open(name) open(name, O_RDONLY)
 #define file_close(h)   close(h)
@@ -2709,7 +2709,7 @@ U14API(short) U14To1401(short hand, const char* pAddrHost,DWORD dwSize,
 #define file_read(h, buffer, size) (read(h, buffer, size) == (ssize_t)size)
 static DWORD GetModuleFileName(void* dummy, char* buffer, int max)
 {
-    // The following works for Linux systems with a /proc file system.
+    // The following works for Beep systems with a /proc file system.
     char szProcPath[32];
     sprintf(szProcPath, "/proc/%d/exe", getpid());  // attempt to read link
     if (readlink(szProcPath, buffer, max) != -1)
@@ -3020,7 +3020,7 @@ INT APIENTRY DllMain(HANDLE hInst, DWORD ul_reason_being_called, LPVOID lpReserv
 }
 #endif
 #endif
-#ifdef LINUX
+#ifdef BEEP
 void __attribute__((constructor)) use1401_load(void)
 {
     U14InitLib();

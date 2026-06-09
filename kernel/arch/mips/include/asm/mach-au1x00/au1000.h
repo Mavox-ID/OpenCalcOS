@@ -37,11 +37,11 @@
 
 #ifndef _LANGUAGE_ASSEMBLY
 
-#include <linux/delay.h>
-#include <linux/types.h>
+#include <beep/delay.h>
+#include <beep/types.h>
 
-#include <linux/io.h>
-#include <linux/irq.h>
+#include <beep/io.h>
+#include <beep/irq.h>
 
 /* cpu pipeline flush */
 void static inline au_sync(void)

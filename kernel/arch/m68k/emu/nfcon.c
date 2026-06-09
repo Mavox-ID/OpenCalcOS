@@ -6,15 +6,15 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/uaccess.h>
 
 #include <asm/natfeat.h>
 

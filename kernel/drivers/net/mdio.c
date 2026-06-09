@@ -7,12 +7,12 @@
  * by the Free Software Foundation, incorporated herein by reference.
  */
 
-#include <linux/kernel.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/ethtool.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/ethtool.h>
+#include <beep/mdio.h>
+#include <beep/module.h>
 
 MODULE_DESCRIPTION("Generic support for MDIO-compatible transceivers");
 MODULE_AUTHOR("Copyright 2006-2009 Solarflare Communications Inc.");

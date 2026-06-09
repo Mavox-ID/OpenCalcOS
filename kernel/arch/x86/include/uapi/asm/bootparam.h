@@ -1,10 +1,10 @@
 #ifndef _ASM_X86_BOOTPARAM_H
 #define _ASM_X86_BOOTPARAM_H
 
-#include <linux/types.h>
-#include <linux/screen_info.h>
-#include <linux/apm_bios.h>
-#include <linux/edd.h>
+#include <beep/types.h>
+#include <beep/screen_info.h>
+#include <beep/apm_bios.h>
+#include <beep/edd.h>
 #include <asm/e820.h>
 #include <asm/ist.h>
 #include <video/edid.h>
@@ -75,7 +75,7 @@ struct sys_desc_table {
 	__u8  table[14];
 };
 
-/* Gleaned from OFW's set-parameters in cpu/x86/pc/linux.fth */
+/* Gleaned from OFW's set-parameters in cpu/x86/pc/beep.fth */
 struct olpc_ofw_header {
 	__u32 ofw_magic;	/* OFW signature */
 	__u32 ofw_version;

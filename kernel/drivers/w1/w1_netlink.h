@@ -23,7 +23,7 @@
 #define __W1_NETLINK_H
 
 #include <asm/types.h>
-#include <linux/connector.h>
+#include <beep/connector.h>
 
 #include "w1.h"
 

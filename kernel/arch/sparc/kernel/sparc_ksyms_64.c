@@ -2,13 +2,13 @@
  *
  * Copyright (C) 1996, 2007 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1996 Eddie C. Dost (ecd@skynet.be)
- * Copyright (C) 1999 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1999 Jakub Jelinek (jj@ultra.beep.cz)
  */
 
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
+#include <beep/export.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
 
 #include <asm/cpudata.h>
 #include <asm/uaccess.h>

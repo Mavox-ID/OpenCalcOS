@@ -8,7 +8,7 @@
 #ifndef HWSAMPLER_H_
 #define HWSAMPLER_H_
 
-#include <linux/workqueue.h>
+#include <beep/workqueue.h>
 
 struct hws_qsi_info_block          /* QUERY SAMPLING information block  */
 { /* Bit(s) */

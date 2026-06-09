@@ -7,10 +7,10 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/string.h>
 #include <asm/blackfin.h>
 #include <asm/irq_handler.h>
 #include <asm/early_printk.h>

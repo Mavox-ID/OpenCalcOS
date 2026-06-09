@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel(R) 82576 Virtual Function Linux driver
+  Intel(R) 82576 Virtual Function Beep driver
   Copyright(c) 1999 - 2012 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it

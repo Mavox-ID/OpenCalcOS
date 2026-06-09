@@ -1,5 +1,5 @@
 /*
- *	Real Time Clock interface for Linux
+ *	Real Time Clock interface for Beep
  *
  *	Copyright (C) 1996 Paul Gortmaker
  *
@@ -61,26 +61,26 @@
  *      kernel/time/ntp.c vs. this driver.)
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/miscdevice.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/mc146818rtc.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/sysctl.h>
-#include <linux/wait.h>
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/ratelimit.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/miscdevice.h>
+#include <beep/ioport.h>
+#include <beep/fcntl.h>
+#include <beep/mc146818rtc.h>
+#include <beep/init.h>
+#include <beep/poll.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/spinlock.h>
+#include <beep/sched.h>
+#include <beep/sysctl.h>
+#include <beep/wait.h>
+#include <beep/bcd.h>
+#include <beep/delay.h>
+#include <beep/uaccess.h>
+#include <beep/ratelimit.h>
 
 #include <asm/current.h>
 
@@ -89,8 +89,8 @@
 #endif
 
 #ifdef CONFIG_SPARC32
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 #include <asm/io.h>
 
 static unsigned long rtc_port;

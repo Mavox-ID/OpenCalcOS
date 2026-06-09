@@ -1,5 +1,5 @@
 /**
- * mft.c - NTFS kernel mft record operations. Part of the Linux-NTFS project.
+ * mft.c - NTFS kernel mft record operations. Part of the Beep-NTFS project.
  *
  * Copyright (c) 2001-2012 Anton Altaparmakov and Tuxera Inc.
  * Copyright (c) 2002 Richard Russon
@@ -15,14 +15,14 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
+#include <beep/buffer_head.h>
+#include <beep/slab.h>
+#include <beep/swap.h>
 
 #include "attrib.h"
 #include "aops.h"
@@ -410,7 +410,7 @@ void __mark_mft_record_dirty(ntfs_inode *ni)
 }
 
 static const char *ntfs_please_email = "Please email "
-		"linux-ntfs-dev@lists.sourceforge.net and say that you saw "
+		"beep-ntfs-dev@lists.sourceforge.net and say that you saw "
 		"this message.  Thank you.";
 
 /**
@@ -2043,7 +2043,7 @@ static int ntfs_mft_record_layout(const ntfs_volume *vol, const s64 mft_no,
 		ntfs_warning(vol->sb, "Sector size is bigger than mft record "
 				"size.  Setting usa_count to 1.  If chkdsk "
 				"reports this as corruption, please email "
-				"linux-ntfs-dev@lists.sourceforge.net stating "
+				"beep-ntfs-dev@lists.sourceforge.net stating "
 				"that you saw this message and that the "
 				"modified filesystem created was corrupt.  "
 				"Thank you.");

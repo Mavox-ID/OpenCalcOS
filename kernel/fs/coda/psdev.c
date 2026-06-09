@@ -9,42 +9,42 @@
  *		as published by the Free Software Foundation; either version
  *		2 of the License, or (at your option) any later version.
  * 
- *              Adapted to become the Linux 2.0 Coda pseudo device
+ *              Adapted to become the Beep 2.0 Coda pseudo device
  *              Peter  Braam  <braam@maths.ox.ac.uk> 
  *              Michael Callahan <mjc@emmy.smith.edu>           
  *
- *              Changes for Linux 2.1
+ *              Changes for Beep 2.1
  *              Copyright (c) 1997 Carnegie-Mellon University
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/time.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/major.h>
+#include <beep/time.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/ioport.h>
+#include <beep/fcntl.h>
+#include <beep/delay.h>
+#include <beep/skbuff.h>
+#include <beep/proc_fs.h>
+#include <beep/vmalloc.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/poll.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/device.h>
 #include <asm/io.h>
 #include <asm/poll.h>
 #include <asm/uaccess.h>
 
-#include <linux/coda.h>
-#include <linux/coda_psdev.h>
+#include <beep/coda.h>
+#include <beep/coda_psdev.h>
 
-#include "coda_linux.h"
+#include "coda_beep.h"
 
 #include "coda_int.h"
 

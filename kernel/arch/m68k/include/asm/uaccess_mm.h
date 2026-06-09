@@ -4,10 +4,10 @@
 /*
  * User space memory access functions
  */
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/sched.h>
+#include <beep/compiler.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/sched.h>
 #include <asm/segment.h>
 
 #define VERIFY_READ	0

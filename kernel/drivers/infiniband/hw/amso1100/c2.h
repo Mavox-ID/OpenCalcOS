@@ -34,12 +34,12 @@
 #ifndef __C2_H
 #define __C2_H
 
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
+#include <beep/netdevice.h>
+#include <beep/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/idr.h>
 
 #include "c2_provider.h"
 #include "c2_mq.h"

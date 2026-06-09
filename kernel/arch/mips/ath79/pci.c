@@ -12,8 +12,8 @@
  *  by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <beep/init.h>
+#include <beep/pci.h>
 #include <asm/mach-ath79/ar71xx_regs.h>
 #include <asm/mach-ath79/ath79.h>
 #include <asm/mach-ath79/irq.h>

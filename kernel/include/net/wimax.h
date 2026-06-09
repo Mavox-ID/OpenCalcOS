@@ -1,9 +1,9 @@
 /*
- * Linux WiMAX
+ * Beep WiMAX
  * Kernel space API for accessing WiMAX devices
  *
  *
- * Copyright (C) 2007-2008 Intel Corporation <linux-wimax@intel.com>
+ * Copyright (C) 2007-2008 Intel Corporation <beep-wimax@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *
  * This program is free software; you can redistribute it and/or
@@ -183,7 +183,7 @@
  *
  * All the declarations for the operation codes (WIMAX_GNL_OP_<NAME>)
  * and generic netlink attributes (WIMAX_GNL_<NAME>_*) are declared in
- * include/linux/wimax.h; this file is intended to be cloned by user
+ * include/beep/wimax.h; this file is intended to be cloned by user
  * space to gain access to those declarations.
  *
  * A few caveats to remember:
@@ -251,9 +251,9 @@
 #ifndef __NET__WIMAX_H__
 #define __NET__WIMAX_H__
 
-#include <linux/wimax.h>
+#include <beep/wimax.h>
 #include <net/genetlink.h>
-#include <linux/netdevice.h>
+#include <beep/netdevice.h>
 
 struct net_device;
 struct genl_info;
@@ -460,7 +460,7 @@ extern enum wimax_st wimax_state_get(struct wimax_dev *);
 /*
  * Radio Switch state reporting.
  *
- * enum wimax_rf_state is declared in linux/wimax.h so the exports
+ * enum wimax_rf_state is declared in beep/wimax.h so the exports
  * to user space can use it.
  */
 extern void wimax_report_rfkill_hw(struct wimax_dev *, enum wimax_rf_state);

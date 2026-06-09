@@ -1,24 +1,24 @@
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
-#include <linux/crc32c.h>
-#include <linux/ctype.h>
-#include <linux/highmem.h>
-#include <linux/inet.h>
-#include <linux/kthread.h>
-#include <linux/net.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/string.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/dns_resolver.h>
+#include <beep/crc32c.h>
+#include <beep/ctype.h>
+#include <beep/highmem.h>
+#include <beep/inet.h>
+#include <beep/kthread.h>
+#include <beep/net.h>
+#include <beep/slab.h>
+#include <beep/socket.h>
+#include <beep/string.h>
+#include <beep/bio.h>
+#include <beep/blkdev.h>
+#include <beep/dns_resolver.h>
 #include <net/tcp.h>
 
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/messenger.h>
-#include <linux/ceph/decode.h>
-#include <linux/ceph/pagelist.h>
-#include <linux/export.h>
+#include <beep/ceph/libceph.h>
+#include <beep/ceph/messenger.h>
+#include <beep/ceph/decode.h>
+#include <beep/ceph/pagelist.h>
+#include <beep/export.h>
 
 /*
  * Ceph uses the messenger to exchange ceph_msg messages with other

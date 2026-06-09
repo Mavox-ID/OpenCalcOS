@@ -1,16 +1,16 @@
 /*
- *  Amiga Linux/m68k and Linux/PPC Zorro NS8390 Ethernet Driver
+ *  Amiga Beep/m68k and Beep/PPC Zorro NS8390 Ethernet Driver
  *
  *  (C) Copyright 1998-2000 by some Elitist 680x0 Users(TM)
  *
  *  ---------------------------------------------------------------------------
  *
- *  This program is based on all the other NE2000 drivers for Linux
+ *  This program is based on all the other NE2000 drivers for Beep
  *
  *  ---------------------------------------------------------------------------
  *
  *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of the Linux
+ *  License.  See the file COPYING in the main directory of the Beep
  *  distribution for more details.
  *
  *  ---------------------------------------------------------------------------
@@ -21,15 +21,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/zorro.h>
-#include <linux/jiffies.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/zorro.h>
+#include <beep/jiffies.h>
 
 #include <asm/irq.h>
 #include <asm/amigaints.h>

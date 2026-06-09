@@ -63,44 +63,44 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/sched.h>
-#include <linux/jiffies.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/kthread.h>
-#include <linux/rbtree.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/cpumask.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
-#include <linux/stacktrace.h>
-#include <linux/cache.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
-#include <linux/mmzone.h>
-#include <linux/slab.h>
-#include <linux/thread_info.h>
-#include <linux/err.h>
-#include <linux/uaccess.h>
-#include <linux/string.h>
-#include <linux/nodemask.h>
-#include <linux/mm.h>
-#include <linux/workqueue.h>
-#include <linux/crc32.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/sched.h>
+#include <beep/jiffies.h>
+#include <beep/delay.h>
+#include <beep/export.h>
+#include <beep/kthread.h>
+#include <beep/rbtree.h>
+#include <beep/fs.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/cpumask.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
+#include <beep/rcupdate.h>
+#include <beep/stacktrace.h>
+#include <beep/cache.h>
+#include <beep/percpu.h>
+#include <beep/hardirq.h>
+#include <beep/mmzone.h>
+#include <beep/slab.h>
+#include <beep/thread_info.h>
+#include <beep/err.h>
+#include <beep/uaccess.h>
+#include <beep/string.h>
+#include <beep/nodemask.h>
+#include <beep/mm.h>
+#include <beep/workqueue.h>
+#include <beep/crc32.h>
 
 #include <asm/sections.h>
 #include <asm/processor.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
-#include <linux/kmemcheck.h>
-#include <linux/kmemleak.h>
-#include <linux/memory_hotplug.h>
+#include <beep/kmemcheck.h>
+#include <beep/kmemleak.h>
+#include <beep/memory_hotplug.h>
 
 /*
  * Kmemleak configuration and common defines.

@@ -3,7 +3,7 @@
  *		    Horst Hummel <Horst.Hummel@de.ibm.com>
  *		    Carsten Otte <Cotte@de.ibm.com>
  *		    Martin Schwidefsky <schwidefsky@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <Beep390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2001
  *
  * gendisk related functions for the dasd driver.
@@ -12,9 +12,9 @@
 
 #define KMSG_COMPONENT "dasd"
 
-#include <linux/interrupt.h>
-#include <linux/fs.h>
-#include <linux/blkpg.h>
+#include <beep/interrupt.h>
+#include <beep/fs.h>
+#include <beep/blkpg.h>
 
 #include <asm/uaccess.h>
 

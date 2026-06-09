@@ -1,4 +1,4 @@
-/* linux/arch/sparc/kernel/time.c
+/* beep/arch/sparc/kernel/time.c
  *
  * Copyright (C) 1995 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1996 Thomas K. Dyas (tdyas@eden.rutgers.edu)
@@ -14,27 +14,27 @@
  * 1997-09-10	Updated NTP code according to technical memorandum Jan '96
  *		"A Kernel Model for Precision Timekeeping" by Dave Mills
  */
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/rtc.h>
-#include <linux/rtc/m48t59.h>
-#include <linux/timex.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/profile.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/time.h>
+#include <beep/rtc.h>
+#include <beep/rtc/m48t59.h>
+#include <beep/timex.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/ioport.h>
+#include <beep/profile.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/platform_device.h>
 
 #include <asm/oplib.h>
 #include <asm/timex.h>

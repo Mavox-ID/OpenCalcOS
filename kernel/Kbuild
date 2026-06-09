@@ -16,8 +16,8 @@ targets := $(bounds-file) kernel/bounds.s
 quiet_cmd_bounds = GEN     $@
 define cmd_bounds
 	(set -e; \
-	 echo "#ifndef __LINUX_BOUNDS_H__"; \
-	 echo "#define __LINUX_BOUNDS_H__"; \
+	 echo "#ifndef __BEEP_BOUNDS_H__"; \
+	 echo "#define __BEEP_BOUNDS_H__"; \
 	 echo "/*"; \
 	 echo " * DO NOT MODIFY."; \
 	 echo " *"; \

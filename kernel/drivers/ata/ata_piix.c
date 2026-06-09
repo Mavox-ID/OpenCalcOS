@@ -2,7 +2,7 @@
  *    ata_piix.c - Intel PATA/SATA controllers
  *
  *    Maintained by:  Jeff Garzik <jgarzik@pobox.com>
- *    		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *    		    Please ALWAYS copy beep-ide@vger.kernel.org
  *		    on emails.
  *
  *
@@ -13,7 +13,7 @@
  *	Copyright header from piix.c:
  *
  *  Copyright (C) 1998-1999 Andrzej Krzysztofowicz, Author and Maintainer
- *  Copyright (C) 1998-2000 Andre Hedrick <andre@linux-ide.org>
+ *  Copyright (C) 1998-2000 Andre Hedrick <andre@beep-ide.org>
  *  Copyright (C) 2003 Red Hat Inc
  *
  *
@@ -83,17 +83,17 @@
  *	ICH3	errata #18	- Don't use native mode
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/gfp.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
-#include <linux/dmi.h>
+#include <beep/libata.h>
+#include <beep/dmi.h>
 
 #define DRV_NAME	"ata_piix"
 #define DRV_VERSION	"2.13"

@@ -2,7 +2,7 @@
  *
  * Loopback lowlevel module for testing of linklevel.
  *
- * Copyright 1997 by Fritz Elfert (fritz@isdn4linux.de)
+ * Copyright 1997 by Fritz Elfert (fritz@isdn4beep.de)
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
@@ -33,19 +33,19 @@ typedef struct isdnloop_sdef {
 #ifdef __KERNEL__
 /* Kernel includes */
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/major.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/major.h>
 #include <asm/io.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/ioport.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/isdnif.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/ioport.h>
+#include <beep/timer.h>
+#include <beep/wait.h>
+#include <beep/isdnif.h>
 
 #endif                          /* __KERNEL__ */
 

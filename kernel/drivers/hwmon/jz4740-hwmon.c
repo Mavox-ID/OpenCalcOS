@@ -13,19 +13,19 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/io.h>
 
-#include <linux/completion.h>
-#include <linux/mfd/core.h>
+#include <beep/completion.h>
+#include <beep/mfd/core.h>
 
-#include <linux/hwmon.h>
+#include <beep/hwmon.h>
 
 struct jz4740_hwmon {
 	struct resource *mem;

@@ -6,26 +6,26 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
+#include <beep/device.h>
+#include <beep/export.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
 
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/usb/musb.h>
+#include <beep/i2c.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/usb/musb.h>
 #include <asm/dma.h>
 #include <asm/bfin5xx_spi.h>
 #include <asm/reboot.h>
 #include <asm/nand.h>
 #include <asm/portmux.h>
 #include <asm/dpmc.h>
-#include <linux/spi/ad7877.h>
+#include <beep/spi/ad7877.h>
 
 /*
  * Name the Board for the /proc/cpuinfo
@@ -105,7 +105,7 @@ static struct mtd_partition ezbrd_partitions[] = {
 		.size       = 0x40000,
 		.offset     = 0,
 	}, {
-		.name       = "linux kernel(nor)",
+		.name       = "beep kernel(nor)",
 		.size       = 0x1C0000,
 		.offset     = MTDPART_OFS_APPEND,
 	}, {
@@ -145,7 +145,7 @@ static struct mtd_partition partition_info[] = {
 		.offset = 0,
 		.size = 0x40000,
 	}, {
-		.name = "linux kernel(nand)",
+		.name = "beep kernel(nand)",
 		.offset = MTDPART_OFS_APPEND,
 		.size = 4 * 1024 * 1024,
 	},
@@ -197,7 +197,7 @@ static struct platform_device rtc_device = {
 
 
 #if defined(CONFIG_BFIN_MAC) || defined(CONFIG_BFIN_MAC_MODULE)
-#include <linux/bfin_mac.h>
+#include <beep/bfin_mac.h>
 static const unsigned short bfin_mac_peripherals[] = P_RMII0;
 
 static struct bfin_phydev_platform_data bfin_phydev_data[] = {
@@ -238,7 +238,7 @@ static struct mtd_partition bfin_spi_flash_partitions[] = {
 		.offset = 0,
 		.mask_flags = MTD_CAP_ROM
 	}, {
-		.name = "linux kernel(spi)",
+		.name = "beep kernel(spi)",
 		.size = MTDPART_SIZ_FULL,
 		.offset = MTDPART_OFS_APPEND,
 	}
@@ -280,7 +280,7 @@ static const struct ad7877_platform_data bfin_ad7877_ts_info = {
 #endif
 
 #if defined(CONFIG_TOUCHSCREEN_AD7879) || defined(CONFIG_TOUCHSCREEN_AD7879_MODULE)
-#include <linux/spi/ad7879.h>
+#include <beep/spi/ad7879.h>
 static const struct ad7879_platform_data bfin_ad7879_ts_info = {
 	.model			= 7879,	/* Model = AD7879 */
 	.x_plate_ohms		= 620,	/* 620 Ohm from the touch datasheet */
@@ -688,8 +688,8 @@ static struct platform_device bfin_sport1_uart_device = {
 #endif
 
 #if defined(CONFIG_KEYBOARD_GPIO) || defined(CONFIG_KEYBOARD_GPIO_MODULE)
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
+#include <beep/input.h>
+#include <beep/gpio_keys.h>
 
 static struct gpio_keys_button bfin_gpio_keys_table[] = {
 	{BTN_0, GPIO_PG0, 1, "gpio-keys: BTN0"},

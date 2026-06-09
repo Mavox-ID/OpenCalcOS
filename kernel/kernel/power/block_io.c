@@ -7,10 +7,10 @@
  * This file is released under the GPLv2.
  */
 
-#include <linux/bio.h>
-#include <linux/kernel.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
+#include <beep/bio.h>
+#include <beep/kernel.h>
+#include <beep/pagemap.h>
+#include <beep/swap.h>
 
 #include "power.h"
 

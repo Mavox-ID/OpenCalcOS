@@ -9,12 +9,12 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/key.h>
-#include <linux/ctype.h>
-#include <linux/dns_resolver.h>
-#include <linux/sched.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/key.h>
+#include <beep/ctype.h>
+#include <beep/dns_resolver.h>
+#include <beep/sched.h>
 #include <keys/rxrpc-type.h>
 #include "internal.h"
 

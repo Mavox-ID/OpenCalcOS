@@ -23,11 +23,11 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
 #include <acpi/apei.h>
-#include <linux/miscdevice.h>
+#include <beep/miscdevice.h>
 
 #include "apei-internal.h"
 

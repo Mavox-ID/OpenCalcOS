@@ -9,22 +9,22 @@
  *
  */
 
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/spi/spi.h>
+#include <beep/slab.h>
+#include <beep/sysfs.h>
+#include <beep/module.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/imu/adis.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
+#include <beep/iio/buffer.h>
+#include <beep/iio/imu/adis.h>
 
-#include <linux/debugfs.h>
+#include <beep/debugfs.h>
 
 #define ADIS16480_PAGE_SIZE 0x80
 

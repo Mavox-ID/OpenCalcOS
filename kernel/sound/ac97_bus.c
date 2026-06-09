@@ -1,5 +1,5 @@
 /*
- * Linux driver model AC97 bus interface
+ * Beep driver model AC97 bus interface
  *
  * Author:	Nicolas Pitre
  * Created:	Jan 14, 2005
@@ -11,10 +11,10 @@
  * (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/string.h>
 #include <sound/ac97_codec.h>
 
 /*

@@ -14,11 +14,11 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/i2c-omap.h>
+#include <beep/i2c-omap.h>
 
 #include "omap_hwmod.h"
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/platform_data/spi-omap2-mcspi.h>
+#include <beep/platform_data/gpio-omap.h>
+#include <beep/platform_data/spi-omap2-mcspi.h>
 
 #include "omap_hwmod_common_data.h"
 

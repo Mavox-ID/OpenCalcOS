@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -115,36 +115,36 @@
 
 #define pr_fmt(fmt) "IPv4: " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
 
-#include <linux/net.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <beep/net.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/in.h>
+#include <beep/inet.h>
+#include <beep/inetdevice.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
 
 #include <net/snmp.h>
 #include <net/ip.h>
 #include <net/protocol.h>
 #include <net/route.h>
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 #include <net/sock.h>
 #include <net/arp.h>
 #include <net/icmp.h>
 #include <net/raw.h>
 #include <net/checksum.h>
-#include <linux/netfilter_ipv4.h>
+#include <beep/netfilter_ipv4.h>
 #include <net/xfrm.h>
-#include <linux/mroute.h>
-#include <linux/netlink.h>
+#include <beep/mroute.h>
+#include <beep/netlink.h>
 
 /*
  *	Process Router Attention IP option (RFC 2113)
@@ -335,7 +335,7 @@ static int ip_rcv_finish(struct sk_buff *skb)
 
 	/*
 	 *	Initialise the virtual path cache for the packet. It describes
-	 *	how the packet travels inside Linux networking.
+	 *	how the packet travels inside Beep networking.
 	 */
 	if (!skb_dst(skb)) {
 		int err = ip_route_input_noref(skb, iph->daddr, iph->saddr,
@@ -343,7 +343,7 @@ static int ip_rcv_finish(struct sk_buff *skb)
 		if (unlikely(err)) {
 			if (err == -EXDEV)
 				NET_INC_STATS_BH(dev_net(skb->dev),
-						 LINUX_MIB_IPRPFILTER);
+						 BEEP_MIB_IPRPFILTER);
 			goto drop;
 		}
 	}

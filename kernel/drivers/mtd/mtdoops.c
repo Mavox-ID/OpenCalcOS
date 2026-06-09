@@ -21,17 +21,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/mtd/mtd.h>
-#include <linux/kmsg_dump.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/console.h>
+#include <beep/vmalloc.h>
+#include <beep/workqueue.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/mtd/mtd.h>
+#include <beep/kmsg_dump.h>
 
 /* Maximum MTD partition size */
 #define MTDOOPS_MAX_MTD_SIZE (8 * 1024 * 1024)

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/alignment.c
+ *  beep/arch/arm/mm/alignment.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  *  Modifications for ARM processor (c) 1995-2001 Russell King
@@ -11,16 +11,16 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/moduleparam.h>
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
+#include <beep/moduleparam.h>
+#include <beep/compiler.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/uaccess.h>
 
 #include <asm/cp15.h>
 #include <asm/system_info.h>
@@ -31,7 +31,7 @@
 /*
  * 32-bit misaligned trap handler (c) 1998 San Mehat (CCC) -July 1998
  * /proc/sys/debug/alignment, modified and integrated into
- * Linux 2.1 by Russell King
+ * Beep 2.1 by Russell King
  *
  * Speed optimisations and better fault handling by Russell King.
  *

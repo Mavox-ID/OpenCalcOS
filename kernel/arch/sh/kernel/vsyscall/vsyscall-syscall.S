@@ -1,4 +1,4 @@
-#include <linux/init.h>
+#include <beep/init.h>
 
 __INITDATA
 

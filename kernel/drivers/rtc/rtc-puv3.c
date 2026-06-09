@@ -9,19 +9,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/clk.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/rtc.h>
+#include <beep/bcd.h>
+#include <beep/clk.h>
+#include <beep/log2.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
 
 #include <asm/irq.h>
 #include <mach/hardware.h>

@@ -28,11 +28,11 @@
  *
  ********************************************************************/
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/termios.h>
-#include <linux/tty.h>
-#include <linux/serial.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/termios.h>
+#include <beep/tty.h>
+#include <beep/serial.h>
 
 #include <asm/uaccess.h>
 

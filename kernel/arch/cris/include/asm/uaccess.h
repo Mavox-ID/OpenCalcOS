@@ -16,8 +16,8 @@
 #define _CRIS_UACCESS_H
 
 #ifndef __ASSEMBLY__
-#include <linux/sched.h>
-#include <linux/errno.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 

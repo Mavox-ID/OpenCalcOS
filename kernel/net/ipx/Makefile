@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux IPX layer.
+# Makefile for the Beep IPX layer.
 #
 
 obj-$(CONFIG_IPX) += ipx.o

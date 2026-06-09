@@ -7,7 +7,7 @@
 #ifndef _S390_PAGE_H
 #define _S390_PAGE_H
 
-#include <linux/const.h>
+#include <beep/const.h>
 #include <asm/types.h>
 
 /* PAGE_SHIFT determines the page size */

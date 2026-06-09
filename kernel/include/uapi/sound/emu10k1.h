@@ -22,7 +22,7 @@
 #ifndef _UAPI__SOUND_EMU10K1_H
 #define _UAPI__SOUND_EMU10K1_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 
 

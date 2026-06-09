@@ -24,21 +24,21 @@
 
 #define pr_fmt(fmt)    "%s: " fmt, __func__
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/string.h>
-#include <linux/debugfs.h>
-#include <linux/remoteproc.h>
-#include <linux/iommu.h>
-#include <linux/idr.h>
-#include <linux/elf.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_ring.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/dma-mapping.h>
+#include <beep/firmware.h>
+#include <beep/string.h>
+#include <beep/debugfs.h>
+#include <beep/remoteproc.h>
+#include <beep/iommu.h>
+#include <beep/idr.h>
+#include <beep/elf.h>
+#include <beep/virtio_ids.h>
+#include <beep/virtio_ring.h>
 #include <asm/byteorder.h>
 
 #include "remoteproc_internal.h"

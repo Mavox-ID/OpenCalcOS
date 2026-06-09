@@ -11,10 +11,10 @@
  *  option) any later version.
  */
 
-#include <linux/i2c.h>
-#include <linux/spi/spi.h>
-#include <linux/regmap.h>
-#include <linux/export.h>
+#include <beep/i2c.h>
+#include <beep/spi/spi.h>
+#include <beep/regmap.h>
+#include <beep/export.h>
 #include <sound/soc.h>
 
 #include <trace/events/asoc.h>

@@ -1,7 +1,7 @@
 /*
  * Apple Cinema Display driver
  *
- * Copyright (C) 2006  Michael Hanselmann (linux-kernel@hansmi.ch)
+ * Copyright (C) 2006  Michael Hanselmann (beep-kernel@hansmi.ch)
  *
  * Thanks to Caskey L. Dickson for his work with acdctl.
  *
@@ -20,16 +20,16 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/backlight.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/atomic.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/backlight.h>
+#include <beep/timer.h>
+#include <beep/workqueue.h>
+#include <beep/atomic.h>
 
 #define APPLE_VENDOR_ID		0x05AC
 

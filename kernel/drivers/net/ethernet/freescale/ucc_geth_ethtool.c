@@ -15,21 +15,21 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/stddef.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/stddef.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/phy.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

@@ -1,19 +1,19 @@
 /*
- * linux/arch/arm/mach-footbridge/netwinder-hw.c
+ * beep/arch/arm/mach-footbridge/netwinder-hw.c
  *
  * Netwinder machine fixup
  *
  * Copyright (C) 1998, 1999 Russell King, Phil Blundell
  */
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/leds.h>
 
 #include <asm/hardware/dec21285.h>
 #include <asm/mach-types.h>

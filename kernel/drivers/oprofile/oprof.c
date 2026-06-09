@@ -7,14 +7,14 @@
  * @author John Levon <levon@movementarian.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/oprofile.h>
-#include <linux/moduleparam.h>
-#include <linux/workqueue.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/oprofile.h>
+#include <beep/moduleparam.h>
+#include <beep/workqueue.h>
+#include <beep/time.h>
+#include <beep/mutex.h>
 
 #include "oprof.h"
 #include "event_buffer.h"

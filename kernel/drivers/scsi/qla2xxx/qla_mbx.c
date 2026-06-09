@@ -7,8 +7,8 @@
 #include "qla_def.h"
 #include "qla_target.h"
 
-#include <linux/delay.h>
-#include <linux/gfp.h>
+#include <beep/delay.h>
+#include <beep/gfp.h>
 
 
 /*

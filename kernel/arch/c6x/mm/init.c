@@ -8,14 +8,14 @@
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/module.h>
-#include <linux/bootmem.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/module.h>
+#include <beep/bootmem.h>
 #ifdef CONFIG_BLK_DEV_RAM
-#include <linux/blkdev.h>
+#include <beep/blkdev.h>
 #endif
-#include <linux/initrd.h>
+#include <beep/initrd.h>
 
 #include <asm/sections.h>
 

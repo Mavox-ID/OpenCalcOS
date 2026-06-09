@@ -19,26 +19,26 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/i2c/twl.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
-#include <linux/spi/spi.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/i2c/twl.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/fixed.h>
+#include <beep/spi/spi.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mmc/host.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mmc/host.h>
 
-#include <linux/platform_data/mtd-nand-omap2.h>
-#include <linux/platform_data/spi-omap2-mcspi.h>
+#include <beep/platform_data/mtd-nand-omap2.h>
+#include <beep/platform_data/spi-omap2-mcspi.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -115,7 +115,7 @@ static inline void __init overo_ads7846_init(void) { return; }
 
 #if defined(CONFIG_SMSC911X) || defined(CONFIG_SMSC911X_MODULE)
 
-#include <linux/smsc911x.h>
+#include <beep/smsc911x.h>
 #include "gpmc-smsc911x.h"
 
 static struct omap_smsc911x_platform_data smsc911x_cfg = {
@@ -267,7 +267,7 @@ static struct mtd_partition overo_nand_partitions[] = {
 		.size           = 2 * NAND_BLOCK_SIZE,
 	},
 	{
-		.name           = "linux",
+		.name           = "beep",
 		.offset         = MTDPART_OFS_APPEND,	/* Offset = 0x280000 */
 		.size           = 32 * NAND_BLOCK_SIZE,
 	},
@@ -301,7 +301,7 @@ static struct regulator_consumer_supply overo_vmmc1_supply[] = {
 };
 
 #if defined(CONFIG_LEDS_GPIO) || defined(CONFIG_LEDS_GPIO_MODULE)
-#include <linux/leds.h>
+#include <beep/leds.h>
 
 static struct gpio_led gpio_leds[] = {
 	{
@@ -347,8 +347,8 @@ static inline void __init overo_init_led(void) { return; }
 #endif
 
 #if defined(CONFIG_KEYBOARD_GPIO) || defined(CONFIG_KEYBOARD_GPIO_MODULE)
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
+#include <beep/input.h>
+#include <beep/gpio_keys.h>
 
 static struct gpio_keys_button gpio_buttons[] = {
 	{

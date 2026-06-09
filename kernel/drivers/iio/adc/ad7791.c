@@ -7,27 +7,27 @@
  * Licensed under the GPL-2.
  */
 
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/sysfs.h>
+#include <beep/spi/spi.h>
+#include <beep/regulator/consumer.h>
+#include <beep/err.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/module.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/adc/ad_sigma_delta.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
+#include <beep/iio/buffer.h>
+#include <beep/iio/trigger.h>
+#include <beep/iio/trigger_consumer.h>
+#include <beep/iio/triggered_buffer.h>
+#include <beep/iio/adc/ad_sigma_delta.h>
 
-#include <linux/platform_data/ad7791.h>
+#include <beep/platform_data/ad7791.h>
 
 #define AD7791_REG_COMM			0x0 /* For writes */
 #define AD7791_REG_STATUS		0x0 /* For reads */

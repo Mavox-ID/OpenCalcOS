@@ -3,10 +3,10 @@
  *
  *  For licencing details see kernel-base/COPYING
  */
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
+#include <beep/pci.h>
 
 #include <asm/bios_ebda.h>
 #include <asm/paravirt.h>

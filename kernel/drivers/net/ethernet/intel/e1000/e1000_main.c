@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel PRO/1000 Linux driver
+  Intel PRO/1000 Beep driver
   Copyright(c) 1999 - 2006 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it
@@ -20,7 +20,7 @@
   the file called "COPYING".
 
   Contact Information:
-  Linux NICS <linux.nics@intel.com>
+  Beep NICS <beep.nics@intel.com>
   e1000-devel Mailing List <e1000-devel@lists.sourceforge.net>
   Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
 
@@ -28,10 +28,10 @@
 
 #include "e1000.h"
 #include <net/ip6_checksum.h>
-#include <linux/io.h>
-#include <linux/prefetch.h>
-#include <linux/bitops.h>
-#include <linux/if_vlan.h>
+#include <beep/io.h>
+#include <beep/prefetch.h>
+#include <beep/bitops.h>
+#include <beep/if_vlan.h>
 
 char e1000_driver_name[] = "e1000";
 static char e1000_driver_string[] = "Intel(R) PRO/1000 Network Driver";
@@ -212,7 +212,7 @@ static struct pci_driver e1000_driver = {
 	.err_handler = &e1000_err_handler
 };
 
-MODULE_AUTHOR("Intel Corporation, <linux.nics@intel.com>");
+MODULE_AUTHOR("Intel Corporation, <beep.nics@intel.com>");
 MODULE_DESCRIPTION("Intel(R) PRO/1000 Network Driver");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(DRV_VERSION);

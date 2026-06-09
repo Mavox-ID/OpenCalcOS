@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux/MIPS kernel FPU emulation.
+# Makefile for the Beep/MIPS kernel FPU emulation.
 #
 
 obj-y	:= cp1emu.o ieee754m.o ieee754d.o ieee754dp.o ieee754sp.o ieee754.o \

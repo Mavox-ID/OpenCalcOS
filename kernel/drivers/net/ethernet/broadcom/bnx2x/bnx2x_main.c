@@ -17,43 +17,43 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/device.h>  /* for dev_info() */
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitops.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/device.h>  /* for dev_info() */
+#include <beep/timer.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/dma-mapping.h>
+#include <beep/bitops.h>
+#include <beep/irq.h>
+#include <beep/delay.h>
 #include <asm/byteorder.h>
-#include <linux/time.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/if_vlan.h>
+#include <beep/time.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/if_vlan.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 #include <net/tcp.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>
-#include <linux/workqueue.h>
-#include <linux/crc32.h>
-#include <linux/crc32c.h>
-#include <linux/prefetch.h>
-#include <linux/zlib.h>
-#include <linux/io.h>
-#include <linux/semaphore.h>
-#include <linux/stringify.h>
-#include <linux/vmalloc.h>
+#include <beep/workqueue.h>
+#include <beep/crc32.h>
+#include <beep/crc32c.h>
+#include <beep/prefetch.h>
+#include <beep/zlib.h>
+#include <beep/io.h>
+#include <beep/semaphore.h>
+#include <beep/stringify.h>
+#include <beep/vmalloc.h>
 
 #include "bnx2x.h"
 #include "bnx2x_init.h"
@@ -62,7 +62,7 @@
 #include "bnx2x_dcb.h"
 #include "bnx2x_sp.h"
 
-#include <linux/firmware.h>
+#include <beep/firmware.h>
 #include "bnx2x_fw_file_hdr.h"
 /* FW files */
 #define FW_FILE_VERSION					\

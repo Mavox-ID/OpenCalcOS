@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux X.25 Packet layer.
+# Makefile for the Beep X.25 Packet layer.
 #
 
 obj-$(CONFIG_X25) += x25.o

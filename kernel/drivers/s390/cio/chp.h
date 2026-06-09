@@ -6,9 +6,9 @@
 #ifndef S390_CHP_H
 #define S390_CHP_H S390_CHP_H
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
+#include <beep/types.h>
+#include <beep/device.h>
+#include <beep/mutex.h>
 #include <asm/chpid.h>
 #include "chsc.h"
 #include "css.h"

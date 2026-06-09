@@ -35,10 +35,10 @@
 #ifndef IB_SA_H
 #define IB_SA_H
 
-#include <linux/completion.h>
-#include <linux/compiler.h>
+#include <beep/completion.h>
+#include <beep/compiler.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_mad.h>

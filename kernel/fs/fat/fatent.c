@@ -3,10 +3,10 @@
  * Released under GPL v2.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/msdos_fs.h>
-#include <linux/blkdev.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/msdos_fs.h>
+#include <beep/blkdev.h>
 #include "fat.h"
 
 struct fatent_operations {

@@ -13,14 +13,14 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/msm_ssbi.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/pm8xxx/pm8921.h>
-#include <linux/mfd/pm8xxx/core.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/msm_ssbi.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/pm8xxx/pm8921.h>
+#include <beep/mfd/pm8xxx/core.h>
 
 #define REG_HWREV		0x002  /* PMIC4 revision */
 #define REG_HWREV_2		0x0E8  /* PMIC4 revision 2 */

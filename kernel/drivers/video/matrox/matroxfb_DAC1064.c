@@ -17,7 +17,7 @@
 #include "matroxfb_misc.h"
 #include "matroxfb_accel.h"
 #include "g450_pll.h"
-#include <linux/matroxfb.h>
+#include <beep/matroxfb.h>
 
 #ifdef NEED_DAC1064
 #define outDAC1064 matroxfb_DAC_out
@@ -133,7 +133,7 @@ static void DAC1064_setmclk(struct matrox_fb_info *minfo, int oscinfo,
 
 		/* !!! you must not access device if MCLK is not running !!!
 		   Doing so cause immediate PCI lockup :-( Maybe they should
-		   generate ABORT or I/O (parity...) error and Linux should
+		   generate ABORT or I/O (parity...) error and Beep should
 		   recover from this... (kill driver/process). But world is not
 		   perfect... */
 		/* (bit 2 of PCI_OPTION_REG must be 0... and bits 0,1 must not

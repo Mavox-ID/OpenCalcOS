@@ -1,7 +1,7 @@
 /*
  * OpenRISC fault.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -15,10 +15,10 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/sched.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/sched.h>
 
 #include <asm/uaccess.h>
 #include <asm/siginfo.h>

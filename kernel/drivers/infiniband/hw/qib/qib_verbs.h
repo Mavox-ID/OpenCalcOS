@@ -35,13 +35,13 @@
 #ifndef QIB_VERBS_H
 #define QIB_VERBS_H
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/kref.h>
-#include <linux/workqueue.h>
-#include <linux/completion.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/kref.h>
+#include <beep/workqueue.h>
+#include <beep/completion.h>
 #include <rdma/ib_pack.h>
 #include <rdma/ib_user_verbs.h>
 

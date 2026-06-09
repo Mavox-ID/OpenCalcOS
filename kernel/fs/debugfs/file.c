@@ -13,14 +13,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/pagemap.h>
-#include <linux/namei.h>
-#include <linux/debugfs.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/seq_file.h>
+#include <beep/pagemap.h>
+#include <beep/namei.h>
+#include <beep/debugfs.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 static ssize_t default_read_file(struct file *file, char __user *buf,
 				 size_t count, loff_t *ppos)

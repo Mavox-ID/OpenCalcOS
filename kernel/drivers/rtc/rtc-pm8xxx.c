@@ -10,15 +10,15 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/rtc.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/rtc.h>
+#include <beep/pm.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
-#include <linux/mfd/pm8xxx/core.h>
-#include <linux/mfd/pm8xxx/rtc.h>
+#include <beep/mfd/pm8xxx/core.h>
+#include <beep/mfd/pm8xxx/rtc.h>
 
 
 /* RTC Register offsets from RTC CTRL REG */

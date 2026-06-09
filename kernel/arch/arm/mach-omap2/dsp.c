@@ -18,8 +18,8 @@
  * of the OMAP PM core code.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 
 #include <asm/memblock.h>
 
@@ -30,7 +30,7 @@
 #include "omap-pm.h"
 #endif
 
-#include <linux/platform_data/dsp-omap.h>
+#include <beep/platform_data/dsp-omap.h>
 
 static struct platform_device *omap_dsp_pdev;
 

@@ -1,5 +1,5 @@
 /*
- *  Capabilities Linux Security Module
+ *  Capabilities Beep Security Module
  *
  *  This is the default security module in case no other module is loaded.
  *
@@ -10,7 +10,7 @@
  *
  */
 
-#include <linux/security.h>
+#include <beep/security.h>
 
 static int cap_syslog(int type)
 {
@@ -27,16 +27,16 @@ static int cap_quota_on(struct dentry *dentry)
 	return 0;
 }
 
-static int cap_bprm_check_security(struct linux_binprm *bprm)
+static int cap_bprm_check_security(struct beep_binprm *bprm)
 {
 	return 0;
 }
 
-static void cap_bprm_committing_creds(struct linux_binprm *bprm)
+static void cap_bprm_committing_creds(struct beep_binprm *bprm)
 {
 }
 
-static void cap_bprm_committed_creds(struct linux_binprm *bprm)
+static void cap_bprm_committed_creds(struct beep_binprm *bprm)
 {
 }
 

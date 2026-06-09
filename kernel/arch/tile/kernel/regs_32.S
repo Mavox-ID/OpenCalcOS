@@ -12,7 +12,7 @@
  *   more details.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/ptrace.h>
 #include <asm/asm-offsets.h>
 #include <arch/spr_def.h>

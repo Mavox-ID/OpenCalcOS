@@ -10,7 +10,7 @@
 #ifndef _BFIN_IRQ_H_
 #define _BFIN_IRQ_H_
 
-#include <linux/irqflags.h>
+#include <beep/irqflags.h>
 
 /* IRQs that may be used by external irq_chip controllers */
 #define NR_SPARE_IRQS	32

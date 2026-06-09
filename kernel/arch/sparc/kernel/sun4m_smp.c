@@ -4,12 +4,12 @@
  * Copyright (C) 1996 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/profile.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/cpu.h>
+#include <beep/clockchips.h>
+#include <beep/interrupt.h>
+#include <beep/profile.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/cpu.h>
 
 #include <asm/cacheflush.h>
 #include <asm/switch_to.h>

@@ -22,15 +22,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/usb/otg.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/usb/otg.h>
+#include <beep/slab.h>
+#include <beep/notifier.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/mfd/abx500.h>
+#include <beep/mfd/abx500/ab8500.h>
 
 #define AB8500_MAIN_WD_CTRL_REG 0x01
 #define AB8500_USB_LINE_STAT_REG 0x80

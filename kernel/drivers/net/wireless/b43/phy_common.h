@@ -1,8 +1,8 @@
-#ifndef LINUX_B43_PHY_COMMON_H_
-#define LINUX_B43_PHY_COMMON_H_
+#ifndef BEEP_B43_PHY_COMMON_H_
+#define BEEP_B43_PHY_COMMON_H_
 
-#include <linux/types.h>
-#include <linux/nl80211.h>
+#include <beep/types.h>
+#include <beep/nl80211.h>
 
 struct b43_wldev;
 
@@ -454,4 +454,4 @@ void b43_phy_force_clock(struct b43_wldev *dev, bool force);
 
 struct b43_c32 b43_cordic(int theta);
 
-#endif /* LINUX_B43_PHY_COMMON_H_ */
+#endif /* BEEP_B43_PHY_COMMON_H_ */

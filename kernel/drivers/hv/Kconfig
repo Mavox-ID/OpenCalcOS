@@ -4,7 +4,7 @@ config HYPERV
 	tristate "Microsoft Hyper-V client drivers"
 	depends on X86 && ACPI && PCI
 	help
-	  Select this option to run Linux as a Hyper-V client operating
+	  Select this option to run Beep as a Hyper-V client operating
 	  system.
 
 config HYPERV_UTILS

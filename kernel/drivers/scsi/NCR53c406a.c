@@ -37,21 +37,21 @@
 
 /* ============= End of user configurable parameters ============= */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/proc_fs.h>
+#include <beep/stat.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
 #include <asm/io.h>
 #include <asm/dma.h>
 #include <asm/irq.h>
 
-#include <linux/blkdev.h>
-#include <linux/spinlock.h>
+#include <beep/blkdev.h>
+#include <beep/spinlock.h>
 #include "scsi.h"
 #include <scsi/scsi_host.h>
 
@@ -543,7 +543,7 @@ static int __init NCR53c406a_detect(struct scsi_host_template * tpnt)
 		tpnt->can_queue = 0;
 		DEB(printk("NCR53c406a: No interrupts detected\n"));
 		printk("NCR53c406a driver no longer supports polling interface\n");
-		printk("Please email linux-scsi@vger.kernel.org\n");
+		printk("Please email beep-scsi@vger.kernel.org\n");
                         
 #if USE_DMA
 		printk("NCR53c406a: No interrupts found and DMA mode defined. Giving up.\n");

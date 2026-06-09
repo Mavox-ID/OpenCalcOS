@@ -17,18 +17,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
+#include <beep/pci.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
-#include <linux/libata.h>
+#include <beep/libata.h>
 
 #define DRV_NAME	"sata_sil24"
 #define DRV_VERSION	"1.1"

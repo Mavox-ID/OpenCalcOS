@@ -12,19 +12,19 @@
  * pool of pages per node.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/efi.h>
-#include <linux/genalloc.h>
-#include <linux/gfp.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/efi.h>
+#include <beep/genalloc.h>
+#include <beep/gfp.h>
 #include <asm/page.h>
 #include <asm/pal.h>
 #include <asm/pgtable.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/tlbflush.h>
 #include <asm/sn/arch.h>
 

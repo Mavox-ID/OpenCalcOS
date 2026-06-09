@@ -8,18 +8,18 @@
  *  Venkatesh Pallipadi <venkatesh.pallipadi@intel.com>
  *
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/crash_dump.h>
-#include <linux/export.h>
-#include <linux/bootmem.h>
-#include <linux/pfn.h>
-#include <linux/suspend.h>
-#include <linux/acpi.h>
-#include <linux/firmware-map.h>
-#include <linux/memblock.h>
-#include <linux/sort.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/crash_dump.h>
+#include <beep/export.h>
+#include <beep/bootmem.h>
+#include <beep/pfn.h>
+#include <beep/suspend.h>
+#include <beep/acpi.h>
+#include <beep/firmware-map.h>
+#include <beep/memblock.h>
+#include <beep/sort.h>
 
 #include <asm/e820.h>
 #include <asm/proto.h>

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-nspire/gpio.c
+ * beep/arch/arm/mach-nspire/gpio.c
  *
  * Author: Fabian Vogt <fabian@ritter-vogt.de>
  *
@@ -8,16 +8,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
 
 #define NSPIRE_GPIO_SECTION_SIZE 0x40
 

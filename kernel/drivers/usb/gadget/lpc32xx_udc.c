@@ -28,32 +28,32 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/clk.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/i2c.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/workqueue.h>
-#include <linux/of.h>
-#include <linux/usb/isp1301.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/proc_fs.h>
+#include <beep/clk.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
+#include <beep/i2c.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmapool.h>
+#include <beep/workqueue.h>
+#include <beep/of.h>
+#include <beep/usb/isp1301.h>
 
 #include <asm/byteorder.h>
 #include <mach/hardware.h>
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/irq.h>
 #include <asm/system.h>
 
@@ -61,8 +61,8 @@
 #include <mach/irqs.h>
 #include <mach/board.h>
 #ifdef CONFIG_USB_GADGET_DEBUG_FILES
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 #endif
 
 /*

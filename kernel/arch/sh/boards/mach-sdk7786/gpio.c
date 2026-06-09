@@ -7,13 +7,13 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
 #include <mach/fpga.h>
 
 #define NR_FPGA_GPIOS	8

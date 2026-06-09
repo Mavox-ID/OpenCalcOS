@@ -19,17 +19,17 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/input/tegra_kbc.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/input.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/of.h>
+#include <beep/clk.h>
+#include <beep/slab.h>
+#include <beep/input/tegra_kbc.h>
 #include <mach/clk.h>
 
 #define KBC_MAX_DEBOUNCE_CNT	0x3ffu

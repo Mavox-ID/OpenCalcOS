@@ -25,7 +25,7 @@
  *              where <mtd-id> is the name from the "cat /proc/mtd" command
  * <partdef> := <size>[@offset][<name>][ro][lk]
  * <mtd-id>  := unique name used in mapping driver/device (mtd->name)
- * <size>    := standard linux memsize OR "-" to denote all remaining space
+ * <size>    := standard beep memsize OR "-" to denote all remaining space
  * <name>    := '(' NAME ')'
  *
  * Examples:
@@ -37,12 +37,12 @@
  * edb7312-nor:256k(ARMboot)ro,-(root);edb7312-nand:-(home)
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/module.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/module.h>
+#include <beep/err.h>
 
 /* error message prefix */
 #define ERRP "mtd: "

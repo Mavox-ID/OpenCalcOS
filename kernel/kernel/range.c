@@ -1,11 +1,11 @@
 /*
  * Range add and subtract
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sort.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/sort.h>
 
-#include <linux/range.h>
+#include <beep/range.h>
 
 int add_range(struct range *range, int az, int nr_range, u64 start, u64 end)
 {

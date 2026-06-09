@@ -1,7 +1,7 @@
 /*
  * I2C multiplexer
  *
- * Copyright (c) 2008-2009 Rodolfo Giometti <giometti@linux.it>
+ * Copyright (c) 2008-2009 Rodolfo Giometti <giometti@beep.it>
  * Copyright (c) 2008-2009 Eurotech S.p.A. <info@eurotech.it>
  *
  * This module supports the PCA954x series of I2C multiplexer/switch chips
@@ -28,21 +28,21 @@
  * Based on:
  *	i2c-virtual_cb.c from Brian Kuschak <bkuschak@yahoo.com>
  * and
- *	pca9540.c from Jean Delvare <khali@linux-fr.org>.
+ *	pca9540.c from Jean Delvare <khali@beep-fr.org>.
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/i2c-mux.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/i2c.h>
+#include <beep/i2c-mux.h>
 
-#include <linux/i2c/pca954x.h>
+#include <beep/i2c/pca954x.h>
 
 #define PCA954X_MAX_NCHANS 8
 
@@ -288,6 +288,6 @@ static struct i2c_driver pca954x_driver = {
 
 module_i2c_driver(pca954x_driver);
 
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
+MODULE_AUTHOR("Rodolfo Giometti <giometti@beep.it>");
 MODULE_DESCRIPTION("PCA954x I2C mux/switch driver");
 MODULE_LICENSE("GPL v2");

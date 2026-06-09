@@ -1,6 +1,6 @@
 /*
  * Clock implementation for VIA/Wondermedia SoC's
- * Copyright (C) 2012 Tony Prisk <linux@prisktech.co.nz>
+ * Copyright (C) 2012 Tony Prisk <beep@prisktech.co.nz>
  *
  * This software is licensed under the terms of the GNU General Public
  * License version 2, as published by the Free Software Foundation, and
@@ -13,12 +13,12 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/slab.h>
+#include <beep/bitops.h>
+#include <beep/clkdev.h>
+#include <beep/clk-provider.h>
 
 /* All clocks share the same lock as none can be changed concurrently */
 static DEFINE_SPINLOCK(_lock);

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/alpha/kernel/time.c
+ *  beep/arch/alpha/kernel/time.c
  *
  *  Copyright (C) 1991, 1992, 1995, 1999, 2000  Linus Torvalds
  *
@@ -27,31 +27,31 @@
  * 2003-06-03	R. Scott Bailey <scott.bailey@eds.com>
  *	Tighten sanity in time_init from 1% (10,000 PPM) to 250 PPM
  */
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/bcd.h>
-#include <linux/profile.h>
-#include <linux/irq_work.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/bcd.h>
+#include <beep/profile.h>
+#include <beep/irq_work.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>
 #include <asm/hwrpb.h>
 #include <asm/rtc.h>
 
-#include <linux/mc146818rtc.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/clocksource.h>
+#include <beep/mc146818rtc.h>
+#include <beep/time.h>
+#include <beep/timex.h>
+#include <beep/clocksource.h>
 
 #include "proto.h"
 #include "irq_impl.h"
@@ -341,7 +341,7 @@ calibrate_cc_with_pit(void)
 	return ((long)cc * PIT_TICK_RATE) / (CALIBRATE_LATCH + 1);
 }
 
-/* The Linux interpretation of the CMOS clock register contents:
+/* The Beep interpretation of the CMOS clock register contents:
    When the Update-In-Progress (UIP) flag goes from 1 to 0, the
    RTC registers show the second which has precisely just started.
    Let's hope other operating systems interpret the RTC the same way.  */

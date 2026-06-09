@@ -35,9 +35,9 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/bcd.h>
-#include <linux/spinlock.h>
-#include <linux/efi.h>
+#include <beep/bcd.h>
+#include <beep/spinlock.h>
+#include <beep/efi.h>
 
 #include <asm/pal.h>
 #include <asm/fpu.h>

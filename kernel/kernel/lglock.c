@@ -1,8 +1,8 @@
-/* See include/linux/lglock.h for description */
-#include <linux/module.h>
-#include <linux/lglock.h>
-#include <linux/cpu.h>
-#include <linux/string.h>
+/* See include/beep/lglock.h for description */
+#include <beep/module.h>
+#include <beep/lglock.h>
+#include <beep/cpu.h>
+#include <beep/string.h>
 
 /*
  * Note there is no uninit, so lglocks cannot be defined in

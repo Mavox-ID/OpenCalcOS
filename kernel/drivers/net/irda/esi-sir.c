@@ -31,9 +31,9 @@
  *     
  ********************************************************************/
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/init.h>
 
 #include <net/irda/irda.h>
 

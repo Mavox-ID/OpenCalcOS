@@ -4,7 +4,7 @@
 
     Copyright (C) 2001 Allan Willcox <allanwillcox@ozemail.com.au>
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -190,8 +190,8 @@ for (or detection of) various hardware problems added by Ian Abbott.
 
 #include "../comedidev.h"
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
 
 #include "comedi_fc.h"
 #include "8253.h"

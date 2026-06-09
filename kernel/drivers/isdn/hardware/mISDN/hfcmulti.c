@@ -164,13 +164,13 @@
 
 #define HFC_MULTI_VERSION	"2.03"
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/mISDNhw.h>
-#include <linux/mISDNdsp.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/mISDNhw.h>
+#include <beep/mISDNdsp.h>
 
 /*
   #define IRQCOUNT_DEBUG

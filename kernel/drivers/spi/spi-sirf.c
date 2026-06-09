@@ -6,20 +6,20 @@
  * Licensed under GPLv2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/of_gpio.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/bitops.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/of_gpio.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_bitbang.h>
+#include <beep/pinctrl/consumer.h>
 
 #define DRIVER_NAME "sirfsoc_spi"
 

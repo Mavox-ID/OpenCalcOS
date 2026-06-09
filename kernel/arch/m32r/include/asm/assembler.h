@@ -2,14 +2,14 @@
 #define _ASM_M32R_ASSEMBLER_H
 
 /*
- * linux/asm-m32r/assembler.h
+ * beep/asm-m32r/assembler.h
  *
- * Copyright (C) 2004  Hirokazu Takata <takata at linux-m32r.org>
+ * Copyright (C) 2004  Hirokazu Takata <takata at beep-m32r.org>
  *
  * This file contains M32R architecture specific macro definitions.
  */
 
-#include <linux/stringify.h>
+#include <beep/stringify.h>
 
 #undef __STR
 

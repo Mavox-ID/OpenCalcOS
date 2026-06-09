@@ -1,5 +1,5 @@
 /*
- * DVB USB Linux driver for Anysee E30 DVB-C & DVB-T USB2.0 receiver
+ * DVB USB Beep driver for Anysee E30 DVB-C & DVB-T USB2.0 receiver
  *
  * Copyright (C) 2007 Antti Palosaari <crope@iki.fi>
  *

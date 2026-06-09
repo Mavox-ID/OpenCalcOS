@@ -18,8 +18,8 @@
  *   along with this program;  if not, write to the Free Software
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
 #include "cifs_unicode.h"
 #include "cifs_uniupr.h"
 #include "cifspdu.h"
@@ -139,7 +139,7 @@ cp_convert:
  * null terminator).
  *
  * Note that some windows versions actually send multiword UTF-16 characters
- * instead of straight UTF16-2. The linux nls routines however aren't able to
+ * instead of straight UTF16-2. The beep nls routines however aren't able to
  * deal with those characters properly. In the event that we get some of
  * those characters, they won't be translated properly.
  */

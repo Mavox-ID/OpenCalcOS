@@ -40,25 +40,25 @@
  *	Fix the resource management problems.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/proc_fs.h>
-#include <linux/prefetch.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/i2o.h>
-#include <linux/scatterlist.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
+#include <beep/jiffies.h>
+#include <beep/interrupt.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/proc_fs.h>
+#include <beep/prefetch.h>
+#include <beep/pci.h>
+#include <beep/blkdev.h>
+#include <beep/i2o.h>
+#include <beep/scatterlist.h>
 
 #include <asm/dma.h>
 #include <asm/io.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>

@@ -30,12 +30,12 @@
  * SOFTWARE.
  */
 /* Crude resource management */
-#include <linux/kernel.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/kfifo.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
+#include <beep/kernel.h>
+#include <beep/random.h>
+#include <beep/slab.h>
+#include <beep/kfifo.h>
+#include <beep/spinlock.h>
+#include <beep/errno.h>
 #include "cxio_resource.h"
 #include "cxio_hal.h"
 
@@ -249,7 +249,7 @@ void cxio_hal_destroy_resource(struct cxio_hal_resource *rscp)
 }
 
 /*
- * PBL Memory Manager.  Uses Linux generic allocator.
+ * PBL Memory Manager.  Uses Beep generic allocator.
  */
 
 #define MIN_PBL_SHIFT 8			/* 256B == min PBL size (32 entries) */
@@ -306,7 +306,7 @@ void cxio_hal_pblpool_destroy(struct cxio_rdev *rdev_p)
 }
 
 /*
- * RQT Memory Manager.  Uses Linux generic allocator.
+ * RQT Memory Manager.  Uses Beep generic allocator.
  */
 
 #define MIN_RQT_SHIFT 10	/* 1KB == mini RQT size (16 entries) */

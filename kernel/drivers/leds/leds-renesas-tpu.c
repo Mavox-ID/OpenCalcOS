@@ -17,21 +17,21 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/printk.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/leds.h>
-#include <linux/platform_data/leds-renesas-tpu.h>
-#include <linux/gpio.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/workqueue.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/printk.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/leds.h>
+#include <beep/platform_data/leds-renesas-tpu.h>
+#include <beep/gpio.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
+#include <beep/workqueue.h>
 
 enum r_tpu_pin { R_TPU_PIN_UNUSED, R_TPU_PIN_GPIO, R_TPU_PIN_GPIO_FN };
 enum r_tpu_timer { R_TPU_TIMER_UNUSED, R_TPU_TIMER_ON };

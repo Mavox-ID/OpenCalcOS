@@ -22,8 +22,8 @@
 #include <drm/ttm/ttm_memory.h>
 #include <drm/ttm/ttm_module.h>
 
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
 
 #include "mgag200_reg.h"
 

@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/boot/compressed/head.S
+ * beep/arch/unicore32/boot/compressed/head.S
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -9,7 +9,7 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <mach/memory.h>
 
 #define csub	cmpsub

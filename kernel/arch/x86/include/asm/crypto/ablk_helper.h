@@ -5,8 +5,8 @@
 #ifndef _CRYPTO_ABLK_HELPER_H
 #define _CRYPTO_ABLK_HELPER_H
 
-#include <linux/crypto.h>
-#include <linux/kernel.h>
+#include <beep/crypto.h>
+#include <beep/kernel.h>
 #include <crypto/cryptd.h>
 
 struct async_helper_ctx {

@@ -10,21 +10,21 @@
  * 	Don Dugger <Don.Dugger@intel.com>
  *	Suresh Siddha <suresh.b.siddha@intel.com>
  *	Fenghua Yu <fenghua.yu@intel.com>
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA Beep Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@vabeep.com>
  */
 /*
  * ia64_switch_to now places correct virtual mapping in in TR2 for
  * kernel stack. This allows us to handle interrupts without changing
  * to physical mode.
  *
- * Jonathan Nicklin	<nicklin@missioncriticallinux.com>
- * Patrick O'Rourke	<orourke@missioncriticallinux.com>
+ * Jonathan Nicklin	<nicklin@missioncriticalbeep.com>
+ * Patrick O'Rourke	<orourke@missioncriticalbeep.com>
  * 11/07/2000
  */
 /*
- * Copyright (c) 2008 Isaku Yamahata <yamahata at valinux co jp>
- *                    VA Linux Systems Japan K.K.
+ * Copyright (c) 2008 Isaku Yamahata <yamahata at vabeep co jp>
+ *                    VA Beep Systems Japan K.K.
  *                    pv_ops.
  */
 /*

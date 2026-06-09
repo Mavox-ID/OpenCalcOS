@@ -9,19 +9,19 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/rwsem.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/personality.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/tracehook.h>
+#include <beep/rwsem.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/errno.h>
+#include <beep/wait.h>
+#include <beep/personality.h>
+#include <beep/ptrace.h>
+#include <beep/unistd.h>
+#include <beep/stddef.h>
+#include <beep/tracehook.h>
 #include <asm/ucontext.h>
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>

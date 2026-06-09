@@ -1,5 +1,5 @@
 /*
- *	linux/drivers/net/wireless/libertas/if_spi.c
+ *	beep/drivers/net/wireless/libertas/if_spi.c
  *
  *	Driver for Marvell SPI WLAN cards.
  *
@@ -19,16 +19,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/hardirq.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/jiffies.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/spi/libertas_spi.h>
-#include <linux/spi/spi.h>
+#include <beep/hardirq.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/firmware.h>
+#include <beep/jiffies.h>
+#include <beep/list.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
+#include <beep/spi/libertas_spi.h>
+#include <beep/spi/spi.h>
 
 #include "host.h"
 #include "decl.h"

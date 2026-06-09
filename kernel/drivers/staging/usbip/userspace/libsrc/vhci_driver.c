@@ -126,7 +126,7 @@ static int parse_status(char *value)
 
 static int check_usbip_device(struct sysfs_class_device *cdev)
 {
-	char class_path[SYSFS_PATH_MAX]; /* /sys/class/video4linux/video0/device */
+	char class_path[SYSFS_PATH_MAX]; /* /sys/class/video4beep/video0/device */
 	char dev_path[SYSFS_PATH_MAX];	 /* /sys/devices/platform/vhci_hcd/usb6/6-1:1.1 */
 	int ret;
 	struct usbip_class_device *usbip_cdev;

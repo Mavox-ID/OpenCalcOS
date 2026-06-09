@@ -21,7 +21,7 @@
  * Alexander Smirnov <alex.bluesman.smirnov@gmail.com>
  */
 
-#include <linux/if_arp.h>
+#include <beep/if_arp.h>
 
 #include <net/mac802154.h>
 #include <net/wpan-phy.h>

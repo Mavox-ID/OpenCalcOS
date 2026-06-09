@@ -11,16 +11,16 @@
  * To test without hardware use the sysfs trigger.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/bitmap.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/bitmap.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/kfifo_buf.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/trigger_consumer.h>
+#include <beep/iio/kfifo_buf.h>
 
 #include "iio_simple_dummy.h"
 

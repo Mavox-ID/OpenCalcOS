@@ -18,16 +18,16 @@
  */
 
 /************************************************************************
- * Master include file for Linux Realport Driver.
+ * Master include file for Beep Realport Driver.
  ************************************************************************/
 
 #ifndef __DRP_H
 #define __DRP_H
 
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/semaphore.h>
-#include <linux/tty.h>
+#include <beep/types.h>
+#include <beep/wait.h>
+#include <beep/semaphore.h>
+#include <beep/tty.h>
 
 
 #include "digirp.h"
@@ -76,7 +76,7 @@
  * Minor device decoding conventions.
  ************************************************************************
  *
- * For Linux, the net and mon devices are handled via "proc", so we
+ * For Beep, the net and mon devices are handled via "proc", so we
  * only have to mux the "tty" devices.  Since every PortServer will
  * have an individual major number, the PortServer number does not
  * need to be encoded, and in fact, does not need to exist.
@@ -575,7 +575,7 @@ enum dgrp_nd_state_t {
 #define NR_PASSWORD	0x0010		/* Server Password */
 
 /************************************************************************
- * Registration status of the node's Linux struct tty_driver structures.
+ * Registration status of the node's Beep struct tty_driver structures.
  ************************************************************************/
 #define SERIAL_TTDRV_REG   0x0001     /* nd_serial_ttdriver registered	*/
 #define CALLOUT_TTDRV_REG  0x0002     /* nd_callout_ttdriver registered */
@@ -597,7 +597,7 @@ struct nd_struct {
 	char	      nd_xprint_name[50];   /* "pr_dgrp_<id>_" + null	    */
 
 	char	     password[16];	  /* Password for server, if needed */
-	int	     nd_tty_ref_cnt;	  /* Linux tty reference count	   */
+	int	     nd_tty_ref_cnt;	  /* Beep tty reference count	   */
 
 	struct proc_dir_entry *nd_net_de; /* Dir entry for /proc/dgrp/net  */
 	struct proc_dir_entry *nd_mon_de; /* Dir entry for /proc/dgrp/mon  */
@@ -679,9 +679,9 @@ struct nd_struct {
 	u8	     nd_vpd[VPDSIZE];		/* VPD, if any */
 
 	ulong	     nd_ttdriver_flags;	  /* Registration status	    */
-	struct tty_driver *nd_serial_ttdriver;	/* Linux TTYDRIVER structure */
-	struct tty_driver *nd_callout_ttdriver; /* Linux TTYDRIVER structure */
-	struct tty_driver *nd_xprint_ttdriver;	/* Linux TTYDRIVER structure */
+	struct tty_driver *nd_serial_ttdriver;	/* Beep TTYDRIVER structure */
+	struct tty_driver *nd_callout_ttdriver; /* Beep TTYDRIVER structure */
+	struct tty_driver *nd_xprint_ttdriver;	/* Beep TTYDRIVER structure */
 
 	u8	     *nd_writebuf;		/* Used to cache data read
 						 * from user

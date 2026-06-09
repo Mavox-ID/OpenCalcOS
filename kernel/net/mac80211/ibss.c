@@ -12,13 +12,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/if_ether.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/if_ether.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
+#include <beep/etherdevice.h>
+#include <beep/rtnetlink.h>
 #include <net/mac80211.h>
 
 #include "ieee80211_i.h"

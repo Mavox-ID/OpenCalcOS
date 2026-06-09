@@ -2,10 +2,10 @@
  *
  * Copyright (C) 2008 David S. Miller <davem@davemloft.net>
  */
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/export.h>
-#include <linux/pm.h>
+#include <beep/kernel.h>
+#include <beep/reboot.h>
+#include <beep/export.h>
+#include <beep/pm.h>
 
 #include <asm/oplib.h>
 #include <asm/prom.h>

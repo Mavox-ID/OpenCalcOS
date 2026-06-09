@@ -8,7 +8,7 @@
  *
  * IO-DATA LANDISK support
  */
-#include <linux/sh_intc.h>
+#include <beep/sh_intc.h>
 
 /* Box specific addresses.  */
 

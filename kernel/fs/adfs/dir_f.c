@@ -1,5 +1,5 @@
 /*
- *  linux/fs/adfs/dir_f.c
+ *  beep/fs/adfs/dir_f.c
  *
  * Copyright (C) 1997-1999 Russell King
  *
@@ -9,7 +9,7 @@
  *
  *  E and F format directory handling
  */
-#include <linux/buffer_head.h>
+#include <beep/buffer_head.h>
 #include "adfs.h"
 #include "dir_f.h"
 
@@ -204,7 +204,7 @@ release_buffers:
 }
 
 /*
- * convert a disk-based directory entry to a Linux ADFS directory entry
+ * convert a disk-based directory entry to a Beep ADFS directory entry
  */
 static inline void
 adfs_dir2obj(struct adfs_dir *dir, struct object_info *obj,
@@ -236,7 +236,7 @@ adfs_dir2obj(struct adfs_dir *dir, struct object_info *obj,
 }
 
 /*
- * convert a Linux ADFS directory entry to a disk-based directory entry
+ * convert a Beep ADFS directory entry to a disk-based directory entry
  */
 static inline void
 adfs_obj2dir(struct adfs_direntry *de, struct object_info *obj)

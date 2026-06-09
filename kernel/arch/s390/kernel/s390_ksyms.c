@@ -1,5 +1,5 @@
-#include <linux/module.h>
-#include <linux/kvm_host.h>
+#include <beep/module.h>
+#include <beep/kvm_host.h>
 #include <asm/ftrace.h>
 
 #ifdef CONFIG_FUNCTION_TRACER

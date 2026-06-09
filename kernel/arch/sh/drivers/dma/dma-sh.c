@@ -11,10 +11,10 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/io.h>
 #include <mach-dreamcast/mach/dma.h>
 #include <asm/dma.h>
 #include <asm/dma-register.h>

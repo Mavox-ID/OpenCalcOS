@@ -10,15 +10,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/spi/spi.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/spi/spi.h>
+#include <beep/i2c.h>
+#include <beep/gpio.h>
+#include <beep/fb.h>
+#include <beep/backlight.h>
+#include <beep/slab.h>
 
 #include <asm/mach/sharpsl_param.h>
 

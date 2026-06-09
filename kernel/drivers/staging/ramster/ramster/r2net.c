@@ -8,7 +8,7 @@
  * FIXME: support more than two nodes
  */
 
-#include <linux/list.h>
+#include <beep/list.h>
 #include "tcp.h"
 #include "nodemanager.h"
 #include "../tmem.h"

@@ -26,8 +26,8 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 *******************************************************************************/
 
-#include <linux/crc32.h>
-#include <linux/slab.h>
+#include <beep/crc32.h>
+#include <beep/slab.h>
 #include <asm/io.h>
 #include "dwmac1000.h"
 

@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux Traffic Control Unit.
+# Makefile for the Beep Traffic Control Unit.
 #
 
 obj-y	:= sch_generic.o sch_mq.o

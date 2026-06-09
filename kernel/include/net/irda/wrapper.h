@@ -26,9 +26,9 @@
 #ifndef WRAPPER_H
 #define WRAPPER_H
 
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
 
 #include <net/irda/irda_device.h>	/* iobuff_t */
 

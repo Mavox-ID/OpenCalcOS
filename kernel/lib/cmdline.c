@@ -1,5 +1,5 @@
 /*
- * linux/lib/cmdline.c
+ * beep/lib/cmdline.c
  * Helper functions generally used for parsing kernel command line
  * and module options.
  *
@@ -12,9 +12,9 @@
  *
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
 
 /*
  *	If a hyphen was found in get_option, this will handle the

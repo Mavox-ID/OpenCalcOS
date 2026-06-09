@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/mm/kmap.c
+ *  beep/arch/m68k/mm/kmap.c
  *
  *  Copyright (C) 1997 Roman Hodek
  *
@@ -7,13 +7,13 @@
  *	     used by other architectures		/Roman Zippel
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
 
 #include <asm/setup.h>
 #include <asm/segment.h>

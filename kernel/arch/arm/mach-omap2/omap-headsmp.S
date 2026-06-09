@@ -15,8 +15,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 
 #include "omap44xx.h"
 

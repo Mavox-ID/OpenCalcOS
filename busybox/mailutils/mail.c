@@ -6,7 +6,7 @@
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
-#if defined(__linux__)
+#if defined(__beep__)
 # include <sys/prctl.h>
 # define PRCTL
 #elif defined(__FreeBSD__)

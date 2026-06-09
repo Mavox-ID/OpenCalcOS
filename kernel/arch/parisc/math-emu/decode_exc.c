@@ -1,5 +1,5 @@
 /*
- * Linux/PA-RISC Project (http://www.parisc-linux.org/)
+ * Beep/PA-RISC Project (http://www.parisc-beep.org/)
  *
  * Floating-point emulation code
  *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
@@ -40,7 +40,7 @@
  * END_DESC
 */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include "float.h"
 #include "sgl_float.h"
 #include "dbl_float.h"

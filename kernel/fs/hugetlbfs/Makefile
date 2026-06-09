@@ -1,5 +1,5 @@
 #
-# Makefile for the linux ramfs routines.
+# Makefile for the beep ramfs routines.
 #
 
 obj-$(CONFIG_HUGETLBFS) += hugetlbfs.o

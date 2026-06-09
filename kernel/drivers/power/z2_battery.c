@@ -9,14 +9,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/z2_battery.h>
+#include <beep/module.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/power_supply.h>
+#include <beep/slab.h>
+#include <beep/z2_battery.h>
 
 #define	Z2_DEFAULT_NAME	"Z2"
 

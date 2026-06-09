@@ -1,10 +1,10 @@
 /*
- * linux/arch/sh/mm/extable.c
+ * beep/arch/sh/mm/extable.c
  *  Taken from:
- *   linux/arch/i386/mm/extable.c
+ *   beep/arch/i386/mm/extable.c
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/uaccess.h>
 
 int fixup_exception(struct pt_regs *regs)

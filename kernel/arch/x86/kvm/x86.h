@@ -1,7 +1,7 @@
 #ifndef ARCH_X86_KVM_X86_H
 #define ARCH_X86_KVM_X86_H
 
-#include <linux/kvm_host.h>
+#include <beep/kvm_host.h>
 #include "kvm_cache_regs.h"
 
 static inline void kvm_clear_exception_queue(struct kvm_vcpu *vcpu)

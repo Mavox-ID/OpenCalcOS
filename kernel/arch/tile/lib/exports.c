@@ -14,10 +14,10 @@
  * Exports from assembler code and from libtile-cc.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 /* arch/tile/lib/usercopy.S */
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 EXPORT_SYMBOL(strnlen_user_asm);
 EXPORT_SYMBOL(strncpy_from_user_asm);
 EXPORT_SYMBOL(clear_user_asm);
@@ -26,7 +26,7 @@ EXPORT_SYMBOL(inv_user_asm);
 EXPORT_SYMBOL(finv_user_asm);
 
 /* arch/tile/kernel/entry.S */
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <asm/processor.h>
 EXPORT_SYMBOL(current_text_addr);
 EXPORT_SYMBOL(dump_stack);

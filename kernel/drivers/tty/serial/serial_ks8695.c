@@ -11,15 +11,15 @@
  * (at your option) any later version.
  *
  */
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/device.h>
+#include <beep/module.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/serial.h>
+#include <beep/console.h>
+#include <beep/sysrq.h>
+#include <beep/device.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -32,7 +32,7 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/serial_core.h>
+#include <beep/serial_core.h>
 
 
 #define SERIAL_KS8695_MAJOR	204

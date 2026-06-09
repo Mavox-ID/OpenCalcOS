@@ -9,19 +9,19 @@
  *	Yasuyuki Kozakai @USAGI <yasuyuki.kozakai@toshiba.co.jp>
  */
 
-#include <linux/types.h>
-#include <linux/ipv6.h>
-#include <linux/in6.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/icmp.h>
+#include <beep/types.h>
+#include <beep/ipv6.h>
+#include <beep/in6.h>
+#include <beep/netfilter.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/icmp.h>
 #include <net/ipv6.h>
 #include <net/inet_frag.h>
 
-#include <linux/netfilter_bridge.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <beep/netfilter_bridge.h>
+#include <beep/netfilter_ipv6.h>
+#include <beep/netfilter_ipv6/ip6_tables.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_l4proto.h>
@@ -347,8 +347,8 @@ ipv6_getorigdst(struct sock *sk, int optval, void __user *user, int *len)
 
 #if IS_ENABLED(CONFIG_NF_CT_NETLINK)
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_conntrack.h>
 
 static int ipv6_tuple_to_nlattr(struct sk_buff *skb,
 				const struct nf_conntrack_tuple *tuple)

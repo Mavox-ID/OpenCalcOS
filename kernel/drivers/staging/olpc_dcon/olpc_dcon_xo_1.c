@@ -13,9 +13,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cs5535.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
+#include <beep/cs5535.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
 #include <asm/olpc.h>
 
 #include "olpc_dcon.h"

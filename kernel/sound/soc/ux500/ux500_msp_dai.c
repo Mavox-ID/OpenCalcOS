@@ -12,13 +12,13 @@
  * by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/regulator/consumer.h>
-#include <linux/mfd/dbx500-prcmu.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/bitops.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/regulator/consumer.h>
+#include <beep/mfd/dbx500-prcmu.h>
 
 #include <mach/hardware.h>
 #include <mach/msp.h>

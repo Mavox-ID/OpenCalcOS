@@ -32,8 +32,8 @@
  *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-#include <linux/file.h>
-#include <linux/slab.h>
+#include <beep/file.h>
+#include <beep/slab.h>
 
 #include "idmap.h"
 #include "cache.h"
@@ -184,7 +184,7 @@ static __be32 nfsd_check_obj_isreg(struct svc_fh *fh)
 	/*
 	 * Using err_symlink as our catch-all case may look odd; but
 	 * there's no other obvious error for this case in 4.0, and we
-	 * happen to know that it will cause the linux v4 client to do
+	 * happen to know that it will cause the beep v4 client to do
 	 * the right thing on attempts to open something other than a
 	 * regular file.
 	 */

@@ -12,11 +12,11 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/kdev_t.h>
-#include <linux/gfp.h>
-#include <linux/err.h>
-#include <linux/export.h>
+#include <beep/device.h>
+#include <beep/kdev_t.h>
+#include <beep/gfp.h>
+#include <beep/err.h>
+#include <beep/export.h>
 
 #include <drm/drm_sysfs.h>
 #include <drm/drm_core.h>
@@ -31,7 +31,7 @@ static struct device_type drm_sysfs_device_minor = {
 
 /**
  * drm_class_suspend - DRM class suspend hook
- * @dev: Linux device to suspend
+ * @dev: Beep device to suspend
  * @state: power state to enter
  *
  * Just figures out what the actual struct drm_device associated with
@@ -53,7 +53,7 @@ static int drm_class_suspend(struct device *dev, pm_message_t state)
 
 /**
  * drm_class_resume - DRM class resume hook
- * @dev: Linux device to resume
+ * @dev: Beep device to resume
  *
  * Just figures out what the actual struct drm_device associated with
  * @dev is and calls its resume hook, if present.
@@ -139,7 +139,7 @@ void drm_sysfs_destroy(void)
 
 /**
  * drm_sysfs_device_release - do nothing
- * @dev: Linux device
+ * @dev: Beep device
  *
  * Normally, this would free the DRM device associated with @dev, along
  * with cleaning up any other stuff.  But we do that in the DRM core, so
@@ -493,7 +493,7 @@ EXPORT_SYMBOL(drm_sysfs_hotplug_event);
  * @head: DRM head in question
  *
  * Add a DRM device to the DRM's device model class.  We use @dev's PCI device
- * as the parent for the Linux device, and make sure it has a file containing
+ * as the parent for the Beep device, and make sure it has a file containing
  * the driver we're using (for userspace compatibility).
  */
 int drm_sysfs_device_add(struct drm_minor *minor)

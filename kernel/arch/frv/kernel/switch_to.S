@@ -12,7 +12,7 @@
 #
 ###############################################################################
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/thread_info.h>
 #include <asm/processor.h>
 #include <asm/registers.h>

@@ -24,23 +24,23 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/crc32.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/bitops.h>
-#include <linux/workqueue.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/crc32.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/bitops.h>
+#include <beep/workqueue.h>
+#include <beep/of.h>
+#include <beep/of_net.h>
+#include <beep/slab.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>

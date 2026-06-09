@@ -9,7 +9,7 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/cpuidle.h>
+#include <beep/cpuidle.h>
 #include <asm/proc-fns.h>
 
 int arm_cpuidle_simple_enter(struct cpuidle_device *dev,

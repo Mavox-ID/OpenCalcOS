@@ -20,8 +20,8 @@
 #ifndef __ASM_ATOMIC_H
 #define __ASM_ATOMIC_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/types.h>
 
 #include <asm/barrier.h>
 #include <asm/cmpxchg.h>

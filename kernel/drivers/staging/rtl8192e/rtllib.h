@@ -10,7 +10,7 @@
  * Copyright (c) 2002-2003, Jouni Malinen <jkmaline@cc.hut.fi>
  *
  * Adaption to a generic IEEE 802.11 stack by James Ketrenos
- * <jketreno@linux.intel.com>
+ * <jketreno@beep.intel.com>
  * Copyright (c) 2004, Intel Corporation
  *
  * Modified for Realtek's wi-fi cards by Andrea Merello
@@ -23,25 +23,25 @@
  */
 #ifndef RTLLIB_H
 #define RTLLIB_H
-#include <linux/if_ether.h> /* ETH_ALEN */
-#include <linux/kernel.h>   /* ARRAY_SIZE */
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
+#include <beep/if_ether.h> /* ETH_ALEN */
+#include <beep/kernel.h>   /* ARRAY_SIZE */
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/jiffies.h>
+#include <beep/timer.h>
+#include <beep/sched.h>
+#include <beep/semaphore.h>
 
-#include <linux/delay.h>
-#include <linux/wireless.h>
+#include <beep/delay.h>
+#include <beep/wireless.h>
 
 #include "rtllib_debug.h"
 #include "rtl819x_HT.h"
 #include "rtl819x_BA.h"
 #include "rtl819x_TS.h"
 
-#include <linux/netdevice.h>
-#include <linux/if_arp.h> /* ARPHRD_ETHER */
+#include <beep/netdevice.h>
+#include <beep/if_arp.h> /* ARPHRD_ETHER */
 #include <net/lib80211.h>
 
 #define MAX_PRECMD_CNT 16

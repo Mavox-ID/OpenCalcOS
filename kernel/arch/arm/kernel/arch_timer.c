@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/arch_timer.c
+ *  beep/arch/arm/kernel/arch_timer.c
  *
  *  Copyright (C) 2011 ARM Ltd.
  *  All Rights Reserved
@@ -8,17 +8,17 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/jiffies.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/of_irq.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/smp.h>
+#include <beep/cpu.h>
+#include <beep/jiffies.h>
+#include <beep/clockchips.h>
+#include <beep/interrupt.h>
+#include <beep/of_irq.h>
+#include <beep/io.h>
 
 #include <asm/cputype.h>
 #include <asm/delay.h>

@@ -9,19 +9,19 @@
  *  2 of the License, or (at your option) any later version.
  *
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/serial_core.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_reg.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_serial.h>
-#include <linux/of_platform.h>
-#include <linux/nwpserial.h>
-#include <linux/clk.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/serial_core.h>
+#include <beep/serial_8250.h>
+#include <beep/serial_reg.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/of_serial.h>
+#include <beep/of_platform.h>
+#include <beep/nwpserial.h>
+#include <beep/clk.h>
 
 struct of_serial_info {
 	struct clk *clk;

@@ -32,25 +32,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sctp.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/bitops.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/vmalloc.h>
+#include <beep/string.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/sctp.h>
+#include <beep/ipv6.h>
+#include <beep/slab.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>
-#include <linux/ethtool.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/prefetch.h>
+#include <beep/ethtool.h>
+#include <beep/if.h>
+#include <beep/if_vlan.h>
+#include <beep/prefetch.h>
 
 #include "ixgbevf.h"
 
@@ -87,7 +87,7 @@ static struct pci_device_id ixgbevf_pci_tbl[] = {
 };
 MODULE_DEVICE_TABLE(pci, ixgbevf_pci_tbl);
 
-MODULE_AUTHOR("Intel Corporation, <linux.nics@intel.com>");
+MODULE_AUTHOR("Intel Corporation, <beep.nics@intel.com>");
 MODULE_DESCRIPTION("Intel(R) 82599 Virtual Function Driver");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(DRV_VERSION);

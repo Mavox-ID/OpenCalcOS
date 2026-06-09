@@ -1,8 +1,8 @@
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
+#include <beep/vmalloc.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
 #include <asm/uaccess.h>
 #include "oss/sound_firmware.h"
 

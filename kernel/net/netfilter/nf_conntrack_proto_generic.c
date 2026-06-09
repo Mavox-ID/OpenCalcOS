@@ -6,10 +6,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/netfilter.h>
+#include <beep/types.h>
+#include <beep/jiffies.h>
+#include <beep/timer.h>
+#include <beep/netfilter.h>
 #include <net/netfilter/nf_conntrack_l4proto.h>
 
 static unsigned int nf_ct_generic_timeout __read_mostly = 600*HZ;
@@ -72,8 +72,8 @@ static bool generic_new(struct nf_conn *ct, const struct sk_buff *skb,
 
 #if IS_ENABLED(CONFIG_NF_CT_NETLINK_TIMEOUT)
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_cttimeout.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_cttimeout.h>
 
 static int generic_timeout_nlattr_to_obj(struct nlattr *tb[],
 					 struct net *net, void *data)

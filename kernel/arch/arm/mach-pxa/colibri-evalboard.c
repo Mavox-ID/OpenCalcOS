@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/colibri-evalboard.c
+ *  beep/arch/arm/mach-pxa/colibri-evalboard.c
  *
  *  Support for Toradex Colibri Evaluation Carrier Board
  *  Daniel Mack <daniel@caiaq.de>
@@ -10,21 +10,21 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
 #include <asm/mach-types.h>
 #include <mach/hardware.h>
 #include <asm/mach/arch.h>
-#include <linux/i2c.h>
-#include <linux/i2c/pxa-i2c.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pxa-i2c.h>
 
 #include <mach/pxa27x.h>
 #include <mach/colibri.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
 #include <mach/pxa27x-udc.h>
 
 #include "generic.h"

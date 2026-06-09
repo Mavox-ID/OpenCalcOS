@@ -2,7 +2,7 @@
  *
  * msnd.h
  *
- * Turtle Beach MultiSound Sound Card Driver for Linux
+ * Turtle Beach MultiSound Sound Card Driver for Beep
  *
  * Some parts of this header file were derived from the Turtle Beach
  * MultiSound Driver Development Kit.
@@ -191,7 +191,7 @@ typedef struct {
 } msnd_fifo;
 
 typedef struct multisound_dev {
-	/* Linux device info */
+	/* Beep device info */
 	char *name;
 	int dsp_minor, mixer_minor;
 	int ext_midi_dev, hdr_midi_dev;

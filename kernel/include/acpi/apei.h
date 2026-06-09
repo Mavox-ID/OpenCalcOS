@@ -5,8 +5,8 @@
 #ifndef ACPI_APEI_H
 #define ACPI_APEI_H
 
-#include <linux/acpi.h>
-#include <linux/cper.h>
+#include <beep/acpi.h>
+#include <beep/cper.h>
 #include <asm/ioctls.h>
 
 #define APEI_ERST_INVALID_RECORD_ID	0xffffffffffffffffULL

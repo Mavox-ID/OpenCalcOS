@@ -63,8 +63,8 @@ Default is to monitor all CPUS.
 	Child tasks inherit counters, only makes sens with -p option.
 
 -k <path>::
---vmlinux=<path>::
-	Path to vmlinux.  Required for annotation functionality.
+--vmbeep=<path>::
+	Path to vmbeep.  Required for annotation functionality.
 
 -m <pages>::
 --mmap-pages=<pages>::

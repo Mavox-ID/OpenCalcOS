@@ -8,11 +8,11 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mbus.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/mbus.h>
+#include <beep/io.h>
 #include <plat/addr-map.h>
 
 struct mbus_dram_target_info orion_mbus_dram_info;

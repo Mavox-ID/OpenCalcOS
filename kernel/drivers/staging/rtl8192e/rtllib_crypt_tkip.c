@@ -9,18 +9,18 @@
  * more details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/string.h>
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
-#include <linux/crc32.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/random.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/if_ether.h>
+#include <beep/if_arp.h>
+#include <beep/string.h>
+#include <beep/crypto.h>
+#include <beep/scatterlist.h>
+#include <beep/crc32.h>
 
 #include "rtllib.h"
 

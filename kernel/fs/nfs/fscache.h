@@ -12,10 +12,10 @@
 #ifndef _NFS_FSCACHE_H
 #define _NFS_FSCACHE_H
 
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/nfs4_mount.h>
-#include <linux/fscache.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_mount.h>
+#include <beep/nfs4_mount.h>
+#include <beep/fscache.h>
 
 #ifdef CONFIG_NFS_FSCACHE
 

@@ -29,17 +29,17 @@
  * $Log: mac_NCR5380.c,v $
  */
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
+#include <beep/types.h>
+#include <beep/stddef.h>
+#include <beep/ctype.h>
+#include <beep/delay.h>
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/signal.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/interrupt.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

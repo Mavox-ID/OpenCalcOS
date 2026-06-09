@@ -6,17 +6,17 @@
  * Copyright (C) 1995, 1996, 1997 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/sched.h>
-#include <linux/freezer.h>
-#include <linux/module.h>
-#include <linux/fs_struct.h>
-#include <linux/swap.h>
+#include <beep/sched.h>
+#include <beep/freezer.h>
+#include <beep/module.h>
+#include <beep/fs_struct.h>
+#include <beep/swap.h>
 
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/lockd/bind.h>
-#include <linux/nfsacl.h>
-#include <linux/seq_file.h>
+#include <beep/sunrpc/stats.h>
+#include <beep/sunrpc/svcsock.h>
+#include <beep/lockd/bind.h>
+#include <beep/nfsacl.h>
+#include <beep/seq_file.h>
 #include <net/net_namespace.h>
 #include "nfsd.h"
 #include "cache.h"

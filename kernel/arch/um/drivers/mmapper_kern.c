@@ -9,13 +9,13 @@
  *
  */
 
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <beep/stddef.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
+#include <beep/mm.h>
 
 #include <asm/uaccess.h>
 #include <mem_user.h>
@@ -130,5 +130,5 @@ module_init(mmapper_init);
 module_exit(mmapper_exit);
 
 MODULE_AUTHOR("Greg Lonnon <glonnon@ridgerun.com>");
-MODULE_DESCRIPTION("DSPLinux simulator mmapper driver");
+MODULE_DESCRIPTION("DSPBeep simulator mmapper driver");
 MODULE_LICENSE("GPL");

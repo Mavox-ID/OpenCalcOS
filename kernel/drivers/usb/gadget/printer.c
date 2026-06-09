@@ -10,36 +10,36 @@
  * (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/moduleparam.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/cdev.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/moduleparam.h>
+#include <beep/fs.h>
+#include <beep/poll.h>
+#include <beep/types.h>
+#include <beep/ctype.h>
+#include <beep/cdev.h>
 
 #include <asm/byteorder.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/uaccess.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/uaccess.h>
 #include <asm/unaligned.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/composite.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/g_printer.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/composite.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb/g_printer.h>
 
 #include "gadget_chips.h"
 
@@ -100,7 +100,7 @@ static struct printer_dev usb_printer_gadget;
 /* Thanks to NetChip Technologies for donating this product ID.
  */
 #define PRINTER_VENDOR_NUM	0x0525		/* NetChip */
-#define PRINTER_PRODUCT_NUM	0xa4a8		/* Linux-USB Printer Gadget */
+#define PRINTER_PRODUCT_NUM	0xa4a8		/* Beep-USB Printer Gadget */
 
 /* Some systems will want different product identifiers published in the
  * device descriptor, either numbers or strings or both.  These string
@@ -112,7 +112,7 @@ MODULE_PARM_DESC(iSerialNum, "1");
 
 static char *iPNPstring;
 module_param(iPNPstring, charp, S_IRUGO);
-MODULE_PARM_DESC(iPNPstring, "MFG:linux;MDL:g_printer;CLS:PRINTER;SN:1;");
+MODULE_PARM_DESC(iPNPstring, "MFG:beep;MDL:g_printer;CLS:PRINTER;SN:1;");
 
 /* Number of requests to allocate per endpoint, not used for ep0. */
 static unsigned qlen = 10;
@@ -229,7 +229,7 @@ static const struct usb_descriptor_header *otg_desc[] = {
 static char				product_desc [40] = DRIVER_DESC;
 static char				serial_num [40] = "1";
 static char				pnp_string [1024] =
-	"XXMFG:linux;MDL:g_printer;CLS:PRINTER;SN:1;";
+	"XXMFG:beep;MDL:g_printer;CLS:PRINTER;SN:1;";
 
 /* static strings, in UTF-8 */
 static struct usb_string		strings [] = {

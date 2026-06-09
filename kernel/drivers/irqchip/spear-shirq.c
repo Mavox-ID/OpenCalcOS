@@ -2,7 +2,7 @@
  * SPEAr platform shared irq layer source file
  *
  * Copyright (C) 2009-2012 ST Microelectronics
- * Viresh Kumar <viresh.linux@gmail.com>
+ * Viresh Kumar <viresh.beep@gmail.com>
  *
  * Copyright (C) 2012 ST Microelectronics
  * Shiraz Hashim <shiraz.hashim@st.com>
@@ -13,17 +13,17 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip/spear-shirq.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/spinlock.h>
+#include <beep/err.h>
+#include <beep/export.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/irqchip/spear-shirq.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/spinlock.h>
 
 static DEFINE_SPINLOCK(lock);
 

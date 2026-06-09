@@ -17,8 +17,8 @@
  *
  */
 
-#ifndef __LINUX_USB_SERIAL_WHITEHEAT_H
-#define __LINUX_USB_SERIAL_WHITEHEAT_H
+#ifndef __BEEP_USB_SERIAL_WHITEHEAT_H
+#define __BEEP_USB_SERIAL_WHITEHEAT_H
 
 
 /* WhiteHEAT commands */

@@ -1,12 +1,12 @@
 /*
- * linux/arch/arm/mach-footbridge/ebsa285.c
+ * beep/arch/arm/mach-footbridge/ebsa285.c
  *
  * EBSA285 machine fixup
  */
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/leds.h>
 
 #include <asm/hardware/dec21285.h>
 #include <asm/mach-types.h>

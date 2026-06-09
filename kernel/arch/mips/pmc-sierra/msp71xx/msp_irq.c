@@ -8,12 +8,12 @@
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/time.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/ptrace.h>
+#include <beep/time.h>
 
 #include <asm/irq_cpu.h>
 

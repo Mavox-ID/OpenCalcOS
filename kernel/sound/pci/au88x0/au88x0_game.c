@@ -28,13 +28,13 @@
  * driver. (email: mjander@embedded.cl).
  */
 
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/init.h>
+#include <beep/time.h>
+#include <beep/delay.h>
+#include <beep/init.h>
 #include <sound/core.h>
 #include "au88x0.h"
-#include <linux/gameport.h>
-#include <linux/export.h>
+#include <beep/gameport.h>
+#include <beep/export.h>
 
 #if defined(CONFIG_GAMEPORT) || (defined(MODULE) && defined(CONFIG_GAMEPORT_MODULE))
 

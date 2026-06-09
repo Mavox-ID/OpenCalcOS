@@ -6,12 +6,12 @@
  * Copyright (C) 2003-2005 Silicon Graphics, Inc.  All Rights Reserved.
  */
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/bitmap.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/bitmap.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include <asm/sn/sn_sal.h>
 #include <asm/sn/addrs.h>
 #include <asm/sn/io.h>
@@ -297,7 +297,7 @@ tioca_dma_d64(unsigned long paddr)
 
 /**
  * tioca_dma_d48 - create a DMA mapping using 48-bit direct mode
- * @pdev: linux pci_dev representing the function
+ * @pdev: beep pci_dev representing the function
  * @paddr: system physical address
  *
  * Map @paddr into 64-bit bus space of the CA associated with @pcidev_info.
@@ -362,7 +362,7 @@ tioca_dma_d48(struct pci_dev *pdev, u64 paddr)
 
 /**
  * tioca_dma_mapped - create a DMA mapping using a CA GART 
- * @pdev: linux pci_dev representing the function
+ * @pdev: beep pci_dev representing the function
  * @paddr: host physical address to map
  * @req_size: len (bytes) to map
  *
@@ -451,7 +451,7 @@ map_return:
 
 /**
  * tioca_dma_unmap - release CA mapping resources
- * @pdev: linux pci_dev representing the function
+ * @pdev: beep pci_dev representing the function
  * @bus_addr: bus address returned by an earlier tioca_dma_map
  * @dir: mapping direction (unused)
  *
@@ -501,7 +501,7 @@ tioca_dma_unmap(struct pci_dev *pdev, dma_addr_t bus_addr, int dir)
 
 /**
  * tioca_dma_map - map pages for PCI DMA
- * @pdev: linux pci_dev representing the function
+ * @pdev: beep pci_dev representing the function
  * @paddr: host physical address to map
  * @byte_count: bytes to map
  *

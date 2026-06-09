@@ -7,17 +7,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s(): " fmt, __func__
 
-#include <linux/fs.h>
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/moduleparam.h>
-#include <linux/ip.h>
-#include <linux/sched.h>
-#include <linux/sockios.h>
-#include <linux/caif/if_caif.h>
+#include <beep/fs.h>
+#include <beep/hardirq.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/if_ether.h>
+#include <beep/moduleparam.h>
+#include <beep/ip.h>
+#include <beep/sched.h>
+#include <beep/sockios.h>
+#include <beep/caif/if_caif.h>
 #include <net/rtnetlink.h>
 #include <net/caif/caif_layer.h>
 #include <net/caif/cfpkt.h>

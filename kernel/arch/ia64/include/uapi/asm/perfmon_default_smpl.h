@@ -3,7 +3,7 @@
  *               Stephane Eranian <eranian@hpl.hp.com>
  *
  * This file implements the default sampling buffer format
- * for Linux/ia64 perfmon subsystem.
+ * for Beep/ia64 perfmon subsystem.
  */
 #ifndef __PERFMON_DEFAULT_SMPL_H__
 #define __PERFMON_DEFAULT_SMPL_H__ 1

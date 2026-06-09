@@ -6,8 +6,8 @@
 
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_host.h>
-#include <linux/tracepoint.h>
-#include <linux/trace_seq.h>
+#include <beep/tracepoint.h>
+#include <beep/trace_seq.h>
 
 #define scsi_opcode_name(opcode)	{ opcode, #opcode }
 #define show_opcode_name(val)					\

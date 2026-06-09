@@ -4,7 +4,7 @@
 /*                                            */
 /**********************************************/
 
-#include <linux/font.h>
+#include <beep/font.h>
 
 #define FONTDATAMAX (11*256)
 

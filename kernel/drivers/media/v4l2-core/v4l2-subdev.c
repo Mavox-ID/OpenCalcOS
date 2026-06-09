@@ -20,11 +20,11 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/ioctl.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
-#include <linux/export.h>
+#include <beep/ioctl.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/videodev2.h>
+#include <beep/export.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

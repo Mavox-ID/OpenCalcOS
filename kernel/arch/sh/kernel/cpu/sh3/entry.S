@@ -8,9 +8,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/sys.h>
-#include <linux/errno.h>
-#include <linux/linkage.h>
+#include <beep/sys.h>
+#include <beep/errno.h>
+#include <beep/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/thread_info.h>
 #include <asm/unistd.h>

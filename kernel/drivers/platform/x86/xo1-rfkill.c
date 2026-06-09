@@ -9,10 +9,10 @@
  * (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rfkill.h>
-#include <linux/olpc-ec.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/rfkill.h>
+#include <beep/olpc-ec.h>
 
 static bool card_blocked;
 

@@ -13,16 +13,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/rtc.h>
-#include <linux/spi/spi.h>
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/rtc.h>
+#include <beep/spi/spi.h>
+#include <beep/bcd.h>
+#include <beep/delay.h>
+#include <beep/bitops.h>
 
 #define RSECCNT	0x00	/* Second Counter */
 #define RMINCNT	0x01	/* Minute Counter */

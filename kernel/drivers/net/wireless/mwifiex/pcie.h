@@ -22,9 +22,9 @@
 #ifndef	_MWIFIEX_PCIE_H
 #define	_MWIFIEX_PCIE_H
 
-#include    <linux/pci.h>
-#include    <linux/pcieport_if.h>
-#include    <linux/interrupt.h>
+#include    <beep/pci.h>
+#include    <beep/pcieport_if.h>
+#include    <beep/interrupt.h>
 
 #include    "main.h"
 

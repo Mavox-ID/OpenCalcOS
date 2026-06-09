@@ -1,23 +1,23 @@
 /*
- *  linux/fs/nfs/nfs3proc.c
+ *  beep/fs/nfs/nfs3proc.c
  *
  *  Client-side NFSv3 procedures stubs.
  *
  *  Copyright (C) 1997, Olaf Kirch
  */
 
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/slab.h>
-#include <linux/nfs.h>
-#include <linux/nfs3.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_page.h>
-#include <linux/lockd/bind.h>
-#include <linux/nfs_mount.h>
-#include <linux/freezer.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/slab.h>
+#include <beep/nfs.h>
+#include <beep/nfs3.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_page.h>
+#include <beep/lockd/bind.h>
+#include <beep/nfs_mount.h>
+#include <beep/freezer.h>
 
 #include "iostat.h"
 #include "internal.h"

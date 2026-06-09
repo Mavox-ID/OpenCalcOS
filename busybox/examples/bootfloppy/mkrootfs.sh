@@ -66,7 +66,7 @@ cd $UCLIBC_DIR
 make INSTALL_DIR=
 cp -a libc.so* $BASE_DIR/$TARGET_DIR/libs
 cp -a uClibc*.so $BASE_DIR/$TARGET_DIR/libs
-cp -a ld.so-1/d-link/ld-linux-uclibc.so* $BASE_DIR/$TARGET_DIR/libs
+cp -a ld.so-1/d-link/ld-beep-uclibc.so* $BASE_DIR/$TARGET_DIR/libs
 cp -a ld.so-1/libdl/libdl.so* $BASE_DIR/$TARGET_DIR/libs
 cp -a crypt/libcrypt.so* $BASE_DIR/$TARGET_DIR/libs
 cd $BASE_DIR

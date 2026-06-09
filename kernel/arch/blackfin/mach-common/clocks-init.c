@@ -6,8 +6,8 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/blackfin.h>
 
 #include <asm/dma.h>
@@ -71,7 +71,7 @@ void init_clocks(void)
 	/* BF52x system reset does not properly reset SIC_IWR1 which
 	 * will screw up the bootrom as it relies on MDMA0/1 waking it
 	 * up from IDLE instructions.  See this report for more info:
-	 * http://blackfin.uclinux.org/gf/tracker/4323
+	 * http://blackfin.ucbeep.org/gf/tracker/4323
 	 */
 	if (ANOMALY_05000435)
 		bfin_write_SIC_IWR1(IWR_ENABLE(10) | IWR_ENABLE(11));

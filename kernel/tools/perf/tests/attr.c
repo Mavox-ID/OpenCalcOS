@@ -23,7 +23,7 @@
 #include <stdio.h>
 #include <inttypes.h>
 #include <linux/types.h>
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include "../perf.h"
 #include "util.h"
 #include "exec_cmd.h"

@@ -8,7 +8,7 @@
  * Licensed under the GPL-2.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 .align 2
 

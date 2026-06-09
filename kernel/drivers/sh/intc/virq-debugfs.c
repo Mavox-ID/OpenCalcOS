@@ -9,11 +9,11 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/debugfs.h>
 #include "internals.h"
 
 static int intc_irq_xlate_debug(struct seq_file *m, void *priv)

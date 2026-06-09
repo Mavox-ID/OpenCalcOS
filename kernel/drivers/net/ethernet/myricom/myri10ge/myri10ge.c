@@ -40,31 +40,31 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/tcp.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/dca.h>
-#include <linux/ip.h>
-#include <linux/inet.h>
-#include <linux/in.h>
-#include <linux/ethtool.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/vmalloc.h>
-#include <linux/crc32.h>
-#include <linux/moduleparam.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
+#include <beep/tcp.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/string.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/etherdevice.h>
+#include <beep/if_ether.h>
+#include <beep/if_vlan.h>
+#include <beep/dca.h>
+#include <beep/ip.h>
+#include <beep/inet.h>
+#include <beep/in.h>
+#include <beep/ethtool.h>
+#include <beep/firmware.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/vmalloc.h>
+#include <beep/crc32.h>
+#include <beep/moduleparam.h>
+#include <beep/io.h>
+#include <beep/log2.h>
+#include <beep/slab.h>
+#include <beep/prefetch.h>
 #include <net/checksum.h>
 #include <net/ip.h>
 #include <net/tcp.h>
@@ -2424,8 +2424,8 @@ static int myri10ge_open(struct net_device *dev)
 	}
 
 	/*
-	 * Set Linux style TSO mode; this is needed only on newer
-	 *  firmware versions.  Older versions default to Linux
+	 * Set Beep style TSO mode; this is needed only on newer
+	 *  firmware versions.  Older versions default to Beep
 	 *  style TSO
 	 */
 	cmd.data0 = 0;

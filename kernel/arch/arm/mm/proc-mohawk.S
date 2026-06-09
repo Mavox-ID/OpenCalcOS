@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/proc-mohawk.S: MMU functions for Marvell PJ1 core
+ *  beep/arch/arm/mm/proc-mohawk.S: MMU functions for Marvell PJ1 core
  *
  *  PJ1 (codename Mohawk) is a hybrid of the xscale3 and Marvell's own core.
  *
@@ -20,8 +20,8 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/assembler.h>
 #include <asm/hwcap.h>
 #include <asm/pgtable-hwdef.h>

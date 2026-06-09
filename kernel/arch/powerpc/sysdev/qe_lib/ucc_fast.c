@@ -12,14 +12,14 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/stddef.h>
+#include <beep/interrupt.h>
+#include <beep/err.h>
+#include <beep/export.h>
 
 #include <asm/io.h>
 #include <asm/immap_qe.h>

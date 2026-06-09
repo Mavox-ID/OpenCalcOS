@@ -19,9 +19,9 @@
 */
 
 #include <asm/io.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/i2c.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/i2c.h>
 
 #include "dmxdev.h"
 #include "dvbdev.h"

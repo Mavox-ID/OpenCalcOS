@@ -24,17 +24,17 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/acpi.h>
-#include <linux/uaccess.h>
-#include <linux/cper.h>
-#include <linux/nmi.h>
-#include <linux/hardirq.h>
-#include <linux/pstore.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/acpi.h>
+#include <beep/uaccess.h>
+#include <beep/cper.h>
+#include <beep/nmi.h>
+#include <beep/hardirq.h>
+#include <beep/pstore.h>
 #include <acpi/apei.h>
 
 #include "apei-internal.h"

@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5p64x0/setup-sdhci-gpio.c
+/* beep/arch/arm/mach-s5p64x0/setup-sdhci-gpio.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/
@@ -10,9 +10,9 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
 
 #include <mach/regs-gpio.h>
 #include <mach/regs-clock.h>

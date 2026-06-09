@@ -11,9 +11,9 @@
  *  Copyright (C) 1998-2000 Anton Blanchard (anton@samba.org)
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <beep/kernel_stat.h>
+#include <beep/seq_file.h>
+#include <beep/export.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cpudata.h>

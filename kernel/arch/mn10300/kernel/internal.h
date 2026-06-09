@@ -9,7 +9,7 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/irqreturn.h>
+#include <beep/irqreturn.h>
 
 struct clocksource;
 struct clock_event_device;

@@ -1,5 +1,5 @@
-#ifndef __LINUX_BOUNDS_H__
-#define __LINUX_BOUNDS_H__
+#ifndef __BEEP_BOUNDS_H__
+#define __BEEP_BOUNDS_H__
 /*
  * DO NOT MODIFY.
  *

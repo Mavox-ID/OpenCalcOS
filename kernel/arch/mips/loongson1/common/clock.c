@@ -7,8 +7,8 @@
  * option) any later version.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <beep/clk.h>
+#include <beep/err.h>
 #include <asm/time.h>
 #include <platform.h>
 

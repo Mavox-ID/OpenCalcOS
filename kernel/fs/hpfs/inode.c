@@ -1,13 +1,13 @@
 /*
- *  linux/fs/hpfs/inode.c
+ *  beep/fs/hpfs/inode.c
  *
  *  Mikulas Patocka (mikulas@artax.karlin.mff.cuni.cz), 1998-1999
  *
  *  inode VFS functions
  */
 
-#include <linux/slab.h>
-#include <linux/user_namespace.h>
+#include <beep/slab.h>
+#include <beep/user_namespace.h>
 #include "hpfs_fn.h"
 
 void hpfs_init_inode(struct inode *i)

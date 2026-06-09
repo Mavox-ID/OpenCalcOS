@@ -26,12 +26,12 @@
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/cpufreq.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/cpufreq.h>
+#include <beep/slab.h>
 
 #include "soc.h"
 #include "clock.h"

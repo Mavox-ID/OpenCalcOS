@@ -11,25 +11,25 @@
 /*
  * This handles all read/write requests to block devices
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/backing-dev.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/highmem.h>
-#include <linux/mm.h>
-#include <linux/kernel_stat.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/writeback.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/fault-inject.h>
-#include <linux/list_sort.h>
-#include <linux/delay.h>
-#include <linux/ratelimit.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/backing-dev.h>
+#include <beep/bio.h>
+#include <beep/blkdev.h>
+#include <beep/highmem.h>
+#include <beep/mm.h>
+#include <beep/kernel_stat.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/completion.h>
+#include <beep/slab.h>
+#include <beep/swap.h>
+#include <beep/writeback.h>
+#include <beep/task_io_accounting_ops.h>
+#include <beep/fault-inject.h>
+#include <beep/list_sort.h>
+#include <beep/delay.h>
+#include <beep/ratelimit.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/block.h>
@@ -253,7 +253,7 @@ EXPORT_SYMBOL(blk_start_queue);
  * @q:    The &struct request_queue in question
  *
  * Description:
- *   The Linux block layer assumes that a block driver will consume all
+ *   The Beep block layer assumes that a block driver will consume all
  *   entries on the request queue when the request_fn strategy is called.
  *   Often this will not happen, because of hardware limitations (queue
  *   depth settings). If a device driver gets a 'queue full' response,

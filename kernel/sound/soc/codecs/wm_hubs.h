@@ -14,9 +14,9 @@
 #ifndef _WM_HUBS_H
 #define _WM_HUBS_H
 
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
+#include <beep/completion.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
 #include <sound/control.h>
 
 struct snd_soc_codec;

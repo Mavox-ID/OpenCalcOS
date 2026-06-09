@@ -10,8 +10,8 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/asm-offsets.h>
 #include <asm/hardware/cache-l2x0.h>
 

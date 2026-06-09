@@ -1,7 +1,7 @@
 /*
  * Ptrace support for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -20,15 +20,15 @@
 
 #include <generated/compile.h>
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/regset.h>
-#include <linux/user.h>
-#include <linux/elf.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/regset.h>
+#include <beep/user.h>
+#include <beep/elf.h>
 
 #include <asm/user.h>
 

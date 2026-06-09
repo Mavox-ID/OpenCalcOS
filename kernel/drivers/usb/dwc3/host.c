@@ -35,7 +35,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 
 #include "core.h"
 

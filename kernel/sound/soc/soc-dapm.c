@@ -23,20 +23,20 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/async.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/jiffies.h>
-#include <linux/debugfs.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/async.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/bitops.h>
+#include <beep/platform_device.h>
+#include <beep/jiffies.h>
+#include <beep/debugfs.h>
+#include <beep/pm_runtime.h>
+#include <beep/regulator/consumer.h>
+#include <beep/clk.h>
+#include <beep/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

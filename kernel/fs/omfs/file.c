@@ -4,10 +4,10 @@
  * Released under GPL v2.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/mpage.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
+#include <beep/mpage.h>
 #include "omfs.h"
 
 static u32 omfs_max_extents(struct omfs_sb_info *sbi, int offset)

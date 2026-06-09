@@ -9,18 +9,18 @@
  * based on work by Grant Guenther <grant@torque.net>
  *              and Philip Blundell
  *
- * Cleaned up include files - Russell King <linux@arm.uk.linux.org>
+ * Cleaned up include files - Russell King <beep@arm.uk.beep.org>
  */
 
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/parport.h>
-#include <linux/ctype.h>
-#include <linux/sysctl.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/parport.h>
+#include <beep/ctype.h>
+#include <beep/sysctl.h>
 
 #include <asm/uaccess.h>
 

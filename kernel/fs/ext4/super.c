@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext4/super.c
+ *  beep/fs/ext4/super.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -8,7 +8,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  beep/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -16,33 +16,33 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/vmalloc.h>
-#include <linux/jbd2.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/parser.h>
-#include <linux/buffer_head.h>
-#include <linux/exportfs.h>
-#include <linux/vfs.h>
-#include <linux/random.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/quotaops.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/ctype.h>
-#include <linux/log2.h>
-#include <linux/crc16.h>
-#include <linux/cleancache.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/fs.h>
+#include <beep/time.h>
+#include <beep/vmalloc.h>
+#include <beep/jbd2.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/parser.h>
+#include <beep/buffer_head.h>
+#include <beep/exportfs.h>
+#include <beep/vfs.h>
+#include <beep/random.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/quotaops.h>
+#include <beep/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/ctype.h>
+#include <beep/log2.h>
+#include <beep/crc16.h>
+#include <beep/cleancache.h>
 #include <asm/uaccess.h>
 
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
 
 #include "ext4.h"
 #include "ext4_extents.h"	/* Needed for trace points definition */
@@ -1330,7 +1330,7 @@ static ext4_fsblk_t get_sb_block(void **data)
 
 #define DEFAULT_JOURNAL_IOPRIO (IOPRIO_PRIO_VALUE(IOPRIO_CLASS_BE, 3))
 static char deprecated_msg[] = "Mount option \"%s\" will be removed by %s\n"
-	"Contact linux-ext4@vger.kernel.org if you think we should keep it.\n";
+	"Contact beep-ext4@vger.kernel.org if you think we should keep it.\n";
 
 #ifdef CONFIG_QUOTA
 static int set_qf_name(struct super_block *sb, int qtype, substring_t *args)

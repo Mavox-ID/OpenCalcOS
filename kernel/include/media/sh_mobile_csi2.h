@@ -11,7 +11,7 @@
 #ifndef SH_MIPI_CSI
 #define SH_MIPI_CSI
 
-#include <linux/list.h>
+#include <beep/list.h>
 
 enum sh_csi2_phy {
 	SH_CSI2_PHY_MAIN,

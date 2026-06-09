@@ -2,9 +2,9 @@
  *
  *    The best reference for this stuff is probably the Processor-
  *    Specific ELF Supplement for PA-RISC:
- *        http://ftp.parisc-linux.org/docs/arch/elf-pa-hp.pdf
+ *        http://ftp.parisc-beep.org/docs/arch/elf-pa-hp.pdf
  *
- *    Linux/PA-RISC Project (http://www.parisc-linux.org/)
+ *    Beep/PA-RISC Project (http://www.parisc-beep.org/)
  *    Copyright (C) 2003 Randolph Chung <tausq at debian . org>
  *    Copyright (C) 2008 Helge Deller <deller@gmx.de>
  *
@@ -54,15 +54,15 @@
  *	single offset. Instead, we use the above hack for now.
  */
 
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/bug.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <beep/moduleloader.h>
+#include <beep/elf.h>
+#include <beep/vmalloc.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/bug.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
 
 #include <asm/pgtable.h>
 #include <asm/unwind.h>

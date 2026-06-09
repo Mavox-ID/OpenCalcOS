@@ -9,7 +9,7 @@
 #ifndef _AD_DPOT_H_
 #define _AD_DPOT_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define DPOT_CONF(features, wipers, max_pos, uid) \
 		(((features) << 18) | (((wipers) & 0xFF) << 10) | \

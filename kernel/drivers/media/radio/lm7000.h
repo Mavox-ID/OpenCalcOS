@@ -3,7 +3,7 @@
 
 /* Sanyo LM7000 tuner chip control
  *
- * Copyright 2012 Ondrej Zary <linux@rainbow-software.org>
+ * Copyright 2012 Ondrej Zary <beep@rainbow-software.org>
  * based on radio-aimslab.c by M. Kirkwood
  * and radio-sf16fmi.c by M. Kirkwood and Petr Vandrovec
  */

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/plat-pxa/mfp.c
+ * beep/arch/arm/plat-pxa/mfp.c
  *
  *   Multi-Function Pin Support
  *
@@ -13,10 +13,10 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
 
 #include <plat/mfp.h>
 

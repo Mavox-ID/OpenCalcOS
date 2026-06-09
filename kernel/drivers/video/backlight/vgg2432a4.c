@@ -3,7 +3,7 @@
  * VGG2432A4 (ILI9320) LCD controller driver.
  *
  * Copyright 2007 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -11,14 +11,14 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/lcd.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/lcd.h>
+#include <beep/module.h>
 
-#include <linux/spi/spi.h>
+#include <beep/spi/spi.h>
 
 #include <video/ili9320.h>
 
@@ -264,7 +264,7 @@ static struct spi_driver vgg2432a4_driver = {
 
 module_spi_driver(vgg2432a4_driver);
 
-MODULE_AUTHOR("Ben Dooks <ben-linux@fluff.org>");
+MODULE_AUTHOR("Ben Dooks <ben-beep@fluff.org>");
 MODULE_DESCRIPTION("VGG2432A4 LCD Driver");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("spi:VGG2432A4");

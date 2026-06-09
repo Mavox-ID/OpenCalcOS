@@ -5,26 +5,26 @@
  *
  * originally based on:
  *
- *  linux/bvme/config.c
+ *  beep/bvme/config.c
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file README.legal in the main directory of this archive
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/serial_reg.h>
-#include <linux/rtc.h>
-#include <linux/vt_kern.h>
-#include <linux/bcd.h>
-#include <linux/platform_device.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/tty.h>
+#include <beep/console.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
+#include <beep/major.h>
+#include <beep/serial_reg.h>
+#include <beep/rtc.h>
+#include <beep/vt_kern.h>
+#include <beep/bcd.h>
+#include <beep/platform_device.h>
 
 #include <asm/io.h>
 #include <asm/rtc.h>

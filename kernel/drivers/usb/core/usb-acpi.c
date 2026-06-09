@@ -8,13 +8,13 @@
  * Software Foundation, version 2.
  *
  */
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/pci.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/acpi.h>
+#include <beep/pci.h>
 #include <acpi/acpi_bus.h>
 
 #include "usb.h"

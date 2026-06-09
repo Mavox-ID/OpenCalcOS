@@ -9,7 +9,7 @@
  *
  * Copyright 1993, Drew Eckhardt
  *	Visionary Computing
- *	(Unix and Linux consulting and custom programming)
+ *	(Unix and Beep consulting and custom programming)
  *	drew@colorado.edu
  *      +1 (303) 666-5836
  *
@@ -102,7 +102,7 @@
  *   If you have problems with your card not being recognized, use
  *   the LILO command line override.  Try to get it recognized without
  *   interrupts.  Ie, for a board at the default 0x388 base port,
- *   boot: linux pas16=0x388,255
+ *   boot: beep pas16=0x388,255
  *
  *   SCSI_IRQ_NONE (255) should be specified for no interrupt,
  *   IRQ_AUTO (254) to autoprobe for an IRQ line if overridden
@@ -111,17 +111,17 @@
  *   (IRQ_AUTO == 254, SCSI_IRQ_NONE == 255 in NCR5380.h)
  */
  
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/signal.h>
-#include <linux/proc_fs.h>
+#include <beep/signal.h>
+#include <beep/proc_fs.h>
 #include <asm/io.h>
 #include <asm/dma.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/stat.h>
-#include <linux/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/stat.h>
+#include <beep/init.h>
 
 #include "scsi.h"
 #include <scsi/scsi_host.h>
@@ -504,7 +504,7 @@ int __init pas16_detect(struct scsi_host_template * tpnt)
 /* 
  * XXX Most SCSI boards use this mapping, I could be incorrect.  Some one
  * using hard disks on a trantor should verify that this mapping corresponds
- * to that used by the BIOS / ASPI driver by running the linux fdisk program
+ * to that used by the BIOS / ASPI driver by running the beep fdisk program
  * and matching the H_C_S coordinates to what DOS uses.
  */
 

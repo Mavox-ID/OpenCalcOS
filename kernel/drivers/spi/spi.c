@@ -19,25 +19,25 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/cache.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/slab.h>
-#include <linux/mod_devicetable.h>
-#include <linux/spi/spi.h>
-#include <linux/of_gpio.h>
-#include <linux/pm_runtime.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/ioport.h>
-#include <linux/acpi.h>
+#include <beep/kernel.h>
+#include <beep/kmod.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/cache.h>
+#include <beep/mutex.h>
+#include <beep/of_device.h>
+#include <beep/of_irq.h>
+#include <beep/slab.h>
+#include <beep/mod_devicetable.h>
+#include <beep/spi/spi.h>
+#include <beep/of_gpio.h>
+#include <beep/pm_runtime.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/kthread.h>
+#include <beep/ioport.h>
+#include <beep/acpi.h>
 
 static void spidev_release(struct device *dev)
 {
@@ -489,7 +489,7 @@ static void spi_match_master_to_boardinfo(struct spi_master *master,
  * with segments of the SPI device table.  Any device nodes are created later,
  * after the relevant parent SPI controller (bus_num) is defined.  We keep
  * this table of devices forever, so that reloading a controller driver will
- * not make Linux forget about these hard-wired devices.
+ * not make Beep forget about these hard-wired devices.
  *
  * Other code can also call this, e.g. a particular add-on board might provide
  * SPI devices through its expansion connector, so code initializing that board

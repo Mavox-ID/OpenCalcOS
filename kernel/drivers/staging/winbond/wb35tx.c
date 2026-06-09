@@ -8,8 +8,8 @@
  *    Processing the Tx message and put into down layer
  *
  */
-#include <linux/usb.h>
-#include <linux/gfp.h>
+#include <beep/usb.h>
+#include <beep/gfp.h>
 
 #include "wb35tx_f.h"
 #include "mds_f.h"
@@ -209,7 +209,7 @@ static void Wb35Tx_EP2VM_complete(struct urb *pUrb)
 	pWb35Tx->EP2vm_state = VM_COMPLETED;
 	pWb35Tx->EP2VM_status = pUrb->status;
 
-	/* For Linux 2.4. Interrupt will always trigger */
+	/* For Beep 2.4. Interrupt will always trigger */
 	if (pHwData->SurpriseRemove) /* Let WbWlanHalt handle surprise remove */
 		goto error;
 

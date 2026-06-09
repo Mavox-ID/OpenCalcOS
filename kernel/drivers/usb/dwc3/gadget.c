@@ -36,19 +36,19 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/dma-mapping.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/list.h>
+#include <beep/dma-mapping.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
 
 #include "core.h"
 #include "gadget.h"

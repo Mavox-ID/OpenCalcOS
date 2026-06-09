@@ -23,9 +23,9 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/firmware.h>
+#include <beep/slab.h>
 #include <misc/altera.h>
 #include "altera-exprt.h"
 #include "altera-jtag.h"

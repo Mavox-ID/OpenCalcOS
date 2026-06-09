@@ -9,9 +9,9 @@
 #ifndef _ASM_IRQ_H
 #define _ASM_IRQ_H
 
-#include <linux/linkage.h>
-#include <linux/smp.h>
-#include <linux/irqdomain.h>
+#include <beep/linkage.h>
+#include <beep/smp.h>
+#include <beep/irqdomain.h>
 
 #include <asm/mipsmtregs.h>
 
@@ -49,7 +49,7 @@ static inline void smtc_im_ack_irq(unsigned int irq)
 #endif /* CONFIG_MIPS_MT_SMTC */
 
 #ifdef CONFIG_MIPS_MT_SMTC_IRQAFF
-#include <linux/cpumask.h>
+#include <beep/cpumask.h>
 
 extern int plat_set_irq_affinity(struct irq_data *d,
 				 const struct cpumask *affinity, bool force);
@@ -59,7 +59,7 @@ extern void smtc_forward_irq(struct irq_data *d);
  * IRQ affinity hook invoked at the beginning of interrupt dispatch
  * if option is enabled.
  *
- * Up through Linux 2.6.22 (at least) cpumask operations are very
+ * Up through Beep 2.6.22 (at least) cpumask operations are very
  * inefficient on MIPS.  Initial prototypes of SMTC IRQ affinity
  * used a "fast path" per-IRQ-descriptor cache of affinity information
  * to reduce latency.  As there is a project afoot to optimize the

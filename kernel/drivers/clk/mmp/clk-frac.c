@@ -9,10 +9,10 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
+#include <beep/clk-provider.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/err.h>
 
 #include "clk.h"
 /*

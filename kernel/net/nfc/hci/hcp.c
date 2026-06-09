@@ -19,9 +19,9 @@
 
 #define pr_fmt(fmt) "hci: %s: " fmt, __func__
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 
 #include <net/nfc/hci.h>
 

@@ -6,12 +6,12 @@
  *  Copyright (C) 2011-2012 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/ioport.h>
-#include <linux/export.h>
-#include <linux/clkdev.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
+#include <beep/ioport.h>
+#include <beep/export.h>
+#include <beep/clkdev.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/of_address.h>
 
 #include <lantiq_soc.h>
 

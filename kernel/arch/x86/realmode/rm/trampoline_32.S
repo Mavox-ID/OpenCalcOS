@@ -19,8 +19,8 @@
  *	of the real mode code before doing anything further.
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/segment.h>
 #include <asm/page_types.h>
 #include "realmode.h"

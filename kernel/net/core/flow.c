@@ -4,26 +4,26 @@
  * Copyright (C) 2003 David S. Miller (davem@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/jhash.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/completion.h>
-#include <linux/percpu.h>
-#include <linux/bitops.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/jhash.h>
+#include <beep/interrupt.h>
+#include <beep/mm.h>
+#include <beep/random.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/smp.h>
+#include <beep/completion.h>
+#include <beep/percpu.h>
+#include <beep/bitops.h>
+#include <beep/notifier.h>
+#include <beep/cpu.h>
+#include <beep/cpumask.h>
+#include <beep/mutex.h>
 #include <net/flow.h>
-#include <linux/atomic.h>
-#include <linux/security.h>
+#include <beep/atomic.h>
+#include <beep/security.h>
 
 struct flow_cache_entry {
 	union {

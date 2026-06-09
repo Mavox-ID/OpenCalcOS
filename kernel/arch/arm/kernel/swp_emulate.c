@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/swp_emulate.c
+ *  beep/arch/arm/kernel/swp_emulate.c
  *
  *  Copyright (C) 2009 ARM Limited
  *  __user_* functions adapted from include/asm/uaccess.h
@@ -18,12 +18,12 @@
  *	   Rn  = address
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>
-#include <linux/syscalls.h>
-#include <linux/perf_event.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/proc_fs.h>
+#include <beep/sched.h>
+#include <beep/syscalls.h>
+#include <beep/perf_event.h>
 
 #include <asm/opcodes.h>
 #include <asm/traps.h>

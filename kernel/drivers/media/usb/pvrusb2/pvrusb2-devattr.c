@@ -27,10 +27,10 @@ pvr2_device_desc structures.
 */
 
 #include "pvrusb2-devattr.h"
-#include <linux/usb.h>
-#include <linux/module.h>
+#include <beep/usb.h>
+#include <beep/module.h>
 /* This is needed in order to pull in tuner type ids... */
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 #include <media/tuner.h>
 #ifdef CONFIG_VIDEO_PVRUSB2_DVB
 #include "pvrusb2-hdw-internal.h"

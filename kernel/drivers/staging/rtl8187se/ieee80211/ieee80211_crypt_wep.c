@@ -11,19 +11,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-//#include <linux/config.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
+//#include <beep/config.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/random.h>
+#include <beep/skbuff.h>
+#include <beep/string.h>
 
 #include "ieee80211.h"
 
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
-#include <linux/crc32.h>
+#include <beep/crypto.h>
+#include <beep/scatterlist.h>
+#include <beep/crc32.h>
 
 MODULE_AUTHOR("Jouni Malinen");
 MODULE_DESCRIPTION("Host AP crypt: WEP");

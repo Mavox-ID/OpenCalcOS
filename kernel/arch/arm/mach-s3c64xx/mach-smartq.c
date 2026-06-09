@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-s3c64xx/mach-smartq.c
+ * beep/arch/arm/mach-s3c64xx/mach-smartq.c
  *
  * Copyright (C) 2010 Maurus Cuelenaere
  *
@@ -9,16 +9,16 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/pwm_backlight.h>
-#include <linux/serial_core.h>
-#include <linux/spi/spi_gpio.h>
-#include <linux/usb/gpio_vbus.h>
-#include <linux/platform_data/s3c-hsotg.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/pwm_backlight.h>
+#include <beep/serial_core.h>
+#include <beep/spi/spi_gpio.h>
+#include <beep/usb/gpio_vbus.h>
+#include <beep/platform_data/s3c-hsotg.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/map.h>
@@ -30,13 +30,13 @@
 #include <plat/clock.h>
 #include <plat/cpu.h>
 #include <plat/devs.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 #include <plat/gpio-cfg.h>
-#include <linux/platform_data/hwmon-s3c.h>
+#include <beep/platform_data/hwmon-s3c.h>
 #include <plat/regs-serial.h>
-#include <linux/platform_data/usb-ohci-s3c2410.h>
+#include <beep/platform_data/usb-ohci-s3c2410.h>
 #include <plat/sdhci.h>
-#include <linux/platform_data/touchscreen-s3c2410.h>
+#include <beep/platform_data/touchscreen-s3c2410.h>
 
 #include <video/platform_lcd.h>
 

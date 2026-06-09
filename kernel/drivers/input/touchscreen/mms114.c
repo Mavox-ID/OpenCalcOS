@@ -7,16 +7,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/i2c.h>
-#include <linux/i2c/mms114.h>
-#include <linux/input/mt.h>
-#include <linux/interrupt.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/of.h>
+#include <beep/i2c.h>
+#include <beep/i2c/mms114.h>
+#include <beep/input/mt.h>
+#include <beep/interrupt.h>
+#include <beep/regulator/consumer.h>
+#include <beep/slab.h>
 
 /* Write only registers */
 #define MMS114_MODE_CONTROL		0x01

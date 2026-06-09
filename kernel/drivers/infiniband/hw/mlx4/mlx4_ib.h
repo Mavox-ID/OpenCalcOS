@@ -34,18 +34,18 @@
 #ifndef MLX4_IB_H
 #define MLX4_IB_H
 
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/idr.h>
+#include <beep/compiler.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/idr.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_umem.h>
 #include <rdma/ib_mad.h>
 #include <rdma/ib_sa.h>
 
-#include <linux/mlx4/device.h>
-#include <linux/mlx4/doorbell.h>
+#include <beep/mlx4/device.h>
+#include <beep/mlx4/doorbell.h>
 
 #define MLX4_IB_DRV_NAME	"mlx4_ib"
 

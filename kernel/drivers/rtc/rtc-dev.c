@@ -11,9 +11,9 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/sched.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
+#include <beep/sched.h>
 #include "rtc-core.h"
 
 static dev_t rtc_devt;

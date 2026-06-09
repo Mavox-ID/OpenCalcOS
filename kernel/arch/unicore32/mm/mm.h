@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/mm/mm.h
+ * beep/arch/unicore32/mm/mm.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *

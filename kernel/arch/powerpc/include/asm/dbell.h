@@ -12,8 +12,8 @@
 #ifndef _ASM_POWERPC_DBELL_H
 #define _ASM_POWERPC_DBELL_H
 
-#include <linux/smp.h>
-#include <linux/threads.h>
+#include <beep/smp.h>
+#include <beep/threads.h>
 
 #include <asm/ppc-opcode.h>
 

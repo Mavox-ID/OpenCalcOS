@@ -17,11 +17,11 @@
  * MA 02110-1301 USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/rwsem.h>
+#include <beep/kernel.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/rwsem.h>
 
 #include "i2c-core.h"
 
@@ -46,7 +46,7 @@ EXPORT_SYMBOL_GPL(__i2c_first_dynamic_bus_num);
  * @len: how many descriptors in the vector; may be zero to reserve
  *	the specified bus number.
  *
- * Systems using the Linux I2C driver stack can declare tables of board info
+ * Systems using the Beep I2C driver stack can declare tables of board info
  * while they initialize.  This should be done in board-specific init code
  * near arch_initcall() time, or equivalent, before any I2C adapter driver is
  * registered.  For example, mainboard init code could define several devices,

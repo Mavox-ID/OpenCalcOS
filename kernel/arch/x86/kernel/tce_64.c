@@ -23,14 +23,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/bootmem.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/bootmem.h>
 #include <asm/tce.h>
 #include <asm/calgary.h>
 #include <asm/proto.h>

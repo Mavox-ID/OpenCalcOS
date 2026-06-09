@@ -18,16 +18,16 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/hrtimer.h>
-#include <linux/math64.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/jiffies.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/wait.h>
+#include <beep/hrtimer.h>
+#include <beep/math64.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/tlv.h>

@@ -1,7 +1,7 @@
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
-#include <linux/exportfs.h>
-#include <linux/slab.h>
+#include <beep/exportfs.h>
+#include <beep/slab.h>
 #include <asm/unaligned.h>
 
 #include "super.h"

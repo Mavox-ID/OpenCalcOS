@@ -11,12 +11,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/backlight.h>
-#include <linux/device.h>
-#include <linux/fb.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/backlight.h>
+#include <beep/device.h>
+#include <beep/fb.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 
 #include <mach/jornada720.h>
 #include <mach/hardware.h>

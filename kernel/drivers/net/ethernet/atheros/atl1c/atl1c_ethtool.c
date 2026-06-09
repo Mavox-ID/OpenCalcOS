@@ -20,9 +20,9 @@
  *
  */
 
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/slab.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/slab.h>
 
 #include "atl1c.h"
 

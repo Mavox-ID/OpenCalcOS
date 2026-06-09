@@ -28,10 +28,10 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/cper.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/acpi.h>
+#include <beep/cper.h>
 #include <acpi/apei.h>
 #include <asm/mce.h>
 

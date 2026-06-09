@@ -30,11 +30,11 @@
 #include "i915_drv.h"
 #include "i915_trace.h"
 #include "intel_drv.h"
-#include <linux/shmem_fs.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/pci.h>
-#include <linux/dma-buf.h>
+#include <beep/shmem_fs.h>
+#include <beep/slab.h>
+#include <beep/swap.h>
+#include <beep/pci.h>
+#include <beep/dma-buf.h>
 
 static void i915_gem_object_flush_gtt_write_domain(struct drm_i915_gem_object *obj);
 static void i915_gem_object_flush_cpu_write_domain(struct drm_i915_gem_object *obj);

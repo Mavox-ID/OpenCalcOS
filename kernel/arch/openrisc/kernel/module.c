@@ -1,7 +1,7 @@
 /*
  * OpenRISC module.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -14,8 +14,8 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
+#include <beep/moduleloader.h>
+#include <beep/elf.h>
 
 int apply_relocate_add(Elf32_Shdr *sechdrs,
 		       const char *strtab,

@@ -18,11 +18,11 @@
  *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#ifndef LINUX_PPS_KC_H
-#define LINUX_PPS_KC_H
+#ifndef BEEP_PPS_KC_H
+#define BEEP_PPS_KC_H
 
-#include <linux/errno.h>
-#include <linux/pps_kernel.h>
+#include <beep/errno.h>
+#include <beep/pps_kernel.h>
 
 #ifdef CONFIG_NTP_PPS
 
@@ -43,4 +43,4 @@ static inline void pps_kc_event(struct pps_device *pps,
 
 #endif /* CONFIG_NTP_PPS */
 
-#endif /* LINUX_PPS_KC_H */
+#endif /* BEEP_PPS_KC_H */

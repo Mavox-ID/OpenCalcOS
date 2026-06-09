@@ -12,10 +12,10 @@
  * or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
  * for more details.
  */
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/io.h>
+#include <beep/export.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/io.h>
 
 #include "imx-ipu-v3.h"
 #include "ipu-prv.h"

@@ -12,21 +12,21 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/sysfs.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/pm.h>
+#include <beep/slab.h>
+#include <beep/regmap.h>
+#include <beep/err.h>
 
-#include <linux/mfd/pcf50633/core.h>
+#include <beep/mfd/pcf50633/core.h>
 
 /* Read a block of up to 32 regs  */
 int pcf50633_read_block(struct pcf50633 *pcf, u8 reg,

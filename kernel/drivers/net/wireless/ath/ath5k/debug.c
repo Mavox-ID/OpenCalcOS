@@ -60,11 +60,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/export.h>
-#include <linux/moduleparam.h>
+#include <beep/export.h>
+#include <beep/moduleparam.h>
 
-#include <linux/seq_file.h>
-#include <linux/list.h>
+#include <beep/seq_file.h>
+#include <beep/list.h>
 #include "debug.h"
 #include "ath5k.h"
 #include "reg.h"

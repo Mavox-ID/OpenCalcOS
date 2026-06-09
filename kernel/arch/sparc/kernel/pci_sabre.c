@@ -5,14 +5,14 @@
  * Copyright (C) 1999 Jakub Jelinek   (jakub@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/of_device.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/of_device.h>
 
 #include <asm/apb.h>
 #include <asm/iommu.h>
@@ -456,7 +456,7 @@ static const struct of_device_id sabre_match[];
 static int sabre_probe(struct platform_device *op)
 {
 	const struct of_device_id *match;
-	const struct linux_prom64_registers *pr_regs;
+	const struct beep_prom64_registers *pr_regs;
 	struct device_node *dp = op->dev.of_node;
 	struct pci_pbm_info *pbm;
 	u32 upa_portid, dma_mask;

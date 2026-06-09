@@ -6,7 +6,7 @@
 
 #include <asm/io.h>
 #include <asm/processor.h>
-#include <linux/mc146818rtc.h>
+#include <beep/mc146818rtc.h>
 
 #ifndef RTC_PORT
 #define RTC_PORT(x)	(0x70 + (x))
@@ -30,7 +30,7 @@
  * This only works with compare-and-swap.  There is no other way to
  * atomically claim the lock and set the owner.
  */
-#include <linux/smp.h>
+#include <beep/smp.h>
 extern volatile unsigned long cmos_lock;
 
 /*

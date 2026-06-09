@@ -25,10 +25,10 @@
 
 #include <asm/processor.h>
 #include <asm/unaligned.h>
-#include <linux/crypto.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <beep/crypto.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/types.h>
 #include <crypto/algapi.h>
 #include <crypto/lrw.h>
 #include <crypto/xts.h>

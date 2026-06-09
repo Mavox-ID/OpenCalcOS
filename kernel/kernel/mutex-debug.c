@@ -12,15 +12,15 @@
  *  Copyright (C) 2004, LynuxWorks, Inc., Igor Manyilov, Bill Huey
  *  Released under the General Public License (GPL).
  */
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/poison.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/kallsyms.h>
-#include <linux/interrupt.h>
-#include <linux/debug_locks.h>
+#include <beep/mutex.h>
+#include <beep/delay.h>
+#include <beep/export.h>
+#include <beep/poison.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/kallsyms.h>
+#include <beep/interrupt.h>
+#include <beep/debug_locks.h>
 
 #include "mutex-debug.h"
 

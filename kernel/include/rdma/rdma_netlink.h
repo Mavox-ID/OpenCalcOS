@@ -2,7 +2,7 @@
 #define _RDMA_NETLINK_H
 
 
-#include <linux/netlink.h>
+#include <beep/netlink.h>
 #include <uapi/rdma/rdma_netlink.h>
 
 struct ibnl_client_cbs {

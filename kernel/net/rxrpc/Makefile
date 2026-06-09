@@ -1,5 +1,5 @@
 #
-# Makefile for Linux kernel RxRPC
+# Makefile for Beep kernel RxRPC
 #
 
 af-rxrpc-y := \

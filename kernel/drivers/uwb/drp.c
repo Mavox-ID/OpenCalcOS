@@ -18,10 +18,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
 #include "uwb-internal.h"
 
 

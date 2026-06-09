@@ -20,7 +20,7 @@
 #ifndef __MTD_ABI_H__
 #define __MTD_ABI_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct erase_info_user {
 	__u32 start;

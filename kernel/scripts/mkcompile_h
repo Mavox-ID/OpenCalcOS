@@ -43,14 +43,14 @@ else
 	TIMESTAMP=$KBUILD_BUILD_TIMESTAMP
 fi
 if test -z "$KBUILD_BUILD_USER"; then
-	LINUX_COMPILE_BY=$(whoami | sed 's/\\/\\\\/')
+	BEEP_COMPILE_BY=$(whoami | sed 's/\\/\\\\/')
 else
-	LINUX_COMPILE_BY=$KBUILD_BUILD_USER
+	BEEP_COMPILE_BY=$KBUILD_BUILD_USER
 fi
 if test -z "$KBUILD_BUILD_HOST"; then
-	LINUX_COMPILE_HOST=`hostname`
+	BEEP_COMPILE_HOST=`hostname`
 else
-	LINUX_COMPILE_HOST=$KBUILD_BUILD_HOST
+	BEEP_COMPILE_HOST=$KBUILD_BUILD_HOST
 fi
 
 UTS_VERSION="#$VERSION"
@@ -73,10 +73,10 @@ UTS_TRUNCATE="cut -b -$UTS_LEN"
 
   echo \#define UTS_VERSION \"`echo $UTS_VERSION | $UTS_TRUNCATE`\"
 
-  echo \#define LINUX_COMPILE_BY \"`echo $LINUX_COMPILE_BY | $UTS_TRUNCATE`\"
-  echo \#define LINUX_COMPILE_HOST \"`echo $LINUX_COMPILE_HOST | $UTS_TRUNCATE`\"
+  echo \#define BEEP_COMPILE_BY \"`echo $BEEP_COMPILE_BY | $UTS_TRUNCATE`\"
+  echo \#define BEEP_COMPILE_HOST \"`echo $BEEP_COMPILE_HOST | $UTS_TRUNCATE`\"
 
-  echo \#define LINUX_COMPILER \"`$CC -v 2>&1 | tail -n 1`\"
+  echo \#define BEEP_COMPILER \"`$CC -v 2>&1 | tail -n 1`\"
 ) > .tmpcompile
 
 # Only replace the real compile.h if the new one is different,

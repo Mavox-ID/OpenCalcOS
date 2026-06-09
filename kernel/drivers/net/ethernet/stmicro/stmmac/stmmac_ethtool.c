@@ -22,11 +22,11 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 *******************************************************************************/
 
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/interrupt.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/interrupt.h>
+#include <beep/mii.h>
+#include <beep/phy.h>
 #include <asm/io.h>
 
 #include "stmmac.h"

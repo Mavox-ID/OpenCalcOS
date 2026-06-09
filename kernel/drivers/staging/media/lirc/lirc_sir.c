@@ -33,26 +33,26 @@
  *   parts cut'n'pasted from sa1100_ir.c (C) 2000 Russell King
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/serial_reg.h>
-#include <linux/time.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/poll.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/fs.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/serial_reg.h>
+#include <beep/time.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/wait.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/poll.h>
+#include <beep/io.h>
 #include <asm/irq.h>
-#include <linux/fcntl.h>
-#include <linux/platform_device.h>
+#include <beep/fcntl.h>
+#include <beep/platform_device.h>
 #ifdef LIRC_ON_SA1100
 #include <asm/hardware.h>
 #ifdef CONFIG_SA1100_COLLIE
@@ -61,7 +61,7 @@
 #endif
 #endif
 
-#include <linux/timer.h>
+#include <beep/timer.h>
 
 #include <media/lirc.h>
 #include <media/lirc_dev.h>
@@ -1004,7 +1004,7 @@ static void drop_port(void)
 
 #ifdef LIRC_SIR_ACTISYS_ACT200L
 /* Crystal/Cirrus CS8130 IR transceiver, used in Actisys Act200L dongle */
-/* some code borrowed from Linux IRDA driver */
+/* some code borrowed from Beep IRDA driver */
 
 /* Register 0: Control register #1 */
 #define ACT200L_REG0    0x00
@@ -1147,7 +1147,7 @@ static void init_act200(void)
 
 #ifdef LIRC_SIR_ACTISYS_ACT220L
 /*
- * Derived from linux IrDA driver (net/irda/actisys.c)
+ * Derived from beep IrDA driver (net/irda/actisys.c)
  * Drop me a mail for any kind of comment: maxx@spaceboyz.net
  */
 

@@ -5,12 +5,12 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/gen_stats.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/gen_stats.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_rateest.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_rateest.h>
 #include <net/netfilter/xt_rateest.h>
 
 

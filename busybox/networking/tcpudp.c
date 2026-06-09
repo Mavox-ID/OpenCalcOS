@@ -107,8 +107,8 @@
 #include "libbb.h"
 #include "common_bufsiz.h"
 
-#ifdef __linux__
-/* from linux/netfilter_ipv4.h: */
+#ifdef __beep__
+/* from beep/netfilter_ipv4.h: */
 # undef  SO_ORIGINAL_DST
 # define SO_ORIGINAL_DST 80
 #endif
@@ -480,7 +480,7 @@ int tcpudpsvd_main(int argc UNUSED_PARAM, char **argv)
 		/* Make it so that local addr is fixed to localp->u.sa
 		 * and we don't accidentally accept packets to other local IPs. */
 		/* NB: we possibly bind to the _very_ same_ address & port as the one
-		 * already bound in parent! This seems to work in Linux.
+		 * already bound in parent! This seems to work in Beep.
 		 * (otherwise we can move socket to fd #0 only if bind succeeds) */
 		close(0);
 		set_nport(&localp->u.sa, htons(local_port));
@@ -564,7 +564,7 @@ int tcpudpsvd_main(int argc UNUSED_PARAM, char **argv)
 
 #ifdef SO_ORIGINAL_DST
 			/* Extract "original" destination addr:port
-			 * from Linux firewall. Useful when you redirect
+			 * from Beep firewall. Useful when you redirect
 			 * an outbond connection to local handler, and it needs
 			 * to know where it originally tried to connect */
 			if (tcp && getsockopt(0, SOL_IP, SO_ORIGINAL_DST, &local.u.sa, &local.len) == 0) {

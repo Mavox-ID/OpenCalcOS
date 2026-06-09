@@ -18,13 +18,13 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_vlan.h>
+#include <beep/if_ether.h>
+#include <beep/if_vlan.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_bridge/ebtables.h>
+#include <beep/netfilter_bridge/ebt_vlan.h>
 
 #define MODULE_VERS "0.6"
 

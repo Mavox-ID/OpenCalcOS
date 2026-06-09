@@ -21,19 +21,19 @@
  *
  */
 
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/platform_device.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/gpio.h>
-#include <linux/wl12xx.h>
-#include <linux/pm_runtime.h>
-#include <linux/printk.h>
+#include <beep/irq.h>
+#include <beep/module.h>
+#include <beep/vmalloc.h>
+#include <beep/platform_device.h>
+#include <beep/mmc/sdio.h>
+#include <beep/mmc/sdio_func.h>
+#include <beep/mmc/sdio_ids.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/host.h>
+#include <beep/gpio.h>
+#include <beep/wl12xx.h>
+#include <beep/pm_runtime.h>
+#include <beep/printk.h>
 
 #include "wlcore.h"
 #include "wl12xx_80211.h"

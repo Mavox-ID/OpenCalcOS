@@ -12,9 +12,9 @@
 
 /* system dependent definitions */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
 
 /* s is always from a cpu register, and the cpu does bounds checking
  * during register load --> no further bounds checks needed */

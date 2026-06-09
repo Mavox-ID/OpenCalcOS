@@ -18,8 +18,8 @@
  */
 
 
-#include <linux/spinlock.h>
-#include <linux/shmem_fs.h>
+#include <beep/spinlock.h>
+#include <beep/shmem_fs.h>
 
 #include "omap_drv.h"
 #include "omap_dmm_tiler.h"

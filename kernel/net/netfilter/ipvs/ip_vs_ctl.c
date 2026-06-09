@@ -1,11 +1,11 @@
 /*
  * IPVS         An implementation of the IP virtual server support for the
- *              LINUX operating system.  IPVS is now implemented as a module
+ *              BEEP operating system.  IPVS is now implemented as a module
  *              over the NetFilter framework. IPVS can be used to build a
  *              high-performance and highly available server based on a
  *              cluster of servers.
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@beepvirtualserver.org>
  *              Peter Kese <peter.kese@ijs.si>
  *              Julian Anastasov <ja@ssi.bg>
  *
@@ -21,24 +21,24 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/sysctl.h>
-#include <linux/proc_fs.h>
-#include <linux/workqueue.h>
-#include <linux/swap.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/capability.h>
+#include <beep/fs.h>
+#include <beep/sysctl.h>
+#include <beep/proc_fs.h>
+#include <beep/workqueue.h>
+#include <beep/swap.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/mutex.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/mutex.h>
 
 #include <net/net_namespace.h>
-#include <linux/nsproxy.h>
+#include <beep/nsproxy.h>
 #include <net/ip.h>
 #ifdef CONFIG_IP_VS_IPV6
 #include <net/ipv6.h>
@@ -108,7 +108,7 @@ static void update_defense_level(struct netns_ipvs *ipvs)
 	/* we only count free and buffered memory (in pages) */
 	si_meminfo(&i);
 	availmem = i.freeram + i.bufferram;
-	/* however in linux 2.5 the i.bufferram is total page cache size,
+	/* however in beep 2.5 the i.bufferram is total page cache size,
 	   we need adjust it */
 	/* si_swapinfo(&i); */
 	/* availmem = availmem - (i.totalswap - i.freeswap); */

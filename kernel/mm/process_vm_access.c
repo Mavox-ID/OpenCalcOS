@@ -1,5 +1,5 @@
 /*
- * linux/mm/process_vm_access.c
+ * beep/mm/process_vm_access.c
  *
  * Copyright (C) 2010-2011 Christopher Yeoh <cyeoh@au1.ibm.com>, IBM Corp.
  *
@@ -9,16 +9,16 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/mm.h>
-#include <linux/uio.h>
-#include <linux/sched.h>
-#include <linux/highmem.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
+#include <beep/mm.h>
+#include <beep/uio.h>
+#include <beep/sched.h>
+#include <beep/highmem.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/syscalls.h>
 
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <beep/compat.h>
 #endif
 
 /**

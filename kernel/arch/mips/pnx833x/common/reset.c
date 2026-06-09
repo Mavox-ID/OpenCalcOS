@@ -22,7 +22,7 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/reboot.h>
+#include <beep/reboot.h>
 #include <pnx833x.h>
 
 void pnx833x_machine_restart(char *command)

@@ -100,11 +100,11 @@ A word or two about DMA. Driver support DMA operations at two ways:
 
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
-#include <linux/mc146818rtc.h>
-#include <linux/gfp.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <beep/ioport.h>
+#include <beep/mc146818rtc.h>
+#include <beep/gfp.h>
+#include <beep/delay.h>
+#include <beep/io.h>
 #include <asm/dma.h>
 
 #include "comedi_fc.h"

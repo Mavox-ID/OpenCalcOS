@@ -1,6 +1,6 @@
 /* $Id: isdn_ppp.h,v 1.1.2.2 2004/01/12 22:37:19 keil Exp $
  *
- * header for Linux ISDN subsystem, functions for synchronous PPP (linklevel).
+ * header for Beep ISDN subsystem, functions for synchronous PPP (linklevel).
  *
  * Copyright 1995,96 by Michael Hipp (Michael.Hipp@student.uni-tuebingen.de)
  *
@@ -9,8 +9,8 @@
  *
  */
 
-#include <linux/ppp_defs.h>     /* for PPP_PROTOCOL */
-#include <linux/isdn_ppp.h>	/* for isdn_ppp info */
+#include <beep/ppp_defs.h>     /* for PPP_PROTOCOL */
+#include <beep/isdn_ppp.h>	/* for isdn_ppp info */
 
 extern int isdn_ppp_read(int, struct file *, char __user *, int);
 extern int isdn_ppp_write(int, struct file *, const char __user *, int);

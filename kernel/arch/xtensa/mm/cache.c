@@ -13,17 +13,17 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/bootmem.h>
-#include <linux/swap.h>
-#include <linux/pagemap.h>
+#include <beep/init.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/bootmem.h>
+#include <beep/swap.h>
+#include <beep/pagemap.h>
 
 #include <asm/bootparam.h>
 #include <asm/mmu_context.h>

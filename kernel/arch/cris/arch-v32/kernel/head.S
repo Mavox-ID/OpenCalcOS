@@ -234,7 +234,7 @@ _dram_initialized:
 	;; Leave the cramfs file system (piggybacked after the kernel) in flash.
 	moveq	0, $r0		; Source.
 	move.d	text_start, $r1	; Destination.
-	move.d	__vmlinux_end, $r2
+	move.d	__vmbeep_end, $r2
 	move.d	$r2, $r4
 	sub.d	$r1, $r4
 1:	move.w	[$r0+], $r3

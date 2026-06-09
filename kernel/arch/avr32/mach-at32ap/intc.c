@@ -6,14 +6,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/syscore_ops.h>
-#include <linux/export.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/syscore_ops.h>
+#include <beep/export.h>
 
 #include <asm/io.h>
 

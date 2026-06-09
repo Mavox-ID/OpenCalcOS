@@ -5,11 +5,11 @@
  *             Philip Blundell <philb@gnu.org>
  */
 
-#include <linux/module.h>
-#include <linux/parport.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/parport.h>
+#include <beep/ctype.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 
 static const struct {

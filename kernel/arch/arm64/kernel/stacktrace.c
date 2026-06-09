@@ -15,10 +15,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/stacktrace.h>
 
 #include <asm/stacktrace.h>
 

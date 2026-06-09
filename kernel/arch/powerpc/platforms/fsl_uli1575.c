@@ -9,11 +9,11 @@
  * option) any later version.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/mc146818rtc.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/mc146818rtc.h>
 
 #include <asm/pci-bridge.h>
 

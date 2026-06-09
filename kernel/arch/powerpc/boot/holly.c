@@ -2,7 +2,7 @@
  * Copyright 2007 IBM Corporation
  *
  * Stephen Winiecki <stevewin@us.ibm.com>
- * Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Josh Boyer <jwboyer@beep.vnet.ibm.com>
  *
  * Based on earlier code:
  * Copyright (C) Paul Mackerras 1997.

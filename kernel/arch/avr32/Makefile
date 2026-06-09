@@ -7,14 +7,14 @@
 
 # Default target when executing plain make
 .PHONY: all
-all: uImage vmlinux.elf
+all: uImage vmbeep.elf
 
 KBUILD_DEFCONFIG	:= atstk1002_defconfig
 
 KBUILD_CFLAGS	+= -pipe -fno-builtin -mno-pic
 KBUILD_AFLAGS	+= -mrelax -mno-pic
 KBUILD_CFLAGS_MODULE += -mno-relax
-LDFLAGS_vmlinux	+= --relax
+LDFLAGS_vmbeep	+= --relax
 
 cpuflags-$(CONFIG_PLATFORM_AT32AP)	+= -march=ap
 
@@ -43,42 +43,42 @@ core-y					+= arch/avr32/mm/
 drivers-$(CONFIG_OPROFILE)		+= arch/avr32/oprofile/
 libs-y					+= arch/avr32/lib/
 
-BOOT_TARGETS := vmlinux.elf vmlinux.bin uImage uImage.srec
+BOOT_TARGETS := vmbeep.elf vmbeep.bin uImage uImage.srec
 
 .PHONY: $(BOOT_TARGETS) install
 
 boot := arch/$(ARCH)/boot/images
 
              KBUILD_IMAGE := $(boot)/uImage
-vmlinux.elf: KBUILD_IMAGE := $(boot)/vmlinux.elf
-vmlinux.cso: KBUILD_IMAGE := $(boot)/vmlinux.cso
+vmbeep.elf: KBUILD_IMAGE := $(boot)/vmbeep.elf
+vmbeep.cso: KBUILD_IMAGE := $(boot)/vmbeep.cso
 uImage.srec: KBUILD_IMAGE := $(boot)/uImage.srec
 uImage:      KBUILD_IMAGE := $(boot)/uImage
 
 quiet_cmd_listing = LST     $@
-      cmd_listing = avr32-linux-objdump $(OBJDUMPFLAGS) -lS $< > $@
+      cmd_listing = avr32-beep-objdump $(OBJDUMPFLAGS) -lS $< > $@
 quiet_cmd_disasm  = DIS     $@
-      cmd_disasm  = avr32-linux-objdump $(OBJDUMPFLAGS) -d $< > $@
+      cmd_disasm  = avr32-beep-objdump $(OBJDUMPFLAGS) -d $< > $@
 
-vmlinux.elf vmlinux.bin uImage.srec uImage vmlinux.cso: vmlinux
+vmbeep.elf vmbeep.bin uImage.srec uImage vmbeep.cso: vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
-install: vmlinux
+install: vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) BOOTIMAGE=$(KBUILD_IMAGE) $@
 
-vmlinux.s: vmlinux
+vmbeep.s: vmbeep
 	$(call if_changed,disasm)
 
-vmlinux.lst: vmlinux
+vmbeep.lst: vmbeep
 	$(call if_changed,listing)
 
-CLEAN_FILES += vmlinux.s vmlinux.lst
+CLEAN_FILES += vmbeep.s vmbeep.lst
 
 archclean:
 	$(Q)$(MAKE) $(clean)=$(boot)
 
 define archhelp
-  @echo '* vmlinux.elf		- ELF image with load address 0'
-  @echo '  vmlinux.cso		- PathFinder CSO image'
+  @echo '* vmbeep.elf		- ELF image with load address 0'
+  @echo '  vmbeep.cso		- PathFinder CSO image'
   @echo '* uImage		- Create a bootable image for U-Boot'
 endef

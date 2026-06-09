@@ -18,26 +18,26 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/dma-mapping.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/smsc911x.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/sh_hspi.h>
-#include <linux/mmc/sh_mobile_sdhi.h>
-#include <linux/mfd/tmio.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/ehci_pdriver.h>
-#include <linux/usb/ohci_pdriver.h>
-#include <linux/pm_runtime.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/dma-mapping.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
+#include <beep/smsc911x.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/sh_hspi.h>
+#include <beep/mmc/sh_mobile_sdhi.h>
+#include <beep/mfd/tmio.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/ehci_pdriver.h>
+#include <beep/usb/ohci_pdriver.h>
+#include <beep/pm_runtime.h>
 #include <mach/hardware.h>
 #include <mach/r8a7779.h>
 #include <mach/common.h>

@@ -3,10 +3,10 @@
  *
  * Hardware support for the Sega Dreamcast.
  *
- * Copyright (c) 2001, 2002 M. R. Brown <mrbrown@linuxdc.org>
- * Copyright (c) 2002, 2003, 2004 Paul Mundt <lethal@linux-sh.org>
+ * Copyright (c) 2001, 2002 M. R. Brown <mrbrown@beepdc.org>
+ * Copyright (c) 2002, 2003, 2004 Paul Mundt <lethal@beep-sh.org>
  *
- * This file is part of the LinuxDC project (www.linuxdc.org)
+ * This file is part of the BeepDC project (www.beepdc.org)
  *
  * Released under the terms of the GNU GPL v2.0.
  *
@@ -15,13 +15,13 @@
  *	SEGA Dreamcast support
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/device.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/device.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/rtc.h>

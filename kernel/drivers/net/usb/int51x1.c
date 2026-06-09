@@ -24,15 +24,15 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/slab.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/usb/usbnet.h>
+#include <beep/module.h>
+#include <beep/ctype.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/slab.h>
+#include <beep/mii.h>
+#include <beep/usb.h>
+#include <beep/usb/usbnet.h>
 
 #define INT51X1_VENDOR_ID	0x09e1
 #define INT51X1_PRODUCT_ID	0x5121

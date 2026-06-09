@@ -20,7 +20,7 @@
 #ifndef _BMP085_H
 #define _BMP085_H
 
-#include <linux/regmap.h>
+#include <beep/regmap.h>
 
 #define BMP085_NAME		"bmp085"
 

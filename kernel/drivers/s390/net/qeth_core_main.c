@@ -9,16 +9,16 @@
 #define KMSG_COMPONENT "qeth"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/mii.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/mii.h>
+#include <beep/kthread.h>
+#include <beep/slab.h>
 #include <net/iucv/af_iucv.h>
 
 #include <asm/ebcdic.h>

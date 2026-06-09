@@ -23,10 +23,10 @@
 #ifndef _NILFS_BMAP_H
 #define _NILFS_BMAP_H
 
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/nilfs2_fs.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
+#include <beep/nilfs2_fs.h>
 #include "alloc.h"
 #include "dat.h"
 

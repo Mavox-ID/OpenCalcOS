@@ -14,11 +14,11 @@
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/string.h>
 #include <trace/events/power.h>
 
 #include "cm2xxx_3xxx.h"

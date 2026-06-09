@@ -1,7 +1,7 @@
 #ifndef GRETH_H
 #define GRETH_H
 
-#include <linux/phy.h>
+#include <beep/phy.h>
 
 /* Register bits and masks */
 #define GRETH_RESET 0x40

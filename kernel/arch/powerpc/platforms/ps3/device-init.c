@@ -18,13 +18,13 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/delay.h>
-#include <linux/freezer.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/reboot.h>
+#include <beep/delay.h>
+#include <beep/freezer.h>
+#include <beep/kernel.h>
+#include <beep/kthread.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/reboot.h>
 
 #include <asm/firmware.h>
 #include <asm/lv1call.h>

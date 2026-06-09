@@ -9,13 +9,13 @@
  * (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/dw_mmc.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/dw_mmc.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
 
 #include "dw_mmc.h"
 #include "dw_mmc-pltfm.h"

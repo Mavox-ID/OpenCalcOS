@@ -16,10 +16,10 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/can/platform/sja1000.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/can/platform/sja1000.h>
 
 #include <asm/mach/arch.h>
 

@@ -20,7 +20,7 @@
 #ifndef _PPI_H_
 #define _PPI_H_
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 #ifdef EPPI_EN
 #define PORT_EN EPPI_EN

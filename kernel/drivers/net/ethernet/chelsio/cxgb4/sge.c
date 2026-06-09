@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for Beep.
  *
  * Copyright (c) 2003-2010 Chelsio Communications, Inc. All rights reserved.
  *
@@ -32,15 +32,15 @@
  * SOFTWARE.
  */
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/dma-mapping.h>
-#include <linux/jiffies.h>
-#include <linux/prefetch.h>
-#include <linux/export.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/if_vlan.h>
+#include <beep/ip.h>
+#include <beep/dma-mapping.h>
+#include <beep/jiffies.h>
+#include <beep/prefetch.h>
+#include <beep/export.h>
 #include <net/ipv6.h>
 #include <net/tcp.h>
 #include "cxgb4.h"

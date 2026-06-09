@@ -8,10 +8,10 @@
  * Copyright (C) 2008 Silicon Graphics, Inc. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/rbtree.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
+#include <beep/module.h>
+#include <beep/rbtree.h>
+#include <beep/slab.h>
+#include <beep/irq.h>
 
 #include <asm/apic.h>
 #include <asm/uv/uv_irq.h>

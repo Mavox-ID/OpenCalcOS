@@ -21,9 +21,9 @@
  * Pages used for the page tables is a different story. FIXME: more
  */
 
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/swap.h>
 #include <asm/processor.h>
 #include <asm/pgalloc.h>
 #include <asm/tlbflush.h>

@@ -19,8 +19,8 @@
  * Place - Suite 330, Boston, MA 02111-1307 USA.
  *
  */
-#include <linux/pci.h>
-#include <linux/msi.h>
+#include <beep/pci.h>
+#include <beep/msi.h>
 #include <asm/mach/irq.h>
 #include <asm/irq.h>
 

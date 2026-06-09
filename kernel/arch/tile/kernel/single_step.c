@@ -18,12 +18,12 @@
 #ifndef __tilegx__   /* Hardware support for single step unavailable. */
 
 /* These functions are only used on the TILE platform */
-#include <linux/slab.h>
-#include <linux/thread_info.h>
-#include <linux/uaccess.h>
-#include <linux/mman.h>
-#include <linux/types.h>
-#include <linux/err.h>
+#include <beep/slab.h>
+#include <beep/thread_info.h>
+#include <beep/uaccess.h>
+#include <beep/mman.h>
+#include <beep/types.h>
+#include <beep/err.h>
 #include <asm/cacheflush.h>
 #include <asm/unaligned.h>
 #include <arch/abi.h>
@@ -698,8 +698,8 @@ void single_step_once(struct pt_regs *regs)
 }
 
 #else
-#include <linux/smp.h>
-#include <linux/ptrace.h>
+#include <beep/smp.h>
+#include <beep/ptrace.h>
 #include <arch/spr_def.h>
 
 static DEFINE_PER_CPU(unsigned long, ss_saved_pc);

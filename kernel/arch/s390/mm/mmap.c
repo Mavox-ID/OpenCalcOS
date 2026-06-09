@@ -22,12 +22,12 @@
  * Started by Ingo Molnar <mingo@elte.hu>
  */
 
-#include <linux/personality.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/compat.h>
+#include <beep/personality.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/module.h>
+#include <beep/random.h>
+#include <beep/compat.h>
 #include <asm/pgalloc.h>
 
 static unsigned long stack_maxrandom_size(void)

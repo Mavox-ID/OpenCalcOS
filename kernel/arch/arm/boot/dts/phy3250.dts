@@ -181,7 +181,7 @@
 				keypad,num-columns = <1>;
 				nxp,debounce-delay-ms = <3>;
 				nxp,scan-delay-ms = <34>;
-				linux,keymap = <0x00000002>;
+				beep,keymap = <0x00000002>;
 			};
 		};
 	};
@@ -196,7 +196,7 @@
 
 		led1 { /* green */
 			gpios = <&gpio 5 14 0>; /* GPO_P3 14, GPIO 93, active high */
-			linux,default-trigger = "heartbeat";
+			beep,default-trigger = "heartbeat";
 		};
 	};
 };

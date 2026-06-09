@@ -5,7 +5,7 @@
  *
  * Portions based on wistron_btns.c:
  * Copyright (C) 2005 Miloslav Trmac <mitr@volny.cz>
- * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arklinux.org>
+ * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arkbeep.org>
  * Copyright (C) 2005 Dmitry Torokhov <dtor@mail.ru>
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -25,17 +25,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/input.h>
+#include <beep/input/sparse-keymap.h>
 #include <acpi/acpi_drivers.h>
-#include <linux/acpi.h>
-#include <linux/string.h>
-#include <linux/dmi.h>
+#include <beep/acpi.h>
+#include <beep/string.h>
+#include <beep/dmi.h>
 
 MODULE_AUTHOR("Matthew Garrett <mjg@redhat.com>");
 MODULE_DESCRIPTION("Dell laptop WMI hotkeys driver");
@@ -120,7 +120,7 @@ struct dell_bios_hotkey_table {
 
 static const struct dell_bios_hotkey_table *dell_bios_hotkey_table;
 
-static const u16 bios_to_linux_keycode[256] __initconst = {
+static const u16 bios_to_beep_keycode[256] __initconst = {
 
 	KEY_MEDIA,	KEY_NEXTSONG,	KEY_PLAYPAUSE, KEY_PREVIOUSSONG,
 	KEY_STOPCD,	KEY_UNKNOWN,	KEY_UNKNOWN,	KEY_UNKNOWN,
@@ -210,7 +210,7 @@ static const struct key_entry * __init dell_wmi_prepare_new_keymap(void)
 		keymap[i].type = KE_KEY;
 		keymap[i].code = bios_entry->scancode;
 		keymap[i].keycode = bios_entry->keycode < 256 ?
-				    bios_to_linux_keycode[bios_entry->keycode] :
+				    bios_to_beep_keycode[bios_entry->keycode] :
 				    KEY_RESERVED;
 	}
 

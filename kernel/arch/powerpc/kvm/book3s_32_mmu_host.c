@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2010 SUSE Linux Products GmbH. All rights reserved.
+ * Copyright (C) 2010 SUSE Beep Products GmbH. All rights reserved.
  *
  * Authors:
  *     Alexander Graf <agraf@suse.de>
@@ -18,7 +18,7 @@
  * Foundation, 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#include <linux/kvm_host.h>
+#include <beep/kvm_host.h>
 
 #include <asm/kvm_ppc.h>
 #include <asm/kvm_book3s.h>

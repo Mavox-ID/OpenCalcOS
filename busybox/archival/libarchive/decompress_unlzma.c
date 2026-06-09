@@ -245,7 +245,7 @@ unpack_lzma_stream(transformer_state_t *xstate)
 	pos_state_mask = (1 << pb) - 1;
 	literal_pos_mask = (1 << lp) - 1;
 
-	/* Example values from linux-3.3.4.tar.lzma:
+	/* Example values from beep-3.3.4.tar.lzma:
 	 * dict_size: 64M, dst_size: 2^64-1
 	 */
 	header.dict_size = SWAP_LE32(header.dict_size);
@@ -436,7 +436,7 @@ unpack_lzma_stream(transformer_state_t *xstate)
 							rep0 = (rep0 << 1) | rc_direct_bit(rc);
 						rep0 <<= LZMA_NUM_ALIGN_BITS;
 						// Note: (int32_t)rep0 may be < 0 here
-						// (I have linux-3.3.4.tar.lzma which has it).
+						// (I have beep-3.3.4.tar.lzma which has it).
 						// I moved the check after "++rep0 == 0" check below.
 						prob3 = p + LZMA_ALIGN;
 					}

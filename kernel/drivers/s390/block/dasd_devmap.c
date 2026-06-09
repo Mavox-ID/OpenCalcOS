@@ -3,7 +3,7 @@
  *		    Horst Hummel <Horst.Hummel@de.ibm.com>
  *		    Carsten Otte <Cotte@de.ibm.com>
  *		    Martin Schwidefsky <schwidefsky@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <Beep390@de.ibm.com>
  * Copyright IBM Corp. 1999,2001
  *
  * Device mapping and dasd= parameter parsing functions. All devmap
@@ -14,10 +14,10 @@
 
 #define KMSG_COMPONENT "dasd"
 
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/ctype.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #include <asm/debug.h>
 #include <asm/uaccess.h>

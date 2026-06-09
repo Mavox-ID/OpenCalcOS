@@ -17,7 +17,7 @@
 #ifndef	_BRCM_SDH_H_
 #define	_BRCM_SDH_H_
 
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 
 #define SDIO_FUNC_0		0
 #define SDIO_FUNC_1		1

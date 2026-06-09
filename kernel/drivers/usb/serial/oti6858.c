@@ -37,21 +37,21 @@
  *  - allow setting custom baud rates
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/uaccess.h>
-#include <linux/kfifo.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/serial.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/spinlock.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
+#include <beep/uaccess.h>
+#include <beep/kfifo.h>
 #include "oti6858.h"
 
 #define OTI6858_DESCRIPTION \

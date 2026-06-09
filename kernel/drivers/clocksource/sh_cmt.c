@@ -17,23 +17,23 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/sh_timer.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/irq.h>
+#include <beep/err.h>
+#include <beep/delay.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/sh_timer.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/pm_domain.h>
+#include <beep/pm_runtime.h>
 
 struct sh_cmt_priv {
 	void __iomem *mapbase;

@@ -3,19 +3,19 @@
  * Copyright (C) 2005 Mips Technologies, Inc
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/cpumask.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/cpumask.h>
+#include <beep/interrupt.h>
 
 #include <asm/cpu.h>
 #include <asm/processor.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/hardirq.h>
 #include <asm/mmu_context.h>
 #include <asm/mipsregs.h>
 #include <asm/cacheflush.h>
-#include <linux/proc_fs.h>
+#include <beep/proc_fs.h>
 
 #include <asm/smtc_proc.h>
 

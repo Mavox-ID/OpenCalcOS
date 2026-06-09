@@ -19,16 +19,16 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/cdev.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/cdev.h>
+#include <beep/list.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
 #include <asm/pgtable.h>
 #include <asm/io.h>
 

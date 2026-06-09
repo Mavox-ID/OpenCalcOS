@@ -2,17 +2,17 @@
 
 /* Written 1998-2000 by Werner Almesberger, EPFL ICA */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/atmdev.h>
-#include <linux/atmclip.h>
-#include <linux/rtnetlink.h>
-#include <linux/file.h>		/* for fput */
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/skbuff.h>
+#include <beep/atmdev.h>
+#include <beep/atmclip.h>
+#include <beep/rtnetlink.h>
+#include <beep/file.h>		/* for fput */
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 

@@ -1,6 +1,6 @@
 /*
  *	IPV6 GSO/GRO offload support
- *	Linux INET6 implementation
+ *	Beep INET6 implementation
  *
  *	This program is free software; you can redistribute it and/or
  *      modify it under the terms of the GNU General Public License

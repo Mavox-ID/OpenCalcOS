@@ -1,4 +1,4 @@
-/* -*- linux-c -*-
+/* -*- beep-c -*-
  * INET		802.1Q VLAN
  *		Ethernet-type device handling.
  *
@@ -22,18 +22,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
 #include <net/arp.h>
 
 #include "vlan.h"
 #include "vlanproc.h"
-#include <linux/if_vlan.h>
-#include <linux/netpoll.h>
+#include <beep/if_vlan.h>
+#include <beep/netpoll.h>
 
 /*
  *	Rebuild the Ethernet MAC header. This is called after an ARP
@@ -254,7 +254,7 @@ int vlan_dev_set_egress_priority(const struct net_device *dev,
 	return 0;
 }
 
-/* Flags are defined in the vlan_flags enum in include/linux/if_vlan.h file. */
+/* Flags are defined in the vlan_flags enum in include/beep/if_vlan.h file. */
 int vlan_dev_change_flags(const struct net_device *dev, u32 flags, u32 mask)
 {
 	struct vlan_dev_priv *vlan = vlan_dev_priv(dev);

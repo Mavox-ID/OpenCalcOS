@@ -12,8 +12,8 @@
  * (C) 1999             David A. Hinds
  */
 
-#ifndef _LINUX_CISTPL_H
-#define _LINUX_CISTPL_H
+#ifndef _BEEP_CISTPL_H
+#define _BEEP_CISTPL_H
 
 typedef unsigned char cisdata_t;
 
@@ -577,4 +577,4 @@ typedef struct tuple_t {
 
 #define CISTPL_MAX_CIS_SIZE	0x200
 
-#endif /* LINUX_CISTPL_H */
+#endif /* BEEP_CISTPL_H */

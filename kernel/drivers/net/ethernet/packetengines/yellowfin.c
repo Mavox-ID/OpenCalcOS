@@ -1,4 +1,4 @@
-/* yellowfin.c: A Packet Engines G-NIC ethernet driver for linux. */
+/* yellowfin.c: A Packet Engines G-NIC ethernet driver for beep. */
 /*
 	Written 1997-2001 by Donald Becker.
 
@@ -84,22 +84,22 @@ static int gx_fix;
 
 #define yellowfin_debug debug
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/mii.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/mii.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/ethtool.h>
+#include <beep/crc32.h>
+#include <beep/bitops.h>
 #include <asm/uaccess.h>
 #include <asm/processor.h>		/* Processor type for cache alignment. */
 #include <asm/unaligned.h>
@@ -198,8 +198,8 @@ IVb. References
 Yellowfin Engineering Design Specification, 4/23/97 Preliminary/Confidential
 Symbios SYM53C885 PCI-SCSI/Fast Ethernet Multifunction Controller Preliminary
    Data Manual v3.0
-http://cesdis.gsfc.nasa.gov/linux/misc/NWay.html
-http://cesdis.gsfc.nasa.gov/linux/misc/100mbps.html
+http://cesdis.gsfc.nasa.gov/beep/misc/NWay.html
+http://cesdis.gsfc.nasa.gov/beep/misc/100mbps.html
 
 IVc. Errata
 

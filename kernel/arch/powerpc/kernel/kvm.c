@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2010 SUSE Linux Products GmbH. All rights reserved.
+ * Copyright (C) 2010 SUSE Beep Products GmbH. All rights reserved.
  * Copyright 2010-2011 Freescale Semiconductor, Inc.
  *
  * Authors:
@@ -19,12 +19,12 @@
  * Foundation, 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/kvm_para.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <beep/kvm_host.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/kvm_para.h>
+#include <beep/slab.h>
+#include <beep/of.h>
 
 #include <asm/reg.h>
 #include <asm/sections.h>

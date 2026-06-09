@@ -28,10 +28,10 @@
  *
  */
 
-#include <linux/platform_device.h>
-#include <linux/platform_data/omap-twl4030.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <beep/platform_device.h>
+#include <beep/platform_data/omap-twl4030.h>
+#include <beep/module.h>
+#include <beep/of.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

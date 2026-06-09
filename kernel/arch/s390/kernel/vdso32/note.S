@@ -3,10 +3,10 @@
  * Here we can supply some information useful to userland.
  */
 
-#include <linux/uts.h>
-#include <linux/version.h>
-#include <linux/elfnote.h>
+#include <beep/uts.h>
+#include <beep/version.h>
+#include <beep/elfnote.h>
 
-ELFNOTE_START(Linux, 0, "a")
-	.long LINUX_VERSION_CODE
+ELFNOTE_START(Beep, 0, "a")
+	.long BEEP_VERSION_CODE
 ELFNOTE_END

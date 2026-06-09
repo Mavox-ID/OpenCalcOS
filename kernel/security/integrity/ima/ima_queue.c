@@ -18,9 +18,9 @@
  *       The measurement list is append-only. No entry is
  *       ever removed or changed during the boot-cycle.
  */
-#include <linux/module.h>
-#include <linux/rculist.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/rculist.h>
+#include <beep/slab.h>
 #include "ima.h"
 
 #define AUDIT_CAUSE_LEN_MAX 32

@@ -9,11 +9,11 @@
  * (at your option) any later version.
  */
 
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/power_supply.h>
-#include <linux/olpc-ec.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/power_supply.h>
+#include <beep/olpc-ec.h>
 
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>

@@ -24,7 +24,7 @@
  *	Eric Anholt <eric@anholt.net>
  */
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 #include <drm/drmP.h>
 
 #include "intel_bios.h"
@@ -33,7 +33,7 @@
 #include "psb_intel_reg.h"
 #include "power.h"
 #include "cdv_device.h"
-#include <linux/pm_runtime.h>
+#include <beep/pm_runtime.h>
 
 
 static void cdv_intel_crt_dpms(struct drm_encoder *encoder, int mode)

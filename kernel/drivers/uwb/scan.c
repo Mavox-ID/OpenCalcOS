@@ -33,10 +33,10 @@
  *                   we just fail.
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
 #include "uwb-internal.h"
 
 

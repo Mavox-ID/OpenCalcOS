@@ -6,16 +6,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
-#include <linux/platform_data/keyboard-pxa930_rotary.h>
+#include <beep/platform_data/keyboard-pxa930_rotary.h>
 
 #define SBCR	(0x04)
 #define ERCR	(0x0c)

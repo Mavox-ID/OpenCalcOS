@@ -1,5 +1,5 @@
 /*
- * linux/include/asm-cris/timex.h
+ * beep/include/asm-cris/timex.h
  *
  * CRIS architecture timex specifications
  */

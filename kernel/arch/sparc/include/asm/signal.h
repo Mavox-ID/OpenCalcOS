@@ -2,8 +2,8 @@
 #define __SPARC_SIGNAL_H
 
 #ifndef __ASSEMBLY__
-#include <linux/personality.h>
-#include <linux/types.h>
+#include <beep/personality.h>
+#include <beep/types.h>
 #endif
 #include <uapi/asm/signal.h>
 

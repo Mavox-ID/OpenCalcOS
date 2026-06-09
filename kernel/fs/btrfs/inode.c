@@ -16,29 +16,29 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/bio.h>
-#include <linux/buffer_head.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/backing-dev.h>
-#include <linux/mpage.h>
-#include <linux/swap.h>
-#include <linux/writeback.h>
-#include <linux/statfs.h>
-#include <linux/compat.h>
-#include <linux/bit_spinlock.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl.h>
-#include <linux/falloc.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
-#include <linux/mount.h>
+#include <beep/kernel.h>
+#include <beep/bio.h>
+#include <beep/buffer_head.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/highmem.h>
+#include <beep/time.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/backing-dev.h>
+#include <beep/mpage.h>
+#include <beep/swap.h>
+#include <beep/writeback.h>
+#include <beep/statfs.h>
+#include <beep/compat.h>
+#include <beep/bit_spinlock.h>
+#include <beep/xattr.h>
+#include <beep/posix_acl.h>
+#include <beep/falloc.h>
+#include <beep/slab.h>
+#include <beep/ratelimit.h>
+#include <beep/mount.h>
 #include "compat.h"
 #include "ctree.h"
 #include "disk-io.h"
@@ -4982,7 +4982,7 @@ static int btrfs_mknod(struct inode *dir, struct dentry *dentry,
 	/*
 	 * 2 for inode item and ref
 	 * 2 for dir items
-	 * 1 for xattr if selinux is on
+	 * 1 for xattr if sebeep is on
 	 */
 	trans = btrfs_start_transaction(root, 5);
 	if (IS_ERR(trans))
@@ -5052,7 +5052,7 @@ static int btrfs_create(struct inode *dir, struct dentry *dentry,
 	/*
 	 * 2 for inode item and ref
 	 * 2 for dir items
-	 * 1 for xattr if selinux is on
+	 * 1 for xattr if sebeep is on
 	 */
 	trans = btrfs_start_transaction(root, 5);
 	if (IS_ERR(trans))
@@ -5181,7 +5181,7 @@ static int btrfs_mkdir(struct inode *dir, struct dentry *dentry, umode_t mode)
 	/*
 	 * 2 items for inode and ref
 	 * 2 items for dir items
-	 * 1 for xattr if selinux is on
+	 * 1 for xattr if sebeep is on
 	 */
 	trans = btrfs_start_transaction(root, 5);
 	if (IS_ERR(trans))
@@ -7678,7 +7678,7 @@ static int btrfs_symlink(struct inode *dir, struct dentry *dentry,
 	/*
 	 * 2 items for inode item and ref
 	 * 2 items for dir items
-	 * 1 item for xattr if selinux is on
+	 * 1 item for xattr if sebeep is on
 	 */
 	trans = btrfs_start_transaction(root, 5);
 	if (IS_ERR(trans))

@@ -10,14 +10,14 @@
  * platform energy management capabilities.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/seq_file.h>
+#include <beep/device.h>
+#include <beep/cpu.h>
+#include <beep/of.h>
 #include <asm/cputhreads.h>
 #include <asm/page.h>
 #include <asm/hvcall.h>

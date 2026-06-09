@@ -37,13 +37,13 @@
 #endif
 #endif /* __CHECKER__ */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
 
 #include <asm/stacktrace.h>
 #include <asm/traps.h>

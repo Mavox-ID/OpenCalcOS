@@ -4,9 +4,9 @@
  * Copyright (C) 2009  Phil Sutter <n0-1@freewrt.org>
  */
 
-#include <linux/input-polldev.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/input-polldev.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 
 #include <asm/mach-rc32434/gpio.h>
 #include <asm/mach-rc32434/rb.h>

@@ -4,34 +4,34 @@
 
 /* (C) 1999-2001 Paul `Rusty' Russell
  * (C) 2002-2006 Netfilter Core Team <coreteam@netfilter.org>
- * (C) 2003,2004 USAGI/WIDE Project <http://www.linux-ipv6.org>
+ * (C) 2003,2004 USAGI/WIDE Project <http://www.beep-ipv6.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/vmalloc.h>
-#include <linux/stddef.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/jhash.h>
-#include <linux/err.h>
-#include <linux/percpu.h>
-#include <linux/moduleparam.h>
-#include <linux/notifier.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/socket.h>
-#include <linux/mm.h>
-#include <linux/nsproxy.h>
-#include <linux/rculist_nulls.h>
+#include <beep/types.h>
+#include <beep/netfilter.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/skbuff.h>
+#include <beep/proc_fs.h>
+#include <beep/vmalloc.h>
+#include <beep/stddef.h>
+#include <beep/slab.h>
+#include <beep/random.h>
+#include <beep/jhash.h>
+#include <beep/err.h>
+#include <beep/percpu.h>
+#include <beep/moduleparam.h>
+#include <beep/notifier.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/socket.h>
+#include <beep/mm.h>
+#include <beep/nsproxy.h>
+#include <beep/rculist_nulls.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_l3proto.h>
@@ -1140,9 +1140,9 @@ static struct nf_ct_ext_type nf_ct_zone_extend __read_mostly = {
 
 #if IS_ENABLED(CONFIG_NF_CT_NETLINK)
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
-#include <linux/mutex.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_conntrack.h>
+#include <beep/mutex.h>
 
 /* Generic function for tcp/udp/sctp/dccp and alike. This needs to be
  * in ip_conntrack_core, since we don't want the protocols to autoload

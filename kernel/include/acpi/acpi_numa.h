@@ -2,7 +2,7 @@
 #define __ACPI_NUMA_H
 
 #ifdef CONFIG_ACPI_NUMA
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 /* Proximity bitmap length */
 #if MAX_NUMNODES > 256

@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/net/ethernet/ibm/ehea/ehea_main.c
+ *  beep/drivers/net/ethernet/ibm/ehea/ehea_main.c
  *
  *  eHEA ethernet device driver for IBM eServer System p
  *
@@ -28,20 +28,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/if.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/if_ether.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/memory.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/udp.h>
+#include <beep/if.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/if_ether.h>
+#include <beep/notifier.h>
+#include <beep/reboot.h>
+#include <beep/memory.h>
 #include <asm/kexec.h>
-#include <linux/mutex.h>
-#include <linux/prefetch.h>
+#include <beep/mutex.h>
+#include <beep/prefetch.h>
 
 #include <net/ip.h>
 

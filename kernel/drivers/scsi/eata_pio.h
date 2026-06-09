@@ -1,5 +1,5 @@
 /********************************************************
-* Header file for eata_pio.c Linux EATA-PIO SCSI driver *
+* Header file for eata_pio.c Beep EATA-PIO SCSI driver *
 * (c) 1993-96 Michael Neuffer  	                        *
 *********************************************************
 * last change: 2002/11/02				*

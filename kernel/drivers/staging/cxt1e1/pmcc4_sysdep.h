@@ -42,7 +42,7 @@
 
 /*
  * System dependent callbacks routines, not inlined...
- * For inlined system dependent routines, see include/sbecom_inlinux_linux.h
+ * For inlined system dependent routines, see include/sbecom_inbeep_beep.h
  */
 
 /*

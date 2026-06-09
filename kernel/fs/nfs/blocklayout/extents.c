@@ -1,5 +1,5 @@
 /*
- *  linux/fs/nfs/blocklayout/blocklayout.h
+ *  beep/fs/nfs/blocklayout/blocklayout.h
  *
  *  Module for the NFSv4.1 pNFS block layout driver.
  *

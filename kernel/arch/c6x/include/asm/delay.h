@@ -11,7 +11,7 @@
 #ifndef _ASM_C6X_DELAY_H
 #define _ASM_C6X_DELAY_H
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 extern unsigned int ticks_per_ns_scaled;
 

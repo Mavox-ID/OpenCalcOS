@@ -1,6 +1,6 @@
 # $Id: Makefile,v 1.6 2004/12/13 12:21:51 starvik Exp $
 #
-# Makefile for the linux kernel.
+# Makefile for the beep kernel.
 #
 
 extra-y	:= head.o

@@ -7,9 +7,9 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/cb710.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/cb710.h>
 
 static bool sg_dwiter_next(struct sg_mapping_iter *miter)
 {

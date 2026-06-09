@@ -1,7 +1,7 @@
 #ifndef _ASM_X86_I8259_H
 #define _ASM_X86_I8259_H
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 extern unsigned int cached_irq_mask;
 

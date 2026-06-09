@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for Beep
    Copyright (C) 2000-2001 Qualcomm Incorporated
    Copyright (C) 2009-2010 Gustavo F. Padovan <gustavo@padovan.org>
    Copyright (C) 2010 Google Inc.
@@ -28,10 +28,10 @@
 
 /* Bluetooth L2CAP core. */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/debugfs.h>
-#include <linux/crc16.h>
+#include <beep/debugfs.h>
+#include <beep/crc16.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

@@ -43,16 +43,16 @@
  * It supports all speeds from 2400 through 4Mbps
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/device.h>
-#include <linux/crc32.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/device.h>
+#include <beep/crc32.h>
 
 #include <asm/unaligned.h>
 #include <asm/byteorder.h>

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2007 Denys Vlasenko <vda.linux@googlemail.com>
+ * Copyright (c) 2007 Denys Vlasenko <vda.beep@googlemail.com>
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
@@ -10,7 +10,7 @@
  */
 
 /* Build a-la
-i486-linux-uclibc-gcc \
+i486-beep-uclibc-gcc \
 -static -static-libgcc \
 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 \
 -Wall -Wshadow -Wwrite-strings -Wundef -Wstrict-prototypes -Werror \

@@ -1,4 +1,4 @@
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/delay.h>
 #include <irq.h>
 #include <hwregs/intr_vect.h>
@@ -7,16 +7,16 @@
 #include <asm/mmu_context.h>
 #include <hwregs/asm/mmu_defs_asm.h>
 #include <hwregs/supp_reg.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/timex.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/cpumask.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/timex.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/cpumask.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
 
 #define IPI_SCHEDULE 1
 #define IPI_CALL 2

@@ -13,13 +13,13 @@
  *
  * ---------------------------------------------------------------------------
  */
-#include <linux/types.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
+#include <beep/types.h>
+#include <beep/etherdevice.h>
+#include <beep/if_arp.h>
 #include <asm/uaccess.h>
-#include <linux/ctype.h>
+#include <beep/ctype.h>
 #include "unifi_priv.h"
-#include <linux/rtnetlink.h>
+#include <beep/rtnetlink.h>
 
 #define CHECK_INITED(_priv)                             \
     do {                                                    \
@@ -3126,7 +3126,7 @@ unifi_siwpmksa(struct net_device *dev, struct iw_request_info *info,
  * ---------------------------------------------------------------------------
  *  unifi_get_wireless_stats
  *
- *      get_wireless_stats method for Linux wireless extensions.
+ *      get_wireless_stats method for Beep wireless extensions.
  *
  *  Arguments:
  *      dev             Pointer to associated netdevice.

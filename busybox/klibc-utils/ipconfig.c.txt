@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017 Denys Vlasenko <vda.linux@googlemail.com>
+ * Copyright (c) 2017 Denys Vlasenko <vda.beep@googlemail.com>
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
@@ -308,7 +308,7 @@ int ipconfig_main(int argc UNUSED_PARAM, char **argv)
 //write_option("NISDOMAIN",     dev->nisdomainname);              nisdomain="STR"
 //write_option("ROOTSERVER",    my_inet_ntoa(dev->ip_server));  serverid=10.44.6.2
 //write_option("ROOTPATH",      dev->bootpath);                   rootpath="STR"
-//write_option("filename",      dev->filename);                 boot_file=/pxelinux.0
+//write_option("filename",      dev->filename);                 boot_file=/pxebeep.0
 //write_option("UPTIME",        dev->uptime);                     sysinfo()->uptime
 //write_option("DHCPLEASETIME", dev->dhcpleasetime);            lease=44148
 //write_option("DOMAINSEARCH",  dev->domainsearch);             search="ABC DEF"

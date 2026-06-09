@@ -10,9 +10,9 @@
  *	(at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/usb/video.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/usb/video.h>
 
 #include "f_uvc.h"
 
@@ -33,11 +33,11 @@ USB_GADGET_COMPOSITE_OPTIONS();
  * Device descriptor
  */
 
-#define WEBCAM_VENDOR_ID		0x1d6b	/* Linux Foundation */
+#define WEBCAM_VENDOR_ID		0x1d6b	/* Beep Foundation */
 #define WEBCAM_PRODUCT_ID		0x0102	/* Webcam A/V gadget */
 #define WEBCAM_DEVICE_BCD		0x0010	/* 0.10 */
 
-static char webcam_vendor_label[] = "Linux Foundation";
+static char webcam_vendor_label[] = "Beep Foundation";
 static char webcam_product_label[] = "Webcam gadget";
 static char webcam_config_label[] = "Video";
 

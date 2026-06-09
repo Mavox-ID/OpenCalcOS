@@ -9,7 +9,7 @@
 #ifndef __ASM_ARM_CHECKSUM_H
 #define __ASM_ARM_CHECKSUM_H
 
-#include <linux/in6.h>
+#include <beep/in6.h>
 
 /*
  * computes the checksum of a memory block at buff, length len,

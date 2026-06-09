@@ -25,7 +25,7 @@
 #include "xfs_bmap_btree.h"
 #include "xfs_inode.h"
 #include "xfs_qm.h"
-#include <linux/quota.h>
+#include <beep/quota.h>
 
 
 STATIC int

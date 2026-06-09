@@ -11,11 +11,11 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
 
 #include <asm/inst.h>
 #include <asm/irq_regs.h>

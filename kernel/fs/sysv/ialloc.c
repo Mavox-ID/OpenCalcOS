@@ -1,5 +1,5 @@
 /*
- *  linux/fs/sysv/ialloc.c
+ *  beep/fs/sysv/ialloc.c
  *
  *  minix/bitmap.c
  *  Copyright (C) 1991, 1992  Linus Torvalds
@@ -19,13 +19,13 @@
  *  This file contains code for allocating/freeing inodes.
  */
 
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
+#include <beep/kernel.h>
+#include <beep/stddef.h>
+#include <beep/sched.h>
+#include <beep/stat.h>
+#include <beep/string.h>
+#include <beep/buffer_head.h>
+#include <beep/writeback.h>
 #include "sysv.h"
 
 /* We don't trust the value of

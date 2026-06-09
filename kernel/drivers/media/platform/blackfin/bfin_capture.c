@@ -17,20 +17,20 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/types.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/types.h>
 
 #include <media/v4l2-chip-ident.h>
 #include <media/v4l2-common.h>
@@ -1053,5 +1053,5 @@ static struct platform_driver bcap_driver = {
 module_platform_driver(bcap_driver);
 
 MODULE_DESCRIPTION("Analog Devices blackfin video capture driver");
-MODULE_AUTHOR("Scott Jiang <Scott.Jiang.Linux@gmail.com>");
+MODULE_AUTHOR("Scott Jiang <Scott.Jiang.Beep@gmail.com>");
 MODULE_LICENSE("GPL v2");

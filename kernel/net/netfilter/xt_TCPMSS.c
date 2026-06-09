@@ -8,23 +8,23 @@
  * published by the Free Software Foundation.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/gfp.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/ip.h>
+#include <beep/gfp.h>
+#include <beep/ipv6.h>
+#include <beep/tcp.h>
 #include <net/dst.h>
 #include <net/flow.h>
 #include <net/ipv6.h>
 #include <net/route.h>
 #include <net/tcp.h>
 
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_tcpudp.h>
-#include <linux/netfilter/xt_TCPMSS.h>
+#include <beep/netfilter_ipv4/ip_tables.h>
+#include <beep/netfilter_ipv6/ip6_tables.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_tcpudp.h>
+#include <beep/netfilter/xt_TCPMSS.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Marc Boucher <marc@mbsi.ca>");

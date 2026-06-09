@@ -1,6 +1,6 @@
 /*
  * This file is part of the Chelsio T4 PCI-E SR-IOV Virtual Function Ethernet
- * driver for Linux.
+ * driver for Beep.
  *
  * Copyright (c) 2009-2010 Chelsio Communications, Inc. All rights reserved.
  *
@@ -40,12 +40,12 @@
 #ifndef __CXGB4VF_ADAPTER_H__
 #define __CXGB4VF_ADAPTER_H__
 
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/spinlock.h>
+#include <beep/skbuff.h>
+#include <beep/if_ether.h>
+#include <beep/netdevice.h>
 
 #include "../cxgb4/t4_hw.h"
 
@@ -353,7 +353,7 @@ struct adapter {
 	} msix_info[MSIX_ENTRIES];
 	struct sge sge;
 
-	/* Linux network device resources */
+	/* Beep network device resources */
 	struct net_device *port[MAX_NPORTS];
 	const char *name;
 	unsigned int msg_enable;

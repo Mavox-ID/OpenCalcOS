@@ -22,8 +22,8 @@
  *
  */
 
-#include <linux/fscache-cache.h>
-#include <linux/sched.h>
+#include <beep/fscache-cache.h>
+#include <beep/sched.h>
 
 #define FSCACHE_MIN_THREADS	4
 #define FSCACHE_MAX_THREADS	32

@@ -22,16 +22,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/wm97xx.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/wm97xx.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
 
 #include <mach/regs-ac97.h>
 

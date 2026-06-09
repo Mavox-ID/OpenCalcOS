@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-ep93xx/micro9.c
+ *  beep/arch/arm/mach-ep93xx/micro9.c
  *
  * Copyright (C) 2006 Contec Steuerungstechnik & Automation GmbH
  *                    Manfred Gruber <m.gruber@tirol.com>
@@ -11,10 +11,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 

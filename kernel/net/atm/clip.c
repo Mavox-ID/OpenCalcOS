@@ -4,40 +4,40 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h> /* for UINT_MAX */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/wait.h>
-#include <linux/timer.h>
-#include <linux/if_arp.h> /* for some manifest constants */
-#include <linux/notifier.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/atmclip.h>
-#include <linux/atmarp.h>
-#include <linux/capability.h>
-#include <linux/ip.h> /* for net/route.h */
-#include <linux/in.h> /* for struct sockaddr_in */
-#include <linux/if.h> /* for IFF_UP */
-#include <linux/inetdevice.h>
-#include <linux/bitops.h>
-#include <linux/poison.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/rcupdate.h>
-#include <linux/jhash.h>
-#include <linux/slab.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/kernel.h> /* for UINT_MAX */
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/wait.h>
+#include <beep/timer.h>
+#include <beep/if_arp.h> /* for some manifest constants */
+#include <beep/notifier.h>
+#include <beep/atm.h>
+#include <beep/atmdev.h>
+#include <beep/atmclip.h>
+#include <beep/atmarp.h>
+#include <beep/capability.h>
+#include <beep/ip.h> /* for net/route.h */
+#include <beep/in.h> /* for struct sockaddr_in */
+#include <beep/if.h> /* for IFF_UP */
+#include <beep/inetdevice.h>
+#include <beep/bitops.h>
+#include <beep/poison.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/rcupdate.h>
+#include <beep/jhash.h>
+#include <beep/slab.h>
 #include <net/route.h> /* for struct rtable and routing */
 #include <net/icmp.h> /* icmp_send */
 #include <net/arp.h>
-#include <linux/param.h> /* for HZ */
-#include <linux/uaccess.h>
+#include <beep/param.h> /* for HZ */
+#include <beep/uaccess.h>
 #include <asm/byteorder.h> /* for htons etc. */
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include "common.h"
 #include "resources.h"

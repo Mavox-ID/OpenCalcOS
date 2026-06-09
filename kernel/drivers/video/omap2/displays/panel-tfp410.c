@@ -17,11 +17,11 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include <video/omapdss.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
+#include <beep/i2c.h>
+#include <beep/gpio.h>
 #include <drm/drm_edid.h>
 
 #include <video/omap-panel-tfp410.h>

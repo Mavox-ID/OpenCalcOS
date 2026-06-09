@@ -1,7 +1,7 @@
 #ifndef _ASM_IO_H
 #define _ASM_IO_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/pgtable.h>
 
 #define virt_to_phys(a) ((unsigned long)__pa(a))

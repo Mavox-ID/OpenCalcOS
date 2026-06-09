@@ -1,10 +1,10 @@
 /*
  * Copyright (C) 2006 Chris Dearman (chris@mips.com),
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
 
 #include <asm/mipsregs.h>
 #include <asm/bcache.h>

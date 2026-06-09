@@ -23,10 +23,10 @@
 
 #include "acx.h"
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/slab.h>
 
 #include "wlcore.h"
 #include "debug.h"

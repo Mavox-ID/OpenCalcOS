@@ -10,9 +10,9 @@
  */
 
 #define pr_fmt(fmt) "RSA: "fmt
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 #include "public_key.h"
 
 MODULE_LICENSE("GPL");

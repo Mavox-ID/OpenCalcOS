@@ -15,14 +15,14 @@
  * for more details.
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

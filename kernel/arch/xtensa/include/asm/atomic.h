@@ -13,8 +13,8 @@
 #ifndef _XTENSA_ATOMIC_H
 #define _XTENSA_ATOMIC_H
 
-#include <linux/stringify.h>
-#include <linux/types.h>
+#include <beep/stringify.h>
+#include <beep/types.h>
 
 #ifdef __KERNEL__
 #include <asm/processor.h>

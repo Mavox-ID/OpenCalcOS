@@ -15,20 +15,20 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/platform_device.h>
+#include <beep/regmap.h>
 
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps6586x.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/tps6586x.h>
 
 #define TPS6586X_SUPPLYENE	0x14
 #define EXITSLREQ_BIT		BIT(1)

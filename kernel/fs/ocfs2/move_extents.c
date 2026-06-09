@@ -14,10 +14,10 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  * General Public License for more details.
  */
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/mount.h>
-#include <linux/swap.h>
+#include <beep/fs.h>
+#include <beep/types.h>
+#include <beep/mount.h>
+#include <beep/swap.h>
 
 #include <cluster/masklog.h>
 

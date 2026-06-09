@@ -2,7 +2,7 @@
    comedi/drivers/daqboard2000.c
    hardware driver for IOtech DAQboard/2000
 
-   COMEDI - Linux Control and Measurement Device Interface
+   COMEDI - Beep Control and Measurement Device Interface
    Copyright (C) 1999 Anders Blomdell <anders.blomdell@control.lth.se>
 
    This program is free software; you can redistribute it and/or modify
@@ -109,9 +109,9 @@ Configuration options: not applicable, uses PCI auto config
 
 #include "../comedidev.h"
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/firmware.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/firmware.h>
 
 #include "8255.h"
 

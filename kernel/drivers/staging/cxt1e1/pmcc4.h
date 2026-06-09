@@ -21,7 +21,7 @@
  *-----------------------------------------------------------------------------
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 typedef int status_t;
 

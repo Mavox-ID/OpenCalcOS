@@ -7,8 +7,8 @@
 #ifndef _BFIN_IO_H
 #define _BFIN_IO_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/types.h>
 #include <asm/byteorder.h>
 
 #define DECLARE_BFIN_RAW_READX(size, type, asm, asm_sign) \

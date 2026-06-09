@@ -11,11 +11,11 @@
  * any later version.
  *
  */
-//#include <linux/crypto.h>
+//#include <beep/crypto.h>
 #include "rtl_crypto.h"
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/highmem.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/highmem.h>
 #include <asm/scatterlist.h>
 #include "internal.h"
 

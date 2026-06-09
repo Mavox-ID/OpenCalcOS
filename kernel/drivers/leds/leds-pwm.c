@@ -1,5 +1,5 @@
 /*
- * linux/drivers/leds-pwm.c
+ * beep/drivers/leds-pwm.c
  *
  * simple PWM based LED control
  *
@@ -12,16 +12,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/leds.h>
-#include <linux/err.h>
-#include <linux/pwm.h>
-#include <linux/leds_pwm.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/fb.h>
+#include <beep/leds.h>
+#include <beep/err.h>
+#include <beep/pwm.h>
+#include <beep/leds_pwm.h>
+#include <beep/slab.h>
 
 struct led_pwm_data {
 	struct led_classdev	cdev;

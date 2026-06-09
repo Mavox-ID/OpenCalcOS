@@ -7,9 +7,9 @@
 #ifndef _NET_FLOW_H
 #define _NET_FLOW_H
 
-#include <linux/socket.h>
-#include <linux/in6.h>
-#include <linux/atomic.h>
+#include <beep/socket.h>
+#include <beep/in6.h>
+#include <beep/atomic.h>
 
 struct flowi_common {
 	int	flowic_oif;

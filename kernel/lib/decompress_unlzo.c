@@ -1,8 +1,8 @@
 /*
- * LZO decompressor for the Linux kernel. Code borrowed from the lzo
+ * LZO decompressor for the Beep kernel. Code borrowed from the lzo
  * implementation by Markus Franz Xaver Johannes Oberhumer.
  *
- * Linux kernel adaptation:
+ * Beep kernel adaptation:
  * Copyright (C) 2009
  * Albin Tonnerre, Free Electrons <albin.tonnerre@free-electrons.com>
  *
@@ -33,14 +33,14 @@
 #ifdef STATIC
 #include "lzo/lzo1x_decompress.c"
 #else
-#include <linux/decompress/unlzo.h>
+#include <beep/decompress/unlzo.h>
 #endif
 
-#include <linux/types.h>
-#include <linux/lzo.h>
-#include <linux/decompress/mm.h>
+#include <beep/types.h>
+#include <beep/lzo.h>
+#include <beep/decompress/mm.h>
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/unaligned.h>
 
 static const unsigned char lzop_magic[] = {

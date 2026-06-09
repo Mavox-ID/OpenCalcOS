@@ -26,8 +26,8 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
 #include <asm/time.h>
 #include <asm/mach-au1x00/au1000.h>
 

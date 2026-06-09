@@ -8,7 +8,7 @@
  */
 
 #include <byteswap.h>
-#include <linux/bitops.h>
+#include <beep/bitops.h>
 #include "asm/bug.h"
 #include "debugfs.h"
 #include "event-parse.h"
@@ -18,8 +18,8 @@
 #include "cpumap.h"
 #include "thread_map.h"
 #include "target.h"
-#include <linux/hw_breakpoint.h>
-#include <linux/perf_event.h>
+#include <beep/hw_breakpoint.h>
+#include <beep/perf_event.h>
 #include "perf_regs.h"
 
 #define FD(e, x, y) (*(int *)xyarray__entry(e->fd, x, y))

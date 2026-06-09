@@ -15,15 +15,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/tegra_emc.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
+#include <beep/platform_data/tegra_emc.h>
 
 #include "tegra2_emc.h"
 #include "fuse.h"

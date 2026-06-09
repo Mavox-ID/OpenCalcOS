@@ -6,7 +6,7 @@
  *                         Dwaine Garden <dwainegarden@rogers.com>
  *
  *
- * Report problems to v4l MailingList: linux-media@vger.kernel.org
+ * Report problems to v4l MailingList: beep-media@vger.kernel.org
  *
  * This module is part of usbvision driver project.
  * Updates to driver completed by Dwaine P. Garden
@@ -28,16 +28,16 @@
  */
 
 
-#ifndef __LINUX_USBVISION_H
-#define __LINUX_USBVISION_H
+#ifndef __BEEP_USBVISION_H
+#define __BEEP_USBVISION_H
 
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <beep/list.h>
+#include <beep/usb.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
 #include <media/v4l2-device.h>
 #include <media/tuner.h>
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 
 #define USBVISION_DEBUG		/* Turn on debug messages */
 
@@ -524,7 +524,7 @@ void usbvision_reset_power_off_timer(struct usb_usbvision *usbvision);
 int usbvision_power_off(struct usb_usbvision *usbvision);
 int usbvision_power_on(struct usb_usbvision *usbvision);
 
-#endif									/* __LINUX_USBVISION_H */
+#endif									/* __BEEP_USBVISION_H */
 
 /*
  * Overrides for Emacs so that we follow Linus's tabbing style.

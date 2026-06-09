@@ -8,23 +8,23 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/tty.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/seq_file.h>
-#include <linux/cpu.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/tty.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/seq_file.h>
+#include <beep/cpu.h>
 #include <asm/processor.h>
-#include <linux/console.h>
+#include <beep/console.h>
 #include <asm/uaccess.h>
 #include <asm/setup.h>
 #include <asm/io.h>

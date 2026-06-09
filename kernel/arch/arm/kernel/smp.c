@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/smp.c
+ *  beep/arch/arm/kernel/smp.c
  *
  *  Copyright (C) 2002 ARM Limited, All Rights Reserved.
  *
@@ -7,26 +7,26 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/cache.h>
-#include <linux/profile.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/cpu.h>
-#include <linux/seq_file.h>
-#include <linux/irq.h>
-#include <linux/percpu.h>
-#include <linux/clockchips.h>
-#include <linux/completion.h>
-#include <linux/cpufreq.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/cache.h>
+#include <beep/profile.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/err.h>
+#include <beep/cpu.h>
+#include <beep/seq_file.h>
+#include <beep/irq.h>
+#include <beep/percpu.h>
+#include <beep/clockchips.h>
+#include <beep/completion.h>
+#include <beep/cpufreq.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/smp.h>
 #include <asm/cacheflush.h>
 #include <asm/cpu.h>

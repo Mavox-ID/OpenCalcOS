@@ -22,15 +22,15 @@
  * 02110-1301 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/socket.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 #include <asm/ioctls.h>
 
-#include <linux/phonet.h>
-#include <linux/module.h>
+#include <beep/phonet.h>
+#include <beep/module.h>
 #include <net/phonet/phonet.h>
 #include <net/phonet/pep.h>
 #include <net/phonet/gprs.h>

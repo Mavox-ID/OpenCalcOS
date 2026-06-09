@@ -10,24 +10,24 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/netdevice.h>
-#include <linux/debugfs.h>
-#include <linux/list.h>
-#include <linux/bug.h>
-#include <linux/netlink.h>
-#include <linux/skbuff.h>
-#include <linux/nl80211.h>
-#include <linux/if_ether.h>
-#include <linux/ieee80211.h>
+#include <beep/netdevice.h>
+#include <beep/debugfs.h>
+#include <beep/list.h>
+#include <beep/bug.h>
+#include <beep/netlink.h>
+#include <beep/skbuff.h>
+#include <beep/nl80211.h>
+#include <beep/if_ether.h>
+#include <beep/ieee80211.h>
 #include <net/regulatory.h>
 
 /**
  * DOC: Introduction
  *
- * cfg80211 is the configuration API for 802.11 devices in Linux. It bridges
+ * cfg80211 is the configuration API for 802.11 devices in Beep. It bridges
  * userspace and drivers, and offers some utility functionality associated
  * with 802.11. cfg80211 must, directly or indirectly via mac80211, be used
- * by all modern wireless drivers in Linux, so that they offer a consistent
+ * by all modern wireless drivers in Beep, so that they offer a consistent
  * API through nl80211. For backward compatibility, cfg80211 also offers
  * wireless extensions to userspace, but hides them from drivers completely.
  *

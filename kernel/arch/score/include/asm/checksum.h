@@ -1,7 +1,7 @@
 #ifndef _ASM_SCORE_CHECKSUM_H
 #define _ASM_SCORE_CHECKSUM_H
 
-#include <linux/in6.h>
+#include <beep/in6.h>
 #include <asm/uaccess.h>
 
 /*
@@ -77,7 +77,7 @@ static inline __sum16 csum_fold(__wsum sum)
  *	This is a version of ip_compute_csum() optimized for IP headers,
  *	which always checksum on 4 octet boundaries.
  *
- *	By Jorge Cwik <jorge@laser.satlink.net>, adapted for linux by
+ *	By Jorge Cwik <jorge@laser.satlink.net>, adapted for beep by
  *	Arnt Gulbrandsen.
  */
 static inline __sum16 ip_fast_csum(const void *iph, unsigned int ihl)

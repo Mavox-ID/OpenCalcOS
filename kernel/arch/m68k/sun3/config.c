@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/sun3/config.c
+ *  beep/arch/m68k/sun3/config.c
  *
  *  Copyright (C) 1996,1997 Pekka Pietik{inen
  *
@@ -8,14 +8,14 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/seq_file.h>
+#include <beep/tty.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
 
 #include <asm/oplib.h>
 #include <asm/setup.h>
@@ -63,7 +63,7 @@ void __init sun3_init(void)
 	sun3_intreg = (unsigned char *) 0xfe0a000;	/* magic */
 	sun3_disable_interrupts();
 
-	prom_init((void *)LINUX_OPPROM_BEGVM);
+	prom_init((void *)BEEP_OPPROM_BEGVM);
 
 	GET_CONTROL_BYTE(AC_SENABLE,enable_register);
 	enable_register |= 0x50; /* Enable FPU */
@@ -96,7 +96,7 @@ void __init sun3_init(void)
 /* Without this, Bad Things happen when something calls arch_reset. */
 static void sun3_reboot (void)
 {
-	prom_reboot ("vmlinux");
+	prom_reboot ("vmbeep");
 }
 
 static void sun3_halt (void)

@@ -1,8 +1,8 @@
 /*
- * max1619.c - Part of lm_sensors, Linux kernel modules for hardware
+ * max1619.c - Part of lm_sensors, Beep kernel modules for hardware
  *             monitoring
  * Copyright (C) 2003-2004 Oleksij Rempel <bug-track@fisher-privat.net>
- *                         Jean Delvare <khali@linux-fr.org>
+ *                         Jean Delvare <khali@beep-fr.org>
  *
  * Based on the lm90 driver. The MAX1619 is a sensor chip made by Maxim.
  * It reports up to two temperatures (its own plus up to
@@ -26,16 +26,16 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/jiffies.h>
+#include <beep/i2c.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/sysfs.h>
 
 static const unsigned short normal_i2c[] = {
 	0x18, 0x19, 0x1a, 0x29, 0x2a, 0x2b, 0x4c, 0x4d, 0x4e, I2C_CLIENT_END };
@@ -358,6 +358,6 @@ static struct max1619_data *max1619_update_device(struct device *dev)
 module_i2c_driver(max1619_driver);
 
 MODULE_AUTHOR("Oleksij Rempel <bug-track@fisher-privat.net> and "
-	"Jean Delvare <khali@linux-fr.org>");
+	"Jean Delvare <khali@beep-fr.org>");
 MODULE_DESCRIPTION("MAX1619 sensor driver");
 MODULE_LICENSE("GPL");

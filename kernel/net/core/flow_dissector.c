@@ -1,13 +1,13 @@
-#include <linux/skbuff.h>
-#include <linux/export.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/if_vlan.h>
+#include <beep/skbuff.h>
+#include <beep/export.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/if_vlan.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
-#include <linux/if_tunnel.h>
-#include <linux/if_pppox.h>
-#include <linux/ppp_defs.h>
+#include <beep/if_tunnel.h>
+#include <beep/if_pppox.h>
+#include <beep/ppp_defs.h>
 #include <net/flow_keys.h>
 
 /* copy saddr & daddr, possibly using 64bit load/store

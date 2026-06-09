@@ -4,13 +4,13 @@
  * Jeremy Fitzhardinge <jeremy@xensource.com>, XenSource Inc, 2007
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/pm.h>
-#include <linux/memblock.h>
-#include <linux/cpuidle.h>
-#include <linux/cpufreq.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/pm.h>
+#include <beep/memblock.h>
+#include <beep/cpuidle.h>
+#include <beep/cpufreq.h>
 
 #include <asm/elf.h>
 #include <asm/vdso.h>

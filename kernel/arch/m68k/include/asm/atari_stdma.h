@@ -3,7 +3,7 @@
 #define _atari_stdma_h
 
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 
 /***************************** Prototypes *****************************/

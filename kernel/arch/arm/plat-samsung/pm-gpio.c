@@ -1,10 +1,10 @@
 
-/* linux/arch/arm/plat-s3c/pm-gpio.c
+/* beep/arch/arm/plat-s3c/pm-gpio.c
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * S3C series GPIO PM code
  *
@@ -13,11 +13,11 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
 
 #include <plat/gpio-core.h>
 #include <plat/pm.h>

@@ -10,7 +10,7 @@
  * void *memchr(const void *s, int c, size_t n);
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 ENTRY(memchr)
 	tst	r6,r6
 	bt/s	2f

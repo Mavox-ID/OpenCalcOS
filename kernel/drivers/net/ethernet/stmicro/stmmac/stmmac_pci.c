@@ -23,7 +23,7 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 *******************************************************************************/
 
-#include <linux/pci.h>
+#include <beep/pci.h>
 #include "stmmac.h"
 
 struct plat_stmmacenet_data plat_dat;

@@ -1,24 +1,24 @@
 /*
- * linux/arch/m68k/mm/motorola.c
+ * beep/arch/m68k/mm/motorola.c
  *
  * Routines specific to the Motorola MMU, originally from:
- * linux/arch/m68k/init.c
+ * beep/arch/m68k/init.c
  * which are Copyright (C) 1995 Hamish Macdonald
  *
  * Moved 8/20/1999 Sam Creasey
  */
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/gfp.h>
 
 #include <asm/setup.h>
 #include <asm/uaccess.h>

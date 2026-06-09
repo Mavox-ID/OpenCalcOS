@@ -24,10 +24,10 @@
 #ifndef _ASM_X86_CALGARY_H
 #define _ASM_X86_CALGARY_H
 
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/timer.h>
+#include <beep/spinlock.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/timer.h>
 #include <asm/types.h>
 
 struct iommu_table {

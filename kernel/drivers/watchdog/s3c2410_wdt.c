@@ -1,4 +1,4 @@
-/* linux/drivers/char/watchdog/s3c2410_wdt.c
+/* beep/drivers/char/watchdog/s3c2410_wdt.c
  *
  * Copyright (c) 2004 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
@@ -25,22 +25,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/miscdevice.h> /* for MODULE_ALIAS_MISCDEV */
-#include <linux/watchdog.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/cpufreq.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/timer.h>
+#include <beep/miscdevice.h> /* for MODULE_ALIAS_MISCDEV */
+#include <beep/watchdog.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/clk.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
+#include <beep/cpufreq.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/of.h>
 
 #include <mach/map.h>
 

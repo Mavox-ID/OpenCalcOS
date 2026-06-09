@@ -1,6 +1,6 @@
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/bitrev.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/bitrev.h>
 
 MODULE_AUTHOR("Akinobu Mita <akinobu.mita@gmail.com>");
 MODULE_DESCRIPTION("Bit ordering reversal functions");

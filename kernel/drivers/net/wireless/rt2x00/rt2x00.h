@@ -28,17 +28,17 @@
 #ifndef RT2X00_H
 #define RT2X00_H
 
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/skbuff.h>
-#include <linux/workqueue.h>
-#include <linux/firmware.h>
-#include <linux/leds.h>
-#include <linux/mutex.h>
-#include <linux/etherdevice.h>
-#include <linux/input-polldev.h>
-#include <linux/kfifo.h>
-#include <linux/hrtimer.h>
+#include <beep/bitops.h>
+#include <beep/interrupt.h>
+#include <beep/skbuff.h>
+#include <beep/workqueue.h>
+#include <beep/firmware.h>
+#include <beep/leds.h>
+#include <beep/mutex.h>
+#include <beep/etherdevice.h>
+#include <beep/input-polldev.h>
+#include <beep/kfifo.h>
+#include <beep/hrtimer.h>
 
 #include <net/mac80211.h>
 

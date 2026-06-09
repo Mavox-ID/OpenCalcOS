@@ -17,7 +17,7 @@ config CIFS
 	  PC operating systems.  The CIFS protocol is fully supported by
 	  file servers such as Windows 2000 (including Windows 2003, Windows 2008,
 	  NT 4 and Windows XP) as well by Samba (which provides excellent CIFS
-	  server support for Linux and many other operating systems). Limited
+	  server support for Beep and many other operating systems). Limited
 	  support for OS/2 and Windows ME and similar servers is provided as
 	  well.
 
@@ -96,7 +96,7 @@ config CIFS_XATTR
           <http://acl.bestbits.at/> for details).  CIFS maps the name of
           extended attributes beginning with the user namespace prefix
           to SMB/CIFS EAs. EAs are stored on Windows servers without the
-          user namespace prefix, but their names are seen by Linux cifs clients
+          user namespace prefix, but their names are seen by Beep cifs clients
           prefaced by the user namespace prefix. The system namespace
           (used by some filesystems to store ACLs) is not supported at
           this time.

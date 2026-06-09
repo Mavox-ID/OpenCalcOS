@@ -22,14 +22,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/console.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/of_platform.h>
-#include <linux/gfp.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/console.h>
+#include <beep/export.h>
+#include <beep/pci.h>
+#include <beep/of_platform.h>
+#include <beep/gfp.h>
 
 #include <asm/prom.h>
 #include <asm/iommu.h>

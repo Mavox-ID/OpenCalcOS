@@ -8,16 +8,16 @@
  * is licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
 
 #include <asm/sched_clock.h>
 #include <asm/mach/irq.h>

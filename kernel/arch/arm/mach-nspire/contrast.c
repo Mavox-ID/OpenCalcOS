@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-nspire/contrast.c
+ *  beep/arch/arm/mach-nspire/contrast.c
  *
  *  Copyright (C) 2012 Daniel Tang <tangrs@tangrs.id.au>
  *
@@ -8,9 +8,9 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/proc_fs.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/proc_fs.h>
 
 #include <mach/nspire_mmio.h>
 #include <asm/mach-types.h>

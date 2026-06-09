@@ -20,22 +20,22 @@
 // #define	DEBUG			// error path messages, extra info
 // #define	VERBOSE			// more; success messages
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/usb/usbnet.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/workqueue.h>
+#include <beep/mii.h>
+#include <beep/usb.h>
+#include <beep/usb/usbnet.h>
 
 
 /*
  * Prolific PL-2301/PL-2302 driver ... http://www.prolific.com.tw/ 
  *
  * The protocol and handshaking used here should be bug-compatible
- * with the Linux 2.2 "plusb" driver, by Deti Fliegl.
+ * with the Beep 2.2 "plusb" driver, by Deti Fliegl.
  *
  * HEADS UP:  this handshaking isn't all that robust.  This driver
  * gets confused easily if you unplug one end of the cable then

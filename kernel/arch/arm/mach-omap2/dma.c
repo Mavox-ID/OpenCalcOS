@@ -21,14 +21,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
 
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 
 #include "soc.h"
 #include "omap_hwmod.h"

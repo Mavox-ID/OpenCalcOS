@@ -1,5 +1,5 @@
 /*
- * Linux multi-function-device driver (MFD) for the integrated peripherals
+ * Beep multi-function-device driver (MFD) for the integrated peripherals
  * of the VIA VX855 chipset
  *
  * Copyright (C) 2009 VIA Technologies, Inc.
@@ -24,12 +24,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/mfd/core.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/pci.h>
+#include <beep/mfd/core.h>
 
 /* offset into pci config space indicating the 16bit register containing
  * the power management IO space base */

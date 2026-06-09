@@ -24,11 +24,11 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/smp.h>
 #include <asm/bootinfo.h>
 #include <asm/fw/cfe/cfe_api.h>
 #include <asm/fw/cfe/cfe_error.h>
@@ -105,7 +105,7 @@ static __init void prom_init_cmdline(void)
 	static char buf[COMMAND_LINE_SIZE] __initdata;
 
 	/* Get the kernel command line from CFE */
-	if (cfe_getenv("LINUX_CMDLINE", buf, COMMAND_LINE_SIZE) >= 0) {
+	if (cfe_getenv("BEEP_CMDLINE", buf, COMMAND_LINE_SIZE) >= 0) {
 		buf[COMMAND_LINE_SIZE - 1] = 0;
 		strcpy(arcs_cmdline, buf);
 	}

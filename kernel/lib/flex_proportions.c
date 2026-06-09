@@ -32,7 +32,7 @@
  * occurs. This can bit trivially implemented by remembering last period in
  * which something happened with proportion of type j.
  */
-#include <linux/flex_proportions.h>
+#include <beep/flex_proportions.h>
 
 int fprop_global_init(struct fprop_global *p)
 {

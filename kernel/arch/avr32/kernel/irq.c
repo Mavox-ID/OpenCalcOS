@@ -9,12 +9,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel_stat.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/kernel_stat.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/device.h>
 
 /* May be overridden by platform code */
 int __weak nmi_enable(void)

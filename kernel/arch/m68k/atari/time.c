@@ -1,5 +1,5 @@
 /*
- * linux/arch/m68k/atari/time.c
+ * beep/arch/m68k/atari/time.c
  *
  * Atari time and real time clock stuff
  *
@@ -10,14 +10,14 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/mc146818rtc.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/mc146818rtc.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/rtc.h>
+#include <beep/bcd.h>
+#include <beep/delay.h>
+#include <beep/export.h>
 
 #include <asm/atariints.h>
 

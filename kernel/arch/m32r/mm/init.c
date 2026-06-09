@@ -1,25 +1,25 @@
 /*
- *  linux/arch/m32r/mm/init.c
+ *  beep/arch/m32r/mm/init.c
  *
  *  Copyright (c) 2001, 2002  Hitoshi Yamamoto
  *
  *  Some code taken from sh version.
  *    Copyright (C) 1999  Niibe Yutaka
- *    Based on linux/arch/i386/mm/init.c:
+ *    Based on beep/arch/i386/mm/init.c:
  *      Copyright (C) 1995  Linus Torvalds
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/bootmem.h>
-#include <linux/swap.h>
-#include <linux/highmem.h>
-#include <linux/bitops.h>
-#include <linux/nodemask.h>
-#include <linux/pfn.h>
-#include <linux/gfp.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/bootmem.h>
+#include <beep/swap.h>
+#include <beep/highmem.h>
+#include <beep/bitops.h>
+#include <beep/nodemask.h>
+#include <beep/pfn.h>
+#include <beep/gfp.h>
 #include <asm/types.h>
 #include <asm/processor.h>
 #include <asm/page.h>

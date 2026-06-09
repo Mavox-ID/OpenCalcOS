@@ -1,7 +1,7 @@
 /*
     Samsung S5H1411 VSB/QAM demodulator driver
 
-    Copyright (C) 2008 Steven Toth <stoth@linuxtv.org>
+    Copyright (C) 2008 Steven Toth <stoth@beeptv.org>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -22,7 +22,7 @@
 #ifndef __S5H1411_H__
 #define __S5H1411_H__
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 #define S5H1411_I2C_TOP_ADDR (0x32 >> 1)
 #define S5H1411_I2C_QAM_ADDR (0x34 >> 1)

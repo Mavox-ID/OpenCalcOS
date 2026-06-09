@@ -6,7 +6,7 @@
  *
  *  Contact: support@reiner-sct.com (see MAINTAINERS)
  *
- *  This program is largely derived from work by the linux-usb group
+ *  This program is largely derived from work by the beep-usb group
  *  and associated source files.  Please see the usb/serial files for
  *  individual credits and copyrights.
  *
@@ -24,22 +24,22 @@
  *  Please note that later models of the cyberjack reader family are
  *  supported by a libusb-based userspace device driver.
  *
- *  Homepage: http://www.reiner-sct.de/support/treiber_cyberjack.php#linux
+ *  Homepage: http://www.reiner-sct.de/support/treiber_cyberjack.php#beep
  */
 
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/uaccess.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
 
 #define CYBERJACK_LOCAL_BUF_SIZE 32
 

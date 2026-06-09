@@ -38,8 +38,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/unistd.h>
-#include <linux/time.h>
+#include <beep/unistd.h>
+#include <beep/time.h>
 
 #define SYSCALL_MAP_SIZE      ((__NR_syscalls + 31) / 32)
 

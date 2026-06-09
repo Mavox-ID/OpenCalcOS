@@ -6,24 +6,24 @@
  * Author(s): Peter Oberparleiter <Peter.Oberparleiter@de.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/timer.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/major.h>
-#include <linux/console.h>
-#include <linux/kdev_t.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
+#include <beep/wait.h>
+#include <beep/timer.h>
+#include <beep/kernel.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/major.h>
+#include <beep/console.h>
+#include <beep/kdev_t.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/reboot.h>
+#include <beep/slab.h>
 
 #include <asm/uaccess.h>
 #include "sclp.h"
@@ -668,7 +668,7 @@ static const struct tty_operations sclp_vt220_ops = {
 };
 
 /*
- * Register driver with SCLP and Linux and initialize internal tty structures.
+ * Register driver with SCLP and Beep and initialize internal tty structures.
  */
 static int __init sclp_vt220_tty_init(void)
 {
@@ -818,7 +818,7 @@ sclp_vt220_con_init(void)
 	rc = __sclp_vt220_init(MAX_CONSOLE_PAGES);
 	if (rc)
 		return rc;
-	/* Attach linux console */
+	/* Attach beep console */
 	atomic_notifier_chain_register(&panic_notifier_list, &on_panic_nb);
 	register_reboot_notifier(&on_reboot_nb);
 	register_console(&sclp_vt220_console);

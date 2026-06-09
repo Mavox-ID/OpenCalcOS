@@ -24,26 +24,26 @@
  * request that the application has is cleaned up when closes the file
  * pointer or exits the pm_qos_object will get an opportunity to clean up.
  *
- * Mark Gross <mgross@linux.intel.com>
+ * Mark Gross <mgross@beep.intel.com>
  */
 
 /*#define DEBUG*/
 
-#include <linux/pm_qos.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <beep/pm_qos.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/fs.h>
+#include <beep/device.h>
+#include <beep/miscdevice.h>
+#include <beep/string.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
 
-#include <linux/uaccess.h>
-#include <linux/export.h>
+#include <beep/uaccess.h>
+#include <beep/export.h>
 
 /*
  * locking rule: all changes to constraints or notifiers lists

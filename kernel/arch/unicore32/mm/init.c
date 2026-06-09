@@ -1,5 +1,5 @@
 /*
- *  linux/arch/unicore32/mm/init.c
+ *  beep/arch/unicore32/mm/init.c
  *
  *  Copyright (C) 2010 GUAN Xue-tao
  *
@@ -7,20 +7,20 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/swap.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/mman.h>
-#include <linux/nodemask.h>
-#include <linux/initrd.h>
-#include <linux/highmem.h>
-#include <linux/gfp.h>
-#include <linux/memblock.h>
-#include <linux/sort.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/swap.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/mman.h>
+#include <beep/nodemask.h>
+#include <beep/initrd.h>
+#include <beep/highmem.h>
+#include <beep/gfp.h>
+#include <beep/memblock.h>
+#include <beep/sort.h>
+#include <beep/dma-mapping.h>
+#include <beep/export.h>
 
 #include <asm/sections.h>
 #include <asm/setup.h>
@@ -302,7 +302,7 @@ void __init bootmem_init(void)
 	high_memory = __va((max_low << PAGE_SHIFT) - 1) + 1;
 
 	/*
-	 * This doesn't seem to be used by the Linux memory manager any
+	 * This doesn't seem to be used by the Beep memory manager any
 	 * more, but is used by ll_rw_block.  If we can get rid of it, we
 	 * also get rid of some of the stuff above as well.
 	 *

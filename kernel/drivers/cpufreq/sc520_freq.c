@@ -13,14 +13,14 @@
  *	2005-03-30: - initial revision
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
-#include <linux/delay.h>
-#include <linux/cpufreq.h>
-#include <linux/timex.h>
-#include <linux/io.h>
+#include <beep/delay.h>
+#include <beep/cpufreq.h>
+#include <beep/timex.h>
+#include <beep/io.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/msr.h>

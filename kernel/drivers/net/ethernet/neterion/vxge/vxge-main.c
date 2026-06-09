@@ -43,19 +43,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/tcp.h>
+#include <beep/bitops.h>
+#include <beep/if_vlan.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/tcp.h>
 #include <net/ip.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/firmware.h>
-#include <linux/net_tstamp.h>
-#include <linux/prefetch.h>
-#include <linux/module.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/firmware.h>
+#include <beep/net_tstamp.h>
+#include <beep/prefetch.h>
+#include <beep/module.h>
 #include "vxge-main.h"
 #include "vxge-reg.h"
 
@@ -1804,7 +1804,7 @@ static void vxge_reset(struct work_struct *work)
  * @budget: Number of packets budgeted to be processed in this iteration.
  *
  * This function comes into picture only if Receive side is being handled
- * through polling (called NAPI in linux). It mostly does what the normal
+ * through polling (called NAPI in beep). It mostly does what the normal
  * Rx interrupt handler does in terms of descriptor and packet processing
  * but not in an interrupt context. Also it will process a specified number
  * of packets at most in one iteration. This value is passed down by the

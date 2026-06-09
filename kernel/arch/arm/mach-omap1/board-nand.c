@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/board-nand.c
+ * beep/arch/arm/mach-omap1/board-nand.c
  *
  * Common OMAP1 board NAND code
  *
@@ -13,10 +13,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
 
 #include "common.h"
 

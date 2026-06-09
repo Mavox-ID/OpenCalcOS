@@ -5,20 +5,20 @@
  *
  *  Copyright (C) 2001 Russell King, All Rights Reserved.
  *
- *  Ported to the Linux PnP Layer - (C) Adam Belay.
+ *  Ported to the Beep PnP Layer - (C) Adam Belay.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pnp.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/serial_core.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/pnp.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/serial_core.h>
+#include <beep/bitops.h>
 
 #include <asm/byteorder.h>
 

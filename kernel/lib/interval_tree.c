@@ -1,6 +1,6 @@
-#include <linux/init.h>
-#include <linux/interval_tree.h>
-#include <linux/interval_tree_generic.h>
+#include <beep/init.h>
+#include <beep/interval_tree.h>
+#include <beep/interval_tree_generic.h>
 
 #define START(node) ((node)->start)
 #define LAST(node)  ((node)->last)

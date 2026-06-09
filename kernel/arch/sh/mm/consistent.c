@@ -9,14 +9,14 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma-debug.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/gfp.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/dma-debug.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
 #include <asm/cacheflush.h>
 #include <asm/addrspace.h>
 

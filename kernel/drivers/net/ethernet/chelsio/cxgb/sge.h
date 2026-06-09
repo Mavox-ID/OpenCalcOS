@@ -39,8 +39,8 @@
 #ifndef _CXGB_SGE_H_
 #define _CXGB_SGE_H_
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
 #include <asm/byteorder.h>
 
 struct sge_intr_counts {

@@ -10,9 +10,9 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/dma-mapping.h>
 #include <asm/cacheflush.h>
 #include <asm/glue-df.h>
 #include <asm/glue-pf.h>
@@ -21,7 +21,7 @@
 #include <asm/memory.h>
 #include <asm/procinfo.h>
 #include <asm/hardware/cache-l2x0.h>
-#include <linux/kbuild.h>
+#include <beep/kbuild.h>
 
 /*
  * Make sure that the compiler and target are compatible.

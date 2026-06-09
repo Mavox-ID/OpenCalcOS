@@ -10,8 +10,8 @@
  *
  * ============================================================================
  */
-#include <linux/usb.h>
-#include <linux/slab.h>
+#include <beep/usb.h>
+#include <beep/slab.h>
 
 #include "core.h"
 #include "wb35rx_f.h"

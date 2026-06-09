@@ -9,15 +9,15 @@
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_clock.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/pm_runtime.h>
+#include <beep/pm_clock.h>
+#include <beep/platform_device.h>
+#include <beep/mutex.h>
+#include <beep/clk.h>
+#include <beep/err.h>
 
 #include "soc.h"
 

@@ -19,22 +19,22 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/delay.h>
+#include <beep/workqueue.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/mutex.h>
+#include <beep/platform_device.h>
 
-#include <linux/i2c/tps65010.h>
+#include <beep/i2c/tps65010.h>
 
-#include <linux/gpio.h>
+#include <beep/gpio.h>
 
 
 /*-------------------------------------------------------------------------*/

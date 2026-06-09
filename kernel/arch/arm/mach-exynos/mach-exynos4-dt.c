@@ -11,8 +11,8 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/of_platform.h>
-#include <linux/serial_core.h>
+#include <beep/of_platform.h>
+#include <beep/serial_core.h>
 
 #include <asm/mach/arch.h>
 #include <asm/hardware/gic.h>

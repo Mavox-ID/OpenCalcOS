@@ -21,10 +21,10 @@
  * Copyright (C) 1995, 1996, 1997 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/seq_file.h>
-#include <linux/module.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/nfsd/stats.h>
+#include <beep/seq_file.h>
+#include <beep/module.h>
+#include <beep/sunrpc/stats.h>
+#include <beep/nfsd/stats.h>
 #include <net/net_namespace.h>
 
 #include "nfsd.h"

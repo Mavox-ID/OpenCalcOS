@@ -1,6 +1,6 @@
 /**
  * aops.c - NTFS kernel address space operations and page cache handling.
- *	    Part of the Linux-NTFS project.
+ *	    Part of the Beep-NTFS project.
  *
  * Copyright (c) 2001-2007 Anton Altaparmakov
  * Copyright (c) 2002 Richard Russon
@@ -16,20 +16,20 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/bit_spinlock.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/gfp.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/swap.h>
+#include <beep/buffer_head.h>
+#include <beep/writeback.h>
+#include <beep/bit_spinlock.h>
 
 #include "aops.h"
 #include "attrib.h"

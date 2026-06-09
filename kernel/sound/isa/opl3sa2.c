@@ -19,13 +19,13 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
-#include <linux/pnp.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/isa.h>
+#include <beep/interrupt.h>
+#include <beep/pm.h>
+#include <beep/pnp.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/wss.h>
 #include <sound/mpu401.h>

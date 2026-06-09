@@ -16,8 +16,8 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/mm.h>
-#include <linux/err.h>
+#include <beep/mm.h>
+#include <beep/err.h>
 
 static unsigned long kernel_virtual_offset;
 static int is_xencomm_initialized;

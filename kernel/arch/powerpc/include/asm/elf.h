@@ -9,7 +9,7 @@
 #ifndef _ASM_POWERPC_ELF_H
 #define _ASM_POWERPC_ELF_H
 
-#include <linux/sched.h>	/* for task_struct */
+#include <beep/sched.h>	/* for task_struct */
 #include <asm/page.h>
 #include <asm/string.h>
 #include <uapi/asm/elf.h>
@@ -89,8 +89,8 @@ do {								\
 		set_thread_flag(TIF_32BIT);			\
 	else							\
 		clear_thread_flag(TIF_32BIT);			\
-	if (personality(current->personality) != PER_LINUX32)	\
-		set_personality(PER_LINUX |			\
+	if (personality(current->personality) != PER_BEEP32)	\
+		set_personality(PER_BEEP |			\
 			(current->personality & (~PER_MASK)));	\
 } while (0)
 /*
@@ -104,7 +104,7 @@ do {								\
 		(exec_stk == EXSTACK_DEFAULT) : 0)
 #else 
 # define SET_PERSONALITY(ex) \
-  set_personality(PER_LINUX | (current->personality & (~PER_MASK)))
+  set_personality(PER_BEEP | (current->personality & (~PER_MASK)))
 # define elf_read_implies_exec(ex, exec_stk) (exec_stk == EXSTACK_DEFAULT)
 #endif /* __powerpc64__ */
 
@@ -114,8 +114,8 @@ extern int ucache_bsize;
 
 /* vDSO has arch_setup_additional_pages */
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES
-struct linux_binprm;
-extern int arch_setup_additional_pages(struct linux_binprm *bprm,
+struct beep_binprm;
+extern int arch_setup_additional_pages(struct beep_binprm *bprm,
 				       int uses_interp);
 #define VDSO_AUX_ENT(a,b) NEW_AUX_ENT(a,b)
 

@@ -21,10 +21,10 @@
    02110-1301, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/hardirq.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/hardirq.h>
+#include <beep/init.h>
 
 #include "em28xx.h"
 

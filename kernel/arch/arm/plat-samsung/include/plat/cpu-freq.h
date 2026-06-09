@@ -1,7 +1,7 @@
 /* arch/arm/plat-samsung/include/plat/cpu-freq.h
  *
  * Copyright (c) 2006-2007 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C CPU frequency scaling support - driver and board
@@ -11,7 +11,7 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/cpufreq.h>
+#include <beep/cpufreq.h>
 
 struct s3c_cpufreq_info;
 struct s3c_cpufreq_board;

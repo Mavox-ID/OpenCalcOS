@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/tlbv4.S
+ *  beep/arch/arm/mm/tlbv4.S
  *
  *  Copyright (C) 1997-2002 Russell King
  *
@@ -12,8 +12,8 @@
  *
  * Processors: ARM720T
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/asm-offsets.h>
 #include <asm/tlbflush.h>
 #include "proc-macros.S"

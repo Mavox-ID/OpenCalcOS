@@ -23,11 +23,11 @@
  */
 
 #include <sound/asound.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/wait.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
 
 #if defined(CONFIG_SND_SEQUENCER) || defined(CONFIG_SND_SEQUENCER_MODULE)
 #include <sound/seq_device.h>

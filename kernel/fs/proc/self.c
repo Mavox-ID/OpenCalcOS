@@ -1,6 +1,6 @@
-#include <linux/proc_fs.h>
-#include <linux/sched.h>
-#include <linux/namei.h>
+#include <beep/proc_fs.h>
+#include <beep/sched.h>
+#include <beep/namei.h>
 
 /*
  * /proc/self:

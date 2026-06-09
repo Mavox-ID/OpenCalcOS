@@ -1,6 +1,6 @@
 /*    syscall table for HPUX specific syscalls
  *
- *    Linux/PA-RISC Project (http://www.parisc-linux.org/)
+ *    Beep/PA-RISC Project (http://www.parisc-beep.org/)
  *    Copyright (C) 1999 Matthew Wilcox <willy at debian . org>
  *
  *    This program is free software; you can redistribute it and/or modify
@@ -20,8 +20,8 @@
 
 #include <asm/unistd.h>
 #include <asm/assembly.h>
-#include <linux/sys.h>
-#include <linux/linkage.h>
+#include <beep/sys.h>
+#include <beep/linkage.h>
 
 #define ENTRY_NAME(_name_) ASM_ULONG_INSN _name_
 

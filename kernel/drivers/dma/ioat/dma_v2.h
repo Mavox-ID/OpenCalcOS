@@ -21,8 +21,8 @@
 #ifndef IOATDMA_V2_H
 #define IOATDMA_V2_H
 
-#include <linux/dmaengine.h>
-#include <linux/circ_buf.h>
+#include <beep/dmaengine.h>
+#include <beep/circ_buf.h>
 #include "dma.h"
 #include "hw.h"
 

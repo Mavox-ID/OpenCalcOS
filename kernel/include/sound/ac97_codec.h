@@ -25,9 +25,9 @@
  *
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/workqueue.h>
+#include <beep/bitops.h>
+#include <beep/device.h>
+#include <beep/workqueue.h>
 #include <sound/pcm.h>
 #include <sound/control.h>
 #include <sound/info.h>

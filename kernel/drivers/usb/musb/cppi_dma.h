@@ -3,10 +3,10 @@
 #ifndef _CPPI_DMA_H_
 #define _CPPI_DMA_H_
 
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/dmapool.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/dmapool.h>
 
 #include "musb_dma.h"
 #include "musb_core.h"

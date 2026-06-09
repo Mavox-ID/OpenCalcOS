@@ -9,7 +9,7 @@
  * is licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 #include <mach/platform.h>
 #include <mach/hardware.h>

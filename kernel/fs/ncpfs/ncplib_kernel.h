@@ -13,13 +13,13 @@
 #define _NCPLIB_H
 
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/fcntl.h>
-#include <linux/pagemap.h>
+#include <beep/fs.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/fcntl.h>
+#include <beep/pagemap.h>
 
 #include <asm/uaccess.h>
 #include <asm/byteorder.h>
@@ -27,9 +27,9 @@
 #include <asm/string.h>
 
 #ifdef CONFIG_NCPFS_NLS
-#include <linux/nls.h>
+#include <beep/nls.h>
 #else
-#include <linux/ctype.h>
+#include <beep/ctype.h>
 #endif /* CONFIG_NCPFS_NLS */
 
 #define NCP_MIN_SYMLINK_SIZE	8

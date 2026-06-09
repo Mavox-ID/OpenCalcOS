@@ -17,7 +17,7 @@
  |    other processes using the emulator while swapping is in progress.      |
  +---------------------------------------------------------------------------*/
 
-#include <linux/signal.h>
+#include <beep/signal.h>
 
 #include <asm/uaccess.h>
 

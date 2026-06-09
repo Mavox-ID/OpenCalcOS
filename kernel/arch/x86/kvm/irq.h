@@ -22,10 +22,10 @@
 #ifndef __IRQ_H
 #define __IRQ_H
 
-#include <linux/mm_types.h>
-#include <linux/hrtimer.h>
-#include <linux/kvm_host.h>
-#include <linux/spinlock.h>
+#include <beep/mm_types.h>
+#include <beep/hrtimer.h>
+#include <beep/kvm_host.h>
+#include <beep/spinlock.h>
 
 #include "iodev.h"
 #include "ioapic.h"

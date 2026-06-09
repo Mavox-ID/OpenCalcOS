@@ -1,23 +1,23 @@
 /*
  * contains various random system calls that have a non-standard
- * calling sequence on the Linux/Blackfin platform.
+ * calling sequence on the Beep/Blackfin platform.
  *
  * Copyright 2004-2009 Analog Devices Inc.
  *
  * Licensed under the GPL-2 or later
  */
 
-#include <linux/spinlock.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/ipc.h>
-#include <linux/unistd.h>
+#include <beep/spinlock.h>
+#include <beep/sem.h>
+#include <beep/msg.h>
+#include <beep/shm.h>
+#include <beep/syscalls.h>
+#include <beep/mman.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/uaccess.h>
+#include <beep/ipc.h>
+#include <beep/unistd.h>
 
 #include <asm/cacheflush.h>
 #include <asm/dma.h>
@@ -40,8 +40,8 @@ asmlinkage void *sys_dma_memcpy(void *dest, const void *src, size_t len)
 }
 
 #if defined(CONFIG_FB) || defined(CONFIG_FB_MODULE)
-#include <linux/fb.h>
-#include <linux/export.h>
+#include <beep/fb.h>
+#include <beep/export.h>
 unsigned long get_fb_unmapped_area(struct file *filp, unsigned long orig_addr,
 	unsigned long len, unsigned long pgoff, unsigned long flags)
 {

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-realview/core.h
+ *  beep/arch/arm/mach-realview/core.h
  *
  *  Copyright (C) 2004 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd
@@ -22,8 +22,8 @@
 #ifndef __ASM_ARCH_REALVIEW_H
 #define __ASM_ARCH_REALVIEW_H
 
-#include <linux/amba/bus.h>
-#include <linux/io.h>
+#include <beep/amba/bus.h>
+#include <beep/io.h>
 
 #include <asm/setup.h>
 

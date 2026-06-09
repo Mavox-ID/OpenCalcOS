@@ -5,7 +5,7 @@
  * Authors:	Johannes Weiner <hannes@cmpxchg.org>
  *		Oskar Schirmer <oskar@scara.com>
  */
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/irq.h>
 #include <variant/hardware.h>
 

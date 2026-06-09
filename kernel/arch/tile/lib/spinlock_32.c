@@ -12,8 +12,8 @@
  *   more details.
  */
 
-#include <linux/spinlock.h>
-#include <linux/module.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
 #include <asm/processor.h>
 #include <arch/spr_def.h>
 

@@ -1,23 +1,23 @@
 /*
- *	linux/mm/filemap_xip.c
+ *	beep/mm/filemap_xip.c
  *
  * Copyright (C) 2005 IBM Corporation
  * Author: Carsten Otte <cotte@de.ibm.com>
  *
- * derived from linux/mm/filemap.c - Copyright (C) Linus Torvalds
+ * derived from beep/mm/filemap.c - Copyright (C) Linus Torvalds
  *
  */
 
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/export.h>
-#include <linux/uio.h>
-#include <linux/rmap.h>
-#include <linux/mmu_notifier.h>
-#include <linux/sched.h>
-#include <linux/seqlock.h>
-#include <linux/mutex.h>
-#include <linux/gfp.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/export.h>
+#include <beep/uio.h>
+#include <beep/rmap.h>
+#include <beep/mmu_notifier.h>
+#include <beep/sched.h>
+#include <beep/seqlock.h>
+#include <beep/mutex.h>
+#include <beep/gfp.h>
 #include <asm/tlbflush.h>
 #include <asm/io.h>
 

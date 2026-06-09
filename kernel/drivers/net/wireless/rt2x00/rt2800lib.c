@@ -34,10 +34,10 @@
 	Abstract: rt2800 generic device routines.
  */
 
-#include <linux/crc-ccitt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/crc-ccitt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #include "rt2x00.h"
 #include "rt2800lib.h"

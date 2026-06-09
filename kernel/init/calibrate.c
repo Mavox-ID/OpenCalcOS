@@ -4,12 +4,12 @@
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/jiffies.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/timex.h>
-#include <linux/smp.h>
-#include <linux/percpu.h>
+#include <beep/jiffies.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/timex.h>
+#include <beep/smp.h>
+#include <beep/percpu.h>
 
 unsigned long lpj_fine;
 unsigned long preset_lpj;

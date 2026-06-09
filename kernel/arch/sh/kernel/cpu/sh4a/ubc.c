@@ -9,10 +9,10 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
 #include <asm/hw_breakpoint.h>
 
 #define UBC_CBR(idx)	(0xff200000 + (0x20 * idx))

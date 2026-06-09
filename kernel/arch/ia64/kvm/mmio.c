@@ -23,7 +23,7 @@
  *
  */
 
-#include <linux/kvm_host.h>
+#include <beep/kvm_host.h>
 
 #include "vcpu.h"
 

@@ -11,14 +11,14 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
-#include <linux/slab.h>
-#include <linux/usb/ehci_pdriver.h>
-#include <linux/usb/ohci_pdriver.h>
+#include <beep/dma-mapping.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/serial_8250.h>
+#include <beep/slab.h>
+#include <beep/usb/ehci_pdriver.h>
+#include <beep/usb/ohci_pdriver.h>
 
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/au1xxx_dbdma.h>

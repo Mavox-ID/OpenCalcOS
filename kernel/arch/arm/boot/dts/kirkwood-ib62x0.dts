@@ -87,12 +87,12 @@
 		#size-cells = <0>;
 		button@1 {
 			label = "USB Copy";
-			linux,code = <133>;
+			beep,code = <133>;
 			gpios = <&gpio0 29 1>;
 		};
 		button@2 {
 			label = "Reset";
-			linux,code = <0x198>;
+			beep,code = <0x198>;
 			gpios = <&gpio0 28 1>;
 		};
 	};
@@ -102,7 +102,7 @@
 		green-os {
 			label = "ib62x0:green:os";
 			gpios = <&gpio0 25 0>;
-			linux,default-trigger = "default-on";
+			beep,default-trigger = "default-on";
 		};
 		red-os {
 			label = "ib62x0:red:os";

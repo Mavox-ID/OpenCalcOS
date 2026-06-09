@@ -19,8 +19,8 @@
  *	Free Software Foundation <licensing@fsf.org>
  */
 
-#include <linux/kobject.h>
-#include <linux/device.h>
+#include <beep/kobject.h>
+#include <beep/device.h>
 
 #include "exofs.h"
 

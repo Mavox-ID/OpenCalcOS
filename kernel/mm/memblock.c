@@ -10,15 +10,15 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/poison.h>
-#include <linux/pfn.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/memblock.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/poison.h>
+#include <beep/pfn.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/memblock.h>
 
 static struct memblock_region memblock_memory_init_regions[INIT_MEMBLOCK_REGIONS] __initdata_memblock;
 static struct memblock_region memblock_reserved_init_regions[INIT_MEMBLOCK_REGIONS] __initdata_memblock;

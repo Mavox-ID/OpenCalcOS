@@ -11,14 +11,14 @@
 #ifndef __USBIP_VHCI_H
 #define __USBIP_VHCI_H
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/wait.h>
+#include <beep/device.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/sysfs.h>
+#include <beep/types.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
+#include <beep/wait.h>
 
 struct vhci_device {
 	struct usb_device *udev;

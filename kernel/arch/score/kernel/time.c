@@ -23,8 +23,8 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
+#include <beep/clockchips.h>
+#include <beep/interrupt.h>
 
 #include <asm/scoreregs.h>
 

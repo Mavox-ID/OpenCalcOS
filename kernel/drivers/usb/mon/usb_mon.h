@@ -7,10 +7,10 @@
 #ifndef __USB_MON_H
 #define __USB_MON_H
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/kref.h>
-/* #include <linux/usb.h> */	/* We use struct pointers only in this header */
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/kref.h>
+/* #include <beep/usb.h> */	/* We use struct pointers only in this header */
 
 #define TAG "usbmon"
 

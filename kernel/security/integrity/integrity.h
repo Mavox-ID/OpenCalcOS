@@ -11,8 +11,8 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/integrity.h>
+#include <beep/types.h>
+#include <beep/integrity.h>
 #include <crypto/sha.h>
 
 /* iint action cache flags */

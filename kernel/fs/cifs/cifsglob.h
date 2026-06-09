@@ -19,15 +19,15 @@
 #ifndef _CIFS_GLOB_H
 #define _CIFS_GLOB_H
 
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/slab.h>
-#include <linux/mempool.h>
-#include <linux/workqueue.h>
+#include <beep/in.h>
+#include <beep/in6.h>
+#include <beep/slab.h>
+#include <beep/mempool.h>
+#include <beep/workqueue.h>
 #include "cifs_fs_sb.h"
 #include "cifsacl.h"
 #include <crypto/internal/hash.h>
-#include <linux/scatterlist.h>
+#include <beep/scatterlist.h>
 #ifdef CONFIG_CIFS_SMB2
 #include "smb2pdu.h"
 #endif
@@ -221,7 +221,7 @@ struct smb_version_operations {
 	unsigned int (*read_data_offset)(char *);
 	/* data length from read response message */
 	unsigned int (*read_data_length)(char *);
-	/* map smb to linux error */
+	/* map smb to beep error */
 	int (*map_error)(char *, bool);
 	/* find mid corresponding to the response message */
 	struct mid_q_entry * (*find_mid)(struct TCP_Server_Info *, char *);
@@ -401,8 +401,8 @@ struct smb_vol {
 	char source_rfc1001_name[RFC1001_NAME_LEN_WITH_NULL]; /* clnt nb name */
 	char target_rfc1001_name[RFC1001_NAME_LEN_WITH_NULL]; /* srvr nb name */
 	uid_t cred_uid;
-	uid_t linux_uid;
-	gid_t linux_gid;
+	uid_t beep_uid;
+	gid_t beep_gid;
 	uid_t backupuid;
 	gid_t backupgid;
 	umode_t file_mode;
@@ -425,7 +425,7 @@ struct smb_vol {
 	bool strict_io:1; /* strict cache behavior */
 	bool remap:1;      /* set to remap seven reserved chars in filenames */
 	bool posix_paths:1; /* unset to not ask for posix pathnames. */
-	bool no_linux_ext:1;
+	bool no_beep_ext:1;
 	bool sfu_emul:1;
 	bool nullauth:1;   /* attempt to authenticate with null user */
 	bool nocase:1;     /* request case insensitive filenames */
@@ -703,7 +703,7 @@ struct cifs_ses {
 	char *serverNOS;	/* name of network operating system of server */
 	char *serverDomain;	/* security realm of server */
 	__u64 Suid;		/* remote smb uid  */
-	uid_t linux_uid;        /* overriding owner of files on the mount */
+	uid_t beep_uid;        /* overriding owner of files on the mount */
 	uid_t cred_uid;		/* owner of credentials */
 	unsigned int capabilities;
 	char serverName[SERVER_NAME_LEN_WITH_NULL * 2];	/* BB make bigger for
@@ -808,7 +808,7 @@ struct cifs_tcon {
 	bool retry:1;
 	bool nocase:1;
 	bool seal:1;      /* transport encryption for this mounted share */
-	bool unix_ext:1;  /* if false disable Linux extensions to CIFS protocol
+	bool unix_ext:1;  /* if false disable Beep extensions to CIFS protocol
 				for this mount even if server would support */
 	bool local_lease:1; /* check leases (only) on local system not remote */
 	bool broken_posix_open; /* e.g. Samba server versions < 3.3.2, 3.2.9 */
@@ -1457,7 +1457,7 @@ GLOBAL_EXTERN unsigned int lookupCacheEnabled;
 GLOBAL_EXTERN unsigned int global_secflags;	/* if on, session setup sent
 				with more secure ntlmssp2 challenge/resp */
 GLOBAL_EXTERN unsigned int sign_CIFS_PDUs;  /* enable smb packet signing */
-GLOBAL_EXTERN unsigned int linuxExtEnabled;/*enable Linux/Unix CIFS extensions*/
+GLOBAL_EXTERN unsigned int beepExtEnabled;/*enable Beep/Unix CIFS extensions*/
 GLOBAL_EXTERN unsigned int CIFSMaxBufSize;  /* max size not including hdr */
 GLOBAL_EXTERN unsigned int cifs_min_rcv;    /* min size of big ntwrk buf pool */
 GLOBAL_EXTERN unsigned int cifs_min_small;  /* min size of small buf pool */

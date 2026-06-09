@@ -1,7 +1,7 @@
 /*
  * TTUSB DEC Driver
  *
- * Copyright (C) 2003-2004 Alex Woods <linux-dvb@giblets.org>
+ * Copyright (C) 2003-2004 Alex Woods <beep-dvb@giblets.org>
  * IR support by Peter Beutner <p.beutner@gmx.net>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -20,19 +20,19 @@
  *
  */
 
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/usb.h>
-#include <linux/interrupt.h>
-#include <linux/firmware.h>
-#include <linux/crc32.h>
-#include <linux/init.h>
-#include <linux/input.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/usb.h>
+#include <beep/interrupt.h>
+#include <beep/firmware.h>
+#include <beep/crc32.h>
+#include <beep/init.h>
+#include <beep/input.h>
 
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 
 #include "dmxdev.h"
 #include "dvb_demux.h"
@@ -1758,7 +1758,7 @@ static struct usb_driver ttusb_dec_driver = {
 
 module_usb_driver(ttusb_dec_driver);
 
-MODULE_AUTHOR("Alex Woods <linux-dvb@giblets.org>");
+MODULE_AUTHOR("Alex Woods <beep-dvb@giblets.org>");
 MODULE_DESCRIPTION(DRIVER_NAME);
 MODULE_LICENSE("GPL");
 MODULE_DEVICE_TABLE(usb, ttusb_dec_table);

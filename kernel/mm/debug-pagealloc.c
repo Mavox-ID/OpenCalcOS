@@ -1,10 +1,10 @@
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/page-debug-flags.h>
-#include <linux/poison.h>
-#include <linux/ratelimit.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/page-debug-flags.h>
+#include <beep/poison.h>
+#include <beep/ratelimit.h>
 
 static inline void set_page_poison(struct page *page)
 {

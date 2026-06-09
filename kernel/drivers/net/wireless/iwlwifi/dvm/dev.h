@@ -19,7 +19,7 @@
  * file called LICENSE.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel Beep Wireless <ilw@beep.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
@@ -31,12 +31,12 @@
 #ifndef __iwl_dev_h__
 #define __iwl_dev_h__
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/wait.h>
+#include <beep/leds.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
 
 #include "iwl-fw.h"
 #include "iwl-eeprom-parse.h"

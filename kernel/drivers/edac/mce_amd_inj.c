@@ -10,10 +10,10 @@
  *			Advanced Micro Devices Inc.
  */
 
-#include <linux/kobject.h>
-#include <linux/device.h>
-#include <linux/edac.h>
-#include <linux/module.h>
+#include <beep/kobject.h>
+#include <beep/device.h>
+#include <beep/edac.h>
+#include <beep/module.h>
 #include <asm/mce.h>
 
 #include "mce_amd.h"

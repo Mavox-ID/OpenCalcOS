@@ -1,4 +1,4 @@
-/* EtherLinkXL.c: A 3Com EtherLink PCI III/XL ethernet driver for linux. */
+/* EtherLinkXL.c: A 3Com EtherLink PCI III/XL ethernet driver for beep. */
 /*
 	Written 1996-1999 by Donald Becker.
 
@@ -70,26 +70,26 @@ static int vortex_debug = VORTEX_DEBUG;
 static int vortex_debug = 1;
 #endif
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/mii.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/highmem.h>
-#include <linux/eisa.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/errno.h>
+#include <beep/in.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/mii.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/ethtool.h>
+#include <beep/highmem.h>
+#include <beep/eisa.h>
+#include <beep/bitops.h>
+#include <beep/jiffies.h>
+#include <beep/gfp.h>
 #include <asm/irq.h>			/* For nr_irqs only. */
 #include <asm/io.h>
 #include <asm/uaccess.h>
@@ -99,7 +99,7 @@ static int vortex_debug = 1;
 
 #define RUN_AT(x) (jiffies + (x))
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 
 static const char version[] =
@@ -140,7 +140,7 @@ versions of the FastEtherLink cards.  The supported product IDs are
 
 The related ISA 3c515 is supported with a separate driver, 3c515.c, included
 with the kernel source or available from
-    cesdis.gsfc.nasa.gov:/pub/linux/drivers/3c515.html
+    cesdis.gsfc.nasa.gov:/pub/beep/drivers/3c515.html
 
 II. Board-specific settings
 

@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5pc100/include/mach/regs-clock.h
+/* beep/arch/arm/mach-s5pc100/include/mach/regs-clock.h
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/

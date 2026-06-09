@@ -14,15 +14,15 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/jiffies.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/jiffies.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 
-#include <linux/firmware.h>
+#include <beep/firmware.h>
 
 #include "usb.h"
 #include "transport.h"

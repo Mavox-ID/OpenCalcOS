@@ -10,9 +10,9 @@
  * Driver for AMCC QT202x SFP+ and XFP adapters; see www.amcc.com for details
  */
 
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
+#include <beep/slab.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
 #include "efx.h"
 #include "mdio_10g.h"
 #include "phy.h"

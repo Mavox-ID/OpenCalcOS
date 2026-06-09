@@ -15,17 +15,17 @@
  *  - Digital microphone support.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/pm.h>
+#include <beep/i2c.h>
+#include <beep/regmap.h>
+#include <beep/slab.h>
+#include <beep/irq.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>

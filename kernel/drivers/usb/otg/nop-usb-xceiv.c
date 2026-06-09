@@ -26,12 +26,12 @@
  *	autonomous such as isp1504, isp1707, etc.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/nop-usb-xceiv.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/nop-usb-xceiv.h>
+#include <beep/slab.h>
 
 struct nop_usb_xceiv {
 	struct usb_phy		phy;

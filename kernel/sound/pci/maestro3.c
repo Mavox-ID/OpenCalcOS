@@ -32,16 +32,16 @@
 #define DRIVER_NAME "Maestro3"
 
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/input.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/module.h>
+#include <beep/firmware.h>
+#include <beep/input.h>
 #include <sound/core.h>
 #include <sound/info.h>
 #include <sound/control.h>

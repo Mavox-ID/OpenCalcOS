@@ -6,10 +6,10 @@
  */
 
 #ifdef CONFIG_PCI
-# include <linux/pci.h>
+# include <beep/pci.h>
 #endif
 
-#include <linux/efi.h>
+#include <beep/efi.h>
 #include <asm/io.h>
 #include <asm/pal.h>
 #include <asm/sal.h>

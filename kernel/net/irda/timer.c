@@ -24,7 +24,7 @@
  *
  ********************************************************************/
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 #include <net/irda/timer.h>
 #include <net/irda/irda.h>

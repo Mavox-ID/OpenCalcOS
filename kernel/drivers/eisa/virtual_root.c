@@ -7,12 +7,12 @@
  * This code is released under the GPL version 2.
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/eisa.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/eisa.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
 
 #if defined(CONFIG_ALPHA_JENSEN) || defined(CONFIG_EISA_VLB_PRIMING)
 #define EISA_FORCE_PROBE_DEFAULT 1

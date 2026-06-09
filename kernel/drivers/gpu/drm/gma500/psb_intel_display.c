@@ -18,8 +18,8 @@
  *	Eric Anholt <eric@anholt.net>
  */
 
-#include <linux/i2c.h>
-#include <linux/pm_runtime.h>
+#include <beep/i2c.h>
+#include <beep/pm_runtime.h>
 
 #include <drm/drmP.h>
 #include "framebuffer.h"

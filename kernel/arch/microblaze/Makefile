@@ -1,7 +1,7 @@
 ifeq ($(CONFIG_MMU),y)
-UTS_SYSNAME = -DUTS_SYSNAME=\"Linux\"
+UTS_SYSNAME = -DUTS_SYSNAME=\"Beep\"
 else
-UTS_SYSNAME = -DUTS_SYSNAME=\"uClinux\"
+UTS_SYSNAME = -DUTS_SYSNAME=\"uCbeep\"
 endif
 
 # What CPU vesion are we building for, and crack it open
@@ -40,7 +40,7 @@ CPUFLAGS-1 += $(call cc-option,-mcpu=v$(CPU_VER))
 KBUILD_CFLAGS += -ffixed-r31 $(CPUFLAGS-1) $(CPUFLAGS-2)
 
 LDFLAGS		:=
-LDFLAGS_vmlinux	:=
+LDFLAGS_vmbeep	:=
 
 head-y := arch/microblaze/kernel/head.o
 libs-y += arch/microblaze/lib/
@@ -67,23 +67,23 @@ endif
 
 export MMU DTB
 
-all: linux.bin
+all: beep.bin
 
 # With make 3.82 we cannot mix normal and wildcard targets
-BOOT_TARGETS1 = linux.bin linux.bin.gz
+BOOT_TARGETS1 = beep.bin beep.bin.gz
 BOOT_TARGETS2 = simpleImage.%
 
 archclean:
 	$(Q)$(MAKE) $(clean)=$(boot)
 
-$(BOOT_TARGETS1): vmlinux
+$(BOOT_TARGETS1): vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
-$(BOOT_TARGETS2): vmlinux
+$(BOOT_TARGETS2): vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 define archhelp
-  echo '* linux.bin    - Create raw binary'
-  echo '  linux.bin.gz - Create compressed raw binary'
+  echo '* beep.bin    - Create raw binary'
+  echo '  beep.bin.gz - Create compressed raw binary'
   echo '  simpleImage.<dt> - ELF image with $(arch)/boot/dts/<dt>.dts linked in'
   echo '                   - stripped elf with fdt blob'
   echo '  simpleImage.<dt>.unstrip - full ELF image with fdt blob'

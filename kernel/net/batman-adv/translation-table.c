@@ -27,7 +27,7 @@
 #include "routing.h"
 #include "bridge_loop_avoidance.h"
 
-#include <linux/crc16.h>
+#include <beep/crc16.h>
 
 static void batadv_send_roam_adv(struct batadv_priv *bat_priv, uint8_t *client,
 				 struct batadv_orig_node *orig_node);

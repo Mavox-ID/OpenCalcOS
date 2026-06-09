@@ -5,11 +5,11 @@
  * Copyright (C) 2008 Novell Inc.
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/vmstat.h>
-#include <linux/pagemap.h>
-#include <linux/rwsem.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/vmstat.h>
+#include <beep/pagemap.h>
+#include <beep/rwsem.h>
 #include <asm/pgtable.h>
 
 /*

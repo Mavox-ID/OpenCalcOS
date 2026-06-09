@@ -20,16 +20,16 @@
  *  - i.MX27 Platform Development Kit (i.MX27 PDK)
  */
 
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/ulpi.h>
-#include <linux/delay.h>
-#include <linux/mfd/mc13783.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/machine.h>
-#include <linux/spi/l4f00242t03.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/ulpi.h>
+#include <beep/delay.h>
+#include <beep/mfd/mc13783.h>
+#include <beep/spi/spi.h>
+#include <beep/regulator/machine.h>
+#include <beep/spi/l4f00242t03.h>
 
 #include <media/soc_camera.h>
 

@@ -1,4 +1,4 @@
-/* Intel EtherExpress 16 device driver for Linux
+/* Intel EtherExpress 16 device driver for Beep
  *
  * Written by John Sullivan, 1995
  *  based on original code by Donald Becker, with changes by
@@ -20,7 +20,7 @@
  * design using the i82586 Ethernet coprocessor.  It bears no relationship,
  * as far as I know, to the similarly-named "EtherExpress Pro" range.
  *
- * Historically, Linux support for these cards has been very bad.  However,
+ * Historically, Beep support for these cards has been very bad.  However,
  * things seem to be getting better slowly.
  */
 
@@ -97,23 +97,23 @@
 #define LOCKUP16 0
 #endif
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/string.h>
+#include <beep/in.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/bitops.h>
+#include <beep/jiffies.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -227,7 +227,7 @@ static unsigned short start_code[] = {
 static char irqrmap[] = { 0,0,1,2,3,4,0,0,0,1,5,6,0,0,0,0 };
 
 /*
- * Prototypes for Linux interface
+ * Prototypes for Beep interface
  */
 
 static int eexp_open(struct net_device *dev);
@@ -312,7 +312,7 @@ static inline unsigned short int SHADOW(short int addr)
 }
 
 /*
- * Linux interface
+ * Beep interface
  */
 
 /*
@@ -1655,7 +1655,7 @@ void __exit cleanup_module(void)
 
 /*
  * Local Variables:
- *  c-file-style: "linux"
+ *  c-file-style: "beep"
  *  tab-width: 8
  * End:
  */

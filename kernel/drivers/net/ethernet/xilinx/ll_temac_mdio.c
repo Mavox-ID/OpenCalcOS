@@ -4,15 +4,15 @@
  * Copyright (c) 2009 Secret Lab Technologies, Ltd.
  */
 
-#include <linux/io.h>
-#include <linux/netdevice.h>
-#include <linux/mutex.h>
-#include <linux/phy.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/of_mdio.h>
+#include <beep/io.h>
+#include <beep/netdevice.h>
+#include <beep/mutex.h>
+#include <beep/phy.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_address.h>
+#include <beep/slab.h>
+#include <beep/of_mdio.h>
 
 #include "ll_temac.h"
 

@@ -1,7 +1,7 @@
-/* linux/include/asm-arm/plat-s3c/map.h
+/* beep/include/asm-arm/plat-s3c/map.h
  *
  * Copyright 2003, 2007 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C - Memory map definitions (virtual addresses)

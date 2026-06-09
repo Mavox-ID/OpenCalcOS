@@ -22,47 +22,47 @@
  *  ---------------------------------------------------
  *
  *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of the Linux
+ *  License.  See the file COPYING in the main directory of the Beep
  *  distribution for more details.
  */
 
-#include <linux/cgroup.h>
-#include <linux/cred.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/init_task.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/proc_fs.h>
-#include <linux/rcupdate.h>
-#include <linux/sched.h>
-#include <linux/backing-dev.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/magic.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/sort.h>
-#include <linux/kmod.h>
-#include <linux/module.h>
-#include <linux/delayacct.h>
-#include <linux/cgroupstats.h>
-#include <linux/hash.h>
-#include <linux/namei.h>
-#include <linux/pid_namespace.h>
-#include <linux/idr.h>
-#include <linux/vmalloc.h> /* TODO: replace with more sophisticated array */
-#include <linux/eventfd.h>
-#include <linux/poll.h>
-#include <linux/flex_array.h> /* used in cgroup_attach_proc */
-#include <linux/kthread.h>
+#include <beep/cgroup.h>
+#include <beep/cred.h>
+#include <beep/ctype.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/init_task.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/mm.h>
+#include <beep/mutex.h>
+#include <beep/mount.h>
+#include <beep/pagemap.h>
+#include <beep/proc_fs.h>
+#include <beep/rcupdate.h>
+#include <beep/sched.h>
+#include <beep/backing-dev.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/magic.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/sort.h>
+#include <beep/kmod.h>
+#include <beep/module.h>
+#include <beep/delayacct.h>
+#include <beep/cgroupstats.h>
+#include <beep/hash.h>
+#include <beep/namei.h>
+#include <beep/pid_namespace.h>
+#include <beep/idr.h>
+#include <beep/vmalloc.h> /* TODO: replace with more sophisticated array */
+#include <beep/eventfd.h>
+#include <beep/poll.h>
+#include <beep/flex_array.h> /* used in cgroup_attach_proc */
+#include <beep/kthread.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 /* css deactivation bias, makes css->refcnt negative to deny new trygets */
 #define CSS_DEACT_BIAS		INT_MIN
@@ -95,7 +95,7 @@ static DEFINE_MUTEX(cgroup_root_mutex);
 #define SUBSYS(_x) [_x ## _subsys_id] = &_x ## _subsys,
 #define IS_SUBSYS_ENABLED(option) IS_BUILTIN(option)
 static struct cgroup_subsys *subsys[CGROUP_SUBSYS_COUNT] = {
-#include <linux/cgroup_subsys.h>
+#include <beep/cgroup_subsys.h>
 };
 
 #define MAX_CGROUP_ROOT_NAMELEN 64

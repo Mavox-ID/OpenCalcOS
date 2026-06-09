@@ -5,12 +5,12 @@
  * See LICENSE.qlcnic for copyright and licensing details.
  */
 
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/io.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
 
 #include "qlcnic.h"
 
@@ -184,7 +184,7 @@ qlcnic_get_drvinfo(struct net_device *dev, struct ethtool_drvinfo *drvinfo)
 	strlcpy(drvinfo->bus_info, pci_name(adapter->pdev),
 		sizeof(drvinfo->bus_info));
 	strlcpy(drvinfo->driver, qlcnic_driver_name, sizeof(drvinfo->driver));
-	strlcpy(drvinfo->version, QLCNIC_LINUX_VERSIONID,
+	strlcpy(drvinfo->version, QLCNIC_BEEP_VERSIONID,
 		sizeof(drvinfo->version));
 }
 

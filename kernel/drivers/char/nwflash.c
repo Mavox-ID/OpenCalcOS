@@ -14,19 +14,19 @@
  * power to convert these machines into doorstops...
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/proc_fs.h>
-#include <linux/miscdevice.h>
-#include <linux/spinlock.h>
-#include <linux/rwsem.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/jiffies.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/proc_fs.h>
+#include <beep/miscdevice.h>
+#include <beep/spinlock.h>
+#include <beep/rwsem.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/jiffies.h>
 
 #include <asm/hardware/dec21285.h>
 #include <asm/io.h>

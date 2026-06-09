@@ -22,43 +22,43 @@
 
 # User may have a custom install -c script
 
-rm -fr $4/../usr/include/linux $4/../usr/include/asm
+rm -fr $4/../usr/include/beep $4/../usr/include/asm
 install -c -m 0755 $2 $4/vmlinuz
 install -c -m 0755 $5 $4/boot.rom
-install -c -m 0755 -d $4/../usr/include/linux
-cd ${srctree}/include/linux
+install -c -m 0755 -d $4/../usr/include/beep
+cd ${srctree}/include/beep
 for i in `find . -maxdepth 1 -name '*.h' -print`; do
-  install -c -m 0644 $i $4/../usr/include/linux
+  install -c -m 0644 $i $4/../usr/include/beep
 done
-install -c -m 0755 -d $4/../usr/include/linux/byteorder
-cd ${srctree}/include/linux/byteorder
+install -c -m 0755 -d $4/../usr/include/beep/byteorder
+cd ${srctree}/include/beep/byteorder
 for i in `find . -name '*.h' -print`; do
-  install -c -m 0644 $i $4/../usr/include/linux/byteorder
+  install -c -m 0644 $i $4/../usr/include/beep/byteorder
 done
-install -c -m 0755 -d $4/../usr/include/linux/lockd
-cd ${srctree}/include/linux/lockd
+install -c -m 0755 -d $4/../usr/include/beep/lockd
+cd ${srctree}/include/beep/lockd
 for i in `find . -name '*.h' -print`; do
-  install -c -m 0644 $i $4/../usr/include/linux/lockd
+  install -c -m 0644 $i $4/../usr/include/beep/lockd
 done
-install -c -m 0755 -d $4/../usr/include/linux/netfilter_ipv4
-cd ${srctree}/include/linux/netfilter_ipv4
+install -c -m 0755 -d $4/../usr/include/beep/netfilter_ipv4
+cd ${srctree}/include/beep/netfilter_ipv4
 for i in `find . -name '*.h' -print`; do
-  install -c -m 0644 $i $4/../usr/include/linux/netfilter_ipv4
+  install -c -m 0644 $i $4/../usr/include/beep/netfilter_ipv4
 done
-install -c -m 0755 -d $4/../usr/include/linux/nfsd
-cd ${srctree}/include/linux/nfsd
+install -c -m 0755 -d $4/../usr/include/beep/nfsd
+cd ${srctree}/include/beep/nfsd
 for i in `find . -name '*.h' -print`; do
-  install -c -m 0644 $i $4/../usr/include/linux/nfsd/$i
+  install -c -m 0644 $i $4/../usr/include/beep/nfsd/$i
 done
-install -c -m 0755 -d $4/../usr/include/linux/raid
-cd ${srctree}/include/linux/raid
+install -c -m 0755 -d $4/../usr/include/beep/raid
+cd ${srctree}/include/beep/raid
 for i in `find . -name '*.h' -print`; do
-  install -c -m 0644 $i $4/../usr/include/linux/raid
+  install -c -m 0644 $i $4/../usr/include/beep/raid
 done
-install -c -m 0755 -d $4/../usr/include/linux/sunrpc
-cd ${srctree}/include/linux/sunrpc
+install -c -m 0755 -d $4/../usr/include/beep/sunrpc
+cd ${srctree}/include/beep/sunrpc
 for i in `find . -name '*.h' -print`; do
-  install -c -m 0644 $i $4/../usr/include/linux/sunrpc
+  install -c -m 0644 $i $4/../usr/include/beep/sunrpc
 done
 install -c -m 0755 -d $4/../usr/include/asm
 cd ${srctree}/include/asm

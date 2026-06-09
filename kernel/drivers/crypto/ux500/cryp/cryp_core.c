@@ -9,21 +9,21 @@
  * License terms: GNU General Public License (GPL) version 2
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/crypto.h>
-#include <linux/dmaengine.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irqreturn.h>
-#include <linux/klist.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/semaphore.h>
-#include <linux/platform_data/dma-ste-dma40.h>
+#include <beep/clk.h>
+#include <beep/completion.h>
+#include <beep/crypto.h>
+#include <beep/dmaengine.h>
+#include <beep/err.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/irqreturn.h>
+#include <beep/klist.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/consumer.h>
+#include <beep/semaphore.h>
+#include <beep/platform_data/dma-ste-dma40.h>
 
 #include <crypto/aes.h>
 #include <crypto/algapi.h>
@@ -31,7 +31,7 @@
 #include <crypto/des.h>
 #include <crypto/scatterwalk.h>
 
-#include <linux/platform_data/crypto-ux500.h>
+#include <beep/platform_data/crypto-ux500.h>
 #include <mach/hardware.h>
 
 #include "cryp_p.h"

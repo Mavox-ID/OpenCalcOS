@@ -1,20 +1,20 @@
-#include <linux/stat.h>
-#include <linux/sysctl.h>
+#include <beep/stat.h>
+#include <beep/sysctl.h>
 #include "../fs/xfs/xfs_sysctl.h"
-#include <linux/sunrpc/debug.h>
-#include <linux/string.h>
+#include <beep/sunrpc/debug.h>
+#include <beep/string.h>
 #include <net/ip_vs.h>
-#include <linux/syscalls.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/fs.h>
-#include <linux/nsproxy.h>
-#include <linux/pid_namespace.h>
-#include <linux/file.h>
-#include <linux/ctype.h>
-#include <linux/netdevice.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/syscalls.h>
+#include <beep/namei.h>
+#include <beep/mount.h>
+#include <beep/fs.h>
+#include <beep/nsproxy.h>
+#include <beep/pid_namespace.h>
+#include <beep/file.h>
+#include <beep/ctype.h>
+#include <beep/netdevice.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 
 #ifdef CONFIG_SYSCTL_SYSCALL
 
@@ -828,7 +828,7 @@ static const struct bin_table bin_ipmi_table[] = {
 };
 
 static const struct bin_table bin_mac_hid_files[] = {
-	/* DEV_MAC_HID_KEYBOARD_SENDS_LINUX_KEYCODES unused */
+	/* DEV_MAC_HID_KEYBOARD_SENDS_BEEP_KEYCODES unused */
 	/* DEV_MAC_HID_KEYBOARD_LOCK_KEYCODES unused */
 	{ CTL_INT,	DEV_MAC_HID_MOUSE_BUTTON_EMULATION,	"mouse_button_emulation" },
 	{ CTL_INT,	DEV_MAC_HID_MOUSE_BUTTON2_KEYCODE,	"mouse_button2_keycode" },

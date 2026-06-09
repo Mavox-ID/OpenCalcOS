@@ -8,17 +8,17 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/bootmem.h>
-#include <linux/initrd.h>
-#include <linux/debugfs.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/bootmem.h>
+#include <beep/initrd.h>
+#include <beep/debugfs.h>
+#include <beep/of.h>
+#include <beep/of_fdt.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
 
 #include <asm/page.h>
 #include <asm/prom.h>

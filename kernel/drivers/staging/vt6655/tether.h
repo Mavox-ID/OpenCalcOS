@@ -29,7 +29,7 @@
 #ifndef __TETHER_H__
 #define __TETHER_H__
 
-#include <linux/etherdevice.h>
+#include <beep/etherdevice.h>
 #include "ttype.h"
 
 /*---------------------  Export Definitions -------------------------*/

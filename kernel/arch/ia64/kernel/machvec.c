@@ -1,11 +1,11 @@
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
 #include <asm/machvec.h>
 
 #ifdef CONFIG_IA64_GENERIC
 
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
 
 #include <asm/page.h>
 

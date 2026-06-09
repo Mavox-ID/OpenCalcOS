@@ -25,8 +25,8 @@
 #ifndef _ATL2_H_
 #define _ATL2_H_
 
-#include <linux/atomic.h>
-#include <linux/netdevice.h>
+#include <beep/atomic.h>
+#include <beep/netdevice.h>
 
 #ifndef _ATL2_HW_H_
 #define _ATL2_HW_H_
@@ -34,10 +34,10 @@
 #ifndef _ATL2_OSDEP_H_
 #define _ATL2_OSDEP_H_
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/if_ether.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/if_ether.h>
 
 #include "atlx.h"
 

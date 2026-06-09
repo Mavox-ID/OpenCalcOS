@@ -9,17 +9,17 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/sched.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/sched.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/eeprom.h>
-#include <linux/of.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/eeprom.h>
+#include <beep/of.h>
 
 /*
  * NOTE: this is an *EEPROM* driver.  The vagaries of product naming

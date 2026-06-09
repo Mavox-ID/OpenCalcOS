@@ -7,16 +7,16 @@
  *
  * This software has been sponsored by Vyatta Inc. <http://www.vyatta.com>
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/netlink.h>
-#include <linux/rculist.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/errno.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/netlink.h>
+#include <beep/rculist.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/errno.h>
 #include <net/netlink.h>
 #include <net/sock.h>
 
@@ -24,9 +24,9 @@
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_conntrack_ecache.h>
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
-#include <linux/netfilter/nfnetlink_cthelper.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_conntrack.h>
+#include <beep/netfilter/nfnetlink_cthelper.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Pablo Neira Ayuso <pablo@netfilter.org>");

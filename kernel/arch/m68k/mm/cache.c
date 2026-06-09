@@ -1,12 +1,12 @@
 /*
- *  linux/arch/m68k/mm/cache.c
+ *  beep/arch/m68k/mm/cache.c
  *
  *  Instruction cache handling
  *
  *  Copyright (C) 1995  Hamish Macdonald
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/pgalloc.h>
 #include <asm/traps.h>
 

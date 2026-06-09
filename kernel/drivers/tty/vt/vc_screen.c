@@ -19,25 +19,25 @@
  *	 - making it shorter - scr_readw are macros which expand in PRETTY long code
  */
 
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/tty.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/vt_kern.h>
-#include <linux/selection.h>
-#include <linux/kbd_kern.h>
-#include <linux/console.h>
-#include <linux/device.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
+#include <beep/kernel.h>
+#include <beep/major.h>
+#include <beep/errno.h>
+#include <beep/export.h>
+#include <beep/tty.h>
+#include <beep/interrupt.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/vt_kern.h>
+#include <beep/selection.h>
+#include <beep/kbd_kern.h>
+#include <beep/console.h>
+#include <beep/device.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/poll.h>
+#include <beep/signal.h>
+#include <beep/slab.h>
+#include <beep/notifier.h>
 
 #include <asm/uaccess.h>
 #include <asm/byteorder.h>

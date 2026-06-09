@@ -33,11 +33,11 @@
 
 #include <rdma/ib_mad.h>
 #include <rdma/ib_user_verbs.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/utsname.h>
-#include <linux/rculist.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/utsname.h>
+#include <beep/rculist.h>
 
 #include "ipath_kernel.h"
 #include "ipath_verbs.h"

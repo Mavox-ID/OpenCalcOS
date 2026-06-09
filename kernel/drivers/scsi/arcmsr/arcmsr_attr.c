@@ -1,6 +1,6 @@
 /*
 *******************************************************************************
-**        O.S   : Linux
+**        O.S   : Beep
 **   FILE NAME  : arcmsr_attr.c
 **        BY    : Nick Cheng
 **   Description: attributes exported to sysfs and device host
@@ -44,12 +44,12 @@
 **     Firmware Specification, see Documentation/scsi/arcmsr_spec.txt
 *******************************************************************************
 */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
 
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

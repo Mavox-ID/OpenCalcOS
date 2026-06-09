@@ -2,7 +2,7 @@
  *	de620.c $Revision: 1.40 $ BETA
  *
  *
- *	Linux driver for the D-Link DE-620 Ethernet pocket adapter.
+ *	Beep driver for the D-Link DE-620 Ethernet pocket adapter.
  *
  *	Portions (C) Copyright 1993, 1994 by Bjorn Ekwall <bj0rn@blox.se>
  *
@@ -11,7 +11,7 @@
  *		Portions (C) Copyright D-Link SYSTEM Inc. 1991, 1992
  *		Copyright, 1988, Russell Nelson, Crynwr Software
  *
- *	Adapted to the sample network driver core for linux,
+ *	Adapted to the sample network driver core for beep,
  *	written by: Donald Becker <becker@super.org>
  *		(Now at <becker@scyld.com>)
  *
@@ -106,20 +106,20 @@ static const char version[] =
  */
 #endif
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/string.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/in.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/inet.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
 
 #include <asm/io.h>
 

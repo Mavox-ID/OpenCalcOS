@@ -1,5 +1,5 @@
-#ifndef __LINUX_FBIO_H
-#define __LINUX_FBIO_H
+#ifndef __BEEP_FBIO_H
+#define __BEEP_FBIO_H
 
 #include <uapi/asm/fbio.h>
 
@@ -69,4 +69,4 @@ struct fbcursor32 {
 
 #define FBIOSCURSOR32	_IOW('F', 24, struct fbcursor32)
 #define FBIOGCURSOR32	_IOW('F', 25, struct fbcursor32)
-#endif /* __LINUX_FBIO_H */
+#endif /* __BEEP_FBIO_H */

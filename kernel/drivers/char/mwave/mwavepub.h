@@ -47,10 +47,10 @@
 *	First release to the public
 */
 
-#ifndef _LINUX_MWAVEPUB_H
-#define _LINUX_MWAVEPUB_H
+#ifndef _BEEP_MWAVEPUB_H
+#define _BEEP_MWAVEPUB_H
 
-#include <linux/miscdevice.h>
+#include <beep/miscdevice.h>
 
 
 typedef struct _MW_ABILITIES {

@@ -19,22 +19,22 @@
 
 #define pr_fmt(fmt)	"%s(): " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/device.h>
-#include <linux/sched.h>
-#include <linux/iommu.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_iommu.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/tegra-ahb.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/device.h>
+#include <beep/sched.h>
+#include <beep/iommu.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_iommu.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/tegra-ahb.h>
 
 #include <asm/page.h>
 #include <asm/cacheflush.h>

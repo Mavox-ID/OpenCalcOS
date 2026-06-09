@@ -3,7 +3,7 @@
  *
  *  Maintained by: Benjamin Herrenschmidt <benh@kernel.crashing.org> and
  *		   Jeff Garzik <jgarzik@pobox.com>
- *  		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *  		    Please ALWAYS copy beep-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2003 Benjamin Herrenschmidt <benh@kernel.crashing.org>
@@ -36,18 +36,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi.h>
-#include <linux/libata.h>
+#include <beep/libata.h>
 
 #ifdef CONFIG_PPC_OF
 #include <asm/prom.h>

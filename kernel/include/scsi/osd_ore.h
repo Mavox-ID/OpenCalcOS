@@ -25,8 +25,8 @@
 #include <scsi/osd_initiator.h>
 #include <scsi/osd_attributes.h>
 #include <scsi/osd_sec.h>
-#include <linux/pnfs_osd_xdr.h>
-#include <linux/bug.h>
+#include <beep/pnfs_osd_xdr.h>
+#include <beep/bug.h>
 
 struct ore_comp {
 	struct osd_obj_id	obj;

@@ -8,11 +8,11 @@
  *  by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/i2c-gpio.h>
-#include <linux/i2c/pcf857x.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/i2c-gpio.h>
+#include <beep/i2c/pcf857x.h>
 
 #include "machtypes.h"
 #include "dev-gpio-buttons.h"

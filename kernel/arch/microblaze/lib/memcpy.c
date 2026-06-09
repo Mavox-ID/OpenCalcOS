@@ -24,12 +24,12 @@
  * not any responsibility to update it.
  */
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/compiler.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/stddef.h>
+#include <beep/compiler.h>
+#include <beep/module.h>
 
-#include <linux/string.h>
+#include <beep/string.h>
 
 #ifdef __HAVE_ARCH_MEMCPY
 #ifndef CONFIG_OPT_LIB_FUNCTION

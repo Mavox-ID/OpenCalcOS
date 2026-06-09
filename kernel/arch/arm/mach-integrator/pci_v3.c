@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-integrator/pci_v3.c
+ *  beep/arch/arm/mach-integrator/pci_v3.c
  *
  *  PCI functions for V3 host PCI bridge
  *
@@ -20,13 +20,13 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/init.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <mach/platform.h>

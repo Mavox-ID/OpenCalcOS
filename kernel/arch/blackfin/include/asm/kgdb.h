@@ -8,7 +8,7 @@
 #ifndef __ASM_BLACKFIN_KGDB_H__
 #define __ASM_BLACKFIN_KGDB_H__
 
-#include <linux/ptrace.h>
+#include <beep/ptrace.h>
 
 /*
  * BUFMAX defines the maximum number of characters in inbound/outbound buffers.
@@ -19,9 +19,9 @@
 
 /*
  * Note that this register image is different from
- * the register image that Linux produces at interrupt time.
+ * the register image that Beep produces at interrupt time.
  *
- * Linux's register image is defined by struct pt_regs in ptrace.h.
+ * Beep's register image is defined by struct pt_regs in ptrace.h.
  */
 enum regnames {
   /* Core Registers */

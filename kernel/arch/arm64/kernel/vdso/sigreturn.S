@@ -19,7 +19,7 @@
  * Author: Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/unistd.h>
 
 	.text

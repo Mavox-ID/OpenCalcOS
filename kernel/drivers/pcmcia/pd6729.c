@@ -7,15 +7,15 @@
  * the GNU General Public License, incorporated herein by reference.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/workqueue.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/io.h>
 
 #include <pcmcia/ss.h>
 

@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/omap2/dss/sdi.c
+ * beep/drivers/video/omap2/dss/sdi.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -19,13 +19,13 @@
 
 #define DSS_SUBSYS_NAME "SDI"
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/regulator/consumer.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/regulator/consumer.h>
+#include <beep/export.h>
+#include <beep/platform_device.h>
+#include <beep/string.h>
 
 #include <video/omapdss.h>
 #include "dss.h"

@@ -26,18 +26,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/crc32.h>
-#include <linux/mii.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/ptrace.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/crc32.h>
+#include <beep/mii.h>
 #include "8390.h"
 
 #include <pcmcia/cistpl.h>
@@ -744,7 +744,7 @@ module_exit(exit_axnet_cs);
 
 /*====================================================================*/
 
-/* 8390.c: A general NS8390 ethernet driver core for linux. */
+/* 8390.c: A general NS8390 ethernet driver core for beep. */
 /*
 	Written 1992-94 by Donald Becker.
   
@@ -791,11 +791,11 @@ module_exit(exit_axnet_cs);
 
   */
 
-#include <linux/bitops.h>
+#include <beep/bitops.h>
 #include <asm/irq.h>
-#include <linux/fcntl.h>
-#include <linux/in.h>
-#include <linux/interrupt.h>
+#include <beep/fcntl.h>
+#include <beep/in.h>
+#include <beep/interrupt.h>
 
 #define BUG_83C690
 

@@ -1,14 +1,14 @@
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/nmi.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/nmi.h>
+#include <beep/swap.h>
+#include <beep/smp.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
 
 #include <asm/pgtable.h>
 #include <asm/pgalloc.h>

@@ -1,10 +1,10 @@
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/videodev2.h>
-#include <linux/usb.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/vmalloc.h>
+#include <beep/videodev2.h>
+#include <beep/usb.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-dev.h>

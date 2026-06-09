@@ -11,16 +11,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/videodev2.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
-#include <linux/atomic.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
+#include <beep/usb.h>
+#include <beep/videodev2.h>
+#include <beep/vmalloc.h>
+#include <beep/wait.h>
+#include <beep/atomic.h>
 #include <media/v4l2-ctrls.h>
 
 #include "uvcvideo.h"

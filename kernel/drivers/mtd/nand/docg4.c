@@ -28,22 +28,22 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/bch.h>
-#include <linux/bitrev.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/export.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/bitops.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/bch.h>
+#include <beep/bitrev.h>
 
 /*
  * In "reliable mode" consecutive 2k pages are used in parallel (in some

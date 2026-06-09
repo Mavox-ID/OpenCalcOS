@@ -1,7 +1,7 @@
 #ifndef _ALPHA_CACHEFLUSH_H
 #define _ALPHA_CACHEFLUSH_H
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 /* Caches aren't brain-dead on the Alpha. */
 #define flush_cache_all()			do { } while (0)
@@ -43,7 +43,7 @@ extern void smp_imb(void);
 /* ??? Ought to use this in arch/alpha/kernel/signal.c too.  */
 
 #ifndef CONFIG_SMP
-#include <linux/sched.h>
+#include <beep/sched.h>
 
 extern void __load_new_mm_context(struct mm_struct *);
 static inline void

@@ -4,10 +4,10 @@
 #if !defined(_TRACE_VMSCAN_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_VMSCAN_H
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
-#include <linux/mm.h>
-#include <linux/memcontrol.h>
+#include <beep/types.h>
+#include <beep/tracepoint.h>
+#include <beep/mm.h>
+#include <beep/memcontrol.h>
 #include <trace/events/gfpflags.h>
 
 #define RECLAIM_WB_ANON		0x0001u

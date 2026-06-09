@@ -2,8 +2,8 @@
  * getopt.c
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
 
 #include <asm/errno.h>
 

@@ -34,8 +34,8 @@
 #ifndef __ASSEMBLY__
 #include "vti.h"
 
-#include <linux/kvm_host.h>
-#include <linux/spinlock.h>
+#include <beep/kvm_host.h>
+#include <beep/spinlock.h>
 
 typedef unsigned long IA64_INST;
 

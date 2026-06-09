@@ -24,7 +24,7 @@
  */
 
 
-#include <linux/usb/storage.h>
+#include <beep/usb/storage.h>
 #include <scsi/scsi.h>
 #include <asm/unaligned.h>
 
@@ -36,7 +36,7 @@
  * Instead:  allocate your own, using normal USB-IF procedures.
  */
 #define FSG_VENDOR_ID	0x0525	/* NetChip */
-#define FSG_PRODUCT_ID	0xa4a5	/* Linux-USB File-backed Storage Gadget */
+#define FSG_PRODUCT_ID	0xa4a5	/* Beep-USB File-backed Storage Gadget */
 
 
 /*-------------------------------------------------------------------------*/

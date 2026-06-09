@@ -1,4 +1,4 @@
-#include <linux/utsname.h>
+#include <beep/utsname.h>
 #include <net/cfg80211.h>
 #include "core.h"
 #include "ethtool.h"

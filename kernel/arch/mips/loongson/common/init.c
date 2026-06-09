@@ -8,7 +8,7 @@
  * option) any later version.
  */
 
-#include <linux/bootmem.h>
+#include <beep/bootmem.h>
 
 #include <loongson.h>
 

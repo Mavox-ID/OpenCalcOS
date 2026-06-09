@@ -13,13 +13,13 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/amba/pl08x.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <beep/amba/pl08x.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
 #include <asm/hardware/pl080.h>
 #include <asm/hardware/vic.h>
 #include <asm/mach/arch.h>

@@ -45,9 +45,9 @@
   * in that routine.
   */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

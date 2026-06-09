@@ -2,7 +2,7 @@
     comedi/drivers/8255.c
     Driver for 8255
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1998 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -80,8 +80,8 @@ I/O port base address can be found in the output of 'lspci -v'.
 
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
-#include <linux/slab.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
 
 #include "comedi_fc.h"
 #include "8255.h"

@@ -14,8 +14,8 @@
 #ifndef IRDA_SIR_H
 #define IRDA_SIR_H
 
-#include <linux/netdevice.h>
-#include <linux/workqueue.h>
+#include <beep/netdevice.h>
+#include <beep/workqueue.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/irda_device.h>		// iobuff_t

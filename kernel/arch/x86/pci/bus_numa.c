@@ -1,6 +1,6 @@
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/range.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/range.h>
 
 #include "bus_numa.h"
 

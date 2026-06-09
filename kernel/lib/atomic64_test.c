@@ -8,10 +8,10 @@
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  */
-#include <linux/init.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/atomic.h>
+#include <beep/init.h>
+#include <beep/bug.h>
+#include <beep/kernel.h>
+#include <beep/atomic.h>
 
 #define INIT(c) do { atomic64_set(&v, c); r = c; } while (0)
 static __init int test_atomic64(void)

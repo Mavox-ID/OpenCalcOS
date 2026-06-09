@@ -20,24 +20,24 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/spinlock.h>
-#include <linux/moduleparam.h>
-#include <linux/wait.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/ioport.h>
+#include <beep/spinlock.h>
+#include <beep/moduleparam.h>
+#include <beep/wait.h>
 
-#include <linux/skbuff.h>
-#include <linux/io.h>
+#include <beep/skbuff.h>
+#include <beep/io.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ciscode.h>

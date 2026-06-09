@@ -2,7 +2,7 @@
 #define LIST_H
 
 /*
- * Copied from include/linux/...
+ * Copied from include/beep/...
  */
 
 #undef offsetof

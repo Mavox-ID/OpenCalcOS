@@ -1,17 +1,17 @@
-#include <linux/proc_fs.h>
-#include <linux/nsproxy.h>
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/fs_struct.h>
-#include <linux/mount.h>
-#include <linux/path.h>
-#include <linux/namei.h>
-#include <linux/file.h>
-#include <linux/utsname.h>
+#include <beep/proc_fs.h>
+#include <beep/nsproxy.h>
+#include <beep/sched.h>
+#include <beep/ptrace.h>
+#include <beep/fs_struct.h>
+#include <beep/mount.h>
+#include <beep/path.h>
+#include <beep/namei.h>
+#include <beep/file.h>
+#include <beep/utsname.h>
 #include <net/net_namespace.h>
-#include <linux/ipc_namespace.h>
-#include <linux/pid_namespace.h>
-#include <linux/user_namespace.h>
+#include <beep/ipc_namespace.h>
+#include <beep/pid_namespace.h>
+#include <beep/user_namespace.h>
 #include "internal.h"
 
 

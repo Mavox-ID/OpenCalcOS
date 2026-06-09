@@ -1,9 +1,9 @@
 /*
- * Linux WiMAX
+ * Beep WiMAX
  * Generic messaging interface between userspace and driver/device
  *
  *
- * Copyright (C) 2007-2008 Intel Corporation <linux-wimax@intel.com>
+ * Copyright (C) 2007-2008 Intel Corporation <beep-wimax@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *
  * This program is free software; you can redistribute it and/or
@@ -71,13 +71,13 @@
  *   wimax_msg_alloc()
  *   wimax_msg_send()
  */
-#include <linux/device.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/slab.h>
 #include <net/genetlink.h>
-#include <linux/netdevice.h>
-#include <linux/wimax.h>
-#include <linux/security.h>
-#include <linux/export.h>
+#include <beep/netdevice.h>
+#include <beep/wimax.h>
+#include <beep/security.h>
+#include <beep/export.h>
 #include "wimax-internal.h"
 
 

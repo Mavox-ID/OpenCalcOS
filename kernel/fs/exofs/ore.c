@@ -9,7 +9,7 @@
  * exofs is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation.  Since it is based on ext2, and the only
- * valid version of GPL for the Linux kernel is version 2, the only valid
+ * valid version of GPL for the Beep kernel is version 2, the only valid
  * version of GPL for exofs is version 2.
  *
  * exofs is distributed in the hope that it will be useful,
@@ -22,10 +22,10 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <asm/div64.h>
-#include <linux/lcm.h>
+#include <beep/lcm.h>
 
 #include "ore_raid.h"
 

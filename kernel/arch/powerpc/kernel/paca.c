@@ -7,9 +7,9 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/smp.h>
-#include <linux/export.h>
-#include <linux/memblock.h>
+#include <beep/smp.h>
+#include <beep/export.h>
+#include <beep/memblock.h>
 
 #include <asm/lppaca.h>
 #include <asm/paca.h>
@@ -110,7 +110,7 @@ struct slb_shadow slb_shadow[] __cacheline_aligned = {
 
 /* The Paca is an array with one entry per processor.  Each contains an
  * lppaca, which contains the information shared between the
- * hypervisor and Linux.
+ * hypervisor and Beep.
  * On systems with hardware multi-threading, there are two threads
  * per processor.  The Paca array must contain an entry for each thread.
  * The VPD Areas will give a max logical processors = 2 * max physical

@@ -11,12 +11,12 @@
  *      as published by the Free Software Foundation; either version
  *      2 of the License, or (at your option) any later version.
  */
-#include <linux/dccp.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <beep/dccp.h>
+#include <beep/module.h>
+#include <beep/types.h>
 #include <asm/unaligned.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
 
 #include "ackvec.h"
 #include "ccid.h"

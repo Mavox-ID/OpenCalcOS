@@ -1,5 +1,5 @@
 /*
- *	Linux INET6 implementation
+ *	Beep INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
@@ -13,8 +13,8 @@
 #ifndef _NET_IPV6_H
 #define _NET_IPV6_H
 
-#include <linux/ipv6.h>
-#include <linux/hardirq.h>
+#include <beep/ipv6.h>
+#include <beep/hardirq.h>
 #include <net/if_inet6.h>
 #include <net/ndisc.h>
 #include <net/flow.h>

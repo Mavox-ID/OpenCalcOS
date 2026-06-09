@@ -1,6 +1,6 @@
 /******************************************************************************
  * Copyright(c) 2008 - 2010 Realtek Corporation. All rights reserved.
- * Linux device driver for RTL8192U
+ * Beep device driver for RTL8192U
  *
  * Based on the r8187 driver, which is:
  * Copyright 2004-2005 Andrea Merello <andreamrl@tiscali.it>, et al.
@@ -69,8 +69,8 @@ double __extendsfdf2(float a) {return a;}
 #include "r819xU_cmdpkt.h"
 #include "r8192U_dm.h"
 //#include "r8192xU_phyreg.h"
-#include <linux/usb.h>
-#include <linux/slab.h>
+#include <beep/usb.h>
+#include <beep/slab.h>
 // FIXME: check if 2.6.7 is ok
 
 #ifdef CONFIG_RTL8192_PM
@@ -126,7 +126,7 @@ static const struct usb_device_id rtl8192_usb_id_tbl[] = {
 MODULE_LICENSE("GPL");
 MODULE_VERSION("V 1.1");
 MODULE_DEVICE_TABLE(usb, rtl8192_usb_id_tbl);
-MODULE_DESCRIPTION("Linux driver for Realtek RTL8192 USB WiFi cards");
+MODULE_DESCRIPTION("Beep driver for Realtek RTL8192 USB WiFi cards");
 
 static char* ifname = "wlan%d";
 static int hwwep = 1;  //default use hw. set 0 to use software security
@@ -1103,7 +1103,7 @@ inline u16 rtl8192_rate2rate(short rate)
 }
 
 
-/* The prototype of rx_isr has changed since one version of Linux Kernel */
+/* The prototype of rx_isr has changed since one version of Beep Kernel */
 static void rtl8192_rx_isr(struct urb *urb)
 {
 	struct sk_buff *skb = (struct sk_buff *) urb->context;
@@ -5903,7 +5903,7 @@ static int __init rtl8192_usb_module_init(void)
 		return ret;
 	}
 
-	printk(KERN_INFO "\nLinux kernel driver for RTL8192 based WLAN cards\n");
+	printk(KERN_INFO "\nBeep kernel driver for RTL8192 based WLAN cards\n");
 	printk(KERN_INFO "Copyright (c) 2007-2008, Realsil Wlan\n");
 	RT_TRACE(COMP_INIT, "Initializing module");
 	RT_TRACE(COMP_INIT, "Wireless extensions version %d", WIRELESS_EXT);

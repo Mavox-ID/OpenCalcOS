@@ -1,5 +1,5 @@
 /*
- * linux/drivers/char/raw.c
+ * beep/drivers/char/raw.c
  *
  * Front-end raw character devices.  These can be bound to any block
  * devices to provide genuine Unix raw character device semantics.
@@ -8,20 +8,20 @@
  * device are used to bind the other minor numbers to block devices.
  */
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/major.h>
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/raw.h>
-#include <linux/capability.h>
-#include <linux/uio.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/gfp.h>
-#include <linux/compat.h>
-#include <linux/vmalloc.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/major.h>
+#include <beep/blkdev.h>
+#include <beep/module.h>
+#include <beep/raw.h>
+#include <beep/capability.h>
+#include <beep/uio.h>
+#include <beep/cdev.h>
+#include <beep/device.h>
+#include <beep/mutex.h>
+#include <beep/gfp.h>
+#include <beep/compat.h>
+#include <beep/vmalloc.h>
 
 #include <asm/uaccess.h>
 

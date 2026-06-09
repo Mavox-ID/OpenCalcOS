@@ -49,9 +49,9 @@
  *                                endpoint; when data is ready, this
  *                                does the dispatching.
  */
-#include <linux/workqueue.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
+#include <beep/workqueue.h>
+#include <beep/ctype.h>
+#include <beep/slab.h>
 
 #include "wa-hc.h"
 #include "wusbhc.h"

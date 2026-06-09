@@ -17,10 +17,10 @@
  * kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/mdio-bitbang.h>
-#include <linux/types.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/mdio-bitbang.h>
+#include <beep/types.h>
+#include <beep/delay.h>
 
 #define MDIO_READ 2
 #define MDIO_WRITE 1

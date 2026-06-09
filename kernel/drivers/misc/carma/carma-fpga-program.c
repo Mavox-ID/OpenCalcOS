@@ -9,23 +9,23 @@
  * option) any later version.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/of_platform.h>
-#include <linux/completion.h>
-#include <linux/miscdevice.h>
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
-#include <linux/highmem.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/kref.h>
-#include <linux/fs.h>
-#include <linux/io.h>
+#include <beep/dma-mapping.h>
+#include <beep/of_platform.h>
+#include <beep/completion.h>
+#include <beep/miscdevice.h>
+#include <beep/dmaengine.h>
+#include <beep/interrupt.h>
+#include <beep/highmem.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/leds.h>
+#include <beep/slab.h>
+#include <beep/kref.h>
+#include <beep/fs.h>
+#include <beep/io.h>
 
 #include <media/videobuf-dma-sg.h>
 

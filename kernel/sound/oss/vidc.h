@@ -1,7 +1,7 @@
 /*
- *  linux/drivers/sound/vidc.h
+ *  beep/drivers/sound/vidc.h
  *
- *  Copyright (C) 1997 Russell King <rmk@arm.linux.org.uk>
+ *  Copyright (C) 1997 Russell King <rmk@arm.beep.org.uk>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as

@@ -17,11 +17,11 @@
  * to be requested from drivers directly.
  */
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/clk-private.h>
-#include <linux/list.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/clk-private.h>
+#include <beep/list.h>
+#include <beep/io.h>
 
 #include "soc.h"
 #include "iomap.h"

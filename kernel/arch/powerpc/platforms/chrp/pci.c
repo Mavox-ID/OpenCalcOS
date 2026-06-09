@@ -2,11 +2,11 @@
  * CHRP pci routines.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/init.h>
 
 #include <asm/io.h>
 #include <asm/pgtable.h>

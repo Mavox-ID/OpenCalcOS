@@ -1,7 +1,7 @@
 #ifndef _NET_AH_H
 #define _NET_AH_H
 
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 
 /* This is the maximum truncated ICV length that we know of. */
 #define MAX_AH_AUTH_LEN	64

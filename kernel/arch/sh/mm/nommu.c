@@ -7,10 +7,10 @@
  *
  * Released under the terms of the GNU GPL v2.0.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/mm.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/mm.h>
 #include <asm/pgtable.h>
 #include <asm/tlbflush.h>
 #include <asm/page.h>

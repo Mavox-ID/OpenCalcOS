@@ -20,12 +20,12 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  */
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/scatterlist.h>
-#include <linux/bsg-lib.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/scatterlist.h>
+#include <beep/bsg-lib.h>
+#include <beep/export.h>
 #include <scsi/scsi_cmnd.h>
 
 /**

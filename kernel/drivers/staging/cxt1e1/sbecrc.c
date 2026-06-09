@@ -15,9 +15,9 @@
  *   GNU General Public License for more details.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include "pmcc4_sysdep.h"
-#include "sbecom_inline_linux.h"
+#include "sbecom_inline_beep.h"
 #include "sbe_promformat.h"
 
 /* defines */

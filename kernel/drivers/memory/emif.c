@@ -10,20 +10,20 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/platform_data/emif_plat.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/reboot.h>
+#include <beep/platform_data/emif_plat.h>
+#include <beep/io.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
 #include <memory/jedec_ddr.h>
 #include "emif.h"
 #include "of_memory.h"

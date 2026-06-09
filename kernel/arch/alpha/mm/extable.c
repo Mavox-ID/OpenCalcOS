@@ -1,9 +1,9 @@
 /*
- * linux/arch/alpha/mm/extable.c
+ * beep/arch/alpha/mm/extable.c
  */
 
-#include <linux/module.h>
-#include <linux/sort.h>
+#include <beep/module.h>
+#include <beep/sort.h>
 #include <asm/uaccess.h>
 
 static inline unsigned long ex_to_addr(const struct exception_table_entry *x)

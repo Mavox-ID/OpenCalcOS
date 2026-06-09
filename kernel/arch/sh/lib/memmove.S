@@ -11,7 +11,7 @@
  * The memory areas may overlap.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 ENTRY(memmove)
 	! if dest > src, call memcpy (it copies in decreasing order)
 	cmp/hi	r5,r4

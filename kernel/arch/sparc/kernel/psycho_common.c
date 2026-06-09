@@ -2,8 +2,8 @@
  *
  * Copyright (C) 2008 David S. Miller <davem@davemloft.net>
  */
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
 
 #include <asm/upa.h>
 

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/boot/compressed/ofw-shark.c
+ * beep/arch/arm/boot/compressed/ofw-shark.c
  *
  * by Alexander Schulz
  *
@@ -10,8 +10,8 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
 #include <asm/setup.h>
 #include <asm/page.h>
 

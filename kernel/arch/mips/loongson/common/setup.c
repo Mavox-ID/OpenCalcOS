@@ -7,15 +7,15 @@
  *  Free Software Foundation;  either version 2 of the  License, or (at your
  *  option) any later version.
  */
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <asm/wbflush.h>
 
 #include <loongson.h>
 
 #ifdef CONFIG_VT
-#include <linux/console.h>
-#include <linux/screen_info.h>
+#include <beep/console.h>
+#include <beep/screen_info.h>
 #endif
 
 void (*__wbflush)(void);

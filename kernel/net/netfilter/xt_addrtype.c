@@ -9,11 +9,11 @@
  *  published by the Free Software Foundation.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/ip.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/ip.h>
 #include <net/route.h>
 
 #if IS_ENABLED(CONFIG_IP6_NF_IPTABLES)
@@ -22,8 +22,8 @@
 #include <net/ip6_fib.h>
 #endif
 
-#include <linux/netfilter/xt_addrtype.h>
-#include <linux/netfilter/x_tables.h>
+#include <beep/netfilter/xt_addrtype.h>
+#include <beep/netfilter/x_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Patrick McHardy <kaber@trash.net>");

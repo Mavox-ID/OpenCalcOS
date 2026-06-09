@@ -39,23 +39,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/tipc.h>
-#include <linux/tipc_config.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/timer.h>
-#include <linux/string.h>
+#include <beep/tipc.h>
+#include <beep/tipc_config.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/timer.h>
+#include <beep/string.h>
 #include <asm/uaccess.h>
-#include <linux/interrupt.h>
-#include <linux/atomic.h>
+#include <beep/interrupt.h>
+#include <beep/atomic.h>
 #include <asm/hardirq.h>
-#include <linux/netdevice.h>
-#include <linux/in.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <beep/netdevice.h>
+#include <beep/in.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
 
 
 #define TIPC_MOD_VER "2.0.0"

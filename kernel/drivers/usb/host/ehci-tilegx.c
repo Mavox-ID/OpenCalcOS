@@ -16,10 +16,10 @@
  * Tilera TILE-Gx USB EHCI host controller driver.
  */
 
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/usb/tilegx.h>
-#include <linux/usb.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/usb/tilegx.h>
+#include <beep/usb.h>
 
 #include <asm/homecache.h>
 

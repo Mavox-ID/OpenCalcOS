@@ -23,26 +23,26 @@
  * - Tested Page Sizes: 2048, 4096
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_mtd.h>
-#include <linux/of_gpio.h>
-#include <linux/mtd/lpc32xx_mlc.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/mtd/nand_ecc.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/delay.h>
+#include <beep/completion.h>
+#include <beep/interrupt.h>
+#include <beep/of.h>
+#include <beep/of_mtd.h>
+#include <beep/of_gpio.h>
+#include <beep/mtd/lpc32xx_mlc.h>
+#include <beep/io.h>
+#include <beep/mm.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmaengine.h>
+#include <beep/mtd/nand_ecc.h>
 
 #define DRV_NAME "lpc32xx_mlc"
 

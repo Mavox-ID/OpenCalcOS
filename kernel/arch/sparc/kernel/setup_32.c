@@ -1,38 +1,38 @@
 /*
- *  linux/arch/sparc/kernel/setup.c
+ *  beep/arch/sparc/kernel/setup.c
  *
  *  Copyright (C) 1995  David S. Miller (davem@caip.rutgers.edu)
  *  Copyright (C) 2000  Anton Blanchard (anton@samba.org)
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/initrd.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/initrd.h>
 #include <asm/smp.h>
-#include <linux/user.h>
-#include <linux/screen_info.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/syscalls.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/console.h>
-#include <linux/spinlock.h>
-#include <linux/root_dev.h>
-#include <linux/cpu.h>
-#include <linux/kdebug.h>
-#include <linux/export.h>
-#include <linux/start_kernel.h>
+#include <beep/user.h>
+#include <beep/screen_info.h>
+#include <beep/delay.h>
+#include <beep/fs.h>
+#include <beep/seq_file.h>
+#include <beep/syscalls.h>
+#include <beep/kdev_t.h>
+#include <beep/major.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/console.h>
+#include <beep/spinlock.h>
+#include <beep/root_dev.h>
+#include <beep/cpu.h>
+#include <beep/kdebug.h>
+#include <beep/export.h>
+#include <beep/start_kernel.h>
 
 #include <asm/io.h>
 #include <asm/processor.h>
@@ -272,7 +272,7 @@ struct pt_regs fake_swapper_regs;
 /* Called from head_32.S - before we have setup anything
  * in the kernel. Be very careful with what you do here.
  */
-void __init sparc32_start_kernel(struct linux_romvec *rp)
+void __init sparc32_start_kernel(struct beep_romvec *rp)
 {
 	prom_init(rp);
 
@@ -365,10 +365,10 @@ void __init setup_arch(char **cmdline_p)
 
 	prom_setsync(prom_sync_me);
 
-	if((boot_flags&BOOTME_DEBUG) && (linux_dbvec!=0) && 
-	   ((*(short *)linux_dbvec) != -1)) {
+	if((boot_flags&BOOTME_DEBUG) && (beep_dbvec!=0) && 
+	   ((*(short *)beep_dbvec) != -1)) {
 		printk("Booted under KADB. Syncing trap table.\n");
-		(*(linux_dbvec->teach_debugger))();
+		(*(beep_dbvec->teach_debugger))();
 	}
 
 	init_task.thread.kregs = &fake_swapper_regs;

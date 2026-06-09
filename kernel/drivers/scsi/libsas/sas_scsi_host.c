@@ -23,10 +23,10 @@
  *
  */
 
-#include <linux/kthread.h>
-#include <linux/firmware.h>
-#include <linux/export.h>
-#include <linux/ctype.h>
+#include <beep/kthread.h>
+#include <beep/firmware.h>
+#include <beep/export.h>
+#include <beep/ctype.h>
 
 #include "sas_internal.h"
 
@@ -42,12 +42,12 @@
 #include "../scsi_transport_api.h"
 #include "../scsi_priv.h"
 
-#include <linux/err.h>
-#include <linux/blkdev.h>
-#include <linux/freezer.h>
-#include <linux/gfp.h>
-#include <linux/scatterlist.h>
-#include <linux/libata.h>
+#include <beep/err.h>
+#include <beep/blkdev.h>
+#include <beep/freezer.h>
+#include <beep/gfp.h>
+#include <beep/scatterlist.h>
+#include <beep/libata.h>
 
 /* record final status and free the task */
 static void sas_end_task(struct scsi_cmnd *sc, struct sas_task *task)

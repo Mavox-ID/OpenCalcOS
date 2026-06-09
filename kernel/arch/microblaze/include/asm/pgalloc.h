@@ -13,8 +13,8 @@
 
 #ifdef CONFIG_MMU
 
-#include <linux/kernel.h>	/* For min/max macros */
-#include <linux/highmem.h>
+#include <beep/kernel.h>	/* For min/max macros */
+#include <beep/highmem.h>
 #include <asm/setup.h>
 #include <asm/io.h>
 #include <asm/page.h>

@@ -12,8 +12,8 @@
 #define _MN10300_SERIAL_H
 
 #ifndef __ASSEMBLY__
-#include <linux/serial_core.h>
-#include <linux/termios.h>
+#include <beep/serial_core.h>
+#include <beep/termios.h>
 #endif
 
 #include <asm/page.h>

@@ -5,7 +5,7 @@
  * BRIEF MODULE DESCRIPTION
  *	Include file for NEC VRC4173 CARDU.
  *
- * Copyright 2002 Yoichi Yuasa <yuasa@linux-mips.org>
+ * Copyright 2002 Yoichi Yuasa <yuasa@beep-mips.org>
  *
  *  This program is free software; you can redistribute it and/or modify it
  *  under the terms of the GNU General Public License as published by the
@@ -30,7 +30,7 @@
 #ifndef _VRC4173_CARDU_H
 #define _VRC4173_CARDU_H
 
-#include <linux/pci.h>
+#include <beep/pci.h>
 
 #include <pcmcia/ss.h>
 

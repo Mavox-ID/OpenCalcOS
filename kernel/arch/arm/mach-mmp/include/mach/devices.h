@@ -1,7 +1,7 @@
 #ifndef __MACH_DEVICE_H
 #define __MACH_DEVICE_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define MAX_RESOURCE_DMA	2
 

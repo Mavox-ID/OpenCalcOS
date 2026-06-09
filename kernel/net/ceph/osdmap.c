@@ -1,15 +1,15 @@
 
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include <asm/div64.h>
 
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/osdmap.h>
-#include <linux/ceph/decode.h>
-#include <linux/crush/hash.h>
-#include <linux/crush/mapper.h>
+#include <beep/ceph/libceph.h>
+#include <beep/ceph/osdmap.h>
+#include <beep/ceph/decode.h>
+#include <beep/crush/hash.h>
+#include <beep/crush/mapper.h>
 
 char *ceph_osdmap_state_str(char *str, int len, int state)
 {

@@ -14,20 +14,20 @@
  *	S5PC110: use DMA
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/onenand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/onenand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/dma-mapping.h>
+#include <beep/interrupt.h>
 
 #include <asm/mach/flash.h>
 #include <plat/regs-onenand.h>
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 enum soc_type {
 	TYPE_S3C6400,

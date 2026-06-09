@@ -5,7 +5,7 @@
 * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
 * --------------------------------------------------------------------
 *
-* linux-wlan
+* beep-wlan
 *
 *   The contents of this file are subject to the Mozilla Public
 *   License Version 1.1 (the "License"); you may not use this file
@@ -30,12 +30,12 @@
 *
 * --------------------------------------------------------------------
 *
-* Inquiries regarding the linux-wlan Open Source project can be
+* Inquiries regarding the beep-wlan Open Source project can be
 * made directly to:
 *
 * AbsoluteValue Systems Inc.
-* info@linux-wlan.com
-* http://www.linux-wlan.com
+* info@beep-wlan.com
+* http://www.beep-wlan.com
 *
 * --------------------------------------------------------------------
 *
@@ -50,16 +50,16 @@
 * --------------------------------------------------------------------
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/wireless.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
+#include <beep/wireless.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
 #include <net/sock.h>
-#include <linux/netlink.h>
+#include <beep/netlink.h>
 
 #include "p80211types.h"
 #include "p80211hdr.h"
@@ -137,7 +137,7 @@ int p80211req_dorequest(wlandevice_t *wlandev, u8 *msgbuf)
 *
 * p80211 message handler.  Primarily looks for messages that
 * belong to p80211 and then dispatches the appropriate response.
-* TODO: we don't do anything yet.  Once the linuxMIB is better
+* TODO: we don't do anything yet.  Once the beepMIB is better
 *	defined we'll need a get/set handler.
 *
 * Arguments:

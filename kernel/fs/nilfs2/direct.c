@@ -20,7 +20,7 @@
  * Written by Koji Sato <koji@osrg.net>.
  */
 
-#include <linux/errno.h>
+#include <beep/errno.h>
 #include "nilfs.h"
 #include "page.h"
 #include "direct.h"

@@ -33,13 +33,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/tty.h>
-#include <linux/poll.h>
-#include <linux/cred.h>
-#include <linux/sched.h>
-#include <linux/ratelimit.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/tty.h>
+#include <beep/poll.h>
+#include <beep/cred.h>
+#include <beep/sched.h>
+#include <beep/ratelimit.h>
 #include <asm/unaligned.h>
 
 #include "dgrp_common.h"

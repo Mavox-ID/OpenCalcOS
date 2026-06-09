@@ -25,20 +25,20 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/kobject.h>
+#include <beep/sysfs.h>
+#include <beep/pagemap.h>
+#include <beep/init.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/mutex.h>
+#include <beep/pci.h>
+#include <beep/pci_hotplug.h>
 #include <asm/uaccess.h>
 #include "../pci.h"
 

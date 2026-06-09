@@ -8,12 +8,12 @@
  * Free Software Foundation; version 2 of the License.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/regmap.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/gpio.h>
+#include <beep/regmap.h>
 
 #include <sound/core.h>
 #include <sound/soc.h>

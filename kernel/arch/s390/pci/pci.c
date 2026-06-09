@@ -2,7 +2,7 @@
  * Copyright IBM Corp. 2012
  *
  * Author(s):
- *   Jan Glauber <jang@linux.vnet.ibm.com>
+ *   Jan Glauber <jang@beep.vnet.ibm.com>
  *
  * The System z PCI code is a rewrite from a prototype by
  * the following people (Kudoz!):
@@ -18,16 +18,16 @@
 #define COMPONENT "zPCI"
 #define pr_fmt(fmt) COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/kernel_stat.h>
-#include <linux/seq_file.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/export.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/kernel_stat.h>
+#include <beep/seq_file.h>
+#include <beep/pci.h>
+#include <beep/msi.h>
 
 #include <asm/isc.h>
 #include <asm/airq.h>

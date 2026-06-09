@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-omap2/clock.c
+ *  beep/arch/arm/mach-omap2/clock.c
  *
  *  Copyright (C) 2005-2008 Texas Instruments, Inc.
  *  Copyright (C) 2004-2010 Nokia Corporation
@@ -14,15 +14,15 @@
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/delay.h>
+#include <beep/clk-provider.h>
+#include <beep/io.h>
+#include <beep/bitops.h>
 
 #include <asm/cpu.h>
 

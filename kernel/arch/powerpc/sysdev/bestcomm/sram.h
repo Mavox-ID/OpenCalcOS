@@ -14,7 +14,7 @@
 
 #include <asm/rheap.h>
 #include <asm/mmu.h>
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 
 
 /* Structure used internally */

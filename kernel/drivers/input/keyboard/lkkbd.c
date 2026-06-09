@@ -3,11 +3,11 @@
  */
 
 /*
- * LK keyboard driver for Linux, based on sunkbd.c (C) by Vojtech Pavlik
+ * LK keyboard driver for Beep, based on sunkbd.c (C) by Vojtech Pavlik
  */
 
 /*
- * DEC LK201 and LK401 keyboard driver for Linux (primary for DECstations
+ * DEC LK201 and LK401 keyboard driver for Beep (primary for DECstations
  * and VAXstations, but can also be used on any standard RS232 with an
  * adaptor).
  *
@@ -61,14 +61,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/workqueue.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/serio.h>
+#include <beep/workqueue.h>
 
 #define DRIVER_DESC	"LK keyboard driver"
 

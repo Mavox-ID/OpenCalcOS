@@ -4,8 +4,8 @@
  * Copyright (C) 2003 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
-#include <linux/init.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/string.h>
 
 #include <asm/paravirt.h>
 #include <asm/patch.h>

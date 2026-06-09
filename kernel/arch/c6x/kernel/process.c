@@ -9,14 +9,14 @@
  *  published by the Free Software Foundation.
  *
  */
-#include <linux/module.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/init_task.h>
-#include <linux/tick.h>
-#include <linux/mqueue.h>
-#include <linux/syscalls.h>
-#include <linux/reboot.h>
+#include <beep/module.h>
+#include <beep/unistd.h>
+#include <beep/ptrace.h>
+#include <beep/init_task.h>
+#include <beep/tick.h>
+#include <beep/mqueue.h>
+#include <beep/syscalls.h>
+#include <beep/reboot.h>
 
 #include <asm/syscalls.h>
 

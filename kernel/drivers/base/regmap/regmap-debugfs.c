@@ -10,11 +10,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/device.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
+#include <beep/device.h>
 
 #include "internal.h"
 

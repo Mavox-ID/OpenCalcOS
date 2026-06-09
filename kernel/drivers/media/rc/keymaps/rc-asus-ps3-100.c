@@ -11,7 +11,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 static struct rc_map_table asus_ps3_100[] = {
 	{ 0x081c, KEY_HOME },             /* home */

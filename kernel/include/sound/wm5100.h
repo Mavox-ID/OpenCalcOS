@@ -1,5 +1,5 @@
 /*
- * linux/sound/wm5100.h -- Platform data for WM5100
+ * beep/sound/wm5100.h -- Platform data for WM5100
  *
  * Copyright 2011 Wolfson Microelectronics. PLC.
  *
@@ -8,8 +8,8 @@
  * published by the Free Software Foundation.
  */
 
-#ifndef __LINUX_SND_WM5100_H
-#define __LINUX_SND_WM5100_H
+#ifndef __BEEP_SND_WM5100_H
+#define __BEEP_SND_WM5100_H
 
 enum wm5100_in_mode {
 	WM5100_IN_SE = 0,

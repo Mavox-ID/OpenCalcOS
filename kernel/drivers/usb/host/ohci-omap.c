@@ -14,12 +14,12 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/signal.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
+#include <beep/signal.h>
+#include <beep/jiffies.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
 
 #include <asm/io.h>
 #include <asm/mach-types.h>
@@ -48,7 +48,7 @@
 #endif
 
 #ifdef CONFIG_TPS65010
-#include <linux/i2c/tps65010.h>
+#include <beep/i2c/tps65010.h>
 #else
 
 #define LOW	0

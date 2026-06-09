@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/sleep.S
+ * beep/arch/unicore32/kernel/sleep.S
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -11,7 +11,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 #include <mach/hardware.h>
 

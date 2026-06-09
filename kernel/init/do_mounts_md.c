@@ -8,9 +8,9 @@
 #warning "Sparse checking disabled for this file"
 #endif
 
-#include <linux/delay.h>
-#include <linux/raid/md_u.h>
-#include <linux/raid/md_p.h>
+#include <beep/delay.h>
+#include <beep/raid/md_u.h>
+#include <beep/raid/md_p.h>
 
 #include "do_mounts.h"
 

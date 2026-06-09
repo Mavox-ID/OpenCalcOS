@@ -1,5 +1,5 @@
 /*
- * Based on linux/arch/mips/txx9/rbtx4938/setup.c,
+ * Based on beep/arch/mips/txx9/rbtx4938/setup.c,
  *	    and RBTX49xx patch from CELF patch archive.
  *
  * 2003-2005 (c) MontaVista Software, Inc.
@@ -9,22 +9,22 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/mtd/physmap.h>
-#include <linux/leds.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/string.h>
+#include <beep/module.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/serial_core.h>
+#include <beep/mtd/physmap.h>
+#include <beep/leds.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/irq.h>
 #include <asm/bootinfo.h>
 #include <asm/time.h>
 #include <asm/reboot.h>

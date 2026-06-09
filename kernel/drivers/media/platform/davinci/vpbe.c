@@ -14,19 +14,19 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/wait.h>
-#include <linux/time.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/wait.h>
+#include <beep/time.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
+#include <beep/err.h>
 
 #include <media/v4l2-device.h>
 #include <media/davinci/vpbe_types.h>

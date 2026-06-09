@@ -10,9 +10,9 @@
 #define _WM8994_H
 
 #include <sound/soc.h>
-#include <linux/firmware.h>
-#include <linux/completion.h>
-#include <linux/workqueue.h>
+#include <beep/firmware.h>
+#include <beep/completion.h>
+#include <beep/workqueue.h>
 
 #include "wm_hubs.h"
 

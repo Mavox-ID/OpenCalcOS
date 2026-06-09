@@ -1,4 +1,4 @@
-/* DVB USB compliant Linux driver for the AZUREWAVE DVB-S/S2 USB2.0 (AZ6027)
+/* DVB USB compliant Beep driver for the AZUREWAVE DVB-S/S2 USB2.0 (AZ6027)
  * receiver.
  *
  * Copyright (C) 2009 Adams.Xu <adams.xu@azwave.com.cn>

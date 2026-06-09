@@ -7,7 +7,7 @@
  *
  *	ChangeLog:
  *		....	Most of the time spent on reading sources & docs.
- *		v0.2.x	First official release for the Linux kernel.
+ *		v0.2.x	First official release for the Beep kernel.
  *		v0.3.0	Beutified and structured, some bugs fixed.
  *		v0.3.x	URBifying bulk requests and bugfixing. First relatively
  *			stable release. Still can touch device's registers only
@@ -28,16 +28,16 @@
  *			is out of the interrupt routine.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/module.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/usb.h>
+#include <beep/module.h>
 #include <asm/byteorder.h>
 #include <asm/uaccess.h>
 #include "pegasus.h"

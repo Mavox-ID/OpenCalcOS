@@ -1,6 +1,6 @@
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/console.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/console.h>
 
 #include <asm/sibyte/board.h>
 

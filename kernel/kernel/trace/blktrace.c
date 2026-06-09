@@ -15,17 +15,17 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
  */
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/blktrace_api.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/export.h>
-#include <linux/time.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/blkdev.h>
+#include <beep/blktrace_api.h>
+#include <beep/percpu.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/debugfs.h>
+#include <beep/export.h>
+#include <beep/time.h>
+#include <beep/uaccess.h>
 
 #include <trace/events/block.h>
 

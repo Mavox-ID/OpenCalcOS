@@ -20,7 +20,7 @@
  */
 
 #include "emu8000_local.h"
-#include <linux/export.h>
+#include <beep/export.h>
 #include <sound/asoundef.h>
 
 /*

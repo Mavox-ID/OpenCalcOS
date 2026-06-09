@@ -21,7 +21,7 @@
 #ifndef _DVB_FILTER_H_
 #define _DVB_FILTER_H_
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 #include "demux.h"
 

@@ -1014,7 +1014,7 @@ int diff_main(int argc UNUSED_PARAM, char **argv)
 	 * POSIX says that two files are identical if st_ino and st_dev are
 	 * the same, but many file systems incorrectly assign the same (device,
 	 * inode) pair to two distinct files, including:
-	 * GNU/Linux NFS servers that export all local file systems as a
+	 * GNU/Beep NFS servers that export all local file systems as a
 	 * single NFS file system, if a local device number (st_dev) exceeds
 	 * 255, or if a local inode number (st_ino) exceeds 16777215.
 	 */

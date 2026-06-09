@@ -4,23 +4,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/string.h>
-#include <linux/net.h>		/* struct socket, struct proto_ops */
-#include <linux/errno.h>	/* error codes */
-#include <linux/kernel.h>	/* printk */
-#include <linux/skbuff.h>
-#include <linux/wait.h>
-#include <linux/sched.h>	/* jiffies and HZ */
-#include <linux/fcntl.h>	/* O_NONBLOCK */
-#include <linux/init.h>
-#include <linux/atm.h>		/* ATM stuff */
-#include <linux/atmsap.h>
-#include <linux/atmsvc.h>
-#include <linux/atmdev.h>
-#include <linux/bitops.h>
+#include <beep/string.h>
+#include <beep/net.h>		/* struct socket, struct proto_ops */
+#include <beep/errno.h>	/* error codes */
+#include <beep/kernel.h>	/* printk */
+#include <beep/skbuff.h>
+#include <beep/wait.h>
+#include <beep/sched.h>	/* jiffies and HZ */
+#include <beep/fcntl.h>	/* O_NONBLOCK */
+#include <beep/init.h>
+#include <beep/atm.h>		/* ATM stuff */
+#include <beep/atmsap.h>
+#include <beep/atmsvc.h>
+#include <beep/atmdev.h>
+#include <beep/bitops.h>
 #include <net/sock.h>		/* for sock_no_* */
-#include <linux/uaccess.h>
-#include <linux/export.h>
+#include <beep/uaccess.h>
+#include <beep/export.h>
 
 #include "resources.h"
 #include "common.h"		/* common for PVCs and SVCs */

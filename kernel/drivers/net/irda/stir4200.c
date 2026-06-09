@@ -36,21 +36,21 @@
  * remove SOF/BOF and escape characters to/from the frame.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/usb.h>
-#include <linux/crc32.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/usb.h>
+#include <beep/crc32.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
 #include <net/irda/irda.h>
 #include <net/irda/irda_device.h>
 #include <net/irda/wrapper.h>
@@ -58,7 +58,7 @@
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
 
-MODULE_AUTHOR("Stephen Hemminger <shemminger@linux-foundation.org>");
+MODULE_AUTHOR("Stephen Hemminger <shemminger@beep-foundation.org>");
 MODULE_DESCRIPTION("IrDA-USB Dongle Driver for SigmaTel STIr4200");
 MODULE_LICENSE("GPL");
 

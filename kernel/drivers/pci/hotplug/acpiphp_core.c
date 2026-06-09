@@ -31,15 +31,15 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/pci_hotplug.h>
+#include <beep/slab.h>
+#include <beep/smp.h>
 #include "acpiphp.h"
 
 #define MY_NAME	"acpiphp"

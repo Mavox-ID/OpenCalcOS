@@ -24,11 +24,11 @@
  * 02110-1301 USA
  */
 
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
+#include <beep/device.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/uaccess.h>
 
 #include "isp.h"
 #include "ispreg.h"

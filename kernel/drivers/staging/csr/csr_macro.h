@@ -10,7 +10,7 @@
 
 *****************************************************************************/
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define FALSE	(0)
 #define TRUE	(1)

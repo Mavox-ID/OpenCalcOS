@@ -89,7 +89,7 @@ int su_main(int argc UNUSED_PARAM, char **argv)
 	/* Note: we don't use "'+': stop at first non-option" idiom here.
 	 * For su, "SCRIPT ARGS" or "-c CMD ARGS" do not stop option parsing:
 	 * ARGS starting with dash will be treated as su options,
-	 * not passed to shell. (Tested on util-linux 2.28).
+	 * not passed to shell. (Tested on util-beep 2.28).
 	 */
 	flags = getopt32(argv, "mplc:s:", &opt_command, &opt_shell);
 	argv += optind;
@@ -179,7 +179,7 @@ int su_main(int argc UNUSED_PARAM, char **argv)
 		((flags & SU_OPT_l) ? (SETUP_ENV_CLEARENV + SETUP_ENV_CHDIR) : 0)
 			+ (!(flags & SU_OPT_mp) * SETUP_ENV_CHANGEENV),
 		pw);
-	IF_SELINUX(set_current_security_context(NULL);)
+	IF_SEBEEP(set_current_security_context(NULL);)
 
 	if (opt_command) {
 		*--argv = opt_command;

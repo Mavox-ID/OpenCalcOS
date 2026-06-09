@@ -20,8 +20,8 @@
 #ifndef __PVRUSB2_HDW_H
 #define __PVRUSB2_HDW_H
 
-#include <linux/usb.h>
-#include <linux/videodev2.h>
+#include <beep/usb.h>
+#include <beep/videodev2.h>
 #include "pvrusb2-io.h"
 #include "pvrusb2-ctrl.h"
 

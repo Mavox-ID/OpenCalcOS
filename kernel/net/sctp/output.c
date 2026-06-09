@@ -43,20 +43,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/time.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/wait.h>
+#include <beep/time.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 #include <net/inet_ecn.h>
 #include <net/ip.h>
 #include <net/icmp.h>
 #include <net/net_namespace.h>
 
-#include <linux/socket.h> /* for sa_family_t */
+#include <beep/socket.h> /* for sa_family_t */
 #include <net/sock.h>
 
 #include <net/sctp/sctp.h>

@@ -2,7 +2,7 @@
 #ifndef _NF_NAT_L4PROTO_H
 #define _NF_NAT_L4PROTO_H
 #include <net/netfilter/nf_nat.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <beep/netfilter/nfnetlink_conntrack.h>
 
 struct nf_nat_range;
 struct nf_nat_l3proto;

@@ -1,16 +1,16 @@
 #define pr_fmt(fmt) "SMP alternatives: " fmt
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/stringify.h>
-#include <linux/kprobes.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/memory.h>
-#include <linux/stop_machine.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/mutex.h>
+#include <beep/list.h>
+#include <beep/stringify.h>
+#include <beep/kprobes.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/memory.h>
+#include <beep/stop_machine.h>
+#include <beep/slab.h>
 #include <asm/alternative.h>
 #include <asm/sections.h>
 #include <asm/pgtable.h>

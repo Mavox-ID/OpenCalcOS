@@ -1,6 +1,6 @@
 
-#include <linux/pci.h>
-#include <linux/acpi.h>
+#include <beep/pci.h>
+#include <beep/acpi.h>
 #include <acpi/reboot.h>
 
 void acpi_reboot(void)

@@ -1,9 +1,9 @@
 /* Include in trace.c */
 
-#include <linux/stringify.h>
-#include <linux/kthread.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/stringify.h>
+#include <beep/kthread.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
 static inline int trace_valid_entry(struct trace_entry *entry)
 {

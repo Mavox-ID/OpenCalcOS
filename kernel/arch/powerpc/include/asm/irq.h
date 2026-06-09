@@ -9,13 +9,13 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/irqdomain.h>
-#include <linux/threads.h>
-#include <linux/list.h>
-#include <linux/radix-tree.h>
+#include <beep/irqdomain.h>
+#include <beep/threads.h>
+#include <beep/list.h>
+#include <beep/radix-tree.h>
 
 #include <asm/types.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 
 extern atomic_t ppc_n_lost_interrupts;

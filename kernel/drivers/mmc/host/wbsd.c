@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/host/wbsd.c - Winbond W83L51xD SD/MMC driver
+ *  beep/drivers/mmc/host/wbsd.c - Winbond W83L51xD SD/MMC driver
  *
  *  Copyright (C) 2004-2007 Pierre Ossman, All Rights Reserved.
  *
@@ -22,19 +22,19 @@
  * - On APIC systems the FIFO empty interrupt is sometimes lost.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/pnp.h>
-#include <linux/highmem.h>
-#include <linux/mmc/host.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/pnp.h>
+#include <beep/highmem.h>
+#include <beep/mmc/host.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

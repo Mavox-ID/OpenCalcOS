@@ -15,13 +15,13 @@
  *  option) any later version.
  */
 
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/clockchips.h>
+#include <beep/io.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/jiffies.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/clockchips.h>
 
 #include <asm/time.h>
 

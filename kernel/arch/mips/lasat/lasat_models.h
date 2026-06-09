@@ -1,7 +1,7 @@
 /*
  * Model description tables
  */
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 struct product_info {
 	const char     *pi_name;

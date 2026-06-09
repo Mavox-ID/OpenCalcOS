@@ -18,12 +18,12 @@
  * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/cryptouser.h>
-#include <linux/sched.h>
+#include <beep/module.h>
+#include <beep/crypto.h>
+#include <beep/cryptouser.h>
+#include <beep/sched.h>
 #include <net/netlink.h>
-#include <linux/security.h>
+#include <beep/security.h>
 #include <net/net_namespace.h>
 #include <crypto/internal/aead.h>
 #include <crypto/internal/skcipher.h>

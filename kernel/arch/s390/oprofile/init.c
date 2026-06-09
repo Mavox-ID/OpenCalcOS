@@ -2,18 +2,18 @@
  * S390 Version
  *   Copyright IBM Corp. 2002, 2011
  *   Author(s): Thomas Spatzier (tspat@de.ibm.com)
- *   Author(s): Mahesh Salgaonkar (mahesh@linux.vnet.ibm.com)
- *   Author(s): Heinz Graalfs (graalfs@linux.vnet.ibm.com)
- *   Author(s): Andreas Krebbel (krebbel@linux.vnet.ibm.com)
+ *   Author(s): Mahesh Salgaonkar (mahesh@beep.vnet.ibm.com)
+ *   Author(s): Heinz Graalfs (graalfs@beep.vnet.ibm.com)
+ *   Author(s): Andreas Krebbel (krebbel@beep.vnet.ibm.com)
  *
  * @remark Copyright 2002-2011 OProfile authors
  */
 
-#include <linux/oprofile.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/module.h>
+#include <beep/oprofile.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/module.h>
 #include <asm/processor.h>
 
 #include "../../../drivers/oprofile/oprof.h"

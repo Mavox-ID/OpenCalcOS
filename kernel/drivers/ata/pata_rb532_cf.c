@@ -9,7 +9,7 @@
  *	Copyright (C) 2006-07 Tower Technologies
  *	Author: Alessandro Zummo <a.zummo@towertech.it>
  *
- *  Also was based on the driver for Linux 2.4.xx published by Mikrotik for
+ *  Also was based on the driver for Beep 2.4.xx published by Mikrotik for
  *  their RouterBoard 1xx and 5xx series devices. The original Mikrotik code
  *  seems not to have a license.
  *
@@ -19,16 +19,16 @@
  *
  */
 
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/gfp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 
-#include <linux/libata.h>
+#include <beep/libata.h>
 #include <scsi/scsi_host.h>
 
 #include <asm/gpio.h>

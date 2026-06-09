@@ -1,5 +1,5 @@
 /*
- * linux/fs/ext4/ioctl.c
+ * beep/fs/ext4/ioctl.c
  *
  * Copyright (C) 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -7,13 +7,13 @@
  * Universite Pierre et Marie Curie (Paris VI)
  */
 
-#include <linux/fs.h>
-#include <linux/jbd2.h>
-#include <linux/capability.h>
-#include <linux/time.h>
-#include <linux/compat.h>
-#include <linux/mount.h>
-#include <linux/file.h>
+#include <beep/fs.h>
+#include <beep/jbd2.h>
+#include <beep/capability.h>
+#include <beep/time.h>
+#include <beep/compat.h>
+#include <beep/mount.h>
+#include <beep/file.h>
 #include <asm/uaccess.h>
 #include "ext4_jbd2.h"
 #include "ext4.h"
@@ -71,7 +71,7 @@ long ext4_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 		 * This test looks nicer. Thanks to Pauline Middelink
 		 */
 		if ((flags ^ oldflags) & (EXT4_APPEND_FL | EXT4_IMMUTABLE_FL)) {
-			if (!capable(CAP_LINUX_IMMUTABLE))
+			if (!capable(CAP_BEEP_IMMUTABLE))
 				goto flags_out;
 		}
 

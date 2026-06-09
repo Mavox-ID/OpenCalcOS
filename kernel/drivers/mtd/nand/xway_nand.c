@@ -6,9 +6,9 @@
  *  Copyright © 2012 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/mtd/nand.h>
-#include <linux/of_gpio.h>
-#include <linux/of_platform.h>
+#include <beep/mtd/nand.h>
+#include <beep/of_gpio.h>
+#include <beep/of_platform.h>
 
 #include <lantiq_soc.h>
 

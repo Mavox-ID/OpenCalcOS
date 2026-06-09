@@ -21,23 +21,23 @@
 
 #undef DEBUG	/* undef for production */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/sysctl.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/sysctl.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>
 #include <asm/uaccess.h>
 #include <asm/superio.h>
 
-#include <linux/parport.h>
+#include <beep/parport.h>
 #include <asm/pdc.h>
 #include <asm/parisc-device.h>
 #include <asm/hardware.h>

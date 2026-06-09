@@ -6,7 +6,7 @@
  */
 
 /*
- * Atari, Amstrad, Commodore, Amiga, Sega, etc. joystick driver for Linux
+ * Atari, Amstrad, Commodore, Amiga, Sega, etc. joystick driver for Beep
  */
 
 /*
@@ -29,14 +29,14 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/parport.h>
-#include <linux/input.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/parport.h>
+#include <beep/input.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("Atari, Amstrad, Commodore, Amiga, Sega, etc. joystick driver");

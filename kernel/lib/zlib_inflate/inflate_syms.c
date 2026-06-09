@@ -1,14 +1,14 @@
 /*
- * linux/lib/zlib_inflate/inflate_syms.c
+ * beep/lib/zlib_inflate/inflate_syms.c
  *
  * Exported symbols for the inflate functionality.
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
-#include <linux/zlib.h>
+#include <beep/zlib.h>
 
 EXPORT_SYMBOL(zlib_inflate_workspacesize);
 EXPORT_SYMBOL(zlib_inflate);

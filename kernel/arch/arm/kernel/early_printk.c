@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/early_printk.c
+ *  beep/arch/arm/kernel/early_printk.c
  *
  *  Copyright (C) 2009 Sascha Hauer <s.hauer@pengutronix.de>
  *
@@ -8,9 +8,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/console.h>
+#include <beep/init.h>
 
 extern void printch(int);
 

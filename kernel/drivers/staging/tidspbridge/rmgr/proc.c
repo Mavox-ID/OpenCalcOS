@@ -16,10 +16,10 @@
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 /* ------------------------------------ Host OS */
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
+#include <beep/dma-mapping.h>
+#include <beep/scatterlist.h>
 #include <dspbridge/host_os.h>
 
 /*  ----------------------------------- DSP/BIOS Bridge */

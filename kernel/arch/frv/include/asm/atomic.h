@@ -14,7 +14,7 @@
 #ifndef _ASM_ATOMIC_H
 #define _ASM_ATOMIC_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/spr-regs.h>
 #include <asm/cmpxchg.h>
 

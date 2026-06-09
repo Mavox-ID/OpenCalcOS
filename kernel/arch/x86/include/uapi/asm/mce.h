@@ -1,7 +1,7 @@
 #ifndef _UAPI_ASM_X86_MCE_H
 #define _UAPI_ASM_X86_MCE_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/ioctls.h>
 
 /*
@@ -81,7 +81,7 @@ struct mce {
 	__u8  bank;	/* machine check bank */
 	__u8  cpu;	/* cpu number; obsolete; use extcpu now */
 	__u8  finished;   /* entry is valid */
-	__u32 extcpu;	/* linux cpu number that detected the error */
+	__u32 extcpu;	/* beep cpu number that detected the error */
 	__u32 socketid;	/* CPU socket ID */
 	__u32 apicid;	/* CPU initial apic ID */
 	__u64 mcgcap;	/* MCGCAP MSR: machine check capabilities of CPU */

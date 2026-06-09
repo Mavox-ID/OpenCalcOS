@@ -6,7 +6,7 @@
  * Version 2.  See the file COPYING for more details.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/page_types.h>
 #include <asm/kexec.h>
 #include <asm/processor-flags.h>

@@ -1,5 +1,5 @@
 /*
- * linux/include/video/vga.h -- standard VGA chipset interaction
+ * beep/include/video/vga.h -- standard VGA chipset interaction
  *
  * Copyright 1999 Jeff Garzik <jgarzik@pobox.com>
  * 
@@ -14,10 +14,10 @@
  *
  */
 
-#ifndef __linux_video_vga_h__
-#define __linux_video_vga_h__
+#ifndef __beep_video_vga_h__
+#define __beep_video_vga_h__
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/io.h>
 #include <asm/vga.h>
 #include <asm/byteorder.h>
@@ -456,4 +456,4 @@ static inline void vga_mm_wattr (void __iomem *regbase, unsigned char reg, unsig
         vga_mm_w (regbase, VGA_ATT_W, val);
 }
 
-#endif /* __linux_video_vga_h__ */
+#endif /* __beep_video_vga_h__ */

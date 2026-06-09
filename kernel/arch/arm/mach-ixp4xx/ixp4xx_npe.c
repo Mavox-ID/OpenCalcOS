@@ -1,5 +1,5 @@
 /*
- * Intel IXP4xx Network Processor Engine driver for Linux
+ * Intel IXP4xx Network Processor Engine driver for Beep
  *
  * Copyright (C) 2007 Krzysztof Halasa <khc@pm.waw.pl>
  *
@@ -14,12 +14,12 @@
  *   Thanks, Christian.
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/firmware.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 #include <mach/npe.h>
 
 #define DEBUG_MSG			0

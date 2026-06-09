@@ -10,13 +10,13 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/irq.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/irq.h>
 
 #include <asm/sections.h>
 #include <asm/io.h>
@@ -62,7 +62,7 @@ static int __init fixup_one_level_bus_range(struct device_node *node, int higher
  * system since they tend to have their "last" member wrong on macs
  *
  * Note that the bus numbers manipulated here are OF bus numbers, they
- * are not Linux bus numbers.
+ * are not Beep bus numbers.
  */
 static void __init fixup_bus_range(struct device_node *bridge)
 {

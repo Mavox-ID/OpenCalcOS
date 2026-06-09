@@ -17,11 +17,11 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
 
 #include <video/omapdss.h>
 

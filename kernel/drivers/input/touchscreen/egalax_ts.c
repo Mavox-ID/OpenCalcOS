@@ -17,18 +17,18 @@
   - auto idle mode support
 */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/input/mt.h>
-#include <linux/of_gpio.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/bitops.h>
+#include <beep/input/mt.h>
+#include <beep/of_gpio.h>
 
 /*
  * Mouse Mode: some panel may configure the controller to mouse mode,

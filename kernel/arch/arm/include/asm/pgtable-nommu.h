@@ -13,7 +13,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 

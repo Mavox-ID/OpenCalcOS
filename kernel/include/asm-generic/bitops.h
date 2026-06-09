@@ -2,15 +2,15 @@
 #define __ASM_GENERIC_BITOPS_H
 
 /*
- * For the benefit of those who are trying to port Linux to another
+ * For the benefit of those who are trying to port Beep to another
  * architecture, here are some C-language equivalents.  You should
  * recode these in the native assembly language, if at all possible.
  *
  * C language equivalents written by Theodore Ts'o, 9/26/92
  */
 
-#include <linux/irqflags.h>
-#include <linux/compiler.h>
+#include <beep/irqflags.h>
+#include <beep/compiler.h>
 
 /*
  * clear_bit may not imply a memory barrier
@@ -27,8 +27,8 @@
 #include <asm-generic/bitops/fls64.h>
 #include <asm-generic/bitops/find.h>
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _BEEP_BITOPS_H
+#error only <beep/bitops.h> can be included directly
 #endif
 
 #include <asm-generic/bitops/sched.h>

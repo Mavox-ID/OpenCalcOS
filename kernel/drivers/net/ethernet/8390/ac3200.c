@@ -24,15 +24,15 @@
 static const char version[] =
 	"ac3200.c:v1.01 7/1/94 Donald Becker (becker@cesdis.gsfc.nasa.gov)\n";
 
-#include <linux/module.h>
-#include <linux/eisa.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/eisa.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

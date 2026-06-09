@@ -35,8 +35,8 @@
  * front, then they'll all be woken up, but no other readers will be.
  */
 
-#ifndef _LINUX_RWSEM_H
-#error "please don't include asm/rwsem.h directly, use linux/rwsem.h instead"
+#ifndef _BEEP_RWSEM_H
+#error "please don't include asm/rwsem.h directly, use beep/rwsem.h instead"
 #endif
 
 #ifndef CONFIG_64BIT

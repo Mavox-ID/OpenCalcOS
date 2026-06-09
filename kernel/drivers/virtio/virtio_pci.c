@@ -14,17 +14,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/virtio.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_ring.h>
-#include <linux/virtio_pci.h>
-#include <linux/highmem.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/virtio.h>
+#include <beep/virtio_config.h>
+#include <beep/virtio_ring.h>
+#include <beep/virtio_pci.h>
+#include <beep/highmem.h>
+#include <beep/spinlock.h>
 
 MODULE_AUTHOR("Anthony Liguori <aliguori@us.ibm.com>");
 MODULE_DESCRIPTION("virtio-pci");

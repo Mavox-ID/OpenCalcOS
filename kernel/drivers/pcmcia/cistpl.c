@@ -12,18 +12,18 @@
  * (C) 1999		David A. Hinds
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/major.h>
+#include <beep/errno.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/pci.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
 

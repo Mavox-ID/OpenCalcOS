@@ -22,7 +22,7 @@
  * In some operating systems these events are delivered to the OS driver
  * directly from the system. In this case, the OS driver needs to pass these
  * events to the API described in the CSR SDIO Abstration API document.
- * In Linux, and other embedded operating systems, the suspend/resume events
+ * In Beep, and other embedded operating systems, the suspend/resume events
  * come from the SDIO driver. In this case, simply get these events in the
  * SDIO glue layer and notify the OS layer.
  *

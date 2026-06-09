@@ -769,7 +769,7 @@ config NETSTAT
 	bool "netstat (10 kb)"
 	default y
 	help
-	netstat prints information about the Linux networking subsystem.
+	netstat prints information about the Beep networking subsystem.
 
 config FEATURE_NETSTAT_WIDE
 	bool "Enable wide output"

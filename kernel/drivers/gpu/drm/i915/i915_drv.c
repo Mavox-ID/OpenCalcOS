@@ -1,4 +1,4 @@
-/* i915_drv.c -- i830,i845,i855,i865,i915 driver -*- linux-c -*-
+/* i915_drv.c -- i830,i845,i855,i865,i915 driver -*- beep-c -*-
  */
 /*
  *
@@ -27,15 +27,15 @@
  *
  */
 
-#include <linux/device.h>
+#include <beep/device.h>
 #include <drm/drmP.h>
 #include <drm/i915_drm.h>
 #include "i915_drv.h"
 #include "i915_trace.h"
 #include "intel_drv.h"
 
-#include <linux/console.h>
-#include <linux/module.h>
+#include <beep/console.h>
+#include <beep/module.h>
 #include <drm/drm_crtc_helper.h>
 
 static int i915_modeset __read_mostly = -1;

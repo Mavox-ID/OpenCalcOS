@@ -1,4 +1,4 @@
-#include <linux/amba/serial.h>
+#include <beep/amba/serial.h>
 #ifdef CONFIG_ARCH_INTEGRATOR_AP
 extern struct amba_pl010_data ap_uart_data;
 #else

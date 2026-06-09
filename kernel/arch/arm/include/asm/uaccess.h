@@ -11,8 +11,8 @@
 /*
  * User space memory access functions
  */
-#include <linux/string.h>
-#include <linux/thread_info.h>
+#include <beep/string.h>
+#include <beep/thread_info.h>
 #include <asm/errno.h>
 #include <asm/memory.h>
 #include <asm/domain.h>
@@ -195,7 +195,7 @@ extern int __put_user_8(void *, unsigned long long);
 #else /* CONFIG_MMU */
 
 /*
- * uClinux has only one addr space, so has simplified address limits.
+ * uCbeep has only one addr space, so has simplified address limits.
  */
 #define USER_DS			KERNEL_DS
 

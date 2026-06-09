@@ -1,5 +1,5 @@
 /*
- *  linux/fs/namei.c
+ *  beep/fs/namei.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -14,26 +14,26 @@
 /* [Feb-Apr 2000, AV] Rewrite to the new namespace architecture.
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/pagemap.h>
-#include <linux/fsnotify.h>
-#include <linux/personality.h>
-#include <linux/security.h>
-#include <linux/ima.h>
-#include <linux/syscalls.h>
-#include <linux/mount.h>
-#include <linux/audit.h>
-#include <linux/capability.h>
-#include <linux/file.h>
-#include <linux/fcntl.h>
-#include <linux/device_cgroup.h>
-#include <linux/fs_struct.h>
-#include <linux/posix_acl.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/namei.h>
+#include <beep/pagemap.h>
+#include <beep/fsnotify.h>
+#include <beep/personality.h>
+#include <beep/security.h>
+#include <beep/ima.h>
+#include <beep/syscalls.h>
+#include <beep/mount.h>
+#include <beep/audit.h>
+#include <beep/capability.h>
+#include <beep/file.h>
+#include <beep/fcntl.h>
+#include <beep/device_cgroup.h>
+#include <beep/fs_struct.h>
+#include <beep/posix_acl.h>
 #include <asm/uaccess.h>
 
 #include "internal.h"
@@ -81,7 +81,7 @@
  * "old" one. Personally, I think the new semantics is much more logical.
  * Note that "ln old new" where "new" is a symlink pointing to a non-existing
  * file does succeed in both HP-UX and SunOs, but not in Solaris
- * and in the old Linux semantics.
+ * and in the old Beep semantics.
  */
 
 /* [16-Dec-97 Kevin Buhr] For security reasons, we change some symlink
@@ -3615,7 +3615,7 @@ int vfs_link(struct dentry *old_dentry, struct inode *dir, struct dentry *new_de
  * newname.  --KAB
  *
  * We don't follow them on the oldname either to be compatible
- * with linux 2.0, and to avoid hard-linking to directories
+ * with beep 2.0, and to avoid hard-linking to directories
  * and other special files.  --ADM
  */
 SYSCALL_DEFINE5(linkat, int, olddfd, const char __user *, oldname,

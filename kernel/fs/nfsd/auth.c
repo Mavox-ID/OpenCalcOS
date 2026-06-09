@@ -1,7 +1,7 @@
 /* Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de> */
 
-#include <linux/sched.h>
-#include <linux/user_namespace.h>
+#include <beep/sched.h>
+#include <beep/user_namespace.h>
 #include "nfsd.h"
 #include "auth.h"
 

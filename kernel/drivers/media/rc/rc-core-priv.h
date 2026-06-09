@@ -16,8 +16,8 @@
 #ifndef _RC_CORE_PRIV
 #define _RC_CORE_PRIV
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 #include <media/rc-core.h>
 
 struct ir_raw_handler {

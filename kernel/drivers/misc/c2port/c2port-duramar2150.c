@@ -1,7 +1,7 @@
 /*
- *  Silicon Labs C2 port Linux support for Eurotech Duramar 2150
+ *  Silicon Labs C2 port Beep support for Eurotech Duramar 2150
  *
- *  Copyright (c) 2008 Rodolfo Giometti <giometti@linux.it>
+ *  Copyright (c) 2008 Rodolfo Giometti <giometti@beep.it>
  *  Copyright (c) 2008 Eurotech S.p.A. <info@eurotech.it>
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -9,14 +9,14 @@
  * the Free Software Foundation
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/c2port.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/c2port.h>
 
 #define DATA_PORT	0x325
 #define DIR_PORT	0x326
@@ -154,6 +154,6 @@ static void __exit duramar2150_c2port_exit(void)
 module_init(duramar2150_c2port_init);
 module_exit(duramar2150_c2port_exit);
 
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
-MODULE_DESCRIPTION("Silicon Labs C2 port Linux support for Duramar 2150");
+MODULE_AUTHOR("Rodolfo Giometti <giometti@beep.it>");
+MODULE_DESCRIPTION("Silicon Labs C2 port Beep support for Duramar 2150");
 MODULE_LICENSE("GPL");

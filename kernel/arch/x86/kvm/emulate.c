@@ -5,7 +5,7 @@
  *
  * Copyright (c) 2005 Keir Fraser
  *
- * Linux coding style, mod r/m decoder, segment base fixes, real-mode
+ * Beep coding style, mod r/m decoder, segment base fixes, real-mode
  * privileged instructions:
  *
  * Copyright (C) 2006 Qumranet
@@ -20,9 +20,9 @@
  * From: xen-unstable 10676:af9809f51f81a3c43f276f00c81a52ef558afda4
  */
 
-#include <linux/kvm_host.h>
+#include <beep/kvm_host.h>
 #include "kvm_cache_regs.h"
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/kvm_emulate.h>
 
 #include "x86.h"

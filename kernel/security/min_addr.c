@@ -1,7 +1,7 @@
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/security.h>
-#include <linux/sysctl.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/security.h>
+#include <beep/sysctl.h>
 
 /* amount of vm to protect from userspace access by both DAC and the LSM*/
 unsigned long mmap_min_addr;

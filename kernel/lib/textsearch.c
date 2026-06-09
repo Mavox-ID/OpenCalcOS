@@ -95,15 +95,15 @@
  * ==========================================================================
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/rculist.h>
-#include <linux/rcupdate.h>
-#include <linux/err.h>
-#include <linux/textsearch.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/rculist.h>
+#include <beep/rcupdate.h>
+#include <beep/err.h>
+#include <beep/textsearch.h>
+#include <beep/slab.h>
 
 static LIST_HEAD(ts_ops);
 static DEFINE_SPINLOCK(ts_mod_lock);

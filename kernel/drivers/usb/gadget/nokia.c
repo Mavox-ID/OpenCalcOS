@@ -15,8 +15,8 @@
  * version 2 of that License.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
 
 #include "u_serial.h"
 #include "u_ether.h"

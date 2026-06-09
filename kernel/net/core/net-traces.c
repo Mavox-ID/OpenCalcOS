@@ -4,23 +4,23 @@
  * Copyright (C) 2009 Neil Horman <nhorman@tuxdriver.com>
  */
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/string.h>
-#include <linux/if_arp.h>
-#include <linux/inetdevice.h>
-#include <linux/inet.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/netpoll.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/rcupdate.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/netlink.h>
-#include <linux/net_dropmon.h>
-#include <linux/slab.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/string.h>
+#include <beep/if_arp.h>
+#include <beep/inetdevice.h>
+#include <beep/inet.h>
+#include <beep/interrupt.h>
+#include <beep/export.h>
+#include <beep/netpoll.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/rcupdate.h>
+#include <beep/types.h>
+#include <beep/workqueue.h>
+#include <beep/netlink.h>
+#include <beep/net_dropmon.h>
+#include <beep/slab.h>
 
 #include <asm/unaligned.h>
 #include <asm/bitops.h>

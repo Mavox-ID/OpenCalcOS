@@ -1,10 +1,10 @@
-#include <linux/init.h>
-#include <linux/kthread.h>
-#include <linux/hrtimer.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
+#include <beep/init.h>
+#include <beep/kthread.h>
+#include <beep/hrtimer.h>
+#include <beep/fs.h>
+#include <beep/debugfs.h>
+#include <beep/export.h>
+#include <beep/spinlock.h>
 
 
 static int ss_get(void *data, u64 *val)

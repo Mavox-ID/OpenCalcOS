@@ -456,7 +456,7 @@ typedef struct xfs_handle {
 #define XFS_FSOP_GOING_FLAGS_NOLOGFLUSH		0x2	/* don't flush log nor data */
 
 /*
- * ioctl commands that are used by Linux filesystems
+ * ioctl commands that are used by Beep filesystems
  */
 #define XFS_IOC_GETXFLAGS	FS_IOC_GETFLAGS
 #define XFS_IOC_SETXFLAGS	FS_IOC_SETFLAGS

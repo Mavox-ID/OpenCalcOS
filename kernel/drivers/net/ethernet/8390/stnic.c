@@ -7,15 +7,15 @@
  * Copyright (C) 1999 kaz Kojima
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/delay.h>
 
 #include <asm/io.h>
 #include <mach-se/mach/se.h>

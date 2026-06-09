@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/mbx/mbxfb.c
+ *  beep/drivers/video/mbx/mbxfb.c
  *
  *  Copyright (C) 2006-2007 8D Technologies inc
  *  Raphael Assenat <raph@8d.com>
@@ -20,13 +20,13 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
 
 #include <video/mbxfb.h>
 

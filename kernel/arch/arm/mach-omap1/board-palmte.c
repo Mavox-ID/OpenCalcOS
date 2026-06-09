@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/board-palmte.c
+ * beep/arch/arm/mach-omap1/board-palmte.c
  *
  * Modified from board-generic.c
  *
@@ -7,8 +7,8 @@
  *
  * Original version : Laurent Gonzalez
  *
- * Maintainers : http://palmtelinux.sf.net
- *                palmtelinux-developpers@lists.sf.net
+ * Maintainers : http://palmtebeep.sf.net
+ *                palmtebeep-developpers@lists.sf.net
  *
  * Copyright (c) 2006 Andrzej Zaborowski  <balrog@zabor.org>
  *
@@ -16,19 +16,19 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/spi/spi.h>
-#include <linux/interrupt.h>
-#include <linux/apm-emulation.h>
-#include <linux/omapfb.h>
-#include <linux/platform_data/omap1_bl.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/spi/spi.h>
+#include <beep/interrupt.h>
+#include <beep/apm-emulation.h>
+#include <beep/omapfb.h>
+#include <beep/platform_data/omap1_bl.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -37,9 +37,9 @@
 #include <mach/flash.h>
 #include <mach/mux.h>
 #include <mach/tc.h>
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 #include <mach/irda.h>
-#include <linux/platform_data/keypad-omap.h>
+#include <beep/platform_data/keypad-omap.h>
 
 #include <mach/hardware.h>
 #include <mach/usb.h>

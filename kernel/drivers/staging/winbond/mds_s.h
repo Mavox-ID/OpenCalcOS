@@ -1,9 +1,9 @@
 #ifndef __WINBOND_MDS_H
 #define __WINBOND_MDS_H
 
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/atomic.h>
+#include <beep/timer.h>
+#include <beep/types.h>
+#include <beep/atomic.h>
 
 #include "localpara.h"
 #include "mac_structures.h"

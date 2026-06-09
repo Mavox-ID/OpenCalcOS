@@ -12,7 +12,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  *
- * Copyright SUSE Linux Products GmbH 2010
+ * Copyright SUSE Beep Products GmbH 2010
  *
  * Authors: Alexander Graf <agraf@suse.de>
  */
@@ -314,7 +314,7 @@ no_dcbz32_off:
 #endif /* CONFIG_PPC_BOOK3S_64 */
 
 	/*
-	 * For some interrupts, we need to call the real Linux
+	 * For some interrupts, we need to call the real Beep
 	 * handler, so it can do work for us. This has to happen
 	 * as if the interrupt arrived from the kernel though,
 	 * so let's fake it here where most state is restored.

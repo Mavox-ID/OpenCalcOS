@@ -4,7 +4,7 @@
 /*
  * ELF register definitions..
  */
-#include <linux/thread_info.h>
+#include <beep/thread_info.h>
 
 #include <asm/ptrace.h>
 #include <asm/user.h>
@@ -325,15 +325,15 @@ else									\
 #define VDSO_ENTRY							\
 	((unsigned long)VDSO32_SYMBOL(VDSO_CURRENT_BASE, vsyscall))
 
-struct linux_binprm;
+struct beep_binprm;
 
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES 1
-extern int arch_setup_additional_pages(struct linux_binprm *bprm,
+extern int arch_setup_additional_pages(struct beep_binprm *bprm,
 				       int uses_interp);
-extern int x32_setup_additional_pages(struct linux_binprm *bprm,
+extern int x32_setup_additional_pages(struct beep_binprm *bprm,
 				      int uses_interp);
 
-extern int syscall32_setup_pages(struct linux_binprm *, int exstack);
+extern int syscall32_setup_pages(struct beep_binprm *, int exstack);
 #define compat_arch_setup_additional_pages	syscall32_setup_pages
 
 extern unsigned long arch_randomize_brk(struct mm_struct *mm);

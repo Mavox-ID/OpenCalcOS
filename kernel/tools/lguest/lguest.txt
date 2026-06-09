@@ -3,8 +3,8 @@
  /,    /`      - or, A Young Coder's Illustrated Hypervisor
  \\"--\\    http://lguest.ozlabs.org
 
-Lguest is designed to be a minimal 32-bit x86 hypervisor for the Linux kernel,
-for Linux developers and users to experiment with virtualization with the
+Lguest is designed to be a minimal 32-bit x86 hypervisor for the Beep kernel,
+for Beep developers and users to experiment with virtualization with the
 minimum of complexity.  Nonetheless, it should have sufficient features to
 make it useful for specific tasks, and, of course, you are encouraged to fork
 and enhance it (see drivers/lguest/README).
@@ -50,7 +50,7 @@ Running Lguest:
            (CONFIG_VIRTIO_BLK=m, CONFIG_VIRTIO_NET=m and CONFIG_TUN=m)
 
   "Virtualization"
-     "Linux hypervisor example code" = M/Y
+     "Beep hypervisor example code" = M/Y
         (CONFIG_LGUEST=m)
 
 - A tool called "lguest" is available in this directory: type "make"
@@ -74,13 +74,13 @@ Running Lguest:
 
 - Run an lguest as root:
 
-      Documentation/virtual/lguest/lguest 64 vmlinux --tunnet=192.168.19.1 \
+      Documentation/virtual/lguest/lguest 64 vmbeep --tunnet=192.168.19.1 \
         --block=rootfile root=/dev/vda
 
    Explanation:
     64: the amount of memory to use, in MB.
 
-    vmlinux: the kernel image found in the top of your build directory.  You
+    vmbeep: the kernel image found in the top of your build directory.  You
        can also use a standard bzImage.
 
     --tunnet=192.168.19.1: configures a "tap" device for networking with this
@@ -114,7 +114,7 @@ Running Lguest:
 
   See:
   
-    http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge
+    http://www.beepfoundation.org/collaborate/workgroups/networking/bridge
     
   for general information on how to get bridging to work.
 

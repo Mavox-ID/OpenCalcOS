@@ -19,10 +19,10 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/export.h>
-#include <linux/errno.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/export.h>
+#include <beep/errno.h>
 #include <sound/core.h>
 
 /**

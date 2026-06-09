@@ -1,7 +1,7 @@
 #ifndef _SPARC64_PSTATE_H
 #define _SPARC64_PSTATE_H
 
-#include <linux/const.h>
+#include <beep/const.h>
 
 /* The V9 PSTATE Register (with SpitFire extensions).
  *
@@ -25,7 +25,7 @@
 #define PSTATE_IE   _AC(0x0000000000000002,UL) /* Interrupt Enable.	*/
 #define PSTATE_AG   _AC(0x0000000000000001,UL) /* Alternate Globals.	*/
 
-/* The V9 TSTATE Register (with SpitFire and Linux extensions).
+/* The V9 TSTATE Register (with SpitFire and Beep extensions).
  *
  * ---------------------------------------------------------------------
  * |  Resv |  GL  |  CCR  |  ASI  |  %pil  |  PSTATE  |  Resv  |  CWP  |
@@ -45,7 +45,7 @@
 #define TSTATE_IOVFL	_AC(0x0000000200000000,UL) /* %icc Overflow.	*/
 #define TSTATE_ICARRY	_AC(0x0000000100000000,UL) /* %icc Carry.	*/
 #define TSTATE_ASI	_AC(0x00000000ff000000,UL) /* AddrSpace ID.	*/
-#define TSTATE_PIL	_AC(0x0000000000f00000,UL) /* %pil (Linux traps)*/
+#define TSTATE_PIL	_AC(0x0000000000f00000,UL) /* %pil (Beep traps)*/
 #define TSTATE_PSTATE	_AC(0x00000000000fff00,UL) /* PSTATE.		*/
 #define TSTATE_IG	_AC(0x0000000000080000,UL) /* Interrupt Globals.*/
 #define TSTATE_MG	_AC(0x0000000000040000,UL) /* MMU Globals.	*/

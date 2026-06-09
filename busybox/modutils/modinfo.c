@@ -9,7 +9,7 @@
 //config:	bool "modinfo (24 kb)"
 //config:	default y
 //config:	help
-//config:	Show information about a Linux Kernel module
+//config:	Show information about a Beep Kernel module
 
 //applet:IF_MODINFO(APPLET_NOEXEC(modinfo, modinfo, BB_DIR_SBIN, BB_SUID_DROP, modinfo))
 

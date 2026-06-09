@@ -1,22 +1,22 @@
 /*
  * SGI IOC3 master driver and IRQ demuxer
  *
- * Copyright (c) 2005 Stanislaw Skowronek <skylark@linux-mips.org>
+ * Copyright (c) 2005 Stanislaw Skowronek <skylark@beep-mips.org>
  * Heavily based on similar work by:
  *   Brent Casavant <bcasavan@sgi.com> - IOC4 master driver
  *   Pat Gefre <pfg@sgi.com> - IOC3 serial port IRQ demuxer
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/ioc3.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
+#include <beep/ioc3.h>
+#include <beep/rwsem.h>
+#include <beep/slab.h>
 
 #define IOC3_PCI_SIZE 0x100000
 
@@ -831,7 +831,7 @@ static void __exit ioc3_exit(void)
 module_init(ioc3_init);
 module_exit(ioc3_exit);
 
-MODULE_AUTHOR("Stanislaw Skowronek <skylark@linux-mips.org>");
+MODULE_AUTHOR("Stanislaw Skowronek <skylark@beep-mips.org>");
 MODULE_DESCRIPTION("PCI driver for SGI IOC3");
 MODULE_LICENSE("GPL");
 

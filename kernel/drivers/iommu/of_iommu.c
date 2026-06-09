@@ -17,9 +17,9 @@
  * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/export.h>
-#include <linux/limits.h>
-#include <linux/of.h>
+#include <beep/export.h>
+#include <beep/limits.h>
+#include <beep/of.h>
 
 /**
  * of_get_dma_window - Parse *dma-window property and returns 0 if found.

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-sa1100/cerf.c
+ * beep/arch/arm/mach-sa1100/cerf.c
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -10,16 +10,16 @@
  * Jan-2004 : Removed io map for flash [FB]
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/tty.h>
+#include <beep/platform_data/sa11x0-serial.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/gpio.h>
+#include <beep/leds.h>
 
 #include <mach/hardware.h>
 #include <asm/setup.h>
@@ -30,7 +30,7 @@
 #include <asm/mach/map.h>
 
 #include <mach/cerf.h>
-#include <linux/platform_data/mfd-mcp-sa11x0.h>
+#include <beep/platform_data/mfd-mcp-sa11x0.h>
 #include <mach/irqs.h>
 #include "generic.h"
 

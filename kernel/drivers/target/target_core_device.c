@@ -24,15 +24,15 @@
  *
  ******************************************************************************/
 
-#include <linux/net.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/in.h>
-#include <linux/export.h>
+#include <beep/net.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/kthread.h>
+#include <beep/in.h>
+#include <beep/export.h>
 #include <net/sock.h>
 #include <net/tcp.h>
 #include <scsi/scsi.h>
@@ -1034,7 +1034,7 @@ int se_dev_set_block_size(struct se_device *dev, u32 block_size)
 
 	if (dev->transport->transport_type == TRANSPORT_PLUGIN_PHBA_PDEV) {
 		pr_err("dev[%p]: Not allowed to change block_size for"
-			" Physical Device, use for Linux/SCSI to change"
+			" Physical Device, use for Beep/SCSI to change"
 			" block_size for underlying hardware\n", dev);
 		return -EINVAL;
 	}
@@ -1314,7 +1314,7 @@ static void scsi_dump_inquiry(struct se_device *dev)
 	char buf[17];
 	int i, device_type;
 	/*
-	 * Print Linux/SCSI style INQUIRY formatting to the kernel ring buffer
+	 * Print Beep/SCSI style INQUIRY formatting to the kernel ring buffer
 	 */
 	for (i = 0; i < 8; i++)
 		if (wwn->vendor[i] >= 0x20)

@@ -10,8 +10,8 @@
  * or (at your option) any later version.
  */
 
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <beep/io.h>
+#include <beep/delay.h>
 #include <mach/map.h>
 
 #include "gsc-core.h"

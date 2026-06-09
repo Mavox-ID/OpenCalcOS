@@ -1,6 +1,6 @@
-#include <linux/module.h>
-#include <linux/preempt.h>
-#include <linux/smp.h>
+#include <beep/module.h>
+#include <beep/preempt.h>
+#include <beep/smp.h>
 #include <asm/msr.h>
 
 static void __rdmsr_on_cpu(void *info)

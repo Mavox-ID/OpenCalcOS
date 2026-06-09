@@ -9,7 +9,7 @@
  * for more details.
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 
 #include <asm/page.h>
 #include <asm/cache.h>
@@ -138,7 +138,7 @@ fpu_in_use:	.quad	0
  * . set CPU to a consistent state
  *   . registers (including stack pointer and current/KCR0)
  *   . NOT expecting to set Exception handling nor VBR/RESVEC/DCR
- *     at this stage. This is all to later Linux initialization steps.
+ *     at this stage. This is all to later Beep initialization steps.
  *   . initialize FPU
  * . clear BSS
  * . jump into start_kernel()
@@ -324,7 +324,7 @@ hyperspace:			    /* ... that's the next instruction !  */
 clear_quad:
 	st.q	r22, 0, ZERO
 	addi	r22, 8, r22
-	bne	r22, r23, tr1		/* Both quad aligned, see vmlinux.lds.S */
+	bne	r22, r23, tr1		/* Both quad aligned, see vmbeep.lds.S */
 #endif
 	pta/u	hopeless, tr1
 

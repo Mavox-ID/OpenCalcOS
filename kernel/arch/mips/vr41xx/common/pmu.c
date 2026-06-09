@@ -1,7 +1,7 @@
 /*
  *  pmu.c, Power Management Unit routines for NEC VR4100 series.
  *
- *  Copyright (C) 2003-2007  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2003-2007  Yoichi Yuasa <yuasa@beep-mips.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -17,13 +17,13 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/pm.h>
-#include <linux/sched.h>
-#include <linux/types.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/pm.h>
+#include <beep/sched.h>
+#include <beep/types.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cpu.h>

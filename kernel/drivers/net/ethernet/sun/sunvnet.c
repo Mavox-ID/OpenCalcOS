@@ -5,16 +5,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/etherdevice.h>
+#include <beep/mutex.h>
 
 #include <asm/vio.h>
 #include <asm/ldc.h>

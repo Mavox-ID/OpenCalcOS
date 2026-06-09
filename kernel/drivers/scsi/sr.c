@@ -4,7 +4,7 @@
  *
  *  adapted from:
  *      sd.c Copyright (C) 1992 Drew Eckhardt
- *      Linux scsi disk driver by
+ *      Beep scsi disk driver by
  *              Drew Eckhardt <drew@colorado.edu>
  *
  *	Modified by Eric Youngdale ericy@andante.org to
@@ -32,19 +32,19 @@
  *	check resource allocation in sr_init and some cleanups
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/bio.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/cdrom.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/bio.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/cdrom.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 
 #include <scsi/scsi.h>

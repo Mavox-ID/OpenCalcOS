@@ -6,12 +6,12 @@
  * Copyright (C) 2011, 2012 Cavium, Inc.
  */
 
-#include <linux/platform_device.h>
-#include <linux/mdio-mux.h>
-#include <linux/of_mdio.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/phy.h>
+#include <beep/platform_device.h>
+#include <beep/mdio-mux.h>
+#include <beep/of_mdio.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/phy.h>
 
 #define DRV_VERSION "1.0"
 #define DRV_DESCRIPTION "MDIO bus multiplexer driver"

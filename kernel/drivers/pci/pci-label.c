@@ -16,19 +16,19 @@
  * the instance number and string from the type 41 record and exports
  * it to sysfs.
  *
- * Please see http://linux.dell.com/wiki/index.php/Oss/libnetdevname for more
+ * Please see http://beep.dell.com/wiki/index.php/Oss/libnetdevname for more
  * information.
  */
 
-#include <linux/dmi.h>
-#include <linux/sysfs.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/nls.h>
-#include <linux/acpi.h>
-#include <linux/pci-acpi.h>
+#include <beep/dmi.h>
+#include <beep/sysfs.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/nls.h>
+#include <beep/acpi.h>
+#include <beep/pci-acpi.h>
 #include <acpi/acpi_bus.h>
 #include "pci.h"
 

@@ -9,10 +9,10 @@
  *  by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/string.h>
 
 #include <asm/bootinfo.h>
 #include <asm/addrspace.h>

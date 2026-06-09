@@ -20,13 +20,13 @@
 #ifndef _TI_CPTS_H_
 #define _TI_CPTS_H_
 
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clocksource.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/skbuff.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/clocksource.h>
+#include <beep/device.h>
+#include <beep/list.h>
+#include <beep/ptp_clock_kernel.h>
+#include <beep/skbuff.h>
 
 struct cpsw_cpts {
 	u32 idver;                /* Identification and version */

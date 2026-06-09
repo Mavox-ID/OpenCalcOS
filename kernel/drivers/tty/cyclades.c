@@ -53,39 +53,39 @@
 /*
  * Include section
  */
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/cyclades.h>
-#include <linux/mm.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
-#include <linux/firmware.h>
-#include <linux/device.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial.h>
+#include <beep/major.h>
+#include <beep/string.h>
+#include <beep/fcntl.h>
+#include <beep/ptrace.h>
+#include <beep/cyclades.h>
+#include <beep/mm.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/bitops.h>
+#include <beep/firmware.h>
+#include <beep/device.h>
+#include <beep/slab.h>
 
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
 
-#include <linux/stat.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/stat.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 
 static void cy_send_xchar(struct tty_struct *tty, char ch);
 
@@ -3673,7 +3673,7 @@ static int cyz_load_fw(struct pci_dev *pdev, void __iomem *base_addr,
 		goto err;
 	}
 
-	cy_writel(&pt_zfwctrl->board_ctrl.op_system, C_OS_LINUX);
+	cy_writel(&pt_zfwctrl->board_ctrl.op_system, C_OS_BEEP);
 	cy_writel(&pt_zfwctrl->board_ctrl.dr_version, DRIVER_VERSION);
 
 	/*

@@ -13,9 +13,9 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/fs.h>
-#include <linux/quotaops.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/quotaops.h>
+#include <beep/slab.h>
 #include "ext4_jbd2.h"
 #include "ext4.h"
 #include "ext4_extents.h"

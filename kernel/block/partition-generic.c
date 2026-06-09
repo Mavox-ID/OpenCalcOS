@@ -9,14 +9,14 @@
  *  contained.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/ctype.h>
-#include <linux/genhd.h>
-#include <linux/blktrace_api.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/kmod.h>
+#include <beep/ctype.h>
+#include <beep/genhd.h>
+#include <beep/blktrace_api.h>
 
 #include "partitions/check.h"
 

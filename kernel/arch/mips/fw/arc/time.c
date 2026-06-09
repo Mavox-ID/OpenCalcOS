@@ -7,15 +7,15 @@
  *
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
  */
-#include <linux/init.h>
+#include <beep/init.h>
 
 #include <asm/fw/arc/types.h>
 #include <asm/sgialib.h>
 
-struct linux_tinfo * __init
+struct beep_tinfo * __init
 ArcGetTime(VOID)
 {
-	return (struct linux_tinfo *) ARC_CALL0(get_tinfo);
+	return (struct beep_tinfo *) ARC_CALL0(get_tinfo);
 }
 
 ULONG __init

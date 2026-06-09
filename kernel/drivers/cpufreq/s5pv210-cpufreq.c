@@ -9,16 +9,16 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/cpufreq.h>
-#include <linux/reboot.h>
-#include <linux/regulator/consumer.h>
-#include <linux/suspend.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/cpufreq.h>
+#include <beep/reboot.h>
+#include <beep/regulator/consumer.h>
+#include <beep/suspend.h>
 
 #include <mach/map.h>
 #include <mach/regs-clock.h>

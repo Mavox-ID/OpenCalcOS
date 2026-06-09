@@ -17,18 +17,18 @@
  * subsystem list maintains.
  */
 
-#include <linux/device.h>
-#include <linux/kallsyms.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/resume-trace.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/async.h>
-#include <linux/suspend.h>
-#include <linux/cpuidle.h>
+#include <beep/device.h>
+#include <beep/kallsyms.h>
+#include <beep/export.h>
+#include <beep/mutex.h>
+#include <beep/pm.h>
+#include <beep/pm_runtime.h>
+#include <beep/resume-trace.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/async.h>
+#include <beep/suspend.h>
+#include <beep/cpuidle.h>
 #include "../base.h"
 #include "power.h"
 

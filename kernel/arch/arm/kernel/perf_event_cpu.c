@@ -18,13 +18,13 @@
  */
 #define pr_fmt(fmt) "CPU PMU: " fmt
 
-#include <linux/bitmap.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/bitmap.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
 #include <asm/cputype.h>
 #include <asm/irq_regs.h>

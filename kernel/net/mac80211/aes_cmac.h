@@ -9,7 +9,7 @@
 #ifndef AES_CMAC_H
 #define AES_CMAC_H
 
-#include <linux/crypto.h>
+#include <beep/crypto.h>
 
 struct crypto_cipher * ieee80211_aes_cmac_key_setup(const u8 key[]);
 void ieee80211_aes_cmac(struct crypto_cipher *tfm, const u8 *aad,

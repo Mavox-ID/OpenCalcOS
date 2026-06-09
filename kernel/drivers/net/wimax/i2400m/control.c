@@ -32,7 +32,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  *
- * Intel Corporation <linux-wimax@intel.com>
+ * Intel Corporation <beep-wimax@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *  - Initial implementation
  *
@@ -75,11 +75,11 @@
 
 #include <stdarg.h>
 #include "i2400m.h"
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/wimax/i2400m.h>
-#include <linux/export.h>
-#include <linux/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/wimax/i2400m.h>
+#include <beep/export.h>
+#include <beep/moduleparam.h>
 
 
 #define D_SUBMODULE control
@@ -687,7 +687,7 @@ void i2400m_msg_to_dev_cancel_wait(struct i2400m *i2400m, int code)
  *
  * This function delivers a message/command to the device and waits
  * for an ack to be received. The format is described in
- * linux/wimax/i2400m.h. In summary, a command/get/set is followed by an
+ * beep/wimax/i2400m.h. In summary, a command/get/set is followed by an
  * ack.
  *
  * This function will not check the ack status, that's left up to the

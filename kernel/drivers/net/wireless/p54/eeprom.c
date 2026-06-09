@@ -16,15 +16,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
-#include <linux/sort.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/firmware.h>
+#include <beep/etherdevice.h>
+#include <beep/sort.h>
+#include <beep/slab.h>
 
 #include <net/mac80211.h>
-#include <linux/crc-ccitt.h>
-#include <linux/export.h>
+#include <beep/crc-ccitt.h>
+#include <beep/export.h>
 
 #include "p54.h"
 #include "eeprom.h"

@@ -8,14 +8,14 @@
  *              future expansion to five letters.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/parport.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>
+#include <beep/parport.h>
+#include <beep/workqueue.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 #include <asm/io.h>
 
 #include <scsi/scsi.h>
@@ -238,7 +238,7 @@ static int imm_negotiate(imm_struct * tmp)
 	 * sequence. I have yet to obtain a copy of the above standard
 	 * so this is a bit of a guess...
 	 *
-	 * A fair chunk of this is based on the Linux parport implementation
+	 * A fair chunk of this is based on the Beep parport implementation
 	 * of IEEE 1284.
 	 *
 	 * Return 0 if data available

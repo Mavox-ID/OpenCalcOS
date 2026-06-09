@@ -20,7 +20,7 @@
 #ifndef _BF6XX_SPORT_H_
 #define _BF6XX_SPORT_H_
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 #include <asm/bfin_sport3.h>
 
 struct sport_device {

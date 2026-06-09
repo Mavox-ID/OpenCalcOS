@@ -15,9 +15,9 @@
 #include "matroxfb_maven.h"
 #include "matroxfb_misc.h"
 #include "matroxfb_DAC1064.h"
-#include <linux/i2c.h>
-#include <linux/matroxfb.h>
-#include <linux/slab.h>
+#include <beep/i2c.h>
+#include <beep/matroxfb.h>
+#include <beep/slab.h>
 #include <asm/div64.h>
 
 #define MGATVO_B	1

@@ -14,15 +14,15 @@
 
 #undef DEBUG
 
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
+#include <beep/fb.h>
+#include <beep/delay.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
 #if defined(CONFIG_OF)
-#include <linux/of_platform.h>
+#include <beep/of_platform.h>
 #endif
 #include "mb862xxfb.h"
 #include "mb862xx_reg.h"

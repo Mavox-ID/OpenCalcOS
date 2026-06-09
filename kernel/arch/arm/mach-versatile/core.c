@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-versatile/core.c
+ *  beep/arch/arm/mach-versatile/core.c
  *
  *  Copyright (C) 1999 - 2003 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd
@@ -18,24 +18,24 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/clcd.h>
-#include <linux/amba/pl061.h>
-#include <linux/amba/mmci.h>
-#include <linux/amba/pl022.h>
-#include <linux/io.h>
-#include <linux/irqchip/versatile-fpga.h>
-#include <linux/gfp.h>
-#include <linux/clkdev.h>
-#include <linux/mtd/physmap.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/irqdomain.h>
+#include <beep/of_address.h>
+#include <beep/of_platform.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/clcd.h>
+#include <beep/amba/pl061.h>
+#include <beep/amba/mmci.h>
+#include <beep/amba/pl022.h>
+#include <beep/io.h>
+#include <beep/irqchip/versatile-fpga.h>
+#include <beep/gfp.h>
+#include <beep/clkdev.h>
+#include <beep/mtd/physmap.h>
 
 #include <asm/irq.h>
 #include <asm/hardware/arm_timer.h>

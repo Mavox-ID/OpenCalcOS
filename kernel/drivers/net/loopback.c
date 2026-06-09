@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -15,7 +15,7 @@
  *		Alan Cox	:	Rejig for NET3.029 snap #3
  *		Alan Cox	: 	Fixed NET3.029 bugs and sped up
  *		Larry McVoy	:	Tiny tweak to double performance
- *		Alan Cox	:	Backed out LMV's tweak - the linux mm
+ *		Alan Cox	:	Backed out LMV's tweak - the beep mm
  *					can't take it...
  *              Michael Griffith:       Don't bother computing the checksums
  *                                      on packets received on the loopback
@@ -28,36 +28,36 @@
  *		as published by the Free Software Foundation; either version
  *		2 of the License, or (at your option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/in.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/jiffies.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/fs.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/socket.h>
+#include <beep/errno.h>
+#include <beep/fcntl.h>
+#include <beep/in.h>
+#include <beep/init.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>
 
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
+#include <beep/inet.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/ethtool.h>
 #include <net/sock.h>
 #include <net/checksum.h>
-#include <linux/if_ether.h>	/* For the statistics structure. */
-#include <linux/if_arp.h>	/* For ARPHRD_ETHER */
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/percpu.h>
+#include <beep/if_ether.h>	/* For the statistics structure. */
+#include <beep/if_arp.h>	/* For ARPHRD_ETHER */
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/percpu.h>
 #include <net/net_namespace.h>
-#include <linux/u64_stats_sync.h>
+#include <beep/u64_stats_sync.h>
 
 struct pcpu_lstats {
 	u64			packets;

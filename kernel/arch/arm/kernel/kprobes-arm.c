@@ -58,9 +58,9 @@
  * TODO: ifdef out some instruction decoding based on architecture.
  */
 
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/kprobes.h>
+#include <beep/module.h>
 
 #include "kprobes.h"
 
@@ -68,7 +68,7 @@
 
 #define branch_displacement(insn) sign_extend(((insn) & 0xffffff) << 2, 25)
 
-#if  __LINUX_ARM_ARCH__ >= 6
+#if  __BEEP_ARM_ARCH__ >= 6
 #define BLX(reg)	"blx	"reg"		\n\t"
 #else
 #define BLX(reg)	"mov	lr, pc		\n\t"	\
@@ -519,7 +519,7 @@ static const union decode_item arm_cccc_0000_____1001_table[] = {
 static const union decode_item arm_cccc_0001_____1001_table[] = {
 	/* Synchronization primitives					*/
 
-#if __LINUX_ARM_ARCH__ < 6
+#if __BEEP_ARM_ARCH__ < 6
 	/* Deprecated on ARMv6 and may be UNDEFINED on v7		*/
 	/* SMP/SWPB		cccc 0001 0x00 xxxx xxxx xxxx 1001 xxxx */
 	DECODE_EMULATEX	(0x0fb000f0, 0x01000090, emulate_rd12rn16rm0_rwflags_nopc,

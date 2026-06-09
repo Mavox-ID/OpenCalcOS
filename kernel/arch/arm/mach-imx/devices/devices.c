@@ -16,11 +16,11 @@
  * Boston, MA  02110-1301, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
 
 struct device mxc_aips_bus = {
 	.init_name	= "mxc_aips",

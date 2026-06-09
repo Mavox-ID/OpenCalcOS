@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# User Mode Linux/i386 3.3.0 Kernel Configuration
+# User Mode Beep/i386 3.3.0 Kernel Configuration
 #
 CONFIG_DEFCONFIG_LIST="arch/$ARCH/defconfig"
 CONFIG_UML=y

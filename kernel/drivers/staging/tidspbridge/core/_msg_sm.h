@@ -20,7 +20,7 @@
 #ifndef _MSG_SM_
 #define _MSG_SM_
 
-#include <linux/list.h>
+#include <beep/list.h>
 #include <dspbridge/msgdefs.h>
 
 /*

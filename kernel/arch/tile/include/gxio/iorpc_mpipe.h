@@ -13,8 +13,8 @@
  */
 
 /* This file is machine-generated; DO NOT EDIT! */
-#ifndef __GXIO_MPIPE_LINUX_RPC_H__
-#define __GXIO_MPIPE_LINUX_RPC_H__
+#ifndef __GXIO_MPIPE_BEEP_RPC_H__
+#define __GXIO_MPIPE_BEEP_RPC_H__
 
 #include <hv/iorpc.h>
 
@@ -22,8 +22,8 @@
 #include <asm/page.h>
 #include <gxio/kiorpc.h>
 #include <gxio/mpipe.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <beep/string.h>
+#include <beep/module.h>
 #include <asm/pgtable.h>
 
 #define GXIO_MPIPE_OP_ALLOC_BUFFER_STACKS IORPC_OPCODE(IORPC_FORMAT_NONE, 0x1200)
@@ -133,4 +133,4 @@ int gxio_mpipe_get_mmio_base(gxio_mpipe_context_t * context, HV_PTE *base);
 int gxio_mpipe_check_mmio_offset(gxio_mpipe_context_t * context,
 				 unsigned long offset, unsigned long size);
 
-#endif /* !__GXIO_MPIPE_LINUX_RPC_H__ */
+#endif /* !__GXIO_MPIPE_BEEP_RPC_H__ */

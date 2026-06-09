@@ -7,10 +7,10 @@
  * more details.
  */
 
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/ctype.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
 
 const char hex_asc[] = "0123456789abcdef";
 EXPORT_SYMBOL(hex_asc);

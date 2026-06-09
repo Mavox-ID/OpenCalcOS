@@ -1,5 +1,5 @@
 /*
- * linux/drivers/pcmcia/pxa2xx_trizeps4.c
+ * beep/drivers/pcmcia/pxa2xx_trizeps4.c
  *
  * TRIZEPS PCMCIA specific routines.
  *
@@ -12,12 +12,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
 
 #include <asm/mach-types.h>
 #include <asm/irq.h>

@@ -8,7 +8,7 @@
 #ifndef _SUNHME_H
 #define _SUNHME_H
 
-#include <linux/pci.h>
+#include <beep/pci.h>
 
 /* Happy Meal global registers. */
 #define GREG_SWRESET	0x000UL	/* Software Reset  */
@@ -153,7 +153,7 @@
 #define ERX_CFG_CSUMSTART    0x007f0000 /* Offset of checksum start,
 					 * in halfwords. */
 
-/* I'd like a Big Mac, small fries, small coke, and SparcLinux please. */
+/* I'd like a Big Mac, small fries, small coke, and SparcBeep please. */
 #define BMAC_XIFCFG	0x0000UL	/* XIF config register                */
 	/* 0x4-->0x204, reserved */
 #define BMAC_TXSWRESET	0x208UL	/* Transmitter software reset         */
@@ -275,7 +275,7 @@
  * Debugging eeprom burnt code is more fun than programming this chip!
  */
 
-/* Generic MII registers defined in linux/mii.h, these below
+/* Generic MII registers defined in beep/mii.h, these below
  * are DP83840 specific.
  */
 #define DP83840_CSCONFIG        0x17        /* CS configuration            */
@@ -491,7 +491,7 @@ struct quattro {
 
 	/* PROM ranges, if any. */
 #ifdef CONFIG_SBUS
-	struct linux_prom_ranges  ranges[8];
+	struct beep_prom_ranges  ranges[8];
 #endif
 	int			  nranges;
 };

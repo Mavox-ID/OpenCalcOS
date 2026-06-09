@@ -14,10 +14,10 @@
 #define __SMP__
 #endif
 
-#include <linux/proc_fs.h>
-#include <linux/netdevice.h>
+#include <beep/proc_fs.h>
+#include <beep/netdevice.h>
 #include <asm/uaccess.h>
-/* #include <linux/smp_lock.h> */
+/* #include <beep/smp_lock.h> */
 #include "bp_mod.h"
 
 #define BP_PROC_DIR "bypass"

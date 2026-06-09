@@ -9,10 +9,10 @@
  * Handler for RM7000 extended interrupts.  These are a non-standard
  * feature so we handle them separately from standard interrupts.
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/mipsregs.h>

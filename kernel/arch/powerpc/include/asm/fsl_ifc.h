@@ -22,12 +22,12 @@
 #ifndef __ASM_FSL_IFC_H
 #define __ASM_FSL_IFC_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/io.h>
+#include <beep/compiler.h>
+#include <beep/types.h>
+#include <beep/io.h>
 
-#include <linux/of_platform.h>
-#include <linux/interrupt.h>
+#include <beep/of_platform.h>
+#include <beep/interrupt.h>
 
 #define FSL_IFC_BANK_COUNT 4
 

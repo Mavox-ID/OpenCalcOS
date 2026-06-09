@@ -5,9 +5,9 @@
  *
  * This file is released under the GNU GPL v2.
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/uwb/umc.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/uwb/umc.h>
 
 int __umc_driver_register(struct umc_driver *umc_drv, struct module *module,
 			  const char *mod_name)

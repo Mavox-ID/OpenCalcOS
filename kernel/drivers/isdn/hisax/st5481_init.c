@@ -24,13 +24,13 @@
  * clean up debug
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/usb.h>
+#include <beep/slab.h>
 #include "st5481.h"
 
-MODULE_DESCRIPTION("ISDN4Linux: driver for ST5481 USB ISDN adapter");
+MODULE_DESCRIPTION("ISDN4Beep: driver for ST5481 USB ISDN adapter");
 MODULE_AUTHOR("Frode Isaksen");
 MODULE_LICENSE("GPL");
 

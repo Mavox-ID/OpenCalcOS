@@ -31,9 +31,9 @@
  * SOFTWARE.
  */
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
 
 #include "qib_verbs.h"
 

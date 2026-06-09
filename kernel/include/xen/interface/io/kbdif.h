@@ -55,7 +55,7 @@ struct xenkbd_motion {
 struct xenkbd_key {
 	uint8_t type;		/* XENKBD_TYPE_KEY */
 	uint8_t pressed;	/* 1 if pressed; 0 otherwise */
-	uint32_t keycode;	/* KEY_* from linux/input.h */
+	uint32_t keycode;	/* KEY_* from beep/input.h */
 };
 
 struct xenkbd_position {

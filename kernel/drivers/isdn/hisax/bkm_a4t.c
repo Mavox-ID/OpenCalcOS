@@ -11,13 +11,13 @@
  */
 
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include "hisax.h"
 #include "isac.h"
 #include "hscx.h"
 #include "jade.h"
 #include "isdnl1.h"
-#include <linux/pci.h>
+#include <beep/pci.h>
 #include "bkm_ax.h"
 
 static const char *bkm_a4t_revision = "$Revision: 1.22.2.4 $";

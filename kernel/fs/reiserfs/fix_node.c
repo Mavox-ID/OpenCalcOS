@@ -34,11 +34,11 @@
  **
  **/
 
-#include <linux/time.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/time.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 #include "reiserfs.h"
-#include <linux/buffer_head.h>
+#include <beep/buffer_head.h>
 
 /* To make any changes in the tree we find a node, that contains item
    to be changed/deleted or position in the node we insert a new item

@@ -29,14 +29,14 @@
 #ifndef _PCIEHP_H
 #define _PCIEHP_H
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/delay.h>
-#include <linux/sched.h>		/* signal_pending() */
-#include <linux/pcieport_if.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/pci_hotplug.h>
+#include <beep/delay.h>
+#include <beep/sched.h>		/* signal_pending() */
+#include <beep/pcieport_if.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
 
 #define MY_NAME	"pciehp"
 
@@ -164,7 +164,7 @@ static inline const char *slot_name(struct slot *slot)
 #ifdef CONFIG_ACPI
 #include <acpi/acpi.h>
 #include <acpi/acpi_bus.h>
-#include <linux/pci-acpi.h>
+#include <beep/pci-acpi.h>
 
 extern void __init pciehp_acpi_slot_detection_init(void);
 extern int pciehp_acpi_slot_detection_check(struct pci_dev *dev);

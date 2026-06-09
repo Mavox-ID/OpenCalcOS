@@ -1,11 +1,11 @@
 #ifndef _SCSI_SCSI_HOST_H
 #define _SCSI_SCSI_HOST_H
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
+#include <beep/device.h>
+#include <beep/list.h>
+#include <beep/types.h>
+#include <beep/workqueue.h>
+#include <beep/mutex.h>
 #include <scsi/scsi.h>
 
 struct request_queue;

@@ -18,19 +18,19 @@
 
 #define pr_fmt(fmt) "ashmem: " fmt
 
-#include <linux/module.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/falloc.h>
-#include <linux/miscdevice.h>
-#include <linux/security.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/uaccess.h>
-#include <linux/personality.h>
-#include <linux/bitops.h>
-#include <linux/mutex.h>
-#include <linux/shmem_fs.h>
+#include <beep/module.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/falloc.h>
+#include <beep/miscdevice.h>
+#include <beep/security.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/uaccess.h>
+#include <beep/personality.h>
+#include <beep/bitops.h>
+#include <beep/mutex.h>
+#include <beep/shmem_fs.h>
 #include "ashmem.h"
 
 #define ASHMEM_NAME_PREFIX "dev/ashmem/"

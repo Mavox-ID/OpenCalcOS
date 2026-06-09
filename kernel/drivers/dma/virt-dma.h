@@ -10,8 +10,8 @@
 #ifndef VIRT_DMA_H
 #define VIRT_DMA_H
 
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
+#include <beep/dmaengine.h>
+#include <beep/interrupt.h>
 
 #include "dmaengine.h"
 

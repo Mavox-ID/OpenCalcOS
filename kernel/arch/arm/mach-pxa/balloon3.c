@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/balloon3.c
+ *  beep/arch/arm/mach-pxa/balloon3.c
  *
  *  Support for Balloonboard.org Balloon3 board.
  *
@@ -13,24 +13,24 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
-#include <linux/fb.h>
-#include <linux/gpio.h>
-#include <linux/ioport.h>
-#include <linux/ucb1400.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/types.h>
-#include <linux/i2c/pcf857x.h>
-#include <linux/i2c/pxa-i2c.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/physmap.h>
-#include <linux/regulator/max1586.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/bitops.h>
+#include <beep/fb.h>
+#include <beep/gpio.h>
+#include <beep/ioport.h>
+#include <beep/ucb1400.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/types.h>
+#include <beep/i2c/pcf857x.h>
+#include <beep/i2c/pxa-i2c.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/physmap.h>
+#include <beep/regulator/max1586.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>
@@ -45,12 +45,12 @@
 #include <mach/pxa27x.h>
 #include <mach/balloon3.h>
 #include <mach/audio.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/video-pxafb.h>
+#include <beep/platform_data/mmc-pxamci.h>
 #include <mach/udc.h>
 #include <mach/pxa27x-udc.h>
-#include <linux/platform_data/irda-pxaficp.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/irda-pxaficp.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
 
 #include "generic.h"
 #include "devices.h"

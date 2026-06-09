@@ -28,15 +28,15 @@
 			Alan Cox, 30th May 1994
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/rtnetlink.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/moduleparam.h>
+#include <beep/rtnetlink.h>
 #include <net/rtnetlink.h>
-#include <linux/u64_stats_sync.h>
+#include <beep/u64_stats_sync.h>
 
 static int numdummies = 1;
 

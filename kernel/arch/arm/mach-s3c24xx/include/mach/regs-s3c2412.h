@@ -1,7 +1,7 @@
 /* arch/arm/mach-s3c2410/include/mach/regs-s3c2412.h
  *
  * Copyright 2007 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * This program is free software; you can redistribute it and/or modify

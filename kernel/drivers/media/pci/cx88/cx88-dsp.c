@@ -19,10 +19,10 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/jiffies.h>
 #include <asm/div64.h>
 
 #include "cx88.h"

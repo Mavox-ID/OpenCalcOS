@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfsplus/wrapper.c
+ *  beep/fs/hfsplus/wrapper.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -8,10 +8,10 @@
  * Handling of HFS wrappers around HFS+ volumes
  */
 
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/cdrom.h>
-#include <linux/genhd.h>
+#include <beep/fs.h>
+#include <beep/blkdev.h>
+#include <beep/cdrom.h>
+#include <beep/genhd.h>
 #include <asm/unaligned.h>
 
 #include "hfsplus_fs.h"

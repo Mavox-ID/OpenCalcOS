@@ -10,13 +10,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/wait.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>
@@ -26,8 +26,8 @@
 
 #include <asm/irq.h>
 #include <asm/portmux.h>
-#include <linux/mutex.h>
-#include <linux/gpio.h>
+#include <beep/mutex.h>
+#include <beep/gpio.h>
 
 #include "bf5xx-sport.h"
 #include "bf5xx-ac97.h"

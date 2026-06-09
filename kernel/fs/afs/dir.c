@@ -9,14 +9,14 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/pagemap.h>
-#include <linux/ctype.h>
-#include <linux/sched.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/namei.h>
+#include <beep/pagemap.h>
+#include <beep/ctype.h>
+#include <beep/sched.h>
 #include "internal.h"
 
 static struct dentry *afs_lookup(struct inode *dir, struct dentry *dentry,
@@ -113,7 +113,7 @@ union afs_dir_block {
 	union afs_dirent dirents[AFS_DIRENT_PER_BLOCK];
 };
 
-/* layout on a linux VM page */
+/* layout on a beep VM page */
 struct afs_dir_page {
 	union afs_dir_block blocks[PAGE_SIZE / sizeof(union afs_dir_block)];
 };

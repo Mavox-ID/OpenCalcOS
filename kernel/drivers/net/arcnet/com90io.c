@@ -1,5 +1,5 @@
 /*
- * Linux ARCnet driver - COM90xx chipset (IO-mapped buffers)
+ * Beep ARCnet driver - COM90xx chipset (IO-mapped buffers)
  * 
  * Written 1997 by David Woodhouse.
  * Written 1994-1999 by Avery Pennarun.
@@ -25,17 +25,17 @@
  *
  * **********************
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/bootmem.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/bootmem.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
 #include <asm/io.h>
-#include <linux/arcdevice.h>
+#include <beep/arcdevice.h>
 
 
 #define VERSION "arcnet: COM90xx IO-mapped mode support (by David Woodhouse et el.)\n"

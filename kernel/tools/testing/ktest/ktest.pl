@@ -54,8 +54,8 @@ my %default = (
     "STOP_TEST_AFTER"		=> 600,
     "MAX_MONITOR_WAIT"		=> 1800,
     "GRUB_REBOOT"		=> "grub2-reboot",
-    "SYSLINUX"			=> "extlinux",
-    "SYSLINUX_PATH"		=> "/boot/extlinux",
+    "SYSBEEP"			=> "extbeep",
+    "SYSBEEP_PATH"		=> "/boot/extbeep",
 
 # required, and we will ask users if they don't have them but we keep the default
 # value something that is common.
@@ -111,9 +111,9 @@ my $grub_menu;
 my $grub_file;
 my $grub_number;
 my $grub_reboot;
-my $syslinux;
-my $syslinux_path;
-my $syslinux_label;
+my $sysbeep;
+my $sysbeep_path;
+my $sysbeep_label;
 my $target;
 my $make;
 my $pre_install;
@@ -242,9 +242,9 @@ my %option_map = (
     "GRUB_MENU"			=> \$grub_menu,
     "GRUB_FILE"			=> \$grub_file,
     "GRUB_REBOOT"		=> \$grub_reboot,
-    "SYSLINUX"			=> \$syslinux,
-    "SYSLINUX_PATH"		=> \$syslinux_path,
-    "SYSLINUX_LABEL"		=> \$syslinux_label,
+    "SYSBEEP"			=> \$sysbeep,
+    "SYSBEEP_PATH"		=> \$sysbeep_path,
+    "SYSBEEP_LABEL"		=> \$sysbeep_label,
     "PRE_INSTALL"		=> \$pre_install,
     "POST_INSTALL"		=> \$post_install,
     "NO_INSTALL"		=> \$no_install,
@@ -327,7 +327,7 @@ $config_help{"SSH_USER"} = << "EOF"
 EOF
     ;
 $config_help{"BUILD_DIR"} = << "EOF"
- The directory that contains the Linux source code (full path).
+ The directory that contains the Beep source code (full path).
  You can use \${PWD} that will be the path where ktest.pl is run, or use
  \${THIS_DIR} which is assigned \${PWD} but may be changed later.
 EOF
@@ -376,12 +376,12 @@ EOF
     ;
 $config_help{"LOCALVERSION"} = << "EOF"
  Required version ending to differentiate the test
- from other linux builds on the system.
+ from other beep builds on the system.
 EOF
     ;
 $config_help{"REBOOT_TYPE"} = << "EOF"
  Way to reboot the box to the test kernel.
- Only valid options so far are "grub", "grub2", "syslinux", and "script".
+ Only valid options so far are "grub", "grub2", "sysbeep", and "script".
 
  If you specify grub, it will assume grub version 1
  and will search in /boot/grub/menu.lst for the title \$GRUB_MENU
@@ -395,10 +395,10 @@ $config_help{"REBOOT_TYPE"} = << "EOF"
  If you specify grub2, then you also need to specify both \$GRUB_MENU
  and \$GRUB_FILE.
 
- If you specify syslinux, then you may use SYSLINUX to define the syslinux
- command (defaults to extlinux), and SYSLINUX_PATH to specify the path to
- the syslinux install (defaults to /boot/extlinux). But you have to specify
- SYSLINUX_LABEL to define the label to boot to for the test kernel.
+ If you specify sysbeep, then you may use SYSBEEP to define the sysbeep
+ command (defaults to extbeep), and SYSBEEP_PATH to specify the path to
+ the sysbeep install (defaults to /boot/extbeep). But you have to specify
+ SYSBEEP_LABEL to define the label to boot to for the test kernel.
 EOF
     ;
 $config_help{"GRUB_MENU"} = << "EOF"
@@ -427,9 +427,9 @@ $config_help{"GRUB_FILE"} = << "EOF"
  here. Use something like /boot/grub2/grub.cfg to search.
 EOF
     ;
-$config_help{"SYSLINUX_LABEL"} = << "EOF"
- If syslinux is used, the label that boots the target kernel must
- be specified with SYSLINUX_LABEL.
+$config_help{"SYSBEEP_LABEL"} = << "EOF"
+ If sysbeep is used, the label that boots the target kernel must
+ be specified with SYSBEEP_LABEL.
 EOF
     ;
 $config_help{"REBOOT_SCRIPT"} = << "EOF"
@@ -564,8 +564,8 @@ sub get_ktest_configs {
 	get_ktest_config("GRUB_FILE");
     }
 
-    if ($rtype eq "syslinux") {
-	get_ktest_config("SYSLINUX_LABEL");
+    if ($rtype eq "sysbeep") {
+	get_ktest_config("SYSBEEP_LABEL");
     }
 }
 
@@ -1611,8 +1611,8 @@ sub reboot_to {
 	run_ssh "'(echo \"savedefault --default=$grub_number --once\" | grub --batch)'";
     } elsif ($reboot_type eq "grub2") {
 	run_ssh "$grub_reboot $grub_number";
-    } elsif ($reboot_type eq "syslinux") {
-	run_ssh "$syslinux --once \\\"$syslinux_label\\\" $syslinux_path";
+    } elsif ($reboot_type eq "sysbeep") {
+	run_ssh "$sysbeep --once \\\"$sysbeep_label\\\" $sysbeep_path";
     } elsif (defined $reboot_script) {
 	run_command "$reboot_script";
     }
@@ -1744,15 +1744,15 @@ sub monitor {
 	}
 
 	# Detect triple faults by testing the banner
-	if ($full_line =~ /\bLinux version (\S+).*\n/) {
+	if ($full_line =~ /\bBeep version (\S+).*\n/) {
 	    if ($1 eq $version) {
 		$version_found = 1;
 	    } elsif ($version_found && $detect_triplefault) {
 		# We already booted into the kernel we are testing,
 		# but now we booted into another kernel?
 		# Consider this a triple fault.
-		doprint "Aleady booted in Linux kernel $version, but now\n";
-		doprint "we booted into Linux kernel $1.\n";
+		doprint "Aleady booted in Beep kernel $version, but now\n";
+		doprint "we booted into Beep kernel $1.\n";
 		doprint "Assuming that this is a triple fault.\n";
 		doprint "To disable this: set DETECT_TRIPLE_FAULT to 0\n";
 		last;
@@ -3204,7 +3204,7 @@ sub read_depends {
 	or dodie "Failed to read $output_config";
     my $arch;
     while (<IN>) {
-	if (m,Linux/(\S+)\s+\S+\s+Kernel Configuration,) {
+	if (m,Beep/(\S+)\s+\S+\s+Kernel Configuration,) {
 	    $arch = $1;
 	    last;
 	}
@@ -3806,8 +3806,8 @@ for (my $i = 1; $i <= $opt{"NUM_TESTS"}; $i++) {
 	} elsif ($reboot_type eq "grub2") {
 	    dodie "GRUB_MENU not defined" if (!defined($grub_menu));
 	    dodie "GRUB_FILE not defined" if (!defined($grub_file));
-	} elsif ($reboot_type eq "syslinux") {
-	    dodie "SYSLINUX_LABEL not defined" if (!defined($syslinux_label));
+	} elsif ($reboot_type eq "sysbeep") {
+	    dodie "SYSBEEP_LABEL not defined" if (!defined($sysbeep_label));
 	}
     }
 

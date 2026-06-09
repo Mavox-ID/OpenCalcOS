@@ -4,19 +4,19 @@
  * Copyright (c) 2000 Eric Brower (ebrower@usa.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/major.h>
-#include <linux/init.h>
-#include <linux/miscdevice.h>
-#include <linux/ioport.h>		/* request_region */
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/atomic.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/errno.h>
+#include <beep/major.h>
+#include <beep/init.h>
+#include <beep/miscdevice.h>
+#include <beep/ioport.h>		/* request_region */
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/atomic.h>
 #include <asm/uaccess.h>		/* put_/get_user			*/
 #include <asm/io.h>
 

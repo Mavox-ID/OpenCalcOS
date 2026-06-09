@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for Beep
    Copyright (C) 2011 Nokia Corporation and/or its subsidiary(-ies).
 
    This program is free software; you can redistribute it and/or modify
@@ -20,8 +20,8 @@
    SOFTWARE IS DISCLAIMED.
 */
 
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
+#include <beep/crypto.h>
+#include <beep/scatterlist.h>
 #include <crypto/b128ops.h>
 
 #include <net/bluetooth/bluetooth.h>

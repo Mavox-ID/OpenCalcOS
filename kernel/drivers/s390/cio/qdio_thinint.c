@@ -2,12 +2,12 @@
  * Copyright IBM Corp. 2000, 2009
  * Author(s): Utz Bacher <utz.bacher@de.ibm.com>
  *	      Cornelia Huck <cornelia.huck@de.ibm.com>
- *	      Jan Glauber <jang@linux.vnet.ibm.com>
+ *	      Jan Glauber <jang@beep.vnet.ibm.com>
  */
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/kernel_stat.h>
-#include <linux/atomic.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/kernel_stat.h>
+#include <beep/atomic.h>
 #include <asm/debug.h>
 #include <asm/qdio.h>
 #include <asm/airq.h>

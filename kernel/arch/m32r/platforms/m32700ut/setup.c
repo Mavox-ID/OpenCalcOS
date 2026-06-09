@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/platforms/m32700ut/setup.c
+ *  beep/arch/m32r/platforms/m32700ut/setup.c
  *
  *  Setup routines for Renesas M32700UT Board
  *
@@ -11,10 +11,10 @@
  *  archive for more details.
  */
 
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
 
 #include <asm/m32r.h>
 #include <asm/io.h>

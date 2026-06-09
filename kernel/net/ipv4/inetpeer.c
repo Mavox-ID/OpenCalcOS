@@ -6,18 +6,18 @@
  *  Authors:	Andrey V. Savochkin <saw@msu.ru>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/random.h>
-#include <linux/timer.h>
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/net.h>
-#include <linux/workqueue.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/random.h>
+#include <beep/timer.h>
+#include <beep/time.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/net.h>
+#include <beep/workqueue.h>
 #include <net/ip.h>
 #include <net/inetpeer.h>
 #include <net/secure_seq.h>

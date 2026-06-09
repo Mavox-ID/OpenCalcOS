@@ -11,15 +11,15 @@
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/kernel.h>
-#include <linux/ctype.h>
-#include <linux/kgdb.h>
-#include <linux/kdb.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/vt_kern.h>
-#include <linux/input.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/ctype.h>
+#include <beep/kgdb.h>
+#include <beep/kdb.h>
+#include <beep/tty.h>
+#include <beep/console.h>
+#include <beep/vt_kern.h>
+#include <beep/input.h>
+#include <beep/module.h>
 
 #define MAX_CONFIG_LEN		40
 

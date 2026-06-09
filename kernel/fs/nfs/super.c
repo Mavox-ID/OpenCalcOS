@@ -1,5 +1,5 @@
 /*
- *  linux/fs/nfs/super.c
+ *  beep/fs/nfs/super.c
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -20,41 +20,41 @@
  *   of another (see nfs_lookup())
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/metrics.h>
-#include <linux/sunrpc/xprtsock.h>
-#include <linux/sunrpc/xprtrdma.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/nfs4_mount.h>
-#include <linux/lockd/bind.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/nfs_idmap.h>
-#include <linux/vfs.h>
-#include <linux/inet.h>
-#include <linux/in6.h>
-#include <linux/slab.h>
+#include <beep/time.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/stat.h>
+#include <beep/errno.h>
+#include <beep/unistd.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/stats.h>
+#include <beep/sunrpc/metrics.h>
+#include <beep/sunrpc/xprtsock.h>
+#include <beep/sunrpc/xprtrdma.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_mount.h>
+#include <beep/nfs4_mount.h>
+#include <beep/lockd/bind.h>
+#include <beep/seq_file.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/nfs_idmap.h>
+#include <beep/vfs.h>
+#include <beep/inet.h>
+#include <beep/in6.h>
+#include <beep/slab.h>
 #include <net/ipv6.h>
-#include <linux/netdevice.h>
-#include <linux/nfs_xdr.h>
-#include <linux/magic.h>
-#include <linux/parser.h>
-#include <linux/nsproxy.h>
-#include <linux/rcupdate.h>
-#include <linux/kthread.h>
+#include <beep/netdevice.h>
+#include <beep/nfs_xdr.h>
+#include <beep/magic.h>
+#include <beep/parser.h>
+#include <beep/nsproxy.h>
+#include <beep/rcupdate.h>
+#include <beep/kthread.h>
 
 #include <asm/uaccess.h>
 
@@ -507,9 +507,9 @@ int nfs_statfs(struct dentry *dentry, struct kstatfs *buf)
 
 	/*
 	 * On most *nix systems, f_blocks, f_bfree, and f_bavail
-	 * are reported in units of f_frsize.  Linux hasn't had
+	 * are reported in units of f_frsize.  Beep hasn't had
 	 * an f_frsize field in its statfs struct until recently,
-	 * thus historically Linux's sys_statfs reports these
+	 * thus historically Beep's sys_statfs reports these
 	 * fields in units of f_bsize.
 	 */
 	buf->f_bsize = dentry->d_sb->s_blocksize;
@@ -1664,7 +1664,7 @@ static int nfs_walk_authlist(struct nfs_parsed_mount_data *args,
 	unsigned int i, j, server_authlist_len = *(request->auth_flav_len);
 
 	/*
-	 * Certain releases of Linux's mountd return an empty
+	 * Certain releases of Beep's mountd return an empty
 	 * flavor list.  To prevent behavioral regression with
 	 * these servers (ie. rejecting mounts that used to
 	 * succeed), revert to pre-2.6.32 behavior (no checking)
@@ -1962,14 +1962,14 @@ static int nfs23_validate_mount_data(void *options,
 					NFS_MOUNT_LOCAL_FCNTL);
 		/*
 		 * The legacy version 6 binary mount data from userspace has a
-		 * field used only to transport selinux information into the
+		 * field used only to transport sebeep information into the
 		 * the kernel.  To continue to support that functionality we
-		 * have a touch of selinux knowledge here in the NFS code. The
+		 * have a touch of sebeep knowledge here in the NFS code. The
 		 * userspace code converted context=blah to just blah so we are
-		 * converting back to the full string selinux understands.
+		 * converting back to the full string sebeep understands.
 		 */
 		if (data->context[0]){
-#ifdef CONFIG_SECURITY_SELINUX
+#ifdef CONFIG_SECURITY_SEBEEP
 			int rc;
 			char *opts_str = kmalloc(sizeof(data->context) + 8, GFP_KERNEL);
 			if (!opts_str)

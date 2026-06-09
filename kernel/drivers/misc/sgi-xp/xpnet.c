@@ -20,10 +20,10 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
 #include "xp.h"
 
 /*

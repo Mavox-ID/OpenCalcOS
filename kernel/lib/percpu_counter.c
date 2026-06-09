@@ -2,13 +2,13 @@
  * Fast batching percpu counters.
  */
 
-#include <linux/percpu_counter.h>
-#include <linux/notifier.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/debugobjects.h>
+#include <beep/percpu_counter.h>
+#include <beep/notifier.h>
+#include <beep/mutex.h>
+#include <beep/init.h>
+#include <beep/cpu.h>
+#include <beep/module.h>
+#include <beep/debugobjects.h>
 
 #ifdef CONFIG_HOTPLUG_CPU
 static LIST_HEAD(percpu_counters);

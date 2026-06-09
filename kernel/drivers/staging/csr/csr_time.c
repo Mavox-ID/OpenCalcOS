@@ -8,9 +8,9 @@
 
 *****************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/time.h>
+#include <beep/module.h>
 
 #include "csr_time.h"
 

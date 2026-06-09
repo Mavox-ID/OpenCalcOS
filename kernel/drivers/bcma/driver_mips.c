@@ -12,12 +12,12 @@
 
 #include "bcma_private.h"
 
-#include <linux/bcma/bcma.h>
+#include <beep/bcma/bcma.h>
 
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/time.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
+#include <beep/serial_reg.h>
+#include <beep/time.h>
 
 /* The 47162a0 hangs when reading MIPS DMP registers registers */
 static inline bool bcma_core_mips_bcm47162a0_quirk(struct bcma_device *dev)

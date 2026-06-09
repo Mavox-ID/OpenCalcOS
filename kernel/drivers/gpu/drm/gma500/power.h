@@ -25,12 +25,12 @@
  *    Benjamin Defnet <benjamin.r.defnet@intel.com>
  *    Rajesh Poornachandran <rajesh.poornachandran@intel.com>
  * Massively reworked
- *    Alan Cox <alan@linux.intel.com>
+ *    Alan Cox <alan@beep.intel.com>
  */
 #ifndef _PSB_POWERMGMT_H_
 #define _PSB_POWERMGMT_H_
 
-#include <linux/pci.h>
+#include <beep/pci.h>
 #include <drm/drmP.h>
 
 void gma_power_init(struct drm_device *dev);

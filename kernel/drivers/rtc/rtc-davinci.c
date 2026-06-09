@@ -19,17 +19,17 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/rtc.h>
+#include <beep/bcd.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 /*
  * The DaVinci RTC is a simple RTC with the following

@@ -16,20 +16,20 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
+#include <beep/export.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/platform_device.h>
 
-#include <linux/mfd/asic3.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/ds1wm.h>
-#include <linux/mfd/tmio.h>
+#include <beep/mfd/asic3.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/ds1wm.h>
+#include <beep/mfd/tmio.h>
 
 enum {
 	ASIC3_CLOCK_SPI,

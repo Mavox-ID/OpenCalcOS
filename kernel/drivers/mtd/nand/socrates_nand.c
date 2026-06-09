@@ -10,13 +10,13 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/of_platform.h>
+#include <beep/io.h>
 
 #define FPGA_NAND_CMD_MASK		(0x7 << 28)
 #define FPGA_NAND_CMD_COMMAND		(0x0 << 28)

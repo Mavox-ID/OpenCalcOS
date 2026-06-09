@@ -1,8 +1,8 @@
-/* linux/arch/arm/plat-s3c/init.c
+/* beep/arch/arm/plat-s3c/init.c
  *
  * Copyright (c) 2008 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * S3C series CPU initialisation
  *
@@ -11,12 +11,12 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/serial_core.h>
+#include <beep/platform_device.h>
 
 #include <mach/hardware.h>
 

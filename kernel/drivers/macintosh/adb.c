@@ -16,27 +16,27 @@
  * - move bus probe to a kernel thread
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/adb.h>
-#include <linux/cuda.h>
-#include <linux/pmu.h>
-#include <linux/notifier.h>
-#include <linux/wait.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/kthread.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/adb.h>
+#include <beep/cuda.h>
+#include <beep/pmu.h>
+#include <beep/notifier.h>
+#include <beep/wait.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
+#include <beep/device.h>
+#include <beep/kthread.h>
+#include <beep/platform_device.h>
+#include <beep/mutex.h>
 
 #include <asm/uaccess.h>
 #ifdef CONFIG_PPC

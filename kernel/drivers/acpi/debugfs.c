@@ -2,9 +2,9 @@
  * debugfs.c - ACPI debugfs interface to userspace.
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/debugfs.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/debugfs.h>
 #include <acpi/acpi_drivers.h>
 
 #define _COMPONENT		ACPI_SYSTEM_COMPONENT

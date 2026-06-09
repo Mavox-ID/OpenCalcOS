@@ -1,9 +1,9 @@
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/perf_event.h>
-#include <linux/bug.h>
-#include <linux/stddef.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/perf_event.h>
+#include <beep/bug.h>
+#include <beep/stddef.h>
 #include <asm/perf_regs.h>
 #include <asm/ptrace.h>
 

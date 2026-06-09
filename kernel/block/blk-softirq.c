@@ -1,14 +1,14 @@
 /*
  * Functions related to softirq rq completions
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/cpu.h>
-#include <linux/sched.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/bio.h>
+#include <beep/blkdev.h>
+#include <beep/interrupt.h>
+#include <beep/cpu.h>
+#include <beep/sched.h>
 
 #include "blk.h"
 

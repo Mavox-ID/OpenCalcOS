@@ -5,7 +5,7 @@
  * Added trace_hardirqs callers - Copyright 2007 Steven Rostedt, Red Hat, Inc.
  * Subject to the GNU public license, v.2. No warranty of any kind.
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/dwarf2.h>
 #include <asm/calling.h>
 

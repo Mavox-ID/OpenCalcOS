@@ -151,7 +151,7 @@ Exit Codes
     is 99. sv exits 100 on error.
 */
 
-/* Busyboxed by Denys Vlasenko <vda.linux@googlemail.com> */
+/* Busyboxed by Denys Vlasenko <vda.beep@googlemail.com> */
 
 //config:config SV
 //config:	bool "sv (8.5 kb)"

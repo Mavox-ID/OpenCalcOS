@@ -10,29 +10,29 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kmod.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/slab.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kmod.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/ctype.h>
 #include <asm/uaccess.h>
-#include <linux/poll.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/net.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/pagemap.h>
+#include <beep/poll.h>
+#include <beep/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/net.h>
+#include <beep/workqueue.h>
+#include <beep/mutex.h>
+#include <beep/pagemap.h>
 #include <asm/ioctls.h>
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/cache.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
+#include <beep/sunrpc/types.h>
+#include <beep/sunrpc/cache.h>
+#include <beep/sunrpc/stats.h>
+#include <beep/sunrpc/rpc_pipe_fs.h>
 #include "netns.h"
 
 #define	 RPCDBG_FACILITY RPCDBG_CACHE

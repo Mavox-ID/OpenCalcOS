@@ -26,8 +26,8 @@
 #ifndef IRIAP_H
 #define IRIAP_H
 
-#include <linux/types.h>
-#include <linux/skbuff.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
 
 #include <net/irda/iriap_event.h>
 #include <net/irda/irias_object.h>

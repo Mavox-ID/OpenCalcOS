@@ -142,11 +142,11 @@
  *
  */
 
-#include <linux/rmap.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/wait.h>
-#include <linux/mmu_notifier.h>
+#include <beep/rmap.h>
+#include <beep/interrupt.h>
+#include <beep/mutex.h>
+#include <beep/wait.h>
+#include <beep/mmu_notifier.h>
 #include "gru.h"
 #include "grulib.h"
 #include "gruhandles.h"

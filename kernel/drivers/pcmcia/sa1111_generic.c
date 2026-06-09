@@ -1,18 +1,18 @@
 /*
- * linux/drivers/pcmcia/sa1111_generic.c
+ * beep/drivers/pcmcia/sa1111_generic.c
  *
  * We implement the generic parts of a SA1111 PCMCIA driver.  This
  * basically means we handle everything except controlling the
  * power.  Power is machine specific...
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/ioport.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 #include <pcmcia/ss.h>
 

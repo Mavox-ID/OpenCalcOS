@@ -12,10 +12,10 @@
  *   more details.
  */
 
-#include <linux/stddef.h>
-#include <linux/reboot.h>
-#include <linux/smp.h>
-#include <linux/pm.h>
+#include <beep/stddef.h>
+#include <beep/reboot.h>
+#include <beep/smp.h>
+#include <beep/pm.h>
 #include <asm/page.h>
 #include <asm/setup.h>
 #include <hv/hypervisor.h>
@@ -44,7 +44,7 @@ void machine_restart(char *cmd)
 {
 	arch_local_irq_disable_all();
 	smp_send_stop();
-	hv_restart((HV_VirtAddr) "vmlinux", (HV_VirtAddr) cmd);
+	hv_restart((HV_VirtAddr) "vmbeep", (HV_VirtAddr) cmd);
 }
 
 /* No interesting distinction to be made here. */

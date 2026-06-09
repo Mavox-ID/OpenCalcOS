@@ -1,5 +1,5 @@
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
 
 #include "spk_types.h"
 #include "speakup.h"

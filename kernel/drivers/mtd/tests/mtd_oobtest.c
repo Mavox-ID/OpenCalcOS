@@ -22,13 +22,13 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <asm/div64.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/err.h>
-#include <linux/mtd/mtd.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/err.h>
+#include <beep/mtd/mtd.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
 
 static int dev = -EINVAL;
 module_param(dev, int, S_IRUGO);

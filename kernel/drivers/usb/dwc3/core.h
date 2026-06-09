@@ -39,16 +39,16 @@
 #ifndef __DRIVERS_USB_DWC3_CORE_H
 #define __DRIVERS_USB_DWC3_CORE_H
 
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/dma-mapping.h>
-#include <linux/mm.h>
-#include <linux/debugfs.h>
+#include <beep/device.h>
+#include <beep/spinlock.h>
+#include <beep/ioport.h>
+#include <beep/list.h>
+#include <beep/dma-mapping.h>
+#include <beep/mm.h>
+#include <beep/debugfs.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
 
 /* Global constants */
 #define DWC3_EP0_BOUNCE_SIZE	512

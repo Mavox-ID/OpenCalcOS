@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/copypage-v4wb.c
+ *  beep/arch/arm/mm/copypage-v4wb.c
  *
  *  Copyright (C) 1995-1999 Russell King
  *
@@ -7,8 +7,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/highmem.h>
+#include <beep/init.h>
+#include <beep/highmem.h>
 
 /*
  * ARMv4 optimised copy_user_highpage

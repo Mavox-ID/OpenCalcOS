@@ -1,13 +1,13 @@
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/init.h>
-#include <linux/mod_devicetable.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/irq.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/of.h>
+#include <beep/init.h>
+#include <beep/mod_devicetable.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/irq.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
 #include <asm/leon.h>
 #include <asm/leon_amba.h>
 
@@ -339,7 +339,7 @@ static struct platform_device * __init scan_one_device(struct device_node *dp,
 						 struct device *parent)
 {
 	struct platform_device *op = kzalloc(sizeof(*op), GFP_KERNEL);
-	const struct linux_prom_irqs *intr;
+	const struct beep_prom_irqs *intr;
 	struct dev_archdata *sd;
 	int len, i;
 
@@ -353,7 +353,7 @@ static struct platform_device * __init scan_one_device(struct device_node *dp,
 
 	intr = of_get_property(dp, "intr", &len);
 	if (intr) {
-		op->archdata.num_irqs = len / sizeof(struct linux_prom_irqs);
+		op->archdata.num_irqs = len / sizeof(struct beep_prom_irqs);
 		for (i = 0; i < op->archdata.num_irqs; i++)
 			op->archdata.irqs[i] =
 			    sparc_config.build_device_irq(op, intr[i].pri);

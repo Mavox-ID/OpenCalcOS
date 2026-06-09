@@ -24,13 +24,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/pfn.h>
-#include <linux/platform_data/usb-musb-ux500.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmaengine.h>
+#include <beep/pfn.h>
+#include <beep/platform_data/usb-musb-ux500.h>
 #include "musb_core.h"
 
 struct ux500_dma_channel {

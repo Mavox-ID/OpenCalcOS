@@ -3,7 +3,7 @@
 
 #include <drmP.h>
 
-#include <linux/usb.h>
+#include <beep/usb.h>
 
 extern int drm_usb_init(struct drm_driver *driver, struct usb_driver *udriver);
 extern void drm_usb_exit(struct drm_driver *driver, struct usb_driver *udriver);

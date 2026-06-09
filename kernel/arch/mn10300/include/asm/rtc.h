@@ -13,7 +13,7 @@
 
 #ifdef CONFIG_MN10300_RTC
 
-#include <linux/init.h>
+#include <beep/init.h>
 
 extern void __init calibrate_clock(void);
 

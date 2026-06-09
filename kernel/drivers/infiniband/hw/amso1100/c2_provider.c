@@ -32,25 +32,25 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/if_vlan.h>
-#include <linux/crc32.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/if_arp.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/inetdevice.h>
+#include <beep/delay.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/if_vlan.h>
+#include <beep/crc32.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
+#include <beep/if_arp.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

@@ -1,7 +1,7 @@
 #ifndef __KVM_X86_MMU_H
 #define __KVM_X86_MMU_H
 
-#include <linux/kvm_host.h>
+#include <beep/kvm_host.h>
 #include "kvm_cache_regs.h"
 
 #define PT64_PT_BITS 9

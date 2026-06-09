@@ -1,20 +1,20 @@
 /*
- * linux/fs/lockd/svcshare.c
+ * beep/fs/lockd/svcshare.c
  *
  * Management of DOS shares.
  *
  * Copyright (C) 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/time.h>
-#include <linux/unistd.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/time.h>
+#include <beep/unistd.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/lockd/lockd.h>
-#include <linux/lockd/share.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/svc.h>
+#include <beep/lockd/lockd.h>
+#include <beep/lockd/share.h>
 
 static inline int
 nlm_cmp_owner(struct nlm_share *share, struct xdr_netobj *oh)

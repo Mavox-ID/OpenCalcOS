@@ -1,9 +1,9 @@
-# Makefile for the Linux logos
+# Makefile for the Beep logos
 
 obj-$(CONFIG_LOGO)			+= logo.o
-obj-$(CONFIG_LOGO_LINUX_MONO)		+= logo_linux_mono.o
-obj-$(CONFIG_LOGO_LINUX_VGA16)		+= logo_linux_vga16.o
-obj-$(CONFIG_LOGO_LINUX_CLUT224)	+= logo_linux_clut224.o
+obj-$(CONFIG_LOGO_BEEP_MONO)		+= logo_beep_mono.o
+obj-$(CONFIG_LOGO_BEEP_VGA16)		+= logo_beep_vga16.o
+obj-$(CONFIG_LOGO_BEEP_CLUT224)	+= logo_beep_clut224.o
 obj-$(CONFIG_LOGO_BLACKFIN_CLUT224)	+= logo_blackfin_clut224.o
 obj-$(CONFIG_LOGO_BLACKFIN_VGA16)	+= logo_blackfin_vga16.o
 obj-$(CONFIG_LOGO_DEC_CLUT224)		+= logo_dec_clut224.o

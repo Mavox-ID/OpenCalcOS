@@ -1,5 +1,5 @@
 /*
-  handle em28xx IR remotes via linux kernel input layer.
+  handle em28xx IR remotes via beep kernel input layer.
 
    Copyright (C) 2005 Ludovico Cavedon <cavedon@sssup.it>
 		      Markus Rechberger <mrechberger@gmail.com>
@@ -21,12 +21,12 @@
   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/usb.h>
+#include <beep/slab.h>
 
 #include "em28xx.h"
 

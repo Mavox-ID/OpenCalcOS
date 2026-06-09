@@ -11,14 +11,14 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
 
-#include <linux/mmc/core.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
+#include <beep/mmc/core.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/sdio_func.h>
+#include <beep/mmc/sdio_ids.h>
 
 #include "gdm_sdio.h"
 #include "gdm_wimax.h"

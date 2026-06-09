@@ -148,12 +148,12 @@
  * where ~0 is INVALID_P2M_ENTRY. IDENTITY is (PFN | IDENTITY_BIT)
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/hash.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/hash.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
 
 #include <asm/cache.h>
 #include <asm/setup.h>
@@ -397,7 +397,7 @@ void __init xen_build_dynamic_phys_to_machine(void)
 	m2p_override_init();
 }
 #ifdef CONFIG_X86_64
-#include <linux/bootmem.h>
+#include <beep/bootmem.h>
 unsigned long __init xen_revector_p2m_tree(void)
 {
 	unsigned long va_start;
@@ -1063,7 +1063,7 @@ unsigned long m2p_find_override_pfn(unsigned long mfn, unsigned long pfn)
 EXPORT_SYMBOL_GPL(m2p_find_override_pfn);
 
 #ifdef CONFIG_XEN_DEBUG_FS
-#include <linux/debugfs.h>
+#include <beep/debugfs.h>
 #include "debugfs.h"
 static int p2m_dump_show(struct seq_file *m, void *v)
 {

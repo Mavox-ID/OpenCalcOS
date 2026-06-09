@@ -10,7 +10,7 @@
 #ifndef AES_CCM_H
 #define AES_CCM_H
 
-#include <linux/crypto.h>
+#include <beep/crypto.h>
 
 struct crypto_cipher *ieee80211_aes_key_setup_encrypt(const u8 key[]);
 void ieee80211_aes_ccm_encrypt(struct crypto_cipher *tfm, u8 *scratch,

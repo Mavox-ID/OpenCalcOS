@@ -7,17 +7,17 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/jiffies.h>
+#include <beep/workqueue.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 #include <asm/byteorder.h>
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include "sm_common.h"
 #include "r852.h"
 

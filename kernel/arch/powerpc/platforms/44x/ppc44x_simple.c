@@ -21,8 +21,8 @@
 #include <asm/udbg.h>
 #include <asm/uic.h>
 
-#include <linux/init.h>
-#include <linux/of_platform.h>
+#include <beep/init.h>
+#include <beep/of_platform.h>
 
 static __initdata struct of_device_id ppc44x_of_bus[] = {
 	{ .compatible = "ibm,plb4", },

@@ -2,7 +2,7 @@
 #define _UAPI__SPARC_SIGNAL_H
 
 #include <asm/sigcontext.h>
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 
 /* On the Sparc the signal handlers get passed a 'sub-signal' code
@@ -54,7 +54,7 @@
 #define SIGTERM		15
 #define SIGURG          16
 
-/* SunOS values which deviate from the Linux/i386 ones */
+/* SunOS values which deviate from the Beep/i386 ones */
 #define SIGSTOP		17
 #define SIGTSTP		18
 #define SIGCONT		19
@@ -156,7 +156,7 @@ struct sigstack {
 struct __new_sigaction {
 	__sighandler_t		sa_handler;
 	unsigned long		sa_flags;
-	__sigrestore_t		sa_restorer;  /* not used by Linux/SPARC yet */
+	__sigrestore_t		sa_restorer;  /* not used by Beep/SPARC yet */
 	__new_sigset_t		sa_mask;
 };
 
@@ -164,7 +164,7 @@ struct __old_sigaction {
 	__sighandler_t		sa_handler;
 	__old_sigset_t		sa_mask;
 	unsigned long		sa_flags;
-	void			(*sa_restorer)(void);  /* not used by Linux/SPARC yet */
+	void			(*sa_restorer)(void);  /* not used by Beep/SPARC yet */
 };
 
 typedef struct sigaltstack {

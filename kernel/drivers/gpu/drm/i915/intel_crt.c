@@ -24,9 +24,9 @@
  *	Eric Anholt <eric@anholt.net>
  */
 
-#include <linux/dmi.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <beep/dmi.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
 #include <drm/drmP.h>
 #include <drm/drm_crtc.h>
 #include <drm/drm_crtc_helper.h>

@@ -1,5 +1,5 @@
 /*
- *  linux/include/linux/ufs_fs.h
+ *  beep/include/beep/ufs_fs.h
  *
  * Copyright (C) 1996
  * Adrian Rodriguez (adrian@franklins-tower.rutgers.edu)
@@ -27,14 +27,14 @@
  *
  */
 
-#ifndef __LINUX_UFS_FS_H
-#define __LINUX_UFS_FS_H
+#ifndef __BEEP_UFS_FS_H
+#define __BEEP_UFS_FS_H
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/stat.h>
-#include <linux/fs.h>
-#include <linux/workqueue.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/stat.h>
+#include <beep/fs.h>
+#include <beep/workqueue.h>
 
 #include <asm/div64.h>
 typedef __u64 __bitwise __fs64;
@@ -957,4 +957,4 @@ struct ufs_super_block_third {
 	__u8	fs_space[1];
 };
 
-#endif /* __LINUX_UFS_FS_H */
+#endif /* __BEEP_UFS_FS_H */

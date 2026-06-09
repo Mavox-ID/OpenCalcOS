@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -9,7 +9,7 @@
  *		Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
  *		Arnt Gulbrandsen, <agulbra@nvg.unit.no>
  *		Alan Cox, <alan@lxorguk.ukuu.org.uk>
- *		Hirokazu Takahashi, <taka@valinux.co.jp>
+ *		Hirokazu Takahashi, <taka@vabeep.co.jp>
  *
  * Fixes:
  *		Alan Cox	:	verify_area() calls
@@ -81,33 +81,33 @@
 
 #include <asm/uaccess.h>
 #include <asm/ioctls.h>
-#include <linux/bootmem.h>
-#include <linux/highmem.h>
-#include <linux/swap.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/module.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/igmp.h>
-#include <linux/in.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
+#include <beep/bootmem.h>
+#include <beep/highmem.h>
+#include <beep/swap.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/module.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/igmp.h>
+#include <beep/in.h>
+#include <beep/errno.h>
+#include <beep/timer.h>
+#include <beep/mm.h>
+#include <beep/inet.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
 #include <net/tcp_states.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/skbuff.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #include <net/net_namespace.h>
 #include <net/icmp.h>
 #include <net/route.h>
 #include <net/checksum.h>
 #include <net/xfrm.h>
 #include <trace/events/udp.h>
-#include <linux/static_key.h>
+#include <beep/static_key.h>
 #include <trace/events/skb.h>
 #include "udp_impl.h"
 

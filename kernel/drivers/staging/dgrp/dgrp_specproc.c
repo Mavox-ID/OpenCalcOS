@@ -23,7 +23,7 @@
  *
  *  Description:
  *
- *     Handle the "config" proc entry for the linux realport device driver
+ *     Handle the "config" proc entry for the beep realport device driver
  *     and provide slots for the "net" and "mon" devices
  *
  *  Author:
@@ -32,15 +32,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/proc_fs.h>
-#include <linux/ctype.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
+#include <beep/module.h>
+#include <beep/tty.h>
+#include <beep/sched.h>
+#include <beep/cred.h>
+#include <beep/proc_fs.h>
+#include <beep/ctype.h>
+#include <beep/seq_file.h>
+#include <beep/uaccess.h>
+#include <beep/vmalloc.h>
 
 #include "dgrp_common.h"
 

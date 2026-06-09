@@ -1,30 +1,30 @@
-/* -*- linux-c -*- --------------------------------------------------------- *
+/* -*- beep-c -*- --------------------------------------------------------- *
  *
- * linux/fs/devpts/inode.c
+ * beep/fs/devpts/inode.c
  *
  *  Copyright 1998-2004 H. Peter Anvin -- All Rights Reserved
  *
- * This file is part of the Linux kernel and is made available under
+ * This file is part of the Beep kernel and is made available under
  * the terms of the GNU General Public License, version 2, or at your
  * option, any later version, incorporated herein by reference.
  *
  * ------------------------------------------------------------------------- */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/mount.h>
-#include <linux/tty.h>
-#include <linux/mutex.h>
-#include <linux/magic.h>
-#include <linux/idr.h>
-#include <linux/devpts_fs.h>
-#include <linux/parser.h>
-#include <linux/fsnotify.h>
-#include <linux/seq_file.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/sched.h>
+#include <beep/namei.h>
+#include <beep/slab.h>
+#include <beep/mount.h>
+#include <beep/tty.h>
+#include <beep/mutex.h>
+#include <beep/magic.h>
+#include <beep/idr.h>
+#include <beep/devpts_fs.h>
+#include <beep/parser.h>
+#include <beep/fsnotify.h>
+#include <beep/seq_file.h>
 
 #define DEVPTS_DEFAULT_MODE 0600
 /*

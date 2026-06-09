@@ -29,16 +29,16 @@
  *  into usbatm), and the userspace firmware loading utility.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/firmware.h>
+#include <beep/mutex.h>
 #include <asm/unaligned.h>
 
 #include "usbatm.h"

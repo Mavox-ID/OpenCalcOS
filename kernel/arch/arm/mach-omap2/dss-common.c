@@ -23,8 +23,8 @@
  * This file will be removed when DSS supports DT.
  */
 
-#include <linux/kernel.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/gpio.h>
 
 #include <video/omapdss.h>
 #include <video/omap-panel-tfp410.h>

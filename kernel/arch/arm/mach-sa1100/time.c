@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-sa1100/time.c
+ * beep/arch/arm/mach-sa1100/time.c
  *
  * Copyright (C) 1998 Deborah Wallach.
  * Twiddles  (C) 1999 Hugo Fiennes <hugo@empeg.com>
@@ -8,12 +8,12 @@
  *	Rewritten: big cleanup, much simpler, better HZ accuracy.
  *
  */
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/timex.h>
-#include <linux/clockchips.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/timex.h>
+#include <beep/clockchips.h>
 
 #include <asm/mach/time.h>
 #include <asm/sched_clock.h>

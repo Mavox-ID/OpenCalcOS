@@ -8,13 +8,13 @@
  * Trademarks are the property of their respective owners.
  */
 
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/serio.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/libps2.h>
-#include <linux/proc_fs.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/serio.h>
+#include <beep/module.h>
+#include <beep/input.h>
+#include <beep/libps2.h>
+#include <beep/proc_fs.h>
 #include <asm/uaccess.h>
 #include "psmouse.h"
 #include "trackpoint.h"

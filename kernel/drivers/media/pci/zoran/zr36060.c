@@ -26,13 +26,13 @@
 
 #define ZR060_VERSION "v0.7"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
 
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <beep/types.h>
+#include <beep/wait.h>
 
 /* I/O commands, error codes */
 #include <asm/io.h>
@@ -227,7 +227,7 @@ zr36060_pushit (struct zr36060 *ptr,
 
    Could be variable, but until it's not needed it they are just fixed to save
    memory. Otherwise expand zr36060 structure with arrays, push the values to
-   it and initialize from there, as e.g. the linux zr36057/60 driver does it.
+   it and initialize from there, as e.g. the beep zr36057/60 driver does it.
    ========================================================================= */
 
 static const char zr36060_dqt[0x86] = {

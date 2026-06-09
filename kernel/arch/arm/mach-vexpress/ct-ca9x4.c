@@ -1,15 +1,15 @@
 /*
  * Versatile Express Core Tile Cortex A9x4 Support
  */
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/clcd.h>
-#include <linux/clkdev.h>
-#include <linux/vexpress.h>
+#include <beep/init.h>
+#include <beep/gfp.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/clcd.h>
+#include <beep/clkdev.h>
+#include <beep/vexpress.h>
 
 #include <asm/hardware/arm_timer.h>
 #include <asm/hardware/cache-l2x0.h>

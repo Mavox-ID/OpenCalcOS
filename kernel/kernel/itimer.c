@@ -1,17 +1,17 @@
 /*
- * linux/kernel/itimer.c
+ * beep/kernel/itimer.c
  *
  * Copyright (C) 1992 Darren Senn
  */
 
 /* These are all the functions necessary to implement itimers */
 
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/syscalls.h>
-#include <linux/time.h>
-#include <linux/posix-timers.h>
-#include <linux/hrtimer.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/syscalls.h>
+#include <beep/time.h>
+#include <beep/posix-timers.h>
+#include <beep/hrtimer.h>
 #include <trace/events/timer.h>
 
 #include <asm/uaccess.h>

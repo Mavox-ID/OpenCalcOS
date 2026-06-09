@@ -12,13 +12,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/rtc.h>
 
-#include <linux/mfd/da9055/core.h>
-#include <linux/mfd/da9055/reg.h>
-#include <linux/mfd/da9055/pdata.h>
+#include <beep/mfd/da9055/core.h>
+#include <beep/mfd/da9055/reg.h>
+#include <beep/mfd/da9055/pdata.h>
 
 struct da9055_rtc {
 	struct rtc_device *rtc;

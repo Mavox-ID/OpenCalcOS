@@ -4,26 +4,26 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/net.h>		/* struct socket, struct proto_ops */
-#include <linux/atm.h>		/* ATM stuff */
-#include <linux/atmdev.h>
-#include <linux/socket.h>	/* SOL_SOCKET */
-#include <linux/errno.h>	/* error codes */
-#include <linux/capability.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/time.h>		/* struct timeval */
-#include <linux/skbuff.h>
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kmod.h>
+#include <beep/net.h>		/* struct socket, struct proto_ops */
+#include <beep/atm.h>		/* ATM stuff */
+#include <beep/atmdev.h>
+#include <beep/socket.h>	/* SOL_SOCKET */
+#include <beep/errno.h>	/* error codes */
+#include <beep/capability.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/time.h>		/* struct timeval */
+#include <beep/skbuff.h>
+#include <beep/bitops.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 #include <net/sock.h>		/* struct sock */
-#include <linux/uaccess.h>
-#include <linux/poll.h>
+#include <beep/uaccess.h>
+#include <beep/poll.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include "resources.h"		/* atm_find_dev */
 #include "common.h"		/* prototypes */

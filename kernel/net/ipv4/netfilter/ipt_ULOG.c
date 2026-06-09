@@ -30,23 +30,23 @@
  *   flushed even if it is not full yet.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/socket.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/netlink.h>
-#include <linux/netdevice.h>
-#include <linux/mm.h>
-#include <linux/moduleparam.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ipt_ULOG.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/socket.h>
+#include <beep/slab.h>
+#include <beep/skbuff.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/netlink.h>
+#include <beep/netdevice.h>
+#include <beep/mm.h>
+#include <beep/moduleparam.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_ipv4/ipt_ULOG.h>
 #include <net/netfilter/nf_log.h>
 #include <net/sock.h>
-#include <linux/bitops.h>
+#include <beep/bitops.h>
 #include <asm/unaligned.h>
 
 MODULE_LICENSE("GPL");

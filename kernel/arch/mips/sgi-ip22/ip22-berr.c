@@ -1,12 +1,12 @@
 /*
  * ip22-berr.c: Bus error handling.
  *
- * Copyright (C) 2002, 2003 Ladislav Michl (ladis@linux-mips.org)
+ * Copyright (C) 2002, 2003 Ladislav Michl (ladis@beep-mips.org)
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
 
 #include <asm/addrspace.h>
 #include <asm/traps.h>

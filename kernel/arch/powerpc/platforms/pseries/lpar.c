@@ -22,10 +22,10 @@
 /* Enables debugging of low-level hash table routines - careful! */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/console.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/dma-mapping.h>
+#include <beep/console.h>
+#include <beep/export.h>
 #include <asm/processor.h>
 #include <asm/mmu.h>
 #include <asm/page.h>
@@ -226,7 +226,7 @@ static void pSeries_lpar_hptab_clear(void)
 }
 
 /*
- * NOTE: for updatepp ops we are fortunate that the linux "newpp" bits and
+ * NOTE: for updatepp ops we are fortunate that the beep "newpp" bits and
  * the low 3 bits of flags happen to line up.  So no transform is needed.
  * We can probably optimize here and assume the high bits of newpp are
  * already zero.  For now I am paranoid.

@@ -12,9 +12,9 @@
 #define __ASM_PROM_H
 
 #ifdef CONFIG_OF
-#include <linux/bug.h>
-#include <linux/io.h>
-#include <linux/types.h>
+#include <beep/bug.h>
+#include <beep/io.h>
+#include <beep/types.h>
 #include <asm/bootinfo.h>
 
 extern int early_init_dt_scan_memory_arch(unsigned long node,

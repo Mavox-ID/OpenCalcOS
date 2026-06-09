@@ -34,17 +34,17 @@
  *	Added WDIOC_GETTIMEOUT and WDIOC_SETTIMOUT.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/reboot.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/miscdevice.h>
+#include <beep/watchdog.h>
+#include <beep/reboot.h>
+#include <beep/mutex.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
 #include <asm/uaccess.h>
 #include "mconsole.h"
 

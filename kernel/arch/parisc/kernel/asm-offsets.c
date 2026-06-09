@@ -3,14 +3,14 @@
  * This code generates raw asm output which is post-processed to extract
  * and format the required data.
  *
- *    Copyright (C) 2000-2001 John Marvin <jsm at parisc-linux.org>
+ *    Copyright (C) 2000-2001 John Marvin <jsm at parisc-beep.org>
  *    Copyright (C) 2000 David Huggins-Daines <dhd with pobox.org>
  *    Copyright (C) 2000 Sam Creasey <sammy@sammy.net>
- *    Copyright (C) 2000 Grant Grundler <grundler with parisc-linux.org>
- *    Copyright (C) 2001 Paul Bame <bame at parisc-linux.org>
- *    Copyright (C) 2001 Richard Hirst <rhirst at parisc-linux.org>
- *    Copyright (C) 2002 Randolph Chung <tausq with parisc-linux.org>
- *    Copyright (C) 2003 James Bottomley <jejb at parisc-linux.org>
+ *    Copyright (C) 2000 Grant Grundler <grundler with parisc-beep.org>
+ *    Copyright (C) 2001 Paul Bame <bame at parisc-beep.org>
+ *    Copyright (C) 2001 Richard Hirst <rhirst at parisc-beep.org>
+ *    Copyright (C) 2002 Randolph Chung <tausq with parisc-beep.org>
+ *    Copyright (C) 2003 James Bottomley <jejb at parisc-beep.org>
  *
  *    This program is free software; you can redistribute it and/or modify
  *    it under the terms of the GNU General Public License as published by
@@ -27,12 +27,12 @@
  *    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/thread_info.h>
-#include <linux/ptrace.h>
-#include <linux/hardirq.h>
-#include <linux/kbuild.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/thread_info.h>
+#include <beep/ptrace.h>
+#include <beep/hardirq.h>
+#include <beep/kbuild.h>
 
 #include <asm/pgtable.h>
 #include <asm/ptrace.h>

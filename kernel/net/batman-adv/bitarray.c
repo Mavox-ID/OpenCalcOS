@@ -20,7 +20,7 @@
 #include "main.h"
 #include "bitarray.h"
 
-#include <linux/bitops.h>
+#include <beep/bitops.h>
 
 /* shift the packet array by n places. */
 static void batadv_bitmap_shift_left(unsigned long *seq_bits, int32_t n)

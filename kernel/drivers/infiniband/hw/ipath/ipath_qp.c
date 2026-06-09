@@ -31,10 +31,10 @@
  * SOFTWARE.
  */
 
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <beep/err.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
 
 #include "ipath_verbs.h"
 #include "ipath_kernel.h"

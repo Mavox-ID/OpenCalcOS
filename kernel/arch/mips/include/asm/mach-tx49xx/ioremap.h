@@ -9,7 +9,7 @@
 #ifndef __ASM_MACH_TX49XX_IOREMAP_H
 #define __ASM_MACH_TX49XX_IOREMAP_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * Allow physical addresses to be fixed up to help peripherals located

@@ -19,8 +19,8 @@
 #ifndef __BTRFS_VOLUMES_
 #define __BTRFS_VOLUMES_
 
-#include <linux/bio.h>
-#include <linux/sort.h>
+#include <beep/bio.h>
+#include <beep/sort.h>
 #include "async-thread.h"
 #include "ioctl.h"
 

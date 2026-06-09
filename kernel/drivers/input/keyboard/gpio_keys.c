@@ -9,26 +9,26 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/sched.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/proc_fs.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
-#include <linux/workqueue.h>
-#include <linux/gpio.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
-#include <linux/spinlock.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/sched.h>
+#include <beep/pm.h>
+#include <beep/slab.h>
+#include <beep/sysctl.h>
+#include <beep/proc_fs.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/gpio_keys.h>
+#include <beep/workqueue.h>
+#include <beep/gpio.h>
+#include <beep/of_platform.h>
+#include <beep/of_gpio.h>
+#include <beep/spinlock.h>
 
 struct gpio_button_data {
 	const struct gpio_keys_button *button;
@@ -626,7 +626,7 @@ gpio_keys_get_devtree_pdata(struct device *dev)
 		button->gpio = gpio;
 		button->active_low = flags & OF_GPIO_ACTIVE_LOW;
 
-		if (of_property_read_u32(pp, "linux,code", &button->code)) {
+		if (of_property_read_u32(pp, "beep,code", &button->code)) {
 			dev_err(dev, "Button without keycode: 0x%x\n",
 				button->gpio);
 			error = -EINVAL;
@@ -635,7 +635,7 @@ gpio_keys_get_devtree_pdata(struct device *dev)
 
 		button->desc = of_get_property(pp, "label", NULL);
 
-		if (of_property_read_u32(pp, "linux,input-type", &button->type))
+		if (of_property_read_u32(pp, "beep,input-type", &button->type))
 			button->type = EV_KEY;
 
 		button->wakeup = !!of_get_property(pp, "gpio-key,wakeup", NULL);
@@ -727,7 +727,7 @@ static int gpio_keys_probe(struct platform_device *pdev)
 	input->id.product = 0x0001;
 	input->id.version = 0x0100;
 
-	/* Enable auto repeat feature of Linux input subsystem */
+	/* Enable auto repeat feature of Beep input subsystem */
 	if (pdata->rep)
 		__set_bit(EV_REP, input->evbit);
 

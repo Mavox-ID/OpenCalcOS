@@ -7,17 +7,17 @@
  * License version 2.  This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
-#include <linux/ethtool.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/pci.h>
+#include <beep/irq.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mv643xx_eth.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
+#include <beep/ethtool.h>
 #include <net/dsa.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

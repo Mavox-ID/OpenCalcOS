@@ -114,19 +114,19 @@
 		#size-cells = <0>;
 		button@1 {
 			label = "Function Button";
-			linux,code = <357>;
+			beep,code = <357>;
 			gpios = <&gpio1 9 1>;
 		};
 		button@2 {
 			label = "Power-on Switch";
-			linux,code = <0>;
-			linux,input-type = <5>;
+			beep,code = <0>;
+			beep,input-type = <5>;
 			gpios = <&gpio1 10 1>;
 		};
 		button@3 {
 			label = "Power-auto Switch";
-			linux,code = <1>;
-			linux,input-type = <5>;
+			beep,code = <1>;
+			beep,input-type = <5>;
 			gpios = <&gpio1 11 1>;
 		};
 	};
@@ -152,7 +152,7 @@
 		led@4 {
 			label = "lsxl:blue:power";
 			gpios = <&gpio1 7 1>;
-			linux,default-trigger = "default-on";
+			beep,default-trigger = "default-on";
 		};
 
 		led@5 {

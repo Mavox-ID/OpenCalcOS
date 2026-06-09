@@ -130,7 +130,7 @@ void arch_release_thread_info(struct thread_info *ti);
 
 #else /* !__ASSEMBLY__ */
 
-#ifndef __VMLINUX_LDS__
+#ifndef __VMBEEP_LDS__
 /* how to get the thread information struct from ASM */
 .macro GET_THREAD_INFO reg
 	mov	sp,\reg

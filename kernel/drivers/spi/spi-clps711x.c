@@ -9,16 +9,16 @@
  * (at your option) any later version.
  */
 
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/platform_data/spi-clps711x.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/platform_data/spi-clps711x.h>
 
 #include <mach/hardware.h>
 

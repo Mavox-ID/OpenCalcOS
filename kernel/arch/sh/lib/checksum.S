@@ -1,6 +1,6 @@
 /* $Id: checksum.S,v 1.10 2001/07/06 13:11:32 gniibe Exp $
  *
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -29,7 +29,7 @@
  */
 
 #include <asm/errno.h>
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 /*
  * computes a partial checksum, e.g. for TCP/UDP fragments

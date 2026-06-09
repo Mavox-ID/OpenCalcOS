@@ -26,11 +26,11 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
+#include <beep/delay.h>
+#include <beep/gfp.h>
+#include <beep/pci.h>
+#include <beep/module.h>
+#include <beep/firmware.h>
 #include "aic94xx_reg.h"
 #include "aic94xx_hwi.h"
 

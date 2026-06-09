@@ -10,10 +10,10 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/log2.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/log2.h>
 #include <asm/mmu_context.h>
 #include <asm/processor.h>
 #include <asm/uaccess.h>

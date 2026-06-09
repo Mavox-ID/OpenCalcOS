@@ -12,7 +12,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  *
- * Copyright SUSE Linux Products GmbH 2009
+ * Copyright SUSE Beep Products GmbH 2009
  *
  * Authors: Alexander Graf <agraf@suse.de>
  */
@@ -20,8 +20,8 @@
 #ifndef __ASM_KVM_BOOK3S_H__
 #define __ASM_KVM_BOOK3S_H__
 
-#include <linux/types.h>
-#include <linux/kvm_host.h>
+#include <beep/types.h>
+#include <beep/kvm_host.h>
 #include <asm/kvm_book3s_asm.h>
 
 struct kvmppc_bat {

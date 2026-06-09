@@ -1,5 +1,5 @@
 /*
- *  linux/include/asm-parisc/ide.h
+ *  beep/include/asm-parisc/ide.h
  *
  *  Copyright (C) 1994-1996  Linus Torvalds & authors
  */

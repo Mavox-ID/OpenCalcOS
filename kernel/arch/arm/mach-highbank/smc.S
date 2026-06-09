@@ -7,7 +7,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 /*
  * This is common routine to manage secure monitor API

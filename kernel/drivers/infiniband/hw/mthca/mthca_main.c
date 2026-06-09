@@ -32,12 +32,12 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/gfp.h>
 
 #include "mthca_dev.h"
 #include "mthca_config_reg.h"

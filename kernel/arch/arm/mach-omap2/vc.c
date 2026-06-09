@@ -7,11 +7,11 @@
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/bug.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/bug.h>
+#include <beep/io.h>
 
 #include <asm/div64.h>
 

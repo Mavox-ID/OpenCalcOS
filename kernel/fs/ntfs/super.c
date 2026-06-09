@@ -1,5 +1,5 @@
 /*
- * super.c - NTFS kernel super block handling. Part of the Linux-NTFS project.
+ * super.c - NTFS kernel super block handling. Part of the Beep-NTFS project.
  *
  * Copyright (c) 2001-2012 Anton Altaparmakov and Tuxera Inc.
  * Copyright (c) 2001,2002 Richard Russon
@@ -15,22 +15,22 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/blkdev.h>	/* For bdev_logical_block_size(). */
-#include <linux/backing-dev.h>
-#include <linux/buffer_head.h>
-#include <linux/vfs.h>
-#include <linux/moduleparam.h>
-#include <linux/bitmap.h>
+#include <beep/stddef.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/spinlock.h>
+#include <beep/blkdev.h>	/* For bdev_logical_block_size(). */
+#include <beep/backing-dev.h>
+#include <beep/buffer_head.h>
+#include <beep/vfs.h>
+#include <beep/moduleparam.h>
+#include <beep/bitmap.h>
 
 #include "sysctl.h"
 #include "logfile.h"
@@ -2656,7 +2656,7 @@ static int ntfs_statfs(struct dentry *dentry, struct kstatfs *sfs)
 	up_read(&vol->mftbmp_lock);
 	/*
 	 * File system id. This is extremely *nix flavour dependent and even
-	 * within Linux itself all fs do their own thing. I interpret this to
+	 * within Beep itself all fs do their own thing. I interpret this to
 	 * mean a unique id associated with the mounted fs and not the id
 	 * associated with the filesystem driver, the latter is already given
 	 * by the filesystem type in sfs->f_type. Thus we use the 64-bit

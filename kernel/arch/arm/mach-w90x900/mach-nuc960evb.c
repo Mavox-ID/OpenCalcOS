@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-w90x900/mach-nuc960evb.c
+ * beep/arch/arm/mach-w90x900/mach-nuc960evb.c
  *
  * Based on mach-s3c2410/mach-smdk2410.c by Jonas Dietsche
  *
@@ -13,7 +13,7 @@
  *
  */
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 #include <asm/mach-types.h>

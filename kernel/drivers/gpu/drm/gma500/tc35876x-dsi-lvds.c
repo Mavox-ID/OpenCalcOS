@@ -26,9 +26,9 @@
 #include "mdfld_output.h"
 #include "mdfld_dsi_pkg_sender.h"
 #include "tc35876x-dsi-lvds.h"
-#include <linux/i2c/tc35876x.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/i2c/tc35876x.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 #include <asm/intel_scu_ipc.h>
 
 static struct i2c_client *tc35876x_client;

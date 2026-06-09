@@ -16,11 +16,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/nl80211.h>
-#include <linux/pci.h>
-#include <linux/pci-aspm.h>
-#include <linux/ath9k_platform.h>
-#include <linux/module.h>
+#include <beep/nl80211.h>
+#include <beep/pci.h>
+#include <beep/pci-aspm.h>
+#include <beep/ath9k_platform.h>
+#include <beep/module.h>
 #include "ath9k.h"
 
 static DEFINE_PCI_DEVICE_TABLE(ath_pci_id_table) = {
@@ -177,7 +177,7 @@ static int ath_pci_probe(struct pci_dev *pdev, const struct pci_device_id *id)
 	pci_read_config_byte(pdev, PCI_CACHE_LINE_SIZE, &csz);
 	if (csz == 0) {
 		/*
-		 * Linux 2.4.18 (at least) writes the cache line size
+		 * Beep 2.4.18 (at least) writes the cache line size
 		 * register as a 16-bit wide register which is wrong.
 		 * We must have this setup properly for rx buffer
 		 * DMA to work so force a reasonable value here if it

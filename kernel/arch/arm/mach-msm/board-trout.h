@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-msm/board-trout.h
+/* beep/arch/arm/mach-msm/board-trout.h
 ** Author: Brian Swetland <swetland@google.com>
 */
 #ifndef __ARCH_ARM_MACH_MSM_BOARD_TROUT_H
@@ -27,8 +27,8 @@
 #define MSM_FB_BASE		0x03800000
 #define MSM_FB_SIZE		0x00100000
 
-#define MSM_LINUX_BASE		MSM_EBI_BASE
-#define MSM_LINUX_SIZE		0x06500000
+#define MSM_BEEP_BASE		MSM_EBI_BASE
+#define MSM_BEEP_SIZE		0x06500000
 
 #define MSM_PMEM_GPU1_SIZE	0x800000
 #define MSM_PMEM_GPU1_BASE	(MSM_RAM_CONSOLE_BASE - MSM_PMEM_GPU1_SIZE)

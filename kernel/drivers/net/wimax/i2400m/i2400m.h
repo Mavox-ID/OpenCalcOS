@@ -32,7 +32,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  *
- * Intel Corporation <linux-wimax@intel.com>
+ * Intel Corporation <beep-wimax@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  * Yanir Lubetkin <yanirx.lubetkin@intel.com>
  *  - Initial implementation
@@ -70,7 +70,7 @@
  *        queue. bus-specific code just pulls frames from this module
  *        to sends them to the device.
  *
- *  - netdev glue: netdev.c - interface with Linux networking
+ *  - netdev glue: netdev.c - interface with Beep networking
  *        stack. Pass around data frames, and configure when the
  *        device is up and running or shutdown (through ifconfig up /
  *        down). Bus-generic only.
@@ -84,10 +84,10 @@
  *        and off, handling the device reboots/resets and a few simple
  *        WiMAX stack ops.
  *
- * Code is also broken up in linux-glue / device-glue.
+ * Code is also broken up in beep-glue / device-glue.
  *
- * Linux glue contains functions that deal mostly with gluing with the
- * rest of the Linux kernel.
+ * Beep glue contains functions that deal mostly with gluing with the
+ * rest of the Beep kernel.
  *
  * Device-glue are functions that deal mostly with the way the device
  * does things and talk the device's language.
@@ -101,7 +101,7 @@
  * This bus generic code exports three APIs:
  *
  *  - HDI (host-device interface) definitions common to all busses
- *    (include/linux/wimax/i2400m.h); these can be also used by user
+ *    (include/beep/wimax/i2400m.h); these can be also used by user
  *    space code.
  *  - internal API for the bus-generic code
  *  - external API for the bus-specific drivers
@@ -151,13 +151,13 @@
 #ifndef __I2400M_H__
 #define __I2400M_H__
 
-#include <linux/usb.h>
-#include <linux/netdevice.h>
-#include <linux/completion.h>
-#include <linux/rwsem.h>
-#include <linux/atomic.h>
+#include <beep/usb.h>
+#include <beep/netdevice.h>
+#include <beep/completion.h>
+#include <beep/rwsem.h>
+#include <beep/atomic.h>
 #include <net/wimax.h>
-#include <linux/wimax/i2400m.h>
+#include <beep/wimax/i2400m.h>
 #include <asm/byteorder.h>
 
 enum {

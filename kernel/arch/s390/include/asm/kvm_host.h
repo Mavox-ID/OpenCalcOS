@@ -13,9 +13,9 @@
 
 #ifndef ASM_KVM_HOST_H
 #define ASM_KVM_HOST_H
-#include <linux/hrtimer.h>
-#include <linux/interrupt.h>
-#include <linux/kvm_host.h>
+#include <beep/hrtimer.h>
+#include <beep/interrupt.h>
+#include <beep/kvm_host.h>
 #include <asm/debug.h>
 #include <asm/cpu.h>
 

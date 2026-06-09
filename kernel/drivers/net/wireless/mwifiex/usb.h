@@ -20,7 +20,7 @@
 #ifndef _MWIFIEX_USB_H
 #define _MWIFIEX_USB_H
 
-#include <linux/usb.h>
+#include <beep/usb.h>
 
 #define USB8797_VID		0x1286
 #define USB8797_PID_1		0x2043

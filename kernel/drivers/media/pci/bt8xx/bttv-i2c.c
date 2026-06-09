@@ -29,13 +29,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
 
 #include "bttvp.h"
 #include <media/v4l2-common.h>
-#include <linux/jiffies.h>
+#include <beep/jiffies.h>
 #include <asm/io.h>
 
 static int i2c_debug;

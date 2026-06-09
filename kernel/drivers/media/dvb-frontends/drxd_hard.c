@@ -21,13 +21,13 @@
  * Or, point your browser to http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/i2c.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/firmware.h>
+#include <beep/i2c.h>
 #include <asm/div64.h>
 
 #include "dvb_frontend.h"

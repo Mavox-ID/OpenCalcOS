@@ -18,14 +18,14 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/compat.h>
-#include <linux/mutex.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/export.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/compat.h>
+#include <beep/mutex.h>
+#include <beep/ctype.h>
+#include <beep/string.h>
+#include <beep/export.h>
 #include <sound/core.h>
 #include "hda_codec.h"
 #include "hda_local.h"

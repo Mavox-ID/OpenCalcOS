@@ -1,5 +1,5 @@
 /*
- * linux/kernel/irq/chip.c
+ * beep/kernel/irq/chip.c
  *
  * Copyright (C) 1992, 1998-2006 Linus Torvalds, Ingo Molnar
  * Copyright (C) 2005-2006, Thomas Gleixner, Russell King
@@ -10,11 +10,11 @@
  * Detailed information is available in Documentation/DocBook/genericirq
  */
 
-#include <linux/irq.h>
-#include <linux/msi.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
+#include <beep/irq.h>
+#include <beep/msi.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
 
 #include <trace/events/irq.h>
 
@@ -51,7 +51,7 @@ EXPORT_SYMBOL(irq_set_chip);
 /**
  *	irq_set_type - set the irq trigger type for an irq
  *	@irq:	irq number
- *	@type:	IRQ_TYPE_{LEVEL,EDGE}_* value - see include/linux/irq.h
+ *	@type:	IRQ_TYPE_{LEVEL,EDGE}_* value - see include/beep/irq.h
  */
 int irq_set_irq_type(unsigned int irq, unsigned int type)
 {

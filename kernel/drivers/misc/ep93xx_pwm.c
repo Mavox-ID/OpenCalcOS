@@ -17,12 +17,12 @@
  *    - PWMOUT1 (alternate function for EGPIO14)
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
 
 #include <mach/platform.h>
 

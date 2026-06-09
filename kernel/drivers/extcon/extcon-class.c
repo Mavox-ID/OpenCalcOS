@@ -22,15 +22,15 @@
  *
 */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/err.h>
-#include <linux/extcon.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/fs.h>
+#include <beep/err.h>
+#include <beep/extcon.h>
+#include <beep/slab.h>
+#include <beep/sysfs.h>
 
 /*
  * extcon_cable_name suggests the standard cable names for commonly used

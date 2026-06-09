@@ -1,13 +1,13 @@
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/clockchips.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/threads.h>
+#include <beep/clockchips.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/jiffies.h>
+#include <beep/threads.h>
 #include <asm/irq.h>
 #include <asm/param.h>
 #include <kern_util.h>

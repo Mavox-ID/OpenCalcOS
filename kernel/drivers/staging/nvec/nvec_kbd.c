@@ -12,11 +12,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
 
 #include "nvec-keytable.h"
 #include "nvec.h"

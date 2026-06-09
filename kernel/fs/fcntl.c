@@ -1,26 +1,26 @@
 /*
- *  linux/fs/fcntl.c
+ *  beep/fs/fcntl.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/syscalls.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/capability.h>
-#include <linux/dnotify.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pipe_fs_i.h>
-#include <linux/security.h>
-#include <linux/ptrace.h>
-#include <linux/signal.h>
-#include <linux/rcupdate.h>
-#include <linux/pid_namespace.h>
-#include <linux/user_namespace.h>
+#include <beep/syscalls.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/fdtable.h>
+#include <beep/capability.h>
+#include <beep/dnotify.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/pipe_fs_i.h>
+#include <beep/security.h>
+#include <beep/ptrace.h>
+#include <beep/signal.h>
+#include <beep/rcupdate.h>
+#include <beep/pid_namespace.h>
+#include <beep/user_namespace.h>
 
 #include <asm/poll.h>
 #include <asm/siginfo.h>

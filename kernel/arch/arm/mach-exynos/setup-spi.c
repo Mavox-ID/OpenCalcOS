@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-exynos4/setup-spi.c
+/* beep/arch/arm/mach-exynos4/setup-spi.c
  *
  * Copyright (C) 2011 Samsung Electronics Ltd.
  *             http://www.samsung.com/
@@ -8,7 +8,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/gpio.h>
+#include <beep/gpio.h>
 #include <plat/gpio-cfg.h>
 
 #ifdef CONFIG_S3C64XX_DEV_SPI0

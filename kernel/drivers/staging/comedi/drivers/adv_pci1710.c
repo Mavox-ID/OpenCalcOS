@@ -41,7 +41,7 @@ Configuration options:
 	device will be used.
 */
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 #include "../comedidev.h"
 

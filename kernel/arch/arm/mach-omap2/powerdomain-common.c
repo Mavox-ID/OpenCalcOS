@@ -11,9 +11,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/bug.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/bug.h>
 #include "pm.h"
 #include "cm.h"
 #include "cm-regbits-34xx.h"

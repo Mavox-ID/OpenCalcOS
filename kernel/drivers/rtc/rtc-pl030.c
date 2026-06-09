@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/rtc/rtc-pl030.c
+ *  beep/drivers/rtc/rtc-pl030.c
  *
  *  Copyright (C) 2000-2001 Deep Blue Solutions Ltd.
  *
@@ -7,13 +7,13 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/amba/bus.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/amba/bus.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 #define RTC_DR		(0)
 #define RTC_MR		(4)
@@ -187,6 +187,6 @@ static struct amba_driver pl030_driver = {
 
 module_amba_driver(pl030_driver);
 
-MODULE_AUTHOR("Russell King <rmk@arm.linux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk@arm.beep.org.uk>");
 MODULE_DESCRIPTION("ARM AMBA PL030 RTC Driver");
 MODULE_LICENSE("GPL");

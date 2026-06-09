@@ -17,7 +17,7 @@ The ACL-7130 card have an 8254 timer/counter not supported by this driver.
 
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 #define PCL730_SIZE		4
 #define ACL7130_SIZE	8

@@ -1,23 +1,23 @@
-/* linux/arch/arm/plat-s3c24xx/pwm-clock.c
+/* beep/arch/arm/plat-s3c24xx/pwm-clock.c
  *
  * Copyright (c) 2007 Simtec Electronics
  * Copyright (c) 2007, 2008 Ben Dooks
- *	Ben Dooks <ben-linux@fluff.org>
+ *	Ben Dooks <ben-beep@fluff.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License.
 */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/log2.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/log2.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <mach/map.h>

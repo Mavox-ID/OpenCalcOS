@@ -29,11 +29,11 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/kfifo.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/scatterlist.h>
+#include <beep/kfifo.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_host.h>
 

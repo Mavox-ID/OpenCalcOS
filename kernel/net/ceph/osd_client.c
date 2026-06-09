@@ -1,22 +1,22 @@
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/highmem.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/highmem.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
 #ifdef CONFIG_BLOCK
-#include <linux/bio.h>
+#include <beep/bio.h>
 #endif
 
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/osd_client.h>
-#include <linux/ceph/messenger.h>
-#include <linux/ceph/decode.h>
-#include <linux/ceph/auth.h>
-#include <linux/ceph/pagelist.h>
+#include <beep/ceph/libceph.h>
+#include <beep/ceph/osd_client.h>
+#include <beep/ceph/messenger.h>
+#include <beep/ceph/decode.h>
+#include <beep/ceph/auth.h>
+#include <beep/ceph/pagelist.h>
 
 #define OSD_OP_FRONT_LEN	4096
 #define OSD_OPREPLY_FRONT_LEN	512

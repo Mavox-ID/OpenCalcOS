@@ -3,7 +3,7 @@
  * All rights reserved
  * www.brocade.com
  *
- * Linux driver for Brocade Fibre Channel Host Bus Adapter.
+ * Beep driver for Brocade Fibre Channel Host Bus Adapter.
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License (GPL) Version 2 as
@@ -16,16 +16,16 @@
  */
 
 /*
- *  bfad.c Linux driver PCI interface module.
+ *  bfad.c Beep driver PCI interface module.
  */
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/pci.h>
-#include <linux/firmware.h>
+#include <beep/module.h>
+#include <beep/kthread.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/pci.h>
+#include <beep/firmware.h>
 #include <asm/uaccess.h>
 #include <asm/fcntl.h>
 
@@ -1284,7 +1284,7 @@ bfad_setup_intr(struct bfad_s *bfad)
 			 * interrupts into one vector, so even if we
 			 * can try to request less vectors, we don't
 			 * know how to associate interrupt events to
-			 *  vectors. Linux doesn't duplicate vectors
+			 *  vectors. Beep doesn't duplicate vectors
 			 * in the MSIX table for this case.
 			 */
 			if (error) {

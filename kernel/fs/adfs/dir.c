@@ -1,5 +1,5 @@
 /*
- *  linux/fs/adfs/dir.c
+ *  beep/fs/adfs/dir.c
  *
  *  Copyright (C) 1999-2000 Russell King
  *

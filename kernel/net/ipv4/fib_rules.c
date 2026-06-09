@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -18,15 +18,15 @@
  *		Marc Boucher	:	routing by fwmark
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/netlink.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/netlink.h>
+#include <beep/inetdevice.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/rcupdate.h>
+#include <beep/export.h>
 #include <net/ip.h>
 #include <net/route.h>
 #include <net/tcp.h>

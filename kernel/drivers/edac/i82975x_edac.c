@@ -9,11 +9,11 @@
  *   Copied from i82875p_edac.c source:
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/edac.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/edac.h>
 #include "edac_core.h"
 
 #define I82975X_REVISION	" Ver: 1.0.0"

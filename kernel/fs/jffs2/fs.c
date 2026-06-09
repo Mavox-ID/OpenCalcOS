@@ -12,17 +12,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/mtd/mtd.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/vfs.h>
-#include <linux/crc32.h>
+#include <beep/capability.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/list.h>
+#include <beep/mtd/mtd.h>
+#include <beep/pagemap.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/vfs.h>
+#include <beep/crc32.h>
 #include "nodelist.h"
 
 static int jffs2_flash_setup(struct jffs2_sb_info *c);

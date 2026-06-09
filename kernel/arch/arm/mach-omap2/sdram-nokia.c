@@ -12,10 +12,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
 
 #include "common.h"
 #include "sdram-nokia.h"

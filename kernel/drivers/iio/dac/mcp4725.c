@@ -16,15 +16,15 @@
  * writing the DAC value to EEPROM is not supported
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/err.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
 
-#include <linux/iio/dac/mcp4725.h>
+#include <beep/iio/dac/mcp4725.h>
 
 #define MCP4725_DRV_NAME "mcp4725"
 

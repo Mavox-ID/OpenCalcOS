@@ -4,8 +4,8 @@
 #if !defined(_TRACE_WORKQUEUE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_WORKQUEUE_H
 
-#include <linux/tracepoint.h>
-#include <linux/workqueue.h>
+#include <beep/tracepoint.h>
+#include <beep/workqueue.h>
 
 DECLARE_EVENT_CLASS(workqueue_work,
 

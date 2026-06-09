@@ -12,17 +12,17 @@
  * Chris Zankel <chris@zankel.net>
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/profile.h>
-#include <linux/delay.h>
-#include <linux/irqdomain.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/time.h>
+#include <beep/clocksource.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/profile.h>
+#include <beep/delay.h>
+#include <beep/irqdomain.h>
 
 #include <asm/timex.h>
 #include <asm/platform.h>
@@ -62,11 +62,11 @@ void __init time_init(void)
 #endif
 	clocksource_register_hz(&ccount_clocksource, CCOUNT_PER_JIFFY * HZ);
 
-	/* Initialize the linux timer interrupt. */
+	/* Initialize the beep timer interrupt. */
 
-	irq = irq_create_mapping(NULL, LINUX_TIMER_INT);
+	irq = irq_create_mapping(NULL, BEEP_TIMER_INT);
 	setup_irq(irq, &timer_irqaction);
-	set_linux_timer(get_ccount() + CCOUNT_PER_JIFFY);
+	set_beep_timer(get_ccount() + CCOUNT_PER_JIFFY);
 }
 
 /*
@@ -78,7 +78,7 @@ irqreturn_t timer_interrupt (int irq, void *dev_id)
 
 	unsigned long next;
 
-	next = get_linux_timer();
+	next = get_beep_timer();
 
 again:
 	while ((signed long)(get_ccount() - next) > 0) {
@@ -88,12 +88,12 @@ again:
 		update_process_times(user_mode(get_irq_regs()));
 #endif
 
-		xtime_update(1); /* Linux handler in kernel/time/timekeeping */
+		xtime_update(1); /* Beep handler in kernel/time/timekeeping */
 
 		/* Note that writing CCOMPARE clears the interrupt. */
 
 		next += CCOUNT_PER_JIFFY;
-		set_linux_timer(next);
+		set_beep_timer(next);
 	}
 
 	/* Allow platform to do something useful (Wdog). */

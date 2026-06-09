@@ -34,19 +34,19 @@
 
 #include "ipoib.h"
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/vmalloc.h>
 
-#include <linux/if_arp.h>	/* For ARPHRD_xxx */
+#include <beep/if_arp.h>	/* For ARPHRD_xxx */
 
-#include <linux/ip.h>
-#include <linux/in.h>
+#include <beep/ip.h>
+#include <beep/in.h>
 
-#include <linux/jhash.h>
+#include <beep/jhash.h>
 #include <net/arp.h>
 
 MODULE_AUTHOR("Roland Dreier");

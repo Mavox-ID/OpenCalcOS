@@ -1,5 +1,5 @@
 /*
- *  linux/fs/bad_inode.c
+ *  beep/fs/bad_inode.c
  *
  *  Copyright (C) 1997, Stephen Tweedie
  *
@@ -8,12 +8,12 @@
  *  Fabian Frederick : August 2003 - All file operations assigned to EIO
  */
 
-#include <linux/fs.h>
-#include <linux/export.h>
-#include <linux/stat.h>
-#include <linux/time.h>
-#include <linux/namei.h>
-#include <linux/poll.h>
+#include <beep/fs.h>
+#include <beep/export.h>
+#include <beep/stat.h>
+#include <beep/time.h>
+#include <beep/namei.h>
+#include <beep/poll.h>
 
 
 static loff_t bad_file_llseek(struct file *file, loff_t offset, int whence)

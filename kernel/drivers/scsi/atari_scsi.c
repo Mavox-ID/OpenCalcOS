@@ -65,7 +65,7 @@
 
 
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #define NDEBUG (0)
 
@@ -80,16 +80,16 @@
 #define	SUPPORT_TAGS
 #define	MAX_TAGS 32
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/nvram.h>
-#include <linux/bitops.h>
+#include <beep/types.h>
+#include <beep/stddef.h>
+#include <beep/ctype.h>
+#include <beep/delay.h>
+#include <beep/mm.h>
+#include <beep/blkdev.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/nvram.h>
+#include <beep/bitops.h>
 
 #include <asm/setup.h>
 #include <asm/atarihw.h>
@@ -107,7 +107,7 @@
 #include <asm/atari_stram.h>
 #include <asm/io.h>
 
-#include <linux/stat.h>
+#include <beep/stat.h>
 
 #define	IS_A_TT()	ATARIHW_PRESENT(TT_SCSI)
 

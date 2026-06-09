@@ -9,9 +9,9 @@
  * (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/jack.h>

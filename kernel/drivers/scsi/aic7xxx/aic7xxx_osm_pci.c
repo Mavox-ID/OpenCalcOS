@@ -1,5 +1,5 @@
 /*
- * Linux driver attachment glue for PCI based controllers.
+ * Beep driver attachment glue for PCI based controllers.
  *
  * Copyright (c) 2000-2001 Adaptec Inc.
  * All rights reserved.
@@ -36,7 +36,7 @@
  * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGES.
  *
- * $Id: //depot/aic7xxx/linux/drivers/scsi/aic7xxx/aic7xxx_osm_pci.c#47 $
+ * $Id: //depot/aic7xxx/beep/drivers/scsi/aic7xxx/aic7xxx_osm_pci.c#47 $
  */
 
 #include "aic7xxx_osm.h"
@@ -46,7 +46,7 @@
 */
 #define ID(x)	ID_C(x, PCI_CLASS_STORAGE_SCSI)
 
-static const struct pci_device_id ahc_linux_pci_id_table[] = {
+static const struct pci_device_id ahc_beep_pci_id_table[] = {
 	/* aic7850 based controllers */
 	ID(ID_AHA_2902_04_10_15_20C_30C),
 	/* aic7860 based controllers */
@@ -119,11 +119,11 @@ static const struct pci_device_id ahc_linux_pci_id_table[] = {
 	{ 0 }
 };
 
-MODULE_DEVICE_TABLE(pci, ahc_linux_pci_id_table);
+MODULE_DEVICE_TABLE(pci, ahc_beep_pci_id_table);
 
 #ifdef CONFIG_PM
 static int
-ahc_linux_pci_dev_suspend(struct pci_dev *pdev, pm_message_t mesg)
+ahc_beep_pci_dev_suspend(struct pci_dev *pdev, pm_message_t mesg)
 {
 	struct ahc_softc *ahc = pci_get_drvdata(pdev);
 	int rc;
@@ -141,7 +141,7 @@ ahc_linux_pci_dev_suspend(struct pci_dev *pdev, pm_message_t mesg)
 }
 
 static int
-ahc_linux_pci_dev_resume(struct pci_dev *pdev)
+ahc_beep_pci_dev_resume(struct pci_dev *pdev)
 {
 	struct ahc_softc *ahc = pci_get_drvdata(pdev);
 	int rc;
@@ -164,7 +164,7 @@ ahc_linux_pci_dev_resume(struct pci_dev *pdev)
 #endif
 
 static void
-ahc_linux_pci_dev_remove(struct pci_dev *pdev)
+ahc_beep_pci_dev_remove(struct pci_dev *pdev)
 {
 	struct ahc_softc *ahc = pci_get_drvdata(pdev);
 	u_long s;
@@ -179,7 +179,7 @@ ahc_linux_pci_dev_remove(struct pci_dev *pdev)
 }
 
 static void
-ahc_linux_pci_inherit_flags(struct ahc_softc *ahc)
+ahc_beep_pci_inherit_flags(struct ahc_softc *ahc)
 {
 	struct pci_dev *pdev = ahc->dev_softc, *master_pdev;
 	unsigned int master_devfn = PCI_DEVFN(PCI_SLOT(pdev->devfn), 0);
@@ -200,7 +200,7 @@ ahc_linux_pci_inherit_flags(struct ahc_softc *ahc)
 }
 
 static int
-ahc_linux_pci_dev_probe(struct pci_dev *pdev, const struct pci_device_id *ent)
+ahc_beep_pci_dev_probe(struct pci_dev *pdev, const struct pci_device_id *ent)
 {
 	char		 buf[80];
 	const uint64_t	 mask_39bit = 0x7FFFFFFFFFULL;
@@ -262,10 +262,10 @@ ahc_linux_pci_dev_probe(struct pci_dev *pdev, const struct pci_device_id *ent)
 	 * settings from function 0.
 	 */
 	if ((ahc->features & AHC_MULTI_FUNC) && PCI_FUNC(pdev->devfn) != 0)
-		ahc_linux_pci_inherit_flags(ahc);
+		ahc_beep_pci_inherit_flags(ahc);
 
 	pci_set_drvdata(pdev, ahc);
-	ahc_linux_register_host(ahc, &aic7xxx_driver_template);
+	ahc_beep_register_host(ahc, &aic7xxx_driver_template);
 	return (0);
 }
 
@@ -322,29 +322,29 @@ ahc_pci_write_config(ahc_dev_softc_t pci, int reg, uint32_t value, int width)
 
 static struct pci_driver aic7xxx_pci_driver = {
 	.name		= "aic7xxx",
-	.probe		= ahc_linux_pci_dev_probe,
+	.probe		= ahc_beep_pci_dev_probe,
 #ifdef CONFIG_PM
-	.suspend	= ahc_linux_pci_dev_suspend,
-	.resume		= ahc_linux_pci_dev_resume,
+	.suspend	= ahc_beep_pci_dev_suspend,
+	.resume		= ahc_beep_pci_dev_resume,
 #endif
-	.remove		= ahc_linux_pci_dev_remove,
-	.id_table	= ahc_linux_pci_id_table
+	.remove		= ahc_beep_pci_dev_remove,
+	.id_table	= ahc_beep_pci_id_table
 };
 
 int
-ahc_linux_pci_init(void)
+ahc_beep_pci_init(void)
 {
 	return pci_register_driver(&aic7xxx_pci_driver);
 }
 
 void
-ahc_linux_pci_exit(void)
+ahc_beep_pci_exit(void)
 {
 	pci_unregister_driver(&aic7xxx_pci_driver);
 }
 
 static int
-ahc_linux_pci_reserve_io_region(struct ahc_softc *ahc, resource_size_t *base)
+ahc_beep_pci_reserve_io_region(struct ahc_softc *ahc, resource_size_t *base)
 {
 	if (aic7xxx_allow_memio == 0)
 		return (ENOMEM);
@@ -358,7 +358,7 @@ ahc_linux_pci_reserve_io_region(struct ahc_softc *ahc, resource_size_t *base)
 }
 
 static int
-ahc_linux_pci_reserve_mem_region(struct ahc_softc *ahc,
+ahc_beep_pci_reserve_mem_region(struct ahc_softc *ahc,
 				 resource_size_t *bus_addr,
 				 uint8_t __iomem **maddr)
 {
@@ -398,7 +398,7 @@ ahc_pci_map_registers(struct ahc_softc *ahc)
 	command &= ~(PCIM_CMD_PORTEN|PCIM_CMD_MEMEN);
 	base = 0;
 	maddr = NULL;
-	error = ahc_linux_pci_reserve_mem_region(ahc, &base, &maddr);
+	error = ahc_beep_pci_reserve_mem_region(ahc, &base, &maddr);
 	if (error == 0) {
 		ahc->platform_data->mem_busaddr = base;
 		ahc->tag = BUS_SPACE_MEMIO;
@@ -438,7 +438,7 @@ ahc_pci_map_registers(struct ahc_softc *ahc)
 	 */
 	if (maddr == NULL) {
 
-		error = ahc_linux_pci_reserve_io_region(ahc, &base);
+		error = ahc_beep_pci_reserve_io_region(ahc, &base);
 		if (error == 0) {
 			ahc->tag = BUS_SPACE_PIO;
 			ahc->bsh.ioport = (u_long)base;
@@ -461,7 +461,7 @@ ahc_pci_map_int(struct ahc_softc *ahc)
 {
 	int error;
 
-	error = request_irq(ahc->dev_softc->irq, ahc_linux_isr,
+	error = request_irq(ahc->dev_softc->irq, ahc_beep_isr,
 			    IRQF_SHARED, "aic7xxx", ahc);
 	if (error == 0)
 		ahc->platform_data->irq = ahc->dev_softc->irq;

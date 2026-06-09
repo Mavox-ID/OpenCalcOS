@@ -1,10 +1,10 @@
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter.h>
-#include <linux/seq_file.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/skbuff.h>
+#include <beep/netfilter.h>
+#include <beep/seq_file.h>
 #include <net/protocol.h>
 #include <net/netfilter/nf_log.h>
 

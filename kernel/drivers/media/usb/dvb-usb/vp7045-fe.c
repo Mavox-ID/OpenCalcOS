@@ -1,4 +1,4 @@
-/* DVB frontend part of the Linux driver for TwinhanDTV Alpha/MagicBoxII USB2.0
+/* DVB frontend part of the Beep driver for TwinhanDTV Alpha/MagicBoxII USB2.0
  * DVB-T receiver.
  *
  * Copyright (C) 2004-5 Patrick Boettcher (patrick.boettcher@desy.de)

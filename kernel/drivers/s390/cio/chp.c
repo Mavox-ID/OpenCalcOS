@@ -5,17 +5,17 @@
  *		 Peter Oberparleiter <peter.oberparleiter@de.ibm.com>
  */
 
-#include <linux/bug.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <beep/bug.h>
+#include <beep/workqueue.h>
+#include <beep/spinlock.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/jiffies.h>
+#include <beep/wait.h>
+#include <beep/mutex.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
 #include <asm/chpid.h>
 #include <asm/sclp.h>
 #include <asm/crw.h>

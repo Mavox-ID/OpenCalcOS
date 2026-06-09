@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/core/core.c
+ *  beep/drivers/mmc/core/core.c
  *
  *  Copyright (C) 2003-2004 Russell King, All Rights Reserved.
  *  SD support Copyright (C) 2004 Ian Molton, All Rights Reserved.
@@ -10,28 +10,28 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/pagemap.h>
-#include <linux/err.h>
-#include <linux/leds.h>
-#include <linux/scatterlist.h>
-#include <linux/log2.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/suspend.h>
-#include <linux/fault-inject.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/completion.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/pagemap.h>
+#include <beep/err.h>
+#include <beep/leds.h>
+#include <beep/scatterlist.h>
+#include <beep/log2.h>
+#include <beep/regulator/consumer.h>
+#include <beep/pm_runtime.h>
+#include <beep/suspend.h>
+#include <beep/fault-inject.h>
+#include <beep/random.h>
+#include <beep/slab.h>
 
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/mmc.h>
+#include <beep/mmc/sd.h>
 
 #include "core.h"
 #include "bus.h"

@@ -16,46 +16,46 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/stringify.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/in.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/mdio.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/brcmphy.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/workqueue.h>
-#include <linux/prefetch.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/stringify.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/compiler.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/in.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/ethtool.h>
+#include <beep/mdio.h>
+#include <beep/mii.h>
+#include <beep/phy.h>
+#include <beep/brcmphy.h>
+#include <beep/if_vlan.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/workqueue.h>
+#include <beep/prefetch.h>
+#include <beep/dma-mapping.h>
+#include <beep/firmware.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
 
 #include <net/checksum.h>
 #include <net/ip.h>
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 
-#include <uapi/linux/net_tstamp.h>
-#include <linux/ptp_clock_kernel.h>
+#include <uapi/beep/net_tstamp.h>
+#include <beep/ptp_clock_kernel.h>
 
 #ifdef CONFIG_SPARC
 #include <asm/idprom.h>
@@ -9192,7 +9192,7 @@ static int tg3_reset_hw(struct tg3 *tp, int reset_phy)
 	 * the offload processers, so make the chip do the pseudo-
 	 * header checksums on receive.  For transmit it is more
 	 * convenient to do the pseudo-header checksum in software
-	 * as Linux does that on transmit for us in all cases.
+	 * as Beep does that on transmit for us in all cases.
 	 */
 	tp->grc_mode |= GRC_MODE_NO_TX_PHDR_CSUM;
 

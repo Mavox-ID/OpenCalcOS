@@ -5,10 +5,10 @@
  *   Author: Ryan Wilson <hap9@epoch.ncsc.mil>
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/mutex.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/mutex.h>
 #include "pciback.h"
 
 #define PCI_SLOT_MAX 32

@@ -22,8 +22,8 @@
 #ifndef _ATL1C_HW_H_
 #define _ATL1C_HW_H_
 
-#include <linux/types.h>
-#include <linux/mii.h>
+#include <beep/types.h>
+#include <beep/mii.h>
 
 #define FIELD_GETX(_x, _name)   ((_x) >> (_name##_SHIFT) & (_name##_MASK))
 #define FIELD_SETX(_x, _name, _v) \

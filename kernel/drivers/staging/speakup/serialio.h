@@ -1,8 +1,8 @@
 #ifndef _SPEAKUP_SERIAL_H
 #define _SPEAKUP_SERIAL_H
 
-#include <linux/serial.h>	/* for rs_table, serial constants */
-#include <linux/serial_reg.h>	/* for more serial constants */
+#include <beep/serial.h>	/* for rs_table, serial constants */
+#include <beep/serial_reg.h>	/* for more serial constants */
 #ifndef __sparc__
 #include <asm/serial.h>
 #endif

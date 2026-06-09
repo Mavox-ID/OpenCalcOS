@@ -1,15 +1,15 @@
 /*
  *  Implementation of operations over global quota file
  */
-#include <linux/spinlock.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/quota.h>
-#include <linux/quotaops.h>
-#include <linux/dqblk_qtree.h>
-#include <linux/jiffies.h>
-#include <linux/writeback.h>
-#include <linux/workqueue.h>
+#include <beep/spinlock.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/quota.h>
+#include <beep/quotaops.h>
+#include <beep/dqblk_qtree.h>
+#include <beep/jiffies.h>
+#include <beep/writeback.h>
+#include <beep/workqueue.h>
 
 #include <cluster/masklog.h>
 

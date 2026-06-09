@@ -25,7 +25,7 @@
  *
  * This driver supports the SCSI adapter implemented by the IBM
  * Power5 firmware.  That SCSI adapter is not a physical adapter,
- * but allows Linux SCSI peripheral drivers to directly
+ * but allows Beep SCSI peripheral drivers to directly
  * access devices in another logical partition on the physical system.
  *
  * The virtual adapter(s) are present in the open firmware device
@@ -60,14 +60,14 @@
  * layer.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/kthread.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/pm.h>
+#include <beep/kthread.h>
 #include <asm/firmware.h>
 #include <asm/vio.h>
 #include <scsi/scsi.h>
@@ -2292,7 +2292,7 @@ static int ibmvscsi_probe(struct vio_dev *vdev, const struct vio_device_id *id)
 		/*
 		 * Wait around max init_timeout secs for the adapter to finish
 		 * initializing. When we are done initializing, we will have a
-		 * valid request_limit.  We don't want Linux scanning before
+		 * valid request_limit.  We don't want Beep scanning before
 		 * we are ready.
 		 */
 		for (wait_switch = jiffies + (init_timeout * HZ);

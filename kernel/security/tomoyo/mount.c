@@ -4,7 +4,7 @@
  * Copyright (C) 2005-2011  NTT DATA CORPORATION
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include "common.h"
 
 /* String table for special mount operations. */

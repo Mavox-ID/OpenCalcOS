@@ -1,7 +1,7 @@
 #define VERSION "0.23"
 /* ns83820.c by Benjamin LaHaise with contributions.
  *
- * Questions/comments/discussion to linux-ns83820@kvack.org.
+ * Questions/comments/discussion to beep-ns83820@kvack.org.
  *
  * $Revision: 1.34.2.23 $
  *
@@ -96,28 +96,28 @@
 //#define dprintk		printk
 #define dprintk(x...)		do { } while (0)
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>	/* for iph */
-#include <linux/in.h>	/* for IPPROTO_... */
-#include <linux/compiler.h>
-#include <linux/prefetch.h>
-#include <linux/ethtool.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/if_vlan.h>
-#include <linux/rtnetlink.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
+#include <beep/workqueue.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ip.h>	/* for iph */
+#include <beep/in.h>	/* for IPPROTO_... */
+#include <beep/compiler.h>
+#include <beep/prefetch.h>
+#include <beep/ethtool.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/if_vlan.h>
+#include <beep/rtnetlink.h>
+#include <beep/jiffies.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 #include <asm/uaccess.h>

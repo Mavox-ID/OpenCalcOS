@@ -1,8 +1,8 @@
 /* System call table for x86-64. */
 
-#include <linux/linkage.h>
-#include <linux/sys.h>
-#include <linux/cache.h>
+#include <beep/linkage.h>
+#include <beep/sys.h>
+#include <beep/cache.h>
 #include <asm/asm-offsets.h>
 
 #define __SYSCALL_COMMON(nr, sym, compat) __SYSCALL_64(nr, sym, compat)

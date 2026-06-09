@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-integrator/lm.c
+ *  beep/arch/arm/mach-integrator/lm.c
  *
  *  Copyright (C) 2003 Deep Blue Solutions Ltd, All Rights Reserved.
  *
@@ -7,10 +7,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/slab.h>
 
 #include <mach/lm.h>
 

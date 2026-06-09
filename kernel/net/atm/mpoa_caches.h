@@ -1,11 +1,11 @@
 #ifndef MPOA_CACHES_H
 #define MPOA_CACHES_H
 
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/atmmpc.h>
+#include <beep/netdevice.h>
+#include <beep/types.h>
+#include <beep/atm.h>
+#include <beep/atmdev.h>
+#include <beep/atmmpc.h>
 
 struct mpoa_client;
 

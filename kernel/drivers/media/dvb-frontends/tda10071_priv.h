@@ -23,7 +23,7 @@
 
 #include "dvb_frontend.h"
 #include "tda10071.h"
-#include <linux/firmware.h>
+#include <beep/firmware.h>
 
 struct tda10071_priv {
 	struct i2c_adapter *i2c;

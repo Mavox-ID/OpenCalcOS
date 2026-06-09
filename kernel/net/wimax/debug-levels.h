@@ -1,9 +1,9 @@
 /*
- * Linux WiMAX Stack
+ * Beep WiMAX Stack
  * Debug levels control file for the wimax module
  *
  *
- * Copyright (C) 2007-2008 Intel Corporation <linux-wimax@intel.com>
+ * Copyright (C) 2007-2008 Intel Corporation <beep-wimax@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *
  * This program is free software; you can redistribute it and/or
@@ -27,7 +27,7 @@
 #define D_MODULENAME wimax
 #define D_MASTER CONFIG_WIMAX_DEBUG_LEVEL
 
-#include <linux/wimax/debug.h>
+#include <beep/wimax/debug.h>
 
 /* List of all the enabled modules */
 enum d_module {

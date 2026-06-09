@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext3/namei.c
+ *  beep/fs/ext3/namei.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -8,7 +8,7 @@
  *
  *  from
  *
- *  linux/fs/minix/namei.c
+ *  beep/fs/minix/namei.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -24,7 +24,7 @@
  *	Theodore Ts'o, 2002
  */
 
-#include <linux/quotaops.h>
+#include <beep/quotaops.h>
 #include "ext3.h"
 #include "namei.h"
 #include "xattr.h"
@@ -2204,7 +2204,7 @@ static int ext3_symlink (struct inode * dir,
 		 * For non-fast symlinks, we just allocate inode and put it on
 		 * orphan list in the first transaction => we need bitmap,
 		 * group descriptor, sb, inode block, quota blocks, and
-		 * possibly selinux xattr blocks.
+		 * possibly sebeep xattr blocks.
 		 */
 		credits = 4 + EXT3_MAXQUOTAS_INIT_BLOCKS(dir->i_sb) +
 			  EXT3_XATTR_TRANS_BLOCKS;

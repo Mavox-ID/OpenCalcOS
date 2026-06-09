@@ -21,9 +21,9 @@
 #ifndef __MACH_TEGRA_CLOCK_H
 #define __MACH_TEGRA_CLOCK_H
 
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/list.h>
+#include <beep/clk-provider.h>
+#include <beep/clkdev.h>
+#include <beep/list.h>
 
 #include <mach/clk.h>
 

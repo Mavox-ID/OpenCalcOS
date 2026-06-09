@@ -2,7 +2,7 @@
     kcomedilib/kcomedilib.c
     a comedlib interface for kernel modules
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -21,16 +21,16 @@
 
 */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/fcntl.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/mm.h>
+#include <beep/io.h>
 
 #include "../comedi.h"
 #include "../comedilib.h"

@@ -1,5 +1,5 @@
 /*
- * linux/sound/wm8996.h -- Platform data for WM8996
+ * beep/sound/wm8996.h -- Platform data for WM8996
  *
  * Copyright 2011 Wolfson Microelectronics. PLC.
  *
@@ -8,8 +8,8 @@
  * published by the Free Software Foundation.
  */
 
-#ifndef __LINUX_SND_WM8996_H
-#define __LINUX_SND_WM8996_H
+#ifndef __BEEP_SND_WM8996_H
+#define __BEEP_SND_WM8996_H
 
 enum wm8996_inmode {
 	WM8996_DIFFERRENTIAL_1 = 0,   /* IN1xP - IN1xN */

@@ -12,17 +12,17 @@
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 
-#include <linux/dma-mapping.h>
-#include <linux/gpio.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/i2c-gpio.h>
-#include <linux/atmel-mci.h>
-#include <linux/platform_data/atmel-aes.h>
+#include <beep/dma-mapping.h>
+#include <beep/gpio.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/i2c-gpio.h>
+#include <beep/atmel-mci.h>
+#include <beep/platform_data/atmel-aes.h>
 
-#include <linux/platform_data/at91_adc.h>
+#include <beep/platform_data/at91_adc.h>
 
-#include <linux/fb.h>
+#include <beep/fb.h>
 #include <video/atmel_lcdc.h>
 
 #include <mach/at91_adc.h>
@@ -30,7 +30,7 @@
 #include <mach/at91sam9g45_matrix.h>
 #include <mach/at91_matrix.h>
 #include <mach/at91sam9_smc.h>
-#include <linux/platform_data/dma-atmel.h>
+#include <beep/platform_data/dma-atmel.h>
 #include <mach/atmel-mci.h>
 
 #include <media/atmel-isi.h>

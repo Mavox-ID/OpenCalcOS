@@ -44,8 +44,8 @@ OPTIONS
         Dump raw trace in ASCII.
 
 -k::
---vmlinux=<file>::
-        vmlinux pathname.
+--vmbeep=<file>::
+        vmbeep pathname.
 
 -m::
 --modules::

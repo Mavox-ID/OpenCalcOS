@@ -23,8 +23,8 @@
  * clock and PLL management functions
  */
 
-#include <linux/kernel.h>
-#include <linux/via-core.h>
+#include <beep/kernel.h>
+#include <beep/via-core.h>
 #include <asm/olpc.h>
 #include "via_clock.h"
 #include "global.h"

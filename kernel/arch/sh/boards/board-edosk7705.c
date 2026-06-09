@@ -8,12 +8,12 @@
  * Modified for edosk7705 development
  * board by S. Dunn, 2003.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/smc91x.h>
-#include <linux/sh_intc.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/smc91x.h>
+#include <beep/sh_intc.h>
 #include <asm/machvec.h>
 #include <asm/sizes.h>
 

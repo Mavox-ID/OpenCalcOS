@@ -30,8 +30,8 @@
  * Register locations derived from NVClock by Roderick Colenbrander
  */
 
-#include <linux/backlight.h>
-#include <linux/acpi.h>
+#include <beep/backlight.h>
+#include <beep/acpi.h>
 
 #include "nouveau_drm.h"
 #include "nouveau_reg.h"

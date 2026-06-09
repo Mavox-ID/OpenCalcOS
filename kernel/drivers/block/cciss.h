@@ -1,8 +1,8 @@
 #ifndef CCISS_H
 #define CCISS_H
 
-#include <linux/genhd.h>
-#include <linux/mutex.h>
+#include <beep/genhd.h>
+#include <beep/mutex.h>
 
 #include "cciss_cmd.h"
 

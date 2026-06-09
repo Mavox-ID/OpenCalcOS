@@ -1,5 +1,5 @@
 /*
- * Linux driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
+ * Beep driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
  * flexcop-eeprom.c - eeprom access methods (currently only MAC address reading)
  * see flexcop.c for copyright information
  */

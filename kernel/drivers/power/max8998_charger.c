@@ -19,13 +19,13 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/mfd/max8998.h>
-#include <linux/mfd/max8998-private.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/power_supply.h>
+#include <beep/mfd/max8998.h>
+#include <beep/mfd/max8998-private.h>
 
 struct max8998_battery_data {
 	struct device *dev;

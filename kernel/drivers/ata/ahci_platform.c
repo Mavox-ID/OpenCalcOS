@@ -12,17 +12,17 @@
  * any later version.
  */
 
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/libata.h>
-#include <linux/ahci_platform.h>
+#include <beep/clk.h>
+#include <beep/kernel.h>
+#include <beep/gfp.h>
+#include <beep/module.h>
+#include <beep/pm.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/libata.h>
+#include <beep/ahci_platform.h>
 #include "ahci.h"
 
 static void ahci_host_stop(struct ata_host *host);

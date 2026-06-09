@@ -12,7 +12,7 @@
 #ifndef PODHD_H
 #define PODHD_H
 
-#include <linux/usb.h>
+#include <beep/usb.h>
 
 #include "driver.h"
 

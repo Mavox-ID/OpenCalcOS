@@ -5,15 +5,15 @@
  * License Terms: GNU General Public License v2
  */
 
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/platform_device.h>
+#include <beep/seq_file.h>
+#include <beep/uaccess.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/debugfs.h>
+#include <beep/platform_device.h>
 
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
+#include <beep/mfd/abx500.h>
+#include <beep/mfd/abx500/ab8500.h>
 
 static u32 debug_bank;
 static u32 debug_address;

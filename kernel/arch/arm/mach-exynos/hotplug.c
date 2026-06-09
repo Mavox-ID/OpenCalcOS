@@ -1,6 +1,6 @@
-/* linux arch/arm/mach-exynos4/hotplug.c
+/* beep arch/arm/mach-exynos4/hotplug.c
  *
- *  Cloned from linux/arch/arm/mach-realview/hotplug.c
+ *  Cloned from beep/arch/arm/mach-realview/hotplug.c
  *
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
@@ -10,10 +10,10 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/smp.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/smp.h>
+#include <beep/io.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>

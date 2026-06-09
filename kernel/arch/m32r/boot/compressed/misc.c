@@ -2,7 +2,7 @@
  * arch/m32r/boot/compressed/misc.c
  *
  * This is a collection of several routines from gzip-1.0.3
- * adapted for Linux.
+ * adapted for Beep.
  *
  * malloc by Hannu Savolainen 1993 and Matthias Urlichs 1994
  *
@@ -85,7 +85,7 @@ decompress_kernel(int mmu_on, unsigned char *zimage_data,
 	free_mem_ptr = heap;
 	free_mem_end_ptr = free_mem_ptr + BOOT_HEAP_SIZE;
 
-	puts("\nDecompressing Linux... ");
+	puts("\nDecompressing Beep... ");
 	decompress(input_data, input_len, NULL, NULL, output_data, NULL, error);
 	puts("done.\nBooting the kernel.\n");
 }

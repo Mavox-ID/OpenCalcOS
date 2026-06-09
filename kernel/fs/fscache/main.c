@@ -10,12 +10,12 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL CACHE
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/completion.h>
+#include <beep/slab.h>
+#include <beep/seq_file.h>
 #include "internal.h"
 
 MODULE_DESCRIPTION("FS Cache Manager");

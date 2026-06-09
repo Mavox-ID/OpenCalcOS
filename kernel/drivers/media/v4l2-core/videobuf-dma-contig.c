@@ -14,13 +14,13 @@
  * the Free Software Foundation; either version 2
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/dma-mapping.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/dma-mapping.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 #include <media/videobuf-dma-contig.h>
 
 struct videobuf_dma_contig_memory {
@@ -505,6 +505,6 @@ void videobuf_dma_contig_free(struct videobuf_queue *q,
 }
 EXPORT_SYMBOL_GPL(videobuf_dma_contig_free);
 
-MODULE_DESCRIPTION("helper module to manage video4linux dma contig buffers");
+MODULE_DESCRIPTION("helper module to manage video4beep dma contig buffers");
 MODULE_AUTHOR("Magnus Damm");
 MODULE_LICENSE("GPL");

@@ -11,13 +11,13 @@
  *    Innominate Security Technologies AG <mhopf@innominate.com>
  *    September, 2002
  */
-#include <linux/ip.h>
+#include <beep/ip.h>
 #include <net/ip.h>
-#include <linux/in.h>
-#include <linux/module.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_ip.h>
+#include <beep/in.h>
+#include <beep/module.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_bridge/ebtables.h>
+#include <beep/netfilter_bridge/ebt_ip.h>
 
 struct tcpudphdr {
 	__be16 src;

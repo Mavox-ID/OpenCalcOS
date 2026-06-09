@@ -4,11 +4,11 @@
  * and format the required data.
  */
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/kbuild.h>
+#include <beep/types.h>
+#include <beep/stddef.h>
+#include <beep/sched.h>
+#include <beep/ptrace.h>
+#include <beep/kbuild.h>
 #include <asm/io.h>
 
 void foo(void)

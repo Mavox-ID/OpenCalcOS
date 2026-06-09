@@ -22,11 +22,11 @@
 
 
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

@@ -13,12 +13,12 @@
  */
 
 #include <media/rc-core.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/module.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
+#include <beep/input.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/module.h>
 #include "rc-core-priv.h"
 
 /* Sizes are in bytes, 256 bytes allows for 32 entries on x64 */

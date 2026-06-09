@@ -23,16 +23,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/i2c.h>
-#include <linux/i2c/pca953x.h>
-#include <linux/input.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/leds.h>
-#include <linux/platform_data/asoc-mx27vis.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pca953x.h>
+#include <beep/input.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/leds.h>
+#include <beep/platform_data/asoc-mx27vis.h>
 #include <media/soc_camera.h>
 #include <sound/tlv320aic32x4.h>
 #include <asm/mach-types.h>

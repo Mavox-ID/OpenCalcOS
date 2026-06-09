@@ -5,11 +5,11 @@
  *  Copyright (C) 2001-2003 Pavel Machek <pavel@ucw.cz>
  */
 
-#include <linux/acpi.h>
-#include <linux/bootmem.h>
-#include <linux/memblock.h>
-#include <linux/dmi.h>
-#include <linux/cpumask.h>
+#include <beep/acpi.h>
+#include <beep/bootmem.h>
+#include <beep/memblock.h>
+#include <beep/dmi.h>
+#include <beep/cpumask.h>
 #include <asm/segment.h>
 #include <asm/desc.h>
 #include <asm/pgtable.h>

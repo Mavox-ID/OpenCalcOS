@@ -8,12 +8,12 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/ssb/ssb.h>
+#include <beep/ssb/ssb.h>
 
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/time.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
+#include <beep/serial_reg.h>
+#include <beep/time.h>
 
 #include "ssb_private.h"
 

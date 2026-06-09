@@ -1,7 +1,7 @@
 #ifndef _ASM_MICROBLAZE_CMPXCHG_H
 #define _ASM_MICROBLAZE_CMPXCHG_H
 
-#include <linux/irqflags.h>
+#include <beep/irqflags.h>
 
 void __bad_xchg(volatile void *ptr, int size);
 

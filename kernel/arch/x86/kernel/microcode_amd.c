@@ -1,5 +1,5 @@
 /*
- *  AMD CPU Microcode Update Driver for Linux
+ *  AMD CPU Microcode Update Driver for Beep
  *  Copyright (C) 2008-2011 Advanced Micro Devices Inc.
  *
  *  Author: Peter Oruba <peter.oruba@amd.com>
@@ -20,13 +20,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/firmware.h>
-#include <linux/pci_ids.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <beep/firmware.h>
+#include <beep/pci_ids.h>
+#include <beep/uaccess.h>
+#include <beep/vmalloc.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
 
 #include <asm/microcode.h>
 #include <asm/processor.h>

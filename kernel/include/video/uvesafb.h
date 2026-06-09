@@ -1,7 +1,7 @@
 #ifndef _UVESAFB_H
 #define _UVESAFB_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct v86_regs {
 	__u32 ebx;

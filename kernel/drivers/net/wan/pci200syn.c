@@ -1,5 +1,5 @@
 /*
- * Goramo PCI200SYN synchronous serial card driver for Linux
+ * Goramo PCI200SYN synchronous serial card driver for Beep
  *
  * Copyright (C) 2002-2008 Krzysztof Halasa <khc@pm.waw.pl>
  *
@@ -7,7 +7,7 @@
  * under the terms of version 2 of the GNU General Public License
  * as published by the Free Software Foundation.
  *
- * For information see <http://www.kernel.org/pub/linux/utils/net/hdlc/>
+ * For information see <http://www.kernel.org/pub/beep/utils/net/hdlc/>
  *
  * Sources of information:
  *    Hitachi HD64572 SCA-II User's Manual
@@ -16,22 +16,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/capability.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/moduleparam.h>
-#include <linux/netdevice.h>
-#include <linux/hdlc.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/capability.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/in.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/moduleparam.h>
+#include <beep/netdevice.h>
+#include <beep/hdlc.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
 #include <asm/io.h>
 
 #include "hd64572.h"

@@ -28,15 +28,15 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/module.h>
-#include <linux/serial.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/platform_device.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/serial.h>
+#include <beep/console.h>
+#include <beep/sysrq.h>
+#include <beep/platform_device.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial_core.h>
+#include <beep/io.h>
 
 /*************************************
  * ARC UART Hardware Specs

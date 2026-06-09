@@ -44,7 +44,7 @@ endif
 
 ifneq ($(SUBARCH),$(ARCH))
   ifeq ($(CROSS_COMPILE),)
-    CROSS_COMPILE := $(call cc-cross-prefix, $(tool-archpref)-linux-  $(tool-archpref)-linux-gnu-  $(tool-archpref)-unknown-linux-gnu-)
+    CROSS_COMPILE := $(call cc-cross-prefix, $(tool-archpref)-beep-  $(tool-archpref)-beep-gnu-  $(tool-archpref)-unknown-beep-gnu-)
   endif
 endif
 
@@ -59,22 +59,22 @@ cflags-y += $(call cc-option, -mno-check-zero-division)
 
 ifdef CONFIG_32BIT
 ld-emul			= $(32bit-emul)
-vmlinux-32		= vmlinux
-vmlinux-64		= vmlinux.64
+vmbeep-32		= vmbeep
+vmbeep-64		= vmbeep.64
 
 cflags-y		+= -mabi=32
 endif
 
 ifdef CONFIG_64BIT
 ld-emul			= $(64bit-emul)
-vmlinux-32		= vmlinux.32
-vmlinux-64		= vmlinux
+vmbeep-32		= vmbeep.32
+vmbeep-64		= vmbeep
 
 cflags-y		+= -mabi=64
 endif
 
-all-$(CONFIG_BOOT_ELF32)	:= $(vmlinux-32)
-all-$(CONFIG_BOOT_ELF64)	:= $(vmlinux-64)
+all-$(CONFIG_BOOT_ELF32)	:= $(vmbeep-32)
+all-$(CONFIG_BOOT_ELF64)	:= $(vmbeep-64)
 all-$(CONFIG_SYS_SUPPORTS_ZBOOT)+= vmlinuz
 
 #
@@ -89,7 +89,7 @@ all-$(CONFIG_SYS_SUPPORTS_ZBOOT)+= vmlinuz
 #
 cflags-y			+= -G 0 -mno-abicalls -fno-pic -pipe
 cflags-y			+= -msoft-float
-LDFLAGS_vmlinux			+= -G 0 -static -n -nostdlib
+LDFLAGS_vmbeep			+= -G 0 -static -n -nostdlib
 KBUILD_AFLAGS_MODULE		+= -mlong-calls
 KBUILD_CFLAGS_MODULE		+= -mlong-calls
 
@@ -182,7 +182,7 @@ libs-y				+= arch/mips/fw/lib/
 ifdef SYS_SUPPORTS_ZBOOT
 COMPRESSION_FNAME		= vmlinuz
 else
-COMPRESSION_FNAME		= vmlinux
+COMPRESSION_FNAME		= vmbeep
 endif
 
 #
@@ -221,7 +221,7 @@ endif
 
 KBUILD_AFLAGS	+= $(cflags-y)
 KBUILD_CFLAGS	+= $(cflags-y)
-KBUILD_CPPFLAGS += -DVMLINUX_LOAD_ADDRESS=$(load-y)
+KBUILD_CPPFLAGS += -DVMBEEP_LOAD_ADDRESS=$(load-y)
 KBUILD_CPPFLAGS += -DDATAOFFSET=$(if $(dataoffset-y),$(dataoffset-y),0)
 
 LDFLAGS			+= -m $(ld-emul)
@@ -250,7 +250,7 @@ drivers-$(CONFIG_OPROFILE)	+= arch/mips/oprofile/
 drivers-$(CONFIG_PM)	+= arch/mips/power/
 
 ifdef CONFIG_LASAT
-rom.bin rom.sw: vmlinux
+rom.bin rom.sw: vmbeep
 	$(Q)$(MAKE) $(build)=arch/mips/lasat/image $@
 endif
 
@@ -259,7 +259,7 @@ endif
 # Other need ECOFF, so we build a 32-bit ELF binary for them which we then
 # convert to ECOFF using elf2ecoff.
 #
-vmlinux.32: vmlinux
+vmbeep.32: vmbeep
 	$(OBJCOPY) -O $(32bit-bfd) $(OBJCOPYFLAGS) $< $@
 
 
@@ -269,22 +269,22 @@ vmlinux.32: vmlinux
 # The 64-bit ELF tools are pretty broken so at this time we generate 64-bit
 # ELF files from 32-bit files by conversion.
 #
-vmlinux.64: vmlinux
+vmbeep.64: vmbeep
 	$(OBJCOPY) -O $(64bit-bfd) $(OBJCOPYFLAGS) $< $@
 
 all:	$(all-y)
 
 # boot
-vmlinux.bin vmlinux.ecoff vmlinux.srec: $(vmlinux-32) FORCE
-	$(Q)$(MAKE) $(build)=arch/mips/boot VMLINUX=$(vmlinux-32) arch/mips/boot/$@
+vmbeep.bin vmbeep.ecoff vmbeep.srec: $(vmbeep-32) FORCE
+	$(Q)$(MAKE) $(build)=arch/mips/boot VMBEEP=$(vmbeep-32) arch/mips/boot/$@
 
 # boot/compressed
-vmlinuz vmlinuz.bin vmlinuz.ecoff vmlinuz.srec: $(vmlinux-32) FORCE
+vmlinuz vmlinuz.bin vmlinuz.ecoff vmlinuz.srec: $(vmbeep-32) FORCE
 	$(Q)$(MAKE) $(build)=arch/mips/boot/compressed \
-	   VMLINUX_LOAD_ADDRESS=$(load-y) 32bit-bfd=$(32bit-bfd) $@
+	   VMBEEP_LOAD_ADDRESS=$(load-y) 32bit-bfd=$(32bit-bfd) $@
 
 
-CLEAN_FILES += vmlinux.32 vmlinux.64
+CLEAN_FILES += vmbeep.32 vmbeep.64
 
 archprepare:
 ifdef CONFIG_MIPS32_N32
@@ -297,7 +297,7 @@ ifdef CONFIG_MIPS32_O32
 endif
 
 install:
-	$(Q)install -D -m 755 vmlinux $(INSTALL_PATH)/vmlinux-$(KERNELRELEASE)
+	$(Q)install -D -m 755 vmbeep $(INSTALL_PATH)/vmbeep-$(KERNELRELEASE)
 ifdef CONFIG_SYS_SUPPORTS_ZBOOT
 	$(Q)install -D -m 755 vmlinuz $(INSTALL_PATH)/vmlinuz-$(KERNELRELEASE)
 endif
@@ -311,9 +311,9 @@ archclean:
 
 define archhelp
 	echo '  install              - install kernel into $(INSTALL_PATH)'
-	echo '  vmlinux.ecoff        - ECOFF boot image'
-	echo '  vmlinux.bin          - Raw binary boot image'
-	echo '  vmlinux.srec         - SREC boot image'
+	echo '  vmbeep.ecoff        - ECOFF boot image'
+	echo '  vmbeep.bin          - Raw binary boot image'
+	echo '  vmbeep.srec         - SREC boot image'
 	echo '  vmlinuz              - Compressed boot(zboot) image'
 	echo '  vmlinuz.ecoff        - ECOFF zboot image'
 	echo '  vmlinuz.bin          - Raw binary zboot image'

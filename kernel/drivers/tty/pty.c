@@ -6,24 +6,24 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/fcntl.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/major.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/devpts_fs.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/fcntl.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/major.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/uaccess.h>
+#include <beep/bitops.h>
+#include <beep/devpts_fs.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
 
 
 #ifdef CONFIG_UNIX98_PTYS

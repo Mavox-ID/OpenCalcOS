@@ -11,22 +11,22 @@
  * or implied.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/miscdevice.h>
+#include <beep/watchdog.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
+#include <beep/device.h>
+#include <beep/clk.h>
+#include <beep/slab.h>
 
 #define MODULE_NAME "DAVINCI-WDT: "
 

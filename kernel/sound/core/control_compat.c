@@ -20,8 +20,8 @@
 
 /* this file included from control.c */
 
-#include <linux/compat.h>
-#include <linux/slab.h>
+#include <beep/compat.h>
+#include <beep/slab.h>
 
 struct snd_ctl_elem_list32 {
 	u32 offset;

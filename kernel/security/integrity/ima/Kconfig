@@ -52,7 +52,7 @@ config IMA_AUDIT
 
 config IMA_LSM_RULES
 	bool
-	depends on IMA && AUDIT && (SECURITY_SELINUX || SECURITY_SMACK)
+	depends on IMA && AUDIT && (SECURITY_SEBEEP || SECURITY_SMACK)
 	default y
 	help
 	  Disabling this option will disregard LSM based policy rules.
@@ -69,5 +69,5 @@ config IMA_APPRAISE
 	  and configure EVM.
 
 	  For more information on integrity appraisal refer to:
-	  <http://linux-ima.sourceforge.net>
+	  <http://beep-ima.sourceforge.net>
 	  If unsure, say N.

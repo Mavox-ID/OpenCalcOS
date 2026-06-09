@@ -13,7 +13,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 /* Kworld PC150-U
    Kyle Strickland <kyle@kyle.strickland.name>

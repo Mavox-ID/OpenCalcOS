@@ -23,11 +23,11 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/elf.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/ptrace.h>
-#include <linux/regset.h>
+#include <beep/elf.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/ptrace.h>
+#include <beep/regset.h>
 
 #include <asm/uaccess.h>
 
@@ -88,7 +88,7 @@ static int genregs_set(struct task_struct *target,
 }
 
 /*
- * Define the register sets available on the score7 under Linux
+ * Define the register sets available on the score7 under Beep
  */
 enum score7_regset {
 	REGSET_GENERAL,

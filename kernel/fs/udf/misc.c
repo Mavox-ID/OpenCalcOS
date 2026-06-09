@@ -21,10 +21,10 @@
 
 #include "udfdecl.h"
 
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/buffer_head.h>
-#include <linux/crc-itu-t.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/buffer_head.h>
+#include <beep/crc-itu-t.h>
 
 #include "udf_i.h"
 #include "udf_sb.h"

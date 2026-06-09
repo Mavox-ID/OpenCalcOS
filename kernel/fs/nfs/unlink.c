@@ -1,19 +1,19 @@
 /*
- *  linux/fs/nfs/unlink.c
+ *  beep/fs/nfs/unlink.c
  *
  * nfs sillydelete handling
  *
  */
 
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/dcache.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfs_fs.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/namei.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/dcache.h>
+#include <beep/sunrpc/sched.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/nfs_fs.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
+#include <beep/namei.h>
 
 #include "internal.h"
 #include "nfs4_fs.h"

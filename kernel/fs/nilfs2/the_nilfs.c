@@ -21,12 +21,12 @@
  *
  */
 
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/random.h>
-#include <linux/crc32.h>
+#include <beep/buffer_head.h>
+#include <beep/slab.h>
+#include <beep/blkdev.h>
+#include <beep/backing-dev.h>
+#include <beep/random.h>
+#include <beep/crc32.h>
 #include "nilfs.h"
 #include "segment.h"
 #include "alloc.h"

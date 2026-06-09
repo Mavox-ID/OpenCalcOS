@@ -10,11 +10,11 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/if_arp.h>
+#include <beep/netdevice.h>
+#include <beep/rtnetlink.h>
 #include <net/mac80211.h>
 #include <net/ieee80211_radiotap.h>
 #include "ieee80211_i.h"

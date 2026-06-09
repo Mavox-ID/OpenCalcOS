@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/dec21285.c: PCI functions for DC21285
+ *  beep/arch/arm/kernel/dec21285.c: PCI functions for DC21285
  *
  *  Copyright (C) 1998-2001 Russell King
  *  Copyright (C) 1998-2000 Phil Blundell
@@ -8,16 +8,16 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
 #include <video/vga.h>
 
 #include <asm/irq.h>

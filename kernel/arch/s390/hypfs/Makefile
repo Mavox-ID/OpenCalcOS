@@ -1,5 +1,5 @@
 #
-# Makefile for the linux hypfs filesystem routines.
+# Makefile for the beep hypfs filesystem routines.
 #
 
 obj-$(CONFIG_S390_HYPFS_FS) += s390_hypfs.o

@@ -27,7 +27,7 @@
  *
  * The method for actual interception of syscall entry and exit (not in
  * this file -- see entry.S) is based on a GPL'd patch written by
- * okir@suse.de and Copyright 2003 SuSE Linux AG.
+ * okir@suse.de and Copyright 2003 SuSE Beep AG.
  *
  * POSIX message queue support added by George Wilson <ltcgcw@us.ibm.com>,
  * 2006.
@@ -42,32 +42,32 @@
  * and <dustin.kirkland@us.ibm.com> for LSPP certification compliance.
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/types.h>
-#include <linux/atomic.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/mount.h>
-#include <linux/socket.h>
-#include <linux/mqueue.h>
-#include <linux/audit.h>
-#include <linux/personality.h>
-#include <linux/time.h>
-#include <linux/netlink.h>
-#include <linux/compiler.h>
+#include <beep/atomic.h>
+#include <beep/fs.h>
+#include <beep/namei.h>
+#include <beep/mm.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/mount.h>
+#include <beep/socket.h>
+#include <beep/mqueue.h>
+#include <beep/audit.h>
+#include <beep/personality.h>
+#include <beep/time.h>
+#include <beep/netlink.h>
+#include <beep/compiler.h>
 #include <asm/unistd.h>
-#include <linux/security.h>
-#include <linux/list.h>
-#include <linux/tty.h>
-#include <linux/binfmts.h>
-#include <linux/highmem.h>
-#include <linux/syscalls.h>
-#include <linux/capability.h>
-#include <linux/fs_struct.h>
-#include <linux/compat.h>
+#include <beep/security.h>
+#include <beep/list.h>
+#include <beep/tty.h>
+#include <beep/binfmts.h>
+#include <beep/highmem.h>
+#include <beep/syscalls.h>
+#include <beep/capability.h>
+#include <beep/fs_struct.h>
+#include <beep/compat.h>
 
 #include "audit.h"
 
@@ -1599,7 +1599,7 @@ static void audit_log_exit(struct audit_context *context, struct task_struct *ts
 		return;		/* audit_panic has been called */
 	audit_log_format(ab, "arch=%x syscall=%d",
 			 context->arch, context->major);
-	if (context->personality != PER_LINUX)
+	if (context->personality != PER_BEEP)
 		audit_log_format(ab, " per=%lx", context->personality);
 	if (context->return_valid)
 		audit_log_format(ab, " success=%s exit=%ld",
@@ -2027,7 +2027,7 @@ void __audit_getname(struct filename *name)
  *
  * If we have stored the name from getname in the audit context,
  * then we delay the putname until syscall exit.
- * Called from include/linux/fs.h:putname().
+ * Called from include/beep/fs.h:putname().
  */
 void audit_putname(struct filename *name)
 {
@@ -2456,7 +2456,7 @@ void __audit_ipc_set_perm(unsigned long qbytes, uid_t uid, gid_t gid, umode_t mo
 	context->ipc.has_perm = 1;
 }
 
-int __audit_bprm(struct linux_binprm *bprm)
+int __audit_bprm(struct beep_binprm *bprm)
 {
 	struct audit_aux_data_execve *ax;
 	struct audit_context *context = current->audit_context;
@@ -2612,7 +2612,7 @@ int __audit_signal_info(int sig, struct task_struct *t)
  *
  * -Eric
  */
-int __audit_log_bprm_fcaps(struct linux_binprm *bprm,
+int __audit_log_bprm_fcaps(struct beep_binprm *bprm,
 			   const struct cred *new, const struct cred *old)
 {
 	struct audit_aux_data_bprm_fcaps *ax;

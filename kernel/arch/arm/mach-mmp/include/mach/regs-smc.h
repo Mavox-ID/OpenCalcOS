@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-mmp/include/mach/regs-smc.h
+ * beep/arch/arm/mach-mmp/include/mach/regs-smc.h
  *
  *  Static Memory Controller Registers
  *

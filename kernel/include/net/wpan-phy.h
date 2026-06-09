@@ -21,9 +21,9 @@
 #ifndef WPAN_PHY_H
 #define WPAN_PHY_H
 
-#include <linux/netdevice.h>
-#include <linux/mutex.h>
-#include <linux/bug.h>
+#include <beep/netdevice.h>
+#include <beep/mutex.h>
+#include <beep/bug.h>
 
 /* According to the IEEE 802.15.4 stadard the upper most significant bits of
  * the 32-bit channel bitmaps shall be used as an integer value to specify 32

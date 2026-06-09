@@ -7,7 +7,7 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/ptrace.h>
 #ifdef __powerpc64__
 #include <asm/elf.h>

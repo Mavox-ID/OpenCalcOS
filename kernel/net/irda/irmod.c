@@ -31,8 +31,8 @@
  * Jean II
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/irmod.h>		/* notify_t */
@@ -206,6 +206,6 @@ subsys_initcall(irda_init);
 module_exit(irda_cleanup);
 
 MODULE_AUTHOR("Dag Brattli <dagb@cs.uit.no> & Jean Tourrilhes <jt@hpl.hp.com>");
-MODULE_DESCRIPTION("The Linux IrDA Protocol Stack");
+MODULE_DESCRIPTION("The Beep IrDA Protocol Stack");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS_NETPROTO(PF_IRDA);

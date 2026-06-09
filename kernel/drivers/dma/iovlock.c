@@ -25,9 +25,9 @@
  * skb to iovec copies.
  */
 
-#include <linux/dmaengine.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
+#include <beep/dmaengine.h>
+#include <beep/pagemap.h>
+#include <beep/slab.h>
 #include <net/tcp.h> /* for memcpy_toiovec */
 #include <asm/io.h>
 #include <asm/uaccess.h>

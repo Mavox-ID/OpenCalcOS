@@ -1,9 +1,9 @@
 #ifndef SOUND_FIREWIRE_AMDTP_H_INCLUDED
 #define SOUND_FIREWIRE_AMDTP_H_INCLUDED
 
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
 #include "packets-buffer.h"
 
 /**

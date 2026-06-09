@@ -21,14 +21,14 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/math64.h>
-#include <linux/vmalloc.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/firmware.h>
+#include <beep/module.h>
+#include <beep/math64.h>
+#include <beep/vmalloc.h>
 
 #include <sound/core.h>
 #include <sound/control.h>
@@ -54,7 +54,7 @@ module_param_array(id, charp, NULL, 0444);
 MODULE_PARM_DESC(id, "ID string for RME Hammerfall DSP interface.");
 module_param_array(enable, bool, NULL, 0444);
 MODULE_PARM_DESC(enable, "Enable/disable specific Hammerfall DSP soundcards.");
-MODULE_AUTHOR("Paul Davis <paul@linuxaudiosystems.com>, Marcus Andersson, Thomas Charbonnel <thomas@undata.org>");
+MODULE_AUTHOR("Paul Davis <paul@beepaudiosystems.com>, Marcus Andersson, Thomas Charbonnel <thomas@undata.org>");
 MODULE_DESCRIPTION("RME Hammerfall DSP");
 MODULE_LICENSE("GPL");
 MODULE_SUPPORTED_DEVICE("{{RME Hammerfall-DSP},"

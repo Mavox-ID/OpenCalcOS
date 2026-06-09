@@ -6,7 +6,7 @@
 #ifndef _ASM_S390_RESET_H
 #define _ASM_S390_RESET_H
 
-#include <linux/list.h>
+#include <beep/list.h>
 
 struct reset_call {
 	struct list_head list;

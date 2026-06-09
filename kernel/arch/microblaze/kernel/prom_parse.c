@@ -1,11 +1,11 @@
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/etherdevice.h>
-#include <linux/of_address.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/etherdevice.h>
+#include <beep/of_address.h>
 #include <asm/prom.h>
 
 void of_parse_dma_window(struct device_node *dn, const void *dma_window_prop,

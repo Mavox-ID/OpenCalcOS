@@ -22,15 +22,15 @@
  * 02-07-2003 Bug made it into first release. Take two.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/slab.h>
+#include <beep/init.h>
 #include "sound_config.h"
 #include "sb_mixer.h"
 #include "sb.h"
 #ifdef CONFIG_PNP
-#include <linux/pnp.h>
+#include <beep/pnp.h>
 #endif /* CONFIG_PNP */
 #include "sb_card.h"
 

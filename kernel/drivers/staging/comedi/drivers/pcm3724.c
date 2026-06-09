@@ -30,8 +30,8 @@ Copy/pasted/hacked from pcm724.c
 
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
-#include <linux/delay.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
 
 #include "8255.h"
 

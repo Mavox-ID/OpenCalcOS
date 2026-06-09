@@ -1,5 +1,5 @@
 /*
- *  linux/fs/minix/dir.c
+ *  beep/fs/minix/dir.c
  *
  *  Copyright (C) 1991, 1992 Linus Torvalds
  *
@@ -9,9 +9,9 @@
  */
 
 #include "minix.h"
-#include <linux/buffer_head.h>
-#include <linux/highmem.h>
-#include <linux/swap.h>
+#include <beep/buffer_head.h>
+#include <beep/highmem.h>
+#include <beep/swap.h>
 
 typedef struct minix_dir_entry minix_dirent;
 typedef struct minix3_dir_entry minix3_dirent;

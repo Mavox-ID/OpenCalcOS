@@ -4,7 +4,7 @@
  *			  Alan Cox <alan@lxorguk.ukuu.org.uk>
  *
  * based upon cs5535.c from AMD <Jens.Altmann@amd.com> as cleaned up and
- * made readable and Linux style by Wolfgang Zuleger <wolfgang.zuleger@gmx.de>
+ * made readable and Beep style by Wolfgang Zuleger <wolfgang.zuleger@gmx.de>
  * and Alexander Kiausch <alex.kiausch@t-online.de>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -28,14 +28,14 @@
  *	Review errata to see if serializing is necessary
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <beep/libata.h>
 #include <asm/msr.h>
 
 #define DRV_NAME	"pata_cs5535"

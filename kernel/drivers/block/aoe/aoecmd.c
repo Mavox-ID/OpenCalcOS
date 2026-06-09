@@ -4,19 +4,19 @@
  * Filesystem request handling methods
  */
 
-#include <linux/ata.h>
-#include <linux/slab.h>
-#include <linux/hdreg.h>
-#include <linux/blkdev.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/genhd.h>
-#include <linux/moduleparam.h>
-#include <linux/workqueue.h>
-#include <linux/kthread.h>
+#include <beep/ata.h>
+#include <beep/slab.h>
+#include <beep/hdreg.h>
+#include <beep/blkdev.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/genhd.h>
+#include <beep/moduleparam.h>
+#include <beep/workqueue.h>
+#include <beep/kthread.h>
 #include <net/net_namespace.h>
 #include <asm/unaligned.h>
-#include <linux/uio.h>
+#include <beep/uio.h>
 #include "aoe.h"
 
 #define MAXIOC (8192)	/* default meant to avoid most soft lockups */

@@ -22,7 +22,7 @@
 
 /* This file implements TNC functions for committing */
 
-#include <linux/random.h>
+#include <beep/random.h>
 #include "ubifs.h"
 
 /**

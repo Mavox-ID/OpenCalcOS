@@ -21,13 +21,13 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/videodev2.h>
+#include <beep/slab.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
@@ -57,7 +57,7 @@ static const struct v4l2_file_operations radio_si4713_fops = {
 	.unlocked_ioctl	= video_ioctl2,
 };
 
-/* Video4Linux Interface */
+/* Video4Beep Interface */
 static int radio_si4713_fill_audout(struct v4l2_audioout *vao)
 {
 	/* TODO: check presence of audio output */

@@ -19,12 +19,12 @@
  *
  * Adapted from the x86 port by Ananth N Mavinakayanahalli <ananth@in.ibm.com>
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/uprobes.h>
-#include <linux/uaccess.h>
-#include <linux/kdebug.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/ptrace.h>
+#include <beep/uprobes.h>
+#include <beep/uaccess.h>
+#include <beep/kdebug.h>
 
 #include <asm/sstep.h>
 

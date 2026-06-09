@@ -1,5 +1,5 @@
 /*
- *  USB HID quirks support for Linux
+ *  USB HID quirks support for Beep
  *
  *  Copyright (c) 1999 Andreas Gal
  *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>

@@ -1,26 +1,26 @@
 /* -*- c -*- --------------------------------------------------------------- *
  *
- * linux/fs/autofs/inode.c
+ * beep/fs/autofs/inode.c
  *
  *  Copyright 1997-1998 Transmeta Corporation -- All Rights Reserved
  *  Copyright 2005-2006 Ian Kent <raven@themaw.net>
  *
- * This file is part of the Linux kernel and is made available under
+ * This file is part of the Beep kernel and is made available under
  * the terms of the GNU General Public License, version 2, or at your
  * option, any later version, incorporated herein by reference.
  *
  * ------------------------------------------------------------------------- */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/seq_file.h>
-#include <linux/pagemap.h>
-#include <linux/parser.h>
-#include <linux/bitops.h>
-#include <linux/magic.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/file.h>
+#include <beep/seq_file.h>
+#include <beep/pagemap.h>
+#include <beep/parser.h>
+#include <beep/bitops.h>
+#include <beep/magic.h>
 #include "autofs_i.h"
-#include <linux/module.h>
+#include <beep/module.h>
 
 struct autofs_info *autofs4_new_ino(struct autofs_sb_info *sbi)
 {

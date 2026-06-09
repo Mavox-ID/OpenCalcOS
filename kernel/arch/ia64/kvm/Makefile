@@ -33,7 +33,7 @@ endef
 # We use internal rules to avoid the "is up to date" message from make
 arch/ia64/kvm/asm-offsets.s: arch/ia64/kvm/asm-offsets.c \
 			$(wildcard $(srctree)/arch/ia64/include/asm/*.h)\
-			$(wildcard $(srctree)/include/linux/*.h)
+			$(wildcard $(srctree)/include/beep/*.h)
 	$(call if_changed_dep,cc_s_c)
 
 $(obj)/$(offsets-file): arch/ia64/kvm/asm-offsets.s

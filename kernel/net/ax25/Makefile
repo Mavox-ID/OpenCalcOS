@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux AX.25 layer.
+# Makefile for the Beep AX.25 layer.
 #
 
 obj-$(CONFIG_AX25) += ax25.o

@@ -23,19 +23,19 @@
  * 02110-1301 USA
  *
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/i2c/twl.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/i2c/twl4030-madc.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/stddef.h>
-#include <linux/sysfs.h>
-#include <linux/err.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/i2c/twl.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/i2c/twl4030-madc.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/stddef.h>
+#include <beep/sysfs.h>
+#include <beep/err.h>
+#include <beep/types.h>
 
 /*
  * sysfs hook function

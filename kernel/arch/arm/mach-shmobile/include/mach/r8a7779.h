@@ -1,8 +1,8 @@
 #ifndef __ASM_R8A7779_H__
 #define __ASM_R8A7779_H__
 
-#include <linux/sh_clk.h>
-#include <linux/pm_domain.h>
+#include <beep/sh_clk.h>
+#include <beep/pm_domain.h>
 
 /* Pin Function Controller:
  * GPIO_FN_xx - GPIO used to select pin function

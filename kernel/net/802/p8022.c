@@ -14,14 +14,14 @@
  *		there are multiple protocols to demux. The list is currently
  *		short (3 or 4 entries at most). The current demux assumes this.
  */
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
 #include <net/datalink.h>
-#include <linux/mm.h>
-#include <linux/in.h>
-#include <linux/init.h>
+#include <beep/mm.h>
+#include <beep/in.h>
+#include <beep/init.h>
 #include <net/llc.h>
 #include <net/p8022.h>
 

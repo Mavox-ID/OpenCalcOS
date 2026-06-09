@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/core/sdio_bus.c
+ *  beep/drivers/mmc/core/sdio_bus.c
  *
  *  Copyright 2007 Pierre Ossman
  *
@@ -11,15 +11,15 @@
  * SDIO function driver model
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
 
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio_func.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/sdio_func.h>
 
 #include "sdio_cis.h"
 #include "sdio_bus.h"

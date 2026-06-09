@@ -7,9 +7,9 @@
  * @author John Levon <levon@movementarian.org>
  */
 
-#include <linux/oprofile.h>
-#include <linux/init.h>
-#include <linux/errno.h>
+#include <beep/oprofile.h>
+#include <beep/init.h>
+#include <beep/errno.h>
 
 /*
  * We support CPUs that have performance counters like the Pentium Pro

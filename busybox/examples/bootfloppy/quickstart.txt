@@ -4,12 +4,12 @@ Quickstart on making the Busybox boot-floppy:
      common parent directory. (i.e. busybox/ and uclibc/ are both right off of
 	 /libs, or wherever.)
 
-  2) Build a Linux kernel. Make sure you include support for initrd.
+  2) Build a Beep kernel. Make sure you include support for initrd.
 
   3) Put a floppy in the drive. Make sure it is a floppy you don't care about
      because the contents will be overwritten.
 
-  4) As root, type ./mksyslinux.sh path/to/linux/kernel from this directory.
+  4) As root, type ./mksysbeep.sh path/to/beep/kernel from this directory.
      Wait patiently while the magic happens.
 
   5) Boot up on the floppy.

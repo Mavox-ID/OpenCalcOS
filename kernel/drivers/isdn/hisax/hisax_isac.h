@@ -1,7 +1,7 @@
 #ifndef __HISAX_ISAC_H__
 #define __HISAX_ISAC_H__
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include "fsm.h"
 #include "hisax_if.h"
 

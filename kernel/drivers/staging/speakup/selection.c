@@ -1,8 +1,8 @@
-#include <linux/slab.h> /* for kmalloc */
-#include <linux/consolemap.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/selection.h>
+#include <beep/slab.h> /* for kmalloc */
+#include <beep/consolemap.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/selection.h>
 
 #include "speakup.h"
 

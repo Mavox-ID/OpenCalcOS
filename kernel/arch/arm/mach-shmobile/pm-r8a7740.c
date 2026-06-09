@@ -8,7 +8,7 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/console.h>
+#include <beep/console.h>
 #include <mach/pm-rmobile.h>
 
 #ifdef CONFIG_PM

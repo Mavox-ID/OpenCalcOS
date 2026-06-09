@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-msm/board-trout.c
+/* beep/arch/arm/mach-msm/board-trout.c
  *
  * Copyright (C) 2009 Google, Inc.
  * Author: Brian Swetland <swetland@google.com>
@@ -14,10 +14,10 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/clkdev.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/clkdev.h>
 
 #include <asm/system_info.h>
 #include <asm/mach-types.h>

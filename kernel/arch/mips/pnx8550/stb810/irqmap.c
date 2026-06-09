@@ -12,7 +12,7 @@
  *  option) any later version.
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <int.h>
 
 char pnx8550_irq_tab[][5] __initdata = {

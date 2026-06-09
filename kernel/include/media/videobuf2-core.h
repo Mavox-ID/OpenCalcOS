@@ -12,11 +12,11 @@
 #ifndef _MEDIA_VIDEOBUF2_CORE_H
 #define _MEDIA_VIDEOBUF2_CORE_H
 
-#include <linux/mm_types.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/videodev2.h>
-#include <linux/dma-buf.h>
+#include <beep/mm_types.h>
+#include <beep/mutex.h>
+#include <beep/poll.h>
+#include <beep/videodev2.h>
+#include <beep/dma-buf.h>
 
 struct vb2_alloc_ctx;
 struct vb2_fileio_data;
@@ -284,7 +284,7 @@ struct v4l2_fh;
 /**
  * struct vb2_queue - a videobuf queue
  *
- * @type:	queue type (see V4L2_BUF_TYPE_* in linux/videodev2.h
+ * @type:	queue type (see V4L2_BUF_TYPE_* in beep/videodev2.h
  * @io_modes:	supported io methods (see vb2_io_modes enum)
  * @io_flags:	additional io flags (see vb2_fileio_flags enum)
  * @lock:	pointer to a mutex that protects the vb2_queue struct. The

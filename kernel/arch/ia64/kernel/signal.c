@@ -7,19 +7,19 @@
  * Derived from i386 and Alpha versions.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/ptrace.h>
-#include <linux/tracehook.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/tty.h>
-#include <linux/binfmts.h>
-#include <linux/unistd.h>
-#include <linux/wait.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/ptrace.h>
+#include <beep/tracehook.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
+#include <beep/smp.h>
+#include <beep/stddef.h>
+#include <beep/tty.h>
+#include <beep/binfmts.h>
+#include <beep/unistd.h>
+#include <beep/wait.h>
 
 #include <asm/intrinsics.h>
 #include <asm/uaccess.h>

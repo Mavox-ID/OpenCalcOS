@@ -20,20 +20,20 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/percpu.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/bitops.h>
-#include <linux/hrtimer.h>
-#include <linux/uaccess.h>
-#include <linux/iommu.h>
-#include <linux/intel-iommu.h>
-#include <linux/pci.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/percpu.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/smp.h>
+#include <beep/kvm_host.h>
+#include <beep/kvm.h>
+#include <beep/bitops.h>
+#include <beep/hrtimer.h>
+#include <beep/uaccess.h>
+#include <beep/iommu.h>
+#include <beep/intel-iommu.h>
+#include <beep/pci.h>
 
 #include <asm/pgtable.h>
 #include <asm/gcc_intrin.h>

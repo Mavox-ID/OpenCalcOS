@@ -21,8 +21,8 @@
 #ifndef _ASM_KPROBES_H
 #define _ASM_KPROBES_H
 
-#include <linux/types.h>
-#include <linux/ptrace.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
 
 struct kprobe;
 

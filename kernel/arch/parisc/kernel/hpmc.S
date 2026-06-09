@@ -46,7 +46,7 @@
 #include <asm/assembly.h>
 #include <asm/pdc.h>
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 	/*
 	 * stack for os_hpmc, the HPMC handler.

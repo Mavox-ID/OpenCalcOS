@@ -17,10 +17,10 @@
 #ifndef __ARCH_ARM_MACH_OMAP2_POWERDOMAIN_H
 #define __ARCH_ARM_MACH_OMAP2_POWERDOMAIN_H
 
-#include <linux/types.h>
-#include <linux/list.h>
+#include <beep/types.h>
+#include <beep/list.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include "voltage.h"
 

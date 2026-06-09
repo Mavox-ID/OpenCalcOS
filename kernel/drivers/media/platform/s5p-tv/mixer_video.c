@@ -16,10 +16,10 @@
 #include "mixer.h"
 
 #include <media/v4l2-ioctl.h>
-#include <linux/videodev2.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/timer.h>
+#include <beep/videodev2.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/timer.h>
 #include <media/videobuf2-dma-contig.h>
 
 static int find_reg_callback(struct device *dev, void *p)

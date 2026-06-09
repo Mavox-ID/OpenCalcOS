@@ -34,12 +34,12 @@
  *	 4) investigate if enum used for user space type definition
  * 	    to be replaced by #defines or integer
  */
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/videodev2.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <beep/platform_device.h>
+#include <beep/uaccess.h>
+#include <beep/videodev2.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/module.h>
 
 #include <media/davinci/dm355_ccdc.h>
 #include <media/davinci/vpss.h>

@@ -1,5 +1,5 @@
 /*
- * linux/arch/sh/boards/superh/microdev/io.c
+ * beep/arch/sh/boards/superh/microdev/io.c
  *
  * Copyright (C) 2003 Sean McGoogan (Sean.McGoogan@superh.com)
  * Copyright (C) 2003, 2004 SuperH, Inc.
@@ -8,12 +8,12 @@
  * SuperH SH4-202 MicroDev board support.
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See beep/COPYING for more information.
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/wait.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/wait.h>
 #include <asm/io.h>
 #include <mach/microdev.h>
 

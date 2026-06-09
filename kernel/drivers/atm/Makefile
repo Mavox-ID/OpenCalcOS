@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux network (ATM) device drivers.
+# Makefile for the Beep network (ATM) device drivers.
 #
 
 fore_200e-y	:= fore200e.o

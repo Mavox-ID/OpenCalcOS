@@ -23,7 +23,7 @@
  *
  ********************************************************************/
 
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/timer.h>

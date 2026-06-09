@@ -1,7 +1,7 @@
 /*
  *  sym53c416.c
  *  Low-level SCSI driver for sym53c416 chip.
- *  Copyright (C) 1998 Lieven Willems (lw_linux@hotmail.com)
+ *  Copyright (C) 1998 Lieven Willems (lw_beep@hotmail.com)
  * 
  *  Changes : 
  * 
@@ -26,20 +26,20 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/proc_fs.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/proc_fs.h>
+#include <beep/spinlock.h>
 #include <asm/dma.h>
 #include <asm/io.h>
-#include <linux/blkdev.h>
-#include <linux/isapnp.h>
+#include <beep/blkdev.h>
+#include <beep/isapnp.h>
 #include "scsi.h"
 #include <scsi/scsi_host.h>
 #include "sym53c416.h"

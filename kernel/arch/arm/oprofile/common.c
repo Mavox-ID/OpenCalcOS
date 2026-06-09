@@ -9,15 +9,15 @@
  * @author Will Deacon [move to perf]
  */
 
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/oprofile.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/cpumask.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/oprofile.h>
+#include <beep/perf_event.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 #include <asm/stacktrace.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 
 #include <asm/perf_event.h>
 #include <asm/ptrace.h>

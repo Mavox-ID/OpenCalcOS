@@ -1,15 +1,15 @@
 /*
- *  linux/arch/m68k/mm/fault.c
+ *  beep/arch/m68k/mm/fault.c
  *
  *  Copyright (C) 1995  Hamish Macdonald
  */
 
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/kernel.h>
+#include <beep/ptrace.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
 
 #include <asm/setup.h>
 #include <asm/traps.h>

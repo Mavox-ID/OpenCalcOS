@@ -1,5 +1,5 @@
 /*
- * linux/fs/nls/nls_cp932.c
+ * beep/fs/nls/nls_cp932.c
  *
  * Charset cp932 translation tables.
  * This translation table was generated automatically, the
@@ -7,11 +7,11 @@
  * (http://www.microsoft.com/typography/unicode/unicodecp.htm)
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/nls.h>
-#include <linux/errno.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/nls.h>
+#include <beep/errno.h>
 
 static const wchar_t c2u_81[256] = {
 	0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,/* 0x00-0x07 */

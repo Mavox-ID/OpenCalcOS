@@ -60,7 +60,7 @@ static unsigned long long getOctal(char *str, int len)
 }
 #define GET_OCTAL(a) getOctal((a), sizeof(a))
 
-#define TAR_EXTD (ENABLE_FEATURE_TAR_GNU_EXTENSIONS || ENABLE_FEATURE_TAR_SELINUX)
+#define TAR_EXTD (ENABLE_FEATURE_TAR_GNU_EXTENSIONS || ENABLE_FEATURE_TAR_SEBEEP)
 #if !TAR_EXTD
 #define process_pax_hdr(archive_handle, sz, global) \
 	process_pax_hdr(archive_handle, sz)
@@ -129,11 +129,11 @@ static void process_pax_hdr(archive_handle_t *archive_handle, unsigned sz, int g
 		}
 # endif
 
-# if ENABLE_FEATURE_TAR_SELINUX
-		/* Scan for SELinux contexts, via "RHT.security.selinux" keyword.
+# if ENABLE_FEATURE_TAR_SEBEEP
+		/* Scan for SEBeep contexts, via "RHT.security.sebeep" keyword.
 		 * This is what Red Hat's patched version of tar uses.
 		 */
-#  define SELINUX_CONTEXT_KEYWORD "RHT.security.selinux"
+#  define SELINUX_CONTEXT_KEYWORD "RHT.security.sebeep"
 		if (is_prefixed_with(value, SELINUX_CONTEXT_KEYWORD"=")) {
 			value += sizeof(SELINUX_CONTEXT_KEYWORD"=") - 1;
 			free(archive_handle->tar__sctx[global]);
@@ -176,7 +176,7 @@ char FAST_FUNC get_header_tar(archive_handle_t *archive_handle)
 # define p_linkname 0
 #endif
 
-#if ENABLE_FEATURE_TAR_GNU_EXTENSIONS || ENABLE_FEATURE_TAR_SELINUX
+#if ENABLE_FEATURE_TAR_GNU_EXTENSIONS || ENABLE_FEATURE_TAR_SEBEEP
  again:
 #endif
 	/* Align header */

@@ -6,8 +6,8 @@
  * Status accumulation and basic sense functions.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
 #include <asm/ccwdev.h>
 #include <asm/cio.h>

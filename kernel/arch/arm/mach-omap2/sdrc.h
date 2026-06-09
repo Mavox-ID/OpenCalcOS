@@ -19,7 +19,7 @@
 
 #ifndef __ASSEMBLER__
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 extern void __iomem *omap2_sdrc_base;
 extern void __iomem *omap2_sms_base;

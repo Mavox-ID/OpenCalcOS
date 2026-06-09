@@ -4,9 +4,9 @@
  * Licensed under the GPL-2.
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/flat.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/flat.h>
 
 #define FLAT_BFIN_RELOC_TYPE_16_BIT 0
 #define FLAT_BFIN_RELOC_TYPE_16H_BIT 1

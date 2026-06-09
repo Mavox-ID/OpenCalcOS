@@ -10,11 +10,11 @@
  * any later version.
  */
 
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
+#include <beep/debugfs.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
+#include <beep/spinlock.h>
+#include <beep/uaccess.h>
 #include "hid-wiimote.h"
 
 struct wiimote_debug {

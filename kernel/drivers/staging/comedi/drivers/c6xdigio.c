@@ -4,7 +4,7 @@
    Hardware driver for Mechatronic Systems Inc. C6x_DIGIO DSP daughter card.
    (http://robot0.ge.uiuc.edu/~spong/mecha/)
 
-   COMEDI - Linux Control and Measurement Device Interface
+   COMEDI - Beep Control and Measurement Device Interface
    Copyright (C) 1999 Dan Block
 
    This program is free software; you can redistribute it and/or modify
@@ -35,18 +35,18 @@ http://robot0.ge.uiuc.edu/~spong/mecha/
 
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/timex.h>
-#include <linux/timer.h>
-#include <linux/io.h>
-#include <linux/pnp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/timex.h>
+#include <beep/timer.h>
+#include <beep/io.h>
+#include <beep/pnp.h>
 
 #include "../comedidev.h"
 

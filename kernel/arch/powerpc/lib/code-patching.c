@@ -7,10 +7,10 @@
  *  2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/mm.h>
+#include <beep/kernel.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/mm.h>
 #include <asm/page.h>
 #include <asm/code-patching.h>
 #include <asm/uaccess.h>

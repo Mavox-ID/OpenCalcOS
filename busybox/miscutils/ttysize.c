@@ -5,7 +5,7 @@
  * - Does not complain on error, but returns width 80, height 24.
  * - Size: less than 200 bytes
  *
- * Copyright (C) 2007 by Denys Vlasenko <vda.linux@googlemail.com>
+ * Copyright (C) 2007 by Denys Vlasenko <vda.beep@googlemail.com>
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */

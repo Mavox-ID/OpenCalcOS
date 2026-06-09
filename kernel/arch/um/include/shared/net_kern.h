@@ -1,17 +1,17 @@
 /*
- * Copyright (C) 2002 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
 #ifndef __UM_NET_KERN_H
 #define __UM_NET_KERN_H
 
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
+#include <beep/netdevice.h>
+#include <beep/platform_device.h>
+#include <beep/skbuff.h>
+#include <beep/socket.h>
+#include <beep/list.h>
+#include <beep/workqueue.h>
 
 struct uml_net {
 	struct list_head list;

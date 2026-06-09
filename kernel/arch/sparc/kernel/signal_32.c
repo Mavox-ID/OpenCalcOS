@@ -1,4 +1,4 @@
-/*  linux/arch/sparc/kernel/signal.c
+/*  beep/arch/sparc/kernel/signal.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
@@ -6,19 +6,19 @@
  *  Copyright (C) 1997 Eddie C. Dost   (ecd@skynet.be)
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/smp.h>
-#include <linux/binfmts.h>	/* do_coredum */
-#include <linux/bitops.h>
-#include <linux/tracehook.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/errno.h>
+#include <beep/wait.h>
+#include <beep/ptrace.h>
+#include <beep/unistd.h>
+#include <beep/mm.h>
+#include <beep/tty.h>
+#include <beep/smp.h>
+#include <beep/binfmts.h>	/* do_coredum */
+#include <beep/bitops.h>
+#include <beep/tracehook.h>
 
 #include <asm/uaccess.h>
 #include <asm/ptrace.h>

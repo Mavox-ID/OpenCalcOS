@@ -1,5 +1,5 @@
 /*
- *  linux/kernel/signal.c
+ *  beep/kernel/signal.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -10,28 +10,28 @@
  *		to allow signals to be sent reliably.
  */
 
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/tty.h>
-#include <linux/binfmts.h>
-#include <linux/coredump.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/ptrace.h>
-#include <linux/signal.h>
-#include <linux/signalfd.h>
-#include <linux/ratelimit.h>
-#include <linux/tracehook.h>
-#include <linux/capability.h>
-#include <linux/freezer.h>
-#include <linux/pid_namespace.h>
-#include <linux/nsproxy.h>
-#include <linux/user_namespace.h>
-#include <linux/uprobes.h>
-#include <linux/compat.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/tty.h>
+#include <beep/binfmts.h>
+#include <beep/coredump.h>
+#include <beep/security.h>
+#include <beep/syscalls.h>
+#include <beep/ptrace.h>
+#include <beep/signal.h>
+#include <beep/signalfd.h>
+#include <beep/ratelimit.h>
+#include <beep/tracehook.h>
+#include <beep/capability.h>
+#include <beep/freezer.h>
+#include <beep/pid_namespace.h>
+#include <beep/nsproxy.h>
+#include <beep/user_namespace.h>
+#include <beep/uprobes.h>
+#include <beep/compat.h>
 #define CREATE_TRACE_POINTS
 #include <trace/events/signal.h>
 
@@ -3364,7 +3364,7 @@ void __init signals_init(void)
 }
 
 #ifdef CONFIG_KGDB_KDB
-#include <linux/kdb.h>
+#include <beep/kdb.h>
 /*
  * kdb_send_sig_info - Allows kdb to send signals without exposing
  * signal internals.  This function checks if the required locks are

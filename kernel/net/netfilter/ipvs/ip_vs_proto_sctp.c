@@ -1,10 +1,10 @@
-#include <linux/kernel.h>
-#include <linux/ip.h>
-#include <linux/sctp.h>
+#include <beep/kernel.h>
+#include <beep/ip.h>
+#include <beep/sctp.h>
 #include <net/ip.h>
 #include <net/ip6_checksum.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv4.h>
 #include <net/sctp/checksum.h>
 #include <net/ip_vs.h>
 

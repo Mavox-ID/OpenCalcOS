@@ -1,6 +1,6 @@
 /*
  * This file describes the structure passed from the BootX application
- * (for MacOS) when it is used to boot Linux.
+ * (for MacOS) when it is used to boot Beep.
  *
  * Written by Benjamin Herrenschmidt.
  */

@@ -1,7 +1,7 @@
 /*
  * Device Tree Source for AMCC Sequoia
  *
- * Based on Bamboo code by Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Based on Bamboo code by Josh Boyer <jwboyer@beep.vnet.ibm.com>
  * Copyright (c) 2006, 2007 IBM Corp.
  *
  * FIXME: Draft only!
@@ -406,7 +406,7 @@
 	};
 
 	chosen {
-		linux,stdout-path = "/plb/opb/serial@ef600300";
+		beep,stdout-path = "/plb/opb/serial@ef600300";
 		bootargs = "console=ttyS0,115200";
 	};
 };

@@ -18,22 +18,22 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/ti_ssp.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/wait.h>
+#include <beep/clk.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/spinlock.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/ti_ssp.h>
 
 /* Register Offsets */
 #define REG_REV		0x00

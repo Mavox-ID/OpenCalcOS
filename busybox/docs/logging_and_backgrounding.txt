@@ -95,4 +95,4 @@ loginutils/passwd.c:          logmode = LOGMODE_STDIO;
 loginutils/passwd.c:          logmode = LOGMODE_BOTH;
 loginutils/sulogin.c:         logmode = LOGMODE_SYSLOG; (used if stdio isn't a tty)
 loginutils/sulogin.c:         logmode = LOGMODE_BOTH;
-util-linux/mount.c:           logmode = LOGMODE_SYSLOG; (used in a backgrounded NFS mount helper)
+util-beep/mount.c:           logmode = LOGMODE_SYSLOG; (used in a backgrounded NFS mount helper)

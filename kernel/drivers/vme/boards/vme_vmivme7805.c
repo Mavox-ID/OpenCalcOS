@@ -10,12 +10,12 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/pci.h>
+#include <beep/poll.h>
+#include <beep/io.h>
 
 #include "vme_vmivme7805.h"
 

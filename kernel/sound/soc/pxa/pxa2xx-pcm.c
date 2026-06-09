@@ -1,5 +1,5 @@
 /*
- * linux/sound/arm/pxa2xx-pcm.c -- ALSA PCM interface for the Intel PXA2xx chip
+ * beep/sound/arm/pxa2xx-pcm.c -- ALSA PCM interface for the Intel PXA2xx chip
  *
  * Author:	Nicolas Pitre
  * Created:	Nov 30, 2004
@@ -10,8 +10,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/module.h>
 
 #include <sound/core.h>
 #include <sound/soc.h>

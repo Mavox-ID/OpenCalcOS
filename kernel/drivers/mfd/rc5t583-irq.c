@@ -20,11 +20,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/mfd/rc5t583.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/mfd/rc5t583.h>
 
 enum int_type {
 	SYS_INT  = 0x1,

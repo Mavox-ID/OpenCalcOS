@@ -9,16 +9,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/rtc.h>
-#include <linux/delay.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/88pm860x.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/rtc.h>
+#include <beep/delay.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/88pm860x.h>
 
 #define VRTC_CALIBRATION
 

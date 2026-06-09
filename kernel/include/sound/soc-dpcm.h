@@ -1,5 +1,5 @@
 /*
- * linux/sound/soc-dpcm.h -- ALSA SoC Dynamic PCM Support
+ * beep/sound/soc-dpcm.h -- ALSA SoC Dynamic PCM Support
  *
  * Author:		Liam Girdwood <lrg@ti.com>
  *
@@ -8,10 +8,10 @@
  * published by the Free Software Foundation.
  */
 
-#ifndef __LINUX_SND_SOC_DPCM_H
-#define __LINUX_SND_SOC_DPCM_H
+#ifndef __BEEP_SND_SOC_DPCM_H
+#define __BEEP_SND_SOC_DPCM_H
 
-#include <linux/list.h>
+#include <beep/list.h>
 #include <sound/pcm.h>
 
 struct snd_soc_pcm_runtime;

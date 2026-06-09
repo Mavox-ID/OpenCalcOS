@@ -13,11 +13,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/serio.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/serio.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
 
 #include "nvec.h"
 

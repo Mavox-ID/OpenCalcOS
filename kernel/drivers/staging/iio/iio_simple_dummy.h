@@ -8,7 +8,7 @@
  * Join together the various functionality of iio_simple_dummy driver
  */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 struct iio_dummy_accel_calibscale;
 

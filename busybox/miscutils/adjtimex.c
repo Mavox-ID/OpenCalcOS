@@ -1,6 +1,6 @@
 /* vi: set sw=4 ts=4: */
 /*
- * adjtimex.c - read, and possibly modify, the Linux kernel 'timex' variables.
+ * adjtimex.c - read, and possibly modify, the Beep kernel 'timex' variables.
  *
  * Originally written: October 1997
  * Last hack: March 2001
@@ -15,7 +15,7 @@
 //config:	default y
 //config:	help
 //config:	Adjtimex reads and optionally sets adjustment parameters for
-//config:	the Linux clock adjustment algorithm.
+//config:	the Beep clock adjustment algorithm.
 
 //applet:IF_ADJTIMEX(APPLET_NOFORK(adjtimex, adjtimex, BB_DIR_SBIN, BB_SUID_DROP, adjtimex))
 

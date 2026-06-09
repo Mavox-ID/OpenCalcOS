@@ -17,17 +17,17 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
 
-#include <linux/mfd/adp5520.h>
+#include <beep/mfd/adp5520.h>
 
 struct adp5520_chip {
 	struct i2c_client *client;
@@ -372,6 +372,6 @@ static void __exit adp5520_exit(void)
 }
 module_exit(adp5520_exit);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("ADP5520(01) PMIC-MFD Driver");
 MODULE_LICENSE("GPL");

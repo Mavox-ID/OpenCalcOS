@@ -16,9 +16,9 @@
 #ifndef _ARM_KPROBES_H
 #define _ARM_KPROBES_H
 
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/percpu.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/percpu.h>
 
 #define __ARCH_WANT_KPROBES_INSN_SLOT
 #define MAX_INSN_SIZE			2

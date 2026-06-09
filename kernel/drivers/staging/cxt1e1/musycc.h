@@ -22,7 +22,7 @@
  *-----------------------------------------------------------------------------
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define VINT8   volatile u_int8_t
 #define VINT32  volatile u_int32_t

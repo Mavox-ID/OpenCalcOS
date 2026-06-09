@@ -9,17 +9,17 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pci_regs.h>
-#include <linux/configfs.h>
+#include <beep/clk.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/pci_regs.h>
+#include <beep/configfs.h>
 #include <mach/pcie.h>
 #include <mach/misc_regs.h>
 

@@ -13,19 +13,19 @@
  */
 #define pr_fmt(fmt) "pinctrl core: " fmt
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/sysfs.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/machine.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/list.h>
+#include <beep/sysfs.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/pinctrl/pinctrl.h>
+#include <beep/pinctrl/machine.h>
 #include "core.h"
 #include "devicetree.h"
 #include "pinmux.h"

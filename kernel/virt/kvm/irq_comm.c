@@ -20,8 +20,8 @@
  * Copyright 2010 Red Hat, Inc. and/or its affiliates.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/slab.h>
+#include <beep/kvm_host.h>
+#include <beep/slab.h>
 #include <trace/events/kvm.h>
 
 #include <asm/msidef.h>

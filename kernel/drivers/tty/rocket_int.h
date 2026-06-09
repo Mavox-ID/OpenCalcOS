@@ -15,7 +15,7 @@
 #define ROCKET_TYPE_MODEMIII	3
 #define ROCKET_TYPE_PC104       4
 
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 
 #include <asm/io.h>
 #include <asm/byteorder.h>
@@ -29,7 +29,7 @@ typedef unsigned int WordIO_t;
 typedef unsigned int DWordIO_t;
 
 /*
- * Note!  Normally the Linux I/O macros already take care of
+ * Note!  Normally the Beep I/O macros already take care of
  * byte-swapping the I/O instructions.  However, all accesses using
  * sOutDW aren't really 32-bit accesses, but should be handled in byte
  * order.  Hence the use of the cpu_to_le32() macro to byte-swap
@@ -1118,7 +1118,7 @@ Warnings: This function writes the data byte without checking to see if
 #define sWriteTxByte(IO,DATA) sOutB(IO,DATA)
 
 /*
- * Begin Linux specific definitions for the Rocketport driver
+ * Begin Beep specific definitions for the Rocketport driver
  *
  * This code is Copyright Theodore Ts'o, 1995-1997
  */

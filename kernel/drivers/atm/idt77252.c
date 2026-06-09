@@ -26,27 +26,27 @@
  *
  *******************************************************************/
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/poison.h>
-#include <linux/skbuff.h>
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
-#include <linux/netdevice.h>
-#include <linux/atmdev.h>
-#include <linux/atm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/wait.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/poison.h>
+#include <beep/skbuff.h>
+#include <beep/kernel.h>
+#include <beep/vmalloc.h>
+#include <beep/netdevice.h>
+#include <beep/atmdev.h>
+#include <beep/atm.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/bitops.h>
+#include <beep/wait.h>
+#include <beep/jiffies.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 #include <asm/uaccess.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/byteorder.h>
 
 #ifdef CONFIG_ATM_IDT77252_USE_SUNI
@@ -3460,7 +3460,7 @@ static int init_card(struct atm_dev *dev)
 	/*
 	 * this is a jhs hack to get around special functionality in the
 	 * phy driver for the atecom hardware; the functionality doesn't
-	 * exist in the linux atm suni driver
+	 * exist in the beep atm suni driver
 	 *
 	 * it isn't the right way to do things, but as the guy from NIST
 	 * said, talking about their measurement of the fine structure

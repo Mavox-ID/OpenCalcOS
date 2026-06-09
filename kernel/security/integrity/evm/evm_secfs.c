@@ -13,8 +13,8 @@
  *	- Get the key and enable EVM
  */
 
-#include <linux/uaccess.h>
-#include <linux/module.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
 #include "evm.h"
 
 static struct dentry *evm_init_tpm;

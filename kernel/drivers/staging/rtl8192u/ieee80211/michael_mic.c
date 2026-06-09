@@ -10,10 +10,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-//#include <linux/crypto.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/string.h>
+//#include <beep/crypto.h>
 #include "rtl_crypto.h"
 
 

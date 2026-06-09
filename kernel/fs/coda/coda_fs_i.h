@@ -5,13 +5,13 @@
  *
  */
 
-#ifndef _LINUX_CODA_FS_I
-#define _LINUX_CODA_FS_I
+#ifndef _BEEP_CODA_FS_I
+#define _BEEP_CODA_FS_I
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/coda.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/coda.h>
 
 /*
  * coda fs inode data

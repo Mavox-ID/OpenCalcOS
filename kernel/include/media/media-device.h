@@ -23,9 +23,9 @@
 #ifndef _MEDIA_DEVICE_H
 #define _MEDIA_DEVICE_H
 
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
 
 #include <media/media-devnode.h>
 #include <media/media-entity.h>

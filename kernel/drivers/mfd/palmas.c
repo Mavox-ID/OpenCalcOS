@@ -12,18 +12,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/regmap.h>
-#include <linux/err.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/palmas.h>
-#include <linux/of_platform.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/regmap.h>
+#include <beep/err.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/palmas.h>
+#include <beep/of_platform.h>
 
 enum palmas_ids {
 	PALMAS_PMIC_ID,

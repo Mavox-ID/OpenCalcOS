@@ -10,10 +10,10 @@
  * License v2. See the file COPYING in the main directory of this archive for
  * more details.
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/dma-buf.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/fb.h>
+#include <beep/dma-buf.h>
 
 #include <drm/drmP.h>
 #include <drm/drm_crtc.h>

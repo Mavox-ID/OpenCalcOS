@@ -13,9 +13,9 @@
  ******************************************************************************/
 #ifndef VXGE_CONFIG_H
 #define VXGE_CONFIG_H
-#include <linux/hardirq.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/hardirq.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 #include <asm/io.h>
 
 #ifndef VXGE_CACHE_LINE_SIZE

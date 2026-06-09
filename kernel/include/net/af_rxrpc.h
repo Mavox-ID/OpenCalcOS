@@ -12,7 +12,7 @@
 #ifndef _NET_RXRPC_H
 #define _NET_RXRPC_H
 
-#include <linux/rxrpc.h>
+#include <beep/rxrpc.h>
 
 struct rxrpc_call;
 

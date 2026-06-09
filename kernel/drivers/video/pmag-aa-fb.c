@@ -1,5 +1,5 @@
 /*
- *	linux/drivers/video/pmag-aa-fb.c
+ *	beep/drivers/video/pmag-aa-fb.c
  *	Copyright 2002 Karsten Merker <merker@debian.org>
  *
  *	PMAG-AA TurboChannel framebuffer card support ... derived from
@@ -13,7 +13,7 @@
  *	Public License.  See the file COPYING in the main directory of this
  *	archive for more details.
  *
- *	2002-09-28  Karsten Merker <merker@linuxtag.org>
+ *	2002-09-28  Karsten Merker <merker@beeptag.org>
  *		Version 0.01: First try to get a PMAG-AA running.
  *
  *	2003-02-24  Thiemo Seufer  <seufer@csv.ica.uni-stuttgart.de>
@@ -22,16 +22,16 @@
  *	2003-09-21  Thiemo Seufer  <seufer@csv.ica.uni-stuttgart.de>
  *		Hardware cursor support.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/fb.h>
-#include <linux/console.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/fb.h>
+#include <beep/console.h>
 
 #include <asm/bootinfo.h>
 #include <asm/dec/machtype.h>
@@ -45,7 +45,7 @@
 
 /* Version information */
 #define DRIVER_VERSION "0.02"
-#define DRIVER_AUTHOR "Karsten Merker <merker@linuxtag.org>"
+#define DRIVER_AUTHOR "Karsten Merker <merker@beeptag.org>"
 #define DRIVER_DESCRIPTION "PMAG-AA Framebuffer Driver"
 
 /* Prototypes */

@@ -9,11 +9,11 @@
  * licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/serial_pnx8xxx.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/serial_pnx8xxx.h>
 
 #include <asm/bootinfo.h>
 #include <uart.h>

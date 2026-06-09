@@ -15,16 +15,16 @@
  *
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmapool.h>
+#include <beep/slab.h>
 #include <asm/vio.h>
 #include <asm/irq.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/wait.h>
 #include <asm/prom.h>
 
 #include "tpm.h"

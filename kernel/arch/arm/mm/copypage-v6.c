@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/copypage-v6.c
+ *  beep/arch/arm/mm/copypage-v6.c
  *
  *  Copyright (C) 2002 Deep Blue Solutions Ltd, All Rights Reserved.
  *
@@ -7,10 +7,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
 
 #include <asm/pgtable.h>
 #include <asm/shmparam.h>

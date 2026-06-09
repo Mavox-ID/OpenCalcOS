@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/atari/stmda.c
+ *  beep/arch/m68k/atari/stmda.c
  *
  *  Copyright (C) 1994 Roman Hodek
  *
@@ -28,14 +28,14 @@
 /* (can be determined by looking at its status register).              */
 
 
-#include <linux/types.h>
-#include <linux/kdev_t.h>
-#include <linux/genhd.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/kdev_t.h>
+#include <beep/genhd.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/wait.h>
+#include <beep/module.h>
 
 #include <asm/atari_stdma.h>
 #include <asm/atariints.h>

@@ -9,10 +9,10 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
-#include <linux/thread_info.h>
-#include <linux/module.h>
+#include <beep/sched.h>
+#include <beep/stacktrace.h>
+#include <beep/thread_info.h>
+#include <beep/module.h>
 #include <asm/unwinder.h>
 #include <asm/ptrace.h>
 #include <asm/stacktrace.h>

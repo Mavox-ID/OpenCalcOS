@@ -201,9 +201,9 @@ _dram_init_finished:
 	
 	moveq	0, $r0			; source
 	move.d	text_start, $r1		; destination
-	move.d	__vmlinux_end, $r2	; end destination
+	move.d	__vmbeep_end, $r2	; end destination
 	move.d	$r2, $r4
-	sub.d	$r1, $r4		; r4=__vmlinux_end in flash, used below
+	sub.d	$r1, $r4		; r4=__vmbeep_end in flash, used below
 1:	move.w	[$r0+], $r3
 	move.w	$r3, [$r1+]
 	cmp.d	$r2, $r1

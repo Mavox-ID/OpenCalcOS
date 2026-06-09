@@ -22,13 +22,13 @@
  * along with this program; if not, you can find it at http://www.fsf.org
  */
 
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/pm_runtime.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/pm_runtime.h>
 
-#include <linux/usb/otg.h>
-#include <linux/usb/msm_hsusb_hw.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/msm_hsusb_hw.h>
 
 #define MSM_USB_BASE (hcd->regs)
 

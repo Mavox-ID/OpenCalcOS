@@ -11,12 +11,12 @@
  * (at your option) any later version.
  */
 
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_i2c.h>
-#include <linux/of_irq.h>
-#include <linux/module.h>
+#include <beep/i2c.h>
+#include <beep/irq.h>
+#include <beep/of.h>
+#include <beep/of_i2c.h>
+#include <beep/of_irq.h>
+#include <beep/module.h>
 
 void of_i2c_register_devices(struct i2c_adapter *adap)
 {

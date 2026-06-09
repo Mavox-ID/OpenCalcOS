@@ -1,6 +1,6 @@
 #include <asm/ucontext.h>
 
-#include <linux/lguest.h>
+#include <beep/lguest.h>
 #include "../../../drivers/lguest/lg.h"
 
 #define __SYSCALL_I386(nr, sym, compat) [nr] = 1,

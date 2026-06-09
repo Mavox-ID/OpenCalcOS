@@ -43,10 +43,10 @@
  */
 
 #include <asm/byteorder.h>
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/crypto.h>
+#include <beep/bitops.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/crypto.h>
 
 #define ROUNDS 16
 

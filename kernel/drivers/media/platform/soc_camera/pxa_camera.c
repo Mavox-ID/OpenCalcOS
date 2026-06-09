@@ -10,23 +10,23 @@
  * (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/moduleparam.h>
-#include <linux/time.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/moduleparam.h>
+#include <beep/time.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-dev.h>
@@ -34,10 +34,10 @@
 #include <media/soc_camera.h>
 #include <media/soc_mediabus.h>
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 
 #include <mach/dma.h>
-#include <linux/platform_data/camera-pxa.h>
+#include <beep/platform_data/camera-pxa.h>
 
 #define PXA_CAM_VERSION "0.0.6"
 #define PXA_CAM_DRV_NAME "pxa27x-camera"
@@ -416,7 +416,7 @@ static void pxa_videobuf_set_actdma(struct pxa_camera_dev *pcdev,
 
 /*
  * Please check the DMA prepared buffer structure in :
- *   Documentation/video4linux/pxa_camera.txt
+ *   Documentation/video4beep/pxa_camera.txt
  * Please check also in pxa_camera_check_link_miss() to understand why DMA chain
  * modification while DMA chain is running will work anyway.
  */
@@ -710,7 +710,7 @@ static void pxa_camera_wakeup(struct pxa_camera_dev *pcdev,
  *  - a videobuffer is queued on the pcdev->capture list
  *
  * Please check the "DMA hot chaining timeslice issue" in
- *   Documentation/video4linux/pxa_camera.txt
+ *   Documentation/video4beep/pxa_camera.txt
  *
  * Context: should only be called within the dma irq handler
  */

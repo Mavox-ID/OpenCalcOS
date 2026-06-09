@@ -9,23 +9,23 @@
  *
  */
 
-#include <linux/bitmap.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <beep/bitmap.h>
+#include <beep/clk.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
 
-#include <linux/spi/sh_msiof.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
+#include <beep/spi/sh_msiof.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_bitbang.h>
 
 #include <asm/unaligned.h>
 

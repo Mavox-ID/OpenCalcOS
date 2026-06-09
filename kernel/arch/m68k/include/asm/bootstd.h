@@ -30,8 +30,8 @@
 #define __BN_flash_erase_range		19
 #define __BN_flash_write_range		20
 
-/* Calling conventions compatible to (uC)linux/68k
- * We use similar macros to call into the bootloader as for uClinux
+/* Calling conventions compatible to (uC)beep/68k
+ * We use similar macros to call into the bootloader as for uCbeep
  */
 
 #define __bsc_return(type, res) \

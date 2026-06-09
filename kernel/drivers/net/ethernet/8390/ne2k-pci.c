@@ -1,6 +1,6 @@
-/* ne2k-pci.c: A NE2000 clone on PCI bus driver for Linux. */
+/* ne2k-pci.c: A NE2000 clone on PCI bus driver for Beep. */
 /*
-	A Linux device driver for PCI NE2000 clones.
+	A Beep device driver for PCI NE2000 clones.
 
 	Authors and other copyright holders:
 	1992-2000 by Donald Becker, NE2000 core and various modifications.
@@ -44,15 +44,15 @@ static int options[MAX_UNITS];
 /* #define PACKETBUF_MEMSIZE	0x40 */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ethtool.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

@@ -13,8 +13,8 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/io.h>
-#include <linux/amba/serial.h>
+#include <beep/io.h>
+#include <beep/amba/serial.h>
 #include <mach/bcm2835_soc.h>
 
 #define UART0_BASE BCM2835_DEBUG_PHYS

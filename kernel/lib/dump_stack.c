@@ -3,8 +3,8 @@
  * which don't implement their own.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
 
 void dump_stack(void)
 {

@@ -16,14 +16,14 @@
 
   ======================================================================*/
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/platform_device.h>
 
 #include <mach/hardware.h>
 #include <mach/smemc.h>
@@ -387,6 +387,6 @@ fs_initcall(pxa2xx_pcmcia_init);
 module_exit(pxa2xx_pcmcia_exit);
 
 MODULE_AUTHOR("Stefan Eletzhofer <stefan.eletzhofer@inquant.de> and Ian Molton <spyro@f2s.com>");
-MODULE_DESCRIPTION("Linux PCMCIA Card Services: PXA2xx core socket driver");
+MODULE_DESCRIPTION("Beep PCMCIA Card Services: PXA2xx core socket driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:pxa2xx-pcmcia");

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/amiga/config.c
+ *  beep/arch/m68k/amiga/config.c
  *
  *  Copyright (C) 1993 Hamish Macdonald
  *
@@ -12,20 +12,20 @@
  * Miscellaneous Amiga stuff
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/vt_kern.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/zorro.h>
-#include <linux/module.h>
-#include <linux/keyboard.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/seq_file.h>
+#include <beep/tty.h>
+#include <beep/console.h>
+#include <beep/rtc.h>
+#include <beep/init.h>
+#include <beep/vt_kern.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/zorro.h>
+#include <beep/module.h>
+#include <beep/keyboard.h>
 
 #include <asm/bootinfo.h>
 #include <asm/setup.h>

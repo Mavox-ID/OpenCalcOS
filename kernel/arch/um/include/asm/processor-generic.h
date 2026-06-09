@@ -1,5 +1,5 @@
 /* 
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
@@ -14,7 +14,7 @@ struct task_struct;
 #include <registers.h>
 #include <sysdep/archsetjmp.h>
 
-#include <linux/prefetch.h>
+#include <beep/prefetch.h>
 
 struct mm_struct;
 

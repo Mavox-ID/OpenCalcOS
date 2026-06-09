@@ -4,10 +4,10 @@
  *
  * See LICENSE.qla4xxx for copyright and licensing details.
  */
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/ratelimit.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/pci.h>
+#include <beep/ratelimit.h>
 #include "ql4_def.h"
 #include "ql4_glbl.h"
 #include "ql4_inline.h"

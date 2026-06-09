@@ -8,15 +8,15 @@
  * This file initializes the trap entry points
  */
 
-#include <linux/jiffies.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/tty.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kallsyms.h>
-#include <linux/ratelimit.h>
+#include <beep/jiffies.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/tty.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kallsyms.h>
+#include <beep/ratelimit.h>
 
 #include <asm/gentrap.h>
 #include <asm/uaccess.h>

@@ -24,11 +24,11 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/hw_random.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/hw_random.h>
+#include <beep/delay.h>
 #include <asm/io.h>
 
 
@@ -164,6 +164,6 @@ static void __exit mod_exit(void)
 module_init(mod_init);
 module_exit(mod_exit);
 
-MODULE_AUTHOR("The Linux Kernel team");
+MODULE_AUTHOR("The Beep Kernel team");
 MODULE_DESCRIPTION("H/W RNG driver for AMD chipsets");
 MODULE_LICENSE("GPL");

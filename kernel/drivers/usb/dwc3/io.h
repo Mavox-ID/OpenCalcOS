@@ -39,7 +39,7 @@
 #ifndef __DRIVERS_USB_DWC3_IO_H
 #define __DRIVERS_USB_DWC3_IO_H
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 #include "core.h"
 

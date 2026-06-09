@@ -12,14 +12,14 @@
  * License.
  */
 
-#include <linux/magic.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/nsproxy.h>
-#include <linux/path.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/fs_struct.h>
+#include <beep/magic.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/nsproxy.h>
+#include <beep/path.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/fs_struct.h>
 
 #include "include/apparmor.h"
 #include "include/path.h"

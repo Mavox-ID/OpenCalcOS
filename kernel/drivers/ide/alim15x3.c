@@ -3,7 +3,7 @@
  *  Copyright (C) 1998-2000 Andrzej Krzysztofowicz, Maintainer
  *  Copyright (C) 1999-2000 CJ, cjtsai@ali.com.tw, Maintainer
  *
- *  Copyright (C) 1998-2000 Andre Hedrick (andre@linux-ide.org)
+ *  Copyright (C) 1998-2000 Andre Hedrick (andre@beep-ide.org)
  *  May be copied or modified under the terms of the GNU General Public License
  *  Copyright (C) 2002 Alan Cox
  *  ALi (now ULi M5228) support by Clear Zhang <Clear.Zhang@ali.com.tw>
@@ -27,13 +27,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
-#include <linux/init.h>
-#include <linux/dmi.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/ide.h>
+#include <beep/init.h>
+#include <beep/dmi.h>
 
 #include <asm/io.h>
 

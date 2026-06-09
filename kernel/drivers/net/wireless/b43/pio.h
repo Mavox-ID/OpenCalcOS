@@ -3,10 +3,10 @@
 
 #include "b43.h"
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/list.h>
+#include <beep/skbuff.h>
 
 
 /*** Registers for PIO queues up to revision 7. ***/

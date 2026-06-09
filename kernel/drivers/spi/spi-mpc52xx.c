@@ -11,16 +11,16 @@
  * that driver see drivers/spi/mpc52xx_psc_spi.c
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/of_platform.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/spi/spi.h>
-#include <linux/io.h>
-#include <linux/of_gpio.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/of_platform.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/spi/spi.h>
+#include <beep/io.h>
+#include <beep/of_gpio.h>
+#include <beep/slab.h>
 #include <asm/time.h>
 #include <asm/mpc52xx.h>
 

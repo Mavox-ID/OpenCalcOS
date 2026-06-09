@@ -18,10 +18,10 @@
  * drivers.
  */
 
-#ifndef _LINUX_CS_INTERNAL_H
-#define _LINUX_CS_INTERNAL_H
+#ifndef _BEEP_CS_INTERNAL_H
+#define _BEEP_CS_INTERNAL_H
 
-#include <linux/kref.h>
+#include <beep/kref.h>
 
 /* Flags in client state */
 #define CLIENT_WIN_REQ(i)	(0x1<<(i))
@@ -181,4 +181,4 @@ int pccard_get_next_tuple(struct pcmcia_socket *s, unsigned int function,
 
 int pccard_get_tuple_data(struct pcmcia_socket *s, tuple_t *tuple);
 
-#endif /* _LINUX_CS_INTERNAL_H */
+#endif /* _BEEP_CS_INTERNAL_H */

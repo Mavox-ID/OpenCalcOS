@@ -19,7 +19,7 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/wait.h>
+#include <beep/wait.h>
 
 #include "saa7164.h"
 

@@ -2,7 +2,7 @@
 #define _ASM_M32R_TIMEX_H
 
 /*
- * linux/include/asm-m32r/timex.h
+ * beep/include/asm-m32r/timex.h
  *
  * m32r architecture timex specifications
  */

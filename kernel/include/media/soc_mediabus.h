@@ -11,8 +11,8 @@
 #ifndef SOC_MEDIABUS_H
 #define SOC_MEDIABUS_H
 
-#include <linux/videodev2.h>
-#include <linux/v4l2-mediabus.h>
+#include <beep/videodev2.h>
+#include <beep/v4l2-mediabus.h>
 
 /**
  * enum soc_mbus_packing - data packing types on the media-bus

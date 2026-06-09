@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-s3c64xx/mach-ncp.c
+ * beep/arch/arm/mach-s3c64xx/mach-ncp.c
  *
  * Copyright (C) 2008-2009 Samsung Electronics
  *
@@ -9,19 +9,19 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/fb.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/serial_core.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/i2c.h>
+#include <beep/fb.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
 
 #include <video/platform_lcd.h>
 #include <video/samsung_fimd.h>
@@ -38,7 +38,7 @@
 #include <asm/mach-types.h>
 
 #include <plat/regs-serial.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 #include <plat/fb.h>
 
 #include <plat/clock.h>

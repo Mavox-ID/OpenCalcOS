@@ -31,20 +31,20 @@
  *  Integrated into 2.2.5 kernel by Tigran Aivazian <tigran@sco.com>
  *  X86_64 changes from Andi Kleen's patch merged by Jim Houston
  */
-#include <linux/spinlock.h>
-#include <linux/kdebug.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/kgdb.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/nmi.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/uaccess.h>
-#include <linux/memory.h>
+#include <beep/spinlock.h>
+#include <beep/kdebug.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/ptrace.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/kgdb.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/nmi.h>
+#include <beep/hw_breakpoint.h>
+#include <beep/uaccess.h>
+#include <beep/memory.h>
 
 #include <asm/debugreg.h>
 #include <asm/apicdef.h>
@@ -449,7 +449,7 @@ void kgdb_roundup_cpus(unsigned long flags)
  *	@err_code: The error code of the exception that happened.
  *	@remcomInBuffer: The buffer of the packet we have read.
  *	@remcomOutBuffer: The buffer of %BUFMAX bytes to write a packet into.
- *	@linux_regs: The &struct pt_regs of the current process.
+ *	@beep_regs: The &struct pt_regs of the current process.
  *
  *	This function MUST handle the 'c' and 's' command packets,
  *	as well packets to set / remove a hardware breakpoint, if used.
@@ -460,7 +460,7 @@ void kgdb_roundup_cpus(unsigned long flags)
  */
 int kgdb_arch_handle_exception(int e_vector, int signo, int err_code,
 			       char *remcomInBuffer, char *remcomOutBuffer,
-			       struct pt_regs *linux_regs)
+			       struct pt_regs *beep_regs)
 {
 	unsigned long addr;
 	char *ptr;
@@ -471,16 +471,16 @@ int kgdb_arch_handle_exception(int e_vector, int signo, int err_code,
 		/* try to read optional parameter, pc unchanged if no parm */
 		ptr = &remcomInBuffer[1];
 		if (kgdb_hex2long(&ptr, &addr))
-			linux_regs->ip = addr;
+			beep_regs->ip = addr;
 	case 'D':
 	case 'k':
 		/* clear the trace bit */
-		linux_regs->flags &= ~X86_EFLAGS_TF;
+		beep_regs->flags &= ~X86_EFLAGS_TF;
 		atomic_set(&kgdb_cpu_doing_single_step, -1);
 
 		/* set the trace bit if we're stepping */
 		if (remcomInBuffer[0] == 's') {
-			linux_regs->flags |= X86_EFLAGS_TF;
+			beep_regs->flags |= X86_EFLAGS_TF;
 			atomic_set(&kgdb_cpu_doing_single_step,
 				   raw_smp_processor_id());
 		}

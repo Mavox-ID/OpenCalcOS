@@ -8,12 +8,12 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/pm.h>
-#include <linux/tick.h>
-#include <linux/bitops.h>
-#include <linux/ptrace.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/pm.h>
+#include <beep/tick.h>
+#include <beep/bitops.h>
+#include <beep/ptrace.h>
 #include <asm/pgalloc.h>
 #include <asm/uaccess.h> /* for USER_DS macros */
 #include <asm/cacheflush.h>
@@ -220,7 +220,7 @@ void start_thread(struct pt_regs *regs, unsigned long pc, unsigned long usp)
 }
 
 #ifdef CONFIG_MMU
-#include <linux/elfcore.h>
+#include <beep/elfcore.h>
 /*
  * Set up a thread for executing a new program
  */

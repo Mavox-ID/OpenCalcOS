@@ -13,18 +13,18 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/concat.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/concat.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_platform.h>
+#include <beep/slab.h>
 
 struct of_flash_list {
 	struct mtd_info *mtd;
@@ -110,7 +110,7 @@ static struct mtd_info *obsolete_probe(struct platform_device *dev,
 	}
 }
 
-/* When partitions are set we look for a linux,part-probe property which
+/* When partitions are set we look for a beep,part-probe property which
    specifies the list of partition probers to use. If none is given then the
    default is use. These take precedence over other device tree
    information. */
@@ -124,7 +124,7 @@ static const char **of_get_probes(struct device_node *dp)
 	unsigned int count;
 	const char **res;
 
-	cp = of_get_property(dp, "linux,part-probe", &cplen);
+	cp = of_get_property(dp, "beep,part-probe", &cplen);
 	if (cp == NULL)
 		return part_probe_types_def;
 
@@ -179,7 +179,7 @@ static int of_flash_probe(struct platform_device *dev)
 
 	reg_tuple_size = (of_n_addr_cells(dp) + of_n_size_cells(dp)) * sizeof(u32);
 
-	of_property_read_string(dp, "linux,mtd-name", &mtd_name);
+	of_property_read_string(dp, "beep,mtd-name", &mtd_name);
 
 	/*
 	 * Get number of "reg" tuples. Scan for MTD devices on area's

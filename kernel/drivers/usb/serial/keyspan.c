@@ -23,25 +23,25 @@
   having the patience to sit down and explain why and where he'd changed
   stuff.
 
-  Tip 'o the hat to IBM (and previously Linuxcare :) for supporting
+  Tip 'o the hat to IBM (and previously Beepcare :) for supporting
   staff in their work on open source projects.
 */
 
 
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/usb/ezusb.h>
+#include <beep/kernel.h>
+#include <beep/jiffies.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/uaccess.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
+#include <beep/usb/ezusb.h>
 #include "keyspan.h"
 
 #define DRIVER_AUTHOR "Hugh Blemings <hugh@misc.nu"

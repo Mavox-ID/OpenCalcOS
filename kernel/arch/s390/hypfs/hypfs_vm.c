@@ -1,14 +1,14 @@
 /*
- *    Hypervisor filesystem for Linux on s390. z/VM implementation.
+ *    Hypervisor filesystem for Beep on s390. z/VM implementation.
  *
  *    Copyright IBM Corp. 2006
  *    Author(s): Michael Holzheu <holzheu@de.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/vmalloc.h>
 #include <asm/ebcdic.h>
 #include <asm/timex.h>
 #include "hypfs.h"

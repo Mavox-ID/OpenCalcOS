@@ -1,7 +1,7 @@
 /*
  * zfcp device driver
  *
- * Interface to Linux SCSI midlayer.
+ * Interface to Beep SCSI midlayer.
  *
  * Copyright IBM Corp. 2002, 2010
  */
@@ -9,12 +9,12 @@
 #define KMSG_COMPONENT "zfcp"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/slab.h>
 #include <scsi/fc/fc_fcp.h>
 #include <scsi/scsi_eh.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include "zfcp_ext.h"
 #include "zfcp_dbf.h"
 #include "zfcp_fc.h"

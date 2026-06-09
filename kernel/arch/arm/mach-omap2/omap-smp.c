@@ -1,6 +1,6 @@
 /*
  * OMAP4 SMP source file. It contains platform specific fucntions
- * needed for the linux smp kernel.
+ * needed for the beep smp kernel.
  *
  * Copyright (C) 2009 Texas Instruments, Inc.
  *
@@ -15,10 +15,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/smp.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/smp.h>
+#include <beep/io.h>
 
 #include <asm/cacheflush.h>
 #include <asm/hardware/gic.h>

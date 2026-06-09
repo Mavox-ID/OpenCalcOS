@@ -50,13 +50,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/poll.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/poll.h>
+#include <beep/init.h>
 
-#include <linux/slab.h>
-#include <linux/in.h>
+#include <beep/slab.h>
+#include <beep/in.h>
 #include <net/ipv6.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/sm.h>

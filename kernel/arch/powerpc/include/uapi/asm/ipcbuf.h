@@ -15,7 +15,7 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct ipc64_perm
 {

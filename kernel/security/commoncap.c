@@ -7,29 +7,29 @@
  *
  */
 
-#include <linux/capability.h>
-#include <linux/audit.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/security.h>
-#include <linux/file.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/skbuff.h>
-#include <linux/netlink.h>
-#include <linux/ptrace.h>
-#include <linux/xattr.h>
-#include <linux/hugetlb.h>
-#include <linux/mount.h>
-#include <linux/sched.h>
-#include <linux/prctl.h>
-#include <linux/securebits.h>
-#include <linux/user_namespace.h>
-#include <linux/binfmts.h>
-#include <linux/personality.h>
+#include <beep/capability.h>
+#include <beep/audit.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/security.h>
+#include <beep/file.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/pagemap.h>
+#include <beep/swap.h>
+#include <beep/skbuff.h>
+#include <beep/netlink.h>
+#include <beep/ptrace.h>
+#include <beep/xattr.h>
+#include <beep/hugetlb.h>
+#include <beep/mount.h>
+#include <beep/sched.h>
+#include <beep/prctl.h>
+#include <beep/securebits.h>
+#include <beep/user_namespace.h>
+#include <beep/binfmts.h>
+#include <beep/personality.h>
 
 /*
  * If a non-root user executes a setuid-root binary in
@@ -278,7 +278,7 @@ int cap_capset(struct cred *new,
 /*
  * Clear proposed capability sets for execve().
  */
-static inline void bprm_clear_caps(struct linux_binprm *bprm)
+static inline void bprm_clear_caps(struct beep_binprm *bprm)
 {
 	cap_clear(bprm->cred->cap_permitted);
 	bprm->cap_effective = false;
@@ -332,7 +332,7 @@ int cap_inode_killpriv(struct dentry *dentry)
  * to a file.
  */
 static inline int bprm_caps_from_vfs_caps(struct cpu_vfs_cap_data *caps,
-					  struct linux_binprm *bprm,
+					  struct beep_binprm *bprm,
 					  bool *effective,
 					  bool *has_cap)
 {
@@ -429,7 +429,7 @@ int get_vfs_caps_from_disk(const struct dentry *dentry, struct cpu_vfs_cap_data 
  * its xattrs and, if present, apply them to the proposed credentials being
  * constructed by execve().
  */
-static int get_file_caps(struct linux_binprm *bprm, bool *effective, bool *has_cap)
+static int get_file_caps(struct beep_binprm *bprm, bool *effective, bool *has_cap)
 {
 	struct dentry *dentry;
 	int rc = 0;
@@ -476,7 +476,7 @@ out:
  * constructed by execve().  The proposed creds in @bprm->cred is altered,
  * which won't take effect immediately.  Returns 0 if successful, -ve on error.
  */
-int cap_bprm_set_creds(struct linux_binprm *bprm)
+int cap_bprm_set_creds(struct beep_binprm *bprm)
 {
 	const struct cred *old = current_cred();
 	struct cred *new = bprm->cred;
@@ -587,7 +587,7 @@ skip:
  * The credentials have been committed by this point, and so are no longer
  * available through @bprm->cred.
  */
-int cap_bprm_secureexec(struct linux_binprm *bprm)
+int cap_bprm_secureexec(struct beep_binprm *bprm)
 {
 	const struct cred *cred = current_cred();
 	kuid_t root_uid = make_kuid(cred->user_ns, 0);

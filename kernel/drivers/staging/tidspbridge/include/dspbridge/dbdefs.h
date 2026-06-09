@@ -19,7 +19,7 @@
 #ifndef DBDEFS_
 #define DBDEFS_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #include <dspbridge/rms_sh.h>	/* Types shared between GPP and DSP */
 

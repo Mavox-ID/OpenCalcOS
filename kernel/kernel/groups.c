@@ -1,11 +1,11 @@
 /*
  * Supplementary group IDs
  */
-#include <linux/cred.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
+#include <beep/cred.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/security.h>
+#include <beep/syscalls.h>
 #include <asm/uaccess.h>
 
 /* init to 2 - one for init_task, one to ensure it is never freed */

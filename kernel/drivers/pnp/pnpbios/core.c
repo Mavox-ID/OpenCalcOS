@@ -45,23 +45,23 @@
  *		Removed some useless includes
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/pnp.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/spinlock.h>
-#include <linux/dmi.h>
-#include <linux/delay.h>
-#include <linux/acpi.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/pnp.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/slab.h>
+#include <beep/completion.h>
+#include <beep/spinlock.h>
+#include <beep/dmi.h>
+#include <beep/delay.h>
+#include <beep/acpi.h>
+#include <beep/freezer.h>
+#include <beep/kthread.h>
 
 #include <asm/page.h>
 #include <asm/desc.h>

@@ -7,14 +7,14 @@
  *     Copyright IBM Corp. 2003, 2009
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/wait.h>
 
 #include <asm/ccwdev.h>
 #include <asm/cio.h>
@@ -23,10 +23,10 @@
 
 #include "raw3270.h"
 
-#include <linux/major.h>
-#include <linux/kdev_t.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
+#include <beep/major.h>
+#include <beep/kdev_t.h>
+#include <beep/device.h>
+#include <beep/mutex.h>
 
 static struct class *class3270;
 

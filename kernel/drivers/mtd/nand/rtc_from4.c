@@ -17,16 +17,16 @@
  *   This chip is a 1 GBibit (128MiB x 8 bits) AG-AND flash device.
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/rslib.h>
-#include <linux/bitrev.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/rslib.h>
+#include <beep/bitrev.h>
+#include <beep/module.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
 #include <asm/io.h>
 
 /*

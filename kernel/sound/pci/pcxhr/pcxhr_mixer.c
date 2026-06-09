@@ -21,10 +21,10 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/time.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
+#include <beep/time.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
 #include <sound/core.h>
 #include "pcxhr.h"
 #include "pcxhr_hwdep.h"

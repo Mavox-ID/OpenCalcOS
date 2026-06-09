@@ -9,9 +9,9 @@
  *  License.
  */
 
-#include <linux/nsproxy.h>
-#include <linux/ipc_namespace.h>
-#include <linux/sysctl.h>
+#include <beep/nsproxy.h>
+#include <beep/ipc_namespace.h>
+#include <beep/sysctl.h>
 
 #ifdef CONFIG_PROC_SYSCTL
 static void *get_mq(ctl_table *table)

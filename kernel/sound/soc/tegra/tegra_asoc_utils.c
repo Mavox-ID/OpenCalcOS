@@ -20,12 +20,12 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <beep/clk.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/of.h>
 
 #include "tegra_asoc_utils.h"
 

@@ -27,7 +27,7 @@
 #include <errno.h>
 #include <sys/stat.h>
 #include <sys/dir.h>
-#include <linux/types.h>
+#include <beep/types.h>
 #include <string.h>
 #include <poll.h>
 #include <endian.h>

@@ -1,22 +1,22 @@
 /*
- *  linux/fs/fat/file.c
+ *  beep/fs/fat/file.c
  *
  *  Written 1992,1993 by Werner Almesberger
  *
  *  regular file handling primitives for fat-based filesystems
  */
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/compat.h>
-#include <linux/mount.h>
-#include <linux/time.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/backing-dev.h>
-#include <linux/blkdev.h>
-#include <linux/fsnotify.h>
-#include <linux/security.h>
+#include <beep/capability.h>
+#include <beep/module.h>
+#include <beep/compat.h>
+#include <beep/mount.h>
+#include <beep/time.h>
+#include <beep/buffer_head.h>
+#include <beep/writeback.h>
+#include <beep/backing-dev.h>
+#include <beep/blkdev.h>
+#include <beep/fsnotify.h>
+#include <beep/security.h>
 #include "fat.h"
 
 static int fat_ioctl_get_attributes(struct inode *inode, u32 __user *user_attr)
@@ -78,7 +78,7 @@ static int fat_ioctl_set_attributes(struct file *file, u32 __user *user_attr)
 
 	if (sbi->options.sys_immutable &&
 	    ((attr | oldattr) & ATTR_SYS) &&
-	    !capable(CAP_LINUX_IMMUTABLE)) {
+	    !capable(CAP_BEEP_IMMUTABLE)) {
 		err = -EPERM;
 		goto out_unlock_inode;
 	}

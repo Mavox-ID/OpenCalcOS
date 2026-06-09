@@ -1,5 +1,5 @@
 /*
- * DECnet       An implementation of the DECnet protocol suite for the LINUX
+ * DECnet       An implementation of the DECnet protocol suite for the BEEP
  *              operating system.  DECnet is implemented using the  BSD Socket
  *              interface as the means of communication with the user level.
  *
@@ -15,14 +15,14 @@
  *       David S. Miller       : New socket locking
  *       Steve Whitehouse      : Timer grabs socket ref.
  */
-#include <linux/net.h>
-#include <linux/socket.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/timer.h>
-#include <linux/spinlock.h>
+#include <beep/net.h>
+#include <beep/socket.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/timer.h>
+#include <beep/spinlock.h>
 #include <net/sock.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <net/flow.h>
 #include <net/dn.h>
 

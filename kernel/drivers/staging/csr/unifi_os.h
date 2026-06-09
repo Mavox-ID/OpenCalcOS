@@ -1,10 +1,10 @@
 /*
  * ---------------------------------------------------------------------------
  *
- * FILE: os_linux/unifi_os.h
+ * FILE: os_beep/unifi_os.h
  *
  * PURPOSE:
- *      This header file provides the OS-dependent facilities for a linux
+ *      This header file provides the OS-dependent facilities for a beep
  *      environment.
  *
  * Copyright (C) 2005-2008 by Cambridge Silicon Radio Ltd.
@@ -14,14 +14,14 @@
  *
  * ---------------------------------------------------------------------------
  */
-#ifndef __UNIFI_OS_LINUX_H__
-#define __UNIFI_OS_LINUX_H__ 1
+#ifndef __UNIFI_OS_BEEP_H__
+#define __UNIFI_OS_BEEP_H__ 1
 
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/time.h>
+#include <beep/list.h>
+#include <beep/delay.h>
+#include <beep/string.h>
 
 /*
  * Needed for core/signals.c
@@ -119,4 +119,4 @@ void unifi_trace_nop(void* ospriv, int level, const char *fmt, ...);
 #define UDBG7       7
 
 
-#endif /* __UNIFI_OS_LINUX_H__ */
+#endif /* __UNIFI_OS_BEEP_H__ */

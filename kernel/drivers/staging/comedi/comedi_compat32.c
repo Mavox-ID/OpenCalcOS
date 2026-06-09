@@ -5,7 +5,7 @@
     Author: Ian Abbott, MEV Ltd. <abbotti@mev.co.uk>
     Copyright (C) 2007 MEV Ltd. <http://www.mev.co.uk/>
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1997-2007 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -24,9 +24,9 @@
 
 */
 
-#include <linux/uaccess.h>
-#include <linux/compat.h>
-#include <linux/fs.h>
+#include <beep/uaccess.h>
+#include <beep/compat.h>
+#include <beep/fs.h>
 #include "comedi.h"
 #include "comedi_compat32.h"
 

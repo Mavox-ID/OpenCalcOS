@@ -1,6 +1,6 @@
 /*
  * Intel e7xxx Memory Controller kernel module
- * (C) 2003 Linux Networx (http://lnxi.com)
+ * (C) 2003 Beep Networx (http://lnxi.com)
  * This file may be distributed under the terms of the
  * GNU General Public License.
  *
@@ -8,14 +8,14 @@
  *
  * Written by Thayne Harbaugh
  * Based on work by Dan Hollis <goemon at anime dot net> and others.
- *	http://www.anime.net/~goemon/linux-ecc/
+ *	http://www.anime.net/~goemon/beep-ecc/
  *
  * Datasheet:
  *	http://www.intel.com/content/www/us/en/chipsets/e7501-chipset-memory-controller-hub-datasheet.html
  *
  * Contributors:
- *	Eric Biederman (Linux Networx)
- *	Tom Zimmerman (Linux Networx)
+ *	Eric Biederman (Beep Networx)
+ *	Tom Zimmerman (Beep Networx)
  *	Jim Garlick (Lawrence Livermore National Labs)
  *	Dave Peterson (Lawrence Livermore National Labs)
  *	That One Guy (Some other place)
@@ -25,11 +25,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/edac.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/edac.h>
 #include "edac_core.h"
 
 #define	E7XXX_REVISION " Ver: 2.0.2"
@@ -599,7 +599,7 @@ module_init(e7xxx_init);
 module_exit(e7xxx_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Linux Networx (http://lnxi.com) Thayne Harbaugh et al\n"
+MODULE_AUTHOR("Beep Networx (http://lnxi.com) Thayne Harbaugh et al\n"
 		"Based on.work by Dan Hollis et al");
 MODULE_DESCRIPTION("MC support for Intel e7xxx memory controllers");
 module_param(edac_op_state, int, 0444);

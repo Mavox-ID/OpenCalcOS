@@ -1,9 +1,9 @@
-/* linux/arch/arm/mach-s3c6400/include/mach/dma.h
+/* beep/arch/arm/mach-s3c6400/include/mach/dma.h
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armbeep.simtec.co.uk/
  *
  * S3C6400 - DMA support
  */

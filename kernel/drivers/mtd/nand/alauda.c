@@ -10,16 +10,16 @@
  *
  * Idea and initial work by Arnd Bergmann <arnd@arndb.de>
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kref.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand_ecc.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/kref.h>
+#include <beep/usb.h>
+#include <beep/mutex.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand_ecc.h>
 
 /* Control commands */
 #define ALAUDA_GET_XD_MEDIA_STATUS	0x08

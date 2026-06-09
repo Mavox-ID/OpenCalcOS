@@ -18,11 +18,11 @@
  * Author: Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/timex.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/timex.h>
 
 void __delay(unsigned long cycles)
 {

@@ -1,7 +1,7 @@
 #ifndef _ASM_WORD_AT_A_TIME_H
 #define _ASM_WORD_AT_A_TIME_H
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 /*
  * This is largely generic for little-endian machines, but the

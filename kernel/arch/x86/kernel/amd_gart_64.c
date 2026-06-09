@@ -11,26 +11,26 @@
  * Subject to the GNU General Public License v2 only.
  */
 
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/agp_backend.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/topology.h>
-#include <linux/interrupt.h>
-#include <linux/bitmap.h>
-#include <linux/kdebug.h>
-#include <linux/scatterlist.h>
-#include <linux/iommu-helper.h>
-#include <linux/syscore_ops.h>
-#include <linux/io.h>
-#include <linux/gfp.h>
-#include <linux/atomic.h>
+#include <beep/types.h>
+#include <beep/ctype.h>
+#include <beep/agp_backend.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/spinlock.h>
+#include <beep/pci.h>
+#include <beep/module.h>
+#include <beep/topology.h>
+#include <beep/interrupt.h>
+#include <beep/bitmap.h>
+#include <beep/kdebug.h>
+#include <beep/scatterlist.h>
+#include <beep/iommu-helper.h>
+#include <beep/syscore_ops.h>
+#include <beep/io.h>
+#include <beep/gfp.h>
+#include <beep/atomic.h>
 #include <asm/mtrr.h>
 #include <asm/pgtable.h>
 #include <asm/proto.h>

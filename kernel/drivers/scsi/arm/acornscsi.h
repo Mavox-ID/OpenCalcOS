@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/acorn/scsi/acornscsi.h
+ *  beep/drivers/acorn/scsi/acornscsi.h
  *
  *  Copyright (C) 1997 Russell King
  *

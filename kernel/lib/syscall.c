@@ -1,6 +1,6 @@
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/export.h>
+#include <beep/ptrace.h>
+#include <beep/sched.h>
+#include <beep/export.h>
 #include <asm/syscall.h>
 
 static int collect_syscall(struct task_struct *target, long *callno,

@@ -29,8 +29,8 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/gfp.h>
-#include <linux/mman.h>
+#include <beep/gfp.h>
+#include <beep/mman.h>
 #include <net/sock.h>
 #include "iwch_provider.h"
 #include "iwch.h"

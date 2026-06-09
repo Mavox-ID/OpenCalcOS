@@ -11,9 +11,9 @@
  * the Free Software Foundation.
  */
 
-#include <linux/compiler.h>
-#include <linux/compat.h>
-#include <linux/input.h>
+#include <beep/compiler.h>
+#include <beep/compat.h>
+#include <beep/input.h>
 
 #ifdef CONFIG_COMPAT
 

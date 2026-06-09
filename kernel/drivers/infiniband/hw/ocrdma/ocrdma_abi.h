@@ -18,7 +18,7 @@
  * included with this package.                                     *
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * beep-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street

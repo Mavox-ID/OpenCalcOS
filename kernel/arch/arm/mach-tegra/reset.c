@@ -14,10 +14,10 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/cpumask.h>
-#include <linux/bitops.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/cpumask.h>
+#include <beep/bitops.h>
 
 #include <asm/cacheflush.h>
 #include <asm/hardware/cache-l2x0.h>

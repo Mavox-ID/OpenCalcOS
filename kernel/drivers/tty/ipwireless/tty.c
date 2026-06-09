@@ -15,20 +15,20 @@
  *   Copyright (C) 2007 David Sterba
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/ppp_defs.h>
-#include <linux/if.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/sched.h>
-#include <linux/serial.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/uaccess.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/ppp_defs.h>
+#include <beep/if.h>
+#include <beep/ppp-ioctl.h>
+#include <beep/sched.h>
+#include <beep/serial.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/uaccess.h>
 
 #include "tty.h"
 #include "network.h"
@@ -86,9 +86,9 @@ static struct ipw_tty *get_tty(int index)
 	return ttys[index];
 }
 
-static int ipw_open(struct tty_struct *linux_tty, struct file *filp)
+static int ipw_open(struct tty_struct *beep_tty, struct file *filp)
 {
-	struct ipw_tty *tty = get_tty(linux_tty->index);
+	struct ipw_tty *tty = get_tty(beep_tty->index);
 
 	if (!tty)
 		return -ENODEV;
@@ -104,9 +104,9 @@ static int ipw_open(struct tty_struct *linux_tty, struct file *filp)
 
 	tty->port.count++;
 
-	tty->port.tty = linux_tty;
-	linux_tty->driver_data = tty;
-	linux_tty->low_latency = 1;
+	tty->port.tty = beep_tty;
+	beep_tty->driver_data = tty;
+	beep_tty->low_latency = 1;
 
 	if (tty->tty_type == TTYTYPE_MODEM)
 		ipwireless_ppp_open(tty->network);
@@ -121,11 +121,11 @@ static void do_ipw_close(struct ipw_tty *tty)
 	tty->port.count--;
 
 	if (tty->port.count == 0) {
-		struct tty_struct *linux_tty = tty->port.tty;
+		struct tty_struct *beep_tty = tty->port.tty;
 
-		if (linux_tty != NULL) {
+		if (beep_tty != NULL) {
 			tty->port.tty = NULL;
-			linux_tty->driver_data = NULL;
+			beep_tty->driver_data = NULL;
 
 			if (tty->tty_type == TTYTYPE_MODEM)
 				ipwireless_ppp_close(tty->network);
@@ -133,9 +133,9 @@ static void do_ipw_close(struct ipw_tty *tty)
 	}
 }
 
-static void ipw_hangup(struct tty_struct *linux_tty)
+static void ipw_hangup(struct tty_struct *beep_tty)
 {
-	struct ipw_tty *tty = linux_tty->driver_data;
+	struct ipw_tty *tty = beep_tty->driver_data;
 
 	if (!tty)
 		return;
@@ -151,21 +151,21 @@ static void ipw_hangup(struct tty_struct *linux_tty)
 	mutex_unlock(&tty->ipw_tty_mutex);
 }
 
-static void ipw_close(struct tty_struct *linux_tty, struct file *filp)
+static void ipw_close(struct tty_struct *beep_tty, struct file *filp)
 {
-	ipw_hangup(linux_tty);
+	ipw_hangup(beep_tty);
 }
 
 /* Take data received from hardware, and send it out the tty */
 void ipwireless_tty_received(struct ipw_tty *tty, unsigned char *data,
 			unsigned int length)
 {
-	struct tty_struct *linux_tty;
+	struct tty_struct *beep_tty;
 	int work = 0;
 
 	mutex_lock(&tty->ipw_tty_mutex);
-	linux_tty = tty->port.tty;
-	if (linux_tty == NULL) {
+	beep_tty = tty->port.tty;
+	if (beep_tty == NULL) {
 		mutex_unlock(&tty->ipw_tty_mutex);
 		return;
 	}
@@ -176,7 +176,7 @@ void ipwireless_tty_received(struct ipw_tty *tty, unsigned char *data,
 	}
 	mutex_unlock(&tty->ipw_tty_mutex);
 
-	work = tty_insert_flip_string(linux_tty, data, length);
+	work = tty_insert_flip_string(beep_tty, data, length);
 
 	if (work != length)
 		printk(KERN_DEBUG IPWIRELESS_PCCARD_NAME
@@ -187,7 +187,7 @@ void ipwireless_tty_received(struct ipw_tty *tty, unsigned char *data,
 	 * This may sleep if ->low_latency is set
 	 */
 	if (work)
-		tty_flip_buffer_push(linux_tty);
+		tty_flip_buffer_push(beep_tty);
 }
 
 static void ipw_write_packet_sent_callback(void *callback_data,
@@ -202,10 +202,10 @@ static void ipw_write_packet_sent_callback(void *callback_data,
 	tty->tx_bytes_queued -= packet_length;
 }
 
-static int ipw_write(struct tty_struct *linux_tty,
+static int ipw_write(struct tty_struct *beep_tty,
 		     const unsigned char *buf, int count)
 {
-	struct ipw_tty *tty = linux_tty->driver_data;
+	struct ipw_tty *tty = beep_tty->driver_data;
 	int room, ret;
 
 	if (!tty)
@@ -243,9 +243,9 @@ static int ipw_write(struct tty_struct *linux_tty,
 	return count;
 }
 
-static int ipw_write_room(struct tty_struct *linux_tty)
+static int ipw_write_room(struct tty_struct *beep_tty)
 {
-	struct ipw_tty *tty = linux_tty->driver_data;
+	struct ipw_tty *tty = beep_tty->driver_data;
 	int room;
 
 	/* FIXME: Exactly how is the tty object locked here .. */
@@ -287,9 +287,9 @@ static int ipwireless_get_serial_info(struct ipw_tty *tty,
 	return 0;
 }
 
-static int ipw_chars_in_buffer(struct tty_struct *linux_tty)
+static int ipw_chars_in_buffer(struct tty_struct *beep_tty)
 {
-	struct ipw_tty *tty = linux_tty->driver_data;
+	struct ipw_tty *tty = beep_tty->driver_data;
 
 	if (!tty)
 		return 0;
@@ -367,9 +367,9 @@ static int set_control_lines(struct ipw_tty *tty, unsigned int set,
 	return 0;
 }
 
-static int ipw_tiocmget(struct tty_struct *linux_tty)
+static int ipw_tiocmget(struct tty_struct *beep_tty)
 {
-	struct ipw_tty *tty = linux_tty->driver_data;
+	struct ipw_tty *tty = beep_tty->driver_data;
 	/* FIXME: Exactly how is the tty object locked here .. */
 
 	if (!tty)
@@ -382,10 +382,10 @@ static int ipw_tiocmget(struct tty_struct *linux_tty)
 }
 
 static int
-ipw_tiocmset(struct tty_struct *linux_tty,
+ipw_tiocmset(struct tty_struct *beep_tty,
 	     unsigned int set, unsigned int clear)
 {
-	struct ipw_tty *tty = linux_tty->driver_data;
+	struct ipw_tty *tty = beep_tty->driver_data;
 	/* FIXME: Exactly how is the tty object locked here .. */
 
 	if (!tty)
@@ -397,10 +397,10 @@ ipw_tiocmset(struct tty_struct *linux_tty,
 	return set_control_lines(tty, set, clear);
 }
 
-static int ipw_ioctl(struct tty_struct *linux_tty,
+static int ipw_ioctl(struct tty_struct *beep_tty,
 		     unsigned int cmd, unsigned long arg)
 {
-	struct ipw_tty *tty = linux_tty->driver_data;
+	struct ipw_tty *tty = beep_tty->driver_data;
 
 	if (!tty)
 		return -ENODEV;
@@ -453,7 +453,7 @@ static int ipw_ioctl(struct tty_struct *linux_tty,
 			}
 			return 0;
 		case TCFLSH:
-			return tty_perform_flush(linux_tty, arg);
+			return tty_perform_flush(beep_tty, arg);
 		}
 	}
 	return -ENOIOCTLCMD;

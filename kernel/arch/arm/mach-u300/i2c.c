@@ -7,11 +7,11 @@
  * Register board i2c devices
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  */
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/mfd/ab3100.h>
-#include <linux/regulator/machine.h>
-#include <linux/amba/bus.h>
+#include <beep/kernel.h>
+#include <beep/i2c.h>
+#include <beep/mfd/ab3100.h>
+#include <beep/regulator/machine.h>
+#include <beep/amba/bus.h>
 #include <mach/irqs.h>
 
 /*

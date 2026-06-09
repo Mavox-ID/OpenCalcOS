@@ -12,9 +12,9 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/hrtimer.h>
-#include <linux/smp.h>
-#include <linux/slab.h>
+#include <beep/hrtimer.h>
+#include <beep/smp.h>
+#include <beep/slab.h>
 #include <asm/cell-pmu.h>
 #include <asm/time.h>
 #include "pr_util.h"
@@ -55,7 +55,7 @@ void set_spu_profiling_frequency(unsigned int freq_khz, unsigned int cycles_rese
 	/* To calculate a timeout in nanoseconds, the basic
 	 * formula is ns = cycles_reset * (NSEC_PER_SEC / cpu frequency).
 	 * To avoid floating point math, we use the scale math
-	 * technique as described in linux/jiffies.h.  We use
+	 * technique as described in beep/jiffies.h.  We use
 	 * a scale factor of SCALE_SHIFT, which provides 4 decimal places
 	 * of precision.  This is close enough for the purpose at hand.
 	 *

@@ -6,7 +6,7 @@
  *
  * This software may be distributed under the terms of the GNU General
  * Public License ("GPL") version 2 as distributed in the 'COPYING'
- * file from the main directory of the linux kernel source.
+ * file from the main directory of the beep kernel source.
  *
  *
  * Your platform definition file should specify something like:
@@ -19,24 +19,24 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/platform_data/atmel.h>
+#include <beep/clk.h>
+#include <beep/errno.h>
+#include <beep/if_arp.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/platform_device.h>
+#include <beep/rtnetlink.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/platform_data/atmel.h>
 
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
+#include <beep/can/dev.h>
+#include <beep/can/error.h>
 
 #define AT91_MB_MASK(i)		((1 << (i)) - 1)
 
@@ -621,7 +621,7 @@ static void at91_read_mb(struct net_device *dev, unsigned int mb,
  * @dev: net device
  * @mb: mail box to read from
  *
- * Reads a CAN message from given mailbox, and put into linux network
+ * Reads a CAN message from given mailbox, and put into beep network
  * RX queue, does all housekeeping chores (stats, ...)
  */
 static void at91_read_msg(struct net_device *dev, unsigned int mb)

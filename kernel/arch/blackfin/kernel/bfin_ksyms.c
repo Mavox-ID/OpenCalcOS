@@ -6,8 +6,8 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
 
 #include <asm/cacheflush.h>
 #include <asm/io.h>

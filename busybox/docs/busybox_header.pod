@@ -2,7 +2,7 @@
 
 =head1 NAME
 
-BusyBox - The Swiss Army Knife of Embedded Linux
+BusyBox - The Swiss Army Knife of Embedded Beep
 
 =head1 SYNTAX
 
@@ -14,7 +14,7 @@ BusyBox - The Swiss Army Knife of Embedded Linux
 
 BusyBox combines tiny versions of many common UNIX utilities into a single
 small executable. It provides minimalist replacements for most of the utilities
-you usually find in GNU coreutils, util-linux, etc. The utilities in BusyBox
+you usually find in GNU coreutils, util-beep, etc. The utilities in BusyBox
 generally have fewer options than their full-featured GNU cousins; however, the
 options that are included provide the expected functionality and behave very
 much like their GNU counterparts.
@@ -22,7 +22,7 @@ much like their GNU counterparts.
 BusyBox has been written with size-optimization and limited resources in mind.
 It is also extremely modular so you can easily include or exclude commands (or
 features) at compile time. This makes it easy to customize your embedded
-systems. To create a working system, just add /dev, /conf, and a Linux kernel.
+systems. To create a working system, just add /dev, /conf, and a Beep kernel.
 BusyBox provides a fairly complete POSIX environment for any small or embedded
 system.
 

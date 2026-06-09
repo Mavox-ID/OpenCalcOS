@@ -19,27 +19,27 @@
  *    Questions/Comments/Bugfixes to iss_storagedev@hp.com
  *
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/bio.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/blkpg.h>
-#include <linux/timer.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/hdreg.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/blkdev.h>
-#include <linux/genhd.h>
-#include <linux/scatterlist.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/bio.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/major.h>
+#include <beep/fs.h>
+#include <beep/blkpg.h>
+#include <beep/timer.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/hdreg.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/blkdev.h>
+#include <beep/genhd.h>
+#include <beep/scatterlist.h>
 #include <asm/uaccess.h>
 #include <asm/io.h>
 

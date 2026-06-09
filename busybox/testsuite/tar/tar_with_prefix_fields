@@ -257,7 +257,7 @@ t=`tar1_bz2 | bunzip2 | busybox tar tv`
 test x"$res1" = x"$t"
 
 # Case 2: long dir name, with ENTIRE path in prefix field (name = "")
-res2='drwxr-xr-x fm3/users         0 2008-02-19 16:33:20 VirtualBox-1.5.6_OSE/src/VBox/Additions/linux/x11include/4.3/programs/Xserver/hw/xfree86/xf24_32bpp/'
+res2='drwxr-xr-x fm3/users         0 2008-02-19 16:33:20 VirtualBox-1.5.6_OSE/src/VBox/Additions/beep/x11include/4.3/programs/Xserver/hw/xfree86/xf24_32bpp/'
 t=`tar2_bz2 | bunzip2 | busybox tar tvf -`
 test x"$res2" = x"$t"
 t=`tar2_bz2 | bunzip2 | busybox tar tv`

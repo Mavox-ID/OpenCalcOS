@@ -3,23 +3,23 @@
  *
  *   Author: Ryan Wilson <hap9@epoch.ncsc.mil>
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mm.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/mm.h>
 #include <xen/xenbus.h>
 #include <xen/events.h>
 #include <xen/grant_table.h>
 #include <xen/page.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
+#include <beep/spinlock.h>
+#include <beep/pci.h>
+#include <beep/msi.h>
 #include <xen/interface/io/pciif.h>
 #include <asm/xen/pci.h>
-#include <linux/interrupt.h>
-#include <linux/atomic.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
-#include <linux/time.h>
+#include <beep/interrupt.h>
+#include <beep/atomic.h>
+#include <beep/workqueue.h>
+#include <beep/bitops.h>
+#include <beep/time.h>
 
 #include <asm/xen/swiotlb-xen.h>
 #define INVALID_GRANT_REF (0)

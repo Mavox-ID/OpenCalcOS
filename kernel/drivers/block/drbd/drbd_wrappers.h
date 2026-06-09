@@ -1,8 +1,8 @@
 #ifndef _DRBD_WRAPPERS_H
 #define _DRBD_WRAPPERS_H
 
-#include <linux/ctype.h>
-#include <linux/mm.h>
+#include <beep/ctype.h>
+#include <beep/mm.h>
 #include "drbd_int.h"
 
 /* see get_sb_bdev and bd_claim */

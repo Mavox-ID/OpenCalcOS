@@ -21,12 +21,12 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/threads.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
+#include <beep/kernel.h>
+#include <beep/threads.h>
+#include <beep/pci.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
 
 #include <asm/io.h>
 #include <asm/pgtable.h>
@@ -283,7 +283,7 @@ void __init find_and_init_phbs(void)
 		const int *prop;
 
 		prop = of_get_property(of_chosen,
-				"linux,pci-probe-only", NULL);
+				"beep,pci-probe-only", NULL);
 		if (prop) {
 			if (*prop)
 				pci_add_flags(PCI_PROBE_ONLY);
@@ -293,7 +293,7 @@ void __init find_and_init_phbs(void)
 
 #ifdef CONFIG_PPC32 /* Will be made generic soon */
 		prop = of_get_property(of_chosen,
-				"linux,pci-assign-all-buses", NULL);
+				"beep,pci-assign-all-buses", NULL);
 		if (prop && *prop)
 			pci_add_flags(PCI_REASSIGN_ALL_BUS);
 #endif /* CONFIG_PPC32 */

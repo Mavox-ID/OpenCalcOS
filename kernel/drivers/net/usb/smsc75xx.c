@@ -18,19 +18,19 @@
  *
  *****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/bitrev.h>
-#include <linux/crc16.h>
-#include <linux/crc32.h>
-#include <linux/usb/usbnet.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kmod.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/usb.h>
+#include <beep/bitrev.h>
+#include <beep/crc16.h>
+#include <beep/crc32.h>
+#include <beep/usb/usbnet.h>
+#include <beep/slab.h>
 #include "smsc75xx.h"
 
 #define SMSC_CHIPNAME			"smsc75xx"

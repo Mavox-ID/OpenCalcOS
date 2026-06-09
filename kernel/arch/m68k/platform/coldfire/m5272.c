@@ -1,7 +1,7 @@
 /***************************************************************************/
 
 /*
- *	linux/arch/m68knommu/platform/5272/config.c
+ *	beep/arch/m68knommu/platform/5272/config.c
  *
  *	Copyright (C) 1999-2002, Greg Ungerer (gerg@snapgear.com)
  *	Copyright (C) 2001-2002, SnapGear Inc. (www.snapgear.com)
@@ -9,12 +9,12 @@
 
 /***************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/phy.h>
+#include <beep/phy_fixed.h>
 #include <asm/machdep.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>

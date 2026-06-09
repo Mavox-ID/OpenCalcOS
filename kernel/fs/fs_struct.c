@@ -1,9 +1,9 @@
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/path.h>
-#include <linux/slab.h>
-#include <linux/fs_struct.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/path.h>
+#include <beep/slab.h>
+#include <beep/fs_struct.h>
 #include "internal.h"
 
 /*

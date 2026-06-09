@@ -22,9 +22,9 @@
 #include <crypto/aes.h>
 #include <crypto/ctr.h>
 #include <crypto/algapi.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/crypto.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/crypto.h>
 #include <asm/vio.h>
 
 #include "nx_csbcpb.h"

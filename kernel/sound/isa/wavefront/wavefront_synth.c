@@ -21,15 +21,15 @@
  */
 
 #include <asm/io.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/firmware.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/time.h>
+#include <beep/wait.h>
+#include <beep/firmware.h>
+#include <beep/moduleparam.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/snd_wavefront.h>
 #include <sound/initval.h>

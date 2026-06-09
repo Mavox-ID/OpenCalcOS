@@ -9,7 +9,7 @@
 #ifndef _UAPI_ASM_SIGNAL_H
 #define _UAPI_ASM_SIGNAL_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define _NSIG		128
 #define _NSIG_BPW	(sizeof(unsigned long) * 8)
@@ -70,7 +70,7 @@ typedef unsigned long old_sigset_t;		/* at least 32 bits */
  * SA_NOCLDWAIT flag on SIGCHLD to inhibit zombies.
  * SA_NODEFER prevents the current signal from being masked in the handler.
  *
- * SA_ONESHOT and SA_NOMASK are the historical Linux names for the Single
+ * SA_ONESHOT and SA_NOMASK are the historical Beep names for the Single
  * Unix names RESETHAND and NODEFER respectively.
  */
 #define SA_ONSTACK	0x08000000

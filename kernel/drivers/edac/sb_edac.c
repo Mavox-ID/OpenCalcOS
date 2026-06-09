@@ -10,17 +10,17 @@
  *	 Mauro Carvalho Chehab <mchehab@redhat.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/edac.h>
-#include <linux/mmzone.h>
-#include <linux/smp.h>
-#include <linux/bitmap.h>
-#include <linux/math64.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/edac.h>
+#include <beep/mmzone.h>
+#include <beep/smp.h>
+#include <beep/bitmap.h>
+#include <beep/math64.h>
 #include <asm/processor.h>
 #include <asm/mce.h>
 

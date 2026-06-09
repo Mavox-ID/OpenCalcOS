@@ -1,28 +1,28 @@
 /*
- * linux/drivers/video/q40fb.c -- Q40 frame buffer device
+ * beep/drivers/video/q40fb.c -- Q40 frame buffer device
  *
  * Copyright (C) 2001
  *
- *      Richard Zidlicky <rz@linux-m68k.org>
+ *      Richard Zidlicky <rz@beep-m68k.org>
  *
  *  This file is subject to the terms and conditions of the GNU General Public
  *  License. See the file COPYING in the main directory of this archive for
  *  more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
 
 #include <asm/uaccess.h>
 #include <asm/setup.h>
 #include <asm/q40_master.h>
-#include <linux/fb.h>
-#include <linux/module.h>
+#include <beep/fb.h>
+#include <beep/module.h>
 #include <asm/pgtable.h>
 
 #define Q40_PHYS_SCREEN_ADDR 0xFE800000

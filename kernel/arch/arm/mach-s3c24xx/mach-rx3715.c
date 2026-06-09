@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2440/mach-rx3715.c
+/* beep/arch/arm/mach-s3c2440/mach-rx3715.c
  *
  * Copyright (c) 2003-2004 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
@@ -11,24 +11,24 @@
  *
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/memblock.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand_ecc.h>
-#include <linux/mtd/partitions.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/memblock.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/tty.h>
+#include <beep/console.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/serial_core.h>
+#include <beep/serial.h>
+#include <beep/io.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/nand_ecc.h>
+#include <beep/mtd/partitions.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -43,7 +43,7 @@
 #include <mach/regs-lcd.h>
 
 #include <mach/h1940.h>
-#include <linux/platform_data/mtd-nand-s3c2410.h>
+#include <beep/platform_data/mtd-nand-s3c2410.h>
 #include <mach/fb.h>
 
 #include <plat/clock.h>
@@ -206,7 +206,7 @@ static void __init rx3715_init_machine(void)
 }
 
 MACHINE_START(RX3715, "IPAQ-RX3715")
-	/* Maintainer: Ben Dooks <ben-linux@fluff.org> */
+	/* Maintainer: Ben Dooks <ben-beep@fluff.org> */
 	.atag_offset	= 0x100,
 	.map_io		= rx3715_map_io,
 	.reserve	= rx3715_reserve,

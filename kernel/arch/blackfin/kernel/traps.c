@@ -6,21 +6,21 @@
  * Licensed under the GPL-2 or later
  */
 
-#include <linux/bug.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
+#include <beep/bug.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
 #include <asm/traps.h>
 #include <asm/cplb.h>
 #include <asm/blackfin.h>
 #include <asm/irq_handler.h>
-#include <linux/irq.h>
+#include <beep/irq.h>
 #include <asm/trace.h>
 #include <asm/fixed_code.h>
 #include <asm/pseudo_instructions.h>
 #include <asm/pda.h>
 
 #ifdef CONFIG_KGDB
-# include <linux/kgdb.h>
+# include <beep/kgdb.h>
 
 # define CHK_DEBUGGER_TRAP() \
 	do { \
@@ -107,7 +107,7 @@ asmlinkage notrace void trap_c(struct pt_regs *fp)
 	 * here
 	 */
 
-	/* 0x00 - Linux Syscall, getting here is an error */
+	/* 0x00 - Beep Syscall, getting here is an error */
 	/* 0x01 - userspace gdb breakpoint, handled here */
 	case VEC_EXCPT01:
 		info.si_code = TRAP_ILLTRAP;
@@ -258,7 +258,7 @@ asmlinkage notrace void trap_c(struct pt_regs *fp)
 		sig = SIGBUS;
 		strerror = KERN_NOTICE EXC_0x26(KERN_NOTICE);
 		break;
-	/* 0x27 - Data CPLB Multiple Hits - Linux Trap Zero, handled here */
+	/* 0x27 - Data CPLB Multiple Hits - Beep Trap Zero, handled here */
 	case VEC_CPLB_MHIT:
 		info.si_code = ILL_CPLB_MULHIT;
 		sig = SIGSEGV;

@@ -18,7 +18,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <sys/stat.h>
-#include <linux/asn1_ber_bytecode.h>
+#include <beep/asn1_ber_bytecode.h>
 
 enum token_type {
 	DIRECTIVE_ABSENT,
@@ -1231,7 +1231,7 @@ static void render(FILE *out, FILE *hdr)
 	fprintf(hdr, " *\n");
 	fprintf(hdr, " * ASN.1 parser for %s\n", grammar_name);
 	fprintf(hdr, " */\n");
-	fprintf(hdr, "#include <linux/asn1_decoder.h>\n");
+	fprintf(hdr, "#include <beep/asn1_decoder.h>\n");
 	fprintf(hdr, "\n");
 	fprintf(hdr, "extern const struct asn1_decoder %s_decoder;\n", grammar_name);
 	if (ferror(hdr)) {
@@ -1244,7 +1244,7 @@ static void render(FILE *out, FILE *hdr)
 	fprintf(out, " *\n");
 	fprintf(out, " * ASN.1 parser for %s\n", grammar_name);
 	fprintf(out, " */\n");
-	fprintf(out, "#include <linux/asn1_ber_bytecode.h>\n");
+	fprintf(out, "#include <beep/asn1_ber_bytecode.h>\n");
 	fprintf(out, "#include \"%s-asn1.h\"\n", grammar_name);
 	fprintf(out, "\n");
 	if (ferror(out)) {

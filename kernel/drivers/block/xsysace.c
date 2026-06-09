@@ -80,23 +80,23 @@
 
 #undef DEBUG
 
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/mutex.h>
-#include <linux/ata.h>
-#include <linux/hdreg.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/ctype.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/blkdev.h>
+#include <beep/mutex.h>
+#include <beep/ata.h>
+#include <beep/hdreg.h>
+#include <beep/platform_device.h>
 #if defined(CONFIG_OF)
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <beep/of_address.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
 #endif
 
 MODULE_AUTHOR("Grant Likely <grant.likely@secretlab.ca>");

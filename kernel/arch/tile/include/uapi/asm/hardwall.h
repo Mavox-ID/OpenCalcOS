@@ -19,7 +19,7 @@
 #define _UAPI_ASM_TILE_HARDWALL_H
 
 #include <arch/chip.h>
-#include <linux/ioctl.h>
+#include <beep/ioctl.h>
 
 #define HARDWALL_IOCTL_BASE 0xa2
 

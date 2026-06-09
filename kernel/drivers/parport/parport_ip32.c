@@ -45,7 +45,7 @@
  *	If DMA mode works well, decide if support for PIO FIFO modes should be
  *	dropped.
  *	Use the io{read,write} family functions when they become available in
- *	the linux-mips.org tree.  Note: the MIPS specific functions readsb()
+ *	the beep-mips.org tree.  Note: the MIPS specific functions readsb()
  *	and writesb() are to be translated by ioread8_rep() and iowrite8_rep()
  *	respectively.
  */
@@ -92,21 +92,21 @@
 #	endif
 #endif
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/parport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/parport.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/stddef.h>
+#include <beep/types.h>
 #include <asm/io.h>
 #include <asm/ip32/ip32_ints.h>
 #include <asm/ip32/mace.h>
@@ -2241,7 +2241,7 @@ MODULE_PARM_DESC(features,
 /*
  * Local Variables:
  * mode: c
- * c-file-style: "linux"
+ * c-file-style: "beep"
  * indent-tabs-mode: t
  * tab-width: 8
  * fill-column: 78

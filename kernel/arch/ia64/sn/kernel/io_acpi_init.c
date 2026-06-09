@@ -12,9 +12,9 @@
 #include <asm/sn/pcibus_provider_defs.h>
 #include <asm/sn/sn_sal.h>
 #include "xtalk/hubdev.h"
-#include <linux/acpi.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/acpi.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 
 /*
@@ -487,7 +487,7 @@ sn_acpi_bus_fixup(struct pci_bus *bus)
 /*
  * sn_io_acpi_init - PROM has ACPI support for IO, defining at a minimum the
  *		     nodes and root buses in the DSDT. As a result, bus scanning
- *		     will be initiated by the Linux ACPI code.
+ *		     will be initiated by the Beep ACPI code.
  */
 
 void __init

@@ -12,10 +12,10 @@ Set the NDK variable to point to the path where you installed the NDK:
 
 2. Set cross-compiling environment variables for NDK toolchain and sysroot.
 For arm:
-  export NDK_TOOLCHAIN=${NDK}/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86/bin/arm-linux-androideabi-
+  export NDK_TOOLCHAIN=${NDK}/toolchains/arm-beep-androideabi-4.6/prebuilt/beep-x86/bin/arm-beep-androideabi-
   export NDK_SYSROOT=${NDK}/platforms/android-9/arch-arm
 For x86:
-  export NDK_TOOLCHAIN=${NDK}/toolchains/x86-4.6/prebuilt/linux-x86/bin/i686-linux-android-
+  export NDK_TOOLCHAIN=${NDK}/toolchains/x86-4.6/prebuilt/beep-x86/bin/i686-beep-android-
   export NDK_SYSROOT=${NDK}/platforms/android-9/arch-x86
 
 This method is not working for Android NDK versions up to Revision 8b.
@@ -41,9 +41,9 @@ For x86:
 
 3. Set the NDK toolchain environment variable.
 For arm:
-  export NDK_TOOLCHAIN=${ANDROID_TOOLCHAIN}/arm-linux-androideabi-
+  export NDK_TOOLCHAIN=${ANDROID_TOOLCHAIN}/arm-beep-androideabi-
 For x86:
-  export NDK_TOOLCHAIN=${ANDROID_TOOLCHAIN}/i686-linux-android-
+  export NDK_TOOLCHAIN=${ANDROID_TOOLCHAIN}/i686-beep-android-
 
 II. Compile perf for Android
 ------------------------------------------------

@@ -6,13 +6,13 @@
  *
  * Modified for SPARC by Stu Grossman, Cygnus Support.
  *
- * Modified for Linux/MIPS (and MIPS in general) by Andreas Busse
+ * Modified for Beep/MIPS (and MIPS in general) by Andreas Busse
  * Send complaints, suggestions etc. to <andy@waldorf-gmbh.de>
  *
  * Copyright (C) 1995 Andreas Busse
  *
  * Copyright (C) 2007 Red Hat, Inc. All Rights Reserved.
- * Modified for Linux/mn10300 by David Howells <dhowells@redhat.com>
+ * Modified for Beep/mn10300 by David Howells <dhowells@redhat.com>
  */
 
 /*
@@ -82,18 +82,18 @@
  *  Example:
  *    $ tar zxf gdb-5.0.tar.gz
  *    $ cd gdb-5.0
- *    $ ./configure --target=am33_2.0-linux-gnu
+ *    $ ./configure --target=am33_2.0-beep-gnu
  *    $ make
  *    $ install
- *    am33_2.0-linux-gnu-gdb
+ *    am33_2.0-beep-gnu-gdb
  *
  *  Step 2:
- *  Configure linux for remote debugging and build it.
+ *  Configure beep for remote debugging and build it.
  *
  *  Example:
- *    $ cd ~/linux
+ *    $ cd ~/beep
  *    $ make menuconfig <go to "Kernel Hacking" and turn on remote debugging>
- *    $ make dep; make vmlinux
+ *    $ make dep; make vmbeep
  *
  *  Step 3:
  *  Download the kernel to the remote target and start
@@ -109,7 +109,7 @@
  *  Start the gdb session on the host.
  *
  *  Example:
- *    $ am33_2.0-linux-gnu-gdb vmlinux
+ *    $ am33_2.0-beep-gnu-gdb vmbeep
  *    (gdb) set remotebaud 115200
  *    (gdb) target remote /dev/ttyS1
  *    ...at this point you are connected to
@@ -120,14 +120,14 @@
  *
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/bug.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/bug.h>
 
 #include <asm/pgtable.h>
 #include <asm/gdb-stub.h>
@@ -148,7 +148,7 @@
 #define BUFMAX 2048
 
 static const char gdbstub_banner[] =
-	"Linux/MN10300 GDB Stub (c) RedHat 2007\n";
+	"Beep/MN10300 GDB Stub (c) RedHat 2007\n";
 
 u8	gdbstub_rx_buffer[PAGE_SIZE] __attribute__((aligned(PAGE_SIZE)));
 u32	gdbstub_rx_inp;

@@ -5,17 +5,17 @@
 #define DEBUG		1
 #endif
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/fb.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/fb.h>
 
 
 #ifdef CONFIG_FB_RADEON_I2C
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
 #endif
 
 #include <asm/io.h>

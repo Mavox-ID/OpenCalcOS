@@ -1,5 +1,5 @@
 /*
- *  Advanced Linux Sound Architecture
+ *  Advanced Beep Sound Architecture
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  *
  *
@@ -25,15 +25,15 @@
 #error "Enable the OSS soundcore multiplexer (CONFIG_SOUND) in the kernel."
 #endif
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/time.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/time.h>
 #include <sound/core.h>
 #include <sound/minors.h>
 #include <sound/info.h>
-#include <linux/sound.h>
-#include <linux/mutex.h>
+#include <beep/sound.h>
+#include <beep/mutex.h>
 
 #define SNDRV_OSS_MINORS 256
 

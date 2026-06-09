@@ -32,10 +32,10 @@
  *
  */
 
-#ifndef __MUSB_LINUX_PLATFORM_ARCH_H__
-#define __MUSB_LINUX_PLATFORM_ARCH_H__
+#ifndef __MUSB_BEEP_PLATFORM_ARCH_H__
+#define __MUSB_BEEP_PLATFORM_ARCH_H__
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 #ifndef CONFIG_BLACKFIN
 

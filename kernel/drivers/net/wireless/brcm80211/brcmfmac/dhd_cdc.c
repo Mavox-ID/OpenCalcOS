@@ -21,8 +21,8 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/netdevice.h>
+#include <beep/types.h>
+#include <beep/netdevice.h>
 
 #include <brcmu_utils.h>
 #include <brcmu_wifi.h>

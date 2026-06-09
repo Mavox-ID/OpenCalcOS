@@ -14,12 +14,12 @@
  * Taken from the i386 architecture and simplified.
  */
 
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/limits.h>
-#include <linux/sched.h>
-#include <linux/mman.h>
-#include <linux/compat.h>
+#include <beep/mm.h>
+#include <beep/random.h>
+#include <beep/limits.h>
+#include <beep/sched.h>
+#include <beep/mman.h>
+#include <beep/compat.h>
 
 /*
  * Top of mmap area (just below the process stack).

@@ -4,10 +4,10 @@
  * PCMCIA implementation routines for simpad
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/init.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>

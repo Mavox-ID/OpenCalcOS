@@ -1,8 +1,8 @@
-#ifndef _LINUX_ATARI_JOYSTICK_H
-#define _LINUX_ATARI_JOYSTICK_H
+#ifndef _BEEP_ATARI_JOYSTICK_H
+#define _BEEP_ATARI_JOYSTICK_H
 
 /*
- * linux/include/linux/atari_joystick.h
+ * beep/include/beep/atari_joystick.h
  * header file for Atari Joystick driver
  * by Robert de Vries (robert@and.nl) on 19Jul93
  */

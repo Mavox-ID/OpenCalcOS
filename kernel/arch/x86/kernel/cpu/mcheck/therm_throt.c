@@ -13,16 +13,16 @@
  * Credits: Adapted from Zwane Mwaikambo's original code in mce_intel.c.
  *          Inspired by Ross Biro's and Al Borchers' counter code.
  */
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/percpu.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
+#include <beep/interrupt.h>
+#include <beep/notifier.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/percpu.h>
+#include <beep/export.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/cpu.h>
 
 #include <asm/processor.h>
 #include <asm/apic.h>

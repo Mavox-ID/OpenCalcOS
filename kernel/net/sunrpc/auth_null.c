@@ -1,14 +1,14 @@
 /*
- * linux/net/sunrpc/auth_null.c
+ * beep/net/sunrpc/auth_null.c
  *
  * AUTH_NULL authentication. Really :-)
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/sunrpc/clnt.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/sunrpc/clnt.h>
 
 #ifdef RPC_DEBUG
 # define RPCDBG_FACILITY	RPCDBG_AUTH

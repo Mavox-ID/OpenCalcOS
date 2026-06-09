@@ -31,11 +31,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 #include <asm/uaccess.h>
 

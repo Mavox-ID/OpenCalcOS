@@ -1,7 +1,7 @@
 /*
  *  arch/arm/mach-vt8500/timer.c
  *
- *  Copyright (C) 2012 Tony Prisk <linux@prisktech.co.nz>
+ *  Copyright (C) 2012 Tony Prisk <beep@prisktech.co.nz>
  *  Copyright (C) 2010 Alexey Charkov <alchark@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -24,17 +24,17 @@
  * Alexey Charkov. Minor changes have been made for Device Tree Support.
  */
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/delay.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/delay.h>
 #include <asm/mach/time.h>
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
 
 #define VT8500_TIMER_OFFSET	0x0100
 #define VT8500_TIMER_HZ		3000000

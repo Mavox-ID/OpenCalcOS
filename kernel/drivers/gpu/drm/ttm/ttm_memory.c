@@ -30,12 +30,12 @@
 #include <drm/ttm/ttm_memory.h>
 #include <drm/ttm/ttm_module.h>
 #include <drm/ttm/ttm_page_alloc.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/spinlock.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #define TTM_MEMORY_ALLOC_RETRIES 4
 

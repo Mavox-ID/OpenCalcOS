@@ -13,16 +13,16 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/elfcore.h>
-#include <linux/kallsyms.h>
-#include <linux/fs.h>
-#include <linux/ftrace.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/prefetch.h>
-#include <linux/stackprotector.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/elfcore.h>
+#include <beep/kallsyms.h>
+#include <beep/fs.h>
+#include <beep/ftrace.h>
+#include <beep/hw_breakpoint.h>
+#include <beep/prefetch.h>
+#include <beep/stackprotector.h>
 #include <asm/uaccess.h>
 #include <asm/mmu_context.h>
 #include <asm/fpu.h>

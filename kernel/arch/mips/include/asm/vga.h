@@ -23,7 +23,7 @@
  *  These are only needed for supporting VGA or MDA text mode, which use little
  *  endian byte ordering.
  *  In other cases, we can optimize by using native byte ordering and
- *  <linux/vt_buffer.h> has already done the right job for us.
+ *  <beep/vt_buffer.h> has already done the right job for us.
  */
 
 #undef scr_writew

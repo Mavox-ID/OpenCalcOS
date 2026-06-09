@@ -12,11 +12,11 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/stringify.h>
-#include <linux/smp.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/export.h>
+#include <beep/stringify.h>
+#include <beep/smp.h>
 
 /* waiting for a spinlock... */
 #if defined(CONFIG_PPC_SPLPAR)

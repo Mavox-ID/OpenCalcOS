@@ -22,9 +22,9 @@
 
 #undef DEBUG
 
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
 #include <asm/time.h>
 #include <asm/prom.h>
 #include <asm/machdep.h>

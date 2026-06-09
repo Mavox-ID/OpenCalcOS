@@ -16,11 +16,11 @@
  *
  * Authors:
  *	Eric Anholt <eric@anholt.net>
- *	Dave Airlie <airlied@linux.ie>
+ *	Dave Airlie <airlied@beep.ie>
  *	Jesse Barnes <jesse.barnes@intel.com>
  */
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 #include <drm/drmP.h>
 #include <asm/mrst.h>
 
@@ -29,7 +29,7 @@
 #include "psb_intel_drv.h"
 #include "psb_intel_reg.h"
 #include "power.h"
-#include <linux/pm_runtime.h>
+#include <beep/pm_runtime.h>
 
 /* The max/min PWM frequency in BPCR[31:17] - */
 /* The smallest number is 1 (not 0) that can fit in the

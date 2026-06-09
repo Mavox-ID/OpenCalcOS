@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2000, 2001, 2002, 2003, 2004 Broadcom Corporation
- * Copyright (C) 2004 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2004 by Ralf Baechle (ralf@beep-mips.org)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -21,14 +21,14 @@
  * Setup code for the SWARM board
  */
 
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/bootmem.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/screen_info.h>
-#include <linux/initrd.h>
+#include <beep/spinlock.h>
+#include <beep/mm.h>
+#include <beep/bootmem.h>
+#include <beep/blkdev.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/screen_info.h>
+#include <beep/initrd.h>
 
 #include <asm/irq.h>
 #include <asm/io.h>

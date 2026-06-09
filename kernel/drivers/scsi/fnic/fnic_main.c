@@ -15,18 +15,18 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/module.h>
-#include <linux/mempool.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/skbuff.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/if_ether.h>
+#include <beep/module.h>
+#include <beep/mempool.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/skbuff.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/if_ether.h>
 #include <scsi/fc/fc_fip.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_transport.h>

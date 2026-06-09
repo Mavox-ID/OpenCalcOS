@@ -58,17 +58,17 @@
  *
  */
 
-#include <linux/async.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <beep/async.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
-#include <linux/platform_device.h>
+#include <beep/ata.h>
+#include <beep/libata.h>
+#include <beep/platform_device.h>
 
 #define DRV_NAME "pata_legacy"
 #define DRV_VERSION "0.6.5"

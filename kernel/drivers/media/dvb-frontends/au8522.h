@@ -1,7 +1,7 @@
 /*
     Auvitek AU8522 QAM/8VSB demodulator driver
 
-    Copyright (C) 2008 Steven Toth <stoth@linuxtv.org>
+    Copyright (C) 2008 Steven Toth <stoth@beeptv.org>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -22,7 +22,7 @@
 #ifndef __AU8522_H__
 #define __AU8522_H__
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 enum au8522_if_freq {
 	AU8522_IF_6MHZ = 0,

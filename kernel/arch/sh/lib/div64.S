@@ -2,7 +2,7 @@
  * unsigned long __xdiv64_32(unsigned long long n, unsigned long d); 
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 .text
 ENTRY(__xdiv64_32)

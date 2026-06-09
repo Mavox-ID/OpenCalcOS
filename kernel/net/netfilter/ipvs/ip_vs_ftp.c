@@ -1,7 +1,7 @@
 /*
  * ip_vs_ftp.c: IPVS ftp application module
  *
- * Authors:	Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:	Wensong Zhang <wensong@beepvirtualserver.org>
  *
  * Changes:
  *
@@ -25,18 +25,18 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/netfilter.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/netfilter.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_helper.h>
-#include <linux/gfp.h>
+#include <beep/gfp.h>
 #include <net/protocol.h>
 #include <net/tcp.h>
 #include <asm/unaligned.h>

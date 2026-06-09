@@ -13,8 +13,8 @@
  *  option) any later version.
  */
 
-#include <linux/platform_device.h>
-#include <linux/export.h>
+#include <beep/platform_device.h>
+#include <beep/export.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

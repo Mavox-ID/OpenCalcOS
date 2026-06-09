@@ -12,24 +12,24 @@
 
 #define pr_fmt(fmt) "mrst: " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/scatterlist.h>
-#include <linux/sfi.h>
-#include <linux/intel_pmic_gpio.h>
-#include <linux/spi/spi.h>
-#include <linux/i2c.h>
-#include <linux/i2c/pca953x.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/mfd/intel_msic.h>
-#include <linux/gpio.h>
-#include <linux/i2c/tc35876x.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/scatterlist.h>
+#include <beep/sfi.h>
+#include <beep/intel_pmic_gpio.h>
+#include <beep/spi/spi.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pca953x.h>
+#include <beep/gpio_keys.h>
+#include <beep/input.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
+#include <beep/module.h>
+#include <beep/notifier.h>
+#include <beep/mfd/intel_msic.h>
+#include <beep/gpio.h>
+#include <beep/i2c/tc35876x.h>
 
 #include <asm/setup.h>
 #include <asm/mpspec_def.h>

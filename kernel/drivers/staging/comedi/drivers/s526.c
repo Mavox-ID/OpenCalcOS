@@ -2,7 +2,7 @@
     comedi/drivers/s526.c
     Sensoray s526 Comedi driver
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -42,7 +42,7 @@ comedi_config /dev/comedi0 s526 0x2C0,0x3
 */
 
 #include "../comedidev.h"
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 #include <asm/byteorder.h>
 
 #define S526_SIZE 64

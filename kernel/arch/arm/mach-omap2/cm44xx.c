@@ -12,11 +12,11 @@
  * XXX Perhaps we should just move them there and make them static.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/io.h>
 
 #include "iomap.h"
 #include "common.h"

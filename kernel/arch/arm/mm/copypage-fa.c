@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/lib/copypage-fa.S
+ *  beep/arch/arm/lib/copypage-fa.S
  *
  *  Copyright (C) 2005 Faraday Corp.
  *  Copyright (C) 2008-2009 Paulius Zaleckas <paulius.zaleckas@teltonika.lt>
@@ -11,8 +11,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/highmem.h>
+#include <beep/init.h>
+#include <beep/highmem.h>
 
 /*
  * Faraday optimised copy_user_page

@@ -14,11 +14,11 @@
  */
 
 
-#include <linux/compiler.h>
-#include <linux/mm.h>
-#include <linux/page-flags.h>
-#include <linux/threads.h>
-#include <linux/quicklist.h>
+#include <beep/compiler.h>
+#include <beep/mm.h>
+#include <beep/page-flags.h>
+#include <beep/threads.h>
+#include <beep/quicklist.h>
 
 #include <asm/mmu_context.h>
 

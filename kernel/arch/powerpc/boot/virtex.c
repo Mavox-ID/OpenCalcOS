@@ -86,7 +86,7 @@ int platform_specific_init(void)
 	if (devp == NULL)
 		return -1;
 
-	if (getprop(devp, "linux,stdout-path", path, MAX_PATH_LEN) > 0) {
+	if (getprop(devp, "beep,stdout-path", path, MAX_PATH_LEN) > 0) {
 		devp = finddevice(path);
 		if (devp == NULL)
 			return -1;

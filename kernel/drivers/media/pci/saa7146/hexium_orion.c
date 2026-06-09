@@ -1,7 +1,7 @@
 /*
     hexium_orion.c - v4l2 driver for the Hexium Orion frame grabber cards
 
-    Visit http://www.mihu.de/linux/saa7146/ and follow the link
+    Visit http://www.mihu.de/beep/saa7146/ and follow the link
     to "hexium" for further details about this card.
 
     Copyright (C) 2003 Michael Hunold <michael@mihu.de>
@@ -26,7 +26,7 @@
 #define DEBUG_VARIABLE debug
 
 #include <media/saa7146_vv.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 static int debug;
 module_param(debug, int, 0);
@@ -497,6 +497,6 @@ static void __exit hexium_cleanup_module(void)
 module_init(hexium_init_module);
 module_exit(hexium_cleanup_module);
 
-MODULE_DESCRIPTION("video4linux-2 driver for Hexium Orion frame grabber cards");
+MODULE_DESCRIPTION("video4beep-2 driver for Hexium Orion frame grabber cards");
 MODULE_AUTHOR("Michael Hunold <michael@mihu.de>");
 MODULE_LICENSE("GPL");

@@ -11,14 +11,14 @@
  * under the terms of the GNU General Public License version 2 as published by
  * the Free Software Foundation.
  */
-#include <linux/platform_device.h>
-#include <linux/mfd/mc13783.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/init.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/mc13783.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/input.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/init.h>
 
 #define MC13783_TS_NAME	"mc13783-ts"
 

@@ -22,9 +22,9 @@
 #ifndef __VIAFBDEV_H__
 #define __VIAFBDEV_H__
 
-#include <linux/proc_fs.h>
-#include <linux/fb.h>
-#include <linux/spinlock.h>
+#include <beep/proc_fs.h>
+#include <beep/fb.h>
+#include <beep/spinlock.h>
 
 #include "via_aux.h"
 #include "ioctl.h"

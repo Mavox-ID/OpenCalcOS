@@ -4,14 +4,14 @@
  * - get rid of some verify_areas and use __copy*user and __get/put_user
  *   for the ones that remain
  */
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/string.h>
 #include <asm/uaccess.h>
 
 #include <scsi/scsi.h>

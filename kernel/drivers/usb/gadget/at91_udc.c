@@ -14,24 +14,24 @@
 #undef	VERBOSE_DEBUG
 #undef	PACKET_TRACE
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/prefetch.h>
-#include <linux/clk.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_data/atmel.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/proc_fs.h>
+#include <beep/prefetch.h>
+#include <beep/clk.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
+#include <beep/platform_data/atmel.h>
 
 #include <asm/byteorder.h>
 #include <mach/hardware.h>
@@ -61,7 +61,7 @@
  * The VBUS sensing helps during enumeration, and allows both USB clocks
  * (and the transceiver) to stay gated off until they're necessary, saving
  * power.  During USB suspend, the 48 MHz clock is gated off in hardware;
- * it may also be gated off by software during some Linux sleep states.
+ * it may also be gated off by software during some Beep sleep states.
  */
 
 #define	DRIVER_VERSION	"3 May 2006"
@@ -80,7 +80,7 @@ static const char ep0name[] = "ep0";
 
 #ifdef CONFIG_USB_GADGET_DEBUG_FILES
 
-#include <linux/seq_file.h>
+#include <beep/seq_file.h>
 
 static const char debug_filename[] = "driver/udc";
 

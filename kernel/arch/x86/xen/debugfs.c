@@ -1,7 +1,7 @@
-#include <linux/init.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/debugfs.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include "debugfs.h"
 

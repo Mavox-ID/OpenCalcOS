@@ -14,7 +14,7 @@
  */
 
 #include <net/checksum.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 __wsum do_csum(const unsigned char *buff, int len)
 {

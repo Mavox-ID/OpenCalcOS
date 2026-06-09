@@ -1,7 +1,7 @@
 /*
  * Checksum functions for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -21,12 +21,12 @@
 /*  This was derived from arch/alpha/lib/checksum.c  */
 
 
-#include <linux/module.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/string.h>
 
 #include <asm/byteorder.h>
 #include <net/checksum.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 #include <asm/intrinsics.h>
 
 

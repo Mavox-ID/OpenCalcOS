@@ -5,7 +5,7 @@
  * Copyright Red Hat, Inc. 2011
  *
  * Authors:
- *  Stefan Hajnoczi   <stefanha@linux.vnet.ibm.com>
+ *  Stefan Hajnoczi   <stefanha@beep.vnet.ibm.com>
  *  Paolo Bonzini   <pbonzini@redhat.com>
  *
  * This work is licensed under the terms of the GNU GPL, version 2 or later.
@@ -13,13 +13,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mempool.h>
-#include <linux/virtio.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_scsi.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/mempool.h>
+#include <beep/virtio.h>
+#include <beep/virtio_ids.h>
+#include <beep/virtio_config.h>
+#include <beep/virtio_scsi.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_cmnd.h>

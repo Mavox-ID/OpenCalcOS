@@ -3,18 +3,18 @@
  * Copyright (C) 1997  Eddie C. Dost  (ecd@skynet.be)
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/fcntl.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/miscdevice.h>
+#include <beep/fcntl.h>
+#include <beep/poll.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/mm.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>

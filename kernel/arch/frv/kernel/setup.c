@@ -11,25 +11,25 @@
  */
 
 #include <generated/utsrelease.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/console.h>
-#include <linux/genhd.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/major.h>
-#include <linux/bootmem.h>
-#include <linux/highmem.h>
-#include <linux/seq_file.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/serial_8250.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/fb.h>
+#include <beep/console.h>
+#include <beep/genhd.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/major.h>
+#include <beep/bootmem.h>
+#include <beep/highmem.h>
+#include <beep/seq_file.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
+#include <beep/serial_reg.h>
+#include <beep/serial_8250.h>
 
 #include <asm/setup.h>
 #include <asm/irq.h>
@@ -55,13 +55,13 @@
 static void __init mb93090_display(void);
 #endif
 #ifdef CONFIG_MMU
-static void __init setup_linux_memory(void);
+static void __init setup_beep_memory(void);
 #else
-static void __init setup_uclinux_memory(void);
+static void __init setup_ucbeep_memory(void);
 #endif
 
 #ifdef CONFIG_MB93090_MB00
-static char __initdata mb93090_banner[] = "FJ/RH FR-V Linux";
+static char __initdata mb93090_banner[] = "FJ/RH FR-V Beep";
 static char __initdata mb93090_version[] = UTS_RELEASE;
 
 int __nongprelbss mb93090_mb00_detected;
@@ -755,9 +755,9 @@ static void __init parse_cmdline_early(char *cmdline)
 void __init setup_arch(char **cmdline_p)
 {
 #ifdef CONFIG_MMU
-	printk("Linux FR-V port done by Red Hat Inc <dhowells@redhat.com>\n");
+	printk("Beep FR-V port done by Red Hat Inc <dhowells@redhat.com>\n");
 #else
-	printk("uClinux FR-V port done by Red Hat Inc <dhowells@redhat.com>\n");
+	printk("uCbeep FR-V port done by Red Hat Inc <dhowells@redhat.com>\n");
 #endif
 
 	memcpy(boot_command_line, redboot_command_line, COMMAND_LINE_SIZE);
@@ -827,9 +827,9 @@ void __init setup_arch(char **cmdline_p)
 #endif
 
 #ifdef CONFIG_MMU
-	setup_linux_memory();
+	setup_beep_memory();
 #else
-	setup_uclinux_memory();
+	setup_ucbeep_memory();
 #endif
 
 	/* get kmalloc into gear */
@@ -870,10 +870,10 @@ late_initcall(setup_arch_serial);
 
 /*****************************************************************************/
 /*
- * set up the memory map for normal MMU linux
+ * set up the memory map for normal MMU beep
  */
 #ifdef CONFIG_MMU
-static void __init setup_linux_memory(void)
+static void __init setup_beep_memory(void)
 {
 	unsigned long bootmap_size, low_top_pfn, kstart, kend, high_mem;
 
@@ -947,15 +947,15 @@ static void __init setup_linux_memory(void)
 	}
 #endif
 
-} /* end setup_linux_memory() */
+} /* end setup_beep_memory() */
 #endif
 
 /*****************************************************************************/
 /*
- * set up the memory map for uClinux
+ * set up the memory map for uCbeep
  */
 #ifndef CONFIG_MMU
-static void __init setup_uclinux_memory(void)
+static void __init setup_ucbeep_memory(void)
 {
 #ifdef CONFIG_PROTECT_KERNEL
 	unsigned long dampr;
@@ -1009,7 +1009,7 @@ static void __init setup_uclinux_memory(void)
 				BOOTMEM_DEFAULT);
 #endif
 
-} /* end setup_uclinux_memory() */
+} /* end setup_ucbeep_memory() */
 #endif
 
 /*****************************************************************************/

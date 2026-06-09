@@ -1,7 +1,7 @@
 #ifndef ASM_X86_SERPENT_AVX_H
 #define ASM_X86_SERPENT_AVX_H
 
-#include <linux/crypto.h>
+#include <beep/crypto.h>
 #include <crypto/serpent.h>
 
 #define SERPENT_PARALLEL_BLOCKS 8

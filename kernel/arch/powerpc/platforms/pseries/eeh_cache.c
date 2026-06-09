@@ -19,12 +19,12 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/rbtree.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
+#include <beep/list.h>
+#include <beep/pci.h>
+#include <beep/rbtree.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/atomic.h>
 #include <asm/pci-bridge.h>
 #include <asm/ppc-pci.h>
 

@@ -23,12 +23,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/crc32.h>
-#include <linux/ethtool.h>
-#include <linux/interrupt.h>
-#include <linux/gfp.h>
-#include <linux/mii.h>
-#include <linux/mutex.h>
+#include <beep/crc32.h>
+#include <beep/ethtool.h>
+#include <beep/interrupt.h>
+#include <beep/gfp.h>
+#include <beep/mii.h>
+#include <beep/mutex.h>
 
 #include <asm/div64.h>
 
@@ -55,7 +55,7 @@ enum {
 #define DRV_NAME	"ipg"
 
 MODULE_AUTHOR("IC Plus Corp. 2003");
-MODULE_DESCRIPTION("IC Plus IP1000 Gigabit Ethernet Adapter Linux Driver");
+MODULE_DESCRIPTION("IC Plus IP1000 Gigabit Ethernet Adapter Beep Driver");
 MODULE_LICENSE("GPL");
 
 /*
@@ -1055,7 +1055,7 @@ static int ipg_nic_rxrestore(struct net_device *dev)
 
 		/* Generate a new receive buffer to replace the
 		 * current buffer (which will be released by the
-		 * Linux system).
+		 * Beep system).
 		 */
 		if (ipg_get_rxbuff(dev, entry) < 0) {
 			IPG_DEBUG_MSG("Cannot allocate new Rx buffer\n");
@@ -1641,7 +1641,7 @@ static irqreturn_t ipg_interrupt_handler(int irq, void *dev_inst)
 	if (status & IPG_IS_TX_COMPLETE)
 		ipg_nic_txcleanup(dev);
 
-	/* If UpdateStats interrupt, update Linux Ethernet statistics */
+	/* If UpdateStats interrupt, update Beep Ethernet statistics */
 	if (status & IPG_IS_UPDATE_STATS)
 		ipg_nic_get_stats(dev);
 
@@ -1737,7 +1737,7 @@ static int ipg_nic_open(struct net_device *dev)
 	ipg_w16(0x0000, INT_ENABLE);
 
 	/* Register the interrupt line to be used by the IPG within
-	 * the Linux system.
+	 * the Beep system.
 	 */
 	rc = request_irq(pdev->irq, ipg_interrupt_handler, IRQF_SHARED,
 			 dev->name, dev);

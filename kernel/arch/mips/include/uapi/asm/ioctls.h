@@ -94,7 +94,7 @@
 #define TIOCSCTTY	0x5480		/* become controlling tty */
 #define TIOCGSOFTCAR	0x5481
 #define TIOCSSOFTCAR	0x5482
-#define TIOCLINUX	0x5483
+#define TIOCBEEP	0x5483
 #define TIOCGSERIAL	0x5484
 #define TIOCSSERIAL	0x5485
 #define TCSBRKP		0x5486	/* Needed for POSIX tcsendbreak() */

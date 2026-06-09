@@ -17,17 +17,17 @@
  * General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/reboot.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/miscdevice.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/reboot.h>
 #include <asm/uaccess.h>
 
 #include "stackglue.h"
 
-#include <linux/dlm_plock.h>
+#include <beep/dlm_plock.h>
 
 /*
  * The control protocol starts with a handshake.  Until the handshake

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/pxa25x.c
+ *  beep/arch/arm/mach-pxa/pxa25x.c
  *
  *  Author:	Nicolas Pitre
  *  Created:	Jun 15, 2001
@@ -16,15 +16,15 @@
  * initialization stuff for PXA machines which can be overridden later if
  * need be.
  */
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/irq.h>
+#include <beep/gpio.h>
+#include <beep/gpio-pxa.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/suspend.h>
+#include <beep/syscore_ops.h>
+#include <beep/irq.h>
 
 #include <asm/mach/map.h>
 #include <asm/suspend.h>

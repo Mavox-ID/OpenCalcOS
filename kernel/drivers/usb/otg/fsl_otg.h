@@ -16,8 +16,8 @@
  */
 
 #include "otg_fsm.h"
-#include <linux/usb/otg.h>
-#include <linux/ioctl.h>
+#include <beep/usb/otg.h>
+#include <beep/ioctl.h>
 
 /* USB Command Register Bit Masks */
 #define USB_CMD_RUN_STOP		(0x1<<0)

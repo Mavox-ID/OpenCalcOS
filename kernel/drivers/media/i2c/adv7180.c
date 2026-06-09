@@ -16,19 +16,19 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
 #include <media/v4l2-ioctl.h>
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-chip-ident.h>
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 
 #define ADV7180_INPUT_CONTROL_REG			0x00
 #define ADV7180_INPUT_CONTROL_AD_PAL_BG_NTSC_J_SECAM	0x00

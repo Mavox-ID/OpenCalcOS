@@ -1,14 +1,14 @@
-#include <linux/bug.h>
-#include <linux/io.h>
-#include <linux/types.h>
-#include <linux/kdebug.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
-#include <linux/hardirq.h>
-#include <linux/kernel.h>
-#include <linux/kexec.h>
-#include <linux/module.h>
+#include <beep/bug.h>
+#include <beep/io.h>
+#include <beep/types.h>
+#include <beep/kdebug.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/uaccess.h>
+#include <beep/hardirq.h>
+#include <beep/kernel.h>
+#include <beep/kexec.h>
+#include <beep/module.h>
 #include <asm/unwinder.h>
 #include <asm/traps.h>
 

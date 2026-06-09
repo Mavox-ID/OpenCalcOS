@@ -24,20 +24,20 @@
  * 02110-1301 USA
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/sched.h>
+#include <beep/mutex.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
+#include <beep/iio/events.h>
 #include "tsl2563.h"
 
 /* Use this many bits for fraction part. */

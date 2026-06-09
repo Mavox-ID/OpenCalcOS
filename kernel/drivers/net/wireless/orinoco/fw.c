@@ -2,11 +2,11 @@
  *
  * See copyright notice in main.c
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/device.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/firmware.h>
+#include <beep/device.h>
+#include <beep/module.h>
 
 #include "hermes.h"
 #include "hermes_dld.h"

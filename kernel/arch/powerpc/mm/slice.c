@@ -24,12 +24,12 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/err.h>
+#include <beep/spinlock.h>
+#include <beep/export.h>
 #include <asm/mman.h>
 #include <asm/mmu.h>
 #include <asm/spu.h>

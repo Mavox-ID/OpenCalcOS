@@ -20,9 +20,9 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/of_platform.h>
 #include <asm/io.h>
 
 #include "fsl_85xx_cache_ctlr.h"

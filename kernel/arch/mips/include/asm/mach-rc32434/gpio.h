@@ -13,7 +13,7 @@
 #ifndef _RC32434_GPIO_H_
 #define _RC32434_GPIO_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm-generic/gpio.h>
 
 #define NR_BUILTIN_GPIO		32

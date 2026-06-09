@@ -15,12 +15,12 @@
  * 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/clkdev.h>
+#include <beep/err.h>
 
 #include "clk.h"
 #include "common.h"

@@ -1,8 +1,8 @@
 /*
  * Common corrected MCE threshold handler code:
  */
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
 
 #include <asm/irq_vectors.h>
 #include <asm/apic.h>

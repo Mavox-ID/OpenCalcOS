@@ -12,10 +12,10 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/signal.h>
+#include <beep/signal.h>
 
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
 
 
 static const struct hc_driver ehci_ppc_of_hc_driver = {

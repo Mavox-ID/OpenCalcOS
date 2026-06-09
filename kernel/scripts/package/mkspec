@@ -25,14 +25,14 @@ PROVIDES="$PROVIDES kernel-$KERNELRELEASE"
 __KERNELRELEASE=`echo $KERNELRELEASE | sed -e "s/-/_/g"`
 
 echo "Name: kernel"
-echo "Summary: The Linux Kernel"
+echo "Summary: The Beep Kernel"
 echo "Version: $__KERNELRELEASE"
 # we need to determine the NEXT version number so that uname and
 # rpm -q will agree
 echo "Release: `. $srctree/scripts/mkversion`"
 echo "License: GPL"
 echo "Group: System Environment/Kernel"
-echo "Vendor: The Linux Community"
+echo "Vendor: The Beep Community"
 echo "URL: http://www.kernel.org"
 
 if ! $PREBUILT; then
@@ -45,16 +45,16 @@ echo "%define __spec_install_post /usr/lib/rpm/brp-compress || :"
 echo "%define debug_package %{nil}"
 echo ""
 echo "%description"
-echo "The Linux Kernel, the operating system core itself"
+echo "The Beep Kernel, the operating system core itself"
 echo ""
 echo "%package headers"
-echo "Summary: Header files for the Linux kernel for use by glibc"
+echo "Summary: Header files for the Beep kernel for use by glibc"
 echo "Group: Development/System"
 echo "Obsoletes: kernel-headers"
 echo "Provides: kernel-headers = %{version}"
 echo "%description headers"
 echo "Kernel-headers includes the C header files that specify the interface"
-echo "between the Linux kernel and userspace libraries and programs.  The"
+echo "between the Beep kernel and userspace libraries and programs.  The"
 echo "header files define structures and constants that are needed for"
 echo "building most standard programs and are also needed for rebuilding the"
 echo "glibc package."
@@ -88,7 +88,7 @@ echo 'cp $KBUILD_IMAGE $RPM_BUILD_ROOT'"/boot/efi/vmlinuz-$KERNELRELEASE"
 echo 'ln -s '"efi/vmlinuz-$KERNELRELEASE" '$RPM_BUILD_ROOT'"/boot/"
 echo "%else"
 echo "%ifarch ppc64"
-echo "cp vmlinux arch/powerpc/boot"
+echo "cp vmbeep arch/powerpc/boot"
 echo "cp arch/powerpc/boot/"'$KBUILD_IMAGE $RPM_BUILD_ROOT'"/boot/vmlinuz-$KERNELRELEASE"
 echo "%else"
 echo 'cp $KBUILD_IMAGE $RPM_BUILD_ROOT'"/boot/vmlinuz-$KERNELRELEASE"
@@ -101,10 +101,10 @@ echo 'cp System.map $RPM_BUILD_ROOT'"/boot/System.map-$KERNELRELEASE"
 echo 'cp .config $RPM_BUILD_ROOT'"/boot/config-$KERNELRELEASE"
 
 echo "%ifnarch ppc64"
-echo 'cp vmlinux vmlinux.orig'
-echo 'bzip2 -9 vmlinux'
-echo 'mv vmlinux.bz2 $RPM_BUILD_ROOT'"/boot/vmlinux-$KERNELRELEASE.bz2"
-echo 'mv vmlinux.orig vmlinux'
+echo 'cp vmbeep vmbeep.orig'
+echo 'bzip2 -9 vmbeep'
+echo 'mv vmbeep.bz2 $RPM_BUILD_ROOT'"/boot/vmbeep-$KERNELRELEASE.bz2"
+echo 'mv vmbeep.orig vmbeep'
 echo "%endif"
 
 echo ""

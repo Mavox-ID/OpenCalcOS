@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5p64x0/irq-pm.c
+/* beep/arch/arm/mach-s5p64x0/irq-pm.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -12,9 +12,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/syscore_ops.h>
-#include <linux/serial_core.h>
-#include <linux/io.h>
+#include <beep/syscore_ops.h>
+#include <beep/serial_core.h>
+#include <beep/io.h>
 
 #include <plat/regs-serial.h>
 #include <plat/pm.h>

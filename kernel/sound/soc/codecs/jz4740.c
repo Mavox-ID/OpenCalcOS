@@ -11,14 +11,14 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/regmap.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/regmap.h>
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

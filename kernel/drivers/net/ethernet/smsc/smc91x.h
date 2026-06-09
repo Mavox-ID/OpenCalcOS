@@ -34,7 +34,7 @@
 #ifndef _SMC91X_H_
 #define _SMC91X_H_
 
-#include <linux/smc91x.h>
+#include <beep/smc91x.h>
 
 /*
  * Define your architecture specific bus configuration parameters here.
@@ -363,7 +363,7 @@ struct smc_local {
  * different and probably not worth it for that reason, and not as critical
  * as RX which can overrun memory and lose packets.
  */
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 #include <mach/dma.h>
 
 #ifdef SMC_insl
@@ -826,7 +826,7 @@ static const char * chip_ids[ 16 ] =  {
 /*
  * PHY Register Addresses (LAN91C111 Internal PHY)
  *
- * Generic PHY registers can be found in <linux/mii.h>
+ * Generic PHY registers can be found in <beep/mii.h>
  *
  * These phy registers are specific to our on-board phy.
  */

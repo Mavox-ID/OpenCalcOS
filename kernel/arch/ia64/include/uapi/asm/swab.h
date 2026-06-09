@@ -6,9 +6,9 @@
  *	David Mosberger-Tang <davidm@hpl.hp.com>, Hewlett-Packard Co.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/intrinsics.h>
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 static __inline__ __attribute_const__ __u64 __arch_swab64(__u64 x)
 {

@@ -5,8 +5,8 @@
 
 #define __ARCH_HW_BREAKPOINT_H
 
-#include <linux/kdebug.h>
-#include <linux/types.h>
+#include <beep/kdebug.h>
+#include <beep/types.h>
 
 struct arch_hw_breakpoint {
 	char		*name; /* Contains name of the symbol to set bkpt */

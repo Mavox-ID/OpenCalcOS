@@ -18,10 +18,10 @@
 #ifndef MV_XOR_H
 #define MV_XOR_H
 
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/io.h>
+#include <beep/dmaengine.h>
+#include <beep/interrupt.h>
 
 #define USE_TIMER
 #define MV_XOR_POOL_SIZE		PAGE_SIZE

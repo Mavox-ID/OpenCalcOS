@@ -10,24 +10,24 @@
  * This file is released under the GPLv2.
  */
 
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/syscalls.h>
-#include <linux/reboot.h>
-#include <linux/string.h>
-#include <linux/device.h>
-#include <linux/async.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/pm.h>
-#include <linux/console.h>
-#include <linux/cpu.h>
-#include <linux/freezer.h>
-#include <linux/gfp.h>
-#include <linux/syscore_ops.h>
-#include <linux/ctype.h>
-#include <linux/genhd.h>
+#include <beep/export.h>
+#include <beep/suspend.h>
+#include <beep/syscalls.h>
+#include <beep/reboot.h>
+#include <beep/string.h>
+#include <beep/device.h>
+#include <beep/async.h>
+#include <beep/delay.h>
+#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/pm.h>
+#include <beep/console.h>
+#include <beep/cpu.h>
+#include <beep/freezer.h>
+#include <beep/gfp.h>
+#include <beep/syscore_ops.h>
+#include <beep/ctype.h>
+#include <beep/genhd.h>
 
 #include "power.h"
 

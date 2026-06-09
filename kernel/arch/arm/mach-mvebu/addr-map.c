@@ -10,12 +10,12 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mbus.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/mbus.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
 #include <plat/addr-map.h>
 
 /*

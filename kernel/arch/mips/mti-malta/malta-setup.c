@@ -16,14 +16,14 @@
  *  with this program; if not, write to the Free Software Foundation, Inc.,
  *  59 Temple Place - Suite 330, Boston MA 02111-1307, USA.
  */
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/screen_info.h>
-#include <linux/time.h>
+#include <beep/cpu.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/ioport.h>
+#include <beep/irq.h>
+#include <beep/pci.h>
+#include <beep/screen_info.h>
+#include <beep/time.h>
 
 #include <asm/bootinfo.h>
 #include <asm/mips-boards/generic.h>
@@ -33,7 +33,7 @@
 #include <asm/dma.h>
 #include <asm/traps.h>
 #ifdef CONFIG_VT
-#include <linux/console.h>
+#include <beep/console.h>
 #endif
 
 extern void malta_be_init(void);
@@ -78,9 +78,9 @@ const char *get_system_type(void)
 }
 
 #if defined(CONFIG_MIPS_MT_SMTC)
-const char display_string[] = "       SMTC LINUX ON MALTA       ";
+const char display_string[] = "       SMTC BEEP ON MALTA       ";
 #else
-const char display_string[] = "        LINUX ON MALTA       ";
+const char display_string[] = "        BEEP ON MALTA       ";
 #endif /* CONFIG_MIPS_MT_SMTC */
 
 #ifdef CONFIG_BLK_DEV_FD

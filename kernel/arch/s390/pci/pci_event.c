@@ -2,14 +2,14 @@
  *  Copyright IBM Corp. 2012
  *
  *  Author(s):
- *    Jan Glauber <jang@linux.vnet.ibm.com>
+ *    Jan Glauber <jang@beep.vnet.ibm.com>
  */
 
 #define COMPONENT "zPCI"
 #define pr_fmt(fmt) COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
 
 /* Content Code Description for PCI Function Error */
 struct zpci_ccdf_err {

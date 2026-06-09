@@ -3,7 +3,7 @@
  * Glue with the networking stack
  *
  *
- * Copyright (C) 2007 Intel Corporation <linux-wimax@intel.com>
+ * Copyright (C) 2007 Intel Corporation <beep-wimax@intel.com>
  * Yanir Lubetkin <yanirx.lubetkin@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *
@@ -72,11 +72,11 @@
  * i2400m_netdev_setup    Called to setup all the netdev stuff from
  *                        alloc_netdev.
  */
-#include <linux/if_arp.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/export.h>
+#include <beep/if_arp.h>
+#include <beep/slab.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/export.h>
 #include "i2400m.h"
 
 

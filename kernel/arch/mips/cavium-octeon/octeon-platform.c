@@ -7,17 +7,17 @@
  * Copyright (C) 2008 Wind River Systems
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/i2c.h>
-#include <linux/usb.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
-#include <linux/of_fdt.h>
-#include <linux/libfdt.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/i2c.h>
+#include <beep/usb.h>
+#include <beep/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/of_platform.h>
+#include <beep/of_fdt.h>
+#include <beep/libfdt.h>
 
 #include <asm/octeon/octeon.h>
 #include <asm/octeon/cvmx-rnm-defs.h>

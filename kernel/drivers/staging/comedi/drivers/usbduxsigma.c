@@ -47,15 +47,15 @@ Status: testing
 /* generates loads of debug info */
 /* #define NOISY_DUX_DEBUGBUG */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/usb.h>
-#include <linux/fcntl.h>
-#include <linux/compiler.h>
-#include <linux/firmware.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/usb.h>
+#include <beep/fcntl.h>
+#include <beep/compiler.h>
+#include <beep/firmware.h>
 #include "comedi_fc.h"
 #include "../comedidev.h"
 

@@ -22,8 +22,8 @@
  * Send feedback to <lxie@us.ibm.com>
  *
  */
-#include <linux/pci.h>
-#include <linux/string.h>
+#include <beep/pci.h>
+#include <beep/string.h>
 
 #include <asm/pci-bridge.h>
 #include <asm/rtas.h>

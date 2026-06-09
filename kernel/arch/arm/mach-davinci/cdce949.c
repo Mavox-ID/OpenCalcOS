@@ -13,11 +13,11 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
 
 #include <mach/clock.h>
 #include <mach/cdce949.h>

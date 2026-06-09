@@ -11,16 +11,16 @@
  * Note: Above list of copyright holders is incomplete...
  */
 
-#include <linux/acpi.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/bootmem.h>
-#include <linux/export.h>
+#include <beep/acpi.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/bootmem.h>
+#include <beep/export.h>
 
 #include <asm/machvec.h>
 #include <asm/page.h>

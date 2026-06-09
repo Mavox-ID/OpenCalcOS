@@ -15,10 +15,10 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
 #include <scsi/libfc.h>
 #include <scsi/fc_frame.h>
 #include "vnic_dev.h"

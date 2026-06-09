@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/kernel/head.S
+ *  beep/arch/m32r/kernel/head.S
  *
  *  M32R startup code.
  *
@@ -7,12 +7,12 @@
  *                            Hitoshi Yamamoto
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 __INIT
 __INITDATA
 
 	.text
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/segment.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>

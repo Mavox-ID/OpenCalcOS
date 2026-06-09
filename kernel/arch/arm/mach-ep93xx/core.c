@@ -6,7 +6,7 @@
  * Copyright (C) 2007 Herbert Valerio Riedel <hvr@gnu.org>
  *
  * Thanks go to Michael Burian and Ray Lehtiniemi for their key
- * role in the ep93xx linux community.
+ * role in the ep93xx beep community.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,29 +16,29 @@
 
 #define pr_fmt(fmt) "ep93xx " KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/timex.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/termios.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/serial.h>
-#include <linux/mtd/physmap.h>
-#include <linux/i2c.h>
-#include <linux/i2c-gpio.h>
-#include <linux/spi/spi.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/timex.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/leds.h>
+#include <beep/termios.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/serial.h>
+#include <beep/mtd/physmap.h>
+#include <beep/i2c.h>
+#include <beep/i2c-gpio.h>
+#include <beep/spi/spi.h>
+#include <beep/export.h>
 
 #include <mach/hardware.h>
-#include <linux/platform_data/video-ep93xx.h>
-#include <linux/platform_data/keypad-ep93xx.h>
-#include <linux/platform_data/spi-ep93xx.h>
+#include <beep/platform_data/video-ep93xx.h>
+#include <beep/platform_data/keypad-ep93xx.h>
+#include <beep/platform_data/spi-ep93xx.h>
 #include <mach/gpio-ep93xx.h>
 
 #include <asm/mach/map.h>

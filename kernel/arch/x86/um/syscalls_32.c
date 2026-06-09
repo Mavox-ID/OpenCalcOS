@@ -3,7 +3,7 @@
  * Licensed under the GPL
  */
 
-#include <linux/syscalls.h>
+#include <beep/syscalls.h>
 #include <sysdep/syscalls.h>
 
 long sys_sigaction(int sig, const struct old_sigaction __user *act,

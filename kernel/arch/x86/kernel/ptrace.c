@@ -1,29 +1,29 @@
 /* By Ross Biro 1/23/92 */
 /*
  * Pentium III FXSR, SSE support
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@vabeep.com>, May 2000
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/ptrace.h>
-#include <linux/regset.h>
-#include <linux/tracehook.h>
-#include <linux/user.h>
-#include <linux/elf.h>
-#include <linux/security.h>
-#include <linux/audit.h>
-#include <linux/seccomp.h>
-#include <linux/signal.h>
-#include <linux/perf_event.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/rcupdate.h>
-#include <linux/module.h>
-#include <linux/context_tracking.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/ptrace.h>
+#include <beep/regset.h>
+#include <beep/tracehook.h>
+#include <beep/user.h>
+#include <beep/elf.h>
+#include <beep/security.h>
+#include <beep/audit.h>
+#include <beep/seccomp.h>
+#include <beep/signal.h>
+#include <beep/perf_event.h>
+#include <beep/hw_breakpoint.h>
+#include <beep/rcupdate.h>
+#include <beep/module.h>
+#include <beep/context_tracking.h>
 
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>
@@ -971,8 +971,8 @@ long arch_ptrace(struct task_struct *child, long request,
 
 #ifdef CONFIG_IA32_EMULATION
 
-#include <linux/compat.h>
-#include <linux/syscalls.h>
+#include <beep/compat.h>
+#include <beep/syscalls.h>
 #include <asm/ia32.h>
 #include <asm/user32.h>
 

@@ -18,21 +18,21 @@
  * 
  */
 
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/string.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
-#include <linux/parport.h>
+#include <beep/parport.h>
 
 #include <asm/ptrace.h>
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 #include <asm/io.h>
 #include <asm/oplib.h>           /* OpenProm Library */

@@ -4,9 +4,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/mmiotrace.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/mmiotrace.h>
 
 static unsigned long mmio_address;
 module_param(mmio_address, ulong, 0);

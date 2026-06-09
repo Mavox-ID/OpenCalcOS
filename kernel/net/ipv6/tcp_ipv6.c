@@ -1,14 +1,14 @@
 /*
  *	TCP over IPv6
- *	Linux INET6 implementation
+ *	Beep INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *
  *	Based on:
- *	linux/net/ipv4/tcp.c
- *	linux/net/ipv4/tcp_input.c
- *	linux/net/ipv4/tcp_output.c
+ *	beep/net/ipv4/tcp.c
+ *	beep/net/ipv4/tcp_input.c
+ *	beep/net/ipv4/tcp_output.c
  *
  *	Fixes:
  *	Hideaki YOSHIFUJI	:	sin6_scope_id support
@@ -23,26 +23,26 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/bottom_half.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/jiffies.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/jhash.h>
-#include <linux/ipsec.h>
-#include <linux/times.h>
-#include <linux/slab.h>
+#include <beep/bottom_half.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/jiffies.h>
+#include <beep/in.h>
+#include <beep/in6.h>
+#include <beep/netdevice.h>
+#include <beep/init.h>
+#include <beep/jhash.h>
+#include <beep/ipsec.h>
+#include <beep/times.h>
+#include <beep/slab.h>
 
-#include <linux/ipv6.h>
-#include <linux/icmpv6.h>
-#include <linux/random.h>
+#include <beep/ipv6.h>
+#include <beep/icmpv6.h>
+#include <beep/random.h>
 
 #include <net/tcp.h>
 #include <net/ndisc.h>
@@ -66,11 +66,11 @@
 
 #include <asm/uaccess.h>
 
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
+#include <beep/crypto.h>
+#include <beep/scatterlist.h>
 
 static void	tcp_v6_send_reset(struct sock *sk, struct sk_buff *skb);
 static void	tcp_v6_reqsk_send_ack(struct sock *sk, struct sk_buff *skb,
@@ -361,13 +361,13 @@ static void tcp_v6_err(struct sk_buff *skb, struct inet6_skb_parm *opt,
 
 	bh_lock_sock(sk);
 	if (sock_owned_by_user(sk) && type != ICMPV6_PKT_TOOBIG)
-		NET_INC_STATS_BH(net, LINUX_MIB_LOCKDROPPEDICMPS);
+		NET_INC_STATS_BH(net, BEEP_MIB_LOCKDROPPEDICMPS);
 
 	if (sk->sk_state == TCP_CLOSE)
 		goto out;
 
 	if (ipv6_hdr(skb)->hop_limit < inet6_sk(sk)->min_hopcount) {
-		NET_INC_STATS_BH(net, LINUX_MIB_TCPMINTTLDROP);
+		NET_INC_STATS_BH(net, BEEP_MIB_TCPMINTTLDROP);
 		goto out;
 	}
 
@@ -375,7 +375,7 @@ static void tcp_v6_err(struct sk_buff *skb, struct inet6_skb_parm *opt,
 	seq = ntohl(th->seq);
 	if (sk->sk_state != TCP_LISTEN &&
 	    !between(seq, tp->snd_una, tp->snd_nxt)) {
-		NET_INC_STATS_BH(net, LINUX_MIB_OUTOFWINDOWICMPS);
+		NET_INC_STATS_BH(net, BEEP_MIB_OUTOFWINDOWICMPS);
 		goto out;
 	}
 
@@ -418,7 +418,7 @@ static void tcp_v6_err(struct sk_buff *skb, struct inet6_skb_parm *opt,
 		WARN_ON(req->sk != NULL);
 
 		if (seq != tcp_rsk(req)->snt_isn) {
-			NET_INC_STATS_BH(net, LINUX_MIB_OUTOFWINDOWICMPS);
+			NET_INC_STATS_BH(net, BEEP_MIB_OUTOFWINDOWICMPS);
 			goto out;
 		}
 
@@ -669,12 +669,12 @@ static int tcp_v6_inbound_md5_hash(struct sock *sk, const struct sk_buff *skb)
 		return 0;
 
 	if (hash_expected && !hash_location) {
-		NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_TCPMD5NOTFOUND);
+		NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_TCPMD5NOTFOUND);
 		return 1;
 	}
 
 	if (!hash_expected && hash_location) {
-		NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_TCPMD5UNEXPECTED);
+		NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_TCPMD5UNEXPECTED);
 		return 1;
 	}
 
@@ -1063,7 +1063,7 @@ static int tcp_v6_conn_request(struct sock *sk, struct sk_buff *skb)
 		    tcp_death_row.sysctl_tw_recycle &&
 		    (dst = inet6_csk_route_req(sk, &fl6, req)) != NULL) {
 			if (!tcp_peer_is_proven(req, dst, true)) {
-				NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_PAWSPASSIVEREJECTED);
+				NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_PAWSPASSIVEREJECTED);
 				goto drop_and_release;
 			}
 		}
@@ -1297,11 +1297,11 @@ static struct sock * tcp_v6_syn_recv_sock(struct sock *sk, struct sk_buff *skb,
 	return newsk;
 
 out_overflow:
-	NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_LISTENOVERFLOWS);
+	NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_LISTENOVERFLOWS);
 out_nonewsk:
 	dst_release(dst);
 out:
-	NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_LISTENDROPS);
+	NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_LISTENDROPS);
 	return NULL;
 }
 
@@ -1518,7 +1518,7 @@ process:
 		goto do_time_wait;
 
 	if (hdr->hop_limit < inet6_sk(sk)->min_hopcount) {
-		NET_INC_STATS_BH(net, LINUX_MIB_TCPMINTTLDROP);
+		NET_INC_STATS_BH(net, BEEP_MIB_TCPMINTTLDROP);
 		goto discard_and_relse;
 	}
 
@@ -1548,7 +1548,7 @@ process:
 	} else if (unlikely(sk_add_backlog(sk, skb,
 					   sk->sk_rcvbuf + sk->sk_sndbuf))) {
 		bh_unlock_sock(sk);
-		NET_INC_STATS_BH(net, LINUX_MIB_TCPBACKLOGDROP);
+		NET_INC_STATS_BH(net, BEEP_MIB_TCPBACKLOGDROP);
 		goto discard_and_relse;
 	}
 	bh_unlock_sock(sk);

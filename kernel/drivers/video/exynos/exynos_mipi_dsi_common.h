@@ -1,4 +1,4 @@
-/* linux/drivers/video/exynos_mipi_dsi_common.h
+/* beep/drivers/video/exynos_mipi_dsi_common.h
  *
  * Header file for Samsung SoC MIPI-DSI common driver.
  *

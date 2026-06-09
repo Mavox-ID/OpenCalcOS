@@ -10,14 +10,14 @@
  * option) any later version.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/kexec.h>
-#include <linux/highmem.h>
-#include <linux/cpu.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/of.h>
+#include <beep/kexec.h>
+#include <beep/highmem.h>
+#include <beep/cpu.h>
 
 #include <asm/machdep.h>
 #include <asm/pgtable.h>

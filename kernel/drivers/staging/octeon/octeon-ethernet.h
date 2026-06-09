@@ -31,7 +31,7 @@
 #ifndef OCTEON_ETHERNET_H
 #define OCTEON_ETHERNET_H
 
-#include <linux/of.h>
+#include <beep/of.h>
 
 /**
  * This is the definition of the Ethernet driver's private

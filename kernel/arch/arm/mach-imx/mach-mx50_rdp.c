@@ -18,11 +18,11 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/io.h>
 
 #include <asm/irq.h>
 #include <asm/setup.h>

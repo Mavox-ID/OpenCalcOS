@@ -10,15 +10,15 @@
  * (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/io.h>
+#include <beep/delay.h>
 
 #include <mach/hardware.h>
 
@@ -579,7 +579,7 @@ int __init davinci_clk_init(struct clk_lookup *clocks)
 		clk_register(clk);
 		num_clocks++;
 
-		/* Turn on clocks that Linux doesn't otherwise manage */
+		/* Turn on clocks that Beep doesn't otherwise manage */
 		if (clk->flags & ALWAYS_ENABLED)
 			clk_enable(clk);
 	}
@@ -591,8 +591,8 @@ int __init davinci_clk_init(struct clk_lookup *clocks)
 
 #ifdef CONFIG_DEBUG_FS
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 #define CLKNAME_MAX	10		/* longest clock name */
 #define NEST_DELTA	2

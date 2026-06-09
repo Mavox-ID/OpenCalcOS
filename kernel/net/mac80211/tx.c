@@ -12,13 +12,13 @@
  * Transmit and frame generation functions.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/bitmap.h>
-#include <linux/rcupdate.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/skbuff.h>
+#include <beep/etherdevice.h>
+#include <beep/bitmap.h>
+#include <beep/rcupdate.h>
+#include <beep/export.h>
 #include <net/net_namespace.h>
 #include <net/ieee80211_radiotap.h>
 #include <net/cfg80211.h>
@@ -273,7 +273,7 @@ ieee80211_tx_h_check_assoc(struct ieee80211_tx_data *tx)
 		 * off-channel. See the link below and
 		 * ieee80211_start_scan() for more.
 		 *
-		 * http://article.gmane.org/gmane.linux.kernel.wireless.general/30089
+		 * http://article.gmane.org/gmane.beep.kernel.wireless.general/30089
 		 */
 		return TX_DROP;
 
@@ -2131,7 +2131,7 @@ netdev_tx_t ieee80211_subif_start_xmit(struct sk_buff *skb,
 	dev->stats.tx_bytes += skb->len;
 
 	/* Update skb pointers to various headers since this modified frame
-	 * is going to go through Linux networking code that may potentially
+	 * is going to go through Beep networking code that may potentially
 	 * need things like pointer to IP header. */
 	skb_set_mac_header(skb, 0);
 	skb_set_network_header(skb, nh_pos);

@@ -1,6 +1,6 @@
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/io.h>
+#include <beep/export.h>
+#include <beep/types.h>
+#include <beep/io.h>
 
 /*
  * Copy data from IO memory space to "real" memory space.

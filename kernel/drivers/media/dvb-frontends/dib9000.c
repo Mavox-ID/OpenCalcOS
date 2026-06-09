@@ -1,5 +1,5 @@
 /*
- * Linux-DVB Driver for DiBcom's DiB9000 and demodulator-family.
+ * Beep-DVB Driver for DiBcom's DiB9000 and demodulator-family.
  *
  * Copyright (C) 2005-10 DiBcom (http://www.dibcom.fr/)
  *
@@ -7,9 +7,9 @@
  *	modify it under the terms of the GNU General Public License as
  *	published by the Free Software Foundation, version 2.
  */
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
 
 #include "dvb_math.h"
 #include "dvb_frontend.h"

@@ -1,18 +1,18 @@
 /*
- * Detection routine for the NCR53c710 based Amiga SCSI Controllers for Linux.
+ * Detection routine for the NCR53c710 based Amiga SCSI Controllers for Beep.
  *		Amiga Technologies A4000T SCSI controller.
  *
  * Written 1997 by Alan Hourihane <alanh@fairlite.demon.co.uk>
  * plus modifications of the 53c7xx.c driver to support the Amiga.
  *
- * Rewritten to use 53c700.c by Kars de Jong <jongk@linux-m68k.org>
+ * Rewritten to use 53c700.c by Kars de Jong <jongk@beep-m68k.org>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 #include <asm/amigahw.h>
 #include <asm/amigaints.h>
 #include <scsi/scsi_host.h>
@@ -132,7 +132,7 @@ static void __exit amiga_a4000t_scsi_exit(void)
 module_exit(amiga_a4000t_scsi_exit);
 
 MODULE_AUTHOR("Alan Hourihane <alanh@fairlite.demon.co.uk> / "
-	      "Kars de Jong <jongk@linux-m68k.org>");
+	      "Kars de Jong <jongk@beep-m68k.org>");
 MODULE_DESCRIPTION("Amiga A4000T NCR53C710 driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:amiga-a4000t-scsi");

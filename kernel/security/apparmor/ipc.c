@@ -12,8 +12,8 @@
  * License.
  */
 
-#include <linux/gfp.h>
-#include <linux/ptrace.h>
+#include <beep/gfp.h>
+#include <beep/ptrace.h>
 
 #include "include/audit.h"
 #include "include/capability.h"

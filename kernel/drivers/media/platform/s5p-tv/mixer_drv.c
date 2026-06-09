@@ -13,15 +13,15 @@
 
 #include "mixer.h"
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/clk.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/fb.h>
+#include <beep/delay.h>
+#include <beep/pm_runtime.h>
+#include <beep/clk.h>
 
 MODULE_AUTHOR("Tomasz Stanislawski, <t.stanislaws@samsung.com>");
 MODULE_DESCRIPTION("Samsung MIXER");

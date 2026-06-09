@@ -21,9 +21,9 @@
 #ifndef __MANTIS_COMMON_H
 #define __MANTIS_COMMON_H
 
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <beep/interrupt.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
 
 #include "mantis_uart.h"
 

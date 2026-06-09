@@ -24,13 +24,13 @@
  * 02110-1301 USA
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/regulator/consumer.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/uaccess.h>
+#include <beep/regulator/consumer.h>
 
 #include "isp.h"
 #include "ispreg.h"

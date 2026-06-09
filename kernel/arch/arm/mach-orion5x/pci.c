@@ -10,10 +10,10 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/mbus.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/mbus.h>
 #include <video/vga.h>
 #include <asm/irq.h>
 #include <asm/mach/pci.h>

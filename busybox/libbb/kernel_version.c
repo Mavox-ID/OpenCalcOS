@@ -13,9 +13,9 @@
 /* Returns current kernel version encoded as major*65536 + minor*256 + patch,
  * so, for example,  to check if the kernel is greater than 2.2.11:
  *
- *     if (get_linux_version_code() > KERNEL_VERSION(2,2,11)) { <stuff> }
+ *     if (get_beep_version_code() > KERNEL_VERSION(2,2,11)) { <stuff> }
  */
-int FAST_FUNC get_linux_version_code(void)
+int FAST_FUNC get_beep_version_code(void)
 {
 	struct utsname name;
 	char *t;

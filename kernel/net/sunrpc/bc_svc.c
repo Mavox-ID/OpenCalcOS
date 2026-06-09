@@ -27,11 +27,11 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  * reply over an existing open connection previously established by the client.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/sunrpc/xprt.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/bc_xprt.h>
+#include <beep/sunrpc/xprt.h>
+#include <beep/sunrpc/sched.h>
+#include <beep/sunrpc/bc_xprt.h>
 
 #define RPCDBG_FACILITY	RPCDBG_SVCDSP
 

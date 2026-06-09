@@ -3,14 +3,14 @@
  * Released under the GNU General Public License Version 2 (GPLv2).
  * -----------------------------------------------------------------------------
  */
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/uaccess.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/cdev.h>
+#include <beep/uaccess.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/poll.h>
+#include <beep/sched.h>
 #include "ozconfig.h"
 #include "ozprotocol.h"
 #include "oztrace.h"

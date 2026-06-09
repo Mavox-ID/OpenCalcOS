@@ -2,7 +2,7 @@
     comedi/drivers/dmm32at.c
     Diamond Systems mm32at code for a Comedi driver
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -37,9 +37,9 @@ Configuration Options:
   comedi_config /dev/comedi0 dmm32at baseaddr,irq
 */
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include "../comedidev.h"
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 #include "comedi_fc.h"
 

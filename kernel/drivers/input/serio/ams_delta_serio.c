@@ -20,11 +20,11 @@
  * However, when used with the E3 mailboard that producecs non-standard
  * scancodes, a custom key table must be prepared and loaded from userspace.
  */
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/serio.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/serio.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include <asm/mach-types.h>
 #include <mach/board-ams-delta.h>

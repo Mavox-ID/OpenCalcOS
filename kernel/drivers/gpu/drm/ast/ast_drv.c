@@ -25,8 +25,8 @@
 /*
  * Authors: Dave Airlie <airlied@redhat.com>
  */
-#include <linux/module.h>
-#include <linux/console.h>
+#include <beep/module.h>
+#include <beep/console.h>
 
 #include <drm/drmP.h>
 #include <drm/drm_crtc_helper.h>

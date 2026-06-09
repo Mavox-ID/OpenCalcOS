@@ -27,18 +27,18 @@
  * Or, point your browser to http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/poll.h>
+#include <beep/io.h>
 #include <asm/div64.h>
-#include <linux/pci.h>
-#include <linux/timer.h>
-#include <linux/byteorder/generic.h>
-#include <linux/firmware.h>
-#include <linux/vmalloc.h>
+#include <beep/pci.h>
+#include <beep/timer.h>
+#include <beep/byteorder/generic.h>
+#include <beep/firmware.h>
+#include <beep/vmalloc.h>
 
 #include "ngene.h"
 

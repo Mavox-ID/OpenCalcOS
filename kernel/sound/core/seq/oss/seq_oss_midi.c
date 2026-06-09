@@ -27,8 +27,8 @@
 #include "seq_oss_event.h"
 #include <sound/seq_midi_event.h>
 #include "../seq_lock.h"
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 
 
 /*

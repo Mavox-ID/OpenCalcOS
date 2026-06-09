@@ -7,16 +7,16 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/usb/musb.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/usb/musb.h>
 #include <asm/bfin5xx_spi.h>
 #include <asm/dma.h>
 #include <asm/gpio.h>
@@ -25,8 +25,8 @@
 #include <asm/bfin_sdh.h>
 #include <mach/bf54x_keys.h>
 #include <asm/dpmc.h>
-#include <linux/input.h>
-#include <linux/spi/ad7877.h>
+#include <beep/input.h>
+#include <beep/spi/ad7877.h>
 
 /*
  * Name the Board for the /proc/cpuinfo
@@ -457,7 +457,7 @@ static struct platform_device bfin_sir3_device = {
 #endif
 
 #if defined(CONFIG_SMSC911X) || defined(CONFIG_SMSC911X_MODULE)
-#include <linux/smsc911x.h>
+#include <beep/smsc911x.h>
 
 static struct resource smsc911x_resources[] = {
 	{
@@ -717,7 +717,7 @@ static struct platform_device bfin_atapi_device = {
 #if defined(CONFIG_MTD_NAND_BF5XX) || defined(CONFIG_MTD_NAND_BF5XX_MODULE)
 static struct mtd_partition partition_info[] = {
 	{
-		.name = "linux kernel(nand)",
+		.name = "beep kernel(nand)",
 		.offset = 0,
 		.size = 4 * 1024 * 1024,
 	},
@@ -821,7 +821,7 @@ static struct mtd_partition para_partitions[] = {
 		.size       = 0x40000,
 		.offset     = 0,
 	}, {
-		.name       = "linux kernel(nor)",
+		.name       = "beep kernel(nor)",
 		.size       = 0x100000,
 		.offset     = MTDPART_OFS_APPEND,
 	}, {
@@ -866,7 +866,7 @@ static struct mtd_partition bfin_spi_flash_partitions[] = {
 		.offset = 0,
 		.mask_flags = MTD_CAP_ROM
 	}, {
-		.name = "linux kernel(spi)",
+		.name = "beep kernel(spi)",
 		.size = 0x1c0000,
 		.offset = 0x40000
 	}
@@ -1061,7 +1061,7 @@ static struct platform_device i2c_bfin_twi1_device = {
 #endif
 
 #if defined(CONFIG_KEYBOARD_GPIO) || defined(CONFIG_KEYBOARD_GPIO_MODULE)
-#include <linux/gpio_keys.h>
+#include <beep/gpio_keys.h>
 
 static struct gpio_keys_button bfin_gpio_keys_table[] = {
 	{BTN_0, GPIO_PH7, 1, "gpio-keys: BTN0"},

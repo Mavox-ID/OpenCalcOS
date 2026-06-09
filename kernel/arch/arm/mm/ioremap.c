@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/ioremap.c
+ *  beep/arch/arm/mm/ioremap.c
  *
  * Re-map IO memory to kernel address space so that we can access it.
  *
@@ -20,12 +20,12 @@
  * We use MMU protection domains to trap any attempt to access the bank
  * that is not currently mapped.  (This isn't fully implemented yet.)
  */
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/io.h>
-#include <linux/sizes.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/io.h>
+#include <beep/sizes.h>
 
 #include <asm/cp15.h>
 #include <asm/cputype.h>

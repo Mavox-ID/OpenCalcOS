@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/omap2/omapfb-sysfs.c
+ * beep/drivers/video/omap2/omapfb-sysfs.c
  *
  * Copyright (C) 2008 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -20,14 +20,14 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/fb.h>
-#include <linux/sysfs.h>
-#include <linux/device.h>
-#include <linux/uaccess.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/omapfb.h>
+#include <beep/fb.h>
+#include <beep/sysfs.h>
+#include <beep/device.h>
+#include <beep/uaccess.h>
+#include <beep/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/omapfb.h>
 
 #include <video/omapdss.h>
 #include <video/omapvrfb.h>

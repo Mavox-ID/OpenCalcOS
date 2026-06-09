@@ -32,7 +32,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  *
- * Intel Corporation <linux-wimax@intel.com>
+ * Intel Corporation <beep-wimax@intel.com>
  * Yanir Lubetkin <yanirx.lubetkin@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *  - Initial implementation
@@ -153,11 +153,11 @@
  *   i2400m_fw_cache
  *   i2400m_fw_uncache
  */
-#include <linux/firmware.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/export.h>
+#include <beep/firmware.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/export.h>
 #include "i2400m.h"
 
 

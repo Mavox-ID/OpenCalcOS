@@ -20,7 +20,7 @@
 #ifndef _PSB_DRV_H_
 #define _PSB_DRV_H_
 
-#include <linux/kref.h>
+#include <beep/kref.h>
 
 #include <drm/drmP.h>
 #include <drm/drm_global.h>

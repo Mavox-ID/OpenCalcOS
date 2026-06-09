@@ -1,14 +1,14 @@
 /*
  * Generic UHCI HCD (Host Controller Driver) for Platform Devices
  *
- * Copyright (c) 2011 Tony Prisk <linux@prisktech.co.nz>
+ * Copyright (c) 2011 Tony Prisk <beep@prisktech.co.nz>
  *
  * This file is based on uhci-grlib.c
  * (C) Copyright 2004-2007 Alan Stern, stern@rowland.harvard.edu
  */
 
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
 
 static int uhci_platform_init(struct usb_hcd *hcd)
 {

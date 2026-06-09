@@ -6,12 +6,12 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <stdlib.h>
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 #include "vdso.h"
 #include "util.h"
 #include "symbol.h"
-#include "linux/string.h"
+#include "beep/string.h"
 
 static bool vdso_found;
 static char vdso_file[] = "/tmp/perf-vdso.so-XXXXXX";

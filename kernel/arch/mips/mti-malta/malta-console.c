@@ -17,9 +17,9 @@
  *
  * Putting things on the screen/serial line using YAMONs facilities.
  */
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/serial_reg.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/serial_reg.h>
 #include <asm/io.h>
 
 

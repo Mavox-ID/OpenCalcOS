@@ -1,5 +1,5 @@
 /* mini man implementation for busybox
- * Copyright (C) 2008 Denys Vlasenko <vda.linux@googlemail.com>
+ * Copyright (C) 2008 Denys Vlasenko <vda.beep@googlemail.com>
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
 //config:config MAN

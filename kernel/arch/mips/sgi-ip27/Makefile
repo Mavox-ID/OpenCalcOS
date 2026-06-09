@@ -1,5 +1,5 @@
 #
-# Makefile for the IP27 specific kernel interface routines under Linux.
+# Makefile for the IP27 specific kernel interface routines under Beep.
 #
 
 obj-y	:= ip27-berr.o ip27-irq.o ip27-init.o ip27-klconfig.o ip27-klnuma.o \

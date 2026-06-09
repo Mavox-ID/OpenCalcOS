@@ -12,7 +12,7 @@
  */
 #define NR_IRQS    64
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 #define irq_canonicalize(irq)	(irq)
 

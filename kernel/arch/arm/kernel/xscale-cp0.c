@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/kernel/xscale-cp0.c
+ * beep/arch/arm/kernel/xscale-cp0.c
  *
  * XScale DSP and iWMMXt coprocessor context switching and handling
  *
@@ -8,12 +8,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/io.h>
 #include <asm/thread_notify.h>
 
 static inline void dsp_save_state(u32 *state)

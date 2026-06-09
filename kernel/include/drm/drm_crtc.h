@@ -25,11 +25,11 @@
 #ifndef __DRM_CRTC_H__
 #define __DRM_CRTC_H__
 
-#include <linux/i2c.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/idr.h>
-#include <linux/fb.h>
+#include <beep/i2c.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/idr.h>
+#include <beep/fb.h>
 #include <drm/drm_mode.h>
 
 #include <drm/drm_fourcc.h>

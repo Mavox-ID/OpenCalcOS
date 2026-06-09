@@ -10,15 +10,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mfd/ezx-pcap.h>
-#include <linux/spi/spi.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/mfd/ezx-pcap.h>
+#include <beep/spi/spi.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
 
 #define PCAP_ADC_MAXQ		8
 struct pcap_adc_request {

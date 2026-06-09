@@ -1,18 +1,18 @@
 /*
- *  linux/arch/arm/mach-sa1100/clock.c
+ *  beep/arch/arm/mach-sa1100/clock.c
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/clk.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
-#include <linux/clkdev.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/string.h>
+#include <beep/clk.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
+#include <beep/io.h>
+#include <beep/clkdev.h>
 
 #include <mach/hardware.h>
 

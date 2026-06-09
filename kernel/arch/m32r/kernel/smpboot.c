@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/kernel/smpboot.c
+ *  beep/arch/m32r/kernel/smpboot.c
  *    orig : i386 2.4.10
  *
  *  M32R SMP booting functions
@@ -15,7 +15,7 @@
  *
  *	Thanks to Intel for making available several different Pentium,
  *	Pentium Pro and Pentium-II/Xeon MP machines.
- *	Original development of Linux SMP code supported by Caldera.
+ *	Original development of Beep SMP code supported by Caldera.
  *
  *	This code is released under the GNU General Public License version 2 or
  *	later.
@@ -39,16 +39,16 @@
  *		Martin J. Bligh	: 	Added support for multi-quad systems
  */
 
-#include <linux/module.h>
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/bootmem.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/cpu.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/err.h>
+#include <beep/irq.h>
+#include <beep/bootmem.h>
+#include <beep/delay.h>
 
 #include <asm/io.h>
 #include <asm/pgalloc.h>
@@ -157,7 +157,7 @@ void smp_prepare_boot_cpu(void)
  * Modification log:
  * Date       Who Description
  * ---------- --- --------------------------------------------------------
- * 2003-06-24 hy  modify for linux-2.5.69
+ * 2003-06-24 hy  modify for beep-2.5.69
  *
  *==========================================================================*/
 void __init smp_prepare_cpus(unsigned int max_cpus)
@@ -253,7 +253,7 @@ static void __init init_ipi_lock(void)
  * Modification log:
  * Date       Who Description
  * ---------- --- --------------------------------------------------------
- * 2003-06-24 hy  modify for linux-2.5.69
+ * 2003-06-24 hy  modify for beep-2.5.69
  *
  *==========================================================================*/
 static void __init do_boot_cpu(int phys_id)
@@ -413,7 +413,7 @@ void __init smp_cpus_done(unsigned int max_cpus)
  * Modification log:
  * Date       Who Description
  * ---------- --- --------------------------------------------------------
- * 2003-06-24 hy  modify for linux-2.5.69
+ * 2003-06-24 hy  modify for beep-2.5.69
  *
  *==========================================================================*/
 int __init start_secondary(void *unused)
@@ -450,7 +450,7 @@ int __init start_secondary(void *unused)
  * Modification log:
  * Date       Who Description
  * ---------- --- --------------------------------------------------------
- * 2003-06-24 hy  modify for linux-2.5.69
+ * 2003-06-24 hy  modify for beep-2.5.69
  *
  *==========================================================================*/
 static void __init smp_callin(void)

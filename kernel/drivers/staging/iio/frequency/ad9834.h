@@ -71,7 +71,7 @@ struct ad9834_state {
 
 
 /*
- * TODO: struct ad7887_platform_data needs to go into include/linux/iio
+ * TODO: struct ad7887_platform_data needs to go into include/beep/iio
  */
 
 /**

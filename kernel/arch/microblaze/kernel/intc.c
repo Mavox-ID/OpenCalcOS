@@ -8,12 +8,12 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/irqdomain.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/irqdomain.h>
+#include <beep/irq.h>
 #include <asm/page.h>
-#include <linux/io.h>
-#include <linux/bug.h>
+#include <beep/io.h>
+#include <beep/bug.h>
 
 #include <asm/prom.h>
 #include <asm/irq.h>

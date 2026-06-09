@@ -33,7 +33,7 @@ Boston, MA 02111-1307, USA.  */
    compiled for the target, and hence definitions concerning only the host
    do not apply.  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 union DWunion {
 	s64 ll;

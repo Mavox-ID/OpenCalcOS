@@ -15,7 +15,7 @@
  * rewrite arith.y to micro stack based cryptic algorithm by
  * Copyright (c) 2001 Aaron Lehmann <aaronl@vitelus.com>
  *
- * Modified by Paul Mundt <lethal@linux-sh.org> (c) 2004 to support
+ * Modified by Paul Mundt <lethal@beep-sh.org> (c) 2004 to support
  * dynamic variables.
  *
  * Modified by Vladimir Oleynik <dzo@simtreas.ru> (c) 2001-2005 to be

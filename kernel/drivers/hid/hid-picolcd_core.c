@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2010-2012 by Bruno Prémont <bonbons@linux-vserver.org>  *
+ *   Copyright (C) 2010-2012 by Bruno Prémont <bonbons@beep-vserver.org>  *
  *                                                                         *
  *   Based on Logitech G13 driver (v0.4)                                   *
  *     Copyright (C) 2009 by Rick L. Vinyard, Jr. <rvinyard@cs.nmsu.edu>   *
@@ -17,19 +17,19 @@
  *   along with this software. If not see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
-#include <linux/hid.h>
-#include <linux/hid-debug.h>
-#include <linux/input.h>
+#include <beep/hid.h>
+#include <beep/hid-debug.h>
+#include <beep/input.h>
 #include "hid-ids.h"
 #include "usbhid/usbhid.h"
-#include <linux/usb.h>
+#include <beep/usb.h>
 
-#include <linux/fb.h>
-#include <linux/vmalloc.h>
+#include <beep/fb.h>
+#include <beep/vmalloc.h>
 
-#include <linux/completion.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
+#include <beep/completion.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
 
 #include "hid-picolcd.h"
 

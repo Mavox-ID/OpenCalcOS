@@ -25,9 +25,9 @@
 #ifndef __INTEL_MID_DMAC_REGS_H__
 #define __INTEL_MID_DMAC_REGS_H__
 
-#include <linux/dmaengine.h>
-#include <linux/dmapool.h>
-#include <linux/pci_ids.h>
+#include <beep/dmaengine.h>
+#include <beep/dmapool.h>
+#include <beep/pci_ids.h>
 
 #define INTEL_MID_DMA_DRIVER_VERSION "1.1.0"
 

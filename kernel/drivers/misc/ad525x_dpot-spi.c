@@ -6,8 +6,8 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/spi/spi.h>
-#include <linux/module.h>
+#include <beep/spi/spi.h>
+#include <beep/module.h>
 
 #include "ad525x_dpot.h"
 
@@ -137,7 +137,7 @@ static struct spi_driver ad_dpot_spi_driver = {
 
 module_spi_driver(ad_dpot_spi_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("digital potentiometer SPI bus driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("spi:ad_dpot");

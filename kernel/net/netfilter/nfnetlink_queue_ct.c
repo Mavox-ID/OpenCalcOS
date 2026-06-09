@@ -7,10 +7,10 @@
  *
  */
 
-#include <linux/skbuff.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_queue.h>
+#include <beep/skbuff.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_queue.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nfnetlink_queue.h>
 

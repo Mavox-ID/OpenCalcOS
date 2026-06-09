@@ -12,7 +12,7 @@
 #ifndef __ASM_CLKDEV_H
 #define __ASM_CLKDEV_H
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 #define __clk_get(clk)	({ 1; })
 #define __clk_put(clk)	do { } while (0)

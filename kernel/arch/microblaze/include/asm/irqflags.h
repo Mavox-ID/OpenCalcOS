@@ -9,7 +9,7 @@
 #ifndef _ASM_MICROBLAZE_IRQFLAGS_H
 #define _ASM_MICROBLAZE_IRQFLAGS_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/registers.h>
 
 #if CONFIG_XILINX_MICROBLAZE0_USE_MSR_INSTR

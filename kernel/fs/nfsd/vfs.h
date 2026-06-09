@@ -2,8 +2,8 @@
  * Copyright (C) 1995-1997 Olaf Kirch <okir@monad.swb.de>
  */
 
-#ifndef LINUX_NFSD_VFS_H
-#define LINUX_NFSD_VFS_H
+#ifndef BEEP_NFSD_VFS_H
+#define BEEP_NFSD_VFS_H
 
 #include "nfsfh.h"
 
@@ -125,4 +125,4 @@ static inline void fh_drop_write(struct svc_fh *fh)
 	}
 }
 
-#endif /* LINUX_NFSD_VFS_H */
+#endif /* BEEP_NFSD_VFS_H */

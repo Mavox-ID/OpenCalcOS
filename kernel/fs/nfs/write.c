@@ -1,26 +1,26 @@
 /*
- * linux/fs/nfs/write.c
+ * beep/fs/nfs/write.c
  *
  * Write file data over NFS.
  *
  * Copyright (C) 1996, 1997, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/writeback.h>
-#include <linux/swap.h>
-#include <linux/migrate.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/file.h>
+#include <beep/writeback.h>
+#include <beep/swap.h>
+#include <beep/migrate.h>
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/nfs_page.h>
-#include <linux/backing-dev.h>
-#include <linux/export.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_mount.h>
+#include <beep/nfs_page.h>
+#include <beep/backing-dev.h>
+#include <beep/export.h>
 
 #include <asm/uaccess.h>
 

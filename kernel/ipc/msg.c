@@ -1,5 +1,5 @@
 /*
- * linux/ipc/msg.c
+ * beep/ipc/msg.c
  * Copyright (C) 1992 Krishna Balasubramanian
  *
  * Removed all the remaining kerneld mess
@@ -22,21 +22,21 @@
  * Pavel Emelianov <xemul@openvz.org>
  */
 
-#include <linux/capability.h>
-#include <linux/msg.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/list.h>
-#include <linux/security.h>
-#include <linux/sched.h>
-#include <linux/syscalls.h>
-#include <linux/audit.h>
-#include <linux/seq_file.h>
-#include <linux/rwsem.h>
-#include <linux/nsproxy.h>
-#include <linux/ipc_namespace.h>
+#include <beep/capability.h>
+#include <beep/msg.h>
+#include <beep/spinlock.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/proc_fs.h>
+#include <beep/list.h>
+#include <beep/security.h>
+#include <beep/sched.h>
+#include <beep/syscalls.h>
+#include <beep/audit.h>
+#include <beep/seq_file.h>
+#include <beep/rwsem.h>
+#include <beep/nsproxy.h>
+#include <beep/ipc_namespace.h>
 
 #include <asm/current.h>
 #include <asm/uaccess.h>

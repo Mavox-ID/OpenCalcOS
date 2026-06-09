@@ -1,5 +1,5 @@
-#include <linux/bug.h>
-#include <linux/kernel.h>
+#include <beep/bug.h>
+#include <beep/kernel.h>
 #include <asm/opcodes.h>
 
 static unsigned long

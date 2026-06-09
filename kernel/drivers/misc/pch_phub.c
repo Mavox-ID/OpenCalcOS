@@ -15,19 +15,19 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/if_ether.h>
-#include <linux/ctype.h>
-#include <linux/dmi.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/uaccess.h>
+#include <beep/string.h>
+#include <beep/pci.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
+#include <beep/if_ether.h>
+#include <beep/ctype.h>
+#include <beep/dmi.h>
 
 #define PHUB_STATUS 0x00		/* Status Register offset */
 #define PHUB_CONTROL 0x04		/* Control Register offset */

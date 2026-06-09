@@ -1,5 +1,5 @@
 #
-# Makefile for the linux memory manager.
+# Makefile for the beep memory manager.
 #
 
 mmu-y			:= nommu.o

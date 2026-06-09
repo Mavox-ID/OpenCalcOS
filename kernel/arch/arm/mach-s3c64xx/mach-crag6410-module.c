@@ -8,17 +8,17 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/spi/spi.h>
+#include <beep/export.h>
+#include <beep/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/spi/spi.h>
 
-#include <linux/mfd/wm831x/irq.h>
-#include <linux/mfd/wm831x/gpio.h>
-#include <linux/mfd/wm8994/pdata.h>
-#include <linux/mfd/arizona/pdata.h>
+#include <beep/mfd/wm831x/irq.h>
+#include <beep/mfd/wm831x/gpio.h>
+#include <beep/mfd/wm8994/pdata.h>
+#include <beep/mfd/arizona/pdata.h>
 
-#include <linux/regulator/machine.h>
+#include <beep/regulator/machine.h>
 
 #include <sound/wm0010.h>
 #include <sound/wm2200.h>
@@ -27,7 +27,7 @@
 #include <sound/wm8962.h>
 #include <sound/wm9081.h>
 
-#include <linux/platform_data/spi-s3c64xx.h>
+#include <beep/platform_data/spi-s3c64xx.h>
 
 #include <mach/crag6410.h>
 

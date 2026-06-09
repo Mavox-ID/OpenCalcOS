@@ -10,11 +10,11 @@
  *          Matt Turner
  *          Dave Airlie
  */
-#include <linux/module.h>
+#include <beep/module.h>
 #include <drm/drmP.h>
 #include <drm/drm_fb_helper.h>
 
-#include <linux/fb.h>
+#include <beep/fb.h>
 
 #include "mgag200_drv.h"
 

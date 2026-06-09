@@ -1,9 +1,9 @@
 /*
- *  linux/sound/oss/dmasound/dmasound_paula.c
+ *  beep/sound/oss/dmasound/dmasound_paula.c
  *
  *  Amiga `Paula' DMA Sound Driver
  *
- *  See linux/sound/oss/dmasound/dmasound_core.c for copyright and credits
+ *  See beep/sound/oss/dmasound/dmasound_core.c for copyright and credits
  *  prior to 28/01/2001
  *
  *  28/01/2001 [0.1] Iain Sandoe
@@ -15,13 +15,13 @@
 */
 
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/soundcard.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/soundcard.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
 
 #include <asm/uaccess.h>
 #include <asm/setup.h>

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/kernel/etm.c
+ * beep/arch/arm/kernel/etm.c
  *
  * Driver for ARM's Embedded Trace Macrocell and Embedded Trace Buffer.
  *
@@ -11,20 +11,20 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/sysrq.h>
-#include <linux/device.h>
-#include <linux/clk.h>
-#include <linux/amba/bus.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/miscdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/io.h>
+#include <beep/sysrq.h>
+#include <beep/device.h>
+#include <beep/clk.h>
+#include <beep/amba/bus.h>
+#include <beep/fs.h>
+#include <beep/uaccess.h>
+#include <beep/miscdevice.h>
+#include <beep/vmalloc.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
 #include <asm/hardware/coresight.h>
 #include <asm/sections.h>
 

@@ -1,4 +1,4 @@
-/* radeon_mem.c -- Simple GART/fb memory manager for radeon -*- linux-c -*- */
+/* radeon_mem.c -- Simple GART/fb memory manager for radeon -*- beep-c -*- */
 /*
  * Copyright (C) The Weather Channel, Inc.  2002.  All Rights Reserved.
  *

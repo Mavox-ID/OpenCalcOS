@@ -22,13 +22,13 @@
 	Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/jiffies.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/types.h>
 
 
 #include "dvb_frontend.h"

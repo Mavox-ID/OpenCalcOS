@@ -30,15 +30,15 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/in.h>
-#include <linux/if.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/if_arp.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/in.h>
+#include <beep/if.h>
+#include <beep/netdevice.h>
+#include <beep/inetdevice.h>
+#include <beep/if_arp.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include "rds.h"
 #include "ib.h"

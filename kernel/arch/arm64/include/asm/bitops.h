@@ -16,7 +16,7 @@
 #ifndef __ASM_BITOPS_H
 #define __ASM_BITOPS_H
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 #include <asm/barrier.h>
 
@@ -28,8 +28,8 @@
 #define smp_mb__after_clear_bit()	smp_mb()
 #endif
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _BEEP_BITOPS_H
+#error only <beep/bitops.h> can be included directly
 #endif
 
 #include <asm-generic/bitops/builtin-__ffs.h>

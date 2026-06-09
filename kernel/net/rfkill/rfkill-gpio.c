@@ -16,16 +16,16 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/rfkill.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/rfkill.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/slab.h>
 
-#include <linux/rfkill-gpio.h>
+#include <beep/rfkill-gpio.h>
 
 enum rfkill_gpio_clk_state {
 	UNSPECIFIED = 0,

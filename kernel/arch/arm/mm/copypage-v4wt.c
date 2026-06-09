@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/copypage-v4wt.S
+ *  beep/arch/arm/mm/copypage-v4wt.S
  *
  *  Copyright (C) 1995-1999 Russell King
  *
@@ -10,8 +10,8 @@
  *  This is for CPUs with a writethrough cache and 'flush ID cache' is
  *  the only supported cache operation.
  */
-#include <linux/init.h>
-#include <linux/highmem.h>
+#include <beep/init.h>
+#include <beep/highmem.h>
 
 /*
  * ARMv4 optimised copy_user_highpage

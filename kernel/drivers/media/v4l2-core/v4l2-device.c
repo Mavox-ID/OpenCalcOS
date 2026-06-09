@@ -18,15 +18,15 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/ioctl.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
 #if defined(CONFIG_SPI)
-#include <linux/spi/spi.h>
+#include <beep/spi/spi.h>
 #endif
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 

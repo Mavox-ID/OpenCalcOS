@@ -1,4 +1,4 @@
-/* linux/drivers/video/exynos/exynos_mipi_dsi_lowlevel.c
+/* beep/drivers/video/exynos/exynos_mipi_dsi_lowlevel.c
  *
  * Samsung SoC MIPI-DSI lowlevel driver.
  *
@@ -12,16 +12,16 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/ctype.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/mutex.h>
+#include <beep/wait.h>
+#include <beep/delay.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/ctype.h>
+#include <beep/io.h>
 
 #include <video/exynos_mipi_dsim.h>
 

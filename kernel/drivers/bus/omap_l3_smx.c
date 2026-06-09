@@ -22,11 +22,11 @@
  * USA
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
 #include "omap_l3_smx.h"
 
 static inline u64 omap3_l3_readll(void __iomem *base, u16 reg)

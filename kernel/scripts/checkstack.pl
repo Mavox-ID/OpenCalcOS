@@ -13,11 +13,11 @@
 #	Random bits by Matt Mackall <mpm@selenic.com>
 #	M68k port by Geert Uytterhoeven and Andreas Schwab
 #	AVR32 port by Haavard Skinnemoen (Atmel)
-#	PARISC port by Kyle McMartin <kyle@parisc-linux.org>
+#	PARISC port by Kyle McMartin <kyle@parisc-beep.org>
 #	sparc port by Martin Habets <errandir_news@mph.eclipse.co.uk>
 #
 #	Usage:
-#	objdump -d vmlinux | scripts/checkstack.pl [arch]
+#	objdump -d vmbeep | scripts/checkstack.pl [arch]
 #
 #	TODO :	Port to all architectures (one regex per arch)
 

@@ -11,24 +11,24 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/cpufreq.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/pm.h>
-#include <linux/gpio.h>
-#include <linux/serial_8250.h>
-#include <linux/dm9000.h>
-#include <linux/mmc/host.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/i2c.h>
-#include <linux/i2c/pxa-i2c.h>
-#include <linux/i2c/pca953x.h>
-#include <linux/apm-emulation.h>
-#include <linux/can/platform/mcp251x.h>
+#include <beep/cpufreq.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/pm.h>
+#include <beep/gpio.h>
+#include <beep/serial_8250.h>
+#include <beep/dm9000.h>
+#include <beep/mmc/host.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/pxa2xx_spi.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pxa-i2c.h>
+#include <beep/i2c/pca953x.h>
+#include <beep/apm-emulation.h>
+#include <beep/can/platform/mcp251x.h>
 
 #include <asm/mach-types.h>
 #include <asm/suspend.h>
@@ -38,14 +38,14 @@
 
 #include <mach/pxa27x.h>
 #include <mach/regs-uart.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/mmc-pxamci.h>
 #include <mach/pxa27x-udc.h>
 #include <mach/udc.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <beep/platform_data/video-pxafb.h>
 #include <mach/pm.h>
 #include <mach/audio.h>
-#include <linux/platform_data/pcmcia-pxa2xx_viper.h>
+#include <beep/platform_data/pcmcia-pxa2xx_viper.h>
 #include <mach/zeus.h>
 #include <mach/smemc.h>
 

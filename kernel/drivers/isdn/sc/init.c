@@ -4,17 +4,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 #include "includes.h"
 #include "hardware.h"
 #include "card.h"
 
-MODULE_DESCRIPTION("ISDN4Linux: Driver for Spellcaster card");
+MODULE_DESCRIPTION("ISDN4Beep: Driver for Spellcaster card");
 MODULE_AUTHOR("Spellcaster Telecommunications Inc.");
 MODULE_LICENSE("GPL");
 
@@ -265,7 +265,7 @@ static int __init sc_init(void)
 
 		/*
 		 * Horray! We found a board, Make sure we can register
-		 * it with ISDN4Linux
+		 * it with ISDN4Beep
 		 */
 		interface = kzalloc(sizeof(isdn_if), GFP_KERNEL);
 		if (interface == NULL) {

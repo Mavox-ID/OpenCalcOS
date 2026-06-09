@@ -1,11 +1,11 @@
 /*
- * linux/arch/sh/boards/se/7724/irq.c
+ * beep/arch/sh/boards/se/7724/irq.c
  *
  * Copyright (C) 2009 Renesas Solutions Corp.
  *
  * Kuninori Morimoto <morimoto.kuninori@renesas.com>
  *
- * Based on  linux/arch/sh/boards/se/7722/irq.c
+ * Based on  beep/arch/sh/boards/se/7722/irq.c
  * Copyright (C) 2007  Nobuhiro Iwamatsu
  *
  * Hitachi UL SolutionEngine 7724 Support.
@@ -14,13 +14,13 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/topology.h>
-#include <linux/io.h>
-#include <linux/err.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/export.h>
+#include <beep/topology.h>
+#include <beep/io.h>
+#include <beep/err.h>
 #include <mach-se/mach/se7724.h>
 
 struct fpga_irq {

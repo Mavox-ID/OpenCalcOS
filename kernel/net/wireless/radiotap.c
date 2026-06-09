@@ -14,8 +14,8 @@
  * See COPYING for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
 #include <net/cfg80211.h>
 #include <net/ieee80211_radiotap.h>
 #include <asm/unaligned.h>
@@ -97,7 +97,7 @@ int ieee80211_radiotap_iterator_init(
 	struct ieee80211_radiotap_header *radiotap_header,
 	int max_length, const struct ieee80211_radiotap_vendor_namespaces *vns)
 {
-	/* Linux only supports version 0 radiotap format */
+	/* Beep only supports version 0 radiotap format */
 	if (radiotap_header->it_version)
 		return -EINVAL;
 

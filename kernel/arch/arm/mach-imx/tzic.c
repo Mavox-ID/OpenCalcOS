@@ -9,14 +9,14 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/io.h>
+#include <beep/irqdomain.h>
+#include <beep/of.h>
 
 #include <asm/mach/irq.h>
 #include <asm/exception.h>

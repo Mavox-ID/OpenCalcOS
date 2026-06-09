@@ -1,4 +1,4 @@
-#include <linux/hardirq.h>
+#include <beep/hardirq.h>
 
 #include <asm/x86_init.h>
 

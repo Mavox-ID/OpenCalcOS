@@ -2,20 +2,20 @@
  * Driver for the on-board character LCD found on some ARM reference boards
  * This is basically an Hitachi HD44780 LCD with a custom IP block to drive it
  * http://en.wikipedia.org/wiki/HD44780_Character_LCD
- * Currently it will just display the text "ARM Linux" and the linux version
+ * Currently it will just display the text "ARM Beep" and the beep version
  *
  * License terms: GNU General Public License (GPL) version 2
  * Author: Linus Walleij <triad@df.lth.se>
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
 #include <generated/utsrelease.h>
 
 #define DRIVERNAME "arm-charlcd"
@@ -250,7 +250,7 @@ static void charlcd_4bit_init(struct charlcd *lcd)
 	charlcd_4bit_command(lcd, HD_CLEAR);
 	charlcd_4bit_command(lcd, HD_HOME);
 	/* Put something useful in the display */
-	charlcd_4bit_print(lcd, 0, "ARM Linux");
+	charlcd_4bit_print(lcd, 0, "ARM Beep");
 	charlcd_4bit_print(lcd, 1, UTS_RELEASE);
 }
 

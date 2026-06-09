@@ -23,7 +23,7 @@
 #define _TUNER_H
 #ifdef __KERNEL__
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 
 #define ADDR_UNSET (255)
 

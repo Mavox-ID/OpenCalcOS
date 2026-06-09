@@ -16,10 +16,10 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
 

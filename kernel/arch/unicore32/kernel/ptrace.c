@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/ptrace.c
+ * beep/arch/unicore32/kernel/ptrace.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -11,10 +11,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/signal.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/ptrace.h>
+#include <beep/signal.h>
+#include <beep/uaccess.h>
 
 /*
  * this routine will get a word off of the processes privileged stack.

@@ -10,12 +10,12 @@
  * kind, whether express or implied.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>

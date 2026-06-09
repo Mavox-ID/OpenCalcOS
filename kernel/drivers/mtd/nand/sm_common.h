@@ -6,8 +6,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/bitops.h>
-#include <linux/mtd/mtd.h>
+#include <beep/bitops.h>
+#include <beep/mtd/mtd.h>
 
 /* Full oob structure as written on the flash */
 struct sm_oob {

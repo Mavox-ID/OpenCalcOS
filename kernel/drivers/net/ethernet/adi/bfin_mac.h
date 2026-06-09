@@ -3,18 +3,18 @@
  *
  * Copyright 2004-2007 Analog Devices Inc.
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucbeep.org/
  *
  * Licensed under the GPL-2 or later.
  */
 #ifndef _BFIN_MAC_H_
 #define _BFIN_MAC_H_
 
-#include <linux/net_tstamp.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/timer.h>
-#include <linux/etherdevice.h>
-#include <linux/bfin_mac.h>
+#include <beep/net_tstamp.h>
+#include <beep/ptp_clock_kernel.h>
+#include <beep/timer.h>
+#include <beep/etherdevice.h>
+#include <beep/bfin_mac.h>
 
 /*
  * Disable hardware checksum for bug #5600 if writeback cache is

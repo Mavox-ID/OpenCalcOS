@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/include/plat/regs-srom.h
+/* beep/arch/arm/plat-samsung/include/plat/regs-srom.h
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com

@@ -4,22 +4,22 @@
  * Inc. IPG Gigabit or Triple Speed Ethernet Media Access
  * Controller.
  */
-#ifndef __LINUX_IPG_H
-#define __LINUX_IPG_H
+#ifndef __BEEP_IPG_H
+#define __BEEP_IPG_H
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/ioport.h>
+#include <beep/errno.h>
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
+#include <beep/delay.h>
+#include <beep/types.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/skbuff.h>
 #include <asm/bitops.h>
 
 /*
@@ -684,7 +684,7 @@ do {							\
  */
 
 /* Transmit Frame Descriptor. The IPG supports 15 fragments,
- * however Linux requires only a single fragment. Note, each
+ * however Beep requires only a single fragment. Note, each
  * TFD field is 64 bits wide.
  */
 struct ipg_tx {
@@ -746,4 +746,4 @@ struct ipg_nic_private {
 	struct delayed_work task;
 };
 
-#endif				/* __LINUX_IPG_H */
+#endif				/* __BEEP_IPG_H */

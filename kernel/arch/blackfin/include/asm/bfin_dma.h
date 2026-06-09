@@ -9,7 +9,7 @@
 #ifndef __ASM_BFIN_DMA_H__
 #define __ASM_BFIN_DMA_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* DMA_CONFIG Masks */
 #define DMAEN			0x0001	/* DMA Channel Enable */

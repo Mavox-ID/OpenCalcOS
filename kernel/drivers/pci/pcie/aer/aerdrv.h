@@ -8,10 +8,10 @@
 #ifndef _AERDRV_H_
 #define _AERDRV_H_
 
-#include <linux/workqueue.h>
-#include <linux/pcieport_if.h>
-#include <linux/aer.h>
-#include <linux/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/pcieport_if.h>
+#include <beep/aer.h>
+#include <beep/interrupt.h>
 
 #define AER_NONFATAL			0
 #define AER_FATAL			1

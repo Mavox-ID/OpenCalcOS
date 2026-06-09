@@ -2,7 +2,7 @@
  *  sata_sis.c - Silicon Integrated Systems SATA
  *
  *  Maintained by:  Uwe Koziolek
- *  		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *  		    Please ALWAYS copy beep-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2004 Uwe Koziolek
@@ -30,16 +30,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <beep/libata.h>
 #include "sis.h"
 
 #define DRV_NAME	"sata_sis"

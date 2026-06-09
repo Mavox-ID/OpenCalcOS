@@ -1,6 +1,6 @@
 /* $Id: capidrv.h,v 1.2.8.2 2001/09/23 22:24:33 kai Exp $
  *
- * ISDN4Linux Driver, using capi20 interface (kernelcapi)
+ * ISDN4Beep Driver, using capi20 interface (kernelcapi)
  *
  * Copyright 1997 by Carsten Paeth <calle@calle.de>
  *

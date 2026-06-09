@@ -19,9 +19,9 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/delay.h>
 #include <sound/core.h>
 #include "pmac.h"
 

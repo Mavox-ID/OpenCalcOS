@@ -32,8 +32,8 @@
 #include "lo.h"
 #include "main.h"
 
-#include <linux/bitrev.h>
-#include <linux/slab.h>
+#include <beep/bitrev.h>
+#include <beep/slab.h>
 
 
 static const s8 b43_tssi2dbm_g_table[] = {

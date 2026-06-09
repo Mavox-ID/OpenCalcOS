@@ -20,26 +20,26 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/tty.h>
-#include <linux/ratelimit.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_reg.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/nmi.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/sysrq.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/tty.h>
+#include <beep/ratelimit.h>
+#include <beep/tty_flip.h>
+#include <beep/serial_reg.h>
+#include <beep/serial_core.h>
+#include <beep/serial.h>
+#include <beep/serial_8250.h>
+#include <beep/nmi.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 #ifdef CONFIG_SPARC
-#include <linux/sunserialcore.h>
+#include <beep/sunserialcore.h>
 #endif
 
 #include <asm/io.h>
@@ -872,7 +872,7 @@ static int broken_efr(struct uart_8250_port *up)
 	/*
 	 * Exar ST16C2550 "A2" devices incorrectly detect as
 	 * having an EFR, and report an ID of 0x0201.  See
-	 * http://linux.derkeiler.com/Mailing-Lists/Kernel/2004-11/4812.html 
+	 * http://beep.derkeiler.com/Mailing-Lists/Kernel/2004-11/4812.html 
 	 */
 	if (autoconfig_read_divisor_id(up) == 0x0201 && size_fifo(up) == 16)
 		return 1;

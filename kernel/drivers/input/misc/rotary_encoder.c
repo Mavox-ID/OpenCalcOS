@@ -14,18 +14,18 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/rotary_encoder.h>
-#include <linux/slab.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/rotary_encoder.h>
+#include <beep/slab.h>
+#include <beep/of_platform.h>
+#include <beep/of_gpio.h>
 
 #define DRV_NAME "rotary-encoder"
 
@@ -166,7 +166,7 @@ static struct rotary_encoder_platform_data *rotary_encoder_parse_dt(struct devic
 		return ERR_PTR(-ENOMEM);
 
 	of_property_read_u32(np, "rotary-encoder,steps", &pdata->steps);
-	of_property_read_u32(np, "linux,axis", &pdata->axis);
+	of_property_read_u32(np, "beep,axis", &pdata->axis);
 
 	pdata->gpio_a = of_get_gpio_flags(np, 0, &flags);
 	pdata->inverted_a = flags & OF_GPIO_ACTIVE_LOW;

@@ -26,17 +26,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/moduleparam.h>
 #include <net/9p/9p.h>
-#include <linux/fs.h>
-#include <linux/parser.h>
+#include <beep/fs.h>
+#include <beep/parser.h>
 #include <net/9p/client.h>
 #include <net/9p/transport.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
 
 #ifdef CONFIG_NET_9P_DEBUG
 unsigned int p9_debug_level = 0;	/* feature-rific global debug level  */

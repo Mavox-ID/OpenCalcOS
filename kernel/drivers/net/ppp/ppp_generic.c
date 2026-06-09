@@ -1,5 +1,5 @@
 /*
- * Generic PPP layer for Linux.
+ * Generic PPP layer for Beep.
  *
  * Copyright 1999-2002 Paul Mackerras.
  *
@@ -11,7 +11,7 @@
  * The generic PPP layer handles the PPP network interfaces, the
  * /dev/ppp device, packet and VJ compression, and multilink.
  * It talks to PPP `channels' via the interface defined in
- * include/linux/ppp_channel.h.  Channels provide the basic means for
+ * include/beep/ppp_channel.h.  Channels provide the basic means for
  * sending and receiving PPP frames on some kind of communications
  * channel.
  *
@@ -22,35 +22,35 @@
  * ==FILEVERSION 20041108==
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/idr.h>
-#include <linux/netdevice.h>
-#include <linux/poll.h>
-#include <linux/ppp_defs.h>
-#include <linux/filter.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/ppp_channel.h>
-#include <linux/ppp-comp.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_arp.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/spinlock.h>
-#include <linux/rwsem.h>
-#include <linux/stddef.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/kmod.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/idr.h>
+#include <beep/netdevice.h>
+#include <beep/poll.h>
+#include <beep/ppp_defs.h>
+#include <beep/filter.h>
+#include <beep/ppp-ioctl.h>
+#include <beep/ppp_channel.h>
+#include <beep/ppp-comp.h>
+#include <beep/skbuff.h>
+#include <beep/rtnetlink.h>
+#include <beep/if_arp.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/spinlock.h>
+#include <beep/rwsem.h>
+#include <beep/stddef.h>
+#include <beep/device.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 #include <asm/unaligned.h>
 #include <net/slhc_vj.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
-#include <linux/nsproxy.h>
+#include <beep/nsproxy.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 

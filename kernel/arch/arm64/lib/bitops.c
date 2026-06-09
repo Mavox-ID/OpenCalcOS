@@ -14,9 +14,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/atomic.h>
 
 #ifdef CONFIG_SMP
 arch_spinlock_t __atomic_hash[ATOMIC_HASH_SIZE] __lock_aligned = {

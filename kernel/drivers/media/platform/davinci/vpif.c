@@ -17,15 +17,15 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/v4l2-dv-timings.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/v4l2-dv-timings.h>
 
 #include <mach/hardware.h>
 

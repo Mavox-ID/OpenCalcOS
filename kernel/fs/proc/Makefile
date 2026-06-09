@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux proc filesystem routines.
+# Makefile for the Beep proc filesystem routines.
 #
 
 obj-y   += proc.o

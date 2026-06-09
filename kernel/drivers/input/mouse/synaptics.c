@@ -23,13 +23,13 @@
  * Trademarks are the property of their respective owners.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/input/mt.h>
-#include <linux/serio.h>
-#include <linux/libps2.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/dmi.h>
+#include <beep/input/mt.h>
+#include <beep/serio.h>
+#include <beep/libps2.h>
+#include <beep/slab.h>
 #include "psmouse.h"
 #include "synaptics.h"
 

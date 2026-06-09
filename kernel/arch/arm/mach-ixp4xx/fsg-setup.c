@@ -11,19 +11,19 @@
  *	Copyright (C) 2005 Tower Technologies
  *
  * Author: Rod Whitby <rod@whitby.id.au>
- * Maintainers: http://www.nslu2-linux.org/
+ * Maintainers: http://www.nslu2-beep.org/
  *
  */
-#include <linux/gpio.h>
-#include <linux/if_ether.h>
-#include <linux/irq.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/leds.h>
-#include <linux/reboot.h>
-#include <linux/i2c.h>
-#include <linux/i2c-gpio.h>
-#include <linux/io.h>
+#include <beep/gpio.h>
+#include <beep/if_ether.h>
+#include <beep/irq.h>
+#include <beep/serial.h>
+#include <beep/serial_8250.h>
+#include <beep/leds.h>
+#include <beep/reboot.h>
+#include <beep/i2c.h>
+#include <beep/i2c-gpio.h>
+#include <beep/io.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/flash.h>
@@ -268,7 +268,7 @@ static void __init fsg_init(void)
 }
 
 MACHINE_START(FSG, "Freecom FSG-3")
-	/* Maintainer: www.nslu2-linux.org */
+	/* Maintainer: www.nslu2-beep.org */
 	.map_io		= ixp4xx_map_io,
 	.init_early	= ixp4xx_init_early,
 	.init_irq	= ixp4xx_init_irq,

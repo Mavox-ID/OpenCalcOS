@@ -6,8 +6,8 @@
  *  Copyright (C) 2010 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/export.h>
-#include <linux/clk.h>
+#include <beep/export.h>
+#include <beep/clk.h>
 #include <asm/bootinfo.h>
 #include <asm/time.h>
 

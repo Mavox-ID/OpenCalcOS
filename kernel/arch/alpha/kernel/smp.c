@@ -1,5 +1,5 @@
 /*
- *	linux/arch/alpha/kernel/smp.c
+ *	beep/arch/alpha/kernel/smp.c
  *
  *      2001-07-09 Phil Ezolt (Phillip.Ezolt@compaq.com)
  *            Renamed modified smp_call_function to smp_call_function_on_cpu()
@@ -10,28 +10,28 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/threads.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/irq.h>
-#include <linux/cache.h>
-#include <linux/profile.h>
-#include <linux/bitops.h>
-#include <linux/cpu.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/kernel_stat.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/err.h>
+#include <beep/threads.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/irq.h>
+#include <beep/cache.h>
+#include <beep/profile.h>
+#include <beep/bitops.h>
+#include <beep/cpu.h>
 
 #include <asm/hwrpb.h>
 #include <asm/ptrace.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

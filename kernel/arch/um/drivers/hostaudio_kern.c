@@ -3,12 +3,12 @@
  * Licensed under the GPL
  */
 
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sound.h>
-#include <linux/soundcard.h>
-#include <linux/mutex.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/sound.h>
+#include <beep/soundcard.h>
+#include <beep/mutex.h>
 #include <asm/uaccess.h>
 #include <init.h>
 #include <os.h>

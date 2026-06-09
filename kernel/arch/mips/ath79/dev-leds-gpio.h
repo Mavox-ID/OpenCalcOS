@@ -12,7 +12,7 @@
 #ifndef _ATH79_DEV_LEDS_GPIO_H
 #define _ATH79_DEV_LEDS_GPIO_H
 
-#include <linux/leds.h>
+#include <beep/leds.h>
 
 void ath79_register_leds_gpio(int id,
 			      unsigned num_leds,

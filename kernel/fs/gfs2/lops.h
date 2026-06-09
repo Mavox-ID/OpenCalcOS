@@ -10,7 +10,7 @@
 #ifndef __LOPS_DOT_H__
 #define __LOPS_DOT_H__
 
-#include <linux/list.h>
+#include <beep/list.h>
 #include "incore.h"
 
 #define BUF_OFFSET \

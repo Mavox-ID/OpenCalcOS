@@ -6,17 +6,17 @@
  * Licensed under GPLv2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/sirfsoc_dma.h>
+#include <beep/module.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/of_irq.h>
+#include <beep/of_address.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
+#include <beep/sirfsoc_dma.h>
 
 #include "dmaengine.h"
 

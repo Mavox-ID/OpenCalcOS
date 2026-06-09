@@ -1,7 +1,7 @@
 /* memcontrol.c - Memory Controller
  *
  * Copyright IBM Corporation, 2007
- * Author Balbir Singh <balbir@linux.vnet.ibm.com>
+ * Author Balbir Singh <balbir@beep.vnet.ibm.com>
  *
  * Copyright 2007 OpenVZ SWsoft Inc
  * Author: Pavel Emelianov <xemul@openvz.org>
@@ -25,34 +25,34 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/res_counter.h>
-#include <linux/memcontrol.h>
-#include <linux/cgroup.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/pagemap.h>
-#include <linux/smp.h>
-#include <linux/page-flags.h>
-#include <linux/backing-dev.h>
-#include <linux/bit_spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/limits.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/rbtree.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/spinlock.h>
-#include <linux/eventfd.h>
-#include <linux/sort.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/vmalloc.h>
-#include <linux/mm_inline.h>
-#include <linux/page_cgroup.h>
-#include <linux/cpu.h>
-#include <linux/oom.h>
+#include <beep/res_counter.h>
+#include <beep/memcontrol.h>
+#include <beep/cgroup.h>
+#include <beep/mm.h>
+#include <beep/hugetlb.h>
+#include <beep/pagemap.h>
+#include <beep/smp.h>
+#include <beep/page-flags.h>
+#include <beep/backing-dev.h>
+#include <beep/bit_spinlock.h>
+#include <beep/rcupdate.h>
+#include <beep/limits.h>
+#include <beep/export.h>
+#include <beep/mutex.h>
+#include <beep/rbtree.h>
+#include <beep/slab.h>
+#include <beep/swap.h>
+#include <beep/swapops.h>
+#include <beep/spinlock.h>
+#include <beep/eventfd.h>
+#include <beep/sort.h>
+#include <beep/fs.h>
+#include <beep/seq_file.h>
+#include <beep/vmalloc.h>
+#include <beep/mm_inline.h>
+#include <beep/page_cgroup.h>
+#include <beep/cpu.h>
+#include <beep/oom.h>
 #include "internal.h"
 #include <net/sock.h>
 #include <net/ip.h>

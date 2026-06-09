@@ -11,7 +11,7 @@
 #ifndef V4L2_MEDIABUS_H
 #define V4L2_MEDIABUS_H
 
-#include <linux/v4l2-mediabus.h>
+#include <beep/v4l2-mediabus.h>
 
 /* Parallel flags */
 /*

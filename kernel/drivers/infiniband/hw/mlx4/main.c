@@ -31,21 +31,21 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_vlan.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/inetdevice.h>
+#include <beep/rtnetlink.h>
+#include <beep/if_vlan.h>
 
 #include <rdma/ib_smi.h>
 #include <rdma/ib_user_verbs.h>
 #include <rdma/ib_addr.h>
 
-#include <linux/mlx4/driver.h>
-#include <linux/mlx4/cmd.h>
+#include <beep/mlx4/driver.h>
+#include <beep/mlx4/cmd.h>
 
 #include "mlx4_ib.h"
 #include "user.h"

@@ -11,15 +11,15 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/msi.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/msi.h>
 
 #include <asm/sections.h>
 #include <asm/io.h>
@@ -112,7 +112,7 @@ static int pnv_setup_msi_irqs(struct pci_dev *pdev, int nvec, int type)
 		}
 		virq = irq_create_mapping(NULL, hwirq);
 		if (virq == NO_IRQ) {
-			pr_warn("%s: Failed to map MSI to linux irq\n",
+			pr_warn("%s: Failed to map MSI to beep irq\n",
 				pci_name(pdev));
 			pnv_put_msi(phb, hwirq);
 			return -ENOMEM;
@@ -470,8 +470,8 @@ static struct iommu_table *pnv_pci_setup_bml_iommu(struct pci_controller *hose)
 	const __be64 *basep, *swinvp;
 	const __be32 *sizep;
 
-	basep = of_get_property(hose->dn, "linux,tce-base", NULL);
-	sizep = of_get_property(hose->dn, "linux,tce-size", NULL);
+	basep = of_get_property(hose->dn, "beep,tce-base", NULL);
+	sizep = of_get_property(hose->dn, "beep,tce-size", NULL);
 	if (basep == NULL || sizep == NULL) {
 		pr_err("PCI: %s has missing tce entries !\n",
 		       hose->dn->full_name);
@@ -485,7 +485,7 @@ static struct iommu_table *pnv_pci_setup_bml_iommu(struct pci_controller *hose)
 	iommu_init_table(tbl, hose->node);
 
 	/* Deal with SW invalidated TCEs when needed (BML way) */
-	swinvp = of_get_property(hose->dn, "linux,tce-sw-invalidate-info",
+	swinvp = of_get_property(hose->dn, "beep,tce-sw-invalidate-info",
 				 NULL);
 	if (swinvp) {
 		tbl->it_busno = swinvp[1];

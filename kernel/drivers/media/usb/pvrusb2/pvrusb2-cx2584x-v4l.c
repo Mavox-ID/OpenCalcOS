@@ -33,9 +33,9 @@
 #include "pvrusb2-hdw-internal.h"
 #include "pvrusb2-debug.h"
 #include <media/cx25840.h>
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-common.h>
-#include <linux/errno.h>
+#include <beep/errno.h>
 
 
 struct routing_scheme_item {

@@ -2,7 +2,7 @@
 #define _H8300_TLBFLUSH_H
 
 /*
- * Copyright (C) 2000 Lineo, David McCullough <davidm@uclinux.org>
+ * Copyright (C) 2000 Lineo, David McCullough <davidm@ucbeep.org>
  * Copyright (C) 2000-2002, Greg Ungerer <gerg@snapgear.com>
  */
 

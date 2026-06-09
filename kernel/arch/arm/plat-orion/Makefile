@@ -1,5 +1,5 @@
 #
-# Makefile for the linux kernel.
+# Makefile for the beep kernel.
 #
 ccflags-$(CONFIG_ARCH_MULTIPLATFORM) := -I$(srctree)/$(src)/include
 

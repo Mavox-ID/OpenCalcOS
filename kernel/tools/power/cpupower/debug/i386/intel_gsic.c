@@ -1,11 +1,11 @@
 /*
  *  (C) 2003  Bruno Ducrot
- *  (C) 2004  Dominik Brodowski <linux@dominikbrodowski.de>
+ *  (C) 2004  Dominik Brodowski <beep@dominikbrodowski.de>
  *
  *  Licensed under the terms of the GNU GPL License version 2.
  *
  * Based on code found in
- * linux/include/asm-i386/ist.h and linux/arch/i386/kernel/setup.c
+ * beep/include/asm-i386/ist.h and beep/arch/i386/kernel/setup.c
  * and originally developed by Andy Grover <andrew.grover@intel.com>
  */
 

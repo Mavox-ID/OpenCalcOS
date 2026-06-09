@@ -22,8 +22,8 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/wait.h>
-#include <linux/sched.h>
+#include <beep/wait.h>
+#include <beep/sched.h>
 #include <sound/core.h>
 #include <sound/emux_synth.h>
 

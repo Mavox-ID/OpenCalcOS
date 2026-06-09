@@ -23,9 +23,9 @@
  * Get them out of the way...
  */
 
-#include <linux/jiffies.h>
-#include <linux/ctype.h>
-#include <linux/workqueue.h>
+#include <beep/jiffies.h>
+#include <beep/ctype.h>
+#include <beep/workqueue.h>
 #include "wusbhc.h"
 
 static ssize_t wusb_disconnect_store(struct device *dev,

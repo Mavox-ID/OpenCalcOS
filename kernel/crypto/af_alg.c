@@ -12,15 +12,15 @@
  *
  */
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <crypto/if_alg.h>
-#include <linux/crypto.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/rwsem.h>
+#include <beep/crypto.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/net.h>
+#include <beep/rwsem.h>
 
 struct alg_type_list {
 	const struct af_alg_type *type;

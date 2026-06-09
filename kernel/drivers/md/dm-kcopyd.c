@@ -9,21 +9,21 @@
  * completion notification.
  */
 
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/blkdev.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/device-mapper.h>
-#include <linux/dm-kcopyd.h>
+#include <beep/types.h>
+#include <beep/atomic.h>
+#include <beep/blkdev.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/mempool.h>
+#include <beep/module.h>
+#include <beep/pagemap.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/workqueue.h>
+#include <beep/mutex.h>
+#include <beep/device-mapper.h>
+#include <beep/dm-kcopyd.h>
 
 #include "dm.h"
 

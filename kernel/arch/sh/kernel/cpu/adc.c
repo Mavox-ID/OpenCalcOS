@@ -1,10 +1,10 @@
 /*
- * linux/arch/sh/kernel/adc.c -- SH3 on-chip ADC support
+ * beep/arch/sh/kernel/adc.c -- SH3 on-chip ADC support
  *
  *  Copyright (C) 2004  Andriy Skulysh <askulysh@image.kiev.ua>
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/adc.h>
 #include <asm/io.h>
 

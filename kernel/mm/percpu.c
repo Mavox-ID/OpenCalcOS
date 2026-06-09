@@ -1,7 +1,7 @@
 /*
  * mm/percpu.c - percpu memory allocator
  *
- * Copyright (C) 2009		SUSE Linux Products GmbH
+ * Copyright (C) 2009		SUSE Beep Products GmbH
  * Copyright (C) 2009		Tejun Heo <tj@kernel.org>
  *
  * This file is released under the GPLv2.
@@ -53,21 +53,21 @@
  *   setup the first chunk containing the kernel static percpu area
  */
 
-#include <linux/bitmap.h>
-#include <linux/bootmem.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/log2.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/percpu.h>
-#include <linux/pfn.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/kmemleak.h>
+#include <beep/bitmap.h>
+#include <beep/bootmem.h>
+#include <beep/err.h>
+#include <beep/list.h>
+#include <beep/log2.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/percpu.h>
+#include <beep/pfn.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/vmalloc.h>
+#include <beep/workqueue.h>
+#include <beep/kmemleak.h>
 
 #include <asm/cacheflush.h>
 #include <asm/sections.h>

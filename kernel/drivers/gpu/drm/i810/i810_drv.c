@@ -1,8 +1,8 @@
-/* i810_drv.c -- I810 driver -*- linux-c -*-
+/* i810_drv.c -- I810 driver -*- beep-c -*-
  * Created: Mon Dec 13 01:56:22 1999 by jhartmann@precisioninsight.com
  *
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA Beep Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -19,18 +19,18 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
- * VA LINUX SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+ * VA BEEP SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
  * OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Rickard E. (Rik) Faith <faith@valinux.com>
- *    Jeff Hartmann <jhartmann@valinux.com>
- *    Gareth Hughes <gareth@valinux.com>
+ *    Rickard E. (Rik) Faith <faith@vabeep.com>
+ *    Jeff Hartmann <jhartmann@vabeep.com>
+ *    Gareth Hughes <gareth@vabeep.com>
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <drm/drmP.h>
 #include <drm/i810_drm.h>

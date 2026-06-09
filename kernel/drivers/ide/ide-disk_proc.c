@@ -1,8 +1,8 @@
-#include <linux/kernel.h>
-#include <linux/ide.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/seq_file.h>
+#include <beep/kernel.h>
+#include <beep/ide.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/seq_file.h>
 
 #include "ide-disk.h"
 

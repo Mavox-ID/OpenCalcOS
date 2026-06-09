@@ -9,24 +9,24 @@
  *   Authors	Christian Zankel, Joe Taylor
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/major.h>
-#include <linux/param.h>
-#include <linux/seq_file.h>
-#include <linux/serial.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/major.h>
+#include <beep/param.h>
+#include <beep/seq_file.h>
+#include <beep/serial.h>
 
 #include <asm/uaccess.h>
 #include <asm/irq.h>
 
 #include <platform/simcall.h>
 
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
 
 #ifdef SERIAL_INLINE
 #define _INLINE_ inline

@@ -24,7 +24,7 @@ config ARM_ETHER3
 	depends on ARM && ARCH_ACORN
 	---help---
 	  If you have an Acorn system with one of these network cards, you
-	  should say Y to this option if you wish to use it with Linux.
+	  should say Y to this option if you wish to use it with Beep.
 
 config SEEQ8005
 	tristate "SEEQ8005 support (EXPERIMENTAL)"

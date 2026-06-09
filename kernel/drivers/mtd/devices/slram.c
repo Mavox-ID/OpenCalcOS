@@ -29,21 +29,21 @@
 ======================================================================*/
 
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/uaccess.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/ioctl.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/major.h>
+#include <beep/fs.h>
+#include <beep/ioctl.h>
+#include <beep/init.h>
 #include <asm/io.h>
 
-#include <linux/mtd/mtd.h>
+#include <beep/mtd/mtd.h>
 
 #define SLRAM_MAX_DEVICES_PARAMS 6		/* 3 parameters / device */
 #define SLRAM_BLK_SZ 0x4000

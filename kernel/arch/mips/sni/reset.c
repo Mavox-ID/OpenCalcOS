@@ -1,5 +1,5 @@
 /*
- *  linux/arch/mips/sni/process.c
+ *  beep/arch/mips/sni/process.c
  *
  *  Reset a SNI machine.
  */

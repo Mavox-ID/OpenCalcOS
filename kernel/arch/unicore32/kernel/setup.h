@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/setup.h
+ * beep/arch/unicore32/kernel/setup.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *

@@ -17,7 +17,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 /*
  * Hauppauge:the newer, gray remotes (seems there are multiple

@@ -3,7 +3,7 @@
  * ALSA Soc Audio Layer - S3C_I2SV2 I2S driver
  *
  * Copyright (c) 2007 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  *  This program is free software; you can redistribute  it and/or modify it

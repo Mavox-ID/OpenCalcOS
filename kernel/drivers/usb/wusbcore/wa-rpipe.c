@@ -57,11 +57,11 @@
  *  urb->dev->devnum, to make sure that we always have the right
  *  destination address.
  */
-#include <linux/init.h>
-#include <linux/atomic.h>
-#include <linux/bitmap.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/init.h>
+#include <beep/atomic.h>
+#include <beep/bitmap.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #include "wusbhc.h"
 #include "wa-hc.h"
@@ -380,7 +380,7 @@ error:
 /*
  * Check an aimed rpipe to make sure it points to where we want
  *
- * We use bit 19 of the Linux USB pipe bitmap for unauth vs auth
+ * We use bit 19 of the Beep USB pipe bitmap for unauth vs auth
  * space; when it is like that, we or 0x80 to make an unauth address.
  */
 static int rpipe_check_aim(const struct wa_rpipe *rpipe, const struct wahc *wa,

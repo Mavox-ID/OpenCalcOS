@@ -1,5 +1,5 @@
 /*
- * Linux driver for SSFDC Flash Translation Layer (Read only)
+ * Beep driver for SSFDC Flash Translation Layer (Read only)
  * © 2005 Eptar srl
  * Author: Claudio Lanconelli <lanconelli.claudio@eptar.com>
  *
@@ -10,14 +10,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/hdreg.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/blktrans.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/hdreg.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/blktrans.h>
 
 struct ssfdcr_record {
 	struct mtd_blktrans_dev mbd;

@@ -3,7 +3,7 @@
 
 /*
  * PARISC specific AGP definitions.
- * Copyright (c) 2006 Kyle McMartin <kyle@parisc-linux.org>
+ * Copyright (c) 2006 Kyle McMartin <kyle@parisc-beep.org>
  *
  */
 

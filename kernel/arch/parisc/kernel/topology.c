@@ -17,10 +17,10 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/cache.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/cpu.h>
+#include <beep/cache.h>
 
 static DEFINE_PER_CPU(struct cpu, cpu_devices);
 

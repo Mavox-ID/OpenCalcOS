@@ -8,10 +8,10 @@
  *	as published by the Free Software Foundation; either version
  *	2 of the License, or (at your option) any later version.
  */
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
 
 #include <asm/dec/prom.h>
 

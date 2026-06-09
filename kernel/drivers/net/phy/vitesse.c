@@ -12,11 +12,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/phy.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mii.h>
+#include <beep/ethtool.h>
+#include <beep/phy.h>
 
 /* Vitesse Extended Control Register 1 */
 #define MII_VSC8244_EXT_CON1           0x17

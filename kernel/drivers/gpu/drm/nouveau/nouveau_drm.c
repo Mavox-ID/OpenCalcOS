@@ -22,9 +22,9 @@
  * Authors: Ben Skeggs
  */
 
-#include <linux/console.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <beep/console.h>
+#include <beep/module.h>
+#include <beep/pci.h>
 
 #include <core/device.h>
 #include <core/client.h>

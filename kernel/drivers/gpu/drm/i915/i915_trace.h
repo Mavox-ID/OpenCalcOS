@@ -1,9 +1,9 @@
 #if !defined(_I915_TRACE_H_) || defined(TRACE_HEADER_MULTI_READ)
 #define _I915_TRACE_H_
 
-#include <linux/stringify.h>
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <beep/stringify.h>
+#include <beep/types.h>
+#include <beep/tracepoint.h>
 
 #include <drm/drmP.h>
 #include "i915_drv.h"

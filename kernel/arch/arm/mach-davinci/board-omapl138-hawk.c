@@ -9,10 +9,10 @@
  * version 2. This program is licensed "as is" without any warranty of
  * any kind, whether express or implied.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/gpio.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

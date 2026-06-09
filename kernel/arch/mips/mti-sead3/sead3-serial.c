@@ -5,9 +5,9 @@
  *
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/serial_8250.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/serial_8250.h>
 
 #define UART(base, int)							\
 {									\

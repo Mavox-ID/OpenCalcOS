@@ -13,12 +13,12 @@
  * 	Calculates md5/sha1 file hash, template hash, boot-aggreate hash
  */
 
-#include <linux/kernel.h>
-#include <linux/file.h>
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/file.h>
+#include <beep/crypto.h>
+#include <beep/scatterlist.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 #include "ima.h"
 
 static int init_desc(struct hash_desc *desc)

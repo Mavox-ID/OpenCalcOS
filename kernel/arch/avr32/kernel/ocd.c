@@ -5,9 +5,9 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
 
 #include <asm/ocd.h>
 
@@ -82,8 +82,8 @@ void ocd_disable(struct task_struct *child)
 }
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
-#include <linux/module.h>
+#include <beep/debugfs.h>
+#include <beep/module.h>
 
 static struct dentry *ocd_debugfs_root;
 static struct dentry *ocd_debugfs_DC;

@@ -19,7 +19,7 @@
  */
 
 /*--------------------------Include File------------------------------------*/
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 #include "r8180_hw.h"
 #include "r8180.h"
 #include "r8180_rtl8225.h" /* RTL8225 Radio frontend */

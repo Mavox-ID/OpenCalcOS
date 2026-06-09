@@ -14,28 +14,28 @@
  */
 
 #include <stdarg.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/threads.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/stringify.h>
-#include <linux/delay.h>
-#include <linux/initrd.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/kexec.h>
-#include <linux/debugfs.h>
-#include <linux/irq.h>
-#include <linux/memblock.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/threads.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/stringify.h>
+#include <beep/delay.h>
+#include <beep/initrd.h>
+#include <beep/bitops.h>
+#include <beep/module.h>
+#include <beep/kexec.h>
+#include <beep/debugfs.h>
+#include <beep/irq.h>
+#include <beep/memblock.h>
 
 #include <asm/prom.h>
 #include <asm/page.h>
 #include <asm/processor.h>
 #include <asm/irq.h>
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/mmu.h>
 #include <asm/pgtable.h>
 #include <asm/sections.h>
@@ -64,7 +64,7 @@ static int __init early_init_dt_scan_chosen_serial(unsigned long node,
 
 	if (depth == 1 && (strcmp(uname, "chosen") == 0 ||
 				strcmp(uname, "chosen@0") == 0)) {
-		p = of_get_flat_dt_prop(node, "linux,stdout-path", &l);
+		p = of_get_flat_dt_prop(node, "beep,stdout-path", &l);
 		if (p != NULL && l > 0)
 			stdout = p; /* store pointer to stdout-path */
 	}

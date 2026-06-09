@@ -9,7 +9,7 @@
  *  by the Free Software Foundation.
  */
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 #include <asm/mach-ath79/ar71xx_regs.h>
 #include "dev-spi.h"
 

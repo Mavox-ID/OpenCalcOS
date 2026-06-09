@@ -7,9 +7,9 @@
  * modify it under the terms of the GNU General Public License
  * version 2 as published by the Free Software Foundation.
  */
-#include <linux/io.h>
-#include <linux/suspend.h>
-#include <linux/vmalloc.h>
+#include <beep/io.h>
+#include <beep/suspend.h>
+#include <beep/vmalloc.h>
 
 #include <asm/cacheflush.h>
 #include <asm/sysreg.h>

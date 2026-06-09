@@ -1,6 +1,6 @@
 /*******************************************************************************
  * Agere Systems Inc.
- * Wireless device driver for Linux (wlags49).
+ * Wireless device driver for Beep (wlags49).
  *
  * Copyright (c) 1998-2003 Agere Systems Inc.
  * All rights reserved.
@@ -59,10 +59,10 @@
  ******************************************************************************/
 #include <wl_version.h>
 
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
+#include <beep/if_arp.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/etherdevice.h>
 #include <asm/uaccess.h>
 
 #include <debug.h>
@@ -380,7 +380,7 @@ static int wireless_get_protocol(struct net_device *dev, struct iw_request_info 
 	DBG_ENTER( DbgInfo );
 
 	/* Originally, the driver was placing the string "Wireless" here. However,
-	   the wireless extensions (/linux/wireless.h) indicate this string should
+	   the wireless extensions (/beep/wireless.h) indicate this string should
 	   describe the wireless protocol. */
 
 	strcpy(name, "IEEE 802.11b");
@@ -1142,7 +1142,7 @@ static int wireless_set_essid(struct net_device *dev, struct iw_request_info *in
 
 	/* data->flags is zero to ask for "any" */
 	if( data->flags == 0 ) {
-		/* Need this because in STAP build PARM_DEFAULT_SSID is "LinuxAP"
+		/* Need this because in STAP build PARM_DEFAULT_SSID is "BeepAP"
 		 * ;?but there ain't no STAP anymore*/
 		if ( CNV_INT_TO_LITTLE( lp->hcfCtx.IFB_FWIdentity.comp_id ) == COMP_ID_FW_STA  ) {
 			strcpy( lp->NetworkName, "ANY" );
@@ -1495,7 +1495,7 @@ static int wireless_set_nickname(struct net_device *dev, struct iw_request_info 
 		goto out;
 	}
 
-#if 0 //;? Needed, was present in original code but not in 7.18 Linux 2.6 kernel version
+#if 0 //;? Needed, was present in original code but not in 7.18 Beep 2.6 kernel version
 	if( !capable(CAP_NET_ADMIN )) {
 		ret = -EPERM;
 		DBG_LEAVE( DbgInfo );
@@ -1871,7 +1871,7 @@ static int wireless_set_power(struct net_device *dev, struct iw_request_info *in
 
 	DBG_PRINT( "THIS CORRUPTS PMEnabled ;?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n" );
 
-#if 0 //;? Needed, was present in original code but not in 7.18 Linux 2.6 kernel version
+#if 0 //;? Needed, was present in original code but not in 7.18 Beep 2.6 kernel version
 	if( !capable( CAP_NET_ADMIN )) {
 		ret = -EPERM;
 
@@ -2507,7 +2507,7 @@ out:
  *
  *  DESCRIPTION:
  *
- *      Returns the Linux Wireless Extensions' compatible private interface of
+ *      Returns the Beep Wireless Extensions' compatible private interface of
  *  the driver.
  *
  *  PARAMETERS:
@@ -3293,7 +3293,7 @@ struct iw_statistics * wl_wireless_stats( struct net_device *dev )
 						       tallies.RxFCSErrors +
 						       //tallies.RxDiscardsNoBuffer +
 						       tallies.TxDiscardsWrongSA;
-				//;? Extra taken over from Linux driver based on 7.18 version
+				//;? Extra taken over from Beep driver based on 7.18 version
 				pStats->discard.retries = tallies.TxRetryLimitExceeded;
 				pStats->discard.fragment = tallies.RxMsgInBadMsgFragments;
 			} else {

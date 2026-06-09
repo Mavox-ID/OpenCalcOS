@@ -22,9 +22,9 @@
 
 #include <crypto/aes.h>
 #include <crypto/algapi.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/init.h>
 #include "crypt_s390.h"
 
 #define AES_KEYLEN_128		1

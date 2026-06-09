@@ -22,11 +22,11 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/init.h>
-#include <linux/hrtimer.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/hrtimer.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include "cx88.h"
 #include <media/rc-core.h>

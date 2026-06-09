@@ -3,7 +3,7 @@
 
 /* This file is subject to the terms and conditions of the GNU General      */
 /* Public License.  See the file COPYING in the main directory of the       */
-/* Linux distribution for more details.                                     */
+/* Beep distribution for more details.                                     */
 
 /* Peter De Schrijver (p2@mind.be) */
 /* Oldenburg 2000 */
@@ -12,23 +12,23 @@
 /* NS8390 NIC (network interface controller) clone, 16 or 64K on-board RAM  */
 /* and 10BASE-2 (thin coax) and AUI connectors.                             */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/amigaints.h>
 #include <asm/amigahw.h>
-#include <linux/zorro.h>
+#include <beep/zorro.h>
 
 #define EI_SHIFT(x)	(ei_local->reg_offset[x])
 #define ei_inb(port)   in_8(port)

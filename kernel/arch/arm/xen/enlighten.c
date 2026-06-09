@@ -12,14 +12,14 @@
 #include <xen/xen-ops.h>
 #include <asm/xen/hypervisor.h>
 #include <asm/xen/hypercall.h>
-#include <linux/interrupt.h>
-#include <linux/irqreturn.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <beep/interrupt.h>
+#include <beep/irqreturn.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/of_address.h>
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 struct start_info _xen_start_info;
 struct start_info *xen_start_info = &_xen_start_info;

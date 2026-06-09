@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-sa1100/pci-nanoengine.c
+ * beep/arch/arm/mach-sa1100/pci-nanoengine.c
  *
  * PCI functions for BSE nanoEngine PCI
  *
@@ -19,10 +19,10 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/irq.h>
+#include <beep/pci.h>
+#include <beep/spinlock.h>
 
 #include <asm/mach/pci.h>
 #include <asm/mach-types.h>
@@ -168,7 +168,7 @@ pci 0000:00:00.0: BAR 1: assigned [io  0x0400-0x043f]
 pci 0000:00:00.0: BAR 1: set to [io  0x0400-0x043f] (PCI address [0x0-0x3f])
  *
  * On the other hand, if we do not request the prefetchable memory resource,
- * linux will alloc it first and the two non-prefetchable memory areas that
+ * beep will alloc it first and the two non-prefetchable memory areas that
  * are our real interest will not be mapped. So we choose to map it to an
  * unused area. It gets recognized as expansion ROM, but becomes disabled.
  *

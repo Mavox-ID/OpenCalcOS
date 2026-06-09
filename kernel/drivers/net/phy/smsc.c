@@ -16,13 +16,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/phy.h>
-#include <linux/netdevice.h>
-#include <linux/smscphy.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mii.h>
+#include <beep/ethtool.h>
+#include <beep/phy.h>
+#include <beep/netdevice.h>
+#include <beep/smscphy.h>
 
 static int smsc_phy_config_intr(struct phy_device *phydev)
 {

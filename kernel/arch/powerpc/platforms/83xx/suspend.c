@@ -10,18 +10,18 @@
  * by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/suspend.h>
-#include <linux/fsl_devices.h>
-#include <linux/of_platform.h>
-#include <linux/export.h>
+#include <beep/init.h>
+#include <beep/pm.h>
+#include <beep/types.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/wait.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
+#include <beep/suspend.h>
+#include <beep/fsl_devices.h>
+#include <beep/of_platform.h>
+#include <beep/export.h>
 
 #include <asm/reg.h>
 #include <asm/io.h>

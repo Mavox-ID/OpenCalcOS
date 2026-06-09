@@ -21,15 +21,15 @@
 #define KMSG_COMPONENT "sbp_target"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/configfs.h>
-#include <linux/ctype.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/configfs.h>
+#include <beep/ctype.h>
+#include <beep/firewire.h>
+#include <beep/firewire-constants.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_tcq.h>
 #include <target/target_core_base.h>

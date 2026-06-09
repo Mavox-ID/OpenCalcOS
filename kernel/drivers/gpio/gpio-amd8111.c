@@ -25,11 +25,11 @@
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/gpio.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/gpio.h>
+#include <beep/pci.h>
+#include <beep/spinlock.h>
 
 #define PMBASE_OFFSET 0xb0
 #define PMBASE_SIZE   0x30
@@ -241,6 +241,6 @@ static void __exit amd_gpio_exit(void)
 module_init(amd_gpio_init);
 module_exit(amd_gpio_exit);
 
-MODULE_AUTHOR("The Linux Kernel team");
+MODULE_AUTHOR("The Beep Kernel team");
 MODULE_DESCRIPTION("GPIO driver for AMD chipsets");
 MODULE_LICENSE("GPL");

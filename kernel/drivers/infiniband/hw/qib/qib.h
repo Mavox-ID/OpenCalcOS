@@ -39,18 +39,18 @@
  * qib_user.h serves a similar purpose for user code.
  */
 
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/fs.h>
-#include <linux/completion.h>
-#include <linux/kref.h>
-#include <linux/sched.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/mutex.h>
+#include <beep/list.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/fs.h>
+#include <beep/completion.h>
+#include <beep/kref.h>
+#include <beep/sched.h>
 
 #include "qib_common.h"
 #include "qib_verbs.h"

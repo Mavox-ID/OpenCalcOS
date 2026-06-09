@@ -7,9 +7,9 @@
  * NOTE:  Do not use this for new drivers ever.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 
 #include <scsi/scsi_host.h>
 

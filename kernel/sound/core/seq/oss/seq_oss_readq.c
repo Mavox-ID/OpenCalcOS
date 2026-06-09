@@ -24,8 +24,8 @@
 #include "seq_oss_event.h"
 #include <sound/seq_oss_legacy.h>
 #include "../seq_lock.h"
-#include <linux/wait.h>
-#include <linux/slab.h>
+#include <beep/wait.h>
+#include <beep/slab.h>
 
 /*
  * constants

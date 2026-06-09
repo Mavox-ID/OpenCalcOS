@@ -15,29 +15,29 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/platform_data/pxa2xx_udc.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/io.h>
-#include <linux/prefetch.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/ioport.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/mm.h>
+#include <beep/platform_data/pxa2xx_udc.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/irq.h>
+#include <beep/clk.h>
+#include <beep/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/io.h>
+#include <beep/prefetch.h>
 
 #include <asm/byteorder.h>
 #include <asm/dma.h>
@@ -45,9 +45,9 @@
 #include <asm/mach-types.h>
 #include <asm/unaligned.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb/otg.h>
 
 /*
  * This driver is PXA25x only.  Grab the right register definitions.
@@ -101,7 +101,7 @@ static const char ep0name [] = "ep0";
 #error "Can't configure both IXP and PXA"
 #endif
 
-/* IXP doesn't yet support <linux/clk.h> */
+/* IXP doesn't yet support <beep/clk.h> */
 #define clk_get(dev,name)	NULL
 #define clk_enable(clk)		do { } while (0)
 #define clk_disable(clk)	do { } while (0)

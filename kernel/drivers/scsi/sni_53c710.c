@@ -26,18 +26,18 @@
  * Based on lasi700.c
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/mm.h>
-#include <linux/blkdev.h>
-#include <linux/sched.h>
-#include <linux/ioport.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/mm.h>
+#include <beep/blkdev.h>
+#include <beep/sched.h>
+#include <beep/ioport.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
 
 #include <asm/page.h>
 #include <asm/pgtable.h>

@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux Sun Openprom filesystem routines.
+# Makefile for the Beep Sun Openprom filesystem routines.
 #
 
 obj-$(CONFIG_SUN_OPENPROMFS) += openpromfs.o

@@ -1,7 +1,7 @@
 /*
  *  Driver for Conexant CX24113/CX24128 Tuner (Satellite)
  *
- *  Copyright (C) 2007-8 Patrick Boettcher <pb@linuxtv.org>
+ *  Copyright (C) 2007-8 Patrick Boettcher <pb@beeptv.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by

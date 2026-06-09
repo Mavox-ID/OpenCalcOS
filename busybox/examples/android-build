@@ -16,7 +16,7 @@ P=zoom2
 # Toolchain version in use by this version of Android
 GCCVER=4.4.3
 
-export PATH="$A/prebuilt/linux-x86/toolchain/arm-eabi-$GCCVER/bin:$PATH"
+export PATH="$A/prebuilt/beep-x86/toolchain/arm-eabi-$GCCVER/bin:$PATH"
 
 # Set the linker flags; compiler flags are in the defconfig file
 if grep "^CONFIG_STATIC=y" .config >/dev/null ; then

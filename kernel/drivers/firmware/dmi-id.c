@@ -6,12 +6,12 @@
  * Licensed under GPLv2
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/dmi.h>
-#include <linux/device.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/dmi.h>
+#include <beep/device.h>
+#include <beep/slab.h>
 
 struct dmi_device_attribute{
 	struct device_attribute dev_attr;

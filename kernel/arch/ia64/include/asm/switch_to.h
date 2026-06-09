@@ -11,7 +11,7 @@
 #ifndef _ASM_IA64_SWITCH_TO_H
 #define _ASM_IA64_SWITCH_TO_H
 
-#include <linux/percpu.h>
+#include <beep/percpu.h>
 
 struct task_struct;
 

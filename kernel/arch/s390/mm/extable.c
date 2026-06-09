@@ -1,5 +1,5 @@
-#include <linux/module.h>
-#include <linux/sort.h>
+#include <beep/module.h>
+#include <beep/sort.h>
 #include <asm/uaccess.h>
 
 /*

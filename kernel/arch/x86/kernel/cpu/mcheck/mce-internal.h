@@ -1,4 +1,4 @@
-#include <linux/device.h>
+#include <beep/device.h>
 #include <asm/mce.h>
 
 enum severity_level {

@@ -1,5 +1,5 @@
 #
-# Makefile for the linux cramfs routines.
+# Makefile for the beep cramfs routines.
 #
 
 obj-$(CONFIG_CRAMFS) += cramfs.o

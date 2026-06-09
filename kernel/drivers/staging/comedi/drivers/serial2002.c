@@ -2,7 +2,7 @@
     comedi/drivers/serial2002.c
     Skeleton code for a Comedi driver
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2002 Anders Blomdell <anders.blomdell@control.lth.se>
 
     This program is free software; you can redistribute it and/or modify
@@ -35,15 +35,15 @@ Status: in development
 
 #include "../comedidev.h"
 
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
-#include <linux/termios.h>
+#include <beep/termios.h>
 #include <asm/ioctls.h>
-#include <linux/serial.h>
-#include <linux/poll.h>
+#include <beep/serial.h>
+#include <beep/poll.h>
 
 struct serial2002_range_table_t {
 

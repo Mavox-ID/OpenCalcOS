@@ -7,10 +7,10 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/module.h>
+#include <beep/io.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/module.h>
 #include <asm/page.h>
 #include <asm/processor.h>
 

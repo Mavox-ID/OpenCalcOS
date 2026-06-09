@@ -1,13 +1,13 @@
-#include <linux/module.h>
-#include <linux/user.h>
-#include <linux/elfcore.h>
-#include <linux/sched.h>
-#include <linux/in6.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/tty.h>
+#include <beep/module.h>
+#include <beep/user.h>
+#include <beep/elfcore.h>
+#include <beep/sched.h>
+#include <beep/in6.h>
+#include <beep/interrupt.h>
+#include <beep/pm.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/tty.h>
 
 #include <asm/processor.h>
 #include <asm/uaccess.h>

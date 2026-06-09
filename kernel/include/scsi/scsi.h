@@ -1,6 +1,6 @@
 /*
  * This header file contains public constants and structures used by
- * the scsi code for linux.
+ * the scsi code for beep.
  *
  * For documentation on the OPCODES, MESSAGES, and SENSE values,
  * please consult the SCSI standard.
@@ -8,8 +8,8 @@
 #ifndef _SCSI_SCSI_H
 #define _SCSI_SCSI_H
 
-#include <linux/types.h>
-#include <linux/scatterlist.h>
+#include <beep/types.h>
+#include <beep/scatterlist.h>
 
 struct scsi_cmnd;
 
@@ -551,7 +551,7 @@ static inline int scsi_is_wlun(unsigned int lun)
 /*
  * Here are some scsi specific ioctl commands which are sometimes useful.
  *
- * Note that include/linux/cdrom.h also defines IOCTL 0x5300 - 0x5395
+ * Note that include/beep/cdrom.h also defines IOCTL 0x5300 - 0x5395
  */
 
 /* Used to obtain PUN and LUN info.  Conflicts with CDROMAUDIOBUFSIZ */

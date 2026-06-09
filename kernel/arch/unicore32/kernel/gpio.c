@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/gpio.c
+ * beep/arch/unicore32/kernel/gpio.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -12,14 +12,14 @@
  */
 /* in FPGA, no GPIO support */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/gpio.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/gpio.h>
 #include <mach/hardware.h>
 
 #ifdef CONFIG_LEDS
-#include <linux/leds.h>
-#include <linux/platform_device.h>
+#include <beep/leds.h>
+#include <beep/platform_device.h>
 
 static const struct gpio_led puv3_gpio_leds[] = {
 	{ .name = "cpuhealth", .gpio = GPO_CPU_HEALTH, .active_low = 0,

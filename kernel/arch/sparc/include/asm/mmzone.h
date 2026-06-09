@@ -3,7 +3,7 @@
 
 #ifdef CONFIG_NEED_MULTIPLE_NODES
 
-#include <linux/cpumask.h>
+#include <beep/cpumask.h>
 
 extern struct pglist_data *node_data[];
 

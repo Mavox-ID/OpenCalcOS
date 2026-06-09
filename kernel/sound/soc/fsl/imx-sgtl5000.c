@@ -10,11 +10,11 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_i2c.h>
-#include <linux/clk.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/of_i2c.h>
+#include <beep/clk.h>
 #include <sound/soc.h>
 
 #include "../codecs/sgtl5000.h"

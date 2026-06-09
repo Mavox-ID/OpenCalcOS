@@ -1,6 +1,6 @@
 /*
  * string.h: External definitions for optimized assembly string
- *           routines for the Linux Kernel.
+ *           routines for the Beep Kernel.
  *
  * Copyright (C) 1995,1996 David S. Miller (davem@caip.rutgers.edu)
  * Copyright (C) 1996,1997,1999 Jakub Jelinek (jakub@redhat.com)

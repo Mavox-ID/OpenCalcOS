@@ -5,9 +5,9 @@
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>
@@ -20,7 +20,7 @@ extern void restore_current(void);
  * XXX Have to look into what the return values mean. XXX
  */
 int
-prom_startcpu(int cpunode, struct linux_prom_registers *ctable_reg, int ctx, char *pc)
+prom_startcpu(int cpunode, struct beep_prom_registers *ctable_reg, int ctx, char *pc)
 {
 	int ret;
 	unsigned long flags;

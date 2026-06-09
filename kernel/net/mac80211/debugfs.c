@@ -8,8 +8,8 @@
  *
  */
 
-#include <linux/debugfs.h>
-#include <linux/rtnetlink.h>
+#include <beep/debugfs.h>
+#include <beep/rtnetlink.h>
 #include "ieee80211_i.h"
 #include "driver-ops.h"
 #include "rate.h"

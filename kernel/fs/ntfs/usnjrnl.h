@@ -1,6 +1,6 @@
 /*
  * usnjrnl.h - Defines for NTFS kernel transaction log ($UsnJrnl) handling.
- *	       Part of the Linux-NTFS project.
+ *	       Part of the Beep-NTFS project.
  *
  * Copyright (c) 2005 Anton Altaparmakov
  *
@@ -15,13 +15,13 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#ifndef _LINUX_NTFS_USNJRNL_H
-#define _LINUX_NTFS_USNJRNL_H
+#ifndef _BEEP_NTFS_USNJRNL_H
+#define _BEEP_NTFS_USNJRNL_H
 
 #ifdef NTFS_RW
 
@@ -112,8 +112,8 @@ typedef struct {
 /*
  * Reason flags (32-bit).  Cumulative flags describing the change(s) to the
  * file since it was last opened.  I think the names speak for themselves but
- * if you disagree check out the descriptions in the Linux NTFS project NTFS
- * documentation: http://www.linux-ntfs.org/
+ * if you disagree check out the descriptions in the Beep NTFS project NTFS
+ * documentation: http://www.beep-ntfs.org/
  */
 enum {
 	USN_REASON_DATA_OVERWRITE	= cpu_to_le32(0x00000001),
@@ -143,9 +143,9 @@ typedef le32 USN_REASON_FLAGS;
 
 /*
  * Source info flags (32-bit).  Information about the source of the change(s)
- * to the file.  For detailed descriptions of what these mean, see the Linux
+ * to the file.  For detailed descriptions of what these mean, see the Beep
  * NTFS project NTFS documentation:
- *	http://www.linux-ntfs.org/
+ *	http://www.beep-ntfs.org/
  */
 enum {
 	USN_SOURCE_DATA_MANAGEMENT	  = cpu_to_le32(0x00000001),
@@ -202,4 +202,4 @@ extern bool ntfs_stamp_usnjrnl(ntfs_volume *vol);
 
 #endif /* NTFS_RW */
 
-#endif /* _LINUX_NTFS_USNJRNL_H */
+#endif /* _BEEP_NTFS_USNJRNL_H */

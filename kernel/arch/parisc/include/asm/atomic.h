@@ -1,11 +1,11 @@
 /* Copyright (C) 2000 Philipp Rumpf <prumpf@tux.org>
- * Copyright (C) 2006 Kyle McMartin <kyle@parisc-linux.org>
+ * Copyright (C) 2006 Kyle McMartin <kyle@parisc-beep.org>
  */
 
 #ifndef _ASM_PARISC_ATOMIC_H_
 #define _ASM_PARISC_ATOMIC_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/cmpxchg.h>
 
 /*

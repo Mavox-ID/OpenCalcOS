@@ -29,23 +29,23 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/i2c/twl.h>
-#include <linux/i2c/twl4030-madc.h>
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/mutex.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
-#include <linux/types.h>
-#include <linux/gfp.h>
-#include <linux/err.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/i2c/twl.h>
+#include <beep/i2c/twl4030-madc.h>
+#include <beep/module.h>
+#include <beep/stddef.h>
+#include <beep/mutex.h>
+#include <beep/bitops.h>
+#include <beep/jiffies.h>
+#include <beep/types.h>
+#include <beep/gfp.h>
+#include <beep/err.h>
 
 /*
  * struct twl4030_madc_data - a container for madc info

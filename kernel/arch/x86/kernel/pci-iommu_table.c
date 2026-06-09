@@ -1,7 +1,7 @@
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 #include <asm/iommu_table.h>
-#include <linux/string.h>
-#include <linux/kallsyms.h>
+#include <beep/string.h>
+#include <beep/kallsyms.h>
 
 
 #define DEBUG 1

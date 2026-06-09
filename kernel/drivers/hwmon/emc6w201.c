@@ -1,6 +1,6 @@
 /*
  * emc6w201.c - Hardware monitoring driver for the SMSC EMC6W201
- * Copyright (C) 2011  Jean Delvare <khali@linux-fr.org>
+ * Copyright (C) 2011  Jean Delvare <khali@beep-fr.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,15 +17,15 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/jiffies.h>
+#include <beep/i2c.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
 
 /*
  * Addresses to scan
@@ -548,6 +548,6 @@ static struct i2c_driver emc6w201_driver = {
 
 module_i2c_driver(emc6w201_driver);
 
-MODULE_AUTHOR("Jean Delvare <khali@linux-fr.org>");
+MODULE_AUTHOR("Jean Delvare <khali@beep-fr.org>");
 MODULE_DESCRIPTION("SMSC EMC6W201 hardware monitoring driver");
 MODULE_LICENSE("GPL");

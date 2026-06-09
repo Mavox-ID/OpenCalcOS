@@ -1,12 +1,12 @@
 #ifndef _SCSI_SCSI_DEVICE_H
 #define _SCSI_SCSI_DEVICE_H
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/blkdev.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/blkdev.h>
 #include <scsi/scsi.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 struct device;
 struct request_queue;

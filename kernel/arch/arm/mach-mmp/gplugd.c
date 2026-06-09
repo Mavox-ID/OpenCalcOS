@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-mmp/gplugd.c
+ *  beep/arch/arm/mach-mmp/gplugd.c
  *
  *  Support for the Marvell PXA168-based GuruPlug Display (gplugD) Platform.
  *
@@ -8,8 +8,8 @@
  *  publishhed by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/gpio.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach-types.h>

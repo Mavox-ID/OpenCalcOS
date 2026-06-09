@@ -19,8 +19,8 @@
  * Copyright (C) 2004 Silicon Graphics, Inc.
  *   Jesse Barnes <jbarnes@sgi.com>
  */
-#include <linux/topology.h>
-#include <linux/module.h>
+#include <beep/topology.h>
+#include <beep/module.h>
 #include <asm/processor.h>
 #include <asm/smp.h>
 

@@ -7,17 +7,17 @@
  * Copyright (C) 2004 Intel Corp.
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/pci-aspm.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/module.h>
+#include <beep/pci-aspm.h>
 #include <acpi/acpi.h>
 #include <acpi/acpi_bus.h>
 
-#include <linux/pci-acpi.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_qos.h>
+#include <beep/pci-acpi.h>
+#include <beep/pm_runtime.h>
+#include <beep/pm_qos.h>
 #include "pci.h"
 
 /**

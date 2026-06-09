@@ -2,13 +2,13 @@
  * Intel AGPGART routines.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/pagemap.h>
-#include <linux/agp_backend.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/pagemap.h>
+#include <beep/agp_backend.h>
 #include <asm/smp.h>
 #include "agp.h"
 #include "intel-agp.h"

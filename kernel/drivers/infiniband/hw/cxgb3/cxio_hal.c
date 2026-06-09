@@ -31,13 +31,13 @@
  */
 #include <asm/delay.h>
 
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <beep/mutex.h>
+#include <beep/netdevice.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
 #include <net/net_namespace.h>
 
 #include "cxio_resource.h"

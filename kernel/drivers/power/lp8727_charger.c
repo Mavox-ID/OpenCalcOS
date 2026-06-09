@@ -10,12 +10,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/power_supply.h>
-#include <linux/platform_data/lp8727.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/power_supply.h>
+#include <beep/platform_data/lp8727.h>
 
 #define LP8788_NUM_INTREGS	2
 #define DEFAULT_DEBOUNCE_MSEC	270

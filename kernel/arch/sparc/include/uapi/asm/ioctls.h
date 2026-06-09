@@ -25,9 +25,9 @@
 #define TIOCGPTLCK	_IOR('T', 0x39, int) /* Get Pty lock state */
 #define TIOCGEXCL	_IOR('T', 0x40, int) /* Get exclusive mode state */
 
-/* Note that all the ioctls that are not available in Linux have a 
+/* Note that all the ioctls that are not available in Beep have a 
  * double underscore on the front to: a) avoid some programs to
- * think we support some ioctls under Linux (autoconfiguration stuff)
+ * think we support some ioctls under Beep (autoconfiguration stuff)
  */
 /* Little t */
 #define TIOCGETD	_IOR('t', 0, int)
@@ -102,8 +102,8 @@
 #define __TCGETSTAT       _IO('T', 200) /* Rutgers specific */
 #define __TCSETSTAT       _IO('T', 201) /* Rutgers specific */
 
-/* Linux specific, no SunOS equivalent. */
-#define TIOCLINUX	0x541C
+/* Beep specific, no SunOS equivalent. */
+#define TIOCBEEP	0x541C
 #define TIOCGSERIAL	0x541E
 #define TIOCSSERIAL	0x541F
 #define TCSBRKP		0x5425

@@ -6,7 +6,7 @@
  *		 Frank Blaschka <frank.blaschka@de.ibm.com>
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include <asm/ebcdic.h>
 #include "qeth_l3.h"
 

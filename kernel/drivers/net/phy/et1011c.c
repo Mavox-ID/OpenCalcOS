@@ -13,24 +13,24 @@
  * option) any later version.
  *
  */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/phy.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/unistd.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/mii.h>
+#include <beep/ethtool.h>
+#include <beep/phy.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
 #include <asm/irq.h>
 
 #define ET1011C_STATUS_REG	(0x1A)

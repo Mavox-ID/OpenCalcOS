@@ -9,12 +9,12 @@
  *	2 as published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/tty.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
 
 #define DRIVER_AUTHOR "Thomas Hergenhahn@web.de http://libnodave.sf.net"
 #define DRIVER_DESC "Driver for Siemens USB/MPI adapter"

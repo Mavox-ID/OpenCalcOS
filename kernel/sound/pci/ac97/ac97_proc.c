@@ -22,7 +22,7 @@
  *
  */
 
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 
 #include <sound/core.h>
 #include <sound/ac97_codec.h>

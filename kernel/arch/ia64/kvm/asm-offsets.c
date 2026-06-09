@@ -22,8 +22,8 @@
  *
  */
 
-#include <linux/kvm_host.h>
-#include <linux/kbuild.h>
+#include <beep/kvm_host.h>
+#include <beep/kbuild.h>
 
 #include "vcpu.h"
 

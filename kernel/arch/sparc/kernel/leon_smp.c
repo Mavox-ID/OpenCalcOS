@@ -8,29 +8,29 @@
 
 #include <asm/head.h>
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/threads.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/of.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/profile.h>
-#include <linux/pm.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/cpu.h>
-#include <linux/clockchips.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/threads.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/of.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/profile.h>
+#include <beep/pm.h>
+#include <beep/delay.h>
+#include <beep/gfp.h>
+#include <beep/cpu.h>
+#include <beep/clockchips.h>
 
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>
 
 #include <asm/ptrace.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/irq_regs.h>
 #include <asm/traps.h>
 
@@ -119,7 +119,7 @@ void __cpuinit leon_callin(void)
  *	Cycle through the processors asking the PROM to start each one.
  */
 
-extern struct linux_prom_registers smp_penguin_ctable;
+extern struct beep_prom_registers smp_penguin_ctable;
 
 void __cpuinit leon_configure_cache_smp(void)
 {
@@ -501,7 +501,7 @@ static const struct sparc32_ipi_ops leon_ipi_ops = {
 void __init leon_init_smp(void)
 {
 	/* Patch ipi15 trap table */
-	t_nmi[1] = t_nmi[1] + (linux_trap_ipi15_leon - linux_trap_ipi15_sun4m);
+	t_nmi[1] = t_nmi[1] + (beep_trap_ipi15_leon - beep_trap_ipi15_sun4m);
 
 	sparc32_ipi_ops = &leon_ipi_ops;
 }

@@ -12,8 +12,8 @@
  * All code mutation routines here are called under stop_machine().
  */
 
-#include <linux/ftrace.h>
-#include <linux/uaccess.h>
+#include <beep/ftrace.h>
+#include <beep/uaccess.h>
 
 #include <asm/cacheflush.h>
 #include <asm/opcodes.h>

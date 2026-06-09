@@ -9,12 +9,12 @@
  * - Add support for multiple requests to be queued.
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
 #include <asm/io.h>
 #include <asm/prom.h>
 #include <asm/mpc52xx.h>

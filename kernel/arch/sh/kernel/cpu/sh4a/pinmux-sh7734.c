@@ -8,10 +8,10 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/gpio.h>
-#include <linux/ioport.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/gpio.h>
+#include <beep/ioport.h>
 #include <cpu/sh7734.h>
 
 #define CPU_32_PORT(fn, pfx, sfx)				\

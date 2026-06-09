@@ -16,12 +16,12 @@
    Suite 330, Boston, MA 02111-1307, USA.
 -----------------------------------------------------------------------------*/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
-#include <linux/netdevice.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/proc_fs.h>
+#include <beep/string.h>
+#include <beep/vmalloc.h>
+#include <beep/netdevice.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
 #include "ft1000.h"

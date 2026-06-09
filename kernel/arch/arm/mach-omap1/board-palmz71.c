@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/board-palmz71.c
+ * beep/arch/arm/mach-omap1/board-palmz71.c
  *
  * Modified from board-generic.c
  *
@@ -14,23 +14,23 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/notifier.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/omapfb.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/platform_data/omap1_bl.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/notifier.h>
+#include <beep/clk.h>
+#include <beep/irq.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/omapfb.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/ads7846.h>
+#include <beep/platform_data/omap1_bl.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -38,10 +38,10 @@
 
 #include <mach/flash.h>
 #include <mach/mux.h>
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 #include <mach/tc.h>
 #include <mach/irda.h>
-#include <linux/platform_data/keypad-omap.h>
+#include <beep/platform_data/keypad-omap.h>
 
 #include <mach/hardware.h>
 #include <mach/usb.h>

@@ -7,24 +7,24 @@
  * of the GNU General Public License version 2.
  */
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
-#include <linux/blkdev.h>
-#include <linux/mm.h>
-#include <linux/mount.h>
-#include <linux/fs.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/falloc.h>
-#include <linux/swap.h>
-#include <linux/crc32.h>
-#include <linux/writeback.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
+#include <beep/buffer_head.h>
+#include <beep/pagemap.h>
+#include <beep/uio.h>
+#include <beep/blkdev.h>
+#include <beep/mm.h>
+#include <beep/mount.h>
+#include <beep/fs.h>
+#include <beep/gfs2_ondisk.h>
+#include <beep/falloc.h>
+#include <beep/swap.h>
+#include <beep/crc32.h>
+#include <beep/writeback.h>
 #include <asm/uaccess.h>
-#include <linux/dlm.h>
-#include <linux/dlm_plock.h>
+#include <beep/dlm.h>
+#include <beep/dlm_plock.h>
 
 #include "gfs2.h"
 #include "incore.h"
@@ -253,7 +253,7 @@ static int do_gfs2_set_flags(struct file *filp, u32 reqflags, u32 mask)
 	if (IS_APPEND(inode) && (new_flags & GFS2_DIF_APPENDONLY))
 		goto out;
 	if (((new_flags ^ flags) & GFS2_DIF_IMMUTABLE) &&
-	    !capable(CAP_LINUX_IMMUTABLE))
+	    !capable(CAP_BEEP_IMMUTABLE))
 		goto out;
 	if (!IS_IMMUTABLE(inode)) {
 		error = gfs2_permission(inode, MAY_WRITE);

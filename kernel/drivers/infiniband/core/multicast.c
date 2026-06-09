@@ -30,14 +30,14 @@
  * SOFTWARE.
  */
 
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/random.h>
+#include <beep/completion.h>
+#include <beep/dma-mapping.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/bitops.h>
+#include <beep/random.h>
 
 #include <rdma/ib_cache.h>
 #include "sa.h"

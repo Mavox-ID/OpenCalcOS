@@ -10,11 +10,11 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/usb.h>
-#include <linux/netdevice.h>
-#include <linux/bitrev.h>
+#include <beep/init.h>
+#include <beep/gfp.h>
+#include <beep/usb.h>
+#include <beep/netdevice.h>
+#include <beep/bitrev.h>
 #include "st5481.h"
 
 static inline void B_L1L2(struct st5481_bcs *bcs, int pr, void *arg)

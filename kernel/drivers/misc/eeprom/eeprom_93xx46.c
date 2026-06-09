@@ -8,16 +8,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/sysfs.h>
-#include <linux/eeprom_93xx46.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/spi/spi.h>
+#include <beep/sysfs.h>
+#include <beep/eeprom_93xx46.h>
 
 #define OP_START	0x4
 #define OP_WRITE	(OP_START | 0x1)

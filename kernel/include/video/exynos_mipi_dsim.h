@@ -15,8 +15,8 @@
 #ifndef _EXYNOS_MIPI_DSIM_H
 #define _EXYNOS_MIPI_DSIM_H
 
-#include <linux/device.h>
-#include <linux/fb.h>
+#include <beep/device.h>
+#include <beep/fb.h>
 
 #define PANEL_NAME_SIZE		(32)
 

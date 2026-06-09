@@ -9,18 +9,18 @@
  *      Venkatesh Pallipadi <venkatesh.pallipadi@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
 #include <asm/pal.h>
 
-#include <linux/acpi.h>
+#include <beep/acpi.h>
 #include <acpi/processor.h>
 
 MODULE_AUTHOR("Venkatesh Pallipadi");

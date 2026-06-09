@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2410/mach-bast.c
+/* beep/arch/arm/mach-s3c2410/mach-bast.c
  *
  * Copyright 2003-2008 Simtec Electronics
  *   Ben Dooks <ben@simtec.co.uk>
@@ -10,20 +10,20 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/syscore_ops.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/dm9000.h>
-#include <linux/ata_platform.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/syscore_ops.h>
+#include <beep/serial_core.h>
+#include <beep/platform_device.h>
+#include <beep/dm9000.h>
+#include <beep/ata_platform.h>
+#include <beep/i2c.h>
+#include <beep/io.h>
 
 #include <net/ax88796.h>
 
@@ -45,24 +45,24 @@
 #include <mach/regs-mem.h>
 #include <mach/regs-lcd.h>
 
-#include <linux/platform_data/hwmon-s3c.h>
-#include <linux/platform_data/mtd-nand-s3c2410.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/hwmon-s3c.h>
+#include <beep/platform_data/mtd-nand-s3c2410.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 #include <mach/fb.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand_ecc.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/nand_ecc.h>
+#include <beep/mtd/partitions.h>
 
-#include <linux/serial_8250.h>
+#include <beep/serial_8250.h>
 
 #include <plat/clock.h>
 #include <plat/devs.h>
 #include <plat/cpu.h>
 #include <plat/cpu-freq.h>
 #include <plat/gpio-cfg.h>
-#include <linux/platform_data/asoc-s3c24xx_simtec.h>
+#include <beep/platform_data/asoc-s3c24xx_simtec.h>
 
 #include "simtec.h"
 #include "common.h"

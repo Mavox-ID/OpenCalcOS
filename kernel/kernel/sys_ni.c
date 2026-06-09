@@ -1,10 +1,10 @@
 
-#include <linux/linkage.h>
-#include <linux/errno.h>
+#include <beep/linkage.h>
+#include <beep/errno.h>
 
 #include <asm/unistd.h>
 
-/*  we can't #include <linux/syscalls.h> here,
+/*  we can't #include <beep/syscalls.h> here,
     but tell gcc to not warn with -Wmissing-prototypes  */
 asmlinkage long sys_ni_syscall(void);
 

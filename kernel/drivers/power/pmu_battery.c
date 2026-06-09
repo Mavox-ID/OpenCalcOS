@@ -8,13 +8,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/power_supply.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/power_supply.h>
+#include <beep/adb.h>
+#include <beep/pmu.h>
+#include <beep/slab.h>
 
 static struct pmu_battery_dev {
 	struct power_supply bat;

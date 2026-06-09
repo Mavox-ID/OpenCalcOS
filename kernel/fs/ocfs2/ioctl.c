@@ -1,13 +1,13 @@
 /*
- * linux/fs/ocfs2/ioctl.c
+ * beep/fs/ocfs2/ioctl.c
  *
  * Copyright (C) 2006 Herbert Poetzl
  * adapted from Remy Card's ext2/ioctl.c
  */
 
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/compat.h>
+#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/compat.h>
 
 #include <cluster/masklog.h>
 
@@ -119,7 +119,7 @@ static int ocfs2_set_inode_attr(struct inode *inode, unsigned flags,
 	status = -EPERM;
 	if ((oldflags & OCFS2_IMMUTABLE_FL) || ((flags ^ oldflags) &
 		(OCFS2_APPEND_FL | OCFS2_IMMUTABLE_FL))) {
-		if (!capable(CAP_LINUX_IMMUTABLE))
+		if (!capable(CAP_BEEP_IMMUTABLE))
 			goto bail_commit;
 	}
 

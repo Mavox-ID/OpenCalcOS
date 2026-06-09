@@ -15,8 +15,8 @@
 #ifndef _ASM_TILE_BITOPS_32_H
 #define _ASM_TILE_BITOPS_32_H
 
-#include <linux/compiler.h>
-#include <linux/atomic.h>
+#include <beep/compiler.h>
+#include <beep/atomic.h>
 
 /* Tile-specific routines to support <asm/bitops.h>. */
 unsigned long _atomic_or(volatile unsigned long *p, unsigned long mask);

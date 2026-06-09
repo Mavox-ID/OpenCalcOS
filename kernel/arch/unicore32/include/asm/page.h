@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/asm/page.h
+ * beep/arch/unicore32/include/asm/page.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *

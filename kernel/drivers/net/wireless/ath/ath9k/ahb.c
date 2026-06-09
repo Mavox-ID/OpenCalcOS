@@ -16,10 +16,10 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/nl80211.h>
-#include <linux/platform_device.h>
-#include <linux/ath9k_platform.h>
-#include <linux/module.h>
+#include <beep/nl80211.h>
+#include <beep/platform_device.h>
+#include <beep/ath9k_platform.h>
+#include <beep/module.h>
 #include "ath9k.h"
 
 static const struct platform_device_id ath9k_platform_id_table[] = {

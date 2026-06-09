@@ -1,7 +1,7 @@
 /*
  * Process creation support for Hexagon
  *
- * Copyright (c) 2010-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2012, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -18,12 +18,12 @@
  * 02110-1301, USA.
  */
 
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/tick.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/tick.h>
+#include <beep/uaccess.h>
+#include <beep/slab.h>
 
 /*
  * Program thread launch.  Often defined as a macro in processor.h,

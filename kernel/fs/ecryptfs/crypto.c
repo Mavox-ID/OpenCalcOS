@@ -1,5 +1,5 @@
 /**
- * eCryptfs: Linux filesystem encryption layer
+ * eCryptfs: Beep filesystem encryption layer
  *
  * Copyright (C) 1997-2004 Erez Zadok
  * Copyright (C) 2001-2004 Stony Brook University
@@ -23,17 +23,17 @@
  * 02111-1307, USA.
  */
 
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/random.h>
-#include <linux/compiler.h>
-#include <linux/key.h>
-#include <linux/namei.h>
-#include <linux/crypto.h>
-#include <linux/file.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/pagemap.h>
+#include <beep/random.h>
+#include <beep/compiler.h>
+#include <beep/key.h>
+#include <beep/namei.h>
+#include <beep/crypto.h>
+#include <beep/file.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
 #include <asm/unaligned.h>
 #include "ecryptfs_kernel.h"
 

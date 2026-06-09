@@ -6,12 +6,12 @@
 #define KMSG_COMPONENT "cpu"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/seq_file.h>
-#include <linux/delay.h>
-#include <linux/cpu.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/seq_file.h>
+#include <beep/delay.h>
+#include <beep/cpu.h>
 #include <asm/elf.h>
 #include <asm/lowcore.h>
 #include <asm/param.h>

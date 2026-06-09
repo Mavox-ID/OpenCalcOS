@@ -1,7 +1,7 @@
 #ifndef __ASM_CRIS_USER_H
 #define __ASM_CRIS_USER_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/ptrace.h>
 #include <asm/page.h>
 #include <arch/user.h>
@@ -9,7 +9,7 @@
 /*
  * Core file format: The core file is written in such a way that gdb
  * can understand it and provide useful information to the user (under
- * linux we use the `trad-core' bfd).  The file contents are as follows:
+ * beep we use the `trad-core' bfd).  The file contents are as follows:
  *
  *  upage: 1 page consisting of a user struct that tells gdb
  *	what is present in the file.  Directly after this is a

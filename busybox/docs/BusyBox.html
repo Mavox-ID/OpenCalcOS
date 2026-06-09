@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>BusyBox - The Swiss Army Knife of Embedded Linux</title>
+<title>BusyBox - The Swiss Army Knife of Embedded Beep</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rev="made" href="mailto:" />
 </head>
@@ -13,7 +13,7 @@
 
 <h1 id="NAME">NAME</h1>
 
-<p>BusyBox - The Swiss Army Knife of Embedded Linux</p>
+<p>BusyBox - The Swiss Army Knife of Embedded Beep</p>
 
 <h1 id="SYNTAX">SYNTAX</h1>
 
@@ -23,9 +23,9 @@
 
 <h1 id="DESCRIPTION">DESCRIPTION</h1>
 
-<p>BusyBox combines tiny versions of many common UNIX utilities into a single small executable. It provides minimalist replacements for most of the utilities you usually find in GNU coreutils, util-linux, etc. The utilities in BusyBox generally have fewer options than their full-featured GNU cousins; however, the options that are included provide the expected functionality and behave very much like their GNU counterparts.</p>
+<p>BusyBox combines tiny versions of many common UNIX utilities into a single small executable. It provides minimalist replacements for most of the utilities you usually find in GNU coreutils, util-beep, etc. The utilities in BusyBox generally have fewer options than their full-featured GNU cousins; however, the options that are included provide the expected functionality and behave very much like their GNU counterparts.</p>
 
-<p>BusyBox has been written with size-optimization and limited resources in mind. It is also extremely modular so you can easily include or exclude commands (or features) at compile time. This makes it easy to customize your embedded systems. To create a working system, just add /dev, /conf, and a Linux kernel. BusyBox provides a fairly complete POSIX environment for any small or embedded system.</p>
+<p>BusyBox has been written with size-optimization and limited resources in mind. It is also extremely modular so you can easily include or exclude commands (or features) at compile time. This makes it easy to customize your embedded systems. To create a working system, just add /dev, /conf, and a Beep kernel. BusyBox provides a fairly complete POSIX environment for any small or embedded system.</p>
 
 <p>BusyBox is extremely configurable. This allows you to include only the components you need, thereby reducing binary size. Run &#39;make config&#39; or &#39;make menuconfig&#39; to select the functionality that you wish to enable. Then run &#39;make&#39; to compile BusyBox using your configuration.</p>
 
@@ -60,23 +60,15 @@
 
 <p>Currently available applets include:</p>
 
-<pre><code>[, [[, basename, bash, cat, chmod, clear, cp, dd, dirname, dmesg,
-echo, find, free, hd, hexdump, hexedit, hush, i2cdetect, i2cdump,
-i2cget, i2cset, i2ctransfer, init, kill, linuxrc, ln, ls, mkdir,
-mount, mountpoint, mv, poweroff, printf, ps, pwd, reboot, rm, rmdir,
-setsid, sh, sha256sum, sleep, su, test, top, touch, true, umount,
-uname, uptime, vi, watch, which, xxd, yes</code></pre>
+<pre><code>bash, beeprc, busybox, cat, chmod, clear, cp, dd, dmesg, echo, free,
+halt, hexdump, hexedit, hush, init, kill, ln, ls, mkdir, mount,
+mountpoint, mv, poweroff, printf, pwd, reboot, rm, rmdir, sh,
+sha256sum, sleep, top, touch, umount, uname, uptime, watch</code></pre>
 
 <h1 id="COMMAND-DESCRIPTIONS">COMMAND DESCRIPTIONS</h1>
 
 <dl>
 
-<dt id="basename"><b>basename</b></dt>
-<dd>
-
-<p>basename FILE [SUFFIX] | -a FILE... | -s SUFFIX FILE...</p>
-
-</dd>
 <dt id="bash"><b>bash</b></dt>
 <dd>
 
@@ -113,12 +105,6 @@ uname, uptime, vi, watch, which, xxd, yes</code></pre>
 <p>dd [if=FILE] [of=FILE] [ibs=N obs=N/bs=N] [count=N] [skip=N] [seek=N] [conv=notrunc|noerror|sync|fsync] [iflag=skip_bytes|count_bytes|fullblock|direct] [oflag=seek_bytes|append|direct]</p>
 
 </dd>
-<dt id="dirname"><b>dirname</b></dt>
-<dd>
-
-<p>dirname FILENAME</p>
-
-</dd>
 <dt id="dmesg"><b>dmesg</b></dt>
 <dd>
 
@@ -131,22 +117,16 @@ uname, uptime, vi, watch, which, xxd, yes</code></pre>
 <p>echo [-neE] [ARG]...</p>
 
 </dd>
-<dt id="find"><b>find</b></dt>
-<dd>
-
-<p>find [-HL] [PATH]... [OPTIONS] [ACTIONS]</p>
-
-</dd>
 <dt id="free"><b>free</b></dt>
 <dd>
 
 <p>free</p>
 
 </dd>
-<dt id="hd"><b>hd</b></dt>
+<dt id="halt"><b>halt</b></dt>
 <dd>
 
-<p>hd FILE...</p>
+<p>halt [-d DELAY] [-nfw]</p>
 
 </dd>
 <dt id="hexdump"><b>hexdump</b></dt>
@@ -165,36 +145,6 @@ uname, uptime, vi, watch, which, xxd, yes</code></pre>
 <dd>
 
 <p>hush [-enxl] [-c &#39;SCRIPT&#39; [ARG0 ARGS] | FILE ARGS | -s ARGS]</p>
-
-</dd>
-<dt id="i2cdetect"><b>i2cdetect</b></dt>
-<dd>
-
-<p>i2cdetect -l | -F I2CBUS | [-ya] [-q|-r] I2CBUS [FIRST LAST]</p>
-
-</dd>
-<dt id="i2cdump"><b>i2cdump</b></dt>
-<dd>
-
-<p>i2cdump [-fy] [-r FIRST-LAST] BUS ADDR [MODE]</p>
-
-</dd>
-<dt id="i2cget"><b>i2cget</b></dt>
-<dd>
-
-<p>i2cget [-fy] BUS CHIP-ADDRESS [DATA-ADDRESS [MODE]]</p>
-
-</dd>
-<dt id="i2cset"><b>i2cset</b></dt>
-<dd>
-
-<p>i2cset [-fy] [-m MASK] BUS CHIP-ADDRESS DATA-ADDRESS [VALUE] ... [MODE]</p>
-
-</dd>
-<dt id="i2ctransfer"><b>i2ctransfer</b></dt>
-<dd>
-
-<p>i2ctransfer [-fay] I2CBUS { rLENGTH[@ADDR] | wLENGTH[@ADDR] DATA...}...</p>
 
 </dd>
 <dt id="init"><b>init</b></dt>
@@ -257,12 +207,6 @@ uname, uptime, vi, watch, which, xxd, yes</code></pre>
 <p>printf FORMAT [ARG]...</p>
 
 </dd>
-<dt id="ps"><b>ps</b></dt>
-<dd>
-
-<p>ps</p>
-
-</dd>
 <dt id="pwd"><b>pwd</b></dt>
 <dd>
 
@@ -287,12 +231,6 @@ uname, uptime, vi, watch, which, xxd, yes</code></pre>
 <p>rmdir [-p] DIRECTORY...</p>
 
 </dd>
-<dt id="setsid"><b>setsid</b></dt>
-<dd>
-
-<p>setsid [-c] PROG ARGS</p>
-
-</dd>
 <dt id="sh"><b>sh</b></dt>
 <dd>
 
@@ -309,12 +247,6 @@ uname, uptime, vi, watch, which, xxd, yes</code></pre>
 <dd>
 
 <p>sleep [N]...</p>
-
-</dd>
-<dt id="su"><b>su</b></dt>
-<dd>
-
-<p>su [-lmp] [-s SH] [-] [USER [FILE ARGS | -c &#39;CMD&#39; [ARG0 ARGS]]]</p>
 
 </dd>
 <dt id="top"><b>top</b></dt>
@@ -347,34 +279,10 @@ uname, uptime, vi, watch, which, xxd, yes</code></pre>
 <p>uptime</p>
 
 </dd>
-<dt id="vi"><b>vi</b></dt>
-<dd>
-
-<p>vi [-c CMD] [-R] [-H] [FILE]...</p>
-
-</dd>
 <dt id="watch"><b>watch</b></dt>
 <dd>
 
 <p>watch [-n SEC] [-t] PROG ARGS</p>
-
-</dd>
-<dt id="which"><b>which</b></dt>
-<dd>
-
-<p>which [-a] COMMAND...</p>
-
-</dd>
-<dt id="xxd"><b>xxd</b></dt>
-<dd>
-
-<p>xxd [-pri] [-g N] [-c N] [-l LEN] [-s OFS] [-o OFS] [FILE]</p>
-
-</dd>
-<dt id="yes"><b>yes</b></dt>
-<dd>
-
-<p>yes [STRING]</p>
 
 </dd>
 </dl>
@@ -391,7 +299,7 @@ uname, uptime, vi, watch, which, xxd, yes</code></pre>
 
 <h1 id="MAINTAINER">MAINTAINER</h1>
 
-<p>Denis Vlasenko &lt;vda.linux@googlemail.com&gt;</p>
+<p>Denis Vlasenko &lt;vda.beep@googlemail.com&gt;</p>
 
 <h1 id="AUTHORS">AUTHORS</h1>
 
@@ -453,7 +361,7 @@ nobody is going to actually read.</code></pre>
 <p>Dave Cinege &lt;dcinege@psychosis.com&gt;</p>
 
 <pre><code>more(v2), makedevs, dutmp, modularization, auto links file,
-various fixes, Linux Router Project maintenance</code></pre>
+various fixes, Beep Router Project maintenance</code></pre>
 
 <br>
 

@@ -7,11 +7,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/efi.h>
-#include <linux/io.h>
-#include <linux/vmalloc.h>
+#include <beep/compiler.h>
+#include <beep/module.h>
+#include <beep/efi.h>
+#include <beep/io.h>
+#include <beep/vmalloc.h>
 #include <asm/io.h>
 #include <asm/meminit.h>
 

@@ -3,11 +3,11 @@
  *
  * Benjamin Herrenschmidt <benh@kernel.crashing.org>
  */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/memblock.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/memblock.h>
 
 #include <asm/sections.h>
 #include <asm/prom.h>
@@ -160,33 +160,33 @@ int btext_initialize(struct device_node *np)
 	unsigned long address = 0;
 	const u32 *prop;
 
-	prop = of_get_property(np, "linux,bootx-width", NULL);
+	prop = of_get_property(np, "beep,bootx-width", NULL);
 	if (prop == NULL)
 		prop = of_get_property(np, "width", NULL);
 	if (prop == NULL)
 		return -EINVAL;
 	width = *prop;
-	prop = of_get_property(np, "linux,bootx-height", NULL);
+	prop = of_get_property(np, "beep,bootx-height", NULL);
 	if (prop == NULL)
 		prop = of_get_property(np, "height", NULL);
 	if (prop == NULL)
 		return -EINVAL;
 	height = *prop;
-	prop = of_get_property(np, "linux,bootx-depth", NULL);
+	prop = of_get_property(np, "beep,bootx-depth", NULL);
 	if (prop == NULL)
 		prop = of_get_property(np, "depth", NULL);
 	if (prop == NULL)
 		return -EINVAL;
 	depth = *prop;
 	pitch = width * ((depth + 7) / 8);
-	prop = of_get_property(np, "linux,bootx-linebytes", NULL);
+	prop = of_get_property(np, "beep,bootx-linebytes", NULL);
 	if (prop == NULL)
 		prop = of_get_property(np, "linebytes", NULL);
 	if (prop && *prop != 0xffffffffu)
 		pitch = *prop;
 	if (pitch == 1)
 		pitch = 0x1000;
-	prop = of_get_property(np, "linux,bootx-addr", NULL);
+	prop = of_get_property(np, "beep,bootx-addr", NULL);
 	if (prop == NULL)
 		prop = of_get_property(np, "address", NULL);
 	if (prop)
@@ -220,7 +220,7 @@ int __init btext_find_display(int allow_nonstdout)
 	struct device_node *np = NULL; 
 	int rc = -ENODEV;
 
-	name = of_get_property(of_chosen, "linux,stdout-path", NULL);
+	name = of_get_property(of_chosen, "beep,stdout-path", NULL);
 	if (name != NULL) {
 		np = of_find_node_by_path(name);
 		if (np != NULL) {
@@ -237,7 +237,7 @@ int __init btext_find_display(int allow_nonstdout)
 		return rc;
 
 	for_each_node_by_type(np, "display") {
-		if (of_get_property(np, "linux,opened", NULL)) {
+		if (of_get_property(np, "beep,opened", NULL)) {
 			printk("trying %s ...\n", np->full_name);
 			rc = btext_initialize(np);
 			printk("result: %d\n", rc);

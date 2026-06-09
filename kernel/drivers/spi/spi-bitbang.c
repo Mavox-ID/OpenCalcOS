@@ -16,18 +16,18 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_bitbang.h>
 
 
 /*----------------------------------------------------------------------*/

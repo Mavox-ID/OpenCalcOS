@@ -21,19 +21,19 @@
  *	Copyright (C) 2006-2008 Analog Devices Inc.
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
+#include <beep/spi/spi.h>
+#include <beep/i2c.h>
+#include <beep/gpio.h>
 
-#include <linux/spi/ad7879.h>
-#include <linux/module.h>
+#include <beep/spi/ad7879.h>
+#include <beep/module.h>
 #include "ad7879.h"
 
 #define AD7879_REG_ZEROS		0
@@ -171,7 +171,7 @@ static int ad7879_report(struct ad7879 *ts)
 	 * filter.  The combination of these two techniques provides a robust
 	 * solution, discarding the spurious noise in the signal and keeping
 	 * only the data of interest.  The size of both filters is
-	 * programmable. (dev.platform_data, see linux/spi/ad7879.h) Other
+	 * programmable. (dev.platform_data, see beep/spi/ad7879.h) Other
 	 * user-programmable conversion controls include variable acquisition
 	 * time, and first conversion delay. Up to 16 averages can be taken
 	 * per conversion.
@@ -649,6 +649,6 @@ void ad7879_remove(struct ad7879 *ts)
 }
 EXPORT_SYMBOL(ad7879_remove);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("AD7879(-1) touchscreen Driver");
 MODULE_LICENSE("GPL");

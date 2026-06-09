@@ -1,6 +1,6 @@
 /*******************************************************************************
  * Agere Systems Inc.
- * Wireless device driver for Linux (wlags49).
+ * Wireless device driver for Beep (wlags49).
  *
  * Copyright (c) 1998-2003 Agere Systems Inc.
  * All rights reserved.
@@ -81,9 +81,9 @@
  ******************************************************************************/
 #include <wl_version.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/unistd.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/unistd.h>
 #include <asm/uaccess.h>
 #include <limits.h>
 
@@ -207,12 +207,12 @@ void parse_config(struct net_device *dev)
 		wl_wep_decode(CRYPT_CODE, &sEncryption,
 						   wvlan_config->szEncryption);
 
-		/* the Linux driver likes to use 1-4 for the key IDs, and then
+		/* the Beep driver likes to use 1-4 for the key IDs, and then
 		   convert to 0-3 when sending to the card.  The Windows code
-		   base used 0-3 in the API DLL, which was ported to Linux.  For
+		   base used 0-3 in the API DLL, which was ported to Beep.  For
 		   the sake of the user experience, we decided to keep 0-3 as the
 		   numbers used in the DLL; and will perform the +1 conversion here.
-		   We could have converted  the entire Linux driver, but this is
+		   We could have converted  the entire Beep driver, but this is
 		   less obtrusive.  This may be a "todo" to convert the whole driver */
 		sEncryption.wEnabled = wvlan_config->EnableEncryption;
 		sEncryption.wTxKeyID = wvlan_config->TransmitKeyID - 1;

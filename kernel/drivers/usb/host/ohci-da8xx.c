@@ -11,13 +11,13 @@
  * kind, whether express or implied.
  */
 
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
+#include <beep/interrupt.h>
+#include <beep/jiffies.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
 
 #include <mach/da8xx.h>
-#include <linux/platform_data/usb-davinci.h>
+#include <beep/platform_data/usb-davinci.h>
 
 #ifndef CONFIG_ARCH_DAVINCI_DA8XX
 #error "This file is DA8xx bus glue.  Define CONFIG_ARCH_DAVINCI_DA8XX."

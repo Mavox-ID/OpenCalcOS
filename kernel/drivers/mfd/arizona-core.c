@@ -10,19 +10,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/mfd/core.h>
+#include <beep/module.h>
+#include <beep/pm_runtime.h>
+#include <beep/regmap.h>
+#include <beep/regulator/consumer.h>
+#include <beep/slab.h>
 
-#include <linux/mfd/arizona/core.h>
-#include <linux/mfd/arizona/registers.h>
+#include <beep/mfd/arizona/core.h>
+#include <beep/mfd/arizona/registers.h>
 
 #include "arizona.h"
 

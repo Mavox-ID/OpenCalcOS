@@ -10,14 +10,14 @@
  * any later version.
  *
  * You should have received a copy of the GNU General Public License
- * (for example /usr/src/linux/COPYING); if not, write to the Free
+ * (for example /usr/src/beep/COPYING); if not, write to the Free
  * Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/pnp.h>
-#include <linux/ide.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/pnp.h>
+#include <beep/ide.h>
+#include <beep/module.h>
 
 #define DRV_NAME "ide-pnp"
 

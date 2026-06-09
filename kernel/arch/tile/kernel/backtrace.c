@@ -12,8 +12,8 @@
  *   more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
 #include <asm/byteorder.h>
 #include <asm/backtrace.h>
 #include <asm/tile-desc.h>

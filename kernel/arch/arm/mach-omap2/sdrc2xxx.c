@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/sdrc2xxx.c
+ * beep/arch/arm/mach-omap2/sdrc2xxx.c
  *
  * SDRAM timing related functions for OMAP2xxx
  *
@@ -15,14 +15,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/io.h>
 
 #include "soc.h"
 #include "iomap.h"

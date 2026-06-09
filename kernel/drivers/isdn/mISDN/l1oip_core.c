@@ -223,17 +223,17 @@
 
 #define L1OIP_VERSION	0	/* 0...3 */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/mISDNif.h>
-#include <linux/mISDNhw.h>
-#include <linux/mISDNdsp.h>
-#include <linux/init.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/workqueue.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/mISDNif.h>
+#include <beep/mISDNhw.h>
+#include <beep/mISDNdsp.h>
+#include <beep/init.h>
+#include <beep/in.h>
+#include <beep/inet.h>
+#include <beep/workqueue.h>
+#include <beep/kthread.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 #include "core.h"
 #include "l1oip.h"

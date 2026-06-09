@@ -7,17 +7,17 @@
  * under the terms of the GNU General Public License version 2 as published by
  * the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/backlight.h>
-#include <linux/atmel_pwm.h>
-#include <linux/atmel-pwm-bl.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/fb.h>
+#include <beep/clk.h>
+#include <beep/gpio.h>
+#include <beep/backlight.h>
+#include <beep/atmel_pwm.h>
+#include <beep/atmel-pwm-bl.h>
+#include <beep/slab.h>
 
 struct atmel_pwm_bl {
 	const struct atmel_pwm_bl_platform_data	*pdata;

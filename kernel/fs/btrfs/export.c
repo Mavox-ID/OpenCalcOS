@@ -1,5 +1,5 @@
-#include <linux/fs.h>
-#include <linux/types.h>
+#include <beep/fs.h>
+#include <beep/types.h>
 #include "ctree.h"
 #include "disk-io.h"
 #include "btrfs_inode.h"

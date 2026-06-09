@@ -2,7 +2,7 @@
 #define __ASM_SH_RENESAS_SDK7780_H
 
 /*
- * linux/include/asm-sh/sdk7780.h
+ * beep/include/asm-sh/sdk7780.h
  *
  * Renesas Solutions SH7780 SDK Support
  * Copyright (C) 2008 Nicholas Beck <nbeck@mpc-data.co.uk>
@@ -11,7 +11,7 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/sh_intc.h>
+#include <beep/sh_intc.h>
 #include <asm/addrspace.h>
 
 /* Box specific addresses.  */

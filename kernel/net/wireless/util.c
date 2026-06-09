@@ -3,10 +3,10 @@
  *
  * Copyright 2007-2009	Johannes Berg <johannes@sipsolutions.net>
  */
-#include <linux/export.h>
-#include <linux/bitops.h>
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
+#include <beep/export.h>
+#include <beep/bitops.h>
+#include <beep/etherdevice.h>
+#include <beep/slab.h>
 #include <net/cfg80211.h>
 #include <net/ip.h>
 #include <net/dsfield.h>
@@ -549,7 +549,7 @@ int ieee80211_data_from_8023(struct sk_buff *skb, const u8 *addr,
 	h_pos += hdrlen;
 
 	/* Update skb pointers to various headers since this modified frame
-	 * is going to go through Linux networking code that may potentially
+	 * is going to go through Beep networking code that may potentially
 	 * need things like pointer to IP header. */
 	skb_set_mac_header(skb, 0);
 	skb_set_network_header(skb, nh_pos);

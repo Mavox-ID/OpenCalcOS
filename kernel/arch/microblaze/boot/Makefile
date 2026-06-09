@@ -2,16 +2,16 @@
 # arch/microblaze/boot/Makefile
 #
 
-targets := linux.bin linux.bin.gz simpleImage.%
+targets := beep.bin beep.bin.gz simpleImage.%
 
 OBJCOPYFLAGS := -R .note -R .comment -R .note.gnu.build-id -O binary
 
-$(obj)/linux.bin: vmlinux FORCE
+$(obj)/beep.bin: vmbeep FORCE
 	$(call if_changed,objcopy)
 	$(call if_changed,uimage)
 	@echo 'Kernel: $@ is ready' ' (#'`cat .version`')'
 
-$(obj)/linux.bin.gz: $(obj)/linux.bin FORCE
+$(obj)/beep.bin.gz: $(obj)/beep.bin FORCE
 	$(call if_changed,gzip)
 	@echo 'Kernel: $@ is ready' ' (#'`cat .version`')'
 
@@ -20,13 +20,13 @@ quiet_cmd_cp = CP      $< $@$2
 
 quiet_cmd_strip = STRIP   $@
 	cmd_strip = $(STRIP) -K microblaze_start -K _end -K __log_buf \
-				-K _fdt_start vmlinux -o $@
+				-K _fdt_start vmbeep -o $@
 
 UIMAGE_IN = $@
 UIMAGE_OUT = $@.ub
 UIMAGE_LOADADDR = $(CONFIG_KERNEL_BASE_ADDR)
 
-$(obj)/simpleImage.%: vmlinux FORCE
+$(obj)/simpleImage.%: vmbeep FORCE
 	$(call if_changed,cp,.unstrip)
 	$(call if_changed,objcopy)
 	$(call if_changed,uimage)
@@ -34,4 +34,4 @@ $(obj)/simpleImage.%: vmlinux FORCE
 	@echo 'Kernel: $@ is ready' ' (#'`cat .version`')'
 
 
-clean-files += simpleImage.*.unstrip linux.bin.ub
+clean-files += simpleImage.*.unstrip beep.bin.ub

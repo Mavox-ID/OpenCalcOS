@@ -1,8 +1,8 @@
 GCC := nspire-gcc
 GPP := nspire-g++
 AS := nspire-as
-LD := "$(shell (which arm-elf-ld arm-none-eabi-ld arm-linux-gnueabi-ld | head -1) 2>/dev/null)"
-OBJCOPY := "$(shell (which arm-elf-objcopy arm-none-eabi-objcopy arm-linux-gnueabi-objcopy | head -1) 2>/dev/null)"
+LD := "$(shell (which arm-elf-ld arm-none-eabi-ld arm-beep-gnueabi-ld | head -1) 2>/dev/null)"
+OBJCOPY := "$(shell (which arm-elf-objcopy arm-none-eabi-objcopy arm-beep-gnueabi-objcopy | head -1) 2>/dev/null)"
 
 GCCFLAGS := -Os -Wall -Wextra -nostdlib -fPIE -DSTAGE1 -DNDLESS_39=39 -I../../../ndless-sdk/include
 GXXFLAGS := $(GCCFLAGS) -std=c++11 -fno-exceptions -fno-rtti

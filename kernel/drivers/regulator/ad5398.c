@@ -3,18 +3,18 @@
  *
  * Copyright 2010 Analog Devices Inc.
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucbeep.org/
  *
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/machine.h>
 
 #define AD5398_CURRENT_EN_MASK	0x8000
 

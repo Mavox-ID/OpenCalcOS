@@ -19,17 +19,17 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/fb.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
 /* Why should fb driver call console functions? because console_lock() */
-#include <linux/console.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tmio.h>
-#include <linux/uaccess.h>
+#include <beep/console.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/tmio.h>
+#include <beep/uaccess.h>
 
 /*
  * accelerator commands

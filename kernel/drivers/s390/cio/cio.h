@@ -1,9 +1,9 @@
 #ifndef S390_CIO_H
 #define S390_CIO_H
 
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
+#include <beep/mutex.h>
+#include <beep/device.h>
+#include <beep/mod_devicetable.h>
 #include <asm/chpid.h>
 #include <asm/cio.h>
 #include <asm/fcx.h>

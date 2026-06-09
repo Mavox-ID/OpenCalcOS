@@ -18,16 +18,16 @@
  *  the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/acpi.h>
-#include <linux/platform_device.h>
-#include <linux/pci_ids.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/errno.h>
+#include <beep/acpi.h>
+#include <beep/platform_device.h>
+#include <beep/pci_ids.h>
 
-#include <linux/gpio.h>
+#include <beep/gpio.h>
 
 static DEFINE_SPINLOCK(gpio_lock);
 

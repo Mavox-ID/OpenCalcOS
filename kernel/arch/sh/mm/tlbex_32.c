@@ -8,10 +8,10 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/kprobes.h>
+#include <beep/kdebug.h>
 #include <asm/mmu_context.h>
 #include <asm/thread_info.h>
 

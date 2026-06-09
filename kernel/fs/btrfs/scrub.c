@@ -16,8 +16,8 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/blkdev.h>
-#include <linux/ratelimit.h>
+#include <beep/blkdev.h>
+#include <beep/ratelimit.h>
 #include "ctree.h"
 #include "volumes.h"
 #include "disk-io.h"
@@ -1572,7 +1572,7 @@ static void scrub_wr_submit(struct scrub_ctx *sctx)
 	/* process all writes in a single worker thread. Then the block layer
 	 * orders the requests before sending them to the driver which
 	 * doubled the write performance on spinning disks when measured
-	 * with Linux 3.5 */
+	 * with Beep 3.5 */
 	btrfsic_submit_bio(WRITE, sbio->bio);
 }
 

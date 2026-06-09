@@ -1,14 +1,14 @@
 /*
  * UniNorth AGPGART routines.
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/agp_backend.h>
-#include <linux/delay.h>
-#include <linux/vmalloc.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/pagemap.h>
+#include <beep/agp_backend.h>
+#include <beep/delay.h>
+#include <beep/vmalloc.h>
 #include <asm/uninorth.h>
 #include <asm/pci-bridge.h>
 #include <asm/prom.h>

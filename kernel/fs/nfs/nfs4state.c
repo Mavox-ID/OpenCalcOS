@@ -38,20 +38,20 @@
  * subsequent patch.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_idmap.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/ratelimit.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_idmap.h>
+#include <beep/kthread.h>
+#include <beep/module.h>
+#include <beep/random.h>
+#include <beep/ratelimit.h>
+#include <beep/workqueue.h>
+#include <beep/bitops.h>
+#include <beep/jiffies.h>
 
-#include <linux/sunrpc/clnt.h>
+#include <beep/sunrpc/clnt.h>
 
 #include "nfs4_fs.h"
 #include "callback.h"

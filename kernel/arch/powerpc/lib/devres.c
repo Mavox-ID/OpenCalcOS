@@ -7,10 +7,10 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/device.h>	/* devres_*(), devm_ioremap_release() */
-#include <linux/gfp.h>
-#include <linux/io.h>		/* ioremap_prot() */
-#include <linux/export.h>	/* EXPORT_SYMBOL() */
+#include <beep/device.h>	/* devres_*(), devm_ioremap_release() */
+#include <beep/gfp.h>
+#include <beep/io.h>		/* ioremap_prot() */
+#include <beep/export.h>	/* EXPORT_SYMBOL() */
 
 /**
  * devm_ioremap_prot - Managed ioremap_prot()

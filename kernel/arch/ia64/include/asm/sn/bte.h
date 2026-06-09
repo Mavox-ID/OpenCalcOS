@@ -10,9 +10,9 @@
 #ifndef _ASM_IA64_SN_BTE_H
 #define _ASM_IA64_SN_BTE_H
 
-#include <linux/timer.h>
-#include <linux/spinlock.h>
-#include <linux/cache.h>
+#include <beep/timer.h>
+#include <beep/spinlock.h>
+#include <beep/cache.h>
 #include <asm/sn/pda.h>
 #include <asm/sn/types.h>
 #include <asm/sn/shub_mmr.h>

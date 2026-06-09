@@ -18,12 +18,12 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/sh_clk.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/sh_clk.h>
 #include <asm/clock.h>
 #include <cpu/sh7724.h>
 

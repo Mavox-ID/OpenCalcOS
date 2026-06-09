@@ -8,17 +8,17 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/spi/spi.h>
-#include <linux/platform_device.h>
-#include <linux/fsl_devices.h>
-#include <linux/mm.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/spi/spi.h>
+#include <beep/platform_device.h>
+#include <beep/fsl_devices.h>
+#include <beep/mm.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/interrupt.h>
+#include <beep/err.h>
 #include <sysdev/fsl_soc.h>
 
 #include "spi-fsl-lib.h"

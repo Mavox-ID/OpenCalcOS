@@ -9,8 +9,8 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
 #include <crypto/public_key.h>
 #include <crypto/hash.h>
 #include <keys/asymmetric-type.h>

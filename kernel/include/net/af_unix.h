@@ -1,9 +1,9 @@
-#ifndef __LINUX_NET_AFUNIX_H
-#define __LINUX_NET_AFUNIX_H
+#ifndef __BEEP_NET_AFUNIX_H
+#define __BEEP_NET_AFUNIX_H
 
-#include <linux/socket.h>
-#include <linux/un.h>
-#include <linux/mutex.h>
+#include <beep/socket.h>
+#include <beep/un.h>
+#include <beep/mutex.h>
 #include <net/sock.h>
 
 extern void unix_inflight(struct file *fp);

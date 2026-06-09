@@ -16,11 +16,11 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/sh_clk.h>
-#include <linux/clkdev.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/sh_clk.h>
+#include <beep/clkdev.h>
 #include <mach/common.h>
 
 #define EMEV2_SMU_BASE 0xe0110000

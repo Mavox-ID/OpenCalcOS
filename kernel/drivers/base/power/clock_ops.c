@@ -6,15 +6,15 @@
  * This file is released under the GPLv2.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/pm.h>
-#include <linux/pm_clock.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/err.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/io.h>
+#include <beep/pm.h>
+#include <beep/pm_clock.h>
+#include <beep/clk.h>
+#include <beep/slab.h>
+#include <beep/err.h>
 
 #ifdef CONFIG_PM
 

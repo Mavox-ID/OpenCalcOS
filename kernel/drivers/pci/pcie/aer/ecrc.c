@@ -20,12 +20,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/errno.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/pci.h>
+#include <beep/pci_regs.h>
+#include <beep/errno.h>
 #include "../../pci.h"
 
 #define ECRC_POLICY_DEFAULT 0		/* ECRC set by BIOS */

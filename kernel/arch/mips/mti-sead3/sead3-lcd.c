@@ -5,8 +5,8 @@
  *
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
 
 static struct resource __initdata sead3_lcd_resource = {
 		.start	= 0x1f000400,

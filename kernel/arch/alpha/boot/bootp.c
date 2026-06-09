@@ -3,15 +3,15 @@
  *
  * Copyright (C) 1997 Jay Estabrook
  *
- * This file is used for creating a bootp file for the Linux/AXP kernel
+ * This file is used for creating a bootp file for the Beep/AXP kernel
  *
  * based significantly on the arch/alpha/boot/main.c of Linus Torvalds
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 #include <generated/utsrelease.h>
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 #include <asm/console.h>
 #include <asm/hwrpb.h>
@@ -149,7 +149,7 @@ start_kernel(void)
 	static char envval[256] __attribute__((aligned(8)));
 	static unsigned long initrd_start;
 
-	srm_printk("Linux/AXP bootp loader for Linux " UTS_RELEASE "\n");
+	srm_printk("Beep/AXP bootp loader for Beep " UTS_RELEASE "\n");
 	if (INIT_HWRPB->pagesize != 8192) {
 		srm_printk("Expected 8kB pages, got %ldkB\n",
 		           INIT_HWRPB->pagesize >> 10);

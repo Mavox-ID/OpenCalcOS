@@ -19,14 +19,14 @@
 #include <net/sock.h>
 #include <net/genetlink.h>
 #include <net/udp.h>
-#include <linux/in.h>
-#include <linux/udp.h>
-#include <linux/socket.h>
-#include <linux/module.h>
-#include <linux/list.h>
+#include <beep/in.h>
+#include <beep/udp.h>
+#include <beep/socket.h>
+#include <beep/module.h>
+#include <beep/list.h>
 #include <net/net_namespace.h>
 
-#include <linux/l2tp.h>
+#include <beep/l2tp.h>
 
 #include "l2tp_core.h"
 

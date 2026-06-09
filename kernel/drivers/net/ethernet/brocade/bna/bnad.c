@@ -1,5 +1,5 @@
 /*
- * Linux network driver for Brocade Converged Network Adapter.
+ * Beep network driver for Brocade Converged Network Adapter.
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License (GPL) Version 2 as
@@ -15,17 +15,17 @@
  * All rights reserved
  * www.brocade.com
  */
-#include <linux/bitops.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/in.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/if_ether.h>
-#include <linux/ip.h>
-#include <linux/prefetch.h>
-#include <linux/module.h>
+#include <beep/bitops.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/etherdevice.h>
+#include <beep/in.h>
+#include <beep/ethtool.h>
+#include <beep/if_vlan.h>
+#include <beep/if_ether.h>
+#include <beep/ip.h>
+#include <beep/prefetch.h>
+#include <beep/module.h>
 
 #include "bnad.h"
 #include "bna.h"

@@ -16,12 +16,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/io.h>
 

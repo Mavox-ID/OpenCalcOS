@@ -1,9 +1,9 @@
-#include <linux/in.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <beep/in.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
 
 #include <net/datalink.h>
 

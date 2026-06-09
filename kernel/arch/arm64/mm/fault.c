@@ -18,17 +18,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/mm.h>
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/kprobes.h>
-#include <linux/uaccess.h>
-#include <linux/page-flags.h>
-#include <linux/sched.h>
-#include <linux/highmem.h>
-#include <linux/perf_event.h>
+#include <beep/module.h>
+#include <beep/signal.h>
+#include <beep/mm.h>
+#include <beep/hardirq.h>
+#include <beep/init.h>
+#include <beep/kprobes.h>
+#include <beep/uaccess.h>
+#include <beep/page-flags.h>
+#include <beep/sched.h>
+#include <beep/highmem.h>
+#include <beep/perf_event.h>
 
 #include <asm/exception.h>
 #include <asm/debug-monitors.h>

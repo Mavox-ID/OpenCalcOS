@@ -11,7 +11,7 @@
 
 #include <drm/drmP.h>
 
-#include <linux/shmem_fs.h>
+#include <beep/shmem_fs.h>
 #include <drm/exynos_drm.h>
 
 #include "exynos_drm_drv.h"

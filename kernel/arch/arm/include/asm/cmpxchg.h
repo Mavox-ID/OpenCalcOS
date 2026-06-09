@@ -1,7 +1,7 @@
 #ifndef __ASM_ARM_CMPXCHG_H
 #define __ASM_ARM_CMPXCHG_H
 
-#include <linux/irqflags.h>
+#include <beep/irqflags.h>
 #include <asm/barrier.h>
 
 #if defined(CONFIG_CPU_SA1100) || defined(CONFIG_CPU_SA110)
@@ -30,14 +30,14 @@ static inline unsigned long __xchg(unsigned long x, volatile void *ptr, int size
 #ifdef swp_is_buggy
 	unsigned long flags;
 #endif
-#if __LINUX_ARM_ARCH__ >= 6
+#if __BEEP_ARM_ARCH__ >= 6
 	unsigned int tmp;
 #endif
 
 	smp_mb();
 
 	switch (size) {
-#if __LINUX_ARM_ARCH__ >= 6
+#if __BEEP_ARM_ARCH__ >= 6
 	case 1:
 		asm volatile("@	__xchg1\n"
 		"1:	ldrexb	%0, [%3]\n"
@@ -105,7 +105,7 @@ static inline unsigned long __xchg(unsigned long x, volatile void *ptr, int size
 
 #include <asm-generic/cmpxchg-local.h>
 
-#if __LINUX_ARM_ARCH__ < 6
+#if __BEEP_ARM_ARCH__ < 6
 /* min ARCH < ARMv6 */
 
 #ifdef CONFIG_SMP
@@ -243,6 +243,6 @@ static inline unsigned long __cmpxchg_local(volatile void *ptr,
 					     (unsigned long)(o),	\
 					     (unsigned long)(n)))
 
-#endif	/* __LINUX_ARM_ARCH__ >= 6 */
+#endif	/* __BEEP_ARM_ARCH__ >= 6 */
 
 #endif /* __ASM_ARM_CMPXCHG_H */

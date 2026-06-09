@@ -1,5 +1,5 @@
 /*
- *  HID support for Linux
+ *  HID support for Beep
  *
  *  Copyright (c) 1999 Andreas Gal
  *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>
@@ -16,13 +16,13 @@
  * any later version.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
 #include <asm/unaligned.h>
 #include <asm/byteorder.h>
 
-#include <linux/hid.h>
+#include <beep/hid.h>
 
 static const struct hid_device_id hid_table[] = {
 	{ HID_DEVICE(HID_BUS_ANY, HID_GROUP_GENERIC, HID_ANY_ID, HID_ANY_ID) },

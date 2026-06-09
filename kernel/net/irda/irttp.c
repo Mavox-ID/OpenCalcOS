@@ -24,12 +24,12 @@
  *
  ********************************************************************/
 
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>

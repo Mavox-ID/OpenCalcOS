@@ -1,5 +1,5 @@
 /*
- * linux/sound/wm9081.h -- Platform data for WM9081
+ * beep/sound/wm9081.h -- Platform data for WM9081
  *
  * Copyright 2009 Wolfson Microelectronics. PLC.
  *
@@ -8,8 +8,8 @@
  * published by the Free Software Foundation.
  */
 
-#ifndef __LINUX_SND_WM_9081_H
-#define __LINUX_SND_WM_9081_H
+#ifndef __BEEP_SND_WM_9081_H
+#define __BEEP_SND_WM_9081_H
 
 struct wm9081_retune_mobile_setting {
 	const char *name;

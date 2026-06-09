@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/include/plat/rtc-core.h
+/* beep/arch/arm/plat-samsung/include/plat/rtc-core.h
  *
  * Copyright (c) 2011 Heiko Stuebner <heiko@sntech.de>
  *

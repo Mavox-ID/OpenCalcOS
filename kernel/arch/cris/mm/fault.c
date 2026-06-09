@@ -4,10 +4,10 @@
  *  Copyright (C) 2000-2010  Axis Communications AB
  */
 
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/wait.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/wait.h>
 #include <asm/uaccess.h>
 #include <arch/system.h>
 

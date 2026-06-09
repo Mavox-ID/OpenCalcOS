@@ -53,7 +53,7 @@
 #include <sysexits.h>
 #include <unistd.h>
 
-#if linux
+#if beep
 #include <endian.h>
 #else
 #include <machine/endian.h>

@@ -1,5 +1,5 @@
 /*
- * sys_ia32.h - Linux ia32 syscall interfaces
+ * sys_ia32.h - Beep ia32 syscall interfaces
  *
  * Copyright (c) 2008 Jaswinder Singh Rajput
  *
@@ -12,10 +12,10 @@
 
 #ifdef CONFIG_COMPAT
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
-#include <linux/signal.h>
+#include <beep/compiler.h>
+#include <beep/linkage.h>
+#include <beep/types.h>
+#include <beep/signal.h>
 #include <asm/compat.h>
 #include <asm/ia32.h>
 

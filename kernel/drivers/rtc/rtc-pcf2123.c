@@ -32,18 +32,18 @@
  *
  */
 
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/rtc.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
-#include <linux/sysfs.h>
+#include <beep/bcd.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/rtc.h>
+#include <beep/spi/spi.h>
+#include <beep/module.h>
+#include <beep/sysfs.h>
 
 #define DRV_VERSION "0.6"
 

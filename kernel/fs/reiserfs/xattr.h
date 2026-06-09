@@ -1,7 +1,7 @@
-#include <linux/reiserfs_xattr.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/rwsem.h>
+#include <beep/reiserfs_xattr.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/rwsem.h>
 
 struct inode;
 struct dentry;

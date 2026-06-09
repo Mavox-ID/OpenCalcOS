@@ -22,9 +22,9 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 #include <asm/irq_cpu.h>
 #include <bcm47xx.h>
 

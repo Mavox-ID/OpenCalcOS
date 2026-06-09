@@ -80,7 +80,7 @@ struct per_struct_kernel {
 #ifdef __s390x__
 #endif /* __s390x__ */
 /*
- * These are defined as per linux/ptrace.h, which see.
+ * These are defined as per beep/ptrace.h, which see.
  */
 #define arch_has_single_step()	(1)
 

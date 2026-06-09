@@ -9,18 +9,18 @@
  * (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/i2c/twl.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/of_regulator.h>
+#include <beep/i2c/twl.h>
 
 
 /*
@@ -152,11 +152,11 @@ static int twlreg_grp(struct regulator_dev *rdev)
 /* definition for 4030 family */
 #define P3_GRP_4030	BIT(7)		/* "peripherals" */
 #define P2_GRP_4030	BIT(6)		/* secondary processor, modem, etc */
-#define P1_GRP_4030	BIT(5)		/* CPU/Linux */
+#define P1_GRP_4030	BIT(5)		/* CPU/Beep */
 /* definition for 6030 family */
 #define P3_GRP_6030	BIT(2)		/* secondary processor, modem, etc */
 #define P2_GRP_6030	BIT(1)		/* "peripherals" */
-#define P1_GRP_6030	BIT(0)		/* CPU/Linux */
+#define P1_GRP_6030	BIT(0)		/* CPU/Beep */
 
 static int twl4030reg_is_enabled(struct regulator_dev *rdev)
 {

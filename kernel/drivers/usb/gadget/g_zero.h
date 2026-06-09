@@ -6,7 +6,7 @@
 #ifndef __G_ZERO_H
 #define __G_ZERO_H
 
-#include <linux/usb/composite.h>
+#include <beep/usb/composite.h>
 
 /* global state */
 extern unsigned buflen;

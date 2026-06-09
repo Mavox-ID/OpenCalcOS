@@ -1,8 +1,8 @@
 #ifndef __MEGARAID_H__
 #define __MEGARAID_H__
 
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
 
 #define MEGARAID_VERSION	\
 	"v2.00.4 (Release Date: Thu Feb 9 08:51:30 EST 2006)\n"

@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 ST Microelectronics
- * Viresh Kumar <viresh.linux@gmail.com>
+ * Viresh Kumar <viresh.beep@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
@@ -11,10 +11,10 @@
 
 #define pr_fmt(fmt) "clk-gpt-synth: " fmt
 
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
+#include <beep/clk-provider.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/err.h>
 #include "clk.h"
 
 #define GPT_MSCALE_MASK		0xFFF

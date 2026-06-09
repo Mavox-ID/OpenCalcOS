@@ -41,15 +41,15 @@
 
 /*****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/socket.h>
-#include <linux/parport.h>
-#include <linux/init.h>
-#include <linux/usb.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/kref.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/socket.h>
+#include <beep/parport.h>
+#include <beep/init.h>
+#include <beep/usb.h>
+#include <beep/delay.h>
+#include <beep/completion.h>
+#include <beep/kref.h>
+#include <beep/slab.h>
 
 /*
  * Version Information

@@ -11,10 +11,10 @@
  *
  * ***************************************************************************
  */
-#ifndef __LINUX_UNIFI_SME_H__
-#define __LINUX_UNIFI_SME_H__ 1
+#ifndef __BEEP_UNIFI_SME_H__
+#define __BEEP_UNIFI_SME_H__ 1
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 #ifdef CSR_SME_USERSPACE
 #include "sme_userspace.h"
@@ -242,4 +242,4 @@ int unifi_cfg_set_ap_config(unifi_priv_t * priv,unsigned char* arg);
 int convert_sme_error(CsrResult error);
 
 
-#endif /* __LINUX_UNIFI_SME_H__ */
+#endif /* __BEEP_UNIFI_SME_H__ */

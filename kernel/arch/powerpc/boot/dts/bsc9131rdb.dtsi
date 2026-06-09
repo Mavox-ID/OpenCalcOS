@@ -55,9 +55,9 @@
 		};
 
 		partition@400000 {
-			/* 8MB for Linux Kernel Image */
+			/* 8MB for Beep Kernel Image */
 			reg = <0x00400000 0x00800000>;
-			label = "NAND Linux Kernel Image";
+			label = "NAND Beep Kernel Image";
 		};
 
 		partition@c00000 {
@@ -95,7 +95,7 @@
 				label = "SPI Flash DTB Image";
 			};
 
-			/* 4MB for Linux Kernel Image */
+			/* 4MB for Beep Kernel Image */
 			partition@100000 {
 				reg = <0x00100000 0x00400000>;
 				label = "SPI Flash Kernel Image";

@@ -1,13 +1,13 @@
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/random.h>
-#include <linux/string.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/mtd/nand_ecc.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/random.h>
+#include <beep/string.h>
+#include <beep/bitops.h>
+#include <beep/slab.h>
+#include <beep/mtd/nand_ecc.h>
 
 /*
  * Test the implementation for software ECC

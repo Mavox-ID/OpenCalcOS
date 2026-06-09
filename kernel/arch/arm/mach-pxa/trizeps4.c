@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/trizeps4.c
+ *  beep/arch/arm/mach-pxa/trizeps4.c
  *
  *  Support for the Keith und Koep Trizeps4 Module Platform.
  *
@@ -12,21 +12,21 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
-#include <linux/fb.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/dm9000.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/partitions.h>
-#include <linux/i2c/pxa-i2c.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/bitops.h>
+#include <beep/fb.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/dm9000.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/partitions.h>
+#include <beep/i2c/pxa-i2c.h>
 
 #include <asm/types.h>
 #include <asm/setup.h>
@@ -43,10 +43,10 @@
 #include <mach/pxa27x.h>
 #include <mach/trizeps4.h>
 #include <mach/audio.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/irda-pxaficp.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/video-pxafb.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/irda-pxaficp.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
 #include <mach/smemc.h>
 
 #include "generic.h"

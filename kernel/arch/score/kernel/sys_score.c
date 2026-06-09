@@ -23,14 +23,14 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/unistd.h>
-#include <linux/syscalls.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/unistd.h>
+#include <beep/syscalls.h>
 #include <asm/syscalls.h>
 
 asmlinkage long 

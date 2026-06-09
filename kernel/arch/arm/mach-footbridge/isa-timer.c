@@ -1,16 +1,16 @@
 /*
- *  linux/arch/arm/mach-footbridge/isa-timer.c
+ *  beep/arch/arm/mach-footbridge/isa-timer.c
  *
  *  Copyright (C) 1998 Russell King.
  *  Copyright (C) 1998 Phil Blundell
  */
-#include <linux/clockchips.h>
-#include <linux/i8253.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/spinlock.h>
-#include <linux/timex.h>
+#include <beep/clockchips.h>
+#include <beep/i8253.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/spinlock.h>
+#include <beep/timex.h>
 
 #include <asm/irq.h>
 #include <asm/mach/time.h>

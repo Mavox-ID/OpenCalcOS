@@ -23,24 +23,24 @@
  */
 
 /*
- * Many thanks to Richard Hirst <rhirst@linuxcare.com> for patiently
+ * Many thanks to Richard Hirst <rhirst@beepcare.com> for patiently
  * debugging this driver on the parisc architecture and suggesting
  * many improvements and bug fixes.
  *
- * Thanks also go to Linuxcare Inc. for providing several PARISC
+ * Thanks also go to Beepcare Inc. for providing several PARISC
  * machines for me to debug the driver on.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/stat.h>
-#include <linux/mm.h>
-#include <linux/blkdev.h>
-#include <linux/ioport.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/stat.h>
+#include <beep/mm.h>
+#include <beep/blkdev.h>
+#include <beep/ioport.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
 
 #include <asm/page.h>
 #include <asm/pgtable.h>

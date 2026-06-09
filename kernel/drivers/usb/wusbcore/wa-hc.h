@@ -80,13 +80,13 @@
 #ifndef __HWAHC_INTERNAL_H__
 #define __HWAHC_INTERNAL_H__
 
-#include <linux/completion.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/uwb.h>
-#include <linux/usb/wusb.h>
-#include <linux/usb/wusb-wa.h>
+#include <beep/completion.h>
+#include <beep/usb.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/uwb.h>
+#include <beep/usb/wusb.h>
+#include <beep/usb/wusb-wa.h>
 
 struct wusbhc;
 struct wahc;

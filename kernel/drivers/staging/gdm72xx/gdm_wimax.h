@@ -14,8 +14,8 @@
 #ifndef __GDM_WIMAX_H__
 #define __GDM_WIMAX_H__
 
-#include <linux/netdevice.h>
-#include <linux/types.h>
+#include <beep/netdevice.h>
+#include <beep/types.h>
 #include "wm_ioctl.h"
 #if defined(CONFIG_WIMAX_GDM72XX_QOS)
 #include "gdm_qos.h"

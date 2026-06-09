@@ -15,14 +15,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/workqueue.h>
-#include <linux/mfd/mc13xxx.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/leds.h>
+#include <beep/workqueue.h>
+#include <beep/mfd/mc13xxx.h>
+#include <beep/slab.h>
 
 struct mc13783_led {
 	struct led_classdev	cdev;

@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore/include/mach/pm.h
+ * beep/arch/unicore/include/mach/pm.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -12,7 +12,7 @@
 #ifndef __PUV3_PM_H__
 #define __PUV3_PM_H__
 
-#include <linux/suspend.h>
+#include <beep/suspend.h>
 
 struct puv3_cpu_pm_fns {
 	int	save_count;

@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/boot/compressed/misc.c
+ * beep/arch/unicore32/boot/compressed/misc.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -118,7 +118,7 @@ unsigned long decompress_kernel(unsigned long output_start,
 	tmp = (unsigned char *) (((unsigned long)input_data_end) - 4);
 	output_ptr = get_unaligned_le32(tmp);
 
-	arch_decomp_puts("Uncompressing Linux...");
+	arch_decomp_puts("Uncompressing Beep...");
 	decompress(input_data, input_data_end - input_data, NULL, NULL,
 			output_data, NULL, error);
 	arch_decomp_puts(" done, booting the kernel.\n");

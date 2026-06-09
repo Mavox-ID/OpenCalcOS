@@ -1,26 +1,26 @@
 /*
- * linux/arch/mips/txx9/pci.c
+ * beep/arch/mips/txx9/pci.c
  *
- * Based on linux/arch/mips/txx9/rbtx4927/setup.c,
- *          linux/arch/mips/txx9/rbtx4938/setup.c,
+ * Based on beep/arch/mips/txx9/rbtx4927/setup.c,
+ *          beep/arch/mips/txx9/rbtx4938/setup.c,
  *	    and RBTX49xx patch from CELF patch archive.
  *
  * Copyright 2001-2005 MontaVista Software Inc.
- * Copyright (C) 1996, 97, 2001, 04  Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1996, 97, 2001, 04  Ralf Baechle (ralf@beep-mips.org)
  * (C) Copyright TOSHIBA CORPORATION 2000-2001, 2004-2007
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/io.h>
+#include <beep/delay.h>
+#include <beep/jiffies.h>
+#include <beep/io.h>
 #include <asm/txx9/generic.h>
 #include <asm/txx9/pci.h>
 #ifdef CONFIG_TOSHIBA_FPCIB0
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 #include <asm/i8259.h>
 #include <asm/txx9/smsc_fdc37m81x.h>
 #endif

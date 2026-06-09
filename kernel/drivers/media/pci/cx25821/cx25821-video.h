@@ -3,7 +3,7 @@
  *
  *  Copyright (C) 2009 Conexant Systems Inc.
  *  Authors  <shu.lin@conexant.com>, <hiep.huynh@conexant.com>
- *  Based on Steven Toth <stoth@linuxtv.org> cx23885 driver
+ *  Based on Steven Toth <stoth@beeptv.org> cx23885 driver
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -24,16 +24,16 @@
 #ifndef CX25821_VIDEO_H_
 #define CX25821_VIDEO_H_
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kmod.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kmod.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/kthread.h>
 #include <asm/div64.h>
 
 #include "cx25821.h"

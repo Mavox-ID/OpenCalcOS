@@ -1,5 +1,5 @@
 /*
- *  Advanced Linux Sound Architecture
+ *  Advanced Beep Sound Architecture
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  *
  *
@@ -19,18 +19,18 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/device.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/device.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/minors.h>
 #include <sound/info.h>
 #include <sound/control.h>
 #include <sound/initval.h>
-#include <linux/kmod.h>
-#include <linux/mutex.h>
+#include <beep/kmod.h>
+#include <beep/mutex.h>
 
 static int major = CONFIG_SND_MAJOR;
 int snd_major;
@@ -39,7 +39,7 @@ EXPORT_SYMBOL(snd_major);
 static int cards_limit = 1;
 
 MODULE_AUTHOR("Jaroslav Kysela <perex@perex.cz>");
-MODULE_DESCRIPTION("Advanced Linux Sound Architecture driver for soundcards.");
+MODULE_DESCRIPTION("Advanced Beep Sound Architecture driver for soundcards.");
 MODULE_LICENSE("GPL");
 module_param(major, int, 0444);
 MODULE_PARM_DESC(major, "Major # for sound driver.");
@@ -474,7 +474,7 @@ static int __init alsa_sound_init(void)
 	}
 	snd_info_minor_register();
 #ifndef MODULE
-	printk(KERN_INFO "Advanced Linux Sound Architecture Driver Initialized.\n");
+	printk(KERN_INFO "Advanced Beep Sound Architecture Driver Initialized.\n");
 #endif
 	return 0;
 }

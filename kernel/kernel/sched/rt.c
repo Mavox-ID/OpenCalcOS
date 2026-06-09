@@ -5,7 +5,7 @@
 
 #include "sched.h"
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 static int do_sched_rt_period_timer(struct rt_bandwidth *rt_b, int overrun);
 

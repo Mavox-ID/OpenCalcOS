@@ -1,12 +1,12 @@
 /*
- *  linux/arch/arm/mach-mmp/clock.h
+ *  beep/arch/arm/mach-mmp/clock.h
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
 
-#include <linux/clkdev.h>
+#include <beep/clkdev.h>
 
 struct clkops {
 	void			(*enable)(struct clk *);

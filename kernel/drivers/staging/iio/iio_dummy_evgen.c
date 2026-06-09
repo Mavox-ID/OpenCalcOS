@@ -13,17 +13,17 @@
  * particular use case.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/sysfs.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
+#include <beep/sysfs.h>
 
 #include "iio_dummy_evgen.h"
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
 
 /* Fiddly bit of faking and irq without hardware */
 #define IIO_EVENTGEN_NO 10

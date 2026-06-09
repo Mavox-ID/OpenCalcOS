@@ -14,8 +14,8 @@
  * more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
 #include <asm/xen/hypercall.h>

@@ -23,11 +23,11 @@
  */
 
 #ifdef CONFIG_ACPI
-#include <linux/acpi.h>
+#include <beep/acpi.h>
 #endif
-#include <linux/power_supply.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <beep/power_supply.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
 
 #include <drm/drmP.h>
 

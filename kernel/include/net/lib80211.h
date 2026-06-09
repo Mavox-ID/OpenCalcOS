@@ -14,7 +14,7 @@
  * Copyright (c) 2002-2003, Jouni Malinen <j@w1.fi>
  *
  * Adaption to a generic IEEE 802.11 stack by James Ketrenos
- * <jketreno@linux.intel.com>
+ * <jketreno@beep.intel.com>
  *
  * Copyright (c) 2004, Intel Corporation
  *
@@ -23,13 +23,13 @@
 #ifndef LIB80211_H
 #define LIB80211_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/atomic.h>
-#include <linux/if.h>
-#include <linux/skbuff.h>
-#include <linux/ieee80211.h>
-#include <linux/timer.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/atomic.h>
+#include <beep/if.h>
+#include <beep/skbuff.h>
+#include <beep/ieee80211.h>
+#include <beep/timer.h>
 /* print_ssid() is intended to be used in debug (and possibly error)
  * messages. It should never be used for passing ssid to user space. */
 const char *print_ssid(char *buf, const char *ssid, u8 ssid_len);

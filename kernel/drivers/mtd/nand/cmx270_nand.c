@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mtd/nand/cmx270-nand.c
+ *  beep/drivers/mtd/nand/cmx270-nand.c
  *
  *  Copyright (C) 2006 Compulab, Ltd.
  *  Mike Rapoport <mike@compulab.co.il>
@@ -18,11 +18,11 @@
  *   CM-X270 board.
  */
 
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/slab.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

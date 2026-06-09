@@ -20,39 +20,39 @@ gconfig: $(obj)/gconf
 menuconfig: $(obj)/mconf
 	$< $(Kconfig)
 
-config: $(obj)/etc
+config: $(obj)/conf
 	$< --oldaskconfig $(Kconfig)
 
 nconfig: $(obj)/nconf
 	$< $(Kconfig)
 
-oldconfig: $(obj)/etc
+oldconfig: $(obj)/conf
 	$< --$@ $(Kconfig)
 
-silentoldconfig: $(obj)/etc
+silentoldconfig: $(obj)/conf
 	$(Q)mkdir -p include/generated
 	$< --$@ $(Kconfig)
 
-localyesconfig localmodconfig: $(obj)/streamline_config.pl $(obj)/etc
+localyesconfig localmodconfig: $(obj)/streamline_config.pl $(obj)/conf
 	$(Q)mkdir -p include/generated
 	$(Q)perl $< --$@ $(srctree) $(Kconfig) > .tmp.config
 	$(Q)if [ -f .config ]; then 					\
 			cmp -s .tmp.config .config ||			\
 			(mv -f .config .config.old.1;			\
 			 mv -f .tmp.config .config;			\
-			 $(obj)/etc --silentoldconfig $(Kconfig);	\
+			 $(obj)/conf --silentoldconfig $(Kconfig);	\
 			 mv -f .config.old.1 .config.old)		\
 	else								\
 			mv -f .tmp.config .config;			\
-			$(obj)/etc --silentoldconfig $(Kconfig);	\
+			$(obj)/conf --silentoldconfig $(Kconfig);	\
 	fi
 	$(Q)rm -f .tmp.config
 
-# Create new linux.pot file
+# Create new beep.pot file
 # Adjust charset to UTF-8 in .po file to accept UTF-8 in Kconfig files
 update-po-config: $(obj)/kxgettext $(obj)/gconf.glade.h
 	$(Q)echo "  GEN     config.pot"
-	$(Q)xgettext --default-domain=linux                         \
+	$(Q)xgettext --default-domain=beep                         \
 	    --add-comments --keyword=_ --keyword=N_                 \
 	    --from-code=UTF-8                                       \
 	    --files-from=$(srctree)/scripts/kconfig/POTFILES.in     \
@@ -66,31 +66,31 @@ update-po-config: $(obj)/kxgettext $(obj)/gconf.glade.h
 		$(obj)/kxgettext $$i                     \
 		     >> $(obj)/config.pot;               \
 	    done )
-	$(Q)echo "  GEN     linux.pot"
+	$(Q)echo "  GEN     beep.pot"
 	$(Q)msguniq --sort-by-file --to-code=UTF-8 $(obj)/config.pot \
-	    --output $(obj)/linux.pot
+	    --output $(obj)/beep.pot
 	$(Q)rm -f $(obj)/config.pot
 
 PHONY += allnoconfig allyesconfig allmodconfig alldefconfig randconfig
 
-allnoconfig allyesconfig allmodconfig alldefconfig randconfig: $(obj)/etc
+allnoconfig allyesconfig allmodconfig alldefconfig randconfig: $(obj)/conf
 	$< --$@ $(Kconfig)
 
 PHONY += listnewconfig olddefconfig oldnoconfig savedefconfig defconfig
 
-listnewconfig olddefconfig: $(obj)/etc
+listnewconfig olddefconfig: $(obj)/conf
 	$< --$@ $(Kconfig)
 
 # oldnoconfig is an alias of olddefconfig, because people already are dependent
 # on its behavior(sets new symbols to their default value but not 'n') with the
 # counter-intuitive name.
-oldnoconfig: $(obj)/etc
+oldnoconfig: $(obj)/conf
 	$< --olddefconfig $(Kconfig)
 
-savedefconfig: $(obj)/etc
+savedefconfig: $(obj)/conf
 	$< --$@=defconfig $(Kconfig)
 
-defconfig: $(obj)/etc
+defconfig: $(obj)/conf
 ifeq ($(KBUILD_DEFCONFIG),)
 	$< --defconfig $(Kconfig)
 else
@@ -98,7 +98,7 @@ else
 	$(Q)$< --defconfig=arch/$(SRCARCH)/configs/$(KBUILD_DEFCONFIG) $(Kconfig)
 endif
 
-%_defconfig: $(obj)/etc
+%_defconfig: $(obj)/conf
 	$(Q)$< --defconfig=arch/$(SRCARCH)/configs/$@ $(Kconfig)
 
 # Help text used by make help
@@ -187,7 +187,7 @@ endif
 clean-files	:= qconf.moc .tmp_qtcheck .tmp_gtkcheck
 clean-files	+= zconf.tab.c zconf.lex.c zconf.hash.c gconf.glade.h
 clean-files     += mconf qconf gconf nconf
-clean-files     += config.pot linux.pot
+clean-files     += config.pot beep.pot
 
 # Check that we have the required ncurses stuff installed for lxdialog (menuconfig)
 PHONY += $(obj)/dochecklxdialog

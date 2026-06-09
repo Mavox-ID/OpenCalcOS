@@ -8,9 +8,9 @@
  *  the Free Software Foundation; either version 2 of the License, or (at
  *  your option) any later version.
  */
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/kthread.h>
+#include <beep/spinlock.h>
+#include <beep/device.h>
+#include <beep/kthread.h>
 #include <net/mac80211.h>
 
 #include "deb_defs.h"

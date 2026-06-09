@@ -10,7 +10,7 @@
 #ifndef __ARM_KGDB_H__
 #define __ARM_KGDB_H__
 
-#include <linux/ptrace.h>
+#include <beep/ptrace.h>
 
 /*
  * GDB assumes that we're a user process being debugged, so

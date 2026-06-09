@@ -14,8 +14,8 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
 
 #include "clockdomain.h"
 #include "cm.h"

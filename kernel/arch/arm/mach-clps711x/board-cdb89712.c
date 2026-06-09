@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-clps711x/cdb89712.c
+ *  beep/arch/arm/mach-clps711x/cdb89712.c
  *
  *  Copyright (C) 2000-2001 Deep Blue Solutions Ltd
  *
@@ -17,18 +17,18 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
 
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/plat-ram.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/plat-ram.h>
+#include <beep/mtd/partitions.h>
 
 #include <mach/hardware.h>
 #include <asm/pgtable.h>

@@ -1,10 +1,10 @@
 /*
  * net-3-driver for the NI5210 card (i82586 Ethernet chip)
  *
- * This is an extension to the Linux operating system, and is covered by the
+ * This is an extension to the Beep operating system, and is covered by the
  * same GNU General Public License that covers that work.
  *
- * Alphacode 0.82 (96/09/29) for Linux 2.0.0 (or later)
+ * Alphacode 0.82 (96/09/29) for Beep 2.0.0 (or later)
  * Copyrights (c) 1994,1995,1996 by M.Hipp (hippm@informatik.uni-tuebingen.de)
  *    [feel free to mail ....]
  *
@@ -16,7 +16,7 @@
  *
  * If you find a bug, please report me:
  *   The kernel panic output and any kmsg from the ni52 driver
- *   the ni5210-driver-version and the linux-kernel version
+ *   the ni5210-driver-version and the beep-kernel version
  *   how many shared memory (memsize) on the netcard,
  *   bootprom: yes/no, base_addr, mem_start
  *   maybe the ni5210-card revision and the i82586 version
@@ -56,7 +56,7 @@
  *   the last buffer from the previous RFD fits exact into the queue and
  *   the next RFD can't fetch an initial RBD. Anyone knows more? )
  *
- * results from ftp performance tests with Linux 1.2.5
+ * results from ftp performance tests with Beep 1.2.5
  *   send and receive about 350-400 KByte/s (peak up to 460 kbytes/s)
  *   sending in NOP-mode: peak performance up to 530K/s (but better don't
  *   run this mode)
@@ -89,9 +89,9 @@
  *
  * 17.July.94: some patches ... verified to run with 1.1.29 (MH)
  *
- * 4.July.94: patches for Linux 1.1.24  (MH)
+ * 4.July.94: patches for Beep 1.1.24  (MH)
  *
- * 26.March.94: patches for Linux 1.0 and iomem-auto-probe (MH)
+ * 26.March.94: patches for Beep 1.0 and iomem-auto-probe (MH)
  *
  * 30.Sep.93: Added nop-chain .. driver now runs with only one Xmit-Buff,
  *				too (MH)
@@ -104,20 +104,20 @@ static int automatic_resume; /* experimental .. better should be zero */
 static int rfdadd;	/* rfdadd=1 may be better for 8K MEM cards */
 static int fifo = 0x8;	/* don't change */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
 #include <asm/io.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
 
 #include "ni52.h"
 

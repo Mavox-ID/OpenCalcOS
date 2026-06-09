@@ -1,9 +1,9 @@
-/* linux/arch/arm/plat-s3c64xx/setup-fb-24bpp.c
+/* beep/arch/arm/plat-s3c64xx/setup-fb-24bpp.c
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * Base S3C64XX setup information for 24bpp LCD framebuffer
  *
@@ -12,10 +12,10 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fb.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fb.h>
+#include <beep/gpio.h>
 
 #include <plat/fb.h>
 #include <plat/gpio-cfg.h>

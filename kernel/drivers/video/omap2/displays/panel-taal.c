@@ -19,18 +19,18 @@
 
 /*#define DEBUG*/
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/backlight.h>
-#include <linux/fb.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/jiffies.h>
+#include <beep/sched.h>
+#include <beep/backlight.h>
+#include <beep/fb.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
+#include <beep/workqueue.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
 
 #include <video/omapdss.h>
 #include <video/omap-panel-nokia-dsi.h>

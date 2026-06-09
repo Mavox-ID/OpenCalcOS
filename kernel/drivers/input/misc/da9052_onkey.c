@@ -11,14 +11,14 @@
  * option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/workqueue.h>
 
-#include <linux/mfd/da9052/da9052.h>
-#include <linux/mfd/da9052/reg.h>
+#include <beep/mfd/da9052/da9052.h>
+#include <beep/mfd/da9052/reg.h>
 
 struct da9052_onkey {
 	struct da9052 *da9052;

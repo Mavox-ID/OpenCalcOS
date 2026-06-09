@@ -39,8 +39,8 @@
 #include "via_drv.h"
 #include "via_dmablit.h"
 
-#include <linux/pagemap.h>
-#include <linux/slab.h>
+#include <beep/pagemap.h>
+#include <beep/slab.h>
 
 #define VIA_PGDN(x)	     (((unsigned long)(x)) & PAGE_MASK)
 #define VIA_PGOFF(x)	    (((unsigned long)(x)) & ~PAGE_MASK)

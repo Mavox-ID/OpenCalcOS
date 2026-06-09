@@ -6,7 +6,7 @@
  * Functions to copy from and to user space.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/dwarf2.h>
 
 #define FIX_ALIGNMENT 1

@@ -17,9 +17,9 @@
  *
  **************************************************************************/
 
-#include <linux/backlight.h>
-#include <linux/module.h>
-#include <linux/dmi.h>
+#include <beep/backlight.h>
+#include <beep/module.h>
+#include <beep/dmi.h>
 #include <drm/drmP.h>
 #include <drm/drm.h>
 #include <drm/gma_drm.h>

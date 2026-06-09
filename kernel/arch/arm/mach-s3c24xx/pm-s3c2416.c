@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2416/pm.c
+/* beep/arch/arm/mach-s3c2416/pm.c
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -10,9 +10,9 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/device.h>
-#include <linux/syscore_ops.h>
-#include <linux/io.h>
+#include <beep/device.h>
+#include <beep/syscore_ops.h>
+#include <beep/io.h>
 
 #include <asm/cacheflush.h>
 

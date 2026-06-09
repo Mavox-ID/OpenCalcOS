@@ -12,12 +12,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/rtc.h>
 
-#include <linux/mfd/da9052/da9052.h>
-#include <linux/mfd/da9052/reg.h>
+#include <beep/mfd/da9052/da9052.h>
+#include <beep/mfd/da9052/reg.h>
 
 #define rtc_err(da9052, fmt, ...) \
 		dev_err(da9052->dev, "%s: " fmt, __func__, ##__VA_ARGS__)

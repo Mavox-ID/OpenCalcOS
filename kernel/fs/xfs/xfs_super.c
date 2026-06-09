@@ -52,15 +52,15 @@
 #include "xfs_icache.h"
 #include "xfs_trace.h"
 
-#include <linux/namei.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mount.h>
-#include <linux/mempool.h>
-#include <linux/writeback.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/parser.h>
+#include <beep/namei.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/mount.h>
+#include <beep/mempool.h>
+#include <beep/writeback.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
+#include <beep/parser.h>
 
 static const struct super_operations xfs_super_operations;
 static kmem_zone_t *xfs_ioend_zone;
@@ -577,7 +577,7 @@ xfs_max_file_offset(
 	unsigned int		pagefactor = 1;
 	unsigned int		bitshift = BITS_PER_LONG - 1;
 
-	/* Figure out maximum filesize, on Linux this can depend on
+	/* Figure out maximum filesize, on Beep this can depend on
 	 * the filesystem blocksize (on 32 bit platforms).
 	 * __block_write_begin does this in an [unsigned] long...
 	 *      page->index << (PAGE_CACHE_SHIFT - bbits)
@@ -936,7 +936,7 @@ xfs_fs_alloc_inode(
 
 /*
  * Now that the generic code is guaranteed not to be accessing
- * the linux inode, we can reclaim the inode.
+ * the beep inode, we can reclaim the inode.
  */
 STATIC void
 xfs_fs_destroy_inode(

@@ -8,15 +8,15 @@
  *    for more details.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/zorro.h>
-#include <linux/bitops.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/zorro.h>
+#include <beep/bitops.h>
+#include <beep/string.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 #include <asm/setup.h>
 #include <asm/amigahw.h>

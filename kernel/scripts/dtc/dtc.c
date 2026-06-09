@@ -30,7 +30,7 @@ int quiet;		/* Level of quietness */
 int reservenum;		/* Number of memory reservation slots */
 int minsize;		/* Minimum blob size */
 int padsize;		/* Additional padding to blob */
-int phandle_format = PHANDLE_BOTH;	/* Use linux,phandle or phandle properties */
+int phandle_format = PHANDLE_BOTH;	/* Use beep,phandle or phandle properties */
 
 static void fill_fullpaths(struct node *tree, const char *prefix)
 {
@@ -90,9 +90,9 @@ static void  __attribute__ ((noreturn)) usage(void)
 	fprintf(stderr, "\t\tPrint DTC version and exit\n");
 	fprintf(stderr, "\t-H <phandle format>\n");
 	fprintf(stderr, "\t\tphandle formats are:\n");
-	fprintf(stderr, "\t\t\tlegacy - \"linux,phandle\" properties only\n");
+	fprintf(stderr, "\t\t\tlegacy - \"beep,phandle\" properties only\n");
 	fprintf(stderr, "\t\t\tepapr - \"phandle\" properties only\n");
-	fprintf(stderr, "\t\t\tboth - Both \"linux,phandle\" and \"phandle\" properties\n");
+	fprintf(stderr, "\t\t\tboth - Both \"beep,phandle\" and \"phandle\" properties\n");
 	fprintf(stderr, "\t-W [no-]<checkname>\n");
 	fprintf(stderr, "\t-E [no-]<checkname>\n");
 	fprintf(stderr, "\t\t\tenable or disable warnings and errors\n");

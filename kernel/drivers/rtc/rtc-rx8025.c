@@ -18,14 +18,14 @@
  * modify it under the terms of the GNU General Public License
  * version 2 as published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/bcd.h>
-#include <linux/i2c.h>
-#include <linux/list.h>
-#include <linux/rtc.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/bcd.h>
+#include <beep/i2c.h>
+#include <beep/list.h>
+#include <beep/rtc.h>
 
 /* Register definitions */
 #define RX8025_REG_SEC		0x00

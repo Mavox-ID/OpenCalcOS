@@ -12,8 +12,8 @@
  * License.
  */
 
-#include <linux/audit.h>
-#include <linux/socket.h>
+#include <beep/audit.h>
+#include <beep/socket.h>
 
 #include "include/apparmor.h"
 #include "include/audit.h"

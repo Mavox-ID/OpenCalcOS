@@ -13,20 +13,20 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/altera_uart.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/console.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
+#include <beep/platform_device.h>
+#include <beep/of.h>
+#include <beep/io.h>
+#include <beep/altera_uart.h>
 
 #define DRV_NAME "altera_uart"
 #define SERIAL_ALTERA_MAJOR 204

@@ -1,5 +1,5 @@
 /*
- * Definitions and interface for Linux - z/VM Monitor Stream.
+ * Definitions and interface for Beep - z/VM Monitor Stream.
  *
  * Copyright IBM Corp. 2003, 2008
  *

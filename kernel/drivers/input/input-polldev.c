@@ -10,12 +10,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/module.h>
-#include <linux/input-polldev.h>
+#include <beep/jiffies.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
+#include <beep/module.h>
+#include <beep/input-polldev.h>
 
 MODULE_AUTHOR("Dmitry Torokhov <dtor@mail.ru>");
 MODULE_DESCRIPTION("Generic implementation of a polled input device");

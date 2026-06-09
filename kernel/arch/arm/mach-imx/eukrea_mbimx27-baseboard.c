@@ -19,12 +19,12 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/backlight.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/ads7846.h>
+#include <beep/backlight.h>
 #include <video/platform_lcd.h>
 
 #include <asm/mach/arch.h>

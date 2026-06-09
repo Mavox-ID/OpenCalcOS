@@ -23,10 +23,10 @@
 /*
  * We need these if they're not already included
  */
-#include <linux/timer.h>
-#include <linux/time.h>
-#include <linux/isdnif.h>
-#include <linux/irqreturn.h>
+#include <beep/timer.h>
+#include <beep/time.h>
+#include <beep/isdnif.h>
+#include <beep/irqreturn.h>
 #include "message.h"
 #include "scioc.h"
 
@@ -74,7 +74,7 @@ typedef struct {
 	int model;
 	int driverId;			/* LL Id */
 	char devicename[20];		/* The device name */
-	isdn_if *card;			/* ISDN4Linux structure */
+	isdn_if *card;			/* ISDN4Beep structure */
 	bchan *channel;			/* status of the B channels */
 	char nChannels;			/* Number of channels */
 	unsigned int interrupt;		/* Interrupt number */

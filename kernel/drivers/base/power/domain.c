@@ -6,17 +6,17 @@
  * This file is released under the GPLv2.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_qos.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/suspend.h>
-#include <linux/export.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/pm_runtime.h>
+#include <beep/pm_domain.h>
+#include <beep/pm_qos.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/sched.h>
+#include <beep/suspend.h>
+#include <beep/export.h>
 
 #define GENPD_DEV_CALLBACK(genpd, type, callback, dev)		\
 ({								\

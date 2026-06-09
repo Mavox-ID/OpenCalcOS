@@ -3,15 +3,15 @@
 /* Written 1995-2000 by Werner Almesberger, EPFL LRC/ICA */
  
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/atmdev.h>
-#include <linux/sonet.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/atmdev.h>
+#include <beep/sonet.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include "uPD98402.h"
 

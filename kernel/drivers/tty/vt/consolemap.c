@@ -6,22 +6,22 @@
  *
  * aeb, 950210
  *
- * Support for multiple unimaps by Jakub Jelinek <jj@ultra.linux.cz>, July 1998
+ * Support for multiple unimaps by Jakub Jelinek <jj@ultra.beep.cz>, July 1998
  *
  * Fix bug in inverse translation. Stanislav Voronyi <stas@cnti.uanet.kharkov.ua>, Dec 1998
  */
 
-#include <linux/module.h>
-#include <linux/kd.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/tty.h>
+#include <beep/module.h>
+#include <beep/kd.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/tty.h>
 #include <asm/uaccess.h>
-#include <linux/console.h>
-#include <linux/consolemap.h>
-#include <linux/vt_kern.h>
+#include <beep/console.h>
+#include <beep/consolemap.h>
+#include <beep/vt_kern.h>
 
 static unsigned short translations[][256] = {
   /* 8-bit Latin-1 mapped to Unicode -- trivial mapping */

@@ -5,7 +5,7 @@
  *              based on work of Matt Henderson and Daniel Potts,
  *              Traverse Technologies P/L www.traverse.com.au
  *
- * Copyright 2009  by Karsten Keil <keil@isdn4linux.de>
+ * Copyright 2009  by Karsten Keil <keil@isdn4beep.de>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as

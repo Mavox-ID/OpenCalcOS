@@ -13,9 +13,9 @@
  * (at your option) any later version.
  */
 
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/videodev2.h>
+#include <beep/i2c.h>
+#include <beep/delay.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-ctrls.h>
 
 #include "m5mols.h"

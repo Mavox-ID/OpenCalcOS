@@ -32,9 +32,9 @@
 #ifndef _NETLABEL_DOMAINHASH_H
 #define _NETLABEL_DOMAINHASH_H
 
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
+#include <beep/types.h>
+#include <beep/rcupdate.h>
+#include <beep/list.h>
 
 #include "netlabel_addrlist.h"
 

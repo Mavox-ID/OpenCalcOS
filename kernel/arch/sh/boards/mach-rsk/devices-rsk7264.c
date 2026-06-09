@@ -7,12 +7,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/smsc911x.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/smsc911x.h>
 #include <asm/machvec.h>
 #include <asm/io.h>
 

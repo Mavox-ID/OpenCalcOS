@@ -9,7 +9,7 @@
  *
  * Copyright (C) 1995-1997 H. Peter Anvin
  *
- * This program is a part of the Linux kernel, and may be freely
+ * This program is a part of the Beep kernel, and may be freely
  * copied under the terms of the GNU General Public License (GPL),
  * version 2, or at your option any later version.
  */
@@ -253,7 +253,7 @@ int main(int argc, char *argv[])
  *\n\
  */\n\
 \n\
-#include <linux/types.h>\n\
+#include <beep/types.h>\n\
 \n\
 u8 dfont_unicount[%d] = \n\
 {\n\t", argv[1], fontlen);

@@ -26,7 +26,7 @@
 #ifndef V4L2_FH_H
 #define V4L2_FH_H
 
-#include <linux/list.h>
+#include <beep/list.h>
 
 struct video_device;
 struct v4l2_ctrl_handler;

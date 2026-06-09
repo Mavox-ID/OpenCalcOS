@@ -12,8 +12,8 @@
  * any later version.
  */
 
-#include <linux/usb.h>
-#include <linux/types.h>
+#include <beep/usb.h>
+#include <beep/types.h>
 
 enum roccat_common2_commands {
 	ROCCAT_COMMON_COMMAND_CONTROL = 0x4,

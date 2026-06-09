@@ -21,15 +21,15 @@
  *  - master mode *NOT* supported
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include <sound/core.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>
 #include <sound/initval.h>
 #include <sound/pcm_params.h>
 #include <sound/pcm.h>
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 
 #include "cs42l51.h"
 

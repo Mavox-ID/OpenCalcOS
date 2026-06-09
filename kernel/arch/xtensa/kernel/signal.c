@@ -15,11 +15,11 @@
  * Joe Taylor <joe@tensilica.com>
  */
 
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/personality.h>
-#include <linux/tracehook.h>
+#include <beep/signal.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/personality.h>
+#include <beep/tracehook.h>
 
 #include <asm/ucontext.h>
 #include <asm/uaccess.h>

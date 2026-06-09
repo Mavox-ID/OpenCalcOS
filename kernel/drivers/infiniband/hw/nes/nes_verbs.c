@@ -31,11 +31,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/random.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/random.h>
+#include <beep/highmem.h>
+#include <beep/slab.h>
 #include <asm/byteorder.h>
 
 #include <rdma/ib_verbs.h>

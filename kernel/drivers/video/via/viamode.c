@@ -19,7 +19,7 @@
  * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/via-core.h>
+#include <beep/via-core.h>
 #include "global.h"
 
 struct io_reg CN400_ModeXregs[] = { {VIASR, SR10, 0xFF, 0x01},

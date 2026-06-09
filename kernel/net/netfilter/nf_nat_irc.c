@@ -10,16 +10,16 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/tcp.h>
-#include <linux/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/tcp.h>
+#include <beep/kernel.h>
 
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_helper.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_expect.h>
-#include <linux/netfilter/nf_conntrack_irc.h>
+#include <beep/netfilter/nf_conntrack_irc.h>
 
 MODULE_AUTHOR("Harald Welte <laforge@gnumonks.org>");
 MODULE_DESCRIPTION("IRC (DCC) NAT helper");

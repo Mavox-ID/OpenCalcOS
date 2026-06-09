@@ -1,7 +1,7 @@
 #ifndef __EXTENTMAP__
 #define __EXTENTMAP__
 
-#include <linux/rbtree.h>
+#include <beep/rbtree.h>
 
 #define EXTENT_MAP_LAST_BYTE (u64)-4
 #define EXTENT_MAP_HOLE (u64)-3

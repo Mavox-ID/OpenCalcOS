@@ -14,7 +14,7 @@
  * published by the Free Software Foundation.
  *
  * These headers and macros are used to define OMAP on-chip module
- * data and their integration with other OMAP modules and Linux.
+ * data and their integration with other OMAP modules and Beep.
  * Copious documentation and references can also be found in the
  * omap_hwmod code, in arch/arm/mach-omap2/omap_hwmod.c (as of this
  * writing).
@@ -24,17 +24,17 @@
  * - add pinmuxing
  * - init_conn_id_bit (CONNID_BIT_VECTOR)
  * - implement default hwmod SMS/SDRC flags?
- * - move Linux-specific data ("non-ROM data") out
+ * - move Beep-specific data ("non-ROM data") out
  *
  */
 #ifndef __ARCH_ARM_PLAT_OMAP_INCLUDE_MACH_OMAP_HWMOD_H
 #define __ARCH_ARM_PLAT_OMAP_INCLUDE_MACH_OMAP_HWMOD_H
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/ioport.h>
-#include <linux/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/ioport.h>
+#include <beep/spinlock.h>
 
 struct omap_device;
 

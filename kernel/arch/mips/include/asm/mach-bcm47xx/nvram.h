@@ -11,8 +11,8 @@
 #ifndef __NVRAM_H
 #define __NVRAM_H
 
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
 
 struct nvram_header {
 	u32 magic;

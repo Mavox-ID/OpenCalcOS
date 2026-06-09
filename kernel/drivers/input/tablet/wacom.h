@@ -82,13 +82,13 @@
  */
 #ifndef WACOM_H
 #define WACOM_H
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/init.h>
-#include <linux/usb/input.h>
-#include <linux/power_supply.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/mod_devicetable.h>
+#include <beep/init.h>
+#include <beep/usb/input.h>
+#include <beep/power_supply.h>
 #include <asm/unaligned.h>
 
 /*

@@ -62,7 +62,7 @@
 #define USER_PTRS_PER_PGD	(PAGE_OFFSET / PGDIR_SIZE)
 
 /*
- * "Linux" PTE definitions for LPAE.
+ * "Beep" PTE definitions for LPAE.
  *
  * These bits overlap with the hardware bits but the naming is preserved for
  * consistency with the classic page table format.

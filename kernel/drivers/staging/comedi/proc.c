@@ -2,7 +2,7 @@
     module/proc.c
     /proc interface for comedi
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1998 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -30,8 +30,8 @@
 
 #include "comedidev.h"
 #include "comedi_internal.h"
-#include <linux/proc_fs.h>
-#include <linux/string.h>
+#include <beep/proc_fs.h>
+#include <beep/string.h>
 
 #ifdef CONFIG_PROC_FS
 static int comedi_read(char *buf, char **start, off_t offset, int len,

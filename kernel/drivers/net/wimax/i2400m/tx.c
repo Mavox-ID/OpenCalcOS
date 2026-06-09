@@ -32,11 +32,11 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  *
- * Intel Corporation <linux-wimax@intel.com>
+ * Intel Corporation <beep-wimax@intel.com>
  * Yanir Lubetkin <yanirx.lubetkin@intel.com>
  *  - Initial implementation
  *
- * Intel Corporation <linux-wimax@intel.com>
+ * Intel Corporation <beep-wimax@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *  - Rewritten to use a single FIFO to lower the memory allocation
  *    pressure and optimize cache hits when copying to the queue, as
@@ -243,9 +243,9 @@
  *                              _tx_msg_get() until it returns NULL
  *                               (FIFO empty).
  */
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include "i2400m.h"
 
 
@@ -358,7 +358,7 @@ size_t __i2400m_tx_tail_room(struct i2400m *i2400m)
  *     the head (Case B below).
  *
  * These are the two basic cases we need to keep an eye for -- it is
- * much better explained in linux/kernel/kfifo.c, but this code
+ * much better explained in beep/kernel/kfifo.c, but this code
  * basically does the same. No rocket science here.
  *
  *       Case A               Case B

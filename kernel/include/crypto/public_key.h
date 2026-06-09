@@ -11,10 +11,10 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#ifndef _LINUX_PUBLIC_KEY_H
-#define _LINUX_PUBLIC_KEY_H
+#ifndef _BEEP_PUBLIC_KEY_H
+#define _BEEP_PUBLIC_KEY_H
 
-#include <linux/mpi.h>
+#include <beep/mpi.h>
 
 enum pkey_algo {
 	PKEY_ALGO_DSA,
@@ -105,4 +105,4 @@ struct key;
 extern int verify_signature(const struct key *key,
 			    const struct public_key_signature *sig);
 
-#endif /* _LINUX_PUBLIC_KEY_H */
+#endif /* _BEEP_PUBLIC_KEY_H */

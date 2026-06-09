@@ -20,9 +20,9 @@
 
   */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/dvb/frontend.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/dvb/frontend.h>
 #include <asm/types.h>
 
 #include "tda826x.h"

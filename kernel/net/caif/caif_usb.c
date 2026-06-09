@@ -8,12 +8,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s(): " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/usb/usbnet.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
+#include <beep/mii.h>
+#include <beep/usb.h>
+#include <beep/usb/usbnet.h>
 #include <net/netns/generic.h>
 #include <net/caif/caif_dev.h>
 #include <net/caif/caif_layer.h>

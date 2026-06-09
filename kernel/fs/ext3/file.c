@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext3/file.c
+ *  beep/fs/ext3/file.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -8,7 +8,7 @@
  *
  *  from
  *
- *  linux/fs/minix/file.c
+ *  beep/fs/minix/file.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -18,7 +18,7 @@
  *	(jj@sunsite.ms.mff.cuni.cz)
  */
 
-#include <linux/quotaops.h>
+#include <beep/quotaops.h>
 #include "ext3.h"
 #include "xattr.h"
 #include "acl.h"

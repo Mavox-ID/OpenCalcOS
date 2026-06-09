@@ -1,5 +1,5 @@
 /*
- * linux/fs/nfs/dns_resolve.c
+ * beep/fs/nfs/dns_resolve.c
  *
  * Copyright (c) 2009 Trond Myklebust <Trond.Myklebust@netapp.com>
  *
@@ -8,9 +8,9 @@
 
 #ifdef CONFIG_NFS_USE_KERNEL_DNS
 
-#include <linux/module.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/dns_resolver.h>
+#include <beep/module.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/dns_resolver.h>
 #include "dns_resolve.h"
 
 ssize_t nfs_dns_resolve_name(struct net *net, char *name, size_t namelen,
@@ -32,19 +32,19 @@ EXPORT_SYMBOL_GPL(nfs_dns_resolve_name);
 
 #else
 
-#include <linux/module.h>
-#include <linux/hash.h>
-#include <linux/string.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/socket.h>
-#include <linux/seq_file.h>
-#include <linux/inet.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/cache.h>
-#include <linux/sunrpc/svcauth.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
+#include <beep/module.h>
+#include <beep/hash.h>
+#include <beep/string.h>
+#include <beep/kmod.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/socket.h>
+#include <beep/seq_file.h>
+#include <beep/inet.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/cache.h>
+#include <beep/sunrpc/svcauth.h>
+#include <beep/sunrpc/rpc_pipe_fs.h>
 
 #include "dns_resolve.h"
 #include "cache_lib.h"

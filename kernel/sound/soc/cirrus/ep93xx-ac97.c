@@ -10,18 +10,18 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 #include <sound/core.h>
 #include <sound/ac97_codec.h>
 #include <sound/soc.h>
 
-#include <linux/platform_data/dma-ep93xx.h>
+#include <beep/platform_data/dma-ep93xx.h>
 #include "ep93xx-pcm.h"
 
 /*

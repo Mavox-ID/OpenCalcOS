@@ -19,10 +19,10 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
  * 02110-1301 USA
  */
-#include <linux/miscdevice.h>
-#include <linux/gfp.h>
-#include <linux/file.h>
-#include <linux/export.h>
+#include <beep/miscdevice.h>
+#include <beep/gfp.h>
+#include <beep/file.h>
+#include <beep/export.h>
 #include <net/tcp.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

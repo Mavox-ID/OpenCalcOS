@@ -2,7 +2,7 @@
  * arch/arm/mach-gemini/idle.c
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/system.h>
 #include <asm/proc-fns.h>
 

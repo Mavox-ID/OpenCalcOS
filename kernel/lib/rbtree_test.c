@@ -1,6 +1,6 @@
-#include <linux/module.h>
-#include <linux/rbtree_augmented.h>
-#include <linux/random.h>
+#include <beep/module.h>
+#include <beep/rbtree_augmented.h>
+#include <beep/random.h>
 #include <asm/timex.h>
 
 #define NODES       100

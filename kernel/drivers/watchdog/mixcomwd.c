@@ -44,19 +44,19 @@
 #define VERSION "0.6"
 #define WATCHDOG_NAME "mixcomwd"
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/miscdevice.h>
-#include <linux/ioport.h>
-#include <linux/watchdog.h>
-#include <linux/fs.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/miscdevice.h>
+#include <beep/ioport.h>
+#include <beep/watchdog.h>
+#include <beep/fs.h>
+#include <beep/reboot.h>
+#include <beep/init.h>
+#include <beep/jiffies.h>
+#include <beep/timer.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
 
 /*
  * We have two types of cards that can be probed:

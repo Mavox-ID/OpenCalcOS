@@ -1,12 +1,12 @@
 /*
  * Functions related to sysfs handling
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/blktrace_api.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/bio.h>
+#include <beep/blkdev.h>
+#include <beep/blktrace_api.h>
 
 #include "blk.h"
 #include "blk-cgroup.h"

@@ -1,10 +1,10 @@
 /*
- *  linux/arch/arm/lib/io-shark.c
+ *  beep/arch/arm/lib/io-shark.c
  *
  *  by Alexander Schulz
  *
  * derived from:
- * linux/arch/arm/lib/io-ebsa.S
+ * beep/arch/arm/lib/io-ebsa.S
  * Copyright (C) 1995, 1996 Russell King
  *
  * This program is free software; you can redistribute it and/or modify

@@ -16,23 +16,23 @@
 #undef DEBUG
 
 #include <stdarg.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/threads.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/stringify.h>
-#include <linux/delay.h>
-#include <linux/initrd.h>
-#include <linux/bitops.h>
-#include <linux/export.h>
-#include <linux/kexec.h>
-#include <linux/debugfs.h>
-#include <linux/irq.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/threads.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/stringify.h>
+#include <beep/delay.h>
+#include <beep/initrd.h>
+#include <beep/bitops.h>
+#include <beep/export.h>
+#include <beep/kexec.h>
+#include <beep/debugfs.h>
+#include <beep/irq.h>
+#include <beep/memblock.h>
+#include <beep/of.h>
 
 #include <asm/prom.h>
 #include <asm/rtas.h>
@@ -336,7 +336,7 @@ static int __init early_init_dt_scan_cpus(unsigned long node,
 			 * off secondary threads.
 			 */
 			if (of_get_flat_dt_prop(node,
-					"linux,boot-cpu", NULL) != NULL)
+					"beep,boot-cpu", NULL) != NULL)
 				found = boot_cpu_count;
 		}
 #ifdef CONFIG_SMP
@@ -397,32 +397,32 @@ int __init early_init_dt_scan_chosen_ppc(unsigned long node, const char *uname,
 
 #ifdef CONFIG_PPC64
 	/* check if iommu is forced on or off */
-	if (of_get_flat_dt_prop(node, "linux,iommu-off", NULL) != NULL)
+	if (of_get_flat_dt_prop(node, "beep,iommu-off", NULL) != NULL)
 		iommu_is_off = 1;
-	if (of_get_flat_dt_prop(node, "linux,iommu-force-on", NULL) != NULL)
+	if (of_get_flat_dt_prop(node, "beep,iommu-force-on", NULL) != NULL)
 		iommu_force_on = 1;
 #endif
 
 	/* mem=x on the command line is the preferred mechanism */
-	lprop = of_get_flat_dt_prop(node, "linux,memory-limit", NULL);
+	lprop = of_get_flat_dt_prop(node, "beep,memory-limit", NULL);
 	if (lprop)
 		memory_limit = *lprop;
 
 #ifdef CONFIG_PPC64
-	lprop = of_get_flat_dt_prop(node, "linux,tce-alloc-start", NULL);
+	lprop = of_get_flat_dt_prop(node, "beep,tce-alloc-start", NULL);
 	if (lprop)
 		tce_alloc_start = *lprop;
-	lprop = of_get_flat_dt_prop(node, "linux,tce-alloc-end", NULL);
+	lprop = of_get_flat_dt_prop(node, "beep,tce-alloc-end", NULL);
 	if (lprop)
 		tce_alloc_end = *lprop;
 #endif
 
 #ifdef CONFIG_KEXEC
-	lprop = of_get_flat_dt_prop(node, "linux,crashkernel-base", NULL);
+	lprop = of_get_flat_dt_prop(node, "beep,crashkernel-base", NULL);
 	if (lprop)
 		crashk_res.start = *lprop;
 
-	lprop = of_get_flat_dt_prop(node, "linux,crashkernel-size", NULL);
+	lprop = of_get_flat_dt_prop(node, "beep,crashkernel-size", NULL);
 	if (lprop)
 		crashk_res.end = crashk_res.start + *lprop - 1;
 #endif
@@ -459,7 +459,7 @@ static int __init early_init_dt_scan_drconf_memory(unsigned long node)
 		return 0;
 
 	/* check if this is a kexec/kdump kernel. */
-	usm = of_get_flat_dt_prop(node, "linux,drconf-usable-memory",
+	usm = of_get_flat_dt_prop(node, "beep,drconf-usable-memory",
 						 &l);
 	if (usm != NULL)
 		is_kexec_kdump = 1;
@@ -478,10 +478,10 @@ static int __init early_init_dt_scan_drconf_memory(unsigned long node)
 		if (is_kexec_kdump) {
 			/*
 			 * For each memblock in ibm,dynamic-memory, a corresponding
-			 * entry in linux,drconf-usable-memory property contains
+			 * entry in beep,drconf-usable-memory property contains
 			 * a counter 'p' followed by 'p' (base, size) duple.
 			 * Now read the counter from
-			 * linux,drconf-usable-memory property
+			 * beep,drconf-usable-memory property
 			 */
 			rngs = dt_mem_next_cell(dt_root_size_cells, &usm);
 			if (!rngs) /* there are no (base, size) duple */

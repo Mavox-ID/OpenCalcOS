@@ -1,7 +1,7 @@
 /*
  * adv7170 - adv7170, adv7171 video encoder driver version 0.0.1
  *
- * Copyright (C) 2002 Maxim Yevtyushkin <max@linuxmedialabs.com>
+ * Copyright (C) 2002 Maxim Yevtyushkin <max@beepmedialabs.com>
  *
  * Based on adv7176 driver by:
  *
@@ -11,7 +11,7 @@
  *    - some corrections for Pinnacle Systems Inc. DC10plus card.
  *
  * Changes by Ronald Bultje <rbultje@ronald.bitfreak.net>
- *    - moved over to linux>=2.4.x i2c protocol (1/1/2003)
+ *    - moved over to beep>=2.4.x i2c protocol (1/1/2003)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,13 +28,13 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/ioctl.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/ioctl.h>
 #include <asm/uaccess.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
+#include <beep/i2c.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-chip-ident.h>
 

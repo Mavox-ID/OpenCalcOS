@@ -17,21 +17,21 @@
 
 #undef PARPORT_DEBUG_SHARING		/* undef for production */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/threads.h>
-#include <linux/parport.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/kmod.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/threads.h>
+#include <beep/parport.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/kmod.h>
 
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
 #include <asm/irq.h>
 
 #undef PARPORT_PARANOID

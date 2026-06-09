@@ -5,20 +5,20 @@
  * License terms: GNU General Public License (GPL) version 2.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/workqueue.h>
-#include <linux/completion.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/debugfs.h>
-#include <linux/if_arp.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/string.h>
+#include <beep/workqueue.h>
+#include <beep/completion.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/debugfs.h>
+#include <beep/if_arp.h>
 #include <net/caif/caif_layer.h>
 #include <net/caif/caif_spi.h>
 

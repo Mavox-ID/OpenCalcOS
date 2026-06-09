@@ -19,19 +19,19 @@
  * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/spi/spi.h>
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/workqueue.h>
-#include <linux/pm_runtime.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/spi/spi.h>
+#include <beep/completion.h>
+#include <beep/err.h>
+#include <beep/workqueue.h>
+#include <beep/pm_runtime.h>
 
 #include <bcm63xx_dev_spi.h>
 

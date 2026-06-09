@@ -2,7 +2,7 @@
     comedi/drivers/ni_at_ao.c
     Driver for NI AT-AO-6/10 boards
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000,2002 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -43,7 +43,7 @@ Configuration options:
 
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 /* board egisters */
 /* registers with _2_ are accessed when GRP2WR is set in CFG1 */

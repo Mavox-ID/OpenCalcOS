@@ -12,16 +12,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/seq_file.h>
 
-#include <linux/mfd/arizona/core.h>
-#include <linux/mfd/arizona/pdata.h>
-#include <linux/mfd/arizona/registers.h>
+#include <beep/mfd/arizona/core.h>
+#include <beep/mfd/arizona/pdata.h>
+#include <beep/mfd/arizona/registers.h>
 
 struct arizona_gpio {
 	struct arizona *arizona;

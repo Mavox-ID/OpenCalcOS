@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ufs/ialloc.c
+ *  beep/fs/ufs/ialloc.c
  *
  * Copyright (c) 1998
  * Daniel Pirkl <daniel.pirkl@email.cz>
@@ -7,7 +7,7 @@
  *
  *  from
  *
- *  linux/fs/ext2/ialloc.c
+ *  beep/fs/ext2/ialloc.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -23,13 +23,13 @@
  * Evgeniy Dushistov <dushistov@mail.ru>, 2007
  */
 
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/buffer_head.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
+#include <beep/fs.h>
+#include <beep/time.h>
+#include <beep/stat.h>
+#include <beep/string.h>
+#include <beep/buffer_head.h>
+#include <beep/sched.h>
+#include <beep/bitops.h>
 #include <asm/byteorder.h>
 
 #include "ufs_fs.h"
@@ -125,7 +125,7 @@ void ufs_free_inode (struct inode * inode)
  * Nullify new chunk of inodes,
  * BSD people also set ui_gen field of inode
  * during nullification, but we not care about
- * that because of linux ufs do not support NFS
+ * that because of beep ufs do not support NFS
  */
 static void ufs2_init_inodes_chunk(struct super_block *sb,
 				   struct ufs_cg_private_info *ucpi,

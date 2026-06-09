@@ -8,9 +8,9 @@
  * Author: Sundar Iyer <sundar.iyer@stericsson.com>
  *
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/smp.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/smp.h>
 
 #include <asm/cacheflush.h>
 #include <asm/smp_plat.h>

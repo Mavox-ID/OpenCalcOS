@@ -13,21 +13,21 @@
  * limitations: no calibration, no offset mode, no sleep mode
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/bitmap.h>
-#include <linux/err.h>
-#include <linux/irq.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/bitmap.h>
+#include <beep/err.h>
+#include <beep/irq.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
+#include <beep/iio/trigger_consumer.h>
+#include <beep/iio/buffer.h>
+#include <beep/iio/triggered_buffer.h>
 
 #define ADJD_S311_DRV_NAME "adjd_s311"
 

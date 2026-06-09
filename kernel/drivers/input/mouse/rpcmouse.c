@@ -1,5 +1,5 @@
 /*
- *  Acorn RiscPC mouse driver for Linux/ARM
+ *  Acorn RiscPC mouse driver for Beep/ARM
  *
  *  Copyright (c) 2000-2002 Vojtech Pavlik
  *  Copyright (C) 1996-2002 Russell King
@@ -17,12 +17,12 @@
  * the complete state and then work out if something has changed.
  */
 
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/ptrace.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <asm/irq.h>

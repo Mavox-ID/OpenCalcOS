@@ -18,13 +18,13 @@
 #ifndef __XFS_BUF_H__
 #define __XFS_BUF_H__
 
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/uio.h>
+#include <beep/list.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
+#include <beep/uio.h>
 
 /*
  *	Base types

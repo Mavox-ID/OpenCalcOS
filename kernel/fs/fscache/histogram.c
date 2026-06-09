@@ -10,9 +10,9 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL THREAD
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #include "internal.h"
 
 atomic_t fscache_obj_instantiate_histogram[HZ];

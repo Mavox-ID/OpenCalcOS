@@ -6,20 +6,20 @@
  *
  * Rusty Russell (C)2000 -- This code is GPL.
  */
-#include <linux/kernel.h>
-#include <linux/netfilter.h>
+#include <beep/kernel.h>
+#include <beep/netfilter.h>
 #include <net/protocol.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/wait.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/if.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/skbuff.h>
+#include <beep/wait.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/if.h>
+#include <beep/netdevice.h>
+#include <beep/inetdevice.h>
+#include <beep/proc_fs.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 

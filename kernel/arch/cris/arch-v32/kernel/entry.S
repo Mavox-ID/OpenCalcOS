@@ -17,8 +17,8 @@
  *
  */
 
-#include <linux/linkage.h>
-#include <linux/sys.h>
+#include <beep/linkage.h>
+#include <beep/sys.h>
 #include <asm/unistd.h>
 #include <asm/errno.h>
 #include <asm/thread_info.h>
@@ -631,7 +631,7 @@ sys_call_table:
 	.long sys_settimeofday
 	.long sys_getgroups16	/* 80 */
 	.long sys_setgroups16
-	.long sys_select	/* was old_select in Linux/E100 */
+	.long sys_select	/* was old_select in Beep/E100 */
 	.long sys_symlink
 	.long sys_lstat
 	.long sys_readlink	/* 85 */

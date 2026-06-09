@@ -10,9 +10,9 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
+#include <beep/serial_reg.h>
 
 #include "ssb_private.h"
 

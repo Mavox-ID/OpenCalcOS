@@ -27,20 +27,20 @@
 
 #define DEVICE_NAME "Z2RAM"
 
-#include <linux/major.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/bitops.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/major.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>
+#include <beep/bitops.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 
 #include <asm/setup.h>
 #include <asm/amigahw.h>
 #include <asm/pgtable.h>
 
-#include <linux/zorro.h>
+#include <beep/zorro.h>
 
 
 extern int m68k_realnum_memory;

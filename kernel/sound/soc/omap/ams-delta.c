@@ -22,10 +22,10 @@
  *
  */
 
-#include <linux/gpio.h>
-#include <linux/spinlock.h>
-#include <linux/tty.h>
-#include <linux/module.h>
+#include <beep/gpio.h>
+#include <beep/spinlock.h>
+#include <beep/tty.h>
+#include <beep/module.h>
 
 #include <sound/soc.h>
 #include <sound/jack.h>
@@ -33,7 +33,7 @@
 #include <asm/mach-types.h>
 
 #include <mach/board-ams-delta.h>
-#include <linux/platform_data/asoc-ti-mcbsp.h>
+#include <beep/platform_data/asoc-ti-mcbsp.h>
 
 #include "omap-mcbsp.h"
 #include "omap-pcm.h"

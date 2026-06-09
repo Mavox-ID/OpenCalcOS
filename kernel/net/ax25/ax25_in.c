@@ -9,27 +9,27 @@
  * Copyright (C) Joerg Reuter DL1BKE (jreuter@yaina.de)
  * Copyright (C) Hans-Joachim Hetscher DD8NE (dd8ne@bnv-bamberg.de)
  */
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/string.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/slab.h>
 #include <net/ax25.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter.h>
+#include <beep/inet.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/netfilter.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 #include <asm/uaccess.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
+#include <beep/fcntl.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
 
 /*
  *	Given a fragment, queue it on the fragment queue and if the fragment

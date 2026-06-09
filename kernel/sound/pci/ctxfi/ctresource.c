@@ -17,8 +17,8 @@
 
 #include "ctresource.h"
 #include "cthardware.h"
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 
 #define AUDIO_SLOT_BLOCK_NUM 	256
 

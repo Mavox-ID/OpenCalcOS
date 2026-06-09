@@ -1,5 +1,5 @@
 /*
- * linux/fs/posix_acl.c
+ * beep/fs/posix_acl.c
  *
  *  Copyright (C) 2002 by Andreas Gruenbacher <a.gruenbacher@computer.org>
  *
@@ -12,15 +12,15 @@
  *  POSIX 1003.1e draft standard 17 ACLs.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/posix_acl.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/atomic.h>
+#include <beep/fs.h>
+#include <beep/sched.h>
+#include <beep/posix_acl.h>
+#include <beep/export.h>
 
-#include <linux/errno.h>
+#include <beep/errno.h>
 
 EXPORT_SYMBOL(posix_acl_init);
 EXPORT_SYMBOL(posix_acl_alloc);

@@ -1,7 +1,7 @@
 /*
  *      u14-34f.c - Low-level driver for UltraStor 14F/34F SCSI host adapters.
  *
- *      03 Jun 2003 Rev. 8.10 for linux-2.5.70
+ *      03 Jun 2003 Rev. 8.10 for beep-2.5.70
  *        + Update for new IRQ API.
  *        + Use "goto" when appropriate.
  *        + Drop u14-34f.h.
@@ -28,16 +28,16 @@
  *          With actual module code, u14-34f and u14_34f are equivalent
  *          as module parameter names.
  *
- *      12 Feb 2003 Rev. 8.04 for linux 2.5.60
+ *      12 Feb 2003 Rev. 8.04 for beep 2.5.60
  *        + Release irq before calling scsi_register.
  *
- *      12 Nov 2002 Rev. 8.02 for linux 2.5.47
+ *      12 Nov 2002 Rev. 8.02 for beep 2.5.47
  *        + Release driver_lock before calling scsi_register.
  *
- *      11 Nov 2002 Rev. 8.01 for linux 2.5.47
+ *      11 Nov 2002 Rev. 8.01 for beep 2.5.47
  *        + Fixed bios_param and scsicam_bios_param calling parameters.
  *
- *      28 Oct 2002 Rev. 8.00 for linux 2.5.44-ac4
+ *      28 Oct 2002 Rev. 8.00 for beep 2.5.44-ac4
  *        + Use new tcq and adjust_queue_depth api.
  *        + New command line option (tm:[0-2]) to choose the type of tags:
  *          0 -> disable tagging ; 1 -> simple tags  ; 2 -> ordered tags.
@@ -46,36 +46,36 @@
  *          option; tc:n is equivalent to tm:0 and tc:y is equivalent to
  *          tm:1.
  *
- *      10 Oct 2002 Rev. 7.70 for linux 2.5.42
+ *      10 Oct 2002 Rev. 7.70 for beep 2.5.42
  *        + Foreport from revision 6.70.
  *
- *      25 Jun 2002 Rev. 6.70 for linux 2.4.19
+ *      25 Jun 2002 Rev. 6.70 for beep 2.4.19
  *        + Fixed endian-ness problem due to bitfields.
  *
- *      21 Feb 2002 Rev. 6.52 for linux 2.4.18
+ *      21 Feb 2002 Rev. 6.52 for beep 2.4.18
  *        + Backport from rev. 7.22 (use io_request_lock).
  *
- *      20 Feb 2002 Rev. 7.22 for linux 2.5.5
+ *      20 Feb 2002 Rev. 7.22 for beep 2.5.5
  *        + Remove any reference to virt_to_bus().
  *        + Fix pio hang while detecting multiple HBAs.
  *
- *      01 Jan 2002 Rev. 7.20 for linux 2.5.1
+ *      01 Jan 2002 Rev. 7.20 for beep 2.5.1
  *        + Use the dynamic DMA mapping API.
  *
- *      19 Dec 2001 Rev. 7.02 for linux 2.5.1
+ *      19 Dec 2001 Rev. 7.02 for beep 2.5.1
  *        + Use SCpnt->sc_data_direction if set.
  *        + Use sglist.page instead of sglist.address.
  *
- *      11 Dec 2001 Rev. 7.00 for linux 2.5.1
+ *      11 Dec 2001 Rev. 7.00 for beep 2.5.1
  *        + Use host->host_lock instead of io_request_lock.
  *
- *       1 May 2001 Rev. 6.05 for linux 2.4.4
+ *       1 May 2001 Rev. 6.05 for beep 2.4.4
  *        + Fix data transfer direction for opcode SEND_CUE_SHEET (0x5d)
  *
- *      25 Jan 2001 Rev. 6.03 for linux 2.4.0
+ *      25 Jan 2001 Rev. 6.03 for beep 2.4.0
  *        + "check_region" call replaced by "request_region".
  *
- *      22 Nov 2000 Rev. 6.02 for linux 2.4.0-test11
+ *      22 Nov 2000 Rev. 6.02 for beep 2.4.0-test11
  *        + Removed old scsi error handling support.
  *        + The obsolete boot option flag eh:n is silently ignored.
  *        + Removed error messages while a disk drive is powered up at
@@ -83,17 +83,17 @@
  *        + Improved boot messages: all tagged capable device are
  *          indicated as "tagged".
  *
- *      16 Sep 1999 Rev. 5.11 for linux 2.2.12 and 2.3.18
+ *      16 Sep 1999 Rev. 5.11 for beep 2.2.12 and 2.3.18
  *        + Updated to the new __setup interface for boot command line options.
  *        + When loaded as a module, accepts the new parameter boot_options
  *          which value is a string with the same format of the kernel boot
  *          command line options. A valid example is:
  *          modprobe u14-34f 'boot_options="0x230,0x340,lc:y,mq:4"'
  *
- *      22 Jul 1999 Rev. 5.00 for linux 2.2.10 and 2.3.11
+ *      22 Jul 1999 Rev. 5.00 for beep 2.2.10 and 2.3.11
  *        + Removed pre-2.2 source code compatibility.
  *
- *      26 Jul 1998 Rev. 4.33 for linux 2.0.35 and 2.1.111
+ *      26 Jul 1998 Rev. 4.33 for beep 2.0.35 and 2.1.111
  *          Added command line option (et:[y|n]) to use the existing
  *          translation (returned by scsicam_bios_param) as disk geometry.
  *          The default is et:n, which uses the disk geometry jumpered
@@ -101,45 +101,45 @@
  *          The default value et:n is compatible with all previous revisions
  *          of this driver.
  *
- *      28 May 1998 Rev. 4.32 for linux 2.0.33 and 2.1.104
+ *      28 May 1998 Rev. 4.32 for beep 2.0.33 and 2.1.104
  *          Increased busy timeout from 10 msec. to 200 msec. while
  *          processing interrupts.
  *
- *      18 May 1998 Rev. 4.31 for linux 2.0.33 and 2.1.102
+ *      18 May 1998 Rev. 4.31 for beep 2.0.33 and 2.1.102
  *          Improved abort handling during the eh recovery process.
  *
- *      13 May 1998 Rev. 4.30 for linux 2.0.33 and 2.1.101
+ *      13 May 1998 Rev. 4.30 for beep 2.0.33 and 2.1.101
  *          The driver is now fully SMP safe, including the
  *          abort and reset routines.
  *          Added command line options (eh:[y|n]) to choose between
  *          new_eh_code and the old scsi code.
- *          If linux version >= 2.1.101 the default is eh:y, while the eh
+ *          If beep version >= 2.1.101 the default is eh:y, while the eh
  *          option is ignored for previous releases and the old scsi code
  *          is used.
  *
- *      18 Apr 1998 Rev. 4.20 for linux 2.0.33 and 2.1.97
+ *      18 Apr 1998 Rev. 4.20 for beep 2.0.33 and 2.1.97
  *          Reworked interrupt handler.
  *
- *      11 Apr 1998 rev. 4.05 for linux 2.0.33 and 2.1.95
+ *      11 Apr 1998 rev. 4.05 for beep 2.0.33 and 2.1.95
  *          Major reliability improvement: when a batch with overlapping
  *          requests is detected, requests are queued one at a time
  *          eliminating any possible board or drive reordering.
  *
- *      10 Apr 1998 rev. 4.04 for linux 2.0.33 and 2.1.95
- *          Improved SMP support (if linux version >= 2.1.95).
+ *      10 Apr 1998 rev. 4.04 for beep 2.0.33 and 2.1.95
+ *          Improved SMP support (if beep version >= 2.1.95).
  *
- *       9 Apr 1998 rev. 4.03 for linux 2.0.33 and 2.1.94
+ *       9 Apr 1998 rev. 4.03 for beep 2.0.33 and 2.1.94
  *          Performance improvement: when sequential i/o is detected,
  *          always use direct sort instead of reverse sort.
  *
- *       4 Apr 1998 rev. 4.02 for linux 2.0.33 and 2.1.92
+ *       4 Apr 1998 rev. 4.02 for beep 2.0.33 and 2.1.92
  *          io_port is now unsigned long.
  *
- *      17 Mar 1998 rev. 4.01 for linux 2.0.33 and 2.1.88
- *          Use new scsi error handling code (if linux version >= 2.1.88).
+ *      17 Mar 1998 rev. 4.01 for beep 2.0.33 and 2.1.88
+ *          Use new scsi error handling code (if beep version >= 2.1.88).
  *          Use new interrupt code.
  *
- *      12 Sep 1997 rev. 3.11 for linux 2.0.30 and 2.1.55
+ *      12 Sep 1997 rev. 3.11 for beep 2.0.30 and 2.1.55
  *          Use of udelay inside the wait loops to avoid timeout
  *          problems with fast cpus.
  *          Removed check about useless calls to the interrupt service
@@ -148,12 +148,12 @@
  *          of "linked/unlinked" to reinforce the fact that "linking" is
  *          nothing but "elevator sorting" in the actual implementation.
  *
- *      17 May 1997 rev. 3.10 for linux 2.0.30 and 2.1.38
+ *      17 May 1997 rev. 3.10 for beep 2.0.30 and 2.1.38
  *          Use of serial_number_at_timeout in abort and reset processing.
  *          Use of the __initfunc and __initdata macro in setup code.
  *          Minor cleanups in the list_statistics code.
  *
- *      24 Feb 1997 rev. 3.00 for linux 2.0.29 and 2.1.26
+ *      24 Feb 1997 rev. 3.00 for beep 2.0.29 and 2.1.26
  *          When loading as a module, parameter passing is now supported
  *          both in 2.0 and in 2.1 style.
  *          Fixed data transfer direction for some SCSI opcodes.
@@ -162,63 +162,63 @@
  *          sorting. Rare cases in which reordering of write requests could
  *          cause wrong results are managed.
  *
- *      18 Jan 1997 rev. 2.60 for linux 2.1.21 and 2.0.28
+ *      18 Jan 1997 rev. 2.60 for beep 2.1.21 and 2.0.28
  *          Added command line options to enable/disable linked commands
  *          (lc:[y|n]), old firmware support (of:[y|n]) and to set the max
  *          queue depth (mq:xx). Default is "u14-34f=lc:n,of:n,mq:8".
  *          Improved command linking.
  *
- *       8 Jan 1997 rev. 2.50 for linux 2.1.20 and 2.0.27
+ *       8 Jan 1997 rev. 2.50 for beep 2.1.20 and 2.0.27
  *          Added linked command support.
  *
- *       3 Dec 1996 rev. 2.40 for linux 2.1.14 and 2.0.27
+ *       3 Dec 1996 rev. 2.40 for beep 2.1.14 and 2.0.27
  *          Added queue depth adjustment.
  *
- *      22 Nov 1996 rev. 2.30 for linux 2.1.12 and 2.0.26
+ *      22 Nov 1996 rev. 2.30 for beep 2.1.12 and 2.0.26
  *          The list of i/o ports to be probed can be overwritten by the
  *          "u14-34f=port0,port1,...." boot command line option.
  *          Scatter/gather lists are now allocated by a number of kmalloc
  *          calls, in order to avoid the previous size limit of 64Kb.
  *
- *      16 Nov 1996 rev. 2.20 for linux 2.1.10 and 2.0.25
+ *      16 Nov 1996 rev. 2.20 for beep 2.1.10 and 2.0.25
  *          Added multichannel support.
  *
- *      27 Sep 1996 rev. 2.12 for linux 2.1.0
+ *      27 Sep 1996 rev. 2.12 for beep 2.1.0
  *          Portability cleanups (virtual/bus addressing, little/big endian
  *          support).
  *
- *      09 Jul 1996 rev. 2.11 for linux 2.0.4
+ *      09 Jul 1996 rev. 2.11 for beep 2.0.4
  *          "Data over/under-run" no longer implies a redo on all targets.
  *          Number of internal retries is now limited.
  *
- *      16 Apr 1996 rev. 2.10 for linux 1.3.90
+ *      16 Apr 1996 rev. 2.10 for beep 1.3.90
  *          New argument "reset_flags" to the reset routine.
  *
- *      21 Jul 1995 rev. 2.02 for linux 1.3.11
+ *      21 Jul 1995 rev. 2.02 for beep 1.3.11
  *          Fixed Data Transfer Direction for some SCSI commands.
  *
- *      13 Jun 1995 rev. 2.01 for linux 1.2.10
+ *      13 Jun 1995 rev. 2.01 for beep 1.2.10
  *          HAVE_OLD_UX4F_FIRMWARE should be defined for U34F boards when
  *          the firmware prom is not the latest one (28008-006).
  *
- *      11 Mar 1995 rev. 2.00 for linux 1.2.0
+ *      11 Mar 1995 rev. 2.00 for beep 1.2.0
  *          Fixed a bug which prevented media change detection for removable
  *          disk drives.
  *
- *      23 Feb 1995 rev. 1.18 for linux 1.1.94
+ *      23 Feb 1995 rev. 1.18 for beep 1.1.94
  *          Added a check for scsi_register returning NULL.
  *
- *      11 Feb 1995 rev. 1.17 for linux 1.1.91
+ *      11 Feb 1995 rev. 1.17 for beep 1.1.91
  *          U14F qualified to run with 32 sglists.
  *          Now DEBUG_RESET is disabled by default.
  *
- *       9 Feb 1995 rev. 1.16 for linux 1.1.90
+ *       9 Feb 1995 rev. 1.16 for beep 1.1.90
  *          Use host->wish_block instead of host->block.
  *
- *       8 Feb 1995 rev. 1.15 for linux 1.1.89
+ *       8 Feb 1995 rev. 1.15 for beep 1.1.89
  *          Cleared target_time_out counter while performing a reset.
  *
- *      28 Jan 1995 rev. 1.14 for linux 1.1.86
+ *      28 Jan 1995 rev. 1.14 for beep 1.1.86
  *          Added module support.
  *          Log and do a retry when a disk drive returns a target status
  *          different from zero on a recovered error.
@@ -227,21 +227,21 @@
  *          (most installation run fine using 33 sglists, while other
  *          has problems when using more than 16).
  *
- *      16 Jan 1995 rev. 1.13 for linux 1.1.81
+ *      16 Jan 1995 rev. 1.13 for beep 1.1.81
  *          Display a message if check_region detects a port address
  *          already in use.
  *
- *      15 Dec 1994 rev. 1.12 for linux 1.1.74
+ *      15 Dec 1994 rev. 1.12 for beep 1.1.74
  *          The host->block flag is set for all the detected ISA boards.
  *
- *      30 Nov 1994 rev. 1.11 for linux 1.1.68
+ *      30 Nov 1994 rev. 1.11 for beep 1.1.68
  *          Redo i/o on target status CHECK_CONDITION for TYPE_DISK only.
  *          Added optional support for using a single board at a time.
  *
- *      14 Nov 1994 rev. 1.10 for linux 1.1.63
+ *      14 Nov 1994 rev. 1.10 for beep 1.1.63
  *
- *      28 Oct 1994 rev. 1.09 for linux 1.1.58  Final BETA release.
- *      16 Jul 1994 rev. 1.00 for linux 1.1.29  Initial ALPHA release.
+ *      28 Oct 1994 rev. 1.09 for beep 1.1.58  Final BETA release.
+ *      16 Jul 1994 rev. 1.00 for beep 1.1.29  Initial ALPHA release.
  *
  *          This driver is a total replacement of the original UltraStor
  *          scsi driver, but it supports ONLY the 14F and 34F boards.
@@ -405,21 +405,21 @@
  *  the driver sets host->wish_block = TRUE for all ISA boards.
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/proc_fs.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/stat.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ctype.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
+#include <beep/proc_fs.h>
+#include <beep/blkdev.h>
+#include <beep/interrupt.h>
+#include <beep/stat.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/ctype.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
 #include <asm/dma.h>
 #include <asm/irq.h>
 
@@ -670,8 +670,8 @@ static int max_queue_depth = MAX_CMD_PER_LUN;
 static char boot_options[MAX_BOOT_OPTIONS_SIZE];
 
 #if defined(MODULE)
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
 
 module_param_string(u14_34f, boot_options, MAX_BOOT_OPTIONS_SIZE, 0);
 MODULE_PARM_DESC(u14_34f, " equivalent to the \"u14-34f=...\" kernel boot " \

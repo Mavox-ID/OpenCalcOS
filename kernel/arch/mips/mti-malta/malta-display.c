@@ -18,8 +18,8 @@
  * Display routines for display messages in MIPS boards ascii display.
  */
 
-#include <linux/compiler.h>
-#include <linux/timer.h>
+#include <beep/compiler.h>
+#include <beep/timer.h>
 #include <asm/io.h>
 #include <asm/mips-boards/generic.h>
 #include <asm/mips-boards/prom.h>

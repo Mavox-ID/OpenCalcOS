@@ -25,10 +25,10 @@
  * 02110-1301 USA
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/device.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
+#include <beep/device.h>
 
 #include "isp.h"
 #include "ispreg.h"

@@ -1,4 +1,4 @@
-/*  linux/arch/arm/mach-pxa/xcep.c
+/*  beep/arch/arm/mach-pxa/xcep.c
  *
  *  Support for the Iskratel Electronics XCEP platform as used in
  *  the Libera instruments from Instrumentation Technologies.
@@ -14,13 +14,13 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/i2c/pxa-i2c.h>
-#include <linux/smc91x.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pxa-i2c.h>
+#include <beep/smc91x.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

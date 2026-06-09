@@ -1,5 +1,5 @@
 /*
- * Linux device driver for RTL8187
+ * Beep device driver for RTL8187
  *
  * Copyright 2007 Michael Wu <flamingice@sourmilk.net>
  * Copyright 2007 Andrea Merello <andreamrl@tiscali.it>
@@ -20,13 +20,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/eeprom_93cx6.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/usb.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/etherdevice.h>
+#include <beep/eeprom_93cx6.h>
+#include <beep/module.h>
 #include <net/mac80211.h>
 
 #include "rtl8187.h"

@@ -30,14 +30,14 @@
 
 ======================================================================*/
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 #include <mach/hardware.h>
 #include <asm/irq.h>
@@ -265,5 +265,5 @@ static void __exit sa11xx_pcmcia_exit(void) {}
 module_exit(sa11xx_pcmcia_exit);
 
 MODULE_AUTHOR("John Dorsey <john+@cs.cmu.edu>");
-MODULE_DESCRIPTION("Linux PCMCIA Card Services: SA-11xx core socket driver");
+MODULE_DESCRIPTION("Beep PCMCIA Card Services: SA-11xx core socket driver");
 MODULE_LICENSE("Dual MPL/GPL");

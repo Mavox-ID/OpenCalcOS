@@ -53,7 +53,7 @@
 //usage:	)
 //usage:     "\n	-L	Follow links"
 //usage:     "\n	-t	Terse display"
-//usage:	IF_SELINUX(
+//usage:	IF_SEBEEP(
 //usage:     "\n	-Z	Print security context"
 //usage:	)
 //usage:	IF_FEATURE_STAT_FORMAT(
@@ -91,8 +91,8 @@
 //usage:       " %c	Total file nodes\n"
 //usage:       " %d	Free file nodes\n"
 //usage:       " %f	Free blocks\n"
-//usage:	IF_SELINUX(
-//usage:       " %C	Security context in selinux\n"
+//usage:	IF_SEBEEP(
+//usage:       " %C	Security context in sebeep\n"
 //usage:	)
 //usage:       " %i	File System ID in hex\n"
 //usage:       " %l	Maximum length of filenames\n"
@@ -111,7 +111,7 @@ enum {
 	OPT_TERSE       = (1 << 0),
 	OPT_DEREFERENCE = (1 << 1),
 	OPT_FILESYS     = (1 << 2) * ENABLE_FEATURE_STAT_FILESYSTEM,
-	OPT_SELINUX     = (1 << (2+ENABLE_FEATURE_STAT_FILESYSTEM)) * ENABLE_SELINUX,
+	OPT_SEBEEP     = (1 << (2+ENABLE_FEATURE_STAT_FILESYSTEM)) * ENABLE_SEBEEP,
 };
 
 #if ENABLE_FEATURE_STAT_FORMAT
@@ -203,7 +203,7 @@ FS_TYPE(0x62656572, "sysfs")
 /* Return the type of the specified file system.
  * Some systems have statfvs.f_basetype[FSTYPSZ]. (AIX, HP-UX, and Solaris)
  * Others have statfs.f_fstypename[MFSNAMELEN]. (NetBSD 1.5.2)
- * Still others have neither and have to get by with f_type (Linux).
+ * Still others have neither and have to get by with f_type (Beep).
  */
 static const char *human_fstype(uint32_t f_type)
 {
@@ -258,7 +258,7 @@ static void printfs(char *pformat, const char *msg)
 /* print statfs info */
 static void FAST_FUNC print_statfs(char *pformat, const char m,
 		const char *const filename, const void *data
-		IF_SELINUX(, security_context_t scontext))
+		IF_SEBEEP(, security_context_t scontext))
 {
 	const struct statfs *statfsbuf = data;
 	if (m == 'n') {
@@ -292,8 +292,8 @@ static void FAST_FUNC print_statfs(char *pformat, const char m,
 	} else if (m == 'd') {
 		strcat(pformat, "llu");
 		printf(pformat, (unsigned long long) statfsbuf->f_ffree);
-# if ENABLE_SELINUX
-	} else if (m == 'C' && (option_mask32 & OPT_SELINUX)) {
+# if ENABLE_SEBEEP
+	} else if (m == 'C' && (option_mask32 & OPT_SEBEEP)) {
 		printfs(pformat, scontext);
 # endif
 	} else {
@@ -306,7 +306,7 @@ static void FAST_FUNC print_statfs(char *pformat, const char m,
 /* print stat info */
 static void FAST_FUNC print_stat(char *pformat, const char m,
 		const char *const filename, const void *data
-		IF_SELINUX(, security_context_t scontext))
+		IF_SEBEEP(, security_context_t scontext))
 {
 #define TYPE_SIGNED(t) (! ((t) 0 < (t) -1))
 	struct stat *statbuf = (struct stat *) data;
@@ -396,8 +396,8 @@ static void FAST_FUNC print_stat(char *pformat, const char m,
 	} else if (m == 'Z') {
 		strcat(pformat, TYPE_SIGNED(time_t) ? "ld" : "lu");
 		printf(pformat, (long) statbuf->st_ctime);
-# if ENABLE_SELINUX
-	} else if (m == 'C' && (option_mask32 & OPT_SELINUX)) {
+# if ENABLE_SEBEEP
+	} else if (m == 'C' && (option_mask32 & OPT_SEBEEP)) {
 		printfs(pformat, scontext);
 # endif
 	} else {
@@ -408,9 +408,9 @@ static void FAST_FUNC print_stat(char *pformat, const char m,
 
 static void print_it(const char *masterformat,
 		const char *filename,
-		void FAST_FUNC (*print_func)(char*, char, const char*, const void* IF_SELINUX(, security_context_t scontext)),
+		void FAST_FUNC (*print_func)(char*, char, const char*, const void* IF_SEBEEP(, security_context_t scontext)),
 		const void *data
-		IF_SELINUX(, security_context_t scontext))
+		IF_SEBEEP(, security_context_t scontext))
 {
 	/* Create a working copy of the format string */
 	char *format = xstrdup(masterformat);
@@ -453,7 +453,7 @@ static void print_it(const char *masterformat,
 			break;
 		default:
 			/* Completes "%<modifiers>" with specifier and printfs */
-			print_func(dest, *p, filename, data IF_SELINUX(,scontext));
+			print_func(dest, *p, filename, data IF_SEBEEP(,scontext));
 			break;
 		}
 	}
@@ -474,10 +474,10 @@ static bool do_statfs(const char *filename, const char *format)
 #if !ENABLE_FEATURE_STAT_FORMAT
 	const char *format;
 #endif
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 	security_context_t scontext = NULL;
 
-	if (option_mask32 & OPT_SELINUX) {
+	if (option_mask32 & OPT_SEBEEP) {
 		if ((option_mask32 & OPT_DEREFERENCE
 		     ? lgetfilecon(filename, &scontext)
 		     : getfilecon(filename, &scontext)
@@ -495,7 +495,7 @@ static bool do_statfs(const char *filename, const char *format)
 
 #if ENABLE_FEATURE_STAT_FORMAT
 	if (format == NULL) {
-# if !ENABLE_SELINUX
+# if !ENABLE_SEBEEP
 		format = (option_mask32 & OPT_TERSE
 			? "%n %i %l %t %s %b %f %a %c %d"
 			: "  File: \"%n\"\n"
@@ -505,10 +505,10 @@ static bool do_statfs(const char *filename, const char *format)
 			  "Inodes: Total: %-10c Free: %d");
 # else
 		format = (option_mask32 & OPT_TERSE
-			? (option_mask32 & OPT_SELINUX
+			? (option_mask32 & OPT_SEBEEP
 				? "%n %i %l %t %s %b %f %a %c %d %C"
 				: "%n %i %l %t %s %b %f %a %c %d")
-			: (option_mask32 & OPT_SELINUX
+			: (option_mask32 & OPT_SEBEEP
 				? "  File: \"%n\"\n"
 				"    ID: %-8i Namelen: %-7l Type: %T\n"
 				"Block size: %-10s\n"
@@ -521,9 +521,9 @@ static bool do_statfs(const char *filename, const char *format)
 				"Blocks: Total: %-10b Free: %-10f Available: %a\n"
 				"Inodes: Total: %-10c Free: %d")
 			);
-# endif /* SELINUX */
+# endif /* SEBEEP */
 	}
-	print_it(format, filename, print_statfs, &statfsbuf IF_SELINUX(, scontext));
+	print_it(format, filename, print_statfs, &statfsbuf IF_SEBEEP(, scontext));
 #else /* !FEATURE_STAT_FORMAT */
 	format = (option_mask32 & OPT_TERSE
 		? "%s %llx %lu "
@@ -539,7 +539,7 @@ static bool do_statfs(const char *filename, const char *format)
 	else
 		printf("Type: %s\n", human_fstype(statfsbuf.f_type));
 
-# if !ENABLE_SELINUX
+# if !ENABLE_SEBEEP
 	format = (option_mask32 & OPT_TERSE
 		? "%lu %llu %llu %llu %llu %llu\n"
 		: "Block size: %-10lu\n"
@@ -554,8 +554,8 @@ static bool do_statfs(const char *filename, const char *format)
 	       (unsigned long long) statfsbuf.f_ffree);
 # else
 	format = (option_mask32 & OPT_TERSE
-		? (option_mask32 & OPT_SELINUX ? "%lu %llu %llu %llu %llu %llu %C\n" : "%lu %llu %llu %llu %llu %llu\n")
-		: (option_mask32 & OPT_SELINUX
+		? (option_mask32 & OPT_SEBEEP ? "%lu %llu %llu %llu %llu %llu %C\n" : "%lu %llu %llu %llu %llu %llu\n")
+		: (option_mask32 & OPT_SEBEEP
 			?	"Block size: %-10lu\n"
 				"Blocks: Total: %-10llu Free: %-10llu Available: %llu\n"
 				"Inodes: Total: %-10llu Free: %llu"
@@ -589,10 +589,10 @@ static bool do_statfs(const char *filename, const char *format)
 static bool do_stat(const char *filename, const char *format)
 {
 	struct stat statbuf;
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 	security_context_t scontext = NULL;
 
-	if (option_mask32 & OPT_SELINUX) {
+	if (option_mask32 & OPT_SEBEEP) {
 		if ((option_mask32 & OPT_DEREFERENCE
 		     ? lgetfilecon(filename, &scontext)
 		     : getfilecon(filename, &scontext)
@@ -610,7 +610,7 @@ static bool do_stat(const char *filename, const char *format)
 
 #if ENABLE_FEATURE_STAT_FORMAT
 	if (format == NULL) {
-# if !ENABLE_SELINUX
+# if !ENABLE_SEBEEP
 		if (option_mask32 & OPT_TERSE) {
 			format = "%n %s %b %f %u %g %D %i %h %t %T %X %Y %Z %o";
 		} else {
@@ -633,14 +633,14 @@ static bool do_stat(const char *filename, const char *format)
 		}
 # else
 		if (option_mask32 & OPT_TERSE) {
-			format = (option_mask32 & OPT_SELINUX ?
+			format = (option_mask32 & OPT_SEBEEP ?
 				"%n %s %b %f %u %g %D %i %h %t %T %X %Y %Z %o %C\n"
 				:
 				"%n %s %b %f %u %g %D %i %h %t %T %X %Y %Z %o\n"
 				);
 		} else {
 			if (S_ISBLK(statbuf.st_mode) || S_ISCHR(statbuf.st_mode)) {
-				format = (option_mask32 & OPT_SELINUX ?
+				format = (option_mask32 & OPT_SEBEEP ?
 					"  File: %N\n"
 					"  Size: %-10s\tBlocks: %-10b IO Block: %-6o %F\n"
 					"Device: %Dh/%dd\tInode: %-10i  Links: %-5h"
@@ -657,7 +657,7 @@ static bool do_stat(const char *filename, const char *format)
 					"Access: %x\n" "Modify: %y\n" "Change: %z"
 					);
 			} else {
-				format = (option_mask32 & OPT_SELINUX ?
+				format = (option_mask32 & OPT_SEBEEP ?
 					"  File: %N\n"
 					"  Size: %-10s\tBlocks: %-10b IO Block: %-6o %F\n"
 					"Device: %Dh/%dd\tInode: %-10i  Links: %h\n"
@@ -675,11 +675,11 @@ static bool do_stat(const char *filename, const char *format)
 		}
 # endif
 	}
-	print_it(format, filename, print_stat, &statbuf IF_SELINUX(, scontext));
+	print_it(format, filename, print_stat, &statbuf IF_SEBEEP(, scontext));
 #else	/* FEATURE_STAT_FORMAT */
 	if (option_mask32 & OPT_TERSE) {
 		printf("%s %llu %llu %lx %lu %lu %llx %llu %lu %lx %lx %lu %lu %lu %lu"
-		       IF_NOT_SELINUX("\n"),
+		       IF_NOT_SEBEEP("\n"),
 		       filename,
 		       (unsigned long long) statbuf.st_size,
 		       (unsigned long long) statbuf.st_blocks,
@@ -696,8 +696,8 @@ static bool do_stat(const char *filename, const char *format)
 		       (unsigned long) statbuf.st_ctime,
 		       (unsigned long) statbuf.st_blksize
 		);
-# if ENABLE_SELINUX
-		if (option_mask32 & OPT_SELINUX)
+# if ENABLE_SEBEEP
+		if (option_mask32 & OPT_SEBEEP)
 			printf(" %s\n", scontext);
 		else
 			bb_putchar('\n');
@@ -743,8 +743,8 @@ static bool do_stat(const char *filename, const char *format)
 		       (pw_ent != NULL) ? pw_ent->pw_name : "UNKNOWN",
 		       (unsigned long) statbuf.st_gid,
 		       (gw_ent != NULL) ? gw_ent->gr_name : "UNKNOWN");
-# if ENABLE_SELINUX
-		if (option_mask32 & OPT_SELINUX)
+# if ENABLE_SEBEEP
+		if (option_mask32 & OPT_SEBEEP)
 			printf("   S_Context: %s\n", scontext);
 # endif
 		printf("Access: %s\n", human_time(&statbuf.st_atim));
@@ -762,7 +762,7 @@ int stat_main(int argc UNUSED_PARAM, char **argv)
 	int i;
 	int ok;
 	statfunc_ptr statfunc = do_stat;
-#if ENABLE_FEATURE_STAT_FILESYSTEM || ENABLE_SELINUX
+#if ENABLE_FEATURE_STAT_FILESYSTEM || ENABLE_SEBEEP
 	unsigned opts;
 
 	opts =
@@ -770,7 +770,7 @@ int stat_main(int argc UNUSED_PARAM, char **argv)
 	getopt32(argv, "^"
 		"tL"
 		IF_FEATURE_STAT_FILESYSTEM("f")
-		IF_SELINUX("Z")
+		IF_SEBEEP("Z")
 		IF_FEATURE_STAT_FORMAT("c:")
 		"\0" "-1" /* min one arg */
 		IF_FEATURE_STAT_FORMAT(,&format)
@@ -779,9 +779,9 @@ int stat_main(int argc UNUSED_PARAM, char **argv)
 	if (opts & OPT_FILESYS) /* -f */
 		statfunc = do_statfs;
 #endif
-#if ENABLE_SELINUX
-	if (opts & OPT_SELINUX) {
-		selinux_or_die();
+#if ENABLE_SEBEEP
+	if (opts & OPT_SEBEEP) {
+		sebeep_or_die();
 	}
 #endif
 	ok = 1;

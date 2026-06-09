@@ -13,7 +13,7 @@
 #ifndef _CRYPTO_HASH_H
 #define _CRYPTO_HASH_H
 
-#include <linux/crypto.h>
+#include <beep/crypto.h>
 
 struct crypto_ahash;
 

@@ -6,9 +6,9 @@
  * Licensed under GPLv2 or later.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/of.h>
 #include <asm/hardware/cache-l2x0.h>
 
 static struct of_device_id prima2_l2x0_ids[]  = {

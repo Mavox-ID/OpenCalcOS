@@ -9,7 +9,7 @@
  *
  * Improvements and fixes by:
  *
- *   Arjan van de Ven <arjan@linux.intel.com>
+ *   Arjan van de Ven <arjan@beep.intel.com>
  *   Yanmin Zhang <yanmin.zhang@intel.com>
  *   Wu Fengguang <fengguang.wu@intel.com>
  *   Mike Galbraith <efault@gmx.de>
@@ -33,7 +33,7 @@
 #include "util/thread_map.h"
 #include "util/top.h"
 #include "util/util.h"
-#include <linux/rbtree.h>
+#include <beep/rbtree.h>
 #include "util/parse-options.h"
 #include "util/parse-events.h"
 #include "util/cpumap.h"
@@ -65,7 +65,7 @@
 #include <sys/utsname.h>
 #include <sys/mman.h>
 
-#include <linux/unistd.h>
+#include <beep/unistd.h>
 #include <linux/types.h>
 
 void get_term_dimensions(struct winsize *ws)
@@ -129,7 +129,7 @@ static int perf_top__parse_source(struct perf_top *top, struct hist_entry *he)
 	 * We can't annotate with just /proc/kallsyms
 	 */
 	if (map->dso->symtab_type == DSO_BINARY_TYPE__KALLSYMS) {
-		pr_err("Can't annotate %s: No vmlinux file was found in the "
+		pr_err("Can't annotate %s: No vmbeep file was found in the "
 		       "path\n", sym->name);
 		sleep(1);
 		return -1;
@@ -181,7 +181,7 @@ static void ui__warn_map_erange(struct map *map, struct symbol *sym, u64 ip)
 		    "Kernel: %s\n"
 		    "Tools:  %s\n\n"
 		    "Not all samples will be on the annotation output.\n\n"
-		    "Please report to linux-kernel@vger.kernel.org\n",
+		    "Please report to beep-kernel@vger.kernel.org\n",
 		    ip, map->dso->long_name, dso__symtab_origin(map->dso),
 		    map->start, map->end, sym->start, sym->end,
 		    sym->binding == STB_GLOBAL ? 'g' :
@@ -758,29 +758,29 @@ static void perf_event__process_sample(struct perf_tool *tool,
 		const char *msg = "Kernel samples will not be resolved.\n";
 		/*
 		 * As we do lazy loading of symtabs we only will know if the
-		 * specified vmlinux file is invalid when we actually have a
+		 * specified vmbeep file is invalid when we actually have a
 		 * hit in kernel space and then try to load it. So if we get
 		 * here and there are _no_ symbols in the DSO backing the
 		 * kernel map, bail out.
 		 *
 		 * We may never get here, for instance, if we use -K/
 		 * --hide-kernel-symbols, even if the user specifies an
-		 * invalid --vmlinux ;-)
+		 * invalid --vmbeep ;-)
 		 */
-		if (!top->kptr_restrict_warned && !top->vmlinux_warned &&
-		    al.map == machine->vmlinux_maps[MAP__FUNCTION] &&
+		if (!top->kptr_restrict_warned && !top->vmbeep_warned &&
+		    al.map == machine->vmbeep_maps[MAP__FUNCTION] &&
 		    RB_EMPTY_ROOT(&al.map->dso->symbols[MAP__FUNCTION])) {
-			if (symbol_conf.vmlinux_name) {
+			if (symbol_conf.vmbeep_name) {
 				ui__warning("The %s file can't be used.\n%s",
-					    symbol_conf.vmlinux_name, msg);
+					    symbol_conf.vmbeep_name, msg);
 			} else {
-				ui__warning("A vmlinux file was not found.\n%s",
+				ui__warning("A vmbeep file was not found.\n%s",
 					    msg);
 			}
 
 			if (use_browser <= 0)
 				sleep(5);
-			top->vmlinux_warned = true;
+			top->vmbeep_warned = true;
 		}
 	}
 
@@ -1198,8 +1198,8 @@ int cmd_top(int argc, const char **argv, const char *prefix __maybe_unused)
 			    "system-wide collection from all CPUs"),
 	OPT_STRING('C', "cpu", &top.target.cpu_list, "cpu",
 		    "list of cpus to monitor"),
-	OPT_STRING('k', "vmlinux", &symbol_conf.vmlinux_name,
-		   "file", "vmlinux pathname"),
+	OPT_STRING('k', "vmbeep", &symbol_conf.vmbeep_name,
+		   "file", "vmbeep pathname"),
 	OPT_BOOLEAN('K', "hide_kernel_symbols", &top.hide_kernel_symbols,
 		    "hide kernel symbols"),
 	OPT_UINTEGER('m', "mmap-pages", &top.mmap_pages, "number of mmap data pages"),
@@ -1339,7 +1339,7 @@ int cmd_top(int argc, const char **argv, const char *prefix __maybe_unused)
 
 	symbol_conf.priv_size = sizeof(struct annotation);
 
-	symbol_conf.try_vmlinux_path = (symbol_conf.vmlinux_name == NULL);
+	symbol_conf.try_vmbeep_path = (symbol_conf.vmbeep_name == NULL);
 	if (symbol__init() < 0)
 		return -1;
 

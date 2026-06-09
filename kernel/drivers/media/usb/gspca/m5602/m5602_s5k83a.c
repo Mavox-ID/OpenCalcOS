@@ -2,8 +2,8 @@
  * Driver for the s5k83a sensor
  *
  * Copyright (C) 2008 Erik Andrén
- * Copyright (C) 2007 Ilyes Gouta. Based on the m5603x Linux Driver Project.
- * Copyright (C) 2005 m5603x Linux Driver Project <m5602@x3ng.com.br>
+ * Copyright (C) 2007 Ilyes Gouta. Based on the m5603x Beep Driver Project.
+ * Copyright (C) 2005 m5603x Beep Driver Project <m5602@x3ng.com.br>
  *
  * Portions of code to USB interface and ALi driver software,
  * Copyright (c) 2006 Willem Duinker
@@ -18,7 +18,7 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kthread.h>
+#include <beep/kthread.h>
 #include "m5602_s5k83a.h"
 
 static int s5k83a_set_gain(struct gspca_dev *gspca_dev, __s32 val);

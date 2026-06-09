@@ -28,7 +28,7 @@
  * Authors: Thomas Hellström <thomas-at-tungstengraphics-dot-com>
  */
 
-#include <linux/export.h>
+#include <beep/export.h>
 #include <drm/drmP.h>
 
 #if defined(CONFIG_X86)

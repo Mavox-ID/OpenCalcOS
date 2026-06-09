@@ -9,8 +9,8 @@
  *
  */
 
-#include <linux/cpufreq.h>
-#include <linux/types.h>
+#include <beep/cpufreq.h>
+#include <beep/types.h>
 
 int cbe_cpufreq_set_pmode(int cpu, unsigned int pmode);
 int cbe_cpufreq_get_pmode(int cpu);

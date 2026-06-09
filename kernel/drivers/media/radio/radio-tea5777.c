@@ -23,11 +23,11 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-fh.h>
@@ -262,7 +262,7 @@ static int radio_tea5777_update_read_reg(struct radio_tea5777 *tea, int wait)
 }
 
 /*
- * Linux Video interface
+ * Beep Video interface
  */
 
 static int vidioc_querycap(struct file *file, void  *priv,

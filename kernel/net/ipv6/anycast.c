@@ -1,6 +1,6 @@
 /*
  *	Anycast support for IPv6
- *	Linux INET6 implementation
+ *	Beep INET6 implementation
  *
  *	Authors:
  *	David L Stevens (dlstevens@us.ibm.com)
@@ -13,23 +13,23 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/random.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/route.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <beep/capability.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/random.h>
+#include <beep/string.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/in6.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/route.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
 
 #include <net/net_namespace.h>
 #include <net/sock.h>

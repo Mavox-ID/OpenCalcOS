@@ -7,15 +7,15 @@
  * it under the terms of the GNU General Public License, as published by
  * the Free Software Foundation, version 2.
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/ihex.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/delay.h>
+#include <beep/firmware.h>
+#include <beep/ihex.h>
 
 /* include firmware (variables)*/
 

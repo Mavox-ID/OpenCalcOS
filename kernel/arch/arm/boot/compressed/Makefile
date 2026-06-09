@@ -1,7 +1,7 @@
 #
-# linux/arch/arm/boot/compressed/Makefile
+# beep/arch/arm/boot/compressed/Makefile
 #
-# create a compressed vmlinuz image from the original vmlinux
+# create a compressed vmlinuz image from the original vmbeep
 #
 
 OBJS		=
@@ -106,7 +106,7 @@ ifeq ($(CONFIG_ARM_ATAG_DTB_COMPAT),y)
 OBJS	+= $(libfdt_objs) atags_to_fdt.o
 endif
 
-targets       := vmlinux vmlinux.lds \
+targets       := vmbeep vmbeep.lds \
 		 piggy.$(suffix_y) piggy.$(suffix_y).o \
 		 lib1funcs.o lib1funcs.S ashldi3.o ashldi3.S \
 		 font.o font.c head.o misc.o $(OBJS)
@@ -124,24 +124,24 @@ ccflags-y := -fpic -fno-builtin -I$(obj)
 asflags-y := -Wa,-march=all -DZIMAGE
 
 # Supply kernel BSS size to the decompressor via a linker symbol.
-KBSS_SZ = $(shell $(CROSS_COMPILE)size $(obj)/../../../../vmlinux | \
+KBSS_SZ = $(shell $(CROSS_COMPILE)size $(obj)/../../../../vmbeep | \
 		awk 'END{print $$3}')
-LDFLAGS_vmlinux = --defsym _kernel_bss_size=$(KBSS_SZ)
+LDFLAGS_vmbeep = --defsym _kernel_bss_size=$(KBSS_SZ)
 # Supply ZRELADDR to the decompressor via a linker symbol.
 ifneq ($(CONFIG_AUTO_ZRELADDR),y)
-LDFLAGS_vmlinux += --defsym zreladdr=$(ZRELADDR)
+LDFLAGS_vmbeep += --defsym zreladdr=$(ZRELADDR)
 endif
 ifeq ($(CONFIG_CPU_ENDIAN_BE8),y)
-LDFLAGS_vmlinux += --be8
+LDFLAGS_vmbeep += --be8
 endif
 # ?
-LDFLAGS_vmlinux += -p
+LDFLAGS_vmbeep += -p
 # Report unresolved symbol references
-LDFLAGS_vmlinux += --no-undefined
+LDFLAGS_vmbeep += --no-undefined
 # Delete all temporary local symbols
-LDFLAGS_vmlinux += -X
+LDFLAGS_vmbeep += -X
 # Next argument is a linker script
-LDFLAGS_vmlinux += -T
+LDFLAGS_vmbeep += -T
 
 # For __aeabi_uidivmod
 lib1funcs = $(obj)/lib1funcs.o
@@ -175,7 +175,7 @@ if [ $(words $(ZRELADDR)) -gt 1 -a "$(CONFIG_AUTO_ZRELADDR)" = "" ]; then \
 	false; \
 fi
 
-$(obj)/vmlinux: $(obj)/vmlinux.lds $(obj)/$(HEAD) $(obj)/piggy.$(suffix_y).o \
+$(obj)/vmbeep: $(obj)/vmbeep.lds $(obj)/$(HEAD) $(obj)/piggy.$(suffix_y).o \
 		$(addprefix $(obj)/, $(OBJS)) $(lib1funcs) $(ashldi3) FORCE
 	@$(check_for_multiple_zreladdr)
 	$(call if_changed,ld)
@@ -191,7 +191,7 @@ CFLAGS_font.o := -Dstatic=
 $(obj)/font.c: $(FONTC)
 	$(call cmd,shipped)
 
-$(obj)/vmlinux.lds: $(obj)/vmlinux.lds.in arch/arm/boot/Makefile $(KCONFIG_CONFIG)
+$(obj)/vmbeep.lds: $(obj)/vmbeep.lds.in arch/arm/boot/Makefile $(KCONFIG_CONFIG)
 	@sed "$(SEDFLAGS)" < $< > $@
 
 $(obj)/hyp-stub.S: $(srctree)/arch/$(SRCARCH)/kernel/hyp-stub.S

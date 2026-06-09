@@ -1,7 +1,7 @@
 /*
  * mm/percpu-vm.c - vmalloc area based chunk allocation
  *
- * Copyright (C) 2010		SUSE Linux Products GmbH
+ * Copyright (C) 2010		SUSE Beep Products GmbH
  * Copyright (C) 2010		Tejun Heo <tj@kernel.org>
  *
  * This file is released under the GPLv2.

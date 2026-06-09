@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/pci.c
+ * beep/arch/unicore32/kernel/pci.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -12,13 +12,13 @@
  *  PCI bios-type initialisation for PCI machines
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/io.h>
 
 static int debug_pci;
 

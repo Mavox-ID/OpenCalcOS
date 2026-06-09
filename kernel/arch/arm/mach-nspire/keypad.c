@@ -1,5 +1,5 @@
 /*
- *	linux/arch/arm/mach-nspire/keypad.c
+ *	beep/arch/arm/mach-nspire/keypad.c
  *
  *	Copyright (C) 2012 Daniel Tang <tangrs@tangrs.id.au>
  *
@@ -9,7 +9,7 @@
  *
  */
 
-#include <linux/input.h>
+#include <beep/input.h>
 
 #include <mach/keypad.h>
 

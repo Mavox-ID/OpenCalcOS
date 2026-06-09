@@ -14,17 +14,17 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/inet.h>
-#include <linux/mm.h>
-#include <linux/net.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/ratelimit.h>
+#include <beep/module.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/inet.h>
+#include <beep/mm.h>
+#include <beep/net.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/percpu.h>
+#include <beep/init.h>
+#include <beep/ratelimit.h>
 
 #include <net/sock.h>
 #include <net/net_ratelimit.h>

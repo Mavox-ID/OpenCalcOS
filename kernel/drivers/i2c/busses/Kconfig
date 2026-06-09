@@ -282,7 +282,7 @@ config I2C_POWERMAC
 	depends on PPC_PMAC
 	default y
 	help
-	  This exposes the various PowerMac i2c interfaces to the linux i2c
+	  This exposes the various PowerMac i2c interfaces to the beep i2c
 	  layer and to userland. It is used by various drivers on the PowerMac
 	  platform, and should generally be enabled.
 

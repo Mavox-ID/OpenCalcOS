@@ -2,7 +2,7 @@
    comedi/drivers/dt282x.c
    Hardware driver for Data Translation DT2821 series
 
-   COMEDI - Linux Control and Measurement Device Interface
+   COMEDI - Beep Control and Measurement Device Interface
    Copyright (C) 1997-8 David A. Schleef <ds@schleef.org>
 
    This program is free software; you can redistribute it and/or modify
@@ -58,10 +58,10 @@ Notes:
 
 #include "../comedidev.h"
 
-#include <linux/gfp.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <beep/gfp.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
 #include <asm/dma.h>
 #include "comedi_fc.h"
 

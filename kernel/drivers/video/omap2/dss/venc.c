@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/omap2/dss/venc.c
+ * beep/drivers/video/omap2/dss/venc.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -21,19 +21,19 @@
 
 #define DSS_SUBSYS_NAME "VENC"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/mutex.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/seq_file.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/consumer.h>
+#include <beep/pm_runtime.h>
 
 #include <video/omapdss.h>
 

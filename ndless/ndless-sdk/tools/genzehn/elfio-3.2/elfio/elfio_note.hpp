@@ -33,7 +33,7 @@ namespace ELFIO {
 // for 32-bit and 64-bit formats.
 // (https://docs.oracle.com/cd/E23824_01/html/819-0690/chapter6-18048.html)
 //
-// It looks like EM_X86_64 Linux implementation is similar to Oracle's
+// It looks like EM_X86_64 Beep implementation is similar to Oracle's
 // definition. Therefore, the same alignment works for both formats
 //------------------------------------------------------------------------------
 

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-mmp/flint.c
+ *  beep/arch/arm/mach-mmp/flint.c
  *
  *  Support for the Marvell Flint Development Platform.
  *
@@ -10,13 +10,13 @@
  *  publishhed by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/smc91x.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/smc91x.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

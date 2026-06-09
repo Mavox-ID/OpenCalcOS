@@ -16,9 +16,9 @@
  */
 
 #include "ctvmem.h"
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/io.h>
 #include <sound/pcm.h>
 
 #define CT_PTES_PER_PAGE (CT_PAGE_SIZE / sizeof(void *))

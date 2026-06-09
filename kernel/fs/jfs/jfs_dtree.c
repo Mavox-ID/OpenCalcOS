@@ -100,9 +100,9 @@
  *	log based recovery:
  */
 
-#include <linux/fs.h>
-#include <linux/quotaops.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/quotaops.h>
+#include <beep/slab.h>
 #include "jfs_incore.h"
 #include "jfs_superblock.h"
 #include "jfs_filsys.h"
@@ -3121,7 +3121,7 @@ int jfs_readdir(struct file *filp, void *dirent, filldir_t filldir)
 		}
 	} else {
 		/*
-		 * Legacy filesystem - OS/2 & Linux JFS < 0.3.6
+		 * Legacy filesystem - OS/2 & Beep JFS < 0.3.6
 		 *
 		 * pn = index = 0:	First entry "."
 		 * pn = 0; index = 1:	Second entry ".."

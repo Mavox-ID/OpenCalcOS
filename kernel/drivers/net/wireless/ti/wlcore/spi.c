@@ -21,14 +21,14 @@
  *
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/crc7.h>
-#include <linux/spi/spi.h>
-#include <linux/wl12xx.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/module.h>
+#include <beep/crc7.h>
+#include <beep/spi/spi.h>
+#include <beep/wl12xx.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 #include "wlcore.h"
 #include "wl12xx_80211.h"

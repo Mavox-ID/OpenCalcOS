@@ -7,7 +7,7 @@
 #ifndef _BFIN_SIGINFO_H
 #define _BFIN_SIGINFO_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm-generic/siginfo.h>
 
 #define UID16_SIGINFO_COMPAT_NEEDED

@@ -19,18 +19,18 @@
 #include "regs-mixer.h"
 #include "regs-vp.h"
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/clk.h>
-#include <linux/regulator/consumer.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/wait.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/delay.h>
+#include <beep/pm_runtime.h>
+#include <beep/clk.h>
+#include <beep/regulator/consumer.h>
 
 #include <drm/exynos_drm.h>
 

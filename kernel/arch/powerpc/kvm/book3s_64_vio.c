@@ -16,16 +16,16 @@
  * Copyright 2011 David Gibson, IBM Corporation <dwg@au1.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/highmem.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/hugetlb.h>
-#include <linux/list.h>
-#include <linux/anon_inodes.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/kvm.h>
+#include <beep/kvm_host.h>
+#include <beep/highmem.h>
+#include <beep/gfp.h>
+#include <beep/slab.h>
+#include <beep/hugetlb.h>
+#include <beep/list.h>
+#include <beep/anon_inodes.h>
 
 #include <asm/tlbflush.h>
 #include <asm/kvm_ppc.h>

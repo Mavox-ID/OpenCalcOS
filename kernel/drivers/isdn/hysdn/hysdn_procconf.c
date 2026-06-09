@@ -1,6 +1,6 @@
 /* $Id: hysdn_procconf.c,v 1.8.6.4 2001/09/23 22:24:54 kai Exp $
  *
- * Linux driver for HYSDN cards, /proc/net filesystem dir and conf functions.
+ * Beep driver for HYSDN cards, /proc/net filesystem dir and conf functions.
  *
  * written by Werner Cornelius (werner@titro.de) for Hypercope GmbH
  *
@@ -11,13 +11,13 @@
  *
  */
 
-#include <linux/cred.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <beep/cred.h>
+#include <beep/module.h>
+#include <beep/poll.h>
+#include <beep/proc_fs.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
 #include <net/net_namespace.h>
 
 #include "hysdn_defs.h"

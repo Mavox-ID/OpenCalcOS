@@ -21,25 +21,25 @@
 ******************************************************************************/
 
 
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/if_arp.h>
-#include <linux/in6.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/tcp.h>
-#include <linux/types.h>
-#include <linux/wireless.h>
-#include <linux/etherdevice.h>
-#include <linux/uaccess.h>
-#include <linux/ctype.h>
+#include <beep/compiler.h>
+#include <beep/errno.h>
+#include <beep/if_arp.h>
+#include <beep/in6.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/pci.h>
+#include <beep/proc_fs.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
+#include <beep/tcp.h>
+#include <beep/types.h>
+#include <beep/wireless.h>
+#include <beep/etherdevice.h>
+#include <beep/uaccess.h>
+#include <beep/ctype.h>
 
 #include "rtllib.h"
 #include "dot11d.h"

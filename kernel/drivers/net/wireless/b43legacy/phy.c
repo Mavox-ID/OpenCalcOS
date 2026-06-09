@@ -29,11 +29,11 @@
 
 */
 
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/types.h>
 
 #include "b43legacy.h"
 #include "phy.h"

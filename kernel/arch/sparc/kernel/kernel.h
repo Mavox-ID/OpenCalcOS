@@ -1,7 +1,7 @@
 #ifndef __SPARC_KERNEL_H
 #define __SPARC_KERNEL_H
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 #include <asm/traps.h>
 #include <asm/head.h>
@@ -27,7 +27,7 @@ static inline unsigned long kimage_addr_to_ra(const char *p)
 
 #ifdef CONFIG_SPARC32
 /* setup_32.c */
-void sparc32_start_kernel(struct linux_romvec *rp);
+void sparc32_start_kernel(struct beep_romvec *rp);
 
 /* cpu.c */
 extern void cpu_probe(void);
@@ -62,8 +62,8 @@ extern void sun4d_free_irq(unsigned int irq, void *dev_id);
 
 /* head_32.S */
 extern unsigned int t_nmi[];
-extern unsigned int linux_trap_ipi15_sun4d[];
-extern unsigned int linux_trap_ipi15_sun4m[];
+extern unsigned int beep_trap_ipi15_sun4d[];
+extern unsigned int beep_trap_ipi15_sun4m[];
 
 extern struct tt_entry trapbase_cpu1;
 extern struct tt_entry trapbase_cpu2;

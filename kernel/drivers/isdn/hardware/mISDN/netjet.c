@@ -1,9 +1,9 @@
 /*
  * NETJet mISDN driver
  *
- * Author       Karsten Keil <keil@isdn4linux.de>
+ * Author       Karsten Keil <keil@isdn4beep.de>
  *
- * Copyright 2009  by Karsten Keil <keil@isdn4linux.de>
+ * Copyright 2009  by Karsten Keil <keil@isdn4beep.de>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -20,16 +20,16 @@
  *
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/mISDNhw.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/mISDNhw.h>
+#include <beep/slab.h>
 #include "ipac.h"
 #include "iohelper.h"
 #include "netjet.h"
-#include <linux/isdn/hdlc.h>
+#include <beep/isdn/hdlc.h>
 
 #define NETJET_REV	"2.0"
 

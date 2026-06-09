@@ -25,10 +25,10 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/stat.h>
-#include <linux/sysfs.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/stat.h>
+#include <beep/sysfs.h>
 #include "intel_drv.h"
 #include "i915_drv.h"
 

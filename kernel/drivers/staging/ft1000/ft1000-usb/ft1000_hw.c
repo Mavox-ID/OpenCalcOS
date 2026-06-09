@@ -6,14 +6,14 @@
 //
 // $Id:
 //====================================================
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/usb.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/usb.h>
 #include "ft1000_usb.h"
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define HARLEY_READ_REGISTER     0x0
 #define HARLEY_WRITE_REGISTER    0x01

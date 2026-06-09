@@ -22,8 +22,8 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/buffer_head.h>
+#include <beep/types.h>
+#include <beep/buffer_head.h>
 #include "nilfs.h"
 #include "mdt.h"
 #include "alloc.h"

@@ -1,8 +1,8 @@
 
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/stop_machine.h>
+#include <beep/sched.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/stop_machine.h>
 
 #include "cpupri.h"
 
@@ -75,7 +75,7 @@ extern struct mutex sched_domains_mutex;
 
 #ifdef CONFIG_CGROUP_SCHED
 
-#include <linux/cgroup.h>
+#include <beep/cgroup.h>
 
 struct cfs_rq;
 struct rt_rq;
@@ -618,7 +618,7 @@ static inline void __set_task_cpu(struct task_struct *p, unsigned int cpu)
  * Tunables that become constants when CONFIG_SCHED_DEBUG is off:
  */
 #ifdef CONFIG_SCHED_DEBUG
-# include <linux/static_key.h>
+# include <beep/static_key.h>
 # define const_debug __read_mostly
 #else
 # define const_debug const
@@ -903,7 +903,7 @@ extern void init_rt_bandwidth(struct rt_bandwidth *rt_b, u64 period, u64 runtime
 extern void update_idle_cpu_load(struct rq *this_rq);
 
 #ifdef CONFIG_CGROUP_CPUACCT
-#include <linux/cgroup.h>
+#include <beep/cgroup.h>
 /* track cpu usage of a group of tasks and its child groups */
 struct cpuacct {
 	struct cgroup_subsys_state css;

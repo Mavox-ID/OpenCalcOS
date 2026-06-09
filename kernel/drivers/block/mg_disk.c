@@ -12,18 +12,18 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/hdreg.h>
-#include <linux/ata.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/mg_disk.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/blkdev.h>
+#include <beep/hdreg.h>
+#include <beep/ata.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/mg_disk.h>
+#include <beep/slab.h>
 
 #define MG_RES_SEC (CONFIG_MG_DISK_RES << 1)
 

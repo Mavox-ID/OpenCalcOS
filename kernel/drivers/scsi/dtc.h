@@ -2,7 +2,7 @@
  * DTC controller, taken from T128 driver by...
  * Copyright 1993, Drew Eckhardt
  *	Visionary Computing
- *	(Unix and Linux consulting and custom programming)
+ *	(Unix and Beep consulting and custom programming)
  *	drew@colorado.edu
  *      +1 (303) 440-4894
  *

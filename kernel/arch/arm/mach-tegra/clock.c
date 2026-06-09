@@ -17,15 +17,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
 
 #include "board.h"
 #include "clock.h"

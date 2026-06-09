@@ -29,15 +29,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/vmalloc.h>
-#include <linux/if_vlan.h>
-#include <linux/uaccess.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/vmalloc.h>
+#include <beep/if_vlan.h>
+#include <beep/uaccess.h>
 
 #include "ixgbevf.h"
 

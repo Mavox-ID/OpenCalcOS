@@ -33,8 +33,8 @@
  */
 
 #include <asm/cpu-info.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
 
 #include <asm/mipsregs.h>
 #include <asm/netlogic/xlr/fmn.h>

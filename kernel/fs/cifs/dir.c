@@ -20,12 +20,12 @@
  *   along with this library; if not, write to the Free Software
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/file.h>
+#include <beep/fs.h>
+#include <beep/stat.h>
+#include <beep/slab.h>
+#include <beep/namei.h>
+#include <beep/mount.h>
+#include <beep/file.h>
 #include "cifsfs.h"
 #include "cifspdu.h"
 #include "cifsglob.h"
@@ -187,7 +187,7 @@ check_name(struct dentry *direntry)
 }
 
 
-/* Inode operations in similar order to how they appear in Linux file fs.h */
+/* Inode operations in similar order to how they appear in Beep file fs.h */
 
 static int
 cifs_do_create(struct inode *inode, struct dentry *direntry, unsigned int xid,

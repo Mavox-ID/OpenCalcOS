@@ -21,23 +21,23 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/workqueue.h>
-#include <linux/sysfs.h>
-#include <linux/kobject.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/platform_data/exynos_thermal.h>
-#include <linux/thermal.h>
-#include <linux/cpufreq.h>
-#include <linux/cpu_cooling.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/clk.h>
+#include <beep/workqueue.h>
+#include <beep/sysfs.h>
+#include <beep/kobject.h>
+#include <beep/io.h>
+#include <beep/mutex.h>
+#include <beep/platform_data/exynos_thermal.h>
+#include <beep/thermal.h>
+#include <beep/cpufreq.h>
+#include <beep/cpu_cooling.h>
+#include <beep/of.h>
 
 #include <plat/cpu.h>
 

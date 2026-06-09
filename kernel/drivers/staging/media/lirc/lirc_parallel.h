@@ -3,7 +3,7 @@
 #ifndef _LIRC_PARALLEL_H
 #define _LIRC_PARALLEL_H
 
-#include <linux/lp.h>
+#include <beep/lp.h>
 
 #define LIRC_PORT_LEN 3
 

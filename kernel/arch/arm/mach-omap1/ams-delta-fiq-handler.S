@@ -1,7 +1,7 @@
 /*
- *  linux/arch/arm/mach-omap1/ams-delta-fiq-handler.S
+ *  beep/arch/arm/mach-omap1/ams-delta-fiq-handler.S
  *
- *  Based on  linux/arch/arm/lib/floppydma.S
+ *  Based on  beep/arch/arm/lib/floppydma.S
  *  Renamed and modified to work with 2.6 kernel by Matt Callow
  *  Copyright (C) 1995, 1996 Russell King
  *  Copyright (C) 2004 Pete Trapps
@@ -13,7 +13,7 @@
  * as published by the Free Software Foundation.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 
 #include <mach/board-ams-delta.h>

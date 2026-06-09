@@ -1,5 +1,5 @@
 /*
-   md.h : kernel internal structure of the Linux MD driver
+   md.h : kernel internal structure of the Beep MD driver
           Copyright (C) 1996-98 Ingo Molnar, Gadi Oxman
 	  
    This program is free software; you can redistribute it and/or modify
@@ -8,21 +8,21 @@
    any later version.
    
    You should have received a copy of the GNU General Public License
-   (for example /usr/src/linux/COPYING); if not, write to the Free
+   (for example /usr/src/beep/COPYING); if not, write to the Free
    Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.  
 */
 
 #ifndef _MD_MD_H
 #define _MD_MD_H
 
-#include <linux/blkdev.h>
-#include <linux/kobject.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <beep/blkdev.h>
+#include <beep/kobject.h>
+#include <beep/list.h>
+#include <beep/mm.h>
+#include <beep/mutex.h>
+#include <beep/timer.h>
+#include <beep/wait.h>
+#include <beep/workqueue.h>
 
 #define MaxSector (~(sector_t)0)
 

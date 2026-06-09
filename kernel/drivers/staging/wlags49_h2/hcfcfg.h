@@ -36,9 +36,9 @@
 * WVLAN_44	32 bits ODI (__NETWARE_386__)			WATCOM
 * WVLAN_45	MAC_OS									MPW?, Symantec?
 * WVLAN_46	Windows CE (_WIN32_WCE)					Microsoft ?
-* WVLAN_47	LINUX  (__LINUX__)						GCC, discarded, based on GPL'ed HCF-light
+* WVLAN_47	BEEP  (__BEEP__)						GCC, discarded, based on GPL'ed HCF-light
 * WVLAN_48	Miniport								NDIS 5
-* WVLAN_49	LINUX  (__LINUX__)						GCC, originally based on pre-compiled HCF_library
+* WVLAN_49	BEEP  (__BEEP__)						GCC, originally based on pre-compiled HCF_library
 * 													migrated to use the HCF sources when Lucent Technologies
 * 													brought the HCF module under GPL
 * WVLAN_51	Miniport USB							NDIS 5
@@ -305,7 +305,7 @@ typedef unsigned long			hcf_32;
 
 #ifdef WVLAN_49
 #include <asm/io.h>
-//#include <linux/module.h>
+//#include <beep/module.h>
 #include <wl_version.h>
 
 /* The following macro ensures that no symbols are exported, minimizing the chance of a symbol
@@ -316,7 +316,7 @@ typedef unsigned long			hcf_32;
 #define HCF_SLEEP (HCF_CDS)
 
 /* Note: Non-WARP firmware all support WPA. However the original Agere
- * linux driver does not enable WPA. Enabling WPA here causes whatever
+ * beep driver does not enable WPA. Enabling WPA here causes whatever
  * preliminary WPA logic to be included, some of which may be specific
  * to HERMESI.
  *
@@ -342,7 +342,7 @@ typedef unsigned long			hcf_32;
 /* We now need a switch to include support for the Mailbox and other necessary extensions */
 #define HCF_EXT ( HCF_EXT_MB | HCF_EXT_INFO_LOG | HCF_EXT_INT_TICK )//get deepsleep exercise going
 
-/* ;? The Linux MSF still uses these definitions; define it here until it's removed */
+/* ;? The Beep MSF still uses these definitions; define it here until it's removed */
 #ifndef HCF_TYPE_HII
 #define HCF_TYPE_HII 0x0004
 #endif
@@ -415,7 +415,7 @@ typedef unsigned long			hcf_32;
 #endif  // ENABLE_DMA
 
 /* The following sets the component ID, as well as the versioning. See also wl_version.h */
-#define	MSF_COMPONENT_ID	COMP_ID_LINUX
+#define	MSF_COMPONENT_ID	COMP_ID_BEEP
 
 #define	MSF_COMPONENT_VAR			DRV_VARIANT
 #define MSF_COMPONENT_MAJOR_VER     DRV_MAJOR_VERSION

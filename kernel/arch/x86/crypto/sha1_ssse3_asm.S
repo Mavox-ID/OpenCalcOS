@@ -19,7 +19,7 @@
  *   Authors: Maxim Locktyukhin <maxim.locktyukhin@intel.com>
  *            Ronen Zohar <ronen.zohar@intel.com>
  *
- * Converted to AT&T syntax and adapted for inclusion in the Linux kernel:
+ * Converted to AT&T syntax and adapted for inclusion in the Beep kernel:
  *   Author: Mathias Krause <minipli@googlemail.com>
  *
  * This program is free software; you can redistribute it and/or modify

@@ -80,40 +80,40 @@
  *		  with BSD names.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/dcache.h>
-#include <linux/namei.h>
-#include <linux/socket.h>
-#include <linux/un.h>
-#include <linux/fcntl.h>
-#include <linux/termios.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/stat.h>
+#include <beep/dcache.h>
+#include <beep/namei.h>
+#include <beep/socket.h>
+#include <beep/un.h>
+#include <beep/fcntl.h>
+#include <beep/termios.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/in.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 #include <net/af_unix.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #include <net/scm.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/rtnetlink.h>
-#include <linux/mount.h>
+#include <beep/init.h>
+#include <beep/poll.h>
+#include <beep/rtnetlink.h>
+#include <beep/mount.h>
 #include <net/checksum.h>
-#include <linux/security.h>
+#include <beep/security.h>
 
 struct hlist_head unix_socket_table[2 * UNIX_HASH_SIZE];
 EXPORT_SYMBOL_GPL(unix_socket_table);
@@ -442,7 +442,7 @@ static int unix_release_sock(struct sock *sk, int embrion)
 
 	/*
 	 * Fixme: BSD difference: In BSD all sockets connected to us get
-	 *	  ECONNRESET and we die on the spot. In Linux we behave
+	 *	  ECONNRESET and we die on the spot. In Beep we behave
 	 *	  like files and pipes do and wait for the last
 	 *	  dereference.
 	 *

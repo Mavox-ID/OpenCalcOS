@@ -14,8 +14,8 @@
 #ifndef CPM_UART_H
 #define CPM_UART_H
 
-#include <linux/platform_device.h>
-#include <linux/fs_uart_pd.h>
+#include <beep/platform_device.h>
+#include <beep/fs_uart_pd.h>
 
 #if defined(CONFIG_CPM2)
 #include "cpm_uart_cpm2.h"

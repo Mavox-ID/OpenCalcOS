@@ -40,7 +40,7 @@
 //usage:       "  1:55pm  up  2:30, load average: 0.09, 0.04, 0.00\n"
 
 #include "libbb.h"
-#ifdef __linux__
+#ifdef __beep__
 # include <sys/sysinfo.h>
 #endif
 

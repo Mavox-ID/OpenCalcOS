@@ -1,4 +1,4 @@
-/* linux/drivers/video/sm501fb.c
+/* beep/drivers/video/sm501fb.c
  *
  * Copyright (c) 2006 Simtec Electronics
  *	Vincent Sanders <vince@simtec.co.uk>
@@ -11,35 +11,35 @@
  * Framebuffer driver for the Silicon Motion SM501
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/wait.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/tty.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/vmalloc.h>
+#include <beep/dma-mapping.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/wait.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/console.h>
+#include <beep/io.h>
 
 #include <asm/uaccess.h>
 #include <asm/div64.h>
 
 #ifdef CONFIG_PM
-#include <linux/pm.h>
+#include <beep/pm.h>
 #endif
 
-#include <linux/sm501.h>
-#include <linux/sm501-regs.h>
+#include <beep/sm501.h>
+#include <beep/sm501-regs.h>
 
 #include "edid.h"
 

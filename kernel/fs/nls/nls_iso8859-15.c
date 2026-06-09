@@ -1,15 +1,15 @@
 /*
- * linux/fs/nls/nls_iso8859-15.c
+ * beep/fs/nls/nls_iso8859-15.c
  *
  * Charset iso8859-15 translation tables.
  * The Unicode to charset table has only exact mappings.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/nls.h>
-#include <linux/errno.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/nls.h>
+#include <beep/errno.h>
 
 static const wchar_t charset2uni[256] = {
 	/* 0x00*/

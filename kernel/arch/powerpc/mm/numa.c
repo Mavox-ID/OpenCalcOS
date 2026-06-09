@@ -8,20 +8,20 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/threads.h>
-#include <linux/bootmem.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/export.h>
-#include <linux/nodemask.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/pfn.h>
-#include <linux/cpuset.h>
-#include <linux/node.h>
+#include <beep/threads.h>
+#include <beep/bootmem.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/mmzone.h>
+#include <beep/export.h>
+#include <beep/nodemask.h>
+#include <beep/cpu.h>
+#include <beep/notifier.h>
+#include <beep/memblock.h>
+#include <beep/of.h>
+#include <beep/pfn.h>
+#include <beep/cpuset.h>
+#include <beep/node.h>
 #include <asm/sparsemem.h>
 #include <asm/prom.h>
 #include <asm/smp.h>
@@ -181,7 +181,7 @@ static const int *of_get_associativity(struct device_node *dev)
 }
 
 /*
- * Returns the property linux,drconf-usable-memory if
+ * Returns the property beep,drconf-usable-memory if
  * it exists (the property exists only in kexec/kdump kernels,
  * added by kexec-tools)
  */
@@ -189,7 +189,7 @@ static const u32 *of_get_usable_memory(struct device_node *memory)
 {
 	const u32 *prop;
 	u32 len;
-	prop = of_get_property(memory, "linux,drconf-usable-memory", &len);
+	prop = of_get_property(memory, "beep,drconf-usable-memory", &len);
 	if (!prop || len < sizeof(unsigned int))
 		return 0;
 	return prop;
@@ -606,15 +606,15 @@ static unsigned long __init numa_enforce_memory_limit(unsigned long start,
 
 /*
  * Reads the counter for a given entry in
- * linux,drconf-usable-memory property
+ * beep,drconf-usable-memory property
  */
 static inline int __init read_usm_ranges(const u32 **usm)
 {
 	/*
 	 * For each lmb in ibm,dynamic-memory a corresponding
-	 * entry in linux,drconf-usable-memory property contains
+	 * entry in beep,drconf-usable-memory property contains
 	 * a counter followed by that many (base, size) duple.
-	 * read the counter from linux,drconf-usable-memory
+	 * read the counter from beep,drconf-usable-memory
 	 */
 	return read_n_cells(n_mem_size_cells, usm);
 }
@@ -738,7 +738,7 @@ static int __init parse_numa_properties(void)
 		unsigned int len;
 
 		memcell_buf = of_get_property(memory,
-			"linux,usable-memory", &len);
+			"beep,usable-memory", &len);
 		if (!memcell_buf || len <= 0)
 			memcell_buf = of_get_property(memory, "reg", &len);
 		if (!memcell_buf || len <= 0)

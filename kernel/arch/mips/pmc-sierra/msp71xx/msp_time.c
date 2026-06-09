@@ -22,12 +22,12 @@
  * ########################################################################
  */
 
-#include <linux/init.h>
-#include <linux/kernel_stat.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
+#include <beep/init.h>
+#include <beep/kernel_stat.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
+#include <beep/ptrace.h>
 
 #include <asm/cevt-r4k.h>
 #include <asm/mipsregs.h>

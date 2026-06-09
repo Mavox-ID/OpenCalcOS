@@ -13,7 +13,7 @@
 
 #if !defined(NETLINK_H_20081202)
 #define NETLINK_H_20081202
-#include <linux/netdevice.h>
+#include <beep/netdevice.h>
 #include <net/sock.h>
 
 struct sock *netlink_init(int unit,

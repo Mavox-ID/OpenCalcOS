@@ -31,8 +31,8 @@
  * SOFTWARE.
  */
 
-#include <linux/ctype.h>
-#include <linux/stat.h>
+#include <beep/ctype.h>
+#include <beep/stat.h>
 
 #include "ipath_kernel.h"
 #include "ipath_verbs.h"

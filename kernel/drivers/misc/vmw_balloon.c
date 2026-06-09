@@ -21,7 +21,7 @@
  */
 
 /*
- * This is VMware physical memory management driver for Linux. The driver
+ * This is VMware physical memory management driver for Beep. The driver
  * acts like a "balloon" that can be inflated to reclaim physical pages by
  * reserving them in the guest and invalidating them in the monitor,
  * freeing up the underlying machine pages so they can be allocated to
@@ -33,14 +33,14 @@
 //#define DEBUG
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/workqueue.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 #include <asm/hypervisor.h>
 
 MODULE_AUTHOR("VMware, Inc.");
@@ -110,7 +110,7 @@ MODULE_LICENSE("GPL");
 #define VMW_BALLOON_HV_PORT		0x5670
 #define VMW_BALLOON_HV_MAGIC		0x456c6d6f
 #define VMW_BALLOON_PROTOCOL_VERSION	2
-#define VMW_BALLOON_GUEST_ID		1	/* Linux */
+#define VMW_BALLOON_GUEST_ID		1	/* Beep */
 
 #define VMW_BALLOON_CMD_START		0
 #define VMW_BALLOON_CMD_GET_TARGET	1

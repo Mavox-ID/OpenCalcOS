@@ -1,11 +1,11 @@
 /*
- *  linux/fs/hpfs/namei.c
+ *  beep/fs/hpfs/namei.c
  *
  *  Mikulas Patocka (mikulas@artax.karlin.mff.cuni.cz), 1998-1999
  *
  *  adding & removing files & directories
  */
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include "hpfs_fn.h"
 
 static int hpfs_mkdir(struct inode *dir, struct dentry *dentry, umode_t mode)

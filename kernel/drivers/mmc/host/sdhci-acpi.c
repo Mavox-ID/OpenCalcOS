@@ -18,27 +18,27 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/compiler.h>
-#include <linux/stddef.h>
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/acpi.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
+#include <beep/dma-mapping.h>
+#include <beep/compiler.h>
+#include <beep/stddef.h>
+#include <beep/bitops.h>
+#include <beep/types.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/acpi.h>
+#include <beep/pm.h>
+#include <beep/pm_runtime.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/pm.h>
-#include <linux/mmc/sdhci.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/pm.h>
+#include <beep/mmc/sdhci.h>
 
 #include "sdhci.h"
 

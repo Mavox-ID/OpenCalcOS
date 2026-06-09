@@ -15,11 +15,11 @@
 #include <asm/ccwdev.h>
 #include <asm/debug.h>
 #include <asm/idals.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mtio.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mtio.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
 
 struct gendisk;
 

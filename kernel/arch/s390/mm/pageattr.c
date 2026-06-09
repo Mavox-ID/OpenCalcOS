@@ -1,10 +1,10 @@
 /*
  * Copyright IBM Corp. 2011
- * Author(s): Jan Glauber <jang@linux.vnet.ibm.com>
+ * Author(s): Jan Glauber <jang@beep.vnet.ibm.com>
  */
-#include <linux/hugetlb.h>
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <beep/hugetlb.h>
+#include <beep/module.h>
+#include <beep/mm.h>
 #include <asm/cacheflush.h>
 #include <asm/pgtable.h>
 #include <asm/page.h>

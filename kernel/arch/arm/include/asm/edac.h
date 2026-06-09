@@ -24,7 +24,7 @@
  */
 static inline void atomic_scrub(void *va, u32 size)
 {
-#if __LINUX_ARM_ARCH__ >= 6
+#if __BEEP_ARM_ARCH__ >= 6
 	unsigned int *virt_addr = va;
 	unsigned int temp, temp2;
 	unsigned int i;

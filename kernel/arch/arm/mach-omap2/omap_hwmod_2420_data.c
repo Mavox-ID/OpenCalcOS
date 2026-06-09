@@ -13,9 +13,9 @@
  * XXX these should be marked initdata for multi-OMAP kernels
  */
 
-#include <linux/i2c-omap.h>
-#include <linux/platform_data/spi-omap2-mcspi.h>
-#include <linux/omap-dma.h>
+#include <beep/i2c-omap.h>
+#include <beep/platform_data/spi-omap2-mcspi.h>
+#include <beep/omap-dma.h>
 #include <plat/dmtimer.h>
 
 #include "omap_hwmod.h"

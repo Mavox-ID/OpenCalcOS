@@ -4,8 +4,8 @@
  * Author(s): Heiko Carstens <heiko.carstens@de.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 #include <asm/ipl.h>
 #include <asm/sclp.h>
 #include <asm/setup.h>

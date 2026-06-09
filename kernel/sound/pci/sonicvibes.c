@@ -22,14 +22,14 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/gameport.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/gameport.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

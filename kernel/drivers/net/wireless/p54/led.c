@@ -16,13 +16,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
+#include <beep/init.h>
+#include <beep/firmware.h>
+#include <beep/etherdevice.h>
 
 #include <net/mac80211.h>
 #ifdef CONFIG_P54_LEDS
-#include <linux/leds.h>
+#include <beep/leds.h>
 #endif /* CONFIG_P54_LEDS */
 
 #include "p54.h"

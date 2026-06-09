@@ -1,21 +1,21 @@
 /*
- * linux/fs/nfs/delegation.c
+ * beep/fs/nfs/delegation.c
  *
  * Copyright (C) 2004 Trond Myklebust
  *
  * NFS file delegation management
  *
  */
-#include <linux/completion.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/completion.h>
+#include <beep/kthread.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_xdr.h>
+#include <beep/nfs4.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_xdr.h>
 
 #include "nfs4_fs.h"
 #include "delegation.h"

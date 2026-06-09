@@ -12,17 +12,17 @@
  * Software Foundation; version 2 of the License.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/tty.h>
-#include <linux/serial.h>
-#include <linux/tty_flip.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
-#include <linux/io.h>
-#include <linux/ipack.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/tty.h>
+#include <beep/serial.h>
+#include <beep/tty_flip.h>
+#include <beep/slab.h>
+#include <beep/atomic.h>
+#include <beep/io.h>
+#include <beep/ipack.h>
 #include "ipoctal.h"
 #include "scc2698.h"
 

@@ -23,26 +23,26 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/genhd.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/irqreturn.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <beep/bio.h>
+#include <beep/blkdev.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/genhd.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/irq.h>
+#include <beep/irqreturn.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/mod_devicetable.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
 
 #include <asm/page.h>
 #include <asm/prom.h>

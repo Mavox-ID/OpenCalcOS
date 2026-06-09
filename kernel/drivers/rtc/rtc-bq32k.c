@@ -8,12 +8,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/bcd.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/rtc.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/bcd.h>
 
 #define BQ32K_SECONDS		0x00	/* Seconds register address */
 #define BQ32K_SECONDS_MASK	0x7F	/* Mask over seconds value */

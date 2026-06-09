@@ -6,7 +6,7 @@
  * Copyright (C) 2005-2008 Stelian Pop (stelian@popies.net)
  * Copyright (C) 2005      Frank Arnold (frank@scirocco-5v-turbo.de)
  * Copyright (C) 2005      Peter Osterlund (petero2@telia.com)
- * Copyright (C) 2005      Michael Hanselmann (linux-kernel@hansmi.ch)
+ * Copyright (C) 2005      Michael Hanselmann (beep-kernel@hansmi.ch)
  * Copyright (C) 2006      Nicolas Boichat (nicolas@boichat.ch)
  * Copyright (C) 2007-2008 Sven Anders (anders@anduras.de)
  *
@@ -28,12 +28,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb/input.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/usb/input.h>
 
 /*
  * Note: We try to keep the touchpad aspect ratio while still doing only

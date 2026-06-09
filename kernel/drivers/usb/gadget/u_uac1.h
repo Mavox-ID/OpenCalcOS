@@ -4,7 +4,7 @@
  * Copyright (C) 2008 Bryan Wu <cooloney@kernel.org>
  * Copyright (C) 2008 Analog Devices, Inc
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucbeep.org/
  *
  * Licensed under the GPL-2 or later.
  */
@@ -12,10 +12,10 @@
 #ifndef __U_AUDIO_H
 #define __U_AUDIO_H
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/composite.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/usb/audio.h>
+#include <beep/usb/composite.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

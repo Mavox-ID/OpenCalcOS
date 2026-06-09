@@ -5,8 +5,8 @@
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#ifndef LINUX_NFSD_AUTH_H
-#define LINUX_NFSD_AUTH_H
+#ifndef BEEP_NFSD_AUTH_H
+#define BEEP_NFSD_AUTH_H
 
 #define nfsd_luid(rq, uid)	((u32)(uid))
 #define nfsd_lgid(rq, gid)	((u32)(gid))
@@ -19,4 +19,4 @@
  */
 int nfsd_setuser(struct svc_rqst *, struct svc_export *);
 
-#endif /* LINUX_NFSD_AUTH_H */
+#endif /* BEEP_NFSD_AUTH_H */

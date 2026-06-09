@@ -24,8 +24,8 @@
  * FIXME: docs
  */
 
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include "uwb-internal.h"
 
 /**

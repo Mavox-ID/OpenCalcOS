@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/net/wireless/libertas/if_sdio.h
+ *  beep/drivers/net/wireless/libertas/if_sdio.h
  *
  *  Copyright 2007 Pierre Ossman
  *

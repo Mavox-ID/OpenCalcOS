@@ -28,7 +28,7 @@
  *      Modified for NRL 4.4BSD IPv6 release.
  *      07/31/96 bgp
  *
- *	Modified for Linux IPv6 by Pedro Roque <roque@di.fc.ul.pt>
+ *	Modified for Beep IPv6 by Pedro Roque <roque@di.fc.ul.pt>
  *	31/07/1996
  *
  *	As ICMP error messages for IPv6 now include more than 8 bytes

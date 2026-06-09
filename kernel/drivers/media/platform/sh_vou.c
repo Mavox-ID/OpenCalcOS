@@ -8,19 +8,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/slab.h>
+#include <beep/videodev2.h>
+#include <beep/module.h>
 
 #include <media/sh_vou.h>
 #include <media/v4l2-common.h>

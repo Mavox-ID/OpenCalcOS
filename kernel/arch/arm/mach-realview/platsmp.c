@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-realview/platsmp.c
+ *  beep/arch/arm/mach-realview/platsmp.c
  *
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
@@ -8,10 +8,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/smp.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/smp.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <asm/hardware/gic.h>

@@ -8,7 +8,7 @@
  *
  *               Copyright 2004-2007 Analog Devices Inc.
  *
- * Bugs:         Enter bugs at http://blackfin.uclinux.org/
+ * Bugs:         Enter bugs at http://blackfin.ucbeep.org/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -30,10 +30,10 @@
 #ifndef __BF5XX_SPORT_H__
 #define __BF5XX_SPORT_H__
 
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
+#include <beep/types.h>
+#include <beep/wait.h>
+#include <beep/workqueue.h>
+#include <beep/platform_device.h>
 #include <asm/dma.h>
 #include <asm/bfin_sport.h>
 

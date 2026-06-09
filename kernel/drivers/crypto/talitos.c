@@ -25,20 +25,20 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/crypto.h>
-#include <linux/hw_random.h>
-#include <linux/of_platform.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mod_devicetable.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/crypto.h>
+#include <beep/hw_random.h>
+#include <beep/of_platform.h>
+#include <beep/dma-mapping.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
+#include <beep/rtnetlink.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 
 #include <crypto/algapi.h>
 #include <crypto/aes.h>

@@ -3,7 +3,7 @@
 #
 # Dave Redman Frame Buffer tuning support.
 #
-# 7 October 2000, Bartlomiej Zolnierkiewicz <bkz@linux-ide.org>
+# 7 October 2000, Bartlomiej Zolnierkiewicz <bkz@beep-ide.org>
 # Rewritten to use lists instead of if-statements.
 #
 

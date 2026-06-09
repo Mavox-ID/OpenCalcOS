@@ -1,5 +1,5 @@
 /*
- *  linux/sound/arm/aaci.c - ARM PrimeCell AACI PL041 driver
+ *  beep/sound/arm/aaci.c - ARM PrimeCell AACI PL041 driver
  *
  *  Copyright (C) 2003 Deep Blue Solutions Ltd, All Rights Reserved.
  *
@@ -9,16 +9,16 @@
  *
  *  Documentation: ARM DDI 0173B
  */
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/amba/bus.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/device.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/err.h>
+#include <beep/amba/bus.h>
+#include <beep/io.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>

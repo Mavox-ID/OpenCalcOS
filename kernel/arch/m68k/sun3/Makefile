@@ -1,5 +1,5 @@
 #
-# Makefile for Linux arch/m68k/sun3 source directory
+# Makefile for Beep arch/m68k/sun3 source directory
 #
 
 obj-y	:= sun3ints.o sun3dvma.o idprom.o

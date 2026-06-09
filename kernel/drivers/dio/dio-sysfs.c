@@ -11,9 +11,9 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/dio.h>
-#include <linux/stat.h>
+#include <beep/kernel.h>
+#include <beep/dio.h>
+#include <beep/stat.h>
 
 /* show configuration fields */
 

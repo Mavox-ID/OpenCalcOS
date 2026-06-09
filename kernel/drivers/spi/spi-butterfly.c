@@ -17,19 +17,19 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/parport.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/parport.h>
 
-#include <linux/sched.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/spi/flash.h>
+#include <beep/sched.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_bitbang.h>
+#include <beep/spi/flash.h>
 
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/partitions.h>
 
 
 /*

@@ -11,7 +11,7 @@ config KLOGD
 	default y
 	help
 	klogd is a utility which intercepts and logs all
-	messages from the Linux kernel and sends the messages
+	messages from the Beep kernel and sends the messages
 	out to the 'syslogd' utility so they can be logged. If
 	you wish to record the messages produced by the kernel,
 	you should enable this option.
@@ -25,7 +25,7 @@ config FEATURE_KLOGD_KLOGCTL
 	depends on KLOGD
 	help
 	The klogd applet supports two interfaces for reading
-	kernel messages. Linux provides the klogctl() interface
+	kernel messages. Beep provides the klogctl() interface
 	which allows reading messages from the kernel ring buffer
 	independently from the file system.
 
@@ -72,7 +72,7 @@ config SYSLOGD
 	message that is logged records the date and time of the
 	event, and will generally also record the name of the
 	application that generated the message. When used in
-	conjunction with klogd, messages from the Linux kernel
+	conjunction with klogd, messages from the Beep kernel
 	can also be recorded. This is terribly useful,
 	especially for finding what happened when something goes
 	wrong. And something almost always will go wrong if
@@ -157,12 +157,12 @@ config FEATURE_IPC_SYSLOG_BUFFER_SIZE
 	used to record system log messages.
 
 config FEATURE_KMSG_SYSLOG
-	bool "Linux kernel printk buffer support"
+	bool "Beep kernel printk buffer support"
 	default y
 	depends on SYSLOGD
 	help
 	When you enable this feature, the syslogd utility will
-	write system log message to the Linux kernel's printk buffer.
+	write system log message to the Beep kernel's printk buffer.
 	This can be used as a smaller alternative to the syslogd IPC
 	support, as klogd and logread aren't needed.
 

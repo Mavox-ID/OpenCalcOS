@@ -6,15 +6,15 @@
  *	      Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/kmod.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/termios.h>
-#include <linux/err.h>
-#include <linux/reboot.h>
-#include <linux/gfp.h>
+#include <beep/kmod.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/jiffies.h>
+#include <beep/termios.h>
+#include <beep/err.h>
+#include <beep/reboot.h>
+#include <beep/gfp.h>
 
 #include "sclp.h"
 #include "sclp_rw.h"

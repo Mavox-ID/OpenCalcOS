@@ -6,11 +6,11 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/input.h>	/* BUS_I2C */
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/pm.h>
+#include <beep/input.h>	/* BUS_I2C */
+#include <beep/i2c.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/pm.h>
 
 #include "ad7879.h"
 
@@ -104,6 +104,6 @@ static struct i2c_driver ad7879_i2c_driver = {
 
 module_i2c_driver(ad7879_i2c_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("AD7879(-1) touchscreen I2C bus driver");
 MODULE_LICENSE("GPL");

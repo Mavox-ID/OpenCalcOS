@@ -15,13 +15,13 @@
  *	implemenents security file system for reporting
  *	current measurement list and IMA statistics
  */
-#include <linux/fcntl.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/rculist.h>
-#include <linux/rcupdate.h>
-#include <linux/parser.h>
+#include <beep/fcntl.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
+#include <beep/rculist.h>
+#include <beep/rcupdate.h>
+#include <beep/parser.h>
 
 #include "ima.h"
 

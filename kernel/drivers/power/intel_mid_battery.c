@@ -22,17 +22,17 @@
  * Author: Nithish Mahalingam <nithish.mahalingam@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/jiffies.h>
-#include <linux/param.h>
-#include <linux/device.h>
-#include <linux/spi/spi.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/jiffies.h>
+#include <beep/param.h>
+#include <beep/device.h>
+#include <beep/spi/spi.h>
+#include <beep/platform_device.h>
+#include <beep/power_supply.h>
 
 #include <asm/intel_scu_ipc.h>
 

@@ -15,21 +15,21 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/pci.h>
-#include <linux/mutex.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/i2c.h>
+#include <beep/fs.h>
+#include <beep/io.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/jiffies.h>
+#include <beep/pci.h>
+#include <beep/mutex.h>
+#include <beep/ktime.h>
+#include <beep/slab.h>
 
 #define PCH_EVENT_SET	0	/* I2C Interrupt Event Set Status */
 #define PCH_EVENT_NONE	1	/* I2C Interrupt Event Clear Status */

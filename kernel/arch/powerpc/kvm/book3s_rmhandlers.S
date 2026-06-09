@@ -12,7 +12,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  *
- * Copyright SUSE Linux Products GmbH 2009
+ * Copyright SUSE Beep Products GmbH 2009
  *
  * Authors: Alexander Graf <agraf@suse.de>
  */
@@ -77,7 +77,7 @@ kvmppc_trampoline_\intno:
 
 	/*
 	 * First thing to do is to find out if we're coming
-	 * from a KVM guest or a Linux process.
+	 * from a KVM guest or a Beep process.
 	 *
 	 * To distinguish, we check a magic byte in the PACA/current
 	 */
@@ -100,7 +100,7 @@ kvmppc_trampoline_\intno:
 	lbz	r12, HSTATE_IN_GUEST(r13)
 	cmpwi	r12, KVM_GUEST_MODE_NONE
 	bne	..kvmppc_handler_hasmagic_\intno
-	/* No KVM guest? Then jump back to the Linux handler! */
+	/* No KVM guest? Then jump back to the Beep handler! */
 	lwz	r12, HSTATE_SCRATCH1(r13)
 	b	2b
 

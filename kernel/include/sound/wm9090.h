@@ -1,5 +1,5 @@
 /*
- * linux/sound/wm9090.h -- Platform data for WM9090
+ * beep/sound/wm9090.h -- Platform data for WM9090
  *
  * Copyright 2009, 2010 Wolfson Microelectronics. PLC.
  *
@@ -8,8 +8,8 @@
  * published by the Free Software Foundation.
  */
 
-#ifndef __LINUX_SND_WM9090_H
-#define __LINUX_SND_WM9090_H
+#ifndef __BEEP_SND_WM9090_H
+#define __BEEP_SND_WM9090_H
 
 struct wm9090_platform_data {
 	/* Line inputs 1 & 2 can optionally be differential */

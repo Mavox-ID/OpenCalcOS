@@ -13,20 +13,20 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/resource.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/resource.h>
 
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/mach-jz4740/platform.h>
 #include <asm/mach-jz4740/base.h>
 #include <asm/mach-jz4740/irq.h>
 
-#include <linux/serial_core.h>
-#include <linux/serial_8250.h>
+#include <beep/serial_core.h>
+#include <beep/serial_8250.h>
 
 #include "serial.h"
 #include "clock.h"

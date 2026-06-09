@@ -1,13 +1,13 @@
 /*
- *  linux/fs/isofs/rock.c
+ *  beep/fs/isofs/rock.c
  *
  *  (C) 1992, 1993  Eric Youngdale
  *
  *  Rock Ridge Extensions to iso9660
  */
 
-#include <linux/slab.h>
-#include <linux/pagemap.h>
+#include <beep/slab.h>
+#include <beep/pagemap.h>
 
 #include "isofs.h"
 #include "rock.h"

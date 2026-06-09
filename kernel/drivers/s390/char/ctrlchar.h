@@ -6,7 +6,7 @@
  *
  */
 
-#include <linux/tty.h>
+#include <beep/tty.h>
 
 extern unsigned int
 ctrlchar_handle(const unsigned char *buf, int len, struct tty_struct *tty);

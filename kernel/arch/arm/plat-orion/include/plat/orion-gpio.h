@@ -11,9 +11,9 @@
 #ifndef __PLAT_GPIO_H
 #define __PLAT_GPIO_H
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/irqdomain.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/irqdomain.h>
 /*
  * Orion-specific GPIO API extensions.
  */

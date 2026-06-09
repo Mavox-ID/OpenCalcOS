@@ -3,7 +3,7 @@
 #ifndef __ARCH_ETRAX100_TERMBITS_H__
 #define __ARCH_ETRAX100_TERMBITS_H__
 
-#include <linux/posix_types.h>
+#include <beep/posix_types.h>
 
 typedef unsigned char	cc_t;
 typedef unsigned int	speed_t;

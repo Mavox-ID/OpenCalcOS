@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/ieee80211.h>
+#include <beep/ieee80211.h>
 
 #include "wlcore.h"
 #include "debug.h"

@@ -1,8 +1,8 @@
 #ifndef _ASM_M32R_IO_H
 #define _ASM_M32R_IO_H
 
-#include <linux/string.h>
-#include <linux/compiler.h>
+#include <beep/string.h>
+#include <beep/compiler.h>
 #include <asm/page.h>  /* __va */
 
 #ifdef __KERNEL__

@@ -3,7 +3,7 @@
  * low level stuff for Elsa isdn cards
  *
  * Author       Karsten Keil
- * Copyright    by Karsten Keil      <keil@isdn4linux.de>
+ * Copyright    by Karsten Keil      <keil@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
@@ -18,18 +18,18 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 #include "hisax.h"
 #include "arcofi.h"
 #include "isac.h"
 #include "ipac.h"
 #include "hscx.h"
 #include "isdnl1.h"
-#include <linux/pci.h>
-#include <linux/isapnp.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
+#include <beep/pci.h>
+#include <beep/isapnp.h>
+#include <beep/serial.h>
+#include <beep/serial_reg.h>
 
 static const char *Elsa_revision = "$Revision: 2.32.2.4 $";
 static const char *Elsa_Types[] =

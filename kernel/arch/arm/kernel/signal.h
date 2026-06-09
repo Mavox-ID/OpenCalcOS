@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/signal.h
+ *  beep/arch/arm/kernel/signal.h
  *
  *  Copyright (C) 2005-2009 Russell King.
  *

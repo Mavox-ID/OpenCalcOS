@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -67,35 +67,35 @@
 
 #define pr_fmt(fmt) "IPv4: " fmt
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/capability.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/string.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/capability.h>
+#include <beep/fcntl.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/stat.h>
+#include <beep/init.h>
+#include <beep/poll.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/random.h>
+#include <beep/slab.h>
 
 #include <asm/uaccess.h>
 
-#include <linux/inet.h>
-#include <linux/igmp.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
+#include <beep/inet.h>
+#include <beep/igmp.h>
+#include <beep/inetdevice.h>
+#include <beep/netdevice.h>
 #include <net/checksum.h>
 #include <net/ip.h>
 #include <net/protocol.h>
@@ -107,7 +107,7 @@
 #include <net/udp.h>
 #include <net/udplite.h>
 #include <net/ping.h>
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 #include <net/sock.h>
 #include <net/raw.h>
 #include <net/icmp.h>
@@ -116,7 +116,7 @@
 #include <net/xfrm.h>
 #include <net/net_namespace.h>
 #ifdef CONFIG_IP_MROUTE
-#include <linux/mroute.h>
+#include <beep/mroute.h>
 #endif
 
 
@@ -1606,8 +1606,8 @@ static __net_init int ipv4_mib_init_net(struct net *net)
 			  __alignof__(struct ipstats_mib)) < 0)
 		goto err_ip_mib;
 	if (snmp_mib_init((void __percpu **)net->mib.net_statistics,
-			  sizeof(struct linux_mib),
-			  __alignof__(struct linux_mib)) < 0)
+			  sizeof(struct beep_mib),
+			  __alignof__(struct beep_mib)) < 0)
 		goto err_net_mib;
 	if (snmp_mib_init((void __percpu **)net->mib.udp_statistics,
 			  sizeof(struct udp_mib),

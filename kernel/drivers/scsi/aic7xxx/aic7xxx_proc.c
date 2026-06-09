@@ -37,7 +37,7 @@
  * String handling code courtesy of Gerard Roudier's <groudier@club-internet.fr>
  * sym driver.
  *
- * $Id: //depot/aic7xxx/linux/drivers/scsi/aic7xxx/aic7xxx_proc.c#29 $
+ * $Id: //depot/aic7xxx/beep/drivers/scsi/aic7xxx/aic7xxx_proc.c#29 $
  */
 #include "aic7xxx_osm.h"
 #include "aic7xxx_inline.h"
@@ -218,7 +218,7 @@ ahc_dump_target_state(struct ahc_softc *ahc, struct info_str *info,
 static void
 ahc_dump_device_state(struct info_str *info, struct scsi_device *sdev)
 {
-	struct ahc_linux_device *dev = scsi_transport_device_data(sdev);
+	struct ahc_beep_device *dev = scsi_transport_device_data(sdev);
 
 	copy_info(info, "\tChannel %c Target %d Lun %d Settings\n",
 		  sdev->sdev_target->channel + 'A',
@@ -332,7 +332,7 @@ done:
  * Return information to handle /proc support for the driver.
  */
 int
-ahc_linux_proc_info(struct Scsi_Host *shost, char *buffer, char **start,
+ahc_beep_proc_info(struct Scsi_Host *shost, char *buffer, char **start,
 		    off_t offset, int length, int inout)
 {
 	struct	ahc_softc *ahc = *(struct ahc_softc **)shost->hostdata;

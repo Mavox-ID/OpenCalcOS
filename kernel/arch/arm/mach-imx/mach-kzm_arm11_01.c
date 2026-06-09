@@ -1,6 +1,6 @@
 /*
  * KZM-ARM11-01 support
- *  Copyright (C) 2009  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2009  Yoichi Yuasa <yuasa@beep-mips.org>
  *
  * based on code for MX31ADS,
  *  Copyright (C) 2000 Deep Blue Solutions Ltd
@@ -18,14 +18,14 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
-#include <linux/smsc911x.h>
-#include <linux/types.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/serial_8250.h>
+#include <beep/smsc911x.h>
+#include <beep/types.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/fixed.h>
 
 #include <asm/irq.h>
 #include <asm/mach-types.h>

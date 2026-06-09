@@ -6,11 +6,11 @@
  * Copyright (C) 2001-2004, 2006 Silicon Graphics, Inc. All rights reserved.
  */
 
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/export.h>
+#include <beep/interrupt.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/export.h>
 #include <asm/sn/addrs.h>
 #include <asm/sn/geo.h>
 #include <asm/sn/pcibr_provider.h>

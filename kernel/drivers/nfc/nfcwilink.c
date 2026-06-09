@@ -26,14 +26,14 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  */
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/firmware.h>
-#include <linux/nfc.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/firmware.h>
+#include <beep/nfc.h>
 #include <net/nfc/nci.h>
 #include <net/nfc/nci_core.h>
-#include <linux/ti_wilink_st.h>
+#include <beep/ti_wilink_st.h>
 
 #define NFCWILINK_CHNL			12
 #define NFCWILINK_OPCODE		7

@@ -637,7 +637,7 @@ endmenu
 
 source "drivers/base/Kconfig"
 
-# standard linux drivers
+# standard beep drivers
 source "drivers/mtd/Kconfig"
 
 source "drivers/parport/Kconfig"

@@ -3,7 +3,7 @@
  *
  * Pentium III FXSR, SSE support
  * General FPU state handling cleanups
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@vabeep.com>, May 2000
  * x86-64 work by Andi Kleen 2002
  */
 
@@ -12,8 +12,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/sched.h>
-#include <linux/hardirq.h>
+#include <beep/sched.h>
+#include <beep/hardirq.h>
 
 struct pt_regs;
 struct user_i387_struct;

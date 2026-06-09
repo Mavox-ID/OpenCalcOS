@@ -10,11 +10,11 @@
 
 #define pr_fmt(fmt) "bcm63xx_nvram: " fmt
 
-#include <linux/init.h>
-#include <linux/crc32.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/if_ether.h>
+#include <beep/init.h>
+#include <beep/crc32.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/if_ether.h>
 
 #include <bcm63xx_nvram.h>
 

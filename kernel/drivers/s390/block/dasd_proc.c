@@ -3,7 +3,7 @@
  *		    Horst Hummel <Horst.Hummel@de.ibm.com>
  *		    Carsten Otte <Cotte@de.ibm.com>
  *		    Martin Schwidefsky <schwidefsky@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <Beep390@de.ibm.com>
  * Coypright IBM Corp. 1999, 2002
  *
  * /proc interface for the dasd driver.
@@ -12,12 +12,12 @@
 
 #define KMSG_COMPONENT "dasd"
 
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/vmalloc.h>
-#include <linux/proc_fs.h>
+#include <beep/ctype.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/seq_file.h>
+#include <beep/vmalloc.h>
+#include <beep/proc_fs.h>
 
 #include <asm/debug.h>
 #include <asm/uaccess.h>

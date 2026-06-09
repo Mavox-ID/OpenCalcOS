@@ -1,5 +1,5 @@
 /*
- * linux/kernel/time/clockevents.c
+ * beep/kernel/time/clockevents.c
  *
  * This file contains functions which manage clock event devices.
  *
@@ -11,12 +11,12 @@
  * kernel-base/COPYING.
  */
 
-#include <linux/clockchips.h>
-#include <linux/hrtimer.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/smp.h>
+#include <beep/clockchips.h>
+#include <beep/hrtimer.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/notifier.h>
+#include <beep/smp.h>
 
 #include "tick-internal.h"
 

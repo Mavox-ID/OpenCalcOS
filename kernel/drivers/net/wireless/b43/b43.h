@@ -1,13 +1,13 @@
 #ifndef B43_H_
 #define B43_H_
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/hw_random.h>
-#include <linux/bcma/bcma.h>
-#include <linux/ssb/ssb.h>
-#include <linux/completion.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/hw_random.h>
+#include <beep/bcma/bcma.h>
+#include <beep/ssb/ssb.h>
+#include <beep/completion.h>
 #include <net/mac80211.h>
 
 #include "debugfs.h"

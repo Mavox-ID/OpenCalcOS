@@ -43,7 +43,7 @@
 
 #include <net/sctp/structs.h>
 #include <net/sctp/sctp.h>
-#include <linux/sysctl.h>
+#include <beep/sysctl.h>
 
 static int zero = 0;
 static int one = 1;

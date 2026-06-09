@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -32,7 +32,7 @@
  *		csum_partial_copy_from_user.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <net/checksum.h>
 
 /*

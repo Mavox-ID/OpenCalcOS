@@ -27,7 +27,7 @@
  *
  *****************************************************************************/
 
-#include <linux/export.h>
+#include <beep/export.h>
 #include "dm_common.h"
 #include "phy_common.h"
 #include "../pci.h"

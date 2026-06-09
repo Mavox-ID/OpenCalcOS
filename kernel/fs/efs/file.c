@@ -6,7 +6,7 @@
  * Portions derived from work (c) 1995,1996 Christian Vogelgsang.
  */
 
-#include <linux/buffer_head.h>
+#include <beep/buffer_head.h>
 #include "efs.h"
 
 int efs_get_block(struct inode *inode, sector_t iblock,

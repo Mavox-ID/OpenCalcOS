@@ -20,20 +20,20 @@
  * 02110-1301 USA
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/ctype.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/leds.h>
-#include <linux/leds-lp5521.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/ctype.h>
+#include <beep/spinlock.h>
+#include <beep/wait.h>
+#include <beep/leds.h>
+#include <beep/leds-lp5521.h>
+#include <beep/workqueue.h>
+#include <beep/slab.h>
 
 #define LP5521_PROGRAM_LENGTH		32	/* in bytes */
 

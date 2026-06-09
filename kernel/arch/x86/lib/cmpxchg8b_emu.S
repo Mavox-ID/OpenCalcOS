@@ -6,7 +6,7 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/alternative-asm.h>
 #include <asm/frame.h>
 #include <asm/dwarf2.h>

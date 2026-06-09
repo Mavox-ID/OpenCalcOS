@@ -32,11 +32,11 @@
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
 
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/page-flags.h>
-#include <linux/mm.h>
+#include <beep/compiler.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/page-flags.h>
+#include <beep/mm.h>
 
 #include <asm/intrinsics.h>
 #include <asm/pgtable.h>

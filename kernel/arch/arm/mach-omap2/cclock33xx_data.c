@@ -14,11 +14,11 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/clk-private.h>
-#include <linux/clkdev.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/clk-private.h>
+#include <beep/clkdev.h>
+#include <beep/io.h>
 
 #include "am33xx.h"
 #include "soc.h"

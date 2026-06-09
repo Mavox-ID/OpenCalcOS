@@ -22,17 +22,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/i2c/twl.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/twl4030-audio.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/platform_device.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/i2c/twl.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/twl4030-audio.h>
 
 #define TWL4030_AUDIO_CELLS	2
 

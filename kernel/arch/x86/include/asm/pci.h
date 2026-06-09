@@ -1,10 +1,10 @@
 #ifndef _ASM_X86_PCI_H
 #define _ASM_X86_PCI_H
 
-#include <linux/mm.h> /* for struct page */
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/mm.h> /* for struct page */
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 #include <asm/scatterlist.h>
 #include <asm/io.h>
 #include <asm/x86_init.h>

@@ -13,7 +13,7 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/processor.h>
 #include <asm/coprocessor.h>
@@ -1536,7 +1536,7 @@ ENTRY(fast_second_level_miss)
 	 * a vmalloc address.  In that rare case, we must use
 	 * active_mm instead to avoid a fault in this handler.  See
 	 *
-	 * http://mail.nl.linux.org/linux-mm/2002-08/msg00258.html
+	 * http://mail.nl.beep.org/beep-mm/2002-08/msg00258.html
 	 *   (or search Internet on "mm vs. active_mm")
 	 *
 	 *	if (!mm)

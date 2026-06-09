@@ -6,10 +6,10 @@
 # for more details.
 #
 
-targets	:= vmlinux.bin
+targets	:= vmbeep.bin
 
-$(obj)/vmlinux.bin: vmlinux FORCE
+$(obj)/vmbeep.bin: vmbeep FORCE
 	$(call if_changed,objcopy)
 	@echo 'Kernel: $@ is ready' ' (#'`cat .version`')'
 
-clean-files += vmlinux.bin
+clean-files += vmbeep.bin

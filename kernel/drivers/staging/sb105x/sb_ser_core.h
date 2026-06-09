@@ -1,4 +1,4 @@
-#include <linux/wait.h>
+#include <beep/wait.h>
 
 #define UART_CONFIG_TYPE	(1 << 0)
 #define UART_CONFIG_IRQ		(1 << 1)

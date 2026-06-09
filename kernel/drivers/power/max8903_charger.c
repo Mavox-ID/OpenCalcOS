@@ -20,13 +20,13 @@
  *
  */
 
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/power_supply.h>
-#include <linux/platform_device.h>
-#include <linux/power/max8903_charger.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/power_supply.h>
+#include <beep/platform_device.h>
+#include <beep/power/max8903_charger.h>
 
 struct max8903_data {
 	struct max8903_pdata pdata;

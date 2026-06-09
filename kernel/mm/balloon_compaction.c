@@ -5,10 +5,10 @@
  *
  * Copyright (C) 2012, Red Hat, Inc.  Rafael Aquini <aquini@redhat.com>
  */
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/balloon_compaction.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/balloon_compaction.h>
 
 /*
  * balloon_devinfo_alloc - allocates a balloon device information descriptor.

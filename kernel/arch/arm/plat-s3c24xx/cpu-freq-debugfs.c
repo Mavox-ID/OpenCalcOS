@@ -1,7 +1,7 @@
-/* linux/arch/arm/plat-s3c24xx/cpu-freq-debugfs.c
+/* beep/arch/arm/plat-s3c24xx/cpu-freq-debugfs.c
  *
  * Copyright (c) 2009 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C24XX CPU Frequency scaling - debugfs status support
@@ -11,14 +11,14 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/cpufreq.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/err.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/cpufreq.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/err.h>
 
 #include <plat/cpu-freq-core.h>
 

@@ -31,13 +31,13 @@
  *
  */
 
-#include <linux/mlx4/cq.h>
-#include <linux/slab.h>
-#include <linux/mlx4/qp.h>
-#include <linux/skbuff.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/vmalloc.h>
+#include <beep/mlx4/cq.h>
+#include <beep/slab.h>
+#include <beep/mlx4/qp.h>
+#include <beep/skbuff.h>
+#include <beep/if_ether.h>
+#include <beep/if_vlan.h>
+#include <beep/vmalloc.h>
 
 #include "mlx4_en.h"
 

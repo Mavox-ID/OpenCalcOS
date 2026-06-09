@@ -10,14 +10,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/module.h>
 
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
 
-#include <linux/platform_data/asoc-s3c.h>
+#include <beep/platform_data/asoc-s3c.h>
 #include <mach/dma.h>
 
 #include "dma.h"

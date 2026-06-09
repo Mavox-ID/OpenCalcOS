@@ -12,7 +12,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  *
- * Copyright SUSE Linux Products GmbH 2010
+ * Copyright SUSE Beep Products GmbH 2010
  *
  * Authors: Alexander Graf <agraf@suse.de>
  */
@@ -20,8 +20,8 @@
 #ifndef __ASM_KVM_BOOKE_H__
 #define __ASM_KVM_BOOKE_H__
 
-#include <linux/types.h>
-#include <linux/kvm_host.h>
+#include <beep/types.h>
+#include <beep/kvm_host.h>
 
 /* LPIDs we support with this build -- runtime limit may be lower */
 #define KVMPPC_NR_LPIDS                        64

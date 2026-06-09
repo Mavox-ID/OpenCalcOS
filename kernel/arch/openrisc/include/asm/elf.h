@@ -1,7 +1,7 @@
 /*
- * OpenRISC Linux
+ * OpenRISC Beep
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -19,7 +19,7 @@
 #define __ASM_OPENRISC_ELF_H
 
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <uapi/asm/elf.h>
 
 /*
@@ -63,6 +63,6 @@ extern void dump_elf_thread(elf_greg_t *dest, struct pt_regs *pt);
 #define ELF_PLATFORM	(NULL)
 
 #define SET_PERSONALITY(ex) \
-	set_personality(PER_LINUX | (current->personality & (~PER_MASK)))
+	set_personality(PER_BEEP | (current->personality & (~PER_MASK)))
 
 #endif

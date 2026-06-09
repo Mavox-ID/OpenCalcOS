@@ -21,14 +21,14 @@
  * MA 02111-1307 USA
  */
 
-#include <linux/irq.h>
-#include <linux/bootmem.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
-#include <linux/of_platform.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
+#include <beep/irq.h>
+#include <beep/bootmem.h>
+#include <beep/pci.h>
+#include <beep/msi.h>
+#include <beep/of_platform.h>
+#include <beep/interrupt.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
 #include <asm/prom.h>
 #include <asm/hw_irq.h>
 #include <asm/ppc-pci.h>

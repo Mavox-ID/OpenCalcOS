@@ -1,5 +1,5 @@
 /*
- * linux/kernel/power/user.c
+ * beep/kernel/power/user.c
  *
  * This file provides the user space interface for software suspend/resume.
  *
@@ -9,21 +9,21 @@
  *
  */
 
-#include <linux/suspend.h>
-#include <linux/syscalls.h>
-#include <linux/reboot.h>
-#include <linux/string.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/pm.h>
-#include <linux/fs.h>
-#include <linux/compat.h>
-#include <linux/console.h>
-#include <linux/cpu.h>
-#include <linux/freezer.h>
+#include <beep/suspend.h>
+#include <beep/syscalls.h>
+#include <beep/reboot.h>
+#include <beep/string.h>
+#include <beep/device.h>
+#include <beep/miscdevice.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/swapops.h>
+#include <beep/pm.h>
+#include <beep/fs.h>
+#include <beep/compat.h>
+#include <beep/console.h>
+#include <beep/cpu.h>
+#include <beep/freezer.h>
 
 #include <asm/uaccess.h>
 

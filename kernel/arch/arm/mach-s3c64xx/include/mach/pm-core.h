@@ -1,9 +1,9 @@
-/* linux/arch/arm/mach-s3c64xx/include/mach/pm-core.h
+/* beep/arch/arm/mach-s3c64xx/include/mach/pm-core.h
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armbeep.simtec.co.uk/
  *
  * S3C64XX - PM core support for arch/arm/plat-s3c/pm.c
  *

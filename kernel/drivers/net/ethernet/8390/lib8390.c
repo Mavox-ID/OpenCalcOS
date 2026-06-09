@@ -1,4 +1,4 @@
-/* 8390.c: A general NS8390 ethernet driver core for linux. */
+/* 8390.c: A general NS8390 ethernet driver core for beep. */
 /*
 	Written 1992-94 by Donald Becker.
 
@@ -50,26 +50,26 @@
 
   */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/jiffies.h>
+#include <beep/fs.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/bitops.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
 #include <asm/irq.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/crc32.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/fcntl.h>
+#include <beep/in.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/crc32.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
 
 #define NS8390_CORE
 #include "8390.h"

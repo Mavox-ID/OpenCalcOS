@@ -7,14 +7,14 @@
 
 /* Kernel module implementing an IP set type: the list:set type */
 
-#include <linux/module.h>
-#include <linux/ip.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
+#include <beep/module.h>
+#include <beep/ip.h>
+#include <beep/skbuff.h>
+#include <beep/errno.h>
 
-#include <linux/netfilter/ipset/ip_set.h>
-#include <linux/netfilter/ipset/ip_set_timeout.h>
-#include <linux/netfilter/ipset/ip_set_list.h>
+#include <beep/netfilter/ipset/ip_set.h>
+#include <beep/netfilter/ipset/ip_set_timeout.h>
+#include <beep/netfilter/ipset/ip_set_list.h>
 
 #define REVISION_MIN	0
 #define REVISION_MAX	0

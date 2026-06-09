@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/board-apollon.c
+ * beep/arch/arm/mach-omap2/board-apollon.c
  *
  * Copyright (C) 2005,2006 Samsung Electronics
  * Author: Kyungmin Park <kyungmin.park@samsung.com>
@@ -16,19 +16,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/onenand.h>
-#include <linux/delay.h>
-#include <linux/leds.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/smc91x.h>
-#include <linux/gpio.h>
-#include <linux/platform_data/leds-omap.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/onenand.h>
+#include <beep/delay.h>
+#include <beep/leds.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/smc91x.h>
+#include <beep/gpio.h>
+#include <beep/platform_data/leds-omap.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

@@ -28,20 +28,20 @@
  * http://www.ti.com/product/bq24155
  */
 
-#include <linux/version.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/err.h>
-#include <linux/workqueue.h>
-#include <linux/sysfs.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/idr.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <beep/version.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/param.h>
+#include <beep/err.h>
+#include <beep/workqueue.h>
+#include <beep/sysfs.h>
+#include <beep/platform_device.h>
+#include <beep/power_supply.h>
+#include <beep/idr.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
 
-#include <linux/power/bq2415x_charger.h>
+#include <beep/power/bq2415x_charger.h>
 
 /* timeout for resetting chip timer */
 #define BQ2415X_TIMER_TIMEOUT		10

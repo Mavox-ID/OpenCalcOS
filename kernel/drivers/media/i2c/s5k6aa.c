@@ -14,14 +14,14 @@
  * (at your option) any later version.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/media.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/media.h>
+#include <beep/module.h>
+#include <beep/regulator/consumer.h>
+#include <beep/slab.h>
 
 #include <media/media-entity.h>
 #include <media/v4l2-ctrls.h>

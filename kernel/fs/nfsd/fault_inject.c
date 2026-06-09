@@ -4,12 +4,12 @@
  * Uses debugfs to create fault injection points for client testing
  */
 
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/nsproxy.h>
-#include <linux/sunrpc/clnt.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/debugfs.h>
+#include <beep/module.h>
+#include <beep/nsproxy.h>
+#include <beep/sunrpc/clnt.h>
 #include <asm/uaccess.h>
 
 #include "state.h"

@@ -3,21 +3,21 @@
  *
  * Copyright (C) 2005 Intel Corp.
  * Copyright (C) 2005 Randy Dunlap
- * Copyright (C) 2006 SUSE Linux Products GmbH
+ * Copyright (C) 2006 SUSE Beep Products GmbH
  * Copyright (C) 2006 Hannes Reinecke
  */
 
-#include <linux/ata.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/ata.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 #include <acpi/acpi.h>
-#include <linux/ide.h>
-#include <linux/pci.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
+#include <beep/ide.h>
+#include <beep/pci.h>
+#include <beep/dmi.h>
+#include <beep/module.h>
 
 #include <acpi/acpi_bus.h>
 

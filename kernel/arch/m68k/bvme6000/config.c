@@ -5,7 +5,7 @@
  *
  * Based on:
  *
- *  linux/amiga/config.c
+ *  beep/amiga/config.c
  *
  *  Copyright (C) 1993 Hamish Macdonald
  *
@@ -14,18 +14,18 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/genhd.h>
-#include <linux/rtc.h>
-#include <linux/interrupt.h>
-#include <linux/bcd.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/tty.h>
+#include <beep/console.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
+#include <beep/major.h>
+#include <beep/genhd.h>
+#include <beep/rtc.h>
+#include <beep/interrupt.h>
+#include <beep/bcd.h>
 
 #include <asm/bootinfo.h>
 #include <asm/pgtable.h>

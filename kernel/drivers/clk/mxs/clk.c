@@ -9,10 +9,10 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/spinlock.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/jiffies.h>
+#include <beep/spinlock.h>
 
 DEFINE_SPINLOCK(mxs_lock);
 

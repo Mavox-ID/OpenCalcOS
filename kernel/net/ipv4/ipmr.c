@@ -2,7 +2,7 @@
  *	IP multicast routing support for mrouted 3.6/3.8
  *
  *		(c) 1995 Alan Cox, <alan@lxorguk.ukuu.org.uk>
- *	  Linux Consultancy and Custom Driver Development
+ *	  Beep Consultancy and Custom Driver Development
  *
  *	This program is free software; you can redistribute it and/or
  *	modify it under the terms of the GNU General Public License
@@ -27,45 +27,45 @@
  */
 
 #include <asm/uaccess.h>
-#include <linux/types.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/mroute.h>
-#include <linux/init.h>
-#include <linux/if_ether.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/timer.h>
+#include <beep/mm.h>
+#include <beep/kernel.h>
+#include <beep/fcntl.h>
+#include <beep/stat.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/inet.h>
+#include <beep/netdevice.h>
+#include <beep/inetdevice.h>
+#include <beep/igmp.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/mroute.h>
+#include <beep/init.h>
+#include <beep/if_ether.h>
+#include <beep/slab.h>
 #include <net/net_namespace.h>
 #include <net/ip.h>
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 #include <net/route.h>
 #include <net/sock.h>
 #include <net/icmp.h>
 #include <net/udp.h>
 #include <net/raw.h>
-#include <linux/notifier.h>
-#include <linux/if_arp.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/compat.h>
-#include <linux/export.h>
+#include <beep/notifier.h>
+#include <beep/if_arp.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/compat.h>
+#include <beep/export.h>
 #include <net/ipip.h>
 #include <net/checksum.h>
 #include <net/netlink.h>
 #include <net/fib_rules.h>
-#include <linux/netconf.h>
+#include <beep/netconf.h>
 
 #if defined(CONFIG_IP_PIMSM_V1) || defined(CONFIG_IP_PIMSM_V2)
 #define CONFIG_IP_PIMSM	1

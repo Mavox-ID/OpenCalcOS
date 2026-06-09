@@ -5,9 +5,9 @@
 /* Tell string.h we don't want memcpy etc. as cpp defines */
 #define EXPORT_SYMTAB_STROPS
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/types.h>
 
 #include <asm/checksum.h>
 #include <asm/uaccess.h>

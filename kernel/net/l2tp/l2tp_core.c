@@ -20,33 +20,33 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/rculist.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/list.h>
+#include <beep/rculist.h>
+#include <beep/uaccess.h>
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/kthread.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/jiffies.h>
 
-#include <linux/netdevice.h>
-#include <linux/net.h>
-#include <linux/inetdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/udp.h>
-#include <linux/l2tp.h>
-#include <linux/hash.h>
-#include <linux/sort.h>
-#include <linux/file.h>
-#include <linux/nsproxy.h>
+#include <beep/netdevice.h>
+#include <beep/net.h>
+#include <beep/inetdevice.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/udp.h>
+#include <beep/l2tp.h>
+#include <beep/hash.h>
+#include <beep/sort.h>
+#include <beep/file.h>
+#include <beep/nsproxy.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/dst.h>
@@ -61,7 +61,7 @@
 #include <net/ip6_checksum.h>
 
 #include <asm/byteorder.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include "l2tp_core.h"
 

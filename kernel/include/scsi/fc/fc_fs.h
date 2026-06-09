@@ -20,7 +20,7 @@
 #ifndef _FC_FS_H_
 #define _FC_FS_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * Fibre Channel Framing and Signalling definitions.

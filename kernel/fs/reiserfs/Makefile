@@ -1,5 +1,5 @@
 #
-# Makefile for the linux reiser-filesystem routines.
+# Makefile for the beep reiser-filesystem routines.
 #
 
 obj-$(CONFIG_REISERFS_FS) += reiserfs.o

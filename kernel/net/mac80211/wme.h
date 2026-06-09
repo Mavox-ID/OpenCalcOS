@@ -10,7 +10,7 @@
 #ifndef _WME_H
 #define _WME_H
 
-#include <linux/netdevice.h>
+#include <beep/netdevice.h>
 #include "ieee80211_i.h"
 
 extern const int ieee802_1d_to_ac[8];

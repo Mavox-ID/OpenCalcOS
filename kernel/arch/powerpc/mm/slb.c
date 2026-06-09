@@ -21,7 +21,7 @@
 #include <asm/cputable.h>
 #include <asm/cacheflush.h>
 #include <asm/smp.h>
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/udbg.h>
 #include <asm/code-patching.h>
 

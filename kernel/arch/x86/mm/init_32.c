@@ -5,32 +5,32 @@
  *  Support of BIGMEM added by Gerhard Wichert, Siemens AG, July 1999
  */
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/pci.h>
-#include <linux/pfn.h>
-#include <linux/poison.h>
-#include <linux/bootmem.h>
-#include <linux/memblock.h>
-#include <linux/proc_fs.h>
-#include <linux/memory_hotplug.h>
-#include <linux/initrd.h>
-#include <linux/cpumask.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/hugetlb.h>
+#include <beep/swap.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/pci.h>
+#include <beep/pfn.h>
+#include <beep/poison.h>
+#include <beep/bootmem.h>
+#include <beep/memblock.h>
+#include <beep/proc_fs.h>
+#include <beep/memory_hotplug.h>
+#include <beep/initrd.h>
+#include <beep/cpumask.h>
+#include <beep/gfp.h>
 
 #include <asm/asm.h>
 #include <asm/bios_ebda.h>
@@ -715,7 +715,7 @@ static void __init test_wp_bit(void)
 
 	if (!boot_cpu_data.wp_works_ok) {
 		printk(KERN_CONT "No.\n");
-		panic("Linux doesn't support CPUs with broken WP.");
+		panic("Beep doesn't support CPUs with broken WP.");
 	} else {
 		printk(KERN_CONT "Ok.\n");
 	}

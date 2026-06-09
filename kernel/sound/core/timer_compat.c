@@ -20,7 +20,7 @@
 
 /* This file included from timer.c */
 
-#include <linux/compat.h>
+#include <beep/compat.h>
 
 struct snd_timer_info32 {
 	u32 flags;

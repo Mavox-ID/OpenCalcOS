@@ -16,12 +16,12 @@
  *          Tristan Gingold <tristan.gingold@bull.net>
  *
  *          Copyright (c) 2007
- *          Isaku Yamahata <yamahata at valinux co jp>
- *                          VA Linux Systems Japan K.K.
+ *          Isaku Yamahata <yamahata at vabeep co jp>
+ *                          VA Beep Systems Japan K.K.
  *          consolidate mini and inline version.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <xen/interface/xen.h>
 #include <xen/interface/memory.h>
 #include <xen/interface/grant_table.h>

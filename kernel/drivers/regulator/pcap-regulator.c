@@ -9,14 +9,14 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/mfd/ezx-pcap.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/machine.h>
+#include <beep/mfd/ezx-pcap.h>
 
 static const unsigned int V1_table[] = {
 	2775000, 1275000, 1600000, 1725000, 1825000, 1925000, 2075000, 2275000,

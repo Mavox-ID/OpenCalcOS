@@ -23,11 +23,11 @@
  *
  ********************************************************************/
 
-#include <linux/miscdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/miscdevice.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/module.h>
+#include <beep/init.h>
 #include <net/net_namespace.h>
 
 #include <net/irda/irda.h>

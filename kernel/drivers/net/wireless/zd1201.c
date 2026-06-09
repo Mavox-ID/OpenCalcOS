@@ -12,17 +12,17 @@
  *	Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  */
 
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/wireless.h>
-#include <linux/ieee80211.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/slab.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/wireless.h>
+#include <beep/ieee80211.h>
 #include <net/iw_handler.h>
-#include <linux/string.h>
-#include <linux/if_arp.h>
-#include <linux/firmware.h>
+#include <beep/string.h>
+#include <beep/if_arp.h>
+#include <beep/firmware.h>
 #include "zd1201.h"
 
 static struct usb_device_id zd1201_table[] = {
@@ -67,7 +67,7 @@ static int zd1201_fw_upload(struct usb_device *dev, int apfw)
 	if (err) {
 		dev_err(&dev->dev, "Failed to load %s firmware file!\n", fwfile);
 		dev_err(&dev->dev, "Make sure the hotplug firmware loader is installed.\n");
-		dev_err(&dev->dev, "Goto http://linux-lc100020.sourceforge.net for more info.\n");
+		dev_err(&dev->dev, "Goto http://beep-lc100020.sourceforge.net for more info.\n");
 		return err;
 	}
 

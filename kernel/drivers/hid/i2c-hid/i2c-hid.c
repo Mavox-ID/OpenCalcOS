@@ -5,7 +5,7 @@
  * Copyright (c) 2012 Ecole Nationale de l'Aviation Civile, France
  * Copyright (c) 2012 Red Hat, Inc
  *
- * This code is partly based on "USB HID support for Linux":
+ * This code is partly based on "USB HID support for Beep":
  *
  *  Copyright (c) 1999 Andreas Gal
  *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>
@@ -18,24 +18,24 @@
  * more details.
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
-#include <linux/device.h>
-#include <linux/wait.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/hid.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/pm.h>
+#include <beep/device.h>
+#include <beep/wait.h>
+#include <beep/err.h>
+#include <beep/string.h>
+#include <beep/list.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/hid.h>
+#include <beep/mutex.h>
 
-#include <linux/i2c/i2c-hid.h>
+#include <beep/i2c/i2c-hid.h>
 
 /* flags */
 #define I2C_HID_STARTED		(1 << 0)

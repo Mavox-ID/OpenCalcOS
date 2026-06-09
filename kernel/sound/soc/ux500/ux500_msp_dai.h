@@ -15,8 +15,8 @@
 #ifndef UX500_msp_dai_H
 #define UX500_msp_dai_H
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
 
 #include "ux500_msp_i2s.h"
 

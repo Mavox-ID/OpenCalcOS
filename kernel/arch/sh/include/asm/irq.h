@@ -1,7 +1,7 @@
 #ifndef __ASM_SH_IRQ_H
 #define __ASM_SH_IRQ_H
 
-#include <linux/cpumask.h>
+#include <beep/cpumask.h>
 #include <asm/machvec.h>
 
 /*

@@ -40,18 +40,18 @@
 /* 4 MAX3100s should be enough for everyone */
 #define MAX_MAX3100 4
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/spi/spi.h>
-#include <linux/freezer.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/serial_core.h>
+#include <beep/serial.h>
+#include <beep/spi/spi.h>
+#include <beep/freezer.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
 
-#include <linux/serial_max3100.h>
+#include <beep/serial_max3100.h>
 
 #define MAX3100_C    (1<<14)
 #define MAX3100_D    (0<<14)

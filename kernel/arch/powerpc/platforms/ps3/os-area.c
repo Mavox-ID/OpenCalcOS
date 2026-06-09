@@ -18,16 +18,16 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/workqueue.h>
-#include <linux/fs.h>
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/ctype.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/workqueue.h>
+#include <beep/fs.h>
+#include <beep/syscalls.h>
+#include <beep/export.h>
+#include <beep/ctype.h>
+#include <beep/memblock.h>
+#include <beep/of.h>
+#include <beep/slab.h>
 
 #include <asm/prom.h>
 
@@ -161,7 +161,7 @@ enum os_area_db_owner {
 	OS_AREA_DB_OWNER_ANY = -1,
 	OS_AREA_DB_OWNER_NONE = 0,
 	OS_AREA_DB_OWNER_PROTOTYPE = 1,
-	OS_AREA_DB_OWNER_LINUX = 2,
+	OS_AREA_DB_OWNER_BEEP = 2,
 	OS_AREA_DB_OWNER_PETITBOOT = 3,
 	OS_AREA_DB_OWNER_MAX = 32,
 };
@@ -190,12 +190,12 @@ static const struct os_area_db_id os_area_db_id_any = {
 };
 
 static const struct os_area_db_id os_area_db_id_rtc_diff = {
-	.owner = OS_AREA_DB_OWNER_LINUX,
+	.owner = OS_AREA_DB_OWNER_BEEP,
 	.key = OS_AREA_DB_KEY_RTC_DIFF
 };
 
 static const struct os_area_db_id os_area_db_id_video_mode = {
-	.owner = OS_AREA_DB_OWNER_LINUX,
+	.owner = OS_AREA_DB_OWNER_BEEP,
 	.key = OS_AREA_DB_KEY_VIDEO_MODE
 };
 
@@ -217,13 +217,13 @@ struct saved_params {
 } static saved_params;
 
 static struct property property_rtc_diff = {
-	.name = "linux,rtc_diff",
+	.name = "beep,rtc_diff",
 	.length = sizeof(saved_params.rtc_diff),
 	.value = &saved_params.rtc_diff,
 };
 
 static struct property property_av_multi_out = {
-	.name = "linux,av_multi_out",
+	.name = "beep,av_multi_out",
 	.length = sizeof(saved_params.av_multi_out),
 	.value = &saved_params.av_multi_out,
 };

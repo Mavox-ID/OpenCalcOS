@@ -14,13 +14,13 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
 
-#include <linux/irqchip/sunxi.h>
+#include <beep/irqchip/sunxi.h>
 
 #define SUNXI_IRQ_VECTOR_REG		0x00
 #define SUNXI_IRQ_PROTECTION_REG	0x08

@@ -37,7 +37,7 @@
 #ifndef NES_USER_H
 #define NES_USER_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define NES_ABI_USERSPACE_VER 1
 #define NES_ABI_KERNEL_VER    1

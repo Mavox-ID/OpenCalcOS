@@ -8,21 +8,21 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/textsearch.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
-#include <linux/udp.h>
-#include <linux/netfilter.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/textsearch.h>
+#include <beep/skbuff.h>
+#include <beep/in.h>
+#include <beep/udp.h>
+#include <beep/netfilter.h>
+#include <beep/gfp.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_conntrack_ecache.h>
 #include <net/netfilter/nf_conntrack_helper.h>
-#include <linux/netfilter/nf_conntrack_amanda.h>
+#include <beep/netfilter/nf_conntrack_amanda.h>
 
 static unsigned int master_timeout __read_mostly = 300;
 static char *ts_algo = "kmp";

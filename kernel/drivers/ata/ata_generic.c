@@ -3,7 +3,7 @@
  *  Copyright 2005 Red Hat Inc, all rights reserved.
  *
  *  Elements from ide/pci/generic.c
- *	    Copyright (C) 2001-2002	Andre Hedrick <andre@linux-ide.org>
+ *	    Copyright (C) 2001-2002	Andre Hedrick <andre@beep-ide.org>
  *	    Portions (C) Copyright 2002  Red Hat Inc <alan@redhat.com>
  *
  *  May be copied or modified under the terms of the GNU General Public License
@@ -16,14 +16,14 @@
  *  work.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <beep/libata.h>
 
 #define DRV_NAME "ata_generic"
 #define DRV_VERSION "0.2.15"

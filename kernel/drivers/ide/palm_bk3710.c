@@ -23,15 +23,15 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/ide.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/ioport.h>
+#include <beep/ide.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
 
 /* Offset of the primary interface registers */
 #define IDE_PALM_ATA_PRI_REG_OFFSET 0x1F0
@@ -369,7 +369,7 @@ static int __init palm_bk3710_probe(struct platform_device *pdev)
 	palm_bk3710_port_info.udma_mask = rate < 100000000 ? ATA_UDMA4 :
 							     ATA_UDMA5;
 
-	/* Register the IDE interface with Linux */
+	/* Register the IDE interface with Beep */
 	rc = ide_host_add(&palm_bk3710_port_info, hws, 1, NULL);
 	if (rc)
 		goto out;

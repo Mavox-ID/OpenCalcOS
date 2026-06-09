@@ -26,7 +26,7 @@ static inline void alchemy_gpio1_input_enable(void)
 }
 
 
-/* Linux gpio framework integration.
+/* Beep gpio framework integration.
 *
 * 4 use cases of Alchemy GPIOS:
 *(1) GPIOLIB=y, ALCHEMY_GPIO_INDIRECT=y:
@@ -35,7 +35,7 @@ static inline void alchemy_gpio1_input_enable(void)
 *	A gpiochip for the 75 GPIOs is registered.
 *
 *(3) GPIOLIB=n, ALCHEMY_GPIO_INDIRECT=y:
-*	the boards' gpio.h must provide	the linux gpio wrapper functions,
+*	the boards' gpio.h must provide	the beep gpio wrapper functions,
 *
 *(4) GPIOLIB=n, ALCHEMY_GPIO_INDIRECT=n:
 *	inlinable gpio functions are provided which enable access to the
@@ -45,7 +45,7 @@ static inline void alchemy_gpio1_input_enable(void)
 * Cases 1 and 3 are intended for boards which want to provide their own
 * GPIO namespace and -operations (i.e. for example you have 8 GPIOs
 * which are in part provided by spare Au1300 GPIO pins and in part by
-* an external FPGA but you still want them to be accssible in linux
+* an external FPGA but you still want them to be accssible in beep
 * as gpio0-7. The board can of course use the alchemy_gpioX_* functions
 * as required).
 */

@@ -7,14 +7,14 @@
  * published by the Free Software Foundation.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/netfilter.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_core.h>
 #include <net/netfilter/nf_conntrack_helper.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_helper.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_helper.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Martin Josefsson <gandalf@netfilter.org>");

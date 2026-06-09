@@ -23,12 +23,12 @@
  * which may cause timeouts and/or failure of the sync_wait_on_event
  * function.
  */
-#include <linux/types.h>
-#include <linux/list.h>
+#include <beep/types.h>
+#include <beep/list.h>
 
 /* Host OS */
 #include <dspbridge/host_os.h>
-#include <linux/workqueue.h>
+#include <beep/workqueue.h>
 
 /*  ----------------------------------- DSP/BIOS Bridge */
 #include <dspbridge/dbdefs.h>

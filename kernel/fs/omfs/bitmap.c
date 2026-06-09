@@ -1,6 +1,6 @@
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
 #include <asm/div64.h>
 #include "omfs.h"
 

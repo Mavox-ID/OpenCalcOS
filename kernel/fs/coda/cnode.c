@@ -2,13 +2,13 @@
    (C) 1996 Peter Braam
    */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/time.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/time.h>
 
-#include <linux/coda.h>
-#include <linux/coda_psdev.h>
-#include "coda_linux.h"
+#include <beep/coda.h>
+#include <beep/coda_psdev.h>
+#include "coda_beep.h"
 
 static inline int coda_fideq(struct CodaFid *fid1, struct CodaFid *fid2)
 {

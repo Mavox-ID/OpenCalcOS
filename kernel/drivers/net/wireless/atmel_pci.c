@@ -1,4 +1,4 @@
-/*** -*- linux-c -*- **********************************************************
+/*** -*- beep-c -*- **********************************************************
 
      Driver for Atmel at76c502 at76c504 and at76c506 wireless cards.
 
@@ -19,11 +19,11 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 ******************************************************************************/
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
 #include "atmel.h"
 
 MODULE_AUTHOR("Simon Kelley");

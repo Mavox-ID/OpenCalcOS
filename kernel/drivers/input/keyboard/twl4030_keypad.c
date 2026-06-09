@@ -25,14 +25,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/i2c/twl.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/platform_device.h>
+#include <beep/i2c/twl.h>
+#include <beep/slab.h>
 
 /*
  * The TWL4030 family chips include a keypad controller that supports
@@ -380,7 +380,7 @@ static int twl4030_kp_probe(struct platform_device *pdev)
 	}
 
 	input_set_capability(input, EV_MSC, MSC_SCAN);
-	/* Enable auto repeat feature of Linux input subsystem */
+	/* Enable auto repeat feature of Beep input subsystem */
 	if (pdata->rep)
 		__set_bit(EV_REP, input->evbit);
 

@@ -10,16 +10,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/wm8350/audio.h>
-#include <linux/mfd/wm8350/core.h>
-#include <linux/regulator/consumer.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/wm8350/audio.h>
+#include <beep/mfd/wm8350/core.h>
+#include <beep/regulator/consumer.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

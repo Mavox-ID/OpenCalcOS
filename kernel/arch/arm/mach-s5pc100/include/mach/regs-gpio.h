@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-s5pc100/include/plat/regs-gpio.h
+/* beep/arch/arm/plat-s5pc100/include/plat/regs-gpio.h
  *
  * Copyright 2009 Samsung Electronics Co.
  *      Byungho Min <bhmin@samsung.com>

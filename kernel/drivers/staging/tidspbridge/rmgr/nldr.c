@@ -16,7 +16,7 @@
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #include <dspbridge/host_os.h>
 
@@ -33,7 +33,7 @@
 #include <dspbridge/uuidutil.h>
 
 #include <dspbridge/nldr.h>
-#include <linux/lcm.h>
+#include <beep/lcm.h>
 
 /* Name of section containing dynamic load mem */
 #define DYNMEMSECT  ".dspbridge_mem"

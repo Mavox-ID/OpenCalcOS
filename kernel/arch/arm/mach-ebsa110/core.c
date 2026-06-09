@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-ebsa110/core.c
+ *  beep/arch/arm/mach-ebsa110/core.c
  *
  *  Copyright (C) 1998-2001 Russell King
  *
@@ -9,12 +9,12 @@
  *
  *  Extra MM routines for the EBSA-110 architecture
  */
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/serial_8250.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/serial_8250.h>
+#include <beep/init.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <asm/irq.h>

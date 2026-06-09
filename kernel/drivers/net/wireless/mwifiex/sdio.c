@@ -17,7 +17,7 @@
  * this warranty disclaimer.
  */
 
-#include <linux/firmware.h>
+#include <beep/firmware.h>
 
 #include "decl.h"
 #include "ioctl.h"

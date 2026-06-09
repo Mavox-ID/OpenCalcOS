@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/mm/proc-ucv2.S
+ * beep/arch/unicore32/mm/proc-ucv2.S
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -9,8 +9,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 #include <asm/hwcap.h>
 #include <asm/pgtable-hwdef.h>

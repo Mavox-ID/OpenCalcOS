@@ -7,10 +7,10 @@
  * Copyright (C) 2011 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/ioport.h>
-#include <linux/export.h>
-#include <linux/clkdev.h>
-#include <linux/of_address.h>
+#include <beep/ioport.h>
+#include <beep/export.h>
+#include <beep/clkdev.h>
+#include <beep/of_address.h>
 #include <asm/delay.h>
 
 #include <lantiq_soc.h>

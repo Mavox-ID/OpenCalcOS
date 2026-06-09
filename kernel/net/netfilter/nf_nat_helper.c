@@ -7,12 +7,12 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
+#include <beep/tcp.h>
+#include <beep/udp.h>
 #include <net/tcp.h>
 
 #include <net/netfilter/nf_conntrack.h>

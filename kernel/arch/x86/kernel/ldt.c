@@ -6,14 +6,14 @@
  * This handles calls from both 32bit and 64bit mode.
  */
 
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/vmalloc.h>
-#include <linux/uaccess.h>
+#include <beep/errno.h>
+#include <beep/gfp.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/vmalloc.h>
+#include <beep/uaccess.h>
 
 #include <asm/ldt.h>
 #include <asm/desc.h>

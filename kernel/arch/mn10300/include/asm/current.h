@@ -11,7 +11,7 @@
 #ifndef _ASM_CURRENT_H
 #define _ASM_CURRENT_H
 
-#include <linux/thread_info.h>
+#include <beep/thread_info.h>
 
 /*
  * dedicate E2 to keeping the current task pointer

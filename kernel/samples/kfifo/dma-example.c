@@ -7,9 +7,9 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kfifo.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kfifo.h>
 
 /*
  * This module shows how to handle fifo dma operations.

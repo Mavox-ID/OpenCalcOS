@@ -12,17 +12,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 
-#include <linux/mtd/concat.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/mtdram.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/concat.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/mtdram.h>
+#include <beep/mtd/partitions.h>
 
 #include <asm/axisflashmap.h>
 #include <asm/mmu.h>

@@ -9,8 +9,8 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/mm.h>
-#include <linux/mtd/super.h>
+#include <beep/mm.h>
+#include <beep/mtd/super.h>
 #include "internal.h"
 
 /*

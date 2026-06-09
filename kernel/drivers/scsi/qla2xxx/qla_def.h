@@ -7,24 +7,24 @@
 #ifndef __QLA_DEF_H
 #define __QLA_DEF_H
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/dmapool.h>
-#include <linux/mempool.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/firmware.h>
-#include <linux/aer.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/dmapool.h>
+#include <beep/mempool.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/firmware.h>
+#include <beep/aer.h>
+#include <beep/mutex.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
@@ -281,7 +281,7 @@ struct sd_dif_tuple {
  * SCSI Request Block
  */
 struct srb_cmd {
-	struct scsi_cmnd *cmd;		/* Linux SCSI command pkt */
+	struct scsi_cmnd *cmd;		/* Beep SCSI command pkt */
 	uint32_t request_sense_length;
 	uint8_t *request_sense_ptr;
 	void *ctx;

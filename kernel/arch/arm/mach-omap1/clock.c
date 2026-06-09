@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-omap1/clock.c
+ *  beep/arch/arm/mach-omap1/clock.c
  *
  *  Copyright (C) 2004 - 2005, 2009-2010 Nokia Corporation
  *  Written by Tuukka Tikkanen <tuukka.tikkanen@elektrobit.com>
@@ -11,14 +11,14 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
 
 #include <asm/mach-types.h>
 
@@ -665,7 +665,7 @@ unsigned long clk_get_rate(struct clk *clk)
 EXPORT_SYMBOL(clk_get_rate);
 
 /*
- * Optional clock functions defined in include/linux/clk.h
+ * Optional clock functions defined in include/beep/clk.h
  */
 
 long clk_round_rate(struct clk *clk, unsigned long rate)
@@ -983,8 +983,8 @@ late_initcall(omap_clk_enable_autoidle_all);
  *	debugfs support to trace clock tree hierarchy and attributes
  */
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 static struct dentry *clk_debugfs_root;
 

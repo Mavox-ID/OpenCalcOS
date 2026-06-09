@@ -12,7 +12,7 @@
  * any later version.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct kone_keystroke {
 	uint8_t key;

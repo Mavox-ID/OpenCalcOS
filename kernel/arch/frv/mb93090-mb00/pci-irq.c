@@ -5,12 +5,12 @@
  * derived from: arch/i386/kernel/pci-irq.c: (c) 1999--2000 Martin Mares <mj@suse.cz>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 
 #include <asm/io.h>
 #include <asm/smp.h>

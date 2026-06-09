@@ -14,9 +14,9 @@
  * See Documentation/security/keys-trusted-encrypted.txt
  */
 
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/err.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
+#include <beep/err.h>
 #include <keys/trusted-type.h>
 #include <keys/encrypted-type.h>
 #include "encrypted.h"

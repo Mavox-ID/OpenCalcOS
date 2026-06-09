@@ -5,15 +5,15 @@
  *
  * Copyright (C) 2004-2007 Cavium Networks
  */
-#include <linux/console.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_reg.h>
-#include <linux/tty.h>
-#include <linux/irq.h>
+#include <beep/console.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/serial.h>
+#include <beep/serial_8250.h>
+#include <beep/serial_reg.h>
+#include <beep/tty.h>
+#include <beep/irq.h>
 
 #include <asm/time.h>
 

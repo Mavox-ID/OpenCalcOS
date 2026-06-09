@@ -8,21 +8,21 @@
  * (C) 2003 - 2004		Dominik Brodowski
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/major.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/timer.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/device.h>
+#include <beep/mutex.h>
 #include <asm/irq.h>
 
 #include <pcmcia/ss.h>

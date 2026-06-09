@@ -21,11 +21,11 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/edac.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/edac.h>
 #include "edac_core.h"
 
 #define MODULE_NAME "pasemi_edac"

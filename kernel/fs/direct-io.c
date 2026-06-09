@@ -19,24 +19,24 @@
  *		added IO completion notifier.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/bio.h>
-#include <linux/wait.h>
-#include <linux/err.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/rwsem.h>
-#include <linux/uio.h>
-#include <linux/atomic.h>
-#include <linux/prefetch.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/task_io_accounting_ops.h>
+#include <beep/bio.h>
+#include <beep/wait.h>
+#include <beep/err.h>
+#include <beep/blkdev.h>
+#include <beep/buffer_head.h>
+#include <beep/rwsem.h>
+#include <beep/uio.h>
+#include <beep/atomic.h>
+#include <beep/prefetch.h>
 
 /*
  * How many user pages to map in one call to get_user_pages().  This determines

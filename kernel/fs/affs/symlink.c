@@ -1,5 +1,5 @@
 /*
- *  linux/fs/affs/symlink.c
+ *  beep/fs/affs/symlink.c
  *
  *  1995  Hans-Joachim Widmaier - Modified for affs.
  *

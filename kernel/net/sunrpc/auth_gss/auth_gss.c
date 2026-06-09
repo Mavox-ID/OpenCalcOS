@@ -1,5 +1,5 @@
 /*
- * linux/net/sunrpc/auth_gss/auth_gss.c
+ * beep/net/sunrpc/auth_gss/auth_gss.c
  *
  * RPCSEC_GSS client authentication.
  *
@@ -36,20 +36,20 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/pagemap.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/sunrpc/auth_gss.h>
-#include <linux/sunrpc/svcauth_gss.h>
-#include <linux/sunrpc/gss_err.h>
-#include <linux/workqueue.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/sunrpc/gss_api.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/pagemap.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/auth.h>
+#include <beep/sunrpc/auth_gss.h>
+#include <beep/sunrpc/svcauth_gss.h>
+#include <beep/sunrpc/gss_err.h>
+#include <beep/workqueue.h>
+#include <beep/sunrpc/rpc_pipe_fs.h>
+#include <beep/sunrpc/gss_api.h>
 #include <asm/uaccess.h>
 
 static const struct rpc_authops authgss_ops;

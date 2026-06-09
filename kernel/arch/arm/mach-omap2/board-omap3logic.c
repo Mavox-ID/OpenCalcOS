@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/board-omap3logic.c
+ * beep/arch/arm/mach-omap2/board-omap3logic.c
  *
  * Copyright (C) 2010 Li-Pro.Net
  * Stephan Linz <linz@li-pro.net>
@@ -15,20 +15,20 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
 
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
 
-#include <linux/i2c/twl.h>
-#include <linux/mmc/host.h>
+#include <beep/i2c/twl.h>
+#include <beep/mmc/host.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

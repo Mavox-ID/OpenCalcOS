@@ -6,7 +6,7 @@
  * Copyright (c) 2000-2007 Silicon Graphics, Inc.  All Rights Reserved.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/sn/sn_sal.h>
 #include "ioerror.h"
 #include <asm/sn/addrs.h>

@@ -24,7 +24,7 @@
 	};
 
 	chosen {
-		linux,stdout-path = &usart2;
+		beep,stdout-path = &usart2;
 	};
 
 	memory {
@@ -46,13 +46,13 @@
 		apb {
 			usart0: serial@fffb0000 {
 				pinctrl-0 = <&pinctrl_usart0 &pinctrl_usart0_rts>;
-				linux,rs485-enabled-at-boot-time;
+				beep,rs485-enabled-at-boot-time;
 				status = "okay";
 			};
 
 			usart1: serial@fffb4000 {
 				pinctrl-0 = <&pinctrl_usart1 &pinctrl_usart1_rts>;
-				linux,rs485-enabled-at-boot-time;
+				beep,rs485-enabled-at-boot-time;
 				status = "okay";
 			};
 
@@ -130,7 +130,7 @@
 		power_green {
 			label = "power_green";
 			gpios = <&pioC 17 0>;
-			linux,default-trigger = "heartbeat";
+			beep,default-trigger = "heartbeat";
 		};
 
 		power_red {
@@ -157,21 +157,21 @@
 		keyswitch_in {
 			label = "keyswitch_in";
 			gpios = <&pioB 1 0>;
-			linux,code = <28>;
+			beep,code = <28>;
 			gpio-key,wakeup;
 		};
 
 		error_in {
 			label = "error_in";
 			gpios = <&pioB 2 0>;
-			linux,code = <29>;
+			beep,code = <29>;
 			gpio-key,wakeup;
 		};
 
 		btn {
 			label = "btn";
 			gpios = <&pioC 23 0>;
-			linux,code = <31>;
+			beep,code = <31>;
 			gpio-key,wakeup;
 		};
 	};

@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex Beep Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2004-2011 Emulex.  All rights reserved.           *
  * EMULEX and SLI are trademarks of Emulex.                        *
@@ -19,7 +19,7 @@
  *******************************************************************/
 
 /*
- * This file provides macros to aid compilation in the Linux 2.4 kernel
+ * This file provides macros to aid compilation in the Beep 2.4 kernel
  * over various platform architectures.
  */
 

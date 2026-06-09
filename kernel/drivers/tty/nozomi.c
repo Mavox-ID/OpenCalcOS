@@ -41,24 +41,24 @@
 /* Enable this to have a lot of debug printouts */
 #define DEBUG
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/sched.h>
-#include <linux/serial.h>
-#include <linux/interrupt.h>
-#include <linux/kmod.h>
-#include <linux/init.h>
-#include <linux/kfifo.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/ioport.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/sched.h>
+#include <beep/serial.h>
+#include <beep/interrupt.h>
+#include <beep/kmod.h>
+#include <beep/init.h>
+#include <beep/kfifo.h>
+#include <beep/uaccess.h>
+#include <beep/slab.h>
 #include <asm/byteorder.h>
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 
 #define VERSION_STRING DRIVER_DESC " 2.1d"

@@ -1,6 +1,6 @@
 /*
  *	Forwarding decision
- *	Linux ethernet bridge
+ *	Beep ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -11,14 +11,14 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/netpoll.h>
-#include <linux/skbuff.h>
-#include <linux/if_vlan.h>
-#include <linux/netfilter_bridge.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/netpoll.h>
+#include <beep/skbuff.h>
+#include <beep/if_vlan.h>
+#include <beep/netfilter_bridge.h>
 #include "br_private.h"
 
 static int deliver_clone(const struct net_bridge_port *prev,

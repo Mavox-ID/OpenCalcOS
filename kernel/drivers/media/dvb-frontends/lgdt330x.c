@@ -22,7 +22,7 @@
 /*
  *                      NOTES ABOUT THIS DRIVER
  *
- * This Linux driver supports:
+ * This Beep driver supports:
  *   DViCO FusionHDTV 3 Gold-Q
  *   DViCO FusionHDTV 3 Gold-T
  *   DViCO FusionHDTV 5 Gold
@@ -33,12 +33,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 #include <asm/byteorder.h>
 
 #include "dvb_frontend.h"
@@ -432,7 +432,7 @@ static int lgdt330x_set_parameters(struct dvb_frontend *fe)
 
 	/* Keep track of the new frequency */
 	/* FIXME this is the wrong way to do this...           */
-	/* The tuner is shared with the video4linux analog API */
+	/* The tuner is shared with the video4beep analog API */
 	state->current_frequency = p->frequency;
 
 	lgdt330x_SwReset(state);

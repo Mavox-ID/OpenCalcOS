@@ -8,18 +8,18 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/leds.h>
-#include <linux/gpio_keys.h>
-#include <linux/gpio-fan.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/ata_platform.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mv643xx_eth.h>
+#include <beep/leds.h>
+#include <beep/gpio_keys.h>
+#include <beep/gpio-fan.h>
+#include <beep/input.h>
+#include <beep/i2c.h>
+#include <beep/ata_platform.h>
+#include <beep/gpio.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <mach/orion5x.h>

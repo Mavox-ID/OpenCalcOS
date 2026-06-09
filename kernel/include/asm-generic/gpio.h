@@ -1,15 +1,15 @@
 #ifndef _ASM_GENERIC_GPIO_H
 #define _ASM_GENERIC_GPIO_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/of.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/of.h>
+#include <beep/pinctrl/pinctrl.h>
 
 #ifdef CONFIG_GPIOLIB
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 /* Platforms may implement their GPIO interface with library code,
  * at a small performance cost for non-inlined operations and some

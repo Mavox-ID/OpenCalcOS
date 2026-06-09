@@ -4,22 +4,22 @@
  * Copyright (C) 1999-2001, 2003 Hewlett-Packard Co
  *	Stephane Eranian <eranian@hpl.hp.com>
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/notifier.h>
-#include <linux/bitops.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/in.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/inetdevice.h>
+#include <beep/if_ether.h>
+#include <beep/if_arp.h>
+#include <beep/skbuff.h>
+#include <beep/notifier.h>
+#include <beep/bitops.h>
 #include <asm/irq.h>
 #include <asm/hpsim.h>
 
@@ -57,12 +57,12 @@ static int simeth_device_event(struct notifier_block *this,unsigned long event, 
 static char *simeth_version="0.3";
 
 /*
- * This variable is used to establish a mapping between the Linux/ia64 kernel
- * and the host linux kernel.
+ * This variable is used to establish a mapping between the Beep/ia64 kernel
+ * and the host beep kernel.
  *
  * As of today, we support only one card, even though most of the code
  * is ready for many more. The mapping is then:
- *	linux/ia64 -> linux/x86
+ *	beep/ia64 -> beep/x86
  * 	   eth0    -> eth1
  *
  * In the future, we some string operations, we could easily support up

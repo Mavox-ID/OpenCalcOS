@@ -1,5 +1,5 @@
 /*
- * HighPoint RR3xxx/4xxx controller driver for Linux
+ * HighPoint RR3xxx/4xxx controller driver for Beep
  * Copyright (C) 2006-2012 HighPoint Technologies, Inc. All Rights Reserved.
  *
  * This program is free software; you can redistribute it and/or modify
@@ -11,21 +11,21 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
- * Please report bugs/comments/suggestions to linux@highpoint-tech.com
+ * Please report bugs/comments/suggestions to beep@highpoint-tech.com
  *
  * For more information, visit http://www.highpoint-tech.com
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/spinlock.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/spinlock.h>
+#include <beep/gfp.h>
 #include <asm/uaccess.h>
 #include <asm/io.h>
 #include <asm/div64.h>

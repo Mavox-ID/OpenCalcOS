@@ -23,7 +23,7 @@
 #ifndef HD29L2_PRIV
 #define HD29L2_PRIV
 
-#include <linux/dvb/version.h>
+#include <beep/dvb/version.h>
 #include "dvb_frontend.h"
 #include "dvb_math.h"
 #include "hd29l2.h"

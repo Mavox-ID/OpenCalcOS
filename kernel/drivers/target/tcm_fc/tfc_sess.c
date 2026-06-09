@@ -17,20 +17,20 @@
 
 /* XXX TBD some includes may be extraneous */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/utsname.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/configfs.h>
-#include <linux/ctype.h>
-#include <linux/hash.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist.h>
-#include <linux/kref.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/utsname.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/kthread.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/configfs.h>
+#include <beep/ctype.h>
+#include <beep/hash.h>
+#include <beep/rcupdate.h>
+#include <beep/rculist.h>
+#include <beep/kref.h>
 #include <asm/unaligned.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>

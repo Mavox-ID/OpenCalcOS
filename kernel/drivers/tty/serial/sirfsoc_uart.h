@@ -5,7 +5,7 @@
  *
  * Licensed under GPLv2 or later.
  */
-#include <linux/bitops.h>
+#include <beep/bitops.h>
 
 /* UART Register Offset Define */
 #define SIRFUART_LINE_CTRL			0x0040

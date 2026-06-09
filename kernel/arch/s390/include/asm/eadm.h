@@ -1,8 +1,8 @@
 #ifndef _ASM_S390_EADM_H
 #define _ASM_S390_EADM_H
 
-#include <linux/types.h>
-#include <linux/device.h>
+#include <beep/types.h>
+#include <beep/device.h>
 
 struct arqb {
 	u64 data;

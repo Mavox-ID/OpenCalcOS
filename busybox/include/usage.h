@@ -707,7 +707,7 @@
 #define cp_full_usage "\n\n" \
        "Copy SOURCEs to DEST\n" \
      "\n	-a	Same as -dpR" \
-	IF_SELINUX( \
+	IF_SEBEEP( \
      "\n	-c	Preserve security context" \
 	) \
      "\n	-R,-r	Recurse" \
@@ -1065,11 +1065,11 @@
        "Print out a unique 32-bit identifier for the machine" \
 
 #define id_trivial_usage \
-       "[-ugGnr"IF_SELINUX("Z")"] [USER]" \
+       "[-ugGnr"IF_SEBEEP("Z")"] [USER]" \
 
 #define id_full_usage "\n\n" \
        "Print information about USER or the current user\n" \
-	IF_SELINUX( \
+	IF_SEBEEP( \
      "\n	-Z	Security context" \
 	) \
      "\n	-u	User ID" \
@@ -1106,7 +1106,7 @@
      "\n	-g GRP	Set group ownership" \
      "\n	-m MODE	Set permissions" \
      "\n	-t DIR	Install to DIR" \
-	IF_SELINUX( \
+	IF_SEBEEP( \
      "\n	-Z	Set security context" \
 	) \
 
@@ -1152,7 +1152,7 @@
 	IF_FEATURE_HUMAN_READABLE("h") \
 	IF_FEATURE_LS_SORTFILES("rSXv") \
 	IF_FEATURE_LS_TIMESTAMPS("ctu") \
-	IF_SELINUX("kZ") "]" \
+	IF_SEBEEP("kZ") "]" \
 	IF_FEATURE_LS_WIDTH(" [-w WIDTH]") " [FILE]..." \
 
 #define ls_full_usage "\n\n" \
@@ -1201,7 +1201,7 @@
      "\n	-tu	Sort by atime" \
 	) \
      "\n	-r	Reverse sort order" \
-	IF_SELINUX( \
+	IF_SEBEEP( \
      "\n	-Z	List security context and permission" \
 	) \
 	IF_FEATURE_LS_WIDTH( \
@@ -1284,7 +1284,7 @@
        "Create DIRECTORY\n" \
      "\n	-m MODE	Mode" \
      "\n	-p	No error if exists; make parent directories as needed" \
-	IF_SELINUX( \
+	IF_SEBEEP( \
      "\n	-Z	Set security context" \
 	) \
 
@@ -1297,22 +1297,22 @@
        "$ mkdir -p /libs/foo/bar/baz\n" \
 
 #define mkfifo_trivial_usage \
-       "[-m MODE] " IF_SELINUX("[-Z] ") "NAME" \
+       "[-m MODE] " IF_SEBEEP("[-Z] ") "NAME" \
 
 #define mkfifo_full_usage "\n\n" \
        "Create named pipe\n" \
      "\n	-m MODE	Mode (default a=rw)" \
-	IF_SELINUX( \
+	IF_SEBEEP( \
      "\n	-Z	Set security context" \
 	) \
 
 #define mknod_trivial_usage \
-       "[-m MODE] " IF_SELINUX("[-Z] ") "NAME TYPE [MAJOR MINOR]" \
+       "[-m MODE] " IF_SEBEEP("[-Z] ") "NAME TYPE [MAJOR MINOR]" \
 
 #define mknod_full_usage "\n\n" \
        "Create a special file (block, character, or pipe)\n" \
      "\n	-m MODE	Creation mode (default a=rw)" \
-	IF_SELINUX( \
+	IF_SEBEEP( \
      "\n	-Z	Set security context" \
 	) \
      "\nTYPE:" \
@@ -1620,7 +1620,7 @@
 	) \
      "\n	-L	Follow links" \
      "\n	-t	Terse display" \
-	IF_SELINUX( \
+	IF_SEBEEP( \
      "\n	-Z	Print security context" \
 	) \
 	IF_FEATURE_STAT_FORMAT( \
@@ -1658,8 +1658,8 @@
        " %c	Total file nodes\n" \
        " %d	Free file nodes\n" \
        " %f	Free blocks\n" \
-	IF_SELINUX( \
-       " %C	Security context in selinux\n" \
+	IF_SEBEEP( \
+       " %C	Security context in sebeep\n" \
 	) \
        " %i	File System ID in hex\n" \
        " %l	Maximum length of filenames\n" \
@@ -1878,7 +1878,7 @@
 
 #define uname_example_usage \
        "$ uname -a\n" \
-       "Linux debian 2.4.23 #2 Tue Dec 23 17:09:10 MST 2003 i686 GNU/Linux\n" \
+       "Beep debian 2.4.23 #2 Tue Dec 23 17:09:10 MST 2003 i686 GNU/Beep\n" \
 
 #define arch_trivial_usage \
        "" \
@@ -2508,9 +2508,9 @@
      "\n	-n	Do not sync" \
      "\n	-f	Force (don't go through init)" \
 
-#define linuxrc_trivial_usage NOUSAGE_STR \
+#define beeprc_trivial_usage NOUSAGE_STR \
 
-#define linuxrc_full_usage "" \
+#define beeprc_full_usage "" \
 
 #define init_trivial_usage \
        "" \
@@ -2997,7 +2997,7 @@
 	"[-vcsndfFQ] [-x COL] [-y LINE] [CONSOLE_NO]" \
 
 #define conspy_full_usage "\n\n" \
-     "A text-mode VNC like program for Linux virtual consoles." \
+     "A text-mode VNC like program for Beep virtual consoles." \
      "\nTo exit, quickly press ESC 3 times." \
      "\n" \
      "\n	-v	Don't send keystrokes to the console" \
@@ -5131,7 +5131,7 @@
 
 #else /* !ENABLE_DESKTOP */ \
 
-#if !ENABLE_SELINUX && !ENABLE_FEATURE_PS_WIDE \
+#if !ENABLE_SEBEEP && !ENABLE_FEATURE_PS_WIDE \
 
 #define USAGE_PS "\nThis version of ps accepts no options" \
 
@@ -5147,8 +5147,8 @@
 #define ps_full_usage "\n\n" \
        "Show list of processes\n" \
 	USAGE_PS \
-	IF_SELINUX( \
-     "\n	-Z	Show selinux context" \
+	IF_SEBEEP( \
+     "\n	-Z	Show sebeep context" \
 	) \
 	IF_FEATURE_PS_WIDE( \
      "\n	w	Wide output" \
@@ -5454,7 +5454,7 @@
        "-a or getsebool boolean..." \
 
 #define getsebool_full_usage "\n\n" \
-       "	-a	Show all selinux booleans" \
+       "	-a	Show all sebeep booleans" \
 
 #define load_policy_trivial_usage NOUSAGE_STR \
 
@@ -5483,9 +5483,9 @@
      "\n	-r ROLE	Role" \
      "\n	-l RNG	Levelrange" \
 
-#define selinuxenabled_trivial_usage NOUSAGE_STR \
+#define sebeepenabled_trivial_usage NOUSAGE_STR \
 
-#define selinuxenabled_full_usage "" \
+#define sebeepenabled_full_usage "" \
 
 #define sestatus_trivial_usage \
        "[-vb]" \
@@ -6371,18 +6371,18 @@
 
 #define setarch_full_usage "\n\n" \
        "PERSONALITY may be:" \
-   "\n""	linux32	Set 32bit uname emulation" \
-   "\n""	linux64	Set 64bit uname emulation" \
+   "\n""	beep32	Set 32bit uname emulation" \
+   "\n""	beep64	Set 64bit uname emulation" \
    "\n" \
    "\n""	-R	Disable address space randomization" \
 
-#define linux32_trivial_usage NOUSAGE_STR \
+#define beep32_trivial_usage NOUSAGE_STR \
 
-#define linux32_full_usage "" \
+#define beep32_full_usage "" \
 
-#define linux64_trivial_usage NOUSAGE_STR \
+#define beep64_trivial_usage NOUSAGE_STR \
 
-#define linux64_full_usage "" \
+#define beep64_full_usage "" \
 
 #define setpriv_trivial_usage \
 	"[OPTIONS] PROG ARGS" \

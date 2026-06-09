@@ -16,19 +16,19 @@
  *
  */
 
-#include <linux/resource.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/ulpi.h>
+#include <beep/resource.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/export.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/of_gpio.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/ulpi.h>
 #include <asm/mach-types.h>
-#include <linux/usb/tegra_usb_phy.h>
+#include <beep/usb/tegra_usb_phy.h>
 
 #define TEGRA_USB_BASE		0xC5000000
 #define TEGRA_USB_SIZE		SZ_16K

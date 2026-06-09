@@ -127,18 +127,18 @@
  * Release ICM slot by clearing first byte on 24F.
  */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/spinlock.h>
-#include <linux/stat.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>
+#include <beep/interrupt.h>
+#include <beep/stddef.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/ioport.h>
+#include <beep/proc_fs.h>
+#include <beep/spinlock.h>
+#include <beep/stat.h>
+#include <beep/bitops.h>
+#include <beep/delay.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

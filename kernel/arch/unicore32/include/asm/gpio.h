@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/asm/gpio.h
+ * beep/arch/unicore32/include/asm/gpio.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -13,7 +13,7 @@
 #ifndef __UNICORE_GPIO_H__
 #define __UNICORE_GPIO_H__
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/irq.h>
 #include <mach/hardware.h>
 #include <asm-generic/gpio.h>

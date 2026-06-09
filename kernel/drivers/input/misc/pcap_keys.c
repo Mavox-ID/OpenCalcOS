@@ -11,13 +11,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/mfd/ezx-pcap.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/mfd/ezx-pcap.h>
+#include <beep/slab.h>
 
 struct pcap_keys {
 	struct pcap_chip *pcap;

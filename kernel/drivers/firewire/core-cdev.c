@@ -18,38 +18,38 @@
  * Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/bug.h>
-#include <linux/compat.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-cdev.h>
-#include <linux/idr.h>
-#include <linux/irqflags.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/sched.h> /* required for linux/wait.h */
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/time.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <beep/bug.h>
+#include <beep/compat.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/errno.h>
+#include <beep/firewire.h>
+#include <beep/firewire-cdev.h>
+#include <beep/idr.h>
+#include <beep/irqflags.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/kref.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/poll.h>
+#include <beep/sched.h> /* required for beep/wait.h */
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/time.h>
+#include <beep/uaccess.h>
+#include <beep/vmalloc.h>
+#include <beep/wait.h>
+#include <beep/workqueue.h>
 
 
 #include "core.h"
 
 /*
- * ABI version history is documented in linux/firewire-cdev.h.
+ * ABI version history is documented in beep/firewire-cdev.h.
  */
 #define FW_CDEV_KERNEL_VERSION			5
 #define FW_CDEV_VERSION_EVENT_REQUEST2		4

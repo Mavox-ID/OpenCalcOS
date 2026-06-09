@@ -5,15 +5,15 @@
  * Author: Dan Magenheimer
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/cleancache.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/pagemap.h>
+#include <beep/cleancache.h>
 
-/* temporary ifdef until include/linux/frontswap.h is upstream */
+/* temporary ifdef until include/beep/frontswap.h is upstream */
 #ifdef CONFIG_FRONTSWAP
-#include <linux/frontswap.h>
+#include <beep/frontswap.h>
 #endif
 
 #include <xen/xen.h>
@@ -170,7 +170,7 @@ static int tmem_cleancache_get_page(int pool, struct cleancache_filekey key,
 	unsigned long pfn = page_to_pfn(page);
 	int ret;
 
-	/* translate return values to linux semantics */
+	/* translate return values to beep semantics */
 	if (pool < 0)
 		return -1;
 	if (ind != index)
@@ -285,7 +285,7 @@ static int tmem_frontswap_store(unsigned type, pgoff_t offset,
 		return -1;
 	mb(); /* ensure page is quiescent; tmem may address it with an alias */
 	ret = xen_tmem_put_page(pool, oswiz(type, ind), iswiz(ind), pfn);
-	/* translate Xen tmem return values to linux semantics */
+	/* translate Xen tmem return values to beep semantics */
 	if (ret == 1)
 		return 0;
 	else
@@ -310,7 +310,7 @@ static int tmem_frontswap_load(unsigned type, pgoff_t offset,
 	if (ind64 != ind)
 		return -1;
 	ret = xen_tmem_get_page(pool, oswiz(type, ind), iswiz(ind), pfn);
-	/* translate Xen tmem return values to linux semantics */
+	/* translate Xen tmem return values to beep semantics */
 	if (ret == 1)
 		return 0;
 	else

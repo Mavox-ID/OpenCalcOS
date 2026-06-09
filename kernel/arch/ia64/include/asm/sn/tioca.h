@@ -492,7 +492,7 @@ struct tioca {
  * PCI addresses which are managed by the dma interfaces in this file.  The
  * upper poprtion of the aperature is used for mapping 48 bit AGP addresses.
  * The AGP portion of the aperature is managed by the agpgart_be.c driver
- * in drivers/linux/agp.  There are ca-specific hooks in that driver to
+ * in drivers/beep/agp.  There are ca-specific hooks in that driver to
  * manipulate the gart, but management of the AGP portion of the aperature
  * is the responsibility of that driver.
  *

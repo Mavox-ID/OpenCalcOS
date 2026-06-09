@@ -14,13 +14,13 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
  */
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
 #include "common.h"
 
 /*
@@ -829,7 +829,7 @@ static int usbhsg_try_stop(struct usbhs_priv *priv, u32 status)
 
 /*
  *
- *		linux usb function
+ *		beep usb function
  *
  */
 static int usbhsg_gadget_start(struct usb_gadget *gadget,

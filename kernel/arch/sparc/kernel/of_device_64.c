@@ -1,14 +1,14 @@
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mod_devicetable.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/irq.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/of.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/mod_devicetable.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/irq.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
 #include <asm/spitfire.h>
 
 #include "of_device_common.h"
@@ -479,7 +479,7 @@ static unsigned int __init pci_irq_swizzle(struct device_node *dp,
 					   struct device_node *pp,
 					   unsigned int irq)
 {
-	const struct linux_prom_pci_registers *regs;
+	const struct beep_prom_pci_registers *regs;
 	unsigned int bus, devfn, slot, ret;
 
 	if (irq < 1 || irq > 4)

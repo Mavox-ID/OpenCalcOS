@@ -5,11 +5,11 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 #include <asm/pgtable.h>
 #include <asm/addrspace.h>

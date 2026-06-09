@@ -21,8 +21,8 @@
 
 #include "ctresource.h"
 #include "ctimap.h"
-#include <linux/spinlock.h>
-#include <linux/list.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
 
 /* Define the descriptor of a daio resource */
 enum DAIOTYP {

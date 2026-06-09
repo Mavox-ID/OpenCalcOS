@@ -3,7 +3,7 @@
  *
  * 32-bit ioctl compatibility routines for the MGA DRM.
  *
- * \author Dave Airlie <airlied@linux.ie> with code from patches by Egbert Eich
+ * \author Dave Airlie <airlied@beep.ie> with code from patches by Egbert Eich
  *
  *
  * Copyright (C) Paul Mackerras 2005
@@ -31,7 +31,7 @@
  * IN THE SOFTWARE.
  */
 
-#include <linux/compat.h>
+#include <beep/compat.h>
 
 #include <drm/drmP.h>
 

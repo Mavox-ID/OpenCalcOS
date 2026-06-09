@@ -2,7 +2,7 @@
  * LCD panel support for the Palm Tungsten E
  *
  * Original version : Romain Goyet <r.goyet@gmail.com>
- * Current version : Laurent Gonzalez <palmte.linux@free.fr>
+ * Current version : Laurent Gonzalez <palmte.beep@free.fr>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -19,9 +19,9 @@
  * 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
 
 #include "omapfb.h"
 

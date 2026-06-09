@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/serial/acorn.c
+ *  beep/drivers/serial/acorn.c
  *
  *  Copyright (C) 1996-2003 Russell King.
  *
@@ -7,15 +7,15 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/tty.h>
-#include <linux/serial_core.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/tty.h>
+#include <beep/serial_core.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/init.h>
 
 #include <asm/io.h>
 #include <asm/ecard.h>

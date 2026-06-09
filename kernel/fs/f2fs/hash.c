@@ -4,7 +4,7 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  *
- * Portions of this code from linux/fs/ext3/hash.c
+ * Portions of this code from beep/fs/ext3/hash.c
  *
  * Copyright (C) 2002 by Theodore Ts'o
  *
@@ -12,11 +12,11 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/cryptohash.h>
-#include <linux/pagemap.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/f2fs_fs.h>
+#include <beep/cryptohash.h>
+#include <beep/pagemap.h>
 
 #include "f2fs.h"
 

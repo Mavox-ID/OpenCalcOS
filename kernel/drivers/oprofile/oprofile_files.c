@@ -7,9 +7,9 @@
  * @author John Levon <levon@movementarian.org>
  */
 
-#include <linux/fs.h>
-#include <linux/oprofile.h>
-#include <linux/jiffies.h>
+#include <beep/fs.h>
+#include <beep/oprofile.h>
+#include <beep/jiffies.h>
 
 #include "event_buffer.h"
 #include "oprofile_stats.h"

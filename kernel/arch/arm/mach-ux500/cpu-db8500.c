@@ -8,21 +8,21 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/amba/bus.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/mfd/dbx500-prcmu.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/regulator/machine.h>
-#include <linux/platform_data/pinctrl-nomadik.h>
-#include <linux/random.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/amba/bus.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/mfd/abx500/ab8500.h>
+#include <beep/mfd/dbx500-prcmu.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/regulator/machine.h>
+#include <beep/platform_data/pinctrl-nomadik.h>
+#include <beep/random.h>
 
 #include <asm/pmu.h>
 #include <asm/mach/map.h>

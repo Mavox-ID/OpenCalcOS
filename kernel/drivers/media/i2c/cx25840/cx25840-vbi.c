@@ -16,8 +16,8 @@
  */
 
 
-#include <linux/videodev2.h>
-#include <linux/i2c.h>
+#include <beep/videodev2.h>
+#include <beep/i2c.h>
 #include <media/v4l2-common.h>
 #include <media/cx25840.h>
 

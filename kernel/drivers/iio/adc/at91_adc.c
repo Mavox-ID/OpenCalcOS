@@ -6,29 +6,29 @@
  * Licensed under the GPLv2 or later.
  */
 
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
+#include <beep/bitmap.h>
+#include <beep/bitops.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/platform_device.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/wait.h>
 
-#include <linux/platform_data/at91_adc.h>
+#include <beep/platform_data/at91_adc.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/buffer.h>
+#include <beep/iio/trigger.h>
+#include <beep/iio/trigger_consumer.h>
+#include <beep/iio/triggered_buffer.h>
 
 #include <mach/at91_adc.h>
 

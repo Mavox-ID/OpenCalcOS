@@ -21,19 +21,19 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/console.h>
-#include <linux/notifier.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/console.h>
+#include <beep/notifier.h>
 
-#include <linux/selection.h>
-#include <linux/vt_kern.h>
-#include <linux/consolemap.h>
+#include <beep/selection.h>
+#include <beep/vt_kern.h>
+#include <beep/consolemap.h>
 
-#include <linux/keyboard.h>
-#include <linux/kbd_kern.h>
-#include <linux/input.h>
+#include <beep/keyboard.h>
+#include <beep/kbd_kern.h>
+#include <beep/input.h>
 
 MODULE_AUTHOR("samuel.thibault@ens-lyon.org");
 MODULE_DESCRIPTION("braille device");

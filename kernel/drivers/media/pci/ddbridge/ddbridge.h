@@ -24,15 +24,15 @@
 #ifndef _DDBRIDGE_H_
 #define _DDBRIDGE_H_
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
 #include <asm/dma.h>
-#include <linux/dvb/frontend.h>
-#include <linux/dvb/ca.h>
-#include <linux/socket.h>
+#include <beep/dvb/frontend.h>
+#include <beep/dvb/ca.h>
+#include <beep/socket.h>
 
 #include "dmxdev.h"
 #include "dvbdev.h"

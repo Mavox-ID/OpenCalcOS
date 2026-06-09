@@ -1,12 +1,12 @@
 /*
- *  linux/drivers/message/fusion/mptbase.c
+ *  beep/drivers/message/fusion/mptbase.c
  *      This is the Fusion MPT base driver which supports multiple
  *      (SCSI + LAN) specialized protocol drivers.
  *      For use with LSI PCI chip/adapter(s)
  *      running LSI Fusion MPT (Message Passing Technology) firmware.
  *
  *  Copyright (c) 1999-2008 LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionBeep@lsi.com)
  *
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
@@ -46,24 +46,24 @@
 */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kdev_t.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>		/* needed for in_interrupt() proto */
-#include <linux/dma-mapping.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/kdev_t.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>		/* needed for in_interrupt() proto */
+#include <beep/dma-mapping.h>
 #include <asm/io.h>
 #ifdef CONFIG_MTRR
 #include <asm/mtrr.h>
 #endif
-#include <linux/kthread.h>
+#include <beep/kthread.h>
 #include <scsi/scsi_host.h>
 
 #include "mptbase.h"
@@ -71,7 +71,7 @@
 
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 #define my_NAME		"Fusion MPT base driver"
-#define my_VERSION	MPT_LINUX_VERSION_COMMON
+#define my_VERSION	MPT_BEEP_VERSION_COMMON
 #define MYNAM		"mptbase"
 
 MODULE_AUTHOR(MODULEAUTHOR);
@@ -6673,7 +6673,7 @@ static int mpt_version_proc_show(struct seq_file *m, void *v)
 	int	 scsi, fc, sas, lan, ctl, targ, dmp;
 	char	*drvname;
 
-	seq_printf(m, "%s-%s\n", "mptlinux", MPT_LINUX_VERSION_COMMON);
+	seq_printf(m, "%s-%s\n", "mptbeep", MPT_BEEP_VERSION_COMMON);
 	seq_printf(m, "  Fusion MPT base driver\n");
 
 	scsi = fc = sas = lan = ctl = targ = dmp = 0;

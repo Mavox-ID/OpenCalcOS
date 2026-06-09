@@ -11,35 +11,35 @@
  * Copyright (c) 2009 Wind River Systems, Inc.  All Rights Reserved.
  */
 
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/kmsg_dump.h>
-#include <linux/reboot.h>
-#include <linux/sched.h>
-#include <linux/sysrq.h>
-#include <linux/smp.h>
-#include <linux/utsname.h>
-#include <linux/vmalloc.h>
-#include <linux/atomic.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/kallsyms.h>
-#include <linux/kgdb.h>
-#include <linux/kdb.h>
-#include <linux/notifier.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/nmi.h>
-#include <linux/time.h>
-#include <linux/ptrace.h>
-#include <linux/sysctl.h>
-#include <linux/cpu.h>
-#include <linux/kdebug.h>
-#include <linux/proc_fs.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <beep/ctype.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/kmsg_dump.h>
+#include <beep/reboot.h>
+#include <beep/sched.h>
+#include <beep/sysrq.h>
+#include <beep/smp.h>
+#include <beep/utsname.h>
+#include <beep/vmalloc.h>
+#include <beep/atomic.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/kallsyms.h>
+#include <beep/kgdb.h>
+#include <beep/kdb.h>
+#include <beep/notifier.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/nmi.h>
+#include <beep/time.h>
+#include <beep/ptrace.h>
+#include <beep/sysctl.h>
+#include <beep/cpu.h>
+#include <beep/kdebug.h>
+#include <beep/proc_fs.h>
+#include <beep/uaccess.h>
+#include <beep/slab.h>
 #include "kdb_private.h"
 
 #define GREP_LEN 256

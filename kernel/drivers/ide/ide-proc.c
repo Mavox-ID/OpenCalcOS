@@ -14,18 +14,18 @@
  *   echo "name:val" >/proc/ide/ide0/hda/settings
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <asm/uaccess.h>
-#include <linux/errno.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/ctype.h>
-#include <linux/ide.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/proc_fs.h>
+#include <beep/stat.h>
+#include <beep/mm.h>
+#include <beep/pci.h>
+#include <beep/ctype.h>
+#include <beep/ide.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 

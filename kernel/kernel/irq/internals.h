@@ -5,7 +5,7 @@
  * kernel/irq/. Do not even think about using any information outside
  * of this file for your non core code.
  */
-#include <linux/irqdesc.h>
+#include <beep/irqdesc.h>
 
 #ifdef CONFIG_SPARSE_IRQ
 # define IRQ_BITMAP_BITS	(NR_IRQS + 8196)

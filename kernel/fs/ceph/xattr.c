@@ -1,12 +1,12 @@
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
 #include "super.h"
 #include "mds_client.h"
 
-#include <linux/ceph/decode.h>
+#include <beep/ceph/decode.h>
 
-#include <linux/xattr.h>
-#include <linux/slab.h>
+#include <beep/xattr.h>
+#include <beep/slab.h>
 
 #define XATTR_CEPH_PREFIX "ceph."
 #define XATTR_CEPH_PREFIX_LEN (sizeof (XATTR_CEPH_PREFIX) - 1)

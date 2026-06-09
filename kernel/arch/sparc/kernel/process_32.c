@@ -1,4 +1,4 @@
-/*  linux/arch/sparc/kernel/process.c
+/*  beep/arch/sparc/kernel/process.c
  *
  *  Copyright (C) 1995, 2008 David S. Miller (davem@davemloft.net)
  *  Copyright (C) 1996 Eddie C. Dost   (ecd@skynet.be)
@@ -10,20 +10,20 @@
 
 #include <stdarg.h>
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/smp.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/stddef.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/smp.h>
+#include <beep/reboot.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 
 #include <asm/auxio.h>
 #include <asm/oplib.h>

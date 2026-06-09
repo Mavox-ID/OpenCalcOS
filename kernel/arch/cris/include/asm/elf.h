@@ -30,7 +30,7 @@
 
 typedef unsigned long elf_greg_t;
 
-/* Note that NGREG is defined to ELF_NGREG in include/linux/elfcore.h, and is
+/* Note that NGREG is defined to ELF_NGREG in include/beep/elfcore.h, and is
    thus exposed to user-space. */
 #define ELF_NGREG (sizeof (struct user_regs_struct) / sizeof(elf_greg_t))
 typedef elf_greg_t elf_gregset_t[ELF_NGREG];
@@ -87,6 +87,6 @@ typedef unsigned long elf_fpregset_t;
 #define ELF_PLATFORM  (NULL)
 
 #define SET_PERSONALITY(ex) \
-	set_personality(PER_LINUX | (current->personality & (~PER_MASK)))
+	set_personality(PER_BEEP | (current->personality & (~PER_MASK)))
 
 #endif

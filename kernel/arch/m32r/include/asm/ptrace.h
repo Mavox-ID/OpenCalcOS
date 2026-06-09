@@ -1,12 +1,12 @@
 /*
- * linux/include/asm-m32r/ptrace.h
+ * beep/include/asm-m32r/ptrace.h
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
  * M32R version:
- *   Copyright (C) 2001-2002, 2004  Hirokazu Takata <takata at linux-m32r.org>
+ *   Copyright (C) 2001-2002, 2004  Hirokazu Takata <takata at beep-m32r.org>
  */
 #ifndef _ASM_M32R_PTRACE_H
 #define _ASM_M32R_PTRACE_H

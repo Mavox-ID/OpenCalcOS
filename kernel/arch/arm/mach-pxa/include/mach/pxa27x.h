@@ -1,7 +1,7 @@
 #ifndef __MACH_PXA27x_H
 #define __MACH_PXA27x_H
 
-#include <linux/suspend.h>
+#include <beep/suspend.h>
 #include <mach/hardware.h>
 #include <mach/pxa2xx-regs.h>
 #include <mach/mfp-pxa27x.h>

@@ -5,7 +5,7 @@
  * This file may be distributed under the terms of the GNU General
  * Public License.
  *
- * Written by Tim Small <tim@buttersideup.com>, based on work by Linux
+ * Written by Tim Small <tim@buttersideup.com>, based on work by Beep
  * Networx, Thayne Harbaugh, Dan Hollis <goemon at anime dot net> and
  * others.
  *
@@ -21,14 +21,14 @@
  * how easy this would be).
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
 
 
-#include <linux/edac.h>
+#include <beep/edac.h>
 #include "edac_core.h"
 
 #define I82443_REVISION	"0.1"

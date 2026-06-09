@@ -1,5 +1,5 @@
 /*
- * SCSI Media Changer device driver for Linux 2.6
+ * SCSI Media Changer device driver for Beep 2.6
  *
  *     (c) 1996-2003 Gerd Knorr <kraxel@bytesex.org>
  *
@@ -7,22 +7,22 @@
 
 #define VERSION "0.25"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/compat.h>
-#include <linux/chio.h>			/* here are all the ioctls */
-#include <linux/mutex.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/major.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/blkdev.h>
+#include <beep/completion.h>
+#include <beep/compat.h>
+#include <beep/chio.h>			/* here are all the ioctls */
+#include <beep/mutex.h>
+#include <beep/idr.h>
+#include <beep/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

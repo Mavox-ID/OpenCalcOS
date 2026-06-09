@@ -1,14 +1,14 @@
 /*
- *	linux/arch/alpha/kernel/irq_pyxis.c
+ *	beep/arch/alpha/kernel/irq_pyxis.c
  *
  * Based on code written by David A Rusling (david.rusling@reo.mts.dec.com).
  *
  * IRQ Code common to all PYXIS core logic chips.
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/irq.h>
 
 #include <asm/io.h>
 #include <asm/core_cia.h>

@@ -1,7 +1,7 @@
 /*
  * Memory layout definitions for the Hexagon architecture
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -21,7 +21,7 @@
 #ifndef _ASM_HEXAGON_MEM_LAYOUT_H
 #define _ASM_HEXAGON_MEM_LAYOUT_H
 
-#include <linux/const.h>
+#include <beep/const.h>
 
 /*
  * Have to do this for ginormous numbers, else they get printed as

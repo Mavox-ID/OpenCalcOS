@@ -1,12 +1,12 @@
-/* ioctl() (mostly Linux Wireless Extensions) routines for Host AP driver */
+/* ioctl() (mostly Beep Wireless Extensions) routines for Host AP driver */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/ethtool.h>
-#include <linux/if_arp.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/ethtool.h>
+#include <beep/if_arp.h>
+#include <beep/module.h>
+#include <beep/etherdevice.h>
 #include <net/lib80211.h>
 
 #include "hostap_wlan.h"
@@ -47,7 +47,7 @@ static struct iw_statistics *hostap_get_wireless_stats(struct net_device *dev)
 #ifdef in_atomic
 		/* RID reading might sleep and it must not be called in
 		 * interrupt context or while atomic. However, this
-		 * function seems to be called while atomic (at least in Linux
+		 * function seems to be called while atomic (at least in Beep
 		 * 2.5.59). Update signal quality values only if in suitable
 		 * context. Otherwise, previous values read from tick timer
 		 * will be used. */

@@ -12,14 +12,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/workqueue.h>
-#include <linux/mfd/da903x.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/leds.h>
+#include <beep/workqueue.h>
+#include <beep/mfd/da903x.h>
+#include <beep/slab.h>
 
 #define DA9030_LED1_CONTROL	0x20
 #define DA9030_LED2_CONTROL	0x21

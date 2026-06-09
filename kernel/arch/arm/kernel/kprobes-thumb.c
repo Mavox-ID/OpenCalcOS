@@ -8,9 +8,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/kprobes.h>
+#include <beep/module.h>
 
 #include "kprobes.h"
 

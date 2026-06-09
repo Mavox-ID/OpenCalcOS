@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-mmp/ttc_dkb.c
+ *  beep/arch/arm/mach-mmp/ttc_dkb.c
  *
  *  Support for the Marvell PXA910-based TTC_DKB Development Platform.
  *
@@ -8,17 +8,17 @@
  *  publishhed by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/onenand.h>
-#include <linux/interrupt.h>
-#include <linux/i2c/pca953x.h>
-#include <linux/gpio.h>
-#include <linux/mfd/88pm860x.h>
-#include <linux/platform_data/mv_usb.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/onenand.h>
+#include <beep/interrupt.h>
+#include <beep/i2c/pca953x.h>
+#include <beep/gpio.h>
+#include <beep/mfd/88pm860x.h>
+#include <beep/platform_data/mv_usb.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

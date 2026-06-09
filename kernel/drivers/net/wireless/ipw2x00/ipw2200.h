@@ -19,7 +19,7 @@
   file called LICENSE.
 
   Contact Information:
-  Intel Linux Wireless <ilw@linux.intel.com>
+  Intel Beep Wireless <ilw@beep.intel.com>
   Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
 
 ******************************************************************************/
@@ -27,24 +27,24 @@
 #ifndef __ipw2200_h__
 #define __ipw2200_h__
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/mutex.h>
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/random.h>
-#include <linux/dma-mapping.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/skbuff.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
+#include <beep/random.h>
+#include <beep/dma-mapping.h>
 
-#include <linux/firmware.h>
-#include <linux/wireless.h>
-#include <linux/jiffies.h>
+#include <beep/firmware.h>
+#include <beep/wireless.h>
+#include <beep/jiffies.h>
 #include <asm/io.h>
 
 #include <net/lib80211.h>
@@ -52,7 +52,7 @@
 
 #define DRV_NAME	"ipw2200"
 
-#include <linux/workqueue.h>
+#include <beep/workqueue.h>
 
 #include "libipw.h"
 
@@ -1498,7 +1498,7 @@ do { if (ipw_debug_level & (level)) \
 #define IPW_DEBUG_MERGE(f, a...) IPW_LL_DEBUG(IPW_DL_MERGE, f, ## a)
 #define IPW_DEBUG_QOS(f, a...)   IPW_LL_DEBUG(IPW_DL_QOS, f, ## a)
 
-#include <linux/ctype.h>
+#include <beep/ctype.h>
 
 /*
 * Register bit definitions

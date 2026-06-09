@@ -9,12 +9,12 @@
  * option) any later version.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/of_platform.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/of_platform.h>
 
 #include <asm/time.h>
 #include <asm/machdep.h>

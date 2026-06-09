@@ -6,7 +6,7 @@
 #if defined(__sparc__) && defined(__arch64__)
 #ifndef __ASSEMBLY__
 
-#include <linux/threads.h>
+#include <beep/threads.h>
 #include <asm/switch_to.h>
 
 static inline int pt_regs_trap_type(struct pt_regs *regs)

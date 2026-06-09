@@ -1,17 +1,17 @@
 #ifndef _FS_CEPH_MDS_CLIENT_H
 #define _FS_CEPH_MDS_CLIENT_H
 
-#include <linux/completion.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/rbtree.h>
-#include <linux/spinlock.h>
+#include <beep/completion.h>
+#include <beep/kref.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/rbtree.h>
+#include <beep/spinlock.h>
 
-#include <linux/ceph/types.h>
-#include <linux/ceph/messenger.h>
-#include <linux/ceph/mdsmap.h>
-#include <linux/ceph/auth.h>
+#include <beep/ceph/types.h>
+#include <beep/ceph/messenger.h>
+#include <beep/ceph/mdsmap.h>
+#include <beep/ceph/auth.h>
 
 /*
  * Some lock dependencies:

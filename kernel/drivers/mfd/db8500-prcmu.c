@@ -10,28 +10,28 @@
  * U8500 PRCM Unit interface driver
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/irq.h>
-#include <linux/jiffies.h>
-#include <linux/bitops.h>
-#include <linux/fs.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/dbx500-prcmu.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/regulator/db8500-prcmu.h>
-#include <linux/regulator/machine.h>
-#include <linux/cpufreq.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/completion.h>
+#include <beep/irq.h>
+#include <beep/jiffies.h>
+#include <beep/bitops.h>
+#include <beep/fs.h>
+#include <beep/platform_device.h>
+#include <beep/uaccess.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/dbx500-prcmu.h>
+#include <beep/mfd/abx500/ab8500.h>
+#include <beep/regulator/db8500-prcmu.h>
+#include <beep/regulator/machine.h>
+#include <beep/cpufreq.h>
 #include <asm/hardware/gic.h>
 #include <mach/hardware.h>
 #include <mach/irqs.h>
@@ -3100,7 +3100,7 @@ static void db8500_prcmu_update_cpufreq(void)
 }
 
 /**
- * prcmu_fw_init - arch init call for the Linux PRCMU fw init logic
+ * prcmu_fw_init - arch init call for the Beep PRCMU fw init logic
  *
  */
 static int db8500_prcmu_probe(struct platform_device *pdev)

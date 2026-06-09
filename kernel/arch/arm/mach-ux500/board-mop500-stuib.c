@@ -4,14 +4,14 @@
  * License terms: GNU General Public License (GPL), version 2
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mfd/stmpe.h>
-#include <linux/input/bu21013.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/input/matrix_keypad.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/mfd/stmpe.h>
+#include <beep/input/bu21013.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/input/matrix_keypad.h>
 #include <asm/mach-types.h>
 
 #include "board-mop500.h"

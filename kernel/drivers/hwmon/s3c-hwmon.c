@@ -1,7 +1,7 @@
-/* linux/drivers/hwmon/s3c-hwmon.c
+/* beep/drivers/hwmon/s3c-hwmon.c
  *
  * Copyright (C) 2005, 2008, 2009 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C24XX/S3C64XX ADC hwmon support
@@ -20,20 +20,20 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
 
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
 
 #include <plat/adc.h>
-#include <linux/platform_data/hwmon-s3c.h>
+#include <beep/platform_data/hwmon-s3c.h>
 
 struct s3c_hwmon_attr {
 	struct sensor_device_attribute	in;

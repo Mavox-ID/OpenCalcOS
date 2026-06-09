@@ -12,25 +12,25 @@
  * for more details.
  */
 
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/syscalls.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/mman.h>
-#include <linux/sys.h>
-#include <linux/ipc.h>
-#include <linux/file.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/semaphore.h>
-#include <linux/uaccess.h>
-#include <linux/unistd.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/syscalls.h>
+#include <beep/sem.h>
+#include <beep/msg.h>
+#include <beep/shm.h>
+#include <beep/stat.h>
+#include <beep/mman.h>
+#include <beep/sys.h>
+#include <beep/ipc.h>
+#include <beep/file.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/fs.h>
+#include <beep/semaphore.h>
+#include <beep/uaccess.h>
+#include <beep/unistd.h>
+#include <beep/slab.h>
 
 #include <asm/syscalls.h>
 

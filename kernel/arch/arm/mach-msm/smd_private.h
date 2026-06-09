@@ -16,10 +16,10 @@
 #ifndef _ARCH_ARM_MACH_MSM_MSM_SMD_PRIVATE_H_
 #define _ARCH_ARM_MACH_MSM_MSM_SMD_PRIVATE_H_
 
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/io.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
+#include <beep/io.h>
 
 #include <mach/msm_iomap.h>
 

@@ -1,8 +1,8 @@
 #ifndef _M68K_STRING_H_
 #define _M68K_STRING_H_
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <beep/types.h>
+#include <beep/compiler.h>
 
 static inline size_t __kernel_strlen(const char *s)
 {

@@ -17,15 +17,15 @@
  *  with this program; if not, write to the Free Software Foundation, Inc.,
  *  59 Temple Place - Suite 330, Boston MA 02111-1307, USA.
  */
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/serial_pnx8xxx.h>
-#include <linux/pm.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/ioport.h>
+#include <beep/irq.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/serial_pnx8xxx.h>
+#include <beep/pm.h>
 
 #include <asm/cpu.h>
 #include <asm/bootinfo.h>

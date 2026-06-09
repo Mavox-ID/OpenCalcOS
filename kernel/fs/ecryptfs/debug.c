@@ -1,5 +1,5 @@
 /**
- * eCryptfs: Linux filesystem encryption layer
+ * eCryptfs: Beep filesystem encryption layer
  * Functions only useful for debugging.
  *
  * Copyright (C) 2006 International Business Machines Corp.

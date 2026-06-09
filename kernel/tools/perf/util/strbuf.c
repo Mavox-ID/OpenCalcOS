@@ -1,5 +1,5 @@
 #include "cache.h"
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 int prefixcmp(const char *str, const char *prefix)
 {

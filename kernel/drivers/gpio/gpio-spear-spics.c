@@ -9,13 +9,13 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
+#include <beep/types.h>
 
 /* maximum chipselects */
 #define NUM_OF_GPIO	4

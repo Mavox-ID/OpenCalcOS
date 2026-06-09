@@ -2,7 +2,7 @@
  * drivers/mmc/host/sdhci-of-hlwd.c
  *
  * Nintendo Wii Secure Digital Host Controller Interface.
- * Copyright (C) 2009 The GameCube Linux Team
+ * Copyright (C) 2009 The GameCube Beep Team
  * Copyright (C) 2009 Albert Herranz
  *
  * Based on sdhci-of-esdhc.c
@@ -19,9 +19,9 @@
  * your option) any later version.
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/mmc/host.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/mmc/host.h>
 #include "sdhci-pltfm.h"
 
 /*
@@ -96,5 +96,5 @@ static struct platform_driver sdhci_hlwd_driver = {
 module_platform_driver(sdhci_hlwd_driver);
 
 MODULE_DESCRIPTION("Nintendo Wii SDHCI OF driver");
-MODULE_AUTHOR("The GameCube Linux Team, Albert Herranz");
+MODULE_AUTHOR("The GameCube Beep Team, Albert Herranz");
 MODULE_LICENSE("GPL v2");

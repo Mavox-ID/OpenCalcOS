@@ -23,21 +23,21 @@
  * byte channel used for the console is designated as the default tty.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/fs.h>
+#include <beep/poll.h>
 #include <asm/epapr_hcalls.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/cdev.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/circ_buf.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
+#include <beep/cdev.h>
+#include <beep/console.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/circ_buf.h>
 #include <asm/udbg.h>
 
 /* The size of the transmit circular buffer.  This must be a power of two. */

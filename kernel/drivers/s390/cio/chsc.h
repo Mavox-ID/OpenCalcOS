@@ -1,8 +1,8 @@
 #ifndef S390_CHSC_H
 #define S390_CHSC_H
 
-#include <linux/types.h>
-#include <linux/device.h>
+#include <beep/types.h>
+#include <beep/device.h>
 #include <asm/css_chars.h>
 #include <asm/chpid.h>
 #include <asm/chsc.h>

@@ -22,14 +22,14 @@
  *   along with this library; if not, write to the Free Software
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/keyctl.h>
-#include <linux/err.h>
-#include <linux/seq_file.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/keyctl.h>
+#include <beep/err.h>
+#include <beep/seq_file.h>
 #include <keys/dns_resolver-type.h>
 #include <keys/user-type.h>
 #include "internal.h"

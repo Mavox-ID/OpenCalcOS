@@ -29,7 +29,7 @@ struct pt_regs_dwarfnum {
 
 /*
  * Reference:
- * http://refspecs.linuxfoundation.org/ELF/ppc64/PPC-elf64abi-1.9.html
+ * http://refspecs.beepfoundation.org/ELF/ppc64/PPC-elf64abi-1.9.html
  */
 static const struct pt_regs_dwarfnum regdwarfnum_table[] = {
 	GPR_DWARFNUM_NAME(0),

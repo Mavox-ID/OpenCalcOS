@@ -31,11 +31,11 @@
  * SOFTWARE.
  */
 
-#include <linux/string.h>
-#include <linux/etherdevice.h>
+#include <beep/string.h>
+#include <beep/etherdevice.h>
 
-#include <linux/mlx4/cmd.h>
-#include <linux/export.h>
+#include <beep/mlx4/cmd.h>
+#include <beep/export.h>
 
 #include "mlx4.h"
 

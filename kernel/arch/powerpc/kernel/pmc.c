@@ -12,10 +12,10 @@
  *  2 of the License, or (at your option) any later version.
  */
 
-#include <linux/errno.h>
-#include <linux/bug.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
+#include <beep/errno.h>
+#include <beep/bug.h>
+#include <beep/spinlock.h>
+#include <beep/export.h>
 
 #include <asm/processor.h>
 #include <asm/cputable.h>

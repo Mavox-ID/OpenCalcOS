@@ -1,5 +1,5 @@
 /*
- *  linux/arch/parisc/mm/init.c
+ *  beep/arch/parisc/mm/init.c
  *
  *  Copyright (C) 1995	Linus Torvalds
  *  Copyright 1999 SuSE GmbH
@@ -11,18 +11,18 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/bootmem.h>
-#include <linux/gfp.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/pci.h>		/* for hppa_dma_ops and pcxl_dma_ops */
-#include <linux/initrd.h>
-#include <linux/swap.h>
-#include <linux/unistd.h>
-#include <linux/nodemask.h>	/* for node_online_map */
-#include <linux/pagemap.h>	/* for release_pages and page_cache_release */
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/bootmem.h>
+#include <beep/gfp.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/pci.h>		/* for hppa_dma_ops and pcxl_dma_ops */
+#include <beep/initrd.h>
+#include <beep/swap.h>
+#include <beep/unistd.h>
+#include <beep/nodemask.h>	/* for node_online_map */
+#include <beep/pagemap.h>	/* for release_pages and page_cache_release */
 
 #include <asm/pgalloc.h>
 #include <asm/pgtable.h>
@@ -400,12 +400,12 @@ static void __init map_pages(unsigned long start_vaddr,
 	unsigned long fv_addr;
 	unsigned long gw_addr;
 	extern const unsigned long fault_vector_20;
-	extern void * const linux_gateway_page;
+	extern void * const beep_gateway_page;
 
 	ro_start = __pa((unsigned long)_text);
 	ro_end   = __pa((unsigned long)&data_start);
 	fv_addr  = __pa((unsigned long)&fault_vector_20) & PAGE_MASK;
-	gw_addr  = __pa((unsigned long)&linux_gateway_page) & PAGE_MASK;
+	gw_addr  = __pa((unsigned long)&beep_gateway_page) & PAGE_MASK;
 
 	end_paddr = start_paddr + size;
 
@@ -765,7 +765,7 @@ void show_mem(unsigned int filter)
 /*
  * pagetable_init() sets up the page tables
  *
- * Note that gateway_init() places the Linux gateway page at page 0.
+ * Note that gateway_init() places the Beep gateway page at page 0.
  * Since gateway pages cannot be dereferenced this has the desirable
  * side effect of trapping those pesky NULL-reference errors in the
  * kernel.
@@ -803,21 +803,21 @@ static void __init pagetable_init(void)
 
 static void __init gateway_init(void)
 {
-	unsigned long linux_gateway_page_addr;
+	unsigned long beep_gateway_page_addr;
 	/* FIXME: This is 'const' in order to trick the compiler
 	   into not treating it as DP-relative data. */
-	extern void * const linux_gateway_page;
+	extern void * const beep_gateway_page;
 
-	linux_gateway_page_addr = LINUX_GATEWAY_ADDR & PAGE_MASK;
+	beep_gateway_page_addr = BEEP_GATEWAY_ADDR & PAGE_MASK;
 
 	/*
-	 * Setup Linux Gateway page.
+	 * Setup Beep Gateway page.
 	 *
-	 * The Linux gateway page will reside in kernel space (on virtual
+	 * The Beep gateway page will reside in kernel space (on virtual
 	 * page 0), so it doesn't need to be aliased into user space.
 	 */
 
-	map_pages(linux_gateway_page_addr, __pa(&linux_gateway_page),
+	map_pages(beep_gateway_page_addr, __pa(&beep_gateway_page),
 		  PAGE_SIZE, PAGE_GATEWAY, 1);
 }
 

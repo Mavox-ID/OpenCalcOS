@@ -12,18 +12,18 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/memblock.h>
-#include <linux/rslib.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/pstore_ram.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/list.h>
+#include <beep/memblock.h>
+#include <beep/rslib.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/pstore_ram.h>
 #include <asm/page.h>
 
 struct persistent_ram_buffer {

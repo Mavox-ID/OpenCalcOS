@@ -1,7 +1,7 @@
 /*
- *  linux/drivers/sound/vidc.c
+ *  beep/drivers/sound/vidc.c
  *
- *  Copyright (C) 1997-2000 by Russell King <rmk@arm.linux.org.uk>
+ *  Copyright (C) 1997-2000 by Russell King <rmk@arm.beep.org.uk>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -17,11 +17,11 @@
  * We currently support a mixer device, but it is currently non-functional.
  */
 
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
+#include <beep/gfp.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
 
 #include <mach/hardware.h>
 #include <asm/dma.h>

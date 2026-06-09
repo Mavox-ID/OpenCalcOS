@@ -1,17 +1,17 @@
-#ifndef _LINUX_KERNEL_TRACE_H
-#define _LINUX_KERNEL_TRACE_H
+#ifndef _BEEP_KERNEL_TRACE_H
+#define _BEEP_KERNEL_TRACE_H
 
-#include <linux/fs.h>
-#include <linux/atomic.h>
-#include <linux/sched.h>
-#include <linux/clocksource.h>
-#include <linux/ring_buffer.h>
-#include <linux/mmiotrace.h>
-#include <linux/tracepoint.h>
-#include <linux/ftrace.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/trace_seq.h>
-#include <linux/ftrace_event.h>
+#include <beep/fs.h>
+#include <beep/atomic.h>
+#include <beep/sched.h>
+#include <beep/clocksource.h>
+#include <beep/ring_buffer.h>
+#include <beep/mmiotrace.h>
+#include <beep/tracepoint.h>
+#include <beep/ftrace.h>
+#include <beep/hw_breakpoint.h>
+#include <beep/trace_seq.h>
+#include <beep/ftrace_event.h>
 
 enum trace_type {
 	__TRACE_FIRST_TYPE = 0,
@@ -853,4 +853,4 @@ int perf_ftrace_event_register(struct ftrace_event_call *call,
 #define perf_ftrace_event_register NULL
 #endif
 
-#endif /* _LINUX_KERNEL_TRACE_H */
+#endif /* _BEEP_KERNEL_TRACE_H */

@@ -10,22 +10,22 @@
  *
  */
 
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/gpio.h>
-#include <linux/usb/gpio_vbus.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/onenand.h>
-#include <linux/dm9000.h>
-#include <linux/ucb1400.h>
-#include <linux/ata_platform.h>
-#include <linux/regulator/max1586.h>
-#include <linux/i2c/pxa-i2c.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/gpio_keys.h>
+#include <beep/input.h>
+#include <beep/gpio.h>
+#include <beep/usb/gpio_vbus.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/onenand.h>
+#include <beep/dm9000.h>
+#include <beep/ucb1400.h>
+#include <beep/ata_platform.h>
+#include <beep/regulator/max1586.h>
+#include <beep/i2c/pxa-i2c.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -33,12 +33,12 @@
 #include <mach/pxa27x.h>
 #include <mach/audio.h>
 #include <mach/vpac270.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/video-pxafb.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
 #include <mach/pxa27x-udc.h>
 #include <mach/udc.h>
-#include <linux/platform_data/ata-pxa.h>
+#include <beep/platform_data/ata-pxa.h>
 
 #include "generic.h"
 #include "devices.h"

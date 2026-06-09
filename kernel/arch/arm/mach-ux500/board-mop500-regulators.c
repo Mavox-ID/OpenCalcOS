@@ -8,9 +8,9 @@
  *
  * MOP500 board specific initialization for regulators
  */
-#include <linux/kernel.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/ab8500.h>
+#include <beep/kernel.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/ab8500.h>
 #include "board-mop500-regulators.h"
 
 static struct regulator_consumer_supply gpio_en_3v3_consumers[] = {

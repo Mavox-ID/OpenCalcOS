@@ -11,19 +11,19 @@
  * AB8500 supports the following regulators:
  *   VAUX1/2/3, VINTCORE, VTVOUT, VUSB, VAUDIO, VAMIC1/2, VDMIC, VANA
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/of.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/ab8500.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/abx500.h>
+#include <beep/mfd/abx500/ab8500.h>
+#include <beep/of.h>
+#include <beep/regulator/of_regulator.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/ab8500.h>
+#include <beep/slab.h>
 
 /**
  * struct ab8500_regulator_info - ab8500 regulator information

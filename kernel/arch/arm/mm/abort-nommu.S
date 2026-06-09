@@ -1,4 +1,4 @@
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 /*
  * Function: nommu_early_abort

@@ -10,7 +10,7 @@
 #ifndef PM_RMOBILE_H
 #define PM_RMOBILE_H
 
-#include <linux/pm_domain.h>
+#include <beep/pm_domain.h>
 
 #define DEFAULT_DEV_LATENCY_NS	250000
 

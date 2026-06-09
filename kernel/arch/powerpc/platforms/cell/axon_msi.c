@@ -8,15 +8,15 @@
  */
 
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
-#include <linux/export.h>
-#include <linux/of_platform.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/msi.h>
+#include <beep/export.h>
+#include <beep/of_platform.h>
+#include <beep/debugfs.h>
+#include <beep/slab.h>
 
 #include <asm/dcr.h>
 #include <asm/machdep.h>

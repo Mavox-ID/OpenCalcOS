@@ -18,12 +18,12 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <drm/drmP.h>
 #include <drm/drm_fb_helper.h>
 #include <drm/drm_crtc_helper.h>
-#include <linux/videodev2.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/videodev2.h>
+#include <beep/pinctrl/consumer.h>
 
 #include "imx-drm.h"
 

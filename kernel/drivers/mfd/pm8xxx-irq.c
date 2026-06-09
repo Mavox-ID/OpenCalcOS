@@ -13,14 +13,14 @@
 
 #define pr_fmt(fmt)	"%s: " fmt, __func__
 
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/mfd/pm8xxx/core.h>
-#include <linux/mfd/pm8xxx/irq.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/mfd/pm8xxx/core.h>
+#include <beep/mfd/pm8xxx/irq.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 /* PMIC8xxx IRQ */
 

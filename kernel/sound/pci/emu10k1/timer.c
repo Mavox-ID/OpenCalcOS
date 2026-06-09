@@ -25,7 +25,7 @@
  *
  */
 
-#include <linux/time.h>
+#include <beep/time.h>
 #include <sound/core.h>
 #include <sound/emu10k1.h>
 

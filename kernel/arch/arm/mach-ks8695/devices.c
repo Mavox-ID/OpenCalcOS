@@ -20,8 +20,8 @@
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
 
 #include <mach/irqs.h>
 #include <mach/regs-wan.h>

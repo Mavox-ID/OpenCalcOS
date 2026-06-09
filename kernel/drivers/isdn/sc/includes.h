@@ -4,13 +4,13 @@
  *
  */
 
-#include <linux/errno.h>
+#include <beep/errno.h>
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/ioport.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/isdnif.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/ioport.h>
+#include <beep/timer.h>
+#include <beep/wait.h>
+#include <beep/isdnif.h>

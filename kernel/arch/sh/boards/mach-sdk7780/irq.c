@@ -1,5 +1,5 @@
 /*
- * linux/arch/sh/boards/renesas/sdk7780/irq.c
+ * beep/arch/sh/boards/renesas/sdk7780/irq.c
  *
  * Renesas Technology Europe SDK7780 Support.
  *
@@ -9,9 +9,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/io.h>
 #include <mach/sdk7780.h>
 
 enum {

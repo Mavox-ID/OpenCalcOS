@@ -9,12 +9,12 @@
  * Round-robin path selector.
  */
 
-#include <linux/device-mapper.h>
+#include <beep/device-mapper.h>
 
 #include "dm-path-selector.h"
 
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #define DM_MSG_PREFIX "multipath round-robin"
 

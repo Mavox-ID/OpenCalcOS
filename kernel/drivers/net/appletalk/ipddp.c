@@ -1,6 +1,6 @@
 /*
- *	ipddp.c: IP to Appletalk-IP Encapsulation driver for Linux
- *		 Appletalk-IP to IP Decapsulation driver for Linux
+ *	ipddp.c: IP to Appletalk-IP Encapsulation driver for Beep
+ *		 Appletalk-IP to IP Decapsulation driver for Beep
  *
  *	Authors:
  *      - DDP-IP Encap by: Bradford W. Johnson <johns393@maroon.tc.umn.edu>
@@ -10,11 +10,11 @@
  *	- Almost all code already existed in net/appletalk/ddp.c I just
  *	  moved/reorginized it into a driver file. Original IP-over-DDP code
  *	  was done by Bradford W. Johnson <johns393@maroon.tc.umn.edu>
- *      - skeleton.c: A network driver outline for linux.
+ *      - skeleton.c: A network driver outline for beep.
  *        Written 1993-94 by Donald Becker.
  *	- dummy.c: A dummy net driver. By Nick Holloway.
  *	- MacGate: A user space Daemon for Appletalk-IP Decap for
- *	  Linux by Jay Schulist <jschlst@samba.org>
+ *	  Beep by Jay Schulist <jschlst@samba.org>
  *
  *      Copyright 1993 United States Government as represented by the
  *      Director, National Security Agency.
@@ -23,15 +23,15 @@
  *      of the GNU General Public License, incorporated herein by reference.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/atalk.h>
-#include <linux/if_arp.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ip.h>
+#include <beep/atalk.h>
+#include <beep/if_arp.h>
+#include <beep/slab.h>
 #include <net/route.h>
 #include <asm/uaccess.h>
 

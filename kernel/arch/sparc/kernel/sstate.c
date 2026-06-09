@@ -3,10 +3,10 @@
  * Copyright (C) 2007, 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/notifier.h>
+#include <beep/reboot.h>
+#include <beep/init.h>
 
 #include <asm/hypervisor.h>
 #include <asm/spitfire.h>
@@ -34,17 +34,17 @@ static void do_set_sstate(unsigned long state, const char *msg)
 }
 
 static const char booting_msg[32] __attribute__((aligned(32))) =
-	"Linux booting";
+	"Beep booting";
 static const char running_msg[32] __attribute__((aligned(32))) =
-	"Linux running";
+	"Beep running";
 static const char halting_msg[32] __attribute__((aligned(32))) =
-	"Linux halting";
+	"Beep halting";
 static const char poweroff_msg[32] __attribute__((aligned(32))) =
-	"Linux powering off";
+	"Beep powering off";
 static const char rebooting_msg[32] __attribute__((aligned(32))) =
-	"Linux rebooting";
+	"Beep rebooting";
 static const char panicing_msg[32] __attribute__((aligned(32))) =
-	"Linux panicing";
+	"Beep panicing";
 
 static int sstate_reboot_call(struct notifier_block *np, unsigned long type, void *_unused)
 {

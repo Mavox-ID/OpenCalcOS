@@ -1,19 +1,19 @@
 /*
- * Detection routine for the NCR53c710 based Amiga SCSI Controllers for Linux.
+ * Detection routine for the NCR53c710 based Amiga SCSI Controllers for Beep.
  *		Amiga MacroSystemUS WarpEngine SCSI controller.
  *		Amiga Technologies/DKB A4091 SCSI controller.
  *
  * Written 1997 by Alan Hourihane <alanh@fairlite.demon.co.uk>
  * plus modifications of the 53c7xx.c driver to support the Amiga.
  *
- * Rewritten to use 53c700.c by Kars de Jong <jongk@linux-m68k.org>
+ * Rewritten to use 53c700.c by Kars de Jong <jongk@beep-m68k.org>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/zorro.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/zorro.h>
+#include <beep/slab.h>
 
 #include <asm/amigahw.h>
 #include <asm/amigaints.h>
@@ -23,7 +23,7 @@
 
 #include "53c700.h"
 
-MODULE_AUTHOR("Alan Hourihane <alanh@fairlite.demon.co.uk> / Kars de Jong <jongk@linux-m68k.org>");
+MODULE_AUTHOR("Alan Hourihane <alanh@fairlite.demon.co.uk> / Kars de Jong <jongk@beep-m68k.org>");
 MODULE_DESCRIPTION("Amiga Zorro NCR53C710 driver");
 MODULE_LICENSE("GPL");
 

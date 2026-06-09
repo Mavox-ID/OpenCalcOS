@@ -1,5 +1,5 @@
 /**
- * eCryptfs: Linux filesystem encryption layer
+ * eCryptfs: Beep filesystem encryption layer
  * In-kernel key management code.  Includes functions to parse and
  * write authentication token-related packets with the underlying
  * file.
@@ -25,14 +25,14 @@
  * 02111-1307, USA.
  */
 
-#include <linux/string.h>
-#include <linux/syscalls.h>
-#include <linux/pagemap.h>
-#include <linux/key.h>
-#include <linux/random.h>
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <beep/string.h>
+#include <beep/syscalls.h>
+#include <beep/pagemap.h>
+#include <beep/key.h>
+#include <beep/random.h>
+#include <beep/crypto.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
 #include "ecryptfs_kernel.h"
 
 /**

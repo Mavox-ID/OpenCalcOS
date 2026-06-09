@@ -24,22 +24,22 @@
  * This file may also be available under a different license from Cavium.
  * Contact Cavium Networks for more information
 *********************************************************************/
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/ratelimit.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/init.h>
+#include <beep/etherdevice.h>
+#include <beep/ip.h>
+#include <beep/ratelimit.h>
+#include <beep/string.h>
+#include <beep/interrupt.h>
 #include <net/dst.h>
 #ifdef CONFIG_XFRM
-#include <linux/xfrm.h>
+#include <beep/xfrm.h>
 #include <net/xfrm.h>
 #endif /* CONFIG_XFRM */
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include <asm/octeon/octeon.h>
 
@@ -289,7 +289,7 @@ int cvm_oct_xmit(struct sk_buff *skb, struct net_device *dev)
 
 	/*
 	 * See if we can put this skb in the FPA pool. Any strange
-	 * behavior from the Linux networking stack will most likely
+	 * behavior from the Beep networking stack will most likely
 	 * be caused by a bug in the following code. If some field is
 	 * in use by the network stack and gets carried over when a
 	 * buffer is reused, bad things may happen.  If in doubt and
@@ -609,7 +609,7 @@ int cvm_oct_xmit_pow(struct sk_buff *skb, struct net_device *dev)
 					  || (ip_hdr(skb)->frag_off ==
 					      1 << 14));
 #if 0
-		/* Assume Linux is sending a good packet */
+		/* Assume Beep is sending a good packet */
 		work->word2.s.IP_exc = 0;
 #endif
 		work->word2.s.is_bcast = (skb->pkt_type == PACKET_BROADCAST);

@@ -1,6 +1,6 @@
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -21,28 +21,28 @@
 
 #undef DEBUG
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/stddef.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/bootmem.h>
-#include <linux/highmem.h>
-#include <linux/idr.h>
-#include <linux/nodemask.h>
-#include <linux/module.h>
-#include <linux/poison.h>
-#include <linux/memblock.h>
-#include <linux/hugetlb.h>
-#include <linux/slab.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/stddef.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/bootmem.h>
+#include <beep/highmem.h>
+#include <beep/idr.h>
+#include <beep/nodemask.h>
+#include <beep/module.h>
+#include <beep/poison.h>
+#include <beep/memblock.h>
+#include <beep/hugetlb.h>
+#include <beep/slab.h>
 
 #include <asm/pgalloc.h>
 #include <asm/page.h>

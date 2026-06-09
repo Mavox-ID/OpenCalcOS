@@ -1,5 +1,5 @@
 /*
- * Linux LED driver for RTL8187
+ * Beep LED driver for RTL8187
  *
  * Copyright 2009 Larry Finger <Larry.Finger@lwfinger.net>
  *
@@ -16,8 +16,8 @@
 #ifdef CONFIG_RTL8187_LEDS
 
 #include <net/mac80211.h>
-#include <linux/usb.h>
-#include <linux/eeprom_93cx6.h>
+#include <beep/usb.h>
+#include <beep/eeprom_93cx6.h>
 
 #include "rtl8187.h"
 #include "leds.h"

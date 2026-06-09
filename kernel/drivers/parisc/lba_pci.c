@@ -30,14 +30,14 @@
 ** FIXME: Add support for PCI card hot-plug (OLARD).
 */
 
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>		/* for __init */
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/init.h>		/* for __init */
+#include <beep/pci.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
 
 #include <asm/byteorder.h>
 #include <asm/pdc.h>

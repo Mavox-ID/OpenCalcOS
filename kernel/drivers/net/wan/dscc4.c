@@ -1,5 +1,5 @@
 /*
- * drivers/net/wan/dscc4/dscc4.c: a DSCC4 HDLC driver for Linux
+ * drivers/net/wan/dscc4/dscc4.c: a DSCC4 HDLC driver for Beep
  *
  * This software may be used and distributed according to the terms of the
  * GNU General Public License.
@@ -82,16 +82,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/list.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
 
 #include <asm/cache.h>
 #include <asm/byteorder.h>
@@ -99,19 +99,19 @@
 #include <asm/io.h>
 #include <asm/irq.h>
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/string.h>
 
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/hdlc.h>
-#include <linux/mutex.h>
+#include <beep/if_arp.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/delay.h>
+#include <beep/hdlc.h>
+#include <beep/mutex.h>
 
 /* Version */
-static const char version[] = "$Id: dscc4.c,v 1.173 2003/09/20 23:55:34 romieu Exp $ for Linux\n";
+static const char version[] = "$Id: dscc4.c,v 1.173 2003/09/20 23:55:34 romieu Exp $ for Beep\n";
 static int debug;
 static int quartz;
 
@@ -176,7 +176,7 @@ struct RxFD {
 #define TO_SIZE(state)		(((state) >> 16) & 0x1fff)
 
 /*
- * Given the operating range of Linux HDLC, the 2 defines below could be
+ * Given the operating range of Beep HDLC, the 2 defines below could be
  * made simpler. However they are a fine reminder for the limitations of
  * the driver: it's better to stay < TxSizeMax and < RxSizeMax.
  */

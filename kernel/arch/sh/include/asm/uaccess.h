@@ -1,8 +1,8 @@
 #ifndef __ASM_SH_UACCESS_H
 #define __ASM_SH_UACCESS_H
 
-#include <linux/errno.h>
-#include <linux/sched.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
 #include <asm/segment.h>
 
 #define VERIFY_READ    0

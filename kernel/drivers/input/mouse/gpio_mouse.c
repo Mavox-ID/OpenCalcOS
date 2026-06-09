@@ -8,12 +8,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/input-polldev.h>
-#include <linux/gpio.h>
-#include <linux/gpio_mouse.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/input-polldev.h>
+#include <beep/gpio.h>
+#include <beep/gpio_mouse.h>
 
 
 /*

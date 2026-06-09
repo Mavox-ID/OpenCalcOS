@@ -38,13 +38,13 @@
 #define MAP_TYPE	0x00f		/* Mask for type of mapping */
 #define MAP_FIXED	0x010		/* Interpret addr exactly */
 
-/* not used by linux, but here to make sure we don't clash with ABI defines */
+/* not used by beep, but here to make sure we don't clash with ABI defines */
 #define MAP_RENAME	0x020		/* Assign page to file */
 #define MAP_AUTOGROW	0x040		/* File may grow by writing */
 #define MAP_LOCAL	0x080		/* Copy on fork/sproc */
 #define MAP_AUTORSRV	0x100		/* Logical swap reserved on demand */
 
-/* These are linux-specific */
+/* These are beep-specific */
 #define MAP_NORESERVE	0x0400		/* don't check for reservations */
 #define MAP_ANONYMOUS	0x0800		/* don't use a file */
 #define MAP_GROWSDOWN	0x1000		/* stack-like segment */

@@ -1,5 +1,5 @@
 #
-# linux/arch/unicore32/lib/Makefile
+# beep/arch/unicore32/lib/Makefile
 #
 # Copyright (C) 2001-2010 GUAN Xue-tao
 #

@@ -4,7 +4,7 @@
  * Copyright (C) 1997 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/asi.h>
 
 	.text

@@ -1,5 +1,5 @@
 /*
- *  linux/fs/9p/vfs_super.c
+ *  beep/fs/9p/vfs_super.c
  *
  * This file contians superblock ops for 9P2000. It is intended that
  * you mount this file system on directories.
@@ -24,22 +24,22 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/inet.h>
-#include <linux/pagemap.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/idr.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/statfs.h>
-#include <linux/magic.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/stat.h>
+#include <beep/string.h>
+#include <beep/inet.h>
+#include <beep/pagemap.h>
+#include <beep/seq_file.h>
+#include <beep/mount.h>
+#include <beep/idr.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/statfs.h>
+#include <beep/magic.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 

@@ -1,11 +1,11 @@
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/elf.h>
-#include <linux/mm.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/elf.h>
+#include <beep/mm.h>
 
-#include <linux/io.h>
-#include <linux/sched.h>
+#include <beep/io.h>
+#include <beep/sched.h>
 #include <asm/processor.h>
 #include <asm/apic.h>
 #include <asm/cpu.h>
@@ -55,7 +55,7 @@ static inline int wrmsrl_amd_safe(unsigned msr, unsigned long long val)
 #ifdef CONFIG_X86_32
 /*
  *	B step AMD K6 before B 9730xxxx have hardware bugs that can cause
- *	misexecution of code under Linux. Owners of such processors should
+ *	misexecution of code under Beep. Owners of such processors should
  *	contact AMD for precise details and a CPU swap.
  *
  *	See	http://www.multimania.com/poulot/k6bug.html
@@ -74,7 +74,7 @@ static void __cpuinit init_amd_k5(struct cpuinfo_x86 *c)
 {
 /*
  * General Systems BIOSen alias the cpu frequency registers
- * of the Elan at 0x000df000. Unfortuantly, one of the Linux
+ * of the Elan at 0x000df000. Unfortuantly, one of the Beep
  * drivers subsequently pokes it, and changes the CPU speed.
  * Workaround : Remove the unneeded alias.
  */

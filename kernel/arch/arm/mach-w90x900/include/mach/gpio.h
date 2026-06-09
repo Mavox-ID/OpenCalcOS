@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-w90p910/include/mach/gpio.h
+ * beep/arch/arm/mach-w90p910/include/mach/gpio.h
  *
  * Generic w90p910 GPIO handling
  *

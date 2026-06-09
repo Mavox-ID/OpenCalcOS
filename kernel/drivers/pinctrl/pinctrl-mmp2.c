@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/pinctrl/pinmux-mmp2.c
+ *  beep/drivers/pinctrl/pinmux-mmp2.c
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License version 2 as
@@ -11,10 +11,10 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
 #include "pinctrl-pxa3xx.h"
 
 #define MMP2_DS_MASK		0x1800

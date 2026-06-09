@@ -26,11 +26,11 @@
 
 #include "udfdecl.h"
 
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/buffer_head.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/buffer_head.h>
 
 #include "udf_i.h"
 #include "udf_sb.h"

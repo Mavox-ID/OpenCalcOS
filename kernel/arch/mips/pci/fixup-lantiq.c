@@ -6,8 +6,8 @@
  *  Copyright (C) 2012 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
+#include <beep/of_irq.h>
+#include <beep/of_pci.h>
 
 int (*ltq_pci_plat_arch_init)(struct pci_dev *dev) = NULL;
 int (*ltq_pci_plat_dev_init)(struct pci_dev *dev) = NULL;

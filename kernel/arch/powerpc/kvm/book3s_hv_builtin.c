@@ -6,13 +6,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/preempt.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/bootmem.h>
-#include <linux/init.h>
+#include <beep/kvm_host.h>
+#include <beep/preempt.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/bootmem.h>
+#include <beep/init.h>
 
 #include <asm/cputable.h>
 #include <asm/kvm_ppc.h>

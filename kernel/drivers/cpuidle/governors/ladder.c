@@ -3,7 +3,7 @@
  *
  *  Copyright (C) 2001, 2002 Andy Grover <andrew.grover@intel.com>
  *  Copyright (C) 2001, 2002 Paul Diefenbaugh <paul.s.diefenbaugh@intel.com>
- *  Copyright (C) 2004, 2005 Dominik Brodowski <linux@brodo.de>
+ *  Copyright (C) 2004, 2005 Dominik Brodowski <beep@brodo.de>
  *
  * (C) 2006-2007 Venkatesh Pallipadi <venkatesh.pallipadi@intel.com>
  *               Shaohua Li <shaohua.li@intel.com>
@@ -12,11 +12,11 @@
  * This code is licenced under the GPL.
  */
 
-#include <linux/kernel.h>
-#include <linux/cpuidle.h>
-#include <linux/pm_qos.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/cpuidle.h>
+#include <beep/pm_qos.h>
+#include <beep/module.h>
+#include <beep/jiffies.h>
 
 #include <asm/io.h>
 #include <asm/uaccess.h>

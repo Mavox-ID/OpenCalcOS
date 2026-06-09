@@ -4,7 +4,7 @@
  *
  * Copyright 2004-2010 Analog Devices Inc.
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucbeep.org/
  *
  * Licensed under the GPL-2 or later.
  */
@@ -34,24 +34,24 @@
 
 /* It may seem odd that there is no SWCNT code in here (which would be exposed
  * via the periodic interrupt event, or PIE).  Since the Blackfin RTC peripheral
- * runs in units of seconds (N/HZ) but the Linux framework runs in units of HZ
+ * runs in units of seconds (N/HZ) but the Beep framework runs in units of HZ
  * (2^N HZ), there is no point in keeping code that only provides 1 HZ PIEs.
  * The same exact behavior can be accomplished by using the update interrupt
  * event (UIE).  Maybe down the line the RTC peripheral will suck less in which
  * case we can re-introduce PIE support.
  */
 
-#include <linux/bcd.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <beep/bcd.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/rtc.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
 
 #include <asm/blackfin.h>
 

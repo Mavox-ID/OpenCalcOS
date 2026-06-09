@@ -4,8 +4,8 @@
  * This file is released under the GPL.
  */
 
-#include <linux/sysfs.h>
-#include <linux/dm-ioctl.h>
+#include <beep/sysfs.h>
+#include <beep/dm-ioctl.h>
 #include "dm.h"
 
 struct dm_sysfs_attr {

@@ -19,16 +19,16 @@
  ***************************************************************************
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/pci.h>
-#include <linux/if_vlan.h>
-#include <linux/dma-mapping.h>
-#include <linux/crc32.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/phy.h>
+#include <beep/pci.h>
+#include <beep/if_vlan.h>
+#include <beep/dma-mapping.h>
+#include <beep/crc32.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <asm/unaligned.h>
 #include "smsc9420.h"
 

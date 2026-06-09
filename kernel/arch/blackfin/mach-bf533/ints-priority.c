@@ -6,8 +6,8 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/irq.h>
+#include <beep/module.h>
+#include <beep/irq.h>
 #include <asm/blackfin.h>
 
 void __init program_IAR(void)

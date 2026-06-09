@@ -20,31 +20,31 @@
  * Timberdale FPGA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
-#include <linux/mfd/core.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/msi.h>
+#include <beep/mfd/core.h>
+#include <beep/slab.h>
 
-#include <linux/timb_gpio.h>
+#include <beep/timb_gpio.h>
 
-#include <linux/i2c.h>
-#include <linux/i2c-ocores.h>
-#include <linux/i2c-xiic.h>
-#include <linux/i2c/tsc2007.h>
+#include <beep/i2c.h>
+#include <beep/i2c-ocores.h>
+#include <beep/i2c-xiic.h>
+#include <beep/i2c/tsc2007.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/xilinx_spi.h>
-#include <linux/spi/max7301.h>
-#include <linux/spi/mc33880.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/xilinx_spi.h>
+#include <beep/spi/max7301.h>
+#include <beep/spi/mc33880.h>
 
 #include <media/timb_radio.h>
 #include <media/timb_video.h>
 
-#include <linux/timb_dma.h>
+#include <beep/timb_dma.h>
 
-#include <linux/ks8842.h>
+#include <beep/ks8842.h>
 
 #include "timberdale.h"
 

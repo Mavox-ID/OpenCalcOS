@@ -30,8 +30,8 @@
 
 #ifdef SUPPORT_FILE_OP
 
-#include <linux/fs.h>
-#include <linux/types.h>
+#include <beep/fs.h>
+#include <beep/types.h>
 
 struct sd_direct_cmnd {
 	u8 cmnd[12];

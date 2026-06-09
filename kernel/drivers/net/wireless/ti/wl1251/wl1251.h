@@ -23,9 +23,9 @@
 #ifndef __WL1251_H__
 #define __WL1251_H__
 
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/bitops.h>
+#include <beep/mutex.h>
+#include <beep/list.h>
+#include <beep/bitops.h>
 #include <net/mac80211.h>
 
 #define DRIVER_NAME "wl1251"

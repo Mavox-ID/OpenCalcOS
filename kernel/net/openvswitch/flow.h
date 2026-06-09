@@ -19,17 +19,17 @@
 #ifndef FLOW_H
 #define FLOW_H 1
 
-#include <linux/kernel.h>
-#include <linux/netlink.h>
-#include <linux/openvswitch.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/if_ether.h>
-#include <linux/in6.h>
-#include <linux/jiffies.h>
-#include <linux/time.h>
-#include <linux/flex_array.h>
+#include <beep/kernel.h>
+#include <beep/netlink.h>
+#include <beep/openvswitch.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/rcupdate.h>
+#include <beep/if_ether.h>
+#include <beep/in6.h>
+#include <beep/jiffies.h>
+#include <beep/time.h>
+#include <beep/flex_array.h>
 #include <net/inet_ecn.h>
 
 struct sk_buff;

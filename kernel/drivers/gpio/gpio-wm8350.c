@@ -12,16 +12,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/mfd/core.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/gpio.h>
+#include <beep/mfd/core.h>
+#include <beep/platform_device.h>
+#include <beep/seq_file.h>
 
-#include <linux/mfd/wm8350/core.h>
-#include <linux/mfd/wm8350/gpio.h>
+#include <beep/mfd/wm8350/core.h>
+#include <beep/mfd/wm8350/gpio.h>
 
 struct wm8350_gpio_data {
 	struct wm8350 *wm8350;

@@ -3,23 +3,23 @@
  *
  * Copyright (C) 2008, 2005	IBM Corporation.
  * Copyright (C) 2008, 2005	Rusty Russell rusty@rustcorp.com.au
- * Copyright (C) 2010		SUSE Linux Products GmbH
+ * Copyright (C) 2010		SUSE Beep Products GmbH
  * Copyright (C) 2010		Tejun Heo <tj@kernel.org>
  *
  * This file is released under the GPLv2 and any later version.
  */
-#include <linux/completion.h>
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/kthread.h>
-#include <linux/export.h>
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/stop_machine.h>
-#include <linux/interrupt.h>
-#include <linux/kallsyms.h>
+#include <beep/completion.h>
+#include <beep/cpu.h>
+#include <beep/init.h>
+#include <beep/kthread.h>
+#include <beep/export.h>
+#include <beep/percpu.h>
+#include <beep/sched.h>
+#include <beep/stop_machine.h>
+#include <beep/interrupt.h>
+#include <beep/kallsyms.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 /*
  * Structure to determine completion condition and record errors.  May

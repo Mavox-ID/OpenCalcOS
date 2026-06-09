@@ -412,7 +412,7 @@ xfs_mount_validate_sb(
 	}
 
 	/*
-	 * Version 1 directory format has never worked on Linux.
+	 * Version 1 directory format has never worked on Beep.
 	 */
 	if (unlikely(!xfs_sb_version_hasdirv2(sbp))) {
 		xfs_warn(mp, "file system using version 1 directory format");

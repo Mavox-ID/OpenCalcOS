@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/vfp/vfphw.S
+ *  beep/arch/arm/vfp/vfphw.S
  *
  *  Copyright (C) 2004 ARM Limited.
  *  Written by Deep Blue Solutions Limited.
@@ -16,7 +16,7 @@
  */
 #include <asm/thread_info.h>
 #include <asm/vfpmacros.h>
-#include <linux/kern_levels.h>
+#include <beep/kern_levels.h>
 #include "../kernel/entry-header.S"
 
 	.macro	DBGSTR, str

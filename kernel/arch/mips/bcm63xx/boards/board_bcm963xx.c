@@ -7,11 +7,11 @@
  * Copyright (C) 2008 Florian Fainelli <florian@openwrt.org>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/ssb/ssb.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/platform_device.h>
+#include <beep/ssb/ssb.h>
 #include <asm/addrspace.h>
 #include <bcm63xx_board.h>
 #include <bcm63xx_cpu.h>

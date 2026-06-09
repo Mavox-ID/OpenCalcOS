@@ -6,22 +6,22 @@
  *  BIG FAT DISCLAIMER: Work in progress code. Possibly *dangerous*
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/timex.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/timex.h>
+#include <beep/io.h>
+#include <beep/delay.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/msr.h>
 #include <asm/tsc.h>
 
 #if defined CONFIG_ACPI_PROCESSOR || defined CONFIG_ACPI_PROCESSOR_MODULE
-#include <linux/acpi.h>
+#include <beep/acpi.h>
 #include <acpi/processor.h>
 #endif
 

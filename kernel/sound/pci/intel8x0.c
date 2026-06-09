@@ -27,12 +27,12 @@
  */      
 
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/ac97_codec.h>
@@ -43,7 +43,7 @@
 #include <asm/cacheflush.h>
 
 #ifdef CONFIG_KVM_GUEST
-#include <linux/kvm_para.h>
+#include <beep/kvm_para.h>
 #else
 #define kvm_para_available() (0)
 #endif

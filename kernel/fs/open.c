@@ -1,35 +1,35 @@
 /*
- *  linux/fs/open.c
+ *  beep/fs/open.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/fsnotify.h>
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/namei.h>
-#include <linux/backing-dev.h>
-#include <linux/capability.h>
-#include <linux/securebits.h>
-#include <linux/security.h>
-#include <linux/mount.h>
-#include <linux/fcntl.h>
-#include <linux/slab.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/file.h>
+#include <beep/fdtable.h>
+#include <beep/fsnotify.h>
+#include <beep/module.h>
+#include <beep/tty.h>
+#include <beep/namei.h>
+#include <beep/backing-dev.h>
+#include <beep/capability.h>
+#include <beep/securebits.h>
+#include <beep/security.h>
+#include <beep/mount.h>
+#include <beep/fcntl.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
-#include <linux/fs.h>
-#include <linux/personality.h>
-#include <linux/pagemap.h>
-#include <linux/syscalls.h>
-#include <linux/rcupdate.h>
-#include <linux/audit.h>
-#include <linux/falloc.h>
-#include <linux/fs_struct.h>
-#include <linux/ima.h>
-#include <linux/dnotify.h>
+#include <beep/fs.h>
+#include <beep/personality.h>
+#include <beep/pagemap.h>
+#include <beep/syscalls.h>
+#include <beep/rcupdate.h>
+#include <beep/audit.h>
+#include <beep/falloc.h>
+#include <beep/fs_struct.h>
+#include <beep/ima.h>
+#include <beep/dnotify.h>
 
 #include "internal.h"
 

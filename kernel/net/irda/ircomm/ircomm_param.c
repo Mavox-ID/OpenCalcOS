@@ -28,9 +28,9 @@
  *
  ********************************************************************/
 
-#include <linux/gfp.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
+#include <beep/gfp.h>
+#include <beep/workqueue.h>
+#include <beep/interrupt.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/parameters.h>

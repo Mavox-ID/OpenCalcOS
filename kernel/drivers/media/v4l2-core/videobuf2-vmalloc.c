@@ -10,12 +10,12 @@
  * the Free Software Foundation.
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
 
 #include <media/videobuf2-core.h>
 #include <media/videobuf2-vmalloc.h>

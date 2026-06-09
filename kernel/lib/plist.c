@@ -16,16 +16,16 @@
  *
  * Licensed under the FSF's GNU Public License v2 or later.
  *
- * Based on simple lists (include/linux/list.h).
+ * Based on simple lists (include/beep/list.h).
  *
  * This file contains the add / del functions which are considered to
- * be too large to inline. See include/linux/plist.h for further
+ * be too large to inline. See include/beep/plist.h for further
  * information.
  */
 
-#include <linux/bug.h>
-#include <linux/plist.h>
-#include <linux/spinlock.h>
+#include <beep/bug.h>
+#include <beep/plist.h>
+#include <beep/spinlock.h>
 
 #ifdef CONFIG_DEBUG_PI_LIST
 
@@ -135,9 +135,9 @@ void plist_del(struct plist_node *node, struct plist_head *head)
 }
 
 #ifdef CONFIG_DEBUG_PI_LIST
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
 static struct plist_node __initdata test_node[241];
 

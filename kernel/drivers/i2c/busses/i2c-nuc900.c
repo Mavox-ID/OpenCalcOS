@@ -1,5 +1,5 @@
 /*
- * linux/drivers/i2c/busses/i2c-nuc900.c
+ * beep/drivers/i2c/busses/i2c-nuc900.c
  *
  * Copyright (c) 2010 Nuvoton technology corporation.
  *
@@ -12,24 +12,24 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/cpufreq.h>
+#include <beep/slab.h>
+#include <beep/io.h>
 
 #include <mach/mfp.h>
-#include <linux/platform_data/i2c-nuc900.h>
+#include <beep/platform_data/i2c-nuc900.h>
 
 /* nuc900 i2c registers offset */
 

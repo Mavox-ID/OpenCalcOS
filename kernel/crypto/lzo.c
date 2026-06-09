@@ -16,11 +16,11 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/vmalloc.h>
-#include <linux/lzo.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/crypto.h>
+#include <beep/vmalloc.h>
+#include <beep/lzo.h>
 
 struct lzo_ctx {
 	void *lzo_comp_mem;

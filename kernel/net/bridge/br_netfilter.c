@@ -1,6 +1,6 @@
 /*
  *	Handle firewalling
- *	Linux ethernet bridge
+ *	Beep ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -14,23 +14,23 @@
  *	Lennert dedicates this file to Kerstin Wurdinger.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/ip.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/if_pppox.h>
-#include <linux/ppp_defs.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_arp.h>
-#include <linux/in_route.h>
-#include <linux/inetdevice.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/ip.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
+#include <beep/if_ether.h>
+#include <beep/if_vlan.h>
+#include <beep/if_pppox.h>
+#include <beep/ppp_defs.h>
+#include <beep/netfilter_bridge.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/netfilter_ipv6.h>
+#include <beep/netfilter_arp.h>
+#include <beep/in_route.h>
+#include <beep/inetdevice.h>
 
 #include <net/ip.h>
 #include <net/ipv6.h>
@@ -39,7 +39,7 @@
 #include <asm/uaccess.h>
 #include "br_private.h"
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <beep/sysctl.h>
 #endif
 
 #define skb_origaddr(skb)	 (((struct bridge_skb_cb *) \

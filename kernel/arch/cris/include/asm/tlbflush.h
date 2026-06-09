@@ -1,7 +1,7 @@
 #ifndef _CRIS_TLBFLUSH_H
 #define _CRIS_TLBFLUSH_H
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 #include <asm/processor.h>
 #include <asm/pgtable.h>
 #include <asm/pgalloc.h>

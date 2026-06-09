@@ -11,11 +11,11 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/gpio.h>
-#include <linux/platform_data/mmc-mvsdio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/mv643xx_eth.h>
+#include <beep/gpio.h>
+#include <beep/platform_data/mmc-mvsdio.h>
 #include "common.h"
 
 static struct mv643xx_eth_platform_data dreamplug_ge00_data = {

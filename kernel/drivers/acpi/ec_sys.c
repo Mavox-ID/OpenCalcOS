@@ -8,10 +8,10 @@
  * This work is licensed under the terms of the GNU GPL, version 2.
  */
 
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/acpi.h>
+#include <beep/debugfs.h>
+#include <beep/module.h>
 #include "internal.h"
 
 MODULE_AUTHOR("Thomas Renninger <trenn@suse.de>");

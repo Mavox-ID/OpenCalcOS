@@ -20,9 +20,9 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
 #include <sound/core.h>
 #include <sound/minors.h>
 #include <sound/initval.h>

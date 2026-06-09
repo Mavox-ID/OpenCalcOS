@@ -16,15 +16,15 @@
 
 #include <crypto/internal/skcipher.h>
 #include <crypto/scatterwalk.h>
-#include <linux/errno.h>
-#include <linux/hardirq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/cryptouser.h>
+#include <beep/errno.h>
+#include <beep/hardirq.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/scatterlist.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/cryptouser.h>
 #include <net/netlink.h>
 
 #include "internal.h"

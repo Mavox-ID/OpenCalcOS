@@ -1,7 +1,7 @@
 #ifndef __EXTENTIO__
 #define __EXTENTIO__
 
-#include <linux/rbtree.h>
+#include <beep/rbtree.h>
 
 /* bits for the extent state */
 #define EXTENT_DIRTY 1

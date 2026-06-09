@@ -3,7 +3,7 @@
  *
  *   Lowlevel functions for WM8776 codec
  *
- *	Copyright (c) 2012 Ondrej Zary <linux@rainbow-software.org>
+ *	Copyright (c) 2012 Ondrej Zary <beep@rainbow-software.org>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/tlv.h>

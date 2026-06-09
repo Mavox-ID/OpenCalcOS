@@ -5,7 +5,7 @@
  * Author(s): Michael Holzheu <holzheu@de.ibm.com>
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/diag.h>
 
 /*

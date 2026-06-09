@@ -1,5 +1,5 @@
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for Beep
  *
  * This module enables machines with Intel VT-x extensions to run virtual
  * machines without emulation or binary translation.
@@ -23,18 +23,18 @@
 #include "x86.h"
 #include "kvm_cache_regs.h"
 
-#include <linux/kvm_host.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/swap.h>
-#include <linux/hugetlb.h>
-#include <linux/compiler.h>
-#include <linux/srcu.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <beep/kvm_host.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/module.h>
+#include <beep/swap.h>
+#include <beep/hugetlb.h>
+#include <beep/compiler.h>
+#include <beep/srcu.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
 
 #include <asm/page.h>
 #include <asm/cmpxchg.h>
@@ -3939,7 +3939,7 @@ static bool detect_write_misaligned(struct kvm_mmu_page *sp, gpa_t gpa,
 
 	/*
 	 * Sometimes, the OS only writes the last one bytes to update status
-	 * bits, for example, in linux, andb instruction is used in clear_bit().
+	 * bits, for example, in beep, andb instruction is used in clear_bit().
 	 */
 	if (!(offset & (pte_size - 1)) && bytes == 1)
 		return false;

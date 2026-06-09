@@ -17,8 +17,8 @@
  */
 #ifndef _ADMA_H
 #define _ADMA_H
-#include <linux/types.h>
-#include <linux/io.h>
+#include <beep/types.h>
+#include <beep/io.h>
 #include <mach/hardware.h>
 #include <asm/hardware/iop_adma.h>
 

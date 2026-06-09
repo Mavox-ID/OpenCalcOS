@@ -646,7 +646,7 @@ int cmd_diff(int argc, const char **argv, const char *prefix __maybe_unused)
 			input_new = argv[1];
 		} else
 			input_new = argv[0];
-	} else if (symbol_conf.default_guest_vmlinux_name ||
+	} else if (symbol_conf.default_guest_vmbeep_name ||
 		   symbol_conf.default_guest_kallsyms) {
 		input_old = "perf.data.host";
 		input_new = "perf.data.guest";

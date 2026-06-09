@@ -21,10 +21,10 @@
  *   along with this library; if not, write to the Free Software
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
 #include "cifsproto.h"

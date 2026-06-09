@@ -1,8 +1,8 @@
-/* linux/arch/arm/mach-s3c2410/bast-ide.c
+/* beep/arch/arm/mach-s3c2410/bast-ide.c
  *
  * Copyright 2007 Simtec Electronics
  *	http://www.simtec.co.uk/products/EB2410ITX/
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -10,13 +10,13 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
 
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
+#include <beep/platform_device.h>
+#include <beep/ata_platform.h>
 
 #include <asm/mach-types.h>
 

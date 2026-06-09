@@ -1,4 +1,4 @@
-/* DVB USB compliant linux driver for Nebula Electronics uDigiTV DVB-T USB2.0
+/* DVB USB compliant beep driver for Nebula Electronics uDigiTV DVB-T USB2.0
  * receiver
  *
  * Copyright (C) 2005 Patrick Boettcher (patrick.boettcher@desy.de)

@@ -25,9 +25,9 @@
  *
  */
 
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include <drm/drmP.h>
 #include <drm/drm_crtc.h>
 #include <drm/drm_crtc_helper.h>

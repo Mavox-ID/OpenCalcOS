@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2009. SUSE Linux Products GmbH. All rights reserved.
+ * Copyright (C) 2009. SUSE Beep Products GmbH. All rights reserved.
  *
  * Authors:
  *    Alexander Graf <agraf@suse.de>
@@ -19,10 +19,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/kvm_host.h>
+#include <beep/export.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 
 #include <asm/reg.h>
 #include <asm/cputable.h>
@@ -34,10 +34,10 @@
 #include <asm/kvm_book3s.h>
 #include <asm/mmu_context.h>
 #include <asm/switch_to.h>
-#include <linux/gfp.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
+#include <beep/gfp.h>
+#include <beep/sched.h>
+#include <beep/vmalloc.h>
+#include <beep/highmem.h>
 
 #include "trace.h"
 
@@ -277,8 +277,8 @@ void kvmppc_set_pvr(struct kvm_vcpu *vcpu, u32 pvr)
 	}
 }
 
-/* Book3s_32 CPUs always have 32 bytes cache line size, which Linux assumes. To
- * make Book3s_32 Linux work on Book3s_64, we have to make sure we trap dcbz to
+/* Book3s_32 CPUs always have 32 bytes cache line size, which Beep assumes. To
+ * make Book3s_32 Beep work on Book3s_64, we have to make sure we trap dcbz to
  * emulate 32 bytes dcbz length.
  *
  * The Book3s_64 inventors also realized this case and implemented a special bit

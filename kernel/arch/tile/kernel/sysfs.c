@@ -14,11 +14,11 @@
  * /sys entry support.
  */
 
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/stat.h>
+#include <beep/device.h>
+#include <beep/cpu.h>
+#include <beep/slab.h>
+#include <beep/smp.h>
+#include <beep/stat.h>
 #include <hv/hypervisor.h>
 
 /* Return a string queried from the hypervisor, truncated to page size. */

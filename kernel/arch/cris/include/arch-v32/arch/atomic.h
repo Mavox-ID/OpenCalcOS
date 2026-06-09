@@ -1,7 +1,7 @@
 #ifndef __ASM_CRIS_ARCH_ATOMIC__
 #define __ASM_CRIS_ARCH_ATOMIC__
 
-#include <linux/spinlock_types.h>
+#include <beep/spinlock_types.h>
 
 extern void cris_spin_unlock(void *l, int val);
 extern void cris_spin_lock(void *l);

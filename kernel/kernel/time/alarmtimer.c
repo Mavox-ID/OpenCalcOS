@@ -15,16 +15,16 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/time.h>
-#include <linux/hrtimer.h>
-#include <linux/timerqueue.h>
-#include <linux/rtc.h>
-#include <linux/alarmtimer.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/posix-timers.h>
-#include <linux/workqueue.h>
-#include <linux/freezer.h>
+#include <beep/time.h>
+#include <beep/hrtimer.h>
+#include <beep/timerqueue.h>
+#include <beep/rtc.h>
+#include <beep/alarmtimer.h>
+#include <beep/mutex.h>
+#include <beep/platform_device.h>
+#include <beep/posix-timers.h>
+#include <beep/workqueue.h>
+#include <beep/freezer.h>
 
 /**
  * struct alarm_base - Alarm timer bases

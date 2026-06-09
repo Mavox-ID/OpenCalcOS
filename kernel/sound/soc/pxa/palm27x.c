@@ -1,5 +1,5 @@
 /*
- * linux/sound/soc/pxa/palm27x.c
+ * beep/sound/soc/pxa/palm27x.c
  *
  * SoC Audio driver for Palm T|X, T5 and LifeDrive
  *
@@ -13,10 +13,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/device.h>
+#include <beep/gpio.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>
@@ -25,7 +25,7 @@
 
 #include <asm/mach-types.h>
 #include <mach/audio.h>
-#include <linux/platform_data/asoc-palm27x.h>
+#include <beep/platform_data/asoc-palm27x.h>
 
 #include "../codecs/wm9712.h"
 #include "pxa2xx-ac97.h"

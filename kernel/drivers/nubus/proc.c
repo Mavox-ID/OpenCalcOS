@@ -17,13 +17,13 @@
    icons) these files will provide "cooked" data.  Otherwise they will
    simply provide raw access (read-only of course) to the ROM.  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/nubus.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/nubus.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/module.h>
 
 #include <asm/uaccess.h>
 #include <asm/byteorder.h>

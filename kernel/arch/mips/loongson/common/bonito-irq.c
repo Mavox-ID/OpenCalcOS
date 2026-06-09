@@ -11,8 +11,8 @@
  *  Free Software Foundation;  either version 2 of the  License, or (at your
  *  option) any later version.
  */
-#include <linux/interrupt.h>
-#include <linux/compiler.h>
+#include <beep/interrupt.h>
+#include <beep/compiler.h>
 
 #include <loongson.h>
 

@@ -1,25 +1,25 @@
 /*
- * linux/fs/lockd/svcsubs.c
+ * beep/fs/lockd/svcsubs.c
  *
  * Various support routines for the NLM server.
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/time.h>
-#include <linux/in.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfsd/nfsfh.h>
-#include <linux/nfsd/export.h>
-#include <linux/lockd/lockd.h>
-#include <linux/lockd/share.h>
-#include <linux/module.h>
-#include <linux/mount.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/time.h>
+#include <beep/in.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/sunrpc/svc.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/nfsd/nfsfh.h>
+#include <beep/nfsd/export.h>
+#include <beep/lockd/lockd.h>
+#include <beep/lockd/share.h>
+#include <beep/module.h>
+#include <beep/mount.h>
 
 #define NLMDBG_FACILITY		NLMDBG_SVCSUBS
 

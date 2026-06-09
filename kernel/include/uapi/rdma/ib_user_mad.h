@@ -34,8 +34,8 @@
 #ifndef IB_USER_MAD_H
 #define IB_USER_MAD_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <beep/types.h>
+#include <beep/ioctl.h>
 
 /*
  * Increment this value if any changes that break userspace ABI

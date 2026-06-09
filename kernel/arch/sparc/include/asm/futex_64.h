@@ -1,8 +1,8 @@
 #ifndef _SPARC64_FUTEX_H
 #define _SPARC64_FUTEX_H
 
-#include <linux/futex.h>
-#include <linux/uaccess.h>
+#include <beep/futex.h>
+#include <beep/uaccess.h>
 #include <asm/errno.h>
 
 #define __futex_cas_op(insn, ret, oldval, uaddr, oparg)	\

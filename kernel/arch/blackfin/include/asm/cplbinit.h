@@ -11,7 +11,7 @@
 
 #include <asm/blackfin.h>
 #include <asm/cplb.h>
-#include <linux/threads.h>
+#include <beep/threads.h>
 
 #ifdef CONFIG_CPLB_SWITCH_TAB_L1
 # define PDT_ATTR __attribute__((l1_data))

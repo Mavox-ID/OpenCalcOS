@@ -1,4 +1,4 @@
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 /*
  * Multiply operation for 32 bit integers.

@@ -21,12 +21,12 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_ecache.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_connmark.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_connmark.h>
 
 MODULE_AUTHOR("Henrik Nordstrom <hno@marasystems.com>");
 MODULE_DESCRIPTION("Xtables: connection mark operations");

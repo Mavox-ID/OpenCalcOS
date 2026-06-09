@@ -23,9 +23,9 @@
  *  02111-1307  USA
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/vmalloc.h>
 
 #include <media/v4l2-device.h>
 

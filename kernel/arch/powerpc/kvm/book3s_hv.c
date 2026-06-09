@@ -1,6 +1,6 @@
 /*
  * Copyright 2011 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
- * Copyright (C) 2009. SUSE Linux Products GmbH. All rights reserved.
+ * Copyright (C) 2009. SUSE Beep Products GmbH. All rights reserved.
  *
  * Authors:
  *    Paul Mackerras <paulus@au1.ibm.com>
@@ -18,19 +18,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/preempt.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/anon_inodes.h>
-#include <linux/cpumask.h>
-#include <linux/spinlock.h>
-#include <linux/page-flags.h>
-#include <linux/srcu.h>
+#include <beep/kvm_host.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/preempt.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/export.h>
+#include <beep/fs.h>
+#include <beep/anon_inodes.h>
+#include <beep/cpumask.h>
+#include <beep/spinlock.h>
+#include <beep/page-flags.h>
+#include <beep/srcu.h>
 
 #include <asm/reg.h>
 #include <asm/cputable.h>
@@ -48,10 +48,10 @@
 #include <asm/hvcall.h>
 #include <asm/switch_to.h>
 #include <asm/smp.h>
-#include <linux/gfp.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/hugetlb.h>
+#include <beep/gfp.h>
+#include <beep/vmalloc.h>
+#include <beep/highmem.h>
+#include <beep/hugetlb.h>
 
 /* #define EXIT_DEBUG */
 /* #define EXIT_DEBUG_SIMPLE */
@@ -1506,9 +1506,9 @@ long kvm_vm_ioctl_allocate_rma(struct kvm *kvm, struct kvm_allocate_rma *ret)
 }
 
 static void kvmppc_add_seg_page_size(struct kvm_ppc_one_seg_page_size **sps,
-				     int linux_psize)
+				     int beep_psize)
 {
-	struct mmu_psize_def *def = &mmu_psize_defs[linux_psize];
+	struct mmu_psize_def *def = &mmu_psize_defs[beep_psize];
 
 	if (!def->shift)
 		return;

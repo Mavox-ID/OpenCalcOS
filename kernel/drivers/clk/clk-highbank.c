@@ -14,12 +14,12 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/clk-provider.h>
+#include <beep/io.h>
+#include <beep/of.h>
 
 extern void __iomem *sregs_base;
 

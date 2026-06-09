@@ -9,15 +9,15 @@
  * for more details.
  */
 
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/err.h>
-#include <linux/pm_clock.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/console.h>
+#include <beep/pm.h>
+#include <beep/suspend.h>
+#include <beep/err.h>
+#include <beep/pm_clock.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/console.h>
 #include <asm/io.h>
 #include <mach/common.h>
 #include <mach/r8a7779.h>

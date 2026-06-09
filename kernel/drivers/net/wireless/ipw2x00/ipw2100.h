@@ -19,32 +19,32 @@
   file called LICENSE.
 
   Contact Information:
-  Intel Linux Wireless <ilw@linux.intel.com>
+  Intel Beep Wireless <ilw@beep.intel.com>
   Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
 
 ******************************************************************************/
 #ifndef _IPW2100_H
 #define _IPW2100_H
 
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/skbuff.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/list.h>
+#include <beep/delay.h>
+#include <beep/skbuff.h>
 #include <asm/io.h>
-#include <linux/socket.h>
-#include <linux/if_arp.h>
-#include <linux/wireless.h>
+#include <beep/socket.h>
+#include <beep/if_arp.h>
+#include <beep/wireless.h>
 #include <net/iw_handler.h>	// new driver API
 
 #ifdef CONFIG_IPW2100_MONITOR
 #include <net/ieee80211_radiotap.h>
 #endif
 
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
+#include <beep/workqueue.h>
+#include <beep/mutex.h>
 
 #include "libipw.h"
 

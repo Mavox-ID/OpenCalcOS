@@ -1,5 +1,5 @@
 /*
- * linux/ipc/shm.c
+ * beep/ipc/shm.c
  * Copyright (C) 1992, 1993 Krishna Balasubramanian
  *	 Many improvements/fixes by Bruno Haible.
  * Replaced `struct shm_desc' by `struct vm_area_struct', July 1994.
@@ -21,24 +21,24 @@
  * Pavel Emelianov <xemul@openvz.org>
  */
 
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/shm.h>
-#include <linux/init.h>
-#include <linux/file.h>
-#include <linux/mman.h>
-#include <linux/shmem_fs.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/audit.h>
-#include <linux/capability.h>
-#include <linux/ptrace.h>
-#include <linux/seq_file.h>
-#include <linux/rwsem.h>
-#include <linux/nsproxy.h>
-#include <linux/mount.h>
-#include <linux/ipc_namespace.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/hugetlb.h>
+#include <beep/shm.h>
+#include <beep/init.h>
+#include <beep/file.h>
+#include <beep/mman.h>
+#include <beep/shmem_fs.h>
+#include <beep/security.h>
+#include <beep/syscalls.h>
+#include <beep/audit.h>
+#include <beep/capability.h>
+#include <beep/ptrace.h>
+#include <beep/seq_file.h>
+#include <beep/rwsem.h>
+#include <beep/nsproxy.h>
+#include <beep/mount.h>
+#include <beep/ipc_namespace.h>
 
 #include <asm/uaccess.h>
 

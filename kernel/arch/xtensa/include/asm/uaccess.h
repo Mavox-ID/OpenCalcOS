@@ -16,9 +16,9 @@
 #ifndef _XTENSA_UACCESS_H
 #define _XTENSA_UACCESS_H
 
-#include <linux/errno.h>
+#include <beep/errno.h>
 #ifndef __ASSEMBLY__
-#include <linux/prefetch.h>
+#include <beep/prefetch.h>
 #endif
 #include <asm/types.h>
 
@@ -159,7 +159,7 @@
 
 #else /* __ASSEMBLY__ not defined */
 
-#include <linux/sched.h>
+#include <beep/sched.h>
 
 /*
  * The fs value determines whether argument validity checking should

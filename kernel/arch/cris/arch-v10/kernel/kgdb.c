@@ -15,7 +15,7 @@
 *!                              struct assignment as it generates calls to
 *!                              memcpy in libc.
 *! Jun 17 1999  Hendrik Ruijter Added gdb 4.18 support. 'X', 'qC' and 'qL'.
-*! Jul 21 1999  Bjorn Wesen     eLinux port
+*! Jul 21 1999  Bjorn Wesen     eBeep port
 *!
 *!---------------------------------------------------------------------------
 *!
@@ -42,7 +42,7 @@
  * implementation.
  *
  * To start a debugging session, start that gdb with the debugging kernel
- * image (the one with the symbols, vmlinux.debug) named on the command line.
+ * image (the one with the symbols, vmbeep.debug) named on the command line.
  * This file will be used by gdb to get symbol and debugging infos about the
  * kernel. Next, select remote debug mode by
  *    target remote <device>
@@ -71,7 +71,7 @@
  *  - If breakpoint() is called. This is just after kgdb initialization, or if
  *    a breakpoint() call has been put somewhere into the kernel source.
  *    (Breakpoints can of course also be set the usual way in gdb.)
- *    In eLinux, we call breakpoint() in init/main.c after IRQ initialization.
+ *    In eBeep, we call breakpoint() in init/main.c after IRQ initialization.
  *
  *  - If there is a kernel exception, i.e. bad_super_trap() or die_if_kernel()
  *    are entered. All the CPU exceptions are mapped to (more or less..., see
@@ -166,12 +166,12 @@
  */
 
 
-#include <linux/string.h>
-#include <linux/signal.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/linkage.h>
-#include <linux/reboot.h>
+#include <beep/string.h>
+#include <beep/signal.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/linkage.h>
+#include <beep/reboot.h>
 
 #include <asm/setup.h>
 #include <asm/ptrace.h>

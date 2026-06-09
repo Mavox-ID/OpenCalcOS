@@ -26,15 +26,15 @@
 
 #ifdef CONFIG_DEBUG_FS
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/kref.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/idr.h>
+#include <beep/kref.h>
+#include <beep/seq_file.h>
+#include <beep/debugfs.h>
 
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 
 #include "tcp.h"
 #include "nodemanager.h"

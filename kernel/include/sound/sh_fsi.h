@@ -15,7 +15,7 @@
 #define FSI_PORT_A	0
 #define FSI_PORT_B	1
 
-#include <linux/clk.h>
+#include <beep/clk.h>
 #include <sound/soc.h>
 
 /*

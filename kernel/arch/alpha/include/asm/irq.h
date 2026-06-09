@@ -2,12 +2,12 @@
 #define _ALPHA_IRQ_H
 
 /*
- *	linux/include/alpha/irq.h
+ *	beep/include/alpha/irq.h
  *
  *	(C) 1994 Linus Torvalds
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #if   defined(CONFIG_ALPHA_GENERIC)
 

@@ -10,7 +10,7 @@
 #ifndef _ASM_IA64_MACHVEC_H
 #define _ASM_IA64_MACHVEC_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* forward declarations: */
 struct device;

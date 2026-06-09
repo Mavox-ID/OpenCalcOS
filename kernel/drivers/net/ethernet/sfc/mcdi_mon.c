@@ -7,10 +7,10 @@
  * by the Free Software Foundation, incorporated herein by reference.
  */
 
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/hwmon.h>
-#include <linux/stat.h>
+#include <beep/bitops.h>
+#include <beep/slab.h>
+#include <beep/hwmon.h>
+#include <beep/stat.h>
 
 #include "net_driver.h"
 #include "mcdi.h"

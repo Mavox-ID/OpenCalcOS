@@ -5,10 +5,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/clocksource.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/clocksource.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 
 struct clocksource_mmio {
 	void __iomem *reg;

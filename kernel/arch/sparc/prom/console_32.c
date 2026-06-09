@@ -6,12 +6,12 @@
  * Copyright (C) 1998 Pete Zaitcev <zaitcev@yahoo.com>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
 #include <asm/openprom.h>
 #include <asm/oplib.h>
-#include <linux/string.h>
+#include <beep/string.h>
 
 extern void restore_current(void);
 

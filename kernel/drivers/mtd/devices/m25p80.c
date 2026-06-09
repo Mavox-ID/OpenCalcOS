@@ -15,25 +15,25 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/math64.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/mod_devicetable.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/mutex.h>
+#include <beep/math64.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/mod_devicetable.h>
 
-#include <linux/mtd/cfi.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/of_platform.h>
+#include <beep/mtd/cfi.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/of_platform.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
 
 /* Flash opcodes. */
 #define	OPCODE_WREN		0x06	/* Write enable */

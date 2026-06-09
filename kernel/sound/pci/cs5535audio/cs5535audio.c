@@ -21,12 +21,12 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <asm/io.h>
 #include <sound/core.h>
 #include <sound/control.h>

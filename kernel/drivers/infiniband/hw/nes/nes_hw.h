@@ -33,7 +33,7 @@
 #ifndef __NES_HW_H
 #define __NES_HW_H
 
-#include <linux/inet_lro.h>
+#include <beep/inet_lro.h>
 
 #define NES_PHY_TYPE_CX4       1
 #define NES_PHY_TYPE_1G        2

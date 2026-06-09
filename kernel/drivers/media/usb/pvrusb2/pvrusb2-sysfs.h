@@ -20,8 +20,8 @@
 #ifndef __PVRUSB2_SYSFS_H
 #define __PVRUSB2_SYSFS_H
 
-#include <linux/list.h>
-#include <linux/sysfs.h>
+#include <beep/list.h>
+#include <beep/sysfs.h>
 #include "pvrusb2-context.h"
 
 struct pvr2_sysfs;

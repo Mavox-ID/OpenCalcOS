@@ -1,5 +1,5 @@
-#include <linux/kernel.h>
-#include <linux/ide.h>
+#include <beep/kernel.h>
+#include <beep/ide.h>
 
 char *ide_media_string(ide_drive_t *drive)
 {

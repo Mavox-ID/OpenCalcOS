@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/fpga.c
+ * beep/arch/arm/mach-omap1/fpga.c
  *
  * Interrupt handler for OMAP-1510 Innovator FPGA
  *
@@ -16,13 +16,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/io.h>
+#include <beep/types.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/io.h>
 
 #include <asm/irq.h>
 #include <asm/mach/irq.h>

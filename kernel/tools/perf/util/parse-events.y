@@ -8,8 +8,8 @@
 
 #define YYDEBUG 1
 
-#include <linux/compiler.h>
-#include <linux/list.h>
+#include <beep/compiler.h>
+#include <beep/list.h>
 #include "types.h"
 #include "util.h"
 #include "parse-events.h"

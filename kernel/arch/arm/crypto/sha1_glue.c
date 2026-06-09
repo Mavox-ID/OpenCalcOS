@@ -6,7 +6,7 @@
  *
  * Copyright (c) Alan Smithee.
  * Copyright (c) Andrew McDonald <andrew@mcdonald.org.uk>
- * Copyright (c) Jean-Francois Dive <jef@linuxbe.org>
+ * Copyright (c) Jean-Francois Dive <jef@beepbe.org>
  * Copyright (c) Mathias Krause <minipli@googlemail.com>
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -17,10 +17,10 @@
  */
 
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/cryptohash.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/cryptohash.h>
+#include <beep/types.h>
 #include <crypto/sha.h>
 #include <asm/byteorder.h>
 

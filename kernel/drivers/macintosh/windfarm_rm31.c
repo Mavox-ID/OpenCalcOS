@@ -6,12 +6,12 @@
  *
  * Use and redistribute under the terms of the GNU GPL v2.
  */
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/reboot.h>
 #include <asm/prom.h>
 #include <asm/smu.h>
 

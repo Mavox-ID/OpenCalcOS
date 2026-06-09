@@ -45,10 +45,10 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/cpu.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/cpu.h>
 #include <asm/spu.h>
 #include <asm/io.h>
 #include <asm/prom.h>

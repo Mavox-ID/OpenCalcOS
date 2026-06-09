@@ -15,7 +15,7 @@
  * General Public License for more details.
  */
 
-#include <linux/sort.h>
+#include <beep/sort.h>
 #include <cluster/masklog.h>
 #include "ocfs2.h"
 #include "inode.h"
@@ -35,17 +35,17 @@
 #include "namei.h"
 #include "ocfs2_trace.h"
 
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/writeback.h>
-#include <linux/pagevec.h>
-#include <linux/swap.h>
-#include <linux/security.h>
-#include <linux/fsnotify.h>
-#include <linux/quotaops.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
+#include <beep/bio.h>
+#include <beep/blkdev.h>
+#include <beep/slab.h>
+#include <beep/writeback.h>
+#include <beep/pagevec.h>
+#include <beep/swap.h>
+#include <beep/security.h>
+#include <beep/fsnotify.h>
+#include <beep/quotaops.h>
+#include <beep/namei.h>
+#include <beep/mount.h>
 
 struct ocfs2_cow_context {
 	struct inode *inode;

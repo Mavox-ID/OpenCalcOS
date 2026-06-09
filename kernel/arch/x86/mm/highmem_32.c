@@ -1,6 +1,6 @@
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/swap.h> /* for totalram_pages */
+#include <beep/highmem.h>
+#include <beep/module.h>
+#include <beep/swap.h> /* for totalram_pages */
 
 void *kmap(struct page *page)
 {

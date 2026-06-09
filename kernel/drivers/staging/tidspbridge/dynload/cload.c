@@ -14,7 +14,7 @@
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 #include "header.h"
 

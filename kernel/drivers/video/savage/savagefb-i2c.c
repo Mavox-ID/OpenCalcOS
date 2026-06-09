@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/savage/savagefb-i2c.c - S3 Savage DDC2
+ * beep/drivers/video/savage/savagefb-i2c.c - S3 Savage DDC2
  *
  * Copyright 2004 Antonino A. Daplas <adaplas @pol.net>
  *
@@ -10,12 +10,12 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
-#include <linux/fb.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/gfp.h>
+#include <beep/pci.h>
+#include <beep/fb.h>
 
 #include <asm/io.h>
 #include "savagefb.h"

@@ -20,13 +20,13 @@
  * and wakeup interrupts can be hooked to.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/irqdomain.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/irqdomain.h>
 
 #include "core.h"
 #include "pinctrl-samsung.h"

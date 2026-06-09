@@ -1,5 +1,5 @@
 /*
-    Taken from http://www.simtec.co.uk/products/SWLINUX/files/booting_article.html
+    Taken from http://www.simtec.co.uk/products/SWBEEP/files/booting_article.html
     This file is BSD Licensed.
 */
 

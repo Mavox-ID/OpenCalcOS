@@ -11,18 +11,18 @@
  *
  */
 
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/version.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/videodev2.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/wait.h>
-#include <linux/atomic.h>
+#include <beep/compat.h>
+#include <beep/kernel.h>
+#include <beep/version.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/videodev2.h>
+#include <beep/vmalloc.h>
+#include <beep/mm.h>
+#include <beep/wait.h>
+#include <beep/atomic.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-ctrls.h>
@@ -229,7 +229,7 @@ static int uvc_v4l2_try_format(struct uvc_streaming *stream,
 	 * The workaround could probably be enabled for all webcams, so the
 	 * quirk can be removed if needed. It's currently useful to detect
 	 * webcam bugs and fix them before they hit the market (providing
-	 * developers test their webcams with the Linux driver as well as with
+	 * developers test their webcams with the Beep driver as well as with
 	 * the Windows driver).
 	 */
 	mutex_lock(&stream->mutex);
@@ -564,7 +564,7 @@ static long uvc_v4l2_do_ioctl(struct file *file, unsigned int cmd, void *arg)
 		strlcpy(cap->card, vdev->name, sizeof cap->card);
 		usb_make_path(stream->dev->udev,
 			      cap->bus_info, sizeof(cap->bus_info));
-		cap->version = LINUX_VERSION_CODE;
+		cap->version = BEEP_VERSION_CODE;
 		cap->capabilities = V4L2_CAP_DEVICE_CAPS | V4L2_CAP_STREAMING
 				  | chain->caps;
 		if (stream->type == V4L2_BUF_TYPE_VIDEO_CAPTURE)

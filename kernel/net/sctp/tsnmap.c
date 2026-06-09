@@ -42,9 +42,9 @@
  * be incorporated into the next SCTP release.
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/bitmap.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/bitmap.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/sm.h>
 

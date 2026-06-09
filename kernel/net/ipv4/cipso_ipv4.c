@@ -36,21 +36,21 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/jhash.h>
-#include <linux/audit.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/rcupdate.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/jhash.h>
+#include <beep/audit.h>
+#include <beep/slab.h>
 #include <net/ip.h>
 #include <net/icmp.h>
 #include <net/tcp.h>
 #include <net/netlabel.h>
 #include <net/cipso_ipv4.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/bug.h>
 #include <asm/unaligned.h>
 

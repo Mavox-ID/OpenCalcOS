@@ -14,11 +14,11 @@
  *	evm_inode_removexattr, and evm_verifyxattr
  */
 
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/xattr.h>
-#include <linux/integrity.h>
-#include <linux/evm.h>
+#include <beep/module.h>
+#include <beep/crypto.h>
+#include <beep/xattr.h>
+#include <beep/integrity.h>
+#include <beep/evm.h>
 #include <crypto/hash.h>
 #include "evm.h"
 
@@ -28,8 +28,8 @@ char *evm_hmac = "hmac(sha1)";
 char *evm_hash = "sha1";
 
 char *evm_config_xattrnames[] = {
-#ifdef CONFIG_SECURITY_SELINUX
-	XATTR_NAME_SELINUX,
+#ifdef CONFIG_SECURITY_SEBEEP
+	XATTR_NAME_SEBEEP,
 #endif
 #ifdef CONFIG_SECURITY_SMACK
 	XATTR_NAME_SMACK,

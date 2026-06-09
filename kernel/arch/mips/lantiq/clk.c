@@ -6,15 +6,15 @@
  * Copyright (C) 2010 Thomas Langer <thomas.langer@lantiq.com>
  * Copyright (C) 2010 John Crispin <blogic@openwrt.org>
  */
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/list.h>
+#include <beep/io.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/err.h>
+#include <beep/list.h>
 
 #include <asm/time.h>
 #include <asm/irq.h>

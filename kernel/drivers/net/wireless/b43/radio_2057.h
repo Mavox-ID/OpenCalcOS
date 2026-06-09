@@ -1,7 +1,7 @@
 #ifndef B43_RADIO_2057_H_
 #define B43_RADIO_2057_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #include "tables_nphy.h"
 

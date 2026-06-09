@@ -20,13 +20,13 @@
 
 /*#define DEBUG*/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
+#include <beep/bitops.h>
+#include <beep/mutex.h>
+#include <beep/platform_device.h>
 
 #include <video/omapvrfb.h>
 

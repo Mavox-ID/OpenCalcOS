@@ -1,20 +1,20 @@
-/* -*- linux-c -*-
+/* -*- beep-c -*-
  * sysctl_net_core.c: sysctl interface to net core subsystem.
  *
  * Begun April 1, 1996, Mike Shaver.
  * Added /proc/sys/net/core directory entry (empty =) ). [MS]
  */
 
-#include <linux/mm.h>
-#include <linux/sysctl.h>
-#include <linux/module.h>
-#include <linux/socket.h>
-#include <linux/netdevice.h>
-#include <linux/ratelimit.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kmemleak.h>
+#include <beep/mm.h>
+#include <beep/sysctl.h>
+#include <beep/module.h>
+#include <beep/socket.h>
+#include <beep/netdevice.h>
+#include <beep/ratelimit.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/kmemleak.h>
 
 #include <net/ip.h>
 #include <net/sock.h>

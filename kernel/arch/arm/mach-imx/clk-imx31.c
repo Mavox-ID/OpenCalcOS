@@ -15,12 +15,12 @@
  * Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/of.h>
 
 #include "clk.h"
 #include "common.h"

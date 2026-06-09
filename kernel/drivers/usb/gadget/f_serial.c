@@ -10,9 +10,9 @@
  * either version 2 of that License or (at your option) any later version.
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
 
 #include "u_serial.h"
 #include "gadget_chips.h"

@@ -6,7 +6,7 @@
  * Distributed under the terms of the GPL, version 2
  */
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include <asm/hardware.h>
 #include <asm/parisc-device.h>
 

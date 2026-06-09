@@ -32,33 +32,33 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/bug.h>
-#include <linux/bitops.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/swab.h>
-#include <linux/phy.h>
-#include <linux/smsc911x.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/of_net.h>
+#include <beep/crc32.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/consumer.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/bug.h>
+#include <beep/bitops.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/swab.h>
+#include <beep/phy.h>
+#include <beep/smsc911x.h>
+#include <beep/device.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_gpio.h>
+#include <beep/of_net.h>
 #include "smsc911x.h"
 
 #define SMSC_CHIPNAME		"smsc911x"

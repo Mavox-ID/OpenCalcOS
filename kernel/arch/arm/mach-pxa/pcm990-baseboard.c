@@ -9,7 +9,7 @@
  *  Author:	Juergen Kilb
  *  Created:	April 05, 2005
  *  Copyright:	Phytec Messtechnik GmbH
- *  e-Mail:	armlinux@phytec.de
+ *  e-Mail:	armbeep@phytec.de
  *
  *  based on Intel Mainstone Board
  *
@@ -19,24 +19,24 @@
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/i2c/pxa-i2c.h>
-#include <linux/pwm_backlight.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pxa-i2c.h>
+#include <beep/pwm_backlight.h>
 
 #include <media/mt9v022.h>
 #include <media/soc_camera.h>
 
-#include <linux/platform_data/camera-pxa.h>
+#include <beep/platform_data/camera-pxa.h>
 #include <asm/mach/map.h>
 #include <mach/pxa27x.h>
 #include <mach/audio.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
 #include <mach/pcm990_baseboard.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <beep/platform_data/video-pxafb.h>
 
 #include "devices.h"
 #include "generic.h"
@@ -407,7 +407,7 @@ struct pxacamera_platform_data pcm990_pxacamera_platform_data = {
 	.mclk_10khz = 1000,
 };
 
-#include <linux/i2c/pca953x.h>
+#include <beep/i2c/pca953x.h>
 
 static struct pca953x_platform_data pca9536_data = {
 	.gpio_base	= PXA_NR_BUILTIN_GPIO,

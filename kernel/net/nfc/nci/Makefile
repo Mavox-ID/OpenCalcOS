@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux NFC NCI layer.
+# Makefile for the Beep NFC NCI layer.
 #
 
 obj-$(CONFIG_NFC_NCI) += nci.o

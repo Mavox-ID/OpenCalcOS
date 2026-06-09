@@ -17,28 +17,28 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/inet.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/kernel.h>
+#include <beep/jiffies.h>
+#include <beep/timer.h>
+#include <beep/string.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/inet.h>
+#include <beep/if_arp.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 #include <asm/uaccess.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/stat.h>
-#include <linux/init.h>
+#include <beep/fcntl.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/stat.h>
+#include <beep/init.h>
 #include <net/lapb.h>
 
 static LIST_HEAD(lapb_list);

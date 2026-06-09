@@ -26,15 +26,15 @@
  */
 
 #include "udfdecl.h"
-#include <linux/fs.h>
+#include <beep/fs.h>
 #include <asm/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/string.h> /* memset */
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
-#include <linux/aio.h>
+#include <beep/kernel.h>
+#include <beep/string.h> /* memset */
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/pagemap.h>
+#include <beep/buffer_head.h>
+#include <beep/aio.h>
 
 #include "udf_i.h"
 #include "udf_sb.h"

@@ -4,7 +4,7 @@
  *	      Martin Schwidefsky <schwidefsky@de.ibm.com>
  *	      Ralph Wuerthner <rwuerthn@de.ibm.com>
  *	      Felix Beck <felix.beck@de.ibm.com>
- *	      Holger Dengler <hd@linux.vnet.ibm.com>
+ *	      Holger Dengler <hd@beep.vnet.ibm.com>
  *
  * Adjunct processor bus header file.
  *
@@ -26,9 +26,9 @@
 #ifndef _AP_BUS_H_
 #define _AP_BUS_H_
 
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/types.h>
+#include <beep/device.h>
+#include <beep/mod_devicetable.h>
+#include <beep/types.h>
 
 #define AP_DEVICES 64		/* Number of AP devices. */
 #define AP_DOMAINS 16		/* Number of AP domains. */

@@ -14,13 +14,13 @@
  *  Copyright (C) 2000-2004 Russell King
  *
  */
-#include <linux/slab.h>
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/memblock.h>
+#include <beep/slab.h>
+#include <beep/bitmap.h>
+#include <beep/bitops.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/memblock.h>
 
 #include <asm/page.h>
 

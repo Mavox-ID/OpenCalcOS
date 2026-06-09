@@ -2,7 +2,7 @@
 #define _ASM_POWERPC_MPIC_H
 #ifdef __KERNEL__
 
-#include <linux/irq.h>
+#include <beep/irq.h>
 #include <asm/dcr.h>
 #include <asm/msi_bitmap.h>
 
@@ -264,7 +264,7 @@ struct mpic
 	/* The remapper for this MPIC */
 	struct irq_domain	*irqhost;
 
-	/* The "linux" controller struct */
+	/* The "beep" controller struct */
 	struct irq_chip		hc_irq;
 #ifdef CONFIG_MPIC_U3_HT_IRQS
 	struct irq_chip		hc_ht_irq;
@@ -393,7 +393,7 @@ struct mpic
 #define	MPIC_REGSET_STANDARD		MPIC_REGSET(0)	/* Original MPIC */
 #define	MPIC_REGSET_TSI108		MPIC_REGSET(1)	/* Tsi108/109 PIC */
 
-/* Allocate the controller structure and setup the linux irq descs
+/* Allocate the controller structure and setup the beep irq descs
  * for the range if interrupts passed in. No HW initialization is
  * actually performed.
  * 
@@ -413,7 +413,7 @@ struct mpic
  * setup to be level negative unless MPIC_U3_HT_IRQS is set in which
  * case they are edge positive (and the array is ignored anyway).
  * The values in the array start at the first source of the MPIC,
- * that is senses[0] correspond to linux irq "irq_offset".
+ * that is senses[0] correspond to beep irq "irq_offset".
  */
 extern struct mpic *mpic_alloc(struct device_node *node,
 			       phys_addr_t phys_addr,
@@ -446,7 +446,7 @@ extern void mpic_init(struct mpic *mpic);
 
 /* Change the priority of an interrupt. Default is 8 for irqs and
  * 10 for IPIs. You can call this on both IPIs and IRQ numbers, but the
- * IPI number is then the offset'ed (linux irq number mapped to the IPI)
+ * IPI number is then the offset'ed (beep irq number mapped to the IPI)
  */
 extern void mpic_irq_set_priority(unsigned int irq, unsigned int pri);
 

@@ -5,7 +5,7 @@
 * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
 * --------------------------------------------------------------------
 *
-* linux-wlan
+* beep-wlan
 *
 *   The contents of this file are subject to the Mozilla Public
 *   License Version 1.1 (the "License"); you may not use this file
@@ -30,12 +30,12 @@
 *
 * --------------------------------------------------------------------
 *
-* Inquiries regarding the linux-wlan Open Source project can be
+* Inquiries regarding the beep-wlan Open Source project can be
 * made directly to:
 *
 * AbsoluteValue Systems Inc.
-* info@linux-wlan.com
-* http://www.linux-wlan.com
+* info@beep-wlan.com
+* http://www.beep-wlan.com
 *
 * --------------------------------------------------------------------
 *
@@ -110,21 +110,21 @@
 * --------------------------------------------------------------------
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/wireless.h>
-#include <linux/netdevice.h>
-#include <linux/timer.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/wireless.h>
+#include <beep/netdevice.h>
+#include <beep/timer.h>
+#include <beep/io.h>
+#include <beep/delay.h>
 #include <asm/byteorder.h>
-#include <linux/bitops.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/byteorder/generic.h>
+#include <beep/bitops.h>
+#include <beep/list.h>
+#include <beep/usb.h>
+#include <beep/byteorder/generic.h>
 
 #define SUBMIT_URB(u, f)  usb_submit_urb(u, f)
 
@@ -3166,8 +3166,8 @@ static void hfa384x_usbin_callback(struct urb *urb)
 
 		/* Check for short packet */
 		if (urb->actual_length == 0) {
-			++(wlandev->linux_stats.rx_errors);
-			++(wlandev->linux_stats.rx_length_errors);
+			++(wlandev->beep_stats.rx_errors);
+			++(wlandev->beep_stats.rx_length_errors);
 			action = RESUBMIT;
 		}
 		break;
@@ -3177,7 +3177,7 @@ static void hfa384x_usbin_callback(struct urb *urb)
 		       wlandev->netdev->name);
 		if (!test_and_set_bit(WORK_RX_HALT, &hw->usb_flags))
 			schedule_work(&hw->usb_work);
-		++(wlandev->linux_stats.rx_errors);
+		++(wlandev->beep_stats.rx_errors);
 		action = ABORT;
 		break;
 
@@ -3188,12 +3188,12 @@ static void hfa384x_usbin_callback(struct urb *urb)
 		    !timer_pending(&hw->throttle)) {
 			mod_timer(&hw->throttle, jiffies + THROTTLE_JIFFIES);
 		}
-		++(wlandev->linux_stats.rx_errors);
+		++(wlandev->beep_stats.rx_errors);
 		action = ABORT;
 		break;
 
 	case -EOVERFLOW:
-		++(wlandev->linux_stats.rx_over_errors);
+		++(wlandev->beep_stats.rx_over_errors);
 		action = RESUBMIT;
 		break;
 
@@ -3212,7 +3212,7 @@ static void hfa384x_usbin_callback(struct urb *urb)
 	default:
 		pr_debug("urb status=%d, transfer flags=0x%x\n",
 			 urb->status, urb->transfer_flags);
-		++(wlandev->linux_stats.rx_errors);
+		++(wlandev->beep_stats.rx_errors);
 		action = RESUBMIT;
 		break;
 	}
@@ -3720,7 +3720,7 @@ static void hfa384x_usbout_callback(struct urb *urb)
 				if (!test_and_set_bit
 				    (WORK_TX_HALT, &hw->usb_flags))
 					schedule_work(&hw->usb_work);
-				++(wlandev->linux_stats.tx_errors);
+				++(wlandev->beep_stats.tx_errors);
 				break;
 			}
 
@@ -3736,7 +3736,7 @@ static void hfa384x_usbout_callback(struct urb *urb)
 					mod_timer(&hw->throttle,
 						  jiffies + THROTTLE_JIFFIES);
 				}
-				++(wlandev->linux_stats.tx_errors);
+				++(wlandev->beep_stats.tx_errors);
 				netif_stop_queue(wlandev->netdev);
 				break;
 			}
@@ -3749,7 +3749,7 @@ static void hfa384x_usbout_callback(struct urb *urb)
 		default:
 			printk(KERN_INFO "unknown urb->status=%d\n",
 			       urb->status);
-			++(wlandev->linux_stats.tx_errors);
+			++(wlandev->beep_stats.tx_errors);
 			break;
 		}		/* switch */
 	}

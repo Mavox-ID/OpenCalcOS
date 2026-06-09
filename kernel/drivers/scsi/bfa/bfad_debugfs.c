@@ -3,7 +3,7 @@
  * All rights reserved
  * www.brocade.com
  *
- * Linux driver for Brocade Fibre Channel Host Bus Adapter.
+ * Beep driver for Brocade Fibre Channel Host Bus Adapter.
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License (GPL) Version 2 as
@@ -15,8 +15,8 @@
  * General Public License for more details.
  */
 
-#include <linux/debugfs.h>
-#include <linux/export.h>
+#include <beep/debugfs.h>
+#include <beep/export.h>
 
 #include "bfad_drv.h"
 #include "bfad_im.h"

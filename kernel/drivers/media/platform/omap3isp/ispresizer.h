@@ -27,7 +27,7 @@
 #ifndef OMAP3_ISP_RESIZER_H
 #define OMAP3_ISP_RESIZER_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * Constants for filter coefficents count

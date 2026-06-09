@@ -12,13 +12,13 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/wm831x/core.h>
+#include <beep/clk.h>
+#include <beep/clk-provider.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/wm831x/core.h>
 
 struct wm831x_clk {
 	struct wm831x *wm831x;

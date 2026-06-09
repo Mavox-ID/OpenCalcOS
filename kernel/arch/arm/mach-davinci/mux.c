@@ -3,7 +3,7 @@
  *
  * Author: Vladimir Barinov, MontaVista Software, Inc. <source@mvista.com>
  *
- * Based on linux/arch/arm/plat-omap/mux.c:
+ * Based on beep/arch/arm/plat-omap/mux.c:
  * Copyright (C) 2003 - 2005 Nokia Corporation
  *
  * Written by Tony Lindgren
@@ -15,9 +15,9 @@
  *
  * Copyright (C) 2008 Texas Instruments.
  */
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
 
 #include <mach/mux.h>
 #include <mach/common.h>

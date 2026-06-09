@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/sstfb.c -- voodoo graphics frame buffer
+ * beep/drivers/video/sstfb.c -- voodoo graphics frame buffer
  *
  *     Copyright (c) 2000-2002 Ghozlane Toumi <gtoumi@laposte.net>
  *
@@ -79,15 +79,15 @@
  * Includes
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/init.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/fb.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/init.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 #include <video/sstfb.h>
 
 

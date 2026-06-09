@@ -24,19 +24,19 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>	/* for show_stack */
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/crash_dump.h>
-#include <linux/memory.h>
-#include <linux/of.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/memblock.h>
+#include <beep/spinlock.h>
+#include <beep/sched.h>	/* for show_stack */
+#include <beep/string.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/crash_dump.h>
+#include <beep/memory.h>
+#include <beep/of.h>
 #include <asm/io.h>
 #include <asm/prom.h>
 #include <asm/rtas.h>
@@ -347,7 +347,7 @@ static LIST_HEAD(direct_window_list);
 static DEFINE_SPINLOCK(direct_window_list_lock);
 /* protects initializing window twice for same device */
 static DEFINE_MUTEX(direct_window_init_mutex);
-#define DIRECT64_PROPNAME "linux,direct64-ddr-window-info"
+#define DIRECT64_PROPNAME "beep,direct64-ddr-window-info"
 
 static int tce_clearrange_multi_pSeriesLP(unsigned long start_pfn,
 					unsigned long num_pfn, const void *arg)
@@ -471,8 +471,8 @@ static void iommu_table_setparms(struct pci_controller *phb,
 
 	node = phb->dn;
 
-	basep = of_get_property(node, "linux,tce-base", NULL);
-	sizep = of_get_property(node, "linux,tce-size", NULL);
+	basep = of_get_property(node, "beep,tce-base", NULL);
+	sizep = of_get_property(node, "beep,tce-size", NULL);
 	if (basep == NULL || sizep == NULL) {
 		printk(KERN_ERR "PCI_DMA: iommu_table_setparms: %s has "
 				"missing tce entries !\n", dn->full_name);
@@ -504,7 +504,7 @@ static void iommu_table_setparms(struct pci_controller *phb,
 	tbl->it_blocksize = 16;
 	tbl->it_type = TCE_PCI;
 
-	sw_inval = of_get_property(node, "linux,tce-sw-invalidate-info", NULL);
+	sw_inval = of_get_property(node, "beep,tce-sw-invalidate-info", NULL);
 	if (sw_inval) {
 		/*
 		 * This property contains information on how to
@@ -1332,7 +1332,7 @@ static struct notifier_block iommu_reconfig_nb = {
 /* These are called very early. */
 void iommu_init_early_pSeries(void)
 {
-	if (of_chosen && of_get_property(of_chosen, "linux,iommu-off", NULL))
+	if (of_chosen && of_get_property(of_chosen, "beep,iommu-off", NULL))
 		return;
 
 	if (firmware_has_feature(FW_FEATURE_LPAR)) {

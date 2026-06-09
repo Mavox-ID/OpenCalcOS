@@ -9,11 +9,11 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/io.h>
+#include <beep/string.h>
 #include <mach/fpga.h>
 #include <asm/sram.h>
 #include <asm/sizes.h>

@@ -9,12 +9,12 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
 #include "clk.h"
 

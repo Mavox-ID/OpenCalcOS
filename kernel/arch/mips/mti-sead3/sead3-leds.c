@@ -5,9 +5,9 @@
  *
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/module.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/leds.h>
+#include <beep/platform_device.h>
 
 #define LEDFLAGS(bits, shift)		\
 	((bits << 8) | (shift << 8))

@@ -9,7 +9,7 @@
 #ifndef __ASM_MACH_AU1X00_IOREMAP_H
 #define __ASM_MACH_AU1X00_IOREMAP_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #if defined(CONFIG_64BIT_PHYS_ADDR) && defined(CONFIG_PCI)
 extern phys_t __fixup_bigphys_addr(phys_t, phys_t);

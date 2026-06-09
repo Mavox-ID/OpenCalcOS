@@ -22,21 +22,21 @@
  *               Marko Isomaki
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/io.h>
-#include <linux/crc32.h>
-#include <linux/mii.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/skbuff.h>
+#include <beep/io.h>
+#include <beep/crc32.h>
+#include <beep/mii.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
+#include <beep/slab.h>
 #include <asm/cacheflush.h>
 #include <asm/byteorder.h>
 

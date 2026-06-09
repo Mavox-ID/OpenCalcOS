@@ -11,14 +11,14 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
-#include <linux/leds.h>
-#include <linux/reboot.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/timer.h>
+#include <beep/sched.h>
+#include <beep/leds.h>
+#include <beep/reboot.h>
 #include "leds.h"
 
 static int panic_heartbeats;

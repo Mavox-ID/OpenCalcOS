@@ -15,9 +15,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
 #include <net/mac80211.h>
 
 #include "rtl8180.h"

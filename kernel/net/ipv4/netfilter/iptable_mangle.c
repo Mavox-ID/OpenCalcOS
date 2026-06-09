@@ -8,14 +8,14 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/netfilter_ipv4/ip_tables.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 #include <net/route.h>
-#include <linux/ip.h>
+#include <beep/ip.h>
 #include <net/ip.h>
 
 MODULE_LICENSE("GPL");

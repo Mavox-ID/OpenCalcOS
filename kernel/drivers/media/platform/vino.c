@@ -7,12 +7,12 @@
  * Copyright (C) 2004,2005 Mikael Nousiainen <tmnousia@cc.hut.fi>
  *
  * Based on the previous version of the driver for 2.4 kernels by:
- * Copyright (C) 2003 Ladislav Michl <ladis@linux-mips.org>
+ * Copyright (C) 2003 Ladislav Michl <ladis@beep-mips.org>
  *
  * v4l2_device/v4l2_subdev conversion by:
  * Copyright (C) 2009 Hans Verkuil <hverkuil@xs4all.nl>
  *
- * Note: this conversion is untested! Please contact the linux-media
+ * Note: this conversion is untested! Please contact the beep-media
  * mailinglist if you can test this, together with the test results.
  */
 
@@ -25,25 +25,25 @@
  * - implement read(), user mode buffers and overlay (?)
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/time.h>
-#include <linux/kmod.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/time.h>
+#include <beep/kmod.h>
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 
 #include <asm/paccess.h>
 #include <asm/io.h>
@@ -62,7 +62,7 @@
 
 #define VINO_MODULE_VERSION "0.0.7"
 
-MODULE_DESCRIPTION("SGI VINO Video4Linux2 driver");
+MODULE_DESCRIPTION("SGI VINO Video4Beep2 driver");
 MODULE_VERSION(VINO_MODULE_VERSION);
 MODULE_AUTHOR("Mikael Nousiainen <tmnousia@cc.hut.fi>");
 MODULE_LICENSE("GPL");
@@ -4309,7 +4309,7 @@ static int __init vino_module_init(void)
 	ret = video_register_device(vino_drvdata->a.vdev,
 				    VFL_TYPE_GRABBER, -1);
 	if (ret < 0) {
-		printk(KERN_ERR "VINO channel A Video4Linux-device "
+		printk(KERN_ERR "VINO channel A Video4Beep-device "
 		       "registration failed\n");
 		vino_module_cleanup(vino_init_stage);
 		return -EINVAL;
@@ -4319,7 +4319,7 @@ static int __init vino_module_init(void)
 	ret = video_register_device(vino_drvdata->b.vdev,
 				    VFL_TYPE_GRABBER, -1);
 	if (ret < 0) {
-		printk(KERN_ERR "VINO channel B Video4Linux-device "
+		printk(KERN_ERR "VINO channel B Video4Beep-device "
 		       "registration failed\n");
 		vino_module_cleanup(vino_init_stage);
 		return -EINVAL;

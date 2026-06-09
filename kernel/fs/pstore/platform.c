@@ -18,21 +18,21 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/atomic.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kmsg_dump.h>
-#include <linux/console.h>
-#include <linux/module.h>
-#include <linux/pstore.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/hardirq.h>
-#include <linux/jiffies.h>
-#include <linux/workqueue.h>
+#include <beep/atomic.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/kmsg_dump.h>
+#include <beep/console.h>
+#include <beep/module.h>
+#include <beep/pstore.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
+#include <beep/hardirq.h>
+#include <beep/jiffies.h>
+#include <beep/workqueue.h>
 
 #include "internal.h"
 

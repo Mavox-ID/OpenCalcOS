@@ -14,20 +14,20 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/input/ti_am335x_tsc.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/input.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/input/ti_am335x_tsc.h>
+#include <beep/delay.h>
 
-#include <linux/mfd/ti_am335x_tscadc.h>
+#include <beep/mfd/ti_am335x_tscadc.h>
 
 #define ADCFSM_STEPID		0x10
 #define SEQ_SETTLE		275

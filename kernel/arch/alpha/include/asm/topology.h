@@ -1,8 +1,8 @@
 #ifndef _ASM_ALPHA_TOPOLOGY_H
 #define _ASM_ALPHA_TOPOLOGY_H
 
-#include <linux/smp.h>
-#include <linux/threads.h>
+#include <beep/smp.h>
+#include <beep/threads.h>
 #include <asm/machvec.h>
 
 #ifdef CONFIG_NUMA

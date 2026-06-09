@@ -17,20 +17,20 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/mtd/plat-ram.h>
-#include <linux/platform_device.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/clcd.h>
+#include <beep/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/mtd/plat-ram.h>
+#include <beep/platform_device.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/clcd.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/hardware/vic.h>
 #include <mach/netx-regs.h>
-#include <linux/platform_data/eth-netx.h>
+#include <beep/platform_data/eth-netx.h>
 
 #include "generic.h"
 #include "fb.h"

@@ -1,24 +1,24 @@
-/* linux/arch/arm/mach-s3c64xx/mach-smdk6400.c
+/* beep/arch/arm/mach-s3c64xx/mach-smdk6400.c
  *
  * Copyright 2008 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/serial_core.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/io.h>
 
 #include <asm/mach-types.h>
 
@@ -35,7 +35,7 @@
 #include <plat/clock.h>
 #include <plat/devs.h>
 #include <plat/cpu.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 
 #include "common.h"
 
@@ -86,7 +86,7 @@ static void __init smdk6400_machine_init(void)
 }
 
 MACHINE_START(SMDK6400, "SMDK6400")
-	/* Maintainer: Ben Dooks <ben-linux@fluff.org> */
+	/* Maintainer: Ben Dooks <ben-beep@fluff.org> */
 	.atag_offset	= 0x100,
 
 	.init_irq	= s3c6400_init_irq,

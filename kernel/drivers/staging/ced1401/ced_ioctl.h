@@ -16,7 +16,7 @@
 #ifndef __CED_IOCTL_H__
 #define __CED_IOCTL_H__
 
-#include <linux/ioctl.h>
+#include <beep/ioctl.h>
 
 /* dma modes, only MODE_CHAR and MODE_LINEAR are used in this driver */
 #define MODE_CHAR		0
@@ -42,7 +42,7 @@ typedef struct TransferEvent {
 	unsigned int dwLength;		/* length of the region */
 	unsigned short wAreaNum;	/* the area number */
 	unsigned short wFlags;		/* bit 0 set for toHost */
-	int iSetEvent;			/* could be dummy in LINUX */
+	int iSetEvent;			/* could be dummy in BEEP */
 } TRANSFEREVENT;
 
 #define MAX_TRANSFER_SIZE	0x4000		/* Maximum data bytes per IRP */

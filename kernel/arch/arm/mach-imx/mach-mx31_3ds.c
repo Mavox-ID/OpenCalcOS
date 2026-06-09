@@ -12,21 +12,21 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/mc13783.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/l4f00242t03.h>
-#include <linux/regulator/machine.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/ulpi.h>
-#include <linux/memblock.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/mc13783.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/l4f00242t03.h>
+#include <beep/regulator/machine.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/ulpi.h>
+#include <beep/memblock.h>
 
 #include <media/soc_camera.h>
 

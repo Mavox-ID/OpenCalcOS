@@ -12,7 +12,7 @@
 #ifndef	DM_PATH_SELECTOR_H
 #define	DM_PATH_SELECTOR_H
 
-#include <linux/device-mapper.h>
+#include <beep/device-mapper.h>
 
 #include "dm-mpath.h"
 

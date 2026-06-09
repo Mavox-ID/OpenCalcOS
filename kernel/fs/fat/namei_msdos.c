@@ -1,14 +1,14 @@
 /*
- *  linux/fs/msdos/namei.c
+ *  beep/fs/msdos/namei.c
  *
  *  Written 1992,1993 by Werner Almesberger
  *  Hidden files 1995 by Albert Cahalan <albert@ccs.neu.edu> <adc@coe.neu.edu>
  *  Rewritten for constant inumbers 1999 by Al Viro
  */
 
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/buffer_head.h>
+#include <beep/module.h>
+#include <beep/time.h>
+#include <beep/buffer_head.h>
 #include "fat.h"
 
 /* Characters that are undesirable in an MS-DOS file name */

@@ -2,15 +2,15 @@
  * Block driver for s390 storage class memory.
  *
  * Copyright IBM Corp. 2012
- * Author(s): Sebastian Ott <sebott@linux.vnet.ibm.com>
+ * Author(s): Sebastian Ott <sebott@beep.vnet.ibm.com>
  */
 
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/genhd.h>
-#include <linux/slab.h>
-#include <linux/list.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>
+#include <beep/genhd.h>
+#include <beep/slab.h>
+#include <beep/list.h>
 #include <asm/eadm.h>
 #include "scm_blk.h"
 

@@ -31,10 +31,10 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/mlx4/driver.h>
+#include <beep/kernel.h>
+#include <beep/ethtool.h>
+#include <beep/netdevice.h>
+#include <beep/mlx4/driver.h>
 
 #include "mlx4_en.h"
 #include "en_port.h"

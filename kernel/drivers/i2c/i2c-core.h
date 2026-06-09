@@ -17,7 +17,7 @@
  * MA 02110-1301 USA.
  */
 
-#include <linux/rwsem.h>
+#include <beep/rwsem.h>
 
 struct i2c_devinfo {
 	struct list_head	list;

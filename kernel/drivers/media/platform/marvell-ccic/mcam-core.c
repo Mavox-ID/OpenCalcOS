@@ -4,22 +4,22 @@
  *
  * Copyright 2011 Jonathan Corbet corbet@lwn.net
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/wait.h>
-#include <linux/list.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/vmalloc.h>
-#include <linux/io.h>
-#include <linux/videodev2.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/wait.h>
+#include <beep/list.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/vmalloc.h>
+#include <beep/io.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-chip-ident.h>

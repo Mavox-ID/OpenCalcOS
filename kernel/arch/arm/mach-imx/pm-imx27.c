@@ -7,9 +7,9 @@
  * modify it under the terms of the GNU General Public License.
  */
 
-#include <linux/kernel.h>
-#include <linux/suspend.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/suspend.h>
+#include <beep/io.h>
 
 #include "hardware.h"
 

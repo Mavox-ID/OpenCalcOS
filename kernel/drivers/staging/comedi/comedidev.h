@@ -1,8 +1,8 @@
 /*
-    include/linux/comedidev.h
+    include/beep/comedidev.h
     header file for kernel-only structures, variables, and constants
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -24,24 +24,24 @@
 #ifndef _COMEDIDEV_H
 #define _COMEDIDEV_H
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kdev_t.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/dma-mapping.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/timer.h>
-#include <linux/pci.h>
-#include <linux/usb.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/kdev_t.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
+#include <beep/wait.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/vmalloc.h>
+#include <beep/dma-mapping.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
+#include <beep/timer.h>
+#include <beep/pci.h>
+#include <beep/usb.h>
 
 #include "comedi.h"
 
@@ -56,7 +56,7 @@
 #define COMEDI_RELEASE VERSION
 
 /*
- * PCI Vendor IDs not in <linux/pci_ids.h>
+ * PCI Vendor IDs not in <beep/pci_ids.h>
  */
 #define PCI_VENDOR_ID_KOLTER		0x1001
 #define PCI_VENDOR_ID_ICP		0x104c

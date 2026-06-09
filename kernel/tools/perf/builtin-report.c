@@ -11,9 +11,9 @@
 
 #include "util/annotate.h"
 #include "util/color.h"
-#include <linux/list.h>
+#include <beep/list.h>
 #include "util/cache.h"
-#include <linux/rbtree.h>
+#include <beep/rbtree.h>
 #include "util/symbol.h"
 #include "util/callchain.h"
 #include "util/strlist.h"
@@ -35,7 +35,7 @@
 #include "util/hist.h"
 #include "arch/common.h"
 
-#include <linux/bitmap.h>
+#include <beep/bitmap.h>
 
 struct perf_report {
 	struct perf_tool	tool;
@@ -372,14 +372,14 @@ static int __cmd_report(struct perf_report *rep)
 	if (ret)
 		goto out_delete;
 
-	kernel_map = session->host_machine.vmlinux_maps[MAP__FUNCTION];
+	kernel_map = session->host_machine.vmbeep_maps[MAP__FUNCTION];
 	kernel_kmap = map__kmap(kernel_map);
 	if (kernel_map == NULL ||
 	    (kernel_map->dso->hit &&
 	     (kernel_kmap->ref_reloc_sym == NULL ||
 	      kernel_kmap->ref_reloc_sym->addr == 0))) {
 		const char *desc =
-		    "As no suitable kallsyms nor vmlinux was found, kernel samples\n"
+		    "As no suitable kallsyms nor vmbeep was found, kernel samples\n"
 		    "can't be resolved.";
 
 		if (kernel_map) {
@@ -577,8 +577,8 @@ int cmd_report(int argc, const char **argv, const char *prefix __maybe_unused)
 		    "be more verbose (show symbol address, etc)"),
 	OPT_BOOLEAN('D', "dump-raw-trace", &dump_trace,
 		    "dump raw trace in ASCII"),
-	OPT_STRING('k', "vmlinux", &symbol_conf.vmlinux_name,
-		   "file", "vmlinux pathname"),
+	OPT_STRING('k', "vmbeep", &symbol_conf.vmbeep_name,
+		   "file", "vmbeep pathname"),
 	OPT_STRING(0, "kallsyms", &symbol_conf.kallsyms_name,
 		   "file", "kallsyms pathname"),
 	OPT_BOOLEAN('f', "force", &report.force, "don't complain, do it"),

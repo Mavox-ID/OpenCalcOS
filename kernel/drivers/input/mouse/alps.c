@@ -15,11 +15,11 @@
  * the Free Software Foundation.
  */
 
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/serio.h>
-#include <linux/libps2.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/input/mt.h>
+#include <beep/serio.h>
+#include <beep/libps2.h>
 
 #include "psmouse.h"
 #include "alps.h"

@@ -31,9 +31,9 @@
  * requested destination
  */
 
-#include <linux/hw_random.h>
-#include <linux/completion.h>
-#include <linux/atomic.h>
+#include <beep/hw_random.h>
+#include <beep/completion.h>
+#include <beep/atomic.h>
 
 #include "compat.h"
 

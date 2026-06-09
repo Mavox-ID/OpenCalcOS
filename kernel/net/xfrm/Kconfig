@@ -16,7 +16,7 @@ config XFRM_USER
 	select XFRM_ALGO
 	---help---
 	  Support for Transformation(XFRM) user configuration interface
-	  like IPsec used by native Linux tools.
+	  like IPsec used by native Beep tools.
 
 	  If unsure, say Y.
 

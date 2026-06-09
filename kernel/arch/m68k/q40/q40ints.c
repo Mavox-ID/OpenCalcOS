@@ -11,11 +11,11 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 
 #include <asm/ptrace.h>
 #include <asm/traps.h>

@@ -17,18 +17,18 @@
  * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/types.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmaengine.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/spi/spi.h>
+#include <beep/types.h>
 
 #include "spi-dw.h"
 
 #ifdef CONFIG_SPI_DW_MID_DMA
-#include <linux/intel_mid_dma.h>
-#include <linux/pci.h>
+#include <beep/intel_mid_dma.h>
+#include <beep/pci.h>
 
 struct mid_dma {
 	struct intel_mid_dma_slave	dmas_tx;

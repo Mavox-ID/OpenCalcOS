@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/process.c
+ *  beep/arch/arm/kernel/process.c
  *
  *  Copyright (C) 1996-2000 Russell King - Converted to ARM.
  *  Original Copyright (C) 1995  Linus Torvalds
@@ -10,28 +10,28 @@
  */
 #include <stdarg.h>
 
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/user.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/interrupt.h>
-#include <linux/kallsyms.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/elfcore.h>
-#include <linux/pm.h>
-#include <linux/tick.h>
-#include <linux/utsname.h>
-#include <linux/uaccess.h>
-#include <linux/random.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/cpuidle.h>
-#include <linux/leds.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/user.h>
+#include <beep/delay.h>
+#include <beep/reboot.h>
+#include <beep/interrupt.h>
+#include <beep/kallsyms.h>
+#include <beep/init.h>
+#include <beep/cpu.h>
+#include <beep/elfcore.h>
+#include <beep/pm.h>
+#include <beep/tick.h>
+#include <beep/utsname.h>
+#include <beep/uaccess.h>
+#include <beep/random.h>
+#include <beep/hw_breakpoint.h>
+#include <beep/cpuidle.h>
+#include <beep/leds.h>
 
 #include <asm/cacheflush.h>
 #include <asm/idmap.h>
@@ -41,7 +41,7 @@
 #include <asm/mach/time.h>
 
 #ifdef CONFIG_CC_STACKPROTECTOR
-#include <linux/stackprotector.h>
+#include <beep/stackprotector.h>
 unsigned long __stack_chk_guard __read_mostly;
 EXPORT_SYMBOL(__stack_chk_guard);
 #endif

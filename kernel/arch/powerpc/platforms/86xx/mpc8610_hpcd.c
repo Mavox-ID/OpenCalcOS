@@ -16,14 +16,14 @@
  * option) any later version.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/kdev_t.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/of.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/kdev_t.h>
+#include <beep/delay.h>
+#include <beep/seq_file.h>
+#include <beep/of.h>
 
 #include <asm/time.h>
 #include <asm/machdep.h>
@@ -34,7 +34,7 @@
 
 #include <asm/mpic.h>
 
-#include <linux/of_platform.h>
+#include <beep/of_platform.h>
 #include <sysdev/fsl_pci.h>
 #include <sysdev/fsl_soc.h>
 #include <sysdev/simple_gpio.h>

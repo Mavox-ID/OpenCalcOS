@@ -20,7 +20,7 @@
  * the kernel's memcpy, copy_to_user and copy_from_user.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 /* On TILE64, we wrap these functions via arch/tile/lib/memcpy_tile64.c */
 #if !CHIP_HAS_COHERENT_LOCAL_CACHE()

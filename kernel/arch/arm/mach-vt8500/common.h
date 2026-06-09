@@ -1,6 +1,6 @@
-/* linux/arch/arm/mach-vt8500/dt_common.h
+/* beep/arch/arm/mach-vt8500/dt_common.h
  *
- * Copyright (C) 2012 Tony Prisk <linux@prisktech.co.nz>
+ * Copyright (C) 2012 Tony Prisk <beep@prisktech.co.nz>
  *
  * This software is licensed under the terms of the GNU General Public
  * License version 2, as published by the Free Software Foundation, and
@@ -16,7 +16,7 @@
 #ifndef __ARCH_ARM_MACH_VT8500_DT_COMMON_H
 #define __ARCH_ARM_MACH_VT8500_DT_COMMON_H
 
-#include <linux/of.h>
+#include <beep/of.h>
 
 void __init vt8500_timer_init(void);
 int __init vt8500_irq_init(struct device_node *node,

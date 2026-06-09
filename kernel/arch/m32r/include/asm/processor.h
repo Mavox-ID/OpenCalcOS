@@ -10,10 +10,10 @@
  *
  * Copyright (C) 1994  Linus Torvalds
  * Copyright (C) 2001  Hiroyuki Kondo, Hirokazu Takata, and Hitoshi Yamamoto
- * Copyright (C) 2004  Hirokazu Takata <takata at linux-m32r.org>
+ * Copyright (C) 2004  Hirokazu Takata <takata at beep-m32r.org>
  */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <asm/cache.h>
 #include <asm/ptrace.h>  /* pt_regs */
 

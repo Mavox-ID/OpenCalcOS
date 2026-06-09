@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/asm/dma-mapping.h
+ * beep/arch/unicore32/include/asm/dma-mapping.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -14,9 +14,9 @@
 
 #ifdef __KERNEL__
 
-#include <linux/mm_types.h>
-#include <linux/scatterlist.h>
-#include <linux/swiotlb.h>
+#include <beep/mm_types.h>
+#include <beep/scatterlist.h>
+#include <beep/swiotlb.h>
 
 #include <asm-generic/dma-coherent.h>
 

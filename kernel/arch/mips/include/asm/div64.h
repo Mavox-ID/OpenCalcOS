@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2000, 2004  Maciej W. Rozycki
- * Copyright (C) 2003, 07 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2003, 07 Ralf Baechle (ralf@beep-mips.org)
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
@@ -13,7 +13,7 @@
 
 #if BITS_PER_LONG == 64
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * No traps on overflows for any of these...

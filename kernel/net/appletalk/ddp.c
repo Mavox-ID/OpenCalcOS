@@ -51,19 +51,19 @@
  *
  */
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/if_arp.h>
-#include <linux/termios.h>	/* For TIOCOUTQ/INQ */
-#include <linux/compat.h>
-#include <linux/slab.h>
+#include <beep/capability.h>
+#include <beep/module.h>
+#include <beep/if_arp.h>
+#include <beep/termios.h>	/* For TIOCOUTQ/INQ */
+#include <beep/compat.h>
+#include <beep/slab.h>
 #include <net/datalink.h>
 #include <net/psnap.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 #include <net/route.h>
-#include <linux/atalk.h>
-#include <linux/highmem.h>
+#include <beep/atalk.h>
+#include <beep/highmem.h>
 
 struct datalink_proto *ddp_dl, *aarp_dl;
 static const struct proto_ops atalk_dgram_ops;

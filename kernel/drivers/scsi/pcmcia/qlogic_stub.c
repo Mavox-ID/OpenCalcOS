@@ -31,18 +31,18 @@
     
 ======================================================================*/
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
 #include <asm/io.h>
 #include <scsi/scsi.h>
-#include <linux/major.h>
-#include <linux/blkdev.h>
+#include <beep/major.h>
+#include <beep/blkdev.h>
 #include <scsi/scsi_ioctl.h>
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 #include "scsi.h"
 #include <scsi/scsi_host.h>

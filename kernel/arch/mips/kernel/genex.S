@@ -8,7 +8,7 @@
  * Copyright (C) 2001 MIPS Technologies, Inc.
  * Copyright (C) 2002, 2007  Maciej W. Rozycki
  */
-#include <linux/init.h>
+#include <beep/init.h>
 
 #include <asm/asm.h>
 #include <asm/asmmacro.h>

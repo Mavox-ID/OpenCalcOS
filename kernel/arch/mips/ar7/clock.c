@@ -18,15 +18,15 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/gcd.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/clk.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/gcd.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/clk.h>
 
 #include <asm/addrspace.h>
 #include <asm/mach-ar7/ar7.h>
@@ -415,7 +415,7 @@ static void __init tnetd7200_init_clocks(void)
 }
 
 /*
- * Linux clock API
+ * Beep clock API
  */
 int clk_enable(struct clk *clk)
 {

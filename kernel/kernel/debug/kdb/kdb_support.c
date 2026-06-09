@@ -11,20 +11,20 @@
  */
 
 #include <stdarg.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/kallsyms.h>
-#include <linux/stddef.h>
-#include <linux/vmalloc.h>
-#include <linux/ptrace.h>
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/hardirq.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/kdb.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/kallsyms.h>
+#include <beep/stddef.h>
+#include <beep/vmalloc.h>
+#include <beep/ptrace.h>
+#include <beep/module.h>
+#include <beep/highmem.h>
+#include <beep/hardirq.h>
+#include <beep/delay.h>
+#include <beep/uaccess.h>
+#include <beep/kdb.h>
+#include <beep/slab.h>
 #include "kdb_private.h"
 
 /*

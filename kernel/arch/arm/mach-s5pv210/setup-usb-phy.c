@@ -7,11 +7,11 @@
  * published by the Free Software Foundationr
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
 #include <mach/map.h>
 #include <mach/regs-sys.h>
 #include <plat/cpu.h>

@@ -16,28 +16,28 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  *
  * Copyright 2004 Arnaud Patard <arnaud.patard@rtp-net.org>
- * Copyright 2008 Ben Dooks <ben-linux@fluff.org>
- * Copyright 2009 Simtec Electronics <linux@simtec.co.uk>
+ * Copyright 2008 Ben Dooks <ben-beep@fluff.org>
+ * Copyright 2009 Simtec Electronics <beep@simtec.co.uk>
  *
  * Additional work by Herbert Pötzl <herbert@13thfloor.at> and
  * Harald Welte <laforge@openmoko.org>
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/gpio.h>
+#include <beep/input.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/io.h>
 
 #include <plat/adc.h>
 #include <plat/regs-adc.h>
-#include <linux/platform_data/touchscreen-s3c2410.h>
+#include <beep/platform_data/touchscreen-s3c2410.h>
 
 #define TSC_SLEEP  (S3C2410_ADCTSC_PULL_UP_DISABLE | S3C2410_ADCTSC_XY_PST(0))
 
@@ -436,6 +436,6 @@ module_platform_driver(s3c_ts_driver);
 
 MODULE_AUTHOR("Arnaud Patard <arnaud.patard@rtp-net.org>, "
 	      "Ben Dooks <ben@simtec.co.uk>, "
-	      "Simtec Electronics <linux@simtec.co.uk>");
+	      "Simtec Electronics <beep@simtec.co.uk>");
 MODULE_DESCRIPTION("S3C24XX Touchscreen driver");
 MODULE_LICENSE("GPL v2");

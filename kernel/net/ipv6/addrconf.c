@@ -1,6 +1,6 @@
 /*
  *	IPv6 Address [auto]configuration
- *	Linux INET6 implementation
+ *	Beep INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
@@ -40,30 +40,30 @@
 
 #define pr_fmt(fmt) "IPv6: " fmt
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_addr.h>
-#include <linux/if_arp.h>
-#include <linux/if_arcnet.h>
-#include <linux/if_infiniband.h>
-#include <linux/route.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/in6.h>
+#include <beep/netdevice.h>
+#include <beep/if_addr.h>
+#include <beep/if_arp.h>
+#include <beep/if_arcnet.h>
+#include <beep/if_infiniband.h>
+#include <beep/route.h>
+#include <beep/inetdevice.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <beep/sysctl.h>
 #endif
-#include <linux/capability.h>
-#include <linux/delay.h>
-#include <linux/notifier.h>
-#include <linux/string.h>
-#include <linux/hash.h>
+#include <beep/capability.h>
+#include <beep/delay.h>
+#include <beep/notifier.h>
+#include <beep/string.h>
+#include <beep/hash.h>
 
 #include <net/net_namespace.h>
 #include <net/sock.h>
@@ -79,20 +79,20 @@
 #include <net/ip.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
-#include <linux/if_tunnel.h>
-#include <linux/rtnetlink.h>
-#include <linux/netconf.h>
+#include <beep/if_tunnel.h>
+#include <beep/rtnetlink.h>
+#include <beep/netconf.h>
 
 #ifdef CONFIG_IPV6_PRIVACY
-#include <linux/random.h>
+#include <beep/random.h>
 #endif
 
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 #include <asm/unaligned.h>
 
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/export.h>
 
 /* Set to 3 to get tracing... */
 #define ACONF_DEBUG 2

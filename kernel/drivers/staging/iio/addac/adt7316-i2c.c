@@ -7,11 +7,11 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
 
 #include "adt7316.h"
 

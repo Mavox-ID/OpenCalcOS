@@ -6,17 +6,17 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
-#include <linux/irq.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/usb/musb.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
+#include <beep/irq.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/usb/musb.h>
 #include <asm/bfin5xx_spi.h>
 #include <asm/dma.h>
 #include <asm/gpio.h>
@@ -26,8 +26,8 @@
 #include <asm/portmux.h>
 #include <asm/bfin_sdh.h>
 #include <mach/bf54x_keys.h>
-#include <linux/input.h>
-#include <linux/spi/ad7877.h>
+#include <beep/input.h>
+#include <beep/spi/ad7877.h>
 
 /*
  * Name the Board for the /proc/cpuinfo
@@ -39,7 +39,7 @@ const char bfin_board_name[] = "ADI BF548-EZKIT";
  */
 
 #if defined(CONFIG_USB_ISP1760_HCD) || defined(CONFIG_USB_ISP1760_HCD_MODULE)
-#include <linux/usb/isp1760.h>
+#include <beep/usb/isp1760.h>
 static struct resource bfin_isp1760_resources[] = {
 	[0] = {
 		.start  = 0x2C0C0000,
@@ -188,7 +188,7 @@ static struct platform_device bfin_rotary_device = {
 #endif
 
 #if defined(CONFIG_INPUT_ADXL34X) || defined(CONFIG_INPUT_ADXL34X_MODULE)
-#include <linux/input/adxl34x.h>
+#include <beep/input/adxl34x.h>
 static const struct adxl34x_platform_data adxl34x_info = {
 	.x_axis_offset = 0,
 	.y_axis_offset = 0,
@@ -564,7 +564,7 @@ static struct platform_device bfin_sir3_device = {
 #endif
 
 #if defined(CONFIG_SMSC911X) || defined(CONFIG_SMSC911X_MODULE)
-#include <linux/smsc911x.h>
+#include <beep/smsc911x.h>
 
 static struct resource smsc911x_resources[] = {
 	{
@@ -906,7 +906,7 @@ static struct mtd_partition partition_info[] = {
 		.offset = 0,
 		.size = 0x80000,
 	}, {
-		.name = "linux kernel(nand)",
+		.name = "beep kernel(nand)",
 		.offset = MTDPART_OFS_APPEND,
 		.size = 4 * 1024 * 1024,
 	},
@@ -973,7 +973,7 @@ static struct mtd_partition ezkit_partitions[] = {
 		.size       = 0x80000,
 		.offset     = 0,
 	}, {
-		.name       = "linux kernel(nor)",
+		.name       = "beep kernel(nor)",
 		.size       = 0x400000,
 		.offset     = MTDPART_OFS_APPEND,
 	}, {
@@ -1024,7 +1024,7 @@ static struct mtd_partition bfin_spi_flash_partitions[] = {
 		.offset = 0,
 		.mask_flags = MTD_CAP_ROM
 	}, {
-		.name = "linux kernel(spi)",
+		.name = "beep kernel(spi)",
 		.size = MTDPART_SIZ_FULL,
 		.offset = MTDPART_OFS_APPEND,
 	}
@@ -1186,7 +1186,7 @@ static struct platform_device bf54x_spi_master1 = {
 
 #if defined(CONFIG_VIDEO_BLACKFIN_CAPTURE) \
 	|| defined(CONFIG_VIDEO_BLACKFIN_CAPTURE_MODULE)
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 #include <media/blackfin/bfin_capture.h>
 #include <media/blackfin/ppi.h>
 
@@ -1342,7 +1342,7 @@ static struct i2c_board_info __initdata bfin_i2c_board_info1[] = {
 #endif
 
 #if defined(CONFIG_KEYBOARD_GPIO) || defined(CONFIG_KEYBOARD_GPIO_MODULE)
-#include <linux/gpio_keys.h>
+#include <beep/gpio_keys.h>
 
 static struct gpio_keys_button bfin_gpio_keys_table[] = {
 	{BTN_0, GPIO_PB8, 1, "gpio-keys: BTN0"},

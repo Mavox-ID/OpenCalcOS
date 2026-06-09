@@ -12,7 +12,7 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/memblock.h>
+#include <beep/memblock.h>
 
 #include <asm/pgtable.h>
 #include <asm/mmu.h>

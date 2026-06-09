@@ -1,7 +1,7 @@
 /*
- * linux/arch/arm/mach-w90x900/irq.c
+ * beep/arch/arm/mach-w90x900/irq.c
  *
- * based on linux/arch/arm/plat-s3c24xx/irq.c by Ben Dooks
+ * based on beep/arch/arm/plat-s3c24xx/irq.c by Ben Dooks
  *
  * Copyright (c) 2008 Nuvoton technology corporation
  * All rights reserved.
@@ -14,13 +14,13 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/ptrace.h>
-#include <linux/device.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/ptrace.h>
+#include <beep/device.h>
+#include <beep/io.h>
 
 #include <asm/irq.h>
 #include <asm/mach/irq.h>

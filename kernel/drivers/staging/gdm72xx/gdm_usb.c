@@ -11,11 +11,11 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/usb.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/usb.h>
 #include <asm/byteorder.h>
-#include <linux/kthread.h>
+#include <beep/kthread.h>
 
 #include "gdm_usb.h"
 #include "gdm_wimax.h"

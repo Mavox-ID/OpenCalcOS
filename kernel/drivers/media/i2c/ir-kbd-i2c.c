@@ -35,16 +35,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/workqueue.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/workqueue.h>
 
 #include <media/rc-core.h>
 #include <media/ir-kbd-i2c.h>

@@ -40,25 +40,25 @@
 
 #undef DEBUG
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/timer.h>
+#include <beep/bitops.h>
 
-#include <linux/signal.h>
-#include <linux/string.h>
-#include <linux/device.h>
+#include <beep/signal.h>
+#include <beep/string.h>
+#include <beep/device.h>
 
-#include <linux/ip.h>
-#include <linux/if_arp.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/ctype.h>
+#include <beep/ip.h>
+#include <beep/if_arp.h>
+#include <beep/tcp.h>
+#include <beep/skbuff.h>
+#include <beep/ctype.h>
 #include <net/dst.h>
 
 #include <asm/io.h>
@@ -70,7 +70,7 @@
 
 MODULE_AUTHOR
     ("(C) 2001 IBM Corporation by Fritz Elfert (felfert@millenux.com)");
-MODULE_DESCRIPTION ("Linux for S/390 IUCV network driver");
+MODULE_DESCRIPTION ("Beep for S/390 IUCV network driver");
 
 /**
  * Debug Facility stuff

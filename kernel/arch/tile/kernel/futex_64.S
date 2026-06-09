@@ -15,7 +15,7 @@
  * kernel exceptions.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/errno.h>
 #include <asm/futex.h>
 #include <asm/page.h>

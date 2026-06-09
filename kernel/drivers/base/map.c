@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/base/map.c
+ *  beep/drivers/base/map.c
  *
  * (C) Copyright Al Viro 2002,2003
  *	Released under GPL v2.
@@ -9,12 +9,12 @@
  * local to that file.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/kdev_t.h>
-#include <linux/kobject.h>
-#include <linux/kobj_map.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/kdev_t.h>
+#include <beep/kobject.h>
+#include <beep/kobj_map.h>
 
 struct kobj_map {
 	struct probe {

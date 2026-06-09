@@ -9,10 +9,10 @@
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/init.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_clock.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/pm_runtime.h>
+#include <beep/pm_clock.h>
+#include <beep/platform_device.h>
 
 #ifdef CONFIG_PM_RUNTIME
 static int davinci_pm_runtime_suspend(struct device *dev)

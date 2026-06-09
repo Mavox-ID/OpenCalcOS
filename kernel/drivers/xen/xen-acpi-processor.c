@@ -17,14 +17,14 @@
  *
  */
 
-#include <linux/cpumask.h>
-#include <linux/cpufreq.h>
-#include <linux/freezer.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <beep/cpumask.h>
+#include <beep/cpufreq.h>
+#include <beep/freezer.h>
+#include <beep/kernel.h>
+#include <beep/kthread.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/types.h>
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
 #include <acpi/processor.h>

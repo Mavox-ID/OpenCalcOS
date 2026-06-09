@@ -5,7 +5,7 @@
  *		 Frank Blaschka <frank.blaschka@de.ibm.com>
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/cio.h>
 #include "qeth_core_mpc.h"
 

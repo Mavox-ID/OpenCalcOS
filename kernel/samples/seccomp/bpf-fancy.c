@@ -9,9 +9,9 @@
  * applications using prctl(PR_ATTACH_SECCOMP_FILTER).
  */
 
-#include <linux/filter.h>
-#include <linux/seccomp.h>
-#include <linux/unistd.h>
+#include <beep/filter.h>
+#include <beep/seccomp.h>
+#include <beep/unistd.h>
 #include <stdio.h>
 #include <string.h>
 #include <sys/prctl.h>

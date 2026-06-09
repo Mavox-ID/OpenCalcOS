@@ -8,9 +8,9 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/io.h>
 
 /* All SH3 devices are equipped with IRQ0->5 (except sh7708) */
 

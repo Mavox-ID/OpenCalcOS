@@ -20,20 +20,20 @@
 // Description:  Custom character device dispatch routines.
 //
 // History:
-// 8/29/02    Whc                Ported to Linux.
-// 6/05/06    Whc                Porting to Linux 2.6.9
+// 8/29/02    Whc                Ported to Beep.
+// 6/05/06    Whc                Porting to Beep 2.6.9
 //
 //---------------------------------------------------------------------------
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/poll.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/poll.h>
+#include <beep/netdevice.h>
+#include <beep/delay.h>
 
-#include <linux/ioctl.h>
-#include <linux/debugfs.h>
+#include <beep/ioctl.h>
+#include <beep/debugfs.h>
 #include "ft1000_usb.h"
 
 static int ft1000_flarion_cnt = 0;

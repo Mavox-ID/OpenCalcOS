@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/mdacon.c -- Low level MDA based console driver
+ *  beep/drivers/video/mdacon.c -- Low level MDA based console driver
  *
  *	(c) 1998 Andrew Apted <ajapted@netspace.net.au>
  *
@@ -26,20 +26,20 @@
  *  Paul G. (03/2001) Fix mdacon= boot prompt to use __setup().
  */
 
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/kd.h>
-#include <linux/vt_kern.h>
-#include <linux/vt_buffer.h>
-#include <linux/selection.h>
-#include <linux/spinlock.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/console.h>
+#include <beep/string.h>
+#include <beep/kd.h>
+#include <beep/vt_kern.h>
+#include <beep/vt_buffer.h>
+#include <beep/selection.h>
+#include <beep/spinlock.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/init.h>
 
 #include <asm/io.h>
 #include <asm/vga.h>

@@ -10,10 +10,10 @@
  *	(at your option) any later version.
  */
 
-#ifndef __LINUX_USB_GADGET_IMX_H
-#define __LINUX_USB_GADGET_IMX_H
+#ifndef __BEEP_USB_GADGET_IMX_H
+#define __BEEP_USB_GADGET_IMX_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* Helper macros */
 #define EP_NO(ep)	((ep->bEndpointAddress) & ~USB_DIR_IN) /* IN:1, OUT:0 */
@@ -348,4 +348,4 @@ struct imx_udc_struct {
 	#define D_ERR(dev, args...)		do {} while (0)
 #endif /* DEBUG */
 
-#endif /* __LINUX_USB_GADGET_IMX_H */
+#endif /* __BEEP_USB_GADGET_IMX_H */

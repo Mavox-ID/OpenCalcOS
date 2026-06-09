@@ -17,20 +17,20 @@
  * Copyright (C) 2008 Kevin D. Kissell
  */
 
-#include <linux/clockchips.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/cpumask.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/ftrace.h>
-#include <linux/slab.h>
+#include <beep/clockchips.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/cpumask.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/module.h>
+#include <beep/ftrace.h>
+#include <beep/slab.h>
 
 #include <asm/cpu.h>
 #include <asm/processor.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/hardirq.h>
 #include <asm/hazards.h>
 #include <asm/irq.h>
@@ -291,7 +291,7 @@ static void smtc_configure_tlb(void)
  * one at a time(!).
  *
  * This version of the build_cpu_map and prepare_cpus routines assumes
- * that *all* TCs of a MIPS MT core will be used for Linux, and that
+ * that *all* TCs of a MIPS MT core will be used for Beep, and that
  * they will be spread across *all* available VPEs (to minimise the
  * loss of efficiency due to exception service serialization).
  * An improved version would pick up configuration information and
@@ -858,7 +858,7 @@ void smtc_send_ipi(int cpu, int type, unsigned int action)
 	int mtflags;
 	unsigned long tcrestart;
 	extern void r4k_wait_irqoff(void), __pastwait(void);
-	int set_resched_flag = (type == LINUX_SMP_IPI &&
+	int set_resched_flag = (type == BEEP_SMP_IPI &&
 				action == SMP_RESCHEDULE_YOURSELF);
 
 	if (cpu == smp_processor_id()) {
@@ -1025,7 +1025,7 @@ void ipi_decode(struct smtc_ipi *pipi)
 		smtc_clock_tick_interrupt();
 		break;
 
-	case LINUX_SMP_IPI:
+	case BEEP_SMP_IPI:
 		switch ((int)arg_copy) {
 		case SMP_RESCHEDULE_YOURSELF:
 			ipi_resched_interrupt();
@@ -1086,7 +1086,7 @@ void deferred_smtc_ipi(void)
 		pipi = __smtc_ipi_dq(q);
 		spin_unlock(&q->lock);
 		if (pipi != NULL) {
-			if (pipi->type == LINUX_SMP_IPI &&
+			if (pipi->type == BEEP_SMP_IPI &&
 			    (int)pipi->arg == SMP_RESCHEDULE_YOURSELF)
 				IPIQ[cpu].resched_flag = 0;
 			ipi_decode(pipi);
@@ -1171,7 +1171,7 @@ static irqreturn_t ipi_interrupt(int irq, void *dev_idm)
 				 * with interrupts off
 				 */
 				local_irq_save(flags);
-				if (pipi->type == LINUX_SMP_IPI &&
+				if (pipi->type == BEEP_SMP_IPI &&
 				    (int)pipi->arg == SMP_RESCHEDULE_YOURSELF)
 					IPIQ[cpu].resched_flag = 0;
 				ipi_decode(pipi);

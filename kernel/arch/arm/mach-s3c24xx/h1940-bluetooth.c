@@ -10,14 +10,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/leds.h>
-#include <linux/gpio.h>
-#include <linux/rfkill.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/leds.h>
+#include <beep/gpio.h>
+#include <beep/rfkill.h>
 
 #include <mach/regs-gpio.h>
 #include <mach/hardware.h>

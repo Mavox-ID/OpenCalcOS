@@ -8,15 +8,15 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/stat.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/falloc.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/mount.h>
+#include <beep/fs.h>
+#include <beep/f2fs_fs.h>
+#include <beep/stat.h>
+#include <beep/buffer_head.h>
+#include <beep/writeback.h>
+#include <beep/falloc.h>
+#include <beep/types.h>
+#include <beep/uaccess.h>
+#include <beep/mount.h>
 
 #include "f2fs.h"
 #include "node.h"
@@ -606,7 +606,7 @@ long f2fs_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 		oldflags = fi->i_flags;
 
 		if ((flags ^ oldflags) & (FS_APPEND_FL | FS_IMMUTABLE_FL)) {
-			if (!capable(CAP_LINUX_IMMUTABLE)) {
+			if (!capable(CAP_BEEP_IMMUTABLE)) {
 				mutex_unlock(&inode->i_mutex);
 				ret = -EPERM;
 				goto out;

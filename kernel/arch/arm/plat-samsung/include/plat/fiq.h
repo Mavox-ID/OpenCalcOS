@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/include/plat/fiq.h
+/* beep/arch/arm/plat-samsung/include/plat/fiq.h
  *
  * Copyright (c) 2009 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>

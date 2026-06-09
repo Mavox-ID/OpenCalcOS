@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if test x"$TERM" = x"" -o x"$TERM" = x"unknown"; then
-	TERM="linux"
+	TERM="beep"
 	echo "* Setting TERM='$TERM'"
 fi
 export TERM

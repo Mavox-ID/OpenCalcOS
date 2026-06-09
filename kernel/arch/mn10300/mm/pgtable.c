@@ -9,17 +9,17 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/spinlock.h>
-#include <linux/quicklist.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/gfp.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/smp.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/spinlock.h>
+#include <beep/quicklist.h>
 
 #include <asm/pgtable.h>
 #include <asm/pgalloc.h>

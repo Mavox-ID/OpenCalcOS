@@ -3761,7 +3761,7 @@ setsignal(int signo)
 			/* pretend it worked; maybe we should give a warning,
 			 * but other shells don't. We don't alter sigmode,
 			 * so we retry every time.
-			 * btw, in Linux it never fails. --vda */
+			 * btw, in Beep it never fails. --vda */
 			return;
 		}
 		if (act.sa_handler == SIG_IGN) {
@@ -6071,7 +6071,7 @@ static int substr_atoi(const char *s)
  * Currently, our code complies to the above rule by never globbing
  * redirection filenames.
  * Bash performs globbing, unless it is non-interactive and in POSIX mode.
- * (this means that on a typical Linux distro, bash almost always
+ * (this means that on a typical Beep distro, bash almost always
  * performs globbing, and thus diverges from what we do).
  */
 #define EXP_CASE        0x10    /* keeps quotes around for CASE pattern */
@@ -14028,8 +14028,12 @@ helpcmd(int argc UNUSED_PARAM, char **argv UNUSED_PARAM)
 	unsigned i;
 
 	out1fmt(
-		"Built-in commands:\n"
-		"------------------\n");
+		"\n\033[1;32m=== Welcome to OpenCalcOS ===\033[0m\n"
+		"Developer: Mavox-ID\n\n"
+		"Available shell commands:\n"
+		"------------------------\n"
+	);
+
 	for (col = 0, i = 0; i < ARRAY_SIZE(builtintab); i++) {
 		col += out1fmt("%c%s", ((col == 0) ? '\t' : ' '),
 					builtintab[i].name + 1);
@@ -14038,7 +14042,22 @@ helpcmd(int argc UNUSED_PARAM, char **argv UNUSED_PARAM)
 			col = 0;
 		}
 	}
+	
+	if (col != 0) {
+		out1fmt("\n");
+	}
+
+	out1fmt(
+		"\nCustom tools:\n"
+		"  beep  - Just logo of Beep Kernel\n"
+		"  calc  - Calculator on calculator\n"
+		"  pipes - Screen saver\n"
+	);
+
 # if ENABLE_FEATURE_SH_STANDALONE
+	out1fmt("\nAvailable system applets:\n"
+	        "------------------------\n");
+	col = 0;
 	{
 		const char *a = applet_names;
 		while (*a) {
@@ -14051,7 +14070,13 @@ helpcmd(int argc UNUSED_PARAM, char **argv UNUSED_PARAM)
 				continue;
 		}
 	}
+	if (col != 0) {
+		out1fmt("\n");
+	}
 # endif
+
+	out1fmt("\nUse '[command] --help' for core utilities.\n\n");
+
 	newline_and_flush(stdout);
 	return EXIT_SUCCESS;
 }
@@ -14717,7 +14742,7 @@ int ash_main(int argc UNUSED_PARAM, char **argv)
  state2:
 	state = 3;
 	if (iflag
-#ifndef linux
+#ifndef beep
 	 && getuid() == geteuid() && getgid() == getegid()
 #endif
 	) {

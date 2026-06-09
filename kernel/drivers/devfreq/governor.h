@@ -14,7 +14,7 @@
 #ifndef _GOVERNOR_H
 #define _GOVERNOR_H
 
-#include <linux/devfreq.h>
+#include <beep/devfreq.h>
 
 #define to_devfreq(DEV)	container_of((DEV), struct devfreq, dev)
 

@@ -1,5 +1,5 @@
 /*
- * Linux-DVB Driver for DiBcom's DiB0070 base-band RF Tuner.
+ * Beep-DVB Driver for DiBcom's DiB0070 base-band RF Tuner.
  *
  * Copyright (C) 2005-9 DiBcom (http://www.dibcom.fr/)
  *
@@ -24,10 +24,10 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
 
 #include "dvb_frontend.h"
 

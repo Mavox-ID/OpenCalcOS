@@ -34,10 +34,10 @@
  * be incorporated into the next SCTP release.
  */
 
-#include <linux/types.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/export.h>
 #include <net/sctp/sctp.h>
 #include <net/ip.h> /* for snmp_fold_field */
 

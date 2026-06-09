@@ -12,4 +12,4 @@ lib-$(CONFIG_HALT) += halt.o
 lib-$(CONFIG_POWEROFF) += halt.o
 lib-$(CONFIG_REBOOT) += halt.o
 lib-$(CONFIG_INIT) += init.o
-lib-$(CONFIG_LINUXRC) += init.o
+lib-$(CONFIG_BEEPRC) += init.o

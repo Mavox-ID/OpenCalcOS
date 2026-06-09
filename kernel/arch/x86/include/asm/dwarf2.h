@@ -41,7 +41,7 @@
 	 * The latter we currently just discard since we don't do DWARF
 	 * unwinding at runtime.  So only the offline DWARF information is
 	 * useful to anyone.  Note we should not use this directive if this
-	 * file is used in the vDSO assembly, or if vmlinux.lds.S gets
+	 * file is used in the vDSO assembly, or if vmbeep.lds.S gets
 	 * changed so it doesn't discard .eh_frame.
 	 */
 	.cfi_sections .debug_frame

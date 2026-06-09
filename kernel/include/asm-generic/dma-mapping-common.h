@@ -1,11 +1,11 @@
 #ifndef _ASM_GENERIC_DMA_MAPPING_H
 #define _ASM_GENERIC_DMA_MAPPING_H
 
-#include <linux/kmemcheck.h>
-#include <linux/bug.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-debug.h>
-#include <linux/dma-attrs.h>
+#include <beep/kmemcheck.h>
+#include <beep/bug.h>
+#include <beep/scatterlist.h>
+#include <beep/dma-debug.h>
+#include <beep/dma-attrs.h>
 
 static inline dma_addr_t dma_map_single_attrs(struct device *dev, void *ptr,
 					      size_t size,

@@ -18,24 +18,24 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <asm/cacheflush.h>
-#include <linux/fdtable.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/nsproxy.h>
-#include <linux/poll.h>
-#include <linux/debugfs.h>
-#include <linux/rbtree.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/pid_namespace.h>
+#include <beep/fdtable.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/list.h>
+#include <beep/miscdevice.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/nsproxy.h>
+#include <beep/poll.h>
+#include <beep/debugfs.h>
+#include <beep/rbtree.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/uaccess.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
+#include <beep/pid_namespace.h>
 
 #include "binder.h"
 #include "binder_trace.h"

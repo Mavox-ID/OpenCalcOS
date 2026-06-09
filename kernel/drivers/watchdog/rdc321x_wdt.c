@@ -21,22 +21,22 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/timer.h>
-#include <linux/completion.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/mfd/rdc321x.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/miscdevice.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/timer.h>
+#include <beep/completion.h>
+#include <beep/jiffies.h>
+#include <beep/platform_device.h>
+#include <beep/watchdog.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
+#include <beep/mfd/rdc321x.h>
 
 #define RDC_WDT_MASK	0x80000000 /* Mask */
 #define RDC_WDT_EN	0x00800000 /* Enable bit */

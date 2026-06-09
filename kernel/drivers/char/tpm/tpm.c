@@ -23,11 +23,11 @@
  *
  */
 
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/freezer.h>
+#include <beep/poll.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/freezer.h>
 
 #include "tpm.h"
 #include "tpm_eventlog.h"

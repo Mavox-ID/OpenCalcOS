@@ -23,9 +23,9 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/seq_file.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/seq_file.h>
 
 #include <asm/io.h>
 

@@ -10,9 +10,9 @@
  * On sparc, thread_info data is static and TI_XXX offsets are computed by hand.
  */
 
-#include <linux/sched.h>
-// #include <linux/mm.h>
-#include <linux/kbuild.h>
+#include <beep/sched.h>
+// #include <beep/mm.h>
+#include <beep/kbuild.h>
 
 #ifdef CONFIG_SPARC32
 int sparc32_foo(void)

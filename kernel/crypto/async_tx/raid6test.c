@@ -19,11 +19,11 @@
  * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  *
  */
-#include <linux/async_tx.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/module.h>
+#include <beep/async_tx.h>
+#include <beep/gfp.h>
+#include <beep/mm.h>
+#include <beep/random.h>
+#include <beep/module.h>
 
 #undef pr
 #define pr(fmt, args...) pr_info("raid6test: " fmt, ##args)

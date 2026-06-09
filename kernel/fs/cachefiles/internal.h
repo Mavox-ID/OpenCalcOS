@@ -9,11 +9,11 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/fscache-cache.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/security.h>
+#include <beep/fscache-cache.h>
+#include <beep/timer.h>
+#include <beep/wait.h>
+#include <beep/workqueue.h>
+#include <beep/security.h>
 
 struct cachefiles_cache;
 struct cachefiles_object;

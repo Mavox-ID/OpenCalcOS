@@ -17,13 +17,13 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/file.h>
-#include <linux/posix-clock.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <beep/device.h>
+#include <beep/export.h>
+#include <beep/file.h>
+#include <beep/posix-clock.h>
+#include <beep/slab.h>
+#include <beep/syscalls.h>
+#include <beep/uaccess.h>
 
 static void delete_clock(struct kref *kref);
 

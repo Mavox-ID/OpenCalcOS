@@ -6,11 +6,11 @@
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/mm.h>
-#include <linux/mm_types.h>
-#include <linux/scatterlist.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/mm.h>
+#include <beep/mm_types.h>
+#include <beep/scatterlist.h>
 
 #include <asm/cacheflush.h>
 

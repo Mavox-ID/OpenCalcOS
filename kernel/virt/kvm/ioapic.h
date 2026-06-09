@@ -1,7 +1,7 @@
 #ifndef __KVM_IO_APIC_H
 #define __KVM_IO_APIC_H
 
-#include <linux/kvm_host.h>
+#include <beep/kvm_host.h>
 
 #include "iodev.h"
 

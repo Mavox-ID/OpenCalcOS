@@ -1,9 +1,9 @@
 #ifndef _ASM_GENERIC_PERCPU_H_
 #define _ASM_GENERIC_PERCPU_H_
 
-#include <linux/compiler.h>
-#include <linux/threads.h>
-#include <linux/percpu-defs.h>
+#include <beep/compiler.h>
+#include <beep/threads.h>
+#include <beep/percpu-defs.h>
 
 #ifdef CONFIG_SMP
 

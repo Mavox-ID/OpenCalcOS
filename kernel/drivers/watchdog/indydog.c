@@ -14,18 +14,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/miscdevice.h>
+#include <beep/watchdog.h>
+#include <beep/notifier.h>
+#include <beep/reboot.h>
+#include <beep/init.h>
+#include <beep/uaccess.h>
 #include <asm/sgi/mc.h>
 
 static unsigned long indydog_alive;

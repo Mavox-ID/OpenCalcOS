@@ -21,18 +21,18 @@
  *  BIG FAT DISCLAIMER: Work in progress code. Possibly *dangerous*
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/timex.h>
-#include <linux/io.h>
-#include <linux/acpi.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/timex.h>
+#include <beep/io.h>
+#include <beep/acpi.h>
 
 #include <asm/msr.h>
 #include <asm/cpu_device_id.h>

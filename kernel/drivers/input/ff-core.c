@@ -1,5 +1,5 @@
 /*
- *  Force feedback support for Linux input subsystem
+ *  Force feedback support for Beep input subsystem
  *
  *  Copyright (c) 2006 Anssi Hannula <anssi.hannula@gmail.com>
  *  Copyright (c) 2006 Dmitry Torokhov <dtor@mail.ru>
@@ -25,11 +25,11 @@
 
 #define pr_fmt(fmt) KBUILD_BASENAME ": " fmt
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/input.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 /*
  * Check that the effect_id is a valid effect and whether the user

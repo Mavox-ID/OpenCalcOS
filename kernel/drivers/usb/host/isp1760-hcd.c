@@ -11,20 +11,20 @@
  * (c) 2011 Arvid Brodin <arvid.brodin@enea.com>
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/timer.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
+#include <beep/mm.h>
+#include <beep/timer.h>
 #include <asm/unaligned.h>
 #include <asm/cacheflush.h>
-#include <linux/gpio.h>
+#include <beep/gpio.h>
 
 #include "isp1760-hcd.h"
 
@@ -2263,5 +2263,5 @@ err_put:
 }
 
 MODULE_DESCRIPTION("Driver for the ISP1760 USB-controller from NXP");
-MODULE_AUTHOR("Sebastian Siewior <bigeasy@linuxtronix.de>");
+MODULE_AUTHOR("Sebastian Siewior <bigeasy@beeptronix.de>");
 MODULE_LICENSE("GPL v2");

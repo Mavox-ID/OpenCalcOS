@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/z2.c
+ *  beep/arch/arm/mach-pxa/z2.c
  *
  *  Support for the Zipit Z2 Handheld device.
  *
@@ -13,23 +13,23 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/pwm_backlight.h>
-#include <linux/z2_battery.h>
-#include <linux/dma-mapping.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/spi/libertas_spi.h>
-#include <linux/spi/lms283gf05.h>
-#include <linux/power_supply.h>
-#include <linux/mtd/physmap.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/delay.h>
-#include <linux/regulator/machine.h>
-#include <linux/i2c/pxa-i2c.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/pwm_backlight.h>
+#include <beep/z2_battery.h>
+#include <beep/dma-mapping.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/pxa2xx_spi.h>
+#include <beep/spi/libertas_spi.h>
+#include <beep/spi/lms283gf05.h>
+#include <beep/power_supply.h>
+#include <beep/mtd/physmap.h>
+#include <beep/gpio.h>
+#include <beep/gpio_keys.h>
+#include <beep/delay.h>
+#include <beep/regulator/machine.h>
+#include <beep/i2c/pxa-i2c.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -37,9 +37,9 @@
 #include <mach/pxa27x.h>
 #include <mach/mfp-pxa27x.h>
 #include <mach/z2.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/keypad-pxa27x.h>
+#include <beep/platform_data/video-pxafb.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/keypad-pxa27x.h>
 #include <mach/pm.h>
 
 #include "generic.h"

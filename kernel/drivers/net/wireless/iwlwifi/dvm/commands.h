@@ -25,7 +25,7 @@
  * in the file called LICENSE.GPL.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel Beep Wireless <ilw@beep.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  * BSD LICENSE
@@ -69,8 +69,8 @@
 #ifndef __iwl_commands_h__
 #define __iwl_commands_h__
 
-#include <linux/ieee80211.h>
-#include <linux/types.h>
+#include <beep/ieee80211.h>
+#include <beep/types.h>
 
 
 enum {
@@ -412,7 +412,7 @@ struct iwl_tx_ant_config_cmd {
  *     information about any uCode error that occurs.  For agn, the format
  *     of the error log is defined by struct iwl_error_event_table.
  *
- * The Linux driver can print both logs to the system log when a uCode error
+ * The Beep driver can print both logs to the system log when a uCode error
  * occurs.
  */
 
@@ -1642,7 +1642,7 @@ struct iwl_link_qual_agg_params {
  * FILLING THE RATE TABLE
  *
  * Given a particular initial rate and mode, as determined by the rate
- * scaling algorithm described below, the Linux driver uses the following
+ * scaling algorithm described below, the Beep driver uses the following
  * formula to fill the rs_table[LINK_QUAL_MAX_RETRY_NUM] rate table in the
  * Link Quality command:
  *
@@ -1670,7 +1670,7 @@ struct iwl_link_qual_agg_params {
  *
  * ACCUMULATING HISTORY
  *
- * The rate scaling algorithm for agn devices, as implemented in Linux driver,
+ * The rate scaling algorithm for agn devices, as implemented in Beep driver,
  * uses two sets of frame Tx success history:  One for the current/active
  * modulation mode, and one for a speculative/search mode that is being
  * attempted. If the speculative mode turns out to be more effective (i.e.

@@ -9,17 +9,17 @@
  * any later version.
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netfilter.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/tc_act/tc_nat.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/netfilter.h>
+#include <beep/rtnetlink.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/tc_act/tc_nat.h>
 #include <net/act_api.h>
 #include <net/icmp.h>
 #include <net/ip.h>

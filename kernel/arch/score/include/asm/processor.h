@@ -1,8 +1,8 @@
 #ifndef _ASM_SCORE_PROCESSOR_H
 #define _ASM_SCORE_PROCESSOR_H
 
-#include <linux/cpumask.h>
-#include <linux/threads.h>
+#include <beep/cpumask.h>
+#include <beep/threads.h>
 
 #include <asm/segment.h>
 

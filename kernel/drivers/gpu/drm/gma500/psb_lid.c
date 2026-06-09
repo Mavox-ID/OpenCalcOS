@@ -21,7 +21,7 @@
 #include "psb_drv.h"
 #include "psb_reg.h"
 #include "psb_intel_reg.h"
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 
 static void psb_lid_timer_func(unsigned long data)
 {

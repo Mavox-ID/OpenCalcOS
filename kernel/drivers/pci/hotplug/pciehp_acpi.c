@@ -23,11 +23,11 @@
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/acpi.h>
+#include <beep/pci.h>
+#include <beep/pci_hotplug.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include "pciehp.h"
 
 #define PCIEHP_DETECT_PCIE	(0)

@@ -20,16 +20,16 @@
  * TODO: add support for reading sizes other than 32bits and masking
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/timeriomem-rng.h>
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/completion.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/hw_random.h>
+#include <beep/io.h>
+#include <beep/timeriomem-rng.h>
+#include <beep/jiffies.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/completion.h>
 
 static struct timeriomem_rng_data *timeriomem_rng_data;
 

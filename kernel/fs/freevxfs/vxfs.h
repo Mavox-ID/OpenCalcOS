@@ -36,7 +36,7 @@
  * This file contains the definition of the disk and core
  * superblocks of the Veritas Filesystem.
  */
-#include <linux/types.h>
+#include <beep/types.h>
 
 
 /*

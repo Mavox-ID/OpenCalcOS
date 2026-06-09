@@ -7,20 +7,20 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/freezer.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/highmem.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/freezer.h>
+#include <beep/jiffies.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/kthread.h>
+#include <beep/sched.h>
+#include <beep/highmem.h>
 #include <asm/byteorder.h>
-#include <linux/swab.h>
+#include <beep/swab.h>
 #include "r592.h"
 
 static bool r592_enable_dma = 1;

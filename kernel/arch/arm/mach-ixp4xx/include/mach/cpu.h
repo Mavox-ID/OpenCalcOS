@@ -14,7 +14,7 @@
 #ifndef __ASM_ARCH_CPU_H__
 #define __ASM_ARCH_CPU_H__
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/cputype.h>
 
 /* Processor id value in CP15 Register 0 */

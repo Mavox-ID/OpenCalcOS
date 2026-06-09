@@ -9,11 +9,11 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/err.h>
 
-#include <linux/platform_data/omap-wd-timer.h>
+#include <beep/platform_data/omap-wd-timer.h>
 
 #include "omap_hwmod.h"
 #include "omap_device.h"

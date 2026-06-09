@@ -26,9 +26,9 @@
  *
  ********************************************************************/
 
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <beep/skbuff.h>
+#include <beep/string.h>
+#include <beep/module.h>
 #include <asm/byteorder.h>
 
 #include <net/irda/irda.h>

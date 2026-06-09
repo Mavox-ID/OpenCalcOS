@@ -28,9 +28,9 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/usb/ch9.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/usb/ch9.h>
+#include <beep/module.h>
 
 /*-------------------------------------------------------------------------*/
 
@@ -142,7 +142,7 @@ static int __init msg_do_config(struct usb_configuration *c)
 }
 
 static struct usb_configuration msg_config_driver = {
-	.label			= "Linux File-Backed Storage",
+	.label			= "Beep File-Backed Storage",
 	.bConfigurationValue	= 1,
 	.bmAttributes		= USB_CONFIG_ATT_SELFPOWER,
 };

@@ -2,14 +2,14 @@
  * test_rodata.c: functional test for mark_rodata_ro function
  *
  * (C) Copyright 2008 Intel Corporation
- * Author: Arjan van de Ven <arjan@linux.intel.com>
+ * Author: Arjan van de Ven <arjan@beep.intel.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; version 2
  * of the License.
  */
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/cacheflush.h>
 #include <asm/sections.h>
 #include <asm/asm.h>
@@ -77,4 +77,4 @@ int rodata_test(void)
 
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("Testcase for the DEBUG_RODATA infrastructure");
-MODULE_AUTHOR("Arjan van de Ven <arjan@linux.intel.com>");
+MODULE_AUTHOR("Arjan van de Ven <arjan@beep.intel.com>");

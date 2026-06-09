@@ -1,7 +1,7 @@
 /*
  *   Sound driver for Silicon Graphics O2 Workstations A/V board audio.
  *
- *   Copyright 2003 Vivien Chappelier <vivien.chappelier@linux-mips.org>
+ *   Copyright 2003 Vivien Chappelier <vivien.chappelier@beep-mips.org>
  *   Copyright 2008 Thomas Bogendoerfer <tsbogend@alpha.franken.de>
  *   Mxier part taken from mace_audio.c:
  *   Copyright 2007 Thorben Jändling <tj.trevelyan@gmail.com>
@@ -22,15 +22,15 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include <asm/ip32/ip32_ints.h>
 #include <asm/ip32/mace.h>
@@ -43,7 +43,7 @@
 #include <sound/ad1843.h>
 
 
-MODULE_AUTHOR("Vivien Chappelier <vivien.chappelier@linux-mips.org>");
+MODULE_AUTHOR("Vivien Chappelier <vivien.chappelier@beep-mips.org>");
 MODULE_DESCRIPTION("SGI O2 Audio");
 MODULE_LICENSE("GPL");
 MODULE_SUPPORTED_DEVICE("{{Silicon Graphics, O2 Audio}}");

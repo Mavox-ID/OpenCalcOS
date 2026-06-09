@@ -1,5 +1,5 @@
 #
-# Makefile for the linux kernel.
+# Makefile for the beep kernel.
 #
 
 asflags-y := -ansi
@@ -7,10 +7,10 @@ ccflags-y := -Werror
 
 extra-y     := head_$(BITS).o
 
-# Undefine sparc when processing vmlinux.lds - it is used
+# Undefine sparc when processing vmbeep.lds - it is used
 # And teach CPP we are doing $(BITS) builds (for this case)
-CPPFLAGS_vmlinux.lds := -Usparc -m$(BITS)
-extra-y              += vmlinux.lds
+CPPFLAGS_vmbeep.lds := -Usparc -m$(BITS)
+extra-y              += vmbeep.lds
 
 ifdef CONFIG_FUNCTION_TRACER
 # Do not profile debug and lowlevel utilities

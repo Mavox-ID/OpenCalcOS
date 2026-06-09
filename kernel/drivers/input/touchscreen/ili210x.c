@@ -1,12 +1,12 @@
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/input/ili210x.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/input/mt.h>
+#include <beep/delay.h>
+#include <beep/workqueue.h>
+#include <beep/input/ili210x.h>
 
 #define MAX_TOUCHES		2
 #define DEFAULT_POLL_PERIOD	20

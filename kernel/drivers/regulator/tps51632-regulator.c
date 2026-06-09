@@ -23,17 +23,17 @@
  * 02111-1307, USA
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/tps51632-regulator.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/regmap.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/tps51632-regulator.h>
+#include <beep/slab.h>
 
 /* Register definitions */
 #define TPS51632_VOLTAGE_SELECT_REG		0x0

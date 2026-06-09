@@ -10,12 +10,12 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/cpuidle.h>
-#include <linux/err.h>
-#include <linux/hrtimer.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/cpuidle.h>
+#include <beep/err.h>
+#include <beep/hrtimer.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 
 static struct cpuidle_device __percpu * imx_cpuidle_devices;
 

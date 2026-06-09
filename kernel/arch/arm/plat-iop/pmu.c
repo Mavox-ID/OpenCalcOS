@@ -8,7 +8,7 @@
  *
  */
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 #include <mach/irqs.h>
 
 static struct resource pmu_resource = {

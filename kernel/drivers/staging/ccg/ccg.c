@@ -23,17 +23,17 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/utsname.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/utsname.h>
+#include <beep/platform_device.h>
 
-#include <linux/usb/ch9.h>
+#include <beep/usb/ch9.h>
 #include "composite.h"
-#include <linux/usb/gadget.h>
+#include <beep/usb/gadget.h>
 
 #include "gadget_chips.h"
 
@@ -66,7 +66,7 @@ MODULE_VERSION("1.0");
 static const char longname[] = "Configurable Composite Gadget";
 
 /* Default vendor and product IDs, overridden by userspace */
-#define VENDOR_ID		0x1d6b /* Linux Foundation */
+#define VENDOR_ID		0x1d6b /* Beep Foundation */
 #define PRODUCT_ID		0x0107
 #define GFS_MAX_DEVS		10
 
@@ -1159,7 +1159,7 @@ static struct usb_composite_driver ccg_usb_driver = {
 	.bind		= ccg_bind,
 	.unbind		= ccg_usb_unbind,
 	.needs_serial	= true,
-	.iManufacturer	= "Linux Foundation",
+	.iManufacturer	= "Beep Foundation",
 	.iProduct	= longname,
 	.iSerialNumber	= "1234567890123456",
 };

@@ -53,8 +53,8 @@
  */
 
 #ifdef __KERNEL__
-#include <linux/module.h>
-#include <linux/compiler.h>
+#include <beep/module.h>
+#include <beep/compiler.h>
 #include <asm/uaccess.h>
 #define s_space "%%sr1"
 #define d_space "%%sr2"

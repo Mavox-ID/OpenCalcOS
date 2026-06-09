@@ -16,7 +16,7 @@
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *
- * The trace sink uses the Linux line discipline framework to receive
+ * The trace sink uses the Beep line discipline framework to receive
  * trace data coming from the PTI source line discipline driver
  * to a user-desired tty port, like USB.
  * This is to provide a way to extract modem trace data on
@@ -25,15 +25,15 @@
  * This is part of a solution for the P1149.7, compact JTAG, standard.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/ioctl.h>
-#include <linux/tty.h>
-#include <linux/tty_ldisc.h>
-#include <linux/errno.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/ioctl.h>
+#include <beep/tty.h>
+#include <beep/tty_ldisc.h>
+#include <beep/errno.h>
+#include <beep/string.h>
 #include <asm-generic/bug.h>
 #include "n_tracesink.h"
 
@@ -207,7 +207,7 @@ static struct tty_ldisc_ops tty_n_tracesink = {
  */
 static int __init n_tracesink_init(void)
 {
-	/* Note N_TRACESINK is defined in linux/tty.h */
+	/* Note N_TRACESINK is defined in beep/tty.h */
 	int retval = tty_register_ldisc(N_TRACESINK, &tty_n_tracesink);
 
 	if (retval < 0)

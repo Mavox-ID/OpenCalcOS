@@ -92,8 +92,8 @@ static inline notrace void __hard_local_irq_restore(unsigned long flags)
  */
 #ifdef CONFIG_IPIPE
 
-#include <linux/compiler.h>
-#include <linux/ipipe_trace.h>
+#include <beep/compiler.h>
+#include <beep/ipipe_trace.h>
 /*
  * Way too many inter-deps between low-level headers in this port, so
  * we redeclare the required bits we cannot pick from
@@ -115,7 +115,7 @@ void ipipe_check_context(struct ipipe_domain *ipd);
 #endif /* !CONFIG_IPIPE_DEBUG_CONTEXT */
 
 /*
- * Interrupt pipe interface to linux/irqflags.h.
+ * Interrupt pipe interface to beep/irqflags.h.
  */
 static inline notrace void arch_local_irq_disable(void)
 {
@@ -225,7 +225,7 @@ static inline notrace void hard_local_irq_restore(unsigned long flags)
 #else /* !CONFIG_IPIPE */
 
 /*
- * Direct interface to linux/irqflags.h.
+ * Direct interface to beep/irqflags.h.
  */
 #define arch_local_save_flags()		hard_local_save_flags()
 #define arch_local_irq_save()		__hard_local_irq_save()

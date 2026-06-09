@@ -5,7 +5,7 @@
  *
  * Based on Brian Gladman's code.
  *
- * Linux developers:
+ * Beep developers:
  *  Alexander Kjeldaas <astor@fast.no>
  *  Herbert Valerio Riedel <hvr@hvrlab.org>
  *  Kyle McMartin <kyle@debian.org>
@@ -48,11 +48,11 @@
  */
 
 #include <crypto/aes.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/crypto.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/crypto.h>
 #include <asm/byteorder.h>
 
 static inline u8 byte(const u32 x, const unsigned n)

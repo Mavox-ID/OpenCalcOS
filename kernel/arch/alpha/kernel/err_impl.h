@@ -1,5 +1,5 @@
 /*
- *	linux/arch/alpha/kernel/err_impl.h
+ *	beep/arch/alpha/kernel/err_impl.h
  *
  *	Copyright (C) 2000 Jeff Wiedemeier (Compaq Computer Corporation)
  *

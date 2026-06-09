@@ -9,7 +9,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include "core.h"
 #include "debugfs.h"
 

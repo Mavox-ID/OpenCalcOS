@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/iwmmxt.S
+ *  beep/arch/arm/kernel/iwmmxt.S
  *
  *  XScale iWMMXt (Concan) context switching and handling
  *
@@ -14,7 +14,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/ptrace.h>
 #include <asm/thread_info.h>
 #include <asm/asm-offsets.h>

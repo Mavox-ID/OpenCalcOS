@@ -14,15 +14,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/wait.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/cdev.h>
+#include <beep/device.h>
+#include <beep/wait.h>
 
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
 
 #include <mach/msm_smd.h>
 

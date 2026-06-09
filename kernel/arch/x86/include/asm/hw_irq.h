@@ -17,11 +17,11 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/percpu.h>
-#include <linux/profile.h>
-#include <linux/smp.h>
+#include <beep/percpu.h>
+#include <beep/profile.h>
+#include <beep/smp.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/irq.h>
 #include <asm/sections.h>
 

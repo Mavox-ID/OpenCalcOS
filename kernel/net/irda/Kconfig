@@ -11,7 +11,7 @@ menuconfig IRDA
 	  The Infrared Data Associations (tm) specifies standards for wireless
 	  infrared communication and is supported by most laptops and PDA's.
 
-	  To use Linux support for the IrDA (tm) protocols, you will also need
+	  To use Beep support for the IrDA (tm) protocols, you will also need
 	  some user-space utilities like irattach.  For more information, see
 	  the file <file:Documentation/networking/irda.txt>.  You also want to
 	  read the IR-HOWTO, available at

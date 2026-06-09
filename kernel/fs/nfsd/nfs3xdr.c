@@ -6,8 +6,8 @@
  * 2003-08-09 Jamie Lokier: Use htonl() for nanoseconds, not htons()!
  */
 
-#include <linux/namei.h>
-#include <linux/sunrpc/svc_xprt.h>
+#include <beep/namei.h>
+#include <beep/sunrpc/svc_xprt.h>
 #include "xdr3.h"
 #include "auth.h"
 #include "netns.h"

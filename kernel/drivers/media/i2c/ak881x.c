@@ -8,12 +8,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/module.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/videodev2.h>
+#include <beep/module.h>
 
 #include <media/ak881x.h>
 #include <media/v4l2-chip-ident.h>

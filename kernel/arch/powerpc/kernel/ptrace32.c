@@ -2,12 +2,12 @@
  * ptrace for 32-bit processes running on a 64-bit kernel.
  *
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  *  Derived from "arch/m68k/kernel/ptrace.c"
  *  Copyright (C) 1994 by Hamish Macdonald
- *  Taken from linux/kernel/ptrace.c and modified for M680x0.
- *  linux/kernel/ptrace.c is by Ross Biro 1/23/92, edited by Linus Torvalds
+ *  Taken from beep/kernel/ptrace.c and modified for M680x0.
+ *  beep/kernel/ptrace.c is by Ross Biro 1/23/92, edited by Linus Torvalds
  *
  * Modified by Cort Dougan (cort@hq.fsmlabs.com)
  * and Paul Mackerras (paulus@samba.org).
@@ -17,17 +17,17 @@
  * this archive for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/regset.h>
-#include <linux/user.h>
-#include <linux/security.h>
-#include <linux/signal.h>
-#include <linux/compat.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/regset.h>
+#include <beep/user.h>
+#include <beep/security.h>
+#include <beep/signal.h>
+#include <beep/compat.h>
 
 #include <asm/uaccess.h>
 #include <asm/page.h>

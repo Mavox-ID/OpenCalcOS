@@ -25,13 +25,13 @@
 #ifndef FS_PART_EFI_H_INCLUDED
 #define FS_PART_EFI_H_INCLUDED
 
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/genhd.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/efi.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/genhd.h>
+#include <beep/kernel.h>
+#include <beep/major.h>
+#include <beep/string.h>
+#include <beep/efi.h>
 
 #define MSDOS_MBR_SIGNATURE 0xaa55
 #define EFI_PMBR_OSTYPE_EFI 0xEF
@@ -53,13 +53,13 @@
 #define PARTITION_BASIC_DATA_GUID \
     EFI_GUID( 0xEBD0A0A2, 0xB9E5, 0x4433, \
               0x87, 0xC0, 0x68, 0xB6, 0xB7, 0x26, 0x99, 0xC7)
-#define PARTITION_LINUX_RAID_GUID \
+#define PARTITION_BEEP_RAID_GUID \
     EFI_GUID( 0xa19d880f, 0x05fc, 0x4d3b, \
               0xa0, 0x06, 0x74, 0x3f, 0x0f, 0x84, 0x91, 0x1e)
-#define PARTITION_LINUX_SWAP_GUID \
+#define PARTITION_BEEP_SWAP_GUID \
     EFI_GUID( 0x0657fd6d, 0xa4ab, 0x43c4, \
               0x84, 0xe5, 0x09, 0x33, 0xc8, 0x4b, 0x4f, 0x4f)
-#define PARTITION_LINUX_LVM_GUID \
+#define PARTITION_BEEP_LVM_GUID \
     EFI_GUID( 0xe6d6d379, 0xf507, 0x44c2, \
               0xa2, 0x3c, 0x23, 0x8f, 0x2a, 0x3d, 0xf9, 0x28)
 

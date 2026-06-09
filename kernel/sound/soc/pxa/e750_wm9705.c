@@ -9,9 +9,9 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/gpio.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

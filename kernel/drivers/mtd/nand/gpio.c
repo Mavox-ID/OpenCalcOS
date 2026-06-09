@@ -16,20 +16,20 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/nand-gpio.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/nand-gpio.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_gpio.h>
 
 struct gpiomtd {
 	void __iomem		*io_sync;
@@ -55,7 +55,7 @@ static void gpio_nand_dosync(struct gpiomtd *gpiomtd)
 
 	if (gpiomtd->io_sync) {
 		/*
-		 * Linux memory barriers don't cater for what's required here.
+		 * Beep memory barriers don't cater for what's required here.
 		 * What's required is what's here - a read from a separate
 		 * region with a dependency on that read.
 		 */

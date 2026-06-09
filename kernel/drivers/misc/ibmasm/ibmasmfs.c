@@ -23,7 +23,7 @@
 
 /*
  * Parts of this code are based on an article by Jonathan Corbet
- * that appeared in Linux Weekly News.
+ * that appeared in Beep Weekly News.
  */
 
 
@@ -73,9 +73,9 @@
  *	read: read value
  */
 
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 #include <asm/io.h>
 #include "ibmasm.h"

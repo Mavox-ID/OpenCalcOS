@@ -9,10 +9,10 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/circ_buf.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/circ_buf.h>
 #include "internal.h"
 #include "afs_fs.h"
 

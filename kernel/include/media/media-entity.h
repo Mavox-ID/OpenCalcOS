@@ -23,8 +23,8 @@
 #ifndef _MEDIA_ENTITY_H
 #define _MEDIA_ENTITY_H
 
-#include <linux/list.h>
-#include <linux/media.h>
+#include <beep/list.h>
+#include <beep/media.h>
 
 struct media_pipeline {
 };

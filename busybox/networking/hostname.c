@@ -79,7 +79,7 @@ static void do_sethostname(char *s, int isfile)
  *  { bbox: not supported }
  *
  * dnsdomainname [-v]
- *  { bbox: supported: Linux kernel build needs this }
+ *  { bbox: supported: Beep kernel build needs this }
  * nisdomainname [-v]
  *  { bbox: not supported }
  * ypdomainname [-v]

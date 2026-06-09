@@ -21,9 +21,9 @@
  *					on response.
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/skbuff.h>
 #include <net/sock.h>
 #include <net/x25.h>
 

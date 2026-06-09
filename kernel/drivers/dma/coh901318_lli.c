@@ -7,10 +7,10 @@
  * Author: Per Friden <per.friden@stericsson.com>
  */
 
-#include <linux/spinlock.h>
-#include <linux/memory.h>
-#include <linux/gfp.h>
-#include <linux/dmapool.h>
+#include <beep/spinlock.h>
+#include <beep/memory.h>
+#include <beep/gfp.h>
+#include <beep/dmapool.h>
 #include <mach/coh901318.h>
 
 #include "coh901318_lli.h"

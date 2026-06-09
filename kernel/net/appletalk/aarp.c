@@ -2,7 +2,7 @@
  *	AARP:		An implementation of the AppleTalk AARP protocol for
  *			Ethernet 'ELAP'.
  *
- *		Alan Cox  <Alan.Cox@linux.org>
+ *		Alan Cox  <Alan.Cox@beep.org>
  *
  *	This doesn't fit cleanly with the IP arp. Potentially we can use
  *	the generic neighbour discovery code to clean this up.
@@ -29,17 +29,17 @@
  *
  */
 
-#include <linux/if_arp.h>
-#include <linux/slab.h>
+#include <beep/if_arp.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 #include <net/datalink.h>
 #include <net/psnap.h>
-#include <linux/atalk.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <beep/atalk.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/export.h>
 
 int sysctl_aarp_expiry_time = AARP_EXPIRY_TIME;
 int sysctl_aarp_tick_time = AARP_TICK_TIME;

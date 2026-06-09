@@ -18,16 +18,16 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/usbnet.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/inetdevice.h>
-#include <linux/module.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/usb.h>
+#include <beep/usb/cdc.h>
+#include <beep/usb/usbnet.h>
+#include <beep/if_ether.h>
+#include <beep/if_arp.h>
+#include <beep/inetdevice.h>
+#include <beep/module.h>
 
 /*
  * The device has a CDC ACM port for modem control (it claims to be
@@ -208,7 +208,7 @@ static int vl600_rx_fixup(struct usbnet *dev, struct sk_buff *skb)
 			/* Inbound IPv6 packets have an IPv4 ethertype (0x800)
 			 * for some reason.  Peek at the L3 header to check
 			 * for IPv6 packets, and set the ethertype to IPv6
-			 * (0x86dd) so Linux can understand it.
+			 * (0x86dd) so Beep can understand it.
 			 */
 			if ((buf->data[sizeof(*ethhdr)] & 0xf0) == 0x60)
 				ethhdr->h_proto = __constant_htons(ETH_P_IPV6);

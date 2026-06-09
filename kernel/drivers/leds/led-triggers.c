@@ -11,16 +11,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/timer.h>
-#include <linux/rwsem.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/device.h>
+#include <beep/timer.h>
+#include <beep/rwsem.h>
+#include <beep/leds.h>
+#include <beep/slab.h>
 #include "leds.h"
 
 /*

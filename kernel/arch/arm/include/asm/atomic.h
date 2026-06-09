@@ -11,9 +11,9 @@
 #ifndef __ASM_ARM_ATOMIC_H
 #define __ASM_ARM_ATOMIC_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/irqflags.h>
+#include <beep/compiler.h>
+#include <beep/types.h>
+#include <beep/irqflags.h>
 #include <asm/barrier.h>
 #include <asm/cmpxchg.h>
 
@@ -29,7 +29,7 @@
 #define atomic_read(v)	(*(volatile int *)&(v)->counter)
 #define atomic_set(v,i)	(((v)->counter) = (i))
 
-#if __LINUX_ARM_ARCH__ >= 6
+#if __BEEP_ARM_ARCH__ >= 6
 
 /*
  * ARMv6 UP and SMP safe atomic ops.  We use load exclusive and
@@ -206,7 +206,7 @@ static inline void atomic_clear_mask(unsigned long mask, unsigned long *addr)
 	raw_local_irq_restore(flags);
 }
 
-#endif /* __LINUX_ARM_ARCH__ */
+#endif /* __BEEP_ARM_ARCH__ */
 
 #define atomic_xchg(v, new) (xchg(&((v)->counter), new))
 

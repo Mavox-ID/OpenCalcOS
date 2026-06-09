@@ -3,8 +3,8 @@
 
 #ifdef CONFIG_XEN
 
-#include <linux/elfnote.h>
-#include <linux/init.h>
+#include <beep/elfnote.h>
+#include <beep/init.h>
 
 #include <asm/boot.h>
 #include <asm/asm.h>
@@ -85,7 +85,7 @@ NEXT_HYPERCALL(arch_6)
 	.balign PAGE_SIZE
 .popsection
 
-	ELFNOTE(Xen, XEN_ELFNOTE_GUEST_OS,       .asciz "linux")
+	ELFNOTE(Xen, XEN_ELFNOTE_GUEST_OS,       .asciz "beep")
 	ELFNOTE(Xen, XEN_ELFNOTE_GUEST_VERSION,  .asciz "2.6")
 	ELFNOTE(Xen, XEN_ELFNOTE_XEN_VERSION,    .asciz "xen-3.0")
 #ifdef CONFIG_X86_32

@@ -1,5 +1,5 @@
 /*
- *    in2000.h -  Linux device driver definitions for the
+ *    in2000.h -  Beep device driver definitions for the
  *                Always IN2000 ISA SCSI card.
  *
  *    IMPORTANT: This file is for version 1.33 - 26/Aug/1998
@@ -386,8 +386,8 @@ struct IN2000_hostdata {
 #define PR_STOP      1<<7
 
 
-# include <linux/init.h>
-# include <linux/spinlock.h>
+# include <beep/init.h>
+# include <beep/spinlock.h>
 # define in2000__INITFUNC(function) __initfunc(function)
 # define in2000__INIT __init
 # define in2000__INITDATA __initdata

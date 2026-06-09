@@ -2,22 +2,22 @@
  * Copyright 2000 by Hans Reiser, licensing governed by reiserfs/README
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
+#include <beep/time.h>
+#include <beep/fs.h>
 #include "reiserfs.h"
 #include "acl.h"
 #include "xattr.h"
-#include <linux/exportfs.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
+#include <beep/exportfs.h>
+#include <beep/pagemap.h>
+#include <beep/highmem.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 #include <asm/unaligned.h>
-#include <linux/buffer_head.h>
-#include <linux/mpage.h>
-#include <linux/writeback.h>
-#include <linux/quotaops.h>
-#include <linux/swap.h>
+#include <beep/buffer_head.h>
+#include <beep/mpage.h>
+#include <beep/writeback.h>
+#include <beep/quotaops.h>
+#include <beep/swap.h>
 
 int reiserfs_commit_write(struct file *f, struct page *page,
 			  unsigned from, unsigned to);

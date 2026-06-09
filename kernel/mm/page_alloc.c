@@ -1,5 +1,5 @@
 /*
- *  linux/mm/page_alloc.c
+ *  beep/mm/page_alloc.c
  *
  *  Manages the free list, the system allocates free pages here.
  *  Note that kmalloc() lives in slab.c
@@ -14,50 +14,50 @@
  *          (lots of bits borrowed from Ingo Molnar & Andrew Morton)
  */
 
-#include <linux/stddef.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/interrupt.h>
-#include <linux/pagemap.h>
-#include <linux/jiffies.h>
-#include <linux/bootmem.h>
-#include <linux/memblock.h>
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/kmemcheck.h>
-#include <linux/module.h>
-#include <linux/suspend.h>
-#include <linux/pagevec.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
-#include <linux/oom.h>
-#include <linux/notifier.h>
-#include <linux/topology.h>
-#include <linux/sysctl.h>
-#include <linux/cpu.h>
-#include <linux/cpuset.h>
-#include <linux/memory_hotplug.h>
-#include <linux/nodemask.h>
-#include <linux/vmalloc.h>
-#include <linux/vmstat.h>
-#include <linux/mempolicy.h>
-#include <linux/stop_machine.h>
-#include <linux/sort.h>
-#include <linux/pfn.h>
-#include <linux/backing-dev.h>
-#include <linux/fault-inject.h>
-#include <linux/page-isolation.h>
-#include <linux/page_cgroup.h>
-#include <linux/debugobjects.h>
-#include <linux/kmemleak.h>
-#include <linux/compaction.h>
+#include <beep/stddef.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/interrupt.h>
+#include <beep/pagemap.h>
+#include <beep/jiffies.h>
+#include <beep/bootmem.h>
+#include <beep/memblock.h>
+#include <beep/compiler.h>
+#include <beep/kernel.h>
+#include <beep/kmemcheck.h>
+#include <beep/module.h>
+#include <beep/suspend.h>
+#include <beep/pagevec.h>
+#include <beep/blkdev.h>
+#include <beep/slab.h>
+#include <beep/ratelimit.h>
+#include <beep/oom.h>
+#include <beep/notifier.h>
+#include <beep/topology.h>
+#include <beep/sysctl.h>
+#include <beep/cpu.h>
+#include <beep/cpuset.h>
+#include <beep/memory_hotplug.h>
+#include <beep/nodemask.h>
+#include <beep/vmalloc.h>
+#include <beep/vmstat.h>
+#include <beep/mempolicy.h>
+#include <beep/stop_machine.h>
+#include <beep/sort.h>
+#include <beep/pfn.h>
+#include <beep/backing-dev.h>
+#include <beep/fault-inject.h>
+#include <beep/page-isolation.h>
+#include <beep/page_cgroup.h>
+#include <beep/debugobjects.h>
+#include <beep/kmemleak.h>
+#include <beep/compaction.h>
 #include <trace/events/kmem.h>
-#include <linux/ftrace_event.h>
-#include <linux/memcontrol.h>
-#include <linux/prefetch.h>
-#include <linux/migrate.h>
-#include <linux/page-debug-flags.h>
+#include <beep/ftrace_event.h>
+#include <beep/memcontrol.h>
+#include <beep/prefetch.h>
+#include <beep/migrate.h>
+#include <beep/page-debug-flags.h>
 
 #include <asm/tlbflush.h>
 #include <asm/div64.h>
@@ -73,7 +73,7 @@ EXPORT_PER_CPU_SYMBOL(numa_node);
  * N.B., Do NOT reference the '_numa_mem_' per cpu variable directly.
  * It will not be defined when CONFIG_HAVE_MEMORYLESS_NODES is not defined.
  * Use the accessor functions set_numa_mem(), numa_mem_id() and cpu_to_mem()
- * defined in <linux/topology.h>.
+ * defined in <beep/topology.h>.
  */
 DEFINE_PER_CPU(int, _numa_mem_);		/* Kernel "local memory" node */
 EXPORT_PER_CPU_SYMBOL(_numa_mem_);
@@ -4470,7 +4470,7 @@ void __init set_pageblock_order(void)
 /*
  * When CONFIG_HUGETLB_PAGE_SIZE_VARIABLE is not set, set_pageblock_order()
  * is unused as pageblock_order is set at compile-time. See
- * include/linux/pageblock-flags.h for the values of pageblock_order based on
+ * include/beep/pageblock-flags.h for the values of pageblock_order based on
  * the kernel config
  */
 void __init set_pageblock_order(void)

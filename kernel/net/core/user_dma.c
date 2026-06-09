@@ -25,9 +25,9 @@
  * skb to iovec copies.
  */
 
-#include <linux/dmaengine.h>
-#include <linux/socket.h>
-#include <linux/export.h>
+#include <beep/dmaengine.h>
+#include <beep/socket.h>
+#include <beep/export.h>
 #include <net/tcp.h>
 #include <net/netdma.h>
 

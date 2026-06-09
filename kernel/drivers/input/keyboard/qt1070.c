@@ -23,16 +23,16 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/input.h>
+#include <beep/slab.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/jiffies.h>
+#include <beep/delay.h>
 
 /* Address for each register */
 #define CHIP_ID            0x00

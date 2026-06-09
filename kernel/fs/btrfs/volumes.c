@@ -15,16 +15,16 @@
  * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
  * Boston, MA 021110-1307, USA.
  */
-#include <linux/sched.h>
-#include <linux/bio.h>
-#include <linux/slab.h>
-#include <linux/buffer_head.h>
-#include <linux/blkdev.h>
-#include <linux/random.h>
-#include <linux/iocontext.h>
-#include <linux/capability.h>
-#include <linux/ratelimit.h>
-#include <linux/kthread.h>
+#include <beep/sched.h>
+#include <beep/bio.h>
+#include <beep/slab.h>
+#include <beep/buffer_head.h>
+#include <beep/blkdev.h>
+#include <beep/random.h>
+#include <beep/iocontext.h>
+#include <beep/capability.h>
+#include <beep/ratelimit.h>
+#include <beep/kthread.h>
 #include "compat.h"
 #include "ctree.h"
 #include "extent_map.h"

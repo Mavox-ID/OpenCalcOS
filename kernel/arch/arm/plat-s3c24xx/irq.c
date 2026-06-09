@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-s3c24xx/irq.c
+/* beep/arch/arm/plat-s3c24xx/irq.c
  *
  * Copyright (c) 2003-2004 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
@@ -18,12 +18,12 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/syscore_ops.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/device.h>
+#include <beep/syscore_ops.h>
 
 #include <asm/irq.h>
 #include <asm/mach/irq.h>

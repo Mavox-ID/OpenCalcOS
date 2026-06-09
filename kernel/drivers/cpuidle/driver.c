@@ -8,9 +8,9 @@
  * This code is licenced under the GPL.
  */
 
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/cpuidle.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
+#include <beep/cpuidle.h>
 
 #include "cpuidle.h"
 

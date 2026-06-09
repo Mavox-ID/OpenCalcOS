@@ -18,7 +18,7 @@
  * Also, for certain devices, the interrupt endpoint is used to convey
  * status of a command.
  *
- * Please see http://www.one-eyed-alien.net/~mdharm/linux-usb for more
+ * Please see http://www.one-eyed-alien.net/~mdharm/beep-usb for more
  * information about this driver.
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -39,7 +39,7 @@
 #ifndef _TRANSPORT_H_
 #define _TRANSPORT_H_
 
-#include <linux/blkdev.h>
+#include <beep/blkdev.h>
 
 /*
  * usb_stor_bulk_transfer_xxx() return codes, in order of severity

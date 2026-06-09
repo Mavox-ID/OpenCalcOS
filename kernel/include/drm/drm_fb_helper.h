@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2006-2009 Red Hat Inc.
  * Copyright (c) 2006-2008 Intel Corporation
- * Copyright (c) 2007 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2007 Dave Airlie <airlied@beep.ie>
  *
  * DRM framebuffer helper functions
  *
@@ -24,7 +24,7 @@
  * OF THIS SOFTWARE.
  *
  * Authors:
- *      Dave Airlie <airlied@linux.ie>
+ *      Dave Airlie <airlied@beep.ie>
  *      Jesse Barnes <jesse.barnes@intel.com>
  */
 #ifndef DRM_FB_HELPER_H
@@ -32,7 +32,7 @@
 
 struct drm_fb_helper;
 
-#include <linux/kgdb.h>
+#include <beep/kgdb.h>
 
 struct drm_fb_helper_crtc {
 	struct drm_mode_set mode_set;

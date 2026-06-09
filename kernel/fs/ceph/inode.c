@@ -1,18 +1,18 @@
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/namei.h>
-#include <linux/writeback.h>
-#include <linux/vmalloc.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/namei.h>
+#include <beep/writeback.h>
+#include <beep/vmalloc.h>
 
 #include "super.h"
 #include "mds_client.h"
-#include <linux/ceph/decode.h>
+#include <beep/ceph/decode.h>
 
 /*
  * Ceph inode operations

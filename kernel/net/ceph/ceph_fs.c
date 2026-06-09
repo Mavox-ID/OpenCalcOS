@@ -1,8 +1,8 @@
 /*
  * Some non-inline ceph helpers
  */
-#include <linux/module.h>
-#include <linux/ceph/types.h>
+#include <beep/module.h>
+#include <beep/ceph/types.h>
 
 /*
  * return true if @layout appears to be valid

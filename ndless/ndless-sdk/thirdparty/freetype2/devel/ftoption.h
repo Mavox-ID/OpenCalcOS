@@ -374,7 +374,7 @@ FT_BEGIN_HEADER
   /* Guessing methods to access embedded resource forks                    */
   /*                                                                       */
   /*   Enable extra Mac fonts support on non-Mac platforms (e.g.           */
-  /*   GNU/Linux).                                                         */
+  /*   GNU/Beep).                                                         */
   /*                                                                       */
   /*   Resource forks which include fonts data are stored sometimes in     */
   /*   locations which users or developers don't expected.  In some cases, */

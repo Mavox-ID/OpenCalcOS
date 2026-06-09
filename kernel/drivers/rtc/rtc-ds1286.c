@@ -1,5 +1,5 @@
 /*
- * DS1286 Real Time Clock interface for Linux
+ * DS1286 Real Time Clock interface for Beep
  *
  * Copyright (C) 1998, 1999, 2000 Ralf Baechle
  * Copyright (C) 2008 Thomas Bogendoerfer
@@ -12,13 +12,13 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/bcd.h>
-#include <linux/ds1286.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
+#include <beep/platform_device.h>
+#include <beep/bcd.h>
+#include <beep/ds1286.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 #define DRV_VERSION		"1.0"
 

@@ -9,9 +9,9 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/irq.h>
 #include <unit/fpga-regs.h>
 
 /*

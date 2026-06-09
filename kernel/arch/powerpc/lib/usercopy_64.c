@@ -6,7 +6,7 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/uaccess.h>
 
 unsigned long copy_from_user(void *to, const void __user *from, unsigned long n)

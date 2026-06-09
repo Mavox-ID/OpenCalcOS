@@ -11,12 +11,12 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/fsl_devices.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/fsl_devices.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
 
 static struct clk *mxc_ahb_clk;
 static struct clk *mxc_per_clk;

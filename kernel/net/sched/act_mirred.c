@@ -12,22 +12,22 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/skbuff.h>
+#include <beep/rtnetlink.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/gfp.h>
 #include <net/net_namespace.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
-#include <linux/tc_act/tc_mirred.h>
+#include <beep/tc_act/tc_mirred.h>
 #include <net/tc_act/tc_mirred.h>
 
-#include <linux/if_arp.h>
+#include <beep/if_arp.h>
 
 #define MIRRED_TAB_MASK     7
 static struct tcf_common *tcf_mirred_ht[MIRRED_TAB_MASK + 1];

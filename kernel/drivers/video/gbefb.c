@@ -2,25 +2,25 @@
  *  SGI GBE frame buffer driver
  *
  *  Copyright (C) 1999 Silicon Graphics, Inc. - Jeffrey Newquist
- *  Copyright (C) 2002 Vivien Chappelier <vivien.chappelier@linux-mips.org>
+ *  Copyright (C) 2002 Vivien Chappelier <vivien.chappelier@beep-mips.org>
  *
  *  This file is subject to the terms and conditions of the GNU General Public
  *  License. See the file COPYING in the main directory of this archive for
  *  more details.
  */
 
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/errno.h>
+#include <beep/gfp.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/io.h>
 
 #ifdef CONFIG_X86
 #include <asm/mtrr.h>

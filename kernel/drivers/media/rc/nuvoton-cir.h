@@ -25,8 +25,8 @@
  * USA
  */
 
-#include <linux/spinlock.h>
-#include <linux/ioctl.h>
+#include <beep/spinlock.h>
+#include <beep/ioctl.h>
 
 /* platform driver name to register */
 #define NVT_DRIVER_NAME "nuvoton-cir"

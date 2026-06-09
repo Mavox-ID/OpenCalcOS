@@ -8,29 +8,29 @@
  * bootup setup stuff..
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/tty.h>
-#include <linux/major.h>
-#include <linux/interrupt.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/tty.h>
+#include <beep/major.h>
+#include <beep/interrupt.h>
+#include <beep/reboot.h>
+#include <beep/init.h>
+#include <beep/pci.h>
 #include <generated/utsrelease.h>
-#include <linux/adb.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/console.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/initrd.h>
-#include <linux/timer.h>
+#include <beep/adb.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/console.h>
+#include <beep/seq_file.h>
+#include <beep/root_dev.h>
+#include <beep/initrd.h>
+#include <beep/timer.h>
 
 #include <asm/io.h>
 #include <asm/pgtable.h>
@@ -272,7 +272,7 @@ static void chrp_init_early(void)
 	if (strcmp(property, "Pegasos2"))
 		goto out_put;
 	/* this is a Pegasos2 */
-	property = of_get_property(of_chosen, "linux,stdout-path", NULL);
+	property = of_get_property(of_chosen, "beep,stdout-path", NULL);
 	if (!property)
 		goto out_put;
 	of_node_put(node);
@@ -360,7 +360,7 @@ void __init chrp_setup_arch(void)
 	 * Print the banner, then scroll down so boot progress
 	 * can be printed.  -- Cort
 	 */
-	if (ppc_md.progress) ppc_md.progress("Linux/PPC "UTS_RELEASE"\n", 0x0);
+	if (ppc_md.progress) ppc_md.progress("Beep/PPC "UTS_RELEASE"\n", 0x0);
 }
 
 static void chrp_8259_cascade(unsigned int irq, struct irq_desc *desc)

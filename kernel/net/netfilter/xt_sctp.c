@@ -1,15 +1,15 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 #include <net/sctp/sctp.h>
-#include <linux/sctp.h>
+#include <beep/sctp.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_sctp.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_sctp.h>
+#include <beep/netfilter_ipv4/ip_tables.h>
+#include <beep/netfilter_ipv6/ip6_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Kiran Kumar Immidi");

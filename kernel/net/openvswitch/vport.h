@@ -19,12 +19,12 @@
 #ifndef VPORT_H
 #define VPORT_H 1
 
-#include <linux/list.h>
-#include <linux/netlink.h>
-#include <linux/openvswitch.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/u64_stats_sync.h>
+#include <beep/list.h>
+#include <beep/netlink.h>
+#include <beep/openvswitch.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/u64_stats_sync.h>
 
 #include "datapath.h"
 

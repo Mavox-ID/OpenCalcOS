@@ -10,17 +10,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/tc6387xb.h>
-#include <linux/mfd/tc6393xb.h>
-#include <linux/mfd/t7l66xb.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/usb/gpio_vbus.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/tc6387xb.h>
+#include <beep/mfd/tc6393xb.h>
+#include <beep/mfd/t7l66xb.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/usb/gpio_vbus.h>
 
 #include <video/w100fb.h>
 
@@ -32,9 +32,9 @@
 #include <mach/eseries-gpio.h>
 #include <mach/eseries-irq.h>
 #include <mach/audio.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <beep/platform_data/video-pxafb.h>
 #include <mach/udc.h>
-#include <linux/platform_data/irda-pxaficp.h>
+#include <beep/platform_data/irda-pxaficp.h>
 
 #include "devices.h"
 #include "generic.h"

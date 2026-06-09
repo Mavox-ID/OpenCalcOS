@@ -16,11 +16,11 @@
 #include "dm.h"
 #include "dm-path-selector.h"
 
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/atomic.h>
+#include <beep/slab.h>
+#include <beep/ctype.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/atomic.h>
 
 #define DM_MSG_PREFIX	"multipath queue-length"
 #define QL_MIN_IO	128

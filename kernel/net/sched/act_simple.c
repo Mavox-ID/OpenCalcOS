@@ -10,18 +10,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/rtnetlink.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 
 #define TCA_ACT_SIMP 22
 
-#include <linux/tc_act/tc_defact.h>
+#include <beep/tc_act/tc_defact.h>
 #include <net/tc_act/tc_defact.h>
 
 #define SIMP_TAB_MASK     7

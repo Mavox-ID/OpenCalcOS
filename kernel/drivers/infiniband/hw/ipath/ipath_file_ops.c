@@ -31,17 +31,17 @@
  * SOFTWARE.
  */
 
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/cdev.h>
-#include <linux/swap.h>
-#include <linux/export.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/cpu.h>
+#include <beep/pci.h>
+#include <beep/poll.h>
+#include <beep/cdev.h>
+#include <beep/swap.h>
+#include <beep/export.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>
+#include <beep/io.h>
+#include <beep/jiffies.h>
+#include <beep/cpu.h>
 #include <asm/pgtable.h>
 
 #include "ipath_kernel.h"

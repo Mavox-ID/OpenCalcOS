@@ -19,11 +19,11 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
  * 02110-1301 USA
  */
-#include <linux/blkdev.h>
-#include <linux/hash.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
+#include <beep/blkdev.h>
+#include <beep/hash.h>
+#include <beep/module.h>
+#include <beep/pagemap.h>
+#include <beep/slab.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

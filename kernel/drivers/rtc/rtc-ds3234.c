@@ -11,13 +11,13 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/spi/spi.h>
-#include <linux/bcd.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/rtc.h>
+#include <beep/spi/spi.h>
+#include <beep/bcd.h>
 
 #define DS3234_REG_SECONDS	0x00
 #define DS3234_REG_MINUTES	0x01

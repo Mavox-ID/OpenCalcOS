@@ -4,7 +4,7 @@
 #include <asm/termbits.h>
 #include <asm/ioctls.h>
 #include <asm/rs485.h>
-#include <linux/serial.h>
+#include <beep/serial.h>
 
 struct winsize {
 	unsigned short ws_row;

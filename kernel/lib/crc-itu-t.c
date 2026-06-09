@@ -5,9 +5,9 @@
  * Version 2. See the file COPYING for more details.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/crc-itu-t.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/crc-itu-t.h>
 
 /** CRC table for the CRC ITU-T V.41 0x0x1021 (x^16 + x^12 + x^15 + 1) */
 const u16 crc_itu_t_table[256] = {

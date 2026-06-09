@@ -10,14 +10,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/scx200_gpio.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/leds.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/scx200_gpio.h>
+#include <beep/module.h>
 
 #define DRVNAME "wrap-led"
 #define WRAP_POWER_LED_GPIO	2

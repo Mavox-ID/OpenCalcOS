@@ -1,11 +1,11 @@
 /*
- * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 #include <asm/unistd.h>
 #include <os.h>
 #include <proc_mm.h>

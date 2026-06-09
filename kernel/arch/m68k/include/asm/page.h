@@ -1,7 +1,7 @@
 #ifndef _M68K_PAGE_H
 #define _M68K_PAGE_H
 
-#include <linux/const.h>
+#include <beep/const.h>
 #include <asm/setup.h>
 #include <asm/page_offset.h>
 

@@ -15,10 +15,10 @@
  * option) any later version.
  */
 
-#include <linux/rio.h>
-#include <linux/rio_drv.h>
-#include <linux/rio_ids.h>
-#include <linux/delay.h>
+#include <beep/rio.h>
+#include <beep/rio_drv.h>
+#include <beep/rio_ids.h>
+#include <beep/delay.h>
 #include "../rio.h"
 
 /* Global (broadcast) route registers */

@@ -21,14 +21,14 @@
  * 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-#include <linux/wait.h>
-#include <linux/module.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/spi/spi.h>
-#include <linux/lcd.h>
-#include <linux/backlight.h>
+#include <beep/wait.h>
+#include <beep/module.h>
+#include <beep/fb.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/spi/spi.h>
+#include <beep/lcd.h>
+#include <beep/backlight.h>
 
 #define SLEEPMSEC		0x1000
 #define ENDDEF			0x2000

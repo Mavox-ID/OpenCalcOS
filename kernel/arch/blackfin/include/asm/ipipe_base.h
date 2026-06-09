@@ -1,4 +1,4 @@
-/*   -*- linux-c -*-
+/*   -*- beep-c -*-
  *   include/asm-blackfin/ipipe_base.h
  *
  *   Copyright (C) 2007 Philippe Gerum.

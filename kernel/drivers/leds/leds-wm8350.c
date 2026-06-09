@@ -9,15 +9,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/err.h>
-#include <linux/mfd/wm8350/pmic.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/leds.h>
+#include <beep/err.h>
+#include <beep/mfd/wm8350/pmic.h>
+#include <beep/regulator/consumer.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 /* Microamps */
 static const int isink_cur[] = {

@@ -26,7 +26,7 @@
 #ifndef STV0367_H
 #define STV0367_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 #include "dvb_frontend.h"
 
 struct stv0367_config {

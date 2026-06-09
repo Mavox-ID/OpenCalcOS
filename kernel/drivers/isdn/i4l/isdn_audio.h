@@ -1,8 +1,8 @@
 /* $Id: isdn_audio.h,v 1.1.2.2 2004/01/12 22:37:18 keil Exp $
  *
- * Linux ISDN subsystem, audio conversion and compression (linklevel).
+ * Beep ISDN subsystem, audio conversion and compression (linklevel).
  *
- * Copyright 1994-1999 by Fritz Elfert (fritz@isdn4linux.de)
+ * Copyright 1994-1999 by Fritz Elfert (fritz@isdn4beep.de)
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.

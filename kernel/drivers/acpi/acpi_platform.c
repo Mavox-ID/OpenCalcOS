@@ -2,8 +2,8 @@
  * ACPI support for platform bus type.
  *
  * Copyright (C) 2012, Intel Corporation
- * Authors: Mika Westerberg <mika.westerberg@linux.intel.com>
- *          Mathias Nyman <mathias.nyman@linux.intel.com>
+ * Authors: Mika Westerberg <mika.westerberg@beep.intel.com>
+ *          Mathias Nyman <mathias.nyman@beep.intel.com>
  *          Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -11,11 +11,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/acpi.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 
 #include "internal.h"
 

@@ -75,13 +75,13 @@
  * storing it, else BUGs will result.  User beware.
  */
 
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/pagemap.h>
-#include <linux/atomic.h>
-#include <linux/bug.h>
+#include <beep/module.h>
+#include <beep/highmem.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/pagemap.h>
+#include <beep/atomic.h>
+#include <beep/bug.h>
 #include "tmem.h"
 #include "zcache.h"
 #include "zbud.h"
@@ -302,7 +302,7 @@ static atomic_t zbud_eph_zombie_atomic;
 static atomic_t zbud_pers_zombie_atomic;
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
+#include <beep/debugfs.h>
 #define	zdfs	debugfs_create_size_t
 #define	zdfs64	debugfs_create_u64
 static int zbud_debugfs_init(void)

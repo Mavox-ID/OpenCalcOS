@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux "Tulip" family network device drivers.
+# Makefile for the Beep "Tulip" family network device drivers.
 #
 
 ccflags-$(CONFIG_NET_TULIP)	:= -DDEBUG

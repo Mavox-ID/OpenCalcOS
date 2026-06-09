@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/core/bus.h
+ *  beep/drivers/mmc/core/bus.h
  *
  *  Copyright (C) 2003 Russell King, All Rights Reserved.
  *  Copyright 2007 Pierre Ossman

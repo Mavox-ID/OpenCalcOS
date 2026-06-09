@@ -15,16 +15,16 @@
  * XXX these should be marked initdata for multi-OMAP kernels
  */
 
-#include <linux/i2c-omap.h>
-#include <linux/power/smartreflex.h>
-#include <linux/platform_data/gpio-omap.h>
+#include <beep/i2c-omap.h>
+#include <beep/power/smartreflex.h>
+#include <beep/platform_data/gpio-omap.h>
 
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 #include "l3_3xxx.h"
 #include "l4_3xxx.h"
-#include <linux/platform_data/asoc-ti-mcbsp.h>
-#include <linux/platform_data/spi-omap2-mcspi.h>
-#include <linux/platform_data/iommu-omap.h>
+#include <beep/platform_data/asoc-ti-mcbsp.h>
+#include <beep/platform_data/spi-omap2-mcspi.h>
+#include <beep/platform_data/iommu-omap.h>
 #include <plat/dmtimer.h>
 
 #include "am35xx.h"

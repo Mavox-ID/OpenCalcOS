@@ -7,9 +7,9 @@
  * Copyright (c) 2010 - 2012 Xilinx, Inc. All rights reserved.
  */
 
-#include <linux/of_address.h>
-#include <linux/of_mdio.h>
-#include <linux/jiffies.h>
+#include <beep/of_address.h>
+#include <beep/of_mdio.h>
+#include <beep/jiffies.h>
 
 #include "xilinx_axienet.h"
 

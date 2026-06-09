@@ -32,15 +32,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/ctype.h>
-#include <linux/kthread.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/atomic.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/ctype.h>
+#include <beep/kthread.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/atomic.h>
 #include <scsi/scsi_tcq.h>
 #include <target/configfs_macros.h>
 #include <target/target_core_base.h>
@@ -54,7 +54,7 @@
 #define DRV_VERSION		"2.0.0"
 #define DRV_RELDATE		"2011-02-14"
 
-#define SRPT_ID_STRING	"Linux SRP target"
+#define SRPT_ID_STRING	"Beep SRP target"
 
 #undef pr_fmt
 #define pr_fmt(fmt) DRV_NAME " " fmt

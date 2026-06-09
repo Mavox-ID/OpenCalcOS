@@ -1,19 +1,19 @@
 /*
- *  Copyright (C) 1998-2000  Andre Hedrick <andre@linux-ide.org>
+ *  Copyright (C) 1998-2000  Andre Hedrick <andre@beep-ide.org>
  *  Copyright (C) 1995-1998  Mark Lord
  *  Copyright (C) 2007-2009  Bartlomiej Zolnierkiewicz
  *
  *  May be copied or modified under the terms of the GNU General Public License
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ide.h>
-#include <linux/dma-mapping.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ide.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/io.h>
 
@@ -434,7 +434,7 @@ static int ide_setup_pci_controller(struct pci_dev *dev,
 		ret = ide_pci_configure(dev, d);
 		if (ret < 0)
 			goto out;
-		printk(KERN_INFO "%s %s: device enabled (Linux)\n",
+		printk(KERN_INFO "%s %s: device enabled (Beep)\n",
 			d->name, pci_name(dev));
 	}
 

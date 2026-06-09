@@ -5,21 +5,21 @@
  * Copyright (c) 2011 H Hartley Sweeten <hsweeten@visionengravers.com>
  *
  * Based on code originally from:
- *  linux/arch/arm/mach-ep93xx/core.c
+ *  beep/arch/arm/mach-ep93xx/core.c
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/basic_mmio_gpio.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
+#include <beep/basic_mmio_gpio.h>
 
 #include <mach/hardware.h>
 #include <mach/gpio-ep93xx.h>

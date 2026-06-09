@@ -26,7 +26,7 @@
 #define W83977AF_IR_H
 
 #include <asm/io.h>
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* Flags for configuration register CRF0 */
 #define ENBNKSEL	0x01

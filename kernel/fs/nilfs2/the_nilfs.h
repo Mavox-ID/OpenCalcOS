@@ -24,13 +24,13 @@
 #ifndef _THE_NILFS_H
 #define _THE_NILFS_H
 
-#include <linux/types.h>
-#include <linux/buffer_head.h>
-#include <linux/rbtree.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/buffer_head.h>
+#include <beep/rbtree.h>
+#include <beep/fs.h>
+#include <beep/blkdev.h>
+#include <beep/backing-dev.h>
+#include <beep/slab.h>
 
 struct nilfs_sc_info;
 

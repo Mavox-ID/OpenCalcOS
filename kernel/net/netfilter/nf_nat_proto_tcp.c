@@ -6,13 +6,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/tcp.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/tcp.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter/nfnetlink_conntrack.h>
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_l3proto.h>
 #include <net/netfilter/nf_nat_l4proto.h>

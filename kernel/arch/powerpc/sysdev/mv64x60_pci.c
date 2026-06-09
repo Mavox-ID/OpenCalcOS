@@ -9,11 +9,11 @@
  * or implied.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/stat.h>
-#include <linux/pci.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/stat.h>
+#include <beep/pci.h>
 
 #include <asm/prom.h>
 #include <asm/pci-bridge.h>

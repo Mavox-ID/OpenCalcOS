@@ -108,7 +108,7 @@ void finv_buffer_remote(void *buffer, size_t size, int hfh)
 	 * load in the entire range, so we just re-load them all.
 	 * With larger buffers, we may want to consider using a hypervisor
 	 * trap to issue loads directly to each hash-for-home tile for
-	 * each controller (doing it from Linux would trash the TLB).
+	 * each controller (doing it from Beep would trash the TLB).
 	 */
 	if (hfh) {
 		step_size = L2_CACHE_BYTES;

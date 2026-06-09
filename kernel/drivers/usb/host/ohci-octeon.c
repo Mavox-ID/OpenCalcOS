@@ -11,7 +11,7 @@
  *
  */
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 
 #include <asm/octeon/octeon.h>
 #include <asm/octeon/cvmx-uctlx-defs.h>

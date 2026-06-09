@@ -77,7 +77,7 @@
  *   PID params     : From SMU sdb partition
  *   linear-factors : offset = 0xfb50 scale  = 0x1000
  *
- * CPU Slew control loop. Not implemented. The cpufreq driver in linux is
+ * CPU Slew control loop. Not implemented. The cpufreq driver in beep is
  * completely separate for now, though we could find a way to link it, either
  * as a client reacting to overtemp notifications, or directling monitoring
  * the CPU temperature
@@ -93,17 +93,17 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/kmod.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/wait.h>
+#include <beep/kmod.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
 #include <asm/prom.h>
 #include <asm/machdep.h>
 #include <asm/io.h>

@@ -1,14 +1,14 @@
 /*
  * fs/logfs/inode.c	- inode handling code
  *
- * As should be obvious for Linux kernel code, license is GPLv2
+ * As should be obvious for Beep kernel code, license is GPLv2
  *
  * Copyright (c) 2005-2008 Joern Engel <joern@logfs.org>
  */
 #include "logfs.h"
-#include <linux/slab.h>
-#include <linux/writeback.h>
-#include <linux/backing-dev.h>
+#include <beep/slab.h>
+#include <beep/writeback.h>
+#include <beep/backing-dev.h>
 
 /*
  * How soon to reuse old inode numbers?  LogFS doesn't store deleted inodes
@@ -241,7 +241,7 @@ static struct inode *logfs_alloc_inode(struct super_block *sb)
  * written to the inode file, so it is stored in the journal instead.
  *
  * Secondly, this inode cannot be written back and destroyed before all other
- * inodes have been written.  The ordering is important.  Linux' VFS is happily
+ * inodes have been written.  The ordering is important.  Beep' VFS is happily
  * unaware of the ordering constraint and would ordinarily destroy the master
  * inode at umount time while other inodes are still in use and dirty.  Not
  * good.

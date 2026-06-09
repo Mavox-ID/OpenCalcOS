@@ -8,17 +8,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/screen_info.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/screen_info.h>
 
 #include <video/vga.h>
 #include <asm/io.h>

@@ -9,8 +9,8 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/futex.h>
-#include <linux/uaccess.h>
+#include <beep/futex.h>
+#include <beep/uaccess.h>
 #include <asm/futex.h>
 #include <asm/errno.h>
 

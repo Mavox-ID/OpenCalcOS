@@ -22,7 +22,7 @@
  * Authors: Ben Skeggs
  */
 
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 
 #include <drm/drmP.h>
 #include <drm/drm_crtc_helper.h>

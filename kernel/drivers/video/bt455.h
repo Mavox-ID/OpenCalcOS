@@ -1,5 +1,5 @@
 /*
- *	linux/drivers/video/bt455.h
+ *	beep/drivers/video/bt455.h
  *
  *	Copyright 2003  Thiemo Seufer <seufer@csv.ica.uni-stuttgart.de>
  *
@@ -7,7 +7,7 @@
  *	Public License. See the file COPYING in the main directory of this
  *	archive for more details.
  */
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * Bt455 byte-wide registers, 32-bit aligned.

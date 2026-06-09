@@ -17,14 +17,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/netlink.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/can.h>
+#include <beep/can/dev.h>
+#include <beep/can/netlink.h>
 #include <net/rtnetlink.h>
 
 #define MOD_DESC "CAN device driver interface"
@@ -80,7 +80,7 @@ EXPORT_SYMBOL_GPL(can_len2dlc);
  * Calculates proper bit-timing parameters for a specified bit-rate
  * and sample-point, which can then be used to set the bit-timing
  * registers of the CAN controller. You can find more information
- * in the header file linux/can/netlink.h.
+ * in the header file beep/can/netlink.h.
  */
 static int can_update_spt(const struct can_bittiming_const *btc,
 			  int sampl_pt, int tseg, int *tseg1, int *tseg2)
@@ -214,7 +214,7 @@ static int can_calc_bittiming(struct net_device *dev, struct can_bittiming *bt)
  * Checks the validity of the specified bit-timing parameters prop_seg,
  * phase_seg1, phase_seg2 and sjw and tries to determine the bitrate
  * prescaler value brp. You can find more information in the header
- * file linux/can/netlink.h.
+ * file beep/can/netlink.h.
  */
 static int can_fixup_bittiming(struct net_device *dev, struct can_bittiming *bt)
 {

@@ -8,7 +8,7 @@
 #ifndef NFSCACHE_H
 #define NFSCACHE_H
 
-#include <linux/sunrpc/svc.h>
+#include <beep/sunrpc/svc.h>
 
 /*
  * Representation of a reply cache entry.

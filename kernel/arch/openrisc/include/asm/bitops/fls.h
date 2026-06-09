@@ -1,5 +1,5 @@
 /*
- * OpenRISC Linux
+ * OpenRISC Beep
  *
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  *

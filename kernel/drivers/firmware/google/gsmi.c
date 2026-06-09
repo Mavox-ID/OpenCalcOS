@@ -7,27 +7,27 @@
  * EFI SMI interface for Google platforms
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/ioctl.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/dmi.h>
-#include <linux/kdebug.h>
-#include <linux/reboot.h>
-#include <linux/efi.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/spinlock.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmapool.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/ioctl.h>
+#include <beep/acpi.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
+#include <beep/dmi.h>
+#include <beep/kdebug.h>
+#include <beep/reboot.h>
+#include <beep/efi.h>
+#include <beep/module.h>
 
 #define GSMI_SHUTDOWN_CLEAN	0	/* Clean Shutdown */
 /* TODO(mikew@google.com): Tie in HARDLOCKUP_DETECTOR with NMIWDT */
@@ -681,7 +681,7 @@ static struct notifier_block gsmi_panic_notifier = {
 };
 
 /*
- * This hash function was blatantly copied from include/linux/hash.h.
+ * This hash function was blatantly copied from include/beep/hash.h.
  * It is used by this driver to obfuscate a board name that requires a
  * quirk within this driver.
  *

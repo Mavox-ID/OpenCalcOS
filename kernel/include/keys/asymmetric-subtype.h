@@ -14,7 +14,7 @@
 #ifndef _KEYS_ASYMMETRIC_SUBTYPE_H
 #define _KEYS_ASYMMETRIC_SUBTYPE_H
 
-#include <linux/seq_file.h>
+#include <beep/seq_file.h>
 #include <keys/asymmetric-type.h>
 
 struct public_key_signature;

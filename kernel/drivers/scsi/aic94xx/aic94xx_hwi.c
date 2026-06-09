@@ -24,11 +24,11 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/firmware.h>
 
 #include "aic94xx.h"
 #include "aic94xx_reg.h"

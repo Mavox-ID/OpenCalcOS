@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 # SPDX-License-Identifier: GPL-2.0
 
-# Stolen from Linux kernel :)
+# Stolen from Beep kernel :)
 
 #	Check the stack usage of functions
 #
@@ -21,7 +21,7 @@
 #	ppc64le port by Breno Leitao <leitao@debian.org>
 #
 #	Usage:
-#	objdump -d vmlinux | scripts/checkstack.pl [arch]
+#	objdump -d vmbeep | scripts/checkstack.pl [arch]
 #
 #	TODO :	Port to all architectures (one regex per arch)
 

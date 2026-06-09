@@ -60,19 +60,19 @@
  *   - ref 26921 - Ibex Peak BIOS Specification
  */
 
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/tick.h>
-#include <linux/timer.h>
-#include <linux/dmi.h>
+#include <beep/debugfs.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/kthread.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/string.h>
+#include <beep/tick.h>
+#include <beep/timer.h>
+#include <beep/dmi.h>
 #include <drm/i915_drm.h>
 #include <asm/msr.h>
 #include <asm/processor.h>

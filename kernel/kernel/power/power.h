@@ -1,7 +1,7 @@
-#include <linux/suspend.h>
-#include <linux/suspend_ioctls.h>
-#include <linux/utsname.h>
-#include <linux/freezer.h>
+#include <beep/suspend.h>
+#include <beep/suspend_ioctls.h>
+#include <beep/utsname.h>
+#include <beep/freezer.h>
 
 struct swsusp_info {
 	struct new_utsname	uts;

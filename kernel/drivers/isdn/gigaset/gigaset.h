@@ -16,25 +16,25 @@
 #ifndef GIGASET_H
 #define GIGASET_H
 
-/* define global prefix for pr_ macros in linux/kernel.h */
+/* define global prefix for pr_ macros in beep/kernel.h */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/ppp_defs.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/list.h>
-#include <linux/atomic.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/compiler.h>
+#include <beep/types.h>
+#include <beep/ctype.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/ppp_defs.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/list.h>
+#include <beep/atomic.h>
 
 #define GIG_VERSION {0, 5, 0, 0}
 #define GIG_COMPAT  {0, 4, 0, 0}

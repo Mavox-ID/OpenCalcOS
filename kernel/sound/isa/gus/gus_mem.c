@@ -19,8 +19,8 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 #include <sound/core.h>
 #include <sound/gus.h>
 #include <sound/info.h>

@@ -1,5 +1,5 @@
 /*
- *	linux/arch/alpha/kernel/sys_noritake.c
+ *	beep/arch/alpha/kernel/sys_noritake.c
  *
  *	Copyright (C) 1995 David A Rusling
  *	Copyright (C) 1996 Jay A Estabrook
@@ -9,13 +9,13 @@
  * CORELLE (AlphaServer 800), and ALCOR Primo (AlphaStation 600A).
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
 
 #include <asm/ptrace.h>
 #include <asm/mce.h>

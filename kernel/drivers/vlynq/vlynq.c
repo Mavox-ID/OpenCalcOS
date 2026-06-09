@@ -19,21 +19,21 @@
  * http://www.ti.com/litv/pdf/sprue36a
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/irq.h>
 
-#include <linux/vlynq.h>
+#include <beep/vlynq.h>
 
 #define VLYNQ_CTRL_PM_ENABLE		0x80000000
 #define VLYNQ_CTRL_CLOCK_INT		0x00008000

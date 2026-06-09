@@ -4,7 +4,7 @@
 #if !defined(_TRACE_EXT3_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_EXT3_H
 
-#include <linux/tracepoint.h>
+#include <beep/tracepoint.h>
 
 TRACE_EVENT(ext3_free_inode,
 	TP_PROTO(struct inode *inode),

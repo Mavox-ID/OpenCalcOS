@@ -6,7 +6,7 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/sigp.h>
 
 /*

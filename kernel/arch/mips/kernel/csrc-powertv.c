@@ -18,10 +18,10 @@
 /*
  * The file comes from kernel/csrc-r4k.c
  */
-#include <linux/clocksource.h>
-#include <linux/init.h>
+#include <beep/clocksource.h>
+#include <beep/init.h>
 
-#include <asm/time.h>			/* Not included in linux/time.h */
+#include <asm/time.h>			/* Not included in beep/time.h */
 
 #include <asm/mach-powertv/asic_regs.h>
 #include "powertv-clock.h"

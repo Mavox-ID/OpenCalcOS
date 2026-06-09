@@ -4,12 +4,12 @@
  * License terms: GNU General Public License (GPL) version 2
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/bug.h>
-#include <linux/string.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/platform_data/pinctrl-nomadik.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/bug.h>
+#include <beep/string.h>
+#include <beep/pinctrl/machine.h>
+#include <beep/platform_data/pinctrl-nomadik.h>
 
 #include <asm/mach-types.h>
 

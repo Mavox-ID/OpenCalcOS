@@ -21,12 +21,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/etherdevice.h>
-#include <linux/ieee80211.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/etherdevice.h>
+#include <beep/ieee80211.h>
+#include <beep/slab.h>
 
 #include "wlcore.h"
 #include "debug.h"

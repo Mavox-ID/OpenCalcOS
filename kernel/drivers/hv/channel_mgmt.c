@@ -20,15 +20,15 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/completion.h>
-#include <linux/hyperv.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/completion.h>
+#include <beep/hyperv.h>
 
 #include "hyperv_vmbus.h"
 

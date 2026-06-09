@@ -1,5 +1,5 @@
 /*
- * Squashfs - a compressed read only filesystem for Linux
+ * Squashfs - a compressed read only filesystem for Beep
  *
  * Copyright (c) 2010
  * Phillip Lougher <phillip@squashfs.org.uk>
@@ -26,9 +26,9 @@
  * into the on disk location of the xattr data.
  */
 
-#include <linux/fs.h>
-#include <linux/vfs.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/vfs.h>
+#include <beep/slab.h>
 
 #include "squashfs_fs.h"
 #include "squashfs_fs_sb.h"

@@ -1,5 +1,5 @@
 /* $Id: aha1542.c,v 1.1 1992/07/24 06:27:38 root Exp root $
- *  linux/kernel/aha1542.c
+ *  beep/kernel/aha1542.c
  *
  *  Copyright (C) 1992  Tommy Thorn
  *  Copyright (C) 1993, 1994, 1995 Eric Youngdale
@@ -13,7 +13,7 @@
  *        controller).
  *  Modified by Matti Aarnio
  *        Accept parameters from LILO cmd-line. -- 1-Oct-94
- *  Modified by Mike McLagan <mike.mclagan@linux.org>
+ *  Modified by Mike McLagan <mike.mclagan@beep.org>
  *        Recognise extended mode on AHA1542CP, different bit than 1542CF
  *        1-Jan-97
  *  Modified by Bjorn L. Thordarson and Einar Thor Einarsson
@@ -25,19 +25,19 @@
  *        Added proper detection of the AHA-1640 (MCA, now deleted)
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/isapnp.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/isapnp.h>
+#include <beep/blkdev.h>
+#include <beep/slab.h>
 
 #include <asm/dma.h>
 #include <asm/io.h>
@@ -49,7 +49,7 @@
 #define SCSI_BUF_PA(address)	isa_virt_to_bus(address)
 #define SCSI_SG_PA(sgent)	(isa_page_to_bus(sg_page((sgent))) + (sgent)->offset)
 
-#include <linux/stat.h>
+#include <beep/stat.h>
 
 #ifdef DEBUG
 #define DEB(x) x
@@ -58,7 +58,7 @@
 #endif
 
 /*
-   static const char RCSid[] = "$Header: /usr/src/linux/kernel/blk_drv/scsi/RCS/aha1542.c,v 1.1 1992/07/24 06:27:38 root Exp root $";
+   static const char RCSid[] = "$Header: /usr/src/beep/kernel/blk_drv/scsi/RCS/aha1542.c,v 1.1 1992/07/24 06:27:38 root Exp root $";
  */
 
 /* The adaptec can be configured for quite a number of addresses, but

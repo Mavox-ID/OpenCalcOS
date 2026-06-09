@@ -10,9 +10,9 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <fcntl.h>
-#include <linux/vhost.h>
-#include <linux/virtio.h>
-#include <linux/virtio_ring.h>
+#include <beep/vhost.h>
+#include <beep/virtio.h>
+#include <beep/virtio_ring.h>
 #include "../../drivers/vhost/test.h"
 
 struct vq_info {

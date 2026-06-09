@@ -19,13 +19,13 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/rdc321x.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/pci.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/rdc321x.h>
 
 static struct rdc321x_wdt_pdata rdc321x_wdt_pdata;
 

@@ -21,8 +21,8 @@
 /*
  * User space memory access functions
  */
-#include <linux/string.h>
-#include <linux/thread_info.h>
+#include <beep/string.h>
+#include <beep/thread_info.h>
 
 #include <asm/ptrace.h>
 #include <asm/errno.h>

@@ -11,20 +11,20 @@
  *  option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/machine.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
 
-#include <linux/mfd/arizona/core.h>
-#include <linux/mfd/arizona/pdata.h>
-#include <linux/mfd/arizona/registers.h>
+#include <beep/mfd/arizona/core.h>
+#include <beep/mfd/arizona/pdata.h>
+#include <beep/mfd/arizona/registers.h>
 
 #define ARIZONA_MICSUPP_MAX_SELECTOR 0x1f
 

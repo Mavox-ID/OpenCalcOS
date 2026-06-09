@@ -16,9 +16,9 @@ Patch22: uClibc-0.9.30.1-getline.patch
 Obsoletes: busybox-anaconda
 URL: http://www.busybox.net
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-BuildRequires: libselinux-devel >= 1.27.7-2
+BuildRequires: libsebeep-devel >= 1.27.7-2
 BuildRequires: libsepol-devel
-BuildRequires: libselinux-static
+BuildRequires: libsebeep-static
 BuildRequires: libsepol-static
 BuildRequires: glibc-static
 
@@ -57,7 +57,7 @@ cd uClibc-0.9.30.1
 mkdir kernel-include
 cp -a /usr/include/asm kernel-include
 cp -a /usr/include/asm-generic kernel-include
-cp -a /usr/include/linux kernel-include
+cp -a /usr/include/beep kernel-include
 # uclibc can't be built on ppc64,s390,ia64, we set $arch to "" in this case
 arch=`uname -m | sed -e 's/i.86/i386/' -e 's/ppc/powerpc/' -e 's/ppc64//' -e 's/powerpc64//' -e 's/ia64//' -e 's/s390.*//'`
 echo "TARGET_$arch=y" >.config
@@ -77,7 +77,7 @@ yes "" | make oldconfig
 # nor startfiles (i.e. crtXXX.o files)
 if test "$arch"; then \
     mv .config .config1 && \
-    grep -v ^CONFIG_SELINUX .config1 >.config && \
+    grep -v ^CONFIG_SEBEEP .config1 >.config && \
     yes "" | make oldconfig && \
     cat .config && \
     make V=1 \

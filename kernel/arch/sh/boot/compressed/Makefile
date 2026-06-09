@@ -1,12 +1,12 @@
 #
-# linux/arch/sh/boot/compressed/Makefile
+# beep/arch/sh/boot/compressed/Makefile
 #
-# create a compressed vmlinux image from the original vmlinux
+# create a compressed vmbeep image from the original vmbeep
 #
 
-targets		:= vmlinux vmlinux.bin vmlinux.bin.gz \
-		   vmlinux.bin.bz2 vmlinux.bin.lzma \
-		   vmlinux.bin.xz vmlinux.bin.lzo \
+targets		:= vmbeep vmbeep.bin vmbeep.bin.gz \
+		   vmbeep.bin.bz2 vmbeep.bin.lzma \
+		   vmbeep.bin.xz vmbeep.bin.lzo \
 		   head_$(BITS).o misc.o piggy.o
 
 OBJECTS = $(obj)/head_$(BITS).o $(obj)/misc.o $(obj)/cache.o
@@ -32,8 +32,8 @@ ORIG_CFLAGS := $(KBUILD_CFLAGS)
 KBUILD_CFLAGS = $(subst -pg, , $(ORIG_CFLAGS))
 endif
 
-LDFLAGS_vmlinux := --oformat $(ld-bfd) -Ttext $(IMAGE_OFFSET) -e startup \
-		   -T $(obj)/../../kernel/vmlinux.lds
+LDFLAGS_vmbeep := --oformat $(ld-bfd) -Ttext $(IMAGE_OFFSET) -e startup \
+		   -T $(obj)/../../kernel/vmbeep.lds
 
 #
 # Pull in the necessary libgcc bits from the in-kernel implementation.
@@ -53,29 +53,29 @@ KBUILD_CFLAGS += -I$(lib1funcs-dir)
 $(addprefix $(obj)/,$(lib1funcs-y)): $(obj)/%: $(lib1funcs-dir)/% FORCE
 	$(call cmd,shipped)
 
-$(obj)/vmlinux: $(OBJECTS) $(obj)/piggy.o $(lib1funcs-obj) FORCE
+$(obj)/vmbeep: $(OBJECTS) $(obj)/piggy.o $(lib1funcs-obj) FORCE
 	$(call if_changed,ld)
 	@:
 
-$(obj)/vmlinux.bin: vmlinux FORCE
+$(obj)/vmbeep.bin: vmbeep FORCE
 	$(call if_changed,objcopy)
 
-vmlinux.bin.all-y := $(obj)/vmlinux.bin
+vmbeep.bin.all-y := $(obj)/vmbeep.bin
 
-$(obj)/vmlinux.bin.gz: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmbeep.bin.gz: $(vmbeep.bin.all-y) FORCE
 	$(call if_changed,gzip)
-$(obj)/vmlinux.bin.bz2: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmbeep.bin.bz2: $(vmbeep.bin.all-y) FORCE
 	$(call if_changed,bzip2)
-$(obj)/vmlinux.bin.lzma: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmbeep.bin.lzma: $(vmbeep.bin.all-y) FORCE
 	$(call if_changed,lzma)
-$(obj)/vmlinux.bin.xz: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmbeep.bin.xz: $(vmbeep.bin.all-y) FORCE
 	$(call if_changed,xzkern)
-$(obj)/vmlinux.bin.lzo: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmbeep.bin.lzo: $(vmbeep.bin.all-y) FORCE
 	$(call if_changed,lzo)
 
 OBJCOPYFLAGS += -R .empty_zero_page
 
 LDFLAGS_piggy.o := -r --format binary --oformat $(ld-bfd) -T
 
-$(obj)/piggy.o: $(obj)/vmlinux.scr $(obj)/vmlinux.bin.$(suffix-y) FORCE
+$(obj)/piggy.o: $(obj)/vmbeep.scr $(obj)/vmbeep.bin.$(suffix-y) FORCE
 	$(call if_changed,ld)

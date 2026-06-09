@@ -16,18 +16,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/core.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/card.h>
-#include <linux/suspend.h>
-#include <linux/errno.h>
-#include <linux/sched.h>	/* request_irq() */
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/types.h>
+#include <beep/netdevice.h>
+#include <beep/mmc/sdio.h>
+#include <beep/mmc/core.h>
+#include <beep/mmc/sdio_func.h>
+#include <beep/mmc/sdio_ids.h>
+#include <beep/mmc/card.h>
+#include <beep/suspend.h>
+#include <beep/errno.h>
+#include <beep/sched.h>	/* request_irq() */
+#include <beep/module.h>
+#include <beep/platform_device.h>
 #include <net/cfg80211.h>
 
 #include <defs.h>

@@ -1,7 +1,7 @@
 /*******************************************************************************
  * Filename:  target_core_iblock.c
  *
- * This file contains the Storage Engine  <-> Linux BlockIO transport
+ * This file contains the Storage Engine  <-> Beep BlockIO transport
  * specific functions.
  *
  * (c) Copyright 2003-2012 RisingTide Systems LLC.
@@ -24,17 +24,17 @@
  *
  ******************************************************************************/
 
-#include <linux/string.h>
-#include <linux/parser.h>
-#include <linux/timer.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/bio.h>
-#include <linux/genhd.h>
-#include <linux/file.h>
-#include <linux/module.h>
+#include <beep/string.h>
+#include <beep/parser.h>
+#include <beep/timer.h>
+#include <beep/fs.h>
+#include <beep/blkdev.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/bio.h>
+#include <beep/genhd.h>
+#include <beep/file.h>
+#include <beep/module.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 #include <asm/unaligned.h>
@@ -135,7 +135,7 @@ static int iblock_configure_device(struct se_device *dev)
 				q->limits.max_discard_sectors;
 
 		/*
-		 * Currently hardcoded to 1 in Linux/SCSI code..
+		 * Currently hardcoded to 1 in Beep/SCSI code..
 		 */
 		dev->dev_attrib.max_unmap_block_desc_count = 1;
 		dev->dev_attrib.unmap_granularity =
@@ -519,7 +519,7 @@ iblock_execute_write_same(struct se_cmd *cmd)
 			bio_list_add(&list, bio);
 		}
 
-		/* Always in 512 byte units for Linux/Block */
+		/* Always in 512 byte units for Beep/Block */
 		block_lba += sg->length >> IBLOCK_LBA_SHIFT;
 		sectors -= 1;
 	}
@@ -674,7 +674,7 @@ iblock_execute_rw(struct se_cmd *cmd)
 
 	/*
 	 * Convert the blocksize advertised to the initiator to the 512 byte
-	 * units unconditionally used by the Linux block layer.
+	 * units unconditionally used by the Beep block layer.
 	 */
 	if (dev->dev_attrib.block_size == 4096)
 		block_lba = (cmd->t_task_lba << 3);
@@ -733,7 +733,7 @@ iblock_execute_rw(struct se_cmd *cmd)
 			bio_cnt++;
 		}
 
-		/* Always in 512 byte units for Linux/Block */
+		/* Always in 512 byte units for Beep/Block */
 		block_lba += sg->length >> IBLOCK_LBA_SHIFT;
 		sg_num--;
 	}
@@ -803,7 +803,7 @@ static void iblock_module_exit(void)
 }
 
 MODULE_DESCRIPTION("TCM IBLOCK subsystem plugin");
-MODULE_AUTHOR("nab@Linux-iSCSI.org");
+MODULE_AUTHOR("nab@Beep-iSCSI.org");
 MODULE_LICENSE("GPL");
 
 module_init(iblock_module_init);

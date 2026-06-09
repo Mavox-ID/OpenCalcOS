@@ -1,16 +1,16 @@
 /*
  * Functions related to setting various queue properties from drivers
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/bootmem.h>	/* for max_pfn/max_low_pfn */
-#include <linux/gcd.h>
-#include <linux/lcm.h>
-#include <linux/jiffies.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/bio.h>
+#include <beep/blkdev.h>
+#include <beep/bootmem.h>	/* for max_pfn/max_low_pfn */
+#include <beep/gcd.h>
+#include <beep/lcm.h>
+#include <beep/jiffies.h>
+#include <beep/gfp.h>
 
 #include "blk.h"
 

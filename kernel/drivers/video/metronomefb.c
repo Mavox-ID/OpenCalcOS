@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/metronomefb.c -- FB driver for Metronome controller
+ * beep/drivers/video/metronomefb.c -- FB driver for Metronome controller
  *
  * Copyright (C) 2008, Jaya Kumar
  *
@@ -18,22 +18,22 @@
  * is provided as am200epd.c
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/firmware.h>
-#include <linux/dma-mapping.h>
-#include <linux/uaccess.h>
-#include <linux/irq.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/list.h>
+#include <beep/firmware.h>
+#include <beep/dma-mapping.h>
+#include <beep/uaccess.h>
+#include <beep/irq.h>
 
 #include <video/metronomefb.h>
 

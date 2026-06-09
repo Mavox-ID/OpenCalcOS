@@ -8,20 +8,20 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/statfs.h>
-#include <linux/proc_fs.h>
-#include <linux/buffer_head.h>
-#include <linux/backing-dev.h>
-#include <linux/kthread.h>
-#include <linux/parser.h>
-#include <linux/mount.h>
-#include <linux/seq_file.h>
-#include <linux/random.h>
-#include <linux/exportfs.h>
-#include <linux/f2fs_fs.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/statfs.h>
+#include <beep/proc_fs.h>
+#include <beep/buffer_head.h>
+#include <beep/backing-dev.h>
+#include <beep/kthread.h>
+#include <beep/parser.h>
+#include <beep/mount.h>
+#include <beep/seq_file.h>
+#include <beep/random.h>
+#include <beep/exportfs.h>
+#include <beep/f2fs_fs.h>
 
 #include "f2fs.h"
 #include "node.h"

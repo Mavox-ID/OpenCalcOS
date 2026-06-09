@@ -7,7 +7,7 @@
  * Copyright (C) 2012 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <asm/cacheflush.h>
 #include <asm/traps.h>
 #include <asm/io.h>

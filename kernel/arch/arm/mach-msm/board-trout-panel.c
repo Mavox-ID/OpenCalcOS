@@ -1,20 +1,20 @@
-/* linux/arch/arm/mach-msm/board-trout-mddi.c
+/* beep/arch/arm/mach-msm/board-trout-mddi.c
 ** Author: Brian Swetland <swetland@google.com>
 */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/leds.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/leds.h>
+#include <beep/clk.h>
+#include <beep/err.h>
 
 #include <asm/io.h>
 #include <asm/mach-types.h>
 #include <asm/system_info.h>
 
-#include <linux/platform_data/video-msm_fb.h>
+#include <beep/platform_data/video-msm_fb.h>
 #include <mach/vreg.h>
 
 #include "board-trout.h"

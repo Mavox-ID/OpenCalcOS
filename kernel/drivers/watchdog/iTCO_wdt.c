@@ -51,24 +51,24 @@
 #define DRV_VERSION	"1.10"
 
 /* Includes */
-#include <linux/module.h>		/* For module specific items */
-#include <linux/moduleparam.h>		/* For new moduleparam's */
-#include <linux/types.h>		/* For standard types (like size_t) */
-#include <linux/errno.h>		/* For the -ENODEV/... values */
-#include <linux/kernel.h>		/* For printk/panic/... */
-#include <linux/miscdevice.h>		/* For MODULE_ALIAS_MISCDEV
+#include <beep/module.h>		/* For module specific items */
+#include <beep/moduleparam.h>		/* For new moduleparam's */
+#include <beep/types.h>		/* For standard types (like size_t) */
+#include <beep/errno.h>		/* For the -ENODEV/... values */
+#include <beep/kernel.h>		/* For printk/panic/... */
+#include <beep/miscdevice.h>		/* For MODULE_ALIAS_MISCDEV
 							(WATCHDOG_MINOR) */
-#include <linux/watchdog.h>		/* For the watchdog specific items */
-#include <linux/init.h>			/* For __init/__exit/... */
-#include <linux/fs.h>			/* For file operations */
-#include <linux/platform_device.h>	/* For platform_driver framework */
-#include <linux/pci.h>			/* For pci functions */
-#include <linux/ioport.h>		/* For io-port access */
-#include <linux/spinlock.h>		/* For spin_lock/spin_unlock/... */
-#include <linux/uaccess.h>		/* For copy_to_user/put_user/... */
-#include <linux/io.h>			/* For inb/outb/... */
-#include <linux/mfd/core.h>
-#include <linux/mfd/lpc_ich.h>
+#include <beep/watchdog.h>		/* For the watchdog specific items */
+#include <beep/init.h>			/* For __init/__exit/... */
+#include <beep/fs.h>			/* For file operations */
+#include <beep/platform_device.h>	/* For platform_driver framework */
+#include <beep/pci.h>			/* For pci functions */
+#include <beep/ioport.h>		/* For io-port access */
+#include <beep/spinlock.h>		/* For spin_lock/spin_unlock/... */
+#include <beep/uaccess.h>		/* For copy_to_user/put_user/... */
+#include <beep/io.h>			/* For inb/outb/... */
+#include <beep/mfd/core.h>
+#include <beep/mfd/lpc_ich.h>
 
 #include "iTCO_vendor.h"
 

@@ -2,13 +2,13 @@
  * ISA bus.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/isa.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
+#include <beep/isa.h>
 
 static struct device isa_bus = {
 	.init_name	= "isa"

@@ -33,11 +33,11 @@
 
 */
 
-#include <linux/types.h>
-#include <linux/percpu.h>
-#include <linux/export.h>
-#include <linux/jiffies.h>
-#include <linux/random.h>
+#include <beep/types.h>
+#include <beep/percpu.h>
+#include <beep/export.h>
+#include <beep/jiffies.h>
+#include <beep/random.h>
 
 static DEFINE_PER_CPU(struct rnd_state, net_rand_state);
 

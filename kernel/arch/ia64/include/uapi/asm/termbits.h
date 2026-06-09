@@ -10,7 +10,7 @@
  * 99/01/28	Added new baudrates
  */
 
-#include <linux/posix_types.h>
+#include <beep/posix_types.h>
 
 typedef unsigned char	cc_t;
 typedef unsigned int	speed_t;

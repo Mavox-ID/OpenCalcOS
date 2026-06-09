@@ -5,8 +5,8 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/platform_device.h>
-#include <linux/bcma/bcma.h>
+#include <beep/platform_device.h>
+#include <beep/bcma/bcma.h>
 
 #include "bcma_private.h"
 

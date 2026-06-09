@@ -26,35 +26,35 @@
  * Or, point your browser to http://www.gnu.org/copyleft/gpl.html
  *
  *
- * the project's page is at http://www.linuxtv.org/ 
+ * the project's page is at http://www.beeptv.org/ 
  */
 
 
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/timer.h>
-#include <linux/poll.h>
+#include <beep/module.h>
+#include <beep/kmod.h>
+#include <beep/delay.h>
+#include <beep/fs.h>
+#include <beep/timer.h>
+#include <beep/poll.h>
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/firmware.h>
-#include <linux/crc32.h>
-#include <linux/i2c.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/string.h>
+#include <beep/pci.h>
+#include <beep/vmalloc.h>
+#include <beep/firmware.h>
+#include <beep/crc32.h>
+#include <beep/i2c.h>
+#include <beep/kthread.h>
+#include <beep/slab.h>
 #include <asm/unaligned.h>
 #include <asm/byteorder.h>
 
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 #include "dvb_frontend.h"
 
@@ -1537,7 +1537,7 @@ static int get_firmware(struct av7110* av7110)
 			printk(KERN_ERR "dvb-ttpci: usually this should be in "
 			       "/usr/lib/hotplug/firmware or /lib/firmware\n");
 			printk(KERN_ERR "dvb-ttpci: and can be downloaded from"
-			       " http://www.linuxtv.org/download/dvb/firmware/\n");
+			       " http://www.beeptv.org/download/dvb/firmware/\n");
 		} else
 			printk(KERN_ERR "dvb-ttpci: cannot request firmware"
 			       " (error %i)\n", ret);
@@ -2310,7 +2310,7 @@ static int frontend_init(struct av7110 *av7110)
 /* Budgetpatch note:
  * Original hardware design by Roberto Deza:
  * There is a DVB_Wiki at
- * http://www.linuxtv.org/
+ * http://www.beeptv.org/
  *
  * New software triggering design by Emard that works on
  * original Roberto Deza's hardware:

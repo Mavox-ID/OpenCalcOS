@@ -9,15 +9,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/regulator/lp872x.h>
-#include <linux/regulator/driver.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/regmap.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/regulator/lp872x.h>
+#include <beep/regulator/driver.h>
+#include <beep/platform_device.h>
 
 /* Registers : LP8720/8725 shared */
 #define LP872X_GENERAL_CFG		0x00

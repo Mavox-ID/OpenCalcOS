@@ -9,11 +9,11 @@
  * option) any later version.
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <beep/acpi.h>
+#include <beep/delay.h>
+#include <beep/dmi.h>
+#include <beep/pci.h>
+#include <beep/init.h>
 #include <asm/pci_x86.h>
 #include <asm/pci-direct.h>
 

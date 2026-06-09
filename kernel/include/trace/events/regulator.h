@@ -4,8 +4,8 @@
 #if !defined(_TRACE_REGULATOR_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_REGULATOR_H
 
-#include <linux/ktime.h>
-#include <linux/tracepoint.h>
+#include <beep/ktime.h>
+#include <beep/tracepoint.h>
 
 /*
  * Events which just log themselves and the regulator name for enable/disable

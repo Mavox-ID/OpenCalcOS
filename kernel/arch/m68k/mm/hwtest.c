@@ -23,7 +23,7 @@
  * a temporary VBR and a vector table for the duration of the test.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 int hwreg_present( volatile void *regp )
 {

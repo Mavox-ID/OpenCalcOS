@@ -2,7 +2,7 @@
 #define _ASM_X86_DEBUGREG_H
 
 
-#include <linux/bug.h>
+#include <beep/bug.h>
 #include <uapi/asm/debugreg.h>
 
 DECLARE_PER_CPU(unsigned long, cpu_dr7);

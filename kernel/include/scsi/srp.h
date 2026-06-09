@@ -41,7 +41,7 @@
  * draft Revision 16a of the SRP standard.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 enum {
 	SRP_LOGIN_REQ	= 0x00,

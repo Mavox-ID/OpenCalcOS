@@ -2,21 +2,21 @@
  * (C) 1997 Linus Torvalds
  * (C) 1999 Andrea Arcangeli <andrea@suse.de> (dynamic inode allocation)
  */
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/backing-dev.h>
-#include <linux/hash.h>
-#include <linux/swap.h>
-#include <linux/security.h>
-#include <linux/cdev.h>
-#include <linux/bootmem.h>
-#include <linux/fsnotify.h>
-#include <linux/mount.h>
-#include <linux/posix_acl.h>
-#include <linux/prefetch.h>
-#include <linux/buffer_head.h> /* for inode_has_buffers */
-#include <linux/ratelimit.h>
+#include <beep/export.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/backing-dev.h>
+#include <beep/hash.h>
+#include <beep/swap.h>
+#include <beep/security.h>
+#include <beep/cdev.h>
+#include <beep/bootmem.h>
+#include <beep/fsnotify.h>
+#include <beep/mount.h>
+#include <beep/posix_acl.h>
+#include <beep/prefetch.h>
+#include <beep/buffer_head.h> /* for inode_has_buffers */
+#include <beep/ratelimit.h>
 #include "internal.h"
 
 /*

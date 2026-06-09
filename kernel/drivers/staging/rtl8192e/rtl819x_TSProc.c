@@ -17,7 +17,7 @@
  * wlanfae <wlanfae@realtek.com>
 ******************************************************************************/
 #include "rtllib.h"
-#include <linux/etherdevice.h>
+#include <beep/etherdevice.h>
 #include "rtl819x_TS.h"
 
 static void TsSetupTimeOut(unsigned long data)

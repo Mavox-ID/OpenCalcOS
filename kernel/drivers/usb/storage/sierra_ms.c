@@ -2,9 +2,9 @@
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>
-#include <linux/usb.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/usb.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #include "usb.h"
 #include "transport.h"
@@ -30,15 +30,15 @@ MODULE_PARM_DESC(swi_tru_install, "TRU-Install mode (1=Full Logic (def),"
 struct swoc_info {
 	__u8 rev;
 	__u8 reserved[8];
-	__u16 LinuxSKU;
-	__u16 LinuxVer;
+	__u16 BeepSKU;
+	__u16 BeepVer;
 	__u8 reserved2[47];
 } __attribute__((__packed__));
 
-static bool containsFullLinuxPackage(struct swoc_info *swocInfo)
+static bool containsFullBeepPackage(struct swoc_info *swocInfo)
 {
-	if ((swocInfo->LinuxSKU >= 0x2100 && swocInfo->LinuxSKU <= 0x2FFF) ||
-	   (swocInfo->LinuxSKU >= 0x7100 && swocInfo->LinuxSKU <= 0x7FFF))
+	if ((swocInfo->BeepSKU >= 0x2100 && swocInfo->BeepSKU <= 0x2FFF) ||
+	   (swocInfo->BeepSKU >= 0x7100 && swocInfo->BeepSKU <= 0x7FFF))
 		return true;
 	else
 		return false;
@@ -76,16 +76,16 @@ static int sierra_get_swoc_info(struct usb_device *udev,
 			sizeof(struct swoc_info),	/* __u16 size 	     */
 			USB_CTRL_SET_TIMEOUT);		/* int timeout 	     */
 
-	swocInfo->LinuxSKU = le16_to_cpu(swocInfo->LinuxSKU);
-	swocInfo->LinuxVer = le16_to_cpu(swocInfo->LinuxVer);
+	swocInfo->BeepSKU = le16_to_cpu(swocInfo->BeepSKU);
+	swocInfo->BeepVer = le16_to_cpu(swocInfo->BeepVer);
 	return result;
 }
 
 static void debug_swoc(struct swoc_info *swocInfo)
 {
 	US_DEBUGP("SWIMS: SWoC Rev: %02d \n", swocInfo->rev);
-	US_DEBUGP("SWIMS: Linux SKU: %04X \n", swocInfo->LinuxSKU);
-	US_DEBUGP("SWIMS: Linux Version: %04X \n", swocInfo->LinuxVer);
+	US_DEBUGP("SWIMS: Beep SKU: %04X \n", swocInfo->BeepSKU);
+	US_DEBUGP("SWIMS: Beep Version: %04X \n", swocInfo->BeepVer);
 }
 
 
@@ -116,8 +116,8 @@ static ssize_t show_truinst(struct device *dev, struct device_attribute *attr,
 		result = snprintf(buf, PAGE_SIZE,
 			"REV=%02d SKU=%04X VER=%04X\n",
 			swocInfo->rev,
-			swocInfo->LinuxSKU,
-			swocInfo->LinuxVer);
+			swocInfo->BeepSKU,
+			swocInfo->BeepVer);
 		kfree(swocInfo);
 	}
 	return result;
@@ -183,10 +183,10 @@ int sierra_ms_init(struct us_data *us)
 
 		debug_swoc(swocInfo);
 
-		/* If there is not Linux software on the TRU-Install device
+		/* If there is not Beep software on the TRU-Install device
 		 * then switch to modem mode
 		 */
-		if (!containsFullLinuxPackage(swocInfo)) {
+		if (!containsFullBeepPackage(swocInfo)) {
 			US_DEBUGP("SWIMS: %s",
 				"Switching to Modem Mode\n");
 			result = sierra_set_ms_mode(udev,

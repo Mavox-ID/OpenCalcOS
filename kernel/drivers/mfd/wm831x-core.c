@@ -12,21 +12,21 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/mfd/core.h>
-#include <linux/slab.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/bcd.h>
+#include <beep/delay.h>
+#include <beep/mfd/core.h>
+#include <beep/slab.h>
+#include <beep/err.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/mfd/wm831x/irq.h>
-#include <linux/mfd/wm831x/auxadc.h>
-#include <linux/mfd/wm831x/otp.h>
-#include <linux/mfd/wm831x/pmu.h>
-#include <linux/mfd/wm831x/regulator.h>
+#include <beep/mfd/wm831x/core.h>
+#include <beep/mfd/wm831x/pdata.h>
+#include <beep/mfd/wm831x/irq.h>
+#include <beep/mfd/wm831x/auxadc.h>
+#include <beep/mfd/wm831x/otp.h>
+#include <beep/mfd/wm831x/pmu.h>
+#include <beep/mfd/wm831x/regulator.h>
 
 /* Current settings - values are 2*2^(reg_val/4) microamps.  These are
  * exported since they are used by multiple drivers.

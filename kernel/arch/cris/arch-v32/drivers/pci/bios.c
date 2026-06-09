@@ -1,5 +1,5 @@
-#include <linux/pci.h>
-#include <linux/kernel.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
 #include <arch/hwregs/intr_vect.h>
 
 void pcibios_fixup_bus(struct pci_bus *b)

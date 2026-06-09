@@ -15,22 +15,22 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- * Authors	Mitsuru KANDA  <mk@linux-ipv6.org>
- * 		YOSHIFUJI Hideaki <yoshfuji@linux-ipv6.org>
+ * Authors	Mitsuru KANDA  <mk@beep-ipv6.org>
+ * 		YOSHIFUJI Hideaki <yoshfuji@beep-ipv6.org>
  *
  * Based on net/ipv4/xfrm4_tunnel.c
  *
  */
-#include <linux/module.h>
-#include <linux/xfrm.h>
-#include <linux/slab.h>
-#include <linux/rculist.h>
+#include <beep/module.h>
+#include <beep/xfrm.h>
+#include <beep/slab.h>
+#include <beep/rculist.h>
 #include <net/ip.h>
 #include <net/xfrm.h>
 #include <net/ipv6.h>
-#include <linux/ipv6.h>
-#include <linux/icmpv6.h>
-#include <linux/mutex.h>
+#include <beep/ipv6.h>
+#include <beep/icmpv6.h>
+#include <beep/mutex.h>
 #include <net/netns/generic.h>
 
 #define XFRM6_TUNNEL_SPI_BYADDR_HSIZE 256

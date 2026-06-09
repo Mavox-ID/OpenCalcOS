@@ -15,27 +15,27 @@
  *   Copyright (C) 2011 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/uaccess.h>
-#include <linux/in.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/phy.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/mm.h>
-#include <linux/platform_device.h>
-#include <linux/ethtool.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/uaccess.h>
+#include <beep/in.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/phy.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/skbuff.h>
+#include <beep/mm.h>
+#include <beep/platform_device.h>
+#include <beep/ethtool.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/dma-mapping.h>
+#include <beep/module.h>
 
 #include <asm/checksum.h>
 

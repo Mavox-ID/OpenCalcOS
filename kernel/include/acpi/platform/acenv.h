@@ -137,8 +137,8 @@
 
 /*! [Begin] no source code translation */
 
-#if defined(_LINUX) || defined(__linux__)
-#include <acpi/platform/aclinux.h>
+#if defined(_BEEP) || defined(__beep__)
+#include <acpi/platform/acbeep.h>
 
 #elif defined(_AED_EFI)
 #include "acefi.h"

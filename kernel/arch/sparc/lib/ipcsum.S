@@ -1,4 +1,4 @@
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 	.text
 ENTRY(ip_fast_csum) /* %o0 = iph, %o1 = ihl */

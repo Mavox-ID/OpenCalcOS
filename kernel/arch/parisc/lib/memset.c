@@ -16,9 +16,9 @@
    Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA
    02111-1307 USA.  */
 
-/* Slight modifications for pa-risc linux - Paul Bame <bame@debian.org> */
+/* Slight modifications for pa-risc beep - Paul Bame <bame@debian.org> */
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/string.h>
 
 #define OPSIZ (BITS_PER_LONG/8)

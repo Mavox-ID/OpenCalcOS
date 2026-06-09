@@ -21,18 +21,18 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/errno.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/input.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
 
-#include <linux/platform_data/omap4-keypad.h>
+#include <beep/platform_data/omap4-keypad.h>
 
 /* OMAP4 registers */
 #define OMAP4_KBD_REVISION		0x00
@@ -228,7 +228,7 @@ static int omap4_keypad_parse_dt(struct device *dev,
 		return -EINVAL;
 	}
 
-	if (of_get_property(np, "linux,input-no-autorepeat", NULL))
+	if (of_get_property(np, "beep,input-no-autorepeat", NULL))
 		keypad_data->no_autorepeat = true;
 
 	return 0;

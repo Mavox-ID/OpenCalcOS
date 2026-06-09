@@ -7,7 +7,7 @@
  */
 
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 #include <asm/intrinsics.h>
 #include <asm/mmu_context.h>

@@ -25,15 +25,15 @@
  * 02110-1301 USA
  *
  */
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/workqueue.h>
-#include <linux/input.h>
-#include <linux/mfd/twl6040.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/of.h>
+#include <beep/workqueue.h>
+#include <beep/input.h>
+#include <beep/mfd/twl6040.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/regulator/consumer.h>
 
 #define EFFECT_DIR_180_DEG	0x8000
 

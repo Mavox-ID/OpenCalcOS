@@ -1,5 +1,5 @@
 /*
- * linux/drivers/media/platform/s5p-mfc/s5p_mfc_dec.c
+ * beep/drivers/media/platform/s5p-mfc/s5p_mfc_dec.c
  *
  * Copyright (C) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/
@@ -11,16 +11,16 @@
  * (at your option) any later version.
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/version.h>
-#include <linux/videodev2.h>
-#include <linux/workqueue.h>
+#include <beep/clk.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/version.h>
+#include <beep/videodev2.h>
+#include <beep/workqueue.h>
 #include <media/v4l2-ctrls.h>
 #include <media/videobuf2-core.h>
 #include "s5p_mfc_common.h"

@@ -14,21 +14,21 @@
  * of the GNU General Public License, incorporated herein by reference.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/skbuff.h>
 #include <asm/uaccess.h>
 #include <net/sock.h>
 #include <net/netlink.h>
-#include <linux/init.h>
+#include <beep/init.h>
 
-#include <linux/netlink.h>
-#include <linux/netfilter/nfnetlink.h>
+#include <beep/netlink.h>
+#include <beep/netfilter/nfnetlink.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Harald Welte <laforge@netfilter.org>");

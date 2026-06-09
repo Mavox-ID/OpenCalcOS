@@ -7,7 +7,7 @@
 #ifndef _BLACKFIN_SECTIONS_H
 #define _BLACKFIN_SECTIONS_H
 
-/* only used when MTD_UCLINUX */
+/* only used when MTD_UCBEEP */
 extern unsigned long memory_mtd_start, memory_mtd_end, mtd_size;
 
 extern unsigned long _ramstart, _ramend, _rambase;

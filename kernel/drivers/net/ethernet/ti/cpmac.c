@@ -16,31 +16,31 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/moduleparam.h>
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/delay.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/delay.h>
 
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/atomic.h>
+#include <beep/netdevice.h>
+#include <beep/if_vlan.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/skbuff.h>
+#include <beep/mii.h>
+#include <beep/phy.h>
+#include <beep/phy_fixed.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/clk.h>
+#include <beep/gpio.h>
+#include <beep/atomic.h>
 
 MODULE_AUTHOR("Eugene Konev <ejka@imfi.kspu.ru>");
 MODULE_DESCRIPTION("TI AR7 ethernet driver (CPMAC)");

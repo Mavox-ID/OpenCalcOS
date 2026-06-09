@@ -8,7 +8,7 @@
  *  in the early extended-partition checks and added DM partitions
  *
  *  Support for DiskManager v6.0x added by Mark Lord,
- *  with information provided by OnTrack.  This now works for linux fdisk
+ *  with information provided by OnTrack.  This now works for beep fdisk
  *  and LILO, as well as loadlin and bootln.  Note that disks other than
  *  /dev/hda *must* have a "DOS" type 0x51 partition in the first slot (hda1).
  *
@@ -18,7 +18,7 @@
  *
  *  Re-organised Feb 1998 Russell King
  */
-#include <linux/msdos_fs.h>
+#include <beep/msdos_fs.h>
 
 #include "check.h"
 #include "msdos.h"
@@ -47,7 +47,7 @@ static inline int is_extended_partition(struct partition *p)
 {
 	return (SYS_IND(p) == DOS_EXTENDED_PARTITION ||
 		SYS_IND(p) == WIN98_EXTENDED_PARTITION ||
-		SYS_IND(p) == LINUX_EXTENDED_PARTITION);
+		SYS_IND(p) == BEEP_EXTENDED_PARTITION);
 }
 
 #define MSDOS_LABEL_MAGIC1	0x55
@@ -76,12 +76,12 @@ static int aix_magic_present(struct parsed_partitions *state, unsigned char *p)
 		p[2] == AIX_LABEL_MAGIC3 &&
 		p[3] == AIX_LABEL_MAGIC4))
 		return 0;
-	/* Assume the partition table is valid if Linux partitions exists */
+	/* Assume the partition table is valid if Beep partitions exists */
 	for (slot = 1; slot <= 4; slot++, pt++) {
-		if (pt->sys_ind == LINUX_SWAP_PARTITION ||
-			pt->sys_ind == LINUX_RAID_PARTITION ||
-			pt->sys_ind == LINUX_DATA_PARTITION ||
-			pt->sys_ind == LINUX_LVM_PARTITION ||
+		if (pt->sys_ind == BEEP_SWAP_PARTITION ||
+			pt->sys_ind == BEEP_RAID_PARTITION ||
+			pt->sys_ind == BEEP_DATA_PARTITION ||
+			pt->sys_ind == BEEP_LVM_PARTITION ||
 			is_extended_partition(pt))
 			return 0;
 	}
@@ -112,7 +112,7 @@ static void set_info(struct parsed_partitions *state, int slot,
  * is the real data partition (with a start relative to the partition
  * table start).  The second is a pointer to the next logical partition
  * (with a start relative to the entire extended partition).
- * We do not create a Linux partition for the partition tables, but
+ * We do not create a Beep partition for the partition tables, but
  * only for the actual data partitions.
  */
 
@@ -179,7 +179,7 @@ static void parse_extended(struct parsed_partitions *state,
 
 			put_partition(state, state->next, next, size);
 			set_info(state, state->next, disksig);
-			if (SYS_IND(p) == LINUX_RAID_PARTITION)
+			if (SYS_IND(p) == BEEP_RAID_PARTITION)
 				state->parts[state->next].flags = ADDPART_FLAG_RAID;
 			loopct = 0;
 			if (++state->next == state->limit)
@@ -208,7 +208,7 @@ done:
 }
 
 /* james@bpgc.com: Solaris has a nasty indicator: 0x82 which also
-   indicates linux swap.  Be careful before believing this is Solaris. */
+   indicates beep swap.  Be careful before believing this is Solaris. */
 
 static void parse_solaris_x86(struct parsed_partitions *state,
 			      sector_t offset, sector_t size, int origin)
@@ -537,7 +537,7 @@ int msdos_partition(struct parsed_partitions *state)
 		}
 		put_partition(state, slot, start, size);
 		set_info(state, slot, disksig);
-		if (SYS_IND(p) == LINUX_RAID_PARTITION)
+		if (SYS_IND(p) == BEEP_RAID_PARTITION)
 			state->parts[slot].flags = ADDPART_FLAG_RAID;
 		if (SYS_IND(p) == DM6_PARTITION)
 			strlcat(state->pp_buf, "[DM]", PAGE_SIZE);

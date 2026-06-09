@@ -5,14 +5,14 @@
  *
  * Copyright (C) 2004-2008, 2009, 2010 Cavium Networks
  */
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/sched.h>
-#include <linux/module.h>
+#include <beep/cpu.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/sched.h>
+#include <beep/module.h>
 
 #include <asm/mmu_context.h>
 #include <asm/time.h>
@@ -83,9 +83,9 @@ static inline void octeon_send_ipi_mask(const struct cpumask *mask,
 static void octeon_smp_hotplug_setup(void)
 {
 #ifdef CONFIG_HOTPLUG_CPU
-	struct linux_app_boot_info *labi;
+	struct beep_app_boot_info *labi;
 
-	labi = (struct linux_app_boot_info *)PHYS_TO_XKSEG_CACHED(LABI_ADDR_IN_BOOTLOADER);
+	labi = (struct beep_app_boot_info *)PHYS_TO_XKSEG_CACHED(LABI_ADDR_IN_BOOTLOADER);
 	if (labi->labi_signature != LABI_SIGNATURE)
 		panic("The bootloader version on this board is incorrect.");
 
@@ -194,9 +194,9 @@ static void __cpuinit octeon_init_secondary(void)
 void octeon_prepare_cpus(unsigned int max_cpus)
 {
 #ifdef CONFIG_HOTPLUG_CPU
-	struct linux_app_boot_info *labi;
+	struct beep_app_boot_info *labi;
 
-	labi = (struct linux_app_boot_info *)PHYS_TO_XKSEG_CACHED(LABI_ADDR_IN_BOOTLOADER);
+	labi = (struct beep_app_boot_info *)PHYS_TO_XKSEG_CACHED(LABI_ADDR_IN_BOOTLOADER);
 
 	if (labi->labi_signature != LABI_SIGNATURE)
 		panic("The bootloader version on this board is incorrect.");
@@ -291,19 +291,19 @@ static void octeon_cpu_die(unsigned int cpu)
 	 */
 
 	mask = 1 << coreid;
-	/* LINUX_APP_BOOT_BLOCK is initialized in bootoct binary */
-	block_desc = cvmx_bootmem_find_named_block(LINUX_APP_BOOT_BLOCK_NAME);
+	/* BEEP_APP_BOOT_BLOCK is initialized in bootoct binary */
+	block_desc = cvmx_bootmem_find_named_block(BEEP_APP_BOOT_BLOCK_NAME);
 
 	if (!block_desc) {
-		struct linux_app_boot_info *labi;
+		struct beep_app_boot_info *labi;
 
-		labi = (struct linux_app_boot_info *)PHYS_TO_XKSEG_CACHED(LABI_ADDR_IN_BOOTLOADER);
+		labi = (struct beep_app_boot_info *)PHYS_TO_XKSEG_CACHED(LABI_ADDR_IN_BOOTLOADER);
 
 		labi->avail_coremask |= mask;
 		new_mask = labi->avail_coremask;
 	} else {		       /* alternative, already initialized */
 		uint32_t *p = (uint32_t *)PHYS_TO_XKSEG_CACHED(block_desc->base_addr +
-							       AVAIL_COREMASK_OFFSET_IN_LINUX_APP_BOOT_BLOCK);
+							       AVAIL_COREMASK_OFFSET_IN_BEEP_APP_BOOT_BLOCK);
 		*p |= mask;
 		new_mask = *p;
 	}
@@ -344,18 +344,18 @@ static int octeon_update_boot_vector(unsigned int cpu)
 	struct boot_init_vector *boot_vect =
 		(struct boot_init_vector *)PHYS_TO_XKSEG_CACHED(BOOTLOADER_BOOT_VECTOR);
 
-	block_desc = cvmx_bootmem_find_named_block(LINUX_APP_BOOT_BLOCK_NAME);
+	block_desc = cvmx_bootmem_find_named_block(BEEP_APP_BOOT_BLOCK_NAME);
 
 	if (!block_desc) {
-		struct linux_app_boot_info *labi;
+		struct beep_app_boot_info *labi;
 
-		labi = (struct linux_app_boot_info *)PHYS_TO_XKSEG_CACHED(LABI_ADDR_IN_BOOTLOADER);
+		labi = (struct beep_app_boot_info *)PHYS_TO_XKSEG_CACHED(LABI_ADDR_IN_BOOTLOADER);
 
 		avail_coremask = labi->avail_coremask;
 		labi->avail_coremask &= ~(1 << coreid);
 	} else {		       /* alternative, already initialized */
 		avail_coremask = *(uint32_t *)PHYS_TO_XKSEG_CACHED(
-			block_desc->base_addr + AVAIL_COREMASK_OFFSET_IN_LINUX_APP_BOOT_BLOCK);
+			block_desc->base_addr + AVAIL_COREMASK_OFFSET_IN_BEEP_APP_BOOT_BLOCK);
 	}
 
 	if (!(avail_coremask & (1 << coreid))) {

@@ -27,19 +27,19 @@
  *              encode our number in CallerPN and ConnectedPN
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
 
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 
 #include <asm/io.h>
 #include <asm/string.h>
 
-#include <linux/isdnif.h>
+#include <beep/isdnif.h>
 
 #include "pcbit.h"
 #include "edss1.h"

@@ -40,16 +40,16 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/crc32.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/init.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/usbnet.h>
+#include <beep/crc32.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/init.h>
+#include <beep/mii.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/usb/usbnet.h>
 
 /* requests */
 #define MCS7830_RD_BMREQ	(USB_DIR_IN  | USB_TYPE_VENDOR | \

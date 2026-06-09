@@ -1,7 +1,7 @@
 /*
  * f71805f.c - driver for the Fintek F71805F/FG and F71872F/FG Super-I/O
  *             chips integrated hardware monitoring features
- * Copyright (C) 2005-2006  Jean Delvare <khali@linux-fr.org>
+ * Copyright (C) 2005-2006  Jean Delvare <khali@beep-fr.org>
  *
  * The F71805F/FG is a LPC Super-I/O chip made by Fintek. It integrates
  * complete hardware monitoring features: voltage, fan and temperature
@@ -30,19 +30,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/ioport.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/jiffies.h>
+#include <beep/platform_device.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/sysfs.h>
+#include <beep/ioport.h>
+#include <beep/acpi.h>
+#include <beep/io.h>
 
 static unsigned short force_id;
 module_param(force_id, ushort, 0);
@@ -1649,7 +1649,7 @@ static void __exit f71805f_exit(void)
 	platform_driver_unregister(&f71805f_driver);
 }
 
-MODULE_AUTHOR("Jean Delvare <khali@linux-fr>");
+MODULE_AUTHOR("Jean Delvare <khali@beep-fr>");
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("F71805F/F71872F hardware monitoring driver");
 

@@ -1,5 +1,5 @@
 /*
- * linux/net/sunrpc/svcsock.c
+ * beep/net/sunrpc/svcsock.c
  *
  * These are the RPC server socket internals.
  *
@@ -19,22 +19,22 @@
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/udp.h>
-#include <linux/tcp.h>
-#include <linux/unistd.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/file.h>
-#include <linux/freezer.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/fcntl.h>
+#include <beep/net.h>
+#include <beep/in.h>
+#include <beep/inet.h>
+#include <beep/udp.h>
+#include <beep/tcp.h>
+#include <beep/unistd.h>
+#include <beep/slab.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/file.h>
+#include <beep/freezer.h>
 #include <net/sock.h>
 #include <net/checksum.h>
 #include <net/ip.h>
@@ -45,13 +45,13 @@
 #include <asm/ioctls.h>
 #include <trace/events/skb.h>
 
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/xprt.h>
+#include <beep/sunrpc/types.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/xdr.h>
+#include <beep/sunrpc/msg_prot.h>
+#include <beep/sunrpc/svcsock.h>
+#include <beep/sunrpc/stats.h>
+#include <beep/sunrpc/xprt.h>
 
 #include "sunrpc.h"
 

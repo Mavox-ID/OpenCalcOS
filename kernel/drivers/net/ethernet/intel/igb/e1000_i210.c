@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel(R) Gigabit Ethernet Linux driver
+  Intel(R) Gigabit Ethernet Beep driver
   Copyright(c) 2007-2012 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it
@@ -29,8 +29,8 @@
  * e1000_i211
  */
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <beep/types.h>
+#include <beep/if_ether.h>
 
 #include "e1000_hw.h"
 #include "e1000_i210.h"

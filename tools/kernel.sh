@@ -18,14 +18,20 @@
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 NC='\033[0m'
-set -e && cd .. && echo -e "${YELLOW}set's error logs${NC}"
+set -e && cd ..
+export PATH="$(pwd)/ndless/ndless-sdk/toolchain/install/bin:$PATH"
 echo -e "${GREEN}Cleaning build...${NC}"
 cd kernel && make clean
 echo -e "${GREEN}Building kernel...${NC}"
 export ARCH=arm
-export CROSS_COMPILE=arm-linux-gnueabi-
+export CROSS_COMPILE=arm-none-eabi-
 echo -e "${GREEN}Exported ARCH && CROSS${NC}"
-make -j$(nproc) zCalc
+make -j"$(nproc)" KCFLAGS="-w" zCalc
+
+echo -e "${GREEN}Building progs...${NC}"
+mkdir -p prog/build
+cd ../tools && bash prog.sh && cd ../kernel
+
 echo -e "${GREEN}Maked zCalc${NC}"
 cp arch/arm/boot/zCalc ../zCalc.tns && cd ..
 echo -e "${GREEN}Done: zCalc.tns${NC} ($(du -h zCalc.tns | cut -f1))"

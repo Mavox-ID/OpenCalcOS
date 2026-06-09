@@ -5,12 +5,12 @@
  *    Author(s): Heiko Carstens <heiko.carstens@de.ibm.com>
  */
 
-#include <linux/notifier.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
+#include <beep/notifier.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/cpu.h>
 #include <asm/facility.h>
 
 struct cache {

@@ -20,21 +20,21 @@
  *  GNU General Public License for more details.
  */
 
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mc146818rtc.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/errno.h>
+#include <beep/gfp.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/mc146818rtc.h>
+#include <beep/module.h>
+#include <beep/reboot.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/mutex.h>
 #include <asm/io.h>
 
 #include "dcdbas.h"

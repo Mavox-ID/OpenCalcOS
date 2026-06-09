@@ -1,15 +1,15 @@
 /*
  * Common interrupt code for 32 and 64 bit
  */
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/of.h>
-#include <linux/seq_file.h>
-#include <linux/smp.h>
-#include <linux/ftrace.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <beep/cpu.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/of.h>
+#include <beep/seq_file.h>
+#include <beep/smp.h>
+#include <beep/ftrace.h>
+#include <beep/delay.h>
+#include <beep/export.h>
 
 #include <asm/apic.h>
 #include <asm/io_apic.h>

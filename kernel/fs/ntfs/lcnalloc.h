@@ -1,6 +1,6 @@
 /*
  * lcnalloc.h - Exports for NTFS kernel cluster (de)allocation.  Part of the
- *		Linux-NTFS project.
+ *		Beep-NTFS project.
  *
  * Copyright (c) 2004-2005 Anton Altaparmakov
  *
@@ -15,17 +15,17 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#ifndef _LINUX_NTFS_LCNALLOC_H
-#define _LINUX_NTFS_LCNALLOC_H
+#ifndef _BEEP_NTFS_LCNALLOC_H
+#define _BEEP_NTFS_LCNALLOC_H
 
 #ifdef NTFS_RW
 
-#include <linux/fs.h>
+#include <beep/fs.h>
 
 #include "attrib.h"
 #include "types.h"
@@ -142,4 +142,4 @@ static inline int ntfs_cluster_free_from_rl(ntfs_volume *vol,
 
 #endif /* NTFS_RW */
 
-#endif /* defined _LINUX_NTFS_LCNALLOC_H */
+#endif /* defined _BEEP_NTFS_LCNALLOC_H */

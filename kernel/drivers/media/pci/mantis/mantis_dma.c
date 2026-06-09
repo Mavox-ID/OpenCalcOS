@@ -18,15 +18,15 @@
 	Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <asm/page.h>
-#include <linux/vmalloc.h>
-#include <linux/pci.h>
+#include <beep/vmalloc.h>
+#include <beep/pci.h>
 
 #include <asm/irq.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
 
 #include "dmxdev.h"
 #include "dvbdev.h"

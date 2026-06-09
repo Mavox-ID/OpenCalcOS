@@ -11,29 +11,29 @@
  * (at your option) any later version.
  */
 
-#include <linux/blkdev.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/dw_mmc.h>
-#include <linux/bitops.h>
-#include <linux/regulator/consumer.h>
-#include <linux/workqueue.h>
-#include <linux/of.h>
+#include <beep/blkdev.h>
+#include <beep/clk.h>
+#include <beep/debugfs.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/mmc.h>
+#include <beep/mmc/dw_mmc.h>
+#include <beep/bitops.h>
+#include <beep/regulator/consumer.h>
+#include <beep/workqueue.h>
+#include <beep/of.h>
 
 #include "dw_mmc.h"
 

@@ -19,11 +19,11 @@
  *   along with this program;  if not, write to the Free Software
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
 #include <asm/uaccess.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
@@ -375,7 +375,7 @@ static const struct file_operations cifsFYI_proc_fops;
 static const struct file_operations cifs_lookup_cache_proc_fops;
 static const struct file_operations traceSMB_proc_fops;
 static const struct file_operations cifs_security_flags_proc_fops;
-static const struct file_operations cifs_linux_ext_proc_fops;
+static const struct file_operations cifs_beep_ext_proc_fops;
 
 void
 cifs_proc_init(void)
@@ -391,8 +391,8 @@ cifs_proc_init(void)
 #endif /* STATS */
 	proc_create("cifsFYI", 0, proc_fs_cifs, &cifsFYI_proc_fops);
 	proc_create("traceSMB", 0, proc_fs_cifs, &traceSMB_proc_fops);
-	proc_create("LinuxExtensionsEnabled", 0, proc_fs_cifs,
-		    &cifs_linux_ext_proc_fops);
+	proc_create("BeepExtensionsEnabled", 0, proc_fs_cifs,
+		    &cifs_beep_ext_proc_fops);
 	proc_create("SecurityFlags", 0, proc_fs_cifs,
 		    &cifs_security_flags_proc_fops);
 	proc_create("LookupCacheEnabled", 0, proc_fs_cifs,
@@ -412,7 +412,7 @@ cifs_proc_clean(void)
 	remove_proc_entry("Stats", proc_fs_cifs);
 #endif
 	remove_proc_entry("SecurityFlags", proc_fs_cifs);
-	remove_proc_entry("LinuxExtensionsEnabled", proc_fs_cifs);
+	remove_proc_entry("BeepExtensionsEnabled", proc_fs_cifs);
 	remove_proc_entry("LookupCacheEnabled", proc_fs_cifs);
 	remove_proc_entry("fs/cifs", NULL);
 }
@@ -456,18 +456,18 @@ static const struct file_operations cifsFYI_proc_fops = {
 	.write		= cifsFYI_proc_write,
 };
 
-static int cifs_linux_ext_proc_show(struct seq_file *m, void *v)
+static int cifs_beep_ext_proc_show(struct seq_file *m, void *v)
 {
-	seq_printf(m, "%d\n", linuxExtEnabled);
+	seq_printf(m, "%d\n", beepExtEnabled);
 	return 0;
 }
 
-static int cifs_linux_ext_proc_open(struct inode *inode, struct file *file)
+static int cifs_beep_ext_proc_open(struct inode *inode, struct file *file)
 {
-	return single_open(file, cifs_linux_ext_proc_show, NULL);
+	return single_open(file, cifs_beep_ext_proc_show, NULL);
 }
 
-static ssize_t cifs_linux_ext_proc_write(struct file *file,
+static ssize_t cifs_beep_ext_proc_write(struct file *file,
 		const char __user *buffer, size_t count, loff_t *ppos)
 {
 	char c;
@@ -477,20 +477,20 @@ static ssize_t cifs_linux_ext_proc_write(struct file *file,
 	if (rc)
 		return rc;
 	if (c == '0' || c == 'n' || c == 'N')
-		linuxExtEnabled = 0;
+		beepExtEnabled = 0;
 	else if (c == '1' || c == 'y' || c == 'Y')
-		linuxExtEnabled = 1;
+		beepExtEnabled = 1;
 
 	return count;
 }
 
-static const struct file_operations cifs_linux_ext_proc_fops = {
+static const struct file_operations cifs_beep_ext_proc_fops = {
 	.owner		= THIS_MODULE,
-	.open		= cifs_linux_ext_proc_open,
+	.open		= cifs_beep_ext_proc_open,
 	.read		= seq_read,
 	.llseek		= seq_lseek,
 	.release	= single_release,
-	.write		= cifs_linux_ext_proc_write,
+	.write		= cifs_beep_ext_proc_write,
 };
 
 static int cifs_lookup_cache_proc_show(struct seq_file *m, void *v)

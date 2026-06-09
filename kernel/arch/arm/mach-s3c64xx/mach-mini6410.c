@@ -1,10 +1,10 @@
-/* linux/arch/arm/mach-s3c64xx/mach-mini6410.c
+/* beep/arch/arm/mach-s3c64xx/mach-mini6410.c
  *
  * Copyright 2010 Darius Augulis <augulis.darius@gmail.com>
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -12,17 +12,17 @@
  *
 */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/dm9000.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/serial_core.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/fb.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/dm9000.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/serial_core.h>
+#include <beep/types.h>
 
 #include <asm/hardware/vic.h>
 #include <asm/mach-types.h>
@@ -38,9 +38,9 @@
 #include <plat/cpu.h>
 #include <plat/devs.h>
 #include <plat/fb.h>
-#include <linux/platform_data/mtd-nand-s3c2410.h>
+#include <beep/platform_data/mtd-nand-s3c2410.h>
 #include <plat/regs-serial.h>
-#include <linux/platform_data/touchscreen-s3c2410.h>
+#include <beep/platform_data/touchscreen-s3c2410.h>
 
 #include <video/platform_lcd.h>
 #include <video/samsung_fimd.h>

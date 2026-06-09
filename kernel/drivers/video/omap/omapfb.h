@@ -24,9 +24,9 @@
 #ifndef __OMAPFB_H
 #define __OMAPFB_H
 
-#include <linux/fb.h>
-#include <linux/mutex.h>
-#include <linux/omapfb.h>
+#include <beep/fb.h>
+#include <beep/mutex.h>
+#include <beep/omapfb.h>
 
 #define OMAPFB_EVENT_READY	1
 #define OMAPFB_EVENT_DISABLED	2

@@ -17,8 +17,8 @@
  * Author: Weidong Han <weidong.han@intel.com>
  */
 
-#include <linux/pci.h>
-#include <linux/acpi.h>
+#include <beep/pci.h>
+#include <beep/acpi.h>
 #include <xen/xen.h>
 #include <xen/interface/physdev.h>
 #include <xen/interface/xen.h>

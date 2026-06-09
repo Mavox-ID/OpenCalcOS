@@ -1,8 +1,8 @@
-#ifndef _UAPI__LINUX_FBIO_H
-#define _UAPI__LINUX_FBIO_H
+#ifndef _UAPI__BEEP_FBIO_H
+#define _UAPI__BEEP_FBIO_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/types.h>
 
 /* Constants used for fbio SunOS compatibility */
 /* (C) 1996 Miguel de Icaza */
@@ -176,7 +176,7 @@ struct mdi_cfginfo {
         int     mdi_pixfreq;    /* pixel clock (from PROM) */
 };
 
-/* SparcLinux specific ioctl for the MDI, should be replaced for
+/* SparcBeep specific ioctl for the MDI, should be replaced for
  * the SET_XLUT/SET_CLUTn ioctls instead
  */
 #define MDI_CLEAR_XLUT       (MDI_IOCTL|9)
@@ -256,4 +256,4 @@ struct fb_clut32 {
 #define LEO_UNK2_MAP           0x0100a000
 
 
-#endif /* _UAPI__LINUX_FBIO_H */
+#endif /* _UAPI__BEEP_FBIO_H */

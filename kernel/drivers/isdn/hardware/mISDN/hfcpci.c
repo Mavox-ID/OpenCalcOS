@@ -2,7 +2,7 @@
  *
  * hfcpci.c     low level driver for CCD's hfc-pci based cards
  *
- * Author     Werner Cornelius (werner@isdn4linux.de)
+ * Author     Werner Cornelius (werner@isdn4beep.de)
  *            based on existing driver for CCD hfc ISA cards
  *            type approval valid for HFC-S PCI A based card
  *
@@ -44,12 +44,12 @@
  *
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/mISDNhw.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/mISDNhw.h>
+#include <beep/slab.h>
 
 #include "hfc_pci.h"
 

@@ -1,5 +1,5 @@
 /*
- * Front panel driver for Linux
+ * Front panel driver for Beep
  * Copyright (C) 2000-2008, Willy Tarreau <w@1wt.eu>
  *
  * This program is free software; you can redistribute it and/or
@@ -36,30 +36,30 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/ctype.h>
-#include <linux/parport.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/miscdevice.h>
+#include <beep/slab.h>
+#include <beep/ioport.h>
+#include <beep/fcntl.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/ctype.h>
+#include <beep/parport.h>
+#include <beep/list.h>
+#include <beep/notifier.h>
+#include <beep/reboot.h>
 #include <generated/utsrelease.h>
 
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
 
 #define LCD_MINOR		156
 #define KEYPAD_MINOR		185
@@ -1566,7 +1566,7 @@ void lcd_init(void)
 	panel_lcd_print("\x1b[Lc\x1b[Lb\x1b[L*" CONFIG_PANEL_BOOT_MESSAGE);
 #endif
 #else
-	panel_lcd_print("\x1b[Lc\x1b[Lb\x1b[L*Linux-" UTS_RELEASE "\nPanel-"
+	panel_lcd_print("\x1b[Lc\x1b[Lb\x1b[L*Beep-" UTS_RELEASE "\nPanel-"
 			PANEL_VERSION);
 #endif
 	lcd_addr_x = lcd_addr_y = 0;

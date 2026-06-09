@@ -18,10 +18,10 @@ BOOT_HEAP_SIZE := 0x400000
 # Disable Function Tracer
 KBUILD_CFLAGS := $(shell echo $(KBUILD_CFLAGS) | sed -e "s/-pg//")
 
-KBUILD_CFLAGS := $(LINUXINCLUDE) $(KBUILD_CFLAGS) -D__KERNEL__ \
-	-DBOOT_HEAP_SIZE=$(BOOT_HEAP_SIZE) -D"VMLINUX_LOAD_ADDRESS_ULL=$(VMLINUX_LOAD_ADDRESS)ull"
+KBUILD_CFLAGS := $(BEEPINCLUDE) $(KBUILD_CFLAGS) -D__KERNEL__ \
+	-DBOOT_HEAP_SIZE=$(BOOT_HEAP_SIZE) -D"VMBEEP_LOAD_ADDRESS_ULL=$(VMBEEP_LOAD_ADDRESS)ull"
 
-KBUILD_AFLAGS := $(LINUXINCLUDE) $(KBUILD_AFLAGS) -D__ASSEMBLY__ \
+KBUILD_AFLAGS := $(BEEPINCLUDE) $(KBUILD_AFLAGS) -D__ASSEMBLY__ \
 	-DBOOT_HEAP_SIZE=$(BOOT_HEAP_SIZE) \
 	-DKERNEL_ENTRY=0x$(shell $(NM) $(objtree)/$(KBUILD_IMAGE) 2>/dev/null | grep " kernel_entry" | cut -f1 -d \ )
 
@@ -35,9 +35,9 @@ vmlinuzobjs-$(CONFIG_SYS_SUPPORTS_ZBOOT_UART16550) += $(obj)/uart-16550.o
 vmlinuzobjs-$(CONFIG_MIPS_ALCHEMY)		   += $(obj)/uart-alchemy.o
 endif
 
-targets += vmlinux.bin
-OBJCOPYFLAGS_vmlinux.bin := $(OBJCOPYFLAGS) -O binary -R .comment -S
-$(obj)/vmlinux.bin: $(KBUILD_IMAGE) FORCE
+targets += vmbeep.bin
+OBJCOPYFLAGS_vmbeep.bin := $(OBJCOPYFLAGS) -O binary -R .comment -S
+$(obj)/vmbeep.bin: $(KBUILD_IMAGE) FORCE
 	$(call if_changed,objcopy)
 
 tool_$(CONFIG_KERNEL_GZIP)    = gzip
@@ -45,14 +45,14 @@ tool_$(CONFIG_KERNEL_BZIP2)   = bzip2
 tool_$(CONFIG_KERNEL_LZMA)    = lzma
 tool_$(CONFIG_KERNEL_LZO)     = lzo
 
-targets += vmlinux.bin.z
-$(obj)/vmlinux.bin.z: $(obj)/vmlinux.bin FORCE
+targets += vmbeep.bin.z
+$(obj)/vmbeep.bin.z: $(obj)/vmbeep.bin FORCE
 	$(call if_changed,$(tool_y))
 
 targets += piggy.o
-OBJCOPYFLAGS_piggy.o := --add-section=.image=$(obj)/vmlinux.bin.z \
+OBJCOPYFLAGS_piggy.o := --add-section=.image=$(obj)/vmbeep.bin.z \
                         --set-section-flags=.image=contents,alloc,load,readonly,data
-$(obj)/piggy.o: $(obj)/dummy.o $(obj)/vmlinux.bin.z FORCE
+$(obj)/piggy.o: $(obj)/dummy.o $(obj)/vmbeep.bin.z FORCE
 	$(call if_changed,objcopy)
 
 # Calculate the load address of the compressed kernel image
@@ -62,7 +62,7 @@ ifeq ($(CONFIG_MACH_JZ4740),y)
 VMLINUZ_LOAD_ADDRESS := 0x80600000
 else
 VMLINUZ_LOAD_ADDRESS = $(shell $(obj)/calc_vmlinuz_load_addr \
-		$(obj)/vmlinux.bin $(VMLINUX_LOAD_ADDRESS))
+		$(obj)/vmbeep.bin $(VMBEEP_LOAD_ADDRESS))
 endif
 
 vmlinuzobjs-y += $(obj)/piggy.o

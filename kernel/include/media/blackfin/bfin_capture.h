@@ -1,7 +1,7 @@
 #ifndef _BFIN_CAPTURE_H_
 #define _BFIN_CAPTURE_H_
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 
 struct v4l2_input;
 struct ppi_info;

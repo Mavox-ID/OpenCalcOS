@@ -1,16 +1,16 @@
 /*
- * linux/arch/arm/mach-pxa/clock-pxa3xx.c
+ * beep/arch/arm/mach-pxa/clock-pxa3xx.c
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/syscore_ops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/syscore_ops.h>
 
 #include <mach/smemc.h>
 #include <mach/pxa3xx-regs.h>

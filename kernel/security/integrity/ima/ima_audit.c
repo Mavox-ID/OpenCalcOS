@@ -10,9 +10,9 @@
  * 	Audit calls for the integrity subsystem
  */
 
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/audit.h>
+#include <beep/fs.h>
+#include <beep/gfp.h>
+#include <beep/audit.h>
 #include "ima.h"
 
 static int ima_audit;

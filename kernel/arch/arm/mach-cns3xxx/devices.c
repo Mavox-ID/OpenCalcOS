@@ -11,11 +11,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/compiler.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
+#include <beep/io.h>
+#include <beep/init.h>
+#include <beep/compiler.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
 #include <mach/cns3xxx.h>
 #include <mach/irqs.h>
 #include <mach/pm.h>

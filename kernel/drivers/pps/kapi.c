@@ -2,7 +2,7 @@
  * kernel API
  *
  *
- * Copyright (C) 2005-2009   Rodolfo Giometti <giometti@linux.it>
+ * Copyright (C) 2005-2009   Rodolfo Giometti <giometti@beep.it>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -21,16 +21,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/spinlock.h>
-#include <linux/fs.h>
-#include <linux/pps_kernel.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/time.h>
+#include <beep/timex.h>
+#include <beep/spinlock.h>
+#include <beep/fs.h>
+#include <beep/pps_kernel.h>
+#include <beep/slab.h>
 
 #include "kc.h"
 

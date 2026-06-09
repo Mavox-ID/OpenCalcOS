@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel PRO/1000 Linux driver
+  Intel PRO/1000 Beep driver
   Copyright(c) 1999 - 2012 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it
@@ -20,7 +20,7 @@
   the file called "COPYING".
 
   Contact Information:
-  Linux NICS <linux.nics@intel.com>
+  Beep NICS <beep.nics@intel.com>
   e1000-devel Mailing List <e1000-devel@lists.sourceforge.net>
   Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
 
@@ -28,29 +28,29 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/tcp.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/vmalloc.h>
+#include <beep/pagemap.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/interrupt.h>
+#include <beep/tcp.h>
+#include <beep/ipv6.h>
+#include <beep/slab.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/pm_qos.h>
-#include <linux/pm_runtime.h>
-#include <linux/aer.h>
-#include <linux/prefetch.h>
+#include <beep/mii.h>
+#include <beep/ethtool.h>
+#include <beep/if_vlan.h>
+#include <beep/cpu.h>
+#include <beep/smp.h>
+#include <beep/pm_qos.h>
+#include <beep/pm_runtime.h>
+#include <beep/aer.h>
+#include <beep/prefetch.h>
 
 #include "e1000.h"
 
@@ -6552,7 +6552,7 @@ static void __exit e1000_exit_module(void)
 module_exit(e1000_exit_module);
 
 
-MODULE_AUTHOR("Intel Corporation, <linux.nics@intel.com>");
+MODULE_AUTHOR("Intel Corporation, <beep.nics@intel.com>");
 MODULE_DESCRIPTION("Intel(R) PRO/1000 Network Driver");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(DRV_VERSION);

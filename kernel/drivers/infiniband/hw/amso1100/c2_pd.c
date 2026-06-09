@@ -33,9 +33,9 @@
  * SOFTWARE.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
 
 #include "c2.h"
 #include "c2_provider.h"

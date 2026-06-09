@@ -1,5 +1,5 @@
 /************************************************************************
- * s2io.c: A Linux PCI-X Ethernet driver for Neterion 10GbE Server NIC
+ * s2io.c: A Beep PCI-X Ethernet driver for Neterion 10GbE Server NIC
  * Copyright(c) 2002-2010 Exar Corp.
  *
  * This software may be used and distributed according to the terms of
@@ -54,31 +54,31 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/mdio.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/stddef.h>
-#include <linux/ioctl.h>
-#include <linux/timex.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/mdio.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/stddef.h>
+#include <beep/ioctl.h>
+#include <beep/timex.h>
+#include <beep/ethtool.h>
+#include <beep/workqueue.h>
+#include <beep/if_vlan.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/prefetch.h>
 #include <net/tcp.h>
 
 #include <asm/div64.h>

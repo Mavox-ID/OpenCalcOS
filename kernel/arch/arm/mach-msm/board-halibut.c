@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-msm/board-halibut.c
+/* beep/arch/arm/mach-msm/board-halibut.c
  *
  * Copyright (C) 2007 Google, Inc.
  * Author: Brian Swetland <swetland@google.com>
@@ -14,12 +14,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/io.h>
+#include <beep/delay.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>
@@ -32,8 +32,8 @@
 #include <mach/board.h>
 #include <mach/msm_iomap.h>
 
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
 
 #include "devices.h"
 #include "common.h"

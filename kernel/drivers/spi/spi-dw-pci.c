@@ -17,11 +17,11 @@
  * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/spi/spi.h>
+#include <beep/module.h>
 
 #include "spi-dw.h"
 

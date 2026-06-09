@@ -11,13 +11,13 @@
  * the Free Software Foundation.
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <beep/err.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/poll.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
 
 #include <media/v4l2-dev.h>
 #include <media/v4l2-fh.h>
@@ -2673,6 +2673,6 @@ void vb2_ops_wait_finish(struct vb2_queue *vq)
 }
 EXPORT_SYMBOL_GPL(vb2_ops_wait_finish);
 
-MODULE_DESCRIPTION("Driver helper framework for Video for Linux 2");
+MODULE_DESCRIPTION("Driver helper framework for Video for Beep 2");
 MODULE_AUTHOR("Pawel Osciak <pawel@osciak.com>, Marek Szyprowski");
 MODULE_LICENSE("GPL");

@@ -52,8 +52,8 @@
 #ifndef __net_sctp_user_h__
 #define __net_sctp_user_h__
 
-#include <linux/types.h>
-#include <linux/socket.h>
+#include <beep/types.h>
+#include <beep/socket.h>
 
 typedef __s32 sctp_assoc_t;
 
@@ -747,7 +747,7 @@ struct sctp_assoc_stats {
 };
 
 /* These are bit fields for msghdr->msg_flags.  See section 5.1.  */
-/* On user space Linux, these live in <bits/socket.h> as an enum.  */
+/* On user space Beep, these live in <bits/socket.h> as an enum.  */
 enum sctp_msg_flags {
 	MSG_NOTIFICATION = 0x8000,
 #define MSG_NOTIFICATION MSG_NOTIFICATION

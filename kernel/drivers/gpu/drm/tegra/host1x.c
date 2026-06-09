@@ -7,11 +7,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
 
 #include "drm.h"
 

@@ -15,8 +15,8 @@
 
 #define IPV6_MAX_ADDRESSES		16
 
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <beep/in.h>
+#include <beep/in6.h>
 
 struct prefix_info {
 	__u8			type;
@@ -42,7 +42,7 @@ struct prefix_info {
 };
 
 
-#include <linux/netdevice.h>
+#include <beep/netdevice.h>
 #include <net/if_inet6.h>
 #include <net/ipv6.h>
 

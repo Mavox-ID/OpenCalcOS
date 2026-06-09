@@ -17,8 +17,8 @@
  * USA.
  */
 
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <beep/kthread.h>
+#include <beep/slab.h>
 
 #include "usbip_common.h"
 #include "vhci.h"

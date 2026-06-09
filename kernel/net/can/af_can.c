@@ -40,24 +40,24 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/uaccess.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/socket.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/can.h>
-#include <linux/can/core.h>
-#include <linux/ratelimit.h>
+#include <beep/module.h>
+#include <beep/stddef.h>
+#include <beep/init.h>
+#include <beep/kmod.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/rcupdate.h>
+#include <beep/uaccess.h>
+#include <beep/net.h>
+#include <beep/netdevice.h>
+#include <beep/socket.h>
+#include <beep/if_ether.h>
+#include <beep/if_arp.h>
+#include <beep/skbuff.h>
+#include <beep/can.h>
+#include <beep/can/core.h>
+#include <beep/ratelimit.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 

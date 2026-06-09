@@ -6,12 +6,12 @@
  * This file is released under the GPLv2.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/pm_clock.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/pm_clock.h>
 
 /**
  * dev_pm_get_subsys_data - Create or refcount power.subsys_data for device.

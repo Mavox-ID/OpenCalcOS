@@ -13,12 +13,12 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/mtd/mtd.h>
-#include <linux/slab.h>
-#include <linux/mtd/partitions.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/of.h>
+#include <beep/mtd/mtd.h>
+#include <beep/slab.h>
+#include <beep/mtd/partitions.h>
 
 static int parse_ofpart_partitions(struct mtd_info *master,
 				   struct mtd_partition **pparts,

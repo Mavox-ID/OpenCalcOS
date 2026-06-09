@@ -4,14 +4,14 @@
  * Copyright (c) 2009 emlix GmbH
  */
 
-#include <linux/kernel.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
+#include <beep/kernel.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/phy.h>
+#include <beep/platform_device.h>
+#include <beep/serial.h>
+#include <beep/serial_8250.h>
 
 #include <variant/hardware.h>
 #include <variant/dmac.h>

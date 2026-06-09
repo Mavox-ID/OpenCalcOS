@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/asm/checksum.h
+ * beep/arch/unicore32/include/asm/checksum.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *

@@ -12,16 +12,16 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/platform_device.h>
+#include <beep/types.h>
 
-#include <linux/usb/otg.h>
-#include <linux/usb/ulpi.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/ulpi.h>
 
 #include <media/soc_camera.h>
 

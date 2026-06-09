@@ -6,10 +6,10 @@
 #ifndef DEBUG_H
 #define DEBUG_H
 
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
+#include <beep/string.h>
+#include <beep/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/time.h>
 #include <uapi/asm/debug.h>
 
 #define DEBUG_MAX_LEVEL            6  /* debug levels range from 0 to 6 */

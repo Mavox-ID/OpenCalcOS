@@ -8,19 +8,19 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/serial_8250.h>
-#include <linux/ata_platform.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/mv643xx_i2c.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/serial_8250.h>
+#include <beep/ata_platform.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/mv643xx_eth.h>
+#include <beep/mv643xx_i2c.h>
 #include <net/dsa.h>
-#include <linux/platform_data/dma-mv_xor.h>
-#include <linux/platform_data/usb-ehci-orion.h>
+#include <beep/platform_data/dma-mv_xor.h>
+#include <beep/platform_data/usb-ehci-orion.h>
 #include <mach/bridge-regs.h>
 
 /* Create a clkdev entry for a given device/clk */
@@ -567,7 +567,7 @@ static struct platform_device orion_spi_1 = {
 };
 
 /* Note: The SPI silicon core does have interrupts. However the
- * current Linux software driver does not use interrupts. */
+ * current Beep software driver does not use interrupts. */
 
 void __init orion_spi_init(unsigned long mapbase)
 {

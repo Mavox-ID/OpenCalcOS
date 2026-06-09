@@ -21,16 +21,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include "pmcc4_sysdep.h"
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>        /* include for timer */
-#include <linux/timer.h>        /* include for timer */
-#include <linux/hdlc.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>        /* include for timer */
+#include <beep/timer.h>        /* include for timer */
+#include <beep/hdlc.h>
 #include <asm/io.h>
 
-#include "sbecom_inline_linux.h"
+#include "sbecom_inline_beep.h"
 #include "libsbew.h"
 #include "pmcc4_private.h"
 #include "pmcc4.h"

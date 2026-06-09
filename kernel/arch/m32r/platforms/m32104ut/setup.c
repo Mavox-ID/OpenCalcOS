@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/platforms/m32104ut/setup.c
+ *  beep/arch/m32r/platforms/m32104ut/setup.c
  *
  *  Setup routines for M32104UT Board
  *
@@ -8,10 +8,10 @@
  *                           Naoto Sugai, Hayato Fujiwara
  */
 
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/device.h>
 
 #include <asm/m32r.h>
 #include <asm/io.h>

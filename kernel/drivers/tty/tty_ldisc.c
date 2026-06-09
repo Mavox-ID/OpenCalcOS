@@ -1,24 +1,24 @@
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kmod.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/file.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/ratelimit.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/kmod.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/file.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/poll.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/wait.h>
+#include <beep/bitops.h>
+#include <beep/seq_file.h>
+#include <beep/uaccess.h>
+#include <beep/ratelimit.h>
 
 /*
  *	This guards the refcounted line discipline lists. The lock

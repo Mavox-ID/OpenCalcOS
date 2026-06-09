@@ -22,7 +22,7 @@
  *  Copyright (c) Russ Anderson <rja@sgi.com>
  */
 
-#include <linux/rtc.h>
+#include <beep/rtc.h>
 
 /*
  * Values for the BIOS calls.  It is passed as the first * argument in the
@@ -53,7 +53,7 @@ enum {
 
 /*
  * The UV system table describes specific firmware
- * capabilities available to the Linux kernel at runtime.
+ * capabilities available to the Beep kernel at runtime.
  */
 struct uv_systab {
 	char signature[4];	/* must be "UVST" */

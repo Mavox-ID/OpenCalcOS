@@ -19,7 +19,7 @@
  * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/via-core.h>
+#include <beep/via-core.h>
 #include <asm/olpc.h>
 #include "global.h"
 #include "via_clock.h"

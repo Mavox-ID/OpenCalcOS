@@ -23,10 +23,10 @@
 
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/slab.h>
-#include <linux/drbd.h>
+#include <beep/slab.h>
+#include <beep/drbd.h>
 #include "drbd_int.h"
 #include "drbd_req.h"
 

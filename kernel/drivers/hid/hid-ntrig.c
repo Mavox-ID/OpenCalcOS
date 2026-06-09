@@ -13,12 +13,12 @@
  * any later version.
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/usb.h>
+#include <beep/device.h>
+#include <beep/hid.h>
+#include <beep/usb.h>
 #include "usbhid/usbhid.h"
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #include "hid-ids.h"
 

@@ -13,18 +13,18 @@
  *
  */
 
-#include <linux/workqueue.h>
+#include <beep/workqueue.h>
 #include <net/xfrm.h>
-#include <linux/pfkeyv2.h>
-#include <linux/ipsec.h>
-#include <linux/module.h>
-#include <linux/cache.h>
-#include <linux/audit.h>
+#include <beep/pfkeyv2.h>
+#include <beep/ipsec.h>
+#include <beep/module.h>
+#include <beep/cache.h>
+#include <beep/audit.h>
 #include <asm/uaccess.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
+#include <beep/ktime.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
 
 #include "xfrm_hash.h"
 

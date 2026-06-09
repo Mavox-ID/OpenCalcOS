@@ -1,5 +1,5 @@
 config SECURITY_TOMOYO
-	bool "TOMOYO Linux Support"
+	bool "TOMOYO Beep Support"
 	depends on SECURITY
 	depends on NET
 	select SECURITYFS
@@ -7,7 +7,7 @@ config SECURITY_TOMOYO
 	select SECURITY_NETWORK
 	default n
 	help
-	  This selects TOMOYO Linux, pathname-based access control.
+	  This selects TOMOYO Beep, pathname-based access control.
 	  Required userspace tools and further information may be
 	  found at <http://tomoyo.sourceforge.jp/>.
 	  If you are unsure how to answer this question, answer N.

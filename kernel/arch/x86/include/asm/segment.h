@@ -1,7 +1,7 @@
 #ifndef _ASM_X86_SEGMENT_H
 #define _ASM_X86_SEGMENT_H
 
-#include <linux/const.h>
+#include <beep/const.h>
 
 /* Constructor for a conventional segment GDT (or LDT) entry */
 /* This is a macro so it can be used in initializers */
@@ -25,7 +25,7 @@
 
 #ifdef CONFIG_X86_32
 /*
- * The layout of the per-CPU GDT under Linux:
+ * The layout of the per-CPU GDT under Beep:
  *
  *   0 - null
  *   1 - reserved

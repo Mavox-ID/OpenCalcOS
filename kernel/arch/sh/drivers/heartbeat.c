@@ -18,13 +18,13 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 #include <asm/heartbeat.h>
 
 #define DRV_NAME "heartbeat"

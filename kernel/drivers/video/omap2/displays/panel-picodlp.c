@@ -19,16 +19,16 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/input.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/firmware.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/i2c.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
 
 #include <video/omapdss.h>
 #include <video/omap-panel-picodlp.h>

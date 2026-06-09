@@ -19,11 +19,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/parport.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <beep/module.h>
+#include <beep/parport.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
 
 #include <asm/current.h>
 #include <asm/uaccess.h>

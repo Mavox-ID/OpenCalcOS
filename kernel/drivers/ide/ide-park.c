@@ -1,8 +1,8 @@
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/ide.h>
-#include <linux/jiffies.h>
-#include <linux/blkdev.h>
+#include <beep/kernel.h>
+#include <beep/gfp.h>
+#include <beep/ide.h>
+#include <beep/jiffies.h>
+#include <beep/blkdev.h>
 
 DECLARE_WAIT_QUEUE_HEAD(ide_park_wq);
 

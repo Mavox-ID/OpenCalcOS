@@ -19,13 +19,13 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
  * 02110-1301 USA
  */
-#include <linux/hsi/hsi.h>
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/kobject.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/notifier.h>
+#include <beep/hsi/hsi.h>
+#include <beep/compiler.h>
+#include <beep/list.h>
+#include <beep/kobject.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/notifier.h>
 #include "hsi_core.h"
 
 static ssize_t modalias_show(struct device *dev,

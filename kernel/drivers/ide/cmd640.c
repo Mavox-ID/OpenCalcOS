@@ -6,7 +6,7 @@
  *  Original authors:	abramov@cecmow.enet.dec.com (Igor Abramov)
  *			mlord@pobox.com (Mark Lord)
  *
- *  See linux/MAINTAINERS for address of current maintainer.
+ *  See beep/MAINTAINERS for address of current maintainer.
  *
  *  This file provides support for the advanced features and bugs
  *  of IDE interfaces using the CMD Technologies 0640 IDE interface chip.
@@ -77,7 +77,7 @@
  *			autotune is OFF by default, with compile time flag.
  *			prefetch can be turned OFF/ON using "hdparm -p8/-p9"
  *			 (requires hdparm-3.1 or newer)
- *  Version 0.91	first release to linux-kernel list.
+ *  Version 0.91	first release to beep-kernel list.
  *  Version 0.92	move initial reg dump to separate callable function
  *			change "readahead" to "prefetch" to avoid confusion
  *  Version 0.95	respect original BIOS timings unless autotuning.
@@ -100,12 +100,12 @@
 
 /*#define CMD640_DUMP_REGS */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ide.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/ide.h>
+#include <beep/init.h>
+#include <beep/module.h>
 
 #include <asm/io.h>
 

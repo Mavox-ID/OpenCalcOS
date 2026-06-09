@@ -14,18 +14,18 @@
 #define _CRYPTO_INTERNAL_H
 
 #include <crypto/algapi.h>
-#include <linux/completion.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/fips.h>
+#include <beep/completion.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/notifier.h>
+#include <beep/rwsem.h>
+#include <beep/slab.h>
+#include <beep/fips.h>
 
 /* Crypto notification events. */
 enum {

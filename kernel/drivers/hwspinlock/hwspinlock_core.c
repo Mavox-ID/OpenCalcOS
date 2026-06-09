@@ -17,16 +17,16 @@
 
 #define pr_fmt(fmt)    "%s: " fmt, __func__
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/jiffies.h>
-#include <linux/radix-tree.h>
-#include <linux/hwspinlock.h>
-#include <linux/pm_runtime.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/err.h>
+#include <beep/jiffies.h>
+#include <beep/radix-tree.h>
+#include <beep/hwspinlock.h>
+#include <beep/pm_runtime.h>
+#include <beep/mutex.h>
 
 #include "hwspinlock_internal.h"
 

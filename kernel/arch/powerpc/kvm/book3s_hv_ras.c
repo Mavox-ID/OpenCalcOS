@@ -6,11 +6,11 @@
  * Copyright 2012 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/kernel.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/kvm.h>
+#include <beep/kvm_host.h>
+#include <beep/kernel.h>
 #include <asm/opal.h>
 
 /* SRR1 bits for machine check on POWER7 */

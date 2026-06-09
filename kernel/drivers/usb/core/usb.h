@@ -1,5 +1,5 @@
-#include <linux/pm.h>
-#include <linux/acpi.h>
+#include <beep/pm.h>
+#include <beep/acpi.h>
 
 struct dev_state;
 

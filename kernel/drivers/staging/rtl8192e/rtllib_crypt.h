@@ -7,7 +7,7 @@
  * Copyright (c) 2002-2003, Jouni Malinen <jkmaline@cc.hut.fi>
  *
  * Adaption to a generic IEEE 802.11 stack by James Ketrenos
- * <jketreno@linux.intel.com>
+ * <jketreno@beep.intel.com>
  *
  * Copyright (c) 2004, Intel Corporation
  *
@@ -23,7 +23,7 @@
 #ifndef RTLLIB_CRYPT_H
 #define RTLLIB_CRYPT_H
 
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 
 int rtllib_register_crypto_ops(struct lib80211_crypto_ops *ops);
 int rtllib_unregister_crypto_ops(struct lib80211_crypto_ops *ops);

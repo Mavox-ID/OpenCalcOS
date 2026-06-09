@@ -9,11 +9,11 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/perf_event.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/perf_event.h>
+#include <beep/percpu.h>
+#include <beep/hardirq.h>
 #include <asm/reg_fsl_emb.h>
 #include <asm/pmc.h>
 #include <asm/machdep.h>

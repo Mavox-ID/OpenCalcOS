@@ -15,20 +15,20 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/stat.h>
-#include <linux/export.h>
-#include <linux/topology.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/capability.h>
-#include <linux/security.h>
-#include <linux/pci-aspm.h>
-#include <linux/slab.h>
-#include <linux/vgaarb.h>
-#include <linux/pm_runtime.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/pci.h>
+#include <beep/stat.h>
+#include <beep/export.h>
+#include <beep/topology.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/capability.h>
+#include <beep/security.h>
+#include <beep/pci-aspm.h>
+#include <beep/slab.h>
+#include <beep/vgaarb.h>
+#include <beep/pm_runtime.h>
 #include "pci.h"
 
 static int sysfs_initialized;	/* = 0 */

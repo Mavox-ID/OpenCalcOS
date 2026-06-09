@@ -15,8 +15,8 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/string.h>
-#include <linux/device.h>
+#include <beep/string.h>
+#include <beep/device.h>
 #include <scsi/scsi_host.h>
 #include "fnic.h"
 

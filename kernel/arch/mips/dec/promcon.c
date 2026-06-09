@@ -5,11 +5,11 @@
  * Copyright (c) 1998 Harald Koerfgen
  */
 
-#include <linux/tty.h>
-#include <linux/ptrace.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/fs.h>
+#include <beep/tty.h>
+#include <beep/ptrace.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/fs.h>
 
 #include <asm/dec/prom.h>
 

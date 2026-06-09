@@ -21,7 +21,7 @@
 #ifndef _SN9C102_DEVTABLE_H_
 #define _SN9C102_DEVTABLE_H_
 
-#include <linux/usb.h>
+#include <beep/usb.h>
 
 struct sn9c102_device;
 

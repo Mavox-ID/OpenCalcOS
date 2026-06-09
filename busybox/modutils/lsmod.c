@@ -19,7 +19,7 @@
 //config:	depends on LSMOD && !MODPROBE_SMALL
 //config:	help
 //config:	This option makes output format of lsmod adjusted to
-//config:	the format of module-init-tools for Linux kernel 2.6.
+//config:	the format of module-init-tools for Beep kernel 2.6.
 //config:	Increases size somewhat.
 
 //applet:IF_LSMOD(IF_NOT_MODPROBE_SMALL(APPLET_NOEXEC(lsmod, lsmod, BB_DIR_SBIN, BB_SUID_DROP, lsmod)))
@@ -83,7 +83,7 @@ int lsmod_main(int argc UNUSED_PARAM, char **argv UNUSED_PARAM)
 	check_tainted();
 
 	if (ENABLE_FEATURE_2_4_MODULES
-	 && get_linux_version_code() < KERNEL_VERSION(2,6,0)
+	 && get_beep_version_code() < KERNEL_VERSION(2,6,0)
 	) {
 		while (config_read(parser, token, 4, 3, "# \t", PARSE_NORMAL)) {
 			if (token[3] != NULL && token[3][0] == '[') {

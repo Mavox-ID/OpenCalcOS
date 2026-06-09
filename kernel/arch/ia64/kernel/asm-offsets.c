@@ -6,10 +6,10 @@
 
 #define ASM_OFFSETS_C 1
 
-#include <linux/sched.h>
-#include <linux/pid.h>
-#include <linux/clocksource.h>
-#include <linux/kbuild.h>
+#include <beep/sched.h>
+#include <beep/pid.h>
+#include <beep/clocksource.h>
+#include <beep/kbuild.h>
 #include <asm/processor.h>
 #include <asm/ptrace.h>
 #include <asm/siginfo.h>

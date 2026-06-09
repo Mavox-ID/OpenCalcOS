@@ -8,23 +8,23 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/sm501.h>
-#include <linux/sm501-regs.h>
-#include <linux/fb.h>
-#include <linux/mtd/physmap.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/i2c-pca-platform.h>
-#include <linux/i2c-algo-pca.h>
-#include <linux/usb/r8a66597.h>
-#include <linux/sh_intc.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/errno.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/sm501.h>
+#include <beep/sm501-regs.h>
+#include <beep/fb.h>
+#include <beep/mtd/physmap.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/i2c-pca-platform.h>
+#include <beep/i2c-algo-pca.h>
+#include <beep/usb/r8a66597.h>
+#include <beep/sh_intc.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/errno.h>
 #include <mach/sh7785lcr.h>
 #include <cpu/sh7785.h>
 #include <asm/heartbeat.h>

@@ -1,8 +1,8 @@
 #ifndef _SYSTBLS_H
 #define _SYSTBLS_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
 #include <asm/utrap.h>
 #include <asm/signal.h>
 

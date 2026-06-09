@@ -39,7 +39,7 @@
 		#size-cells = <0>;
 		button@1 {
 			label = "Power-on Switch";
-			linux,code = <116>; /* KEY_POWER */
+			beep,code = <116>; /* KEY_POWER */
 			gpios = <&gpio0 18 0>;
 		};
 	};

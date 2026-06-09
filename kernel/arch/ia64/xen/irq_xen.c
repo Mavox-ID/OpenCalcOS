@@ -1,8 +1,8 @@
 /******************************************************************************
  * arch/ia64/xen/irq_xen.c
  *
- * Copyright (c) 2008 Isaku Yamahata <yamahata at valinux co jp>
- *                    VA Linux Systems Japan K.K.
+ * Copyright (c) 2008 Isaku Yamahata <yamahata at vabeep co jp>
+ *                    VA Beep Systems Japan K.K.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
  *
  */
 
-#include <linux/cpu.h>
+#include <beep/cpu.h>
 
 #include <xen/interface/xen.h>
 #include <xen/interface/callback.h>
@@ -92,7 +92,7 @@ static unsigned short saved_irq_cnt;
 static int xen_slab_ready;
 
 #ifdef CONFIG_SMP
-#include <linux/sched.h>
+#include <beep/sched.h>
 
 /* Dummy stub. Though we may check XEN_RESCHEDULE_VECTOR before __do_IRQ,
  * it ends up to issue several memory accesses upon percpu data and

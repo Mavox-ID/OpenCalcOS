@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfs/btree.h
+ *  beep/fs/hfs/btree.h
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)

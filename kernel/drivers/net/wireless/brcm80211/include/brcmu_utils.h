@@ -17,7 +17,7 @@
 #ifndef	_BRCMU_UTILS_H_
 #define	_BRCMU_UTILS_H_
 
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 
 /*
  * Spin at most 'us' microseconds while 'exp' is true.

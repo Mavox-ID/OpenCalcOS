@@ -11,18 +11,18 @@
  *
  */
 
-#include <linux/console.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/pci_regs.h>
-#include <linux/pci_ids.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/ehci_def.h>
-#include <linux/delay.h>
-#include <linux/serial_core.h>
-#include <linux/kconfig.h>
-#include <linux/kgdb.h>
-#include <linux/kthread.h>
+#include <beep/console.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/pci_regs.h>
+#include <beep/pci_ids.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/ehci_def.h>
+#include <beep/delay.h>
+#include <beep/serial_core.h>
+#include <beep/kconfig.h>
+#include <beep/kgdb.h>
+#include <beep/kthread.h>
 #include <asm/io.h>
 #include <asm/pci-direct.h>
 #include <asm/fixmap.h>

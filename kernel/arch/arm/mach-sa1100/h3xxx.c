@@ -10,16 +10,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/mfd/htc-egpio.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
+#include <beep/kernel.h>
+#include <beep/gpio.h>
+#include <beep/gpio_keys.h>
+#include <beep/input.h>
+#include <beep/mfd/htc-egpio.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/platform_data/sa11x0-serial.h>
+#include <beep/platform_device.h>
+#include <beep/serial_core.h>
 
 #include <asm/mach/flash.h>
 #include <asm/mach/map.h>

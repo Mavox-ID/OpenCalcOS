@@ -12,14 +12,14 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/mfd/core.h>
-#include <linux/spi/spi.h>
-#include <linux/err.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/input.h>
+#include <beep/mfd/core.h>
+#include <beep/spi/spi.h>
+#include <beep/err.h>
 
-#include <linux/mfd/da9052/da9052.h>
+#include <beep/mfd/da9052/da9052.h>
 
 static int da9052_spi_probe(struct spi_device *spi)
 {

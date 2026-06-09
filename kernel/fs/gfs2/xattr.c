@@ -7,12 +7,12 @@
  * of the GNU General Public License version 2.
  */
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/xattr.h>
-#include <linux/gfs2_ondisk.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
+#include <beep/buffer_head.h>
+#include <beep/xattr.h>
+#include <beep/gfs2_ondisk.h>
 #include <asm/uaccess.h>
 
 #include "gfs2.h"

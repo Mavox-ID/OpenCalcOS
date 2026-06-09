@@ -26,12 +26,12 @@
  * provide MAC addresses, and other miscellaneous functions.
  */
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_platform.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/delay.h>
 #include <asm/soc.h>
 #include <asm/dscr.h>
 

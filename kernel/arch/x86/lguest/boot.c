@@ -3,8 +3,8 @@
  * To quote David Wheeler: "Any problem in computer science can be solved with
  * another layer of indirection."
  *
- * We keep things simple in two ways.  First, we start with a normal Linux
- * kernel and insert a module (lg.ko) which allows us to run other Linux
+ * We keep things simple in two ways.  First, we start with a normal Beep
+ * kernel and insert a module (lg.ko) which allows us to run other Beep
  * kernels the same way we'd run processes.  We call the first kernel the Host,
  * and the others the Guests.  The program which sets up and configures Guests
  * (such as the example in Documentation/virtual/lguest/lguest.c) is called the
@@ -43,20 +43,20 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/kernel.h>
-#include <linux/start_kernel.h>
-#include <linux/string.h>
-#include <linux/console.h>
-#include <linux/screen_info.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/lguest.h>
-#include <linux/lguest_launcher.h>
-#include <linux/virtio_console.h>
-#include <linux/pm.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/start_kernel.h>
+#include <beep/string.h>
+#include <beep/console.h>
+#include <beep/screen_info.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/lguest.h>
+#include <beep/lguest_launcher.h>
+#include <beep/virtio_console.h>
+#include <beep/pm.h>
+#include <beep/export.h>
 #include <asm/apic.h>
 #include <asm/lguest.h>
 #include <asm/paravirt.h>
@@ -231,7 +231,7 @@ static void lguest_end_context_switch(struct task_struct *next)
 
 /*
  * save_flags() is expected to return the processor state (ie. "flags").  The
- * flags word contains all kind of stuff, but in practice Linux only cares
+ * flags word contains all kind of stuff, but in practice Beep only cares
  * about the interrupt flag.  Our "save_flags()" just returns that.
  */
 static unsigned long save_fl(void)
@@ -289,7 +289,7 @@ static void lguest_write_idt_entry(gate_desc *dt,
 	/*
 	 * The gate_desc structure is 8 bytes long: we hand it to the Host in
 	 * two 32-bit chunks.  The whole 32-bit kernel used to hand descriptors
-	 * around like this; typesafety wasn't a big concern in Linux's early
+	 * around like this; typesafety wasn't a big concern in Beep's early
 	 * years.
 	 */
 	u32 *desc = (u32 *)g;
@@ -371,7 +371,7 @@ static void lguest_load_tls(struct thread_struct *t, unsigned int cpu)
  * That's enough excitement for now, back to ploughing through each of the
  * different pv_ops structures (we're about 1/3 of the way through).
  *
- * This is the Local Descriptor Table, another weird Intel thingy.  Linux only
+ * This is the Local Descriptor Table, another weird Intel thingy.  Beep only
  * uses this for some strange applications like Wine.  We don't do anything
  * here, so they'll get an informative and friendly Segmentation Fault.
  */
@@ -444,7 +444,7 @@ static void lguest_cpuid(unsigned int *ax, unsigned int *bx,
 		/*
 		 * The Host can do a nice optimization if it knows that the
 		 * kernel mappings (addresses above 0xC0000000 or whatever
-		 * PAGE_OFFSET is set to) haven't changed.  But Linux calls
+		 * PAGE_OFFSET is set to) haven't changed.  But Beep calls
 		 * flush_tlb_user() for both user and kernel mappings unless
 		 * the Page Global Enable (PGE) feature bit is set.
 		 */
@@ -476,7 +476,7 @@ static void lguest_cpuid(unsigned int *ax, unsigned int *bx,
 		break;
 
 	/*
-	 * PAE systems can mark pages as non-executable.  Linux calls this the
+	 * PAE systems can mark pages as non-executable.  Beep calls this the
 	 * NX bit.  Intel calls it XD (eXecute Disable), AMD EVP (Enhanced
 	 * Virus Protection).  We just switch it off here, since we don't
 	 * support it.
@@ -494,12 +494,12 @@ static void lguest_cpuid(unsigned int *ax, unsigned int *bx,
  * a whole series of functions like read_cr0() and write_cr0().
  *
  * We start with cr0.  cr0 allows you to turn on and off all kinds of basic
- * features, but Linux only really cares about one: the horrifically-named Task
+ * features, but Beep only really cares about one: the horrifically-named Task
  * Switched (TS) bit at bit 3 (ie. 8)
  *
  * What does the TS bit do?  Well, it causes the CPU to trap (interrupt 7) if
  * the floating point unit is used.  Which allows us to restore FPU state
- * lazily after a task switch, and Linux uses that gratefully, but wouldn't a
+ * lazily after a task switch, and Beep uses that gratefully, but wouldn't a
  * name like "FPUTRAP bit" be a little less cryptic?
  *
  * We store cr0 locally because the Host never changes it.  The Guest sometimes
@@ -641,7 +641,7 @@ static void lguest_write_cr4(unsigned long val)
  * Index into    Index into mid    Index into lower    Offset within page
  * top entries   directory page     pagetable page
  *
- * It's too hard to switch between these two formats at runtime, so Linux only
+ * It's too hard to switch between these two formats at runtime, so Beep only
  * supports one or the other depending on whether CONFIG_X86_PAE is set.  Many
  * distributions turn it on, and not just for people with silly amounts of
  * memory: the larger PTE entries allow room for the NX bit, which lets the
@@ -834,7 +834,7 @@ static struct irq_chip lguest_irq_controller = {
 /*
  * This sets up the Interrupt Descriptor Table (IDT) entry for each hardware
  * interrupt (except 128, which is used for system calls), and then tells the
- * Linux infrastructure that each interrupt is controlled by our level-based
+ * Beep infrastructure that each interrupt is controlled by our level-based
  * lguest interrupt controller.
  */
 static void __init lguest_init_IRQ(void)
@@ -908,7 +908,7 @@ static cycle_t lguest_clock_read(struct clocksource *cs)
 	/*
 	 * Since the time is in two parts (seconds and nanoseconds), we risk
 	 * reading it just as it's changing from 99 & 0.999999999 to 100 and 0,
-	 * and getting 99 and 0.  As Linux tends to come apart under the stress
+	 * and getting 99 and 0.  As Beep tends to come apart under the stress
 	 * of time travel, we must be careful:
 	 */
 	do {
@@ -941,7 +941,7 @@ static struct clocksource lguest_clock = {
 };
 
 /*
- * We also need a "struct clock_event_device": Linux asks us to set it to go
+ * We also need a "struct clock_event_device": Beep asks us to set it to go
  * off some time in the future.  Actually, James Morris figured all this out, I
  * just applied the patch.
  */
@@ -1081,7 +1081,7 @@ static void lguest_wbinvd(void)
  * we play dumb by ignoring writes and returning 0 for reads.  So it's no
  * longer Programmable nor Controlling anything, and I don't think 8 lines of
  * code qualifies for Advanced.  It will also never interrupt anything.  It
- * does, however, allow us to get through the Linux boot code.
+ * does, however, allow us to get through the Beep boot code.
  */
 #ifdef CONFIG_X86_LOCAL_APIC
 static void lguest_apic_write(u32 reg, u32 v)
@@ -1164,7 +1164,7 @@ static struct notifier_block paniced = {
 static __init char *lguest_memory_setup(void)
 {
 	/*
-	 * The Linux bootloader header contains an "e820" memory map: the
+	 * The Beep bootloader header contains an "e820" memory map: the
 	 * Launcher populated the first entry with our memory limit.
 	 */
 	e820_add_region(boot_params.e820_map[0].addr,

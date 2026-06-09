@@ -9,7 +9,7 @@
 #define __BFIN_SPORT_H__
 
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <uapi/asm/bfin_sport.h>
 
 /*

@@ -11,7 +11,7 @@
  * Licensed under the GPL-2 or later
  */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <asm/blackfin.h>
 #include <asm/cplbinit.h>
 #include <asm/cplb.h>

@@ -41,11 +41,11 @@
  *	written out when the filesystem is unmounted by diUnmount().
  */
 
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/pagemap.h>
-#include <linux/quotaops.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
+#include <beep/pagemap.h>
+#include <beep/quotaops.h>
+#include <beep/slab.h>
 
 #include "jfs_incore.h"
 #include "jfs_inode.h"

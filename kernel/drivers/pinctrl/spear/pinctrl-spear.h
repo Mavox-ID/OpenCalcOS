@@ -2,7 +2,7 @@
  * Driver header file for the ST Microelectronics SPEAr pinmux
  *
  * Copyright (C) 2012 ST Microelectronics
- * Viresh Kumar <viresh.linux@gmail.com>
+ * Viresh Kumar <viresh.beep@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
@@ -12,10 +12,10 @@
 #ifndef __PINMUX_SPEAR_H__
 #define __PINMUX_SPEAR_H__
 
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/types.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
+#include <beep/pinctrl/pinctrl.h>
+#include <beep/types.h>
 
 struct platform_device;
 struct device;

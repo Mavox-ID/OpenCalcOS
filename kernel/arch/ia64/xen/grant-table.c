@@ -1,8 +1,8 @@
 /******************************************************************************
  * arch/ia64/xen/grant-table.c
  *
- * Copyright (c) 2006 Isaku Yamahata <yamahata at valinux co jp>
- *                    VA Linux Systems Japan K.K.
+ * Copyright (c) 2006 Isaku Yamahata <yamahata at vabeep co jp>
+ *                    VA Beep Systems Japan K.K.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,10 +20,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <beep/module.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
 
 #include <xen/interface/xen.h>
 #include <xen/interface/memory.h>

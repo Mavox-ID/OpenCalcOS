@@ -1,20 +1,20 @@
 /*
- * This code was developed for the Quatech USB line for linux, it used
+ * This code was developed for the Quatech USB line for beep, it used
  * much of the code developed by Greg Kroah-Hartman for USB serial devices
  *
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/serial.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/uaccess.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/module.h>
+#include <beep/serial.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
+#include <beep/uaccess.h>
 
 /* Version Information */
 #define DRIVER_VERSION "v2.14"

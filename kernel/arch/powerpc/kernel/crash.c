@@ -10,16 +10,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/reboot.h>
-#include <linux/kexec.h>
-#include <linux/export.h>
-#include <linux/crash_dump.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/types.h>
+#include <beep/kernel.h>
+#include <beep/smp.h>
+#include <beep/reboot.h>
+#include <beep/kexec.h>
+#include <beep/export.h>
+#include <beep/crash_dump.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/types.h>
 
 #include <asm/processor.h>
 #include <asm/machdep.h>

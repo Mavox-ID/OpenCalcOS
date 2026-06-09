@@ -16,14 +16,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/if_arp.h>
 #include <asm/byteorder.h>
 
 #include "prismcompat.h"

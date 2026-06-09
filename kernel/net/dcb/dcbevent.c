@@ -17,9 +17,9 @@
  * Author: John Fastabend <john.r.fastabend@intel.com>
  */
 
-#include <linux/rtnetlink.h>
-#include <linux/notifier.h>
-#include <linux/export.h>
+#include <beep/rtnetlink.h>
+#include <beep/notifier.h>
+#include <beep/export.h>
 
 static ATOMIC_NOTIFIER_HEAD(dcbevent_notif_chain);
 

@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2009 William Hubbs
  *
- * This code is based on kobject-example.c, which came with linux 2.6.x.
+ * This code is based on kobject-example.c, which came with beep 2.6.x.
  *
  * Copyright (C) 2004-2007 Greg Kroah-Hartman <greg@kroah.com>
  * Copyright (C) 2007 Novell Inc.
@@ -11,12 +11,12 @@
  * Released under the GPL version 2 only.
  *
  */
-#include <linux/slab.h>		/* For kmalloc. */
-#include <linux/kernel.h>
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/ctype.h>
+#include <beep/slab.h>		/* For kmalloc. */
+#include <beep/kernel.h>
+#include <beep/kobject.h>
+#include <beep/string.h>
+#include <beep/sysfs.h>
+#include <beep/ctype.h>
 
 #include "speakup.h"
 #include "spk_priv.h"

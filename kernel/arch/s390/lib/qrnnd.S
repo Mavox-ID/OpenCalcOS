@@ -1,6 +1,6 @@
 # S/390 __udiv_qrnnd
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 # r2 : &__r
 # r3 : upper half of 64 bit word n

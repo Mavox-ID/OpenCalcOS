@@ -13,11 +13,11 @@
 
 #include <drm/drmP.h>
 
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <beep/kernel.h>
+#include <beep/wait.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
 
 #include <drm/exynos_drm.h>
 

@@ -36,21 +36,21 @@
  * could handle this correctly.
  *
  * I have taken some info from a Greg Kroah-Hartman article:
- * http://www.linuxjournal.com/article/6573
- * And from Linux Device Driver Kit CD, which is a great work, the authors taken
+ * http://www.beepjournal.com/article/6573
+ * And from Beep Device Driver Kit CD, which is a great work, the authors taken
  * the work to recompile lots of information an knowladge in drivers development
  * and made it all avaible inside a cd.
- * URL: http://kernel.org/pub/linux/kernel/people/gregkh/ddk/
+ * URL: http://kernel.org/pub/beep/kernel/people/gregkh/ddk/
  *
  */
 
 #include <asm/unaligned.h>
-#include <linux/tty.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/tty_flip.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <beep/tty.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/tty_flip.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
 
 /* Vendor and Product ID */
 #define AIRCABLE_VID		0x16CA

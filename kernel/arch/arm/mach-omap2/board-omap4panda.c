@@ -16,22 +16,22 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/leds.h>
-#include <linux/gpio.h>
-#include <linux/usb/otg.h>
-#include <linux/i2c/twl.h>
-#include <linux/mfd/twl6040.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
-#include <linux/ti_wilink_st.h>
-#include <linux/usb/musb.h>
-#include <linux/wl12xx.h>
-#include <linux/platform_data/omap-abe-twl6040.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/leds.h>
+#include <beep/gpio.h>
+#include <beep/usb/otg.h>
+#include <beep/i2c/twl.h>
+#include <beep/mfd/twl6040.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/fixed.h>
+#include <beep/ti_wilink_st.h>
+#include <beep/usb/musb.h>
+#include <beep/wl12xx.h>
+#include <beep/platform_data/omap-abe-twl6040.h>
 
 #include <asm/hardware/gic.h>
 #include <asm/mach-types.h>

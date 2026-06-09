@@ -1,5 +1,5 @@
 config VIDEO_BT848
-	tristate "BT848 Video For Linux"
+	tristate "BT848 Video For Beep"
 	depends on VIDEO_DEV && PCI && I2C && VIDEO_V4L2
 	select I2C_ALGOBIT
 	select VIDEO_BTCX
@@ -14,7 +14,7 @@ config VIDEO_BT848
 	---help---
 	  Support for BT848 based frame grabber/overlay boards. This includes
 	  the Miro, Hauppauge and STB boards. Please read the material in
-	  <file:Documentation/video4linux/bttv/> for more information.
+	  <file:Documentation/video4beep/bttv/> for more information.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called bttv.

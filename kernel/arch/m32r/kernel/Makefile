@@ -1,8 +1,8 @@
 #
-# Makefile for the Linux/M32R kernel.
+# Makefile for the Beep/M32R kernel.
 #
 
-extra-y	:= head.o vmlinux.lds
+extra-y	:= head.o vmbeep.lds
 
 obj-y	:= process.o entry.o traps.o align.o irq.o setup.o time.o \
 	m32r_ksyms.o sys_m32r.o signal.o ptrace.o

@@ -141,7 +141,7 @@ CONFIG_LOGO=n
 
 #	Sound card support
 CONFIG_SOUND=m
-#	Advanced Linux Sound Architecture
+#	Advanced Beep Sound Architecture
 CONFIG_SND=m
 CONFIG_SND_MIXER_OSS=m
 CONFIG_SND_PCM_OSS=m

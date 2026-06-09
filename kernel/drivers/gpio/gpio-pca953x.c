@@ -11,17 +11,17 @@
  *  the Free Software Foundation; version 2 of the License.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/i2c.h>
-#include <linux/i2c/pca953x.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pca953x.h>
+#include <beep/slab.h>
 #ifdef CONFIG_OF_GPIO
-#include <linux/of_platform.h>
+#include <beep/of_platform.h>
 #endif
 
 #define PCA953X_INPUT		0
@@ -593,11 +593,11 @@ pca953x_get_alt_pdata(struct i2c_client *client, int *gpio_base, u32 *invert)
 		return;
 
 	*gpio_base = -1;
-	val = of_get_property(node, "linux,gpio-base", &size);
-	WARN(val, "%s: device-tree property 'linux,gpio-base' is deprecated!", __func__);
+	val = of_get_property(node, "beep,gpio-base", &size);
+	WARN(val, "%s: device-tree property 'beep,gpio-base' is deprecated!", __func__);
 	if (val) {
 		if (size != sizeof(*val))
-			dev_warn(&client->dev, "%s: wrong linux,gpio-base\n",
+			dev_warn(&client->dev, "%s: wrong beep,gpio-base\n",
 				 node->full_name);
 		else
 			*gpio_base = be32_to_cpup(val);

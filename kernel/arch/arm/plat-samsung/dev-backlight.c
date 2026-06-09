@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/dev-backlight.c
+/* beep/arch/arm/plat-samsung/dev-backlight.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *              http://www.samsung.com
@@ -10,11 +10,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/pwm_backlight.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/pwm_backlight.h>
 
 #include <plat/devs.h>
 #include <plat/gpio-cfg.h>

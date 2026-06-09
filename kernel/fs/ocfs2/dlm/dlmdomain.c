@@ -24,15 +24,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/debugfs.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/debugfs.h>
 
 #include "cluster/heartbeat.h"
 #include "cluster/nodemanager.h"

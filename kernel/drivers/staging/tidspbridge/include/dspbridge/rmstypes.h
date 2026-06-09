@@ -18,7 +18,7 @@
 
 #ifndef RMSTYPES_
 #define RMSTYPES_
-#include <linux/types.h>
+#include <beep/types.h>
 typedef u32 rms_word;
 
 #endif /* RMSTYPES_ */

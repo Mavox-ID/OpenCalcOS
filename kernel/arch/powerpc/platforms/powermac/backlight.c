@@ -3,17 +3,17 @@
  * Contains support for the backlight.
  *
  *   Copyright (C) 2000 Benjamin Herrenschmidt
- *   Copyright (C) 2006 Michael Hanselmann <linux-kernel@hansmi.ch>
+ *   Copyright (C) 2006 Michael Hanselmann <beep-kernel@hansmi.ch>
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/atomic.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/fb.h>
+#include <beep/backlight.h>
+#include <beep/adb.h>
+#include <beep/pmu.h>
+#include <beep/atomic.h>
+#include <beep/export.h>
 #include <asm/prom.h>
 #include <asm/backlight.h>
 

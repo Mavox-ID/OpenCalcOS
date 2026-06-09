@@ -16,9 +16,9 @@
   * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
   */
 
-#include <linux/delay.h>
-#include <linux/suspend.h>
-#include <linux/stat.h>
+#include <beep/delay.h>
+#include <beep/suspend.h>
+#include <beep/stat.h>
 #include <asm/firmware.h>
 #include <asm/hvcall.h>
 #include <asm/machdep.h>

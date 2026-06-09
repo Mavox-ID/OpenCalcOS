@@ -39,17 +39,17 @@
 #if !defined(IB_VERBS_H)
 #define IB_VERBS_H
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/rwsem.h>
-#include <linux/scatterlist.h>
-#include <linux/workqueue.h>
+#include <beep/types.h>
+#include <beep/device.h>
+#include <beep/mm.h>
+#include <beep/dma-mapping.h>
+#include <beep/kref.h>
+#include <beep/list.h>
+#include <beep/rwsem.h>
+#include <beep/scatterlist.h>
+#include <beep/workqueue.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/uaccess.h>
 
 extern struct workqueue_struct *ib_wq;

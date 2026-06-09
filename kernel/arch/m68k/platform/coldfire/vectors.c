@@ -1,16 +1,16 @@
 /***************************************************************************/
 
 /*
- *	linux/arch/m68knommu/platform/coldfire/vectors.c
+ *	beep/arch/m68knommu/platform/coldfire/vectors.c
  *
  *	Copyright (C) 1999-2007, Greg Ungerer <gerg@snapgear.com>
  */
 
 /***************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/irq.h>
 #include <asm/traps.h>
 #include <asm/machdep.h>
 #include <asm/coldfire.h>

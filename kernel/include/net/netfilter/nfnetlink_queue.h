@@ -1,7 +1,7 @@
 #ifndef _NET_NFNL_QUEUE_H_
 #define _NET_NFNL_QUEUE_H_
 
-#include <linux/netfilter/nf_conntrack_common.h>
+#include <beep/netfilter/nf_conntrack_common.h>
 
 struct nf_conn;
 

@@ -5,8 +5,8 @@
 #ifndef __NET_GENERIC_H__
 #define __NET_GENERIC_H__
 
-#include <linux/bug.h>
-#include <linux/rcupdate.h>
+#include <beep/bug.h>
+#include <beep/rcupdate.h>
 
 /*
  * Generic net pointers are to be used by modules to put some private

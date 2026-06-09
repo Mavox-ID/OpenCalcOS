@@ -19,12 +19,12 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/crypto.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/cryptouser.h>
+#include <beep/crypto.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
+#include <beep/string.h>
+#include <beep/cryptouser.h>
 #include <net/netlink.h>
 
 #include <crypto/compress.h>

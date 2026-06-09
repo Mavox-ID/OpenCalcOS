@@ -20,7 +20,7 @@
  *
  */
 
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include "ibmasm.h"
 #include "dot_command.h"
 

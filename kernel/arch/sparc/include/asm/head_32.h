@@ -29,11 +29,11 @@
  * entry sequences are also HyperSparc pipeline friendly ;-)
  */
 
-/* Software trap for Linux system calls. */
-#define LINUX_SYSCALL_TRAP \
+/* Software trap for Beep system calls. */
+#define BEEP_SYSCALL_TRAP \
         sethi %hi(sys_call_table), %l7; \
         or %l7, %lo(sys_call_table), %l7; \
-        b linux_sparc_syscall; \
+        b beep_sparc_syscall; \
         rd %psr, %l0;
 
 #define BREAKPOINT_TRAP \

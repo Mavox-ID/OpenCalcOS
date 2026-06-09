@@ -8,21 +8,21 @@
  *  (C) Copyright 2002 Red Hat Inc, All Rights Reserved
  */
 
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/shm.h>
-#include <linux/mman.h>
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/security.h>
-#include <linux/mempolicy.h>
-#include <linux/personality.h>
-#include <linux/syscalls.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/mmu_notifier.h>
-#include <linux/migrate.h>
-#include <linux/perf_event.h>
+#include <beep/mm.h>
+#include <beep/hugetlb.h>
+#include <beep/shm.h>
+#include <beep/mman.h>
+#include <beep/fs.h>
+#include <beep/highmem.h>
+#include <beep/security.h>
+#include <beep/mempolicy.h>
+#include <beep/personality.h>
+#include <beep/syscalls.h>
+#include <beep/swap.h>
+#include <beep/swapops.h>
+#include <beep/mmu_notifier.h>
+#include <beep/migrate.h>
+#include <beep/perf_event.h>
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>
 #include <asm/cacheflush.h>

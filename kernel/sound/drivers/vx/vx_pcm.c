@@ -45,8 +45,8 @@
  *  - scheduled action on the stream.
  */
 
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
 #include <sound/core.h>
 #include <sound/asoundef.h>
 #include <sound/pcm.h>

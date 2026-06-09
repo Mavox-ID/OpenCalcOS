@@ -23,25 +23,25 @@
  *		Documentation/RCU
  *
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/rcupdate.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/completion.h>
-#include <linux/moduleparam.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/mutex.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/smp.h>
+#include <beep/rcupdate.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/atomic.h>
+#include <beep/bitops.h>
+#include <beep/module.h>
+#include <beep/completion.h>
+#include <beep/moduleparam.h>
+#include <beep/percpu.h>
+#include <beep/notifier.h>
+#include <beep/cpu.h>
+#include <beep/mutex.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 #define RCU_TREE_NONCORE
 #include "rcutree.h"

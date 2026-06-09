@@ -12,30 +12,30 @@
 
 #undef DEBUG
 
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/initrd.h>
-#include <linux/seq_file.h>
-#include <linux/ioport.h>
-#include <linux/console.h>
-#include <linux/utsname.h>
-#include <linux/tty.h>
-#include <linux/root_dev.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/unistd.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/bootmem.h>
-#include <linux/pci.h>
-#include <linux/lockdep.h>
-#include <linux/memblock.h>
-#include <linux/hugetlb.h>
+#include <beep/export.h>
+#include <beep/string.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/reboot.h>
+#include <beep/delay.h>
+#include <beep/initrd.h>
+#include <beep/seq_file.h>
+#include <beep/ioport.h>
+#include <beep/console.h>
+#include <beep/utsname.h>
+#include <beep/tty.h>
+#include <beep/root_dev.h>
+#include <beep/notifier.h>
+#include <beep/cpu.h>
+#include <beep/unistd.h>
+#include <beep/serial.h>
+#include <beep/serial_8250.h>
+#include <beep/bootmem.h>
+#include <beep/pci.h>
+#include <beep/lockdep.h>
+#include <beep/memblock.h>
+#include <beep/hugetlb.h>
 
 #include <asm/io.h>
 #include <asm/kdump.h>
@@ -430,7 +430,7 @@ void __init setup_system(void)
 	smp_release_cpus();
 #endif
 
-	printk("Starting Linux PPC64 %s\n", init_utsname()->version);
+	printk("Starting Beep PPC64 %s\n", init_utsname()->version);
 
 	printk("-----------------------------------------------------\n");
 	printk("ppc64_pft_size                = 0x%llx\n", ppc64_pft_size);
@@ -611,7 +611,7 @@ void __init setup_arch(char **cmdline_p)
 
 
 /* ToDo: do something useful if ppc_md is not yet setup. */
-#define PPC64_LINUX_FUNCTION 0x0f000000
+#define PPC64_BEEP_FUNCTION 0x0f000000
 #define PPC64_IPL_MESSAGE 0xc0000000
 #define PPC64_TERM_MESSAGE 0xb0000000
 
@@ -630,7 +630,7 @@ static void ppc64_do_msg(unsigned int src, const char *msg)
 /* Print a boot progress message. */
 void ppc64_boot_msg(unsigned int src, const char *msg)
 {
-	ppc64_do_msg(PPC64_LINUX_FUNCTION|PPC64_IPL_MESSAGE|src, msg);
+	ppc64_do_msg(PPC64_BEEP_FUNCTION|PPC64_IPL_MESSAGE|src, msg);
 	printk("[boot]%04x %s\n", src, msg);
 }
 

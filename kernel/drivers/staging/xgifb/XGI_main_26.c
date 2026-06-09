@@ -1,13 +1,13 @@
 /*
  * XG20, XG21, XG40, XG42 frame buffer device
- * for Linux kernels  2.5.x, 2.6.x
+ * for Beep kernels  2.5.x, 2.6.x
  * Base on TW's sis fbdev code.
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sizes.h>
-#include <linux/module.h>
+#include <beep/sizes.h>
+#include <beep/module.h>
 
 #ifdef CONFIG_MTRR
 #include <asm/mtrr.h>

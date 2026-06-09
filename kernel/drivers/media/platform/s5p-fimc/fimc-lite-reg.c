@@ -9,8 +9,8 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <beep/io.h>
+#include <beep/delay.h>
 #include <media/s5p_fimc.h>
 
 #include "fimc-lite-reg.h"

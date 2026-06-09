@@ -11,7 +11,7 @@
  *
  * Made to use alloc_percpu by Christoph Lameter.
  *
- * Copyright (C) 2010		SUSE Linux Products GmbH
+ * Copyright (C) 2010		SUSE Beep Products GmbH
  * Copyright (C) 2010		Tejun Heo <tj@kernel.org>
  *
  * This is the generic async execution mechanism.  Work items as are
@@ -23,24 +23,24 @@
  * Please read Documentation/workqueue.txt for details.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/completion.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/kthread.h>
-#include <linux/hardirq.h>
-#include <linux/mempolicy.h>
-#include <linux/freezer.h>
-#include <linux/kallsyms.h>
-#include <linux/debug_locks.h>
-#include <linux/lockdep.h>
-#include <linux/idr.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/signal.h>
+#include <beep/completion.h>
+#include <beep/workqueue.h>
+#include <beep/slab.h>
+#include <beep/cpu.h>
+#include <beep/notifier.h>
+#include <beep/kthread.h>
+#include <beep/hardirq.h>
+#include <beep/mempolicy.h>
+#include <beep/freezer.h>
+#include <beep/kallsyms.h>
+#include <beep/debug_locks.h>
+#include <beep/lockdep.h>
+#include <beep/idr.h>
 
 #include "workqueue_sched.h"
 

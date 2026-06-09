@@ -27,11 +27,11 @@
 #ifndef _PRISM_COMPAT_H
 #define _PRISM_COMPAT_H
 
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/moduleparam.h>
-#include <linux/workqueue.h>
-#include <linux/compiler.h>
+#include <beep/device.h>
+#include <beep/firmware.h>
+#include <beep/moduleparam.h>
+#include <beep/workqueue.h>
+#include <beep/compiler.h>
 
 #ifndef __iomem
 #define __iomem

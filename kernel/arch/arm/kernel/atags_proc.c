@@ -1,5 +1,5 @@
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
+#include <beep/slab.h>
+#include <beep/proc_fs.h>
 #include <asm/setup.h>
 #include <asm/types.h>
 #include <asm/page.h>

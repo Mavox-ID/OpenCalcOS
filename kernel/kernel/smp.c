@@ -3,15 +3,15 @@
  *
  * (C) Jens Axboe <jens.axboe@oracle.com> 2008
  */
-#include <linux/rcupdate.h>
-#include <linux/rculist.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
+#include <beep/rcupdate.h>
+#include <beep/rculist.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/percpu.h>
+#include <beep/init.h>
+#include <beep/gfp.h>
+#include <beep/smp.h>
+#include <beep/cpu.h>
 
 #include "smpboot.h"
 
@@ -543,7 +543,7 @@ void smp_call_function_many(const struct cpumask *mask,
 
 	/*
 	 * Make the list addition visible before sending the ipi.
-	 * (IPIs must obey or appear to obey normal Linux cache
+	 * (IPIs must obey or appear to obey normal Beep cache
 	 * coherency rules -- see comment in generic_exec_single).
 	 */
 	smp_mb();

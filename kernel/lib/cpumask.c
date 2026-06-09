@@ -1,9 +1,9 @@
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/cpumask.h>
-#include <linux/export.h>
-#include <linux/bootmem.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/bitops.h>
+#include <beep/cpumask.h>
+#include <beep/export.h>
+#include <beep/bootmem.h>
 
 int __first_cpu(const cpumask_t *srcp)
 {
@@ -71,7 +71,7 @@ int cpumask_any_but(const struct cpumask *mask, unsigned int cpu)
  * @flags: GFP_ flags
  *
  * Only defined when CONFIG_CPUMASK_OFFSTACK=y, otherwise is
- * a nop returning a constant 1 (in <linux/cpumask.h>)
+ * a nop returning a constant 1 (in <beep/cpumask.h>)
  * Returns TRUE if memory allocation succeeded, FALSE otherwise.
  *
  * In addition, mask will be NULL if this fails.  Note that gcc is
@@ -113,7 +113,7 @@ EXPORT_SYMBOL(zalloc_cpumask_var_node);
  * @flags: GFP_ flags
  *
  * Only defined when CONFIG_CPUMASK_OFFSTACK=y, otherwise is
- * a nop returning a constant 1 (in <linux/cpumask.h>).
+ * a nop returning a constant 1 (in <beep/cpumask.h>).
  *
  * See alloc_cpumask_var_node.
  */
@@ -134,7 +134,7 @@ EXPORT_SYMBOL(zalloc_cpumask_var);
  * @mask: pointer to cpumask_var_t where the cpumask is returned
  *
  * Only defined when CONFIG_CPUMASK_OFFSTACK=y, otherwise is
- * a nop (in <linux/cpumask.h>).
+ * a nop (in <beep/cpumask.h>).
  * Either returns an allocated (zero-filled) cpumask, or causes the
  * system to panic.
  */

@@ -1,5 +1,5 @@
 /*
- *  linux/fs/proc/net.c
+ *  beep/fs/proc/net.c
  *
  *  Copyright (C) 2007
  *
@@ -10,19 +10,19 @@
 
 #include <asm/uaccess.h>
 
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/mount.h>
-#include <linux/nsproxy.h>
+#include <beep/errno.h>
+#include <beep/time.h>
+#include <beep/proc_fs.h>
+#include <beep/stat.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/bitops.h>
+#include <beep/mount.h>
+#include <beep/nsproxy.h>
 #include <net/net_namespace.h>
-#include <linux/seq_file.h>
+#include <beep/seq_file.h>
 
 #include "internal.h"
 

@@ -2,7 +2,7 @@
     module/mite.h
     Hardware driver for NI Mite PCI interface chip
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1999 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -24,8 +24,8 @@
 #ifndef _MITE_H_
 #define _MITE_H_
 
-#include <linux/pci.h>
-#include <linux/log2.h>
+#include <beep/pci.h>
+#include <beep/log2.h>
 #include "../comedidev.h"
 
 /*  #define DEBUG_MITE */

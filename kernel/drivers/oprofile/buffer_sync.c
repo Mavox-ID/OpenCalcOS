@@ -21,16 +21,16 @@
  * objects.
  */
 
-#include <linux/mm.h>
-#include <linux/workqueue.h>
-#include <linux/notifier.h>
-#include <linux/dcookies.h>
-#include <linux/profile.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/oprofile.h>
-#include <linux/sched.h>
-#include <linux/gfp.h>
+#include <beep/mm.h>
+#include <beep/workqueue.h>
+#include <beep/notifier.h>
+#include <beep/dcookies.h>
+#include <beep/profile.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/oprofile.h>
+#include <beep/sched.h>
+#include <beep/gfp.h>
 
 #include "oprofile_stats.h"
 #include "event_buffer.h"

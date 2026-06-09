@@ -1,7 +1,7 @@
 /*
  *  Cobalt time initialization.
  *
- *  Copyright (C) 2007  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2007  Yoichi Yuasa <yuasa@beep-mips.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -17,8 +17,8 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  */
-#include <linux/i8253.h>
-#include <linux/init.h>
+#include <beep/i8253.h>
+#include <beep/init.h>
 
 #include <asm/gt64120.h>
 #include <asm/time.h>

@@ -40,7 +40,7 @@
 #include "subscr.h"
 #include "config.h"
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 /* global variables used by multiple sub-systems within TIPC */
 int tipc_random __read_mostly;

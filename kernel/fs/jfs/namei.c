@@ -17,11 +17,11 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/ctype.h>
-#include <linux/quotaops.h>
-#include <linux/exportfs.h>
+#include <beep/fs.h>
+#include <beep/namei.h>
+#include <beep/ctype.h>
+#include <beep/quotaops.h>
+#include <beep/exportfs.h>
 #include "jfs_incore.h"
 #include "jfs_superblock.h"
 #include "jfs_inode.h"

@@ -1,20 +1,20 @@
 /*
  * Copyright (C) 1997-1998	Mark Lord <mlord@pobox.com>
  * Copyright (C) 1998		Eddie C. Dost <ecd@skynet.be>
- * Copyright (C) 1999-2000	Andre Hedrick <andre@linux-ide.org>
- * Copyright (C) 2004		Grant Grundler <grundler at parisc-linux.org>
+ * Copyright (C) 1999-2000	Andre Hedrick <andre@beep-ide.org>
+ * Copyright (C) 2004		Grant Grundler <grundler at parisc-beep.org>
  *
  * Inspired by an earlier effort from David S. Miller <davem@redhat.com>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/ide.h>
+#include <beep/init.h>
 
 #include <asm/io.h>
 

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/plat-versatile/include/plat/platsmp.h
+ *  beep/arch/arm/plat-versatile/include/plat/platsmp.h
  *
  *  Copyright (C) 2011 ARM Ltd.
  *  All Rights Reserved

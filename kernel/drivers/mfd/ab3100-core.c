@@ -6,23 +6,23 @@
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/random.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/ab3100.h>
-#include <linux/mfd/abx500.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
+#include <beep/list.h>
+#include <beep/notifier.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/random.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/uaccess.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/ab3100.h>
+#include <beep/mfd/abx500.h>
 
 /* These are the only registers inside AB3100 used in this main file */
 

@@ -5,17 +5,17 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/kallsyms.h>
-#include <linux/fs.h>
-#include <linux/pm.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/reboot.h>
-#include <linux/tick.h>
-#include <linux/uaccess.h>
-#include <linux/unistd.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/kallsyms.h>
+#include <beep/fs.h>
+#include <beep/pm.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/reboot.h>
+#include <beep/tick.h>
+#include <beep/uaccess.h>
+#include <beep/unistd.h>
 
 #include <asm/sysreg.h>
 #include <asm/ocd.h>

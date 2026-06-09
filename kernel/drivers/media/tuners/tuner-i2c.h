@@ -1,7 +1,7 @@
 /*
     tuner-i2c.h - i2c interface for different tuners
 
-    Copyright (C) 2007 Michael Krufky (mkrufky@linuxtv.org)
+    Copyright (C) 2007 Michael Krufky (mkrufky@beeptv.org)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -21,8 +21,8 @@
 #ifndef __TUNER_I2C_H__
 #define __TUNER_I2C_H__
 
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
 
 struct tuner_i2c_props {
 	u8 addr;

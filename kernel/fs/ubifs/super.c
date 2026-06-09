@@ -26,16 +26,16 @@
  * corresponding subsystems, but most of it is here.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/kthread.h>
-#include <linux/parser.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/math64.h>
-#include <linux/writeback.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/ctype.h>
+#include <beep/kthread.h>
+#include <beep/parser.h>
+#include <beep/seq_file.h>
+#include <beep/mount.h>
+#include <beep/math64.h>
+#include <beep/writeback.h>
 #include "ubifs.h"
 
 /*
@@ -287,7 +287,7 @@ static void ubifs_destroy_inode(struct inode *inode)
 }
 
 /*
- * Note, Linux write-back code calls this without 'i_mutex'.
+ * Note, Beep write-back code calls this without 'i_mutex'.
  */
 static int ubifs_write_inode(struct inode *inode, struct writeback_control *wbc)
 {

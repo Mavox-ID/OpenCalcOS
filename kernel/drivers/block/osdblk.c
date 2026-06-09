@@ -1,6 +1,6 @@
 
 /*
-   osdblk.c -- Export a single SCSI OSD object as a Linux block device
+   osdblk.c -- Export a single SCSI OSD object as a Beep block device
 
 
    Copyright 2009 Red Hat, Inc.
@@ -22,7 +22,7 @@
    Instructions for use
    --------------------
 
-   1) Map a Linux block device to an existing OSD object.
+   1) Map a Beep block device to an existing OSD object.
 
       In this example, we will use partition id 1234, object id 5678,
       OSD device /dev/osd1.
@@ -59,11 +59,11 @@
 
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
 #include <scsi/osd_initiator.h>
 #include <scsi/osd_attributes.h>
 #include <scsi/osd_sec.h>

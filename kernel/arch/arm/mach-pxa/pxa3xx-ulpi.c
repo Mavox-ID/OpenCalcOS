@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/pxa3xx-ulpi.c
+ * beep/arch/arm/mach-pxa/pxa3xx-ulpi.c
  *
  * code specific to pxa3xx aka Monahans
  *
@@ -13,21 +13,21 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/usb.h>
-#include <linux/usb/otg.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/usb.h>
+#include <beep/usb/otg.h>
 
 #include <mach/hardware.h>
 #include <mach/regs-u2d.h>
-#include <linux/platform_data/usb-pxa3xx-ulpi.h>
+#include <beep/platform_data/usb-pxa3xx-ulpi.h>
 
 struct pxa3xx_u2d_ulpi {
 	struct clk		*clk;

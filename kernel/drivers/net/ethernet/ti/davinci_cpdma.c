@@ -12,14 +12,14 @@
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/dma-mapping.h>
+#include <beep/io.h>
 
 #include "davinci_cpdma.h"
 

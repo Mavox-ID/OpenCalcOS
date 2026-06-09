@@ -12,16 +12,16 @@
 
 #undef DEBUG
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/atomic.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/mod_devicetable.h>
+#include <beep/pci.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
+#include <beep/atomic.h>
 
 #include <asm/errno.h>
 #include <asm/topology.h>

@@ -10,7 +10,7 @@
 #ifndef	__OMAP2_GPMC_ONENAND_H
 #define	__OMAP2_GPMC_ONENAND_H
 
-#include <linux/platform_data/mtd-onenand-omap2.h>
+#include <beep/platform_data/mtd-onenand-omap2.h>
 
 #if IS_ENABLED(CONFIG_MTD_ONENAND_OMAP2)
 extern void gpmc_onenand_init(struct omap_onenand_platform_data *d);

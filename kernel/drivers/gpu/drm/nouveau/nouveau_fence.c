@@ -26,8 +26,8 @@
 
 #include <drm/drmP.h>
 
-#include <linux/ktime.h>
-#include <linux/hrtimer.h>
+#include <beep/ktime.h>
+#include <beep/hrtimer.h>
 
 #include "nouveau_drm.h"
 #include "nouveau_dma.h"

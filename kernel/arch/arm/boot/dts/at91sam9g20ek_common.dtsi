@@ -173,14 +173,14 @@
 		btn3 {
 			label = "Button 3";
 			gpios = <&pioA 30 1>;
-			linux,code = <0x103>;
+			beep,code = <0x103>;
 			gpio-key,wakeup;
 		};
 
 		btn4 {
 			label = "Button 4";
 			gpios = <&pioA 31 1>;
-			linux,code = <0x104>;
+			beep,code = <0x104>;
 			gpio-key,wakeup;
 		};
 	};

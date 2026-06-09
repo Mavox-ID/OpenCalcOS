@@ -21,10 +21,10 @@
  * USA
  */
 
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/async.h>
-#include <linux/export.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
+#include <beep/async.h>
+#include <beep/export.h>
 
 #include <scsi/sas_ata.h>
 #include "sas_internal.h"

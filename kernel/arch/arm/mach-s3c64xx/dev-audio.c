@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-s3c/dev-audio.c
+/* beep/arch/arm/plat-s3c/dev-audio.c
  *
  * Copyright 2009 Wolfson Microelectronics
  *      Mark Brown <broonie@opensource.wolfsonmicro.com>
@@ -8,19 +8,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/gpio.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/gpio.h>
+#include <beep/export.h>
 
 #include <mach/irqs.h>
 #include <mach/map.h>
 #include <mach/dma.h>
 
 #include <plat/devs.h>
-#include <linux/platform_data/asoc-s3c.h>
+#include <beep/platform_data/asoc-s3c.h>
 #include <plat/gpio-cfg.h>
 
 static int s3c64xx_i2s_cfg_gpio(struct platform_device *pdev)

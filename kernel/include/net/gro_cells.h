@@ -1,9 +1,9 @@
 #ifndef _NET_GRO_CELLS_H
 #define _NET_GRO_CELLS_H
 
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
+#include <beep/netdevice.h>
 
 struct gro_cell {
 	struct sk_buff_head	napi_skbs;

@@ -13,11 +13,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
 
-#include <linux/dma-mapping.h>
-#include <linux/clkdev.h>
+#include <beep/dma-mapping.h>
+#include <beep/clkdev.h>
 #include <mach/irqs.h>
 #include <mach/msm_iomap.h>
 #include <mach/dma.h>
@@ -31,7 +31,7 @@
 #include "clock-pcom.h"
 #include "clock-7x30.h"
 
-#include <linux/platform_data/mmc-msm_sdcc.h>
+#include <beep/platform_data/mmc-msm_sdcc.h>
 
 static struct resource resources_uart2[] = {
 	{

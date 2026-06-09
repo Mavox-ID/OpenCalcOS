@@ -19,12 +19,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ****************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/usb.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/usb.h>
+#include <beep/firmware.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include "smscoreapi.h"
 #include "sms-cards.h"

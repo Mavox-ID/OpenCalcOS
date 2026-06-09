@@ -23,8 +23,8 @@
 #include <math.h>
 #include <limits.h>
 
-#include <linux/list.h>
-#include <linux/hash.h>
+#include <beep/list.h>
+#include <beep/hash.h>
 
 static struct perf_session *session;
 
@@ -81,7 +81,7 @@ struct lock_stat {
 
 /*
  * MAX_LOCK_DEPTH
- * Imported from include/linux/sched.h.
+ * Imported from include/beep/sched.h.
  * Should this be synchronized?
  */
 #define MAX_LOCK_DEPTH 48

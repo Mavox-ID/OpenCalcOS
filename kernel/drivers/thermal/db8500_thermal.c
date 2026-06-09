@@ -17,15 +17,15 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/cpu_cooling.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/dbx500-prcmu.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_data/db8500_thermal.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
+#include <beep/cpu_cooling.h>
+#include <beep/interrupt.h>
+#include <beep/mfd/dbx500-prcmu.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/platform_data/db8500_thermal.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/thermal.h>
 
 #define PRCMU_DEFAULT_MEASURE_TIME	0xFFF
 #define PRCMU_DEFAULT_LOW_TEMP		0

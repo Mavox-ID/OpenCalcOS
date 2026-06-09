@@ -26,7 +26,7 @@
 ** This file is included at the start of 'C' or 'C++' source file to define
 ** things for cross-platform/compiler interoperability. This used to deal with
 ** MSDOS/16-bit stuff, but this was all removed in Decemeber 2010. There are
-** three things to consider: Windows, LINUX, mac OSX (BSD Unix) and 32 vs 64
+** three things to consider: Windows, BEEP, mac OSX (BSD Unix) and 32 vs 64
 ** bit. At the time of writing (DEC 2010) there is a consensus on the following
 ** and their unsigned equivalents:
 **
@@ -36,10 +36,10 @@
 ** int         32
 ** long long   64
 **
-** long is a problem as it is always 64 bits on linux/unix and is always 32 bits
+** long is a problem as it is always 64 bits on beep/unix and is always 32 bits
 ** on windows.
 ** On windows, we define _IS_WINDOWS_ and one of WIN32 or WIN64.
-** On linux we define LINUX
+** On beep we define BEEP
 ** On Max OSX we define MACOSX
 **
 */
@@ -54,8 +54,8 @@
 /*
 ** The initial section is to identify the operating system
 */
-#if (defined(__linux__) || defined(_linux) || defined(__linux)) && !defined(LINUX)
-#define LINUX 1
+#if (defined(__beep__) || defined(_beep) || defined(__beep)) && !defined(BEEP)
+#define BEEP 1
 #endif
 
 #if (defined(__WIN32__) || defined(_WIN32)) && !defined(WIN32)
@@ -76,7 +76,7 @@
 #define _IS_WINDOWS_ 1
 #endif
 
-#if defined(LINUX) || defined(MAXOSX)
+#if defined(BEEP) || defined(MAXOSX)
     #define FAR
 
     typedef int BOOL;       // To match Windows

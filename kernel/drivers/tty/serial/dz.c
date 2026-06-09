@@ -19,10 +19,10 @@
  Qua Jun 27 15:02:26 BRT 2001
  * [27-JUN-2001] Arnaldo Carvalho de Melo <acme@conectiva.com.br> - cleanups
  *
- * Parts (C) 1999 David Airlie, airlied@linux.ie
+ * Parts (C) 1999 David Airlie, airlied@beep.ie
  * [07-SEP-99] Bugfixes
  *
- * [06-Jan-2002] Russell King <rmk@arm.linux.org.uk>
+ * [06-Jan-2002] Russell King <rmk@arm.beep.org.uk>
  * Converted to new serial core
  */
 
@@ -32,24 +32,24 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/module.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <beep/bitops.h>
+#include <beep/compiler.h>
+#include <beep/console.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/major.h>
+#include <beep/module.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
+#include <beep/sysrq.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/bootinfo.h>
 #include <asm/io.h>
 

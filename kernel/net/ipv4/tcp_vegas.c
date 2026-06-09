@@ -12,7 +12,7 @@
  * The main aspects that distinguish this implementation from the
  * Arizona Vegas implementation are:
  *   o We do not change the loss detection or recovery mechanisms of
- *     Linux in any way. Linux already recovers from losses quite well,
+ *     Beep in any way. Beep already recovers from losses quite well,
  *     using fine-grained timers, NewReno, and FACK.
  *   o To avoid the performance penalty imposed by increasing cwnd
  *     only every-other RTT during slow start, we increase during
@@ -31,10 +31,10 @@
  *     assumed senders never went idle.
  */
 
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/inet_diag.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/inet_diag.h>
 
 #include <net/tcp.h>
 

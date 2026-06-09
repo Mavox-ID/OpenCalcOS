@@ -1,5 +1,5 @@
 /*
-** linux/atarihw.h -- This header defines some macros and pointers for
+** beep/atarihw.h -- This header defines some macros and pointers for
 **                    the various Atari custom hardware registers.
 **
 ** Copyright 1994 by Björn Brauel
@@ -17,10 +17,10 @@
 **
 */
 
-#ifndef _LINUX_ATARIHW_H_
-#define _LINUX_ATARIHW_H_
+#ifndef _BEEP_ATARIHW_H_
+#define _BEEP_ATARIHW_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/bootinfo.h>
 #include <asm/raw_io.h>
 
@@ -133,7 +133,7 @@ extern struct atari_hw_present atari_hw_present;
 
 
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 #include <asm/cacheflush.h>
 
 static inline void dma_cache_maintenance( unsigned long paddr,
@@ -239,7 +239,7 @@ struct SHIFTER_TT {
 
 /*
 ** Falcon030 VIDEL Video Controller
-** for description see File 'linux\tools\atari\hardware.txt
+** for description see File 'beep\tools\atari\hardware.txt
  */
 #define f030_col ((u_long *)		0xffff9800)
 #define f030_xreg ((u_short*)		0xffff8282)
@@ -805,5 +805,5 @@ struct MSTE_RTC {
 
 #define mste_rtc ((*(volatile struct MSTE_RTC *)MSTE_RTC_BAS))
 
-#endif /* linux/atarihw.h */
+#endif /* beep/atarihw.h */
 

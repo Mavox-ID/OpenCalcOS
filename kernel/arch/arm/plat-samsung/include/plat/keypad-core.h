@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/plat-samsung/include/plat/keypad-core.h
+ * beep/arch/arm/plat-samsung/include/plat/keypad-core.h
  *
  * Copyright (C) 2010 Samsung Electronics Co.Ltd
  * Author: Joonyoung Shim <jy0922.shim@samsung.com>

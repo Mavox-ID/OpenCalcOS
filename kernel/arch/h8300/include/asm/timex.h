@@ -1,5 +1,5 @@
 /*
- * linux/include/asm-h8300/timex.h
+ * beep/include/asm-h8300/timex.h
  *
  * H8/300 architecture timex specifications
  */

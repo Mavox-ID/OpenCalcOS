@@ -18,7 +18,7 @@
 // r5_hash
 //
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include "reiserfs.h"
 #include <asm/types.h>
 

@@ -7,9 +7,9 @@
  * This file is released under the GPLv2.
  */
 
-#include <linux/sched.h>
-#include <linux/export.h>
-#include <linux/pm_runtime.h>
+#include <beep/sched.h>
+#include <beep/export.h>
+#include <beep/pm_runtime.h>
 #include <trace/events/rpm.h>
 #include "power.h"
 

@@ -24,14 +24,14 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/vmalloc.h>
+#include <beep/dma-mapping.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
 
 #include <asm/delay.h>
 #include <sound/core.h>
@@ -953,7 +953,7 @@ static struct pci_driver cx88_audio_pci_driver = {
 };
 
 /****************************************************************************
-				LINUX MODULE INIT
+				BEEP MODULE INIT
  ****************************************************************************/
 
 /*

@@ -16,17 +16,17 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/sizes.h>
+#include <beep/sizes.h>
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/map.h>
 
 struct autcpu12_nvram_priv {
 	struct mtd_info *mtd;

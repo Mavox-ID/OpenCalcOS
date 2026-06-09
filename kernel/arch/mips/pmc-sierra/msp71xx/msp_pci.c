@@ -24,7 +24,7 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 
 #include <msp_prom.h>
 #include <msp_regs.h>
@@ -33,7 +33,7 @@ extern void msp_pci_init(void);
 
 static int __init msp_pci_setup(void)
 {
-#if 0 /* Linux 2.6 initialization code to be completed */
+#if 0 /* Beep 2.6 initialization code to be completed */
 	if (getdeviceid() & DEV_ID_SINGLE_PC) {
 		/* If single card mode */
 		slmRegs	*sreg = (slmRegs *) SREG_BASE;

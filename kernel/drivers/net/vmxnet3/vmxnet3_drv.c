@@ -1,5 +1,5 @@
 /*
- * Linux driver for VMware's vmxnet3 ethernet NIC.
+ * Beep driver for VMware's vmxnet3 ethernet NIC.
  *
  * Copyright (C) 2008-2009, VMware, Inc. All Rights Reserved.
  *
@@ -24,7 +24,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <net/ip6_checksum.h>
 
 #include "vmxnet3_int.h"
@@ -2101,7 +2101,7 @@ vmxnet3_setup_driver_shared(struct vmxnet3_adapter *adapter)
 						VMXNET3_DRIVER_VERSION_NUM);
 	devRead->misc.driverInfo.gos.gosBits = (sizeof(void *) == 4 ?
 				VMXNET3_GOS_BITS_32 : VMXNET3_GOS_BITS_64);
-	devRead->misc.driverInfo.gos.gosType = VMXNET3_GOS_TYPE_LINUX;
+	devRead->misc.driverInfo.gos.gosType = VMXNET3_GOS_TYPE_BEEP;
 	*((u32 *)&devRead->misc.driverInfo.gos) = cpu_to_le32(
 				*((u32 *)&devRead->misc.driverInfo.gos));
 	devRead->misc.driverInfo.vmxnet3RevSpt = cpu_to_le32(1);
@@ -2704,10 +2704,10 @@ vmxnet3_read_mac_addr(struct vmxnet3_adapter *adapter, u8 *mac)
  * Enable MSIx vectors.
  * Returns :
  *	0 on successful enabling of required vectors,
- *	VMXNET3_LINUX_MIN_MSIX_VECT when only minimum number of vectors required
+ *	VMXNET3_BEEP_MIN_MSIX_VECT when only minimum number of vectors required
  *	 could be enabled.
  *	number of vectors which can be enabled otherwise (this number is smaller
- *	 than VMXNET3_LINUX_MIN_MSIX_VECT)
+ *	 than VMXNET3_BEEP_MIN_MSIX_VECT)
  */
 
 static int
@@ -2715,7 +2715,7 @@ vmxnet3_acquire_msix_vectors(struct vmxnet3_adapter *adapter,
 			     int vectors)
 {
 	int err = 0, vector_threshold;
-	vector_threshold = VMXNET3_LINUX_MIN_MSIX_VECT;
+	vector_threshold = VMXNET3_BEEP_MIN_MSIX_VECT;
 
 	while (vectors >= vector_threshold) {
 		err = pci_enable_msix(adapter->pdev, adapter->intr.msix_entries,
@@ -2780,9 +2780,9 @@ vmxnet3_alloc_intr_resources(struct vmxnet3_adapter *adapter)
 		adapter->intr.num_intrs += 1;		/* for link event */
 
 		adapter->intr.num_intrs = (adapter->intr.num_intrs >
-					   VMXNET3_LINUX_MIN_MSIX_VECT
+					   VMXNET3_BEEP_MIN_MSIX_VECT
 					   ? adapter->intr.num_intrs :
-					   VMXNET3_LINUX_MIN_MSIX_VECT);
+					   VMXNET3_BEEP_MIN_MSIX_VECT);
 
 		for (vector = 0; vector < adapter->intr.num_intrs; vector++)
 			adapter->intr.msix_entries[vector].entry = vector;
@@ -2792,14 +2792,14 @@ vmxnet3_alloc_intr_resources(struct vmxnet3_adapter *adapter)
 		/* If we cannot allocate one MSIx vector per queue
 		 * then limit the number of rx queues to 1
 		 */
-		if (err == VMXNET3_LINUX_MIN_MSIX_VECT) {
+		if (err == VMXNET3_BEEP_MIN_MSIX_VECT) {
 			if (adapter->share_intr != VMXNET3_INTR_BUDDYSHARE
 			    || adapter->num_rx_queues != 1) {
 				adapter->share_intr = VMXNET3_INTR_TXSHARE;
 				printk(KERN_ERR "Number of rx queues : 1\n");
 				adapter->num_rx_queues = 1;
 				adapter->intr.num_intrs =
-						VMXNET3_LINUX_MIN_MSIX_VECT;
+						VMXNET3_BEEP_MIN_MSIX_VECT;
 			}
 			return;
 		}

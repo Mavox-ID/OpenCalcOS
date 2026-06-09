@@ -8,21 +8,21 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
-#include <linux/io.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sh_mmcif.h>
-#include <linux/mmc/sh_mobile_sdhi.h>
-#include <linux/sh_eth.h>
-#include <linux/sh_intc.h>
-#include <linux/usb/renesas_usbhs.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
+#include <beep/io.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/sh_mmcif.h>
+#include <beep/mmc/sh_mobile_sdhi.h>
+#include <beep/sh_eth.h>
+#include <beep/sh_intc.h>
+#include <beep/usb/renesas_usbhs.h>
 #include <cpu/sh7757.h>
 #include <asm/heartbeat.h>
 

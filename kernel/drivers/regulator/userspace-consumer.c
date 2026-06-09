@@ -16,13 +16,13 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regulator/userspace-consumer.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/consumer.h>
+#include <beep/regulator/userspace-consumer.h>
+#include <beep/slab.h>
 
 struct userspace_consumer_data {
 	const char *name;

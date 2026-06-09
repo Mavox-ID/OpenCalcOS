@@ -36,17 +36,17 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/ptrace.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/ptrace.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/delay.h>
+#include <beep/uaccess.h>
 
-#include <linux/usb/ch9.h>
+#include <beep/usb/ch9.h>
 
 #include "core.h"
 #include "gadget.h"

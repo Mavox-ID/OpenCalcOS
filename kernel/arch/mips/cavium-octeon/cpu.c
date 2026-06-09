@@ -4,13 +4,13 @@
  * for more details.
  *
  * Copyright (C) 2009 Wind River Systems,
- *   written by Ralf Baechle <ralf@linux-mips.org>
+ *   written by Ralf Baechle <ralf@beep-mips.org>
  */
-#include <linux/init.h>
-#include <linux/irqflags.h>
-#include <linux/notifier.h>
-#include <linux/prefetch.h>
-#include <linux/sched.h>
+#include <beep/init.h>
+#include <beep/irqflags.h>
+#include <beep/notifier.h>
+#include <beep/prefetch.h>
+#include <beep/sched.h>
 
 #include <asm/cop2.h>
 #include <asm/current.h>

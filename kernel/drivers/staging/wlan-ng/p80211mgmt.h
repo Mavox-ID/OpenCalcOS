@@ -5,7 +5,7 @@
 * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
 * --------------------------------------------------------------------
 *
-* linux-wlan
+* beep-wlan
 *
 *   The contents of this file are subject to the Mozilla Public
 *   License Version 1.1 (the "License"); you may not use this file
@@ -30,12 +30,12 @@
 *
 * --------------------------------------------------------------------
 *
-* Inquiries regarding the linux-wlan Open Source project can be
+* Inquiries regarding the beep-wlan Open Source project can be
 * made directly to:
 *
 * AbsoluteValue Systems Inc.
-* info@linux-wlan.com
-* http://www.linux-wlan.com
+* info@beep-wlan.com
+* http://www.beep-wlan.com
 *
 * --------------------------------------------------------------------
 *
@@ -299,7 +299,7 @@ typedef struct wlan_fr_mgmt {
 	u16 len;		/* DOES NOT include CRC !!!! */
 	u8 *buf;
 	union p80211_hdr *hdr;
-	/* used for target specific data, skb in Linux */
+	/* used for target specific data, skb in Beep */
 	void *priv;
 	/*-- fixed fields -----------*/
 	/*-- info elements ----------*/
@@ -311,7 +311,7 @@ typedef struct wlan_fr_beacon {
 	u16 len;
 	u8 *buf;
 	union p80211_hdr *hdr;
-	/* used for target specific data, skb in Linux */
+	/* used for target specific data, skb in Beep */
 	void *priv;
 	/*-- fixed fields -----------*/
 	u64 *ts;
@@ -334,7 +334,7 @@ typedef struct wlan_fr_ibssatim {
 	u16 len;
 	u8 *buf;
 	union p80211_hdr *hdr;
-	/* used for target specific data, skb in Linux */
+	/* used for target specific data, skb in Beep */
 	void *priv;
 
 	/*-- fixed fields -----------*/
@@ -350,7 +350,7 @@ typedef struct wlan_fr_disassoc {
 	u16 len;
 	u8 *buf;
 	union p80211_hdr *hdr;
-	/* used for target specific data, skb in Linux */
+	/* used for target specific data, skb in Beep */
 	void *priv;
 	/*-- fixed fields -----------*/
 	u16 *reason;
@@ -365,7 +365,7 @@ typedef struct wlan_fr_assocreq {
 	u16 len;
 	u8 *buf;
 	union p80211_hdr *hdr;
-	/* used for target specific data, skb in Linux */
+	/* used for target specific data, skb in Beep */
 	void *priv;
 	/*-- fixed fields -----------*/
 	u16 *cap_info;
@@ -382,7 +382,7 @@ typedef struct wlan_fr_assocresp {
 	u16 len;
 	u8 *buf;
 	union p80211_hdr *hdr;
-	/* used for target specific data, skb in Linux */
+	/* used for target specific data, skb in Beep */
 	void *priv;
 	/*-- fixed fields -----------*/
 	u16 *cap_info;
@@ -399,7 +399,7 @@ typedef struct wlan_fr_reassocreq {
 	u16 len;
 	u8 *buf;
 	union p80211_hdr *hdr;
-	/* used for target specific data, skb in Linux */
+	/* used for target specific data, skb in Beep */
 	void *priv;
 	/*-- fixed fields -----------*/
 	u16 *cap_info;
@@ -417,7 +417,7 @@ typedef struct wlan_fr_reassocresp {
 	u16 len;
 	u8 *buf;
 	union p80211_hdr *hdr;
-	/* used for target specific data, skb in Linux */
+	/* used for target specific data, skb in Beep */
 	void *priv;
 	/*-- fixed fields -----------*/
 	u16 *cap_info;
@@ -434,7 +434,7 @@ typedef struct wlan_fr_probereq {
 	u16 len;
 	u8 *buf;
 	union p80211_hdr *hdr;
-	/* used for target specific data, skb in Linux */
+	/* used for target specific data, skb in Beep */
 	void *priv;
 	/*-- fixed fields -----------*/
 	/*-- info elements ----------*/
@@ -449,7 +449,7 @@ typedef struct wlan_fr_proberesp {
 	u16 len;
 	u8 *buf;
 	union p80211_hdr *hdr;
-	/* used for target specific data, skb in Linux */
+	/* used for target specific data, skb in Beep */
 	void *priv;
 	/*-- fixed fields -----------*/
 	u64 *ts;
@@ -470,7 +470,7 @@ typedef struct wlan_fr_authen {
 	u16 len;
 	u8 *buf;
 	union p80211_hdr *hdr;
-	/* used for target specific data, skb in Linux */
+	/* used for target specific data, skb in Beep */
 	void *priv;
 	/*-- fixed fields -----------*/
 	u16 *auth_alg;
@@ -487,7 +487,7 @@ typedef struct wlan_fr_deauthen {
 	u16 len;
 	u8 *buf;
 	union p80211_hdr *hdr;
-	/* used for target specific data, skb in Linux */
+	/* used for target specific data, skb in Beep */
 	void *priv;
 	/*-- fixed fields -----------*/
 	u16 *reason;

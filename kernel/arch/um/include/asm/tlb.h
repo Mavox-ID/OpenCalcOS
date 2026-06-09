@@ -1,8 +1,8 @@
 #ifndef __UM_TLB_H
 #define __UM_TLB_H
 
-#include <linux/pagemap.h>
-#include <linux/swap.h>
+#include <beep/pagemap.h>
+#include <beep/swap.h>
 #include <asm/percpu.h>
 #include <asm/pgalloc.h>
 #include <asm/tlbflush.h>

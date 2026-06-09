@@ -15,15 +15,15 @@
  * as published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/libata.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/libata.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
-#include <linux/platform_data/ata-samsung_cf.h>
+#include <beep/platform_data/ata-samsung_cf.h>
 #include <plat/regs-ata.h>
 
 #define DRV_NAME "pata_samsung_cf"

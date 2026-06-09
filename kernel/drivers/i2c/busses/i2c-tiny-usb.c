@@ -10,17 +10,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/types.h>
 
 /* include interfaces to usb layer */
-#include <linux/usb.h>
+#include <beep/usb.h>
 
 /* include interface to i2c layer */
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 
 /* commands via USB, must match command ids in the firmware */
 #define CMD_ECHO		0

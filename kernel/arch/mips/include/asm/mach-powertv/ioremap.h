@@ -9,9 +9,9 @@
 #ifndef __ASM_MACH_POWERTV_IOREMAP_H
 #define __ASM_MACH_POWERTV_IOREMAP_H
 
-#include <linux/types.h>
-#include <linux/log2.h>
-#include <linux/compiler.h>
+#include <beep/types.h>
+#include <beep/log2.h>
+#include <beep/compiler.h>
 
 #include <asm/pgtable-bits.h>
 #include <asm/addrspace.h>

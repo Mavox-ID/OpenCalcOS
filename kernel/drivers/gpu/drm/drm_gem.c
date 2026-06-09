@@ -25,17 +25,17 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/module.h>
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/shmem_fs.h>
-#include <linux/dma-buf.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/uaccess.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/module.h>
+#include <beep/mman.h>
+#include <beep/pagemap.h>
+#include <beep/shmem_fs.h>
+#include <beep/dma-buf.h>
 #include <drm/drmP.h>
 
 /** @file drm_gem.c

@@ -16,15 +16,15 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/pagemap.h>
-#include <linux/bio.h>
-#include <linux/lzo.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/sched.h>
+#include <beep/pagemap.h>
+#include <beep/bio.h>
+#include <beep/lzo.h>
 #include "compression.h"
 
 #define LZO_LEN	4

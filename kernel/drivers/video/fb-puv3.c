@@ -10,14 +10,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/console.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/console.h>
 
 #include <asm/sizes.h>
 #include <mach/hardware.h>

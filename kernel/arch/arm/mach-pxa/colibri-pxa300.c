@@ -11,11 +11,11 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
 
 #include <asm/mach-types.h>
 #include <asm/sizes.h>
@@ -24,8 +24,8 @@
 
 #include <mach/pxa300.h>
 #include <mach/colibri.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/video-pxafb.h>
 #include <mach/audio.h>
 
 #include "generic.h"

@@ -1,6 +1,6 @@
-#include <linux/syscalls.h>
-#include <linux/signal.h>
-#include <linux/unistd.h>
+#include <beep/syscalls.h>
+#include <beep/signal.h>
+#include <beep/unistd.h>
 
 #include <asm/syscalls.h>
 

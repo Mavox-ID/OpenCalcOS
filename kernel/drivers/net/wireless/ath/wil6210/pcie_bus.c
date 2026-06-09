@@ -14,13 +14,13 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/debugfs.h>
-#include <linux/pci.h>
-#include <linux/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/netdevice.h>
+#include <beep/debugfs.h>
+#include <beep/pci.h>
+#include <beep/moduleparam.h>
 
 #include "wil6210.h"
 

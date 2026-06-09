@@ -2,7 +2,7 @@
 #define _ASM_POWERPC_PGALLOC_H
 #ifdef __KERNEL__
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 #ifdef CONFIG_PPC_BOOK3E
 extern void tlb_flush_pgtable(struct mmu_gather *tlb, unsigned long address);

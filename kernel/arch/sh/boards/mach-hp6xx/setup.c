@@ -1,19 +1,19 @@
 /*
- * linux/arch/sh/boards/hp6xx/setup.c
+ * beep/arch/sh/boards/hp6xx/setup.c
  *
  * Copyright (C) 2002 Andriy Skulysh
  * Copyright (C) 2007 Kristoffer Ericson <Kristoffer_e1@hotmail.com>
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See beep/COPYING for more information.
  *
  * Setup code for HP620/HP660/HP680/HP690 (internal peripherials only)
  */
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/sh_intc.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
+#include <beep/sh_intc.h>
 #include <sound/sh_dac_audio.h>
 #include <asm/hd64461.h>
 #include <asm/io.h>

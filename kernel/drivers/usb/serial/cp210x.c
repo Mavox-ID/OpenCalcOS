@@ -13,16 +13,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/usb.h>
-#include <linux/uaccess.h>
-#include <linux/usb/serial.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/usb.h>
+#include <beep/uaccess.h>
+#include <beep/usb/serial.h>
 
 #define DRIVER_DESC "Silicon Labs CP210x RS232 serial adaptor driver"
 

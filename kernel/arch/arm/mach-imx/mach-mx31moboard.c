@@ -12,37 +12,37 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/gfp.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/leds.h>
-#include <linux/memory.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/partitions.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/machine.h>
-#include <linux/mfd/mc13783.h>
-#include <linux/spi/spi.h>
-#include <linux/types.h>
-#include <linux/memblock.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/input.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/gfp.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/moduleparam.h>
+#include <beep/leds.h>
+#include <beep/memory.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/partitions.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/machine.h>
+#include <beep/mfd/mc13783.h>
+#include <beep/spi/spi.h>
+#include <beep/types.h>
+#include <beep/memblock.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/input.h>
 
-#include <linux/usb/otg.h>
-#include <linux/usb/ulpi.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/ulpi.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/time.h>
 #include <asm/mach/map.h>
 #include <asm/memblock.h>
-#include <linux/platform_data/asoc-imx-ssi.h>
+#include <beep/platform_data/asoc-imx-ssi.h>
 
 #include "board-mx31moboard.h"
 #include "common.h"

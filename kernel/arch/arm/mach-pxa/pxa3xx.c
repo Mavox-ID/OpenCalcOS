@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/pxa3xx.c
+ * beep/arch/arm/mach-pxa/pxa3xx.c
  *
  * code specific to pxa3xx aka Monahans
  *
@@ -12,23 +12,23 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/syscore_ops.h>
-#include <linux/i2c/pxa-i2c.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/pm.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/syscore_ops.h>
+#include <beep/i2c/pxa-i2c.h>
 
 #include <asm/mach/map.h>
 #include <asm/suspend.h>
 #include <mach/hardware.h>
 #include <mach/pxa3xx-regs.h>
 #include <mach/reset.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
 #include <mach/pm.h>
 #include <mach/dma.h>
 #include <mach/smemc.h>

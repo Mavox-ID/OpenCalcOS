@@ -58,16 +58,16 @@
  * 	      only available if that subsystem is enabled in the kernel.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/random.h>
-#include <linux/if_vlan.h>
-#include <linux/tc_ematch/tc_em_meta.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/skbuff.h>
+#include <beep/random.h>
+#include <beep/if_vlan.h>
+#include <beep/tc_ematch/tc_em_meta.h>
 #include <net/dst.h>
 #include <net/route.h>
 #include <net/pkt_cls.h>

@@ -48,7 +48,7 @@ export man_dir man_dir_SQ html_install html_install_SQ INSTALL
 export img_install img_install_SQ
 export DESTDIR DESTDIR_SQ
 
-# copy a bit from Linux kbuild
+# copy a bit from Beep kbuild
 
 ifeq ("$(origin V)", "command line")
   VERBOSE = $(V)

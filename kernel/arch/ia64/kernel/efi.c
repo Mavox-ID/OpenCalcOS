@@ -4,8 +4,8 @@
  * Based on Extensible Firmware Interface Specification version 0.9
  * April 30, 1999
  *
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA Beep Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@vabeep.com>
  * Copyright (C) 1999-2003 Hewlett-Packard Co.
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  *	Stephane Eranian <eranian@hpl.hp.com>
@@ -21,17 +21,17 @@
  * Goutham Rao: <goutham.rao@intel.com>
  *	Skip non-WB memory and ignore empty memory ranges.
  */
-#include <linux/module.h>
-#include <linux/bootmem.h>
-#include <linux/crash_dump.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/efi.h>
-#include <linux/kexec.h>
-#include <linux/mm.h>
+#include <beep/module.h>
+#include <beep/bootmem.h>
+#include <beep/crash_dump.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/efi.h>
+#include <beep/kexec.h>
+#include <beep/mm.h>
 
 #include <asm/io.h>
 #include <asm/kregs.h>

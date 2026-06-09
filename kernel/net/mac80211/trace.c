@@ -1,5 +1,5 @@
 /* bug in tracepoint.h, it should include this */
-#include <linux/module.h>
+#include <beep/module.h>
 
 /* sparse isn't too happy with all macros... */
 #ifndef __CHECKER__

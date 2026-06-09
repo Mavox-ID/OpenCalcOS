@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/lib/uaccess.S
+ *  beep/arch/arm/lib/uaccess.S
  *
  *  Copyright (C) 1995, 1996,1997,1998 Russell King
  *
@@ -11,7 +11,7 @@
  *   These are highly optimised both for the 4k page size
  *   and for various alignments.
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 #include <asm/errno.h>
 #include <asm/domain.h>

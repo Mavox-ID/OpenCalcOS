@@ -1,5 +1,5 @@
 /*
-* linux/arch/arm/mach-omap1/board-sx1.c
+* beep/arch/arm/mach-omap1/board-sx1.c
 *
 * Modified from board-generic.c
 *
@@ -14,21 +14,21 @@
 * it under the terms of the GNU General Public License version 2 as
 * published by the Free Software Foundation.
 */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/notifier.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/types.h>
-#include <linux/i2c.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/omapfb.h>
-#include <linux/platform_data/keypad-omap.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/platform_device.h>
+#include <beep/notifier.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/types.h>
+#include <beep/i2c.h>
+#include <beep/errno.h>
+#include <beep/export.h>
+#include <beep/omapfb.h>
+#include <beep/platform_data/keypad-omap.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -36,7 +36,7 @@
 
 #include <mach/flash.h>
 #include <mach/mux.h>
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 #include <mach/irda.h>
 #include <mach/tc.h>
 #include <mach/board-sx1.h>

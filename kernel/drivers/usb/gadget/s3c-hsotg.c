@@ -1,5 +1,5 @@
 /**
- * linux/drivers/usb/gadget/s3c-hsotg.c
+ * beep/drivers/usb/gadget/s3c-hsotg.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -7,7 +7,7 @@
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armbeep.simtec.co.uk/
  *
  * S3C USB2.0 High-speed / OtG driver
  *
@@ -16,23 +16,23 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/regulator/consumer.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
+#include <beep/regulator/consumer.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/platform_data/s3c-hsotg.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
+#include <beep/platform_data/s3c-hsotg.h>
 
 #include <mach/map.h>
 

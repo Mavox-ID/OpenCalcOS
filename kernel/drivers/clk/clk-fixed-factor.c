@@ -7,10 +7,10 @@
  *
  * Standard functionality for the common clock API.
  */
-#include <linux/module.h>
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/clk-provider.h>
+#include <beep/slab.h>
+#include <beep/err.h>
 
 /*
  * DOC: basic fixed multiplier and divider clock that cannot gate

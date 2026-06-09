@@ -1,5 +1,5 @@
-#include <linux/debugfs.h>
-#include <linux/slab.h>
+#include <beep/debugfs.h>
+#include <beep/slab.h>
 
 #define BIG_BUFFER_SIZE	(1024)
 

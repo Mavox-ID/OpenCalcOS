@@ -19,37 +19,37 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/pci-aspm.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/timer.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/compat.h>
-#include <linux/blktrace_api.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/completion.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/pci-aspm.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/fs.h>
+#include <beep/timer.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/compat.h>
+#include <beep/blktrace_api.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
+#include <beep/dma-mapping.h>
+#include <beep/completion.h>
+#include <beep/moduleparam.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_tcq.h>
-#include <linux/cciss_ioctl.h>
-#include <linux/string.h>
-#include <linux/bitmap.h>
-#include <linux/atomic.h>
-#include <linux/kthread.h>
-#include <linux/jiffies.h>
+#include <beep/cciss_ioctl.h>
+#include <beep/string.h>
+#include <beep/bitmap.h>
+#include <beep/atomic.h>
+#include <beep/kthread.h>
+#include <beep/jiffies.h>
 #include "hpsa_cmd.h"
 #include "hpsa.h"
 
@@ -1783,7 +1783,7 @@ static void figure_bus_target_lun(struct ctlr_info *h,
 }
 
 /*
- * If there is no lun 0 on a target, linux won't find any devices.
+ * If there is no lun 0 on a target, beep won't find any devices.
  * For the external targets (arrays), we have to manually detect the enclosure
  * which is at lun zero, as CCISS_REPORT_PHYSICAL_LUNS doesn't report
  * it for some reason.  *tmpdevice is the target we're adding,
@@ -1998,7 +1998,7 @@ static void hpsa_update_scsi_devices(struct ctlr_info *h, int hostno)
 		 * For external target devices, we have to insert a LUN 0 which
 		 * doesn't show up in CCISS_REPORT_PHYSICAL data, but there
 		 * is nonetheless an enclosure device there.  We have to
-		 * present that otherwise linux won't find anything if
+		 * present that otherwise beep won't find anything if
 		 * there is no lun 0.
 		 */
 		if (add_ext_target_dev(h, tmpdevice, this_device,

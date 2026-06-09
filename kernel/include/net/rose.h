@@ -7,7 +7,7 @@
 #ifndef _ROSE_H
 #define _ROSE_H 
 
-#include <linux/rose.h>
+#include <beep/rose.h>
 #include <net/sock.h>
 
 #define	ROSE_ADDR_LEN			5

@@ -7,7 +7,7 @@
 #ifndef _ETRAX_SERIAL_H
 #define _ETRAX_SERIAL_H
 
-#include <linux/circ_buf.h>
+#include <beep/circ_buf.h>
 #include <asm/termios.h>
 #include <asm/dma.h>
 #include <arch/io_interface_mux.h>

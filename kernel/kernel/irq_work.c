@@ -5,13 +5,13 @@
  * context. The enqueueing is NMI-safe.
  */
 
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/irq_work.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
-#include <linux/irqflags.h>
+#include <beep/bug.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/irq_work.h>
+#include <beep/percpu.h>
+#include <beep/hardirq.h>
+#include <beep/irqflags.h>
 #include <asm/processor.h>
 
 /*

@@ -37,19 +37,19 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef _LINUX_SUNRPC_XPRT_RDMA_H
-#define _LINUX_SUNRPC_XPRT_RDMA_H
+#ifndef _BEEP_SUNRPC_XPRT_RDMA_H
+#define _BEEP_SUNRPC_XPRT_RDMA_H
 
-#include <linux/wait.h> 		/* wait_queue_head_t, etc */
-#include <linux/spinlock.h> 		/* spinlock_t, etc */
-#include <linux/atomic.h>			/* atomic_t, etc */
+#include <beep/wait.h> 		/* wait_queue_head_t, etc */
+#include <beep/spinlock.h> 		/* spinlock_t, etc */
+#include <beep/atomic.h>			/* atomic_t, etc */
 
 #include <rdma/rdma_cm.h>		/* RDMA connection api */
 #include <rdma/ib_verbs.h>		/* RDMA verbs api */
 
-#include <linux/sunrpc/clnt.h> 		/* rpc_xprt */
-#include <linux/sunrpc/rpc_rdma.h> 	/* RPC/RDMA protocol */
-#include <linux/sunrpc/xprtrdma.h> 	/* xprt parameters */
+#include <beep/sunrpc/clnt.h> 		/* rpc_xprt */
+#include <beep/sunrpc/rpc_rdma.h> 	/* RPC/RDMA protocol */
+#include <beep/sunrpc/xprtrdma.h> 	/* xprt parameters */
 
 #define RDMA_RESOLVE_TIMEOUT	(5000)	/* 5 seconds */
 #define RDMA_CONNECT_RETRY_MAX	(2)	/* retries if no listener backlog */
@@ -350,4 +350,4 @@ extern struct kmem_cache *svc_rdma_ctxt_cachep;
 /* Workqueue created in svc_rdma.c */
 extern struct workqueue_struct *svc_rdma_wq;
 
-#endif				/* _LINUX_SUNRPC_XPRT_RDMA_H */
+#endif				/* _BEEP_SUNRPC_XPRT_RDMA_H */

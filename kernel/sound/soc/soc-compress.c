@@ -4,8 +4,8 @@
  * Copyright (C) 2012 Intel Corp.
  *
  * Authors: Namarta Kohli <namartax.kohli@intel.com>
- *          Ramesh Babu K V <ramesh.babu@linux.intel.com>
- *          Vinod Koul <vinod.koul@linux.intel.com>
+ *          Ramesh Babu K V <ramesh.babu@beep.intel.com>
+ *          Vinod Koul <vinod.koul@beep.intel.com>
  *
  *  This program is free software; you can redistribute  it and/or modify it
  *  under  the terms of  the GNU General  Public License as published by the
@@ -14,11 +14,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
 #include <sound/core.h>
 #include <sound/compress_params.h>
 #include <sound/compress_driver.h>

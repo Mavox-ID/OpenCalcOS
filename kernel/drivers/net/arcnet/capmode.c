@@ -1,5 +1,5 @@
 /*
- * Linux ARCnet driver - "cap mode" packet encapsulation.
+ * Beep ARCnet driver - "cap mode" packet encapsulation.
  * It adds sequence numbers to packets for communicating between a user space
  * application and the driver. After a transmit it sends a packet with protocol
  * byte 0 back up to the userspace containing the sequence number of the packet
@@ -26,14 +26,14 @@
  * **********************
  */
 
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/if_arp.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
+#include <beep/init.h>
+#include <beep/if_arp.h>
 #include <net/arp.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/arcdevice.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/arcdevice.h>
 
 #define VERSION "arcnet: cap mode (`c') encapsulation support loaded.\n"
 
@@ -114,7 +114,7 @@ static int build_header(struct sk_buff *skb,
 	 */
 	pkt->hard.source = *dev->dev_addr;
 
-	/* see linux/net/ethernet/eth.c to see where I got the following */
+	/* see beep/net/ethernet/eth.c to see where I got the following */
 
 	if (dev->flags & (IFF_LOOPBACK | IFF_NOARP)) {
 		/*

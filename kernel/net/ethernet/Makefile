@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux Ethernet layer.
+# Makefile for the Beep Ethernet layer.
 #
 
 obj-y					+= eth.o

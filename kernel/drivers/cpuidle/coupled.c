@@ -16,13 +16,13 @@
  * more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/cpu.h>
-#include <linux/cpuidle.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/cpu.h>
+#include <beep/cpuidle.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
 #include "cpuidle.h"
 

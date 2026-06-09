@@ -5,9 +5,9 @@
  * This file is released under the GPLv2
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/memory.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/memory.h>
 
 #include "base.h"
 

@@ -15,17 +15,17 @@
  * as published by the Free Software Foundation; either version 2 of the
  * License, or (at your option) any later version
  */
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/font.h>
-#include <linux/mutex.h>
-#include <linux/videodev2.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/font.h>
+#include <beep/mutex.h>
+#include <beep/videodev2.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
 #include <media/videobuf2-vmalloc.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>

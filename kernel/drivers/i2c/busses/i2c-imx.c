@@ -35,24 +35,24 @@
 /** Includes *******************************************************************
 *******************************************************************************/
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/sched.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_i2c.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_data/i2c-imx.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/io.h>
+#include <beep/sched.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_i2c.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/platform_data/i2c-imx.h>
 
 /** Defines ********************************************************************
 *******************************************************************************/

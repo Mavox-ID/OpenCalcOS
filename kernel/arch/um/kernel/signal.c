@@ -1,11 +1,11 @@
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
+#include <beep/module.h>
+#include <beep/ptrace.h>
+#include <beep/sched.h>
 #include <asm/siginfo.h>
 #include <asm/signal.h>
 #include <asm/unistd.h>

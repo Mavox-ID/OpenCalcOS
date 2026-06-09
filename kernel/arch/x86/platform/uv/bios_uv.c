@@ -19,10 +19,10 @@
  *  Copyright (c) Russ Anderson <rja@sgi.com>
  */
 
-#include <linux/efi.h>
-#include <linux/export.h>
+#include <beep/efi.h>
+#include <beep/export.h>
 #include <asm/efi.h>
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/uv/bios.h>
 #include <asm/uv/uv_hub.h>
 

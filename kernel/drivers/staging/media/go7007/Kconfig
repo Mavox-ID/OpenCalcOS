@@ -10,7 +10,7 @@ config VIDEO_GO7007
 	select CRC32
 	default N
 	---help---
-	  This is a video4linux driver for the WIS GO7007 MPEG
+	  This is a video4beep driver for the WIS GO7007 MPEG
 	  encoder chip.
 
 	  To compile this driver as a module, choose M here: the
@@ -21,7 +21,7 @@ config VIDEO_GO7007_USB
 	depends on VIDEO_GO7007 && USB
 	default N
 	---help---
-	  This is a video4linux driver for the WIS GO7007 MPEG
+	  This is a video4beep driver for the WIS GO7007 MPEG
 	  encoder chip over USB.
 
 	  To compile this driver as a module, choose M here: the
@@ -32,7 +32,7 @@ config VIDEO_GO7007_USB_S2250_BOARD
 	depends on VIDEO_GO7007_USB && DVB_USB
 	default N
 	---help---
-	  This is a video4linux driver for the Sensoray 2250/2251 device.
+	  This is a video4beep driver for the Sensoray 2250/2251 device.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called s2250
@@ -42,7 +42,7 @@ config VIDEO_GO7007_OV7640
 	depends on VIDEO_GO7007
 	default N
 	---help---
-	  This is a video4linux driver for the OV7640 sub-device.
+	  This is a video4beep driver for the OV7640 sub-device.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called wis-ov7640
@@ -52,7 +52,7 @@ config VIDEO_GO7007_SAA7113
 	depends on VIDEO_GO7007
 	default N
 	---help---
-	  This is a video4linux driver for the SAA7113 sub-device.
+	  This is a video4beep driver for the SAA7113 sub-device.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called wis-saa7113
@@ -62,7 +62,7 @@ config VIDEO_GO7007_SAA7115
 	depends on VIDEO_GO7007
 	default N
 	---help---
-	  This is a video4linux driver for the SAA7115 sub-device.
+	  This is a video4beep driver for the SAA7115 sub-device.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called wis-saa7115
@@ -72,7 +72,7 @@ config VIDEO_GO7007_TW9903
 	depends on VIDEO_GO7007
 	default N
 	---help---
-	  This is a video4linux driver for the TW9903 sub-device.
+	  This is a video4beep driver for the TW9903 sub-device.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called wis-tw9903
@@ -82,7 +82,7 @@ config VIDEO_GO7007_UDA1342
 	depends on VIDEO_GO7007
 	default N
 	---help---
-	  This is a video4linux driver for the UDA1342 sub-device.
+	  This is a video4beep driver for the UDA1342 sub-device.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called wis-uda1342
@@ -92,7 +92,7 @@ config VIDEO_GO7007_SONY_TUNER
 	depends on VIDEO_GO7007
 	default N
 	---help---
-	  This is a video4linux driver for the Sony Tuner sub-device.
+	  This is a video4beep driver for the Sony Tuner sub-device.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called wis-sony-tuner
@@ -102,7 +102,7 @@ config VIDEO_GO7007_TW2804
 	depends on VIDEO_GO7007
 	default N
 	---help---
-	  This is a video4linux driver for the TW2804 sub-device.
+	  This is a video4beep driver for the TW2804 sub-device.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called wis-tw2804

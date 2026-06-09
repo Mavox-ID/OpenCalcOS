@@ -31,10 +31,10 @@
 #define MODULE_NAME "vicam"
 #define HEADER_SIZE 64
 
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/ihex.h>
+#include <beep/workqueue.h>
+#include <beep/slab.h>
+#include <beep/firmware.h>
+#include <beep/ihex.h>
 #include "gspca.h"
 
 #define VICAM_FIRMWARE "vicam/firmware.fw"

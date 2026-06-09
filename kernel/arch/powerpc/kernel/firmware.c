@@ -13,8 +13,8 @@
  *  2 of the License, or (at your option) any later version.
  */
 
-#include <linux/export.h>
-#include <linux/cache.h>
+#include <beep/export.h>
+#include <beep/cache.h>
 
 #include <asm/firmware.h>
 

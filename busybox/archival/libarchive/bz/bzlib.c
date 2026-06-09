@@ -1,6 +1,6 @@
 /*
  * bzip2 is written by Julian Seward <jseward@bzip.org>.
- * Adapted for busybox by Denys Vlasenko <vda.linux@googlemail.com>.
+ * Adapted for busybox by Denys Vlasenko <vda.beep@googlemail.com>.
  * See README and LICENSE files in this directory for more information.
  */
 

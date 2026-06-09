@@ -1,5 +1,5 @@
 /*
- * Linux/PARISC Project (http://www.parisc-linux.org/)
+ * Beep/PARISC Project (http://www.parisc-beep.org/)
  *
  * HP-UX System Call Wrapper routines and System Call Return Path
  *
@@ -27,7 +27,7 @@
 #include <asm/asm-offsets.h>
 #include <asm/assembly.h>
 #include <asm/signal.h>
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 	.level	LEVEL
 	.text
@@ -107,7 +107,7 @@ fork_return:
 	/*
 	 * HP-UX wants pid (child gets parent pid, parent gets child pid)
 	 * in r28 and a flag in r29 (r29 == 1 for child, 0 for parent).
-	 * Linux fork returns 0 for child, pid for parent. Since HP-UX
+	 * Beep fork returns 0 for child, pid for parent. Since HP-UX
 	 * libc stub throws away parent pid and returns 0 for child,
 	 * we'll just return 0 for parent pid now. Only applications
 	 * that jump directly to the gateway page (not supported) will

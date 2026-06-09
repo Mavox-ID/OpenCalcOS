@@ -1,5 +1,5 @@
 /*
- * IA-64 Linux syscall numbers and inline-functions.
+ * IA-64 Beep syscall numbers and inline-functions.
  *
  * Copyright (C) 1998-2005 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
@@ -32,9 +32,9 @@
 
 #if !defined(__ASSEMBLY__) && !defined(ASSEMBLER)
 
-#include <linux/types.h>
-#include <linux/linkage.h>
-#include <linux/compiler.h>
+#include <beep/types.h>
+#include <beep/linkage.h>
+#include <beep/compiler.h>
 
 extern long __ia64_syscall (long a0, long a1, long a2, long a3, long a4, long nr);
 

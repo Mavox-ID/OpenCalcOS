@@ -3,7 +3,7 @@
  * Licensed under the GPL V2
  */
 
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 
 /*
  * Mostly copied from i386/x86_86 - eliminated the eip < PAGE_OFFSET because

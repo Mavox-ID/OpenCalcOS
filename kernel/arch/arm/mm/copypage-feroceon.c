@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/copypage-feroceon.S
+ *  beep/arch/arm/mm/copypage-feroceon.S
  *
  *  Copyright (C) 2008 Marvell Semiconductors
  *
@@ -10,8 +10,8 @@
  * This handles copy_user_highpage and clear_user_page on Feroceon
  * more optimally than the generic implementations.
  */
-#include <linux/init.h>
-#include <linux/highmem.h>
+#include <beep/init.h>
+#include <beep/highmem.h>
 
 static void __naked
 feroceon_copy_user_page(void *kto, const void *kfrom)

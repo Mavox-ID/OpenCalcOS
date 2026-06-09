@@ -13,7 +13,7 @@ obj-$(CONFIG_KDB_KEYBOARD)    += kdb_keyboard.o
 clean-files := gen-kdb_cmds.c
 
 quiet_cmd_gen-kdb = GENKDB  $@
-      cmd_gen-kdb = $(AWK) 'BEGIN {print "\#include <linux/stddef.h>"; print "\#include <linux/init.h>"} \
+      cmd_gen-kdb = $(AWK) 'BEGIN {print "\#include <beep/stddef.h>"; print "\#include <beep/init.h>"} \
 		/^\#/{next} \
 		/^[ \t]*$$/{next} \
 		{gsub(/"/, "\\\"", $$0); \

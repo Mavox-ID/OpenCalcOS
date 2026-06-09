@@ -5,11 +5,11 @@
  *      Made endianness-clean by Andrew Stribblehill <ads@wompom.org> 2005
  */
 
-#include <linux/time.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/sched.h>
+#include <beep/time.h>
+#include <beep/string.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
+#include <beep/sched.h>
 #include "bfs.h"
 
 #undef DEBUG

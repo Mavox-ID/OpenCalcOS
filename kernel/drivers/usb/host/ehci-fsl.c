@@ -23,13 +23,13 @@
  * Anton Vorontsov <avorontsov@ru.mvista.com>.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/fsl_devices.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/fsl_devices.h>
 
 #include "ehci-fsl.h"
 

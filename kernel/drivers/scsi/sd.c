@@ -2,7 +2,7 @@
  *      sd.c Copyright (C) 1992 Drew Eckhardt
  *           Copyright (C) 1993, 1994, 1995, 1999 Eric Youngdale
  *
- *      Linux scsi disk driver
+ *      Beep scsi disk driver
  *              Initial versions: Drew Eckhardt
  *              Subsequent revisions: Eric Youngdale
  *	Modification history:
@@ -32,25 +32,25 @@
  *	than the level indicated above to trigger output.	
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/bio.h>
-#include <linux/genhd.h>
-#include <linux/hdreg.h>
-#include <linux/errno.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/blkpg.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/string_helpers.h>
-#include <linux/async.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/bio.h>
+#include <beep/genhd.h>
+#include <beep/hdreg.h>
+#include <beep/errno.h>
+#include <beep/idr.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/blkpg.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
+#include <beep/string_helpers.h>
+#include <beep/async.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
 #include <asm/uaccess.h>
 #include <asm/unaligned.h>
 

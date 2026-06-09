@@ -16,7 +16,7 @@
 /*
  * Usage and known bugs:
  * Terminal key codes are not extensive, more needs to be added.
- * This version was created on Debian GNU/Linux 2.x.
+ * This version was created on Debian GNU/Beep 2.x.
  * Delete, Backspace, Home, End, and the arrow keys were tested
  * to work in an Xterm and console. Ctrl-A also works as Home.
  * Ctrl-E also works as End.
@@ -589,7 +589,7 @@ static void input_backward(unsigned num)
 		/* go to 1st column; go up */
 		printf("\r" ESC"[%uA", lines_up);
 		/* go to correct column.
-		 * xterm, konsole, Linux VT interpret 0 as 1 below! wow.
+		 * xterm, konsole, Beep VT interpret 0 as 1 below! wow.
 		 * need to *make sure* we skip it if cmdedit_x == 0 */
 		if (cmdedit_x)
 			printf(ESC"[%uC", cmdedit_x);

@@ -1,6 +1,6 @@
 /*  $Id$
  *  1993/03/31
- *  linux/kernel/aha1740.c
+ *  beep/kernel/aha1740.c
  *
  *  Based loosely on aha1542.c which is
  *  Copyright (C) 1992  Tommy Thorn and
@@ -37,20 +37,20 @@
  * are deemed to be part of the source code.
  */
 
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/eisa.h>
-#include <linux/dma-mapping.h>
-#include <linux/gfp.h>
+#include <beep/blkdev.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
+#include <beep/proc_fs.h>
+#include <beep/stat.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/eisa.h>
+#include <beep/dma-mapping.h>
+#include <beep/gfp.h>
 
 #include <asm/dma.h>
 #include <asm/io.h>

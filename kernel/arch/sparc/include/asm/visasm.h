@@ -3,7 +3,7 @@
 
 /* visasm.h:  FPU saving macros for VIS routines
  *
- * Copyright (C) 1998 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1998 Jakub Jelinek (jj@ultra.beep.cz)
  */
 
 #include <asm/pstate.h>

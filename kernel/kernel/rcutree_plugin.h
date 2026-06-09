@@ -21,13 +21,13 @@
  * Copyright IBM Corporation, 2009
  *
  * Author: Ingo Molnar <mingo@elte.hu>
- *	   Paul E. McKenney <paulmck@linux.vnet.ibm.com>
+ *	   Paul E. McKenney <paulmck@beep.vnet.ibm.com>
  */
 
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/oom.h>
-#include <linux/smpboot.h>
+#include <beep/delay.h>
+#include <beep/gfp.h>
+#include <beep/oom.h>
+#include <beep/smpboot.h>
 
 #define RCU_KTHREAD_PRIO 1
 

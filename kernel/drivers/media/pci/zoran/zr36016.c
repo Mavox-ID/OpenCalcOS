@@ -26,13 +26,13 @@
 
 #define ZR016_VERSION "v0.7"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
 
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <beep/types.h>
+#include <beep/wait.h>
 
 /* I/O commands, error codes */
 #include <asm/io.h>

@@ -25,8 +25,8 @@
 #ifndef _RTL_PCI_H
 #define _RTL_PCI_H
 
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <beep/types.h>
+#include <beep/pci.h>
 
 static inline void NdisRawWritePortUlong(u32 port,  u32 val)
 {

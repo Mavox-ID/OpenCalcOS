@@ -10,19 +10,19 @@
 
 #define DEBUG
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/bitops.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/leds.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/of_address.h>
 #include <plat/orion-gpio.h>
 
 /*

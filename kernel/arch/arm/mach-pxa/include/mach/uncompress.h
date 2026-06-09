@@ -9,7 +9,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/serial_reg.h>
+#include <beep/serial_reg.h>
 #include <asm/mach-types.h>
 
 #define FFUART_BASE	(0x40100000)

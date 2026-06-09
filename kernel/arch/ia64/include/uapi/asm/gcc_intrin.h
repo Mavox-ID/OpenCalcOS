@@ -6,8 +6,8 @@
 #ifndef _UAPI_ASM_IA64_GCC_INTRIN_H
 #define _UAPI_ASM_IA64_GCC_INTRIN_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <beep/types.h>
+#include <beep/compiler.h>
 
 /* define this macro to get some asm stmts included in 'c' files */
 #define ASM_SUPPORTED

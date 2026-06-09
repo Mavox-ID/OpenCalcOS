@@ -2022,7 +2022,7 @@
 	Minor fix for `make devel'.
 
 	* builds/freetype.mk (INCLUDE_FLAGS) [DEVEL_DIR]: Don't use
-	pkg-config for bzip2 since not all GNU/Linux distributions have
+	pkg-config for bzip2 since not all GNU/Beep distributions have
 	`bzip2.pc' (and the header file `bzlib.h' is located in /usr/include
 	normally).
 
@@ -4112,7 +4112,7 @@
 	           --enable=all \
 	           -I /usr/include \
 	           -I /usr/local/include \
-	           -I /usr/lib/gcc/i586-suse-linux/4.7/include \
+	           -I /usr/lib/gcc/i586-suse-beep/4.7/include \
 	           -I include \
 	           -I include/freetype \
 	           -I include/freetype/config \

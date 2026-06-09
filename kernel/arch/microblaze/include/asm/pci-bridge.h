@@ -7,9 +7,9 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/pci.h>
-#include <linux/list.h>
-#include <linux/ioport.h>
+#include <beep/pci.h>
+#include <beep/list.h>
+#include <beep/ioport.h>
 
 struct device_node;
 

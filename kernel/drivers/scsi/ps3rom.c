@@ -18,10 +18,10 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/cdrom.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/cdrom.h>
+#include <beep/highmem.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

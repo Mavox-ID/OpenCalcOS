@@ -9,25 +9,25 @@
  * 2 of the License, or (at your option) any later version.
  *
  * Derived from:
- *  - linux/arch/m68knommu/mm/init.c
+ *  - beep/arch/m68knommu/mm/init.c
  *    - Copyright (C) 1998  D. Jeff Dionne <jeff@lineo.ca>, Kenneth Albanowski <kjahds@kjahds.com>,
  *    - Copyright (C) 2000  Lineo, Inc.  (www.lineo.com)
- *  - linux/arch/m68k/mm/init.c
+ *  - beep/arch/m68k/mm/init.c
  *    - Copyright (C) 1995  Hamish Macdonald
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/pagemap.h>
-#include <linux/gfp.h>
-#include <linux/swap.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/bootmem.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/pagemap.h>
+#include <beep/gfp.h>
+#include <beep/swap.h>
+#include <beep/mm.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/bootmem.h>
+#include <beep/highmem.h>
+#include <beep/module.h>
 
 #include <asm/setup.h>
 #include <asm/segment.h>
@@ -41,8 +41,8 @@
 #undef DEBUG
 
 /*
- * BAD_PAGE is the page that is used for page faults when linux
- * is out-of-memory. Older versions of linux just did a
+ * BAD_PAGE is the page that is used for page faults when beep
+ * is out-of-memory. Older versions of beep just did a
  * do_exit(), but using this instead means there is less risk
  * for a process dying in kernel mode, possibly leaving a inode
  * unused etc..

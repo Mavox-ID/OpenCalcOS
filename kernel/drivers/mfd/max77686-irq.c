@@ -21,14 +21,14 @@
  * This driver is based on max8997-irq.c
  */
 
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/mfd/max77686.h>
-#include <linux/mfd/max77686-private.h>
-#include <linux/irqdomain.h>
-#include <linux/regmap.h>
+#include <beep/err.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
+#include <beep/mfd/max77686.h>
+#include <beep/mfd/max77686-private.h>
+#include <beep/irqdomain.h>
+#include <beep/regmap.h>
 
 enum {
 	MAX77686_DEBUG_IRQ_INFO = 1 << 0,

@@ -1,7 +1,7 @@
 #ifndef _ALPHA_TERMBITS_H
 #define _ALPHA_TERMBITS_H
 
-#include <linux/posix_types.h>
+#include <beep/posix_types.h>
 
 typedef unsigned char	cc_t;
 typedef unsigned int	speed_t;
@@ -109,7 +109,7 @@ struct ktermios {
 #define VTDLY	00200000
 #define   VT0	00000000
 #define   VT1	00200000
-#define XTABS	01000000 /* Hmm.. Linux/i386 considers this part of TABDLY.. */
+#define XTABS	01000000 /* Hmm.. Beep/i386 considers this part of TABDLY.. */
 
 /* c_cflag bit meaning */
 #define CBAUD	0000037

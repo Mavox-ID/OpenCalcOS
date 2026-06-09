@@ -8,11 +8,11 @@
  * Carsten Langgaard, carstenl@mips.com
  * Copyright (C) 2002 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/mm.h>
+#include <beep/hugetlb.h>
 
 #include <asm/cpu.h>
 #include <asm/bootinfo.h>

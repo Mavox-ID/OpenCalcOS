@@ -9,9 +9,9 @@
  * Authors: Miloslav Trmac <mitr@redhat.com>
  */
 
-#include <linux/audit.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
+#include <beep/audit.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
 
 struct tty_audit_buf {
 	atomic_t count;

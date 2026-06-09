@@ -18,8 +18,8 @@
  * Foundation, Inc.,
  * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
-#include <linux/via-core.h>
-#include <linux/via_i2c.h>
+#include <beep/via-core.h>
+#include <beep/via_i2c.h>
 #include "global.h"
 
 #define viafb_compact_res(x, y) (((x)<<16)|(y))

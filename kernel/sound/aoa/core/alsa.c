@@ -5,7 +5,7 @@
  *
  * GPL v2, can be found in COPYING.
  */
-#include <linux/module.h>
+#include <beep/module.h>
 #include "alsa.h"
 
 static int index = -1;

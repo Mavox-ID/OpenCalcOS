@@ -22,11 +22,11 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/console.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/string.h>
+#include <beep/console.h>
 #include <asm/prom.h>
 #include <asm/hvconsole.h>
 #include <asm/firmware.h>

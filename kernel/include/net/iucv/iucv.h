@@ -27,8 +27,8 @@
  *   -ENOMEM: storage allocation failed
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/slab.h>
 #include <asm/debug.h>
 
 /*

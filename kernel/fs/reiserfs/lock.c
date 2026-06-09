@@ -1,5 +1,5 @@
 #include "reiserfs.h"
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 
 /*
  * The previous reiserfs locking scheme was heavily based on

@@ -45,15 +45,15 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/pm.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/gameport.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/pm.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/gameport.h>
+#include <beep/mutex.h>
+#include <beep/export.h>
 
 
 #include <sound/core.h>
@@ -3417,7 +3417,7 @@ static void amp_voyetra_4294(struct snd_cs46xx *chip, int change)
  *	whenever we need to beat on the chip.
  *
  *	The original idea and code for this hack comes from David Kaiser at
- *	Linuxcare. Perhaps one day Crystal will document their chips well
+ *	Beepcare. Perhaps one day Crystal will document their chips well
  *	enough to make them useful.
  */
  

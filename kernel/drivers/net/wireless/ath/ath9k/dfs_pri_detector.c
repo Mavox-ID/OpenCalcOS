@@ -14,8 +14,8 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
 #include "ath9k.h"
 #include "dfs_pattern_detector.h"

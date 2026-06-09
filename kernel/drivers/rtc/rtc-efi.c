@@ -13,12 +13,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/efi.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/time.h>
+#include <beep/platform_device.h>
+#include <beep/rtc.h>
+#include <beep/efi.h>
 
 #define EFI_ISDST (EFI_TIME_ADJUST_DAYLIGHT|EFI_TIME_IN_DAYLIGHT)
 /*

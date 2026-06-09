@@ -18,20 +18,20 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/err.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
-#include <linux/clk.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/err.h>
+#include <beep/mm.h>
+#include <beep/fb.h>
+#include <beep/dma-mapping.h>
+#include <beep/vmalloc.h>
+#include <beep/clk.h>
+#include <beep/gfp.h>
 
 #include <mach/lcdc.h>
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 
 #include <asm/mach-types.h>
 

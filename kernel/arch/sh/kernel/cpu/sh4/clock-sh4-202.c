@@ -9,11 +9,11 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clkdev.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/clkdev.h>
 #include <asm/clock.h>
 #include <asm/freq.h>
 

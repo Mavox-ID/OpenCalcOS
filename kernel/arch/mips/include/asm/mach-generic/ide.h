@@ -15,8 +15,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/pci.h>
-#include <linux/stddef.h>
+#include <beep/pci.h>
+#include <beep/stddef.h>
 #include <asm/processor.h>
 
 /* MIPS port and memory-mapped I/O string operations.  */

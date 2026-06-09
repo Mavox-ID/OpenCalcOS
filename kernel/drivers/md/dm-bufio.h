@@ -9,8 +9,8 @@
 #ifndef DM_BUFIO_H
 #define DM_BUFIO_H
 
-#include <linux/blkdev.h>
-#include <linux/types.h>
+#include <beep/blkdev.h>
+#include <beep/types.h>
 
 /*----------------------------------------------------------------*/
 

@@ -1,5 +1,5 @@
 /*
- *	linux/arch/arm/mach-nspire/include/mach/nspire_clock.h
+ *	beep/arch/arm/mach-nspire/include/mach/nspire_clock.h
  *
  *	Copyright (C) 2012 Daniel Tang <tangrs@tangrs.id.au>
  *
@@ -12,7 +12,7 @@
 #ifndef NSPIRE_CLOCK_H
 #define NSPIRE_CLOCK_H
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 #include <mach/nspire_mmio.h>
 

@@ -1,7 +1,7 @@
 #ifndef _ASM_X86_SECCOMP_64_H
 #define _ASM_X86_SECCOMP_64_H
 
-#include <linux/unistd.h>
+#include <beep/unistd.h>
 #include <asm/ia32_unistd.h>
 
 #define __NR_seccomp_read __NR_read

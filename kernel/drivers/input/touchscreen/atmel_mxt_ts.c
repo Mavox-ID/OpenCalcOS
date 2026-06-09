@@ -11,15 +11,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/i2c.h>
-#include <linux/i2c/atmel_mxt_ts.h>
-#include <linux/input/mt.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/firmware.h>
+#include <beep/i2c.h>
+#include <beep/i2c/atmel_mxt_ts.h>
+#include <beep/input/mt.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 
 /* Version */
 #define MXT_VER_20		20

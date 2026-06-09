@@ -6,7 +6,7 @@
  */
 
 /*
- * ThrustMaster DirectConnect (BSP) joystick family driver for Linux
+ * ThrustMaster DirectConnect (BSP) joystick family driver for Beep
  */
 
 /*
@@ -29,14 +29,14 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/gameport.h>
-#include <linux/input.h>
-#include <linux/jiffies.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/gameport.h>
+#include <beep/input.h>
+#include <beep/jiffies.h>
 
 #define DRIVER_DESC	"ThrustMaster DirectConnect joystick driver"
 

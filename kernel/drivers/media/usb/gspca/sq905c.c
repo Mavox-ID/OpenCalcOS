@@ -31,8 +31,8 @@
 
 #define MODULE_NAME "sq905c"
 
-#include <linux/workqueue.h>
-#include <linux/slab.h>
+#include <beep/workqueue.h>
+#include <beep/slab.h>
 #include "gspca.h"
 
 MODULE_AUTHOR("Theodore Kilgore <kilgota@auburn.edu>");

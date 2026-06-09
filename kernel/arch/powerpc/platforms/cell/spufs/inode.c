@@ -21,19 +21,19 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/fsnotify.h>
-#include <linux/backing-dev.h>
-#include <linux/init.h>
-#include <linux/ioctl.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/pagemap.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/parser.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/fsnotify.h>
+#include <beep/backing-dev.h>
+#include <beep/init.h>
+#include <beep/ioctl.h>
+#include <beep/module.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/pagemap.h>
+#include <beep/poll.h>
+#include <beep/slab.h>
+#include <beep/parser.h>
 
 #include <asm/prom.h>
 #include <asm/spu.h>

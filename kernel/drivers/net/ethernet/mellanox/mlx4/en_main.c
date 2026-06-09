@@ -31,15 +31,15 @@
  *
  */
 
-#include <linux/cpumask.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
+#include <beep/cpumask.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
 
-#include <linux/mlx4/driver.h>
-#include <linux/mlx4/device.h>
-#include <linux/mlx4/cmd.h>
+#include <beep/mlx4/driver.h>
+#include <beep/mlx4/device.h>
+#include <beep/mlx4/cmd.h>
 
 #include "mlx4_en.h"
 

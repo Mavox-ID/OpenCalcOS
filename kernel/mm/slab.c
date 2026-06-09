@@ -1,5 +1,5 @@
 /*
- * linux/mm/slab.c
+ * beep/mm/slab.c
  * Written by Mark Hemment, 1996/97.
  * (markhe@nextd.demon.co.uk)
  *
@@ -86,36 +86,36 @@
  *	All object allocations for a node occur from node specific slab lists.
  */
 
-#include	<linux/slab.h>
-#include	<linux/mm.h>
-#include	<linux/poison.h>
-#include	<linux/swap.h>
-#include	<linux/cache.h>
-#include	<linux/interrupt.h>
-#include	<linux/init.h>
-#include	<linux/compiler.h>
-#include	<linux/cpuset.h>
-#include	<linux/proc_fs.h>
-#include	<linux/seq_file.h>
-#include	<linux/notifier.h>
-#include	<linux/kallsyms.h>
-#include	<linux/cpu.h>
-#include	<linux/sysctl.h>
-#include	<linux/module.h>
-#include	<linux/rcupdate.h>
-#include	<linux/string.h>
-#include	<linux/uaccess.h>
-#include	<linux/nodemask.h>
-#include	<linux/kmemleak.h>
-#include	<linux/mempolicy.h>
-#include	<linux/mutex.h>
-#include	<linux/fault-inject.h>
-#include	<linux/rtmutex.h>
-#include	<linux/reciprocal_div.h>
-#include	<linux/debugobjects.h>
-#include	<linux/kmemcheck.h>
-#include	<linux/memory.h>
-#include	<linux/prefetch.h>
+#include	<beep/slab.h>
+#include	<beep/mm.h>
+#include	<beep/poison.h>
+#include	<beep/swap.h>
+#include	<beep/cache.h>
+#include	<beep/interrupt.h>
+#include	<beep/init.h>
+#include	<beep/compiler.h>
+#include	<beep/cpuset.h>
+#include	<beep/proc_fs.h>
+#include	<beep/seq_file.h>
+#include	<beep/notifier.h>
+#include	<beep/kallsyms.h>
+#include	<beep/cpu.h>
+#include	<beep/sysctl.h>
+#include	<beep/module.h>
+#include	<beep/rcupdate.h>
+#include	<beep/string.h>
+#include	<beep/uaccess.h>
+#include	<beep/nodemask.h>
+#include	<beep/kmemleak.h>
+#include	<beep/mempolicy.h>
+#include	<beep/mutex.h>
+#include	<beep/fault-inject.h>
+#include	<beep/rtmutex.h>
+#include	<beep/reciprocal_div.h>
+#include	<beep/debugobjects.h>
+#include	<beep/kmemcheck.h>
+#include	<beep/memory.h>
+#include	<beep/prefetch.h>
 
 #include	<net/sock.h>
 
@@ -320,7 +320,7 @@ static void cache_reap(struct work_struct *unused);
 
 /*
  * This function must be completely optimized away if a constant is passed to
- * it.  Mostly the same as what is in linux/slab.h except it returns an index.
+ * it.  Mostly the same as what is in beep/slab.h except it returns an index.
  */
 static __always_inline int index_of(const size_t size)
 {
@@ -334,7 +334,7 @@ static __always_inline int index_of(const size_t size)
 		return i; \
 	else \
 		i++;
-#include <linux/kmalloc_sizes.h>
+#include <beep/kmalloc_sizes.h>
 #undef CACHE
 		__bad_size();
 	} else
@@ -529,7 +529,7 @@ static inline unsigned int obj_to_index(const struct kmem_cache *cache,
  */
 struct cache_sizes malloc_sizes[] = {
 #define CACHE(x) { .cs_size = (x) },
-#include <linux/kmalloc_sizes.h>
+#include <beep/kmalloc_sizes.h>
 	CACHE(ULONG_MAX)
 #undef CACHE
 };
@@ -543,7 +543,7 @@ struct cache_names {
 
 static struct cache_names __initdata cache_names[] = {
 #define CACHE(x) { .name = "size-" #x, .name_dma = "size-" #x "(DMA)" },
-#include <linux/kmalloc_sizes.h>
+#include <beep/kmalloc_sizes.h>
 	{NULL,}
 #undef CACHE
 };

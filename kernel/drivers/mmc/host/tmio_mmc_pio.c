@@ -1,5 +1,5 @@
 /*
- * linux/drivers/mmc/host/tmio_mmc_pio.c
+ * beep/drivers/mmc/host/tmio_mmc_pio.c
  *
  * Copyright (C) 2011 Guennadi Liakhovetski
  * Copyright (C) 2007 Ian Molton
@@ -27,25 +27,25 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/mmc/tmio.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/platform_device.h>
-#include <linux/pm_qos.h>
-#include <linux/pm_runtime.h>
-#include <linux/scatterlist.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/highmem.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/mfd/tmio.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/mmc.h>
+#include <beep/mmc/slot-gpio.h>
+#include <beep/mmc/tmio.h>
+#include <beep/module.h>
+#include <beep/pagemap.h>
+#include <beep/platform_device.h>
+#include <beep/pm_qos.h>
+#include <beep/pm_runtime.h>
+#include <beep/scatterlist.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
 
 #include "tmio_mmc.h"
 

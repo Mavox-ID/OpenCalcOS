@@ -8,11 +8,11 @@
 
 /***************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
 #include <asm/machdep.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>

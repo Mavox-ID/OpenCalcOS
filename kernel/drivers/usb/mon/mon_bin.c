@@ -7,17 +7,17 @@
  * Copyright (C) 2006,2007 Pete Zaitcev (zaitcev@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/export.h>
-#include <linux/usb.h>
-#include <linux/poll.h>
-#include <linux/compat.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/cdev.h>
+#include <beep/export.h>
+#include <beep/usb.h>
+#include <beep/poll.h>
+#include <beep/compat.h>
+#include <beep/mm.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
 
 #include <asm/uaccess.h>
 
@@ -1283,7 +1283,7 @@ static int mon_bin_wait_event(struct file *file, struct mon_reader_bin *rp)
 		if (file->f_flags & O_NONBLOCK) {
 			set_current_state(TASK_RUNNING);
 			remove_wait_queue(&rp->b_wait, &waita);
-			return -EWOULDBLOCK; /* Same as EAGAIN in Linux */
+			return -EWOULDBLOCK; /* Same as EAGAIN in Beep */
 		}
 		schedule();
 		if (signal_pending(current)) {

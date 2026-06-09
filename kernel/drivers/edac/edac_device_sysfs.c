@@ -10,10 +10,10 @@
  *
  */
 
-#include <linux/ctype.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/edac.h>
+#include <beep/ctype.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/edac.h>
 
 #include "edac_core.h"
 #include "edac_module.h"

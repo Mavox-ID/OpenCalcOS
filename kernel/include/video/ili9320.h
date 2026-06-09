@@ -5,7 +5,7 @@
  * Copyright 2007 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
  *
- * http://armlinux.simtec.co.uk/
+ * http://armbeep.simtec.co.uk/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as

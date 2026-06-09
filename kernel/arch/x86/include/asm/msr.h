@@ -130,7 +130,7 @@ static inline unsigned long long native_read_pmc(int counter)
 #ifdef CONFIG_PARAVIRT
 #include <asm/paravirt.h>
 #else
-#include <linux/errno.h>
+#include <beep/errno.h>
 /*
  * Access to machine-specific registers (available on 586 and better only)
  * Note: the rd* operations modify the parameters directly (without using

@@ -1,5 +1,5 @@
 /*
- * Copyright 2006 Dave Airlie <airlied@linux.ie>
+ * Copyright 2006 Dave Airlie <airlied@beep.ie>
  * Copyright © 2006-2007 Intel Corporation
  *   Jesse Barnes <jesse.barnes@intel.com>
  *
@@ -25,10 +25,10 @@
  * Authors:
  *	Eric Anholt <eric@anholt.net>
  */
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
 #include <drm/drmP.h>
 #include <drm/drm_crtc.h>
 #include <drm/drm_edid.h>

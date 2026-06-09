@@ -24,23 +24,23 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
 
 #ifdef CONFIG_ACPI_PROCFS_POWER
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #include <asm/uaccess.h>
 #endif
 
-#include <linux/acpi.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/delay.h>
-#include <linux/power_supply.h>
+#include <beep/acpi.h>
+#include <beep/timer.h>
+#include <beep/jiffies.h>
+#include <beep/delay.h>
+#include <beep/power_supply.h>
 
 #include "sbshc.h"
 

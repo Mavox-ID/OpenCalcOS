@@ -1,5 +1,5 @@
 /*
- *  linux/mm/memory.c
+ *  beep/mm/memory.c
  *
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
@@ -38,27 +38,27 @@
  * Aug/Sep 2004 Changed to four level page tables (Andi Kleen)
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/mman.h>
-#include <linux/swap.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/export.h>
-#include <linux/delayacct.h>
-#include <linux/init.h>
-#include <linux/writeback.h>
-#include <linux/memcontrol.h>
-#include <linux/mmu_notifier.h>
-#include <linux/kallsyms.h>
-#include <linux/swapops.h>
-#include <linux/elf.h>
-#include <linux/gfp.h>
-#include <linux/migrate.h>
-#include <linux/string.h>
+#include <beep/kernel_stat.h>
+#include <beep/mm.h>
+#include <beep/hugetlb.h>
+#include <beep/mman.h>
+#include <beep/swap.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/ksm.h>
+#include <beep/rmap.h>
+#include <beep/export.h>
+#include <beep/delayacct.h>
+#include <beep/init.h>
+#include <beep/writeback.h>
+#include <beep/memcontrol.h>
+#include <beep/mmu_notifier.h>
+#include <beep/kallsyms.h>
+#include <beep/swapops.h>
+#include <beep/elf.h>
+#include <beep/gfp.h>
+#include <beep/migrate.h>
+#include <beep/string.h>
 
 #include <asm/io.h>
 #include <asm/pgalloc.h>
@@ -1463,7 +1463,7 @@ EXPORT_SYMBOL_GPL(zap_vma_ptes);
  * @address: virtual address to look up
  * @flags: flags modifying lookup behaviour
  *
- * @flags can have FOLL_ flags set, defined in <linux/mm.h>
+ * @flags can have FOLL_ flags set, defined in <beep/mm.h>
  *
  * Returns the mapped (struct page *), %NULL if no mapping exists, or
  * an error pointer if there is a mapping to something not represented

@@ -11,28 +11,28 @@
  * Please direct your questions and comments on this driver to the following
  * email address:
  *
- *	linux-arm-kernel@lists.arm.linux.org.uk
+ *	beep-arm-kernel@lists.arm.beep.org.uk
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/cpufreq.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/math64.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/fb.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/cpufreq.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/io.h>
+#include <beep/math64.h>
 
-#include <linux/platform_data/video-imxfb.h>
+#include <beep/platform_data/video-imxfb.h>
 
 /*
  * Complain if VAR is out of range.

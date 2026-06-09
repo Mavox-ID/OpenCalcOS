@@ -1,9 +1,9 @@
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/node.h>
-#include <linux/nodemask.h>
-#include <linux/percpu.h>
+#include <beep/cpu.h>
+#include <beep/cpumask.h>
+#include <beep/init.h>
+#include <beep/node.h>
+#include <beep/nodemask.h>
+#include <beep/percpu.h>
 
 static DEFINE_PER_CPU(struct cpu, cpu_devices);
 

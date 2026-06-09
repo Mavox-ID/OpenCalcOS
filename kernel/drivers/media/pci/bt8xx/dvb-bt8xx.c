@@ -21,14 +21,14 @@
 
 #define pr_fmt(fmt) "dvb_bt8xx: " fmt
 
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
+#include <beep/bitops.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
 
 #include "dmxdev.h"
 #include "dvbdev.h"

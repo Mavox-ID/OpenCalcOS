@@ -1,5 +1,5 @@
 /*
- *  linux/net/sunrpc/gss_krb5_seal.c
+ *  beep/net/sunrpc/gss_krb5_seal.c
  *
  *  Adapted from MIT Kerberos 5-1.2.1 lib/gssapi/krb5/k5seal.c
  *
@@ -58,11 +58,11 @@
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#include <linux/types.h>
-#include <linux/jiffies.h>
-#include <linux/sunrpc/gss_krb5.h>
-#include <linux/random.h>
-#include <linux/crypto.h>
+#include <beep/types.h>
+#include <beep/jiffies.h>
+#include <beep/sunrpc/gss_krb5.h>
+#include <beep/random.h>
+#include <beep/crypto.h>
 
 #ifdef RPC_DEBUG
 # define RPCDBG_FACILITY        RPCDBG_AUTH

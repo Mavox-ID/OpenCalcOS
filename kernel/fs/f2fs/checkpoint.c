@@ -8,14 +8,14 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/fs.h>
-#include <linux/bio.h>
-#include <linux/mpage.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/f2fs_fs.h>
-#include <linux/pagevec.h>
-#include <linux/swap.h>
+#include <beep/fs.h>
+#include <beep/bio.h>
+#include <beep/mpage.h>
+#include <beep/writeback.h>
+#include <beep/blkdev.h>
+#include <beep/f2fs_fs.h>
+#include <beep/pagevec.h>
+#include <beep/swap.h>
 
 #include "f2fs.h"
 #include "node.h"

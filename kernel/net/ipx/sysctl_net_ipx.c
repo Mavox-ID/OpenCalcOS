@@ -1,4 +1,4 @@
-/* -*- linux-c -*-
+/* -*- beep-c -*-
  * sysctl_net_ipx.c: sysctl interface to net IPX subsystem.
  *
  * Begun April 1, 1996, Mike Shaver.
@@ -6,8 +6,8 @@
  * Added /proc/sys/net/ipx/ipx_pprop_broadcasting - acme March 4, 2001
  */
 
-#include <linux/mm.h>
-#include <linux/sysctl.h>
+#include <beep/mm.h>
+#include <beep/sysctl.h>
 #include <net/net_namespace.h>
 
 #ifndef CONFIG_SYSCTL

@@ -1,12 +1,12 @@
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
-#include <linux/sort.h>
-#include <linux/slab.h>
+#include <beep/sort.h>
+#include <beep/slab.h>
 
 #include "super.h"
 #include "mds_client.h"
 
-#include <linux/ceph/decode.h>
+#include <beep/ceph/decode.h>
 
 /*
  * Snapshots in ceph are driven in large part by cooperation from the

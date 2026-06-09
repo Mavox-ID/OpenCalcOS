@@ -4,7 +4,7 @@
  * Copyright (C) 2005-2011  NTT DATA CORPORATION
  */
 
-#include <linux/security.h>
+#include <beep/security.h>
 #include "common.h"
 
 /**
@@ -66,11 +66,11 @@ static void tomoyo_cred_free(struct cred *cred)
 /**
  * tomoyo_bprm_set_creds - Target for security_bprm_set_creds().
  *
- * @bprm: Pointer to "struct linux_binprm".
+ * @bprm: Pointer to "struct beep_binprm".
  *
  * Returns 0 on success, negative value otherwise.
  */
-static int tomoyo_bprm_set_creds(struct linux_binprm *bprm)
+static int tomoyo_bprm_set_creds(struct beep_binprm *bprm)
 {
 	int rc;
 
@@ -111,11 +111,11 @@ static int tomoyo_bprm_set_creds(struct linux_binprm *bprm)
 /**
  * tomoyo_bprm_check_security - Target for security_bprm_check().
  *
- * @bprm: Pointer to "struct linux_binprm".
+ * @bprm: Pointer to "struct beep_binprm".
  *
  * Returns 0 on success, negative value otherwise.
  */
-static int tomoyo_bprm_check_security(struct linux_binprm *bprm)
+static int tomoyo_bprm_check_security(struct beep_binprm *bprm)
 {
 	struct tomoyo_domain_info *domain = bprm->cred->security;
 
@@ -539,7 +539,7 @@ static struct security_operations tomoyo_security_ops = {
 struct srcu_struct tomoyo_ss;
 
 /**
- * tomoyo_init - Register TOMOYO Linux as a LSM module.
+ * tomoyo_init - Register TOMOYO Beep as a LSM module.
  *
  * Returns 0.
  */
@@ -552,8 +552,8 @@ static int __init tomoyo_init(void)
 	/* register ourselves with the security framework */
 	if (register_security(&tomoyo_security_ops) ||
 	    init_srcu_struct(&tomoyo_ss))
-		panic("Failure registering TOMOYO Linux");
-	printk(KERN_INFO "TOMOYO Linux initialized\n");
+		panic("Failure registering TOMOYO Beep");
+	printk(KERN_INFO "TOMOYO Beep initialized\n");
 	cred->security = &tomoyo_kernel_domain;
 	tomoyo_mm_init();
 	return 0;

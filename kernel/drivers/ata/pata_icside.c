@@ -1,11 +1,11 @@
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/gfp.h>
 #include <scsi/scsi_host.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
+#include <beep/ata.h>
+#include <beep/libata.h>
 
 #include <asm/dma.h>
 #include <asm/ecard.h>
@@ -619,7 +619,7 @@ static void __exit pata_icside_exit(void)
 	ecard_remove_driver(&pata_icside_driver);
 }
 
-MODULE_AUTHOR("Russell King <rmk@arm.linux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk@arm.beep.org.uk>");
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("ICS PATA driver");
 

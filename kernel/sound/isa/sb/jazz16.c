@@ -11,12 +11,12 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/delay.h>
 #include <asm/dma.h>
-#include <linux/isa.h>
+#include <beep/isa.h>
 #include <sound/core.h>
 #include <sound/mpu401.h>
 #include <sound/opl3.h>

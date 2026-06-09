@@ -1,5 +1,5 @@
 /*
- * linux/drivers/scsi/arm/arxescsi.c
+ * beep/drivers/scsi/arm/arxescsi.c
  *
  * Copyright (C) 1997-2000 Russell King, Stefan Hanske
  *
@@ -18,17 +18,17 @@
  *  02-04-2000	RMK	0.1.1	Updated for new error handling code.
  *  22-10-2000  SH		Updated for new registering scheme.
  */
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/unistd.h>
-#include <linux/stat.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
+#include <beep/proc_fs.h>
+#include <beep/unistd.h>
+#include <beep/stat.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
 
 #include <asm/dma.h>
 #include <asm/io.h>

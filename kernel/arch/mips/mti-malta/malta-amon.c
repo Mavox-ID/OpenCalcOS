@@ -18,9 +18,9 @@
  * Arbitrary Monitor interface
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/smp.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/smp.h>
 
 #include <asm/addrspace.h>
 #include <asm/mips-boards/launch.h>

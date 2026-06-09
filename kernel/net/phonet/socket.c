@@ -23,15 +23,15 @@
  * 02110-1301 USA
  */
 
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/net.h>
-#include <linux/poll.h>
+#include <beep/gfp.h>
+#include <beep/kernel.h>
+#include <beep/net.h>
+#include <beep/poll.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 
-#include <linux/phonet.h>
-#include <linux/export.h>
+#include <beep/phonet.h>
+#include <beep/export.h>
 #include <net/phonet/phonet.h>
 #include <net/phonet/pep.h>
 #include <net/phonet/pn_dev.h>

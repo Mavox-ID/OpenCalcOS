@@ -12,7 +12,7 @@
  */
 
 #include <variant/core.h>
-#include <linux/errno.h>
+#include <beep/errno.h>
 
 /* Load or store instructions that may cause exceptions use the EX macro. */
 

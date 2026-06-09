@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/include/plat/s3c244x.h
+/* beep/arch/arm/plat-samsung/include/plat/s3c244x.h
  *
  * Copyright (c) 2004-2005 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>

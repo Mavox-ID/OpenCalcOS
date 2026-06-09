@@ -5,15 +5,15 @@
  * License terms:  GNU General Public License (GPL), version 2
  */
 
-#include <linux/sysfs.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/spinlock.h>
-#include <linux/sys_soc.h>
-#include <linux/err.h>
+#include <beep/sysfs.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/stat.h>
+#include <beep/slab.h>
+#include <beep/idr.h>
+#include <beep/spinlock.h>
+#include <beep/sys_soc.h>
+#include <beep/err.h>
 
 static DEFINE_IDA(soc_ida);
 static DEFINE_SPINLOCK(soc_lock);

@@ -9,12 +9,12 @@
 #ifndef STA_INFO_H
 #define STA_INFO_H
 
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/if_ether.h>
-#include <linux/workqueue.h>
-#include <linux/average.h>
-#include <linux/etherdevice.h>
+#include <beep/list.h>
+#include <beep/types.h>
+#include <beep/if_ether.h>
+#include <beep/workqueue.h>
+#include <beep/average.h>
+#include <beep/etherdevice.h>
 #include "key.h"
 
 /**

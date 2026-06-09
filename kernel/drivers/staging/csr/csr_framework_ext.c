@@ -8,13 +8,13 @@
 
 *****************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/freezer.h>
-#include <linux/semaphore.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
+#include <beep/kernel.h>
+#include <beep/kthread.h>
+#include <beep/module.h>
+#include <beep/freezer.h>
+#include <beep/semaphore.h>
+#include <beep/slab.h>
+#include <beep/bitops.h>
 
 #include "csr_framework_ext.h"
 

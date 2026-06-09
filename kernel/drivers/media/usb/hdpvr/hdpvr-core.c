@@ -11,18 +11,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
-#include <linux/i2c.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
+#include <beep/atomic.h>
+#include <beep/usb.h>
+#include <beep/mutex.h>
+#include <beep/i2c.h>
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-common.h>
 

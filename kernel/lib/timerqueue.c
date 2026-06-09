@@ -22,10 +22,10 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/bug.h>
-#include <linux/timerqueue.h>
-#include <linux/rbtree.h>
-#include <linux/export.h>
+#include <beep/bug.h>
+#include <beep/timerqueue.h>
+#include <beep/rbtree.h>
+#include <beep/export.h>
 
 /**
  * timerqueue_add - Adds timer to timerqueue.

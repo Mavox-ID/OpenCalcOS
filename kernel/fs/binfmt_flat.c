@@ -1,6 +1,6 @@
 /****************************************************************************/
 /*
- *  linux/fs/binfmt_flat.c
+ *  beep/fs/binfmt_flat.c
  *
  *	Copyright (C) 2000-2003 David McCullough <davidm@snapgear.com>
  *	Copyright (C) 2002 Greg Ungerer <gerg@snapgear.com>
@@ -8,33 +8,33 @@
  *	Copyright (C) 2000, 2001 Lineo, by David McCullough <davidm@lineo.com>
  *  based heavily on:
  *
- *  linux/fs/binfmt_aout.c:
+ *  beep/fs/binfmt_aout.c:
  *      Copyright (C) 1991, 1992, 1996  Linus Torvalds
- *  linux/fs/binfmt_flat.c for 2.0 kernel
+ *  beep/fs/binfmt_flat.c for 2.0 kernel
  *	    Copyright (C) 1998  Kenneth Albanowski <kjahds@kjahds.com>
  *	JAN/99 -- coded full program relocation (gerg@snapgear.com)
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/slab.h>
-#include <linux/binfmts.h>
-#include <linux/personality.h>
-#include <linux/init.h>
-#include <linux/flat.h>
-#include <linux/syscalls.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/string.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/stat.h>
+#include <beep/fcntl.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/slab.h>
+#include <beep/binfmts.h>
+#include <beep/personality.h>
+#include <beep/init.h>
+#include <beep/flat.h>
+#include <beep/syscalls.h>
 
 #include <asm/byteorder.h>
 #include <asm/uaccess.h>
@@ -88,10 +88,10 @@ struct lib_info {
 static int load_flat_shared_library(int id, struct lib_info *p);
 #endif
 
-static int load_flat_binary(struct linux_binprm *);
+static int load_flat_binary(struct beep_binprm *);
 static int flat_core_dump(struct coredump_params *cprm);
 
-static struct linux_binfmt flat_format = {
+static struct beep_binfmt flat_format = {
 	.module		= THIS_MODULE,
 	.load_binary	= load_flat_binary,
 	.core_dump	= flat_core_dump,
@@ -120,7 +120,7 @@ static int flat_core_dump(struct coredump_params *cprm)
 
 static unsigned long create_flat_tables(
 	unsigned long pp,
-	struct linux_binprm * bprm)
+	struct beep_binprm * bprm)
 {
 	unsigned long *argv,*envp;
 	unsigned long * sp;
@@ -165,7 +165,7 @@ static unsigned long create_flat_tables(
 
 #ifdef CONFIG_BINFMT_ZFLAT
 
-#include <linux/zlib.h>
+#include <beep/zlib.h>
 
 #define LBUFSIZE	4000
 
@@ -179,7 +179,7 @@ static unsigned long create_flat_tables(
 #define RESERVED     0xC0 /* bit 6,7:   reserved */
 
 static int decompress_exec(
-	struct linux_binprm *bprm,
+	struct beep_binprm *bprm,
 	unsigned long offset,
 	char *dst,
 	long len,
@@ -421,7 +421,7 @@ void old_reloc(unsigned long rl)
 
 /****************************************************************************/
 
-static int load_flat_file(struct linux_binprm * bprm,
+static int load_flat_file(struct beep_binprm * bprm,
 		struct lib_info *libinfo, int id, unsigned long *extra_stack)
 {
 	struct flat_hdr * hdr;
@@ -520,7 +520,7 @@ static int load_flat_file(struct linux_binprm * bprm,
 		}
 
 		/* OK, This is the point of no return */
-		set_personality(PER_LINUX_32BIT);
+		set_personality(PER_BEEP_32BIT);
 		setup_new_exec(bprm);
 	}
 
@@ -809,7 +809,7 @@ err:
 
 static int load_flat_shared_library(int id, struct lib_info *libs)
 {
-	struct linux_binprm bprm;
+	struct beep_binprm bprm;
 	int res;
 	char buf[16];
 
@@ -858,7 +858,7 @@ out:
  * libraries.  There is no binary dependent code anywhere else.
  */
 
-static int load_flat_binary(struct linux_binprm * bprm)
+static int load_flat_binary(struct beep_binprm * bprm)
 {
 	struct lib_info libinfo;
 	struct pt_regs *regs = current_pt_regs();

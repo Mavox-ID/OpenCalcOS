@@ -6,7 +6,7 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 #include <asm/dma.h>
 
 static int validate_memory_access_address(unsigned long addr, int size)

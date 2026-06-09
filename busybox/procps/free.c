@@ -52,7 +52,7 @@
 //NB: if we implement -s or -c, need to stop being NOFORK!
 
 #include "libbb.h"
-#ifdef __linux__
+#ifdef __beep__
 # include <sys/sysinfo.h>
 #endif
 

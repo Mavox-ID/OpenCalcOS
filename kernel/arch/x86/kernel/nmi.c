@@ -4,26 +4,26 @@
  *  Copyright (C) 2011	Don Zickus Red Hat, Inc.
  *
  *  Pentium III FXSR, SSE support
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@vabeep.com>, May 2000
  */
 
 /*
  * Handle hardware traps and faults.
  */
-#include <linux/spinlock.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/nmi.h>
-#include <linux/delay.h>
-#include <linux/hardirq.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/spinlock.h>
+#include <beep/kprobes.h>
+#include <beep/kdebug.h>
+#include <beep/nmi.h>
+#include <beep/delay.h>
+#include <beep/hardirq.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #if defined(CONFIG_EDAC)
-#include <linux/edac.h>
+#include <beep/edac.h>
 #endif
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/traps.h>
 #include <asm/mach_traps.h>
 #include <asm/nmi.h>

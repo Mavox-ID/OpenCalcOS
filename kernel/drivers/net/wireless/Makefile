@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux Wireless network device drivers.
+# Makefile for the Beep Wireless network device drivers.
 #
 
 obj-$(CONFIG_IPW2100) += ipw2x00/

@@ -6,14 +6,14 @@
  *
  * License Terms: GNU General Public License, version 2
  * Author: Rabin Vincent <rabin.vincent@stericsson.com> for ST-Ericsson
- * Author: Viresh Kumar <viresh.linux@gmail.com> for ST Microelectronics
+ * Author: Viresh Kumar <viresh.beep@gmail.com> for ST Microelectronics
  */
 
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
 #include "stmpe.h"
 
 static int i2c_reg_read(struct stmpe *stmpe, u8 reg)

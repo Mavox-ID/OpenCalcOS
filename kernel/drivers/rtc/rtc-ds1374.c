@@ -17,15 +17,15 @@
  * "Sending and receiving", using SMBus level communication is preferred.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/rtc.h>
+#include <beep/bcd.h>
+#include <beep/workqueue.h>
+#include <beep/slab.h>
+#include <beep/pm.h>
 
 #define DS1374_REG_TOD0		0x00 /* Time of Day */
 #define DS1374_REG_TOD1		0x01

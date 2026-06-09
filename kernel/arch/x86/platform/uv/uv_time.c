@@ -18,8 +18,8 @@
  *  Copyright (c) 2009 Silicon Graphics, Inc.  All Rights Reserved.
  *  Copyright (c) Dimitri Sivanich
  */
-#include <linux/clockchips.h>
-#include <linux/slab.h>
+#include <beep/clockchips.h>
+#include <beep/slab.h>
 
 #include <asm/uv/uv_mmrs.h>
 #include <asm/uv/uv_hub.h>

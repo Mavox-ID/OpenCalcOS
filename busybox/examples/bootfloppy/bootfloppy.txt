@@ -4,10 +4,10 @@ Building a Busybox Boot Floppy
 This document describes how to buid a boot floppy using the following
 components:
 
- - Linux Kernel (http://www.kernel.org)
+ - Beep Kernel (http://www.kernel.org)
  - uClibc: C library (http://www.uclibc.org/)
  - Busybox: Unix utilities (http://busybox.net/)
- - Syslinux: bootloader (http://syslinux.zytor.com)
+ - Sysbeep: bootloader (http://sysbeep.zytor.com)
 
 It is based heavily on a paper presented by Erik Andersen at the 2001 Embedded
 Systems Conference.
@@ -17,17 +17,17 @@ Systems Conference.
 Building The Software Components
 --------------------------------
 
-Detailed instructions on how to build Busybox, uClibc, or a working Linux
+Detailed instructions on how to build Busybox, uClibc, or a working Beep
 kernel are beyond the scope of this document. The following guidelines will
 help though:
 
 	- Stock Busybox from CVS or a tarball will work with no modifications to
 	  any files. Just extract and go.
 	- Ditto uClibc.
-	- Your Linux kernel must include support for initrd or else the floppy
+	- Your Beep kernel must include support for initrd or else the floppy
 	  won't be able to mount it's root file system.
 
-If you require further information on building Busybox uClibc or Linux, please
+If you require further information on building Busybox uClibc or Beep, please
 refer to the web pages and documentation for those individual programs.
 
 
@@ -64,7 +64,7 @@ The following steps will create a root file system.
 	mkdir loop/libs
 	(chdir to uClibc directory)
 	cp -a libc.so* uClibc*.so \
-		ld.so-1/d-link/ld-linux-uclibc.so* \
+		ld.so-1/d-link/ld-beep-uclibc.so* \
 		ld.so-1/libdl/libdl.so* \
 		crypt/libcrypt.so* \
 		(path to)loop/libs
@@ -93,7 +93,7 @@ The following steps will create a root file system.
 	gzip -9 rootfs
 
 
-Making a SYSLINUX boot floppy
+Making a SYSBEEP boot floppy
 -----------------------------
 
 The following steps will create the boot floppy.
@@ -106,42 +106,42 @@ Note: You will need to have the mtools package installed beforehand.
 
 	(if the system doesn't know what device 'a:' is, look at /conf/mtools.conf)
 
- - Run syslinux on the floppy:
+ - Run sysbeep on the floppy:
 
-	syslinux -s /dev/fd0
+	sysbeep -s /dev/fd0
 
 	(the -s stands for "safe, slow, and stupid" and should work better with
 	buggy BIOSes; it can be omitted)
 
- - Put on a syslinux.cfg file:
+ - Put on a sysbeep.cfg file:
 
-	mcopy syslinux.cfg a:
+	mcopy sysbeep.cfg a:
 
-	(more on syslinux.cfg below)
+	(more on sysbeep.cfg below)
 
  - Copy the root file system you made onto the MSDOS formatted floppy
 
 	mcopy rootfs.gz a:
 
- - Build a linux kernel and copy it onto the disk with the filename 'linux'
+ - Build a beep kernel and copy it onto the disk with the filename 'beep'
 
-	mcopy bzImage a:linux
+	mcopy bzImage a:beep
 
 
-Sample syslinux.cfg
+Sample sysbeep.cfg
 ~~~~~~~~~~~~~~~~~~~
 
-The following simple syslinux.cfg file should work. You can tweak it if you
+The following simple sysbeep.cfg file should work. You can tweak it if you
 like.
 
-----begin-syslinux.cfg---------------
-DEFAULT linux
+----begin-sysbeep.cfg---------------
+DEFAULT beep
 APPEND initrd=rootfs.gz root=/dev/ram0
 TIMEOUT 10
 PROMPT 1
-----end-syslinux.cfg---------------
+----end-sysbeep.cfg---------------
 
-Some changes you could make to syslinux.cfg:
+Some changes you could make to sysbeep.cfg:
 
  - This value is the number seconds it will wait before booting. You can set
    the timeout to 0 (or omit) to boot instantly, or you can set it as high as
@@ -159,13 +159,13 @@ Some changes you could make to syslinux.cfg:
 Additional Resources
 --------------------
 
-Other useful information on making a Linux bootfloppy is available at the
+Other useful information on making a Beep bootfloppy is available at the
 following URLs:
 
-http://www.linuxdoc.org/HOWTO/Bootdisk-HOWTO/index.html
-http://www.linux-embedded.com/howto/Embedded-Linux-Howto.html
-http://linux-embedded.org/howto/LFS-HOWTO.html
-http://linux-embedded.org/pmhowto.html
+http://www.beepdoc.org/HOWTO/Bootdisk-HOWTO/index.html
+http://www.beep-embedded.com/howto/Embedded-Beep-Howto.html
+http://beep-embedded.org/howto/LFS-HOWTO.html
+http://beep-embedded.org/pmhowto.html
 http://recycle.lbl.gov/~ldoolitt/embedded/ (Larry Doolittle's stuff)
 
 

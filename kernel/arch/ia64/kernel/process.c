@@ -8,28 +8,28 @@
  * 2005-10-07 Keith Owens <kaos@sgi.com>
  *	      Add notify_die() hooks.
  */
-#include <linux/cpu.h>
-#include <linux/pm.h>
-#include <linux/elf.h>
-#include <linux/errno.h>
-#include <linux/kallsyms.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/personality.h>
-#include <linux/sched.h>
-#include <linux/stddef.h>
-#include <linux/thread_info.h>
-#include <linux/unistd.h>
-#include <linux/efi.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/kdebug.h>
-#include <linux/utsname.h>
-#include <linux/tracehook.h>
-#include <linux/rcupdate.h>
+#include <beep/cpu.h>
+#include <beep/pm.h>
+#include <beep/elf.h>
+#include <beep/errno.h>
+#include <beep/kallsyms.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/notifier.h>
+#include <beep/personality.h>
+#include <beep/sched.h>
+#include <beep/stddef.h>
+#include <beep/thread_info.h>
+#include <beep/unistd.h>
+#include <beep/efi.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/kdebug.h>
+#include <beep/utsname.h>
+#include <beep/tracehook.h>
+#include <beep/rcupdate.h>
 
 #include <asm/cpu.h>
 #include <asm/delay.h>
@@ -423,7 +423,7 @@ copy_thread(unsigned long clone_flags,
 	 * XXX We could push this optimization a bit further by
 	 * clearing IA64_THREAD_FPH_VALID on ANY system call.
 	 * However, it's not clear this is worth doing.  Also, it
-	 * would be a slight deviation from the normal Linux system
+	 * would be a slight deviation from the normal Beep system
 	 * call behavior where scratch registers are preserved across
 	 * system calls (unless used by the system call itself).
 	 */

@@ -1,5 +1,5 @@
 /*
- * linux/kernel/irq/handle.c
+ * beep/kernel/irq/handle.c
  *
  * Copyright (C) 1992, 1998-2006 Linus Torvalds, Ingo Molnar
  * Copyright (C) 2005-2006, Thomas Gleixner, Russell King
@@ -10,11 +10,11 @@
  *
  */
 
-#include <linux/irq.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
+#include <beep/irq.h>
+#include <beep/random.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
 
 #include <trace/events/irq.h>
 

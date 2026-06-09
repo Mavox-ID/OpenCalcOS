@@ -12,7 +12,7 @@
 #ifndef AFS_H
 #define AFS_H
 
-#include <linux/in.h>
+#include <beep/in.h>
 
 #define AFS_MAXCELLNAME	64		/* maximum length of a cell name */
 #define AFS_MAXVOLNAME	64		/* maximum length of a volume name */

@@ -1,6 +1,6 @@
 /* $Id: hysdn_net.c,v 1.8.6.4 2001/09/23 22:24:54 kai Exp $
  *
- * Linux driver for HYSDN cards, net (ethernet type) handling routines.
+ * Beep driver for HYSDN cards, net (ethernet type) handling routines.
  *
  * Author    Werner Cornelius (werner@titro.de) for Hypercope GmbH
  * Copyright 1999 by Werner Cornelius (werner@titro.de)
@@ -13,13 +13,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/inetdevice.h>
+#include <beep/module.h>
+#include <beep/signal.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/inetdevice.h>
 
 #include "hysdn_defs.h"
 

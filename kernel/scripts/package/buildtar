@@ -16,7 +16,7 @@ set -e
 # Some variables and settings used throughout the script
 #
 tmpdir="${objtree}/tar-install"
-tarball="${objtree}/linux-${KERNELRELEASE}.tar"
+tarball="${objtree}/beep-${KERNELRELEASE}.tar"
 
 
 #
@@ -66,7 +66,7 @@ fi
 #
 cp -v -- "${objtree}/System.map" "${tmpdir}/boot/System.map-${KERNELRELEASE}"
 cp -v -- "${objtree}/.config" "${tmpdir}/boot/config-${KERNELRELEASE}"
-cp -v -- "${objtree}/vmlinux" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
+cp -v -- "${objtree}/vmbeep" "${tmpdir}/boot/vmbeep-${KERNELRELEASE}"
 
 
 #
@@ -77,18 +77,18 @@ case "${ARCH}" in
 		[ -f "${objtree}/arch/x86/boot/bzImage" ] && cp -v -- "${objtree}/arch/x86/boot/bzImage" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
 		;;
 	alpha)
-		[ -f "${objtree}/arch/alpha/boot/vmlinux.gz" ] && cp -v -- "${objtree}/arch/alpha/boot/vmlinux.gz" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
+		[ -f "${objtree}/arch/alpha/boot/vmbeep.gz" ] && cp -v -- "${objtree}/arch/alpha/boot/vmbeep.gz" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
 		;;
 	parisc*)
-		[ -f "${KBUILD_IMAGE}" ] && cp -v -- "${KBUILD_IMAGE}" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
+		[ -f "${KBUILD_IMAGE}" ] && cp -v -- "${KBUILD_IMAGE}" "${tmpdir}/boot/vmbeep-${KERNELRELEASE}"
 		[ -f "${objtree}/lifimage" ] && cp -v -- "${objtree}/lifimage" "${tmpdir}/boot/lifimage-${KERNELRELEASE}"
 		;;
 	vax)
-		[ -f "${objtree}/vmlinux.SYS" ] && cp -v -- "${objtree}/vmlinux.SYS" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}.SYS"
-		[ -f "${objtree}/vmlinux.dsk" ] && cp -v -- "${objtree}/vmlinux.dsk" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}.dsk"
+		[ -f "${objtree}/vmbeep.SYS" ] && cp -v -- "${objtree}/vmbeep.SYS" "${tmpdir}/boot/vmbeep-${KERNELRELEASE}.SYS"
+		[ -f "${objtree}/vmbeep.dsk" ] && cp -v -- "${objtree}/vmbeep.dsk" "${tmpdir}/boot/vmbeep-${KERNELRELEASE}.dsk"
 		;;
 	*)
-		[ -f "${KBUILD_IMAGE}" ] && cp -v -- "${KBUILD_IMAGE}" "${tmpdir}/boot/vmlinux-kbuild-${KERNELRELEASE}"
+		[ -f "${KBUILD_IMAGE}" ] && cp -v -- "${KBUILD_IMAGE}" "${tmpdir}/boot/vmbeep-kbuild-${KERNELRELEASE}"
 		echo "" >&2
 		echo '** ** **  WARNING  ** ** **' >&2
 		echo "" >&2

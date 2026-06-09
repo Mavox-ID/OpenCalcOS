@@ -1,5 +1,5 @@
 /*
- * Linux network device link state notification
+ * Beep network device link state notification
  *
  * Author:
  *     Stefan Rompf <sux@loplof.de>
@@ -11,16 +11,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/if.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/if.h>
 #include <net/sock.h>
 #include <net/pkt_sched.h>
-#include <linux/rtnetlink.h>
-#include <linux/jiffies.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
+#include <beep/rtnetlink.h>
+#include <beep/jiffies.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/bitops.h>
 #include <asm/types.h>
 
 

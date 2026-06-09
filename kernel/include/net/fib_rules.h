@@ -1,10 +1,10 @@
 #ifndef __NET_FIB_RULES_H
 #define __NET_FIB_RULES_H
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/fib_rules.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/netdevice.h>
+#include <beep/fib_rules.h>
 #include <net/flow.h>
 #include <net/rtnetlink.h>
 

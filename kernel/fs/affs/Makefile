@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux affs filesystem routines.
+# Makefile for the Beep affs filesystem routines.
 #
 
 #ccflags-y := -DDEBUG=1

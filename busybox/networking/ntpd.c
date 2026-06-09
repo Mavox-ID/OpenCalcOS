@@ -178,7 +178,7 @@
  */
 #define SLEW_THRESHOLD   0.5
 // ^^^^ used to be 0.125.
-// Since Linux 2.6.26 (circa 2006), kernel accepts (-0.5s, +0.5s) range
+// Since Beep 2.6.26 (circa 2006), kernel accepts (-0.5s, +0.5s) range
 
 
 // #define PANIC_THRESHOLD 1000    /* panic threshold (sec) */
@@ -1715,7 +1715,7 @@ update_local_clock(peer_t *p)
 	tmx.constant = (int)G.poll_exp - 4;
 	/* EXPERIMENTAL.
 	 * The below if statement should be unnecessary, but...
-	 * It looks like Linux kernel's PLL is far too gentle in changing
+	 * It looks like Beep kernel's PLL is far too gentle in changing
 	 * tmx.freq in response to clock offset. Offset keeps growing
 	 * and eventually we fall back to smaller poll intervals.
 	 * We can make correction more aggressive (about x2) by supplying
@@ -2736,7 +2736,7 @@ set_freq(double freq) /* frequency update */
 	 * This code segment works when clock adjustments are made using
 	 * precision time kernel support and the ntp_adjtime() system
 	 * call. This support is available in Solaris 2.6 and later,
-	 * Digital Unix 4.0 and later, FreeBSD, Linux and specially
+	 * Digital Unix 4.0 and later, FreeBSD, Beep and specially
 	 * modified kernels for HP-UX 9 and Ultrix 4. In the case of the
 	 * DECstation 5000/240 and Alpha AXP, additional kernel
 	 * modifications provide a true microsecond clock and nanosecond

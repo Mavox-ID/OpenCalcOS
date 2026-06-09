@@ -14,14 +14,14 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/sched.h>
-#include <linux/etherdevice.h>
-#include <linux/wireless.h>
-#include <linux/ieee80211.h>
-#include <linux/slab.h>
-#include <linux/version.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/sched.h>
+#include <beep/etherdevice.h>
+#include <beep/wireless.h>
+#include <beep/ieee80211.h>
+#include <beep/slab.h>
+#include <beep/version.h>
 #include <net/cfg80211.h>
 
 #include "wil6210.h"

@@ -9,9 +9,9 @@
  *  published by the Free Software Foundation.
  *
  */
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/checksum.h>
-#include <linux/io.h>
+#include <beep/io.h>
 
 /*
  * libgcc functions - used internally by the compiler...

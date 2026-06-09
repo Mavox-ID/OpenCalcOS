@@ -14,13 +14,13 @@
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#include <linux/string.h>
+#include <beep/string.h>
 #define DL_STRCMP  strcmp
 
 /* maximum parenthesis nesting in relocation stack expressions */
 #define STATIC_EXPR_STK_SIZE 10
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #include "doff.h"
 #include <dspbridge/dynamic_loader.h>

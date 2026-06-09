@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mtd/onenand/onenand_sim.c
+ *  beep/drivers/mtd/onenand/onenand_sim.c
  *
  *  The OneNAND simulator
  *
@@ -15,16 +15,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/onenand.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/vmalloc.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/onenand.h>
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 #ifndef CONFIG_ONENAND_SIM_MANUFACTURER
 #define CONFIG_ONENAND_SIM_MANUFACTURER         0xec

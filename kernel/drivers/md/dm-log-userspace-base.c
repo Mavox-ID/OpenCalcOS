@@ -4,12 +4,12 @@
  * This file is released under the LGPL.
  */
 
-#include <linux/bio.h>
-#include <linux/slab.h>
-#include <linux/dm-dirty-log.h>
-#include <linux/device-mapper.h>
-#include <linux/dm-log-userspace.h>
-#include <linux/module.h>
+#include <beep/bio.h>
+#include <beep/slab.h>
+#include <beep/dm-dirty-log.h>
+#include <beep/device-mapper.h>
+#include <beep/dm-log-userspace.h>
+#include <beep/module.h>
 
 #include "dm-log-userspace-transfer.h"
 

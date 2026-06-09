@@ -3,7 +3,7 @@
  *
  *  Copyright (C) 2009 Conexant Systems Inc.
  *  Authors  <shu.lin@conexant.com>, <hiep.huynh@conexant.com>
- *	Based on Steven Toth <stoth@linuxtv.org> cx23885 driver
+ *	Based on Steven Toth <stoth@beeptv.org> cx23885 driver
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -24,7 +24,7 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include "cx25821.h"
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 
 static unsigned int i2c_debug;
 module_param(i2c_debug, int, 0644);

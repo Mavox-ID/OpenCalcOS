@@ -9,19 +9,19 @@
  *  2 of the License, or (at your option) any later version.
  *
  */
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/console.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/serial_core.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/irqreturn.h>
-#include <linux/mutex.h>
-#include <linux/of_platform.h>
-#include <linux/of_device.h>
-#include <linux/nwpserial.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/console.h>
+#include <beep/serial.h>
+#include <beep/serial_reg.h>
+#include <beep/serial_core.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/irqreturn.h>
+#include <beep/mutex.h>
+#include <beep/of_platform.h>
+#include <beep/of_device.h>
+#include <beep/nwpserial.h>
 #include <asm/prom.h>
 #include <asm/dcr.h>
 
@@ -450,7 +450,7 @@ static int __init nwpserial_console_init(void)
 	if (up == NULL)
 		return -1;
 
-	name = of_get_property(of_chosen, "linux,stdout-path", NULL);
+	name = of_get_property(of_chosen, "beep,stdout-path", NULL);
 	if (name == NULL)
 		return -1;
 

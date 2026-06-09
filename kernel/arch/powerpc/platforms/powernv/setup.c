@@ -11,20 +11,20 @@
 
 #undef DEBUG
 
-#include <linux/cpu.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/of.h>
-#include <linux/interrupt.h>
-#include <linux/bug.h>
+#include <beep/cpu.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/tty.h>
+#include <beep/reboot.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/seq_file.h>
+#include <beep/of.h>
+#include <beep/interrupt.h>
+#include <beep/bug.h>
 
 #include <asm/machdep.h>
 #include <asm/firmware.h>

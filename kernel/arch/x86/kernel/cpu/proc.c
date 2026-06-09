@@ -1,8 +1,8 @@
-#include <linux/smp.h>
-#include <linux/timex.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/cpufreq.h>
+#include <beep/smp.h>
+#include <beep/timex.h>
+#include <beep/string.h>
+#include <beep/seq_file.h>
+#include <beep/cpufreq.h>
 
 /*
  *	Get CPU information for use by the procfs.

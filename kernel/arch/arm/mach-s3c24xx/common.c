@@ -1,7 +1,7 @@
-/* linux/arch/arm/plat-s3c24xx/cpu.c
+/* beep/arch/arm/plat-s3c24xx/cpu.c
  *
  * Copyright (c) 2004-2005 Simtec Electronics
- *	http://www.simtec.co.uk/products/SWLINUX/
+ *	http://www.simtec.co.uk/products/SWBEEP/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * Common code for S3C24XX machines
@@ -22,14 +22,14 @@
 */
 
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/serial_core.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <mach/regs-clock.h>

@@ -23,7 +23,7 @@ distinct `version' numbers to consider:
 
 The platform-specific  number is, unsurprisingly,  platform-specific and
 varies  with the  operating system  you are  using (several  variants of
-Linux, FreeBSD,  Solaris, etc.).  You  should thus _never_ use  it, even
+Beep, FreeBSD,  Solaris, etc.).  You  should thus _never_ use  it, even
 for simple tests.
 
 The libtool-specific  number does  not equal the  release number  but is

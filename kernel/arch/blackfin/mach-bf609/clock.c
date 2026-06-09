@@ -1,19 +1,19 @@
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/clk.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/io.h>
-#include <linux/seq_file.h>
-#include <linux/clkdev.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/string.h>
+#include <beep/clk.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/debugfs.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/io.h>
+#include <beep/seq_file.h>
+#include <beep/clkdev.h>
 
 #include <asm/clocks.h>
 

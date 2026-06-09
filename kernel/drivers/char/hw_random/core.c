@@ -31,15 +31,15 @@
  */
 
 
-#include <linux/device.h>
-#include <linux/hw_random.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/miscdevice.h>
-#include <linux/delay.h>
+#include <beep/device.h>
+#include <beep/hw_random.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/miscdevice.h>
+#include <beep/delay.h>
 #include <asm/uaccess.h>
 
 

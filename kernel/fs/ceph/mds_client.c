@@ -1,21 +1,21 @@
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
-#include <linux/fs.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/fs.h>
+#include <beep/wait.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 #include "super.h"
 #include "mds_client.h"
 
-#include <linux/ceph/ceph_features.h>
-#include <linux/ceph/messenger.h>
-#include <linux/ceph/decode.h>
-#include <linux/ceph/pagelist.h>
-#include <linux/ceph/auth.h>
-#include <linux/ceph/debugfs.h>
+#include <beep/ceph/ceph_features.h>
+#include <beep/ceph/messenger.h>
+#include <beep/ceph/decode.h>
+#include <beep/ceph/pagelist.h>
+#include <beep/ceph/auth.h>
+#include <beep/ceph/debugfs.h>
 
 /*
  * A cluster of MDS (metadata server) daemons is responsible for

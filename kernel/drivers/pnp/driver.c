@@ -4,12 +4,12 @@
  * Copyright 2002 Adam Belay <ambx1@neo.rr.com>
  */
 
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/pnp.h>
+#include <beep/string.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/ctype.h>
+#include <beep/slab.h>
+#include <beep/pnp.h>
 #include "base.h"
 
 static int compare_func(const char *ida, const char *idb)

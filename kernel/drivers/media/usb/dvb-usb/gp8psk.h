@@ -1,4 +1,4 @@
-/* DVB USB compliant Linux driver for the
+/* DVB USB compliant Beep driver for the
  *  - GENPIX 8pks/qpsk/DCII USB2.0 DVB-S module
  *
  * Copyright (C) 2006 Alan Nisota (alannisota@gmail.com)

@@ -3,7 +3,7 @@
  * Copyright (C) 1999, 2000, 2004 David S. Miller (davem@redhat.com)
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/asi.h>
 
 #define XCC xcc

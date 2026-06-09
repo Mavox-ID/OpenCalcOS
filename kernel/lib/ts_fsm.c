@@ -26,12 +26,12 @@
  *   however while in strict mode the average runtime can be better.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/textsearch.h>
-#include <linux/textsearch_fsm.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/textsearch.h>
+#include <beep/textsearch_fsm.h>
 
 struct ts_fsm
 {

@@ -11,10 +11,10 @@
  * more details.
  */
 
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
 
 /* interface and function clocks */
 static struct clk *iclk, *fclk;

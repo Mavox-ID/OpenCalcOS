@@ -13,20 +13,20 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/kobject.h>
-#include <linux/namei.h>
-#include <linux/debugfs.h>
-#include <linux/fsnotify.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/parser.h>
-#include <linux/magic.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/pagemap.h>
+#include <beep/init.h>
+#include <beep/kobject.h>
+#include <beep/namei.h>
+#include <beep/debugfs.h>
+#include <beep/fsnotify.h>
+#include <beep/string.h>
+#include <beep/seq_file.h>
+#include <beep/parser.h>
+#include <beep/magic.h>
+#include <beep/slab.h>
 
 #define DEBUGFS_DEFAULT_MODE	0700
 

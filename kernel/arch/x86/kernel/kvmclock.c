@@ -16,14 +16,14 @@
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#include <linux/clocksource.h>
-#include <linux/kvm_para.h>
+#include <beep/clocksource.h>
+#include <beep/kvm_para.h>
 #include <asm/pvclock.h>
 #include <asm/msr.h>
 #include <asm/apic.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
-#include <linux/memblock.h>
+#include <beep/percpu.h>
+#include <beep/hardirq.h>
+#include <beep/memblock.h>
 
 #include <asm/x86_init.h>
 #include <asm/reboot.h>

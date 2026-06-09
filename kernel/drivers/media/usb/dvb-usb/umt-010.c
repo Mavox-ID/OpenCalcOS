@@ -1,4 +1,4 @@
-/* DVB USB framework compliant Linux driver for the HanfTek UMT-010 USB2.0
+/* DVB USB framework compliant Beep driver for the HanfTek UMT-010 USB2.0
  * DVB-T receiver.
  *
  * Copyright (C) 2004-5 Patrick Boettcher (patrick.boettcher@desy.de)

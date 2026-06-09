@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-at91/board-eb9200.c
+ * beep/arch/arm/mach-at91/board-eb9200.c
  *
  *  Copyright (C) 2005 SAN People, adapted for ATEB9200 from Embest
  *  by Andrew Patrikalakis
@@ -19,12 +19,12 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/types.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/device.h>
+#include <beep/types.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/device.h>
 
 #include <mach/hardware.h>
 #include <asm/setup.h>

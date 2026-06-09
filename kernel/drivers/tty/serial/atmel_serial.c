@@ -22,25 +22,25 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  */
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/tty_flip.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/atmel_pdc.h>
-#include <linux/atmel_serial.h>
-#include <linux/uaccess.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_data/atmel.h>
+#include <beep/module.h>
+#include <beep/tty.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/serial.h>
+#include <beep/clk.h>
+#include <beep/console.h>
+#include <beep/sysrq.h>
+#include <beep/tty_flip.h>
+#include <beep/platform_device.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/atmel_pdc.h>
+#include <beep/atmel_serial.h>
+#include <beep/uaccess.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/platform_data/atmel.h>
 
 #include <asm/io.h>
 #include <asm/ioctls.h>
@@ -58,7 +58,7 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/serial_core.h>
+#include <beep/serial_core.h>
 
 static void atmel_start_rx(struct uart_port *port);
 static void atmel_stop_rx(struct uart_port *port);
@@ -1449,7 +1449,7 @@ static void atmel_of_init_port(struct atmel_uart_port *atmel_port,
 		if (of_get_property(np, "rs485-rx-during-tx", NULL))
 			rs485conf->flags |= SER_RS485_RX_DURING_TX;
 
-		if (of_get_property(np, "linux,rs485-enabled-at-boot-time", NULL))
+		if (of_get_property(np, "beep,rs485-enabled-at-boot-time", NULL))
 			rs485conf->flags |= SER_RS485_ENABLED;
 	}
 }

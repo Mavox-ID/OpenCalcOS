@@ -6,12 +6,12 @@
  * Licensed under the GPL-2.
  */
 
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/types.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/spi/spi.h>
+#include <beep/types.h>
+#include <beep/err.h>
 
-#include <linux/iio/iio.h>
+#include <beep/iio/iio.h>
 #include "ad7606.h"
 
 #define MAX_SPI_FREQ_HZ		23500000	/* VDRIVE above 4.75 V */
@@ -111,6 +111,6 @@ static struct spi_driver ad7606_driver = {
 };
 module_spi_driver(ad7606_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("Analog Devices AD7606 ADC");
 MODULE_LICENSE("GPL v2");

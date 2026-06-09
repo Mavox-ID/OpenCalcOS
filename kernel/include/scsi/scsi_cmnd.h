@@ -1,12 +1,12 @@
 #ifndef _SCSI_SCSI_CMND_H
 #define _SCSI_SCSI_CMND_H
 
-#include <linux/dma-mapping.h>
-#include <linux/blkdev.h>
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/scatterlist.h>
+#include <beep/dma-mapping.h>
+#include <beep/blkdev.h>
+#include <beep/list.h>
+#include <beep/types.h>
+#include <beep/timer.h>
+#include <beep/scatterlist.h>
 
 struct Scsi_Host;
 struct scsi_device;

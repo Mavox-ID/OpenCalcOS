@@ -5,15 +5,15 @@
  *
  * Copyright (C) 2005-2007 Cavium Networks
  */
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/bitops.h>
-#include <linux/cpu.h>
-#include <linux/io.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/mm.h>
+#include <beep/bitops.h>
+#include <beep/cpu.h>
+#include <beep/io.h>
 
 #include <asm/bcache.h>
 #include <asm/bootinfo.h>
@@ -33,7 +33,7 @@ EXPORT_SYMBOL_GPL(cache_err_dcache);
 
 /**
  * Octeon automatically flushes the dcache on tlb changes, so
- * from Linux's viewpoint it acts much like a physically
+ * from Beep's viewpoint it acts much like a physically
  * tagged cache. No flushing is needed
  *
  */

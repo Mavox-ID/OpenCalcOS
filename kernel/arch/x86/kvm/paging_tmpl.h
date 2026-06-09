@@ -1,5 +1,5 @@
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for Beep
  *
  * This module enables machines with Intel VT-x extensions to run virtual
  * machines without emulation or binary translation.

@@ -7,17 +7,17 @@
  * Ralf Baechle or David S. Miller (sorry guys, i'm really not sure)
  *
  * Copyright (C) 2001 by Ladislav Michl
- * Copyright (C) 2003, 06 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2003, 06 Ralf Baechle (ralf@beep-mips.org)
  */
-#include <linux/bcd.h>
-#include <linux/i8253.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/time.h>
-#include <linux/ftrace.h>
+#include <beep/bcd.h>
+#include <beep/i8253.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/time.h>
+#include <beep/ftrace.h>
 
 #include <asm/cpu.h>
 #include <asm/mipsregs.h>

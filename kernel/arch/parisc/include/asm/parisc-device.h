@@ -1,7 +1,7 @@
 #ifndef _ASM_PARISC_PARISC_DEVICE_H_
 #define _ASM_PARISC_PARISC_DEVICE_H_
 
-#include <linux/device.h>
+#include <beep/device.h>
 
 struct parisc_device {
 	struct resource hpa;		/* Hard Physical Address */

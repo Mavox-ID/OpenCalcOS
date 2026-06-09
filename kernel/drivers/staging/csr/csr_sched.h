@@ -9,7 +9,7 @@
             on the license terms.
 
 *****************************************************************************/
-#include <linux/types.h>
+#include <beep/types.h>
 #include "csr_time.h"
 
 /* An identifier issued by the scheduler. */

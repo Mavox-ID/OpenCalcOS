@@ -2,19 +2,19 @@
  * message.c - synchronous message handling
  */
 
-#include <linux/pci.h>	/* for scatterlist macros */
-#include <linux/usb.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/timer.h>
-#include <linux/ctype.h>
-#include <linux/nls.h>
-#include <linux/device.h>
-#include <linux/scatterlist.h>
-#include <linux/usb/quirks.h>
-#include <linux/usb/hcd.h>	/* for usbcore internals */
+#include <beep/pci.h>	/* for scatterlist macros */
+#include <beep/usb.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/timer.h>
+#include <beep/ctype.h>
+#include <beep/nls.h>
+#include <beep/device.h>
+#include <beep/scatterlist.h>
+#include <beep/usb/quirks.h>
+#include <beep/usb/hcd.h>	/* for usbcore internals */
 #include <asm/byteorder.h>
 
 #include "usb.h"
@@ -1262,7 +1262,7 @@ void usb_enable_interface(struct usb_device *dev,
  * interface's default setting.  To access such bandwidth, alternate
  * interface settings must be made current.
  *
- * Note that in the Linux USB subsystem, bandwidth associated with
+ * Note that in the Beep USB subsystem, bandwidth associated with
  * an endpoint in a given alternate setting is not reserved until an URB
  * is submitted that needs that bandwidth.  Some other operating systems
  * allocate bandwidth early, when a configuration is chosen.
@@ -1667,7 +1667,7 @@ static void __usb_queue_reset_device(struct work_struct *ws)
  * accept @configuration = -1 as indicating the device should be put in
  * an unconfigured state.
  *
- * USB device configurations may affect Linux interoperability,
+ * USB device configurations may affect Beep interoperability,
  * power consumption and the functionality available.  For example,
  * the default configuration is limited to using 100mA of bus power,
  * so that when certain device functionality requires more power,

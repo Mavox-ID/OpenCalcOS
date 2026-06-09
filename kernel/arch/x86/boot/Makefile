@@ -16,7 +16,7 @@
 
 SVGA_MODE	:= -DSVGA_MODE=NORMAL_VGA
 
-targets		:= vmlinux.bin setup.bin setup.elf bzImage
+targets		:= vmbeep.bin setup.bin setup.elf bzImage
 targets		+= fdimage fdimage144 fdimage288 image.iso mtools.conf
 subdir-		:= compressed
 
@@ -71,14 +71,14 @@ GCOV_PROFILE := n
 $(obj)/bzImage: asflags-y  := $(SVGA_MODE)
 
 quiet_cmd_image = BUILD   $@
-cmd_image = $(obj)/tools/build $(obj)/setup.bin $(obj)/vmlinux.bin > $@
+cmd_image = $(obj)/tools/build $(obj)/setup.bin $(obj)/vmbeep.bin > $@
 
-$(obj)/bzImage: $(obj)/setup.bin $(obj)/vmlinux.bin $(obj)/tools/build FORCE
+$(obj)/bzImage: $(obj)/setup.bin $(obj)/vmbeep.bin $(obj)/tools/build FORCE
 	$(call if_changed,image)
 	@echo 'Kernel: $@ is ready' ' (#'`cat .version`')'
 
-OBJCOPYFLAGS_vmlinux.bin := -O binary -R .note -R .comment -S
-$(obj)/vmlinux.bin: $(obj)/compressed/vmlinux FORCE
+OBJCOPYFLAGS_vmbeep.bin := -O binary -R .note -R .comment -S
+$(obj)/vmbeep.bin: $(obj)/compressed/vmbeep FORCE
 	$(call if_changed,objcopy)
 
 SETUP_OBJS = $(addprefix $(obj)/,$(setup-y))
@@ -89,7 +89,7 @@ quiet_cmd_voffset = VOFFSET $@
       cmd_voffset = $(NM) $< | sed -n $(sed-voffset) > $@
 
 targets += voffset.h
-$(obj)/voffset.h: vmlinux FORCE
+$(obj)/voffset.h: vmbeep FORCE
 	$(call if_changed,voffset)
 
 sed-zoffset := -e 's/^\([0-9a-fA-F]*\) . \(startup_32\|input_data\|_end\|z_.*\)$$/\#define ZO_\2 0x\1/p'
@@ -98,7 +98,7 @@ quiet_cmd_zoffset = ZOFFSET $@
       cmd_zoffset = $(NM) $< | sed -n $(sed-zoffset) > $@
 
 targets += zoffset.h
-$(obj)/zoffset.h: $(obj)/compressed/vmlinux FORCE
+$(obj)/zoffset.h: $(obj)/compressed/vmbeep FORCE
 	$(call if_changed,zoffset)
 
 
@@ -113,7 +113,7 @@ OBJCOPYFLAGS_setup.bin	:= -O binary
 $(obj)/setup.bin: $(obj)/setup.elf FORCE
 	$(call if_changed,objcopy)
 
-$(obj)/compressed/vmlinux: FORCE
+$(obj)/compressed/vmbeep: FORCE
 	$(Q)$(MAKE) $(build)=$(obj)/compressed $@
 
 # Set this if you want to pass append arguments to the
@@ -123,7 +123,7 @@ FDARGS =
 # bzdisk/fdimage/isoimage kernel
 FDINITRD =
 
-image_cmdline = default linux $(FDARGS) $(if $(FDINITRD),initrd=initrd.img,)
+image_cmdline = default beep $(FDARGS) $(if $(FDINITRD),initrd=initrd.img,)
 
 $(obj)/mtools.conf: $(src)/mtools.conf.in
 	sed -e 's|@OBJ@|$(obj)|g' < $< > $@
@@ -131,53 +131,53 @@ $(obj)/mtools.conf: $(src)/mtools.conf.in
 # This requires write access to /dev/fd0
 bzdisk: $(obj)/bzImage $(obj)/mtools.conf
 	MTOOLSRC=$(obj)/mtools.conf mformat a:			; sync
-	syslinux /dev/fd0					; sync
+	sysbeep /dev/fd0					; sync
 	echo '$(image_cmdline)' | \
-		MTOOLSRC=$(src)/mtools.conf mcopy - a:syslinux.cfg
+		MTOOLSRC=$(src)/mtools.conf mcopy - a:sysbeep.cfg
 	if [ -f '$(FDINITRD)' ] ; then \
 		MTOOLSRC=$(obj)/mtools.conf mcopy '$(FDINITRD)' a:initrd.img ; \
 	fi
-	MTOOLSRC=$(obj)/mtools.conf mcopy $(obj)/bzImage a:linux	; sync
+	MTOOLSRC=$(obj)/mtools.conf mcopy $(obj)/bzImage a:beep	; sync
 
-# These require being root or having syslinux 2.02 or higher installed
+# These require being root or having sysbeep 2.02 or higher installed
 fdimage fdimage144: $(obj)/bzImage $(obj)/mtools.conf
 	dd if=/dev/zero of=$(obj)/fdimage bs=1024 count=1440
 	MTOOLSRC=$(obj)/mtools.conf mformat v:			; sync
-	syslinux $(obj)/fdimage					; sync
+	sysbeep $(obj)/fdimage					; sync
 	echo '$(image_cmdline)' | \
-		MTOOLSRC=$(obj)/mtools.conf mcopy - v:syslinux.cfg
+		MTOOLSRC=$(obj)/mtools.conf mcopy - v:sysbeep.cfg
 	if [ -f '$(FDINITRD)' ] ; then \
 		MTOOLSRC=$(obj)/mtools.conf mcopy '$(FDINITRD)' v:initrd.img ; \
 	fi
-	MTOOLSRC=$(obj)/mtools.conf mcopy $(obj)/bzImage v:linux	; sync
+	MTOOLSRC=$(obj)/mtools.conf mcopy $(obj)/bzImage v:beep	; sync
 
 fdimage288: $(obj)/bzImage $(obj)/mtools.conf
 	dd if=/dev/zero of=$(obj)/fdimage bs=1024 count=2880
 	MTOOLSRC=$(obj)/mtools.conf mformat w:			; sync
-	syslinux $(obj)/fdimage					; sync
+	sysbeep $(obj)/fdimage					; sync
 	echo '$(image_cmdline)' | \
-		MTOOLSRC=$(obj)/mtools.conf mcopy - w:syslinux.cfg
+		MTOOLSRC=$(obj)/mtools.conf mcopy - w:sysbeep.cfg
 	if [ -f '$(FDINITRD)' ] ; then \
 		MTOOLSRC=$(obj)/mtools.conf mcopy '$(FDINITRD)' w:initrd.img ; \
 	fi
-	MTOOLSRC=$(obj)/mtools.conf mcopy $(obj)/bzImage w:linux	; sync
+	MTOOLSRC=$(obj)/mtools.conf mcopy $(obj)/bzImage w:beep	; sync
 
 isoimage: $(obj)/bzImage
 	-rm -rf $(obj)/isoimage
 	mkdir $(obj)/isoimage
 	for i in lib lib64 share end ; do \
-		if [ -f /usr/$$i/syslinux/isolinux.bin ] ; then \
-			cp /usr/$$i/syslinux/isolinux.bin $(obj)/isoimage ; \
+		if [ -f /usr/$$i/sysbeep/isobeep.bin ] ; then \
+			cp /usr/$$i/sysbeep/isobeep.bin $(obj)/isoimage ; \
 			break ; \
 		fi ; \
 		if [ $$i = end ] ; then exit 1 ; fi ; \
 	done
-	cp $(obj)/bzImage $(obj)/isoimage/linux
-	echo '$(image_cmdline)' > $(obj)/isoimage/isolinux.cfg
+	cp $(obj)/bzImage $(obj)/isoimage/beep
+	echo '$(image_cmdline)' > $(obj)/isoimage/isobeep.cfg
 	if [ -f '$(FDINITRD)' ] ; then \
 		cp '$(FDINITRD)' $(obj)/isoimage/initrd.img ; \
 	fi
-	mkisofs -J -r -o $(obj)/image.iso -b isolinux.bin -c boot.cat \
+	mkisofs -J -r -o $(obj)/image.iso -b isobeep.bin -c boot.cat \
 		-no-emul-boot -boot-load-size 4 -boot-info-table \
 		$(obj)/isoimage
 	isohybrid $(obj)/image.iso 2>/dev/null || true

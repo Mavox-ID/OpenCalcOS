@@ -1,12 +1,12 @@
 /*
- * Support for n32 Linux/MIPS ELF binaries.
+ * Support for n32 Beep/MIPS ELF binaries.
  *
  * Copyright (C) 1999, 2001 Ralf Baechle
  * Copyright (C) 1999, 2001 Silicon Graphics, Inc.
  *
  * Heavily inspired by the 32-bit Sparc compat code which is
  * Copyright (C) 1995, 1996, 1997, 1998 David S. Miller (davem@redhat.com)
- * Copyright (C) 1995, 1996, 1997, 1998 Jakub Jelinek   (jj@ultra.linux.cz)
+ * Copyright (C) 1995, 1996, 1997, 1998 Jakub Jelinek   (jj@ultra.beep.cz)
  */
 
 #define ELF_ARCH		EM_MIPS
@@ -51,10 +51,10 @@ typedef elf_fpreg_t elf_fpregset_t[ELF_NFPREG];
 #define ELF_ET_DYN_BASE         (TASK32_SIZE / 3 * 2)
 
 #include <asm/processor.h>
-#include <linux/module.h>
-#include <linux/elfcore.h>
-#include <linux/compat.h>
-#include <linux/math64.h>
+#include <beep/module.h>
+#include <beep/elfcore.h>
+#include <beep/compat.h>
+#include <beep/math64.h>
 
 #define elf_prstatus elf_prstatus32
 struct elf_prstatus32
@@ -110,8 +110,8 @@ jiffies_to_compat_timeval(unsigned long jiffies, struct compat_timeval *value)
 
 #define ELF_CORE_EFLAGS EF_MIPS_ABI2
 
-MODULE_DESCRIPTION("Binary format loader for compatibility with n32 Linux/MIPS binaries");
-MODULE_AUTHOR("Ralf Baechle (ralf@linux-mips.org)");
+MODULE_DESCRIPTION("Binary format loader for compatibility with n32 Beep/MIPS binaries");
+MODULE_AUTHOR("Ralf Baechle (ralf@beep-mips.org)");
 
 #undef MODULE_DESCRIPTION
 #undef MODULE_AUTHOR

@@ -7,9 +7,9 @@
  * @author Richard Henderson <rth@twiddle.net>
  */
 
-#include <linux/oprofile.h>
-#include <linux/init.h>
-#include <linux/smp.h>
+#include <beep/oprofile.h>
+#include <beep/init.h>
+#include <beep/smp.h>
 #include <asm/ptrace.h>
 
 #include "op_impl.h"

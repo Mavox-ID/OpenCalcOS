@@ -12,7 +12,7 @@
 #ifndef __ASM_ARCH_CLOCK_H
 #define __ASM_ARCH_CLOCK_H __FILE__
 
-#include <linux/clk.h>
+#include <beep/clk.h>
 
 extern struct clksrc_clk exynos4_clk_aclk_133;
 extern struct clksrc_clk exynos4_clk_mout_mpll;

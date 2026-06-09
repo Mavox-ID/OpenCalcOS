@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5pv210/setup-ide.c
+/* beep/arch/arm/mach-s5pv210/setup-ide.c
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -10,8 +10,8 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/gpio.h>
 
 #include <plat/gpio-cfg.h>
 

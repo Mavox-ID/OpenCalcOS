@@ -15,7 +15,7 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/threads.h>
+#include <beep/threads.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 

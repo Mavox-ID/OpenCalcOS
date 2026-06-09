@@ -7,7 +7,7 @@
  * of the License.
  */
 
-#include <linux/raid/pq.h>
+#include <beep/raid/pq.h>
 #include "x86.h"
 
 static int raid6_has_ssse3(void)

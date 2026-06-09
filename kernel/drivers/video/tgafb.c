@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/tgafb.c -- DEC 21030 TGA frame buffer device
+ *  beep/drivers/video/tgafb.c -- DEC 21030 TGA frame buffer device
  *
  *	Copyright (C) 1995 Jay Estabrook
  *	Copyright (C) 1997 Geert Uytterhoeven
@@ -12,21 +12,21 @@
  *  more details.
  */
 
-#include <linux/bitrev.h>
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/selection.h>
-#include <linux/string.h>
-#include <linux/tc.h>
+#include <beep/bitrev.h>
+#include <beep/compiler.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/selection.h>
+#include <beep/string.h>
+#include <beep/tc.h>
 
 #include <asm/io.h>
 

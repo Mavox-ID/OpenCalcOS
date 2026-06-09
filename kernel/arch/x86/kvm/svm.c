@@ -1,5 +1,5 @@
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for Beep
  *
  * AMD SVM support
  *
@@ -14,7 +14,7 @@
  * the COPYING file in the top-level directory.
  *
  */
-#include <linux/kvm_host.h>
+#include <beep/kvm_host.h>
 
 #include "irq.h"
 #include "mmu.h"
@@ -22,14 +22,14 @@
 #include "x86.h"
 #include "cpuid.h"
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/sched.h>
-#include <linux/ftrace_event.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/mod_devicetable.h>
+#include <beep/kernel.h>
+#include <beep/vmalloc.h>
+#include <beep/highmem.h>
+#include <beep/sched.h>
+#include <beep/ftrace_event.h>
+#include <beep/slab.h>
 
 #include <asm/perf_event.h>
 #include <asm/tlbflush.h>

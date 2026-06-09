@@ -30,25 +30,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/notifier.h>
-#include <linux/spinlock.h>
-#include <linux/cpumask.h>
-#include <linux/threads.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/nmi.h>
-#include <linux/smp.h>
-#include <linux/io.h>
+#include <beep/notifier.h>
+#include <beep/spinlock.h>
+#include <beep/cpumask.h>
+#include <beep/threads.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/reboot.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/acpi.h>
+#include <beep/init.h>
+#include <beep/gfp.h>
+#include <beep/nmi.h>
+#include <beep/smp.h>
+#include <beep/io.h>
 
 #include <asm/apicdef.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/fixmap.h>
 #include <asm/mpspec.h>
 #include <asm/setup.h>

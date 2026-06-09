@@ -12,11 +12,11 @@
  *   more details.
  */
 
-#include <linux/console.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/irqflags.h>
+#include <beep/console.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/irqflags.h>
 #include <asm/setup.h>
 #include <hv/hypervisor.h>
 

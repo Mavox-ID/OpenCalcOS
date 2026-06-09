@@ -24,7 +24,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <drm/drmP.h>
 #include <drm/drm_crtc_helper.h>

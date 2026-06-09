@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Wrapper for User Mode Linux emulation environment
+# Wrapper for User Mode Beep emulation environment
 
 RUNFILE="$(pwd)/${1}.testroot"
 if [ -z "$RUNFILE" ] || [ ! -x "$RUNFILE" ]
@@ -11,10 +11,10 @@ fi
 
 shift
 
-if [ -z $(which linux) ]
+if [ -z $(which beep) ]
 then
-  echo "No User Mode Linux."
+  echo "No User Mode Beep."
   exit 1;
 fi
 
-linux rootfstype=hostfs rw init="$RUNFILE" TESTDIR=`pwd` PATH="$PATH" $* quiet
+beep rootfstype=hostfs rw init="$RUNFILE" TESTDIR=`pwd` PATH="$PATH" $* quiet

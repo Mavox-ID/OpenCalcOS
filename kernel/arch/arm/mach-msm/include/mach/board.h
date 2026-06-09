@@ -17,8 +17,8 @@
 #ifndef __ASM_ARCH_MSM_BOARD_H
 #define __ASM_ARCH_MSM_BOARD_H
 
-#include <linux/types.h>
-#include <linux/platform_data/mmc-msm_sdcc.h>
+#include <beep/types.h>
+#include <beep/platform_data/mmc-msm_sdcc.h>
 
 /* platform device data structures */
 

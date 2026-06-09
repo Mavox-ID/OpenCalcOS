@@ -7,17 +7,17 @@
  * Paul Mackerras, August 1996.
  * Copyright (C) 1996 Paul Mackerras.
  */
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/blkdev.h>
+#include <beep/proc_fs.h>
+#include <beep/stat.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
 #include <asm/dbdma.h>
 #include <asm/io.h>
 #include <asm/pgtable.h>

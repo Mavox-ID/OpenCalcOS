@@ -2,13 +2,13 @@
  * ATAPI support.
  */
 
-#include <linux/kernel.h>
-#include <linux/cdrom.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/ide.h>
-#include <linux/scatterlist.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/cdrom.h>
+#include <beep/delay.h>
+#include <beep/export.h>
+#include <beep/ide.h>
+#include <beep/scatterlist.h>
+#include <beep/gfp.h>
 
 #include <scsi/scsi.h>
 

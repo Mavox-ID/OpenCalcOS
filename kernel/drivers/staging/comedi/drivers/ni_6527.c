@@ -2,7 +2,7 @@
     comedi/drivers/ni_6527.c
     driver for National Instruments PCI-6527
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1999,2002,2003 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -41,7 +41,7 @@ Updated: Sat, 25 Jan 2003 13:24:40 -0800
 #define DEBUG 1
 #define DEBUG_FLAGS
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include "../comedidev.h"
 
 #include "comedi_fc.h"

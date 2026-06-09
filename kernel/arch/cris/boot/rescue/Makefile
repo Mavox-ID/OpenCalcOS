@@ -2,14 +2,14 @@
 # Makefile for rescue (bootstrap) code
 #
 
-# CC = gcc-cris -mlinux -march=v32 $(LINUXINCLUDE)
+# CC = gcc-cris -mbeep -march=v32 $(BEEPINCLUDE)
 # ccflags-$(CONFIG_ETRAX_ARCH_V32) += -I$(srctree)/include/asm/arch/mach/ \
 # 				    -I$(srctree)/include/asm/arch
 # asflags-y += -I $(srctree)/include/asm/arch/mach/ -I $(srctree)/include/asm/arch
-# LD = gcc-cris -mlinux -march=v32 -nostdlib
+# LD = gcc-cris -mbeep -march=v32 -nostdlib
 
-asflags-y += $(LINUXINCLUDE)
-ccflags-y += -O2 $(LINUXINCLUDE)
+asflags-y += $(BEEPINCLUDE)
+ccflags-y += -O2 $(BEEPINCLUDE)
 arch-$(CONFIG_ETRAX_ARCH_V10) = v10
 arch-$(CONFIG_ETRAX_ARCH_V32) = v32
 

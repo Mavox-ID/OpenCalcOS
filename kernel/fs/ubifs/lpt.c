@@ -44,9 +44,9 @@
  */
 
 #include "ubifs.h"
-#include <linux/crc16.h>
-#include <linux/math64.h>
-#include <linux/slab.h>
+#include <beep/crc16.h>
+#include <beep/math64.h>
+#include <beep/slab.h>
 
 /**
  * do_calc_lpt_geom - calculate sizes for the LPT area.

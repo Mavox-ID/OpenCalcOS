@@ -14,22 +14,22 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/crypto.h>
-#include <linux/interrupt.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/scatterlist.h>
+#include <beep/dma-mapping.h>
+#include <beep/io.h>
+#include <beep/crypto.h>
+#include <beep/interrupt.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/aes.h>
 
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 
 /* OMAP TRM gives bitfields as start:end, where start is the higher bit
    number. For example 7:0 */

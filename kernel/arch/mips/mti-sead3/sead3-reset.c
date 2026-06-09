@@ -5,8 +5,8 @@
  *
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/io.h>
-#include <linux/pm.h>
+#include <beep/io.h>
+#include <beep/pm.h>
 
 #include <asm/reboot.h>
 #include <asm/mips-boards/generic.h>

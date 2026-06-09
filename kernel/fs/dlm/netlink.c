@@ -7,9 +7,9 @@
  */
 
 #include <net/genetlink.h>
-#include <linux/dlm.h>
-#include <linux/dlm_netlink.h>
-#include <linux/gfp.h>
+#include <beep/dlm.h>
+#include <beep/dlm_netlink.h>
+#include <beep/gfp.h>
 
 #include "dlm_internal.h"
 

@@ -27,9 +27,9 @@
  * transport class is framed entirely in terms of generic devices to
  * allow it to be used by any physical HBA in the system.
  */
-#include <linux/export.h>
-#include <linux/attribute_container.h>
-#include <linux/transport_class.h>
+#include <beep/export.h>
+#include <beep/attribute_container.h>
+#include <beep/transport_class.h>
 
 /**
  * transport_class_register - register an initial transport class

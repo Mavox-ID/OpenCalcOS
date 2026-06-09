@@ -19,14 +19,14 @@
  *	    September 2004
  */
 
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/jiffies.h>
-#include <linux/workqueue.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
+#include <beep/module.h>
+#include <beep/param.h>
+#include <beep/jiffies.h>
+#include <beep/workqueue.h>
+#include <beep/pm.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/power_supply.h>
 
 #include "../w1/w1.h"
 #include "../w1/slaves/w1_ds2760.h"

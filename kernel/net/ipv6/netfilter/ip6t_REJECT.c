@@ -1,6 +1,6 @@
 /*
  * IP6 tables REJECT target module
- * Linux INET6 implementation
+ * Beep INET6 implementation
  *
  * Copyright (C)2003 USAGI/WIDE Project
  *
@@ -16,11 +16,11 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/icmpv6.h>
-#include <linux/netdevice.h>
+#include <beep/gfp.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/icmpv6.h>
+#include <beep/netdevice.h>
 #include <net/ipv6.h>
 #include <net/tcp.h>
 #include <net/icmp.h>
@@ -28,9 +28,9 @@
 #include <net/ip6_fib.h>
 #include <net/ip6_route.h>
 #include <net/flow.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/netfilter_ipv6/ip6t_REJECT.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_ipv6/ip6_tables.h>
+#include <beep/netfilter_ipv6/ip6t_REJECT.h>
 
 MODULE_AUTHOR("Yasuyuki KOZAKAI <yasuyuki.kozakai@toshiba.co.jp>");
 MODULE_DESCRIPTION("Xtables: packet \"rejection\" target for IPv6");

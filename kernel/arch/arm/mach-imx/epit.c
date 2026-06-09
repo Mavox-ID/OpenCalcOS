@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/plat-mxc/epit.c
+ *  beep/arch/arm/plat-mxc/epit.c
  *
  *  Copyright (C) 2010 Sascha Hauer <s.hauer@pengutronix.de>
  *
@@ -46,11 +46,11 @@
 
 #define EPITSR_OCIF			(1 << 0)
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/clockchips.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/clockchips.h>
+#include <beep/clk.h>
+#include <beep/err.h>
 #include <asm/mach/time.h>
 
 #include "common.h"

@@ -3,7 +3,7 @@
 
 #include <pthread.h>
 #include <stdbool.h>
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 extern pthread_mutex_t ui__lock;
 

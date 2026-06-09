@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/s3cmci.h - Samsung S3C MCI driver
+ *  beep/drivers/mmc/s3cmci.h - Samsung S3C MCI driver
  *
  *  Copyright (C) 2004-2006 Thomas Kleffel, All Rights Reserved.
  *

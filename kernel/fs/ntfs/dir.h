@@ -1,6 +1,6 @@
 /*
- * dir.h - Defines for directory handling in NTFS Linux kernel driver. Part of
- *	   the Linux-NTFS project.
+ * dir.h - Defines for directory handling in NTFS Beep kernel driver. Part of
+ *	   the Beep-NTFS project.
  *
  * Copyright (c) 2002-2004 Anton Altaparmakov
  *
@@ -15,13 +15,13 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#ifndef _LINUX_NTFS_DIR_H
-#define _LINUX_NTFS_DIR_H
+#ifndef _BEEP_NTFS_DIR_H
+#define _BEEP_NTFS_DIR_H
 
 #include "layout.h"
 #include "inode.h"
@@ -45,4 +45,4 @@ extern ntfschar I30[5];
 extern MFT_REF ntfs_lookup_inode_by_name(ntfs_inode *dir_ni,
 		const ntfschar *uname, const int uname_len, ntfs_name **res);
 
-#endif /* _LINUX_NTFS_FS_DIR_H */
+#endif /* _BEEP_NTFS_FS_DIR_H */

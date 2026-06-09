@@ -1,8 +1,8 @@
-#include <linux/pm.h>
-#include <linux/kexec.h>
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/module.h>
+#include <beep/pm.h>
+#include <beep/kexec.h>
+#include <beep/kernel.h>
+#include <beep/reboot.h>
+#include <beep/module.h>
 #ifdef CONFIG_SUPERH32
 #include <asm/watchdog.h>
 #endif

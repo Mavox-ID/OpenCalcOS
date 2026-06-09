@@ -12,10 +12,10 @@
  *
 *****************************************************************************
  */
-#ifndef __LINUX_UNIFI_WEXT_H__
-#define __LINUX_UNIFI_WEXT_H__ 1
+#ifndef __BEEP_UNIFI_WEXT_H__
+#define __BEEP_UNIFI_WEXT_H__ 1
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <net/iw_handler.h>
 #include "csr_wifi_sme_prim.h"
 
@@ -105,4 +105,4 @@ uf_iwe_stream_add_value(struct iw_request_info *info, char *stream, char *start,
 }
 
 
-#endif /* __LINUX_UNIFI_WEXT_H__ */
+#endif /* __BEEP_UNIFI_WEXT_H__ */

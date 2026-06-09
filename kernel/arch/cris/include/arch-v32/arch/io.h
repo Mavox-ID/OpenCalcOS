@@ -1,7 +1,7 @@
 #ifndef _ASM_ARCH_CRIS_IO_H
 #define _ASM_ARCH_CRIS_IO_H
 
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 #include <hwregs/reg_map.h>
 #include <hwregs/reg_rdwr.h>
 #include <hwregs/gio_defs.h>

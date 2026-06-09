@@ -21,9 +21,9 @@
 
 #include <hv/iorpc.h>
 
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/io.h>
+#include <beep/types.h>
+#include <beep/compiler.h>
+#include <beep/io.h>
 
 /* Define the standard gxio MMIO functions using kernel functions. */
 #define __gxio_mmio_read8(addr)		readb(addr)

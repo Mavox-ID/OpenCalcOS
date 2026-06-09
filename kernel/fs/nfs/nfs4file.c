@@ -1,9 +1,9 @@
 /*
- *  linux/fs/nfs/file.c
+ *  beep/fs/nfs/file.c
  *
  *  Copyright (C) 1992  Rick Sladkey
  */
-#include <linux/nfs_fs.h>
+#include <beep/nfs_fs.h>
 #include "internal.h"
 #include "fscache.h"
 #include "pnfs.h"

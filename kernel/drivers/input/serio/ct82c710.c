@@ -3,7 +3,7 @@
  */
 
 /*
- *  82C710 C&T mouse port chip driver for Linux
+ *  82C710 C&T mouse port chip driver for Beep
  */
 
 /*
@@ -26,16 +26,16 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/serio.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/serio.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 

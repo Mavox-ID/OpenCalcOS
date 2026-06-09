@@ -19,10 +19,10 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/netdevice.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/proc_fs.h>
+#include <beep/netdevice.h>
 
 
 #include "ft1000_usb.h"

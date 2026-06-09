@@ -24,11 +24,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/module.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

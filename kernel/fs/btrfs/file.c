@@ -16,20 +16,20 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/backing-dev.h>
-#include <linux/mpage.h>
-#include <linux/falloc.h>
-#include <linux/swap.h>
-#include <linux/writeback.h>
-#include <linux/statfs.h>
-#include <linux/compat.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/highmem.h>
+#include <beep/time.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/backing-dev.h>
+#include <beep/mpage.h>
+#include <beep/falloc.h>
+#include <beep/swap.h>
+#include <beep/writeback.h>
+#include <beep/statfs.h>
+#include <beep/compat.h>
+#include <beep/slab.h>
 #include "ctree.h"
 #include "disk-io.h"
 #include "transaction.h"

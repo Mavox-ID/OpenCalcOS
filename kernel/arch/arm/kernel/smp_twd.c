@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/smp_twd.c
+ *  beep/arch/arm/kernel/smp_twd.c
  *
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
@@ -8,19 +8,19 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/smp.h>
-#include <linux/jiffies.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/smp.h>
+#include <beep/jiffies.h>
+#include <beep/clockchips.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/of_irq.h>
+#include <beep/of_address.h>
 
 #include <asm/smp_twd.h>
 #include <asm/localtimer.h>
@@ -142,7 +142,7 @@ core_initcall(twd_clk_init);
 
 #elif defined (CONFIG_CPU_FREQ)
 
-#include <linux/cpufreq.h>
+#include <beep/cpufreq.h>
 
 /*
  * Updates clockevent frequency when the cpu frequency changes.

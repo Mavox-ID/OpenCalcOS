@@ -18,15 +18,15 @@
  * License.
  * 
  */
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/miscdevice.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/tpm.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/fs.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/miscdevice.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/tpm.h>
 
 enum tpm_const {
 	TPM_MINOR = 224,	/* officially assigned */

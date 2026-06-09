@@ -10,20 +10,20 @@
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/wait.h>
-#include <linux/time.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/videodev2.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/string.h>
+#include <beep/wait.h>
+#include <beep/time.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
+#include <beep/mm.h>
+#include <beep/mutex.h>
+#include <beep/videodev2.h>
+#include <beep/slab.h>
 
 #include <asm/pgtable.h>
 #include <mach/cputype.h>

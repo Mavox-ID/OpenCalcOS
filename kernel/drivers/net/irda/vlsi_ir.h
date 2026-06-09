@@ -1,7 +1,7 @@
 
 /*********************************************************************
  *
- *	vlsi_ir.h:	VLSI82C147 PCI IrDA controller driver for Linux
+ *	vlsi_ir.h:	VLSI82C147 PCI IrDA controller driver for Beep
  *
  *	Version:	0.5
  *

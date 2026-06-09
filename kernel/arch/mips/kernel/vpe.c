@@ -27,25 +27,25 @@
  * To load and run, simply cat a SP 'program file' to /dev/vpe1.
  * i.e cat spapp >/dev/vpe1.
  */
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/fs.h>
+#include <beep/init.h>
 #include <asm/uaccess.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/vmalloc.h>
-#include <linux/elf.h>
-#include <linux/seq_file.h>
-#include <linux/syscalls.h>
-#include <linux/moduleloader.h>
-#include <linux/interrupt.h>
-#include <linux/poll.h>
-#include <linux/bootmem.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/vmalloc.h>
+#include <beep/elf.h>
+#include <beep/seq_file.h>
+#include <beep/syscalls.h>
+#include <beep/moduleloader.h>
+#include <beep/interrupt.h>
+#include <beep/poll.h>
+#include <beep/bootmem.h>
 #include <asm/mipsregs.h>
 #include <asm/mipsmtregs.h>
 #include <asm/cacheflush.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/cpu.h>
 #include <asm/mips_mt.h>
 #include <asm/processor.h>
@@ -261,7 +261,7 @@ static void *alloc_progmem(unsigned long len)
 
 #ifdef CONFIG_MIPS_VPE_LOADER_TOM
 	/*
-	 * This means you must tell Linux to use less memory than you
+	 * This means you must tell Beep to use less memory than you
 	 * physically have, for example by passing a mem= boot argument.
 	 */
 	addr = pfn_to_kaddr(max_low_pfn);

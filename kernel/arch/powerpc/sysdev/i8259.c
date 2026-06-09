@@ -8,11 +8,11 @@
  */
 #undef DEBUG
 
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
 #include <asm/io.h>
 #include <asm/i8259.h>
 #include <asm/prom.h>

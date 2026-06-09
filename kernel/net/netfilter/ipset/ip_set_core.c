@@ -1,4 +1,4 @@
-/* Copyright (C) 2000-2002 Joakim Axelsson <gozem@linux.nu>
+/* Copyright (C) 2000-2002 Joakim Axelsson <gozem@beep.nu>
  *                         Patrick Schaaf <bof@bof.de>
  * Copyright (C) 2003-2011 Jozsef Kadlecsik <kadlec@blackhole.kfki.hu>
  *
@@ -9,20 +9,20 @@
 
 /* Kernel module for IP set management */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ip.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/netlink.h>
-#include <linux/rculist.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/ip.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/netlink.h>
+#include <beep/rculist.h>
 #include <net/netlink.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/ipset/ip_set.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/ipset/ip_set.h>
 
 static LIST_HEAD(ip_set_type_list);		/* all registered set types */
 static DEFINE_MUTEX(ip_set_type_mutex);		/* protects ip_set_type_list */

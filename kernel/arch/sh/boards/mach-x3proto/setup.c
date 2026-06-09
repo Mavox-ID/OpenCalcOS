@@ -9,18 +9,18 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/smc91x.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/usb/r8a66597.h>
-#include <linux/usb/m66592.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/smc91x.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/usb/r8a66597.h>
+#include <beep/usb/m66592.h>
+#include <beep/gpio.h>
+#include <beep/gpio_keys.h>
 #include <mach/ilsel.h>
 #include <mach/hardware.h>
 #include <asm/smp-ops.h>

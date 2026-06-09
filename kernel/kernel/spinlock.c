@@ -14,12 +14,12 @@
  * frame contact the architecture maintainers.
  */
 
-#include <linux/linkage.h>
-#include <linux/preempt.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/debug_locks.h>
-#include <linux/export.h>
+#include <beep/linkage.h>
+#include <beep/preempt.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/debug_locks.h>
+#include <beep/export.h>
 
 /*
  * If lockdep is enabled then we use the non-preemption spin-ops
@@ -29,7 +29,7 @@
 #if !defined(CONFIG_GENERIC_LOCKBREAK) || defined(CONFIG_DEBUG_LOCK_ALLOC)
 /*
  * The __lock_function inlines are taken from
- * include/linux/spinlock_api_smp.h
+ * include/beep/spinlock_api_smp.h
  */
 #else
 #define raw_read_can_lock(l)	read_can_lock(l)

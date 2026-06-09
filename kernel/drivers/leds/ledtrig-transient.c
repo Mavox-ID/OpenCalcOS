@@ -18,13 +18,13 @@
  * Documentation/leds/ledtrig-transient.txt for details
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/leds.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/timer.h>
+#include <beep/leds.h>
 #include "leds.h"
 
 struct transient_trig_data {

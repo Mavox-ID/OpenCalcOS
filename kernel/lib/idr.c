@@ -27,14 +27,14 @@
  */
 
 #ifndef TEST                        // to test in user space...
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/export.h>
 #endif
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/idr.h>
-#include <linux/spinlock.h>
+#include <beep/err.h>
+#include <beep/string.h>
+#include <beep/idr.h>
+#include <beep/spinlock.h>
 
 static struct kmem_cache *idr_layer_cache;
 static DEFINE_SPINLOCK(simple_ida_lock);

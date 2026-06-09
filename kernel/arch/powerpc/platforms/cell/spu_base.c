@@ -22,17 +22,17 @@
 
 #undef DEBUG
 
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/linux_logo.h>
-#include <linux/syscore_ops.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/wait.h>
+#include <beep/mm.h>
+#include <beep/io.h>
+#include <beep/mutex.h>
+#include <beep/beep_logo.h>
+#include <beep/syscore_ops.h>
 #include <asm/spu.h>
 #include <asm/spu_priv1.h>
 #include <asm/spu_csa.h>

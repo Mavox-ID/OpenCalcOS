@@ -1,7 +1,7 @@
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/sched.h>
-#include <linux/hugetlb.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/sched.h>
+#include <beep/hugetlb.h>
 
 static int walk_pte_range(pmd_t *pmd, unsigned long addr, unsigned long end,
 			  struct mm_walk *walk)

@@ -14,8 +14,8 @@
 #ifndef _ASM_SYSCALL_H
 #define _ASM_SYSCALL_H
 
-#include <linux/sched.h>
-#include <linux/err.h>
+#include <beep/sched.h>
+#include <beep/err.h>
 
 extern const unsigned long sys_call_table[];
 

@@ -13,22 +13,22 @@
  * Re-worked by Ben Greear <greearb@candelatech.com>
  * ---
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/rculist.h>
-#include <linux/notifier.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_arp.h>
-#include <linux/if_vlan.h>
-#include <linux/if_link.h>
-#include <linux/if_macvlan.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/rculist.h>
+#include <beep/notifier.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/if_arp.h>
+#include <beep/if_vlan.h>
+#include <beep/if_link.h>
+#include <beep/if_macvlan.h>
 #include <net/rtnetlink.h>
 #include <net/xfrm.h>
 

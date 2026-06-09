@@ -37,11 +37,11 @@
 
     Jeremy Fitzhardinge <jeremy@goop.org> 2006
  */
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bug.h>
-#include <linux/sched.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/bug.h>
+#include <beep/sched.h>
 
 extern const struct bug_entry __start___bug_table[], __stop___bug_table[];
 

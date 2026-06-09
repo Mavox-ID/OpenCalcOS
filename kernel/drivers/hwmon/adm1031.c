@@ -1,10 +1,10 @@
 /*
- * adm1031.c - Part of lm_sensors, Linux kernel modules for hardware
+ * adm1031.c - Part of lm_sensors, Beep kernel modules for hardware
  *	       monitoring
  * Based on lm75.c and lm85.c
  * Supports adm1030 / adm1031
  * Copyright (C) 2004 Alexandre d'Alton <alex@alexdalton.org>
- * Reworked by Jean Delvare <khali@linux-fr.org>
+ * Reworked by Jean Delvare <khali@beep-fr.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,15 +21,15 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/jiffies.h>
+#include <beep/i2c.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
 
 /* Following macros takes channel parameter starting from 0 to 2 */
 #define ADM1031_REG_FAN_SPEED(nr)	(0x08 + (nr))

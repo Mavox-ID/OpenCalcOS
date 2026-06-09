@@ -10,7 +10,7 @@
 
 targets := Image zCalc bootpImage
 
-SYSTEM	=$(LINUX)
+SYSTEM	=$(BEEP)
 
 ZTEXTADDR	 = 0x02080000
 PARAMS_PHYS	 = 0x0207c000
@@ -33,22 +33,22 @@ Image: $(obj)/Image
 
 targets: $(obj)/Image
 
-$(obj)/Image: vmlinux FORCE
-	$(OBJCOPY) $(OBJCOPYFLAGS) -S vmlinux $@
+$(obj)/Image: vmbeep FORCE
+	$(OBJCOPY) $(OBJCOPYFLAGS) -S vmbeep $@
 
 #$(obj)/Image:	$(CONFIGURE) $(SYSTEM)
 #	$(OBJCOPY) $(OBJCOPYFLAGS) -g -S $(SYSTEM) $@
 
 bzImage: zCalc
 
-zCalc:	$(CONFIGURE) compressed/$(LINUX)
-	$(OBJCOPY) $(OBJCOPYFLAGS) -S compressed/$(LINUX) $@
+zCalc:	$(CONFIGURE) compressed/$(BEEP)
+	$(OBJCOPY) $(OBJCOPYFLAGS) -S compressed/$(BEEP) $@
 
 bootpImage: bootp/bootp
 	$(OBJCOPY) $(OBJCOPYFLAGS) -S bootp/bootp $@
 
-compressed/$(LINUX): $(LINUX) dep
-	@$(MAKE) -C compressed $(LINUX)
+compressed/$(BEEP): $(BEEP) dep
+	@$(MAKE) -C compressed $(BEEP)
 
 bootp/bootp: zCalc initrd
 	@$(MAKE) -C bootp bootp

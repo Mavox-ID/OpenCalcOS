@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-at91/board-neocore926.c
+ * beep/arch/arm/mach-at91/board-neocore926.c
  *
  *  Copyright (C) 2005 SAN People
  *  Copyright (C) 2007 Atmel Corporation
@@ -20,17 +20,17 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/types.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/fb.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
+#include <beep/types.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/ads7846.h>
+#include <beep/fb.h>
+#include <beep/gpio_keys.h>
+#include <beep/input.h>
 
 #include <video/atmel_lcdc.h>
 
@@ -161,7 +161,7 @@ static struct macb_platform_data __initdata neocore926_macb_data = {
  */
 static struct mtd_partition __initdata neocore926_nand_partition[] = {
 	{
-		.name	= "Linux Kernel",	/* "Partition 1", */
+		.name	= "Beep Kernel",	/* "Partition 1", */
 		.offset	= 0,
 		.size	= SZ_8M,
 	},

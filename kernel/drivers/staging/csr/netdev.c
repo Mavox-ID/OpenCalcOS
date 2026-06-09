@@ -3,7 +3,7 @@
  * FILE:     netdev.c
  *
  * PURPOSE:
- *      This file provides the upper edge interface to the linux netdevice
+ *      This file provides the upper edge interface to the beep netdevice
  *      and wireless extensions.
  *      It is part of the porting exercise.
  *
@@ -17,7 +17,7 @@
 
 /*
  * Porting Notes:
- * This file implements the data plane of the UniFi linux driver.
+ * This file implements the data plane of the UniFi beep driver.
  *
  * All the Tx packets are passed to the HIP core lib, using the
  * unifi_send_signal() API. For EAPOL packets use the MLME-EAPOL.req
@@ -27,7 +27,7 @@
  * provides the write_pack() helper function to convert to the packed signal.
  * The packet is stored in the bulk data of the signal. We do not need to
  * allocate new memory to store the packet, because unifi_net_data_malloc()
- * is implemented to return a skb, which is the format of packet in Linux.
+ * is implemented to return a skb, which is the format of packet in Beep.
  * The HIP core lib frees the bulk data buffers, so we do not need to do
  * this in the OS layer.
  *
@@ -43,11 +43,11 @@
  * network and driver buffers.
  */
 
-#include <linux/types.h>
-#include <linux/etherdevice.h>
-#include <linux/mutex.h>
-#include <linux/semaphore.h>
-#include <linux/vmalloc.h>
+#include <beep/types.h>
+#include <beep/etherdevice.h>
+#include <beep/mutex.h>
+#include <beep/semaphore.h>
+#include <beep/vmalloc.h>
 #include "csr_wifi_hip_unifi.h"
 #include "csr_wifi_hip_conversions.h"
 #include "unifi_priv.h"
@@ -580,7 +580,7 @@ uf_net_open(struct net_device *dev)
         return -EINVAL;
     }
 
-#if (defined CSR_NATIVE_LINUX) && (defined UNIFI_SNIFF_ARPHRD) && defined(CSR_SUPPORT_WEXT)
+#if (defined CSR_NATIVE_BEEP) && (defined UNIFI_SNIFF_ARPHRD) && defined(CSR_SUPPORT_WEXT)
     /*
      * To sniff, the user must do "iwconfig mode monitor", which sets
      * priv->wext_conf.mode to IW_MODE_MONITOR.
@@ -616,7 +616,7 @@ uf_net_open(struct net_device *dev)
 static int
 uf_net_stop(struct net_device *dev)
 {
-#if defined(CSR_NATIVE_LINUX) && defined(UNIFI_SNIFF_ARPHRD) && defined(CSR_SUPPORT_WEXT)
+#if defined(CSR_NATIVE_BEEP) && defined(UNIFI_SNIFF_ARPHRD) && defined(CSR_SUPPORT_WEXT)
     netInterface_priv_t *interfacePriv = (netInterface_priv_t*)netdev_priv(dev);
     unifi_priv_t *priv = interfacePriv->privPtr;
 
@@ -1137,7 +1137,7 @@ skb_80211_to_ether(unifi_priv_t *priv, struct sk_buff *skb,
 
 static CsrWifiRouterCtrlPortAction verify_port(unifi_priv_t *priv, unsigned char *address, int queue, u16 interfaceTag)
 {
-#ifdef CSR_NATIVE_LINUX
+#ifdef CSR_NATIVE_BEEP
 #ifdef CSR_SUPPORT_WEXT
     if (queue == UF_CONTROLLED_PORT_Q) {
         return priv->wext_conf.block_controlled_port;
@@ -1716,7 +1716,7 @@ send_ma_pkt_request(unifi_priv_t *priv, struct sk_buff *skb, const struct ethhdr
  *
  *  Arguments:
  *      skb     Ethernet packet to send.
- *      dev     Pointer to the linux net device.
+ *      dev     Pointer to the beep net device.
  *
  *  Returns:
  *      0   on success (packet was consumed, not necessarily transmitted)
@@ -2708,7 +2708,7 @@ uf_set_multicast_list(struct net_device *dev)
     netInterface_priv_t *interfacePriv = (netInterface_priv_t *)netdev_priv(dev);
     unifi_priv_t *priv = interfacePriv->privPtr;
 
-#ifdef CSR_NATIVE_LINUX
+#ifdef CSR_NATIVE_BEEP
     unifi_trace(priv, UDBG3, "uf_set_multicast_list unsupported\n");
     return;
 #else

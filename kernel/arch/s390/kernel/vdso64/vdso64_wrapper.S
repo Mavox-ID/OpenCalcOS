@@ -1,5 +1,5 @@
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
 #include <asm/page.h>
 
 	__PAGE_ALIGNED_DATA

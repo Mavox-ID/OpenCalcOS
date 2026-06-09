@@ -9,14 +9,14 @@
  * 2 as published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/kobject.h>
-#include <linux/smp.h>
-#include <linux/stat.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/kobject.h>
+#include <beep/smp.h>
+#include <beep/stat.h>
+#include <beep/completion.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
 #include <asm/rtas.h>
 #include "pseries.h"

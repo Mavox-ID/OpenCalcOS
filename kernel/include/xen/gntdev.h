@@ -8,7 +8,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the Beep kernel or incorporated into other
  * software packages, subject to the following license:
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -30,8 +30,8 @@
  * IN THE SOFTWARE.
  */
 
-#ifndef __LINUX_PUBLIC_GNTDEV_H__
-#define __LINUX_PUBLIC_GNTDEV_H__
+#ifndef __BEEP_PUBLIC_GNTDEV_H__
+#define __BEEP_PUBLIC_GNTDEV_H__
 
 struct ioctl_gntdev_grant_ref {
 	/* The domain ID of the grant to be mapped. */
@@ -147,4 +147,4 @@ struct ioctl_gntdev_unmap_notify {
 /* Send an interrupt on the indicated event channel */
 #define UNMAP_NOTIFY_SEND_EVENT 0x2
 
-#endif /* __LINUX_PUBLIC_GNTDEV_H__ */
+#endif /* __BEEP_PUBLIC_GNTDEV_H__ */

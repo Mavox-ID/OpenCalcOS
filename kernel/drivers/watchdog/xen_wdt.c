@@ -14,20 +14,20 @@
 #define DRV_NAME	"wdt"
 #define DRV_VERSION	"0.01"
 
-#include <linux/bug.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/hrtimer.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/init.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/watchdog.h>
+#include <beep/bug.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/hrtimer.h>
+#include <beep/kernel.h>
+#include <beep/ktime.h>
+#include <beep/init.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/uaccess.h>
+#include <beep/watchdog.h>
 #include <xen/xen.h>
 #include <asm/xen/hypercall.h>
 #include <xen/interface/sched.h>

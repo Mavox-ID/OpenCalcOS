@@ -6,22 +6,22 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/module.h>
-#include <linux/in.h>
-#include <linux/tcp.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/ipv6.h>
+#include <beep/types.h>
+#include <beep/timer.h>
+#include <beep/module.h>
+#include <beep/in.h>
+#include <beep/tcp.h>
+#include <beep/spinlock.h>
+#include <beep/skbuff.h>
+#include <beep/ipv6.h>
 #include <net/ip6_checksum.h>
 #include <asm/unaligned.h>
 
 #include <net/tcp.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/netfilter_ipv6.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_l4proto.h>
 #include <net/netfilter/nf_conntrack_ecache.h>
@@ -75,7 +75,7 @@ static unsigned int tcp_timeouts[TCP_CONNTRACK_TIMEOUT_MAX] __read_mostly = {
 	[TCP_CONNTRACK_CLOSE]		= 10 SECS,
 	[TCP_CONNTRACK_SYN_SENT2]	= 2 MINS,
 /* RFC1122 says the R2 limit should be at least 100 seconds.
-   Linux uses 15 packets as limit, which corresponds
+   Beep uses 15 packets as limit, which corresponds
    to ~13-30min depending on RTO. */
 	[TCP_CONNTRACK_RETRANS]		= 5 MINS,
 	[TCP_CONNTRACK_UNACK]		= 5 MINS,
@@ -1134,8 +1134,8 @@ static bool tcp_new(struct nf_conn *ct, const struct sk_buff *skb,
 
 #if IS_ENABLED(CONFIG_NF_CT_NETLINK)
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_conntrack.h>
 
 static int tcp_to_nlattr(struct sk_buff *skb, struct nlattr *nla,
 			 struct nf_conn *ct)
@@ -1248,8 +1248,8 @@ static int tcp_nlattr_tuple_size(void)
 
 #if IS_ENABLED(CONFIG_NF_CT_NETLINK_TIMEOUT)
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_cttimeout.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_cttimeout.h>
 
 static int tcp_timeout_nlattr_to_obj(struct nlattr *tb[],
 				     struct net *net, void *data)

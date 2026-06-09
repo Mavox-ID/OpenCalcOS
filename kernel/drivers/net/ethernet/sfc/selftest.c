@@ -8,17 +8,17 @@
  * by the Free Software Foundation, incorporated herein by reference.
  */
 
-#include <linux/netdevice.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/kernel_stat.h>
-#include <linux/pci.h>
-#include <linux/ethtool.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/udp.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
+#include <beep/netdevice.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/kernel_stat.h>
+#include <beep/pci.h>
+#include <beep/ethtool.h>
+#include <beep/ip.h>
+#include <beep/in.h>
+#include <beep/udp.h>
+#include <beep/rtnetlink.h>
+#include <beep/slab.h>
 #include "net_driver.h"
 #include "efx.h"
 #include "nic.h"

@@ -8,12 +8,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/spi/spi.h>
-#include <linux/bcd.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/rtc.h>
+#include <beep/spi/spi.h>
+#include <beep/bcd.h>
 
 #define M41T94_REG_SECONDS	0x01
 #define M41T94_REG_MINUTES	0x02

@@ -13,19 +13,19 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/cpufreq.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/opp.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/cpufreq.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/opp.h>
+#include <beep/cpu.h>
+#include <beep/module.h>
+#include <beep/regulator/consumer.h>
 
 #include <asm/smp_plat.h>
 #include <asm/cpu.h>

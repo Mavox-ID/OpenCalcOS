@@ -13,9 +13,9 @@
 
 #ifndef BNX2X_H
 #define BNX2X_H
-#include <linux/netdevice.h>
-#include <linux/dma-mapping.h>
-#include <linux/types.h>
+#include <beep/netdevice.h>
+#include <beep/dma-mapping.h>
+#include <beep/types.h>
 
 /* compilation time flags */
 
@@ -39,7 +39,7 @@
 
 #define BNX2X_MIN_MSIX_VEC_CNT(bp)		((bp)->min_msix_vec_cnt)
 
-#include <linux/mdio.h>
+#include <beep/mdio.h>
 
 #include "bnx2x_reg.h"
 #include "bnx2x_fw_defs.h"

@@ -20,7 +20,7 @@
  *
  * Copyright IBM Corporation, 2012
  */
-#include <linux/types.h>
+#include <beep/types.h>
 
 typedef u32 ppc_opcode_t;
 #define BREAKPOINT_INSTRUCTION	0x7fe00008	/* trap */

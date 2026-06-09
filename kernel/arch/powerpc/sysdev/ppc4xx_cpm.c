@@ -31,11 +31,11 @@
  * MA 02111-1307 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/of_platform.h>
-#include <linux/sysfs.h>
-#include <linux/cpu.h>
-#include <linux/suspend.h>
+#include <beep/kernel.h>
+#include <beep/of_platform.h>
+#include <beep/sysfs.h>
+#include <beep/cpu.h>
+#include <beep/suspend.h>
 #include <asm/dcr.h>
 #include <asm/dcr-native.h>
 #include <asm/machdep.h>

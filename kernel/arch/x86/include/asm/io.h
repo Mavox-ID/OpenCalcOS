@@ -36,8 +36,8 @@
 
 #define ARCH_HAS_IOREMAP_WC
 
-#include <linux/string.h>
-#include <linux/compiler.h>
+#include <beep/string.h>
+#include <beep/compiler.h>
 #include <asm/page.h>
 
 #define build_mmio_read(name, size, type, reg, barrier) \
@@ -192,7 +192,7 @@ extern void set_iounmap_nonlazy(void);
 
 #include <asm-generic/iomap.h>
 
-#include <linux/vmalloc.h>
+#include <beep/vmalloc.h>
 
 /*
  * Convert a virtual cached pointer to an uncached pointer

@@ -1,7 +1,7 @@
 /*
  *  Driver for the Integrant ITD1000 "Zero-IF Tuner IC for Direct Broadcast Satellite"
  *
- *  Copyright (c) 2007 Patrick Boettcher <pb@linuxtv.org>
+ *  Copyright (c) 2007 Patrick Boettcher <pb@beeptv.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by

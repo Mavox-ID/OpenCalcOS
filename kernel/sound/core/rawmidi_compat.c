@@ -20,7 +20,7 @@
 
 /* This file included from rawmidi.c */
 
-#include <linux/compat.h>
+#include <beep/compat.h>
 
 struct snd_rawmidi_params32 {
 	s32 stream;

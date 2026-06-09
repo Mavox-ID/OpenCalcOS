@@ -3,7 +3,7 @@
  * Copyright © 2007 Red Hat, Inc. All Rights Reserved.
  * Written by David Howells (dhowells@redhat.com)
  *
- * Derived from: ROMFS file system, Linux implementation
+ * Derived from: ROMFS file system, Beep implementation
  *
  * Copyright © 1997-1999  Janos Farkas <chexum@shadow.banki.hu>
  *
@@ -56,22 +56,22 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/parser.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/statfs.h>
-#include <linux/mtd/super.h>
-#include <linux/ctype.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/fs.h>
+#include <beep/time.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/parser.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/statfs.h>
+#include <beep/mtd/super.h>
+#include <beep/ctype.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/uaccess.h>
 #include "internal.h"
 
 static struct kmem_cache *romfs_inode_cachep;

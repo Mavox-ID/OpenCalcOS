@@ -20,11 +20,11 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
 
 #include <asm/machdep.h>
 #include <asm/nvram.h>

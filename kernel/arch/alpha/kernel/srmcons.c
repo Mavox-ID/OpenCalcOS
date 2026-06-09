@@ -1,21 +1,21 @@
 /*
- *	linux/arch/alpha/kernel/srmcons.c
+ *	beep/arch/alpha/kernel/srmcons.c
  *
  * Callback based driver for SRM Console console device.
  * (TTY driver and console driver)
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/delay.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/timer.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
 
 #include <asm/console.h>
 #include <asm/uaccess.h>

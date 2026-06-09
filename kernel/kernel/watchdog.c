@@ -11,22 +11,22 @@
 
 #define pr_fmt(fmt) "NMI watchdog: " fmt
 
-#include <linux/mm.h>
-#include <linux/cpu.h>
-#include <linux/nmi.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/lockdep.h>
-#include <linux/notifier.h>
-#include <linux/module.h>
-#include <linux/sysctl.h>
-#include <linux/smpboot.h>
+#include <beep/mm.h>
+#include <beep/cpu.h>
+#include <beep/nmi.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/freezer.h>
+#include <beep/kthread.h>
+#include <beep/lockdep.h>
+#include <beep/notifier.h>
+#include <beep/module.h>
+#include <beep/sysctl.h>
+#include <beep/smpboot.h>
 
 #include <asm/irq_regs.h>
-#include <linux/kvm_para.h>
-#include <linux/perf_event.h>
+#include <beep/kvm_para.h>
+#include <beep/perf_event.h>
 
 int watchdog_enabled = 1;
 int __read_mostly watchdog_thresh = 10;

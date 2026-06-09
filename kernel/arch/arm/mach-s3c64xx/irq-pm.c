@@ -3,7 +3,7 @@
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armbeep.simtec.co.uk/
  *
  * S3C64XX - Interrupt handling Power Management
  *
@@ -12,12 +12,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/syscore_ops.h>
-#include <linux/interrupt.h>
-#include <linux/serial_core.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/syscore_ops.h>
+#include <beep/interrupt.h>
+#include <beep/serial_core.h>
+#include <beep/irq.h>
+#include <beep/io.h>
 
 #include <mach/map.h>
 

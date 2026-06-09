@@ -13,11 +13,11 @@
  *
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/time.h>
 
-#include <linux/clockchips.h>
+#include <beep/clockchips.h>
 
 #include <asm/mach-jz4740/irq.h>
 #include <asm/mach-jz4740/timer.h>

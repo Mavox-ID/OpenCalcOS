@@ -9,7 +9,7 @@
  * more details.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <asm/proc-fns.h>
 #include <asm/irq.h>

@@ -1,5 +1,5 @@
 /*
- *	Linux Magic System Request Key Hacks
+ *	Beep Magic System Request Key Hacks
  *
  *	(c) 1997 Martin Mares <mj@atrey.karlin.mff.cuni.cz>
  *	based on ideas by Pavel Machek <pavel@atrey.karlin.mff.cuni.cz>
@@ -14,33 +14,33 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/reboot.h>
-#include <linux/sysrq.h>
-#include <linux/kbd_kern.h>
-#include <linux/proc_fs.h>
-#include <linux/nmi.h>
-#include <linux/quotaops.h>
-#include <linux/perf_event.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/suspend.h>
-#include <linux/writeback.h>
-#include <linux/swap.h>
-#include <linux/spinlock.h>
-#include <linux/vt_kern.h>
-#include <linux/workqueue.h>
-#include <linux/hrtimer.h>
-#include <linux/oom.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/uaccess.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/kdev_t.h>
+#include <beep/major.h>
+#include <beep/reboot.h>
+#include <beep/sysrq.h>
+#include <beep/kbd_kern.h>
+#include <beep/proc_fs.h>
+#include <beep/nmi.h>
+#include <beep/quotaops.h>
+#include <beep/perf_event.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/suspend.h>
+#include <beep/writeback.h>
+#include <beep/swap.h>
+#include <beep/spinlock.h>
+#include <beep/vt_kern.h>
+#include <beep/workqueue.h>
+#include <beep/hrtimer.h>
+#include <beep/oom.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/uaccess.h>
 
 #include <asm/ptrace.h>
 #include <asm/irq_regs.h>
@@ -286,7 +286,7 @@ static struct sysrq_key_op sysrq_showstate_blocked_op = {
 };
 
 #ifdef CONFIG_TRACING
-#include <linux/ftrace.h>
+#include <beep/ftrace.h>
 
 static void sysrq_ftrace_dump(int key)
 {

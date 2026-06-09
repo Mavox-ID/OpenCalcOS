@@ -9,10 +9,10 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/of_device.h>
+#include <beep/pinctrl/pinctrl.h>
 #include "pinctrl-mxs.h"
 
 enum imx28_pin_enum {

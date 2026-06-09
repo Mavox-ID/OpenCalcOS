@@ -6,8 +6,8 @@
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/file.h>
-#include <linux/lockd/bind.h>
+#include <beep/file.h>
+#include <beep/lockd/bind.h>
 #include "nfsd.h"
 #include "vfs.h"
 

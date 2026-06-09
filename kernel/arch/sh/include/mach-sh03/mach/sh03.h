@@ -2,7 +2,7 @@
 #define __ASM_SH_SH03_H
 
 /*
- * linux/include/asm-sh/sh03/sh03.h
+ * beep/include/asm-sh/sh03/sh03.h
  *
  * Copyright (C) 2004  Interface Co., Ltd. Saito.K
  *

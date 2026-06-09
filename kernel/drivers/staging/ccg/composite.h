@@ -18,8 +18,8 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#ifndef	__LINUX_USB_COMPOSITE_H
-#define	__LINUX_USB_COMPOSITE_H
+#ifndef	__BEEP_USB_COMPOSITE_H
+#define	__BEEP_USB_COMPOSITE_H
 
 /*
  * This framework is an optional layer on top of the USB Gadget interface,
@@ -34,8 +34,8 @@
  * the composite model the host can use both functions at the same time.
  */
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
 
 /*
  * USB function drivers should return USB_GADGET_DELAYED_STATUS if they
@@ -392,4 +392,4 @@ extern int usb_string_ids_n(struct usb_composite_dev *c, unsigned n);
 #define INFO(d, fmt, args...) \
 	dev_info(&(d)->gadget->dev , fmt , ## args)
 
-#endif	/* __LINUX_USB_COMPOSITE_H */
+#endif	/* __BEEP_USB_COMPOSITE_H */

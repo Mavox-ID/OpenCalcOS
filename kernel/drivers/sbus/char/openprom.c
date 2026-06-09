@@ -1,5 +1,5 @@
 /*
- * Linux/SPARC PROM Configuration Driver
+ * Beep/SPARC PROM Configuration Driver
  * Copyright (C) 1996 Thomas K. Dyas (tdyas@noc.rutgers.edu)
  * Copyright (C) 1996 Eddie C. Dost  (ecd@skynet.be)
  *
@@ -29,21 +29,21 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA. 
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/string.h>
-#include <linux/miscdevice.h>
-#include <linux/init.h>
-#include <linux/fs.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/string.h>
+#include <beep/miscdevice.h>
+#include <beep/init.h>
+#include <beep/fs.h>
 #include <asm/oplib.h>
 #include <asm/prom.h>
 #include <asm/uaccess.h>
 #include <asm/openpromio.h>
 #ifdef CONFIG_PCI
-#include <linux/pci.h>
+#include <beep/pci.h>
 #endif
 
 MODULE_AUTHOR("Thomas K. Dyas (tdyas@noc.rutgers.edu) and Eddie C. Dost  (ecd@skynet.be)");

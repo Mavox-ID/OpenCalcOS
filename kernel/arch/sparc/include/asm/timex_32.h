@@ -1,5 +1,5 @@
 /*
- * linux/include/asm/timex.h
+ * beep/include/asm/timex.h
  *
  * sparc architecture timex specifications
  */

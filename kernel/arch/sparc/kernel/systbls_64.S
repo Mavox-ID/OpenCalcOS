@@ -1,5 +1,5 @@
 /* systbls.S: System call entry point tables for OS compatibility.
- *            The native Linux system call table lives here also.
+ *            The native Beep system call table lives here also.
  *
  * Copyright (C) 1995, 1996, 2007 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1997 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
@@ -14,7 +14,7 @@
 	.align	4
 
 #ifdef CONFIG_COMPAT
-	/* First, the 32-bit Linux native syscall table. */
+	/* First, the 32-bit Beep native syscall table. */
 
 	.globl sys_call_table32
 sys_call_table32:
@@ -90,7 +90,7 @@ sys_call_table32:
 
 #endif /* CONFIG_COMPAT */
 
-	/* Now the 64-bit native Linux syscall table. */
+	/* Now the 64-bit native Beep syscall table. */
 
 	.align	4
 	.globl sys_call_table64, sys_call_table

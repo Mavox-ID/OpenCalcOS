@@ -20,11 +20,11 @@
 #define DATAPATH_H 1
 
 #include <asm/page.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/u64_stats_sync.h>
+#include <beep/kernel.h>
+#include <beep/mutex.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/u64_stats_sync.h>
 
 #include "flow.h"
 #include "vport.h"

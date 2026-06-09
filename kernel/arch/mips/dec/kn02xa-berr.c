@@ -13,10 +13,10 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
 
 #include <asm/addrspace.h>
 #include <asm/irq_regs.h>

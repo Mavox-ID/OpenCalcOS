@@ -3,22 +3,22 @@
  *
  * Copyright (C) 2008 Steven Rostedt <srostedt@redhat.com>
  */
-#include <linux/ring_buffer.h>
-#include <linux/trace_clock.h>
-#include <linux/spinlock.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/hardirq.h>
-#include <linux/kmemcheck.h>
-#include <linux/module.h>
-#include <linux/percpu.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/hash.h>
-#include <linux/list.h>
-#include <linux/cpu.h>
-#include <linux/fs.h>
+#include <beep/ring_buffer.h>
+#include <beep/trace_clock.h>
+#include <beep/spinlock.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
+#include <beep/hardirq.h>
+#include <beep/kmemcheck.h>
+#include <beep/module.h>
+#include <beep/percpu.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/hash.h>
+#include <beep/list.h>
+#include <beep/cpu.h>
+#include <beep/fs.h>
 
 #include <asm/local.h>
 #include "trace.h"

@@ -7,12 +7,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/efi-bgrt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/sysfs.h>
+#include <beep/efi-bgrt.h>
 
 static struct kobject *bgrt_kobj;
 

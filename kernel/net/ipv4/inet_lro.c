@@ -1,5 +1,5 @@
 /*
- *  linux/net/ipv4/inet_lro.c
+ *  beep/net/ipv4/inet_lro.c
  *
  *  Large Receive Offload (ipv4 / tcp)
  *
@@ -26,9 +26,9 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/if_vlan.h>
-#include <linux/inet_lro.h>
+#include <beep/module.h>
+#include <beep/if_vlan.h>
+#include <beep/inet_lro.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Jan-Bernd Themann <themann@de.ibm.com>");

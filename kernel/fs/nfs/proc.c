@@ -1,5 +1,5 @@
 /*
- *  linux/fs/nfs/proc.c
+ *  beep/fs/nfs/proc.c
  *
  *  Copyright (C) 1992, 1993, 1994  Rick Sladkey
  *
@@ -27,21 +27,21 @@
  *  incomplete struct).
  */
 
-#include <linux/types.h>
-#include <linux/param.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/pagemap.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfs.h>
-#include <linux/nfs2.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_page.h>
-#include <linux/lockd/bind.h>
-#include <linux/freezer.h>
+#include <beep/types.h>
+#include <beep/param.h>
+#include <beep/time.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/in.h>
+#include <beep/pagemap.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/nfs.h>
+#include <beep/nfs2.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_page.h>
+#include <beep/lockd/bind.h>
+#include <beep/freezer.h>
 #include "internal.h"
 
 #define NFSDBG_FACILITY		NFSDBG_PROC

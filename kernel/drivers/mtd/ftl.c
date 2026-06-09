@@ -1,4 +1,4 @@
-/* This version ported to the Linux-MTD system by dwmw2@infradead.org
+/* This version ported to the Beep-MTD system by dwmw2@infradead.org
  *
  * Fixes: Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  * - fixes some leaks on failure in build_maps and ftl_notify_add, cleanups
@@ -54,25 +54,25 @@
     contact M-Systems directly. M-Systems since acquired by Sandisk. 
 
 ======================================================================*/
-#include <linux/mtd/blktrans.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
+#include <beep/mtd/blktrans.h>
+#include <beep/module.h>
+#include <beep/mtd/mtd.h>
 /*#define PSYCHO_DEBUG */
 
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/hdreg.h>
-#include <linux/vmalloc.h>
-#include <linux/blkpg.h>
+#include <beep/kernel.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/major.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/hdreg.h>
+#include <beep/vmalloc.h>
+#include <beep/blkpg.h>
 #include <asm/uaccess.h>
 
-#include <linux/mtd/ftl.h>
+#include <beep/mtd/ftl.h>
 
 /*====================================================================*/
 

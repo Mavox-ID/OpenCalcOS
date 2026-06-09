@@ -2,7 +2,7 @@
 #define _CRIS_PAGE_H
 
 #include <arch/page.h>
-#include <linux/const.h>
+#include <beep/const.h>
 
 /* PAGE_SHIFT determines the page size */
 #define PAGE_SHIFT	13

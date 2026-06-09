@@ -32,17 +32,17 @@
 *
 */
 
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/namei.h>
-#include <linux/crypto.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/module.h>
+#include <beep/file.h>
+#include <beep/slab.h>
+#include <beep/namei.h>
+#include <beep/crypto.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/module.h>
 #include <net/net_namespace.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfsd/cld.h>
+#include <beep/sunrpc/rpc_pipe_fs.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/nfsd/cld.h>
 
 #include "nfsd.h"
 #include "state.h"

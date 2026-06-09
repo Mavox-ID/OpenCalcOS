@@ -4,8 +4,8 @@
  * Distributed under the GNU GPL license version 2.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include "ulist.h"
 
 /*

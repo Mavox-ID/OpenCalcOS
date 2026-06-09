@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/omap2/dss/overlay.c
+ * beep/drivers/video/omap2/dss/overlay.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -22,13 +22,13 @@
 
 #define DSS_SUBSYS_NAME "OVERLAY"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/sysfs.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/sysfs.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
 #include <video/omapdss.h>
 

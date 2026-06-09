@@ -7,15 +7,15 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/binfmts.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/unistd.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/binfmts.h>
+#include <beep/elf.h>
+#include <beep/vmalloc.h>
+#include <beep/unistd.h>
 
 #include <asm/vdso.h>
 #include <asm/uasm.h>
@@ -70,7 +70,7 @@ static unsigned long vdso_addr(unsigned long start)
 	return STACK_TOP;
 }
 
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct beep_binprm *bprm, int uses_interp)
 {
 	int ret;
 	unsigned long addr;

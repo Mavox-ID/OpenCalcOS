@@ -1,14 +1,14 @@
 /*
- * Copyright (C) 1999-2002	Andre Hedrick <andre@linux-ide.org>
+ * Copyright (C) 1999-2002	Andre Hedrick <andre@beep-ide.org>
  * Copyright (C) 2007		MontaVista Software, Inc. <source@mvista.com>
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/ide.h>
+#include <beep/init.h>
 
 #include <asm/io.h>
 

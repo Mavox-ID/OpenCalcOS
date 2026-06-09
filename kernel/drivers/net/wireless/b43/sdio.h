@@ -1,7 +1,7 @@
 #ifndef B43_SDIO_H_
 #define B43_SDIO_H_
 
-#include <linux/ssb/ssb.h>
+#include <beep/ssb/ssb.h>
 
 struct b43_wldev;
 

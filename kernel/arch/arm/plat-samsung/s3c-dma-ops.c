@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/s3c-dma-ops.c
+/* beep/arch/arm/plat-samsung/s3c-dma-ops.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -10,11 +10,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/export.h>
 
 #include <mach/dma.h>
 

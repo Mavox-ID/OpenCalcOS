@@ -7,9 +7,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/init.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/init.h>
 
 #define INTACK		0xfe4100b8
 #define INTACKCLR	0xfe4100bc

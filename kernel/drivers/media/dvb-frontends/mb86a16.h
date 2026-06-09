@@ -21,7 +21,7 @@
 #ifndef __MB86A16_H
 #define __MB86A16_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 #include "dvb_frontend.h"
 
 

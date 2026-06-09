@@ -6,12 +6,12 @@
  * Copyright 2002, Yoshinori Sato
  */
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 #ifdef __KERNEL__
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _BEEP_BITOPS_H
+#error only <beep/bitops.h> can be included directly
 #endif
 
 /*

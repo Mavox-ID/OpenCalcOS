@@ -10,13 +10,13 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/mfd/88pm80x.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/mfd/88pm80x.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
+#include <beep/err.h>
 
 /*
  * workaround: some registers needed by pm805 are defined in pm800, so

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/lib/strrchr.S
+ *  beep/arch/arm/lib/strrchr.S
  *
  *  Copyright (C) 1995-2000 Russell King
  *
@@ -9,7 +9,7 @@
  *
  *  ASM optimised string functions
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 
 		.text

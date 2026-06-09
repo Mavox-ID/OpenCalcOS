@@ -18,14 +18,14 @@
  *  Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

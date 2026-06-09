@@ -4,7 +4,7 @@
  * FSG board-level PCI initialization
  *
  * Author: Rod Whitby <rod@whitby.id.au>
- * Maintainer: http://www.nslu2-linux.org/
+ * Maintainer: http://www.nslu2-beep.org/
  *
  * based on ixdp425-pci.c:
  *	Copyright (C) 2002 Intel Corporation.
@@ -16,9 +16,9 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/irq.h>
 #include <asm/mach/pci.h>
 #include <asm/mach-types.h>
 

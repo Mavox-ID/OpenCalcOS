@@ -22,8 +22,8 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
 #include "ath5k.h"
 #include "reg.h"
 #include "debug.h"

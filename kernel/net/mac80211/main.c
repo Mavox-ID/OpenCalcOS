@@ -9,18 +9,18 @@
  */
 
 #include <net/mac80211.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/rtnetlink.h>
-#include <linux/bitmap.h>
-#include <linux/pm_qos.h>
-#include <linux/inetdevice.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/skbuff.h>
+#include <beep/etherdevice.h>
+#include <beep/if_arp.h>
+#include <beep/rtnetlink.h>
+#include <beep/bitmap.h>
+#include <beep/pm_qos.h>
+#include <beep/inetdevice.h>
 #include <net/net_namespace.h>
 #include <net/cfg80211.h>
 

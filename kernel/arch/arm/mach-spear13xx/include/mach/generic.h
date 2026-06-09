@@ -4,7 +4,7 @@
  * spear13xx machine family generic header file
  *
  * Copyright (C) 2012 ST Microelectronics
- * Viresh Kumar <viresh.linux@gmail.com>
+ * Viresh Kumar <viresh.beep@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
@@ -14,7 +14,7 @@
 #ifndef __MACH_GENERIC_H
 #define __MACH_GENERIC_H
 
-#include <linux/dmaengine.h>
+#include <beep/dmaengine.h>
 #include <asm/mach/time.h>
 
 /* Add spear13xx structure declarations here */

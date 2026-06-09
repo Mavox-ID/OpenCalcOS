@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/plat-versatile/sched-clock.c
+ *  beep/arch/arm/plat-versatile/sched-clock.c
  *
  *  Copyright (C) 1999 - 2003 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd
@@ -18,8 +18,8 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/kernel.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
 
 #include <asm/sched_clock.h>
 #include <plat/sched_clock.h>

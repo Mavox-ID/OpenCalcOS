@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext4/hash.c
+ *  beep/fs/ext4/hash.c
  *
  * Copyright (C) 2002 by Theodore Ts'o
  *
@@ -9,9 +9,9 @@
  * License.
  */
 
-#include <linux/fs.h>
-#include <linux/jbd2.h>
-#include <linux/cryptohash.h>
+#include <beep/fs.h>
+#include <beep/jbd2.h>
+#include <beep/cryptohash.h>
 #include "ext4.h"
 
 #define DELTA 0x9E3779B9

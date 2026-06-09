@@ -9,11 +9,11 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
 #include <mach/regs-pmu.h>
 #include <mach/regs-usb-phy.h>
 #include <plat/cpu.h>

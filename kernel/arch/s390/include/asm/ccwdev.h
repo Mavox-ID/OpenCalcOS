@@ -8,8 +8,8 @@
 #ifndef _S390_CCWDEV_H_
 #define _S390_CCWDEV_H_
 
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
+#include <beep/device.h>
+#include <beep/mod_devicetable.h>
 #include <asm/fcx.h>
 #include <asm/irq.h>
 #include <asm/schid.h>

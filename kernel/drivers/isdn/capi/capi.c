@@ -1,6 +1,6 @@
 /* $Id: capi.c,v 1.1.2.7 2004/04/28 09:48:59 armin Exp $
  *
- * CAPI 2.0 Interface for Linux
+ * CAPI 2.0 Interface for Beep
  *
  * Copyright 1996 by Carsten Paeth <calle@calle.de>
  *
@@ -9,36 +9,36 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/fcntl.h>
-#include <linux/fs.h>
-#include <linux/signal.h>
-#include <linux/mutex.h>
-#include <linux/mm.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/tty.h>
-#include <linux/netdevice.h>
-#include <linux/ppp_defs.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/poll.h>
-#include <linux/capi.h>
-#include <linux/kernelcapi.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/moduleparam.h>
-#include <linux/isdn/capiutil.h>
-#include <linux/isdn/capicmd.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/major.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/fcntl.h>
+#include <beep/fs.h>
+#include <beep/signal.h>
+#include <beep/mutex.h>
+#include <beep/mm.h>
+#include <beep/timer.h>
+#include <beep/wait.h>
+#include <beep/tty.h>
+#include <beep/netdevice.h>
+#include <beep/ppp_defs.h>
+#include <beep/ppp-ioctl.h>
+#include <beep/skbuff.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/poll.h>
+#include <beep/capi.h>
+#include <beep/kernelcapi.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/moduleparam.h>
+#include <beep/isdn/capiutil.h>
+#include <beep/isdn/capicmd.h>
 
-MODULE_DESCRIPTION("CAPI4Linux: Userspace /dev/capi20 interface");
+MODULE_DESCRIPTION("CAPI4Beep: Userspace /dev/capi20 interface");
 MODULE_AUTHOR("Carsten Paeth");
 MODULE_LICENSE("GPL");
 

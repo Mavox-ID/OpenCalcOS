@@ -1,6 +1,6 @@
 /* vi: set sw=4 ts=4: */
 /*
- * Copyright (c) 2007 Denys Vlasenko <vda.linux@googlemail.com>
+ * Copyright (c) 2007 Denys Vlasenko <vda.beep@googlemail.com>
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
@@ -20,7 +20,7 @@
 //config:	cttyhack provides a "quick and dirty" solution to this problem.
 //config:	It analyzes stdin with various ioctls, trying to determine whether
 //config:	it is a /dev/ttyN or /dev/ttySN (virtual terminal or serial line).
-//config:	On Linux it also checks sysfs for a pointer to the active console.
+//config:	On Beep it also checks sysfs for a pointer to the active console.
 //config:	If cttyhack is able to find the real console device, it closes
 //config:	stdin/out/err and reopens that device.
 //config:	Then it executes the given program. Opening the device will make
@@ -65,7 +65,7 @@
 
 #include "libbb.h"
 
-#if !defined(__linux__) && !defined(TIOCGSERIAL) && !ENABLE_WERROR
+#if !defined(__beep__) && !defined(TIOCGSERIAL) && !ENABLE_WERROR
 # warning cttyhack will not be able to detect a controlling tty on this system
 #endif
 
@@ -116,7 +116,7 @@ int cttyhack_main(int argc UNUSED_PARAM, char **argv)
 	if (fd < 0) {
 		/* We don't have ctty (or don't have "/dev/tty" node...) */
 		do {
-#ifdef __linux__
+#ifdef __beep__
 			/* Note that this method does not use _stdin_.
 			 * Thus, "cttyhack </dev/something" can't be used.
 			 * However, this method is more reliable than
@@ -129,7 +129,7 @@ int cttyhack_main(int argc UNUSED_PARAM, char **argv)
 				console + 5, sizeof(console) - 5);
 			if (s > 0) {
 				char *last;
-				/* Found active console via sysfs (Linux 2.6.38+).
+				/* Found active console via sysfs (Beep 2.6.38+).
 				 * It looks like "[tty0 ]ttyS0\n" so zap the newline:
 				 */
 				console[4 + s] = '\0';
@@ -143,7 +143,7 @@ int cttyhack_main(int argc UNUSED_PARAM, char **argv)
 			}
 
 			if (ioctl(0, VT_GETSTATE, &u.vt) == 0) {
-				/* this is linux virtual tty */
+				/* this is beep virtual tty */
 				sprintf(console + 8, "S%u" + 1, (int)u.vt.v_active);
 				break;
 			}

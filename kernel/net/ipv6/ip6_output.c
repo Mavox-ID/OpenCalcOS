@@ -1,11 +1,11 @@
 /*
  *	IPv6 output functions
- *	Linux INET6 implementation
+ *	Beep INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *
- *	Based on linux/net/ipv4/ip_output.c
+ *	Based on beep/net/ipv4/ip_output.c
  *
  *	This program is free software; you can redistribute it and/or
  *      modify it under the terms of the GNU General Public License
@@ -19,28 +19,28 @@
  *				ip6_forward does not confuse sniffers.
  *				etc.
  *
- *      H. von Brand    :       Added missing #include <linux/string.h>
+ *      H. von Brand    :       Added missing #include <beep/string.h>
  *	Imran Patel	: 	frag id should be in NBO
  *      Kazunori MIYAZAWA @USAGI
  *			:       add ip6_append_data and related functions
  *				for datagram xmit
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/in6.h>
-#include <linux/tcp.h>
-#include <linux/route.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/socket.h>
+#include <beep/net.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/in6.h>
+#include <beep/tcp.h>
+#include <beep/route.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv6.h>
 
 #include <net/sock.h>
 #include <net/snmp.h>
@@ -54,7 +54,7 @@
 #include <net/icmp.h>
 #include <net/xfrm.h>
 #include <net/checksum.h>
-#include <linux/mroute6.h>
+#include <beep/mroute6.h>
 
 int ip6_fragment(struct sk_buff *skb, int (*output)(struct sk_buff *));
 

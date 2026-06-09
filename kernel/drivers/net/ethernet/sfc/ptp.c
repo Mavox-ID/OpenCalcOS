@@ -33,14 +33,14 @@
  *	Receive: the packet's reception time is converted to an appropriate
  *	timestamp.
  */
-#include <linux/ip.h>
-#include <linux/udp.h>
-#include <linux/time.h>
-#include <linux/ktime.h>
-#include <linux/module.h>
-#include <linux/net_tstamp.h>
-#include <linux/pps_kernel.h>
-#include <linux/ptp_clock_kernel.h>
+#include <beep/ip.h>
+#include <beep/udp.h>
+#include <beep/time.h>
+#include <beep/ktime.h>
+#include <beep/module.h>
+#include <beep/net_tstamp.h>
+#include <beep/pps_kernel.h>
+#include <beep/ptp_clock_kernel.h>
 #include "net_driver.h"
 #include "efx.h"
 #include "mcdi.h"

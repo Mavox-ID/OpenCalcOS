@@ -27,14 +27,14 @@
  *  * Alarm function is also limited to hr/min/sec.
  */
 
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sfi.h>
+#include <beep/mod_devicetable.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sfi.h>
 
 #include <asm-generic/rtc.h>
 #include <asm/intel_scu_ipc.h>

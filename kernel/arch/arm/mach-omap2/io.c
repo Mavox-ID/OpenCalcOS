@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/io.c
+ * beep/arch/arm/mach-omap2/io.c
  *
  * OMAP2 I/O mapping code
  *
@@ -16,16 +16,16 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/clk.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/clk.h>
 
 #include <asm/tlb.h>
 #include <asm/mach/map.h>
 
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 
 #include "omap_hwmod.h"
 #include "soc.h"

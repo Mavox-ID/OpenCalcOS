@@ -1,17 +1,17 @@
 /*
- * linux/arch/arm/mach-sa1100/neponset.c
+ * beep/arch/arm/mach-sa1100/neponset.c
  */
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_data/sa11x0-serial.h>
+#include <beep/platform_device.h>
+#include <beep/pm.h>
+#include <beep/serial_core.h>
+#include <beep/slab.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/map.h>

@@ -9,7 +9,7 @@
 #ifndef _SPARC_APC_H
 #define _SPARC_APC_H
 
-#include <linux/ioctl.h>
+#include <beep/ioctl.h>
 
 #define APC_IOC	'A'
 

@@ -9,7 +9,7 @@
  * for more details.
  *
  */
-#include <linux/sh_intc.h>
+#include <beep/sh_intc.h>
 
 #define HP680_BTN_IRQ		evt2irq(0x600)	/* IRQ0_IRQ */
 #define HP680_TS_IRQ		evt2irq(0x660)	/* IRQ3_IRQ */

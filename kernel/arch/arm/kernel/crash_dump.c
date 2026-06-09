@@ -13,10 +13,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/errno.h>
-#include <linux/crash_dump.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <beep/errno.h>
+#include <beep/crash_dump.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
 
 /**
  * copy_oldmem_page() - copy one page from old kernel memory

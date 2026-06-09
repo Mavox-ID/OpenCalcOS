@@ -368,7 +368,7 @@ static void check_explicit_phandles(struct check *c, struct node *root,
 	cell_t phandle;
 
 	if (!streq(prop->name, "phandle")
-	    && !streq(prop->name, "linux,phandle"))
+	    && !streq(prop->name, "beep,phandle"))
 		return;
 
 	if (prop->val.len != sizeof(cell_t)) {

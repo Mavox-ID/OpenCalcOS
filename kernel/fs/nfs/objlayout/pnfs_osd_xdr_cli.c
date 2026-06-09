@@ -37,7 +37,7 @@
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/pnfs_osd_xdr.h>
+#include <beep/pnfs_osd_xdr.h>
 
 #define NFSDBG_FACILITY         NFSDBG_PNFS_LD
 

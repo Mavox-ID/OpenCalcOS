@@ -1,8 +1,8 @@
 #ifndef _ASM_FB_H_
 #define _ASM_FB_H_
 
-#include <linux/fb.h>
-#include <linux/fs.h>
+#include <beep/fb.h>
+#include <beep/fs.h>
 #include <asm/page.h>
 #include <asm/setup.h>
 

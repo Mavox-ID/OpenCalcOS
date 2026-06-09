@@ -169,8 +169,8 @@ OPTIONS
 	i.e., -f "" is not allowed.
 
 -k::
---vmlinux=<file>::
-        vmlinux pathname
+--vmbeep=<file>::
+        vmbeep pathname
 
 --kallsyms=<file>::
         kallsyms pathname

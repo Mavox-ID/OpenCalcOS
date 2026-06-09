@@ -24,14 +24,14 @@
  * it is not needed for IPCOMP and keeps the code simpler.  It can be
  * implemented if someone wants it.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/zlib.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/net.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/crypto.h>
+#include <beep/zlib.h>
+#include <beep/vmalloc.h>
+#include <beep/interrupt.h>
+#include <beep/mm.h>
+#include <beep/net.h>
 
 #define DEFLATE_DEF_LEVEL		Z_DEFAULT_COMPRESSION
 #define DEFLATE_DEF_WINBITS		11

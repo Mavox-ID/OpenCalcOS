@@ -2,11 +2,11 @@
  * qdio queue initialization
  *
  * Copyright IBM Corp. 2008
- * Author(s): Jan Glauber <jang@linux.vnet.ibm.com>
+ * Author(s): Jan Glauber <jang@beep.vnet.ibm.com>
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include <asm/qdio.h>
 
 #include "cio.h"

@@ -10,7 +10,7 @@
  *
  *	Thanks to Intel for making available several different Pentium,
  *	Pentium Pro and Pentium-II/Xeon MP machines.
- *	Original development of Linux SMP code supported by Caldera.
+ *	Original development of Beep SMP code supported by Caldera.
  *
  *	This code is released under the GNU General Public License version 2 or
  *	later.
@@ -41,18 +41,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/percpu.h>
-#include <linux/bootmem.h>
-#include <linux/err.h>
-#include <linux/nmi.h>
-#include <linux/tboot.h>
-#include <linux/stackprotector.h>
-#include <linux/gfp.h>
-#include <linux/cpuidle.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/percpu.h>
+#include <beep/bootmem.h>
+#include <beep/err.h>
+#include <beep/nmi.h>
+#include <beep/tboot.h>
+#include <beep/stackprotector.h>
+#include <beep/gfp.h>
+#include <beep/cpuidle.h>
 
 #include <asm/acpi.h>
 #include <asm/desc.h>
@@ -72,7 +72,7 @@
 #include <asm/fpu-internal.h>
 #include <asm/setup.h>
 #include <asm/uv/uv.h>
-#include <linux/mc146818rtc.h>
+#include <beep/mc146818rtc.h>
 
 #include <asm/smpboot_hooks.h>
 #include <asm/i8259.h>

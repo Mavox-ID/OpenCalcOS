@@ -4,7 +4,7 @@
  * SPEAr1310 machine source file
  *
  * Copyright (C) 2012 ST Microelectronics
- * Viresh Kumar <viresh.linux@gmail.com>
+ * Viresh Kumar <viresh.beep@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
@@ -13,9 +13,9 @@
 
 #define pr_fmt(fmt) "SPEAr1310: " fmt
 
-#include <linux/amba/pl022.h>
-#include <linux/of_platform.h>
-#include <linux/pata_arasan_cf_data.h>
+#include <beep/amba/pl022.h>
+#include <beep/of_platform.h>
+#include <beep/pata_arasan_cf_data.h>
 #include <asm/hardware/gic.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

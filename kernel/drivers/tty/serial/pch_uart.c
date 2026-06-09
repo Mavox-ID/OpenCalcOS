@@ -14,24 +14,24 @@
  *along with this program; if not, write to the Free Software
  *Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307, USA.
  */
-#include <linux/kernel.h>
-#include <linux/serial_reg.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/serial_core.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/dmi.h>
-#include <linux/console.h>
-#include <linux/nmi.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/serial_reg.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/serial_core.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/dmi.h>
+#include <beep/console.h>
+#include <beep/nmi.h>
+#include <beep/delay.h>
 
-#include <linux/debugfs.h>
-#include <linux/dmaengine.h>
-#include <linux/pch_dma.h>
+#include <beep/debugfs.h>
+#include <beep/dmaengine.h>
+#include <beep/pch_dma.h>
 
 enum {
 	PCH_UART_HANDLED_RX_INT_SHIFT,

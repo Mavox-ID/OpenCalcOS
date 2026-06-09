@@ -8,12 +8,12 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/perf_event.h>
-#include <linux/percpu.h>
-#include <linux/uaccess.h>
-#include <linux/mm.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/perf_event.h>
+#include <beep/percpu.h>
+#include <beep/uaccess.h>
+#include <beep/mm.h>
 #include <asm/ptrace.h>
 #include <asm/pgtable.h>
 #include <asm/sigcontext.h>
@@ -125,7 +125,7 @@ static int read_user_stack_slow(void __user *ptr, void *ret, int nb)
 	if (!pgdir)
 		return -EFAULT;
 
-	ptep = find_linux_pte_or_hugepte(pgdir, addr, &shift);
+	ptep = find_beep_pte_or_hugepte(pgdir, addr, &shift);
 	if (!shift)
 		shift = PAGE_SHIFT;
 

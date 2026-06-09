@@ -1,5 +1,5 @@
 /*
- * linux/kernel/irq/manage.c
+ * beep/kernel/irq/manage.c
  *
  * Copyright (C) 1992, 1998-2006 Linus Torvalds, Ingo Molnar
  * Copyright (C) 2005-2006 Thomas Gleixner
@@ -9,14 +9,14 @@
 
 #define pr_fmt(fmt) "genirq: " fmt
 
-#include <linux/irq.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/task_work.h>
+#include <beep/irq.h>
+#include <beep/kthread.h>
+#include <beep/module.h>
+#include <beep/random.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/task_work.h>
 
 #include "internals.h"
 

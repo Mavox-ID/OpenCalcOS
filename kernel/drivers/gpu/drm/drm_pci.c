@@ -1,4 +1,4 @@
-/* drm_pci.h -- PCI DMA memory management wrappers for DRM -*- linux-c -*- */
+/* drm_pci.h -- PCI DMA memory management wrappers for DRM -*- beep-c -*- */
 /**
  * \file drm_pci.c
  * \brief Functions and ioctls to manage PCI memory
@@ -36,10 +36,10 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/export.h>
 #include <drm/drmP.h>
 
 /**********************************************************************/
@@ -93,7 +93,7 @@ EXPORT_SYMBOL(drm_pci_alloc);
 /**
  * \brief Free a PCI consistent memory block without freeing its descriptor.
  *
- * This function is for internal use in the Linux-specific DRM core code.
+ * This function is for internal use in the Beep-specific DRM core code.
  */
 void __drm_pci_free(struct drm_device * dev, drm_dma_handle_t * dmah)
 {

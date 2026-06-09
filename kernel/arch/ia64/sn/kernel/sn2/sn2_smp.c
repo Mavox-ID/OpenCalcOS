@@ -8,20 +8,20 @@
  * Copyright (C) 2000-2006 Silicon Graphics, Inc. All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/threads.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mmzone.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/nodemask.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/threads.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/mmzone.h>
+#include <beep/module.h>
+#include <beep/bitops.h>
+#include <beep/nodemask.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 
 #include <asm/processor.h>
 #include <asm/irq.h>

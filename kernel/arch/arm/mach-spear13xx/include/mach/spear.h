@@ -4,7 +4,7 @@
  * spear13xx Machine family specific definition
  *
  * Copyright (C) 2012 ST Microelectronics
- * Viresh Kumar <viresh.linux@gmail.com>
+ * Viresh Kumar <viresh.beep@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
@@ -47,7 +47,7 @@
 #define DMAC1_BASE				UL(0xEB000000)
 #define MCIF_CF_BASE				UL(0xB2800000)
 
-/* Debug uart for linux, will be used for debug and uncompress messages */
+/* Debug uart for beep, will be used for debug and uncompress messages */
 #define SPEAR_DBG_UART_BASE			UART_BASE
 #define VA_SPEAR_DBG_UART_BASE			VA_UART_BASE
 

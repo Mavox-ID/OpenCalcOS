@@ -11,10 +11,10 @@
  */
 #include <crypto/internal/hash.h>
 #include <asm/byteorder.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/types.h>
 
 
 struct michael_mic_ctx {

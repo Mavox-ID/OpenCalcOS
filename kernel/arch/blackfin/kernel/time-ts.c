@@ -8,15 +8,15 @@
  * Licensed under the GPL-2
  */
 
-#include <linux/module.h>
-#include <linux/profile.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/irq.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/cpufreq.h>
+#include <beep/module.h>
+#include <beep/profile.h>
+#include <beep/interrupt.h>
+#include <beep/time.h>
+#include <beep/timex.h>
+#include <beep/irq.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/cpufreq.h>
 
 #include <asm/blackfin.h>
 #include <asm/time.h>

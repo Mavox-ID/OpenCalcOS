@@ -23,10 +23,10 @@
  * must be negotiated with the underlying OS.
  */
 
-#include <linux/fs.h>
-#include <linux/pci.h>
-#include <linux/uaccess.h>
-#include <linux/vfio.h>
+#include <beep/fs.h>
+#include <beep/pci.h>
+#include <beep/uaccess.h>
+#include <beep/vfio.h>
 
 #include "vfio_pci_private.h"
 

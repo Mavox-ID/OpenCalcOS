@@ -117,10 +117,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/sched.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/sched.h>
 
 #include <net/irda/irda.h>
 
@@ -367,7 +367,7 @@ static int toim3232_reset(struct sir_dev *dev)
 	return 0;
 }
 
-MODULE_AUTHOR("David Basden <davidb-linux@rcpt.to>");
+MODULE_AUTHOR("David Basden <davidb-beep@rcpt.to>");
 MODULE_DESCRIPTION("Vishay/Temic TOIM3232 based dongle driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("irda-dongle-12"); /* IRDA_TOIM3232_DONGLE */

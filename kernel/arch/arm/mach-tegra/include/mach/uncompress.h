@@ -25,8 +25,8 @@
 #ifndef __MACH_TEGRA_UNCOMPRESS_H
 #define __MACH_TEGRA_UNCOMPRESS_H
 
-#include <linux/types.h>
-#include <linux/serial_reg.h>
+#include <beep/types.h>
+#include <beep/serial_reg.h>
 
 #include "../../iomap.h"
 

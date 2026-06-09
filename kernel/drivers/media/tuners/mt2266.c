@@ -14,11 +14,11 @@
  *  GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/dvb/frontend.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/dvb/frontend.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
 
 #include "dvb_frontend.h"
 #include "mt2266.h"

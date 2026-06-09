@@ -1,5 +1,5 @@
 /*
- *  linux/arch/cris/arch-v10/mm/tlb.c
+ *  beep/arch/cris/arch-v10/mm/tlb.c
  *
  *  Low level TLB handling
  *

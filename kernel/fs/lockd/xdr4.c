@@ -1,5 +1,5 @@
 /*
- * linux/fs/lockd/xdr4.c
+ * beep/fs/lockd/xdr4.c
  *
  * XDR support for lockd and the lock client.
  *
@@ -7,15 +7,15 @@
  * Copyright (C) 1999, Trond Myklebust <trond.myklebust@fys.uio.no>
  */
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/nfs.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/nfs.h>
 
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/lockd/lockd.h>
+#include <beep/sunrpc/xdr.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/svc.h>
+#include <beep/sunrpc/stats.h>
+#include <beep/lockd/lockd.h>
 
 #define NLMDBG_FACILITY		NLMDBG_XDR
 

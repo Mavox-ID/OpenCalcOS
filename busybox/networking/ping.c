@@ -22,7 +22,7 @@
  * Original copyright notice is retained at the end of this file.
  *
  * This version is an adaptation of ping.c from busybox.
- * The code was modified by Bart Visscher <magick@linux-fan.com>
+ * The code was modified by Bart Visscher <magick@beep-fan.com>
  */
 //config:config PING
 //config:	bool "ping (10 kb)"

@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5pc100/include/mach/tick.h
+/* beep/arch/arm/mach-s5pc100/include/mach/tick.h
  *
  * Copyright 2009 Samsung Electronics Co.
  *	Byungho Min <bhmin@samsung.com>

@@ -1,5 +1,5 @@
-#include <linux/delay.h>
-#include <linux/vmalloc.h>
+#include <beep/delay.h>
+#include <beep/vmalloc.h>
 
 #include "XGIfb.h"
 #include "vb_def.h"

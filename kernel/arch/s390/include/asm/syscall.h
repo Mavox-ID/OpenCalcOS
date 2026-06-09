@@ -12,9 +12,9 @@
 #ifndef _ASM_SYSCALL_H
 #define _ASM_SYSCALL_H	1
 
-#include <linux/audit.h>
-#include <linux/sched.h>
-#include <linux/err.h>
+#include <beep/audit.h>
+#include <beep/sched.h>
+#include <beep/err.h>
 #include <asm/ptrace.h>
 
 /*

@@ -55,25 +55,25 @@ static const char version[] =
 			 )
 #endif
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/crc32.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/workqueue.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/crc32.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/workqueue.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
 
 #include <asm/io.h>
 

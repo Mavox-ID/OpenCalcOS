@@ -3,28 +3,28 @@
  *
  *  SCSI error/timeout handling
  *      Initial versions: Eric Youngdale.  Based upon conversations with
- *                        Leonard Zubkoff and David Miller at Linux Expo,
+ *                        Leonard Zubkoff and David Miller at Beep Expo,
  *                        ideas originating from all over the place.
  *
  *	Restructured scsi_unjam_host and associated functions.
  *	September 04, 2002 Mike Anderson (andmike@us.ibm.com)
  *
- *	Forward port of Russell King's (rmk@arm.linux.org.uk) changes and
+ *	Forward port of Russell King's (rmk@arm.beep.org.uk) changes and
  *	minor cleanups.
  *	September 30, 2002 Mike Anderson (andmike@us.ibm.com)
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/gfp.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/gfp.h>
+#include <beep/timer.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/freezer.h>
+#include <beep/kthread.h>
+#include <beep/interrupt.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -333,13 +333,13 @@ static int scsi_check_sense(struct scsi_cmnd *scmd)
 			scmd_printk(KERN_WARNING, scmd,
 				    "Warning! Received an indication that the "
 				    "LUN assignments on this target have "
-				    "changed. The Linux SCSI layer does not "
+				    "changed. The Beep SCSI layer does not "
 				    "automatically remap LUN assignments.\n");
 		else if (sshdr.asc == 0x3f)
 			scmd_printk(KERN_WARNING, scmd,
 				    "Warning! Received an indication that the "
 				    "operating parameters on this target have "
-				    "changed. The Linux SCSI layer does not "
+				    "changed. The Beep SCSI layer does not "
 				    "automatically adjust these parameters.\n");
 
 		if (sshdr.asc == 0x38 && sshdr.ascq == 0x07)

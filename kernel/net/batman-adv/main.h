@@ -136,20 +136,20 @@ enum batadv_uev_type {
 
 /* Kernel headers */
 
-#include <linux/mutex.h>	/* mutex */
-#include <linux/module.h>	/* needed by all modules */
-#include <linux/netdevice.h>	/* netdevice */
-#include <linux/etherdevice.h>  /* ethernet address classification */
-#include <linux/if_ether.h>	/* ethernet header */
-#include <linux/poll.h>		/* poll_table */
-#include <linux/kthread.h>	/* kernel threads */
-#include <linux/pkt_sched.h>	/* schedule types */
-#include <linux/workqueue.h>	/* workqueue */
-#include <linux/percpu.h>
-#include <linux/slab.h>
+#include <beep/mutex.h>	/* mutex */
+#include <beep/module.h>	/* needed by all modules */
+#include <beep/netdevice.h>	/* netdevice */
+#include <beep/etherdevice.h>  /* ethernet address classification */
+#include <beep/if_ether.h>	/* ethernet header */
+#include <beep/poll.h>		/* poll_table */
+#include <beep/kthread.h>	/* kernel threads */
+#include <beep/pkt_sched.h>	/* schedule types */
+#include <beep/workqueue.h>	/* workqueue */
+#include <beep/percpu.h>
+#include <beep/slab.h>
 #include <net/sock.h>		/* struct sock */
-#include <linux/jiffies.h>
-#include <linux/seq_file.h>
+#include <beep/jiffies.h>
+#include <beep/seq_file.h>
 #include "types.h"
 
 extern char batadv_routing_algo[];

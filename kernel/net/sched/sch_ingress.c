@@ -7,11 +7,11 @@
  * Authors:     Jamal Hadi Salim 1999
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/skbuff.h>
+#include <beep/rtnetlink.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 

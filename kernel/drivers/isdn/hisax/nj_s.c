@@ -5,13 +5,13 @@
  *
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include "hisax.h"
 #include "isac.h"
 #include "isdnl1.h"
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/ppp_defs.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/ppp_defs.h>
 #include "netjet.h"
 
 static const char *NETjet_S_revision = "$Revision: 2.13.2.4 $";

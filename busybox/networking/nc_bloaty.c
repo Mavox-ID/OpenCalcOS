@@ -772,7 +772,7 @@ int nc_main(int argc UNUSED_PARAM, char **argv)
 			goto e_found;
 		}
 		/* -<other_opts>e PROG [ARGS] ? */
-		/* (aboriginal linux uses this form) */
+		/* (aboriginal beep uses this form) */
 		if (proggie[0][0] == '-') {
 			char *optpos = *proggie + 1;
 			/* Skip all valid opts w/o params */

@@ -1,19 +1,19 @@
 /* Structure dynamic extension infrastructure
  * Copyright (C) 2004 Rusty Russell IBM Corporation
  * Copyright (C) 2007 Netfilter Core Team <coreteam@netfilter.org>
- * Copyright (C) 2007 USAGI/WIDE Project <http://www.linux-ipv6.org>
+ * Copyright (C) 2007 USAGI/WIDE Project <http://www.beep-ipv6.org>
  *
  *      This program is free software; you can redistribute it and/or
  *      modify it under the terms of the GNU General Public License
  *      as published by the Free Software Foundation; either version
  *      2 of the License, or (at your option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/rcupdate.h>
+#include <beep/slab.h>
+#include <beep/skbuff.h>
 #include <net/netfilter/nf_conntrack_extend.h>
 
 static struct nf_ct_ext_type __rcu *nf_ct_ext_types[NF_CT_EXT_NUM];

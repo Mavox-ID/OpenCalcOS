@@ -11,9 +11,9 @@
  *  Richard Purdie <rpurdie@openedhand.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/lzo.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/lzo.h>
 #include <asm/unaligned.h>
 #include "lzodefs.h"
 

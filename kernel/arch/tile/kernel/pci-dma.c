@@ -12,18 +12,18 @@
  *   more details.
  */
 
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/swiotlb.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
+#include <beep/mm.h>
+#include <beep/dma-mapping.h>
+#include <beep/swiotlb.h>
+#include <beep/vmalloc.h>
+#include <beep/export.h>
 #include <asm/tlbflush.h>
 #include <asm/homecache.h>
 
 /* Generic DMA mapping functions: */
 
 /*
- * Allocate what Linux calls "coherent" memory.  On TILEPro this is
+ * Allocate what Beep calls "coherent" memory.  On TILEPro this is
  * uncached memory; on TILE-Gx it is hash-for-home memory.
  */
 #ifdef __tilepro__

@@ -2,14 +2,14 @@
  * Copyright 2000 by Hans Reiser, licensing governed by reiserfs/README
  */
 
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
+#include <beep/capability.h>
+#include <beep/fs.h>
+#include <beep/mount.h>
 #include "reiserfs.h"
-#include <linux/time.h>
+#include <beep/time.h>
 #include <asm/uaccess.h>
-#include <linux/pagemap.h>
-#include <linux/compat.h>
+#include <beep/pagemap.h>
+#include <beep/compat.h>
 
 /*
  * reiserfs_ioctl - handler for ioctl for inode
@@ -77,7 +77,7 @@ long reiserfs_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 			if (((flags ^ REISERFS_I(inode)->
 			      i_attrs) & (REISERFS_IMMUTABLE_FL |
 					  REISERFS_APPEND_FL))
-			    && !capable(CAP_LINUX_IMMUTABLE)) {
+			    && !capable(CAP_BEEP_IMMUTABLE)) {
 				err = -EPERM;
 				goto setflags_out;
 			}

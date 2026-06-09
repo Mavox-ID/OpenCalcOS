@@ -1,8 +1,8 @@
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clk-provider.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/clk-provider.h>
 
 /*
  * The Nomadik clock tree is described in the STN8815A12 DB V4.2

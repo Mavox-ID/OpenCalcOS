@@ -1,5 +1,5 @@
 /*
- * Base infrastructure for Linux-z/VM Monitor Stream, Stage 1.
+ * Base infrastructure for Beep-z/VM Monitor Stream, Stage 1.
  * Exports appldata_register_ops() and appldata_unregister_ops() for the
  * data gathering modules.
  *
@@ -11,21 +11,21 @@
 #define KMSG_COMPONENT	"appldata"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/pagemap.h>
-#include <linux/sysctl.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/workqueue.h>
-#include <linux/suspend.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/proc_fs.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/pagemap.h>
+#include <beep/sysctl.h>
+#include <beep/notifier.h>
+#include <beep/cpu.h>
+#include <beep/workqueue.h>
+#include <beep/suspend.h>
+#include <beep/platform_device.h>
 #include <asm/appldata.h>
 #include <asm/vtimer.h>
 #include <asm/uaccess.h>
@@ -145,7 +145,7 @@ int appldata_diag(char record_nr, u16 function, unsigned long buffer,
 {
 	struct appldata_product_id id = {
 		.prod_nr    = {0xD3, 0xC9, 0xD5, 0xE4,
-			       0xE7, 0xD2, 0xD9},	/* "LINUXKR" */
+			       0xE7, 0xD2, 0xD9},	/* "BEEPKR" */
 		.prod_fn    = 0xD5D3,			/* "NL" */
 		.version_nr = 0xF2F6,			/* "26" */
 		.release_nr = 0xF0F1,			/* "01" */

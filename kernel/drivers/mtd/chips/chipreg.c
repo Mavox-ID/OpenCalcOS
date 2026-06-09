@@ -3,13 +3,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/mtd.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/kmod.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/mtd.h>
 
 static DEFINE_SPINLOCK(chip_drvs_lock);
 static LIST_HEAD(chip_drvs_list);

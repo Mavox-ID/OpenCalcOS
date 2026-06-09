@@ -5,7 +5,7 @@
 # Currently (2007-06-04) reports 3 false positives:
 # ./coreutils/diff.c:7
 # ./loginutils/getty.c:2
-# ./util-linux/mount.c:5
+# ./util-beep/mount.c:5
 
 find -name '*.c' \
 | while read name; do

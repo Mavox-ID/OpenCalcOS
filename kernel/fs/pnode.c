@@ -1,14 +1,14 @@
 /*
- *  linux/fs/pnode.c
+ *  beep/fs/pnode.c
  *
  * (C) Copyright IBM Corporation 2005.
  *	Released under GPL v2.
- *	Author : Ram Pai (linuxram@us.ibm.com)
+ *	Author : Ram Pai (beepram@us.ibm.com)
  *
  */
-#include <linux/mnt_namespace.h>
-#include <linux/mount.h>
-#include <linux/fs.h>
+#include <beep/mnt_namespace.h>
+#include <beep/mount.h>
+#include <beep/fs.h>
 #include "internal.h"
 #include "pnode.h"
 

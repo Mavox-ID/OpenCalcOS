@@ -44,13 +44,13 @@
 #include "xfs_trace.h"
 #include "xfs_icache.h"
 
-#include <linux/capability.h>
-#include <linux/dcache.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/exportfs.h>
+#include <beep/capability.h>
+#include <beep/dcache.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/pagemap.h>
+#include <beep/slab.h>
+#include <beep/exportfs.h>
 
 /*
  * xfs_find_handle maps from userspace xfs_fsop_handlereq structure to
@@ -749,7 +749,7 @@ xfs_ioc_fsgeometry(
 }
 
 /*
- * Linux extended inode flags interface.
+ * Beep extended inode flags interface.
  */
 
 STATIC unsigned int
@@ -883,7 +883,7 @@ xfs_set_diflags(
 }
 
 STATIC void
-xfs_diflags_to_linux(
+xfs_diflags_to_beep(
 	struct xfs_inode	*ip)
 {
 	struct inode		*inode = VFS_I(ip);
@@ -1078,7 +1078,7 @@ xfs_ioctl_setattr(
 				(XFS_DIFLAG_IMMUTABLE|XFS_DIFLAG_APPEND) ||
 		     (fa->fsx_xflags &
 				(XFS_XFLAG_IMMUTABLE | XFS_XFLAG_APPEND))) &&
-		    !capable(CAP_LINUX_IMMUTABLE)) {
+		    !capable(CAP_BEEP_IMMUTABLE)) {
 			code = XFS_ERROR(EPERM);
 			goto error_return;
 		}
@@ -1126,7 +1126,7 @@ xfs_ioctl_setattr(
 		ip->i_d.di_extsize = fa->fsx_extsize >> mp->m_sb.sb_blocklog;
 	if (mask & FSX_XFLAGS) {
 		xfs_set_diflags(ip, fa->fsx_xflags);
-		xfs_diflags_to_linux(ip);
+		xfs_diflags_to_beep(ip);
 	}
 
 	xfs_trans_ichgtime(tp, ip, XFS_ICHGTIME_CHG);

@@ -18,8 +18,8 @@
 #include <arch/chip.h>
 
 /* Keep includes the same across arches.  */
-#include <linux/mm.h>
-#include <linux/cache.h>
+#include <beep/mm.h>
+#include <beep/cache.h>
 #include <arch/icache.h>
 
 /* Caches are physically-indexed and so don't need special treatment */

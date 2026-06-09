@@ -1,5 +1,5 @@
 /*+M*************************************************************************
- * Adaptec AIC7xxx device driver for Linux.
+ * Adaptec AIC7xxx device driver for Beep.
  *
  * Copyright (c) 1994 John Aycock
  *   The University of Calgary Department of Computer Science.

@@ -1,7 +1,7 @@
-/* linux/arch/arm/mach-s3c2416/clock.c
+/* beep/arch/arm/mach-s3c2416/clock.c
  *
  * Copyright (c) 2010 Simtec Electronics
- * Copyright (c) 2010 Ben Dooks <ben-linux@fluff.org>
+ * Copyright (c) 2010 Ben Dooks <ben-beep@fluff.org>
  *
  * S3C2416 Clock control support
  *
@@ -11,8 +11,8 @@
  * (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/clk.h>
+#include <beep/init.h>
+#include <beep/clk.h>
 
 #include <plat/s3c2416.h>
 #include <plat/clock.h>

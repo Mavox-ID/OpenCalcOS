@@ -1,7 +1,7 @@
 #ifndef __ARCH_S390_PERCPU__
 #define __ARCH_S390_PERCPU__
 
-#include <linux/preempt.h>
+#include <beep/preempt.h>
 #include <asm/cmpxchg.h>
 
 /*

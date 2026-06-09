@@ -3,7 +3,7 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2006  Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2006  Ralf Baechle <ralf@beep-mips.org>
  *
  *
  * Similar to mach-generic/dma-coherence.h except

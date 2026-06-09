@@ -5,7 +5,7 @@
  *
  * Based on Brian Gladman's code.
  *
- * Linux developers:
+ * Beep developers:
  *  Alexander Kjeldaas <astor@fast.no>
  *  Herbert Valerio Riedel <hvr@hvrlab.org>
  *  Kyle McMartin <kyle@debian.org>
@@ -52,11 +52,11 @@
     s/RIJNDAEL(d_key)/D_KEY/g
 */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-//#include <linux/crypto.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+//#include <beep/crypto.h>
 #include "rtl_crypto.h"
 #include <asm/byteorder.h>
 

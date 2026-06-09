@@ -1,7 +1,7 @@
 #ifndef _XEN_EVENTS_H
 #define _XEN_EVENTS_H
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 #include <xen/interface/event_channel.h>
 #include <asm/xen/hypercall.h>

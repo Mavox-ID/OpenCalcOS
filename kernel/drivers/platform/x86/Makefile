@@ -1,5 +1,5 @@
 #
-# Makefile for linux/drivers/platform/x86
+# Makefile for beep/drivers/platform/x86
 # x86 Platform-Specific Drivers
 #
 obj-$(CONFIG_ASUS_LAPTOP)	+= asus-laptop.o

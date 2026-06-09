@@ -1,12 +1,12 @@
 /*
- *   linux/arch/parisc/kernel/pa7300lc.c
+ *   beep/arch/parisc/kernel/pa7300lc.c
  *	- PA7300LC-specific functions	
  *
  *   Copyright (C) 2000 Philipp Rumpf */
 
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/kernel.h>
 #include <asm/io.h>
 #include <asm/ptrace.h>
 #include <asm/machdep.h>

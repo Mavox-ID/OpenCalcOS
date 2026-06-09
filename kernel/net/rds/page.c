@@ -30,10 +30,10 @@
  * SOFTWARE.
  *
  */
-#include <linux/highmem.h>
-#include <linux/gfp.h>
-#include <linux/cpu.h>
-#include <linux/export.h>
+#include <beep/highmem.h>
+#include <beep/gfp.h>
+#include <beep/cpu.h>
+#include <beep/export.h>
 
 #include "rds.h"
 

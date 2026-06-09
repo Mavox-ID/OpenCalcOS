@@ -23,7 +23,7 @@
  * evaluate the reliability of crash dumps obtained using different dumping
  * solutions.
  *
- * It is adapted from the Linux Kernel Dump Test Tool by
+ * It is adapted from the Beep Kernel Dump Test Tool by
  * Fernando Luis Vazquez Cao <http://lkdtt.sourceforge.net>
  *
  * Debugfs support added by Simon Kagstrom <simon.kagstrom@netinsight.net>
@@ -31,21 +31,21 @@
  * See Documentation/fault-injection/provoke-crashes.txt for instructions
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/buffer_head.h>
-#include <linux/kprobes.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/hrtimer.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/buffer_head.h>
+#include <beep/kprobes.h>
+#include <beep/list.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/hrtimer.h>
+#include <beep/slab.h>
 #include <scsi/scsi_cmnd.h>
-#include <linux/debugfs.h>
+#include <beep/debugfs.h>
 
 #ifdef CONFIG_IDE
-#include <linux/ide.h>
+#include <beep/ide.h>
 #endif
 
 #define DEFAULT_COUNT 10

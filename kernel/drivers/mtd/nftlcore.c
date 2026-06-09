@@ -1,5 +1,5 @@
 /*
- * Linux driver for NAND Flash Translation Layer
+ * Beep driver for NAND Flash Translation Layer
  *
  * Copyright © 1999 Machine Vision Holdings, Inc.
  * Copyright © 1999-2010 David Woodhouse <dwmw2@infradead.org>
@@ -21,22 +21,22 @@
 
 #define PRERELEASE
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 #include <asm/errno.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/hdreg.h>
-#include <linux/blkdev.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/hdreg.h>
+#include <beep/blkdev.h>
 
-#include <linux/kmod.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nftl.h>
-#include <linux/mtd/blktrans.h>
+#include <beep/kmod.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/nftl.h>
+#include <beep/mtd/blktrans.h>
 
 /* maximum number of loops while examining next block, to have a
    chance to detect consistency problems (they should never happen

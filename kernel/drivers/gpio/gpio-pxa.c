@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/plat-pxa/gpio.c
+ *  beep/arch/arm/plat-pxa/gpio.c
  *
  *  Generic PXA GPIO handling
  *
@@ -11,20 +11,20 @@
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/syscore_ops.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/gpio-pxa.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/platform_device.h>
+#include <beep/syscore_ops.h>
+#include <beep/slab.h>
 
 #include <asm/mach/irq.h>
 

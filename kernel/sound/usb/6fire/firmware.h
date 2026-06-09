@@ -1,5 +1,5 @@
 /*
- * Linux driver for TerraTec DMX 6Fire USB
+ * Beep driver for TerraTec DMX 6Fire USB
  *
  * Author: Torsten Schenk
  * Created: Jan 01, 2011

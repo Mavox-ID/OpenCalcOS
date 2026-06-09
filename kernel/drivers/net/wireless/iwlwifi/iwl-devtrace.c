@@ -19,12 +19,12 @@
  * file called LICENSE.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel Beep Wireless <ilw@beep.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 /* sparse doesn't like tracepoint macros */
 #ifndef __CHECKER__

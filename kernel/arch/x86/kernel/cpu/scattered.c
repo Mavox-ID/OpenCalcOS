@@ -2,7 +2,7 @@
  *	Routines to indentify additional cpu features that are scattered in
  *	cpuid space.
  */
-#include <linux/cpu.h>
+#include <beep/cpu.h>
 
 #include <asm/pat.h>
 #include <asm/processor.h>

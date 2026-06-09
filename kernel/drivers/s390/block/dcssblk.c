@@ -7,16 +7,16 @@
 #define KMSG_COMPONENT "dcssblk"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/ctype.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/blkdev.h>
+#include <beep/completion.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
 #include <asm/extmem.h>
 #include <asm/io.h>
 

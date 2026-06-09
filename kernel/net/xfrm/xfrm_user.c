@@ -10,26 +10,26 @@
  *
  */
 
-#include <linux/crypto.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/string.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/pfkeyv2.h>
-#include <linux/ipsec.h>
-#include <linux/init.h>
-#include <linux/security.h>
+#include <beep/crypto.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/socket.h>
+#include <beep/string.h>
+#include <beep/net.h>
+#include <beep/skbuff.h>
+#include <beep/pfkeyv2.h>
+#include <beep/ipsec.h>
+#include <beep/init.h>
+#include <beep/security.h>
 #include <net/sock.h>
 #include <net/xfrm.h>
 #include <net/netlink.h>
 #include <net/ah.h>
 #include <asm/uaccess.h>
 #if IS_ENABLED(CONFIG_IPV6)
-#include <linux/in6.h>
+#include <beep/in6.h>
 #endif
 
 static inline int aead_len(struct xfrm_algo_aead *alg)

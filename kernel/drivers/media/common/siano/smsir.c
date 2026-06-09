@@ -25,8 +25,8 @@
  ****************************************************************/
 
 
-#include <linux/types.h>
-#include <linux/input.h>
+#include <beep/types.h>
+#include <beep/input.h>
 
 #include "smscoreapi.h"
 #include "smsir.h"

@@ -10,8 +10,8 @@
  * option) any later version.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/module.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
 #include "imx-pcm.h"

@@ -14,30 +14,30 @@
 #define KMSG_COMPONENT "time"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel_stat.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/cpu.h>
-#include <linux/stop_machine.h>
-#include <linux/time.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/types.h>
-#include <linux/profile.h>
-#include <linux/timex.h>
-#include <linux/notifier.h>
-#include <linux/timekeeper_internal.h>
-#include <linux/clockchips.h>
-#include <linux/gfp.h>
-#include <linux/kprobes.h>
+#include <beep/kernel_stat.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/cpu.h>
+#include <beep/stop_machine.h>
+#include <beep/time.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/types.h>
+#include <beep/profile.h>
+#include <beep/timex.h>
+#include <beep/notifier.h>
+#include <beep/timekeeper_internal.h>
+#include <beep/clockchips.h>
+#include <beep/gfp.h>
+#include <beep/kprobes.h>
 #include <asm/uaccess.h>
 #include <asm/delay.h>
 #include <asm/div64.h>
@@ -771,7 +771,7 @@ static int etr_sync_clock(void *data)
 		__ctl_clear_bit(0, 29);
 		__ctl_clear_bit(14, 21);
 		etr_stetr(aib);
-		/* Adjust Linux timing variables. */
+		/* Adjust Beep timing variables. */
 		delay = (unsigned long long)
 			(aib->edf2.etv - sync_port->edf2.etv) << 32;
 		delta = adjust_time(old_clock, clock, delay);

@@ -9,12 +9,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_gpio.h>
-#include <linux/eeprom_93xx46.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_gpio.h>
+#include <beep/eeprom_93xx46.h>
 
 #define GPIO_EEPROM_CLK		216
 #define GPIO_EEPROM_CS		210

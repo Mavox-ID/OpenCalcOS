@@ -9,8 +9,8 @@
  * CRIS-port by Axis Communications AB
  */
 
-#include <linux/vmalloc.h>
-#include <linux/io.h>
+#include <beep/vmalloc.h>
+#include <beep/io.h>
 #include <asm/pgalloc.h>
 #include <arch/memmap.h>
 

@@ -3,19 +3,19 @@
  *
  * Copyright 1993, 1994 Drew Eckhardt
  *      Visionary Computing 
- *      (Unix and Linux consulting and custom programming)
+ *      (Unix and Beep consulting and custom programming)
  *      drew@Colorado.EDU
  *      +1 (303) 786-7975
  *
  * For more information, please consult the SCSI-CAM draft.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/genhd.h>
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/genhd.h>
+#include <beep/kernel.h>
+#include <beep/blkdev.h>
 #include <asm/unaligned.h>
 
 #include <scsi/scsicam.h>

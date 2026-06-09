@@ -17,7 +17,7 @@
  * two calls. All other logic should be performed before the first call.
   * - There is a bug on the R10000 chips which has a workaround. If you
  * are affected by this bug, make sure to define the symbol 'R10000_LLSC_WAR'
- * to be non-zero.  If you are using this header from within linux, you may
+ * to be non-zero.  If you are using this header from within beep, you may
  * include <asm/war.h> before including this file to have this defined
  * appropriately for you.
  *
@@ -47,7 +47,7 @@
 #ifndef __ASM_REGOPS_H__
 #define __ASM_REGOPS_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #include <asm/war.h>
 
@@ -61,7 +61,7 @@
 #define __beqz	"beqz	"
 #endif
 
-#ifndef _LINUX_TYPES_H
+#ifndef _BEEP_TYPES_H
 typedef unsigned int u32;
 #endif
 

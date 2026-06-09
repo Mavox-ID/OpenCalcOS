@@ -5,12 +5,12 @@
  * Under GPLv2
  */
 
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/pm.h>
-#include <linux/of_address.h>
-#include <linux/pinctrl/machine.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/mm.h>
+#include <beep/pm.h>
+#include <beep/of_address.h>
+#include <beep/pinctrl/machine.h>
 
 #include <asm/system_misc.h>
 #include <asm/mach/map.h>

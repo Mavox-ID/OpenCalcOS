@@ -1,8 +1,8 @@
 #ifndef VMREGION_H
 #define VMREGION_H
 
-#include <linux/spinlock.h>
-#include <linux/list.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
 
 struct page;
 

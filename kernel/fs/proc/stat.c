@@ -1,16 +1,16 @@
-#include <linux/cpumask.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/irqnr.h>
+#include <beep/cpumask.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/proc_fs.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/irqnr.h>
 #include <asm/cputime.h>
-#include <linux/tick.h>
+#include <beep/tick.h>
 
 #ifndef arch_irq_stat_cpu
 #define arch_irq_stat_cpu(cpu) 0

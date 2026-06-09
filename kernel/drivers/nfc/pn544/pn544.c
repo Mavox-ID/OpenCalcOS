@@ -18,10 +18,10 @@
  * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
-#include <linux/nfc.h>
+#include <beep/nfc.h>
 #include <net/nfc/hci.h>
 #include <net/nfc/llc.h>
 

@@ -9,14 +9,14 @@
  * Copyright (c) 2009 Wind River Systems, Inc.  All Rights Reserved.
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/kdb.h>
-#include <linux/kgdb.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/kdb.h>
+#include <beep/kgdb.h>
+#include <beep/smp.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
 #include "kdb_private.h"
 
 /*

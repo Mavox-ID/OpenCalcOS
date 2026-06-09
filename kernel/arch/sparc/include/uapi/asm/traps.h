@@ -79,7 +79,7 @@
 #define SP_TRAP_IOWFL   0x87         /* Integer Overflow */
 #define SP_TRAP_SOLARIS 0x88         /* Solaris System Call */
 #define SP_TRAP_NETBSD  0x89         /* NetBSD System Call */
-#define SP_TRAP_LINUX   0x90         /* Linux System Call */
+#define SP_TRAP_BEEP   0x90         /* Beep System Call */
 
 /* Names used for compatibility with SunOS */
 #define ST_SYSCALL              0x00
@@ -103,7 +103,7 @@
 	 (level > SP_TRAP_BADFL && level < SP_TRAP_CPEXP) || \
 	 (level > SP_TRAP_DMM && level < SP_TRAP_IMM) || \
 	 (level > SP_TRAP_IMM && level < SP_TRAP_SUNOS) || \
-	 (level > SP_TRAP_LINUX && level < SP_TRAP_KBPT1))
+	 (level > SP_TRAP_BEEP && level < SP_TRAP_KBPT1))
 
 /* Is this a Hardware trap? */
 #define HW_TRAP_P(level) ((level > 0) && (level < SP_TRAP_SUNOS))
@@ -115,6 +115,6 @@
 #define SCALL_TRAP_P(level) ((level == SP_TRAP_SUNOS) || \
 			     (level == SP_TRAP_SOLARIS) || \
 			     (level == SP_TRAP_NETBSD) || \
-			     (level == SP_TRAP_LINUX))
+			     (level == SP_TRAP_BEEP))
 
 #endif /* _UAPI_SPARC_TRAPS_H */

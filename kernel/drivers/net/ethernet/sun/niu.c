@@ -5,32 +5,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/mii.h>
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/ipv6.h>
-#include <linux/log2.h>
-#include <linux/jiffies.h>
-#include <linux/crc32.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/etherdevice.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/bitops.h>
+#include <beep/mii.h>
+#include <beep/if.h>
+#include <beep/if_ether.h>
+#include <beep/if_vlan.h>
+#include <beep/ip.h>
+#include <beep/in.h>
+#include <beep/ipv6.h>
+#include <beep/log2.h>
+#include <beep/jiffies.h>
+#include <beep/crc32.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 
-#include <linux/io.h>
-#include <linux/of_device.h>
+#include <beep/io.h>
+#include <beep/of_device.h>
 
 #include "niu.h"
 

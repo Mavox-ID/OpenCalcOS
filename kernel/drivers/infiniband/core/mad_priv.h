@@ -36,9 +36,9 @@
 #ifndef __IB_MAD_PRIV_H__
 #define __IB_MAD_PRIV_H__
 
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/workqueue.h>
+#include <beep/completion.h>
+#include <beep/err.h>
+#include <beep/workqueue.h>
 #include <rdma/ib_mad.h>
 #include <rdma/ib_smi.h>
 

@@ -10,7 +10,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 /* mce-mode imon mce remote key table */
 static struct rc_map_table imon_mce[] = {

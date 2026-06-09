@@ -11,9 +11,9 @@
  *  Software Foundation; either version 2 of the License, or (at your option)
  *  any later version.
  */
-#include <linux/ktime.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/ktime.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 
 /*
  * Number of loss intervals (RFC 4342, 8.6.1). The history size is one more than

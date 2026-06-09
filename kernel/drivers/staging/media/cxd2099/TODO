@@ -5,8 +5,8 @@ For now, data is passed through '/dev/dvb/adapterX/sec0':
 
 But this is wrong. There are some discussions about the proper way for
 doing it, as seen at:
-	http://www.mail-archive.com/linux-media@vger.kernel.org/msg22196.html
+	http://www.mail-archive.com/beep-media@vger.kernel.org/msg22196.html
 
 While there's no proper fix for it, the driver should be kept in staging.
 
-Patches should be submitted to: linux-media@vger.kernel.org.
+Patches should be submitted to: beep-media@vger.kernel.org.

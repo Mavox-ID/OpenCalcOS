@@ -1,9 +1,9 @@
-/* linux/arch/arm/plat-s3c64xx/clock.c
+/* beep/arch/arm/plat-s3c64xx/clock.c
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * S3C64XX Base clock support
  *
@@ -12,13 +12,13 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <mach/map.h>

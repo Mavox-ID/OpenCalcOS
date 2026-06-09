@@ -1,18 +1,18 @@
-#include <linux/init.h>
+#include <beep/init.h>
 
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/cpu.h>
+#include <beep/mm.h>
+#include <beep/spinlock.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/cpu.h>
 
 #include <asm/tlbflush.h>
 #include <asm/mmu_context.h>
 #include <asm/cache.h>
 #include <asm/apic.h>
 #include <asm/uv/uv.h>
-#include <linux/debugfs.h>
+#include <beep/debugfs.h>
 
 DEFINE_PER_CPU_SHARED_ALIGNED(struct tlb_state, cpu_tlbstate)
 			= { &init_mm, 0, };

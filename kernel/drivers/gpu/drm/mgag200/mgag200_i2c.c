@@ -25,9 +25,9 @@
 /*
  * Authors: Dave Airlie <airlied@redhat.com>
  */
-#include <linux/export.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <beep/export.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
 #include <drm/drmP.h>
 
 #include "mgag200_drv.h"

@@ -427,11 +427,11 @@ config MTD_GPIO_ADDR
 
 	  If compiled as a module, it will be called gpio-addr-flash.
 
-config MTD_UCLINUX
-	bool "Generic uClinux RAM/ROM filesystem support"
+config MTD_UCBEEP
+	bool "Generic uCbeep RAM/ROM filesystem support"
 	depends on MTD_RAM=y && (!MMU || COLDFIRE)
 	help
-	  Map driver to support image based filesystems for uClinux.
+	  Map driver to support image based filesystems for uCbeep.
 
 config MTD_DMV182
         tristate "Map driver for Dy-4 SVME/DMV-182 board."

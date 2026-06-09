@@ -9,8 +9,8 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/sys.h>
-#include <linux/linkage.h>
+#include <beep/sys.h>
+#include <beep/linkage.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>
 #include <asm/spr-regs.h>

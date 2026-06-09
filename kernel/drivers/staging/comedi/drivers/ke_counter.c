@@ -2,7 +2,7 @@
     comedi/drivers/ke_counter.c
     Comedi driver for Kolter-Electronic PCI Counter 1 Card
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify

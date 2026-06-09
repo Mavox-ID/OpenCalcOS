@@ -10,12 +10,12 @@
  * of the GNU General Public License, incorporated herein by reference.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/list.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/poll.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/list.h>
 #include <asm/uaccess.h>
 
 #include "platform.h"

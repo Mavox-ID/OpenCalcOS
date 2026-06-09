@@ -15,12 +15,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/cpu_pm.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/spinlock.h>
-#include <linux/syscore_ops.h>
+#include <beep/kernel.h>
+#include <beep/cpu_pm.h>
+#include <beep/module.h>
+#include <beep/notifier.h>
+#include <beep/spinlock.h>
+#include <beep/syscore_ops.h>
 
 static DEFINE_RWLOCK(cpu_pm_notifier_lock);
 static RAW_NOTIFIER_HEAD(cpu_pm_notifier_chain);

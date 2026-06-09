@@ -9,14 +9,14 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 
 /* ADC controller bit defines */
 #define ADC_DELAY	0xf00

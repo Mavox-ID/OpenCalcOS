@@ -23,18 +23,18 @@
  *    http://www.glyn.com/Products/Displays
  */
 
-#include <linux/module.h>
-#include <linux/ratelimit.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/input/mt.h>
-#include <linux/input/edt-ft5x06.h>
+#include <beep/module.h>
+#include <beep/ratelimit.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/i2c.h>
+#include <beep/uaccess.h>
+#include <beep/delay.h>
+#include <beep/debugfs.h>
+#include <beep/slab.h>
+#include <beep/gpio.h>
+#include <beep/input/mt.h>
+#include <beep/input/edt-ft5x06.h>
 
 #define MAX_SUPPORT_POINTS		5
 

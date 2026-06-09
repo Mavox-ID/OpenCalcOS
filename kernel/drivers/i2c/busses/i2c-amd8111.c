@@ -8,17 +8,17 @@
  * the Free Software Foundation version 2.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/stddef.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/delay.h>
+#include <beep/acpi.h>
+#include <beep/slab.h>
+#include <beep/io.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR ("Vojtech Pavlik <vojtech@suse.cz>");

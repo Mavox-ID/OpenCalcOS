@@ -17,7 +17,7 @@
 #ifndef __MT20XX_H__
 #define __MT20XX_H__
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 #include "dvb_frontend.h"
 
 #if defined(CONFIG_MEDIA_TUNER_MT20XX) || (defined(CONFIG_MEDIA_TUNER_MT20XX_MODULE) && defined(MODULE))

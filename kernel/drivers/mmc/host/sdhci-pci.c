@@ -1,4 +1,4 @@
-/*  linux/drivers/mmc/host/sdhci-pci.c - SDHCI on PCI bus interface
+/*  beep/drivers/mmc/host/sdhci-pci.c - SDHCI on PCI bus interface
  *
  *  Copyright (C) 2005-2008 Pierre Ossman, All Rights Reserved.
  *
@@ -12,19 +12,19 @@
  *     - JMicron (hardware and technical support)
  */
 
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/mmc/host.h>
-#include <linux/scatterlist.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/pm_runtime.h>
-#include <linux/mmc/sdhci-pci-data.h>
+#include <beep/delay.h>
+#include <beep/highmem.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/mmc/host.h>
+#include <beep/scatterlist.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/pm_runtime.h>
+#include <beep/mmc/sdhci-pci-data.h>
 
 #include "sdhci.h"
 

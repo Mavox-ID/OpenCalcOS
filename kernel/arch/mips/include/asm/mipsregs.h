@@ -13,7 +13,7 @@
 #ifndef _ASM_MIPSREGS_H
 #define _ASM_MIPSREGS_H
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/hazards.h>
 #include <asm/war.h>
 
@@ -77,7 +77,7 @@
 /*
  * R4640/R4650 cp0 register names.  These registers are listed
  * here only for completeness; without MMU these CPUs are not useable
- * by Linux.  A future ELKS port might take make Linux run on them
+ * by Beep.  A future ELKS port might take make Beep run on them
  * though ...
  */
 #define CP0_IBASE $0
@@ -1503,7 +1503,7 @@ static inline void tlb_write_random(void)
  */
 #ifndef CONFIG_MIPS_MT_SMTC
 /*
- * SMTC Linux requires shutting-down microthread scheduling
+ * SMTC Beep requires shutting-down microthread scheduling
  * during CP0 register read-modify-write sequences.
  */
 #define __BUILD_SET_C0(name)					\
@@ -1546,7 +1546,7 @@ change_c0_##name(unsigned int change, unsigned int val)		\
 
 #else /* SMTC versions that manage MT scheduling */
 
-#include <linux/irqflags.h>
+#include <beep/irqflags.h>
 
 /*
  * This is a duplicate of dmt() in mipsmtregs.h to avoid problems with

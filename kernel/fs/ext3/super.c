@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext3/super.c
+ *  beep/fs/ext3/super.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -8,7 +8,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  beep/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -16,17 +16,17 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/parser.h>
-#include <linux/exportfs.h>
-#include <linux/statfs.h>
-#include <linux/random.h>
-#include <linux/mount.h>
-#include <linux/quotaops.h>
-#include <linux/seq_file.h>
-#include <linux/log2.h>
-#include <linux/cleancache.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>
+#include <beep/parser.h>
+#include <beep/exportfs.h>
+#include <beep/statfs.h>
+#include <beep/random.h>
+#include <beep/mount.h>
+#include <beep/quotaops.h>
+#include <beep/seq_file.h>
+#include <beep/log2.h>
+#include <beep/cleancache.h>
 
 #include <asm/uaccess.h>
 

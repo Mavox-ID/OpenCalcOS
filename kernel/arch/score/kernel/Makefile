@@ -1,8 +1,8 @@
 #
-# Makefile for the Linux/SCORE kernel.
+# Makefile for the Beep/SCORE kernel.
 #
 
-extra-y	:= head.o vmlinux.lds
+extra-y	:= head.o vmbeep.lds
 
 obj-y += entry.o irq.o process.o ptrace.o \
 	setup.o signal.o sys_score.o time.o traps.o \

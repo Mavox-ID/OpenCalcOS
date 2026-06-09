@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/irq.c
+ *  beep/arch/arm/kernel/irq.c
  *
  *  Copyright (C) 1992 Linus Torvalds
  *  Modifications for ARM processor Copyright (C) 1995-2000 Russell King.
@@ -21,20 +21,20 @@
  *  IRQ's are in fact implemented a bit like signal handlers for the kernel.
  *  Naturally it's not a 1:1 relation, but there are similarities.
  */
-#include <linux/kernel_stat.h>
-#include <linux/signal.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/random.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/kallsyms.h>
-#include <linux/proc_fs.h>
-#include <linux/export.h>
+#include <beep/kernel_stat.h>
+#include <beep/signal.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/random.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/seq_file.h>
+#include <beep/errno.h>
+#include <beep/list.h>
+#include <beep/kallsyms.h>
+#include <beep/proc_fs.h>
+#include <beep/export.h>
 
 #include <asm/exception.h>
 #include <asm/mach/arch.h>

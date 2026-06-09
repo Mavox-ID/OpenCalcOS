@@ -8,14 +8,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/memblock.h>
-#include <linux/ioport.h>
-#include <linux/of_fdt.h>
-#include <linux/of.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/memblock.h>
+#include <beep/ioport.h>
+#include <beep/of_fdt.h>
+#include <beep/of.h>
 
 #include <mach/map.h>
 #include <plat/devs.h>

@@ -14,18 +14,18 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/max8907.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/max8907.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/of_regulator.h>
+#include <beep/regmap.h>
+#include <beep/slab.h>
 
 #define MAX8907_II2RR_VERSION_MASK	0xF0
 #define MAX8907_II2RR_VERSION_REV_A	0x00

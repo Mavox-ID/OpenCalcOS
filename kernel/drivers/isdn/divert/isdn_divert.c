@@ -2,17 +2,17 @@
  *
  * DSS1 main diversion supplementary handling for i4l.
  *
- * Copyright 1999       by Werner Cornelius (werner@isdn4linux.de)
+ * Copyright 1999       by Werner Cornelius (werner@isdn4beep.de)
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
  */
 
-#include <linux/proc_fs.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
+#include <beep/proc_fs.h>
+#include <beep/slab.h>
+#include <beep/timer.h>
+#include <beep/jiffies.h>
 
 #include "isdn_divert.h"
 

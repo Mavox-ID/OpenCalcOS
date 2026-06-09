@@ -4,8 +4,8 @@
 #if !defined(_TRACE_WRITEBACK_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_WRITEBACK_H
 
-#include <linux/backing-dev.h>
-#include <linux/writeback.h>
+#include <beep/backing-dev.h>
+#include <beep/writeback.h>
 
 #define show_inode_state(state)					\
 	__print_flags(state, "|",				\

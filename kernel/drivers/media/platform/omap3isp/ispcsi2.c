@@ -23,10 +23,10 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
  * 02110-1301 USA
  */
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include <media/v4l2-common.h>
-#include <linux/v4l2-mediabus.h>
-#include <linux/mm.h>
+#include <beep/v4l2-mediabus.h>
+#include <beep/mm.h>
 
 #include "isp.h"
 #include "ispreg.h"

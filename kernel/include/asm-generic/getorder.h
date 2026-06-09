@@ -3,8 +3,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
-#include <linux/log2.h>
+#include <beep/compiler.h>
+#include <beep/log2.h>
 
 /*
  * Runtime evaluation of get_order()

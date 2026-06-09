@@ -3,10 +3,10 @@
  * Copyright (C) 1996 David Redman (djhr@tadpole.co.uk)
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/init.h>
 
 #include <asm/asi.h>
 #include <asm/oplib.h>

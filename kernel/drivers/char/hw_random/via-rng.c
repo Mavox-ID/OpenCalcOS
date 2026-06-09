@@ -25,10 +25,10 @@
  */
 
 #include <crypto/padlock.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/hw_random.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/hw_random.h>
+#include <beep/delay.h>
 #include <asm/io.h>
 #include <asm/msr.h>
 #include <asm/cpufeature.h>

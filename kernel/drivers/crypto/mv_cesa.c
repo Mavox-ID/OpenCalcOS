@@ -8,20 +8,20 @@
  */
 #include <crypto/aes.h>
 #include <crypto/algapi.h>
-#include <linux/crypto.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kthread.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/clk.h>
+#include <beep/crypto.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/kthread.h>
+#include <beep/platform_device.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/clk.h>
 #include <crypto/internal/hash.h>
 #include <crypto/sha.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/of_irq.h>
 
 #include "mv_cesa.h"
 

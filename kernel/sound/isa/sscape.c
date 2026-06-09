@@ -21,14 +21,14 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/pnp.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/isa.h>
+#include <beep/delay.h>
+#include <beep/firmware.h>
+#include <beep/pnp.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
 #include <asm/dma.h>
 #include <sound/core.h>
 #include <sound/wss.h>

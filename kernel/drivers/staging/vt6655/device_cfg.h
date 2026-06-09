@@ -27,8 +27,8 @@
 #ifndef __DEVICE_CONFIG_H
 #define __DEVICE_CONFIG_H
 
-//#include <linux/config.h>
-#include <linux/types.h>
+//#include <beep/config.h>
+#include <beep/types.h>
 
 #include "ttype.h"
 
@@ -61,8 +61,8 @@ struct _version {
 #endif
 
 //config file
-#include <linux/fs.h>
-#include <linux/fcntl.h>
+#include <beep/fs.h>
+#include <beep/fcntl.h>
 #ifndef CONFIG_PATH
 #define CONFIG_PATH            "/etc/vntconfiguration.dat"
 #endif

@@ -1,6 +1,6 @@
 /*
  *  PowerPC version 
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  *  Derived from "arch/i386/kernel/signal.c"
  *    Copyright (C) 1991, 1992 Linus Torvalds
@@ -12,18 +12,18 @@
  *  2 of the License, or (at your option) any later version.
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/elf.h>
-#include <linux/ptrace.h>
-#include <linux/ratelimit.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/errno.h>
+#include <beep/wait.h>
+#include <beep/unistd.h>
+#include <beep/stddef.h>
+#include <beep/elf.h>
+#include <beep/ptrace.h>
+#include <beep/ratelimit.h>
 
 #include <asm/sigcontext.h>
 #include <asm/ucontext.h>

@@ -26,14 +26,14 @@
  *     
  ********************************************************************/    
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/init.h>
 #include <asm/uaccess.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/irda_device.h>

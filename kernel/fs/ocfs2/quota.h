@@ -9,11 +9,11 @@
 #ifndef _OCFS2_QUOTA_H
 #define _OCFS2_QUOTA_H
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/quota.h>
-#include <linux/list.h>
-#include <linux/dqblk_qtree.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/quota.h>
+#include <beep/list.h>
+#include <beep/dqblk_qtree.h>
 
 #include "ocfs2.h"
 

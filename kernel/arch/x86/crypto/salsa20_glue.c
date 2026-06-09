@@ -19,8 +19,8 @@
  */
 
 #include <crypto/algapi.h>
-#include <linux/module.h>
-#include <linux/crypto.h>
+#include <beep/module.h>
+#include <beep/crypto.h>
 
 #define SALSA20_IV_SIZE        8U
 #define SALSA20_MIN_KEY_SIZE  16U

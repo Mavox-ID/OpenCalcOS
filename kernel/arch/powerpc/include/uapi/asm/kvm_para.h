@@ -20,7 +20,7 @@
 #ifndef _UAPI__POWERPC_KVM_PARA_H__
 #define _UAPI__POWERPC_KVM_PARA_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * Additions to this struct must only occur at the end, and should be

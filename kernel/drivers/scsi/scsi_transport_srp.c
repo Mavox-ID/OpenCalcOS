@@ -18,12 +18,12 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
  * 02110-1301 USA
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/jiffies.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>

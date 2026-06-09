@@ -5,18 +5,18 @@
  * even if we're invoked from userspace (think modprobe, hotplug cpu,
  * etc.).
  */
-#include <linux/sched.h>
-#include <linux/kthread.h>
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/cpuset.h>
-#include <linux/unistd.h>
-#include <linux/file.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/freezer.h>
-#include <linux/ptrace.h>
+#include <beep/sched.h>
+#include <beep/kthread.h>
+#include <beep/completion.h>
+#include <beep/err.h>
+#include <beep/cpuset.h>
+#include <beep/unistd.h>
+#include <beep/file.h>
+#include <beep/export.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/freezer.h>
+#include <beep/ptrace.h>
 #include <trace/events/sched.h>
 
 static DEFINE_SPINLOCK(kthread_create_lock);

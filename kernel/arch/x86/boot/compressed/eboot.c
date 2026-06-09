@@ -2,13 +2,13 @@
  *
  *   Copyright 2011 Intel Corporation; author Matt Fleming
  *
- *   This file is part of the Linux kernel, and is made available under
+ *   This file is part of the Beep kernel, and is made available under
  *   the terms of the GNU General Public License version 2.
  *
  * ----------------------------------------------------------------------- */
 
-#include <linux/efi.h>
-#include <linux/pci.h>
+#include <beep/efi.h>
+#include <beep/pci.h>
 #include <asm/efi.h>
 #include <asm/setup.h>
 #include <asm/desc.h>

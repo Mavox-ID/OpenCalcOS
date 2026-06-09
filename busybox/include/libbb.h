@@ -21,7 +21,7 @@
 #include <setjmp.h>
 #include <signal.h>
 #include <paths.h>
-#if defined __UCLIBC__ /* TODO: and glibc? */
+#if 0 /* TODO: and glibc? */
 /* use inlined versions of these: */
 # ifndef sigfillset
 #  define sigfillset(s)     __sigfillset(s)
@@ -79,13 +79,13 @@
 #endif
 /* Don't do this here:
  * #include <sys/sysinfo.h>
- * Some linux/ includes pull in conflicting definition
+ * Some beep/ includes pull in conflicting definition
  * of struct sysinfo (only in some toolchanins), which breaks build.
  * Include sys/sysinfo.h only in those files which need it.
  */
-#if ENABLE_SELINUX
-# include <selinux/selinux.h>
-# include <selinux/context.h>
+#if ENABLE_SEBEEP
+# include <sebeep/sebeep.h>
+# include <sebeep/context.h>
 #endif
 #if ENABLE_FEATURE_UTMP
 # if defined __UCLIBC__ && ( \
@@ -445,7 +445,7 @@ void *xmmap_anon(size_t size) FAST_FUNC;
 # define BB_ARCH_FIXED_PAGESIZE 4096
 #else /* if defined(ARCH) */
 /* add you favorite arch today! */
-//From Linux kernel inspection:
+//From Beep kernel inspection:
 //xtenza,s390[x],riscv,nios2,csky,sparc32: fixed 4k pages
 //sparc64,alpha,openrisc: fixed 8k pages
 #endif
@@ -483,22 +483,22 @@ enum {	/* cp.c, mv.c, install.c depend on these values. CAREFUL when changing th
 	FILEUTILS_UPDATE          = 1 << 14, /* -u */
 	FILEUTILS_NO_TARGET_DIR	  = 1 << 15, /* -T */
 	FILEUTILS_TARGET_DIR	  = 1 << 16, /* -t DIR */
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 	FILEUTILS_PRESERVE_SECURITY_CONTEXT = 1 << 17, /* -c */
 #endif
-#define FILEUTILS_CP_OPTSTR "pdRfinlsLHarPvuTt:" IF_SELINUX("c")
+#define FILEUTILS_CP_OPTSTR "pdRfinlsLHarPvuTt:" IF_SEBEEP("c")
 /* How many bits in FILEUTILS_CP_OPTSTR? */
-	FILEUTILS_CP_OPTBITS      = 18 - !ENABLE_SELINUX,
+	FILEUTILS_CP_OPTBITS      = 18 - !ENABLE_SEBEEP,
 
-	FILEUTILS_RMDEST          = 1 << (19 - !ENABLE_SELINUX), /* cp --remove-destination */
+	FILEUTILS_RMDEST          = 1 << (19 - !ENABLE_SEBEEP), /* cp --remove-destination */
 	/* bit 18 skipped for "cp --parents" */
-	FILEUTILS_REFLINK         = 1 << (20 - !ENABLE_SELINUX), /* cp --reflink=auto */
-	FILEUTILS_REFLINK_ALWAYS  = 1 << (21 - !ENABLE_SELINUX), /* cp --reflink[=always] */
+	FILEUTILS_REFLINK         = 1 << (20 - !ENABLE_SEBEEP), /* cp --reflink=auto */
+	FILEUTILS_REFLINK_ALWAYS  = 1 << (21 - !ENABLE_SEBEEP), /* cp --reflink[=always] */
 	/*
 	 * Hole. cp may have some bits set here,
 	 * they should not affect remove_file()/copy_file()
 	 */
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 	FILEUTILS_SET_SECURITY_CONTEXT = 1 << 30,
 #endif
 	FILEUTILS_IGNORE_CHMOD_ERR = 1 << 31,
@@ -734,10 +734,10 @@ int setsockopt_SOL_SOCKET_1(int fd, int optname) FAST_FUNC;
 /* SO_REUSEADDR allows a server to rebind to an address that is already
  * "in use" by old connections to e.g. previous server instance which is
  * killed or crashed. Without it bind will fail until all such connections
- * time out. Linux does not allow multiple live binds on same ip:port
+ * time out. Beep does not allow multiple live binds on same ip:port
  * regardless of SO_REUSEADDR (unlike some other flavors of Unix).
  * Turn it on before you call bind(). */
-void setsockopt_reuseaddr(int fd) FAST_FUNC; /* On Linux this never fails. */
+void setsockopt_reuseaddr(int fd) FAST_FUNC; /* On Beep this never fails. */
 int setsockopt_keepalive(int fd) FAST_FUNC;
 int setsockopt_broadcast(int fd) FAST_FUNC;
 int setsockopt_bindtodevice(int fd, const char *iface) FAST_FUNC;
@@ -1199,7 +1199,7 @@ void die_if_bad_username(const char* name) FAST_FUNC;
  * ngroups is an initial size of array. It is rounded up to 32 for realloc.
  * ngroups is updated on return.
  * ngroups can be NULL: bb_getgroups(NULL, NULL) is valid usage.
- * Dies on errors (on Linux, only xrealloc can cause this, not internal getgroups call).
+ * Dies on errors (on Beep, only xrealloc can cause this, not internal getgroups call).
  */
 gid_t *bb_getgroups(int *ngroups, gid_t *group_array) FAST_FUNC;
 
@@ -1280,7 +1280,7 @@ int find_applet_by_name(const char *name) FAST_FUNC;
 void run_applet_no_and_exit(int a, const char *name, char **argv) NORETURN FAST_FUNC;
 #endif
 void show_usage_if_dash_dash_help(int applet_no, char **argv) FAST_FUNC;
-#if defined(__linux__)
+#if defined(__beep__)
 int re_execed_comm(void) FAST_FUNC;
 void set_task_comm(const char *comm) FAST_FUNC;
 #else
@@ -1606,7 +1606,7 @@ extern void bb_warn_ignoring_args(char *arg) FAST_FUNC;
 # define bb_warn_ignoring_args(arg) ((void)0)
 #endif
 
-extern int get_linux_version_code(void) FAST_FUNC;
+extern int get_beep_version_code(void) FAST_FUNC;
 
 char *query_loop(const char *device) FAST_FUNC;
 int get_free_loop(void) FAST_FUNC;
@@ -1618,7 +1618,7 @@ int del_loop(const char *device) FAST_FUNC;
  */
 int set_loop(char **devname, const char *file, unsigned long long offset,
 		unsigned long long sizelimit, unsigned flags) FAST_FUNC;
-/* These constants match linux/loop.h (without BB_ prefix): */
+/* These constants match beep/loop.h (without BB_ prefix): */
 #define BB_LO_FLAGS_READ_ONLY 1
 #define BB_LO_FLAGS_AUTOCLEAR 4
 #define BB_LO_FLAGS_PARTSCAN  8
@@ -1719,7 +1719,7 @@ const char *get_shell_name(void) FAST_FUNC;
 unsigned cap_name_to_number(const char *cap) FAST_FUNC;
 void printf_cap(const char *pfx, unsigned cap_no) FAST_FUNC;
 void drop_capability(int cap_ordinal) FAST_FUNC;
-/* Structures inside "struct caps" are Linux-specific and libcap-specific: */
+/* Structures inside "struct caps" are Beep-specific and libcap-specific: */
 #define DEFINE_STRUCT_CAPS \
 struct caps { \
 	struct __user_cap_header_struct header; \
@@ -1729,17 +1729,17 @@ struct caps { \
 void getcaps(void *caps) FAST_FUNC;
 #endif
 
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 extern void renew_current_security_context(void) FAST_FUNC;
 extern void set_current_security_context(security_context_t sid) FAST_FUNC;
 extern context_t set_security_context_component(security_context_t cur_context,
 						char *user, char *role, char *type, char *range) FAST_FUNC;
 extern void setfscreatecon_or_die(security_context_t scontext) FAST_FUNC;
-extern void selinux_preserve_fcontext(int fdesc) FAST_FUNC;
+extern void sebeep_preserve_fcontext(int fdesc) FAST_FUNC;
 #else
-#define selinux_preserve_fcontext(fdesc) ((void)0)
+#define sebeep_preserve_fcontext(fdesc) ((void)0)
 #endif
-extern void selinux_or_die(void) FAST_FUNC;
+extern void sebeep_or_die(void) FAST_FUNC;
 
 
 /* setup_environment:
@@ -2019,7 +2019,7 @@ int read_line_input(const char* prompt, char* command, int maxsize) FAST_FUNC;
 # ifdef TASK_COMM_LEN
 enum { COMM_LEN = TASK_COMM_LEN };
 # else
-/* synchronize with sizeof(task_struct.comm) in /usr/include/linux/sched.h */
+/* synchronize with sizeof(task_struct.comm) in /usr/include/beep/sched.h */
 enum { COMM_LEN = 16 };
 # endif
 #endif
@@ -2060,7 +2060,7 @@ typedef struct procps_status_t {
 	uint16_t argv_len;
 	char *argv0;
 	char *exe;
-	IF_SELINUX(char *context;)
+	IF_SEBEEP(char *context;)
 	IF_FEATURE_SHOW_THREADS(unsigned main_thread_pid;)
 	/* Everything below must contain no ptrs to malloc'ed data:
 	 * it is memset(0) for each process in procps_scan() */
@@ -2117,7 +2117,7 @@ enum {
 				|| ENABLE_PIDOF
 				|| ENABLE_SESTATUS
 				),
-	PSSCAN_CONTEXT  = (1 << 17) * ENABLE_SELINUX,
+	PSSCAN_CONTEXT  = (1 << 17) * ENABLE_SEBEEP,
 	PSSCAN_START_TIME = 1 << 18,
 	PSSCAN_CPU      = (1 << 19) * ENABLE_FEATURE_TOP_SMP_PROCESS,
 	PSSCAN_NICE     = (1 << 20) * ENABLE_FEATURE_PS_ADDITIONAL_COLUMNS,
@@ -2294,7 +2294,7 @@ extern const char bb_busybox_exec_path[] ALIGN1;
 #define BB_PATH_ROOT_PATH "PATH=/sbin:/usr/sbin:/bin:/usr/bin" BB_ADDITIONAL_PATH
 extern const char bb_PATH_root_path[] ALIGN1; /* BB_PATH_ROOT_PATH */
 #define bb_default_root_path (bb_PATH_root_path + sizeof("PATH"))
-/* util-linux manpage says /sbin:/bin:/usr/sbin:/usr/bin,
+/* util-beep manpage says /sbin:/bin:/usr/sbin:/usr/bin,
  * but I want to save a few bytes here:
  */
 #define bb_default_path      (bb_PATH_root_path + sizeof("PATH=/sbin:/usr/sbin"))
@@ -2384,7 +2384,7 @@ extern const char bb_default_login_shell[] ALIGN1;
 # define VC_5 "/dev/tty5"
 # define VC_FORMAT "/dev/tty%d"
 #elif ENABLE_FEATURE_DEVFS
-/*Linux, obsolete devfs names */
+/*Beep, obsolete devfs names */
 # define CURRENT_VC "/dev/vc/0"
 # define VC_1 "/dev/vc/1"
 # define VC_2 "/dev/vc/2"
@@ -2397,7 +2397,7 @@ extern const char bb_default_login_shell[] ALIGN1;
 # define LOOP_NAME "/dev/loop/"
 # define FB_0 "/dev/fb/0"
 #else
-/*Linux, normal names */
+/*Beep, normal names */
 # define CURRENT_VC "/dev/tty0"
 # define VC_1 "/dev/tty1"
 # define VC_2 "/dev/tty2"
@@ -2655,6 +2655,6 @@ POP_SAVED_FUNCTION_VISIBILITY
 #endif
 
 /* Ndless specific remapping */
-#define opendir nuc_opendir
-#define readdir nuc_readdir
-#define closedir nuc_closedir
+//#define opendir nuc_opendir
+//#define readdir nuc_readdir
+//#define closedir nuc_closedir

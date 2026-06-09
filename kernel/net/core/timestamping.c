@@ -17,11 +17,11 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/errqueue.h>
-#include <linux/phy.h>
-#include <linux/ptp_classify.h>
-#include <linux/skbuff.h>
-#include <linux/export.h>
+#include <beep/errqueue.h>
+#include <beep/phy.h>
+#include <beep/ptp_classify.h>
+#include <beep/skbuff.h>
+#include <beep/export.h>
 
 static struct sock_filter ptp_filter[] = {
 	PTP_FILTER

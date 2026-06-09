@@ -9,7 +9,7 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/list.h>
+#include <beep/list.h>
 #include <asm/bug.h>
 #include <asm-generic/module.h>
 

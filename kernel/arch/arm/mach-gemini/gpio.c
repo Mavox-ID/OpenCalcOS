@@ -13,11 +13,11 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
 
 #include <mach/hardware.h>
 #include <mach/irqs.h>

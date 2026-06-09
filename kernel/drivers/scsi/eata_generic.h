@@ -1,6 +1,6 @@
 /********************************************************
 * Header file for eata_dma.c and eata_pio.c		*
-* Linux EATA SCSI drivers				*
+* Beep EATA SCSI drivers				*
 * (c) 1993-96 Michael Neuffer                           *
 *             mike@i-Connect.Net                        *
 *             neuffer@mail.uni-mainz.de                 *

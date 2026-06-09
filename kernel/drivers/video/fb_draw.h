@@ -2,8 +2,8 @@
 #define _FB_DRAW_H
 
 #include <asm/types.h>
-#include <linux/fb.h>
-#include <linux/bug.h>
+#include <beep/fb.h>
+#include <beep/bug.h>
 
     /*
      *  Compose two values, using a bitmask as decision value

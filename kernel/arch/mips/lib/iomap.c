@@ -2,11 +2,11 @@
  * Implement the default iomap interfaces
  *
  * (C) Copyright 2004 Linus Torvalds
- * (C) Copyright 2006 Ralf Baechle <ralf@linux-mips.org>
+ * (C) Copyright 2006 Ralf Baechle <ralf@beep-mips.org>
  * (C) Copyright 2007 MIPS Technologies, Inc.
- *     written by Ralf Baechle <ralf@linux-mips.org>
+ *     written by Ralf Baechle <ralf@beep-mips.org>
  */
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/io.h>
 
 /*

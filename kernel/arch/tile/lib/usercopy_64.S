@@ -12,7 +12,7 @@
  *   more details.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/errno.h>
 #include <asm/cache.h>
 #include <arch/chip.h>

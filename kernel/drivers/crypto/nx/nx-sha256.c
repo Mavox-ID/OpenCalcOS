@@ -21,7 +21,7 @@
 
 #include <crypto/internal/hash.h>
 #include <crypto/sha.h>
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/vio.h>
 
 #include "nx_csbcpb.h"

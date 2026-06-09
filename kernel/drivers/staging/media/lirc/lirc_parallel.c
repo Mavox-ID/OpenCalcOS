@@ -24,25 +24,25 @@
 
 /*** Includes ***/
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/ioport.h>
+#include <beep/time.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/uaccess.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/uaccess.h>
 #include <asm/div64.h>
 
-#include <linux/poll.h>
-#include <linux/parport.h>
-#include <linux/platform_device.h>
+#include <beep/poll.h>
+#include <beep/parport.h>
+#include <beep/platform_device.h>
 
 #include <media/lirc.h>
 #include <media/lirc_dev.h>

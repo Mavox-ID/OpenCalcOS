@@ -205,9 +205,9 @@ klogd - daemon
 last - runner (I've got 1300 lines of output when tried it)
 less - interactive, longterm
 link - NOFORK
-linux32 - noexec. spawner
-linux64 - noexec. spawner
-linuxrc - daemon
+beep32 - noexec. spawner
+beep64 - noexec. spawner
+beeprc - daemon
 ln - noexec
 loadfont - noexec. leaks: config_open+bb_error_msg_and_die("map format")
 loadkmap - noexec. leaks: get_console_fd_or_die() may open a new fd, or return one of stdio fds

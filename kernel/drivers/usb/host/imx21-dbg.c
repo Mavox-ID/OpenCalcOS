@@ -41,8 +41,8 @@ static inline void debug_isoc_completed(struct imx21 *imx21,
 
 #else
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 static const char *dir_labels[] = {
 	"TD 0",

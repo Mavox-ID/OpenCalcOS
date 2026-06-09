@@ -1,5 +1,5 @@
 /*
- *  linux/fs/super.c
+ *  beep/fs/super.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -20,20 +20,20 @@
  *  Heavily rewritten for 'one fs - one tree' dcache architecture. AV, Mar 2000
  */
 
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/acct.h>
-#include <linux/blkdev.h>
-#include <linux/mount.h>
-#include <linux/security.h>
-#include <linux/writeback.h>		/* for the emergency remount stuff */
-#include <linux/idr.h>
-#include <linux/mutex.h>
-#include <linux/backing-dev.h>
-#include <linux/rculist_bl.h>
-#include <linux/cleancache.h>
-#include <linux/fsnotify.h>
-#include <linux/lockdep.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/acct.h>
+#include <beep/blkdev.h>
+#include <beep/mount.h>
+#include <beep/security.h>
+#include <beep/writeback.h>		/* for the emergency remount stuff */
+#include <beep/idr.h>
+#include <beep/mutex.h>
+#include <beep/backing-dev.h>
+#include <beep/rculist_bl.h>
+#include <beep/cleancache.h>
+#include <beep/fsnotify.h>
+#include <beep/lockdep.h>
 #include "internal.h"
 
 

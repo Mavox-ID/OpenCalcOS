@@ -4,14 +4,14 @@
  * Copyright (C) ST Microelectronics SA 2011
  *
  * License Terms: GNU General Public License, version 2
- * Author: Viresh Kumar <viresh.linux@gmail.com> for ST Microelectronics
+ * Author: Viresh Kumar <viresh.beep@gmail.com> for ST Microelectronics
  */
 
-#include <linux/spi/spi.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <beep/spi/spi.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
 #include "stmpe.h"
 
 #define READ_CMD	(1 << 7)
@@ -146,4 +146,4 @@ module_exit(stmpe_exit);
 
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("STMPE MFD SPI Interface Driver");
-MODULE_AUTHOR("Viresh Kumar <viresh.linux@gmail.com>");
+MODULE_AUTHOR("Viresh Kumar <viresh.beep@gmail.com>");

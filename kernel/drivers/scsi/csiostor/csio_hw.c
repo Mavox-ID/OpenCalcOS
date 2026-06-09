@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio FCoE driver for Linux.
+ * This file is part of the Chelsio FCoE driver for Beep.
  *
  * Copyright (c) 2008-2012 Chelsio Communications, Inc. All rights reserved.
  *
@@ -32,16 +32,16 @@
  * SOFTWARE.
  */
 
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/firmware.h>
-#include <linux/stddef.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/compiler.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
+#include <beep/pci.h>
+#include <beep/pci_regs.h>
+#include <beep/firmware.h>
+#include <beep/stddef.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/compiler.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/log2.h>
 
 #include "csio_hw.h"
 #include "csio_lnode.h"

@@ -8,25 +8,25 @@
  * Public License, version 2.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/i2c-gpio.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/i2c-gpio.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-chip-ident.h>
 #include <media/mmp-camera.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/pm.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/list.h>
+#include <beep/pm.h>
 
 #include "mcam-core.h"
 

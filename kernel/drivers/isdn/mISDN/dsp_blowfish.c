@@ -8,8 +8,8 @@
  *
  */
 
-#include <linux/mISDNif.h>
-#include <linux/mISDNdsp.h>
+#include <beep/mISDNif.h>
+#include <beep/mISDNdsp.h>
 #include "core.h"
 #include "dsp.h"
 

@@ -20,8 +20,8 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kvm_host.h>
+#include <beep/module.h>
+#include <beep/kvm_host.h>
 
 #include "irq.h"
 #include "i8254.h"

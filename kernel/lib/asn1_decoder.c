@@ -9,11 +9,11 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/asn1_decoder.h>
-#include <linux/asn1_ber_bytecode.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/asn1_decoder.h>
+#include <beep/asn1_ber_bytecode.h>
 
 static const unsigned char asn1_op_lengths[ASN1_OP__NR] = {
 	/*					OPC TAG JMP ACT */

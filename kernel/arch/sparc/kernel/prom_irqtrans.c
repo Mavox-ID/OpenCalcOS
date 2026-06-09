@@ -1,8 +1,8 @@
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
 
 #include <asm/oplib.h>
 #include <asm/prom.h>
@@ -71,7 +71,7 @@ static unsigned int psycho_irq_build(struct device_node *dp,
 
 static void __init psycho_irq_trans_init(struct device_node *dp)
 {
-	const struct linux_prom64_registers *regs;
+	const struct beep_prom64_registers *regs;
 
 	dp->irq_trans = prom_early_alloc(sizeof(struct of_irq_controller));
 	dp->irq_trans->irq_build = psycho_irq_build;
@@ -223,7 +223,7 @@ static unsigned int sabre_irq_build(struct device_node *dp,
 {
 	struct sabre_irq_data *irq_data = _data;
 	unsigned long controller_regs = irq_data->controller_regs;
-	const struct linux_prom_pci_registers *regs;
+	const struct beep_prom_pci_registers *regs;
 	unsigned long imap, iclr;
 	unsigned long imap_off, iclr_off;
 	int inofixup = 0;
@@ -267,7 +267,7 @@ static unsigned int sabre_irq_build(struct device_node *dp,
 
 static void __init sabre_irq_trans_init(struct device_node *dp)
 {
-	const struct linux_prom64_registers *regs;
+	const struct beep_prom64_registers *regs;
 	struct sabre_irq_data *irq_data;
 	const u32 *busrange;
 
@@ -425,7 +425,7 @@ static unsigned int schizo_irq_build(struct device_node *dp,
 static void __init __schizo_irq_trans_init(struct device_node *dp,
 					   int is_tomatillo)
 {
-	const struct linux_prom64_registers *regs;
+	const struct beep_prom64_registers *regs;
 	struct schizo_irq_data *irq_data;
 
 	dp->irq_trans = prom_early_alloc(sizeof(struct of_irq_controller));
@@ -466,7 +466,7 @@ static unsigned int pci_sun4v_irq_build(struct device_node *dp,
 
 static void __init pci_sun4v_irq_trans_init(struct device_node *dp)
 {
-	const struct linux_prom64_registers *regs;
+	const struct beep_prom64_registers *regs;
 
 	dp->irq_trans = prom_early_alloc(sizeof(struct of_irq_controller));
 	dp->irq_trans->irq_build = pci_sun4v_irq_build;
@@ -540,7 +540,7 @@ static unsigned int fire_irq_build(struct device_node *dp,
 
 static void __init fire_irq_trans_init(struct device_node *dp)
 {
-	const struct linux_prom64_registers *regs;
+	const struct beep_prom64_registers *regs;
 	struct fire_irq_data *irq_data;
 
 	dp->irq_trans = prom_early_alloc(sizeof(struct of_irq_controller));
@@ -649,7 +649,7 @@ static unsigned int sbus_of_build_irq(struct device_node *dp,
 				      void *_data)
 {
 	unsigned long reg_base = (unsigned long) _data;
-	const struct linux_prom_registers *regs;
+	const struct beep_prom_registers *regs;
 	unsigned long imap, iclr;
 	int sbus_slot = 0;
 	int sbus_level = 0;
@@ -703,7 +703,7 @@ static unsigned int sbus_of_build_irq(struct device_node *dp,
 
 static void __init sbus_irq_trans_init(struct device_node *dp)
 {
-	const struct linux_prom64_registers *regs;
+	const struct beep_prom64_registers *regs;
 
 	dp->irq_trans = prom_early_alloc(sizeof(struct of_irq_controller));
 	dp->irq_trans->irq_build = sbus_of_build_irq;
@@ -790,7 +790,7 @@ static unsigned int sun4v_vdev_irq_build(struct device_node *dp,
 
 static void __init sun4v_vdev_irq_trans_init(struct device_node *dp)
 {
-	const struct linux_prom64_registers *regs;
+	const struct beep_prom64_registers *regs;
 
 	dp->irq_trans = prom_early_alloc(sizeof(struct of_irq_controller));
 	dp->irq_trans->irq_build = sun4v_vdev_irq_build;

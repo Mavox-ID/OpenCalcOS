@@ -13,11 +13,11 @@
 
 #include <sound/jack.h>
 #include <sound/soc.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/delay.h>
+#include <beep/export.h>
 #include <trace/events/asoc.h>
 
 /**

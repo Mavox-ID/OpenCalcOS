@@ -14,8 +14,8 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <beep/slab.h>
+#include <beep/of.h>
 
 #include "tpm.h"
 #include "tpm_eventlog.h"
@@ -37,7 +37,7 @@ int read_log(struct tpm_bios_log *log)
 		return -ENODEV;
 	}
 
-	sizep = of_get_property(np, "linux,sml-size", NULL);
+	sizep = of_get_property(np, "beep,sml-size", NULL);
 	if (sizep == NULL) {
 		pr_err("%s: ERROR - SML size not found\n", __func__);
 		goto cleanup_eio;
@@ -47,7 +47,7 @@ int read_log(struct tpm_bios_log *log)
 		goto cleanup_eio;
 	}
 
-	basep = of_get_property(np, "linux,sml-base", NULL);
+	basep = of_get_property(np, "beep,sml-base", NULL);
 	if (basep == NULL) {
 		pr_err(KERN_ERR "%s: ERROR - SML not found\n", __func__);
 		goto cleanup_eio;

@@ -13,7 +13,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/stringify.h>
+#include <beep/stringify.h>
 
 /*
  * cmpxchg

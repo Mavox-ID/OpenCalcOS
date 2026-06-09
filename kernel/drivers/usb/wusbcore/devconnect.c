@@ -86,11 +86,11 @@
  *   lock @wusbhc->mutex.
  */
 
-#include <linux/jiffies.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/export.h>
+#include <beep/jiffies.h>
+#include <beep/ctype.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/export.h>
 #include "wusbhc.h"
 
 static void wusbhc_devconnect_acked_work(struct work_struct *work);

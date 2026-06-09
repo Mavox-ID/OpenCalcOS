@@ -9,20 +9,20 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/tty.h>
-#include <linux/personality.h>
-#include <linux/suspend.h>
-#include <linux/tracehook.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/errno.h>
+#include <beep/wait.h>
+#include <beep/ptrace.h>
+#include <beep/unistd.h>
+#include <beep/stddef.h>
+#include <beep/tty.h>
+#include <beep/personality.h>
+#include <beep/suspend.h>
+#include <beep/tracehook.h>
 #include <asm/cacheflush.h>
 #include <asm/ucontext.h>
 #include <asm/uaccess.h>

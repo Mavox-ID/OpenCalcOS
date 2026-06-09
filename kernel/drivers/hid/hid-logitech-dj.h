@@ -23,7 +23,7 @@
  *
  */
 
-#include <linux/kfifo.h>
+#include <beep/kfifo.h>
 
 #define DJ_MAX_PAIRED_DEVICES			6
 #define DJ_MAX_NUMBER_NOTIFICATIONS		8

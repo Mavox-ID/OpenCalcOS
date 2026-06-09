@@ -16,7 +16,7 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  *
  * Copyright 2010, IBM Corporation.
- * Author: K.Prasad <prasad@linux.vnet.ibm.com>
+ * Author: K.Prasad <prasad@beep.vnet.ibm.com>
  *
  */
 
@@ -34,7 +34,7 @@ struct arch_hw_breakpoint {
 	bool		extraneous_interrupt;
 };
 
-#include <linux/kdebug.h>
+#include <beep/kdebug.h>
 #include <asm/reg.h>
 #include <asm/debug.h>
 

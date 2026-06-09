@@ -7,10 +7,10 @@
  * All registers are 16bits wide with 32bit spacing.
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/irq.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/irq.h>
 #include <asm/addrspace.h>
 #include <asm/io.h>
 #include <asm/mach-db1x00/bcsr.h>
@@ -21,7 +21,7 @@ static struct bcsr_reg {
 } bcsr_regs[BCSR_CNT];
 
 static void __iomem *bcsr_virt;	/* KSEG1 addr of BCSR base */
-static int bcsr_csc_base;	/* linux-irq of first cascaded irq */
+static int bcsr_csc_base;	/* beep-irq of first cascaded irq */
 
 void __init bcsr_init(unsigned long bcsr1_phys, unsigned long bcsr2_phys)
 {

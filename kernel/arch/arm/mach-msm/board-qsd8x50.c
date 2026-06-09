@@ -14,14 +14,14 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
  * 02110-1301, USA.
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/usb/msm_hsusb.h>
-#include <linux/err.h>
-#include <linux/clkdev.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/usb/msm_hsusb.h>
+#include <beep/err.h>
+#include <beep/clkdev.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -32,7 +32,7 @@
 #include <mach/irqs.h>
 #include <mach/sirc.h>
 #include <mach/vreg.h>
-#include <linux/platform_data/mmc-msm_sdcc.h>
+#include <beep/platform_data/mmc-msm_sdcc.h>
 
 #include "devices.h"
 #include "common.h"

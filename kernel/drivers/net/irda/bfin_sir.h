@@ -3,20 +3,20 @@
  *
  * Copyright 2006-2009 Analog Devices Inc.
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucbeep.org/
  *
  * Licensed under the GPL-2 or later.
  *
  */
 
-#include <linux/serial.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <beep/serial.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/wrapper.h>

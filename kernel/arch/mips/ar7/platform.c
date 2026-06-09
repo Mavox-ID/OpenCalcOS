@@ -17,25 +17,25 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/vlynq.h>
-#include <linux/leds.h>
-#include <linux/string.h>
-#include <linux/etherdevice.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/gpio.h>
-#include <linux/clk.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
+#include <beep/serial.h>
+#include <beep/serial_8250.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
+#include <beep/vlynq.h>
+#include <beep/leds.h>
+#include <beep/string.h>
+#include <beep/etherdevice.h>
+#include <beep/phy.h>
+#include <beep/phy_fixed.h>
+#include <beep/gpio.h>
+#include <beep/clk.h>
 
 #include <asm/addrspace.h>
 #include <asm/mach-ar7/ar7.h>

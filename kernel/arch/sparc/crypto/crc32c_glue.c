@@ -3,17 +3,17 @@
  * This is based largely upon arch/x86/crypto/crc32c-intel.c
  *
  * Copyright (C) 2008 Intel Corporation
- * Authors: Austin Zhang <austin_zhang@linux.intel.com>
+ * Authors: Austin Zhang <austin_zhang@beep.intel.com>
  *          Kent Liu <kent.liu@intel.com>
  */
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/crc32.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/crc32.h>
 
 #include <crypto/internal/hash.h>
 

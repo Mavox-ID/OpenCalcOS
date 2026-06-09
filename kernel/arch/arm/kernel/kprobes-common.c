@@ -11,8 +11,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
+#include <beep/kernel.h>
+#include <beep/kprobes.h>
 #include <asm/system_info.h>
 
 #include "kprobes.h"
@@ -245,7 +245,7 @@ emulate_generic_r0_12_noflags(struct kprobe *p, struct pt_regs *regs)
 	__asm__ __volatile__ (
 		"stmdb	sp!, {%[regs], r11}	\n\t"
 		"ldmia	%[regs], {r0-r12}	\n\t"
-#if __LINUX_ARM_ARCH__ >= 6
+#if __BEEP_ARM_ARCH__ >= 6
 		"blx	%[fn]			\n\t"
 #else
 		"str	%[fn], [sp, #-4]!	\n\t"

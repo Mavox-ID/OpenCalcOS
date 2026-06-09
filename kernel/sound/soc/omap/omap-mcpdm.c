@@ -24,16 +24,16 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/of_device.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
+#include <beep/of_device.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

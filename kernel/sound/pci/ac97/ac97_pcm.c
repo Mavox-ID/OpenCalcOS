@@ -23,11 +23,11 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/export.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

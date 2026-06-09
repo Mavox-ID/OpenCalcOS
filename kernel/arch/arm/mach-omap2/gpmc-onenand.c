@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/gpmc-onenand.c
+ * beep/arch/arm/mach-omap2/gpmc-onenand.c
  *
  * Copyright (C) 2006 - 2009 Nokia Corporation
  * Contacts:	Juha Yrjola
@@ -10,13 +10,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/onenand_regs.h>
-#include <linux/io.h>
-#include <linux/platform_data/mtd-onenand-omap2.h>
-#include <linux/err.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/onenand_regs.h>
+#include <beep/io.h>
+#include <beep/platform_data/mtd-onenand-omap2.h>
+#include <beep/err.h>
 
 #include <asm/mach/flash.h>
 

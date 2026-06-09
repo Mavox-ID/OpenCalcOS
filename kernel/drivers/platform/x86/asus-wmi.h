@@ -6,7 +6,7 @@
  *
  * Portions based on wistron_btns.c:
  * Copyright (C) 2005 Miloslav Trmac <mitr@volny.cz>
- * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arklinux.org>
+ * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arkbeep.org>
  * Copyright (C) 2005 Dmitry Torokhov <dtor@mail.ru>
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -27,7 +27,7 @@
 #ifndef _ASUS_WMI_H_
 #define _ASUS_WMI_H_
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 
 #define ASUS_WMI_KEY_IGNORE (-1)
 

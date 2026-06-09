@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/gpmc-smc91x.c
+ * beep/arch/arm/mach-omap2/gpmc-smc91x.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Contact:	Tony Lindgren
@@ -9,13 +9,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/smc91x.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/smc91x.h>
 
 #include "gpmc.h"
 #include "gpmc-smc91x.h"

@@ -6,13 +6,13 @@
  * Based on asm-alpha/semaphore.h and asm-i386/rwsem.h
  */
 
-#ifndef _LINUX_RWSEM_H
-#error "please don't include asm/rwsem.h directly, use linux/rwsem.h instead"
+#ifndef _BEEP_RWSEM_H
+#error "please don't include asm/rwsem.h directly, use beep/rwsem.h instead"
 #endif
 
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 #define RWSEM_UNLOCKED_VALUE		0x0000000000000000L
 #define RWSEM_ACTIVE_BIAS		0x0000000000000001L

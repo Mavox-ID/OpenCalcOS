@@ -22,19 +22,19 @@
  * instead which is a bit of an overkill imho
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/jiffies.h>
-#include <linux/reboot.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/freezer.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/kthread.h>
+#include <beep/jiffies.h>
+#include <beep/reboot.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/mutex.h>
+#include <beep/freezer.h>
 
 #include <asm/prom.h>
 
@@ -77,7 +77,7 @@ int wf_critical_overtemp(void)
 	static char * critical_overtemp_path = "/sbin/critical_overtemp";
 	char *argv[] = { critical_overtemp_path, NULL };
 	static char *envp[] = { "HOME=/",
-				"TERM=linux",
+				"TERM=beep",
 				"PATH=/sbin:/usr/sbin:/bin:/usr/bin",
 				NULL };
 

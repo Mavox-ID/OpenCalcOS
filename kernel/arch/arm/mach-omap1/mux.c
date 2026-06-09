@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/mux.c
+ * beep/arch/arm/mach-omap1/mux.c
  *
  * OMAP1 pin multiplexing configurations
  *
@@ -22,10 +22,10 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  *
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
 
 #include <mach/hardware.h>
 

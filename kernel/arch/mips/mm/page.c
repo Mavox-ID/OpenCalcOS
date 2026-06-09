@@ -3,18 +3,18 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2003, 04, 05 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2003, 04, 05 Ralf Baechle (ralf@beep-mips.org)
  * Copyright (C) 2007  Maciej W. Rozycki
  * Copyright (C) 2008  Thiemo Seufer
  * Copyright (C) 2012  MIPS Technologies, Inc.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
 
 #include <asm/bugs.h>
 #include <asm/cacheops.h>

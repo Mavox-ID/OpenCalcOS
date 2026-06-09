@@ -16,21 +16,21 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/mm.h>
-#include <linux/list.h>
-#include <linux/syscalls.h>
-#include <linux/irq.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/mm.h>
+#include <beep/list.h>
+#include <beep/syscalls.h>
+#include <beep/irq.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_pci.h>
+#include <beep/export.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>
@@ -254,7 +254,7 @@ int pci_read_irq_line(struct pci_dev *pci_dev)
 		return -1;
 	}
 
-	pr_debug(" Mapped to linux irq %d\n", virq);
+	pr_debug(" Mapped to beep irq %d\n", virq);
 
 	pci_dev->irq = virq;
 

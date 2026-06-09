@@ -21,8 +21,8 @@ struct route_info {
 #include <net/flow.h>
 #include <net/ip6_fib.h>
 #include <net/sock.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
 
 #define RT6_LOOKUP_F_IFACE		0x00000001
 #define RT6_LOOKUP_F_REACHABLE		0x00000002

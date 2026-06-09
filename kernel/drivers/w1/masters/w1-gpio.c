@@ -8,17 +8,17 @@
  * as published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/w1-gpio.h>
-#include <linux/gpio.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/err.h>
-#include <linux/of.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/w1-gpio.h>
+#include <beep/gpio.h>
+#include <beep/of_platform.h>
+#include <beep/of_gpio.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/err.h>
+#include <beep/of.h>
 
 #include "../w1.h"
 #include "../w1_int.h"
@@ -62,7 +62,7 @@ static int w1_gpio_probe_dt(struct platform_device *pdev)
 	if (!pdata)
 		return -ENOMEM;
 
-	if (of_get_property(np, "linux,open-drain", NULL))
+	if (of_get_property(np, "beep,open-drain", NULL))
 		pdata->is_open_drain = 1;
 
 	pdata->pin = of_get_gpio(np, 0);

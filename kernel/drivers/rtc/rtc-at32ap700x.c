@@ -8,12 +8,12 @@
  * by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/rtc.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/rtc.h>
+#include <beep/io.h>
 
 /*
  * This is a bare-bones RTC. It runs during most system sleep states, but has

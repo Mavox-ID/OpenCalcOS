@@ -18,7 +18,7 @@
 #ifndef __XFS_SUPER_H__
 #define __XFS_SUPER_H__
 
-#include <linux/exportfs.h>
+#include <beep/exportfs.h>
 
 #ifdef CONFIG_XFS_QUOTA
 extern int xfs_qm_init(void);

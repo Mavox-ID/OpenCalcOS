@@ -2,7 +2,7 @@
  *                
  * Filename:      irlap.h
  * Version:       0.8
- * Description:   An IrDA LAP driver for Linux
+ * Description:   An IrDA LAP driver for Beep
  * Status:        Experimental.
  * Author:        Dag Brattli <dagb@cs.uit.no>
  * Created at:    Mon Aug  4 20:40:53 1997
@@ -27,10 +27,10 @@
 #ifndef IRLAP_H
 #define IRLAP_H
 
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/timer.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/timer.h>
 
 #include <net/irda/irqueue.h>		/* irda_queue_t */
 #include <net/irda/qos.h>		/* struct qos_info */

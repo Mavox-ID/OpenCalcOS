@@ -11,10 +11,10 @@
 /* Disable profiling for userspace code: */
 #define DISABLE_BRANCH_PROFILING
 
-#include <linux/kernel.h>
-#include <linux/posix-timers.h>
-#include <linux/time.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/posix-timers.h>
+#include <beep/time.h>
+#include <beep/string.h>
 #include <asm/vsyscall.h>
 #include <asm/fixmap.h>
 #include <asm/vgtod.h>

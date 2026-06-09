@@ -1,5 +1,5 @@
 /*
- *  linux/net/sunrpc/gss_krb5_crypto.c
+ *  beep/net/sunrpc/gss_krb5_crypto.c
  *
  *  Copyright (c) 2000-2008 The Regents of the University of Michigan.
  *  All rights reserved.
@@ -34,16 +34,16 @@
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#include <linux/err.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/crypto.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/random.h>
-#include <linux/sunrpc/gss_krb5.h>
-#include <linux/sunrpc/xdr.h>
+#include <beep/err.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/scatterlist.h>
+#include <beep/crypto.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/random.h>
+#include <beep/sunrpc/gss_krb5.h>
+#include <beep/sunrpc/xdr.h>
 
 #ifdef RPC_DEBUG
 # define RPCDBG_FACILITY        RPCDBG_AUTH

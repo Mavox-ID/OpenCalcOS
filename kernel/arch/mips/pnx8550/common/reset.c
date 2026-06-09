@@ -20,7 +20,7 @@
  * Reset the PNX8550 board.
  *
  */
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 #include <asm/processor.h>
 #include <asm/reboot.h>

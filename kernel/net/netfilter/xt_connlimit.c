@@ -12,20 +12,20 @@
  * GPL (C) 1999  Rusty Russell (rusty@rustcorp.com.au).
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/jhash.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/netfilter/nf_conntrack_tcp.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_connlimit.h>
+#include <beep/in.h>
+#include <beep/in6.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/jhash.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/random.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/netfilter/nf_conntrack_tcp.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_connlimit.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_core.h>
 #include <net/netfilter/nf_conntrack_tuple.h>

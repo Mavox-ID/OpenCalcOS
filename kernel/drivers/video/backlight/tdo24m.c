@@ -9,15 +9,15 @@
  *  publishhed by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/tdo24m.h>
-#include <linux/fb.h>
-#include <linux/lcd.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/tdo24m.h>
+#include <beep/fb.h>
+#include <beep/lcd.h>
+#include <beep/slab.h>
 
 #define POWER_IS_ON(pwr)	((pwr) <= FB_BLANK_NORMAL)
 

@@ -20,10 +20,10 @@
 /*
  *	Driver specific includes
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/init.h>
 
 /*
  *  PortServer includes

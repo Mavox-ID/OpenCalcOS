@@ -12,15 +12,15 @@
  * License version 2.  This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/resource.h>
-#include <linux/serial.h>
-#include <linux/serial_pnx8xxx.h>
-#include <linux/platform_device.h>
-#include <linux/usb/ohci_pdriver.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/resource.h>
+#include <beep/serial.h>
+#include <beep/serial_pnx8xxx.h>
+#include <beep/platform_device.h>
+#include <beep/usb/ohci_pdriver.h>
 
 #include <int.h>
 #include <usb.h>

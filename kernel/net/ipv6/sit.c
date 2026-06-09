@@ -1,6 +1,6 @@
 /*
  *	IPv6 over IPv4 tunnel device - Simple Internet Transition (SIT)
- *	Linux INET6 implementation
+ *	Beep INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
@@ -19,22 +19,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/icmp.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/in6.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/icmp.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
-#include <linux/init.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/if_ether.h>
+#include <beep/init.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/if_ether.h>
 
 #include <net/sock.h>
 #include <net/snmp.h>
@@ -515,7 +515,7 @@ static void ipip6_tunnel_uninit(struct net_device *dev)
 static int ipip6_err(struct sk_buff *skb, u32 info)
 {
 
-/* All the routers (except for Linux) return only
+/* All the routers (except for Beep) return only
    8 bytes of packet payload. It means, that precise relaying of
    ICMP in the real Internet is absolutely infeasible.
  */

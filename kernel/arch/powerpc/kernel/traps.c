@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 1995-1996  Gary Thomas (gdt@linuxppc.org)
+ *  Copyright (C) 1995-1996  Gary Thomas (gdt@beepppc.org)
  *  Copyright 2007-2010 Freescale Semiconductor, Inc.
  *
  *  This program is free software; you can redistribute it and/or
@@ -15,26 +15,26 @@
  * This file handles the architecture-dependent parts of hardware exceptions
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/prctl.h>
-#include <linux/delay.h>
-#include <linux/kprobes.h>
-#include <linux/kexec.h>
-#include <linux/backlight.h>
-#include <linux/bug.h>
-#include <linux/kdebug.h>
-#include <linux/debugfs.h>
-#include <linux/ratelimit.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/prctl.h>
+#include <beep/delay.h>
+#include <beep/kprobes.h>
+#include <beep/kexec.h>
+#include <beep/backlight.h>
+#include <beep/bug.h>
+#include <beep/kdebug.h>
+#include <beep/debugfs.h>
+#include <beep/ratelimit.h>
 
 #include <asm/emulated_ops.h>
 #include <asm/pgtable.h>

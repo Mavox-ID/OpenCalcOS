@@ -6,12 +6,12 @@
  *	This code is released under the GNU General Public License version 2 or
  *	later.
  */
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <beep/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/debugfs.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
 
 #include <asm/mmu_context.h>
 #include <asm/uv/uv.h>

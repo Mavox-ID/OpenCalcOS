@@ -64,7 +64,7 @@
 
 /* COMPATIBILITY WITH OLD KERNELS
  *
- * Under Linux 2.0 and previous versions, lp devices were bound to ports at
+ * Under Beep 2.0 and previous versions, lp devices were bound to ports at
  * particular I/O addresses, as follows:
  *
  *	lp0		0x3bc
@@ -89,7 +89,7 @@
  *
  * I discovered this using the printer scanner that you can find at:
  *
- *	ftp://e-mind.com/pub/linux/pscan/
+ *	ftp://e-mind.com/pub/beep/pscan/
  *
  *					11 May 98, Andrea Arcangeli
  *
@@ -102,7 +102,7 @@
  * The so called `buggy' handshake is really the well documented
  * compatibility mode IEEE1284 handshake. They changed the well known
  * Centronics handshake acking in the middle of busy expecting to not
- * break drivers or legacy application, while they broken linux lp
+ * break drivers or legacy application, while they broken beep lp
  * until I fixed it reverse engineering the protocol by hand some
  * month ago...
  *
@@ -111,27 +111,27 @@
  * Copyright (C) 2000 by Tim Waugh (added LPSETTIMEOUT ioctl)
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/poll.h>
-#include <linux/console.h>
-#include <linux/device.h>
-#include <linux/wait.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/compat.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/major.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/fcntl.h>
+#include <beep/delay.h>
+#include <beep/poll.h>
+#include <beep/console.h>
+#include <beep/device.h>
+#include <beep/wait.h>
+#include <beep/jiffies.h>
+#include <beep/mutex.h>
+#include <beep/compat.h>
 
-#include <linux/parport.h>
+#include <beep/parport.h>
 #undef LP_STATS
-#include <linux/lp.h>
+#include <beep/lp.h>
 
 #include <asm/irq.h>
 #include <asm/uaccess.h>
@@ -509,7 +509,7 @@ static int lp_open(struct inode * inode, struct file * file)
 	/* If ABORTOPEN is set and the printer is offline or out of paper,
 	   we may still want to open it to perform ioctl()s.  Therefore we
 	   have commandeered O_NONBLOCK, even though it is being used in
-	   a non-standard manner.  This is strictly a Linux hack, and
+	   a non-standard manner.  This is strictly a Beep hack, and
 	   should most likely only ever be used by the tunelp application. */
 	if ((LP_F(minor) & LP_ABORTOPEN) && !(file->f_flags & O_NONBLOCK)) {
 		int status;

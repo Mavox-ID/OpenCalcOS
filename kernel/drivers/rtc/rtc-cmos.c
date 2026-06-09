@@ -28,17 +28,17 @@
  * interrupts disabled, holding the global rtc_lock, to exclude those
  * other drivers and utilities on correctly configured systems.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/log2.h>
-#include <linux/pm.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/platform_device.h>
+#include <beep/mod_devicetable.h>
+#include <beep/log2.h>
+#include <beep/pm.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
 
 /* this is for "generic access to PC-style RTC" using CMOS_READ/CMOS_WRITE */
 #include <asm-generic/rtc.h>
@@ -558,7 +558,7 @@ static irqreturn_t cmos_interrupt(int irq, void *p)
 		irqstat = (unsigned long)irq & 0xF0;
 	irqstat &= (rtc_control & RTC_IRQMASK) | RTC_IRQF;
 
-	/* All Linux RTC alarms should be treated as if they were oneshot.
+	/* All Beep RTC alarms should be treated as if they were oneshot.
 	 * Similar code may be needed in system wakeup paths, in case the
 	 * alarm woke the system.
 	 */
@@ -906,7 +906,7 @@ static inline int cmos_poweroff(struct device *dev)
 
 #ifdef	CONFIG_ACPI
 
-#include <linux/acpi.h>
+#include <beep/acpi.h>
 
 static u32 rtc_handler(void *context)
 {
@@ -967,7 +967,7 @@ static void cmos_wake_setup(struct device *dev)
 	acpi_rtc_info.rtc_mon_alarm = acpi_gbl_FADT.month_alarm;
 	acpi_rtc_info.rtc_century = acpi_gbl_FADT.century;
 
-	/* NOTE:  S4_RTC_WAKE is NOT currently useful to Linux */
+	/* NOTE:  S4_RTC_WAKE is NOT currently useful to Beep */
 	if (acpi_gbl_FADT.flags & ACPI_FADT_S4_RTC_WAKE)
 		dev_info(dev, "RTC can wake from S4\n");
 
@@ -987,7 +987,7 @@ static void cmos_wake_setup(struct device *dev)
 
 #ifdef	CONFIG_PNP
 
-#include <linux/pnp.h>
+#include <beep/pnp.h>
 
 static int cmos_pnp_probe(struct pnp_dev *pnp, const struct pnp_device_id *id)
 {

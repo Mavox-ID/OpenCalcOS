@@ -22,11 +22,11 @@
  * Alexander Smirnov <alex.bluesman.smirnov@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/platform_device.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/timer.h>
+#include <beep/platform_device.h>
+#include <beep/netdevice.h>
+#include <beep/spinlock.h>
 #include <net/mac802154.h>
 #include <net/wpan-phy.h>
 

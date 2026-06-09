@@ -1,7 +1,7 @@
 #ifndef _ASM_SCORE_PGALLOC_H
 #define _ASM_SCORE_PGALLOC_H
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 static inline void pmd_populate_kernel(struct mm_struct *mm, pmd_t *pmd,
 	pte_t *pte)

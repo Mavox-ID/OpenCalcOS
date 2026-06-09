@@ -8,15 +8,15 @@
  * Based on ipt_random and ipt_nth by Fabrice MARIE <fabrice@netfilter.org>.
  */
 
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/net.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/skbuff.h>
+#include <beep/net.h>
+#include <beep/slab.h>
 
-#include <linux/netfilter/xt_statistic.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/module.h>
+#include <beep/netfilter/xt_statistic.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/module.h>
 
 struct xt_statistic_priv {
 	atomic_t count;

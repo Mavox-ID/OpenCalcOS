@@ -14,10 +14,10 @@
  * Copyright (c) 2011 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/device.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/gpio.h>
+#include <beep/device.h>
+#include <beep/gfp.h>
 
 static void devm_gpio_release(struct device *dev, void *res)
 {

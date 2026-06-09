@@ -2,11 +2,11 @@
  * SMC 37C93X initialization code
  */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/delay.h>
 
 #include <asm/hwrpb.h>
 #include <asm/io.h>

@@ -1,5 +1,5 @@
 /*
- * syscalls.h - Linux syscall interfaces (arch-specific)
+ * syscalls.h - Beep syscall interfaces (arch-specific)
  *
  * Copyright (c) 2008 Jaswinder Singh Rajput
  *
@@ -10,10 +10,10 @@
 #ifndef _ASM_X86_SYSCALLS_H
 #define _ASM_X86_SYSCALLS_H
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/signal.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/linkage.h>
+#include <beep/signal.h>
+#include <beep/types.h>
 
 /* Common in X86_32 and X86_64 */
 /* kernel/ioport.c */

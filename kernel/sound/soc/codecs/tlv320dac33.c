@@ -21,16 +21,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
+#include <beep/regulator/consumer.h>
+#include <beep/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

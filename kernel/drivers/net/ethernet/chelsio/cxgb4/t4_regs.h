@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for Beep.
  *
  * Copyright (c) 2010 Chelsio Communications, Inc. All rights reserved.
  *

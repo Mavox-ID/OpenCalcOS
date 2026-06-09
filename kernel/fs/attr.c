@@ -1,20 +1,20 @@
 /*
- *  linux/fs/attr.c
+ *  beep/fs/attr.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  changes by Thomas Schoebel-Theuer
  */
 
-#include <linux/export.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/capability.h>
-#include <linux/fsnotify.h>
-#include <linux/fcntl.h>
-#include <linux/security.h>
-#include <linux/evm.h>
-#include <linux/ima.h>
+#include <beep/export.h>
+#include <beep/time.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/capability.h>
+#include <beep/fsnotify.h>
+#include <beep/fcntl.h>
+#include <beep/security.h>
+#include <beep/evm.h>
+#include <beep/ima.h>
 
 /**
  * inode_change_ok - check if attribute changes to an inode are allowed

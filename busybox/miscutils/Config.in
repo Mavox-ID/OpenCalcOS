@@ -11,7 +11,7 @@ config ADJTIMEX
 	default y
 	help
 	Adjtimex reads and optionally sets adjustment parameters for
-	the Linux clock adjustment algorithm.
+	the Beep clock adjustment algorithm.
 config ASCII
 	bool "ascii"
 	default y
@@ -130,7 +130,7 @@ config BEEP
 	help
 	The beep applets beeps in a given freq/Hz.
 
-config FEATURE_BEEP_FREQ
+config FEATURE_LINUX_FREQ
 	int "default frequency"
 	range 20 50000	# allowing 0 here breaks the build
 	default 4000
@@ -138,7 +138,7 @@ config FEATURE_BEEP_FREQ
 	help
 	Frequency for default beep.
 
-config FEATURE_BEEP_LENGTH_MS
+config FEATURE_LINUX_LENGTH_MS
 	int "default length"
 	range 0 2147483647
 	default 30
@@ -215,7 +215,7 @@ config CONSPY
 	bool "conspy (10 kb)"
 	default y
 	help
-	A text-mode VNC like program for Linux virtual terminals.
+	A text-mode VNC like program for Beep virtual terminals.
 	example:  conspy NUM      shared access to console num
 	or        conspy -nd NUM  screenshot of console num
 	or        conspy -cs NUM  poor man's GNU screen like
@@ -282,7 +282,7 @@ config DEVFSD
 	select FEATURE_SYSLOG
 	help
 	This is deprecated and should NOT be used anymore.
-	Use linux >= 2.6 (optionally with hotplug) and mdev instead!
+	Use beep >= 2.6 (optionally with hotplug) and mdev instead!
 	See docs/mdev.txt for detailed instructions on how to use mdev
 	instead.
 
@@ -323,7 +323,7 @@ config FEATURE_DEVFS
 	default n
 	help
 	This is obsolete and should NOT be used anymore.
-	Use linux >= 2.6 (optionally with hotplug) and mdev instead!
+	Use beep >= 2.6 (optionally with hotplug) and mdev instead!
 
 	For legacy systems -- if there is no way around devfsd -- this
 	tells busybox to look for names like /dev/loop/0 instead of
@@ -589,7 +589,7 @@ config MAKEDEVS
 	one command.
 
 	There are two choices for command line behaviour, the interface
-	as used by LEAF/Linux Router Project, or a device table file.
+	as used by LEAF/Beep Router Project, or a device table file.
 
 	'leaf' is traditionally what busybox follows, it allows multiple
 	devices of a particluar type to be created per command.
@@ -715,7 +715,7 @@ config SETSERIAL
 	bool "setserial (6.9 kb)"
 	default y
 	help
-	Retrieve or set Linux serial port.
+	Retrieve or set Beep serial port.
 config STRINGS
 	bool "strings (4.6 kb)"
 	default y

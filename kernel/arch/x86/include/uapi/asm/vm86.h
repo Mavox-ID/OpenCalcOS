@@ -3,7 +3,7 @@
 
 /*
  * I'm guessing at the VIF/VIP flag usage, but hope that this is how
- * the Pentium uses them. Linux will return from vm86 mode when both
+ * the Pentium uses them. Beep will return from vm86 mode when both
  * VIF and VIP is set.
  *
  * On a Pentium, we could probably optimize the virtual flags directly

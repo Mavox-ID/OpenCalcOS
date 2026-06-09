@@ -1,5 +1,5 @@
 /**
- * eCryptfs: Linux filesystem encryption layer
+ * eCryptfs: Beep filesystem encryption layer
  * Kernel declarations.
  *
  * Copyright (C) 1997-2003 Erez Zadok
@@ -30,14 +30,14 @@
 
 #include <keys/user-type.h>
 #include <keys/encrypted-type.h>
-#include <linux/fs.h>
-#include <linux/fs_stack.h>
-#include <linux/namei.h>
-#include <linux/scatterlist.h>
-#include <linux/hash.h>
-#include <linux/nsproxy.h>
-#include <linux/backing-dev.h>
-#include <linux/ecryptfs.h>
+#include <beep/fs.h>
+#include <beep/fs_stack.h>
+#include <beep/namei.h>
+#include <beep/scatterlist.h>
+#include <beep/hash.h>
+#include <beep/nsproxy.h>
+#include <beep/backing-dev.h>
+#include <beep/ecryptfs.h>
 
 #define ECRYPTFS_DEFAULT_IV_BYTES 16
 #define ECRYPTFS_DEFAULT_EXTENT_SIZE 4096

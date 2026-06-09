@@ -1,8 +1,8 @@
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list_sort.h>
-#include <linux/slab.h>
-#include <linux/list.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/list_sort.h>
+#include <beep/slab.h>
+#include <beep/list.h>
 
 #define MAX_LIST_LENGTH_BITS 20
 
@@ -143,7 +143,7 @@ EXPORT_SYMBOL(list_sort);
 
 #ifdef CONFIG_TEST_LIST_SORT
 
-#include <linux/random.h>
+#include <beep/random.h>
 
 /*
  * The pattern of set bits in the list length determines which cases

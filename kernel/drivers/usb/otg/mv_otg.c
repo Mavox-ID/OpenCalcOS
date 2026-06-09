@@ -9,23 +9,23 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/device.h>
-#include <linux/proc_fs.h>
-#include <linux/clk.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
+#include <beep/device.h>
+#include <beep/proc_fs.h>
+#include <beep/clk.h>
+#include <beep/workqueue.h>
+#include <beep/platform_device.h>
 
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/hcd.h>
-#include <linux/platform_data/mv_usb.h>
+#include <beep/usb.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb/hcd.h>
+#include <beep/platform_data/mv_usb.h>
 
 #include "mv_otg.h"
 

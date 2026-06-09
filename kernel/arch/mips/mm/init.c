@@ -8,27 +8,27 @@
  * Kevin D. Kissell, kevink@mips.com and Carsten Langgaard, carstenl@mips.com
  * Copyright (C) 2000 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/bug.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/pagemap.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/bootmem.h>
-#include <linux/highmem.h>
-#include <linux/swap.h>
-#include <linux/proc_fs.h>
-#include <linux/pfn.h>
-#include <linux/hardirq.h>
-#include <linux/gfp.h>
+#include <beep/bug.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/pagemap.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/bootmem.h>
+#include <beep/highmem.h>
+#include <beep/swap.h>
+#include <beep/proc_fs.h>
+#include <beep/pfn.h>
+#include <beep/hardirq.h>
+#include <beep/gfp.h>
 
 #include <asm/asm-offsets.h>
 #include <asm/bootinfo.h>

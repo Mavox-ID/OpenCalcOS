@@ -7,17 +7,17 @@
 
 #include "dm.h"
 
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/blkdev.h>
-#include <linux/namei.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/atomic.h>
+#include <beep/module.h>
+#include <beep/vmalloc.h>
+#include <beep/blkdev.h>
+#include <beep/namei.h>
+#include <beep/ctype.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/mutex.h>
+#include <beep/delay.h>
+#include <beep/atomic.h>
 
 #define DM_MSG_PREFIX "table"
 

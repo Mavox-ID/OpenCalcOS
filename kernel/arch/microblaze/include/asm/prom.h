@@ -12,16 +12,16 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/of.h>	/* linux/of.h gets to determine #include ordering */
+#include <beep/of.h>	/* beep/of.h gets to determine #include ordering */
 
 #ifndef _ASM_MICROBLAZE_PROM_H
 #define _ASM_MICROBLAZE_PROM_H
 #ifdef __KERNEL__
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/irq.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #define HAVE_ARCH_DEVTREE_FIXUPS
 
@@ -60,8 +60,8 @@ struct device_node *of_get_cpu_node(int cpu, unsigned int *thread);
  * that are overridden by this file.  Ideally they shouldn't be included
  * by this file, but there are a bunch of .c files that currently depend
  * on it.  Eventually they will be cleaned up. */
-#include <linux/of_fdt.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
+#include <beep/of_fdt.h>
+#include <beep/of_irq.h>
+#include <beep/platform_device.h>
 
 #endif /* _ASM_MICROBLAZE_PROM_H */

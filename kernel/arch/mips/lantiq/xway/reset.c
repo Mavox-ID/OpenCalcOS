@@ -6,14 +6,14 @@
  *  Copyright (C) 2010 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/pm.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/pm.h>
+#include <beep/export.h>
+#include <beep/delay.h>
+#include <beep/of_address.h>
+#include <beep/of_platform.h>
 
 #include <asm/reboot.h>
 

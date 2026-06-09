@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/proc-arm922.S: MMU functions for ARM922
+ *  beep/arch/arm/mm/proc-arm922.S: MMU functions for ARM922
  *
  *  Copyright (C) 1999,2000 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd.
@@ -26,8 +26,8 @@
  *
  *  CONFIG_CPU_ARM922_CPU_IDLE -> nohlt
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/assembler.h>
 #include <asm/hwcap.h>
 #include <asm/pgtable-hwdef.h>

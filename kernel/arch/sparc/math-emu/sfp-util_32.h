@@ -1,6 +1,6 @@
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/types.h>
 #include <asm/byteorder.h>
 
 #define add_ssaaaa(sh, sl, ah, al, bh, bl) 				\

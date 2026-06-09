@@ -40,12 +40,12 @@
 		#size-cells = <0>;
 		button@1 {
 			label = "USB Copy";
-			linux,code = <133>;
+			beep,code = <133>;
 			gpios = <&gpio0 15 1>;
 		};
 		button@2 {
 			label = "Reset";
-			linux,code = <0x198>;
+			beep,code = <0x198>;
 			gpios = <&gpio0 16 1>;
 		};
 	};

@@ -1,5 +1,5 @@
 /*
- * linux/ipc/msgutil.c
+ * beep/ipc/msgutil.c
  * Copyright (C) 1999, 2004 Manfred Spraul
  *
  * This file is released under GNU General Public Licence version 2 or
@@ -8,15 +8,15 @@
  * See the file COPYING for more details.
  */
 
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/ipc.h>
-#include <linux/msg.h>
-#include <linux/ipc_namespace.h>
-#include <linux/utsname.h>
-#include <linux/proc_fs.h>
+#include <beep/spinlock.h>
+#include <beep/init.h>
+#include <beep/security.h>
+#include <beep/slab.h>
+#include <beep/ipc.h>
+#include <beep/msg.h>
+#include <beep/ipc_namespace.h>
+#include <beep/utsname.h>
+#include <beep/proc_fs.h>
 #include <asm/uaccess.h>
 
 #include "util.h"

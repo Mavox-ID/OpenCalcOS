@@ -12,20 +12,20 @@
  * or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
  * for more details.
  */
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/list.h>
-#include <linux/irq.h>
-#include <linux/of_device.h>
+#include <beep/module.h>
+#include <beep/export.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/list.h>
+#include <beep/irq.h>
+#include <beep/of_device.h>
 #include <asm/mach/irq.h>
 
 #include "imx-ipu-v3.h"

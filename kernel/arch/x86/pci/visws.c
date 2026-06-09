@@ -4,9 +4,9 @@
  *	(c) 1999--2000 Martin Mares <mj@ucw.cz>
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/init.h>
 
 #include <asm/setup.h>
 #include <asm/pci_x86.h>

@@ -1,7 +1,7 @@
 #ifndef _CRIS_TLB_H
 #define _CRIS_TLB_H
 
-#include <linux/pagemap.h>
+#include <beep/pagemap.h>
 
 #include <arch/tlb.h>
 

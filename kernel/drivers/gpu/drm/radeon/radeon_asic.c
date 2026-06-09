@@ -26,12 +26,12 @@
  *          Jerome Glisse
  */
 
-#include <linux/console.h>
+#include <beep/console.h>
 #include <drm/drmP.h>
 #include <drm/drm_crtc_helper.h>
 #include <drm/radeon_drm.h>
-#include <linux/vgaarb.h>
-#include <linux/vga_switcheroo.h>
+#include <beep/vgaarb.h>
+#include <beep/vga_switcheroo.h>
 #include "radeon_reg.h"
 #include "radeon.h"
 #include "radeon_asic.h"

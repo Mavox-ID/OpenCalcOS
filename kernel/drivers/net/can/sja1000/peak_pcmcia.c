@@ -14,17 +14,17 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/io.h>
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
+#include <beep/can.h>
+#include <beep/can/dev.h>
 #include "sja1000.h"
 
 MODULE_AUTHOR("Stephane Grosjean <s.grosjean@peak-system.com>");

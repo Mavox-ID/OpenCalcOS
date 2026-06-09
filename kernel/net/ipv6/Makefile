@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux TCP/IP (INET6) layer.
+# Makefile for the Beep TCP/IP (INET6) layer.
 #
 
 obj-$(CONFIG_IPV6) += ipv6.o

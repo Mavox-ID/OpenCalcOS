@@ -10,8 +10,8 @@
  * GNU General Public License for more details.
  */
 
-#ifndef _LINUX_MSM_GPIOMUX_H
-#define _LINUX_MSM_GPIOMUX_H
+#ifndef _BEEP_MSM_GPIOMUX_H
+#define _BEEP_MSM_GPIOMUX_H
 
 #ifdef CONFIG_MSM_GPIOMUX
 
@@ -35,4 +35,4 @@ static inline int msm_gpiomux_put(unsigned gpio)
 
 #endif
 
-#endif /* _LINUX_MSM_GPIOMUX_H */
+#endif /* _BEEP_MSM_GPIOMUX_H */

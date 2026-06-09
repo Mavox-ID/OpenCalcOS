@@ -31,12 +31,12 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/export.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/string.h>
+#include <beep/export.h>
+#include <beep/gfp.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/string.h>
 
 #include <asm/pci-bridge.h>
 #include <asm/ppc-pci.h>

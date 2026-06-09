@@ -24,7 +24,7 @@
  *
  */
 
-#include <linux/pci.h>
+#include <beep/pci.h>
 #include "aic94xx_reg.h"
 #include "aic94xx.h"
 

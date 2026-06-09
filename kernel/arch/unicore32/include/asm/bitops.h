@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/asm/bitops.h
+ * beep/arch/unicore32/include/asm/bitops.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *

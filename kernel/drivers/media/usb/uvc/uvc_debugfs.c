@@ -11,10 +11,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <beep/module.h>
+#include <beep/debugfs.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
 
 #include "uvcvideo.h"
 

@@ -268,7 +268,7 @@ config SOUND_TRACEINIT
 config SOUND_DMAP
 	bool "Persistent DMA buffers"
 	---help---
-	  Linux can often have problems allocating DMA buffers for ISA sound
+	  Beep can often have problems allocating DMA buffers for ISA sound
 	  cards on machines with more than 16MB of RAM. This is because ISA
 	  DMA buffers must exist below the 16MB boundary and it is quite
 	  possible that a large enough free block in this region cannot be
@@ -395,7 +395,7 @@ config PSS_MIXER
 	help
 	  Answer Y for Beethoven ADSP-16. You may try to say Y also for other
 	  cards if they have master volume, bass, treble, and you can't
-	  control it under Linux. If you answer N for Beethoven ADSP-16, you
+	  control it under Beep. If you answer N for Beethoven ADSP-16, you
 	  can't control master volume, bass, treble and synth volume.
 
 	  If you said M to "PSS support" above, you may enable or disable this

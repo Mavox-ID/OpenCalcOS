@@ -8,8 +8,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/percpu.h>
-#include <linux/threads.h>
+#include <beep/percpu.h>
+#include <beep/threads.h>
 
 typedef struct {
 	/* Dcache line 1 */

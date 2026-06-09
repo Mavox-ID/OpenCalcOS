@@ -17,13 +17,13 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/sched.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/sched.h>
 
 #include <asm/pasemi_dma.h>
 

@@ -26,7 +26,7 @@
 #ifndef _BC_DTS_DEFS_H_
 #define _BC_DTS_DEFS_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* BIT Mask */
 #define BC_BIT(_x)		(1 << (_x))
@@ -90,7 +90,7 @@ struct BC_REG_CONFIG {
 	uint32_t		DbgOptions;
 };
 
-#if defined(__KERNEL__) || defined(__LINUX_USER__)
+#if defined(__KERNEL__) || defined(__BEEP_USER__)
 #else
 /* Align data structures */
 #define ALIGN(x)	__declspec(align(x))
@@ -234,7 +234,7 @@ struct BC_PIB_EXT_VC1 {
 /*------------------------------------------------------*
  *    Picture Information Block				*
  *------------------------------------------------------*/
-#if defined(__LINUX_USER__)
+#if defined(__BEEP_USER__)
 /* Values for 'pulldown' field.  '0' means no pulldown information
  * was present for this picture. */
 enum {
@@ -390,7 +390,7 @@ enum {
 
 #define VDEC_FLAG_PICTURE_META_DATA_PRESENT	(0x40000)
 
-#endif /* __LINUX_USER__ */
+#endif /* __BEEP_USER__ */
 
 enum _BC_OUTPUT_FORMAT {
 	MODE420				= 0x0,

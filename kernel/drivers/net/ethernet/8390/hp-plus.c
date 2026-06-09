@@ -1,4 +1,4 @@
-/* hp-plus.c: A HP PCLAN/plus ethernet driver for linux. */
+/* hp-plus.c: A HP PCLAN/plus ethernet driver for beep. */
 /*
 	Written 1994 by Donald Becker.
 
@@ -21,17 +21,17 @@
 static const char version[] =
 "hp-plus.c:v1.10 9/24/94 Donald Becker (becker@cesdis.gsfc.nasa.gov)\n";
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/string.h>		/* Important -- this inlines word moves. */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <beep/string.h>		/* Important -- this inlines word moves. */
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
 
 #include <asm/io.h>
 

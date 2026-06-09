@@ -12,12 +12,12 @@
  *   more details.
  */
 
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/binfmts.h>
-#include <linux/compat.h>
-#include <linux/mman.h>
-#include <linux/elf.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/binfmts.h>
+#include <beep/compat.h>
+#include <beep/mman.h>
+#include <beep/elf.h>
 #include <asm/pgtable.h>
 #include <asm/pgalloc.h>
 #include <asm/sections.h>
@@ -94,7 +94,7 @@ const char *arch_vma_name(struct vm_area_struct *vma)
 	return NULL;
 }
 
-int arch_setup_additional_pages(struct linux_binprm *bprm,
+int arch_setup_additional_pages(struct beep_binprm *bprm,
 				int executable_stack)
 {
 	struct mm_struct *mm = current->mm;
@@ -106,7 +106,7 @@ int arch_setup_additional_pages(struct linux_binprm *bprm,
 	/*
 	 * Notify the simulator that an exec just occurred.
 	 * If we can't find the filename of the mapping, just use
-	 * whatever was passed as the linux_binprm filename.
+	 * whatever was passed as the beep_binprm filename.
 	 */
 	if (!notify_exec(mm))
 		sim_notify_exec(bprm->filename);

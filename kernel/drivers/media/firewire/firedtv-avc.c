@@ -11,18 +11,18 @@
  *	the License, or (at your option) any later version.
  */
 
-#include <linux/bug.h>
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/string.h>
-#include <linux/stringify.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <beep/bug.h>
+#include <beep/crc32.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/moduleparam.h>
+#include <beep/mutex.h>
+#include <beep/string.h>
+#include <beep/stringify.h>
+#include <beep/wait.h>
+#include <beep/workqueue.h>
 
 #include <dvb_frontend.h>
 

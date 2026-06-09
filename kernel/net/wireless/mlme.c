@@ -4,13 +4,13 @@
  * Copyright (c) 2009, Jouni Malinen <j@w1.fi>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/nl80211.h>
-#include <linux/slab.h>
-#include <linux/wireless.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/etherdevice.h>
+#include <beep/netdevice.h>
+#include <beep/nl80211.h>
+#include <beep/slab.h>
+#include <beep/wireless.h>
 #include <net/cfg80211.h>
 #include <net/iw_handler.h>
 #include "core.h"

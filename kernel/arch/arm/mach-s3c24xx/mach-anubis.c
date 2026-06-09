@@ -1,7 +1,7 @@
-/* linux/arch/arm/mach-s3c2440/mach-anubis.c
+/* beep/arch/arm/mach-s3c2440/mach-anubis.c
  *
  * Copyright 2003-2009 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -9,20 +9,20 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/sm501.h>
-#include <linux/sm501-regs.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/serial_core.h>
+#include <beep/platform_device.h>
+#include <beep/ata_platform.h>
+#include <beep/i2c.h>
+#include <beep/io.h>
+#include <beep/sm501.h>
+#include <beep/sm501-regs.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -40,20 +40,20 @@
 #include <mach/regs-gpio.h>
 #include <mach/regs-mem.h>
 #include <mach/regs-lcd.h>
-#include <linux/platform_data/mtd-nand-s3c2410.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/mtd-nand-s3c2410.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand_ecc.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/nand_ecc.h>
+#include <beep/mtd/partitions.h>
 
 #include <net/ax88796.h>
 
 #include <plat/clock.h>
 #include <plat/devs.h>
 #include <plat/cpu.h>
-#include <linux/platform_data/asoc-s3c24xx_simtec.h>
+#include <beep/platform_data/asoc-s3c24xx_simtec.h>
 
 #include "simtec.h"
 #include "common.h"

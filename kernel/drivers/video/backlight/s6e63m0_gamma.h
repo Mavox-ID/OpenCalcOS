@@ -1,4 +1,4 @@
-/* linux/drivers/video/samsung/s6e63m0_brightness.h
+/* beep/drivers/video/samsung/s6e63m0_brightness.h
  *
  * Gamma level definitions.
  *

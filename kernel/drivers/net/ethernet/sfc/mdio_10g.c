@@ -9,9 +9,9 @@
 /*
  * Useful functions for working with MDIO clause 45 PHYs
  */
-#include <linux/types.h>
-#include <linux/ethtool.h>
-#include <linux/delay.h>
+#include <beep/types.h>
+#include <beep/ethtool.h>
+#include <beep/delay.h>
 #include "net_driver.h"
 #include "mdio_10g.h"
 #include "workarounds.h"

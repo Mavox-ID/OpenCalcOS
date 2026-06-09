@@ -1,15 +1,15 @@
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/bootmem.h>
-#include <linux/bit_spinlock.h>
-#include <linux/page_cgroup.h>
-#include <linux/hash.h>
-#include <linux/slab.h>
-#include <linux/memory.h>
-#include <linux/vmalloc.h>
-#include <linux/cgroup.h>
-#include <linux/swapops.h>
-#include <linux/kmemleak.h>
+#include <beep/mm.h>
+#include <beep/mmzone.h>
+#include <beep/bootmem.h>
+#include <beep/bit_spinlock.h>
+#include <beep/page_cgroup.h>
+#include <beep/hash.h>
+#include <beep/slab.h>
+#include <beep/memory.h>
+#include <beep/vmalloc.h>
+#include <beep/cgroup.h>
+#include <beep/swapops.h>
+#include <beep/kmemleak.h>
 
 static unsigned long total_usage;
 

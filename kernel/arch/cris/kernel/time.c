@@ -1,5 +1,5 @@
 /*
- *  linux/arch/cris/kernel/time.c
+ *  beep/arch/cris/kernel/time.c
  *
  *  Copyright (C) 1991, 1992, 1995  Linus Torvalds
  *  Copyright (C) 1999, 2000, 2001 Axis Communications AB
@@ -14,22 +14,22 @@
  * 1997-09-10	Updated NTP code according to technical memorandum Jan '96
  *		"A Kernel Model for Precision Timekeeping" by Dave Mills
  *
- * Linux/CRIS specific code:
+ * Beep/CRIS specific code:
  *
  * Authors:    Bjorn Wesen
  *             Johan Adolfsson
  *
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/jiffies.h>
-#include <linux/bcd.h>
-#include <linux/timex.h>
-#include <linux/init.h>
-#include <linux/profile.h>
-#include <linux/sched.h>	/* just for sched_clock() - funny that */
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/param.h>
+#include <beep/jiffies.h>
+#include <beep/bcd.h>
+#include <beep/timex.h>
+#include <beep/init.h>
+#include <beep/profile.h>
+#include <beep/sched.h>	/* just for sched_clock() - funny that */
 
 
 #define D(x)

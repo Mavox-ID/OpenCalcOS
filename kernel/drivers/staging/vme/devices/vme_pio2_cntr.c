@@ -14,10 +14,10 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/gpio.h>
-#include <linux/vme.h>
+#include <beep/device.h>
+#include <beep/types.h>
+#include <beep/gpio.h>
+#include <beep/vme.h>
 
 #include "vme_pio2.h"
 

@@ -27,7 +27,7 @@
 /*
  * Authors: Dave Airlie <airlied@redhat.com>
  */
-#include <linux/export.h>
+#include <beep/export.h>
 #include <drm/drmP.h>
 #include <drm/drm_crtc.h>
 #include <drm/drm_crtc_helper.h>

@@ -19,9 +19,9 @@ config XTENSA
 	help
 	  Xtensa processors are 32-bit RISC machines designed by Tensilica
 	  primarily for embedded systems.  These processors are both
-	  configurable and extensible.  The Linux port to the Xtensa
+	  configurable and extensible.  The Beep port to the Xtensa
 	  architecture supports all processor configurations and extensions,
-	  with reasonable minimum requirements.  The Xtensa Linux project has
+	  with reasonable minimum requirements.  The Xtensa Beep project has
 	  a home page at <http://xtensa.sourceforge.net/>.
 
 config RWSEM_XCHGADD_ALGORITHM
@@ -142,7 +142,7 @@ config XTENSA_PLATFORM_XT2000
 	bool "XT2000"
 	help
 	  XT2000 is the name of Tensilica's feature-rich emulation platform.
-	  This hardware is capable of running a full Linux distribution.
+	  This hardware is capable of running a full Beep distribution.
 
 config XTENSA_PLATFORM_S6105
 	bool "S6105"
@@ -156,7 +156,7 @@ config XTENSA_PLATFORM_XTFPGA
 	select XTENSA_CALIBRATE_CCOUNT
 	help
 	  XTFPGA is the name of Tensilica board family (LX60, LX110, LX200, ML605).
-	  This hardware is capable of running a full Linux distribution.
+	  This hardware is capable of running a full Beep distribution.
 
 endchoice
 
@@ -215,7 +215,7 @@ config KCORE_ELF
           /proc/kcore will contain the kernel core image in ELF format. This
           can be used in gdb:
 
-          $ cd /usr/src/linux ; gdb vmlinux /proc/kcore
+          $ cd /usr/src/beep ; gdb vmbeep /proc/kcore
 
           This is especially useful if you have compiled the kernel with the
           "-g" option to preserve debugging information. It is mainly used

@@ -1,16 +1,16 @@
 #ifndef _VHOST_H
 #define _VHOST_H
 
-#include <linux/eventfd.h>
-#include <linux/vhost.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/file.h>
-#include <linux/uio.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_ring.h>
-#include <linux/atomic.h>
+#include <beep/eventfd.h>
+#include <beep/vhost.h>
+#include <beep/mm.h>
+#include <beep/mutex.h>
+#include <beep/poll.h>
+#include <beep/file.h>
+#include <beep/uio.h>
+#include <beep/virtio_config.h>
+#include <beep/virtio_ring.h>
+#include <beep/atomic.h>
 
 struct vhost_device;
 

@@ -11,28 +11,28 @@
 
 /*
  * The Watchdog Timer Mode Register can be only written to once. If the
- * timeout need to be set from Linux, be sure that the bootstrap or the
+ * timeout need to be set from Beep, be sure that the bootstrap or the
  * bootloader doesn't write to this register.
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
-#include <linux/of.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/platform_device.h>
+#include <beep/types.h>
+#include <beep/watchdog.h>
+#include <beep/jiffies.h>
+#include <beep/timer.h>
+#include <beep/bitops.h>
+#include <beep/uaccess.h>
+#include <beep/of.h>
 
 #include "at91sam9_wdt.h"
 

@@ -22,7 +22,7 @@ __asm__ __volatile__ (
 		);
 }
 
-#include <linux/param.h>	/* needed for HZ */
+#include <beep/param.h>	/* needed for HZ */
 
 /*
  * close approximation borrowed from m68knommu to avoid 64-bit math

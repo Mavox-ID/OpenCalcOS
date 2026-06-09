@@ -8,26 +8,26 @@
  * See MAINTAINERS file for support contact information.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/if_vlan.h>
-#include <linux/crc32.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
-#include <linux/firmware.h>
-#include <linux/pci-aspm.h>
-#include <linux/prefetch.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/if_vlan.h>
+#include <beep/crc32.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/pm_runtime.h>
+#include <beep/firmware.h>
+#include <beep/pci-aspm.h>
+#include <beep/prefetch.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -800,7 +800,7 @@ struct rtl8169_private {
 	u32 ocp_base;
 };
 
-MODULE_AUTHOR("Realtek and the Linux r8169 crew <netdev@vger.kernel.org>");
+MODULE_AUTHOR("Realtek and the Beep r8169 crew <netdev@vger.kernel.org>");
 MODULE_DESCRIPTION("RealTek RTL-8169 Gigabit Ethernet driver");
 module_param(use_dac, int, 0);
 MODULE_PARM_DESC(use_dac, "Enable PCI DAC. Unsafe on 32 bit PCI slot.");

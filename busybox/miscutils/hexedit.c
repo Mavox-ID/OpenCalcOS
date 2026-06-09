@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Denys Vlasenko <vda.linux@googlemail.com>
+ * Copyright (C) 2017 Denys Vlasenko <vda.beep@googlemail.com>
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
@@ -411,7 +411,7 @@ int hexedit_main(int argc UNUSED_PARAM, char **argv)
 				G.row--;
 				printf(ESC"[A"); /* up (won't scroll) */
 			} else {
-				//printf(ESC"[T"); /* scroll up */ - not implemented on Linux VT!
+				//printf(ESC"[T"); /* scroll up */ - not implemented on Beep VT!
 				printf(ESC"M"); /* scroll up */
 				redraw_cur_line();
 			}

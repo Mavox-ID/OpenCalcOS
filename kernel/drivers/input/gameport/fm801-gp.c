@@ -1,5 +1,5 @@
 /*
- *  FM801 gameport driver for Linux
+ *  FM801 gameport driver for Beep
  *
  *  Copyright (c) by Takashi Iwai <tiwai@suse.de>
  *
@@ -21,15 +21,15 @@
  */
 
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/gameport.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/gameport.h>
 
 #define PCI_VENDOR_ID_FORTEMEDIA	0x1319
 #define PCI_DEVICE_ID_FM801_GP	0x0802

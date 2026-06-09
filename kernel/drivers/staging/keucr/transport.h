@@ -1,7 +1,7 @@
 #ifndef _TRANSPORT_H_
 #define _TRANSPORT_H_
 
-#include <linux/blkdev.h>
+#include <beep/blkdev.h>
 
 /* usb_stor_bulk_transfer_xxx() return codes, in order of severity */
 #define USB_STOR_XFER_GOOD	0	/* good transfer                 */

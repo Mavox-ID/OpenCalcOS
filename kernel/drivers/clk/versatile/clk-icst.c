@@ -13,11 +13,11 @@
  * ICST clock code from the ARM tree should probably be merged into this
  * file.
  */
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/err.h>
+#include <beep/clk-provider.h>
+#include <beep/io.h>
 
 #include "clk-icst.h"
 

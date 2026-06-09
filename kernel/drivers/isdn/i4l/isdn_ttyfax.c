@@ -1,6 +1,6 @@
 /* $Id: isdn_ttyfax.c,v 1.1.2.2 2004/01/12 22:37:19 keil Exp $
  *
- * Linux ISDN subsystem, tty_fax AT-command emulator (linklevel).
+ * Beep ISDN subsystem, tty_fax AT-command emulator (linklevel).
  *
  * Copyright 1999    by Armin Schindler (mac@melware.de)
  * Copyright 1999    by Ralf Spachmann (mel@melware.de)
@@ -14,7 +14,7 @@
 #undef ISDN_TTY_FAX_STAT_DEBUG
 #undef ISDN_TTY_FAX_CMD_DEBUG
 
-#include <linux/isdn.h>
+#include <beep/isdn.h>
 #include "isdn_common.h"
 #include "isdn_tty.h"
 #include "isdn_ttyfax.h"
@@ -978,7 +978,7 @@ isdn_tty_cmd_FCLASS2(char **p, modem_info *info)
 #ifdef ISDN_TTY_FAX_STAT_DEBUG
 		printk(KERN_DEBUG "isdn_tty: FMDL?\n");
 #endif
-		isdn_tty_at_cout("\r\nisdn4linux", info);
+		isdn_tty_at_cout("\r\nisdn4beep", info);
 		return 0;
 	}
 	/* MFR? - DCE Manufacturer */
@@ -987,7 +987,7 @@ isdn_tty_cmd_FCLASS2(char **p, modem_info *info)
 #ifdef ISDN_TTY_FAX_STAT_DEBUG
 		printk(KERN_DEBUG "isdn_tty: FMFR?\n");
 #endif
-		isdn_tty_at_cout("\r\nisdn4linux", info);
+		isdn_tty_at_cout("\r\nisdn4beep", info);
 		return 0;
 	}
 	/* MINSP=n - Minimum Speed for Phase C */

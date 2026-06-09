@@ -2,9 +2,9 @@
  * Copyright 1999 Hans Reiser, see reiserfs/README for licensing and copyright details
  */
 
-#include <linux/time.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
+#include <beep/time.h>
+#include <beep/pagemap.h>
+#include <beep/buffer_head.h>
 #include "reiserfs.h"
 
 /* access to tail : when one is going to read tail it must make sure, that is not running.

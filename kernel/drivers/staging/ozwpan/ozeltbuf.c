@@ -3,9 +3,9 @@
  * Released under the GNU General Public License Version 2 (GPLv2).
  * -----------------------------------------------------------------------------
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
 #include "ozconfig.h"
 #include "ozprotocol.h"
 #include "ozeltbuf.h"

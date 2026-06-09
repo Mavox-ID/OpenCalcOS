@@ -11,9 +11,9 @@
  * compiled as module, this file is compiled as module as well.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb/ch9.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/usb/ch9.h>
 
 const char *usb_speed_string(enum usb_device_speed speed)
 {

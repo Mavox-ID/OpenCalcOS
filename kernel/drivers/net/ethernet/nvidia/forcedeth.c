@@ -45,28 +45,28 @@
 #define FORCEDETH_VERSION		"0.64"
 #define DRV_NAME			"forcedeth"
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/timer.h>
-#include <linux/skbuff.h>
-#include <linux/mii.h>
-#include <linux/random.h>
-#include <linux/init.h>
-#include <linux/if_vlan.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/prefetch.h>
-#include <linux/u64_stats_sync.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/ethtool.h>
+#include <beep/timer.h>
+#include <beep/skbuff.h>
+#include <beep/mii.h>
+#include <beep/random.h>
+#include <beep/init.h>
+#include <beep/if_vlan.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
+#include <beep/prefetch.h>
+#include <beep/u64_stats_sync.h>
+#include <beep/io.h>
 
 #include <asm/irq.h>
 
@@ -932,7 +932,7 @@ static int phy_cross = NV_CROSSOVER_DETECTION_DISABLED;
 
 /*
  * Power down phy when interface is down (persists through reboot;
- * older Linux and other OSes may not power it up again)
+ * older Beep and other OSes may not power it up again)
  */
 static int phy_power_down;
 

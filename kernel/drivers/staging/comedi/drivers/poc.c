@@ -39,7 +39,7 @@ Configuration options:
 
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 struct boarddef_struct {
 	const char *name;

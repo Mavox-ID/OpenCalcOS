@@ -1,6 +1,6 @@
 /*
  * Ethernet netdevice using ATM AAL5 as underlying carrier
- * (RFC1483 obsoleted by RFC2684) for Linux
+ * (RFC1483 obsoleted by RFC2684) for Beep
  *
  * Authors: Marcell GAL, 2000, XDSL Ltd, Hungary
  *          Eric Kinzie, 2006-2007, US Naval Research Laboratory
@@ -8,24 +8,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/ip.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/etherdevice.h>
+#include <beep/rtnetlink.h>
+#include <beep/ip.h>
+#include <beep/uaccess.h>
+#include <beep/slab.h>
 #include <net/arp.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/capability.h>
-#include <linux/seq_file.h>
+#include <beep/atm.h>
+#include <beep/atmdev.h>
+#include <beep/capability.h>
+#include <beep/seq_file.h>
 
-#include <linux/atmbr2684.h>
+#include <beep/atmbr2684.h>
 
 #include "common.h"
 

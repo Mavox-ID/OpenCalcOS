@@ -15,22 +15,22 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/memory.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/moduleparam.h>
-#include <linux/smsc911x.h>
-#include <linux/mfd/mc13783.h>
-#include <linux/spi/spi.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/ulpi.h>
-#include <linux/mtd/physmap.h>
-#include <linux/delay.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/memory.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/moduleparam.h>
+#include <beep/smsc911x.h>
+#include <beep/mfd/mc13783.h>
+#include <beep/spi/spi.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/ulpi.h>
+#include <beep/mtd/physmap.h>
+#include <beep/delay.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/fixed.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

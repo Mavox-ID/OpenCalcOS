@@ -7,22 +7,22 @@
 
 #include <asm/head.h>
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/threads.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/cache.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/threads.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/seq_file.h>
+#include <beep/cache.h>
+#include <beep/delay.h>
 
 #include <asm/ptrace.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include <asm/irq.h>
 #include <asm/page.h>
@@ -117,7 +117,7 @@ void cpu_panic(void)
 	panic("SMP bolixed\n");
 }
 
-struct linux_prom_registers smp_penguin_ctable __cpuinitdata = { 0 };
+struct beep_prom_registers smp_penguin_ctable __cpuinitdata = { 0 };
 
 void smp_send_reschedule(int cpu)
 {

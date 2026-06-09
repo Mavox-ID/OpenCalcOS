@@ -16,9 +16,9 @@ struct arch_hw_breakpoint {
 	u8		type;
 };
 
-#include <linux/kdebug.h>
-#include <linux/percpu.h>
-#include <linux/list.h>
+#include <beep/kdebug.h>
+#include <beep/percpu.h>
+#include <beep/list.h>
 
 /* Available HW breakpoint length encodings */
 #define X86_BREAKPOINT_LEN_X		0x40

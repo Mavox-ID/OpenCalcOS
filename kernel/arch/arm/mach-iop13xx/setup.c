@@ -17,11 +17,11 @@
  *
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/serial_8250.h>
-#include <linux/io.h>
+#include <beep/dma-mapping.h>
+#include <beep/serial_8250.h>
+#include <beep/io.h>
 #ifdef CONFIG_MTD_PHYSMAP
-#include <linux/mtd/physmap.h>
+#include <beep/mtd/physmap.h>
 #endif
 #include <asm/mach/map.h>
 #include <mach/hardware.h>

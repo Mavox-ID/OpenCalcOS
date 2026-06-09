@@ -69,21 +69,21 @@
 
 		vol-down-key {
 			gpios = <&gpx2 1 1>;
-			linux,code = <114>;
+			beep,code = <114>;
 			label = "volume down";
 			debounce-interval = <10>;
 		};
 
 		vol-up-key {
 			gpios = <&gpx2 0 1>;
-			linux,code = <115>;
+			beep,code = <115>;
 			label = "volume up";
 			debounce-interval = <10>;
 		};
 
 		power-key {
 			gpios = <&gpx2 7 1>;
-			linux,code = <116>;
+			beep,code = <116>;
 			label = "power";
 			debounce-interval = <10>;
 			gpio-key,wakeup;
@@ -91,7 +91,7 @@
 
 		ok-key {
 			gpios = <&gpx3 5 1>;
-			linux,code = <352>;
+			beep,code = <352>;
 			label = "ok";
 			debounce-interval = <10>;
 		};

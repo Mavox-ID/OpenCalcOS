@@ -22,11 +22,11 @@
 #include "pvrusb2-ioread.h"
 #include "pvrusb2-hdw.h"
 #include "pvrusb2-debug.h"
-#include <linux/wait.h>
-#include <linux/kthread.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/wait.h>
+#include <beep/kthread.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 
 static struct pvr2_context *pvr2_context_exist_first;
 static struct pvr2_context *pvr2_context_exist_last;

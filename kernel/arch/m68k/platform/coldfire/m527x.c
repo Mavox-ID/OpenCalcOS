@@ -1,7 +1,7 @@
 /***************************************************************************/
 
 /*
- *	linux/arch/m68knommu/platform/527x/config.c
+ *	beep/arch/m68knommu/platform/527x/config.c
  *
  *	Sub-architcture dependent initialization code for the Freescale
  *	5270/5271 CPUs.
@@ -12,10 +12,10 @@
 
 /***************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/init.h>
+#include <beep/io.h>
 #include <asm/machdep.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>

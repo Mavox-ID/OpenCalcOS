@@ -20,15 +20,15 @@
 #ifndef __USBIP_COMMON_H
 #define __USBIP_COMMON_H
 
-#include <linux/compiler.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/net.h>
-#include <linux/printk.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
+#include <beep/compiler.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/net.h>
+#include <beep/printk.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/usb.h>
+#include <beep/wait.h>
 
 #define USBIP_VERSION "1.0.0"
 

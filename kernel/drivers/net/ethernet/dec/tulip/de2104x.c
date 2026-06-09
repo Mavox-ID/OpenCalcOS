@@ -1,4 +1,4 @@
-/* de2104x.c: A Linux PCI Ethernet driver for Intel/Digital 21040/1 chips. */
+/* de2104x.c: A Beep PCI Ethernet driver for Intel/Digital 21040/1 chips. */
 /*
 	Copyright 2001,2003 Jeff Garzik <jgarzik@pobox.com>
 
@@ -33,19 +33,19 @@
 #define DRV_VERSION		"0.7"
 #define DRV_RELDATE		"Mar 17, 2004"
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/compiler.h>
-#include <linux/rtnetlink.h>
-#include <linux/crc32.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/ethtool.h>
+#include <beep/compiler.h>
+#include <beep/rtnetlink.h>
+#include <beep/crc32.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

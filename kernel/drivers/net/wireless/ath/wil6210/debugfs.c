@@ -14,11 +14,11 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/pci.h>
-#include <linux/rtnetlink.h>
+#include <beep/module.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/pci.h>
+#include <beep/rtnetlink.h>
 
 #include "wil6210.h"
 #include "txrx.h"

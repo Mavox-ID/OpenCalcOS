@@ -1,13 +1,13 @@
 /*
- * linux/mm/mmzone.c
+ * beep/mm/mmzone.c
  *
  * management codes for pgdats and zones.
  */
 
 
-#include <linux/stddef.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
+#include <beep/stddef.h>
+#include <beep/mm.h>
+#include <beep/mmzone.h>
 
 struct pglist_data *first_online_pgdat(void)
 {

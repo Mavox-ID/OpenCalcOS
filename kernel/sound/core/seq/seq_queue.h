@@ -24,9 +24,9 @@
 #include "seq_prioq.h"
 #include "seq_timer.h"
 #include "seq_lock.h"
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/bitops.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/bitops.h>
 
 #define SEQ_QUEUE_NO_OWNER (-1)
 

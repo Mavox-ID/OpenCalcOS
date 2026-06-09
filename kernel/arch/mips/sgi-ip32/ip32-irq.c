@@ -8,16 +8,16 @@
  * Copyright (C) 2000 Harald Koerfgen
  * Copyright (C) 2001 Keith M Wesolowski
  */
-#include <linux/init.h>
-#include <linux/kernel_stat.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/sched.h>
+#include <beep/init.h>
+#include <beep/kernel_stat.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/bitops.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/random.h>
+#include <beep/sched.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/mipsregs.h>
@@ -102,7 +102,7 @@ static void inline flush_mace_bus(void)
  * 26-31 -> 66-71 Serial 2 (28 E)
  *
  * Note that this means IRQs 12-14, 50, and 52 do not exist.  This is a
- * different IRQ map than IRIX uses, but that's OK as Linux irq handling
+ * different IRQ map than IRIX uses, but that's OK as Beep irq handling
  * is quite different anyway.
  */
 
@@ -352,7 +352,7 @@ static void ip32_unknown_interrupt(void)
 	printk("Register dump:\n");
 	show_regs(get_irq_regs());
 
-	printk("Please mail this report to linux-mips@linux-mips.org\n");
+	printk("Please mail this report to beep-mips@beep-mips.org\n");
 	printk("Spinning...");
 	while(1) ;
 }

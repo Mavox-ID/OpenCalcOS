@@ -16,20 +16,20 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/dma-mapping.h>
-#include <linux/spi/spi.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/ioport.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/spi/pxa2xx_spi.h>
+#include <beep/dma-mapping.h>
+#include <beep/spi/spi.h>
+#include <beep/workqueue.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

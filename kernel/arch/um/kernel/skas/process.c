@@ -1,10 +1,10 @@
 /*
- * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
+#include <beep/init.h>
+#include <beep/sched.h>
 #include <as-layout.h>
 #include <kern.h>
 #include <os.h>

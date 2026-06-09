@@ -27,10 +27,10 @@
 
 #ifdef SUPPORT_FILE_OP
 
-#include <linux/types.h>
-#include <linux/stat.h>
-#include <linux/kref.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/stat.h>
+#include <beep/kref.h>
+#include <beep/slab.h>
 
 #include "rts51x_chip.h"
 #include "rts51x_card.h"

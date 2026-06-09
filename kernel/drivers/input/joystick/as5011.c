@@ -23,14 +23,14 @@
  *	- Manage power mode
  */
 
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/input/as5011.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/input/as5011.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #define DRIVER_DESC "Driver for Austria Microsystems AS5011 joystick"
 #define MODULE_DEVICE_ALIAS "as5011"

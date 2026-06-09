@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux SuperH-specific device drivers.
+# Makefile for the Beep SuperH-specific device drivers.
 #
 
 obj-y		+= dma/

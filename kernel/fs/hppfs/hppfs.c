@@ -1,22 +1,22 @@
 /*
- * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/ctype.h>
-#include <linux/dcache.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/slab.h>
-#include <linux/statfs.h>
-#include <linux/types.h>
-#include <linux/pid_namespace.h>
-#include <linux/namei.h>
+#include <beep/ctype.h>
+#include <beep/dcache.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/mount.h>
+#include <beep/slab.h>
+#include <beep/statfs.h>
+#include <beep/types.h>
+#include <beep/pid_namespace.h>
+#include <beep/namei.h>
 #include <asm/uaccess.h>
 #include <os.h>
 

@@ -20,16 +20,16 @@
 
 #define PI_VERSION      "1.06"
 
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/sched.h>	/* TASK_* */
-#include <linux/parport.h>
+#include <beep/module.h>
+#include <beep/kmod.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/ioport.h>
+#include <beep/string.h>
+#include <beep/spinlock.h>
+#include <beep/wait.h>
+#include <beep/sched.h>	/* TASK_* */
+#include <beep/parport.h>
 
 #include "paride.h"
 

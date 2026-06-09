@@ -9,13 +9,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/cpuidle.h>
-#include <linux/clockchips.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
-#include <linux/smp.h>
-#include <linux/mfd/dbx500-prcmu.h>
+#include <beep/module.h>
+#include <beep/cpuidle.h>
+#include <beep/clockchips.h>
+#include <beep/spinlock.h>
+#include <beep/atomic.h>
+#include <beep/smp.h>
+#include <beep/mfd/dbx500-prcmu.h>
 
 #include <asm/cpuidle.h>
 #include <asm/proc-fns.h>

@@ -1,6 +1,6 @@
 /*
  * usnjrnl.h - NTFS kernel transaction log ($UsnJrnl) handling.  Part of the
- *	       Linux-NTFS project.
+ *	       Beep-NTFS project.
  *
  * Copyright (c) 2005 Anton Altaparmakov
  *
@@ -15,16 +15,16 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
 #ifdef NTFS_RW
 
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/mm.h>
+#include <beep/fs.h>
+#include <beep/highmem.h>
+#include <beep/mm.h>
 
 #include "aops.h"
 #include "debug.h"

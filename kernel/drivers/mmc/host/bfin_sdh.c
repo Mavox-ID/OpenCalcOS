@@ -8,16 +8,16 @@
 
 #define DRIVER_NAME	"bfin-sdh"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/mmc/host.h>
-#include <linux/proc_fs.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/mmc/host.h>
+#include <beep/proc_fs.h>
+#include <beep/gfp.h>
 
 #include <asm/cacheflush.h>
 #include <asm/dma.h>

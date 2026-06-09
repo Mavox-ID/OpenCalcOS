@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/mxm8x10.c
+ * beep/arch/arm/mach-pxa/mxm8x10.c
  *
  * Support for the Embedian MXM-8x10 Computer on Module
  *
@@ -19,16 +19,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/serial_8250.h>
-#include <linux/dm9000.h>
-#include <linux/gpio.h>
-#include <linux/i2c/pxa-i2c.h>
+#include <beep/serial_8250.h>
+#include <beep/dm9000.h>
+#include <beep/gpio.h>
+#include <beep/i2c/pxa-i2c.h>
 
-#include <linux/platform_data/mtd-nand-pxa3xx.h>
+#include <beep/platform_data/mtd-nand-pxa3xx.h>
 
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/video-pxafb.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
 #include <mach/pxa320.h>
 
 #include <mach/mxm8x10.h>

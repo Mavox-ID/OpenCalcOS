@@ -19,18 +19,18 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/mfd/davinci_voicecodec.h>
-#include <linux/spi/spi.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/platform_device.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
+#include <beep/mfd/davinci_voicecodec.h>
+#include <beep/spi/spi.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

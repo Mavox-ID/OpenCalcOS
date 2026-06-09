@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -19,23 +19,23 @@
  *		Mike McLagan	:	Routing by source
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/icmp.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/skbuff.h>
+#include <beep/ip.h>
+#include <beep/icmp.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 #include <net/ip.h>
 #include <net/tcp.h>
 #include <net/udp.h>
 #include <net/icmp.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/netfilter_ipv4.h>
+#include <beep/tcp.h>
+#include <beep/udp.h>
+#include <beep/netfilter_ipv4.h>
 #include <net/checksum.h>
-#include <linux/route.h>
+#include <beep/route.h>
 #include <net/route.h>
 #include <net/xfrm.h>
 

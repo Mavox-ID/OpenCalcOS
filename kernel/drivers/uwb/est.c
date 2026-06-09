@@ -39,9 +39,9 @@
  * uwb_est_find_size(): Get the size of an event
  *   uwb_est_get_size()
  */
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #include "uwb-internal.h"
 

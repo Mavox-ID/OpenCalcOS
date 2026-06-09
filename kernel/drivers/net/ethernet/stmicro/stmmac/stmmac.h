@@ -26,10 +26,10 @@
 #define STMMAC_RESOURCE_NAME   "stmmaceth"
 #define DRV_MODULE_VERSION	"Nov_2012"
 
-#include <linux/clk.h>
-#include <linux/stmmac.h>
-#include <linux/phy.h>
-#include <linux/pci.h>
+#include <beep/clk.h>
+#include <beep/stmmac.h>
+#include <beep/phy.h>
+#include <beep/pci.h>
 #include "common.h"
 
 struct stmmac_priv {

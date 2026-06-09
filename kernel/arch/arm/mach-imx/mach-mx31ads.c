@@ -14,14 +14,14 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/serial_8250.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/serial_8250.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -30,9 +30,9 @@
 #include <asm/mach/map.h>
 
 #ifdef CONFIG_MACH_MX31ADS_WM1133_EV1
-#include <linux/mfd/wm8350/audio.h>
-#include <linux/mfd/wm8350/core.h>
-#include <linux/mfd/wm8350/pmic.h>
+#include <beep/mfd/wm8350/audio.h>
+#include <beep/mfd/wm8350/core.h>
+#include <beep/mfd/wm8350/pmic.h>
 #endif
 
 #include "common.h"

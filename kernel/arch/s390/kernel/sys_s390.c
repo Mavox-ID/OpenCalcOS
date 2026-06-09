@@ -7,31 +7,31 @@
  *  Derived from "arch/i386/kernel/sys_i386.c"
  *
  *  This file contains various random system calls that
- *  have a non-standard calling sequence on the Linux/s390
+ *  have a non-standard calling sequence on the Beep/s390
  *  platform.
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/file.h>
-#include <linux/utsname.h>
-#include <linux/personality.h>
-#include <linux/unistd.h>
-#include <linux/ipc.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/smp.h>
+#include <beep/sem.h>
+#include <beep/msg.h>
+#include <beep/shm.h>
+#include <beep/stat.h>
+#include <beep/syscalls.h>
+#include <beep/mman.h>
+#include <beep/file.h>
+#include <beep/utsname.h>
+#include <beep/personality.h>
+#include <beep/unistd.h>
+#include <beep/ipc.h>
 #include <asm/uaccess.h>
 #include "entry.h"
 
 /*
- * Perform the mmap() system call. Linux for S/390 isn't able to handle more
+ * Perform the mmap() system call. Beep for S/390 isn't able to handle more
  * than 5 system call parameters, so this system call uses a memory block
  * for parameter passing.
  */
@@ -81,12 +81,12 @@ SYSCALL_DEFINE1(s390_personality, unsigned int, personality)
 {
 	unsigned int ret;
 
-	if (personality(current->personality) == PER_LINUX32 &&
-	    personality(personality) == PER_LINUX)
-		personality |= PER_LINUX32;
+	if (personality(current->personality) == PER_BEEP32 &&
+	    personality(personality) == PER_BEEP)
+		personality |= PER_BEEP32;
 	ret = sys_personality(personality);
-	if (personality(ret) == PER_LINUX32)
-		ret &= ~PER_LINUX32;
+	if (personality(ret) == PER_BEEP32)
+		ret &= ~PER_BEEP32;
 
 	return ret;
 }

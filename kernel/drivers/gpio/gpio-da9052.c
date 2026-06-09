@@ -11,17 +11,17 @@
  *  option) any later version.
  *
  */
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/syscalls.h>
-#include <linux/seq_file.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/uaccess.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/syscalls.h>
+#include <beep/seq_file.h>
 
-#include <linux/mfd/da9052/da9052.h>
-#include <linux/mfd/da9052/reg.h>
-#include <linux/mfd/da9052/pdata.h>
+#include <beep/mfd/da9052/da9052.h>
+#include <beep/mfd/da9052/reg.h>
+#include <beep/mfd/da9052/pdata.h>
 
 #define DA9052_INPUT				1
 #define DA9052_OUTPUT_OPENDRAIN		2

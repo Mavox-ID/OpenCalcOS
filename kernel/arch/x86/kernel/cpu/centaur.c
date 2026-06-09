@@ -1,6 +1,6 @@
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <beep/bitops.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
 
 #include <asm/processor.h>
 #include <asm/e820.h>
@@ -166,7 +166,7 @@ static void __cpuinit centaur_create_optimal_mcr(void)
 	 * Allocate up to 6 mcrs to mark as much of ram as possible
 	 * as write combining and weak write ordered.
 	 *
-	 * To experiment with: Linux never uses stack operations for
+	 * To experiment with: Beep never uses stack operations for
 	 * mmio spaces so we could globally enable stack operation wc
 	 *
 	 * Load the registers with type 31 - full write combining, all

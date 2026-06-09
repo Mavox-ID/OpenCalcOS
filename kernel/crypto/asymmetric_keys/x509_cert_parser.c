@@ -10,10 +10,10 @@
  */
 
 #define pr_fmt(fmt) "X.509: "fmt
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/oid_registry.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/oid_registry.h>
 #include "public_key.h"
 #include "x509_parser.h"
 #include "x509-asn1.h"

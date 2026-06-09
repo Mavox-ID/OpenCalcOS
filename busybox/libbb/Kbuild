@@ -151,8 +151,8 @@ lib-$(CONFIG_UMOUNT) += match_fstype.o
 lib-$(CONFIG_FEATURE_UTMP) += utmp.o
 
 # A mix of optimizations (why build stuff we know won't be used)
-# and objects which may fail to build (SELinux on selinux-less system)
-lib-$(CONFIG_SELINUX) += selinux_common.o
+# and objects which may fail to build (SEBeep on sebeep-less system)
+lib-$(CONFIG_SEBEEP) += sebeep_common.o
 lib-$(CONFIG_FEATURE_MTAB_SUPPORT) += mtab.o
 lib-$(CONFIG_UNICODE_SUPPORT) += unicode.o
 lib-$(CONFIG_FEATURE_CHECK_NAMES) += die_if_bad_username.o

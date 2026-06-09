@@ -28,13 +28,13 @@
 #ifndef _IXGBEVF_H_
 #define _IXGBEVF_H_
 
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/timer.h>
-#include <linux/io.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/u64_stats_sync.h>
+#include <beep/types.h>
+#include <beep/bitops.h>
+#include <beep/timer.h>
+#include <beep/io.h>
+#include <beep/netdevice.h>
+#include <beep/if_vlan.h>
+#include <beep/u64_stats_sync.h>
 
 #include "vf.h"
 

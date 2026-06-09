@@ -6,8 +6,8 @@ piggy.gzip
 piggy.lzo
 piggy.lzma
 piggy.xzkern
-vmlinux
-vmlinux.lds
+vmbeep
+vmbeep.lds
 
 # borrowed libfdt files
 fdt.c

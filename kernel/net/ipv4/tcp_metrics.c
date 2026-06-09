@@ -1,14 +1,14 @@
-#include <linux/rcupdate.h>
-#include <linux/spinlock.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/cache.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/tcp.h>
-#include <linux/hash.h>
-#include <linux/tcp_metrics.h>
-#include <linux/vmalloc.h>
+#include <beep/rcupdate.h>
+#include <beep/spinlock.h>
+#include <beep/jiffies.h>
+#include <beep/module.h>
+#include <beep/cache.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/tcp.h>
+#include <beep/hash.h>
+#include <beep/tcp_metrics.h>
+#include <beep/vmalloc.h>
 
 #include <net/inet_connection_sock.h>
 #include <net/net_namespace.h>

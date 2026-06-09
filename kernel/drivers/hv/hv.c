@@ -21,12 +21,12 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/hyperv.h>
-#include <linux/version.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/hyperv.h>
+#include <beep/version.h>
 #include <asm/hyperv.h>
 #include "hyperv_vmbus.h"
 
@@ -143,7 +143,7 @@ int hv_init(void)
 	/*
 	 * Write our OS ID.
 	 */
-	hv_context.guestid = generate_guest_id(0, LINUX_VERSION_CODE, 0);
+	hv_context.guestid = generate_guest_id(0, BEEP_VERSION_CODE, 0);
 	wrmsrl(HV_X64_MSR_GUEST_OS_ID, hv_context.guestid);
 
 	/* See if the hypercall page is already set */

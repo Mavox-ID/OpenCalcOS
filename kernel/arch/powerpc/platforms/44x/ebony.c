@@ -16,9 +16,9 @@
  * option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/of_platform.h>
-#include <linux/rtc.h>
+#include <beep/init.h>
+#include <beep/of_platform.h>
+#include <beep/rtc.h>
 
 #include <asm/machdep.h>
 #include <asm/prom.h>

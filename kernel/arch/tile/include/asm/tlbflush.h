@@ -15,9 +15,9 @@
 #ifndef _ASM_TILE_TLBFLUSH_H
 #define _ASM_TILE_TLBFLUSH_H
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
 #include <asm/cacheflush.h>
 #include <asm/page.h>
 #include <hv/hypervisor.h>

@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext4/balloc.c
+ *  beep/fs/ext4/balloc.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -11,12 +11,12 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/time.h>
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/jbd2.h>
-#include <linux/quotaops.h>
-#include <linux/buffer_head.h>
+#include <beep/time.h>
+#include <beep/capability.h>
+#include <beep/fs.h>
+#include <beep/jbd2.h>
+#include <beep/quotaops.h>
+#include <beep/buffer_head.h>
 #include "ext4.h"
 #include "ext4_jbd2.h"
 #include "mballoc.h"

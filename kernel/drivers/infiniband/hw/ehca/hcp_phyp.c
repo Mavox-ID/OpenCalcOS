@@ -1,5 +1,5 @@
 /*
- *  IBM eServer eHCA Infiniband device driver for Linux on POWER
+ *  IBM eServer eHCA Infiniband device driver for Beep on POWER
  *
  *   load store abstraction for ehca register access with tracing
  *

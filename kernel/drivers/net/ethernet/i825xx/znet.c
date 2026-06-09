@@ -1,10 +1,10 @@
-/* znet.c: An Zenith Z-Note ethernet driver for linux. */
+/* znet.c: An Zenith Z-Note ethernet driver for beep. */
 
 /*
 	Written by Donald Becker.
 
 	The author may be reached as becker@scyld.com.
-	This driver is based on the Linux skeleton driver.  The copyright of the
+	This driver is based on the Beep skeleton driver.  The copyright of the
 	skeleton driver is held by the United States Government, as represented
 	by DIRNSA, and it is released under the GPL.
 
@@ -62,7 +62,7 @@
 
 /* 10/2002
 
-   o Resurected for Linux 2.5+ by Marc Zyngier <maz@wild-wind.fr.eu.org> :
+   o Resurected for Beep 2.5+ by Marc Zyngier <maz@wild-wind.fr.eu.org> :
 
    - Removed strange DMA snooping in znet_sent_packet, which lead to
      TX buffer corruption on my laptop.
@@ -85,25 +85,25 @@
    - Understand why some traffic patterns add a 1s latency...
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
+#include <beep/bitops.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>
 
-#include <linux/i82593.h>
+#include <beep/i82593.h>
 
 static char version[] __initdata = "znet.c:v1.02 9/23/94 becker@scyld.com\n";
 
@@ -150,7 +150,7 @@ struct netidblk {
 	char product[8];
 	char irq1, irq2;		/* Interrupts, only one is currently used.	*/
 	char dma1, dma2;
-	short dma_mem_misc[8];		/* DMA buffer locations (unused in Linux). */
+	short dma_mem_misc[8];		/* DMA buffer locations (unused in Beep). */
 	short iobase1, iosize1;
 	short iobase2, iosize2;		/* Second iobase unused. */
 	char driver_options;			/* Misc. bits */

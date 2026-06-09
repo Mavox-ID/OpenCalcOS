@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-at91/generic.h
+ * beep/arch/arm/mach-at91/generic.h
  *
  *  Copyright (C) 2005 David Brownell
  *
@@ -8,8 +8,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/clkdev.h>
-#include <linux/of.h>
+#include <beep/clkdev.h>
+#include <beep/of.h>
 
  /* Map io */
 extern void __init at91_map_io(void);

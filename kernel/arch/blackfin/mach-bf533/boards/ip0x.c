@@ -9,14 +9,14 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
 #if defined(CONFIG_USB_ISP1362_HCD) || defined(CONFIG_USB_ISP1362_HCD_MODULE)
-#include <linux/usb/isp1362.h>
+#include <beep/usb/isp1362.h>
 #endif
 #include <asm/irq.h>
 #include <asm/dma.h>
@@ -34,7 +34,7 @@ const char bfin_board_name[] = "IP04/IP08";
 #if defined(CONFIG_BFIN532_IP0X)
 #if defined(CONFIG_DM9000) || defined(CONFIG_DM9000_MODULE)
 
-#include <linux/dm9000.h>
+#include <beep/dm9000.h>
 
 static struct resource dm9000_resource1[] = {
 	{

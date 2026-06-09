@@ -17,18 +17,18 @@
  * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
+#include <beep/dma-mapping.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/highmem.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/spi/spi.h>
 
 #include "spi-dw.h"
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
+#include <beep/debugfs.h>
 #endif
 
 #define START_STATE	((void *)0)

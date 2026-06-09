@@ -2,11 +2,11 @@
  * SiS AGPGART routines.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/agp_backend.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/agp_backend.h>
+#include <beep/delay.h>
 #include "agp.h"
 
 #define SIS_ATTBASE	0x90

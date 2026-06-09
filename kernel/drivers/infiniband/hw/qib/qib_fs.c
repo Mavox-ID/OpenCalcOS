@@ -32,12 +32,12 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/namei.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/pagemap.h>
+#include <beep/init.h>
+#include <beep/namei.h>
 
 #include "qib.h"
 

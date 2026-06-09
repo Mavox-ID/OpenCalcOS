@@ -607,7 +607,7 @@
 			heartbeat {
 				label = "Heartbeat";
 				gpios = <&gpio0 4 1>;
-				linux,default-trigger = "heartbeat";
+				beep,default-trigger = "heartbeat";
 			};
 
 			yellow {

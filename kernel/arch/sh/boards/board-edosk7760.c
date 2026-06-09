@@ -18,14 +18,14 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/smc91x.h>
-#include <linux/interrupt.h>
-#include <linux/sh_intc.h>
-#include <linux/i2c.h>
-#include <linux/mtd/physmap.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/platform_device.h>
+#include <beep/smc91x.h>
+#include <beep/interrupt.h>
+#include <beep/sh_intc.h>
+#include <beep/i2c.h>
+#include <beep/mtd/physmap.h>
 #include <asm/machvec.h>
 #include <asm/io.h>
 #include <asm/addrspace.h>

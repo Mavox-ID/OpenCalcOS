@@ -20,8 +20,8 @@
 
 #define DIGI_VERSION "1.9-29"
 
-#include <linux/fs.h>
-#include <linux/timer.h>
+#include <beep/fs.h>
+#include <beep/timer.h>
 #include "drp.h"
 
 #define DGRP_TTIME 100

@@ -1,5 +1,5 @@
 /*
- * Copyright 2006 Dave Airlie <airlied@linux.ie>
+ * Copyright 2006 Dave Airlie <airlied@beep.ie>
  * Copyright © 2006-2007 Intel Corporation
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -24,8 +24,8 @@
  * Authors:
  *	Eric Anholt <eric@anholt.net>
  */
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
 #include <drm/drmP.h>
 #include <drm/drm_crtc.h>
 #include "intel_drv.h"

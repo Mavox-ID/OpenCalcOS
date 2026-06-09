@@ -1,8 +1,8 @@
 /* $Id: isdn_net.h,v 1.1.2.2 2004/01/12 22:37:19 keil Exp $
  *
- * header for Linux ISDN subsystem, network related functions (linklevel).
+ * header for Beep ISDN subsystem, network related functions (linklevel).
  *
- * Copyright 1994-1999  by Fritz Elfert (fritz@isdn4linux.de)
+ * Copyright 1994-1999  by Fritz Elfert (fritz@isdn4beep.de)
  * Copyright 1995,96    by Thinking Objects Software GmbH Wuerzburg
  * Copyright 1995,96    by Michael Hipp (Michael.Hipp@student.uni-tuebingen.de)
  *

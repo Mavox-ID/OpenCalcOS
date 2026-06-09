@@ -9,34 +9,34 @@
  * For licensing details see kernel-base/COPYING
  */
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/idr.h>
-#include <linux/file.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/hash.h>
-#include <linux/sysfs.h>
-#include <linux/dcache.h>
-#include <linux/percpu.h>
-#include <linux/ptrace.h>
-#include <linux/reboot.h>
-#include <linux/vmstat.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/vmalloc.h>
-#include <linux/hardirq.h>
-#include <linux/rculist.h>
-#include <linux/uaccess.h>
-#include <linux/syscalls.h>
-#include <linux/anon_inodes.h>
-#include <linux/kernel_stat.h>
-#include <linux/perf_event.h>
-#include <linux/ftrace_event.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/mm_types.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/cpu.h>
+#include <beep/smp.h>
+#include <beep/idr.h>
+#include <beep/file.h>
+#include <beep/poll.h>
+#include <beep/slab.h>
+#include <beep/hash.h>
+#include <beep/sysfs.h>
+#include <beep/dcache.h>
+#include <beep/percpu.h>
+#include <beep/ptrace.h>
+#include <beep/reboot.h>
+#include <beep/vmstat.h>
+#include <beep/device.h>
+#include <beep/export.h>
+#include <beep/vmalloc.h>
+#include <beep/hardirq.h>
+#include <beep/rculist.h>
+#include <beep/uaccess.h>
+#include <beep/syscalls.h>
+#include <beep/anon_inodes.h>
+#include <beep/kernel_stat.h>
+#include <beep/perf_event.h>
+#include <beep/ftrace_event.h>
+#include <beep/hw_breakpoint.h>
+#include <beep/mm_types.h>
 
 #include "internal.h"
 

@@ -25,16 +25,16 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
 #include <acpi/acpi_bus.h>
-#include <linux/sysfs.h>
-#include <linux/kobject.h>
+#include <beep/sysfs.h>
+#include <beep/kobject.h>
 #include <asm/uaccess.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
+#include <beep/moduleparam.h>
+#include <beep/pci.h>
 
 #include "acpiphp.h"
 #include "../pci.h"
@@ -135,10 +135,10 @@ static struct acpiphp_attention_info ibm_attention_info =
 
 /**
  * ibm_slot_from_id - workaround for bad ibm hardware
- * @id: the slot number that linux refers to the slot by
+ * @id: the slot number that beep refers to the slot by
  *
  * Description: This method returns the aCPI slot descriptor
- * corresponding to the Linux slot number.  This descriptor
+ * corresponding to the Beep slot number.  This descriptor
  * has info about the aPCI slot id and attention status.
  * This descriptor must be freed using kfree when done.
  */

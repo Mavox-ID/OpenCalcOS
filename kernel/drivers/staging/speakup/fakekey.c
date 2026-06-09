@@ -17,11 +17,11 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/preempt.h>
-#include <linux/percpu.h>
-#include <linux/input.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/preempt.h>
+#include <beep/percpu.h>
+#include <beep/input.h>
 
 #include "speakup.h"
 

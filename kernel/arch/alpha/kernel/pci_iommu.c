@@ -1,17 +1,17 @@
 /*
- *	linux/arch/alpha/kernel/pci_iommu.c
+ *	beep/arch/alpha/kernel/pci_iommu.c
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/gfp.h>
-#include <linux/bootmem.h>
-#include <linux/export.h>
-#include <linux/scatterlist.h>
-#include <linux/log2.h>
-#include <linux/dma-mapping.h>
-#include <linux/iommu-helper.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/pci.h>
+#include <beep/gfp.h>
+#include <beep/bootmem.h>
+#include <beep/export.h>
+#include <beep/scatterlist.h>
+#include <beep/log2.h>
+#include <beep/dma-mapping.h>
+#include <beep/iommu-helper.h>
 
 #include <asm/io.h>
 #include <asm/hwrpb.h>

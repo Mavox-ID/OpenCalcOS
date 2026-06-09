@@ -11,10 +11,10 @@
 #define _ASM_X86_DESC_H 1
 #endif
 
-#include <linux/linkage.h>
-#include <linux/screen_info.h>
-#include <linux/elf.h>
-#include <linux/io.h>
+#include <beep/linkage.h>
+#include <beep/screen_info.h>
+#include <beep/elf.h>
+#include <beep/io.h>
 #include <asm/page.h>
 #include <asm/boot.h>
 #include <asm/bootparam.h>

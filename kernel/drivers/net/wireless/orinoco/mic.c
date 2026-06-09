@@ -2,11 +2,11 @@
  *
  * See copyright notice in main.c
  */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/if_ether.h>
-#include <linux/scatterlist.h>
-#include <linux/crypto.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/if_ether.h>
+#include <beep/scatterlist.h>
+#include <beep/crypto.h>
 
 #include "orinoco.h"
 #include "mic.h"

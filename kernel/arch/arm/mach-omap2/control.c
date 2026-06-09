@@ -12,8 +12,8 @@
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
 
 #include "soc.h"
 #include "iomap.h"

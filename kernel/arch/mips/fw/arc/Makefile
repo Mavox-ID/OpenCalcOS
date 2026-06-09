@@ -1,5 +1,5 @@
 #
-# Makefile for the ARC prom monitor library routines under Linux.
+# Makefile for the ARC prom monitor library routines under Beep.
 #
 
 lib-y				+= cmdline.o env.o file.o identify.o init.o \

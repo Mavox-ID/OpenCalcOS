@@ -13,7 +13,7 @@
 #ifndef _ZS_MALLOC_H_
 #define _ZS_MALLOC_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * zsmalloc mapping modes

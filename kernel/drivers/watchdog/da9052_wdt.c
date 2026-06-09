@@ -12,18 +12,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/platform_device.h>
-#include <linux/time.h>
-#include <linux/watchdog.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/uaccess.h>
+#include <beep/platform_device.h>
+#include <beep/time.h>
+#include <beep/watchdog.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/jiffies.h>
 
-#include <linux/mfd/da9052/reg.h>
-#include <linux/mfd/da9052/da9052.h>
+#include <beep/mfd/da9052/reg.h>
+#include <beep/mfd/da9052/da9052.h>
 
 #define DA9052_DEF_TIMEOUT	4
 #define DA9052_TWDMIN		256

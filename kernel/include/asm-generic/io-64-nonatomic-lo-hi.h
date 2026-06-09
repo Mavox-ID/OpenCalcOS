@@ -1,7 +1,7 @@
 #ifndef _ASM_IO_64_NONATOMIC_LO_HI_H_
 #define _ASM_IO_64_NONATOMIC_LO_HI_H_
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm-generic/int-ll64.h>
 
 #ifndef readq

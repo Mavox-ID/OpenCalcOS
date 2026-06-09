@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ncpfs/symlink.c
+ *  beep/fs/ncpfs/symlink.c
  *
  *  Code for allowing symbolic links on NCPFS (i.e. NetWare)
  *  Symbolic links are not supported on native NetWare, so we use an
@@ -10,7 +10,7 @@
  *  When using the NFS namespace, we set the mode to indicate a symlink and
  *  don't bother with the magic numbers.
  *
- *  from linux/fs/ext2/symlink.c
+ *  from beep/fs/ext2/symlink.c
  *
  *  Copyright (C) 1998-99, Frank A. Vorstenbosch
  *
@@ -23,12 +23,12 @@
 
 #include <asm/uaccess.h>
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/stat.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/time.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/stat.h>
 #include "ncp_fs.h"
 
 /* these magic numbers must appear in the symlink file -- this makes it a bit

@@ -1,5 +1,5 @@
 /*
- * syscalls.h - Linux syscall interfaces (arch-specific)
+ * syscalls.h - Beep syscall interfaces (arch-specific)
  *
  * Copyright (c) 2008 Jaswinder Singh
  *
@@ -10,10 +10,10 @@
 #ifndef _ASM_AVR32_SYSCALLS_H
 #define _ASM_AVR32_SYSCALLS_H
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
-#include <linux/signal.h>
+#include <beep/compiler.h>
+#include <beep/linkage.h>
+#include <beep/types.h>
+#include <beep/signal.h>
 
 /* mm/cache.c */
 asmlinkage int sys_cacheflush(int, void __user *, size_t);

@@ -10,16 +10,16 @@
  */
 #define pr_fmt(fmt) "sh_pfc " KBUILD_MODNAME ": " fmt
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sh_pfc.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/pinctrl/machine.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/sh_pfc.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/bitops.h>
+#include <beep/slab.h>
+#include <beep/ioport.h>
+#include <beep/pinctrl/machine.h>
 
 static struct sh_pfc *sh_pfc __read_mostly;
 

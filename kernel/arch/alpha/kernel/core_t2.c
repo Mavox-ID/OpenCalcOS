@@ -1,5 +1,5 @@
 /*
- *	linux/arch/alpha/kernel/core_t2.c
+ *	beep/arch/alpha/kernel/core_t2.c
  *
  * Written by Jay A Estabrook (jestabro@amt.tay1.dec.com).
  * December 1996.
@@ -14,10 +14,10 @@
 #include <asm/core_t2.h>
 #undef __EXTERN_INLINE
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/sched.h>
+#include <beep/init.h>
 
 #include <asm/ptrace.h>
 #include <asm/delay.h>

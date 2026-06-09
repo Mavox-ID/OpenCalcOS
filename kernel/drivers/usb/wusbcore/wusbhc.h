@@ -53,14 +53,14 @@
 #ifndef __WUSBHC_H__
 #define __WUSBHC_H__
 
-#include <linux/usb.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/kref.h>
-#include <linux/workqueue.h>
-#include <linux/usb/hcd.h>
-#include <linux/uwb.h>
-#include <linux/usb/wusb.h>
+#include <beep/usb.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/kref.h>
+#include <beep/workqueue.h>
+#include <beep/usb/hcd.h>
+#include <beep/uwb.h>
+#include <beep/usb/wusb.h>
 
 /*
  * Time from a WUSB channel stop request to the last transmitted MMC.
@@ -146,7 +146,7 @@ static inline void wusb_dev_put(struct wusb_dev *wusb_dev)
  * so we don't have to do much when getting the port's status.
  *
  * WUSB1.0[7.1], USB2.0[11.24.2.7.1,fig 11-10],
- * include/linux/usb_ch9.h (#define USB_PORT_STAT_*)
+ * include/beep/usb_ch9.h (#define USB_PORT_STAT_*)
  */
 struct wusb_port {
 	u16 status;

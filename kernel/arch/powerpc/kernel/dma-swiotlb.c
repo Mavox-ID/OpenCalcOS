@@ -11,12 +11,12 @@
  *
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/memblock.h>
-#include <linux/pfn.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/memblock.h>
+#include <beep/pfn.h>
+#include <beep/of_platform.h>
+#include <beep/platform_device.h>
+#include <beep/pci.h>
 
 #include <asm/machdep.h>
 #include <asm/swiotlb.h>

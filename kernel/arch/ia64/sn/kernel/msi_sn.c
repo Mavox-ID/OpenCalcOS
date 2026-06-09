@@ -6,12 +6,12 @@
  * Copyright (C) 2006 Silicon Graphics, Inc.  All Rights Reserved.
  */
 
-#include <linux/types.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/cpumask.h>
-#include <linux/msi.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/irq.h>
+#include <beep/pci.h>
+#include <beep/cpumask.h>
+#include <beep/msi.h>
+#include <beep/slab.h>
 
 #include <asm/sn/addrs.h>
 #include <asm/sn/intr.h>
@@ -43,7 +43,7 @@ void sn_teardown_msi_irq(unsigned int irq)
 		return;
 
 	sn_pdev = (struct pcidev_info *)sn_irq_info->irq_pciioinfo;
-	pdev = sn_pdev->pdi_linux_pcidev;
+	pdev = sn_pdev->pdi_beep_pcidev;
 	provider = SN_PCIDEV_BUSPROVIDER(pdev);
 
 	(*provider->dma_unmap)(pdev,
@@ -177,7 +177,7 @@ static int sn_set_msi_irq_affinity(struct irq_data *data,
 
 	get_cached_msi_msg(irq, &msg);
         sn_pdev = (struct pcidev_info *)sn_irq_info->irq_pciioinfo;
-	pdev = sn_pdev->pdi_linux_pcidev;
+	pdev = sn_pdev->pdi_beep_pcidev;
 	provider = SN_PCIDEV_BUSPROVIDER(pdev);
 
 	bus_addr = (u64)(msg.address_hi) << 32 | (u64)(msg.address_lo);

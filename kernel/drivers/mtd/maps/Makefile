@@ -1,5 +1,5 @@
 #
-# linux/drivers/maps/Makefile
+# beep/drivers/maps/Makefile
 #
 
 ifeq ($(CONFIG_MTD_COMPLEX_MAPPINGS),y)
@@ -39,7 +39,7 @@ obj-$(CONFIG_MTD_SOLUTIONENGINE)+= solutionengine.o
 obj-$(CONFIG_MTD_PCI)		+= pci.o
 obj-$(CONFIG_MTD_AUTCPU12)	+= autcpu12-nvram.o
 obj-$(CONFIG_MTD_IMPA7)		+= impa7.o
-obj-$(CONFIG_MTD_UCLINUX)	+= uclinux.o
+obj-$(CONFIG_MTD_UCBEEP)	+= ucbeep.o
 obj-$(CONFIG_MTD_NETtel)	+= nettel.o
 obj-$(CONFIG_MTD_SCB2_FLASH)	+= scb2_flash.o
 obj-$(CONFIG_MTD_H720X)		+= h720x-flash.o

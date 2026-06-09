@@ -5,20 +5,20 @@
  * Copyright (C) 1997 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/module.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>
 #include <asm/types.h>
 
-static struct linux_prom_ranges promlib_obio_ranges[PROMREG_MAX];
+static struct beep_prom_ranges promlib_obio_ranges[PROMREG_MAX];
 static int num_obio_ranges;
 
 /* Adjust register values based upon the ranges parameters. */
 static void
-prom_adjust_regs(struct linux_prom_registers *regp, int nregs,
-		 struct linux_prom_ranges *rangep, int nranges)
+prom_adjust_regs(struct beep_prom_registers *regp, int nregs,
+		 struct beep_prom_ranges *rangep, int nranges)
 {
 	int regc, rngc;
 
@@ -35,8 +35,8 @@ prom_adjust_regs(struct linux_prom_registers *regp, int nregs,
 }
 
 static void
-prom_adjust_ranges(struct linux_prom_ranges *ranges1, int nranges1,
-		   struct linux_prom_ranges *ranges2, int nranges2)
+prom_adjust_ranges(struct beep_prom_ranges *ranges1, int nranges1,
+		   struct beep_prom_ranges *ranges2, int nranges2)
 {
 	int rng1c, rng2c;
 
@@ -58,7 +58,7 @@ prom_adjust_ranges(struct linux_prom_ranges *ranges1, int nranges1,
 
 /* Apply probed obio ranges to registers passed, if no ranges return. */
 void
-prom_apply_obio_ranges(struct linux_prom_registers *regs, int nregs)
+prom_apply_obio_ranges(struct beep_prom_registers *regs, int nregs)
 {
 	if(num_obio_ranges)
 		prom_adjust_regs(regs, nregs, promlib_obio_ranges, num_obio_ranges);
@@ -81,7 +81,7 @@ void __init prom_ranges_init(void)
 					   (char *) promlib_obio_ranges,
 					   sizeof(promlib_obio_ranges));
 		if(success != -1)
-			num_obio_ranges = (success/sizeof(struct linux_prom_ranges));
+			num_obio_ranges = (success/sizeof(struct beep_prom_ranges));
 	}
 
 	if(num_obio_ranges)
@@ -89,26 +89,26 @@ void __init prom_ranges_init(void)
 }
 
 void prom_apply_generic_ranges(phandle node, phandle parent,
-		struct linux_prom_registers *regs, int nregs)
+		struct beep_prom_registers *regs, int nregs)
 {
 	int success;
 	int num_ranges;
-	struct linux_prom_ranges ranges[PROMREG_MAX];
+	struct beep_prom_ranges ranges[PROMREG_MAX];
 	
 	success = prom_getproperty(node, "ranges",
 				   (char *) ranges,
 				   sizeof (ranges));
 	if (success != -1) {
-		num_ranges = (success/sizeof(struct linux_prom_ranges));
+		num_ranges = (success/sizeof(struct beep_prom_ranges));
 		if (parent) {
-			struct linux_prom_ranges parent_ranges[PROMREG_MAX];
+			struct beep_prom_ranges parent_ranges[PROMREG_MAX];
 			int num_parent_ranges;
 		
 			success = prom_getproperty(parent, "ranges",
 				   		   (char *) parent_ranges,
 				   		   sizeof (parent_ranges));
 			if (success != -1) {
-				num_parent_ranges = (success/sizeof(struct linux_prom_ranges));
+				num_parent_ranges = (success/sizeof(struct beep_prom_ranges));
 				prom_adjust_ranges (ranges, num_ranges, parent_ranges, num_parent_ranges);
 			}
 		}

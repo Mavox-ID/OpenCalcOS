@@ -17,18 +17,18 @@
  * kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/param.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
+#include <beep/device.h>
+#include <beep/delay.h>
 
-#include <linux/fs_enet_pd.h>
-#include <linux/fs_uart_pd.h>
-#include <linux/fsl_devices.h>
-#include <linux/mii.h>
-#include <linux/of_platform.h>
+#include <beep/fs_enet_pd.h>
+#include <beep/fs_uart_pd.h>
+#include <beep/fsl_devices.h>
+#include <beep/mii.h>
+#include <beep/of_platform.h>
 
 #include <asm/delay.h>
 #include <asm/io.h>

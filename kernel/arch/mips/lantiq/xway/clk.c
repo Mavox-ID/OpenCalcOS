@@ -6,10 +6,10 @@
  *  Copyright (C) 2010 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/clk.h>
+#include <beep/io.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/clk.h>
 
 #include <asm/time.h>
 #include <asm/irq.h>

@@ -17,10 +17,10 @@
  * Supported chipsets: 93c46 & 93c66.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/eeprom_93cx6.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/eeprom_93cx6.h>
 
 MODULE_AUTHOR("http://rt2x00.serialmonkey.com");
 MODULE_VERSION("1.0");

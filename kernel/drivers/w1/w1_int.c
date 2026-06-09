@@ -19,13 +19,13 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/delay.h>
+#include <beep/kthread.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/moduleparam.h>
 
 #include "w1.h"
 #include "w1_log.h"

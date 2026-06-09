@@ -5,8 +5,8 @@
  *
  * Copyright (C) 1997 Ralf Baechle
  */
-#include <linux/irqflags.h>
-#include <linux/kernel.h>
+#include <beep/irqflags.h>
+#include <beep/kernel.h>
 
 #include <asm/cacheflush.h>
 #include <asm/mipsregs.h>

@@ -8,9 +8,9 @@
 #ifndef __SOUNDBUS_H
 #define __SOUNDBUS_H
 
-#include <linux/of_device.h>
+#include <beep/of_device.h>
 #include <sound/pcm.h>
-#include <linux/list.h>
+#include <beep/list.h>
 
 
 /* When switching from master to slave or the other way around,

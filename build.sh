@@ -41,6 +41,37 @@ export PATH="$ROOT_DIR/ndless/ndless-sdk/toolchain/install/bin:$ROOT_DIR/ndless/
 step "Cleaning all"
 bash clean.sh
 
+step "Setting up beep aliases"
+TOOLCHAIN_ROOT="$ROOT_DIR/ndless/ndless-sdk/toolchain/archives/beep-toolchain"
+BEEP_BIN_DIR="$ROOT_DIR/.local_bin"
+mkdir -p "$BEEP_BIN_DIR"
+
+if [ ! -d "$TOOLCHAIN_ROOT/bin" ]; then
+    echo -e "${RED}Error: Linux toolchain not found in $TOOLCHAIN_ROOT!${NC}"
+    exit 1
+fi
+
+echo "Creating aliases..."
+for tool in "$TOOLCHAIN_ROOT/bin"/arm-none-linux-gnueabihf-*; do
+    [ -e "$tool" ] || continue 
+    
+    base_name=$(basename "$tool")
+    beep_name=${base_name/arm-none-linux-gnueabihf-/arm-beep-gnueabi-}
+    target_path="$BEEP_BIN_DIR/$beep_name"
+    
+    if [ ! -f "$target_path" ]; then
+        cat << EOF > "$target_path"
+#!/bin/sh
+exec "$tool" "\$@"
+EOF
+        chmod +x "$target_path"
+        echo "Created alias: $beep_name"
+    fi
+done
+export PATH="$BEEP_BIN_DIR:$PATH"
+echo -e "${GREEN}Beep aliases done.${NC}"
+echo -e "${GREEN}Beep aliases here >> $BEEP_BIN_DIR${NC}"
+
 step "Building Ndless"
 bash ndless.sh
 

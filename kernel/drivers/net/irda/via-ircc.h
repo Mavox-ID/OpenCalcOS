@@ -30,10 +30,10 @@ this program; if not, write to the Free Software Foundation, Inc.,
  ********************************************************************/
 #ifndef via_IRCC_H
 #define via_IRCC_H
-#include <linux/time.h>
-#include <linux/spinlock.h>
-#include <linux/pm.h>
-#include <linux/types.h>
+#include <beep/time.h>
+#include <beep/spinlock.h>
+#include <beep/pm.h>
+#include <beep/types.h>
 #include <asm/io.h>
 
 #define MAX_TX_WINDOW 7

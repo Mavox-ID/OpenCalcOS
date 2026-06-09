@@ -1,8 +1,8 @@
 #ifndef _ASM_SCORE_PAGE_H
 #define _ASM_SCORE_PAGE_H
 
-#include <linux/pfn.h>
-#include <linux/const.h>
+#include <beep/pfn.h>
+#include <beep/const.h>
 
 /* PAGE_SHIFT determines the page size */
 #define PAGE_SHIFT	(12)

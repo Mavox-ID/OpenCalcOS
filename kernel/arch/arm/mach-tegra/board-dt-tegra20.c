@@ -15,24 +15,24 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_fdt.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/pda_power.h>
-#include <linux/platform_data/tegra_usb.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/i2c-tegra.h>
-#include <linux/usb/tegra_usb_phy.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/serial_8250.h>
+#include <beep/clk.h>
+#include <beep/dma-mapping.h>
+#include <beep/irqdomain.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_fdt.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
+#include <beep/pda_power.h>
+#include <beep/platform_data/tegra_usb.h>
+#include <beep/io.h>
+#include <beep/i2c.h>
+#include <beep/i2c-tegra.h>
+#include <beep/usb/tegra_usb_phy.h>
 
 #include <asm/hardware/gic.h>
 #include <asm/mach-types.h>

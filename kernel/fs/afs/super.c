@@ -14,16 +14,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/parser.h>
-#include <linux/statfs.h>
-#include <linux/sched.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mount.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/parser.h>
+#include <beep/statfs.h>
+#include <beep/sched.h>
 #include "internal.h"
 
 #define AFS_FS_MAGIC 0x6B414653 /* 'kAFS' */

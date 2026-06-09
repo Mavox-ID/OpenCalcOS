@@ -11,7 +11,7 @@
 #ifndef _ASM_C6X_CACHEFLUSH_H
 #define _ASM_C6X_CACHEFLUSH_H
 
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 
 #include <asm/setup.h>
 #include <asm/cache.h>

@@ -3,10 +3,10 @@
  */
 
 #include <asm/uaccess.h>
-#include <linux/string.h>
-#include <linux/time.h>
+#include <beep/string.h>
+#include <beep/time.h>
 #include "reiserfs.h"
-#include <linux/buffer_head.h>
+#include <beep/buffer_head.h>
 
 /* these are used in do_balance.c */
 

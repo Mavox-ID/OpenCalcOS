@@ -17,7 +17,7 @@
 #ifndef __TDA8290_H__
 #define __TDA8290_H__
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 #include "dvb_frontend.h"
 
 struct tda829x_config {

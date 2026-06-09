@@ -7,9 +7,9 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/slab.h>
-#include <linux/cpumask.h>
-#include <linux/percpu.h>
+#include <beep/slab.h>
+#include <beep/cpumask.h>
+#include <beep/percpu.h>
 
 struct vmemmap_backing {
 	struct vmemmap_backing *list;

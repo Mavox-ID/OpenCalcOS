@@ -17,7 +17,7 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include "libgcc.h"
 
 long long __ashrdi3(long long u, word_type b)

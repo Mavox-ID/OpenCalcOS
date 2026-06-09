@@ -4,17 +4,17 @@
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/slab.h>
-#include <linux/namei.h>
-#include <linux/ctype.h>
+#include <beep/slab.h>
+#include <beep/namei.h>
+#include <beep/ctype.h>
 
-#include <linux/sunrpc/svcsock.h>
-#include <linux/lockd/lockd.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/gss_api.h>
-#include <linux/sunrpc/gss_krb5_enctypes.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/module.h>
+#include <beep/sunrpc/svcsock.h>
+#include <beep/lockd/lockd.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/gss_api.h>
+#include <beep/sunrpc/gss_krb5_enctypes.h>
+#include <beep/sunrpc/rpc_pipe_fs.h>
+#include <beep/module.h>
 
 #include "idmap.h"
 #include "nfsd.h"

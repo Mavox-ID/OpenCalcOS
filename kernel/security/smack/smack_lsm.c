@@ -18,26 +18,26 @@
  *      as published by the Free Software Foundation.
  */
 
-#include <linux/xattr.h>
-#include <linux/pagemap.h>
-#include <linux/mount.h>
-#include <linux/stat.h>
-#include <linux/kd.h>
+#include <beep/xattr.h>
+#include <beep/pagemap.h>
+#include <beep/mount.h>
+#include <beep/stat.h>
+#include <beep/kd.h>
 #include <asm/ioctls.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/pipe_fs_i.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/udp.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/pipe_fs_i.h>
 #include <net/cipso_ipv4.h>
-#include <linux/audit.h>
-#include <linux/magic.h>
-#include <linux/dcache.h>
-#include <linux/personality.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/binfmts.h>
+#include <beep/audit.h>
+#include <beep/magic.h>
+#include <beep/dcache.h>
+#include <beep/personality.h>
+#include <beep/msg.h>
+#include <beep/shm.h>
+#include <beep/binfmts.h>
 #include "smack.h"
 
 #define task_security(task)	(task_cred_xxx((task), security))
@@ -454,7 +454,7 @@ static int smack_sb_umount(struct vfsmount *mnt, int flags)
  *
  * Returns 0 if it gets a blob, -ENOMEM otherwise
  */
-static int smack_bprm_set_creds(struct linux_binprm *bprm)
+static int smack_bprm_set_creds(struct beep_binprm *bprm)
 {
 	struct inode *inode = bprm->file->f_path.dentry->d_inode;
 	struct task_smack *bsp = bprm->cred->security;
@@ -487,7 +487,7 @@ static int smack_bprm_set_creds(struct linux_binprm *bprm)
  *
  * @bprm: binprm for exec
  */
-static void smack_bprm_committing_creds(struct linux_binprm *bprm)
+static void smack_bprm_committing_creds(struct beep_binprm *bprm)
 {
 	struct task_smack *bsp = bprm->cred->security;
 
@@ -501,7 +501,7 @@ static void smack_bprm_committing_creds(struct linux_binprm *bprm)
  *
  * Returns 0 on success.
  */
-static int smack_bprm_secureexec(struct linux_binprm *bprm)
+static int smack_bprm_secureexec(struct beep_binprm *bprm)
 {
 	struct task_smack *tsp = current_security();
 	int ret = cap_bprm_secureexec(bprm);
@@ -1048,11 +1048,11 @@ static void smack_inode_getsecid(const struct inode *inode, u32 *secid)
  * Returns 0
  *
  * Should access checks be done on each read or write?
- * UNICOS and SELinux say yes.
+ * UNICOS and SEBeep say yes.
  * Trusted Solaris, Trusted Irix, and just about everyone else says no.
  *
  * I'll say no for now. Smack does not do the frequent
- * label changing that SELinux does.
+ * label changing that SEBeep does.
  */
 static int smack_file_permission(struct file *file, int mask)
 {
@@ -1661,7 +1661,7 @@ static int smack_task_movememory(struct task_struct *p)
  *
  * Return 0 if write access is permitted
  *
- * The secid behavior is an artifact of an SELinux hack
+ * The secid behavior is an artifact of an SEBeep hack
  * in the USB code. Someday it may go away.
  */
 static int smack_task_kill(struct task_struct *p, struct siginfo *info,
@@ -3298,7 +3298,7 @@ static int smack_audit_rule_match(u32 secid, u32 field, u32 op, void *vrule,
 	char *rule = vrule;
 
 	if (!rule) {
-		audit_log(actx, GFP_ATOMIC, AUDIT_SELINUX_ERR,
+		audit_log(actx, GFP_ATOMIC, AUDIT_SEBEEP_ERR,
 			  "Smack: missing rule\n");
 		return -ENOENT;
 	}

@@ -22,21 +22,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
-#include <linux/rfkill.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/backlight.h>
-#include <linux/fb.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/i8042.h>
+#include <beep/rfkill.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/input/sparse-keymap.h>
+#include <beep/backlight.h>
+#include <beep/fb.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/i8042.h>
 
 #define IDEAPAD_RFKILL_DEV_NUM	(3)
 

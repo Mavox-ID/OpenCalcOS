@@ -14,10 +14,10 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/gpio.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
+#include <beep/gpio.h>
 
 #include <asm/mach-types.h>
 

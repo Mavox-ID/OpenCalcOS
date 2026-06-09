@@ -15,10 +15,10 @@
 #ifndef __ASM_MACH_AR71XX_REGS_H
 #define __ASM_MACH_AR71XX_REGS_H
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/bitops.h>
 
 #define AR71XX_APB_BASE		0x18000000
 #define AR71XX_EHCI_BASE	0x1b000000

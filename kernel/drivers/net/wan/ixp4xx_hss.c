@@ -1,5 +1,5 @@
 /*
- * Intel IXP4xx HSS (synchronous serial port) driver for Linux
+ * Intel IXP4xx HSS (synchronous serial port) driver for Beep
  *
  * Copyright (C) 2007-2008 Krzysztof Hałasa <khc@pm.waw.pl>
  *
@@ -10,18 +10,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/cdev.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/fs.h>
-#include <linux/hdlc.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/bitops.h>
+#include <beep/cdev.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmapool.h>
+#include <beep/fs.h>
+#include <beep/hdlc.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/poll.h>
+#include <beep/slab.h>
 #include <mach/npe.h>
 #include <mach/qmgr.h>
 

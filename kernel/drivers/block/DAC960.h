@@ -1,6 +1,6 @@
 /*
 
-  Linux Driver for Mylex DAC960/AcceleRAID/eXtremeRAID PCI RAID Controllers
+  Beep Driver for Mylex DAC960/AcceleRAID/eXtremeRAID PCI RAID Controllers
 
   Copyright 1998-2001 by Leonard N. Zubkoff <lnz@dandelion.com>
 

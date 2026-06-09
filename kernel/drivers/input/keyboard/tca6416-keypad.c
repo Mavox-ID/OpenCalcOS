@@ -10,17 +10,17 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/tca6416_keypad.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/input.h>
+#include <beep/tca6416_keypad.h>
 
 #define TCA6416_INPUT          0
 #define TCA6416_OUTPUT         1
@@ -248,7 +248,7 @@ static int tca6416_keypad_probe(struct i2c_client *client,
 	input->id.product = 0x0001;
 	input->id.version = 0x0100;
 
-	/* Enable auto repeat feature of Linux input subsystem */
+	/* Enable auto repeat feature of Beep input subsystem */
 	if (pdata->rep)
 		__set_bit(EV_REP, input->evbit);
 

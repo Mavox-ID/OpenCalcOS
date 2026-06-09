@@ -20,8 +20,8 @@
 #ifndef REMOTEPROC_INTERNAL_H
 #define REMOTEPROC_INTERNAL_H
 
-#include <linux/irqreturn.h>
-#include <linux/firmware.h>
+#include <beep/irqreturn.h>
+#include <beep/firmware.h>
 
 struct rproc;
 

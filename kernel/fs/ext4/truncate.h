@@ -1,5 +1,5 @@
 /*
- * linux/fs/ext4/truncate.h
+ * beep/fs/ext4/truncate.h
  *
  * Common inline functions needed for truncate support
  */

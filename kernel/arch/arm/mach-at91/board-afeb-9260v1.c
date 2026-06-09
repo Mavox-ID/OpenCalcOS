@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-at91/board-afeb-9260v1.c
+ * beep/arch/arm/mach-at91/board-afeb-9260v1.c
  *
  *  Copyright (C) 2005 SAN People
  *  Copyright (C) 2006 Atmel
@@ -24,15 +24,15 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/types.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
+#include <beep/types.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/clk.h>
+#include <beep/dma-mapping.h>
 
 #include <mach/hardware.h>
 #include <asm/setup.h>

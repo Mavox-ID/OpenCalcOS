@@ -10,15 +10,15 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/input.h>
-#include <linux/spi/flash.h>
-#include <linux/spi/spi.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/input.h>
+#include <beep/spi/flash.h>
+#include <beep/spi/spi.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>

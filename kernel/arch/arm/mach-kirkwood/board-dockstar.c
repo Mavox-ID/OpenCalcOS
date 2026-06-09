@@ -9,14 +9,14 @@
  * warranty of any kind, whether express or implied.
  *
  * Copied and modified for Seagate GoFlex Net support by
- * Joshua Coombs <josh.coombs@gmail.com> based on ArchLinux ARM's
+ * Joshua Coombs <josh.coombs@gmail.com> based on ArchBeep ARM's
  * GoFlex kernel patches.
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mv643xx_eth.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/mv643xx_eth.h>
 #include "common.h"
 
 static struct mv643xx_eth_platform_data dockstar_ge00_data = {

@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux,intel}.com)
+# Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,beep,intel}.com)
 # Licensed under the GPL
 #
 
-CPPFLAGS_vmlinux.lds := -DSTART=$(LDS_START)		\
+CPPFLAGS_vmbeep.lds := -DSTART=$(LDS_START)		\
                         -DELF_ARCH=$(LDS_ELF_ARCH)	\
                         -DELF_FORMAT=$(LDS_ELF_FORMAT)	\
 			$(LDS_EXTRA)
-extra-y := vmlinux.lds
+extra-y := vmbeep.lds
 clean-files :=
 
 obj-y = config.o exec.o exitcode.o irq.o ksyms.o mem.o \

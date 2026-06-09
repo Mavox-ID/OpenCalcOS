@@ -1,5 +1,5 @@
 /*
- * linux/include/asm/dma.h: Defines for using and allocating dma channels.
+ * beep/include/asm/dma.h: Defines for using and allocating dma channels.
  * Written by Hennus Bergman, 1992.
  * High DMA channel support & info by Hannu Savolainen
  * and John Boyd, Nov. 1992.
@@ -8,7 +8,7 @@
 #ifndef _ASM_X86_DMA_H
 #define _ASM_X86_DMA_H
 
-#include <linux/spinlock.h>	/* And spinlocks */
+#include <beep/spinlock.h>	/* And spinlocks */
 #include <asm/io.h>		/* need byte IO */
 
 #ifdef HAVE_REALLY_SLOW_DMA_CONTROLLER

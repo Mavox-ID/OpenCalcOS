@@ -28,12 +28,12 @@
  *    Jerome Glisse <glisse@freedesktop.org>
  *    Dave Airlie
  */
-#include <linux/seq_file.h>
-#include <linux/atomic.h>
-#include <linux/wait.h>
-#include <linux/list.h>
-#include <linux/kref.h>
-#include <linux/slab.h>
+#include <beep/seq_file.h>
+#include <beep/atomic.h>
+#include <beep/wait.h>
+#include <beep/list.h>
+#include <beep/kref.h>
+#include <beep/slab.h>
 #include <drm/drmP.h>
 #include "radeon_reg.h"
 #include "radeon.h"

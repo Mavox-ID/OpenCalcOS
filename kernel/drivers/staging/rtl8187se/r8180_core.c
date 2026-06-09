@@ -15,7 +15,7 @@
 
    RSSI calc function from 'The Deuce'
 
-   Some ideas borrowed from the 8139too.c driver included in linux kernel.
+   Some ideas borrowed from the 8139too.c driver included in beep kernel.
 
    We (I?) want to thanks the Authors of those projecs and also the
    Ndiswrapper's project Authors.
@@ -32,10 +32,10 @@
 #undef RX_DONT_PASS_UL
 #undef DUMMY_RX
 
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/eeprom_93cx6.h>
-#include <linux/interrupt.h>
+#include <beep/slab.h>
+#include <beep/syscalls.h>
+#include <beep/eeprom_93cx6.h>
+#include <beep/interrupt.h>
 
 #include "r8180_hw.h"
 #include "r8180.h"
@@ -69,7 +69,7 @@ static int hwwep;
 MODULE_LICENSE("GPL");
 MODULE_DEVICE_TABLE(pci, rtl8180_pci_id_tbl);
 MODULE_AUTHOR("Andrea Merello <andreamrl@tiscali.it>");
-MODULE_DESCRIPTION("Linux driver for Realtek RTL8187SE WiFi cards");
+MODULE_DESCRIPTION("Beep driver for Realtek RTL8187SE WiFi cards");
 
 module_param_string(ifname, ifname, sizeof(ifname), S_IRUGO|S_IWUSR);
 module_param(hwwep, int, S_IRUGO|S_IWUSR);
@@ -3363,7 +3363,7 @@ static int __init rtl8180_pci_module_init(void)
 		return ret;
 	}
 
-	pr_info("\nLinux kernel driver for RTL8180 / RTL8185 based WLAN cards\n");
+	pr_info("\nBeep kernel driver for RTL8180 / RTL8185 based WLAN cards\n");
 	pr_info("Copyright (c) 2004-2005, Andrea Merello\n");
 	DMESG("Initializing module");
 	DMESG("Wireless extensions version %d", WIRELESS_EXT);
@@ -3727,7 +3727,7 @@ void GPIOChangeRFWorkItemCallBack(struct work_struct *work)
 
 	char *argv[3];
 	static char *RadioPowerPath = "/etc/acpi/events/RadioPower.sh";
-	static char *envp[] = {"HOME=/", "TERM=linux", "PATH=/usr/bin:/bin", NULL};
+	static char *envp[] = {"HOME=/", "TERM=beep", "PATH=/usr/bin:/bin", NULL};
 	static int readf_count;
 
 	readf_count = (readf_count+1)%0xffff;

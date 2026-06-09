@@ -6,7 +6,7 @@
  * GPL v2, can be found in COPYING.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include "soundbus.h"
 
 MODULE_AUTHOR("Johannes Berg <johannes@sipsolutions.net>");

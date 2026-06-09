@@ -9,13 +9,13 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/writeback.h>
+#include <beep/gfp.h>
 #include "internal.h"
 
 static int afs_readpage(struct file *file, struct page *page);

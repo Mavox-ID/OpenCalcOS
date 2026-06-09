@@ -1,8 +1,8 @@
 #ifndef __WINBOND_WBHAL_S_H
 #define __WINBOND_WBHAL_S_H
 
-#include <linux/types.h>
-#include <linux/if_ether.h> /* for ETH_ALEN */
+#include <beep/types.h>
+#include <beep/if_ether.h> /* for ETH_ALEN */
 
 #define HAL_LED_SET_MASK	0x001c
 #define HAL_LED_SET_SHIFT	2

@@ -1,5 +1,5 @@
 /*
- *	Linux NET3:	GRE over IP protocol decoder.
+ *	Beep NET3:	GRE over IP protocol decoder.
  *
  *	Authors: Alexey Kuznetsov (kuznet@ms2.inr.ac.ru)
  *
@@ -12,26 +12,26 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/capability.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/in.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/if_arp.h>
-#include <linux/mroute.h>
-#include <linux/init.h>
-#include <linux/in6.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/in.h>
+#include <beep/tcp.h>
+#include <beep/udp.h>
+#include <beep/if_arp.h>
+#include <beep/mroute.h>
+#include <beep/init.h>
+#include <beep/in6.h>
+#include <beep/inetdevice.h>
+#include <beep/igmp.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/etherdevice.h>
+#include <beep/if_ether.h>
 
 #include <net/sock.h>
 #include <net/ip.h>
@@ -84,7 +84,7 @@
    - traceroute does not work. I planned to relay ICMP from tunnel,
      so that this problem would be solved and traceroute output
      would even more informative. This idea appeared to be wrong:
-     only Linux complies to rfc1812 now (yes, guys, Linux is the only
+     only Beep complies to rfc1812 now (yes, guys, Beep is the only
      true router now :-)), all routers (at least, in neighbourhood of mine)
      return only 8 bytes of payload. It is the end.
 
@@ -480,7 +480,7 @@ static void ipgre_tunnel_uninit(struct net_device *dev)
 static void ipgre_err(struct sk_buff *skb, u32 info)
 {
 
-/* All the routers (except for Linux) return only
+/* All the routers (except for Beep) return only
    8 bytes of packet payload. It means, that precise relaying of
    ICMP in the real Internet is absolutely infeasible.
 

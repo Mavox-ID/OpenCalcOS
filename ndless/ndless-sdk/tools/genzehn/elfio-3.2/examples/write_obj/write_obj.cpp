@@ -1,5 +1,5 @@
 /*
- * This example shows how to create ELF object file for Linux on x86
+ * This example shows how to create ELF object file for Beep on x86
  *
  * Instructions:
  * 1. Compile and link this file with ELFIO library
@@ -23,7 +23,7 @@ int main( void )
     // You can't proceed before this function call!
     writer.create( ELFCLASS32, ELFDATA2LSB );
 
-    writer.set_os_abi( ELFOSABI_LINUX );
+    writer.set_os_abi( ELFOSABI_BEEP );
     writer.set_type( ET_REL );
     writer.set_machine( EM_386 );
 

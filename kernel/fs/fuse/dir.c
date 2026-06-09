@@ -8,11 +8,11 @@
 
 #include "fuse_i.h"
 
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/sched.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
+#include <beep/pagemap.h>
+#include <beep/file.h>
+#include <beep/sched.h>
+#include <beep/namei.h>
+#include <beep/slab.h>
 
 #if BITS_PER_LONG >= 64
 static inline void fuse_dentry_settime(struct dentry *entry, u64 time)

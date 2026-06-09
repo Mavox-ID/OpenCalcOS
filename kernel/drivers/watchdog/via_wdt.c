@@ -13,13 +13,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/timer.h>
-#include <linux/watchdog.h>
+#include <beep/device.h>
+#include <beep/io.h>
+#include <beep/jiffies.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/timer.h>
+#include <beep/watchdog.h>
 
 /* Configuration registers relative to the pci device */
 #define VIA_WDT_MMIO_BASE	0xe8	/* MMIO region base address */

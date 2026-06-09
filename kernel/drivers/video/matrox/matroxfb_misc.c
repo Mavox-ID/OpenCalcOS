@@ -86,8 +86,8 @@
 
 
 #include "matroxfb_misc.h"
-#include <linux/interrupt.h>
-#include <linux/matroxfb.h>
+#include <beep/interrupt.h>
+#include <beep/matroxfb.h>
 
 void matroxfb_DAC_out(const struct matrox_fb_info *minfo, int reg, int val)
 {

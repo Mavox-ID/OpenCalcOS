@@ -6,13 +6,13 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/module.h>
+#include <beep/crc32.h>
+#include <beep/delay.h>
+#include <beep/firmware.h>
+#include <beep/kernel.h>
+#include <beep/i2c.h>
+#include <beep/regmap.h>
+#include <beep/module.h>
 
 #include "sigmadsp.h"
 

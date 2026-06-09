@@ -8,16 +8,16 @@
  *
  */
 
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/kexec.h>
-#include <linux/profile.h>
-#include <linux/stat.h>
-#include <linux/sched.h>
-#include <linux/capability.h>
+#include <beep/kobject.h>
+#include <beep/string.h>
+#include <beep/sysfs.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/kexec.h>
+#include <beep/profile.h>
+#include <beep/stat.h>
+#include <beep/sched.h>
+#include <beep/capability.h>
 
 #define KERNEL_ATTR_RO(_name) \
 static struct kobj_attribute _name##_attr = __ATTR_RO(_name)

@@ -9,15 +9,15 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/proc_fs.h>
-#include <linux/list.h>
-#include <linux/platform_device.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/proc_fs.h>
+#include <beep/list.h>
+#include <beep/platform_device.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 #include <asm/dma.h>
 
 DEFINE_SPINLOCK(dma_spin_lock);
@@ -417,6 +417,6 @@ static int __init dma_api_init(void)
 }
 subsys_initcall(dma_api_init);
 
-MODULE_AUTHOR("Paul Mundt <lethal@linux-sh.org>");
+MODULE_AUTHOR("Paul Mundt <lethal@beep-sh.org>");
 MODULE_DESCRIPTION("DMA API for SuperH");
 MODULE_LICENSE("GPL");

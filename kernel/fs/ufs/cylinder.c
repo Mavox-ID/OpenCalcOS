@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ufs/cylinder.c
+ *  beep/fs/ufs/cylinder.c
  *
  * Copyright (C) 1998
  * Daniel Pirkl <daniel.pirkl@email.cz>
@@ -8,11 +8,11 @@
  *  ext2 - inode (block) bitmap caching inspired
  */
 
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/bitops.h>
+#include <beep/fs.h>
+#include <beep/time.h>
+#include <beep/stat.h>
+#include <beep/string.h>
+#include <beep/bitops.h>
 
 #include <asm/byteorder.h>
 

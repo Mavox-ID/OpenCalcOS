@@ -2,7 +2,7 @@
  *  ahci.c - AHCI SATA support
  *
  *  Maintained by:  Jeff Garzik <jgarzik@pobox.com>
- *    		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *    		    Please ALWAYS copy beep-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2004-2005 Red Hat, Inc.
@@ -32,20 +32,20 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/device.h>
-#include <linux/dmi.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/device.h>
+#include <beep/dmi.h>
+#include <beep/gfp.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
-#include <linux/libata.h>
+#include <beep/libata.h>
 #include "ahci.h"
 
 #define DRV_NAME	"ahci"
@@ -74,7 +74,7 @@ enum board_ids {
 	board_ahci_vt8251,
 
 	/* aliases */
-	board_ahci_mcp_linux	= board_ahci_mcp65,
+	board_ahci_mcp_beep	= board_ahci_mcp65,
 	board_ahci_mcp67	= board_ahci_mcp65,
 	board_ahci_mcp73	= board_ahci_mcp65,
 	board_ahci_mcp79	= board_ahci_mcp77,
@@ -313,22 +313,22 @@ static const struct pci_device_id ahci_pci_tbl[] = {
 	{ PCI_VDEVICE(NVIDIA, 0x0559), board_ahci_mcp67 },	/* MCP67 */
 	{ PCI_VDEVICE(NVIDIA, 0x055a), board_ahci_mcp67 },	/* MCP67 */
 	{ PCI_VDEVICE(NVIDIA, 0x055b), board_ahci_mcp67 },	/* MCP67 */
-	{ PCI_VDEVICE(NVIDIA, 0x0580), board_ahci_mcp_linux },	/* Linux ID */
-	{ PCI_VDEVICE(NVIDIA, 0x0581), board_ahci_mcp_linux },	/* Linux ID */
-	{ PCI_VDEVICE(NVIDIA, 0x0582), board_ahci_mcp_linux },	/* Linux ID */
-	{ PCI_VDEVICE(NVIDIA, 0x0583), board_ahci_mcp_linux },	/* Linux ID */
-	{ PCI_VDEVICE(NVIDIA, 0x0584), board_ahci_mcp_linux },	/* Linux ID */
-	{ PCI_VDEVICE(NVIDIA, 0x0585), board_ahci_mcp_linux },	/* Linux ID */
-	{ PCI_VDEVICE(NVIDIA, 0x0586), board_ahci_mcp_linux },	/* Linux ID */
-	{ PCI_VDEVICE(NVIDIA, 0x0587), board_ahci_mcp_linux },	/* Linux ID */
-	{ PCI_VDEVICE(NVIDIA, 0x0588), board_ahci_mcp_linux },	/* Linux ID */
-	{ PCI_VDEVICE(NVIDIA, 0x0589), board_ahci_mcp_linux },	/* Linux ID */
-	{ PCI_VDEVICE(NVIDIA, 0x058a), board_ahci_mcp_linux },	/* Linux ID */
-	{ PCI_VDEVICE(NVIDIA, 0x058b), board_ahci_mcp_linux },	/* Linux ID */
-	{ PCI_VDEVICE(NVIDIA, 0x058c), board_ahci_mcp_linux },	/* Linux ID */
-	{ PCI_VDEVICE(NVIDIA, 0x058d), board_ahci_mcp_linux },	/* Linux ID */
-	{ PCI_VDEVICE(NVIDIA, 0x058e), board_ahci_mcp_linux },	/* Linux ID */
-	{ PCI_VDEVICE(NVIDIA, 0x058f), board_ahci_mcp_linux },	/* Linux ID */
+	{ PCI_VDEVICE(NVIDIA, 0x0580), board_ahci_mcp_beep },	/* Beep ID */
+	{ PCI_VDEVICE(NVIDIA, 0x0581), board_ahci_mcp_beep },	/* Beep ID */
+	{ PCI_VDEVICE(NVIDIA, 0x0582), board_ahci_mcp_beep },	/* Beep ID */
+	{ PCI_VDEVICE(NVIDIA, 0x0583), board_ahci_mcp_beep },	/* Beep ID */
+	{ PCI_VDEVICE(NVIDIA, 0x0584), board_ahci_mcp_beep },	/* Beep ID */
+	{ PCI_VDEVICE(NVIDIA, 0x0585), board_ahci_mcp_beep },	/* Beep ID */
+	{ PCI_VDEVICE(NVIDIA, 0x0586), board_ahci_mcp_beep },	/* Beep ID */
+	{ PCI_VDEVICE(NVIDIA, 0x0587), board_ahci_mcp_beep },	/* Beep ID */
+	{ PCI_VDEVICE(NVIDIA, 0x0588), board_ahci_mcp_beep },	/* Beep ID */
+	{ PCI_VDEVICE(NVIDIA, 0x0589), board_ahci_mcp_beep },	/* Beep ID */
+	{ PCI_VDEVICE(NVIDIA, 0x058a), board_ahci_mcp_beep },	/* Beep ID */
+	{ PCI_VDEVICE(NVIDIA, 0x058b), board_ahci_mcp_beep },	/* Beep ID */
+	{ PCI_VDEVICE(NVIDIA, 0x058c), board_ahci_mcp_beep },	/* Beep ID */
+	{ PCI_VDEVICE(NVIDIA, 0x058d), board_ahci_mcp_beep },	/* Beep ID */
+	{ PCI_VDEVICE(NVIDIA, 0x058e), board_ahci_mcp_beep },	/* Beep ID */
+	{ PCI_VDEVICE(NVIDIA, 0x058f), board_ahci_mcp_beep },	/* Beep ID */
 	{ PCI_VDEVICE(NVIDIA, 0x07f0), board_ahci_mcp73 },	/* MCP73 */
 	{ PCI_VDEVICE(NVIDIA, 0x07f1), board_ahci_mcp73 },	/* MCP73 */
 	{ PCI_VDEVICE(NVIDIA, 0x07f2), board_ahci_mcp73 },	/* MCP73 */

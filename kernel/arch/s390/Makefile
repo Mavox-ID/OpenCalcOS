@@ -106,10 +106,10 @@ boot		:= arch/s390/boot
 
 all: image bzImage
 
-install: vmlinux
+install: vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $@
 
-image bzImage: vmlinux
+image bzImage: vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 zfcpdump:

@@ -16,52 +16,52 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
-#include <linux/export.h>
-#include <linux/moduleloader.h>
-#include <linux/ftrace_event.h>
-#include <linux/init.h>
-#include <linux/kallsyms.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/sysfs.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/elf.h>
-#include <linux/proc_fs.h>
-#include <linux/security.h>
-#include <linux/seq_file.h>
-#include <linux/syscalls.h>
-#include <linux/fcntl.h>
-#include <linux/rcupdate.h>
-#include <linux/capability.h>
-#include <linux/cpu.h>
-#include <linux/moduleparam.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/vermagic.h>
-#include <linux/notifier.h>
-#include <linux/sched.h>
-#include <linux/stop_machine.h>
-#include <linux/device.h>
-#include <linux/string.h>
-#include <linux/mutex.h>
-#include <linux/rculist.h>
+#include <beep/export.h>
+#include <beep/moduleloader.h>
+#include <beep/ftrace_event.h>
+#include <beep/init.h>
+#include <beep/kallsyms.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/sysfs.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/elf.h>
+#include <beep/proc_fs.h>
+#include <beep/security.h>
+#include <beep/seq_file.h>
+#include <beep/syscalls.h>
+#include <beep/fcntl.h>
+#include <beep/rcupdate.h>
+#include <beep/capability.h>
+#include <beep/cpu.h>
+#include <beep/moduleparam.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/vermagic.h>
+#include <beep/notifier.h>
+#include <beep/sched.h>
+#include <beep/stop_machine.h>
+#include <beep/device.h>
+#include <beep/string.h>
+#include <beep/mutex.h>
+#include <beep/rculist.h>
 #include <asm/uaccess.h>
 #include <asm/cacheflush.h>
 #include <asm/mmu_context.h>
-#include <linux/license.h>
+#include <beep/license.h>
 #include <asm/sections.h>
-#include <linux/tracepoint.h>
-#include <linux/ftrace.h>
-#include <linux/async.h>
-#include <linux/percpu.h>
-#include <linux/kmemleak.h>
-#include <linux/jump_label.h>
-#include <linux/pfn.h>
-#include <linux/bsearch.h>
-#include <linux/fips.h>
-#include <uapi/linux/module.h>
+#include <beep/tracepoint.h>
+#include <beep/ftrace.h>
+#include <beep/async.h>
+#include <beep/percpu.h>
+#include <beep/kmemleak.h>
+#include <beep/jump_label.h>
+#include <beep/pfn.h>
+#include <beep/bsearch.h>
+#include <beep/fips.h>
+#include <uapi/beep/module.h>
 #include "module-internal.h"
 
 #define CREATE_TRACE_POINTS
@@ -390,7 +390,7 @@ static bool check_symbol(const struct symsearch *syms,
 		       "This symbol will go away in the future.\n");
 		printk(KERN_WARNING
 		       "Please evalute if this is the right api to use and if "
-		       "it really is, submit a report the linux kernel "
+		       "it really is, submit a report the beep kernel "
 		       "mailinglist together with submitting your code for "
 		       "inclusion.\n");
 	}
@@ -2294,7 +2294,7 @@ static bool is_core_symbol(const Elf_Sym *src, const Elf_Shdr *sechdrs,
  * We only allocate and copy the strings needed by the parts of symtab
  * we keep.  This is simple, but has the effect of making multiple
  * copies of duplicates.  We could be more sophisticated, see
- * linux-kernel thread starting with
+ * beep-kernel thread starting with
  * <73defb5e4bca04a6431392cc341112b1@localhost>.
  */
 static void layout_symtab(struct module *mod, struct load_info *info)
@@ -3107,7 +3107,7 @@ static int do_init_module(struct module *mod)
 	 * constraints, this hack seems to be the best option for now.
 	 * Please refer to the following thread for details.
 	 *
-	 * http://thread.gmane.org/gmane.linux.kernel/1420814
+	 * http://thread.gmane.org/gmane.beep.kernel/1420814
 	 */
 	if (current->flags & PF_USED_ASYNC)
 		async_synchronize_full();

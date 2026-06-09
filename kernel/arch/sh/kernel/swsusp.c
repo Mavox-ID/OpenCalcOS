@@ -8,9 +8,9 @@
  * for more details.
  */
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/suspend.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/suspend.h>
 #include <asm/suspend.h>
 #include <asm/sections.h>
 #include <asm/tlbflush.h>

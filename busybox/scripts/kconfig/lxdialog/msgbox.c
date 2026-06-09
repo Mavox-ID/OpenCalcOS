@@ -2,7 +2,7 @@
  *  msgbox.c -- implements the message box and info box
  *
  *  ORIGINAL AUTHOR: Savio Lam (lam836@cs.cuhk.hk)
- *  MODIFIED FOR LINUX KERNEL CONFIG BY: William Roadcap (roadcapw@cfw.com)
+ *  MODIFIED FOR BEEP KERNEL CONFIG BY: William Roadcap (roadcapw@cfw.com)
  *
  *  This program is free software; you can redistribute it and/or
  *  modify it under the terms of the GNU General Public License

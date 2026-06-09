@@ -17,13 +17,13 @@
  * supplies basic routines for configuring and controlling hardware coherency
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
-#include <linux/smp.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/of_address.h>
+#include <beep/io.h>
+#include <beep/smp.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
 #include <asm/smp_plat.h>
 #include "armada-370-xp.h"
 

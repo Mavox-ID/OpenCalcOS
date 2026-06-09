@@ -4,7 +4,7 @@
  *		 Denis Joseph Barrow,
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/sigp.h>
 

@@ -3,20 +3,20 @@
  * Licensed under the GPL
  */
 
-#include <linux/posix_types.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/kdev_t.h>
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/hardirq.h>
+#include <beep/posix_types.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/types.h>
+#include <beep/major.h>
+#include <beep/kdev_t.h>
+#include <beep/console.h>
+#include <beep/string.h>
+#include <beep/sched.h>
+#include <beep/list.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/hardirq.h>
 #include <asm/current.h>
 #include <asm/irq.h>
 #include "stdio_console.h"

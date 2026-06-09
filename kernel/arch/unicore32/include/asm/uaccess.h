@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/asm/uaccess.h
+ * beep/arch/unicore32/include/asm/uaccess.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -12,8 +12,8 @@
 #ifndef __UNICORE_UACCESS_H__
 #define __UNICORE_UACCESS_H__
 
-#include <linux/thread_info.h>
-#include <linux/errno.h>
+#include <beep/thread_info.h>
+#include <beep/errno.h>
 
 #include <asm/memory.h>
 

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/board-omap3evm.c
+ * beep/arch/arm/mach-omap2/board-omap3evm.c
  *
  * Copyright (C) 2008 Texas Instruments
  *
@@ -12,43 +12,43 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/leds.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/gpio.h>
+#include <beep/input.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/leds.h>
+#include <beep/interrupt.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/nand.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/nand.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/i2c/twl.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/musb.h>
-#include <linux/usb/nop-usb-xceiv.h>
-#include <linux/smsc911x.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/ads7846.h>
+#include <beep/i2c/twl.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/musb.h>
+#include <beep/usb/nop-usb-xceiv.h>
+#include <beep/smsc911x.h>
 
-#include <linux/wl12xx.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/mmc/host.h>
-#include <linux/export.h>
+#include <beep/wl12xx.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
+#include <beep/mmc/host.h>
+#include <beep/export.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 
-#include <linux/platform_data/mtd-nand-omap2.h>
+#include <beep/platform_data/mtd-nand-omap2.h>
 #include "common.h"
-#include <linux/platform_data/spi-omap2-mcspi.h>
+#include <beep/platform_data/spi-omap2-mcspi.h>
 #include <video/omapdss.h>
 #include <video/omap-panel-tfp410.h>
 

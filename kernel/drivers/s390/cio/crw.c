@@ -8,10 +8,10 @@
  *		 Heiko Carstens <heiko.carstens@de.ibm.com>,
  */
 
-#include <linux/mutex.h>
-#include <linux/kthread.h>
-#include <linux/init.h>
-#include <linux/wait.h>
+#include <beep/mutex.h>
+#include <beep/kthread.h>
+#include <beep/init.h>
+#include <beep/wait.h>
 #include <asm/crw.h>
 #include <asm/ctl_reg.h>
 
@@ -78,7 +78,7 @@ repeat:
 
 			printk(KERN_WARNING"%s: Code does not support more "
 			       "than two chained crws; please report to "
-			       "linux390@de.ibm.com!\n", __func__);
+			       "beep390@de.ibm.com!\n", __func__);
 			ccode = stcrw(&tmp_crw);
 			printk(KERN_WARNING"%s: crw reports slct=%d, oflw=%d, "
 			       "chn=%d, rsc=%X, anc=%d, erc=%X, rsid=%X\n",

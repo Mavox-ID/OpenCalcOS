@@ -5,12 +5,12 @@
  *
  * Use and redistribute under the terms of the GNU GPL v2.
  */
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
 #include <asm/prom.h>
 #include <asm/pmac_low_i2c.h>
 

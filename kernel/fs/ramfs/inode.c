@@ -1,10 +1,10 @@
 /*
- * Resizable simple ram filesystem for Linux.
+ * Resizable simple ram filesystem for Beep.
  *
  * Copyright (C) 2000 Linus Torvalds.
  *               2000 Transmeta Corp.
  *
- * Usage limits added by David Gibson, Linuxcare Australia.
+ * Usage limits added by David Gibson, Beepcare Australia.
  * This file is released under the GPL.
  */
 
@@ -23,18 +23,18 @@
  * caches is sufficient.
  */
 
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/backing-dev.h>
-#include <linux/ramfs.h>
-#include <linux/sched.h>
-#include <linux/parser.h>
-#include <linux/magic.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/highmem.h>
+#include <beep/time.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/backing-dev.h>
+#include <beep/ramfs.h>
+#include <beep/sched.h>
+#include <beep/parser.h>
+#include <beep/magic.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 #include "internal.h"
 

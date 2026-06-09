@@ -23,9 +23,9 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
 
 #include "ver.h"
 

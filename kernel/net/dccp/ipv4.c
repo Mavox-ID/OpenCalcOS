@@ -10,12 +10,12 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/dccp.h>
-#include <linux/icmp.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/random.h>
+#include <beep/dccp.h>
+#include <beep/icmp.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/random.h>
 
 #include <net/icmp.h>
 #include <net/inet_common.h>
@@ -155,7 +155,7 @@ static inline void dccp_do_pmtu_discovery(struct sock *sk,
 	const struct dccp_sock *dp = dccp_sk(sk);
 
 	/* We are not interested in DCCP_LISTEN and request_socks (RESPONSEs
-	 * send out by Linux are always < 576bytes so they should go through
+	 * send out by Beep are always < 576bytes so they should go through
 	 * unfragmented).
 	 */
 	if (sk->sk_state == DCCP_LISTEN)
@@ -246,7 +246,7 @@ static void dccp_v4_err(struct sk_buff *skb, u32 info)
 	 * servers this needs to be solved differently.
 	 */
 	if (sock_owned_by_user(sk))
-		NET_INC_STATS_BH(net, LINUX_MIB_LOCKDROPPEDICMPS);
+		NET_INC_STATS_BH(net, BEEP_MIB_LOCKDROPPEDICMPS);
 
 	if (sk->sk_state == DCCP_CLOSED)
 		goto out;
@@ -255,7 +255,7 @@ static void dccp_v4_err(struct sk_buff *skb, u32 info)
 	seq = dccp_hdr_seq(dh);
 	if ((1 << sk->sk_state) & ~(DCCPF_REQUESTING | DCCPF_LISTEN) &&
 	    !between48(seq, dp->dccps_awl, dp->dccps_awh)) {
-		NET_INC_STATS_BH(net, LINUX_MIB_OUTOFWINDOWICMPS);
+		NET_INC_STATS_BH(net, BEEP_MIB_OUTOFWINDOWICMPS);
 		goto out;
 	}
 
@@ -306,7 +306,7 @@ static void dccp_v4_err(struct sk_buff *skb, u32 info)
 
 		if (!between48(seq, dccp_rsk(req)->dreq_iss,
 				    dccp_rsk(req)->dreq_gss)) {
-			NET_INC_STATS_BH(net, LINUX_MIB_OUTOFWINDOWICMPS);
+			NET_INC_STATS_BH(net, BEEP_MIB_OUTOFWINDOWICMPS);
 			goto out;
 		}
 		/*
@@ -342,7 +342,7 @@ static void dccp_v4_err(struct sk_buff *skb, u32 info)
 	 * Note, that in modern internet, where routing is unreliable
 	 * and in each dark corner broken firewalls sit, sending random
 	 * errors ordered by their masters even this two messages finally lose
-	 * their original sense (even Linux sends invalid PORT_UNREACHs)
+	 * their original sense (even Beep sends invalid PORT_UNREACHs)
 	 *
 	 * Now we are in compliance with RFCs.
 	 *							--ANK (980905)
@@ -432,11 +432,11 @@ struct sock *dccp_v4_request_recv_sock(struct sock *sk, struct sk_buff *skb,
 	return newsk;
 
 exit_overflow:
-	NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_LISTENOVERFLOWS);
+	NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_LISTENOVERFLOWS);
 exit_nonewsk:
 	dst_release(dst);
 exit:
-	NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_LISTENDROPS);
+	NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_LISTENDROPS);
 	return NULL;
 put_and_exit:
 	inet_csk_prepare_forced_close(newsk);

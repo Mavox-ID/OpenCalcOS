@@ -1,21 +1,21 @@
 /*
  * arch/sh/drivers/pci/ops-titan.c
  *
- * Ported to new API by Paul Mundt <lethal@linux-sh.org>
+ * Ported to new API by Paul Mundt <lethal@beep-sh.org>
  *
  * Modified from ops-snapgear.c written by  David McCullough
  * Highly leveraged from pci-bigsur.c, written by Dustin McIntire.
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See beep/COPYING for more information.
  *
  * PCI initialization for the Titan boards
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/io.h>
 #include <mach/titan.h>
 #include "pci-sh4.h"
 

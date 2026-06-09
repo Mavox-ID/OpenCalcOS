@@ -20,21 +20,21 @@
  * Geert Uytterhoeven.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
-#include <linux/xilinxfb.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
+#include <beep/of_address.h>
+#include <beep/io.h>
+#include <beep/xilinxfb.h>
+#include <beep/slab.h>
 
 #ifdef CONFIG_PPC_DCR
 #include <asm/dcr.h>

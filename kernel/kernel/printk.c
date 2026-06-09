@@ -1,5 +1,5 @@
 /*
- *  linux/kernel/printk.c
+ *  beep/kernel/printk.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -16,32 +16,32 @@
  *	01Mar01 Andrew Morton
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/nmi.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>			/* For in_interrupt() */
-#include <linux/delay.h>
-#include <linux/smp.h>
-#include <linux/security.h>
-#include <linux/bootmem.h>
-#include <linux/memblock.h>
-#include <linux/syscalls.h>
-#include <linux/kexec.h>
-#include <linux/kdb.h>
-#include <linux/ratelimit.h>
-#include <linux/kmsg_dump.h>
-#include <linux/syslog.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/rculist.h>
-#include <linux/poll.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/jiffies.h>
+#include <beep/nmi.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/interrupt.h>			/* For in_interrupt() */
+#include <beep/delay.h>
+#include <beep/smp.h>
+#include <beep/security.h>
+#include <beep/bootmem.h>
+#include <beep/memblock.h>
+#include <beep/syscalls.h>
+#include <beep/kexec.h>
+#include <beep/kdb.h>
+#include <beep/ratelimit.h>
+#include <beep/kmsg_dump.h>
+#include <beep/syslog.h>
+#include <beep/cpu.h>
+#include <beep/notifier.h>
+#include <beep/rculist.h>
+#include <beep/poll.h>
 
 #include <asm/uaccess.h>
 

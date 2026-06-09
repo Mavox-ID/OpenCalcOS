@@ -8,14 +8,14 @@
  * Copyright (C) 1992 Linus Torvalds
  * Copyright (C) 1994 - 2000 Ralf Baechle
  */
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/syscore_ops.h>
-#include <linux/irq.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/syscore_ops.h>
+#include <beep/irq.h>
 
 #include <asm/i8259.h>
 #include <asm/io.h>
@@ -208,7 +208,7 @@ spurious_8259A_irq:
 		atomic_inc(&irq_err_count);
 		/*
 		 * Theoretically we do not have to handle this IRQ,
-		 * but in Linux this does not cause problems and is
+		 * but in Beep this does not cause problems and is
 		 * simpler for us.
 		 */
 		goto handle_real_irq;

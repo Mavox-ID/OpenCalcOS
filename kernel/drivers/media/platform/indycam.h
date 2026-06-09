@@ -1,7 +1,7 @@
 /*
  *  indycam.h - Silicon Graphics IndyCam digital camera driver
  *
- *  Copyright (C) 2003 Ladislav Michl <ladis@linux-mips.org>
+ *  Copyright (C) 2003 Ladislav Michl <ladis@beep-mips.org>
  *  Copyright (C) 2004,2005 Mikael Nousiainen <tmnousia@cc.hut.fi>
  *
  *  This program is free software; you can redistribute it and/or modify

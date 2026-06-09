@@ -16,25 +16,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/lapb.h>
-#include <linux/init.h>
-#include <linux/rtnetlink.h>
-#include <linux/compat.h>
-#include <linux/slab.h>
+#include <beep/uaccess.h>
+#include <beep/bitops.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/in.h>
+#include <beep/tty.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
+#include <beep/lapb.h>
+#include <beep/init.h>
+#include <beep/rtnetlink.h>
+#include <beep/compat.h>
+#include <beep/slab.h>
 #include <net/x25device.h>
 #include "x25_asy.h"
 

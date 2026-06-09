@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/acorn/scsi/powertec.c
+ *  beep/drivers/acorn/scsi/powertec.c
  *
  *  Copyright (C) 1997-2005 Russell King
  *
@@ -7,16 +7,16 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
+#include <beep/proc_fs.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/dma.h>
 #include <asm/ecard.h>

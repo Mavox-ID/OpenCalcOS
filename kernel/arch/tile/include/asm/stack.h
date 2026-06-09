@@ -15,8 +15,8 @@
 #ifndef _ASM_TILE_STACK_H
 #define _ASM_TILE_STACK_H
 
-#include <linux/types.h>
-#include <linux/sched.h>
+#include <beep/types.h>
+#include <beep/sched.h>
 #include <asm/backtrace.h>
 #include <asm/page.h>
 #include <hv/hypervisor.h>

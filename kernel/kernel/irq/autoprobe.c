@@ -1,16 +1,16 @@
 /*
- * linux/kernel/irq/autoprobe.c
+ * beep/kernel/irq/autoprobe.c
  *
  * Copyright (C) 1992, 1998-2004 Linus Torvalds, Ingo Molnar
  *
  * This file contains the interrupt probing code and driver APIs.
  */
 
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/async.h>
+#include <beep/irq.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/async.h>
 
 #include "internals.h"
 

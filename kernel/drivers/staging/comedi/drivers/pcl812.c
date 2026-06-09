@@ -108,13 +108,13 @@
  *	   3= 20V unipolar inputs
  */
 
-#include <linux/interrupt.h>
-#include <linux/gfp.h>
+#include <beep/interrupt.h>
+#include <beep/gfp.h>
 #include "../comedidev.h"
 
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
 #include <asm/dma.h>
 
 #include "comedi_fc.h"

@@ -1,35 +1,35 @@
 /*
- *  linux/arch/sparc64/kernel/setup.c
+ *  beep/arch/sparc64/kernel/setup.c
  *
  *  Copyright (C) 1995,1996  David S. Miller (davem@caip.rutgers.edu)
  *  Copyright (C) 1997       Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/ptrace.h>
 #include <asm/smp.h>
-#include <linux/user.h>
-#include <linux/screen_info.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/syscalls.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/inet.h>
-#include <linux/console.h>
-#include <linux/root_dev.h>
-#include <linux/interrupt.h>
-#include <linux/cpu.h>
-#include <linux/initrd.h>
-#include <linux/module.h>
+#include <beep/user.h>
+#include <beep/screen_info.h>
+#include <beep/delay.h>
+#include <beep/fs.h>
+#include <beep/seq_file.h>
+#include <beep/syscalls.h>
+#include <beep/kdev_t.h>
+#include <beep/major.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/inet.h>
+#include <beep/console.h>
+#include <beep/root_dev.h>
+#include <beep/interrupt.h>
+#include <beep/cpu.h>
+#include <beep/initrd.h>
+#include <beep/module.h>
 
 #include <asm/io.h>
 #include <asm/processor.h>

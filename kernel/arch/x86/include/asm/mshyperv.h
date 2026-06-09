@@ -1,7 +1,7 @@
 #ifndef _ASM_X86_MSHYPER_H
 #define _ASM_X86_MSHYPER_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/hyperv.h>
 
 struct ms_hyperv_info {

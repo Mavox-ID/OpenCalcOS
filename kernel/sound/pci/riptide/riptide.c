@@ -22,7 +22,7 @@
   History:
    - 02/15/2004 first release
    
-  This Driver is based on the OSS Driver version from Linuxant (riptide-0.6lnxtbeta03111100)
+  This Driver is based on the OSS Driver version from Beepant (riptide-0.6lnxtbeta03111100)
   credits from the original files:
   
   MODULE NAME:        cnxt_rt.h                       
@@ -49,7 +49,7 @@
   HISTORY:         Major Revision               Date        By
             -----------------------------     --------     -----
             Adopted from NT4 driver            6/22/99      OLD
-            Ported to Linux                    9/01/99      KNL
+            Ported to Beep                    9/01/99      KNL
 
   MODULE NAME:        rt_hw.c                       
   AUTHOR:             O. Druzhinin  (Transcribed by OLD)
@@ -65,7 +65,7 @@
             (A1) are coded
             Boot loader is included           05/07/98      CNL
             Redesigned for WDM                07/27/98      CNL
-            Redesigned for Linux              09/01/99      CNL
+            Redesigned for Beep              09/01/99      CNL
 
   MODULE NAME:        rt_hw.h
   AUTHOR:             C. Lazarev    (Transcribed by CNL)
@@ -88,17 +88,17 @@
             Adopted for Windows NT driver          01/20/98      CNL
 */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/gameport.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/wait.h>
+#include <beep/gameport.h>
+#include <beep/device.h>
+#include <beep/firmware.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 #include <asm/io.h>
 #include <sound/core.h>
 #include <sound/info.h>

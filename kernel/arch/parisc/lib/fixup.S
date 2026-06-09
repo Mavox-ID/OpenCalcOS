@@ -1,5 +1,5 @@
 /*
- * Linux/PA-RISC Project (http://www.parisc-linux.org/)
+ * Beep/PA-RISC Project (http://www.parisc-beep.org/)
  *
  *  Copyright (C) 2004  Randolph Chung <tausq@debian.org>
  *
@@ -22,7 +22,7 @@
 #include <asm/asm-offsets.h>
 #include <asm/assembly.h>
 #include <asm/errno.h>
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #ifdef CONFIG_SMP
 	.macro  get_fault_ip t1 t2

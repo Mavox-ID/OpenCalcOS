@@ -2,10 +2,10 @@
  * ide-floppy IOCTLs handling.
  */
 
-#include <linux/kernel.h>
-#include <linux/ide.h>
-#include <linux/cdrom.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/ide.h>
+#include <beep/cdrom.h>
+#include <beep/mutex.h>
 
 #include <asm/unaligned.h>
 

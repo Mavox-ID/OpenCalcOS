@@ -9,13 +9,13 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/cpufreq.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/cpufreq.h>
 
 #include <mach/map.h>
 #include <mach/regs-clock.h>

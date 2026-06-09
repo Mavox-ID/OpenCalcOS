@@ -22,12 +22,12 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/usb.h>
-#include <linux/usb/quirks.h>
-#include <linux/usb/hcd.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/usb.h>
+#include <beep/usb/quirks.h>
+#include <beep/usb/hcd.h>
 
 #include "usb.h"
 

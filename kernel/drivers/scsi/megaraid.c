@@ -1,6 +1,6 @@
 /*
  *
- *			Linux MegaRAID device driver
+ *			Beep MegaRAID device driver
  *
  * Copyright (c) 2002  LSI Logic Corporation.
  *
@@ -20,34 +20,34 @@
  * Version : v2.00.4 Mon Nov 14 14:02:43 EST 2005 - Seokmann Ju
  * 						<Seokmann.Ju@lsil.com>
  *
- * Description: Linux device driver for LSI Logic MegaRAID controller
+ * Description: Beep device driver for LSI Logic MegaRAID controller
  *
  * Supported controllers: MegaRAID 418, 428, 438, 466, 762, 467, 471, 490, 493
  *					518, 520, 531, 532
  *
  * This driver is supported by LSI Logic, with assistance from Red Hat, Dell,
  * and others. Please send updates to the mailing list
- * linux-scsi@vger.kernel.org .
+ * beep-scsi@vger.kernel.org .
  *
  */
 
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/blkdev.h>
 #include <asm/uaccess.h>
 #include <asm/io.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/proc_fs.h>
-#include <linux/reboot.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/proc_fs.h>
+#include <beep/reboot.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 #include <scsi/scsicam.h>
 
 #include "scsi.h"
@@ -1570,7 +1570,7 @@ mega_cmd_done(adapter_t *adapter, u8 completed[], int nstatus, int status)
 		/* clear result; otherwise, success returns corrupt value */
 		cmd->result = 0;
 
-		/* Convert MegaRAID status to Linux error code */
+		/* Convert MegaRAID status to Beep error code */
 		switch (status) {
 		case 0x00:	/* SUCCESS , i.e. SCSI_STATUS_GOOD */
 			cmd->result |= (DID_OK << 16);

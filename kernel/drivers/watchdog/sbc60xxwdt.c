@@ -1,5 +1,5 @@
 /*
- *	60xx Single Board Computer Watchdog Timer driver for Linux 2.2.x
+ *	60xx Single Board Computer Watchdog Timer driver for Beep 2.2.x
  *
  *	Based on acquirewdt.c by Alan Cox.
  *
@@ -39,7 +39,7 @@
  *                            added MODULE_AUTHOR and MODULE_DESCRIPTION info
  *
  *
- *  This WDT driver is different from the other Linux WDT
+ *  This WDT driver is different from the other Beep WDT
  *  drivers in the following ways:
  *  *)  The driver will ping the watchdog by itself, because this
  *      particular WDT has a very short timeout (one second) and it
@@ -50,20 +50,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/fs.h>
-#include <linux/ioport.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/timer.h>
+#include <beep/jiffies.h>
+#include <beep/miscdevice.h>
+#include <beep/watchdog.h>
+#include <beep/fs.h>
+#include <beep/ioport.h>
+#include <beep/notifier.h>
+#include <beep/reboot.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
 
 
 #define OUR_NAME "sbc60xxwdt"

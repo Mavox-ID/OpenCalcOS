@@ -7,11 +7,11 @@
  * Released under the term of the GNU GPL v2.
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/module.h>
 
 #include "windfarm_pid.h"
 

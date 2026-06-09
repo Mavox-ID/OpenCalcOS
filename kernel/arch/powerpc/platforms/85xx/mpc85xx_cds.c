@@ -11,25 +11,25 @@
  * option) any later version.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/reboot.h>
-#include <linux/pci.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/initrd.h>
-#include <linux/interrupt.h>
-#include <linux/fsl_devices.h>
-#include <linux/of_platform.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/reboot.h>
+#include <beep/pci.h>
+#include <beep/kdev_t.h>
+#include <beep/major.h>
+#include <beep/console.h>
+#include <beep/delay.h>
+#include <beep/seq_file.h>
+#include <beep/initrd.h>
+#include <beep/interrupt.h>
+#include <beep/fsl_devices.h>
+#include <beep/of_platform.h>
 
 #include <asm/pgtable.h>
 #include <asm/page.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/time.h>
 #include <asm/io.h>
 #include <asm/machdep.h>

@@ -1,13 +1,13 @@
 /*
-  File: linux/ext2_xattr.h
+  File: beep/ext2_xattr.h
 
   On-disk format of extended attributes for the ext2 filesystem.
 
   (C) 2001 Andreas Gruenbacher, <a.gruenbacher@computer.org>
 */
 
-#include <linux/init.h>
-#include <linux/xattr.h>
+#include <beep/init.h>
+#include <beep/xattr.h>
 
 /* Magic value in attribute blocks */
 #define EXT2_XATTR_MAGIC		0xEA020000

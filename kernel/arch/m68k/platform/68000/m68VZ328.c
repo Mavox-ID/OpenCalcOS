@@ -14,13 +14,13 @@
 
 /***************************************************************************/
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/kd.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/rtc.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/kd.h>
+#include <beep/netdevice.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/rtc.h>
 
 #include <asm/pgtable.h>
 #include <asm/machdep.h>

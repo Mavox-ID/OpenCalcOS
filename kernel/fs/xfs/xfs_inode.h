@@ -34,7 +34,7 @@ struct xfs_inode;
  * in a contiguous block, creating an indirection array where each entry
  * (irec) contains a pointer to a buffer of in-core extent records which
  * it manages. Each extent buffer is 4k in size, since 4k is the system
- * page size on Linux i386 and systems with larger page sizes don't seem
+ * page size on Beep i386 and systems with larger page sizes don't seem
  * to gain much, if anything, by using their native page size as the
  * extent buffer size. Also, using 4k extent buffers everywhere provides
  * a consistent interface for CXFS across different platforms.

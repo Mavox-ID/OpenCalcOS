@@ -1,36 +1,36 @@
 /*
- *  linux/fs/binfmt_aout.c
+ *  beep/fs/binfmt_aout.c
  *
  *  Copyright (C) 1991, 1992, 1996  Linus Torvalds
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/a.out.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/binfmts.h>
-#include <linux/personality.h>
-#include <linux/init.h>
-#include <linux/coredump.h>
-#include <linux/slab.h>
+#include <beep/time.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/a.out.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/string.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/stat.h>
+#include <beep/fcntl.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/binfmts.h>
+#include <beep/personality.h>
+#include <beep/init.h>
+#include <beep/coredump.h>
+#include <beep/slab.h>
 
 #include <asm/uaccess.h>
 #include <asm/cacheflush.h>
 #include <asm/a.out-core.h>
 
-static int load_aout_binary(struct linux_binprm *);
+static int load_aout_binary(struct beep_binprm *);
 static int load_aout_library(struct file*);
 
 #ifdef CONFIG_COREDUMP
@@ -115,7 +115,7 @@ end_coredump:
 #define aout_core_dump NULL
 #endif
 
-static struct linux_binfmt aout_format = {
+static struct beep_binfmt aout_format = {
 	.module		= THIS_MODULE,
 	.load_binary	= load_aout_binary,
 	.load_shlib	= load_aout_library,
@@ -143,7 +143,7 @@ static int set_brk(unsigned long start, unsigned long end)
  * memory and creates the pointer tables from them, and puts their
  * addresses on the "stack", returning the new stack pointer value.
  */
-static unsigned long __user *create_aout_tables(char __user *p, struct linux_binprm * bprm)
+static unsigned long __user *create_aout_tables(char __user *p, struct beep_binprm * bprm)
 {
 	char __user * __user *argv;
 	char __user * __user *envp;
@@ -201,7 +201,7 @@ static unsigned long __user *create_aout_tables(char __user *p, struct linux_bin
  * libraries.  There is no binary dependent code anywhere else.
  */
 
-static int load_aout_binary(struct linux_binprm * bprm)
+static int load_aout_binary(struct beep_binprm * bprm)
 {
 	struct pt_regs *regs = current_pt_regs();
 	struct exec ex;
@@ -246,7 +246,7 @@ static int load_aout_binary(struct linux_binprm * bprm)
 #ifdef __alpha__
 	SET_AOUT_PERSONALITY(bprm, ex);
 #else
-	set_personality(PER_LINUX);
+	set_personality(PER_BEEP);
 #endif
 	setup_new_exec(bprm);
 

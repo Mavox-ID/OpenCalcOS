@@ -21,15 +21,15 @@
  * The interrupt controller is located in the South Bridge a PIIX4 device
  * with two internal 82C95 interrupt controllers.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel_stat.h>
-#include <linux/kernel.h>
-#include <linux/random.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/kernel_stat.h>
+#include <beep/kernel.h>
+#include <beep/random.h>
 
 #include <asm/traps.h>
 #include <asm/i8259.h>

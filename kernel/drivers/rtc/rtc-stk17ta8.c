@@ -11,17 +11,17 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/bcd.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <beep/bcd.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/gfp.h>
+#include <beep/delay.h>
+#include <beep/jiffies.h>
+#include <beep/interrupt.h>
+#include <beep/rtc.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/module.h>
 
 #define DRV_VERSION "0.1"
 

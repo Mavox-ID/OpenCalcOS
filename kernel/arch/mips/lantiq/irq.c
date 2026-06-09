@@ -7,13 +7,13 @@
  * Copyright (C) 2010 Thomas Langer <thomas.langer@lantiq.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/irqdomain.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/sched.h>
+#include <beep/irqdomain.h>
+#include <beep/of_platform.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
 
 #include <asm/bootinfo.h>
 #include <asm/irq_cpu.h>

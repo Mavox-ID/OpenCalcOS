@@ -1,8 +1,8 @@
-/* linux/arch/arm/plat-samsung/dma.c
+/* beep/arch/arm/plat-samsung/dma.c
  *
  * Copyright (c) 2003-2009 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * S3C DMA core
  *
@@ -13,9 +13,9 @@
 
 struct s3c2410_dma_buf;
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/errno.h>
 
 #include <mach/dma.h>
 #include <mach/irqs.h>

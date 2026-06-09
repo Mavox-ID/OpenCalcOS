@@ -1,8 +1,8 @@
 #ifndef _KERNEL_EVENTS_INTERNAL_H
 #define _KERNEL_EVENTS_INTERNAL_H
 
-#include <linux/hardirq.h>
-#include <linux/uaccess.h>
+#include <beep/hardirq.h>
+#include <beep/uaccess.h>
 
 /* Buffer handling */
 

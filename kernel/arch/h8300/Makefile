@@ -33,8 +33,8 @@ ldflags-$(CONFIG_CPU_H8S)	:= -mh8300self
 KBUILD_CFLAGS += $(cflags-y)
 KBUILD_CFLAGS += -mint32 -fno-builtin
 KBUILD_CFLAGS += -g
-KBUILD_CFLAGS += -D__linux__
-KBUILD_CFLAGS += -DUTS_SYSNAME=\"uClinux\"
+KBUILD_CFLAGS += -D__beep__
+KBUILD_CFLAGS += -DUTS_SYSNAME=\"uCbeep\"
 KBUILD_AFLAGS += -DPLATFORM=$(PLATFORM) -DMODEL=$(MODEL) $(cflags-y)
 LDFLAGS += $(ldflags-y)
 
@@ -61,11 +61,11 @@ archmrproper:
 archclean:
 	$(Q)$(MAKE) $(clean)=$(boot)
 
-vmlinux.srec vmlinux.bin zCalc: vmlinux
+vmbeep.srec vmbeep.bin zCalc: vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 define archhelp
-  @echo  'vmlinux.bin  - Create raw binary'
-  @echo  'vmlinux.srec - Create srec binary'
+  @echo  'vmbeep.bin  - Create raw binary'
+  @echo  'vmbeep.srec - Create srec binary'
   @echo  'zCalc       - Compressed kernel image'
 endef

@@ -17,7 +17,7 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/usb.h>
+#include <beep/usb.h>
 #include <dvb_demux.h>
 #include <dvb_frontend.h>
 #include <dmxdev.h>

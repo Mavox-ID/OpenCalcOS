@@ -16,11 +16,11 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/bootmem.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_pdt.h>
+#include <beep/kernel.h>
+#include <beep/bootmem.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/of_pdt.h>
 #include <asm/olpc.h>
 #include <asm/olpc_ofw.h>
 

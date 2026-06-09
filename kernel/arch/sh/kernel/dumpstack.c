@@ -8,12 +8,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kallsyms.h>
-#include <linux/ftrace.h>
-#include <linux/debug_locks.h>
-#include <linux/kdebug.h>
-#include <linux/export.h>
-#include <linux/uaccess.h>
+#include <beep/kallsyms.h>
+#include <beep/ftrace.h>
+#include <beep/debug_locks.h>
+#include <beep/kdebug.h>
+#include <beep/export.h>
+#include <beep/uaccess.h>
 #include <asm/unwinder.h>
 #include <asm/stacktrace.h>
 

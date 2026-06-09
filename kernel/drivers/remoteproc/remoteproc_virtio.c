@@ -17,15 +17,15 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/export.h>
-#include <linux/remoteproc.h>
-#include <linux/virtio.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_ring.h>
-#include <linux/err.h>
-#include <linux/kref.h>
-#include <linux/slab.h>
+#include <beep/export.h>
+#include <beep/remoteproc.h>
+#include <beep/virtio.h>
+#include <beep/virtio_config.h>
+#include <beep/virtio_ids.h>
+#include <beep/virtio_ring.h>
+#include <beep/err.h>
+#include <beep/kref.h>
+#include <beep/slab.h>
 
 #include "remoteproc_internal.h"
 

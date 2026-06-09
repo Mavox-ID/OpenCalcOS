@@ -13,29 +13,29 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/spear_smi.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/param.h>
+#include <beep/platform_device.h>
+#include <beep/pm.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/spear_smi.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/wait.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
 
 /* SMI clock rate */
 #define SMI_MAX_CLOCK_FREQ	50000000 /* 50 MHz */

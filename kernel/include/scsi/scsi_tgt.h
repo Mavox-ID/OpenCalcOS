@@ -2,7 +2,7 @@
  * SCSI target definitions
  */
 
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 
 struct Scsi_Host;
 struct scsi_cmnd;

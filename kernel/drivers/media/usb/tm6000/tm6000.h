@@ -20,15 +20,15 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/videobuf-vmalloc.h>
 #include "tm6000-usb-isoc.h"
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
 #include <media/v4l2-device.h>
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 #include "dvb_demux.h"
 #include "dvb_frontend.h"
 #include "dmxdev.h"
@@ -211,7 +211,7 @@ struct tm6000_core {
 	/* extension */
 	struct list_head		devlist;
 
-	/* video for linux */
+	/* video for beep */
 	int				users;
 
 	/* various device info */

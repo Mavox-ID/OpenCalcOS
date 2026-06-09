@@ -24,16 +24,16 @@
  *              ahennessy@mvista.com
  *
  * Copyright (C) 2000-2001 Toshiba Corporation
- * Copyright (C) 2007 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2007 Ralf Baechle (ralf@beep-mips.org)
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
 #include <asm/reboot.h>
 #include <asm/txx9pio.h>
 #include <asm/txx9/generic.h>

@@ -32,7 +32,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  *
- * Intel Corporation <linux-wimax@intel.com>
+ * Intel Corporation <beep-wimax@intel.com>
  * Yanir Lubetkin <yanirx.lubetkin@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *  - Initial implementation
@@ -55,8 +55,8 @@
  *     i2400m_dev_reset_handle()
  *     i2400mu_rx_kick()
  */
-#include <linux/usb.h>
-#include <linux/slab.h>
+#include <beep/usb.h>
+#include <beep/slab.h>
 #include "i2400m-usb.h"
 
 

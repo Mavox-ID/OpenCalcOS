@@ -5,8 +5,8 @@
  * License terms: GNU General Public License (GPL) version 2
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_data/dma-ste-dma40.h>
+#include <beep/kernel.h>
+#include <beep/platform_data/dma-ste-dma40.h>
 
 #include "ste_dma40_ll.h"
 

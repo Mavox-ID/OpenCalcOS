@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-sa1100/irq.c
+ * beep/arch/arm/mach-sa1100/irq.c
  *
  * Copyright (C) 1999-2001 Nicolas Pitre
  *
@@ -9,13 +9,13 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/ioport.h>
-#include <linux/syscore_ops.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/ioport.h>
+#include <beep/syscore_ops.h>
 
 #include <mach/hardware.h>
 #include <mach/irqs.h>

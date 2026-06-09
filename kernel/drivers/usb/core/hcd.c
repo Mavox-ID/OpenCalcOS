@@ -22,26 +22,26 @@
  * Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/bcd.h>
-#include <linux/module.h>
-#include <linux/version.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/utsname.h>
-#include <linux/mm.h>
+#include <beep/bcd.h>
+#include <beep/module.h>
+#include <beep/version.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/completion.h>
+#include <beep/utsname.h>
+#include <beep/mm.h>
 #include <asm/io.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/mutex.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/mutex.h>
 #include <asm/irq.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
+#include <beep/platform_device.h>
+#include <beep/workqueue.h>
 
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
 
 #include "usb.h"
 
@@ -76,7 +76,7 @@
  * HISTORY:
  * 2002-02-21	Pull in most of the usb_bus support from usb.c; some
  *		associated cleanup.  "usb_hcd" still != "usb_bus".
- * 2001-12-12	Initial patch version for Linux 2.5.1 kernel.
+ * 2001-12-12	Initial patch version for Beep 2.5.1 kernel.
  */
 
 /*-------------------------------------------------------------------------*/
@@ -124,8 +124,8 @@ static inline int is_root_hub(struct usb_device *udev)
  */
 
 /*-------------------------------------------------------------------------*/
-#define KERNEL_REL	bin2bcd(((LINUX_VERSION_CODE >> 16) & 0x0ff))
-#define KERNEL_VER	bin2bcd(((LINUX_VERSION_CODE >> 8) & 0x0ff))
+#define KERNEL_REL	bin2bcd(((BEEP_VERSION_CODE >> 16) & 0x0ff))
+#define KERNEL_VER	bin2bcd(((BEEP_VERSION_CODE >> 8) & 0x0ff))
 
 /* usb 3.0 root hub device descriptor */
 static const u8 usb3_rh_dev_descriptor[18] = {
@@ -138,7 +138,7 @@ static const u8 usb3_rh_dev_descriptor[18] = {
 	0x03,       /*  __u8  bDeviceProtocol; USB 3.0 hub */
 	0x09,       /*  __u8  bMaxPacketSize0; 2^9 = 512 Bytes */
 
-	0x6b, 0x1d, /*  __le16 idVendor; Linux Foundation 0x1d6b */
+	0x6b, 0x1d, /*  __le16 idVendor; Beep Foundation 0x1d6b */
 	0x03, 0x00, /*  __le16 idProduct; device 0x0003 */
 	KERNEL_VER, KERNEL_REL, /*  __le16 bcdDevice */
 
@@ -159,7 +159,7 @@ static const u8 usb2_rh_dev_descriptor [18] = {
 	0x00,       /*  __u8  bDeviceProtocol; [ usb 2.0 no TT ] */
 	0x40,       /*  __u8  bMaxPacketSize0; 64 Bytes */
 
-	0x6b, 0x1d, /*  __le16 idVendor; Linux Foundation 0x1d6b */
+	0x6b, 0x1d, /*  __le16 idVendor; Beep Foundation 0x1d6b */
 	0x02, 0x00, /*  __le16 idProduct; device 0x0002 */
 	KERNEL_VER, KERNEL_REL, /*  __le16 bcdDevice */
 
@@ -182,7 +182,7 @@ static const u8 usb11_rh_dev_descriptor [18] = {
 	0x00,       /*  __u8  bDeviceProtocol; [ low/full speeds only ] */
 	0x40,       /*  __u8  bMaxPacketSize0; 64 Bytes */
 
-	0x6b, 0x1d, /*  __le16 idVendor; Linux Foundation 0x1d6b */
+	0x6b, 0x1d, /*  __le16 idVendor; Beep Foundation 0x1d6b */
 	0x01, 0x00, /*  __le16 idProduct; device 0x0001 */
 	KERNEL_VER, KERNEL_REL, /*  __le16 bcdDevice */
 

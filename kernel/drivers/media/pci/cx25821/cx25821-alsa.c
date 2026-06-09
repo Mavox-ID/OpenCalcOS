@@ -22,16 +22,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/vmalloc.h>
+#include <beep/dma-mapping.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
@@ -740,7 +740,7 @@ error:
 }
 
 /****************************************************************************
-				LINUX MODULE INIT
+				BEEP MODULE INIT
  ****************************************************************************/
 static void cx25821_audio_fini(void)
 {

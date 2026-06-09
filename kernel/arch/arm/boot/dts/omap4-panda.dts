@@ -24,13 +24,13 @@
 		heartbeat {
 			label = "pandaboard::status1";
 			gpios = <&gpio1 7 0>;
-			linux,default-trigger = "heartbeat";
+			beep,default-trigger = "heartbeat";
 		};
 
 		mmc {
 			label = "pandaboard::status2";
 			gpios = <&gpio1 8 0>;
-			linux,default-trigger = "mmc0";
+			beep,default-trigger = "mmc0";
 		};
 	};
 

@@ -1,7 +1,7 @@
 #ifndef _ASM_X86_LINKAGE_H
 #define _ASM_X86_LINKAGE_H
 
-#include <linux/stringify.h>
+#include <beep/stringify.h>
 
 #undef notrace
 #define notrace __attribute__((no_instrument_function))

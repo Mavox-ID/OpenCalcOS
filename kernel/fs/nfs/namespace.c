@@ -1,5 +1,5 @@
 /*
- * linux/fs/nfs/namespace.c
+ * beep/fs/nfs/namespace.c
  *
  * Copyright (C) 2005 Trond Myklebust <Trond.Myklebust@netapp.com>
  * - Modified by David Howells <dhowells@redhat.com>
@@ -7,16 +7,16 @@
  * NFS namespace
  */
 
-#include <linux/module.h>
-#include <linux/dcache.h>
-#include <linux/gfp.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/nfs_fs.h>
-#include <linux/string.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/vfs.h>
-#include <linux/sunrpc/gss_api.h>
+#include <beep/module.h>
+#include <beep/dcache.h>
+#include <beep/gfp.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/nfs_fs.h>
+#include <beep/string.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/vfs.h>
+#include <beep/sunrpc/gss_api.h>
 #include "internal.h"
 
 #define NFSDBG_FACILITY		NFSDBG_VFS

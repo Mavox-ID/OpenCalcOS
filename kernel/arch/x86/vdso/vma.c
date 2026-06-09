@@ -3,13 +3,13 @@
  * Copyright 2007 Andi Kleen, SUSE Labs.
  * Subject to the GPL, v.2
  */
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/elf.h>
+#include <beep/mm.h>
+#include <beep/err.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/random.h>
+#include <beep/elf.h>
 #include <asm/vsyscall.h>
 #include <asm/vgtod.h>
 #include <asm/proto.h>
@@ -115,7 +115,7 @@ static int __init init_vdso(void)
 }
 subsys_initcall(init_vdso);
 
-struct linux_binprm;
+struct beep_binprm;
 
 /* Put the vdso above the (randomized) stack with another randomized offset.
    This way there is no hole in the middle of address space.
@@ -148,7 +148,7 @@ static unsigned long vdso_addr(unsigned long start, unsigned len)
 
 /* Setup a VMA at program startup for the vsyscall page.
    Not called for compat tasks */
-static int setup_additional_pages(struct linux_binprm *bprm,
+static int setup_additional_pages(struct beep_binprm *bprm,
 				  int uses_interp,
 				  struct page **pages,
 				  unsigned size)
@@ -184,14 +184,14 @@ up_fail:
 	return ret;
 }
 
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct beep_binprm *bprm, int uses_interp)
 {
 	return setup_additional_pages(bprm, uses_interp, vdso_pages,
 				      vdso_size);
 }
 
 #ifdef CONFIG_X86_X32_ABI
-int x32_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int x32_setup_additional_pages(struct beep_binprm *bprm, int uses_interp)
 {
 	return setup_additional_pages(bprm, uses_interp, vdsox32_pages,
 				      vdsox32_size);

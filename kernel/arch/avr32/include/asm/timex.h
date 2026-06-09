@@ -9,9 +9,9 @@
 #define __ASM_AVR32_TIMEX_H
 
 /*
- * This is the frequency of the timer used for Linux's timer interrupt.
+ * This is the frequency of the timer used for Beep's timer interrupt.
  * The value should be defined as accurate as possible or under certain
- * circumstances Linux timekeeping might become inaccurate or fail.
+ * circumstances Beep timekeeping might become inaccurate or fail.
  *
  * For many system the exact clockrate of the timer isn't known but due to
  * the way this value is used we can get away with a wrong value as long

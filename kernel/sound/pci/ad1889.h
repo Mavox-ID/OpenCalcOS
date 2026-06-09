@@ -1,5 +1,5 @@
 /* Analog Devices 1889 audio driver
- * Copyright (C) 2004, Kyle McMartin <kyle@parisc-linux.org>
+ * Copyright (C) 2004, Kyle McMartin <kyle@parisc-beep.org>
  */
 
 #ifndef __AD1889_H__

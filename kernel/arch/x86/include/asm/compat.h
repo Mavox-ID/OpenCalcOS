@@ -4,8 +4,8 @@
 /*
  * Architecture specific compatibility types
  */
-#include <linux/types.h>
-#include <linux/sched.h>
+#include <beep/types.h>
+#include <beep/sched.h>
 #include <asm/processor.h>
 #include <asm/user32.h>
 #include <asm/unistd.h>

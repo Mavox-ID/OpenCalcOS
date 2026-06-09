@@ -21,11 +21,11 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/keyctl.h>
-#include <linux/key-type.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/keyctl.h>
+#include <beep/key-type.h>
 #include <keys/user-type.h>
 #include "cifspdu.h"
 #include "cifsglob.h"

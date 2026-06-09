@@ -1,15 +1,15 @@
 /*
  * Handle extern requests for shutdown, reboot and sysrq
  */
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/reboot.h>
-#include <linux/sysrq.h>
-#include <linux/stop_machine.h>
-#include <linux/freezer.h>
-#include <linux/syscore_ops.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/reboot.h>
+#include <beep/sysrq.h>
+#include <beep/stop_machine.h>
+#include <beep/freezer.h>
+#include <beep/syscore_ops.h>
+#include <beep/export.h>
 
 #include <xen/xen.h>
 #include <xen/xenbus.h>

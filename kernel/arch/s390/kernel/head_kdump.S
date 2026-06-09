@@ -2,7 +2,7 @@
  * S390 kdump lowlevel functions (new kernel)
  *
  * Copyright IBM Corp. 2011
- * Author(s): Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ * Author(s): Michael Holzheu <holzheu@beep.vnet.ibm.com>
  */
 
 #include <asm/sigp.h>

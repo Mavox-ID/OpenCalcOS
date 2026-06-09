@@ -2,7 +2,7 @@
  *  sata_via.c - VIA Serial ATA controllers
  *
  *  Maintained by:  Jeff Garzik <jgarzik@pobox.com>
- * 		   Please ALWAYS copy linux-ide@vger.kernel.org
+ * 		   Please ALWAYS copy beep-ide@vger.kernel.org
  *		   on emails.
  *
  *  Copyright 2003-2004 Red Hat, Inc.  All rights reserved.
@@ -33,17 +33,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/device.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <beep/libata.h>
 
 #define DRV_NAME	"sata_via"
 #define DRV_VERSION	"2.6"
@@ -592,8 +592,8 @@ static void svia_configure(struct pci_dev *pdev, int board_id)
 	 * 64DW.
 	 *
 	 * https://bugzilla.kernel.org/show_bug.cgi?id=15173
-	 * http://article.gmane.org/gmane.linux.ide/46352
-	 * http://thread.gmane.org/gmane.linux.kernel/1062139
+	 * http://article.gmane.org/gmane.beep.ide/46352
+	 * http://thread.gmane.org/gmane.beep.kernel/1062139
 	 */
 	if (board_id == vt6420 || board_id == vt6421) {
 		pci_read_config_byte(pdev, 0x52, &tmp8);

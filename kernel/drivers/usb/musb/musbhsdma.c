@@ -30,10 +30,10 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 #include "musb_core.h"
 #include "musbhsdma.h"
 

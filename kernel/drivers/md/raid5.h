@@ -1,8 +1,8 @@
 #ifndef _RAID5_H
 #define _RAID5_H
 
-#include <linux/raid/xor.h>
-#include <linux/dmaengine.h>
+#include <beep/raid/xor.h>
+#include <beep/dmaengine.h>
 
 /*
  *

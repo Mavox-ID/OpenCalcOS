@@ -8,7 +8,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/serial_reg.h>
+#include <beep/serial_reg.h>
 
 #define SERIAL_BASE	((unsigned char *)0xf0000be0)
 

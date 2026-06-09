@@ -155,7 +155,7 @@
 /*
 ** Include the IOCTL stuff
 */
-#include <linux/sockios.h>
+#include <beep/sockios.h>
 
 struct depca_ioctl {
 	unsigned short cmd;                /* Command to run */

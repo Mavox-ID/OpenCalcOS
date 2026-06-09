@@ -1,7 +1,7 @@
 #ifndef _ASM_SCORE_TLBFLUSH_H
 #define _ASM_SCORE_TLBFLUSH_H
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 /*
  * TLB flushing:

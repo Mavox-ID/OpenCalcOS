@@ -12,7 +12,7 @@
  */
 
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/processor.h>
 #include <asm/coprocessor.h>

@@ -9,8 +9,8 @@
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  */
-#include <linux/module.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/io.h>
 
 #include "iim.h"
 #include "hardware.h"

@@ -9,12 +9,12 @@
  * Fixed rate clock implementation
  */
 
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/of.h>
+#include <beep/clk-provider.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/of.h>
 
 /*
  * DOC: basic fixed-rate clock that cannot gate

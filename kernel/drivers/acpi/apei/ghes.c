@@ -4,10 +4,10 @@
  * Generic Hardware Error Source provides a way to report platform
  * hardware errors (such as that from chipset). It works in so called
  * "Firmware First" mode, that is, hardware errors are reported to
- * firmware firstly, then reported to Linux by firmware. This way,
+ * firmware firstly, then reported to Beep by firmware. This way,
  * some non-standard hardware error registers or non-standard hardware
  * link can be checked by firmware to produce more hardware error
- * information for Linux.
+ * information for Beep.
  *
  * For more information about Generic Hardware Error Source, please
  * refer to ACPI Specification version 4.0, section 17.3.2.6
@@ -29,25 +29,25 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/acpi_io.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/cper.h>
-#include <linux/kdebug.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/ratelimit.h>
-#include <linux/vmalloc.h>
-#include <linux/irq_work.h>
-#include <linux/llist.h>
-#include <linux/genalloc.h>
-#include <linux/pci.h>
-#include <linux/aer.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/acpi.h>
+#include <beep/acpi_io.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/timer.h>
+#include <beep/cper.h>
+#include <beep/kdebug.h>
+#include <beep/platform_device.h>
+#include <beep/mutex.h>
+#include <beep/ratelimit.h>
+#include <beep/vmalloc.h>
+#include <beep/irq_work.h>
+#include <beep/llist.h>
+#include <beep/genalloc.h>
+#include <beep/pci.h>
+#include <beep/aer.h>
 #include <acpi/apei.h>
 #include <acpi/hed.h>
 #include <asm/mce.h>
@@ -145,7 +145,7 @@ static DEFINE_RAW_SPINLOCK(ghes_nmi_lock);
 
 /*
  * Because the memory area used to transfer hardware error information
- * from BIOS to Linux can be determined only in NMI, IRQ or timer
+ * from BIOS to Beep can be determined only in NMI, IRQ or timer
  * handler, but general ioremap can not be used in atomic context, so
  * a special version of atomic ioremap is implemented for that.
  */

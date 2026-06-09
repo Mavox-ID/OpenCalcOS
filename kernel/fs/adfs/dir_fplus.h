@@ -1,5 +1,5 @@
 /*
- *  linux/fs/adfs/dir_fplus.h
+ *  beep/fs/adfs/dir_fplus.h
  *
  *  Copyright (C) 1999 Russell King
  *

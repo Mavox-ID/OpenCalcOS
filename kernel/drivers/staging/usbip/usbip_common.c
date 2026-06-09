@@ -18,13 +18,13 @@
  */
 
 #include <asm/byteorder.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
 #include <net/sock.h>
 
 #include "usbip_common.h"

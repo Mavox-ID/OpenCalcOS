@@ -5,16 +5,16 @@
  * Based on arch/arm/plat-s3c24xx/irq-pm.c,
  * Copyright (c) 2003,2004 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
 */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
 
 #include <plat/cpu.h>
 #include <plat/irqs.h>

@@ -20,12 +20,12 @@
  *
  * PROM library initialisation code.
  */
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
 
 #include <asm/bootinfo.h>
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/cacheflush.h>
 #include <asm/traps.h>
 

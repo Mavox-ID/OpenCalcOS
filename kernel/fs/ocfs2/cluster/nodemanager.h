@@ -30,8 +30,8 @@
 #include "ocfs2_nodemanager.h"
 
 /* This totally doesn't belong here. */
-#include <linux/configfs.h>
-#include <linux/rbtree.h>
+#include <beep/configfs.h>
+#include <beep/rbtree.h>
 
 enum o2nm_fence_method {
 	O2NM_FENCE_RESET	= 0,

@@ -24,13 +24,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/crc32.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <beep/crc32.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
 
 #include <asm/mach-bcm63xx/bcm963xx_tag.h>
 #include <asm/mach-bcm63xx/board_bcm963xx.h>
@@ -69,7 +69,7 @@ static int bcm63xx_parse_cfe_partitions(struct mtd_info *master,
 					struct mtd_partition **pparts,
 					struct mtd_part_parser_data *data)
 {
-	/* CFE, NVRAM and global Linux are always present */
+	/* CFE, NVRAM and global Beep are always present */
 	int nrparts = 3, curpart = 0;
 	struct bcm_tag *buf;
 	struct mtd_partition *parts;
@@ -192,8 +192,8 @@ static int bcm63xx_parse_cfe_partitions(struct mtd_info *master,
 	parts[curpart].size = nvramlen;
 	curpart++;
 
-	/* Global partition "linux" to make easy firmware upgrade */
-	parts[curpart].name = "linux";
+	/* Global partition "beep" to make easy firmware upgrade */
+	parts[curpart].name = "beep";
 	parts[curpart].offset = cfelen;
 	parts[curpart].size = master->size - cfelen - nvramlen;
 

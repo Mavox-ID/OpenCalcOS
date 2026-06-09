@@ -1,5 +1,5 @@
 /*
- *	linux/arch/alpha/kernel/pci_impl.h
+ *	beep/arch/alpha/kernel/pci_impl.h
  *
  * This file contains declarations and inline functions for interfacing
  * with the PCI initialization routines.

@@ -19,8 +19,8 @@
  * Place - Suite 330, Boston, MA 02111-1307 USA.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/smp.h>
+#include <beep/kvm_host.h>
+#include <beep/smp.h>
 #include <asm/sn/addrs.h>
 #include <asm/sn/clksupport.h>
 #include <asm/sn/shub_mmr.h>

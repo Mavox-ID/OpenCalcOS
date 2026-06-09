@@ -9,18 +9,18 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/pinctrl/machine.h>
+#include <beep/pinctrl/pinconf.h>
+#include <beep/pinctrl/pinctrl.h>
+#include <beep/pinctrl/pinmux.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 #include "core.h"
 #include "pinctrl-mxs.h"
 

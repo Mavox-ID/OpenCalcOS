@@ -3,16 +3,16 @@
  *  Copyright (C) 2001, 2002 Andi Kleen, SuSE Labs.
  *  Copyright (C) 2008-2009, Red Hat Inc., Ingo Molnar
  */
-#include <linux/magic.h>		/* STACK_END_MAGIC		*/
-#include <linux/sched.h>		/* test_thread_flag(), ...	*/
-#include <linux/kdebug.h>		/* oops_begin/end, ...		*/
-#include <linux/module.h>		/* search_exception_table	*/
-#include <linux/bootmem.h>		/* max_low_pfn			*/
-#include <linux/kprobes.h>		/* __kprobes, ...		*/
-#include <linux/mmiotrace.h>		/* kmmio_handler, ...		*/
-#include <linux/perf_event.h>		/* perf_sw_event		*/
-#include <linux/hugetlb.h>		/* hstate_index_to_shift	*/
-#include <linux/prefetch.h>		/* prefetchw			*/
+#include <beep/magic.h>		/* STACK_END_MAGIC		*/
+#include <beep/sched.h>		/* test_thread_flag(), ...	*/
+#include <beep/kdebug.h>		/* oops_begin/end, ...		*/
+#include <beep/module.h>		/* search_exception_table	*/
+#include <beep/bootmem.h>		/* max_low_pfn			*/
+#include <beep/kprobes.h>		/* __kprobes, ...		*/
+#include <beep/mmiotrace.h>		/* kmmio_handler, ...		*/
+#include <beep/perf_event.h>		/* perf_sw_event		*/
+#include <beep/hugetlb.h>		/* hstate_index_to_shift	*/
+#include <beep/prefetch.h>		/* prefetchw			*/
 
 #include <asm/traps.h>			/* dotraplinkage, ...		*/
 #include <asm/pgalloc.h>		/* pgd_*(), ...			*/

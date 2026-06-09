@@ -26,18 +26,18 @@
  * This also contains a couple of non-obvious setup and teardown pieces which
  * were implemented after days of debugging pain.
 :*/
-#include <linux/kernel.h>
-#include <linux/start_kernel.h>
-#include <linux/string.h>
-#include <linux/console.h>
-#include <linux/screen_info.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/cpu.h>
-#include <linux/lguest.h>
-#include <linux/lguest_launcher.h>
+#include <beep/kernel.h>
+#include <beep/start_kernel.h>
+#include <beep/string.h>
+#include <beep/console.h>
+#include <beep/screen_info.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/cpu.h>
+#include <beep/lguest.h>
+#include <beep/lguest_launcher.h>
 #include <asm/paravirt.h>
 #include <asm/param.h>
 #include <asm/page.h>
@@ -260,7 +260,7 @@ void lguest_arch_run_guest(struct lg_cpu *cpu)
 /*H:130
  * Now we've examined the hypercall code; our Guest can make requests.
  * Our Guest is usually so well behaved; it never tries to do things it isn't
- * allowed to, and uses hypercalls instead.  Unfortunately, Linux's paravirtual
+ * allowed to, and uses hypercalls instead.  Unfortunately, Beep's paravirtual
  * infrastructure isn't quite complete, because it doesn't contain replacements
  * for the Intel I/O instructions.  As a result, the Guest sometimes fumbles
  * across one during the boot process as it probes for various things which are

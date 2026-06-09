@@ -1,14 +1,14 @@
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/genhd.h>
-#include <linux/mutex.h>
-#include <linux/ide.h>
-#include <linux/hdreg.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/genhd.h>
+#include <beep/mutex.h>
+#include <beep/ide.h>
+#include <beep/hdreg.h>
+#include <beep/dmi.h>
+#include <beep/slab.h>
 
 #if !defined(CONFIG_DEBUG_BLOCK_EXT_DEVT)
 #define IDE_DISK_MINORS		(1 << PARTN_BITS)

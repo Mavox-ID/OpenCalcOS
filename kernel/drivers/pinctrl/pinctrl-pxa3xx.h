@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/pinctrl/pinctrl-pxa3xx.h
+ *  beep/drivers/pinctrl/pinctrl-pxa3xx.h
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License version 2 as
@@ -13,8 +13,8 @@
 
 #ifndef __PINCTRL_PXA3XX_H
 
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <beep/pinctrl/pinctrl.h>
+#include <beep/pinctrl/pinmux.h>
 
 #define ARRAY_AND_SIZE(x)	(x), ARRAY_SIZE(x)
 

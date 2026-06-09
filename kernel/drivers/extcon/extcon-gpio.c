@@ -20,16 +20,16 @@
  *
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/gpio.h>
-#include <linux/extcon.h>
-#include <linux/extcon/extcon_gpio.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/gpio.h>
+#include <beep/extcon.h>
+#include <beep/extcon/extcon_gpio.h>
 
 struct gpio_extcon_data {
 	struct extcon_dev edev;

@@ -21,13 +21,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/errno.h>
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mfd/tps6586x.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <beep/errno.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mfd/tps6586x.h>
+#include <beep/of_device.h>
+#include <beep/platform_device.h>
 
 /* GPIO control registers */
 #define TPS6586X_GPIOSET1	0x5d

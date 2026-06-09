@@ -154,7 +154,7 @@
  * If written to SPR_SIM_CONTROL, combined with a flag (shifted by 8),
  * indicates whether to allow data reads to remotely-cached
  * dirty cache lines to be cached locally without grinder warnings or
- * assertions (used by Linux kernel fast memcpy).
+ * assertions (used by Beep kernel fast memcpy).
  */
 #define SIM_CONTROL_ALLOW_MULTIPLE_CACHING 22
 

@@ -362,7 +362,7 @@ config KEXEC
 	  kexec is a system call that implements the ability to shutdown your
 	  current kernel, and to start another kernel.  It is like a reboot
 	  but it is independent of the system firmware.   And like a reboot
-	  you can start any kernel with it, not just Linux.
+	  you can start any kernel with it, not just Beep.
 
 	  The name comes from the similarity to the exec system call.
 
@@ -718,7 +718,7 @@ config FSL_GTM
 	help
 	  Freescale General-purpose Timers support
 
-# Yes MCA RS/6000s exist but Linux-PPC does not currently support any
+# Yes MCA RS/6000s exist but Beep-PPC does not currently support any
 config MCA
 	bool
 

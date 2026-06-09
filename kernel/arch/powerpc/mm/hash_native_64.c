@@ -12,11 +12,11 @@
 
 #undef DEBUG_LOW
 
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
-#include <linux/of.h>
-#include <linux/threads.h>
-#include <linux/smp.h>
+#include <beep/spinlock.h>
+#include <beep/bitops.h>
+#include <beep/of.h>
+#include <beep/threads.h>
+#include <beep/smp.h>
 
 #include <asm/machdep.h>
 #include <asm/mmu.h>

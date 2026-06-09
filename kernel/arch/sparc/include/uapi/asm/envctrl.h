@@ -11,7 +11,7 @@
 #ifndef _SPARC64_ENVCTRL_H
 #define _SPARC64_ENVCTRL_H 1
 
-#include <linux/ioctl.h>
+#include <beep/ioctl.h>
 
 /* Application note:
  *

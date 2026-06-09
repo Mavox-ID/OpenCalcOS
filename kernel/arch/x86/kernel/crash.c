@@ -7,16 +7,16 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/reboot.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
-#include <linux/elf.h>
-#include <linux/elfcore.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/smp.h>
+#include <beep/reboot.h>
+#include <beep/kexec.h>
+#include <beep/delay.h>
+#include <beep/elf.h>
+#include <beep/elfcore.h>
+#include <beep/module.h>
 
 #include <asm/processor.h>
 #include <asm/hardirq.h>
@@ -24,7 +24,7 @@
 #include <asm/hw_irq.h>
 #include <asm/apic.h>
 #include <asm/hpet.h>
-#include <linux/kdebug.h>
+#include <beep/kdebug.h>
 #include <asm/cpu.h>
 #include <asm/reboot.h>
 #include <asm/virtext.h>

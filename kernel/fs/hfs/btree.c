@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfs/btree.c
+ *  beep/fs/hfs/btree.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -8,9 +8,9 @@
  * Handle opening/closing btree
  */
 
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/log2.h>
+#include <beep/pagemap.h>
+#include <beep/slab.h>
+#include <beep/log2.h>
 
 #include "btree.h"
 

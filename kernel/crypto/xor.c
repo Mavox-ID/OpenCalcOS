@@ -1,5 +1,5 @@
 /*
- * xor.c : Multiple Devices driver for Linux
+ * xor.c : Multiple Devices driver for Beep
  *
  * Copyright (C) 1996, 1997, 1998, 1999, 2000,
  * Ingo Molnar, Matti Aarnio, Jakub Jelinek, Richard Henderson.
@@ -12,16 +12,16 @@
  * any later version.
  *
  * You should have received a copy of the GNU General Public License
- * (for example /usr/src/linux/COPYING); if not, write to the Free
+ * (for example /usr/src/beep/COPYING); if not, write to the Free
  * Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
 #define BH_TRACE 0
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/raid/xor.h>
-#include <linux/jiffies.h>
-#include <linux/preempt.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
+#include <beep/raid/xor.h>
+#include <beep/jiffies.h>
+#include <beep/preempt.h>
 #include <asm/xor.h>
 
 /* The xor routines to use.  */

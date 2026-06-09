@@ -18,7 +18,7 @@
  * Copyright (C) 2009 Frederic Weisbecker <fweisbec@gmail.com>
  *
  * Authors: Alan Stern <stern@rowland.harvard.edu>
- *          K.Prasad <prasad@linux.vnet.ibm.com>
+ *          K.Prasad <prasad@beep.vnet.ibm.com>
  *          Frederic Weisbecker <fweisbec@gmail.com>
  */
 
@@ -27,19 +27,19 @@
  * using the CPU's debug registers.
  */
 
-#include <linux/perf_event.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/irqflags.h>
-#include <linux/notifier.h>
-#include <linux/kallsyms.h>
-#include <linux/kprobes.h>
-#include <linux/percpu.h>
-#include <linux/kdebug.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/smp.h>
+#include <beep/perf_event.h>
+#include <beep/hw_breakpoint.h>
+#include <beep/irqflags.h>
+#include <beep/notifier.h>
+#include <beep/kallsyms.h>
+#include <beep/kprobes.h>
+#include <beep/percpu.h>
+#include <beep/kdebug.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/smp.h>
 
 #include <asm/hw_breakpoint.h>
 #include <asm/processor.h>

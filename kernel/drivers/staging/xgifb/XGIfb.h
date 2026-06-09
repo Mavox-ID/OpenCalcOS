@@ -1,5 +1,5 @@
-#ifndef _LINUX_XGIFB
-#define _LINUX_XGIFB
+#ifndef _BEEP_XGIFB
+#define _BEEP_XGIFB
 #include "vgatypes.h"
 #include "vb_struct.h"
 

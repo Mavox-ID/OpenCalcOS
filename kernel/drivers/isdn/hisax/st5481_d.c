@@ -10,10 +10,10 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/usb.h>
-#include <linux/netdevice.h>
+#include <beep/init.h>
+#include <beep/gfp.h>
+#include <beep/usb.h>
+#include <beep/netdevice.h>
 #include "st5481.h"
 
 static void ph_connect(struct st5481_adapter *adapter);

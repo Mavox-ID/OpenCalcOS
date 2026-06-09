@@ -9,15 +9,15 @@
  * Copyright (C) 2008 Wind River Systems
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/libata.h>
-#include <linux/hrtimer.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/libata.h>
+#include <beep/hrtimer.h>
+#include <beep/slab.h>
+#include <beep/irq.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/platform_device.h>
 #include <scsi/scsi_host.h>
 
 #include <asm/byteorder.h>

@@ -5,10 +5,10 @@
  *
  * This file is released under the GNU GPL v2.
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/uwb/umc.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/uwb/umc.h>
 
 static void umc_device_release(struct device *dev)
 {

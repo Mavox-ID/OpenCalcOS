@@ -24,7 +24,7 @@
 #include <gxio/common.h>
 #include <gxio/dma_queue.h>
 
-#include <linux/time.h>
+#include <beep/time.h>
 
 #include <arch/mpipe_def.h>
 #include <arch/mpipe_shm.h>
@@ -308,7 +308,7 @@ static inline unsigned int gxio_mpipe_idesc_get_l2_length(gxio_mpipe_idesc_t
 /* A context object used to manage mPIPE hardware resources. */
 typedef struct {
 
-	/* File descriptor for calling up to Linux (and thus the HV). */
+	/* File descriptor for calling up to Beep (and thus the HV). */
 	int fd;
 
 	/* The VA at which configuration registers are mapped. */

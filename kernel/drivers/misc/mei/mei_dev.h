@@ -1,6 +1,6 @@
 /*
  *
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) Beep driver
  * Copyright (c) 2003-2012, Intel Corporation.
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -17,10 +17,10 @@
 #ifndef _MEI_DEV_H_
 #define _MEI_DEV_H_
 
-#include <linux/types.h>
-#include <linux/watchdog.h>
-#include <linux/poll.h>
-#include <linux/mei.h>
+#include <beep/types.h>
+#include <beep/watchdog.h>
+#include <beep/poll.h>
+#include <beep/mei.h>
 #include "hw.h"
 
 /*

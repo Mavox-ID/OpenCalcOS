@@ -2,7 +2,7 @@
 
 /* $Id: aha1542.h,v 1.1 1992/07/24 06:27:38 root Exp root $
  *
- * Header file for the adaptec 1542 driver for Linux
+ * Header file for the adaptec 1542 driver for Beep
  *
  * $Log: aha1542.h,v $
  * Revision 1.1  1992/07/24  06:27:38  root
@@ -31,7 +31,7 @@
  *
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* I/O Port interface 4.2 */
 /* READ */

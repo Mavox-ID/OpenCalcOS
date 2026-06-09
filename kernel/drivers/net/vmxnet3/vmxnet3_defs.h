@@ -1,5 +1,5 @@
 /*
- * Linux driver for VMware's vmxnet3 ethernet NIC.
+ * Beep driver for VMware's vmxnet3 ethernet NIC.
  *
  * Copyright (C) 2008-2009, VMware, Inc. All Rights Reserved.
  *
@@ -367,7 +367,7 @@ enum {
 	VMXNET3_GOS_BITS_64     = 2,
 };
 
-#define VMXNET3_GOS_TYPE_LINUX	1
+#define VMXNET3_GOS_TYPE_BEEP	1
 
 
 struct Vmxnet3_GOSInfo {

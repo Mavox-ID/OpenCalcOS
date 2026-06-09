@@ -1,9 +1,9 @@
 /*
  *    Implements HPUX syscalls.
  *
- *    Copyright (C) 1999 Matthew Wilcox <willy with parisc-linux.org>
+ *    Copyright (C) 1999 Matthew Wilcox <willy with parisc-beep.org>
  *    Copyright (C) 2000 Michael Ang <mang with subcarrier.org>
- *    Copyright (C) 2000 John Marvin <jsm with parisc-linux.org>
+ *    Copyright (C) 2000 John Marvin <jsm with parisc-beep.org>
  *    Copyright (C) 2000 Philipp Rumpf
  *
  *    This program is free software; you can redistribute it and/or modify
@@ -21,13 +21,13 @@
  *    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/file.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/sched.h>
+#include <beep/file.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
 #include <asm/errno.h>
 #include <asm/uaccess.h>
 

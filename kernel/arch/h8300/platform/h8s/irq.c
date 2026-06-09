@@ -1,14 +1,14 @@
 /*
- * linux/arch/h8300/platform/h8s/ints_h8s.c
+ * beep/arch/h8300/platform/h8s/ints_h8s.c
  * Interrupt handling CPU variants
  *
  * Yoshinori Sato <ysato@users.sourceforge.jp>
  *
  */
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
 
 #include <asm/ptrace.h>
 #include <asm/traps.h>

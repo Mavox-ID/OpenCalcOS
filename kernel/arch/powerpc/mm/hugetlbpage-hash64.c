@@ -7,8 +7,8 @@
  * Copyright (C) 2002, Rohit Seth <rohit.seth@intel.com>
  */
 
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
+#include <beep/mm.h>
+#include <beep/hugetlb.h>
 #include <asm/pgtable.h>
 #include <asm/pgalloc.h>
 #include <asm/cacheflush.h>
@@ -25,7 +25,7 @@ int __hash_page_huge(unsigned long ea, unsigned long access, unsigned long vsid,
 
 	BUG_ON(shift != mmu_psize_defs[mmu_psize].shift);
 
-	/* Search the Linux page table for a match with va */
+	/* Search the Beep page table for a match with va */
 	vpn = hpt_vpn(ea, vsid, ssize);
 
 	/* At this point, we have a pte (old_pte) which can be used to build

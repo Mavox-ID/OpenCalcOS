@@ -1,5 +1,5 @@
 /*
- * linux/fs/ext3/xattr.c
+ * beep/fs/ext3/xattr.c
  *
  * Copyright (C) 2001-2003 Andreas Gruenbacher, <agruen@suse.de>
  *
@@ -51,8 +51,8 @@
  */
 
 #include "ext3.h"
-#include <linux/mbcache.h>
-#include <linux/quotaops.h>
+#include <beep/mbcache.h>
+#include <beep/quotaops.h>
 #include "xattr.h"
 #include "acl.h"
 

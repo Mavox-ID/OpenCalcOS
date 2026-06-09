@@ -39,14 +39,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/if_ether.h>
+#include <beep/can.h>
+#include <beep/can/dev.h>
+#include <beep/slab.h>
 #include <net/rtnetlink.h>
 
 static __initconst const char banner[] =

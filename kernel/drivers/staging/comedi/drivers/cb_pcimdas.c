@@ -2,7 +2,7 @@
     comedi/drivers/cb_pcimdas.c
     Comedi driver for Computer Boards PCIM-DAS1602/16
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -42,8 +42,8 @@ See http://www.mccdaq.com/PDFs/Manuals/pcim-das1602-16.pdf for more details.
 
 #include "../comedidev.h"
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
 
 #include "plx9052.h"
 #include "8255.h"

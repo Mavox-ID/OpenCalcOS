@@ -14,15 +14,15 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/of.h>
 
 /*
  * Touchscreen controller register offsets

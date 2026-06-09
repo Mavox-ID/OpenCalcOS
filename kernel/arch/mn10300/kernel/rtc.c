@@ -8,12 +8,12 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mc146818rtc.h>
-#include <linux/bcd.h>
-#include <linux/timex.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/mc146818rtc.h>
+#include <beep/bcd.h>
+#include <beep/timex.h>
 #include <asm/rtc-regs.h>
 #include <asm/rtc.h>
 

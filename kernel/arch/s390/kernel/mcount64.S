@@ -5,7 +5,7 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/asm-offsets.h>
 
 	.section .kprobes.text, "ax"

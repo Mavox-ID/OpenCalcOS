@@ -9,10 +9,10 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/slab.h>
-#include <linux/ptrace.h>
-#include <linux/kgdb.h>
-#include <linux/uaccess.h>
+#include <beep/slab.h>
+#include <beep/ptrace.h>
+#include <beep/kgdb.h>
+#include <beep/uaccess.h>
 #include <unit/leds.h>
 #include <unit/serial.h>
 #include <asm/debugger.h>

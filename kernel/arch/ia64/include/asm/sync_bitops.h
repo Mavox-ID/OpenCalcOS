@@ -2,7 +2,7 @@
 #define _ASM_IA64_SYNC_BITOPS_H
 
 /*
- * Copyright (C) 2008 Isaku Yamahata <yamahata at valinux co jp>
+ * Copyright (C) 2008 Isaku Yamahata <yamahata at vabeep co jp>
  *
  * Based on synch_bitops.h which Dan Magenhaimer wrote.
  *

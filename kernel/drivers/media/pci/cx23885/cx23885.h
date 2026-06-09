@@ -1,7 +1,7 @@
 /*
  *  Driver for the Conexant CX23885 PCIe bridge
  *
- *  Copyright (c) 2006 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2006 Steven Toth <stoth@beeptv.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -19,10 +19,10 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/pci.h>
-#include <linux/i2c.h>
-#include <linux/kdev_t.h>
-#include <linux/slab.h>
+#include <beep/pci.h>
+#include <beep/i2c.h>
+#include <beep/kdev_t.h>
+#include <beep/slab.h>
 
 #include <media/v4l2-device.h>
 #include <media/tuner.h>
@@ -35,7 +35,7 @@
 #include "cx23885-reg.h"
 #include "media/cx2341x.h"
 
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 
 #define CX23885_VERSION "0.0.3"
 

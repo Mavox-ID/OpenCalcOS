@@ -25,16 +25,16 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/usb.h>
-#include <linux/init.h>
-#include <linux/sound.h>
-#include <linux/spinlock.h>
-#include <linux/soundcard.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/proc_fs.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/usb.h>
+#include <beep/init.h>
+#include <beep/sound.h>
+#include <beep/spinlock.h>
+#include <beep/soundcard.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/proc_fs.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

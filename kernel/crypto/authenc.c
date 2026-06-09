@@ -15,13 +15,13 @@
 #include <crypto/internal/skcipher.h>
 #include <crypto/authenc.h>
 #include <crypto/scatterwalk.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/rtnetlink.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
 typedef u8 *(*authenc_ahash_t)(struct aead_request *req, unsigned int flags);
 

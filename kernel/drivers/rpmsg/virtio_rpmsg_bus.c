@@ -19,20 +19,20 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/virtio.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/rpmsg.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/virtio.h>
+#include <beep/virtio_ids.h>
+#include <beep/virtio_config.h>
+#include <beep/scatterlist.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/idr.h>
+#include <beep/jiffies.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
+#include <beep/rpmsg.h>
+#include <beep/mutex.h>
 
 /**
  * struct virtproc_info - virtual remote processor state
@@ -682,7 +682,7 @@ static void rpmsg_downref_sleepers(struct virtproc_info *vrp)
  *
  * Normally drivers shouldn't use this function directly; instead, drivers
  * should use the appropriate rpmsg_{try}send{to, _offchannel} API
- * (see include/linux/rpmsg.h).
+ * (see include/beep/rpmsg.h).
  *
  * Returns 0 on success and an appropriate error value on failure.
  */

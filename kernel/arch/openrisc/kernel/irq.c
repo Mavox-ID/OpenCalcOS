@@ -1,7 +1,7 @@
 /*
  * OpenRISC irq.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -14,14 +14,14 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/ftrace.h>
-#include <linux/irq.h>
-#include <linux/export.h>
-#include <linux/irqdomain.h>
-#include <linux/irqflags.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/of.h>
+#include <beep/ftrace.h>
+#include <beep/irq.h>
+#include <beep/export.h>
+#include <beep/irqdomain.h>
+#include <beep/irqflags.h>
 
 /* read interrupt enabled status */
 unsigned long arch_local_save_flags(void)

@@ -1,5 +1,5 @@
 /*
-   HIDP implementation for Linux Bluetooth stack (BlueZ).
+   HIDP implementation for Beep Bluetooth stack (BlueZ).
    Copyright (C) 2003-2004 Marcel Holtmann <marcel@holtmann.org>
 
    This program is free software; you can redistribute it and/or modify
@@ -20,8 +20,8 @@
    SOFTWARE IS DISCLAIMED.
 */
 
-#include <linux/export.h>
-#include <linux/file.h>
+#include <beep/export.h>
+#include <beep/file.h>
 
 #include "hidp.h"
 

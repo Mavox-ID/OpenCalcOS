@@ -40,11 +40,11 @@ the PCMCIA interface.
 			    /* #define LABPC_DEBUG *//*  enable debugging messages */
 #undef LABPC_DEBUG
 
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 #include "8255.h"
 

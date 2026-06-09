@@ -29,7 +29,7 @@
  *     Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  *     MA 02111-1307 USA
  *
- *     Linux-IrDA now supports four different types of IrDA sockets:
+ *     Beep-IrDA now supports four different types of IrDA sockets:
  *
  *     o SOCK_STREAM:    TinyTP connections with SAR disabled. The
  *                       max SDU size is 0 for conn. of this type
@@ -42,16 +42,16 @@
  *
  ********************************************************************/
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/net.h>
-#include <linux/irda.h>
-#include <linux/poll.h>
+#include <beep/capability.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/net.h>
+#include <beep/irda.h>
+#include <beep/poll.h>
 
 #include <asm/ioctls.h>		/* TIOCOUTQ, TIOCINQ */
 #include <asm/uaccess.h>

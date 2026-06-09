@@ -21,14 +21,14 @@
  *	2000-09-04	Henner Eisen	  dev_hold() / dev_put() for x25_neigh.
  */
 
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
+#include <beep/kernel.h>
+#include <beep/jiffies.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
 #include <asm/uaccess.h>
-#include <linux/init.h>
+#include <beep/init.h>
 #include <net/x25.h>
 
 LIST_HEAD(x25_neigh_list);
@@ -40,7 +40,7 @@ static void x25_transmit_restart_confirmation(struct x25_neigh *nb);
 static void x25_transmit_restart_request(struct x25_neigh *nb);
 
 /*
- *	Linux set/reset timer routines
+ *	Beep set/reset timer routines
  */
 static inline void x25_start_t20timer(struct x25_neigh *nb)
 {

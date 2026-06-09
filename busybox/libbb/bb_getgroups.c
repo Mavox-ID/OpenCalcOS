@@ -37,7 +37,7 @@ gid_t* FAST_FUNC bb_getgroups(int *ngroups, gid_t *group_array)
 			n = getgroups(0, group_array);
 			continue;
 		}
-		/* Some other error (should never happen on Linux) */
+		/* Some other error (should never happen on Beep) */
 		bb_simple_perror_msg_and_die("getgroups");
 	}
 

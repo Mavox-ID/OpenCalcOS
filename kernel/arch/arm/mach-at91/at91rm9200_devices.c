@@ -1,7 +1,7 @@
 /*
  * arch/arm/mach-at91/at91rm9200_devices.c
  *
- *  Copyright (C) 2005 Thibaut VARENE <varenet@parisc-linux.org>
+ *  Copyright (C) 2005 Thibaut VARENE <varenet@parisc-beep.org>
  *  Copyright (C) 2005 David Brownell
  *
  * This program is free software; you can redistribute it and/or modify
@@ -13,10 +13,10 @@
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 
-#include <linux/dma-mapping.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/i2c-gpio.h>
+#include <beep/dma-mapping.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/i2c-gpio.h>
 
 #include <mach/at91rm9200.h>
 #include <mach/at91rm9200_mc.h>

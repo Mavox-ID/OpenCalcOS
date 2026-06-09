@@ -342,6 +342,6 @@
 
 
 	chosen {
-		linux,stdout-path = "/soc/cpm/serial@91a00";
+		beep,stdout-path = "/soc/cpm/serial@91a00";
 	};
 };

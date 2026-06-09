@@ -25,17 +25,17 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kthread.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/irqdomain.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kthread.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/of.h>
+#include <beep/irqdomain.h>
 
-#include <linux/i2c/twl.h>
+#include <beep/i2c/twl.h>
 
 
 /*

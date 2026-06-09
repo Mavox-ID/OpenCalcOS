@@ -17,28 +17,28 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/utsname.h>
-#include <linux/initrd.h>
-#include <linux/console.h>
-#include <linux/bootmem.h>
-#include <linux/seq_file.h>
-#include <linux/screen_info.h>
-#include <linux/init.h>
-#include <linux/kexec.h>
-#include <linux/crash_dump.h>
-#include <linux/root_dev.h>
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/memblock.h>
-#include <linux/of_fdt.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/stddef.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/utsname.h>
+#include <beep/initrd.h>
+#include <beep/console.h>
+#include <beep/bootmem.h>
+#include <beep/seq_file.h>
+#include <beep/screen_info.h>
+#include <beep/init.h>
+#include <beep/kexec.h>
+#include <beep/crash_dump.h>
+#include <beep/root_dev.h>
+#include <beep/cpu.h>
+#include <beep/interrupt.h>
+#include <beep/smp.h>
+#include <beep/fs.h>
+#include <beep/proc_fs.h>
+#include <beep/memblock.h>
+#include <beep/of_fdt.h>
 
 #include <asm/cputype.h>
 #include <asm/elf.h>

@@ -9,9 +9,9 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sort.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sort.h>
 #include <asm/uaccess.h>
 
 #ifndef ARCH_HAS_SORT_EXTABLE

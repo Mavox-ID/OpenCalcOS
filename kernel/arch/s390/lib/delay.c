@@ -6,12 +6,12 @@
  *		 Heiko Carstens <heiko.carstens@de.ibm.com>,
  */
 
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/timex.h>
-#include <linux/module.h>
-#include <linux/irqflags.h>
-#include <linux/interrupt.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/timex.h>
+#include <beep/module.h>
+#include <beep/irqflags.h>
+#include <beep/interrupt.h>
 #include <asm/vtimer.h>
 #include <asm/div64.h>
 

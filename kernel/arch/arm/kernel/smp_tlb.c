@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/smp_tlb.c
+ *  beep/arch/arm/kernel/smp_tlb.c
  *
  *  Copyright (C) 2002 ARM Limited, All Rights Reserved.
  *
@@ -7,8 +7,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/preempt.h>
-#include <linux/smp.h>
+#include <beep/preempt.h>
+#include <beep/smp.h>
 
 #include <asm/smp_plat.h>
 #include <asm/tlbflush.h>

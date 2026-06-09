@@ -12,14 +12,14 @@
  */
 
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/kmsg_dump.h>
-#include <linux/ctype.h>
-#include <linux/zlib.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/kmsg_dump.h>
+#include <beep/ctype.h>
+#include <beep/zlib.h>
 #include <asm/uaccess.h>
 #include <asm/nvram.h>
 #include <asm/rtas.h>

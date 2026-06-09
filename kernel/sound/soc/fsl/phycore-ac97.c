@@ -10,10 +10,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/device.h>
+#include <beep/i2c.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

@@ -25,7 +25,7 @@
 #ifndef DLMCOMMON_H
 #define DLMCOMMON_H
 
-#include <linux/kref.h>
+#include <beep/kref.h>
 
 #define DLM_HB_NODE_DOWN_PRI     (0xf000000)
 #define DLM_HB_NODE_UP_PRI       (0x8000000)

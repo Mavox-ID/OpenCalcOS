@@ -13,11 +13,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/crypto.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/crypto.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 #include "internal.h"
 
 static int setkey_unaligned(struct crypto_tfm *tfm, const u8 *key,

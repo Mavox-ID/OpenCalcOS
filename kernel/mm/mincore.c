@@ -1,5 +1,5 @@
 /*
- *	linux/mm/mincore.c
+ *	beep/mm/mincore.c
  *
  * Copyright (C) 1994-2006  Linus Torvalds
  */
@@ -7,14 +7,14 @@
 /*
  * The mincore() system call.
  */
-#include <linux/pagemap.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/syscalls.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/hugetlb.h>
+#include <beep/pagemap.h>
+#include <beep/gfp.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/syscalls.h>
+#include <beep/swap.h>
+#include <beep/swapops.h>
+#include <beep/hugetlb.h>
 
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>

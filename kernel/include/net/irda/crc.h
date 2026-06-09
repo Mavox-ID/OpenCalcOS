@@ -14,8 +14,8 @@
 #ifndef IRDA_CRC_H
 #define IRDA_CRC_H
 
-#include <linux/types.h>
-#include <linux/crc-ccitt.h>
+#include <beep/types.h>
+#include <beep/crc-ccitt.h>
 
 #define INIT_FCS  0xffff   /* Initial FCS value */
 #define GOOD_FCS  0xf0b8   /* Good final FCS value */

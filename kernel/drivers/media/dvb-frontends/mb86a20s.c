@@ -16,7 +16,7 @@
  *   General Public License for more details.
  */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <asm/div64.h>
 
 #include "dvb_frontend.h"

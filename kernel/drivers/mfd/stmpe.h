@@ -8,11 +8,11 @@
 #ifndef __STMPE_H
 #define __STMPE_H
 
-#include <linux/device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/stmpe.h>
-#include <linux/printk.h>
-#include <linux/types.h>
+#include <beep/device.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/stmpe.h>
+#include <beep/printk.h>
+#include <beep/types.h>
 
 extern const struct dev_pm_ops stmpe_dev_pm_ops;
 

@@ -6,7 +6,7 @@
  *
  * Author       Karsten Keil
  *              based on the teles driver from Jan den Ouden
- * Copyright    by Karsten Keil      <keil@isdn4linux.de>
+ * Copyright    by Karsten Keil      <keil@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
@@ -22,8 +22,8 @@
 #include "hisax.h"
 #include "isdnl3.h"
 #include "l3dss1.h"
-#include <linux/ctype.h>
-#include <linux/slab.h>
+#include <beep/ctype.h>
+#include <beep/slab.h>
 
 extern char *HiSax_getrev(const char *revision);
 static const char *dss1_revision = "$Revision: 2.32.2.3 $";

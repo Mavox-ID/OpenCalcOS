@@ -3,20 +3,20 @@
    (C) 2000 Red Hat. GPL'd.
 */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
 
-#include <linux/mtd/xip.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/cfi.h>
-#include <linux/mtd/gen_probe.h>
+#include <beep/mtd/xip.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/cfi.h>
+#include <beep/mtd/gen_probe.h>
 
 //#define DEBUG_CFI
 

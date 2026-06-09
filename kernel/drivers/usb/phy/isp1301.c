@@ -10,8 +10,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
 
 #define DRV_NAME		"isp1301"
 

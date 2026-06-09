@@ -12,7 +12,7 @@
 #ifndef __ASM_CLKDEV_H
 #define __ASM_CLKDEV_H
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 #ifdef CONFIG_HAVE_MACH_CLKDEV
 #include <mach/clkdev.h>

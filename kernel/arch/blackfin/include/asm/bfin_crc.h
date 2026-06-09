@@ -53,9 +53,9 @@ struct crc_info {
 
 #ifdef __KERNEL__
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/miscdevice.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/miscdevice.h>
 
 struct crc_register {
 	u32 control;

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/cris/kernel/signal.c
+ *  beep/arch/cris/kernel/signal.c
  *
  *  Based on arch/i386/kernel/signal.c by
  *     Copyright (C) 1991, 1992  Linus Torvalds
@@ -13,16 +13,16 @@
  *
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/errno.h>
+#include <beep/wait.h>
+#include <beep/ptrace.h>
+#include <beep/unistd.h>
+#include <beep/stddef.h>
 
 #include <asm/processor.h>
 #include <asm/ucontext.h>
@@ -31,7 +31,7 @@
 
 #define DEBUG_SIG 0
 
-/* a syscall in Linux/CRIS is a break 13 instruction which is 2 bytes */
+/* a syscall in Beep/CRIS is a break 13 instruction which is 2 bytes */
 /* manipulate regs so that upon return, it will be re-executed */
 
 /* We rely on that pc points to the instruction after "break 13", so the

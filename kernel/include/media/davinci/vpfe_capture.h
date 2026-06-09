@@ -23,9 +23,9 @@
 
 /* Header files */
 #include <media/v4l2-dev.h>
-#include <linux/videodev2.h>
-#include <linux/clk.h>
-#include <linux/i2c.h>
+#include <beep/videodev2.h>
+#include <beep/clk.h>
+#include <beep/i2c.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-device.h>
 #include <media/videobuf-dma-contig.h>

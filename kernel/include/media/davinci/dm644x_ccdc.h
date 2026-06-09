@@ -123,7 +123,7 @@ struct ccdc_config_params_raw {
 
 
 #ifdef __KERNEL__
-#include <linux/io.h>
+#include <beep/io.h>
 /* Define to enable/disable video port */
 #define FP_NUM_BYTES		4
 /* Define for extra pixel/line and extra lines/frame */

@@ -12,8 +12,8 @@
  * Software Foundation; version 2 of the License.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include "tpci200.h"
 
 static const u16 tpci200_status_timeout[] = {

@@ -12,14 +12,14 @@
  *
  * Tracer plugins will chose a default from these clocks.
  */
-#include <linux/spinlock.h>
-#include <linux/irqflags.h>
-#include <linux/hardirq.h>
-#include <linux/module.h>
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/ktime.h>
-#include <linux/trace_clock.h>
+#include <beep/spinlock.h>
+#include <beep/irqflags.h>
+#include <beep/hardirq.h>
+#include <beep/module.h>
+#include <beep/percpu.h>
+#include <beep/sched.h>
+#include <beep/ktime.h>
+#include <beep/trace_clock.h>
 
 #include "trace.h"
 

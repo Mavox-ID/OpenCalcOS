@@ -32,14 +32,14 @@
 #ifndef __CHELSIO_COMMON_H
 #define __CHELSIO_COMMON_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mdio.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/ctype.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/mdio.h>
 #include "version.h"
 
 #define CH_ERR(adap, fmt, ...)   dev_err(&adap->pdev->dev, fmt, ##__VA_ARGS__)

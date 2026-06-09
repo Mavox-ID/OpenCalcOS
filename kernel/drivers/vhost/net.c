@@ -6,25 +6,25 @@
  * virtio-net server in host kernel.
  */
 
-#include <linux/compat.h>
-#include <linux/eventfd.h>
-#include <linux/vhost.h>
-#include <linux/virtio_net.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/rcupdate.h>
-#include <linux/file.h>
-#include <linux/slab.h>
+#include <beep/compat.h>
+#include <beep/eventfd.h>
+#include <beep/vhost.h>
+#include <beep/virtio_net.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
+#include <beep/rcupdate.h>
+#include <beep/file.h>
+#include <beep/slab.h>
 
-#include <linux/net.h>
-#include <linux/if_packet.h>
-#include <linux/if_arp.h>
-#include <linux/if_tun.h>
-#include <linux/if_macvlan.h>
-#include <linux/if_vlan.h>
+#include <beep/net.h>
+#include <beep/if_packet.h>
+#include <beep/if_arp.h>
+#include <beep/if_tun.h>
+#include <beep/if_macvlan.h>
+#include <beep/if_vlan.h>
 
 #include <net/sock.h>
 

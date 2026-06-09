@@ -4,14 +4,14 @@
  * This is really horribly ugly, and new architectures should just wire up
  * the individual syscalls instead.
  */
-#include <linux/unistd.h>
+#include <beep/unistd.h>
 
 #ifdef __ARCH_WANT_SYS_IPC
-#include <linux/errno.h>
-#include <linux/ipc.h>
-#include <linux/shm.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <beep/errno.h>
+#include <beep/ipc.h>
+#include <beep/shm.h>
+#include <beep/syscalls.h>
+#include <beep/uaccess.h>
 
 SYSCALL_DEFINE6(ipc, unsigned int, call, int, first, unsigned long, second,
 		unsigned long, third, void __user *, ptr, long, fifth)

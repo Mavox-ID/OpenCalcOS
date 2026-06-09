@@ -9,11 +9,11 @@
  * option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/bitops.h>
 
 #include <asm/mipsregs.h>
 

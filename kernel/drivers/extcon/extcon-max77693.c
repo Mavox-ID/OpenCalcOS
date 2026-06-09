@@ -15,18 +15,18 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/max77693.h>
-#include <linux/mfd/max77693-private.h>
-#include <linux/extcon.h>
-#include <linux/regmap.h>
-#include <linux/irqdomain.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/max77693.h>
+#include <beep/mfd/max77693-private.h>
+#include <beep/extcon.h>
+#include <beep/regmap.h>
+#include <beep/irqdomain.h>
 
 #define	DEV_NAME			"max77693-muic"
 

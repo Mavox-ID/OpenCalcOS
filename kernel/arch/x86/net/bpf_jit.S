@@ -7,7 +7,7 @@
  * as published by the Free Software Foundation; version 2
  * of the License.
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/dwarf2.h>
 
 /*

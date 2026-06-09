@@ -23,7 +23,7 @@
 #ifndef HD29L2_H
 #define HD29L2_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 struct hd29l2_config {
 	/*

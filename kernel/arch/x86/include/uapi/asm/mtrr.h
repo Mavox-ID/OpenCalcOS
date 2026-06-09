@@ -23,9 +23,9 @@
 #ifndef _UAPI_ASM_X86_MTRR_H
 #define _UAPI_ASM_X86_MTRR_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
-#include <linux/errno.h>
+#include <beep/types.h>
+#include <beep/ioctl.h>
+#include <beep/errno.h>
 
 #define	MTRR_IOCTL_BASE	'M'
 

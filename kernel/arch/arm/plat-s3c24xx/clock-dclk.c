@@ -1,8 +1,8 @@
-/* linux/arch/arm/plat-s3c24xx/clock-dclk.c
+/* beep/arch/arm/plat-s3c24xx/clock-dclk.c
  *
  * Copyright (c) 2004-2008 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -11,10 +11,10 @@
  * S3C24XX - definitions for DCLK and CLKOUT registers
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/clk.h>
+#include <beep/io.h>
 
 #include <mach/regs-clock.h>
 #include <mach/regs-gpio.h>

@@ -11,15 +11,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/mutex.h>
+#include <beep/fb.h>
+#include <beep/backlight.h>
+#include <beep/delay.h>
+#include <beep/dmi.h>
 
 #define KB3886_PARENT 0x64
 #define KB3886_IO 0x60

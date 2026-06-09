@@ -1,15 +1,15 @@
 /*
- * linux/fs/seq_file.c
+ * beep/fs/seq_file.c
  *
  * helper functions for making synthetic files from sequences of records.
  * initial implementation -- AV, Oct 2001.
  */
 
-#include <linux/fs.h>
-#include <linux/export.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/cred.h>
+#include <beep/fs.h>
+#include <beep/export.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/cred.h>
 
 #include <asm/uaccess.h>
 #include <asm/page.h>

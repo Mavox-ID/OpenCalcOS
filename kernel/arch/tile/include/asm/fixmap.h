@@ -19,9 +19,9 @@
 #include <asm/page.h>
 
 #ifndef __ASSEMBLY__
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #ifdef CONFIG_HIGHMEM
-#include <linux/threads.h>
+#include <beep/threads.h>
 #include <asm/kmap_types.h>
 #endif
 

@@ -12,12 +12,12 @@
  * escape value ESCAPE_CODE followed by an identifying code.
  */
 
-#include <linux/vmalloc.h>
-#include <linux/oprofile.h>
-#include <linux/sched.h>
-#include <linux/capability.h>
-#include <linux/dcookies.h>
-#include <linux/fs.h>
+#include <beep/vmalloc.h>
+#include <beep/oprofile.h>
+#include <beep/sched.h>
+#include <beep/capability.h>
+#include <beep/dcookies.h>
+#include <beep/fs.h>
 #include <asm/uaccess.h>
 
 #include "oprof.h"

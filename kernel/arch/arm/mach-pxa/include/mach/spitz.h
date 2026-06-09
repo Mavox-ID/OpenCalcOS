@@ -15,8 +15,8 @@
 #define __ASM_ARCH_SPITZ_H  1
 #endif
 
-#include <linux/fb.h>
-#include <linux/gpio.h>
+#include <beep/fb.h>
+#include <beep/gpio.h>
 
 /* Spitz/Akita GPIOs */
 

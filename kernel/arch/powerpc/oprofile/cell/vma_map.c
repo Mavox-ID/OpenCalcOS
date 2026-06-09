@@ -16,11 +16,11 @@
  * applications.
  */
 
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/elf.h>
-#include <linux/slab.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/uaccess.h>
+#include <beep/elf.h>
+#include <beep/slab.h>
 #include "pr_util.h"
 
 

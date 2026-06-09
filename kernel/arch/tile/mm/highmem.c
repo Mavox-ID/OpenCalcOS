@@ -12,9 +12,9 @@
  *   more details.
  */
 
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
+#include <beep/highmem.h>
+#include <beep/module.h>
+#include <beep/pagemap.h>
 #include <asm/homecache.h>
 
 #define kmap_get_pte(vaddr) \

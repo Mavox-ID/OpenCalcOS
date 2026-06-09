@@ -21,12 +21,12 @@
  */
 
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/clk.h>
+#include <beep/dma-mapping.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 #include <media/omap1_camera.h>
 #include <media/soc_camera.h>
@@ -34,7 +34,7 @@
 #include <media/videobuf-dma-contig.h>
 #include <media/videobuf-dma-sg.h>
 
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 
 
 #define DRIVER_NAME		"omap1-camera"

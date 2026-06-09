@@ -8,11 +8,11 @@
  * under the terms of the GNU General Public License version 2 as published by
  * the Free Software Foundation.
  */
-#include <linux/platform_device.h>
-#include <linux/uio_driver.h>
-#include <linux/stringify.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/platform_device.h>
+#include <beep/uio_driver.h>
+#include <beep/stringify.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #define DRIVER_NAME "uio_pdrv"
 

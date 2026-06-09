@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-sa1100/gpio.c
+ * beep/arch/arm/mach-sa1100/gpio.c
  *
  * Generic SA-1100 GPIO handling
  *
@@ -7,9 +7,9 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/module.h>
 
 #include <mach/hardware.h>
 #include <mach/irqs.h>

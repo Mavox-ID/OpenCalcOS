@@ -1,11 +1,11 @@
 /*
  *	UDP over IPv6
- *	Linux INET6 implementation
+ *	Beep INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *
- *	Based on linux/ipv4/udp.c
+ *	Based on beep/ipv4/udp.c
  *
  *	Fixes:
  *	Hideaki YOSHIFUJI	:	sin6_scope_id support
@@ -21,20 +21,20 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/ipv6.h>
-#include <linux/icmpv6.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/in6.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/ipv6.h>
+#include <beep/icmpv6.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 
 #include <net/ndisc.h>
@@ -46,8 +46,8 @@
 #include <net/ip6_checksum.h>
 #include <net/xfrm.h>
 
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #include <trace/events/skb.h>
 #include "udp_impl.h"
 

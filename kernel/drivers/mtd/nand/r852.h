@@ -7,11 +7,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/pci.h>
-#include <linux/completion.h>
-#include <linux/workqueue.h>
-#include <linux/mtd/nand.h>
-#include <linux/spinlock.h>
+#include <beep/pci.h>
+#include <beep/completion.h>
+#include <beep/workqueue.h>
+#include <beep/mtd/nand.h>
+#include <beep/spinlock.h>
 
 
 /* nand interface + ecc

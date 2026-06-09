@@ -28,25 +28,25 @@
  *	See net/ipx/ChangeLog.
  */
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/init.h>
-#include <linux/ipx.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/uio.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/termios.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/if_arp.h>
+#include <beep/if_ether.h>
+#include <beep/init.h>
+#include <beep/ipx.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/net.h>
+#include <beep/netdevice.h>
+#include <beep/uio.h>
+#include <beep/slab.h>
+#include <beep/skbuff.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/termios.h>
 
 #include <net/ipx.h>
 #include <net/p8022.h>

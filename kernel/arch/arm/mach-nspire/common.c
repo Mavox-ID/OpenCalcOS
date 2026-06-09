@@ -1,5 +1,5 @@
 /*
- *	linux/arch/arm/mach-nspire/common.c
+ *	beep/arch/arm/mach-nspire/common.c
  *
  *	Copyright (C) 2012 Daniel Tang <tangrs@tangrs.id.au>
  *
@@ -9,14 +9,14 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/clkdev.h>
-#include <linux/platform_device.h>
-#include <linux/usb/ehci_pdriver.h>
-#include <linux/usb/chipidea.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/clcd.h>
-#include <linux/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/clkdev.h>
+#include <beep/platform_device.h>
+#include <beep/usb/ehci_pdriver.h>
+#include <beep/usb/chipidea.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/clcd.h>
+#include <beep/dma-mapping.h>
 
 #include <mach/nspire_mmio.h>
 #include <mach/nspire_clock.h>

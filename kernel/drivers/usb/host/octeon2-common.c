@@ -6,9 +6,9 @@
  * Copyright (C) 2010, 2011 Cavium Networks
  */
 
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/delay.h>
 
 #include <asm/octeon/octeon.h>
 #include <asm/octeon/cvmx-uctlx-defs.h>

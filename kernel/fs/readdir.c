@@ -1,22 +1,22 @@
 /*
- *  linux/fs/readdir.c
+ *  beep/fs/readdir.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/stat.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/dirent.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/unistd.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/time.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/stat.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/dirent.h>
+#include <beep/security.h>
+#include <beep/syscalls.h>
+#include <beep/unistd.h>
 
 #include <asm/uaccess.h>
 
@@ -48,7 +48,7 @@ out:
 EXPORT_SYMBOL(vfs_readdir);
 
 /*
- * Traditional linux readdir() handling..
+ * Traditional beep readdir() handling..
  *
  * "count=1" is a special case, meaning that the buffer is one
  * dirent-structure in size and that the code can't handle more
@@ -58,7 +58,7 @@ EXPORT_SYMBOL(vfs_readdir);
 
 #ifdef __ARCH_WANT_OLD_READDIR
 
-struct old_linux_dirent {
+struct old_beep_dirent {
 	unsigned long	d_ino;
 	unsigned long	d_offset;
 	unsigned short	d_namlen;
@@ -66,7 +66,7 @@ struct old_linux_dirent {
 };
 
 struct readdir_callback {
-	struct old_linux_dirent __user * dirent;
+	struct old_beep_dirent __user * dirent;
 	int result;
 };
 
@@ -74,7 +74,7 @@ static int fillonedir(void * __buf, const char * name, int namlen, loff_t offset
 		      u64 ino, unsigned int d_type)
 {
 	struct readdir_callback * buf = (struct readdir_callback *) __buf;
-	struct old_linux_dirent __user * dirent;
+	struct old_beep_dirent __user * dirent;
 	unsigned long d_ino;
 
 	if (buf->result)
@@ -103,7 +103,7 @@ efault:
 }
 
 SYSCALL_DEFINE3(old_readdir, unsigned int, fd,
-		struct old_linux_dirent __user *, dirent, unsigned int, count)
+		struct old_beep_dirent __user *, dirent, unsigned int, count)
 {
 	int error;
 	struct fd f = fdget(fd);
@@ -129,7 +129,7 @@ SYSCALL_DEFINE3(old_readdir, unsigned int, fd,
  * New, all-improved, singing, dancing, iBCS2-compliant getdents()
  * interface. 
  */
-struct linux_dirent {
+struct beep_dirent {
 	unsigned long	d_ino;
 	unsigned long	d_off;
 	unsigned short	d_reclen;
@@ -137,8 +137,8 @@ struct linux_dirent {
 };
 
 struct getdents_callback {
-	struct linux_dirent __user * current_dir;
-	struct linux_dirent __user * previous;
+	struct beep_dirent __user * current_dir;
+	struct beep_dirent __user * previous;
 	int count;
 	int error;
 };
@@ -146,10 +146,10 @@ struct getdents_callback {
 static int filldir(void * __buf, const char * name, int namlen, loff_t offset,
 		   u64 ino, unsigned int d_type)
 {
-	struct linux_dirent __user * dirent;
+	struct beep_dirent __user * dirent;
 	struct getdents_callback * buf = (struct getdents_callback *) __buf;
 	unsigned long d_ino;
-	int reclen = ALIGN(offsetof(struct linux_dirent, d_name) + namlen + 2,
+	int reclen = ALIGN(offsetof(struct beep_dirent, d_name) + namlen + 2,
 		sizeof(long));
 
 	buf->error = -EINVAL;	/* only used if we fail.. */
@@ -187,10 +187,10 @@ efault:
 }
 
 SYSCALL_DEFINE3(getdents, unsigned int, fd,
-		struct linux_dirent __user *, dirent, unsigned int, count)
+		struct beep_dirent __user *, dirent, unsigned int, count)
 {
 	struct fd f;
-	struct linux_dirent __user * lastdirent;
+	struct beep_dirent __user * lastdirent;
 	struct getdents_callback buf;
 	int error;
 
@@ -221,8 +221,8 @@ SYSCALL_DEFINE3(getdents, unsigned int, fd,
 }
 
 struct getdents_callback64 {
-	struct linux_dirent64 __user * current_dir;
-	struct linux_dirent64 __user * previous;
+	struct beep_dirent64 __user * current_dir;
+	struct beep_dirent64 __user * previous;
 	int count;
 	int error;
 };
@@ -230,9 +230,9 @@ struct getdents_callback64 {
 static int filldir64(void * __buf, const char * name, int namlen, loff_t offset,
 		     u64 ino, unsigned int d_type)
 {
-	struct linux_dirent64 __user *dirent;
+	struct beep_dirent64 __user *dirent;
 	struct getdents_callback64 * buf = (struct getdents_callback64 *) __buf;
-	int reclen = ALIGN(offsetof(struct linux_dirent64, d_name) + namlen + 1,
+	int reclen = ALIGN(offsetof(struct beep_dirent64, d_name) + namlen + 1,
 		sizeof(u64));
 
 	buf->error = -EINVAL;	/* only used if we fail.. */
@@ -267,10 +267,10 @@ efault:
 }
 
 SYSCALL_DEFINE3(getdents64, unsigned int, fd,
-		struct linux_dirent64 __user *, dirent, unsigned int, count)
+		struct beep_dirent64 __user *, dirent, unsigned int, count)
 {
 	struct fd f;
-	struct linux_dirent64 __user * lastdirent;
+	struct beep_dirent64 __user * lastdirent;
 	struct getdents_callback64 buf;
 	int error;
 

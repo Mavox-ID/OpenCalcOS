@@ -24,7 +24,7 @@
 #ifndef _NILFS_PAGE_H
 #define _NILFS_PAGE_H
 
-#include <linux/buffer_head.h>
+#include <beep/buffer_head.h>
 #include "nilfs.h"
 
 /*

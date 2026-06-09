@@ -10,7 +10,7 @@
 #ifndef _FPU_ASM_H_
 #define _FPU_ASM_H_
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #define	EXCEPTION	FPU_exception
 

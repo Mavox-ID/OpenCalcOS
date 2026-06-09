@@ -20,17 +20,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/rc5t583.h>
-#include <linux/regmap.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/rc5t583.h>
+#include <beep/regmap.h>
 
 #define RICOH_ONOFFSEL_REG	0x10
 #define RICOH_SWCTL_REG		0x5E

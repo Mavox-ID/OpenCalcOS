@@ -9,18 +9,18 @@
  *
  */
 
-#include <linux/interrupt.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/sysfs.h>
-#include <linux/sched.h>
-#include <linux/poll.h>
+#include <beep/interrupt.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/spi/spi.h>
+#include <beep/sysfs.h>
+#include <beep/sched.h>
+#include <beep/poll.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
+#include <beep/iio/buffer.h>
 #include "../ring_hw.h"
 #include "sca3000.h"
 

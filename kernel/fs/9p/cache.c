@@ -20,12 +20,12 @@
  *
  */
 
-#include <linux/jiffies.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
+#include <beep/jiffies.h>
+#include <beep/file.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
 #include <net/9p/9p.h>
 
 #include "v9fs.h"

@@ -11,9 +11,9 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>
 

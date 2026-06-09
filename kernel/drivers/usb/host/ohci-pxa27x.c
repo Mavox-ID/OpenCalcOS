@@ -19,15 +19,15 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/device.h>
-#include <linux/signal.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
+#include <beep/device.h>
+#include <beep/signal.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/of_platform.h>
+#include <beep/of_gpio.h>
 #include <mach/hardware.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/usb-pxa3xx-ulpi.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/usb-pxa3xx-ulpi.h>
 
 /*
  * UHC: USB Host Controller (OHCI-like) register definitions

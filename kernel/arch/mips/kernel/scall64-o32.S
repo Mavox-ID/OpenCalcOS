@@ -13,7 +13,7 @@
  * to ABI64 calling convention.  64-bit syscalls are also processed
  * here for now.
  */
-#include <linux/errno.h>
+#include <beep/errno.h>
 #include <asm/asm.h>
 #include <asm/asmmacro.h>
 #include <asm/irqflags.h>
@@ -33,8 +33,8 @@ NESTED(handle_sys, PT_SIZE, sp)
 	.set	at
 	ld	t1, PT_EPC(sp)		# skip syscall on return
 
-	dsubu	t0, v0, __NR_O32_Linux	# check syscall number
-	sltiu	t0, t0, __NR_O32_Linux_syscalls + 1
+	dsubu	t0, v0, __NR_O32_Beep	# check syscall number
+	sltiu	t0, t0, __NR_O32_Beep_syscalls + 1
 	daddiu	t1, 4			# skip to next instruction
 	sd	t1, PT_EPC(sp)
 	beqz	t0, not_o32_scall
@@ -53,7 +53,7 @@ NESTED(handle_sys, PT_SIZE, sp)
 	sll	a3, a3, 0
 
 	dsll	t0, v0, 3		# offset into table
-	ld	t2, (sys_call_table - (__NR_O32_Linux * 8))(t0)
+	ld	t2, (sys_call_table - (__NR_O32_Beep * 8))(t0)
 
 	sd	a3, PT_R26(sp)		# save a3 for syscall restarting
 
@@ -163,8 +163,8 @@ not_o32_scall:
 	END(handle_sys)
 
 LEAF(sys32_syscall)
-	subu	t0, a0, __NR_O32_Linux	# check syscall number
-	sltiu	v0, t0, __NR_O32_Linux_syscalls + 1
+	subu	t0, a0, __NR_O32_Beep	# check syscall number
+	sltiu	v0, t0, __NR_O32_Beep_syscalls + 1
 	beqz	t0, einval		# do not recurse
 	dsll	t1, t0, 3
 	beqz	v0, einval

@@ -10,16 +10,16 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
-#include <linux/sunxi_timer.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
+#include <beep/io.h>
+#include <beep/sunxi_timer.h>
 
-#include <linux/irqchip/sunxi.h>
+#include <beep/irqchip/sunxi.h>
 
 #include <asm/hardware/vic.h>
 

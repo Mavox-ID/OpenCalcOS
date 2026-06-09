@@ -222,7 +222,7 @@ extern int iop3xx_get_init_atu(void);
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 void iop3xx_map_io(void);
 void iop_init_cp6_handler(void);

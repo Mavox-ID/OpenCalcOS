@@ -3,14 +3,14 @@
  * Ansteuerung ARCOFI 2165
  *
  * Author       Karsten Keil
- * Copyright    by Karsten Keil      <keil@isdn4linux.de>
+ * Copyright    by Karsten Keil      <keil@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
  */
 
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include "hisax.h"
 #include "isdnl1.h"
 #include "isac.h"

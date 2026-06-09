@@ -8,7 +8,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the Beep kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -35,25 +35,25 @@
  *                              Turned xenfs into a loadable module.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/uio.h>
-#include <linux/notifier.h>
-#include <linux/wait.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/uaccess.h>
-#include <linux/init.h>
-#include <linux/namei.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/uio.h>
+#include <beep/notifier.h>
+#include <beep/wait.h>
+#include <beep/fs.h>
+#include <beep/poll.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/mount.h>
+#include <beep/pagemap.h>
+#include <beep/uaccess.h>
+#include <beep/init.h>
+#include <beep/namei.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
 
 #include "xenbus_comms.h"
 

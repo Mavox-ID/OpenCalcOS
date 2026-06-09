@@ -1,5 +1,5 @@
 /*
- *  USB HID support for Linux
+ *  USB HID support for Beep
  *
  *  Copyright (c) 1999 Andreas Gal
  *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>
@@ -15,27 +15,27 @@
  * any later version.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/mm.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
 #include <asm/unaligned.h>
 #include <asm/byteorder.h>
-#include <linux/input.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/string.h>
+#include <beep/input.h>
+#include <beep/wait.h>
+#include <beep/workqueue.h>
+#include <beep/string.h>
 
-#include <linux/usb.h>
+#include <beep/usb.h>
 
-#include <linux/hid.h>
-#include <linux/hiddev.h>
-#include <linux/hid-debug.h>
-#include <linux/hidraw.h>
+#include <beep/hid.h>
+#include <beep/hiddev.h>
+#include <beep/hid-debug.h>
+#include <beep/hidraw.h>
 #include "usbhid.h"
 
 /*

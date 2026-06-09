@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/vfb.c -- Virtual frame buffer device
+ *  beep/drivers/video/vfb.c -- Virtual frame buffer device
  *
  *      Copyright (C) 2002 James Simmons
  *
@@ -10,18 +10,18 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
 
-#include <linux/fb.h>
-#include <linux/init.h>
+#include <beep/fb.h>
+#include <beep/init.h>
 
     /*
      *  RAM we reserve for the frame buffer. This defines the maximum screen

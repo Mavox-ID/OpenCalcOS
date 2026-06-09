@@ -1,5 +1,5 @@
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for Beep
  *
  * This header defines architecture specific interfaces, x86 version
  *
@@ -11,19 +11,19 @@
 #ifndef _ASM_X86_KVM_HOST_H
 #define _ASM_X86_KVM_HOST_H
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/mmu_notifier.h>
-#include <linux/tracepoint.h>
-#include <linux/cpumask.h>
-#include <linux/irq_work.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/mmu_notifier.h>
+#include <beep/tracepoint.h>
+#include <beep/cpumask.h>
+#include <beep/irq_work.h>
 
-#include <linux/kvm.h>
-#include <linux/kvm_para.h>
-#include <linux/kvm_types.h>
-#include <linux/perf_event.h>
-#include <linux/pvclock_gtod.h>
-#include <linux/clocksource.h>
+#include <beep/kvm.h>
+#include <beep/kvm_para.h>
+#include <beep/kvm_types.h>
+#include <beep/perf_event.h>
+#include <beep/pvclock_gtod.h>
+#include <beep/clocksource.h>
 
 #include <asm/pvclock-abi.h>
 #include <asm/desc.h>

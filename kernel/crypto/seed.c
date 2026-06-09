@@ -12,11 +12,11 @@
  * Copyright (C) 2007 Korea Information Security Agency (KISA).
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/crypto.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/crypto.h>
 #include <asm/byteorder.h>
 
 #define SEED_NUM_KCONSTANTS	16

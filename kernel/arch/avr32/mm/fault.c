@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2004-2006 Atmel Corporation
  *
- * Based on linux/arch/sh/mm/fault.c:
+ * Based on beep/arch/sh/mm/fault.c:
  *   Copyright (C) 1999  Niibe Yutaka
  *
  * This program is free software; you can redistribute it and/or modify
@@ -9,11 +9,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/kdebug.h>
-#include <linux/kprobes.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/pagemap.h>
+#include <beep/kdebug.h>
+#include <beep/kprobes.h>
 
 #include <asm/mmu_context.h>
 #include <asm/sysreg.h>

@@ -25,7 +25,7 @@
    the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/drbd_limits.h>
+#include <beep/drbd_limits.h>
 #include "drbd_int.h"
 #include "drbd_req.h"
 

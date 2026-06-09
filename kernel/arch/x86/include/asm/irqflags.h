@@ -60,7 +60,7 @@ static inline void native_halt(void)
 #include <asm/paravirt.h>
 #else
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <beep/types.h>
 
 static inline notrace unsigned long arch_local_save_flags(void)
 {

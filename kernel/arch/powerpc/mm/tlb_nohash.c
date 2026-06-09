@@ -11,7 +11,7 @@
  *                     IBM Corp.
  *
  *  Derived from arch/ppc/mm/init.c:
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -27,17 +27,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/preempt.h>
-#include <linux/spinlock.h>
-#include <linux/memblock.h>
-#include <linux/of_fdt.h>
-#include <linux/hugetlb.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/preempt.h>
+#include <beep/spinlock.h>
+#include <beep/memblock.h>
+#include <beep/of_fdt.h>
+#include <beep/hugetlb.h>
 
 #include <asm/tlbflush.h>
 #include <asm/tlb.h>

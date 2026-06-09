@@ -5,7 +5,7 @@
  *  PURPOSE:
  *      Conventional device interface for debugging/monitoring of the
  *      driver and h/w using unicli. This interface is also being used
- *      by the SME linux implementation and the helper apps.
+ *      by the SME beep implementation and the helper apps.
  *
  * Copyright (C) 2005-2009 by Cambridge Silicon Radio Ltd.
  *
@@ -20,7 +20,7 @@
  * Part of this file contains an example for how to glue the OS layer
  * with the HIP core lib, the SDIO glue layer, and the SME.
  *
- * When the unifi_sdio.ko modules loads, the linux kernel calls unifi_load().
+ * When the unifi_sdio.ko modules loads, the beep kernel calls unifi_load().
  * unifi_load() calls uf_sdio_load() which is exported by the SDIO glue
  * layer. uf_sdio_load() registers this driver with the underlying SDIO driver.
  * When a card is detected, the SDIO glue layer calls register_unifi_sdio()
@@ -30,12 +30,12 @@
  * unifi_sys_wifi_on_req() which uses the HIP core lib to initialise the card.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/poll.h>
 #include <asm/uaccess.h>
-#include <linux/jiffies.h>
-#include <linux/version.h>
+#include <beep/jiffies.h>
+#include <beep/version.h>
 
 #include "csr_wifi_hip_unifiversion.h"
 #include "unifi_priv.h"
@@ -252,10 +252,10 @@ int uf_unregister_hip_offline_debug(unifi_priv_t *priv)
  *      Open and release entry points for the UniFi debug driver.
  *
  *  Arguments:
- *      Normal linux driver args.
+ *      Normal beep driver args.
  *
  *  Returns:
- *      Linux error code.
+ *      Beep error code.
  * ---------------------------------------------------------------------------
  */
 static int
@@ -335,7 +335,7 @@ unifi_open(struct inode *inode, struct file *file)
          */
         unifi_trace(priv, UDBG1, "SME client (id:%d s:0x%X) is registered\n",
                     udi_cli->client_id, udi_cli->sender_id);
-        /* Store the SME UniFi Linux Client */
+        /* Store the SME UniFi Beep Client */
         if (priv->sme_cli == NULL) {
             priv->sme_cli = udi_cli;
         }
@@ -706,7 +706,7 @@ udi_send_signal_raw(unifi_priv_t *priv, unsigned char *buf, int buflen)
         return -EIO;
     }
 
-#ifdef CSR_NATIVE_LINUX
+#ifdef CSR_NATIVE_BEEP
     if (sig_id == CSR_MLME_POWERMGT_REQUEST_ID) {
         int power_mode = CSR_GET_UINT16_FROM_LITTLE_ENDIAN((buf +
                                               SIZEOF_SIGNAL_HEADER + (UNIFI_MAX_DATA_REFERENCES*SIZEOF_DATAREF)));
@@ -1248,7 +1248,7 @@ unifi_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
         unifi_trace(priv, UDBG2, "UNIFI_INIT_HW.\n");
         priv->init_progress = UNIFI_INIT_NONE;
 
-#if defined(CSR_SUPPORT_WEXT) || defined (CSR_NATIVE_LINUX)
+#if defined(CSR_SUPPORT_WEXT) || defined (CSR_NATIVE_BEEP)
         /* At this point we are ready to start the SME. */
         r = sme_mgt_wifi_on(priv);
         if (r) {
@@ -1744,7 +1744,7 @@ udi_log_event(ul_client_t *pcli,
     int total_len;
     udi_msg_t *msgptr;
     u32 filter_pos;
-#ifdef OMNICLI_LINUX_EXTRA_LOG
+#ifdef OMNICLI_BEEP_EXTRA_LOG
     static volatile unsigned int printk_cpu = UINT_MAX;
     unsigned long long t;
     unsigned long nanosec_rem;
@@ -1790,7 +1790,7 @@ udi_log_event(ul_client_t *pcli,
     }
 #endif
 
-#ifdef CSR_NATIVE_LINUX
+#ifdef CSR_NATIVE_BEEP
     uf_native_process_udi_signal(pcli, signal, signal_len, bulkdata, dir);
 #endif
 
@@ -1828,7 +1828,7 @@ udi_log_event(ul_client_t *pcli,
     INIT_LIST_HEAD(&logptr->q);
     msgptr = &logptr->msg;
     msgptr->length = sizeof(udi_msg_t) + total_len;
-#ifdef OMNICLI_LINUX_EXTRA_LOG
+#ifdef OMNICLI_BEEP_EXTRA_LOG
     t = cpu_clock(printk_cpu);
     nanosec_rem = do_div(t, 1000000000);
     n_1000 = nanosec_rem/1000;
@@ -2116,7 +2116,7 @@ unifi_load(void)
 #endif /* CSR_SUPPORT_WEXT */
 #endif /* CSR_SME_USERSPACE */
 
-#ifdef CSR_NATIVE_LINUX
+#ifdef CSR_NATIVE_BEEP
 #ifdef CSR_SUPPORT_WEXT
 #error WEXT unsupported in the native driver
 #endif
@@ -2126,9 +2126,9 @@ unifi_load(void)
     printk("Split patch support\n");
 #endif
     printk("Kernel %d.%d.%d\n",
-           ((LINUX_VERSION_CODE) >> 16) & 0xff,
-           ((LINUX_VERSION_CODE) >> 8) & 0xff,
-           (LINUX_VERSION_CODE) & 0xff);
+           ((BEEP_VERSION_CODE) >> 16) & 0xff,
+           ((BEEP_VERSION_CODE) >> 8) & 0xff,
+           (BEEP_VERSION_CODE) & 0xff);
     /*
      * Instantiate the /dev/unifi* device nodes.
      * We must do this before registering with the SDIO driver because it

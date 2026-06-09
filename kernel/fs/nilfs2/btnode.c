@@ -23,11 +23,11 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/buffer_head.h>
-#include <linux/mm.h>
-#include <linux/backing-dev.h>
-#include <linux/gfp.h>
+#include <beep/types.h>
+#include <beep/buffer_head.h>
+#include <beep/mm.h>
+#include <beep/backing-dev.h>
+#include <beep/gfp.h>
 #include "nilfs.h"
 #include "mdt.h"
 #include "dat.h"

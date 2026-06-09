@@ -20,11 +20,11 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/syscalls.h>
-#include <linux/rcupdate.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/syscalls.h>
+#include <beep/rcupdate.h>
 
 #include <asm/spu.h>
 

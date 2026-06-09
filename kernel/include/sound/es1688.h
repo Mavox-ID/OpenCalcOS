@@ -24,7 +24,7 @@
 
 #include <sound/control.h>
 #include <sound/pcm.h>
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 #define ES1688_HW_AUTO		0x0000
 #define ES1688_HW_688		0x0001

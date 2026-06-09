@@ -12,19 +12,19 @@
  *   more details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/bootmem.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/percpu.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/irq.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/kernel_stat.h>
+#include <beep/bootmem.h>
+#include <beep/notifier.h>
+#include <beep/cpu.h>
+#include <beep/percpu.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/irq.h>
 #include <asm/mmu_context.h>
 #include <asm/tlbflush.h>
 #include <asm/sections.h>

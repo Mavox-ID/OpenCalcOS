@@ -3,10 +3,10 @@
  * Written by David Howells (dhowells@redhat.com).
  * Derived from arch/i386/kernel/semaphore.c
  */
-#include <linux/rwsem.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/export.h>
+#include <beep/rwsem.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/export.h>
 
 /*
  * Initialize an rwsem:

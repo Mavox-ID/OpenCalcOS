@@ -1,12 +1,12 @@
 /*
- * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/kallsyms.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
+#include <beep/kallsyms.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/sched.h>
 #include <asm/sysrq.h>
 
 /* Catch non-i386 SUBARCH's. */

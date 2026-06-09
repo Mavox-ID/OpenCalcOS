@@ -3,18 +3,18 @@
  * Copyright (C) 2008, 2011 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/preempt.h>
-#include <linux/hw_random.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/preempt.h>
+#include <beep/hw_random.h>
 
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
 #include <asm/hypervisor.h>
 

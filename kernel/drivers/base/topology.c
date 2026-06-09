@@ -23,12 +23,12 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
  */
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/hardirq.h>
-#include <linux/topology.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/cpu.h>
+#include <beep/module.h>
+#include <beep/hardirq.h>
+#include <beep/topology.h>
 
 #define define_one_ro_named(_name, _func)				\
 	static DEVICE_ATTR(_name, 0444, _func, NULL)

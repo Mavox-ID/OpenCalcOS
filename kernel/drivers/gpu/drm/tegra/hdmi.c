@@ -7,13 +7,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
+#include <beep/clk.h>
+#include <beep/debugfs.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/consumer.h>
 
 #include <mach/clk.h>
 

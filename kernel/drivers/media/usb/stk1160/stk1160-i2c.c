@@ -20,9 +20,9 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/i2c.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/i2c.h>
 
 #include "stk1160.h"
 #include "stk1160-reg.h"

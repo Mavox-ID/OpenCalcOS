@@ -5,10 +5,10 @@
  * Author Mel Gorman <mel@csn.ul.ie>
  *
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/kobject.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/kobject.h>
+#include <beep/export.h>
 #include "internal.h"
 
 #ifdef CONFIG_DEBUG_MEMORY_INIT

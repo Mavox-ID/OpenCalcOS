@@ -25,10 +25,10 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/isa.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/isa.h>
+#include <beep/io.h>
 #include <asm/dma.h>
 #include <sound/core.h>
 #include <sound/wss.h>

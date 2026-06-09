@@ -13,7 +13,7 @@
 #ifndef CSR_WIFI_NME_TASK_H__
 #define CSR_WIFI_NME_TASK_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include "csr_sched.h"
 
 #ifndef CSR_WIFI_NME_ENABLE

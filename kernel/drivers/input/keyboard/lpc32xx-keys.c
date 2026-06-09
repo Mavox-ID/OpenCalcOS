@@ -22,17 +22,17 @@
  * This controller supports square key matrices from 1x1 up to 8x8
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/input/matrix_keypad.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/irq.h>
+#include <beep/pm.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/input/matrix_keypad.h>
 
 #define DRV_NAME				"lpc32xx_keys"
 

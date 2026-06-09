@@ -16,25 +16,25 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-tegra.h>
+#include <beep/clk.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmapool.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/kthread.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi-tegra.h>
 #include <mach/clk.h>
 
 #define SLINK_COMMAND			0x000

@@ -20,7 +20,7 @@
 #ifndef __MTD_NFTL_USER_H__
 #define __MTD_NFTL_USER_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* Block Control Information */
 

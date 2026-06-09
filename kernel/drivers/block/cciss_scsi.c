@@ -28,12 +28,12 @@
    through the array controller.  Note in particular, neither 
    physical nor logical disks are presented through the scsi layer. */
 
-#include <linux/timer.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/timer.h>
+#include <beep/completion.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

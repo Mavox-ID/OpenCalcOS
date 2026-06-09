@@ -27,14 +27,14 @@
  * TODO: 1) Raw bayer parameter settings and bayer capture
  *	 2) Add support for control ioctl
  */
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/videodev2.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
+#include <beep/videodev2.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/module.h>
 
 #include <mach/mux.h>
 

@@ -11,11 +11,11 @@
  * 2 as published by the Free Software Foundation.
  */
 
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/i2c.h>
+#include <beep/bcd.h>
+#include <beep/rtc.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #define DRV_VERSION "0.1"
 

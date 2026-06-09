@@ -23,12 +23,12 @@
  * This driver supports an interface for DCA clients and providers to meet.
  */
 
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/device.h>
-#include <linux/dca.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/notifier.h>
+#include <beep/device.h>
+#include <beep/dca.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #define DCA_VERSION "1.12.1"
 

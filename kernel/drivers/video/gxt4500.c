@@ -5,14 +5,14 @@
  * Copyright (C) 2006 Paul Mackerras, IBM Corp. <paulus@samba.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/fb.h>
-#include <linux/console.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/delay.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/fb.h>
+#include <beep/console.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/delay.h>
+#include <beep/string.h>
 
 #define PCI_DEVICE_ID_IBM_GXT4500P	0x21c
 #define PCI_DEVICE_ID_IBM_GXT6500P	0x21b

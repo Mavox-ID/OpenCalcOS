@@ -21,7 +21,7 @@
 
 #include "emu8000_local.h"
 #include <asm/uaccess.h>
-#include <linux/moduleparam.h>
+#include <beep/moduleparam.h>
 
 static int emu8000_reset_addr;
 module_param(emu8000_reset_addr, int, 0444);

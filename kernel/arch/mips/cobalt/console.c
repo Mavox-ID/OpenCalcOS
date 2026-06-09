@@ -1,8 +1,8 @@
 /*
  * (C) P. Horton 2006
  */
-#include <linux/io.h>
-#include <linux/serial_reg.h>
+#include <beep/io.h>
+#include <beep/serial_reg.h>
 
 #include <cobalt.h>
 

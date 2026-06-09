@@ -60,12 +60,12 @@
  * in general since for !CONFIG_HAVE_UNSTABLE_SCHED_CLOCK we fully rely on
  * sched_clock().
  */
-#include <linux/spinlock.h>
-#include <linux/hardirq.h>
-#include <linux/export.h>
-#include <linux/percpu.h>
-#include <linux/ktime.h>
-#include <linux/sched.h>
+#include <beep/spinlock.h>
+#include <beep/hardirq.h>
+#include <beep/export.h>
+#include <beep/percpu.h>
+#include <beep/ktime.h>
+#include <beep/sched.h>
 
 /*
  * Scheduler clock - returns current time in nanosec units.

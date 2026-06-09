@@ -54,17 +54,17 @@
 
 /*------------------------------------------------------------------*/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/rtnetlink.h>
-#include <linux/usb.h>
-#include <linux/firmware.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
+#include <beep/rtnetlink.h>
+#include <beep/usb.h>
+#include <beep/firmware.h>
 
 #include "irda-usb.h"
 
@@ -99,7 +99,7 @@ static struct usb_device_id dongles[] = {
  * Devices based on the SigmaTel chipset (0x66f, 0x4200) are not designed
  * using the "USB-IrDA specification" (yes, there exist such a thing), and
  * therefore not supported by this driver (don't add them above).
- * There is a Linux driver, stir4200, that support those USB devices.
+ * There is a Beep driver, stir4200, that support those USB devices.
  * Jean II
  */
 

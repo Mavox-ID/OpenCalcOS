@@ -8,8 +8,8 @@
 #define KMSG_COMPONENT "sclp_sdias"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/completion.h>
-#include <linux/sched.h>
+#include <beep/completion.h>
+#include <beep/sched.h>
 #include <asm/sclp.h>
 #include <asm/debug.h>
 #include <asm/ipl.h>

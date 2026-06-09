@@ -21,7 +21,7 @@ typedef union {
 
 #else /* CONFIG_NR_CPUS > 2048 */
 
-#include <linux/const.h>
+#include <beep/const.h>
 
 #ifndef __ASSEMBLY__
 typedef union {

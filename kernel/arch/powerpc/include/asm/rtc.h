@@ -15,7 +15,7 @@
  * implementation details for genrtc/q40rtc driver
  *
  * And the old drivers/macintosh/rtc.c which was heavily based on:
- * Linux/SPARC Real Time Clock Driver
+ * Beep/SPARC Real Time Clock Driver
  * Copyright (C) 1996 Thomas K. Dyas (tdyas@eden.rutgers.edu)
  *
  * With additional work by Paul Mackerras and Franz Sirl.
@@ -26,7 +26,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/rtc.h>
+#include <beep/rtc.h>
 
 #include <asm/machdep.h>
 #include <asm/time.h>

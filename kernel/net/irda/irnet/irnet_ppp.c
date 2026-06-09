@@ -13,8 +13,8 @@
  *	2) as a control channel (write commands, read events)
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 #include "irnet_ppp.h"		/* Private header */
 /* Please put other headers in irnet.h - Thanks */
 

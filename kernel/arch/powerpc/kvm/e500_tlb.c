@@ -15,19 +15,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/highmem.h>
-#include <linux/log2.h>
-#include <linux/uaccess.h>
-#include <linux/sched.h>
-#include <linux/rwsem.h>
-#include <linux/vmalloc.h>
-#include <linux/hugetlb.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/kvm.h>
+#include <beep/kvm_host.h>
+#include <beep/highmem.h>
+#include <beep/log2.h>
+#include <beep/uaccess.h>
+#include <beep/sched.h>
+#include <beep/rwsem.h>
+#include <beep/vmalloc.h>
+#include <beep/hugetlb.h>
 #include <asm/kvm_ppc.h>
 
 #include "e500.h"
@@ -440,7 +440,7 @@ static inline void kvmppc_e500_shadow_map(struct kvmppc_vcpu_e500 *vcpu_e500,
 		    (vma->vm_flags & VM_PFNMAP)) {
 			/*
 			 * This VMA is a physically contiguous region (e.g.
-			 * /dev/mem) that bypasses normal Linux page
+			 * /dev/mem) that bypasses normal Beep page
 			 * management.  Find the overlap between the
 			 * vma and the memslot.
 			 */

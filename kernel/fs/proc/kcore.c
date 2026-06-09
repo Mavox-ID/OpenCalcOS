@@ -9,22 +9,22 @@
  *	Safe accesses to vmalloc/direct-mapped discontiguous areas, Kanoj Sarcar <kanoj@sgi.com>
  */
 
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/user.h>
-#include <linux/capability.h>
-#include <linux/elf.h>
-#include <linux/elfcore.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/bootmem.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/mm.h>
+#include <beep/proc_fs.h>
+#include <beep/user.h>
+#include <beep/capability.h>
+#include <beep/elf.h>
+#include <beep/elfcore.h>
+#include <beep/vmalloc.h>
+#include <beep/highmem.h>
+#include <beep/bootmem.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 #include <asm/io.h>
-#include <linux/list.h>
-#include <linux/ioport.h>
-#include <linux/memory.h>
+#include <beep/list.h>
+#include <beep/ioport.h>
+#include <beep/memory.h>
 #include <asm/sections.h>
 
 #define CORE_STR "CORE"
@@ -403,7 +403,7 @@ static void elf_kcore_store_hdr(char *bufp, int nphdr, int dataoff)
 	prpsinfo.pr_sname	= 'R';
 	prpsinfo.pr_zomb	= 0;
 
-	strcpy(prpsinfo.pr_fname, "vmlinux");
+	strcpy(prpsinfo.pr_fname, "vmbeep");
 	strncpy(prpsinfo.pr_psargs, saved_command_line, ELF_PRARGSZ);
 
 	nhdr->p_filesz	+= notesize(&notes[1]);

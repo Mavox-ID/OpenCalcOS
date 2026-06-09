@@ -8,15 +8,15 @@
  * Copyright (C) 2005 Intel Corp	Zou Nan hai <nanhai.zou@intel.com>
  *
  */
-#include <linux/smp.h>
-#include <linux/delay.h>
-#include <linux/crash_dump.h>
-#include <linux/bootmem.h>
-#include <linux/kexec.h>
-#include <linux/elfcore.h>
-#include <linux/sysctl.h>
-#include <linux/init.h>
-#include <linux/kdebug.h>
+#include <beep/smp.h>
+#include <beep/delay.h>
+#include <beep/crash_dump.h>
+#include <beep/bootmem.h>
+#include <beep/kexec.h>
+#include <beep/elfcore.h>
+#include <beep/sysctl.h>
+#include <beep/init.h>
+#include <beep/kdebug.h>
 
 #include <asm/mca.h>
 

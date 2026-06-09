@@ -23,7 +23,7 @@
 	};
 
 	chosen {
-		linux,stdout-path = &console;
+		beep,stdout-path = &console;
 	};
 
 	cpus {

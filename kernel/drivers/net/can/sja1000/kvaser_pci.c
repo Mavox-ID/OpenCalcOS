@@ -3,7 +3,7 @@
  *
  * Parts of this software are based on (derived) the following:
  *
- * - Kvaser linux driver, version 4.72 BETA
+ * - Kvaser beep driver, version 4.72 BETA
  *   Copyright (C) 2002-2007 KVASER AB
  *
  * - Lincan driver, version 0.3.3, OCERA project
@@ -30,14 +30,14 @@
  * Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/can/dev.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/can/dev.h>
+#include <beep/io.h>
 
 #include "sja1000.h"
 

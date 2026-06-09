@@ -8,10 +8,10 @@
  * by the Free Software Foundation, incorporated herein by reference.
  */
 
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/rtnetlink.h>
-#include <linux/in.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/rtnetlink.h>
+#include <beep/in.h>
 #include "net_driver.h"
 #include "workarounds.h"
 #include "selftest.h"

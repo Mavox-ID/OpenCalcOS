@@ -26,13 +26,13 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/export.h>
 
 #include <asm/sizes.h>
 #include <asm/mach/pci.h>

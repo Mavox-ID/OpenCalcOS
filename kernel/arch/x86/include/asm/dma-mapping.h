@@ -6,14 +6,14 @@
  * Documentation/DMA-API.txt for documentation.
  */
 
-#include <linux/kmemcheck.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-debug.h>
-#include <linux/dma-attrs.h>
+#include <beep/kmemcheck.h>
+#include <beep/scatterlist.h>
+#include <beep/dma-debug.h>
+#include <beep/dma-attrs.h>
 #include <asm/io.h>
 #include <asm/swiotlb.h>
 #include <asm-generic/dma-coherent.h>
-#include <linux/dma-contiguous.h>
+#include <beep/dma-contiguous.h>
 
 #ifdef CONFIG_ISA
 # define ISA_DMA_BIT_MASK DMA_BIT_MASK(24)

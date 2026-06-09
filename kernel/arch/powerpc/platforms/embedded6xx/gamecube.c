@@ -2,7 +2,7 @@
  * arch/powerpc/platforms/embedded6xx/gamecube.c
  *
  * Nintendo GameCube board-specific support
- * Copyright (C) 2004-2009 The GameCube Linux Team
+ * Copyright (C) 2004-2009 The GameCube Beep Team
  * Copyright (C) 2007,2008,2009 Albert Herranz
  *
  * This program is free software; you can redistribute it and/or
@@ -12,12 +12,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/kexec.h>
-#include <linux/seq_file.h>
-#include <linux/of_platform.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/kexec.h>
+#include <beep/seq_file.h>
+#include <beep/of_platform.h>
 
 #include <asm/io.h>
 #include <asm/machdep.h>

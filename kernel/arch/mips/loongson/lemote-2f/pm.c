@@ -10,11 +10,11 @@
  * (at your option) any later version.
  */
 
-#include <linux/suspend.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
-#include <linux/i8042.h>
-#include <linux/module.h>
+#include <beep/suspend.h>
+#include <beep/interrupt.h>
+#include <beep/pm.h>
+#include <beep/i8042.h>
+#include <beep/module.h>
 
 #include <asm/i8259.h>
 #include <asm/mipsregs.h>

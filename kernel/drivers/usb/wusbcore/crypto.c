@@ -20,7 +20,7 @@
  * 02110-1301, USA.
  *
  *
- * We don't do any encryption here; we use the Linux Kernel's AES-128
+ * We don't do any encryption here; we use the Beep Kernel's AES-128
  * crypto modules to construct keys and payload blocks in a way
  * defined by WUSB1.0[6]. Check the erratas, as typos are are patched
  * there.
@@ -33,7 +33,7 @@
  * by tweaking some blocks, AES crypting them and then xoring
  * something else with them (this seems to be called CBC(AES) -- can
  * you tell I know jack about crypto?). So we just funnel it into the
- * Linux Crypto API.
+ * Beep Crypto API.
  *
  * We leave a crypto test module so we can verify that vectors match,
  * every now and then.
@@ -45,13 +45,13 @@
  *             funneled through AES are...16 bytes in size!
  */
 
-#include <linux/crypto.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/uwb.h>
-#include <linux/slab.h>
-#include <linux/usb/wusb.h>
-#include <linux/scatterlist.h>
+#include <beep/crypto.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/uwb.h>
+#include <beep/slab.h>
+#include <beep/usb/wusb.h>
+#include <beep/scatterlist.h>
 
 static int debug_crypto_verify = 0;
 
@@ -171,7 +171,7 @@ static void bytewise_xor(void *_bo, const void *_bi1, const void *_bi2,
  * the CBC(AES) blkcipher, that does precisely that. The IV (Initial
  * Vector) is 16 bytes and is set to zero, so
  *
- * See rfc3610. Linux crypto has a CBC implementation, but the
+ * See rfc3610. Beep crypto has a CBC implementation, but the
  * documentation is scarce, to say the least, and the example code is
  * so intricated that is difficult to understand how things work. Most
  * of this is guess work -- bite me.

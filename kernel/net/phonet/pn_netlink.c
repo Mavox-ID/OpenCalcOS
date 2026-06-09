@@ -23,10 +23,10 @@
  * 02110-1301 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/netlink.h>
-#include <linux/phonet.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/netlink.h>
+#include <beep/phonet.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 #include <net/phonet/pn_dev.h>
 

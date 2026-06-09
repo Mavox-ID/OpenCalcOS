@@ -23,7 +23,7 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.               *
  ***************************************************************************/
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include "sn9c102_sensor.h"
 #include "sn9c102_devtable.h"
 

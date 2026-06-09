@@ -12,7 +12,7 @@
 #ifndef _ISABELLE_H
 #define _ISABELLE_H
 
-#include <linux/bitops.h>
+#include <beep/bitops.h>
 
 /* ISABELLE REGISTERS */
 

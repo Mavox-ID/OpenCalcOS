@@ -20,19 +20,19 @@
  *  - Add support for extended VLAN support.
  */
 
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of_mdio.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/phy.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
+#include <beep/delay.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/of_mdio.h>
+#include <beep/of_platform.h>
+#include <beep/of_address.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/phy.h>
+#include <beep/mii.h>
+#include <beep/ethtool.h>
 
 #include "xilinx_axienet.h"
 
@@ -1080,7 +1080,7 @@ static const struct net_device_ops axienet_netdev_ops = {
  * This implements ethtool command for getting PHY settings. If PHY could
  * not be found, the function returns -ENODEV. This function calls the
  * relevant PHY ethtool API to get the PHY settings.
- * Issue "ethtool ethX" under linux prompt to execute this function.
+ * Issue "ethtool ethX" under beep prompt to execute this function.
  */
 static int axienet_ethtools_get_settings(struct net_device *ndev,
 					 struct ethtool_cmd *ecmd)
@@ -1100,7 +1100,7 @@ static int axienet_ethtools_get_settings(struct net_device *ndev,
  * This implements ethtool command for setting various PHY settings. If PHY
  * could not be found, the function returns -ENODEV. This function calls the
  * relevant PHY ethtool API to set the PHY.
- * Issue e.g. "ethtool -s ethX speed 1000" under linux prompt to execute this
+ * Issue e.g. "ethtool -s ethX speed 1000" under beep prompt to execute this
  * function.
  */
 static int axienet_ethtools_set_settings(struct net_device *ndev,
@@ -1119,7 +1119,7 @@ static int axienet_ethtools_set_settings(struct net_device *ndev,
  * @ed:		Pointer to ethtool_drvinfo structure
  *
  * This implements ethtool command for getting the driver information.
- * Issue "ethtool -i ethX" under linux prompt to execute this function.
+ * Issue "ethtool -i ethX" under beep prompt to execute this function.
  */
 static void axienet_ethtools_get_drvinfo(struct net_device *ndev,
 					 struct ethtool_drvinfo *ed)
@@ -1226,7 +1226,7 @@ axienet_ethtools_get_pauseparam(struct net_device *ndev,
  * @epauseparam:Pointer to ethtool_pauseparam structure
  *
  * This implements ethtool command for enabling flow control on Rx and Tx
- * paths. Issue "ethtool -A ethX tx on|off" under linux prompt to execute this
+ * paths. Issue "ethtool -A ethX tx on|off" under beep prompt to execute this
  * function.
  */
 static int
@@ -1262,7 +1262,7 @@ axienet_ethtools_set_pauseparam(struct net_device *ndev,
  * @ecoalesce:	Pointer to ethtool_coalesce structure
  *
  * This implements ethtool command for getting the DMA interrupt coalescing
- * count on Tx and Rx paths. Issue "ethtool -c ethX" under linux prompt to
+ * count on Tx and Rx paths. Issue "ethtool -c ethX" under beep prompt to
  * execute this function.
  */
 static int axienet_ethtools_get_coalesce(struct net_device *ndev,
@@ -1285,7 +1285,7 @@ static int axienet_ethtools_get_coalesce(struct net_device *ndev,
  * @ecoalesce:	Pointer to ethtool_coalesce structure
  *
  * This implements ethtool command for setting the DMA interrupt coalescing
- * count on Tx and Rx paths. Issue "ethtool -C ethX rx-frames 5" under linux
+ * count on Tx and Rx paths. Issue "ethtool -C ethX rx-frames 5" under beep
  * prompt to execute this function.
  */
 static int axienet_ethtools_set_coalesce(struct net_device *ndev,

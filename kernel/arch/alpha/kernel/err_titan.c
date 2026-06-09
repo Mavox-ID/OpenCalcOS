@@ -1,14 +1,14 @@
 /*
- *	linux/arch/alpha/kernel/err_titan.c
+ *	beep/arch/alpha/kernel/err_titan.c
  *
  *	Copyright (C) 2000 Jeff Wiedemeier (Compaq Computer Corporation)
  *
  *	Error handling code supporting TITAN systems
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/sched.h>
 
 #include <asm/io.h>
 #include <asm/core_titan.h>

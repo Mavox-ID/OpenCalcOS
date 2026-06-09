@@ -1,5 +1,5 @@
 /*
- *  linux/fs/sysv/file.c
+ *  beep/fs/sysv/file.c
  *
  *  minix/file.c
  *  Copyright (C) 1991, 1992  Linus Torvalds

@@ -12,7 +12,7 @@
 //config:	help
 //config:	The beep applets beeps in a given freq/Hz.
 //config:
-//config:config FEATURE_BEEP_FREQ
+//config:config FEATURE_LINUX_FREQ
 //config:	int "default frequency"
 //config:	range 20 50000	# allowing 0 here breaks the build
 //config:	default 4000
@@ -20,7 +20,7 @@
 //config:	help
 //config:	Frequency for default beep.
 //config:
-//config:config FEATURE_BEEP_LENGTH_MS
+//config:config FEATURE_LINUX_LENGTH_MS
 //config:	int "default length"
 //config:	range 0 2147483647
 //config:	default 30
@@ -49,15 +49,15 @@
 #endif
 
 /* defaults */
-#ifndef CONFIG_FEATURE_BEEP_FREQ
+#ifndef CONFIG_FEATURE_LINUX_FREQ
 # define FREQ (4000)
 #else
-# define FREQ (CONFIG_FEATURE_BEEP_FREQ)
+# define FREQ (CONFIG_FEATURE_LINUX_FREQ)
 #endif
-#ifndef CONFIG_FEATURE_BEEP_LENGTH_MS
+#ifndef CONFIG_FEATURE_LINUX_LENGTH_MS
 # define LENGTH (30)
 #else
-# define LENGTH (CONFIG_FEATURE_BEEP_LENGTH_MS)
+# define LENGTH (CONFIG_FEATURE_LINUX_LENGTH_MS)
 #endif
 #define DELAY (0)
 #define REPETITIONS (1)

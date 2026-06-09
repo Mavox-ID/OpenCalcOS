@@ -9,10 +9,10 @@
 
 #include <net/ip.h>
 #include <net/xfrm.h>
-#include <linux/pfkeyv2.h>
-#include <linux/ipsec.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/export.h>
+#include <beep/pfkeyv2.h>
+#include <beep/ipsec.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/export.h>
 
 static int xfrm4_init_flags(struct xfrm_state *x)
 {

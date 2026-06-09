@@ -9,14 +9,14 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/gfp.h>
 #include "internal.h"
 
 

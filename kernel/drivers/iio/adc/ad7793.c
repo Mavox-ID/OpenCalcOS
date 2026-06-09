@@ -6,26 +6,26 @@
  * Licensed under the GPL-2.
  */
 
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/sysfs.h>
+#include <beep/spi/spi.h>
+#include <beep/regulator/consumer.h>
+#include <beep/err.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/module.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/adc/ad_sigma_delta.h>
-#include <linux/platform_data/ad7793.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
+#include <beep/iio/buffer.h>
+#include <beep/iio/trigger.h>
+#include <beep/iio/trigger_consumer.h>
+#include <beep/iio/triggered_buffer.h>
+#include <beep/iio/adc/ad_sigma_delta.h>
+#include <beep/platform_data/ad7793.h>
 
 /* Registers */
 #define AD7793_REG_COMM		0 /* Communications Register (WO, 8-bit) */
@@ -871,6 +871,6 @@ static struct spi_driver ad7793_driver = {
 };
 module_spi_driver(ad7793_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("Analog Devices AD7793 and simialr ADCs");
 MODULE_LICENSE("GPL v2");

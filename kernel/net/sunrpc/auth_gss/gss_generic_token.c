@@ -1,5 +1,5 @@
 /*
- *  linux/net/sunrpc/gss_generic_token.c
+ *  beep/net/sunrpc/gss_generic_token.c
  *
  *  Adapted from MIT Kerberos 5-1.2.1 lib/gssapi/generic/util_token.c
  *
@@ -31,11 +31,11 @@
  * PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/gss_asn1.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/sunrpc/sched.h>
+#include <beep/sunrpc/gss_asn1.h>
 
 
 #ifdef RPC_DEBUG

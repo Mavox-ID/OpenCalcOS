@@ -35,12 +35,12 @@
  *   matchings spread over multiple fragments, then go BM.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/textsearch.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/textsearch.h>
 
 /* Alphabet size, use ASCII */
 #define ASIZE 256

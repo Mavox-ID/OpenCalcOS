@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2412/sleep.S
+/* beep/arch/arm/mach-s3c2412/sleep.S
  *
  * Copyright (c) 2007 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
@@ -20,7 +20,7 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 #include <mach/hardware.h>
 #include <mach/map.h>

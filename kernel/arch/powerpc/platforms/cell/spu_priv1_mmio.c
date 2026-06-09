@@ -18,15 +18,15 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/ptrace.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/sched.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/ptrace.h>
+#include <beep/wait.h>
+#include <beep/mm.h>
+#include <beep/io.h>
+#include <beep/mutex.h>
+#include <beep/device.h>
+#include <beep/sched.h>
 
 #include <asm/spu.h>
 #include <asm/spu_priv1.h>

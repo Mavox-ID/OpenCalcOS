@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-mmp/aspenite.c
+ *  beep/arch/arm/mach-mmp/aspenite.c
  *
  *  Support for the Marvell PXA168-based Aspenite and Zylonite2
  *  Development Platform.
@@ -8,16 +8,16 @@
  *  it under the terms of the GNU General Public License version 2 as
  *  publishhed by the Free Software Foundation.
  */
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/smc91x.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/nand.h>
-#include <linux/interrupt.h>
-#include <linux/platform_data/mv_usb.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/smc91x.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/nand.h>
+#include <beep/interrupt.h>
+#include <beep/platform_data/mv_usb.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -26,8 +26,8 @@
 #include <mach/pxa168.h>
 #include <mach/irqs.h>
 #include <video/pxa168fb.h>
-#include <linux/input.h>
-#include <linux/platform_data/keypad-pxa27x.h>
+#include <beep/input.h>
+#include <beep/platform_data/keypad-pxa27x.h>
 
 #include "common.h"
 

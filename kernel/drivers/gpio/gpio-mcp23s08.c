@@ -2,15 +2,15 @@
  * MCP23S08 SPI/GPIO gpio expander driver
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/mcp23s08.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/mcp23s08.h>
+#include <beep/slab.h>
 #include <asm/byteorder.h>
 
 /**
@@ -317,7 +317,7 @@ mcp23s08_direction_output(struct gpio_chip *chip, unsigned offset, int value)
 
 #ifdef CONFIG_DEBUG_FS
 
-#include <linux/seq_file.h>
+#include <beep/seq_file.h>
 
 /*
  * This shows more info than the generic gpio dump code:

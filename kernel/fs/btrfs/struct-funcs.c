@@ -16,7 +16,7 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/highmem.h>
+#include <beep/highmem.h>
 #include <asm/unaligned.h>
 
 #include "ctree.h"

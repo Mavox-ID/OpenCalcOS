@@ -83,9 +83,9 @@
 #include "datarate.h"
 #include "rf.h"
 #include "iowpa.h"
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/kthread.h>
+#include <beep/slab.h>
 
 /*---------------------  Static Definitions -------------------------*/
 //static int          msglevel                =MSG_LEVEL_DEBUG;

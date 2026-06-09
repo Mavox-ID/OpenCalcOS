@@ -44,15 +44,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/random.h>
-#include <linux/ctype.h>
-#include <linux/nl80211.h>
-#include <linux/platform_device.h>
-#include <linux/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/random.h>
+#include <beep/ctype.h>
+#include <beep/nl80211.h>
+#include <beep/platform_device.h>
+#include <beep/moduleparam.h>
 #include <net/cfg80211.h>
 #include "core.h"
 #include "reg.h"

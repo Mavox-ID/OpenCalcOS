@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/sleep.S
+ * beep/arch/arm/mach-omap2/sleep.S
  *
  * (C) Copyright 2004
  * Texas Instruments, <www.ti.com>
@@ -25,7 +25,7 @@
  * MA 02111-1307 USA
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 
 #include "omap24xx.h"

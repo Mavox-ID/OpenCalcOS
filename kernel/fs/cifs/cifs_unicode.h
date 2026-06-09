@@ -34,8 +34,8 @@
 #define _CIFS_UNICODE_H
 
 #include <asm/byteorder.h>
-#include <linux/types.h>
-#include <linux/nls.h>
+#include <beep/types.h>
+#include <beep/nls.h>
 
 #define  UNIUPR_NOLOWER		/* Example to not expand lower case tables */
 

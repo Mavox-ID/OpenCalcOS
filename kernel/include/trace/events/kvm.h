@@ -1,7 +1,7 @@
 #if !defined(_TRACE_KVM_MAIN_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_KVM_MAIN_H
 
-#include <linux/tracepoint.h>
+#include <beep/tracepoint.h>
 
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM kvm

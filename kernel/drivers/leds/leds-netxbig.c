@@ -20,15 +20,15 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/platform_data/leds-kirkwood-netxbig.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/leds.h>
+#include <beep/platform_data/leds-kirkwood-netxbig.h>
 
 /*
  * GPIO extension bus.
@@ -323,7 +323,7 @@ create_netxbig_led(struct platform_device *pdev,
 	 *
 	 * Note that the initial LED state can't be reconfigured.
 	 * The reason is that the LED behaviour must stay uniform during
-	 * the whole boot process (bootloader+linux).
+	 * the whole boot process (bootloader+beep).
 	 */
 	led_dat->sata = 0;
 	led_dat->cdev.brightness = LED_OFF;

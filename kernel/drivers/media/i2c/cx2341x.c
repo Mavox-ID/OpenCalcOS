@@ -19,12 +19,12 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/videodev2.h>
 
 #include <media/tuner.h>
 #include <media/cx2341x.h>

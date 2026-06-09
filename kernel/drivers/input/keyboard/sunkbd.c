@@ -3,7 +3,7 @@
  */
 
 /*
- * Sun keyboard driver for Linux
+ * Sun keyboard driver for Beep
  */
 
 /*
@@ -26,15 +26,15 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/workqueue.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/serio.h>
+#include <beep/workqueue.h>
 
 #define DRIVER_DESC	"Sun keyboard driver"
 

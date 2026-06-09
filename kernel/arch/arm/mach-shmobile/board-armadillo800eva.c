@@ -19,25 +19,25 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/input.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/sh_eth.h>
-#include <linux/videodev2.h>
-#include <linux/usb/renesas_usbhs.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sh_mmcif.h>
-#include <linux/mmc/sh_mobile_sdhi.h>
-#include <linux/i2c-gpio.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/kernel.h>
+#include <beep/input.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/gpio_keys.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
+#include <beep/sh_eth.h>
+#include <beep/videodev2.h>
+#include <beep/usb/renesas_usbhs.h>
+#include <beep/mfd/tmio.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/sh_mmcif.h>
+#include <beep/mmc/sh_mobile_sdhi.h>
+#include <beep/i2c-gpio.h>
 #include <mach/common.h>
 #include <mach/irqs.h>
 #include <mach/r8a7740.h>

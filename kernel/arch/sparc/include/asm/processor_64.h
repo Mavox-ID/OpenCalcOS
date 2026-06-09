@@ -93,7 +93,7 @@ struct thread_struct {
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/fpumacro.h>
 
 /* Return saved PC of a blocked thread. */

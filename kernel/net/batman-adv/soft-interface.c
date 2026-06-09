@@ -30,11 +30,11 @@
 #include "gateway_client.h"
 #include "sysfs.h"
 #include "originator.h"
-#include <linux/slab.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/if_ether.h>
+#include <beep/slab.h>
+#include <beep/ethtool.h>
+#include <beep/etherdevice.h>
+#include <beep/if_vlan.h>
+#include <beep/if_ether.h>
 #include "unicast.h"
 #include "bridge_loop_avoidance.h"
 

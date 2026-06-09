@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/core/sdio_bus.h
+ *  beep/drivers/mmc/core/sdio_bus.h
  *
  *  Copyright 2007 Pierre Ossman
  *

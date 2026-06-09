@@ -3,7 +3,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 /*
  * Cache flushing:

@@ -12,8 +12,8 @@
  * License.
  */
 
-#include <linux/binfmts.h>
-#include <linux/types.h>
+#include <beep/binfmts.h>
+#include <beep/types.h>
 
 #ifndef __AA_DOMAIN_H
 #define __AA_DOMAIN_H
@@ -23,10 +23,10 @@ struct aa_domain {
 	char **table;
 };
 
-int apparmor_bprm_set_creds(struct linux_binprm *bprm);
-int apparmor_bprm_secureexec(struct linux_binprm *bprm);
-void apparmor_bprm_committing_creds(struct linux_binprm *bprm);
-void apparmor_bprm_committed_creds(struct linux_binprm *bprm);
+int apparmor_bprm_set_creds(struct beep_binprm *bprm);
+int apparmor_bprm_secureexec(struct beep_binprm *bprm);
+void apparmor_bprm_committing_creds(struct beep_binprm *bprm);
+void apparmor_bprm_committed_creds(struct beep_binprm *bprm);
 
 void aa_free_domain_entries(struct aa_domain *domain);
 int aa_change_hat(const char *hats[], int count, u64 token, bool permtest);

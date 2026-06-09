@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/pxa930.c
+ * beep/arch/arm/mach-pxa/pxa930.c
  *
  * Code specific to PXA930
  *
@@ -10,11 +10,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
+#include <beep/dma-mapping.h>
 
 #include <mach/pxa930.h>
 

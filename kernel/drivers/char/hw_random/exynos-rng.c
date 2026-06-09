@@ -19,15 +19,15 @@
  *
  */
 
-#include <linux/hw_random.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
-#include <linux/err.h>
+#include <beep/hw_random.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/pm_runtime.h>
+#include <beep/err.h>
 
 #define EXYNOS_PRNG_STATUS_OFFSET	0x10
 #define EXYNOS_PRNG_SEED_OFFSET		0x140

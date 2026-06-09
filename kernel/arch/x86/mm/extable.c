@@ -1,6 +1,6 @@
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/sort.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/sort.h>
 #include <asm/uaccess.h>
 
 static inline unsigned long

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/hp300/config.c
+ *  beep/arch/m68k/hp300/config.c
  *
  *  Copyright (C) 1998 Philip Blundell <philb@gnu.org>
  *
@@ -7,11 +7,11 @@
  *  called by setup.c.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/console.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/console.h>
 
 #include <asm/bootinfo.h>
 #include <asm/machdep.h>

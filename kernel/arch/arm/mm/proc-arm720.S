@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/proc-arm720.S: MMU functions for ARM720
+ *  beep/arch/arm/mm/proc-arm720.S: MMU functions for ARM720
  *
  *  Copyright (C) 2000 Steve Hill (sjhill@cotw.com)
  *                     Rob Scott (rscott@mtrob.fdns.net)
@@ -32,8 +32,8 @@
  *   08-25-2000	DBS	Updated for integration of ARM Ltd version.
  *   04-20-2004 HSC	modified for non-paged memory management mode.
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/hwcap.h>

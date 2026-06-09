@@ -1,5 +1,5 @@
 /*
- * linux/include/asm-m68k/io.h
+ * beep/include/asm-m68k/io.h
  *
  * 4/1/00 RZ: - rewritten to avoid clashes between ISA/PCI and other
  *              IO access
@@ -20,7 +20,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/raw_io.h>
 #include <asm/virtconvert.h>
 

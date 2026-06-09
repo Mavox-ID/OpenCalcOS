@@ -3,7 +3,7 @@
  * ISDN lowlevel-module for the IBM ISDN-S0 Active 2000.
  *
  * Author       Fritz Elfert
- * Copyright    by Fritz Elfert      <fritz@isdn4linux.de>
+ * Copyright    by Fritz Elfert      <fritz@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
@@ -15,9 +15,9 @@
 #include "act2000.h"
 #include "act2000_isa.h"
 #include "capi.h"
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
 
 static unsigned short act2000_isa_ports[] =
 {
@@ -33,7 +33,7 @@ static int   act_port = -1;  /* -1 = Autoprobe  */
 static int   act_irq  = -1;
 static char *act_id   = "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0";
 
-MODULE_DESCRIPTION("ISDN4Linux: Driver for IBM Active 2000 ISDN card");
+MODULE_DESCRIPTION("ISDN4Beep: Driver for IBM Active 2000 ISDN card");
 MODULE_AUTHOR("Fritz Elfert");
 MODULE_LICENSE("GPL");
 MODULE_PARM_DESC(act_bus, "BusType of first card, 1=ISA, 2=MCA, 3=PCMCIA, currently only ISA");

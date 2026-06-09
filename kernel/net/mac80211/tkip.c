@@ -6,11 +6,11 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/bitops.h>
+#include <beep/types.h>
+#include <beep/netdevice.h>
+#include <beep/export.h>
 #include <asm/unaligned.h>
 
 #include <net/mac80211.h>

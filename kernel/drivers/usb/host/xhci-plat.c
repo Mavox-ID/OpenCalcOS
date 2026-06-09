@@ -4,16 +4,16 @@
  * Copyright (C) 2012 Texas Instruments Incorporated - http://www.ti.com
  * Author: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  *
- * A lot of code borrowed from the Linux xHCI driver.
+ * A lot of code borrowed from the Beep xHCI driver.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * version 2 as published by the Free Software Foundation.
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #include "xhci.h"
 

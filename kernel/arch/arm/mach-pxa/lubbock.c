@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/lubbock.c
+ *  beep/arch/arm/mach-pxa/lubbock.c
  *
  *  Support for the Intel DBPXA250 Development Platform.
  *
@@ -11,25 +11,25 @@
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/syscore_ops.h>
-#include <linux/major.h>
-#include <linux/fb.h>
-#include <linux/interrupt.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/smc91x.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/syscore_ops.h>
+#include <beep/major.h>
+#include <beep/fb.h>
+#include <beep/interrupt.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/smc91x.h>
+#include <beep/slab.h>
+#include <beep/leds.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/spi/pxa2xx_spi.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/ads7846.h>
+#include <beep/spi/pxa2xx_spi.h>
 
 #include <asm/setup.h>
 #include <asm/memory.h>
@@ -49,9 +49,9 @@
 #include <mach/audio.h>
 #include <mach/lubbock.h>
 #include <mach/udc.h>
-#include <linux/platform_data/irda-pxaficp.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/irda-pxaficp.h>
+#include <beep/platform_data/video-pxafb.h>
+#include <beep/platform_data/mmc-pxamci.h>
 #include <mach/pm.h>
 #include <mach/smemc.h>
 

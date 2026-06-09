@@ -9,9 +9,9 @@
  *
  */
 
-#include <linux/irq.h>
-#include <linux/bootmem.h>
-#include <linux/msi.h>
+#include <beep/irq.h>
+#include <beep/bootmem.h>
+#include <beep/msi.h>
 #include <asm/mpic.h>
 #include <asm/prom.h>
 #include <asm/hw_irq.h>

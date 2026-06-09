@@ -17,19 +17,19 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/signal.h>
-#include <linux/personality.h>
-#include <linux/kallsyms.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/hardirq.h>
-#include <linux/kdebug.h>
-#include <linux/module.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/syscalls.h>
+#include <beep/signal.h>
+#include <beep/personality.h>
+#include <beep/kallsyms.h>
+#include <beep/spinlock.h>
+#include <beep/uaccess.h>
+#include <beep/hardirq.h>
+#include <beep/kdebug.h>
+#include <beep/module.h>
+#include <beep/kexec.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/syscalls.h>
 
 #include <asm/atomic.h>
 #include <asm/traps.h>

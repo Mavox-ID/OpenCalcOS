@@ -1,8 +1,8 @@
 /*
- *  linux/drivers/cpufreq/cpufreq.c
+ *  beep/drivers/cpufreq/cpufreq.c
  *
  *  Copyright (C) 2001 Russell King
- *            (C) 2002 - 2003 Dominik Brodowski <linux@brodo.de>
+ *            (C) 2002 - 2003 Dominik Brodowski <beep@brodo.de>
  *
  *  Oct 2005 - Ashok Raj <ashok.raj@intel.com>
  *	Added handling for CPU hotplug
@@ -17,20 +17,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/notifier.h>
-#include <linux/cpufreq.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/syscore_ops.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/notifier.h>
+#include <beep/cpufreq.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/cpu.h>
+#include <beep/completion.h>
+#include <beep/mutex.h>
+#include <beep/syscore_ops.h>
 
 #include <trace/events/power.h>
 

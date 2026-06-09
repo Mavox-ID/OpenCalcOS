@@ -22,17 +22,17 @@
  *   o Support TDM on PCM and I2S
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/platform_device.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/bitops.h>
+#include <beep/debugfs.h>
+#include <beep/platform_device.h>
+#include <beep/ctype.h>
+#include <beep/slab.h>
+#include <beep/of.h>
 #include <sound/ac97_codec.h>
 #include <sound/core.h>
 #include <sound/jack.h>

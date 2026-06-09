@@ -33,12 +33,12 @@
 #include "debugfs.h"
 #include "xmit.h"
 
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/skbuff.h>
+#include <beep/etherdevice.h>
+#include <beep/slab.h>
 #include <asm/div64.h>
 
 

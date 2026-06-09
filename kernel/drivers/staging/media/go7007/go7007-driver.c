@@ -15,22 +15,22 @@
  * Inc., 59 Temple Place - Suite 330, Boston MA 02111-1307, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/unistd.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/firmware.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/unistd.h>
+#include <beep/time.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/device.h>
+#include <beep/i2c.h>
+#include <beep/firmware.h>
+#include <beep/mutex.h>
+#include <beep/uaccess.h>
+#include <beep/slab.h>
+#include <beep/videodev2.h>
 #include <media/tuner.h>
 #include <media/v4l2-common.h>
 

@@ -1,5 +1,5 @@
 /*+M*************************************************************************
- * Adaptec AIC7xxx device driver for Linux.
+ * Adaptec AIC7xxx device driver for Beep.
  *
  * Copyright (c) 1994 John Aycock
  *   The University of Calgary Department of Computer Science.
@@ -19,9 +19,9 @@
  * the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
  *
  * Sources include the Adaptec 1740 driver (aha1740.c), the Ultrastor 24F
- * driver (ultrastor.c), various Linux kernel source, the Adaptec EISA
+ * driver (ultrastor.c), various Beep kernel source, the Adaptec EISA
  * config file (!adp7771.cfg), the Adaptec AHA-2740A Series User's Guide,
- * the Linux Kernel Hacker's Guide, Writing a SCSI Device Driver for Linux,
+ * the Beep Kernel Hacker's Guide, Writing a SCSI Device Driver for Beep,
  * the Adaptec 1542 driver (aha1542.c), the Adaptec EISA overlay file
  * (adp7770.ovl), the Adaptec AHA-2740 Series Technical Reference Manual,
  * the Adaptec AIC-7770 Data Book, the ANSI SCSI specification, the
@@ -124,24 +124,24 @@
  * aic7xxx driver released by Dan Eischen in two ways.  First, in the code
  * itself.  A diff between the two version of the driver is now a several
  * thousand line diff.  Second, in approach to solving the same problem.  The
- * problem is importing the FreeBSD aic7xxx driver code to linux can be a
+ * problem is importing the FreeBSD aic7xxx driver code to beep can be a
  * difficult and time consuming process, that also can be error prone.  Dan
- * Eischen's official driver uses the approach that the linux and FreeBSD
+ * Eischen's official driver uses the approach that the beep and FreeBSD
  * drivers should be as identical as possible.  To that end, his next version
  * of this driver will be using a mid-layer code library that he is developing
- * to moderate communications between the linux mid-level SCSI code and the
+ * to moderate communications between the beep mid-level SCSI code and the
  * low level FreeBSD driver.  He intends to be able to essentially drop the
- * FreeBSD driver into the linux kernel with only a few minor tweaks to some
+ * FreeBSD driver into the beep kernel with only a few minor tweaks to some
  * include files and the like and get things working, making for fast easy
- * imports of the FreeBSD code into linux.
+ * imports of the FreeBSD code into beep.
  *
  * I disagree with Dan's approach.  Not that I don't think his way of doing
  * things would be nice, easy to maintain, and create a more uniform driver
- * between FreeBSD and Linux.  I have no objection to those issues.  My
+ * between FreeBSD and Beep.  I have no objection to those issues.  My
  * disagreement is on the needed functionality.  There simply are certain
- * things that are done differently in FreeBSD than linux that will cause
+ * things that are done differently in FreeBSD than beep that will cause
  * problems for this driver regardless of any middle ware Dan implements.
- * The biggest example of this at the moment is interrupt semantics.  Linux
+ * The biggest example of this at the moment is interrupt semantics.  Beep
  * doesn't provide the same protection techniques as FreeBSD does, nor can
  * they be easily implemented in any middle ware code since they would truly
  * belong in the kernel proper and would effect all drivers.  For the time
@@ -152,7 +152,7 @@
  * code from FreeBSD wholesale.  Then, to only make changes in the kernel
  * portion of the driver as they are needed for the new sequencer semantics.
  * In this way, the portion of the driver that speaks to the rest of the
- * linux kernel is fairly static and can be changed/modified to solve
+ * beep kernel is fairly static and can be changed/modified to solve
  * any problems one might encounter without concern for the FreeBSD driver.
  *
  * Note: If time and experience should prove me wrong that the middle ware
@@ -219,23 +219,23 @@
  * #define AIC7XXX_VERBOSE_DEBUGGING
  */
  
-#include <linux/module.h>
+#include <beep/module.h>
 #include <stdarg.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/byteorder.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/proc_fs.h>
+#include <beep/blkdev.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
 #include "scsi.h"
 #include <scsi/scsi_host.h>
 #include "aic7xxx_old/aic7xxx.h"
@@ -245,8 +245,8 @@
 #include "aic7xxx_old/aic7xxx_reg.h"
 #include <scsi/scsicam.h>
 
-#include <linux/stat.h>
-#include <linux/slab.h>        /* for kmalloc() */
+#include <beep/stat.h>
+#include <beep/slab.h>        /* for kmalloc() */
 
 #define AIC7XXX_C_VERSION  "5.2.6"
 
@@ -593,7 +593,7 @@ struct seeprom_config {
 static struct aic7xxx_host *first_aic7xxx = NULL;
 
 /*
- * As of Linux 2.1, the mid-level SCSI code uses virtual addresses
+ * As of Beep 2.1, the mid-level SCSI code uses virtual addresses
  * in the scatter-gather lists.  We need to convert the virtual
  * addresses to physical addresses.
  */
@@ -688,7 +688,7 @@ typedef enum {
         AHC_TARGETMODE            = 0x00002000,
         AHC_NEWEEPROM_FMT         = 0x00004000,
  /*
-  *  Here ends the FreeBSD defined flags and here begins the linux defined
+  *  Here ends the FreeBSD defined flags and here begins the beep defined
   *  flags.  NOTE: I did not preserve the old flag name during this change
   *  specifically to force me to evaluate what flags were being used properly
   *  and what flags weren't.  This way, I could clean up the flag usage on
@@ -1332,7 +1332,7 @@ aic_outb(struct aic7xxx_host *p, unsigned char val, long port)
  *   aic7xxx_setup
  *
  * Description:
- *   Handle Linux boot parameters. This routine allows for assigning a value
+ *   Handle Beep boot parameters. This routine allows for assigning a value
  *   to a parameter with a ':' between the parameter and the value.
  *   ie. aic7xxx=unpause:0x0A,extended
  *-F*************************************************************************/
@@ -6456,7 +6456,7 @@ aic7xxx_isr(void *dev_id)
  *   do_aic7xxx_isr
  *
  * Description:
- *   This is a gross hack to solve a problem in linux kernels 2.1.85 and
+ *   This is a gross hack to solve a problem in beep kernels 2.1.85 and
  *   above.  Please, children, do not try this at home, and if you ever see
  *   anything like it, please inform the Gross Hack Police immediately
  *-F*************************************************************************/
@@ -8120,7 +8120,7 @@ aic7xxx_register(struct scsi_host_template *template, struct aic7xxx_host *p,
   /*
    * Allocate enough hardware scbs to handle the maximum number of
    * concurrent transactions we can have.  We have to make sure that
-   * the allocated memory is contiguous memory.  The Linux kmalloc
+   * the allocated memory is contiguous memory.  The Beep kmalloc
    * routine should only allocate contiguous memory, but note that
    * this could be a problem if kmalloc() is changed.
    */
@@ -9900,7 +9900,7 @@ skip_pci_controller:
   /*
    * Now, we re-order the probed devices by BIOS address and BUS class.
    * In general, we follow this algorithm to make the adapters show up
-   * in the same order under linux that the computer finds them.
+   * in the same order under beep that the computer finds them.
    *  1: All VLB/EISA cards with BIOS_ENABLED first, according to BIOS
    *     address, going from lowest to highest.
    *  2: All PCI controllers with BIOS_ENABLED next, according to BIOS

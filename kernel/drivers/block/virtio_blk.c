@@ -1,16 +1,16 @@
 //#define DEBUG
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/hdreg.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/virtio.h>
-#include <linux/virtio_blk.h>
-#include <linux/scatterlist.h>
-#include <linux/string_helpers.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/blkdev.h>
+#include <beep/hdreg.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/virtio.h>
+#include <beep/virtio_blk.h>
+#include <beep/scatterlist.h>
+#include <beep/string_helpers.h>
 #include <scsi/scsi_cmnd.h>
-#include <linux/idr.h>
+#include <beep/idr.h>
 
 #define PART_BITS 4
 

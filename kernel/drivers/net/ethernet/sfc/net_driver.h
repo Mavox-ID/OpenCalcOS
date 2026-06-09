@@ -13,20 +13,20 @@
 #ifndef EFX_NET_DRIVER_H
 #define EFX_NET_DRIVER_H
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/timer.h>
-#include <linux/mdio.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/device.h>
-#include <linux/highmem.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/vmalloc.h>
-#include <linux/i2c.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/if_vlan.h>
+#include <beep/timer.h>
+#include <beep/mdio.h>
+#include <beep/list.h>
+#include <beep/pci.h>
+#include <beep/device.h>
+#include <beep/highmem.h>
+#include <beep/workqueue.h>
+#include <beep/mutex.h>
+#include <beep/vmalloc.h>
+#include <beep/i2c.h>
 
 #include "enum.h"
 #include "bitfield.h"

@@ -186,7 +186,7 @@ config MACH_CARMEVA
 	bool "Conitec ARM&EVA"
 	help
 	  Select this if you are using Conitec's AT91RM9200-MCU-Module.
-	  <http://www.conitec.net/english/linuxboard.php>
+	  <http://www.conitec.net/english/beepboard.php>
 
 config MACH_ATEB9200
 	bool "Embest ATEB9200"

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/plat-omap/debug-leds.c
+ * beep/arch/arm/plat-omap/debug-leds.c
  *
  * Copyright 2011 by Bryan Wu <bryan.wu@canonical.com>
  * Copyright 2003 by Texas Instruments Incorporated
@@ -9,13 +9,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/io.h>
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/leds.h>
+#include <beep/io.h>
+#include <beep/platform_data/gpio-omap.h>
+#include <beep/slab.h>
 
 #include <asm/mach-types.h>
 

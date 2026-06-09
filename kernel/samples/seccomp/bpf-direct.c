@@ -16,10 +16,10 @@
 #define __USE_GNU 1
 #define _GNU_SOURCE 1
 
-#include <linux/types.h>
-#include <linux/filter.h>
-#include <linux/seccomp.h>
-#include <linux/unistd.h>
+#include <beep/types.h>
+#include <beep/filter.h>
+#include <beep/seccomp.h>
+#include <beep/unistd.h>
 #include <signal.h>
 #include <stdio.h>
 #include <stddef.h>

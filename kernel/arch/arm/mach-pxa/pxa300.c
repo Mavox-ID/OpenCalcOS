@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/pxa300.c
+ * beep/arch/arm/mach-pxa/pxa300.c
  *
  * Code specific to PXA300/PXA310
  *
@@ -13,10 +13,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
 
 #include <mach/pxa300.h>
 

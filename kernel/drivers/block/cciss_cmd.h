@@ -1,7 +1,7 @@
 #ifndef CCISS_CMD_H
 #define CCISS_CMD_H
 
-#include <linux/cciss_defs.h>
+#include <beep/cciss_defs.h>
 
 /* DEFINES */
 #define CISS_VERSION "1.00"

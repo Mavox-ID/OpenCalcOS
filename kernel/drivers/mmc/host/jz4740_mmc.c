@@ -13,22 +13,22 @@
  *
  */
 
-#include <linux/mmc/host.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/scatterlist.h>
-#include <linux/clk.h>
+#include <beep/mmc/host.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/scatterlist.h>
+#include <beep/clk.h>
 
-#include <linux/bitops.h>
-#include <linux/gpio.h>
+#include <beep/bitops.h>
+#include <beep/gpio.h>
 #include <asm/mach-jz4740/gpio.h>
 #include <asm/cacheflush.h>
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/mach-jz4740/jz4740_mmc.h>
 

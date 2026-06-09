@@ -1,7 +1,7 @@
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 
 static int cmdline_proc_show(struct seq_file *m, void *v)
 {

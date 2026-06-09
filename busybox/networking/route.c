@@ -17,7 +17,7 @@
  * displayroute() code added by Vladimir N. Oleynik <dzo@simtreas.ru>
  * adjustments by Larry Doolittle  <LRDoolittle@lbl.gov>
  *
- * IPV6 support added by Bart Visscher <magick@linux-fan.com>
+ * IPV6 support added by Bart Visscher <magick@beep-fan.com>
  */
 /* 2004/03/09  Manuel Novoa III <mjn3@codepoet.org>
  *
@@ -42,7 +42,7 @@
 
 
 #ifndef RTF_UP
-/* Keep this in sync with /usr/src/linux/include/linux/route.h */
+/* Keep this in sync with /usr/src/beep/include/beep/route.h */
 #define RTF_UP          0x0001	/* route usable                 */
 #define RTF_GATEWAY     0x0002	/* destination is a gateway     */
 #define RTF_HOST        0x0004	/* host entry (net otherwise)   */

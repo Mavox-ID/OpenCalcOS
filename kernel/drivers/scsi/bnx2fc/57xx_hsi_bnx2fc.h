@@ -1,5 +1,5 @@
-#ifndef __57XX_FCOE_HSI_LINUX_LE__
-#define __57XX_FCOE_HSI_LINUX_LE__
+#ifndef __57XX_FCOE_HSI_BEEP_LE__
+#define __57XX_FCOE_HSI_BEEP_LE__
 
 /*
  * common data for all protocols
@@ -987,4 +987,4 @@ struct fcoe_unsolicited_cqe {
 #define FCOE_UNSOLICITED_CQE_TOGGLE_BIT_SHIFT 15
 };
 
-#endif /* __57XX_FCOE_HSI_LINUX_LE__ */
+#endif /* __57XX_FCOE_HSI_BEEP_LE__ */

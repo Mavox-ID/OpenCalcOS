@@ -14,16 +14,16 @@
  * the PCM driver is what handles the DMA buffer.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/of_platform.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/gfp.h>
+#include <beep/of_platform.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

@@ -42,14 +42,14 @@
  * hold on to mp+lock thru update of maps
  */
 
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/completion.h>
-#include <linux/freezer.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kthread.h>
-#include <linux/seq_file.h>
+#include <beep/fs.h>
+#include <beep/vmalloc.h>
+#include <beep/completion.h>
+#include <beep/freezer.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kthread.h>
+#include <beep/seq_file.h>
 #include "jfs_incore.h"
 #include "jfs_inode.h"
 #include "jfs_filsys.h"

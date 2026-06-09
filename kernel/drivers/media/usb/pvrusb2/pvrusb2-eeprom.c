@@ -19,7 +19,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include "pvrusb2-eeprom.h"
 #include "pvrusb2-hdw-internal.h"
 #include "pvrusb2-debug.h"

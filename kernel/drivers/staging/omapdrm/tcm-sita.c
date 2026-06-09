@@ -17,8 +17,8 @@
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  *
  */
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
 #include "tcm-sita.h"
 

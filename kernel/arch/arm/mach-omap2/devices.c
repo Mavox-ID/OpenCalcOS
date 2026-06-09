@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/devices.c
+ * beep/arch/arm/mach-omap2/devices.c
  *
  * OMAP2 platform device setup/initialization
  *
@@ -8,23 +8,23 @@
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/platform_data/omap4-keypad.h>
-#include <linux/platform_data/omap_ocp2scp.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/pinctrl/machine.h>
+#include <beep/platform_data/omap4-keypad.h>
+#include <beep/platform_data/omap_ocp2scp.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/map.h>
 
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 
 #include "iomap.h"
 #include "omap_hwmod.h"
@@ -129,7 +129,7 @@ static struct platform_device omap2cam_device = {
 
 #if defined(CONFIG_IOMMU_API)
 
-#include <linux/platform_data/iommu-omap.h>
+#include <beep/platform_data/iommu-omap.h>
 
 static struct resource omap3isp_resources[] = {
 	{
@@ -397,7 +397,7 @@ static inline void omap_init_hdmi_audio(void) {}
 
 #if defined(CONFIG_SPI_OMAP24XX) || defined(CONFIG_SPI_OMAP24XX_MODULE)
 
-#include <linux/platform_data/spi-omap2-mcspi.h>
+#include <beep/platform_data/spi-omap2-mcspi.h>
 
 static int __init omap_mcspi_init(struct omap_hwmod *oh, void *unused)
 {

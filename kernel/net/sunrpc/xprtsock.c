@@ -1,12 +1,12 @@
 /*
- * linux/net/sunrpc/xprtsock.c
+ * beep/net/sunrpc/xprtsock.c
  *
  * Client-side transport implementation for sockets.
  *
  * TCP callback races fixes (C) 1998 Red Hat
  * TCP send fixes (C) 1998 Red Hat
  * TCP NFS related read + write fixes
- *  (C) 1999 Dave Airlie, University of Limerick, Ireland <airlied@linux.ie>
+ *  (C) 1999 Dave Airlie, University of Limerick, Ireland <airlied@beep.ie>
  *
  * Rewrite of larges part of the code in order to stabilize TCP stuff.
  * Fix behaviour when socket buffer is full.
@@ -18,27 +18,27 @@
  *   <gilles.quillard@bull.net>
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/pagemap.h>
-#include <linux/errno.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/net.h>
-#include <linux/mm.h>
-#include <linux/un.h>
-#include <linux/udp.h>
-#include <linux/tcp.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/xprtsock.h>
-#include <linux/file.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/capability.h>
+#include <beep/pagemap.h>
+#include <beep/errno.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/net.h>
+#include <beep/mm.h>
+#include <beep/un.h>
+#include <beep/udp.h>
+#include <beep/tcp.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/sched.h>
+#include <beep/sunrpc/svcsock.h>
+#include <beep/sunrpc/xprtsock.h>
+#include <beep/file.h>
 #ifdef CONFIG_SUNRPC_BACKCHANNEL
-#include <linux/sunrpc/bc_xprt.h>
+#include <beep/sunrpc/bc_xprt.h>
 #endif
 
 #include <net/sock.h>

@@ -6,8 +6,8 @@
  * This file is released under the GPLv2.
  */
 
-#include <linux/init.h>
-#include <linux/rtc.h>
+#include <beep/init.h>
+#include <beep/rtc.h>
 
 #include "power.h"
 

@@ -145,7 +145,7 @@ behaviour of FreeType at runtime.
     `any/all components'.  For example, the following definitions
 
       set FT2_DEBUG=any:2 memory:5 io:4        (on Windows)
-      export FT2_DEBUG="any:2 memory:5 io:4"   (on Linux with bash)
+      export FT2_DEBUG="any:2 memory:5 io:4"   (on Beep with bash)
 
     both stipulate that all components should have level 2, except for
     the memory and  io components which will be set  to trace levels 5

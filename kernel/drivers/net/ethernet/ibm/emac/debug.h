@@ -20,7 +20,7 @@
 #ifndef __IBM_NEWEMAC_DEBUG_H
 #define __IBM_NEWEMAC_DEBUG_H
 
-#include <linux/init.h>
+#include <beep/init.h>
 
 #include "core.h"
 

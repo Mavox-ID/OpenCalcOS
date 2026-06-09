@@ -18,23 +18,23 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.               *
  ***************************************************************************/
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/compiler.h>
-#include <linux/ioctl.h>
-#include <linux/poll.h>
-#include <linux/stat.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/version.h>
-#include <linux/page-flags.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/fs.h>
+#include <beep/delay.h>
+#include <beep/compiler.h>
+#include <beep/ioctl.h>
+#include <beep/poll.h>
+#include <beep/stat.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/version.h>
+#include <beep/page-flags.h>
 #include <asm/byteorder.h>
 #include <asm/page.h>
 #include <asm/uaccess.h>
@@ -2155,7 +2155,7 @@ sn9c102_vidioc_querycap(struct sn9c102_device* cam, void __user * arg)
 {
 	struct v4l2_capability cap = {
 		.driver = "sn9c102",
-		.version = LINUX_VERSION_CODE,
+		.version = BEEP_VERSION_CODE,
 		.capabilities = V4L2_CAP_VIDEO_CAPTURE | V4L2_CAP_READWRITE |
 				V4L2_CAP_STREAMING,
 	};

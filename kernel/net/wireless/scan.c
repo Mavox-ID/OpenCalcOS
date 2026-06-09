@@ -3,13 +3,13 @@
  *
  * Copyright 2008 Johannes Berg <johannes@sipsolutions.net>
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/wireless.h>
-#include <linux/nl80211.h>
-#include <linux/etherdevice.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/wireless.h>
+#include <beep/nl80211.h>
+#include <beep/etherdevice.h>
 #include <net/arp.h>
 #include <net/cfg80211.h>
 #include <net/cfg80211-wext.h>

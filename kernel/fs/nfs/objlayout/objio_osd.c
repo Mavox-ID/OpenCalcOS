@@ -37,7 +37,7 @@
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <scsi/osd_ore.h>
 
 #include "objlayout.h"

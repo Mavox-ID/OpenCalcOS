@@ -11,20 +11,20 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/workqueue.h>
-#include <linux/completion.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/spi/spi.h>
-#include <linux/fsl_devices.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/of_address.h>
+#include <beep/of_platform.h>
+#include <beep/workqueue.h>
+#include <beep/completion.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/spi/spi.h>
+#include <beep/fsl_devices.h>
+#include <beep/slab.h>
 
 #include <asm/mpc52xx.h>
 #include <asm/mpc52xx_psc.h>

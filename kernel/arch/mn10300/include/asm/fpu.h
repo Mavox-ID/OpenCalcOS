@@ -14,7 +14,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include <asm/exceptions.h>
 #include <asm/sigcontext.h>
 

@@ -14,8 +14,8 @@
 #ifndef __GDM_SDIO_H__
 #define __GDM_SDIO_H__
 
-#include <linux/types.h>
-#include <linux/time.h>
+#include <beep/types.h>
+#include <beep/time.h>
 
 #define MAX_NR_SDU_BUF  64
 

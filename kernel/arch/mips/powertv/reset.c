@@ -16,10 +16,10 @@
  *  with this program; if not, write to the Free Software Foundation, Inc.,
  *  59 Temple Place - Suite 330, Boston MA 02111-1307, USA.
  */
-#include <linux/pm.h>
+#include <beep/pm.h>
 
-#include <linux/io.h>
-#include <asm/reboot.h>			/* Not included by linux/reboot.h */
+#include <beep/io.h>
+#include <asm/reboot.h>			/* Not included by beep/reboot.h */
 
 #ifdef CONFIG_BOOTLOADER_DRIVER
 #include <asm/mach-powertv/kbldr.h>

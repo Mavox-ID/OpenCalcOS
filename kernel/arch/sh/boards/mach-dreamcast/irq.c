@@ -5,14 +5,14 @@
  *
  * Copyright (c) 2001, 2002 M. R. Brown <mrbrown@0xd6.org>
  *
- * This file is part of the LinuxDC project (www.linuxdc.org)
+ * This file is part of the BeepDC project (www.beepdc.org)
  * Released under the terms of the GNU GPL v2.0
  */
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/export.h>
-#include <linux/err.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/export.h>
+#include <beep/err.h>
 #include <mach/sysasic.h>
 
 /*

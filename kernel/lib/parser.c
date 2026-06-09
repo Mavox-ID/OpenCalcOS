@@ -5,12 +5,12 @@
  * Version 2.  See the file COPYING for more details.
  */
 
-#include <linux/ctype.h>
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/parser.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/ctype.h>
+#include <beep/types.h>
+#include <beep/export.h>
+#include <beep/parser.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 
 /**
  * match_one: - Determines if a string matches a simple pattern

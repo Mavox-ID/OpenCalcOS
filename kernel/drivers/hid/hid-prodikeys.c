@@ -18,11 +18,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
-#include <linux/hid.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/mutex.h>
+#include <beep/hid.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/rawmidi.h>

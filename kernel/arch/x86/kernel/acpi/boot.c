@@ -23,18 +23,18 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/acpi_pmtmr.h>
-#include <linux/efi.h>
-#include <linux/cpumask.h>
-#include <linux/module.h>
-#include <linux/dmi.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/bootmem.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
+#include <beep/init.h>
+#include <beep/acpi.h>
+#include <beep/acpi_pmtmr.h>
+#include <beep/efi.h>
+#include <beep/cpumask.h>
+#include <beep/module.h>
+#include <beep/dmi.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
+#include <beep/bootmem.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
 
 #include <asm/pci_x86.h>
 #include <asm/pgtable.h>
@@ -1356,7 +1356,7 @@ static int __init dmi_ignore_irq0_timer_override(const struct dmi_system_id *d)
 
 /*
  * If your system is blacklisted here, but you find that acpi=force
- * works for you, please contact linux-acpi@vger.kernel.org
+ * works for you, please contact beep-acpi@vger.kernel.org
  */
 static struct dmi_system_id __initdata acpi_dmi_table[] = {
 	/*

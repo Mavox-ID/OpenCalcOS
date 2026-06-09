@@ -32,16 +32,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/kmod.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/uaccess.h>
 
 #include <media/media-devnode.h>
 
@@ -283,13 +283,13 @@ void media_devnode_unregister(struct media_devnode *mdev)
 }
 
 /*
- *	Initialise media for linux
+ *	Initialise media for beep
  */
 static int __init media_devnode_init(void)
 {
 	int ret;
 
-	pr_info("Linux media interface: v0.10\n");
+	pr_info("Beep media interface: v0.10\n");
 	ret = alloc_chrdev_region(&media_dev_t, 0, MEDIA_NUM_DEVICES,
 				  MEDIA_NAME);
 	if (ret < 0) {

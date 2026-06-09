@@ -1,5 +1,5 @@
 #
-# Makefile for the linux kernel.
+# Makefile for the beep kernel.
 #
 
 CFLAGS_ptrace.o		+= -DUTS_MACHINE='"$(UTS_MACHINE)"'
@@ -84,7 +84,7 @@ extra-$(CONFIG_40x)		:= head_40x.o
 extra-$(CONFIG_44x)		:= head_44x.o
 extra-$(CONFIG_FSL_BOOKE)	:= head_fsl_booke.o
 extra-$(CONFIG_8xx)		:= head_8xx.o
-extra-y				+= vmlinux.lds
+extra-y				+= vmbeep.lds
 
 obj-$(CONFIG_RELOCATABLE_PPC32)	+= reloc_32.o
 
@@ -164,4 +164,4 @@ prom_init_check: $(src)/prom_init_check.sh $(obj)/prom_init.o
 	$(call cmd,prom_init_check)
 endif
 
-clean-files := vmlinux.lds
+clean-files := vmbeep.lds

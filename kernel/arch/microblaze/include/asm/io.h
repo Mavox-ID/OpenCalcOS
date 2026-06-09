@@ -13,8 +13,8 @@
 
 #include <asm/byteorder.h>
 #include <asm/page.h>
-#include <linux/types.h>
-#include <linux/mm.h>          /* Get struct page {...} */
+#include <beep/types.h>
+#include <beep/mm.h>          /* Get struct page {...} */
 #include <asm-generic/iomap.h>
 
 #ifndef CONFIG_PCI
@@ -75,7 +75,7 @@ static inline void __raw_writeq(unsigned long v, volatile void __iomem *addr)
 /*
  * read (readb, readw, readl, readq) and write (writeb, writew,
  * writel, writeq) accessors are for PCI and thus little endian.
- * Linux 2.4 for Microblaze had this wrong.
+ * Beep 2.4 for Microblaze had this wrong.
  */
 static inline unsigned char readb(const volatile void __iomem *addr)
 {

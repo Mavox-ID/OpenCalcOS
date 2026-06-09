@@ -1,7 +1,7 @@
 #ifndef __ARCH_H8300_ATOMIC__
 #define __ARCH_H8300_ATOMIC__
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/cmpxchg.h>
 
 /*
@@ -14,7 +14,7 @@
 #define atomic_read(v)		(*(volatile int *)&(v)->counter)
 #define atomic_set(v, i)	(((v)->counter) = i)
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 static __inline__ int atomic_add_return(int i, atomic_t *v)
 {

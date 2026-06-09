@@ -21,8 +21,8 @@
  *
  */
 
-#include <linux/gfp.h>
-#include <linux/sched.h>
+#include <beep/gfp.h>
+#include <beep/sched.h>
 
 #include "wlcore.h"
 #include "debug.h"

@@ -36,11 +36,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/tty.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/tty.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
 
 #include "dgrp_common.h"
 

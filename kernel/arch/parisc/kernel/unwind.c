@@ -8,12 +8,12 @@
  * understand what is happening here
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/kallsyms.h>
-#include <linux/sort.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/kallsyms.h>
+#include <beep/sort.h>
 
 #include <asm/uaccess.h>
 #include <asm/assembly.h>

@@ -1,5 +1,5 @@
 /*
- *  linux/fs/adfs/super.c
+ *  beep/fs/adfs/super.c
  *
  *  Copyright (C) 1997-1999 Russell King
  *
@@ -7,15 +7,15 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/buffer_head.h>
-#include <linux/parser.h>
-#include <linux/mount.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/statfs.h>
-#include <linux/user_namespace.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/buffer_head.h>
+#include <beep/parser.h>
+#include <beep/mount.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/statfs.h>
+#include <beep/user_namespace.h>
 #include "adfs.h"
 #include "dir_f.h"
 #include "dir_fplus.h"

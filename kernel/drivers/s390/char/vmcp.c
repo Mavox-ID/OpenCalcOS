@@ -11,13 +11,13 @@
  * The idea of this driver is based on cpint from Neale Ferguson and #CP in CMS
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/compat.h>
+#include <beep/kernel.h>
+#include <beep/miscdevice.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include <asm/compat.h>
 #include <asm/cpcmd.h>
 #include <asm/debug.h>
@@ -122,7 +122,7 @@ vmcp_write(struct file *file, const char __user *buff, size_t count,
 
 /*
  * These ioctls are available, as the semantics of the diagnose 8 call
- * does not fit very well into a Linux call. Diagnose X'08' is described in
+ * does not fit very well into a Beep call. Diagnose X'08' is described in
  * CP Programming Services SC24-6084-00
  *
  * VMCP_GETCODE: gives the CP return code back to user space

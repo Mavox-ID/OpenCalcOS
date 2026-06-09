@@ -1,11 +1,11 @@
 /*
- * Copyright (C) 2000 Anton Blanchard (anton@linuxcare.com)
+ * Copyright (C) 2000 Anton Blanchard (anton@beepcare.com)
  *
  * This file implements mcount(), which is used to collect profiling data.
  * This can also be tweaked for kernel stack overflow detection.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 /*
  * This is the main variant and is called by C code.  GCC's -pg option

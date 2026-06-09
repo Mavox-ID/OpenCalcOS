@@ -8,21 +8,21 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/mtd/physmap.h>
-#include <linux/timer.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/ethtool.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
-#include <linux/spi/flash.h>
-#include <linux/spi/spi.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/pci.h>
+#include <beep/irq.h>
+#include <beep/mtd/physmap.h>
+#include <beep/timer.h>
+#include <beep/mv643xx_eth.h>
+#include <beep/ethtool.h>
+#include <beep/gpio.h>
+#include <beep/leds.h>
+#include <beep/input.h>
+#include <beep/gpio_keys.h>
+#include <beep/spi/flash.h>
+#include <beep/spi/spi.h>
 #include <net/dsa.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

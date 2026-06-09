@@ -2,13 +2,13 @@
  *
  * Copyright (C) 2009 David S. Miller (davem@davemloft.net)
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/irq.h>
 
-#include <linux/irq_work.h>
-#include <linux/ftrace.h>
+#include <beep/irq_work.h>
+#include <beep/ftrace.h>
 
 #include <asm/pil.h>
 #include <asm/pcr.h>

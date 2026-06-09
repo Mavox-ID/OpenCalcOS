@@ -1,26 +1,26 @@
 /*
- * linux/net/sunrpc/sched.c
+ * beep/net/sunrpc/sched.c
  *
  * Scheduling for synchronous and asynchronous RPC requests.
  *
  * Copyright (C) 1996 Olaf Kirch, <okir@monad.swb.de>
  *
  * TCP NFS related read + write fixes
- * (C) 1999 Dave Airlie, University of Limerick, Ireland <airlied@linux.ie>
+ * (C) 1999 Dave Airlie, University of Limerick, Ireland <airlied@beep.ie>
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/mempool.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/freezer.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/mempool.h>
+#include <beep/smp.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
+#include <beep/freezer.h>
 
-#include <linux/sunrpc/clnt.h>
+#include <beep/sunrpc/clnt.h>
 
 #include "sunrpc.h"
 

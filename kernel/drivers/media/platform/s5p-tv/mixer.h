@@ -18,10 +18,10 @@
 	#define DEBUG
 #endif
 
-#include <linux/fb.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
+#include <beep/fb.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/wait.h>
 #include <media/v4l2-device.h>
 #include <media/videobuf2-core.h>
 

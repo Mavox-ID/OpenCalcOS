@@ -11,23 +11,23 @@
  * See Documentation/security/keys-trusted-encrypted.txt
  */
 
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/parser.h>
-#include <linux/string.h>
-#include <linux/err.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/parser.h>
+#include <beep/string.h>
+#include <beep/err.h>
 #include <keys/user-type.h>
 #include <keys/trusted-type.h>
-#include <linux/key-type.h>
-#include <linux/rcupdate.h>
-#include <linux/crypto.h>
+#include <beep/key-type.h>
+#include <beep/rcupdate.h>
+#include <beep/crypto.h>
 #include <crypto/hash.h>
 #include <crypto/sha.h>
-#include <linux/capability.h>
-#include <linux/tpm.h>
-#include <linux/tpm_command.h>
+#include <beep/capability.h>
+#include <beep/tpm.h>
+#include <beep/tpm_command.h>
 
 #include "trusted.h"
 

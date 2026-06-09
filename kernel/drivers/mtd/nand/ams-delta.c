@@ -16,15 +16,15 @@
  *   Amstrad E3 (Delta).
  */
 
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/gpio.h>
-#include <linux/platform_data/gpio-omap.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/gpio.h>
+#include <beep/platform_data/gpio-omap.h>
 
 #include <asm/io.h>
 #include <asm/sizes.h>

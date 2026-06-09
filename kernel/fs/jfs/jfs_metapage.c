@@ -17,15 +17,15 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/bio.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/buffer_head.h>
-#include <linux/mempool.h>
-#include <linux/seq_file.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/bio.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/buffer_head.h>
+#include <beep/mempool.h>
+#include <beep/seq_file.h>
 #include "jfs_incore.h"
 #include "jfs_superblock.h"
 #include "jfs_filsys.h"

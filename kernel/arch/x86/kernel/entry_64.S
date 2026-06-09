@@ -1,5 +1,5 @@
 /*
- *  linux/arch/x86_64/entry.S
+ *  beep/arch/x86_64/entry.S
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  Copyright (C) 2000, 2001, 2002  Andi Kleen SuSE Labs
@@ -39,7 +39,7 @@
  * - errorentry/paranoidentry/zeroentry - Define exception entry points.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/segment.h>
 #include <asm/cache.h>
 #include <asm/errno.h>
@@ -58,10 +58,10 @@
 #include <asm/asm.h>
 #include <asm/context_tracking.h>
 #include <asm/smap.h>
-#include <linux/err.h>
+#include <beep/err.h>
 
-/* Avoid __ASSEMBLER__'ifying <linux/audit.h> just for this.  */
-#include <linux/elf-em.h>
+/* Avoid __ASSEMBLER__'ifying <beep/audit.h> just for this.  */
+#include <beep/elf-em.h>
 #define AUDIT_ARCH_X86_64	(EM_X86_64|__AUDIT_ARCH_64BIT|__AUDIT_ARCH_LE)
 #define __AUDIT_ARCH_64BIT 0x80000000
 #define __AUDIT_ARCH_LE	   0x40000000
@@ -1403,7 +1403,7 @@ END(xen_do_hypervisor_callback)
  * Category 1 we do not need to fix up as Xen has already reloaded all segment
  * registers that could be reloaded and zeroed the others.
  * Category 2 we fix up by killing the current process. We cannot use the
- * normal Linux return path in this case because if we use the IRET hypercall
+ * normal Beep return path in this case because if we use the IRET hypercall
  * to pop the stack frame we end up in an infinite loop of failsafe callbacks.
  * We distinguish between categories by comparing each saved segment register
  * with its current contents: any discrepancy means we in category 1.

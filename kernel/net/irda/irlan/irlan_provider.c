@@ -26,15 +26,15 @@
  *
  ********************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/random.h>
+#include <beep/bitops.h>
+#include <beep/slab.h>
 
 #include <asm/byteorder.h>
 
@@ -358,7 +358,7 @@ void irlan_provider_send_reply(struct irlan_cb *self, int command,
 		} else
 			skb->data[1] = 0x02; /* 2 parameters */
 		irlan_insert_byte_param(skb, "DATA_CHAN", self->stsap_sel_data);
-		irlan_insert_string_param(skb, "RECONNECT_KEY", "LINUX RULES!");
+		irlan_insert_string_param(skb, "RECONNECT_KEY", "BEEP RULES!");
 		break;
 	case CMD_FILTER_OPERATION:
 		irlan_filter_request(self, skb);

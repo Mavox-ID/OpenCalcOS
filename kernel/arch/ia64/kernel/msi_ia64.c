@@ -2,10 +2,10 @@
  * MSI hooks for standard x86 apic
  */
 
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/msi.h>
-#include <linux/dmar.h>
+#include <beep/pci.h>
+#include <beep/irq.h>
+#include <beep/msi.h>
+#include <beep/dmar.h>
 #include <asm/smp.h>
 #include <asm/msidef.h>
 

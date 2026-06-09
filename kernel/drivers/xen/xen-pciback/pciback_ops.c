@@ -3,11 +3,11 @@
  *
  *   Author: Ryan Wilson <hap9@epoch.ncsc.mil>
  */
-#include <linux/module.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/wait.h>
+#include <beep/bitops.h>
 #include <xen/events.h>
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include "pciback.h"
 
 int verbose_request;

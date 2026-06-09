@@ -12,26 +12,26 @@
  * most of a2025 and sunlance with the aim of merging them, so the
  * common code was pretty obvious.
  */
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/route.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
+#include <beep/crc32.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/in.h>
+#include <beep/route.h>
+#include <beep/string.h>
+#include <beep/skbuff.h>
 #include <asm/irq.h>
 /* Used for the temporal inet entries and routing */
-#include <linux/socket.h>
-#include <linux/bitops.h>
+#include <beep/socket.h>
+#include <beep/bitops.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

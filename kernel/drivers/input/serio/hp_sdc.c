@@ -61,15 +61,15 @@
  * sure it doesn't freeze up and to allow for bad reads to time out.
  */
 
-#include <linux/hp_sdc.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/time.h>
-#include <linux/semaphore.h>
-#include <linux/slab.h>
-#include <linux/hil.h>
+#include <beep/hp_sdc.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/time.h>
+#include <beep/semaphore.h>
+#include <beep/slab.h>
+#include <beep/hil.h>
 #include <asm/io.h>
 
 /* Machine-specific abstraction */

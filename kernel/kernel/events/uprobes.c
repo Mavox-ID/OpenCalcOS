@@ -22,20 +22,20 @@
  * Copyright (C) 2011-2012 Red Hat, Inc., Peter Zijlstra <pzijlstr@redhat.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>	/* read_mapping_page */
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/rmap.h>		/* anon_vma_prepare */
-#include <linux/mmu_notifier.h>	/* set_pte_at_notify */
-#include <linux/swap.h>		/* try_to_free_swap */
-#include <linux/ptrace.h>	/* user_enable_single_step */
-#include <linux/kdebug.h>	/* notifier mechanism */
+#include <beep/kernel.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>	/* read_mapping_page */
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/rmap.h>		/* anon_vma_prepare */
+#include <beep/mmu_notifier.h>	/* set_pte_at_notify */
+#include <beep/swap.h>		/* try_to_free_swap */
+#include <beep/ptrace.h>	/* user_enable_single_step */
+#include <beep/kdebug.h>	/* notifier mechanism */
 #include "../../mm/internal.h"	/* munlock_vma_page */
-#include <linux/percpu-rwsem.h>
+#include <beep/percpu-rwsem.h>
 
-#include <linux/uprobes.h>
+#include <beep/uprobes.h>
 
 #define UINSNS_PER_PAGE			(PAGE_SIZE/UPROBE_XOL_SLOT_BYTES)
 #define MAX_UPROBE_XOL_SLOTS		UINSNS_PER_PAGE

@@ -1,7 +1,7 @@
 #ifndef _ASM_X86_NUMA_H
 #define _ASM_X86_NUMA_H
 
-#include <linux/nodemask.h>
+#include <beep/nodemask.h>
 
 #include <asm/topology.h>
 #include <asm/apicdef.h>

@@ -6,10 +6,10 @@
  *
  * PCI ROM access routines
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
 
 #include "pci.h"
 

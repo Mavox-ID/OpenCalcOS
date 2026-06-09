@@ -35,17 +35,17 @@
 #ifndef __MUSB_CORE_H__
 #define __MUSB_CORE_H__
 
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/musb.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/timer.h>
+#include <beep/device.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/musb.h>
 
 struct musb;
 struct musb_hw_ep;
@@ -68,7 +68,7 @@ struct musb_ep;
 #include "musb_regs.h"
 
 #include "musb_gadget.h"
-#include <linux/usb/hcd.h>
+#include <beep/usb/hcd.h>
 #include "musb_host.h"
 
 /* NOTE:  otg and peripheral-only state machines start at B_IDLE.
@@ -78,7 +78,7 @@ struct musb_ep;
 #define is_host_active(m)		((m)->is_host)
 
 #ifdef CONFIG_PROC_FS
-#include <linux/fs.h>
+#include <beep/fs.h>
 #define MUSB_CONFIG_PROC_FS
 #endif
 

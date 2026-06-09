@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/boot/compressed/head.S
+ *  beep/arch/m32r/boot/compressed/head.S
  *
  *  Copyright (c) 2001-2003	Hiroyuki Kondo, Hirokazu Takata,
  *				Hitoshi Yamamoto, Takeo Takahashi
@@ -7,7 +7,7 @@
  */
 
 	.text
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/addrspace.h>
 #include <asm/page.h>
 #include <asm/assembler.h>

@@ -3,7 +3,7 @@
  * These devices include an I2C master which can be controlled over the
  * serial port.
  *
- * Copyright (C) 2007 Jean Delvare <khali@linux-fr.org>
+ * Copyright (C) 2007 Jean Delvare <khali@beep-fr.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,14 +19,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/serio.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
 
 #define TAOS_BUFFER_SIZE	63
 
@@ -323,7 +323,7 @@ static void __exit taos_exit(void)
 	serio_unregister_driver(&taos_drv);
 }
 
-MODULE_AUTHOR("Jean Delvare <khali@linux-fr.org>");
+MODULE_AUTHOR("Jean Delvare <khali@beep-fr.org>");
 MODULE_DESCRIPTION("TAOS evaluation module driver");
 MODULE_LICENSE("GPL");
 

@@ -48,7 +48,7 @@
 # define CONFIG_VCO_MULT 0
 #endif
 
-#include <linux/clk.h>
+#include <beep/clk.h>
 
 struct clk_ops {
 	unsigned long (*get_rate)(struct clk *clk);

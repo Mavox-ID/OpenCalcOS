@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/asm/sigcontext.h
+ * beep/arch/unicore32/include/asm/sigcontext.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *

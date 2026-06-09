@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux PPP network device drivers.
+# Makefile for the Beep PPP network device drivers.
 #
 
 obj-$(CONFIG_PPP) += ppp_generic.o

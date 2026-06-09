@@ -28,7 +28,7 @@
 #include "radeon.h"
 #include <drm/radeon_drm.h>
 
-#include <linux/dma-buf.h>
+#include <beep/dma-buf.h>
 
 static struct sg_table *radeon_gem_map_dma_buf(struct dma_buf_attachment *attachment,
 					       enum dma_data_direction dir)

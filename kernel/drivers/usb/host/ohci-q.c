@@ -7,8 +7,8 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/irq.h>
-#include <linux/slab.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
 
 static void urb_free_priv (struct ohci_hcd *hc, urb_priv_t *urb_priv)
 {

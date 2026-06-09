@@ -11,19 +11,19 @@
  *	(at your option) any later version.
  */
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/security.h>
-#include <linux/integrity.h>
-#include <linux/ima.h>
-#include <linux/evm.h>
-#include <linux/fsnotify.h>
-#include <linux/mman.h>
-#include <linux/mount.h>
-#include <linux/personality.h>
-#include <linux/backing-dev.h>
+#include <beep/capability.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/security.h>
+#include <beep/integrity.h>
+#include <beep/ima.h>
+#include <beep/evm.h>
+#include <beep/fsnotify.h>
+#include <beep/mman.h>
+#include <beep/mount.h>
+#include <beep/personality.h>
+#include <beep/backing-dev.h>
 #include <net/flow.h>
 
 #define MAX_LSM_EVM_XATTR	2
@@ -210,12 +210,12 @@ int security_vm_enough_memory_mm(struct mm_struct *mm, long pages)
 	return security_ops->vm_enough_memory(mm, pages);
 }
 
-int security_bprm_set_creds(struct linux_binprm *bprm)
+int security_bprm_set_creds(struct beep_binprm *bprm)
 {
 	return security_ops->bprm_set_creds(bprm);
 }
 
-int security_bprm_check(struct linux_binprm *bprm)
+int security_bprm_check(struct beep_binprm *bprm)
 {
 	int ret;
 
@@ -225,17 +225,17 @@ int security_bprm_check(struct linux_binprm *bprm)
 	return ima_bprm_check(bprm);
 }
 
-void security_bprm_committing_creds(struct linux_binprm *bprm)
+void security_bprm_committing_creds(struct beep_binprm *bprm)
 {
 	security_ops->bprm_committing_creds(bprm);
 }
 
-void security_bprm_committed_creds(struct linux_binprm *bprm)
+void security_bprm_committed_creds(struct beep_binprm *bprm)
 {
 	security_ops->bprm_committed_creds(bprm);
 }
 
-int security_bprm_secureexec(struct linux_binprm *bprm)
+int security_bprm_secureexec(struct beep_binprm *bprm)
 {
 	return security_ops->bprm_secureexec(bprm);
 }

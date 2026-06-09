@@ -4,7 +4,7 @@
  *
  * This code is based on drivers/scsi/mpt2sas/mpt2_base.h
  * Copyright (C) 2007-2012  LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionBeep@lsi.com)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -67,7 +67,7 @@
 
 /* driver versioning info */
 #define MPT2SAS_DRIVER_NAME		"mpt2sas"
-#define MPT2SAS_AUTHOR	"LSI Corporation <DL-MPTFusionLinux@lsi.com>"
+#define MPT2SAS_AUTHOR	"LSI Corporation <DL-MPTFusionBeep@lsi.com>"
 #define MPT2SAS_DESCRIPTION	"LSI MPT Fusion SAS 2.0 Device Driver"
 #define MPT2SAS_DRIVER_VERSION		"14.100.00.00"
 #define MPT2SAS_MAJOR_VERSION		14

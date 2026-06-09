@@ -25,16 +25,16 @@
  * ----------------------------------------------------------------------------
  *
  */
-#include <linux/export.h>
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <beep/export.h>
+#include <beep/clk.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/pm_runtime.h>
+#include <beep/delay.h>
+#include <beep/module.h>
 #include "i2c-designware-core.h"
 
 /*

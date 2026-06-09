@@ -1,5 +1,5 @@
 /*
- *  linux/fs/9p/vfs_file.c
+ *  beep/fs/9p/vfs_file.c
  *
  * This file contians vfs file ops for 9P2000.
  *
@@ -23,19 +23,19 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/inet.h>
-#include <linux/list.h>
-#include <linux/pagemap.h>
-#include <linux/utsname.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/sched.h>
+#include <beep/file.h>
+#include <beep/stat.h>
+#include <beep/string.h>
+#include <beep/inet.h>
+#include <beep/list.h>
+#include <beep/pagemap.h>
+#include <beep/utsname.h>
 #include <asm/uaccess.h>
-#include <linux/idr.h>
+#include <beep/idr.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 

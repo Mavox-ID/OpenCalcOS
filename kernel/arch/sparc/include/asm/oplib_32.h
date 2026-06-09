@@ -1,6 +1,6 @@
 /*
  * oplib.h:  Describes the interface and available routines in the
- *           Linux Prom library.
+ *           Beep Prom library.
  *
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  */
@@ -9,11 +9,11 @@
 #define __SPARC_OPLIB_H
 
 #include <asm/openprom.h>
-#include <linux/spinlock.h>
-#include <linux/compiler.h>
+#include <beep/spinlock.h>
+#include <beep/compiler.h>
 
 /* The master romvec pointer... */
-extern struct linux_romvec *romvec;
+extern struct beep_romvec *romvec;
 
 /* Enumeration to describe the prom major version we have detected. */
 enum prom_major_version {
@@ -36,14 +36,14 @@ extern phandle prom_root_node;
  * and usage utility functions.  Only prom-lib should use these,
  * users use the interface defined by the library only!
  */
-extern struct linux_nodeops *prom_nodeops;
+extern struct beep_nodeops *prom_nodeops;
 
 /* The functions... */
 
 /* You must call prom_init() before using any of the library services,
  * preferably as early as possible.  Pass it the romvec pointer.
  */
-extern void prom_init(struct linux_romvec *rom_ptr);
+extern void prom_init(struct beep_romvec *rom_ptr);
 
 /* Boot argument acquisition, returns the boot command line string. */
 extern char *prom_getbootargs(void);
@@ -102,7 +102,7 @@ extern void prom_write(const char *buf, unsigned int len);
 /* Start the CPU with the given device tree node, context table, and context
  * at the passed program counter.
  */
-extern int prom_startcpu(int cpunode, struct linux_prom_registers *context_table,
+extern int prom_startcpu(int cpunode, struct beep_prom_registers *context_table,
 			 int context, char *program_counter);
 
 /* Initialize the memory lists based upon the prom version. */
@@ -165,11 +165,11 @@ extern phandle prom_inst2pkg(int);
 /* Dorking with Bus ranges... */
 
 /* Apply promlib probes OBIO ranges to registers. */
-extern void prom_apply_obio_ranges(struct linux_prom_registers *obioregs, int nregs);
+extern void prom_apply_obio_ranges(struct beep_prom_registers *obioregs, int nregs);
 
 /* Apply ranges of any prom node (and optionally parent node as well) to registers. */
 extern void prom_apply_generic_ranges(phandle node, phandle parent,
-				      struct linux_prom_registers *sbusregs, int nregs);
+				      struct beep_prom_registers *sbusregs, int nregs);
 
 void prom_ranges_init(void);
 

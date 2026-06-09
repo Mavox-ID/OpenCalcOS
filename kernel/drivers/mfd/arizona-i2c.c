@@ -10,15 +10,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
+#include <beep/pm_runtime.h>
+#include <beep/regmap.h>
+#include <beep/regulator/consumer.h>
+#include <beep/slab.h>
 
-#include <linux/mfd/arizona/core.h>
+#include <beep/mfd/arizona/core.h>
 
 #include "arizona.h"
 

@@ -1,11 +1,11 @@
-/* linux/arch/arm/plat-s3c24xx/clock.c
+/* beep/arch/arm/plat-s3c24xx/clock.c
  *
  * Copyright 2004-2005 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C24XX Core clock control support
  *
- * Based on, and code from linux/arch/arm/mach-versatile/clock.c
+ * Based on, and code from beep/arch/arm/mach-versatile/clock.c
  **
  **  Copyright (C) 2004 ARM Limited.
  **  Written by Deep Blue Solutions Limited.
@@ -26,21 +26,21 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/clk.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/clk.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
 #if defined(CONFIG_DEBUG_FS)
-#include <linux/debugfs.h>
+#include <beep/debugfs.h>
 #endif
 
 #include <mach/hardware.h>
@@ -51,7 +51,7 @@
 #include <plat/clock.h>
 #include <plat/cpu.h>
 
-#include <linux/serial_core.h>
+#include <beep/serial_core.h>
 #include <plat/regs-serial.h> /* for s3c24xx_uart_devs */
 
 /* clock information */

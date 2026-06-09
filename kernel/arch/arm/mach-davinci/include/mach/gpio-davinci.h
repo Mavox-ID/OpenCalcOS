@@ -13,8 +13,8 @@
 #ifndef	__DAVINCI_DAVINCI_GPIO_H
 #define	__DAVINCI_DAVINCI_GPIO_H
 
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
 
 #include <asm-generic/gpio.h>
 

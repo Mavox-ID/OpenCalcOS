@@ -10,22 +10,22 @@
  * CP-1200 by Eric Brower.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/jiffies.h>
 
 #include <asm/swift.h> /* for cache flushing. */
 #include <asm/io.h>
 
-#include <linux/ctype.h>
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
+#include <beep/ctype.h>
+#include <beep/pci.h>
+#include <beep/time.h>
+#include <beep/timex.h>
+#include <beep/interrupt.h>
+#include <beep/export.h>
 
 #include <asm/irq.h>
 #include <asm/oplib.h>
@@ -159,7 +159,7 @@ static struct pcic_sn2list pcic_known_sysnames[] = {
  * and since we have no SMP IIep, only one per system.
  */
 static int pcic0_up;
-static struct linux_pcic pcic0;
+static struct beep_pcic pcic0;
 
 void __iomem *pcic_regs;
 volatile int pcic_speculative;
@@ -174,7 +174,7 @@ unsigned int pcic_build_device_irq(struct platform_device *op,
 static int pcic_read_config_dword(unsigned int busno, unsigned int devfn,
     int where, u32 *value)
 {
-	struct linux_pcic *pcic;
+	struct beep_pcic *pcic;
 	unsigned long flags;
 
 	pcic = &pcic0;
@@ -235,7 +235,7 @@ static int pcic_read_config(struct pci_bus *bus, unsigned int devfn,
 static int pcic_write_config_dword(unsigned int busno, unsigned int devfn,
     int where, u32 value)
 {
-	struct linux_pcic *pcic;
+	struct beep_pcic *pcic;
 	unsigned long flags;
 
 	pcic = &pcic0;
@@ -284,9 +284,9 @@ static struct pci_ops pcic_ops = {
  */
 int __init pcic_probe(void)
 {
-	struct linux_pcic *pcic;
-	struct linux_prom_registers regs[PROMREG_MAX];
-	struct linux_pbm_info* pbm;
+	struct beep_pcic *pcic;
+	struct beep_prom_registers regs[PROMREG_MAX];
+	struct beep_pbm_info* pbm;
 	char namebuf[64];
 	phandle node;
 	int err;
@@ -386,9 +386,9 @@ int __init pcic_probe(void)
 	return 0;
 }
 
-static void __init pcic_pbm_scan_bus(struct linux_pcic *pcic)
+static void __init pcic_pbm_scan_bus(struct beep_pcic *pcic)
 {
-	struct linux_pbm_info *pbm = &pcic->pbm;
+	struct beep_pbm_info *pbm = &pcic->pbm;
 
 	pbm->pci_bus = pci_scan_bus(pbm->pci_first_busno, &pcic_ops, pbm);
 #if 0 /* deadwood transplanted from sparc64 */
@@ -404,7 +404,7 @@ static void __init pcic_pbm_scan_bus(struct linux_pcic *pcic)
  */
 static int __init pcic_init(void)
 {
-	struct linux_pcic *pcic;
+	struct beep_pcic *pcic;
 
 	/*
 	 * PCIC should be initialized at start of the timer.
@@ -439,9 +439,9 @@ int pcic_present(void)
 	return pcic0_up;
 }
 
-static int pdev_to_pnode(struct linux_pbm_info *pbm, struct pci_dev *pdev)
+static int pdev_to_pnode(struct beep_pbm_info *pbm, struct pci_dev *pdev)
 {
-	struct linux_prom_pci_registers regs[PROMREG_MAX];
+	struct beep_prom_pci_registers regs[PROMREG_MAX];
 	int err;
 	phandle node = prom_getchild(pbm->prom_node);
 
@@ -463,7 +463,7 @@ static inline struct pcidev_cookie *pci_devcookie_alloc(void)
 	return kmalloc(sizeof(struct pcidev_cookie), GFP_ATOMIC);
 }
 
-static void pcic_map_pci_device(struct linux_pcic *pcic,
+static void pcic_map_pci_device(struct beep_pcic *pcic,
     struct pci_dev *dev, int node)
 {
 	char namebuf[64];
@@ -523,7 +523,7 @@ static void pcic_map_pci_device(struct linux_pcic *pcic,
 }
 
 static void
-pcic_fill_irq(struct linux_pcic *pcic, struct pci_dev *dev, int node)
+pcic_fill_irq(struct beep_pcic *pcic, struct pci_dev *dev, int node)
 {
 	struct pcic_ca2irq *p;
 	unsigned int real_irq;
@@ -599,8 +599,8 @@ void pcibios_fixup_bus(struct pci_bus *bus)
 	struct pci_dev *dev;
 	int i, has_io, has_mem;
 	unsigned int cmd;
-	struct linux_pcic *pcic;
-	/* struct linux_pbm_info* pbm = &pcic->pbm; */
+	struct beep_pcic *pcic;
+	/* struct beep_pbm_info* pbm = &pcic->pbm; */
 	int node;
 	struct pcidev_cookie *pcp;
 
@@ -676,7 +676,7 @@ void pcibios_fixup_bus(struct pci_bus *bus)
 unsigned int
 pcic_pin_to_irq(unsigned int pin, const char *name)
 {
-	struct linux_pcic *pcic = &pcic0;
+	struct beep_pcic *pcic = &pcic0;
 	unsigned int irq;
 	unsigned int ivec;
 
@@ -727,7 +727,7 @@ static unsigned int pcic_cycles_offset(void)
 
 void __init pci_time_init(void)
 {
-	struct linux_pcic *pcic = &pcic0;
+	struct beep_pcic *pcic = &pcic0;
 	unsigned long v;
 	int timer_irq, irq;
 	int err;

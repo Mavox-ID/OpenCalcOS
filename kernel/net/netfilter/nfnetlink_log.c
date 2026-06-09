@@ -11,30 +11,30 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/netdevice.h>
-#include <linux/netfilter.h>
-#include <linux/netlink.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_log.h>
-#include <linux/spinlock.h>
-#include <linux/sysctl.h>
-#include <linux/proc_fs.h>
-#include <linux/security.h>
-#include <linux/list.h>
-#include <linux/jhash.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
+#include <beep/init.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/netdevice.h>
+#include <beep/netfilter.h>
+#include <beep/netlink.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_log.h>
+#include <beep/spinlock.h>
+#include <beep/sysctl.h>
+#include <beep/proc_fs.h>
+#include <beep/security.h>
+#include <beep/list.h>
+#include <beep/jhash.h>
+#include <beep/random.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 #include <net/netfilter/nf_log.h>
 #include <net/netfilter/nfnetlink_log.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #ifdef CONFIG_BRIDGE_NETFILTER
 #include "../bridge/br_private.h"

@@ -1,5 +1,5 @@
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for Beep
  *
  * This module enables machines with Intel VT-x extensions to run virtual
  * machines without emulation or binary translation.
@@ -20,17 +20,17 @@
 #include "mmu.h"
 #include "cpuid.h"
 
-#include <linux/kvm_host.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/sched.h>
-#include <linux/moduleparam.h>
-#include <linux/mod_devicetable.h>
-#include <linux/ftrace_event.h>
-#include <linux/slab.h>
-#include <linux/tboot.h>
+#include <beep/kvm_host.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/sched.h>
+#include <beep/moduleparam.h>
+#include <beep/mod_devicetable.h>
+#include <beep/ftrace_event.h>
+#include <beep/slab.h>
+#include <beep/tboot.h>
 #include "kvm_cache_regs.h"
 #include "x86.h"
 
@@ -1588,7 +1588,7 @@ static void vmx_vcpu_load(struct kvm_vcpu *vcpu, int cpu)
 		local_irq_enable();
 
 		/*
-		 * Linux uses per-cpu TSS and GDT, so set these when switching
+		 * Beep uses per-cpu TSS and GDT, so set these when switching
 		 * processors.
 		 */
 		vmcs_writel(HOST_TR_BASE, kvm_read_tr_base()); /* 22.2.4 */

@@ -19,15 +19,15 @@
  * This file implements the security context
  * associate format.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mod_devicetable.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock_types.h>
-#include <linux/highmem.h>
-#include <linux/scatterlist.h>
-#include <linux/crypto.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/mod_devicetable.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock_types.h>
+#include <beep/highmem.h>
+#include <beep/scatterlist.h>
+#include <beep/crypto.h>
 #include <crypto/algapi.h>
 #include <crypto/des.h>
 #include "crypto4xx_reg_def.h"

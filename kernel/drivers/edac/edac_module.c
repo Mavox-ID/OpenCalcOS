@@ -10,7 +10,7 @@
  * Author: Doug Thompson <dougthompson@xmission.com>
  *
  */
-#include <linux/edac.h>
+#include <beep/edac.h>
 
 #include "edac_core.h"
 #include "edac_module.h"

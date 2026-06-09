@@ -12,21 +12,21 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/init.h>
 
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/plat-ram.h>
-#include <linux/memory.h>
-#include <linux/gpio.h>
-#include <linux/smc911x.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/i2c/at24.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/ulpi.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/plat-ram.h>
+#include <beep/memory.h>
+#include <beep/gpio.h>
+#include <beep/smc911x.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/i2c/at24.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/ulpi.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

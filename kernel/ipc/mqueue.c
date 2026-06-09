@@ -1,5 +1,5 @@
 /*
- * POSIX message queues filesystem for Linux.
+ * POSIX message queues filesystem for Beep.
  *
  * Copyright (C) 2003,2004  Krzysztof Benedyczak    (golbi@mat.uni.torun.pl)
  *                          Michal Wronski          (michal.wronski@gmail.com)
@@ -13,28 +13,28 @@
  * This file is released under the GPL.
  */
 
-#include <linux/capability.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/sysctl.h>
-#include <linux/poll.h>
-#include <linux/mqueue.h>
-#include <linux/msg.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/netlink.h>
-#include <linux/syscalls.h>
-#include <linux/audit.h>
-#include <linux/signal.h>
-#include <linux/mutex.h>
-#include <linux/nsproxy.h>
-#include <linux/pid.h>
-#include <linux/ipc_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/slab.h>
+#include <beep/capability.h>
+#include <beep/init.h>
+#include <beep/pagemap.h>
+#include <beep/file.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/sysctl.h>
+#include <beep/poll.h>
+#include <beep/mqueue.h>
+#include <beep/msg.h>
+#include <beep/skbuff.h>
+#include <beep/vmalloc.h>
+#include <beep/netlink.h>
+#include <beep/syscalls.h>
+#include <beep/audit.h>
+#include <beep/signal.h>
+#include <beep/mutex.h>
+#include <beep/nsproxy.h>
+#include <beep/pid.h>
+#include <beep/ipc_namespace.h>
+#include <beep/user_namespace.h>
+#include <beep/slab.h>
 
 #include <net/sock.h>
 #include "util.h"

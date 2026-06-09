@@ -26,7 +26,7 @@
 #ifndef IRMLP_FRAME_H
 #define IRMLP_FRAME_H
 
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 
 #include <net/irda/discovery.h>
 

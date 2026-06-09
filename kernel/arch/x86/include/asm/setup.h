@@ -8,7 +8,7 @@
 
 #ifdef __i386__
 
-#include <linux/pfn.h>
+#include <beep/pfn.h>
 /*
  * Reserved space for vmalloc and iomap - defined in asm/page.h
  */
@@ -85,7 +85,7 @@ void *extend_brk(size_t size, size_t align);
  * (This uses a temp function to wrap the asm so we can pass it the
  * size parameter; otherwise we wouldn't be able to.  We can't use a
  * "section" attribute on a normal variable because it always ends up
- * being @progbits, which ends up allocating space in the vmlinux
+ * being @progbits, which ends up allocating space in the vmbeep
  * executable.)
  */
 #define RESERVE_BRK(name,sz)						\

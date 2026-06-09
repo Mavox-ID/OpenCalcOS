@@ -1,7 +1,7 @@
 /*
  * OpenRISC ptrace.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -17,17 +17,17 @@
  */
 
 #include <stddef.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/string.h>
 
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/audit.h>
-#include <linux/regset.h>
-#include <linux/tracehook.h>
-#include <linux/elf.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/audit.h>
+#include <beep/regset.h>
+#include <beep/tracehook.h>
+#include <beep/elf.h>
 
 #include <asm/thread_info.h>
 #include <asm/segment.h>
@@ -108,7 +108,7 @@ static int genregs_set(struct task_struct *target,
 }
 
 /*
- * Define the register sets available on OpenRISC under Linux
+ * Define the register sets available on OpenRISC under Beep
  */
 enum or1k_regset {
 	REGSET_GENERAL,

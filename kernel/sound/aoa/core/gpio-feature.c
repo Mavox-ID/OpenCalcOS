@@ -11,7 +11,7 @@
  */
 
 #include <asm/pmac_feature.h>
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include "../aoa.h"
 
 /* TODO: these are lots of global variables

@@ -1,7 +1,7 @@
 /*
  *  DS1287 clockevent driver
  *
- *  Copyright (C) 2008  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2008  Yoichi Yuasa <yuasa@beep-mips.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -17,11 +17,11 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  */
-#include <linux/clockchips.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/mc146818rtc.h>
-#include <linux/irq.h>
+#include <beep/clockchips.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/mc146818rtc.h>
+#include <beep/irq.h>
 
 #include <asm/time.h>
 

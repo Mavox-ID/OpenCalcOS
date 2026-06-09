@@ -6,9 +6,9 @@
  * Copyright (C) 2000 - 2001 by Kanoj Sarcar (kanoj@sgi.com)
  * Copyright (C) 2000 - 2001 by Silicon Graphics, Inc.
  */
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/nodemask.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/nodemask.h>
 #include <asm/page.h>
 #include <asm/processor.h>
 #include <asm/sn/arch.h>

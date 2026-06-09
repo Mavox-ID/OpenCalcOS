@@ -1,6 +1,6 @@
 /*
- * sysctl.c - Code for sysctl handling in NTFS Linux kernel driver. Part of
- *	      the Linux-NTFS project. Adapted from the old NTFS driver,
+ * sysctl.c - Code for sysctl handling in NTFS Beep kernel driver. Part of
+ *	      the Beep-NTFS project. Adapted from the old NTFS driver,
  *	      Copyright (C) 1997 Martin von Löwis, Régis Duchesne
  *
  * Copyright (c) 2002-2005 Anton Altaparmakov
@@ -16,19 +16,19 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
 #ifdef DEBUG
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #ifdef CONFIG_SYSCTL
 
-#include <linux/proc_fs.h>
-#include <linux/sysctl.h>
+#include <beep/proc_fs.h>
+#include <beep/sysctl.h>
 
 #include "sysctl.h"
 #include "debug.h"

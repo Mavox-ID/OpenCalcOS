@@ -11,7 +11,7 @@
 #ifndef _ASM_C6X_SWITCH_TO_H
 #define _ASM_C6X_SWITCH_TO_H
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #define prepare_to_switch()    do { } while (0)
 

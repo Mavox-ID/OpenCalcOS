@@ -23,25 +23,25 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/videodev2.h>
-#include <linux/i2c.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/gfp.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/vmalloc.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
+#include <beep/videodev2.h>
+#include <beep/i2c.h>
 
 #include <media/saa7115.h>
 #include <media/v4l2-common.h>
 #include <media/tuner.h>
 
-#include <linux/workqueue.h>
+#include <beep/workqueue.h>
 
 #include "usbvision.h"
 

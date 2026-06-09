@@ -10,12 +10,12 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/serial-regs.h>
 #include "misc.h"
 
 #ifndef CONFIG_GDBSTUB_ON_TTYSx
-/* display 'Uncompressing Linux... ' messages on ttyS0 or ttyS1 */
+/* display 'Uncompressing Beep... ' messages on ttyS0 or ttyS1 */
 #if 1	/* ttyS0 */
 #define CYG_DEV_BASE	0xA6FB0000
 #else   /* ttyS1 */
@@ -386,7 +386,7 @@ int decompress_kernel(struct moveparams *mv)
 	output_data = (char *) CONFIG_KERNEL_TEXT_ADDRESS;
 
 	makecrc();
-	kputs("Uncompressing Linux... ");
+	kputs("Uncompressing Beep... ");
 	gunzip();
 	kputs("Ok, booting the kernel.\n");
 	return 0;

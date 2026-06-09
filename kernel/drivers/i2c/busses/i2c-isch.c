@@ -1,5 +1,5 @@
 /*
-    i2c-isch.c - Linux kernel driver for Intel SCH chipset SMBus
+    i2c-isch.c - Beep kernel driver for Intel SCH chipset SMBus
     - Based on i2c-piix4.c
     Copyright (c) 1998 - 2002 Frodo Looijaard <frodol@dds.nl> and
     Philip Edelbrock <phil@netroedge.com>
@@ -26,16 +26,16 @@
    Note: we assume there can only be one device, with one SMBus interface.
 */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/acpi.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/stddef.h>
+#include <beep/ioport.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/acpi.h>
 
 /* SCH SMBus address offsets */
 #define SMBHSTCNT	(0 + sch_smba)

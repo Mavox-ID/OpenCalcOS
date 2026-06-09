@@ -1,5 +1,5 @@
 /*
- * Generic HDLC support routines for Linux
+ * Generic HDLC support routines for Beep
  * X.25 support
  *
  * Copyright (C) 1999 - 2006 Krzysztof Halasa <khc@pm.waw.pl>
@@ -9,19 +9,19 @@
  * as published by the Free Software Foundation.
  */
 
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/hdlc.h>
-#include <linux/if_arp.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/lapb.h>
-#include <linux/module.h>
-#include <linux/pkt_sched.h>
-#include <linux/poll.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
+#include <beep/errno.h>
+#include <beep/gfp.h>
+#include <beep/hdlc.h>
+#include <beep/if_arp.h>
+#include <beep/inetdevice.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/lapb.h>
+#include <beep/module.h>
+#include <beep/pkt_sched.h>
+#include <beep/poll.h>
+#include <beep/rtnetlink.h>
+#include <beep/skbuff.h>
 #include <net/x25device.h>
 
 static int x25_ioctl(struct net_device *dev, struct ifreq *ifr);

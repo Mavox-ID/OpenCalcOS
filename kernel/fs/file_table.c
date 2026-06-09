@@ -1,33 +1,33 @@
 /*
- *  linux/fs/file_table.c
+ *  beep/fs/file_table.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  Copyright (C) 1997 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/security.h>
-#include <linux/eventpoll.h>
-#include <linux/rcupdate.h>
-#include <linux/mount.h>
-#include <linux/capability.h>
-#include <linux/cdev.h>
-#include <linux/fsnotify.h>
-#include <linux/sysctl.h>
-#include <linux/lglock.h>
-#include <linux/percpu_counter.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
-#include <linux/task_work.h>
-#include <linux/ima.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/file.h>
+#include <beep/fdtable.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/security.h>
+#include <beep/eventpoll.h>
+#include <beep/rcupdate.h>
+#include <beep/mount.h>
+#include <beep/capability.h>
+#include <beep/cdev.h>
+#include <beep/fsnotify.h>
+#include <beep/sysctl.h>
+#include <beep/lglock.h>
+#include <beep/percpu_counter.h>
+#include <beep/percpu.h>
+#include <beep/hardirq.h>
+#include <beep/task_work.h>
+#include <beep/ima.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include "internal.h"
 

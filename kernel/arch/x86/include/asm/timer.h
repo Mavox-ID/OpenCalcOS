@@ -1,9 +1,9 @@
 #ifndef _ASM_X86_TIMER_H
 #define _ASM_X86_TIMER_H
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/percpu.h>
-#include <linux/interrupt.h>
+#include <beep/init.h>
+#include <beep/pm.h>
+#include <beep/percpu.h>
+#include <beep/interrupt.h>
 
 #define TICK_SIZE (tick_nsec / 1000)
 

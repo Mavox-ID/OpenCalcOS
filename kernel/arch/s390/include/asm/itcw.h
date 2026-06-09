@@ -8,7 +8,7 @@
 #ifndef _ASM_S390_ITCW_H
 #define _ASM_S390_ITCW_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/fcx.h>
 
 #define ITCW_OP_READ	0

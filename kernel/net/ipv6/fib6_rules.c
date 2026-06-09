@@ -13,8 +13,8 @@
  *	Ville Nuorvala		<vnuorval@tcs.hut.fi>
  */
 
-#include <linux/netdevice.h>
-#include <linux/export.h>
+#include <beep/netdevice.h>
+#include <beep/export.h>
 
 #include <net/fib_rules.h>
 #include <net/ipv6.h>

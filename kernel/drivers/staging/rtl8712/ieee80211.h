@@ -15,7 +15,7 @@
  * this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110, USA
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the Beep staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -29,8 +29,8 @@
 #include "osdep_service.h"
 #include "drv_types.h"
 #include "wifi.h"
-#include <linux/compiler.h>
-#include <linux/wireless.h>
+#include <beep/compiler.h>
+#include <beep/wireless.h>
 
 #define MGMT_QUEUE_NUM 5
 #define ETH_ALEN	6

@@ -17,16 +17,16 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/serial_8250.h>
+#include <beep/serial_core.h>
+#include <beep/serial_reg.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/slab.h>
 
 #include "8250.h"
 

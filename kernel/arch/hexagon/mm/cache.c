@@ -1,7 +1,7 @@
 /*
  * Cache management functions for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -18,7 +18,7 @@
  * 02110-1301, USA.
  */
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 #include <asm/cacheflush.h>
 #include <asm/hexagon_vm.h>
 

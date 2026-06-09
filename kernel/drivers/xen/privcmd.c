@@ -6,20 +6,20 @@
  * Copyright (c) 2002-2004, K A Fraser, B Dragovic
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/uaccess.h>
-#include <linux/swap.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/seq_file.h>
-#include <linux/miscdevice.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/uaccess.h>
+#include <beep/swap.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/seq_file.h>
+#include <beep/miscdevice.h>
 
 #include <asm/pgalloc.h>
 #include <asm/pgtable.h>

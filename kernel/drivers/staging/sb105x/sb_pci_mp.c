@@ -1,6 +1,6 @@
 #include "sb_pci_mp.h"
-#include <linux/module.h>
-#include <linux/parport.h>
+#include <beep/module.h>
+#include <beep/parport.h>
 
 extern struct parport *parport_pc_probe_port(unsigned long base_lo,
 		unsigned long base_hi,

@@ -45,9 +45,9 @@ config IA64
 	default y
 	help
 	  The Itanium Processor Family is Intel's 64-bit successor to
-	  the 32-bit X86 line.  The IA-64 Linux project has a home
-	  page at <http://www.linuxia64.org/> and a mailing list at
-	  <linux-ia64@vger.kernel.org>.
+	  the 32-bit X86 line.  The IA-64 Beep project has a home
+	  page at <http://www.beepia64.org/> and a mailing list at
+	  <beep-ia64@vger.kernel.org>.
 
 config 64BIT
 	bool
@@ -131,7 +131,7 @@ menuconfig PARAVIRT_GUEST
 	bool "Paravirtualized guest support"
 	depends on BROKEN
 	help
-	  Say Y here to get to see options related to running Linux under
+	  Say Y here to get to see options related to running Beep under
 	  various hypervisors.  This option alone does not add any kernel code.
 
 	  If you say N, all options in this submenu will be skipped and disabled.
@@ -175,7 +175,7 @@ config IA64_GENERIC
 	  HP-zx1/sx1000+swiotlb	For HP systems with (broken) DMA-constrained devices.
 	  SGI-SN2		For SGI Altix systems
 	  SGI-UV		For SGI UV systems
-	  Ski-simulator		For the HP simulator <http://www.hpl.hp.com/research/linux/ski/>
+	  Ski-simulator		For the HP simulator <http://www.hpl.hp.com/research/beep/ski/>
 	  Xen-domU		For xen domU system
 
 	  If you don't know what to do, choose "generic".
@@ -561,7 +561,7 @@ config KEXEC
 	  kexec is a system call that implements the ability to shutdown your
 	  current kernel, and to start another kernel.  It is like a reboot
 	  but it is independent of the system firmware.   And like a reboot
-	  you can start any kernel with it, not just Linux.
+	  you can start any kernel with it, not just Beep.
 
 	  The name comes from the similarity to the exec system call.
 

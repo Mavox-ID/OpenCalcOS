@@ -6,17 +6,17 @@
  * Copyright (C) 2006 Randy Dunlap
  */
 
-#include <linux/module.h>
-#include <linux/ata.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/libata.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
+#include <beep/module.h>
+#include <beep/ata.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/acpi.h>
+#include <beep/libata.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
 #include <scsi/scsi_device.h>
 #include "libata.h"
 

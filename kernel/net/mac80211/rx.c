@@ -9,14 +9,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/rcupdate.h>
-#include <linux/export.h>
+#include <beep/jiffies.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/rcupdate.h>
+#include <beep/export.h>
 #include <net/mac80211.h>
 #include <net/ieee80211_radiotap.h>
 #include <asm/unaligned.h>

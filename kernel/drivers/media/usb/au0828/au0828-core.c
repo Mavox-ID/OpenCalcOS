@@ -1,7 +1,7 @@
 /*
  *  Driver for the Auvitek USB bridge
  *
- *  Copyright (c) 2008 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2008 Steven Toth <stoth@beeptv.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -19,11 +19,11 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-common.h>
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 
 #include "au0828.h"
 
@@ -277,6 +277,6 @@ module_init(au0828_init);
 module_exit(au0828_exit);
 
 MODULE_DESCRIPTION("Driver for Auvitek AU0828 based products");
-MODULE_AUTHOR("Steven Toth <stoth@linuxtv.org>");
+MODULE_AUTHOR("Steven Toth <stoth@beeptv.org>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.0.2");

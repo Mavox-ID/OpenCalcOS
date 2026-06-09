@@ -6,8 +6,8 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
 
 #include "ad525x_dpot.h"
 
@@ -115,7 +115,7 @@ static struct i2c_driver ad_dpot_i2c_driver = {
 
 module_i2c_driver(ad_dpot_i2c_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("digital potentiometer I2C bus driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("i2c:ad_dpot");

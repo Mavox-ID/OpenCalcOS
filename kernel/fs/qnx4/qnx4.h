@@ -1,5 +1,5 @@
-#include <linux/fs.h>
-#include <linux/qnx4_fs.h>
+#include <beep/fs.h>
+#include <beep/qnx4_fs.h>
 
 #define QNX4_DEBUG 0
 

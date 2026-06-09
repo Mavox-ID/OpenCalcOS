@@ -1,9 +1,9 @@
-#include <linux/moduleloader.h>
-#include <linux/workqueue.h>
-#include <linux/netdevice.h>
-#include <linux/filter.h>
-#include <linux/cache.h>
-#include <linux/if_vlan.h>
+#include <beep/moduleloader.h>
+#include <beep/workqueue.h>
+#include <beep/netdevice.h>
+#include <beep/filter.h>
+#include <beep/cache.h>
+#include <beep/if_vlan.h>
 
 #include <asm/cacheflush.h>
 #include <asm/ptrace.h>

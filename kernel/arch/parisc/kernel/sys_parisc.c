@@ -2,9 +2,9 @@
 /*
  *    PARISC specific syscalls
  *
- *    Copyright (C) 1999-2003 Matthew Wilcox <willy at parisc-linux.org>
- *    Copyright (C) 2000-2003 Paul Bame <bame at parisc-linux.org>
- *    Copyright (C) 2001 Thomas Bogendoerfer <tsbogend at parisc-linux.org>
+ *    Copyright (C) 1999-2003 Matthew Wilcox <willy at parisc-beep.org>
+ *    Copyright (C) 2000-2003 Paul Bame <bame at parisc-beep.org>
+ *    Copyright (C) 2001 Thomas Bogendoerfer <tsbogend at parisc-beep.org>
  *
  *
  *    This program is free software; you can redistribute it and/or modify
@@ -23,15 +23,15 @@
  */
 
 #include <asm/uaccess.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/linkage.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/shm.h>
-#include <linux/syscalls.h>
-#include <linux/utsname.h>
-#include <linux/personality.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/linkage.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/shm.h>
+#include <beep/syscalls.h>
+#include <beep/utsname.h>
+#include <beep/personality.h>
 
 static unsigned long get_unshared_area(unsigned long addr, unsigned long len)
 {
@@ -226,13 +226,13 @@ long parisc_personality(unsigned long personality)
 {
 	long err;
 
-	if (personality(current->personality) == PER_LINUX32
-	    && personality(personality) == PER_LINUX)
-		personality = (personality & ~PER_MASK) | PER_LINUX32;
+	if (personality(current->personality) == PER_BEEP32
+	    && personality(personality) == PER_BEEP)
+		personality = (personality & ~PER_MASK) | PER_BEEP32;
 
 	err = sys_personality(personality);
-	if (personality(err) == PER_LINUX32)
-		err = (err & ~PER_MASK) | PER_LINUX;
+	if (personality(err) == PER_BEEP32)
+		err = (err & ~PER_MASK) | PER_BEEP;
 
 	return err;
 }

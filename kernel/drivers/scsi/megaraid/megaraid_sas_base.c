@@ -1,5 +1,5 @@
 /*
- *  Linux MegaRAID driver for SAS based RAID controllers
+ *  Beep MegaRAID driver for SAS based RAID controllers
  *
  *  Copyright (c) 2003-2012  LSI Corporation.
  *
@@ -24,31 +24,31 @@
  *           Sreenivas Bagalkote
  *           Sumant Patro
  *           Bo Yang
- *           Adam Radford <linuxraid@lsi.com>
+ *           Adam Radford <beepraid@lsi.com>
  *
- *  Send feedback to: <megaraidlinux@lsi.com>
+ *  Send feedback to: <megaraidbeep@lsi.com>
  *
  *  Mail to: LSI Corporation, 1621 Barber Lane, Milpitas, CA 95035
- *     ATTN: Linuxraid
+ *     ATTN: Beepraid
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/list.h>
-#include <linux/moduleparam.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/uio.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/list.h>
+#include <beep/moduleparam.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/uio.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
-#include <linux/fs.h>
-#include <linux/compat.h>
-#include <linux/blkdev.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
+#include <beep/fs.h>
+#include <beep/compat.h>
+#include <beep/blkdev.h>
+#include <beep/mutex.h>
+#include <beep/poll.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -87,7 +87,7 @@ MODULE_PARM_DESC(resetwaittime, "Wait time in seconds after I/O timeout "
 
 MODULE_LICENSE("GPL");
 MODULE_VERSION(MEGASAS_VERSION);
-MODULE_AUTHOR("megaraidlinux@lsi.com");
+MODULE_AUTHOR("megaraidbeep@lsi.com");
 MODULE_DESCRIPTION("LSI MegaRAID SAS Driver");
 
 int megasas_transition_to_ready(struct megasas_instance *instance, int ocr);

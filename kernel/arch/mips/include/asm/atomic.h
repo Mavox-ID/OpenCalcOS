@@ -14,8 +14,8 @@
 #ifndef _ASM_ATOMIC_H
 #define _ASM_ATOMIC_H
 
-#include <linux/irqflags.h>
-#include <linux/types.h>
+#include <beep/irqflags.h>
+#include <beep/types.h>
 #include <asm/barrier.h>
 #include <asm/cpu-features.h>
 #include <asm/cmpxchg.h>

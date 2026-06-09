@@ -22,8 +22,8 @@
 #ifndef __W1_INT_H
 #define __W1_INT_H
 
-#include <linux/kernel.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
 
 #include "w1.h"
 

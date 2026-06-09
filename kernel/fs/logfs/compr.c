@@ -1,13 +1,13 @@
 /*
  * fs/logfs/compr.c	- compression routines
  *
- * As should be obvious for Linux kernel code, license is GPLv2
+ * As should be obvious for Beep kernel code, license is GPLv2
  *
  * Copyright (c) 2005-2008 Joern Engel <joern@logfs.org>
  */
 #include "logfs.h"
-#include <linux/vmalloc.h>
-#include <linux/zlib.h>
+#include <beep/vmalloc.h>
+#include <beep/zlib.h>
 
 #define COMPR_LEVEL 3
 

@@ -37,7 +37,7 @@
 
 #include "libbb.h"
 
-#ifdef __linux__
+#ifdef __beep__
 #include <sys/vt.h>
 
 static void release_vt(int signo UNUSED_PARAM)
@@ -57,7 +57,7 @@ static void acquire_vt(int signo UNUSED_PARAM)
 int vlock_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int vlock_main(int argc UNUSED_PARAM, char **argv)
 {
-#ifdef __linux__
+#ifdef __beep__
 	struct vt_mode vtm;
 	struct vt_mode ovtm;
 #endif
@@ -79,7 +79,7 @@ int vlock_main(int argc UNUSED_PARAM, char **argv)
 		+ (1 << SIGINT )
 		, SIG_IGN);
 
-#ifdef __linux__
+#ifdef __beep__
 	/* We will use SIGUSRx for console switch control: */
 	/* 1: set handlers */
 	signal_SA_RESTART_empty_mask(SIGUSR1, release_vt);
@@ -94,7 +94,7 @@ int vlock_main(int argc UNUSED_PARAM, char **argv)
 	xmove_fd(xopen(CURRENT_TTY, O_RDWR), STDIN_FILENO);
 	xdup2(STDIN_FILENO, STDOUT_FILENO);
 
-#ifdef __linux__
+#ifdef __beep__
 	xioctl(STDIN_FILENO, VT_GETMODE, &vtm);
 	ovtm = vtm;
 	/* "console switches are controlled by us, not kernel!" */
@@ -124,7 +124,7 @@ int vlock_main(int argc UNUSED_PARAM, char **argv)
 		puts("Incorrect password");
 	}
 
-#ifdef __linux__
+#ifdef __beep__
 	ioctl(STDIN_FILENO, VT_SETMODE, &ovtm);
 #endif
 	tcsetattr_stdin_TCSANOW(&oterm);

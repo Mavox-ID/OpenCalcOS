@@ -1,5 +1,5 @@
 
-/* Advanced  Micro Devices Inc. AMD8111E Linux Network Driver
+/* Advanced  Micro Devices Inc. AMD8111E Beep Network Driver
  * Copyright (C) 2004 Advanced Micro Devices
  *
  *
@@ -69,24 +69,24 @@ Revision History:
 */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/if_vlan.h>
-#include <linux/ctype.h>
-#include <linux/crc32.h>
-#include <linux/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/compiler.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/if_vlan.h>
+#include <beep/ctype.h>
+#include <beep/crc32.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/io.h>
 #include <asm/byteorder.h>

@@ -1,21 +1,21 @@
 /*
  * Architecture specific OF callbacks.
  */
-#include <linux/bootmem.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/irqdomain.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/of_pci.h>
-#include <linux/initrd.h>
+#include <beep/bootmem.h>
+#include <beep/export.h>
+#include <beep/io.h>
+#include <beep/irqdomain.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/of.h>
+#include <beep/of_fdt.h>
+#include <beep/of_address.h>
+#include <beep/of_platform.h>
+#include <beep/of_irq.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/of_pci.h>
+#include <beep/initrd.h>
 
 #include <asm/hpet.h>
 #include <asm/apic.h>

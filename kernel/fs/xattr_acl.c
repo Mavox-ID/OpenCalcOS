@@ -1,15 +1,15 @@
 /*
- * linux/fs/xattr_acl.c
+ * beep/fs/xattr_acl.c
  *
- * Almost all from linux/fs/ext2/acl.c:
+ * Almost all from beep/fs/ext2/acl.c:
  * Copyright (C) 2001 by Andreas Gruenbacher, <a.gruenbacher@computer.org>
  */
 
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/gfp.h>
-#include <linux/user_namespace.h>
+#include <beep/export.h>
+#include <beep/fs.h>
+#include <beep/posix_acl_xattr.h>
+#include <beep/gfp.h>
+#include <beep/user_namespace.h>
 
 /*
  * Fix up the uids and gids in posix acl extended attributes in place.

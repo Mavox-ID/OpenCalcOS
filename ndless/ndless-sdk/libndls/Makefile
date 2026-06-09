@@ -2,7 +2,7 @@ AS = nspire-as
 GCC = nspire-gcc
 GXX = nspire-g++
 LD = nspire-ld
-AR := "$(shell (which arm-elf-ar arm-none-eabi-ar arm-linux-gnueabi-ar | head -1) 2>/dev/null)"
+AR := "$(shell (which arm-elf-ar arm-none-eabi-ar arm-beep-gnueabi-ar | head -1) 2>/dev/null)"
 
 GCCFLAGS = -O2 -funroll-loops -nostdlib -Wall -Werror -Wextra -ffunction-sections -fdata-sections
 GXXFLAGS = $(GCCFLAGS) -fno-rtti -fno-exceptions -std=c++11

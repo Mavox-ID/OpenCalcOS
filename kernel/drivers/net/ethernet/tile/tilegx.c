@@ -12,31 +12,31 @@
  *   more details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>      /* printk() */
-#include <linux/slab.h>        /* kmalloc() */
-#include <linux/errno.h>       /* error codes */
-#include <linux/types.h>       /* size_t */
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/irq.h>
-#include <linux/netdevice.h>   /* struct device, and other headers */
-#include <linux/etherdevice.h> /* eth_type_trans */
-#include <linux/skbuff.h>
-#include <linux/ioctl.h>
-#include <linux/cdev.h>
-#include <linux/hugetlb.h>
-#include <linux/in6.h>
-#include <linux/timer.h>
-#include <linux/hrtimer.h>
-#include <linux/ktime.h>
-#include <linux/io.h>
-#include <linux/ctype.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/moduleparam.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>      /* printk() */
+#include <beep/slab.h>        /* kmalloc() */
+#include <beep/errno.h>       /* error codes */
+#include <beep/types.h>       /* size_t */
+#include <beep/interrupt.h>
+#include <beep/in.h>
+#include <beep/irq.h>
+#include <beep/netdevice.h>   /* struct device, and other headers */
+#include <beep/etherdevice.h> /* eth_type_trans */
+#include <beep/skbuff.h>
+#include <beep/ioctl.h>
+#include <beep/cdev.h>
+#include <beep/hugetlb.h>
+#include <beep/in6.h>
+#include <beep/timer.h>
+#include <beep/hrtimer.h>
+#include <beep/ktime.h>
+#include <beep/io.h>
+#include <beep/ctype.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
 
 #include <asm/checksum.h>
 #include <asm/homecache.h>
@@ -270,7 +270,7 @@ static bool network_cpus_init(void)
 	}
 
 	cpulist_scnprintf(buf, sizeof(buf), &network_cpus_map);
-	pr_info("Linux network CPUs: %s\n", buf);
+	pr_info("Beep network CPUs: %s\n", buf);
 	return true;
 }
 
@@ -279,9 +279,9 @@ MODULE_PARM_DESC(cpus, "cpulist of cores that handle network interrupts");
 
 /* The "tile_net.loopify=LINK" argument causes the named device to
  * actually use "loop0" for ingress, and "loop1" for egress.  This
- * allows an app to sit between the actual link and linux, passing
- * (some) packets along to linux, and forwarding (some) packets sent
- * out by linux.
+ * allows an app to sit between the actual link and beep, passing
+ * (some) packets along to beep, and forwarding (some) packets sent
+ * out by beep.
  */
 module_param_named(loopify, loopify_link_name, charp, 0444);
 MODULE_PARM_DESC(loopify, "name the device to use loop0/1 for ingress/egress");
@@ -347,7 +347,7 @@ static struct sk_buff *mpipe_buf_to_skb(void *va)
 		 * that corrupt buffers means generic memory
 		 * corruption, with unpredictable system effects.
 		 */
-		panic("Corrupt linux buffer! va=%p, skb=%p, skb->data=%p",
+		panic("Corrupt beep buffer! va=%p, skb=%p, skb->data=%p",
 		      va, skb, skb->data);
 	}
 
@@ -365,7 +365,7 @@ static void tile_net_pop_all_buffers(int stack)
 	}
 }
 
-/* Provide linux buffers to mPIPE. */
+/* Provide beep buffers to mPIPE. */
 static void tile_net_provide_needed_buffers(void)
 {
 	struct tile_net_info *info = &__get_cpu_var(per_cpu_info);
@@ -1246,7 +1246,7 @@ fail:
 	tile_net_devs_for_channel[priv->channel] = NULL;
 	mutex_unlock(&tile_net_devs_for_channel_mutex);
 
-	/* Don't return raw gxio error codes to generic Linux. */
+	/* Don't return raw gxio error codes to generic Beep. */
 	return (rc > -512) ? rc : -EIO;
 }
 

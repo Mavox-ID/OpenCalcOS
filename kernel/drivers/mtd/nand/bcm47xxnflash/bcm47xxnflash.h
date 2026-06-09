@@ -1,8 +1,8 @@
 #ifndef __BCM47XXNFLASH_H
 #define __BCM47XXNFLASH_H
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
 
 struct bcm47xxnflash {
 	struct bcma_drv_cc *cc;

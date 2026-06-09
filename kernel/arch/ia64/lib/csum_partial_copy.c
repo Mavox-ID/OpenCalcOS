@@ -4,12 +4,12 @@
  * Copyright (C) 1999, 2003-2004 Hewlett-Packard Co
  *	Stephane Eranian <eranian@hpl.hp.com>
  *
- * Most of the code has been imported from Linux/Alpha
+ * Most of the code has been imported from Beep/Alpha
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/string.h>
 
 #include <asm/uaccess.h>
 

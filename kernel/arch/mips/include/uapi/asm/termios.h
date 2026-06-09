@@ -9,7 +9,7 @@
 #ifndef _UAPI_ASM_TERMIOS_H
 #define _UAPI_ASM_TERMIOS_H
 
-#include <linux/errno.h>
+#include <beep/errno.h>
 #include <asm/termbits.h>
 #include <asm/ioctls.h>
 

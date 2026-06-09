@@ -30,7 +30,7 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include "iw_cxgb4.h"
 

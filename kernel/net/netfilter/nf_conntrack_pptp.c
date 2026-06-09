@@ -20,17 +20,17 @@
  *	 - testing of incoming PPTP calls
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
-#include <linux/tcp.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/in.h>
+#include <beep/tcp.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_core.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_zones.h>
-#include <linux/netfilter/nf_conntrack_proto_gre.h>
-#include <linux/netfilter/nf_conntrack_pptp.h>
+#include <beep/netfilter/nf_conntrack_proto_gre.h>
+#include <beep/netfilter/nf_conntrack_pptp.h>
 
 #define NF_CT_PPTP_VERSION "3.1"
 

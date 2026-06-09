@@ -12,8 +12,8 @@
  * (C) 1999             David A. Hinds
  */
 
-#ifndef _LINUX_CISREG_H
-#define _LINUX_CISREG_H
+#ifndef _BEEP_CISREG_H
+#define _BEEP_CISREG_H
 
 /*
  * Offsets from ConfigBase for CIS registers
@@ -117,4 +117,4 @@
 #define ICTRL0_AUTOINC		0x02
 #define ICTRL0_BYTEGRAN		0x04
 
-#endif /* _LINUX_CISREG_H */
+#endif /* _BEEP_CISREG_H */

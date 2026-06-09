@@ -15,7 +15,7 @@ deps_config := \
 	security/apparmor/Kconfig \
 	security/tomoyo/Kconfig \
 	security/smack/Kconfig \
-	security/selinux/Kconfig \
+	security/sebeep/Kconfig \
 	security/keys/Kconfig \
 	security/Kconfig \
 	lib/Kconfig.kmemcheck \

@@ -8,18 +8,18 @@
  * the Free Software Foundation; version 2 of the License.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/ds1wm.h>
-#include <linux/mfd/htc-pasic3.h>
-#include <linux/slab.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/ds1wm.h>
+#include <beep/mfd/htc-pasic3.h>
+#include <beep/slab.h>
 
 struct pasic3_data {
 	void __iomem *mapping;

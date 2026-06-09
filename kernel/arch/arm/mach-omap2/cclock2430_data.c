@@ -13,10 +13,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/clk-private.h>
-#include <linux/list.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/clk-private.h>
+#include <beep/list.h>
 
 #include "soc.h"
 #include "iomap.h"

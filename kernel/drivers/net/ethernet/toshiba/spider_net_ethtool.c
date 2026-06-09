@@ -21,9 +21,9 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/pci.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/pci.h>
 
 #include "spider_net.h"
 

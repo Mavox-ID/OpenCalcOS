@@ -23,10 +23,10 @@
 #ifndef _DVB_DEMUX_H_
 #define _DVB_DEMUX_H_
 
-#include <linux/time.h>
-#include <linux/timer.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
+#include <beep/time.h>
+#include <beep/timer.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
 
 #include "demux.h"
 

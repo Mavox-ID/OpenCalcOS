@@ -7,9 +7,9 @@
 
 #define pr_fmt(fmt)	"mop500-uib: " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
 
 #include <mach/hardware.h>
 #include "board-mop500.h"

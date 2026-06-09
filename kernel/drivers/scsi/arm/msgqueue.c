@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/acorn/scsi/msgqueue.c
+ *  beep/drivers/acorn/scsi/msgqueue.c
  *
  *  Copyright (C) 1997-1998 Russell King
  *
@@ -9,10 +9,10 @@
  *
  *  message queue handling
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/stddef.h>
+#include <beep/init.h>
 
 #include "msgqueue.h"
 

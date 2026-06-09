@@ -19,13 +19,13 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/88pm80x.h>
-#include <linux/rtc.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/regmap.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/88pm80x.h>
+#include <beep/rtc.h>
 
 #define PM800_RTC_COUNTER1		(0xD1)
 #define PM800_RTC_COUNTER2		(0xD2)

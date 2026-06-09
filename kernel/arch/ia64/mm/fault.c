@@ -4,13 +4,13 @@
  * Copyright (C) 1998-2002 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/prefetch.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/kprobes.h>
+#include <beep/kdebug.h>
+#include <beep/prefetch.h>
 
 #include <asm/pgtable.h>
 #include <asm/processor.h>
@@ -143,7 +143,7 @@ retry:
 
 #	if (((1 << VM_READ_BIT) != VM_READ || (1 << VM_WRITE_BIT) != VM_WRITE) \
 	    || (1 << VM_EXEC_BIT) != VM_EXEC)
-#		error File is out of sync with <linux/mm.h>.  Please update.
+#		error File is out of sync with <beep/mm.h>.  Please update.
 #	endif
 
 	if (((isr >> IA64_ISR_R_BIT) & 1UL) && (!(vma->vm_flags & (VM_READ | VM_WRITE))))

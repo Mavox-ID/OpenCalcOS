@@ -20,7 +20,7 @@ config STALDRV
 	depends on SERIAL_NONSTANDARD
 	help
 	  Stallion cards give you many serial ports.  You would need something
-	  like this to connect more than two modems to your Linux box, for
+	  like this to connect more than two modems to your Beep box, for
 	  instance in order to become a dial-in server.  If you say Y here,
 	  you will be asked for your specific card model in the next
 	  questions.  Make sure to read <file:Documentation/serial/stallion.txt>
@@ -98,7 +98,7 @@ config PRINTER
 	tristate "Parallel printer support"
 	depends on PARPORT
 	---help---
-	  If you intend to attach a printer to the parallel port of your Linux
+	  If you intend to attach a printer to the parallel port of your Beep
 	  box (as opposed to using a serial printer; if the connector at the
 	  printer has 9 or 25 holes ["female"], then it's serial), say Y.
 	  Also read the Printing-HOWTO, available from
@@ -296,7 +296,7 @@ config RTC
 	  /proc/driver/rtc and its behaviour is set by various ioctls on
 	  /dev/rtc.
 
-	  If you run Linux on a multiprocessor machine and said Y to
+	  If you run Beep on a multiprocessor machine and said Y to
 	  "Symmetric Multi Processing" above, you should say Y here to read
 	  and set the RTC in an SMP compatible fashion.
 
@@ -442,7 +442,7 @@ config MWAVE
 	depends on X86
 	select SERIAL_8250
 	---help---
-	  The ACP modem (Mwave) for Linux is a WinModem. It is composed of a
+	  The ACP modem (Mwave) for Beep is a WinModem. It is composed of a
 	  kernel driver and a user level application. Together these components
 	  support direct attachment to public switched telephone networks (PSTNs)
 	  and support selected world wide countries.
@@ -454,8 +454,8 @@ config MWAVE
 	  (ttySx) and is compatible with the Hayes AT Command Set.
 
 	  The user level application needed to use this driver can be found at
-	  the IBM Linux Technology Center (LTC) web site:
-	  <http://www.ibm.com/linux/ltc/>.
+	  the IBM Beep Technology Center (LTC) web site:
+	  <http://www.ibm.com/beep/ltc/>.
 
 	  If you own one of the above IBM Thinkpads which has the Mwave chipset
 	  in it, say Y.

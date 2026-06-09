@@ -1,11 +1,11 @@
 /*
- *	Real Time Clock interface for Linux on Atmel AT91RM9200
+ *	Real Time Clock interface for Beep on Atmel AT91RM9200
  *
  *	Copyright (C) 2002 Rick Bronson
  *
  *	Converted to RTC class model by Andrew Victor
  *
- *	Ported to Linux 2.6 by Steven Scholz
+ *	Ported to Beep 2.6 by Steven Scholz
  *	Based on s3c2410-rtc.c Simtec Electronics
  *
  *	Based on sa1100-rtc.c by Nils Faerber
@@ -18,16 +18,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/time.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/completion.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/time.h>
+#include <beep/rtc.h>
+#include <beep/bcd.h>
+#include <beep/interrupt.h>
+#include <beep/ioctl.h>
+#include <beep/completion.h>
+#include <beep/io.h>
 
 #include <asm/uaccess.h>
 

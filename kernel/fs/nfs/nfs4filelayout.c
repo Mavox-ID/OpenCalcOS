@@ -29,11 +29,11 @@
  *  such damages.
  */
 
-#include <linux/nfs_fs.h>
-#include <linux/nfs_page.h>
-#include <linux/module.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_page.h>
+#include <beep/module.h>
 
-#include <linux/sunrpc/metrics.h>
+#include <beep/sunrpc/metrics.h>
 
 #include "nfs4session.h"
 #include "internal.h"

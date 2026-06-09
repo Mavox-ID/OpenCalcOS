@@ -13,24 +13,24 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
-#include <linux/pagemap.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/syscalls.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/vme.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/mm.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/pci.h>
+#include <beep/poll.h>
+#include <beep/highmem.h>
+#include <beep/interrupt.h>
+#include <beep/pagemap.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/syscalls.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/vme.h>
 
 #include "vme_bridge.h"
 

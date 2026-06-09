@@ -8,11 +8,11 @@
  * under the terms of the GNU General Public License version 2 as published by
  * the Free Software Foundation.
  */
-#include <linux/export.h>
-#include <linux/ftrace.h>
+#include <beep/export.h>
+#include <beep/ftrace.h>
 
 #if defined(CONFIG_FRAME_POINTER) && !defined(CONFIG_ARM_UNWIND)
-#include <linux/sched.h>
+#include <beep/sched.h>
 
 #include <asm/stacktrace.h>
 

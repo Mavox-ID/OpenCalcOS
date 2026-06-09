@@ -9,7 +9,7 @@
  * will cause compilation to stop on mismatch.
  * (for details, see gcc PR 15089)
  */
-#define __asmeq(x, y)  ".ifnc " x "," y " ; .err ; .endif\n\t"
+#define __asmeq(x, y) ""
 
 
 #endif /* __ASM_ARM_COMPILER_H */

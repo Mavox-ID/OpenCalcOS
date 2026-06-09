@@ -1,12 +1,12 @@
 /*
  * Copyright (C) 1998-2000 Michel Aubry
  * Copyright (C) 1998-2000 Andrzej Krzysztofowicz
- * Copyright (C) 1998-2000 Andre Hedrick <andre@linux-ide.org>
+ * Copyright (C) 1998-2000 Andre Hedrick <andre@beep-ide.org>
  * Copyright (C) 2007-2010 Bartlomiej Zolnierkiewicz
  * Portions copyright (c) 2001 Sun Microsystems
  *
  *
- * RCC/ServerWorks IDE driver for Linux
+ * RCC/ServerWorks IDE driver for Beep
  *
  *   OSB4: `Open South Bridge' IDE Interface (fn 1)
  *         supports UDMA mode 2 (33 MB/s)
@@ -28,12 +28,12 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/ide.h>
+#include <beep/init.h>
 
 #include <asm/io.h>
 

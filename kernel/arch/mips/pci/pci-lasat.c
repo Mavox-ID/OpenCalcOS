@@ -5,10 +5,10 @@
  *
  * Copyright (C) 2000, 2001, 04 Keith M Wesolowski
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/types.h>
 
 #include <asm/lasat/lasat.h>
 

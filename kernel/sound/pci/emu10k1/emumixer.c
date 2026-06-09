@@ -30,11 +30,11 @@
  *
  */
 
-#include <linux/time.h>
-#include <linux/init.h>
+#include <beep/time.h>
+#include <beep/init.h>
 #include <sound/core.h>
 #include <sound/emu10k1.h>
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include <sound/tlv.h>
 
 #include "p17v.h"

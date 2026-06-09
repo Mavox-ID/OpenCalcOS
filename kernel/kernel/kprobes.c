@@ -31,23 +31,23 @@
  *		<jkenisto@us.ibm.com> and Prasanna S Panchamukhi
  *		<prasanna@in.ibm.com> added function-return probes.
  */
-#include <linux/kprobes.h>
-#include <linux/hash.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/export.h>
-#include <linux/moduleloader.h>
-#include <linux/kallsyms.h>
-#include <linux/freezer.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/sysctl.h>
-#include <linux/kdebug.h>
-#include <linux/memory.h>
-#include <linux/ftrace.h>
-#include <linux/cpu.h>
-#include <linux/jump_label.h>
+#include <beep/kprobes.h>
+#include <beep/hash.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/stddef.h>
+#include <beep/export.h>
+#include <beep/moduleloader.h>
+#include <beep/kallsyms.h>
+#include <beep/freezer.h>
+#include <beep/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/sysctl.h>
+#include <beep/kdebug.h>
+#include <beep/memory.h>
+#include <beep/ftrace.h>
+#include <beep/cpu.h>
+#include <beep/jump_label.h>
 
 #include <asm-generic/sections.h>
 #include <asm/cacheflush.h>

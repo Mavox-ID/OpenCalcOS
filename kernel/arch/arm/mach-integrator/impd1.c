@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-integrator/impd1.c
+ *  beep/arch/arm/mach-integrator/impd1.c
  *
  *  Copyright (C) 2003 Deep Blue Solutions Ltd, All Rights Reserved.
  *
@@ -12,17 +12,17 @@
  * Module / boot parameters.
  *   lmid=n   impd1.lmid=n - set the logic module position in stack to 'n'
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/clcd.h>
-#include <linux/io.h>
-#include <linux/platform_data/clk-integrator.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/clcd.h>
+#include <beep/io.h>
+#include <beep/platform_data/clk-integrator.h>
+#include <beep/slab.h>
 
 #include <mach/lm.h>
 #include <mach/impd1.h>

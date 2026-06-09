@@ -12,17 +12,17 @@
 *
 */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/machine.h>
 
-#include <linux/mfd/da9055/core.h>
-#include <linux/mfd/da9055/reg.h>
-#include <linux/mfd/da9055/pdata.h>
+#include <beep/mfd/da9055/core.h>
+#include <beep/mfd/da9055/reg.h>
+#include <beep/mfd/da9055/pdata.h>
 
 #define DA9055_MIN_UA		0
 #define DA9055_MAX_UA		3

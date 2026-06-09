@@ -9,20 +9,20 @@
  *	Authors:	Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>
  */
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/in6.h>
-#include <linux/route.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/pid_namespace.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/net.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/in6.h>
+#include <beep/route.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/pid_namespace.h>
 
 #include <net/net_namespace.h>
 #include <net/sock.h>

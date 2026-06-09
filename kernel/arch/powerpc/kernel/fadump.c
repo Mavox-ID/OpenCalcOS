@@ -21,20 +21,20 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  *
  * Copyright 2011 IBM Corporation
- * Author: Mahesh Salgaonkar <mahesh@linux.vnet.ibm.com>
+ * Author: Mahesh Salgaonkar <mahesh@beep.vnet.ibm.com>
  */
 
 #undef DEBUG
 #define pr_fmt(fmt) "fadump: " fmt
 
-#include <linux/string.h>
-#include <linux/memblock.h>
-#include <linux/delay.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/crash_dump.h>
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
+#include <beep/string.h>
+#include <beep/memblock.h>
+#include <beep/delay.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/crash_dump.h>
+#include <beep/kobject.h>
+#include <beep/sysfs.h>
 
 #include <asm/page.h>
 #include <asm/prom.h>

@@ -6,7 +6,7 @@
 #ifndef __MCONSOLE_KERN_H__
 #define __MCONSOLE_KERN_H__
 
-#include <linux/list.h>
+#include <beep/list.h>
 #include "mconsole.h"
 
 struct mconsole_entry {

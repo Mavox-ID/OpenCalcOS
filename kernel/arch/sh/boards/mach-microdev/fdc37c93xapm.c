@@ -9,12 +9,12 @@
  * SuperH SH4-202 MicroDev board support.
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See beep/COPYING for more information.
  */
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/err.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
+#include <beep/err.h>
 #include <mach/microdev.h>
 
 #define SMSC_CONFIG_PORT_ADDR	 (0x3F0)

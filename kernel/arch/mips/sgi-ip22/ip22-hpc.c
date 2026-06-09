@@ -5,9 +5,9 @@
  * Copyright (C) 1998 Ralf Baechle
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/types.h>
 
 #include <asm/io.h>
 #include <asm/sgi/hpc3.h>

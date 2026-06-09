@@ -21,19 +21,19 @@
  * Please address comments and feedback to Linas Vepstas <linas@austin.ibm.com>
  */
 
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/rbtree.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/of.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/pci.h>
+#include <beep/proc_fs.h>
+#include <beep/rbtree.h>
+#include <beep/seq_file.h>
+#include <beep/spinlock.h>
+#include <beep/export.h>
+#include <beep/of.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/eeh.h>
 #include <asm/eeh_event.h>
 #include <asm/io.h>
@@ -261,7 +261,7 @@ static inline unsigned long eeh_token_to_phys(unsigned long token)
 	pte_t *ptep;
 	unsigned long pa;
 
-	ptep = find_linux_pte(init_mm.pgd, token);
+	ptep = find_beep_pte(init_mm.pgd, token);
 	if (!ptep)
 		return token;
 	pa = pte_pfn(*ptep) << PAGE_SHIFT;
@@ -666,7 +666,7 @@ int __exit eeh_ops_unregister(const char *name)
  * As a side effect we can determine here if eeh is supported at all.
  * Note that we leave EEH on so failed config cycles won't cause a machine
  * check.  If a user turns off EEH for a particular adapter they are really
- * telling Linux to ignore errors.  Some hardware (e.g. POWER5) won't
+ * telling Beep to ignore errors.  Some hardware (e.g. POWER5) won't
  * grant access to a slot if EEH isn't enabled, and so we always enable
  * EEH for all slots/all devices.
  *

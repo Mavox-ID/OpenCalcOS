@@ -15,13 +15,13 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_pdt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/of_pdt.h>
 #include <asm/prom.h>
 
 static struct of_pdt_ops *of_pdt_prom_ops __initdata;

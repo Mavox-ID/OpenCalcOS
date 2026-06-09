@@ -1,4 +1,4 @@
-#include <linux/fs.h>
+#include <beep/fs.h>
 
 #include "headers.h"
 /***************************************************************

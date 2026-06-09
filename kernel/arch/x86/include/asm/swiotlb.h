@@ -1,7 +1,7 @@
 #ifndef _ASM_X86_SWIOTLB_H
 #define _ASM_X86_SWIOTLB_H
 
-#include <linux/swiotlb.h>
+#include <beep/swiotlb.h>
 
 #ifdef CONFIG_SWIOTLB
 extern int swiotlb;

@@ -32,16 +32,16 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/random.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/kref.h>
-#include <linux/idr.h>
-#include <linux/workqueue.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/random.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/kref.h>
+#include <beep/idr.h>
+#include <beep/workqueue.h>
 
 #include <rdma/ib_pack.h>
 #include <rdma/ib_cache.h>

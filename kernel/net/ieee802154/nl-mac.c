@@ -22,15 +22,15 @@
  * Maxim Osipov <maxim.osipov@siemens.com>
  */
 
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
+#include <beep/gfp.h>
+#include <beep/kernel.h>
+#include <beep/if_arp.h>
+#include <beep/netdevice.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>
 #include <net/sock.h>
-#include <linux/nl802154.h>
-#include <linux/export.h>
+#include <beep/nl802154.h>
+#include <beep/export.h>
 #include <net/af_ieee802154.h>
 #include <net/nl802154.h>
 #include <net/ieee802154.h>

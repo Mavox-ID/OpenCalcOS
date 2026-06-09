@@ -3,9 +3,9 @@
  *
  * Author: John Rigby <jrigby@freescale.com>
  *
- * Implements the clk api defined in include/linux/clk.h
+ * Implements the clk api defined in include/beep/clk.h
  *
- *    Original based on linux/arch/arm/mach-integrator/clock.c
+ *    Original based on beep/arch/arm/mach-integrator/clock.c
  *
  *    Copyright (C) 2004 ARM Limited.
  *    Written by Deep Blue Solutions Limited.
@@ -14,17 +14,17 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/clk.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/clk.h>
+#include <beep/mutex.h>
+#include <beep/io.h>
 
-#include <linux/of_platform.h>
+#include <beep/of_platform.h>
 #include <asm/mpc5xxx.h>
 #include <asm/clk_interface.h>
 

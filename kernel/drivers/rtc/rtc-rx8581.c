@@ -12,11 +12,11 @@
  * Copyright 2005-06 Tower Technologies
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/log2.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/bcd.h>
+#include <beep/rtc.h>
+#include <beep/log2.h>
 
 #define DRV_VERSION "0.1"
 

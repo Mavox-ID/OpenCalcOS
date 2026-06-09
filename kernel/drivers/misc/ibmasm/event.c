@@ -22,8 +22,8 @@
  *
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 #include "ibmasm.h"
 #include "lowlevel.h"
 

@@ -9,10 +9,10 @@
  *		IPv6 support
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv6.h>
 #include <net/ipv6.h>
 #include <net/xfrm.h>
 
@@ -68,7 +68,7 @@ int xfrm6_input_addr(struct sk_buff *skb, xfrm_address_t *daddr,
 
 		sp = secpath_dup(skb->sp);
 		if (!sp) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINERROR);
+			XFRM_INC_STATS(net, BEEP_MIB_XFRMINERROR);
 			goto drop;
 		}
 		if (skb->sp)
@@ -77,7 +77,7 @@ int xfrm6_input_addr(struct sk_buff *skb, xfrm_address_t *daddr,
 	}
 
 	if (1 + skb->sp->len == XFRM_MAX_DEPTH) {
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMINBUFFERERROR);
+		XFRM_INC_STATS(net, BEEP_MIB_XFRMINBUFFERERROR);
 		goto drop;
 	}
 
@@ -123,7 +123,7 @@ int xfrm6_input_addr(struct sk_buff *skb, xfrm_address_t *daddr,
 	}
 
 	if (!x) {
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMINNOSTATES);
+		XFRM_INC_STATS(net, BEEP_MIB_XFRMINNOSTATES);
 		xfrm_audit_state_notfound_simple(skb, AF_INET6);
 		goto drop;
 	}

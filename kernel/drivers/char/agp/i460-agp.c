@@ -7,13 +7,13 @@
  * 460GX support by Chris Ahna <christopher.j.ahna@intel.com>
  * Clean up & simplification by David Mosberger-Tang <davidm@hpl.hp.com>
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/agp_backend.h>
-#include <linux/log2.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/agp_backend.h>
+#include <beep/log2.h>
 
 #include "agp.h"
 

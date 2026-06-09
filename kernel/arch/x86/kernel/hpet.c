@@ -1,16 +1,16 @@
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/i8253.h>
-#include <linux/slab.h>
-#include <linux/hpet.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/pm.h>
-#include <linux/io.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/interrupt.h>
+#include <beep/export.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/i8253.h>
+#include <beep/slab.h>
+#include <beep/hpet.h>
+#include <beep/init.h>
+#include <beep/cpu.h>
+#include <beep/pm.h>
+#include <beep/io.h>
 
 #include <asm/fixmap.h>
 #include <asm/hpet.h>
@@ -998,8 +998,8 @@ void hpet_disable(void)
  * For (3), we use interrupts at 64Hz or user specified periodic
  * frequency, whichever is higher.
  */
-#include <linux/mc146818rtc.h>
-#include <linux/rtc.h>
+#include <beep/mc146818rtc.h>
+#include <beep/rtc.h>
 #include <asm/rtc.h>
 
 #define DEFAULT_RTC_INT_FREQ	64

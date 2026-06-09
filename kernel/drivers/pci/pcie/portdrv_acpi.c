@@ -8,12 +8,12 @@
  * for more details.
  */
 
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/acpi.h>
-#include <linux/pci-acpi.h>
-#include <linux/pcieport_if.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/acpi.h>
+#include <beep/pci-acpi.h>
+#include <beep/pcieport_if.h>
 
 #include "aer/aerdrv.h"
 #include "../pci.h"

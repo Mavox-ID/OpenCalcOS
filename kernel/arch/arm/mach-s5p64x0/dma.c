@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5p64x0/dma.c
+/* beep/arch/arm/mach-s5p64x0/dma.c
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -21,9 +21,9 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 */
 
-#include <linux/dma-mapping.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/pl330.h>
+#include <beep/dma-mapping.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/pl330.h>
 
 #include <asm/irq.h>
 

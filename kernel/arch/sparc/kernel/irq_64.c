@@ -2,30 +2,30 @@
  *
  * Copyright (C) 1997, 2007, 2008 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1998  Eddie C. Dost    (ecd@skynet.be)
- * Copyright (C) 1998  Jakub Jelinek    (jj@ultra.linux.cz)
+ * Copyright (C) 1998  Jakub Jelinek    (jj@ultra.beep.cz)
  */
 
-#include <linux/sched.h>
-#include <linux/linkage.h>
-#include <linux/ptrace.h>
-#include <linux/errno.h>
-#include <linux/kernel_stat.h>
-#include <linux/signal.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/ftrace.h>
-#include <linux/irq.h>
-#include <linux/kmemleak.h>
+#include <beep/sched.h>
+#include <beep/linkage.h>
+#include <beep/ptrace.h>
+#include <beep/errno.h>
+#include <beep/kernel_stat.h>
+#include <beep/signal.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/random.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/ftrace.h>
+#include <beep/irq.h>
+#include <beep/kmemleak.h>
 
 #include <asm/ptrace.h>
 #include <asm/processor.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/irq.h>
 #include <asm/io.h>
 #include <asm/iommu.h>

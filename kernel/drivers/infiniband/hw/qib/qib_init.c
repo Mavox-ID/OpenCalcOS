@@ -32,13 +32,13 @@
  * SOFTWARE.
  */
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/idr.h>
-#include <linux/module.h>
-#include <linux/printk.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/vmalloc.h>
+#include <beep/delay.h>
+#include <beep/idr.h>
+#include <beep/module.h>
+#include <beep/printk.h>
 
 #include "qib.h"
 #include "qib_common.h"

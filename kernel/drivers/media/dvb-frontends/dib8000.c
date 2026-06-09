@@ -1,5 +1,5 @@
 /*
- * Linux-DVB Driver for DiBcom's DiB8000 chip (ISDB-T).
+ * Beep-DVB Driver for DiBcom's DiB8000 chip (ISDB-T).
  *
  * Copyright (C) 2009 DiBcom (http://www.dibcom.fr/)
  *
@@ -7,10 +7,10 @@
  *  modify it under the terms of the GNU General Public License as
  *  published by the Free Software Foundation, version 2.
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
 
 #include "dvb_math.h"
 

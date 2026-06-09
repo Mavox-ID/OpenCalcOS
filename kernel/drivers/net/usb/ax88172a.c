@@ -26,7 +26,7 @@
  */
 
 #include "asix.h"
-#include <linux/phy.h>
+#include <beep/phy.h>
 
 struct ax88172a_private {
 	struct mii_bus *mdio;

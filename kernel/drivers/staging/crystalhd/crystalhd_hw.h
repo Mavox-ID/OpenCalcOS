@@ -4,7 +4,7 @@
  *  Name: crystalhd_hw . h
  *
  *  Description:
- *		BCM70012 Linux driver hardware layer.
+ *		BCM70012 Beep driver hardware layer.
  *
  *  HISTORY:
  *

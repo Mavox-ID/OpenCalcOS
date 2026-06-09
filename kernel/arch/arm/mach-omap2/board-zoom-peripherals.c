@@ -8,18 +8,18 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/gpio.h>
-#include <linux/i2c/twl.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
-#include <linux/wl12xx.h>
-#include <linux/mmc/host.h>
-#include <linux/platform_data/gpio-omap.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/gpio.h>
+#include <beep/i2c/twl.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/fixed.h>
+#include <beep/wl12xx.h>
+#include <beep/mmc/host.h>
+#include <beep/platform_data/gpio-omap.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

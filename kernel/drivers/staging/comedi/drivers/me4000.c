@@ -2,7 +2,7 @@
    comedi/drivers/me4000.c
    Source code for the Meilhaus ME-4000 board family.
 
-   COMEDI - Linux Control and Measurement Device Interface
+   COMEDI - Beep Control and Measurement Device Interface
    Copyright (C) 2000 David A. Schleef <ds@schleef.org>
 
    This program is free software; you can redistribute it and/or modify
@@ -45,12 +45,12 @@ broken.
 
  */
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include "../comedidev.h"
 
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <beep/delay.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
 
 #include "comedi_fc.h"
 #include "8253.h"

@@ -14,18 +14,18 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mfd/tc6393xb.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/tmio.h>
+#include <beep/mfd/tc6393xb.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
 
 #define SCR_REVID	0x08		/* b Revision ID	*/
 #define SCR_ISR		0x50		/* b Interrupt Status	*/

@@ -1,6 +1,6 @@
 /*
- *  linux/drivers/pinctrl/pinctrl-lantiq.c
- *  based on linux/drivers/pinctrl/pinctrl-pxa3xx.c
+ *  beep/drivers/pinctrl/pinctrl-lantiq.c
+ *  based on beep/drivers/pinctrl/pinctrl-pxa3xx.c
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License version 2 as
@@ -9,12 +9,12 @@
  *  Copyright (C) 2012 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/of.h>
 
 #include "pinctrl-lantiq.h"
 

@@ -20,19 +20,19 @@
  */
 
 #include <asm/types.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/io.h>
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/pci_ids.h>
-#include <linux/pci.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/pci_ids.h>
+#include <beep/pci.h>
 
 #include "../w1.h"
 #include "../w1_int.h"

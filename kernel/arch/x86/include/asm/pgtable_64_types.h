@@ -2,7 +2,7 @@
 #define _ASM_X86_PGTABLE_64_DEFS_H
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * These are used to make use of C type-checking..

@@ -19,11 +19,11 @@
  * (at your option) any later version.
  */
 
-#include <linux/hardirq.h>
-#include <linux/types.h>
-#include <linux/crypto.h>
-#include <linux/module.h>
-#include <linux/err.h>
+#include <beep/hardirq.h>
+#include <beep/types.h>
+#include <beep/crypto.h>
+#include <beep/module.h>
+#include <beep/err.h>
 #include <crypto/algapi.h>
 #include <crypto/aes.h>
 #include <crypto/cryptd.h>
@@ -37,8 +37,8 @@
 #include <asm/crypto/ablk_helper.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/internal/aead.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/spinlock.h>
 
 #if defined(CONFIG_CRYPTO_CTR) || defined(CONFIG_CRYPTO_CTR_MODULE)
 #define HAS_CTR

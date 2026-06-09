@@ -20,7 +20,7 @@
 #ifndef M88RS2000_H
 #define M88RS2000_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 #include "dvb_frontend.h"
 
 struct m88rs2000_config {

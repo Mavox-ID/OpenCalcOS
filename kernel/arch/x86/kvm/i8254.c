@@ -32,8 +32,8 @@
 
 #define pr_fmt(fmt) "pit: " fmt
 
-#include <linux/kvm_host.h>
-#include <linux/slab.h>
+#include <beep/kvm_host.h>
+#include <beep/slab.h>
 
 #include "irq.h"
 #include "i8254.h"

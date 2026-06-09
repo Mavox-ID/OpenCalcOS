@@ -77,13 +77,13 @@
  *   needed for ZV, so maybe the datasheet is entirely wrong here.
  */
  
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/pnp.h>
-#include <linux/isapnp.h>
-#include <linux/module.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/isa.h>
+#include <beep/pnp.h>
+#include <beep/isapnp.h>
+#include <beep/module.h>
+#include <beep/delay.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

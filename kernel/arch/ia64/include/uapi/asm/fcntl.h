@@ -6,7 +6,7 @@
  */
 
 #define force_o_largefile()	\
-		(personality(current->personality) != PER_LINUX32)
+		(personality(current->personality) != PER_BEEP32)
 
 #include <asm-generic/fcntl.h>
 

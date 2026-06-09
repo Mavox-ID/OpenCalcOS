@@ -21,7 +21,7 @@
 /*
  * History and Acknowledgments
  *
- * The original Linux driver for SQ905 based cameras was written by
+ * The original Beep driver for SQ905 based cameras was written by
  * Marcell Lengyel and furter developed by many other contributors
  * and is available from http://sourceforge.net/projects/sqcam/
  *
@@ -37,11 +37,11 @@
 
 #define MODULE_NAME "sq905"
 
-#include <linux/workqueue.h>
-#include <linux/slab.h>
+#include <beep/workqueue.h>
+#include <beep/slab.h>
 #include "gspca.h"
 
-MODULE_AUTHOR("Adam Baker <linux@baker-net.org.uk>, "
+MODULE_AUTHOR("Adam Baker <beep@baker-net.org.uk>, "
 		"Theodore Kilgore <kilgota@auburn.edu>");
 MODULE_DESCRIPTION("GSPCA/SQ905 USB Camera Driver");
 MODULE_LICENSE("GPL");

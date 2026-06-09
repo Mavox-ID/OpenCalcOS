@@ -1,5 +1,5 @@
 /*
- * linux/drivers/media/platform/s5p-mfc/s5p_mfc_ctrl.c
+ * beep/drivers/media/platform/s5p-mfc/s5p_mfc_ctrl.c
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/
@@ -10,11 +10,11 @@
  * (at your option) any later version.
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/firmware.h>
-#include <linux/jiffies.h>
-#include <linux/sched.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/firmware.h>
+#include <beep/jiffies.h>
+#include <beep/sched.h>
 #include "s5p_mfc_cmd.h"
 #include "s5p_mfc_common.h"
 #include "s5p_mfc_debug.h"

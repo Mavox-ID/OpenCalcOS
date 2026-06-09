@@ -1,7 +1,7 @@
-#include <linux/kernel.h>
-#include <linux/ide.h>
-#include <linux/hdreg.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/ide.h>
+#include <beep/hdreg.h>
+#include <beep/mutex.h>
 
 #include "ide-disk.h"
 

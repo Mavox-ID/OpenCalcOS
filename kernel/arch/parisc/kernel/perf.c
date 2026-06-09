@@ -42,11 +42,11 @@
  *  on every box. 
  */
 
-#include <linux/capability.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/miscdevice.h>
-#include <linux/spinlock.h>
+#include <beep/capability.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/miscdevice.h>
+#include <beep/spinlock.h>
 
 #include <asm/uaccess.h>
 #include <asm/perf.h>

@@ -5,7 +5,7 @@
  * Wrappers of assembly checksum functions for x86-64.
  */
 #include <asm/checksum.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 /**
  * csum_partial_copy_from_user - Copy and checksum from user space.

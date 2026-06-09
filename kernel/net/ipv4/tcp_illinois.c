@@ -9,12 +9,12 @@
  * http://www.ifp.illinois.edu/~srikant/Papers/liubassri06perf.pdf
  *
  * Implemented from description in paper and ns-2 simulation.
- * Copyright (C) 2007 Stephen Hemminger <shemminger@linux-foundation.org>
+ * Copyright (C) 2007 Stephen Hemminger <shemminger@beep-foundation.org>
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/inet_diag.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/inet_diag.h>
 #include <asm/div64.h>
 #include <net/tcp.h>
 

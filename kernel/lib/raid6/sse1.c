@@ -1,4 +1,4 @@
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- beep-c -*- ------------------------------------------------------- *
  *
  *   Copyright 2002 H. Peter Anvin - All Rights Reserved
  *
@@ -23,7 +23,7 @@
 
 #ifdef CONFIG_X86_32
 
-#include <linux/raid/pq.h>
+#include <beep/raid/pq.h>
 #include "x86.h"
 
 /* Defined in raid6/mmx.c */

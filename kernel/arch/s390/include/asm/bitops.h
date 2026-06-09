@@ -11,11 +11,11 @@
 #ifndef _S390_BITOPS_H
 #define _S390_BITOPS_H
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _BEEP_BITOPS_H
+#error only <beep/bitops.h> can be included directly
 #endif
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 /*
  * 32 bit bitops format:

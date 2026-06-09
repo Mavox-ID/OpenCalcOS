@@ -21,7 +21,7 @@
 #ifndef __ASM_OUTERCACHE_H
 #define __ASM_OUTERCACHE_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct outer_cache_fns {
 	void (*inv_range)(unsigned long, unsigned long);

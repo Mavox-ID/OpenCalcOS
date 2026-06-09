@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ncpfs/sock.c
+ *  beep/fs/ncpfs/sock.c
  *
  *  Copyright (C) 1992, 1993  Rick Sladkey
  *
@@ -9,24 +9,24 @@
  */
 
 
-#include <linux/time.h>
-#include <linux/errno.h>
-#include <linux/socket.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/string.h>
+#include <beep/time.h>
+#include <beep/errno.h>
+#include <beep/socket.h>
+#include <beep/fcntl.h>
+#include <beep/stat.h>
+#include <beep/string.h>
 #include <asm/uaccess.h>
-#include <linux/in.h>
-#include <linux/net.h>
-#include <linux/mm.h>
-#include <linux/netdevice.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
+#include <beep/in.h>
+#include <beep/net.h>
+#include <beep/mm.h>
+#include <beep/netdevice.h>
+#include <beep/signal.h>
+#include <beep/slab.h>
 #include <net/scm.h>
 #include <net/sock.h>
-#include <linux/ipx.h>
-#include <linux/poll.h>
-#include <linux/file.h>
+#include <beep/ipx.h>
+#include <beep/poll.h>
+#include <beep/file.h>
 
 #include "ncp_fs.h"
 

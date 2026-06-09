@@ -5,11 +5,11 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/ftrace.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
+#include <beep/ftrace.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/uaccess.h>
+#include <beep/atomic.h>
 #include <asm/cacheflush.h>
 
 #ifdef CONFIG_DYNAMIC_FTRACE

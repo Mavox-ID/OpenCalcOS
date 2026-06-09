@@ -14,23 +14,23 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/fb.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/fb.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
 
-#include <linux/freezer.h>
-#include <linux/wait.h>
-#include <linux/msm_mdp.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/platform_data/video-msm_fb.h>
+#include <beep/freezer.h>
+#include <beep/wait.h>
+#include <beep/msm_mdp.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
+#include <beep/platform_data/video-msm_fb.h>
 #include <mach/board.h>
-#include <linux/workqueue.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/dma-mapping.h>
+#include <beep/workqueue.h>
+#include <beep/clk.h>
+#include <beep/debugfs.h>
+#include <beep/dma-mapping.h>
 
 #define PRINT_FPS 0
 #define PRINT_BLIT_TIME 0

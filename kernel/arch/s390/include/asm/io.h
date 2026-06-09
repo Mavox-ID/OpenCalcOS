@@ -9,7 +9,7 @@
 #ifndef _S390_IO_H
 #define _S390_IO_H
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <asm/page.h>
 #include <asm/pci_io.h>
 

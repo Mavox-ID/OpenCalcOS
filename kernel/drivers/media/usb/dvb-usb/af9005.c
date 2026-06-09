@@ -1,4 +1,4 @@
-/* DVB USB compliant Linux driver for the Afatech 9005
+/* DVB USB compliant Beep driver for the Afatech 9005
  * USB1.1 DVB-T receiver.
  *
  * Copyright (C) 2007 Luca Olivetti (luca@ventoso.org)

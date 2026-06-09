@@ -31,9 +31,9 @@
  * SOFTWARE.
  */
 
-#include <linux/spinlock.h>
-#include <linux/netdevice.h>
-#include <linux/moduleparam.h>
+#include <beep/spinlock.h>
+#include <beep/netdevice.h>
+#include <beep/moduleparam.h>
 
 #include "qib.h"
 #include "qib_common.h"

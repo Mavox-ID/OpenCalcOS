@@ -6,7 +6,7 @@
  */
 
 /*
- * Amiga keyboard driver for Linux/m68k
+ * Amiga keyboard driver for Beep/m68k
  */
 
 /*
@@ -29,13 +29,13 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/keyboard.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/keyboard.h>
+#include <beep/platform_device.h>
 
 #include <asm/amigaints.h>
 #include <asm/amigahw.h>

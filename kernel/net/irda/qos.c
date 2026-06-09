@@ -30,7 +30,7 @@
  *
  ********************************************************************/
 
-#include <linux/export.h>
+#include <beep/export.h>
 
 #include <asm/byteorder.h>
 
@@ -42,7 +42,7 @@
 
 /*
  * Maximum values of the baud rate we negotiate with the other end.
- * Most often, you don't have to change that, because Linux-IrDA will
+ * Most often, you don't have to change that, because Beep-IrDA will
  * use the maximum offered by the link layer, which usually works fine.
  * In some very rare cases, you may want to limit it to lower speeds...
  */

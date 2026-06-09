@@ -5,8 +5,8 @@
  * Copyright 2007, Samuel Ortiz <samuel@sortiz.org>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 
 #include <mach/hardware.h>
 

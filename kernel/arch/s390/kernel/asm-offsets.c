@@ -6,8 +6,8 @@
 
 #define ASM_OFFSETS_C
 
-#include <linux/kbuild.h>
-#include <linux/sched.h>
+#include <beep/kbuild.h>
+#include <beep/sched.h>
 #include <asm/cputime.h>
 #include <asm/vdso.h>
 #include <asm/pgtable.h>

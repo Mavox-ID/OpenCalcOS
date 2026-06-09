@@ -16,15 +16,15 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-HPI Operating System function implementation for Linux
+HPI Operating System function implementation for Beep
 
 (C) Copyright AudioScience Inc. 1997-2003
 ******************************************************************************/
 #define SOURCEFILE_NAME "hpios.c"
 #include "hpi_internal.h"
 #include "hpidebug.h"
-#include <linux/delay.h>
-#include <linux/sched.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
 
 void hpios_delay_micro_seconds(u32 num_micro_sec)
 {

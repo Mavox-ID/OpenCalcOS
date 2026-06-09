@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -247,27 +247,27 @@
 
 #define pr_fmt(fmt) "TCP: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/skbuff.h>
-#include <linux/scatterlist.h>
-#include <linux/splice.h>
-#include <linux/net.h>
-#include <linux/socket.h>
-#include <linux/random.h>
-#include <linux/bootmem.h>
-#include <linux/highmem.h>
-#include <linux/swap.h>
-#include <linux/cache.h>
-#include <linux/err.h>
-#include <linux/crypto.h>
-#include <linux/time.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/poll.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/skbuff.h>
+#include <beep/scatterlist.h>
+#include <beep/splice.h>
+#include <beep/net.h>
+#include <beep/socket.h>
+#include <beep/random.h>
+#include <beep/bootmem.h>
+#include <beep/highmem.h>
+#include <beep/swap.h>
+#include <beep/cache.h>
+#include <beep/err.h>
+#include <beep/crypto.h>
+#include <beep/time.h>
+#include <beep/slab.h>
 
 #include <net/icmp.h>
 #include <net/inet_common.h>
@@ -321,7 +321,7 @@ EXPORT_SYMBOL(tcp_memory_pressure);
 void tcp_enter_memory_pressure(struct sock *sk)
 {
 	if (!tcp_memory_pressure) {
-		NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPMEMORYPRESSURES);
+		NET_INC_STATS(sock_net(sk), BEEP_MIB_TCPMEMORYPRESSURES);
 		tcp_memory_pressure = 1;
 	}
 }
@@ -1382,7 +1382,7 @@ static void tcp_prequeue_process(struct sock *sk)
 	struct sk_buff *skb;
 	struct tcp_sock *tp = tcp_sk(sk);
 
-	NET_INC_STATS_USER(sock_net(sk), LINUX_MIB_TCPPREQUEUED);
+	NET_INC_STATS_USER(sock_net(sk), BEEP_MIB_TCPPREQUEUED);
 
 	/* RX process wants to run with disabled BHs, though it is not
 	 * necessary */
@@ -1772,7 +1772,7 @@ int tcp_recvmsg(struct kiocb *iocb, struct sock *sk, struct msghdr *msg,
 			/* __ Restore normal policy in scheduler __ */
 
 			if ((chunk = len - tp->ucopy.len) != 0) {
-				NET_ADD_STATS_USER(sock_net(sk), LINUX_MIB_TCPDIRECTCOPYFROMBACKLOG, chunk);
+				NET_ADD_STATS_USER(sock_net(sk), BEEP_MIB_TCPDIRECTCOPYFROMBACKLOG, chunk);
 				len -= chunk;
 				copied += chunk;
 			}
@@ -1783,7 +1783,7 @@ do_prequeue:
 				tcp_prequeue_process(sk);
 
 				if ((chunk = len - tp->ucopy.len) != 0) {
-					NET_ADD_STATS_USER(sock_net(sk), LINUX_MIB_TCPDIRECTCOPYFROMPREQUEUE, chunk);
+					NET_ADD_STATS_USER(sock_net(sk), BEEP_MIB_TCPDIRECTCOPYFROMPREQUEUE, chunk);
 					len -= chunk;
 					copied += chunk;
 				}
@@ -1904,7 +1904,7 @@ skip_copy:
 			tcp_prequeue_process(sk);
 
 			if (copied > 0 && (chunk = len - tp->ucopy.len) != 0) {
-				NET_ADD_STATS_USER(sock_net(sk), LINUX_MIB_TCPDIRECTCOPYFROMPREQUEUE, chunk);
+				NET_ADD_STATS_USER(sock_net(sk), BEEP_MIB_TCPDIRECTCOPYFROMPREQUEUE, chunk);
 				len -= chunk;
 				copied += chunk;
 			}
@@ -2101,13 +2101,13 @@ void tcp_close(struct sock *sk, long timeout)
 		sk->sk_prot->disconnect(sk, 0);
 	} else if (data_was_unread) {
 		/* Unread data was tossed, zap the connection. */
-		NET_INC_STATS_USER(sock_net(sk), LINUX_MIB_TCPABORTONCLOSE);
+		NET_INC_STATS_USER(sock_net(sk), BEEP_MIB_TCPABORTONCLOSE);
 		tcp_set_state(sk, TCP_CLOSE);
 		tcp_send_active_reset(sk, sk->sk_allocation);
 	} else if (sock_flag(sk, SOCK_LINGER) && !sk->sk_lingertime) {
 		/* Check zero linger _after_ checking for unread data. */
 		sk->sk_prot->disconnect(sk, 0);
-		NET_INC_STATS_USER(sock_net(sk), LINUX_MIB_TCPABORTONDATA);
+		NET_INC_STATS_USER(sock_net(sk), BEEP_MIB_TCPABORTONDATA);
 	} else if (tcp_close_state(sk)) {
 		/* We FIN if the application ate all the data before
 		 * zapping the connection.
@@ -2124,13 +2124,13 @@ void tcp_close(struct sock *sk, long timeout)
 		 * rather than queued out of window. Purists blame.
 		 *
 		 * F.e. "RFC state" is ESTABLISHED,
-		 * if Linux state is FIN-WAIT-1, but FIN is still not sent.
+		 * if Beep state is FIN-WAIT-1, but FIN is still not sent.
 		 *
 		 * The visible declinations are that sometimes
 		 * we enter time-wait state, when it is not required really
 		 * (harmless), do not send active resets, when they are
 		 * required by specs (TCP_ESTABLISHED, TCP_CLOSE_WAIT, when
-		 * they look as CLOSING or LAST_ACK for Linux)
+		 * they look as CLOSING or LAST_ACK for Beep)
 		 * Probably, I missed some more holelets.
 		 * 						--ANK
 		 * XXX (TFO) - To start off we don't support SYN+ACK+FIN
@@ -2185,7 +2185,7 @@ adjudge_to_death:
 			tcp_set_state(sk, TCP_CLOSE);
 			tcp_send_active_reset(sk, GFP_ATOMIC);
 			NET_INC_STATS_BH(sock_net(sk),
-					LINUX_MIB_TCPABORTONLINGER);
+					BEEP_MIB_TCPABORTONLINGER);
 		} else {
 			const int tmo = tcp_fin_time(sk);
 
@@ -2204,7 +2204,7 @@ adjudge_to_death:
 			tcp_set_state(sk, TCP_CLOSE);
 			tcp_send_active_reset(sk, GFP_ATOMIC);
 			NET_INC_STATS_BH(sock_net(sk),
-					LINUX_MIB_TCPABORTONMEMORY);
+					BEEP_MIB_TCPABORTONMEMORY);
 		}
 	}
 
@@ -2255,7 +2255,7 @@ int tcp_disconnect(struct sock *sk, int flags)
 	} else if (tcp_need_reset(old_state) ||
 		   (tp->snd_nxt != tp->write_seq &&
 		    (1 << old_state) & (TCPF_CLOSING | TCPF_LAST_ACK))) {
-		/* The last check adjusts for discrepancy of Linux wrt. RFC
+		/* The last check adjusts for discrepancy of Beep wrt. RFC
 		 * states
 		 */
 		tcp_send_active_reset(sk, gfp_any());

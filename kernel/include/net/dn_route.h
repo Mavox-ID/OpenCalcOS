@@ -96,7 +96,7 @@ extern void dn_route_init(void);
 extern void dn_route_cleanup(void);
 
 #include <net/sock.h>
-#include <linux/if_arp.h>
+#include <beep/if_arp.h>
 
 static inline void dn_rt_send(struct sk_buff *skb)
 {

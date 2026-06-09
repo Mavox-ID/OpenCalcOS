@@ -6,7 +6,7 @@
  * Free Software Foundation.
  */
 
-#include <linux/platform_data/mmc-esdhc-imx.h>
+#include <beep/platform_data/mmc-esdhc-imx.h>
 
 #include "../hardware.h"
 #include "devices-common.h"

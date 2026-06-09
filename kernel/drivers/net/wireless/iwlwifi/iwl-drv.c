@@ -25,7 +25,7 @@
  * in the file called LICENSE.GPL.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel Beep Wireless <ilw@beep.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  * BSD LICENSE
@@ -60,11 +60,11 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  *****************************************************************************/
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
+#include <beep/completion.h>
+#include <beep/dma-mapping.h>
+#include <beep/firmware.h>
+#include <beep/module.h>
+#include <beep/vmalloc.h>
 
 #include "iwl-drv.h"
 #include "iwl-debug.h"
@@ -87,7 +87,7 @@
 /*
  * module name, copyright, version, etc.
  */
-#define DRV_DESCRIPTION	"Intel(R) Wireless WiFi driver for Linux"
+#define DRV_DESCRIPTION	"Intel(R) Wireless WiFi driver for Beep"
 
 #ifdef CONFIG_IWLWIFI_DEBUG
 #define VD "d"
@@ -902,7 +902,7 @@ static void iwl_req_fw_callback(const struct firmware *ucode_raw, void *context)
 					"expected v%u, got v%u.\n",
 					api_max, api_ver);
 			IWL_ERR(drv, "New firmware can be obtained from "
-				      "http://www.intellinuxwireless.org/.\n");
+				      "http://www.intelbeepwireless.org/.\n");
 		}
 	}
 

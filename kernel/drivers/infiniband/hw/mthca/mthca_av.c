@@ -31,8 +31,8 @@
  * SOFTWARE.
  */
 
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_cache.h>

@@ -30,10 +30,10 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/init.h>
-#include <linux/seq_file.h>
+#include <beep/init.h>
+#include <beep/seq_file.h>
 
 #include <asm/uaccess.h>
 

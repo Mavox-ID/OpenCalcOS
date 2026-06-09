@@ -14,8 +14,8 @@
  * version 2 as published by the Free Software Foundation.
  */
 
-#include <linux/pci.h>
-#include <linux/export.h>
+#include <beep/pci.h>
+#include <beep/export.h>
 #include <asm/pci-bridge.h>
 #include <asm/prom.h>
 

@@ -9,10 +9,10 @@
  * License terms: GNU General Public License (GPL) version 2
  */
 
-#include <linux/mutex.h>
-#include <linux/radix-tree.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/machine.h>
+#include <beep/mutex.h>
+#include <beep/radix-tree.h>
+#include <beep/pinctrl/pinconf.h>
+#include <beep/pinctrl/machine.h>
 
 struct pinctrl_gpio_range;
 

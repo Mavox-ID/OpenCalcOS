@@ -1,7 +1,7 @@
 #ifndef _ASM_S390_BUG_H
 #define _ASM_S390_BUG_H
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 #ifdef CONFIG_BUG
 

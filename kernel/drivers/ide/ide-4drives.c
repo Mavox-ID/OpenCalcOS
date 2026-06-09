@@ -1,8 +1,8 @@
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/ide.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/ide.h>
 
 #define DRV_NAME "ide-4drives"
 

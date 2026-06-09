@@ -1,5 +1,5 @@
 #
-# Makefile - Intel Management Engine Interface (Intel MEI) Linux driver
+# Makefile - Intel Management Engine Interface (Intel MEI) Beep driver
 # Copyright (c) 2010-2011, Intel Corporation.
 #
 obj-$(CONFIG_INTEL_MEI) += mei.o

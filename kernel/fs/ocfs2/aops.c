@@ -19,15 +19,15 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
 #include <asm/byteorder.h>
-#include <linux/swap.h>
-#include <linux/pipe_fs_i.h>
-#include <linux/mpage.h>
-#include <linux/quotaops.h>
+#include <beep/swap.h>
+#include <beep/pipe_fs_i.h>
+#include <beep/mpage.h>
+#include <beep/quotaops.h>
 
 #include <cluster/masklog.h>
 

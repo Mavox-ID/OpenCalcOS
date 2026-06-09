@@ -5,13 +5,13 @@
  * Licensed under the terms of the GNU General Public License, version 2.
  */
 
-#include <linux/device.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/firewire.h>
+#include <beep/firewire-constants.h>
+#include <beep/module.h>
+#include <beep/mod_devicetable.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 #include <sound/control.h>
 #include <sound/core.h>
 #include <sound/initval.h>

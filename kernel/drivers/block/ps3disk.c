@@ -18,10 +18,10 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/ata.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/ata.h>
+#include <beep/blkdev.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include <asm/lv1call.h>
 #include <asm/ps3stor.h>

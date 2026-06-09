@@ -15,17 +15,17 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
-#include <linux/module.h>
-#include <linux/elf.h>
-#include <linux/moduleloader.h>
-#include <linux/err.h>
-#include <linux/vmalloc.h>
-#include <linux/ftrace.h>
-#include <linux/bug.h>
+#include <beep/module.h>
+#include <beep/elf.h>
+#include <beep/moduleloader.h>
+#include <beep/err.h>
+#include <beep/vmalloc.h>
+#include <beep/ftrace.h>
+#include <beep/bug.h>
 #include <asm/module.h>
 #include <asm/firmware.h>
 #include <asm/code-patching.h>
-#include <linux/sort.h>
+#include <beep/sort.h>
 
 #include "setup.h"
 

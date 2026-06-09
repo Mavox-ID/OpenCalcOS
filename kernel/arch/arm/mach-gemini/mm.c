@@ -9,8 +9,8 @@
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  */
-#include <linux/mm.h>
-#include <linux/init.h>
+#include <beep/mm.h>
+#include <beep/init.h>
 
 #include <asm/mach/map.h>
 

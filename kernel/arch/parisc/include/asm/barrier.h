@@ -2,8 +2,8 @@
 #define __PARISC_BARRIER_H
 
 /*
-** This is simply the barrier() macro from linux/kernel.h but when serial.c
-** uses tqueue.h uses smp_mb() defined using barrier(), linux/kernel.h
+** This is simply the barrier() macro from beep/kernel.h but when serial.c
+** uses tqueue.h uses smp_mb() defined using barrier(), beep/kernel.h
 ** hasn't yet been included yet so it fails, thus repeating the macro here.
 **
 ** PA-RISC architecture allows for weakly ordered memory accesses although
@@ -15,7 +15,7 @@
 ** the TLB O-bit is not implemented so the page directory does not need to
 ** have the O-bit set when mapping pages (section 3.1). This section also
 ** states that the PSW Y, Z, G, and O bits are not implemented.
-** So it looks like nothing needs to be done for parisc-linux (yet).
+** So it looks like nothing needs to be done for parisc-beep (yet).
 ** (thanks to chada for the above comment -ggg)
 **
 ** The __asm__ op below simple prevents gcc/ld from reordering

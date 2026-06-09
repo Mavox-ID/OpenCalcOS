@@ -38,15 +38,15 @@
  *
  * Author: Tom Tucker <tom@opengridcomputing.com>
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/sysctl.h>
-#include <linux/workqueue.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/svc_rdma.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/sysctl.h>
+#include <beep/workqueue.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/sched.h>
+#include <beep/sunrpc/svc_rdma.h>
 #include "xprt_rdma.h"
 
 #define RPCDBG_FACILITY	RPCDBG_SVCXPRT

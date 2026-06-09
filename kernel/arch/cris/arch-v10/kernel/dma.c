@@ -2,9 +2,9 @@
  * Copyright 2004-2007, Axis Communications AB
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/errno.h>
 
 #include <asm/dma.h>
 #include <arch/svinto.h>

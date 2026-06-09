@@ -1,7 +1,7 @@
 #ifndef _ASM_DMA_MAPPING_H
 #define _ASM_DMA_MAPPING_H
 
-#include <linux/device.h>
+#include <beep/device.h>
 #include <asm/cache.h>
 #include <asm/cacheflush.h>
 #include <asm/scatterlist.h>

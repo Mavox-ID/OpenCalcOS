@@ -9,28 +9,28 @@
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/proc_fs.h>
+#include <beep/clk.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
+#include <beep/prefetch.h>
 
 #include <asm/byteorder.h>
 #include <mach/hardware.h>
 
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <beep/usb.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
 #include <mach/udc.h>
 
 #include "pxa27x_udc.h"
@@ -85,9 +85,9 @@ static void handle_ep(struct pxa_ep *ep);
  */
 #ifdef CONFIG_USB_GADGET_DEBUG_FS
 
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
+#include <beep/seq_file.h>
 
 static int state_dbg_show(struct seq_file *s, void *p)
 {

@@ -6,14 +6,14 @@
  * also a way for the Launcher to attach eventfds to particular NOTIFY
  * values instead of returning from the read() call.
 :*/
-#include <linux/uaccess.h>
-#include <linux/miscdevice.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/eventfd.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/uaccess.h>
+#include <beep/miscdevice.h>
+#include <beep/fs.h>
+#include <beep/sched.h>
+#include <beep/eventfd.h>
+#include <beep/file.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include "lg.h"
 
 /*L:056
@@ -66,7 +66,7 @@ bool send_notify_to_eventfd(struct lg_cpu *cpu)
 }
 
 /*L:055
- * One of the more tricksy tricks in the Linux Kernel is a technique called
+ * One of the more tricksy tricks in the Beep Kernel is a technique called
  * Read Copy Update.  Since one point of lguest is to teach lguest journeyers
  * about kernel coding, I use it here.  (In case you're curious, other purposes
  * include learning about virtualization and instilling a deep appreciation for

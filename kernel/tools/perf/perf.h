@@ -103,7 +103,7 @@ void get_term_dimensions(struct winsize *ws);
 #include <sys/types.h>
 #include <sys/syscall.h>
 
-#include <linux/perf_event.h>
+#include <beep/perf_event.h>
 #include "util/types.h"
 #include <stdbool.h>
 

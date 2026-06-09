@@ -1,15 +1,15 @@
 /*
  * fs/logfs/dev_mtd.c	- Device access methods for MTD
  *
- * As should be obvious for Linux kernel code, license is GPLv2
+ * As should be obvious for Beep kernel code, license is GPLv2
  *
  * Copyright (c) 2005-2008 Joern Engel <joern@logfs.org>
  */
 #include "logfs.h"
-#include <linux/completion.h>
-#include <linux/mount.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/completion.h>
+#include <beep/mount.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 #define PAGE_OFS(ofs) ((ofs) & (PAGE_SIZE-1))
 

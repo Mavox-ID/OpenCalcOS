@@ -7,17 +7,17 @@
  * (at your option) any later version.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/nls.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/string.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/nls.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
 
 
 /**

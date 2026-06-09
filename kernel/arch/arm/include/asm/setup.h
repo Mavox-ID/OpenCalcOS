@@ -1,5 +1,5 @@
 /*
- *  linux/include/asm/setup.h
+ *  beep/include/asm/setup.h
  *
  *  Copyright (C) 1997-1999 Russell King
  *

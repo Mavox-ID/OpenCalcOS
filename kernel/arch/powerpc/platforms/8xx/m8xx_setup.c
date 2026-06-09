@@ -10,12 +10,12 @@
  * bootup setup stuff..
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/rtc.h>
-#include <linux/fsl_devices.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/rtc.h>
+#include <beep/fsl_devices.h>
 
 #include <asm/io.h>
 #include <asm/mpc8xx.h>

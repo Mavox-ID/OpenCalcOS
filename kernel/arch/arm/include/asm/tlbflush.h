@@ -198,7 +198,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/sched.h>
+#include <beep/sched.h>
 
 struct cpu_tlb_fns {
 	void (*flush_user_range)(unsigned long, unsigned long, struct vm_area_struct *);
@@ -495,7 +495,7 @@ extern void flush_tlb_kernel_range(unsigned long start, unsigned long end);
  * back to the page. On ARMv6 and later, the cache coherency is handled via
  * the set_pte_at() function.
  */
-#if __LINUX_ARM_ARCH__ < 6
+#if __BEEP_ARM_ARCH__ < 6
 extern void update_mmu_cache(struct vm_area_struct *vma, unsigned long addr,
 	pte_t *ptep);
 #else

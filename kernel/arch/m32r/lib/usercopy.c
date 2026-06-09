@@ -6,9 +6,9 @@
  * Copyright 1997 Linus Torvalds
  * Copyright 2001, 2002, 2004 Hirokazu Takata
  */
-#include <linux/prefetch.h>
-#include <linux/string.h>
-#include <linux/thread_info.h>
+#include <beep/prefetch.h>
+#include <beep/string.h>
+#include <beep/thread_info.h>
 #include <asm/uaccess.h>
 
 unsigned long

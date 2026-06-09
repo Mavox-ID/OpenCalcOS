@@ -15,19 +15,19 @@
  * option) any later version.
  *
  */
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/reboot.h>
-#include <linux/kdev_t.h>
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/blkdev.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/stringify.h>
-#include <linux/notifier.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/reboot.h>
+#include <beep/kdev_t.h>
+#include <beep/types.h>
+#include <beep/major.h>
+#include <beep/blkdev.h>
+#include <beep/console.h>
+#include <beep/delay.h>
+#include <beep/stringify.h>
+#include <beep/notifier.h>
 
 #include <asm/platform.h>
 #include <asm/bootparam.h>

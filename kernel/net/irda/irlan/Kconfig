@@ -9,6 +9,6 @@ config IRLAN
 
 	  The IrLAN protocol can be used to talk with infrared access points
 	  like the HP NetbeamIR, or the ESI JetEye NET.  You can also connect
-	  to another Linux machine running the IrLAN protocol for ad-hoc
+	  to another Beep machine running the IrLAN protocol for ad-hoc
 	  networking!
 

@@ -1,4 +1,4 @@
-#include <linux/init.h>
+#include <beep/init.h>
 
 #include <asm/idmap.h>
 #include <asm/pgalloc.h>

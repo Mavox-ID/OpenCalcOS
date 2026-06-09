@@ -9,21 +9,21 @@
  * more details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/string.h>
-#include <linux/wireless.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/random.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/if_ether.h>
+#include <beep/if_arp.h>
+#include <beep/string.h>
+#include <beep/wireless.h>
 #include "rtllib.h"
 
-#include <linux/crypto.h>
+#include <beep/crypto.h>
 
-#include <linux/scatterlist.h>
+#include <beep/scatterlist.h>
 
 #define AES_BLOCK_LEN 16
 #define CCMP_HDR_LEN 8

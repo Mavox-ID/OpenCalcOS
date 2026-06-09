@@ -11,7 +11,7 @@
 #ifndef _BLACKFIN_TIMERS_H_
 #define _BLACKFIN_TIMERS_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/blackfin.h>
 
 /*

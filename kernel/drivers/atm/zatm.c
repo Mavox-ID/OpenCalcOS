@@ -3,30 +3,30 @@
 /* Written 1995-2000 by Werner Almesberger, EPFL LRC/ICA */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/sonet.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/uio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/atm_zatm.h>
-#include <linux/capability.h>
-#include <linux/bitops.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/pci.h>
+#include <beep/errno.h>
+#include <beep/atm.h>
+#include <beep/atmdev.h>
+#include <beep/sonet.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/delay.h>
+#include <beep/uio.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/atm_zatm.h>
+#include <beep/capability.h>
+#include <beep/bitops.h>
+#include <beep/wait.h>
+#include <beep/slab.h>
 #include <asm/byteorder.h>
 #include <asm/string.h>
 #include <asm/io.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/uaccess.h>
 
 #include "uPD98401.h"

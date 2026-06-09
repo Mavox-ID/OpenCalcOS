@@ -19,7 +19,7 @@
 #ifndef _UAPI__ASM_PTRACE_H
 #define _UAPI__ASM_PTRACE_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #include <asm/hwcap.h>
 

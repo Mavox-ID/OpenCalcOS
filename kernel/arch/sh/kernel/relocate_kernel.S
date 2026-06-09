@@ -9,7 +9,7 @@
  * This source code is licensed under the GNU General Public License,
  * Version 2.  See the file COPYING for more details.
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/addrspace.h>
 #include <asm/page.h>
 

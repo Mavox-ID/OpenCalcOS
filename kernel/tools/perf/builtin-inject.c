@@ -18,7 +18,7 @@
 
 #include "util/parse-options.h"
 
-#include <linux/list.h>
+#include <beep/list.h>
 
 struct perf_inject {
 	struct perf_tool tool;

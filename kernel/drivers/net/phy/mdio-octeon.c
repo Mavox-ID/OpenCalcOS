@@ -6,14 +6,14 @@
  * Copyright (C) 2009,2011 Cavium, Inc.
  */
 
-#include <linux/platform_device.h>
-#include <linux/of_mdio.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/phy.h>
-#include <linux/io.h>
+#include <beep/platform_device.h>
+#include <beep/of_mdio.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/gfp.h>
+#include <beep/phy.h>
+#include <beep/io.h>
 
 #include <asm/octeon/octeon.h>
 #include <asm/octeon/cvmx-smix-defs.h>

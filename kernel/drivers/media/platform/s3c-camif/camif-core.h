@@ -12,13 +12,13 @@
 #ifndef CAMIF_CORE_H_
 #define CAMIF_CORE_H_
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/videodev2.h>
 
 #include <media/media-entity.h>
 #include <media/v4l2-ctrls.h>

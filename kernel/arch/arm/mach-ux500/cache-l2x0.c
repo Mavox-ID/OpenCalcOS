@@ -4,8 +4,8 @@
  * License terms: GNU General Public License (GPL) version 2
  */
 
-#include <linux/io.h>
-#include <linux/of.h>
+#include <beep/io.h>
+#include <beep/of.h>
 
 #include <asm/cacheflush.h>
 #include <asm/hardware/cache-l2x0.h>

@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for Beep.
  *
  * Copyright (c) 2003-2010 Chelsio Communications, Inc. All rights reserved.
  *
@@ -34,30 +34,30 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitmap.h>
-#include <linux/crc32.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/err.h>
-#include <linux/etherdevice.h>
-#include <linux/firmware.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/init.h>
-#include <linux/log2.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/aer.h>
-#include <linux/rtnetlink.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/sockios.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
+#include <beep/bitmap.h>
+#include <beep/crc32.h>
+#include <beep/ctype.h>
+#include <beep/debugfs.h>
+#include <beep/err.h>
+#include <beep/etherdevice.h>
+#include <beep/firmware.h>
+#include <beep/if.h>
+#include <beep/if_vlan.h>
+#include <beep/init.h>
+#include <beep/log2.h>
+#include <beep/mdio.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/mutex.h>
+#include <beep/netdevice.h>
+#include <beep/pci.h>
+#include <beep/aer.h>
+#include <beep/rtnetlink.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/sockios.h>
+#include <beep/vmalloc.h>
+#include <beep/workqueue.h>
 #include <net/neighbour.h>
 #include <net/netevent.h>
 #include <asm/uaccess.h>
@@ -3726,7 +3726,7 @@ static int adap_init0_tweaks(struct adapter *adapter)
 			 PKTSHIFT(rx_dma_offset));
 
 	/*
-	 * Don't include the "IP Pseudo Header" in CPL_RX_PKT checksums: Linux
+	 * Don't include the "IP Pseudo Header" in CPL_RX_PKT checksums: Beep
 	 * adds the pseudo header itself.
 	 */
 	t4_tp_wr_bits_indirect(adapter, TP_INGRESS_CONFIG,

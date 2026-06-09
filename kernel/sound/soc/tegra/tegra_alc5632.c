@@ -15,11 +15,11 @@
 
 #include <asm/mach-types.h>
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/gpio.h>
+#include <beep/of_gpio.h>
 
 #include <sound/core.h>
 #include <sound/jack.h>

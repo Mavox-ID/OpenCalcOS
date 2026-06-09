@@ -13,15 +13,15 @@
  * (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/kthread.h>
-#include <linux/file.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/fs.h>
+#include <beep/kthread.h>
+#include <beep/file.h>
+#include <beep/slab.h>
 
-#include <linux/freezer.h>
+#include <beep/freezer.h>
 
 #include <media/videobuf-core.h>
 #include <media/videobuf-dvb.h>
@@ -82,7 +82,7 @@ static int videobuf_dvb_thread(void *data)
 	videobuf_read_stop(&dvb->dvbq);
 	dprintk("dvb thread stopped\n");
 
-	/* Hmm, linux becomes *very* unhappy without this ... */
+	/* Hmm, beep becomes *very* unhappy without this ... */
 	while (!kthread_should_stop()) {
 		set_current_state(TASK_INTERRUPTIBLE);
 		schedule();

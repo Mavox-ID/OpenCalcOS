@@ -21,8 +21,8 @@
  *
  */
 
-#include <linux/dmi.h>
-#include <linux/module.h>
+#include <beep/dmi.h>
+#include <beep/module.h>
 #include <asm/div64.h>
 #include <asm/x86_init.h>
 #include <asm/hypervisor.h>

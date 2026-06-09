@@ -1,8 +1,8 @@
-#include <linux/tty.h>
-#include <linux/module.h>
-#include <linux/kallsyms.h>
-#include <linux/semaphore.h>
-#include <linux/sched.h>
+#include <beep/tty.h>
+#include <beep/module.h>
+#include <beep/kallsyms.h>
+#include <beep/semaphore.h>
+#include <beep/sched.h>
 
 /* Legacy tty mutex glue */
 

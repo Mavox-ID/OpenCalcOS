@@ -4,13 +4,13 @@
  * Licensed under the GPL-2 or later
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/seq_file.h>
-#include <linux/kallsyms.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/kernel_stat.h>
+#include <beep/module.h>
+#include <beep/random.h>
+#include <beep/seq_file.h>
+#include <beep/kallsyms.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 #include <asm/irq_handler.h>
 #include <asm/trace.h>
 #include <asm/pda.h>

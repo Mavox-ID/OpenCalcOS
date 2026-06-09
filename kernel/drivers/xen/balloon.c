@@ -14,7 +14,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the Beep kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -36,20 +36,20 @@
  * IN THE SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/bootmem.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/gfp.h>
-#include <linux/notifier.h>
-#include <linux/memory.h>
-#include <linux/memory_hotplug.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/bootmem.h>
+#include <beep/pagemap.h>
+#include <beep/highmem.h>
+#include <beep/mutex.h>
+#include <beep/list.h>
+#include <beep/gfp.h>
+#include <beep/notifier.h>
+#include <beep/memory.h>
+#include <beep/memory_hotplug.h>
 
 #include <asm/page.h>
 #include <asm/pgalloc.h>

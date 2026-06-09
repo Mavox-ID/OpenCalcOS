@@ -4,13 +4,13 @@
  * for more details.
  *
  * Copyright (C) 2007 MIPS Technologies, Inc.
- * Copyright (C) 2007 Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2007 Ralf Baechle <ralf@beep-mips.org>
  */
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/smp.h>
-#include <linux/irq.h>
+#include <beep/clockchips.h>
+#include <beep/interrupt.h>
+#include <beep/percpu.h>
+#include <beep/smp.h>
+#include <beep/irq.h>
 
 #include <asm/smtc_ipi.h>
 #include <asm/time.h>

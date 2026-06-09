@@ -6,9 +6,9 @@
 /*
  *  Mostly written by Mark Lord <mlord@pobox.com>
  *                and Gadi Oxman <gadio@netvision.net.il>
- *                and Andre Hedrick <andre@linux-ide.org>
+ *                and Andre Hedrick <andre@beep-ide.org>
  *
- *  See linux/MAINTAINERS for address of current maintainer.
+ *  See beep/MAINTAINERS for address of current maintainer.
  *
  * This is the IDE probe module, as evolved from hd.c and ide.c.
  *
@@ -16,23 +16,23 @@
  *	 by Andrea Arcangeli
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/genhd.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/ide.h>
-#include <linux/spinlock.h>
-#include <linux/kmod.h>
-#include <linux/pci.h>
-#include <linux/scatterlist.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/major.h>
+#include <beep/errno.h>
+#include <beep/genhd.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/ide.h>
+#include <beep/spinlock.h>
+#include <beep/kmod.h>
+#include <beep/pci.h>
+#include <beep/scatterlist.h>
 
 #include <asm/byteorder.h>
 #include <asm/irq.h>
@@ -107,7 +107,7 @@ static void ide_classify_ata_dev(ide_drive_t *drive)
 	char *m = (char *)&id[ATA_ID_PROD];
 	int is_cfa = ata_id_is_cfa(id);
 
-	/* CF devices are *not* removable in Linux definition of the term */
+	/* CF devices are *not* removable in Beep definition of the term */
 	if (is_cfa == 0 && (id[ATA_ID_CONFIG] & (1 << 7)))
 		drive->dev_flags |= IDE_DFLAG_REMOVABLE;
 

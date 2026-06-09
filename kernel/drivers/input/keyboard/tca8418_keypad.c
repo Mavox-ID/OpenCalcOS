@@ -24,18 +24,18 @@
  * alternative licensing inquiries.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/tca8418_keypad.h>
-#include <linux/of.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/input.h>
+#include <beep/input/tca8418_keypad.h>
+#include <beep/of.h>
 
 /* TCA8418 hardware limits */
 #define TCA8418_MAX_ROWS	8

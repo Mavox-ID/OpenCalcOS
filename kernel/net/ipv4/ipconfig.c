@@ -17,7 +17,7 @@
  *
  *  DHCP support added.  To users this looks like a whole separate
  *  protocol, but we know it's just a bag on the side of BOOTP.
- *		-- Chip Salzenberg <chip@valinux.com>, May 2000
+ *		-- Chip Salzenberg <chip@vabeep.com>, May 2000
  *
  *  Ported DHCP support from 2.2.16 to 2.4.0-test4
  *              -- Eric Biederman <ebiederman@lnxi.com>, 30 Aug 2000
@@ -29,32 +29,32 @@
  *              --  Josef Siemes <jsiemes@web.de>, Aug 2002
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/random.h>
-#include <linux/init.h>
-#include <linux/utsname.h>
-#include <linux/in.h>
-#include <linux/if.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/socket.h>
-#include <linux/route.h>
-#include <linux/udp.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/major.h>
-#include <linux/root_dev.h>
-#include <linux/delay.h>
-#include <linux/nfs_fs.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/jiffies.h>
+#include <beep/random.h>
+#include <beep/init.h>
+#include <beep/utsname.h>
+#include <beep/in.h>
+#include <beep/if.h>
+#include <beep/inet.h>
+#include <beep/inetdevice.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/skbuff.h>
+#include <beep/ip.h>
+#include <beep/socket.h>
+#include <beep/route.h>
+#include <beep/udp.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/major.h>
+#include <beep/root_dev.h>
+#include <beep/delay.h>
+#include <beep/nfs_fs.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include <net/net_namespace.h>
 #include <net/arp.h>
 #include <net/ip.h>

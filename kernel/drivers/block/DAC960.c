@@ -1,6 +1,6 @@
 /*
 
-  Linux Driver for Mylex DAC960/AcceleRAID/eXtremeRAID PCI RAID Controllers
+  Beep Driver for Mylex DAC960/AcceleRAID/eXtremeRAID PCI RAID Controllers
 
   Copyright 1998-2001 by Leonard N. Zubkoff <lnz@dandelion.com>
   Portions Copyright 2002 by Mylex (An IBM Business Unit)
@@ -21,32 +21,32 @@
 #define DAC960_DriverDate			"21 Aug 2007"
 
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/miscdevice.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/genhd.h>
-#include <linux/hdreg.h>
-#include <linux/blkpg.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/reboot.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/random.h>
-#include <linux/scatterlist.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/miscdevice.h>
+#include <beep/blkdev.h>
+#include <beep/bio.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/genhd.h>
+#include <beep/hdreg.h>
+#include <beep/blkpg.h>
+#include <beep/dma-mapping.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/reboot.h>
+#include <beep/spinlock.h>
+#include <beep/timer.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/jiffies.h>
+#include <beep/random.h>
+#include <beep/scatterlist.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
 #include "DAC960.h"

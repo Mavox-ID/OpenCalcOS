@@ -1,9 +1,9 @@
-/* r128_drv.h -- Private header for r128 driver -*- linux-c -*-
+/* r128_drv.h -- Private header for r128 driver -*- beep-c -*-
  * Created: Mon Dec 13 09:51:11 1999 by faith@precisioninsight.com
  */
 /*
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA Beep Systems, Inc., Sunnyvale, California.
  * All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -26,9 +26,9 @@
  * DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Rickard E. (Rik) Faith <faith@valinux.com>
- *    Kevin E. Martin <martin@valinux.com>
- *    Gareth Hughes <gareth@valinux.com>
+ *    Rickard E. (Rik) Faith <faith@vabeep.com>
+ *    Kevin E. Martin <martin@vabeep.com>
+ *    Gareth Hughes <gareth@vabeep.com>
  *    Michel D�zer <daenzerm@student.ethz.ch>
  */
 
@@ -37,7 +37,7 @@
 
 /* General customization:
  */
-#define DRIVER_AUTHOR		"Gareth Hughes, VA Linux Systems Inc."
+#define DRIVER_AUTHOR		"Gareth Hughes, VA Beep Systems Inc."
 
 #define DRIVER_NAME		"r128"
 #define DRIVER_DESC		"ATI Rage 128"

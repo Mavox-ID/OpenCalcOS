@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/board-omap3evm.c
+ * beep/arch/arm/mach-omap2/board-omap3evm.c
  *
  * Copyright (C) 2008 Guangzhou EMA-Tech
  *
@@ -12,27 +12,27 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/leds.h>
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/leds.h>
+#include <beep/gpio.h>
+#include <beep/input.h>
+#include <beep/gpio_keys.h>
 
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/i2c/twl.h>
-#include <linux/mmc/host.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/spi/spi.h>
-#include <linux/interrupt.h>
-#include <linux/smsc911x.h>
-#include <linux/i2c/at24.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
+#include <beep/i2c/twl.h>
+#include <beep/mmc/host.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/spi/spi.h>
+#include <beep/interrupt.h>
+#include <beep/smsc911x.h>
+#include <beep/i2c/at24.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -41,12 +41,12 @@
 
 #include "common.h"
 #include "gpmc.h"
-#include <linux/platform_data/mtd-nand-omap2.h>
+#include <beep/platform_data/mtd-nand-omap2.h>
 #include <video/omapdss.h>
 #include <video/omap-panel-generic-dpi.h>
 #include <video/omap-panel-tfp410.h>
 
-#include <linux/platform_data/spi-omap2-mcspi.h>
+#include <beep/platform_data/spi-omap2-mcspi.h>
 
 #include "sdram-micron-mt46h32m32lf-6.h"
 #include "mux.h"

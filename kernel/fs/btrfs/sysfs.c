@@ -16,13 +16,13 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/module.h>
-#include <linux/kobject.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
+#include <beep/buffer_head.h>
+#include <beep/module.h>
+#include <beep/kobject.h>
 
 #include "ctree.h"
 #include "disk-io.h"

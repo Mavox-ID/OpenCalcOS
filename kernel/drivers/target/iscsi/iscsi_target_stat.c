@@ -4,9 +4,9 @@
  *
  * Copyright (c) 2011 Rising Tide Systems
  *
- * Licensed to the Linux Foundation under the General Public License (GPL) version 2.
+ * Licensed to the Beep Foundation under the General Public License (GPL) version 2.
  *
- * Author: Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Author: Nicholas A. Bellinger <nab@beep-iscsi.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,8 +19,8 @@
  * GNU General Public License for more details.
  ******************************************************************************/
 
-#include <linux/configfs.h>
-#include <linux/export.h>
+#include <beep/configfs.h>
+#include <beep/export.h>
 #include <scsi/iscsi_proto.h>
 #include <target/target_core_base.h>
 #include <target/configfs_macros.h>

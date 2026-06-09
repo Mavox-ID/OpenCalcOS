@@ -1,5 +1,5 @@
 /*
- *  linux/fs/nfs/blocklayout/blocklayout.h
+ *  beep/fs/nfs/blocklayout/blocklayout.h
  *
  *  Module for the NFSv4.1 pNFS block layout driver.
  *
@@ -32,9 +32,9 @@
 #ifndef FS_NFS_NFS4BLOCKLAYOUT_H
 #define FS_NFS_NFS4BLOCKLAYOUT_H
 
-#include <linux/device-mapper.h>
-#include <linux/nfs_fs.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
+#include <beep/device-mapper.h>
+#include <beep/nfs_fs.h>
+#include <beep/sunrpc/rpc_pipe_fs.h>
 
 #include "../pnfs.h"
 #include "../netns.h"

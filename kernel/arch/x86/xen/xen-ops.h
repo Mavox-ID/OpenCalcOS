@@ -1,9 +1,9 @@
 #ifndef XEN_OPS_H
 #define XEN_OPS_H
 
-#include <linux/init.h>
-#include <linux/clocksource.h>
-#include <linux/irqreturn.h>
+#include <beep/init.h>
+#include <beep/clocksource.h>
+#include <beep/irqreturn.h>
 #include <xen/xen-ops.h>
 
 /* These are code, but not functions.  Defined in entry.S */

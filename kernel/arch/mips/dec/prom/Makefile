@@ -1,6 +1,6 @@
 #
 # Makefile for the DECstation prom monitor library routines
-# under Linux.
+# under Beep.
 #
 
 lib-y			+= init.o memory.o cmdline.o identify.o console.o

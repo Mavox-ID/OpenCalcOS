@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/colibri-pxa270.c
+ *  beep/arch/arm/mach-pxa/colibri-pxa270.c
  *
  *  Support for Toradex PXA270 based Colibri module
  *  Daniel Mack <daniel@caiaq.de>
@@ -10,15 +10,15 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/platform_device.h>
-#include <linux/ucb1400.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/platform_device.h>
+#include <beep/ucb1400.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/flash.h>

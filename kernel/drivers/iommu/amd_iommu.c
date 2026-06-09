@@ -17,22 +17,22 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/ratelimit.h>
-#include <linux/pci.h>
-#include <linux/pci-ats.h>
-#include <linux/bitmap.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/iommu-helper.h>
-#include <linux/iommu.h>
-#include <linux/delay.h>
-#include <linux/amd-iommu.h>
-#include <linux/notifier.h>
-#include <linux/export.h>
-#include <linux/irq.h>
-#include <linux/msi.h>
+#include <beep/ratelimit.h>
+#include <beep/pci.h>
+#include <beep/pci-ats.h>
+#include <beep/bitmap.h>
+#include <beep/slab.h>
+#include <beep/debugfs.h>
+#include <beep/scatterlist.h>
+#include <beep/dma-mapping.h>
+#include <beep/iommu-helper.h>
+#include <beep/iommu.h>
+#include <beep/delay.h>
+#include <beep/amd-iommu.h>
+#include <beep/notifier.h>
+#include <beep/export.h>
+#include <beep/irq.h>
+#include <beep/msi.h>
 #include <asm/irq_remapping.h>
 #include <asm/io_apic.h>
 #include <asm/apic.h>

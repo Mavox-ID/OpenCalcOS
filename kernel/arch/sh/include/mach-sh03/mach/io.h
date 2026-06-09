@@ -9,7 +9,7 @@
 #ifndef _ASM_SH_IO_SH03_H
 #define _ASM_SH_IO_SH03_H
 
-#include <linux/time.h>
+#include <beep/time.h>
 
 #define IRL0_IRQ	2
 #define IRL0_PRIORITY	13

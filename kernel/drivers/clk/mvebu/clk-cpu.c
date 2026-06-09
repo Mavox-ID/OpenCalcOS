@@ -9,13 +9,13 @@
  * License version 2.  This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/kernel.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/clkdev.h>
+#include <beep/clk-provider.h>
+#include <beep/of_address.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/delay.h>
 #include "clk-cpu.h"
 
 #define SYS_CTRL_CLK_DIVIDER_CTRL_OFFSET    0x0

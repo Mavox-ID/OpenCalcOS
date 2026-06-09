@@ -1,5 +1,5 @@
 /*
- * Linux-DVB Driver for DiBcom's DiB0070 base-band RF Tuner.
+ * Beep-DVB Driver for DiBcom's DiB0070 base-band RF Tuner.
  *
  * Copyright (C) 2005-7 DiBcom (http://www.dibcom.fr/)
  *

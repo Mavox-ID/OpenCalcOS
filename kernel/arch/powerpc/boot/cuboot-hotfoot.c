@@ -1,7 +1,7 @@
 /*
  * Old U-boot compatibility for Esteem 195E Hotfoot CPU Board
  *
- * Author: Solomon Peachy <solomon@linux-wlan.com>
+ * Author: Solomon Peachy <solomon@beep-wlan.com>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License version 2 as published

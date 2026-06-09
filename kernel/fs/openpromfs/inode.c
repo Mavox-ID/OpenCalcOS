@@ -4,14 +4,14 @@
  * Copyright (C) 1998      Eddie C. Dost  (ecd@skynet.be)
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/magic.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/seq_file.h>
+#include <beep/magic.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>

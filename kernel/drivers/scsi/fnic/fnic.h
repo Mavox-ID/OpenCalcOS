@@ -18,10 +18,10 @@
 #ifndef _FNIC_H_
 #define _FNIC_H_
 
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/workqueue.h>
+#include <beep/bitops.h>
 #include <scsi/libfc.h>
 #include <scsi/libfcoe.h>
 #include "fnic_io.h"

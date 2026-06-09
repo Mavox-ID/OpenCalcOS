@@ -6,8 +6,8 @@
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
 #include <cpu/registers.h>
 
 /* THIS IS A PHYSICAL ADDRESS */

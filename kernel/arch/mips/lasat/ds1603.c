@@ -4,9 +4,9 @@
  * Brian Murphy <brian@murphy.dk>
  *
  */
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <asm/lasat/lasat.h>
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include <asm/lasat/ds1603.h>
 #include <asm/time.h>
 

@@ -1,9 +1,9 @@
-/* linux/arch/arm/plat-s3c64xx/setup-i2c0.c
+/* beep/arch/arm/plat-s3c64xx/setup-i2c0.c
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * Base S3C64XX I2C bus 0 gpio configuration
  *
@@ -12,13 +12,13 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/gpio.h>
 
 struct platform_device; /* don't need the contents */
 
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 #include <plat/gpio-cfg.h>
 
 void s3c_i2c0_cfg_gpio(struct platform_device *dev)

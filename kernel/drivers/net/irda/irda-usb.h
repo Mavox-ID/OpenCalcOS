@@ -29,7 +29,7 @@
  *
  *****************************************************************************/
 
-#include <linux/time.h>
+#include <beep/time.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/irda_device.h>      /* struct irlap_cb */

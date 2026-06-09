@@ -1,5 +1,5 @@
 /*
- *  This file was based upon code in Powertweak Linux (http://powertweak.sf.net)
+ *  This file was based upon code in Powertweak Beep (http://powertweak.sf.net)
  *  (C) 2000-2003  Dave Jones, Arjan van de Ven, Janne Pänkälä,
  *                 Dominik Brodowski.
  *
@@ -8,13 +8,13 @@
  *  BIG FAT DISCLAIMER: Work in progress code. Possibly *dangerous*
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/ioport.h>
-#include <linux/timex.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/ioport.h>
+#include <beep/timex.h>
+#include <beep/io.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/msr.h>
@@ -257,7 +257,7 @@ static void __exit powernow_k6_exit(void)
 
 
 MODULE_AUTHOR("Arjan van de Ven, Dave Jones <davej@redhat.com>, "
-		"Dominik Brodowski <linux@brodo.de>");
+		"Dominik Brodowski <beep@brodo.de>");
 MODULE_DESCRIPTION("PowerNow! driver for AMD K6-2+ / K6-3+ processors.");
 MODULE_LICENSE("GPL");
 

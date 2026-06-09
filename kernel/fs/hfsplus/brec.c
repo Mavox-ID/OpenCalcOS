@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfsplus/brec.c
+ *  beep/fs/hfsplus/brec.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)

@@ -13,18 +13,18 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/types.h>
-#include <linux/mtd/physmap.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/usb/r8a66597.h>
-#include <linux/usb/m66592.h>
-#include <linux/clkdev.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/ata_platform.h>
+#include <beep/types.h>
+#include <beep/mtd/physmap.h>
+#include <beep/i2c.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/usb/r8a66597.h>
+#include <beep/usb/m66592.h>
+#include <beep/clkdev.h>
 #include <net/ax88796.h>
 #include <asm/machvec.h>
 #include <mach/highlander.h>
@@ -280,7 +280,7 @@ static struct platform_device *r7780rp_devices[] __initdata = {
 
 /*
  * The CF is connected using a 16-bit bus where 8-bit operations are
- * unsupported. The linux ata driver is however using 8-bit operations, so
+ * unsupported. The beep ata driver is however using 8-bit operations, so
  * insert a trapped io filter to convert 8-bit operations into 16-bit.
  */
 static struct trapped_io cf_trapped_io = {

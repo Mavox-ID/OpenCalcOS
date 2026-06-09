@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/generic.c
+ *  beep/arch/arm/mach-pxa/generic.c
  *
  *  Author:	Nicolas Pitre
  *  Created:	Jun 15, 2001
@@ -16,10 +16,10 @@
  * initialization stuff for PXA machines which can be overridden later if
  * need be.
  */
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
 
 #include <mach/hardware.h>
 #include <asm/mach/map.h>

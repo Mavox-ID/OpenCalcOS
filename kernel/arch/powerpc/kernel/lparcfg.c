@@ -18,13 +18,13 @@
  * keyword - value pairs that specify the configuration of the partition.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 #include <asm/lppaca.h>
 #include <asm/hvcall.h>

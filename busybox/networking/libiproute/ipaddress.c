@@ -5,7 +5,7 @@
  * Authors: Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>
  *
  * Changes:
- * Laszlo Valko <valko@linux.karinthy.hu> 990223: address label must be zero terminated
+ * Laszlo Valko <valko@beep.karinthy.hu> 990223: address label must be zero terminated
  */
 #include <fnmatch.h>
 #include <net/if.h>
@@ -17,7 +17,7 @@
 #include "utils.h"
 
 #ifndef IFF_LOWER_UP
-/* from linux/if.h */
+/* from beep/if.h */
 #define IFF_LOWER_UP  0x10000  /* driver signals L1 up */
 #endif
 

@@ -20,12 +20,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>

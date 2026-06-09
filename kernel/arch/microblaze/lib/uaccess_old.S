@@ -8,8 +8,8 @@
  * for more details.
  */
 
-#include <linux/errno.h>
-#include <linux/linkage.h>
+#include <beep/errno.h>
+#include <beep/linkage.h>
 #include <asm/page.h>
 
 /*

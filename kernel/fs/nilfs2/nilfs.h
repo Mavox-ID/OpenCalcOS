@@ -24,11 +24,11 @@
 #ifndef _NILFS_H
 #define _NILFS_H
 
-#include <linux/kernel.h>
-#include <linux/buffer_head.h>
-#include <linux/spinlock.h>
-#include <linux/blkdev.h>
-#include <linux/nilfs2_fs.h>
+#include <beep/kernel.h>
+#include <beep/buffer_head.h>
+#include <beep/spinlock.h>
+#include <beep/blkdev.h>
+#include <beep/nilfs2_fs.h>
 #include "the_nilfs.h"
 #include "bmap.h"
 

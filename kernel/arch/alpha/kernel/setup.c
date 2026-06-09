@@ -1,5 +1,5 @@
 /*
- *  linux/arch/alpha/kernel/setup.c
+ *  beep/arch/alpha/kernel/setup.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  */
@@ -10,40 +10,40 @@
  * Bootup setup stuff.
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/user.h>
-#include <linux/screen_info.h>
-#include <linux/delay.h>
-#include <linux/mc146818rtc.h>
-#include <linux/console.h>
-#include <linux/cpu.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/bootmem.h>
-#include <linux/pci.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/initrd.h>
-#include <linux/eisa.h>
-#include <linux/pfn.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/user.h>
+#include <beep/screen_info.h>
+#include <beep/delay.h>
+#include <beep/mc146818rtc.h>
+#include <beep/console.h>
+#include <beep/cpu.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
+#include <beep/bootmem.h>
+#include <beep/pci.h>
+#include <beep/seq_file.h>
+#include <beep/root_dev.h>
+#include <beep/initrd.h>
+#include <beep/eisa.h>
+#include <beep/pfn.h>
 #ifdef CONFIG_MAGIC_SYSRQ
-#include <linux/sysrq.h>
-#include <linux/reboot.h>
+#include <beep/sysrq.h>
+#include <beep/reboot.h>
 #endif
-#include <linux/notifier.h>
+#include <beep/notifier.h>
 #include <asm/setup.h>
 #include <asm/io.h>
-#include <linux/log2.h>
-#include <linux/export.h>
+#include <beep/log2.h>
+#include <beep/export.h>
 
 extern struct atomic_notifier_head panic_notifier_list;
 static int alpha_panic_event(struct notifier_block *, unsigned long, void *);

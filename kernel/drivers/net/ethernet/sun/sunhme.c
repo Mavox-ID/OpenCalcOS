@@ -13,36 +13,36 @@
  *     argument : macaddr=0x00,0x10,0x20,0x30,0x40,0x50
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/random.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/mm.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/in.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/crc32.h>
+#include <beep/random.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/mm.h>
+#include <beep/bitops.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>
 #include <asm/byteorder.h>
 
 #ifdef CONFIG_SPARC
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 #include <asm/idprom.h>
 #include <asm/openprom.h>
 #include <asm/oplib.h>
@@ -55,7 +55,7 @@
 #include <asm/irq.h>
 
 #ifdef CONFIG_PCI
-#include <linux/pci.h>
+#include <beep/pci.h>
 #endif
 
 #include "sunhme.h"
@@ -2462,7 +2462,7 @@ static void hme_get_drvinfo(struct net_device *dev, struct ethtool_drvinfo *info
 	}
 #ifdef CONFIG_SBUS
 	else {
-		const struct linux_prom_registers *regs;
+		const struct beep_prom_registers *regs;
 		struct platform_device *op = hp->happy_dev;
 		regs = of_get_property(op->dev.of_node, "regs", NULL);
 		if (regs)

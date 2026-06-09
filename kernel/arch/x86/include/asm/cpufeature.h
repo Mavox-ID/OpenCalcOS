@@ -67,7 +67,7 @@
 #define X86_FEATURE_LONGRUN	(2*32+ 1) /* Longrun power control */
 #define X86_FEATURE_LRTI	(2*32+ 3) /* LongRun table interface */
 
-/* Other features, Linux-defined mapping, word 3 */
+/* Other features, Beep-defined mapping, word 3 */
 /* This range is used for feature bits which conflict or are synthesized */
 #define X86_FEATURE_CXMMX	(3*32+ 0) /* Cyrix MMX extensions */
 #define X86_FEATURE_K6_MTRR	(3*32+ 1) /* AMD K6 nonstandard MTRRs */
@@ -169,7 +169,7 @@
 #define X86_FEATURE_PERFCTR_CORE (6*32+23) /* core performance counter extensions */
 
 /*
- * Auxiliary flags: Linux defined - For features scattered in various
+ * Auxiliary flags: Beep defined - For features scattered in various
  * CPUID levels like 0x6, 0xA etc, word 7
  */
 #define X86_FEATURE_IDA		(7*32+ 0) /* Intel Dynamic Acceleration */
@@ -182,7 +182,7 @@
 #define X86_FEATURE_DTHERM	(7*32+ 7) /* Digital Thermal Sensor */
 #define X86_FEATURE_HW_PSTATE	(7*32+ 8) /* AMD HW-PState */
 
-/* Virtualization flags: Linux defined, word 8 */
+/* Virtualization flags: Beep defined, word 8 */
 #define X86_FEATURE_TPR_SHADOW  (8*32+ 0) /* Intel TPR Shadow */
 #define X86_FEATURE_VNMI        (8*32+ 1) /* Intel Virtual NMI */
 #define X86_FEATURE_FLEXPRIORITY (8*32+ 2) /* Intel FlexPriority */
@@ -218,7 +218,7 @@
 #if defined(__KERNEL__) && !defined(__ASSEMBLY__)
 
 #include <asm/asm.h>
-#include <linux/bitops.h>
+#include <beep/bitops.h>
 
 extern const char * const x86_cap_flags[NCAPINTS*32];
 extern const char * const x86_power_flags[32];

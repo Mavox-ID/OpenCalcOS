@@ -17,7 +17,7 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include "as102_drv.h"
 #include "as10x_cmd.h"
 

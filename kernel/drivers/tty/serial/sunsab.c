@@ -15,24 +15,24 @@
  *   David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/circ_buf.h>
-#include <linux/serial.h>
-#include <linux/sysrq.h>
-#include <linux/console.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/major.h>
+#include <beep/string.h>
+#include <beep/ptrace.h>
+#include <beep/ioport.h>
+#include <beep/circ_buf.h>
+#include <beep/serial.h>
+#include <beep/sysrq.h>
+#include <beep/console.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/of_device.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -43,8 +43,8 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/serial_core.h>
-#include <linux/sunserialcore.h>
+#include <beep/serial_core.h>
+#include <beep/sunserialcore.h>
 
 #include "sunsab.h"
 

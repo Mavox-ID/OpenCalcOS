@@ -10,12 +10,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/cpufreq.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/sched.h>	/* set_cpus_allowed() */
-#include <linux/delay.h>
-#include <linux/platform_device.h>
+#include <beep/cpufreq.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/sched.h>	/* set_cpus_allowed() */
+#include <beep/delay.h>
+#include <beep/platform_device.h>
 
 #include <asm/clock.h>
 

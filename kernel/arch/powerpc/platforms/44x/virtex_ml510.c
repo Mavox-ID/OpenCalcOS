@@ -1,5 +1,5 @@
 #include <asm/i8259.h>
-#include <linux/pci.h>
+#include <beep/pci.h>
 #include "44x.h"
 
 /**

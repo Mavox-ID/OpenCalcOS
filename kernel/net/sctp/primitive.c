@@ -45,12 +45,12 @@
  * be incorporated into the next SCTP release.
  */
 
-#include <linux/types.h>
-#include <linux/list.h> /* For struct list_head */
-#include <linux/socket.h>
-#include <linux/ip.h>
-#include <linux/time.h> /* For struct timeval */
-#include <linux/gfp.h>
+#include <beep/types.h>
+#include <beep/list.h> /* For struct list_head */
+#include <beep/socket.h>
+#include <beep/ip.h>
+#include <beep/time.h> /* For struct timeval */
+#include <beep/gfp.h>
 #include <net/sock.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/sm.h>

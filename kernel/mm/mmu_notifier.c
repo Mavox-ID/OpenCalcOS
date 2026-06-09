@@ -1,5 +1,5 @@
 /*
- *  linux/mm/mmu_notifier.c
+ *  beep/mm/mmu_notifier.c
  *
  *  Copyright (C) 2008  Qumranet, Inc.
  *  Copyright (C) 2008  SGI
@@ -9,15 +9,15 @@
  *  the COPYING file in the top-level directory.
  */
 
-#include <linux/rculist.h>
-#include <linux/mmu_notifier.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/srcu.h>
-#include <linux/rcupdate.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/rculist.h>
+#include <beep/mmu_notifier.h>
+#include <beep/export.h>
+#include <beep/mm.h>
+#include <beep/err.h>
+#include <beep/srcu.h>
+#include <beep/rcupdate.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 /* global SRCU for all MMs */
 static struct srcu_struct srcu;

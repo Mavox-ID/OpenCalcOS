@@ -3,11 +3,11 @@
 #ifndef MAILBOX_H
 #define MAILBOX_H
 
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/kfifo.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/kfifo.h>
 
 typedef u32 mbox_msg_t;
 struct omap_mbox;

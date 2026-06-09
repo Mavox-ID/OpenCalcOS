@@ -22,9 +22,9 @@
 
 #include <asm/io.h>
 #include <asm/nvram.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 #include <sound/core.h>
 #include "pmac.h"
 

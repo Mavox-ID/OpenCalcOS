@@ -45,7 +45,7 @@
  *	o not 64 bit compliant (most users do hashv = (int) self)
  *	o hashbin_remove() is broken => use hashbin_remove_this()
  * I think most users would be better served by a simple linked list
- * (like include/linux/list.h) with a global spinlock per list.
+ * (like include/beep/list.h) with a global spinlock per list.
  * Jean II
  */
 
@@ -191,8 +191,8 @@
  *
  * Jean II
  */
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/irqueue.h>

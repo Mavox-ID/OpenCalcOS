@@ -1,7 +1,7 @@
 /* Glue code to lib/swiotlb-xen.c */
 
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/pci.h>
 #include <xen/swiotlb-xen.h>
 
 #include <asm/xen/hypervisor.h>
@@ -14,7 +14,7 @@
 #include <asm/iommu.h>
 #include <asm/dma.h>
 #endif
-#include <linux/export.h>
+#include <beep/export.h>
 
 int xen_swiotlb __read_mostly;
 

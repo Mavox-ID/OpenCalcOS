@@ -1,11 +1,11 @@
 /*
  *   Conexant cx24123/cx24109 - DVB QPSK Satellite demod/tuner driver
  *
- *   Copyright (C) 2005 Steven Toth <stoth@linuxtv.org>
+ *   Copyright (C) 2005 Steven Toth <stoth@beeptv.org>
  *
  *   Support for KWorld DVB-S 100 by Vadim Catana <skystar@moldova.cc>
  *
- *   Support for CX24123/CX24113-NIM by Patrick Boettcher <pb@linuxtv.org>
+ *   Support for CX24123/CX24113-NIM by Patrick Boettcher <pb@beeptv.org>
  *
  *   This program is free software; you can redistribute it and/or
  *   modify it under the terms of the GNU General Public License as
@@ -22,10 +22,10 @@
  *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
 #include "dvb_frontend.h"
 #include "cx24123.h"

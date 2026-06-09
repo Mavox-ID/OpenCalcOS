@@ -3,25 +3,25 @@
  *		    Horst Hummel <Horst.Hummel@de.ibm.com>
  *		    Carsten Otte <Cotte@de.ibm.com>
  *		    Martin Schwidefsky <schwidefsky@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <Beep390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2009
  */
 
 #define KMSG_COMPONENT "dasd"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kmod.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ctype.h>
-#include <linux/major.h>
-#include <linux/slab.h>
-#include <linux/hdreg.h>
-#include <linux/async.h>
-#include <linux/mutex.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/vmalloc.h>
+#include <beep/kmod.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ctype.h>
+#include <beep/major.h>
+#include <beep/slab.h>
+#include <beep/hdreg.h>
+#include <beep/async.h>
+#include <beep/mutex.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/vmalloc.h>
 
 #include <asm/ccwdev.h>
 #include <asm/ebcdic.h>
@@ -50,7 +50,7 @@ struct dasd_discipline *dasd_diag_discipline_pointer;
 void dasd_int_handler(struct ccw_device *, unsigned long, struct irb *);
 
 MODULE_AUTHOR("Holger Smolinski <Holger.Smolinski@de.ibm.com>");
-MODULE_DESCRIPTION("Linux on S/390 DASD device driver,"
+MODULE_DESCRIPTION("Beep on S/390 DASD device driver,"
 		   " Copyright IBM Corp. 2000");
 MODULE_SUPPORTED_DEVICE("dasd");
 MODULE_LICENSE("GPL");
@@ -396,7 +396,7 @@ static int dasd_state_unfmt_to_basic(struct dasd_device *device)
 
 /*
  * Make the device online and schedule the bottom half to start
- * the requeueing of requests from the linux request queue to the
+ * the requeueing of requests from the beep request queue to the
  * ccw queue.
  */
 static int

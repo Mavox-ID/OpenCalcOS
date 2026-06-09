@@ -12,8 +12,8 @@
  * the SpitFire page tables.
  */
 
-#include <linux/compiler.h>
-#include <linux/const.h>
+#include <beep/compiler.h>
+#include <beep/const.h>
 #include <asm/types.h>
 #include <asm/spitfire.h>
 #include <asm/asi.h>
@@ -94,7 +94,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/sched.h>
+#include <beep/sched.h>
 
 /* Entries per page directory level. */
 #define PTRS_PER_PTE	(1UL << (PAGE_SHIFT-4))
@@ -881,7 +881,7 @@ extern pte_t pgoff_to_pte(unsigned long);
 
 extern unsigned long sparc64_valid_addr_bitmap[];
 
-/* Needs to be defined here and not in linux/mm.h, as it is arch dependent */
+/* Needs to be defined here and not in beep/mm.h, as it is arch dependent */
 static inline bool kern_addr_valid(unsigned long addr)
 {
 	unsigned long paddr = __pa(addr);

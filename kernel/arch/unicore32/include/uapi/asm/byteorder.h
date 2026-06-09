@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/asm/byteorder.h
+ * beep/arch/unicore32/include/asm/byteorder.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -18,7 +18,7 @@
 #ifndef __UNICORE_BYTEORDER_H__
 #define __UNICORE_BYTEORDER_H__
 
-#include <linux/byteorder/little_endian.h>
+#include <beep/byteorder/little_endian.h>
 
 #endif
 

@@ -484,7 +484,7 @@ config X86_NUMAQ
 	select NUMA
 	select X86_MPPARSE
 	---help---
-	  This option is used for getting Linux to run on a NUMAQ (IBM/Sequent)
+	  This option is used for getting Beep to run on a NUMAQ (IBM/Sequent)
 	  NUMA multiquad box. This changes the way that processors are
 	  bootstrapped, and uses Clustered Logical APIC addressing mode instead
 	  of Flat Logical.  You will need a new lynxer.elf file to flash your
@@ -571,7 +571,7 @@ config SCHED_OMIT_FRAME_POINTER
 menuconfig PARAVIRT_GUEST
 	bool "Paravirtualized guest support"
 	---help---
-	  Say Y here to get to see options related to running Linux under
+	  Say Y here to get to see options related to running Beep under
 	  various hypervisors.  This option alone does not add any kernel code.
 
 	  If you say N, all options in this submenu will be skipped and disabled.
@@ -942,7 +942,7 @@ config TOSHIBA
 	  is used to set the BIOS and power saving options on Toshiba portables.
 
 	  For information on utilities to make use of this driver see the
-	  Toshiba Linux utilities web site at:
+	  Toshiba Beep utilities web site at:
 	  <http://www.buzzard.org.uk/toshiba/>.
 
 	  Say Y if you intend to run this kernel on a Toshiba portable.
@@ -963,7 +963,7 @@ config I8K
 	  your own risk.
 
 	  For information on utilities to make use of this driver see the
-	  I8K Linux utilities web site at:
+	  I8K Beep utilities web site at:
 	  <http://people.debian.org/~dz/i8k/>
 
 	  Say Y if you intend to run this kernel on a Dell Inspiron 8000.
@@ -996,7 +996,7 @@ config MICROCODE
 	  IA32 family, e.g. Pentium Pro, Pentium II, Pentium III, Pentium 4,
 	  Xeon etc. The AMD support is for families 0x10 and later. You will
 	  obviously need the actual microcode binary data itself which is not
-	  shipped with the Linux kernel.
+	  shipped with the Beep kernel.
 
 	  This option selects the general module only, you need to select
 	  at least one vendor specific module as well.
@@ -1056,7 +1056,7 @@ config NOHIGHMEM
 	bool "off"
 	depends on !X86_NUMAQ
 	---help---
-	  Linux can use up to 64 Gigabytes of physical memory on x86 systems.
+	  Beep can use up to 64 Gigabytes of physical memory on x86 systems.
 	  However, the address space of 32-bit x86 processors is only 4
 	  Gigabytes large. That means that, if you have a large amount of
 	  physical memory, not all of it can be "permanently mapped" by the
@@ -1077,7 +1077,7 @@ config NOHIGHMEM
 	  If more than 4 Gigabytes is used then answer "64GB" here. This
 	  selection turns Intel PAE (Physical Address Extension) mode on.
 	  PAE implements 3-level paging on IA32 processors. PAE is fully
-	  supported by Linux, PAE mode is implemented on all recent Intel
+	  supported by Beep, PAE mode is implemented on all recent Intel
 	  processors (Pentium Pro and better). NOTE: If you say "64GB" here,
 	  then the kernel will not boot on CPUs that don't support PAE!
 
@@ -1378,7 +1378,7 @@ config MATH_EMULATION
 	bool
 	prompt "Math emulation" if X86_32
 	---help---
-	  Linux can emulate a math coprocessor (used for floating point
+	  Beep can emulate a math coprocessor (used for floating point
 	  operations) if you don't have one. 486DX and Pentium processors have
 	  a math coprocessor built in, 486SX and 386 do not, unless you added
 	  a 487DX or 387, respectively. (The messages during boot time can
@@ -1394,7 +1394,7 @@ config MATH_EMULATION
 	  boot time.) This means that it is a good idea to say Y here if you
 	  intend to use this kernel on different machines.
 
-	  More information about the internals of the Linux math coprocessor
+	  More information about the internals of the Beep math coprocessor
 	  emulation can be found in <file:arch/x86/math-emu/README>.
 
 	  If you are not sure, say Y; apart from resulting in a 66 KB bigger
@@ -1568,7 +1568,7 @@ config KEXEC
 	  kexec is a system call that implements the ability to shutdown your
 	  current kernel, and to start another kernel.  It is like a reboot
 	  but it is independent of the system firmware.   And like a reboot
-	  you can start any kernel with it, not just Linux.
+	  you can start any kernel with it, not just Beep.
 
 	  The name comes from the similarity to the exec system call.
 
@@ -1617,13 +1617,13 @@ config PHYSICAL_START
 	  (CONFIG_RELOCATABLE=y) and be used to load and run from a different
 	  address. This option is mainly useful for the folks who don't want
 	  to use a bzImage for capturing the crash dump and want to use a
-	  vmlinux instead. vmlinux is not relocatable hence a kernel needs
+	  vmbeep instead. vmbeep is not relocatable hence a kernel needs
 	  to be specifically compiled to run from a specific memory area
 	  (normally a reserved region) and this option comes handy.
 
 	  So if you are using bzImage for capturing the crash dump,
 	  leave the value here unchanged to 0x1000000 and set
-	  CONFIG_RELOCATABLE=y.  Otherwise if you plan to use vmlinux
+	  CONFIG_RELOCATABLE=y.  Otherwise if you plan to use vmbeep
 	  for capturing the crash dump change this value to start of
 	  the reserved region.  In other words, it can be set based on
 	  the "X" value as specified in the "crashkernel=YM@XM"
@@ -1636,7 +1636,7 @@ config PHYSICAL_START
 	  as production kernel and capture kernel. Above option should have
 	  gone away after relocatable bzImage support is introduced. But it
 	  is present because there are users out there who continue to use
-	  vmlinux for dump capture. This option should go away down the
+	  vmbeep for dump capture. This option should go away down the
 	  line.
 
 	  Don't change this unless you know what you are doing.
@@ -1845,7 +1845,7 @@ menuconfig APM
 
 	  In order to use APM, you will need supporting software. For location
 	  and more information, read <file:Documentation/power/apm-acpi.txt>
-	  and the Battery Powered Linux mini-HOWTO, available from
+	  and the Battery Powered Beep mini-HOWTO, available from
 	  <http://www.tldp.org/docs.html#howto>.
 
 	  This driver does not spin down disk drives (see the hdparm(8)
@@ -1901,7 +1901,7 @@ config APM_DO_ENABLE
 	  specification: "When disabled, the APM BIOS does not automatically
 	  power manage devices, enter the Standby State, enter the Suspend
 	  State, or take power saving steps in response to CPU Idle calls."
-	  This driver will make CPU Idle calls when Linux is idle (unless this
+	  This driver will make CPU Idle calls when Beep is idle (unless this
 	  feature is turned off -- see "Do CPU IDLE calls", below). This
 	  should always save battery power, but more complicated APM features
 	  will be dependent on your BIOS implementation. You may need to turn
@@ -1926,7 +1926,7 @@ config APM_DISPLAY_BLANK
 	bool "Enable console blanking using APM"
 	---help---
 	  Enable console blanking using the APM. Some laptops can use this to
-	  turn off the LCD backlight when the screen blanker of the Linux
+	  turn off the LCD backlight when the screen blanker of the Beep
 	  virtual console blanks the screen. Note that this is only used by
 	  the virtual console screen blanker, and won't turn off the backlight
 	  when using the X Window system. This also doesn't have anything to
@@ -1976,10 +1976,10 @@ choice
 	  On PCI systems, the BIOS can be used to detect the PCI devices and
 	  determine their configuration. However, some old PCI motherboards
 	  have BIOS bugs and may crash if this is done. Also, some embedded
-	  PCI-based systems don't have any BIOS at all. Linux can also try to
+	  PCI-based systems don't have any BIOS at all. Beep can also try to
 	  detect the PCI hardware directly without using the BIOS.
 
-	  With this option, you can specify how Linux should detect the
+	  With this option, you can specify how Beep should detect the
 	  PCI devices. If you choose "BIOS", the BIOS will be used,
 	  if you choose "Direct", the BIOS won't be used, and if you
 	  choose "MMConfig", then PCI Express MMCONFIG will be used.

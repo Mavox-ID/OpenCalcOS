@@ -10,15 +10,15 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/err.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/rtnetlink.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 
 #include "internal.h"
 

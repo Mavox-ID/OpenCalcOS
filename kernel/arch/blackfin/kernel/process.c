@@ -6,15 +6,15 @@
  * Licensed under the GPL-2 or later
  */
 
-#include <linux/module.h>
-#include <linux/unistd.h>
-#include <linux/user.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/tick.h>
-#include <linux/fs.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/unistd.h>
+#include <beep/user.h>
+#include <beep/uaccess.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/tick.h>
+#include <beep/fs.h>
+#include <beep/err.h>
 
 #include <asm/blackfin.h>
 #include <asm/fixed_code.h>
@@ -397,7 +397,7 @@ int _access_ok(unsigned long addr, unsigned long size)
 		return 0;
 	if (segment_eq(get_fs(), KERNEL_DS))
 		return 1;
-#ifdef CONFIG_MTD_UCLINUX
+#ifdef CONFIG_MTD_UCBEEP
 	if (1)
 #else
 	if (0)

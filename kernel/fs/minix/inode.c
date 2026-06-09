@@ -1,5 +1,5 @@
 /*
- *  linux/fs/minix/inode.c
+ *  beep/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -10,14 +10,14 @@
  *  Updated to filesystem version 3 by Daniel Aragones
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include "minix.h"
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/highuid.h>
-#include <linux/vfs.h>
-#include <linux/writeback.h>
+#include <beep/buffer_head.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/highuid.h>
+#include <beep/vfs.h>
+#include <beep/writeback.h>
 
 static int minix_write_inode(struct inode *inode,
 		struct writeback_control *wbc);

@@ -1,7 +1,7 @@
 /*
  * Early kernel startup code for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  *
  * This program is free software; you can redistribute it and/or modify
@@ -19,8 +19,8 @@
  * 02110-1301, USA.
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/asm-offsets.h>
 #include <asm/mem-layout.h>
 #include <asm/vm_mmu.h>

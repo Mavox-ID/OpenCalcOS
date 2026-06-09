@@ -15,21 +15,21 @@
  *
  */
 
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_platform.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/io.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/of_platform.h>
+#include <beep/of_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/mm.h>
+#include <beep/fb.h>
+#include <beep/io.h>
 
 struct grvga_regs {
 	u32 status; 		/* 0x00 */

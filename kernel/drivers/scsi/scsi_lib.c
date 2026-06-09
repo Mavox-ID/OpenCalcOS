@@ -4,22 +4,22 @@
  *  SCSI queueing library.
  *      Initial versions: Eric Youngdale (eric@andante.org).
  *                        Based upon conversations with large numbers
- *                        of people at Linux Expo.
+ *                        of people at Beep Expo.
  */
 
-#include <linux/bio.h>
-#include <linux/bitops.h>
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mempool.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/hardirq.h>
-#include <linux/scatterlist.h>
+#include <beep/bio.h>
+#include <beep/bitops.h>
+#include <beep/blkdev.h>
+#include <beep/completion.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/mempool.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/hardirq.h>
+#include <beep/scatterlist.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -1569,7 +1569,7 @@ static void scsi_request_fn(struct request_queue *q)
 		if (unlikely(cmd == NULL)) {
 			printk(KERN_CRIT "impossible request in %s.\n"
 					 "please mail a stack trace to "
-					 "linux-scsi@vger.kernel.org\n",
+					 "beep-scsi@vger.kernel.org\n",
 					 __func__);
 			blk_dump_rq_flags(req, "foo");
 			BUG();

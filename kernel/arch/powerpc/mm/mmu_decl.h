@@ -3,7 +3,7 @@
  * in arch/ppc/mm/.
  *
  *  Derived from arch/ppc/mm/init.c:
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -18,7 +18,7 @@
  *  2 of the License, or (at your option) any later version.
  *
  */
-#include <linux/mm.h>
+#include <beep/mm.h>
 #include <asm/tlbflush.h>
 #include <asm/mmu.h>
 

@@ -30,13 +30,13 @@
  * SOFTWARE.
  */
 
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/moduleparam.h>
+#include <beep/spinlock.h>
+#include <beep/pci.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/vmalloc.h>
+#include <beep/moduleparam.h>
 
 #include "qib.h"
 

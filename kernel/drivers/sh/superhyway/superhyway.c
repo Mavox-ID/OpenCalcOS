@@ -3,21 +3,21 @@
  *
  * SuperHyway Bus Driver
  *
- * Copyright (C) 2004, 2005  Paul Mundt <lethal@linux-sh.org>
+ * Copyright (C) 2004, 2005  Paul Mundt <lethal@beep-sh.org>
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/superhyway.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/superhyway.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 
 static int superhyway_devices;
 

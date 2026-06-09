@@ -7,21 +7,21 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/atmel-mci.h>
-#include <linux/clk.h>
-#include <linux/fb.h>
-#include <linux/etherdevice.h>
-#include <linux/i2c.h>
-#include <linux/i2c-gpio.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/spi/spi.h>
+#include <beep/atmel-mci.h>
+#include <beep/clk.h>
+#include <beep/fb.h>
+#include <beep/etherdevice.h>
+#include <beep/i2c.h>
+#include <beep/i2c-gpio.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
+#include <beep/platform_device.h>
+#include <beep/types.h>
+#include <beep/spi/spi.h>
 
 #include <video/atmel_lcdc.h>
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/setup.h>
 
 #include <mach/at32ap700x.h>

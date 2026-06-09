@@ -8,13 +8,13 @@
  *   Address Translation Service 1.0
  */
 
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/pci-ats.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/export.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/pci-ats.h>
 #include "pci.h"
 
 #define VIRTFN_ID_LEN	16

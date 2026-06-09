@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-s3c24xx/setup-ts.c
+/* beep/arch/arm/plat-s3c24xx/setup-ts.c
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *                     http://www.samsung.com/
@@ -10,8 +10,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/gpio.h>
 
 struct platform_device; /* don't need the contents */
 

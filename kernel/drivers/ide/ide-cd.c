@@ -7,7 +7,7 @@
  * Copyright (C) 2005, 2007-2009  Bartlomiej Zolnierkiewicz
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See beep/COPYING for more information.
  *
  * See Documentation/cdrom/ide-cd for usage information.
  *
@@ -25,27 +25,27 @@
 
 #define IDECD_VERSION "5.00"
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/cdrom.h>
-#include <linux/ide.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/bcd.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/cdrom.h>
+#include <beep/ide.h>
+#include <beep/completion.h>
+#include <beep/mutex.h>
+#include <beep/bcd.h>
 
 /* For SCSI -> ATAPI command conversion */
 #include <scsi/scsi.h>
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 #include <asm/unaligned.h>
 
 #include "ide-cd.h"

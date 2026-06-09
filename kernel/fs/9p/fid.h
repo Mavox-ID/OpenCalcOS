@@ -21,7 +21,7 @@
  */
 #ifndef FS_9P_FID_H
 #define FS_9P_FID_H
-#include <linux/list.h>
+#include <beep/list.h>
 
 /**
  * struct v9fs_dentry - 9p private data stored in dentry d_fsdata
@@ -35,8 +35,8 @@
  * inodes in order to more closely map functionality to the Plan 9
  * expected behavior for FID reclaimation and tracking.
  *
- * See Also: Mapping FIDs to Linux VFS model in
- * Design and Implementation of the Linux 9P File System documentation
+ * See Also: Mapping FIDs to Beep VFS model in
+ * Design and Implementation of the Beep 9P File System documentation
  */
 struct v9fs_dentry {
 	spinlock_t lock; /* protect fidlist */

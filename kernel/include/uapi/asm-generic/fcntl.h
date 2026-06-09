@@ -1,7 +1,7 @@
 #ifndef _ASM_GENERIC_FCNTL_H
 #define _ASM_GENERIC_FCNTL_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * FMODE_EXEC is 0x20
@@ -63,7 +63,7 @@
 #endif
 
 /*
- * Before Linux 2.6.33 only O_DSYNC semantics were implemented, but using
+ * Before Beep 2.6.33 only O_DSYNC semantics were implemented, but using
  * the O_SYNC flag.  We continue to use the existing numerical value
  * for O_DSYNC semantics now, but using the correct symbolic name for it.
  * This new value is used to request true Posix O_SYNC semantics.  It is
@@ -161,7 +161,7 @@ struct f_owner_ex {
 #define LOCK_WRITE	128	/* which allows concurrent write operations */
 #define LOCK_RW		192	/* which allows concurrent read & write ops */
 
-#define F_LINUX_SPECIFIC_BASE	1024
+#define F_BEEP_SPECIFIC_BASE	1024
 
 #ifndef HAVE_ARCH_STRUCT_FLOCK
 #ifndef __ARCH_FLOCK_PAD

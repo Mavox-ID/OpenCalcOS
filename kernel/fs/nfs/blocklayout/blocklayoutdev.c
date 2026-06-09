@@ -1,5 +1,5 @@
 /*
- *  linux/fs/nfs/blocklayout/blocklayoutdev.c
+ *  beep/fs/nfs/blocklayout/blocklayoutdev.c
  *
  *  Device operations for the pnfs nfs4 file layout driver.
  *
@@ -29,12 +29,12 @@
  * of the software, even if it has been or is hereafter advised of the
  * possibility of such damages.
  */
-#include <linux/module.h>
-#include <linux/buffer_head.h> /* __bread */
+#include <beep/module.h>
+#include <beep/buffer_head.h> /* __bread */
 
-#include <linux/genhd.h>
-#include <linux/blkdev.h>
-#include <linux/hash.h>
+#include <beep/genhd.h>
+#include <beep/blkdev.h>
+#include <beep/hash.h>
 
 #include "blocklayout.h"
 

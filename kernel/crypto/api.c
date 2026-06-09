@@ -15,15 +15,15 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/err.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/kmod.h>
+#include <beep/module.h>
+#include <beep/param.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 #include "internal.h"
 
 LIST_HEAD(crypto_alg_list);

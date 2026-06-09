@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/fonts.c -- `Soft' font definitions
+ * beep/drivers/video/fonts.c -- `Soft' font definitions
  *
  *    Created 1995 by Geert Uytterhoeven
  *    Rewritten 1998 by Martin Mares <mj@ucw.cz>
@@ -12,13 +12,13 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/string.h>
 #if defined(__mc68000__)
 #include <asm/setup.h>
 #endif
-#include <linux/font.h>
+#include <beep/font.h>
 
 #define NO_FONTS
 

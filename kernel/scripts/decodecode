@@ -1,5 +1,5 @@
 #!/bin/sh
-# Disassemble the Code: line in Linux oopses
+# Disassemble the Code: line in Beep oopses
 # usage: decodecode < oops.file
 #
 # options: set env. variable AFLAGS=options to pass options to "as";

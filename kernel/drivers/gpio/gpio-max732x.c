@@ -12,15 +12,15 @@
  *  the Free Software Foundation; version 2 of the License.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/i2c.h>
-#include <linux/i2c/max732x.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/i2c.h>
+#include <beep/i2c/max732x.h>
 
 
 /*

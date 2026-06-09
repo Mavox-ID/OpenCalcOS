@@ -1,4 +1,4 @@
-/* Copyright (C) 2000-2002 Joakim Axelsson <gozem@linux.nu>
+/* Copyright (C) 2000-2002 Joakim Axelsson <gozem@beep.nu>
  *                         Patrick Schaaf <bof@bof.de>
  * Copyright (C) 2003-2011 Jozsef Kadlecsik <kadlec@blackhole.kfki.hu>
  *
@@ -9,23 +9,23 @@
 
 /* Kernel module implementing an IP set type: the bitmap:ip type */
 
-#include <linux/module.h>
-#include <linux/ip.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
-#include <linux/netlink.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
+#include <beep/module.h>
+#include <beep/ip.h>
+#include <beep/skbuff.h>
+#include <beep/errno.h>
+#include <beep/bitops.h>
+#include <beep/spinlock.h>
+#include <beep/netlink.h>
+#include <beep/jiffies.h>
+#include <beep/timer.h>
 #include <net/netlink.h>
 #include <net/tcp.h>
 
-#include <linux/netfilter/ipset/pfxlen.h>
-#include <linux/netfilter/ipset/ip_set.h>
-#include <linux/netfilter/ipset/ip_set_bitmap.h>
+#include <beep/netfilter/ipset/pfxlen.h>
+#include <beep/netfilter/ipset/ip_set.h>
+#include <beep/netfilter/ipset/ip_set_bitmap.h>
 #define IP_SET_BITMAP_TIMEOUT
-#include <linux/netfilter/ipset/ip_set_timeout.h>
+#include <beep/netfilter/ipset/ip_set_timeout.h>
 
 #define REVISION_MIN	0
 #define REVISION_MAX	0

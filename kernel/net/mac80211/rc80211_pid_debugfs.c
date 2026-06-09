@@ -6,14 +6,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/poll.h>
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/poll.h>
+#include <beep/netdevice.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #include <net/mac80211.h>
 #include "rate.h"

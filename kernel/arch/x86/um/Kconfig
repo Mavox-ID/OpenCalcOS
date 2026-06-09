@@ -1,4 +1,4 @@
-mainmenu "User Mode Linux/$SUBARCH $KERNELVERSION Kernel Configuration"
+mainmenu "User Mode Beep/$SUBARCH $KERNELVERSION Kernel Configuration"
 
 source "arch/um/Kconfig.common"
 

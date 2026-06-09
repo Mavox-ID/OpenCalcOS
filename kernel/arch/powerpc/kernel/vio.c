@@ -14,18 +14,18 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/cpu.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/stat.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/console.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/kobject.h>
+#include <beep/cpu.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/stat.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/console.h>
+#include <beep/export.h>
+#include <beep/mm.h>
+#include <beep/dma-mapping.h>
+#include <beep/kobject.h>
 
 #include <asm/iommu.h>
 #include <asm/dma.h>

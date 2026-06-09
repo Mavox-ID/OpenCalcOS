@@ -11,13 +11,13 @@
  */
 
 /* LCD power functions */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/fb.h>
+#include <beep/backlight.h>
 
 #include <asm/hardware/locomo.h>
 #include <asm/irq.h>

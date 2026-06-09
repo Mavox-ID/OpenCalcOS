@@ -1,7 +1,7 @@
-#include <linux/hardirq.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/delay.h>
+#include <beep/hardirq.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/delay.h>
 
 #include "decl.h"
 #include "cmd.h"

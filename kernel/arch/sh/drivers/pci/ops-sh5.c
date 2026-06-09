@@ -6,18 +6,18 @@
  * Copyright (C) 2004 Richard Curnow
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See beep/COPYING for more information.
  */
-#include <linux/kernel.h>
-#include <linux/rwsem.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/irq.h>
+#include <beep/kernel.h>
+#include <beep/rwsem.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/types.h>
+#include <beep/irq.h>
 #include <asm/pci.h>
 #include <asm/io.h>
 #include "pci-sh5.h"

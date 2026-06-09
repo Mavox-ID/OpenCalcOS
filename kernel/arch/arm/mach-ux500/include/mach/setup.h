@@ -12,8 +12,8 @@
 #define __ASM_ARCH_SETUP_H
 
 #include <asm/mach/time.h>
-#include <linux/init.h>
-#include <linux/mfd/abx500/ab8500.h>
+#include <beep/init.h>
+#include <beep/mfd/abx500/ab8500.h>
 
 void __init ux500_map_io(void);
 extern void __init u8500_map_io(void);

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-at91/gpio.c
+ * beep/arch/arm/mach-at91/gpio.c
  *
  * Copyright (C) 2005 HP Labs
  *
@@ -9,20 +9,20 @@
  * (at your option) any later version.
  */
 
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/irqdomain.h>
-#include <linux/of_address.h>
+#include <beep/clk.h>
+#include <beep/errno.h>
+#include <beep/device.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/irqdomain.h>
+#include <beep/of_address.h>
 
 #include <asm/mach/irq.h>
 
@@ -37,7 +37,7 @@ struct at91_gpio_chip {
 	struct gpio_chip	chip;
 	struct at91_gpio_chip	*next;		/* Bank sharing same clock */
 	int			pioc_hwirq;	/* PIO bank interrupt identifier on AIC */
-	int			pioc_virq;	/* PIO bank Linux virtual interrupt */
+	int			pioc_virq;	/* PIO bank Beep virtual interrupt */
 	int			pioc_idx;	/* PIO bank index */
 	void __iomem		*regbase;	/* PIO bank virtual address */
 	struct clk		*clock;		/* associated clock */
@@ -130,12 +130,12 @@ static char peripheral_function(void __iomem *pio, unsigned mask)
  * want to change signals in groups, do it directly.)
  *
  * Bootloaders will usually handle some of the pin multiplexing setup.
- * The intent is certainly that by the time Linux is fully booted, all
+ * The intent is certainly that by the time Beep is fully booted, all
  * pins should have been fully initialized.  These setup calls should
  * only be used by board setup routines, or possibly in driver probe().
  *
  * For bootloaders doing all that setup, these calls could be inlined
- * as NOPs so Linux won't duplicate any setup code
+ * as NOPs so Beep won't duplicate any setup code
  */
 
 

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/arm740.S: utility functions for ARM740
+ *  beep/arch/arm/mm/arm740.S: utility functions for ARM740
  *
  *  Copyright (C) 2004-2006 Hyok S. Choi (hyok.choi@samsung.com)
  *
@@ -8,8 +8,8 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/hwcap.h>

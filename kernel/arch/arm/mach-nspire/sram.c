@@ -17,11 +17,11 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/genalloc.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/genalloc.h>
 
 static unsigned long sram_phys_base;
 static __iomem void *sram_virt_base;

@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5pv210/include/mach/timex.h
+/* beep/arch/arm/mach-s5pv210/include/mach/timex.h
  *
  * Copyright (c) 2003-2010 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>

@@ -33,9 +33,9 @@
  * SOFTWARE.
  */
 
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
 
 #include <asm/uaccess.h>
 

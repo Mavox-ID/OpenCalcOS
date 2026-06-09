@@ -4,8 +4,8 @@
 #include <asm-generic/pgtable-nopmd.h>
 
 #ifndef __ASSEMBLY__
-#include <linux/sched.h>
-#include <linux/threads.h>
+#include <beep/sched.h>
+#include <beep/threads.h>
 #include <asm/io.h>			/* For sub-arch specific PPC_PIN_SIZE */
 
 extern unsigned long va_to_phys(unsigned long address);
@@ -103,7 +103,7 @@ extern int icache_44x_need_flush;
 #define VMALLOC_END	ioremap_bot
 
 /*
- * Bits in a linux-style PTE.  These match the bits in the
+ * Bits in a beep-style PTE.  These match the bits in the
  * (hardware-defined) PowerPC PTE as closely as possible.
  */
 

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/idp.c
+ *  beep/arch/arm/mach-pxa/idp.c
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License version 2 as
@@ -16,11 +16,11 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/fb.h>
 
 #include <asm/setup.h>
 #include <asm/memory.h>
@@ -33,9 +33,9 @@
 
 #include <mach/pxa25x.h>
 #include <mach/idp.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <beep/platform_data/video-pxafb.h>
 #include <mach/bitfield.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/mmc-pxamci.h>
 
 #include "generic.h"
 #include "devices.h"

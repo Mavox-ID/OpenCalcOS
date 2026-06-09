@@ -4,8 +4,8 @@
 #if !defined(_TRACE_MCE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_MCE_H
 
-#include <linux/ktime.h>
-#include <linux/tracepoint.h>
+#include <beep/ktime.h>
+#include <beep/tracepoint.h>
 #include <asm/mce.h>
 
 TRACE_EVENT(mce_record,

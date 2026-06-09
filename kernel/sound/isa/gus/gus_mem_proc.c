@@ -19,7 +19,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include <sound/core.h>
 #include <sound/gus.h>
 #include <sound/info.h>

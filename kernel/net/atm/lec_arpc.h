@@ -5,10 +5,10 @@
  */
 #ifndef _LEC_ARP_H_
 #define _LEC_ARP_H_
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/if_ether.h>
-#include <linux/atmlec.h>
+#include <beep/atm.h>
+#include <beep/atmdev.h>
+#include <beep/if_ether.h>
+#include <beep/atmlec.h>
 
 struct lec_arp_table {
 	struct hlist_node next;		/* Linked entry list */

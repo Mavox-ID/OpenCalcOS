@@ -3,15 +3,15 @@
  *
  *	PDC == Processor Dependent Code
  *
- * See http://www.parisc-linux.org/documentation/index.html
+ * See http://www.parisc-beep.org/documentation/index.html
  * for documentation describing the entry points and calling
  * conventions defined below.
  *
  * Copyright 1999 SuSE GmbH Nuernberg (Philipp Rumpf, prumpf@tux.org)
  * Copyright 1999 The Puffin Group, (Alex deVries, David Kennedy)
- * Copyright 2003 Grant Grundler <grundler parisc-linux org>
- * Copyright 2003,2004 Ryan Bradetich <rbrad@parisc-linux.org>
- * Copyright 2004,2006 Thibaut VARENE <varenet@parisc-linux.org>
+ * Copyright 2003 Grant Grundler <grundler parisc-beep org>
+ * Copyright 2003,2004 Ryan Bradetich <rbrad@parisc-beep.org>
+ * Copyright 2004,2006 Thibaut VARENE <varenet@parisc-beep.org>
  *
  *    This program is free software; you can redistribute it and/or modify
  *    it under the terms of the GNU General Public License as published by
@@ -57,12 +57,12 @@
 
 #include <stdarg.h>
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/spinlock.h>
 
 #include <asm/page.h>
 #include <asm/pdc.h>
@@ -185,9 +185,9 @@ void __cpuinit set_firmware_width(void) {
 #endif /*CONFIG_64BIT*/
 
 /**
- * pdc_emergency_unlock - Unlock the linux pdc lock
+ * pdc_emergency_unlock - Unlock the beep pdc lock
  *
- * This call unlocks the linux pdc lock in case we need some PDC functions
+ * This call unlocks the beep pdc lock in case we need some PDC functions
  * (like pdc_add_valid) during kernel stack dump.
  */
 void pdc_emergency_unlock(void)
@@ -892,7 +892,7 @@ int pdc_pci_irt(unsigned long num_entries, unsigned long hpa, void *tbl)
  * @hpa		token from PDC to indicate which PCI device
  * @pci_addr	configuration space address to read from
  *
- * Read PCI Configuration space *before* linux PCI subsystem is running.
+ * Read PCI Configuration space *before* beep PCI subsystem is running.
  */
 unsigned int pdc_pci_config_read(void *hpa, unsigned long cfg_addr)
 {
@@ -916,7 +916,7 @@ unsigned int pdc_pci_config_read(void *hpa, unsigned long cfg_addr)
  * @pci_addr	configuration space address to write
  * @val		value we want in the 32-bit register
  *
- * Write PCI Configuration space *before* linux PCI subsystem is running.
+ * Write PCI Configuration space *before* beep PCI subsystem is running.
  */
 void pdc_pci_config_write(void *hpa, unsigned long cfg_addr, unsigned int val)
 {
@@ -1076,7 +1076,7 @@ int pdc_soft_power_button(int sw_control)
 
 /*
  * pdc_io_reset - Hack to avoid overlapping range registers of Bridges devices.
- * Primarily a problem on T600 (which parisc-linux doesn't support) but
+ * Primarily a problem on T600 (which parisc-beep doesn't support) but
  * who knows what other platform firmware might do with this OS "hook".
  */
 void pdc_io_reset(void)

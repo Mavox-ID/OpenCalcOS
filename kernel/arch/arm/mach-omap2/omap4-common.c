@@ -11,15 +11,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/memblock.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/memblock.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
+#include <beep/export.h>
 
 #include <asm/hardware/gic.h>
 #include <asm/hardware/cache-l2x0.h>

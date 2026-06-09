@@ -1365,7 +1365,7 @@ static int af9013_download_firmware(struct af9013_state *state)
 	ret = request_firmware(&fw, fw_file, state->i2c->dev.parent);
 	if (ret) {
 		dev_info(&state->i2c->dev, "%s: did not find the firmware " \
-			"file. (%s) Please see linux/Documentation/dvb/ for " \
+			"file. (%s) Please see beep/Documentation/dvb/ for " \
 			"more details on firmware-problems. (%d)\n",
 			KBUILD_MODNAME, fw_file, ret);
 		goto err;

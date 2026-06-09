@@ -1,7 +1,7 @@
 #ifndef __ASM_POWERPC_CLK_INTERFACE_H
 #define __ASM_POWERPC_CLK_INTERFACE_H
 
-#include <linux/clk.h>
+#include <beep/clk.h>
 
 struct clk_interface {
 	struct clk*	(*clk_get)	(struct device *dev, const char *id);

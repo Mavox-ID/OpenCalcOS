@@ -23,19 +23,19 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
  * TODO:
- * - Fix various assumptions related to HW CPU numbers vs. linux CPU numbers
+ * - Fix various assumptions related to HW CPU numbers vs. beep CPU numbers
  *   vs node numbers in the setup code
  * - Implement proper handling of maxcpus=1/2 (that is, routing of irqs from
  *   a non-active node to the active node)
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/export.h>
-#include <linux/percpu.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/kernel_stat.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/export.h>
+#include <beep/percpu.h>
+#include <beep/types.h>
+#include <beep/ioport.h>
+#include <beep/kernel_stat.h>
 
 #include <asm/io.h>
 #include <asm/pgtable.h>
@@ -294,7 +294,7 @@ static const struct irq_domain_ops iic_host_ops = {
 static void __init init_one_iic(unsigned int hw_cpu, unsigned long addr,
 				struct device_node *node)
 {
-	/* XXX FIXME: should locate the linux CPU number from the HW cpu
+	/* XXX FIXME: should locate the beep CPU number from the HW cpu
 	 * number properly. We are lucky for now
 	 */
 	struct iic *iic = &per_cpu(cpu_iic, hw_cpu);

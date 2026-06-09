@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/acorn/scsi/queue.h: queue handling
+ *  beep/drivers/acorn/scsi/queue.h: queue handling
  *
  *  Copyright (C) 1997 Russell King
  *

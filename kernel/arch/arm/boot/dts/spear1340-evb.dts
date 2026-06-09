@@ -1,7 +1,7 @@
 /*
  * DTS file for SPEAr1340 Evaluation Baord
  *
- * Copyright 2012 Viresh Kumar <viresh.linux@gmail.com>
+ * Copyright 2012 Viresh Kumar <viresh.beep@gmail.com>
  *
  * The code contained herein is licensed under the GNU General Public
  * License. You may obtain a copy of the GNU General Public License
@@ -150,7 +150,7 @@
 				reg = <0x500000 0x100000>;
 			};
 			partition@600000 {
-				label = "linux";
+				label = "beep";
 				reg = <0x600000 0xC00000>;
 			};
 			partition@1200000 {
@@ -195,7 +195,7 @@
 					reg = <0x70000 0x10000>;
 				};
 				partition@80000 {
-					label = "linux";
+					label = "beep";
 					reg = <0x80000 0x310000>;
 				};
 				partition@390000 {
@@ -216,7 +216,7 @@
 
 			button@1 {
 				label = "wakeup";
-				linux,code = <0x100>;
+				beep,code = <0x100>;
 				gpios = <&gpio1 1 0x4>;
 				debounce-interval = <20>;
 				gpio-key,wakeup = <1>;
@@ -332,7 +332,7 @@
 			};
 
 			kbd@e0300000 {
-				linux,keymap = < 0x00000001
+				beep,keymap = < 0x00000001
 						 0x00010002
 						 0x00020003
 						 0x00030004

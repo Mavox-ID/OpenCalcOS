@@ -18,15 +18,15 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
 
-#include <linux/mfd/wm8350/core.h>
-#include <linux/mfd/wm8350/comparator.h>
+#include <beep/mfd/wm8350/core.h>
+#include <beep/mfd/wm8350/comparator.h>
 
 static ssize_t show_name(struct device *dev,
 			 struct device_attribute *attr, char *buf)

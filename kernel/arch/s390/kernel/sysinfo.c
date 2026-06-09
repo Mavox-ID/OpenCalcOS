@@ -4,14 +4,14 @@
  *	       Martin Schwidefsky <schwidefsky@de.ibm.com>,
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include <asm/ebcdic.h>
 #include <asm/sysinfo.h>
 #include <asm/cpcmd.h>

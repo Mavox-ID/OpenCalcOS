@@ -11,9 +11,9 @@
 
 #define DEBUG
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/of.h>
 
 #include <asm/opal.h>
 #include <asm/machdep.h>

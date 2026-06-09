@@ -166,7 +166,7 @@ void *of_claim(unsigned long virt, unsigned long size, unsigned long align)
 	return (void *) virt;
 }
 
-void *of_vmlinux_alloc(unsigned long size)
+void *of_vmbeep_alloc(unsigned long size)
 {
 	unsigned long start = (unsigned long)_start, end = (unsigned long)_end;
 	void *addr;

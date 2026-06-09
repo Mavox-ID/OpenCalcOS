@@ -11,12 +11,12 @@
  * Copyright (C) 2012 ARM Limited
  */
 
-#include <linux/jiffies.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/stat.h>
-#include <linux/vexpress.h>
+#include <beep/jiffies.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/platform_device.h>
+#include <beep/stat.h>
+#include <beep/vexpress.h>
 
 static void vexpress_reset_do(struct device *dev, const char *what)
 {

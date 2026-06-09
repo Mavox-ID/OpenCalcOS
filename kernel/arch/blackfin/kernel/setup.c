@@ -4,21 +4,21 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/delay.h>
-#include <linux/console.h>
-#include <linux/bootmem.h>
-#include <linux/seq_file.h>
-#include <linux/cpu.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/pfn.h>
+#include <beep/delay.h>
+#include <beep/console.h>
+#include <beep/bootmem.h>
+#include <beep/seq_file.h>
+#include <beep/cpu.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/tty.h>
+#include <beep/pfn.h>
 
-#ifdef CONFIG_MTD_UCLINUX
-#include <linux/mtd/map.h>
-#include <linux/ext2_fs.h>
-#include <linux/cramfs_fs.h>
-#include <linux/romfs_fs.h>
+#ifdef CONFIG_MTD_UCBEEP
+#include <beep/mtd/map.h>
+#include <beep/ext2_fs.h>
+#include <beep/cramfs_fs.h>
+#include <beep/romfs_fs.h>
 #endif
 
 #include <asm/cplb.h>
@@ -49,8 +49,8 @@ EXPORT_SYMBOL(physical_mem_end);
 EXPORT_SYMBOL(_ramend);
 EXPORT_SYMBOL(reserved_mem_dcache_on);
 
-#ifdef CONFIG_MTD_UCLINUX
-extern struct map_info uclinux_ram_map;
+#ifdef CONFIG_MTD_UCBEEP
+extern struct map_info ucbeep_ram_map;
 unsigned long memory_mtd_end, memory_mtd_start, mtd_size;
 EXPORT_SYMBOL(memory_mtd_end);
 EXPORT_SYMBOL(memory_mtd_start);
@@ -191,7 +191,7 @@ void __init bfin_relocate_l1_mem(void)
 	early_shadow_stamp();
 
 	/*
-	 * due to the ALIGN(4) in the arch/blackfin/kernel/vmlinux.lds.S
+	 * due to the ALIGN(4) in the arch/blackfin/kernel/vmbeep.lds.S
 	 * we know that everything about l1 text/data is nice and aligned,
 	 * so copy by 4 byte chunks, and don't worry about overlapping
 	 * src/dest.
@@ -483,7 +483,7 @@ static __init int parse_memmap(char *arg)
 
 /*
  * Initial parsing of the command line.  Currently, we support:
- *  - Controlling the linux memory size: mem=xxx[KMG]
+ *  - Controlling the beep memory size: mem=xxx[KMG]
  *  - Controlling the physical memory size: max_mem=xxx[KMG][$][#]
  *       $ -> reserved memory is dcacheable
  *       # -> reserved memory is icacheable
@@ -551,7 +551,7 @@ static __init void parse_cmdline_early(char *cmdline_p)
  */
 static __init void memory_setup(void)
 {
-#ifdef CONFIG_MTD_UCLINUX
+#ifdef CONFIG_MTD_UCBEEP
 	unsigned long mtd_phys = 0;
 #endif
 	unsigned long max_mem;
@@ -588,7 +588,7 @@ static __init void memory_setup(void)
 	memory_start = PAGE_ALIGN(_ramstart);
 #endif
 
-#if defined(CONFIG_MTD_UCLINUX)
+#if defined(CONFIG_MTD_UCBEEP)
 	/* generic memory mapped MTD driver */
 	memory_mtd_end = memory_end;
 
@@ -621,7 +621,7 @@ static __init void memory_setup(void)
 	}
 # endif				/* CONFIG_ROMFS_FS */
 
-	/* Since the default MTD_UCLINUX has no magic number, we just blindly
+	/* Since the default MTD_UCBEEP has no magic number, we just blindly
 	 * read 8 past the end of the kernel's image, and look at it.
 	 * When no image is attached, mtd_size is set to a random number
 	 * Do some basic sanity checks before operating on things
@@ -632,13 +632,13 @@ static __init void memory_setup(void)
 		memory_end -= mtd_size;
 
 		/* Relocate MTD image to the top of memory after the uncached memory area */
-		uclinux_ram_map.phys = memory_mtd_start = memory_end;
-		uclinux_ram_map.size = mtd_size;
+		ucbeep_ram_map.phys = memory_mtd_start = memory_end;
+		ucbeep_ram_map.size = mtd_size;
 		pr_info("Found mtd parition at 0x%p, (len=0x%lx), moving to 0x%p\n",
 			_end, mtd_size, (void *)memory_mtd_start);
-		dma_memcpy((void *)uclinux_ram_map.phys, _end, uclinux_ram_map.size);
+		dma_memcpy((void *)ucbeep_ram_map.phys, _end, ucbeep_ram_map.size);
 	}
-#endif				/* CONFIG_MTD_UCLINUX */
+#endif				/* CONFIG_MTD_UCBEEP */
 
 	/* We need lo limit memory, since everything could have a text section
 	 * of userspace in it, and expose anomaly 05000263. If the anomaly
@@ -677,7 +677,7 @@ static __init void memory_setup(void)
 	       "    stack   = 0x%p-0x%p\n"
 	       "  init      = 0x%p-0x%p\n"
 	       "  available = 0x%p-0x%p\n"
-#ifdef CONFIG_MTD_UCLINUX
+#ifdef CONFIG_MTD_UCBEEP
 	       "  rootfs    = 0x%p-0x%p\n"
 #endif
 #if DMA_UNCACHED_REGION > 0
@@ -692,7 +692,7 @@ static __init void memory_setup(void)
 		(void *)((int)(&init_thread_union) + THREAD_SIZE),
 		__init_begin, __init_end,
 		(void *)_ramstart, (void *)memory_end
-#ifdef CONFIG_MTD_UCLINUX
+#ifdef CONFIG_MTD_UCBEEP
 		, (void *)memory_mtd_start, (void *)(memory_mtd_start + mtd_size)
 #endif
 #if DMA_UNCACHED_REGION > 0
@@ -742,7 +742,7 @@ static __init void setup_bootmem_allocator(void)
 	sanitize_memmap(bfin_memmap.map, &bfin_memmap.nr_map);
 	print_memory_map("boot memmap");
 
-	/* initialize globals in linux/bootmem.h */
+	/* initialize globals in beep/bootmem.h */
 	find_min_max_pfn();
 	/* pfn of the last usable page frame */
 	if (max_pfn > memory_end >> PAGE_SHIFT)
@@ -1059,7 +1059,7 @@ void __init setup_arch(char **cmdline_p)
 			       CPU, bfin_revid());
 	}
 
-	printk(KERN_INFO "Blackfin Linux support by http://blackfin.uclinux.org/\n");
+	printk(KERN_INFO "Blackfin Beep support by http://blackfin.ucbeep.org/\n");
 
 #ifdef CONFIG_BF60x
 	printk(KERN_INFO "Processor Speed: %lu MHz core clock, %lu MHz SCLk, %lu MHz SCLK0, %lu MHz SCLK1 and %lu MHz DCLK\n",

@@ -9,10 +9,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/omap-dma.h>
+#include <beep/platform_data/gpio-omap.h>
+#include <beep/omap-dma.h>
 #include <plat/dmtimer.h>
-#include <linux/platform_data/spi-omap2-mcspi.h>
+#include <beep/platform_data/spi-omap2-mcspi.h>
 
 #include "omap_hwmod.h"
 #include "omap_hwmod_common_data.h"

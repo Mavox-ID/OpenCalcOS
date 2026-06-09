@@ -13,18 +13,18 @@
  * Licensed under the GPLv2 only.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/idr.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/kobject.h>
-#include <linux/cdev.h>
-#include <linux/uio_driver.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/poll.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/idr.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/kobject.h>
+#include <beep/cdev.h>
+#include <beep/uio_driver.h>
 
 #define UIO_MAX_DEVICES		(1U << MINORBITS)
 

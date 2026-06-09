@@ -9,23 +9,23 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/mbus.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/mmc/host.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/mbus.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/scatterlist.h>
+#include <beep/irq.h>
+#include <beep/clk.h>
+#include <beep/gpio.h>
+#include <beep/mmc/host.h>
 
 #include <asm/sizes.h>
 #include <asm/unaligned.h>
-#include <linux/platform_data/mmc-mvsdio.h>
+#include <beep/platform_data/mmc-mvsdio.h>
 
 #include "mvsdio.h"
 

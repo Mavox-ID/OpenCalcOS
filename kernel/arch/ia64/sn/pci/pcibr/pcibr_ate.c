@@ -6,7 +6,7 @@
  * Copyright (C) 2001-2006 Silicon Graphics, Inc. All rights reserved.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/sn/sn_sal.h>
 #include <asm/sn/pcibr_provider.h>
 #include <asm/sn/pcibus_provider_defs.h>

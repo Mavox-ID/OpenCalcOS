@@ -15,18 +15,18 @@
 #define __SMP__
 #endif
 
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
 #include <asm/unistd.h>
 
-#include <linux/sched.h>
-#include <linux/wait.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
 
-#include <linux/netdevice.h>	// struct device, and other headers
-#include <linux/kernel_stat.h>
-#include <linux/pci.h>
-#include <linux/rtnetlink.h>
-#include <linux/ethtool.h>
+#include <beep/netdevice.h>	// struct device, and other headers
+#include <beep/kernel_stat.h>
+#include <beep/pci.h>
+#include <beep/rtnetlink.h>
+#include <beep/ethtool.h>
 
 #include <net/net_namespace.h>
 

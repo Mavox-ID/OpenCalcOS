@@ -20,13 +20,13 @@
  *	Srikar Dronamraju
  *	Jim Keniston
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/uprobes.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/ptrace.h>
+#include <beep/uprobes.h>
+#include <beep/uaccess.h>
 
-#include <linux/kdebug.h>
+#include <beep/kdebug.h>
 #include <asm/processor.h>
 #include <asm/insn.h>
 

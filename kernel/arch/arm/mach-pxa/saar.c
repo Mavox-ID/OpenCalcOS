@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/saar.c
+ *  beep/arch/arm/mach-pxa/saar.c
  *
  *  Support for the Marvell PXA930 Handheld Platform (aka SAAR)
  *
@@ -10,29 +10,29 @@
  *  publishhed by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/i2c.h>
-#include <linux/i2c/pxa-i2c.h>
-#include <linux/smc91x.h>
-#include <linux/mfd/da903x.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/onenand.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pxa-i2c.h>
+#include <beep/smc91x.h>
+#include <beep/mfd/da903x.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/onenand.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/flash.h>
 
 #include <mach/pxa930.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <beep/platform_data/video-pxafb.h>
 
 #include "devices.h"
 #include "generic.h"

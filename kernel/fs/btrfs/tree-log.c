@@ -16,9 +16,9 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/list_sort.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/list_sort.h>
 #include "ctree.h"
 #include "transaction.h"
 #include "disk-io.h"

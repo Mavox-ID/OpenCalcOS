@@ -15,7 +15,7 @@
  * this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110, USA
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the Beep staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -37,8 +37,8 @@ struct _adapter;
 #include "wlan_bssdef.h"
 #include "rtl8712_spec.h"
 #include "rtl8712_hal.h"
-#include <linux/mutex.h>
-#include <linux/completion.h>
+#include <beep/mutex.h>
+#include <beep/completion.h>
 
 enum _NIC_VERSION {
 	RTL8711_NIC,

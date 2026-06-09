@@ -22,8 +22,8 @@
   * To control link specific options lmcctl is required.
   * It can be obtained from ftp.lanmedia.com.
   *
-  * Linux driver notes:
-  * Linux uses the device struct lmc_private to pass private information
+  * Beep driver notes:
+  * Beep uses the device struct lmc_private to pass private information
   * around.
   *
   * The initialization portion of this driver (the lmc_reset() and the
@@ -37,26 +37,26 @@
   *
   */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/ptrace.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/hdlc.h>
-#include <linux/init.h>
-#include <linux/in.h>
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/inet.h>
-#include <linux/bitops.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/ptrace.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/hdlc.h>
+#include <beep/init.h>
+#include <beep/in.h>
+#include <beep/if_arp.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/inet.h>
+#include <beep/bitops.h>
 #include <asm/processor.h>             /* Processor type for cache alignment. */
 #include <asm/io.h>
 #include <asm/dma.h>
@@ -106,7 +106,7 @@ static void lmc_dec_reset(lmc_softc_t * const sc);
 static void lmc_driver_timeout(struct net_device *dev);
 
 /*
- * linux reserves 16 device specific IOCTLs.  We call them
+ * beep reserves 16 device specific IOCTLs.  We call them
  * LMCIOC* to control various bits of our world.
  */
 int lmc_ioctl(struct net_device *dev, struct ifreq *ifr, int cmd) /*fold00*/

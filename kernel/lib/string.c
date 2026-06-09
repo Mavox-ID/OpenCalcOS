@@ -1,5 +1,5 @@
 /*
- *  linux/lib/string.c
+ *  beep/lib/string.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -19,13 +19,13 @@
  * -  Kissed strtok() goodbye
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/bug.h>
-#include <linux/errno.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/bug.h>
+#include <beep/errno.h>
 
 #ifndef __HAVE_ARCH_STRNICMP
 /**

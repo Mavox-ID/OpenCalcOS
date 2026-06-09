@@ -8,15 +8,15 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/slab.h>
-#include <linux/regulator/max8649.h>
-#include <linux/regmap.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/slab.h>
+#include <beep/regulator/max8649.h>
+#include <beep/regmap.h>
 
 #define MAX8649_DCDC_VMIN	750000		/* uV */
 #define MAX8649_DCDC_VMAX	1380000		/* uV */

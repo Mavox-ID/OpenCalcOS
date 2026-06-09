@@ -5,9 +5,9 @@
  * - Derived partially from idea by Andrea Arcangeli <andrea@suse.de>
  * - Derived also from comments by Linus
  */
-#include <linux/rwsem.h>
-#include <linux/sched.h>
-#include <linux/export.h>
+#include <beep/rwsem.h>
+#include <beep/sched.h>
+#include <beep/export.h>
 
 struct rwsem_waiter {
 	struct list_head list;

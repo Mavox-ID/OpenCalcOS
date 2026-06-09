@@ -18,12 +18,12 @@
 
 #include <asm/kmap_types.h>
 #include <crypto/algapi.h>
-#include <linux/hardirq.h>
-#include <linux/highmem.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/sched.h>
+#include <beep/hardirq.h>
+#include <beep/highmem.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/scatterlist.h>
+#include <beep/sched.h>
 
 static inline void crypto_yield(u32 flags)
 {

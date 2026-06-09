@@ -27,16 +27,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/signal.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/signal.h>
+#include <beep/jiffies.h>
+#include <beep/timer.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/time.h>
+#include <beep/slab.h>
 
 #include "../pci.h"
 #include "pciehp.h"

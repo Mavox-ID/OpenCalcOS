@@ -20,7 +20,7 @@
 #ifndef _CRYPTO_COMPRESS_H
 #define _CRYPTO_COMPRESS_H
 
-#include <linux/crypto.h>
+#include <beep/crypto.h>
 
 
 struct comp_request {

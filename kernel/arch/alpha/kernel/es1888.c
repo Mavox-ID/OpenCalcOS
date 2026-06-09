@@ -1,10 +1,10 @@
 /*
- *	linux/arch/alpha/kernel/es1888.c
+ *	beep/arch/alpha/kernel/es1888.c
  *
  * Init the built-in ES1888 sound chip (SB16 compatible)
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/io.h>
 #include "proto.h"
 

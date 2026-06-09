@@ -14,25 +14,25 @@
  * (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/moduleparam.h>
-#include <linux/time.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
-#include <linux/pm_runtime.h>
-#include <linux/sched.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/moduleparam.h>
+#include <beep/time.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/videodev2.h>
+#include <beep/pm_runtime.h>
+#include <beep/sched.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-dev.h>
@@ -1513,7 +1513,7 @@ static int client_scale(struct soc_camera_device *icd,
 /*
  * CEU can scale and crop, but we don't want to waste bandwidth and kill the
  * framerate by always requesting the maximum image from the client. See
- * Documentation/video4linux/sh_mobile_ceu_camera.txt for a description of
+ * Documentation/video4beep/sh_mobile_ceu_camera.txt for a description of
  * scaling and cropping algorithms and for the meaning of referenced here steps.
  */
 static int sh_mobile_ceu_set_crop(struct soc_camera_device *icd,

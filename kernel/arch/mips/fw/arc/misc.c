@@ -9,9 +9,9 @@
  * Copyright (C) 1999 Ralf Baechle (ralf@gnu.org)
  * Copyright (C) 1999 Silicon Graphics, Inc.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/irqflags.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/irqflags.h>
 
 #include <asm/bcache.h>
 
@@ -71,10 +71,10 @@ ArcSaveConfiguration(VOID)
 	return ARC_CALL0(cfg_save);
 }
 
-struct linux_sysid *
+struct beep_sysid *
 ArcGetSystemId(VOID)
 {
-	return (struct linux_sysid *) ARC_CALL0(get_sysid);
+	return (struct beep_sysid *) ARC_CALL0(get_sysid);
 }
 
 VOID __init

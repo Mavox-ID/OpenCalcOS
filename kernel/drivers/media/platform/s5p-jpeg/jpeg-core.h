@@ -1,4 +1,4 @@
-/* linux/drivers/media/platform/s5p-jpeg/jpeg-core.h
+/* beep/drivers/media/platform/s5p-jpeg/jpeg-core.h
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com

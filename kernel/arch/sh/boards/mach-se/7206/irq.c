@@ -1,15 +1,15 @@
 /*
- * linux/arch/sh/boards/se/7206/irq.c
+ * beep/arch/sh/boards/se/7206/irq.c
  *
  * Copyright (C) 2005,2006 Yoshinori Sato
  *
  * Hitachi SolutionEngine Support.
  *
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
 #include <mach-se/mach/se7206.h>
 
 #define INTSTS0 0x31800000

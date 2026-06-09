@@ -1,19 +1,19 @@
 /*
- *  linux/arch/cris/arch-v32/kernel/time.c
+ *  beep/arch/cris/arch-v32/kernel/time.c
  *
  *  Copyright (C) 2003-2010 Axis Communications AB
  *
  */
 
-#include <linux/timex.h>
-#include <linux/time.h>
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/swap.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/threads.h>
-#include <linux/cpufreq.h>
+#include <beep/timex.h>
+#include <beep/time.h>
+#include <beep/clocksource.h>
+#include <beep/interrupt.h>
+#include <beep/swap.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/threads.h>
+#include <beep/cpufreq.h>
 #include <asm/types.h>
 #include <asm/signal.h>
 #include <asm/io.h>

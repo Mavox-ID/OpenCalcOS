@@ -1,7 +1,7 @@
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
 
 #include <asm/byteorder.h>
 #include <asm/word-at-a-time.h>

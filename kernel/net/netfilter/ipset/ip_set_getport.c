@@ -7,17 +7,17 @@
 
 /* Get Layer-4 data from the packets */
 
-#include <linux/ip.h>
-#include <linux/skbuff.h>
-#include <linux/icmp.h>
-#include <linux/icmpv6.h>
-#include <linux/sctp.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <beep/ip.h>
+#include <beep/skbuff.h>
+#include <beep/icmp.h>
+#include <beep/icmpv6.h>
+#include <beep/sctp.h>
+#include <beep/netfilter_ipv6/ip6_tables.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 
-#include <linux/netfilter/ipset/ip_set_getport.h>
-#include <linux/export.h>
+#include <beep/netfilter/ipset/ip_set_getport.h>
+#include <beep/export.h>
 
 /* We must handle non-linear skbs */
 static bool

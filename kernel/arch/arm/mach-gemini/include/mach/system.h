@@ -10,7 +10,7 @@
 #ifndef __MACH_SYSTEM_H
 #define __MACH_SYSTEM_H
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include <mach/hardware.h>
 #include <mach/global_reg.h>
 

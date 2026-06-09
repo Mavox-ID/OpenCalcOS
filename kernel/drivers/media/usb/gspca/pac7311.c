@@ -1,6 +1,6 @@
 /*
  *		Pixart PAC7311 library
- *		Copyright (C) 2005 Thomas Kaiser thomas@kaiser-linux.li
+ *		Copyright (C) 2005 Thomas Kaiser thomas@kaiser-beep.li
  *
  * V4L2 by Jean-Francois Moine <http://moinejf.free.fr>
  *
@@ -61,7 +61,7 @@
 
 #define MODULE_NAME "pac7311"
 
-#include <linux/input.h>
+#include <beep/input.h>
 #include "gspca.h"
 /* Include pac common sof detection functions */
 #include "pac_common.h"
@@ -69,7 +69,7 @@
 #define PAC7311_GAIN_DEFAULT     122
 #define PAC7311_EXPOSURE_DEFAULT   3 /* 20 fps, avoid using high compr. */
 
-MODULE_AUTHOR("Thomas Kaiser thomas@kaiser-linux.li");
+MODULE_AUTHOR("Thomas Kaiser thomas@kaiser-beep.li");
 MODULE_DESCRIPTION("Pixart PAC7311");
 MODULE_LICENSE("GPL");
 

@@ -4,10 +4,10 @@
 #if !defined(_TRACE_NET_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_NET_H
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/ip.h>
-#include <linux/tracepoint.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/ip.h>
+#include <beep/tracepoint.h>
 
 TRACE_EVENT(net_dev_xmit,
 

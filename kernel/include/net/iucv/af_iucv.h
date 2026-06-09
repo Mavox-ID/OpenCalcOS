@@ -1,6 +1,6 @@
 /*
  * Copyright 2006 IBM Corporation
- * IUCV protocol stack for Linux on zSeries
+ * IUCV protocol stack for Beep on zSeries
  * Version 1.0
  * Author(s): Jennifer Hunt <jenhunt@us.ibm.com>
  *
@@ -11,9 +11,9 @@
 
 #include <asm/types.h>
 #include <asm/byteorder.h>
-#include <linux/list.h>
-#include <linux/poll.h>
-#include <linux/socket.h>
+#include <beep/list.h>
+#include <beep/poll.h>
+#include <beep/socket.h>
 #include <net/iucv/iucv.h>
 
 #ifndef AF_IUCV

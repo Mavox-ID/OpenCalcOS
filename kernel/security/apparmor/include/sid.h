@@ -14,7 +14,7 @@
 #ifndef __AA_SID_H
 #define __AA_SID_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct aa_profile;
 

@@ -1,21 +1,21 @@
 /*
- *   linux/mm/fremap.c
+ *   beep/mm/fremap.c
  * 
  * Explicit pagetable population and nonlinear (random) mappings support.
  *
  * started by Ingo Molnar, Copyright (C) 2002, 2003
  */
-#include <linux/export.h>
-#include <linux/backing-dev.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/file.h>
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/swapops.h>
-#include <linux/rmap.h>
-#include <linux/syscalls.h>
-#include <linux/mmu_notifier.h>
+#include <beep/export.h>
+#include <beep/backing-dev.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/file.h>
+#include <beep/mman.h>
+#include <beep/pagemap.h>
+#include <beep/swapops.h>
+#include <beep/rmap.h>
+#include <beep/syscalls.h>
+#include <beep/mmu_notifier.h>
 
 #include <asm/mmu_context.h>
 #include <asm/cacheflush.h>

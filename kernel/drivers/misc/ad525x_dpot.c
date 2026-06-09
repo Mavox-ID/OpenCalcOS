@@ -1,7 +1,7 @@
 /*
  * ad525x_dpot: Driver for the Analog Devices digital potentiometers
  * Copyright (c) 2009-2010 Analog Devices, Inc.
- * Author: Michael Hennerich <hennerich@blackfin.uclinux.org>
+ * Author: Michael Hennerich <hennerich@blackfin.ucbeep.org>
  *
  * DEVID		#Wipers		#Positions 	Resistor Options (kOhm)
  * AD5258		1		64		1, 10, 50, 100
@@ -64,17 +64,17 @@
  * Author: Chris Verges <chrisv@cyberswitching.com>
  *
  * derived from ad5252.c
- * Copyright (c) 2006-2011 Michael Hennerich <hennerich@blackfin.uclinux.org>
+ * Copyright (c) 2006-2011 Michael Hennerich <hennerich@blackfin.ucbeep.org>
  *
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
 #include "ad525x_dpot.h"
 
@@ -766,6 +766,6 @@ EXPORT_SYMBOL(ad_dpot_remove);
 
 
 MODULE_AUTHOR("Chris Verges <chrisv@cyberswitching.com>, "
-	      "Michael Hennerich <hennerich@blackfin.uclinux.org>");
+	      "Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("Digital potentiometer driver");
 MODULE_LICENSE("GPL");

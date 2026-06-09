@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/mm/fault.c
+ * beep/arch/unicore32/mm/fault.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -9,16 +9,16 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/mm.h>
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/kprobes.h>
-#include <linux/uaccess.h>
-#include <linux/page-flags.h>
-#include <linux/sched.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/signal.h>
+#include <beep/mm.h>
+#include <beep/hardirq.h>
+#include <beep/init.h>
+#include <beep/kprobes.h>
+#include <beep/uaccess.h>
+#include <beep/page-flags.h>
+#include <beep/sched.h>
+#include <beep/io.h>
 
 #include <asm/pgtable.h>
 #include <asm/tlbflush.h>

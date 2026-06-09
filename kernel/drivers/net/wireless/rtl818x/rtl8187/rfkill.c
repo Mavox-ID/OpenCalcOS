@@ -1,5 +1,5 @@
 /*
- * Linux RFKILL support for RTL8187
+ * Beep RFKILL support for RTL8187
  *
  * Copyright (c) 2009 Herton Ronaldo Krzesinski <herton@mandriva.com.br>
  *
@@ -13,8 +13,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/usb.h>
+#include <beep/types.h>
+#include <beep/usb.h>
 #include <net/mac80211.h>
 
 #include "rtl8187.h"

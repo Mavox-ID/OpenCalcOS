@@ -26,14 +26,14 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/regulator/consumer.h>
-#include <linux/v4l2-mediabus.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/regulator/consumer.h>
+#include <beep/v4l2-mediabus.h>
 #include <media/v4l2-device.h>
 
 #include "smiapp.h"

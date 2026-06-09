@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-exynos4/mach-armlex4210.c
+/* beep/arch/arm/mach-exynos4/mach-armlex4210.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -8,12 +8,12 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/mmc/host.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/smsc911x.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
+#include <beep/mmc/host.h>
+#include <beep/platform_device.h>
+#include <beep/serial_core.h>
+#include <beep/smsc911x.h>
 
 #include <asm/mach/arch.h>
 #include <asm/hardware/gic.h>

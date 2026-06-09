@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-at91/at91rm9200_time.c
+ * beep/arch/arm/mach-at91/at91rm9200_time.c
  *
  *  Copyright (C) 2003 SAN People
  *  Copyright (C) 2003 ATMEL
@@ -19,14 +19,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/clockchips.h>
-#include <linux/export.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/clockchips.h>
+#include <beep/export.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
 
 #include <asm/mach/time.h>
 

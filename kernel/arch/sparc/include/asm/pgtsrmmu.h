@@ -37,7 +37,7 @@
 #define SRMMU_PGD_TABLE_SIZE		(SRMMU_PTRS_PER_PGD*4)
 
 /*
- * To support pagetables in highmem, Linux introduces APIs which
+ * To support pagetables in highmem, Beep introduces APIs which
  * return struct page* and generally manipulate page tables when
  * they are not mapped into kernel space. Our hardware page tables
  * are smaller than pages. We lump hardware tabes into big, page sized

@@ -17,23 +17,23 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/parser.h>
-#include <linux/completion.h>
-#include <linux/vfs.h>
-#include <linux/quotaops.h>
-#include <linux/mount.h>
-#include <linux/moduleparam.h>
-#include <linux/kthread.h>
-#include <linux/posix_acl.h>
-#include <linux/buffer_head.h>
-#include <linux/exportfs.h>
-#include <linux/crc32.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/parser.h>
+#include <beep/completion.h>
+#include <beep/vfs.h>
+#include <beep/quotaops.h>
+#include <beep/mount.h>
+#include <beep/moduleparam.h>
+#include <beep/kthread.h>
+#include <beep/posix_acl.h>
+#include <beep/buffer_head.h>
+#include <beep/exportfs.h>
+#include <beep/crc32.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
-#include <linux/seq_file.h>
-#include <linux/blkdev.h>
+#include <beep/seq_file.h>
+#include <beep/blkdev.h>
 
 #include "jfs_incore.h"
 #include "jfs_filsys.h"

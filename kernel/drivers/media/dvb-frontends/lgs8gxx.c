@@ -24,7 +24,7 @@
  */
 
 #include <asm/div64.h>
-#include <linux/firmware.h>
+#include <beep/firmware.h>
 
 #include "dvb_frontend.h"
 

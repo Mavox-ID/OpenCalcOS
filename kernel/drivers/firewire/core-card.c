@@ -16,23 +16,23 @@
  * Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/bug.h>
-#include <linux/completion.h>
-#include <linux/crc-itu-t.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <beep/bug.h>
+#include <beep/completion.h>
+#include <beep/crc-itu-t.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/firewire.h>
+#include <beep/firewire-constants.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/kref.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/byteorder.h>
 
 #include "core.h"

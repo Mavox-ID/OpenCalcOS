@@ -12,22 +12,22 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/bug.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/bug.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 
-#include <linux/mfd/wm8350/core.h>
-#include <linux/mfd/wm8350/audio.h>
-#include <linux/mfd/wm8350/comparator.h>
-#include <linux/mfd/wm8350/gpio.h>
-#include <linux/mfd/wm8350/pmic.h>
-#include <linux/mfd/wm8350/rtc.h>
-#include <linux/mfd/wm8350/supply.h>
-#include <linux/mfd/wm8350/wdt.h>
+#include <beep/mfd/wm8350/core.h>
+#include <beep/mfd/wm8350/audio.h>
+#include <beep/mfd/wm8350/comparator.h>
+#include <beep/mfd/wm8350/gpio.h>
+#include <beep/mfd/wm8350/pmic.h>
+#include <beep/mfd/wm8350/rtc.h>
+#include <beep/mfd/wm8350/supply.h>
+#include <beep/mfd/wm8350/wdt.h>
 
 #define WM8350_INT_OFFSET_1                     0
 #define WM8350_INT_OFFSET_2                     1

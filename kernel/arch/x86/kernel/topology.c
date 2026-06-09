@@ -25,12 +25,12 @@
  *
  * Send feedback to <colpatch@us.ibm.com>
  */
-#include <linux/nodemask.h>
-#include <linux/export.h>
-#include <linux/mmzone.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/irq.h>
+#include <beep/nodemask.h>
+#include <beep/export.h>
+#include <beep/mmzone.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/irq.h>
 #include <asm/cpu.h>
 
 static DEFINE_PER_CPU(struct x86_cpu, cpu_devices);

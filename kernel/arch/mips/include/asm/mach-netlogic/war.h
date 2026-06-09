@@ -4,7 +4,7 @@
  * for more details.
  *
  * Copyright (C) 2011 Netlogic Microsystems.
- * Copyright (C) 2002, 2004, 2007 by Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2002, 2004, 2007 by Ralf Baechle <ralf@beep-mips.org>
  */
 #ifndef __ASM_MIPS_MACH_NLM_WAR_H
 #define __ASM_MIPS_MACH_NLM_WAR_H

@@ -20,9 +20,9 @@
  * Written by Koji Sato <koji@osrg.net>.
  */
 
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/errno.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/errno.h>
 #include "nilfs.h"
 #include "bmap.h"
 #include "btree.h"

@@ -1,8 +1,8 @@
 #! /usr/bin/perl
 #
-# checkversion find uses of LINUX_VERSION_CODE or KERNEL_VERSION
-# without including <linux/version.h>, or cases of
-# including <linux/version.h> that don't need it.
+# checkversion find uses of BEEP_VERSION_CODE or KERNEL_VERSION
+# without including <beep/version.h>, or cases of
+# including <beep/version.h> that don't need it.
 # Copyright (C) 2003, Randy Dunlap <rdunlap@xenotime.net>
 
 use strict;
@@ -12,14 +12,14 @@ $| = 1;
 my $debugging;
 
 foreach my $file (@ARGV) {
-    next if $file =~ "include/linux/version\.h";
+    next if $file =~ "include/beep/version\.h";
     # Open this file.
     open( my $f, '<', $file )
       or die "Can't open $file: $!\n";
 
     # Initialize variables.
     my ($fInComment, $fInString, $fUseVersion);
-    my $iLinuxVersion = 0;
+    my $iBeepVersion = 0;
 
     while (<$f>) {
 	# Strip comments.
@@ -28,7 +28,7 @@ foreach my $file (@ARGV) {
 
 	# Pick up definitions.
 	if ( m/^\s*#/o ) {
-	    $iLinuxVersion      = $. if m/^\s*#\s*include\s*"linux\/version\.h"/o;
+	    $iBeepVersion      = $. if m/^\s*#\s*include\s*"beep\/version\.h"/o;
 	}
 
 	# Strip strings.
@@ -37,32 +37,32 @@ foreach my $file (@ARGV) {
 
 	# Pick up definitions.
 	if ( m/^\s*#/o ) {
-	    $iLinuxVersion      = $. if m/^\s*#\s*include\s*<linux\/version\.h>/o;
+	    $iBeepVersion      = $. if m/^\s*#\s*include\s*<beep\/version\.h>/o;
 	}
 
-	# Look for uses: LINUX_VERSION_CODE, KERNEL_VERSION, UTS_RELEASE
-	if (($_ =~ /LINUX_VERSION_CODE/) || ($_ =~ /\WKERNEL_VERSION/)) {
+	# Look for uses: BEEP_VERSION_CODE, KERNEL_VERSION, UTS_RELEASE
+	if (($_ =~ /BEEP_VERSION_CODE/) || ($_ =~ /\WKERNEL_VERSION/)) {
 	    $fUseVersion = 1;
-            last if $iLinuxVersion;
+            last if $iBeepVersion;
         }
     }
 
     # Report used version IDs without include?
-    if ($fUseVersion && ! $iLinuxVersion) {
-	print "$file: $.: need linux/version.h\n";
+    if ($fUseVersion && ! $iBeepVersion) {
+	print "$file: $.: need beep/version.h\n";
     }
 
     # Report superfluous includes.
-    if ($iLinuxVersion && ! $fUseVersion) {
-	print "$file: $iLinuxVersion linux/version.h not needed.\n";
+    if ($iBeepVersion && ! $fUseVersion) {
+	print "$file: $iBeepVersion beep/version.h not needed.\n";
     }
 
     # debug: report OK results:
     if ($debugging) {
-        if ($iLinuxVersion && $fUseVersion) {
-	    print "$file: version use is OK ($iLinuxVersion)\n";
+        if ($iBeepVersion && $fUseVersion) {
+	    print "$file: version use is OK ($iBeepVersion)\n";
         }
-        if (! $iLinuxVersion && ! $fUseVersion) {
+        if (! $iBeepVersion && ! $fUseVersion) {
 	    print "$file: version use is OK (none)\n";
         }
     }

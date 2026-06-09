@@ -20,16 +20,16 @@
  * Timberdale FPGA UART
  */
 
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/serial_core.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/serial_core.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include "timbuart.h"
 

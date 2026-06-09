@@ -8,11 +8,11 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/seq_file.h>
-#include <linux/cpumask.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/seq_file.h>
+#include <beep/cpumask.h>
 #include <asm/setup.h>
 #include <asm/serial-regs.h>
 

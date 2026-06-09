@@ -1,8 +1,8 @@
 /*
- *  linux/arch/m68knommu/kernel/setup.c
+ *  beep/arch/m68knommu/kernel/setup.c
  *
  *  Copyright (C) 1999-2007  Greg Ungerer (gerg@snapgear.com)
- *  Copyright (C) 1998,1999  D. Jeff Dionne <jeff@uClinux.org>
+ *  Copyright (C) 1998,1999  D. Jeff Dionne <jeff@uCbeep.org>
  *  Copyleft  ()) 2000       James D. Schettine {james@telos-systems.com}
  *  Copyright (C) 1998       Kenneth Albanowski <kjahds@kjahds.com>
  *  Copyright (C) 1995       Hamish Macdonald
@@ -16,22 +16,22 @@
  * This file handles the architecture-dependent parts of system setup
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/console.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/bootmem.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/root_dev.h>
-#include <linux/rtc.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/fb.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/console.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/bootmem.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/initrd.h>
+#include <beep/root_dev.h>
+#include <beep/rtc.h>
 
 #include <asm/setup.h>
 #include <asm/irq.h>
@@ -87,7 +87,7 @@ void (*mach_power_off)(void);
 /*
  * parse_uboot_commandline
  *
- * Copies u-boot commandline arguments and store them in the proper linux
+ * Copies u-boot commandline arguments and store them in the proper beep
  * variables.
  *
  * Assumes:
@@ -110,7 +110,7 @@ void (*mach_power_off)(void);
  *	unmodified. U-boot places them near the end of external SDRAM.
  *
  * Argument(s):
- *	commandp = the linux commandline arg container to fill.
+ *	commandp = the beep commandline arg container to fill.
  *	size     = the sizeof commandp.
  *
  * Returns:
@@ -182,7 +182,7 @@ void __init setup_arch(char **cmdline_p)
 	command_line[sizeof(command_line) - 1] = 0;
 #endif /* CONFIG_UBOOT */
 
-	printk(KERN_INFO "\x0F\r\n\nuClinux/" CPU_NAME "\n");
+	printk(KERN_INFO "\x0F\r\n\nuCbeep/" CPU_NAME "\n");
 
 #ifdef CONFIG_UCDIMM
 	printk(KERN_INFO "uCdimm by Lineo, Inc. <www.lineo.com>\n");
@@ -205,7 +205,7 @@ void __init setup_arch(char **cmdline_p)
 	printk(KERN_INFO "TRG SuperPilot FLASH card support <info@trgnet.com>\n");
 #endif
 #if defined( CONFIG_PILOT ) && defined( CONFIG_M68EZ328 )
-	printk(KERN_INFO "PalmV support by Lineo Inc. <jeff@uclinux.com>\n");
+	printk(KERN_INFO "PalmV support by Lineo Inc. <jeff@ucbeep.com>\n");
 #endif
 #if defined (CONFIG_M68360)
 	printk(KERN_INFO "QUICC port done by SED Systems <hamilton@sedsystems.ca>,\n");

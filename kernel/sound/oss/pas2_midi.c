@@ -6,15 +6,15 @@
 /*
  * Copyright (C) by Hannu Savolainen 1993-1997
  *
- * OSS/Free for Linux is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
+ * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
  * Version 2 (June 1991). See the "COPYING" file distributed with this software
  * for more info.
  *
  * Bartlomiej Zolnierkiewicz	: Added __init to pas_init_mixer()
  */
 
-#include <linux/init.h>
-#include <linux/spinlock.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
 #include "sound_config.h"
 
 #include "pas2.h"

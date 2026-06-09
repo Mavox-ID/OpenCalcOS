@@ -1,5 +1,5 @@
 /*
- *  linux/fs/minix/namei.c
+ *  beep/fs/minix/namei.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */

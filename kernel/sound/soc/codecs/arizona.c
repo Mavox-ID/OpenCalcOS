@@ -10,15 +10,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/gcd.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <beep/gcd.h>
+#include <beep/module.h>
+#include <beep/pm_runtime.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/tlv.h>
 
-#include <linux/mfd/arizona/core.h>
-#include <linux/mfd/arizona/registers.h>
+#include <beep/mfd/arizona/core.h>
+#include <beep/mfd/arizona/registers.h>
 
 #include "arizona.h"
 

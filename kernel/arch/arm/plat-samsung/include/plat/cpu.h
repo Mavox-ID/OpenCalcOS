@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/include/plat/cpu.h
+/* beep/arch/arm/plat-samsung/include/plat/cpu.h
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/

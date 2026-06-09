@@ -11,13 +11,13 @@
  * more details.
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/gpio.h>
 #include <video/sh_mobile_lcdc.h>
 #include <mach/kfr2r09.h>
 #include <cpu/sh7724.h>

@@ -1,5 +1,5 @@
 /*
- * linux/fs/ext3/acl.c
+ * beep/fs/ext3/acl.c
  *
  * Copyright (C) 2001-2003 Andreas Gruenbacher, <agruen@suse.de>
  */

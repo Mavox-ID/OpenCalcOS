@@ -1,8 +1,8 @@
 #ifndef __DRBD_INTERVAL_H
 #define __DRBD_INTERVAL_H
 
-#include <linux/types.h>
-#include <linux/rbtree.h>
+#include <beep/types.h>
+#include <beep/rbtree.h>
 
 struct drbd_interval {
 	struct rb_node rb;

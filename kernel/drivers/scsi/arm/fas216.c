@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/acorn/scsi/fas216.c
+ *  beep/drivers/acorn/scsi/fas216.c
  *
  *  Copyright (C) 1997-2003 Russell King
  *
@@ -28,22 +28,22 @@
  *			transfers
  *  02-05-1998	RMK	Added extra checks in fas216_reset
  *  24-05-1998	RMK	Fixed synchronous transfers with period >= 200ns
- *  27-06-1998	RMK	Changed asm/delay.h to linux/delay.h
+ *  27-06-1998	RMK	Changed asm/delay.h to beep/delay.h
  *  26-08-1998	RMK	Improved message support wrt MESSAGE_REJECT
  *  02-04-2000	RMK	Converted to use the new error handling, and
  *			automatically request sense data upon check
  *			condition status from targets.
  */
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
+#include <beep/proc_fs.h>
+#include <beep/delay.h>
+#include <beep/bitops.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
 
 #include <asm/dma.h>
 #include <asm/io.h>

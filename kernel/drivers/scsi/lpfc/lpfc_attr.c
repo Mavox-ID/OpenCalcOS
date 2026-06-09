@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex Beep Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2004-2012 Emulex.  All rights reserved.           *
  * EMULEX and SLI are trademarks of Emulex.                        *
@@ -19,14 +19,14 @@
  * included with this package.                                     *
  *******************************************************************/
 
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/aer.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
+#include <beep/ctype.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/aer.h>
+#include <beep/gfp.h>
+#include <beep/kernel.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>
@@ -3618,7 +3618,7 @@ static DEVICE_ATTR(lpfc_sriov_nr_virtfn, S_IRUGO | S_IWUSR,
 		   lpfc_sriov_nr_virtfn_show, lpfc_sriov_nr_virtfn_store);
 
 /**
- * lpfc_request_firmware_store - Request for Linux generic firmware upgrade
+ * lpfc_request_firmware_store - Request for Beep generic firmware upgrade
  *
  * @dev: class device that is converted into a Scsi_host.
  * @attr: device attribute, not used.
@@ -3660,16 +3660,16 @@ lpfc_request_firmware_upgrade_store(struct device *dev,
 
 static int lpfc_req_fw_upgrade;
 module_param(lpfc_req_fw_upgrade, int, S_IRUGO|S_IWUSR);
-MODULE_PARM_DESC(lpfc_req_fw_upgrade, "Enable Linux generic firmware upgrade");
+MODULE_PARM_DESC(lpfc_req_fw_upgrade, "Enable Beep generic firmware upgrade");
 lpfc_param_show(request_firmware_upgrade)
 
 /**
- * lpfc_request_firmware_upgrade_init - Enable initial linux generic fw upgrade
+ * lpfc_request_firmware_upgrade_init - Enable initial beep generic fw upgrade
  * @phba: lpfc_hba pointer.
  * @val: 0 or 1.
  *
  * Description:
- * Set the initial Linux generic firmware upgrade enable or disable flag.
+ * Set the initial Beep generic firmware upgrade enable or disable flag.
  *
  * Returns:
  * zero if val saved.

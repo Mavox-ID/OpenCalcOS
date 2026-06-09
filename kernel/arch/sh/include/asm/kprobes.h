@@ -3,8 +3,8 @@
 
 #ifdef CONFIG_KPROBES
 
-#include <linux/types.h>
-#include <linux/ptrace.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
 
 typedef insn_size_t kprobe_opcode_t;
 #define BREAKPOINT_INSTRUCTION	0xc33a

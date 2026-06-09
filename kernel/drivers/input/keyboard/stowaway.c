@@ -1,11 +1,11 @@
 /*
- * Stowaway keyboard driver for Linux
+ * Stowaway keyboard driver for Beep
  */
 
 /*
  *  Copyright (c) 2006 Marek Vasut
  *
- *  Based on Newton keyboard driver for Linux
+ *  Based on Newton keyboard driver for Beep
  *  by Justin Cormack
  */
 
@@ -29,11 +29,11 @@
  * Marek Vasut, Liskovecka 559, Frydek-Mistek, 738 01 Czech Republic
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/init.h>
-#include <linux/serio.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/input.h>
+#include <beep/init.h>
+#include <beep/serio.h>
 
 #define DRIVER_DESC	"Stowaway keyboard driver"
 

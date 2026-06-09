@@ -15,9 +15,9 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/netfilter_ipv6/ip6_tables.h>
+#include <beep/slab.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("James Morris <jmorris <at> redhat.com>");

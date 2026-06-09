@@ -6,7 +6,7 @@
  *
  * (c) Copyright 2010-2012 RisingTide Systems LLC.
  *
- * Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Nicholas A. Bellinger <nab@beep-iscsi.org>
 *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,19 +19,19 @@
  * GNU General Public License for more details.
  ****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/utsname.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/unistd.h>
-#include <linux/string.h>
-#include <linux/syscalls.h>
-#include <linux/configfs.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/utsname.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/namei.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/unistd.h>
+#include <beep/string.h>
+#include <beep/syscalls.h>
+#include <beep/configfs.h>
 
 #include <target/target_core_base.h>
 #include <target/target_core_fabric.h>

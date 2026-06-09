@@ -8,14 +8,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/skbuff.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/timer.h>
+#include <beep/skbuff.h>
+#include <beep/gfp.h>
 #include <net/xfrm.h>
-#include <linux/jhash.h>
-#include <linux/rtnetlink.h>
+#include <beep/jhash.h>
+#include <beep/rtnetlink.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_core.h>
@@ -27,7 +27,7 @@
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_l3proto.h>
 #include <net/netfilter/nf_conntrack_zones.h>
-#include <linux/netfilter/nf_nat.h>
+#include <beep/netfilter/nf_nat.h>
 
 static DEFINE_SPINLOCK(nf_nat_lock);
 
@@ -666,8 +666,8 @@ static struct nf_ct_ext_type nat_extend __read_mostly = {
 
 #if defined(CONFIG_NF_CT_NETLINK) || defined(CONFIG_NF_CT_NETLINK_MODULE)
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_conntrack.h>
 
 static const struct nla_policy protonat_nla_policy[CTA_PROTONAT_MAX+1] = {
 	[CTA_PROTONAT_PORT_MIN]	= { .type = NLA_U16 },

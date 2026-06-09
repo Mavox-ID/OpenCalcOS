@@ -30,14 +30,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/oom.h>
-#include <linux/sched.h>
-#include <linux/rcupdate.h>
-#include <linux/profile.h>
-#include <linux/notifier.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/oom.h>
+#include <beep/sched.h>
+#include <beep/rcupdate.h>
+#include <beep/profile.h>
+#include <beep/notifier.h>
 
 static uint32_t lowmem_debug_level = 2;
 static short lowmem_adj[6] = {

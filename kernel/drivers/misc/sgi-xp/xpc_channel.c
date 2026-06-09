@@ -14,7 +14,7 @@
  *
  */
 
-#include <linux/device.h>
+#include <beep/device.h>
 #include "xpc.h"
 
 /*

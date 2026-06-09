@@ -30,15 +30,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/f75375s.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/jiffies.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/i2c.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/f75375s.h>
+#include <beep/slab.h>
 
 /* Addresses to scan */
 static const unsigned short normal_i2c[] = { 0x2d, 0x2e, I2C_CLIENT_END };

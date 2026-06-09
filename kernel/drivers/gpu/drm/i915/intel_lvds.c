@@ -1,6 +1,6 @@
 /*
  * Copyright © 2006-2007 Intel Corporation
- * Copyright (c) 2006 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2006 Dave Airlie <airlied@beep.ie>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,21 +23,21 @@
  *
  * Authors:
  *	Eric Anholt <eric@anholt.net>
- *      Dave Airlie <airlied@linux.ie>
+ *      Dave Airlie <airlied@beep.ie>
  *      Jesse Barnes <jesse.barnes@intel.com>
  */
 
 #include <acpi/button.h>
-#include <linux/dmi.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <beep/dmi.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
 #include <drm/drmP.h>
 #include <drm/drm_crtc.h>
 #include <drm/drm_edid.h>
 #include "intel_drv.h"
 #include <drm/i915_drm.h>
 #include "i915_drv.h"
-#include <linux/acpi.h>
+#include <beep/acpi.h>
 
 /* Private structure for the integrated LVDS support */
 struct intel_lvds_connector {

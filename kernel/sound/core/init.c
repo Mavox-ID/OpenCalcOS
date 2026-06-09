@@ -19,15 +19,15 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/ctype.h>
-#include <linux/pm.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/file.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/ctype.h>
+#include <beep/pm.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

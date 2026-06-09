@@ -14,15 +14,15 @@
  * Copyright 2005 Openedhand Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/workqueue.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/workqueue.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/initval.h>

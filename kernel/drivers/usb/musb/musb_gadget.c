@@ -33,15 +33,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/module.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/module.h>
+#include <beep/smp.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
 
 #include "musb_core.h"
 
@@ -51,7 +51,7 @@
  * - EP0 seems solid.  It passes both USBCV and usbtest control cases.
  *   Minor glitches:
  *
- *     + remote wakeup to Linux hosts work, but saw USBCV failures;
+ *     + remote wakeup to Beep hosts work, but saw USBCV failures;
  *       in one test run (operator error?)
  *     + endpoint halt tests -- in both usbtest and usbcv -- seem
  *       to break when dma is enabled ... is something wrongly

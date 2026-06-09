@@ -1,7 +1,7 @@
-/* radeon_cp.c -- CP support for Radeon -*- linux-c -*- */
+/* radeon_cp.c -- CP support for Radeon -*- beep-c -*- */
 /*
  * Copyright 2000 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Fremont, California.
+ * Copyright 2000 VA Beep Systems, Inc., Fremont, California.
  * Copyright 2007 Advanced Micro Devices, Inc.
  * All Rights Reserved.
  *
@@ -25,11 +25,11 @@
  * DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Kevin E. Martin <martin@valinux.com>
- *    Gareth Hughes <gareth@valinux.com>
+ *    Kevin E. Martin <martin@vabeep.com>
+ *    Gareth Hughes <gareth@vabeep.com>
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <drm/drmP.h>
 #include <drm/radeon_drm.h>
@@ -1761,7 +1761,7 @@ void radeon_do_release(struct drm_device * dev)
 			if ((dev_priv->flags & RADEON_FAMILY_MASK) >= CHIP_R600) {
 				while ((ret = r600_do_cp_idle(dev_priv)) != 0) {
 					DRM_DEBUG("radeon_do_cp_idle %d\n", ret);
-#ifdef __linux__
+#ifdef __beep__
 					schedule();
 #else
 					tsleep(&ret, PZERO, "rdnrel", 1);
@@ -1770,7 +1770,7 @@ void radeon_do_release(struct drm_device * dev)
 			} else {
 				while ((ret = radeon_do_cp_idle(dev_priv)) != 0) {
 					DRM_DEBUG("radeon_do_cp_idle %d\n", ret);
-#ifdef __linux__
+#ifdef __beep__
 					schedule();
 #else
 					tsleep(&ret, PZERO, "rdnrel", 1);

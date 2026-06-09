@@ -2,7 +2,7 @@
  * Signal handling for 32bit PPC and 32bit tasks on 64bit PPC
  *
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  * Copyright (C) 2001 IBM
  * Copyright (C) 1997,1998 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  * Copyright (C) 1997 David S. Miller (davem@caip.rutgers.edu)
@@ -17,24 +17,24 @@
  *  2 of the License, or (at your option) any later version.
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/elf.h>
-#include <linux/ptrace.h>
-#include <linux/ratelimit.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/errno.h>
+#include <beep/elf.h>
+#include <beep/ptrace.h>
+#include <beep/ratelimit.h>
 #ifdef CONFIG_PPC64
-#include <linux/syscalls.h>
-#include <linux/compat.h>
+#include <beep/syscalls.h>
+#include <beep/compat.h>
 #else
-#include <linux/wait.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/tty.h>
-#include <linux/binfmts.h>
+#include <beep/wait.h>
+#include <beep/unistd.h>
+#include <beep/stddef.h>
+#include <beep/tty.h>
+#include <beep/binfmts.h>
 #endif
 
 #include <asm/uaccess.h>

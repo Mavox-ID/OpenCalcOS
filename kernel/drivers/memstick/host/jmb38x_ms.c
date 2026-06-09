@@ -9,15 +9,15 @@
  *
  */
 
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/memstick.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/highmem.h>
+#include <beep/memstick.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #define DRIVER_NAME "jmb38x_ms"
 

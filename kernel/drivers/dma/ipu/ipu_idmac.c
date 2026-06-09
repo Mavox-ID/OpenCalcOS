@@ -9,20 +9,20 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/clk.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/dma/ipu-dma.h>
+#include <beep/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
+#include <beep/list.h>
+#include <beep/clk.h>
+#include <beep/vmalloc.h>
+#include <beep/string.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/dma/ipu-dma.h>
 
 #include "../dmaengine.h"
 #include "ipu_intern.h"

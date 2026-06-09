@@ -1,11 +1,11 @@
 /*
  *	IPv6 BSD socket options interface
- *	Linux INET6 implementation
+ *	Beep INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *
- *	Based on linux/net/ipv4/ip_sockglue.c
+ *	Based on beep/net/ipv4/ip_sockglue.c
  *
  *	This program is free software; you can redistribute it and/or
  *      modify it under the terms of the GNU General Public License
@@ -22,21 +22,21 @@
  *		- added multicast source filtering API for MLDv2
  */
 
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/mroute6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/netfilter.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/in6.h>
+#include <beep/mroute6.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/init.h>
+#include <beep/sysctl.h>
+#include <beep/netfilter.h>
+#include <beep/slab.h>
 
 #include <net/sock.h>
 #include <net/snmp.h>

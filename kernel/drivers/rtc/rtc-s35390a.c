@@ -9,12 +9,12 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/i2c.h>
-#include <linux/bitrev.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
+#include <beep/i2c.h>
+#include <beep/bitrev.h>
+#include <beep/bcd.h>
+#include <beep/slab.h>
 
 #define S35390A_CMD_STATUS1	0
 #define S35390A_CMD_STATUS2	1

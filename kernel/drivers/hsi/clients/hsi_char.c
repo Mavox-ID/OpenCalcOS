@@ -21,27 +21,27 @@
  * 02110-1301 USA
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/kmemleak.h>
-#include <linux/ioctl.h>
-#include <linux/wait.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/uaccess.h>
-#include <linux/scatterlist.h>
-#include <linux/stat.h>
-#include <linux/hsi/hsi.h>
-#include <linux/hsi/hsi_char.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/atomic.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/kmemleak.h>
+#include <beep/ioctl.h>
+#include <beep/wait.h>
+#include <beep/fs.h>
+#include <beep/sched.h>
+#include <beep/device.h>
+#include <beep/cdev.h>
+#include <beep/uaccess.h>
+#include <beep/scatterlist.h>
+#include <beep/stat.h>
+#include <beep/hsi/hsi.h>
+#include <beep/hsi/hsi_char.h>
 
 #define HSC_DEVS		16 /* Num of channels */
 #define HSC_MSGS		4

@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2007 by Analog Devices, Inc.
  *
- * The Inventra Controller Driver for Linux is free software; you
+ * The Inventra Controller Driver for Beep is free software; you
  * can redistribute it and/or modify it under the terms of the GNU
  * General Public License version 2 as published by the Free Software
  * Foundation.

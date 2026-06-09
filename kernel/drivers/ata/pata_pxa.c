@@ -18,21 +18,21 @@
  *  the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/ata.h>
+#include <beep/libata.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
+#include <beep/completion.h>
 
 #include <scsi/scsi_host.h>
 
 #include <mach/pxa2xx-regs.h>
-#include <linux/platform_data/ata-pxa.h>
+#include <beep/platform_data/ata-pxa.h>
 #include <mach/dma.h>
 
 #define DRV_NAME	"pata_pxa"

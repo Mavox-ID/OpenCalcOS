@@ -11,16 +11,16 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/smc91x.h>
-#include <linux/mtd/physmap.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/sh_intc.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/fb.h>
+#include <beep/smc91x.h>
+#include <beep/mtd/physmap.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/clk.h>
+#include <beep/sh_intc.h>
 #include <mach/urquell.h>
 #include <cpu/sh7786.h>
 #include <asm/heartbeat.h>

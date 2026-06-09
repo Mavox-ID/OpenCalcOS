@@ -6,8 +6,8 @@
  * Copyright (C) 1999, 2000 by Silicon Graphics
  * Copyright (C) 2003 by Ralf Baechle
  */
-#include <linux/init.h>
-#include <linux/mm.h>
+#include <beep/init.h>
+#include <beep/mm.h>
 #include <asm/fixmap.h>
 #include <asm/pgtable.h>
 #include <asm/pgalloc.h>

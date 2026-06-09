@@ -1,7 +1,7 @@
 /*
  *  mxl5007t.h - driver for the MaxLinear MxL5007T silicon tuner
  *
- *  Copyright (C) 2008 Michael Krufky <mkrufky@linuxtv.org>
+ *  Copyright (C) 2008 Michael Krufky <mkrufky@beeptv.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by

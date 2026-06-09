@@ -12,12 +12,12 @@
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 
-#include <linux/dma-mapping.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/i2c-gpio.h>
+#include <beep/dma-mapping.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/i2c-gpio.h>
 
-#include <linux/platform_data/at91_adc.h>
+#include <beep/platform_data/at91_adc.h>
 
 #include <mach/cpu.h>
 #include <mach/at91sam9260.h>

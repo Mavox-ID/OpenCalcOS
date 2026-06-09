@@ -1,12 +1,12 @@
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/freezer.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/utsname.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/freezer.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/kthread.h>
+#include <beep/mutex.h>
+#include <beep/utsname.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -19,7 +19,7 @@
 
 /* Some informational data */
 MODULE_AUTHOR("Domao");
-MODULE_DESCRIPTION("ENE USB Mass Storage driver for Linux");
+MODULE_DESCRIPTION("ENE USB Mass Storage driver for Beep");
 MODULE_LICENSE("GPL");
 
 static unsigned int delay_use = 1;

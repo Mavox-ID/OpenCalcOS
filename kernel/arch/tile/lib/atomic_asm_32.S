@@ -69,7 +69,7 @@
  * it is not needed, in the atomic case, we avoid the race.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/atomic_32.h>
 #include <asm/page.h>
 #include <asm/processor.h>

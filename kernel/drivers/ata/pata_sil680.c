@@ -4,9 +4,9 @@
  *
  * based upon
  *
- * linux/drivers/ide/pci/siimage.c		Version 1.07	Nov 30, 2003
+ * beep/drivers/ide/pci/siimage.c		Version 1.07	Nov 30, 2003
  *
- * Copyright (C) 2001-2002	Andre Hedrick <andre@linux-ide.org>
+ * Copyright (C) 2001-2002	Andre Hedrick <andre@beep-ide.org>
  * Copyright (C) 2003		Red Hat <alan@redhat.com>
  *
  *  May be copied or modified under the terms of the GNU General Public License
@@ -22,14 +22,14 @@
  *	the command fifo mode.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <beep/libata.h>
 
 #define DRV_NAME "pata_sil680"
 #define DRV_VERSION "0.4.9"

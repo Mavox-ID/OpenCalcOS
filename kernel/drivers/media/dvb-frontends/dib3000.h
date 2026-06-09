@@ -24,7 +24,7 @@
 #ifndef DIB3000_H
 #define DIB3000_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 struct dib3000_config
 {

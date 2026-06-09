@@ -25,7 +25,7 @@
 #include "ivtv-yuv.h"
 #include "ivtv-ioctl.h"
 #include "ivtv-cards.h"
-#include <linux/firmware.h>
+#include <beep/firmware.h>
 #include <media/saa7127.h>
 
 #define IVTV_MASK_SPU_ENABLE 		0xFFFFFFFE

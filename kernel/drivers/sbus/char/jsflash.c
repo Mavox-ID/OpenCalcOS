@@ -26,24 +26,24 @@
  * instead. We should discuss this.
  */
 
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/fcntl.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/genhd.h>
-#include <linux/blkdev.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/miscdevice.h>
+#include <beep/fcntl.h>
+#include <beep/poll.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/genhd.h>
+#include <beep/blkdev.h>
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>
 #include <asm/io.h>
 #include <asm/pcic.h>
 #include <asm/oplib.h>
 
-#include <asm/jsflash.h>		/* ioctl arguments. <linux/> ?? */
+#include <asm/jsflash.h>		/* ioctl arguments. <beep/> ?? */
 #define JSFIDSZ		(sizeof(struct jsflash_ident_arg))
 #define JSFPRGSZ	(sizeof(struct jsflash_program_arg))
 
@@ -463,7 +463,7 @@ static int jsflash_init(void)
 	struct jsflash *jsf;
 	phandle node;
 	char banner[128];
-	struct linux_prom_registers reg0;
+	struct beep_prom_registers reg0;
 
 	node = prom_getchild(prom_root_node);
 	node = prom_searchsiblings(node, "flash-memory");

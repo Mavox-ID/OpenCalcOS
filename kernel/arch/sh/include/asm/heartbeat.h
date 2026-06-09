@@ -1,7 +1,7 @@
 #ifndef __ASM_SH_HEARTBEAT_H
 #define __ASM_SH_HEARTBEAT_H
 
-#include <linux/timer.h>
+#include <beep/timer.h>
 
 #define HEARTBEAT_INVERTED	(1 << 0)
 

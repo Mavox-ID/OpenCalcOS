@@ -16,9 +16,9 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
 #include <asm/irq.h>
 
 static unsigned int int_enable;

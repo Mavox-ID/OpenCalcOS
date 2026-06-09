@@ -1,14 +1,14 @@
 /*
  *  Support for Versatile FPGA-based IRQ controllers
  */
-#include <linux/bitops.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/irqchip/versatile-fpga.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <beep/bitops.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/irqchip/versatile-fpga.h>
+#include <beep/irqdomain.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
 
 #include <asm/exception.h>
 #include <asm/mach/irq.h>

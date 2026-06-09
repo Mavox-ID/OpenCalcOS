@@ -9,7 +9,7 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include "internal.h"
 
 static const char cachefiles_charmap[64] =

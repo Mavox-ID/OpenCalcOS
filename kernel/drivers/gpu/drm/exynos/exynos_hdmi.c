@@ -20,20 +20,20 @@
 
 #include "regs-hdmi.h"
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/clk.h>
-#include <linux/regulator/consumer.h>
-#include <linux/io.h>
-#include <linux/of_gpio.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/wait.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/delay.h>
+#include <beep/pm_runtime.h>
+#include <beep/clk.h>
+#include <beep/regulator/consumer.h>
+#include <beep/io.h>
+#include <beep/of_gpio.h>
 #include <plat/gpio-cfg.h>
 
 #include <drm/exynos_drm.h>
@@ -43,7 +43,7 @@
 
 #include "exynos_hdmi.h"
 
-#include <linux/gpio.h>
+#include <beep/gpio.h>
 #include <media/s5p_hdmi.h>
 
 #define MAX_WIDTH		1920

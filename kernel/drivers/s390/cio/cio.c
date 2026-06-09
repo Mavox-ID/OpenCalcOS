@@ -11,13 +11,13 @@
 #define KMSG_COMPONENT "cio"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/ftrace.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/kernel_stat.h>
-#include <linux/interrupt.h>
+#include <beep/ftrace.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/kernel_stat.h>
+#include <beep/interrupt.h>
 #include <asm/cio.h>
 #include <asm/delay.h>
 #include <asm/irq.h>
@@ -484,7 +484,7 @@ static int cio_check_devno_blacklisted(struct subchannel *sch)
 {
 	if (is_blacklisted(sch->schid.ssid, sch->schib.pmcw.dev)) {
 		/*
-		 * This device must not be known to Linux. So we simply
+		 * This device must not be known to Beep. So we simply
 		 * say that there is no device and return ENODEV.
 		 */
 		CIO_MSG_EVENT(6, "Blacklisted device detected "

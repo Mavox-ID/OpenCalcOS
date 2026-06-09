@@ -8,7 +8,7 @@
  * Heavily based on smdk2443_wm9710.c
  * Copyright 2007 Wolfson Microelectronics PLC.
  * Author: Graeme Gregory
- *         graeme.gregory@wolfsonmicro.com or linux@wolfsonmicro.com
+ *         graeme.gregory@wolfsonmicro.com or beep@wolfsonmicro.com
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License version 2 as
@@ -16,7 +16,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <sound/soc.h>
 
 static struct snd_soc_card ln2440sbc;

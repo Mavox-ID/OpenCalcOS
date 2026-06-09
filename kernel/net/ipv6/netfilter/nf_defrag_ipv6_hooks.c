@@ -6,19 +6,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/ipv6.h>
-#include <linux/in6.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/icmp.h>
-#include <linux/sysctl.h>
+#include <beep/types.h>
+#include <beep/ipv6.h>
+#include <beep/in6.h>
+#include <beep/netfilter.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/icmp.h>
+#include <beep/sysctl.h>
 #include <net/ipv6.h>
 #include <net/inet_frag.h>
 
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_bridge.h>
+#include <beep/netfilter_ipv6.h>
+#include <beep/netfilter_bridge.h>
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_helper.h>

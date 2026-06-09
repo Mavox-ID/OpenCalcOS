@@ -2,15 +2,15 @@
 #define _USB_VIDEO_H_
 
 #ifndef __KERNEL__
-#error "The uvcvideo.h header is deprecated, use linux/uvcvideo.h instead."
+#error "The uvcvideo.h header is deprecated, use beep/uvcvideo.h instead."
 #endif /* __KERNEL__ */
 
-#include <linux/kernel.h>
-#include <linux/poll.h>
-#include <linux/usb.h>
-#include <linux/usb/video.h>
-#include <linux/uvcvideo.h>
-#include <linux/videodev2.h>
+#include <beep/kernel.h>
+#include <beep/poll.h>
+#include <beep/usb.h>
+#include <beep/usb/video.h>
+#include <beep/uvcvideo.h>
+#include <beep/videodev2.h>
 #include <media/media-device.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-event.h>

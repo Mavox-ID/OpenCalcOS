@@ -8,31 +8,31 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sh_mmcif.h>
-#include <linux/mmc/sh_mobile_sdhi.h>
-#include <linux/mtd/physmap.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/usb/r8a66597.h>
-#include <linux/usb/renesas_usbhs.h>
-#include <linux/i2c.h>
-#include <linux/i2c/tsc2007.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/sh_msiof.h>
-#include <linux/spi/mmc_spi.h>
-#include <linux/input.h>
-#include <linux/input/sh_keysc.h>
-#include <linux/sh_eth.h>
-#include <linux/sh_intc.h>
-#include <linux/videodev2.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/sh_mmcif.h>
+#include <beep/mmc/sh_mobile_sdhi.h>
+#include <beep/mtd/physmap.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
+#include <beep/usb/r8a66597.h>
+#include <beep/usb/renesas_usbhs.h>
+#include <beep/i2c.h>
+#include <beep/i2c/tsc2007.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/sh_msiof.h>
+#include <beep/spi/mmc_spi.h>
+#include <beep/input.h>
+#include <beep/input/sh_keysc.h>
+#include <beep/sh_eth.h>
+#include <beep/sh_intc.h>
+#include <beep/videodev2.h>
 #include <video/sh_mobile_lcdc.h>
 #include <sound/sh_fsi.h>
 #include <sound/simple_card.h>
@@ -49,8 +49,8 @@
  *  Address      Interface        BusWidth
  *-----------------------------------------
  *  0x0000_0000  uboot            16bit
- *  0x0004_0000  Linux romImage   16bit
- *  0x0014_0000  MTD for Linux    16bit
+ *  0x0004_0000  Beep romImage   16bit
+ *  0x0014_0000  MTD for Beep    16bit
  *  0x0400_0000  Internal I/O     16/32bit
  *  0x0800_0000  DRAM             32bit
  *  0x1800_0000  MFI              16bit

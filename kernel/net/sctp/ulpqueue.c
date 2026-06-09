@@ -41,9 +41,9 @@
  * be incorporated into the next SCTP release.
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
 #include <net/sock.h>
 #include <net/sctp/structs.h>
 #include <net/sctp/sctp.h>

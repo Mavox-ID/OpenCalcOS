@@ -1,5 +1,5 @@
 /*
- * linux/kernel/seccomp.c
+ * beep/kernel/seccomp.c
  *
  * Copyright 2004-2005  Andrea Arcangeli <andrea@cpushare.com>
  *
@@ -10,25 +10,25 @@
  *
  * Mode 1 uses a fixed list of allowed system calls.
  * Mode 2 allows user-defined system call filters in the form
- *        of Berkeley Packet Filters/Linux Socket Filters.
+ *        of Berkeley Packet Filters/Beep Socket Filters.
  */
 
-#include <linux/atomic.h>
-#include <linux/audit.h>
-#include <linux/compat.h>
-#include <linux/sched.h>
-#include <linux/seccomp.h>
+#include <beep/atomic.h>
+#include <beep/audit.h>
+#include <beep/compat.h>
+#include <beep/sched.h>
+#include <beep/seccomp.h>
 
 /* #define SECCOMP_DEBUG 1 */
 
 #ifdef CONFIG_SECCOMP_FILTER
 #include <asm/syscall.h>
-#include <linux/filter.h>
-#include <linux/ptrace.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/tracehook.h>
-#include <linux/uaccess.h>
+#include <beep/filter.h>
+#include <beep/ptrace.h>
+#include <beep/security.h>
+#include <beep/slab.h>
+#include <beep/tracehook.h>
+#include <beep/uaccess.h>
 
 /**
  * struct seccomp_filter - container for seccomp BPF programs

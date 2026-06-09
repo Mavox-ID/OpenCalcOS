@@ -10,8 +10,8 @@
  * Support for TX4938 in 2.6 - Manish Lachwani (mlachwani@mvista.com)
  */
 
-#include <linux/init.h>
-#include <linux/bootmem.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
 #include <asm/bootinfo.h>
 #include <asm/txx9/generic.h>
 #include <asm/txx9/rbtx4938.h>

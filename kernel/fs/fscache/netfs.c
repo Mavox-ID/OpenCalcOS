@@ -10,8 +10,8 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL COOKIE
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include "internal.h"
 
 static LIST_HEAD(fscache_netfs_list);

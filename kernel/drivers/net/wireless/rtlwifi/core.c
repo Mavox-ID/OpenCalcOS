@@ -34,7 +34,7 @@
 #include "pci.h"
 #include "ps.h"
 
-#include <linux/export.h>
+#include <beep/export.h>
 
 void rtl_fw_cb(const struct firmware *firmware, void *context)
 {

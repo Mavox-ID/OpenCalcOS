@@ -1,8 +1,8 @@
 /* System call table for ia32 emulation. */
 
-#include <linux/linkage.h>
-#include <linux/sys.h>
-#include <linux/cache.h>
+#include <beep/linkage.h>
+#include <beep/sys.h>
+#include <beep/cache.h>
 #include <asm/asm-offsets.h>
 
 #define __SYSCALL_I386(nr, sym, compat) extern asmlinkage void compat(void) ;

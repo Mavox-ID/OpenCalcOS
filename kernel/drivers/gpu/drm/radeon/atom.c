@@ -22,9 +22,9 @@
  * Author: Stanislaw Skowronek
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 #include <asm/unaligned.h>
 
 #define ATOM_DEBUG

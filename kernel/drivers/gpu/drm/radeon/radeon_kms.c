@@ -30,8 +30,8 @@
 #include <drm/radeon_drm.h>
 #include "radeon_asic.h"
 
-#include <linux/vga_switcheroo.h>
-#include <linux/slab.h>
+#include <beep/vga_switcheroo.h>
+#include <beep/slab.h>
 
 /**
  * radeon_driver_unload_kms - Main unload function for KMS.

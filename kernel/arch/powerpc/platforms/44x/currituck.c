@@ -20,10 +20,10 @@
  * option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/rtc.h>
+#include <beep/init.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/rtc.h>
 
 #include <asm/machdep.h>
 #include <asm/prom.h>
@@ -34,7 +34,7 @@
 #include <asm/mpic.h>
 #include <asm/mmu.h>
 
-#include <linux/pci.h>
+#include <beep/pci.h>
 
 static __initdata struct of_device_id ppc47x_of_bus[] = {
 	{ .compatible = "ibm,plb4", },

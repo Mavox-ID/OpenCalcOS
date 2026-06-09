@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/asm/thread_info.h
+ * beep/arch/unicore32/include/asm/thread_info.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -14,7 +14,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/fpstate.h>
 
 #define THREAD_SIZE_ORDER	1

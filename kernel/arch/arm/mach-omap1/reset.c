@@ -1,8 +1,8 @@
 /*
  * OMAP1 reset support
  */
-#include <linux/kernel.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 

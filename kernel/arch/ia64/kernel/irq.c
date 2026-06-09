@@ -1,5 +1,5 @@
 /*
- *	linux/arch/ia64/kernel/irq.c
+ *	beep/arch/ia64/kernel/irq.c
  *
  *	Copyright (C) 1992, 1998 Linus Torvalds, Ingo Molnar
  *
@@ -18,10 +18,10 @@
 
 #include <asm/delay.h>
 #include <asm/uaccess.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
 
 /*
  * 'what should we do if we get a hw irq event on an illegal vector'.

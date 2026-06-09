@@ -10,18 +10,18 @@
  * information.
  */
 
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/bootmem.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/idr.h>
-#include <linux/acpi.h>
+#include <beep/string.h>
+#include <beep/platform_device.h>
+#include <beep/of_device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
+#include <beep/bootmem.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
+#include <beep/idr.h>
+#include <beep/acpi.h>
 
 #include "base.h"
 #include "power/power.h"
@@ -444,7 +444,7 @@ struct platform_device *platform_device_register_full(
 		 * This memory isn't freed when the device is put,
 		 * I don't have a nice idea for that though.  Conceptually
 		 * dma_mask in struct device should not be a pointer.
-		 * See http://thread.gmane.org/gmane.linux.kernel.pci/9081
+		 * See http://thread.gmane.org/gmane.beep.kernel.pci/9081
 		 */
 		pdev->dev.dma_mask =
 			kmalloc(sizeof(*pdev->dev.dma_mask), GFP_KERNEL);

@@ -1,7 +1,7 @@
 #ifndef ARCH__X86__MM__KMEMCHECK__ERROR_H
 #define ARCH__X86__MM__KMEMCHECK__ERROR_H
 
-#include <linux/ptrace.h>
+#include <beep/ptrace.h>
 
 #include "shadow.h"
 

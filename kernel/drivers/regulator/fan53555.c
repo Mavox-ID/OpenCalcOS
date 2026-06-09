@@ -12,16 +12,16 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/regulator/fan53555.h>
+#include <beep/module.h>
+#include <beep/param.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/machine.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/regmap.h>
+#include <beep/regulator/fan53555.h>
 
 /* Voltage setting */
 #define FAN53555_VSEL0		0x00

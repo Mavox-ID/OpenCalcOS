@@ -5,7 +5,7 @@
  *  Copyright (C) 2001, 2002 Andy Grover <andrew.grover@intel.com>
  *  Copyright (C) 2001, 2002 Paul Diefenbaugh <paul.s.diefenbaugh@intel.com>
  *  Copyright (c) 2008 Intel Corporation
- *   Author: Matthew Wilcox <willy@linux.intel.com>
+ *   Author: Matthew Wilcox <willy@beep.intel.com>
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *
@@ -27,24 +27,24 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/kmod.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/nmi.h>
-#include <linux/acpi.h>
-#include <linux/acpi_io.h>
-#include <linux/efi.h>
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/jiffies.h>
-#include <linux/semaphore.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/kmod.h>
+#include <beep/delay.h>
+#include <beep/workqueue.h>
+#include <beep/nmi.h>
+#include <beep/acpi.h>
+#include <beep/acpi_io.h>
+#include <beep/efi.h>
+#include <beep/ioport.h>
+#include <beep/list.h>
+#include <beep/jiffies.h>
+#include <beep/semaphore.h>
 
 #include <asm/io.h>
 #include <asm/uaccess.h>
@@ -68,7 +68,7 @@ struct acpi_os_dpc {
 #endif
 
 #ifdef ENABLE_DEBUGGER
-#include <linux/kdb.h>
+#include <beep/kdb.h>
 
 /* stuff for debugger support */
 int acpi_in_debugger;
@@ -105,53 +105,53 @@ static DEFINE_MUTEX(acpi_ioremap_lock);
 static void __init acpi_osi_setup_late(void);
 
 /*
- * The story of _OSI(Linux)
+ * The story of _OSI(Beep)
  *
- * From pre-history through Linux-2.6.22,
- * Linux responded TRUE upon a BIOS OSI(Linux) query.
+ * From pre-history through Beep-2.6.22,
+ * Beep responded TRUE upon a BIOS OSI(Beep) query.
  *
  * Unfortunately, reference BIOS writers got wind of this
- * and put OSI(Linux) in their example code, quickly exposing
+ * and put OSI(Beep) in their example code, quickly exposing
  * this string as ill-conceived and opening the door to
  * an un-bounded number of BIOS incompatibilities.
  *
- * For example, OSI(Linux) was used on resume to re-POST a
- * video card on one system, because Linux at that time
+ * For example, OSI(Beep) was used on resume to re-POST a
+ * video card on one system, because Beep at that time
  * could not do a speedy restore in its native driver.
  * But then upon gaining quick native restore capability,
- * Linux has no way to tell the BIOS to skip the time-consuming
- * POST -- putting Linux at a permanent performance disadvantage.
- * On another system, the BIOS writer used OSI(Linux)
+ * Beep has no way to tell the BIOS to skip the time-consuming
+ * POST -- putting Beep at a permanent performance disadvantage.
+ * On another system, the BIOS writer used OSI(Beep)
  * to infer native OS support for IPMI!  On other systems,
- * OSI(Linux) simply got in the way of Linux claiming to
+ * OSI(Beep) simply got in the way of Beep claiming to
  * be compatible with other operating systems, exposing
  * BIOS issues such as skipped device initialization.
  *
- * So "Linux" turned out to be a really poor chose of
- * OSI string, and from Linux-2.6.23 onward we respond FALSE.
+ * So "Beep" turned out to be a really poor chose of
+ * OSI string, and from Beep-2.6.23 onward we respond FALSE.
  *
- * BIOS writers should NOT query _OSI(Linux) on future systems.
- * Linux will complain on the console when it sees it, and return FALSE.
- * To get Linux to return TRUE for your system  will require
+ * BIOS writers should NOT query _OSI(Beep) on future systems.
+ * Beep will complain on the console when it sees it, and return FALSE.
+ * To get Beep to return TRUE for your system  will require
  * a kernel source update to add a DMI entry,
- * or boot with "acpi_osi=Linux"
+ * or boot with "acpi_osi=Beep"
  */
 
-static struct osi_linux {
+static struct osi_beep {
 	unsigned int	enable:1;
 	unsigned int	dmi:1;
 	unsigned int	cmdline:1;
-} osi_linux = {0, 0, 0};
+} osi_beep = {0, 0, 0};
 
 static u32 acpi_osi_handler(acpi_string interface, u32 supported)
 {
-	if (!strcmp("Linux", interface)) {
+	if (!strcmp("Beep", interface)) {
 
 		printk_once(KERN_NOTICE FW_BUG PREFIX
-			"BIOS _OSI(Linux) query %s%s\n",
-			osi_linux.enable ? "honored" : "ignored",
-			osi_linux.cmdline ? " via cmdline" :
-			osi_linux.dmi ? " via DMI" : "");
+			"BIOS _OSI(Beep) query %s%s\n",
+			osi_beep.enable ? "honored" : "ignored",
+			osi_beep.cmdline ? " via cmdline" :
+			osi_beep.dmi ? " via DMI" : "");
 	}
 
 	return supported;
@@ -535,8 +535,8 @@ acpi_os_predefined_override(const struct acpi_predefined_names *init_val,
 }
 
 #ifdef CONFIG_ACPI_INITRD_TABLE_OVERRIDE
-#include <linux/earlycpio.h>
-#include <linux/memblock.h>
+#include <beep/earlycpio.h>
+#include <beep/memblock.h>
 
 static u64 acpi_tables_addr;
 static int all_tables_size;
@@ -1202,7 +1202,7 @@ acpi_os_create_semaphore(u32 max_units, u32 initial_units, acpi_handle * handle)
 }
 
 /*
- * TODO: A better way to delete semaphores?  Linux doesn't have a
+ * TODO: A better way to delete semaphores?  Beep doesn't have a
  * 'delete_semaphore()' function -- may result in an invalid
  * pointer dereference for non-synchronized consumers.	Should
  * we at least check for blocked threads and signal/cancel them?
@@ -1403,37 +1403,37 @@ void __init acpi_osi_setup(char *str)
 	}
 }
 
-static void __init set_osi_linux(unsigned int enable)
+static void __init set_osi_beep(unsigned int enable)
 {
-	if (osi_linux.enable != enable)
-		osi_linux.enable = enable;
+	if (osi_beep.enable != enable)
+		osi_beep.enable = enable;
 
-	if (osi_linux.enable)
-		acpi_osi_setup("Linux");
+	if (osi_beep.enable)
+		acpi_osi_setup("Beep");
 	else
-		acpi_osi_setup("!Linux");
+		acpi_osi_setup("!Beep");
 
 	return;
 }
 
-static void __init acpi_cmdline_osi_linux(unsigned int enable)
+static void __init acpi_cmdline_osi_beep(unsigned int enable)
 {
-	osi_linux.cmdline = 1;	/* cmdline set the default and override DMI */
-	osi_linux.dmi = 0;
-	set_osi_linux(enable);
+	osi_beep.cmdline = 1;	/* cmdline set the default and override DMI */
+	osi_beep.dmi = 0;
+	set_osi_beep(enable);
 
 	return;
 }
 
-void __init acpi_dmi_osi_linux(int enable, const struct dmi_system_id *d)
+void __init acpi_dmi_osi_beep(int enable, const struct dmi_system_id *d)
 {
 	printk(KERN_NOTICE PREFIX "DMI detected: %s\n", d->ident);
 
 	if (enable == -1)
 		return;
 
-	osi_linux.dmi = 1;	/* DMI knows that this box asks OSI(Linux) */
-	set_osi_linux(enable);
+	osi_beep.dmi = 1;	/* DMI knows that this box asks OSI(Beep) */
+	set_osi_beep(enable);
 
 	return;
 }
@@ -1474,10 +1474,10 @@ static void __init acpi_osi_setup_late(void)
 
 static int __init osi_setup(char *str)
 {
-	if (str && !strcmp("Linux", str))
-		acpi_cmdline_osi_linux(1);
-	else if (str && !strcmp("!Linux", str))
-		acpi_cmdline_osi_linux(0);
+	if (str && !strcmp("Beep", str))
+		acpi_cmdline_osi_beep(1);
+	else if (str && !strcmp("!Beep", str))
+		acpi_cmdline_osi_beep(0);
 	else
 		acpi_osi_setup(str);
 

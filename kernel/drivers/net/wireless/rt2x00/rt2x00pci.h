@@ -26,8 +26,8 @@
 #ifndef RT2X00PCI_H
 #define RT2X00PCI_H
 
-#include <linux/io.h>
-#include <linux/pci.h>
+#include <beep/io.h>
+#include <beep/pci.h>
 
 /*
  * This variable should be used with the

@@ -16,7 +16,7 @@
  *                              some davinci devices.
  */
 
-#include <linux/serial_reg.h>
+#include <beep/serial_reg.h>
 
 #include <mach/serial.h>
 

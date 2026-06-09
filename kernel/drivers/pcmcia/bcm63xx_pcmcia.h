@@ -1,8 +1,8 @@
 #ifndef BCM63XX_PCMCIA_H_
 #define BCM63XX_PCMCIA_H_
 
-#include <linux/types.h>
-#include <linux/timer.h>
+#include <beep/types.h>
+#include <beep/timer.h>
 #include <pcmcia/ss.h>
 #include <bcm63xx_dev_pcmcia.h>
 

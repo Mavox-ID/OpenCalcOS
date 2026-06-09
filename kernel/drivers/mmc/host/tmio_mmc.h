@@ -1,5 +1,5 @@
 /*
- * linux/drivers/mmc/host/tmio_mmc.h
+ * beep/drivers/mmc/host/tmio_mmc.h
  *
  * Copyright (C) 2007 Ian Molton
  * Copyright (C) 2004 Ian Molton
@@ -16,12 +16,12 @@
 #ifndef TMIO_MMC_H
 #define TMIO_MMC_H
 
-#include <linux/highmem.h>
-#include <linux/mmc/tmio.h>
-#include <linux/mutex.h>
-#include <linux/pagemap.h>
-#include <linux/scatterlist.h>
-#include <linux/spinlock.h>
+#include <beep/highmem.h>
+#include <beep/mmc/tmio.h>
+#include <beep/mutex.h>
+#include <beep/pagemap.h>
+#include <beep/scatterlist.h>
+#include <beep/spinlock.h>
 
 /* Definitions for values the CTRL_SDIO_STATUS register can take. */
 #define TMIO_SDIO_STAT_IOIRQ	0x0001

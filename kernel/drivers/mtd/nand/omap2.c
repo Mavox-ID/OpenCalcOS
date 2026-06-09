@@ -8,26 +8,26 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/platform_device.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/omap-dma.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/platform_device.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/jiffies.h>
+#include <beep/sched.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/omap-dma.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 #ifdef CONFIG_MTD_NAND_OMAP_BCH
-#include <linux/bch.h>
+#include <beep/bch.h>
 #endif
 
-#include <linux/platform_data/mtd-nand-omap2.h>
+#include <beep/platform_data/mtd-nand-omap2.h>
 
 #define	DRIVER_NAME	"omap2-nand"
 #define	OMAP_NAND_TIMEOUT_MS	5000

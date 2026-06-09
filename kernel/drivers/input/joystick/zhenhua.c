@@ -10,7 +10,7 @@
 
 /*
  * Driver to use 4CH RC transmitter using Zhen Hua 5-byte protocol (Walkera Lama,
- * EasyCopter etc.) as a joystick under Linux.
+ * EasyCopter etc.) as a joystick under Beep.
  *
  * RC transmitters using Zhen Hua 5-byte protocol are cheap four channels
  * transmitters for control a RC planes or RC helicopters with possibility to
@@ -44,12 +44,12 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/serio.h>
+#include <beep/init.h>
 
 #define DRIVER_DESC	"RC transmitter with 5-byte Zhen Hua protocol joystick driver"
 

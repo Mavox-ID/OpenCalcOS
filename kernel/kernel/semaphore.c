@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2008 Intel Corporation
- * Author: Matthew Wilcox <willy@linux.intel.com>
+ * Author: Matthew Wilcox <willy@beep.intel.com>
  *
  * Distributed under the terms of the GNU GPL, version 2
  *
@@ -25,13 +25,13 @@
  * semaphore.  If it's zero, there may be tasks waiting on the wait_list.
  */
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/spinlock.h>
-#include <linux/ftrace.h>
+#include <beep/compiler.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/semaphore.h>
+#include <beep/spinlock.h>
+#include <beep/ftrace.h>
 
 static noinline void __down(struct semaphore *sem);
 static noinline int __down_interruptible(struct semaphore *sem);

@@ -3,7 +3,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 static inline unsigned long arch_local_save_flags(void)
 {

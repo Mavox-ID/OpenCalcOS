@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/boot/bootp/init.S
+ *  beep/arch/arm/boot/bootp/init.S
  *
  *  Copyright (C) 2000-2003 Russell King.
  *

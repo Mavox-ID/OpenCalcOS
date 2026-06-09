@@ -1,5 +1,5 @@
 #
-# Makefile for the linux kernel.
+# Makefile for the beep kernel.
 #
 
 obj-y	:= timer.o irq.o common.o serial.o clock.o

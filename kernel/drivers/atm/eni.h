@@ -6,15 +6,15 @@
 #ifndef DRIVER_ATM_ENI_H
 #define DRIVER_ATM_ENI_H
 
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/interrupt.h>
-#include <linux/sonet.h>
-#include <linux/skbuff.h>
-#include <linux/time.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
+#include <beep/atm.h>
+#include <beep/atmdev.h>
+#include <beep/interrupt.h>
+#include <beep/sonet.h>
+#include <beep/skbuff.h>
+#include <beep/time.h>
+#include <beep/pci.h>
+#include <beep/spinlock.h>
+#include <beep/atomic.h>
 
 #include "midway.h"
 

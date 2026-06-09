@@ -2,7 +2,7 @@
 #define ASC_VERSION "3.4"	/* AdvanSys Driver Version */
 
 /*
- * advansys.c - Linux Host Driver for AdvanSys SCSI Adapters
+ * advansys.c - Beep Host Driver for AdvanSys SCSI Adapters
  *
  * Copyright (c) 1995-2000 Advanced System Products, Inc.
  * Copyright (c) 2000-2001 ConnectCom Solutions, Inc.
@@ -21,24 +21,24 @@
  * On June 18, 2001 Initio Corp. acquired ConnectCom's SCSI assets
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/isa.h>
-#include <linux/eisa.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/isa.h>
+#include <beep/eisa.h>
+#include <beep/pci.h>
+#include <beep/spinlock.h>
+#include <beep/dma-mapping.h>
+#include <beep/firmware.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>
@@ -81,7 +81,7 @@
  *
  * Any instance where a 32-bit long or pointer type is assumed
  * for precision or HW defined structures, the following define
- * types must be used. In Linux the char, short, and int types
+ * types must be used. In Beep the char, short, and int types
  * are all consistent at 8, 16, and 32 bits respectively. Pointers
  * and long types are 64 bits on Alpha and UltraSPARC.
  */
@@ -934,7 +934,7 @@ typedef struct asc_mc_saved {
  *
  * Any instance where a 32-bit long or pointer type is assumed
  * for precision or HW defined structures, the following define
- * types must be used. In Linux the char, short, and int types
+ * types must be used. In Beep the char, short, and int types
  * are all consistent at 8, 16, and 32 bits respectively. Pointers
  * and long types are 64 bits on Alpha and UltraSPARC.
  */
@@ -945,7 +945,7 @@ typedef struct asc_mc_saved {
 
 /*
  * These macros are used to convert a virtual address to a
- * 32-bit value. This currently can be used on Linux Alpha
+ * 32-bit value. This currently can be used on Beep Alpha
  * which uses 64-bit virtual address but a 32-bit bus address.
  * This is likely to break in the future, but doing this now
  * will give us time to change the HW and FW to handle 64-bit
@@ -1882,7 +1882,7 @@ typedef struct adv_scsi_req_q {
  * Mid-Level SCSI request structure.
  *
  * Zero or more ADV_SG_BLOCK are used with each ADV_SCSI_REQ_Q. Each
- * ADV_SG_BLOCK structure holds 15 scatter-gather elements. Under Linux
+ * ADV_SG_BLOCK structure holds 15 scatter-gather elements. Under Beep
  * up to 255 scatter-gather elements may be used per request or
  * ADV_SCSI_REQ_Q.
  *
@@ -3553,7 +3553,7 @@ static int asc_prt_driver_conf(struct Scsi_Host *shost, char *cp, int cplen)
 	totlen = len = 0;
 
 	len = asc_prt_line(cp, leftlen,
-			   "\nLinux Driver Configuration and Information for AdvanSys SCSI Host %d:\n",
+			   "\nBeep Driver Configuration and Information for AdvanSys SCSI Host %d:\n",
 			   shost->host_no);
 	ASC_PRT_NEXT();
 
@@ -4072,7 +4072,7 @@ static int asc_prt_board_stats(struct Scsi_Host *shost, char *cp, int cplen)
 	int len, totlen = 0;
 
 	len = asc_prt_line(cp, leftlen,
-			   "\nLinux Driver Statistics for AdvanSys SCSI Host %d:\n",
+			   "\nBeep Driver Statistics for AdvanSys SCSI Host %d:\n",
 			   shost->host_no);
 	ASC_PRT_NEXT();
 

@@ -9,11 +9,11 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/crypto.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/net.h>
+#include <beep/skbuff.h>
+#include <beep/crypto.h>
 #include <net/sock.h>
 #include <net/af_rxrpc.h>
 #include "ar-internal.h"

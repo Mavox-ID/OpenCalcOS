@@ -20,7 +20,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 /*
  * TerraTec slim remote, 6 rows, 3 columns.

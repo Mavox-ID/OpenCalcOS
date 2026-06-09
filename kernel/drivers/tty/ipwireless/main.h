@@ -18,8 +18,8 @@
 #ifndef _IPWIRELESS_CS_H_
 #define _IPWIRELESS_CS_H_
 
-#include <linux/sched.h>
-#include <linux/types.h>
+#include <beep/sched.h>
+#include <beep/types.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

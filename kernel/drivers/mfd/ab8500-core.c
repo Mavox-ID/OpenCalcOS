@@ -7,23 +7,23 @@
  * Author: Mattias Wallin <mattias.wallin@stericsson.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/mfd/abx500/ab8500-bm.h>
-#include <linux/mfd/dbx500-prcmu.h>
-#include <linux/regulator/ab8500.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/abx500.h>
+#include <beep/mfd/abx500/ab8500.h>
+#include <beep/mfd/abx500/ab8500-bm.h>
+#include <beep/mfd/dbx500-prcmu.h>
+#include <beep/regulator/ab8500.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
 /*
  * Interrupt register offsets
@@ -120,7 +120,7 @@ module_param(no_bm, bool, S_IRUGO);
 /*
  * Map interrupt numbers to the LATCH and MASK register offsets, Interrupt
  * numbers are indexed into this array with (num / 8). The interupts are
- * defined in linux/mfd/ab8500.h
+ * defined in beep/mfd/ab8500.h
  *
  * This is one off from the register names, i.e. AB8500_IT_MASK1_REG is at
  * offset 0.

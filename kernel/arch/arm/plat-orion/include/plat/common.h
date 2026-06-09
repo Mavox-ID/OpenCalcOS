@@ -9,7 +9,7 @@
  */
 
 #ifndef __PLAT_COMMON_H
-#include <linux/mv643xx_eth.h>
+#include <beep/mv643xx_eth.h>
 
 struct dsa_platform_data;
 struct mv_sata_platform_data;

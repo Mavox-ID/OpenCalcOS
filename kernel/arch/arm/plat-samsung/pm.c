@@ -1,9 +1,9 @@
-/* linux/arch/arm/plat-s3c/pm.c
+/* beep/arch/arm/plat-s3c/pm.c
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2004-2008 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * S3C common power management (suspend to ram) support.
  *
@@ -12,12 +12,12 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/serial_core.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/suspend.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/serial_core.h>
+#include <beep/io.h>
 
 #include <asm/cacheflush.h>
 #include <asm/suspend.h>

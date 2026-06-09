@@ -22,11 +22,11 @@
 
 */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/videodev2.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/videodev2.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>
 

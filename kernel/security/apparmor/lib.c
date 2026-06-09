@@ -12,10 +12,10 @@
  * License.
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/vmalloc.h>
 
 #include "include/audit.h"
 #include "include/apparmor.h"

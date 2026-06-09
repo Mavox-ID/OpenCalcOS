@@ -52,7 +52,7 @@
 #include <string.h>
 #include <sysexits.h>
 
-#ifdef __linux__
+#ifdef __beep__
 #include "../queue.h"
 #else
 #include <sys/queue.h>

@@ -6,13 +6,13 @@
  * Copyright (C) Tom Long Nguyen (tom.l.nguyen@intel.com)
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/pm.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/pm.h>
 
-#include <linux/pcieport_if.h>
+#include <beep/pcieport_if.h>
 #include "portdrv.h"
 
 static int pcie_port_bus_match(struct device *dev, struct device_driver *drv);

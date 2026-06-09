@@ -9,29 +9,29 @@
  *		2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/stat.h>
-#include <linux/socket.h>
-#include <linux/file.h>
-#include <linux/fcntl.h>
-#include <linux/net.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/security.h>
-#include <linux/pid.h>
-#include <linux/nsproxy.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/signal.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/kernel.h>
+#include <beep/stat.h>
+#include <beep/socket.h>
+#include <beep/file.h>
+#include <beep/fcntl.h>
+#include <beep/net.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/security.h>
+#include <beep/pid.h>
+#include <beep/nsproxy.h>
+#include <beep/slab.h>
 
 #include <asm/uaccess.h>
 
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 #include <net/sock.h>
 #include <net/compat.h>
 #include <net/scm.h>

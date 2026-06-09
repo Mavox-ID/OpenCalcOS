@@ -3,8 +3,8 @@
 #ifndef _ASM_CRIS_DMA_MAPPING_H
 #define _ASM_CRIS_DMA_MAPPING_H
 
-#include <linux/mm.h>
-#include <linux/kernel.h>
+#include <beep/mm.h>
+#include <beep/kernel.h>
 
 #include <asm/cache.h>
 #include <asm/io.h>

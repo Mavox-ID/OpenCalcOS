@@ -18,16 +18,16 @@
 #define DIVA_BUILD "local"
 #endif
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/proc_fs.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/list.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/skbuff.h>
+#include <beep/vmalloc.h>
+#include <beep/proc_fs.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/list.h>
 #include <asm/types.h>
 #include <asm/io.h>
 
@@ -49,7 +49,7 @@
 #define PORT_SPACE_TYPE    1
 
 
-#include <linux/string.h>
+#include <beep/string.h>
 
 #ifndef	byte
 #define	byte   u8

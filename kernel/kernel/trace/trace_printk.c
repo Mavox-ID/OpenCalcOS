@@ -4,18 +4,18 @@
  * Copyright (C) 2008 Lai Jiangshan <laijs@cn.fujitsu.com>
  *
  */
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/ftrace.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/ctype.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
+#include <beep/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/ftrace.h>
+#include <beep/string.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/ctype.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
 
 #include "trace.h"
 

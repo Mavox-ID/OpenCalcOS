@@ -18,18 +18,18 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/suspend.h>
-#include <linux/sched.h>
-#include <linux/proc_fs.h>
-#include <linux/interrupt.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/clk-provider.h>
-#include <linux/irq.h>
-#include <linux/time.h>
-#include <linux/gpio.h>
-#include <linux/platform_data/gpio-omap.h>
+#include <beep/suspend.h>
+#include <beep/sched.h>
+#include <beep/proc_fs.h>
+#include <beep/interrupt.h>
+#include <beep/sysfs.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/clk-provider.h>
+#include <beep/irq.h>
+#include <beep/time.h>
+#include <beep/gpio.h>
+#include <beep/platform_data/gpio-omap.h>
 
 #include <asm/fncpy.h>
 
@@ -38,7 +38,7 @@
 #include <asm/mach-types.h>
 #include <asm/system_misc.h>
 
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 
 #include "soc.h"
 #include "common.h"

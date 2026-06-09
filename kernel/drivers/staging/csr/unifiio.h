@@ -3,7 +3,7 @@
  *
  *  FILE: unifiio.h
  *
- *      Public definitions for the UniFi linux driver.
+ *      Public definitions for the UniFi beep driver.
  *      This is mostly ioctl command values and structs.
  *
  *      Include <sys/ioctl.h> or similar before this file
@@ -18,7 +18,7 @@
 #ifndef __UNIFIIO_H__
 #define __UNIFIIO_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define UNIFI_GET_UDI_ENABLE    _IOR('u',  1, int)
 #define UNIFI_SET_UDI_ENABLE    _IOW('u',  2, int)

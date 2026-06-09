@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/include/plat/s3c2416.h
+/* beep/arch/arm/plat-samsung/include/plat/s3c2416.h
  *
  * Copyright (c) 2009 Yauhen Kharuzhy <jekhor@gmail.com>
  *

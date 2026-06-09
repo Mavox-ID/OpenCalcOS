@@ -1,20 +1,20 @@
 /*
- * linux/fs/lockd/mon.c
+ * beep/fs/lockd/mon.c
  *
  * The kernel statd client.
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/ktime.h>
+#include <beep/slab.h>
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/xprtsock.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/lockd/lockd.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/xprtsock.h>
+#include <beep/sunrpc/svc.h>
+#include <beep/lockd/lockd.h>
 
 #include <asm/unaligned.h>
 

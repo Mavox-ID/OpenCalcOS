@@ -6,14 +6,14 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/mfd/adp5520.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/fb.h>
+#include <beep/backlight.h>
+#include <beep/mfd/adp5520.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 struct adp5520_bl {
 	struct device *master;
@@ -382,7 +382,7 @@ static struct platform_driver adp5520_bl_driver = {
 
 module_platform_driver(adp5520_bl_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("ADP5520(01) Backlight Driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:adp5520-backlight");

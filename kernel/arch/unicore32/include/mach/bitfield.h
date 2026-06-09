@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/mach/bitfield.h
+ * beep/arch/unicore32/include/mach/bitfield.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *

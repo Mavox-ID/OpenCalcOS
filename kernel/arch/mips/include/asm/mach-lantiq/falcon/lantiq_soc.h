@@ -11,7 +11,7 @@
 
 #ifdef CONFIG_SOC_FALCON
 
-#include <linux/pinctrl/pinctrl.h>
+#include <beep/pinctrl/pinctrl.h>
 #include <lantiq.h>
 
 /* Chip IDs */

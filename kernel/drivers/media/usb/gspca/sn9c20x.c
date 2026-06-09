@@ -22,13 +22,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/input.h>
+#include <beep/input.h>
 
 #include "gspca.h"
 #include "jpeg.h"
 
 #include <media/v4l2-chip-ident.h>
-#include <linux/dmi.h>
+#include <beep/dmi.h>
 
 MODULE_AUTHOR("Brian Johnson <brijohn@gmail.com>, "
 		"microdia project <microdia@googlegroups.com>");

@@ -22,15 +22,15 @@
  * This driver is based on max8997.c
  */
 
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/pm_runtime.h>
-#include <linux/module.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/max77686.h>
-#include <linux/mfd/max77686-private.h>
-#include <linux/err.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/pm_runtime.h>
+#include <beep/module.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/max77686.h>
+#include <beep/mfd/max77686-private.h>
+#include <beep/err.h>
 
 #define I2C_ADDR_RTC	(0x0C >> 1)
 

@@ -7,6 +7,6 @@
 #ifndef _BFIN_NMI_H_
 #define _BFIN_NMI_H_
 
-#include <linux/nmi.h>
+#include <beep/nmi.h>
 
 #endif

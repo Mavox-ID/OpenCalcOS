@@ -1,4 +1,4 @@
-AR := "$(shell (which arm-elf-ar arm-none-eabi-ar arm-linux-gnueabi-ar | head -1) 2>/dev/null)"
+AR := "$(shell (which arm-elf-ar arm-none-eabi-ar arm-beep-gnueabi-ar | head -1) 2>/dev/null)"
 GCC = nspire-gcc
 AS = nspire-as
 GXX = nspire-g++

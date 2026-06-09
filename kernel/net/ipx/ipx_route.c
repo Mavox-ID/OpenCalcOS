@@ -7,10 +7,10 @@
  *	See net/ipx/ChangeLog.
  */
 
-#include <linux/list.h>
-#include <linux/route.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/list.h>
+#include <beep/route.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
 #include <net/ipx.h>
 #include <net/sock.h>

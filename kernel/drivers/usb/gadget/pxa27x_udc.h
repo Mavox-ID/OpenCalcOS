@@ -1,5 +1,5 @@
 /*
- * linux/drivers/usb/gadget/pxa27x_udc.h
+ * beep/drivers/usb/gadget/pxa27x_udc.h
  * Intel PXA27x on-chip full speed USB device controller
  *
  * Inspired by original driver by Frank Becker, David Brownell, and others.
@@ -11,13 +11,13 @@
  * (at your option) any later version.
  */
 
-#ifndef __LINUX_USB_GADGET_PXA27X_H
-#define __LINUX_USB_GADGET_PXA27X_H
+#ifndef __BEEP_USB_GADGET_PXA27X_H
+#define __BEEP_USB_GADGET_PXA27X_H
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/usb/otg.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
+#include <beep/usb/otg.h>
 
 /*
  * Register definitions
@@ -493,4 +493,4 @@ static inline struct pxa_udc *to_gadget_udc(struct usb_gadget *gadget)
 #define ep_warn(ep, fmt, arg...) \
 	dev_warn(ep->dev->dev, "%s:%s:" fmt, EPNAME(ep), __func__, ## arg)
 
-#endif /* __LINUX_USB_GADGET_PXA27X_H */
+#endif /* __BEEP_USB_GADGET_PXA27X_H */

@@ -32,8 +32,8 @@
  *    from the Power domain framework
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
 
 #include "clockdomain.h"
 #include "prm2xxx_3xxx.h"

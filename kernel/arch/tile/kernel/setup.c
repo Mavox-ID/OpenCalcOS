@@ -12,25 +12,25 @@
  *   more details.
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mmzone.h>
-#include <linux/bootmem.h>
-#include <linux/module.h>
-#include <linux/node.h>
-#include <linux/cpu.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/kexec.h>
-#include <linux/pci.h>
-#include <linux/swiotlb.h>
-#include <linux/initrd.h>
-#include <linux/io.h>
-#include <linux/highmem.h>
-#include <linux/smp.h>
-#include <linux/timex.h>
-#include <linux/hugetlb.h>
-#include <linux/start_kernel.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mmzone.h>
+#include <beep/bootmem.h>
+#include <beep/module.h>
+#include <beep/node.h>
+#include <beep/cpu.h>
+#include <beep/ioport.h>
+#include <beep/irq.h>
+#include <beep/kexec.h>
+#include <beep/pci.h>
+#include <beep/swiotlb.h>
+#include <beep/initrd.h>
+#include <beep/io.h>
+#include <beep/highmem.h>
+#include <beep/smp.h>
+#include <beep/timex.h>
+#include <beep/hugetlb.h>
+#include <beep/start_kernel.h>
 #include <asm/setup.h>
 #include <asm/sections.h>
 #include <asm/cacheflush.h>
@@ -39,7 +39,7 @@
 #include <hv/hypervisor.h>
 #include <arch/interrupts.h>
 
-/* <linux/smp.h> doesn't provide this definition. */
+/* <beep/smp.h> doesn't provide this definition. */
 #ifndef CONFIG_SMP
 #define setup_max_cpus 1
 #endif
@@ -1105,7 +1105,7 @@ static void __init validate_hv(void)
 	 * We use a struct cpumask for this, so it must be big enough.
 	 */
 	if ((smp_height * smp_width) > nr_cpu_ids)
-		early_panic("Hypervisor %d x %d grid too big for Linux"
+		early_panic("Hypervisor %d x %d grid too big for Beep"
 			    " NR_CPUS %d\n", smp_height, smp_width,
 			    nr_cpu_ids);
 #endif
@@ -1162,7 +1162,7 @@ static void __init validate_va(void)
 	/* Kernel PCs must have their high bit set; see intvec.S. */
 	if ((long)VMALLOC_START >= 0)
 		early_panic(
-			"Linux VMALLOC region below the 2GB line (%#lx)!\n"
+			"Beep VMALLOC region below the 2GB line (%#lx)!\n"
 			"Reconfigure the kernel with fewer NR_HUGE_VMAPS\n"
 			"or smaller VMALLOC_RESERVE.\n",
 			VMALLOC_START);
@@ -1225,7 +1225,7 @@ void __init print_disabled_cpus(void)
 	if (!cpumask_empty(&disabled_map)) {
 		char buf[100];
 		cpulist_scnprintf(buf, sizeof(buf), &disabled_map);
-		pr_info("CPUs not available for Linux: %s\n", buf);
+		pr_info("CPUs not available for Beep: %s\n", buf);
 	}
 }
 

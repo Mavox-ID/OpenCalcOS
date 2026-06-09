@@ -1,4 +1,4 @@
-/* head-mmu-fr451.S: FR451 mmu-linux specific bits of initialisation
+/* head-mmu-fr451.S: FR451 mmu-beep specific bits of initialisation
  *
  * Copyright (C) 2004 Red Hat, Inc. All Rights Reserved.
  * Written by David Howells (dhowells@redhat.com)
@@ -9,9 +9,9 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/threads.h>
-#include <linux/linkage.h>
+#include <beep/init.h>
+#include <beep/threads.h>
+#include <beep/linkage.h>
 #include <asm/ptrace.h>
 #include <asm/page.h>
 #include <asm/mem-layout.h>

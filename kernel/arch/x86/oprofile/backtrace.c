@@ -8,11 +8,11 @@
  * @author David Smith
  */
 
-#include <linux/oprofile.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/compat.h>
-#include <linux/uaccess.h>
+#include <beep/oprofile.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/compat.h>
+#include <beep/uaccess.h>
 
 #include <asm/ptrace.h>
 #include <asm/stacktrace.h>

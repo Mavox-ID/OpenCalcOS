@@ -23,7 +23,7 @@
 
 #ifdef CONFIG_KVM_GUEST
 
-#include <linux/of.h>
+#include <beep/of.h>
 
 static inline int kvm_para_available(void)
 {
@@ -33,7 +33,7 @@ static inline int kvm_para_available(void)
 	if (!hyper_node)
 		return 0;
 
-	if (!of_device_is_compatible(hyper_node, "linux,kvm"))
+	if (!of_device_is_compatible(hyper_node, "beep,kvm"))
 		return 0;
 
 	return 1;

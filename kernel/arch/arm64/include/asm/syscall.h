@@ -16,7 +16,7 @@
 #ifndef __ASM_SYSCALL_H
 #define __ASM_SYSCALL_H
 
-#include <linux/err.h>
+#include <beep/err.h>
 
 
 static inline int syscall_get_nr(struct task_struct *task,

@@ -1,7 +1,7 @@
 #ifndef _SCSI_SCSI_DRIVER_H
 #define _SCSI_SCSI_DRIVER_H
 
-#include <linux/device.h>
+#include <beep/device.h>
 
 struct module;
 struct scsi_cmnd;

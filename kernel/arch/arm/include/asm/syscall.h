@@ -7,10 +7,10 @@
 #ifndef _ASM_ARM_SYSCALL_H
 #define _ASM_ARM_SYSCALL_H
 
-#include <linux/audit.h> /* for AUDIT_ARCH_* */
-#include <linux/elf.h> /* for ELF_EM */
-#include <linux/err.h>
-#include <linux/sched.h>
+#include <beep/audit.h> /* for AUDIT_ARCH_* */
+#include <beep/elf.h> /* for ELF_EM */
+#include <beep/err.h>
+#include <beep/sched.h>
 
 #include <asm/unistd.h>
 

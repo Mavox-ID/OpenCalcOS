@@ -1,7 +1,7 @@
 /*
  * Hexagon VM instruction support
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -18,7 +18,7 @@
  * 02110-1301, USA.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/hexagon_vm.h>
 
 /*

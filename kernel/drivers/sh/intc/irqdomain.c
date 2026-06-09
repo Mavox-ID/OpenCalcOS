@@ -9,9 +9,9 @@
  */
 #define pr_fmt(fmt) "intc: " fmt
 
-#include <linux/irqdomain.h>
-#include <linux/sh_intc.h>
-#include <linux/export.h>
+#include <beep/irqdomain.h>
+#include <beep/sh_intc.h>
+#include <beep/export.h>
 #include "internals.h"
 
 /**

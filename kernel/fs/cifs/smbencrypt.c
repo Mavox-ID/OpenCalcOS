@@ -23,12 +23,12 @@
    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/random.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/random.h>
 #include "cifs_unicode.h"
 #include "cifspdu.h"
 #include "cifsglob.h"

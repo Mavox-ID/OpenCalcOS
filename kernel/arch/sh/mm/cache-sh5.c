@@ -10,9 +10,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
+#include <beep/init.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
 #include <asm/tlb.h>
 #include <asm/processor.h>
 #include <asm/cache.h>

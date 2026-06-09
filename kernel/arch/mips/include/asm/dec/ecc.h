@@ -43,7 +43,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 struct pt_regs;
 

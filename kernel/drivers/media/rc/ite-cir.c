@@ -30,18 +30,18 @@
  * <spmf2004-lirc@yahoo.fr> in 2008.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pnp.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/bitops.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pnp.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/bitops.h>
 #include <media/rc-core.h>
-#include <linux/pci_ids.h>
+#include <beep/pci_ids.h>
 
 #include "ite-cir.h"
 

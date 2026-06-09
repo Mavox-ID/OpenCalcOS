@@ -17,11 +17,11 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/power/smartreflex.h>
+#include <beep/power/smartreflex.h>
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/io.h>
 
 #include "soc.h"
 #include "omap_device.h"

@@ -18,14 +18,14 @@
  *  Setting up the clock on the MIPS boards.
  */
 
-#include <linux/init.h>
-#include <linux/kernel_stat.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/mc146818rtc.h>
-#include <linux/irq.h>
-#include <linux/timex.h>
+#include <beep/init.h>
+#include <beep/kernel_stat.h>
+#include <beep/ptrace.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/mc146818rtc.h>
+#include <beep/irq.h>
+#include <beep/timex.h>
 
 #include <asm/mipsregs.h>
 #include <asm/time.h>

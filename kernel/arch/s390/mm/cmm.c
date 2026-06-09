@@ -6,19 +6,19 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/sched.h>
-#include <linux/sysctl.h>
-#include <linux/ctype.h>
-#include <linux/swap.h>
-#include <linux/kthread.h>
-#include <linux/oom.h>
-#include <linux/suspend.h>
-#include <linux/uaccess.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
+#include <beep/sched.h>
+#include <beep/sysctl.h>
+#include <beep/ctype.h>
+#include <beep/swap.h>
+#include <beep/kthread.h>
+#include <beep/oom.h>
+#include <beep/suspend.h>
+#include <beep/uaccess.h>
 
 #include <asm/pgalloc.h>
 #include <asm/diag.h>

@@ -1,7 +1,7 @@
 /*
  *  Cobalt buttons platform device.
  *
- *  Copyright (C) 2007  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2007  Yoichi Yuasa <yuasa@beep-mips.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -18,9 +18,9 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/platform_device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
+#include <beep/platform_device.h>
+#include <beep/errno.h>
+#include <beep/init.h>
 
 static struct resource cobalt_buttons_resource __initdata = {
 	.start	= 0x1d000000,

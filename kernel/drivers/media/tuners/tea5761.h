@@ -17,7 +17,7 @@
 #ifndef __TEA5761_H__
 #define __TEA5761_H__
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 #include "dvb_frontend.h"
 
 #if defined(CONFIG_MEDIA_TUNER_TEA5761) || (defined(CONFIG_MEDIA_TUNER_TEA5761_MODULE) && defined(MODULE))

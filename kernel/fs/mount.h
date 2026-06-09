@@ -1,6 +1,6 @@
-#include <linux/mount.h>
-#include <linux/seq_file.h>
-#include <linux/poll.h>
+#include <beep/mount.h>
+#include <beep/seq_file.h>
+#include <beep/poll.h>
 
 struct mnt_namespace {
 	atomic_t		count;

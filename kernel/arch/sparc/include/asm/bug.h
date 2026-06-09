@@ -2,7 +2,7 @@
 #define _SPARC_BUG_H
 
 #ifdef CONFIG_BUG
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 #ifdef CONFIG_DEBUG_BUGVERBOSE
 extern void do_BUG(const char *file, int line);

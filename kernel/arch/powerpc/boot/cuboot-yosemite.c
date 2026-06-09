@@ -1,7 +1,7 @@
 /*
  * Old U-boot compatibility for Yosemite
  *
- * Author: Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Author: Josh Boyer <jwboyer@beep.vnet.ibm.com>
  *
  * Copyright 2008 IBM Corporation
  *

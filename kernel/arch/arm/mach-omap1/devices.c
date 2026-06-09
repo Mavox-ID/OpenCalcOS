@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/devices.c
+ * beep/arch/arm/mach-omap1/devices.c
  *
  * OMAP1 platform device setup/initialization
  *
@@ -9,15 +9,15 @@
  * (at your option) any later version.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
+#include <beep/dma-mapping.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
 
-#include <linux/platform_data/omap-wd-timer.h>
+#include <beep/platform_data/omap-wd-timer.h>
 
 #include <asm/mach/map.h>
 

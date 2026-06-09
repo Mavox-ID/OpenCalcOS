@@ -22,13 +22,13 @@
 
 #define pr_fmt(fmt)	"%s: " fmt, __func__
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/zlib.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/net.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/zlib.h>
+#include <beep/vmalloc.h>
+#include <beep/interrupt.h>
+#include <beep/mm.h>
+#include <beep/net.h>
 
 #include <crypto/internal/compress.h>
 

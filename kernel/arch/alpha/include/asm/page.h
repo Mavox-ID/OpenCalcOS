@@ -1,7 +1,7 @@
 #ifndef _ALPHA_PAGE_H
 #define _ALPHA_PAGE_H
 
-#include <linux/const.h>
+#include <beep/const.h>
 #include <asm/pal.h>
 
 /* PAGE_SHIFT determines the page size */

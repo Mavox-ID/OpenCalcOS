@@ -11,16 +11,16 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/threads.h>
-#include <linux/cpumask.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/hardirq.h>
-#include <linux/delay.h>
+#include <beep/errno.h>
+#include <beep/threads.h>
+#include <beep/cpumask.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/ctype.h>
+#include <beep/init.h>
+#include <beep/hardirq.h>
+#include <beep/delay.h>
 
 #include <asm/numachip/numachip.h>
 #include <asm/numachip/numachip_csr.h>

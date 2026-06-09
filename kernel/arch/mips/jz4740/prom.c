@@ -13,12 +13,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/string.h>
 
-#include <linux/serial_reg.h>
+#include <beep/serial_reg.h>
 
 #include <asm/bootinfo.h>
 #include <asm/mach-jz4740/base.h>

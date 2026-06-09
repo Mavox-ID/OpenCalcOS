@@ -11,11 +11,11 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

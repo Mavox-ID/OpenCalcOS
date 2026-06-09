@@ -1,5 +1,5 @@
 /*
- * linux/include/asm-generic/pci.h
+ * beep/include/asm-generic/pci.h
  *
  *  Copyright (C) 2003 Russell King
  */

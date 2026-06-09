@@ -6,7 +6,7 @@
  *  Copyright (C) 2010 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/cpu.h>
+#include <beep/cpu.h>
 #include <lantiq_soc.h>
 
 #define ASC_BUF		1024

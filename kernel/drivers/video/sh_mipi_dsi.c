@@ -8,17 +8,17 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/bitmap.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/module.h>
+#include <beep/bitmap.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/module.h>
 
 #include <video/mipi_display.h>
 #include <video/sh_mipi_dsi.h>

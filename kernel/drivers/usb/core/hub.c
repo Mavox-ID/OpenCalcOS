@@ -8,24 +8,24 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/completion.h>
-#include <linux/sched.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/ioctl.h>
-#include <linux/usb.h>
-#include <linux/usbdevice_fs.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/quirks.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/freezer.h>
-#include <linux/random.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/completion.h>
+#include <beep/sched.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/ioctl.h>
+#include <beep/usb.h>
+#include <beep/usbdevice_fs.h>
+#include <beep/usb/hcd.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/quirks.h>
+#include <beep/kthread.h>
+#include <beep/mutex.h>
+#include <beep/freezer.h>
+#include <beep/random.h>
 
 #include <asm/uaccess.h>
 #include <asm/byteorder.h>
@@ -1977,7 +1977,7 @@ EXPORT_SYMBOL_GPL(usb_set_device_state);
  *
  * We add 1 as an offset to the one-based USB-stack port number
  * (zero-based wusb virtual port index) for two reasons: (a) dev addr
- * 0 is reserved by USB for default address; (b) Linux's USB stack
+ * 0 is reserved by USB for default address; (b) Beep's USB stack
  * uses always #1 for the root hub of the controller. So USB stack's
  * port #1, which is wusb virtual-port #0 has address #2.
  *
@@ -2876,7 +2876,7 @@ EXPORT_SYMBOL_GPL(usb_enable_ltm);
  * Once VBUS drop breaks the circuit, the port it's using has to go through
  * normal re-enumeration procedures, starting with enabling VBUS power.
  * Other than re-initializing the hub (plug/unplug, except for root hubs),
- * Linux (2.6) currently has NO mechanisms to initiate that:  no khubd
+ * Beep (2.6) currently has NO mechanisms to initiate that:  no khubd
  * timer, no SRP, no requests through sysfs.
  *
  * If CONFIG_USB_SUSPEND isn't enabled, devices only really suspend when
@@ -3007,7 +3007,7 @@ static int finish_port_resume(struct usb_device *udev)
 		udev->reset_resume ? "finish reset-resume" : "finish resume");
 
 	/* usb ch9 identifies four variants of SUSPENDED, based on what
-	 * state the device resumes to.  Linux currently won't see the
+	 * state the device resumes to.  Beep currently won't see the
 	 * first two on the host side; they'd be inside hub_port_init()
 	 * during many timeouts, but khubd can't suspend until later.
 	 */
@@ -3983,7 +3983,7 @@ hub_port_init (struct usb_hub *hub, struct usb_device *udev, int port1,
  
 	/* Why interleave GET_DESCRIPTOR and SET_ADDRESS this way?
 	 * Because device hardware and firmware is sometimes buggy in
-	 * this area, and this is how Linux has done it for ages.
+	 * this area, and this is how Beep has done it for ages.
 	 * Change it cautiously.
 	 *
 	 * NOTE:  If USE_NEW_SCHEME() is true we will start by issuing

@@ -6,9 +6,9 @@
  * Copyright (C) 1998-2000  Jens Axboe <axboe@suse.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/cdrom.h>
+#include <beep/kernel.h>
+#include <beep/blkdev.h>
+#include <beep/cdrom.h>
 #include <scsi/scsi.h>
 
 #ifndef CONFIG_BLK_DEV_IDECD_VERBOSE_ERRORS

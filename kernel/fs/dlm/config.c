@@ -11,13 +11,13 @@
 *******************************************************************************
 ******************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/configfs.h>
-#include <linux/slab.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/dlmconstants.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/configfs.h>
+#include <beep/slab.h>
+#include <beep/in.h>
+#include <beep/in6.h>
+#include <beep/dlmconstants.h>
 #include <net/ipv6.h>
 #include <net/sock.h>
 

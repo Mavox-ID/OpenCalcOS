@@ -14,11 +14,11 @@
  * CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/usb.h>
-#include <linux/vmalloc.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/firmware.h>
+#include <beep/usb.h>
+#include <beep/vmalloc.h>
 
 #include <brcmu_utils.h>
 #include <brcmu_wifi.h>

@@ -31,9 +31,9 @@
  *
  */
 
-#include <linux/mlx4/cq.h>
-#include <linux/mlx4/qp.h>
-#include <linux/mlx4/cmd.h>
+#include <beep/mlx4/cq.h>
+#include <beep/mlx4/qp.h>
+#include <beep/mlx4/cmd.h>
 
 #include "mlx4_en.h"
 

@@ -13,19 +13,19 @@
  * more details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
 
 #include <pcmcia/ss.h>
 
 #include <asm/irq.h>
 
-#include <linux/platform_data/pcmcia-pxa2xx_viper.h>
+#include <beep/platform_data/pcmcia-pxa2xx_viper.h>
 
 #include "soc_common.h"
 #include "pxa2xx_base.h"

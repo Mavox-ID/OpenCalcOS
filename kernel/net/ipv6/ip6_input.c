@@ -1,12 +1,12 @@
 /*
  *	IPv6 input
- *	Linux INET6 implementation
+ *	Beep INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *	Ian P. Morris		<I.P.Morris@soton.ac.uk>
  *
- *	Based in linux/net/ipv4/ip_input.c
+ *	Based in beep/net/ipv4/ip_input.c
  *
  *	This program is free software; you can redistribute it and/or
  *      modify it under the terms of the GNU General Public License
@@ -19,19 +19,19 @@
  * 	YOSHIFUJI Hideaki @USAGI: Remove ipv6_parse_exthdrs().
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/in6.h>
-#include <linux/icmpv6.h>
-#include <linux/mroute6.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/netdevice.h>
+#include <beep/in6.h>
+#include <beep/icmpv6.h>
+#include <beep/mroute6.h>
+#include <beep/slab.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv6.h>
 
 #include <net/sock.h>
 #include <net/snmp.h>

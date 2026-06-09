@@ -8,19 +8,19 @@
  *
  *  Todo: - add support for the OF persistent properties
  */
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/nvram.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/bootmem.h>
-#include <linux/completion.h>
-#include <linux/spinlock.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/stddef.h>
+#include <beep/string.h>
+#include <beep/nvram.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/adb.h>
+#include <beep/pmu.h>
+#include <beep/bootmem.h>
+#include <beep/completion.h>
+#include <beep/spinlock.h>
 #include <asm/sections.h>
 #include <asm/io.h>
 #include <asm/prom.h>

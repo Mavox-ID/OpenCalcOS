@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/lib/copypage-armv4mc.S
+ *  beep/arch/arm/lib/copypage-armv4mc.S
  *
  *  Copyright (C) 1995-2005 Russell King
  *
@@ -13,9 +13,9 @@
  * will be cached in the mini data cache.  This prevents us thrashing
  * the main data cache on page faults.
  */
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
 
 #include <asm/pgtable.h>
 #include <asm/tlbflush.h>

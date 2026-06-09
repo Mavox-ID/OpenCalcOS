@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/mcbsp.c
+ * beep/arch/arm/mach-omap2/mcbsp.c
  *
  * Copyright (C) 2008 Instituto Nokia de Tecnologia
  * Contact: Eduardo Valentin <eduardo.valentin@indt.org.br>
@@ -10,18 +10,18 @@
  *
  * Multichannel mode not supported.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/platform_data/asoc-ti-mcbsp.h>
-#include <linux/pm_runtime.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/platform_data/asoc-ti-mcbsp.h>
+#include <beep/pm_runtime.h>
 
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 
 #include "omap_device.h"
 

@@ -28,11 +28,11 @@
 #ifndef __IXGBE_VF_H__
 #define __IXGBE_VF_H__
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/if_ether.h>
+#include <beep/netdevice.h>
 
 #include "defines.h"
 #include "regs.h"

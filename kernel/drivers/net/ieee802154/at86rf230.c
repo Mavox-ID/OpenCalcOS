@@ -20,17 +20,17 @@
  * Dmitry Eremin-Solenikov <dbaryshkov@gmail.com>
  * Alexander Smirnov <alex.bluesman.smirnov@gmail.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/at86rf230.h>
-#include <linux/skbuff.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
+#include <beep/spinlock.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/at86rf230.h>
+#include <beep/skbuff.h>
 
 #include <net/mac802154.h>
 #include <net/wpan-phy.h>

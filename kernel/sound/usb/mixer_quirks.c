@@ -25,10 +25,10 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/usb/audio.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

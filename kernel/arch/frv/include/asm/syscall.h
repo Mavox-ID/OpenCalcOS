@@ -12,7 +12,7 @@
 #ifndef _ASM_SYSCALL_H
 #define _ASM_SYSCALL_H
 
-#include <linux/err.h>
+#include <beep/err.h>
 #include <asm/ptrace.h>
 
 /*

@@ -15,8 +15,8 @@
 #ifndef __AA_MATCH_H
 #define __AA_MATCH_H
 
-#include <linux/kref.h>
-#include <linux/workqueue.h>
+#include <beep/kref.h>
+#include <beep/workqueue.h>
 
 #define DFA_NOMATCH			0
 #define DFA_START			1

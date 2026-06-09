@@ -1,12 +1,12 @@
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/cryptohash.h>
-#include <linux/module.h>
-#include <linux/cache.h>
-#include <linux/random.h>
-#include <linux/hrtimer.h>
-#include <linux/ktime.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/cryptohash.h>
+#include <beep/module.h>
+#include <beep/cache.h>
+#include <beep/random.h>
+#include <beep/hrtimer.h>
+#include <beep/ktime.h>
+#include <beep/string.h>
 
 #include <net/secure_seq.h>
 

@@ -8,22 +8,22 @@
 #define DRIVER_NAME "bfin-lq035q1"
 #define pr_fmt(fmt) DRIVER_NAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/fb.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/backlight.h>
-#include <linux/lcd.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/fb.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/backlight.h>
+#include <beep/lcd.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
 
 #include <asm/blackfin.h>
 #include <asm/irq.h>
@@ -66,7 +66,7 @@
 
 
 /* Interface 16/18-bit TFT over an 8-bit wide PPI using a small Programmable Logic Device (CPLD)
- * http://blackfin.uclinux.org/gf/project/stamp/frs/?action=FrsReleaseBrowse&frs_package_id=165
+ * http://blackfin.ucbeep.org/gf/project/stamp/frs/?action=FrsReleaseBrowse&frs_package_id=165
  */
 
 
@@ -213,7 +213,7 @@ static int bfin_lq035q1_calc_timing(struct bfin_lq035q1fb_info *fbi)
 	/*
 	 * Interface 16/18-bit TFT over an 8-bit wide PPI using a small
 	 * Programmable Logic Device (CPLD)
-	 * http://blackfin.uclinux.org/gf/project/stamp/frs/?action=FrsReleaseBrowse&frs_package_id=165
+	 * http://blackfin.ucbeep.org/gf/project/stamp/frs/?action=FrsReleaseBrowse&frs_package_id=165
 	 */
 
 	switch (fbi->disp_info->ppi_mode) {

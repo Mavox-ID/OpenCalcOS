@@ -5,10 +5,10 @@
  *
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/serial_reg.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/serial_reg.h>
+#include <beep/io.h>
 
 #define SEAD_UART1_REGS_BASE    0xbf000800   /* ttyS1 = DB9 port */
 #define SEAD_UART0_REGS_BASE    0xbf000900   /* ttyS0 = USB port   */

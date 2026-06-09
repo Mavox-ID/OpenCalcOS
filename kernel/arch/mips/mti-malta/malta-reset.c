@@ -22,8 +22,8 @@
  * Reset the MIPS boards.
  *
  */
-#include <linux/init.h>
-#include <linux/pm.h>
+#include <beep/init.h>
+#include <beep/pm.h>
 
 #include <asm/io.h>
 #include <asm/reboot.h>

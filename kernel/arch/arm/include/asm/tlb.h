@@ -21,7 +21,7 @@
 
 #ifndef CONFIG_MMU
 
-#include <linux/pagemap.h>
+#include <beep/pagemap.h>
 
 #define tlb_flush(tlb)	((void) tlb)
 
@@ -29,7 +29,7 @@
 
 #else /* !CONFIG_MMU */
 
-#include <linux/swap.h>
+#include <beep/swap.h>
 #include <asm/pgalloc.h>
 #include <asm/tlbflush.h>
 

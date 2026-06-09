@@ -16,23 +16,23 @@
  * Inc.,  51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 #include "xfs.h"
-#include <linux/stddef.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/bio.h>
-#include <linux/sysctl.h>
-#include <linux/proc_fs.h>
-#include <linux/workqueue.h>
-#include <linux/percpu.h>
-#include <linux/blkdev.h>
-#include <linux/hash.h>
-#include <linux/kthread.h>
-#include <linux/migrate.h>
-#include <linux/backing-dev.h>
-#include <linux/freezer.h>
+#include <beep/stddef.h>
+#include <beep/errno.h>
+#include <beep/gfp.h>
+#include <beep/pagemap.h>
+#include <beep/init.h>
+#include <beep/vmalloc.h>
+#include <beep/bio.h>
+#include <beep/sysctl.h>
+#include <beep/proc_fs.h>
+#include <beep/workqueue.h>
+#include <beep/percpu.h>
+#include <beep/blkdev.h>
+#include <beep/hash.h>
+#include <beep/kthread.h>
+#include <beep/migrate.h>
+#include <beep/backing-dev.h>
+#include <beep/freezer.h>
 
 #include "xfs_sb.h"
 #include "xfs_log.h"

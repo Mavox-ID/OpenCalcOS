@@ -3,13 +3,13 @@
  * It does not support slave mode, the register slightly moved. This PCI
  * device provides three bars, every contains a single I2C controller.
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/i2c/pxa-i2c.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/platform_device.h>
+#include <beep/i2c/pxa-i2c.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_address.h>
 
 #define CE4100_PCI_I2C_DEVS	3
 

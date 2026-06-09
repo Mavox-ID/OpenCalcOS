@@ -15,19 +15,19 @@
  * option) any later version.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/rio.h>
-#include <linux/rio_drv.h>
-#include <linux/rio_ids.h>
-#include <linux/rio_regs.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/rio.h>
+#include <beep/rio_drv.h>
+#include <beep/rio_ids.h>
+#include <beep/rio_regs.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
 
 #include "rio.h"
 

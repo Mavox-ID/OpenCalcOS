@@ -10,15 +10,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/mfd/mc13892.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/driver.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <beep/mfd/mc13892.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/driver.h>
+#include <beep/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/module.h>
 #include "mc13xxx.h"
 
 #define MC13892_REVISION			7

@@ -4,7 +4,7 @@
  * SPEAr3xx Machine family specific definition
  *
  * Copyright (C) 2009 ST Microelectronics
- * Viresh Kumar <viresh.linux@gmail.com>
+ * Viresh Kumar <viresh.beep@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
@@ -36,7 +36,7 @@
 #define SPEAR3XX_ICM3_MISC_REG_BASE	UL(0xFCA80000)
 #define VA_SPEAR3XX_ICM3_MISC_REG_BASE	(VA_SPEAR3XX_ICM3_SMI_CTRL_BASE | SPEAR3XX_ICM3_MISC_REG_BASE)
 
-/* Debug uart for linux, will be used for debug and uncompress messages */
+/* Debug uart for beep, will be used for debug and uncompress messages */
 #define SPEAR_DBG_UART_BASE		SPEAR3XX_ICM1_UART_BASE
 #define VA_SPEAR_DBG_UART_BASE		VA_SPEAR3XX_ICM1_UART_BASE
 

@@ -6,16 +6,16 @@
  * Licensed under GPLv2 or later.
  */
 
-#include <linux/kernel.h>
-#include <linux/suspend.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
-#include <linux/rtc/sirfsoc_rtciobrg.h>
+#include <beep/kernel.h>
+#include <beep/suspend.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
+#include <beep/io.h>
+#include <beep/rtc/sirfsoc_rtciobrg.h>
 #include <asm/suspend.h>
 #include <asm/hardware/cache-l2x0.h>
 

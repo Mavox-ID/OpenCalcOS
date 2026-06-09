@@ -12,7 +12,7 @@
 #ifndef _ASM_C6X_UNALIGNED_H
 #define _ASM_C6X_UNALIGNED_H
 
-#include <linux/swab.h>
+#include <beep/swab.h>
 
 /*
  * The C64x+ can do unaligned word and dword accesses in hardware

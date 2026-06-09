@@ -1,7 +1,7 @@
 /*
  * run-init implementation for busybox
  *
- * Copyright (c) 2017 Denys Vlasenko <vda.linux@gmail.com>
+ * Copyright (c) 2017 Denys Vlasenko <vda.beep@gmail.com>
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
@@ -20,7 +20,7 @@
 //config:	does a mount --move that overmounts rootfs with the new root, and
 //config:	then execs the specified init program.
 //config:
-//config:	util-linux has a similar tool, switch-root.
+//config:	util-beep has a similar tool, switch-root.
 //config:	run-init differs by also having a "-d CAPS_TO_DROP" option.
 
 /* applet and kbuild hooks are in switch_root.c */

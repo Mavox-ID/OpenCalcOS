@@ -17,26 +17,26 @@
  * 08/12/11 beckyb	Add highmem support
  */
 
-#include <linux/cache.h>
-#include <linux/dma-mapping.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/swiotlb.h>
-#include <linux/pfn.h>
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/highmem.h>
-#include <linux/gfp.h>
+#include <beep/cache.h>
+#include <beep/dma-mapping.h>
+#include <beep/mm.h>
+#include <beep/export.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/swiotlb.h>
+#include <beep/pfn.h>
+#include <beep/types.h>
+#include <beep/ctype.h>
+#include <beep/highmem.h>
+#include <beep/gfp.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>
 #include <asm/scatterlist.h>
 
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/iommu-helper.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/iommu-helper.h>
 
 #define OFFSET(val,align) ((unsigned long)	\
 	                   ( (val) & ( (align) - 1)))

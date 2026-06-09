@@ -1,13 +1,13 @@
 /*
- *  linux/arch/arm/mm/iomap.c
+ *  beep/arch/arm/mm/iomap.c
  *
  * Map IO port and PCI memory spaces so that {read,write}[bwl] can
  * be used to access this memory.
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
 
 unsigned long vga_base;
 EXPORT_SYMBOL(vga_base);

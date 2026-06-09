@@ -1,5 +1,5 @@
 /*
- * Line6 Linux USB driver - 0.9.1beta
+ * Line6 Beep USB driver - 0.9.1beta
  *
  * Copyright (C) 2004-2010 Markus Grabner (grabner@icg.tugraz.at)
  *
@@ -27,7 +27,7 @@
 /*
 	number of USB frames per URB
 	The Line6 Windows driver always transmits two frames per packet, but
-	the Linux driver performs significantly better (i.e., lower latency)
+	the Beep driver performs significantly better (i.e., lower latency)
 	with only one frame per packet.
 */
 #define LINE6_ISO_PACKETS	1

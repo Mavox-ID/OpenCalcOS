@@ -1,7 +1,7 @@
 /* arch/arm/plat-samsung/include/plat/debug-macro.S
  *
  * Copyright 2005, 2007 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * This program is free software; you can redistribute it and/or modify

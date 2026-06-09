@@ -1,39 +1,39 @@
-/* linux/arch/arm/mach-s3c2410/mach-jive.c
+/* beep/arch/arm/mach-s3c2410/mach-jive.c
  *
  * Copyright 2007 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
  *
- * http://armlinux.simtec.co.uk/
+ * http://armbeep.simtec.co.uk/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/syscore_ops.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/syscore_ops.h>
+#include <beep/serial_core.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
 
 #include <video/ili9320.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_gpio.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_gpio.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 #include <asm/mach/irq.h>
 
 #include <plat/regs-serial.h>
-#include <linux/platform_data/mtd-nand-s3c2410.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/mtd-nand-s3c2410.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 
 #include <mach/regs-power.h>
 #include <mach/regs-gpio.h>
@@ -43,10 +43,10 @@
 
 #include <asm/mach-types.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand_ecc.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/nand_ecc.h>
+#include <beep/mtd/partitions.h>
 
 #include <plat/s3c2412.h>
 #include <plat/gpio-cfg.h>
@@ -54,7 +54,7 @@
 #include <plat/devs.h>
 #include <plat/cpu.h>
 #include <plat/pm.h>
-#include <linux/platform_data/usb-s3c2410_udc.h>
+#include <beep/platform_data/usb-s3c2410_udc.h>
 
 static struct map_desc jive_iodesc[] __initdata = {
 };
@@ -101,7 +101,7 @@ static struct s3c2410_uartcfg jive_uartcfgs[] = {
 static struct mtd_partition __initdata jive_imageA_nand_part[] = {
 
 #ifdef CONFIG_MACH_JIVE_SHOW_BOOTLOADER
-	/* Don't allow access to the bootloader from linux */
+	/* Don't allow access to the bootloader from beep */
 	{
 		.name           = "uboot",
 		.offset         = 0,
@@ -159,7 +159,7 @@ static struct mtd_partition __initdata jive_imageA_nand_part[] = {
 static struct mtd_partition __initdata jive_imageB_nand_part[] = {
 
 #ifdef CONFIG_MACH_JIVE_SHOW_BOOTLOADER
-	/* Don't allow access to the bootloader from linux */
+	/* Don't allow access to the bootloader from beep */
 	{
 		.name           = "uboot",
 		.offset         = 0,
@@ -655,7 +655,7 @@ static void __init jive_machine_init(void)
 }
 
 MACHINE_START(JIVE, "JIVE")
-	/* Maintainer: Ben Dooks <ben-linux@fluff.org> */
+	/* Maintainer: Ben Dooks <ben-beep@fluff.org> */
 	.atag_offset	= 0x100,
 
 	.init_irq	= s3c24xx_init_irq,

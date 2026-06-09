@@ -12,15 +12,15 @@
  *
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/types.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/module.h>
 #include <net/ip.h>
-#include <linux/ipv6.h>
+#include <beep/ipv6.h>
 #include <net/ipv6.h>
 #include <net/mip6.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv6/ip6t_mh.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_ipv6/ip6t_mh.h>
 
 MODULE_DESCRIPTION("Xtables: IPv6 Mobility Header match");
 MODULE_LICENSE("GPL");

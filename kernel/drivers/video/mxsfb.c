@@ -39,16 +39,16 @@
  * the required value in the imx_fb_videomode structure.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/mxsfb.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/of_device.h>
+#include <beep/of_gpio.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/dma-mapping.h>
+#include <beep/io.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/mxsfb.h>
 
 #define REG_SET	4
 #define REG_CLR	8

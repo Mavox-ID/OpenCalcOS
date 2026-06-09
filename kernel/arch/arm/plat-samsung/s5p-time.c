@@ -9,12 +9,12 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/clockchips.h>
+#include <beep/platform_device.h>
 
 #include <asm/smp_twd.h>
 #include <asm/mach/time.h>

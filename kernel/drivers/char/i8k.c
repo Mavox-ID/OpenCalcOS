@@ -1,12 +1,12 @@
 /*
- * i8k.c -- Linux driver for accessing the SMM BIOS on Dell laptops.
+ * i8k.c -- Beep driver for accessing the SMM BIOS on Dell laptops.
  *	    See http://www.debian.org/~dz/i8k/ for more information
  *	    and for latest version of this driver.
  *
  * Copyright (C) 2001  Massimo Dal Zotto <dz@debian.org>
  *
  * Hwmon integration:
- * Copyright (C) 2011  Jean Delvare <khali@linux-fr.org>
+ * Copyright (C) 2011  Jean Delvare <khali@beep-fr.org>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -19,20 +19,20 @@
  * General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/dmi.h>
-#include <linux/capability.h>
-#include <linux/mutex.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/dmi.h>
+#include <beep/capability.h>
+#include <beep/mutex.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
 #include <asm/uaccess.h>
 #include <asm/io.h>
 
-#include <linux/i8k.h>
+#include <beep/i8k.h>
 
 #define I8K_VERSION		"1.14 21/02/2005"
 

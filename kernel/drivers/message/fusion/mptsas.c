@@ -1,10 +1,10 @@
 /*
- *  linux/drivers/message/fusion/mptsas.c
+ *  beep/drivers/message/fusion/mptsas.c
  *      For use with LSI PCI chip/adapter(s)
  *      running LSI Fusion MPT (Message Passing Technology) firmware.
  *
  *  Copyright (c) 1999-2008 LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionBeep@lsi.com)
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 /*
@@ -43,14 +43,14 @@
 */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/jiffies.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>	/* for mdelay */
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/jiffies.h>
+#include <beep/workqueue.h>
+#include <beep/delay.h>	/* for mdelay */
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -66,7 +66,7 @@
 
 
 #define my_NAME		"Fusion MPT SAS Host driver"
-#define my_VERSION	MPT_LINUX_VERSION_COMMON
+#define my_VERSION	MPT_BEEP_VERSION_COMMON
 #define MYNAM		"mptsas"
 
 /*

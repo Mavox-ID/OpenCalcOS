@@ -1,7 +1,7 @@
 /*
  * ip_vs_est.c: simple rate estimator for IPVS
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@beepvirtualserver.org>
  *
  *              This program is free software; you can redistribute it and/or
  *              modify it under the terms of the GNU General Public License
@@ -19,12 +19,12 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/sysctl.h>
-#include <linux/list.h>
+#include <beep/kernel.h>
+#include <beep/jiffies.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/sysctl.h>
+#include <beep/list.h>
 
 #include <net/ip_vs.h>
 

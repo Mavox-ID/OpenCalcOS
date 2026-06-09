@@ -14,9 +14,9 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <asm/io.h>
-#include <linux/hdlc.h>
+#include <beep/hdlc.h>
 #include "pmcc4_sysdep.h"
-#include "sbecom_inline_linux.h"
+#include "sbecom_inline_beep.h"
 #include "libsbew.h"
 #include "pmcc4.h"
 #include "comet.h"

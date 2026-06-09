@@ -4,9 +4,9 @@
 #if !defined(_TRACE_SUNRPC_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_SUNRPC_H
 
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/tracepoint.h>
+#include <beep/sunrpc/sched.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/tracepoint.h>
 
 DECLARE_EVENT_CLASS(rpc_task_status,
 

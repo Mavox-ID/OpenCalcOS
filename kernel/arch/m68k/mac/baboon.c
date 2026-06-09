@@ -6,9 +6,9 @@
  * Nubus slot $C interrupt.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/irq.h>
 
 #include <asm/macintosh.h>
 #include <asm/macints.h>

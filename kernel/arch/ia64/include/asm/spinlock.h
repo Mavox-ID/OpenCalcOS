@@ -4,16 +4,16 @@
 /*
  * Copyright (C) 1998-2003 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 Walt Drummond <drummond@vabeep.com>
  *
  * This file is used for SMP configurations only.
  */
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
+#include <beep/compiler.h>
+#include <beep/kernel.h>
+#include <beep/bitops.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/intrinsics.h>
 
 #define arch_spin_lock_init(x)			((x)->lock = 0)

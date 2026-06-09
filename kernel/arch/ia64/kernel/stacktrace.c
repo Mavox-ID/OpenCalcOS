@@ -4,9 +4,9 @@
  * Stack trace management functions
  *
  */
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
-#include <linux/module.h>
+#include <beep/sched.h>
+#include <beep/stacktrace.h>
+#include <beep/module.h>
 
 static void
 ia64_do_save_stack(struct unw_frame_info *info, void *arg)

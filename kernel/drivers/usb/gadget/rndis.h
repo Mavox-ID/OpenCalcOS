@@ -12,10 +12,10 @@
  *		Microsoft's Remote NDIS Specification License Agreement.
  */
 
-#ifndef _LINUX_RNDIS_H
-#define _LINUX_RNDIS_H
+#ifndef _BEEP_RNDIS_H
+#define _BEEP_RNDIS_H
 
-#include <linux/rndis.h>
+#include <beep/rndis.h>
 #include "ndis.h"
 
 #define RNDIS_MAXIMUM_FRAME_SIZE	1518
@@ -219,4 +219,4 @@ extern void rndis_set_host_mac (int configNr, const u8 *addr);
 int rndis_init(void);
 void rndis_exit (void);
 
-#endif  /* _LINUX_RNDIS_H */
+#endif  /* _BEEP_RNDIS_H */

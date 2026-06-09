@@ -1,6 +1,6 @@
 #ifndef __ASM_MACH_INTC_H
 #define __ASM_MACH_INTC_H
-#include <linux/sh_intc.h>
+#include <beep/sh_intc.h>
 
 #define INTC_IRQ_PINS_ENUM_16L(p)				\
 	p ## _IRQ0, p ## _IRQ1, p ## _IRQ2, p ## _IRQ3,		\

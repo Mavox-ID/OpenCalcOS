@@ -14,24 +14,24 @@
  */
 
 #include <asm/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/in.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/init.h>
-#include <linux/rbtree.h>
-#include <linux/slab.h>
+#include <beep/bitops.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/jiffies.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/in.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/rtnetlink.h>
+#include <beep/init.h>
+#include <beep/rbtree.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 #include <net/gen_stats.h>
 

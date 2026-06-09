@@ -14,14 +14,14 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  *  Copyright (C) 2001 Rusty Russell.
- *  Copyright (C) 2003, 2004 Ralf Baechle (ralf@linux-mips.org)
+ *  Copyright (C) 2003, 2004 Ralf Baechle (ralf@beep-mips.org)
  *  Copyright (C) 2005 Thiemo Seufer
  */
 
-#include <linux/elf.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/moduleloader.h>
+#include <beep/elf.h>
+#include <beep/err.h>
+#include <beep/errno.h>
+#include <beep/moduleloader.h>
 
 extern int apply_r_mips_none(struct module *me, u32 *location, Elf_Addr v);
 

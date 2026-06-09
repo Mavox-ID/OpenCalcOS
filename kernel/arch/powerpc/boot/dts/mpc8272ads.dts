@@ -216,7 +216,7 @@
 				interrupts = <32 8>;
 				interrupt-parent = <&PIC>;
 				phy-handle = <&PHY0>;
-				linux,network-index = <0>;
+				beep,network-index = <0>;
 				fsl,cpm-command = <0x12000300>;
 			};
 
@@ -229,7 +229,7 @@
 				interrupts = <33 8>;
 				interrupt-parent = <&PIC>;
 				phy-handle = <&PHY1>;
-				linux,network-index = <1>;
+				beep,network-index = <1>;
 				fsl,cpm-command = <0x16200300>;
 			};
 
@@ -265,6 +265,6 @@
 	};
 
 	chosen {
-		linux,stdout-path = "/soc/cpm/serial@11a00";
+		beep,stdout-path = "/soc/cpm/serial@11a00";
 	};
 };

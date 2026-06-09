@@ -19,7 +19,7 @@
  *
  */
 
-#include <linux/i2c-omap.h>
+#include <beep/i2c-omap.h>
 #include <mach/mux.h>
 #include "soc.h"
 

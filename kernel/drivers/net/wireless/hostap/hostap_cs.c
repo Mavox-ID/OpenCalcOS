@@ -1,15 +1,15 @@
 #define PRISM2_PCCARD
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/if.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/timer.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/workqueue.h>
-#include <linux/wireless.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/if.h>
+#include <beep/slab.h>
+#include <beep/wait.h>
+#include <beep/timer.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/workqueue.h>
+#include <beep/wireless.h>
 #include <net/iw_handler.h>
 
 #include <pcmcia/cistpl.h>

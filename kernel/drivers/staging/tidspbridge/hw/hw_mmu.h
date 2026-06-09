@@ -19,7 +19,7 @@
 #ifndef _HW_MMU_H
 #define _HW_MMU_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* Bitmasks for interrupt sources */
 #define HW_MMU_TRANSLATION_FAULT   0x2

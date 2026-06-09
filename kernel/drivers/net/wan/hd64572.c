@@ -1,5 +1,5 @@
 /*
- * Hitachi (now Renesas) SCA-II HD64572 driver for Linux
+ * Hitachi (now Renesas) SCA-II HD64572 driver for Beep
  *
  * Copyright (C) 1998-2008 Krzysztof Halasa <khc@pm.waw.pl>
  *
@@ -24,21 +24,21 @@
  * tx_ring_buffers * HDLC_MAX_MRU     = logical channel #0 TX buffers (if used)
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/hdlc.h>
-#include <linux/in.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <beep/bitops.h>
+#include <beep/errno.h>
+#include <beep/fcntl.h>
+#include <beep/hdlc.h>
+#include <beep/in.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/string.h>
+#include <beep/types.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
 #include "hd64572.h"

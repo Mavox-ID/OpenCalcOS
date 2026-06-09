@@ -20,16 +20,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/suspend.h>
-#include <linux/connector.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/workqueue.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/skbuff.h>
+#include <beep/suspend.h>
+#include <beep/connector.h>
+#include <beep/delay.h>
 
 static struct cn_callback_entry *
 cn_queue_alloc_callback_entry(struct cn_queue_dev *dev, const char *name,

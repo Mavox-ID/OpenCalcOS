@@ -9,8 +9,8 @@
  * published by the Free Software Foundation.
  */
 
-#ifndef __LINUX_SND_SOC_PCM3008_H
-#define __LINUX_SND_SOC_PCM3008_H
+#ifndef __BEEP_SND_SOC_PCM3008_H
+#define __BEEP_SND_SOC_PCM3008_H
 
 struct pcm3008_setup_data {
 	unsigned dem0_pin;

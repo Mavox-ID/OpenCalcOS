@@ -1,7 +1,7 @@
 #ifndef __ASM_AVR32_ARCH_GPIO_H
 #define __ASM_AVR32_ARCH_GPIO_H
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/irq.h>
 
 

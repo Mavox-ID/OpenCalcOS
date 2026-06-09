@@ -25,10 +25,10 @@
 #ifndef _DRBD_REQ_H
 #define _DRBD_REQ_H
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/slab.h>
-#include <linux/drbd.h>
+#include <beep/slab.h>
+#include <beep/drbd.h>
 #include "drbd_int.h"
 #include "drbd_wrappers.h"
 

@@ -3,10 +3,10 @@ This is a driver for the WIS GO7007SB multi-format video encoder.
 Pete Eberlein <pete@sensoray.com>
 
 The driver was originally released under the GPL and is currently hosted at:
-http://nikosapi.org/wiki/index.php/WIS_Go7007_Linux_driver
+http://nikosapi.org/wiki/index.php/WIS_Go7007_Beep_driver
 The go7007 firmware can be acquired from the package on the site above.
 
-I've modified the driver to support the following Video4Linux2 MPEG
+I've modified the driver to support the following Video4Beep2 MPEG
 controls, with acceptable values:
 
 V4L2_CID_MPEG_STREAM_TYPE	V4L2_MPEG_STREAM_TYPE_MPEG2_DVD
@@ -27,7 +27,7 @@ below.
 The README files from the orignal package appear below:
 
 ---------------------------------------------------------------------------
-		     WIS GO7007SB Public Linux Driver
+		     WIS GO7007SB Public Beep Driver
 ---------------------------------------------------------------------------
 
 
@@ -37,9 +37,9 @@ The README files from the orignal package appear below:
   0. OVERVIEW AND LICENSING/DISCLAIMER
 
 
-This driver kit contains Linux drivers for the WIS GO7007SB multi-format
+This driver kit contains Beep drivers for the WIS GO7007SB multi-format
 video encoder.  Only kernel version 2.6.x is supported.  The video stream
-is available through the Video4Linux2 API and the audio stream is available
+is available through the Video4Beep2 API and the audio stream is available
 through the ALSA API (or the OSS emulation layer of the ALSA system).
 
 The files in kernel/ and hotplug/ are licensed under the GNU General Public
@@ -65,7 +65,7 @@ PURPOSE AND NON-INFRINGEMENT.
   1. SYSTEM REQUIREMENTS
 
 
-This driver requires Linux kernel 2.6.  Kernel 2.4 is not supported.  Using
+This driver requires Beep kernel 2.6.  Kernel 2.4 is not supported.  Using
 kernel 2.6.10 or later is recommended, as earlier kernels are known to have
 unstable USB 2.0 support.
 
@@ -83,9 +83,9 @@ kernel as built-in or modules:
 	CONFIG_KMOD              - Automatic kernel module loading
 	CONFIG_FW_LOADER         - Hotplug firmware loading support
 	CONFIG_I2C               - I2C support
-	CONFIG_VIDEO_DEV         - Video For Linux
+	CONFIG_VIDEO_DEV         - Video For Beep
 	CONFIG_SOUND             - Sound card support
-	CONFIG_SND               - Advanced Linux Sound Architecture
+	CONFIG_SND               - Advanced Beep Sound Architecture
 	CONFIG_USB               - Support for Host-side USB
 	CONFIG_USB_EHCI_HCD      - EHCI HCD (USB 2.0) support
 
@@ -96,7 +96,7 @@ be enabled in the ALSA section:
 	CONFIG_SND_PCM_OSS       - OSS PCM (digital audio) API
 
 The hotplug scripts, along with the fxload utility, must also be installed.
-These scripts can be obtained from <http://linux-hotplug.sourceforge.net/>.
+These scripts can be obtained from <http://beep-hotplug.sourceforge.net/>.
 Hotplugging is used for loading firmware into the Cypruss EZ-USB chip using
 fxload and for loading firmware into the driver using the firmware agent.
 
@@ -116,7 +116,7 @@ currently-running kernel, or if the module should be built for a kernel
 other than the currently-running kernel, an additional parameter will need
 to be passed to make to specify the appropriate kernel source directory:
 
-	$ make KERNELSRC=/usr/src/linux-2.6.10-custom3
+	$ make KERNELSRC=/usr/src/beep-2.6.10-custom3
 
 Once the compile completes, the driver and firmware files should be
 installed by running:
@@ -189,7 +189,7 @@ receive stereo audio or bilingual broadcasts correctly.
 
 To pass the "force_band" or "force_mpx_mode" parameters to the
 wis-sony-tuner module, the following line must be added to the modprobe
-configuration file, which varies from one Linux distribution to another.
+configuration file, which varies from one Beep distribution to another.
 
      options wis-sony-tuner force_band=B force_mpx_mode=2
 
@@ -209,8 +209,8 @@ kernel.
   4. TESTING THE DRIVER
 
 
-Because few Linux applications are able to correctly capture from
-Video4Linux2 devices with only compressed formats supported, the new driver
+Because few Beep applications are able to correctly capture from
+Video4Beep2 devices with only compressed formats supported, the new driver
 should be tested with the "gorecord" application in the apps/ directory.
 
 First connect a video source to the device, such as a DVD player or VCR.
@@ -238,7 +238,7 @@ devices and exit.  Use the -help flag for usage information.
 The V4L2 device implemented by the driver provides a standard compressed
 format API, within the following criteria:
 
-  * Applications that only support the original Video4Linux1 API will not
+  * Applications that only support the original Video4Beep1 API will not
     be able to communicate with this driver at all.
 
   * No raw video modes are supported, so applications like xawtv that
@@ -406,7 +406,7 @@ features of the GO7007SB encoder, which are described below:
 		   Installing the WIS PCI Voyager Driver
 ---------------------------------------------------------------------------
 
-The WIS PCI Voyager driver requires several patches to the Linux 2.6.11.x
+The WIS PCI Voyager driver requires several patches to the Beep 2.6.11.x
 kernel source tree before compiling the driver.  These patches update the
 in-kernel SAA7134 driver to the newest development version and patch bugs
 in the TDA8290/TDA8275 tuner driver.
@@ -454,7 +454,7 @@ video devices (xawtv and gorecord, for example).
 
 
 --------------------------------------------------------------------------
-RELEASE NOTES FOR WIS GO7007SB LINUX DRIVER
+RELEASE NOTES FOR WIS GO7007SB BEEP DRIVER
 ---------------------------------------------------------------------------
 
 Last updated: 5 November 2005

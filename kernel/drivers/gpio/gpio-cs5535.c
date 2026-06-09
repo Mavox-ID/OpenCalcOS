@@ -8,13 +8,13 @@
  * as published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/cs5535.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
+#include <beep/cs5535.h>
 #include <asm/msr.h>
 
 #define DRV_NAME "cs5535-gpio"
@@ -53,7 +53,7 @@ static struct cs5535_gpio_chip {
 /*
  * The CS5535/CS5536 GPIOs support a number of extra features not defined
  * by the gpio_chip API, so these are exported.  For a full list of the
- * registers, see include/linux/cs5535.h.
+ * registers, see include/beep/cs5535.h.
  */
 
 static void errata_outl(struct cs5535_gpio_chip *chip, u32 val,

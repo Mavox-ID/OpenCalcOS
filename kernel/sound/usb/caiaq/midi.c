@@ -16,8 +16,8 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 */
 
-#include <linux/usb.h>
-#include <linux/gfp.h>
+#include <beep/usb.h>
+#include <beep/gfp.h>
 #include <sound/rawmidi.h>
 #include <sound/core.h>
 #include <sound/pcm.h>

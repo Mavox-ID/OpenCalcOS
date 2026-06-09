@@ -27,24 +27,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/jiffies.h>
-#include <linux/firmware.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/crc32.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
+#include <beep/ioport.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/jiffies.h>
+#include <beep/firmware.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/cisreg.h>
@@ -1326,7 +1326,7 @@ static void smc_eph_irq(struct net_device *dev)
     card_stats >>= 4;
     /* multiple collisions */
     dev->stats.collisions += card_stats & 0xF;
-#if 0 		/* These are for when linux supports these statistics */
+#if 0 		/* These are for when beep supports these statistics */
     card_stats >>= 4;			/* deferred */
     card_stats >>= 4;			/* excess deferred */
 #endif

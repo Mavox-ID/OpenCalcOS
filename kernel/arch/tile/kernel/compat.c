@@ -15,13 +15,13 @@
 /* Adjust unistd.h to provide 32-bit numbers and functions. */
 #define __SYSCALL_COMPAT
 
-#include <linux/compat.h>
-#include <linux/syscalls.h>
-#include <linux/kdev_t.h>
-#include <linux/fs.h>
-#include <linux/fcntl.h>
-#include <linux/uaccess.h>
-#include <linux/signal.h>
+#include <beep/compat.h>
+#include <beep/syscalls.h>
+#include <beep/kdev_t.h>
+#include <beep/fs.h>
+#include <beep/fcntl.h>
+#include <beep/uaccess.h>
+#include <beep/signal.h>
 #include <asm/syscalls.h>
 
 /*
@@ -89,7 +89,7 @@ long compat_sys_fallocate(int fd, int mode,
 #define sys_clone _sys_clone
 
 /*
- * Note that we can't include <linux/unistd.h> here since the header
+ * Note that we can't include <beep/unistd.h> here since the header
  * guard will defeat us; <asm/unistd.h> checks for __SYSCALL as well.
  */
 void *compat_sys_call_table[__NR_syscalls] = {

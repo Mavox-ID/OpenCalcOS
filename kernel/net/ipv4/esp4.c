@@ -2,18 +2,18 @@
 
 #include <crypto/aead.h>
 #include <crypto/authenc.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <beep/err.h>
+#include <beep/module.h>
 #include <net/ip.h>
 #include <net/xfrm.h>
 #include <net/esp.h>
-#include <linux/scatterlist.h>
-#include <linux/kernel.h>
-#include <linux/pfkeyv2.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/in6.h>
+#include <beep/scatterlist.h>
+#include <beep/kernel.h>
+#include <beep/pfkeyv2.h>
+#include <beep/rtnetlink.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/in6.h>
 #include <net/icmp.h>
 #include <net/protocol.h>
 #include <net/udp.h>

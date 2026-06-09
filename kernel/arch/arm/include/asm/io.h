@@ -23,7 +23,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/byteorder.h>
 #include <asm/memory.h>
 #include <asm-generic/pci_iomap.h>
@@ -47,7 +47,7 @@ extern void __raw_readsb(const void __iomem *addr, void *data, int bytelen);
 extern void __raw_readsw(const void __iomem *addr, void *data, int wordlen);
 extern void __raw_readsl(const void __iomem *addr, void *data, int longlen);
 
-#if __LINUX_ARM_ARCH__ < 6
+#if __BEEP_ARM_ARCH__ < 6
 /*
  * Half-word accesses are problematic with RiscPC due to limitations of
  * the bus. Rather than special-case the machine, just let the compiler

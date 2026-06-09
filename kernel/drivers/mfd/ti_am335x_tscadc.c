@@ -13,19 +13,19 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/regmap.h>
-#include <linux/mfd/core.h>
-#include <linux/pm_runtime.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/regmap.h>
+#include <beep/mfd/core.h>
+#include <beep/pm_runtime.h>
 
-#include <linux/mfd/ti_am335x_tscadc.h>
-#include <linux/input/ti_am335x_tsc.h>
-#include <linux/platform_data/ti_am335x_adc.h>
+#include <beep/mfd/ti_am335x_tscadc.h>
+#include <beep/input/ti_am335x_tsc.h>
+#include <beep/platform_data/ti_am335x_adc.h>
 
 static unsigned int tscadc_readl(struct ti_tscadc_dev *tsadc, unsigned int reg)
 {

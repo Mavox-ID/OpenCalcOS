@@ -8,35 +8,35 @@
  * Copyright Alan Cox GW4PTS (alan@lxorguk.ukuu.org.uk)
  * Copyright Tomi Manninen OH2BNS (oh2bns@sral.fi)
  */
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/string.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/slab.h>
 #include <net/ax25.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
+#include <beep/inet.h>
+#include <beep/netdevice.h>
 #include <net/arp.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
+#include <beep/if_arp.h>
+#include <beep/skbuff.h>
 #include <net/sock.h>
 #include <asm/uaccess.h>
-#include <linux/fcntl.h>
-#include <linux/termios.h>	/* For TIOCINQ/OUTQ */
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/netfilter.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
+#include <beep/fcntl.h>
+#include <beep/termios.h>	/* For TIOCINQ/OUTQ */
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/notifier.h>
+#include <beep/netfilter.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
 #include <net/netrom.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <beep/seq_file.h>
+#include <beep/export.h>
 
 static unsigned int nr_neigh_no = 1;
 

@@ -9,12 +9,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/mfd/mc13xxx.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/rtc.h>
+#include <beep/mfd/mc13xxx.h>
+#include <beep/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/rtc.h>
 
 #define DRIVER_NAME "mc13xxx-rtc"
 

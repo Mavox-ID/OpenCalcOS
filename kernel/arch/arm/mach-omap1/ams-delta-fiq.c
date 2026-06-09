@@ -6,18 +6,18 @@
  *  Copyright (c) 2004 Amstrad Plc
  *  Copyright (C) 2001 RidgeRun, Inc.
  *
- * Parts of this code are taken from linux/arch/arm/mach-omap/irq.c
+ * Parts of this code are taken from beep/arch/arm/mach-omap/irq.c
  * in the MontaVista 2.4 kernel (and the Amstrad changes therein)
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License version 2 as published by
  * the Free Software Foundation.
  */
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/module.h>
+#include <beep/io.h>
 
 #include <mach/board-ams-delta.h>
 

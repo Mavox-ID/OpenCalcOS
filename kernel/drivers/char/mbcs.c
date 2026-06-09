@@ -10,22 +10,22 @@
  *	MOATB Core Services driver.
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/uio.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/notifier.h>
+#include <beep/reboot.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/mm.h>
+#include <beep/uio.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>

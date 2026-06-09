@@ -4,24 +4,24 @@
  * Copyright (C) 2011, Intel Corporation
  *
  * Authors: Bruce E. Robertson <bruce.e.robertson@intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ *          Mika Westerberg <mika.westerberg@beep.intel.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
 
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/power_supply.h>
-#include <linux/power/smb347-charger.h>
-#include <linux/regmap.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
+#include <beep/power_supply.h>
+#include <beep/power/smb347-charger.h>
+#include <beep/regmap.h>
 
 /*
  * Configuration registers. These are mirrored to volatile RAM and can be
@@ -1320,7 +1320,7 @@ static struct i2c_driver smb347_driver = {
 module_i2c_driver(smb347_driver);
 
 MODULE_AUTHOR("Bruce E. Robertson <bruce.e.robertson@intel.com>");
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@beep.intel.com>");
 MODULE_DESCRIPTION("SMB347 battery charger driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("i2c:smb347");

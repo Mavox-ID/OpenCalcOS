@@ -7,14 +7,14 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/of_platform.h>
+#include <beep/init.h>
+#include <beep/of_platform.h>
 #include <asm/prom.h>
 
 /* Trigger specific functions */
 #ifdef CONFIG_GPIOLIB
 
-#include <linux/of_gpio.h>
+#include <beep/of_gpio.h>
 
 static int handle; /* reset pin handle */
 static unsigned int reset_val;

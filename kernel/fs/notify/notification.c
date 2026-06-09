@@ -31,21 +31,21 @@
  * allocated and used.
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/mutex.h>
-#include <linux/namei.h>
-#include <linux/path.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/mount.h>
+#include <beep/mutex.h>
+#include <beep/namei.h>
+#include <beep/path.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
-#include <linux/fsnotify_backend.h>
+#include <beep/fsnotify_backend.h>
 #include "fsnotify.h"
 
 static struct kmem_cache *fsnotify_event_cachep;

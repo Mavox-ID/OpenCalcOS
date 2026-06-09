@@ -2,13 +2,13 @@
  * devoard misc stuff.
  */
 
-#include <linux/init.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/physmap.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
+#include <beep/init.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/physmap.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/pm.h>
 
 #include <asm/bootinfo.h>
 #include <asm/reboot.h>

@@ -7,7 +7,7 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/threads.h>
+#include <beep/threads.h>
 #include <asm/epapr_hcalls.h>
 #include <asm/reg.h>
 #include <asm/page.h>

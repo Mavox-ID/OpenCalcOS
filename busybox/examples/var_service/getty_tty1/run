@@ -3,7 +3,7 @@
 user=root
 baud=38400
 delay=3
-export TERM=linux
+export TERM=beep
 
 tty="/dev/${PWD##*/getty_}"
 

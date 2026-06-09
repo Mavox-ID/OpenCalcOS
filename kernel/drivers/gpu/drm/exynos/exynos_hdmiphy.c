@@ -13,9 +13,9 @@
 
 #include <drm/drmP.h>
 
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
 
 #include "exynos_drm_drv.h"
 #include "exynos_hdmi.h"

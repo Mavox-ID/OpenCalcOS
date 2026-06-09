@@ -156,7 +156,7 @@
 		power_led {
 			label = "status:white:power_led";
 			gpios = <&gpio0 16 0>;
-			linux,default-trigger = "default-on";
+			beep,default-trigger = "default-on";
 		};
 		health_led1 {
 			label = "status:red:health_led";
@@ -177,17 +177,17 @@
 		#size-cells = <0>;
 		Power {
 			label = "Power Button";
-			linux,code = <116>;
+			beep,code = <116>;
 			gpios = <&gpio0 14 1>;
 		};
 		Reset {
 			label = "Reset Button";
-			linux,code = <0x198>;
+			beep,code = <0x198>;
 			gpios = <&gpio0 12 1>;
 		};
 		OTB {
 			label = "OTB Button";
-			linux,code = <133>;
+			beep,code = <133>;
 			gpios = <&gpio1 3 1>;
 		};
 	};

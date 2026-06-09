@@ -2,17 +2,17 @@
  * Copyright 1996, 1997, 1998 Hans Reiser, see reiserfs/README for licensing and copyright details
  */
 
-#include <linux/reiserfs_fs.h>
+#include <beep/reiserfs_fs.h>
 
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/bug.h>
-#include <linux/workqueue.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/bug.h>
+#include <beep/workqueue.h>
 #include <asm/unaligned.h>
-#include <linux/bitops.h>
-#include <linux/proc_fs.h>
-#include <linux/buffer_head.h>
+#include <beep/bitops.h>
+#include <beep/proc_fs.h>
+#include <beep/buffer_head.h>
 
 /* the 32 bit compat definitions with int argument */
 #define REISERFS_IOC32_UNPACK		_IOW(0xCD, 1, int)

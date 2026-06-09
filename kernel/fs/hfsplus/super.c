@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfsplus/super.c
+ *  beep/fs/hfsplus/super.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -7,14 +7,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/blkdev.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/vfs.h>
-#include <linux/nls.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pagemap.h>
+#include <beep/blkdev.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/vfs.h>
+#include <beep/nls.h>
 
 static struct inode *hfsplus_alloc_inode(struct super_block *sb);
 static void hfsplus_destroy_inode(struct inode *inode);

@@ -1,7 +1,7 @@
 #ifndef SDHI_MOBILE_H
 #define SDHI_MOBILE_H
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 int sdhi_boot_do_read(void __iomem *base, int high_capacity,
 		      unsigned long offset, unsigned short count,

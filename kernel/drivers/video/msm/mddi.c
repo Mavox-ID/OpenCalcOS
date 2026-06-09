@@ -15,18 +15,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/spinlock.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/sched.h>
-#include <linux/platform_data/video-msm_fb.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/dma-mapping.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/gfp.h>
+#include <beep/spinlock.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/sched.h>
+#include <beep/platform_data/video-msm_fb.h>
 #include "mddi_hw.h"
 
 #define FLAG_DISABLE_HIBERNATION 0x0001

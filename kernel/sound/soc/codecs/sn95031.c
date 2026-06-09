@@ -25,10 +25,10 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include <asm/intel_scu_ipc.h>
 #include <sound/pcm.h>

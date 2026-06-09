@@ -4,8 +4,8 @@
  * 2nd sample tracepoint probes.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
+#include <beep/module.h>
+#include <beep/fs.h>
 #include "tp-samples-trace.h"
 
 /*

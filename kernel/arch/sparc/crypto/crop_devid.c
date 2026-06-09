@@ -1,5 +1,5 @@
-#include <linux/module.h>
-#include <linux/of_device.h>
+#include <beep/module.h>
+#include <beep/of_device.h>
 
 /* This is a dummy device table linked into all of the crypto
  * opcode drivers.  It serves to trigger the module autoloading

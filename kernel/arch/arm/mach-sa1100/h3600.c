@@ -10,9 +10,9 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/gpio.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/gpio.h>
 
 #include <video/sa1100fb.h>
 

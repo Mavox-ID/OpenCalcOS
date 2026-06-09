@@ -1,6 +1,6 @@
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
 
 static int __init staging_init(void)
 {

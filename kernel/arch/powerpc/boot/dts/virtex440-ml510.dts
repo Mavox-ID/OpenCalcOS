@@ -25,7 +25,7 @@
 	} ;
 	chosen {
 		bootargs = "console=ttyS0 root=/dev/ram";
-		linux,stdout-path = "/plb@0/serial@83e00000";
+		beep,stdout-path = "/plb@0/serial@83e00000";
 	} ;
 	cpus {
 		#address-cells = <1>;

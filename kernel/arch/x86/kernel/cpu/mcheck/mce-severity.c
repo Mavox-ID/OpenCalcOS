@@ -9,10 +9,10 @@
  *
  * Author: Andi Kleen
  */
-#include <linux/kernel.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/debugfs.h>
+#include <beep/kernel.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/debugfs.h>
 #include <asm/mce.h>
 
 #include "mce-internal.h"

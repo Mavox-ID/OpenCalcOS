@@ -20,19 +20,19 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/hwmon.h>
-#include <linux/gpio.h>
-#include <linux/gpio-fan.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/hwmon.h>
+#include <beep/gpio.h>
+#include <beep/gpio-fan.h>
+#include <beep/of_platform.h>
+#include <beep/of_gpio.h>
 
 struct gpio_fan_data {
 	struct platform_device	*pdev;

@@ -7,18 +7,18 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/user.h>
-#include <linux/elf.h>
-#include <linux/elfcore.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/bootmem.h>
-#include <linux/init.h>
-#include <linux/crash_dump.h>
-#include <linux/list.h>
+#include <beep/mm.h>
+#include <beep/proc_fs.h>
+#include <beep/user.h>
+#include <beep/elf.h>
+#include <beep/elfcore.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>
+#include <beep/bootmem.h>
+#include <beep/init.h>
+#include <beep/crash_dump.h>
+#include <beep/list.h>
 #include <asm/uaccess.h>
 #include <asm/io.h>
 

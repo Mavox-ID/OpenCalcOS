@@ -19,8 +19,8 @@
  */
 
 #include "cx231xx.h"
-#include <linux/usb.h>
-#include <linux/slab.h>
+#include <beep/usb.h>
+#include <beep/slab.h>
 
 #define MODULE_NAME "cx231xx-input"
 

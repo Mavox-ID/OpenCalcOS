@@ -2,7 +2,7 @@
  * IPv6 library code, needed by static components when full IPv6 support is
  * not configured or static.  These functions are needed by GSO/GRO implementation.
  */
-#include <linux/export.h>
+#include <beep/export.h>
 #include <net/ipv6.h>
 #include <net/ip6_fib.h>
 

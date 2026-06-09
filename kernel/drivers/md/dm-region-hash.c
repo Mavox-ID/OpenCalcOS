@@ -5,14 +5,14 @@
  * This file is released under the GPL.
  */
 
-#include <linux/dm-dirty-log.h>
-#include <linux/dm-region-hash.h>
+#include <beep/dm-dirty-log.h>
+#include <beep/dm-region-hash.h>
 
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <beep/ctype.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
 
 #include "dm.h"
 

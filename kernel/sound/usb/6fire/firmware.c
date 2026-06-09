@@ -1,5 +1,5 @@
 /*
- * Linux driver for TerraTec DMX 6Fire USB
+ * Beep driver for TerraTec DMX 6Fire USB
  *
  * Firmware loader
  *
@@ -13,10 +13,10 @@
  * (at your option) any later version.
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/bitrev.h>
-#include <linux/kernel.h>
+#include <beep/firmware.h>
+#include <beep/module.h>
+#include <beep/bitrev.h>
+#include <beep/kernel.h>
 
 #include "firmware.h"
 #include "chip.h"

@@ -19,15 +19,15 @@
 
 #define pr_fmt(fmt) "logger: " fmt
 
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/uaccess.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/vmalloc.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/miscdevice.h>
+#include <beep/uaccess.h>
+#include <beep/poll.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/vmalloc.h>
 #include "logger.h"
 
 #include <asm/ioctls.h>

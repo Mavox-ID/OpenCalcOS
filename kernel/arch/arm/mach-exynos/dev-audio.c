@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-exynos4/dev-audio.c
+/* beep/arch/arm/mach-exynos4/dev-audio.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -11,10 +11,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/gpio.h>
-#include <linux/platform_data/asoc-s3c.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/gpio.h>
+#include <beep/platform_data/asoc-s3c.h>
 
 #include <plat/gpio-cfg.h>
 

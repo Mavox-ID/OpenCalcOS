@@ -12,7 +12,7 @@
 #define __ASM_GENERIC_IO_H
 
 #include <asm/page.h> /* I/O is all done through memory accesses */
-#include <linux/types.h>
+#include <beep/types.h>
 
 #ifdef CONFIG_GENERIC_IOMAP
 #include <asm-generic/iomap.h>
@@ -256,7 +256,7 @@ static inline void outsl(unsigned long addr, const void *buffer, int count)
 
 #ifdef __KERNEL__
 
-#include <linux/vmalloc.h>
+#include <beep/vmalloc.h>
 #define __io_virt(x) ((void __force *) (x))
 
 #ifndef CONFIG_GENERIC_IOMAP

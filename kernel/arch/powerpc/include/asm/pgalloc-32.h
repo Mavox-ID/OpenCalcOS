@@ -1,7 +1,7 @@
 #ifndef _ASM_POWERPC_PGALLOC_32_H
 #define _ASM_POWERPC_PGALLOC_32_H
 
-#include <linux/threads.h>
+#include <beep/threads.h>
 
 /* For 32-bit, all levels of page tables are just drawn from get_free_page() */
 #define MAX_PGTABLE_INDEX_SIZE	0

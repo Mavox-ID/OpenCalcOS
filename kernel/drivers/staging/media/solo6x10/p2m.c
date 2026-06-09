@@ -17,9 +17,9 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/scatterlist.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/scatterlist.h>
 #include "solo6x10.h"
 
 /* #define SOLO_TEST_P2M */

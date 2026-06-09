@@ -10,11 +10,11 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/smp.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/smp.h>
 #include <asm/smp_plat.h>
 
 #define SRC_SCR				0x000

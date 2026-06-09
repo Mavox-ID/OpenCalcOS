@@ -1,8 +1,8 @@
-#include <linux/context_tracking.h>
-#include <linux/rcupdate.h>
-#include <linux/sched.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
+#include <beep/context_tracking.h>
+#include <beep/rcupdate.h>
+#include <beep/sched.h>
+#include <beep/percpu.h>
+#include <beep/hardirq.h>
 
 struct context_tracking {
 	/*

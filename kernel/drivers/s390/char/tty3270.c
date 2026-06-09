@@ -7,18 +7,18 @@
  *	-- Copyright IBM Corp. 2003
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kdev_t.h>
-#include <linux/tty.h>
-#include <linux/vt_kern.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kdev_t.h>
+#include <beep/tty.h>
+#include <beep/vt_kern.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/interrupt.h>
 
-#include <linux/slab.h>
-#include <linux/bootmem.h>
-#include <linux/compat.h>
+#include <beep/slab.h>
+#include <beep/bootmem.h>
+#include <beep/compat.h>
 
 #include <asm/ccwdev.h>
 #include <asm/cio.h>

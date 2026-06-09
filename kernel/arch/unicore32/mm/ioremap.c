@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/mm/ioremap.c
+ * beep/arch/unicore32/mm/ioremap.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -23,11 +23,11 @@
  * We use MMU protection domains to trap any attempt to access the bank
  * that is not currently mapped.  (This isn't fully implemented yet.)
  */
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/io.h>
 
 #include <asm/cputype.h>
 #include <asm/cacheflush.h>

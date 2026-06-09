@@ -14,16 +14,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/moduleparam.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/phy.h>
 
 #define MII_XCIIS   	0x11	/* Configuration Info IRQ & Status Reg */
 #define MII_XIE     	0x12	/* Interrupt Enable Register */

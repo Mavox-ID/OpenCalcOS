@@ -16,10 +16,10 @@
  *
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_CONNSECMARK.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_CONNSECMARK.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_ecache.h>
 

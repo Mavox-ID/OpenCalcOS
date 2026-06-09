@@ -3,8 +3,8 @@
  *  ATI Mach64 GX Support
  */
 
-#include <linux/delay.h>
-#include <linux/fb.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
 
 #include <asm/io.h>
 

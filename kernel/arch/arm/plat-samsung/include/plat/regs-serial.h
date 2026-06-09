@@ -1,12 +1,12 @@
 /* arch/arm/plat-samsung/include/plat/regs-serial.h
  *
- *  From linux/include/asm-arm/hardware/serial_s3c2410.h
+ *  From beep/include/asm-arm/hardware/serial_s3c2410.h
  *
  *  Internal header file for Samsung S3C2410 serial ports (UART0-2)
  *
  *  Copyright (C) 2002 Shane Nay (shane@minirl.com)
  *
- *  Additional defines, Copyright 2003 Simtec Electronics (linux@simtec.co.uk)
+ *  Additional defines, Copyright 2003 Simtec Electronics (beep@simtec.co.uk)
  *
  *  Adapted from:
  *

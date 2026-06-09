@@ -1,7 +1,7 @@
 /*
     Conexant cx24123/cx24109 - DVB QPSK Satellite demod/tuner driver
 
-    Copyright (C) 2005 Steven Toth <stoth@linuxtv.org>
+    Copyright (C) 2005 Steven Toth <stoth@beeptv.org>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@
 #ifndef CX24123_H
 #define CX24123_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 struct cx24123_config {
 	/* the demodulator's i2c address */

@@ -35,26 +35,26 @@
  * - kcore/oldmem/vmcore/mem/kmem check for hwpoison pages
  * - pass bad pages to kdump next kernel
  */
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/page-flags.h>
-#include <linux/kernel-page-flags.h>
-#include <linux/sched.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/export.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/backing-dev.h>
-#include <linux/migrate.h>
-#include <linux/page-isolation.h>
-#include <linux/suspend.h>
-#include <linux/slab.h>
-#include <linux/swapops.h>
-#include <linux/hugetlb.h>
-#include <linux/memory_hotplug.h>
-#include <linux/mm_inline.h>
-#include <linux/kfifo.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/page-flags.h>
+#include <beep/kernel-page-flags.h>
+#include <beep/sched.h>
+#include <beep/ksm.h>
+#include <beep/rmap.h>
+#include <beep/export.h>
+#include <beep/pagemap.h>
+#include <beep/swap.h>
+#include <beep/backing-dev.h>
+#include <beep/migrate.h>
+#include <beep/page-isolation.h>
+#include <beep/suspend.h>
+#include <beep/slab.h>
+#include <beep/swapops.h>
+#include <beep/hugetlb.h>
+#include <beep/memory_hotplug.h>
+#include <beep/mm_inline.h>
+#include <beep/kfifo.h>
 #include "internal.h"
 
 int sysctl_memory_failure_early_kill __read_mostly = 0;
@@ -630,7 +630,7 @@ static int me_pagecache_dirty(struct page *p, unsigned long pfn)
 		 *
 		 * The EIO will be only reported on the next IO
 		 * operation and then cleared through the IO map.
-		 * Normally Linux has two mechanisms to pass IO error
+		 * Normally Beep has two mechanisms to pass IO error
 		 * first through the AS_EIO flag in the address space
 		 * and then through the PageError flag in the page.
 		 * Since we drop pages on memory failure handling the
@@ -1287,7 +1287,7 @@ core_initcall(memory_failure_init);
  * memory_failure() earlier.
  *
  * This is only done on the software-level, so it only works
- * for linux injected failures, not real hardware failures
+ * for beep injected failures, not real hardware failures
  *
  * Returns 0 for success, otherwise -errno.
  */

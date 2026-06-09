@@ -5,19 +5,19 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/delay.h>
 
 #include <asm/gptimers.h>
 #include <asm/portmux.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/trigger.h>
 
 #include "iio-trig-bfin-timer.h"
 
@@ -301,7 +301,7 @@ static struct platform_driver iio_bfin_tmr_trigger_driver = {
 
 module_platform_driver(iio_bfin_tmr_trigger_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("Blackfin system timer based trigger for the iio subsystem");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("platform:iio-trig-bfin-timer");

@@ -1,7 +1,7 @@
 /*
  * slip.h	Define the SLIP device driver interface and constants.
  *
- * NOTE:	THIS FILE WILL BE MOVED TO THE LINUX INCLUDE DIRECTORY
+ * NOTE:	THIS FILE WILL BE MOVED TO THE BEEP INCLUDE DIRECTORY
  *		AS SOON AS POSSIBLE!
  *
  * Version:	@(#)slip.h	1.2.0	03/28/93
@@ -19,8 +19,8 @@
  *
  * Author:	Fred N. van Kempen, <waltje@uwalt.nl.mugnet.org>
  */
-#ifndef _LINUX_SLIP_H
-#define _LINUX_SLIP_H
+#ifndef _BEEP_SLIP_H
+#define _BEEP_SLIP_H
 
 
 #if defined(CONFIG_INET) && defined(CONFIG_SLIP_COMPRESSED)
@@ -98,4 +98,4 @@ struct slip {
 
 #define SLIP_MAGIC 0x5302
 
-#endif	/* _LINUX_SLIP.H */
+#endif	/* _BEEP_SLIP.H */

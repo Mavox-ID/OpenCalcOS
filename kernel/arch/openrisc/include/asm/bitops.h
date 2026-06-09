@@ -1,7 +1,7 @@
 /*
- * OpenRISC Linux
+ * OpenRISC Beep
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -25,8 +25,8 @@
  * optimized versions.
  */
 
-#include <linux/irqflags.h>
-#include <linux/compiler.h>
+#include <beep/irqflags.h>
+#include <beep/compiler.h>
 
 /*
  * clear_bit may not imply a memory barrier
@@ -43,8 +43,8 @@
 #include <asm-generic/bitops/fls64.h>
 #include <asm-generic/bitops/find.h>
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _BEEP_BITOPS_H
+#error only <beep/bitops.h> can be included directly
 #endif
 
 #include <asm-generic/bitops/sched.h>

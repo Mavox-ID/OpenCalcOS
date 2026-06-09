@@ -7,8 +7,8 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/netdevice.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
 #include <net_kern.h>
 #include <net_user.h>
 #include "vde.h"

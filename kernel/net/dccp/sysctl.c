@@ -9,8 +9,8 @@
  *	as published by the Free Software Foundation.
  */
 
-#include <linux/mm.h>
-#include <linux/sysctl.h>
+#include <beep/mm.h>
+#include <beep/sysctl.h>
 #include "dccp.h"
 #include "feat.h"
 

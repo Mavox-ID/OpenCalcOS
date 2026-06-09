@@ -11,9 +11,9 @@
  */
 struct task_struct;	/* forward declaration for elf.h */
 
-#include <linux/elf.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <beep/elf.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
 
 #include <asm/elf.h>
 #include <asm/intrinsics.h>
@@ -80,7 +80,7 @@ start_bootloader (void)
 	 */
 	arglen = ssc((long) buffer, 0, 0, 0, SSC_GET_ARGS);
 
-	kpath = "vmlinux";
+	kpath = "vmbeep";
 	args = buffer;
 	if (arglen > 0) {
 		kpath = buffer;

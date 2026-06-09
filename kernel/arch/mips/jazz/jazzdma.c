@@ -7,14 +7,14 @@
  * on failure of vdma_alloc() one could leave page #0 unused
  * and return the more usual NULL pointer as logical address.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/bootmem.h>
-#include <linux/spinlock.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/bootmem.h>
+#include <beep/spinlock.h>
+#include <beep/gfp.h>
 #include <asm/mipsregs.h>
 #include <asm/jazz.h>
 #include <asm/io.h>

@@ -1,5 +1,5 @@
 /*
- *  isl29003.c - Linux kernel module for
+ *  isl29003.c - Beep kernel module for
  * 	Intersil ISL29003 ambient light sensor
  *
  *  See file:Documentation/misc-devices/isl29003
@@ -7,7 +7,7 @@
  *  Copyright (c) 2009 Daniel Mack <daniel@caiaq.de>
  *
  *  Based on code written by
- *  	Rodolfo Giometti <giometti@linux.it>
+ *  	Rodolfo Giometti <giometti@beep.it>
  *  	Eurotech S.p.A. <info@eurotech.it>
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -25,12 +25,12 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
+#include <beep/delay.h>
 
 #define ISL29003_DRV_NAME	"isl29003"
 #define DRIVER_VERSION		"1.0"

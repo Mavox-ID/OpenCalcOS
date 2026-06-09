@@ -1,5 +1,5 @@
 /*
- * linux/fs/hfsplus/tables.c
+ * beep/fs/hfsplus/tables.c
  *
  * Various data tables
  */

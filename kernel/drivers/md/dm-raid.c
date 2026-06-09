@@ -5,8 +5,8 @@
  * This file is released under the GPL.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include "md.h"
 #include "raid1.h"
@@ -14,7 +14,7 @@
 #include "raid10.h"
 #include "bitmap.h"
 
-#include <linux/device-mapper.h>
+#include <beep/device-mapper.h>
 
 #define DM_MSG_PREFIX "raid"
 

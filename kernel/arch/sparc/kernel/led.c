@@ -1,13 +1,13 @@
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/jiffies.h>
+#include <beep/timer.h>
+#include <beep/uaccess.h>
 
 #include <asm/auxio.h>
 

@@ -1,5 +1,5 @@
 #
-# linux/drivers/mtd/lpddr/Makefile
+# beep/drivers/mtd/lpddr/Makefile
 #
 
 obj-$(CONFIG_MTD_QINFO_PROBE)	+= qinfo_probe.o

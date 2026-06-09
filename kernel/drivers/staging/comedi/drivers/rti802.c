@@ -2,7 +2,7 @@
    comedi/drivers/rti802.c
    Hardware driver for Analog Devices RTI-802 board
 
-   COMEDI - Linux Control and Measurement Device Interface
+   COMEDI - Beep Control and Measurement Device Interface
    Copyright (C) 1999 Anders Blomdell <anders.blomdell@control.lth.se>
 
    This program is free software; you can redistribute it and/or modify
@@ -39,7 +39,7 @@ Configuration Options:
 
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 #define RTI802_SIZE 4
 

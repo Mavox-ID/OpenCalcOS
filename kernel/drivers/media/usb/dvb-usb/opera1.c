@@ -1,4 +1,4 @@
-/* DVB USB framework compliant Linux driver for the Opera1 DVB-S Card
+/* DVB USB framework compliant Beep driver for the Opera1 DVB-S Card
 *
 * Copyright (C) 2006 Mario Hlawitschka (dh1pa@amsat.org)
 * Copyright (C) 2006 Marco Gittler (g.marco@freenet.de)
@@ -453,7 +453,7 @@ static int opera1_xilinx_load_firmware(struct usb_device *dev,
 
 	if ((ret = request_firmware(&fw, filename, &dev->dev)) != 0) {
 		err("did not find the firmware file. (%s) "
-			"Please see linux/Documentation/dvb/ for more details on firmware-problems.",
+			"Please see beep/Documentation/dvb/ for more details on firmware-problems.",
 			filename);
 		return ret;
 	} else {

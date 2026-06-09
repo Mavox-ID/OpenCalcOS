@@ -29,17 +29,17 @@
 
 ======================================================================*/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/ide.h>
-#include <linux/major.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/ioport.h>
+#include <beep/ide.h>
+#include <beep/major.h>
+#include <beep/delay.h>
 #include <asm/io.h>
 
 #include <pcmcia/cistpl.h>

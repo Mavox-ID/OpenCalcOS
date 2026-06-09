@@ -7,16 +7,16 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_sci.h>
-#include <linux/sh_dma.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_intc.h>
-#include <linux/uio_driver.h>
-#include <linux/usb/m66592.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/platform_device.h>
+#include <beep/serial.h>
+#include <beep/serial_sci.h>
+#include <beep/sh_dma.h>
+#include <beep/sh_timer.h>
+#include <beep/sh_intc.h>
+#include <beep/uio_driver.h>
+#include <beep/usb/m66592.h>
 
 #include <asm/clock.h>
 #include <asm/mmzone.h>

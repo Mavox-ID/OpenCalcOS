@@ -10,11 +10,11 @@
  *	(at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
 
 #include <media/v4l2-dev.h>
 

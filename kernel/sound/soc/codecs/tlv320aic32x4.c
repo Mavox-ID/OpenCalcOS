@@ -1,5 +1,5 @@
 /*
- * linux/sound/soc/codecs/tlv320aic32x4.c
+ * beep/sound/soc/codecs/tlv320aic32x4.c
  *
  * Copyright 2011 Vista Silicon S.L.
  *
@@ -23,15 +23,15 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/cdev.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/cdev.h>
+#include <beep/slab.h>
 
 #include <sound/tlv320aic32x4.h>
 #include <sound/core.h>

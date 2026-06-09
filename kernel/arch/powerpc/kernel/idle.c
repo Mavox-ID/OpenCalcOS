@@ -19,12 +19,12 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/sysctl.h>
-#include <linux/tick.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/smp.h>
+#include <beep/cpu.h>
+#include <beep/sysctl.h>
+#include <beep/tick.h>
 
 #include <asm/processor.h>
 #include <asm/cputable.h>

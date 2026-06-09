@@ -22,11 +22,11 @@
  *
  */
 
-#include <linux/sched.h>		/* wake_up() */
-#include <linux/mutex.h>		/* struct mutex */
-#include <linux/rwsem.h>		/* struct rw_semaphore */
-#include <linux/pm.h>			/* pm_message_t */
-#include <linux/stringify.h>
+#include <beep/sched.h>		/* wake_up() */
+#include <beep/mutex.h>		/* struct mutex */
+#include <beep/rwsem.h>		/* struct rw_semaphore */
+#include <beep/pm.h>			/* pm_message_t */
+#include <beep/stringify.h>
 
 /* number of supported soundcards */
 #ifdef CONFIG_SND_DYNAMIC_MINORS

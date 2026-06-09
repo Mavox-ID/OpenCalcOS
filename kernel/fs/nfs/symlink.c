@@ -1,5 +1,5 @@
 /*
- *  linux/fs/nfs/symlink.c
+ *  beep/fs/nfs/symlink.c
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -10,17 +10,17 @@
  *  nfs symlink handling code
  */
 
-#include <linux/time.h>
-#include <linux/errno.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfs.h>
-#include <linux/nfs2.h>
-#include <linux/nfs_fs.h>
-#include <linux/pagemap.h>
-#include <linux/stat.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/namei.h>
+#include <beep/time.h>
+#include <beep/errno.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/nfs.h>
+#include <beep/nfs2.h>
+#include <beep/nfs_fs.h>
+#include <beep/pagemap.h>
+#include <beep/stat.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/namei.h>
 
 /* Symlink caching in the page cache is even more simplistic
  * and straight-forward than readdir caching.

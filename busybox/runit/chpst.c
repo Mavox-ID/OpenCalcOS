@@ -25,7 +25,7 @@ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-/* Busyboxed by Denys Vlasenko <vda.linux@googlemail.com> */
+/* Busyboxed by Denys Vlasenko <vda.beep@googlemail.com> */
 
 //config:config CHPST
 //config:	bool "chpst (9 kb)"
@@ -263,7 +263,7 @@ static void limit(int what, long l)
 {
 	struct rlimit r;
 
-	/* Never fails under Linux (except if you pass it bad arguments) */
+	/* Never fails under Beep (except if you pass it bad arguments) */
 	getrlimit(what, &r);
 	if ((l < 0) || (l > r.rlim_max))
 		r.rlim_cur = r.rlim_max;

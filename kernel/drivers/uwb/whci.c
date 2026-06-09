@@ -5,14 +5,14 @@
  *
  * This file is released under the GNU GPL v2.
  */
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/uwb/whci.h>
-#include <linux/uwb/umc.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/uwb/whci.h>
+#include <beep/uwb/umc.h>
 
 struct whci_card {
 	struct pci_dev *pci;

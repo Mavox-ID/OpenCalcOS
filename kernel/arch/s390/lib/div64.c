@@ -5,8 +5,8 @@
  *    Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com),
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/module.h>
 
 #ifdef CONFIG_MARCH_G5
 

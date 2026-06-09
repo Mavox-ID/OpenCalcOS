@@ -1,4 +1,4 @@
-/* linux/drivers/media/platform/s5p-jpeg/jpeg-core.c
+/* beep/drivers/media/platform/s5p-jpeg/jpeg-core.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -10,18 +10,18 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/gfp.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
 #include <media/v4l2-mem2mem.h>
 #include <media/v4l2-ioctl.h>
 #include <media/videobuf2-core.h>

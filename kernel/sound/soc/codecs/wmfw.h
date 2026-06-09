@@ -13,7 +13,7 @@
 #ifndef __WMFW_H
 #define __WMFW_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct wmfw_header {
 	char magic[4];

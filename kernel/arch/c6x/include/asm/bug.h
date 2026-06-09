@@ -11,7 +11,7 @@
 #ifndef _ASM_C6X_BUG_H
 #define _ASM_C6X_BUG_H
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm-generic/bug.h>
 
 struct pt_regs;

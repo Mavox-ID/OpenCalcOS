@@ -10,19 +10,19 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/bitops.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
 
-#include <linux/mfd/pm8xxx/core.h>
-#include <linux/mfd/pm8xxx/gpio.h>
-#include <linux/input/pmic8xxx-keypad.h>
+#include <beep/mfd/pm8xxx/core.h>
+#include <beep/mfd/pm8xxx/gpio.h>
+#include <beep/input/pmic8xxx-keypad.h>
 
 #define PM8XXX_MAX_ROWS		18
 #define PM8XXX_MAX_COLS		8

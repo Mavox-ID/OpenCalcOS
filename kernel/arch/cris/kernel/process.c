@@ -1,5 +1,5 @@
 /*
- *  linux/arch/cris/kernel/process.c
+ *  beep/arch/cris/kernel/process.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  *  Copyright (C) 2000-2002  Axis Communications AB
@@ -12,20 +12,20 @@
  * This file handles the architecture-dependent parts of process handling..
  */
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/pgtable.h>
 #include <asm/uaccess.h>
 #include <asm/irq.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/init_task.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/user.h>
-#include <linux/elfcore.h>
-#include <linux/mqueue.h>
-#include <linux/reboot.h>
-#include <linux/rcupdate.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/init_task.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/user.h>
+#include <beep/elfcore.h>
+#include <beep/mqueue.h>
+#include <beep/reboot.h>
+#include <beep/rcupdate.h>
 
 //#define DEBUG
 

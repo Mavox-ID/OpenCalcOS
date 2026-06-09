@@ -7,16 +7,16 @@
  * Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002 Ralf Baechle (ralf@gnu.org)
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  */
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/kernel.h>
-#include <linux/linkage.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
+#include <beep/hardirq.h>
+#include <beep/init.h>
+#include <beep/highmem.h>
+#include <beep/kernel.h>
+#include <beep/linkage.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/bitops.h>
 
 #include <asm/bcache.h>
 #include <asm/bootinfo.h>
@@ -1201,7 +1201,7 @@ static void __cpuinit setup_scache(void)
 	/*
 	 * Do the probing thing on R4000SC and R4400SC processors.  Other
 	 * processors don't have a S-cache that would be relevant to the
-	 * Linux memory management.
+	 * Beep memory management.
 	 */
 	switch (c->cputype) {
 	case CPU_R4000SC:

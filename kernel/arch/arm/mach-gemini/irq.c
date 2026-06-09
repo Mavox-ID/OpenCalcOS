@@ -9,12 +9,12 @@
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  */
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/stddef.h>
-#include <linux/list.h>
-#include <linux/sched.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/stddef.h>
+#include <beep/list.h>
+#include <beep/sched.h>
 #include <asm/irq.h>
 #include <asm/mach/irq.h>
 #include <asm/system_misc.h>

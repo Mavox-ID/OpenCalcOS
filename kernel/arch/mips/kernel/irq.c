@@ -8,21 +8,21 @@
  * Copyright (C) 1992 Linus Torvalds
  * Copyright (C) 1994 - 2000 Ralf Baechle
  */
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/proc_fs.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/kallsyms.h>
-#include <linux/kgdb.h>
-#include <linux/ftrace.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/proc_fs.h>
+#include <beep/mm.h>
+#include <beep/random.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/kallsyms.h>
+#include <beep/kgdb.h>
+#include <beep/ftrace.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/uaccess.h>
 
 #ifdef CONFIG_KGDB

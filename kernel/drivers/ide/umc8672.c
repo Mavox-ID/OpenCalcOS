@@ -37,16 +37,16 @@
  */
 #define REALLY_SLOW_IO		/* some systems can safely undef this */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/ioport.h>
-#include <linux/blkdev.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/mm.h>
+#include <beep/ioport.h>
+#include <beep/blkdev.h>
+#include <beep/ide.h>
+#include <beep/init.h>
 
 #include <asm/io.h>
 

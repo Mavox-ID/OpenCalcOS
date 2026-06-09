@@ -8,7 +8,7 @@
 #ifndef __ASM_AVR32_TRAPS_H
 #define __ASM_AVR32_TRAPS_H
 
-#include <linux/list.h>
+#include <beep/list.h>
 
 struct undef_hook {
 	struct list_head node;

@@ -1,5 +1,5 @@
-#include <linux/mmc/host.h>
-#include <linux/platform_data/mmc-omap.h>
+#include <beep/mmc/host.h>
+#include <beep/platform_data/mmc-omap.h>
 
 #define OMAP24XX_NR_MMC		2
 #define OMAP2420_MMC_SIZE	OMAP1_MMC_SIZE

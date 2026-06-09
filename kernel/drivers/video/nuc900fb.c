@@ -11,34 +11,34 @@
  *  Description:
  *    Nuvoton LCD Controller Driver
  *  Author:
- *    Wang Qiang (rurality.linux@gmail.com) 2009/12/11
+ *    Wang Qiang (rurality.beep@gmail.com) 2009/12/11
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/wait.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/io.h>
-#include <linux/pm.h>
-#include <linux/device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/tty.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/wait.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/cpufreq.h>
+#include <beep/io.h>
+#include <beep/pm.h>
+#include <beep/device.h>
 
 #include <mach/map.h>
 #include <mach/regs-clock.h>
 #include <mach/regs-ldm.h>
-#include <linux/platform_data/video-nuc900fb.h>
+#include <beep/platform_data/video-nuc900fb.h>
 
 #include "nuc900fb.h"
 

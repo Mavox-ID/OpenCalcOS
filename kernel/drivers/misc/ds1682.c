@@ -31,14 +31,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/sysfs.h>
-#include <linux/ctype.h>
-#include <linux/hwmon-sysfs.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/string.h>
+#include <beep/list.h>
+#include <beep/sysfs.h>
+#include <beep/ctype.h>
+#include <beep/hwmon-sysfs.h>
 
 /* Device registers */
 #define DS1682_REG_CONFIG		0x00

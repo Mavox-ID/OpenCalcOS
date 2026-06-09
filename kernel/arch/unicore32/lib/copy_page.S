@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/lib/copy_page.S
+ * beep/arch/unicore32/lib/copy_page.S
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -11,7 +11,7 @@
  *
  *  ASM optimised string functions
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 #include <generated/asm-offsets.h>
 #include <asm/cache.h>

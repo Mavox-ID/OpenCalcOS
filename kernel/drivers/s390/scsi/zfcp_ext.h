@@ -9,7 +9,7 @@
 #ifndef ZFCP_EXT_H
 #define ZFCP_EXT_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <scsi/fc/fc_els.h>
 #include "zfcp_def.h"
 #include "zfcp_fc.h"

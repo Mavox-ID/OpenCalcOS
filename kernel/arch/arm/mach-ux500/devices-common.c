@@ -5,13 +5,13 @@
  * License terms: GNU General Public License (GPL), version 2.
  */
 
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/pinctrl-nomadik.h>
+#include <beep/kernel.h>
+#include <beep/dma-mapping.h>
+#include <beep/err.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/platform_data/pinctrl-nomadik.h>
 
 #include <mach/hardware.h>
 #include <mach/irqs.h>

@@ -1,6 +1,6 @@
 /*
  * AMD 755/756/766/8111 and nVidia nForce/2/2s/3/3s/CK804/MCP04
- * IDE driver for Linux.
+ * IDE driver for Beep.
  *
  * Copyright (c) 2000-2002 Vojtech Pavlik
  * Copyright (c) 2007-2010 Bartlomiej Zolnierkiewicz
@@ -15,11 +15,11 @@
  * the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ide.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/ide.h>
 
 #define DRV_NAME "amd74xx"
 

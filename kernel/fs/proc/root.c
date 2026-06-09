@@ -1,5 +1,5 @@
 /*
- *  linux/fs/proc/root.c
+ *  beep/fs/proc/root.c
  *
  *  Copyright (C) 1991, 1992 Linus Torvalds
  *
@@ -8,17 +8,17 @@
 
 #include <asm/uaccess.h>
 
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/mount.h>
-#include <linux/pid_namespace.h>
-#include <linux/parser.h>
+#include <beep/errno.h>
+#include <beep/time.h>
+#include <beep/proc_fs.h>
+#include <beep/stat.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/bitops.h>
+#include <beep/mount.h>
+#include <beep/pid_namespace.h>
+#include <beep/parser.h>
 
 #include "internal.h"
 

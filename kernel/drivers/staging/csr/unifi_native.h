@@ -14,11 +14,11 @@
  *
  *****************************************************************************
  */
-#ifndef __LINUX_UNIFI_NATIVE_H__
-#define __LINUX_UNIFI_NATIVE_H__ 1
+#ifndef __BEEP_UNIFI_NATIVE_H__
+#define __BEEP_UNIFI_NATIVE_H__ 1
 
-#include <linux/kernel.h>
-#include <linux/if_arp.h>
+#include <beep/kernel.h>
+#include <beep/if_arp.h>
 
 
 /*
@@ -254,4 +254,4 @@ void ma_sniffdata_ind(void *ospriv,
 */
 #endif /* ARPHRD_IEEE80211_PRISM */
 
-#endif /* __LINUX_UNIFI_NATIVE_H__ */
+#endif /* __BEEP_UNIFI_NATIVE_H__ */

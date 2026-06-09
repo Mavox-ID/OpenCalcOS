@@ -1110,9 +1110,9 @@ typedef struct CFG_DRV_INFO_STRCT {		//CFG_DRV_INFO (0x0825) driver information
 #define COMP_ID_ODI_32					44		//32-bits ODI
 #define COMP_ID_MAC_OS					45		//Macintosh OS
 #define COMP_ID_WIN_CE					46		//Windows CE Miniport
-//#define COMP_ID_LINUX_PD				47		//Linux, HCF-light based, MSF source code in Public Domain
+//#define COMP_ID_BEEP_PD				47		//Beep, HCF-light based, MSF source code in Public Domain
 #define COMP_ID_MINIPORT_NDIS_50		48		//Windows 9x/NT Miniport NDIS 5.0
-#define COMP_ID_LINUX					49		/*Linux, GPL'ed HCF based, full source code in Public Domain
+#define COMP_ID_BEEP					49		/*Beep, GPL'ed HCF based, full source code in Public Domain
 										  		 *thanks to Andreas Neuhaus								*/
 #define COMP_ID_QNX						50		//QNX
 #define COMP_ID_MINIPORT_NDIS_50_USB	51		//Windows 9x/NT Miniport NDIS 4.0

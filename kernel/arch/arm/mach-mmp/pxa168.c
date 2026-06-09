@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-mmp/pxa168.c
+ *  beep/arch/arm/mach-mmp/pxa168.c
  *
  *  Code specific to PXA168
  *
@@ -7,14 +7,14 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/mv_usb.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/platform_data/mv_usb.h>
 
 #include <asm/mach/time.h>
 #include <asm/system_misc.h>
@@ -26,7 +26,7 @@
 #include <mach/dma.h>
 #include <mach/devices.h>
 #include <mach/mfp.h>
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 #include <mach/pxa168.h>
 #include <mach/regs-usb.h>
 

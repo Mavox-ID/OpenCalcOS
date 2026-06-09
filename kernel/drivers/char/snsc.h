@@ -16,12 +16,12 @@
 #ifndef _SN_SYSCTL_H_
 #define _SN_SYSCTL_H_
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/semaphore.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/wait.h>
+#include <beep/fs.h>
+#include <beep/cdev.h>
+#include <beep/semaphore.h>
 #include <asm/sn/types.h>
 
 #define CHUNKSIZE 127

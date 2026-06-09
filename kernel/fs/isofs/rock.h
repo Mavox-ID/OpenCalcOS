@@ -73,7 +73,7 @@ struct RR_TF_s {
 	struct stamp times[0];	/* Variable number of these beasts */
 } __attribute__ ((packed));
 
-/* Linux-specific extension for transparent decompression */
+/* Beep-specific extension for transparent decompression */
 struct RR_ZF_s {
 	char algorithm[2];
 	char parms[2];

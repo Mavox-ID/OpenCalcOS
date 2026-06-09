@@ -1,6 +1,6 @@
 /*******************************************************************************
  * Agere Systems Inc.
- * Wireless device driver for Linux (wlags49).
+ * Wireless device driver for Beep (wlags49).
  *
  * Copyright (c) 1998-2003 Agere Systems Inc.
  * All rights reserved.
@@ -105,7 +105,7 @@
    leads to a decrease in code size as message strings are not included.
   !!!#define DHF_GET_RES_MSG */
 
-/* Linux driver specific
+/* Beep driver specific
    Prevent inclusion of stdlib.h and string.h */
 #define _INC_STDLIB
 #define _INC_STRING

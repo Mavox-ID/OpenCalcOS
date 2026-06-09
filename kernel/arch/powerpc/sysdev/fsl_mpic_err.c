@@ -10,9 +10,9 @@
  *
  */
 
-#include <linux/irq.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
+#include <beep/irq.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

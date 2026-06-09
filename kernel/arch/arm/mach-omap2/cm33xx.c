@@ -16,11 +16,11 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/io.h>
 
 #include "clockdomain.h"
 #include "cm.h"
@@ -189,7 +189,7 @@ void am33xx_cm_clkdm_enable_hwsup(s16 inst, u16 cdoffs)
  *
  * Put a clockdomain referred to by (@inst, @cdoffs) into
  * software-supervised idle mode, i.e., controlled manually by the
- * Linux OMAP clockdomain code.  No return value.
+ * Beep OMAP clockdomain code.  No return value.
  */
 void am33xx_cm_clkdm_disable_hwsup(s16 inst, u16 cdoffs)
 {

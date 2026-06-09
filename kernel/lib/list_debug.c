@@ -6,11 +6,11 @@
  * DEBUG_LIST.
  */
 
-#include <linux/export.h>
-#include <linux/list.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/rculist.h>
+#include <beep/export.h>
+#include <beep/list.h>
+#include <beep/bug.h>
+#include <beep/kernel.h>
+#include <beep/rculist.h>
 
 /*
  * Insert a new entry between two known consecutive entries.

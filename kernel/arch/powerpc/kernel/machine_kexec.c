@@ -1,5 +1,5 @@
 /*
- * Code to handle transition of Linux booting another kernel.
+ * Code to handle transition of Beep booting another kernel.
  *
  * Copyright (C) 2002-2003 Eric Biederman  <ebiederm@xmission.com>
  * GameCube/ppc32 port Copyright (C) 2004 Albert Herranz
@@ -9,13 +9,13 @@
  * Version 2.  See the file COPYING for more details.
  */
 
-#include <linux/kexec.h>
-#include <linux/reboot.h>
-#include <linux/threads.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/irq.h>
-#include <linux/ftrace.h>
+#include <beep/kexec.h>
+#include <beep/reboot.h>
+#include <beep/threads.h>
+#include <beep/memblock.h>
+#include <beep/of.h>
+#include <beep/irq.h>
+#include <beep/ftrace.h>
 
 #include <asm/machdep.h>
 #include <asm/prom.h>
@@ -187,25 +187,25 @@ static phys_addr_t kernel_end;
 static phys_addr_t crashk_size;
 
 static struct property kernel_end_prop = {
-	.name = "linux,kernel-end",
+	.name = "beep,kernel-end",
 	.length = sizeof(phys_addr_t),
 	.value = &kernel_end,
 };
 
 static struct property crashk_base_prop = {
-	.name = "linux,crashkernel-base",
+	.name = "beep,crashkernel-base",
 	.length = sizeof(phys_addr_t),
 	.value = &crashk_res.start,
 };
 
 static struct property crashk_size_prop = {
-	.name = "linux,crashkernel-size",
+	.name = "beep,crashkernel-size",
 	.length = sizeof(phys_addr_t),
 	.value = &crashk_size,
 };
 
 static struct property memory_limit_prop = {
-	.name = "linux,memory-limit",
+	.name = "beep,memory-limit",
 	.length = sizeof(unsigned long long),
 	.value = &memory_limit,
 };
@@ -216,11 +216,11 @@ static void __init export_crashk_values(struct device_node *node)
 
 	/* There might be existing crash kernel properties, but we can't
 	 * be sure what's in them, so remove them. */
-	prop = of_find_property(node, "linux,crashkernel-base", NULL);
+	prop = of_find_property(node, "beep,crashkernel-base", NULL);
 	if (prop)
 		of_remove_property(node, prop);
 
-	prop = of_find_property(node, "linux,crashkernel-size", NULL);
+	prop = of_find_property(node, "beep,crashkernel-size", NULL);
 	if (prop)
 		of_remove_property(node, prop);
 

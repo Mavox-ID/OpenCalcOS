@@ -14,7 +14,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm-generic/sections.h>
 
 #ifdef __KERNEL__

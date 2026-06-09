@@ -7,19 +7,19 @@
  *		Initial version.
  */
 
-#include <linux/kernel.h>
-#include <linux/backing-dev.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/export.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/pagevec.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/buffer_head.h>	/* grr. try_to_release_page,
+#include <beep/kernel.h>
+#include <beep/backing-dev.h>
+#include <beep/gfp.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/export.h>
+#include <beep/pagemap.h>
+#include <beep/highmem.h>
+#include <beep/pagevec.h>
+#include <beep/task_io_accounting_ops.h>
+#include <beep/buffer_head.h>	/* grr. try_to_release_page,
 				   do_invalidatepage */
-#include <linux/cleancache.h>
+#include <beep/cleancache.h>
 #include "internal.h"
 
 

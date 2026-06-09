@@ -12,15 +12,15 @@
 #ifndef __ASM_SH_GPIO_H
 #define __ASM_SH_GPIO_H
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
 
 #if defined(CONFIG_CPU_SH3)
 #include <cpu/gpio.h>
 #endif
 
 #define ARCH_NR_GPIOS 512
-#include <linux/sh_pfc.h>
+#include <beep/sh_pfc.h>
 
 #ifdef CONFIG_GPIOLIB
 

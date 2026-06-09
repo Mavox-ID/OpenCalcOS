@@ -1,8 +1,8 @@
-#include <linux/kernel.h>
-#include <linux/crash_dump.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/crash_dump.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/export.h>
 
 /*
  * If we have booted due to a crash, max_pfn will be a very low value. We need

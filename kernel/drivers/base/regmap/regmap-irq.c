@@ -10,14 +10,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/export.h>
-#include <linux/device.h>
-#include <linux/regmap.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <beep/export.h>
+#include <beep/device.h>
+#include <beep/regmap.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/irqdomain.h>
+#include <beep/pm_runtime.h>
+#include <beep/slab.h>
 
 #include "internal.h"
 

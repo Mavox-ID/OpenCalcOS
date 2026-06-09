@@ -16,7 +16,7 @@
  */
 
 #ifndef __KERNEL_STRICT_NAMES
-#include <linux/types.h>
+#include <beep/types.h>
 typedef __kernel_fsid_t	fsid_t;
 #endif
 

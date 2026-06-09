@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-kirkwood/mpp.h -- Multi Purpose Pins
+ * beep/arch/arm/mach-kirkwood/mpp.h -- Multi Purpose Pins
  *
  * Copyright 2009: Marvell Technology Group Ltd.
  *

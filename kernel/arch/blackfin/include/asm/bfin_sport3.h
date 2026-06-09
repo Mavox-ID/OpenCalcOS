@@ -20,7 +20,7 @@
 #ifndef _BFIN_SPORT3_H_
 #define _BFIN_SPORT3_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define SPORT_CTL_SPENPRI             0x00000001    /* Enable Primary Channel */
 #define SPORT_CTL_DTYPE               0x00000006    /* Data type select */

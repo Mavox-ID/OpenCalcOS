@@ -5,26 +5,26 @@
  * Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com),
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/kallsyms.h>
-#include <linux/reboot.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/timer.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/kallsyms.h>
+#include <beep/reboot.h>
+#include <beep/kprobes.h>
+#include <beep/kdebug.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/mathemu.h>
 #include <asm/cpcmd.h>
 #include <asm/lowcore.h>

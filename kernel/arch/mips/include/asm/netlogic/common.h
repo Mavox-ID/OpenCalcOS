@@ -45,8 +45,8 @@
 #define	BOOT_NMI_HANDLER	8
 
 #ifndef __ASSEMBLY__
-#include <linux/cpumask.h>
-#include <linux/spinlock.h>
+#include <beep/cpumask.h>
+#include <beep/spinlock.h>
 #include <asm/irq.h>
 #include <asm/mach-netlogic/multi-node.h>
 

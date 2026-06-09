@@ -1,7 +1,7 @@
 #ifndef _ASM_X86_HPET_H
 #define _ASM_X86_HPET_H
 
-#include <linux/msi.h>
+#include <beep/msi.h>
 
 #ifdef CONFIG_HPET_TIMER
 
@@ -90,7 +90,7 @@ static inline int arch_setup_hpet_msi(unsigned int irq, unsigned int id)
 
 #ifdef CONFIG_HPET_EMULATE_RTC
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 typedef irqreturn_t (*rtc_irq_handler)(int interrupt, void *cookie);
 extern int hpet_mask_rtc_irq_bit(unsigned long bit_mask);

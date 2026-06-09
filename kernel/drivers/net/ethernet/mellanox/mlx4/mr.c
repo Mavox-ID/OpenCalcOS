@@ -32,14 +32,14 @@
  * SOFTWARE.
  */
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/vmalloc.h>
 
-#include <linux/mlx4/cmd.h>
+#include <beep/mlx4/cmd.h>
 
 #include "mlx4.h"
 #include "icm.h"

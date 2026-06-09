@@ -3,11 +3,11 @@
  *
  * Copyright (C) 2009 Steven Rostedt <srostedt@redhat.com>
  */
-#include <linux/ring_buffer.h>
-#include <linux/completion.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/time.h>
+#include <beep/ring_buffer.h>
+#include <beep/completion.h>
+#include <beep/kthread.h>
+#include <beep/module.h>
+#include <beep/time.h>
 #include <asm/local.h>
 
 struct rb_page {

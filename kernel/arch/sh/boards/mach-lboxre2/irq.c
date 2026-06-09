@@ -1,5 +1,5 @@
 /*
- * linux/arch/sh/boards/lboxre2/irq.c
+ * beep/arch/sh/boards/lboxre2/irq.c
  *
  * Copyright (C) 2007 Nobuhiro Iwamatsu
  *
@@ -10,9 +10,9 @@
  * for more details.
  *
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 #include <asm/irq.h>
 #include <asm/io.h>
 #include <mach/lboxre2.h>

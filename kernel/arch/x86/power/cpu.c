@@ -8,9 +8,9 @@
  * Copyright (c) 2001 Patrick Mochel <mochel@osdl.org>
  */
 
-#include <linux/suspend.h>
-#include <linux/export.h>
-#include <linux/smp.h>
+#include <beep/suspend.h>
+#include <beep/export.h>
+#include <beep/smp.h>
 
 #include <asm/pgtable.h>
 #include <asm/proto.h>

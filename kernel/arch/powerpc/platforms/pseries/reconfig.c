@@ -11,12 +11,12 @@
  *	2 as published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/notifier.h>
-#include <linux/proc_fs.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <beep/kernel.h>
+#include <beep/kref.h>
+#include <beep/notifier.h>
+#include <beep/proc_fs.h>
+#include <beep/slab.h>
+#include <beep/of.h>
 
 #include <asm/prom.h>
 #include <asm/machdep.h>

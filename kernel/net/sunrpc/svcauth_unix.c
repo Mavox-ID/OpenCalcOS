@@ -1,23 +1,23 @@
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/svcauth.h>
-#include <linux/sunrpc/gss_api.h>
-#include <linux/err.h>
-#include <linux/seq_file.h>
-#include <linux/hash.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/sunrpc/types.h>
+#include <beep/sunrpc/xdr.h>
+#include <beep/sunrpc/svcsock.h>
+#include <beep/sunrpc/svcauth.h>
+#include <beep/sunrpc/gss_api.h>
+#include <beep/err.h>
+#include <beep/seq_file.h>
+#include <beep/hash.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 #include <net/ipv6.h>
-#include <linux/kernel.h>
-#include <linux/user_namespace.h>
+#include <beep/kernel.h>
+#include <beep/user_namespace.h>
 #define RPCDBG_FACILITY	RPCDBG_AUTH
 
-#include <linux/sunrpc/clnt.h>
+#include <beep/sunrpc/clnt.h>
 
 #include "netns.h"
 

@@ -1,5 +1,5 @@
 /*
- * PPC32 code to handle Linux booting another kernel.
+ * PPC32 code to handle Beep booting another kernel.
  *
  * Copyright (C) 2002-2003 Eric Biederman  <ebiederm@xmission.com>
  * GameCube/ppc32 port Copyright (C) 2004 Albert Herranz
@@ -9,9 +9,9 @@
  * Version 2.  See the file COPYING for more details.
  */
 
-#include <linux/kexec.h>
-#include <linux/mm.h>
-#include <linux/string.h>
+#include <beep/kexec.h>
+#include <beep/mm.h>
+#include <beep/string.h>
 #include <asm/cacheflush.h>
 #include <asm/hw_irq.h>
 #include <asm/io.h>

@@ -11,7 +11,7 @@
  *   NON INFRINGEMENT.  See the GNU General Public License for
  *   more details.
  *
- * based on kexec.h from other architectures in linux-2.6.18
+ * based on kexec.h from other architectures in beep-2.6.18
  */
 
 #ifndef _ASM_TILE_KEXEC_H

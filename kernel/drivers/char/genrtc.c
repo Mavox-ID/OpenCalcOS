@@ -31,29 +31,29 @@
  *	2 of the License, or (at your option) any later version.
  *
 
- *      1.01 fix for 2.3.X                    rz@linux-m68k.org
- *      1.02 merged with code from genrtc.c   rz@linux-m68k.org
- *      1.03 make it more portable            zippel@linux-m68k.org
- *      1.04 removed useless timer code       rz@linux-m68k.org
- *      1.05 portable RTC_UIE emulation       rz@linux-m68k.org
+ *      1.01 fix for 2.3.X                    rz@beep-m68k.org
+ *      1.02 merged with code from genrtc.c   rz@beep-m68k.org
+ *      1.03 make it more portable            zippel@beep-m68k.org
+ *      1.04 removed useless timer code       rz@beep-m68k.org
+ *      1.05 portable RTC_UIE emulation       rz@beep-m68k.org
  *      1.06 set_rtc_time can return an error trini@kernel.crashing.org
  *      1.07 ported to HP PARISC (hppa)	      Helge Deller <deller@gmx.de>
  */
 
 #define RTC_VERSION	"1.07"
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/fcntl.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/miscdevice.h>
+#include <beep/fcntl.h>
 
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <beep/rtc.h>
+#include <beep/init.h>
+#include <beep/poll.h>
+#include <beep/proc_fs.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
 
 #include <asm/uaccess.h>
 #include <asm/rtc.h>

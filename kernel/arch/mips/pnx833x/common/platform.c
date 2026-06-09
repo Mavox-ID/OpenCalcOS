@@ -22,20 +22,20 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/resource.h>
-#include <linux/serial.h>
-#include <linux/serial_pnx8xxx.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/resource.h>
+#include <beep/serial.h>
+#include <beep/serial_pnx8xxx.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
 
 #ifdef CONFIG_I2C_PNX0105
 /* Until i2c driver available in kernel.*/
-#include <linux/i2c-pnx0105.h>
+#include <beep/i2c-pnx0105.h>
 #endif
 
 #include <irq.h>

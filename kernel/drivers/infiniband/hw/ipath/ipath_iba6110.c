@@ -36,10 +36,10 @@
  * HT chip.
  */
 
-#include <linux/vmalloc.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/htirq.h>
+#include <beep/vmalloc.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/htirq.h>
 #include <rdma/ib_verbs.h>
 
 #include "ipath_kernel.h"

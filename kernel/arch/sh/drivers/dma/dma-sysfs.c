@@ -9,13 +9,13 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/stat.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/stat.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/string.h>
 #include <asm/dma.h>
 
 static struct bus_type dma_subsys = {

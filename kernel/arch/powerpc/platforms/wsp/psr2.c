@@ -7,14 +7,14 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/of.h>
-#include <linux/smp.h>
-#include <linux/time.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/of.h>
+#include <beep/smp.h>
+#include <beep/time.h>
 
 #include <asm/machdep.h>
 #include <asm/udbg.h>

@@ -1,18 +1,18 @@
-#include <linux/fanotify.h>
-#include <linux/fcntl.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/anon_inodes.h>
-#include <linux/fsnotify_backend.h>
-#include <linux/init.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/poll.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <beep/fanotify.h>
+#include <beep/fcntl.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/anon_inodes.h>
+#include <beep/fsnotify_backend.h>
+#include <beep/init.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/poll.h>
+#include <beep/security.h>
+#include <beep/syscalls.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/uaccess.h>
 
 #include <asm/ioctls.h>
 

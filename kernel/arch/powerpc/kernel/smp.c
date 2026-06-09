@@ -17,23 +17,23 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/cache.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/topology.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/cache.h>
+#include <beep/err.h>
+#include <beep/device.h>
+#include <beep/cpu.h>
+#include <beep/notifier.h>
+#include <beep/topology.h>
 
 #include <asm/ptrace.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/irq.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>

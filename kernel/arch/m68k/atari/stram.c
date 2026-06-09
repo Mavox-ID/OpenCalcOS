@@ -8,19 +8,19 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/bootmem.h>
-#include <linux/mount.h>
-#include <linux/blkdev.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/kdev_t.h>
+#include <beep/major.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/pagemap.h>
+#include <beep/bootmem.h>
+#include <beep/mount.h>
+#include <beep/blkdev.h>
+#include <beep/module.h>
 
 #include <asm/setup.h>
 #include <asm/machdep.h>

@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/omap2/dss/display.c
+ * beep/drivers/video/omap2/dss/display.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -22,10 +22,10 @@
 
 #define DSS_SUBSYS_NAME "DISPLAY"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/jiffies.h>
+#include <beep/platform_device.h>
 
 #include <video/omapdss.h>
 #include "dss.h"

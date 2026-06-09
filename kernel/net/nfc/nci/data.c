@@ -23,16 +23,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": %s: " fmt, __func__
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
-#include <linux/skbuff.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/wait.h>
+#include <beep/bitops.h>
+#include <beep/skbuff.h>
 
 #include "../nfc.h"
 #include <net/nfc/nci.h>
 #include <net/nfc/nci_core.h>
-#include <linux/nfc.h>
+#include <beep/nfc.h>
 
 /* Complete data exchange transaction and forward skb to nfc core */
 void nci_data_exchange_complete(struct nci_dev *ndev, struct sk_buff *skb,

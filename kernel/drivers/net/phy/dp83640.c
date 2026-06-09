@@ -20,16 +20,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/net_tstamp.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/ptp_classify.h>
-#include <linux/ptp_clock_kernel.h>
+#include <beep/ethtool.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/mii.h>
+#include <beep/module.h>
+#include <beep/net_tstamp.h>
+#include <beep/netdevice.h>
+#include <beep/phy.h>
+#include <beep/ptp_classify.h>
+#include <beep/ptp_clock_kernel.h>
 
 #include "dp83640_reg.h"
 

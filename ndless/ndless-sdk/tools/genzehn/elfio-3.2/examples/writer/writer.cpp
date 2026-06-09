@@ -9,7 +9,7 @@ int main( void )
     // You can't proceed without this function call!
     writer.create( ELFCLASS32, ELFDATA2LSB );
 
-    writer.set_os_abi( ELFOSABI_LINUX );
+    writer.set_os_abi( ELFOSABI_BEEP );
     writer.set_type( ET_EXEC );
     writer.set_machine( EM_386 );
 

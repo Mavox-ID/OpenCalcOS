@@ -77,14 +77,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/workqueue.h>
-#include <linux/leds-tca6507.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/leds.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/gpio.h>
+#include <beep/workqueue.h>
+#include <beep/leds-tca6507.h>
 
 /* LED select registers determine the source that drives LED outputs */
 #define TCA6507_LS_LED_OFF	0x0	/* Output HI-Z (off) */

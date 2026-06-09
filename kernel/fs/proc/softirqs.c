@@ -1,7 +1,7 @@
-#include <linux/init.h>
-#include <linux/kernel_stat.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/init.h>
+#include <beep/kernel_stat.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 
 /*
  * /proc/softirqs  ... display the number of softirqs

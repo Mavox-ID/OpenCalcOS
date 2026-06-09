@@ -1,7 +1,7 @@
 /*
  * OpenRISC time.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -14,16 +14,16 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/interrupt.h>
-#include <linux/ftrace.h>
+#include <beep/kernel.h>
+#include <beep/time.h>
+#include <beep/timex.h>
+#include <beep/interrupt.h>
+#include <beep/ftrace.h>
 
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/irq.h>
+#include <beep/io.h>
 
 #include <asm/cpuinfo.h>
 
@@ -171,7 +171,7 @@ void __init time_init(void)
 
 	upr = mfspr(SPR_UPR);
 	if (!(upr & SPR_UPR_TTP))
-		panic("Linux not supported on devices without tick timer");
+		panic("Beep not supported on devices without tick timer");
 
 	openrisc_timer_init();
 	openrisc_clockevent_init();

@@ -14,7 +14,7 @@
 #ifndef _ASM_TILE_PTRACE_H
 #define _ASM_TILE_PTRACE_H
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 #ifndef __ASSEMBLY__
 /* Benefit from consistent use of "long" on all chips. */

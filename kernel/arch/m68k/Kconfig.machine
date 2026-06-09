@@ -38,7 +38,7 @@ config APOLLO
 	depends on MMU
 	select MMU_MOTOROLA if MMU
 	help
-	  Say Y here if you want to run Linux on an MC680x0-based Apollo
+	  Say Y here if you want to run Beep on an MC680x0-based Apollo
 	  Domain workstation such as the DN3500.
 
 config VME
@@ -102,7 +102,7 @@ config SUN3X
 	  This option enables support for the Sun 3x series of workstations.
 	  Be warned that this support is very experimental.
 	  Note that Sun 3x kernels are not compatible with Sun 3 hardware.
-	  General Linux information on the Sun 3x series (now discontinued)
+	  General Beep information on the Sun 3x series (now discontinued)
 	  is at <http://www.angelfire.com/ca2/tech68k/sun3.html>.
 
 	  If you don't want to compile a kernel for a Sun 3x, say N.

@@ -24,23 +24,23 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/vmalloc.h>
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 
-#include <linux/kmod.h>
+#include <beep/kmod.h>
 
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/mutex.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/delay.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>

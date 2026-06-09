@@ -7,12 +7,12 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <beep/clockchips.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/of_address.h>
 #include <asm/soc.h>
 #include <asm/dscr.h>
 #include <asm/special_insns.h>

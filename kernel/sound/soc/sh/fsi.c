@@ -5,22 +5,22 @@
  * Kuninori Morimoto <morimoto.kuninori@renesas.com>
  *
  * Based on ssi.c
- * Copyright (c) 2007 Manuel Lauss <mano@roarinelk.homelinux.net>
+ * Copyright (c) 2007 Manuel Lauss <mano@roarinelk.homebeep.net>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
-#include <linux/io.h>
-#include <linux/scatterlist.h>
-#include <linux/sh_dma.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/pm_runtime.h>
+#include <beep/io.h>
+#include <beep/scatterlist.h>
+#include <beep/sh_dma.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/workqueue.h>
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
 #include <sound/sh_fsi.h>

@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio FCoE driver for Linux.
+ * This file is part of the Chelsio FCoE driver for Beep.
  *
  * Copyright (c) 2008-2012 Chelsio Communications, Inc. All rights reserved.
  *
@@ -34,18 +34,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/aer.h>
-#include <linux/mm.h>
-#include <linux/notifier.h>
-#include <linux/kdebug.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/string.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/aer.h>
+#include <beep/mm.h>
+#include <beep/notifier.h>
+#include <beep/kdebug.h>
+#include <beep/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/string.h>
+#include <beep/export.h>
 
 #include "csio_init.h"
 #include "csio_defs.h"

@@ -18,17 +18,17 @@
  *
  */
 
-#include <linux/hardirq.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/hardirq.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/if_arp.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/pci.h>
+#include <beep/sched.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
+#include <beep/if_arp.h>
 
 #include <asm/io.h>
 

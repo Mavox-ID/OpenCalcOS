@@ -18,11 +18,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/io.h>
 
 #include <asm/page.h>
 #include <asm/mach/map.h>

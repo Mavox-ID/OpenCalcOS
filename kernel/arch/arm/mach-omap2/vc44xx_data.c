@@ -14,9 +14,9 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/init.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/init.h>
 
 #include "common.h"
 

@@ -33,30 +33,30 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/device.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/serial.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/sizes.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/sysrq.h>
+#include <beep/device.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial_core.h>
+#include <beep/serial.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/serial.h>
+#include <beep/clk.h>
+#include <beep/slab.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/scatterlist.h>
+#include <beep/delay.h>
+#include <beep/types.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/sizes.h>
+#include <beep/io.h>
 
 #define UART_NR			14
 

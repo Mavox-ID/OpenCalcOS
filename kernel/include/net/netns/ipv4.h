@@ -5,7 +5,7 @@
 #ifndef __NETNS_IPV4_H__
 #define __NETNS_IPV4_H__
 
-#include <linux/uidgid.h>
+#include <beep/uidgid.h>
 #include <net/inet_frag.h>
 
 struct tcpm_hash_bucket;

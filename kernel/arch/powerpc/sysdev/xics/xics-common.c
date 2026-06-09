@@ -7,19 +7,19 @@
  *  2 of the License, or (at your option) any later version.
  *
  */
-#include <linux/types.h>
-#include <linux/threads.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/debugfs.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/types.h>
+#include <beep/threads.h>
+#include <beep/kernel.h>
+#include <beep/irq.h>
+#include <beep/debugfs.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/cpu.h>
+#include <beep/of.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
 #include <asm/prom.h>
 #include <asm/io.h>

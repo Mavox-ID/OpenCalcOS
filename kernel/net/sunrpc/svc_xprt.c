@@ -1,20 +1,20 @@
 /*
- * linux/net/sunrpc/svc_xprt.c
+ * beep/net/sunrpc/svc_xprt.c
  *
  * Author: Tom Tucker <tom@opengridcomputing.com>
  */
 
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/freezer.h>
+#include <beep/kthread.h>
+#include <beep/slab.h>
 #include <net/sock.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/svc_xprt.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/xprt.h>
-#include <linux/module.h>
+#include <beep/sunrpc/stats.h>
+#include <beep/sunrpc/svc_xprt.h>
+#include <beep/sunrpc/svcsock.h>
+#include <beep/sunrpc/xprt.h>
+#include <beep/module.h>
 
 #define RPCDBG_FACILITY	RPCDBG_SVCXPRT
 

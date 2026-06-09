@@ -47,7 +47,7 @@ This makes kernel send FIN after all data is written:
     shutdown(sock, SHUT_WR);
     close(sock);
 
-However, experiments on Linux 3.9.4 show that kernel can return from
+However, experiments on Beep 3.9.4 show that kernel can return from
 shutdown() and from close() before all data is sent,
 and if peer sends any data to us after this, kernel still responds with
 RST before all our data is sent.

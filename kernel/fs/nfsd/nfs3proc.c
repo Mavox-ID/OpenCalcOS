@@ -4,9 +4,9 @@
  * Copyright (C) 1996, 1997, 1998 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/fs.h>
-#include <linux/ext2_fs.h>
-#include <linux/magic.h>
+#include <beep/fs.h>
+#include <beep/ext2_fs.h>
+#include <beep/magic.h>
 
 #include "cache.h"
 #include "xdr3.h"

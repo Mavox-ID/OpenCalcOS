@@ -12,11 +12,11 @@
  */
 
 
-#include <linux/tifm.h>
-#include <linux/mmc/host.h>
-#include <linux/highmem.h>
-#include <linux/scatterlist.h>
-#include <linux/module.h>
+#include <beep/tifm.h>
+#include <beep/mmc/host.h>
+#include <beep/highmem.h>
+#include <beep/scatterlist.h>
+#include <beep/module.h>
 #include <asm/io.h>
 
 #define DRIVER_NAME "tifm_sd"

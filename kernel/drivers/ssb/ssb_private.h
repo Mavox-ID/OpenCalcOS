@@ -1,9 +1,9 @@
-#ifndef LINUX_SSB_PRIVATE_H_
-#define LINUX_SSB_PRIVATE_H_
+#ifndef BEEP_SSB_PRIVATE_H_
+#define BEEP_SSB_PRIVATE_H_
 
-#include <linux/ssb/ssb.h>
-#include <linux/types.h>
-#include <linux/bcm47xx_wdt.h>
+#include <beep/ssb/ssb.h>
+#include <beep/types.h>
+#include <beep/bcm47xx_wdt.h>
 
 
 #define PFX	"ssb: "
@@ -259,4 +259,4 @@ static inline int ssb_gpio_init(struct ssb_bus *bus)
 }
 #endif /* CONFIG_SSB_DRIVER_GPIO */
 
-#endif /* LINUX_SSB_PRIVATE_H_ */
+#endif /* BEEP_SSB_PRIVATE_H_ */

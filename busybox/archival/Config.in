@@ -159,7 +159,7 @@ config BZIP2_SMALL
 	help
 	Trade code size versus speed.
 	Approximate values with gcc-6.3.0 "bzip -9" compressing
-	linux-4.15.tar were:
+	beep-4.15.tar were:
 	value         time (sec)  code size (386)
 	9 (smallest)       70.11             7687
 	8                  67.93             8091
@@ -398,12 +398,12 @@ config FEATURE_TAR_NOPRESERVE_TIME
 	default y
 	depends on TAR
 
-config FEATURE_TAR_SELINUX
-	bool "Support extracting SELinux labels"
+config FEATURE_TAR_SEBEEP
+	bool "Support extracting SEBeep labels"
 	default n
-	depends on TAR && SELINUX
+	depends on TAR && SEBEEP
 	help
-	With this option busybox supports restoring SELinux labels
+	With this option busybox supports restoring SEBeep labels
 	when extracting files from tar archives.
 config UNZIP
 	bool "unzip (26 kb)"

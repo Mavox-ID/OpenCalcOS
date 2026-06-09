@@ -1,4 +1,4 @@
-#include <linux/module.h>
+#include <beep/module.h>
 
 union ull_union {
 	unsigned long long ull;

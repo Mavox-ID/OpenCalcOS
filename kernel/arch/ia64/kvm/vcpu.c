@@ -21,8 +21,8 @@
  *  Xiantao Zhang <xiantao.zhang@intel.com>
  */
 
-#include <linux/kvm_host.h>
-#include <linux/types.h>
+#include <beep/kvm_host.h>
+#include <beep/types.h>
 
 #include <asm/processor.h>
 #include <asm/ia64regs.h>
@@ -47,7 +47,7 @@ int mm_switch_table[8][8] = {
 	/*
 	 *  (it,dt,rt): (0,0,0) -> (1,1,1)
 	 *  This kind of transition usually occurs in the very early
-	 *  stage of Linux boot up procedure. Another case is in efi
+	 *  stage of Beep boot up procedure. Another case is in efi
 	 *  and pal calls. (see "arch/ia64/kernel/head.S")
 	 *
 	 *  (it,dt,rt): (0,0,0) -> (0,1,1)
@@ -71,7 +71,7 @@ int mm_switch_table[8][8] = {
 	{0,  0,  0,  0,  0,  0,  0,  SW_P2V},
 	/*
 	 *  (it,dt,rt): (1,0,1) -> (1,1,1)
-	 *  This kind of transition usually occurs when Linux returns
+	 *  This kind of transition usually occurs when Beep returns
 	 *  from the low level TLB miss handlers.
 	 *  (see "arch/ia64/kernel/ivt.S")
 	 */
@@ -79,7 +79,7 @@ int mm_switch_table[8][8] = {
 	{0,  0,  0,  0,  0,  0,  0,  0},
 	/*
 	 *  (it,dt,rt): (1,1,1) -> (1,0,1)
-	 *  This kind of transition usually occurs in Linux low level
+	 *  This kind of transition usually occurs in Beep low level
 	 *  TLB miss handler. (see "arch/ia64/kernel/ivt.S")
 	 *
 	 *  (it,dt,rt): (1,1,1) -> (0,0,0)

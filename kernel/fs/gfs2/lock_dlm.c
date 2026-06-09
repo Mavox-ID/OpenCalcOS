@@ -7,12 +7,12 @@
  * of the GNU General Public License version 2.
  */
 
-#include <linux/fs.h>
-#include <linux/dlm.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/gfs2_ondisk.h>
+#include <beep/fs.h>
+#include <beep/dlm.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/gfs2_ondisk.h>
 
 #include "incore.h"
 #include "glock.h"

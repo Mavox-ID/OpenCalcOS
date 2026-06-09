@@ -1,11 +1,11 @@
-#include <linux/dcache.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/hardirq.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/dcache.h>
+#include <beep/debugfs.h>
+#include <beep/delay.h>
+#include <beep/hardirq.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #include "decl.h"
 #include "cmd.h"

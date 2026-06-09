@@ -10,8 +10,8 @@
  *
  */
 
-#include <linux/sys.h>
-#include <linux/linkage.h>
+#include <beep/sys.h>
+#include <beep/linkage.h>
 #include <asm/spr-regs.h>
 
 ###############################################################################

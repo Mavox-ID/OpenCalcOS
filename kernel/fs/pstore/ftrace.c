@@ -11,19 +11,19 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/irqflags.h>
-#include <linux/percpu.h>
-#include <linux/smp.h>
-#include <linux/atomic.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/ftrace.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
-#include <linux/err.h>
-#include <linux/cache.h>
+#include <beep/kernel.h>
+#include <beep/compiler.h>
+#include <beep/irqflags.h>
+#include <beep/percpu.h>
+#include <beep/smp.h>
+#include <beep/atomic.h>
+#include <beep/types.h>
+#include <beep/mutex.h>
+#include <beep/ftrace.h>
+#include <beep/fs.h>
+#include <beep/debugfs.h>
+#include <beep/err.h>
+#include <beep/cache.h>
 #include <asm/barrier.h>
 #include "internal.h"
 

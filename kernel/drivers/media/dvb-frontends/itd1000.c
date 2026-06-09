@@ -1,7 +1,7 @@
 /*
  *  Driver for the Integrant ITD1000 "Zero-IF Tuner IC for Direct Broadcast Satellite"
  *
- *  Copyright (c) 2007-8 Patrick Boettcher <pb@linuxtv.org>
+ *  Copyright (c) 2007-8 Patrick Boettcher <pb@beeptv.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -19,12 +19,12 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.=
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/dvb/frontend.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/delay.h>
+#include <beep/dvb/frontend.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
 
 #include "dvb_frontend.h"
 
@@ -394,6 +394,6 @@ struct dvb_frontend *itd1000_attach(struct dvb_frontend *fe, struct i2c_adapter 
 }
 EXPORT_SYMBOL(itd1000_attach);
 
-MODULE_AUTHOR("Patrick Boettcher <pb@linuxtv.org>");
+MODULE_AUTHOR("Patrick Boettcher <pb@beeptv.org>");
 MODULE_DESCRIPTION("Integrant ITD1000 driver");
 MODULE_LICENSE("GPL");

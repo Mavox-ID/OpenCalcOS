@@ -1,5 +1,5 @@
 
-/* Linux driver for Disk-On-Chip devices			*/
+/* Beep driver for Disk-On-Chip devices			*/
 /* Probe routines common to all DoC devices			*/
 /* (C) 1999 Machine Vision Holdings, Inc.			*/
 /* (C) 1999-2003 David Woodhouse <dwmw2@infradead.org>		*/
@@ -33,22 +33,22 @@
    for you, you can try the old one by undefining DOC_SINGLE_DRIVER
    below and also enabling it in your configuration. If this fixes the
    problems, please send a report to the MTD mailing list at
-   <linux-mtd@lists.infradead.org>.
+   <beep-mtd@lists.infradead.org>.
 */
 #define DOC_SINGLE_DRIVER
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 #include <asm/errno.h>
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/types.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/types.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/doc2000.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/doc2000.h>
 
 
 static unsigned long doc_config_location = CONFIG_MTD_DOCPROBE_ADDRESS;
@@ -83,7 +83,7 @@ static inline int __init doccheck(void __iomem *potential, unsigned long physadr
 	unsigned char tmp2;
 #endif
 
-	/* Routine copied from the Linux DOC driver */
+	/* Routine copied from the Beep DOC driver */
 
 #ifdef CONFIG_MTD_DOCPROBE_55AA
 	/* Check for 0x55 0xAA signature at beginning of window,

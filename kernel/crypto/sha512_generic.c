@@ -11,14 +11,14 @@
  *
  */
 #include <crypto/internal/hash.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/crypto.h>
-#include <linux/types.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/crypto.h>
+#include <beep/types.h>
 #include <crypto/sha.h>
-#include <linux/percpu.h>
+#include <beep/percpu.h>
 #include <asm/byteorder.h>
 
 static inline u64 Ch(u64 x, u64 y, u64 z)

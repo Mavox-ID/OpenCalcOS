@@ -17,7 +17,7 @@
 #ifndef LAYER2_H
 #define LAYER2_H
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 #include <asm/byteorder.h>
 

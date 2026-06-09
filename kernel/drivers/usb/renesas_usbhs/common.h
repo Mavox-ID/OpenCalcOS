@@ -17,8 +17,8 @@
 #ifndef RENESAS_USB_DRIVER_H
 #define RENESAS_USB_DRIVER_H
 
-#include <linux/platform_device.h>
-#include <linux/usb/renesas_usbhs.h>
+#include <beep/platform_device.h>
+#include <beep/usb/renesas_usbhs.h>
 
 struct usbhs_priv;
 

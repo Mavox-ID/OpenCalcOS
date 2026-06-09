@@ -1,6 +1,6 @@
 /*
  *	DCCP over IPv6
- *	Linux INET6 implementation
+ *	Beep INET6 implementation
  *
  *	Based on net/dccp6/ipv6.c
  *
@@ -12,10 +12,10 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/xfrm.h>
+#include <beep/module.h>
+#include <beep/random.h>
+#include <beep/slab.h>
+#include <beep/xfrm.h>
 
 #include <net/addrconf.h>
 #include <net/inet_common.h>
@@ -115,7 +115,7 @@ static void dccp_v6_err(struct sk_buff *skb, struct inet6_skb_parm *opt,
 
 	bh_lock_sock(sk);
 	if (sock_owned_by_user(sk))
-		NET_INC_STATS_BH(net, LINUX_MIB_LOCKDROPPEDICMPS);
+		NET_INC_STATS_BH(net, BEEP_MIB_LOCKDROPPEDICMPS);
 
 	if (sk->sk_state == DCCP_CLOSED)
 		goto out;
@@ -124,7 +124,7 @@ static void dccp_v6_err(struct sk_buff *skb, struct inet6_skb_parm *opt,
 	seq = dccp_hdr_seq(dh);
 	if ((1 << sk->sk_state) & ~(DCCPF_REQUESTING | DCCPF_LISTEN) &&
 	    !between48(seq, dp->dccps_awl, dp->dccps_awh)) {
-		NET_INC_STATS_BH(net, LINUX_MIB_OUTOFWINDOWICMPS);
+		NET_INC_STATS_BH(net, BEEP_MIB_OUTOFWINDOWICMPS);
 		goto out;
 	}
 
@@ -177,7 +177,7 @@ static void dccp_v6_err(struct sk_buff *skb, struct inet6_skb_parm *opt,
 
 		if (!between48(seq, dccp_rsk(req)->dreq_iss,
 				    dccp_rsk(req)->dreq_gss)) {
-			NET_INC_STATS_BH(net, LINUX_MIB_OUTOFWINDOWICMPS);
+			NET_INC_STATS_BH(net, BEEP_MIB_OUTOFWINDOWICMPS);
 			goto out;
 		}
 
@@ -594,11 +594,11 @@ static struct sock *dccp_v6_request_recv_sock(struct sock *sk,
 	return newsk;
 
 out_overflow:
-	NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_LISTENOVERFLOWS);
+	NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_LISTENOVERFLOWS);
 out_nonewsk:
 	dst_release(dst);
 out:
-	NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_LISTENDROPS);
+	NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_LISTENDROPS);
 	return NULL;
 }
 

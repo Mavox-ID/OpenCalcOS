@@ -21,26 +21,26 @@
  * USA
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/blkdev.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/pci.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/blkdev.h>
+#include <beep/io.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_transport.h>
 #include <scsi/scsi_eh.h>
-#include <linux/uaccess.h>
-#include <linux/kthread.h>
+#include <beep/uaccess.h>
+#include <beep/kthread.h>
 
 #include "mvumi.h"
 
@@ -869,7 +869,7 @@ static void mvumi_hs_build_page(struct mvumi_hba *mhba,
 		hs_page2 = (struct mvumi_hs_page2 *) hs_header;
 		hs_header->frame_length = sizeof(*hs_page2) - 4;
 		memset(hs_header->frame_content, 0, hs_header->frame_length);
-		hs_page2->host_type = 3; /* 3 mean linux*/
+		hs_page2->host_type = 3; /* 3 mean beep*/
 		if (mhba->hba_capability & HS_CAPABILITY_SUPPORT_DYN_SRC)
 			hs_page2->host_cap = 0x08;/* host dynamic source mode */
 		hs_page2->host_ver.ver_major = VER_MAJOR;

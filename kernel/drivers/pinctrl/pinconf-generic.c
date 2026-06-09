@@ -11,15 +11,15 @@
 
 #define pr_fmt(fmt) "generic pinconfig core: " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/pinctrl/pinctrl.h>
+#include <beep/pinctrl/pinconf.h>
+#include <beep/pinctrl/pinconf-generic.h>
 #include "core.h"
 #include "pinconf.h"
 

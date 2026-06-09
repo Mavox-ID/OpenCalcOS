@@ -18,16 +18,16 @@
  * Additionally, the spu_sync_buffer function is provided as a helper
  * for recoding actual SPU program counter samples to the event buffer.
  */
-#include <linux/dcookies.h>
-#include <linux/kref.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/numa.h>
-#include <linux/oprofile.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/dcookies.h>
+#include <beep/kref.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/notifier.h>
+#include <beep/numa.h>
+#include <beep/oprofile.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 #include "pr_util.h"
 
 #define RELEASE_ALL 9999

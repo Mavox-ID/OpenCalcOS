@@ -1,13 +1,13 @@
 /*
  * fs/logfs/file.c	- prepare_write, commit_write and friends
  *
- * As should be obvious for Linux kernel code, license is GPLv2
+ * As should be obvious for Beep kernel code, license is GPLv2
  *
  * Copyright (c) 2005-2008 Joern Engel <joern@logfs.org>
  */
 #include "logfs.h"
-#include <linux/sched.h>
-#include <linux/writeback.h>
+#include <beep/sched.h>
+#include <beep/writeback.h>
 
 static int logfs_write_begin(struct file *file, struct address_space *mapping,
 		loff_t pos, unsigned len, unsigned flags,

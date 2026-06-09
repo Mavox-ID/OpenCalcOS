@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/devtree.c
+ *  beep/arch/arm/kernel/devtree.c
  *
  *  Copyright (C) 2009 Canonical Ltd. <jeremy.kerr@canonical.com>
  *
@@ -8,16 +8,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/bootmem.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/bootmem.h>
+#include <beep/memblock.h>
+#include <beep/of.h>
+#include <beep/of_fdt.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
 
 #include <asm/cputype.h>
 #include <asm/setup.h>

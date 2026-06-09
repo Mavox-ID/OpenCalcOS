@@ -8,14 +8,14 @@
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/clkdev.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
+#include <beep/clkdev.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
 
 #include <asm/clock.h>
 #include <asm/setup.h>

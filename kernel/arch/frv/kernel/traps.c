@@ -9,16 +9,16 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/user.h>
-#include <linux/string.h>
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/types.h>
+#include <beep/user.h>
+#include <beep/string.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
+#include <beep/module.h>
 
 #include <asm/asm-offsets.h>
 #include <asm/setup.h>

@@ -3,13 +3,13 @@
  * Licensed under the GPL
  */
 
-#include <linux/fs.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/major.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/console.h>
+#include <beep/fs.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/major.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/console.h>
 #include <asm/termbits.h>
 #include <asm/irq.h>
 #include "ssl.h"

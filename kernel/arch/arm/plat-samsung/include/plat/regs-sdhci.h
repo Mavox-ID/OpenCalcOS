@@ -1,8 +1,8 @@
-/* linux/arch/arm/plat-s3c/include/plat/regs-sdhci.h
+/* beep/arch/arm/plat-s3c/include/plat/regs-sdhci.h
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C Platform - SDHCI (HSMMC) register definitions

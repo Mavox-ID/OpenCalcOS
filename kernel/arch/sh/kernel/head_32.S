@@ -11,8 +11,8 @@
  *
  * Head.S contains the SH exception handlers and startup code.
  */
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
 #include <asm/thread_info.h>
 #include <asm/mmu.h>
 #include <cpu/mmu_context.h>

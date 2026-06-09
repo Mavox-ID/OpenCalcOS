@@ -11,15 +11,15 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <beep/clk.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/pm.h>
+#include <beep/regmap.h>
+#include <beep/slab.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>

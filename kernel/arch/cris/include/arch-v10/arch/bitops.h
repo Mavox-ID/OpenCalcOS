@@ -1,4 +1,4 @@
-/* asm/arch/bitops.h for Linux/CRISv10 */
+/* asm/arch/bitops.h for Beep/CRISv10 */
 
 #ifndef _CRIS_ARCH_BITOPS_H
 #define _CRIS_ARCH_BITOPS_H

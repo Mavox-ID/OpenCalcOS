@@ -21,7 +21,7 @@ export AWK
 CHECKFLAGS	+= -m64 -D__ia64=1 -D__ia64__=1 -D_LP64 -D__LP64__
 
 OBJCOPYFLAGS	:= --strip-all
-LDFLAGS_vmlinux	:= -static
+LDFLAGS_vmbeep	:= -static
 KBUILD_LDFLAGS_MODULE += -T $(srctree)/arch/ia64/module.lds
 KBUILD_AFLAGS_KERNEL := -mconstant-gp
 EXTRA		:=
@@ -38,7 +38,7 @@ $(error Sorry, you need a newer version of the assember, one that is built from	
 	a source-tree that post-dates 18-Dec-2002.  You can find a pre-compiled	\
 	static binary of such an assembler at:					\
 										\
-		ftp://ftp.hpl.hp.com/pub/linux-ia64/gas-030124.tar.gz)
+		ftp://ftp.hpl.hp.com/pub/beep-ia64/gas-030124.tar.gz)
 endif
 
 KBUILD_CFLAGS += $(cflags-y)
@@ -70,32 +70,32 @@ PHONY += boot compressed check
 
 all: compressed unwcheck
 
-compressed: vmlinux.gz
+compressed: vmbeep.gz
 
-vmlinuz: vmlinux.gz
+vmlinuz: vmbeep.gz
 
-vmlinux.gz: vmlinux
+vmbeep.gz: vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $@
 
-unwcheck: vmlinux
+unwcheck: vmbeep
 	-$(Q)READELF=$(READELF) python $(srctree)/arch/ia64/scripts/unwcheck.py $<
 
 archclean:
 	$(Q)$(MAKE) $(clean)=$(boot)
 
-CLEAN_FILES += vmlinux.gz bootloader
+CLEAN_FILES += vmbeep.gz bootloader
 
-boot:	lib/lib.a vmlinux
+boot:	lib/lib.a vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $@
 
-install: vmlinux.gz
+install: vmbeep.gz
 	sh $(srctree)/arch/ia64/install.sh $(KERNELRELEASE) $< System.map "$(INSTALL_PATH)"
 
 define archhelp
   echo '* compressed	- Build compressed kernel image'
   echo '  install	- Install compressed kernel image'
-  echo '  boot		- Build vmlinux and bootloader for Ski simulator'
-  echo '* unwcheck	- Check vmlinux for invalid unwind info'
+  echo '  boot		- Build vmbeep and bootloader for Ski simulator'
+  echo '* unwcheck	- Check vmbeep for invalid unwind info'
 endef
 
 archprepare: make_nr_irqs_h FORCE

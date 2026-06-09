@@ -1,5 +1,5 @@
 /*
- * include/linux/ashmem.h
+ * include/beep/ashmem.h
  *
  * Copyright 2008 Google Inc.
  * Author: Robert Love
@@ -9,11 +9,11 @@
  * General Public License.
  */
 
-#ifndef _LINUX_ASHMEM_H
-#define _LINUX_ASHMEM_H
+#ifndef _BEEP_ASHMEM_H
+#define _BEEP_ASHMEM_H
 
-#include <linux/limits.h>
-#include <linux/ioctl.h>
+#include <beep/limits.h>
+#include <beep/ioctl.h>
 
 #define ASHMEM_NAME_LEN		256
 
@@ -45,4 +45,4 @@ struct ashmem_pin {
 #define ASHMEM_GET_PIN_STATUS	_IO(__ASHMEMIOC, 9)
 #define ASHMEM_PURGE_ALL_CACHES	_IO(__ASHMEMIOC, 10)
 
-#endif	/* _LINUX_ASHMEM_H */
+#endif	/* _BEEP_ASHMEM_H */

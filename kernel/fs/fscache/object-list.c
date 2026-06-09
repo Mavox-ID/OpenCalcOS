@@ -10,10 +10,10 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL COOKIE
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/key.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/key.h>
 #include <keys/user-type.h>
 #include "internal.h"
 

@@ -10,7 +10,7 @@
 #define _ASM_PAGE_H
 
 #include <spaces.h>
-#include <linux/const.h>
+#include <beep/const.h>
 
 /*
  * PAGE_SHIFT determines the page size
@@ -45,7 +45,7 @@
 #define HUGETLB_PAGE_ORDER	({BUILD_BUG(); 0; })
 #endif /* CONFIG_MIPS_HUGE_TLB_SUPPORT */
 
-#include <linux/pfn.h>
+#include <beep/pfn.h>
 #include <asm/io.h>
 
 extern void build_clear_page(void);
@@ -157,12 +157,12 @@ typedef struct { unsigned long pgprot; } pgprot_t;
  * (lmo) rsp. 8431fd094d625b94d364fe393076ccef88e6ce18 (kernel.org).  The
  * discussion can be found in lkml posting
  * <a2ebde260608230500o3407b108hc03debb9da6e62c@mail.gmail.com> which is
- * archived at http://lists.linuxcoding.com/kernel/2006-q3/msg17360.html
+ * archived at http://lists.beepcoding.com/kernel/2006-q3/msg17360.html
  *
  * It is unclear if the misscompilations mentioned in
  * http://lkml.org/lkml/2010/8/8/138 also affect MIPS so we keep this one
  * until GCC 3.x has been retired before we can apply
- * https://patchwork.linux-mips.org/patch/1541/
+ * https://patchwork.beep-mips.org/patch/1541/
  */
 
 #define __pa_symbol(x)	__pa(RELOC_HIDE((unsigned long)(x), 0))
@@ -174,7 +174,7 @@ typedef struct { unsigned long pgprot; } pgprot_t;
 #define pfn_valid(pfn)							\
 ({									\
 	unsigned long __pfn = (pfn);					\
-	/* avoid <linux/bootmem.h> include hell */			\
+	/* avoid <beep/bootmem.h> include hell */			\
 	extern unsigned long min_low_pfn;				\
 									\
 	__pfn >= min_low_pfn && __pfn < max_mapnr;			\
@@ -182,7 +182,7 @@ typedef struct { unsigned long pgprot; } pgprot_t;
 
 #elif defined(CONFIG_SPARSEMEM)
 
-/* pfn_valid is defined in linux/mmzone.h */
+/* pfn_valid is defined in beep/mmzone.h */
 
 #elif defined(CONFIG_NEED_MULTIPLE_NODES)
 

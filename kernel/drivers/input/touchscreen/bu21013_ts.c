@@ -4,19 +4,19 @@
  * License terms:GNU General Public License (GPL) version 2
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/workqueue.h>
-#include <linux/input.h>
-#include <linux/input/bu21013.h>
-#include <linux/slab.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/workqueue.h>
+#include <beep/input.h>
+#include <beep/input/bu21013.h>
+#include <beep/slab.h>
+#include <beep/regulator/consumer.h>
+#include <beep/module.h>
+#include <beep/gpio.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
 
 #define PEN_DOWN_INTR	0
 #define MAX_FINGERS	2

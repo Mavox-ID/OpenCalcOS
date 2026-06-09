@@ -9,22 +9,22 @@
  * License version 2.  This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/nand.h>
-#include <linux/timer.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/i2c.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/pci.h>
+#include <beep/irq.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/nand.h>
+#include <beep/timer.h>
+#include <beep/mv643xx_eth.h>
+#include <beep/i2c.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/pci.h>
 #include <mach/orion5x.h>
-#include <linux/platform_data/mtd-orion_nand.h>
+#include <beep/platform_data/mtd-orion_nand.h>
 #include "common.h"
 #include "mpp.h"
 

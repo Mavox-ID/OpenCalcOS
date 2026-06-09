@@ -10,10 +10,10 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/gpio.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/gpio.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

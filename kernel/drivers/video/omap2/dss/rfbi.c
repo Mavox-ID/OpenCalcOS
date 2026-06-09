@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/omap2/dss/rfbi.c
+ * beep/drivers/video/omap2/dss/rfbi.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -22,20 +22,20 @@
 
 #define DSS_SUBSYS_NAME "RFBI"
 
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
-#include <linux/vmalloc.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/kfifo.h>
-#include <linux/ktime.h>
-#include <linux/hrtimer.h>
-#include <linux/seq_file.h>
-#include <linux/semaphore.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <beep/kernel.h>
+#include <beep/dma-mapping.h>
+#include <beep/export.h>
+#include <beep/vmalloc.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/kfifo.h>
+#include <beep/ktime.h>
+#include <beep/hrtimer.h>
+#include <beep/seq_file.h>
+#include <beep/semaphore.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
 
 #include <video/omapdss.h>
 #include "dss.h"

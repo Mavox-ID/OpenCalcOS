@@ -8,13 +8,13 @@
 #ifndef __ASM_MACH_GENERIC_FLOPPY_H
 #define __ASM_MACH_GENERIC_FLOPPY_H
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
-#include <linux/mm.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/sched.h>
+#include <beep/linkage.h>
+#include <beep/types.h>
+#include <beep/mm.h>
 
 #include <asm/bootinfo.h>
 #include <asm/cachectl.h>

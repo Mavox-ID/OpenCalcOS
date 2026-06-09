@@ -22,7 +22,7 @@
 		#size-cells = <0>;
 
 		button@1 {
-			linux,code = <11>;
+			beep,code = <11>;
 			label = "SFH7741 Proximity Sensor";
 		};
 	};

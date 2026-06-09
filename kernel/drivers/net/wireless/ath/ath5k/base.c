@@ -42,19 +42,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/hardirq.h>
-#include <linux/if.h>
-#include <linux/io.h>
-#include <linux/netdevice.h>
-#include <linux/cache.h>
-#include <linux/ethtool.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/etherdevice.h>
-#include <linux/nl80211.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/hardirq.h>
+#include <beep/if.h>
+#include <beep/io.h>
+#include <beep/netdevice.h>
+#include <beep/cache.h>
+#include <beep/ethtool.h>
+#include <beep/uaccess.h>
+#include <beep/slab.h>
+#include <beep/etherdevice.h>
+#include <beep/nl80211.h>
 
 #include <net/ieee80211_radiotap.h>
 

@@ -59,17 +59,17 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/bbm.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand_ecc.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
-#include <linux/string.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/bbm.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/nand_ecc.h>
+#include <beep/bitops.h>
+#include <beep/delay.h>
+#include <beep/vmalloc.h>
+#include <beep/export.h>
+#include <beep/string.h>
 
 static int check_pattern_no_oob(uint8_t *buf, struct nand_bbt_descr *td)
 {

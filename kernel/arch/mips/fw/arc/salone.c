@@ -4,7 +4,7 @@
  *
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
  */
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/sgialib.h>
 
 LONG __init ArcLoad(CHAR *Path, ULONG TopAddr, ULONG *ExecAddr, ULONG *LowAddr)

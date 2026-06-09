@@ -1,6 +1,6 @@
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
+#include <beep/export.h>
+#include <beep/spinlock.h>
+#include <beep/atomic.h>
 
 /*
  * This is an implementation of the notion of "decrement a

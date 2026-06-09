@@ -1,5 +1,5 @@
 /*
- * linux/arch/ia64/kernel/irq_ia64.c
+ * beep/arch/ia64/kernel/irq_ia64.c
  *
  * Copyright (C) 1998-2001 Hewlett-Packard Co
  *	Stephane Eranian <eranian@hpl.hp.com>
@@ -14,23 +14,23 @@
  *						Added CPU Hotplug handling for IPF.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/jiffies.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel_stat.h>
-#include <linux/ptrace.h>
-#include <linux/signal.h>
-#include <linux/smp.h>
-#include <linux/threads.h>
-#include <linux/bitops.h>
-#include <linux/irq.h>
-#include <linux/ratelimit.h>
-#include <linux/acpi.h>
-#include <linux/sched.h>
+#include <beep/jiffies.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/kernel_stat.h>
+#include <beep/ptrace.h>
+#include <beep/signal.h>
+#include <beep/smp.h>
+#include <beep/threads.h>
+#include <beep/bitops.h>
+#include <beep/irq.h>
+#include <beep/ratelimit.h>
+#include <beep/acpi.h>
+#include <beep/sched.h>
 
 #include <asm/delay.h>
 #include <asm/intrinsics.h>

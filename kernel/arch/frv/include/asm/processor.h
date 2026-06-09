@@ -21,8 +21,8 @@
  */
 #define current_text_addr() ({ __label__ _l; _l: &&_l;})
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
+#include <beep/compiler.h>
+#include <beep/linkage.h>
 #include <asm/sections.h>
 #include <asm/segment.h>
 #include <asm/fpu.h>

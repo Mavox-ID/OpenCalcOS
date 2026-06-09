@@ -13,21 +13,21 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/suspend.h>
-#include <linux/hrtimer.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/suspend.h>
+#include <beep/hrtimer.h>
 #ifdef CONFIG_PPC64
-#include <linux/time.h>
-#include <linux/hardirq.h>
+#include <beep/time.h>
+#include <beep/hardirq.h>
 #endif
-#include <linux/kbuild.h>
+#include <beep/kbuild.h>
 
 #include <asm/io.h>
 #include <asm/page.h>
@@ -50,7 +50,7 @@
 #include <asm/opal.h>
 #endif
 #if defined(CONFIG_KVM) || defined(CONFIG_KVM_GUEST)
-#include <linux/kvm_host.h>
+#include <beep/kvm_host.h>
 #endif
 #if defined(CONFIG_KVM) && defined(CONFIG_PPC_BOOK3S)
 #include <asm/kvm_book3s.h>

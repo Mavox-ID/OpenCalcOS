@@ -3,7 +3,7 @@
  *  acard-ahci.c - ACard AHCI SATA support
  *
  *  Maintained by:  Jeff Garzik <jgarzik@pobox.com>
- *		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *		    Please ALWAYS copy beep-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2010 Red Hat, Inc.
@@ -33,20 +33,20 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/device.h>
-#include <linux/dmi.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/device.h>
+#include <beep/dmi.h>
+#include <beep/gfp.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
-#include <linux/libata.h>
+#include <beep/libata.h>
 #include "ahci.h"
 
 #define DRV_NAME	"acard-ahci"

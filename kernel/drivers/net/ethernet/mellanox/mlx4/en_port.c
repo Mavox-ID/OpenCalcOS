@@ -32,10 +32,10 @@
  */
 
 
-#include <linux/if_vlan.h>
+#include <beep/if_vlan.h>
 
-#include <linux/mlx4/device.h>
-#include <linux/mlx4/cmd.h>
+#include <beep/mlx4/device.h>
+#include <beep/mlx4/cmd.h>
 
 #include "en_port.h"
 #include "mlx4_en.h"

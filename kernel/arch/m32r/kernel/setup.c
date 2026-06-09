@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/kernel/setup.c
+ *  beep/arch/m32r/kernel/setup.c
  *
  *  Setup routines for Renesas M32R
  *
@@ -7,24 +7,24 @@
  *                            Hitoshi Yamamoto
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/bootmem.h>
-#include <linux/console.h>
-#include <linux/initrd.h>
-#include <linux/major.h>
-#include <linux/root_dev.h>
-#include <linux/seq_file.h>
-#include <linux/timex.h>
-#include <linux/screen_info.h>
-#include <linux/cpu.h>
-#include <linux/nodemask.h>
-#include <linux/pfn.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/stddef.h>
+#include <beep/fs.h>
+#include <beep/sched.h>
+#include <beep/ioport.h>
+#include <beep/mm.h>
+#include <beep/bootmem.h>
+#include <beep/console.h>
+#include <beep/initrd.h>
+#include <beep/major.h>
+#include <beep/root_dev.h>
+#include <beep/seq_file.h>
+#include <beep/timex.h>
+#include <beep/screen_info.h>
+#include <beep/cpu.h>
+#include <beep/nodemask.h>
+#include <beep/pfn.h>
 
 #include <asm/processor.h>
 #include <asm/pgtable.h>

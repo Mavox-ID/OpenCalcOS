@@ -1,5 +1,5 @@
 #
-# Makefile for Linux kernel SUN RPC
+# Makefile for Beep kernel SUN RPC
 #
 
 

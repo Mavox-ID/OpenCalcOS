@@ -1,6 +1,6 @@
 /*
  * TX4938/4937 setup routines
- * Based on linux/arch/mips/txx9/rbtx4938/setup.c,
+ * Based on beep/arch/mips/txx9/rbtx4938/setup.c,
  *	    and RBTX49xx patch from CELF patch archive.
  *
  * 2003-2005 (c) MontaVista Software, Inc.
@@ -10,13 +10,13 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/param.h>
-#include <linux/ptrace.h>
-#include <linux/mtd/physmap.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/param.h>
+#include <beep/ptrace.h>
+#include <beep/mtd/physmap.h>
+#include <beep/platform_device.h>
 #include <asm/reboot.h>
 #include <asm/traps.h>
 #include <asm/txx9irq.h>

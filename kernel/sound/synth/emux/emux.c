@@ -18,13 +18,13 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/wait.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 #include <sound/core.h>
 #include <sound/emux_synth.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/module.h>
 #include "emux_voice.h"
 
 MODULE_AUTHOR("Takashi Iwai");

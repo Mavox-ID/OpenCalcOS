@@ -12,8 +12,8 @@
 
 #ifndef _IIO_CORE_H_
 #define _IIO_CORE_H_
-#include <linux/kernel.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
 
 struct iio_chan_spec;
 struct iio_dev;

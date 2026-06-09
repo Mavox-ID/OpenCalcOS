@@ -1,7 +1,7 @@
 #ifndef ACPI_BUTTON_H
 #define ACPI_BUTTON_H
 
-#include <linux/notifier.h>
+#include <beep/notifier.h>
 
 #if defined(CONFIG_ACPI_BUTTON) || defined(CONFIG_ACPI_BUTTON_MODULE)
 extern int acpi_lid_notifier_register(struct notifier_block *nb);

@@ -2,7 +2,7 @@
  * fs/sysfs/symlink.c - operations for initializing and mounting sysfs
  *
  * Copyright (c) 2001-3 Patrick Mochel
- * Copyright (c) 2007 SUSE Linux Products GmbH
+ * Copyright (c) 2007 SUSE Beep Products GmbH
  * Copyright (c) 2007 Tejun Heo <teheo@suse.de>
  *
  * This file is released under the GPLv2.
@@ -12,13 +12,13 @@
 
 #define DEBUG 
 
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/magic.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/pagemap.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/magic.h>
+#include <beep/slab.h>
 
 #include "sysfs.h"
 

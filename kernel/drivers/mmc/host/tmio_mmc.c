@@ -1,5 +1,5 @@
 /*
- * linux/drivers/mmc/host/tmio_mmc.c
+ * beep/drivers/mmc/host/tmio_mmc.c
  *
  * Copyright (C) 2007 Ian Molton
  * Copyright (C) 2004 Ian Molton
@@ -13,13 +13,13 @@
  * TC6393XB TC6391XB TC6387XB T7L66XB ASIC3
  */
 
-#include <linux/device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/host.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/scatterlist.h>
+#include <beep/device.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/tmio.h>
+#include <beep/mmc/host.h>
+#include <beep/module.h>
+#include <beep/pagemap.h>
+#include <beep/scatterlist.h>
 
 #include "tmio_mmc.h"
 

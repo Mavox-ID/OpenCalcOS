@@ -2,7 +2,7 @@
  *
  * ISDN low-level module for the ICN active ISDN-Card.
  *
- * Copyright 1994,95,96 by Fritz Elfert (fritz@isdn4linux.de)
+ * Copyright 1994,95,96 by Fritz Elfert (fritz@isdn4beep.de)
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
@@ -10,17 +10,17 @@
  */
 
 #include "icn.h"
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
 
 static int portbase = ICN_BASEADDR;
 static unsigned long membase = ICN_MEMADDR;
 static char *icn_id = "\0";
 static char *icn_id2 = "\0";
 
-MODULE_DESCRIPTION("ISDN4Linux: Driver for ICN active ISDN card");
+MODULE_DESCRIPTION("ISDN4Beep: Driver for ICN active ISDN card");
 MODULE_AUTHOR("Fritz Elfert");
 MODULE_LICENSE("GPL");
 module_param(portbase, int, 0);

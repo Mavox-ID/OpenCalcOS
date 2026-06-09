@@ -1,16 +1,16 @@
 /*
- * linux/arch/arm/mach-footbridge/cats-hw.c
+ * beep/arch/arm/mach-footbridge/cats-hw.c
  *
  * CATS machine fixup
  *
  * Copyright (C) 1998, 1999 Russell King, Phil Blundell
  */
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/screen_info.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/screen_info.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
 
 #include <asm/hardware/dec21285.h>
 #include <asm/mach-types.h>

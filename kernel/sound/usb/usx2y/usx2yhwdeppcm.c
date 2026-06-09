@@ -50,8 +50,8 @@
    Currently rawusb dma pcm buffer transport (this file) is only available to snd-usb-usx2y. 
 */
 
-#include <linux/delay.h>
-#include <linux/gfp.h>
+#include <beep/delay.h>
+#include <beep/gfp.h>
 #include "usbusx2yaudio.c"
 
 #if defined(USX2Y_NRPACKS_VARIABLE) || USX2Y_NRPACKS == 1

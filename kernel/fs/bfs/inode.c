@@ -7,19 +7,19 @@
  *      Made endianness-clean by Andrew Stribblehill <ads@wompom.org>, 2005.
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/vfs.h>
-#include <linux/writeback.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
+#include <beep/vfs.h>
+#include <beep/writeback.h>
 #include <asm/uaccess.h>
 #include "bfs.h"
 
 MODULE_AUTHOR("Tigran Aivazian <tigran@aivazian.fsnet.co.uk>");
-MODULE_DESCRIPTION("SCO UnixWare BFS filesystem for Linux");
+MODULE_DESCRIPTION("SCO UnixWare BFS filesystem for Beep");
 MODULE_LICENSE("GPL");
 
 #undef DEBUG

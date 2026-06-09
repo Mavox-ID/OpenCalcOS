@@ -6,9 +6,9 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/random.h>
+#include <beep/gfp.h>
+#include <beep/kernel.h>
+#include <beep/random.h>
 #include "ieee80211_i.h"
 #include "rate.h"
 #include "mesh.h"

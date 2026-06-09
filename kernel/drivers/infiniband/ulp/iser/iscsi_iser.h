@@ -40,24 +40,24 @@
 #ifndef __ISCSI_ISER_H__
 #define __ISCSI_ISER_H__
 
-#include <linux/types.h>
-#include <linux/net.h>
+#include <beep/types.h>
+#include <beep/net.h>
 #include <scsi/libiscsi.h>
 #include <scsi/scsi_transport_iscsi.h>
 
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/mutex.h>
-#include <linux/mempool.h>
-#include <linux/uio.h>
+#include <beep/interrupt.h>
+#include <beep/wait.h>
+#include <beep/sched.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/mutex.h>
+#include <beep/mempool.h>
+#include <beep/uio.h>
 
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/in6.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_fmr_pool.h>

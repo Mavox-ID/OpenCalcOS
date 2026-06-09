@@ -21,17 +21,17 @@
  * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/workqueue.h>
-#include <linux/syscalls.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/file.h>
-#include <linux/list.h>
-#include <linux/eventfd.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/kvm_host.h>
+#include <beep/kvm.h>
+#include <beep/workqueue.h>
+#include <beep/syscalls.h>
+#include <beep/wait.h>
+#include <beep/poll.h>
+#include <beep/file.h>
+#include <beep/list.h>
+#include <beep/eventfd.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 
 #include "iodev.h"
 

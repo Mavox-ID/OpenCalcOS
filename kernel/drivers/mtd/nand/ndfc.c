@@ -23,14 +23,14 @@
  *  option) any later version.
  *
  */
-#include <linux/module.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand_ecc.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/ndfc.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/of_platform.h>
+#include <beep/module.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/nand_ecc.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/ndfc.h>
+#include <beep/slab.h>
+#include <beep/mtd/mtd.h>
+#include <beep/of_platform.h>
 #include <asm/io.h>
 
 #define NDFC_MAX_CS    4

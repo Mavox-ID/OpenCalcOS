@@ -9,9 +9,9 @@
 #ifndef _ASM_C6X_UACCESS_H
 #define _ASM_C6X_UACCESS_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/string.h>
+#include <beep/types.h>
+#include <beep/compiler.h>
+#include <beep/string.h>
 
 #ifdef CONFIG_ACCESS_CHECK
 #define __access_ok _access_ok

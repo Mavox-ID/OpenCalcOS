@@ -17,12 +17,12 @@
  * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ratelimit.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/ratelimit.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
 
 #define DRV_NAME "tegra20-mc"
 

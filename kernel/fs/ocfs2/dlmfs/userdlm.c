@@ -27,12 +27,12 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/signal.h>
+#include <beep/signal.h>
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/crc32.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/types.h>
+#include <beep/crc32.h>
 
 #include "ocfs2_lockingver.h"
 #include "stackglue.h"

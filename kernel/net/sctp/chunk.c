@@ -39,12 +39,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/net.h>
-#include <linux/inet.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/net.h>
+#include <beep/inet.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/sm.h>

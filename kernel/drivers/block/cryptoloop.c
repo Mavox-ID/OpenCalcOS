@@ -1,5 +1,5 @@
 /*
-   Linux loop encryption enabling module
+   Beep loop encryption enabling module
 
    Copyright (C)  2002 Herbert Valerio Riedel <hvr@gnu.org>
    Copyright (C)  2003 Fruhwirth Clemens <clemens@endorphin.org>
@@ -19,14 +19,14 @@
    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/crypto.h>
-#include <linux/blkdev.h>
-#include <linux/loop.h>
-#include <linux/scatterlist.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/crypto.h>
+#include <beep/blkdev.h>
+#include <beep/loop.h>
+#include <beep/scatterlist.h>
 #include <asm/uaccess.h>
 
 MODULE_LICENSE("GPL");

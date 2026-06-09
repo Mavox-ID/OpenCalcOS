@@ -6,7 +6,7 @@
  */
 
 /*
- * IBM PC110 touchpad driver for Linux
+ * IBM PC110 touchpad driver for Beep
  */
 
 /*
@@ -29,15 +29,15 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/input.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/input.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

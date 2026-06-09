@@ -7,9 +7,9 @@
 #ifndef _NETROM_H
 #define _NETROM_H 
 
-#include <linux/netrom.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/netrom.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 
 #define	NR_NETWORK_LEN			15

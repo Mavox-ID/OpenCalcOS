@@ -20,19 +20,19 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/serial.h> /* for serial_state and serial_icounter_struct */
-#include <linux/serial_core.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/device.h>
+#include <beep/serial.h> /* for serial_state and serial_icounter_struct */
+#include <beep/serial_core.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
 
 #include <asm/irq.h>
 #include <asm/uaccess.h>
@@ -1309,8 +1309,8 @@ static void uart_set_termios(struct tty_struct *tty,
 
 /*
  * In 2.4.5, calls to this will be serialized via the BKL in
- *  linux/drivers/char/tty_io.c:tty_release()
- *  linux/drivers/char/tty_io.c:do_tty_handup()
+ *  beep/drivers/char/tty_io.c:tty_release()
+ *  beep/drivers/char/tty_io.c:do_tty_handup()
  */
 static void uart_close(struct tty_struct *tty, struct file *filp)
 {
@@ -1438,7 +1438,7 @@ static void uart_wait_until_sent(struct tty_struct *tty, int timeout)
 
 /*
  * This is called with the BKL held in
- *  linux/drivers/char/tty_io.c:do_tty_hangup()
+ *  beep/drivers/char/tty_io.c:do_tty_hangup()
  * We're called from the eventd thread, so we can sleep for
  * a _short_ time only.
  */

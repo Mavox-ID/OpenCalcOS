@@ -14,10 +14,10 @@
 #ifdef __KERNEL__
 #include <asm/byteorder.h>
 #include <asm/page.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
+#include <beep/bug.h>
+#include <beep/kernel.h>
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define XCHAL_KIO_CACHED_VADDR	0xe0000000
 #define XCHAL_KIO_BYPASS_VADDR	0xf0000000

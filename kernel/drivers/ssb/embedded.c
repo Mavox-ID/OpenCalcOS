@@ -9,13 +9,13 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/ssb/ssb.h>
-#include <linux/ssb/ssb_embedded.h>
-#include <linux/ssb/ssb_driver_pci.h>
-#include <linux/ssb/ssb_driver_gige.h>
-#include <linux/pci.h>
+#include <beep/export.h>
+#include <beep/platform_device.h>
+#include <beep/ssb/ssb.h>
+#include <beep/ssb/ssb_embedded.h>
+#include <beep/ssb/ssb_driver_pci.h>
+#include <beep/ssb/ssb_driver_gige.h>
+#include <beep/pci.h>
 
 #include "ssb_private.h"
 

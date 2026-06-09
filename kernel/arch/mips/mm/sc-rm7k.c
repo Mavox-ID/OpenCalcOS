@@ -1,15 +1,15 @@
 /*
  * sc-rm7k.c: RM7000 cache management functions.
  *
- * Copyright (C) 1997, 2001, 2003, 2004 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1997, 2001, 2003, 2004 Ralf Baechle (ralf@beep-mips.org)
  */
 
 #undef DEBUG
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/bitops.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/bitops.h>
 
 #include <asm/addrspace.h>
 #include <asm/bcache.h>

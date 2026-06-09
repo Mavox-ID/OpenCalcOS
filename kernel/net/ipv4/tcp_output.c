@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -38,9 +38,9 @@
 
 #include <net/tcp.h>
 
-#include <linux/compiler.h>
-#include <linux/gfp.h>
-#include <linux/module.h>
+#include <beep/compiler.h>
+#include <beep/gfp.h>
+#include <beep/module.h>
 
 /* People can turn this off for buggy TCP's found in printers etc. */
 int sysctl_tcp_retrans_collapse __read_mostly = 1;
@@ -2515,7 +2515,7 @@ void tcp_xmit_retransmit_queue(struct sock *sk)
 begin_fwd:
 			if (!before(TCP_SKB_CB(skb)->seq, tcp_highest_sack_seq(tp)))
 				break;
-			mib_idx = LINUX_MIB_TCPFORWARDRETRANS;
+			mib_idx = BEEP_MIB_TCPFORWARDRETRANS;
 
 		} else if (!before(TCP_SKB_CB(skb)->seq, tp->retransmit_high)) {
 			tp->retransmit_high = last_lost;
@@ -2537,16 +2537,16 @@ begin_fwd:
 		} else {
 			last_lost = TCP_SKB_CB(skb)->end_seq;
 			if (icsk->icsk_ca_state != TCP_CA_Loss)
-				mib_idx = LINUX_MIB_TCPFASTRETRANS;
+				mib_idx = BEEP_MIB_TCPFASTRETRANS;
 			else
-				mib_idx = LINUX_MIB_TCPSLOWSTARTRETRANS;
+				mib_idx = BEEP_MIB_TCPSLOWSTARTRETRANS;
 		}
 
 		if (sacked & (TCPCB_SACKED_ACKED|TCPCB_SACKED_RETRANS))
 			continue;
 
 		if (tcp_retransmit_skb(sk, skb)) {
-			NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_TCPRETRANSFAIL);
+			NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_TCPRETRANSFAIL);
 			return;
 		}
 		NET_INC_STATS_BH(sock_net(sk), mib_idx);
@@ -2612,7 +2612,7 @@ void tcp_send_active_reset(struct sock *sk, gfp_t priority)
 	/* NOTE: No TCP options attached and we never retransmit this. */
 	skb = alloc_skb(MAX_TCP_HEADER, priority);
 	if (!skb) {
-		NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPABORTFAILED);
+		NET_INC_STATS(sock_net(sk), BEEP_MIB_TCPABORTFAILED);
 		return;
 	}
 
@@ -2623,7 +2623,7 @@ void tcp_send_active_reset(struct sock *sk, gfp_t priority)
 	/* Send it off. */
 	TCP_SKB_CB(skb)->when = tcp_time_stamp;
 	if (tcp_transmit_skb(sk, skb, 0, priority))
-		NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPABORTFAILED);
+		NET_INC_STATS(sock_net(sk), BEEP_MIB_TCPABORTFAILED);
 
 	TCP_INC_STATS(sock_net(sk), TCP_MIB_OUTRSTS);
 }
@@ -2965,7 +2965,7 @@ static int tcp_send_syn_data(struct sock *sk, struct sk_buff *syn)
 
 	if (tcp_transmit_skb(sk, syn_data, 0, sk->sk_allocation) == 0) {
 		tp->syn_data = (fo->copied > 0);
-		NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPFASTOPENACTIVE);
+		NET_INC_STATS(sock_net(sk), BEEP_MIB_TCPFASTOPENACTIVE);
 		goto done;
 	}
 	syn_data = NULL;

@@ -9,12 +9,12 @@
  *
  * Author: Ronny Pedersen
  */
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/oprofile.h>
-#include <linux/sched.h>
-#include <linux/types.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/oprofile.h>
+#include <beep/sched.h>
+#include <beep/types.h>
 
 #include <asm/sysreg.h>
 

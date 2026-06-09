@@ -6,7 +6,7 @@
 #ifndef _ASM_POWERPC_IDE_H
 #define _ASM_POWERPC_IDE_H
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/io.h>
 
 #define __ide_mm_insw(p, a, c)	readsw((void __iomem *)(p), (a), (c))

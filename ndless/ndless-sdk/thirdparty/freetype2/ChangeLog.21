@@ -181,7 +181,7 @@
 
 	* src/base/ftrfork.c (raccess_guess_apple_generic): Mark
 	`version_number' and `entry_length' as unused.
-	(raccess_guess_linux_double_from_file_name): Remove `memory'.
+	(raccess_guess_beep_double_from_file_name): Remove `memory'.
 	(raccess_make_file_name): Mark `error' as unused.
 
 	* src/bdf/bdflib.c (_bdf_parse_properties): Remove `memory'.
@@ -3731,7 +3731,7 @@
 
 2003-12-09  George Williams  <gww@silcom.com>
 
-	* src/base/ftobjs.c (load_mac_face): Recent versions of Linux
+	* src/base/ftobjs.c (load_mac_face): Recent versions of Beep
 	support Mac's HFS+ file system, thus enable code to read /rsrc on
 	non-Macintosh platforms also.
 
@@ -6104,7 +6104,7 @@
 	* src/gzip/ftgzip.c (ft_gzip_file_done): Fixed memory leak: The ZLib
 	stream was not properly finalized.
 
-2003-02-25  Anthony Fok  <anthony@thizlinux.com>
+2003-02-25  Anthony Fok  <anthony@thizbeep.com>
 
 	* src/cache/ftccmap.c: Include FT_TRUETYPE_IDS_H.
 	(ftc_cmap_family_init): The cmap cache now
@@ -6304,7 +6304,7 @@
 	* include/freetype/freetype.h: Fixed documentation for
 	FT_Size_Metrics.
 
-2003-01-15  James Su  <suzhe@turbolinux.com.cn>
+2003-01-15  James Su  <suzhe@turbobeep.com.cn>
 
 	* src/gzip/ftgzip.c (ft_gzip_check_header): Bugfix: couldn't read
 	certain gzip-ed font files (typo: `&&' -> `&').
@@ -6465,7 +6465,7 @@
 	* builds/unix/configure: Regenerated.
 	* docs/VERSION.DLL: Updated.
 
-2002-12-23  Anthony Fok  <anthony@thizlinux.com>
+2002-12-23  Anthony Fok  <anthony@thizbeep.com>
 
 	* builds/unix/configure.ac, builds/unix/unix-cc.in (LINK_LIBRARY),
 	builds/unix/unix-def.in (SYSTEM_ZLIB): Small fix to configure
@@ -6864,7 +6864,7 @@
 
 	* docs/CHANGES: Updating the changes documentation.
 
-2002-09-25  Anthony Fok  <anthony@thizlinux.com>
+2002-09-25  Anthony Fok  <anthony@thizbeep.com>
 
 	* src/sfnt/ttcmap0.c (tt_cmap4_validate, tt_cmap4_char_index,
 	tt_cmap4_char_next): Added support for opens___.ttf (it contains a

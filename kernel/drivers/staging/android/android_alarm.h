@@ -1,4 +1,4 @@
-/* include/linux/android_alarm.h
+/* include/beep/android_alarm.h
  *
  * Copyright (C) 2006-2007 Google, Inc.
  *
@@ -13,11 +13,11 @@
  *
  */
 
-#ifndef _LINUX_ANDROID_ALARM_H
-#define _LINUX_ANDROID_ALARM_H
+#ifndef _BEEP_ANDROID_ALARM_H
+#define _BEEP_ANDROID_ALARM_H
 
-#include <linux/ioctl.h>
-#include <linux/time.h>
+#include <beep/ioctl.h>
+#include <beep/time.h>
 
 enum android_alarm_type {
 	/* return code bit numbers or set alarm arg */

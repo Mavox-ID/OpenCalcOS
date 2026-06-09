@@ -24,12 +24,12 @@
  *
  ******************************************************************************/
 
-#include <linux/string.h>
-#include <linux/parser.h>
-#include <linux/timer.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/string.h>
+#include <beep/parser.h>
+#include <beep/timer.h>
+#include <beep/blkdev.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 

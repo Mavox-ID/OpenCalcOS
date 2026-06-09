@@ -8,12 +8,12 @@
  * Author: Deepak Saxena <dsaxena@plexity.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/serial_8250.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/serial.h>
+#include <beep/tty.h>
+#include <beep/serial_8250.h>
 
 #include <asm/types.h>
 #include <asm/setup.h>

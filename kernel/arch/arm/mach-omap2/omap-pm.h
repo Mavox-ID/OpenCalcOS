@@ -14,10 +14,10 @@
 #ifndef ASM_ARM_ARCH_OMAP_OMAP_PM_H
 #define ASM_ARM_ARCH_OMAP_OMAP_PM_H
 
-#include <linux/device.h>
-#include <linux/cpufreq.h>
-#include <linux/clk.h>
-#include <linux/opp.h>
+#include <beep/device.h>
+#include <beep/cpufreq.h>
+#include <beep/clk.h>
+#include <beep/opp.h>
 
 /*
  * agent_id values for use with omap_pm_set_min_bus_tput():

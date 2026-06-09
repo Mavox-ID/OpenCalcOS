@@ -10,9 +10,9 @@
 #ifndef __INODE_DOT_H__
 #define __INODE_DOT_H__
 
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/mm.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
+#include <beep/mm.h>
 #include "util.h"
 
 extern int gfs2_releasepage(struct page *page, gfp_t gfp_mask);

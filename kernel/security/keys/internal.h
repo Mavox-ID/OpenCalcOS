@@ -12,9 +12,9 @@
 #ifndef _INTERNAL_H
 #define _INTERNAL_H
 
-#include <linux/sched.h>
-#include <linux/key-type.h>
-#include <linux/task_work.h>
+#include <beep/sched.h>
+#include <beep/key-type.h>
+#include <beep/task_work.h>
 
 #ifdef __KDEBUG
 #define kenter(FMT, ...) \

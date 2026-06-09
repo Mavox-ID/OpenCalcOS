@@ -65,23 +65,23 @@
 #include "usbatm.h"
 
 #include <asm/uaccess.h>
-#include <linux/crc32.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/netdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/kthread.h>
-#include <linux/ratelimit.h>
+#include <beep/crc32.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/netdevice.h>
+#include <beep/proc_fs.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/timer.h>
+#include <beep/wait.h>
+#include <beep/kthread.h>
+#include <beep/ratelimit.h>
 
 #ifdef VERBOSE_DEBUG
 static int usbatm_print_packet(struct usbatm_data *instance, const unsigned char *data, int len);

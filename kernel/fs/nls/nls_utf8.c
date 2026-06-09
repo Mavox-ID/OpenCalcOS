@@ -3,11 +3,11 @@
  * By Urban Widmark 2000
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/nls.h>
-#include <linux/errno.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/nls.h>
+#include <beep/errno.h>
 
 static unsigned char identity[256];
 

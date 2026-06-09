@@ -1,5 +1,5 @@
 /*
- * raid5.c : Multiple Devices driver for Linux
+ * raid5.c : Multiple Devices driver for Beep
  *	   Copyright (C) 1996, 1997 Ingo Molnar, Miguel de Icaza, Gadi Oxman
  *	   Copyright (C) 1999, 2000 Ingo Molnar
  *	   Copyright (C) 2002, 2003 H. Peter Anvin
@@ -14,7 +14,7 @@
  * any later version.
  *
  * You should have received a copy of the GNU General Public License
- * (for example /usr/src/linux/COPYING); if not, write to the Free
+ * (for example /usr/src/beep/COPYING); if not, write to the Free
  * Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
@@ -43,16 +43,16 @@
  * miss any bits.
  */
 
-#include <linux/blkdev.h>
-#include <linux/kthread.h>
-#include <linux/raid/pq.h>
-#include <linux/async_tx.h>
-#include <linux/module.h>
-#include <linux/async.h>
-#include <linux/seq_file.h>
-#include <linux/cpu.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
+#include <beep/blkdev.h>
+#include <beep/kthread.h>
+#include <beep/raid/pq.h>
+#include <beep/async_tx.h>
+#include <beep/module.h>
+#include <beep/async.h>
+#include <beep/seq_file.h>
+#include <beep/cpu.h>
+#include <beep/slab.h>
+#include <beep/ratelimit.h>
 #include <trace/events/block.h>
 
 #include "md.h"

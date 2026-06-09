@@ -9,18 +9,18 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/math64.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
+#include <beep/pwm.h>
+#include <beep/slab.h>
+#include <beep/types.h>
 
 #define NUM_PWM		4
 
@@ -48,7 +48,7 @@
  *
  * @mmio_base: base address of pwm chip
  * @clk: pointer to clk structure of pwm chip
- * @chip: linux pwm chip representation
+ * @chip: beep pwm chip representation
  * @dev: pointer to device structure of pwm chip
  */
 struct spear_pwm_chip {

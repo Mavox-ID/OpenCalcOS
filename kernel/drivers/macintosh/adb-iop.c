@@ -12,12 +12,12 @@
  * o Implement SRQ handling.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
 
 #include <asm/macintosh.h> 
 #include <asm/macints.h> 
@@ -25,7 +25,7 @@
 #include <asm/mac_oss.h>
 #include <asm/adb_iop.h>
 
-#include <linux/adb.h> 
+#include <beep/adb.h> 
 
 /*#define DEBUG_ADB_IOP*/
 

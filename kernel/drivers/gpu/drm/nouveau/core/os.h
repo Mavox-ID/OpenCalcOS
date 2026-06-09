@@ -1,21 +1,21 @@
 #ifndef __NOUVEAU_OS_H__
 #define __NOUVEAU_OS_H__
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/printk.h>
-#include <linux/bitops.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/delay.h>
-#include <linux/io-mapping.h>
-#include <linux/vmalloc.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/pci.h>
+#include <beep/printk.h>
+#include <beep/bitops.h>
+#include <beep/firmware.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
+#include <beep/delay.h>
+#include <beep/io-mapping.h>
+#include <beep/vmalloc.h>
+#include <beep/acpi.h>
+#include <beep/dmi.h>
 
 #include <asm/unaligned.h>
 

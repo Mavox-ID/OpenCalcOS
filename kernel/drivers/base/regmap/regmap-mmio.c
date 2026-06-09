@@ -16,12 +16,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/regmap.h>
+#include <beep/slab.h>
 
 struct regmap_mmio_context {
 	void __iomem *regs;

@@ -29,20 +29,20 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/rtnetlink.h>
-#include <linux/inetdevice.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/device.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/list.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/ethtool.h>
+#include <beep/rtnetlink.h>
+#include <beep/inetdevice.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

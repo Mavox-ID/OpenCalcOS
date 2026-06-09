@@ -14,12 +14,12 @@
 #define _ASM_X86_PROM_H
 #ifndef __ASSEMBLY__
 
-#include <linux/of.h>
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <beep/of.h>
+#include <beep/types.h>
+#include <beep/pci.h>
 
 #include <asm/irq.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/setup.h>
 
 #ifdef CONFIG_OF

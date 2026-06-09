@@ -19,11 +19,11 @@
  * Apparently originally from arch/mips/malta-memory.c. Modified to work
  * with the PowerTV bootloader.
  */
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/bootmem.h>
-#include <linux/pfn.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/bootmem.h>
+#include <beep/pfn.h>
+#include <beep/string.h>
 
 #include <asm/bootinfo.h>
 #include <asm/page.h>

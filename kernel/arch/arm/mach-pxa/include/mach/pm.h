@@ -7,7 +7,7 @@
  *
  */
 
-#include <linux/suspend.h>
+#include <beep/suspend.h>
 
 struct pxa_cpu_pm_fns {
 	int	save_count;

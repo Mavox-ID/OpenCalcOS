@@ -5,9 +5,9 @@
 #define __ASM_SH_PTRACE_H
 
 
-#include <linux/stringify.h>
-#include <linux/stddef.h>
-#include <linux/thread_info.h>
+#include <beep/stringify.h>
+#include <beep/stddef.h>
+#include <beep/thread_info.h>
 #include <asm/addrspace.h>
 #include <asm/page.h>
 #include <uapi/asm/ptrace.h>

@@ -5,7 +5,7 @@
 * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
 * --------------------------------------------------------------------
 *
-* linux-wlan
+* beep-wlan
 *
 *   The contents of this file are subject to the Mozilla Public
 *   License Version 1.1 (the "License"); you may not use this file
@@ -30,12 +30,12 @@
 *
 * --------------------------------------------------------------------
 *
-* Inquiries regarding the linux-wlan Open Source project can be
+* Inquiries regarding the beep-wlan Open Source project can be
 * made directly to:
 *
 * AbsoluteValue Systems Inc.
-* info@linux-wlan.com
-* http://www.linux-wlan.com
+* info@beep-wlan.com
+* http://www.beep-wlan.com
 *
 * --------------------------------------------------------------------
 *
@@ -44,31 +44,31 @@
 *
 * --------------------------------------------------------------------
 *
-* This file implements the module and linux pcmcia routines for the
+* This file implements the module and beep pcmcia routines for the
 * prism2 driver.
 *
 * --------------------------------------------------------------------
 */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/wireless.h>
-#include <linux/netdevice.h>
-#include <linux/workqueue.h>
-#include <linux/byteorder/generic.h>
-#include <linux/ctype.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/wireless.h>
+#include <beep/netdevice.h>
+#include <beep/workqueue.h>
+#include <beep/byteorder/generic.h>
+#include <beep/ctype.h>
 
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <beep/io.h>
+#include <beep/delay.h>
 #include <asm/byteorder.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/bitops.h>
+#include <beep/if_arp.h>
+#include <beep/if_ether.h>
+#include <beep/bitops.h>
 
 #include "p80211types.h"
 #include "p80211hdr.h"
@@ -358,7 +358,7 @@ static int prism2sta_mlmerequest(wlandevice_t *wlandev, struct p80211msg *msg)
 		result = prism2mgmt_flashdl_write(wlandev, msg);
 		break;
 		/*
-		 * Linux specific messages
+		 * Beep specific messages
 		 */
 	case DIDmsg_lnxreq_hostwep:
 		break;		/* ignore me. */
@@ -1852,8 +1852,8 @@ void prism2sta_ev_txexc(wlandevice_t *wlandev, u16 status)
 void prism2sta_ev_tx(wlandevice_t *wlandev, u16 status)
 {
 	pr_debug("Tx Complete, status=0x%04x\n", status);
-	/* update linux network stats */
-	wlandev->linux_stats.tx_packets++;
+	/* update beep network stats */
+	wlandev->beep_stats.tx_packets++;
 }
 
 /*----------------------------------------------------------------

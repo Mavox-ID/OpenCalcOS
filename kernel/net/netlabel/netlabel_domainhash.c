@@ -29,13 +29,13 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/rculist.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/audit.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/rculist.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/audit.h>
+#include <beep/slab.h>
 #include <net/netlabel.h>
 #include <net/cipso_ipv4.h>
 #include <asm/bug.h>
@@ -120,7 +120,7 @@ static u32 netlbl_domhsh_hash(const char *key)
 	u32 len;
 
 	/* This is taken (with slight modification) from
-	 * security/selinux/ss/symtab.c:symhash() */
+	 * security/sebeep/ss/symtab.c:symhash() */
 
 	for (iter = 0, val = 0, len = strlen(key); iter < len; iter++)
 		val = (val << 4 | (val >> (8 * sizeof(u32) - 4))) ^ key[iter];

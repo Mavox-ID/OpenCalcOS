@@ -1,6 +1,6 @@
 /* -*- mode: asm -*-
  *
- *  linux/arch/h8300/platform/h8300h/entry.S
+ *  beep/arch/h8300/platform/h8300h/entry.S
  *
  *  Yoshinori Sato <ysato@users.sourceforge.jp>
  *  David McCullough <davidm@snapgear.com>
@@ -13,7 +13,7 @@
  *          system call entry
  */
 
-#include <linux/sys.h>
+#include <beep/sys.h>
 #include <asm/unistd.h>
 #include <asm/setup.h>
 #include <asm/segment.h>

@@ -1,5 +1,5 @@
 #
-# linux/arch/c6x/Makefile
+# beep/arch/c6x/Makefile
 #
 # This file is subject to the terms and conditions of the GNU General Public
 # License.  See the file "COPYING" in the main directory of this archive
@@ -31,8 +31,8 @@ head-y          := arch/c6x/kernel/head.o
 core-y          += arch/c6x/kernel/ arch/c6x/mm/ arch/c6x/platforms/
 libs-y          += arch/c6x/lib/
 
-# Default to vmlinux.bin, override when needed
-all: vmlinux.bin
+# Default to vmbeep.bin, override when needed
+all: vmbeep.bin
 
 boot := arch/$(ARCH)/boot
 
@@ -46,17 +46,17 @@ endif
 
 # With make 3.82 we cannot mix normal and wildcard targets
 
-vmlinux.bin: vmlinux
+vmbeep.bin: vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $(patsubst %,$(boot)/%,$@)
 
-dtbImage.%: vmlinux
+dtbImage.%: vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $(patsubst %,$(boot)/%,$@)
 
 archclean:
 	$(Q)$(MAKE) $(clean)=$(boot)
 
 define archhelp
-  @echo '  vmlinux.bin     - Binary kernel image (arch/$(ARCH)/boot/vmlinux.bin)'
+  @echo '  vmbeep.bin     - Binary kernel image (arch/$(ARCH)/boot/vmbeep.bin)'
   @echo '  dtbImage.<dt>   - ELF image with $(arch)/boot/dts/<dt>.dts linked in'
   @echo '                  - stripped elf with fdt blob'
 endef

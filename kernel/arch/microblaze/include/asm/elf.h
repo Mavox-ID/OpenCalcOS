@@ -12,7 +12,7 @@
 
 #include <uapi/asm/elf.h>
 
-#ifndef __uClinux__
+#ifndef __uCbeep__
 #ifndef ELF_GREG_T
 #endif
 #ifndef ELF_NGREG
@@ -25,6 +25,6 @@
 #else
 #endif
 #define SET_PERSONALITY(ex) \
-	set_personality(PER_LINUX_32BIT | (current->personality & (~PER_MASK)))
-#endif /* __uClinux__ */
+	set_personality(PER_BEEP_32BIT | (current->personality & (~PER_MASK)))
+#endif /* __uCbeep__ */
 #endif /* _ASM_MICROBLAZE_ELF_H */

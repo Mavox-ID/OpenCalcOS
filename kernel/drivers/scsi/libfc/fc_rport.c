@@ -44,14 +44,14 @@
  * path this potential over-use of the mutex is acceptable.
  */
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/rcupdate.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/rcupdate.h>
+#include <beep/timer.h>
+#include <beep/workqueue.h>
+#include <beep/export.h>
 #include <asm/unaligned.h>
 
 #include <scsi/libfc.h>

@@ -6,17 +6,17 @@
  * Copyright (C) Tom Long Nguyen (tom.l.nguyen@intel.com)
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/init.h>
-#include <linux/pcieport_if.h>
-#include <linux/aer.h>
-#include <linux/dmi.h>
-#include <linux/pci-aspm.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/pm.h>
+#include <beep/pm_runtime.h>
+#include <beep/init.h>
+#include <beep/pcieport_if.h>
+#include <beep/aer.h>
+#include <beep/dmi.h>
+#include <beep/pci-aspm.h>
 
 #include "portdrv.h"
 #include "aer/aerdrv.h"
@@ -387,7 +387,7 @@ static void pcie_portdrv_err_resume(struct pci_dev *dev)
 }
 
 /*
- * LINUX Device Driver Model
+ * BEEP Device Driver Model
  */
 static const struct pci_device_id port_pci_ids[] = { {
 	/* handle any PCI-Express port */

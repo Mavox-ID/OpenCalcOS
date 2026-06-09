@@ -16,7 +16,7 @@
 #ifndef __ASM_FSL_GTM_H
 #define __ASM_FSL_GTM_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct gtm;
 

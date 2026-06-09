@@ -15,23 +15,23 @@
  *	Arun R Murthy <arun.murthy@stericsson.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/kobject.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/time.h>
-#include <linux/of.h>
-#include <linux/completion.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/mfd/abx500/ab8500-bm.h>
-#include <linux/mfd/abx500/ab8500-gpadc.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/power_supply.h>
+#include <beep/kobject.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/time.h>
+#include <beep/of.h>
+#include <beep/completion.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/abx500.h>
+#include <beep/mfd/abx500/ab8500.h>
+#include <beep/mfd/abx500/ab8500-bm.h>
+#include <beep/mfd/abx500/ab8500-gpadc.h>
 
 #define MILLI_TO_MICRO			1000
 #define FG_LSB_IN_MA			1627

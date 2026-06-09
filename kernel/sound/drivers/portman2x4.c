@@ -37,13 +37,13 @@
  *      - ported from alsa 0.5 to 1.0
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/parport.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/parport.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/rawmidi.h>

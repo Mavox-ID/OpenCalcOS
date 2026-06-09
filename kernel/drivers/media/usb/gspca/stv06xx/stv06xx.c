@@ -29,7 +29,7 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/input.h>
+#include <beep/input.h>
 #include "stv06xx_sensor.h"
 
 MODULE_AUTHOR("Erik Andrén");

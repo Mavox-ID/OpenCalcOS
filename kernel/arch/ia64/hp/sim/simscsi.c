@@ -6,13 +6,13 @@
  *	Stephane Eranian <eranian@hpl.hp.com>
  *
  * 02/01/15 David Mosberger	Updated for v2.5.1
- * 99/12/18 David Mosberger	Added support for READ10/WRITE10 needed by linux v2.3.33
+ * 99/12/18 David Mosberger	Added support for READ10/WRITE10 needed by beep v2.3.33
  */
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
+#include <beep/blkdev.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
 #include <asm/irq.h>
 #include "hpsim_ssc.h"
 

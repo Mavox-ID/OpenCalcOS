@@ -1,8 +1,8 @@
 #ifndef ISCSI_TARGET_CORE_H
 #define ISCSI_TARGET_CORE_H
 
-#include <linux/in.h>
-#include <linux/configfs.h>
+#include <beep/in.h>
+#include <beep/configfs.h>
 #include <net/sock.h>
 #include <net/tcp.h>
 #include <scsi/scsi_cmnd.h>
@@ -417,7 +417,7 @@ struct iscsi_cmd {
 	u32			tx_size;
 	/* Buffer used for various purposes */
 	void			*buf_ptr;
-	/* See include/linux/dma-mapping.h */
+	/* See include/beep/dma-mapping.h */
 	enum dma_data_direction	data_direction;
 	/* iSCSI PDU Header + CRC */
 	unsigned char		pdu[ISCSI_HDR_LEN + ISCSI_CRC_LEN];

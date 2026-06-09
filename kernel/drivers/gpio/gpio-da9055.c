@@ -11,13 +11,13 @@
  *  option) any later version.
  *
  */
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
 
-#include <linux/mfd/da9055/core.h>
-#include <linux/mfd/da9055/reg.h>
-#include <linux/mfd/da9055/pdata.h>
+#include <beep/mfd/da9055/core.h>
+#include <beep/mfd/da9055/reg.h>
+#include <beep/mfd/da9055/pdata.h>
 
 #define DA9055_VDD_IO			0x0
 #define DA9055_PUSH_PULL		0x3

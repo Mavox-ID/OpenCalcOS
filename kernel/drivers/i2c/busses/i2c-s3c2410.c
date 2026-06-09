@@ -1,4 +1,4 @@
-/* linux/drivers/i2c/busses/i2c-s3c2410.c
+/* beep/drivers/i2c/busses/i2c-s3c2410.c
  *
  * Copyright (C) 2004,2005,2009 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
@@ -20,30 +20,30 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of_i2c.h>
-#include <linux/of_gpio.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/clk.h>
+#include <beep/cpufreq.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/of_i2c.h>
+#include <beep/of_gpio.h>
+#include <beep/pinctrl/consumer.h>
 
 #include <asm/irq.h>
 
 #include <plat/regs-iic.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 
 /* Treat S3C2410 as baseline hardware, anything else is supported via quirks */
 #define QUIRK_S3C2440		(1 << 0)

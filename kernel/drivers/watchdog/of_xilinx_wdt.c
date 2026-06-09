@@ -21,19 +21,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/watchdog.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/miscdevice.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/watchdog.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_address.h>
 
 /* Register offsets for the Wdt device */
 #define XWT_TWCSR0_OFFSET   0x0 /* Control/Status Register0 */

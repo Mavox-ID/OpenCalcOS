@@ -11,20 +11,20 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/kallsyms.h>
-#include <linux/io.h>
-#include <linux/bug.h>
-#include <linux/debug_locks.h>
-#include <linux/kdebug.h>
-#include <linux/limits.h>
-#include <linux/sysfs.h>
-#include <linux/uaccess.h>
-#include <linux/perf_event.h>
+#include <beep/kernel.h>
+#include <beep/ptrace.h>
+#include <beep/hardirq.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/kallsyms.h>
+#include <beep/io.h>
+#include <beep/bug.h>
+#include <beep/debug_locks.h>
+#include <beep/kdebug.h>
+#include <beep/limits.h>
+#include <beep/sysfs.h>
+#include <beep/uaccess.h>
+#include <beep/perf_event.h>
 #include <asm/alignment.h>
 #include <asm/fpu.h>
 #include <asm/kprobes.h>

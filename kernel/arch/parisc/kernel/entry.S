@@ -1,5 +1,5 @@
 /*
- * Linux/PA-RISC Project (http://www.parisc-linux.org/)
+ * Beep/PA-RISC Project (http://www.parisc-beep.org/)
  *
  * kernel entry points (interruptions, system call wrappers)
  *  Copyright (C) 1999,2000 Philipp Rumpf 
@@ -37,7 +37,7 @@
 #include <asm/unistd.h>
 #include <asm/thread_info.h>
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #ifdef CONFIG_64BIT
 	.level 2.0w
@@ -1803,7 +1803,7 @@ ENTRY(syscall_exit)
 	STREG     %r28,TASK_PT_GR28(%r1)
 
 #ifdef CONFIG_HPUX
-/* <linux/personality.h> cannot be easily included */
+/* <beep/personality.h> cannot be easily included */
 #define PER_HPUX 0x10
 	ldw	TASK_PERSONALITY(%r1),%r19
 

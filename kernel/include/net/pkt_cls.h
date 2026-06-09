@@ -1,7 +1,7 @@
 #ifndef __NET_PKT_CLS_H
 #define __NET_PKT_CLS_H
 
-#include <linux/pkt_cls.h>
+#include <beep/pkt_cls.h>
 #include <net/sch_generic.h>
 #include <net/act_api.h>
 

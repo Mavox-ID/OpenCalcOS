@@ -12,17 +12,17 @@
  *   actually do.
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/ctype.h>
-#include <linux/time.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/bitops.h>
-#include <linux/rtc.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/proc_fs.h>
+#include <beep/stat.h>
+#include <beep/ctype.h>
+#include <beep/time.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/seq_file.h>
+#include <beep/bitops.h>
+#include <beep/rtc.h>
 
 #include <asm/uaccess.h>
 #include <asm/processor.h>

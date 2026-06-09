@@ -1,5 +1,5 @@
 /*
- * linux/net/sunrpc/svc.c
+ * beep/net/sunrpc/svc.c
  *
  * High-level RPC service routines
  *
@@ -10,23 +10,23 @@
  * by Greg Banks <gnb@melbourne.sgi.com>
  */
 
-#include <linux/linkage.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <beep/linkage.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/net.h>
+#include <beep/in.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/kthread.h>
+#include <beep/slab.h>
 
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/bc_xprt.h>
+#include <beep/sunrpc/types.h>
+#include <beep/sunrpc/xdr.h>
+#include <beep/sunrpc/stats.h>
+#include <beep/sunrpc/svcsock.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/bc_xprt.h>
 
 #define RPCDBG_FACILITY	RPCDBG_SVCDSP
 

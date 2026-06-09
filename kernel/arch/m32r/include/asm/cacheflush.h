@@ -1,7 +1,7 @@
 #ifndef _ASM_M32R_CACHEFLUSH_H
 #define _ASM_M32R_CACHEFLUSH_H
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 extern void _flush_cache_all(void);
 extern void _flush_cache_copyback_all(void);

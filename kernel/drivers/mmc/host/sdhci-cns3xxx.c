@@ -12,10 +12,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/mmc/host.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/mmc/host.h>
+#include <beep/module.h>
 #include <mach/cns3xxx.h>
 #include "sdhci-pltfm.h"
 

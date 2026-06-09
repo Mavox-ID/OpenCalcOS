@@ -7,10 +7,10 @@
  * by the Free Software Foundation, incorporated herein by reference.
  */
 
-#include <linux/delay.h>
-#include <linux/rtnetlink.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/rtnetlink.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
 #include "efx.h"
 #include "mdio_10g.h"
 #include "nic.h"

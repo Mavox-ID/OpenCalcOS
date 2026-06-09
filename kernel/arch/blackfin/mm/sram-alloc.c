@@ -6,19 +6,19 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/miscdevice.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/miscdevice.h>
+#include <beep/ioport.h>
+#include <beep/fcntl.h>
+#include <beep/init.h>
+#include <beep/poll.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/spinlock.h>
+#include <beep/rtc.h>
+#include <beep/slab.h>
 #include <asm/blackfin.h>
 #include <asm/mem_map.h>
 #include "blackfin_sram.h"

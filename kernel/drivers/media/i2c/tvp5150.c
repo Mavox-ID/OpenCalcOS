@@ -5,11 +5,11 @@
  * This code is placed under the terms of the GNU General Public License v2
  */
 
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/videodev2.h>
+#include <beep/delay.h>
+#include <beep/module.h>
 #include <media/v4l2-device.h>
 #include <media/tvp5150.h>
 #include <media/v4l2-chip-ident.h>

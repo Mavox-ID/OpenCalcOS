@@ -17,11 +17,11 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/fs.h>
-#include <linux/ctype.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/fs.h>
+#include <beep/ctype.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #include <asm/uaccess.h>
 #include "jfs_incore.h"
 #include "jfs_filsys.h"

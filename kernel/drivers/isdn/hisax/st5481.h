@@ -226,10 +226,10 @@ enum {
 #define INFO(format, arg...)						\
 	printk(KERN_INFO "%s:%s: " format "\n" , __FILE__,  __func__ , ## arg)
 
-#include <linux/isdn/hdlc.h>
+#include <beep/isdn/hdlc.h>
 #include "fsm.h"
 #include "hisax_if.h"
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 
 /* ======================================================================
  * FIFO handling

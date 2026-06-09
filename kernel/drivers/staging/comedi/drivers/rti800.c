@@ -2,7 +2,7 @@
    comedi/drivers/rti800.c
    Hardware driver for Analog Devices RTI-800/815 board
 
-   COMEDI - Linux Control and Measurement Device Interface
+   COMEDI - Beep Control and Measurement Device Interface
    Copyright (C) 1998 David A. Schleef <ds@schleef.org>
 
    This program is free software; you can redistribute it and/or modify
@@ -52,10 +52,10 @@ Configuration options:
   [8] - DAC 1 encoding (same as DAC 0)
 */
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 #define RTI800_SIZE 16
 

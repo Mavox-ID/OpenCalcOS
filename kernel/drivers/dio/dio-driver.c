@@ -10,9 +10,9 @@
  *  for more details.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/dio.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/dio.h>
 
 
 /**

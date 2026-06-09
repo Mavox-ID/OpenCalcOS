@@ -6,7 +6,7 @@
  *  Derived from arch/i386/kernel/irq.c
  *    Copyright (C) 1992 Linus Torvalds
  *  Adapted from arch/i386 by Gary Thomas
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *  Updated and modified by Cort Dougan <cort@fsmlabs.com>
  *    Copyright (C) 1996-2001 Cort Dougan
  *  Adapted for Power Macintosh by Paul Mackerras
@@ -17,14 +17,14 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/radix-tree.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
+#include <beep/slab.h>
+#include <beep/seq_file.h>
+#include <beep/radix-tree.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
 
 #include <asm/megamod-pic.h>
 #include <asm/special_insns.h>

@@ -1,5 +1,5 @@
 /*
- * linux/drivers/pcmcia/pxa/pxa_cm_x2xx.c
+ * beep/drivers/pcmcia/pxa/pxa_cm_x2xx.c
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -10,7 +10,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <asm/mach-types.h>
 #include <mach/hardware.h>

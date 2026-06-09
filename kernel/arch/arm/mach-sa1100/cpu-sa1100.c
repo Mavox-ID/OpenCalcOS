@@ -6,9 +6,9 @@
  * Authors:
  * - Johan Pouwelse (J.A.Pouwelse@its.tudelft.nl): initial version
  * - Erik Mouw (J.A.K.Mouw@its.tudelft.nl):
- *   - major rewrite for linux-2.3.99
+ *   - major rewrite for beep-2.3.99
  *   - rewritten for the more generic power management scheme in
- *     linux-2.4.5-rmk1
+ *     beep-2.4.5-rmk1
  *
  * This software has been developed while working on the LART
  * computing board (http://www.lartmaker.nl/), which is
@@ -83,11 +83,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/io.h>
 
 #include <asm/cputype.h>
 

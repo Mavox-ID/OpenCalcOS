@@ -12,27 +12,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kallsyms.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/list.h>
-#include <linux/sysctl.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/dynamic_debug.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/jump_label.h>
-#include <linux/hardirq.h>
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kallsyms.h>
+#include <beep/types.h>
+#include <beep/mutex.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/list.h>
+#include <beep/sysctl.h>
+#include <beep/ctype.h>
+#include <beep/string.h>
+#include <beep/uaccess.h>
+#include <beep/dynamic_debug.h>
+#include <beep/debugfs.h>
+#include <beep/slab.h>
+#include <beep/jump_label.h>
+#include <beep/hardirq.h>
+#include <beep/sched.h>
+#include <beep/device.h>
+#include <beep/netdevice.h>
 
 extern struct _ddebug __start___verbose[];
 extern struct _ddebug __stop___verbose[];

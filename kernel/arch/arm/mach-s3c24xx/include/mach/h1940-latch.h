@@ -1,7 +1,7 @@
 /* arch/arm/mach-s3c2410/include/mach/h1940-latch.h
  *
  * Copyright (c) 2005 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  *  iPAQ H1940 series - latch definitions

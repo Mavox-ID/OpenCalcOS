@@ -23,12 +23,12 @@
 extern "C" {
 #endif
 
-/* In Linux, this is used to make extern functions static when needed. */
+/* In Beep, this is used to make extern functions static when needed. */
 #ifndef XZ_EXTERN
 #	define XZ_EXTERN extern
 #endif
 
-/* In Linux, this is used to mark the functions with __init when needed. */
+/* In Beep, this is used to mark the functions with __init when needed. */
 #ifndef XZ_FUNC
 #	define XZ_FUNC
 #endif

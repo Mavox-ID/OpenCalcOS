@@ -7,7 +7,7 @@
  *
  * Copyright (C) 2004, 2005, 2006, 2008  Thiemo Seufer
  * Copyright (C) 2005, 2007, 2008, 2009  Maciej W. Rozycki
- * Copyright (C) 2006  Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2006  Ralf Baechle (ralf@beep-mips.org)
  * Copyright (C) 2008, 2009 Cavium Networks, Inc.
  * Copyright (C) 2011  MIPS Technologies, Inc.
  *
@@ -21,13 +21,13 @@
  * (Condolences to Napoleon XIV)
  */
 
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/smp.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/cache.h>
+#include <beep/bug.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/smp.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/cache.h>
 
 #include <asm/cacheflush.h>
 #include <asm/pgtable.h>

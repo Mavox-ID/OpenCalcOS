@@ -1,5 +1,5 @@
 /*
- *  IBM eServer eHCA Infiniband device driver for Linux on POWER
+ *  IBM eServer eHCA Infiniband device driver for Beep on POWER
  *
  *  MR/MW functions
  *
@@ -40,7 +40,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include <rdma/ib_umem.h>
 
 #include "ehca_iverbs.h"

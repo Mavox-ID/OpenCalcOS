@@ -43,11 +43,11 @@
  *  full control over both mixers.
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/pnp.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/isa.h>
+#include <beep/pnp.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/wss.h>
 #include <sound/opl3.h>

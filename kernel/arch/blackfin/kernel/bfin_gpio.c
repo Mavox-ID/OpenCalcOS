@@ -6,15 +6,15 @@
  * Licensed under the GPL-2 or later
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #include <asm/blackfin.h>
 #include <asm/gpio.h>
 #include <asm/portmux.h>
-#include <linux/irq.h>
+#include <beep/irq.h>
 #include <asm/irq_handler.h>
 
 #if ANOMALY_05000311 || ANOMALY_05000323

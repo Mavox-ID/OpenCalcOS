@@ -5,7 +5,7 @@
  * Copyright (C) 1998 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/head.h>
 #include <asm/psr.h>
 #include <asm/page.h>

@@ -1,13 +1,13 @@
 /*
- *  linux/arch/arm/mm/nommu.c
+ *  beep/arch/arm/mm/nommu.c
  *
- * ARM uCLinux supporting functions.
+ * ARM uCBeep supporting functions.
  */
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/io.h>
+#include <beep/memblock.h>
 
 #include <asm/cacheflush.h>
 #include <asm/sections.h>

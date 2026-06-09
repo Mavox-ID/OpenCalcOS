@@ -10,11 +10,11 @@
  *  2 of the License, or (at your option) any later version.
  */
 
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/threads.h>
-#include <linux/init.h>
-#include <linux/export.h>
+#include <beep/string.h>
+#include <beep/sched.h>
+#include <beep/threads.h>
+#include <beep/init.h>
+#include <beep/export.h>
 
 #include <asm/oprofile_impl.h>
 #include <asm/cputable.h>

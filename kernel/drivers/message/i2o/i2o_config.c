@@ -30,10 +30,10 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/compat.h>
-#include <linux/slab.h>
+#include <beep/miscdevice.h>
+#include <beep/mutex.h>
+#include <beep/compat.h>
+#include <beep/slab.h>
 
 #include <asm/uaccess.h>
 

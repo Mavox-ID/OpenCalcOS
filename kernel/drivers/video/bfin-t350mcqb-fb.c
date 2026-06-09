@@ -1,7 +1,7 @@
 /*
  * File:         drivers/video/bfin-t350mcqb-fb.c
  * Based on:
- * Author:       Michael Hennerich <hennerich@blackfin.uclinux.org>
+ * Author:       Michael Hennerich <hennerich@blackfin.ucbeep.org>
  *
  * Created:
  * Description:  Blackfin LCD Framebuffer driver
@@ -10,7 +10,7 @@
  * Modified:
  *               Copyright 2004-2007 Analog Devices Inc.
  *
- * Bugs:         Enter bugs at http://blackfin.uclinux.org/
+ * Bugs:         Enter bugs at http://blackfin.ucbeep.org/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,20 +28,20 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/gfp.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/backlight.h>
-#include <linux/lcd.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/gfp.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/backlight.h>
+#include <beep/lcd.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
 
 #include <asm/blackfin.h>
 #include <asm/irq.h>

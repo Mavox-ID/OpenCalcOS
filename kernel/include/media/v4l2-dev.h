@@ -9,12 +9,12 @@
 #ifndef _V4L2_DEV_H
 #define _V4L2_DEV_H
 
-#include <linux/poll.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/mutex.h>
-#include <linux/videodev2.h>
+#include <beep/poll.h>
+#include <beep/fs.h>
+#include <beep/device.h>
+#include <beep/cdev.h>
+#include <beep/mutex.h>
+#include <beep/videodev2.h>
 
 #include <media/media-entity.h>
 

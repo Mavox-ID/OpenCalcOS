@@ -30,11 +30,11 @@
 /*
  * Veritas filesystem driver - fileset header routines.
  */
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 
 #include "vxfs.h"
 #include "vxfs_inode.h"

@@ -4,10 +4,10 @@
 /*
  *  M32R version:
  *    Copyright (C) 2001, 2002  Hitoshi Yamamoto
- *    Copyright (C) 2004  Hirokazu Takata <takata at linux-m32r.org>
+ *    Copyright (C) 2004  Hirokazu Takata <takata at beep-m32r.org>
  */
 
-#include <linux/irqflags.h>
+#include <beep/irqflags.h>
 #include <asm/assembler.h>
 #include <asm/dcache_clear.h>
 

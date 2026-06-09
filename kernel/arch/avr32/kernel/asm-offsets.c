@@ -4,10 +4,10 @@
  * to extract and format the required data.
  */
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/thread_info.h>
-#include <linux/kbuild.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/thread_info.h>
+#include <beep/kbuild.h>
 
 void foo(void)
 {

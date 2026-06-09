@@ -11,11 +11,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/rwsem.h>
-#include <linux/leds.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/rwsem.h>
+#include <beep/leds.h>
 #include "leds.h"
 
 DECLARE_RWSEM(leds_list_lock);

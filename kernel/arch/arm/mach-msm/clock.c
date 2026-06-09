@@ -14,16 +14,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/pm_qos.h>
-#include <linux/mutex.h>
-#include <linux/clk.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/clkdev.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/err.h>
+#include <beep/spinlock.h>
+#include <beep/pm_qos.h>
+#include <beep/mutex.h>
+#include <beep/clk.h>
+#include <beep/string.h>
+#include <beep/module.h>
+#include <beep/clkdev.h>
 
 #include "clock.h"
 
@@ -32,7 +32,7 @@ static DEFINE_SPINLOCK(clocks_lock);
 static LIST_HEAD(clocks);
 
 /*
- * Standard clock functions defined in include/linux/clk.h
+ * Standard clock functions defined in include/beep/clk.h
  */
 int clk_enable(struct clk *clk)
 {

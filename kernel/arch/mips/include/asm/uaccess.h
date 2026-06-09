@@ -10,9 +10,9 @@
 #ifndef _ASM_UACCESS_H
 #define _ASM_UACCESS_H
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/thread_info.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/thread_info.h>
 
 /*
  * The fs value determines whether argument validity checking should be

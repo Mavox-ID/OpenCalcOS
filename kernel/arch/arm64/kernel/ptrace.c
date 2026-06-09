@@ -19,21 +19,21 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/security.h>
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/uaccess.h>
-#include <linux/perf_event.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/regset.h>
-#include <linux/tracehook.h>
-#include <linux/elf.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/security.h>
+#include <beep/init.h>
+#include <beep/signal.h>
+#include <beep/uaccess.h>
+#include <beep/perf_event.h>
+#include <beep/hw_breakpoint.h>
+#include <beep/regset.h>
+#include <beep/tracehook.h>
+#include <beep/elf.h>
 
 #include <asm/compat.h>
 #include <asm/debug-monitors.h>
@@ -632,7 +632,7 @@ static const struct user_regset_view user_aarch64_view = {
 };
 
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <beep/compat.h>
 
 enum compat_regset {
 	REGSET_COMPAT_GPR,

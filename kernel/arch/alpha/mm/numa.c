@@ -1,19 +1,19 @@
 /*
- *  linux/arch/alpha/mm/numa.c
+ *  beep/arch/alpha/mm/numa.c
  *
  *  DISCONTIGMEM NUMA alpha support.
  *
  *  Copyright (C) 2001 Andrea Arcangeli <andrea@suse.de> SuSE
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/bootmem.h>
-#include <linux/swap.h>
-#include <linux/initrd.h>
-#include <linux/pfn.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/bootmem.h>
+#include <beep/swap.h>
+#include <beep/initrd.h>
+#include <beep/pfn.h>
+#include <beep/module.h>
 
 #include <asm/hwrpb.h>
 #include <asm/pgalloc.h>

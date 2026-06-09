@@ -1,1 +1,1 @@
-/* dummy prom.h; here to make linux/of.h's #includes happy */
+/* dummy prom.h; here to make beep/of.h's #includes happy */

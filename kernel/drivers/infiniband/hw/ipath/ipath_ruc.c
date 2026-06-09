@@ -31,8 +31,8 @@
  * SOFTWARE.
  */
 
-#include <linux/sched.h>
-#include <linux/spinlock.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
 
 #include "ipath_verbs.h"
 #include "ipath_kernel.h"

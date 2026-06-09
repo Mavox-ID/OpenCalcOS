@@ -1,39 +1,39 @@
 /*
  * Copyright (C) 2005-2006 by Texas Instruments
  *
- * This file is part of the Inventra Controller Driver for Linux.
+ * This file is part of the Inventra Controller Driver for Beep.
  *
- * The Inventra Controller Driver for Linux is free software; you
+ * The Inventra Controller Driver for Beep is free software; you
  * can redistribute it and/or modify it under the terms of the GNU
  * General Public License version 2 as published by the Free Software
  * Foundation.
  *
- * The Inventra Controller Driver for Linux is distributed in
+ * The Inventra Controller Driver for Beep is distributed in
  * the hope that it will be useful, but WITHOUT ANY WARRANTY;
  * without even the implied warranty of MERCHANTABILITY or
  * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public
  * License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with The Inventra Controller Driver for Linux ; if not,
+ * along with The Inventra Controller Driver for Beep ; if not,
  * write to the Free Software Foundation, Inc., 59 Temple Place,
  * Suite 330, Boston, MA  02111-1307  USA
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/usb/nop-usb-xceiv.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/usb/nop-usb-xceiv.h>
 
 #include <mach/cputype.h>
 #include <mach/hardware.h>

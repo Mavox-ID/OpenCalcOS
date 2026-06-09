@@ -53,13 +53,13 @@
  * but never before the maximum hash table size has been reached.
  */
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/buffer_head.h>
-#include <linux/sort.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/crc32.h>
-#include <linux/vmalloc.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/buffer_head.h>
+#include <beep/sort.h>
+#include <beep/gfs2_ondisk.h>
+#include <beep/crc32.h>
+#include <beep/vmalloc.h>
 
 #include "gfs2.h"
 #include "incore.h"

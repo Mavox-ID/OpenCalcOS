@@ -9,7 +9,7 @@
  *
  *
  *	Feb-16-2001	DMI	Added I2C structure definitions
- *	May-29-2002	gkh	Ported to Linux
+ *	May-29-2002	gkh	Ported to Beep
  *
  *
  ******************************************************************************/

@@ -1,6 +1,6 @@
 /* $Id: capidrv.c,v 1.1.2.2 2004/01/12 23:17:24 keil Exp $
  *
- * ISDN4Linux Driver, using capi20 interface (kernelcapi)
+ * ISDN4Beep Driver, using capi20 interface (kernelcapi)
  *
  * Copyright 1997 by Carsten Paeth <calle@calle.de>
  *
@@ -9,35 +9,35 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/slab.h>
-#include <linux/fcntl.h>
-#include <linux/fs.h>
-#include <linux/signal.h>
-#include <linux/mm.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/skbuff.h>
-#include <linux/isdn.h>
-#include <linux/isdnif.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/capi.h>
-#include <linux/kernelcapi.h>
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/major.h>
+#include <beep/slab.h>
+#include <beep/fcntl.h>
+#include <beep/fs.h>
+#include <beep/signal.h>
+#include <beep/mm.h>
+#include <beep/timer.h>
+#include <beep/wait.h>
+#include <beep/skbuff.h>
+#include <beep/isdn.h>
+#include <beep/isdnif.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/capi.h>
+#include <beep/kernelcapi.h>
+#include <beep/ctype.h>
+#include <beep/init.h>
+#include <beep/moduleparam.h>
 
-#include <linux/isdn/capiutil.h>
-#include <linux/isdn/capicmd.h>
+#include <beep/isdn/capiutil.h>
+#include <beep/isdn/capicmd.h>
 #include "capidrv.h"
 
 static int debugmode = 0;
 
-MODULE_DESCRIPTION("CAPI4Linux: Interface to ISDN4Linux");
+MODULE_DESCRIPTION("CAPI4Beep: Interface to ISDN4Beep");
 MODULE_AUTHOR("Carsten Paeth");
 MODULE_LICENSE("GPL");
 module_param(debugmode, uint, S_IRUGO | S_IWUSR);
@@ -53,7 +53,7 @@ struct capidrv_contr {
 	char name[20];
 
 	/*
-	 * for isdn4linux
+	 * for isdn4beep
 	 */
 	isdn_if interface;
 	int myid;
@@ -1871,7 +1871,7 @@ static int if_sendbuf(int id, int channel, int doack, struct sk_buff *skb)
 
 	/*
 	 * Here we copy pointer skb->data into the 32-bit 'Data' field.
-	 * The 'Data' field is not used in practice in linux kernel
+	 * The 'Data' field is not used in practice in beep kernel
 	 * (neither in 32 or 64 bit), but should have some value,
 	 * since a CAPI message trace will display it.
 	 *

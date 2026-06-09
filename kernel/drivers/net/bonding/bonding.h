@@ -12,17 +12,17 @@
  *
  */
 
-#ifndef _LINUX_BONDING_H
-#define _LINUX_BONDING_H
+#ifndef _BEEP_BONDING_H
+#define _BEEP_BONDING_H
 
-#include <linux/timer.h>
-#include <linux/proc_fs.h>
-#include <linux/if_bonding.h>
-#include <linux/cpumask.h>
-#include <linux/in6.h>
-#include <linux/netpoll.h>
-#include <linux/inetdevice.h>
-#include <linux/etherdevice.h>
+#include <beep/timer.h>
+#include <beep/proc_fs.h>
+#include <beep/if_bonding.h>
+#include <beep/cpumask.h>
+#include <beep/in6.h>
+#include <beep/netpoll.h>
+#include <beep/inetdevice.h>
+#include <beep/etherdevice.h>
 #include "bond_3ad.h"
 #include "bond_alb.h"
 
@@ -474,4 +474,4 @@ extern const struct bond_parm_tbl fail_over_mac_tbl[];
 extern const struct bond_parm_tbl pri_reselect_tbl[];
 extern struct bond_parm_tbl ad_select_tbl[];
 
-#endif /* _LINUX_BONDING_H */
+#endif /* _BEEP_BONDING_H */

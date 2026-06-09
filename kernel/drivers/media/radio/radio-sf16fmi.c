@@ -1,4 +1,4 @@
-/* SF16-FMI, SF16-FMP and SF16-FMD radio driver for Linux radio support
+/* SF16-FMI, SF16-FMP and SF16-FMD radio driver for Beep radio support
  * heavily based on rtrack driver...
  * (c) 1997 M. Kirkwood
  * (c) 1998 Petr Vandrovec, vandrove@vc.cvut.cz
@@ -16,15 +16,15 @@
  * Converted to V4L2 API by Mauro Carvalho Chehab <mchehab@infradead.org>
  */
 
-#include <linux/kernel.h>	/* __setup			*/
-#include <linux/module.h>	/* Modules 			*/
-#include <linux/init.h>		/* Initdata			*/
-#include <linux/ioport.h>	/* request_region		*/
-#include <linux/delay.h>	/* udelay			*/
-#include <linux/isapnp.h>
-#include <linux/mutex.h>
-#include <linux/videodev2.h>	/* kernel radio structs		*/
-#include <linux/io.h>		/* outb, outb_p			*/
+#include <beep/kernel.h>	/* __setup			*/
+#include <beep/module.h>	/* Modules 			*/
+#include <beep/init.h>		/* Initdata			*/
+#include <beep/ioport.h>	/* request_region		*/
+#include <beep/delay.h>	/* udelay			*/
+#include <beep/isapnp.h>
+#include <beep/mutex.h>
+#include <beep/videodev2.h>	/* kernel radio structs		*/
+#include <beep/io.h>		/* outb, outb_p			*/
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include "lm7000.h"

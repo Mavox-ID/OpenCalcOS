@@ -1,7 +1,7 @@
 /*
  * IRQ support for the Hexagon architecture
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -22,7 +22,7 @@
 #define _ASM_IRQFLAGS_H
 
 #include <asm/hexagon_vm.h>
-#include <linux/types.h>
+#include <beep/types.h>
 
 static inline unsigned long arch_local_save_flags(void)
 {

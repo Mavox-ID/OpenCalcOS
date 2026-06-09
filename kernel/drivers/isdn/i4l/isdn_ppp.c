@@ -1,6 +1,6 @@
 /* $Id: isdn_ppp.c,v 1.1.2.3 2004/02/10 01:07:13 keil Exp $
  *
- * Linux ISDN subsystem, functions for synchronous PPP (linklevel).
+ * Beep ISDN subsystem, functions for synchronous PPP (linklevel).
  *
  * Copyright 1995,96 by Michael Hipp (Michael.Hipp@student.uni-tuebingen.de)
  *
@@ -9,12 +9,12 @@
  *
  */
 
-#include <linux/isdn.h>
-#include <linux/poll.h>
-#include <linux/ppp-comp.h>
-#include <linux/slab.h>
+#include <beep/isdn.h>
+#include <beep/poll.h>
+#include <beep/ppp-comp.h>
+#include <beep/slab.h>
 #ifdef CONFIG_IPPP_FILTER
-#include <linux/filter.h>
+#include <beep/filter.h>
 #endif
 
 #include "isdn_common.h"

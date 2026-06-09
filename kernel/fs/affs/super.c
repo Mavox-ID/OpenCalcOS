@@ -1,5 +1,5 @@
 /*
- *  linux/fs/affs/inode.c
+ *  beep/fs/affs/inode.c
  *
  *  (c) 1996  Hans-Joachim Widmaier - Rewritten
  *
@@ -10,14 +10,14 @@
  *  (C) 1991  Linus Torvalds - minix filesystem
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/statfs.h>
-#include <linux/parser.h>
-#include <linux/magic.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/writeback.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/statfs.h>
+#include <beep/parser.h>
+#include <beep/magic.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/writeback.h>
 #include "affs.h"
 
 extern struct timezone sys_tz;
@@ -644,7 +644,7 @@ static void __exit exit_affs_fs(void)
 	destroy_inodecache();
 }
 
-MODULE_DESCRIPTION("Amiga filesystem support for Linux");
+MODULE_DESCRIPTION("Amiga filesystem support for Beep");
 MODULE_LICENSE("GPL");
 
 module_init(init_affs_fs)

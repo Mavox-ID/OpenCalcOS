@@ -1,19 +1,19 @@
 /*    System Call Table
  *
- *    Copyright (C) 1999-2004 Matthew Wilcox <willy at parisc-linux.org>
- *    Copyright (C) 2000-2001 John Marvin <jsm at parisc-linux.org>
- *    Copyright (C) 2000 Alan Modra <amodra at parisc-linux.org>
- *    Copyright (C) 2000-2003 Paul Bame <bame at parisc-linux.org>
+ *    Copyright (C) 1999-2004 Matthew Wilcox <willy at parisc-beep.org>
+ *    Copyright (C) 2000-2001 John Marvin <jsm at parisc-beep.org>
+ *    Copyright (C) 2000 Alan Modra <amodra at parisc-beep.org>
+ *    Copyright (C) 2000-2003 Paul Bame <bame at parisc-beep.org>
  *    Copyright (C) 2000 Philipp Rumpf <prumpf with tux.org>
  *    Copyright (C) 2000 Michael Ang <mang with subcarrier.org>
  *    Copyright (C) 2000 David Huggins-Daines <dhd with pobox.org>
- *    Copyright (C) 2000 Grant Grundler <grundler at parisc-linux.org>
- *    Copyright (C) 2001 Richard Hirst <rhirst with parisc-linux.org>
- *    Copyright (C) 2001-2002 Ryan Bradetich <rbrad at parisc-linux.org>
- *    Copyright (C) 2001-2007 Helge Deller <deller at parisc-linux.org>
- *    Copyright (C) 2000-2001 Thomas Bogendoerfer <tsbogend at parisc-linux.org>
- *    Copyright (C) 2002 Randolph Chung <tausq with parisc-linux.org>
- *    Copyright (C) 2005-2006 Kyle McMartin <kyle at parisc-linux.org>
+ *    Copyright (C) 2000 Grant Grundler <grundler at parisc-beep.org>
+ *    Copyright (C) 2001 Richard Hirst <rhirst with parisc-beep.org>
+ *    Copyright (C) 2001-2002 Ryan Bradetich <rbrad at parisc-beep.org>
+ *    Copyright (C) 2001-2007 Helge Deller <deller at parisc-beep.org>
+ *    Copyright (C) 2000-2001 Thomas Bogendoerfer <tsbogend at parisc-beep.org>
+ *    Copyright (C) 2002 Randolph Chung <tausq with parisc-beep.org>
+ *    Copyright (C) 2005-2006 Kyle McMartin <kyle at parisc-beep.org>
  *
  *    This program is free software; you can redistribute it and/or modify
  *    it under the terms of the GNU General Public License as published by
@@ -32,8 +32,8 @@
 
 #if defined(CONFIG_64BIT) && !defined(SYSCALL_TABLE_64BIT)
 /* Use ENTRY_SAME for 32-bit syscalls which are the same on wide and
- * narrow palinux.  Use ENTRY_DIFF for those where a 32-bit specific
- * implementation is required on wide palinux.  Use ENTRY_COMP where
+ * narrow pabeep.  Use ENTRY_DIFF for those where a 32-bit specific
+ * implementation is required on wide pabeep.  Use ENTRY_COMP where
  * the compatibility layer has a useful 32-bit implementation.
  */
 #define ENTRY_SAME(_name_) .dword sys_##_name_
@@ -144,7 +144,7 @@
 	ENTRY_SAME(mincore)
 	ENTRY_COMP(sigpending)
 	ENTRY_SAME(sethostname)
-	/* Following 3 have linux-common-code structs containing longs -( */
+	/* Following 3 have beep-common-code structs containing longs -( */
 	ENTRY_COMP(setrlimit)		/* 75 */
 	ENTRY_COMP(getrlimit)
 	ENTRY_COMP(getrusage)

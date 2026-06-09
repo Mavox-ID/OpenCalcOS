@@ -20,20 +20,20 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/device.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/rawmidi.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/composite.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/midi.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/composite.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb/audio.h>
+#include <beep/usb/midi.h>
 
 #include "gadget_chips.h"
 
@@ -79,7 +79,7 @@ MODULE_PARM_DESC(out_ports, "Number of MIDI output ports");
  * Instead:  allocate your own, using normal USB-IF procedures.
  */
 #define DRIVER_VENDOR_NUM	0x17b3		/* Grey Innovation */
-#define DRIVER_PRODUCT_NUM	0x0004		/* Linux-USB "MIDI Gadget" */
+#define DRIVER_PRODUCT_NUM	0x0004		/* Beep-USB "MIDI Gadget" */
 
 /* string IDs are assigned dynamically */
 

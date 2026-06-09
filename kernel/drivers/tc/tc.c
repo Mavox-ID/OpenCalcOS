@@ -9,17 +9,17 @@
  *	General Public License.  See the file "COPYING" in the main
  *	directory of this archive for more details.
  */
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/tc.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/tc.h>
+#include <beep/types.h>
 
 #include <asm/io.h>
 

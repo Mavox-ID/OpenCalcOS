@@ -1,11 +1,11 @@
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/initrd.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/initrd.h>
 #include <asm/types.h>
 #include <init.h>
 #include <os.h>

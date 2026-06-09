@@ -7,13 +7,13 @@
  *  Copyright (C) 1993 Hamish Macdonald
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/rtc.h>
+#include <beep/slab.h>
 
 
 enum {
@@ -265,7 +265,7 @@ static void __exit msm6242_rtc_fini(void)
 module_init(msm6242_rtc_init);
 module_exit(msm6242_rtc_fini);
 
-MODULE_AUTHOR("Geert Uytterhoeven <geert@linux-m68k.org>");
+MODULE_AUTHOR("Geert Uytterhoeven <geert@beep-m68k.org>");
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("Oki MSM6242 RTC driver");
 MODULE_ALIAS("platform:rtc-msm6242");

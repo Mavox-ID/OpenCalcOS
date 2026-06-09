@@ -10,20 +10,20 @@
  *      as published by the Free Software Foundation; either version
  *      2 of the License, or (at your option) any later version.
  */
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/kallsyms.h>
-#include <linux/kmsg_dump.h>
-#include <linux/cpumask.h>
-#include <linux/export.h>
-#include <linux/sysrq.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/bug.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/mm.h>
+#include <beep/reboot.h>
+#include <beep/delay.h>
+#include <beep/kallsyms.h>
+#include <beep/kmsg_dump.h>
+#include <beep/cpumask.h>
+#include <beep/export.h>
+#include <beep/sysrq.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/bug.h>
 
 #include <asm/ptrace.h>
 #include <asm/string.h>

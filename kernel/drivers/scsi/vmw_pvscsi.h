@@ -24,7 +24,7 @@
 #ifndef _VMW_PVSCSI_H_
 #define _VMW_PVSCSI_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define PVSCSI_DRIVER_VERSION_STRING   "1.0.2.0-k"
 

@@ -71,7 +71,7 @@ int sulogin_main(int argc UNUSED_PARAM, char **argv)
 		);
 		if (r < 0) {
 			/* ^D, ^C, timeout, or read error */
-			/* util-linux 2.36.1 compat: no message */
+			/* util-beep 2.36.1 compat: no message */
 			/*bb_simple_info_msg("normal startup");*/
 			return 0;
 		}
@@ -82,10 +82,10 @@ int sulogin_main(int argc UNUSED_PARAM, char **argv)
 		bb_simple_info_msg("Login incorrect");
 	}
 
-	/* util-linux 2.36.1 compat: no message */
+	/* util-beep 2.36.1 compat: no message */
 	/*bb_simple_info_msg("starting shell for system maintenance");*/
 
-	IF_SELINUX(renew_current_security_context());
+	IF_SEBEEP(renew_current_security_context());
 
 	shell = getenv("SUSHELL");
 	if (!shell)
@@ -93,7 +93,7 @@ int sulogin_main(int argc UNUSED_PARAM, char **argv)
 	if (!shell)
 		shell = pwd->pw_shell;
 
-	/* util-linux 2.36.1 compat: cd to root's HOME, set a few envvars */
+	/* util-beep 2.36.1 compat: cd to root's HOME, set a few envvars */
 	setup_environment(shell, 0
 		+ SETUP_ENV_CHANGEENV_LOGNAME
 		+ SETUP_ENV_CHDIR
@@ -102,8 +102,8 @@ int sulogin_main(int argc UNUSED_PARAM, char **argv)
 	// SETUP_ENV_CHANGEENV_LOGNAME - set HOME, SHELL, USER,and LOGNAME
 	// SETUP_ENV_CHDIR - cd to $HOME
 
-	/* util-linux 2.36.1 compat: steal ctty if we don't have it yet
-	 * (yes, util-linux uses force=1)  */
+	/* util-beep 2.36.1 compat: steal ctty if we don't have it yet
+	 * (yes, util-beep uses force=1)  */
 	tsid = tcgetsid(STDIN_FILENO);
 	if (tsid < 0 || getpid() != tsid) {
 		if (ioctl(STDIN_FILENO, TIOCSCTTY, /*force:*/ (long)1) != 0) {

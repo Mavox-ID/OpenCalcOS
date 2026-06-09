@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-footbridge/irq.c
+ *  beep/arch/arm/mach-footbridge/irq.c
  *
  *  Copyright (C) 1996-2000 Russell King
  *
@@ -14,12 +14,12 @@
  *   26-Jan-1999 PJB	Don't use IACK on CATS
  *   16-Mar-1999 RMK	Added autodetect of ISA PICs
  */
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
 
 #include <asm/mach/irq.h>
 

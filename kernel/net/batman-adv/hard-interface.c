@@ -29,8 +29,8 @@
 #include "hash.h"
 #include "bridge_loop_avoidance.h"
 
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
+#include <beep/if_arp.h>
+#include <beep/if_ether.h>
 
 void batadv_hardif_free_rcu(struct rcu_head *rcu)
 {

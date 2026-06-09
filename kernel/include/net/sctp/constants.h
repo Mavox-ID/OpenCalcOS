@@ -47,8 +47,8 @@
 #ifndef __sctp_constants_h__
 #define __sctp_constants_h__
 
-#include <linux/sctp.h>
-#include <linux/ipv6.h> /* For ipv6hdr. */
+#include <beep/sctp.h>
+#include <beep/ipv6.h> /* For ipv6hdr. */
 #include <net/sctp/user.h>
 #include <net/tcp_states.h>  /* For TCP states used in sctp_sock_state_t */
 

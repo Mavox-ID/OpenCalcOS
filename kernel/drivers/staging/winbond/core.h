@@ -1,9 +1,9 @@
 #ifndef __WINBOND_CORE_H
 #define __WINBOND_CORE_H
 
-#include <linux/wireless.h>
-#include <linux/types.h>
-#include <linux/delay.h>
+#include <beep/wireless.h>
+#include <beep/types.h>
+#include <beep/delay.h>
 
 #include "wbhal.h"
 #include "mto.h"
@@ -38,7 +38,7 @@ struct mlme_frame {
 						/*  excluding the discarded */
 };
 
-#define WBLINUX_PACKET_ARRAY_SIZE (ETHERNET_TX_DESCRIPTORS*4)
+#define WBBEEP_PACKET_ARRAY_SIZE (ETHERNET_TX_DESCRIPTORS*4)
 
 #define WB_MAX_LINK_NAME_LEN 40
 

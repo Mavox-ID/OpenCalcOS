@@ -1,27 +1,27 @@
 /*
- *  linux/fs/file.c
+ *  beep/fs/file.c
  *
  *  Copyright (C) 1998-1999, Stephen Tweedie and Bill Hawes
  *
  *  Manage the dynamic fd arrays in the process files_struct.
  */
 
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/time.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/workqueue.h>
+#include <beep/syscalls.h>
+#include <beep/export.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/mmzone.h>
+#include <beep/time.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/file.h>
+#include <beep/fdtable.h>
+#include <beep/bitops.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/rcupdate.h>
+#include <beep/workqueue.h>
 
 struct fdtable_defer {
 	spinlock_t lock;

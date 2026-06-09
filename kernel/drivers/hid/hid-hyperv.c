@@ -12,14 +12,14 @@
  *  FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
  *  more details.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/completion.h>
-#include <linux/input.h>
-#include <linux/hid.h>
-#include <linux/hiddev.h>
-#include <linux/hyperv.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/completion.h>
+#include <beep/input.h>
+#include <beep/hid.h>
+#include <beep/hiddev.h>
+#include <beep/hyperv.h>
 
 
 struct hv_input_dev_info {

@@ -23,10 +23,10 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/signal.h>
-#include <linux/platform_device.h>
+#include <beep/clk.h>
+#include <beep/device.h>
+#include <beep/signal.h>
+#include <beep/platform_device.h>
 
 static struct clk *usb_host_clock;
 

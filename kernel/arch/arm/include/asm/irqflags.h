@@ -8,7 +8,7 @@
 /*
  * CPU interrupt mask handling.
  */
-#if __LINUX_ARM_ARCH__ >= 6
+#if __BEEP_ARM_ARCH__ >= 6
 
 static inline unsigned long arch_local_irq_save(void)
 {

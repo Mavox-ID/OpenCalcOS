@@ -25,21 +25,21 @@
  * ----------------------------------------------------------------------------
  *
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/of_i2c.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/platform_data/i2c-designware.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/clk.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/of_i2c.h>
+#include <beep/platform_device.h>
+#include <beep/pm.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/platform_data/i2c-designware.h>
 #include "i2c-designware-core.h"
 
 static struct i2c_algorithm i2c_dw_algo = {

@@ -1,4 +1,4 @@
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 typedef unsigned int instr;
 

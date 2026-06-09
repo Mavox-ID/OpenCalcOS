@@ -4,7 +4,7 @@
  * SPEAr3XX machine family generic header file
  *
  * Copyright (C) 2009 ST Microelectronics
- * Viresh Kumar<viresh.linux@gmail.com>
+ * Viresh Kumar<viresh.beep@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
@@ -14,10 +14,10 @@
 #ifndef __MACH_GENERIC_H
 #define __MACH_GENERIC_H
 
-#include <linux/amba/pl08x.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/amba/bus.h>
+#include <beep/amba/pl08x.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/amba/bus.h>
 #include <asm/mach/time.h>
 #include <asm/mach/map.h>
 

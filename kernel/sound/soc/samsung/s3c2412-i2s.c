@@ -4,10 +4,10 @@
  *
  * Copyright (c) 2006 Wolfson Microelectronics PLC.
  *	Graeme Gregory graeme.gregory@wolfsonmicro.com
- *	linux@wolfsonmicro.com
+ *	beep@wolfsonmicro.com
  *
  * Copyright (c) 2007, 2004-2005 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * This program is free software; you can redistribute  it and/or modify it
@@ -16,11 +16,11 @@
  * option) any later version.
  */
 
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/module.h>
 
 #include <sound/soc.h>
 #include <sound/pcm_params.h>

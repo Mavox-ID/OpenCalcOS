@@ -67,8 +67,8 @@
 
 #ifndef __ASSEMBLER__
 
-#include <linux/list.h>
-#include <linux/clkdev.h>
+#include <beep/list.h>
+#include <beep/clkdev.h>
 
 #define PLLSTAT_GOSTAT	BIT(0)
 #define PLLCMD_GOSET	BIT(0)

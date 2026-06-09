@@ -6,13 +6,13 @@
  * Licensed under the GPL-2 or later
  */
 
-#include <linux/types.h>
-#include <linux/gfp.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/gfp.h>
+#include <beep/string.h>
+#include <beep/spinlock.h>
+#include <beep/dma-mapping.h>
+#include <beep/scatterlist.h>
+#include <beep/export.h>
 
 static spinlock_t dma_page_lock;
 static unsigned long *dma_page;

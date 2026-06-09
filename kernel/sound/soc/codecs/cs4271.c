@@ -19,14 +19,14 @@
  * DAPM support not implemented.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/spi/spi.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/spi/spi.h>
+#include <beep/of_device.h>
+#include <beep/of_gpio.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>

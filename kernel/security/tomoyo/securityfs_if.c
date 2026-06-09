@@ -4,7 +4,7 @@
  * Copyright (C) 2005-2011  NTT DATA CORPORATION
  */
 
-#include <linux/security.h>
+#include <beep/security.h>
 #include "common.h"
 
 /**

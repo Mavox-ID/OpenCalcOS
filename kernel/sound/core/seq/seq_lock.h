@@ -1,7 +1,7 @@
 #ifndef __SND_SEQ_LOCK_H
 #define __SND_SEQ_LOCK_H
 
-#include <linux/sched.h>
+#include <beep/sched.h>
 
 #if defined(CONFIG_SMP) || defined(CONFIG_SND_DEBUG)
 

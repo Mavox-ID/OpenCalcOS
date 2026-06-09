@@ -1,9 +1,9 @@
-#define _LINUX_STRING_H_
+#define _BEEP_STRING_H_
 
-#include <linux/compiler.h>	/* for inline */
-#include <linux/types.h>	/* for size_t */
-#include <linux/stddef.h>	/* for NULL */
-#include <linux/linkage.h>
+#include <beep/compiler.h>	/* for inline */
+#include <beep/types.h>	/* for size_t */
+#include <beep/stddef.h>	/* for NULL */
+#include <beep/linkage.h>
 #include <asm/string.h>
 
 extern unsigned long free_mem_ptr;

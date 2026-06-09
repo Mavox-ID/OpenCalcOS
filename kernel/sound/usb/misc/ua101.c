@@ -14,11 +14,11 @@
  * along with this driver.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/usb/audio.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/pcm.h>

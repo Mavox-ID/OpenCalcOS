@@ -9,15 +9,15 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/errno.h>
 #include <rxrpc/packet.h>
 #include "internal.h"
 #include "afs_fs.h"
 
 /*
- * convert an AFS abort code to a Linux error number
+ * convert an AFS abort code to a Beep error number
  */
 int afs_abort_to_error(u32 abort_code)
 {

@@ -1,5 +1,5 @@
 #
-# Makefile for the linux qnx4-filesystem routines.
+# Makefile for the beep qnx4-filesystem routines.
 #
 
 obj-$(CONFIG_QNX4FS_FS) += qnx4.o

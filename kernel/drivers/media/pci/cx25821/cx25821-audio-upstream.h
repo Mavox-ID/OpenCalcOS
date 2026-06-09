@@ -20,8 +20,8 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
 
 #define NUM_AUDIO_PROGS       8
 #define NUM_AUDIO_FRAMES      8

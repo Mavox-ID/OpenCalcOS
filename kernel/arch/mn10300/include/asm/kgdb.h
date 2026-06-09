@@ -21,7 +21,7 @@
 
 /*
  * Note that this register image is in a different order than the register
- * image that Linux produces at interrupt time.
+ * image that Beep produces at interrupt time.
  */
 enum regnames {
 	GDB_FR_D0		= 0,

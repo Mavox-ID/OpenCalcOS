@@ -20,16 +20,16 @@
  * Written by Koji Sato <koji@osrg.net>.
  */
 
-#include <linux/fs.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/capability.h>	/* capable() */
-#include <linux/uaccess.h>	/* copy_from_user(), copy_to_user() */
-#include <linux/vmalloc.h>
-#include <linux/compat.h>	/* compat_ptr() */
-#include <linux/mount.h>	/* mnt_want_write_file(), mnt_drop_write_file() */
-#include <linux/buffer_head.h>
-#include <linux/nilfs2_fs.h>
+#include <beep/fs.h>
+#include <beep/wait.h>
+#include <beep/slab.h>
+#include <beep/capability.h>	/* capable() */
+#include <beep/uaccess.h>	/* copy_from_user(), copy_to_user() */
+#include <beep/vmalloc.h>
+#include <beep/compat.h>	/* compat_ptr() */
+#include <beep/mount.h>	/* mnt_want_write_file(), mnt_drop_write_file() */
+#include <beep/buffer_head.h>
+#include <beep/nilfs2_fs.h>
 #include "nilfs.h"
 #include "segment.h"
 #include "bmap.h"
@@ -135,7 +135,7 @@ static int nilfs_ioctl_setflags(struct inode *inode, struct file *filp,
 	 */
 	ret = -EPERM;
 	if (((flags ^ oldflags) & (FS_APPEND_FL | FS_IMMUTABLE_FL)) &&
-	    !capable(CAP_LINUX_IMMUTABLE))
+	    !capable(CAP_BEEP_IMMUTABLE))
 		goto out;
 
 	ret = nilfs_transaction_begin(inode->i_sb, &ti, 0);

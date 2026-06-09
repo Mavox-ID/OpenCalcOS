@@ -11,7 +11,7 @@
  *
  */
 
-#include <linux/of.h>
+#include <beep/of.h>
 #include <asm/irq.h>
 
 struct msi_bitmap {

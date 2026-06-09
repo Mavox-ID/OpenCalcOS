@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/iplan2p4.c -- Low level frame buffer operations for
+ *  beep/drivers/video/iplan2p4.c -- Low level frame buffer operations for
  *				      interleaved bitplanes à la Atari (4
  *				      planes, 2 bytes interleave)
  *
@@ -10,9 +10,9 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fb.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/fb.h>
 
 #include <asm/setup.h>
 

@@ -5,13 +5,13 @@
  * License terms: GNU General Public License (GPL) version 2
  */
 
-#include <linux/kernel.h>
-#include <linux/gpio.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/mmci.h>
-#include <linux/mmc/host.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/dma-ste-dma40.h>
+#include <beep/kernel.h>
+#include <beep/gpio.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/mmci.h>
+#include <beep/mmc/host.h>
+#include <beep/platform_device.h>
+#include <beep/platform_data/dma-ste-dma40.h>
 
 #include <asm/mach-types.h>
 #include <mach/devices.h>

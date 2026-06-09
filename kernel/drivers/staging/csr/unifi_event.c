@@ -17,8 +17,8 @@
 
 /*
  * Porting notes:
- * The implementation of unifi_receive_event() in Linux is fairly complicated.
- * The linux driver support multiple userspace applications and several
+ * The implementation of unifi_receive_event() in Beep is fairly complicated.
+ * The beep driver support multiple userspace applications and several
  * build configurations, so the received signals are processed by different
  * processes and multiple times.
  * In a simple implementation, this function needs to deliver:
@@ -76,7 +76,7 @@ static void send_to_client(unifi_priv_t *priv, ul_client_t *client,
  *      Dispatcher for received signals.
  *
  *      This function receives the 'to host' signals and forwards
- *      them to the unifi linux clients.
+ *      them to the unifi beep clients.
  *
  *  Arguments:
  *      priv         Context
@@ -344,7 +344,7 @@ static u8 check_routing_pkt_data_ind(unifi_priv_t *priv,
  *      Dispatcher for received signals.
  *
  *      This function receives the 'to host' signals and forwards
- *      them to the unifi linux clients.
+ *      them to the unifi beep clients.
  *
  *  Arguments:
  *      ospriv      Pointer to driver's private data.
@@ -435,7 +435,7 @@ unifi_process_receive_event(void *ospriv,
         else{
             unifi_error(priv, "unifi_receive_event2: sigdata or Bulkdata is NULL \n");
         }
-#ifdef CSR_NATIVE_LINUX
+#ifdef CSR_NATIVE_BEEP
         send_to_client(priv, priv->wext_client,
                 receiver_id,
                 sigdata, siglen, bulkdata);
@@ -452,7 +452,7 @@ unifi_process_receive_event(void *ospriv,
                }
                else if (signal_id != CSR_MA_PACKET_INDICATION_ID) {
                       send_to_client(priv, priv->sme_cli, receiver_id, sigdata, siglen, bulkdata);
-#ifdef CSR_NATIVE_LINUX
+#ifdef CSR_NATIVE_BEEP
                       send_to_client(priv, priv->wext_client,
                                      receiver_id,
                                      sigdata, siglen, bulkdata);
@@ -618,7 +618,7 @@ void rx_wq_handler(struct work_struct *work)
  *      Dispatcher for received signals.
  *
  *      This function receives the 'to host' signals and forwards
- *      them to the unifi linux clients.
+ *      them to the unifi beep clients.
  *
  *  Arguments:
  *      ospriv      Pointer to driver's private data.

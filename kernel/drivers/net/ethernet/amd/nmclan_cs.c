@@ -1,5 +1,5 @@
 /* ----------------------------------------------------------------------------
-Linux PCMCIA ethernet adapter driver for the New Media Ethernet LAN.
+Beep PCMCIA ethernet adapter driver for the New Media Ethernet LAN.
   nmclan_cs.c,v 0.16 1995/07/01 06:42:17 rpao Exp rpao
 
   The Ethernet LAN uses the Advanced Micro Devices (AMD) Am79C940 Media
@@ -8,12 +8,12 @@ Linux PCMCIA ethernet adapter driver for the New Media Ethernet LAN.
 
 Written by Roger C. Pao <rpao@paonet.org>
   Copyright 1995 Roger C. Pao
-  Linux 2.5 cleanups Copyright Red Hat 2003
+  Beep 2.5 cleanups Copyright Red Hat 2003
 
   This software may be used and distributed according to the terms of
   the GNU General Public License.
 
-Ported to Linux 1.3.* network driver environment by
+Ported to Beep 1.3.* network driver environment by
   Matti Aarnio <mea@utu.fi>
 
 References
@@ -21,8 +21,8 @@ References
   Am2150 Technical Reference Manual, Revision 1.0, August 17, 1993
   Am79C940 (MACE) Data Sheet, 1994
   Am79C90 (C-LANCE) Data Sheet, 1994
-  Linux PCMCIA Programmer's Guide v1.17
-  /usr/src/linux/net/inet/dev.c, Linux kernel 1.2.8
+  Beep PCMCIA Programmer's Guide v1.17
+  /usr/src/beep/net/inet/dev.c, Beep kernel 1.2.8
 
   Eric Mears, New Media Corporation
   Tom Pollard, New Media Corporation
@@ -31,10 +31,10 @@ References
   Donald Becker <becker@scyld.com>
   David Hinds <dahinds@users.sourceforge.net>
 
-  The Linux client driver is based on the 3c589_cs.c client driver by
+  The Beep client driver is based on the 3c589_cs.c client driver by
   David Hinds.
 
-  The Linux network driver outline is based on the 3c589_cs.c driver,
+  The Beep network driver outline is based on the 3c589_cs.c driver,
   the 8390.c driver, and the example skeleton.c kernel code, which are
   by Donald Becker.
 
@@ -50,7 +50,7 @@ Driver Notes and Issues
 
 1. Developed on a Dell 320SLi
    PCMCIA Card Services 2.6.2
-   Linux dell 1.2.10 #1 Thu Jun 29 20:23:41 PDT 1995 i386
+   Beep dell 1.2.10 #1 Thu Jun 29 20:23:41 PDT 1995 i386
 
 2. rc.pcmcia may require loading pcmcia_core with io_speed=300:
    'insmod pcmcia_core.o io_speed=300'.
@@ -130,23 +130,23 @@ Conditional Compilation Options
 Include Files
 ---------------------------------------------------------------------------- */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/in.h>
+#include <beep/delay.h>
+#include <beep/ethtool.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
+#include <beep/ioport.h>
+#include <beep/bitops.h>
 
 #include <pcmcia/cisreg.h>
 #include <pcmcia/cistpl.h>
@@ -360,7 +360,7 @@ typedef struct _mace_statistics {
 
 typedef struct _mace_private {
 	struct pcmcia_device	*p_dev;
-    struct net_device_stats linux_stats; /* Linux statistics counters */
+    struct net_device_stats beep_stats; /* Beep statistics counters */
     mace_statistics mace_stats; /* MACE chip statistics counters */
 
     /* restore_multicast_list() state variables */
@@ -834,7 +834,7 @@ mace_start_xmit
 	This routine begins the packet transmit function.  When completed,
 	it will generate a transmit interrupt.
 
-	According to /usr/src/linux/net/inet/dev.c, if _start_xmit
+	According to /usr/src/beep/net/inet/dev.c, if _start_xmit
 	returns 0, the "packet is now solely the responsibility of the
 	driver."  If _start_xmit returns non-zero, the "transmission
 	failed, put skb back into a list."
@@ -881,7 +881,7 @@ static netdev_tx_t mace_start_xmit(struct sk_buff *skb,
        service a transmit interrupt while we are in here.
     */
 
-    lp->linux_stats.tx_bytes += skb->len;
+    lp->beep_stats.tx_bytes += skb->len;
     lp->tx_free_frames--;
 
     /* WARNING: Write the _exact_ number of bytes written in the header! */
@@ -967,7 +967,7 @@ static irqreturn_t mace_interrupt(int irq, void *dev_id)
 
       fifofc = inb(ioaddr + AM2150_MACE_BASE + MACE_FIFOFC);
       if ((fifofc & MACE_FIFOFC_XMTFC)==0) {
-	lp->linux_stats.tx_errors++;
+	lp->beep_stats.tx_errors++;
 	outb(0xFF, ioaddr + AM2150_XMT_SKIP);
       }
 
@@ -1016,7 +1016,7 @@ static irqreturn_t mace_interrupt(int irq, void *dev_id)
 
       } /* if (xmtfs & MACE_XMTFS_XMTSV) */
 
-      lp->linux_stats.tx_packets++;
+      lp->beep_stats.tx_packets++;
       lp->tx_free_frames++;
       netif_wake_queue(dev);
     } /* if (status & MACE_IR_XMTINT) */
@@ -1077,7 +1077,7 @@ static int mace_rx(struct net_device *dev, unsigned char RxCnt)
 	  " 0x%X.\n", dev->name, rx_framecnt, rx_status);
 
     if (rx_status & MACE_RCVFS_RCVSTS) { /* Error, update stats. */
-      lp->linux_stats.rx_errors++;
+      lp->beep_stats.rx_errors++;
       if (rx_status & MACE_RCVFS_OFLO) {
         lp->mace_stats.oflo++;
       }
@@ -1114,14 +1114,14 @@ static int mace_rx(struct net_device *dev, unsigned char RxCnt)
 	
 	netif_rx(skb); /* Send the packet to the upper (protocol) layers. */
 
-	lp->linux_stats.rx_packets++;
-	lp->linux_stats.rx_bytes += pkt_len;
+	lp->beep_stats.rx_packets++;
+	lp->beep_stats.rx_bytes += pkt_len;
 	outb(0xFF, ioaddr + AM2150_RCV_NEXT); /* skip to next frame */
 	continue;
       } else {
 	pr_debug("%s: couldn't allocate a sk_buff of size"
 	      " %d.\n", dev->name, pkt_len);
-	lp->linux_stats.rx_dropped++;
+	lp->beep_stats.rx_dropped++;
       }
     }
     outb(0xFF, ioaddr + AM2150_RCV_NEXT); /* skip to next frame */
@@ -1131,11 +1131,11 @@ static int mace_rx(struct net_device *dev, unsigned char RxCnt)
 } /* mace_rx */
 
 /* ----------------------------------------------------------------------------
-pr_linux_stats
+pr_beep_stats
 ---------------------------------------------------------------------------- */
-static void pr_linux_stats(struct net_device_stats *pstats)
+static void pr_beep_stats(struct net_device_stats *pstats)
 {
-  pr_debug("pr_linux_stats\n");
+  pr_debug("pr_beep_stats\n");
   pr_debug(" rx_packets=%-7ld        tx_packets=%ld\n",
 	(long)pstats->rx_packets, (long)pstats->tx_packets);
   pr_debug(" rx_errors=%-7ld         tx_errors=%ld\n",
@@ -1158,7 +1158,7 @@ static void pr_linux_stats(struct net_device_stats *pstats)
 	(long)pstats->tx_fifo_errors, (long)pstats->tx_heartbeat_errors);
   pr_debug(" tx_window_errors=%ld\n",
 	(long)pstats->tx_window_errors);
-} /* pr_linux_stats */
+} /* pr_beep_stats */
 
 /* ----------------------------------------------------------------------------
 pr_mace_stats
@@ -1231,13 +1231,13 @@ static void update_stats(unsigned int ioaddr, struct net_device *dev)
   lp->mace_stats.rntpc += mace_read(lp, ioaddr, MACE_RNTPC);
   lp->mace_stats.mpc += mace_read(lp, ioaddr, MACE_MPC);
   /* At this point, mace_stats is fully updated for this call.
-     We may now update the linux_stats. */
+     We may now update the beep_stats. */
 
-  /* The MACE has no equivalent for linux_stats field which are commented
+  /* The MACE has no equivalent for beep_stats field which are commented
      out. */
 
-  /* lp->linux_stats.multicast; */
-  lp->linux_stats.collisions = 
+  /* lp->beep_stats.multicast; */
+  lp->beep_stats.collisions = 
     lp->mace_stats.rcvcco * 256 + lp->mace_stats.rcvcc;
     /* Collision: The MACE may retry sending a packet 15 times
        before giving up.  The retry count is in XMTRC.
@@ -1245,22 +1245,22 @@ static void update_stats(unsigned int ioaddr, struct net_device *dev)
        If so, why doesn't the RCVCC record these collisions? */
 
   /* detailed rx_errors: */
-  lp->linux_stats.rx_length_errors = 
+  lp->beep_stats.rx_length_errors = 
     lp->mace_stats.rntpco * 256 + lp->mace_stats.rntpc;
-  /* lp->linux_stats.rx_over_errors */
-  lp->linux_stats.rx_crc_errors = lp->mace_stats.fcs;
-  lp->linux_stats.rx_frame_errors = lp->mace_stats.fram;
-  lp->linux_stats.rx_fifo_errors = lp->mace_stats.oflo;
-  lp->linux_stats.rx_missed_errors = 
+  /* lp->beep_stats.rx_over_errors */
+  lp->beep_stats.rx_crc_errors = lp->mace_stats.fcs;
+  lp->beep_stats.rx_frame_errors = lp->mace_stats.fram;
+  lp->beep_stats.rx_fifo_errors = lp->mace_stats.oflo;
+  lp->beep_stats.rx_missed_errors = 
     lp->mace_stats.mpco * 256 + lp->mace_stats.mpc;
 
   /* detailed tx_errors */
-  lp->linux_stats.tx_aborted_errors = lp->mace_stats.rtry;
-  lp->linux_stats.tx_carrier_errors = lp->mace_stats.lcar;
+  lp->beep_stats.tx_aborted_errors = lp->mace_stats.rtry;
+  lp->beep_stats.tx_carrier_errors = lp->mace_stats.lcar;
     /* LCAR usually results from bad cabling. */
-  lp->linux_stats.tx_fifo_errors = lp->mace_stats.uflo;
-  lp->linux_stats.tx_heartbeat_errors = lp->mace_stats.cerr;
-  /* lp->linux_stats.tx_window_errors; */
+  lp->beep_stats.tx_fifo_errors = lp->mace_stats.uflo;
+  lp->beep_stats.tx_heartbeat_errors = lp->mace_stats.cerr;
+  /* lp->beep_stats.tx_window_errors; */
 } /* update_stats */
 
 /* ----------------------------------------------------------------------------
@@ -1274,10 +1274,10 @@ static struct net_device_stats *mace_get_stats(struct net_device *dev)
   update_stats(dev->base_addr, dev);
 
   pr_debug("%s: updating the statistics.\n", dev->name);
-  pr_linux_stats(&lp->linux_stats);
+  pr_beep_stats(&lp->beep_stats);
   pr_mace_stats(&lp->mace_stats);
 
-  return &lp->linux_stats;
+  return &lp->beep_stats;
 } /* net_device_stats */
 
 /* ----------------------------------------------------------------------------

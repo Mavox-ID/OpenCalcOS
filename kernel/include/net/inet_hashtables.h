@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -15,16 +15,16 @@
 #define _INET_HASHTABLES_H
 
 
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/vmalloc.h>
+#include <beep/interrupt.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/socket.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/wait.h>
+#include <beep/vmalloc.h>
 
 #include <net/inet_connection_sock.h>
 #include <net/inet_sock.h>
@@ -33,7 +33,7 @@
 #include <net/tcp_states.h>
 #include <net/netns/hash.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/byteorder.h>
 
 /* This is for all connections with a full identity, no wildcards.

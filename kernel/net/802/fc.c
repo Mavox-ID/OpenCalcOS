@@ -11,22 +11,22 @@
  */
 
 #include <asm/uaccess.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/fcdevice.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/net.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/inet.h>
+#include <beep/netdevice.h>
+#include <beep/fcdevice.h>
+#include <beep/skbuff.h>
+#include <beep/errno.h>
+#include <beep/timer.h>
+#include <beep/net.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
+#include <beep/export.h>
 #include <net/arp.h>
 
 /*

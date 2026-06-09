@@ -11,9 +11,9 @@
  * kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
 #include <asm/io.h>
 
 #include "bestcomm.h"

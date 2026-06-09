@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/omap2/dss/dispc.h
+ * beep/drivers/video/omap2/dss/dispc.h
  *
  * Copyright (C) 2011 Texas Instruments
  * Author: Archit Taneja <archit@ti.com>

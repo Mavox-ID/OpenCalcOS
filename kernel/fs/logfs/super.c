@@ -1,7 +1,7 @@
 /*
  * fs/logfs/super.c
  *
- * As should be obvious for Linux kernel code, license is GPLv2
+ * As should be obvious for Beep kernel code, license is GPLv2
  *
  * Copyright (c) 2005-2008 Joern Engel <joern@logfs.org>
  *
@@ -10,13 +10,13 @@
  * own.
  */
 #include "logfs.h"
-#include <linux/bio.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/statfs.h>
-#include <linux/buffer_head.h>
+#include <beep/bio.h>
+#include <beep/slab.h>
+#include <beep/blkdev.h>
+#include <beep/module.h>
+#include <beep/mtd/mtd.h>
+#include <beep/statfs.h>
+#include <beep/buffer_head.h>
 
 static DEFINE_MUTEX(emergency_mutex);
 static struct page *emergency_page;

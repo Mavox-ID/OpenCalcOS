@@ -2,7 +2,7 @@
 /*
  * Mini fgconsole implementation for busybox
  *
- * Copyright (C) 2010 by Grigory Batalov <bga@altlinux.org>
+ * Copyright (C) 2010 by Grigory Batalov <bga@altbeep.org>
  *
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */

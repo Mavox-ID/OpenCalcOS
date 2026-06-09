@@ -4,8 +4,8 @@
  *
  * Author       Werner Cornelius
  *              based on existing driver for CCD hfc ISA cards
- * Copyright    by Werner Cornelius  <werner@isdn4linux.de>
- *              by Karsten Keil      <keil@isdn4linux.de>
+ * Copyright    by Werner Cornelius  <werner@isdn4beep.de>
+ *              by Karsten Keil      <keil@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
@@ -15,13 +15,13 @@
  *
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include "hisax.h"
 #include "hfc_pci.h"
 #include "isdnl1.h"
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
+#include <beep/pci.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
 
 static const char *hfcpci_revision = "$Revision: 1.48.2.4 $";
 

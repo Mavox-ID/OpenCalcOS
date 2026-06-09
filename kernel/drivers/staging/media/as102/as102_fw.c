@@ -17,11 +17,11 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/ctype.h>
+#include <beep/delay.h>
+#include <beep/firmware.h>
 
 #include "as102_drv.h"
 #include "as102_fw.h"

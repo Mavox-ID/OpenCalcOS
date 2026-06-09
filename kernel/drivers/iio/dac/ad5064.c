@@ -7,19 +7,19 @@
  * Licensed under the GPL-2.
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/regulator/consumer.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/spi/spi.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/sysfs.h>
+#include <beep/regulator/consumer.h>
 #include <asm/unaligned.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
 
 #define AD5064_MAX_DAC_CHANNELS			8
 #define AD5064_MAX_VREFS			4

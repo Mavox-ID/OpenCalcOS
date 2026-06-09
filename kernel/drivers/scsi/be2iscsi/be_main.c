@@ -10,25 +10,25 @@
  * Written by: Jayamohan Kallickal (jayamohan.kallickal@emulex.com)
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * beep-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
  * Costa Mesa, CA 92626
  */
 
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/semaphore.h>
-#include <linux/iscsi_boot_sysfs.h>
-#include <linux/module.h>
-#include <linux/bsg-lib.h>
+#include <beep/reboot.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/blkdev.h>
+#include <beep/pci.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/semaphore.h>
+#include <beep/iscsi_boot_sysfs.h>
+#include <beep/module.h>
+#include <beep/bsg-lib.h>
 
 #include <scsi/libiscsi.h>
 #include <scsi/scsi_bsg_iscsi.h>

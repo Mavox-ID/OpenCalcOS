@@ -24,7 +24,7 @@
 #ifndef __ASM_DB1200_H
 #define __ASM_DB1200_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/au1xxx_psc.h>
 

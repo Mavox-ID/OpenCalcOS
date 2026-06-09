@@ -14,10 +14,10 @@
 #include <hwregs/marb_defs.h>
 #include <arbiter.h>
 #include <hwregs/intr_vect.h>
-#include <linux/interrupt.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/signal.h>
+#include <beep/errno.h>
+#include <beep/spinlock.h>
 #include <asm/io.h>
 #include <asm/irq_regs.h>
 

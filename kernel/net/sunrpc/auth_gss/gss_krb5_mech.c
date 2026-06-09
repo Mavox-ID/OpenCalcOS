@@ -1,5 +1,5 @@
 /*
- *  linux/net/sunrpc/gss_krb5_mech.c
+ *  beep/net/sunrpc/gss_krb5_mech.c
  *
  *  Copyright (c) 2001-2008 The Regents of the University of Michigan.
  *  All rights reserved.
@@ -34,16 +34,16 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/sunrpc/gss_krb5.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/crypto.h>
-#include <linux/sunrpc/gss_krb5_enctypes.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/sunrpc/auth.h>
+#include <beep/sunrpc/gss_krb5.h>
+#include <beep/sunrpc/xdr.h>
+#include <beep/crypto.h>
+#include <beep/sunrpc/gss_krb5_enctypes.h>
 
 #ifdef RPC_DEBUG
 # define RPCDBG_FACILITY	RPCDBG_AUTH

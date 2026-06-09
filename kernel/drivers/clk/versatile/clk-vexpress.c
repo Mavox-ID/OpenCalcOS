@@ -11,12 +11,12 @@
  * Copyright (C) 2012 ARM Limited
  */
 
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/vexpress.h>
+#include <beep/clkdev.h>
+#include <beep/clk-provider.h>
+#include <beep/err.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/vexpress.h>
 
 #include <asm/hardware/sp810.h>
 

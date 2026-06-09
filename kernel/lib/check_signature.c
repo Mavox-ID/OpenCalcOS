@@ -1,5 +1,5 @@
-#include <linux/io.h>
-#include <linux/export.h>
+#include <beep/io.h>
+#include <beep/export.h>
 
 /**
  *	check_signature		-	find BIOS signatures

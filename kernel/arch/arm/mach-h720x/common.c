@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-h720x/common.c
+ * beep/arch/arm/mach-h720x/common.c
  *
  * Copyright (C) 2003 Thomas Gleixner <tglx@linutronix.de>
  *               2003 Robert Schwebel <r.schwebel@pengutronix.de>
@@ -13,11 +13,11 @@
  *
  */
 
-#include <linux/sched.h>
-#include <linux/mman.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <beep/sched.h>
+#include <beep/mman.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
 
 #include <asm/page.h>
 #include <asm/pgtable.h>

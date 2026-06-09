@@ -21,13 +21,13 @@
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/usb.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
+#include <beep/usb.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb/otg.h>
 
 #include "otg_fsm.h"
 

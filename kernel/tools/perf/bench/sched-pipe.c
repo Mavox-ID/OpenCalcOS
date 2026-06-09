@@ -21,7 +21,7 @@
 #include <stdlib.h>
 #include <signal.h>
 #include <sys/wait.h>
-#include <linux/unistd.h>
+#include <beep/unistd.h>
 #include <string.h>
 #include <errno.h>
 #include <assert.h>

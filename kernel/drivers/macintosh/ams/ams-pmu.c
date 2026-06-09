@@ -1,7 +1,7 @@
 /*
  * Apple Motion Sensor driver (PMU variant)
  *
- * Copyright (C) 2006 Michael Hanselmann (linux-kernel@hansmi.ch)
+ * Copyright (C) 2006 Michael Hanselmann (beep-kernel@hansmi.ch)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -9,12 +9,12 @@
  * (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/adb.h>
+#include <beep/pmu.h>
 
 #include "ams.h"
 

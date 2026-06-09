@@ -10,7 +10,7 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/cpuidle.h>
+#include <beep/cpuidle.h>
 
 #ifdef CONFIG_CPU_IDLE
 extern int imx_cpuidle_init(struct cpuidle_driver *drv);

@@ -11,13 +11,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/ctype.h>
+#include <beep/slab.h>
+#include <beep/leds.h>
 #include "leds.h"
 
 #define DEFAULT_DELAY 100

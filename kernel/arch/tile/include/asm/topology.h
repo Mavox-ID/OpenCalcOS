@@ -17,7 +17,7 @@
 
 #ifdef CONFIG_NUMA
 
-#include <linux/cpumask.h>
+#include <beep/cpumask.h>
 
 /* Mappings between logical cpu number and node number. */
 extern struct cpumask node_2_cpu_mask[];

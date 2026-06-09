@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux/SuperH SH-5 backends.
+# Makefile for the Beep/SuperH SH-5 backends.
 #
 obj-y := entry.o probe.o switchto.o
 

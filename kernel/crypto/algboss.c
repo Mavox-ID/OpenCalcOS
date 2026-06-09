@@ -11,17 +11,17 @@
  */
 
 #include <crypto/internal/aead.h>
-#include <linux/completion.h>
-#include <linux/ctype.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/rtnetlink.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/completion.h>
+#include <beep/ctype.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/kthread.h>
+#include <beep/module.h>
+#include <beep/notifier.h>
+#include <beep/rtnetlink.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 
 #include "internal.h"
 

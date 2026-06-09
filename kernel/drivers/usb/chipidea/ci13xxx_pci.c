@@ -10,12 +10,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/chipidea.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb/chipidea.h>
 
 /* driver name */
 #define UDC_DRIVER_NAME   "ci13xxx_pci"

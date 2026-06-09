@@ -20,8 +20,8 @@
 #include <asm/cacheasm.h>
 #include <asm/initialize_mmu.h>
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
 
 /*
  * This module contains the entry code for kernel images. It performs the
@@ -160,7 +160,7 @@ ENTRY(_startup)
 
 	/* Unpack data sections
 	 *
-	 * The linker script used to build the Linux kernel image
+	 * The linker script used to build the Beep kernel image
 	 * creates a table located at __boot_reloc_table_start
 	 * that contans the information what data needs to be unpacked.
 	 *
@@ -225,7 +225,7 @@ ENTRY(_startup)
 	movi	a6, exc_table
 	xsr	a6, excsave1
 
-	/* init_arch kick-starts the linux kernel */
+	/* init_arch kick-starts the beep kernel */
 
 	movi	a4, init_arch
 	callx4	a4

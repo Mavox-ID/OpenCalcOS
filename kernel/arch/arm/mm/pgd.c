@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/pgd.c
+ *  beep/arch/arm/mm/pgd.c
  *
  *  Copyright (C) 1998-2005 Russell King
  *
@@ -7,10 +7,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
+#include <beep/mm.h>
+#include <beep/gfp.h>
+#include <beep/highmem.h>
+#include <beep/slab.h>
 
 #include <asm/cp15.h>
 #include <asm/pgalloc.h>

@@ -1,7 +1,7 @@
 /*
  * ip_vs_xmit.c: various packet transmitters for IPVS
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@beepvirtualserver.org>
  *              Julian Anastasov <ja@ssi.bg>
  *
  *              This program is free software; you can redistribute it and/or
@@ -26,9 +26,9 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/tcp.h>                  /* for tcphdr */
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/tcp.h>                  /* for tcphdr */
 #include <net/ip.h>
 #include <net/tcp.h>                    /* for csum_tcpudp_magic */
 #include <net/udp.h>
@@ -37,9 +37,9 @@
 #include <net/ipv6.h>
 #include <net/ip6_route.h>
 #include <net/addrconf.h>
-#include <linux/icmpv6.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
+#include <beep/icmpv6.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv4.h>
 
 #include <net/ip_vs.h>
 

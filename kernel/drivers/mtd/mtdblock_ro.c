@@ -19,11 +19,11 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/blktrans.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/blktrans.h>
+#include <beep/module.h>
 
 static int mtdblock_readsect(struct mtd_blktrans_dev *dev,
 			      unsigned long block, char *buf)

@@ -7,14 +7,14 @@
  * Support for all devices (greater than 16) added by David Gathright.
  */
 
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/syscore_ops.h>
-#include <linux/vmalloc.h>
+#include <beep/export.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/syscore_ops.h>
+#include <beep/vmalloc.h>
 
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/tlbmisc.h>

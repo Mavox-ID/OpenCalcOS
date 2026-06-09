@@ -36,18 +36,18 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/platform_device.h>
 
-#include <linux/usb/otg.h>
-#include <linux/usb/nop-usb-xceiv.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/nop-usb-xceiv.h>
 
 #include "core.h"
 
-/* FIXME define these in <linux/pci_ids.h> */
+/* FIXME define these in <beep/pci_ids.h> */
 #define PCI_VENDOR_ID_SYNOPSYS		0x16c3
 #define PCI_DEVICE_ID_SYNOPSYS_HAPSUSB3	0xabcd
 

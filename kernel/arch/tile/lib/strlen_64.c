@@ -12,9 +12,9 @@
  *   more details.
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/module.h>
 #include "string-endian.h"
 
 size_t strlen(const char *s)

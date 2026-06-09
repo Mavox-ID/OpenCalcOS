@@ -13,7 +13,7 @@
 #ifndef __PLAT_DMA_H
 #define __PLAT_DMA_H
 
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 
 enum s3c2410_dma_buffresult {
 	S3C2410_RES_OK,

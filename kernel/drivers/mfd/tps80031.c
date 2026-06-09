@@ -23,17 +23,17 @@
  * 02111-1307, USA
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps80031.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/tps80031.h>
+#include <beep/module.h>
+#include <beep/pm.h>
+#include <beep/regmap.h>
+#include <beep/slab.h>
 
 static struct resource tps80031_rtc_resources[] = {
 	{

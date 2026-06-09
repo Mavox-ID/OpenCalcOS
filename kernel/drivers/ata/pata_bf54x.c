@@ -8,7 +8,7 @@
  * Modified:
  *               Copyright 2007 Analog Devices Inc.
  *
- * Bugs:         Enter bugs at http://blackfin.uclinux.org/
+ * Bugs:         Enter bugs at http://blackfin.ucbeep.org/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -26,16 +26,16 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/device.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
-#include <linux/platform_device.h>
+#include <beep/libata.h>
+#include <beep/platform_device.h>
 #include <asm/dma.h>
 #include <asm/gpio.h>
 #include <asm/portmux.h>

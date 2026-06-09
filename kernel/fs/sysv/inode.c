@@ -1,5 +1,5 @@
 /*
- *  linux/fs/sysv/inode.c
+ *  beep/fs/sysv/inode.c
  *
  *  minix/inode.c
  *  Copyright (C) 1991, 1992  Linus Torvalds
@@ -21,13 +21,13 @@
  *  the superblock.
  */
 
-#include <linux/highuid.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/buffer_head.h>
-#include <linux/vfs.h>
-#include <linux/writeback.h>
-#include <linux/namei.h>
+#include <beep/highuid.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/buffer_head.h>
+#include <beep/vfs.h>
+#include <beep/writeback.h>
+#include <beep/namei.h>
 #include <asm/byteorder.h>
 #include "sysv.h"
 

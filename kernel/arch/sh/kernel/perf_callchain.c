@@ -7,10 +7,10 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/perf_event.h>
-#include <linux/percpu.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/perf_event.h>
+#include <beep/percpu.h>
 #include <asm/unwinder.h>
 #include <asm/ptrace.h>
 

@@ -2,9 +2,9 @@
  * sysfs.c - ACPI sysfs interface to userspace.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/moduleparam.h>
 #include <acpi/acpi_drivers.h>
 
 #define _COMPONENT		ACPI_SYSTEM_COMPONENT

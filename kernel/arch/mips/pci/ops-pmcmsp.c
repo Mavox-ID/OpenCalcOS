@@ -18,17 +18,17 @@
 
 #define PCI_COUNTERS	1
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
 
 #if defined(CONFIG_PROC_FS) && defined(PCI_COUNTERS)
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #endif /* CONFIG_PROC_FS && PCI_COUNTERS */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
 
 #include <asm/byteorder.h>
 #if defined(CONFIG_PMC_MSP7120_GW) || defined(CONFIG_PMC_MSP7120_EVAL)
@@ -229,8 +229,8 @@ static DEFINE_SPINLOCK(bpci_lock);
  * 		 expected 0x00. Will just assume there was a good reason
  * 		 for this!
  *
- *  NOTES:       Linux, by default, will assign I/O space to the lowest
- *               region of address space. Since MSP7120 and Linux,
+ *  NOTES:       Beep, by default, will assign I/O space to the lowest
+ *               region of address space. Since MSP7120 and Beep,
  *               by default, have no offset in between how they map, the
  *               io_offset element of pci_controller struct should be set
  *               to zero.
@@ -900,8 +900,8 @@ msp_pcibios_write_config(struct pci_bus *bus,
  *               configuration accesses.
  *
  *  ELEMENTS:
- *    read      - function for Linux to generate PCI Configuration reads.
- *    write     - function for Linux to generate PCI Configuration writes.
+ *    read      - function for Beep to generate PCI Configuration reads.
+ *    write     - function for Beep to generate PCI Configuration writes.
  *
  ****************************************************************************/
 struct pci_ops msp_pci_ops = {
@@ -924,7 +924,7 @@ struct pci_ops msp_pci_ops = {
  *                   memory BARs.
  *
  *    mem_offset   - offset between how MSP7120 outbound PCI memory
- *                   transaction addresses appear on the PCI bus and how Linux
+ *                   transaction addresses appear on the PCI bus and how Beep
  *                   wants to configure memory BARs of the PCI devices.
  *                   MSP7120 does nothing funky, so just set to zero.
  *
@@ -933,10 +933,10 @@ struct pci_ops msp_pci_ops = {
  *
  *    io_offset    - offset between how MSP7120 outbound PCI I/O
  *                   transaction addresses appear on the PCI bus and how
- *                   Linux defaults to configure I/O BARs of the PCI devices.
+ *                   Beep defaults to configure I/O BARs of the PCI devices.
  *                   MSP7120 maps outbound I/O accesses into the bottom
  *                   bottom 4K of PCI address space (and ignores OATRAN).
- *                   Since the Linux default is to configure I/O BARs to the
+ *                   Since the Beep default is to configure I/O BARs to the
  *                   bottom 4K, no special offset is needed. Just set to zero.
  *
  ****************************************************************************/
@@ -955,7 +955,7 @@ static struct pci_controller msp_pci_controller = {
  *  _________________________________________________________________________
  *
  *  DESCRIPTION: Initialize the PCI Host Controller and register it with
- *               Linux so Linux can seize control of the PCI bus.
+ *               Beep so Beep can seize control of the PCI bus.
  *
  ****************************************************************************/
 void __init msp_pci_init(void)
@@ -987,7 +987,7 @@ void __init msp_pci_init(void)
 	/* configure so inb(), outb(), and family are functional */
 	set_io_port_base(MSP_PCI_IOSPACE_BASE);
 
-	/* Tell Linux the details of the MSP7120 PCI Host Controller */
+	/* Tell Beep the details of the MSP7120 PCI Host Controller */
 	register_pci_controller(&msp_pci_controller);
 
 	return;

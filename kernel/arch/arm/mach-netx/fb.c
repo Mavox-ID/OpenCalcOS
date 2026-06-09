@@ -17,13 +17,13 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/clcd.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/clcd.h>
+#include <beep/err.h>
+#include <beep/gfp.h>
 
 #include <asm/irq.h>
 

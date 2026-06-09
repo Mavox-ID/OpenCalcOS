@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-shark/dma.c
+ *  beep/arch/arm/mach-shark/dma.c
  *
  *  by Alexander Schulz
  *
@@ -8,7 +8,7 @@
  *  Copyright (C) 1998 Phil Blundell
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 
 #include <asm/dma.h>
 #include <asm/mach/dma.h>

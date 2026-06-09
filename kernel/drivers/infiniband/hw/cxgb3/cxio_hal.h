@@ -32,9 +32,9 @@
 #ifndef  __CXIO_HAL_H__
 #define  __CXIO_HAL_H__
 
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/kfifo.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/kfifo.h>
 
 #include "t3_cpl.h"
 #include "t3cdev.h"

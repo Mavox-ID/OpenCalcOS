@@ -32,9 +32,9 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/threads.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/threads.h>
 
 #include <asm/asm.h>
 #include <asm/asm-offsets.h>

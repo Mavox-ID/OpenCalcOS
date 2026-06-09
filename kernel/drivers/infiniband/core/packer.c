@@ -31,8 +31,8 @@
  * SOFTWARE.
  */
 
-#include <linux/export.h>
-#include <linux/string.h>
+#include <beep/export.h>
+#include <beep/string.h>
 
 #include <rdma/ib_pack.h>
 

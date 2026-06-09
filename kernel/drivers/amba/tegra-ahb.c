@@ -20,11 +20,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/tegra-ahb.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/tegra-ahb.h>
 
 #define DRV_NAME "tegra-ahb"
 

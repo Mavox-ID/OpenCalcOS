@@ -1,5 +1,5 @@
 /*
- *  linux/fs/adfs/dir_f.h
+ *  beep/fs/adfs/dir_f.h
  *
  *  Copyright (C) 1999 Russell King
  *

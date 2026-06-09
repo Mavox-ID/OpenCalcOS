@@ -2,7 +2,7 @@
 * wanproc.c	WAN Router Module. /proc filesystem interface.
 *
 *		This module is completely hardware-independent and provides
-*		access to the router using Linux /proc filesystem.
+*		access to the router using Beep /proc filesystem.
 *
 * Author: 	Gideon Hack
 *
@@ -13,21 +13,21 @@
 *		as published by the Free Software Foundation; either version
 *		2 of the License, or (at your option) any later version.
 * ============================================================================
-* Jun 02, 1999  Gideon Hack	Updates for Linux 2.2.X kernels.
+* Jun 02, 1999  Gideon Hack	Updates for Beep 2.2.X kernels.
 * Jun 29, 1997	Alan Cox	Merged with 1.0.3 vendor code
 * Jan 29, 1997	Gene Kozin	v1.0.1. Implemented /proc read routines
 * Jan 30, 1997	Alan Cox	Hacked around for 2.1
 * Dec 13, 1996	Gene Kozin	Initial version (based on Sangoma's WANPIPE)
 *****************************************************************************/
 
-#include <linux/init.h>		/* __initfunc et al. */
-#include <linux/stddef.h>	/* offsetof(), etc. */
-#include <linux/errno.h>	/* return codes */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/wanrouter.h>	/* WAN router API definitions */
-#include <linux/seq_file.h>
-#include <linux/mutex.h>
+#include <beep/init.h>		/* __initfunc et al. */
+#include <beep/stddef.h>	/* offsetof(), etc. */
+#include <beep/errno.h>	/* return codes */
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/wanrouter.h>	/* WAN router API definitions */
+#include <beep/seq_file.h>
+#include <beep/mutex.h>
 
 #include <net/net_namespace.h>
 #include <asm/io.h>

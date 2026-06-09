@@ -3,7 +3,7 @@
 
 #include <asm-generic/4level-fixup.h>
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 #include <asm/io.h>

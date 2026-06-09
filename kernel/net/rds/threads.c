@@ -30,9 +30,9 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/random.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/random.h>
+#include <beep/export.h>
 
 #include "rds.h"
 

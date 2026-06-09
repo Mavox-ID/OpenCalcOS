@@ -1,5 +1,5 @@
 /*
- *	linux/mm/msync.c
+ *	beep/mm/msync.c
  *
  * Copyright (C) 1994-1999  Linus Torvalds
  */
@@ -7,12 +7,12 @@
 /*
  * The msync() system call.
  */
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/file.h>
-#include <linux/syscalls.h>
-#include <linux/sched.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/file.h>
+#include <beep/syscalls.h>
+#include <beep/sched.h>
 
 /*
  * MS_SYNC syncs the entire file - including mappings.

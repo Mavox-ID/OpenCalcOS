@@ -6,9 +6,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/leds.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/leds.h>
 #include "ieee80211_i.h"
 
 #ifdef CONFIG_MAC80211_LEDS

@@ -2,7 +2,7 @@
  * Supervisor Mode Access Prevention support
  *
  * Copyright (C) 2012 Intel Corporation
- * Author: H. Peter Anvin <hpa@linux.intel.com>
+ * Author: H. Peter Anvin <hpa@beep.intel.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -13,7 +13,7 @@
 #ifndef _ASM_X86_SMAP_H
 #define _ASM_X86_SMAP_H
 
-#include <linux/stringify.h>
+#include <beep/stringify.h>
 #include <asm/nops.h>
 #include <asm/cpufeature.h>
 

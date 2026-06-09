@@ -1,4 +1,4 @@
-/*  ewrk3.c: A DIGITAL EtherWORKS 3 ethernet driver for Linux.
+/*  ewrk3.c: A DIGITAL EtherWORKS 3 ethernet driver for Beep.
 
    Written 1994 by David C. Davies.
 
@@ -66,7 +66,7 @@
    reboot sequences). To utilise this ability, you have to do 8 things:
 
    0) have a copy of the loadable modules code installed on your system.
-   1) copy ewrk3.c from the  /linux/drivers/net directory to your favourite
+   1) copy ewrk3.c from the  /beep/drivers/net directory to your favourite
    temporary directory.
    2) edit the  source code near  line 1898 to reflect  the I/O address and
    IRQ you're using.
@@ -115,7 +115,7 @@
    Fixed up MCA hash table algorithm.
    0.20     4-sep-94   Added IOCTL functionality.
    0.21    14-sep-94   Added I/O mode.
-   0.21axp 15-sep-94   Special version for ALPHA AXP Linux V1.0.
+   0.21axp 15-sep-94   Special version for ALPHA AXP Beep V1.0.
    0.22    16-sep-94   Added more IOCTLs & tidied up.
    0.23    21-sep-94   Added transmit cut through.
    0.24    31-oct-94   Added uid checks in some ioctls.
@@ -143,26 +143,26 @@
    =========================================================================
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/crc32.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/time.h>
-#include <linux/types.h>
-#include <linux/unistd.h>
-#include <linux/ctype.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/crc32.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/ethtool.h>
+#include <beep/time.h>
+#include <beep/types.h>
+#include <beep/unistd.h>
+#include <beep/ctype.h>
+#include <beep/bitops.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

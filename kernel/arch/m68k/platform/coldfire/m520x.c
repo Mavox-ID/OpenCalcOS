@@ -1,7 +1,7 @@
 /***************************************************************************/
 
 /*
- *  linux/arch/m68knommu/platform/520x/config.c
+ *  beep/arch/m68knommu/platform/520x/config.c
  *
  *  Copyright (C) 2005,      Freescale (www.freescale.com)
  *  Copyright (C) 2005,      Intec Automation (mike@steroidmicros.com)
@@ -11,10 +11,10 @@
 
 /***************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/init.h>
+#include <beep/io.h>
 #include <asm/machdep.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>

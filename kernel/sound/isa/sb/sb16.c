@@ -20,11 +20,11 @@
  */
 
 #include <asm/dma.h>
-#include <linux/init.h>
-#include <linux/pnp.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/pnp.h>
+#include <beep/err.h>
+#include <beep/isa.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/sb.h>
 #include <sound/sb16_csp.h>

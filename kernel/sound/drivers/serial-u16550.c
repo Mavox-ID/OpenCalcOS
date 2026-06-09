@@ -30,19 +30,19 @@
  *      More documentation can be found in serial-u16550.txt.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/rawmidi.h>
 #include <sound/initval.h>
 
-#include <linux/serial_reg.h>
-#include <linux/jiffies.h>
+#include <beep/serial_reg.h>
+#include <beep/jiffies.h>
 
 #include <asm/io.h>
 

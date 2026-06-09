@@ -7,18 +7,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/major.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/interrupt.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/major.h>
+#include <beep/sched.h>
+#include <beep/mutex.h>
+#include <beep/interrupt.h>
+#include <beep/poll.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/spinlock.h>
 
 #include <asm/io.h>
 #include <dma.h>

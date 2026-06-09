@@ -1,5 +1,5 @@
 /*
- * Linux driver for TerraTec DMX 6Fire USB
+ * Beep driver for TerraTec DMX 6Fire USB
  *
  * Mixer control
  *
@@ -17,7 +17,7 @@
  * (at your option) any later version.
  */
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include <sound/control.h>
 #include <sound/tlv.h>
 

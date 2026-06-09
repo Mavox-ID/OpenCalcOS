@@ -1,6 +1,6 @@
 /*
  *	Forwarding database
- *	Linux ethernet bridge
+ *	Beep ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -11,17 +11,17 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/rculist.h>
-#include <linux/spinlock.h>
-#include <linux/times.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/jhash.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/rculist.h>
+#include <beep/spinlock.h>
+#include <beep/times.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/jhash.h>
+#include <beep/random.h>
+#include <beep/slab.h>
+#include <beep/atomic.h>
 #include <asm/unaligned.h>
 #include "br_private.h"
 

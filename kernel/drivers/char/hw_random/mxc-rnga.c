@@ -16,16 +16,16 @@
  * This driver is based on other RNG drivers.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/hw_random.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
+#include <beep/hw_random.h>
+#include <beep/delay.h>
+#include <beep/io.h>
 
 /* RNGA Registers */
 #define RNGA_CONTROL			0x00

@@ -6,7 +6,7 @@
  * Similar in spirit to pci_device_id and related PCI functions
  */
 
-#include <linux/mod_devicetable.h>
+#include <beep/mod_devicetable.h>
 
 extern const struct x86_cpu_id *x86_match_cpu(const struct x86_cpu_id *match);
 

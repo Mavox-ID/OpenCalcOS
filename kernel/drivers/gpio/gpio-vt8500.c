@@ -1,6 +1,6 @@
 /* drivers/gpio/gpio-vt8500.c
  *
- * Copyright (C) 2012 Tony Prisk <linux@prisktech.co.nz>
+ * Copyright (C) 2012 Tony Prisk <beep@prisktech.co.nz>
  * Based on arch/arm/mach-vt8500/gpio.c:
  * - Copyright (C) 2010 Alexey Charkov <alchark@gmail.com>
  *
@@ -15,16 +15,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/bitops.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_device.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/bitops.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/of_device.h>
 
 /*
 	We handle GPIOs by bank, each bank containing up to 32 GPIOs covered
@@ -313,6 +313,6 @@ static struct platform_driver vt8500_gpio_driver = {
 module_platform_driver(vt8500_gpio_driver);
 
 MODULE_DESCRIPTION("VT8500 GPIO Driver");
-MODULE_AUTHOR("Tony Prisk <linux@prisktech.co.nz>");
+MODULE_AUTHOR("Tony Prisk <beep@prisktech.co.nz>");
 MODULE_LICENSE("GPL v2");
 MODULE_DEVICE_TABLE(of, vt8500_gpio_dt_ids);

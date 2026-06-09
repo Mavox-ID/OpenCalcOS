@@ -1,5 +1,5 @@
 /*
- * linux/sound/soc/samsung/i2s-regs.h
+ * beep/sound/soc/samsung/i2s-regs.h
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com

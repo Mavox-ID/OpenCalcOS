@@ -16,16 +16,16 @@
  * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  *
  */
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/usb.h>
+#include <beep/device.h>
+#include <beep/hid.h>
+#include <beep/usb.h>
 #include "usbhid/usbhid.h"
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mfd/core.h>
-#include <linux/list.h>
-#include <linux/hid-sensor-ids.h>
-#include <linux/hid-sensor-hub.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/mfd/core.h>
+#include <beep/list.h>
+#include <beep/hid-sensor-ids.h>
+#include <beep/hid-sensor-hub.h>
 #include "hid-ids.h"
 
 /**

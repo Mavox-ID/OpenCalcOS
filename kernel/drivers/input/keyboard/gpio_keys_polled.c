@@ -15,18 +15,18 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/input-polldev.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/input-polldev.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/gpio_keys.h>
+#include <beep/of_platform.h>
+#include <beep/of_gpio.h>
 
 #define DRV_NAME	"gpio-keys-polled"
 
@@ -159,7 +159,7 @@ static struct gpio_keys_platform_data *gpio_keys_polled_get_devtree_pdata(struct
 		button->gpio = gpio;
 		button->active_low = flags & OF_GPIO_ACTIVE_LOW;
 
-		if (of_property_read_u32(pp, "linux,code", &button->code)) {
+		if (of_property_read_u32(pp, "beep,code", &button->code)) {
 			dev_err(dev, "Button without keycode: 0x%x\n",
 				button->gpio);
 			error = -EINVAL;
@@ -168,7 +168,7 @@ static struct gpio_keys_platform_data *gpio_keys_polled_get_devtree_pdata(struct
 
 		button->desc = of_get_property(pp, "label", NULL);
 
-		if (of_property_read_u32(pp, "linux,input-type", &button->type))
+		if (of_property_read_u32(pp, "beep,input-type", &button->type))
 			button->type = EV_KEY;
 
 		button->wakeup = !!of_get_property(pp, "gpio-key,wakeup", NULL);

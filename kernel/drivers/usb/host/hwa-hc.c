@@ -53,13 +53,13 @@
  *                      starting/stopping/etc (some might be made also
  *                      DWA).
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/wait.h>
-#include <linux/completion.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/workqueue.h>
+#include <beep/wait.h>
+#include <beep/completion.h>
 #include "../wusbcore/wa-hc.h"
 #include "../wusbcore/wusbhc.h"
 

@@ -13,14 +13,14 @@
  * any later version.
  *
  */
-#ifndef _LINUX_CRYPTO_H
-#define _LINUX_CRYPTO_H
+#ifndef _BEEP_CRYPTO_H
+#define _BEEP_CRYPTO_H
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/string.h>
 #include <asm/page.h>
 #include <asm/errno.h>
 
@@ -395,5 +395,5 @@ void crypto_hmac(struct crypto_tfm *tfm, u8 *key, unsigned int *keylen,
                  struct scatterlist *sg, unsigned int nsg, u8 *out);
 #endif	/* CONFIG_CRYPTO_HMAC */
 
-#endif	/* _LINUX_CRYPTO_H */
+#endif	/* _BEEP_CRYPTO_H */
 

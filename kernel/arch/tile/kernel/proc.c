@@ -12,18 +12,18 @@
  *   more details.
  */
 
-#include <linux/smp.h>
-#include <linux/seq_file.h>
-#include <linux/threads.h>
-#include <linux/cpumask.h>
-#include <linux/timex.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/sysctl.h>
-#include <linux/hardirq.h>
-#include <linux/hugetlb.h>
-#include <linux/mman.h>
+#include <beep/smp.h>
+#include <beep/seq_file.h>
+#include <beep/threads.h>
+#include <beep/cpumask.h>
+#include <beep/timex.h>
+#include <beep/delay.h>
+#include <beep/fs.h>
+#include <beep/proc_fs.h>
+#include <beep/sysctl.h>
+#include <beep/hardirq.h>
+#include <beep/hugetlb.h>
+#include <beep/mman.h>
 #include <asm/unaligned.h>
 #include <asm/pgtable.h>
 #include <asm/processor.h>

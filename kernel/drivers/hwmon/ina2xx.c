@@ -25,17 +25,17 @@
  * the Free Software Foundation; version 2 of the License.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/jiffies.h>
 
-#include <linux/platform_data/ina2xx.h>
+#include <beep/platform_data/ina2xx.h>
 
 /* common register definitions */
 #define INA2XX_CONFIG			0x00

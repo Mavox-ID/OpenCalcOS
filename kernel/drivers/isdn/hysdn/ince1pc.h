@@ -1,5 +1,5 @@
 /*
- * Linux driver for HYSDN cards
+ * Beep driver for HYSDN cards
  * common definitions for both sides of the bus:
  * - conventions both spoolers must know
  * - channel numbers agreed upon

@@ -13,8 +13,8 @@
 
 #ifdef CONFIG_MMU
 
-#include <linux/sched.h>
-#include <linux/threads.h>
+#include <beep/sched.h>
+#include <beep/threads.h>
 #include <asm/processor.h>	/* For TASK_SIZE */
 #include <asm/mmu.h>
 #include <asm/page.h>

@@ -10,7 +10,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <asm/irq.h>
 #include <asm/mach/arch.h>

@@ -26,7 +26,7 @@
 #define TREG_SN 56
 #define TREG_ZERO 63
 
-#include <linux/stddef.h>
+#include <beep/stddef.h>
 #include <asm/tile-desc.h>
 
 const struct tilepro_opcode tilepro_opcodes[395] =

@@ -25,10 +25,10 @@
 #ifndef IRLAN_CLIENT_H
 #define IRLAN_CLIENT_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
 
 #include <net/irda/irias_object.h>
 #include <net/irda/irlan_event.h>

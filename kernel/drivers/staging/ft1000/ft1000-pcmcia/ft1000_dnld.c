@@ -22,17 +22,17 @@
 
 #define __KERNEL_SYSCALLS__
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/unistd.h>
-#include <linux/netdevice.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/unistd.h>
+#include <beep/netdevice.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
-#include <linux/vmalloc.h>
+#include <beep/vmalloc.h>
 
 #include "ft1000.h"
 #include "boot.h"

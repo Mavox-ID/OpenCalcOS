@@ -18,7 +18,7 @@
 
 #ifndef __IOCTL_
 #define __IOCTL_
-#include <linux/ioctl.h>
+#include <beep/ioctl.h>
 
 #define BTRFS_IOCTL_MAGIC 0x94
 #define BTRFS_VOL_NAME_MAX 255

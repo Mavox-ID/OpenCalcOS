@@ -3,15 +3,15 @@
  *
  * Copyright (C) 2009 Steven Rostedt <srostedt@redhat.com>
  */
-#include <linux/stringify.h>
-#include <linux/kallsyms.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
+#include <beep/stringify.h>
+#include <beep/kallsyms.h>
+#include <beep/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
+#include <beep/ftrace.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/fs.h>
 
 #include "trace_output.h"
 

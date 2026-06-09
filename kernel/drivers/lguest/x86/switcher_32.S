@@ -82,7 +82,7 @@
 // To avoid magic numbers and breakage:
 // Should they change the compiler can't save us
 // Down here in the depths of assembler code.
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/page.h>
 #include <asm/segment.h>

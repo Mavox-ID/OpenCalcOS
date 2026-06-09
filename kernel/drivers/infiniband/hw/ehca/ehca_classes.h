@@ -1,5 +1,5 @@
 /*
- *  IBM eServer eHCA Infiniband device driver for Linux on POWER
+ *  IBM eServer eHCA Infiniband device driver for Beep on POWER
  *
  *  Struct definition for eHCA internal structures
  *
@@ -52,8 +52,8 @@ struct ehca_mw;
 struct ehca_pd;
 struct ehca_av;
 
-#include <linux/wait.h>
-#include <linux/mutex.h>
+#include <beep/wait.h>
+#include <beep/mutex.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_user_verbs.h>

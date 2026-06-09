@@ -14,17 +14,17 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
- * This file implements the Linux crypto algorithms.
+ * This file implements the Beep crypto algorithms.
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock_types.h>
-#include <linux/scatterlist.h>
-#include <linux/crypto.h>
-#include <linux/hash.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock_types.h>
+#include <beep/scatterlist.h>
+#include <beep/crypto.h>
+#include <beep/hash.h>
 #include <crypto/internal/hash.h>
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 #include <crypto/algapi.h>
 #include <crypto/aes.h>
 #include <crypto/sha.h>

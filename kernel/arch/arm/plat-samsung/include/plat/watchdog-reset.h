@@ -14,10 +14,10 @@
 #include <plat/regs-watchdog.h>
 #include <mach/map.h>
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/delay.h>
 
 static inline void arch_wdt_reset(void)
 {

@@ -13,7 +13,7 @@ Devices: [Advantech] PCL-725 (pcl725)
 
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 #define PCL725_SIZE 2
 

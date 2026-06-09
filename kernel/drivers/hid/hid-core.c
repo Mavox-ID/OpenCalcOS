@@ -1,5 +1,5 @@
 /*
- *  HID support for Linux
+ *  HID support for Beep
  *
  *  Copyright (c) 1999 Andreas Gal
  *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>
@@ -16,25 +16,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/mm.h>
+#include <beep/spinlock.h>
 #include <asm/unaligned.h>
 #include <asm/byteorder.h>
-#include <linux/input.h>
-#include <linux/wait.h>
-#include <linux/vmalloc.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
+#include <beep/input.h>
+#include <beep/wait.h>
+#include <beep/vmalloc.h>
+#include <beep/sched.h>
+#include <beep/semaphore.h>
 
-#include <linux/hid.h>
-#include <linux/hiddev.h>
-#include <linux/hid-debug.h>
-#include <linux/hidraw.h>
+#include <beep/hid.h>
+#include <beep/hiddev.h>
+#include <beep/hid-debug.h>
+#include <beep/hidraw.h>
 
 #include "hid-ids.h"
 
@@ -909,7 +909,7 @@ static u32 s32ton(__s32 value, unsigned n)
  * While the USB HID spec allows unlimited length bit fields in "report
  * descriptors", most devices never use more than 16 bits.
  * One model of UPS is claimed to report "LINEV" as a 32-bit field.
- * Search linux-kernel and linux-usb-devel archives for "hid-core extract".
+ * Search beep-kernel and beep-usb-devel archives for "hid-core extract".
  */
 
 static __u32 extract(const struct hid_device *hid, __u8 *report,

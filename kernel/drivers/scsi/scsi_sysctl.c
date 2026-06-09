@@ -3,10 +3,10 @@
  *	Released under GPL v2.
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sysctl.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sysctl.h>
 
 #include "scsi_logging.h"
 #include "scsi_priv.h"

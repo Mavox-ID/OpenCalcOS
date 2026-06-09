@@ -26,10 +26,10 @@
 #ifndef NET_IRDA_H
 #define NET_IRDA_H
 
-#include <linux/skbuff.h>		/* struct sk_buff */
-#include <linux/kernel.h>
-#include <linux/if.h>			/* sa_family_t in <linux/irda.h> */
-#include <linux/irda.h>
+#include <beep/skbuff.h>		/* struct sk_buff */
+#include <beep/kernel.h>
+#include <beep/if.h>			/* sa_family_t in <beep/irda.h> */
+#include <beep/irda.h>
 
 typedef __u32 magic_t;
 
@@ -82,7 +82,7 @@ do { if(!(expr)) { \
 #define IRDA_ERROR(args...)   do { if (net_ratelimit()) printk(KERN_ERR args); } while (0)
 
 /*
- *  Magic numbers used by Linux-IrDA. Random numbers which must be unique to 
+ *  Magic numbers used by Beep-IrDA. Random numbers which must be unique to 
  *  give the best protection
  */
 

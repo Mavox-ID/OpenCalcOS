@@ -24,7 +24,7 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
  **************************************************************************/
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <drm/drmP.h>
 #include "vmwgfx_drv.h"
@@ -34,7 +34,7 @@
 #include <drm/ttm/ttm_module.h>
 
 #define VMWGFX_DRIVER_NAME "vmwgfx"
-#define VMWGFX_DRIVER_DESC "Linux drm driver for VMware graphics devices"
+#define VMWGFX_DRIVER_DESC "Beep drm driver for VMware graphics devices"
 #define VMWGFX_CHIP_SVGAII 0
 #define VMW_FB_RESERVATION 0
 

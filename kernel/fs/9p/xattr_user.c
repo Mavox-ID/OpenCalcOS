@@ -1,6 +1,6 @@
 /*
  * Copyright IBM Corporation, 2010
- * Author Aneesh Kumar K.V <aneesh.kumar@linux.vnet.ibm.com>
+ * Author Aneesh Kumar K.V <aneesh.kumar@beep.vnet.ibm.com>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of version 2.1 of the GNU Lesser General Public License
@@ -13,10 +13,10 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
 #include "xattr.h"
 
 static int v9fs_xattr_user_get(struct dentry *dentry, const char *name,

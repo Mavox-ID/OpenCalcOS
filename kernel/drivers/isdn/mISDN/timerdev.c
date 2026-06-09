@@ -17,14 +17,14 @@
  *
  */
 
-#include <linux/poll.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mISDNif.h>
-#include <linux/mutex.h>
+#include <beep/poll.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
+#include <beep/timer.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
+#include <beep/mISDNif.h>
+#include <beep/mutex.h>
 #include "core.h"
 
 static DEFINE_MUTEX(mISDN_mutex);

@@ -8,19 +8,19 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/mtd/partitions.h>
-#include <linux/ata_platform.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/ethtool.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
+#include <beep/mtd/partitions.h>
+#include <beep/ata_platform.h>
+#include <beep/mv643xx_eth.h>
+#include <beep/ethtool.h>
 #include <net/dsa.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <mach/kirkwood.h>
-#include <linux/platform_data/mmc-mvsdio.h>
+#include <beep/platform_data/mmc-mvsdio.h>
 #include "common.h"
 #include "mpp.h"
 

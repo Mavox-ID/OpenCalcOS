@@ -13,7 +13,7 @@
  */
 
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>
 #include <asm/asmmacro.h>

@@ -28,10 +28,10 @@
 #ifndef __UWB_INTERNAL_H__
 #define __UWB_INTERNAL_H__
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/uwb.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/uwb.h>
+#include <beep/mutex.h>
 
 struct uwb_beca_e;
 

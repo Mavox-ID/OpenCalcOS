@@ -1,5 +1,5 @@
 #
-# Makefile for the PowerPC 85xx linux kernel.
+# Makefile for the PowerPC 85xx beep kernel.
 #
 obj-$(CONFIG_SMP) += smp.o
 

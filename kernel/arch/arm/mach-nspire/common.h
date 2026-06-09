@@ -1,5 +1,5 @@
 /*
- *	linux/arch/arm/mach-nspire/common.h
+ *	beep/arch/arm/mach-nspire/common.h
  *
  *	Copyright (C) 2012 Daniel Tang <tangrs@tangrs.id.au>
  *

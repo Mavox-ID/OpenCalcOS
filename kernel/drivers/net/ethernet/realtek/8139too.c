@@ -1,6 +1,6 @@
 /*
 
-	8139too.c: A RealTek RTL-8139 Fast Ethernet driver for Linux.
+	8139too.c: A RealTek RTL-8139 Fast Ethernet driver for Beep.
 
 	Maintained by Jeff Garzik <jgarzik@pobox.com>
 	Copyright 2000-2002 Jeff Garzik
@@ -95,23 +95,23 @@
 #define DRV_VERSION	"0.9.28"
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/completion.h>
-#include <linux/crc32.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/compiler.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/rtnetlink.h>
+#include <beep/delay.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/completion.h>
+#include <beep/crc32.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
+#include <beep/gfp.h>
 #include <asm/irq.h>
 
 #define RTL8139_DRIVER_NAME   DRV_NAME " Fast Ethernet driver " DRV_VERSION

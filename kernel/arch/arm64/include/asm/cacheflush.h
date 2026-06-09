@@ -19,7 +19,7 @@
 #ifndef __ASM_CACHEFLUSH_H
 #define __ASM_CACHEFLUSH_H
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 /*
  * This flag is used to indicate that the page pointed to by a pte is clean

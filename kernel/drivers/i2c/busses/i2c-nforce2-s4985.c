@@ -1,7 +1,7 @@
 /*
  * i2c-nforce2-s4985.c - i2c-nforce2 extras for the Tyan S4985 motherboard
  *
- * Copyright (C) 2008 Jean Delvare <khali@linux-fr.org>
+ * Copyright (C) 2008 Jean Delvare <khali@beep-fr.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -31,12 +31,12 @@
  *   CPU3: virtual adapter 4, channel 4
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
 
 extern struct i2c_adapter *nforce2_smbus;
 
@@ -249,7 +249,7 @@ static void __exit nforce2_s4985_exit(void)
 		       "Physical bus restoration failed\n");
 }
 
-MODULE_AUTHOR("Jean Delvare <khali@linux-fr.org>");
+MODULE_AUTHOR("Jean Delvare <khali@beep-fr.org>");
 MODULE_DESCRIPTION("S4985 SMBus multiplexing");
 MODULE_LICENSE("GPL");
 

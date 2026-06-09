@@ -9,16 +9,16 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/clocksource.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/timex.h>
-#include <linux/profile.h>
+#include <beep/kernel.h>
+#include <beep/clocksource.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/param.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/timex.h>
+#include <beep/profile.h>
 
 #include <asm/special_insns.h>
 #include <asm/timer64.h>

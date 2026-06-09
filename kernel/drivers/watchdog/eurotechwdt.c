@@ -47,19 +47,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/fs.h>
-#include <linux/ioport.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/miscdevice.h>
+#include <beep/watchdog.h>
+#include <beep/fs.h>
+#include <beep/ioport.h>
+#include <beep/notifier.h>
+#include <beep/reboot.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
 
 
 static unsigned long eurwdt_is_open;

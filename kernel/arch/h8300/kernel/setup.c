@@ -1,5 +1,5 @@
 /*
- *  linux/arch/h8300/kernel/setup.c
+ *  beep/arch/h8300/kernel/setup.c
  *
  *  Copyleft  ()) 2000       James D. Schettine {james@telos-systems.com}
  *  Copyright (C) 1999,2000  Greg Ungerer (gerg@snapgear.com)
@@ -16,21 +16,21 @@
  * This file handles the architecture-dependent parts of system setup
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/fb.h>
-#include <linux/console.h>
-#include <linux/genhd.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/major.h>
-#include <linux/bootmem.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/fb.h>
+#include <beep/console.h>
+#include <beep/genhd.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/major.h>
+#include <beep/bootmem.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
 
 #include <asm/setup.h>
 #include <asm/irq.h>
@@ -128,7 +128,7 @@ void __init setup_arch(char **cmdline_p)
 	register_console((struct console *)&gdb_console);
 #endif
 
-	printk(KERN_INFO "\r\n\nuClinux " CPU "\n");
+	printk(KERN_INFO "\r\n\nuCbeep " CPU "\n");
 	printk(KERN_INFO "Target Hardware: %s\n",_target_name);
 	printk(KERN_INFO "Flat model support (C) 1998,1999 Kenneth Albanowski, D. Jeff Dionne\n");
 	printk(KERN_INFO "H8/300 series support by Yoshinori Sato <ysato@users.sourceforge.jp>\n");

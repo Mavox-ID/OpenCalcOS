@@ -23,8 +23,8 @@
 	Abstract: rt2x00 generic link tuning routines.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 
 #include "rt2x00.h"
 #include "rt2x00lib.h"

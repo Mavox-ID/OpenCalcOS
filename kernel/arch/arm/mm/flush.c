@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/flush.c
+ *  beep/arch/arm/mm/flush.c
  *
  *  Copyright (C) 1995-2002 Russell King
  *
@@ -7,10 +7,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/highmem.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cachetype.h>
@@ -223,7 +223,7 @@ static void __flush_dcache_aliases(struct address_space *mapping, struct page *p
 	flush_dcache_mmap_unlock(mapping);
 }
 
-#if __LINUX_ARM_ARCH__ >= 6
+#if __BEEP_ARM_ARCH__ >= 6
 void __sync_icache_dcache(pte_t pteval)
 {
 	unsigned long pfn;

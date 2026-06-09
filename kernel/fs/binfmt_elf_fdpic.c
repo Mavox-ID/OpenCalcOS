@@ -10,31 +10,31 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/binfmts.h>
-#include <linux/string.h>
-#include <linux/file.h>
-#include <linux/fcntl.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/security.h>
-#include <linux/highmem.h>
-#include <linux/highuid.h>
-#include <linux/personality.h>
-#include <linux/ptrace.h>
-#include <linux/init.h>
-#include <linux/elf.h>
-#include <linux/elf-fdpic.h>
-#include <linux/elfcore.h>
-#include <linux/coredump.h>
+#include <beep/fs.h>
+#include <beep/stat.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/binfmts.h>
+#include <beep/string.h>
+#include <beep/file.h>
+#include <beep/fcntl.h>
+#include <beep/slab.h>
+#include <beep/pagemap.h>
+#include <beep/security.h>
+#include <beep/highmem.h>
+#include <beep/highuid.h>
+#include <beep/personality.h>
+#include <beep/ptrace.h>
+#include <beep/init.h>
+#include <beep/elf.h>
+#include <beep/elf-fdpic.h>
+#include <beep/elfcore.h>
+#include <beep/coredump.h>
 
 #include <asm/uaccess.h>
 #include <asm/param.h>
@@ -56,19 +56,19 @@ typedef char *elf_caddr_t;
 
 MODULE_LICENSE("GPL");
 
-static int load_elf_fdpic_binary(struct linux_binprm *);
+static int load_elf_fdpic_binary(struct beep_binprm *);
 static int elf_fdpic_fetch_phdrs(struct elf_fdpic_params *, struct file *);
 static int elf_fdpic_map_file(struct elf_fdpic_params *, struct file *,
 			      struct mm_struct *, const char *);
 
-static int create_elf_fdpic_tables(struct linux_binprm *, struct mm_struct *,
+static int create_elf_fdpic_tables(struct beep_binprm *, struct mm_struct *,
 				   struct elf_fdpic_params *,
 				   struct elf_fdpic_params *);
 
 #ifndef CONFIG_MMU
-static int elf_fdpic_transfer_args_to_stack(struct linux_binprm *,
+static int elf_fdpic_transfer_args_to_stack(struct beep_binprm *,
 					    unsigned long *);
-static int elf_fdpic_map_file_constdisp_on_uclinux(struct elf_fdpic_params *,
+static int elf_fdpic_map_file_constdisp_on_ucbeep(struct elf_fdpic_params *,
 						   struct file *,
 						   struct mm_struct *);
 #endif
@@ -80,7 +80,7 @@ static int elf_fdpic_map_file_by_direct_mmap(struct elf_fdpic_params *,
 static int elf_fdpic_core_dump(struct coredump_params *cprm);
 #endif
 
-static struct linux_binfmt elf_fdpic_format = {
+static struct beep_binfmt elf_fdpic_format = {
 	.module		= THIS_MODULE,
 	.load_binary	= load_elf_fdpic_binary,
 #ifdef CONFIG_ELF_CORE
@@ -164,7 +164,7 @@ static int elf_fdpic_fetch_phdrs(struct elf_fdpic_params *params,
 /*
  * load an fdpic binary into various bits of memory
  */
-static int load_elf_fdpic_binary(struct linux_binprm *bprm)
+static int load_elf_fdpic_binary(struct beep_binprm *bprm)
 {
 	struct elf_fdpic_params exec_params, interp_params;
 	struct pt_regs *regs = current_pt_regs();
@@ -319,7 +319,7 @@ static int load_elf_fdpic_binary(struct linux_binprm *bprm)
 	/* there's now no turning back... the old userspace image is dead,
 	 * defunct, deceased, etc. after this point we have to exit via
 	 * error_kill */
-	set_personality(PER_LINUX_FDPIC);
+	set_personality(PER_BEEP_FDPIC);
 	if (elf_read_implies_exec(&exec_params.hdr, executable_stack))
 		current->personality |= READ_IMPLIES_EXEC;
 
@@ -472,7 +472,7 @@ error_kill:
  * present useful information to the program by shovelling it onto the new
  * process's stack
  */
-static int create_elf_fdpic_tables(struct linux_binprm *bprm,
+static int create_elf_fdpic_tables(struct beep_binprm *bprm,
 				   struct mm_struct *mm,
 				   struct elf_fdpic_params *exec_params,
 				   struct elf_fdpic_params *interp_params)
@@ -697,7 +697,7 @@ static int create_elf_fdpic_tables(struct linux_binprm *bprm,
  * the stack
  */
 #ifndef CONFIG_MMU
-static int elf_fdpic_transfer_args_to_stack(struct linux_binprm *bprm,
+static int elf_fdpic_transfer_args_to_stack(struct beep_binprm *bprm,
 					    unsigned long *_sp)
 {
 	unsigned long index, stop, sp;
@@ -778,7 +778,7 @@ static int elf_fdpic_map_file(struct elf_fdpic_params *params,
 	case ELF_FDPIC_FLAG_CONSTDISP:
 	case ELF_FDPIC_FLAG_CONTIGUOUS:
 #ifndef CONFIG_MMU
-		ret = elf_fdpic_map_file_constdisp_on_uclinux(params, file, mm);
+		ret = elf_fdpic_map_file_constdisp_on_ucbeep(params, file, mm);
 		if (ret < 0)
 			return ret;
 		break;
@@ -864,8 +864,8 @@ static int elf_fdpic_map_file(struct elf_fdpic_params *params,
 		break;
 	}
 
-	/* now elide adjacent segments in the load map on MMU linux
-	 * - on uClinux the holes between may actually be filled with system
+	/* now elide adjacent segments in the load map on MMU beep
+	 * - on uCbeep the holes between may actually be filled with system
 	 *   stuff or stuff from other processes
 	 */
 #ifdef CONFIG_MMU
@@ -915,10 +915,10 @@ dynamic_error:
 
 /*****************************************************************************/
 /*
- * map a file with constant displacement under uClinux
+ * map a file with constant displacement under uCbeep
  */
 #ifndef CONFIG_MMU
-static int elf_fdpic_map_file_constdisp_on_uclinux(
+static int elf_fdpic_map_file_constdisp_on_ucbeep(
 	struct elf_fdpic_params *params,
 	struct file *file,
 	struct mm_struct *mm)
@@ -1121,8 +1121,8 @@ static int elf_fdpic_map_file_by_direct_mmap(struct elf_fdpic_params *params,
 		}
 
 		/* clear any space allocated but not loaded
-		 * - on uClinux we can just clear the lot
-		 * - on MMU linux we'll get a SIGBUS beyond the last page
+		 * - on uCbeep we can just clear the lot
+		 * - on MMU beep we'll get a SIGBUS beyond the last page
 		 *   extant in the file
 		 */
 		excess = phdr->p_memsz - phdr->p_filesz;
@@ -1472,7 +1472,7 @@ static int elf_dump_thread_status(long signr, struct elf_thread_status *t)
 
 #ifdef ELF_CORE_COPY_XFPREGS
 	if (elf_core_copy_task_xfpregs(p, &t->xfpu)) {
-		fill_note(&t->notes[2], "LINUX", ELF_CORE_XFPREG_TYPE,
+		fill_note(&t->notes[2], "BEEP", ELF_CORE_XFPREG_TYPE,
 			  sizeof(t->xfpu), &t->xfpu);
 		t->num_notes++;
 		sz += notesize(&t->notes[2]);
@@ -1677,7 +1677,7 @@ static int elf_fdpic_core_dump(struct coredump_params *cprm)
 
 	/* If segs > PN_XNUM(0xffff), then e_phnum overflows. To avoid
 	 * this, kernel supports extended numbering. Have a look at
-	 * include/linux/elf.h for further information. */
+	 * include/beep/elf.h for further information. */
 	e_phnum = segs > PN_XNUM ? PN_XNUM : segs;
 
 	/* Set up header */
@@ -1714,7 +1714,7 @@ static int elf_fdpic_core_dump(struct coredump_params *cprm)
 #ifdef ELF_CORE_COPY_XFPREGS
 	if (elf_core_copy_task_xfpregs(current, xfpu))
 		fill_note(notes + numnote++,
-			  "LINUX", ELF_CORE_XFPREG_TYPE, sizeof(*xfpu), xfpu);
+			  "BEEP", ELF_CORE_XFPREG_TYPE, sizeof(*xfpu), xfpu);
 #endif
 
 	fs = get_fs();

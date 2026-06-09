@@ -11,7 +11,7 @@
 #ifndef _ASM_EXCEPTIONS_H
 #define _ASM_EXCEPTIONS_H
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 /*
  * define the breakpoint instruction opcode to use

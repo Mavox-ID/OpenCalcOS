@@ -15,10 +15,10 @@
 #ifndef _ASM_MICROBLAZE_PAGE_H
 #define _ASM_MICROBLAZE_PAGE_H
 
-#include <linux/pfn.h>
+#include <beep/pfn.h>
 #include <asm/setup.h>
 #include <asm/asm-compat.h>
-#include <linux/const.h>
+#include <beep/const.h>
 
 #ifdef __KERNEL__
 
@@ -88,7 +88,7 @@ typedef unsigned long pte_basic_t;
 typedef struct page *pgtable_t;
 typedef struct { unsigned long	pte; }		pte_t;
 typedef struct { unsigned long	pgprot; }	pgprot_t;
-/* FIXME this can depend on linux kernel version */
+/* FIXME this can depend on beep kernel version */
 #   ifdef CONFIG_MMU
 typedef struct { unsigned long pmd; } pmd_t;
 typedef struct { unsigned long pgd; } pgd_t;
@@ -122,7 +122,7 @@ typedef struct { pud_t		pge[1]; }	pgd_t;
  * virt -+
  *	 | asm-microblaze/page.h
  * phys -+
- *	 | linux/pfn.h
+ *	 | beep/pfn.h
  *  pfn -+
  *	 | asm-generic/memory_model.h
  * page -+

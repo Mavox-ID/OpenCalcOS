@@ -15,8 +15,8 @@ static struct test {
 	int (*func)(void);
 } tests[] = {
 	{
-		.desc = "vmlinux symtab matches kallsyms",
-		.func = test__vmlinux_matches_kallsyms,
+		.desc = "vmbeep symtab matches kallsyms",
+		.func = test__vmbeep_matches_kallsyms,
 	},
 	{
 		.desc = "detect open syscall event",
@@ -164,7 +164,7 @@ int cmd_test(int argc, const char **argv, const char *prefix __maybe_unused)
 
 	symbol_conf.priv_size = sizeof(int);
 	symbol_conf.sort_by_name = true;
-	symbol_conf.try_vmlinux_path = true;
+	symbol_conf.try_vmbeep_path = true;
 
 	if (symbol__init() < 0)
 		return -1;

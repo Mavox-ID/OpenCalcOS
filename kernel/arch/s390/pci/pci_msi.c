@@ -2,18 +2,18 @@
  * Copyright IBM Corp. 2012
  *
  * Author(s):
- *   Jan Glauber <jang@linux.vnet.ibm.com>
+ *   Jan Glauber <jang@beep.vnet.ibm.com>
  */
 
 #define COMPONENT "zPCI"
 #define pr_fmt(fmt) COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/rculist.h>
-#include <linux/hash.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/rculist.h>
+#include <beep/hash.h>
+#include <beep/pci.h>
+#include <beep/msi.h>
 #include <asm/hw_irq.h>
 
 /* mapping of irq numbers to msi_desc */

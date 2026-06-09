@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/omap2/dss/core.c
+ * beep/drivers/video/omap2/dss/core.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -22,18 +22,18 @@
 
 #define DSS_SUBSYS_NAME "CORE"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/suspend.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/io.h>
+#include <beep/device.h>
+#include <beep/regulator/consumer.h>
+#include <beep/suspend.h>
+#include <beep/slab.h>
 
 #include <video/omapdss.h>
 

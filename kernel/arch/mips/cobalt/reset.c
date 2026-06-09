@@ -8,9 +8,9 @@
  * Copyright (C) 1995, 1996, 1997 by Ralf Baechle
  * Copyright (C) 2001 by Liam Davies (ldavies@agile.tv)
  */
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/leds.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/leds.h>
 
 #include <asm/processor.h>
 

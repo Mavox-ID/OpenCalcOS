@@ -19,13 +19,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #include "clock.h"
 #include "powerdomain.h"
@@ -40,8 +40,8 @@
 u32 enable_off_mode;
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 static int pm_dbg_init_done;
 

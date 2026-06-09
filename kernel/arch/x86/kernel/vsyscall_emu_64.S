@@ -6,7 +6,7 @@
  * Subject to the GNU General Public License, version 2
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #include <asm/irq_vectors.h>
 #include <asm/page_types.h>

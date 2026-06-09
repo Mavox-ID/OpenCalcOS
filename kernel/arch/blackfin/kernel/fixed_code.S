@@ -12,9 +12,9 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/unistd.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
+#include <beep/unistd.h>
 #include <asm/entry.h>
 
 __INIT

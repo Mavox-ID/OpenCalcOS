@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/cpuidle34xx.c
+ * beep/arch/arm/mach-omap2/cpuidle34xx.c
  *
  * OMAP3 CPU IDLE Routines
  *
@@ -22,10 +22,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/sched.h>
-#include <linux/cpuidle.h>
-#include <linux/export.h>
-#include <linux/cpu_pm.h>
+#include <beep/sched.h>
+#include <beep/cpuidle.h>
+#include <beep/export.h>
+#include <beep/cpu_pm.h>
 
 #include "powerdomain.h"
 #include "clockdomain.h"

@@ -1,6 +1,6 @@
 /*
  * This file is part of the Chelsio T4 PCI-E SR-IOV Virtual Function Ethernet
- * driver for Linux.
+ * driver for Beep.
  *
  * Copyright (c) 2009-2010 Chelsio Communications, Inc. All rights reserved.
  *
@@ -33,15 +33,15 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/debugfs.h>
-#include <linux/ethtool.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/debugfs.h>
+#include <beep/ethtool.h>
 
 #include "t4vf_common.h"
 #include "t4vf_defs.h"
@@ -2083,7 +2083,7 @@ static int adap_init0(struct adapter *adapter)
 	}
 
 	/*
-	 * Some environments do not properly handle PCIE FLRs -- e.g. in Linux
+	 * Some environments do not properly handle PCIE FLRs -- e.g. in Beep
 	 * 2.6.31 and later we can't call pci_reset_function() in order to
 	 * issue an FLR because of a self- deadlock on the device semaphore.
 	 * Meanwhile, the OS infrastructure doesn't issue FLRs in all the

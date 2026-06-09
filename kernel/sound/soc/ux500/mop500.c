@@ -13,10 +13,10 @@
 
 #include <asm/mach-types.h>
 
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/spi/spi.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/spi/spi.h>
+#include <beep/of.h>
 
 #include <sound/soc.h>
 #include <sound/initval.h>

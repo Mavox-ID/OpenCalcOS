@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex Beep Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2009-2011 Emulex.  All rights reserved.           *
  * EMULEX and SLI are trademarks of Emulex.                        *
@@ -244,7 +244,7 @@ struct lpfc_fcf {
 #define LPFC_REGION23_VERSION	1
 #define LPFC_REGION23_LAST_REC  0xff
 #define DRIVER_SPECIFIC_TYPE	0xA2
-#define LINUX_DRIVER_ID		0x20
+#define BEEP_DRIVER_ID		0x20
 #define PORT_STE_TYPE		0x1
 
 struct lpfc_fip_param_hdr {

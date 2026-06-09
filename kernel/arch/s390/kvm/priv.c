@@ -11,9 +11,9 @@
  *               Christian Borntraeger <borntraeger@de.ibm.com>
  */
 
-#include <linux/kvm.h>
-#include <linux/gfp.h>
-#include <linux/errno.h>
+#include <beep/kvm.h>
+#include <beep/gfp.h>
+#include <beep/errno.h>
 #include <asm/current.h>
 #include <asm/debug.h>
 #include <asm/ebcdic.h>
@@ -231,7 +231,7 @@ static void handle_stsi_3_2_2(struct kvm_vcpu *vcpu, struct sysinfo_3_2_2 *mem)
 	mem->vm[0].caf = 1000;
 	memcpy(mem->vm[0].name, "KVMguest", 8);
 	ASCEBC(mem->vm[0].name, 8);
-	memcpy(mem->vm[0].cpi, "KVM/Linux       ", 16);
+	memcpy(mem->vm[0].cpi, "KVM/Beep       ", 16);
 	ASCEBC(mem->vm[0].cpi, 16);
 }
 
@@ -346,7 +346,7 @@ static int handle_tprot(struct kvm_vcpu *vcpu)
 
 	vcpu->stat.instruction_tprot++;
 
-	/* we only handle the Linux memory detection case:
+	/* we only handle the Beep memory detection case:
 	 * access key == 0
 	 * guest DAT == off
 	 * everything else goes to userspace. */

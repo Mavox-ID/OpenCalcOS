@@ -1,4 +1,4 @@
-/* via-rhine.c: A Linux Ethernet device driver for VIA Rhine family chips. */
+/* via-rhine.c: A Beep Ethernet device driver for VIA Rhine family chips. */
 /*
 	Written 1998-2001 by Donald Becker.
 
@@ -35,7 +35,7 @@
 #define DRV_VERSION	"1.5.0"
 #define DRV_RELDATE	"2010-10-09"
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* A few user-configurable values.
    These may be modified when a driver module is loaded. */
@@ -85,32 +85,32 @@ static const int multicast_filter_limit = 32;
 
 #define PKT_BUF_SZ	1536	/* Size of each temporary Rx buffer.*/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/if_vlan.h>
-#include <linux/bitops.h>
-#include <linux/workqueue.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/mii.h>
+#include <beep/ethtool.h>
+#include <beep/crc32.h>
+#include <beep/if_vlan.h>
+#include <beep/bitops.h>
+#include <beep/workqueue.h>
 #include <asm/processor.h>	/* Processor type for cache alignment. */
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/uaccess.h>
-#include <linux/dmi.h>
+#include <beep/dmi.h>
 
 /* These identify the driver base version and may not be removed. */
 static const char version[] =

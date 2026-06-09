@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-mx1/mach-scb9328.c
+ * beep/arch/arm/mach-mx1/mach-scb9328.c
  *
  * Copyright (c) 2004 Sascha Hauer <saschahauer@web.de>
  * Copyright (c) 2006-2008 Juergen Beisert <jbeisert@netscape.net>
@@ -10,11 +10,11 @@
  *
  */
 
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/interrupt.h>
-#include <linux/dm9000.h>
-#include <linux/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
+#include <beep/interrupt.h>
+#include <beep/dm9000.h>
+#include <beep/gpio.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

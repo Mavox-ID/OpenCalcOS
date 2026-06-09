@@ -1,8 +1,8 @@
 #ifndef __ARCH_M68K_ATOMIC__
 #define __ARCH_M68K_ATOMIC__
 
-#include <linux/types.h>
-#include <linux/irqflags.h>
+#include <beep/types.h>
+#include <beep/irqflags.h>
 #include <asm/cmpxchg.h>
 
 /*

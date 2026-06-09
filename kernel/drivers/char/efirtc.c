@@ -1,5 +1,5 @@
 /*
- * EFI Time Services Driver for Linux
+ * EFI Time Services Driver for Beep
  *
  * Copyright (C) 1999 Hewlett-Packard Co
  * Copyright (C) 1999 Stephane Eranian <eranian@hpl.hp.com>
@@ -27,15 +27,15 @@
  * 	- Add module support
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/rtc.h>
-#include <linux/proc_fs.h>
-#include <linux/efi.h>
-#include <linux/uaccess.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/rtc.h>
+#include <beep/proc_fs.h>
+#include <beep/efi.h>
+#include <beep/uaccess.h>
 
 
 #define EFI_RTC_VERSION		"0.4"

@@ -6,32 +6,32 @@
  * Copyright (C) 2002 Linus Torvalds.
  */
 
-#include <linux/module.h>
-#include <linux/thread_info.h>
+#include <beep/module.h>
+#include <beep/thread_info.h>
 #include <asm/current.h>
-#include <linux/sched.h>		/* remove ASAP */
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/file.h>
-#include <linux/kernel.h>
-#include <linux/writeback.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/capability.h>
-#include <linux/ctype.h>
-#include <linux/backing-dev.h>
-#include <linux/hugetlb.h>
-#include <linux/pagevec.h>
-#include <linux/parser.h>
-#include <linux/mman.h>
-#include <linux/slab.h>
-#include <linux/dnotify.h>
-#include <linux/statfs.h>
-#include <linux/security.h>
-#include <linux/magic.h>
-#include <linux/migrate.h>
+#include <beep/sched.h>		/* remove ASAP */
+#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/file.h>
+#include <beep/kernel.h>
+#include <beep/writeback.h>
+#include <beep/pagemap.h>
+#include <beep/highmem.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/capability.h>
+#include <beep/ctype.h>
+#include <beep/backing-dev.h>
+#include <beep/hugetlb.h>
+#include <beep/pagevec.h>
+#include <beep/parser.h>
+#include <beep/mman.h>
+#include <beep/slab.h>
+#include <beep/dnotify.h>
+#include <beep/statfs.h>
+#include <beep/security.h>
+#include <beep/magic.h>
+#include <beep/migrate.h>
 
 #include <asm/uaccess.h>
 

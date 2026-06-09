@@ -11,7 +11,7 @@
 #include "build-id.h"
 #include "event.h"
 #include "symbol.h"
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include "debug.h"
 #include "session.h"
 #include "tool.h"

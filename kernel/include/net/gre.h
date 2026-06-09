@@ -1,7 +1,7 @@
-#ifndef __LINUX_GRE_H
-#define __LINUX_GRE_H
+#ifndef __BEEP_GRE_H
+#define __BEEP_GRE_H
 
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 
 #define GREPROTO_CISCO		0
 #define GREPROTO_PPTP		1

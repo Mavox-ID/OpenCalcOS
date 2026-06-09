@@ -3,12 +3,12 @@
  * Copyright (C) 2004 David S. Miller <davem@redhat.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/percpu.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/preempt.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/percpu.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/preempt.h>
 
 #include <asm/pgtable.h>
 #include <asm/pgalloc.h>

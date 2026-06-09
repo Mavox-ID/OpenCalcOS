@@ -12,10 +12,10 @@
 #ifndef __ASM_RTC_H__
 #define __ASM_RTC_H__
 
-#include <linux/mc146818rtc.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/delay.h>
+#include <beep/mc146818rtc.h>
+#include <beep/rtc.h>
+#include <beep/bcd.h>
+#include <beep/delay.h>
 
 #define RTC_PIE 0x40		/* periodic interrupt enable */
 #define RTC_AIE 0x20		/* alarm interrupt enable */

@@ -11,12 +11,12 @@
  * any later version.
  *
  */
-#include <linux/init.h>
-//#include <linux/crypto.h>
+#include <beep/init.h>
+//#include <beep/crypto.h>
 #include "rtl_crypto.h"
-#include <linux/rwsem.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/rwsem.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #include "internal.h"
 
 extern struct list_head crypto_alg_list;

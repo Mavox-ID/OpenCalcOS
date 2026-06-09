@@ -72,12 +72,12 @@
  *       A store crossing a page boundary might be executed only partially.
  *       Undo the partial store in this case.
  */
-#include <linux/mm.h>
-#include <linux/signal.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
-#include <linux/debugfs.h>
-#include <linux/perf_event.h>
+#include <beep/mm.h>
+#include <beep/signal.h>
+#include <beep/smp.h>
+#include <beep/sched.h>
+#include <beep/debugfs.h>
+#include <beep/perf_event.h>
 
 #include <asm/asm.h>
 #include <asm/branch.h>

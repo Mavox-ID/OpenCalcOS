@@ -17,8 +17,8 @@
  *
  * Kernel command line creation using the prom monitor (YAMON) argc/argv.
  */
-#include <linux/init.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/string.h>
 
 #include <asm/bootinfo.h>
 

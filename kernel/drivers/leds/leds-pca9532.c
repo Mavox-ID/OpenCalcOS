@@ -12,15 +12,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
-#include <linux/input.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/leds-pca9532.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/leds.h>
+#include <beep/input.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
+#include <beep/leds-pca9532.h>
+#include <beep/gpio.h>
 
 /* m =  num_leds*/
 #define PCA9532_REG_INPUT(i)	((i) >> 3)

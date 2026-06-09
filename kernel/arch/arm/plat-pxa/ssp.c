@@ -1,7 +1,7 @@
 /*
- *  linux/arch/arm/mach-pxa/ssp.c
+ *  beep/arch/arm/mach-pxa/ssp.c
  *
- *  based on linux/arch/arm/mach-sa1100/ssp.c by Russell King
+ *  based on beep/arch/arm/mach-sa1100/ssp.c by Russell King
  *
  *  Copyright (C) 2003 Russell King.
  *  Copyright (C) 2003 Wolfson Microelectronics PLC
@@ -16,20 +16,20 @@
  *  Author: Liam Girdwood <liam.girdwood@wolfsonmicro.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/spi/pxa2xx_spi.h>
+#include <beep/io.h>
 
 #include <asm/irq.h>
 #include <mach/hardware.h>

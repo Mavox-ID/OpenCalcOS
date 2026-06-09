@@ -13,7 +13,7 @@
 #define _ASM_CACHEFLUSH_H
 
 /* Keep includes the same across arches.  */
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 /*
  * virtually-indexed cache management (our cache is physically indexed)

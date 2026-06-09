@@ -33,8 +33,8 @@
 #include "base.h"
 #include "ps.h"
 #include "efuse.h"
-#include <linux/export.h>
-#include <linux/kmemleak.h>
+#include <beep/export.h>
+#include <beep/kmemleak.h>
 
 static const u16 pcibridge_vendors[PCI_BRIDGE_VENDOR_MAX] = {
 	PCI_VENDOR_ID_INTEL,

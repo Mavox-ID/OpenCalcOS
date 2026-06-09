@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/acorn/scsi/queue.c: queue handling primitives
+ *  beep/drivers/acorn/scsi/queue.c: queue handling primitives
  *
  *  Copyright (C) 1997-2000 Russell King
  *
@@ -12,16 +12,16 @@
  *   11-Oct-1997 RMK	Corrected problem with queue_remove_exclude
  *			not updating internal linked list properly
  *			(was causing commands to go missing).
- *   30-Aug-2000 RMK	Use Linux list handling and spinlocks
+ *   30-Aug-2000 RMK	Use Beep list handling and spinlocks
  */
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
+#include <beep/init.h>
 
 #include "../scsi.h"
 

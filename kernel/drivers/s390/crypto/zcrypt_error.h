@@ -26,7 +26,7 @@
 #ifndef _ZCRYPT_ERROR_H_
 #define _ZCRYPT_ERROR_H_
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include "zcrypt_debug.h"
 #include "zcrypt_api.h"
 

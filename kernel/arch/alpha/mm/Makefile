@@ -1,5 +1,5 @@
 #
-# Makefile for the linux alpha-specific parts of the memory manager.
+# Makefile for the beep alpha-specific parts of the memory manager.
 #
 
 ccflags-y := -Werror

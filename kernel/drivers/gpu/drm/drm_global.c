@@ -28,9 +28,9 @@
  * Authors: Thomas Hellstrom <thellstrom-at-vmware-dot-com>
  */
 
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <drm/drm_global.h>
 
 struct drm_global_item {

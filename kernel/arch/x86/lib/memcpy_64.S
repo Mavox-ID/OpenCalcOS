@@ -1,6 +1,6 @@
 /* Copyright 2002 Andi Kleen */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #include <asm/cpufeature.h>
 #include <asm/dwarf2.h>

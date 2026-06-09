@@ -1,22 +1,22 @@
-/* linux/arch/arm/mach-s3c2443/dma.c
+/* beep/arch/arm/mach-s3c2443/dma.c
  *
  * Copyright (c) 2007 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C2443 DMA selection
  *
- * http://armlinux.simtec.co.uk/
+ * http://armbeep.simtec.co.uk/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/serial_core.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/serial_core.h>
+#include <beep/io.h>
 
 #include <mach/dma.h>
 

@@ -10,8 +10,8 @@
 #include "dvb_filter.h"
 #include "dvb_net.h"
 
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
 
 #include <media/saa7146.h>
 

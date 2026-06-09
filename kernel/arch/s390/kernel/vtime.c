@@ -5,16 +5,16 @@
  *    Author(s): Jan Glauber <jan.glauber@de.ibm.com>
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/notifier.h>
-#include <linux/kprobes.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/timex.h>
-#include <linux/types.h>
-#include <linux/time.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
+#include <beep/kernel_stat.h>
+#include <beep/notifier.h>
+#include <beep/kprobes.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/timex.h>
+#include <beep/types.h>
+#include <beep/time.h>
+#include <beep/cpu.h>
+#include <beep/smp.h>
 
 #include <asm/irq_regs.h>
 #include <asm/cputime.h>

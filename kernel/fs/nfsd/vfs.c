@@ -10,24 +10,24 @@
  * dentry, don't worry--they have been taken care of.
  *
  * Copyright (C) 1995-1999 Olaf Kirch <okir@monad.swb.de>
- * Zerocpy NFS support (C) 2002 Hirokazu Takahashi <taka@valinux.co.jp>
+ * Zerocpy NFS support (C) 2002 Hirokazu Takahashi <taka@vabeep.co.jp>
  */
 
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/splice.h>
-#include <linux/fcntl.h>
-#include <linux/namei.h>
-#include <linux/delay.h>
-#include <linux/fsnotify.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/xattr.h>
-#include <linux/jhash.h>
-#include <linux/ima.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/splice.h>
+#include <beep/fcntl.h>
+#include <beep/namei.h>
+#include <beep/delay.h>
+#include <beep/fsnotify.h>
+#include <beep/posix_acl_xattr.h>
+#include <beep/xattr.h>
+#include <beep/jhash.h>
+#include <beep/ima.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
-#include <linux/exportfs.h>
-#include <linux/writeback.h>
+#include <beep/exportfs.h>
+#include <beep/writeback.h>
 
 #ifdef CONFIG_NFSD_V3
 #include "xdr3.h"

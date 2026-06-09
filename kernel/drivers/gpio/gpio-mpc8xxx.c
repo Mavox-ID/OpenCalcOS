@@ -8,15 +8,15 @@
  * kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
+#include <beep/irq.h>
 
 #define MPC8XXX_GPIO_PINS	32
 

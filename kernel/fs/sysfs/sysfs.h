@@ -2,16 +2,16 @@
  * fs/sysfs/sysfs.h - sysfs internal header file
  *
  * Copyright (c) 2001-3 Patrick Mochel
- * Copyright (c) 2007 SUSE Linux Products GmbH
+ * Copyright (c) 2007 SUSE Beep Products GmbH
  * Copyright (c) 2007 Tejun Heo <teheo@suse.de>
  *
  * This file is released under the GPLv2.
  */
 
-#include <linux/lockdep.h>
-#include <linux/kobject_ns.h>
-#include <linux/fs.h>
-#include <linux/rbtree.h>
+#include <beep/lockdep.h>
+#include <beep/kobject_ns.h>
+#include <beep/fs.h>
+#include <beep/rbtree.h>
 
 struct sysfs_open_dirent;
 
@@ -107,7 +107,7 @@ static inline unsigned int sysfs_type(struct sysfs_dirent *sd)
 
 /*
  * Return any namespace tags on this dirent.
- * enum kobj_ns_type is defined in linux/kobject.h
+ * enum kobj_ns_type is defined in beep/kobject.h
  */
 static inline enum kobj_ns_type sysfs_ns_type(struct sysfs_dirent *sd)
 {

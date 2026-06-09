@@ -25,8 +25,8 @@
 #include "xfs_acl.h"
 #include "xfs_vnodeops.h"
 
-#include <linux/posix_acl_xattr.h>
-#include <linux/xattr.h>
+#include <beep/posix_acl_xattr.h>
+#include <beep/xattr.h>
 
 
 static int
@@ -39,7 +39,7 @@ xfs_xattr_get(struct dentry *dentry, const char *name,
 	if (strcmp(name, "") == 0)
 		return -EINVAL;
 
-	/* Convert Linux syscall to XFS internal ATTR flags */
+	/* Convert Beep syscall to XFS internal ATTR flags */
 	if (!size) {
 		xflags |= ATTR_KERNOVAL;
 		value = NULL;
@@ -60,7 +60,7 @@ xfs_xattr_set(struct dentry *dentry, const char *name, const void *value,
 	if (strcmp(name, "") == 0)
 		return -EINVAL;
 
-	/* Convert Linux syscall to XFS internal ATTR flags */
+	/* Convert Beep syscall to XFS internal ATTR flags */
 	if (flags & XATTR_CREATE)
 		xflags |= ATTR_CREATE;
 	if (flags & XATTR_REPLACE)

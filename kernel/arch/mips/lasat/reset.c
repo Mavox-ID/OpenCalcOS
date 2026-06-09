@@ -17,8 +17,8 @@
  *
  * Reset the LASAT board.
  */
-#include <linux/kernel.h>
-#include <linux/pm.h>
+#include <beep/kernel.h>
+#include <beep/pm.h>
 
 #include <asm/reboot.h>
 #include <asm/lasat/lasat.h>

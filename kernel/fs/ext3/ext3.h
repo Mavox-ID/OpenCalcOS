@@ -3,7 +3,7 @@
  *
  * Copyright 1998--1999 Red Hat corp --- All Rights Reserved
  *
- * This file is part of the Linux kernel and is made available under
+ * This file is part of the Beep kernel and is made available under
  * the terms of the GNU General Public License, version 2, or at your
  * option, any later version, incorporated herein by reference.
  *
@@ -14,16 +14,16 @@
  *
  *  from
  *
- *  linux/include/linux/minix_fs.h
+ *  beep/include/beep/minix_fs.h
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/fs.h>
-#include <linux/jbd.h>
-#include <linux/magic.h>
-#include <linux/bug.h>
-#include <linux/blockgroup_lock.h>
+#include <beep/fs.h>
+#include <beep/jbd.h>
+#include <beep/magic.h>
+#include <beep/bug.h>
+#include <beep/blockgroup_lock.h>
 
 /*
  * The second extended filesystem constants/structures
@@ -270,7 +270,7 @@ struct ext3_inode {
 	union {
 		struct {
 			__u32  l_i_reserved1;
-		} linux1;
+		} beep1;
 		struct {
 			__u32  h_i_translator;
 		} hurd1;
@@ -291,7 +291,7 @@ struct ext3_inode {
 			__le16	l_i_uid_high;	/* these 2 fields    */
 			__le16	l_i_gid_high;	/* were reserved2[0] */
 			__u32	l_i_reserved2;
-		} linux2;
+		} beep2;
 		struct {
 			__u8	h_i_frag;	/* Fragment number */
 			__u8	h_i_fsize;	/* Fragment size */
@@ -313,14 +313,14 @@ struct ext3_inode {
 
 #define i_size_high	i_dir_acl
 
-#define i_reserved1	osd1.linux1.l_i_reserved1
-#define i_frag		osd2.linux2.l_i_frag
-#define i_fsize		osd2.linux2.l_i_fsize
+#define i_reserved1	osd1.beep1.l_i_reserved1
+#define i_frag		osd2.beep2.l_i_frag
+#define i_fsize		osd2.beep2.l_i_fsize
 #define i_uid_low	i_uid
 #define i_gid_low	i_gid
-#define i_uid_high	osd2.linux2.l_i_uid_high
-#define i_gid_high	osd2.linux2.l_i_gid_high
-#define i_reserved2	osd2.linux2.l_i_reserved2
+#define i_uid_high	osd2.beep2.l_i_uid_high
+#define i_gid_high	osd2.beep2.l_i_gid_high
+#define i_reserved2	osd2.beep2.l_i_reserved2
 
 /*
  * File system states
@@ -366,7 +366,7 @@ struct ext3_inode {
 						  * error in ordered mode */
 
 /* Compatibility, for having both ext2_fs.h and ext3_fs.h included at once */
-#ifndef _LINUX_EXT2_FS_H
+#ifndef _BEEP_EXT2_FS_H
 #define clear_opt(o, opt)		o &= ~EXT3_MOUNT_##opt
 #define set_opt(o, opt)			o |= EXT3_MOUNT_##opt
 #define test_opt(sb, opt)		(EXT3_SB(sb)->s_mount_opt & \
@@ -728,7 +728,7 @@ static inline void ext3_clear_inode_state(struct inode *inode, int bit)
 /*
  * Codes for operating systems
  */
-#define EXT3_OS_LINUX		0
+#define EXT3_OS_BEEP		0
 #define EXT3_OS_HURD		1
 #define EXT3_OS_MASIX		2
 #define EXT3_OS_FREEBSD		3
@@ -980,7 +980,7 @@ ext3_group_first_block_no(struct super_block *sb, unsigned long group_no)
  */
 
 /*
- * Ok, these declarations are also in <linux/kernel.h> but none of the
+ * Ok, these declarations are also in <beep/kernel.h> but none of the
  * ext3 source programs needs to include it so they are duplicated here.
  */
 # define NORET_TYPE    /**/

@@ -14,9 +14,9 @@
  * You should have received a copy of the GNU General Public License along with
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/io.h>
 
 #include <asm/smp_scu.h>
 #include <asm/hardware/gic.h>

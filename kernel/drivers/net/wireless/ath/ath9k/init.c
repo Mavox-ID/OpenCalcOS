@@ -16,10 +16,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/ath9k_platform.h>
-#include <linux/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/ath9k_platform.h>
+#include <beep/module.h>
 
 #include "ath9k.h"
 

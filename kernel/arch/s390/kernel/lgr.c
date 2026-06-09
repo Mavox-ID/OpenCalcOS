@@ -1,13 +1,13 @@
 /*
- * Linux Guest Relocation (LGR) detection
+ * Beep Guest Relocation (LGR) detection
  *
  * Copyright IBM Corp. 2012
- * Author(s): Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ * Author(s): Michael Holzheu <holzheu@beep.vnet.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
 #include <asm/facility.h>
 #include <asm/sysinfo.h>
 #include <asm/ebcdic.h>

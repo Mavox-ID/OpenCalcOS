@@ -25,9 +25,9 @@
 #ifndef _HYPERV_NET_H
 #define _HYPERV_NET_H
 
-#include <linux/list.h>
-#include <linux/hyperv.h>
-#include <linux/rndis.h>
+#include <beep/list.h>
+#include <beep/hyperv.h>
+#include <beep/rndis.h>
 
 /* Fwd declaration */
 struct hv_netvsc_packet;

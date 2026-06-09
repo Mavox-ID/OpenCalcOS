@@ -213,7 +213,7 @@ static inline int au1200_irq_to_gpio(int irq)
 }
 
 /*
- * GPIO1 block macros for common linux gpio functions.
+ * GPIO1 block macros for common beep gpio functions.
  */
 static inline void alchemy_gpio1_set_value(int gpio, int v)
 {
@@ -272,7 +272,7 @@ static inline int alchemy_gpio1_to_irq(int gpio)
 }
 
 /*
- * GPIO2 block macros for common linux GPIO functions. The 'gpio'
+ * GPIO2 block macros for common beep GPIO functions. The 'gpio'
  * parameter must be in range of ALCHEMY_GPIO2_BASE..ALCHEMY_GPIO2_MAX.
  */
 static inline void __alchemy_gpio2_mod_dir(int gpio, int to_out)
@@ -524,7 +524,7 @@ static inline int alchemy_irq_to_gpio(int irq)
 
 /**********************************************************************/
 
-/* Linux gpio framework integration.
+/* Beep gpio framework integration.
  *
  * 4 use cases of Au1000-Au1200 GPIOS:
  *(1) GPIOLIB=y, ALCHEMY_GPIO_INDIRECT=y:
@@ -533,7 +533,7 @@ static inline int alchemy_irq_to_gpio(int irq)
  *	2 (1 for Au1000) gpio_chips are registered.
  *
  *(3) GPIOLIB=n, ALCHEMY_GPIO_INDIRECT=y:
- *	the boards' gpio.h must provide	the linux gpio wrapper functions,
+ *	the boards' gpio.h must provide	the beep gpio wrapper functions,
  *
  *(4) GPIOLIB=n, ALCHEMY_GPIO_INDIRECT=n:
  *	inlinable gpio functions are provided which enable access to the
@@ -543,7 +543,7 @@ static inline int alchemy_irq_to_gpio(int irq)
  * Cases 1 and 3 are intended for boards which want to provide their own
  * GPIO namespace and -operations (i.e. for example you have 8 GPIOs
  * which are in part provided by spare Au1000 GPIO pins and in part by
- * an external FPGA but you still want them to be accssible in linux
+ * an external FPGA but you still want them to be accssible in beep
  * as gpio0-7. The board can of course use the alchemy_gpioX_* functions
  * as required).
  */

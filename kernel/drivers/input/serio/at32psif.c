@@ -7,18 +7,18 @@
  * under the terms of the GNU General Public License version 2 as published
  * by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/serio.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/serio.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 /* PSIF register offsets */
 #define PSIF_CR				0x00

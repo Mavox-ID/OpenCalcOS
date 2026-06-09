@@ -1,6 +1,6 @@
 #include "radeonfb.h"
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 #include "../edid.h"
 

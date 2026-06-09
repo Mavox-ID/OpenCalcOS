@@ -9,11 +9,11 @@
 #define _NET_DST_H
 
 #include <net/dst_ops.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/rcupdate.h>
-#include <linux/bug.h>
-#include <linux/jiffies.h>
+#include <beep/netdevice.h>
+#include <beep/rtnetlink.h>
+#include <beep/rcupdate.h>
+#include <beep/bug.h>
+#include <beep/jiffies.h>
 #include <net/neighbour.h>
 #include <asm/processor.h>
 
@@ -352,7 +352,7 @@ static inline void skb_tunnel_rx(struct sk_buff *skb, struct net_device *dev)
 }
 
 /* Children define the path of the packet through the
- * Linux networking.  Thus, destinations are stackable.
+ * Beep networking.  Thus, destinations are stackable.
  */
 
 static inline struct dst_entry *skb_dst_pop(struct sk_buff *skb)

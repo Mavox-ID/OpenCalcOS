@@ -7,17 +7,17 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/freezer.h>
-#include <linux/init.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmaengine.h>
+#include <beep/freezer.h>
+#include <beep/init.h>
+#include <beep/kthread.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/random.h>
+#include <beep/slab.h>
+#include <beep/wait.h>
 
 static unsigned int test_buf_size = 16384;
 module_param(test_buf_size, uint, S_IRUGO);

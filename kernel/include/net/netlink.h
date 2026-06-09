@@ -1,9 +1,9 @@
 #ifndef __NET_NETLINK_H
 #define __NET_NETLINK_H
 
-#include <linux/types.h>
-#include <linux/netlink.h>
-#include <linux/jiffies.h>
+#include <beep/types.h>
+#include <beep/netlink.h>
+#include <beep/jiffies.h>
 
 /* ========================================================================
  *         Netlink Messages and Attributes Interface (As Seen On TV)

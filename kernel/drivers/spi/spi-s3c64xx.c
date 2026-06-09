@@ -17,22 +17,22 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/spi/spi.h>
-#include <linux/gpio.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/workqueue.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/spi/spi.h>
+#include <beep/gpio.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
 
 #include <mach/dma.h>
-#include <linux/platform_data/spi-s3c64xx.h>
+#include <beep/platform_data/spi-s3c64xx.h>
 
 #define MAX_SPI_PORTS		3
 

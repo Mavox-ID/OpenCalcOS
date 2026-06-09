@@ -8,11 +8,11 @@
  * SuperH SH4-202 MicroDev board support.
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See beep/COPYING for more information.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/ioport.h>
 #include <video/s1d13xxxfb.h>
 #include <mach/microdev.h>
 #include <asm/io.h>
@@ -26,8 +26,8 @@ static struct resource smc91x_resources[] = {
 		.flags		= IORESOURCE_MEM,
 	},
 	[1] = {
-		.start		= MICRODEV_LINUX_IRQ_ETHERNET,
-		.end		= MICRODEV_LINUX_IRQ_ETHERNET,
+		.start		= MICRODEV_BEEP_IRQ_ETHERNET,
+		.end		= MICRODEV_BEEP_IRQ_ETHERNET,
 		.flags		= IORESOURCE_IRQ,
 	},
 };

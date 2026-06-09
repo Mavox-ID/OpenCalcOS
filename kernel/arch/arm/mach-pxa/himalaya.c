@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/himalaya.c
+ * beep/arch/arm/mach-pxa/himalaya.c
  *
  * Hardware definitions for the HTC Himalaya
  *
@@ -12,11 +12,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/fb.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/fb.h>
+#include <beep/platform_device.h>
 
 #include <video/w100fb.h>
 

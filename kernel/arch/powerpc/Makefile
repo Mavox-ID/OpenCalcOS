@@ -63,9 +63,9 @@ override CC	+= -m$(CONFIG_WORD_SIZE)
 override AR	:= GNUTARGET=elf$(CONFIG_WORD_SIZE)-powerpc $(AR)
 endif
 
-LDFLAGS_vmlinux-y := -Bstatic
-LDFLAGS_vmlinux-$(CONFIG_RELOCATABLE) := -pie
-LDFLAGS_vmlinux	:= $(LDFLAGS_vmlinux-y)
+LDFLAGS_vmbeep-y := -Bstatic
+LDFLAGS_vmbeep-$(CONFIG_RELOCATABLE) := -pie
+LDFLAGS_vmbeep	:= $(LDFLAGS_vmbeep-y)
 
 CFLAGS-$(CONFIG_PPC64)	:= -mminimal-toc -mtraceback=no -mcall-aixdesc
 CFLAGS-$(CONFIG_PPC32)	:= -ffixed-r2 -mmultiple
@@ -163,18 +163,18 @@ boot := arch/$(ARCH)/boot
 
 ifeq ($(CONFIG_RELOCATABLE),y)
 quiet_cmd_relocs_check = CALL    $<
-      cmd_relocs_check = perl $< "$(OBJDUMP)" "$(obj)/vmlinux"
+      cmd_relocs_check = perl $< "$(OBJDUMP)" "$(obj)/vmbeep"
 
 PHONY += relocs_check
-relocs_check: arch/powerpc/relocs_check.pl vmlinux
+relocs_check: arch/powerpc/relocs_check.pl vmbeep
 	$(call cmd,relocs_check)
 
 zCalc: relocs_check
 endif
 
-$(BOOT_TARGETS1): vmlinux
+$(BOOT_TARGETS1): vmbeep
 	$(Q)$(MAKE) ARCH=ppc64 $(build)=$(boot) $(patsubst %,$(boot)/%,$@)
-$(BOOT_TARGETS2): vmlinux
+$(BOOT_TARGETS2): vmbeep
 	$(Q)$(MAKE) ARCH=ppc64 $(build)=$(boot) $(patsubst %,$(boot)/%,$@)
 
 

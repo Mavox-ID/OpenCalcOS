@@ -60,14 +60,14 @@
 		led@2 {
 			label = "beaglebone:green:heartbeat";
 			gpios = <&gpio2 21 0>;
-			linux,default-trigger = "heartbeat";
+			beep,default-trigger = "heartbeat";
 			default-state = "off";
 		};
 
 		led@3 {
 			label = "beaglebone:green:mmc0";
 			gpios = <&gpio2 22 0>;
-			linux,default-trigger = "mmc0";
+			beep,default-trigger = "mmc0";
 			default-state = "off";
 		};
 

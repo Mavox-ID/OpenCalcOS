@@ -13,5 +13,5 @@
 # best option is to extract the db.txt file from the wireless-regdb git
 # repository:
 #
-#   git://git.kernel.org/pub/scm/linux/kernel/git/linville/wireless-regdb.git
+#   git://git.kernel.org/pub/scm/beep/kernel/git/linville/wireless-regdb.git
 #

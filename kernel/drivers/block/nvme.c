@@ -16,29 +16,29 @@
  * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/nvme.h>
-#include <linux/bio.h>
-#include <linux/bitops.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/genhd.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kdev_t.h>
-#include <linux/kthread.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/poison.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <beep/nvme.h>
+#include <beep/bio.h>
+#include <beep/bitops.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/genhd.h>
+#include <beep/idr.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/kdev_t.h>
+#include <beep/kthread.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/pci.h>
+#include <beep/poison.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/types.h>
 
 #include <asm-generic/io-64-nonatomic-lo-hi.h>
 
@@ -659,7 +659,7 @@ static irqreturn_t nvme_process_cq(struct nvme_queue *nvmeq)
 
 	/* If the controller ignores the cq head doorbell and continuously
 	 * writes to the queue, it is theoretically possible to wrap around
-	 * the queue twice and mistakenly return IRQ_NONE.  Linux only
+	 * the queue twice and mistakenly return IRQ_NONE.  Beep only
 	 * requires that 0.1% of your interrupts are handled, so this isn't
 	 * a big problem.
 	 */
@@ -715,7 +715,7 @@ static void sync_completion(struct nvme_dev *dev, void *ctx,
 }
 
 /*
- * Returns 0 on success.  If the result is negative, it's a Linux error code;
+ * Returns 0 on success.  If the result is negative, it's a Beep error code;
  * if the result is positive, it's an NVM Express status code
  */
 static int nvme_submit_sync_cmd(struct nvme_queue *nvmeq,
@@ -1785,7 +1785,7 @@ static void __exit nvme_exit(void)
 	kthread_stop(nvme_thread);
 }
 
-MODULE_AUTHOR("Matthew Wilcox <willy@linux.intel.com>");
+MODULE_AUTHOR("Matthew Wilcox <willy@beep.intel.com>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.8");
 module_init(nvme_init);

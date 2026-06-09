@@ -4,7 +4,7 @@
  */
 
 /*
- * Acorn RiscPC PS/2 keyboard controller driver for Linux/ARM
+ * Acorn RiscPC PS/2 keyboard controller driver for Beep/ARM
  */
 
 /*
@@ -27,14 +27,14 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/serio.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/serio.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 #include <mach/hardware.h>
 #include <asm/hardware/iomd.h>

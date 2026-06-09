@@ -20,17 +20,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/input/auo-pixcir-ts.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/jiffies.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/input/auo-pixcir-ts.h>
 
 /*
  * Coordinate calculation:

@@ -5,10 +5,10 @@
  *
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/smsc911x.h>
+#include <beep/module.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/smsc911x.h>
 
 static struct smsc911x_platform_config sead3_smsc911x_data = {
 	.irq_polarity = SMSC911X_IRQ_POLARITY_ACTIVE_LOW,

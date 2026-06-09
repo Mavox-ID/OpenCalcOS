@@ -9,26 +9,26 @@
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/circ_buf.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_data/macb.h>
-#include <linux/platform_device.h>
-#include <linux/phy.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_net.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/clk.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/circ_buf.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_data/macb.h>
+#include <beep/platform_device.h>
+#include <beep/phy.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_net.h>
+#include <beep/pinctrl/consumer.h>
 
 #include "macb.h"
 

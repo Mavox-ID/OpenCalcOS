@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2004-2006 Atmel Corporation
  *
- * Based on linux/arch/sh/kernel/signal.c
+ * Based on beep/arch/sh/kernel/signal.c
  *  Copyright (C) 1999, 2000  Niibe Yutaka & Kaz Kojima
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -10,12 +10,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/tracehook.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/unistd.h>
+#include <beep/tracehook.h>
 
 #include <asm/uaccess.h>
 #include <asm/ucontext.h>

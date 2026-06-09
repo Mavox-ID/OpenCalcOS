@@ -1,10 +1,10 @@
 /*
  * This code is derived from the VIA reference driver (copyright message
  * below) provided to Red Hat by VIA Networking Technologies, Inc. for
- * addition to the Linux kernel.
+ * addition to the Beep kernel.
  *
  * The code has been merged into one source file, cleaned up to follow
- * Linux coding style,  ported to the Linux 2.6 kernel tree and cleaned
+ * Beep coding style,  ported to the Beep 2.6 kernel tree and cleaned
  * for 64bit hardware platforms.
  *
  * TODO
@@ -16,7 +16,7 @@
  *
  * This source has not been verified for use in safety critical systems.
  *
- * Please direct queries about the revamped driver to the linux-kernel
+ * Please direct queries about the revamped driver to the beep-kernel
  * list not VIA.
  *
  * Original code:
@@ -42,40 +42,40 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/wait.h>
-#include <linux/io.h>
-#include <linux/if.h>
-#include <linux/uaccess.h>
-#include <linux/proc_fs.h>
-#include <linux/inetdevice.h>
-#include <linux/reboot.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/in.h>
-#include <linux/if_arp.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/crc-ccitt.h>
-#include <linux/crc32.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/bitops.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/string.h>
+#include <beep/wait.h>
+#include <beep/io.h>
+#include <beep/if.h>
+#include <beep/uaccess.h>
+#include <beep/proc_fs.h>
+#include <beep/inetdevice.h>
+#include <beep/reboot.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/in.h>
+#include <beep/if_arp.h>
+#include <beep/if_vlan.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/udp.h>
+#include <beep/crc-ccitt.h>
+#include <beep/crc32.h>
 
 #include "via-velocity.h"
 
@@ -2458,7 +2458,7 @@ static struct net_device_stats *velocity_get_stats(struct net_device *dev)
 	dev->stats.rx_errors = vptr->mib_counter[HW_MIB_ifRxErrorPkts];
 	dev->stats.rx_length_errors = vptr->mib_counter[HW_MIB_ifInRangeLengthErrors];
 
-//  unsigned long   rx_dropped;     /* no space in linux buffers    */
+//  unsigned long   rx_dropped;     /* no space in beep buffers    */
 	dev->stats.collisions = vptr->mib_counter[HW_MIB_ifTxEtherCollisions];
 	/* detailed rx_errors: */
 //  unsigned long   rx_length_errors;

@@ -7,8 +7,8 @@
  *	- Channing Corn (tests & fixes),
  *	- Andrew D. Balsa (code cleanup).
  */
-#include <linux/init.h>
-#include <linux/utsname.h>
+#include <beep/init.h>
+#include <beep/utsname.h>
 #include <asm/bugs.h>
 #include <asm/processor.h>
 #include <asm/processor-flags.h>

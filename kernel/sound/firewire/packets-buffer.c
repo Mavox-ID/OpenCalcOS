@@ -5,9 +5,9 @@
  * Licensed under the terms of the GNU General Public License, version 2.
  */
 
-#include <linux/firewire.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <beep/firewire.h>
+#include <beep/export.h>
+#include <beep/slab.h>
 #include "packets-buffer.h"
 
 /**

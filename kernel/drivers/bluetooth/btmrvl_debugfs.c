@@ -18,8 +18,8 @@
  * this warranty disclaimer.
  **/
 
-#include <linux/debugfs.h>
-#include <linux/slab.h>
+#include <beep/debugfs.h>
+#include <beep/slab.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

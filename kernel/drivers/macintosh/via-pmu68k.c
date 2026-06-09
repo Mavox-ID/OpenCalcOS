@@ -13,24 +13,24 @@
  * Based largely on the PowerMac PMU code by Paul Mackerras and
  * Fabio Riccardi.
  *
- * Also based on the PMU driver from MkLinux by Apple Computer, Inc.
+ * Also based on the PMU driver from MkBeep by Apple Computer, Inc.
  * and the Open Software Foundation, Inc.
  */
 
 #include <stdarg.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/miscdevice.h>
-#include <linux/blkdev.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/miscdevice.h>
+#include <beep/blkdev.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
 
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/cuda.h>
+#include <beep/adb.h>
+#include <beep/pmu.h>
+#include <beep/cuda.h>
 
 #include <asm/macintosh.h>
 #include <asm/macints.h>

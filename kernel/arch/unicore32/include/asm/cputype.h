@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/asm/cputype.h
+ * beep/arch/unicore32/include/asm/cputype.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -12,7 +12,7 @@
 #ifndef __UNICORE_CPUTYPE_H__
 #define __UNICORE_CPUTYPE_H__
 
-#include <linux/stringify.h>
+#include <beep/stringify.h>
 
 #define CPUID_CPUID	0
 #define CPUID_CACHETYPE	1

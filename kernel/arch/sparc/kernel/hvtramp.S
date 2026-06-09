@@ -3,7 +3,7 @@
  * Copyright (C) 2007, 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 
 #include <asm/thread_info.h>
 #include <asm/hypervisor.h>
@@ -22,7 +22,7 @@
 
 	/* This code executes directly out of the hypervisor
 	 * with physical addressing (va==pa).  %o0 contains
-	 * our client argument which for Linux points to
+	 * our client argument which for Beep points to
 	 * a descriptor data structure which defines the
 	 * MMU entries we need to load up.
 	 *

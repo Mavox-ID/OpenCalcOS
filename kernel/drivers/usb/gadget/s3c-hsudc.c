@@ -1,4 +1,4 @@
-/* linux/drivers/usb/gadget/s3c-hsudc.c
+/* beep/drivers/usb/gadget/s3c-hsudc.c
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/
@@ -14,24 +14,24 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
-#include <linux/prefetch.h>
-#include <linux/platform_data/s3c-hsudc.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb/otg.h>
+#include <beep/prefetch.h>
+#include <beep/platform_data/s3c-hsudc.h>
+#include <beep/regulator/consumer.h>
+#include <beep/pm_runtime.h>
 
 #include <mach/regs-s3c2443-clock.h>
 

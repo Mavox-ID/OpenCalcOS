@@ -1,17 +1,17 @@
 /*
- * linux/arch/sh/boards/sh03/rtc.c -- CTP/PCI-SH03 on-chip RTC support
+ * beep/arch/sh/boards/sh03/rtc.c -- CTP/PCI-SH03 on-chip RTC support
  *
  *  Copyright (C) 2004  Saito.K & Jeanne(ksaito@interface.co.jp)
  *
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/spinlock.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/time.h>
+#include <beep/bcd.h>
+#include <beep/rtc.h>
+#include <beep/spinlock.h>
 #include <asm/io.h>
 #include <asm/rtc.h>
 

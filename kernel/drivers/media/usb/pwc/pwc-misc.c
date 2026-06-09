@@ -1,4 +1,4 @@
-/* Linux driver for Philips webcam
+/* Beep driver for Philips webcam
    Various miscellaneous functions and tables.
    (C) 1999-2003 Nemosoft Unv.
    (C) 2004-2006 Luc Saillard (luc@saillard.org)

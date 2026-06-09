@@ -6,10 +6,10 @@
  * for more details.
  */
 
-#include <linux/kgdb.h>
-#include <linux/kdebug.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <beep/kgdb.h>
+#include <beep/kdebug.h>
+#include <beep/irq.h>
+#include <beep/io.h>
 #include <asm/cacheflush.h>
 #include <asm/asm-offsets.h>
 #include <asm/pvr.h>

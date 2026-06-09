@@ -11,8 +11,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/clk.h>
-#include <linux/list.h>
+#include <beep/clk.h>
+#include <beep/list.h>
 
 
 void at32_clk_register(struct clk *clk);

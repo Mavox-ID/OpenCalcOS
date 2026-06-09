@@ -16,16 +16,16 @@
  * as published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/string.h>
+#include <beep/module.h>
+#include <beep/leds.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/input.h>
+#include <beep/gpio_keys.h>
 
 #include <asm/geode.h>
 

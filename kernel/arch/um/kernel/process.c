@@ -1,24 +1,24 @@
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Copyright 2003 PathScale, Inc.
  * Licensed under the GPL
  */
 
-#include <linux/stddef.h>
-#include <linux/err.h>
-#include <linux/hardirq.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/personality.h>
-#include <linux/proc_fs.h>
-#include <linux/ptrace.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/tick.h>
-#include <linux/threads.h>
-#include <linux/tracehook.h>
+#include <beep/stddef.h>
+#include <beep/err.h>
+#include <beep/hardirq.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/personality.h>
+#include <beep/proc_fs.h>
+#include <beep/ptrace.h>
+#include <beep/random.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/tick.h>
+#include <beep/threads.h>
+#include <beep/tracehook.h>
 #include <asm/current.h>
 #include <asm/pgtable.h>
 #include <asm/mmu_context.h>

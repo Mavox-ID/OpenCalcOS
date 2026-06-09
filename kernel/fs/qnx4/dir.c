@@ -1,5 +1,5 @@
 /*
- * QNX4 file system, Linux implementation.
+ * QNX4 file system, Beep implementation.
  *
  * Version : 0.2.1
  *
@@ -8,10 +8,10 @@
  * History :
  *
  * 28-05-1998 by Richard Frowijn : first release.
- * 20-06-1998 by Frank Denis : Linux 2.1.99+ & dcache support.
+ * 20-06-1998 by Frank Denis : Beep 2.1.99+ & dcache support.
  */
 
-#include <linux/buffer_head.h>
+#include <beep/buffer_head.h>
 #include "qnx4.h"
 
 static int qnx4_readdir(struct file *filp, void *dirent, filldir_t filldir)

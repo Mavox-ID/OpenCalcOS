@@ -2,10 +2,10 @@
  *
  * Copyright (C) 2006 David S. Miller (davem@davemloft.net)
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/thread_info.h>
-#include <linux/perf_event.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/thread_info.h>
+#include <beep/perf_event.h>
 
 #include <asm/ptrace.h>
 #include <asm/pstate.h>

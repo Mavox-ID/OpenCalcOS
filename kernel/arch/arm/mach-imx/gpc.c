@@ -10,11 +10,11 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
 #include <asm/hardware/gic.h>
 
 #define GPC_IMR1		0x008

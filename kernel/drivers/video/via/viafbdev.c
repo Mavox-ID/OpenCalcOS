@@ -19,12 +19,12 @@
  * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/via-core.h>
-#include <linux/via_i2c.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/via-core.h>
+#include <beep/via_i2c.h>
 #include <asm/olpc.h>
 
 #define _MASTER_FILE

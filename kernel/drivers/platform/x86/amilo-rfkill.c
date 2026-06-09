@@ -13,13 +13,13 @@
  * (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/dmi.h>
-#include <linux/i8042.h>
-#include <linux/io.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/rfkill.h>
+#include <beep/module.h>
+#include <beep/dmi.h>
+#include <beep/i8042.h>
+#include <beep/io.h>
+#include <beep/moduleparam.h>
+#include <beep/platform_device.h>
+#include <beep/rfkill.h>
 
 /*
  * These values were obtained from disassembling and debugging the

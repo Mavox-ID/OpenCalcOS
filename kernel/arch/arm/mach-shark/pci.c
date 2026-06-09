@@ -1,14 +1,14 @@
 /*
- *  linux/arch/arm/mach-shark/pci.c
+ *  beep/arch/arm/mach-shark/pci.c
  *
  *  PCI bios-type initialisation for PCI machines
  *
  *  Bits taken from various places.
  */
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/io.h>
 #include <video/vga.h>
 
 #include <asm/irq.h>

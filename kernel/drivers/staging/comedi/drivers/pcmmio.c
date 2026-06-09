@@ -2,7 +2,7 @@
     comedi/drivers/pcmmio.c
     Driver for Winsystems PC-104 based multifunction IO board.
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2007 Calin A. Culianu <calin@ajvar.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -76,11 +76,11 @@ Configuration Options:
 	leave out if you don't need this feature)
 */
 
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 #include "../comedidev.h"
 #include "pcm_common.h"
-#include <linux/pci.h>		/* for PCI devices */
+#include <beep/pci.h>		/* for PCI devices */
 
 /* This stuff is all from pcmuio.c -- it refers to the DIO subdevices only */
 #define CHANS_PER_PORT   8

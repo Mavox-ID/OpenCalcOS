@@ -8,11 +8,11 @@
  *
  *  Copyright (C) 2006 Red Hat, Inc., Ingo Molnar <mingo@redhat.com>
  */
-#include <linux/rwsem.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/debug_locks.h>
+#include <beep/rwsem.h>
+#include <beep/mutex.h>
+#include <beep/export.h>
+#include <beep/spinlock.h>
+#include <beep/debug_locks.h>
 
 /*
  * We want to turn all lock-debugging facilities on/off at once,

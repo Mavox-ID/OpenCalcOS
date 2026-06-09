@@ -1,8 +1,8 @@
 #ifndef _ASM_X86_SMP_H
 #define _ASM_X86_SMP_H
 #ifndef __ASSEMBLY__
-#include <linux/cpumask.h>
-#include <linux/init.h>
+#include <beep/cpumask.h>
+#include <beep/init.h>
 #include <asm/percpu.h>
 
 /*

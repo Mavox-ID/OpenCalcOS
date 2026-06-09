@@ -4,7 +4,7 @@
 #ifndef _ASM_S390_CIO_H_
 #define _ASM_S390_CIO_H_
 
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 #include <asm/types.h>
 
 #define LPM_ANYPATH 0xff

@@ -1,8 +1,8 @@
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/isdn/capilli.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/isdn/capilli.h>
 
 #define DBG(format, arg...) do {					\
 		printk(KERN_DEBUG "%s: " format "\n" , __func__ , ## arg); \

@@ -1,4 +1,4 @@
-/* e2100.c: A Cabletron E2100 series ethernet driver for linux. */
+/* e2100.c: A Cabletron E2100 series ethernet driver for beep. */
 /*
 	Written 1993-1994 by Donald Becker.
 
@@ -36,16 +36,16 @@
 static const char version[] =
 	"e2100.c:v1.01 7/21/94 Donald Becker (becker@cesdis.gsfc.nasa.gov)\n";
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
 
 #include <asm/io.h>
 

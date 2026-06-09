@@ -1,5 +1,5 @@
 /* 
- * Linux/PA-RISC Project (http://www.parisc-linux.org/)
+ * Beep/PA-RISC Project (http://www.parisc-beep.org/)
  * 
  * System call entry code Copyright (c) Matthew Wilcox 1999 <willy@bofh.ai>
  * Licensed under the GNU GPL.
@@ -16,7 +16,7 @@
 #include <asm/assembly.h>
 #include <asm/processor.h>
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 	/* We fill the empty parts of the gateway page with
  	 * something that will kill the kernel or a
@@ -31,7 +31,7 @@
 	.import syscall_exit,code
 	.import syscall_exit_rfi,code
 
-	/* Linux gateway page is aliased to virtual page 0 in the kernel
+	/* Beep gateway page is aliased to virtual page 0 in the kernel
 	 * address space. Since it is a gateway page it cannot be
 	 * dereferenced, so null pointers will still fault. We start
 	 * the actual entry point at 0x100. We put break instructions
@@ -40,7 +40,7 @@
 	 */
 
 	.align PAGE_SIZE
-ENTRY(linux_gateway_page)
+ENTRY(beep_gateway_page)
 
         /* ADDRESS 0x00 to 0xb0 = 176 bytes / 4 bytes per insn = 44 insns */
 	.rept 44
@@ -77,7 +77,7 @@ set_thread_pointer:
 
 /* This address must remain fixed at 0x100 for glibc's syscalls to work */
 	.align 256
-linux_gateway_entry:
+beep_gateway_entry:
 	gate	.+8, %r0			/* become privileged */
 	mtsp	%r0,%sr4			/* get kernel space into sr4 */
 	mtsp	%r0,%sr5			/* get kernel space into sr5 */
@@ -199,7 +199,7 @@ linux_gateway_entry:
 	ldil	L%sys_call_table, %r1
 	ldo     R%sys_call_table(%r1), %r19
 #endif	
-	comiclr,>>	__NR_Linux_syscalls, %r20, %r0
+	comiclr,>>	__NR_Beep_syscalls, %r20, %r0
 	b,n	.Lsyscall_nosys
 	
 	LDREGX  %r20(%r19), %r19
@@ -315,7 +315,7 @@ tracesys_next:
 	ldo	-16(%r30),%r29			/* Reference param save area */
 #endif
 
-	comiclr,>>=	__NR_Linux_syscalls, %r20, %r0
+	comiclr,>>=	__NR_Beep_syscalls, %r20, %r0
 	b,n	.Lsyscall_nosys
 
 	LDREGX  %r20(%r19), %r19
@@ -623,20 +623,20 @@ cas_action:
 	   the other for the store. Either return -EFAULT.
 	   Each of the entries must be relocated. */
 	.section __ex_table,"aw"
-	ASM_ULONG_INSN (1b - linux_gateway_page), (3b - linux_gateway_page)
-	ASM_ULONG_INSN (2b - linux_gateway_page), (3b - linux_gateway_page)
+	ASM_ULONG_INSN (1b - beep_gateway_page), (3b - beep_gateway_page)
+	ASM_ULONG_INSN (2b - beep_gateway_page), (3b - beep_gateway_page)
 	.previous
 
 
 	/* Make sure nothing else is placed on this page */
 	.align PAGE_SIZE
-END(linux_gateway_page)
-ENTRY(end_linux_gateway_page)
+END(beep_gateway_page)
+ENTRY(end_beep_gateway_page)
 
-	/* Relocate symbols assuming linux_gateway_page is mapped
+	/* Relocate symbols assuming beep_gateway_page is mapped
 	   to virtual address 0x0 */
 
-#define LWS_ENTRY(_name_) ASM_ULONG_INSN (lws_##_name_ - linux_gateway_page)
+#define LWS_ENTRY(_name_) ASM_ULONG_INSN (lws_##_name_ - beep_gateway_page)
 
 	.section .rodata,"a"
 

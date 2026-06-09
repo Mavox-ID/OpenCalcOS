@@ -33,7 +33,7 @@
 struct tioca_dmamap{
 	struct list_head	cad_list;	/* headed by ca_list */
 
-	dma_addr_t		cad_dma_addr;	/* Linux dma handle */
+	dma_addr_t		cad_dma_addr;	/* Beep dma handle */
 	uint			cad_gart_entry; /* start entry in ca_gart_pagemap */
 	uint			cad_gart_size;	/* #entries for this map */
 };

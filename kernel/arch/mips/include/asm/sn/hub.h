@@ -1,8 +1,8 @@
 #ifndef __ASM_SN_HUB_H
 #define __ASM_SN_HUB_H
 
-#include <linux/types.h>
-#include <linux/cpumask.h>
+#include <beep/types.h>
+#include <beep/cpumask.h>
 #include <asm/sn/types.h>
 #include <asm/sn/io.h>
 #include <asm/sn/klkernvars.h>

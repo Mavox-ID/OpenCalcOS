@@ -31,18 +31,18 @@
 
 #undef DEBUG
 
-#include <linux/console.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/major.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <beep/console.h>
+#include <beep/ctype.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/major.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/sysrq.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
 #include <asm/hvcall.h>
 #include <asm/hvconsole.h>
 #include <asm/prom.h>

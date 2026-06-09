@@ -18,8 +18,8 @@
 #ifdef CONFIG_SMP
 
 #include <asm/processor.h>
-#include <linux/cpumask.h>
-#include <linux/irqreturn.h>
+#include <beep/cpumask.h>
+#include <beep/irqreturn.h>
 #include <hv/hypervisor.h>
 
 /* Set up this tile to support receiving hypervisor messages */
@@ -117,7 +117,7 @@ static inline int hv_lotar_to_cpu(HV_LOTAR lotar)
 }
 
 /*
- * Extension of <linux/cpumask.h> functionality when you just want
+ * Extension of <beep/cpumask.h> functionality when you just want
  * to express a mask or suppression or inclusion region without
  * being too concerned about exactly which cpus are valid in that region.
  */

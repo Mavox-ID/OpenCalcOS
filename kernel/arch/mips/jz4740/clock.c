@@ -13,14 +13,14 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/clk.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/clk.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/err.h>
 
 #include <asm/mach-jz4740/clock.h>
 #include <asm/mach-jz4740/base.h>

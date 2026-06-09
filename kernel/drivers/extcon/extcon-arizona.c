@@ -14,22 +14,22 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/extcon.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/input.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/regulator/consumer.h>
+#include <beep/extcon.h>
 
-#include <linux/mfd/arizona/core.h>
-#include <linux/mfd/arizona/pdata.h>
-#include <linux/mfd/arizona/registers.h>
+#include <beep/mfd/arizona/core.h>
+#include <beep/mfd/arizona/pdata.h>
+#include <beep/mfd/arizona/registers.h>
 
 #define ARIZONA_NUM_BUTTONS 6
 

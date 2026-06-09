@@ -1,4 +1,4 @@
-/* mac89x0.c: A Crystal Semiconductor CS89[02]0 driver for linux. */
+/* mac89x0.c: A Crystal Semiconductor CS89[02]0 driver for beep. */
 /*
 	Written 1996 by Russell Nelson, with reference to skeleton.c
 	written 1993-1994 by Donald Becker.
@@ -12,7 +12,7 @@
   Changelog:
 
   Mike Cruse        : mcruse@cti-ltd.com
-                    : Changes for Linux 2.0 compatibility.
+                    : Changes for Beep 2.0 compatibility.
                     : Added dev_id parameter in net_interrupt(),
                     : request_irq() and free_irq(). Just NULL for now.
 
@@ -23,7 +23,7 @@
 
   Mike Cruse        : Rewrote init_module() and cleanup_module using 8390.c
                     : as an example. Disabled autoprobing in init_module(),
-                    : not a good thing to do to other devices while Linux
+                    : not a good thing to do to other devices while Beep
                     : is running from all accounts.
 
   Alan Cox          : Removed 1.2 support, added 2.1 extra counters.
@@ -71,7 +71,7 @@ static char *version =
 
 /* Always include 'config.h' first in case the user wants to turn on
    or override something. */
-#include <linux/module.h>
+#include <beep/module.h>
 
 /*
   Sources:
@@ -82,22 +82,22 @@ static char *version =
 
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/nubus.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/in.h>
+#include <beep/string.h>
+#include <beep/nubus.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/delay.h>
+#include <beep/bitops.h>
+#include <beep/gfp.h>
 
 #include <asm/io.h>
 #include <asm/hwtest.h>

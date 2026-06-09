@@ -6,7 +6,7 @@
  * for more details.
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/txx9/generic.h>
 #include <asm/txx9/rbtx4939.h>
 

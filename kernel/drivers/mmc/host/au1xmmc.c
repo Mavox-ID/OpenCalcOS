@@ -1,5 +1,5 @@
 /*
- * linux/drivers/mmc/host/au1xmmc.c - AU1XX0 MMC driver
+ * beep/drivers/mmc/host/au1xmmc.c - AU1XX0 MMC driver
  *
  *  Copyright (c) 2005, Advanced Micro Devices, Inc.
  *
@@ -32,16 +32,16 @@
  * (the low to high transition will not occur).
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/leds.h>
-#include <linux/mmc/host.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/scatterlist.h>
+#include <beep/leds.h>
+#include <beep/mmc/host.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 #include <asm/mach-au1x00/au1000.h>

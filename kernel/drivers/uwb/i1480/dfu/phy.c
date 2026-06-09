@@ -26,10 +26,10 @@
  * We just send the data through the MPI interface using HWA-like
  * commands and then reset the PHY to make sure it is ok.
  */
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/usb/wusb.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/firmware.h>
+#include <beep/usb/wusb.h>
 #include "i1480-dfu.h"
 
 

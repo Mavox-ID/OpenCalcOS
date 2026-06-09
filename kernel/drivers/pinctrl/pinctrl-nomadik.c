@@ -10,27 +10,27 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/slab.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/slab.h>
+#include <beep/of_device.h>
+#include <beep/pinctrl/pinctrl.h>
+#include <beep/pinctrl/pinmux.h>
+#include <beep/pinctrl/pinconf.h>
 /* Since we request GPIOs from ourself */
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_data/pinctrl-nomadik.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/platform_data/pinctrl-nomadik.h>
 #include <asm/mach/irq.h>
 #include <mach/irqs.h>
 #include "pinctrl-nomadik.h"
@@ -537,7 +537,7 @@ static int __nmk_config_pins(pin_cfg_t *cfgs, int num, bool sleep)
  * and its sleep mode based on the specified configuration.  The @cfg is
  * usually one of the SoC specific macros defined in mach/<soc>-pins.h.  These
  * are constructed using, and can be further enhanced with, the macros in
- * <linux/platform_data/pinctrl-nomadik.h>
+ * <beep/platform_data/pinctrl-nomadik.h>
  *
  * If a pin's mode is set to GPIO, it is configured as an input to avoid
  * side-effects.  The gpio can be manipulated later using standard GPIO API
@@ -1094,7 +1094,7 @@ static int nmk_gpio_to_irq(struct gpio_chip *chip, unsigned offset)
 
 #ifdef CONFIG_DEBUG_FS
 
-#include <linux/seq_file.h>
+#include <beep/seq_file.h>
 
 static void nmk_gpio_dbg_show_one(struct seq_file *s,
 	struct pinctrl_dev *pctldev, struct gpio_chip *chip,

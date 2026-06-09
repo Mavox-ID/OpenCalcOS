@@ -3,16 +3,16 @@
  * Switcher and analyzes the return, such as determining if the Guest wants the
  * Host to do something.  This file also contains useful helper routines.
 :*/
-#include <linux/module.h>
-#include <linux/stringify.h>
-#include <linux/stddef.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/cpu.h>
-#include <linux/freezer.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/stringify.h>
+#include <beep/stddef.h>
+#include <beep/io.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/cpu.h>
+#include <beep/freezer.h>
+#include <beep/highmem.h>
+#include <beep/slab.h>
 #include <asm/paravirt.h>
 #include <asm/pgtable.h>
 #include <asm/uaccess.h>

@@ -7,19 +7,19 @@
  * the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/idr.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/idr.h>
+#include <beep/err.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/trigger.h>
 #include "iio_core.h"
 #include "iio_core_trigger.h"
-#include <linux/iio/trigger_consumer.h>
+#include <beep/iio/trigger_consumer.h>
 
 /* RFC - Question of approach
  * Make the common case (single sensor single trigger)

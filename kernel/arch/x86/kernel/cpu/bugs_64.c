@@ -3,8 +3,8 @@
  *  Copyright (C) 2000  SuSE
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
 #include <asm/alternative.h>
 #include <asm/bugs.h>
 #include <asm/processor.h>

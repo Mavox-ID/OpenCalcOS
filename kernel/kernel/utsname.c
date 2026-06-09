@@ -9,13 +9,13 @@
  *  License.
  */
 
-#include <linux/export.h>
-#include <linux/uts.h>
-#include <linux/utsname.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/user_namespace.h>
-#include <linux/proc_fs.h>
+#include <beep/export.h>
+#include <beep/uts.h>
+#include <beep/utsname.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/user_namespace.h>
+#include <beep/proc_fs.h>
 
 static struct uts_namespace *create_uts_ns(void)
 {

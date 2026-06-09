@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-versatile/core.h
+ *  beep/arch/arm/mach-versatile/core.h
  *
  *  Copyright (C) 2004 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd
@@ -22,8 +22,8 @@
 #ifndef __ASM_ARCH_VERSATILE_H
 #define __ASM_ARCH_VERSATILE_H
 
-#include <linux/amba/bus.h>
-#include <linux/of_platform.h>
+#include <beep/amba/bus.h>
+#include <beep/of_platform.h>
 
 extern void __init versatile_init(void);
 extern void __init versatile_init_early(void);

@@ -1,6 +1,6 @@
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *  Rewritten by Cort Dougan (cort@cs.nmt.edu) for PReP
  *    Copyright (C) 1996 Cort Dougan <cort@cs.nmt.edu>
  *  Adapted for Power Macintosh by Paul Mackerras.
@@ -65,7 +65,7 @@ _GLOBAL(hash_page)
 	bne-	10b
 	isync
 #endif
-	/* Get PTE (linux-style) and check access */
+	/* Get PTE (beep-style) and check access */
 	lis	r0,KERNELBASE@h		/* check if kernel address */
 	cmplw	0,r4,r0
 	mfspr	r8,SPRN_SPRG_THREAD	/* current task's THREAD (phys) */
@@ -103,7 +103,7 @@ _GLOBAL(hash_page)
 	ori	r0,r0,_PAGE_ACCESSED|_PAGE_HASHPTE
 
 	/*
-	 * Update the linux PTE atomically.  We do the lwarx up-front
+	 * Update the beep PTE atomically.  We do the lwarx up-front
 	 * because almost always, there won't be a permission violation
 	 * and there won't already be an HPTE, and thus we will have
 	 * to update the PTE to set _PAGE_HASHPTE.  -- paulus.
@@ -115,7 +115,7 @@ _GLOBAL(hash_page)
 	addi	r8,r8,PTE_FLAGS_OFFSET
 #endif
 retry:
-	lwarx	r6,0,r8			/* get linux-style pte, flag word */
+	lwarx	r6,0,r8			/* get beep-style pte, flag word */
 	andc.	r5,r3,r6		/* check access & ~permission */
 #ifdef CONFIG_SMP
 	bne-	hash_page_out		/* return if access not permitted */
@@ -224,7 +224,7 @@ _GLOBAL(add_hash_page)
 #endif
 
 	/*
-	 * Fetch the linux pte and test and set _PAGE_HASHPTE atomically.
+	 * Fetch the beep pte and test and set _PAGE_HASHPTE atomically.
 	 * If _PAGE_HASHPTE was already set, we don't replace the existing
 	 * HPTE, so we just unlock and return.
 	 */
@@ -275,15 +275,15 @@ _GLOBAL(add_hash_page)
  * This routine adds a hardware PTE to the hash table.
  * It is designed to be called with the MMU either on or off.
  * r3 contains the VSID, r4 contains the virtual address,
- * r5 contains the linux PTE, r6 contains the old value of the
- * linux PTE (before setting _PAGE_HASHPTE) and r7 contains the
+ * r5 contains the beep PTE, r6 contains the old value of the
+ * beep PTE (before setting _PAGE_HASHPTE) and r7 contains the
  * offset to be added to addresses (0 if the MMU is on,
  * -KERNELBASE if it is off).  r10 contains the upper half of
  * the PTE if CONFIG_PTE_64BIT.
  * On SMP, the caller should have the mmu_hash_lock held.
  * We assume that the caller has (or will) set the _PAGE_HASHPTE
- * bit in the linux PTE in memory.  The value passed in r6 should
- * be the old linux PTE value; if it doesn't have _PAGE_HASHPTE set
+ * bit in the beep PTE in memory.  The value passed in r6 should
+ * be the old beep PTE value; if it doesn't have _PAGE_HASHPTE set
  * this routine will skip the search for an existing HPTE.
  * This procedure modifies r0, r3 - r6, r8, cr0.
  *  -- paulus.
@@ -314,7 +314,7 @@ Hash_msk = (((1 << Hash_bits) - 1) * 64)
 #define HASH_RIGHT	31-LG_PTEG_SIZE
 
 _GLOBAL(create_hpte)
-	/* Convert linux-style PTE (r5) to low word of PPC-style PTE (r8) */
+	/* Convert beep-style PTE (r5) to low word of PPC-style PTE (r8) */
 	rlwinm	r8,r5,32-10,31,31	/* _PAGE_RW -> PP lsb */
 	rlwinm	r0,r5,32-7,31,31	/* _PAGE_DIRTY -> PP lsb */
 	and	r8,r8,r0		/* writable if _RW & _DIRTY */
@@ -345,7 +345,7 @@ _GLOBAL(hash_page_patch_A)
 	li	r0,8			/* PTEs/group */
 
 	/*
-	 * Test the _PAGE_HASHPTE bit in the old linux PTE, and skip the search
+	 * Test the _PAGE_HASHPTE bit in the old beep PTE, and skip the search
 	 * if it is clear, meaning that the HPTE isn't there already...
 	 */
 	andi.	r6,r6,_PAGE_HASHPTE
@@ -562,7 +562,7 @@ _GLOBAL(flush_hash_pages)
 #endif
 
 	/*
-	 * Check the _PAGE_HASHPTE bit in the linux PTE.  If it is
+	 * Check the _PAGE_HASHPTE bit in the beep PTE.  If it is
 	 * already clear, we're done (for this pte).  If not,
 	 * clear it (atomically) and proceed.  -- paulus.
 	 */

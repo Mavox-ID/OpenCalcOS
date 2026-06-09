@@ -7,18 +7,18 @@
  * Author: Rabin Vincent <rabin.vincent@stericsson.com> for ST-Ericsson
  */
 
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/mfd/core.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
+#include <beep/pm.h>
+#include <beep/slab.h>
+#include <beep/mfd/core.h>
 #include "stmpe.h"
 
 static int __stmpe_enable(struct stmpe *stmpe, unsigned int blocks)

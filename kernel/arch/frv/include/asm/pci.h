@@ -13,7 +13,7 @@
 #ifndef _ASM_FRV_PCI_H
 #define _ASM_FRV_PCI_H
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 #include <asm/scatterlist.h>
 #include <asm-generic/pci-dma-compat.h>
 #include <asm-generic/pci.h>

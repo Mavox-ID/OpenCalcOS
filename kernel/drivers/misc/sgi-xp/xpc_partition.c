@@ -15,9 +15,9 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/hardirq.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/hardirq.h>
+#include <beep/slab.h>
 #include "xpc.h"
 #include <asm/uv/uv_hub.h>
 

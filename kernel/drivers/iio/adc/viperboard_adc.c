@@ -12,18 +12,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/mutex.h>
+#include <beep/platform_device.h>
 
-#include <linux/usb.h>
-#include <linux/iio/iio.h>
+#include <beep/usb.h>
+#include <beep/iio/iio.h>
 
-#include <linux/mfd/viperboard.h>
+#include <beep/mfd/viperboard.h>
 
 #define VPRBRD_ADC_CMD_GET		0x00
 

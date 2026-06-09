@@ -1,5 +1,5 @@
 /*
- *  linux/arch/h8300/mm/init.c
+ *  beep/arch/h8300/mm/init.c
  *
  *  Copyright (C) 1998  D. Jeff Dionne <jeff@lineo.ca>,
  *                      Kenneth Albanowski <kjahds@kjahds.com>,
@@ -7,30 +7,30 @@
  *
  *  Based on:
  *
- *  linux/arch/m68knommu/mm/init.c
- *  linux/arch/m68k/mm/init.c
+ *  beep/arch/m68knommu/mm/init.c
+ *  beep/arch/m68k/mm/init.c
  *
  *  Copyright (C) 1995  Hamish Macdonald
  *
  *  JAN/1999 -- hacked to support ColdFire (gerg@snapgear.com)
- *  DEC/2000 -- linux 2.4 support <davidm@snapgear.com>
+ *  DEC/2000 -- beep 2.4 support <davidm@snapgear.com>
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/bootmem.h>
-#include <linux/gfp.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/init.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/bootmem.h>
+#include <beep/gfp.h>
 
 #include <asm/setup.h>
 #include <asm/segment.h>
@@ -41,8 +41,8 @@
 #undef DEBUG
 
 /*
- * BAD_PAGE is the page that is used for page faults when linux
- * is out-of-memory. Older versions of linux just did a
+ * BAD_PAGE is the page that is used for page faults when beep
+ * is out-of-memory. Older versions of beep just did a
  * do_exit(), but using this instead means there is less risk
  * for a process dying in kernel mode, possibly leaving a inode
  * unused etc..

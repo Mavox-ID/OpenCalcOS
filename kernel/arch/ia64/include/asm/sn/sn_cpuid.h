@@ -11,7 +11,7 @@
 #ifndef _ASM_IA64_SN_SN_CPUID_H
 #define _ASM_IA64_SN_SN_CPUID_H
 
-#include <linux/smp.h>
+#include <beep/smp.h>
 #include <asm/sn/addrs.h>
 #include <asm/sn/pda.h>
 #include <asm/intrinsics.h>

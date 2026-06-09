@@ -8,19 +8,19 @@
  * as published by the Free Software Foundation
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
-#include <linux/uaccess.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/watchdog.h>
+#include <beep/uaccess.h>
+#include <beep/gpio.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/mfd/wm831x/watchdog.h>
+#include <beep/mfd/wm831x/core.h>
+#include <beep/mfd/wm831x/pdata.h>
+#include <beep/mfd/wm831x/watchdog.h>
 
 static bool nowayout = WATCHDOG_NOWAYOUT;
 module_param(nowayout, bool, 0);

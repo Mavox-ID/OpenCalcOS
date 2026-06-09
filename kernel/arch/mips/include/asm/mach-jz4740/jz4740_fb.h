@@ -15,7 +15,7 @@
 #ifndef __ASM_MACH_JZ4740_JZ4740_FB_H__
 #define __ASM_MACH_JZ4740_JZ4740_FB_H__
 
-#include <linux/fb.h>
+#include <beep/fb.h>
 
 enum jz4740_fb_lcd_type {
 	JZ_LCD_TYPE_GENERIC_16_BIT = 0,

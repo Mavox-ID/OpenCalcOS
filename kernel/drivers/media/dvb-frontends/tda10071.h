@@ -21,7 +21,7 @@
 #ifndef TDA10071_H
 #define TDA10071_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 struct tda10071_config {
 	/* Demodulator I2C address.

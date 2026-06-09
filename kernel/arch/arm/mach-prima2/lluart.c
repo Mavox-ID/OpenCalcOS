@@ -6,7 +6,7 @@
  * Licensed under GPLv2 or later.
  */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <asm/page.h>
 #include <asm/mach/map.h>
 #include <mach/map.h>

@@ -1,5 +1,5 @@
 /*
- * machine_kexec.c - handle transition of Linux booting another kernel
+ * machine_kexec.c - handle transition of Beep booting another kernel
  * Copyright (C) 2002-2003 Eric Biederman  <ebiederm@xmission.com>
  *
  * GameCube/ppc32 port Copyright (C) 2004 Albert Herranz
@@ -8,14 +8,14 @@
  * This source code is licensed under the GNU General Public License,
  * Version 2.  See the file COPYING for more details.
  */
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/numa.h>
-#include <linux/ftrace.h>
-#include <linux/suspend.h>
-#include <linux/memblock.h>
+#include <beep/mm.h>
+#include <beep/kexec.h>
+#include <beep/delay.h>
+#include <beep/reboot.h>
+#include <beep/numa.h>
+#include <beep/ftrace.h>
+#include <beep/suspend.h>
+#include <beep/memblock.h>
 #include <asm/pgtable.h>
 #include <asm/pgalloc.h>
 #include <asm/mmu_context.h>

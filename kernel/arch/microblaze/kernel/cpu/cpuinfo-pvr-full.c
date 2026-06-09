@@ -10,8 +10,8 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/string.h>
 #include <asm/pvr.h>
 #include <asm/cpuinfo.h>
 

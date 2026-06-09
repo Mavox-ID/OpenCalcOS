@@ -19,22 +19,22 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/if_ether.h>
+#include <beep/list.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/pinctrl/consumer.h>
 
-#include <linux/can/dev.h>
+#include <beep/can/dev.h>
 
 #include "c_can.h"
 

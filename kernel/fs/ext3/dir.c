@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext3/dir.c
+ *  beep/fs/ext3/dir.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -8,7 +8,7 @@
  *
  *  from
  *
- *  linux/fs/minix/dir.c
+ *  beep/fs/minix/dir.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/compat.h>
+#include <beep/compat.h>
 #include "ext3.h"
 
 static unsigned char ext3_filetype_table[] = {

@@ -1,5 +1,5 @@
 /*
- * Resizable virtual memory filesystem for Linux.
+ * Resizable virtual memory filesystem for Beep.
  *
  * Copyright (C) 2000 Linus Torvalds.
  *		 2000 Transmeta Corp.
@@ -21,15 +21,15 @@
  * This file is released under the GPL.
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/vfs.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/swap.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/vfs.h>
+#include <beep/mount.h>
+#include <beep/pagemap.h>
+#include <beep/file.h>
+#include <beep/mm.h>
+#include <beep/export.h>
+#include <beep/swap.h>
 
 static struct vfsmount *shm_mnt;
 
@@ -40,30 +40,30 @@ static struct vfsmount *shm_mnt;
  * which makes it a completely usable filesystem.
  */
 
-#include <linux/xattr.h>
-#include <linux/exportfs.h>
-#include <linux/posix_acl.h>
-#include <linux/generic_acl.h>
-#include <linux/mman.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/backing-dev.h>
-#include <linux/shmem_fs.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/pagevec.h>
-#include <linux/percpu_counter.h>
-#include <linux/falloc.h>
-#include <linux/splice.h>
-#include <linux/security.h>
-#include <linux/swapops.h>
-#include <linux/mempolicy.h>
-#include <linux/namei.h>
-#include <linux/ctype.h>
-#include <linux/migrate.h>
-#include <linux/highmem.h>
-#include <linux/seq_file.h>
-#include <linux/magic.h>
+#include <beep/xattr.h>
+#include <beep/exportfs.h>
+#include <beep/posix_acl.h>
+#include <beep/generic_acl.h>
+#include <beep/mman.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/backing-dev.h>
+#include <beep/shmem_fs.h>
+#include <beep/writeback.h>
+#include <beep/blkdev.h>
+#include <beep/pagevec.h>
+#include <beep/percpu_counter.h>
+#include <beep/falloc.h>
+#include <beep/splice.h>
+#include <beep/security.h>
+#include <beep/swapops.h>
+#include <beep/mempolicy.h>
+#include <beep/namei.h>
+#include <beep/ctype.h>
+#include <beep/migrate.h>
+#include <beep/highmem.h>
+#include <beep/seq_file.h>
+#include <beep/magic.h>
 
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>
@@ -2817,7 +2817,7 @@ out4:
  * effectively equivalent, but much lighter weight.
  */
 
-#include <linux/ramfs.h>
+#include <beep/ramfs.h>
 
 static struct file_system_type shmem_fs_type = {
 	.name		= "tmpfs",

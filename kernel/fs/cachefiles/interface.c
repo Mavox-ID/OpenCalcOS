@@ -9,8 +9,8 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/slab.h>
-#include <linux/mount.h>
+#include <beep/slab.h>
+#include <beep/mount.h>
 #include "internal.h"
 
 #define list_to_page(head) (list_entry((head)->prev, struct page, lru))

@@ -1,10 +1,10 @@
 /*
- * linux/arch/arm/mach-footbridge/personal.c
+ * beep/arch/arm/mach-footbridge/personal.c
  *
  * Personal server (Skiff) machine fixup
  */
-#include <linux/init.h>
-#include <linux/spinlock.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
 
 #include <asm/hardware/dec21285.h>
 #include <asm/mach-types.h>

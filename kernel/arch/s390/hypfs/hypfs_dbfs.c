@@ -1,11 +1,11 @@
 /*
- * Hypervisor filesystem for Linux on s390 - debugfs interface
+ * Hypervisor filesystem for Beep on s390 - debugfs interface
  *
  * Copyright IBM Corp. 2010
- * Author(s): Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ * Author(s): Michael Holzheu <holzheu@beep.vnet.ibm.com>
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include "hypfs.h"
 
 static struct dentry *dbfs_dir;

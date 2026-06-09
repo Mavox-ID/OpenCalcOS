@@ -26,13 +26,13 @@
  *	console=uart8250,mmio32,0xff5e0000,115200n8
  */
 
-#include <linux/tty.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
+#include <beep/tty.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/serial_core.h>
+#include <beep/serial_reg.h>
+#include <beep/serial.h>
+#include <beep/serial_8250.h>
 #include <asm/io.h>
 #include <asm/serial.h>
 #ifdef CONFIG_FIX_EARLYCON_MEM

@@ -8,7 +8,7 @@
 #define _SPARC_RESOURCE_H
 
 /*
- * These two resource limit IDs have a Sparc/Linux-specific ordering,
+ * These two resource limit IDs have a Sparc/Beep-specific ordering,
  * the rest comes from the generic header:
  */
 #define RLIMIT_NOFILE		6	/* max number of open files */

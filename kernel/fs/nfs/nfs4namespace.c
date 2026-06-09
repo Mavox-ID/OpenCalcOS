@@ -1,5 +1,5 @@
 /*
- * linux/fs/nfs/nfs4namespace.c
+ * beep/fs/nfs/nfs4namespace.c
  *
  * Copyright (C) 2005 Trond Myklebust <Trond.Myklebust@netapp.com>
  * - Modified by David Howells <dhowells@redhat.com>
@@ -7,15 +7,15 @@
  * NFSv4 namespace
  */
 
-#include <linux/dcache.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/nfs_fs.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/vfs.h>
-#include <linux/inet.h>
+#include <beep/dcache.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/nfs_fs.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/vfs.h>
+#include <beep/inet.h>
 #include "internal.h"
 #include "nfs4_fs.h"
 #include "dns_resolve.h"

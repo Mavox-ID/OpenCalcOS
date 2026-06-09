@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2000			Andre Hedrick <andre@linux-ide.org>
+ * Copyright (C) 2000			Andre Hedrick <andre@beep-ide.org>
  * Copyright (C) 2000			Mark Lord <mlord@pobox.com>
  * Copyright (C) 2007			Bartlomiej Zolnierkiewicz
  *
@@ -12,12 +12,12 @@
  *	CS5530 documentation available from National Semiconductor.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ide.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/ide.h>
 
 #include <asm/io.h>
 

@@ -6,15 +6,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/serial_8250.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

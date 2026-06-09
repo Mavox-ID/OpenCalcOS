@@ -3,7 +3,7 @@
 #ifndef _ASM_PARISC_SYSCALL_H_
 #define _ASM_PARISC_SYSCALL_H_
 
-#include <linux/err.h>
+#include <beep/err.h>
 #include <asm/ptrace.h>
 
 static inline long syscall_get_nr(struct task_struct *tsk,

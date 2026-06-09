@@ -15,7 +15,7 @@
 #ifndef _ASM_TILE_BACKTRACE_H
 #define _ASM_TILE_BACKTRACE_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* Reads 'size' bytes from 'address' and writes the data to 'result'.
  * Returns true if successful, else false (e.g. memory not readable).

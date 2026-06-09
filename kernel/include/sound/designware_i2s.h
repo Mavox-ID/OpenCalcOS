@@ -20,8 +20,8 @@
 #ifndef __SOUND_DESIGNWARE_I2S_H
 #define __SOUND_DESIGNWARE_I2S_H
 
-#include <linux/dmaengine.h>
-#include <linux/types.h>
+#include <beep/dmaengine.h>
+#include <beep/types.h>
 
 /*
  * struct i2s_clk_config_data - represent i2s clk configuration data

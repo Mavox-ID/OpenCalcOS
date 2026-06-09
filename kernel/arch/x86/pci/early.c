@@ -1,5 +1,5 @@
-#include <linux/kernel.h>
-#include <linux/pci.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
 #include <asm/pci-direct.h>
 #include <asm/io.h>
 #include <asm/pci_x86.h>

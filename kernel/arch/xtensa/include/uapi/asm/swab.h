@@ -11,8 +11,8 @@
 #ifndef _XTENSA_SWAB_H
 #define _XTENSA_SWAB_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <beep/types.h>
+#include <beep/compiler.h>
 
 #define __SWAB_64_THRU_32__
 

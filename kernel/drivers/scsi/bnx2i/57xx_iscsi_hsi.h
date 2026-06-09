@@ -9,8 +9,8 @@
  * Written by: Anil Veerabhadrappa (anilgv@broadcom.com)
  * Maintained by: Eddie Wai (eddie.wai@broadcom.com)
  */
-#ifndef __57XX_ISCSI_HSI_LINUX_LE__
-#define __57XX_ISCSI_HSI_LINUX_LE__
+#ifndef __57XX_ISCSI_HSI_BEEP_LE__
+#define __57XX_ISCSI_HSI_BEEP_LE__
 
 /*
  * iSCSI Async CQE
@@ -1517,4 +1517,4 @@ union iscsi_response {
 	struct bnx2i_nop_in_msg nop_in;
 };
 
-#endif /* __57XX_ISCSI_HSI_LINUX_LE__ */
+#endif /* __57XX_ISCSI_HSI_BEEP_LE__ */

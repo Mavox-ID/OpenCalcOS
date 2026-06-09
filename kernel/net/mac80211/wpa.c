@@ -7,12 +7,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/compiler.h>
-#include <linux/ieee80211.h>
-#include <linux/gfp.h>
+#include <beep/netdevice.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
+#include <beep/compiler.h>
+#include <beep/ieee80211.h>
+#include <beep/gfp.h>
 #include <asm/unaligned.h>
 #include <net/mac80211.h>
 #include <crypto/aes.h>

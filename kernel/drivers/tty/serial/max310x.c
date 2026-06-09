@@ -16,16 +16,16 @@
 /* TODO: MAX3109 support (Dual) */
 /* TODO: MAX14830 support (Quad) */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/regmap.h>
-#include <linux/gpio.h>
-#include <linux/spi/spi.h>
-#include <linux/platform_data/max310x.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/serial_core.h>
+#include <beep/serial.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/regmap.h>
+#include <beep/gpio.h>
+#include <beep/spi/spi.h>
+#include <beep/platform_data/max310x.h>
 
 #define MAX310X_MAJOR			204
 #define MAX310X_MINOR			209

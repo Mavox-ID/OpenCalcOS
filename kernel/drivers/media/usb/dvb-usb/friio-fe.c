@@ -1,4 +1,4 @@
-/* DVB USB compliant Linux driver for the Friio USB2.0 ISDB-T receiver.
+/* DVB USB compliant Beep driver for the Friio USB2.0 ISDB-T receiver.
  *
  * Copyright (C) 2009 Akihiro Tsukada <tskd2@yahoo.co.jp>
  *
@@ -10,9 +10,9 @@
  *
  * see Documentation/dvb/README.dvb-usb for more information
  */
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 
 #include "friio.h"
 

@@ -10,11 +10,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/lzo.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/lzo.h>
 #include "compr.h"
 
 static void *lzo_mem;

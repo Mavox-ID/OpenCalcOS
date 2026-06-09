@@ -11,20 +11,20 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/pl330.h>
-#include <linux/scatterlist.h>
-#include <linux/of.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmaengine.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/pl330.h>
+#include <beep/scatterlist.h>
+#include <beep/of.h>
 
 #include "dmaengine.h"
 #define PL330_MAX_CHAN		8

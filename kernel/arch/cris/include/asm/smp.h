@@ -1,7 +1,7 @@
 #ifndef __ASM_SMP_H
 #define __ASM_SMP_H
 
-#include <linux/cpumask.h>
+#include <beep/cpumask.h>
 
 extern cpumask_t phys_cpu_present_map;
 

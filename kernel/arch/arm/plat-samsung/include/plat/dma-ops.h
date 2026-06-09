@@ -13,7 +13,7 @@
 #ifndef __SAMSUNG_DMA_OPS_H_
 #define __SAMSUNG_DMA_OPS_H_ __FILE__
 
-#include <linux/dmaengine.h>
+#include <beep/dmaengine.h>
 #include <mach/dma.h>
 
 struct samsung_dma_req {

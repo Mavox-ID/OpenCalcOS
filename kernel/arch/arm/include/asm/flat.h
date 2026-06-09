@@ -1,5 +1,5 @@
 /*
- * arch/arm/include/asm/flat.h -- uClinux flat-format executables
+ * arch/arm/include/asm/flat.h -- uCbeep flat-format executables
  */
 
 #ifndef __ARM_FLAT_H__

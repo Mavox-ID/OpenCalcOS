@@ -50,7 +50,7 @@
  * All trace headers should include tracepoint.h, until we finally
  * make it into a standard header.
  */
-#include <linux/tracepoint.h>
+#include <beep/tracepoint.h>
 
 /*
  * The TRACE_EVENT macro is broken up into 5 parts.

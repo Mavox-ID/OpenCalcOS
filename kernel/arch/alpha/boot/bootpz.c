@@ -4,16 +4,16 @@
  * Copyright (C) 1997 Jay Estabrook
  *
  * This file is used for creating a compressed BOOTP file for the
- * Linux/AXP kernel
+ * Beep/AXP kernel
  *
  * based significantly on the arch/alpha/boot/main.c of Linus Torvalds
  * and the decompression code from MILO.
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 #include <generated/utsrelease.h>
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 #include <asm/console.h>
 #include <asm/hwrpb.h>
@@ -291,7 +291,7 @@ start_kernel(void)
 
 	SP_on_entry = asm_sp;
 
-	srm_printk("Linux/Alpha BOOTPZ Loader for Linux " UTS_RELEASE "\n");
+	srm_printk("Beep/Alpha BOOTPZ Loader for Beep " UTS_RELEASE "\n");
 
 	/* Validity check the HWRPB. */
 	if (INIT_HWRPB->pagesize != 8192) {

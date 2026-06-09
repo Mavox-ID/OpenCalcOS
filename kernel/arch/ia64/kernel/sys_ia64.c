@@ -5,17 +5,17 @@
  * Copyright (C) 1999-2000, 2002-2003, 2005 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/sched.h>
-#include <linux/shm.h>
-#include <linux/file.h>		/* doh, must come after sched.h... */
-#include <linux/smp.h>
-#include <linux/syscalls.h>
-#include <linux/highuid.h>
-#include <linux/hugetlb.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/sched.h>
+#include <beep/shm.h>
+#include <beep/file.h>		/* doh, must come after sched.h... */
+#include <beep/smp.h>
+#include <beep/syscalls.h>
+#include <beep/highuid.h>
+#include <beep/hugetlb.h>
 
 #include <asm/shmparam.h>
 #include <asm/uaccess.h>

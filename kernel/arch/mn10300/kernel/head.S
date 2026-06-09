@@ -9,10 +9,10 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/threads.h>
-#include <linux/linkage.h>
-#include <linux/serial_reg.h>
+#include <beep/init.h>
+#include <beep/threads.h>
+#include <beep/linkage.h>
+#include <beep/serial_reg.h>
 #include <asm/thread_info.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>

@@ -22,11 +22,11 @@
 #define _ASM_IOMMU_H
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitops.h>
+#include <beep/compiler.h>
+#include <beep/spinlock.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/bitops.h>
 #include <asm/machdep.h>
 #include <asm/types.h>
 

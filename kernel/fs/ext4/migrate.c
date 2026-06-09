@@ -1,6 +1,6 @@
 /*
  * Copyright IBM Corporation, 2007
- * Author Aneesh Kumar K.V <aneesh.kumar@linux.vnet.ibm.com>
+ * Author Aneesh Kumar K.V <aneesh.kumar@beep.vnet.ibm.com>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of version 2.1 of the GNU Lesser General Public License
@@ -12,7 +12,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include "ext4_jbd2.h"
 #include "ext4_extents.h"
 

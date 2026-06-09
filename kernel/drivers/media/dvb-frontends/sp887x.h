@@ -5,8 +5,8 @@
 #ifndef SP887X_H
 #define SP887X_H
 
-#include <linux/dvb/frontend.h>
-#include <linux/firmware.h>
+#include <beep/dvb/frontend.h>
+#include <beep/firmware.h>
 
 struct sp887x_config
 {

@@ -6,19 +6,19 @@
  * This file is released under the GPL.
  */
 
-#include <linux/blkdev.h>
-#include <linux/device-mapper.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kdev_t.h>
-#include <linux/list.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/log2.h>
-#include <linux/dm-kcopyd.h>
+#include <beep/blkdev.h>
+#include <beep/device-mapper.h>
+#include <beep/delay.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/kdev_t.h>
+#include <beep/list.h>
+#include <beep/mempool.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/log2.h>
+#include <beep/dm-kcopyd.h>
 
 #include "dm-exception-store.h"
 

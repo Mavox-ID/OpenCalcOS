@@ -7,15 +7,15 @@
  * Loosely based on earlier PAT patchset from Eric Biederman and Andi Kleen.
  */
 
-#include <linux/seq_file.h>
-#include <linux/bootmem.h>
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/rbtree.h>
+#include <beep/seq_file.h>
+#include <beep/bootmem.h>
+#include <beep/debugfs.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/rbtree.h>
 
 #include <asm/cacheflush.h>
 #include <asm/processor.h>
@@ -103,7 +103,7 @@ void pat_init(void)
 
 	/* Set PWT to Write-Combining. All other bits stay the same */
 	/*
-	 * PTE encoding used in Linux:
+	 * PTE encoding used in Beep:
 	 *      PAT
 	 *      |PCD
 	 *      ||PWT

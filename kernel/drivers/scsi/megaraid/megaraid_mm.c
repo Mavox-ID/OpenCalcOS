@@ -1,6 +1,6 @@
 /*
  *
- *			Linux MegaRAID device driver
+ *			Beep MegaRAID device driver
  *
  * Copyright (c) 2003-2004  LSI Logic Corporation.
  *
@@ -14,9 +14,9 @@
  *
  * Common management module
  */
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
 #include "megaraid_mm.h"
 
 

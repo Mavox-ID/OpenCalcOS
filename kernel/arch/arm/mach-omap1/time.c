@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/time.c
+ * beep/arch/arm/mach-omap1/time.c
  *
  * OMAP Timers
  *
@@ -33,16 +33,16 @@
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/io.h>
 
 #include <asm/irq.h>
 #include <asm/sched_clock.h>

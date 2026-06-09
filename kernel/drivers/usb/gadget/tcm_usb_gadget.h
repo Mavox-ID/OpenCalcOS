@@ -1,11 +1,11 @@
 #ifndef __TARGET_USB_GADGET_H__
 #define __TARGET_USB_GADGET_H__
 
-#include <linux/kref.h>
-/* #include <linux/usb/uas.h> */
-#include <linux/usb/composite.h>
-#include <linux/usb/uas.h>
-#include <linux/usb/storage.h>
+#include <beep/kref.h>
+/* #include <beep/usb/uas.h> */
+#include <beep/usb/composite.h>
+#include <beep/usb/uas.h>
+#include <beep/usb/storage.h>
 #include <scsi/scsi.h>
 #include <target/target_core_base.h>
 #include <target/target_core_fabric.h>

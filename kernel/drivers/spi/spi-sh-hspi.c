@@ -23,18 +23,18 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/io.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/sh_hspi.h>
+#include <beep/clk.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/io.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/sh_hspi.h>
 
 #define SPCR	0x00
 #define SPSR	0x04

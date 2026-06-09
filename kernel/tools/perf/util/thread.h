@@ -1,7 +1,7 @@
 #ifndef __PERF_THREAD_H
 #define __PERF_THREAD_H
 
-#include <linux/rbtree.h>
+#include <beep/rbtree.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include "symbol.h"

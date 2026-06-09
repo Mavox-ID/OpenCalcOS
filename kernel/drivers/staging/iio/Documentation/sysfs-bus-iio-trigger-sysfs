@@ -1,6 +1,6 @@
 What:		/sys/bus/iio/devices/triggerX/trigger_now
 KernelVersion:	2.6.38
-Contact:	linux-iio@vger.kernel.org
+Contact:	beep-iio@vger.kernel.org
 Description:
 		This file is provided by the iio-trig-sysfs stand-alone trigger
 		driver. Writing this file with any value triggers an event

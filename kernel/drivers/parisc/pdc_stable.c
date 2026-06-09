@@ -1,7 +1,7 @@
 /* 
  *    Interfaces to retrieve and set PDC Stable options (firmware)
  *
- *    Copyright (C) 2005-2006 Thibaut VARENE <varenet@parisc-linux.org>
+ *    Copyright (C) 2005-2006 Thibaut VARENE <varenet@parisc-beep.org>
  *
  *    This program is free software; you can redistribute it and/or modify
  *    it under the terms of the GNU General Public License, version 2, as
@@ -54,17 +54,17 @@
 #define DPRINTK(fmt, args...)
 #endif
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/capability.h>
-#include <linux/ctype.h>
-#include <linux/sysfs.h>
-#include <linux/kobject.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/capability.h>
+#include <beep/ctype.h>
+#include <beep/sysfs.h>
+#include <beep/kobject.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/spinlock.h>
 
 #include <asm/pdc.h>
 #include <asm/page.h>
@@ -84,7 +84,7 @@
 #define PDCS_ADDR_PKBD	0xA0
 #define PDCS_ADDR_OSD2	0xE0
 
-MODULE_AUTHOR("Thibaut VARENE <varenet@parisc-linux.org>");
+MODULE_AUTHOR("Thibaut VARENE <varenet@parisc-beep.org>");
 MODULE_DESCRIPTION("sysfs interface to HP PDC Stable Storage data");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(PDCS_VERSION);
@@ -866,7 +866,7 @@ static ssize_t pdcs_osdep1_write(struct kobject *kobj,
 	if (!buf || !count)
 		return -EINVAL;
 
-	if (unlikely(pdcs_osid != OS_ID_LINUX))
+	if (unlikely(pdcs_osid != OS_ID_BEEP))
 		return -EPERM;
 
 	if (count > 16)
@@ -908,7 +908,7 @@ static ssize_t pdcs_osdep2_write(struct kobject *kobj,
 	if (unlikely(pdcs_size <= 224))
 		return -ENOSYS;
 
-	if (unlikely(pdcs_osid != OS_ID_LINUX))
+	if (unlikely(pdcs_osid != OS_ID_BEEP))
 		return -EPERM;
 
 	size = pdcs_size - 224;

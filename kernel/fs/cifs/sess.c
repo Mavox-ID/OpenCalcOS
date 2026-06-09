@@ -28,8 +28,8 @@
 #include "cifs_debug.h"
 #include "ntlmssp.h"
 #include "nterr.h"
-#include <linux/utsname.h>
-#include <linux/slab.h>
+#include <beep/utsname.h>
+#include <beep/slab.h>
 #include "cifs_spnego.h"
 
 /*
@@ -167,7 +167,7 @@ unicode_oslm_strings(char **pbcc_area, const struct nls_table *nls_cp)
 	int bytes_ret = 0;
 
 	/* Copy OS version */
-	bytes_ret = cifs_strtoUTF16((__le16 *)bcc_ptr, "Linux version ", 32,
+	bytes_ret = cifs_strtoUTF16((__le16 *)bcc_ptr, "Beep version ", 32,
 				    nls_cp);
 	bcc_ptr += 2 * bytes_ret;
 	bytes_ret = cifs_strtoUTF16((__le16 *) bcc_ptr, init_utsname()->release,
@@ -265,8 +265,8 @@ static void ascii_ssetup_strings(char **pbcc_area, struct cifs_ses *ses,
 
 	/* BB check for overflow here */
 
-	strcpy(bcc_ptr, "Linux version ");
-	bcc_ptr += strlen("Linux version ");
+	strcpy(bcc_ptr, "Beep version ");
+	bcc_ptr += strlen("Beep version ");
 	strcpy(bcc_ptr, init_utsname()->release);
 	bcc_ptr += strlen(init_utsname()->release) + 1;
 

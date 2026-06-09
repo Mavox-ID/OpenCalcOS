@@ -1,14 +1,14 @@
 /*
  * sparse memory mappings.
  */
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/mmzone.h>
-#include <linux/bootmem.h>
-#include <linux/highmem.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/mmzone.h>
+#include <beep/bootmem.h>
+#include <beep/highmem.h>
+#include <beep/export.h>
+#include <beep/spinlock.h>
+#include <beep/vmalloc.h>
 #include "internal.h"
 #include <asm/dma.h>
 #include <asm/pgalloc.h>

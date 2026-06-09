@@ -4,7 +4,7 @@
  *  sst_dsp.h - Intel SST Driver for audio engine
  *
  *  Copyright (C) 2008-12 Intel Corporation
- *  Authors:	Vinod Koul <vinod.koul@linux.intel.com>
+ *  Authors:	Vinod Koul <vinod.koul@beep.intel.com>
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *
  *  This program is free software; you can redistribute it and/or modify

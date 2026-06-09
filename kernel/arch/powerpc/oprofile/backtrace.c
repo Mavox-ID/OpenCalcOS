@@ -7,8 +7,8 @@
  * 2 of the License, or (at your option) any later version.
 **/
 
-#include <linux/oprofile.h>
-#include <linux/sched.h>
+#include <beep/oprofile.h>
+#include <beep/sched.h>
 #include <asm/processor.h>
 #include <asm/uaccess.h>
 #include <asm/compat.h>

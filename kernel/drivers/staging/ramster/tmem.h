@@ -9,13 +9,13 @@
 #ifndef _TMEM_H_
 #define _TMEM_H_
 
-#include <linux/types.h>
-#include <linux/highmem.h>
-#include <linux/hash.h>
-#include <linux/atomic.h>
+#include <beep/types.h>
+#include <beep/highmem.h>
+#include <beep/hash.h>
+#include <beep/atomic.h>
 
 /*
- * These are defined by the Xen<->Linux ABI so should remain consistent
+ * These are defined by the Xen<->Beep ABI so should remain consistent
  */
 #define TMEM_POOL_PERSIST		1
 #define TMEM_POOL_SHARED		2

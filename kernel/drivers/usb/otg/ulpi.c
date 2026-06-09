@@ -23,12 +23,12 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/usb.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/ulpi.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/usb.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/ulpi.h>
 
 
 struct ulpi_info {

@@ -4,7 +4,7 @@
  * compatible (SAGEM cybermodem)
  *
  * Author       Karsten Keil
- * Copyright    by Karsten Keil      <keil@isdn4linux.de>
+ * Copyright    by Karsten Keil      <keil@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
@@ -13,13 +13,13 @@
  *
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include "hisax.h"
 #include "isac.h"
 #include "hscx.h"
 #include "isdnl1.h"
-#include <linux/pci.h>
-#include <linux/isapnp.h>
+#include <beep/pci.h>
+#include <beep/isapnp.h>
 
 static const char *niccy_revision = "$Revision: 1.21.2.4 $";
 

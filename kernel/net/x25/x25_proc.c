@@ -17,10 +17,10 @@
  *	2002/10/06	Arnaldo Carvalho de Melo  seq_file support
  */
 
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/export.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 #include <net/x25.h>

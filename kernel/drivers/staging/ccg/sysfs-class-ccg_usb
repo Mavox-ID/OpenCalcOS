@@ -1,7 +1,7 @@
 What:		/sys/class/ccg_usb
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		The ccg_usb/ class subdirectory belongs to ccg
 		USB gadget.
@@ -9,7 +9,7 @@ Description:
 What:		/sys/class/ccg_usb/ccgX
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		The /sys/class/ccg_usb/ccg{0,1,2,3...} class
 		subdirectories correspond to each ccg gadget device;
@@ -19,7 +19,7 @@ Description:
 What:		/sys/class/ccg_usb/ccgX/functions
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		A comma-separated list of USB function names to be activated
 		in this ccg gadget. It includes both the functions provided
@@ -29,14 +29,14 @@ Description:
 What:		/sys/class/ccg_usb/ccgX/enable
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		A flag activating/deactivating the ccg usb gadget.
 
 What:		/sys/class/ccg_usb/ccgX/state
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		Configurable usb gadget state:
 
@@ -47,7 +47,7 @@ Description:
 What:		/sys/class/ccg_usb/ccgX/f_acm/
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		The /sys/class/ccg_usb/ccgX/f_acm subdirectory
 		corresponds to the gadget's USB CDC serial (ACM) function
@@ -56,14 +56,14 @@ Description:
 What:		/sys/class/ccg_usb/ccgX/f_acm/instances
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		Maximum number of the /dev/ttyGS<X> interface the driver uses.
 
 What:		/sys/class/ccg_usb/ccgX/f_fs
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		The /sys/class/ccg_usb/ccgX/f_fs subdirectory
 		corresponds to the gadget's FunctionFS driver.
@@ -71,7 +71,7 @@ Description:
 What:		/sys/class/ccg_usb/ccgX/f_fs/user_functions
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		A comma-separeted list of USB function names to be supported
 		from userspace. No other userspace FunctionFS functions can
@@ -84,14 +84,14 @@ Description:
 What:		/sys/class/ccg_usb/ccgX/f_fs/max_user_functions
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		Maximum number of USB functions to be supported from userspace.
 
 What:		/sys/class/ccg_usb/ccgX/f_rndis
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		The /sys/class/ccg_usb/ccgX/f_rndis subdirectory
 		corresponds to the gadget's RNDIS driver.
@@ -99,35 +99,35 @@ Description:
 What:		/sys/class/ccg_usb/ccgX/f_rndis/manufacturer
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		RNDIS Ethernet port manufacturer string.
 
 What:		/sys/class/ccg_usb/ccgX/f_rndis/wceis
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		RNDIS Ethernet port wireless flag.
 
 What:		/sys/class/ccg_usb/ccgX/f_rndis/ethaddr
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		RNDIS Ethernet port Ethernet address.
 
 What:		/sys/class/ccg_usb/ccgX/f_rndis/vendorID
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		RNDIS Ethernet port vendor ID.
 
 What:		/sys/class/ccg_usb/ccgX/f_mass_storage
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		The /sys/class/ccg_usb/ccgX/f_mass_storage subdirectory
 		corresponds to the gadget's USB mass storage driver.
@@ -135,7 +135,7 @@ Description:
 What:		/sys/class/ccg_usb/ccgX/f_mass_storage/lun
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		The /sys/class/ccg_usb/ccgX/f_mass_storage/lun
 		subdirectory corresponds to the gadget's USB mass storage
@@ -144,7 +144,7 @@ Description:
 What:		/sys/class/ccg_usb/ccgX/f_mass_storage/lun
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		The /sys/class/ccg_usb/ccgX/f_mass_storage/lun
 		subdirectory corresponds to the gadget's USB mass storage
@@ -153,6 +153,6 @@ Description:
 What:		/sys/class/ccg_usb/ccgX/f_mass_storage/lun/file
 Date:		May 2012
 KernelVersion:	3.4
-Contact:	linux-usb@vger.kernel.org
+Contact:	beep-usb@vger.kernel.org
 Description:
 		Gadget's USB mass storage underlying file.

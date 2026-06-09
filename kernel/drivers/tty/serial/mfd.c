@@ -21,25 +21,25 @@
  *    be triggered
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/slab.h>
-#include <linux/serial_reg.h>
-#include <linux/circ_buf.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial_mfd.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/nmi.h>
-#include <linux/io.h>
-#include <linux/debugfs.h>
-#include <linux/pm_runtime.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/sysrq.h>
+#include <beep/slab.h>
+#include <beep/serial_reg.h>
+#include <beep/circ_buf.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial_core.h>
+#include <beep/serial_mfd.h>
+#include <beep/dma-mapping.h>
+#include <beep/pci.h>
+#include <beep/nmi.h>
+#include <beep/io.h>
+#include <beep/debugfs.h>
+#include <beep/pm_runtime.h>
 
 #define HSU_DMA_BUF_SIZE	2048
 

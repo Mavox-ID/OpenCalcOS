@@ -11,9 +11,9 @@
  *               Christian Borntraeger <borntraeger@de.ibm.com>
  */
 
-#include <linux/kvm_host.h>
-#include <linux/errno.h>
-#include <linux/pagemap.h>
+#include <beep/kvm_host.h>
+#include <beep/errno.h>
+#include <beep/pagemap.h>
 
 #include <asm/kvm_host.h>
 

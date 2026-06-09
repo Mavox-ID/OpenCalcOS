@@ -20,12 +20,12 @@
 #ifndef __DELAYED_TREE_OPERATION_H
 #define __DELAYED_TREE_OPERATION_H
 
-#include <linux/rbtree.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/atomic.h>
+#include <beep/rbtree.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
+#include <beep/list.h>
+#include <beep/wait.h>
+#include <beep/atomic.h>
 
 #include "ctree.h"
 

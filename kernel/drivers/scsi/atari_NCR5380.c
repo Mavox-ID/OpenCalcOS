@@ -1,13 +1,13 @@
 /*
  * NCR 5380 generic driver routines.  These should make it *trivial*
- *	to implement 5380 SCSI drivers under Linux with a non-trantor
+ *	to implement 5380 SCSI drivers under Beep with a non-trantor
  *	architecture.
  *
  *	Note that these routines also work with NR53c400 family chips.
  *
  * Copyright 1993, Drew Eckhardt
  *	Visionary Computing
- *	(Unix and Linux consulting and custom programming)
+ *	(Unix and Beep consulting and custom programming)
  *	drew@colorado.edu
  *	+1 (303) 666-5836
  *
@@ -105,7 +105,7 @@
  * Design
  * Issues :
  *
- * The other Linux SCSI drivers were written when Linux was Intel PC-only,
+ * The other Beep SCSI drivers were written when Beep was Intel PC-only,
  * and specifically for each board rather than each chip.  This makes their
  * adaptation to platforms like the Mac (Some of which use NCR5380's)
  * more difficult than it has to be.
@@ -114,7 +114,7 @@
  * routines were implemented, meaning their implementations of queued
  * commands were hacked on rather than designed in from the start.
  *
- * When I designed the Linux SCSI drivers I figured that
+ * When I designed the Beep SCSI drivers I figured that
  * while having two different SCSI boards in a system might be useful
  * for debugging things, two of the same type wouldn't be used.
  * Well, I was wrong and a number of users have mailed me about running
@@ -203,7 +203,7 @@
 
 /*
  * Using this file :
- * This file a skeleton Linux SCSI driver for the NCR 5380 series
+ * This file a skeleton Beep SCSI driver for the NCR 5380 series
  * of chips.  To use it, you write an architecture specific functions
  * and macros and include this file in your driver.
  *
@@ -528,7 +528,7 @@ static inline void initialize_SCp(Scsi_Cmnd *cmd)
 	}
 }
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 #if NDEBUG
 static struct {
@@ -651,9 +651,9 @@ static inline void NCR5380_print_phase(struct Scsi_Host *instance)
  * interrupt or bottom half.
  */
 
-#include <linux/gfp.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
+#include <beep/gfp.h>
+#include <beep/workqueue.h>
+#include <beep/interrupt.h>
 
 static volatile int main_running;
 static DECLARE_WORK(NCR5380_tqueue, NCR5380_main);
@@ -2957,7 +2957,7 @@ static int NCR5380_bus_reset(Scsi_Cmnd *cmd)
 	 * on any queue, so they won't be retried ...
 	 *
 	 * Conclusion: either scsi.c disables timeout for all resetted commands
-	 * immediately, or we lose!  As of linux-2.0.20 it doesn't.
+	 * immediately, or we lose!  As of beep-2.0.20 it doesn't.
 	 */
 
 	/* After the reset, there are no more connected or disconnected commands

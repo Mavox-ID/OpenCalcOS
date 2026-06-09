@@ -6,10 +6,10 @@
  * Copyright (C) 1998-2000  Jens Axboe <axboe@suse.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/cdrom.h>
-#include <linux/gfp.h>
-#include <linux/ide.h>
+#include <beep/kernel.h>
+#include <beep/cdrom.h>
+#include <beep/gfp.h>
+#include <beep/ide.h>
 #include <scsi/scsi.h>
 
 #include "ide-cd.h"

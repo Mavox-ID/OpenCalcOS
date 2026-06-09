@@ -19,9 +19,9 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/bitops.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 #include <asm/bug.h>
 #include "dvb_math.h"
 

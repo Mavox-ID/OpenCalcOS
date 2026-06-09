@@ -18,31 +18,31 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/bitmap.h>
-#include <linux/bug.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdesc.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <beep/bitmap.h>
+#include <beep/bug.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/irqdesc.h>
+#include <beep/irqdomain.h>
+#include <beep/module.h>
+#include <beep/of_address.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/pinctrl/machine.h>
+#include <beep/pinctrl/pinconf.h>
+#include <beep/pinctrl/pinctrl.h>
+#include <beep/pinctrl/pinmux.h>
+#include <beep/platform_device.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
 
 #define MODULE_NAME "pinctrl-bcm2835"
 #define BCM2835_NUM_GPIOS 54

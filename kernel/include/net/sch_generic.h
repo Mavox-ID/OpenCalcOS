@@ -1,11 +1,11 @@
 #ifndef __NET_SCHED_GENERIC_H
 #define __NET_SCHED_GENERIC_H
 
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/pkt_sched.h>
-#include <linux/pkt_cls.h>
+#include <beep/netdevice.h>
+#include <beep/types.h>
+#include <beep/rcupdate.h>
+#include <beep/pkt_sched.h>
+#include <beep/pkt_cls.h>
 #include <net/gen_stats.h>
 #include <net/rtnetlink.h>
 
@@ -438,7 +438,7 @@ static inline unsigned int qdisc_pkt_len(const struct sk_buff *skb)
 	return qdisc_skb_cb(skb)->pkt_len;
 }
 
-/* additional qdisc xmit flags (NET_XMIT_MASK in linux/netdevice.h) */
+/* additional qdisc xmit flags (NET_XMIT_MASK in beep/netdevice.h) */
 enum net_xmit_qdisc_t {
 	__NET_XMIT_STOLEN = 0x00010000,
 	__NET_XMIT_BYPASS = 0x00020000,

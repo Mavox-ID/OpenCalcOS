@@ -1,4 +1,4 @@
-/* head.S: Initial boot code for the Sparc64 port of Linux.
+/* head.S: Initial boot code for the Sparc64 port of Beep.
  *
  * Copyright (C) 1996, 1997, 2007 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1996 David Sitsky (David.Sitsky@anu.edu.au)
@@ -6,11 +6,11 @@
  * Copyright (C) 1997 Miguel de Icaza (miguel@nuclecu.unam.mx)
  */
 
-#include <linux/version.h>
-#include <linux/errno.h>
-#include <linux/threads.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <beep/version.h>
+#include <beep/errno.h>
+#include <beep/threads.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
 #include <asm/thread_info.h>
 #include <asm/asi.h>
 #include <asm/pstate.h>
@@ -55,7 +55,7 @@ stext:
 	.global sparc_ramdisk_image64
 
         .ascii  "HdrS"
-        .word   LINUX_VERSION_CODE
+        .word   BEEP_VERSION_CODE
 
 	/* History:
 	 *
@@ -724,9 +724,9 @@ tlb_fixup_done:
 	 * point.
 	 *
 	 * There used to be enormous complexity wrt. transferring
-	 * over from the firmware's trap table to the Linux kernel's.
+	 * over from the firmware's trap table to the Beep kernel's.
 	 * For example, there was a chicken & egg problem wrt. building
-	 * the OBP page tables, yet needing to be on the Linux kernel
+	 * the OBP page tables, yet needing to be on the Beep kernel
 	 * trap table (to translate PAGE_OFFSET addresses) in order to
 	 * do that.
 	 *
@@ -746,7 +746,7 @@ setup_trap_table:
 	rdpr	%pil, %l1
 	wrpr	%g0, PIL_NORMAL_MAX, %pil
 
-	/* Make the firmware call to jump over to the Linux trap table.  */
+	/* Make the firmware call to jump over to the Beep trap table.  */
 	sethi	%hi(is_sun4v), %o0
 	lduw	[%o0 + %lo(is_sun4v)], %o0
 	brz,pt	%o0, 1f

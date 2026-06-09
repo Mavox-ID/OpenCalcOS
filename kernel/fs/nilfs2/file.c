@@ -21,9 +21,9 @@
  *            Ryusuke Konishi <ryusuke@osrg.net>
  */
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/writeback.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/writeback.h>
 #include "nilfs.h"
 #include "segment.h"
 

@@ -12,32 +12,32 @@
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/i2c/at24.h>
-#include <linux/leds.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/slab.h>
-#include <linux/mtd/nand.h>
-#include <linux/input.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/eeprom.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/i2c/at24.h>
+#include <beep/leds.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/slab.h>
+#include <beep/mtd/nand.h>
+#include <beep/input.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/eeprom.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 
 #include <mach/mux.h>
 #include <mach/common.h>
-#include <linux/platform_data/i2c-davinci.h>
+#include <beep/platform_data/i2c-davinci.h>
 #include <mach/serial.h>
-#include <linux/platform_data/mmc-davinci.h>
-#include <linux/platform_data/mtd-davinci.h>
-#include <linux/platform_data/keyscan-davinci.h>
+#include <beep/platform_data/mmc-davinci.h>
+#include <beep/platform_data/mtd-davinci.h>
+#include <beep/platform_data/keyscan-davinci.h>
 
 #include <media/tvp514x.h>
 

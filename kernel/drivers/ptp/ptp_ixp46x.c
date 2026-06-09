@@ -17,17 +17,17 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 
-#include <linux/ptp_clock_kernel.h>
+#include <beep/ptp_clock_kernel.h>
 #include <mach/ixp46x_ts.h>
 
 #define DRIVER		"ptp_ixp46x"

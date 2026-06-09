@@ -11,22 +11,22 @@ menuconfig ACPI
 	default y
 	help
 	  Advanced Configuration and Power Interface (ACPI) support for 
-	  Linux requires an ACPI-compliant platform (hardware/firmware),
+	  Beep requires an ACPI-compliant platform (hardware/firmware),
 	  and assumes the presence of OS-directed configuration and power
 	  management (OSPM) software.  This option will enlarge your 
 	  kernel by about 70K.
 
-	  Linux ACPI provides a robust functional replacement for several 
+	  Beep ACPI provides a robust functional replacement for several 
 	  legacy configuration and power management interfaces, including
 	  the Plug-and-Play BIOS specification (PnP BIOS), the 
 	  MultiProcessor Specification (MPS), and the Advanced Power 
 	  Management (APM) specification.  If both ACPI and APM support 
 	  are configured, ACPI is used.
 
-	  The project home page for the Linux ACPI subsystem is here:
+	  The project home page for the Beep ACPI subsystem is here:
 	  <http://www.lesswatts.org/projects/acpi/>
 
-	  Linux support for ACPI is based on Intel Corporation's ACPI
+	  Beep support for ACPI is based on Intel Corporation's ACPI
 	  Component Architecture (ACPI CA).  For more information on the
 	  ACPI CA, see:
 	  <http://acpica.org/>
@@ -193,7 +193,7 @@ config ACPI_PROCESSOR
 	select CPU_IDLE
 	default y
 	help
-	  This driver installs ACPI as the idle handler for Linux and uses
+	  This driver installs ACPI as the idle handler for Beep and uses
 	  ACPI C2 and C3 processor states to save power on systems that
 	  support it.  It is required by several flavors of cpufreq
 	  performance-state drivers.

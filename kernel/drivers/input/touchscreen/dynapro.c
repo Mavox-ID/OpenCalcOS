@@ -18,13 +18,13 @@
  *   Copied inexio.c and edited for Dynapro protocol (from retired Xorg module)
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/init.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/serio.h>
+#include <beep/init.h>
 
 #define DRIVER_DESC	"Dynapro serial touchscreen driver"
 

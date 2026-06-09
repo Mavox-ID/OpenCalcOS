@@ -9,23 +9,23 @@
  * 	Casey Schaufler <casey@schaufler-ca.com>
  * 	Ahmed S. Darwish <darwish.07@gmail.com>
  *
- * Special thanks to the authors of selinuxfs.
+ * Special thanks to the authors of sebeepfs.
  *
  *	Karl MacMillan <kmacmillan@tresys.com>
  *	James Morris <jmorris@redhat.com>
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
-#include <linux/security.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/vmalloc.h>
+#include <beep/security.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 #include <net/net_namespace.h>
 #include <net/cipso_ipv4.h>
-#include <linux/seq_file.h>
-#include <linux/ctype.h>
-#include <linux/audit.h>
+#include <beep/seq_file.h>
+#include <beep/ctype.h>
+#include <beep/audit.h>
 #include "smack.h"
 
 /*

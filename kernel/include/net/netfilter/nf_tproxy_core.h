@@ -1,9 +1,9 @@
 #ifndef _NF_TPROXY_CORE_H
 #define _NF_TPROXY_CORE_H
 
-#include <linux/types.h>
-#include <linux/in.h>
-#include <linux/skbuff.h>
+#include <beep/types.h>
+#include <beep/in.h>
+#include <beep/skbuff.h>
 #include <net/sock.h>
 #include <net/inet_hashtables.h>
 #include <net/inet6_hashtables.h>

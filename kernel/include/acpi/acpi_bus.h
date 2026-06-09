@@ -26,7 +26,7 @@
 #ifndef __ACPI_BUS_H__
 #define __ACPI_BUS_H__
 
-#include <linux/device.h>
+#include <beep/device.h>
 
 #include <acpi/acpi.h>
 
@@ -58,7 +58,7 @@ acpi_status
 acpi_get_physical_device_location(acpi_handle handle, struct acpi_pld_info **pld);
 #ifdef CONFIG_ACPI
 
-#include <linux/proc_fs.h>
+#include <beep/proc_fs.h>
 
 #define ACPI_BUS_FILE_ROOT	"acpi"
 extern struct proc_dir_entry *acpi_root_dir;

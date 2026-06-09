@@ -6,15 +6,15 @@
  * Code is partially derived from pcic.c
  */
 
-#include <linux/of_device.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/export.h>
+#include <beep/of_device.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/export.h>
 #include <asm/leon.h>
 #include <asm/leon_pci.h>
 
 /* The LEON architecture does not rely on a BIOS or bootloader to setup
- * PCI for us. The Linux generic routines are used to setup resources,
+ * PCI for us. The Beep generic routines are used to setup resources,
  * reset values of configuration-space register settings are preserved.
  *
  * PCI Memory and Prefetchable Memory is direct-mapped. However I/O Space is

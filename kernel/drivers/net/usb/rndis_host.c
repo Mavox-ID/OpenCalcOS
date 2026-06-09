@@ -16,18 +16,18 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/usbnet.h>
-#include <linux/usb/rndis_host.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/workqueue.h>
+#include <beep/slab.h>
+#include <beep/mii.h>
+#include <beep/usb.h>
+#include <beep/usb/cdc.h>
+#include <beep/usb/usbnet.h>
+#include <beep/usb/rndis_host.h>
 
 
 /*
@@ -340,7 +340,7 @@ generic_rndis_bind(struct usbnet *dev, struct usb_interface *intf, int flags)
 	 * NOTE: there still seems to be wierdness here, as if we need
 	 * to do some more things to make sure WinCE targets accept this.
 	 * They default to jumbograms of 8KB or 16KB, which is absurd
-	 * for such low data rates and which is also more than Linux
+	 * for such low data rates and which is also more than Beep
 	 * can usually expect to allocate for SKB data...
 	 */
 	net->hard_header_len += sizeof (struct rndis_data_hdr);
@@ -569,7 +569,7 @@ rndis_tx_fixup(struct usbnet *dev, struct sk_buff *skb, gfp_t flags)
 	skb = skb2;
 
 	/* fill out the RNDIS header.  we won't bother trying to batch
-	 * packets; Linux minimizes wasted bandwidth through tx queues.
+	 * packets; Beep minimizes wasted bandwidth through tx queues.
 	 */
 fill:
 	hdr = (void *) __skb_push(skb, sizeof *hdr);

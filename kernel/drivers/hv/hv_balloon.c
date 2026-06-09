@@ -18,21 +18,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/mman.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/completion.h>
-#include <linux/memory_hotplug.h>
-#include <linux/memory.h>
-#include <linux/notifier.h>
-#include <linux/mman.h>
-#include <linux/percpu_counter.h>
+#include <beep/kernel.h>
+#include <beep/mman.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/kthread.h>
+#include <beep/completion.h>
+#include <beep/memory_hotplug.h>
+#include <beep/memory.h>
+#include <beep/notifier.h>
+#include <beep/mman.h>
+#include <beep/percpu_counter.h>
 
-#include <linux/hyperv.h>
+#include <beep/hyperv.h>
 
 /*
  * We begin with definitions supporting the Dynamic Memory protocol
@@ -339,7 +339,7 @@ struct dm_unballoon_response {
  *
  * mem_range: Memory range to hot add.
  *
- * On Linux we currently don't support this since we cannot hot add
+ * On Beep we currently don't support this since we cannot hot add
  * arbitrary granularity of memory.
  */
 

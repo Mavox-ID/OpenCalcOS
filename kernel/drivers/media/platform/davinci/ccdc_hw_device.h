@@ -21,8 +21,8 @@
 #define _CCDC_HW_DEVICE_H
 
 #ifdef __KERNEL__
-#include <linux/videodev2.h>
-#include <linux/device.h>
+#include <beep/videodev2.h>
+#include <beep/device.h>
 #include <media/davinci/vpfe_types.h>
 #include <media/davinci/ccdc_types.h>
 

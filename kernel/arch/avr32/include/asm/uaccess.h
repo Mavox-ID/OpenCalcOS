@@ -8,8 +8,8 @@
 #ifndef __ASM_AVR32_UACCESS_H
 #define __ASM_AVR32_UACCESS_H
 
-#include <linux/errno.h>
-#include <linux/sched.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
 
 #define VERIFY_READ	0
 #define VERIFY_WRITE	1

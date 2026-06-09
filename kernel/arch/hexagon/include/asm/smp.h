@@ -1,7 +1,7 @@
 /*
  * SMP definitions for the Hexagon architecture
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -21,7 +21,7 @@
 #ifndef __ASM_SMP_H
 #define __ASM_SMP_H
 
-#include <linux/cpumask.h>
+#include <beep/cpumask.h>
 
 #define raw_smp_processor_id() (current_thread_info()->cpu)
 

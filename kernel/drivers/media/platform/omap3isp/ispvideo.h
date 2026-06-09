@@ -26,7 +26,7 @@
 #ifndef OMAP3_ISP_VIDEO_H
 #define OMAP3_ISP_VIDEO_H
 
-#include <linux/v4l2-mediabus.h>
+#include <beep/v4l2-mediabus.h>
 #include <media/media-entity.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-fh.h>

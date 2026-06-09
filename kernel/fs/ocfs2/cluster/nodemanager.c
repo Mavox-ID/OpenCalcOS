@@ -19,10 +19,10 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/configfs.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/configfs.h>
 
 #include "tcp.h"
 #include "nodemanager.h"

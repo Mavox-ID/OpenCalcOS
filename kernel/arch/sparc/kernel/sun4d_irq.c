@@ -5,8 +5,8 @@
  *  Heavily based on arch/sparc/kernel/irq.c.
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/seq_file.h>
+#include <beep/kernel_stat.h>
+#include <beep/seq_file.h>
 
 #include <asm/timer.h>
 #include <asm/traps.h>
@@ -325,7 +325,7 @@ unsigned int sun4d_build_device_irq(struct platform_device *op,
 	struct device_node *dp = op->dev.of_node;
 	struct device_node *board_parent, *bus = dp->parent;
 	char *bus_connection;
-	const struct linux_prom_registers *regs;
+	const struct beep_prom_registers *regs;
 	unsigned int pil;
 	unsigned int irq;
 	int board, slot;

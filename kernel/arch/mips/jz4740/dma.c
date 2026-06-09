@@ -13,12 +13,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
 
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 #include <asm/mach-jz4740/dma.h>
 #include <asm/mach-jz4740/base.h>
 

@@ -1,5 +1,5 @@
 /*
- * linux/drivers/mmc/card/sdio_uart.c - SDIO UART/GPS driver
+ * beep/drivers/mmc/card/sdio_uart.c - SDIO UART/GPS driver
  *
  * Based on drivers/serial/8250.c and drivers/serial/serial_core.c
  * by Russell King.
@@ -26,23 +26,23 @@
  * concurrent access to the same port.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/seq_file.h>
-#include <linux/serial_reg.h>
-#include <linux/circ_buf.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/kfifo.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mutex.h>
+#include <beep/seq_file.h>
+#include <beep/serial_reg.h>
+#include <beep/circ_buf.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/kfifo.h>
+#include <beep/slab.h>
 
-#include <linux/mmc/core.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
+#include <beep/mmc/core.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/sdio_func.h>
+#include <beep/mmc/sdio_ids.h>
 
 
 #define UART_NR		8	/* Number of UARTs this driver can handle */

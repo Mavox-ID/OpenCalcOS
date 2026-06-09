@@ -3,15 +3,15 @@
  * low level stuff for hfcs based cards (Teles3c, ACER P10)
  *
  * Author       Karsten Keil
- * Copyright    by Karsten Keil      <keil@isdn4linux.de>
+ * Copyright    by Karsten Keil      <keil@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
  */
 
-#include <linux/init.h>
-#include <linux/isapnp.h>
+#include <beep/init.h>
+#include <beep/isapnp.h>
 #include "hisax.h"
 #include "hfc_2bds0.h"
 #include "isdnl1.h"

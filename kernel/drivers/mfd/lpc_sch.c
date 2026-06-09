@@ -23,13 +23,13 @@
  *  the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/acpi.h>
-#include <linux/pci.h>
-#include <linux/mfd/core.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/acpi.h>
+#include <beep/pci.h>
+#include <beep/mfd/core.h>
 
 #define SMBASE		0x40
 #define SMBUS_IO_SIZE	64

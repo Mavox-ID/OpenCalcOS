@@ -9,13 +9,13 @@
  *	Copyright (C) 2008 Rod Whitby <rod@whitby.id.au>
  */
 
-#include <linux/if_ether.h>
-#include <linux/irq.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/io.h>
-#include <linux/w1-gpio.h>
-#include <linux/mtd/plat-ram.h>
+#include <beep/if_ether.h>
+#include <beep/irq.h>
+#include <beep/serial.h>
+#include <beep/serial_8250.h>
+#include <beep/io.h>
+#include <beep/w1-gpio.h>
+#include <beep/mtd/plat-ram.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/flash.h>

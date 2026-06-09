@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/tlbv4wbi.S
+ *  beep/arch/arm/mm/tlbv4wbi.S
  *
  *  Copyright (C) 1997-2002 Russell King
  *
@@ -12,8 +12,8 @@
  *
  *  Processors: ARM920 ARM922 ARM925 ARM926 XScale
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/asm-offsets.h>
 #include <asm/tlbflush.h>
 #include "proc-macros.S"

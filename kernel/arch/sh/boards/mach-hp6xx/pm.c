@@ -6,12 +6,12 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License.
  */
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
+#include <beep/init.h>
+#include <beep/suspend.h>
+#include <beep/errno.h>
+#include <beep/time.h>
+#include <beep/delay.h>
+#include <beep/gfp.h>
 #include <asm/io.h>
 #include <asm/hd64461.h>
 #include <asm/bl_bit.h>

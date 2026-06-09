@@ -1,6 +1,6 @@
 #ifndef _NF_NAT_CORE_H
 #define _NF_NAT_CORE_H
-#include <linux/list.h>
+#include <beep/list.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_nat.h>
 

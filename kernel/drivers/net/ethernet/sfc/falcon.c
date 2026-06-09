@@ -8,14 +8,14 @@
  * by the Free Software Foundation, incorporated herein by reference.
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/i2c.h>
-#include <linux/mii.h>
-#include <linux/slab.h>
+#include <beep/bitops.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
+#include <beep/i2c.h>
+#include <beep/mii.h>
+#include <beep/slab.h>
 #include "net_driver.h"
 #include "bitfield.h"
 #include "efx.h"
@@ -1852,7 +1852,7 @@ const struct efx_nic_type falcon_b0_nic_type = {
 
 	.revision = EFX_REV_FALCON_B0,
 	/* Map everything up to and including the RSS indirection
-	 * table.  Don't map MSI-X table, MSI-X PBA since Linux
+	 * table.  Don't map MSI-X table, MSI-X PBA since Beep
 	 * requires that they not be mapped.  */
 	.mem_map_size = (FR_BZ_RX_INDIRECTION_TBL +
 			 FR_BZ_RX_INDIRECTION_TBL_STEP *

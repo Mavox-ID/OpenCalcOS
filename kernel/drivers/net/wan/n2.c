@@ -1,5 +1,5 @@
 /*
- * SDL Inc. RISCom/N2 synchronous serial card driver for Linux
+ * SDL Inc. RISCom/N2 synchronous serial card driver for Beep
  *
  * Copyright (C) 1998-2003 Krzysztof Halasa <khc@pm.waw.pl>
  *
@@ -7,7 +7,7 @@
  * under the terms of version 2 of the GNU General Public License
  * as published by the Free Software Foundation.
  *
- * For information see <http://www.kernel.org/pub/linux/utils/net/hdlc/>
+ * For information see <http://www.kernel.org/pub/beep/utils/net/hdlc/>
  *
  * Note: integrated CSU/DSU/DDS are not supported by this driver
  *
@@ -18,20 +18,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/capability.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/moduleparam.h>
-#include <linux/netdevice.h>
-#include <linux/hdlc.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/capability.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/in.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/moduleparam.h>
+#include <beep/netdevice.h>
+#include <beep/hdlc.h>
 #include <asm/io.h>
 #include "hd64570.h"
 

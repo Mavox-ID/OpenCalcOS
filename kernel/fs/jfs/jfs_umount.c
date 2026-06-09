@@ -27,7 +27,7 @@
  * as unmount of the aggerate;
  */
 
-#include <linux/fs.h>
+#include <beep/fs.h>
 #include "jfs_incore.h"
 #include "jfs_filsys.h"
 #include "jfs_superblock.h"

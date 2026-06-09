@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/board-omap3beagle.c
+ * beep/arch/arm/mach-omap2/board-omap3beagle.c
  *
  * Copyright (C) 2008 Texas Instruments
  *
@@ -12,27 +12,27 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/leds.h>
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
-#include <linux/opp.h>
-#include <linux/cpu.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/leds.h>
+#include <beep/gpio.h>
+#include <beep/input.h>
+#include <beep/gpio_keys.h>
+#include <beep/opp.h>
+#include <beep/cpu.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/nand.h>
-#include <linux/mmc/host.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/nand.h>
+#include <beep/mmc/host.h>
 
-#include <linux/regulator/machine.h>
-#include <linux/i2c/twl.h>
+#include <beep/regulator/machine.h>
+#include <beep/i2c/twl.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -41,7 +41,7 @@
 
 #include <video/omapdss.h>
 #include <video/omap-panel-tfp410.h>
-#include <linux/platform_data/mtd-nand-omap2.h>
+#include <beep/platform_data/mtd-nand-omap2.h>
 
 #include "common.h"
 #include "omap_device.h"

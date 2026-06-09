@@ -15,9 +15,9 @@
 #ifndef _ASM_TILE_PCI_H
 #define _ASM_TILE_PCI_H
 
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/numa.h>
+#include <beep/dma-mapping.h>
+#include <beep/pci.h>
+#include <beep/numa.h>
 #include <asm-generic/pci_iomap.h>
 
 #ifndef __tilegx__
@@ -146,7 +146,7 @@ struct pci_controller {
 	int pio_mem_index;	/* PIO region index for memory access */
 
 	/*
-	 * Mem-Map regions for all the memory controllers so that Linux can
+	 * Mem-Map regions for all the memory controllers so that Beep can
 	 * map all of its physical memory space to the PCI bus.
 	 */
 	int mem_maps[MAX_NUMNODES];
@@ -164,7 +164,7 @@ struct pci_controller {
 
 	struct pci_ops *ops;
 
-	/* Table that maps the INTx numbers to Linux irq numbers. */
+	/* Table that maps the INTx numbers to Beep irq numbers. */
 	int irq_intx_table[4];
 
 	/* Address ranges that are routed to this controller/bridge. */
@@ -203,7 +203,7 @@ static inline int pci_proc_domain(struct pci_bus *bus)
 /*
  * pcibios_assign_all_busses() tells whether or not the bus numbers
  * should be reassigned, in case the BIOS didn't do it correctly, or
- * in case we don't have a BIOS and we want to let Linux do it.
+ * in case we don't have a BIOS and we want to let Beep do it.
  */
 static inline int pcibios_assign_all_busses(void)
 {

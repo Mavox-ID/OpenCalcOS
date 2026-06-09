@@ -1,5 +1,5 @@
-#include <linux/vgaarb.h>
-#include <linux/vga_switcheroo.h>
+#include <beep/vgaarb.h>
+#include <beep/vga_switcheroo.h>
 
 #include <drm/drmP.h>
 #include <drm/drm_crtc_helper.h>

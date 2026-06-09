@@ -8,12 +8,12 @@
  *    Copyright 2001, Cliff Brake <cbrake@accelent.com> and others
  */
 
-#include <linux/suspend.h>
-#include <linux/sched.h>
-#include <linux/proc_fs.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/irq.h>
+#include <beep/suspend.h>
+#include <beep/sched.h>
+#include <beep/proc_fs.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/irq.h>
 
 #include <asm/cplb.h>
 #include <asm/gpio.h>
@@ -52,7 +52,7 @@ void bfin_pm_suspend_standby_enter(void)
 	/* BF52x system reset does not properly reset SIC_IWR1 which
 	 * will screw up the bootrom as it relies on MDMA0/1 waking it
 	 * up from IDLE instructions.  See this report for more info:
-	 * http://blackfin.uclinux.org/gf/tracker/4323
+	 * http://blackfin.ucbeep.org/gf/tracker/4323
 	 */
 	if (ANOMALY_05000435)
 		bfin_write_SIC_IWR1(IWR_ENABLE(10) | IWR_ENABLE(11));

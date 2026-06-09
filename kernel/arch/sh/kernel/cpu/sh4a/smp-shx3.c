@@ -8,15 +8,15 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/cpumask.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/cpu.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/cpumask.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/cpu.h>
 #include <asm/sections.h>
 
 #define STBCR_REG(phys_id) (0xfe400004 | (phys_id << 12))

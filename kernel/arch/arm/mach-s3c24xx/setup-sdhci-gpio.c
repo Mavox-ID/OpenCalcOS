@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-s3c2416/setup-sdhci-gpio.c
+/* beep/arch/arm/plat-s3c2416/setup-sdhci-gpio.c
  *
  * Copyright 2010 Promwad Innovation Company
  *	Yauhen Kharuzhy <yauhen.kharuzhy@promwad.com>
@@ -12,12 +12,12 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
 
 #include <mach/regs-gpio.h>
 #include <plat/gpio-cfg.h>

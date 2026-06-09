@@ -18,32 +18,32 @@
  * Copyright (C) IBM Corporation, 2003, 2010
  *
  * Authors: Dave Larson <larson1@us.ibm.com>
- *	    Santiago Leon <santil@linux.vnet.ibm.com>
- *	    Brian King <brking@linux.vnet.ibm.com>
- *	    Robert Jennings <rcj@linux.vnet.ibm.com>
+ *	    Santiago Leon <santil@beep.vnet.ibm.com>
+ *	    Brian King <brking@beep.vnet.ibm.com>
+ *	    Robert Jennings <rcj@beep.vnet.ibm.com>
  *	    Anton Blanchard <anton@au.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/pm.h>
-#include <linux/ethtool.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/dma-mapping.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/mm.h>
+#include <beep/pm.h>
+#include <beep/ethtool.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/slab.h>
 #include <asm/hvcall.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/vio.h>
 #include <asm/iommu.h>
 #include <asm/firmware.h>
@@ -61,7 +61,7 @@ static const char ibmveth_driver_name[] = "ibmveth";
 static const char ibmveth_driver_string[] = "IBM Power Virtual Ethernet Driver";
 #define ibmveth_driver_version "1.04"
 
-MODULE_AUTHOR("Santiago Leon <santil@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Santiago Leon <santil@beep.vnet.ibm.com>");
 MODULE_DESCRIPTION("IBM Power Virtual Ethernet Driver");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(ibmveth_driver_version);

@@ -24,8 +24,8 @@
 
 /* This file implements EXT2-compatible extended attribute ioctl() calls */
 
-#include <linux/compat.h>
-#include <linux/mount.h>
+#include <beep/compat.h>
+#include <beep/mount.h>
 #include "ubifs.h"
 
 /**
@@ -118,7 +118,7 @@ static int setflags(struct inode *inode, int flags)
 	mutex_lock(&ui->ui_mutex);
 	oldflags = ubifs2ioctl(ui->flags);
 	if ((flags ^ oldflags) & (FS_APPEND_FL | FS_IMMUTABLE_FL)) {
-		if (!capable(CAP_LINUX_IMMUTABLE)) {
+		if (!capable(CAP_BEEP_IMMUTABLE)) {
 			err = -EPERM;
 			goto out_unlock;
 		}

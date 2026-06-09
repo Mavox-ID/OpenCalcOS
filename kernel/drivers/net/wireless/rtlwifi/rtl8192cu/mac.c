@@ -40,7 +40,7 @@
 #include "mac.h"
 #include "trx.h"
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 /* macro to shorten lines */
 

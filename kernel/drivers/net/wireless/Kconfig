@@ -59,15 +59,15 @@ config AIRO
 	select WEXT_SPY
 	select WEXT_PRIV
 	---help---
-	  This is the standard Linux driver to support Cisco/Aironet ISA and
+	  This is the standard Beep driver to support Cisco/Aironet ISA and
 	  PCI 802.11 wireless cards.
 	  It supports the new 802.11b cards from Cisco (Cisco 34X, Cisco 35X
 	  - with or without encryption) as well as card before the Cisco
 	  acquisition (Aironet 4500, Aironet 4800, Aironet 4800B).
 
-	  This driver support both the standard Linux Wireless Extensions
-	  and Cisco proprietary API, so both the Linux Wireless Tools and the
-	  Cisco Linux utilities can be used to configure the card.
+	  This driver support both the standard Beep Wireless Extensions
+	  and Cisco proprietary API, so both the Beep Wireless Tools and the
+	  Cisco Beep utilities can be used to configure the card.
 
 	  The driver can be compiled as a module and will be named "airo".
 
@@ -80,7 +80,7 @@ config ATMEL
       select CRC32
        ---help---
         A driver 802.11b wireless cards based on the Atmel fast-vnet
-        chips. This driver supports standard Linux wireless extensions.
+        chips. This driver supports standard Beep wireless extensions.
 
         Many  cards based on this chipset do not have flash memory
         and need their firmware loaded at start-up. If yours is
@@ -123,18 +123,18 @@ config AIRO_CS
 	select CRYPTO
 	select CRYPTO_AES
 	---help---
-	  This is the standard Linux driver to support Cisco/Aironet PCMCIA
+	  This is the standard Beep driver to support Cisco/Aironet PCMCIA
 	  802.11 wireless cards.  This driver is the same as the Aironet
-	  driver part of the Linux Pcmcia package.
+	  driver part of the Beep Pcmcia package.
 	  It supports the new 802.11b cards from Cisco (Cisco 34X, Cisco 35X
 	  - with or without encryption) as well as card before the Cisco
 	  acquisition (Aironet 4500, Aironet 4800, Aironet 4800B). It also
 	  supports OEM of Cisco such as the DELL TrueMobile 4800 and Xircom
 	  802.11b cards.
 
-	  This driver support both the standard Linux Wireless Extensions
-	  and Cisco proprietary API, so both the Linux Wireless Tools and the
-	  Cisco Linux utilities can be used to configure the card.
+	  This driver support both the standard Beep Wireless Extensions
+	  and Cisco proprietary API, so both the Beep Wireless Tools and the
+	  Cisco Beep utilities can be used to configure the card.
 
 config PCMCIA_WL3501
 	tristate "Planet WL3501 PCMCIA cards"
@@ -143,7 +143,7 @@ config PCMCIA_WL3501
 	select WEXT_SPY
 	help
 	  A driver for WL3501 PCMCIA 802.11 wireless cards made by Planet.
-	  It has basic support for Linux wireless extensions and initial
+	  It has basic support for Beep wireless extensions and initial
 	  micro support for ethtool.
 
 config PRISM54
@@ -180,7 +180,7 @@ config USB_ZD1201
 	  typically on wlan0.
 
 	  The zd1201 device requires external firmware to be loaded.
-	  This can be found at http://linux-lc100020.sourceforge.net/
+	  This can be found at http://beep-lc100020.sourceforge.net/
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called zd1201.

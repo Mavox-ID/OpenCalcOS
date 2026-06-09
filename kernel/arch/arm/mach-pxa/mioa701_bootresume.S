@@ -5,7 +5,7 @@
  * This code is licenced under the GPLv2.
 */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 
 /*

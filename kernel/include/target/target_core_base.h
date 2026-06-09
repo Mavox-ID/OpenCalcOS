@@ -1,10 +1,10 @@
 #ifndef TARGET_CORE_BASE_H
 #define TARGET_CORE_BASE_H
 
-#include <linux/in.h>
-#include <linux/configfs.h>
-#include <linux/dma-mapping.h>
-#include <linux/blkdev.h>
+#include <beep/in.h>
+#include <beep/configfs.h>
+#include <beep/dma-mapping.h>
+#include <beep/blkdev.h>
 #include <scsi/scsi_cmnd.h>
 #include <net/sock.h>
 #include <net/tcp.h>
@@ -19,7 +19,7 @@
  * By default we use 32-byte CDBs in TCM Core and subsystem plugin code.
  *
  * Note that both include/scsi/scsi_cmnd.h:MAX_COMMAND_SIZE and
- * include/linux/blkdev.h:BLOCK_MAX_CDB as of v2.6.36-rc4 still use
+ * include/beep/blkdev.h:BLOCK_MAX_CDB as of v2.6.36-rc4 still use
  * 16-byte CDBs by default and require an extra allocation for
  * 32-byte CDBs to because of legacy issues.
  *
@@ -416,7 +416,7 @@ struct se_cmd {
 	u16			scsi_sense_length;
 	/* Delay for ALUA Active/NonOptimized state access in milliseconds */
 	int			alua_nonop_delay;
-	/* See include/linux/dma-mapping.h */
+	/* See include/beep/dma-mapping.h */
 	enum dma_data_direction	data_direction;
 	/* For SAM Task Attribute */
 	int			sam_task_attr;

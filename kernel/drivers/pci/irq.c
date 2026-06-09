@@ -4,11 +4,11 @@
  * Copyright (c) 2008 James Bottomley <James.Bottomley@HansenPartnership.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/pci.h>
+#include <beep/acpi.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/pci.h>
 
 static void pci_note_irq_problem(struct pci_dev *pdev, const char *reason)
 {
@@ -18,7 +18,7 @@ static void pci_note_irq_problem(struct pci_dev *pdev, const char *reason)
 		"Potentially misrouted IRQ (Bridge %s %04x:%04x)\n",
 		dev_name(&parent->dev), parent->vendor, parent->device);
 	dev_err(&pdev->dev, "%s\n", reason);
-	dev_err(&pdev->dev, "Please report to linux-kernel@vger.kernel.org\n");
+	dev_err(&pdev->dev, "Please report to beep-kernel@vger.kernel.org\n");
 	WARN_ON(1);
 }
 

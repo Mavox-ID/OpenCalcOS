@@ -10,12 +10,12 @@
  * Simple multiplexer clock implementation
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
+#include <beep/clk.h>
+#include <beep/clk-provider.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/err.h>
 
 /*
  * DOC: basic adjustable multiplexer clock that cannot gate

@@ -3,9 +3,9 @@
  *
  * _DSM related code stolen from nouveau_acpi.c.
  */
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/vga_switcheroo.h>
+#include <beep/pci.h>
+#include <beep/acpi.h>
+#include <beep/vga_switcheroo.h>
 #include <acpi/acpi_drivers.h>
 
 #include <drm/drmP.h>

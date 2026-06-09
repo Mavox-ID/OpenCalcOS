@@ -13,13 +13,13 @@
 
 #define pr_fmt(fmt) "vexpress-osc: " fmt
 
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/vexpress.h>
+#include <beep/clkdev.h>
+#include <beep/clk-provider.h>
+#include <beep/err.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/vexpress.h>
 
 struct vexpress_osc {
 	struct vexpress_config_func *func;

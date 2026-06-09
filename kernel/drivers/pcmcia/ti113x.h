@@ -27,8 +27,8 @@
  * under either the MPL or the GPL.
  */
 
-#ifndef _LINUX_TI113X_H
-#define _LINUX_TI113X_H
+#ifndef _BEEP_TI113X_H
+#define _BEEP_TI113X_H
 
 
 /* Register definitions for TI 113X PCI-to-CardBus bridges */
@@ -980,5 +980,5 @@ static int ene_override(struct yenta_socket *socket)
 #  define ene_override ti1250_override
 #endif /* !CONFIG_YENTA_ENE_TUNE */
 
-#endif /* _LINUX_TI113X_H */
+#endif /* _BEEP_TI113X_H */
 

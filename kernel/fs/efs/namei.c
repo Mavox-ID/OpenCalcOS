@@ -6,9 +6,9 @@
  * Portions derived from work (c) 1995,1996 Christian Vogelgsang.
  */
 
-#include <linux/buffer_head.h>
-#include <linux/string.h>
-#include <linux/exportfs.h>
+#include <beep/buffer_head.h>
+#include <beep/string.h>
+#include <beep/exportfs.h>
 #include "efs.h"
 
 

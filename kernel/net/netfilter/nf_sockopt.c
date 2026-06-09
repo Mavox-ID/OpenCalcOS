@@ -1,9 +1,9 @@
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/netfilter.h>
+#include <beep/mutex.h>
 #include <net/sock.h>
 
 #include "nf_internals.h"

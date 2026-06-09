@@ -14,9 +14,9 @@
  * ---------------------------------------------------------------------------
  */
 
-#include <linux/types.h>
-#include <linux/etherdevice.h>
-#include <linux/vmalloc.h>
+#include <beep/types.h>
+#include <beep/etherdevice.h>
+#include <beep/vmalloc.h>
 
 #include "csr_wifi_hip_unifi.h"
 #include "csr_wifi_hip_conversions.h"
@@ -1952,7 +1952,7 @@ CsrResult uf_process_ma_packet_req(unifi_priv_t *priv,
     unifi_trace(priv, UDBG5, "leaving uf_process_ma_packet_req \n");
     return status;
 #else
-#ifdef CSR_NATIVE_LINUX
+#ifdef CSR_NATIVE_BEEP
     if (interfaceTag >= CSR_WIFI_NUM_INTERFACES) {
         unifi_error(priv, "interfaceTag >= CSR_WIFI_NUM_INTERFACES, interfacetag = %d\n", interfaceTag);
         return CSR_RESULT_FAILURE;

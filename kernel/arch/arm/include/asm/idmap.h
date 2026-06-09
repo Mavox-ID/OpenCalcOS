@@ -1,7 +1,7 @@
 #ifndef __ASM_IDMAP_H
 #define __ASM_IDMAP_H
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/pgtable.h>
 
 /* Tag a function as requiring to be executed via an identity mapping. */

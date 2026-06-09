@@ -4,14 +4,14 @@
  *
  * Copyright (C) by Hannu Savolainen 1993-1997
  *
- * OSS/Free for Linux is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
+ * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
  * Version 2 (June 1991). See the "COPYING" file distributed with this software
  * for more info.
  * Extended by Alan Cox for Red Hat Software. Now a loadable MIDI driver.
  * 28/4/97 - (C) Copyright Alan Cox. Released under the GPL version 2.
  *
  * Alan Cox:		Updated for new modular code. Removed snd_* irq handling. Now
- *			uses native linux resources
+ *			uses native beep resources
  * Christoph Hellwig:	Adapted to module_init/module_exit
  * Jeff Garzik:		Made it work again, in theory
  *			FIXME: If the request_irq() succeeds, the probe succeeds. Ug.
@@ -21,10 +21,10 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
 /* Mon Nov 22 22:38:35 MET 1993 marco@driq.home.usn.nl:
  *      added 6850 support, used with COVOX SoundMaster II and custom cards.
  */

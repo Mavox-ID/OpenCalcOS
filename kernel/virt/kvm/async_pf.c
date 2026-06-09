@@ -20,10 +20,10 @@
  * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mmu_context.h>
+#include <beep/kvm_host.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/mmu_context.h>
 
 #include "async_pf.h"
 #include <trace/events/kvm.h>

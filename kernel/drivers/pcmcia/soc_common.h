@@ -1,5 +1,5 @@
 /*
- * linux/drivers/pcmcia/soc_common.h
+ * beep/drivers/pcmcia/soc_common.h
  *
  * Copyright (C) 2000 John G Dorsey <john+@cs.cmu.edu>
  *
@@ -10,8 +10,8 @@
 #define _ASM_ARCH_PCMCIA
 
 /* include the world */
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
+#include <beep/clk.h>
+#include <beep/cpufreq.h>
 #include <pcmcia/ss.h>
 #include <pcmcia/cistpl.h>
 

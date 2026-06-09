@@ -24,16 +24,16 @@
 #ifndef ATL1_H
 #define ATL1_H
 
-#include <linux/compiler.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <beep/compiler.h>
+#include <beep/ethtool.h>
+#include <beep/if_vlan.h>
+#include <beep/mii.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/timer.h>
+#include <beep/types.h>
+#include <beep/workqueue.h>
 
 #include "atlx.h"
 

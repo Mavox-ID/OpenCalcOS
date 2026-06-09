@@ -18,30 +18,30 @@
  * This is the main header file to be included in each DLM source file.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/random.h>
-#include <linux/delay.h>
-#include <linux/socket.h>
-#include <linux/kthread.h>
-#include <linux/kobject.h>
-#include <linux/kref.h>
-#include <linux/kernel.h>
-#include <linux/jhash.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/idr.h>
-#include <linux/ratelimit.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/ctype.h>
+#include <beep/spinlock.h>
+#include <beep/vmalloc.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/random.h>
+#include <beep/delay.h>
+#include <beep/socket.h>
+#include <beep/kthread.h>
+#include <beep/kobject.h>
+#include <beep/kref.h>
+#include <beep/kernel.h>
+#include <beep/jhash.h>
+#include <beep/miscdevice.h>
+#include <beep/mutex.h>
+#include <beep/idr.h>
+#include <beep/ratelimit.h>
 #include <asm/uaccess.h>
 
-#include <linux/dlm.h>
+#include <beep/dlm.h>
 #include "config.h"
 
 /* Size of the temp buffer midcomms allocates on the stack.

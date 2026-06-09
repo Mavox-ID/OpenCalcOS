@@ -12,24 +12,24 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/dma-mapping.h>
-#include <linux/ethtool.h>
-#include <linux/platform_data/macb.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/gfp.h>
-#include <linux/phy.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_net.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/dma-mapping.h>
+#include <beep/ethtool.h>
+#include <beep/platform_data/macb.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/gfp.h>
+#include <beep/phy.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_net.h>
+#include <beep/pinctrl/consumer.h>
 
 #include "macb.h"
 

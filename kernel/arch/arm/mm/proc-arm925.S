@@ -1,12 +1,12 @@
 /*
- *  linux/arch/arm/mm/arm925.S: MMU functions for ARM925
+ *  beep/arch/arm/mm/arm925.S: MMU functions for ARM925
  *
  *  Copyright (C) 1999,2000 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd.
  *  Copyright (C) 2002 RidgeRun, Inc.
  *  Copyright (C) 2002-2003 MontaVista Software, Inc.
  *
- *  Update for Linux-2.6 and cache flush improvements
+ *  Update for Beep-2.6 and cache flush improvements
  *  Copyright (C) 2004 Nokia Corporation by Tony Lindgren <tony@atomide.com>
  *
  *  hacked for non-paged-MM by Hyok S. Choi, 2004.
@@ -49,8 +49,8 @@
  *        the default for OMAP-1510).
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/assembler.h>
 #include <asm/hwcap.h>
 #include <asm/pgtable-hwdef.h>

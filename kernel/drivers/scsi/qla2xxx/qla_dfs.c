@@ -6,8 +6,8 @@
  */
 #include "qla_def.h"
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 static struct dentry *qla2x00_dfs_root;
 static atomic_t qla2x00_dfs_root_count;

@@ -18,10 +18,10 @@
 #ifndef __ASSEMBLY__
 
 /*
- * NOTE: we don't include <linux/ptrace.h> or <linux/percpu.h> as one
+ * NOTE: we don't include <beep/ptrace.h> or <beep/percpu.h> as one
  * normally would, due to #include dependencies.
  */
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/ptrace.h>
 #include <asm/percpu.h>
 
@@ -294,7 +294,7 @@ extern int kstack_hash;
 /* Are we using huge pages in the TLB for kernel data? */
 extern int kdata_huge;
 
-/* Support standard Linux prefetching. */
+/* Support standard Beep prefetching. */
 #define ARCH_HAS_PREFETCH
 #define prefetch(x) __builtin_prefetch(x)
 #define PREFETCH_STRIDE CHIP_L2_LINE_SIZE()

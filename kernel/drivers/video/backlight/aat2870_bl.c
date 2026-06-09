@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/backlight/aat2870_bl.c
+ * beep/drivers/video/backlight/aat2870_bl.c
  *
  * Copyright (c) 2011, NVIDIA Corporation.
  * Author: Jin Park <jinyoungp@nvidia.com>
@@ -19,15 +19,15 @@
  * 02110-1301 USA
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/mfd/aat2870.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/mutex.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/backlight.h>
+#include <beep/mfd/aat2870.h>
 
 struct aat2870_bl_driver_data {
 	struct platform_device *pdev;

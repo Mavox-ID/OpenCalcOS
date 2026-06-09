@@ -13,7 +13,7 @@
 #ifndef _POWERPC_SYSDEV_FSL_MSI_H
 #define _POWERPC_SYSDEV_FSL_MSI_H
 
-#include <linux/of.h>
+#include <beep/of.h>
 #include <asm/msi_bitmap.h>
 
 #define NR_MSI_REG		8

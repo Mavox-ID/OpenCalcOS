@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/block/floppy.c
+ *  beep/drivers/block/floppy.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  Copyright (C) 1993, 1994  Alain Knaff
@@ -164,34 +164,34 @@
 
 /* do print messages for unexpected interrupts */
 static int print_unex = 1;
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/workqueue.h>
 #define FDPATCHES
-#include <linux/fdreg.h>
-#include <linux/fd.h>
-#include <linux/hdreg.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/bio.h>
-#include <linux/string.h>
-#include <linux/jiffies.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/mc146818rtc.h>	/* CMOS defines */
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/async.h>
+#include <beep/fdreg.h>
+#include <beep/fd.h>
+#include <beep/hdreg.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/bio.h>
+#include <beep/string.h>
+#include <beep/jiffies.h>
+#include <beep/fcntl.h>
+#include <beep/delay.h>
+#include <beep/mc146818rtc.h>	/* CMOS defines */
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/mod_devicetable.h>
+#include <beep/mutex.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
+#include <beep/async.h>
 
 /*
  * PS/2 floppies have much slower step rates than regular floppies.
@@ -251,10 +251,10 @@ static int allowed_drive_mask = 0x33;
 
 static int irqdma_allocated;
 
-#include <linux/blkdev.h>
-#include <linux/blkpg.h>
-#include <linux/cdrom.h>	/* for the compatibility eject ioctl */
-#include <linux/completion.h>
+#include <beep/blkdev.h>
+#include <beep/blkpg.h>
+#include <beep/cdrom.h>	/* for the compatibility eject ioctl */
+#include <beep/completion.h>
 
 static struct request *current_req;
 static void do_fd_request(struct request_queue *q);

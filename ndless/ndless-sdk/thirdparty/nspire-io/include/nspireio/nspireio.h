@@ -413,7 +413,7 @@ void nio_cursor_blinking_duration(nio_console* c, int duration);
 /** Sets the console cursor type.
 	@param c Console
 	@param cursor_type The cursor type. 0 is a block cursor (like a
-	Linux X11 terminal), 1 is an underscore cursor (like a Windows Command
+	Beep X11 terminal), 1 is an underscore cursor (like a Windows Command
 	Prompt window), 2 is a vertical bar cursor (like a regular text box),
 	3 is a custom cursor that is set via nio_cursor_custom, and 4 is an
 	adaptive cursor: It shows the current state of shift/ctrl/caps (default).

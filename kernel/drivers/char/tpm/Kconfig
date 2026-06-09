@@ -9,7 +9,7 @@ menuconfig TCG_TPM
 	---help---
 	  If you have a TPM security chip in your system, which
 	  implements the Trusted Computing Group's specification,
-	  say Yes and it will be accessible from within Linux.  For
+	  say Yes and it will be accessible from within Beep.  For
 	  more information see <http://www.trustedcomputinggroup.org>. 
 	  An implementation of the Trusted Software Stack (TSS), the 
 	  userspace enablement piece of the specification, can be 
@@ -30,7 +30,7 @@ config TCG_TIS
 	---help---
 	  If you have a TPM security chip that is compliant with the
 	  TCG TIS 1.2 TPM specification say Yes and it will be accessible
-	  from within Linux.  To compile this driver as a module, choose
+	  from within Beep.  To compile this driver as a module, choose
 	  M here; the module will be called tpm_tis.
 
 config TCG_TIS_I2C_INFINEON
@@ -40,7 +40,7 @@ config TCG_TIS_I2C_INFINEON
 	  If you have a TPM security chip that is compliant with the
 	  TCG TIS 1.2 TPM specification and Infineon's I2C Protocol Stack
 	  Specification 0.20 say Yes and it will be accessible from within
-	  Linux.
+	  Beep.
 	  To compile this driver as a module, choose M here; the module
 	  will be called tpm_tis_i2c_infineon.
 
@@ -49,7 +49,7 @@ config TCG_NSC
 	depends on X86
 	---help---
 	  If you have a TPM security chip from National Semiconductor 
-	  say Yes and it will be accessible from within Linux.  To 
+	  say Yes and it will be accessible from within Beep.  To 
 	  compile this driver as a module, choose M here; the module 
 	  will be called tpm_nsc.
 
@@ -58,7 +58,7 @@ config TCG_ATMEL
 	depends on PPC64 || HAS_IOPORT
 	---help---
 	  If you have a TPM security chip from Atmel say Yes and it 
-	  will be accessible from within Linux.  To compile this driver 
+	  will be accessible from within Beep.  To compile this driver 
 	  as a module, choose M here; the module will be called tpm_atmel.
 
 config TCG_INFINEON
@@ -67,18 +67,18 @@ config TCG_INFINEON
 	---help---
 	  If you have a TPM security chip from Infineon Technologies
 	  (either SLD 9630 TT 1.1 or SLB 9635 TT 1.2) say Yes and it
-	  will be accessible from within Linux.
+	  will be accessible from within Beep.
 	  To compile this driver as a module, choose M here; the module
 	  will be called tpm_infineon.
 	  Further information on this driver and the supported hardware
-	  can be found at http://www.trust.rub.de/projects/linux-device-driver-infineon-tpm/ 
+	  can be found at http://www.trust.rub.de/projects/beep-device-driver-infineon-tpm/ 
 
 config TCG_IBMVTPM
 	tristate "IBM VTPM Interface"
 	depends on PPC64
 	---help---
 	  If you have IBM virtual TPM (VTPM) support say Yes and it
-	  will be accessible from within Linux.  To compile this driver
+	  will be accessible from within Beep.  To compile this driver
 	  as a module, choose M here; the module will be called tpm_ibmvtpm.
 
 endif # TCG_TPM

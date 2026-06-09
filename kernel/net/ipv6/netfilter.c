@@ -1,9 +1,9 @@
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ipv6.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/ipv6.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv6.h>
+#include <beep/export.h>
 #include <net/dst.h>
 #include <net/ipv6.h>
 #include <net/ip6_route.h>

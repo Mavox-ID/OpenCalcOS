@@ -50,16 +50,16 @@
  *			Minor bugfixes for 2.6.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2o.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/i2o.h>
+#include <beep/mutex.h>
 
-#include <linux/mempool.h>
+#include <beep/mempool.h>
 
-#include <linux/genhd.h>
-#include <linux/blkdev.h>
-#include <linux/hdreg.h>
+#include <beep/genhd.h>
+#include <beep/blkdev.h>
+#include <beep/hdreg.h>
 
 #include <scsi/scsi.h>
 

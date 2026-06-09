@@ -5,7 +5,7 @@
 #if !defined(_TRACE_HDA_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_HDA_H
 
-#include <linux/tracepoint.h>
+#include <beep/tracepoint.h>
 
 struct hda_bus;
 struct hda_codec;

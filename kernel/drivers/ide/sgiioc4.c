@@ -19,18 +19,18 @@
  * http://oss.sgi.com/projects/GenInfo/NoticeExplan
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/blkdev.h>
-#include <linux/scatterlist.h>
-#include <linux/ioc4.h>
-#include <linux/io.h>
-#include <linux/ide.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/ioport.h>
+#include <beep/blkdev.h>
+#include <beep/scatterlist.h>
+#include <beep/ioc4.h>
+#include <beep/io.h>
+#include <beep/ide.h>
 
 #define DRV_NAME "SGIIOC4"
 

@@ -9,11 +9,11 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/export.h>
-#include <linux/oid_registry.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/bug.h>
+#include <beep/export.h>
+#include <beep/oid_registry.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/bug.h>
 #include "oid_registry_data.c"
 
 /**

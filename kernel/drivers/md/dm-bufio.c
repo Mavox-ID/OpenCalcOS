@@ -8,12 +8,12 @@
 
 #include "dm-bufio.h"
 
-#include <linux/device-mapper.h>
-#include <linux/dm-io.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/shrinker.h>
-#include <linux/module.h>
+#include <beep/device-mapper.h>
+#include <beep/dm-io.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/shrinker.h>
+#include <beep/module.h>
 
 #define DM_MSG_PREFIX "bufio"
 

@@ -19,8 +19,8 @@
  *
  */
 
-#include <linux/time.h>
-#include <linux/slab.h>
+#include <beep/time.h>
+#include <beep/slab.h>
 #include <sound/core.h>
 #include "seq_timer.h"
 #include "seq_prioq.h"

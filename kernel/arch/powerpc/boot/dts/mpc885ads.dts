@@ -109,7 +109,7 @@
 			interrupts = <3 1>;
 			interrupt-parent = <&PIC>;
 			phy-handle = <&PHY0>;
-			linux,network-index = <0>;
+			beep,network-index = <0>;
 		};
 
 		ethernet@1e00 {
@@ -121,7 +121,7 @@
 			interrupts = <7 1>;
 			interrupt-parent = <&PIC>;
 			phy-handle = <&PHY1>;
-			linux,network-index = <1>;
+			beep,network-index = <1>;
 		};
 
 		PIC: interrupt-controller@0 {
@@ -213,7 +213,7 @@
 				interrupt-parent = <&CPM_PIC>;
 				phy-handle = <&PHY2>;
 				fsl,cpm-command = <0x80>;
-				linux,network-index = <2>;
+				beep,network-index = <2>;
 			};
 
 			i2c@860 {
@@ -230,6 +230,6 @@
 	};
 
 	chosen {
-		linux,stdout-path = "/soc/cpm/serial@a80";
+		beep,stdout-path = "/soc/cpm/serial@a80";
 	};
 };

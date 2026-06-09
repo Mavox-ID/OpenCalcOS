@@ -1,7 +1,7 @@
 /*
  * fs/logfs/logfs_abi.h
  *
- * As should be obvious for Linux kernel code, license is GPLv2
+ * As should be obvious for Beep kernel code, license is GPLv2
  *
  * Copyright (c) 2005-2008 Joern Engel <joern@logfs.org>
  *

@@ -33,10 +33,10 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
 
 #include <rdma/ib_cache.h>
 

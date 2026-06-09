@@ -29,7 +29,7 @@
 					st,scan-count = <8>;
 					st,no-autorepeat;
 
-					linux,keymap = <0x205006b
+					beep,keymap = <0x205006b
 							0x4010074
 							0x3050072
 							0x1030004

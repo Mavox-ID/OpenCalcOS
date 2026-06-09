@@ -11,10 +11,10 @@
  * (at your option) any later version.
  */
 
-#include <linux/usb/audio.h>
-#include <linux/usb/audio-v2.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
+#include <beep/usb/audio.h>
+#include <beep/usb/audio-v2.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

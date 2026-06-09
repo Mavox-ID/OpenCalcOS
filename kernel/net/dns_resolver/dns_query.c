@@ -36,10 +36,10 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/dns_resolver.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/dns_resolver.h>
+#include <beep/err.h>
 #include <keys/dns_resolver-type.h>
 #include <keys/user-type.h>
 

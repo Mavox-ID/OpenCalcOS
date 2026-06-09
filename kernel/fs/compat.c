@@ -1,5 +1,5 @@
 /*
- *  linux/fs/compat.c
+ *  beep/fs/compat.c
  *
  *  Kernel compatibililty routines for e.g. 32 bit syscall support
  *  on 64 bit kernels.
@@ -15,39 +15,39 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/linkage.h>
-#include <linux/compat.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/fcntl.h>
-#include <linux/namei.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/vfs.h>
-#include <linux/ioctl.h>
-#include <linux/init.h>
-#include <linux/ncp_mount.h>
-#include <linux/nfs4_mount.h>
-#include <linux/syscalls.h>
-#include <linux/ctype.h>
-#include <linux/dirent.h>
-#include <linux/fsnotify.h>
-#include <linux/highuid.h>
-#include <linux/personality.h>
-#include <linux/rwsem.h>
-#include <linux/tsacct_kern.h>
-#include <linux/security.h>
-#include <linux/highmem.h>
-#include <linux/signal.h>
-#include <linux/poll.h>
-#include <linux/mm.h>
-#include <linux/eventpoll.h>
-#include <linux/fs_struct.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/linkage.h>
+#include <beep/compat.h>
+#include <beep/errno.h>
+#include <beep/time.h>
+#include <beep/fs.h>
+#include <beep/fcntl.h>
+#include <beep/namei.h>
+#include <beep/file.h>
+#include <beep/fdtable.h>
+#include <beep/vfs.h>
+#include <beep/ioctl.h>
+#include <beep/init.h>
+#include <beep/ncp_mount.h>
+#include <beep/nfs4_mount.h>
+#include <beep/syscalls.h>
+#include <beep/ctype.h>
+#include <beep/dirent.h>
+#include <beep/fsnotify.h>
+#include <beep/highuid.h>
+#include <beep/personality.h>
+#include <beep/rwsem.h>
+#include <beep/tsacct_kern.h>
+#include <beep/security.h>
+#include <beep/highmem.h>
+#include <beep/signal.h>
+#include <beep/poll.h>
+#include <beep/mm.h>
+#include <beep/eventpoll.h>
+#include <beep/fs_struct.h>
+#include <beep/slab.h>
+#include <beep/pagemap.h>
 
 #include <asm/uaccess.h>
 #include <asm/mmu_context.h>
@@ -541,7 +541,7 @@ ssize_t compat_rw_copy_check_uvector(int type,
 
 	/*
 	 * SuS says "The readv() function *may* fail if the iovcnt argument
-	 * was less than or equal to 0, or greater than {IOV_MAX}.  Linux has
+	 * was less than or equal to 0, or greater than {IOV_MAX}.  Beep has
 	 * traditionally returned zero for zero segments, so...
 	 */
 	if (nr_segs == 0)
@@ -563,7 +563,7 @@ ssize_t compat_rw_copy_check_uvector(int type,
 	 * We should -EINVAL if an element length is not >= 0 and fitting an
 	 * ssize_t.
 	 *
-	 * In Linux, the total length is limited to MAX_RW_COUNT, there is
+	 * In Beep, the total length is limited to MAX_RW_COUNT, there is
 	 * no overflow possibility.
 	 */
 	tot_len = 0;
@@ -822,7 +822,7 @@ asmlinkage long compat_sys_mount(const char __user * dev_name,
 	return retval;
 }
 
-struct compat_old_linux_dirent {
+struct compat_old_beep_dirent {
 	compat_ulong_t	d_ino;
 	compat_ulong_t	d_offset;
 	unsigned short	d_namlen;
@@ -830,7 +830,7 @@ struct compat_old_linux_dirent {
 };
 
 struct compat_readdir_callback {
-	struct compat_old_linux_dirent __user *dirent;
+	struct compat_old_beep_dirent __user *dirent;
 	int result;
 };
 
@@ -838,7 +838,7 @@ static int compat_fillonedir(void *__buf, const char *name, int namlen,
 			loff_t offset, u64 ino, unsigned int d_type)
 {
 	struct compat_readdir_callback *buf = __buf;
-	struct compat_old_linux_dirent __user *dirent;
+	struct compat_old_beep_dirent __user *dirent;
 	compat_ulong_t d_ino;
 
 	if (buf->result)
@@ -867,7 +867,7 @@ efault:
 }
 
 asmlinkage long compat_sys_old_readdir(unsigned int fd,
-	struct compat_old_linux_dirent __user *dirent, unsigned int count)
+	struct compat_old_beep_dirent __user *dirent, unsigned int count)
 {
 	int error;
 	struct fd f = fdget(fd);
@@ -887,7 +887,7 @@ asmlinkage long compat_sys_old_readdir(unsigned int fd,
 	return error;
 }
 
-struct compat_linux_dirent {
+struct compat_beep_dirent {
 	compat_ulong_t	d_ino;
 	compat_ulong_t	d_off;
 	unsigned short	d_reclen;
@@ -895,8 +895,8 @@ struct compat_linux_dirent {
 };
 
 struct compat_getdents_callback {
-	struct compat_linux_dirent __user *current_dir;
-	struct compat_linux_dirent __user *previous;
+	struct compat_beep_dirent __user *current_dir;
+	struct compat_beep_dirent __user *previous;
 	int count;
 	int error;
 };
@@ -904,10 +904,10 @@ struct compat_getdents_callback {
 static int compat_filldir(void *__buf, const char *name, int namlen,
 		loff_t offset, u64 ino, unsigned int d_type)
 {
-	struct compat_linux_dirent __user * dirent;
+	struct compat_beep_dirent __user * dirent;
 	struct compat_getdents_callback *buf = __buf;
 	compat_ulong_t d_ino;
-	int reclen = ALIGN(offsetof(struct compat_linux_dirent, d_name) +
+	int reclen = ALIGN(offsetof(struct compat_beep_dirent, d_name) +
 		namlen + 2, sizeof(compat_long_t));
 
 	buf->error = -EINVAL;	/* only used if we fail.. */
@@ -945,10 +945,10 @@ efault:
 }
 
 asmlinkage long compat_sys_getdents(unsigned int fd,
-		struct compat_linux_dirent __user *dirent, unsigned int count)
+		struct compat_beep_dirent __user *dirent, unsigned int count)
 {
 	struct fd f;
-	struct compat_linux_dirent __user * lastdirent;
+	struct compat_beep_dirent __user * lastdirent;
 	struct compat_getdents_callback buf;
 	int error;
 
@@ -981,8 +981,8 @@ asmlinkage long compat_sys_getdents(unsigned int fd,
 #ifndef __ARCH_OMIT_COMPAT_SYS_GETDENTS64
 
 struct compat_getdents_callback64 {
-	struct linux_dirent64 __user *current_dir;
-	struct linux_dirent64 __user *previous;
+	struct beep_dirent64 __user *current_dir;
+	struct beep_dirent64 __user *previous;
 	int count;
 	int error;
 };
@@ -990,9 +990,9 @@ struct compat_getdents_callback64 {
 static int compat_filldir64(void * __buf, const char * name, int namlen, loff_t offset,
 		     u64 ino, unsigned int d_type)
 {
-	struct linux_dirent64 __user *dirent;
+	struct beep_dirent64 __user *dirent;
 	struct compat_getdents_callback64 *buf = __buf;
-	int reclen = ALIGN(offsetof(struct linux_dirent64, d_name) + namlen + 1,
+	int reclen = ALIGN(offsetof(struct beep_dirent64, d_name) + namlen + 1,
 		sizeof(u64));
 	u64 off;
 
@@ -1030,10 +1030,10 @@ efault:
 }
 
 asmlinkage long compat_sys_getdents64(unsigned int fd,
-		struct linux_dirent64 __user * dirent, unsigned int count)
+		struct beep_dirent64 __user * dirent, unsigned int count)
 {
 	struct fd f;
-	struct linux_dirent64 __user * lastdirent;
+	struct beep_dirent64 __user * lastdirent;
 	struct compat_getdents_callback64 buf;
 	int error;
 
@@ -1335,7 +1335,7 @@ static int poll_select_copy_remaining(struct timespec *end_time, void __user *p,
 	}
 	/*
 	 * If an application puts its timeval in read-only memory, we
-	 * don't want the Linux-specific update to the timeval to
+	 * don't want the Beep-specific update to the timeval to
 	 * cause a fault after the select has completed
 	 * successfully. However, because we're not updating the
 	 * timeval, we can't restart the system call.

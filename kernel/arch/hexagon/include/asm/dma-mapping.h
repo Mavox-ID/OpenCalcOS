@@ -1,7 +1,7 @@
 /*
  * DMA operations for the Hexagon architecture
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -21,13 +21,13 @@
 #ifndef _ASM_DMA_MAPPING_H
 #define _ASM_DMA_MAPPING_H
 
-#include <linux/types.h>
-#include <linux/cache.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma-debug.h>
-#include <linux/dma-attrs.h>
+#include <beep/types.h>
+#include <beep/cache.h>
+#include <beep/mm.h>
+#include <beep/scatterlist.h>
+#include <beep/dma-mapping.h>
+#include <beep/dma-debug.h>
+#include <beep/dma-attrs.h>
 #include <asm/io.h>
 
 struct device;

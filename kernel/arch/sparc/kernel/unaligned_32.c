@@ -7,14 +7,14 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
 #include <asm/ptrace.h>
 #include <asm/processor.h>
 #include <asm/uaccess.h>
-#include <linux/smp.h>
-#include <linux/perf_event.h>
+#include <beep/smp.h>
+#include <beep/perf_event.h>
 
 enum direction {
 	load,    /* ld, ldd, ldh, ldsh */

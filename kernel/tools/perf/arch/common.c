@@ -5,51 +5,51 @@
 
 const char *const arm_triplets[] = {
 	"arm-eabi-",
-	"arm-linux-androideabi-",
-	"arm-unknown-linux-",
-	"arm-unknown-linux-gnu-",
-	"arm-unknown-linux-gnueabi-",
+	"arm-beep-androideabi-",
+	"arm-unknown-beep-",
+	"arm-unknown-beep-gnu-",
+	"arm-unknown-beep-gnueabi-",
 	NULL
 };
 
 const char *const powerpc_triplets[] = {
-	"powerpc-unknown-linux-gnu-",
-	"powerpc64-unknown-linux-gnu-",
+	"powerpc-unknown-beep-gnu-",
+	"powerpc64-unknown-beep-gnu-",
 	NULL
 };
 
 const char *const s390_triplets[] = {
-	"s390-ibm-linux-",
+	"s390-ibm-beep-",
 	NULL
 };
 
 const char *const sh_triplets[] = {
-	"sh-unknown-linux-gnu-",
-	"sh64-unknown-linux-gnu-",
+	"sh-unknown-beep-gnu-",
+	"sh64-unknown-beep-gnu-",
 	NULL
 };
 
 const char *const sparc_triplets[] = {
-	"sparc-unknown-linux-gnu-",
-	"sparc64-unknown-linux-gnu-",
+	"sparc-unknown-beep-gnu-",
+	"sparc64-unknown-beep-gnu-",
 	NULL
 };
 
 const char *const x86_triplets[] = {
-	"x86_64-pc-linux-gnu-",
-	"x86_64-unknown-linux-gnu-",
-	"i686-pc-linux-gnu-",
-	"i586-pc-linux-gnu-",
-	"i486-pc-linux-gnu-",
-	"i386-pc-linux-gnu-",
-	"i686-linux-android-",
-	"i686-android-linux-",
+	"x86_64-pc-beep-gnu-",
+	"x86_64-unknown-beep-gnu-",
+	"i686-pc-beep-gnu-",
+	"i586-pc-beep-gnu-",
+	"i486-pc-beep-gnu-",
+	"i386-pc-beep-gnu-",
+	"i686-beep-android-",
+	"i686-android-beep-",
 	NULL
 };
 
 const char *const mips_triplets[] = {
-	"mips-unknown-linux-gnu-",
-	"mipsel-linux-android-",
+	"mips-unknown-beep-gnu-",
+	"mipsel-beep-android-",
 	NULL
 };
 

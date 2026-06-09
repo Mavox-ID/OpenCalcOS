@@ -18,17 +18,17 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/i2c/pcf857x.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pcf857x.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
 
 
 static const struct i2c_device_id pcf857x_id[] = {

@@ -6,12 +6,12 @@
  *
  */
 
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/gfp.h>
+#include <beep/spinlock.h>
+#include <beep/export.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
+#include <beep/poll.h>
+#include <beep/gfp.h>
 #include <acpi/acpi_drivers.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>

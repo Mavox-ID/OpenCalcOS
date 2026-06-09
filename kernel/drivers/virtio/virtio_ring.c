@@ -16,13 +16,13 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
-#include <linux/virtio.h>
-#include <linux/virtio_ring.h>
-#include <linux/virtio_config.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/hrtimer.h>
+#include <beep/virtio.h>
+#include <beep/virtio_ring.h>
+#include <beep/virtio_config.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/hrtimer.h>
 
 /* virtio guest is communicating with a virtual "device" that actually runs on
  * a host processor.  Memory barriers are used to control SMP effects. */

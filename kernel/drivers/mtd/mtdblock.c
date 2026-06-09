@@ -20,18 +20,18 @@
  *
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/vmalloc.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/vmalloc.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/blktrans.h>
-#include <linux/mutex.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/blktrans.h>
+#include <beep/mutex.h>
 
 
 struct mtdblk_dev {
@@ -49,7 +49,7 @@ static DEFINE_MUTEX(mtdblks_lock);
 /*
  * Cache stuff...
  *
- * Since typical flash erasable sectors are much larger than what Linux's
+ * Since typical flash erasable sectors are much larger than what Beep's
  * buffer cache can handle, we must implement read-modify-write on flash
  * sectors for each block write requests.  To avoid over-erasing flash sectors
  * and to speed things up, we locally cache a whole flash sector while it is

@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex Beep Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2004-2008 Emulex.  All rights reserved.           *
  * EMULEX and SLI are trademarks of Emulex.                        *
@@ -19,15 +19,15 @@
  * included with this package.                                     *
  *******************************************************************/
 
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/kthread.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/idr.h>
+#include <beep/interrupt.h>
+#include <beep/kthread.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>

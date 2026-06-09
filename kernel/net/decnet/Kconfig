@@ -11,7 +11,7 @@ config DECNET
 
 	  To find some tools to use with the kernel layer support, please
 	  look at Patrick Caulfield's web site:
-	  <http://linux-decnet.sourceforge.net/>.
+	  <http://beep-decnet.sourceforge.net/>.
 
 	  More detailed documentation is available in
 	  <file:Documentation/networking/decnet.txt>.

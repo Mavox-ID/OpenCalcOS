@@ -2,11 +2,11 @@
  * Helper function for splitting a string into an argv-like array.
  */
 
-#include <linux/kernel.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/ctype.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 static const char *skip_arg(const char *cp)
 {

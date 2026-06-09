@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/asm/delay.h
+ * beep/arch/unicore32/include/asm/delay.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *

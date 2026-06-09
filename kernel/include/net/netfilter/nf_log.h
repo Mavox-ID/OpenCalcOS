@@ -1,7 +1,7 @@
 #ifndef _NF_LOG_H
 #define _NF_LOG_H
 
-#include <linux/netfilter.h>
+#include <beep/netfilter.h>
 
 /* those NF_LOG_* defines and struct nf_loginfo are legacy definitios that will
  * disappear once iptables is replaced with pkttables.  Please DO NOT use them

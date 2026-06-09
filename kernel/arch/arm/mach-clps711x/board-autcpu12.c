@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-clps711x/autcpu12.c
+ *  beep/arch/arm/mach-clps711x/autcpu12.c
  *
  * (c) 2001 Thomas Gleixner, autronix automation <gleixner@autronix.de>
  *
@@ -17,19 +17,19 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/nand-gpio.h>
-#include <linux/platform_device.h>
-#include <linux/basic_mmio_gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/nand-gpio.h>
+#include <beep/platform_device.h>
+#include <beep/basic_mmio_gpio.h>
 
 #include <mach/hardware.h>
 #include <asm/sizes.h>

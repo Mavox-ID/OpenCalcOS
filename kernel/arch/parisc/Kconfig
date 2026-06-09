@@ -27,8 +27,8 @@ config PARISC
 	help
 	  The PA-RISC microprocessor is designed by Hewlett-Packard and used
 	  in many of their workstations & servers (HP9000 700 and 800 series,
-	  and later HP3000 series).  The PA-RISC Linux project home page is
-	  at <http://www.parisc-linux.org/>.
+	  and later HP3000 series).  The PA-RISC Beep project home page is
+	  at <http://www.parisc-beep.org/>.
 
 config MMU
 	def_bool y

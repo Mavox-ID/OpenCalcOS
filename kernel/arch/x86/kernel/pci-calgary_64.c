@@ -24,21 +24,21 @@
 
 #define pr_fmt(fmt) "Calgary: " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/crash_dump.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitmap.h>
-#include <linux/pci_ids.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/scatterlist.h>
-#include <linux/iommu-helper.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/crash_dump.h>
+#include <beep/dma-mapping.h>
+#include <beep/bitmap.h>
+#include <beep/pci_ids.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/scatterlist.h>
+#include <beep/iommu-helper.h>
 
 #include <asm/iommu.h>
 #include <asm/calgary.h>

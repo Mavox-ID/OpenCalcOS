@@ -1,5 +1,5 @@
 /*
- * uClinux flat-format executables
+ * uCbeep flat-format executables
  *
  * Copyright (C) 2005 John Williams <jwilliams@itee.uq.edu.au>
  *

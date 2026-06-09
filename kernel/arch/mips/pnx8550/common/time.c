@@ -1,7 +1,7 @@
 /*
  * Copyright 2001, 2002, 2003 MontaVista Software Inc.
  * Author: Jun Sun, jsun@mvista.com or jsun@junsun.net
- * Copyright (C) 2007 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2007 Ralf Baechle (ralf@beep-mips.org)
  *
  * Common time service routines for MIPS machines. See
  * Documents/MIPS/README.txt.
@@ -11,17 +11,17 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/param.h>
-#include <linux/time.h>
-#include <linux/timer.h>
-#include <linux/smp.h>
-#include <linux/kernel_stat.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/param.h>
+#include <beep/time.h>
+#include <beep/timer.h>
+#include <beep/smp.h>
+#include <beep/kernel_stat.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
 
 #include <asm/bootinfo.h>
 #include <asm/cpu.h>

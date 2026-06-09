@@ -11,28 +11,28 @@
 #ifndef _TEHUTI_H
 #define _TEHUTI_H
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/uaccess.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sched.h>
-#include <linux/tty.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/firmware.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/crc32.h>
+#include <beep/uaccess.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/sched.h>
+#include <beep/tty.h>
+#include <beep/if_vlan.h>
+#include <beep/interrupt.h>
+#include <beep/vmalloc.h>
+#include <beep/firmware.h>
 #include <asm/byteorder.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
 
 /* Compile Time Switches */
 /* start */

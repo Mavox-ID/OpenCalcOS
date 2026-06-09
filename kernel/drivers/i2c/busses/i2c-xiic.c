@@ -17,10 +17,10 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
  *
- * This code was implemented by Mocean Laboratories AB when porting linux
+ * This code was implemented by Mocean Laboratories AB when porting beep
  * to the automotive development board Russellville. The copyright holder
  * as seen in the header is Intel corporation.
- * Mocean Laboratories forked off the GNU/Linux platform work into a
+ * Mocean Laboratories forked off the GNU/Beep platform work into a
  * separate company called Pelagicore AB, which committed the code to the
  * kernel.
  */
@@ -28,19 +28,19 @@
 /* Supports:
  * Xilinx IIC
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/i2c-xiic.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of_i2c.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/wait.h>
+#include <beep/i2c-xiic.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/of_i2c.h>
 
 #define DRIVER_NAME "xiic-i2c"
 

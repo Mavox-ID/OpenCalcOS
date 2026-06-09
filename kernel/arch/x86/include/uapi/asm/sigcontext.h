@@ -1,8 +1,8 @@
 #ifndef _UAPI_ASM_X86_SIGCONTEXT_H
 #define _UAPI_ASM_X86_SIGCONTEXT_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/types.h>
 
 #define FP_XSTATE_MAGIC1	0x46505853U
 #define FP_XSTATE_MAGIC2	0x46505845U
@@ -47,7 +47,7 @@ struct _fpx_sw_bytes {
  * coprocessor status word before entering the handler.
  *
  * Pentium III FXSR, SSE support
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@vabeep.com>, May 2000
  *
  * The FPU state data structure has had to grow to accommodate the
  * extended FPU state required by the Streaming SIMD Extensions.

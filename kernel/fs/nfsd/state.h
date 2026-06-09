@@ -35,9 +35,9 @@
 #ifndef _NFSD4_STATE_H
 #define _NFSD4_STATE_H
 
-#include <linux/idr.h>
-#include <linux/sunrpc/svc_xprt.h>
-#include <linux/nfsd/nfsfh.h>
+#include <beep/idr.h>
+#include <beep/sunrpc/svc_xprt.h>
+#include <beep/nfsd/nfsfh.h>
 #include "nfsfh.h"
 
 typedef struct {

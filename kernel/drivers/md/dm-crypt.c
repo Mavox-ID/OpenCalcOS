@@ -6,28 +6,28 @@
  * This file is released under the GPL.
  */
 
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/mempool.h>
-#include <linux/slab.h>
-#include <linux/crypto.h>
-#include <linux/workqueue.h>
-#include <linux/backing-dev.h>
-#include <linux/percpu.h>
-#include <linux/atomic.h>
-#include <linux/scatterlist.h>
+#include <beep/completion.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/bio.h>
+#include <beep/blkdev.h>
+#include <beep/mempool.h>
+#include <beep/slab.h>
+#include <beep/crypto.h>
+#include <beep/workqueue.h>
+#include <beep/backing-dev.h>
+#include <beep/percpu.h>
+#include <beep/atomic.h>
+#include <beep/scatterlist.h>
 #include <asm/page.h>
 #include <asm/unaligned.h>
 #include <crypto/hash.h>
 #include <crypto/md5.h>
 #include <crypto/algapi.h>
 
-#include <linux/device-mapper.h>
+#include <beep/device-mapper.h>
 
 #define DM_MSG_PREFIX "crypt"
 
@@ -231,7 +231,7 @@ static struct crypto_ablkcipher *any_tfm(struct crypt_config *cc)
  *                   (it uses 65 keys, last key is used as IV seed)
  *
  * plumb: unimplemented, see:
- * http://article.gmane.org/gmane.linux.kernel.device-mapper.dm-crypt/454
+ * http://article.gmane.org/gmane.beep.kernel.device-mapper.dm-crypt/454
  */
 
 static int crypt_iv_plain_gen(struct crypt_config *cc, u8 *iv,

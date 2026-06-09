@@ -16,10 +16,10 @@
 
 #include "rtllib.h"
 
-#include <linux/random.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/etherdevice.h>
+#include <beep/random.h>
+#include <beep/delay.h>
+#include <beep/uaccess.h>
+#include <beep/etherdevice.h>
 #include "dot11d.h"
 
 short rtllib_is_54g(struct rtllib_network *net)

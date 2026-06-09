@@ -12,7 +12,7 @@
 #ifndef _ASM_ELF_H
 #define _ASM_ELF_H
 
-#include <linux/utsname.h>
+#include <beep/utsname.h>
 #include <asm/ptrace.h>
 #include <asm/user.h>
 
@@ -152,7 +152,7 @@ do {						\
 
 #ifdef __KERNEL__
 #define SET_PERSONALITY(ex) \
-	set_personality(PER_LINUX | (current->personality & (~PER_MASK)))
+	set_personality(PER_BEEP | (current->personality & (~PER_MASK)))
 #endif
 
 #endif /* _ASM_ELF_H */

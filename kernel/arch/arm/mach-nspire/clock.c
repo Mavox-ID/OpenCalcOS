@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-nspire/clock.c
+ *  beep/arch/arm/mach-nspire/clock.c
  *
  *  Copyright (C) 2012 Daniel Tang <tangrs@tangrs.id.au>
  *

@@ -21,11 +21,11 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ******************************************************************************/
 
-#include <linux/tcp.h>
-#include <linux/slab.h>
-#include <linux/sunrpc/xprt.h>
-#include <linux/export.h>
-#include <linux/sunrpc/bc_xprt.h>
+#include <beep/tcp.h>
+#include <beep/slab.h>
+#include <beep/sunrpc/xprt.h>
+#include <beep/export.h>
+#include <beep/sunrpc/bc_xprt.h>
 
 #ifdef RPC_DEBUG
 #define RPCDBG_FACILITY	RPCDBG_TRANS

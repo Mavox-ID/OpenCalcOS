@@ -8,7 +8,7 @@
 
 /* size_t strlen (const char *s)  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 ENTRY(strlen)
 	mov	r4,r0
 	and	#3,r0

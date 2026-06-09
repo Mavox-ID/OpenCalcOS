@@ -18,20 +18,20 @@
  * included with this package.                                     *
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * beep-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
  * Costa Mesa, CA 92626
  *******************************************************************/
 
-#include <linux/module.h>
-#include <linux/idr.h>
+#include <beep/module.h>
+#include <beep/idr.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_user_verbs.h>
 #include <rdma/ib_addr.h>
 
-#include <linux/netdevice.h>
+#include <beep/netdevice.h>
 #include <net/addrconf.h>
 
 #include "ocrdma.h"

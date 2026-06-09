@@ -9,16 +9,16 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/perf_event.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/percpu.h>
-#include <linux/kallsyms.h>
-#include <linux/notifier.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/io.h>
-#include <linux/clk.h>
+#include <beep/init.h>
+#include <beep/perf_event.h>
+#include <beep/hw_breakpoint.h>
+#include <beep/percpu.h>
+#include <beep/kallsyms.h>
+#include <beep/notifier.h>
+#include <beep/kprobes.h>
+#include <beep/kdebug.h>
+#include <beep/io.h>
+#include <beep/clk.h>
 #include <asm/hw_breakpoint.h>
 #include <asm/mmu_context.h>
 #include <asm/ptrace.h>

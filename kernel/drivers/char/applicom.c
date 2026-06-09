@@ -2,7 +2,7 @@
 /* Ported by David Woodhouse, Axiom (Cambridge) Ltd.                         */
 /* dwmw2@infradead.org 30/8/98                                               */
 /* $Id: ac.c,v 1.30 2000/03/22 16:03:57 dwmw2 Exp $			     */
-/* This module is for Linux 2.1 and 2.2 series kernels.                      */
+/* This module is for Beep 2.1 and 2.2 series kernels.                      */
 /*****************************************************************************/
 /* J PAGET 18/02/94 passage V2.4.2 ioctl avec code 2 reset to les interrupt  */
 /* ceci pour reseter correctement apres une sortie sauvage                   */
@@ -20,18 +20,18 @@
 /*****************************************************************************/
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/miscdevice.h>
-#include <linux/pci.h>
-#include <linux/wait.h>
-#include <linux/init.h>
-#include <linux/fs.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/mutex.h>
+#include <beep/miscdevice.h>
+#include <beep/pci.h>
+#include <beep/wait.h>
+#include <beep/init.h>
+#include <beep/fs.h>
 
 #include <asm/io.h>
 #include <asm/uaccess.h>

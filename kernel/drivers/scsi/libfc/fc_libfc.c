@@ -17,11 +17,11 @@
  * Maintained at www.Open-FCoE.org
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/scatterlist.h>
-#include <linux/crc32.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/scatterlist.h>
+#include <beep/crc32.h>
+#include <beep/module.h>
 
 #include <scsi/libfc.h>
 #include <scsi/fc_encode.h>

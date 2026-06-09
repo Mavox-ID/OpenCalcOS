@@ -31,7 +31,7 @@
 #ifndef __DVB_TUA6100_H__
 #define __DVB_TUA6100_H__
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 #include "dvb_frontend.h"
 
 #if defined(CONFIG_DVB_TUA6100) || (defined(CONFIG_DVB_TUA6100_MODULE) && defined(MODULE))

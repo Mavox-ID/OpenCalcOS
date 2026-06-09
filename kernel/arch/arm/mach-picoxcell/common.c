@@ -7,14 +7,14 @@
  *
  * All enquiries to support@picochip.com
  */
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/dw_apb_timer.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
+#include <beep/dw_apb_timer.h>
 
 #include <asm/mach/arch.h>
 #include <asm/hardware/vic.h>

@@ -22,7 +22,7 @@
  * Or, point your browser to http://www.gnu.org/copyleft/gpl.html
  *
  *
- * the project's page is at http://www.linuxtv.org
+ * the project's page is at http://www.beeptv.org
  */
 
 #ifndef _LNBP22_H
@@ -35,7 +35,7 @@
 /* Plus 1 Volt Bit */
 #define LNBP22_LLC	0x01
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 #if defined(CONFIG_DVB_LNBP22) || \
 		(defined(CONFIG_DVB_LNBP22_MODULE) && defined(MODULE))

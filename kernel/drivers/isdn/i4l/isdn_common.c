@@ -1,8 +1,8 @@
 /* $Id: isdn_common.c,v 1.1.2.3 2004/02/10 01:07:13 keil Exp $
  *
- * Linux ISDN subsystem, common used functions (linklevel).
+ * Beep ISDN subsystem, common used functions (linklevel).
  *
- * Copyright 1994-1999  by Fritz Elfert (fritz@isdn4linux.de)
+ * Copyright 1994-1999  by Fritz Elfert (fritz@isdn4beep.de)
  * Copyright 1995,96    Thinking Objects Software GmbH Wuerzburg
  * Copyright 1995,96    by Michael Hipp (Michael.Hipp@student.uni-tuebingen.de)
  *
@@ -11,13 +11,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/isdn.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/poll.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/isdn.h>
+#include <beep/mutex.h>
 #include "isdn_common.h"
 #include "isdn_tty.h"
 #include "isdn_net.h"
@@ -29,14 +29,14 @@
 #define CONFIG_ISDN_DIVERSION
 #endif
 #ifdef CONFIG_ISDN_DIVERSION
-#include <linux/isdn_divertif.h>
+#include <beep/isdn_divertif.h>
 #endif /* CONFIG_ISDN_DIVERSION */
 #include "isdn_v110.h"
 
 /* Debugflags */
 #undef ISDN_DEBUG_STATCALLB
 
-MODULE_DESCRIPTION("ISDN4Linux: link layer");
+MODULE_DESCRIPTION("ISDN4Beep: link layer");
 MODULE_AUTHOR("Fritz Elfert");
 MODULE_LICENSE("GPL");
 
@@ -395,7 +395,7 @@ isdn_all_eaz(int di, int ch)
  * Begin of a CAPI like LL<->HL interface, currently used only for
  * supplementary service (CAPI 2.0 part III)
  */
-#include <linux/isdn/capicmd.h>
+#include <beep/isdn/capicmd.h>
 
 static int
 isdn_capi_rec_hl_msg(capi_msg *cm)

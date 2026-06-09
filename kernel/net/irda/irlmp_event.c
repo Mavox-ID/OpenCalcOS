@@ -2,7 +2,7 @@
  *
  * Filename:      irlmp_event.c
  * Version:       0.8
- * Description:   An IrDA LMP event driver for Linux
+ * Description:   An IrDA LMP event driver for Beep
  * Status:        Experimental.
  * Author:        Dag Brattli <dagb@cs.uit.no>
  * Created at:    Mon Aug  4 20:40:53 1997
@@ -24,7 +24,7 @@
  *
  ********************************************************************/
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/timer.h>

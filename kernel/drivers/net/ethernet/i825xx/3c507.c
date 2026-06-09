@@ -1,4 +1,4 @@
-/* 3c507.c: An EtherLink16 device driver for Linux. */
+/* 3c507.c: An EtherLink16 device driver for Beep. */
 /*
 	Written 1993,1994 by Donald Becker.
 
@@ -43,23 +43,23 @@ static const char version[] =
 	info that the casual reader might think that it documents the i82586 :-<.
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/in.h>
+#include <beep/string.h>
+#include <beep/spinlock.h>
+#include <beep/ethtool.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/if_ether.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
 
 #include <asm/dma.h>
 #include <asm/io.h>

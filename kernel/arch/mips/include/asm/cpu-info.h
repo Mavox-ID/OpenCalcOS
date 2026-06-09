@@ -12,7 +12,7 @@
 #ifndef __ASM_CPU_INFO_H
 #define __ASM_CPU_INFO_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #include <asm/cache.h>
 

@@ -14,19 +14,19 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/bcd.h>
+#include <beep/rtc.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/seq_file.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
+#include <beep/log2.h>
+#include <beep/clk.h>
+#include <beep/slab.h>
 #include <asm/rtc.h>
 
 #define DRV_NAME	"sh-rtc"
@@ -835,7 +835,7 @@ module_exit(sh_rtc_exit);
 
 MODULE_DESCRIPTION("SuperH on-chip RTC driver");
 MODULE_VERSION(DRV_VERSION);
-MODULE_AUTHOR("Paul Mundt <lethal@linux-sh.org>, "
+MODULE_AUTHOR("Paul Mundt <lethal@beep-sh.org>, "
 	      "Jamie Lenehan <lenehan@twibble.org>, "
 	      "Angelo Castello <angelo.castello@st.com>");
 MODULE_LICENSE("GPL");

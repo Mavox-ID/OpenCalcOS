@@ -9,9 +9,9 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #include "internal.h"
 
 atomic_t cachefiles_lookup_histogram[HZ];

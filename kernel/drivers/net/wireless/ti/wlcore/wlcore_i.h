@@ -25,11 +25,11 @@
 #ifndef __WLCORE_I_H__
 #define __WLCORE_I_H__
 
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/bitops.h>
+#include <beep/mutex.h>
+#include <beep/completion.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
+#include <beep/bitops.h>
 #include <net/mac80211.h>
 
 #include "conf.h"

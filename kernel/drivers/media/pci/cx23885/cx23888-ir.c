@@ -21,8 +21,8 @@
  *  02110-1301, USA.
  */
 
-#include <linux/kfifo.h>
-#include <linux/slab.h>
+#include <beep/kfifo.h>
+#include <beep/slab.h>
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-chip-ident.h>

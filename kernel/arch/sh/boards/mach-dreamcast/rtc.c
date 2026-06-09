@@ -10,7 +10,7 @@
  *
  */
 
-#include <linux/time.h>
+#include <beep/time.h>
 #include <asm/rtc.h>
 #include <asm/io.h>
 

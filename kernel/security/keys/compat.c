@@ -9,10 +9,10 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/syscalls.h>
-#include <linux/keyctl.h>
-#include <linux/compat.h>
-#include <linux/slab.h>
+#include <beep/syscalls.h>
+#include <beep/keyctl.h>
+#include <beep/compat.h>
+#include <beep/slab.h>
 #include "internal.h"
 
 /*

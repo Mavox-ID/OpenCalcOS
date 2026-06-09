@@ -15,16 +15,16 @@
  * Copyright IBM Corp. 2007
  *
  * Authors: Hollis Blanchard <hollisb@us.ibm.com>
- *          Christian Ehrhardt <ehrhardt@linux.vnet.ibm.com>
+ *          Christian Ehrhardt <ehrhardt@beep.vnet.ibm.com>
  */
 
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/kvm_host.h>
-#include <linux/vmalloc.h>
-#include <linux/hrtimer.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/kvm_host.h>
+#include <beep/vmalloc.h>
+#include <beep/hrtimer.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
 #include <asm/cputable.h>
 #include <asm/uaccess.h>
 #include <asm/kvm_ppc.h>
@@ -511,7 +511,7 @@ void kvm_arch_vcpu_load(struct kvm_vcpu *vcpu, int cpu)
 {
 #ifdef CONFIG_BOOKE
 	/*
-	 * vrsave (formerly usprg0) isn't used by Linux, but may
+	 * vrsave (formerly usprg0) isn't used by Beep, but may
 	 * be used by the guest.
 	 *
 	 * On non-booke this is associated with Altivec and

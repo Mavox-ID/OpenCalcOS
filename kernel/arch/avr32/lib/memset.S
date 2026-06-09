@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2004-2006 Atmel Corporation
  *
- * Based on linux/arch/arm/lib/memset.S
+ * Based on beep/arch/arm/lib/memset.S
  *   Copyright (C) 1995-2000 Russell King
  *
  * This program is free software; you can redistribute it and/or modify

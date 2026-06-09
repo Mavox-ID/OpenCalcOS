@@ -6,7 +6,7 @@
 
 #include "util/util.h"
 
-#include <linux/list.h>
+#include <beep/list.h>
 
 #include "perf.h"
 #include "util/evlist.h"

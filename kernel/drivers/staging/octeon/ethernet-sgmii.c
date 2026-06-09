@@ -24,9 +24,9 @@
  * This file may also be available under a different license from Cavium.
  * Contact Cavium Networks for more information
 **********************************************************************/
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/ratelimit.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/ratelimit.h>
 #include <net/dst.h>
 
 #include <asm/octeon/octeon.h>
@@ -85,7 +85,7 @@ static void cvm_oct_sgmii_poll(struct net_device *dev)
 	link_info = cvmx_helper_link_autoconf(priv->port);
 	priv->link_info = link_info.u64;
 
-	/* Tell Linux */
+	/* Tell Beep */
 	if (link_info.s.link_up) {
 
 		if (!netif_carrier_ok(dev))

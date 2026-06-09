@@ -3,7 +3,7 @@
  * Generic probe/disconnect, reset and message passing
  *
  *
- * Copyright (C) 2007-2008 Intel Corporation <linux-wimax@intel.com>
+ * Copyright (C) 2007-2008 Intel Corporation <beep-wimax@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *
  * This program is free software; you can redistribute it and/or
@@ -64,12 +64,12 @@
  *   unregister_netdev()
  */
 #include "i2400m.h"
-#include <linux/etherdevice.h>
-#include <linux/wimax/i2400m.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/suspend.h>
-#include <linux/slab.h>
+#include <beep/etherdevice.h>
+#include <beep/wimax/i2400m.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/suspend.h>
+#include <beep/slab.h>
 
 #define D_SUBMODULE driver
 #include "debug-levels.h"
@@ -105,7 +105,7 @@ MODULE_PARM_DESC(barkers,
  * from user space.
  *
  * For the i2400m, this is an L3L4 message, as specified in
- * include/linux/wimax/i2400m.h, and thus prefixed with a 'struct
+ * include/beep/wimax/i2400m.h, and thus prefixed with a 'struct
  * i2400m_l3l4_hdr'. Driver (and device) expect the messages to be
  * coded in Little Endian.
  *
@@ -1023,6 +1023,6 @@ void __exit i2400m_driver_exit(void)
 }
 module_exit(i2400m_driver_exit);
 
-MODULE_AUTHOR("Intel Corporation <linux-wimax@intel.com>");
+MODULE_AUTHOR("Intel Corporation <beep-wimax@intel.com>");
 MODULE_DESCRIPTION("Intel 2400M WiMAX networking bus-generic driver");
 MODULE_LICENSE("GPL");

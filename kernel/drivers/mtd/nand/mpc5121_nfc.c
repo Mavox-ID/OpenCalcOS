@@ -25,19 +25,19 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/gfp.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <beep/module.h>
+#include <beep/clk.h>
+#include <beep/gfp.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
 
 #include <asm/mpc5121.h>
 

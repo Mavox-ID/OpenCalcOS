@@ -7,18 +7,18 @@
  * of the GNU General Public License version 2.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/swap.h>
-#include <linux/delay.h>
-#include <linux/bio.h>
-#include <linux/gfs2_ondisk.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
+#include <beep/buffer_head.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/writeback.h>
+#include <beep/swap.h>
+#include <beep/delay.h>
+#include <beep/bio.h>
+#include <beep/gfs2_ondisk.h>
 
 #include "gfs2.h"
 #include "incore.h"

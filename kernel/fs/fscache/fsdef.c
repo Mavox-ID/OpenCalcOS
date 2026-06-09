@@ -10,7 +10,7 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL CACHE
-#include <linux/module.h>
+#include <beep/module.h>
 #include "internal.h"
 
 static uint16_t fscache_fsdef_netfs_get_key(const void *cookie_netfs_data,

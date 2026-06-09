@@ -9,8 +9,8 @@
  * fragmentation.
  */
 
-#include <linux/string.h>
-#include <linux/bitmap.h>
+#include <beep/string.h>
+#include <beep/bitmap.h>
 
 #include <asm/bitext.h>
 

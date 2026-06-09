@@ -2,7 +2,7 @@
 #define _ASM_POWERPC_SYNCH_H 
 #ifdef __KERNEL__
 
-#include <linux/stringify.h>
+#include <beep/stringify.h>
 #include <asm/feature-fixups.h>
 
 #if defined(__powerpc64__) || defined(CONFIG_PPC_E500MC)

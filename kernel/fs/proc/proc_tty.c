@@ -5,15 +5,15 @@
  */
 
 #include <asm/uaccess.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/tty.h>
-#include <linux/seq_file.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/time.h>
+#include <beep/proc_fs.h>
+#include <beep/stat.h>
+#include <beep/tty.h>
+#include <beep/seq_file.h>
+#include <beep/bitops.h>
 
 /*
  * The /proc/tty directory inodes...

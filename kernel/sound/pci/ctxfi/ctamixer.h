@@ -20,7 +20,7 @@
 #define CTAMIXER_H
 
 #include "ctresource.h"
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 
 /* Define the descriptor of a summation node resource */
 struct sum {

@@ -6,7 +6,7 @@
 * Copyright Adrian McMenamin 2005, 2006, 2007
 * <adrian@mcmen.demon.co.uk>
 * Requires firmware (BSD licenced) available from:
-* http://linuxdc.cvs.sourceforge.net/linuxdc/linux-sh-dc/sound/oss/aica/firmware/
+* http://beepdc.cvs.sourceforge.net/beepdc/beep-sh-dc/sound/oss/aica/firmware/
 * or the maintainer
 *
 * This program is free software; you can redistribute it and/or modify
@@ -24,17 +24,17 @@
 *
 */
 
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/firmware.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
+#include <beep/init.h>
+#include <beep/jiffies.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/wait.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/firmware.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/workqueue.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

@@ -21,7 +21,7 @@
 #ifndef _CELLEB_PCI_H
 #define _CELLEB_PCI_H
 
-#include <linux/pci.h>
+#include <beep/pci.h>
 
 #include <asm/pci-bridge.h>
 #include <asm/prom.h>

@@ -1,6 +1,6 @@
-/* radeon_state.c -- State support for Radeon -*- linux-c -*- */
+/* radeon_state.c -- State support for Radeon -*- beep-c -*- */
 /*
- * Copyright 2000 VA Linux Systems, Inc., Fremont, California.
+ * Copyright 2000 VA Beep Systems, Inc., Fremont, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -23,8 +23,8 @@
  * DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Gareth Hughes <gareth@valinux.com>
- *    Kevin E. Martin <martin@valinux.com>
+ *    Gareth Hughes <gareth@vabeep.com>
+ *    Kevin E. Martin <martin@vabeep.com>
  */
 
 #include <drm/drmP.h>

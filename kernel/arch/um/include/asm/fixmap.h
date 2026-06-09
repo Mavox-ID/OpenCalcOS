@@ -5,7 +5,7 @@
 #include <asm/kmap_types.h>
 #include <asm/archparam.h>
 #include <asm/page.h>
-#include <linux/threads.h>
+#include <beep/threads.h>
 
 /*
  * Here we define all the compile-time 'special' virtual

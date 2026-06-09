@@ -4,7 +4,7 @@
  * SPEAr310 machine source file
  *
  * Copyright (C) 2009-2012 ST Microelectronics
- * Viresh Kumar <viresh.linux@gmail.com>
+ * Viresh Kumar <viresh.beep@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
@@ -13,9 +13,9 @@
 
 #define pr_fmt(fmt) "SPEAr310: " fmt
 
-#include <linux/amba/pl08x.h>
-#include <linux/amba/serial.h>
-#include <linux/of_platform.h>
+#include <beep/amba/pl08x.h>
+#include <beep/amba/serial.h>
+#include <beep/of_platform.h>
 #include <asm/hardware/vic.h>
 #include <asm/mach/arch.h>
 #include <mach/generic.h>

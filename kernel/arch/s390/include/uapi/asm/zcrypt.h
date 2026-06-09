@@ -31,8 +31,8 @@
 #define ZCRYPT_RELEASE 1
 #define ZCRYPT_VARIANT 1
 
-#include <linux/ioctl.h>
-#include <linux/compiler.h>
+#include <beep/ioctl.h>
+#include <beep/compiler.h>
 
 /**
  * struct ica_rsa_modexpo

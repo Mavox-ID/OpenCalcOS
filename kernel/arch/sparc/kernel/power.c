@@ -3,12 +3,12 @@
  * Copyright (C) 1999, 2007, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/reboot.h>
-#include <linux/of_device.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/reboot.h>
+#include <beep/of_device.h>
 
 #include <asm/prom.h>
 #include <asm/io.h>

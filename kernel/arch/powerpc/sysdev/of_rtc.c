@@ -8,11 +8,11 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/init.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/of.h>
+#include <beep/init.h>
+#include <beep/of_platform.h>
+#include <beep/slab.h>
 
 static __initdata struct {
 	const char *compatible;

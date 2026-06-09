@@ -79,13 +79,13 @@
  * include and compile the integrity check tool.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/buffer_head.h>
-#include <linux/mutex.h>
-#include <linux/crc32c.h>
-#include <linux/genhd.h>
-#include <linux/blkdev.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/buffer_head.h>
+#include <beep/mutex.h>
+#include <beep/crc32c.h>
+#include <beep/genhd.h>
+#include <beep/blkdev.h>
 #include "ctree.h"
 #include "disk-io.h"
 #include "transaction.h"

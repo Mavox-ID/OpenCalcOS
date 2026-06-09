@@ -9,12 +9,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/bcd.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/spi/spi.h>
+#include <beep/bcd.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/rtc.h>
+#include <beep/spi/spi.h>
 
 #define M41T93_REG_SSEC			0
 #define M41T93_REG_ST_SEC		1

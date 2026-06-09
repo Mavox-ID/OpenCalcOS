@@ -20,22 +20,22 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/cpufreq.h>
-#include <linux/mmc/host.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/edma.h>
-#include <linux/mmc/mmc.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/cpufreq.h>
+#include <beep/mmc/host.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/delay.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/edma.h>
+#include <beep/mmc/mmc.h>
 
-#include <linux/platform_data/mmc-davinci.h>
+#include <beep/platform_data/mmc-davinci.h>
 
 /*
  * Register Definitions

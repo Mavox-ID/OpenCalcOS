@@ -1,5 +1,5 @@
 #
-# Makefile for the PowerPC 8xx linux kernel.
+# Makefile for the PowerPC 8xx beep kernel.
 #
 obj-$(CONFIG_PPC_8xx)	  += m8xx_setup.o
 obj-$(CONFIG_MPC885ADS)   += mpc885ads_setup.o

@@ -262,7 +262,7 @@
 		power {
 			label = "Power Button";
 			gpios = <&gpio2 21 0>;
-			linux,code = <116>; /* KEY_POWER */
+			beep,code = <116>; /* KEY_POWER */
 			gpio-key,wakeup;
 		};
 	};

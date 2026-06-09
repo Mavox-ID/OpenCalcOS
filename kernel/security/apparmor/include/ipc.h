@@ -15,7 +15,7 @@
 #ifndef __AA_IPC_H
 #define __AA_IPC_H
 
-#include <linux/sched.h>
+#include <beep/sched.h>
 
 struct aa_profile;
 

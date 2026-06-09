@@ -1,5 +1,5 @@
 /**************************************************************************
- * Initio 9100 device driver for Linux.
+ * Initio 9100 device driver for Beep.
  *
  * Copyright (c) 1994-1998 Initio Corporation
  * Copyright (c) 1998 Bas Vermeulen <bvermeul@blackstar.xs4all.nl>
@@ -25,7 +25,7 @@
  *
  * DESCRIPTION:
  *
- * This is the Linux low-level SCSI driver for Initio INI-9X00U/UW SCSI host
+ * This is the Beep low-level SCSI driver for Initio INI-9X00U/UW SCSI host
  * adapters
  *
  * 08/06/97 hc	- v1.01h
@@ -79,22 +79,22 @@
  *		- Re-add reset_bus support
  **************************************************************************/
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/spinlock.h>
-#include <linux/stat.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/spinlock.h>
+#include <beep/stat.h>
+#include <beep/kernel.h>
+#include <beep/proc_fs.h>
+#include <beep/string.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/jiffies.h>
+#include <beep/dma-mapping.h>
 #include <asm/io.h>
 
 #include <scsi/scsi.h>

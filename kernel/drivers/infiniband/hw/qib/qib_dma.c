@@ -29,8 +29,8 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/types.h>
-#include <linux/scatterlist.h>
+#include <beep/types.h>
+#include <beep/scatterlist.h>
 
 #include "qib_verbs.h"
 

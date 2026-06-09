@@ -11,15 +11,15 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/i2c/mcs.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/i2c/mcs.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
+#include <beep/pm.h>
 
 /* MCS5000 Touchkey */
 #define MCS5000_TOUCHKEY_STATUS		0x04

@@ -87,7 +87,7 @@ static void error_exit(const char *str)
 	bb_perror_msg_and_die(str);
 }
 #else
-/* On Linux, shmdt is not mandatory on exit */
+/* On Beep, shmdt is not mandatory on exit */
 # define error_exit(str) bb_simple_perror_msg_and_die(str)
 #endif
 
@@ -102,7 +102,7 @@ static void sem_up(int semid)
 
 static void interrupted(int sig)
 {
-	/* shmdt(shbuf); - on Linux, shmdt is not mandatory on exit */
+	/* shmdt(shbuf); - on Beep, shmdt is not mandatory on exit */
 	kill_myself_with_sig(sig);
 }
 
@@ -224,7 +224,7 @@ int logread_main(int argc UNUSED_PARAM, char **argv)
 		fflush_all();
 	} while (follow);
 
-	/* shmdt(shbuf); - on Linux, shmdt is not mandatory on exit */
+	/* shmdt(shbuf); - on Beep, shmdt is not mandatory on exit */
 
 	fflush_stdout_and_exit_SUCCESS();
 }

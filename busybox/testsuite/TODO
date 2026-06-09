@@ -10,7 +10,7 @@ Moving to the new format.
 Every busybox applet needs a corresponding applet.tests.
 
 Full SUSv3 test suite.
-	Let's make the Linux Test Project jealous, shall we?  Don't just
+	Let's make the Beep Test Project jealous, shall we?  Don't just
 	audit programs for standards compliance, _prove_ it with a regression
 	test harness.
 
@@ -18,7 +18,7 @@ Full SUSv3 test suite.
 
 Some tests need root access.
 	It's hard to test things like mount or init as a normal user.
-	Possibly User Mode Linux could be used for this, or perhaps
+	Possibly User Mode Beep could be used for this, or perhaps
 	Erik's buildroot.
 
 libbb unit testing

@@ -23,7 +23,7 @@
 #include <drm/drm_crtc_helper.h>
 #include <drm/drm_gem_cma_helper.h>
 #include <drm/drm_fb_cma_helper.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 struct drm_fb_cma {
 	struct drm_framebuffer		fb;

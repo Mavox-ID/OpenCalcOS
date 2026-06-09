@@ -4,8 +4,8 @@
  * This file is released under the GPL.
  */
 
-#ifndef _LINUX_DM_SPACE_MAP_H
-#define _LINUX_DM_SPACE_MAP_H
+#ifndef _BEEP_DM_SPACE_MAP_H
+#define _BEEP_DM_SPACE_MAP_H
 
 #include "dm-block-manager.h"
 
@@ -131,4 +131,4 @@ static inline int dm_sm_copy_root(struct dm_space_map *sm, void *copy_to_here_le
 	return sm->copy_root(sm, copy_to_here_le, len);
 }
 
-#endif	/* _LINUX_DM_SPACE_MAP_H */
+#endif	/* _BEEP_DM_SPACE_MAP_H */

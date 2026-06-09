@@ -14,8 +14,8 @@
  * kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/of_platform.h>
+#include <beep/init.h>
+#include <beep/of_platform.h>
 
 #include <asm/io.h>
 #include <asm/machdep.h>

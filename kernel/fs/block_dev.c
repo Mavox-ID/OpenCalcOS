@@ -1,32 +1,32 @@
 /*
- *  linux/fs/block_dev.c
+ *  beep/fs/block_dev.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  Copyright (C) 2001  Andrea Arcangeli <andrea@suse.de> SuSE
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/fcntl.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/major.h>
-#include <linux/device_cgroup.h>
-#include <linux/highmem.h>
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/blkpg.h>
-#include <linux/magic.h>
-#include <linux/buffer_head.h>
-#include <linux/swap.h>
-#include <linux/pagevec.h>
-#include <linux/writeback.h>
-#include <linux/mpage.h>
-#include <linux/mount.h>
-#include <linux/uio.h>
-#include <linux/namei.h>
-#include <linux/log2.h>
-#include <linux/cleancache.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/fcntl.h>
+#include <beep/slab.h>
+#include <beep/kmod.h>
+#include <beep/major.h>
+#include <beep/device_cgroup.h>
+#include <beep/highmem.h>
+#include <beep/blkdev.h>
+#include <beep/module.h>
+#include <beep/blkpg.h>
+#include <beep/magic.h>
+#include <beep/buffer_head.h>
+#include <beep/swap.h>
+#include <beep/pagevec.h>
+#include <beep/writeback.h>
+#include <beep/mpage.h>
+#include <beep/mount.h>
+#include <beep/uio.h>
+#include <beep/namei.h>
+#include <beep/log2.h>
+#include <beep/cleancache.h>
 #include <asm/uaccess.h>
 #include "internal.h"
 

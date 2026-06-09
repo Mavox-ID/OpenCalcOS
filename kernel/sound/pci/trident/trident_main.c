@@ -27,15 +27,15 @@
  *  SiS7018 S/PDIF support by Thomas Winischhofer <thomas@winischhofer.net>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/gameport.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/gameport.h>
+#include <beep/dma-mapping.h>
+#include <beep/export.h>
 
 #include <sound/core.h>
 #include <sound/info.h>

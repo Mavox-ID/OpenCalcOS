@@ -1,5 +1,5 @@
 /*
- *  linux/amiga/amiflop.c
+ *  beep/amiga/amiflop.c
  *
  *  Copyright (C) 1993  Greg Harp
  *  Portions of this driver are based on code contributed by Brad Pepers
@@ -53,21 +53,21 @@
  * - fixed some race conditions (who finds the next may send it to me ;-)
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
-#include <linux/fd.h>
-#include <linux/hdreg.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/amifdreg.h>
-#include <linux/amifd.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/elevator.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <beep/fd.h>
+#include <beep/hdreg.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/amifdreg.h>
+#include <beep/amifd.h>
+#include <beep/fs.h>
+#include <beep/blkdev.h>
+#include <beep/elevator.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
 
 #include <asm/setup.h>
 #include <asm/uaccess.h>

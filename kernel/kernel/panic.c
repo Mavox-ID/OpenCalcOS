@@ -1,5 +1,5 @@
 /*
- *  linux/kernel/panic.c
+ *  beep/kernel/panic.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -8,21 +8,21 @@
  * This function is used through-out the kernel (including mm and fs)
  * to indicate a major problem.
  */
-#include <linux/debug_locks.h>
-#include <linux/interrupt.h>
-#include <linux/kmsg_dump.h>
-#include <linux/kallsyms.h>
-#include <linux/notifier.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/kexec.h>
-#include <linux/sched.h>
-#include <linux/sysrq.h>
-#include <linux/init.h>
-#include <linux/nmi.h>
-#include <linux/dmi.h>
+#include <beep/debug_locks.h>
+#include <beep/interrupt.h>
+#include <beep/kmsg_dump.h>
+#include <beep/kallsyms.h>
+#include <beep/notifier.h>
+#include <beep/module.h>
+#include <beep/random.h>
+#include <beep/reboot.h>
+#include <beep/delay.h>
+#include <beep/kexec.h>
+#include <beep/sched.h>
+#include <beep/sysrq.h>
+#include <beep/init.h>
+#include <beep/nmi.h>
+#include <beep/dmi.h>
 
 #define PANIC_TIMER_STEP 100
 #define PANIC_BLINK_SPD 18

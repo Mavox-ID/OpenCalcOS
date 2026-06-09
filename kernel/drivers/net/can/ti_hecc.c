@@ -31,26 +31,26 @@
  *         .transceiver_switch     = hecc_phy_control,
  * };
  *
- * Please see include/linux/can/platform/ti_hecc.h for description of
+ * Please see include/beep/can/platform/ti_hecc.h for description of
  * above fields.
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/io.h>
 
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/can/platform/ti_hecc.h>
+#include <beep/can/dev.h>
+#include <beep/can/error.h>
+#include <beep/can/platform/ti_hecc.h>
 
 #define DRV_NAME "ti_hecc"
 #define HECC_MODULE_VERSION     "0.7"

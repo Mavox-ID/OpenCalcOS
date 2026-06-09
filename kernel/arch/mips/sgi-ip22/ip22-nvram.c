@@ -1,9 +1,9 @@
 /*
  * ip22-nvram.c: NVRAM and serial EEPROM handling.
  *
- * Copyright (C) 2003 Ladislav Michl (ladis@linux-mips.org)
+ * Copyright (C) 2003 Ladislav Michl (ladis@beep-mips.org)
  */
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <asm/sgi/hpc3.h>
 #include <asm/sgi/ip22.h>

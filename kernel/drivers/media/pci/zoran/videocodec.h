@@ -141,10 +141,10 @@ M                       zr36055[1] 0001 0000c001 00000000 (zr36050[1])
 /* special defines for the videocodec_io structure */
 /* =============================================== */
 
-#ifndef __LINUX_VIDEOCODEC_H
-#define __LINUX_VIDEOCODEC_H
+#ifndef __BEEP_VIDEOCODEC_H
+#define __BEEP_VIDEOCODEC_H
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 
 #define CODEC_DO_COMPRESSION 0
 #define CODEC_DO_EXPANSION   1
@@ -350,4 +350,4 @@ extern int videocodec_unregister(const struct videocodec *);
 
 /* the other calls are directly done via the videocodec structure! */
 
-#endif				/*ifndef __LINUX_VIDEOCODEC_H */
+#endif				/*ifndef __BEEP_VIDEOCODEC_H */

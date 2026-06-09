@@ -4,7 +4,7 @@
  *  Name: crystalhd_cmds . h
  *
  *  Description:
- *		BCM70010 Linux driver user command interfaces.
+ *		BCM70010 Beep driver user command interfaces.
  *
  *  HISTORY:
  *
@@ -28,7 +28,7 @@
 #define _CRYSTALHD_CMDS_H_
 
 /*
- * NOTE:: This is the main interface file between the Linux layer
+ * NOTE:: This is the main interface file between the Beep layer
  *        and the harware layer. This file will use the definitions
  *        from _dts_glob and dts_defs etc.. which are defined for
  *        windows.

@@ -1,5 +1,5 @@
 #
-# Makefile for the linux pstorefs routines.
+# Makefile for the beep pstorefs routines.
 #
 
 obj-y += pstore.o

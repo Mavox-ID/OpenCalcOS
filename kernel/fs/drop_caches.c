@@ -2,12 +2,12 @@
  * Implement the manual drop-all-pagecache function
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/writeback.h>
-#include <linux/sysctl.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/writeback.h>
+#include <beep/sysctl.h>
+#include <beep/gfp.h>
 #include "internal.h"
 
 /* A global variable is a bit ugly, but it keeps the code simple */

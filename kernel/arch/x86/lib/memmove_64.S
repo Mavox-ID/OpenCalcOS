@@ -6,7 +6,7 @@
  *	- Copyright 2011 Fenghua Yu <fenghua.yu@intel.com>
  */
 #define _STRING_C
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/dwarf2.h>
 #include <asm/cpufeature.h>
 #include <asm/alternative-asm.h>

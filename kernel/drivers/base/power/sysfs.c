@@ -2,13 +2,13 @@
  * drivers/base/power/sysfs.c - sysfs entries for device PM
  */
 
-#include <linux/device.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/pm_qos.h>
-#include <linux/pm_runtime.h>
-#include <linux/atomic.h>
-#include <linux/jiffies.h>
+#include <beep/device.h>
+#include <beep/string.h>
+#include <beep/export.h>
+#include <beep/pm_qos.h>
+#include <beep/pm_runtime.h>
+#include <beep/atomic.h>
+#include <beep/jiffies.h>
 #include "power.h"
 
 /*

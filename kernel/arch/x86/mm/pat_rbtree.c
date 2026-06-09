@@ -8,13 +8,13 @@
  * reservations.
  */
 
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/rbtree_augmented.h>
-#include <linux/sched.h>
-#include <linux/gfp.h>
+#include <beep/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/rbtree_augmented.h>
+#include <beep/sched.h>
+#include <beep/gfp.h>
 
 #include <asm/pgtable.h>
 #include <asm/pat.h>

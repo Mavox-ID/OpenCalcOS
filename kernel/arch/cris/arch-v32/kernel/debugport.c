@@ -2,8 +2,8 @@
  * Copyright (C) 2003, Axis Communications AB.
  */
 
-#include <linux/console.h>
-#include <linux/init.h>
+#include <beep/console.h>
+#include <beep/init.h>
 #include <hwregs/reg_rdwr.h>
 #include <hwregs/reg_map.h>
 #include <hwregs/ser_defs.h>

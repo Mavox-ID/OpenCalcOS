@@ -28,7 +28,7 @@
 #define fd_cacheflush(addr,size) /* nothing */
 #define fd_free_irq()           free_irq(FLOPPY_IRQ, NULL);
 
-#include <linux/pci.h>
+#include <beep/pci.h>
 #include <asm/ppc-pci.h>	/* for isa_bridge_pcidev */
 
 #define fd_dma_setup(addr,size,mode,io) fd_ops->_dma_setup(addr,size,mode,io)

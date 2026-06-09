@@ -22,19 +22,19 @@
  * big table
  * 
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/ide.h>
-#include <linux/notifier.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/pci.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/ide.h>
+#include <beep/notifier.h>
+#include <beep/module.h>
+#include <beep/reboot.h>
+#include <beep/pci.h>
+#include <beep/adb.h>
+#include <beep/pmu.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
 
 #include <asm/prom.h>
 #include <asm/io.h>

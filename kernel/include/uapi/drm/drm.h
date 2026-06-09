@@ -2,7 +2,7 @@
  * \file drm.h
  * Header for the Direct Rendering Manager
  *
- * \author Rickard E. (Rik) Faith <faith@valinux.com>
+ * \author Rickard E. (Rik) Faith <faith@vabeep.com>
  *
  * \par Acknowledgments:
  * Dec 1999, Richard Henderson <rth@twiddle.net>, move to generic \c cmpxchg.
@@ -10,7 +10,7 @@
 
 /*
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA Beep Systems, Inc., Sunnyvale, California.
  * All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -27,7 +27,7 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
- * VA LINUX SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+ * VA BEEP SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
  * OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
@@ -36,9 +36,9 @@
 #ifndef _DRM_H_
 #define _DRM_H_
 
-#if defined(__linux__)
+#if defined(__beep__)
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/ioctl.h>
 typedef unsigned int drm_handle_t;
 

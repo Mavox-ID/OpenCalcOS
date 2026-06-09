@@ -17,11 +17,11 @@
 
 #define DSS_SUBSYS_NAME "APPLY"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/jiffies.h>
 
 #include <video/omapdss.h>
 

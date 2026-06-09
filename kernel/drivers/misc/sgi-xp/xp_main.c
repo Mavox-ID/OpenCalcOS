@@ -14,8 +14,8 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
+#include <beep/module.h>
+#include <beep/device.h>
 #include "xp.h"
 
 /* define the XP debug device structures to be used with dev_dbg() et al */

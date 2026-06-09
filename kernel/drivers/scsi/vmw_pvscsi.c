@@ -1,5 +1,5 @@
 /*
- * Linux driver for VMware's para-virtualized SCSI HBA.
+ * Beep driver for VMware's para-virtualized SCSI HBA.
  *
  * Copyright (C) 2008-2009, VMware, Inc. All Rights Reserved.
  *
@@ -21,12 +21,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/pci.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/pci.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
@@ -35,9 +35,9 @@
 
 #include "vmw_pvscsi.h"
 
-#define PVSCSI_LINUX_DRIVER_DESC "VMware PVSCSI driver"
+#define PVSCSI_BEEP_DRIVER_DESC "VMware PVSCSI driver"
 
-MODULE_DESCRIPTION(PVSCSI_LINUX_DRIVER_DESC);
+MODULE_DESCRIPTION(PVSCSI_BEEP_DRIVER_DESC);
 MODULE_AUTHOR("VMware, Inc.");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(PVSCSI_DRIVER_VERSION_STRING);
@@ -614,7 +614,7 @@ static void pvscsi_process_completion_ring(struct pvscsi_adapter *adapter)
 }
 
 /*
- * Translate a Linux SCSI request into a request ring entry.
+ * Translate a Beep SCSI request into a request ring entry.
  */
 static int pvscsi_queue_ring(struct pvscsi_adapter *adapter,
 			     struct pvscsi_ctx *ctx, struct scsi_cmnd *cmd)
@@ -1460,7 +1460,7 @@ static struct pci_driver pvscsi_pci_driver = {
 static int __init pvscsi_init(void)
 {
 	pr_info("%s - version %s\n",
-		PVSCSI_LINUX_DRIVER_DESC, PVSCSI_DRIVER_VERSION_STRING);
+		PVSCSI_BEEP_DRIVER_DESC, PVSCSI_DRIVER_VERSION_STRING);
 	return pci_register_driver(&pvscsi_pci_driver);
 }
 

@@ -1,7 +1,7 @@
 /*
  * drivers/pwm/pwm-vt8500.c
  *
- * Copyright (C) 2012 Tony Prisk <linux@prisktech.co.nz>
+ * Copyright (C) 2012 Tony Prisk <beep@prisktech.co.nz>
  * Copyright (C) 2010 Alexey Charkov <alchark@gmail.com>
  *
  * This software is licensed under the terms of the GNU General Public
@@ -14,21 +14,21 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/pwm.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/pwm.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
 
 #include <asm/div64.h>
 
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_address.h>
 
 /*
  * SoC architecture allocates register space for 4 PWMs but only
@@ -223,5 +223,5 @@ static struct platform_driver vt8500_pwm_driver = {
 module_platform_driver(vt8500_pwm_driver);
 
 MODULE_DESCRIPTION("VT8500 PWM Driver");
-MODULE_AUTHOR("Tony Prisk <linux@prisktech.co.nz>");
+MODULE_AUTHOR("Tony Prisk <beep@prisktech.co.nz>");
 MODULE_LICENSE("GPL v2");

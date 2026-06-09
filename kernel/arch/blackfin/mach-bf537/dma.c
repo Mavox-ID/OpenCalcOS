@@ -6,7 +6,7 @@
  * This file contains the simple DMA Implementation for Blackfin
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <asm/blackfin.h>
 #include <asm/dma.h>

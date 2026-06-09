@@ -33,11 +33,11 @@
 #ifndef __DRM_CRTC_HELPER_H__
 #define __DRM_CRTC_HELPER_H__
 
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/idr.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/idr.h>
 
-#include <linux/fb.h>
+#include <beep/fb.h>
 
 enum mode_set_atomic {
 	LEAVE_ATOMIC_MODE_SET,

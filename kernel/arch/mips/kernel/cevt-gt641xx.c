@@ -1,7 +1,7 @@
 /*
  *  GT641xx clockevent routines.
  *
- *  Copyright (C) 2007  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2007  Yoichi Yuasa <yuasa@beep-mips.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -17,11 +17,11 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  */
-#include <linux/clockchips.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/irq.h>
+#include <beep/clockchips.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/irq.h>
 
 #include <asm/gt64120.h>
 #include <asm/time.h>

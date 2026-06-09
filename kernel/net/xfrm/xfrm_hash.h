@@ -1,8 +1,8 @@
 #ifndef _XFRM_HASH_H
 #define _XFRM_HASH_H
 
-#include <linux/xfrm.h>
-#include <linux/socket.h>
+#include <beep/xfrm.h>
+#include <beep/socket.h>
 
 static inline unsigned int __xfrm4_addr_hash(const xfrm_address_t *addr)
 {

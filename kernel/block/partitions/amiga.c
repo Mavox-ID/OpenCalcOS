@@ -7,8 +7,8 @@
  *  Re-organised Feb 1998 Russell King
  */
 
-#include <linux/types.h>
-#include <linux/affs_hardblocks.h>
+#include <beep/types.h>
+#include <beep/affs_hardblocks.h>
 
 #include "check.h"
 #include "amiga.h"

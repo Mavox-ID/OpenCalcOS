@@ -26,16 +26,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/proc_fs.h>
-#include <linux/workqueue.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/mutex.h>
-#include <linux/debugfs.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/proc_fs.h>
+#include <beep/workqueue.h>
+#include <beep/pci.h>
+#include <beep/pci_hotplug.h>
+#include <beep/mutex.h>
+#include <beep/debugfs.h>
 #include "cpqphp.h"
 
 static DEFINE_MUTEX(cpqphp_mutex);

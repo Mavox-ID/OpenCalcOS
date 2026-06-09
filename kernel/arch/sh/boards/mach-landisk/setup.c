@@ -12,11 +12,11 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/pm.h>
-#include <linux/mm.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/ata_platform.h>
+#include <beep/pm.h>
+#include <beep/mm.h>
 #include <asm/machvec.h>
 #include <mach-landisk/mach/iodata_landisk.h>
 #include <asm/io.h>

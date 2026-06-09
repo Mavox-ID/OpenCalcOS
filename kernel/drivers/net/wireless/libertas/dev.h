@@ -10,7 +10,7 @@
 #include "decl.h"
 #include "host.h"
 
-#include <linux/kfifo.h>
+#include <beep/kfifo.h>
 
 /* sleep_params */
 struct sleep_params {

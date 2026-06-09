@@ -1,16 +1,16 @@
 /*
- * linux/arch/alpha/kernel/sys_marvel.c
+ * beep/arch/alpha/kernel/sys_marvel.c
  *
  * Marvel / IO7 support
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
 
 #include <asm/ptrace.h>
 #include <asm/dma.h>

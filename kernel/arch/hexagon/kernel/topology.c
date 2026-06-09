@@ -1,7 +1,7 @@
 /*
  * CPU topology for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -18,12 +18,12 @@
  * 02110-1301, USA.
  */
 
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/node.h>
-#include <linux/nodemask.h>
-#include <linux/percpu.h>
+#include <beep/cpu.h>
+#include <beep/cpumask.h>
+#include <beep/init.h>
+#include <beep/node.h>
+#include <beep/nodemask.h>
+#include <beep/percpu.h>
 
 /*  Swiped from MIPS.  */
 

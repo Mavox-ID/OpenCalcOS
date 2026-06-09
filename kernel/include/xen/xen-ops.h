@@ -1,7 +1,7 @@
 #ifndef INCLUDE_XEN_OPS_H
 #define INCLUDE_XEN_OPS_H
 
-#include <linux/percpu.h>
+#include <beep/percpu.h>
 #include <asm/xen/interface.h>
 
 DECLARE_PER_CPU(struct vcpu_info *, xen_vcpu);

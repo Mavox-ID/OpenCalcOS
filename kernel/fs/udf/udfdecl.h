@@ -6,10 +6,10 @@
 #include "ecma_167.h"
 #include "osta_udf.h"
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/buffer_head.h>
-#include <linux/udf_fs_i.h>
+#include <beep/fs.h>
+#include <beep/types.h>
+#include <beep/buffer_head.h>
+#include <beep/udf_fs_i.h>
 
 #include "udf_sb.h"
 #include "udfend.h"

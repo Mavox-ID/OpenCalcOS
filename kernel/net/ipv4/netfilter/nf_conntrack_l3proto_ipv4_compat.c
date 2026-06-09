@@ -7,21 +7,21 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/types.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/percpu.h>
-#include <linux/security.h>
+#include <beep/types.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/percpu.h>
+#include <beep/security.h>
 #include <net/net_namespace.h>
 
-#include <linux/netfilter.h>
+#include <beep/netfilter.h>
 #include <net/netfilter/nf_conntrack_core.h>
 #include <net/netfilter/nf_conntrack_l3proto.h>
 #include <net/netfilter/nf_conntrack_l4proto.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_conntrack_acct.h>
-#include <linux/rculist_nulls.h>
-#include <linux/export.h>
+#include <beep/rculist_nulls.h>
+#include <beep/export.h>
 
 struct ct_iter_state {
 	struct seq_net_private p;

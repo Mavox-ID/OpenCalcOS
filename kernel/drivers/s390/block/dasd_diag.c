@@ -1,23 +1,23 @@
 /*
  * Author(s)......: Holger Smolinski <Holger.Smolinski@de.ibm.com>
- * Based on.......: linux/drivers/s390/block/mdisk.c
+ * Based on.......: beep/drivers/s390/block/mdisk.c
  * ...............: by Hartmunt Penner <hpenner@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <Beep390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2000
  *
  */
 
 #define KMSG_COMPONENT "dasd"
 
-#include <linux/kernel_stat.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/hdreg.h>
-#include <linux/bio.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
+#include <beep/kernel_stat.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/hdreg.h>
+#include <beep/bio.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/jiffies.h>
 
 #include <asm/dasd.h>
 #include <asm/debug.h>

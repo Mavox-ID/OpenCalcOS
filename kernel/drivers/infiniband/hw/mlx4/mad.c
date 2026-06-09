@@ -35,9 +35,9 @@
 #include <rdma/ib_sa.h>
 #include <rdma/ib_cache.h>
 
-#include <linux/random.h>
-#include <linux/mlx4/cmd.h>
-#include <linux/gfp.h>
+#include <beep/random.h>
+#include <beep/mlx4/cmd.h>
+#include <beep/gfp.h>
 #include <rdma/ib_pma.h>
 
 #include "mlx4_ib.h"

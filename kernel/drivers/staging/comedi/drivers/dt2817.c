@@ -2,7 +2,7 @@
     comedi/drivers/dt2817.c
     Hardware driver for Data Translation DT2817
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1998 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -40,7 +40,7 @@ Configuration options:
 
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 #define DT2817_SIZE 5
 

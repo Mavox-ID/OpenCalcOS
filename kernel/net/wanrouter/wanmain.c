@@ -39,25 +39,25 @@
 * Dec 22, 1998  Arnaldo Melo    vmalloc/vfree used in device_setup to allocate
 *                               kernel memory and copy configuration data to
 *                               kernel space (for big firmwares)
-* Jun 02, 1999  Gideon Hack	Updates for Linux 2.0.X and 2.2.X kernels.
+* Jun 02, 1999  Gideon Hack	Updates for Beep 2.0.X and 2.2.X kernels.
 *****************************************************************************/
 
-#include <linux/stddef.h>	/* offsetof(), etc. */
-#include <linux/capability.h>
-#include <linux/errno.h>	/* return codes */
-#include <linux/kernel.h>
-#include <linux/module.h>	/* support for loadable modules */
-#include <linux/slab.h>		/* kmalloc(), kfree() */
-#include <linux/mutex.h>
-#include <linux/mm.h>
-#include <linux/string.h>	/* inline mem*, str* functions */
+#include <beep/stddef.h>	/* offsetof(), etc. */
+#include <beep/capability.h>
+#include <beep/errno.h>	/* return codes */
+#include <beep/kernel.h>
+#include <beep/module.h>	/* support for loadable modules */
+#include <beep/slab.h>		/* kmalloc(), kfree() */
+#include <beep/mutex.h>
+#include <beep/mm.h>
+#include <beep/string.h>	/* inline mem*, str* functions */
 
 #include <asm/byteorder.h>	/* htons(), etc. */
-#include <linux/wanrouter.h>	/* WAN router API definitions */
+#include <beep/wanrouter.h>	/* WAN router API definitions */
 
-#include <linux/vmalloc.h>	/* vmalloc, vfree */
+#include <beep/vmalloc.h>	/* vmalloc, vfree */
 #include <asm/uaccess.h>        /* copy_to/from_user */
-#include <linux/init.h>         /* __initfunc et al. */
+#include <beep/init.h>         /* __initfunc et al. */
 
 #define DEV_TO_SLAVE(dev)	(*((struct net_device **)netdev_priv(dev)))
 

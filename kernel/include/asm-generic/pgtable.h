@@ -4,8 +4,8 @@
 #ifndef __ASSEMBLY__
 #ifdef CONFIG_MMU
 
-#include <linux/mm_types.h>
-#include <linux/bug.h>
+#include <beep/mm_types.h>
+#include <beep/bug.h>
 
 #ifndef __HAVE_ARCH_PTEP_SET_ACCESS_FLAGS
 extern int ptep_set_access_flags(struct vm_area_struct *vma,

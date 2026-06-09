@@ -10,16 +10,16 @@
  * License, or (at your option) any later version
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/version.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/version.h>
+#include <beep/timer.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
+#include <beep/interrupt.h>
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 #include <media/v4l2-mem2mem.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>

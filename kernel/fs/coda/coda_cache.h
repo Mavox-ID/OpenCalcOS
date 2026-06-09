@@ -1,4 +1,4 @@
-/* Coda filesystem -- Linux Minicache
+/* Coda filesystem -- Beep Minicache
  *
  * Copyright (C) 1989 - 1997 Carnegie Mellon University
  *

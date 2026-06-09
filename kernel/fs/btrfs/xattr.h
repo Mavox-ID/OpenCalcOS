@@ -19,7 +19,7 @@
 #ifndef __XATTR__
 #define __XATTR__
 
-#include <linux/xattr.h>
+#include <beep/xattr.h>
 
 extern const struct xattr_handler btrfs_xattr_acl_access_handler;
 extern const struct xattr_handler btrfs_xattr_acl_default_handler;

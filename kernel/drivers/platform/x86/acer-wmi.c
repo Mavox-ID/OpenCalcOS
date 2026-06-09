@@ -24,23 +24,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/dmi.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
-#include <linux/i8042.h>
-#include <linux/rfkill.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/dmi.h>
+#include <beep/fb.h>
+#include <beep/backlight.h>
+#include <beep/leds.h>
+#include <beep/platform_device.h>
+#include <beep/acpi.h>
+#include <beep/i8042.h>
+#include <beep/rfkill.h>
+#include <beep/workqueue.h>
+#include <beep/debugfs.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/input/sparse-keymap.h>
 
 #include <acpi/acpi_drivers.h>
 #include <acpi/video.h>

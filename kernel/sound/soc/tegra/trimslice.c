@@ -26,10 +26,10 @@
 
 #include <asm/mach-types.h>
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 #include <sound/core.h>
 #include <sound/jack.h>

@@ -9,14 +9,14 @@
  * version 2 as published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/initrd.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/initrd.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_fdt.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
 
 #include <asm/setup.h>  /* for COMMAND_LINE_SIZE */
 #ifdef CONFIG_PPC
@@ -266,11 +266,11 @@ static unsigned long unflatten_dt_node(struct boot_param_header *blob,
 		if (allnextpp) {
 			/* We accept flattened tree phandles either in
 			 * ePAPR-style "phandle" properties, or the
-			 * legacy "linux,phandle" properties.  If both
+			 * legacy "beep,phandle" properties.  If both
 			 * appear and have different values, things
 			 * will get weird.  Don't do that. */
 			if ((strcmp(pname, "phandle") == 0) ||
-			    (strcmp(pname, "linux,phandle") == 0)) {
+			    (strcmp(pname, "beep,phandle") == 0)) {
 				if (np->phandle == 0)
 					np->phandle = be32_to_cpup((__be32*)*p);
 			}
@@ -555,12 +555,12 @@ void __init early_init_dt_check_for_initrd(unsigned long node)
 
 	pr_debug("Looking for initrd properties... ");
 
-	prop = of_get_flat_dt_prop(node, "linux,initrd-start", &len);
+	prop = of_get_flat_dt_prop(node, "beep,initrd-start", &len);
 	if (!prop)
 		return;
 	start = of_read_ulong(prop, len/4);
 
-	prop = of_get_flat_dt_prop(node, "linux,initrd-end", &len);
+	prop = of_get_flat_dt_prop(node, "beep,initrd-end", &len);
 	if (!prop)
 		return;
 	end = of_read_ulong(prop, len/4);
@@ -631,7 +631,7 @@ int __init early_init_dt_scan_memory(unsigned long node, const char *uname,
 	} else if (strcmp(type, "memory") != 0)
 		return 0;
 
-	reg = of_get_flat_dt_prop(node, "linux,usable-memory", &l);
+	reg = of_get_flat_dt_prop(node, "beep,usable-memory", &l);
 	if (reg == NULL)
 		reg = of_get_flat_dt_prop(node, "reg", &l);
 	if (reg == NULL)

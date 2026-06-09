@@ -1,5 +1,5 @@
 /*
- *      Davicom DM9000 Fast Ethernet driver for Linux.
+ *      Davicom DM9000 Fast Ethernet driver for Beep.
  * 	Copyright (C) 1997  Sten Wang
  *
  * 	This program is free software; you can redistribute it and/or
@@ -19,22 +19,22 @@
  *	Sascha Hauer <s.hauer@pengutronix.de>
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/crc32.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/dm9000.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/crc32.h>
+#include <beep/mii.h>
+#include <beep/ethtool.h>
+#include <beep/dm9000.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
 
 #include <asm/delay.h>
 #include <asm/irq.h>

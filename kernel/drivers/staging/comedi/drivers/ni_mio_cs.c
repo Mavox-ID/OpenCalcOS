@@ -2,7 +2,7 @@
     comedi/drivers/ni_mio_cs.c
     Hardware driver for NI PCMCIA MIO E series cards
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -43,7 +43,7 @@ See the notes in the ni_atmio.o driver.
 
 #include "../comedidev.h"
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 #include "ni_stc.h"
 #include "8255.h"

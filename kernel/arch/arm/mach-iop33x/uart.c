@@ -9,15 +9,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/serial_8250.h>
-#include <linux/io.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/major.h>
+#include <beep/fs.h>
+#include <beep/platform_device.h>
+#include <beep/serial.h>
+#include <beep/tty.h>
+#include <beep/serial_8250.h>
+#include <beep/io.h>
 #include <asm/pgtable.h>
 #include <asm/page.h>
 #include <asm/mach/map.h>

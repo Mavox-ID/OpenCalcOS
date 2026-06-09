@@ -11,15 +11,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/amba/bus.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/amba/bus.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/err.h>
 
 #include "soc.h"
 #include "iomap.h"

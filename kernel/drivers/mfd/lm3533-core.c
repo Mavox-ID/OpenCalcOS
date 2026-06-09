@@ -11,19 +11,19 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/mfd/core.h>
-#include <linux/regmap.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/mfd/core.h>
+#include <beep/regmap.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
 
-#include <linux/mfd/lm3533.h>
+#include <beep/mfd/lm3533.h>
 
 
 #define LM3533_BOOST_OVP_MASK		0x06

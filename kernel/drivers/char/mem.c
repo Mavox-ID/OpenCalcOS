@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/char/mem.c
+ *  beep/drivers/char/mem.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -8,31 +8,31 @@
  *  Shared /dev/zero mmapping support, Feb 2000, Kanoj Sarcar <kanoj@sgi.com>
  */
 
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mman.h>
-#include <linux/random.h>
-#include <linux/init.h>
-#include <linux/raw.h>
-#include <linux/tty.h>
-#include <linux/capability.h>
-#include <linux/ptrace.h>
-#include <linux/device.h>
-#include <linux/highmem.h>
-#include <linux/crash_dump.h>
-#include <linux/backing-dev.h>
-#include <linux/bootmem.h>
-#include <linux/splice.h>
-#include <linux/pfn.h>
-#include <linux/export.h>
-#include <linux/io.h>
+#include <beep/mm.h>
+#include <beep/miscdevice.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/mman.h>
+#include <beep/random.h>
+#include <beep/init.h>
+#include <beep/raw.h>
+#include <beep/tty.h>
+#include <beep/capability.h>
+#include <beep/ptrace.h>
+#include <beep/device.h>
+#include <beep/highmem.h>
+#include <beep/crash_dump.h>
+#include <beep/backing-dev.h>
+#include <beep/bootmem.h>
+#include <beep/splice.h>
+#include <beep/pfn.h>
+#include <beep/export.h>
+#include <beep/io.h>
 
 #include <asm/uaccess.h>
 
 #ifdef CONFIG_IA64
-# include <linux/efi.h>
+# include <beep/efi.h>
 #endif
 
 #define DEVPORT_MINOR	4

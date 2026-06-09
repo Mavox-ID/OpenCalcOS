@@ -6,13 +6,13 @@
  */
 #include "qla_def.h"
 
-#include <linux/moduleparam.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/kobject.h>
-#include <linux/slab.h>
+#include <beep/moduleparam.h>
+#include <beep/vmalloc.h>
+#include <beep/delay.h>
+#include <beep/kthread.h>
+#include <beep/mutex.h>
+#include <beep/kobject.h>
+#include <beep/slab.h>
 #include <scsi/scsi_tcq.h>
 #include <scsi/scsicam.h>
 #include <scsi/scsi_transport.h>
@@ -915,7 +915,7 @@ sp_get(struct srb *sp)
 *    The abort function will abort the specified command.
 *
 * Input:
-*    cmd = Linux SCSI command packet to be aborted.
+*    cmd = Beep SCSI command packet to be aborted.
 *
 * Returns:
 *    Either SUCCESS or FAILED.
@@ -1134,7 +1134,7 @@ qla2xxx_eh_target_reset(struct scsi_cmnd *cmd)
 *    commands.
 *
 * Input:
-*    cmd = Linux SCSI command packet of the command that cause the
+*    cmd = Beep SCSI command packet of the command that cause the
 *          bus reset.
 *
 * Returns:
@@ -1199,7 +1199,7 @@ eh_bus_reset_done:
 *    The reset function will reset the Adapter.
 *
 * Input:
-*      cmd = Linux SCSI command packet of the command that cause the
+*      cmd = Beep SCSI command packet of the command that cause the
 *            adapter reset.
 *
 * Returns:

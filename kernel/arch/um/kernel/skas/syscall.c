@@ -1,10 +1,10 @@
 /*
- * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
+#include <beep/kernel.h>
+#include <beep/ptrace.h>
 #include <kern_util.h>
 #include <sysdep/ptrace.h>
 #include <sysdep/syscalls.h>

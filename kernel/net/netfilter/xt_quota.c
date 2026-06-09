@@ -3,13 +3,13 @@
  *
  * Sam Johnston <samj@samj.net>
  */
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_quota.h>
-#include <linux/module.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_quota.h>
+#include <beep/module.h>
 
 struct xt_quota_priv {
 	spinlock_t	lock;

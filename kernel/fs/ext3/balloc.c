@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext3/balloc.c
+ *  beep/fs/ext3/balloc.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -11,8 +11,8 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/quotaops.h>
-#include <linux/blkdev.h>
+#include <beep/quotaops.h>
+#include <beep/blkdev.h>
 #include "ext3.h"
 
 /*

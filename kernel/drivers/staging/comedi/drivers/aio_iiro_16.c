@@ -35,7 +35,7 @@ Configuration Options:
 */
 
 #include "../comedidev.h"
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 #define AIO_IIRO_16_SIZE	0x08
 #define AIO_IIRO_16_RELAY_0_7	0x00

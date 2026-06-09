@@ -8,9 +8,9 @@
  * See the file COPYING for more details.
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/proc_fs.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/proc_fs.h>
 #include "tp-samples-trace.h"
 
 DEFINE_TRACE(subsys_event);

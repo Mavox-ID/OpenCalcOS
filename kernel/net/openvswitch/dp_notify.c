@@ -16,7 +16,7 @@
  * 02110-1301, USA
  */
 
-#include <linux/netdevice.h>
+#include <beep/netdevice.h>
 #include <net/genetlink.h>
 
 #include "datapath.h"

@@ -133,11 +133,11 @@
 
 #define VMM_LOG_LEN 256
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/kvm.h>
-#include <linux/kvm_para.h>
-#include <linux/kvm_types.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/kvm.h>
+#include <beep/kvm_para.h>
+#include <beep/kvm_types.h>
 
 #include <asm/pal.h>
 #include <asm/sal.h>

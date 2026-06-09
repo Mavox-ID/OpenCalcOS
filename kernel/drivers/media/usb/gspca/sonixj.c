@@ -23,7 +23,7 @@
 
 #define MODULE_NAME "sonixj"
 
-#include <linux/input.h>
+#include <beep/input.h>
 #include "gspca.h"
 #include "jpeg.h"
 

@@ -13,12 +13,12 @@
  * software.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/parport.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/parport.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
 
 #include <asm/setup.h>
 #include <asm/amigahw.h>

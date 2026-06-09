@@ -11,12 +11,12 @@
  *
  * If -E is returned, result is not touched.
  */
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/export.h>
-#include <linux/types.h>
+#include <beep/ctype.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/math64.h>
+#include <beep/export.h>
+#include <beep/types.h>
 #include <asm/uaccess.h>
 #include "kstrtox.h"
 

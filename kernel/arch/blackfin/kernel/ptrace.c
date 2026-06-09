@@ -1,22 +1,22 @@
 /*
- * linux/kernel/ptrace.c is by Ross Biro 1/23/92, edited by Linus Torvalds
+ * beep/kernel/ptrace.c is by Ross Biro 1/23/92, edited by Linus Torvalds
  * these modifications are Copyright 2004-2010 Analog Devices Inc.
  *
  * Licensed under the GPL-2
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/elf.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/regset.h>
-#include <linux/signal.h>
-#include <linux/tracehook.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/elf.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/regset.h>
+#include <beep/signal.h>
+#include <beep/tracehook.h>
+#include <beep/uaccess.h>
 
 #include <asm/page.h>
 #include <asm/pgtable.h>
@@ -195,7 +195,7 @@ static int genregs_set(struct task_struct *target,
 }
 
 /*
- * Define the register sets available on the Blackfin under Linux
+ * Define the register sets available on the Blackfin under Beep
  */
 enum bfin_regset {
 	REGSET_GENERAL,

@@ -1,12 +1,12 @@
 /*
- * linux/fs/ext4/xattr_security.c
+ * beep/fs/ext4/xattr_security.c
  * Handler for storing security labels as extended attributes.
  */
 
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/security.h>
-#include <linux/slab.h>
+#include <beep/string.h>
+#include <beep/fs.h>
+#include <beep/security.h>
+#include <beep/slab.h>
 #include "ext4_jbd2.h"
 #include "ext4.h"
 #include "xattr.h"

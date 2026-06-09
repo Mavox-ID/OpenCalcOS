@@ -9,19 +9,19 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/key.h>
-#include <linux/keyctl.h>
-#include <linux/fs.h>
-#include <linux/capability.h>
-#include <linux/string.h>
-#include <linux/err.h>
-#include <linux/vmalloc.h>
-#include <linux/security.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/syscalls.h>
+#include <beep/key.h>
+#include <beep/keyctl.h>
+#include <beep/fs.h>
+#include <beep/capability.h>
+#include <beep/string.h>
+#include <beep/err.h>
+#include <beep/vmalloc.h>
+#include <beep/security.h>
 #include <asm/uaccess.h>
 #include "internal.h"
 

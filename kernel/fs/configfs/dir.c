@@ -26,13 +26,13 @@
 
 #undef DEBUG
 
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/err.h>
+#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/err.h>
 
-#include <linux/configfs.h>
+#include <beep/configfs.h>
 #include "configfs_internal.h"
 
 DECLARE_RWSEM(configfs_rename_sem);

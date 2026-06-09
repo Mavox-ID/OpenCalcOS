@@ -1,8 +1,8 @@
 #ifndef HOSTAP_COMMON_H
 #define HOSTAP_COMMON_H
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <beep/types.h>
+#include <beep/if_ether.h>
 
 /* IEEE 802.11 defines */
 

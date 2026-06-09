@@ -6,9 +6,9 @@
  * Copyright (C) 2006 Silicon Graphics, Inc. All rights reserved.
  */
 
-#include <linux/bootmem.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <beep/bootmem.h>
+#include <beep/export.h>
+#include <beep/slab.h>
 #include <asm/sn/types.h>
 #include <asm/sn/addrs.h>
 #include <asm/sn/sn_feature_sets.h>
@@ -25,7 +25,7 @@
 #include <asm/sn/tioce_provider.h>
 #include "xtalk/hubdev.h"
 #include "xtalk/xwidgetdev.h"
-#include <linux/acpi.h>
+#include <beep/acpi.h>
 #include <asm/sn/sn2/sn_hwperf.h>
 #include <asm/sn/acpi.h>
 
@@ -109,7 +109,7 @@ sn_pcidev_info_get(struct pci_dev *dev)
 
 	list_for_each_entry(pcidev,
 			    &(SN_PLATFORM_DATA(dev)->pcidev_info), pdi_list) {
-		if (pcidev->pdi_linux_pcidev == dev)
+		if (pcidev->pdi_beep_pcidev == dev)
 			return pcidev;
 	}
 	return NULL;
@@ -238,7 +238,7 @@ void sn_pci_fixup_slot(struct pci_dev *dev, struct pcidev_info *pcidev_info,
 	list_add_tail(&pcidev_info->pdi_list,
 		      &(SN_PLATFORM_DATA(dev->bus)->pcidev_info));
 	/*
-	 * Using the PROMs values for the PCI host bus, get the Linux
+	 * Using the PROMs values for the PCI host bus, get the Beep
 	 * PCI host_pci_dev struct and set up host bus linkages
  	 */
 
@@ -247,7 +247,7 @@ void sn_pci_fixup_slot(struct pci_dev *dev, struct pcidev_info *pcidev_info,
 	host_pci_dev = pci_get_domain_bus_and_slot(segment, bus_no, devfn);
 
 	pcidev_info->host_pci_dev = host_pci_dev;
-	pcidev_info->pdi_linux_pcidev = dev;
+	pcidev_info->pdi_beep_pcidev = dev;
 	pcidev_info->pdi_host_pcidev_info = SN_PCIDEV_INFO(host_pci_dev);
 	bs = SN_PCIBUS_BUSSOFT(dev->bus);
 	pcidev_info->pdi_pcibus_info = bs;

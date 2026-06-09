@@ -14,10 +14,10 @@
  * Tilera-specific RTC driver.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/rtc.h>
+#include <beep/platform_device.h>
 
 /* Platform device pointer. */
 static struct platform_device *tile_rtc_platform_device;

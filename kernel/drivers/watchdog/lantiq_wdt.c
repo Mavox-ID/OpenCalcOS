@@ -9,14 +9,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/of_platform.h>
-#include <linux/uaccess.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/miscdevice.h>
+#include <beep/watchdog.h>
+#include <beep/of_platform.h>
+#include <beep/uaccess.h>
+#include <beep/clk.h>
+#include <beep/io.h>
 
 #include <lantiq_soc.h>
 

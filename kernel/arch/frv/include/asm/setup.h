@@ -12,7 +12,7 @@
 #define _ASM_SETUP_H
 
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <uapi/asm/setup.h>
 
 #ifndef __ASSEMBLY__

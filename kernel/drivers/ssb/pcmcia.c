@@ -8,10 +8,10 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/ssb/ssb.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/etherdevice.h>
+#include <beep/ssb/ssb.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/etherdevice.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ciscode.h>

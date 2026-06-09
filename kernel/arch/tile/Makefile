@@ -17,7 +17,7 @@ ifeq ($(CROSS_COMPILE),)
     CROSS_COMPILE := $(TILERA_ROOT)/bin/tile-
   else
     goals := $(if $(MAKECMDGOALS), $(MAKECMDGOALS), all)
-    ifneq ($(strip $(filter vmlinux modules all,$(goals))),)
+    ifneq ($(strip $(filter vmbeep modules all,$(goals))),)
       HOST_ARCH := $(shell uname -m)
       ifneq ($(HOST_ARCH),$(ARCH))
 $(error Set TILERA_ROOT or CROSS_COMPILE when building $(ARCH) on $(HOST_ARCH))
@@ -70,7 +70,7 @@ INSTALL_PATH ?= $(TILERA_ROOT)/tile/boot
 endif
 
 install:
-	install -D -m 755 vmlinux $(INSTALL_PATH)/vmlinux-$(KERNELRELEASE)
+	install -D -m 755 vmbeep $(INSTALL_PATH)/vmbeep-$(KERNELRELEASE)
 	install -D -m 644 .config $(INSTALL_PATH)/config-$(KERNELRELEASE)
 	install -D -m 644 System.map $(INSTALL_PATH)/System.map-$(KERNELRELEASE)
 

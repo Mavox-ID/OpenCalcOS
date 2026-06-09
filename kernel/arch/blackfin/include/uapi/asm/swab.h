@@ -7,7 +7,7 @@
 #ifndef _BLACKFIN_SWAB_H
 #define _BLACKFIN_SWAB_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm-generic/swab.h>
 
 #ifdef __GNUC__

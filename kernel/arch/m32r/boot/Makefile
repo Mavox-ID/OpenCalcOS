@@ -10,10 +10,10 @@ subdir- := compressed
 
 obj-y	:= setup.o
 
-$(obj)/zCalc: $(obj)/compressed/vmlinux FORCE
+$(obj)/zCalc: $(obj)/compressed/vmbeep FORCE
 	$(call if_changed,objcopy)
 	@echo 'Kernel: $@ is ready'
 
-$(obj)/compressed/vmlinux: FORCE
+$(obj)/compressed/vmbeep: FORCE
 	$(Q)$(MAKE) $(build)=$(obj)/compressed $@
 

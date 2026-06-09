@@ -21,9 +21,9 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/init.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <beep/init.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
 #include <asm/hardware/vic.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

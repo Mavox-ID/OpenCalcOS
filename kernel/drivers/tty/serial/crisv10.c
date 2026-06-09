@@ -9,28 +9,28 @@
 
 static char *serial_version = "$Revision: 1.25 $";
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/bitops.h>
-#include <linux/seq_file.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/major.h>
+#include <beep/string.h>
+#include <beep/fcntl.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/mutex.h>
+#include <beep/bitops.h>
+#include <beep/seq_file.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
 
 #include <asm/irq.h>
 #include <asm/dma.h>
@@ -38,8 +38,8 @@ static char *serial_version = "$Revision: 1.25 $";
 #include <arch/svinto.h>
 #include <arch/system.h>
 
-/* non-arch dependent serial structures are in linux/serial.h */
-#include <linux/serial.h>
+/* non-arch dependent serial structures are in beep/serial.h */
+#include <beep/serial.h>
 /* while we keep our own stuff (struct e100_serial) in a local .h file */
 #include "crisv10.h"
 #include <asm/fasttimer.h>
@@ -84,7 +84,7 @@ struct tty_driver *serial_driver;
 /* Enable this to use serial interrupts to handle when you
    expect the first received event on the serial port to
    be an error, break or similar. Used to be able to flash IRMA
-   from eLinux */
+   from eBeep */
 #define SERIAL_HANDLE_EARLY_ERRORS
 
 /* Currently 16 descriptors x 128 bytes = 2048 bytes */

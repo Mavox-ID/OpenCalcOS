@@ -7,12 +7,12 @@
  *	      Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/kmod.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/ctype.h>
+#include <beep/kmod.h>
+#include <beep/types.h>
+#include <beep/err.h>
+#include <beep/string.h>
+#include <beep/spinlock.h>
+#include <beep/ctype.h>
 #include <asm/uaccess.h>
 
 #include "sclp.h"

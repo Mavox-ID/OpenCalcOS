@@ -25,8 +25,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
-#include <linux/gpio.h>
+#include <beep/compiler.h>
+#include <beep/gpio.h>
 
 /***********************************************************
 *

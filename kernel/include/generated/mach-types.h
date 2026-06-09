@@ -4053,7 +4053,7 @@ extern unsigned int __machine_arch_type;
 #define MACH_TYPE_M3_AUGUESTRUSH       4102
 #define MACH_TYPE_IPC335X              4103
 #define MACH_TYPE_SUN4I                4104
-#define MACH_TYPE_IMX233_OLINUXINO     4105
+#define MACH_TYPE_IMX233_OBEEPINO      4105
 #define MACH_TYPE_K2_WL                4106
 #define MACH_TYPE_K2_UL                4107
 #define MACH_TYPE_K2_CL                4108
@@ -46952,9 +46952,9 @@ extern unsigned int __machine_arch_type;
 # else
 #  define machine_arch_type	MACH_TYPE_THEPAD
 # endif
-# define machine_is_linux_pad()	(machine_arch_type == MACH_TYPE_THEPAD)
+# define machine_is_beep_pad()	(machine_arch_type == MACH_TYPE_THEPAD)
 #else
-# define machine_is_linux_pad()	(0)
+# define machine_is_beep_pad()	(0)
 #endif
 
 #ifdef CONFIG_MACH_MX53_MIRAGE2
@@ -52885,16 +52885,16 @@ extern unsigned int __machine_arch_type;
 # define machine_is_sun4i()	(0)
 #endif
 
-#ifdef CONFIG_MACH_IMX233_OLINUXINO
+#ifdef CONFIG_MACH_IMX233_OBEEPINO
 # ifdef machine_arch_type
 #  undef machine_arch_type
 #  define machine_arch_type	__machine_arch_type
 # else
-#  define machine_arch_type	MACH_TYPE_IMX233_OLINUXINO
+#  define machine_arch_type	MACH_TYPE_IMX233_OBEEPINO
 # endif
-# define machine_is_imx233_olinuxino()	(machine_arch_type == MACH_TYPE_IMX233_OLINUXINO)
+# define machine_is_imx233_obeepino()	(machine_arch_type == MACH_TYPE_IMX233_OBEEPINO)
 #else
-# define machine_is_imx233_olinuxino()	(0)
+# define machine_is_imx233_obeepino()	(0)
 #endif
 
 #ifdef CONFIG_MACH_K2_WL

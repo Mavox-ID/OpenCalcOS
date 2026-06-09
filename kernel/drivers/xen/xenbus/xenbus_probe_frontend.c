@@ -2,18 +2,18 @@
 	pr_debug("xenbus_probe (%s:%d) " fmt ".\n",	\
 		 __func__, __LINE__, ##args)
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/notifier.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/fcntl.h>
+#include <beep/mm.h>
+#include <beep/proc_fs.h>
+#include <beep/notifier.h>
+#include <beep/kthread.h>
+#include <beep/mutex.h>
+#include <beep/io.h>
+#include <beep/module.h>
 
 #include <asm/page.h>
 #include <asm/pgtable.h>

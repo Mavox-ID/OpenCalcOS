@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-h720x/cpu-h7201.c
+ * beep/arch/arm/mach-h720x/cpu-h7201.c
  *
  * Copyright (C) 2003 Thomas Gleixner <tglx@linutronix.de>
  *               2003 Robert Schwebel <r.schwebel@pengutronix.de>
@@ -13,9 +13,9 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
 #include <asm/types.h>
 #include <mach/hardware.h>
 #include <asm/irq.h>

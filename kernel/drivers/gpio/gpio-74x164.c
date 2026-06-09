@@ -9,14 +9,14 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/74x164.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/74x164.h>
+#include <beep/gpio.h>
+#include <beep/of_gpio.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #define GEN_74X164_NUMBER_GPIOS	8
 

@@ -25,16 +25,16 @@
 #include "cx25821-video.h"
 #include "cx25821-video-upstream.h"
 
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/syscalls.h>
-#include <linux/file.h>
-#include <linux/fcntl.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <beep/fs.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/syscalls.h>
+#include <beep/file.h>
+#include <beep/fcntl.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
 
 MODULE_DESCRIPTION("v4l2 driver module for cx25821 based TV cards");
 MODULE_AUTHOR("Hiep Huynh <hiep.huynh@conexant.com>");

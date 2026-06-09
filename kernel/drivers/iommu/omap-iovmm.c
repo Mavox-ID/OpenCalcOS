@@ -10,15 +10,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/device.h>
-#include <linux/scatterlist.h>
-#include <linux/iommu.h>
-#include <linux/omap-iommu.h>
-#include <linux/platform_data/iommu-omap.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/device.h>
+#include <beep/scatterlist.h>
+#include <beep/iommu.h>
+#include <beep/omap-iommu.h>
+#include <beep/platform_data/iommu-omap.h>
 
 #include <asm/cacheflush.h>
 #include <asm/mach/map.h>

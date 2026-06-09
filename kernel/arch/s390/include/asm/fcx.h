@@ -8,7 +8,7 @@
 #ifndef _ASM_S390_FCX_H
 #define _ASM_S390_FCX_H _ASM_S390_FCX_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define TCW_FORMAT_DEFAULT		0
 #define TCW_TIDAW_FORMAT_DEFAULT	0

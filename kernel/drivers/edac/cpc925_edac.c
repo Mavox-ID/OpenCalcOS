@@ -19,13 +19,13 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/edac.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/edac.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
+#include <beep/gfp.h>
 
 #include "edac_core.h"
 #include "edac_module.h"

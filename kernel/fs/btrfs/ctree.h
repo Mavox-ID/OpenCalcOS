@@ -19,18 +19,18 @@
 #ifndef __BTRFS_CTREE__
 #define __BTRFS_CTREE__
 
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/fs.h>
-#include <linux/rwsem.h>
-#include <linux/completion.h>
-#include <linux/backing-dev.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/kobject.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/fs.h>
+#include <beep/rwsem.h>
+#include <beep/completion.h>
+#include <beep/backing-dev.h>
+#include <beep/wait.h>
+#include <beep/slab.h>
+#include <beep/kobject.h>
 #include <trace/events/btrfs.h>
 #include <asm/kmap_types.h>
-#include <linux/pagemap.h>
+#include <beep/pagemap.h>
 #include "extent_io.h"
 #include "extent_map.h"
 #include "async-thread.h"
@@ -152,7 +152,7 @@ struct btrfs_ordered_sum;
 
 /*
  * we can actually store much bigger names, but lets not confuse the rest
- * of linux
+ * of beep
  */
 #define BTRFS_NAME_LEN 255
 
@@ -174,7 +174,7 @@ static int btrfs_csum_sizes[] = { 4, 0 };
 /* four bytes for CRC32 */
 #define BTRFS_EMPTY_DIR_SIZE 0
 
-/* spefic to btrfs_map_block(), therefore not in include/linux/blk_types.h */
+/* spefic to btrfs_map_block(), therefore not in include/beep/blk_types.h */
 #define REQ_GET_READ_MIRRORS	(1 << 30)
 
 #define BTRFS_FT_UNKNOWN	0

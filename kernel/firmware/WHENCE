@@ -3,7 +3,7 @@
              **********
 
 This file attempts to document the origin and licensing information,
-if known, for each piece of firmware distributed for use with the Linux
+if known, for each piece of firmware distributed for use with the Beep
 kernel.
 
 --------------------------------------------------------------------------
@@ -19,7 +19,7 @@ Licence: Allegedly GPLv2+, but no source visible. Marked:
 
   This microcode data is placed under the terms of the GNU General
   Public License. The GPL is contained in /usr/doc/copyright/GPL on a
-  Debian system and in the file COPYING in the Linux kernel source.
+  Debian system and in the file COPYING in the Beep kernel source.
 
   We would prefer you not to distribute modified versions without
   consultation and not to ask for assembly/other microcode source.
@@ -84,8 +84,8 @@ File: qlogic/12160.bin
 
 Licence: Allegedly GPLv2+, but no source visible. Marked:
 
-                   QLOGIC LINUX SOFTWARE
-  QLogic ISP1280/ device driver for Linux 2.2.x and 2.4.x
+                   QLOGIC BEEP SOFTWARE
+  QLogic ISP1280/ device driver for Beep 2.2.x and 2.4.x
   Copyright (C) 2001 Qlogic Corporation (www.qlogic.com)
 
 --------------------------------------------------------------------------
@@ -142,7 +142,7 @@ Original licence information:
 	Keyspan's prior written consent.  All Rights Reserved.
 
 	Permission is hereby granted for the distribution of this firmware
-	image as part of a Linux or other Open Source operating system kernel
+	image as part of a Beep or other Open Source operating system kernel
 	in text or binary form as required.
 
 	This firmware may not be modified and may only be used with
@@ -189,7 +189,7 @@ Original licence information:
  * any third party without Emagic's written consent. All Rights Reserved.
  *
  * Permission is hereby granted for the distribution of this firmware
- * image as part of a Linux or other Open Source operating system kernel
+ * image as part of a Beep or other Open Source operating system kernel
  * in text or binary form as required.
  *
  * This firmware may not be modified and may only be used with the
@@ -248,7 +248,7 @@ Licence: "all firmware components are redistributable in binary form"
          per support@multitech.com
 	 Copyright (C) 2005 Multi-Tech Systems, Inc.
 
-Found in hex form in ftp://ftp.multitech.com/wireless/wireless_linux.zip
+Found in hex form in ftp://ftp.multitech.com/wireless/wireless_beep.zip
 
 --------------------------------------------------------------------------
 
@@ -296,7 +296,7 @@ Found in hex form in kernel source.
 
 --------------------------------------------------------------------------
 
-Driver: DABUSB -- Digital Audio Broadcasting (DAB) Receiver for USB and Linux
+Driver: DABUSB -- Digital Audio Broadcasting (DAB) Receiver for USB and Beep
 
 File: dabusb/firmware.fw
 File: dabusb/bitstream.bin
@@ -687,7 +687,7 @@ File: av7110/bootcode.bin
 
 Licence: GPLv2 or later
 
-ARM assembly source code available at http://www.linuxtv.org/downloads/firmware/Boot.S
+ARM assembly source code available at http://www.beeptv.org/downloads/firmware/Boot.S
 
 --------------------------------------------------------------------------
 

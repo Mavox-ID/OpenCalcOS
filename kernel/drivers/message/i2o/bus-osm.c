@@ -13,8 +13,8 @@
  *			initial version.
  */
 
-#include <linux/module.h>
-#include <linux/i2o.h>
+#include <beep/module.h>
+#include <beep/i2o.h>
 
 #define OSM_NAME	"bus-osm"
 #define OSM_VERSION	"1.317"

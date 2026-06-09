@@ -17,10 +17,10 @@
  *
  *  25/11/2002 - Updated for 2.5 by Andrey Panin <pazke@orbita1.ru>
  */
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/smp.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/smp.h>
 
 #include <asm/visws/cobalt.h>
 #include <asm/visws/piix4.h>
@@ -33,16 +33,16 @@
 #include <asm/time.h>
 #include <asm/io.h>
 
-#include <linux/kernel_stat.h>
+#include <beep/kernel_stat.h>
 
 #include <asm/i8259.h>
 #include <asm/irq_vectors.h>
 #include <asm/visws/lithium.h>
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
 
 extern int no_broadcast;
 
@@ -148,7 +148,7 @@ static void __init visws_get_smp_config(unsigned int early)
 /*
  * The Visual Workstation is Intel MP compliant in the hardware
  * sense, but it doesn't have a BIOS(-configuration table).
- * No problem for Linux.
+ * No problem for Beep.
  */
 
 static void __init MP_processor_info(struct mpc_cpu *m)
@@ -463,7 +463,7 @@ static struct irq_chip cobalt_irq_type = {
  *
  * there is a 'master' physical interrupt source that gets sent to
  * the CPU. But in the chipset there are various 'virtual' interrupts
- * waiting to be handled. We represent this to Linux through a 'master'
+ * waiting to be handled. We represent this to Beep through a 'master'
  * interrupt controller type, and through a special virtual interrupt-
  * controller. Device drivers only see the virtual interrupt sources.
  */

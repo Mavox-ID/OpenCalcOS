@@ -17,8 +17,8 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
 #include <asm/processor.h>
 #include <asm/uaccess.h>
 #include <asm/cache.h>

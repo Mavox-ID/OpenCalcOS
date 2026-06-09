@@ -5,10 +5,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
-#include <linux/ftrace.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/debugfs.h>
+#include <beep/ftrace.h>
 
 #include "trace.h"
 

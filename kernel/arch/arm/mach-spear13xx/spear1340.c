@@ -4,7 +4,7 @@
  * SPEAr1340 machine source file
  *
  * Copyright (C) 2012 ST Microelectronics
- * Viresh Kumar <viresh.linux@gmail.com>
+ * Viresh Kumar <viresh.beep@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
@@ -13,11 +13,11 @@
 
 #define pr_fmt(fmt) "SPEAr1340: " fmt
 
-#include <linux/ahci_platform.h>
-#include <linux/amba/serial.h>
-#include <linux/delay.h>
-#include <linux/dw_dmac.h>
-#include <linux/of_platform.h>
+#include <beep/ahci_platform.h>
+#include <beep/amba/serial.h>
+#include <beep/delay.h>
+#include <beep/dw_dmac.h>
+#include <beep/of_platform.h>
 #include <asm/hardware/gic.h>
 #include <asm/mach/arch.h>
 #include <mach/dma.h>

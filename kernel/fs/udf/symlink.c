@@ -21,13 +21,13 @@
 
 #include "udfdecl.h"
 #include <asm/uaccess.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/stat.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/time.h>
+#include <beep/mm.h>
+#include <beep/stat.h>
+#include <beep/pagemap.h>
+#include <beep/buffer_head.h>
 #include "udf_i.h"
 
 static void udf_pc_to_char(struct super_block *sb, unsigned char *from,

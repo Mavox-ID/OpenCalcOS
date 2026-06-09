@@ -8,7 +8,7 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/cpu-regs.h>
 #include <asm/smp.h>
 #include <asm/thread_info.h>

@@ -19,20 +19,20 @@
 
 #undef DEBUG
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/miscdevice.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/mmu_notifier.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/miscdevice.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/mmu_notifier.h>
+#include <beep/types.h>
+#include <beep/uaccess.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>
 
 #include <xen/xen.h>
 #include <xen/grant_table.h>

@@ -40,14 +40,14 @@
 #define pr_hardcont(args...)	do { } while(0)
 #endif
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/bootmem.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/bootmem.h>
+#include <beep/notifier.h>
+#include <beep/cpu.h>
+#include <beep/slab.h>
 
 #include <asm/mmu_context.h>
 #include <asm/tlbflush.h>

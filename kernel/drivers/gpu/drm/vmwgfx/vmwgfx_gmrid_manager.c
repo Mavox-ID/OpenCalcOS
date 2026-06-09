@@ -32,9 +32,9 @@
 #include <drm/ttm/ttm_module.h>
 #include <drm/ttm/ttm_bo_driver.h>
 #include <drm/ttm/ttm_placement.h>
-#include <linux/idr.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
+#include <beep/idr.h>
+#include <beep/spinlock.h>
+#include <beep/kernel.h>
 
 struct vmwgfx_gmrid_man {
 	spinlock_t lock;

@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/host/msmsdcc.h - QCT MSM7K SDC Controller
+ *  beep/drivers/mmc/host/msmsdcc.h - QCT MSM7K SDC Controller
  *
  *  Copyright (C) 2008 Google, All Rights Reserved.
  *

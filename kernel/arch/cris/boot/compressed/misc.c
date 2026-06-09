@@ -2,23 +2,23 @@
  * misc.c
  *
  * This is a collection of several routines from gzip-1.0.3
- * adapted for Linux.
+ * adapted for Beep.
  *
  * malloc by Hannu Savolainen 1993 and Matthias Urlichs 1994
  * puts by Nick Holloway 1993, better puts by Martin Mares 1995
- * adaptation for Linux/CRIS Axis Communications AB, 1999
+ * adaptation for Beep/CRIS Axis Communications AB, 1999
  *
  */
 
 /* where the piggybacked kernel image expects itself to live.
  * it is the same address we use when we network load an uncompressed
  * image into DRAM, and it is the address the kernel is linked to live
- * at by vmlinux.lds.S
+ * at by vmbeep.lds.S
  */
 
 #define KERNEL_LOAD_ADR 0x40004000
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #ifdef CONFIG_ETRAX_ARCH_V32
 #include <hwregs/reg_rdwr.h>
@@ -363,14 +363,14 @@ void decompress_kernel(void)
 	__asm__ volatile ("move $vr,%0" : "=rm" (revision));
 	if (revision < compile_rev) {
 #ifdef CONFIG_ETRAX_ARCH_V32
-		aputs("You need at least ETRAX FS to run Linux 2.6/crisv32\n");
+		aputs("You need at least ETRAX FS to run Beep 2.6/crisv32\n");
 #else
-		aputs("You need an ETRAX 100LX to run linux 2.6/crisv10\n");
+		aputs("You need an ETRAX 100LX to run beep 2.6/crisv10\n");
 #endif
 		while(1);
 	}
 
-	aputs("Uncompressing Linux...\n");
+	aputs("Uncompressing Beep...\n");
 	gunzip();
 	aputs("Done. Now booting the kernel\n");
 }

@@ -6,24 +6,24 @@
  * Copyright 2006-2007 Michele d'Amico
  * Copyright 1996 Alan Cox <alan@lxorguk.ukuu.org.uk>
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucbeep.org/
  *
  * Licensed under the GPL-2 or later.
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/uaccess.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/timer.h>
+#include <beep/miscdevice.h>
+#include <beep/watchdog.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/uaccess.h>
 #include <asm/blackfin.h>
 #include <asm/bfin_watchdog.h>
 
@@ -33,7 +33,7 @@
 
 #define WATCHDOG_NAME "bfin-wdt"
 
-/* The BF561 has two watchdogs (one per core), but since Linux
+/* The BF561 has two watchdogs (one per core), but since Beep
  * only runs on core A, we'll just work with that one.
  */
 #ifdef BF561_FAMILY

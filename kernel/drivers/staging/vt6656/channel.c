@@ -34,7 +34,7 @@
  *
  */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include "country.h"
 #include "channel.h"
 #include "rf.h"

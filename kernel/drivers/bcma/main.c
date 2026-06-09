@@ -6,10 +6,10 @@
  */
 
 #include "bcma_private.h"
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/bcma/bcma.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/bcma/bcma.h>
+#include <beep/slab.h>
 
 MODULE_DESCRIPTION("Broadcom's specific AMBA driver");
 MODULE_LICENSE("GPL");

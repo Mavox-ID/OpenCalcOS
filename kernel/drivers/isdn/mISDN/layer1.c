@@ -16,9 +16,9 @@
  */
 
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mISDNhw.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/mISDNhw.h>
 #include "core.h"
 #include "layer1.h"
 #include "fsm.h"

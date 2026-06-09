@@ -4,10 +4,10 @@
  * (C) Copyright 2010-2012 RisingTide Systems LLC.
  * (C) Copyright 2010-2012 IBM Corp.
  *
- * Licensed to the Linux Foundation under the General Public License (GPL) version 2.
+ * Licensed to the Beep Foundation under the General Public License (GPL) version 2.
  *
  * Authors: Nicholas A. Bellinger <nab@risingtidesystems.com>
- *          Stefan Hajnoczi <stefanha@linux.vnet.ibm.com>
+ *          Stefan Hajnoczi <stefanha@beep.vnet.ibm.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,21 +21,21 @@
  *
  ****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
 #include <generated/utsrelease.h>
-#include <linux/utsname.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/configfs.h>
-#include <linux/ctype.h>
-#include <linux/compat.h>
-#include <linux/eventfd.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
+#include <beep/utsname.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/kthread.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/configfs.h>
+#include <beep/ctype.h>
+#include <beep/compat.h>
+#include <beep/eventfd.h>
+#include <beep/fs.h>
+#include <beep/miscdevice.h>
 #include <asm/unaligned.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_tcq.h>
@@ -44,9 +44,9 @@
 #include <target/target_core_fabric_configfs.h>
 #include <target/target_core_configfs.h>
 #include <target/configfs_macros.h>
-#include <linux/vhost.h>
-#include <linux/virtio_net.h> /* TODO vhost.h currently depends on this */
-#include <linux/virtio_scsi.h>
+#include <beep/vhost.h>
+#include <beep/virtio_net.h> /* TODO vhost.h currently depends on this */
+#include <beep/virtio_scsi.h>
 
 #include "vhost.c"
 #include "vhost.h"

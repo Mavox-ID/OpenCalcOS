@@ -1,5 +1,5 @@
 #include "util.h"
-#include "linux/string.h"
+#include "beep/string.h"
 
 #define K 1024LL
 /*

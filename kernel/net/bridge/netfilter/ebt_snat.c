@@ -7,14 +7,14 @@
  *  June, 2002
  *
  */
-#include <linux/module.h>
+#include <beep/module.h>
 #include <net/sock.h>
-#include <linux/if_arp.h>
+#include <beep/if_arp.h>
 #include <net/arp.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_nat.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_bridge/ebtables.h>
+#include <beep/netfilter_bridge/ebt_nat.h>
 
 static unsigned int
 ebt_snat_tg(struct sk_buff *skb, const struct xt_action_param *par)

@@ -77,7 +77,7 @@ static void mv64x60_udbg_init(void)
 	int intr_cause_offset;
 	int err;
 
-	path = of_get_property(of_chosen, "linux,stdout-path", NULL);
+	path = of_get_property(of_chosen, "beep,stdout-path", NULL);
 	if (!path)
 		return;
 

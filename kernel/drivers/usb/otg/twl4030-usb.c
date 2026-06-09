@@ -24,21 +24,21 @@
  *	- 3-pin mode support may be added in future.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/musb-omap.h>
-#include <linux/usb/ulpi.h>
-#include <linux/i2c/twl.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/musb-omap.h>
+#include <beep/usb/ulpi.h>
+#include <beep/i2c/twl.h>
+#include <beep/regulator/consumer.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 
 /* Register defines */
 

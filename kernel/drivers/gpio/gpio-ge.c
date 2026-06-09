@@ -17,17 +17,17 @@
  * the I/O interrupt controllers mask to stop them propergating
  */
 
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/compiler.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
+#include <beep/of_gpio.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #define GEF_GPIO_DIRECT		0x00
 #define GEF_GPIO_IN		0x04

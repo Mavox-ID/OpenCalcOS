@@ -1,7 +1,7 @@
 /*
- *  linux/kernel/acct.c
+ *  beep/kernel/acct.c
  *
- *  BSD Process Accounting for Linux
+ *  BSD Process Accounting for Beep
  *
  *  Author: Marco van Wieringen <mvw@planets.elm.net>
  *
@@ -43,22 +43,22 @@
  * a struct file opened for write. Fixed. 2/6/2000, AV.
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/acct.h>
-#include <linux/capability.h>
-#include <linux/file.h>
-#include <linux/tty.h>
-#include <linux/security.h>
-#include <linux/vfs.h>
-#include <linux/jiffies.h>
-#include <linux/times.h>
-#include <linux/syscalls.h>
-#include <linux/mount.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/acct.h>
+#include <beep/capability.h>
+#include <beep/file.h>
+#include <beep/tty.h>
+#include <beep/security.h>
+#include <beep/vfs.h>
+#include <beep/jiffies.h>
+#include <beep/times.h>
+#include <beep/syscalls.h>
+#include <beep/mount.h>
 #include <asm/uaccess.h>
 #include <asm/div64.h>
-#include <linux/blkdev.h> /* sector_div */
-#include <linux/pid_namespace.h>
+#include <beep/blkdev.h> /* sector_div */
+#include <beep/pid_namespace.h>
 
 /*
  * These constants control the amount of freespace that suspend and

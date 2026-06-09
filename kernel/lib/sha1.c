@@ -5,10 +5,10 @@
  * This was based on the git SHA1 implementation.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/bitops.h>
-#include <linux/cryptohash.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/bitops.h>
+#include <beep/cryptohash.h>
 #include <asm/unaligned.h>
 
 /*

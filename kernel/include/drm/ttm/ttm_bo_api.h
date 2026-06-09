@@ -32,13 +32,13 @@
 #define _TTM_BO_API_H_
 
 #include <drm/drm_hashtab.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/mm.h>
-#include <linux/rbtree.h>
-#include <linux/bitmap.h>
+#include <beep/kref.h>
+#include <beep/list.h>
+#include <beep/wait.h>
+#include <beep/mutex.h>
+#include <beep/mm.h>
+#include <beep/rbtree.h>
+#include <beep/bitmap.h>
 
 struct ttm_bo_device;
 

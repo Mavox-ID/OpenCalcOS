@@ -11,17 +11,17 @@
  * or (at your option) any later version
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/regulator/consumer.h>
+#include <beep/slab.h>
 
 #include <media/v4l2-subdev.h>
 

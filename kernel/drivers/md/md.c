@@ -1,5 +1,5 @@
 /*
-   md.c : Multiple Devices driver for Linux
+   md.c : Multiple Devices driver for Beep
 	  Copyright (C) 1998, 1999, 2000 Ingo Molnar
 
      completely rewritten, based on the MD driver code from Marc Zyngier
@@ -28,29 +28,29 @@
    any later version.
 
    You should have received a copy of the GNU General Public License
-   (for example /usr/src/linux/COPYING); if not, write to the Free
+   (for example /usr/src/beep/COPYING); if not, write to the Free
    Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 */
 
-#include <linux/kthread.h>
-#include <linux/blkdev.h>
-#include <linux/sysctl.h>
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/hdreg.h>
-#include <linux/proc_fs.h>
-#include <linux/random.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/file.h>
-#include <linux/compat.h>
-#include <linux/delay.h>
-#include <linux/raid/md_p.h>
-#include <linux/raid/md_u.h>
-#include <linux/slab.h>
+#include <beep/kthread.h>
+#include <beep/blkdev.h>
+#include <beep/sysctl.h>
+#include <beep/seq_file.h>
+#include <beep/fs.h>
+#include <beep/poll.h>
+#include <beep/ctype.h>
+#include <beep/string.h>
+#include <beep/hdreg.h>
+#include <beep/proc_fs.h>
+#include <beep/random.h>
+#include <beep/module.h>
+#include <beep/reboot.h>
+#include <beep/file.h>
+#include <beep/compat.h>
+#include <beep/delay.h>
+#include <beep/raid/md_p.h>
+#include <beep/raid/md_u.h>
+#include <beep/slab.h>
 #include "md.h"
 #include "bitmap.h"
 

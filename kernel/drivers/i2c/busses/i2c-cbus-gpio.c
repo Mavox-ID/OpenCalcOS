@@ -16,19 +16,19 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/i2c-cbus-gpio.h>
+#include <beep/io.h>
+#include <beep/i2c.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/of_gpio.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/platform_data/i2c-cbus-gpio.h>
 
 /*
  * Bit counts are derived from Nokia implementation. These should be checked

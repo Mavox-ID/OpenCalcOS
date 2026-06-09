@@ -12,9 +12,9 @@
  *   more details.
  */
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/uaccess.h>
 
 int fixup_exception(struct pt_regs *regs)
 {

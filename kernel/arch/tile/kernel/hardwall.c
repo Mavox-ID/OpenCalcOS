@@ -12,17 +12,17 @@
  *   more details.
  */
 
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/rwsem.h>
-#include <linux/kprobes.h>
-#include <linux/sched.h>
-#include <linux/hardirq.h>
-#include <linux/uaccess.h>
-#include <linux/smp.h>
-#include <linux/cdev.h>
-#include <linux/compat.h>
+#include <beep/fs.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/rwsem.h>
+#include <beep/kprobes.h>
+#include <beep/sched.h>
+#include <beep/hardirq.h>
+#include <beep/uaccess.h>
+#include <beep/smp.h>
+#include <beep/cdev.h>
+#include <beep/compat.h>
 #include <asm/hardwall.h>
 #include <asm/traps.h>
 #include <asm/siginfo.h>

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/signal.c
+ *  beep/arch/arm/kernel/signal.c
  *
  *  Copyright (C) 1995-2009 Russell King
  *
@@ -7,11 +7,11 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/personality.h>
-#include <linux/uaccess.h>
-#include <linux/tracehook.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/personality.h>
+#include <beep/uaccess.h>
+#include <beep/tracehook.h>
 
 #include <asm/elf.h>
 #include <asm/cacheflush.h>
@@ -412,7 +412,7 @@ setup_return(struct pt_regs *regs, struct k_sigaction *ka,
 
 		if (thumb) {
 			cpsr |= PSR_T_BIT;
-#if __LINUX_ARM_ARCH__ >= 7
+#if __BEEP_ARM_ARCH__ >= 7
 			/* clear the If-Then Thumb-2 execution state */
 			cpsr &= ~PSR_IT_MASK;
 #endif

@@ -11,17 +11,17 @@
 		#size-cells = <0>;
 		button@1 {
 			label = "Power button";
-			linux,code = <116>;
+			beep,code = <116>;
 			gpios = <&gpio1 2 1>;
 		};
 		button@2 {
 			label = "USB unmount button";
-			linux,code = <161>;
+			beep,code = <161>;
 			gpios = <&gpio1 15 1>;
 		};
 		button@3 {
 			label = "Reset button";
-			linux,code = <0x198>;
+			beep,code = <0x198>;
 			gpios = <&gpio1 16 1>;
 		};
 	};

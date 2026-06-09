@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017 Denys Vlasenko <vda.linux@googlemail.com>
+ * Copyright (c) 2017 Denys Vlasenko <vda.beep@googlemail.com>
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */

@@ -35,19 +35,19 @@
  * SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
-#include <linux/usb/audio.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/bitops.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/timer.h>
+#include <beep/usb.h>
+#include <beep/wait.h>
+#include <beep/usb/audio.h>
+#include <beep/module.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

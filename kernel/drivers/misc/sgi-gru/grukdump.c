@@ -20,12 +20,12 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/spinlock.h>
+#include <beep/uaccess.h>
+#include <beep/delay.h>
+#include <beep/bitops.h>
 #include <asm/uv/uv_hub.h>
 #include "gru.h"
 #include "grutables.h"

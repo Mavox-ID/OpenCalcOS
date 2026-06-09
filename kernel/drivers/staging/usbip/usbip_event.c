@@ -17,8 +17,8 @@
  * USA.
  */
 
-#include <linux/kthread.h>
-#include <linux/export.h>
+#include <beep/kthread.h>
+#include <beep/export.h>
 
 #include "usbip_common.h"
 

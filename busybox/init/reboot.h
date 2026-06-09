@@ -6,7 +6,7 @@
 #include <sys/reboot.h>
 
 #ifndef RB_HALT_SYSTEM
-# if defined(__linux__)
+# if defined(__beep__)
 #  define RB_HALT_SYSTEM  0xcdef0123
 #  define RB_ENABLE_CAD   0x89abcdef
 #  define RB_DISABLE_CAD  0
@@ -21,7 +21,7 @@
 #ifndef RB_POWER_OFF
 # if defined(RB_POWERDOWN)
 #  define RB_POWER_OFF  RB_POWERDOWN
-# elif defined(__linux__)
+# elif defined(__beep__)
 #  define RB_POWER_OFF  0x4321fedc
 # else
 #  warning "poweroff unsupported, using halt as fallback"

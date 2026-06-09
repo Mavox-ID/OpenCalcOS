@@ -13,16 +13,16 @@
  *
  */
 
-#include <linux/time.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/fs.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/alarmtimer.h>
+#include <beep/time.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/miscdevice.h>
+#include <beep/fs.h>
+#include <beep/platform_device.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/uaccess.h>
+#include <beep/alarmtimer.h>
 #include "android_alarm.h"
 
 #define ANDROID_ALARM_PRINT_INFO (1U << 0)

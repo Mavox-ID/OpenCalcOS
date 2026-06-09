@@ -4,7 +4,7 @@
 #if !defined(_TRACE_POWERPC_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_POWERPC_H
 
-#include <linux/tracepoint.h>
+#include <beep/tracepoint.h>
 
 struct pt_regs;
 

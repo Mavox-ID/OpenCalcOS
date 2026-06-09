@@ -1,13 +1,13 @@
 /*
  * Define the pci_ops for the PCIC on Toshiba TX4927, TX4938, etc.
  *
- * Based on linux/arch/mips/pci/ops-tx4938.c,
- *          linux/arch/mips/pci/fixup-rbtx4938.c,
- *          linux/arch/mips/txx9/rbtx4938/setup.c,
+ * Based on beep/arch/mips/pci/ops-tx4938.c,
+ *          beep/arch/mips/pci/fixup-rbtx4938.c,
+ *          beep/arch/mips/txx9/rbtx4938/setup.c,
  *	    and RBTX49xx patch from CELF patch archive.
  *
  * 2003-2005 (c) MontaVista Software, Inc.
- * Copyright (C) 2004 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2004 by Ralf Baechle (ralf@beep-mips.org)
  * (C) Copyright TOSHIBA CORPORATION 2000-2001, 2004-2007
  *
  * This program is free software; you can redistribute  it and/or modify it
@@ -15,9 +15,9 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 #include <asm/txx9/pci.h>
 #include <asm/txx9/tx4927pcic.h>
 

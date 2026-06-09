@@ -10,10 +10,10 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
 #include <asm/system_misc.h>
 #include <asm/mach/arch.h>
 #include <mach/orion5x.h>

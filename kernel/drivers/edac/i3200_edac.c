@@ -7,12 +7,12 @@
  * GNU General Public License.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/edac.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/edac.h>
+#include <beep/io.h>
 #include "edac_core.h"
 
 #include <asm-generic/io-64-nonatomic-lo-hi.h>

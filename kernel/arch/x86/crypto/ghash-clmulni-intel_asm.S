@@ -16,7 +16,7 @@
  * by the Free Software Foundation.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/inst.h>
 
 .data

@@ -1,7 +1,7 @@
 /*
  * arch/arm/mach-spear13xx/platsmp.c
  *
- * based upon linux/arch/arm/mach-realview/platsmp.c
+ * based upon beep/arch/arm/mach-realview/platsmp.c
  *
  * Copyright (C) 2012 ST Microelectronics Ltd.
  * Shiraz Hashim <shiraz.hashim@st.com>
@@ -11,10 +11,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/io.h>
-#include <linux/smp.h>
+#include <beep/delay.h>
+#include <beep/jiffies.h>
+#include <beep/io.h>
+#include <beep/smp.h>
 #include <asm/cacheflush.h>
 #include <asm/hardware/gic.h>
 #include <asm/smp_scu.h>
@@ -64,7 +64,7 @@ static int __cpuinit spear13xx_boot_secondary(unsigned int cpu, struct task_stru
 	 * that it has been released by resetting pen_release.
 	 *
 	 * Note that "pen_release" is the hardware CPU ID, whereas
-	 * "cpu" is Linux's internal ID.
+	 * "cpu" is Beep's internal ID.
 	 */
 	pen_release = cpu;
 	flush_cache_all();

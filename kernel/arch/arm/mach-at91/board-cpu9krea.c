@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-at91/board-cpu9krea.c
+ * beep/arch/arm/mach-at91/board-cpu9krea.c
  *
  *  Copyright (C) 2005 SAN People
  *  Copyright (C) 2006 Atmel
@@ -20,16 +20,16 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/types.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/mtd/physmap.h>
+#include <beep/types.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/gpio_keys.h>
+#include <beep/input.h>
+#include <beep/mtd/physmap.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>

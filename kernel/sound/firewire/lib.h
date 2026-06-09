@@ -1,8 +1,8 @@
 #ifndef SOUND_FIREWIRE_LIB_H_INCLUDED
 #define SOUND_FIREWIRE_LIB_H_INCLUDED
 
-#include <linux/firewire-constants.h>
-#include <linux/types.h>
+#include <beep/firewire-constants.h>
+#include <beep/types.h>
 
 struct fw_unit;
 

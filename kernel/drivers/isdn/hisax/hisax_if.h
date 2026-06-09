@@ -13,7 +13,7 @@
 #ifndef __HISAX_IF_H__
 #define __HISAX_IF_H__
 
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 
 #define REQUEST		0
 #define CONFIRM		1

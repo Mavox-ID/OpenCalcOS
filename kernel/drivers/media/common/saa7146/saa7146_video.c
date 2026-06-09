@@ -4,7 +4,7 @@
 #include <media/v4l2-chip-ident.h>
 #include <media/v4l2-event.h>
 #include <media/v4l2-ctrls.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 static int max_memory = 32;
 

@@ -8,7 +8,7 @@
 #ifndef _ASM_PGTABLE_H
 #define _ASM_PGTABLE_H
 
-#include <linux/mmzone.h>
+#include <beep/mmzone.h>
 #ifdef CONFIG_32BIT
 #include <asm/pgtable-32.h>
 #endif

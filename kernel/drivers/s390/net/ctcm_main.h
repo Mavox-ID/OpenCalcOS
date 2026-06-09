@@ -10,8 +10,8 @@
 #include <asm/ccwdev.h>
 #include <asm/ccwgroup.h>
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
 
 #include "fsm.h"
 #include "ctcm_dbug.h"
@@ -93,8 +93,8 @@ enum ctcm_channel_types {
 #define CCW_CMD_PREPARE		0xe3
 
 #define CTCM_PROTO_S390		0
-#define CTCM_PROTO_LINUX	1
-#define CTCM_PROTO_LINUX_TTY	2
+#define CTCM_PROTO_BEEP	1
+#define CTCM_PROTO_BEEP_TTY	2
 #define CTCM_PROTO_OS390	3
 #define CTCM_PROTO_MPC		4
 #define CTCM_PROTO_MAX		4

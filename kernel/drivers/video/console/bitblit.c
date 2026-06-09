@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/console/bitblit.c -- BitBlitting Operation
+ *  beep/drivers/video/console/bitblit.c -- BitBlitting Operation
  *
  *  Originally from the 'accel_*' routines in drivers/video/console/fbcon.c
  *
@@ -10,12 +10,12 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/fb.h>
-#include <linux/vt_kern.h>
-#include <linux/console.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/fb.h>
+#include <beep/vt_kern.h>
+#include <beep/console.h>
 #include <asm/types.h>
 #include "fbcon.h"
 

@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/include/plat/irqs.h
+/* beep/arch/arm/plat-samsung/include/plat/irqs.h
  *
  * Copyright (c) 2009 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/

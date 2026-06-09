@@ -5,9 +5,9 @@
  * Licensed under the GPL-2 or later
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/ptrace.h>
 
 const char * const greg_names[] = {
 	"R0",    "R1",      "R2",     "R3",    "R4",    "R5",    "R6",     "R7",

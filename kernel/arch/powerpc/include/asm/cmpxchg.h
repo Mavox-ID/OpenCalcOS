@@ -2,7 +2,7 @@
 #define _ASM_POWERPC_CMPXCHG_H_
 
 #ifdef __KERNEL__
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/synch.h>
 #include <asm/asm-compat.h>
 

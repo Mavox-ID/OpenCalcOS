@@ -2,7 +2,7 @@
  * misc.c
  *
  * This is a collection of several routines from gzip-1.0.3
- * adapted for Linux.
+ * adapted for Beep.
  *
  * malloc by Hannu Savolainen 1993 and Matthias Urlichs 1994
  * puts by Nick Holloway 1993, better puts by Martin Mares 1995
@@ -356,7 +356,7 @@ asmlinkage void decompress_kernel(void *rmode, memptr heap,
 		error("Wrong destination address");
 #endif
 
-	debug_putstr("\nDecompressing Linux... ");
+	debug_putstr("\nDecompressing Beep... ");
 	decompress(input_data, input_len, NULL, NULL, output, NULL, error);
 	parse_elf(output);
 	debug_putstr("done.\nBooting the kernel.\n");

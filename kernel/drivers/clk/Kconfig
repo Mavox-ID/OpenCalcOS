@@ -16,7 +16,7 @@ config COMMON_CLK
 	---help---
 	  The common clock framework is a single definition of struct
 	  clk, useful across many platforms, as well as an
-	  implementation of the clock API in include/linux/clk.h.
+	  implementation of the clock API in include/beep/clk.h.
 	  Architectures utilizing the common struct clk should select
 	  this option.
 

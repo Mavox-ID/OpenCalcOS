@@ -22,7 +22,7 @@
 
 #include <mach/regs-serial.h>
 #include <mach/map.h>
-#include <linux/serial_reg.h>
+#include <beep/serial_reg.h>
 
 #define arch_decomp_wdog()
 

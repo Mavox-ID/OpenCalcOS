@@ -1,5 +1,5 @@
 /*
- * Linux on zSeries Channel Measurement Facility support
+ * Beep on zSeries Channel Measurement Facility support
  *
  * Copyright IBM Corp. 2000, 2006
  *
@@ -26,14 +26,14 @@
 #define KMSG_COMPONENT "cio"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/bootmem.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/timex.h>	/* get_clock() */
+#include <beep/bootmem.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/slab.h>
+#include <beep/timex.h>	/* get_clock() */
 
 #include <asm/ccwdev.h>
 #include <asm/cio.h>

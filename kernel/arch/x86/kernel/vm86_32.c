@@ -30,19 +30,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/highmem.h>
-#include <linux/ptrace.h>
-#include <linux/audit.h>
-#include <linux/stddef.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/highmem.h>
+#include <beep/ptrace.h>
+#include <beep/audit.h>
+#include <beep/stddef.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>

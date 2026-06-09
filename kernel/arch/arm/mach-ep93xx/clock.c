@@ -12,14 +12,14 @@
 
 #define pr_fmt(fmt) "ep93xx " KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/clkdev.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
+#include <beep/clkdev.h>
 
 #include <mach/hardware.h>
 

@@ -21,11 +21,11 @@
  * Alexander Smirnov <alex.bluesman.smirnov@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/netdevice.h>
-#include <linux/crc-ccitt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/workqueue.h>
+#include <beep/netdevice.h>
+#include <beep/crc-ccitt.h>
 
 #include <net/mac802154.h>
 #include <net/ieee802154_netdev.h>

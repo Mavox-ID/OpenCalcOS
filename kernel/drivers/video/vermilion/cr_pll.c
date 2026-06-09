@@ -27,11 +27,11 @@
  *   Alan Hourihane <alanh-at-tungstengraphics-dot-com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/errno.h>
+#include <beep/fb.h>
 #include "vermilion.h"
 
 /* The PLL Clock register sits on Host bridge */

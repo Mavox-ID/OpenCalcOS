@@ -5,10 +5,10 @@
  * See LICENSE.qlcnic for copyright and licensing details.
  */
 
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/if_vlan.h>
+#include <beep/netdevice.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/if_vlan.h>
 #include "qlcnic.h"
 
 struct crb_addr_pair {

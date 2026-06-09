@@ -22,7 +22,7 @@
 #ifdef __KERNEL__
 #ifndef __ASSEMBLY__
 
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 #include <asm/cputable.h>
 
 typedef struct {

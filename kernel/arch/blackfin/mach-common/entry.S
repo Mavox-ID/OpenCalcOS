@@ -12,9 +12,9 @@
  * after a timer-interrupt and after each system call.
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/unistd.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
+#include <beep/unistd.h>
 #include <asm/blackfin.h>
 #include <asm/errno.h>
 #include <asm/fixed_code.h>
@@ -66,7 +66,7 @@ ENTRY(_ex_workaround_261)
 	if cc jump _ex_dcplb_viol (BP);
 #endif
 	/* Handle Data CPLB Protection Violation
-	 * and Data CPLB Multiple Hits - Linux Trap Zero
+	 * and Data CPLB Multiple Hits - Beep Trap Zero
 	 */
 	jump _ex_trap_c;
 ENDPROC(_ex_workaround_261)
@@ -1234,7 +1234,7 @@ ENTRY(_ex_table)
 	 * This table must be in sync with the table in ./kernel/traps.c
 	 * EXCPT instruction can provide 4 bits of EXCAUSE, allowing 16 to be user defined
 	 */
-	.long _ex_syscall       /* 0x00 - User Defined - Linux Syscall */
+	.long _ex_syscall       /* 0x00 - User Defined - Beep Syscall */
 	.long _ex_trap_c        /* 0x01 - User Defined - Software breakpoint */
 #ifdef	CONFIG_KGDB
 	.long _ex_trap_c	/* 0x02 - User Defined - KGDB initial connection
@@ -1282,7 +1282,7 @@ ENTRY(_ex_table)
 	.long _ex_trap_c        /* 0x24 - Data access misaligned */
 	.long _ex_trap_c        /* 0x25 - Unrecoverable Event */
 	.long _ex_dmiss         /* 0x26 - Data CPLB Miss */
-	.long _ex_dmult         /* 0x27 - Data CPLB Multiple Hits - Linux Trap Zero */
+	.long _ex_dmult         /* 0x27 - Data CPLB Multiple Hits - Beep Trap Zero */
 	.long _ex_trap_c        /* 0x28 - Emulation Watchpoint */
 	.long _ex_trap_c        /* 0x29 - Instruction fetch access error (535 only) */
 	.long _ex_trap_c        /* 0x2A - Instruction fetch misaligned */

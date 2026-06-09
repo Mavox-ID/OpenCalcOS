@@ -8,7 +8,7 @@
  *
  * based on work by Grant Guenther <grant@torque.net> and Phil Blundell.
  *
- * Cleaned up include files - Russell King <linux@arm.uk.linux.org>
+ * Cleaned up include files - Russell King <beep@arm.uk.beep.org>
  * DMA support - Bert De Jonghe <bert@sophis.be>
  * Many ECP bugs fixed.  Fred Barnes & Jamie Lokier, 1999
  * More PCI support now conditional on CONFIG_PCI, 03/2001, Paul G.
@@ -42,28 +42,28 @@
  * but rather will start at port->base_hi.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/pnp.h>
-#include <linux/platform_device.h>
-#include <linux/sysctl.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/pci.h>
+#include <beep/pnp.h>
+#include <beep/platform_device.h>
+#include <beep/sysctl.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
 
 #include <asm/dma.h>
 
-#include <linux/parport.h>
-#include <linux/parport_pc.h>
-#include <linux/via.h>
+#include <beep/parport.h>
+#include <beep/parport_pc.h>
+#include <beep/via.h>
 #include <asm/parport.h>
 
 #define PARPORT_PC_MAX_PORTS PARPORT_MAX

@@ -22,8 +22,8 @@
  * Alexander Smirnov <alex.bluesman.smirnov@gmail.com>
  */
 
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
 
 #include <net/ieee802154.h>
 #include <net/ieee802154_netdev.h>

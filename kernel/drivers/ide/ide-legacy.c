@@ -1,6 +1,6 @@
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/ide.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/ide.h>
 
 static void ide_legacy_init_one(struct ide_hw **hws, struct ide_hw *hw,
 				u8 port_no, const struct ide_port_info *d,

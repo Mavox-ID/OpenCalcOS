@@ -7,8 +7,8 @@
  * option) any later version.
  */
 
-#include <linux/io.h>
-#include <linux/pm.h>
+#include <beep/io.h>
+#include <beep/pm.h>
 #include <asm/reboot.h>
 
 #include <loongson1.h>

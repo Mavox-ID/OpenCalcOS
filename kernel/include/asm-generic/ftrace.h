@@ -1,5 +1,5 @@
 /*
- * linux/include/asm-generic/ftrace.h
+ * beep/include/asm-generic/ftrace.h
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -10,7 +10,7 @@
 
 /*
  * Not all architectures need their own ftrace.h, the most
- * common definitions are already in linux/ftrace.h.
+ * common definitions are already in beep/ftrace.h.
  */
 
 #endif /* __ASM_GENERIC_FTRACE_H__ */

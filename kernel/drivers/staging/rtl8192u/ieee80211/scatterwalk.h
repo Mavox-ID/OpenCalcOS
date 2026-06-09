@@ -14,7 +14,7 @@
 
 #ifndef _CRYPTO_SCATTERWALK_H
 #define _CRYPTO_SCATTERWALK_H
-#include <linux/mm.h>
+#include <beep/mm.h>
 #include <asm/scatterlist.h>
 
 struct scatter_walk {

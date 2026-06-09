@@ -1,6 +1,6 @@
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/netdevice.h>
+#include <beep/interrupt.h>
 
 #include "lmc_debug.h"
 
@@ -79,4 +79,4 @@ void lmc_trace(struct net_device *dev, char *msg){
 }
 
 
-/* --------------------------- end if_lmc_linux.c ------------------------ */
+/* --------------------------- end if_lmc_beep.c ------------------------ */

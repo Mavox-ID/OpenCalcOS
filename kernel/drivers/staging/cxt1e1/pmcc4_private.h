@@ -18,14 +18,14 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>    /* support for tasklets */
-#include <linux/timer.h>        /* support for timer */
-#include <linux/workqueue.h>
-#include <linux/hdlc.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/semaphore.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>    /* support for tasklets */
+#include <beep/timer.h>        /* support for timer */
+#include <beep/workqueue.h>
+#include <beep/hdlc.h>
 
 #include "libsbew.h"
 #include "pmcc4_defs.h"

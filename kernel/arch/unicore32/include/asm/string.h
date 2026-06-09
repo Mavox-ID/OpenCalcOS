@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/asm/string.h
+ * beep/arch/unicore32/include/asm/string.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *

@@ -2,25 +2,25 @@
  *
  * Filesystem handling for the diversion supplementary services.
  *
- * Copyright 1998       by Werner Cornelius (werner@isdn4linux.de)
+ * Copyright 1998       by Werner Cornelius (werner@isdn4beep.de)
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
  */
 
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/poll.h>
+#include <beep/slab.h>
 #ifdef CONFIG_PROC_FS
-#include <linux/proc_fs.h>
+#include <beep/proc_fs.h>
 #else
-#include <linux/fs.h>
+#include <beep/fs.h>
 #endif
-#include <linux/sched.h>
-#include <linux/isdnif.h>
+#include <beep/sched.h>
+#include <beep/isdnif.h>
 #include <net/net_namespace.h>
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 #include "isdn_divert.h"
 
 

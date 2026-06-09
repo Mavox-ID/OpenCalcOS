@@ -1,5 +1,5 @@
 /*
- * Linux ARCnet driver - COM20020 PCMCIA support
+ * Beep ARCnet driver - COM20020 PCMCIA support
  * 
  * Written 1994-1999 by Avery Pennarun,
  *    based on an ISA version by David Woodhouse.
@@ -31,17 +31,17 @@
  *
  * **********************
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/arcdevice.h>
-#include <linux/com20020.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/arcdevice.h>
+#include <beep/com20020.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

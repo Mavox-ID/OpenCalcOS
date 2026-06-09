@@ -18,7 +18,7 @@
  * included with this package.                                     *
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * beep-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
@@ -28,10 +28,10 @@
 #ifndef __OCRDMA_H__
 #define __OCRDMA_H__
 
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
+#include <beep/mutex.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/pci.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_user_verbs.h>

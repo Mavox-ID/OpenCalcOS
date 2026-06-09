@@ -1,5 +1,5 @@
 /*
- *  linux/arch/sh/boot/compressed/head.S
+ *  beep/arch/sh/boot/compressed/head.S
  *
  *  Copyright (C) 1999 Stuart Menefy
  *  Copyright (C) 2003 SUGIOKA Toshinobu

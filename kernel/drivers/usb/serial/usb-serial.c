@@ -19,27 +19,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/uaccess.h>
-#include <linux/serial.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/kfifo.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/seq_file.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
+#include <beep/list.h>
+#include <beep/uaccess.h>
+#include <beep/serial.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
+#include <beep/kfifo.h>
 #include "pl2303.h"
 
-#define DRIVER_AUTHOR "Greg Kroah-Hartman <gregkh@linuxfoundation.org>"
+#define DRIVER_AUTHOR "Greg Kroah-Hartman <gregkh@beepfoundation.org>"
 #define DRIVER_DESC "USB Serial Driver core"
 
 /* There is no MODULE_DEVICE_TABLE for usbserial.c.  Instead
@@ -848,7 +848,7 @@ static int usb_serial_probe(struct usb_interface *interface,
 			return -EIO;
 		}
 		dev_info(ddev, "The \"generic\" usb-serial driver is only for testing and one-off prototypes.\n");
-		dev_info(ddev, "Tell linux-usb@vger.kernel.org to add your device to a proper driver.\n");
+		dev_info(ddev, "Tell beep-usb@vger.kernel.org to add your device to a proper driver.\n");
 	}
 #endif
 	if (!num_ports) {

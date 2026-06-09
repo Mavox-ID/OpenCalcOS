@@ -1,6 +1,6 @@
 /*******************************************************************************
  * Agere Systems Inc.
- * Wireless device driver for Linux (wlags49).
+ * Wireless device driver for Beep (wlags49).
  *
  * Copyright (c) 1998-2003 Agere Systems Inc.
  * All rights reserved.
@@ -71,34 +71,34 @@
  ******************************************************************************/
 #include <wl_version.h>
 
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-// #include <linux/sched.h>
-// #include <linux/ptrace.h>
-// #include <linux/slab.h>
-// #include <linux/ctype.h>
-// #include <linux/string.h>
-// #include <linux/timer.h>
-//#include <linux/interrupt.h>
-// #include <linux/tqueue.h>
-// #include <linux/in.h>
-// #include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+// #include <beep/sched.h>
+// #include <beep/ptrace.h>
+// #include <beep/slab.h>
+// #include <beep/ctype.h>
+// #include <beep/string.h>
+// #include <beep/timer.h>
+//#include <beep/interrupt.h>
+// #include <beep/tqueue.h>
+// #include <beep/in.h>
+// #include <beep/delay.h>
 // #include <asm/io.h>
 // // #include <asm/bitops.h>
-#include <linux/unistd.h>
+#include <beep/unistd.h>
 #include <asm/uaccess.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-// #include <linux/skbuff.h>
-// #include <linux/if_arp.h>
-// #include <linux/ioport.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+// #include <beep/skbuff.h>
+// #include <beep/if_arp.h>
+// #include <beep/ioport.h>
 
 #define BIN_DL 0
 #if BIN_DL
-#include <linux/vmalloc.h>
+#include <beep/vmalloc.h>
 #endif // BIN_DL
 
 
@@ -248,7 +248,7 @@ MODULE_PARM_DESC(PARM_RTS_THRESHOLD,            "Medium Reservation (RTS/CTS Fra
 MODULE_PARM(PARM_MICROWAVE_ROBUSTNESS,  "s");
 MODULE_PARM_DESC(PARM_MICROWAVE_ROBUSTNESS,     "Microwave Oven Robustness Enabled (<string> N or Y) [N]");
 MODULE_PARM(PARM_OWN_NAME,              "s");
-MODULE_PARM_DESC(PARM_OWN_NAME,                 "Station Name (<string>) [Linux]");
+MODULE_PARM_DESC(PARM_OWN_NAME,                 "Station Name (<string>) [Beep]");
 
 MODULE_PARM(PARM_ENABLE_ENCRYPTION,     "b");
 MODULE_PARM_DESC(PARM_ENABLE_ENCRYPTION,        "Encryption Mode (0 - 7) [0]");

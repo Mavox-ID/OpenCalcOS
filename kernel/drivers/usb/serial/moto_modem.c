@@ -14,12 +14,12 @@
  * able to get a connection through to them.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/tty.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
 
 static const struct usb_device_id id_table[] = {
 	{ USB_DEVICE(0x05c6, 0x3197) },	/* unknown Motorola phone */

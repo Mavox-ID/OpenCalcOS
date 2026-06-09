@@ -17,12 +17,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/of_device.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/of_device.h>
+#include <beep/spinlock.h>
+#include <beep/export.h>
+#include <beep/of.h>
+#include <beep/slab.h>
 
 #include <asm/udbg.h>
 #include <asm/io.h>
@@ -32,7 +32,7 @@
 #include <mm/mmu_decl.h>
 
 #if defined(CONFIG_CPM2) || defined(CONFIG_8xx_GPIO)
-#include <linux/of_gpio.h>
+#include <beep/of_gpio.h>
 #endif
 
 #ifdef CONFIG_PPC_EARLY_DEBUG_CPM

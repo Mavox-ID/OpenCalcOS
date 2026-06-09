@@ -1,13 +1,13 @@
 /*
- * linux/fs/nfs/nfs4_fs.h
+ * beep/fs/nfs/nfs4_fs.h
  *
  * Copyright (C) 2005 Trond Myklebust
  *
  * NFSv4-specific filesystem definitions and declarations
  */
 
-#ifndef __LINUX_FS_NFS_NFS4_FS_H
-#define __LINUX_FS_NFS_NFS4_FS_H
+#ifndef __BEEP_FS_NFS_NFS4_FS_H
+#define __BEEP_FS_NFS_NFS4_FS_H
 
 #if IS_ENABLED(CONFIG_NFS_V4)
 
@@ -414,4 +414,4 @@ static inline bool nfs4_stateid_match(const nfs4_stateid *dst, const nfs4_statei
 #define nfs4_close_sync(a, b) do { } while (0)
 
 #endif /* CONFIG_NFS_V4 */
-#endif /* __LINUX_FS_NFS_NFS4_FS.H */
+#endif /* __BEEP_FS_NFS_NFS4_FS.H */

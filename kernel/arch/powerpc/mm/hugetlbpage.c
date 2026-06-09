@@ -8,15 +8,15 @@
  * Copyright (C) 2002, Rohit Seth <rohit.seth@intel.com>
  */
 
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/hugetlb.h>
-#include <linux/export.h>
-#include <linux/of_fdt.h>
-#include <linux/memblock.h>
-#include <linux/bootmem.h>
-#include <linux/moduleparam.h>
+#include <beep/mm.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/hugetlb.h>
+#include <beep/export.h>
+#include <beep/of_fdt.h>
+#include <beep/memblock.h>
+#include <beep/bootmem.h>
+#include <beep/moduleparam.h>
 #include <asm/pgtable.h>
 #include <asm/pgalloc.h>
 #include <asm/tlb.h>
@@ -67,7 +67,7 @@ static inline unsigned int mmu_psize_to_shift(unsigned int mmu_psize)
 
 #define hugepd_none(hpd)	((hpd).pd == 0)
 
-pte_t *find_linux_pte_or_hugepte(pgd_t *pgdir, unsigned long ea, unsigned *shift)
+pte_t *find_beep_pte_or_hugepte(pgd_t *pgdir, unsigned long ea, unsigned *shift)
 {
 	pgd_t *pg;
 	pud_t *pu;
@@ -104,11 +104,11 @@ pte_t *find_linux_pte_or_hugepte(pgd_t *pgdir, unsigned long ea, unsigned *shift
 		*shift = hugepd_shift(*hpdp);
 	return hugepte_offset(hpdp, ea, pdshift);
 }
-EXPORT_SYMBOL_GPL(find_linux_pte_or_hugepte);
+EXPORT_SYMBOL_GPL(find_beep_pte_or_hugepte);
 
 pte_t *huge_pte_offset(struct mm_struct *mm, unsigned long addr)
 {
-	return find_linux_pte_or_hugepte(mm->pgd, addr, NULL);
+	return find_beep_pte_or_hugepte(mm->pgd, addr, NULL);
 }
 
 static int __hugepte_alloc(struct mm_struct *mm, hugepd_t *hpdp,
@@ -614,7 +614,7 @@ follow_huge_addr(struct mm_struct *mm, unsigned long address, int write)
 	unsigned shift;
 	unsigned long mask;
 
-	ptep = find_linux_pte_or_hugepte(mm->pgd, address, &shift);
+	ptep = find_beep_pte_or_hugepte(mm->pgd, address, &shift);
 
 	/* Verify it is a huge page else bail. */
 	if (!ptep || !shift)

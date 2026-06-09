@@ -1,4 +1,4 @@
-/* eepro.c: Intel EtherExpress Pro/10 device driver for Linux. */
+/* eepro.c: Intel EtherExpress Pro/10 device driver for Beep. */
 /*
 	Written 1994, 1995,1996 by Bao C. Ha.
 
@@ -107,7 +107,7 @@
 static const char version[] =
 	"eepro.c: v0.13b 09/13/2004 aris@cathedrallabs.org\n";
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 /*
   Sources:
@@ -131,22 +131,22 @@ static const char version[] =
 
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/ethtool.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/in.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/bitops.h>
+#include <beep/ethtool.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>
@@ -749,7 +749,7 @@ static const struct net_device_ops eepro_netdev_ops = {
 	.ndo_validate_addr	= eth_validate_addr,
 };
 
-/* This is the real probe routine.  Linux has a history of friendly device
+/* This is the real probe routine.  Beep has a history of friendly device
    probes on the ISA bus.  A good device probe avoids doing writes, and
    verifies that the correct device exists and functions.  */
 
@@ -1751,7 +1751,7 @@ static int mem[MAX_EEPRO] = {	/* Size of the rx buffer in KB */
 static int autodetect;
 
 static int n_eepro;
-/* For linux 2.1.xx */
+/* For beep 2.1.xx */
 
 MODULE_AUTHOR("Pascal Dupuis and others");
 MODULE_DESCRIPTION("Intel i82595 ISA EtherExpressPro10/10+ driver");

@@ -20,13 +20,13 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/clockchips.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/clockchips.h>
+#include <beep/clk.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
 
 #include <asm/mach/time.h>
 #include <asm/sched_clock.h>

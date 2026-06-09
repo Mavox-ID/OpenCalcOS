@@ -17,10 +17,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
+#include <beep/mm.h>
+#include <beep/gfp.h>
+#include <beep/highmem.h>
+#include <beep/slab.h>
 
 #include <asm/pgalloc.h>
 #include <asm/page.h>

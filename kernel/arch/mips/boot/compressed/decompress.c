@@ -11,8 +11,8 @@
  * option) any later version.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
 
 #include <asm/addrspace.h>
 
@@ -96,14 +96,14 @@ void decompress_kernel(unsigned long boot_heap_start)
 	free_mem_ptr = boot_heap_start;
 	free_mem_end_ptr = boot_heap_start + BOOT_HEAP_SIZE;
 
-	/* Display standard Linux/MIPS boot prompt */
-	puts("Uncompressing Linux at load address ");
-	puthex(VMLINUX_LOAD_ADDRESS_ULL);
+	/* Display standard Beep/MIPS boot prompt */
+	puts("Uncompressing Beep at load address ");
+	puthex(VMBEEP_LOAD_ADDRESS_ULL);
 	puts("\n");
 
 	/* Decompress the kernel with according algorithm */
 	decompress((char *)zimage_start, zimage_size, 0, 0,
-		   (void *)VMLINUX_LOAD_ADDRESS_ULL, 0, error);
+		   (void *)VMBEEP_LOAD_ADDRESS_ULL, 0, error);
 
 	/* FIXME: should we flush cache here? */
 	puts("Now, booting the kernel...\n");

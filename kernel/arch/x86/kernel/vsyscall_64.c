@@ -6,7 +6,7 @@
  *
  *  Thanks to hpa@transmeta.com for some useful hint.
  *  Special thanks to Ingo Molnar for his early experience with
- *  a different vsyscall implementation for Linux/IA32 and for the name.
+ *  a different vsyscall implementation for Beep/IA32 and for the name.
  *
  *  vsyscall 1 is located at -10Mbyte, vsyscall 2 is located
  *  at virtual address -10Mbyte+1024bytes etc... There are at max 4
@@ -14,27 +14,27 @@
  *  jumping out of line if necessary. We cannot add more with this
  *  mechanism because older kernels won't return -ENOSYS.
  *
- *  Note: the concept clashes with user mode linux.  UML users should
+ *  Note: the concept clashes with user mode beep.  UML users should
  *  use the vDSO.
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/seqlock.h>
-#include <linux/jiffies.h>
-#include <linux/sysctl.h>
-#include <linux/topology.h>
-#include <linux/timekeeper_internal.h>
-#include <linux/getcpu.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/notifier.h>
-#include <linux/syscalls.h>
-#include <linux/ratelimit.h>
+#include <beep/time.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/seqlock.h>
+#include <beep/jiffies.h>
+#include <beep/sysctl.h>
+#include <beep/topology.h>
+#include <beep/timekeeper_internal.h>
+#include <beep/getcpu.h>
+#include <beep/cpu.h>
+#include <beep/smp.h>
+#include <beep/notifier.h>
+#include <beep/syscalls.h>
+#include <beep/ratelimit.h>
 
 #include <asm/vsyscall.h>
 #include <asm/pgtable.h>

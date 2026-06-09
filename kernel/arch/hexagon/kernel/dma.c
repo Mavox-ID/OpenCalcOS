@@ -1,7 +1,7 @@
 /*
  * DMA implementation for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -18,11 +18,11 @@
  * 02110-1301, USA.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/bootmem.h>
-#include <linux/genalloc.h>
+#include <beep/dma-mapping.h>
+#include <beep/bootmem.h>
+#include <beep/genalloc.h>
 #include <asm/dma-mapping.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 struct dma_map_ops *dma_ops;
 EXPORT_SYMBOL(dma_ops);

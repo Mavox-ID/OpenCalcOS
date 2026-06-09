@@ -8,20 +8,20 @@
  * This code is placed under the terms of the GNU General Public License v2
  */
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 #include <asm/div64.h>
-#include <linux/firmware.h>
-#include <linux/videodev2.h>
-#include <linux/delay.h>
+#include <beep/firmware.h>
+#include <beep/videodev2.h>
+#include <beep/delay.h>
 #include <media/tuner.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 #include <asm/unaligned.h>
 #include "tuner-i2c.h"
 #include "tuner-xc2028.h"
 #include "tuner-xc2028-types.h"
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 #include "dvb_frontend.h"
 
 /* Registers (Write-only) */

@@ -1,26 +1,26 @@
 /*
- *  linux/fs/pipe.c
+ *  beep/fs/pipe.c
  *
  *  Copyright (C) 1991, 1992, 1999  Linus Torvalds
  */
 
-#include <linux/mm.h>
-#include <linux/file.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/log2.h>
-#include <linux/mount.h>
-#include <linux/magic.h>
-#include <linux/pipe_fs_i.h>
-#include <linux/uio.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/audit.h>
-#include <linux/syscalls.h>
-#include <linux/fcntl.h>
+#include <beep/mm.h>
+#include <beep/file.h>
+#include <beep/poll.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/log2.h>
+#include <beep/mount.h>
+#include <beep/magic.h>
+#include <beep/pipe_fs_i.h>
+#include <beep/uio.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/audit.h>
+#include <beep/syscalls.h>
+#include <beep/fcntl.h>
 
 #include <asm/uaccess.h>
 #include <asm/ioctls.h>
@@ -723,7 +723,7 @@ pipe_poll(struct file *filp, poll_table *wait)
 	if (filp->f_mode & FMODE_WRITE) {
 		mask |= (nrbufs < pipe->buffers) ? POLLOUT | POLLWRNORM : 0;
 		/*
-		 * Most Unices do not set POLLERR for FIFOs but on Linux they
+		 * Most Unices do not set POLLERR for FIFOs but on Beep they
 		 * behave exactly like pipes for poll().
 		 */
 		if (!pipe->readers)
@@ -880,7 +880,7 @@ pipe_rdwr_open(struct inode *inode, struct file *filp)
 
 /*
  * The file_operations structs are not static because they
- * are also used in linux/fs/fifo.c to do operations on FIFOs.
+ * are also used in beep/fs/fifo.c to do operations on FIFOs.
  *
  * Pipes reuse fifos' file_operations structs.
  */

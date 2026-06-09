@@ -1,8 +1,8 @@
 /* arch/arm/plat-samsung/adc.c
  *
  * Copyright (c) 2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
- *	Ben Dooks <ben@simtec.co.uk>, <ben-linux@fluff.org>
+ *	http://armbeep.simtec.co.uk/
+ *	Ben Dooks <ben@simtec.co.uk>, <ben-beep@fluff.org>
  *
  * Samsung ADC device core
  *
@@ -11,17 +11,17 @@
  * the Free Software Foundation; either version 2 of the License.
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/regulator/consumer.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/sched.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/regulator/consumer.h>
 
 #include <plat/regs-adc.h>
 #include <plat/adc.h>

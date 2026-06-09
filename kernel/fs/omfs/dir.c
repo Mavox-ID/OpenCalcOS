@@ -4,9 +4,9 @@
  * Released under GPL v2.
  */
 
-#include <linux/fs.h>
-#include <linux/ctype.h>
-#include <linux/buffer_head.h>
+#include <beep/fs.h>
+#include <beep/ctype.h>
+#include <beep/buffer_head.h>
 #include "omfs.h"
 
 static int omfs_hash(const char *name, int namelen, int mod)

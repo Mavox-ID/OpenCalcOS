@@ -3,8 +3,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
 #include <asm/compiler.h>
 #include <asm/pgtable.h>
 #include <asm/machvec.h>

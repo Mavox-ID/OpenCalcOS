@@ -12,12 +12,12 @@
  * along with this program; if not, write to the Free Software
  * Foundation, 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  *
- * Copyright SUSE Linux Products GmbH 2009
+ * Copyright SUSE Beep Products GmbH 2009
  *
  * Authors: Alexander Graf <agraf@suse.de>
  */
 
-#include <linux/export.h>
+#include <beep/export.h>
 #include <asm/kvm_book3s.h>
 
 #ifdef CONFIG_KVM_BOOK3S_64_HV

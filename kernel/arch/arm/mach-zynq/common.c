@@ -14,16 +14,16 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/cpumask.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/clk/zynq.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/of.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/cpumask.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/clk/zynq.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
+#include <beep/of.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

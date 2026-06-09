@@ -7,7 +7,7 @@
  * Copyright (c) 2005 David Brownell
  * Copyright (c) 2006-2008 Michael Hennerich Analog Devices Inc.
  *
- * bugs:         enter bugs at http://blackfin.uclinux.org/
+ * bugs:         enter bugs at http://blackfin.ucbeep.org/
  *
  * this program is free software; you can redistribute it and/or modify
  * it under the terms of the gnu general public license as published by
@@ -25,17 +25,17 @@
  * 59 temple place - suite 330, boston, ma 02111-1307, usa.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/platform_device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/platform_device.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/io.h>
 
 #include <pcmcia/ss.h>
 #include <pcmcia/cisreg.h>
@@ -312,6 +312,6 @@ static struct platform_driver bfin_cf_driver = {
 
 module_platform_driver(bfin_cf_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("BFIN CF/PCMCIA Driver");
 MODULE_LICENSE("GPL");

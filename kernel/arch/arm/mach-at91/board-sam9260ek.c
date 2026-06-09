@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-at91/board-sam9260ek.c
+ * beep/arch/arm/mach-at91/board-sam9260ek.c
  *
  *  Copyright (C) 2005 SAN People
  *  Copyright (C) 2006 Atmel
@@ -19,18 +19,18 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/types.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/at73c213.h>
-#include <linux/clk.h>
-#include <linux/i2c/at24.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
+#include <beep/types.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/at73c213.h>
+#include <beep/clk.h>
+#include <beep/i2c/at24.h>
+#include <beep/gpio_keys.h>
+#include <beep/input.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>

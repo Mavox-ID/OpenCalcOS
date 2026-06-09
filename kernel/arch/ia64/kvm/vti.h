@@ -28,7 +28,7 @@
 #ifndef __ASSEMBLY__
 #include <asm/page.h>
 
-#include <linux/kvm_host.h>
+#include <beep/kvm_host.h>
 
 /* define itr.i and itr.d  in ia64_itr function */
 #define	ITR	0x01

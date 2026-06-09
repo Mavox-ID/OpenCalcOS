@@ -10,17 +10,17 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/inet.h>
-#include <linux/udp.h>
-#include <linux/tcp.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/inet.h>
+#include <beep/udp.h>
+#include <beep/tcp.h>
 
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_helper.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_expect.h>
-#include <linux/netfilter/nf_conntrack_sip.h>
+#include <beep/netfilter/nf_conntrack_sip.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Christian Hentschel <chentschel@arnet.com.ar>");

@@ -1,7 +1,7 @@
 /*
  * slcan.c - serial line CAN interface driver (using tty line discipline)
  *
- * This file is derived from linux/drivers/net/slip/slip.c
+ * This file is derived from beep/drivers/net/slip/slip.c
  *
  * slip.c Authors  : Laurence Culhane <loz@holmes.demon.co.uk>
  *                   Fred N. van Kempen <waltje@uwalt.nl.mugnet.org>
@@ -37,24 +37,24 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
 
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/string.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/can.h>
+#include <beep/uaccess.h>
+#include <beep/bitops.h>
+#include <beep/string.h>
+#include <beep/tty.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/rtnetlink.h>
+#include <beep/if_arp.h>
+#include <beep/if_ether.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/can.h>
 
 static __initconst const char banner[] =
 	KERN_INFO "slcan: serial line CAN interface driver\n";

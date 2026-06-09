@@ -6,16 +6,16 @@
  * This file contains the needed initializations to support sysenter.
  */
 
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/thread_info.h>
-#include <linux/sched.h>
-#include <linux/gfp.h>
-#include <linux/string.h>
-#include <linux/elf.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/thread_info.h>
+#include <beep/sched.h>
+#include <beep/gfp.h>
+#include <beep/string.h>
+#include <beep/elf.h>
+#include <beep/mm.h>
+#include <beep/err.h>
+#include <beep/module.h>
 
 #include <asm/cpufeature.h>
 #include <asm/msr.h>
@@ -304,7 +304,7 @@ int __init sysenter_setup(void)
 }
 
 /* Setup a VMA at program startup for the vsyscall page */
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct beep_binprm *bprm, int uses_interp)
 {
 	struct mm_struct *mm = current->mm;
 	unsigned long addr;
@@ -370,7 +370,7 @@ subsys_initcall(sysenter_setup);
 
 #ifdef CONFIG_SYSCTL
 /* Register vsyscall32 into the ABI table */
-#include <linux/sysctl.h>
+#include <beep/sysctl.h>
 
 static ctl_table abi_table2[] = {
 	{

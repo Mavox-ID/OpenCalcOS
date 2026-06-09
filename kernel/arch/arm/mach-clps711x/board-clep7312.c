@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-clps711x/clep7312.c
+ *  beep/arch/arm/mach-clps711x/clep7312.c
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -15,9 +15,9 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/string.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>

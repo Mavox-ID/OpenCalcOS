@@ -2,7 +2,7 @@
     comedi/drivers/ni_mio_common.c
     Hardware driver for DAQ-STC based boards
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1997-2001 David A. Schleef <ds@schleef.org>
     Copyright (C) 2002-2006 Frank Mori Hess <fmhess@users.sourceforge.net>
 
@@ -61,8 +61,8 @@
 /* #define DEBUG_STATUS_A */
 /* #define DEBUG_STATUS_B */
 
-#include <linux/interrupt.h>
-#include <linux/sched.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
 #include "8255.h"
 #include "mite.h"
 #include "comedi_fc.h"

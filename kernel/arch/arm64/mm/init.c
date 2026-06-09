@@ -17,19 +17,19 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/swap.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/mman.h>
-#include <linux/nodemask.h>
-#include <linux/initrd.h>
-#include <linux/gfp.h>
-#include <linux/memblock.h>
-#include <linux/sort.h>
-#include <linux/of_fdt.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/errno.h>
+#include <beep/swap.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/mman.h>
+#include <beep/nodemask.h>
+#include <beep/initrd.h>
+#include <beep/gfp.h>
+#include <beep/memblock.h>
+#include <beep/sort.h>
+#include <beep/of_fdt.h>
 
 #include <asm/prom.h>
 #include <asm/sections.h>

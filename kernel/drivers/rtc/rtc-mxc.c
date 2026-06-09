@@ -9,13 +9,13 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/io.h>
-#include <linux/rtc.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
+#include <beep/io.h>
+#include <beep/rtc.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
 
 #define RTC_INPUT_CLK_32768HZ	(0x00 << 5)
 #define RTC_INPUT_CLK_32000HZ	(0x01 << 5)

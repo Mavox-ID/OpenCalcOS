@@ -1,7 +1,7 @@
 /*
  * TXx9 SPI controller driver.
  *
- * Based on linux/arch/mips/tx4938/toshiba_rbtx4938/spi_txx9.c
+ * Based on beep/arch/mips/tx4938/toshiba_rbtx4938/spi_txx9.c
  * Copyright (C) 2000-2001 Toshiba Corporation
  *
  * 2003-2005 (c) MontaVista Software, Inc. This file is licensed under the
@@ -13,19 +13,19 @@
  *
  * Convert to generic SPI framework - Atsushi Nemoto (anemo@mba.ocn.ne.jp)
  */
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/spi/spi.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/spi/spi.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/module.h>
 #include <asm/gpio.h>
 
 

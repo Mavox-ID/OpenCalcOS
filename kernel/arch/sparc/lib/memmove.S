@@ -1,10 +1,10 @@
 /* memmove.S: Simple memmove implementation.
  *
  * Copyright (C) 1997, 2004 David S. Miller (davem@redhat.com)
- * Copyright (C) 1996, 1997, 1998, 1999 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1996, 1997, 1998, 1999 Jakub Jelinek (jj@ultra.beep.cz)
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 	.text
 ENTRY(memmove) /* o0=dst o1=src o2=len */

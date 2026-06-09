@@ -4,7 +4,7 @@
 /* Define to experiment with fitting everything into one 512MB HAE window.  */
 #define CIA_ONE_HAE_WINDOW 1
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/compiler.h>
 
 /*

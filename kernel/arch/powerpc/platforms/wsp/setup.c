@@ -7,8 +7,8 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/of_platform.h>
+#include <beep/kernel.h>
+#include <beep/of_platform.h>
 
 #include "wsp.h"
 

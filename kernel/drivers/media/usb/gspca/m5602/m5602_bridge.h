@@ -2,8 +2,8 @@
  * USB Driver for ALi m5602 based webcams
  *
  * Copyright (C) 2008 Erik Andrén
- * Copyright (C) 2007 Ilyes Gouta. Based on the m5603x Linux Driver Project.
- * Copyright (C) 2005 m5603x Linux Driver Project <m5602@x3ng.com.br>
+ * Copyright (C) 2007 Ilyes Gouta. Based on the m5603x Beep Driver Project.
+ * Copyright (C) 2005 m5603x Beep Driver Project <m5602@x3ng.com.br>
  *
  * Portions of code to USB interface and ALi driver software,
  * Copyright (c) 2006 Willem Duinker
@@ -19,7 +19,7 @@
 #ifndef M5602_BRIDGE_H_
 #define M5602_BRIDGE_H_
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include "gspca.h"
 
 #define MODULE_NAME "ALi m5602"
@@ -105,7 +105,7 @@
 /*****************************************************************************/
 
 /* Driver info */
-#define DRIVER_AUTHOR "ALi m5602 Linux Driver Project"
+#define DRIVER_AUTHOR "ALi m5602 Beep Driver Project"
 #define DRIVER_DESC "ALi m5602 webcam driver"
 
 #define M5602_ISOC_ENDPOINT_ADDR 0x81

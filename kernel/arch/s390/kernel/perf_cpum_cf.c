@@ -2,7 +2,7 @@
  * Performance event support for s390x - CPU-measurement Counter Facility
  *
  *  Copyright IBM Corp. 2012
- *  Author(s): Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ *  Author(s): Hendrik Brueckner <brueckner@beep.vnet.ibm.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License (version 2 only)
@@ -11,13 +11,13 @@
 #define KMSG_COMPONENT	"cpum_cf"
 #define pr_fmt(fmt)	KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/perf_event.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/init.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/kernel_stat.h>
+#include <beep/perf_event.h>
+#include <beep/percpu.h>
+#include <beep/notifier.h>
+#include <beep/init.h>
+#include <beep/export.h>
 #include <asm/ctl_reg.h>
 #include <asm/irq.h>
 #include <asm/cpu_mf.h>

@@ -18,8 +18,8 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/module.h>
 
 #include <asm/lv1call.h>
 #include <asm/ps3stor.h>

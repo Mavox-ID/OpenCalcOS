@@ -5,11 +5,11 @@
  *
  * (C) Copyright 1995 1996 Linus Torvalds
  */
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/io.h>
-#include <linux/export.h>
+#include <beep/vmalloc.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/io.h>
+#include <beep/export.h>
 #include <asm/cacheflush.h>
 #include <asm/pgtable.h>
 

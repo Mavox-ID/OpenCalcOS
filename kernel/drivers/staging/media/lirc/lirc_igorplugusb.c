@@ -40,14 +40,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/usb.h>
-#include <linux/time.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/kmod.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/usb.h>
+#include <beep/time.h>
 
 #include <media/lirc.h>
 #include <media/lirc_dev.h>
@@ -543,7 +543,7 @@ static struct usb_driver igorplugusb_remote_driver = {
 
 module_usb_driver(igorplugusb_remote_driver);
 
-#include <linux/vermagic.h>
+#include <beep/vermagic.h>
 MODULE_INFO(vermagic, VERMAGIC_STRING);
 
 MODULE_DESCRIPTION(DRIVER_DESC);

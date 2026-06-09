@@ -7,20 +7,20 @@
  * Author: Per Friden <per.friden@stericsson.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h> /* printk() */
-#include <linux/fs.h> /* everything... */
-#include <linux/scatterlist.h>
-#include <linux/slab.h> /* kmalloc() */
-#include <linux/dmaengine.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/irqreturn.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/debugfs.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h> /* printk() */
+#include <beep/fs.h> /* everything... */
+#include <beep/scatterlist.h>
+#include <beep/slab.h> /* kmalloc() */
+#include <beep/dmaengine.h>
+#include <beep/platform_device.h>
+#include <beep/device.h>
+#include <beep/irqreturn.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
+#include <beep/debugfs.h>
 #include <mach/coh901318.h>
 
 #include "coh901318_lli.h"

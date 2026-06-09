@@ -1,15 +1,15 @@
 /*
  * /proc/sys support
  */
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/security.h>
-#include <linux/sched.h>
-#include <linux/namei.h>
-#include <linux/mm.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/sysctl.h>
+#include <beep/poll.h>
+#include <beep/proc_fs.h>
+#include <beep/security.h>
+#include <beep/sched.h>
+#include <beep/namei.h>
+#include <beep/mm.h>
+#include <beep/module.h>
 #include "internal.h"
 
 static const struct dentry_operations proc_sys_dentry_operations;

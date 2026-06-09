@@ -13,15 +13,15 @@
  * Author: Tom Lyon, pugs@cisco.com
  */
 
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/eventfd.h>
-#include <linux/pci.h>
-#include <linux/file.h>
-#include <linux/poll.h>
-#include <linux/vfio.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/eventfd.h>
+#include <beep/pci.h>
+#include <beep/file.h>
+#include <beep/poll.h>
+#include <beep/vfio.h>
+#include <beep/wait.h>
+#include <beep/workqueue.h>
 
 #include "vfio_pci_private.h"
 

@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2416/mach-hanlin_v3c.c
+/* beep/arch/arm/mach-s3c2416/mach-hanlin_v3c.c
  *
  * Copyright (c) 2009 Yauhen Kharuzhy <jekhor@gmail.com>,
  *	as part of OpenInkpot project
@@ -11,19 +11,19 @@
  *
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/mtd/partitions.h>
-#include <linux/gpio.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/serial_core.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/mtd/partitions.h>
+#include <beep/gpio.h>
+#include <beep/fb.h>
+#include <beep/delay.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -40,18 +40,18 @@
 #include <mach/regs-s3c2443-clock.h>
 
 #include <mach/idle.h>
-#include <linux/platform_data/leds-s3c24xx.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/leds-s3c24xx.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 
 #include <plat/s3c2416.h>
 #include <plat/gpio-cfg.h>
 #include <plat/clock.h>
 #include <plat/devs.h>
 #include <plat/cpu.h>
-#include <linux/platform_data/mtd-nand-s3c2410.h>
+#include <beep/platform_data/mtd-nand-s3c2410.h>
 #include <plat/sdhci.h>
-#include <linux/platform_data/usb-s3c2410_udc.h>
-#include <linux/platform_data/s3c-hsudc.h>
+#include <beep/platform_data/usb-s3c2410_udc.h>
+#include <beep/platform_data/s3c-hsudc.h>
 
 #include <plat/fb.h>
 

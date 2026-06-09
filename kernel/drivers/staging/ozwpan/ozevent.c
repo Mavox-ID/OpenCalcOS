@@ -5,10 +5,10 @@
  */
 #include "ozconfig.h"
 #ifdef WANT_EVENT_TRACE
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/jiffies.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/debugfs.h>
+#include <beep/jiffies.h>
+#include <beep/uaccess.h>
 #include "oztrace.h"
 #include "ozevent.h"
 #include "ozappif.h"

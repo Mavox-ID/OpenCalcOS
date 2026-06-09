@@ -9,10 +9,10 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
+#include <beep/export.h>
 
 #include <asm/setup.h>
 

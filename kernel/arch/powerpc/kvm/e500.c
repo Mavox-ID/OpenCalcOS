@@ -12,10 +12,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/export.h>
+#include <beep/kvm_host.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/export.h>
 
 #include <asm/reg.h>
 #include <asm/cputable.h>

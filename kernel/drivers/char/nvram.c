@@ -1,5 +1,5 @@
 /*
- * CMOS/NV-RAM driver for Linux
+ * CMOS/NV-RAM driver for Beep
  *
  * Copyright (C) 1997 Roman Hodek <Roman.Hodek@informatik.uni-erlangen.de>
  * idea by and with help from Richard Jelinek <rj@suse.de>
@@ -37,8 +37,8 @@
 
 #define NVRAM_VERSION	"1.3"
 
-#include <linux/module.h>
-#include <linux/nvram.h>
+#include <beep/module.h>
+#include <beep/nvram.h>
 
 #define PC		1
 #define ATARI		2
@@ -97,19 +97,19 @@
  * periodic 11 min sync from kernel/time/ntp.c vs. this driver.)
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/mc146818rtc.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/mutex.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/miscdevice.h>
+#include <beep/ioport.h>
+#include <beep/fcntl.h>
+#include <beep/mc146818rtc.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
+#include <beep/mutex.h>
 
 
 static DEFINE_MUTEX(nvram_mutex);
@@ -619,7 +619,7 @@ static struct {
 	{ 0x80, "TOS" },
 	{ 0x40, "ASV" },
 	{ 0x20, "NetBSD (?)" },
-	{ 0x10, "Linux" },
+	{ 0x10, "Beep" },
 	{ 0x00, "unspecified" }
 };
 

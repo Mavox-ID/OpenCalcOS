@@ -5,10 +5,10 @@
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
 
-#include <linux/sort.h>
+#include <beep/sort.h>
 
 #include <asm/uaccess.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 static int cmp_ex(const void *a, const void *b)
 {

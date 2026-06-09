@@ -1,10 +1,10 @@
 #ifndef __FS_NOTIFY_FSNOTIFY_H_
 #define __FS_NOTIFY_FSNOTIFY_H_
 
-#include <linux/list.h>
-#include <linux/fsnotify.h>
-#include <linux/srcu.h>
-#include <linux/types.h>
+#include <beep/list.h>
+#include <beep/fsnotify.h>
+#include <beep/srcu.h>
+#include <beep/types.h>
 
 /* destroy all events sitting in this groups notification queue */
 extern void fsnotify_flush_notify(struct fsnotify_group *group);

@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext3/inode.c
+ *  beep/fs/ext3/inode.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -8,7 +8,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  beep/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -22,11 +22,11 @@
  *  Assorted race fixes, rewrite of ext3_get_block() by Al Viro, 2000
  */
 
-#include <linux/highuid.h>
-#include <linux/quotaops.h>
-#include <linux/writeback.h>
-#include <linux/mpage.h>
-#include <linux/namei.h>
+#include <beep/highuid.h>
+#include <beep/quotaops.h>
+#include <beep/writeback.h>
+#include <beep/mpage.h>
+#include <beep/namei.h>
 #include "ext3.h"
 #include "xattr.h"
 #include "acl.h"

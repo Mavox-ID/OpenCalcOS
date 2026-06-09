@@ -1,5 +1,5 @@
 /*
- * linux/arch/sh/boards/renesas/sh7763rdp/irq.c
+ * beep/arch/sh/boards/renesas/sh7763rdp/irq.c
  *
  * Renesas Solutions SH7763RDP Support.
  *
@@ -11,8 +11,8 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/irq.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <mach/sh7763rdp.h>

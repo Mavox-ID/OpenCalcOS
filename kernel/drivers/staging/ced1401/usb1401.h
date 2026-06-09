@@ -1,5 +1,5 @@
 /* usb1401.h
- Header file for the CED 1401 USB device driver for Linux
+ Header file for the CED 1401 USB device driver for Beep
  Copyright (C) 2010 Cambridge Electronic Design Ltd
  Author Greg P Smith (greg@ced.co.uk)
 

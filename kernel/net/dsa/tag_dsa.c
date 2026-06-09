@@ -8,10 +8,10 @@
  * (at your option) any later version.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
+#include <beep/etherdevice.h>
+#include <beep/list.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
 #include "dsa_priv.h"
 
 #define DSA_HLEN	4

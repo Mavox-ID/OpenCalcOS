@@ -11,13 +11,13 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/export.h>
-#include <linux/io.h>
+#include <beep/device.h>
+#include <beep/gpio.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/export.h>
+#include <beep/io.h>
 #include <asm/hardware/scoop.h>
 
 /* PCMCIA to Scoop linkage

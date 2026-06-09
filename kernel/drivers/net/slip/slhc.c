@@ -50,31 +50,31 @@
  *	driver code belonging close to PPP and SLIP
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
 #include <net/slhc_vj.h>
 
 #ifdef CONFIG_INET
 /* Entire module is for IP only */
-#include <linux/mm.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/termios.h>
-#include <linux/in.h>
-#include <linux/fcntl.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
+#include <beep/mm.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/termios.h>
+#include <beep/in.h>
+#include <beep/fcntl.h>
+#include <beep/inet.h>
+#include <beep/netdevice.h>
 #include <net/ip.h>
 #include <net/protocol.h>
 #include <net/icmp.h>
 #include <net/tcp.h>
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 #include <net/sock.h>
-#include <linux/timer.h>
+#include <beep/timer.h>
 #include <asm/uaccess.h>
 #include <net/checksum.h>
 #include <asm/unaligned.h>

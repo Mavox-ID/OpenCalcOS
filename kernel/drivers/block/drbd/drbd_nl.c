@@ -23,20 +23,20 @@
 
  */
 
-#include <linux/module.h>
-#include <linux/drbd.h>
-#include <linux/in.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/blkpg.h>
-#include <linux/cpumask.h>
+#include <beep/module.h>
+#include <beep/drbd.h>
+#include <beep/in.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/slab.h>
+#include <beep/blkpg.h>
+#include <beep/cpumask.h>
 #include "drbd_int.h"
 #include "drbd_req.h"
 #include "drbd_wrappers.h"
 #include <asm/unaligned.h>
-#include <linux/drbd_limits.h>
-#include <linux/kthread.h>
+#include <beep/drbd_limits.h>
+#include <beep/kthread.h>
 
 #include <net/genetlink.h>
 
@@ -74,9 +74,9 @@ int drbd_adm_get_timeout_type(struct sk_buff *skb, struct genl_info *info);
 /* .dumpit */
 int drbd_adm_get_status_all(struct sk_buff *skb, struct netlink_callback *cb);
 
-#include <linux/drbd_genl_api.h>
+#include <beep/drbd_genl_api.h>
 #include "drbd_nla.h"
-#include <linux/genl_magic_func.h>
+#include <beep/genl_magic_func.h>
 
 /* used blkdev_get_by_path, to claim our meta data device(s) */
 static char *drbd_m_holder = "Hands off! this is DRBD's meta data device.";
@@ -315,7 +315,7 @@ static void setup_khelper_env(struct drbd_tconn *tconn, char **envp)
 int drbd_khelper(struct drbd_conf *mdev, char *cmd)
 {
 	char *envp[] = { "HOME=/",
-			"TERM=linux",
+			"TERM=beep",
 			"PATH=/sbin:/usr/sbin:/bin:/usr/bin",
 			 (char[20]) { }, /* address family */
 			 (char[60]) { }, /* address */
@@ -365,7 +365,7 @@ int drbd_khelper(struct drbd_conf *mdev, char *cmd)
 int conn_khelper(struct drbd_tconn *tconn, char *cmd)
 {
 	char *envp[] = { "HOME=/",
-			"TERM=linux",
+			"TERM=beep",
 			"PATH=/sbin:/usr/sbin:/bin:/usr/bin",
 			 (char[20]) { }, /* address family */
 			 (char[60]) { }, /* address */

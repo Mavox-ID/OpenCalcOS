@@ -20,12 +20,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/perf_event.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/perf_event.h>
+#include <beep/export.h>
 #include <asm/processor.h>
 
 struct cpu_hw_events {

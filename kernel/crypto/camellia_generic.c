@@ -30,12 +30,12 @@
  *
  */
 
-#include <linux/crypto.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
+#include <beep/crypto.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/bitops.h>
 #include <asm/unaligned.h>
 
 static const u32 camellia_sp1110[256] = {

@@ -12,16 +12,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/mfd/core.h>
-#include <linux/random.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/bcd.h>
+#include <beep/delay.h>
+#include <beep/mfd/core.h>
+#include <beep/random.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/otp.h>
+#include <beep/mfd/wm831x/core.h>
+#include <beep/mfd/wm831x/otp.h>
 
 /* In bytes */
 #define WM831X_UNIQUE_ID_LEN 16

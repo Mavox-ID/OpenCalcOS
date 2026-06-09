@@ -18,8 +18,8 @@
 **  the I/O MMU - basically what x86 does.
 **
 **  Philipp Rumpf has a "Real Mode" driver for PCX-W machines at:
-**      CVSROOT=:pserver:anonymous@198.186.203.37:/cvsroot/linux-parisc
-**      cvs -z3 co linux/arch/parisc/kernel/dma-rm.c
+**      CVSROOT=:pserver:anonymous@198.186.203.37:/cvsroot/beep-parisc
+**      cvs -z3 co beep/arch/parisc/kernel/dma-rm.c
 **
 **  I've rewritten his code to work under TPG's tree. See ccio-rm-dma.c.
 **
@@ -31,20 +31,20 @@
 **        the coherency design originally worked out. Only PCX-W does.
 */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/reboot.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/scatterlist.h>
-#include <linux/iommu-helper.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/pci.h>
+#include <beep/reboot.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/scatterlist.h>
+#include <beep/iommu-helper.h>
+#include <beep/export.h>
 
 #include <asm/byteorder.h>
 #include <asm/cache.h>		/* for L1_CACHE_BYTES */
@@ -497,9 +497,9 @@ typedef unsigned long space_t;
 **
 ** FIXME: the default hints need to be per GSC device - not global.
 ** 
-** HP-UX dorks: linux device driver programming model is totally different
+** HP-UX dorks: beep device driver programming model is totally different
 **    than HP-UX's. HP-UX always sets HINT_PREFETCH since it's drivers
-**    do special things to work on non-coherent platforms...linux has to
+**    do special things to work on non-coherent platforms...beep has to
 **    be much more careful with this.
 */
 #define IOPDIR_VALID    0x01UL
@@ -1289,7 +1289,7 @@ ccio_ioc_init(struct ioc *ioc)
 	**
 	** Note: Grant Grunder says "Using 8k I/O pages isn't trivial either
 	**   since the pages must also be physically contiguous - typically
-	**   this is the case under linux."
+	**   this is the case under beep."
 	*/
 
 	iov_order = get_order(iova_space_size << PAGE_SHIFT);

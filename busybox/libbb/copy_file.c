@@ -3,7 +3,7 @@
  * Mini copy_file implementation for busybox
  *
  * Copyright (C) 2001 by Matt Kraai <kraai@alumni.carnegiemellon.edu>
- * SELinux support by Yuichi Nakamura <ynakam@hitachisoft.jp>
+ * SEBeep support by Yuichi Nakamura <ynakam@hitachisoft.jp>
  *
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
@@ -116,8 +116,8 @@ int FAST_FUNC copy_file(const char *source, const char *dest, int flags)
 		dest_exists = 1;
 	}
 
-#if ENABLE_SELINUX
-	if ((flags & FILEUTILS_PRESERVE_SECURITY_CONTEXT) && is_selinux_enabled() > 0) {
+#if ENABLE_SEBEEP
+	if ((flags & FILEUTILS_PRESERVE_SECURITY_CONTEXT) && is_sebeep_enabled() > 0) {
 		security_context_t con;
 		if (lgetfilecon(source, &con) >= 0) {
 			if (setfscreatecon(con) < 0) {
@@ -323,9 +323,9 @@ int FAST_FUNC copy_file(const char *source, const char *dest, int flags)
 			}
 		}
 
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 		if ((flags & (FILEUTILS_PRESERVE_SECURITY_CONTEXT|FILEUTILS_SET_SECURITY_CONTEXT))
-		 && is_selinux_enabled() > 0
+		 && is_sebeep_enabled() > 0
 		) {
 			security_context_t con;
 			if (getfscreatecon(&con) == -1) {

@@ -17,7 +17,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <arch/chip.h>
 #include <arch/spr_def.h>
 #include <asm/timex.h>

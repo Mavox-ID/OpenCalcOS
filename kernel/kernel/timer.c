@@ -1,5 +1,5 @@
 /*
- *  linux/kernel/timer.c
+ *  beep/kernel/timer.c
  *
  *  Kernel internal timers, basic process system calls
  *
@@ -19,27 +19,27 @@
  *              Designed by David S. Miller, Alexey Kuznetsov and Ingo Molnar
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/pid_namespace.h>
-#include <linux/notifier.h>
-#include <linux/thread_info.h>
-#include <linux/time.h>
-#include <linux/jiffies.h>
-#include <linux/posix-timers.h>
-#include <linux/cpu.h>
-#include <linux/syscalls.h>
-#include <linux/delay.h>
-#include <linux/tick.h>
-#include <linux/kallsyms.h>
-#include <linux/irq_work.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/kernel_stat.h>
+#include <beep/export.h>
+#include <beep/interrupt.h>
+#include <beep/percpu.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/pid_namespace.h>
+#include <beep/notifier.h>
+#include <beep/thread_info.h>
+#include <beep/time.h>
+#include <beep/jiffies.h>
+#include <beep/posix-timers.h>
+#include <beep/cpu.h>
+#include <beep/syscalls.h>
+#include <beep/delay.h>
+#include <beep/tick.h>
+#include <beep/kallsyms.h>
+#include <beep/irq_work.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 #include <asm/uaccess.h>
 #include <asm/unistd.h>

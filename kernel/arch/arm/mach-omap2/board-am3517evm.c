@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/board-am3517evm.c
+ * beep/arch/arm/mach-omap2/board-am3517evm.c
  *
  * Copyright (C) 2009 Texas Instruments Incorporated
  * Author: Ranjith Lohithakshan <ranjithl@ti.com>
@@ -16,17 +16,17 @@
  * General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/i2c/pca953x.h>
-#include <linux/can/platform/ti_hecc.h>
-#include <linux/davinci_emac.h>
-#include <linux/mmc/host.h>
-#include <linux/usb/musb.h>
-#include <linux/platform_data/gpio-omap.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/i2c/pca953x.h>
+#include <beep/can/platform/ti_hecc.h>
+#include <beep/davinci_emac.h>
+#include <beep/mmc/host.h>
+#include <beep/usb/musb.h>
+#include <beep/platform_data/gpio-omap.h>
 
 #include "am35xx.h"
 #include <asm/mach-types.h>

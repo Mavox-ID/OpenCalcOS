@@ -21,7 +21,7 @@
 #if 0 /* Currently unused */
 
 #include <media/rc-core.h>
-#include <linux/pci.h>
+#include <beep/pci.h>
 
 #include "dmxdev.h"
 #include "dvbdev.h"

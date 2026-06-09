@@ -29,46 +29,31 @@ if [ -d "ndless/ncurses" ] && [ -f "ndless/ncurses/Makefile" ]; then
 fi
 
 echo -e "${YELLOW}Cleaning Kernel...${NC}"
-(cd kernel && make clean && cd ..)
+(cd kernel && make clean > /dev/null 2>&1 && rm -rf prog/build && cd ..)
 
 echo -e "${YELLOW}Cleaning Busybox...${NC}"
-(cd busybox && make clean && rm -rf ../calcfs/bin && mkdir ../calcfs/bin && cd ..)
+(cd busybox && make clean > /dev/null 2>&1 && rm -rf ../calcfs/bin && mkdir ../calcfs/bin && cd ..)
 
 echo -e "${YELLOW}Cleaning Nano...${NC}"
-if [ -d "nano" ] && [ -f "nano/Makefile" ]; then
-    (cd nano && make distclean > /dev/null 2>&1 && cd ..)
+if [ -d "busybox/nano" ] && ( [ -f "busybox/nano/Makefile" ] || [ -f "busybox/nano/makefile" ] ); then
+    (cd busybox/nano && make distclean)
+else
+    echo "Makefile not found in busybox/nano, skipping..."
 fi
 
 echo -e "${YELLOW}Cleaning Loader...${NC}"
 (cd loader && make clean > /dev/null 2>&1 && cd ..)
 
-echo -e "${YELLOW}Clean build...${NC}"
-if [ -d "build" ]; then
-    rm -rf "build"
-fi
-if [ -f "zCalc.tns" ]; then
-    rm "zCalc.tns"
-fi
-if [ -f "Loader.tns" ]; then
-    rm "Loader.tns"
-fi
-if [ -f "CalcFS.tns" ]; then
-    rm "CalcFS.tns"
-fi
-if [ -f "calcfs/bin/nano" ]; then
-    rm "calcfs/bin/nano"
-fi
-if [ -f "calcfs/libs/libncurses.a" ]; then
-    rm "calcfs/libs/libncurses.a"
-fi
-if [ -f "calcfs/libs/libform.a" ]; then
-    rm "calcfs/libs/libform.a"
-fi
-if [ -f "calcfs/libs/libpanel.a" ]; then
-    rm "calcfs/libs/libpanel.a"
-fi
-if [ -f "calcfs/libs/libmenu.a" ]; then
-    rm "calcfs/libs/libmenu.a"
-fi
+echo -e "${YELLOW}Cleaning build...${NC}"
+
+TARGETS=(
+    "build"
+    ".local_bin"
+    "zCalc.tns"
+    "Loader.tns"
+    "CalcFS.tns"
+)
+rm -rf "${TARGETS[@]}"
+echo -e "${GREEN}Delete & unzip calcfs.zip before building!${NC}"
 
 echo -e "${GREEN}Done.${NC}"

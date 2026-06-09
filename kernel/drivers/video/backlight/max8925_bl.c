@@ -9,15 +9,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/i2c.h>
-#include <linux/backlight.h>
-#include <linux/mfd/max8925.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/fb.h>
+#include <beep/i2c.h>
+#include <beep/backlight.h>
+#include <beep/mfd/max8925.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #define MAX_BRIGHTNESS		(0xff)
 #define MIN_BRIGHTNESS		(0)

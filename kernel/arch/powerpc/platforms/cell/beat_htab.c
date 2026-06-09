@@ -23,8 +23,8 @@
 
 #undef DEBUG_LOW
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
 
 #include <asm/mmu.h>
 #include <asm/page.h>
@@ -177,7 +177,7 @@ static void beat_lpar_hptab_clear(void)
 }
 
 /*
- * NOTE: for updatepp ops we are fortunate that the linux "newpp" bits and
+ * NOTE: for updatepp ops we are fortunate that the beep "newpp" bits and
  * the low 3 bits of flags happen to line up.  So no transform is needed.
  * We can probably optimize here and assume the high bits of newpp are
  * already zero.  For now I am paranoid.
@@ -358,7 +358,7 @@ static long beat_lpar_hpte_insert_v3(unsigned long hpte_group,
 }
 
 /*
- * NOTE: for updatepp ops we are fortunate that the linux "newpp" bits and
+ * NOTE: for updatepp ops we are fortunate that the beep "newpp" bits and
  * the low 3 bits of flags happen to line up.  So no transform is needed.
  * We can probably optimize here and assume the high bits of newpp are
  * already zero.  For now I am paranoid.

@@ -3,7 +3,7 @@
  * ILI9320 LCD controller driver core.
  *
  * Copyright 2007 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -11,15 +11,15 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/lcd.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/lcd.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
-#include <linux/spi/spi.h>
+#include <beep/spi/spi.h>
 
 #include <video/ili9320.h>
 
@@ -313,6 +313,6 @@ void ili9320_shutdown(struct ili9320 *lcd)
 }
 EXPORT_SYMBOL_GPL(ili9320_shutdown);
 
-MODULE_AUTHOR("Ben Dooks <ben-linux@fluff.org>");
+MODULE_AUTHOR("Ben Dooks <ben-beep@fluff.org>");
 MODULE_DESCRIPTION("ILI9320 LCD Driver");
 MODULE_LICENSE("GPL v2");

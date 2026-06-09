@@ -9,13 +9,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/backlight.h>
-#include <linux/i8042.h>
-#include <linux/dmi.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/backlight.h>
+#include <beep/i8042.h>
+#include <beep/dmi.h>
 
 #define SAMSUNGQ10_BL_MAX_INTENSITY      255
 #define SAMSUNGQ10_BL_DEFAULT_INTENSITY  185

@@ -23,7 +23,7 @@
  * Description:  Defines the platform resources for the SA settop.
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/mach-powertv/asic.h>
 
 #define CALLIOPE_ADDR(x)	(CALLIOPE_IO_BASE + (x))

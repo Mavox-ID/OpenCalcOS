@@ -9,7 +9,7 @@
 
 #include "../codecs/wm8994.h"
 #include <sound/pcm_params.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
  /*
   * Default CFG switch settings to use this driver:

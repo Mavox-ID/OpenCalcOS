@@ -12,9 +12,9 @@
  *
  */
 
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/regulator/consumer.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/regulator/consumer.h>
 
 struct jz4740_ohci_hcd {
 	struct ohci_hcd ohci_hcd;

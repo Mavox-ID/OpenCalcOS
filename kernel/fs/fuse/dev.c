@@ -8,17 +8,17 @@
 
 #include "fuse_i.h"
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/uio.h>
-#include <linux/miscdevice.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/pipe_fs_i.h>
-#include <linux/swap.h>
-#include <linux/splice.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/poll.h>
+#include <beep/uio.h>
+#include <beep/miscdevice.h>
+#include <beep/pagemap.h>
+#include <beep/file.h>
+#include <beep/slab.h>
+#include <beep/pipe_fs_i.h>
+#include <beep/swap.h>
+#include <beep/splice.h>
 
 MODULE_ALIAS_MISCDEV(FUSE_MINOR);
 MODULE_ALIAS("devname:fuse");

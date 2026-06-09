@@ -20,8 +20,8 @@
 
 /* This file included from seq.c */
 
-#include <linux/compat.h>
-#include <linux/slab.h>
+#include <beep/compat.h>
+#include <beep/slab.h>
 
 struct snd_seq_port_info32 {
 	struct snd_seq_addr addr;	/* client/port numbers */

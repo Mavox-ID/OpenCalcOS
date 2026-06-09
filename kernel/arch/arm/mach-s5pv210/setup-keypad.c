@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-s5pv210/setup-keypad.c
+ * beep/arch/arm/mach-s5pv210/setup-keypad.c
  *
  * Copyright (C) 2010 Samsung Electronics Co.Ltd
  * Author: Joonyoung Shim <jy0922.shim@samsung.com>
@@ -11,7 +11,7 @@
  *
  */
 
-#include <linux/gpio.h>
+#include <beep/gpio.h>
 #include <plat/gpio-cfg.h>
 
 void samsung_keypad_cfg_gpio(unsigned int rows, unsigned int cols)

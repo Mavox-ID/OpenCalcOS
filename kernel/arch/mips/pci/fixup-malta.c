@@ -1,5 +1,5 @@
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <beep/init.h>
+#include <beep/pci.h>
 
 /* PCI interrupt pins */
 #define PCIA		1

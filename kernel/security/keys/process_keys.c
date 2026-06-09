@@ -9,15 +9,15 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/keyctl.h>
-#include <linux/fs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/security.h>
-#include <linux/user_namespace.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/keyctl.h>
+#include <beep/fs.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/security.h>
+#include <beep/user_namespace.h>
 #include <asm/uaccess.h>
 #include "internal.h"
 

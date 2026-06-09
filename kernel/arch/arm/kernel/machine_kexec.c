@@ -1,16 +1,16 @@
 /*
- * machine_kexec.c - handle transition of Linux booting another kernel
+ * machine_kexec.c - handle transition of Beep booting another kernel
  */
 
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/memblock.h>
+#include <beep/mm.h>
+#include <beep/kexec.h>
+#include <beep/delay.h>
+#include <beep/reboot.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/memblock.h>
 #include <asm/pgtable.h>
-#include <linux/of_fdt.h>
+#include <beep/of_fdt.h>
 #include <asm/pgalloc.h>
 #include <asm/mmu_context.h>
 #include <asm/cacheflush.h>

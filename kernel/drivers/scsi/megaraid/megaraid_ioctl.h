@@ -1,6 +1,6 @@
 /*
  *
- *			Linux MegaRAID device driver
+ *			Beep MegaRAID device driver
  *
  * Copyright (c) 2003-2004  LSI Logic Corporation.
  *
@@ -17,8 +17,8 @@
 #ifndef _MEGARAID_IOCTL_H_
 #define _MEGARAID_IOCTL_H_
 
-#include <linux/types.h>
-#include <linux/semaphore.h>
+#include <beep/types.h>
+#include <beep/semaphore.h>
 
 #include "mbox_defs.h"
 

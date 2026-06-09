@@ -1,13 +1,13 @@
-#include <linux/mutex.h>
-#include <linux/socket.h>
-#include <linux/skbuff.h>
+#include <beep/mutex.h>
+#include <beep/socket.h>
+#include <beep/skbuff.h>
 #include <net/netlink.h>
 #include <net/net_namespace.h>
-#include <linux/module.h>
+#include <beep/module.h>
 #include <net/sock.h>
 
-#include <linux/inet_diag.h>
-#include <linux/sock_diag.h>
+#include <beep/inet_diag.h>
+#include <beep/sock_diag.h>
 
 static const struct sock_diag_handler *sock_diag_handlers[AF_MAX];
 static int (*inet_rcv_compat)(struct sk_buff *skb, struct nlmsghdr *nlh);

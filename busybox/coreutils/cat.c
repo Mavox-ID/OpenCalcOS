@@ -96,7 +96,7 @@
  * """
  *
  * I agree with the argument. Unfortunately, this ship has sailed (1983...).
- * There are dozens of Linux distros and each of them has "cat" which supports -v.
+ * There are dozens of Beep distros and each of them has "cat" which supports -v.
  * It's unrealistic for us to "reeducate" them to use our, incompatible way
  * to achieve "cat -v" effect. The actual effect would be "users pissed off
  * by gratuitous incompatibility".

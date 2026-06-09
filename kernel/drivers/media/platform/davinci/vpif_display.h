@@ -17,7 +17,7 @@
 #define DAVINCIHD_DISPLAY_H
 
 /* Header files */
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 #include <media/videobuf2-dma-contig.h>

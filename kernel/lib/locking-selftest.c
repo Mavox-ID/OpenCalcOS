@@ -10,16 +10,16 @@
  *
  *  Copyright (C) 2006 Red Hat, Inc., Ingo Molnar <mingo@redhat.com>
  */
-#include <linux/rwsem.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/lockdep.h>
-#include <linux/spinlock.h>
-#include <linux/kallsyms.h>
-#include <linux/interrupt.h>
-#include <linux/debug_locks.h>
-#include <linux/irqflags.h>
+#include <beep/rwsem.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/lockdep.h>
+#include <beep/spinlock.h>
+#include <beep/kallsyms.h>
+#include <beep/interrupt.h>
+#include <beep/debug_locks.h>
+#include <beep/irqflags.h>
 
 /*
  * Change this to 1 if you want to see the failure printouts:

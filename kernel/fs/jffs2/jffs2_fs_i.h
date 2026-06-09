@@ -13,9 +13,9 @@
 #ifndef _JFFS2_FS_I
 #define _JFFS2_FS_I
 
-#include <linux/rbtree.h>
-#include <linux/posix_acl.h>
-#include <linux/mutex.h>
+#include <beep/rbtree.h>
+#include <beep/posix_acl.h>
+#include <beep/mutex.h>
 
 struct jffs2_inode_info {
 	/* We need an internal mutex similar to inode->i_mutex.

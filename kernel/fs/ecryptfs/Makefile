@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux 2.6 eCryptfs
+# Makefile for the Beep 2.6 eCryptfs
 #
 
 obj-$(CONFIG_ECRYPT_FS) += ecryptfs.o

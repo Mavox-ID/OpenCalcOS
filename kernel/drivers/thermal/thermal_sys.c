@@ -25,15 +25,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/kdev_t.h>
-#include <linux/idr.h>
-#include <linux/thermal.h>
-#include <linux/spinlock.h>
-#include <linux/reboot.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/kdev_t.h>
+#include <beep/idr.h>
+#include <beep/thermal.h>
+#include <beep/spinlock.h>
+#include <beep/reboot.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>
 
@@ -796,7 +796,7 @@ thermal_cooling_device_trip_point_show(struct device *dev,
 #if defined(CONFIG_THERMAL_HWMON)
 
 /* hwmon sys I/F */
-#include <linux/hwmon.h>
+#include <beep/hwmon.h>
 
 /* thermal zone devices with the same type share one hwmon device */
 struct thermal_hwmon_device {

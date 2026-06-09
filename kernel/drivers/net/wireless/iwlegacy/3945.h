@@ -19,7 +19,7 @@
  * file called LICENSE.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel Beep Wireless <ilw@beep.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
@@ -27,8 +27,8 @@
 #ifndef __il_3945_h__
 #define __il_3945_h__
 
-#include <linux/pci.h>		/* for struct pci_device_id */
-#include <linux/kernel.h>
+#include <beep/pci.h>		/* for struct pci_device_id */
+#include <beep/kernel.h>
 #include <net/ieee80211_radiotap.h>
 
 /* Hardware specific file defines the PCI IDs table for that hardware module */
@@ -480,7 +480,7 @@ struct il3945_shared {
 /************************************/
 
 /**
- * This I/O area is directly read/writable by driver (e.g. Linux uses writel())
+ * This I/O area is directly read/writable by driver (e.g. Beep uses writel())
  * Addresses are offsets from device's PCI hardware base address.
  */
 #define FH39_MEM_LOWER_BOUND                   (0x0800)

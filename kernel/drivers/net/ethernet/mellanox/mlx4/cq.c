@@ -34,12 +34,12 @@
  * SOFTWARE.
  */
 
-#include <linux/init.h>
-#include <linux/hardirq.h>
-#include <linux/export.h>
+#include <beep/init.h>
+#include <beep/hardirq.h>
+#include <beep/export.h>
 
-#include <linux/mlx4/cmd.h>
-#include <linux/mlx4/cq.h>
+#include <beep/mlx4/cmd.h>
+#include <beep/mlx4/cq.h>
 
 #include "mlx4.h"
 #include "icm.h"

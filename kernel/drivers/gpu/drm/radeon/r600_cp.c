@@ -26,7 +26,7 @@
  *     Alex Deucher <alexander.deucher@amd.com>
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <drm/drmP.h>
 #include <drm/radeon_drm.h>

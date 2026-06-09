@@ -7,14 +7,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_string.h>
-#include <linux/textsearch.h>
+#include <beep/gfp.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_string.h>
+#include <beep/textsearch.h>
 
 MODULE_AUTHOR("Pablo Neira Ayuso <pablo@eurodev.net>");
 MODULE_DESCRIPTION("Xtables: string-based matching");

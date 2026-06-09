@@ -29,7 +29,7 @@
 #include "phy.h"
 #include "radio.h"
 
-#include <linux/capability.h>
+#include <beep/capability.h>
 
 
 #define GENERIC_FILESIZE	64

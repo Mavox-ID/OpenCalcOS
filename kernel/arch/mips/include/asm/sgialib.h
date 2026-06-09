@@ -3,7 +3,7 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * SGI ARCS firmware interface library for the Linux kernel.
+ * SGI ARCS firmware interface library for the Beep kernel.
  *
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
  * Copyright (C) 2001, 2002 Ralf Baechle (ralf@gnu.org)
@@ -13,7 +13,7 @@
 
 #include <asm/sgiarcs.h>
 
-extern struct linux_romvec *romvec;
+extern struct beep_romvec *romvec;
 extern int prom_argc;
 
 extern LONG *_prom_argv, *_prom_envp;
@@ -36,8 +36,8 @@ extern char prom_getchar(void);
 /* Get next memory descriptor after CURR, returns first descriptor
  * in chain is CURR is NULL.
  */
-extern struct linux_mdesc *prom_getmdesc(struct linux_mdesc *curr);
-#define PROM_NULL_MDESC   ((struct linux_mdesc *) 0)
+extern struct beep_mdesc *prom_getmdesc(struct beep_mdesc *curr);
+#define PROM_NULL_MDESC   ((struct beep_mdesc *) 0)
 
 /* Called by prom_init to setup the physical memory pmemblock
  * array.

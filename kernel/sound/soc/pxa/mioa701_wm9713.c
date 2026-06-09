@@ -40,9 +40,9 @@
  *                           +-------------------+        ---
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/platform_device.h>
 
 #include <asm/mach-types.h>
 #include <mach/audio.h>

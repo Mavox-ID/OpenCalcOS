@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-realview/realview_eb.c
+ *  beep/arch/arm/mach-realview/realview_eb.c
  *
  *  Copyright (C) 2004 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd
@@ -19,15 +19,15 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/pl061.h>
-#include <linux/amba/mmci.h>
-#include <linux/amba/pl022.h>
-#include <linux/io.h>
-#include <linux/platform_data/clk-realview.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/device.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/pl061.h>
+#include <beep/amba/mmci.h>
+#include <beep/amba/pl022.h>
+#include <beep/io.h>
+#include <beep/platform_data/clk-realview.h>
 
 #include <mach/hardware.h>
 #include <asm/irq.h>

@@ -1,5 +1,5 @@
 /*
- * PC-Speaker driver for Linux
+ * PC-Speaker driver for Beep
  *
  * Copyright (C) 2001-2008  Stas Sergeev
  */

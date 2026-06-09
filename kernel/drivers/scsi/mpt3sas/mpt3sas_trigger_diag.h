@@ -5,7 +5,7 @@
  *
  * This code is based on drivers/scsi/mpt3sas/mpt3sas_base.h
  * Copyright (C) 2012  LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionBeep@lsi.com)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -105,7 +105,7 @@ struct SL_WH_EVENT_TRIGGER_T {
  * @EventTriggerEntry: List of Event trigger elements.
  *
  * This binary structure is transferred via sysfs to get/set Event Triggers
- * in the Linux Driver.
+ * in the Beep Driver.
  */
 
 struct SL_WH_EVENT_TRIGGERS_T {
@@ -139,7 +139,7 @@ struct SL_WH_SCSI_TRIGGER_T {
  * @SCSITriggerEntry: List of SCSI Sense Code trigger elements.
  *
  * This binary structure is transferred via sysfs to get/set SCSI Sense Code
- * Triggers in the Linux Driver.
+ * Triggers in the Beep Driver.
  */
 struct SL_WH_SCSI_TRIGGERS_T {
 	uint32_t ValidEntries;
@@ -169,7 +169,7 @@ struct SL_WH_MPI_TRIGGER_T {
  * @MPITriggerEntry: List of MPI IOCStatus/IocLogInfo trigger elements.
  *
  * This binary structure is transferred via sysfs to get/set MPI Error Triggers
- * in the Linux Driver.
+ * in the Beep Driver.
  */
 struct SL_WH_MPI_TRIGGERS_T {
 	uint32_t ValidEntries;

@@ -20,16 +20,16 @@
  * Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
+#include <beep/dma-mapping.h>
+#include <beep/errno.h>
+#include <beep/firewire.h>
+#include <beep/firewire-constants.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/vmalloc.h>
+#include <beep/export.h>
 
 #include <asm/byteorder.h>
 

@@ -1,7 +1,7 @@
 #ifndef __TRACE_STAT_H
 #define __TRACE_STAT_H
 
-#include <linux/seq_file.h>
+#include <beep/seq_file.h>
 
 /*
  * If you want to provide a stat file (one-shot statistics), fill

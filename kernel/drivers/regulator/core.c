@@ -13,24 +13,24 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/async.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/suspend.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/debugfs.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/async.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/suspend.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/of.h>
+#include <beep/regmap.h>
+#include <beep/regulator/of_regulator.h>
+#include <beep/regulator/consumer.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/machine.h>
+#include <beep/module.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/regulator.h>

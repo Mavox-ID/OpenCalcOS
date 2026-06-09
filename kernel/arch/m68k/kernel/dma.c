@@ -6,13 +6,13 @@
 
 #undef DEBUG
 
-#include <linux/dma-mapping.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
+#include <beep/dma-mapping.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/export.h>
 
 #include <asm/pgalloc.h>
 

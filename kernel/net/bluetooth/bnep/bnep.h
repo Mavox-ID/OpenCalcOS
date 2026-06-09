@@ -1,5 +1,5 @@
 /*
-  BNEP protocol definition for Linux Bluetooth stack (BlueZ).
+  BNEP protocol definition for Beep Bluetooth stack (BlueZ).
   Copyright (C) 2002 Maxim Krasnyansky <maxk@qualcomm.com>
 
   This program is free software; you can redistribute it and/or modify
@@ -19,8 +19,8 @@
 #ifndef _BNEP_H
 #define _BNEP_H
 
-#include <linux/types.h>
-#include <linux/crc32.h>
+#include <beep/types.h>
+#include <beep/crc32.h>
 #include <net/bluetooth/bluetooth.h>
 
 /* Limits */

@@ -1,12 +1,12 @@
 /*
- *  Copyright (C) 2008       SuSE Linux Products GmbH
+ *  Copyright (C) 2008       SuSE Beep Products GmbH
  *                           Thomas Renninger <trenn@suse.de>
  *
  *  May be copied or modified under the terms of the GNU General Public License
  *
  * video_detect.c:
  * Provides acpi_is_video_device() for early scanning of ACPI devices in scan.c
- * There a Linux specific (Spec does not provide a HID for video devices) is
+ * There a Beep specific (Spec does not provide a HID for video devices) is
  * assigned
  *
  * After PCI devices are glued with ACPI devices
@@ -33,10 +33,10 @@
  *
  */
 
-#include <linux/export.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/pci.h>
+#include <beep/export.h>
+#include <beep/acpi.h>
+#include <beep/dmi.h>
+#include <beep/pci.h>
 
 #define PREFIX "ACPI: "
 
@@ -69,7 +69,7 @@ acpi_backlight_cap_match(acpi_handle handle, u32 level, void *context,
 
 /* Returns true if the device is a video device which can be handled by
  * video.ko.
- * The device will get a Linux specific CID added in scan.c to
+ * The device will get a Beep specific CID added in scan.c to
  * identify the device as an ACPI graphics device
  * Be aware that the graphics device may not be physically present
  * Use acpi_video_get_capabilities() to detect general ACPI video

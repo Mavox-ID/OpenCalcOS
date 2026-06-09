@@ -9,8 +9,8 @@
 #define __ASM_SH_PROCESSOR_32_H
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
+#include <beep/compiler.h>
+#include <beep/linkage.h>
 #include <asm/page.h>
 #include <asm/types.h>
 #include <asm/hw_breakpoint.h>

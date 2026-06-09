@@ -12,13 +12,13 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/oprofile.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/smp.h>
-#include <linux/perf_event.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/oprofile.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/smp.h>
+#include <beep/perf_event.h>
+#include <beep/slab.h>
 #include <asm/processor.h>
 
 extern void sh_backtrace(struct pt_regs * const regs, unsigned int depth);

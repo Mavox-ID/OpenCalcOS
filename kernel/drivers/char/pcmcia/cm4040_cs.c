@@ -7,7 +7,7 @@
  * 	- add support for poll()
  * 	- driver cleanup
  * 	- add waitqueues
- * 	- adhere to linux kernel coding style and policies
+ * 	- adhere to beep kernel coding style and policies
  * 	- support 2.6.13 "new style" pcmcia interface
  * 	- add class interface for udev device creation
  *
@@ -17,15 +17,15 @@
  * All rights reserved, Dual BSD/GPL Licensed.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/wait.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/delay.h>
+#include <beep/poll.h>
+#include <beep/mutex.h>
+#include <beep/wait.h>
 #include <asm/uaccess.h>
 #include <asm/io.h>
 

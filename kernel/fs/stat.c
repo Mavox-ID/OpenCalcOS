@@ -1,19 +1,19 @@
 /*
- *  linux/fs/stat.c
+ *  beep/fs/stat.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/highuid.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/pagemap.h>
+#include <beep/export.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/file.h>
+#include <beep/highuid.h>
+#include <beep/fs.h>
+#include <beep/namei.h>
+#include <beep/security.h>
+#include <beep/syscalls.h>
+#include <beep/pagemap.h>
 
 #include <asm/uaccess.h>
 #include <asm/unistd.h>

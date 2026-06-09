@@ -18,8 +18,8 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
  */
-#include <linux/platform_device.h>
-#include <linux/delay.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
 #include <asm/mach/time.h>
 #include <asm/smp_twd.h>
 

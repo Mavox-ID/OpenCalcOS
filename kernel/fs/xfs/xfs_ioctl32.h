@@ -18,7 +18,7 @@
 #ifndef __XFS_IOCTL32_H__
 #define __XFS_IOCTL32_H__
 
-#include <linux/compat.h>
+#include <beep/compat.h>
 
 /*
  * on 32-bit arches, ioctl argument structures may have different sizes

@@ -4,10 +4,10 @@
  * Copyright 2009	Johannes Berg <johannes@sipsolutions.net>
  */
 
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/etherdevice.h>
+#include <beep/if_arp.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include <net/cfg80211.h>
 #include "wext-compat.h"
 #include "nl80211.h"

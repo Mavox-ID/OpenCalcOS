@@ -6,11 +6,11 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/input.h>	/* BUS_SPI */
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/pm.h>
-#include <linux/types.h>
+#include <beep/input.h>	/* BUS_SPI */
+#include <beep/module.h>
+#include <beep/spi/spi.h>
+#include <beep/pm.h>
+#include <beep/types.h>
 #include "ad714x.h"
 
 #define AD714x_SPI_CMD_PREFIX      0xE000   /* bits 15:11 */

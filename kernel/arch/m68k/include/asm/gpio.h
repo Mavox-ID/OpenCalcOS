@@ -16,7 +16,7 @@
 #ifndef coldfire_gpio_h
 #define coldfire_gpio_h
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>
 #include <asm/mcfgpio.h>

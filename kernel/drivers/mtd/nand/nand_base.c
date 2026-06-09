@@ -7,7 +7,7 @@
  *   Basic support for AG-AND chips is provided.
  *
  *	Additional technical information is available on
- *	http://www.linux-mtd.infradead.org/doc/nand.html
+ *	http://www.beep-mtd.infradead.org/doc/nand.html
  *
  *  Copyright (C) 2000 Steven J. Hill (sjhill@realitydiluted.com)
  *		  2002-2006 Thomas Gleixner (tglx@linutronix.de)
@@ -32,22 +32,22 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand_ecc.h>
-#include <linux/mtd/nand_bch.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/leds.h>
-#include <linux/io.h>
-#include <linux/mtd/partitions.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/nand_ecc.h>
+#include <beep/mtd/nand_bch.h>
+#include <beep/interrupt.h>
+#include <beep/bitops.h>
+#include <beep/leds.h>
+#include <beep/io.h>
+#include <beep/mtd/partitions.h>
 
 /* Define default oob placement schemes for large and small page devices */
 static struct nand_ecclayout nand_oob_8 = {

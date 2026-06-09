@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-imx/mach-apf9328.c
+ * beep/arch/arm/mach-imx/mach-apf9328.c
  *
  * Copyright (c) 2005-2011 ARMadeus systems <support@armadeus.com>
  *
@@ -13,13 +13,13 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/dm9000.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
+#include <beep/dm9000.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

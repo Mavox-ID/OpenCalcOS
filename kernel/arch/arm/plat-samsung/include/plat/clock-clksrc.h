@@ -1,12 +1,12 @@
-/* linux/arch/arm/plat-samsung/include/plat/clock-clksrc.h
+/* beep/arch/arm/plat-samsung/include/plat/clock-clksrc.h
  *
  * Parts taken from arch/arm/plat-s3c64xx/clock.c
  *	Copyright 2008 Openmoko, Inc.
  *	Copyright 2008 Simtec Electronics
  *		Ben Dooks <ben@simtec.co.uk>
- *		http://armlinux.simtec.co.uk/
+ *		http://armbeep.simtec.co.uk/
  *
- * Copyright 2009 Ben Dooks <ben-linux@fluff.org>
+ * Copyright 2009 Ben Dooks <ben-beep@fluff.org>
  * Copyright 2009 Harald Welte
  *
  * This program is free software; you can redistribute it and/or modify

@@ -34,14 +34,14 @@
 #ifndef _CIPSO_IPV4_H
 #define _CIPSO_IPV4_H
 
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
+#include <beep/types.h>
+#include <beep/rcupdate.h>
+#include <beep/list.h>
+#include <beep/net.h>
+#include <beep/skbuff.h>
 #include <net/netlabel.h>
 #include <net/request_sock.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/unaligned.h>
 
 /* known doi values */

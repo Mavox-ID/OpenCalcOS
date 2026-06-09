@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/neofb.c -- NeoMagic Framebuffer Driver
+ * beep/drivers/video/neofb.c -- NeoMagic Framebuffer Driver
  *
  * Copyright (c) 2001-2002  Denis Oliver Kropp <dok@directfb.org>
  *
@@ -54,18 +54,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/pci.h>
+#include <beep/init.h>
 #ifdef CONFIG_TOSHIBA
-#include <linux/toshiba.h>
+#include <beep/toshiba.h>
 #endif
 
 #include <asm/io.h>

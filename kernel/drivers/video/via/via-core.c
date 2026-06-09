@@ -7,16 +7,16 @@
 /*
  * Core code for the Via multifunction framebuffer device.
  */
-#include <linux/via-core.h>
-#include <linux/via_i2c.h>
-#include <linux/via-gpio.h>
+#include <beep/via-core.h>
+#include <beep/via_i2c.h>
+#include <beep/via-gpio.h>
 #include "global.h"
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/pm.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/list.h>
+#include <beep/pm.h>
 #include <asm/olpc.h>
 
 /*

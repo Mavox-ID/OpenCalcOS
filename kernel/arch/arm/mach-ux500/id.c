@@ -5,9 +5,9 @@
  * License terms: GNU General Public License (GPL) version 2
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
 
 #include <asm/cputype.h>
 #include <asm/tlbflush.h>

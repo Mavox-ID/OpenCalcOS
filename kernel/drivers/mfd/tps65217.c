@@ -15,20 +15,20 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/regmap.h>
+#include <beep/err.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps65217.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/tps65217.h>
 
 static struct mfd_cell tps65217s[] = {
 	{

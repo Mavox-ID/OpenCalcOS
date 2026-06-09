@@ -1,11 +1,11 @@
 #
-# linux/arch/m32r/boot/compressed/Makefile
+# beep/arch/m32r/boot/compressed/Makefile
 #
-# create a compressed vmlinux image from the original vmlinux
+# create a compressed vmbeep image from the original vmbeep
 #
 
-targets		:= vmlinux vmlinux.bin vmlinux.bin.gz vmlinux.bin.bz2 \
-		   vmlinux.bin.lzma head.o misc.o piggy.o vmlinux.lds
+targets		:= vmbeep vmbeep.bin vmbeep.bin.gz vmbeep.bin.bz2 \
+		   vmbeep.bin.lzma head.o misc.o piggy.o vmbeep.lds
 
 OBJECTS = $(obj)/head.o $(obj)/misc.o
 
@@ -15,28 +15,28 @@ OBJECTS = $(obj)/head.o $(obj)/misc.o
 #IMAGE_OFFSET := $(shell printf "0x%08x" $$[$(CONFIG_MEMORY_START)+0x2000])
 #IMAGE_OFFSET := $(shell printf "0x%08x" $$[$(CONFIG_MEMORY_START)+0x00400000])
 
-LDFLAGS_vmlinux := -T
+LDFLAGS_vmbeep := -T
 
-$(obj)/vmlinux: $(obj)/vmlinux.lds $(OBJECTS) $(obj)/piggy.o FORCE
+$(obj)/vmbeep: $(obj)/vmbeep.lds $(OBJECTS) $(obj)/piggy.o FORCE
 	$(call if_changed,ld)
 	@:
 
-$(obj)/vmlinux.bin: vmlinux FORCE
+$(obj)/vmbeep.bin: vmbeep FORCE
 	$(call if_changed,objcopy)
 
-$(obj)/vmlinux.bin.gz: $(obj)/vmlinux.bin FORCE
+$(obj)/vmbeep.bin.gz: $(obj)/vmbeep.bin FORCE
 	$(call if_changed,gzip)
 
-$(obj)/vmlinux.bin.bz2: $(obj)/vmlinux.bin FORCE
+$(obj)/vmbeep.bin.bz2: $(obj)/vmbeep.bin FORCE
 	$(call if_changed,bzip2)
 
-$(obj)/vmlinux.bin.lzma: $(obj)/vmlinux.bin FORCE
+$(obj)/vmbeep.bin.lzma: $(obj)/vmbeep.bin FORCE
 	$(call if_changed,lzma)
 
 CFLAGS_misc.o += -fpic
 
 ifdef CONFIG_MMU
-LDFLAGS_piggy.o := -r --format binary --oformat elf32-m32r-linux -T
+LDFLAGS_piggy.o := -r --format binary --oformat elf32-m32r-beep -T
 else
 LDFLAGS_piggy.o := -r --format binary --oformat elf32-m32r -T
 endif
@@ -47,5 +47,5 @@ suffix-$(CONFIG_KERNEL_GZIP)	= gz
 suffix-$(CONFIG_KERNEL_BZIP2)	= bz2
 suffix-$(CONFIG_KERNEL_LZMA)	= lzma
 
-$(obj)/piggy.o: $(obj)/vmlinux.scr $(obj)/vmlinux.bin.$(suffix-y) FORCE
+$(obj)/piggy.o: $(obj)/vmbeep.scr $(obj)/vmbeep.bin.$(suffix-y) FORCE
 	$(call if_changed,ld)

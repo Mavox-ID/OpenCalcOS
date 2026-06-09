@@ -13,18 +13,18 @@
  * You should have received a copy of the GNU General Public License along with
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/smp.h>
-#include <linux/amba/bus.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/dma-mapping.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
+#include <beep/of_address.h>
+#include <beep/smp.h>
+#include <beep/amba/bus.h>
 
 #include <asm/arch_timer.h>
 #include <asm/cacheflush.h>

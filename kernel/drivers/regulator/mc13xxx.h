@@ -9,10 +9,10 @@
  * (at your option) any later version.
  */
 
-#ifndef __LINUX_REGULATOR_MC13XXX_H
-#define __LINUX_REGULATOR_MC13XXX_H
+#ifndef __BEEP_REGULATOR_MC13XXX_H
+#define __BEEP_REGULATOR_MC13XXX_H
 
-#include <linux/regulator/driver.h>
+#include <beep/regulator/driver.h>
 
 struct mc13xxx_regulator {
 	struct regulator_desc desc;

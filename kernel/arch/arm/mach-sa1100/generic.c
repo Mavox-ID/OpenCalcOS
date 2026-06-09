@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-sa1100/generic.c
+ * beep/arch/arm/mach-sa1100/generic.c
  *
  * Author: Nicolas Pitre
  *
@@ -9,16 +9,16 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm.h>
-#include <linux/cpufreq.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/pm.h>
+#include <beep/cpufreq.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
 
 #include <video/sa1100fb.h>
 

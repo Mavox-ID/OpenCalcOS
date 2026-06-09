@@ -1,5 +1,5 @@
 /*
- *  linux/fs/fat/inode.c
+ *  beep/fs/fat/inode.c
  *
  *  Written 1992,1993 by Werner Almesberger
  *  VFAT extensions by Gordon Chaffee, merged with msdos fs by Henrik Storner
@@ -10,23 +10,23 @@
  *	Max Cohan: Fixed invalid FSINFO offset when info_sector is 0
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/pagemap.h>
-#include <linux/mpage.h>
-#include <linux/buffer_head.h>
-#include <linux/exportfs.h>
-#include <linux/mount.h>
-#include <linux/vfs.h>
-#include <linux/parser.h>
-#include <linux/uio.h>
-#include <linux/writeback.h>
-#include <linux/log2.h>
-#include <linux/hash.h>
-#include <linux/blkdev.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/slab.h>
+#include <beep/seq_file.h>
+#include <beep/pagemap.h>
+#include <beep/mpage.h>
+#include <beep/buffer_head.h>
+#include <beep/exportfs.h>
+#include <beep/mount.h>
+#include <beep/vfs.h>
+#include <beep/parser.h>
+#include <beep/uio.h>
+#include <beep/writeback.h>
+#include <beep/log2.h>
+#include <beep/hash.h>
+#include <beep/blkdev.h>
 #include <asm/unaligned.h>
 #include "fat.h"
 

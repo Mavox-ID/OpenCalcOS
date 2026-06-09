@@ -12,8 +12,8 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/bitrev.h>
-#include <linux/module.h>
+#include <beep/bitrev.h>
+#include <beep/module.h>
 #include "rc-core-priv.h"
 
 #define SONY_UNIT		600000 /* ns */

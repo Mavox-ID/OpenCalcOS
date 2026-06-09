@@ -24,7 +24,7 @@ extern void irq_ctx_init(int cpu);
 #define __ARCH_HAS_DO_SOFTIRQ
 
 #ifdef CONFIG_HOTPLUG_CPU
-#include <linux/cpumask.h>
+#include <beep/cpumask.h>
 extern void fixup_irqs(void);
 extern void irq_force_complete_move(int);
 #endif

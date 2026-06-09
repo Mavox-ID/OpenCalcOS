@@ -1,4 +1,4 @@
-/* DVB USB framework compliant Linux driver for the
+/* DVB USB framework compliant Beep driver for the
  *	DVBWorld DVB-S 2101, 2102, DVB-S2 2104, DVB-C 3101,
  *	TeVii S600, S630, S650, S660, S480,
  *	Prof 1100, 7500,
@@ -81,7 +81,7 @@
 #define DW2102_LED_CTRL (0x1b00)
 
 #define	err_str "did not find the firmware file. (%s) " \
-		"Please see linux/Documentation/dvb/ for more details " \
+		"Please see beep/Documentation/dvb/ for more details " \
 		"on firmware-problems."
 
 struct rc_map_dvb_usb_table_table {

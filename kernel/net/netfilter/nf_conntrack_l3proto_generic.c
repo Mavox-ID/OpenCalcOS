@@ -1,5 +1,5 @@
 /*
- * (C) 2003,2004 USAGI/WIDE Project <http://www.linux-ipv6.org>
+ * (C) 2003,2004 USAGI/WIDE Project <http://www.beep-ipv6.org>
  *
  * Based largely upon the original ip_conntrack code which
  * had the following copyright information:
@@ -15,16 +15,16 @@
  *	Yasuyuki Kozakai @USAGI	<yasuyuki.kozakai@toshiba.co.jp>
  */
 
-#include <linux/types.h>
-#include <linux/ip.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/icmp.h>
-#include <linux/sysctl.h>
+#include <beep/types.h>
+#include <beep/ip.h>
+#include <beep/netfilter.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/icmp.h>
+#include <beep/sysctl.h>
 #include <net/ip.h>
 
-#include <linux/netfilter_ipv4.h>
+#include <beep/netfilter_ipv4.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_l4proto.h>
 #include <net/netfilter/nf_conntrack_l3proto.h>

@@ -17,21 +17,21 @@
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
-#include <linux/types.h>
-#include <linux/hwmon.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
-#include <linux/gpio.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/hwmon.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/pm.h>
+#include <beep/gpio.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/ads7846.h>
+#include <beep/regulator/consumer.h>
+#include <beep/module.h>
 #include <asm/irq.h>
 
 /*

@@ -21,11 +21,11 @@
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
-#include <linux/module.h>
-#include <linux/video_output.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/ctype.h>
+#include <beep/module.h>
+#include <beep/video_output.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/ctype.h>
 
 
 MODULE_DESCRIPTION("Display Output Switcher Lowlevel Control Abstraction");

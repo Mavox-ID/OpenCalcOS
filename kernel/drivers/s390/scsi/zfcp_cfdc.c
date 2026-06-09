@@ -11,10 +11,10 @@
 #define KMSG_COMPONENT "zfcp"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/compat.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/miscdevice.h>
+#include <beep/compat.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/miscdevice.h>
 #include <asm/compat.h>
 #include <asm/ccwdev.h>
 #include "zfcp_def.h"

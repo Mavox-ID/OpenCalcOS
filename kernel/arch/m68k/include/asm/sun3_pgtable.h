@@ -5,7 +5,7 @@
 
 #ifndef __ASSEMBLY__
 #include <asm/virtconvert.h>
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 /*
  * This file contains all the things which change drastically for the sun3

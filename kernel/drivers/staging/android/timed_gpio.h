@@ -1,4 +1,4 @@
-/* include/linux/timed_gpio.h
+/* include/beep/timed_gpio.h
  *
  * Copyright (C) 2008 Google, Inc.
  *
@@ -13,8 +13,8 @@
  *
 */
 
-#ifndef _LINUX_TIMED_GPIO_H
-#define _LINUX_TIMED_GPIO_H
+#ifndef _BEEP_TIMED_GPIO_H
+#define _BEEP_TIMED_GPIO_H
 
 #define TIMED_GPIO_NAME "timed-gpio"
 

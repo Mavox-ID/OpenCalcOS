@@ -20,15 +20,15 @@
 
 #include "udfdecl.h"
 
-#include <linux/kernel.h>
-#include <linux/string.h>	/* for memset */
-#include <linux/nls.h>
-#include <linux/crc-itu-t.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/string.h>	/* for memset */
+#include <beep/nls.h>
+#include <beep/crc-itu-t.h>
+#include <beep/slab.h>
 
 #include "udf_sb.h"
 
-static int udf_translate_to_linux(uint8_t *, uint8_t *, int, uint8_t *, int);
+static int udf_translate_to_beep(uint8_t *, uint8_t *, int, uint8_t *, int);
 
 static int udf_char_to_ustr(struct ustr *dest, const uint8_t *src, int strlen)
 {
@@ -366,7 +366,7 @@ int udf_get_filename(struct super_block *sb, uint8_t *sname, uint8_t *dname,
 	} else
 		goto out2;
 
-	len = udf_translate_to_linux(dname, filename->u_name, filename->u_len,
+	len = udf_translate_to_beep(dname, filename->u_name, filename->u_len,
 				     unifilename->u_name, unifilename->u_len);
 out2:
 	kfree(unifilename);
@@ -404,7 +404,7 @@ int udf_put_filename(struct super_block *sb, const uint8_t *sname,
 #define CRC_MARK		'#'
 #define EXT_SIZE 		5
 
-static int udf_translate_to_linux(uint8_t *newName, uint8_t *udfName,
+static int udf_translate_to_beep(uint8_t *newName, uint8_t *udfName,
 				  int udfLen, uint8_t *fidName,
 				  int fidNameLen)
 {

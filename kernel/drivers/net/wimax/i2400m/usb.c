@@ -1,9 +1,9 @@
 /*
  * Intel Wireless WiMAX Connection 2400m
- * Linux driver model glue for USB device, reset & fw upload
+ * Beep driver model glue for USB device, reset & fw upload
  *
  *
- * Copyright (C) 2007-2008 Intel Corporation <linux-wimax@intel.com>
+ * Copyright (C) 2007-2008 Intel Corporation <beep-wimax@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  * Yanir Lubetkin <yanirx.lubetkin@intel.com>
  *
@@ -64,10 +64,10 @@
  *   usb_reset_device()
  */
 #include "i2400m-usb.h"
-#include <linux/wimax/i2400m.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/wimax/i2400m.h>
+#include <beep/debugfs.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 
 #define D_SUBMODULE usb
@@ -809,7 +809,7 @@ void __exit i2400mu_driver_exit(void)
 }
 module_exit(i2400mu_driver_exit);
 
-MODULE_AUTHOR("Intel Corporation <linux-wimax@intel.com>");
+MODULE_AUTHOR("Intel Corporation <beep-wimax@intel.com>");
 MODULE_DESCRIPTION("Driver for USB based Intel Wireless WiMAX Connection 2400M "
 		   "(5x50 & 6050)");
 MODULE_LICENSE("GPL");

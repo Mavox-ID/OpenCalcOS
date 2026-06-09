@@ -13,28 +13,28 @@
  * Copyright 2002-2003, Stephen Frost, 2.5.x port by laforge@netfilter.org
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/init.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/list.h>
-#include <linux/random.h>
-#include <linux/jhash.h>
-#include <linux/bitops.h>
-#include <linux/skbuff.h>
-#include <linux/inet.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <beep/init.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/list.h>
+#include <beep/random.h>
+#include <beep/jhash.h>
+#include <beep/bitops.h>
+#include <beep/skbuff.h>
+#include <beep/inet.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_recent.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_recent.h>
 
 MODULE_AUTHOR("Patrick McHardy <kaber@trash.net>");
 MODULE_AUTHOR("Jan Engelhardt <jengelh@medozas.de>");

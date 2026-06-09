@@ -23,7 +23,7 @@
 
 #include <dspbridge/devdefs.h>
 
-#include <linux/idr.h>
+#include <beep/idr.h>
 
 /* Bridge Driver Object */
 struct drv_object;

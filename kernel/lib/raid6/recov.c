@@ -1,4 +1,4 @@
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- beep-c -*- ------------------------------------------------------- *
  *
  *   Copyright 2002 H. Peter Anvin - All Rights Reserved
  *
@@ -18,8 +18,8 @@
  * the syndrome.)
  */
 
-#include <linux/export.h>
-#include <linux/raid/pq.h>
+#include <beep/export.h>
+#include <beep/raid/pq.h>
 
 /* Recover two failed data blocks. */
 static void raid6_2data_recov_intx1(int disks, size_t bytes, int faila,

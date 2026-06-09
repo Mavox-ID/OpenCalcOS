@@ -8,9 +8,9 @@
  * the Free Software Foundation.
  */
 
-#include <linux/input/mt.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <beep/input/mt.h>
+#include <beep/export.h>
+#include <beep/slab.h>
 
 #define TRKID_SGN	((TRKID_MAX + 1) >> 1)
 

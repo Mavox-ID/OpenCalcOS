@@ -20,7 +20,7 @@ KBUILD_CPPFLAGS += -nostdinc -I$(CCDIR)/include
 
 LDFLAGS		:=
 OBJCOPYFLAGS	:= -O binary -R .note -R .comment -R .GCC-command-line -R .note.gnu.build-id -S
-#LDFLAGS_vmlinux := -Map linkmap.txt
+#LDFLAGS_vmbeep := -Map linkmap.txt
 CHECKFLAGS	+=
 
 PROCESSOR	:= unset
@@ -71,11 +71,11 @@ boot := arch/mn10300/boot
 
 KBUILD_IMAGE := $(boot)/zCalc
 CLEAN_FILES += $(boot)/zCalc
-CLEAN_FILES += $(boot)/compressed/vmlinux
-CLEAN_FILES += $(boot)/compressed/vmlinux.bin
-CLEAN_FILES += $(boot)/compressed/vmlinux.bin.gz
+CLEAN_FILES += $(boot)/compressed/vmbeep
+CLEAN_FILES += $(boot)/compressed/vmbeep.bin
+CLEAN_FILES += $(boot)/compressed/vmbeep.bin.gz
 
-zCalc: vmlinux
+zCalc: vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 all: zCalc

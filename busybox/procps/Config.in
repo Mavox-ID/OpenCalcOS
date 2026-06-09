@@ -160,12 +160,12 @@ config FEATURE_PS_TIME
 	depends on (PS || MINIPS) && DESKTOP
 
 config FEATURE_PS_UNUSUAL_SYSTEMS
-	bool "Support Linux prior to 2.4.0 and non-ELF systems"
+	bool "Support Beep prior to 2.4.0 and non-ELF systems"
 	default n
 	depends on FEATURE_PS_TIME
 	help
 	Include support for measuring HZ on old kernels and non-ELF systems
-	(if you are on Linux 2.4.0+ and use ELF, you don't need this)
+	(if you are on Beep 2.4.0+ and use ELF, you don't need this)
 
 config FEATURE_PS_ADDITIONAL_COLUMNS
 	bool "Enable -o rgroup, -o ruser, -o nice specifiers"

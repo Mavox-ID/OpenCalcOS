@@ -11,14 +11,14 @@
  *	Available from National Semiconductor
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ide.h>
-#include <linux/pm.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/ide.h>
+#include <beep/pm.h>
 
 #include <asm/io.h>
 

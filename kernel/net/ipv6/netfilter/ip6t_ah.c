@@ -7,17 +7,17 @@
  * published by the Free Software Foundation.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/types.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/types.h>
 #include <net/checksum.h>
 #include <net/ipv6.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/netfilter_ipv6/ip6t_ah.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_ipv6/ip6_tables.h>
+#include <beep/netfilter_ipv6/ip6t_ah.h>
 
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("Xtables: IPv6 IPsec-AH match");

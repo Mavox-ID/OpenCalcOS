@@ -2,7 +2,7 @@
  * OHCI HCD (Host Controller Driver) for USB.
  *
  *  Copyright (C) 2004 SAN People (Pty) Ltd.
- *  Copyright (C) 2005 Thibaut VARENE <varenet@parisc-linux.org>
+ *  Copyright (C) 2005 Thibaut VARENE <varenet@parisc-beep.org>
  *
  * AT91 Bus Glue
  *
@@ -12,11 +12,11 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_data/atmel.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/of_platform.h>
+#include <beep/of_gpio.h>
+#include <beep/platform_data/atmel.h>
 
 #include <mach/hardware.h>
 #include <asm/gpio.h>

@@ -6,14 +6,14 @@
  * Released under the term of the GNU GPL v2.
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/i2c.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/wait.h>
+#include <beep/i2c.h>
 #include <asm/prom.h>
 #include <asm/machdep.h>
 #include <asm/io.h>

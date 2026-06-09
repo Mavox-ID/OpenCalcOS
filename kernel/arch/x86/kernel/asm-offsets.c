@@ -5,12 +5,12 @@
  */
 #define COMPILE_OFFSETS
 
-#include <linux/crypto.h>
-#include <linux/sched.h>
-#include <linux/stddef.h>
-#include <linux/hardirq.h>
-#include <linux/suspend.h>
-#include <linux/kbuild.h>
+#include <beep/crypto.h>
+#include <beep/sched.h>
+#include <beep/stddef.h>
+#include <beep/hardirq.h>
+#include <beep/suspend.h>
+#include <beep/kbuild.h>
 #include <asm/processor.h>
 #include <asm/thread_info.h>
 #include <asm/sigframe.h>

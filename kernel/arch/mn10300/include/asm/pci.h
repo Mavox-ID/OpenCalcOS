@@ -12,7 +12,7 @@
 #define _ASM_PCI_H
 
 #ifdef __KERNEL__
-#include <linux/mm.h>		/* for struct page */
+#include <beep/mm.h>		/* for struct page */
 
 #if 0
 #define __pcbdebug(FMT, ADDR, ...) \
@@ -55,10 +55,10 @@ void pcibios_penalize_isa_irq(int irq);
  * i386 has everything mapped statically.
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/slab.h>
 #include <asm/scatterlist.h>
-#include <linux/string.h>
+#include <beep/string.h>
 #include <asm/io.h>
 
 struct pci_dev;

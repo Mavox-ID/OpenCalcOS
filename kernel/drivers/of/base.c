@@ -17,12 +17,12 @@
  *      as published by the Free Software Foundation; either version
  *      2 of the License, or (at your option) any later version.
  */
-#include <linux/ctype.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
+#include <beep/ctype.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/proc_fs.h>
 
 /**
  * struct alias_prop - Alias property in 'aliases' node
@@ -1462,7 +1462,7 @@ void of_alias_scan(void * (*dt_alloc)(u64 size, u64 align))
 		/* Skip those we do not want to proceed */
 		if (!strcmp(pp->name, "name") ||
 		    !strcmp(pp->name, "phandle") ||
-		    !strcmp(pp->name, "linux,phandle"))
+		    !strcmp(pp->name, "beep,phandle"))
 			continue;
 
 		np = of_find_node_by_path(pp->value);

@@ -13,10 +13,10 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/oprofile.h>
-#include <linux/sched.h>
-#include <linux/kallsyms.h>
-#include <linux/mm.h>
+#include <beep/oprofile.h>
+#include <beep/sched.h>
+#include <beep/kallsyms.h>
+#include <beep/mm.h>
 #include <asm/unwinder.h>
 #include <asm/ptrace.h>
 #include <asm/uaccess.h>

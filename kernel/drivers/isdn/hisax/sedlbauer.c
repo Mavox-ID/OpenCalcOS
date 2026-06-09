@@ -38,15 +38,15 @@
  * For example: hisaxctrl <DriverID> 9 ISAR.BIN
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include "hisax.h"
 #include "isac.h"
 #include "ipac.h"
 #include "hscx.h"
 #include "isar.h"
 #include "isdnl1.h"
-#include <linux/pci.h>
-#include <linux/isapnp.h>
+#include <beep/pci.h>
+#include <beep/isapnp.h>
 
 static const char *Sedlbauer_revision = "$Revision: 1.34.2.6 $";
 

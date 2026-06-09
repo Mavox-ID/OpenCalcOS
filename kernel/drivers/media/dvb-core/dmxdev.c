@@ -20,14 +20,14 @@
  *
  */
 
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/ioctl.h>
-#include <linux/wait.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/module.h>
+#include <beep/poll.h>
+#include <beep/ioctl.h>
+#include <beep/wait.h>
 #include <asm/uaccess.h>
 #include "dmxdev.h"
 

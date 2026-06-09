@@ -1,6 +1,6 @@
 /*
  *	Spanning tree protocol; timer-related code
- *	Linux ethernet bridge
+ *	Beep ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -11,8 +11,8 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/times.h>
+#include <beep/kernel.h>
+#include <beep/times.h>
 
 #include "br_private.h"
 #include "br_private_stp.h"

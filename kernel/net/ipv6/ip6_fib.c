@@ -1,5 +1,5 @@
 /*
- *	Linux INET6 implementation
+ *	Beep INET6 implementation
  *	Forwarding Information Database
  *
  *	Authors:
@@ -21,15 +21,15 @@
 
 #define pr_fmt(fmt) "IPv6: " fmt
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/net.h>
-#include <linux/route.h>
-#include <linux/netdevice.h>
-#include <linux/in6.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/net.h>
+#include <beep/route.h>
+#include <beep/netdevice.h>
+#include <beep/in6.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 
 #include <net/ipv6.h>
 #include <net/ndisc.h>

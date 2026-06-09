@@ -4,15 +4,15 @@
 
 #define NVRAM_VERSION "1.0"
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/fcntl.h>
-#include <linux/nvram.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/miscdevice.h>
+#include <beep/fcntl.h>
+#include <beep/nvram.h>
+#include <beep/init.h>
 #include <asm/uaccess.h>
 #include <asm/nvram.h>
 

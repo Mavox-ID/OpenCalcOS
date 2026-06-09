@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/entry.S
+ * beep/arch/unicore32/kernel/entry.S
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -11,8 +11,8 @@
  *
  *  Low-level vector interface routines
  */
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 #include <asm/errno.h>
 #include <asm/thread_info.h>
@@ -135,7 +135,7 @@
  */
 scno	.req	r21		@ syscall number
 tbl	.req	r22		@ syscall table pointer
-why	.req	r22		@ Linux syscall (!= 0)
+why	.req	r22		@ Beep syscall (!= 0)
 tsk	.req	r23		@ current thread_info
 
 /*

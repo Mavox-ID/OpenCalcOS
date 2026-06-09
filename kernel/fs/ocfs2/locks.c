@@ -23,8 +23,8 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/fs.h>
-#include <linux/fcntl.h>
+#include <beep/fs.h>
+#include <beep/fcntl.h>
 
 #include <cluster/masklog.h>
 

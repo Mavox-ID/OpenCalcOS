@@ -17,11 +17,11 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
-#include <linux/kprobes.h>
-#include <linux/ptrace.h>
-#include <linux/spinlock.h>
-#include <linux/preempt.h>
-#include <linux/kdebug.h>
+#include <beep/kprobes.h>
+#include <beep/ptrace.h>
+#include <beep/spinlock.h>
+#include <beep/preempt.h>
+#include <beep/kdebug.h>
 #include <asm/cacheflush.h>
 
 struct kretprobe_blackpoint kretprobe_blacklist[] = { { NULL, NULL } };

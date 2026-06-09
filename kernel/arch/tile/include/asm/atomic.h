@@ -21,8 +21,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/types.h>
 
 #define ATOMIC_INIT(i)	{ (i) }
 

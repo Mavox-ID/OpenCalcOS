@@ -5,10 +5,10 @@
  * See LICENSE.qla2xxx for copyright and licensing details.
  */
 #include "qla_def.h"
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/ratelimit.h>
-#include <linux/vmalloc.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/ratelimit.h>
+#include <beep/vmalloc.h>
 #include <scsi/scsi_tcq.h>
 
 #define MASK(n)			((1ULL<<(n))-1)

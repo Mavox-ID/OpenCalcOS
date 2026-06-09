@@ -1,7 +1,7 @@
 #ifndef __ASM_SH_MOBILE_LCDC_H__
 #define __ASM_SH_MOBILE_LCDC_H__
 
-#include <linux/fb.h>
+#include <beep/fb.h>
 #include <video/sh_mobile_meram.h>
 
 /* Register definitions */

@@ -8,10 +8,10 @@
  * (at your option) any later version.
  */
 
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/phy.h>
 #include <net/dsa.h>
 #include "mv88e6xxx.h"
 

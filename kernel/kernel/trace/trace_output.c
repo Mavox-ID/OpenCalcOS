@@ -5,9 +5,9 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/ftrace.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/ftrace.h>
 
 #include "trace_output.h"
 

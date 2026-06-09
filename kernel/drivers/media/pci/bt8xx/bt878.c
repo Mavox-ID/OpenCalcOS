@@ -27,18 +27,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
 #include <asm/io.h>
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 #include <asm/pgtable.h>
 #include <asm/page.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/kmod.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/kmod.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
 
 #include "dmxdev.h"
 #include "dvbdev.h"

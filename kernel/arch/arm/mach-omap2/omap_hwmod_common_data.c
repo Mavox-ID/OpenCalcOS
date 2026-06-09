@@ -13,7 +13,7 @@
  * published by the Free Software Foundation.
  *
  * This data/structures are to be used while defining OMAP on-chip module
- * data and their integration with other OMAP modules and Linux.
+ * data and their integration with other OMAP modules and Beep.
  */
 
 #include "omap_hwmod.h"

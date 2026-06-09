@@ -13,17 +13,17 @@
  * License terms: GNU General Public License (GPL) version 2
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/gpio.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/regulator/driver.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps6105x.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
+#include <beep/gpio.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/regulator/driver.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/tps6105x.h>
 
 int tps6105x_set(struct tps6105x *tps6105x, u8 reg, u8 value)
 {

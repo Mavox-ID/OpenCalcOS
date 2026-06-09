@@ -27,9 +27,9 @@
 #ifndef IRTTP_H
 #define IRTTP_H
 
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/irlmp.h>		/* struct lsap_cb */

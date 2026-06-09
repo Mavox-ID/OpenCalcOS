@@ -1,14 +1,14 @@
 /*
  * PROM interface routines.
  */
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/bootmem.h>
-#include <linux/ioport.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/bootmem.h>
+#include <beep/ioport.h>
 #include <asm/bootinfo.h>
 #include <asm/lasat/lasat.h>
 #include <asm/cpu.h>

@@ -1,6 +1,6 @@
-#include <linux/serial_sci.h>
-#include <linux/serial_core.h>
-#include <linux/io.h>
+#include <beep/serial_sci.h>
+#include <beep/serial_core.h>
+#include <beep/io.h>
 #include <cpu/serial.h>
 #include <cpu/gpio.h>
 

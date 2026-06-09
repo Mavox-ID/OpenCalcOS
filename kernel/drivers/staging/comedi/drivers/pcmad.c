@@ -2,7 +2,7 @@
     comedi/drivers/pcmad.c
     Hardware driver for Winsystems PCM-A/D12 and PCM-A/D16
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000,2001 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -41,10 +41,10 @@ Configuration options:
 	1 = two's complement
 */
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 #define PCMAD_SIZE		4
 

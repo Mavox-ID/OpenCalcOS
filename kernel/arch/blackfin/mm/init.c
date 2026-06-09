@@ -4,11 +4,11 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/gfp.h>
-#include <linux/swap.h>
-#include <linux/bootmem.h>
-#include <linux/uaccess.h>
-#include <linux/export.h>
+#include <beep/gfp.h>
+#include <beep/swap.h>
+#include <beep/bootmem.h>
+#include <beep/uaccess.h>
+#include <beep/export.h>
 #include <asm/bfin-global.h>
 #include <asm/pda.h>
 #include <asm/cplbinit.h>

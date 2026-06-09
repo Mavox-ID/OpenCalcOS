@@ -1,8 +1,8 @@
 #ifndef _ALPHA_SWAB_H
 #define _ALPHA_SWAB_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <beep/types.h>
+#include <beep/compiler.h>
 #include <asm/compiler.h>
 
 #ifdef __GNUC__

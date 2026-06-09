@@ -19,12 +19,12 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 */
 
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/usb.h>
+#include <beep/moduleparam.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/gfp.h>
+#include <beep/usb.h>
 #include <sound/initval.h>
 #include <sound/core.h>
 #include <sound/pcm.h>

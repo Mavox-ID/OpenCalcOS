@@ -51,7 +51,7 @@ static inline void *kmap_high_get(struct page *page)
 #endif
 
 /*
- * The following functions are already defined by <linux/highmem.h>
+ * The following functions are already defined by <beep/highmem.h>
  * when CONFIG_HIGHMEM is not set.
  */
 #ifdef CONFIG_HIGHMEM

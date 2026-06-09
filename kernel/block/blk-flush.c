@@ -64,11 +64,11 @@
  * merged in the usual way.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/bio.h>
+#include <beep/blkdev.h>
+#include <beep/gfp.h>
 
 #include "blk.h"
 

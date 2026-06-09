@@ -20,13 +20,13 @@
 #include "main.h"
 #include "tty.h"
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 #include <pcmcia/cisreg.h>
 #include <pcmcia/device_id.h>

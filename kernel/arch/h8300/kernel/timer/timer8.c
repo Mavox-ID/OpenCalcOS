@@ -1,5 +1,5 @@
 /*
- *  linux/arch/h8300/kernel/cpu/timer/timer8.c
+ *  beep/arch/h8300/kernel/cpu/timer/timer8.c
  *
  *  Yoshinori Sato <ysato@users.sourcefoge.jp>
  *
@@ -7,15 +7,15 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/profile.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/profile.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

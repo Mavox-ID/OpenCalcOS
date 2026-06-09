@@ -9,7 +9,7 @@
     Copyright (C) 2002 Joachim Wuttke <Joachim.Wuttke@icn.siemens.de>
     Copyright (C) 2002 Frank Mori Hess <fmhess@users.sourceforge.net>
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -55,7 +55,7 @@ zero volts).
 #include <asm/div64.h>
 
 #include "comedi_fc.h"
-#include <linux/timer.h>
+#include <beep/timer.h>
 
 #define N_CHANS 8
 

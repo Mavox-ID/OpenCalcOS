@@ -17,10 +17,10 @@
  *      amixer sset 'Right Output Mixer PCM' on
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/of_device.h>
+#include <beep/slab.h>
 #include <sound/soc.h>
 #include <asm/fsl_guts.h>
 

@@ -11,11 +11,11 @@
  * option) any later version.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/i2c.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/of.h>
+#include <beep/i2c.h>
 
 #ifdef CONFIG_I2C_BOARDINFO
 /* The below is from fsl_soc.c.  It's copied because since there are no

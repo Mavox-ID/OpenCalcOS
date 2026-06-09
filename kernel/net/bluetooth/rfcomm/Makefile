@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux Bluetooth RFCOMM layer.
+# Makefile for the Beep Bluetooth RFCOMM layer.
 #
 
 obj-$(CONFIG_BT_RFCOMM) += rfcomm.o

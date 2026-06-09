@@ -22,14 +22,14 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/net.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
+#include <beep/net.h>
+#include <beep/string.h>
+#include <beep/in.h>
+#include <beep/ctype.h>
+#include <beep/fs.h>
 #include <asm/div64.h>
 #include <asm/byteorder.h>
-#include <linux/inet.h>
+#include <beep/inet.h>
 #include "cifsfs.h"
 #include "cifspdu.h"
 #include "cifsglob.h"
@@ -823,7 +823,7 @@ ntstatus_to_dos(__u32 ntstatus, __u8 *eclass, __u16 *ecode)
 }
 
 int
-map_smb_to_linux_error(char *buf, bool logErr)
+map_smb_to_beep_error(char *buf, bool logErr)
 {
 	struct smb_hdr *smb = (struct smb_hdr *)buf;
 	unsigned int i;

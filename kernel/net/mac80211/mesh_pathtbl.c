@@ -7,12 +7,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/list.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
+#include <beep/etherdevice.h>
+#include <beep/list.h>
+#include <beep/random.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
 #include <net/mac80211.h>
 #include "wme.h"
 #include "ieee80211_i.h"

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/mux.c
+ * beep/arch/arm/mach-omap2/mux.c
  *
  * OMAP2, OMAP3 and OMAP4 pin multiplexing configurations
  *
@@ -23,17 +23,17 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  *
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/ctype.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/uaccess.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
 
 
 #include "omap_hwmod.h"

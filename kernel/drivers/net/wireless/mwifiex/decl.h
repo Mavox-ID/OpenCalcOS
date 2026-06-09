@@ -23,9 +23,9 @@
 #undef pr_fmt
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/wait.h>
-#include <linux/timer.h>
-#include <linux/ieee80211.h>
+#include <beep/wait.h>
+#include <beep/timer.h>
+#include <beep/ieee80211.h>
 
 
 #define MWIFIEX_MAX_BSS_NUM         (3)

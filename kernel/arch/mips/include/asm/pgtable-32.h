@@ -12,7 +12,7 @@
 #include <asm/addrspace.h>
 #include <asm/page.h>
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/cachectl.h>
 #include <asm/fixmap.h>
 
@@ -20,7 +20,7 @@
 
 /*
  * Basically we have the same two-level (which is the logical three level
- * Linux page table layout folded) page tables as the i386.  Some day
+ * Beep page table layout folded) page tables as the i386.  Some day
  * when we have proper page coloring support we can have a 1% quicker
  * tlb refill handling mechanism, but for now it is a bit slower but
  * works even with the cache aliasing problem the R4k and above have.

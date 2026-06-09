@@ -19,8 +19,8 @@
 #include <asm/assembly.h>
 #include <asm/pgtable.h>
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 
 	.level	LEVEL
 

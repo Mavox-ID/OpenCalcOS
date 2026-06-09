@@ -12,11 +12,11 @@
  * for more details.
  *
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kdev_t.h>
-#include <linux/cdev.h>
-#include <linux/fs.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kdev_t.h>
+#include <beep/cdev.h>
+#include <beep/fs.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
 #include <mach-landisk/mach/gio.h>

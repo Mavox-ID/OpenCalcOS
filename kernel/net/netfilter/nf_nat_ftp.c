@@ -8,16 +8,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/inet.h>
-#include <linux/tcp.h>
-#include <linux/netfilter_ipv4.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/inet.h>
+#include <beep/tcp.h>
+#include <beep/netfilter_ipv4.h>
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_helper.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_expect.h>
-#include <linux/netfilter/nf_conntrack_ftp.h>
+#include <beep/netfilter/nf_conntrack_ftp.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Rusty Russell <rusty@rustcorp.com.au>");

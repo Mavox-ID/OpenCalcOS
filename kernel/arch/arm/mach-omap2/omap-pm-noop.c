@@ -17,10 +17,10 @@
 
 #undef DEBUG
 
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
 
 #include "omap_device.h"
 #include "omap-pm.h"
@@ -47,7 +47,7 @@ int omap_pm_set_max_mpu_wakeup_lat(struct device *dev, long t)
 			 dev_name(dev), t);
 
 	/*
-	 * For current Linux, this needs to map the MPU to a
+	 * For current Beep, this needs to map the MPU to a
 	 * powerdomain, then go through the list of current max lat
 	 * constraints on the MPU and find the smallest.  If
 	 * the latency constraint has changed, the code should
@@ -102,7 +102,7 @@ int omap_pm_set_max_dev_wakeup_lat(struct device *req_dev, struct device *dev,
 			 dev_name(dev), t);
 
 	/*
-	 * For current Linux, this needs to map the device to a
+	 * For current Beep, this needs to map the device to a
 	 * powerdomain, then go through the list of current max lat
 	 * constraints on that powerdomain and find the smallest.  If
 	 * the latency constraint has changed, the code should
@@ -132,12 +132,12 @@ int omap_pm_set_max_sdma_lat(struct device *dev, long t)
 			 dev_name(dev), t);
 
 	/*
-	 * For current Linux PM QOS params, this code should scan the
+	 * For current Beep PM QOS params, this code should scan the
 	 * list of maximum CPU and DMA latencies and select the
 	 * smallest, then set cpu_dma_latency pm_qos_param
 	 * accordingly.
 	 *
-	 * For future Linux PM QOS params, with separate CPU and DMA
+	 * For future Beep PM QOS params, with separate CPU and DMA
 	 * latency params, this code should just set the dma_latency param.
 	 *
 	 * TI CDP code can call constraint_set here.

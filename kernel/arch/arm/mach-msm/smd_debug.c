@@ -14,8 +14,8 @@
  *
  */
 
-#include <linux/debugfs.h>
-#include <linux/list.h>
+#include <beep/debugfs.h>
+#include <beep/list.h>
 
 #include <mach/msm_iomap.h>
 

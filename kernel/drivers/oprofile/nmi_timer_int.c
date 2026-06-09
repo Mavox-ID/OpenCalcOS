@@ -6,11 +6,11 @@
  * @author Robert Richter <robert.richter@amd.com>
  */
 
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/oprofile.h>
-#include <linux/perf_event.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/errno.h>
+#include <beep/oprofile.h>
+#include <beep/perf_event.h>
 
 #ifdef CONFIG_OPROFILE_NMI_TIMER
 

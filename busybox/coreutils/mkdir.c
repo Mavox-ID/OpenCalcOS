@@ -11,7 +11,7 @@
  * Fixed broken permission setting when -p was used; especially in
  * conjunction with -m.
  */
-/* Nov 28, 2006      Yoshinori Sato <ysato@users.sourceforge.jp>: Add SELinux Support.
+/* Nov 28, 2006      Yoshinori Sato <ysato@users.sourceforge.jp>: Add SEBeep Support.
  */
 //config:config MKDIR
 //config:	bool "mkdir (4.5 kb)"
@@ -32,7 +32,7 @@
 //usage:       "Create DIRECTORY\n"
 //usage:     "\n	-m MODE	Mode"
 //usage:     "\n	-p	No error if exists; make parent directories as needed"
-//usage:	IF_SELINUX(
+//usage:	IF_SEBEEP(
 //usage:     "\n	-Z	Set security context"
 //usage:	)
 //usage:
@@ -56,20 +56,20 @@ int mkdir_main(int argc UNUSED_PARAM, char **argv)
 	int flags = 0;
 	unsigned opt;
 	char *smode;
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 	security_context_t scontext;
 #endif
 
-	opt = getopt32long(argv, "m:pv" IF_SELINUX("Z:"),
+	opt = getopt32long(argv, "m:pv" IF_SEBEEP("Z:"),
 			"mode\0"    Required_argument "m"
 			"parents\0" No_argument       "p"
-# if ENABLE_SELINUX
+# if ENABLE_SEBEEP
 			"context\0" Required_argument "Z"
 # endif
 # if ENABLE_FEATURE_VERBOSE
 			"verbose\0" No_argument       "v"
 # endif
-			, &smode IF_SELINUX(,&scontext)
+			, &smode IF_SEBEEP(,&scontext)
 	);
 	if (opt & 1) {
 		mode_t mmode = bb_parse_mode(smode, 0777);
@@ -82,9 +82,9 @@ int mkdir_main(int argc UNUSED_PARAM, char **argv)
 		flags |= FILEUTILS_RECUR;
 	if ((opt & 4) && FILEUTILS_VERBOSE)
 		flags |= FILEUTILS_VERBOSE;
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 	if (opt & 8) {
-		selinux_or_die();
+		sebeep_or_die();
 		setfscreatecon_or_die(scontext);
 	}
 #endif

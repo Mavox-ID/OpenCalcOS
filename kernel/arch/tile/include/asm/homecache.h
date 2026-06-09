@@ -18,7 +18,7 @@
 #define _ASM_TILE_HOMECACHE_H
 
 #include <asm/page.h>
-#include <linux/cpumask.h>
+#include <beep/cpumask.h>
 
 struct page;
 struct task_struct;

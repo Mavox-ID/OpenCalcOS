@@ -1,7 +1,7 @@
 #ifndef __ASM_MACH_IRQS_H
 #define __ASM_MACH_IRQS_H
 
-#include <linux/sh_intc.h>
+#include <beep/sh_intc.h>
 
 /* GIC */
 #define gic_spi(nr)		((nr) + 32)

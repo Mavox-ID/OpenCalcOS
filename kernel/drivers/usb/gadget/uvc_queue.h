@@ -3,9 +3,9 @@
 
 #ifdef __KERNEL__
 
-#include <linux/kernel.h>
-#include <linux/poll.h>
-#include <linux/videodev2.h>
+#include <beep/kernel.h>
+#include <beep/poll.h>
+#include <beep/videodev2.h>
 
 /* Maximum frame size in bytes, for sanity checking. */
 #define UVC_MAX_FRAME_SIZE	(16*1024*1024)

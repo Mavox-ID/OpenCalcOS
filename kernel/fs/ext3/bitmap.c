@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext3/bitmap.c
+ *  beep/fs/ext3/bitmap.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)

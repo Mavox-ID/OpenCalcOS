@@ -3,7 +3,7 @@
  *
  * Copyright 2006 Wolfson Microelectronics
  *
- * Author: Mike Arthur <linux@wolfsonmicro.com>
+ * Author: Mike Arthur <beep@wolfsonmicro.com>
  *
  * Based on wm8731.h
  *

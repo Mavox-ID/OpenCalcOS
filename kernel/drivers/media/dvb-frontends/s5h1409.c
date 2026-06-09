@@ -1,7 +1,7 @@
 /*
     Samsung S5H1409 VSB/QAM demodulator driver
 
-    Copyright (C) 2006 Steven Toth <stoth@linuxtv.org>
+    Copyright (C) 2006 Steven Toth <stoth@beeptv.org>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -19,12 +19,12 @@
 
 */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
 #include "dvb_frontend.h"
 #include "s5h1409.h"
 

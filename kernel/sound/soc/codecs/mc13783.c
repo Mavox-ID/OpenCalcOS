@@ -20,10 +20,10 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
  * MA  02110-1301, USA.
  */
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/mfd/mc13xxx.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/mfd/mc13xxx.h>
+#include <beep/slab.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

@@ -12,9 +12,9 @@
  * Chris Zankel <chris@zankel.net>
  */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/time.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/time.h>
 #include <asm/platform.h>
 #include <asm/timex.h>
 #include <asm/param.h>		/* HZ */

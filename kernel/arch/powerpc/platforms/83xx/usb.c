@@ -11,10 +11,10 @@
  */
 
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/of.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/of.h>
 
 #include <asm/io.h>
 #include <asm/prom.h>

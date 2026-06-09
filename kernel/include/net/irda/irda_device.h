@@ -39,12 +39,12 @@
 #ifndef IRDA_DEVICE_H
 #define IRDA_DEVICE_H
 
-#include <linux/tty.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>		/* struct sk_buff */
-#include <linux/irda.h>
-#include <linux/types.h>
+#include <beep/tty.h>
+#include <beep/netdevice.h>
+#include <beep/spinlock.h>
+#include <beep/skbuff.h>		/* struct sk_buff */
+#include <beep/irda.h>
+#include <beep/types.h>
 
 #include <net/pkt_sched.h>
 #include <net/irda/irda.h>

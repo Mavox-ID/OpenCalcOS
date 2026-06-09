@@ -22,30 +22,30 @@
  *
  * See also:  Documentation/RCU/torture.txt
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/rcupdate.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/moduleparam.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/freezer.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/stat.h>
-#include <linux/srcu.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kthread.h>
+#include <beep/err.h>
+#include <beep/spinlock.h>
+#include <beep/smp.h>
+#include <beep/rcupdate.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/atomic.h>
+#include <beep/bitops.h>
+#include <beep/completion.h>
+#include <beep/moduleparam.h>
+#include <beep/percpu.h>
+#include <beep/notifier.h>
+#include <beep/reboot.h>
+#include <beep/freezer.h>
+#include <beep/cpu.h>
+#include <beep/delay.h>
+#include <beep/stat.h>
+#include <beep/srcu.h>
+#include <beep/slab.h>
 #include <asm/byteorder.h>
 
 MODULE_LICENSE("GPL");

@@ -197,10 +197,10 @@
  *		from memory.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kprobes.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/kprobes.h>
 
 #include <asm/opcodes.h>
 
@@ -1656,7 +1656,7 @@ static int __init run_all_tests(void)
 		goto out;
 #endif
 
-#if __LINUX_ARM_ARCH__ >= 7
+#if __BEEP_ARM_ARCH__ >= 7
 	/* We are able to run all test cases so coverage should be complete */
 	if (coverage_fail) {
 		pr_err("FAIL: Test coverage checks failed\n");

@@ -23,8 +23,8 @@
  *
  ******************************************************************************/
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 

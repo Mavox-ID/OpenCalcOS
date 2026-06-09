@@ -1,6 +1,6 @@
 /*
- * linux/drivers/firmware/memmap.c
- *  Copyright (C) 2008 SUSE LINUX Products GmbH
+ * beep/drivers/firmware/memmap.c
+ *  Copyright (C) 2008 SUSE BEEP Products GmbH
  *  by Bernhard Walle <bernhard.walle@gmx.de>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -14,13 +14,13 @@
  *
  */
 
-#include <linux/string.h>
-#include <linux/firmware-map.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/bootmem.h>
-#include <linux/slab.h>
+#include <beep/string.h>
+#include <beep/firmware-map.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/bootmem.h>
+#include <beep/slab.h>
 
 /*
  * Data types ------------------------------------------------------------------

@@ -9,16 +9,16 @@
  *
  */
 
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/crypto.h>
-#include <linux/kernel.h>
-#include <linux/rtnetlink.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/gfp.h>
-#include <linux/module.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmapool.h>
+#include <beep/crypto.h>
+#include <beep/kernel.h>
+#include <beep/rtnetlink.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/gfp.h>
+#include <beep/module.h>
 
 #include <crypto/ctr.h>
 #include <crypto/des.h>

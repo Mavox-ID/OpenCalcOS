@@ -25,14 +25,14 @@
  * PCI ID), thus this IOC4 master module.
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/ioc4.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/time.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/ioc4.h>
+#include <beep/ktime.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/time.h>
 #include <asm/io.h>
 
 /***************

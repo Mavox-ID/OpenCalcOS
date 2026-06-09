@@ -5,8 +5,8 @@
  *    Author(s): Gerald Schaefer <gerald.schaefer@de.ibm.com>
  */
 
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
+#include <beep/mm.h>
+#include <beep/hugetlb.h>
 
 
 void set_huge_pte_at(struct mm_struct *mm, unsigned long addr,

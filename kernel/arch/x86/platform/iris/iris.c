@@ -21,14 +21,14 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/moduleparam.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/pm.h>
+#include <beep/moduleparam.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/pm.h>
 #include <asm/io.h>
 
 #define IRIS_GIO_BASE		0x340

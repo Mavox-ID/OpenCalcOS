@@ -1,6 +1,6 @@
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
 #include <asm/ip32/ip32_ints.h>
 /*
  * O2 has up to 5 PCI devices connected into the MACE bridge.  The device

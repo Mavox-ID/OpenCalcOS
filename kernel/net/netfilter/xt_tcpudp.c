@@ -1,15 +1,15 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/types.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/module.h>
 #include <net/ip.h>
-#include <linux/ipv6.h>
+#include <beep/ipv6.h>
 #include <net/ipv6.h>
 #include <net/tcp.h>
 #include <net/udp.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_tcpudp.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_tcpudp.h>
+#include <beep/netfilter_ipv4/ip_tables.h>
+#include <beep/netfilter_ipv6/ip6_tables.h>
 
 MODULE_DESCRIPTION("Xtables: TCP, UDP and UDP-Lite match");
 MODULE_LICENSE("GPL");

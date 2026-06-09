@@ -11,7 +11,7 @@
 #ifndef _ASM_C6X_CACHE_H
 #define _ASM_C6X_CACHE_H
 
-#include <linux/irqflags.h>
+#include <beep/irqflags.h>
 
 /*
  * Cache line size

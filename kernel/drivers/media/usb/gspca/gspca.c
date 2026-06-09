@@ -25,18 +25,18 @@
 
 #define GSPCA_VERSION	"2.14.0"
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/pagemap.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/vmalloc.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/pagemap.h>
+#include <beep/io.h>
 #include <asm/page.h>
-#include <linux/uaccess.h>
-#include <linux/ktime.h>
+#include <beep/uaccess.h>
+#include <beep/ktime.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-fh.h>
@@ -45,8 +45,8 @@
 #include "gspca.h"
 
 #if defined(CONFIG_INPUT) || defined(CONFIG_INPUT_MODULE)
-#include <linux/input.h>
-#include <linux/usb/input.h>
+#include <beep/input.h>
+#include <beep/usb/input.h>
 #endif
 
 /* global values */

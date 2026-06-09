@@ -19,21 +19,21 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/string.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/mutex.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/string.h>
 #include <sound/core.h>
 #include <sound/timer.h>
 #include <sound/control.h>
 #include <sound/info.h>
 #include <sound/minors.h>
 #include <sound/initval.h>
-#include <linux/kmod.h>
+#include <beep/kmod.h>
 
 #if defined(CONFIG_SND_HRTIMER) || defined(CONFIG_SND_HRTIMER_MODULE)
 #define DEFAULT_TIMER_LIMIT 4

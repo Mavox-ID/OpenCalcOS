@@ -56,7 +56,7 @@
 /*
  * Data preload for architectures that support it
  */
-#if __LINUX_ARM_ARCH__ >= 5
+#if __BEEP_ARM_ARCH__ >= 5
 #define PLD(code...)	code
 #else
 #define PLD(code...)
@@ -80,7 +80,7 @@
 /*
  * Enable and disable interrupts
  */
-#if __LINUX_ARM_ARCH__ >= 6
+#if __BEEP_ARM_ARCH__ >= 6
 	.macro	disable_irq_notrace
 	cpsid	i
 	.endm
@@ -198,9 +198,9 @@
  * Instruction barrier
  */
 	.macro	instr_sync
-#if __LINUX_ARM_ARCH__ >= 7
+#if __BEEP_ARM_ARCH__ >= 7
 	isb
-#elif __LINUX_ARM_ARCH__ == 6
+#elif __BEEP_ARM_ARCH__ == 6
 	mcr	p15, 0, r0, c7, c5, 4
 #endif
 	.endm
@@ -210,13 +210,13 @@
  */
 	.macro	smp_dmb mode
 #ifdef CONFIG_SMP
-#if __LINUX_ARM_ARCH__ >= 7
+#if __BEEP_ARM_ARCH__ >= 7
 	.ifeqs "\mode","arm"
 	ALT_SMP(dmb)
 	.else
 	ALT_SMP(W(dmb))
 	.endif
-#elif __LINUX_ARM_ARCH__ == 6
+#elif __BEEP_ARM_ARCH__ == 6
 	ALT_SMP(mcr	p15, 0, r0, c7, c10, 5)	@ dmb
 #else
 #error Incompatible SMP platform
@@ -250,7 +250,7 @@
  * Beware, it also clobers LR.
  */
 .macro safe_svcmode_maskall reg:req
-#if __LINUX_ARM_ARCH__ >= 6
+#if __BEEP_ARM_ARCH__ >= 6
 	mrs	\reg , cpsr
 	mov	lr , \reg
 	and	lr , lr , #MODE_MASK

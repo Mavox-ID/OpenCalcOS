@@ -12,7 +12,7 @@
  *  option) any later version.
  */
 
-#include <linux/mfd/wm8350/core.h>
+#include <beep/mfd/wm8350/core.h>
 
 /*
  * Access masks.

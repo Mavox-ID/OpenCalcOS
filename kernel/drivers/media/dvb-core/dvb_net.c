@@ -54,16 +54,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/dvb/net.h>
-#include <linux/uio.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/dvb/net.h>
+#include <beep/uio.h>
 #include <asm/uaccess.h>
-#include <linux/crc32.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
+#include <beep/crc32.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
 
 #include "dvb_demux.h"
 #include "dvb_net.h"
@@ -165,7 +165,7 @@ struct dvb_net_priv {
  *	assume 802.3 if the type field is short enough to be a length.
  *	This is normal practice and works for any 'now in use' protocol.
  *
- *  stolen from eth.c out of the linux kernel, hacked for dvb-device
+ *  stolen from eth.c out of the beep kernel, hacked for dvb-device
  *  by Michael Holzt <kju@debian.org>
  */
 static __be16 dvb_net_eth_type_trans(struct sk_buff *skb,

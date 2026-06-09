@@ -10,12 +10,12 @@
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/serial_8250.h>
-#include <linux/ahci_platform.h>
-#include <linux/clk.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/serial_8250.h>
+#include <beep/ahci_platform.h>
+#include <beep/clk.h>
 
 #include <mach/cputype.h>
 #include <mach/common.h>

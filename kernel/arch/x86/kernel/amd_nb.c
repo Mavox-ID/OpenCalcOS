@@ -5,12 +5,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
 #include <asm/amd_nb.h>
 
 static u32 *flush_words;

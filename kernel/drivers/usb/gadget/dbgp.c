@@ -7,11 +7,11 @@
  */
 
 /* verbose messages */
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
 
 #ifdef CONFIG_USB_G_DBGP_SERIAL
 #include "u_serial.c"

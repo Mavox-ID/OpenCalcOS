@@ -1,5 +1,5 @@
 /*
- *	Linux NET3: IP/IP protocol decoder modified to support
+ *	Beep NET3: IP/IP protocol decoder modified to support
  *		    virtual tunnel interface
  *
  *	Authors:
@@ -19,21 +19,21 @@
  */
 
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/uaccess.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/in.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/if_arp.h>
-#include <linux/mroute.h>
-#include <linux/init.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/if_ether.h>
+#include <beep/capability.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/uaccess.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/in.h>
+#include <beep/tcp.h>
+#include <beep/udp.h>
+#include <beep/if_arp.h>
+#include <beep/mroute.h>
+#include <beep/init.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/if_ether.h>
 
 #include <net/sock.h>
 #include <net/ip.h>
@@ -256,7 +256,7 @@ static void vti_tunnel_uninit(struct net_device *dev)
 static int vti_err(struct sk_buff *skb, u32 info)
 {
 
-	/* All the routers (except for Linux) return only
+	/* All the routers (except for Beep) return only
 	 * 8 bytes of packet payload. It means, that precise relaying of
 	 * ICMP in the real Internet is absolutely infeasible.
 	 */

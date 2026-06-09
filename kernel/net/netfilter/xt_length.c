@@ -6,13 +6,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ipv6.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/ipv6.h>
 #include <net/ip.h>
 
-#include <linux/netfilter/xt_length.h>
-#include <linux/netfilter/x_tables.h>
+#include <beep/netfilter/xt_length.h>
+#include <beep/netfilter/x_tables.h>
 
 MODULE_AUTHOR("James Morris <jmorris@intercode.com.au>");
 MODULE_DESCRIPTION("Xtables: Packet length (Layer3,4,5) match");

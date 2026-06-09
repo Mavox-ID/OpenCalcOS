@@ -12,8 +12,8 @@
  * power domain.  We use the Timer 4 for our always-on clock
  * source on DB8500 and Timer 3 on DB5500.
  */
-#include <linux/clockchips.h>
-#include <linux/clksrc-dbx500-prcmu.h>
+#include <beep/clockchips.h>
+#include <beep/clksrc-dbx500-prcmu.h>
 
 #include <asm/sched_clock.h>
 

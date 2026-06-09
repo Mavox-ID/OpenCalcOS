@@ -25,15 +25,15 @@
  * 		or a LUN is seen that cannot have a device attached to it.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/spinlock.h>
-#include <linux/async.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/kthread.h>
+#include <beep/spinlock.h>
+#include <beep/async.h>
+#include <beep/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -1460,7 +1460,7 @@ static int scsi_report_lun_scan(struct scsi_target *starget, int bflags,
 
 			/*
 			 * Output an error displaying the LUN in byte order,
-			 * this differs from what linux would print for the
+			 * this differs from what beep would print for the
 			 * integer LUN value.
 			 */
 			printk(KERN_WARNING "scsi: %s lun 0x", devname);

@@ -36,7 +36,7 @@ static const mode_t mode_flags[] ALIGN4 = {
 };
 
 /* The previous version used "0pcCd?bB-?l?s???".  However, the '0', 'C',
- * and 'B' types don't appear to be available on linux.  So I removed them. */
+ * and 'B' types don't appear to be available on beep.  So I removed them. */
 static const char type_chars[16] ALIGN1 = "?pc?d?b?-?l?s???";
 /***************************************** 0123456789abcdef */
 static const char mode_chars[7] ALIGN1 = "rwxSTst";
@@ -72,7 +72,7 @@ char* FAST_FUNC bb_mode_string(char buf[11], mode_t mode)
 #else
 
 /* The previous version used "0pcCd?bB-?l?s???".  However, the '0', 'C',
- * and 'B' types don't appear to be available on linux.  So I removed them. */
+ * and 'B' types don't appear to be available on beep.  So I removed them. */
 static const char type_chars[16] ALIGN1 = "?pc?d?b?-?l?s???";
 /***************************************** 0123456789abcdef */
 static const char mode_chars[7] ALIGN1 = "rwxSTst";

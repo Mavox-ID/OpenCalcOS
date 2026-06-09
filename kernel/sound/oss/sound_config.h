@@ -5,7 +5,7 @@
 /*
  * Copyright (C) by Hannu Savolainen 1993-1997
  *
- * OSS/Free for Linux is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
+ * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
  * Version 2 (June 1991). See the "COPYING" file distributed with this software
  * for more info.
  */
@@ -14,8 +14,8 @@
 #ifndef  _SOUND_CONFIG_H_
 #define  _SOUND_CONFIG_H_
 
-#include <linux/fs.h>
-#include <linux/sound.h>
+#include <beep/fs.h>
+#include <beep/sound.h>
 
 #include "os.h"
 #include "soundvers.h"

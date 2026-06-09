@@ -22,7 +22,7 @@
  * Authors: Dave Airlie
  */
 
-#include <linux/dma-buf.h>
+#include <beep/dma-buf.h>
 
 #include <drm/drmP.h>
 

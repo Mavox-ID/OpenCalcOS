@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-s3c24xx/setup-i2c.c
+/* beep/arch/arm/plat-s3c24xx/setup-i2c.c
  *
  * Copyright 2008 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
@@ -10,13 +10,13 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/gpio.h>
 
 struct platform_device;
 
 #include <plat/gpio-cfg.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 #include <mach/hardware.h>
 #include <mach/regs-gpio.h>
 

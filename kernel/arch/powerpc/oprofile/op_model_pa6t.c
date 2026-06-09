@@ -21,10 +21,10 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/oprofile.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/percpu.h>
+#include <beep/oprofile.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/percpu.h>
 #include <asm/processor.h>
 #include <asm/cputable.h>
 #include <asm/oprofile_impl.h>

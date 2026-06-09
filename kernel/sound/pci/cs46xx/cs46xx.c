@@ -25,10 +25,10 @@
     reloading the module may solve this.
 */
 
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <beep/pci.h>
+#include <beep/time.h>
+#include <beep/init.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include "cs46xx.h"
 #include <sound/initval.h>

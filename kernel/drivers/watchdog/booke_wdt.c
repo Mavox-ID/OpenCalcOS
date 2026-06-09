@@ -14,13 +14,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/miscdevice.h>
-#include <linux/notifier.h>
-#include <linux/watchdog.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/smp.h>
+#include <beep/miscdevice.h>
+#include <beep/notifier.h>
+#include <beep/watchdog.h>
+#include <beep/uaccess.h>
 
 #include <asm/reg_booke.h>
 #include <asm/time.h>

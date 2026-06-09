@@ -1,5 +1,5 @@
 #
-# Makefile for the linux tile-specific parts of the memory manager.
+# Makefile for the beep tile-specific parts of the memory manager.
 #
 
 obj-y	:= init.o pgtable.o fault.o extable.o elf.o \

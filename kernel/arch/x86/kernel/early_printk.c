@@ -1,12 +1,12 @@
-#include <linux/console.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/screen_info.h>
-#include <linux/usb/ch9.h>
-#include <linux/pci_regs.h>
-#include <linux/pci_ids.h>
-#include <linux/errno.h>
+#include <beep/console.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/screen_info.h>
+#include <beep/usb/ch9.h>
+#include <beep/pci_regs.h>
+#include <beep/pci_ids.h>
+#include <beep/errno.h>
 #include <asm/io.h>
 #include <asm/processor.h>
 #include <asm/fcntl.h>
@@ -16,7 +16,7 @@
 #include <asm/fixmap.h>
 #include <asm/mrst.h>
 #include <asm/pgtable.h>
-#include <linux/usb/ehci_def.h>
+#include <beep/usb/ehci_def.h>
 
 /* Simple VGA output */
 #define VGABASE		(__ISA_IO_base + 0xb8000)

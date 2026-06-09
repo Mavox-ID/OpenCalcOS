@@ -1,7 +1,7 @@
 /*
  * sata_inic162x.c - Driver for Initio 162x SATA controllers
  *
- * Copyright 2006  SUSE Linux Products GmbH
+ * Copyright 2006  SUSE Beep Products GmbH
  * Copyright 2006  Tejun Heo <teheo@novell.com>
  *
  * This file is released under GPL v2.
@@ -39,13 +39,13 @@
  * happy to assist.
  */
 
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <beep/gfp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
-#include <linux/blkdev.h>
+#include <beep/libata.h>
+#include <beep/blkdev.h>
 #include <scsi/scsi_device.h>
 
 #define DRV_NAME	"sata_inic162x"

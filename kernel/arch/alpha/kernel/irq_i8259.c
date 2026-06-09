@@ -1,17 +1,17 @@
 /*
- *      linux/arch/alpha/kernel/irq_i8259.c
+ *      beep/arch/alpha/kernel/irq_i8259.c
  *
  * This is the 'legacy' 8259A Programmable Interrupt Controller,
  * present in the majority of PC/AT boxes.
  *
- * Started hacking from linux-2.3.30pre6/arch/i386/kernel/i8259.c.
+ * Started hacking from beep-2.3.30pre6/arch/i386/kernel/i8259.c.
  */
 
-#include <linux/init.h>
-#include <linux/cache.h>
-#include <linux/sched.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <beep/init.h>
+#include <beep/cache.h>
+#include <beep/sched.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
 
 #include <asm/io.h>
 

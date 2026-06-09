@@ -11,11 +11,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/leds.h>
+#include <beep/platform_device.h>
 #include "nvec.h"
 
 #define to_nvec_led(led_cdev) \

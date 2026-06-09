@@ -16,14 +16,14 @@
 
   ======================================================================*/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/ioport.h>
 #include <asm/io.h>
 
 #include <pcmcia/cistpl.h>
@@ -31,7 +31,7 @@
 #include <pcmcia/ds.h>
 #include "hisax_cfg.h"
 
-MODULE_DESCRIPTION("ISDN4Linux: PCMCIA client driver for Teles PCMCIA cards");
+MODULE_DESCRIPTION("ISDN4Beep: PCMCIA client driver for Teles PCMCIA cards");
 MODULE_AUTHOR("Christof Petig, christof.petig@wtal.de, Karsten Keil, kkeil@suse.de");
 MODULE_LICENSE("GPL");
 

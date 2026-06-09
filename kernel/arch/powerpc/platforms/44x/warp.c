@@ -9,16 +9,16 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/init.h>
-#include <linux/of_platform.h>
-#include <linux/kthread.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/of_gpio.h>
-#include <linux/of_i2c.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/init.h>
+#include <beep/of_platform.h>
+#include <beep/kthread.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/of_gpio.h>
+#include <beep/of_i2c.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #include <asm/machdep.h>
 #include <asm/prom.h>

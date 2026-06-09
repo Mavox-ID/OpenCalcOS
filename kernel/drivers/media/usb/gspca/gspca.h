@@ -1,14 +1,14 @@
 #ifndef GSPCAV2_H
 #define GSPCAV2_H
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/usb.h>
-#include <linux/videodev2.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/usb.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 
 /* compilation option */
 /*#define GSPCA_DEBUG 1*/

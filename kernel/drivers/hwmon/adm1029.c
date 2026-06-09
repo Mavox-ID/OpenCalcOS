@@ -1,9 +1,9 @@
 /*
- * adm1029.c - Part of lm_sensors, Linux kernel modules for hardware monitoring
+ * adm1029.c - Part of lm_sensors, Beep kernel modules for hardware monitoring
  *
  * Copyright (C) 2006 Corentin LABBE <corentin.labbe@geomatys.fr>
  *
- * Based on LM83 Driver by Jean Delvare <khali@linux-fr.org>
+ * Based on LM83 Driver by Jean Delvare <khali@beep-fr.org>
  *
  * Give only processor, motherboard temperatures and fan tachs
  * Very rare chip please let me know if you use it
@@ -25,15 +25,15 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/jiffies.h>
+#include <beep/i2c.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/hwmon.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
 
 /*
  * Addresses to scan

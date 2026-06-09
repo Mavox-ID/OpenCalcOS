@@ -22,17 +22,17 @@
  *		 2001-2004 Juergen Stuber <starblue@users.sourceforge.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
 
 #include <asm/uaccess.h>
-#include <linux/input.h>
-#include <linux/usb.h>
-#include <linux/poll.h>
+#include <beep/input.h>
+#include <beep/usb.h>
+#include <beep/poll.h>
 
 /* Define these values to match your devices */
 #define USB_VENDOR_ID_LD		0x0f11	/* USB Vendor ID of LD Didactic GmbH */

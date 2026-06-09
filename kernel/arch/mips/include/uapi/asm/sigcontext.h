@@ -9,7 +9,7 @@
 #ifndef _UAPI_ASM_SIGCONTEXT_H
 #define _UAPI_ASM_SIGCONTEXT_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/sgidefs.h>
 
 #if _MIPS_SIM == _MIPS_SIM_ABI32
@@ -43,7 +43,7 @@ struct sigcontext {
 
 #if _MIPS_SIM == _MIPS_SIM_ABI64 || _MIPS_SIM == _MIPS_SIM_NABI32
 
-#include <linux/posix_types.h>
+#include <beep/posix_types.h>
 /*
  * Keep this struct definition in sync with the sigcontext fragment
  * in arch/mips/tools/offset.c

@@ -9,7 +9,7 @@
 #ifndef _ASM_SN_TYPES_H
 #define _ASM_SN_TYPES_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 typedef unsigned long 	cpuid_t;
 typedef unsigned long	cnodemask_t;

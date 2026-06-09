@@ -1,12 +1,12 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
 #include <asm/string.h>
-#include <linux/kmod.h>
-#include <linux/sysctl.h>
+#include <beep/kmod.h>
+#include <beep/sysctl.h>
 
 #include <net/ip_vs.h>
 

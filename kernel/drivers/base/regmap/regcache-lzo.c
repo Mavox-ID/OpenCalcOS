@@ -10,9 +10,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/lzo.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/lzo.h>
 
 #include "internal.h"
 

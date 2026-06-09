@@ -41,8 +41,8 @@ See the source for configuration details.
 
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
-#include <linux/delay.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
 
 #include "8255.h"
 

@@ -9,11 +9,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/jffs2.h>
-#include <linux/xattr.h>
-#include <linux/mtd/mtd.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/jffs2.h>
+#include <beep/xattr.h>
+#include <beep/mtd/mtd.h>
 #include "nodelist.h"
 
 static int jffs2_trusted_getxattr(struct dentry *dentry, const char *name,

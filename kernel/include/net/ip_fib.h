@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET  is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -17,11 +17,11 @@
 #define _NET_IP_FIB_H
 
 #include <net/flow.h>
-#include <linux/seq_file.h>
-#include <linux/rcupdate.h>
+#include <beep/seq_file.h>
+#include <beep/rcupdate.h>
 #include <net/fib_rules.h>
 #include <net/inetpeer.h>
-#include <linux/percpu.h>
+#include <beep/percpu.h>
 
 struct fib_config {
 	u8			fc_dst_len;

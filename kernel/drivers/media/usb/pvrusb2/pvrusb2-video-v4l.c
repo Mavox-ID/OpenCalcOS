@@ -23,7 +23,7 @@
 
    This source file is specifically designed to interface with the
    saa711x support that is available in the v4l available starting
-   with linux 2.6.15.
+   with beep 2.6.15.
 
 */
 
@@ -33,10 +33,10 @@
 
 #include "pvrusb2-hdw-internal.h"
 #include "pvrusb2-debug.h"
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/saa7115.h>
-#include <linux/errno.h>
+#include <beep/errno.h>
 
 struct routing_scheme {
 	const int *def;

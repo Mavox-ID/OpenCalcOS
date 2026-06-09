@@ -15,7 +15,7 @@
  * the Free Software Foundation, version 2 of the License.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include "ecryptfs_format.h"
 
 u8 *ecryptfs_get_auth_tok_key(struct ecryptfs_auth_tok *auth_tok)

@@ -39,12 +39,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/if_arp.h>
-#include <linux/can/core.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/list.h>
+#include <beep/rcupdate.h>
+#include <beep/if_arp.h>
+#include <beep/can/core.h>
 
 #include "af_can.h"
 

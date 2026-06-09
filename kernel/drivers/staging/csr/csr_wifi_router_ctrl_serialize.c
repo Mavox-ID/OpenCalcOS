@@ -9,8 +9,8 @@
 *****************************************************************************/
 
 /* Note: this is an auto-generated file. */
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 #include "csr_msgconv.h"
 #include "csr_wifi_router_ctrl_prim.h"
 #include "csr_wifi_router_ctrl_serialize.h"

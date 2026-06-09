@@ -6,14 +6,14 @@
  *
  * This file is released under the GPLv2.
  */
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/stat.h>
-#include <linux/io.h>
-#include <linux/mm.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/stat.h>
+#include <beep/io.h>
+#include <beep/mm.h>
 
 #include <asm/setup.h>
 

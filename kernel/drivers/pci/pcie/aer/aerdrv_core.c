@@ -16,15 +16,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/kfifo.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/pm.h>
+#include <beep/suspend.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/kfifo.h>
 #include "aerdrv.h"
 
 static bool forceload;

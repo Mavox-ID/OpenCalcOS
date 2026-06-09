@@ -8,14 +8,14 @@
  * version 2 as published by the Free Software Foundation.
  */
 
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter/xt_set.h>
-#include <linux/ipv6.h>
+#include <beep/gfp.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/skbuff.h>
+#include <beep/netfilter/xt_set.h>
+#include <beep/ipv6.h>
 #include <net/ip.h>
 #include <net/pkt_cls.h>
 

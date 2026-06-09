@@ -12,8 +12,8 @@
  * ***************************************************************************
  */
 
-#include <linux/vmalloc.h>
-#include <linux/firmware.h>
+#include <beep/vmalloc.h>
+#include <beep/firmware.h>
 
 #include "unifi_priv.h"
 #include "csr_wifi_hip_chiphelper.h"

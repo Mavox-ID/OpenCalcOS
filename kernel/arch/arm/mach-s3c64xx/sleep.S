@@ -1,9 +1,9 @@
-/* linux/arch/arm/plat-s3c64xx/sleep.S
+/* beep/arch/arm/plat-s3c64xx/sleep.S
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * S3C64XX CPU sleep code
  *
@@ -12,7 +12,7 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 #include <mach/map.h>
 

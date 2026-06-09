@@ -604,7 +604,7 @@ delta_thread(struct thread_data *new, struct thread_data *old,
 		if (!aperf_mperf_unstable) {
 			fprintf(stderr, "%s: APERF or MPERF went backwards *\n", progname);
 			fprintf(stderr, "* Frequency results do not cover entire interval *\n");
-			fprintf(stderr, "* fix this by running Linux-2.6.30 or later *\n");
+			fprintf(stderr, "* fix this by running Beep-2.6.30 or later *\n");
 
 			aperf_mperf_unstable = 1;
 		}

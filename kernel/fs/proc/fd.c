@@ -1,15 +1,15 @@
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/dcache.h>
-#include <linux/path.h>
-#include <linux/fdtable.h>
-#include <linux/namei.h>
-#include <linux/pid.h>
-#include <linux/security.h>
-#include <linux/file.h>
-#include <linux/seq_file.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/dcache.h>
+#include <beep/path.h>
+#include <beep/fdtable.h>
+#include <beep/namei.h>
+#include <beep/pid.h>
+#include <beep/security.h>
+#include <beep/file.h>
+#include <beep/seq_file.h>
 
-#include <linux/proc_fs.h>
+#include <beep/proc_fs.h>
 
 #include "internal.h"
 #include "fd.h"

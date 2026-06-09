@@ -11,20 +11,20 @@
  *              - Ingress support
  */
 
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/init.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/bitops.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/rtnetlink.h>
+#include <beep/init.h>
+#include <beep/rcupdate.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 #include <net/pkt_sched.h>
 #include <net/dst.h>
 

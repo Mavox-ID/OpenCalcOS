@@ -9,14 +9,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/opp.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/cpu.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/opp.h>
+#include <beep/export.h>
+#include <beep/suspend.h>
+#include <beep/cpu.h>
 
 #include <asm/system_misc.h>
 

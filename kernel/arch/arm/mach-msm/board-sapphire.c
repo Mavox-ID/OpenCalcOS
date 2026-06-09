@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-msm/board-sapphire.c
+/* beep/arch/arm/mach-msm/board-sapphire.c
  * Copyright (C) 2007-2009 HTC Corporation.
  * Author: Thomas Tsai <thomas_tsai@htc.com>
  *
@@ -11,16 +11,16 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
 */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/device.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/device.h>
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>
@@ -34,8 +34,8 @@
 #include <asm/delay.h>
 #include <asm/setup.h>
 
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
 
 #include "gpio_chip.h"
 #include "board-sapphire.h"

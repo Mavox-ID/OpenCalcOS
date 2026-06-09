@@ -21,11 +21,11 @@
  *
  *
  */
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/wait.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/wait.h>
 #include "tpm.h"
 
 /* max. buffer size supported by our TPM */

@@ -17,14 +17,14 @@
 	Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 */
 
-#include <linux/kernel.h>
-#include <linux/bitops.h>
+#include <beep/kernel.h>
+#include <beep/bitops.h>
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/i2c.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/i2c.h>
 
 #include "dmxdev.h"
 #include "dvbdev.h"

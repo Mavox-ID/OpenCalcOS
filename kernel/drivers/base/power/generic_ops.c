@@ -6,9 +6,9 @@
  * This file is released under the GPLv2.
  */
 
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/export.h>
+#include <beep/pm.h>
+#include <beep/pm_runtime.h>
+#include <beep/export.h>
 
 #ifdef CONFIG_PM_RUNTIME
 /**

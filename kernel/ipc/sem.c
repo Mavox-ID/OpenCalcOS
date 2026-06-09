@@ -1,5 +1,5 @@
 /*
- * linux/ipc/sem.c
+ * beep/ipc/sem.c
  * Copyright (C) 1992 Krishna Balasubramanian
  * Copyright (C) 1995 Eric Schenk, Bruno Haible
  *
@@ -31,7 +31,7 @@
  *   one semop() are handled.
  * - sem_ctime (time of last semctl()) is updated in the IPC_SET, SETVAL and
  *   SETALL calls.
- * - two Linux specific semctl() commands: SEM_STAT, SEM_INFO.
+ * - two Beep specific semctl() commands: SEM_STAT, SEM_INFO.
  * - undo adjustments at process exit are limited to 0..SEMVMX.
  * - namespace are supported.
  * - SEMMSL, SEMMNS, SEMOPM and SEMMNI can be configured at runtine by writing
@@ -73,19 +73,19 @@
  *   The worst-case behavior is nevertheless O(N^2) for N wakeups.
  */
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/time.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/audit.h>
-#include <linux/capability.h>
-#include <linux/seq_file.h>
-#include <linux/rwsem.h>
-#include <linux/nsproxy.h>
-#include <linux/ipc_namespace.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/time.h>
+#include <beep/security.h>
+#include <beep/syscalls.h>
+#include <beep/audit.h>
+#include <beep/capability.h>
+#include <beep/seq_file.h>
+#include <beep/rwsem.h>
+#include <beep/nsproxy.h>
+#include <beep/ipc_namespace.h>
 
 #include <asm/uaccess.h>
 #include "util.h"
@@ -1653,7 +1653,7 @@ void exit_sem(struct task_struct *tsk)
 				 * - some cap the value (e.g. FreeBSD caps
 				 *   at 0, but doesn't enforce SEMVMX)
 				 *
-				 * Linux caps the semaphore value, both at 0
+				 * Beep caps the semaphore value, both at 0
 				 * and at SEMVMX.
 				 *
 				 * 	Manfred <manfred@colorfullife.com>

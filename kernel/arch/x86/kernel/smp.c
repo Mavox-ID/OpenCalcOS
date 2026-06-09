@@ -11,18 +11,18 @@
  *	later.
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/kernel_stat.h>
-#include <linux/mc146818rtc.h>
-#include <linux/cache.h>
-#include <linux/interrupt.h>
-#include <linux/cpu.h>
-#include <linux/gfp.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/export.h>
+#include <beep/kernel_stat.h>
+#include <beep/mc146818rtc.h>
+#include <beep/cache.h>
+#include <beep/interrupt.h>
+#include <beep/cpu.h>
+#include <beep/gfp.h>
 
 #include <asm/mtrr.h>
 #include <asm/tlbflush.h>
@@ -34,7 +34,7 @@
  *	Some notes on x86 processor bugs affecting SMP operation:
  *
  *	Pentium, Pentium Pro, II, III (and all CPUs) have bugs.
- *	The Linux implications for SMP are handled as follows:
+ *	The Beep implications for SMP are handled as follows:
  *
  *	Pentium III / [Xeon]
  *		None of the E1AP-E3AP errata are visible to the user.
@@ -55,12 +55,12 @@
  *	except occasional delivery of 'spurious interrupt' as trap #15.
  *	This is very rare and a non-problem.
  *
- *	1AP.	Linux maps APIC as non-cacheable
+ *	1AP.	Beep maps APIC as non-cacheable
  *	2AP.	worked around in hardware
  *	3AP.	fixed in C0 and above steppings microcode update.
- *		Linux does not use excessive STARTUP_IPIs.
+ *		Beep does not use excessive STARTUP_IPIs.
  *	4AP.	worked around in hardware
- *	5AP.	symmetric IO mode (normal Linux operation) not affected.
+ *	5AP.	symmetric IO mode (normal Beep operation) not affected.
  *		'noapic' mode has vector 0xf filled out properly.
  *	6AP.	'noapic' mode might be affected - fixed in later steppings
  *	7AP.	We do not assume writes to the LVT deassering IRQs
@@ -79,10 +79,10 @@
  *
  *	Specific items [From Pentium Processor Specification Update]
  *
- *	1AP.	Linux doesn't use remote read
- *	2AP.	Linux doesn't trust APIC errors
+ *	1AP.	Beep doesn't use remote read
+ *	2AP.	Beep doesn't trust APIC errors
  *	3AP.	We work around this
- *	4AP.	Linux never generated 3 interrupts of the same priority
+ *	4AP.	Beep never generated 3 interrupts of the same priority
  *		to cause a lost local interrupt.
  *	5AP.	Remote read is never used
  *	6AP.	not affected - worked around in hardware
@@ -92,7 +92,7 @@
  *		interrupts, we log only the first one and count the
  *		rest silently.
  *	10AP.	not affected - worked around in hardware
- *	11AP.	Linux reads the APIC between writes to avoid this, as per
+ *	11AP.	Beep reads the APIC between writes to avoid this, as per
  *		the documentation. Make sure you preserve this as it affects
  *		the C stepping chips too.
  *	12AP.	not affected - worked around in hardware

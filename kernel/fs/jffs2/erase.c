@@ -12,13 +12,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/compiler.h>
-#include <linux/crc32.h>
-#include <linux/sched.h>
-#include <linux/pagemap.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/mtd/mtd.h>
+#include <beep/compiler.h>
+#include <beep/crc32.h>
+#include <beep/sched.h>
+#include <beep/pagemap.h>
 #include "nodelist.h"
 
 struct erase_priv_struct {
@@ -45,7 +45,7 @@ static void jffs2_erase_block(struct jffs2_sb_info *c,
 	       return;
        }
        bad_offset = jeb->offset;
-#else /* Linux */
+#else /* Beep */
 	struct erase_info *instr;
 
 	jffs2_dbg(1, "%s(): erase block %#08x (range %#08x-%#08x)\n",

@@ -4,7 +4,7 @@
  * Small subset of simple string routines
  */
 
-#include <linux/string.h>
+#include <beep/string.h>
 
 void *memcpy(void *__dest, __const void *__src, size_t __n)
 {

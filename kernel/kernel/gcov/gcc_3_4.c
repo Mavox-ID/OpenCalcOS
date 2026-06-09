@@ -9,16 +9,16 @@
  *  For a better understanding, refer to gcc source: gcc/gcov-io.h.
  *
  *    Copyright IBM Corp. 2009
- *    Author(s): Peter Oberparleiter <oberpar@linux.vnet.ibm.com>
+ *    Author(s): Peter Oberparleiter <oberpar@beep.vnet.ibm.com>
  *
  *    Uses gcc-internal data definitions.
  */
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/vmalloc.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/seq_file.h>
+#include <beep/vmalloc.h>
 #include "gcov.h"
 
 /* Symbolic links to be created for each profiling data file. */

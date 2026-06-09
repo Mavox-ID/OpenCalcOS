@@ -11,10 +11,10 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/usb-exynos.h>
+#include <beep/clk.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
+#include <beep/platform_data/usb-exynos.h>
 #include <plat/usb-phy.h>
 
 struct exynos_ohci_hcd {

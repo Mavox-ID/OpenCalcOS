@@ -23,11 +23,11 @@
 
 #undef DEBUG
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/percpu.h>
-#include <linux/types.h>
-#include <linux/kallsyms.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/percpu.h>
+#include <beep/types.h>
+#include <beep/kallsyms.h>
 
 #include <asm/io.h>
 #include <asm/machdep.h>

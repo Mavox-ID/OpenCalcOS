@@ -1,5 +1,5 @@
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
 
 #include <asm/pgtable.h>
 

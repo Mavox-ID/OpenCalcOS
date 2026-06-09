@@ -25,7 +25,7 @@
 #define VMX_H
 
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <uapi/asm/vmx.h>
 
 /*

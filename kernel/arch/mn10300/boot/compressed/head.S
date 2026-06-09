@@ -12,7 +12,7 @@
 
 #define DEBUG
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/cpu-regs.h>
 #include <asm/cache.h>
 #ifdef CONFIG_SMP

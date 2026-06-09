@@ -16,29 +16,29 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/uaccess.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/pm_runtime.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/err.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/uaccess.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/pm_runtime.h>
 
-#include <linux/usb.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/ulpi.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/msm_hsusb.h>
-#include <linux/usb/msm_hsusb_hw.h>
-#include <linux/regulator/consumer.h>
+#include <beep/usb.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/ulpi.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb/hcd.h>
+#include <beep/usb/msm_hsusb.h>
+#include <beep/usb/msm_hsusb_hw.h>
+#include <beep/regulator/consumer.h>
 
 #include <mach/clk.h>
 

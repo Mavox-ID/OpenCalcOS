@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext4/file.c
+ *  beep/fs/ext4/file.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -8,7 +8,7 @@
  *
  *  from
  *
- *  linux/fs/minix/file.c
+ *  beep/fs/minix/file.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -18,13 +18,13 @@
  *	(jj@sunsite.ms.mff.cuni.cz)
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/jbd2.h>
-#include <linux/mount.h>
-#include <linux/path.h>
-#include <linux/quotaops.h>
-#include <linux/pagevec.h>
+#include <beep/time.h>
+#include <beep/fs.h>
+#include <beep/jbd2.h>
+#include <beep/mount.h>
+#include <beep/path.h>
+#include <beep/quotaops.h>
+#include <beep/pagevec.h>
 #include "ext4.h"
 #include "ext4_jbd2.h"
 #include "xattr.h"

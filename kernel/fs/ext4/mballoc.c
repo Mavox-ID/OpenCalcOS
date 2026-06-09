@@ -23,9 +23,9 @@
 
 #include "ext4_jbd2.h"
 #include "mballoc.h"
-#include <linux/debugfs.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
+#include <beep/debugfs.h>
+#include <beep/log2.h>
+#include <beep/slab.h>
 #include <trace/events/ext4.h>
 
 /*

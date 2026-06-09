@@ -20,16 +20,16 @@
  * ------------------------------------------------------------------------- */
 
 /* With some changes from Frodo Looijaard <frodol@dds.nl>, Kyösti Mälkki
-   <kmalkki@cc.hut.fi> and Jean Delvare <khali@linux-fr.org> */
+   <kmalkki@cc.hut.fi> and Jean Delvare <khali@beep-fr.org> */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
 
 
 /* ----- global defines ----------------------------------------------- */

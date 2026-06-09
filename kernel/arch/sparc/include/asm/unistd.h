@@ -18,7 +18,7 @@
 
 #ifdef __32bit_syscall_numbers__
 #else
-#define __NR_time		231 /* Linux sparc32                               */
+#define __NR_time		231 /* Beep sparc32                               */
 #endif
 #define __ARCH_WANT_OLD_READDIR
 #define __ARCH_WANT_STAT64

@@ -7,16 +7,16 @@
 * published by the Free Software Foundation.
 *
 */
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/fs.h>
-#include <linux/regmap.h>
-#include <linux/workqueue.h>
-#include <linux/platform_data/leds-lm3642.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/leds.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/fs.h>
+#include <beep/regmap.h>
+#include <beep/workqueue.h>
+#include <beep/platform_data/leds-lm3642.h>
 
 #define	REG_FILT_TIME			(0x0)
 #define	REG_IVFM_MODE			(0x1)

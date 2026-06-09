@@ -5,9 +5,9 @@
  *
  * Copyright (c) 2006, Ian Campbell, XenSource Inc.
  */
-#include <linux/types.h>
-#include <linux/cache.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/cache.h>
+#include <beep/module.h>
 
 #include <asm/xen/hypercall.h>
 

@@ -3,8 +3,8 @@
  */
 
 #include <asm/byteorder.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
+#include <beep/completion.h>
+#include <beep/mutex.h>
 
 /*	FIXME - rename and use the following two types or delete them!
  *              and the types really should go to st.h anyway...
@@ -435,11 +435,11 @@ typedef struct os_aux_s {
         /*
          * __u8         app_specific[32];
          *
-         * Linux specific fields:
+         * Beep specific fields:
          */
          __be32         next_mark_ppos;         /* when known, points to next marker */
 	 __be32		last_mark_lbn;		/* storing log_blk_num of last mark is extends ADR spec */
-         __u8           linux_specific[24];
+         __u8           beep_specific[24];
 
         __u8            reserved_256_511[256];
 } os_aux_t;
@@ -603,8 +603,8 @@ struct osst_tape {
   int      update_frame_cntr;                  /* update frame counter */
   int      onstream_write_error;               /* write error recovery active */
   int      header_ok;                          /* header frame verified ok */
-  int      linux_media;                        /* reading linux-specifc media */
-  int      linux_media_version;
+  int      beep_media;                        /* reading beep-specifc media */
+  int      beep_media_version;
   os_header_t * header_cache;		       /* cache is kept for filemark positions */
   int      filemark_cnt;
   int      first_mark_ppos;

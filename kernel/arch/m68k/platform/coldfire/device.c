@@ -1,19 +1,19 @@
 /*
  * device.c  -- common ColdFire SoC device support
  *
- * (C) Copyright 2011, Greg Ungerer <gerg@uclinux.org>
+ * (C) Copyright 2011, Greg Ungerer <gerg@ucbeep.org>
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file COPYING in the main directory of this archive
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spi/spi.h>
-#include <linux/gpio.h>
-#include <linux/fec.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/spi/spi.h>
+#include <beep/gpio.h>
+#include <beep/fec.h>
 #include <asm/traps.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>

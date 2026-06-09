@@ -1,15 +1,15 @@
 /*
- * linux/kernel/irq/pm.c
+ * beep/kernel/irq/pm.c
  *
  * Copyright (C) 2009 Rafael J. Wysocki <rjw@sisk.pl>, Novell Inc.
  *
  * This file contains power management functions related to interrupts.
  */
 
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/syscore_ops.h>
+#include <beep/irq.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/syscore_ops.h>
 
 #include "internals.h"
 

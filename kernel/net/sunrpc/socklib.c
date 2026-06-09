@@ -1,20 +1,20 @@
 /*
- * linux/net/sunrpc/socklib.c
+ * beep/net/sunrpc/socklib.c
  *
  * Common socket helper routines for RPC client and server
  *
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/compiler.h>
-#include <linux/netdevice.h>
-#include <linux/gfp.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/pagemap.h>
-#include <linux/udp.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/export.h>
+#include <beep/compiler.h>
+#include <beep/netdevice.h>
+#include <beep/gfp.h>
+#include <beep/skbuff.h>
+#include <beep/types.h>
+#include <beep/pagemap.h>
+#include <beep/udp.h>
+#include <beep/sunrpc/xdr.h>
+#include <beep/export.h>
 
 
 /**

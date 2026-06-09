@@ -12,14 +12,14 @@
  *
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/mutex.h>
+#include <beep/export.h>
+#include <beep/slab.h>
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/mfd/pcf50633/mbc.h>
+#include <beep/mfd/pcf50633/core.h>
+#include <beep/mfd/pcf50633/mbc.h>
 
 int pcf50633_register_irq(struct pcf50633 *pcf, int irq,
 			void (*handler) (int, void *), void *data)

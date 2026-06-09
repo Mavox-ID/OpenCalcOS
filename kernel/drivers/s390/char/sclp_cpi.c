@@ -6,10 +6,10 @@
  *		 Michael Ernst <mernst@de.ibm.com>
  */
 
-#include <linux/kmod.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/version.h>
+#include <beep/kmod.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/version.h>
 #include "sclp_cpi_sys.h"
 
 MODULE_LICENSE("GPL");
@@ -28,8 +28,8 @@ MODULE_PARM_DESC(sysplex_name, "if applicable - max. 8 characters");
 
 static int __init cpi_module_init(void)
 {
-	return sclp_cpi_set_data(system_name, sysplex_name, "LINUX",
-				 LINUX_VERSION_CODE);
+	return sclp_cpi_set_data(system_name, sysplex_name, "BEEP",
+				 BEEP_VERSION_CODE);
 }
 
 static void __exit cpi_module_exit(void)

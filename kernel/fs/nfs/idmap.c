@@ -33,19 +33,19 @@
  *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-#include <linux/types.h>
-#include <linux/parser.h>
-#include <linux/fs.h>
-#include <linux/nfs_idmap.h>
+#include <beep/types.h>
+#include <beep/parser.h>
+#include <beep/fs.h>
+#include <beep/nfs_idmap.h>
 #include <net/net_namespace.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_fs_sb.h>
-#include <linux/key.h>
-#include <linux/keyctl.h>
-#include <linux/key-type.h>
+#include <beep/sunrpc/rpc_pipe_fs.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_fs_sb.h>
+#include <beep/key.h>
+#include <beep/keyctl.h>
+#include <beep/key-type.h>
 #include <keys/user-type.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include "internal.h"
 #include "netns.h"

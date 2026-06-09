@@ -14,13 +14,13 @@
  * Copied from i386: Ross Biro 1/23/92
  */
 
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/kprobes.h>
-#include <linux/compat.h>
-#include <linux/uaccess.h>
-#include <linux/regset.h>
-#include <linux/elf.h>
+#include <beep/kernel.h>
+#include <beep/ptrace.h>
+#include <beep/kprobes.h>
+#include <beep/compat.h>
+#include <beep/uaccess.h>
+#include <beep/regset.h>
+#include <beep/elf.h>
 #include <asm/traps.h>
 #include <arch/chip.h>
 

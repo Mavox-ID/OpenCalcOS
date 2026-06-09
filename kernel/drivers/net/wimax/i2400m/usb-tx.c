@@ -32,7 +32,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  *
- * Intel Corporation <linux-wimax@intel.com>
+ * Intel Corporation <beep-wimax@intel.com>
  * Yanir Lubetkin <yanirx.lubetkin@intel.com>
  *  - Initial implementation
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>

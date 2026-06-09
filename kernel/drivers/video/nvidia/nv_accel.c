@@ -47,7 +47,7 @@
  * Antonino Daplas <adaplas@pol.net> 2005-03-11
  */
 
-#include <linux/fb.h>
+#include <beep/fb.h>
 #include "nv_type.h"
 #include "nv_proto.h"
 #include "nv_dma.h"

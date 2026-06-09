@@ -5,16 +5,16 @@
  *
  * Copyright (C) 1997, 1998, 2001, 03, 05, 06 by Ralf Baechle
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/ds1286.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/notifier.h>
-#include <linux/pm.h>
-#include <linux/timer.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
+#include <beep/ds1286.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/notifier.h>
+#include <beep/pm.h>
+#include <beep/timer.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

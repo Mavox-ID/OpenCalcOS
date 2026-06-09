@@ -7,7 +7,7 @@
  * Volume 2A: Instruction Set Reference, A-M
  *
  * Copyright (C) 2008 Intel Corporation
- * Authors: Austin Zhang <austin_zhang@linux.intel.com>
+ * Authors: Austin Zhang <austin_zhang@beep.intel.com>
  *          Kent Liu <kent.liu@intel.com>
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -24,10 +24,10 @@
  * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  *
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
 #include <crypto/internal/hash.h>
 
 #include <asm/cpufeature.h>

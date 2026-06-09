@@ -8,13 +8,13 @@
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/of_address.h>
+#include <beep/slab.h>
 #include <asm/soc.h>
 #include <asm/megamod-pic.h>
 

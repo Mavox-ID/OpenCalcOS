@@ -1,4 +1,4 @@
-/* Miro PCM20 radio driver for Linux radio support
+/* Miro PCM20 radio driver for Beep radio support
  * (c) 1998 Ruurd Reitsma <R.A.Reitsma@wbmt.tudelft.nl>
  * Thanks to Norberto Pellici for the ACI device interface specification
  * The API part is based on the radiotrack driver by M. Kirkwood
@@ -12,9 +12,9 @@
  * conditions...                Robert
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/videodev2.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <sound/aci.h>

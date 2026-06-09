@@ -4,7 +4,7 @@
 #ifndef _ASM_GENERIC_PCI_DMA_COMPAT_H
 #define _ASM_GENERIC_PCI_DMA_COMPAT_H
 
-#include <linux/dma-mapping.h>
+#include <beep/dma-mapping.h>
 
 static inline int
 pci_dma_supported(struct pci_dev *hwdev, u64 mask)

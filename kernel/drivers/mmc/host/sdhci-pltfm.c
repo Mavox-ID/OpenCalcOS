@@ -28,9 +28,9 @@
  * Inspired by sdhci-pci.c, by Pierre Ossman
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/of.h>
 #ifdef CONFIG_PPC
 #include <asm/machdep.h>
 #endif

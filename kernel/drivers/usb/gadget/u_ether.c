@@ -13,14 +13,14 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/device.h>
-#include <linux/ctype.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
+#include <beep/device.h>
+#include <beep/ctype.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/if_vlan.h>
 
 #include "u_ether.h"
 

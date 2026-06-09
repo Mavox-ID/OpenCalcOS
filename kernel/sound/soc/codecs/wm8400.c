@@ -11,18 +11,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/mfd/wm8400-audio.h>
-#include <linux/mfd/wm8400-private.h>
-#include <linux/mfd/core.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/consumer.h>
+#include <beep/mfd/wm8400-audio.h>
+#include <beep/mfd/wm8400-private.h>
+#include <beep/mfd/core.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

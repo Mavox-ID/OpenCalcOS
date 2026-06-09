@@ -8,8 +8,8 @@
  * 	Rohit Seth <rohit.seth@intel.com>
  * 	Suresh Siddha <suresh.b.siddha@intel.com>
  * 	Gordon Jin <gordon.jin@intel.com>
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA Beep Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@vabeep.com>
  *
  * 12/26/04 S.Siddha, G.Jin, R.Seth
  *			Add multi-threading and multi-core detection
@@ -22,29 +22,29 @@
  * 06/24/99 W.Drummond	added boot_cpu_data.
  * 05/28/05 Z. Menyhart	Dynamic stride size for "flush_icache_range()"
  */
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
-#include <linux/acpi.h>
-#include <linux/bootmem.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/threads.h>
-#include <linux/screen_info.h>
-#include <linux/dmi.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/efi.h>
-#include <linux/initrd.h>
-#include <linux/pm.h>
-#include <linux/cpufreq.h>
-#include <linux/kexec.h>
-#include <linux/crash_dump.h>
+#include <beep/acpi.h>
+#include <beep/bootmem.h>
+#include <beep/console.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/reboot.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/string.h>
+#include <beep/threads.h>
+#include <beep/screen_info.h>
+#include <beep/dmi.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
+#include <beep/efi.h>
+#include <beep/initrd.h>
+#include <beep/pm.h>
+#include <beep/cpufreq.h>
+#include <beep/kexec.h>
+#include <beep/crash_dump.h>
 
 #include <asm/machvec.h>
 #include <asm/mca.h>

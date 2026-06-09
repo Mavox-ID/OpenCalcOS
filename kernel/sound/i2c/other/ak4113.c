@@ -21,9 +21,9 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

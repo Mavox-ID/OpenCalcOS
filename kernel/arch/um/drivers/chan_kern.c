@@ -1,11 +1,11 @@
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{linux.intel,addtoit}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{beep.intel,addtoit}.com)
  * Licensed under the GPL
  */
 
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
 #include "chan.h"
 #include <os.h>
 #include <irq_kern.h>

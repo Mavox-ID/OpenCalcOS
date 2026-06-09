@@ -1,8 +1,8 @@
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/cpumask.h>
-#include <linux/errno.h>
-#include <linux/msi.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/cpumask.h>
+#include <beep/errno.h>
+#include <beep/msi.h>
 
 #include <asm/hw_irq.h>
 #include <asm/irq_remapping.h>

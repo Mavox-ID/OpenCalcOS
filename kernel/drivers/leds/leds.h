@@ -13,9 +13,9 @@
 #ifndef __LEDS_H_INCLUDED
 #define __LEDS_H_INCLUDED
 
-#include <linux/device.h>
-#include <linux/rwsem.h>
-#include <linux/leds.h>
+#include <beep/device.h>
+#include <beep/rwsem.h>
+#include <beep/leds.h>
 
 static inline void __led_set_brightness(struct led_classdev *led_cdev,
 					enum led_brightness value)

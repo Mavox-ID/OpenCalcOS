@@ -20,10 +20,10 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/usb.h>
-#include <linux/i2c.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/usb.h>
+#include <beep/i2c.h>
 
 #include "tm6000.h"
 #include "tm6000-regs.h"

@@ -21,11 +21,11 @@
 #define __OMAP_DRV_H__
 
 #include <video/omapdss.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <beep/module.h>
+#include <beep/types.h>
 #include <drm/drmP.h>
 #include <drm/drm_crtc_helper.h>
-#include <linux/platform_data/omap_drm.h>
+#include <beep/platform_data/omap_drm.h>
 #include "omap_drm.h"
 
 

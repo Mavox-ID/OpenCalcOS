@@ -8,7 +8,7 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <asm/fpu.h>
 #include <asm/rtc.h>
 #include <asm/busctl-regs.h>

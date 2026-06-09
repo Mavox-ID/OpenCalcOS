@@ -12,11 +12,11 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#include <linux/fb.h>
-#include <linux/file.h>
-#include <linux/delay.h>
-#include <linux/msm_mdp.h>
-#include <linux/platform_data/video-msm_fb.h>
+#include <beep/fb.h>
+#include <beep/file.h>
+#include <beep/delay.h>
+#include <beep/msm_mdp.h>
+#include <beep/platform_data/video-msm_fb.h>
 
 #include "mdp_hw.h"
 #include "mdp_scale_tables.h"

@@ -32,13 +32,13 @@
  * SOFTWARE.
  */
 
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/sched.h>
-#include <linux/export.h>
-#include <linux/hugetlb.h>
-#include <linux/dma-attrs.h>
-#include <linux/slab.h>
+#include <beep/mm.h>
+#include <beep/dma-mapping.h>
+#include <beep/sched.h>
+#include <beep/export.h>
+#include <beep/hugetlb.h>
+#include <beep/dma-attrs.h>
+#include <beep/slab.h>
 
 #include "uverbs.h"
 

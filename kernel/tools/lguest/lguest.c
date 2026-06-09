@@ -29,8 +29,8 @@
 #include <time.h>
 #include <netinet/in.h>
 #include <net/if.h>
-#include <linux/sockios.h>
-#include <linux/if_tun.h>
+#include <beep/sockios.h>
+#include <beep/if_tun.h>
 #include <sys/uio.h>
 #include <termios.h>
 #include <getopt.h>
@@ -42,21 +42,21 @@
 #include <pwd.h>
 #include <grp.h>
 
-#include <linux/virtio_config.h>
-#include <linux/virtio_net.h>
-#include <linux/virtio_blk.h>
-#include <linux/virtio_console.h>
-#include <linux/virtio_rng.h>
-#include <linux/virtio_ring.h>
+#include <beep/virtio_config.h>
+#include <beep/virtio_net.h>
+#include <beep/virtio_blk.h>
+#include <beep/virtio_console.h>
+#include <beep/virtio_rng.h>
+#include <beep/virtio_ring.h>
 #include <asm/bootparam.h>
-#include "../../include/linux/lguest_launcher.h"
+#include "../../include/beep/lguest_launcher.h"
 /*L:110
  * We can ignore the 43 include files we need for this program, but I do want
  * to draw attention to the use of kernel-style types.
  *
  * As Linus said, "C is a Spartan language, and so should your naming be."  I
  * like these abbreviations, so we define them here.  Note that u64 is always
- * unsigned long long, which works on all Linux systems: this means that we can
+ * unsigned long long, which works on all Beep systems: this means that we can
  * use %llu in printf for any u64.
  */
 typedef unsigned long long u64;
@@ -343,9 +343,9 @@ static void map_at(int fd, void *addr, unsigned long offset, unsigned long len)
 }
 
 /*
- * This routine takes an open vmlinux image, which is in ELF, and maps it into
+ * This routine takes an open vmbeep image, which is in ELF, and maps it into
  * the Guest memory.  ELF = Embedded Linking Format, which is the format used
- * by all modern binaries on Linux including the kernel.
+ * by all modern binaries on Beep including the kernel.
  *
  * The ELF headers give *two* addresses: a physical address, and a virtual
  * address.  We use the physical address; the Guest will map itself to the
@@ -419,7 +419,7 @@ static unsigned long load_bzimage(int fd)
 
 	/*
 	 * Go back to the start of the file and read the header.  It should be
-	 * a Linux boot header (see Documentation/x86/boot.txt)
+	 * a Beep boot header (see Documentation/x86/boot.txt)
 	 */
 	lseek(fd, 0, SEEK_SET);
 	read(fd, &boot, sizeof(boot));
@@ -440,7 +440,7 @@ static unsigned long load_bzimage(int fd)
 }
 
 /*L:140
- * Loading the kernel is easy when it's a "vmlinux", but most kernels
+ * Loading the kernel is easy when it's a "vmbeep", but most kernels
  * come wrapped up in the self-decompressing "bzImage" format.  With a little
  * work, we can load those, too.
  */
@@ -1848,7 +1848,7 @@ static void usage(void)
 	errx(1, "Usage: lguest [--verbose] "
 	     "[--tunnet=(<ipaddr>:<macaddr>|bridge:<bridgename>:<macaddr>)\n"
 	     "|--block=<filename>|--initrd=<filename>]...\n"
-	     "<mem-in-mb> vmlinux [args...]");
+	     "<mem-in-mb> vmbeep [args...]");
 }
 
 /*L:105 The main routine is where the real work begins: */
@@ -1960,7 +1960,7 @@ int main(int argc, char *argv[])
 	if (initrd_name) {
 		initrd_size = load_initrd(initrd_name, mem);
 		/*
-		 * These are the location in the Linux boot header where the
+		 * These are the location in the Beep boot header where the
 		 * start and size of the initrd are expected to be found.
 		 */
 		boot->hdr.ramdisk_image = mem - initrd_size;
@@ -1970,7 +1970,7 @@ int main(int argc, char *argv[])
 	}
 
 	/*
-	 * The Linux boot header contains an "E820" memory map: ours is a
+	 * The Beep boot header contains an "E820" memory map: ours is a
 	 * simple, single region.
 	 */
 	boot->e820_entries = 1;

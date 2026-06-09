@@ -1,4 +1,4 @@
-#include <linux/notifier.h>
+#include <beep/notifier.h>
 
 #include <xen/xen.h>
 #include <xen/xenbus.h>

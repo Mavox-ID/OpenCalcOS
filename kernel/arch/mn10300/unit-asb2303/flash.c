@@ -8,10 +8,10 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
 
 #define ASB2303_PROM_ADDR	0xA0000000	/* Boot PROM */
 #define ASB2303_PROM_SIZE	(2 * 1024 * 1024)

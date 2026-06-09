@@ -1,7 +1,7 @@
 /*
  *  sym53c416.h
  * 
- *  Copyright (C) 1998 Lieven Willems (lw_linux@hotmail.com)
+ *  Copyright (C) 1998 Lieven Willems (lw_beep@hotmail.com)
  *
  *  This program is free software; you can redistribute it and/or modify it
  *  under the terms of the GNU General Public License as published by the
@@ -18,7 +18,7 @@
 #ifndef _SYM53C416_H
 #define _SYM53C416_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define SYM53C416_SCSI_ID 7
 

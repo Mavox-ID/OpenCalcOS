@@ -9,11 +9,11 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv4.h>
 #include <net/ip.h>
 #include <net/xfrm.h>
 

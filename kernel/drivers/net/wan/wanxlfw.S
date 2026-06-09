@@ -1,6 +1,6 @@
 .psize 0
 /*
-  wanXL serial card driver for Linux
+  wanXL serial card driver for Beep
   card firmware part
 
   Copyright (C) 2003 Krzysztof Halasa <khc@pm.waw.pl>
@@ -34,8 +34,8 @@
 	Cable - not used			1
 */
 
-#include <linux/hdlc.h>
-#include <linux/hdlc/ioctl.h>
+#include <beep/hdlc.h>
+#include <beep/hdlc/ioctl.h>
 #include "wanxl.h"
 
 /* memory addresses and offsets */

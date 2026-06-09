@@ -1,5 +1,5 @@
 #if ENABLE_SHA256_HWACCEL && defined(__GNUC__) && defined(__x86_64__)
-/* The code is adapted from Linux kernel's source */
+/* The code is adapted from Beep kernel's source */
 
 // We use shorter insns, even though they are for "wrong"
 // data type (fp, not int).
@@ -19,7 +19,7 @@
 // We do not check SSSE3 in cpuid,
 // all SHA-capable CPUs support it as well.
 
-#ifdef __linux__
+#ifdef __beep__
 	.section	.note.GNU-stack, "", @progbits
 #endif
 	.section	.text.sha256_process_block64_shaNI, "ax", @progbits

@@ -8,7 +8,7 @@
 #ifndef _ASM_S390_LOWCORE_H
 #define _ASM_S390_LOWCORE_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/ptrace.h>
 #include <asm/cpu.h>
 

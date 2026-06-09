@@ -1,7 +1,7 @@
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/blkdev.h>
+#include <beep/interrupt.h>
 
 #include <asm/page.h>
 #include <asm/pgtable.h>
@@ -13,7 +13,7 @@
 #include "wd33c93.h"
 #include "mvme147.h"
 
-#include <linux/stat.h>
+#include <beep/stat.h>
 
 
 static irqreturn_t mvme147_intr(int irq, void *data)

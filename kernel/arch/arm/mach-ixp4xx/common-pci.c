@@ -15,18 +15,18 @@
  *
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/export.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/io.h>
+#include <beep/export.h>
 #include <asm/dma-mapping.h>
 
 #include <asm/cputype.h>

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/plat-omap/sram-fn.S
+ * beep/arch/arm/plat-omap/sram-fn.S
  *
  * Functions that need to be run in internal SRAM
  *
@@ -8,7 +8,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #include <asm/assembler.h>
 

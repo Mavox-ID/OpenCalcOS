@@ -25,7 +25,7 @@
 
 #include "vcpu.h"
 
-#include <linux/rwsem.h>
+#include <beep/rwsem.h>
 
 #include <asm/tlb.h>
 

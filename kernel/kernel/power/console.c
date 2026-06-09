@@ -4,10 +4,10 @@
  * Originally from swsusp.
  */
 
-#include <linux/vt_kern.h>
-#include <linux/kbd_kern.h>
-#include <linux/vt.h>
-#include <linux/module.h>
+#include <beep/vt_kern.h>
+#include <beep/kbd_kern.h>
+#include <beep/vt.h>
+#include <beep/module.h>
 #include "power.h"
 
 #define SUSPEND_CONSOLE	(MAX_NR_CONSOLES-1)

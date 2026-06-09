@@ -10,7 +10,7 @@
 #ifndef _ASMARM_CACHEFLUSH_H
 #define _ASMARM_CACHEFLUSH_H
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 #include <asm/glue-cache.h>
 #include <asm/shmparam.h>
@@ -201,9 +201,9 @@ extern void copy_to_user_page(struct vm_area_struct *, struct page *,
      (defined(CONFIG_CPU_V6) || defined(CONFIG_CPU_V6K))) || \
 	defined(CONFIG_SMP_ON_UP)
 #define __flush_icache_preferred	__cpuc_flush_icache_all
-#elif __LINUX_ARM_ARCH__ >= 7 && defined(CONFIG_SMP)
+#elif __BEEP_ARM_ARCH__ >= 7 && defined(CONFIG_SMP)
 #define __flush_icache_preferred	__flush_icache_all_v7_smp
-#elif __LINUX_ARM_ARCH__ == 6 && defined(CONFIG_ARM_ERRATA_411920)
+#elif __BEEP_ARM_ARCH__ == 6 && defined(CONFIG_ARM_ERRATA_411920)
 #define __flush_icache_preferred	__cpuc_flush_icache_all
 #else
 #define __flush_icache_preferred	__flush_icache_all_generic

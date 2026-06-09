@@ -4,11 +4,11 @@
  * Copyright (C) 1998 Harald Koerfgen, Frieder Streffer and Paul M. Antoine
  * Copyright (C) 2000, 2002  Maciej W. Rozycki
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/bootmem.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/bootmem.h>
+#include <beep/types.h>
 
 #include <asm/addrspace.h>
 #include <asm/bootinfo.h>

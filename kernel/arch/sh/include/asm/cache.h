@@ -9,7 +9,7 @@
 #define __ASM_SH_CACHE_H
 #ifdef __KERNEL__
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <cpu/cache.h>
 
 #define L1_CACHE_BYTES		(1 << L1_CACHE_SHIFT)

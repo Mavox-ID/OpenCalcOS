@@ -5,21 +5,21 @@
  * Copyright (C) 1995-1997 Olaf Kirch <okir@monad.swb.de>
  */
 
-#ifndef LINUX_NFSD_NFSD_H
-#define LINUX_NFSD_NFSD_H
+#ifndef BEEP_NFSD_NFSD_H
+#define BEEP_NFSD_NFSD_H
 
-#include <linux/types.h>
-#include <linux/mount.h>
+#include <beep/types.h>
+#include <beep/mount.h>
 
-#include <linux/nfs.h>
-#include <linux/nfs2.h>
-#include <linux/nfs3.h>
-#include <linux/nfs4.h>
-#include <linux/sunrpc/msg_prot.h>
+#include <beep/nfs.h>
+#include <beep/nfs2.h>
+#include <beep/nfs3.h>
+#include <beep/nfs4.h>
+#include <beep/sunrpc/msg_prot.h>
 
-#include <linux/nfsd/debug.h>
-#include <linux/nfsd/export.h>
-#include <linux/nfsd/stats.h>
+#include <beep/nfsd/debug.h>
+#include <beep/nfsd/export.h>
+#include <beep/nfsd/stats.h>
 
 /*
  * nfsd version
@@ -378,4 +378,4 @@ static inline int nfsd4_is_junction(struct dentry *dentry)
 
 #endif /* CONFIG_NFSD_V4 */
 
-#endif /* LINUX_NFSD_NFSD_H */
+#endif /* BEEP_NFSD_NFSD_H */

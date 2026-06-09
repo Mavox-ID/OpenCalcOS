@@ -23,24 +23,24 @@
 /*
  * The set of interrupts we want to allow when interrupts are nominally
  * disabled.  The remainder are effectively "NMI" interrupts from
- * the point of view of the generic Linux code.  Note that synchronous
+ * the point of view of the generic Beep code.  Note that synchronous
  * interrupts (aka "non-queued") are not blocked by the mask in any case.
  */
 #if CHIP_HAS_AUX_PERF_COUNTERS()
-#define LINUX_MASKABLE_INTERRUPTS_HI \
+#define BEEP_MASKABLE_INTERRUPTS_HI \
 	(~(INT_MASK_HI(INT_PERF_COUNT) | INT_MASK_HI(INT_AUX_PERF_COUNT)))
 #else
-#define LINUX_MASKABLE_INTERRUPTS_HI \
+#define BEEP_MASKABLE_INTERRUPTS_HI \
 	(~(INT_MASK_HI(INT_PERF_COUNT)))
 #endif
 
 #else
 
 #if CHIP_HAS_AUX_PERF_COUNTERS()
-#define LINUX_MASKABLE_INTERRUPTS \
+#define BEEP_MASKABLE_INTERRUPTS \
 	(~(INT_MASK(INT_PERF_COUNT) | INT_MASK(INT_AUX_PERF_COUNT)))
 #else
-#define LINUX_MASKABLE_INTERRUPTS \
+#define BEEP_MASKABLE_INTERRUPTS \
 	(~(INT_MASK(INT_PERF_COUNT)))
 #endif
 
@@ -48,7 +48,7 @@
 
 #ifndef __ASSEMBLY__
 
-/* NOTE: we can't include <linux/percpu.h> due to #include dependencies. */
+/* NOTE: we can't include <beep/percpu.h> due to #include dependencies. */
 #include <asm/percpu.h>
 #include <arch/spr_def.h>
 
@@ -130,7 +130,7 @@ DECLARE_PER_CPU(unsigned long long, interrupts_enabled_mask);
 
 /* Disable interrupts. */
 #define arch_local_irq_disable() \
-	interrupt_mask_set_mask(LINUX_MASKABLE_INTERRUPTS)
+	interrupt_mask_set_mask(BEEP_MASKABLE_INTERRUPTS)
 
 /* Disable all interrupts, including NMIs. */
 #define arch_local_irq_disable_all() \
@@ -208,9 +208,9 @@ DECLARE_PER_CPU(unsigned long long, interrupts_enabled_mask);
 
 /* Disable interrupts. */
 #define IRQ_DISABLE(tmp0, tmp1)					\
-	moveli  tmp0, hw2_last(LINUX_MASKABLE_INTERRUPTS);	\
-	shl16insli tmp0, tmp0, hw1(LINUX_MASKABLE_INTERRUPTS);	\
-	shl16insli tmp0, tmp0, hw0(LINUX_MASKABLE_INTERRUPTS);	\
+	moveli  tmp0, hw2_last(BEEP_MASKABLE_INTERRUPTS);	\
+	shl16insli tmp0, tmp0, hw1(BEEP_MASKABLE_INTERRUPTS);	\
+	shl16insli tmp0, tmp0, hw0(BEEP_MASKABLE_INTERRUPTS);	\
 	mtspr   SPR_INTERRUPT_MASK_SET_K, tmp0
 
 /* Disable ALL synchronous interrupts (used by NMI entry). */
@@ -251,11 +251,11 @@ DECLARE_PER_CPU(unsigned long long, interrupts_enabled_mask);
 #define IRQ_DISABLE(tmp0, tmp1)					\
 	{							\
 	 movei  tmp0, -1;					\
-	 moveli tmp1, lo16(LINUX_MASKABLE_INTERRUPTS_HI)	\
+	 moveli tmp1, lo16(BEEP_MASKABLE_INTERRUPTS_HI)	\
 	};							\
 	{							\
 	 mtspr  SPR_INTERRUPT_MASK_SET_K_0, tmp0;		\
-	 auli   tmp1, tmp1, ha16(LINUX_MASKABLE_INTERRUPTS_HI)	\
+	 auli   tmp1, tmp1, ha16(BEEP_MASKABLE_INTERRUPTS_HI)	\
 	};							\
 	mtspr   SPR_INTERRUPT_MASK_SET_K_1, tmp1
 

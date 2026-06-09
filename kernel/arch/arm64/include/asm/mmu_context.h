@@ -19,8 +19,8 @@
 #ifndef __ASM_MMU_CONTEXT_H
 #define __ASM_MMU_CONTEXT_H
 
-#include <linux/compiler.h>
-#include <linux/sched.h>
+#include <beep/compiler.h>
+#include <beep/sched.h>
 
 #include <asm/cacheflush.h>
 #include <asm/proc-fns.h>

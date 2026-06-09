@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/time.c
+ *  beep/arch/arm/kernel/time.c
  *
  *  Copyright (C) 1991, 1992, 1995  Linus Torvalds
  *  Modifications for ARM (C) 1994-2001 Russell King
@@ -11,19 +11,19 @@
  *  This file contains the ARM-specific time handling details:
  *  reading the RTC at bootup, etc...
  */
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/timex.h>
-#include <linux/errno.h>
-#include <linux/profile.h>
-#include <linux/syscore_ops.h>
-#include <linux/timer.h>
-#include <linux/irq.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/time.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/timex.h>
+#include <beep/errno.h>
+#include <beep/profile.h>
+#include <beep/syscore_ops.h>
+#include <beep/timer.h>
+#include <beep/irq.h>
 
 #include <asm/thread_info.h>
 #include <asm/sched_clock.h>

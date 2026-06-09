@@ -9,8 +9,8 @@
 #ifndef TKIP_H
 #define TKIP_H
 
-#include <linux/types.h>
-#include <linux/crypto.h>
+#include <beep/types.h>
+#include <beep/crypto.h>
 #include "key.h"
 
 u8 *ieee80211_tkip_add_iv(u8 *pos, struct ieee80211_key *key);

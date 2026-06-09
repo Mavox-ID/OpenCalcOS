@@ -8,8 +8,8 @@
  * Copyright (C) 1994 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#ifndef _UAPI__LINUX_SPARC_PSR_H
-#define _UAPI__LINUX_SPARC_PSR_H
+#ifndef _UAPI__BEEP_SPARC_PSR_H
+#define _UAPI__BEEP_SPARC_PSR_H
 
 /* The Sparc PSR fields are laid out as the following:
  *
@@ -44,4 +44,4 @@
 #define PSR_IMPL_LEON		0xf
 
 
-#endif /* _UAPI__LINUX_SPARC_PSR_H */
+#endif /* _UAPI__BEEP_SPARC_PSR_H */

@@ -12,25 +12,25 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/workqueue.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/stddef.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/mm.h>
+#include <beep/dma-mapping.h>
+#include <beep/mii.h>
+#include <beep/phy.h>
+#include <beep/workqueue.h>
+#include <beep/of_mdio.h>
+#include <beep/of_net.h>
+#include <beep/of_platform.h>
 
 #include <asm/uaccess.h>
 #include <asm/irq.h>

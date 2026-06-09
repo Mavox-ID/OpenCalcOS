@@ -16,7 +16,7 @@
 #ifndef _UAPI__ASM_SIGCONTEXT_H
 #define _UAPI__ASM_SIGCONTEXT_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * Signal context structure - contains all info to do with the state

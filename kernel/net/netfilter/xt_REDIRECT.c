@@ -11,17 +11,17 @@
  * NAT funded by Astaro.
  */
 
-#include <linux/if.h>
-#include <linux/inetdevice.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/netfilter.h>
-#include <linux/types.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter/x_tables.h>
+#include <beep/if.h>
+#include <beep/inetdevice.h>
+#include <beep/ip.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/netfilter.h>
+#include <beep/types.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/netfilter_ipv6.h>
+#include <beep/netfilter/x_tables.h>
 #include <net/addrconf.h>
 #include <net/checksum.h>
 #include <net/protocol.h>

@@ -16,8 +16,8 @@
  * Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#ifndef __LINUX_EHCI_HCD_H
-#define __LINUX_EHCI_HCD_H
+#ifndef __BEEP_EHCI_HCD_H
+#define __BEEP_EHCI_HCD_H
 
 /* definitions used for the EHCI driver */
 
@@ -242,7 +242,7 @@ static inline struct usb_hcd *ehci_to_hcd (struct ehci_hcd *ehci)
 
 /*-------------------------------------------------------------------------*/
 
-#include <linux/usb/ehci_def.h>
+#include <beep/usb/ehci_def.h>
 
 /*-------------------------------------------------------------------------*/
 
@@ -804,4 +804,4 @@ extern int	ehci_suspend(struct usb_hcd *hcd, bool do_wakeup);
 extern int	ehci_resume(struct usb_hcd *hcd, bool hibernated);
 #endif	/* CONFIG_PM */
 
-#endif /* __LINUX_EHCI_HCD_H */
+#endif /* __BEEP_EHCI_HCD_H */

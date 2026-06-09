@@ -2,9 +2,9 @@
  * mac80211 - channel management
  */
 
-#include <linux/nl80211.h>
-#include <linux/export.h>
-#include <linux/rtnetlink.h>
+#include <beep/nl80211.h>
+#include <beep/export.h>
+#include <beep/rtnetlink.h>
 #include <net/cfg80211.h>
 #include "ieee80211_i.h"
 #include "driver-ops.h"

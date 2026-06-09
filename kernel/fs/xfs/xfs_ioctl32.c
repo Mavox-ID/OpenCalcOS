@@ -15,10 +15,10 @@
  * along with this program; if not, write the Free Software Foundation,
  * Inc.,  51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
-#include <linux/compat.h>
-#include <linux/ioctl.h>
-#include <linux/mount.h>
-#include <linux/slab.h>
+#include <beep/compat.h>
+#include <beep/ioctl.h>
+#include <beep/mount.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 #include "xfs.h"
 #include "xfs_fs.h"

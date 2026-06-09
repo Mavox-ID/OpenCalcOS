@@ -1,18 +1,18 @@
 /*
- *  linux/arch/m32r/mm/discontig.c
+ *  beep/arch/m32r/mm/discontig.c
  *
  *  Discontig memory support
  *
  *  Copyright (c) 2003  Hitoshi Yamamoto
  */
 
-#include <linux/mm.h>
-#include <linux/bootmem.h>
-#include <linux/mmzone.h>
-#include <linux/initrd.h>
-#include <linux/nodemask.h>
-#include <linux/module.h>
-#include <linux/pfn.h>
+#include <beep/mm.h>
+#include <beep/bootmem.h>
+#include <beep/mmzone.h>
+#include <beep/initrd.h>
+#include <beep/nodemask.h>
+#include <beep/module.h>
+#include <beep/pfn.h>
 
 #include <asm/setup.h>
 

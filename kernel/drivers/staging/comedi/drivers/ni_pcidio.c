@@ -2,7 +2,7 @@
     comedi/drivers/ni_pcidio.c
     driver for National Instruments PCI-DIO-32HS
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1999,2002 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -55,9 +55,9 @@ comedi_nonfree_firmware tarball available from http://www.comedi.org
 /* #define DEBUG 1 */
 /* #define DEBUG_FLAGS */
 
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/firmware.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/firmware.h>
 #include "../comedidev.h"
 
 #include "comedi_fc.h"

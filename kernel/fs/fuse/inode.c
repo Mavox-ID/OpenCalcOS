@@ -8,18 +8,18 @@
 
 #include "fuse_i.h"
 
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/parser.h>
-#include <linux/statfs.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/exportfs.h>
+#include <beep/pagemap.h>
+#include <beep/slab.h>
+#include <beep/file.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/parser.h>
+#include <beep/statfs.h>
+#include <beep/random.h>
+#include <beep/sched.h>
+#include <beep/exportfs.h>
 
 MODULE_AUTHOR("Miklos Szeredi <miklos@szeredi.hu>");
 MODULE_DESCRIPTION("Filesystem in Userspace");

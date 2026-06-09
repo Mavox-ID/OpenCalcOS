@@ -1,7 +1,7 @@
 /*
- * OpenRISC Linux
+ * OpenRISC Beep
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -19,12 +19,12 @@
 #ifndef __ASM_OPENRISC_TLBFLUSH_H
 #define __ASM_OPENRISC_TLBFLUSH_H
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 #include <asm/processor.h>
 #include <asm/pgtable.h>
 #include <asm/pgalloc.h>
 #include <asm/current.h>
-#include <linux/sched.h>
+#include <beep/sched.h>
 
 /*
  *  - flush_tlb() flushes the current mm struct TLBs

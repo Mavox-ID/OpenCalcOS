@@ -8,11 +8,11 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/ssb/ssb.h>
-#include <linux/pci.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/ssb/ssb_embedded.h>
+#include <beep/ssb/ssb.h>
+#include <beep/pci.h>
+#include <beep/export.h>
+#include <beep/delay.h>
+#include <beep/ssb/ssb_embedded.h>
 
 #include "ssb_private.h"
 

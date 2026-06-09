@@ -15,17 +15,17 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/spi/spi_oc_tiny.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/of.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_bitbang.h>
+#include <beep/spi/spi_oc_tiny.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/of.h>
 
 #define DRV_NAME "spi_oc_tiny"
 
@@ -241,7 +241,7 @@ static irqreturn_t tiny_spi_irq(int irq, void *dev)
 }
 
 #ifdef CONFIG_OF
-#include <linux/of_gpio.h>
+#include <beep/of_gpio.h>
 
 static int tiny_spi_of_probe(struct platform_device *pdev)
 {

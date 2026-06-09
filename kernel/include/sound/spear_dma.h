@@ -1,5 +1,5 @@
 /*
-* linux/spear_dma.h
+* beep/spear_dma.h
 *
 * Copyright (ST) 2012 Rajeev Kumar (rajeev-dlh.kumar@st.com)
 *
@@ -22,7 +22,7 @@
 #ifndef SPEAR_DMA_H
 #define SPEAR_DMA_H
 
-#include <linux/dmaengine.h>
+#include <beep/dmaengine.h>
 
 struct spear_dma_data {
 	void *data;

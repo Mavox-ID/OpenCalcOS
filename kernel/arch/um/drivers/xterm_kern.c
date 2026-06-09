@@ -1,11 +1,11 @@
 /* 
- * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/irqreturn.h>
+#include <beep/slab.h>
+#include <beep/completion.h>
+#include <beep/irqreturn.h>
 #include <asm/irq.h>
 #include <irq_kern.h>
 #include <os.h>

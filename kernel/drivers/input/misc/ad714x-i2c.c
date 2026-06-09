@@ -6,11 +6,11 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/input.h>	/* BUS_I2C */
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/pm.h>
+#include <beep/input.h>	/* BUS_I2C */
+#include <beep/i2c.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/pm.h>
 #include "ad714x.h"
 
 #ifdef CONFIG_PM

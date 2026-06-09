@@ -17,7 +17,7 @@
 #ifndef _MMU_REG_ACM_H
 #define _MMU_REG_ACM_H
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include <EasiGlobal.h>
 
 #include "MMUAccInt.h"

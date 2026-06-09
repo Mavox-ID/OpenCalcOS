@@ -8,10 +8,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/clkdev.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
+#include <beep/clkdev.h>
+#include <beep/device.h>
+#include <beep/firmware.h>
+#include <beep/module.h>
 
 #include <asm/clock.h>
 

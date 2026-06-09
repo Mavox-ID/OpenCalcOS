@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2007 Denys Vlasenko <vda.linux@googlemail.com>
+ * Copyright (C) 2007 Denys Vlasenko <vda.beep@googlemail.com>
  *
  * This file uses bzip2 library code which is written
  * by Julian Seward <jseward@bzip.org>.
@@ -27,7 +27,7 @@
 //config:	help
 //config:	Trade code size versus speed.
 //config:	Approximate values with gcc-6.3.0 "bzip -9" compressing
-//config:	linux-4.15.tar were:
+//config:	beep-4.15.tar were:
 //config:	value         time (sec)  code size (386)
 //config:	9 (smallest)       70.11             7687
 //config:	8                  67.93             8091

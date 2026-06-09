@@ -1,6 +1,6 @@
 /* $Id: hysdn_defs.h,v 1.5.6.3 2001/09/23 22:24:54 kai Exp $
  *
- * Linux driver for HYSDN cards
+ * Beep driver for HYSDN cards
  * global definitions and exported vars and functions.
  *
  * Author    Werner Cornelius (werner@titro.de) for Hypercope GmbH
@@ -14,18 +14,18 @@
 #ifndef HYSDN_DEFS_H
 #define HYSDN_DEFS_H
 
-#include <linux/hysdn_if.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/skbuff.h>
+#include <beep/hysdn_if.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/skbuff.h>
 
 #include "ince1pc.h"
 
 #ifdef CONFIG_HYSDN_CAPI
-#include <linux/capi.h>
-#include <linux/isdn/capicmd.h>
-#include <linux/isdn/capiutil.h>
-#include <linux/isdn/capilli.h>
+#include <beep/capi.h>
+#include <beep/isdn/capicmd.h>
+#include <beep/isdn/capiutil.h>
+#include <beep/isdn/capilli.h>
 
 /***************************/
 /*   CAPI-Profile values.  */

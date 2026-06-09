@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel(R) 82576 Virtual Function Linux driver
+  Intel(R) 82576 Virtual Function Beep driver
   Copyright(c) 2009 - 2012 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it
@@ -28,10 +28,10 @@
 #ifndef _E1000_VF_H_
 #define _E1000_VF_H_
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/if_ether.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/if_ether.h>
 
 #include "regs.h"
 #include "defines.h"

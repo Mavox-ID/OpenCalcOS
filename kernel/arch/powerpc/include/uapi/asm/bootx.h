@@ -1,6 +1,6 @@
 /*
  * This file describes the structure passed from the BootX application
- * (for MacOS) when it is used to boot Linux.
+ * (for MacOS) when it is used to boot Beep.
  *
  * Written by Benjamin Herrenschmidt.
  */
@@ -9,11 +9,11 @@
 #ifndef _UAPI__ASM_BOOTX_H__
 #define _UAPI__ASM_BOOTX_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #ifdef macintosh
 #include <Types.h>
-#include "linux_type_defs.h"
+#include "beep_type_defs.h"
 #endif
 
 #ifdef macintosh

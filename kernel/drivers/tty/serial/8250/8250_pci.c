@@ -9,18 +9,18 @@
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/tty.h>
-#include <linux/serial_reg.h>
-#include <linux/serial_core.h>
-#include <linux/8250_pci.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/tty.h>
+#include <beep/serial_reg.h>
+#include <beep/serial_core.h>
+#include <beep/8250_pci.h>
+#include <beep/bitops.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>
@@ -68,7 +68,7 @@ static void moan_device(const char *str, struct pci_dev *dev)
 	       "Please send the output of lspci -vv, this\n"
 	       "message (0x%04x,0x%04x,0x%04x,0x%04x), the\n"
 	       "manufacturer and name of serial board or\n"
-	       "modem board to rmk+serial@arm.linux.org.uk.\n",
+	       "modem board to rmk+serial@arm.beep.org.uk.\n",
 	       pci_name(dev), str, dev->vendor, dev->device,
 	       dev->subsystem_vendor, dev->subsystem_device);
 }
@@ -1319,7 +1319,7 @@ pci_wch_ch353_setup(struct serial_private *priv,
 #define PCI_DEVICE_ID_BROADCOM_TRUMANAGE 0x160a
 
 
-/* Unknown vendors/cards - this should not be in linux/pci_ids.h */
+/* Unknown vendors/cards - this should not be in beep/pci_ids.h */
 #define PCI_SUBDEVICE_ID_UNKNOWN_0x1584	0x1584
 
 /*
@@ -2181,7 +2181,7 @@ enum pci_board_num_t {
  *               to PCI memory by the card.
  * For example IER register on SBS, Inc. PMC-OctPro is located at
  * offset 0x10 from the UART base, while UART_IER is defined as 1
- * in include/linux/serial_reg.h,
+ * in include/beep/serial_reg.h,
  * see first lines of serial_in() and serial_out() in 8250.c
 */
 
@@ -3533,7 +3533,7 @@ static struct pci_device_id serial_pci_tbl[] = {
 		/*
 		 * The below card is a little controversial since it is the
 		 * subject of a PCI vendor/device ID clash.  (See
-		 * www.ussg.iu.edu/hypermail/linux/kernel/0303.1/0516.html).
+		 * www.ussg.iu.edu/hypermail/beep/kernel/0303.1/0516.html).
 		 * For now just used the hex ID 0x950a.
 		 */
 	{	PCI_VENDOR_ID_OXSEMI, 0x950a,

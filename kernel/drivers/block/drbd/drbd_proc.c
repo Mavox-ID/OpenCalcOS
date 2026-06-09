@@ -23,14 +23,14 @@
 
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <asm/uaccess.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/drbd.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/drbd.h>
 #include "drbd_int.h"
 
 static int drbd_proc_open(struct inode *inode, struct file *file);

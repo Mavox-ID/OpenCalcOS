@@ -1,11 +1,11 @@
 /*
- * linux/mm/page_isolation.c
+ * beep/mm/page_isolation.c
  */
 
-#include <linux/mm.h>
-#include <linux/page-isolation.h>
-#include <linux/pageblock-flags.h>
-#include <linux/memory.h>
+#include <beep/mm.h>
+#include <beep/page-isolation.h>
+#include <beep/pageblock-flags.h>
+#include <beep/memory.h>
 #include "internal.h"
 
 int set_migratetype_isolate(struct page *page, bool skip_hwpoisoned_pages)

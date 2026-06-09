@@ -5,18 +5,18 @@
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  * Author: Jonas Aaberg <jonas.aberg@stericsson.com>
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 /* the name of this kernel module */
 #define NAME "stu300"

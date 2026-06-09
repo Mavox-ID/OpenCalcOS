@@ -6,12 +6,12 @@
  * it under the terms of the GNU General Public License version 2 (or any
  * later at your option) as published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/nfnetlink_acct.h>
-#include <linux/netfilter/xt_nfacct.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/nfnetlink_acct.h>
+#include <beep/netfilter/xt_nfacct.h>
 
 MODULE_AUTHOR("Pablo Neira Ayuso <pablo@netfilter.org>");
 MODULE_DESCRIPTION("Xtables: match for the extended accounting infrastructure");

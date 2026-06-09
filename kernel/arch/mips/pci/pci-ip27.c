@@ -4,14 +4,14 @@
  * for more details.
  *
  * Copyright (C) 2003 Christoph Hellwig (hch@lst.de)
- * Copyright (C) 1999, 2000, 04 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1999, 2000, 04 Ralf Baechle (ralf@beep-mips.org)
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/smp.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/pci.h>
+#include <beep/smp.h>
 #include <asm/sn/arch.h>
 #include <asm/pci/bridge.h>
 #include <asm/paccess.h>

@@ -16,8 +16,8 @@
 #ifndef __ASM_HARDIRQ_H
 #define __ASM_HARDIRQ_H
 
-#include <linux/cache.h>
-#include <linux/threads.h>
+#include <beep/cache.h>
+#include <beep/threads.h>
 #include <asm/irq.h>
 
 #define NR_IPI	4
@@ -29,7 +29,7 @@ typedef struct {
 #endif
 } ____cacheline_aligned irq_cpustat_t;
 
-#include <linux/irq_cpustat.h>	/* Standard mappings for irq_cpustat_t above */
+#include <beep/irq_cpustat.h>	/* Standard mappings for irq_cpustat_t above */
 
 #define __inc_irq_stat(cpu, member)	__IRQ_STAT(cpu, member)++
 #define __get_irq_stat(cpu, member)	__IRQ_STAT(cpu, member)

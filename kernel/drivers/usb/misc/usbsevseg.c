@@ -10,13 +10,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/usb.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/usb.h>
 
 
 #define DRIVER_AUTHOR "Harrison Metzger <harrisonmetz@gmail.com>"

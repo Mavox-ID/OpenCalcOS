@@ -13,9 +13,9 @@
  *  Added needed MAJORS for new pairs, {hdi,hdj}, {hdk,hdl}
  */
 
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/genhd.h>
+#include <beep/slab.h>
+#include <beep/ctype.h>
+#include <beep/genhd.h>
 
 #include "check.h"
 

@@ -1,5 +1,5 @@
 /*
- * Compressed rom filesystem for Linux.
+ * Compressed rom filesystem for Beep.
  *
  * Copyright (C) 1999 Linus Torvalds.
  *
@@ -11,17 +11,17 @@
  * The actual compression is based on zlib, see the other files.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/blkdev.h>
-#include <linux/cramfs_fs.h>
-#include <linux/slab.h>
-#include <linux/cramfs_fs_sb.h>
-#include <linux/vfs.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/blkdev.h>
+#include <beep/cramfs_fs.h>
+#include <beep/slab.h>
+#include <beep/cramfs_fs_sb.h>
+#include <beep/vfs.h>
+#include <beep/mutex.h>
 
 #include <asm/uaccess.h>
 

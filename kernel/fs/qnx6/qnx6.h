@@ -1,5 +1,5 @@
 /*
- * QNX6 file system, Linux implementation.
+ * QNX6 file system, Beep implementation.
  *
  * Version : 1.0.0
  *
@@ -10,14 +10,14 @@
  *
  */
 
-#include <linux/fs.h>
-#include <linux/pagemap.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
 
 typedef __u16 __bitwise __fs16;
 typedef __u32 __bitwise __fs32;
 typedef __u64 __bitwise __fs64;
 
-#include <linux/qnx6_fs.h>
+#include <beep/qnx6_fs.h>
 
 #ifdef CONFIG_QNX6FS_DEBUG
 #define QNX6DEBUG(X) printk X

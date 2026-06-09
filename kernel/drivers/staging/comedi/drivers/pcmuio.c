@@ -2,7 +2,7 @@
     comedi/drivers/pcmuio.c
     Driver for Winsystems PC-104 based 48-channel and 96-channel DIO boards.
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2006 Calin A. Culianu <calin@ajvar.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -75,12 +75,12 @@ Configuration Options:
   [2] - IRQ for second ASIC (pcmuio96 only - IRQ for chans 48-72 .. can be the same as first irq!)
 */
 
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 #include "../comedidev.h"
 #include "pcm_common.h"
 
-#include <linux/pci.h>		/* for PCI devices */
+#include <beep/pci.h>		/* for PCI devices */
 
 #define CHANS_PER_PORT   8
 #define PORTS_PER_ASIC   6

@@ -4,17 +4,17 @@
  * Copyright 2006-2010	Johannes Berg <johannes@sipsolutions.net>
  */
 
-#include <linux/if.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/if_ether.h>
-#include <linux/ieee80211.h>
-#include <linux/nl80211.h>
-#include <linux/rtnetlink.h>
-#include <linux/netlink.h>
-#include <linux/etherdevice.h>
+#include <beep/if.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/if_ether.h>
+#include <beep/ieee80211.h>
+#include <beep/nl80211.h>
+#include <beep/rtnetlink.h>
+#include <beep/netlink.h>
+#include <beep/etherdevice.h>
 #include <net/net_namespace.h>
 #include <net/genetlink.h>
 #include <net/cfg80211.h>

@@ -20,19 +20,19 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/usb/musb-omap.h>
-#include <linux/usb/phy_companion.h>
-#include <linux/usb/omap_usb.h>
-#include <linux/i2c/twl.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/usb/musb-omap.h>
+#include <beep/usb/phy_companion.h>
+#include <beep/usb/omap_usb.h>
+#include <beep/i2c/twl.h>
+#include <beep/regulator/consumer.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
 
 /* usb register definitions */
 #define USB_VENDOR_ID_LSB		0x00

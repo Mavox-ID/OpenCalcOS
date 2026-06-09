@@ -15,23 +15,23 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/platform_device.h>
-#include <linux/fsl_devices.h>
-#include <linux/dma-mapping.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_bitbang.h>
+#include <beep/platform_device.h>
+#include <beep/fsl_devices.h>
+#include <beep/dma-mapping.h>
+#include <beep/mm.h>
+#include <beep/mutex.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/gpio.h>
+#include <beep/of_gpio.h>
 
 #include <sysdev/fsl_soc.h>
 #include <asm/cpm.h>

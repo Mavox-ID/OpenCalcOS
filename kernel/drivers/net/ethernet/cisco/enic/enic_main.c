@@ -17,27 +17,27 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/ethtool.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/rtnetlink.h>
-#include <linux/prefetch.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/if.h>
+#include <beep/if_ether.h>
+#include <beep/if_vlan.h>
+#include <beep/ethtool.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/tcp.h>
+#include <beep/rtnetlink.h>
+#include <beep/prefetch.h>
 #include <net/ip6_checksum.h>
 
 #include "cq_enet_desc.h"

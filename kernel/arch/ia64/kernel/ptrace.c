@@ -9,18 +9,18 @@
  *
  * Derived from the x86 and Alpha versions.
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/security.h>
-#include <linux/audit.h>
-#include <linux/signal.h>
-#include <linux/regset.h>
-#include <linux/elf.h>
-#include <linux/tracehook.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/security.h>
+#include <beep/audit.h>
+#include <beep/signal.h>
+#include <beep/regset.h>
+#include <beep/elf.h>
+#include <beep/tracehook.h>
 
 #include <asm/pgtable.h>
 #include <asm/processor.h>

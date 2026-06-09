@@ -36,15 +36,15 @@
  *	- convert to use hwmod and runtime PM
  */
 
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/usb/ulpi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/gpio.h>
-#include <linux/clk.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/usb/ulpi.h>
+#include <beep/regulator/consumer.h>
+#include <beep/pm_runtime.h>
+#include <beep/gpio.h>
+#include <beep/clk.h>
 
-#include <linux/platform_data/usb-omap.h>
+#include <beep/platform_data/usb-omap.h>
 
 /* EHCI Register Set */
 #define EHCI_INSNREG04					(0xA0)

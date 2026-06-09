@@ -6,9 +6,9 @@
  * Licensed under the GPLv2.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/platform_device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
@@ -70,4 +70,4 @@ module_exit(sh7760_ac97_exit);
 
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("Generic SH7760 AC97 sound machine");
-MODULE_AUTHOR("Manuel Lauss <mano@roarinelk.homelinux.net>");
+MODULE_AUTHOR("Manuel Lauss <mano@roarinelk.homebeep.net>");

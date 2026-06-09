@@ -4,14 +4,14 @@
  * AoE character device driver
  */
 
-#include <linux/hdreg.h>
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/skbuff.h>
-#include <linux/export.h>
+#include <beep/hdreg.h>
+#include <beep/blkdev.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/skbuff.h>
+#include <beep/export.h>
 #include "aoe.h"
 
 enum {

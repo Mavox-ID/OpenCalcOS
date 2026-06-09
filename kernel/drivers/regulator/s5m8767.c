@@ -11,16 +11,16 @@
  *
  */
 
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/mfd/samsung/core.h>
-#include <linux/mfd/samsung/s5m8767.h>
+#include <beep/bug.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/machine.h>
+#include <beep/mfd/samsung/core.h>
+#include <beep/mfd/samsung/s5m8767.h>
 
 struct s5m8767_info {
 	struct device *dev;

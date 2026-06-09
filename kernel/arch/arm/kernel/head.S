@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/head.S
+ *  beep/arch/arm/kernel/head.S
  *
  *  Copyright (C) 1994-2002 Russell King
  *  Copyright (c) 2003 ARM Limited
@@ -11,8 +11,8 @@
  *
  *  Kernel startup code for all 32-bit CPUs
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 
 #include <asm/assembler.h>
 #include <asm/cp15.h>
@@ -66,7 +66,7 @@
  * This code is mostly position independent, so if you link the kernel at
  * 0xc0008000, you call this at __pa(0xc0008000).
  *
- * See linux/arch/arm/tools/mach-types for the complete list of machine
+ * See beep/arch/arm/tools/mach-types for the complete list of machine
  * numbers for r1.
  *
  * We're trying to keep crap to a minimum; DO NOT add any machine specific
@@ -395,7 +395,7 @@ __secondary_data:
  *  r13 = *virtual* address to jump to upon completion
  */
 __enable_mmu:
-#if defined(CONFIG_ALIGNMENT_TRAP) && __LINUX_ARM_ARCH__ < 6
+#if defined(CONFIG_ALIGNMENT_TRAP) && __BEEP_ARM_ARCH__ < 6
 	orr	r0, r0, #CR_A
 #else
 	bic	r0, r0, #CR_A
@@ -426,7 +426,7 @@ ENDPROC(__enable_mmu)
 /*
  * Enable the MMU.  This completely changes the structure of the visible
  * memory space.  You will not be able to trace execution through this.
- * If you have an enquiry about this, *please* check the linux-arm-kernel
+ * If you have an enquiry about this, *please* check the beep-arm-kernel
  * mailing list archives BEFORE sending another post to the list.
  *
  *  r0  = cp#15 control register

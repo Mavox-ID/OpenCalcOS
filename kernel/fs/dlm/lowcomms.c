@@ -47,11 +47,11 @@
 #include <asm/ioctls.h>
 #include <net/sock.h>
 #include <net/tcp.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/mutex.h>
-#include <linux/sctp.h>
-#include <linux/slab.h>
+#include <beep/pagemap.h>
+#include <beep/file.h>
+#include <beep/mutex.h>
+#include <beep/sctp.h>
+#include <beep/slab.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/user.h>
 #include <net/ipv6.h>

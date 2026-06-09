@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/host/pxa.c - PXA MMCI driver
+ *  beep/drivers/mmc/host/pxa.c - PXA MMCI driver
  *
  *  Copyright (C) 2003 Russell King, All Rights Reserved.
  *
@@ -16,29 +16,29 @@
  *	1 and 3 byte data transfers not supported
  *	max block length up to 1023
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/mmc/host.h>
-#include <linux/io.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio.h>
-#include <linux/gfp.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/of_device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/mmc/host.h>
+#include <beep/io.h>
+#include <beep/regulator/consumer.h>
+#include <beep/gpio.h>
+#include <beep/gfp.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
+#include <beep/of_device.h>
 
 #include <asm/sizes.h>
 
 #include <mach/hardware.h>
 #include <mach/dma.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/mmc-pxamci.h>
 
 #include "pxamci.h"
 

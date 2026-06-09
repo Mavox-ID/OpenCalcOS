@@ -35,7 +35,7 @@
 #include "psb_drv.h"
 #include "psb_intel_reg.h"
 #include "cdv_device.h"
-#include <linux/pm_runtime.h>
+#include <beep/pm_runtime.h>
 
 /* hdmi control bits */
 #define HDMI_NULL_PACKETS_DURING_VSYNC	(1 << 9)

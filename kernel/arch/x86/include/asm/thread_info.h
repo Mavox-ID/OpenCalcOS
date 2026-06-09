@@ -7,7 +7,7 @@
 #ifndef _ASM_X86_THREAD_INFO_H
 #define _ASM_X86_THREAD_INFO_H
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/page.h>
 #include <asm/types.h>
 
@@ -21,7 +21,7 @@ struct task_struct;
 struct exec_domain;
 #include <asm/processor.h>
 #include <asm/ftrace.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 struct thread_info {
 	struct task_struct	*task;		/* main task structure */

@@ -34,7 +34,7 @@
 #ifndef MTHCA_USER_H
 #define MTHCA_USER_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * Increment this value if any changes that break userspace ABI

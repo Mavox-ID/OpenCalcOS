@@ -11,12 +11,12 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/lp8788.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/lp8788.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #define MAX_LP8788_REGISTERS		0xA2
 

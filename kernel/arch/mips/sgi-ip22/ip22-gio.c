@@ -1,7 +1,7 @@
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 
 #include <asm/addrspace.h>
 #include <asm/paccess.h>

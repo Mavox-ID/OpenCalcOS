@@ -1,13 +1,13 @@
 #ifndef PD_COMMON_H
 #define PD_COMMON_H
 
-#include <linux/fs.h>
-#include <linux/wait.h>
-#include <linux/list.h>
-#include <linux/videodev2.h>
-#include <linux/semaphore.h>
-#include <linux/usb.h>
-#include <linux/poll.h>
+#include <beep/fs.h>
+#include <beep/wait.h>
+#include <beep/list.h>
+#include <beep/videodev2.h>
+#include <beep/semaphore.h>
+#include <beep/usb.h>
+#include <beep/poll.h>
 #include <media/videobuf-vmalloc.h>
 #include <media/v4l2-device.h>
 
@@ -199,7 +199,7 @@ struct poseidon {
 
 struct poseidon_format {
 	char 	*name;
-	int	fourcc;		 /* video4linux 2	  */
+	int	fourcc;		 /* video4beep 2	  */
 	int	depth;		 /* bit/pixel		  */
 	int	flags;
 };

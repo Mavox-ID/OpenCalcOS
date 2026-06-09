@@ -16,15 +16,15 @@
  * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  *
  */
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/hid-sensor-hub.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
+#include <beep/hid-sensor-hub.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
 #include "hid-sensor-attributes.h"
 
 static int pow_10(unsigned power)

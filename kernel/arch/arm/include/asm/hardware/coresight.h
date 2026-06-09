@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/include/asm/hardware/coresight.h
+ * beep/arch/arm/include/asm/hardware/coresight.h
  *
  * CoreSight components' registers
  *

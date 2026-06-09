@@ -1,8 +1,8 @@
 /*
- *  w83795.c - Linux kernel driver for hardware monitoring
+ *  w83795.c - Beep kernel driver for hardware monitoring
  *  Copyright (C) 2008 Nuvoton Technology Corp.
  *                Wei Song
- *  Copyright (C) 2010 Jean Delvare <khali@linux-fr.org>
+ *  Copyright (C) 2010 Jean Delvare <khali@beep-fr.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -25,16 +25,16 @@
  *  w83795adg   18     14     2     6     8    0x79   0x5ca3  yes   no
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/jiffies.h>
 
 /* Addresses to scan */
 static const unsigned short normal_i2c[] = {
@@ -2281,6 +2281,6 @@ static struct i2c_driver w83795_driver = {
 
 module_i2c_driver(w83795_driver);
 
-MODULE_AUTHOR("Wei Song, Jean Delvare <khali@linux-fr.org>");
+MODULE_AUTHOR("Wei Song, Jean Delvare <khali@beep-fr.org>");
 MODULE_DESCRIPTION("W83795G/ADG hardware monitoring driver");
 MODULE_LICENSE("GPL");

@@ -8,10 +8,10 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mbus.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/mbus.h>
+#include <beep/io.h>
 #include <asm/mach/arch.h>
 #include <asm/setup.h>
 #include <mach/dove.h>

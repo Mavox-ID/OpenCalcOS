@@ -4,7 +4,7 @@
  *    PnpNetwork PN1010 QPSK Demodulator
  *
  * Copyright (C) 2005 Andrew de Quincey <adq_dvb@lidskialf.net>
- * Copyright (C) 2005-8 Patrick Boettcher <pb@linuxtv.org>
+ * Copyright (C) 2005-8 Patrick Boettcher <pb@beeptv.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,16 +22,16 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/jiffies.h>
 #include <asm/div64.h>
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 
 
 #include "dvb_frontend.h"

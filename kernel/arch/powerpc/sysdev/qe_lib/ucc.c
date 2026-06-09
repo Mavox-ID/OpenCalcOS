@@ -13,12 +13,12 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/stddef.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/stddef.h>
+#include <beep/spinlock.h>
+#include <beep/export.h>
 
 #include <asm/irq.h>
 #include <asm/io.h>

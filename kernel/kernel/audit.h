@@ -19,9 +19,9 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/fs.h>
-#include <linux/audit.h>
-#include <linux/skbuff.h>
+#include <beep/fs.h>
+#include <beep/audit.h>
+#include <beep/skbuff.h>
 
 /* 0 = no checking
    1 = put_count checking
@@ -95,7 +95,7 @@ struct audit_netlink_list {
 
 int audit_send_list(void *);
 
-extern int selinux_audit_rule_update(void);
+extern int sebeep_audit_rule_update(void);
 
 extern struct mutex audit_filter_mutex;
 extern void audit_free_rule_rcu(struct rcu_head *);

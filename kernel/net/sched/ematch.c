@@ -81,13 +81,13 @@
  *      open up a beer to watch the compilation going.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/rtnetlink.h>
+#include <beep/skbuff.h>
 #include <net/pkt_cls.h>
 
 static LIST_HEAD(ematch_ops);

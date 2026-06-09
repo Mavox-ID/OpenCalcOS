@@ -1,7 +1,7 @@
 #ifndef _ASM_S390_PCI_INSN_H
 #define _ASM_S390_PCI_INSN_H
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 #define ZPCI_INSN_BUSY_DELAY	1	/* 1 microsecond */
 

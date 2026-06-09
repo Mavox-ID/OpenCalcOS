@@ -2,9 +2,9 @@
 #define __ASM_POWERPC_SYSCALLS_H
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/linkage.h>
+#include <beep/types.h>
 #include <asm/signal.h>
 
 struct pt_regs;

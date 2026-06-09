@@ -19,11 +19,11 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/spi/spi.h>
+#include <beep/gpio.h>
+#include <beep/leds.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/spi/spi.h>
 #include <video/platform_lcd.h>
 
 #include <asm/mach-types.h>

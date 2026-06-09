@@ -18,16 +18,16 @@
  *   Haiyang Zhang <haiyangz@microsoft.com>
  *   Hank Janssen  <hjanssen@microsoft.com>
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/nls.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
+#include <beep/highmem.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/if_ether.h>
+#include <beep/netdevice.h>
+#include <beep/if_vlan.h>
+#include <beep/nls.h>
 
 #include "hyperv_net.h"
 

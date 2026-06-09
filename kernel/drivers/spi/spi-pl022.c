@@ -7,7 +7,7 @@
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  *
  * Initial version inspired by:
- *	linux-2.6.17-rc3-mm1/drivers/spi/pxa2xx_spi.c
+ *	beep-2.6.17-rc3-mm1/drivers/spi/pxa2xx_spi.c
  * Initial adoption to PL022 by:
  *      Sachin Verma <sachin.verma@st.com>
  *
@@ -22,27 +22,27 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/spi/spi.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/pl022.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/pm_runtime.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/ioport.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/spi/spi.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/pl022.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/scatterlist.h>
+#include <beep/pm_runtime.h>
+#include <beep/gpio.h>
+#include <beep/of_gpio.h>
+#include <beep/pinctrl/consumer.h>
 
 /*
  * This macro is used to define some register default values.

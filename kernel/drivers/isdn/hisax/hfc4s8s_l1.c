@@ -20,15 +20,15 @@
 /*                                                                       */
 /*************************************************************************/
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/skbuff.h>
-#include <linux/wait.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/timer.h>
+#include <beep/skbuff.h>
+#include <beep/wait.h>
 #include <asm/io.h>
 #include "hisax_if.h"
 #include "hfc4s8s_l1.h"

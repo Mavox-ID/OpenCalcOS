@@ -6,7 +6,7 @@
 #ifndef __ASM_IRQFLAGS_H
 #define __ASM_IRQFLAGS_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* store then OR system mask. */
 #define __arch_local_irq_stosm(__or)					\

@@ -7,13 +7,13 @@
  * Licensed under version 2 of the
  * GNU General Public Licence
  */
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/maple.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/maple.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/map.h>
 
 struct vmu_cache {
 	unsigned char *buffer;		/* Cache */

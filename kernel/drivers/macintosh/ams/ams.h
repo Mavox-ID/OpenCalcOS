@@ -1,10 +1,10 @@
-#include <linux/i2c.h>
-#include <linux/input-polldev.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/of_device.h>
+#include <beep/i2c.h>
+#include <beep/input-polldev.h>
+#include <beep/kthread.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/of_device.h>
 
 enum ams_irq {
 	AMS_IRQ_FREEFALL = 0x01,

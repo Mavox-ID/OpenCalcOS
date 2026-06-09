@@ -19,8 +19,8 @@
  *
  */
 
-#include <linux/device.h>   // for linux/firmware.h
-#include <linux/firmware.h>
+#include <beep/device.h>   // for beep/firmware.h
+#include <beep/firmware.h>
 #include "pvrusb2-util.h"
 #include "pvrusb2-encoder.h"
 #include "pvrusb2-hdw-internal.h"

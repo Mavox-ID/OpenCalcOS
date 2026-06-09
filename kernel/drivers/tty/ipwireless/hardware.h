@@ -18,9 +18,9 @@
 #ifndef _IPWIRELESS_CS_HARDWARE_H_
 #define _IPWIRELESS_CS_HARDWARE_H_
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
 
 #define IPW_CONTROL_LINE_CTS 0x0001
 #define IPW_CONTROL_LINE_DCD 0x0002

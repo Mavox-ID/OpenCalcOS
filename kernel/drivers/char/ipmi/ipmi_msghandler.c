@@ -31,21 +31,21 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/ipmi.h>
-#include <linux/ipmi_smi.h>
-#include <linux/notifier.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/rcupdate.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/poll.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/ipmi.h>
+#include <beep/ipmi_smi.h>
+#include <beep/notifier.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/rcupdate.h>
+#include <beep/interrupt.h>
 
 #define PFX "IPMI message handler: "
 

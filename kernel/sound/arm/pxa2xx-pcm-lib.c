@@ -4,9 +4,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

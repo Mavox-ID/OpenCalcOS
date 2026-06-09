@@ -24,7 +24,7 @@
  * Yoshinori Sato <ysato@users.sourceforge.jp> 19-May-2004.
  *   added Renesas H8/300 support.
  *
- * Paul Mundt <lethal@linux-sh.org> 08-Aug-2003.
+ * Paul Mundt <lethal@beep-sh.org> 08-Aug-2003.
  *   Integrated support for sh64 (SH-5), from preliminary modutils
  *   patches from Benedict Gaster <benedict.gaster@superh.com>.
  *   Currently limited to support for 32bit ABI.
@@ -38,18 +38,18 @@
  *
  * Magnus Damm <damm@opensource.se> added PowerPC support 20-Feb-2001.
  *   PowerPC specific code stolen from modutils-2.3.16,
- *   written by Paul Mackerras, Copyright 1996, 1997 Linux International.
+ *   written by Paul Mackerras, Copyright 1996, 1997 Beep International.
  *   I've only tested the code on mpc8xx platforms in big-endian mode.
  *   Did some cleanup and added USE_xxx_ENTRIES...
  *
  * Quinn Jensen <jensenq@lineo.com> added MIPS support 23-Feb-2001.
  *   based on modutils-2.4.2
  *   MIPS specific support for Elf loading and relocation.
- *   Copyright 1996, 1997 Linux International.
+ *   Copyright 1996, 1997 Beep International.
  *   Contributed by Ralf Baechle <ralf@gnu.ai.mit.edu>
  *
- * Based almost entirely on the Linux modutils-2.3.11 implementation.
- *   Copyright 1996, 1997 Linux International.
+ * Based almost entirely on the Beep modutils-2.3.11 implementation.
+ *   Copyright 1996, 1997 Beep International.
  *   New implementation contributed by Richard Henderson <rth@tamu.edu>
  *   Based on original work by Bjorn Ekwall <bj0rn@blox.se>
  *   Restructured (and partly rewritten) by:
@@ -320,12 +320,12 @@
 //--------modutils module.h, lines 45-242
 //----------------------------------------------------------------------------
 
-/* Definitions for the Linux module syscall interface.
-   Copyright 1996, 1997 Linux International.
+/* Definitions for the Beep module syscall interface.
+   Copyright 1996, 1997 Beep International.
 
    Contributed by Richard Henderson <rth@tamu.edu>
 
-   This file is part of the Linux modutils.
+   This file is part of the Beep modutils.
 
    This program is free software; you can redistribute it and/or modify it
    under the terms of the GNU General Public License as published by the
@@ -370,7 +370,7 @@ enum {
 #endif
 
 /*======================================================================*/
-/* The structures used in Linux 2.1.  */
+/* The structures used in Beep 2.1.  */
 
 /* Note: new_module_symbol does not use tgt_long intentionally */
 struct new_module_symbol {
@@ -477,11 +477,11 @@ int delete_module(const char *module, unsigned int flags);
 //----------------------------------------------------------------------------
 
 /* Elf object file loading and relocation routines.
-   Copyright 1996, 1997 Linux International.
+   Copyright 1996, 1997 Beep International.
 
    Contributed by Richard Henderson <rth@tamu.edu>
 
-   This file is part of the Linux modutils.
+   This file is part of the Beep modutils.
 
    This program is free software; you can redistribute it and/or modify it
    under the terms of the GNU General Public License as published by the
@@ -2358,7 +2358,7 @@ static char *get_modinfo_value(struct obj_file *f, const char *key)
 /*======================================================================*/
 /* Functions relating to module loading after 2.1.18.  */
 
-/* From Linux-2.6 sources */
+/* From Beep-2.6 sources */
 /* You can use " around spaces, but can't escape ". */
 /* Hyphens and underscores equivalent in parameter names. */
 static char *next_arg(char *args, char **param, char **val)
@@ -3481,7 +3481,7 @@ static int obj_gpl_license(struct obj_file *f, const char **license)
 {
 	struct obj_section *sec;
 	/* This list must match *exactly* the list of allowable licenses in
-	 * linux/include/linux/module.h.  Checking for leading "GPL" will not
+	 * beep/include/beep/module.h.  Checking for leading "GPL" will not
 	 * work, somebody will use "GPL sucks, this is proprietary".
 	 */
 	static const char *const gpl_licenses[] ALIGN_PTR = {

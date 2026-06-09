@@ -16,16 +16,16 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  * General Public License for more details.
  */
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/usb.h>
+#include <beep/init.h>
+#include <beep/signal.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/usb.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
+#include <beep/can.h>
+#include <beep/can/dev.h>
+#include <beep/can/error.h>
 
 #include "pcan_usb_core.h"
 

@@ -32,10 +32,10 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/irqreturn.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/irqreturn.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
 
 #include <asm/mipsregs.h>
 #include <asm/netlogic/interrupt.h>

@@ -7,9 +7,9 @@
  * Copyright (C) 2009 Florian Fainelli <florian@openwrt.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/cpu.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/cpu.h>
 #include <asm/cpu.h>
 #include <asm/cpu-info.h>
 #include <asm/mipsregs.h>

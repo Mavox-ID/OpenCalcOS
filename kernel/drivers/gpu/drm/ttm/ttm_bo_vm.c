@@ -33,10 +33,10 @@
 #include <ttm/ttm_module.h>
 #include <ttm/ttm_bo_driver.h>
 #include <ttm/ttm_placement.h>
-#include <linux/mm.h>
-#include <linux/rbtree.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <beep/mm.h>
+#include <beep/rbtree.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
 
 #define TTM_BO_VM_NUM_PREFAULT 16
 

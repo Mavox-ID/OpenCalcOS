@@ -1,6 +1,6 @@
-/* linux/arch/arm/mach-s3c2410/pm-h1940.S
+/* beep/arch/arm/mach-s3c2410/pm-h1940.S
  *
- * Copyright (c) 2006 Ben Dooks <ben-linux@fluff.org>
+ * Copyright (c) 2006 Ben Dooks <ben-beep@fluff.org>
  *
  * H1940 Suspend to RAM
  *
@@ -18,7 +18,7 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 #include <mach/hardware.h>
 #include <mach/map.h>

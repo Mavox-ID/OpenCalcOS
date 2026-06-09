@@ -20,17 +20,17 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/math64.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/pm_runtime.h>
+#include <beep/math64.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
 
-#include <linux/platform_data/ntc_thermistor.h>
+#include <beep/platform_data/ntc_thermistor.h>
 
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
 
 struct ntc_compensation {
 	int		temp_C;

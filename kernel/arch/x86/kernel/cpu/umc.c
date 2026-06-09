@@ -1,5 +1,5 @@
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
 #include <asm/processor.h>
 #include "cpu.h"
 

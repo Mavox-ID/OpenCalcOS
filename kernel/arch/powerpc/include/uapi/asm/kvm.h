@@ -17,12 +17,12 @@
  * Authors: Hollis Blanchard <hollisb@us.ibm.com>
  */
 
-#ifndef __LINUX_KVM_POWERPC_H
-#define __LINUX_KVM_POWERPC_H
+#ifndef __BEEP_KVM_POWERPC_H
+#define __BEEP_KVM_POWERPC_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
-/* Select powerpc specific features in <linux/kvm.h> */
+/* Select powerpc specific features in <beep/kvm.h> */
 #define __KVM_HAVE_SPAPR_TCE
 #define __KVM_HAVE_PPC_SMT
 
@@ -413,4 +413,4 @@ struct kvm_get_htab_header {
 
 #define KVM_REG_PPC_EPCR	(KVM_REG_PPC | KVM_REG_SIZE_U32 | 0x85)
 
-#endif /* __LINUX_KVM_POWERPC_H */
+#endif /* __BEEP_KVM_POWERPC_H */

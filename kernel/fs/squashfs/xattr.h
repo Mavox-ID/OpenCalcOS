@@ -1,5 +1,5 @@
 /*
- * Squashfs - a compressed read only filesystem for Linux
+ * Squashfs - a compressed read only filesystem for Beep
  *
  * Copyright (c) 2010
  * Phillip Lougher <phillip@squashfs.org.uk>

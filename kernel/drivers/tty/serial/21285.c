@@ -3,16 +3,16 @@
  *
  * Based on drivers/char/serial.c
  */
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/device.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/tty.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/device.h>
+#include <beep/tty_flip.h>
+#include <beep/serial_core.h>
+#include <beep/serial.h>
+#include <beep/io.h>
 
 #include <asm/irq.h>
 #include <asm/mach-types.h>

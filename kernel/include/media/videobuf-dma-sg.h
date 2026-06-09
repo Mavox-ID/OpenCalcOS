@@ -1,5 +1,5 @@
 /*
- * helper functions for SG DMA video4linux capture buffers
+ * helper functions for SG DMA video4beep capture buffers
  *
  * The functions expect the hardware being able to scatter gather
  * (i.e. the buffers are not linear in physical memory, but fragmented

@@ -2,14 +2,14 @@
  * Copyright (C) 1999, 2000 Ralf Baechle (ralf@gnu.org)
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/param.h>
-#include <linux/timex.h>
-#include <linux/mm.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/param.h>
+#include <beep/timex.h>
+#include <beep/mm.h>
 
 #include <asm/sn/klconfig.h>
 #include <asm/sn/arch.h>

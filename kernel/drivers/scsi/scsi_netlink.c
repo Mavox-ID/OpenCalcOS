@@ -18,12 +18,12 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  */
-#include <linux/time.h>
-#include <linux/jiffies.h>
-#include <linux/security.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/time.h>
+#include <beep/jiffies.h>
+#include <beep/security.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include <net/sock.h>
 #include <net/netlink.h>
 

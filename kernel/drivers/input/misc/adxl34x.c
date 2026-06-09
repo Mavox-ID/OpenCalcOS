@@ -1,22 +1,22 @@
 /*
  * ADXL345/346 Three-Axis Digital Accelerometers
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucbeep.org/
  *
  * Copyright (C) 2009 Michael Hennerich, Analog Devices Inc.
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/input/adxl34x.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/input/adxl34x.h>
+#include <beep/module.h>
 
 #include "adxl34x.h"
 
@@ -910,6 +910,6 @@ int adxl34x_remove(struct adxl34x *ac)
 }
 EXPORT_SYMBOL_GPL(adxl34x_remove);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("ADXL345/346 Three-Axis Digital Accelerometer Driver");
 MODULE_LICENSE("GPL");

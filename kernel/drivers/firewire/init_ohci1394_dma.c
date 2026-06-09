@@ -32,16 +32,16 @@
  * Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>		/* for PCI defines */
-#include <linux/string.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>		/* for PCI defines */
+#include <beep/string.h>
 
 #include <asm/pci-direct.h>	/* for direct PCI config space access */
 #include <asm/fixmap.h>
 
-#include <linux/init_ohci1394_dma.h>
+#include <beep/init_ohci1394_dma.h>
 #include "ohci.h"
 
 int __initdata init_ohci1394_dma_early;

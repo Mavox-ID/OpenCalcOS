@@ -6,13 +6,13 @@
 #ifndef __XEN_PCIBACK_H__
 #define __XEN_PCIBACK_H__
 
-#include <linux/pci.h>
-#include <linux/interrupt.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
 #include <xen/xenbus.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/atomic.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/atomic.h>
 #include <xen/interface/io/pciif.h>
 
 #define DRV_NAME	"xen-pciback"

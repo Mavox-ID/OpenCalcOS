@@ -17,11 +17,11 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/export.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/jiffies.h>
+#include <beep/export.h>
 #include <asm/irq.h>
 #include <mach/hardware.h>
 #include <asm/sizes.h>
@@ -970,7 +970,7 @@ void __init iop13xx_pci_init(void)
 	/* Setup the Min Address for PCI memory... */
 	pcibios_min_mem = IOP13XX_PCIX_LOWER_MEM_BA;
 
-	/* if Linux is given control of an ATU
+	/* if Beep is given control of an ATU
 	 * clear out its prior configuration,
 	 * otherwise do not touch the registers
 	 */

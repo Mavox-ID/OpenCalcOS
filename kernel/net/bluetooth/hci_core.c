@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for Beep
    Copyright (C) 2000-2001 Qualcomm Incorporated
    Copyright (C) 2011 ProFUSION Embedded Systems
 
@@ -25,10 +25,10 @@
 
 /* Bluetooth HCI core. */
 
-#include <linux/export.h>
-#include <linux/idr.h>
+#include <beep/export.h>
+#include <beep/idr.h>
 
-#include <linux/rfkill.h>
+#include <beep/rfkill.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

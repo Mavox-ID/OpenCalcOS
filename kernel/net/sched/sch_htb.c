@@ -25,18 +25,18 @@
  *			fixed requeue routine
  *		and many others. thanks.
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/list.h>
-#include <linux/compiler.h>
-#include <linux/rbtree.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/skbuff.h>
+#include <beep/list.h>
+#include <beep/compiler.h>
+#include <beep/rbtree.h>
+#include <beep/workqueue.h>
+#include <beep/slab.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 

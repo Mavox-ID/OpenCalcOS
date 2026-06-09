@@ -15,17 +15,17 @@
  *              move state/event descriptions to a user space logger
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/skbuff.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/skbuff.h>
 
-#include <linux/timer.h>
+#include <beep/timer.h>
 #include <asm/io.h>
 
-#include <linux/isdnif.h>
+#include <beep/isdnif.h>
 
 #include "pcbit.h"
 #include "edss1.h"

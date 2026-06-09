@@ -9,10 +9,10 @@
  * this archive for more details.
  */
 
-#include <linux/tracehook.h>
-#include <linux/signal.h>
-#include <linux/uprobes.h>
-#include <linux/key.h>
+#include <beep/tracehook.h>
+#include <beep/signal.h>
+#include <beep/uprobes.h>
+#include <beep/key.h>
 #include <asm/hw_breakpoint.h>
 #include <asm/uaccess.h>
 #include <asm/unistd.h>

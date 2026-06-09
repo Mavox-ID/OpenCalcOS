@@ -20,15 +20,15 @@
  */
 
 #define pr_fmt(fmt)	"(stc): " fmt
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/tty.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/tty.h>
 
-#include <linux/seq_file.h>
-#include <linux/skbuff.h>
+#include <beep/seq_file.h>
+#include <beep/skbuff.h>
 
-#include <linux/ti_wilink_st.h>
+#include <beep/ti_wilink_st.h>
 
 extern void st_kim_recv(void *, const unsigned char *, long);
 void st_int_recv(void *, const unsigned char *, long);

@@ -1,5 +1,5 @@
 /*
- * A generic implementation of binary search for the Linux kernel
+ * A generic implementation of binary search for the Beep kernel
  *
  * Copyright (C) 2008-2009 Ksplice, Inc.
  * Author: Tim Abbott <tabbott@ksplice.com>
@@ -9,8 +9,8 @@
  * published by the Free Software Foundation; version 2.
  */
 
-#include <linux/export.h>
-#include <linux/bsearch.h>
+#include <beep/export.h>
+#include <beep/bsearch.h>
 
 /*
  * bsearch - binary search an array of elements

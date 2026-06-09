@@ -23,22 +23,22 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/reboot.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/clk.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/types.h>
+#include <beep/mutex.h>
+#include <beep/reboot.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
+#include <beep/of_irq.h>
+#include <beep/io.h>
 
 #include "omap-bandgap.h"
 

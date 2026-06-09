@@ -1,37 +1,37 @@
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/mm.h>
-#include <linux/stat.h>
-#include <linux/fcntl.h>
-#include <linux/swap.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/perf_event.h>
-#include <linux/highmem.h>
-#include <linux/spinlock.h>
-#include <linux/key.h>
-#include <linux/personality.h>
-#include <linux/binfmts.h>
-#include <linux/coredump.h>
-#include <linux/utsname.h>
-#include <linux/pid_namespace.h>
-#include <linux/module.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/tsacct_kern.h>
-#include <linux/cn_proc.h>
-#include <linux/audit.h>
-#include <linux/tracehook.h>
-#include <linux/kmod.h>
-#include <linux/fsnotify.h>
-#include <linux/fs_struct.h>
-#include <linux/pipe_fs_i.h>
-#include <linux/oom.h>
-#include <linux/compat.h>
+#include <beep/slab.h>
+#include <beep/file.h>
+#include <beep/fdtable.h>
+#include <beep/mm.h>
+#include <beep/stat.h>
+#include <beep/fcntl.h>
+#include <beep/swap.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/pagemap.h>
+#include <beep/perf_event.h>
+#include <beep/highmem.h>
+#include <beep/spinlock.h>
+#include <beep/key.h>
+#include <beep/personality.h>
+#include <beep/binfmts.h>
+#include <beep/coredump.h>
+#include <beep/utsname.h>
+#include <beep/pid_namespace.h>
+#include <beep/module.h>
+#include <beep/namei.h>
+#include <beep/mount.h>
+#include <beep/security.h>
+#include <beep/syscalls.h>
+#include <beep/tsacct_kern.h>
+#include <beep/cn_proc.h>
+#include <beep/audit.h>
+#include <beep/tracehook.h>
+#include <beep/kmod.h>
+#include <beep/fsnotify.h>
+#include <beep/fs_struct.h>
+#include <beep/pipe_fs_i.h>
+#include <beep/oom.h>
+#include <beep/compat.h>
 
 #include <asm/uaccess.h>
 #include <asm/mmu_context.h>
@@ -463,7 +463,7 @@ void do_coredump(siginfo_t *siginfo)
 	struct core_state core_state;
 	struct core_name cn;
 	struct mm_struct *mm = current->mm;
-	struct linux_binfmt * binfmt;
+	struct beep_binfmt * binfmt;
 	const struct cred *old_cred;
 	struct cred *cred;
 	int retval = 0;

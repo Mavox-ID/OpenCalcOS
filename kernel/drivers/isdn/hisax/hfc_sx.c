@@ -4,20 +4,20 @@
  *
  * Author       Werner Cornelius
  *              based on existing driver for CCD HFC PCI cards
- * Copyright    by Werner Cornelius  <werner@isdn4linux.de>
+ * Copyright    by Werner Cornelius  <werner@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include "hisax.h"
 #include "hfc_sx.h"
 #include "isdnl1.h"
-#include <linux/interrupt.h>
-#include <linux/isapnp.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/isapnp.h>
+#include <beep/slab.h>
 
 static const char *hfcsx_revision = "$Revision: 1.12.2.5 $";
 

@@ -11,13 +11,13 @@
  * but via a trigger rather than a specific periodic timer system.
  */
 
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/rtc.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
+#include <beep/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/rtc.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/trigger.h>
 
 static LIST_HEAD(iio_prtc_trigger_list);
 static DEFINE_MUTEX(iio_prtc_trigger_list_lock);

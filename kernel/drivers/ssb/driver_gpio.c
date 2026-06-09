@@ -8,9 +8,9 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/gpio.h>
-#include <linux/export.h>
-#include <linux/ssb/ssb.h>
+#include <beep/gpio.h>
+#include <beep/export.h>
+#include <beep/ssb/ssb.h>
 
 #include "ssb_private.h"
 

@@ -4,7 +4,7 @@
  * Copyright (C) 2008 Intel Corp.
  *
  * Author: Sarah Sharp
- * Some code borrowed from the Linux EHCI driver.
+ * Some code borrowed from the Beep EHCI driver.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -20,13 +20,13 @@
  * Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#ifndef __LINUX_XHCI_HCD_H
-#define __LINUX_XHCI_HCD_H
+#ifndef __BEEP_XHCI_HCD_H
+#define __BEEP_XHCI_HCD_H
 
-#include <linux/usb.h>
-#include <linux/timer.h>
-#include <linux/kernel.h>
-#include <linux/usb/hcd.h>
+#include <beep/usb.h>
+#include <beep/timer.h>
+#include <beep/kernel.h>
+#include <beep/usb/hcd.h>
 
 /* Code sharing between pci-quirks and xhci hcd */
 #include	"xhci-ext-caps.h"
@@ -395,7 +395,7 @@ struct xhci_op_regs {
  * Ring Segment Table (ERST) associated with it.  The event ring is comprised of
  * multiple segments of the same size.  The HC places events on the ring and
  * "updates the Cycle bit in the TRBs to indicate to software the current
- * position of the Enqueue Pointer." The HCD (Linux) processes those events and
+ * position of the Enqueue Pointer." The HCD (Beep) processes those events and
  * updates the dequeue pointer.
  */
 struct xhci_intr_reg {
@@ -1848,4 +1848,4 @@ struct xhci_input_control_ctx *xhci_get_input_control_ctx(struct xhci_hcd *xhci,
 struct xhci_slot_ctx *xhci_get_slot_ctx(struct xhci_hcd *xhci, struct xhci_container_ctx *ctx);
 struct xhci_ep_ctx *xhci_get_ep_ctx(struct xhci_hcd *xhci, struct xhci_container_ctx *ctx, unsigned int ep_index);
 
-#endif /* __LINUX_XHCI_HCD_H */
+#endif /* __BEEP_XHCI_HCD_H */

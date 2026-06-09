@@ -4,12 +4,12 @@
  * RTC clock driver for the AB3100 Analog Baseband Chip
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/mfd/abx500.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/rtc.h>
+#include <beep/mfd/abx500.h>
 
 /* Clock rate in Hz */
 #define AB3100_RTC_CLOCK_RATE	32768

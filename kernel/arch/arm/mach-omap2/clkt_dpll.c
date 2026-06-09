@@ -14,10 +14,10 @@
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/clk-provider.h>
+#include <beep/io.h>
 
 #include <asm/div64.h>
 

@@ -1,8 +1,8 @@
 /*
  * Ceph string constants
  */
-#include <linux/module.h>
-#include <linux/ceph/types.h>
+#include <beep/module.h>
+#include <beep/ceph/types.h>
 
 const char *ceph_entity_type_name(int type)
 {

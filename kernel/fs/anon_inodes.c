@@ -8,17 +8,17 @@
  *
  */
 
-#include <linux/cred.h>
-#include <linux/file.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/magic.h>
-#include <linux/anon_inodes.h>
+#include <beep/cred.h>
+#include <beep/file.h>
+#include <beep/poll.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/magic.h>
+#include <beep/anon_inodes.h>
 
 #include <asm/uaccess.h>
 

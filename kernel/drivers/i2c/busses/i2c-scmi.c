@@ -8,13 +8,13 @@
  * the Free Software Foundation version 2.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/stddef.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/acpi.h>
 
 #define ACPI_SMBUS_HC_CLASS		"smbus"
 #define ACPI_SMBUS_HC_DEVICE_NAME	"cmi"

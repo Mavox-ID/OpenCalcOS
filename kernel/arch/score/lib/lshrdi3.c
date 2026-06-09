@@ -18,7 +18,7 @@
  */
 
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include "libgcc.h"
 
 long long __lshrdi3(long long u, word_type b)

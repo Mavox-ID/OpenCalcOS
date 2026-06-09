@@ -33,9 +33,9 @@
  * SOFTWARE.
  */
 
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
 
 #include <asm/io.h>
 

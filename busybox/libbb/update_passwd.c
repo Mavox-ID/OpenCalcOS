@@ -15,13 +15,13 @@
  */
 #include "libbb.h"
 
-#if ENABLE_SELINUX
-static void check_selinux_update_passwd(const char *username)
+#if ENABLE_SEBEEP
+static void check_sebeep_update_passwd(const char *username)
 {
 	security_context_t seuser;
 	char *p;
 
-	if (getuid() != (uid_t)0 || is_selinux_enabled() == 0)
+	if (getuid() != (uid_t)0 || is_sebeep_enabled() == 0)
 		return;  /* No need to check */
 
 	if (getprevcon_raw(&seuser) < 0)
@@ -43,15 +43,15 @@ static void check_selinux_update_passwd(const char *username)
 		if (av == 0)
 			goto die;
 
-		if (selinux_check_passwd_access(av) != 0)
+		if (sebeep_check_passwd_access(av) != 0)
  die:
-			bb_simple_error_msg_and_die("SELinux: access denied");
+			bb_simple_error_msg_and_die("SEBeep: access denied");
 	}
 	if (ENABLE_FEATURE_CLEAN_UP)
 		freecon(seuser);
 }
 #else
-# define check_selinux_update_passwd(username) ((void)0)
+# define check_sebeep_update_passwd(username) ((void)0)
 #endif
 
 /*
@@ -115,7 +115,7 @@ int FAST_FUNC update_passwd(const char *filename,
 		return ret;
 
 	if (name)
-		check_selinux_update_passwd(name);
+		check_sebeep_update_passwd(name);
 
 	/* New passwd file, "/conf/passwd+" for now */
 	fnamesfx = xasprintf("%s+", filename);
@@ -133,7 +133,7 @@ int FAST_FUNC update_passwd(const char *filename,
 	}
 	old_fd = fileno(old_fp);
 
-	selinux_preserve_fcontext(old_fd);
+	sebeep_preserve_fcontext(old_fd);
 
 	/* Try to create "/conf/passwd+". Wait if it exists. */
 	i = 30;

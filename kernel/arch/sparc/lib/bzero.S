@@ -4,7 +4,7 @@
  * Copyright (C) 2005 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 	.text
 

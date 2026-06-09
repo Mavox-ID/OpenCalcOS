@@ -21,12 +21,12 @@
  * Alexander Smirnov <alex.bluesman.smirnov@gmail.com>
  */
 
-#include <linux/netdevice.h>
-#include <linux/module.h>
-#include <linux/if_arp.h>
+#include <beep/netdevice.h>
+#include <beep/module.h>
+#include <beep/if_arp.h>
 
 #include <net/rtnetlink.h>
-#include <linux/nl802154.h>
+#include <beep/nl802154.h>
 #include <net/af_ieee802154.h>
 #include <net/mac802154.h>
 #include <net/ieee802154_netdev.h>

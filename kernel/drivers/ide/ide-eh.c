@@ -1,8 +1,8 @@
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/ide.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/ide.h>
+#include <beep/delay.h>
 
 static ide_startstop_t ide_ata_error(ide_drive_t *drive, struct request *rq,
 				     u8 stat, u8 err)

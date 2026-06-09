@@ -24,20 +24,20 @@
  * 02110-1301 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/blktrans.h>
-#include <linux/rbtree.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/genhd.h>
-#include <linux/swap.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/math64.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/blktrans.h>
+#include <beep/rbtree.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/genhd.h>
+#include <beep/swap.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/device.h>
+#include <beep/math64.h>
 
 #define MTDSWAP_PREFIX "mtdswap"
 

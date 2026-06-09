@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel(R) Gigabit Ethernet Linux driver
+  Intel(R) Gigabit Ethernet Beep driver
   Copyright(c) 2012 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it

@@ -14,7 +14,7 @@
 
 /* For 2.6, use the cleaned up header to get the 64 bit API. */
 // Commented out per Rob's request
-//# include "fix_u32.h" /* some old toolchains need __u64 for linux/loop.h */
+//# include "fix_u32.h" /* some old toolchains need __u64 for beep/loop.h */
 # include <linux/loop.h>
 typedef struct loop_info64 bb_loop_info;
 # define BB_LOOP_SET_STATUS LOOP_SET_STATUS64
@@ -23,7 +23,7 @@ typedef struct loop_info64 bb_loop_info;
 #else
 
 /* For 2.4 and earlier, use the 32 bit API (and don't trust the headers) */
-/* Stuff stolen from linux/loop.h for 2.4 and earlier kernels */
+/* Stuff stolen from beep/loop.h for 2.4 and earlier kernels */
 # include <linux/posix_types.h>
 # define LO_NAME_SIZE        64
 # define LO_KEY_SIZE         32
@@ -217,7 +217,7 @@ int FAST_FUNC set_loop(char **device, const char *file, unsigned long long offse
 	}
 
 	/* Find a loop device */
-	/* 0xfffff is a max possible minor number in Linux circa 2010 */
+	/* 0xfffff is a max possible minor number in Beep circa 2010 */
 	for (i = 0; i <= 0xfffff; i++) {
 		if (!*device) {
 			rc = get_next_free_loop(dev, i);

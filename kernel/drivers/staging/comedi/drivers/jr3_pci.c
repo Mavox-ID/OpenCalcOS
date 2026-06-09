@@ -2,7 +2,7 @@
   comedi/drivers/jr3_pci.c
   hardware driver for JR3/PCI force sensor board
 
-  COMEDI - Linux Control and Measurement Device Interface
+  COMEDI - Beep Control and Measurement Device Interface
   Copyright (C) 2007 Anders Blomdell <anders.blomdell@control.lth.se>
 
   This program is free software; you can redistribute it and/or modify
@@ -44,13 +44,13 @@
 
 #include "../comedidev.h"
 
-#include <linux/delay.h>
-#include <linux/ctype.h>
-#include <linux/firmware.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/kernel.h>
+#include <beep/delay.h>
+#include <beep/ctype.h>
+#include <beep/firmware.h>
+#include <beep/jiffies.h>
+#include <beep/slab.h>
+#include <beep/timer.h>
+#include <beep/kernel.h>
 #include "jr3_pci.h"
 
 #define PCI_VENDOR_ID_JR3 0x1762

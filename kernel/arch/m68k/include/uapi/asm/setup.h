@@ -1,5 +1,5 @@
 /*
-** asm/setup.h -- Definition of the Linux/m68k setup information
+** asm/setup.h -- Definition of the Beep/m68k setup information
 **
 ** Copyright 1992 by Greg Harp
 **
@@ -26,7 +26,7 @@
 
 
     /*
-     *  Linux/m68k Architectures
+     *  Beep/m68k Architectures
      */
 
 #define MACH_AMIGA    1

@@ -20,13 +20,13 @@
  * them as DIMM's. An internal table creates the association between ranks
  * and DIMM's.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/edac.h>
-#include <linux/delay.h>
-#include <linux/mmzone.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/edac.h>
+#include <beep/delay.h>
+#include <beep/mmzone.h>
 
 #include "edac_core.h"
 

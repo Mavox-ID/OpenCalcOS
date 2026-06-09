@@ -1,6 +1,6 @@
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
 #include <memmap.h>
 #include <hwregs/reg_map.h>
 #include <hwregs/reg_rdwr.h>

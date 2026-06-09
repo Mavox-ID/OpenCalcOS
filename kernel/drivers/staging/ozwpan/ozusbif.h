@@ -6,7 +6,7 @@
 #ifndef _OZUSBIF_H
 #define _OZUSBIF_H
 
-#include <linux/usb.h>
+#include <beep/usb.h>
 
 /* Reference counting functions.
  */

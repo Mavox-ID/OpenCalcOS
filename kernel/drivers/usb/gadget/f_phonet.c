@@ -10,19 +10,19 @@
  * version 2 as published by the Free Software Foundation.
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
 
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_phonet.h>
-#include <linux/if_arp.h>
+#include <beep/netdevice.h>
+#include <beep/if_ether.h>
+#include <beep/if_phonet.h>
+#include <beep/if_arp.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/composite.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/cdc.h>
+#include <beep/usb/composite.h>
 
 #include "u_phonet.h"
 

@@ -1,4 +1,4 @@
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 #include <asm/e820.h>
 
 static void resource_clip(struct resource *res, resource_size_t start,

@@ -9,13 +9,13 @@
  * (at your option) any later version.
  */
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/gfp.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/list.h>
+#include <beep/of.h>
+#include <beep/gfp.h>
 #include <memory/jedec_ddr.h>
-#include <linux/export.h>
+#include <beep/export.h>
 
 /**
  * of_get_min_tck() - extract min timing values for ddr

@@ -1,5 +1,5 @@
-#include <linux/export.h>
-#include <linux/bitops.h>
+#include <beep/export.h>
+#include <beep/bitops.h>
 #include <asm/types.h>
 
 /**

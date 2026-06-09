@@ -1,5 +1,5 @@
 GCC = nspire-gcc
-AR := "$(shell (which arm-elf-ar arm-none-eabi-ar arm-linux-gnueabi-ar | head -1) 2>/dev/null)"
+AR := "$(shell (which arm-elf-ar arm-none-eabi-ar arm-beep-gnueabi-ar | head -1) 2>/dev/null)"
 CHOST := $(shell (echo $(shell basename $(AR)) | sed 's/-ar$$//'))
 LIBDIR = ../lib
 INCDIR = ../include

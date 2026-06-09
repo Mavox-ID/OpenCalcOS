@@ -36,18 +36,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_device.h>
-#include <linux/libata.h>
+#include <beep/libata.h>
 
 #define DRV_NAME			"sata_nv"
 #define DRV_VERSION			"3.5"
@@ -415,7 +415,7 @@ static struct scsi_host_template nv_swncq_sht = {
  *
  *  bko11195 reports that link doesn't come online after hardreset on
  *  generic nv's and there have been several other similar reports on
- *  linux-ide.
+ *  beep-ide.
  *
  *  bko12351#c23 reports that warmplug on MCP61 doesn't work with
  *  softreset.
@@ -426,7 +426,7 @@ static struct scsi_host_template nv_swncq_sht = {
  *  reliably after hardreset.  The following thread reports detection
  *  failure on cold boot with the standard debouncing timing.
  *
- *  http://thread.gmane.org/gmane.linux.ide/34098
+ *  http://thread.gmane.org/gmane.beep.ide/34098
  *
  *  bko12176 reports that hardreset fails to bring up the link during
  *  boot on nf2.

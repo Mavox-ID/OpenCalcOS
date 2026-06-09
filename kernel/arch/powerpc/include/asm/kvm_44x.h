@@ -20,7 +20,7 @@
 #ifndef __ASM_44X_H__
 #define __ASM_44X_H__
 
-#include <linux/kvm_host.h>
+#include <beep/kvm_host.h>
 
 #define PPC44x_TLB_SIZE 64
 

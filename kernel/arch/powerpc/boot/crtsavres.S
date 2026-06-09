@@ -40,7 +40,7 @@
 	.file	"crtsavres.S"
 	.section ".text"
 
-/* On PowerPC64 Linux, these functions are provided by the linker.  */
+/* On PowerPC64 Beep, these functions are provided by the linker.  */
 #ifndef __powerpc64__
 
 #define _GLOBAL(name) \

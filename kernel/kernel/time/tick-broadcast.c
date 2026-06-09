@@ -1,5 +1,5 @@
 /*
- * linux/kernel/time/tick-broadcast.c
+ * beep/kernel/time/tick-broadcast.c
  *
  * This file contains functions which emulate a local clock-event
  * device via a broadcast event source.
@@ -11,13 +11,13 @@
  * This code is licenced under the GPL version 2. For details see
  * kernel-base/COPYING.
  */
-#include <linux/cpu.h>
-#include <linux/err.h>
-#include <linux/hrtimer.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/profile.h>
-#include <linux/sched.h>
+#include <beep/cpu.h>
+#include <beep/err.h>
+#include <beep/hrtimer.h>
+#include <beep/interrupt.h>
+#include <beep/percpu.h>
+#include <beep/profile.h>
+#include <beep/sched.h>
 
 #include "tick-internal.h"
 

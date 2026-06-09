@@ -9,11 +9,11 @@
  */
 #define pr_fmt(fmt) "intc: " fmt
 
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/stat.h>
+#include <beep/errno.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/stat.h>
 #include <asm/sizes.h>
 #include "internals.h"
 

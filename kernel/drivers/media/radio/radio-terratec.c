@@ -1,4 +1,4 @@
-/* Terratec ActiveRadio ISA Standalone card driver for Linux radio support
+/* Terratec ActiveRadio ISA Standalone card driver for Beep radio support
  * (c) 1999 R. Offermanns (rolf@offermanns.de)
  * based on the aimslab radio driver from M. Kirkwood
  * many thanks to Michael Becker and Friedhelm Birth (from TerraTec)
@@ -20,13 +20,13 @@
  * Converted to V4L2 API by Mauro Carvalho Chehab <mchehab@infradead.org>
  */
 
-#include <linux/module.h>	/* Modules 			*/
-#include <linux/init.h>		/* Initdata			*/
-#include <linux/ioport.h>	/* request_region		*/
-#include <linux/videodev2.h>	/* kernel radio structs		*/
-#include <linux/mutex.h>
-#include <linux/io.h>		/* outb, outb_p			*/
-#include <linux/slab.h>
+#include <beep/module.h>	/* Modules 			*/
+#include <beep/init.h>		/* Initdata			*/
+#include <beep/ioport.h>	/* request_region		*/
+#include <beep/videodev2.h>	/* kernel radio structs		*/
+#include <beep/mutex.h>
+#include <beep/io.h>		/* outb, outb_p			*/
+#include <beep/slab.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include "radio-isa.h"

@@ -29,17 +29,17 @@
  * the Free Software Foundation, version 2.
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
 
 #include "i2c-iop3xx.h"
 

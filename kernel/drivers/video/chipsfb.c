@@ -14,19 +14,19 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/pm.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/console.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/fb.h>
+#include <beep/pm.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/console.h>
 #include <asm/io.h>
 
 #ifdef CONFIG_PMAC_BACKLIGHT

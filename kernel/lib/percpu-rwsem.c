@@ -1,12 +1,12 @@
-#include <linux/atomic.h>
-#include <linux/rwsem.h>
-#include <linux/percpu.h>
-#include <linux/wait.h>
-#include <linux/lockdep.h>
-#include <linux/percpu-rwsem.h>
-#include <linux/rcupdate.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
+#include <beep/atomic.h>
+#include <beep/rwsem.h>
+#include <beep/percpu.h>
+#include <beep/wait.h>
+#include <beep/lockdep.h>
+#include <beep/percpu-rwsem.h>
+#include <beep/rcupdate.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
 
 int __percpu_init_rwsem(struct percpu_rw_semaphore *brw,
 			const char *name, struct lock_class_key *rwsem_key)

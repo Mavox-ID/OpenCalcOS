@@ -6,9 +6,9 @@
 #ifndef APEI_INTERNAL_H
 #define APEI_INTERNAL_H
 
-#include <linux/cper.h>
-#include <linux/acpi.h>
-#include <linux/acpi_io.h>
+#include <beep/cper.h>
+#include <beep/acpi.h>
+#include <beep/acpi_io.h>
 
 struct apei_exec_context;
 

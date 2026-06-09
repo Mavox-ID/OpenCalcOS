@@ -10,11 +10,11 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/dccp.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/timer.h>
+#include <beep/dccp.h>
+#include <beep/gfp.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/timer.h>
 
 #include <net/sock.h>
 #include <net/xfrm.h>

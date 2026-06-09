@@ -27,11 +27,11 @@
 #ifndef __RTS51X_CHIP_H
 #define __RTS51X_CHIP_H
 
-#include <linux/usb.h>
-#include <linux/usb_usual.h>
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
+#include <beep/usb.h>
+#include <beep/usb_usual.h>
+#include <beep/blkdev.h>
+#include <beep/completion.h>
+#include <beep/mutex.h>
 #include <scsi/scsi_host.h>
 
 #include "trace.h"

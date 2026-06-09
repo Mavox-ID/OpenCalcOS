@@ -3,14 +3,14 @@
  * Here we can supply some information useful to userland.
  */
 
-#include <linux/version.h>
-#include <linux/elfnote.h>
+#include <beep/version.h>
+#include <beep/elfnote.h>
 
 /* Ideally this would use UTS_NAME, but using a quoted string here
    doesn't work. Remember to change this when changing the
    kernel's name. */
-ELFNOTE_START(Linux, 0, "a")
-	.long LINUX_VERSION_CODE
+ELFNOTE_START(Beep, 0, "a")
+	.long BEEP_VERSION_CODE
 ELFNOTE_END
 
 #ifdef CONFIG_XEN

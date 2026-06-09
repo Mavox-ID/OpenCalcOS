@@ -19,7 +19,7 @@
 /*
  * Table of relocation operator properties
  */
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* How does this relocation operation access the program image? */
 #define ROP_N	0		/* does not access image */

@@ -10,7 +10,7 @@
  * GPLv2 Only
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <mach/hardware.h>
 #include <mach/at91_ramc.h>
 #include "at91_rstc.h"

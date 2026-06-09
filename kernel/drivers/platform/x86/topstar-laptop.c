@@ -13,13 +13,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/acpi.h>
+#include <beep/input.h>
+#include <beep/input/sparse-keymap.h>
 
 #define ACPI_TOPSTAR_CLASS "topstar"
 

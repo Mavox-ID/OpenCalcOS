@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/zylonite_pxa300.c
+ * beep/arch/arm/mach-pxa/zylonite_pxa300.c
  *
  * PXA300/PXA310 specific support code for the
  * PXA3xx Development Platform (aka Zylonite)
@@ -13,13 +13,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/i2c/pxa-i2c.h>
-#include <linux/i2c/pca953x.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pxa-i2c.h>
+#include <beep/i2c/pca953x.h>
+#include <beep/gpio.h>
 
 #include <mach/pxa300.h>
 #include <mach/zylonite.h>

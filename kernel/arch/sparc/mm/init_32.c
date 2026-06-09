@@ -1,5 +1,5 @@
 /*
- *  linux/arch/sparc/mm/init.c
+ *  beep/arch/sparc/mm/init.c
  *
  *  Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  *  Copyright (C) 1995 Eddie C. Dost (ecd@skynet.be)
@@ -7,24 +7,24 @@
  *  Copyright (C) 2000 Anton Blanchard (anton@samba.org)
  */
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/initrd.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/bootmem.h>
-#include <linux/pagemap.h>
-#include <linux/poison.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/initrd.h>
+#include <beep/init.h>
+#include <beep/highmem.h>
+#include <beep/bootmem.h>
+#include <beep/pagemap.h>
+#include <beep/poison.h>
+#include <beep/gfp.h>
 
 #include <asm/sections.h>
 #include <asm/page.h>
@@ -306,7 +306,7 @@ void __init mem_init(void)
 		       PKMAP_BASE,
 		       (unsigned long)PKMAP_BASE+LAST_PKMAP*PAGE_SIZE,
 		       FIXADDR_START);
-		prom_printf("Please mail sparclinux@vger.kernel.org.\n");
+		prom_printf("Please mail sparcbeep@vger.kernel.org.\n");
 		prom_halt();
 	}
 

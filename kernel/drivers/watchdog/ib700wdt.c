@@ -6,7 +6,7 @@
  *	Based on advantechwdt.c which is based on acquirewdt.c which
  *	is based on wdt.c.
  *
- *	(c) Copyright 2000-2001 Marek Michalkiewicz <marekm@linux.org.pl>
+ *	(c) Copyright 2000-2001 Marek Michalkiewicz <marekm@beep.org.pl>
  *
  *	Based on acquirewdt.c which is based on wdt.c.
  *	Original copyright messages:
@@ -33,18 +33,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/ioport.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/miscdevice.h>
+#include <beep/watchdog.h>
+#include <beep/ioport.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/moduleparam.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
 
 
 static struct platform_device *ibwdt_platform_device;

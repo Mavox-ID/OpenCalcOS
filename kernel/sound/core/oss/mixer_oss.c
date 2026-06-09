@@ -19,17 +19,17 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/string.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/minors.h>
 #include <sound/control.h>
 #include <sound/info.h>
 #include <sound/mixer_oss.h>
-#include <linux/soundcard.h>
+#include <beep/soundcard.h>
 
 #define OSS_ALSAEMULVER         _SIOR ('M', 249, int)
 

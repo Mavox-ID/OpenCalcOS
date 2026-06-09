@@ -5,11 +5,11 @@
  *
  */
 
-#include <linux/of_device.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <beep/of_device.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/export.h>
 #include <asm/io.h>
 #include <asm/leon.h>
 #include <asm/vaddrs.h>

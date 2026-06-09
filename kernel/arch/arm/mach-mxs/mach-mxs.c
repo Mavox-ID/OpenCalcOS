@@ -10,18 +10,18 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/can/platform/flexcan.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/micrel_phy.h>
-#include <linux/mxsfb.h>
-#include <linux/of_platform.h>
-#include <linux/phy.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/can/platform/flexcan.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/micrel_phy.h>
+#include <beep/mxsfb.h>
+#include <beep/of_platform.h>
+#include <beep/phy.h>
+#include <beep/pinctrl/consumer.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/time.h>
 #include <mach/common.h>

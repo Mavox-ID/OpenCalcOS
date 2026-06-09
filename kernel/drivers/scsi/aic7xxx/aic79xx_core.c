@@ -40,7 +40,7 @@
  * $Id: //depot/aic7xxx/aic7xxx/aic79xx.c#250 $
  */
 
-#ifdef __linux__
+#ifdef __beep__
 #include "aic79xx_osm.h"
 #include "aic79xx_inline.h"
 #include "aicasm/aicasm_insformat.h"
@@ -6173,7 +6173,7 @@ ahd_free(struct ahd_softc *ahd)
 	case 2:
 		ahd_dma_tag_destroy(ahd, ahd->shared_data_dmat);
 	case 1:
-#ifndef __linux__
+#ifndef __beep__
 		ahd_dma_tag_destroy(ahd, ahd->buffer_dmat);
 #endif
 		break;
@@ -6181,7 +6181,7 @@ ahd_free(struct ahd_softc *ahd)
 		break;
 	}
 
-#ifndef __linux__
+#ifndef __beep__
 	ahd_dma_tag_destroy(ahd, ahd->parent_dmat);
 #endif
 	ahd_platform_free(ahd);
@@ -6936,7 +6936,7 @@ ahd_alloc_scbs(struct ahd_softc *ahd)
 	for (i = 0; i < newcount; i++) {
 		struct scb_platform_data *pdata;
 		u_int col_tag;
-#ifndef __linux__
+#ifndef __beep__
 		int error;
 #endif
 
@@ -6972,7 +6972,7 @@ ahd_alloc_scbs(struct ahd_softc *ahd)
 			next_scb->sg_list_busaddr += sizeof(struct ahd_dma_seg);
 		next_scb->ahd_softc = ahd;
 		next_scb->flags = SCB_FLAG_NONE;
-#ifndef __linux__
+#ifndef __beep__
 		error = ahd_dmamap_create(ahd, ahd->buffer_dmat, /*flags*/0,
 					  &next_scb->dmamap);
 		if (error != 0) {
@@ -7041,7 +7041,7 @@ static const char *termstat_strings[] = {
 /***************************** Timer Facilities *******************************/
 #define ahd_timer_init init_timer
 #define ahd_timer_stop del_timer_sync
-typedef void ahd_linux_callback_t (u_long);
+typedef void ahd_beep_callback_t (u_long);
 
 static void
 ahd_timer_reset(ahd_timer_t *timer, int usec, ahd_callback_t *func, void *arg)
@@ -7052,7 +7052,7 @@ ahd_timer_reset(ahd_timer_t *timer, int usec, ahd_callback_t *func, void *arg)
 	del_timer(timer);
 	timer->data = (u_long)arg;
 	timer->expires = jiffies + (usec * HZ)/1000000;
-	timer->function = (ahd_linux_callback_t*)func;
+	timer->function = (ahd_beep_callback_t*)func;
 	add_timer(timer);
 }
 
@@ -7101,7 +7101,7 @@ ahd_init(struct ahd_softc *ahd)
 	if ((AHD_TMODE_ENABLE & (0x1 << ahd->unit)) == 0)
 		ahd->features &= ~AHD_TARGETMODE;
 
-#ifndef __linux__
+#ifndef __beep__
 	/* DMA tag for mapping buffers into device visible space. */
 	if (ahd_dma_tag_create(ahd, ahd->parent_dmat, /*alignment*/1,
 			       /*boundary*/BUS_SPACE_MAXADDR_32BIT + 1,

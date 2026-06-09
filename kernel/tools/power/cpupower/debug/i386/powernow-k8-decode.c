@@ -4,7 +4,7 @@
  *  Licensed under the terms of the GNU GPL License version 2.
  *
  * Based on code found in
- * linux/arch/i386/kernel/cpu/cpufreq/powernow-k8.c
+ * beep/arch/i386/kernel/cpu/cpufreq/powernow-k8.c
  * and originally developed by Paul Devriendt
  */
 

@@ -31,13 +31,13 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
 #include <rdma/rdma_netlink.h>
 
 #include "core_priv.h"

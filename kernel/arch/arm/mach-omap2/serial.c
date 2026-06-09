@@ -17,17 +17,17 @@
  * License. See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/console.h>
-#include <linux/omap-dma.h>
-#include <linux/platform_data/serial-omap.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
+#include <beep/console.h>
+#include <beep/omap-dma.h>
+#include <beep/platform_data/serial-omap.h>
 
 #include "common.h"
 #include "omap_hwmod.h"

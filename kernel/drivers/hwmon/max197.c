@@ -1,8 +1,8 @@
 /*
  * Maxim MAX197 A/D Converter driver
  *
- * Copyright (c) 2012 Savoir-faire Linux Inc.
- *          Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Copyright (c) 2012 Savoir-faire Beep Inc.
+ *          Vivien Didelot <vivien.didelot@savoirfairebeep.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -11,18 +11,18 @@
  * For further information, see the Documentation/hwmon/max197 file.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/max197.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/device.h>
+#include <beep/sysfs.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/platform_device.h>
+#include <beep/platform_data/max197.h>
 
 #define MAX199_LIMIT	4000		/* 4V */
 #define MAX197_LIMIT	10000		/* 10V */
@@ -345,5 +345,5 @@ static struct platform_driver max197_driver = {
 module_platform_driver(max197_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Savoir-faire Linux Inc. <kernel@savoirfairelinux.com>");
+MODULE_AUTHOR("Savoir-faire Beep Inc. <kernel@savoirfairebeep.com>");
 MODULE_DESCRIPTION("Maxim MAX197 A/D Converter driver");

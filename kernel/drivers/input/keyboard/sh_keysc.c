@@ -10,19 +10,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/input/sh_keysc.h>
-#include <linux/bitmap.h>
-#include <linux/pm_runtime.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/input/sh_keysc.h>
+#include <beep/bitmap.h>
+#include <beep/pm_runtime.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 static const struct {
 	unsigned char kymd, keyout, keyin;

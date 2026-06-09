@@ -5,7 +5,7 @@
  * Word-at-a-time interfaces for PowerPC.
  */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <asm/asm-compat.h>
 
 struct word_at_a_time {

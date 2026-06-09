@@ -8,11 +8,11 @@
  * Authors: Matthew Garrett
  *          Dave Airlie
  */
-#include <linux/module.h>
+#include <beep/module.h>
 #include <drm/drmP.h>
 #include <drm/drm_fb_helper.h>
 
-#include <linux/fb.h>
+#include <beep/fb.h>
 
 #include "cirrus_drv.h"
 

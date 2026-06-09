@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/platforms/oaks32r/setup.c
+ *  beep/arch/m32r/platforms/oaks32r/setup.c
  *
  *  Setup routines for OAKS32R Board
  *
@@ -7,9 +7,9 @@
  *                           Hitoshi Yamamoto, Mamoru Sakugawa
  */
 
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
 
 #include <asm/m32r.h>
 #include <asm/io.h>

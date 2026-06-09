@@ -25,7 +25,7 @@
  * that occur during interrupt scare me. The ISR should merely signal
  * thread context, ACK the interrupt, and move on. -- BenC */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include "solo6x10.h"
 
 u8 solo_i2c_readbyte(struct solo_dev *solo_dev, int id, u8 addr, u8 off)

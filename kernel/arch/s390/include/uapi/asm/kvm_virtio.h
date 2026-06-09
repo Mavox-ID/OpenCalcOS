@@ -13,7 +13,7 @@
 #ifndef __KVM_S390_VIRTIO_H
 #define __KVM_S390_VIRTIO_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct kvm_device_desc {
 	/* The device type: console, network, disk etc.  Type 0 terminates. */

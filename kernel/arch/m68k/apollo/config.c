@@ -1,11 +1,11 @@
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/rtc.h>
-#include <linux/vt_kern.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/tty.h>
+#include <beep/console.h>
+#include <beep/rtc.h>
+#include <beep/vt_kern.h>
+#include <beep/interrupt.h>
 
 #include <asm/setup.h>
 #include <asm/bootinfo.h>

@@ -14,15 +14,15 @@
  * Support the cycle counter clocksource and tile timer clock event device.
  */
 
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/hardirq.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <beep/time.h>
+#include <beep/timex.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/hardirq.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/delay.h>
+#include <beep/module.h>
 #include <asm/irq_regs.h>
 #include <asm/traps.h>
 #include <hv/hypervisor.h>

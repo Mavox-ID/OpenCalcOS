@@ -1,5 +1,5 @@
 /*
- * m8xx_pcmcia.c - Linux PCMCIA socket driver for the mpc8xx series.
+ * m8xx_pcmcia.c - Beep PCMCIA socket driver for the mpc8xx series.
  *
  * (C) 1999-2000 Magnus Damm <damm@opensource.se>
  * (C) 2001-2002 Montavista Software, Inc.
@@ -34,22 +34,22 @@
  * They are maximum 64KByte each...
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/string.h>
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fsl_devices.h>
-#include <linux/bitops.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/timer.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/fsl_devices.h>
+#include <beep/bitops.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
 
 #include <asm/io.h>
 #include <asm/time.h>

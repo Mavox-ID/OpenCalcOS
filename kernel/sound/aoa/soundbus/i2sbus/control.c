@@ -6,9 +6,9 @@
  * GPL v2, can be found in COPYING.
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 #include <asm/prom.h>

@@ -1,6 +1,6 @@
 /*
  *  PowerPC version 
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *  Rewritten by Cort Dougan (cort@cs.nmt.edu) for PReP
  *    Copyright (C) 1996 Cort Dougan <cort@cs.nmt.edu>
  *  Adapted for Power Macintosh by Paul Mackerras.
@@ -18,7 +18,7 @@
  *  2 of the License, or (at your option) any later version.
  */
 
-#include <linux/errno.h>
+#include <beep/errno.h>
 #include <asm/unistd.h>
 #include <asm/processor.h>
 #include <asm/page.h>

@@ -1,16 +1,16 @@
 /*
- * linux/arch/m68k/sun3/sun3dvma.c
+ * beep/arch/m68k/sun3/sun3dvma.c
  *
  * Copyright (C) 2000 Sam Creasey
  *
  * Contains common routines for sun3/sun3x DVMA management.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/list.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/gfp.h>
+#include <beep/mm.h>
+#include <beep/list.h>
 
 #include <asm/page.h>
 #include <asm/pgtable.h>

@@ -9,7 +9,7 @@ cxt1e1-y := 	\
   musycc.o 		\
   pmcc4_drv.o 		\
   comet.o 		\
-  linux.o 		\
+  beep.o 		\
   functions.o 		\
   hwprobe.o 		\
   sbeproc.o 		\

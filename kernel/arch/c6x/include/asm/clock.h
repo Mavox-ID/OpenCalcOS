@@ -19,7 +19,7 @@
 
 #ifndef __ASSEMBLER__
 
-#include <linux/list.h>
+#include <beep/list.h>
 
 /* PLL/Reset register offsets */
 #define PLLCTL		0x100

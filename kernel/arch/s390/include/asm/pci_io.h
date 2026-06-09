@@ -3,8 +3,8 @@
 
 #ifdef CONFIG_PCI
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 #include <asm/pci_insn.h>
 
 /* I/O Map */

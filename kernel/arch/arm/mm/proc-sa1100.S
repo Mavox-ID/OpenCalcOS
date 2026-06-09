@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/proc-sa1100.S
+ *  beep/arch/arm/mm/proc-sa1100.S
  *
  *  Copyright (C) 1997-2002 Russell King
  *  hacked for non-paged-MM by Hyok S. Choi, 2003.
@@ -18,8 +18,8 @@
  *  12-jun-2000, Erik Mouw (J.A.K.Mouw@its.tudelft.nl):
  *    Flush the read buffer at context switches
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/hwcap.h>

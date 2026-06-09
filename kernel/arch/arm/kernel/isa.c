@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/isa.c
+ *  beep/arch/arm/kernel/isa.c
  *
  *  Copyright (C) 1999 Phil Blundell
  *
@@ -11,12 +11,12 @@
  *  ISA shared memory and I/O port support, and is required to support
  *  iopl, inb, outb and friends in userspace via glibc emulation.
  */
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/sysctl.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/stddef.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/sysctl.h>
+#include <beep/init.h>
+#include <beep/io.h>
 
 static unsigned int isa_membase, isa_portbase, isa_portshift;
 

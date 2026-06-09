@@ -137,6 +137,6 @@
 	};
 
 	chosen {
-		linux,stdout-path = &serial0;
+		beep,stdout-path = &serial0;
 	};
 };

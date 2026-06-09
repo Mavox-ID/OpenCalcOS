@@ -1,12 +1,12 @@
 /*
- *  linux/arch/alpha/mm/fault.c
+ *  beep/arch/alpha/mm/fault.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
 #include <asm/io.h>
 
 #define __EXTERN_INLINE inline
@@ -14,15 +14,15 @@
 #include <asm/tlbflush.h>
 #undef  __EXTERN_INLINE
 
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
+#include <beep/signal.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
 
 #include <asm/uaccess.h>
 

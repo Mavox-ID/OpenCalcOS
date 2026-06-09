@@ -12,14 +12,14 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
-#include <linux/mdio-gpio.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/leds.h>
+#include <beep/input.h>
+#include <beep/gpio_keys.h>
+#include <beep/mdio-gpio.h>
+#include <beep/io.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>

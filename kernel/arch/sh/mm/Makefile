@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux SuperH-specific parts of the memory manager.
+# Makefile for the Beep SuperH-specific parts of the memory manager.
 #
 
 obj-y			:= alignment.o cache.o init.o consistent.o mmap.o

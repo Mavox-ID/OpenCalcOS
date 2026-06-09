@@ -8,15 +8,15 @@
  *  more details.
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/ide.h>
-#include <linux/init.h>
-#include <linux/zorro.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/blkdev.h>
+#include <beep/ide.h>
+#include <beep/init.h>
+#include <beep/zorro.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 
 #include <asm/setup.h>
 #include <asm/amigahw.h>

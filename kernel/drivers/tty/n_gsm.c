@@ -34,34 +34,34 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/fcntl.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/ctype.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/bitops.h>
-#include <linux/file.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/tty_flip.h>
-#include <linux/tty_driver.h>
-#include <linux/serial.h>
-#include <linux/kfifo.h>
-#include <linux/skbuff.h>
+#include <beep/types.h>
+#include <beep/major.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/fcntl.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/tty.h>
+#include <beep/ctype.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/poll.h>
+#include <beep/bitops.h>
+#include <beep/file.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
+#include <beep/timer.h>
+#include <beep/tty_flip.h>
+#include <beep/tty_driver.h>
+#include <beep/serial.h>
+#include <beep/kfifo.h>
+#include <beep/skbuff.h>
 #include <net/arp.h>
-#include <linux/ip.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/gsmmux.h>
+#include <beep/ip.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/gsmmux.h>
 
 static int debug;
 module_param(debug, int, 0600);
@@ -1081,7 +1081,7 @@ static void gsm_process_modem(struct tty_struct *tty, struct gsm_dlci *dlci,
  *
  *	We have received a modem status control message. This is used by
  *	the GSM mux protocol to pass virtual modem line status and optionally
- *	to indicate break signals. Unpack it, convert to Linux representation
+ *	to indicate break signals. Unpack it, convert to Beep representation
  *	and if need be stuff a break message down the tty.
  */
 
@@ -1491,7 +1491,7 @@ static void gsm_dlci_t1(unsigned long data)
  *	gsm_dlci_begin_open	-	start channel open procedure
  *	@dlci: DLCI to open
  *
- *	Commence opening a DLCI from the Linux side. We issue SABM messages
+ *	Commence opening a DLCI from the Beep side. We issue SABM messages
  *	to the modem which should then reply with a UA, at which point we
  *	will move into open state. Opening is done asynchronously with retry
  *	running off timers and the responses.
@@ -1512,7 +1512,7 @@ static void gsm_dlci_begin_open(struct gsm_dlci *dlci)
  *	gsm_dlci_begin_close	-	start channel open procedure
  *	@dlci: DLCI to open
  *
- *	Commence closing a DLCI from the Linux side. We issue DISC messages
+ *	Commence closing a DLCI from the Beep side. We issue DISC messages
  *	to the modem which should then reply with a UA, at which point we
  *	will move into closed state. Closing is done asynchronously with retry
  *	off timers. We may also receive a DM reply from the other end which

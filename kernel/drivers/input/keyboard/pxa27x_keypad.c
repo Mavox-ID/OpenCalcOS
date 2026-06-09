@@ -1,10 +1,10 @@
 /*
- * linux/drivers/input/keyboard/pxa27x_keypad.c
+ * beep/drivers/input/keyboard/pxa27x_keypad.c
  *
  * Driver for the pxa27x matrix keyboard controller.
  *
  * Created:	Feb 22, 2007
- * Author:	Rodolfo Giometti <giometti@linux.it>
+ * Author:	Rodolfo Giometti <giometti@beep.it>
  *
  * Based on a previous implementations by Kevin O'Connor
  * <kevin_at_koconnor.net> and Alex Osborne <bobofdoom@gmail.com> and
@@ -16,23 +16,23 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/slab.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 
 #include <mach/hardware.h>
-#include <linux/platform_data/keypad-pxa27x.h>
+#include <beep/platform_data/keypad-pxa27x.h>
 /*
  * Keypad Controller registers
  */

@@ -1,8 +1,8 @@
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/hardirq.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/hardirq.h>
 #include "ctree.h"
 #include "extent_map.h"
 

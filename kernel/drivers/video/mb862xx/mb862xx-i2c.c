@@ -9,11 +9,11 @@
  *
  */
 
-#include <linux/fb.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <beep/fb.h>
+#include <beep/i2c.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/export.h>
 
 #include "mb862xxfb.h"
 #include "mb862xx_reg.h"

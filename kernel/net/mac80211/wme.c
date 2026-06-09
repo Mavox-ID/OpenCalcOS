@@ -6,11 +6,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/module.h>
-#include <linux/if_arp.h>
-#include <linux/types.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/module.h>
+#include <beep/if_arp.h>
+#include <beep/types.h>
 #include <net/ip.h>
 #include <net/pkt_sched.h>
 

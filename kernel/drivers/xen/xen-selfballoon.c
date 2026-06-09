@@ -67,14 +67,14 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/bootmem.h>
-#include <linux/swap.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/bootmem.h>
+#include <beep/swap.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/module.h>
+#include <beep/workqueue.h>
+#include <beep/device.h>
 #include <xen/balloon.h>
 #include <xen/tmem.h>
 #include <xen/xen.h>
@@ -115,7 +115,7 @@ static void selfballoon_process(struct work_struct *work);
 static DECLARE_DELAYED_WORK(selfballoon_worker, selfballoon_process);
 
 #ifdef CONFIG_FRONTSWAP
-#include <linux/frontswap.h>
+#include <beep/frontswap.h>
 
 /* Enable/disable with sysfs. */
 static bool frontswap_selfshrinking __read_mostly;
@@ -274,7 +274,7 @@ static void selfballoon_process(struct work_struct *work)
 
 #ifdef CONFIG_SYSFS
 
-#include <linux/capability.h>
+#include <beep/capability.h>
 
 #define SELFBALLOON_SHOW(name, format, args...)				\
 	static ssize_t show_##name(struct device *dev,	\

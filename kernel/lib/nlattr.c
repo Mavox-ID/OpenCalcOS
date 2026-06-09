@@ -5,14 +5,14 @@
  * 				Alexey Kuznetsov <kuznet@ms2.inr.ac.ru>
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/jiffies.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/jiffies.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/string.h>
+#include <beep/types.h>
 #include <net/netlink.h>
 
 static const u16 nla_attr_minlen[NLA_TYPE_MAX+1] = {

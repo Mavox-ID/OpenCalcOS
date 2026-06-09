@@ -1,8 +1,8 @@
 #ifndef __MACH_IMX_CLK_H
 #define __MACH_IMX_CLK_H
 
-#include <linux/spinlock.h>
-#include <linux/clk-provider.h>
+#include <beep/spinlock.h>
+#include <beep/clk-provider.h>
 
 extern spinlock_t imx_ccm_lock;
 

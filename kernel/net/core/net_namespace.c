@@ -1,19 +1,19 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/workqueue.h>
-#include <linux/rtnetlink.h>
-#include <linux/cache.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/idr.h>
-#include <linux/rculist.h>
-#include <linux/nsproxy.h>
-#include <linux/proc_fs.h>
-#include <linux/file.h>
-#include <linux/export.h>
-#include <linux/user_namespace.h>
+#include <beep/workqueue.h>
+#include <beep/rtnetlink.h>
+#include <beep/cache.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/idr.h>
+#include <beep/rculist.h>
+#include <beep/nsproxy.h>
+#include <beep/proc_fs.h>
+#include <beep/file.h>
+#include <beep/export.h>
+#include <beep/user_namespace.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 

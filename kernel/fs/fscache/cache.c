@@ -10,8 +10,8 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL CACHE
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include "internal.h"
 
 LIST_HEAD(fscache_cache_list);

@@ -10,14 +10,14 @@
  * IP32 changes by Ilya.
  * Copyright (C) 2010 Cavium Networks, Inc.
  */
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/bootmem.h>
-#include <linux/export.h>
-#include <linux/swiotlb.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/mm.h>
+#include <beep/dma-mapping.h>
+#include <beep/scatterlist.h>
+#include <beep/bootmem.h>
+#include <beep/export.h>
+#include <beep/swiotlb.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/mm.h>
 
 #include <asm/bootinfo.h>
 

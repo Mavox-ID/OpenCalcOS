@@ -10,31 +10,31 @@
  * (at your option) any later version.
  */
 
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/clk.h>
-#include <linux/compiler.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kconfig.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/workqueue.h>
+#include <beep/bitops.h>
+#include <beep/bug.h>
+#include <beep/clk.h>
+#include <beep/compiler.h>
+#include <beep/debugfs.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/kconfig.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/platform_device.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/timer.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
+#include <beep/workqueue.h>
 
 #include <bcm63xx_cpu.h>
 #include <bcm63xx_iudma.h>
@@ -248,7 +248,7 @@ struct bcm63xx_req {
 /**
  * struct bcm63xx_udc - Driver/hardware private context.
  * @lock: Spinlock to mediate access to this struct, and (most) HW regs.
- * @dev: Generic Linux device structure.
+ * @dev: Generic Beep device structure.
  * @pd: Platform data (board/port info).
  * @usbd_clk: Clock descriptor for the USB device block.
  * @usbh_clk: Clock descriptor for the USB host block.

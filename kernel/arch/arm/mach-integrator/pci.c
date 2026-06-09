@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-integrator/pci-integrator.c
+ *  beep/arch/arm/mach-integrator/pci-integrator.c
  *
  *  Copyright (C) 1999 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd
@@ -21,10 +21,10 @@
  *
  *  PCI functions for Integrator
  */
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
 
 #include <asm/mach/pci.h>
 #include <asm/mach-types.h>

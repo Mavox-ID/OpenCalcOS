@@ -47,27 +47,27 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/bug.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/irqflags.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/major.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/spinlock.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/types.h>
+#include <beep/bug.h>
+#include <beep/console.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/irqflags.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/major.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
+#include <beep/spinlock.h>
+#include <beep/sysrq.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/types.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include <asm/dec/interrupts.h>
 #include <asm/dec/ioasic_addrs.h>
@@ -76,7 +76,7 @@
 #include "zs.h"
 
 
-MODULE_AUTHOR("Maciej W. Rozycki <macro@linux-mips.org>");
+MODULE_AUTHOR("Maciej W. Rozycki <macro@beep-mips.org>");
 MODULE_DESCRIPTION("DECstation Z85C30 serial driver");
 MODULE_LICENSE("GPL");
 

@@ -80,10 +80,10 @@
  */
 
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/wait.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/wait.h>
 #include <sound/core.h>
 #include <sound/wss.h>
 #include <sound/asoundef.h>

@@ -24,7 +24,7 @@
  *
  */
 
-#include <linux/dma-buf.h>
+#include <beep/dma-buf.h>
 
 #include <subdev/fb.h>
 

@@ -12,18 +12,18 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/device.h>
+#include <beep/serial_core.h>
+#include <beep/platform_device.h>
+#include <beep/sched.h>
 
 #include <asm/irq.h>
 #include <asm/proc-fns.h>

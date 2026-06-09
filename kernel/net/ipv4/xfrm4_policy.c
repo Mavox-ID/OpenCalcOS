@@ -8,10 +8,10 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/inetdevice.h>
-#include <linux/if_tunnel.h>
+#include <beep/err.h>
+#include <beep/kernel.h>
+#include <beep/inetdevice.h>
+#include <beep/if_tunnel.h>
 #include <net/dst.h>
 #include <net/xfrm.h>
 #include <net/ip.h>

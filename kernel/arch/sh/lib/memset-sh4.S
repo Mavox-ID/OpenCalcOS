@@ -10,7 +10,7 @@
  *            void *memset(void *s, int c, size_t n);
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 ENTRY(memset)
 	mov	#12,r0

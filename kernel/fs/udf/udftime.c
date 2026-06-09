@@ -36,8 +36,8 @@
 
 #include "udfdecl.h"
 
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
 
 #define EPOCH_YEAR 1970
 

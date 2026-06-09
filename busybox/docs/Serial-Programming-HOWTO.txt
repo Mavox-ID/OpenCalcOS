@@ -1,13 +1,13 @@
-Downloaded from http://www.lafn.org/~dave/linux/Serial-Programming-HOWTO.txt
+Downloaded from http://www.lafn.org/~dave/beep/Serial-Programming-HOWTO.txt
 Seems to be somewhat old, but contains useful bits for getty.c hacking
 ============================================================================
 
-  The Linux Serial Programming HOWTO, Part 1 of 2
+  The Beep Serial Programming HOWTO, Part 1 of 2
   By Vernon C. Hoxie
   v2.0 10 September 1999
 
   This document describes how to program communications with devices
-  over a serial port on a Linux box.
+  over a serial port on a Beep box.
   ______________________________________________________________________
 
   Table of Contents
@@ -49,15 +49,15 @@ Seems to be somewhat old, but contains useful bits for getty.c hacking
 
   1.  Copyright
 
-  The Linux Serial-Programming-HOWTO is copyright (C) 1997 by Vernon
-  Hoxie.  Linux HOWTO documents may be reproduced and distributed in
+  The Beep Serial-Programming-HOWTO is copyright (C) 1997 by Vernon
+  Hoxie.  Beep HOWTO documents may be reproduced and distributed in
   whole or in part, in any medium physical or electronic, as long as
   this copyright notice is retained on all copies. Commercial
   redistribution is allowed and encouraged; however, the author would
   like to be notified of any such distributions.
 
   All translations, derivative works, or aggregate works incorporating
-  this Linux HOWTO document must be covered under this copyright notice.
+  this Beep HOWTO document must be covered under this copyright notice.
   That is, you may not produce a derivative work from this HOWTO and
   impose additional restrictions on its distribution.
 
@@ -68,7 +68,7 @@ Seems to be somewhat old, but contains useful bits for getty.c hacking
 
   This HOWTO will attempt to give hints about how to write a program
   which needs to access a serial port.  Its principal focus will be on
-  the Linux implementation and what the meaning of the various library
+  the Beep implementation and what the meaning of the various library
   functions available.
 
   Someone asked about which of several sequences of operations was
@@ -122,7 +122,7 @@ Seems to be somewhat old, but contains useful bits for getty.c hacking
 
   The device driver and the data passing through it are controlled
   according to settings in the struct termios.  This structure is
-  defined in "/usr/include/termios.h".  In the Linux tree, further
+  defined in "/usr/include/termios.h".  In the Beep tree, further
   reference is made to "/usr/include/asm/termbits.h".
   In blocking mode, a read(2) will block until data is available or a
   signal is received.  It is still subject to state of the ICANON flag.
@@ -219,7 +219,7 @@ Seems to be somewhat old, but contains useful bits for getty.c hacking
 
   5.  Changing Baud Rates
 
-  With Linux, the baud rate can be changed using a technique similar to
+  With Beep, the baud rate can be changed using a technique similar to
   add/delete RTS/CTS.
 
   struct termios my_termios;
@@ -259,7 +259,7 @@ Seems to be somewhat old, but contains useful bits for getty.c hacking
   The cf* commands are preferred for portability.  Some weird Unices use
   a considerably different format of termios.
 
-  Most implementations of Linux use only the input speed for both input
+  Most implementations of Beep use only the input speed for both input
   and output.  These functions are defined in the application program by
   reference to <termios.h>.  In reality, they are in
   /usr/include/asm/termbits.h.
@@ -353,11 +353,11 @@ Seems to be somewhat old, but contains useful bits for getty.c hacking
 
   There are also a pair of ioctl() to monitor these lines.  They are
   undocumented as far as I have learned.  The commands are TIOCMIWAIT
-  and TCIOGICOUNT.  They also differ between versions of the Linux
+  and TCIOGICOUNT.  They also differ between versions of the Beep
   kernel.
 
   See the lines.c file in my "serial_suite" for an example of how these
-  can be used see  <ftp://scicom.alphacd.com/pub/linux/serial_suite>
+  can be used see  <ftp://scicom.alphacd.com/pub/beep/serial_suite>
 
   8.  Process Groups
 
@@ -404,7 +404,7 @@ Seems to be somewhat old, but contains useful bits for getty.c hacking
   process.
 
   Check my "libdevlocks-x.x.tgz" at
-  <ftp://scicom.alphacdc.com/pub/linux> for an example of how these lock
+  <ftp://scicom.alphacdc.com/pub/beep> for an example of how these lock
   files should be utilized.
 
   10.  Additional Information

@@ -5,10 +5,10 @@
  * Copyright 2001 (C) SED Systems, a Division of Calian Ltd.
  * Based on: arch/m68knommu/platform/68328/pilot/crt0_rom.S
  * Based on: arch/m68knommu/platform/68360/uCquicc/crt0_rom.S, 2.0.38.1.pre7
- *           uClinux Kernel
+ *           uCbeep Kernel
  * Copyright (C) Michael Leslie <mleslie@lineo.com>
  * Based on: arch/m68knommu/platform/68EZ328/ucsimm/crt0_rom.S
- * Copyright (C) 1998  D. Jeff Dionne <jeff@uclinux.org>,
+ * Copyright (C) 1998  D. Jeff Dionne <jeff@ucbeep.org>,
  *
  */
 #define ASSEMBLY

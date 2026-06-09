@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5p64x0/include/mach/uncompress.h
+/* beep/arch/arm/mach-s5p64x0/include/mach/uncompress.h
  *
  * Copyright (c) 2009-2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -20,7 +20,7 @@
  * because uart base of S5P6440 and S5P6450 is different
  */
 
-typedef unsigned int upf_t;	/* cannot include linux/serial_core.h */
+typedef unsigned int upf_t;	/* cannot include beep/serial_core.h */
 
 /* uart setup */
 
@@ -188,7 +188,7 @@ static void arch_decomp_setup(void)
 	/*
 	 * we may need to setup the uart(s) here if we are not running
 	 * on an BAST... the BAST will have left the uarts configured
-	 * after calling linux.
+	 * after calling beep.
 	 */
 
 	arch_detect_cpu();

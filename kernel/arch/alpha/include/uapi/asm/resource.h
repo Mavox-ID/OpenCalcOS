@@ -2,7 +2,7 @@
 #define _ALPHA_RESOURCE_H
 
 /*
- * Alpha/Linux-specific ordering of these four resource limit IDs,
+ * Alpha/Beep-specific ordering of these four resource limit IDs,
  * the rest comes from the generic header:
  */
 #define RLIMIT_NOFILE		6	/* max number of open files */

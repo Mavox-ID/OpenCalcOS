@@ -1,18 +1,18 @@
 /*
- *  linux/arch/h8300/mm/kmap.c
+ *  beep/arch/h8300/mm/kmap.c
  *  
  *  Based on
- *  linux/arch/m68knommu/mm/kmap.c
+ *  beep/arch/m68knommu/mm/kmap.c
  *
  *  Copyright (C) 2000 Lineo, <davidm@snapgear.com>
  *  Copyright (C) 2000-2002 David McCullough <davidm@snapgear.com>
  */
 
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/vmalloc.h>
+#include <beep/mm.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/vmalloc.h>
 
 #include <asm/setup.h>
 #include <asm/segment.h>

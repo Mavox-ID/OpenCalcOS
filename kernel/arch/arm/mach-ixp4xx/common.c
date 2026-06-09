@@ -13,22 +13,22 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/serial.h>
+#include <beep/tty.h>
+#include <beep/platform_device.h>
+#include <beep/serial_core.h>
+#include <beep/interrupt.h>
+#include <beep/bitops.h>
+#include <beep/time.h>
+#include <beep/timex.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/io.h>
+#include <beep/export.h>
+#include <beep/gpio.h>
 
 #include <mach/udc.h>
 #include <mach/hardware.h>

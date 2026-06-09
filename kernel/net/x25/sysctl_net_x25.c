@@ -1,15 +1,15 @@
-/* -*- linux-c -*-
+/* -*- beep-c -*-
  * sysctl_net_x25.c: sysctl interface to net X.25 subsystem.
  *
  * Begun April 1, 1996, Mike Shaver.
  * Added /proc/sys/net/x25 directory entry (empty =) ). [MS]
  */
 
-#include <linux/sysctl.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
+#include <beep/sysctl.h>
+#include <beep/skbuff.h>
+#include <beep/socket.h>
+#include <beep/netdevice.h>
+#include <beep/init.h>
 #include <net/x25.h>
 
 static int min_timer[] = {   1 * HZ };

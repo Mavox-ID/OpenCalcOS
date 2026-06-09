@@ -2,8 +2,8 @@
  * sys_ia32.c: Conversion between 32bit and 64bit native syscalls. Based on
  *             sys_sparc32
  *
- * Copyright (C) 2000		VA Linux Co
- * Copyright (C) 2000		Don Dugger <n0ano@valinux.com>
+ * Copyright (C) 2000		VA Beep Co
+ * Copyright (C) 2000		Don Dugger <n0ano@vabeep.com>
  * Copyright (C) 1999		Arun Sharma <arun.sharma@intel.com>
  * Copyright (C) 1997,1998	Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  * Copyright (C) 1997		David S. Miller (davem@caip.rutgers.edu)
@@ -20,30 +20,30 @@
  * hopefully all marked.  This should be fixed.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/signal.h>
-#include <linux/syscalls.h>
-#include <linux/times.h>
-#include <linux/utsname.h>
-#include <linux/mm.h>
-#include <linux/uio.h>
-#include <linux/poll.h>
-#include <linux/personality.h>
-#include <linux/stat.h>
-#include <linux/rwsem.h>
-#include <linux/compat.h>
-#include <linux/vfs.h>
-#include <linux/ptrace.h>
-#include <linux/highuid.h>
-#include <linux/sysctl.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/signal.h>
+#include <beep/syscalls.h>
+#include <beep/times.h>
+#include <beep/utsname.h>
+#include <beep/mm.h>
+#include <beep/uio.h>
+#include <beep/poll.h>
+#include <beep/personality.h>
+#include <beep/stat.h>
+#include <beep/rwsem.h>
+#include <beep/compat.h>
+#include <beep/vfs.h>
+#include <beep/ptrace.h>
+#include <beep/highuid.h>
+#include <beep/sysctl.h>
+#include <beep/slab.h>
 #include <asm/mman.h>
 #include <asm/types.h>
 #include <asm/uaccess.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/vgtod.h>
 #include <asm/sys_ia32.h>
 
@@ -138,7 +138,7 @@ asmlinkage long sys32_fstatat(unsigned int dfd, const char __user *filename,
 }
 
 /*
- * Linux/i386 didn't use to be able to handle more than
+ * Beep/i386 didn't use to be able to handle more than
  * 4 system call parameters, so these system calls used a memory
  * block for parameter passing..
  */

@@ -1,7 +1,7 @@
 /*
     Driver for Zarlink MT312 Satellite Channel Decoder
 
-    Copyright (C) 2003 Andreas Oberritter <obi@linuxtv.org>
+    Copyright (C) 2003 Andreas Oberritter <obi@beeptv.org>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -26,7 +26,7 @@
 #ifndef MT312_H
 #define MT312_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 struct mt312_config {
 	/* the demodulator's i2c address */

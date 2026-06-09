@@ -1,6 +1,6 @@
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma-debug.h>
+#include <beep/kernel.h>
+#include <beep/dma-mapping.h>
+#include <beep/dma-debug.h>
 
 #define PREALLOC_DMA_DEBUG_ENTRIES       (1 << 15)
 

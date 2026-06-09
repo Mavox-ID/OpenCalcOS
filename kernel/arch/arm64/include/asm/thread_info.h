@@ -21,7 +21,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 #ifndef CONFIG_ARM64_64K_PAGES
 #define THREAD_SIZE_ORDER	1

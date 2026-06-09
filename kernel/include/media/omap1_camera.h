@@ -11,7 +11,7 @@
 #ifndef __MEDIA_OMAP1_CAMERA_H_
 #define __MEDIA_OMAP1_CAMERA_H_
 
-#include <linux/bitops.h>
+#include <beep/bitops.h>
 
 #define OMAP1_CAMERA_IOSIZE		0x1c
 

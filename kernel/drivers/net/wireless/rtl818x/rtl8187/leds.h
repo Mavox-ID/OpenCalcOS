@@ -18,8 +18,8 @@
 
 #define RTL8187_LED_MAX_NAME_LEN	21
 
-#include <linux/leds.h>
-#include <linux/types.h>
+#include <beep/leds.h>
+#include <beep/types.h>
 
 enum {
 	LED_PIN_LED0,

@@ -9,12 +9,12 @@
  *
  * Copyright (C) 2004, 2005, 2006, 2008  Thiemo Seufer
  * Copyright (C) 2005, 2007  Maciej W. Rozycki
- * Copyright (C) 2006  Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2006  Ralf Baechle (ralf@beep-mips.org)
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
 
 #include <asm/inst.h>
 #include <asm/elf.h>

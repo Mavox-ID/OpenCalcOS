@@ -6,9 +6,9 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/serial_8250.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/serial_8250.h>
 
 #define PORT(_base,_irq)				\
 	{						\

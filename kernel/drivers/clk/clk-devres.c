@@ -4,10 +4,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
+#include <beep/clk.h>
+#include <beep/device.h>
+#include <beep/export.h>
+#include <beep/gfp.h>
 
 static void devm_clk_release(struct device *dev, void *res)
 {

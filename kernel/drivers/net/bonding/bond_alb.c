@@ -22,20 +22,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/pkt_sched.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/if_bonding.h>
-#include <linux/if_vlan.h>
-#include <linux/in.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/pkt_sched.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/timer.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/if_arp.h>
+#include <beep/if_ether.h>
+#include <beep/if_bonding.h>
+#include <beep/if_vlan.h>
+#include <beep/in.h>
 #include <net/ipx.h>
 #include <net/arp.h>
 #include <net/ipv6.h>

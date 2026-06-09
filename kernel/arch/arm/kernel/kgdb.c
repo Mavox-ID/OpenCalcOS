@@ -9,9 +9,9 @@
  * Authors:  George Davis <davis_g@mvista.com>
  *           Deepak Saxena <dsaxena@plexity.net>
  */
-#include <linux/irq.h>
-#include <linux/kdebug.h>
-#include <linux/kgdb.h>
+#include <beep/irq.h>
+#include <beep/kdebug.h>
+#include <beep/kgdb.h>
 #include <asm/traps.h>
 
 struct dbg_reg_def_t dbg_reg_def[DBG_MAX_REG_NUM] =
@@ -113,7 +113,7 @@ static int compiled_break;
 int kgdb_arch_handle_exception(int exception_vector, int signo,
 			       int err_code, char *remcom_in_buffer,
 			       char *remcom_out_buffer,
-			       struct pt_regs *linux_regs)
+			       struct pt_regs *beep_regs)
 {
 	unsigned long addr;
 	char *ptr;
@@ -130,9 +130,9 @@ int kgdb_arch_handle_exception(int exception_vector, int signo,
 		 */
 		ptr = &remcom_in_buffer[1];
 		if (kgdb_hex2long(&ptr, &addr))
-			linux_regs->ARM_pc = addr;
+			beep_regs->ARM_pc = addr;
 		else if (compiled_break == 1)
-			linux_regs->ARM_pc += 4;
+			beep_regs->ARM_pc += 4;
 
 		compiled_break = 0;
 

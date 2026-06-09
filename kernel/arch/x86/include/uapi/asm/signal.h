@@ -2,9 +2,9 @@
 #define _UAPI_ASM_X86_SIGNAL_H
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
-#include <linux/time.h>
-#include <linux/compiler.h>
+#include <beep/types.h>
+#include <beep/time.h>
+#include <beep/compiler.h>
 
 /* Avoid too many header ordering problems.  */
 struct siginfo;
@@ -71,7 +71,7 @@ typedef unsigned long sigset_t;
  * SA_NOCLDWAIT flag on SIGCHLD to inhibit zombies.
  * SA_NODEFER prevents the current signal from being masked in the handler.
  *
- * SA_ONESHOT and SA_NOMASK are the historical Linux names for the Single
+ * SA_ONESHOT and SA_NOMASK are the historical Beep names for the Single
  * Unix names RESETHAND and NODEFER respectively.
  */
 #define SA_NOCLDSTOP	0x00000001u

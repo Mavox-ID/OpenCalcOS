@@ -1,5 +1,5 @@
 /*
- * linux/fs/ext3/ioctl.c
+ * beep/fs/ext3/ioctl.c
  *
  * Copyright (C) 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -7,8 +7,8 @@
  * Universite Pierre et Marie Curie (Paris VI)
  */
 
-#include <linux/mount.h>
-#include <linux/compat.h>
+#include <beep/mount.h>
+#include <beep/compat.h>
 #include <asm/uaccess.h>
 #include "ext3.h"
 
@@ -64,7 +64,7 @@ long ext3_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 		 * This test looks nicer. Thanks to Pauline Middelink
 		 */
 		if ((flags ^ oldflags) & (EXT3_APPEND_FL | EXT3_IMMUTABLE_FL)) {
-			if (!capable(CAP_LINUX_IMMUTABLE))
+			if (!capable(CAP_BEEP_IMMUTABLE))
 				goto flags_out;
 		}
 

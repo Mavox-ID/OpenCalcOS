@@ -1,5 +1,5 @@
 /*
- *	Linux ethernet bridge
+ *	Beep ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -13,10 +13,10 @@
 #ifndef _BR_PRIVATE_H
 #define _BR_PRIVATE_H
 
-#include <linux/netdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/netpoll.h>
-#include <linux/u64_stats_sync.h>
+#include <beep/netdevice.h>
+#include <beep/if_bridge.h>
+#include <beep/netpoll.h>
+#include <beep/u64_stats_sync.h>
 #include <net/route.h>
 
 #define BR_HASH_BITS 8

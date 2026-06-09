@@ -38,23 +38,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/delay.h>
-#include <linux/hdlc.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/net.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/delay.h>
+#include <beep/hdlc.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/gfp.h>
 #include <asm/dma.h>
 #include <asm/io.h>
 #define RT_LOCK
 #define RT_UNLOCK
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 
 #include "z85230.h"
 

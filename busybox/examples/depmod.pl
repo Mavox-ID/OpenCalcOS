@@ -38,11 +38,11 @@ my $dep = {};
 my $mod = {};
 
 my $usage = <<TXT;
-$0 -b basedir { -k <vmlinux> | -F <System.map> } [options]...
+$0 -b basedir { -k <vmbeep> | -F <System.map> } [options]...
   Where:
    -h --help          : Show this help screen
    -b --basedir       : Modules base directory (e.g /libs/modules/<2.x.y>)
-   -k --kernel        : Kernel binary for the target (e.g. vmlinux)
+   -k --kernel        : Kernel binary for the target (e.g. vmbeep)
    -F --kernelsyms    : Kernel symbol file (e.g. System.map)
    -n --stdout        : Write to stdout instead of <basedir>/modules.dep
    -v --verbose       : Print out lots of debugging stuff
@@ -128,14 +128,14 @@ foreach my $obj ( @liblist ){
 }
 
 
-# vmlinux is a special name that is only used to resolve symbols
-my $tgtname = 'vmlinux';
+# vmbeep is a special name that is only used to resolve symbols
+my $tgtname = 'vmbeep';
 my @output = $kernelsyms ? `cat $kernelsyms` : `$nm $kernel`;
 warn "\nMODULE = $tgtname\n" if $verbose;
 build_ref_tables($tgtname, \@output, $exp, $dep);
 
 # resolve the dependencies for each module
-# reduce dependencies: remove unresolvable and resolved from vmlinux/System.map
+# reduce dependencies: remove unresolvable and resolved from vmbeep/System.map
 # remove duplicates
 foreach my $module (keys %$dep) {
     warn "reducing module: $module\n" if $verbose;
@@ -143,7 +143,7 @@ foreach my $module (keys %$dep) {
     foreach (@{$dep->{$module}}) {
         if( $exp->{$_} ) {
             warn "resolved symbol $_ in file $exp->{$_}\n" if $verbose;
-            next if $exp->{$_} =~ /vmlinux/;
+            next if $exp->{$_} =~ /vmbeep/;
             $mod->{$module}{$exp->{$_}} = 1;
         } else {
             warn "unresolved symbol $_ in file $module\n";
@@ -246,7 +246,7 @@ sub build_ref_tables
 	}
 
     # this takes makes sure modules with no dependencies get listed
-    push @{$dep->{$name}}, $symprefix . 'printk' unless $name eq 'vmlinux';
+    push @{$dep->{$name}}, $symprefix . 'printk' unless $name eq 'vmbeep';
 
     # gather the unresolved symbols
     foreach ( @$sym_ar ) {
@@ -277,7 +277,7 @@ depmod.pl - a cross platform script to generate kernel module
 dependency lists (modules.conf) which can then be used by modprobe
 on the target platform.
 
-It supports Linux 2.4 and 2.6 styles of modules.conf (auto-detected)
+It supports Beep 2.4 and 2.6 styles of modules.conf (auto-detected)
 
 =head1 SYNOPSIS
 
@@ -285,7 +285,7 @@ depmod.pl [OPTION]... [basedir]...
 
 Example:
 
-	depmod.pl -F linux/System.map -b target/libs/modules/2.6.11
+	depmod.pl -F beep/System.map -b target/libs/modules/2.6.11
 
 =head1 DESCRIPTION
 
@@ -317,7 +317,7 @@ looks like a kernel version.
 
 =item B<-k --kernel>
 
-Kernel binary for the target (vmlinux).  You must either supply a kernel binary
+Kernel binary for the target (vmbeep).  You must either supply a kernel binary
 or a kernel symbol file (using the -F option).
 
 =item B<-F --kernelsyms>

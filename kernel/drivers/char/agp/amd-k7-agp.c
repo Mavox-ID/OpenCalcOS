@@ -2,13 +2,13 @@
  * AMD K7 AGPGART routines.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/agp_backend.h>
-#include <linux/page-flags.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/agp_backend.h>
+#include <beep/page-flags.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
 #include "agp.h"
 
 #define AMD_MMBASE	0x14

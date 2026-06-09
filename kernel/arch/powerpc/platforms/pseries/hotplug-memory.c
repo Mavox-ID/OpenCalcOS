@@ -9,10 +9,10 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/of.h>
-#include <linux/memblock.h>
-#include <linux/vmalloc.h>
-#include <linux/memory.h>
+#include <beep/of.h>
+#include <beep/memblock.h>
+#include <beep/vmalloc.h>
+#include <beep/memory.h>
 
 #include <asm/firmware.h>
 #include <asm/machdep.h>

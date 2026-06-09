@@ -7,20 +7,20 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/usb/musb.h>
-#include <linux/leds.h>
-#include <linux/input.h>
+#include <beep/device.h>
+#include <beep/export.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
+#include <beep/i2c.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/usb/musb.h>
+#include <beep/leds.h>
+#include <beep/input.h>
 #include <asm/dma.h>
 #include <asm/bfin5xx_spi.h>
 #include <asm/reboot.h>
@@ -30,7 +30,7 @@
 
 #if defined(CONFIG_TOUCHSCREEN_AD7879) \
 	|| defined(CONFIG_TOUCHSCREEN_AD7879_MODULE)
-#include <linux/spi/ad7879.h>
+#include <beep/spi/ad7879.h>
 #define LCD_BACKLIGHT_GPIO 0x40
 /* TLL6527M uses TLL7UIQ35 / ADI LCD EZ Extender. AD7879 AUX GPIO is used for
  * LCD Backlight Enable
@@ -140,7 +140,7 @@ static struct mtd_partition tll6527m_partitions[] = {
 		.size       = 0xA0000,
 		.offset     = 0,
 	}, {
-		.name       = "linux kernel(nor)",
+		.name       = "beep kernel(nor)",
 		.size       = 0xD00000,
 		.offset     = MTDPART_OFS_APPEND,
 	}, {
@@ -188,7 +188,7 @@ static struct platform_device tll6527m_flash_device = {
  * EXP_GPIO_SPISEL_BASE is the base number for the expanded outputs being
  * used as SPI CS lines, this should be > MAX_BLACKFIN_GPIOS
  */
-#include <linux/gpio-decoder.h>
+#include <beep/gpio-decoder.h>
 #define EXP_GPIO_SPISEL_BASE 0x64
 static unsigned gpio_addr_inputs[] = {
 	GPIO_PG1, GPIO_PH9, GPIO_PH10
@@ -216,7 +216,7 @@ static struct platform_device spi_decoded_gpio = {
 #endif
 
 #if defined(CONFIG_INPUT_ADXL34X) || defined(CONFIG_INPUT_ADXL34X_MODULE)
-#include <linux/input/adxl34x.h>
+#include <beep/input/adxl34x.h>
 static const struct adxl34x_platform_data adxl345_info = {
 	.x_axis_offset = 0,
 	.y_axis_offset = 0,
@@ -258,7 +258,7 @@ static struct platform_device rtc_device = {
 #endif
 
 #if defined(CONFIG_BFIN_MAC) || defined(CONFIG_BFIN_MAC_MODULE)
-#include <linux/bfin_mac.h>
+#include <beep/bfin_mac.h>
 static const unsigned short bfin_mac_peripherals[] = P_RMII0;
 
 static struct bfin_phydev_platform_data bfin_phydev_data[] = {
@@ -299,7 +299,7 @@ static struct mtd_partition bfin_spi_flash_partitions[] = {
 		.offset = 0,
 		.mask_flags = MTD_CAP_ROM
 	}, {
-		.name = "linux kernel(spi)",
+		.name = "beep kernel(spi)",
 		.size = MTDPART_SIZ_FULL,
 		.offset = MTDPART_OFS_APPEND,
 	}
@@ -352,7 +352,7 @@ static struct platform_device bfin_i2s = {
 #endif
 
 #if defined(CONFIG_GPIO_MCP23S08) || defined(CONFIG_GPIO_MCP23S08_MODULE)
-#include <linux/spi/mcp23s08.h>
+#include <beep/spi/mcp23s08.h>
 static const struct mcp23s08_platform_data bfin_mcp23s08_sys_gpio_info = {
 	.chip[0].is_present = true,
 	.base = 0x30,

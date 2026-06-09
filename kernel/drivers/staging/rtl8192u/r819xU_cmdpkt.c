@@ -636,7 +636,7 @@ cmpk_handle_tx_rate_history(
 
 	//
 	// Do endian transfer to word alignment(16 bits) for windows system.
-	// You must do different endian transfer for linux and MAC OS
+	// You must do different endian transfer for beep and MAC OS
 	//
 	for (i = 0; i < (length/4); i++)
 	{

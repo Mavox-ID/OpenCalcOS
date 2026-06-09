@@ -48,9 +48,9 @@
  */
 
 #include <asm/io.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/wait.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/wait.h>
 #include <sound/core.h>
 #include <sound/snd_wavefront.h>
 

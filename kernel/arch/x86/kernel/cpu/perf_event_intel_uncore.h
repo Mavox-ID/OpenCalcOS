@@ -1,7 +1,7 @@
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/perf_event.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/perf_event.h>
 #include "perf_event.h"
 
 #define UNCORE_PMU_NAME_LEN		32

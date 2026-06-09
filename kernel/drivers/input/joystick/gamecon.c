@@ -1,5 +1,5 @@
 /*
- * NES, SNES, N64, MultiSystem, PSX gamepad driver for Linux
+ * NES, SNES, N64, MultiSystem, PSX gamepad driver for Beep
  *
  *  Copyright (c) 1999-2004	Vojtech Pavlik <vojtech@suse.cz>
  *  Copyright (c) 2004		Peter Nelson <rufus-kernel@hackish.org>
@@ -32,14 +32,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/parport.h>
-#include <linux/input.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/parport.h>
+#include <beep/input.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("NES, SNES, N64, MultiSystem, PSX gamepad driver");

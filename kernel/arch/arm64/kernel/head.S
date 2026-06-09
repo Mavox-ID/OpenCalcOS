@@ -20,8 +20,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 
 #include <asm/assembler.h>
 #include <asm/ptrace.h>
@@ -106,7 +106,7 @@
 	__HEAD
 
 	/*
-	 * DO NOT MODIFY. Image header expected by Linux boot-loaders.
+	 * DO NOT MODIFY. Image header expected by Beep boot-loaders.
 	 */
 	b	stext				// branch to kernel start, magic
 	.long	0				// reserved

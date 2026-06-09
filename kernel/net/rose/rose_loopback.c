@@ -6,14 +6,14 @@
  *
  * Copyright (C) Jonathan Naylor G4KLX (g4klx@g4klx.demon.co.uk)
  */
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/timer.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/socket.h>
+#include <beep/timer.h>
 #include <net/ax25.h>
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 #include <net/rose.h>
-#include <linux/init.h>
+#include <beep/init.h>
 
 static struct sk_buff_head loopback_queue;
 static struct timer_list loopback_timer;

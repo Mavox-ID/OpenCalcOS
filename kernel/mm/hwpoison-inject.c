@@ -1,11 +1,11 @@
 /* Inject a hwpoison memory failure on a arbitrary pfn */
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/pagemap.h>
-#include <linux/hugetlb.h>
+#include <beep/module.h>
+#include <beep/debugfs.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/pagemap.h>
+#include <beep/hugetlb.h>
 #include "internal.h"
 
 static struct dentry *hwpoison_dir;

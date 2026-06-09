@@ -1,5 +1,5 @@
 /*
- * linux/fs/partitions/acorn.h
+ * beep/fs/partitions/acorn.h
  *
  * Copyright (C) 1996-2001 Russell King.
  *

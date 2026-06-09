@@ -8,10 +8,10 @@
  *  Copyright (c) 2008 Wei Ni <wni@nvidia.com>
  *
  *  Authors:
- *			Wu Fengguang <wfg@linux.intel.com>
+ *			Wu Fengguang <wfg@beep.intel.com>
  *
  *  Maintained by:
- *			Wu Fengguang <wfg@linux.intel.com>
+ *			Wu Fengguang <wfg@beep.intel.com>
  *
  *  This program is free software; you can redistribute it and/or modify it
  *  under the terms of the GNU General Public License as published by the Free
@@ -28,10 +28,10 @@
  *  Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/asoundef.h>

@@ -10,16 +10,16 @@
  *  as published by the Free Software Foundation; either version
  *  2 of the License, or (at your option) any later version.
  */
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/stddef.h>
+#include <beep/init.h>
+#include <beep/kthread.h>
+#include <beep/mutex.h>
 #include <asm/prom.h>
 #include <asm/pgtable.h>
 #include <asm/io.h>
@@ -30,8 +30,8 @@
 #include <asm/ohare.h>
 #include <asm/heathrow.h>
 #include <asm/keylargo.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
+#include <beep/adb.h>
+#include <beep/pmu.h>
 
 #define MB_FCR32(bay, r)	((bay)->base + ((r) >> 2))
 #define MB_FCR8(bay, r)		(((volatile u8 __iomem *)((bay)->base)) + (r))

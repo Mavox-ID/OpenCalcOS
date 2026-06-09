@@ -14,25 +14,25 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
-#include <linux/netdevice.h>
-#include <linux/netfilter.h>
-#include <linux/proc_fs.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_queue.h>
-#include <linux/list.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/notifier.h>
+#include <beep/netdevice.h>
+#include <beep/netfilter.h>
+#include <beep/proc_fs.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/netfilter_ipv6.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_queue.h>
+#include <beep/list.h>
 #include <net/sock.h>
 #include <net/netfilter/nf_queue.h>
 #include <net/netfilter/nfnetlink_queue.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #ifdef CONFIG_BRIDGE_NETFILTER
 #include "../bridge/br_private.h"

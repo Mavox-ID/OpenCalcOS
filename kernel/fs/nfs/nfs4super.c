@@ -1,11 +1,11 @@
 /*
  * Copyright (c) 2012 Bryan Schumaker <bjschuma@netapp.com>
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/nfs_idmap.h>
-#include <linux/nfs4_mount.h>
-#include <linux/nfs_fs.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/nfs_idmap.h>
+#include <beep/nfs4_mount.h>
+#include <beep/nfs_fs.h>
 #include "delegation.h"
 #include "internal.h"
 #include "nfs4_fs.h"

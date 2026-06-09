@@ -28,8 +28,8 @@
 #ifndef __NCI_CORE_H
 #define __NCI_CORE_H
 
-#include <linux/interrupt.h>
-#include <linux/skbuff.h>
+#include <beep/interrupt.h>
+#include <beep/skbuff.h>
 
 #include <net/nfc/nfc.h>
 #include <net/nfc/nci.h>

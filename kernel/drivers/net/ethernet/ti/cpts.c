@@ -17,15 +17,15 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
-#include <linux/err.h>
-#include <linux/if.h>
-#include <linux/hrtimer.h>
-#include <linux/module.h>
-#include <linux/net_tstamp.h>
-#include <linux/ptp_classify.h>
-#include <linux/time.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
+#include <beep/err.h>
+#include <beep/if.h>
+#include <beep/hrtimer.h>
+#include <beep/module.h>
+#include <beep/net_tstamp.h>
+#include <beep/ptp_classify.h>
+#include <beep/time.h>
+#include <beep/uaccess.h>
+#include <beep/workqueue.h>
 
 #include "cpts.h"
 

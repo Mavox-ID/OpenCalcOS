@@ -7,15 +7,15 @@
  *     Copyright IBM Corp. 2003, 2009
  */
 
-#include <linux/bootmem.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <beep/bootmem.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/compat.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/types.h>
 
 #include <asm/compat.h>
 #include <asm/ccwdev.h>

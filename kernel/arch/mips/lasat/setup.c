@@ -22,11 +22,11 @@
  *
  * Lasat specific setup.
  */
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/tty.h>
 
 #include <asm/time.h>
 #include <asm/cpu.h>
@@ -36,7 +36,7 @@
 #include <asm/lasat/serial.h>
 
 #ifdef CONFIG_PICVUE
-#include <linux/notifier.h>
+#include <beep/notifier.h>
 #endif
 
 #include "ds1603.h"

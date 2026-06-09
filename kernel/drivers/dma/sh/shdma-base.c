@@ -13,15 +13,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/shdma-base.h>
-#include <linux/dmaengine.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/delay.h>
+#include <beep/shdma-base.h>
+#include <beep/dmaengine.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/pm_runtime.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
 #include "../dmaengine.h"
 

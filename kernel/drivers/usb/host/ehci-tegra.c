@@ -16,18 +16,18 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/tegra_usb.h>
-#include <linux/irq.h>
-#include <linux/usb/otg.h>
-#include <linux/gpio.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/pm_runtime.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/platform_data/tegra_usb.h>
+#include <beep/irq.h>
+#include <beep/usb/otg.h>
+#include <beep/gpio.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
+#include <beep/pm_runtime.h>
 
-#include <linux/usb/tegra_usb_phy.h>
+#include <beep/usb/tegra_usb_phy.h>
 
 #define TEGRA_USB_BASE			0xC5000000
 #define TEGRA_USB2_BASE			0xC5004000

@@ -11,24 +11,24 @@
  * NO WARRANTY
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/time.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/time.h>
 #include <asm/uaccess.h>
 #include "reiserfs.h"
 #include "acl.h"
 #include "xattr.h"
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/exportfs.h>
-#include <linux/quotaops.h>
-#include <linux/vfs.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/crc32.h>
-#include <linux/seq_file.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/buffer_head.h>
+#include <beep/exportfs.h>
+#include <beep/quotaops.h>
+#include <beep/vfs.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/crc32.h>
+#include <beep/seq_file.h>
 
 struct file_system_type reiserfs_fs_type;
 

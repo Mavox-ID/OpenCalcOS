@@ -1,6 +1,6 @@
 /*
  *
- *			Linux MegaRAID device driver
+ *			Beep MegaRAID device driver
  *
  * Copyright (c) 2003-2004  LSI Logic Corporation.
  *
@@ -15,14 +15,14 @@
 #ifndef MEGARAID_MM_H
 #define MEGARAID_MM_H
 
-#include <linux/spinlock.h>
-#include <linux/fs.h>
+#include <beep/spinlock.h>
+#include <beep/fs.h>
 #include <asm/uaccess.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/pci.h>
+#include <beep/list.h>
+#include <beep/miscdevice.h>
 
 #include "mbox_defs.h"
 #include "megaraid_ioctl.h"

@@ -1,4 +1,4 @@
-/*** -*- linux-c -*- **********************************************************
+/*** -*- beep-c -*- **********************************************************
 
      Driver for Atmel at76c502 at76c504 and at76c506 wireless cards.
 
@@ -7,8 +7,8 @@
 
     This code was developed from version 2.1.1 of the Atmel drivers,
     released by Atmel corp. under the GPL in December 2002. It also
-    includes code from the Linux aironet drivers (C) Benjamin Reed,
-    and the Linux PCMCIA package, (C) David Hinds and the Linux wireless
+    includes code from the Beep aironet drivers (C) Benjamin Reed,
+    and the Beep PCMCIA package, (C) David Hinds and the Beep wireless
     extensions, (C) Jean Tourrilhes.
 
     The firmware module for reading the MAC address of the card comes from
@@ -39,35 +39,35 @@
 
 ******************************************************************************/
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
 
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/timer.h>
+#include <beep/kernel.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/timer.h>
 #include <asm/byteorder.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/wireless.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
+#include <beep/ioport.h>
+#include <beep/fcntl.h>
+#include <beep/delay.h>
+#include <beep/wireless.h>
 #include <net/iw_handler.h>
-#include <linux/crc32.h>
-#include <linux/proc_fs.h>
-#include <linux/device.h>
-#include <linux/moduleparam.h>
-#include <linux/firmware.h>
-#include <linux/jiffies.h>
-#include <linux/ieee80211.h>
+#include <beep/crc32.h>
+#include <beep/proc_fs.h>
+#include <beep/device.h>
+#include <beep/moduleparam.h>
+#include <beep/firmware.h>
+#include <beep/jiffies.h>
+#include <beep/ieee80211.h>
 #include "atmel.h"
 
 #define DRIVER_MAJOR 0

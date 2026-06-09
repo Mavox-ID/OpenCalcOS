@@ -1,20 +1,20 @@
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/percpu.h>
+#include <beep/percpu.h>
 #include <asm/pgalloc.h>
 #include <asm/tlb.h>
 
 #ifdef CONFIG_SMP
 
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/threads.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/hardirq.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/threads.h>
+#include <beep/interrupt.h>
+#include <beep/err.h>
+#include <beep/hardirq.h>
 #include <asm/smp.h>
 #include <asm/processor.h>
 #include <asm/spinlock.h>

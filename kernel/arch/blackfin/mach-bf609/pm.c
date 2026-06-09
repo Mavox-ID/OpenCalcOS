@@ -6,13 +6,13 @@
  * Licensed under the GPL-2
  */
 
-#include <linux/suspend.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/syscore_ops.h>
+#include <beep/suspend.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/delay.h>
+#include <beep/syscore_ops.h>
 
 #include <asm/dpmc.h>
 #include <asm/pm.h>

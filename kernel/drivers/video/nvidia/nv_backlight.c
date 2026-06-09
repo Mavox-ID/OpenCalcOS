@@ -2,16 +2,16 @@
  * Backlight code for nVidia based graphic cards
  *
  * Copyright 2004 Antonino Daplas <adaplas@pol.net>
- * Copyright (c) 2006 Michael Hanselmann <linux-kernel@hansmi.ch>
+ * Copyright (c) 2006 Michael Hanselmann <beep-kernel@hansmi.ch>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
 
-#include <linux/backlight.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
+#include <beep/backlight.h>
+#include <beep/fb.h>
+#include <beep/pci.h>
 
 #ifdef CONFIG_PMAC_BACKLIGHT
 #include <asm/backlight.h>

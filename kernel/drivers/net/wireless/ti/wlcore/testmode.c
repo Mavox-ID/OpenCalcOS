@@ -22,7 +22,7 @@
  */
 #include "testmode.h"
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include <net/genetlink.h>
 
 #include "wlcore.h"

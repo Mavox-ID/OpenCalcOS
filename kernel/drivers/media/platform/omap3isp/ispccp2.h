@@ -27,7 +27,7 @@
 #ifndef OMAP3_ISP_CCP2_H
 #define OMAP3_ISP_CCP2_H
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 
 struct isp_device;
 struct isp_csiphy;

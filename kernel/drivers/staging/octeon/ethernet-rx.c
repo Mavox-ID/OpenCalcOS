@@ -24,26 +24,26 @@
  * This file may also be available under a different license from Cavium.
  * Contact Cavium Networks for more information
 **********************************************************************/
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/cache.h>
-#include <linux/cpumask.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/string.h>
-#include <linux/prefetch.h>
-#include <linux/ratelimit.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/cache.h>
+#include <beep/cpumask.h>
+#include <beep/netdevice.h>
+#include <beep/init.h>
+#include <beep/etherdevice.h>
+#include <beep/ip.h>
+#include <beep/string.h>
+#include <beep/prefetch.h>
+#include <beep/ratelimit.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
 #include <net/dst.h>
 #ifdef CONFIG_XFRM
-#include <linux/xfrm.h>
+#include <beep/xfrm.h>
 #include <net/xfrm.h>
 #endif /* CONFIG_XFRM */
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include <asm/octeon/octeon.h>
 
@@ -448,7 +448,7 @@ static int cvm_oct_napi_poll(struct napi_struct *napi, int budget)
 			 * Drop any packet received for a device that
 			 * doesn't exist.
 			 */
-			printk_ratelimited("Port %d not controlled by Linux, packet dropped\n",
+			printk_ratelimited("Port %d not controlled by Beep, packet dropped\n",
 				   work->ipprt);
 			dev_kfree_skb_irq(skb);
 		}

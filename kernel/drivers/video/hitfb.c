@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/hitfb.c -- Hitachi LCD frame buffer device
+ * beep/drivers/video/hitfb.c -- Hitachi LCD frame buffer device
  *
  * (C) 1999 Mihai Spatar
  * (C) 2000 YAEGASHI Takeshi
@@ -11,15 +11,15 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/fb.h>
 
 #include <asm/machvec.h>
 #include <asm/uaccess.h>

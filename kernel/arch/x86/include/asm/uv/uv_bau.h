@@ -11,7 +11,7 @@
 #ifndef _ASM_X86_UV_UV_BAU_H
 #define _ASM_X86_UV_UV_BAU_H
 
-#include <linux/bitmap.h>
+#include <beep/bitmap.h>
 #define BITSPERBYTE 8
 
 /*

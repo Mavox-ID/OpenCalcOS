@@ -7,17 +7,17 @@
  * for more details.
  */
 
-#include <linux/bootmem.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/mm.h> /* mem_init */
-#include <linux/initrd.h>
-#include <linux/pagemap.h>
-#include <linux/pfn.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/export.h>
+#include <beep/bootmem.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/memblock.h>
+#include <beep/mm.h> /* mem_init */
+#include <beep/initrd.h>
+#include <beep/pagemap.h>
+#include <beep/pfn.h>
+#include <beep/slab.h>
+#include <beep/swap.h>
+#include <beep/export.h>
 
 #include <asm/page.h>
 #include <asm/mmu_context.h>
@@ -156,7 +156,7 @@ void __init setup_memory(void)
 
 	/* reservation of region where is the kernel */
 	kernel_align_start = PAGE_DOWN((u32)_text);
-	/* ALIGN can be remove because _end in vmlinux.lds.S is align */
+	/* ALIGN can be remove because _end in vmbeep.lds.S is align */
 	kernel_align_size = PAGE_UP((u32)klimit) - kernel_align_start;
 	printk(KERN_INFO "%s: kernel addr:0x%08x-0x%08x size=0x%08x\n",
 		__func__, kernel_align_start, kernel_align_start

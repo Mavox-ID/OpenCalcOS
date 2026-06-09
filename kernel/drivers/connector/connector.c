@@ -19,17 +19,17 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/netlink.h>
-#include <linux/moduleparam.h>
-#include <linux/connector.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/proc_fs.h>
-#include <linux/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/skbuff.h>
+#include <beep/netlink.h>
+#include <beep/moduleparam.h>
+#include <beep/connector.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/proc_fs.h>
+#include <beep/spinlock.h>
 
 #include <net/sock.h>
 

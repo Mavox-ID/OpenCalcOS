@@ -8,7 +8,7 @@
  * This file is a *private* header, so other modules don't want to know
  * what's in there...
  *
- * Note : as most part of the Linux kernel, this module is available
+ * Note : as most part of the Beep kernel, this module is available
  * under the GNU General Public License (GPL).
  */
 
@@ -38,10 +38,10 @@
  * setup. And, as IrNET let PPP do the hard work, the implementation
  * is much simpler than IrLAN.
  *
- * The Linux implementation
+ * The Beep implementation
  * ------------------------
- * IrNET is written on top of the Linux-IrDA stack, and interface with
- * the generic Linux PPP driver. Because IrNET depend on recent
+ * IrNET is written on top of the Beep-IrDA stack, and interface with
+ * the generic Beep PPP driver. Because IrNET depend on recent
  * changes of the PPP driver interface, IrNET will work only with very
  * recent kernel (2.3.99-pre6 and up).
  *
@@ -137,13 +137,13 @@
  *	o Set official device number alloaction on /dev/irnet
  *
  * v3 - 30.8.00 - Jean II
- *	o Update to latest Linux-IrDA changes :
+ *	o Update to latest Beep-IrDA changes :
  *		- queue_t => irda_queue_t
  *	o Update to ppp-2.4.0 :
  *		- move irda_irnet_connect from PPPIOCATTACH to TIOCSETD
- *	o Add EXPIRE event (depend on new IrDA-Linux patch)
+ *	o Add EXPIRE event (depend on new IrDA-Beep patch)
  *	o Switch from `hashbin_remove' to `hashbin_remove_this' to fix
- *	  a multilink bug... (depend on new IrDA-Linux patch)
+ *	  a multilink bug... (depend on new IrDA-Beep patch)
  *	o fix a self->daddr to self->raddr in irda_irnet_connect to fix
  *	  another multilink bug (darn !)
  *	o Remove LINKNAME_IOCTL cruft
@@ -153,7 +153,7 @@
  *
  * v4 - 28.9.00 - Jean II
  *	o Fix interaction between poll/select and dump discovery log
- *	o Add IRNET_BLOCKED_LINK event (depend on new IrDA-Linux patch)
+ *	o Add IRNET_BLOCKED_LINK event (depend on new IrDA-Beep patch)
  *	o Add IRNET_NOANSWER_FROM event (mostly to help support)
  *	o Release flow control in disconnect_indication
  *	o Block packets while connecting (speed up connections)
@@ -238,24 +238,24 @@
 
 /***************************** INCLUDES *****************************/
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/tty.h>
-#include <linux/proc_fs.h>
-#include <linux/netdevice.h>
-#include <linux/miscdevice.h>
-#include <linux/poll.h>
-#include <linux/capability.h>
-#include <linux/ctype.h>	/* isspace() */
-#include <linux/string.h>	/* skip_spaces() */
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/tty.h>
+#include <beep/proc_fs.h>
+#include <beep/netdevice.h>
+#include <beep/miscdevice.h>
+#include <beep/poll.h>
+#include <beep/capability.h>
+#include <beep/ctype.h>	/* isspace() */
+#include <beep/string.h>	/* skip_spaces() */
 #include <asm/uaccess.h>
-#include <linux/init.h>
+#include <beep/init.h>
 
-#include <linux/ppp_defs.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/ppp_channel.h>
+#include <beep/ppp_defs.h>
+#include <beep/ppp-ioctl.h>
+#include <beep/ppp_channel.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/iriap.h>

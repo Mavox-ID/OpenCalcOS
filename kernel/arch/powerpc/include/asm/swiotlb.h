@@ -11,7 +11,7 @@
 #ifndef __ASM_SWIOTLB_H
 #define __ASM_SWIOTLB_H
 
-#include <linux/swiotlb.h>
+#include <beep/swiotlb.h>
 
 extern struct dma_map_ops swiotlb_dma_ops;
 

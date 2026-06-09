@@ -30,14 +30,14 @@
 
 #define pr_fmt(fmt) "[TTM] " fmt
 
-#include <linux/sched.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/shmem_fs.h>
-#include <linux/file.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/sched.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/shmem_fs.h>
+#include <beep/file.h>
+#include <beep/swap.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include <drm/drm_cache.h>
 #include <drm/drm_mem_util.h>
 #include <drm/ttm/ttm_module.h>

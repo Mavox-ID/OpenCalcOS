@@ -1,5 +1,5 @@
-#include <linux/serial_reg.h>
-#include <linux/serial_8250.h>
+#include <beep/serial_reg.h>
+#include <beep/serial_8250.h>
 
 #include "8250.h"
 

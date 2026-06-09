@@ -10,16 +10,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/platform_device.h>
-#include <linux/debugfs.h>
-#include <linux/omap-iommu.h>
-#include <linux/platform_data/iommu-omap.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
+#include <beep/platform_device.h>
+#include <beep/debugfs.h>
+#include <beep/omap-iommu.h>
+#include <beep/platform_data/iommu-omap.h>
 
 #include "omap-iopgtable.h"
 #include "omap-iommu.h"

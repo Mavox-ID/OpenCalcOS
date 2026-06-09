@@ -13,7 +13,7 @@
 #ifndef _WM8903_H
 #define _WM8903_H
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 
 extern int wm8903_mic_detect(struct snd_soc_codec *codec,
 			     struct snd_soc_jack *jack,

@@ -16,7 +16,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 static struct rc_map_table dib0700_rc5_table[] = {
 	/* Key codes for the tiny Pinnacle remote*/

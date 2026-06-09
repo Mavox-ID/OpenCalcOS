@@ -8,7 +8,7 @@
 #ifndef __BFROM_H__
 #define __BFROM_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* Possible syscontrol action flags */
 #define SYSCTRL_READ        0x00000000    /* read registers */

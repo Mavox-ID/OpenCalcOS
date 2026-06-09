@@ -14,7 +14,7 @@
  *
  * Code mostly moved over from misc_32.S
  *
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  * Partially rewritten by Cort Dougan (cort@cs.nmt.edu)
  * Paul Mackerras, Kumar Gala and Benjamin Herrenschmidt.

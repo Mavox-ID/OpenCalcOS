@@ -18,13 +18,13 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/threads.h>
-#include <linux/sched.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/threads.h>
+#include <beep/sched.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
 
 #include <media/lirc_dev.h>
 

@@ -12,12 +12,12 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of_platform.h>
-#include <linux/fsl-diu-fb.h>
-#include <linux/bootmem.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/of_platform.h>
+#include <beep/fsl-diu-fb.h>
+#include <beep/bootmem.h>
 #include <sysdev/fsl_soc.h>
 
 #include <asm/cacheflush.h>

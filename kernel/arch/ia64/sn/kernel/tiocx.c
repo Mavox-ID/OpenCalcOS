@@ -6,14 +6,14 @@
  * Copyright (c) 2005 Silicon Graphics, Inc.  All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/proc_fs.h>
-#include <linux/capability.h>
-#include <linux/device.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/proc_fs.h>
+#include <beep/capability.h>
+#include <beep/device.h>
+#include <beep/delay.h>
 #include <asm/uaccess.h>
 #include <asm/sn/sn_sal.h>
 #include <asm/sn/addrs.h>

@@ -54,18 +54,18 @@
 			and owner support for newer module locks
 */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/videodev2.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/videodev2.h>
+#include <beep/slab.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-fh.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-event.h>
-#include <linux/parport.h>
+#include <beep/parport.h>
 
 /*#define DEBUG*/				/* Undef me for production */
 
@@ -560,7 +560,7 @@ static int w9966_setup(struct w9966 *cam, int x1, int y1, int x2, int y2, int w,
 }
 
 /*
- *	Video4linux interfacing
+ *	Video4beep interfacing
  */
 
 static int cam_querycap(struct file *file, void  *priv,

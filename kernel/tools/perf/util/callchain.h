@@ -2,8 +2,8 @@
 #define __PERF_CALLCHAIN_H
 
 #include "../perf.h"
-#include <linux/list.h>
-#include <linux/rbtree.h>
+#include <beep/list.h>
+#include <beep/rbtree.h>
 #include "event.h"
 #include "symbol.h"
 

@@ -10,7 +10,7 @@
  * return an error value in addition to the "real"
  * return value.
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/dwarf2.h>
 #include <asm/thread_info.h>
 #include <asm/errno.h>

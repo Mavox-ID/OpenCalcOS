@@ -3,14 +3,14 @@
  * Copyright (C) 2006-2009 Krzysztof Halasa <khc@pm.waw.pl>
  */
 
-#include <linux/delay.h>
-#include <linux/hdlc.h>
-#include <linux/i2c-gpio.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/serial_8250.h>
+#include <beep/delay.h>
+#include <beep/hdlc.h>
+#include <beep/i2c-gpio.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/serial_8250.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/flash.h>

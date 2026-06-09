@@ -17,15 +17,15 @@
  * Boston, MA  02110-1301, USA.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/ulpi.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/ulpi.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

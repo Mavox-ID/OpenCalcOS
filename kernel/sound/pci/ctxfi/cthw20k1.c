@@ -15,15 +15,15 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/io.h>
+#include <beep/string.h>
+#include <beep/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
 #include "cthw20k1.h"
 #include "ct20k1reg.h"
 

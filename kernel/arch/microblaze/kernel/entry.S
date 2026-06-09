@@ -15,8 +15,8 @@
  * Heavily modified by John Williams for Microblaze
  */
 
-#include <linux/sys.h>
-#include <linux/linkage.h>
+#include <beep/sys.h>
+#include <beep/linkage.h>
 
 #include <asm/entry.h>
 #include <asm/current.h>
@@ -28,7 +28,7 @@
 #include <asm/page.h>
 #include <asm/unistd.h>
 
-#include <linux/errno.h>
+#include <beep/errno.h>
 #include <asm/signal.h>
 
 #undef DEBUG

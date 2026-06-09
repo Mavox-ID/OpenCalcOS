@@ -11,23 +11,23 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/plat-ram.h>
-#include <linux/mtd/physmap.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/spi/mmc_spi.h>
-#include <linux/phy.h>
+#include <beep/device.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/plat-ram.h>
+#include <beep/mtd/physmap.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/spi/mmc_spi.h>
+#include <beep/phy.h>
 #include <asm/dma.h>
 #include <asm/bfin5xx_spi.h>
 #include <asm/reboot.h>
@@ -49,7 +49,7 @@ static struct platform_device rtc_device = {
 #endif
 
 #if defined(CONFIG_BFIN_MAC) || defined(CONFIG_BFIN_MAC_MODULE)
-#include <linux/bfin_mac.h>
+#include <beep/bfin_mac.h>
 static const unsigned short bfin_mac_peripherals[] = P_RMII0;
 
 static struct bfin_phydev_platform_data bfin_phydev_data[] = {
@@ -88,7 +88,7 @@ static struct mtd_partition asmb_flash_partitions[] = {
 		.size       = 0x30000,
 		.offset     = 0,
 	}, {
-		.name       = "linux kernel and rootfs(nor)",
+		.name       = "beep kernel and rootfs(nor)",
 		.size       = 0x300000 - 0x30000 - 0x10000,
 		.offset     = MTDPART_OFS_APPEND,
 	}, {

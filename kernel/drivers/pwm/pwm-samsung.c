@@ -2,7 +2,7 @@
  *
  * Copyright (c) 2007 Ben Dooks
  * Copyright (c) 2008 Simtec Electronics
- *	Ben Dooks <ben@simtec.co.uk>, <ben-linux@fluff.org>
+ *	Ben Dooks <ben@simtec.co.uk>, <ben-beep@fluff.org>
  *
  * S3C series PWM device core
  *
@@ -13,14 +13,14 @@
 
 #define pr_fmt(fmt) "pwm-samsung: " fmt
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/pwm.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/pwm.h>
 
 #include <mach/map.h>
 

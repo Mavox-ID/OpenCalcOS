@@ -42,12 +42,12 @@
  *
  * This file contains the guts of the RPC RDMA protocol, and
  * does marshaling/unmarshaling, etc. It is also where interfacing
- * to the Linux RPC framework lives.
+ * to the Beep RPC framework lives.
  */
 
 #include "xprt_rdma.h"
 
-#include <linux/highmem.h>
+#include <beep/highmem.h>
 
 #ifdef RPC_DEBUG
 # define RPCDBG_FACILITY	RPCDBG_TRANS

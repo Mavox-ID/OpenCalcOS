@@ -62,14 +62,14 @@
  *   and will continue to evolve.
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/in.h>
-#include <linux/tty.h>
-#include <linux/proc_fs.h>
-#include <linux/spinlock.h>
-#include <linux/jiffies.h>
-#include <linux/idr.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/in.h>
+#include <beep/tty.h>
+#include <beep/proc_fs.h>
+#include <beep/spinlock.h>
+#include <beep/jiffies.h>
+#include <beep/idr.h>
 
 #if IS_ENABLED(CONFIG_IPV6)
 #include <net/ipv6.h>

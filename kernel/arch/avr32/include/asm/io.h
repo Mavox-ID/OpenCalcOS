@@ -1,10 +1,10 @@
 #ifndef __ASM_AVR32_IO_H
 #define __ASM_AVR32_IO_H
 
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <beep/bug.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/types.h>
 
 #include <asm/addrspace.h>
 #include <asm/byteorder.h>

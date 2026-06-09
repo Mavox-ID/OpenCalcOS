@@ -20,7 +20,7 @@
  */
 
 #include <sound/core.h>
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include "seq_fifo.h"
 #include "seq_lock.h"
 

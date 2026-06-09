@@ -1,16 +1,16 @@
 /* irq.h: IRQ registers on the 64-bit Sparc.
  *
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
- * Copyright (C) 1998 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1998 Jakub Jelinek (jj@ultra.beep.cz)
  */
 
 #ifndef _SPARC64_IRQ_H
 #define _SPARC64_IRQ_H
 
-#include <linux/linkage.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
+#include <beep/linkage.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
 #include <asm/pil.h>
 #include <asm/ptrace.h>
 

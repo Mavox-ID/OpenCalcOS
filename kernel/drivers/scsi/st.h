@@ -2,9 +2,9 @@
 #ifndef _ST_H
 #define _ST_H
 
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/kref.h>
+#include <beep/completion.h>
+#include <beep/mutex.h>
+#include <beep/kref.h>
 #include <scsi/scsi_cmnd.h>
 
 /* Descriptor for analyzed sense data */

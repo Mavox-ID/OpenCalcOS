@@ -33,12 +33,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/sched.h>
+#include <beep/module.h>
+#include <beep/tty.h>
+#include <beep/sched.h>
 #include <asm/unaligned.h>
-#include <linux/proc_fs.h>
-#include <linux/uaccess.h>
+#include <beep/proc_fs.h>
+#include <beep/uaccess.h>
 
 #include "dgrp_common.h"
 

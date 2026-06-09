@@ -3,9 +3,9 @@
  *
  * DEBUG_PREEMPT variant of smp_processor_id().
  */
-#include <linux/export.h>
-#include <linux/kallsyms.h>
-#include <linux/sched.h>
+#include <beep/export.h>
+#include <beep/kallsyms.h>
+#include <beep/sched.h>
 
 notrace unsigned int debug_smp_processor_id(void)
 {

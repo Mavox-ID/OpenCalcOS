@@ -31,8 +31,8 @@ Configuration Options: not applicable, uses PCI auto config
 */
 
 #include "../comedidev.h"
-#include <linux/kernel.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
 #include "comedi_fc.h"
 #include "8253.h"
 

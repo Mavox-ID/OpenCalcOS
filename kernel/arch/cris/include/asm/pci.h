@@ -3,7 +3,7 @@
 
 
 #ifdef __KERNEL__
-#include <linux/mm.h>		/* for struct page */
+#include <beep/mm.h>		/* for struct page */
 
 /* Can be used to override the logic in pci_scan_bus for skipping
    already-configured bus numbers - to be used for buggy BIOSes
@@ -29,10 +29,10 @@ int pcibios_set_irq_routing(struct pci_dev *dev, int pin, int irq);
  * i386 has everything mapped statically.
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/slab.h>
 #include <asm/scatterlist.h>
-#include <linux/string.h>
+#include <beep/string.h>
 #include <asm/io.h>
 
 struct pci_dev;

@@ -10,18 +10,18 @@
  *  option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/mbus.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/mbus.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
-#include <linux/platform_data/asoc-kirkwood.h>
+#include <beep/platform_data/asoc-kirkwood.h>
 #include "kirkwood.h"
 
 #define DRV_NAME	"kirkwood-i2s"

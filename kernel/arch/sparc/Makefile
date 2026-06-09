@@ -5,7 +5,7 @@
 # Sparc and sparc64.
 #
 # Copyright (C) 1994,1996,1998 David S. Miller (davem@caip.rutgers.edu)
-# Copyright (C) 1998 Jakub Jelinek (jj@ultra.linux.cz)
+# Copyright (C) 1998 Jakub Jelinek (jj@ultra.beep.cz)
 
 # We are not yet configured - so test on arch
 ifeq ($(ARCH),sparc)
@@ -64,7 +64,7 @@ boot := arch/sparc/boot
 # Default target
 all: zCalc
 
-image zCalc uImage tftpboot.img vmlinux.aout: vmlinux
+image zCalc uImage tftpboot.img vmbeep.aout: vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 archclean:
@@ -83,9 +83,9 @@ define archhelp
 endef
 else
 define archhelp
-  echo  '* vmlinux      - standard sparc64 kernel'
+  echo  '* vmbeep      - standard sparc64 kernel'
   echo  '* zCalc       - stripped and compressed sparc64 kernel ($(boot)/zCalc)'
-  echo  '  vmlinux.aout - a.out kernel for sparc64'
+  echo  '  vmbeep.aout - a.out kernel for sparc64'
   echo  '  tftpboot.img - image prepared for tftp'
 endef
 endif

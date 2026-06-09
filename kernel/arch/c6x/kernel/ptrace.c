@@ -10,10 +10,10 @@
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
-#include <linux/ptrace.h>
-#include <linux/tracehook.h>
-#include <linux/regset.h>
-#include <linux/elf.h>
+#include <beep/ptrace.h>
+#include <beep/tracehook.h>
+#include <beep/regset.h>
+#include <beep/elf.h>
 
 #include <asm/cacheflush.h>
 

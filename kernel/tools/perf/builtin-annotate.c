@@ -9,9 +9,9 @@
 
 #include "util/util.h"
 #include "util/color.h"
-#include <linux/list.h>
+#include <beep/list.h>
 #include "util/cache.h"
-#include <linux/rbtree.h>
+#include <beep/rbtree.h>
 #include "util/symbol.h"
 
 #include "perf.h"
@@ -30,7 +30,7 @@
 #include "util/tool.h"
 #include "arch/common.h"
 
-#include <linux/bitmap.h>
+#include <beep/bitmap.h>
 
 struct perf_annotate {
 	struct perf_tool tool;
@@ -272,8 +272,8 @@ int cmd_annotate(int argc, const char **argv, const char *prefix __maybe_unused)
 		    "dump raw trace in ASCII"),
 	OPT_BOOLEAN(0, "tui", &annotate.use_tui, "Use the TUI interface"),
 	OPT_BOOLEAN(0, "stdio", &annotate.use_stdio, "Use the stdio interface"),
-	OPT_STRING('k', "vmlinux", &symbol_conf.vmlinux_name,
-		   "file", "vmlinux pathname"),
+	OPT_STRING('k', "vmbeep", &symbol_conf.vmbeep_name,
+		   "file", "vmbeep pathname"),
 	OPT_BOOLEAN('m', "modules", &symbol_conf.use_modules,
 		    "load module symbols - WARNING: use only with -k and LIVE kernel"),
 	OPT_BOOLEAN('l', "print-line", &annotate.print_line,
@@ -304,7 +304,7 @@ int cmd_annotate(int argc, const char **argv, const char *prefix __maybe_unused)
 	setup_browser(true);
 
 	symbol_conf.priv_size = sizeof(struct annotation);
-	symbol_conf.try_vmlinux_path = true;
+	symbol_conf.try_vmbeep_path = true;
 
 	if (symbol__init() < 0)
 		return -1;

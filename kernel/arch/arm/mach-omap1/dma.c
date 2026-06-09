@@ -18,14 +18,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/io.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/io.h>
 
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 #include <mach/tc.h>
 
 #include <mach/irqs.h>

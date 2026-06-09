@@ -1,19 +1,19 @@
 /*
- * linux/arch/sh/kernel/irq.c
+ * beep/arch/sh/kernel/irq.c
  *
  *	Copyright (C) 1992, 1998 Linus Torvalds, Ingo Molnar
  *
  *
  * SuperH version:  Copyright (C) 1999  Niibe Yutaka
  */
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel_stat.h>
-#include <linux/seq_file.h>
-#include <linux/ftrace.h>
-#include <linux/delay.h>
-#include <linux/ratelimit.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/kernel_stat.h>
+#include <beep/seq_file.h>
+#include <beep/ftrace.h>
+#include <beep/delay.h>
+#include <beep/ratelimit.h>
 #include <asm/processor.h>
 #include <asm/machvec.h>
 #include <asm/uaccess.h>

@@ -3,7 +3,7 @@
    hardware driver for PC-LabCard PCL-711 and AdSys ACL-8112
    and compatibles
 
-   COMEDI - Linux Control and Measurement Device Interface
+   COMEDI - Beep Control and Measurement Device Interface
    Copyright (C) 1998 David A. Schleef <ds@schleef.org>
    Janne Jalkanen <jalkanen@cs.hut.fi>
    Eric Bunn <ebu@cs.hut.fi>
@@ -58,11 +58,11 @@ supported.
 
  */
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
-#include <linux/delay.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
 
 #include "comedi_fc.h"
 #include "8253.h"

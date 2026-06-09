@@ -16,7 +16,7 @@
  *	Based on source code of the following authors:
  *	  Matt Domsch <Matt_Domsch@dell.com>,
  *	  Rob Radez <rob@osinvestor.com>,
- *	  Rusty Lynch <rusty@linux.co.intel.com>
+ *	  Rusty Lynch <rusty@beep.co.intel.com>
  *	  Satyam Sharma <satyam@infradead.org>
  *	  Randy Dunlap <randy.dunlap@oracle.com>
  *
@@ -32,15 +32,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>	/* For module stuff/... */
-#include <linux/types.h>	/* For standard types (like size_t) */
-#include <linux/errno.h>	/* For the -ENODEV/... values */
-#include <linux/kernel.h>	/* For printk/panic/... */
-#include <linux/fs.h>		/* For file operations */
-#include <linux/watchdog.h>	/* For watchdog specific items */
-#include <linux/miscdevice.h>	/* For handling misc devices */
-#include <linux/init.h>		/* For __init/__exit/... */
-#include <linux/uaccess.h>	/* For copy_to_user/put_user/... */
+#include <beep/module.h>	/* For module stuff/... */
+#include <beep/types.h>	/* For standard types (like size_t) */
+#include <beep/errno.h>	/* For the -ENODEV/... values */
+#include <beep/kernel.h>	/* For printk/panic/... */
+#include <beep/fs.h>		/* For file operations */
+#include <beep/watchdog.h>	/* For watchdog specific items */
+#include <beep/miscdevice.h>	/* For handling misc devices */
+#include <beep/init.h>		/* For __init/__exit/... */
+#include <beep/uaccess.h>	/* For copy_to_user/put_user/... */
 
 #include "watchdog_core.h"
 

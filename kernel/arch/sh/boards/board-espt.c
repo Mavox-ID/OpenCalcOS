@@ -8,13 +8,13 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/mtd/physmap.h>
-#include <linux/io.h>
-#include <linux/sh_eth.h>
-#include <linux/sh_intc.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/mtd/physmap.h>
+#include <beep/io.h>
+#include <beep/sh_eth.h>
+#include <beep/sh_intc.h>
 #include <asm/machvec.h>
 #include <asm/sizes.h>
 
@@ -26,7 +26,7 @@ static struct mtd_partition espt_nor_flash_partitions[] = {
 		.size = (2 * SZ_128K),
 		.mask_flags = MTD_WRITEABLE,	/* Read-only */
 	}, {
-		.name = "Linux-Kernel",
+		.name = "Beep-Kernel",
 		.offset = MTDPART_OFS_APPEND,
 		.size = (20 * SZ_128K),
 	}, {

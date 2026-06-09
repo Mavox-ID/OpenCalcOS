@@ -3,7 +3,7 @@
  *	All rights reserved.
  *	Authors: Carsten Langgaard <carstenl@mips.com>
  *		 Maciej W. Rozycki <macro@mips.com>
- * Copyright (C) 2005 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2005 Ralf Baechle (ralf@beep-mips.org)
  *
  *  This program is free software; you can distribute it and/or modify it
  *  under the terms of the GNU General Public License (Version 2) as

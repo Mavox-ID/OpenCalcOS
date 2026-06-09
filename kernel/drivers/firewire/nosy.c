@@ -17,27 +17,27 @@
  * Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/sched.h> /* required for linux/wait.h */
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/timex.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
-#include <linux/dma-mapping.h>
-#include <linux/atomic.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/kref.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/pci.h>
+#include <beep/poll.h>
+#include <beep/sched.h> /* required for beep/wait.h */
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/timex.h>
+#include <beep/uaccess.h>
+#include <beep/wait.h>
+#include <beep/dma-mapping.h>
+#include <beep/atomic.h>
 #include <asm/byteorder.h>
 
 #include "nosy.h"

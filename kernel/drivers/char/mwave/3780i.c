@@ -46,13 +46,13 @@
 *	First release to the public
 */
 
-#include <linux/kernel.h>
-#include <linux/unistd.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/sched.h>	/* cond_resched() */
+#include <beep/kernel.h>
+#include <beep/unistd.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/sched.h>	/* cond_resched() */
 
 #include <asm/io.h>
 #include <asm/uaccess.h>

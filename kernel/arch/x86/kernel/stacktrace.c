@@ -3,10 +3,10 @@
  *
  *  Copyright (C) 2006-2009 Red Hat, Inc., Ingo Molnar <mingo@redhat.com>
  */
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <beep/sched.h>
+#include <beep/stacktrace.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
 #include <asm/stacktrace.h>
 
 static int save_stack_stack(void *data, char *name)

@@ -9,11 +9,11 @@
  *  License.
  */
 
-#include <linux/export.h>
-#include <linux/uts.h>
-#include <linux/utsname.h>
-#include <linux/sysctl.h>
-#include <linux/wait.h>
+#include <beep/export.h>
+#include <beep/uts.h>
+#include <beep/utsname.h>
+#include <beep/sysctl.h>
+#include <beep/wait.h>
 
 static void *get_uts(ctl_table *table, int write)
 {

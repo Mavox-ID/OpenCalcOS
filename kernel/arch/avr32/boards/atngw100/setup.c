@@ -7,20 +7,20 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/clk.h>
-#include <linux/etherdevice.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/i2c.h>
-#include <linux/i2c-gpio.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/leds.h>
-#include <linux/spi/spi.h>
-#include <linux/atmel-mci.h>
-#include <linux/usb/atmel_usba_udc.h>
+#include <beep/clk.h>
+#include <beep/etherdevice.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/i2c.h>
+#include <beep/i2c-gpio.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
+#include <beep/platform_device.h>
+#include <beep/types.h>
+#include <beep/leds.h>
+#include <beep/spi/spi.h>
+#include <beep/atmel-mci.h>
+#include <beep/usb/atmel_usba_udc.h>
 
 #include <asm/io.h>
 #include <asm/setup.h>
@@ -48,7 +48,7 @@ unsigned long at32_board_osc_rates[3] = {
  * MACB1 should be enabled.
  */
 #ifdef CONFIG_BOARD_ATNGW100_MKII
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/partitions.h>
 #include <mach/smc.h>
 
 static struct smc_timing nand_timing __initdata = {
@@ -301,7 +301,7 @@ static int __init atngw100_arch_init(void)
 {
 	/* PB30 (ATNGW100) and PE30 (ATNGW100 mkII) is the otherwise unused
 	 * jumper on the mainboard, with an external pullup; the jumper grounds
-	 * it. Use it however you like, including letting U-Boot or Linux tweak
+	 * it. Use it however you like, including letting U-Boot or Beep tweak
 	 * boot sequences.
 	 */
 #ifdef CONFIG_BOARD_ATNGW100_MKII

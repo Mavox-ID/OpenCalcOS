@@ -5,22 +5,22 @@
  * Copyright (c) 2002  M. R. Brown
  *
  * Modelled after arch/mips/pci/pci.c:
- *  Copyright (C) 2003, 04 Ralf Baechle (ralf@linux-mips.org)
+ *  Copyright (C) 2003, 04 Ralf Baechle (ralf@beep-mips.org)
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/dma-debug.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/dma-debug.h>
+#include <beep/io.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/export.h>
 
 unsigned long PCIBIOS_MIN_IO = 0x0000;
 unsigned long PCIBIOS_MIN_MEM = 0;

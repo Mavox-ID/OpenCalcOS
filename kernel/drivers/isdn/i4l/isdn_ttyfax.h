@@ -1,6 +1,6 @@
 /* $Id: isdn_ttyfax.h,v 1.1.2.2 2004/01/12 22:37:19 keil Exp $
  *
- * header for Linux ISDN subsystem, tty_fax related functions (linklevel).
+ * header for Beep ISDN subsystem, tty_fax related functions (linklevel).
  *
  * Copyright 1999   by Armin Schindler (mac@melware.de)
  * Copyright 1999   by Ralf Spachmann (mel@melware.de)

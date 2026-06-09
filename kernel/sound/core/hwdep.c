@@ -19,12 +19,12 @@
  *
  */
 
-#include <linux/major.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
+#include <beep/major.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/minors.h>

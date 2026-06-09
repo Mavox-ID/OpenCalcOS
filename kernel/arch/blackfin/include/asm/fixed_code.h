@@ -12,8 +12,8 @@
 #include <uapi/asm/fixed_code.h>
 
 #ifndef __ASSEMBLY__
-#include <linux/linkage.h>
-#include <linux/ptrace.h>
+#include <beep/linkage.h>
+#include <beep/ptrace.h>
 extern asmlinkage void finish_atomic_sections(struct pt_regs *regs);
 extern char fixed_code_start;
 extern char fixed_code_end;

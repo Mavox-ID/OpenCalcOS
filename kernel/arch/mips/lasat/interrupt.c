@@ -18,9 +18,9 @@
  * Routines for generic manipulation of the interrupts found on the
  * Lasat boards.
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/lasat/lasat.h>

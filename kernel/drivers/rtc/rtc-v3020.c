@@ -19,18 +19,18 @@
  *  			- Initial driver creation.
  *
  */
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/rtc.h>
-#include <linux/types.h>
-#include <linux/bcd.h>
-#include <linux/rtc-v3020.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/rtc.h>
+#include <beep/types.h>
+#include <beep/bcd.h>
+#include <beep/rtc-v3020.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 #undef DEBUG
 

@@ -28,11 +28,11 @@
 #ifndef NSC_IRCC_H
 #define NSC_IRCC_H
 
-#include <linux/time.h>
+#include <beep/time.h>
 
-#include <linux/spinlock.h>
-#include <linux/pm.h>
-#include <linux/types.h>
+#include <beep/spinlock.h>
+#include <beep/pm.h>
+#include <beep/types.h>
 #include <asm/io.h>
 
 /* Features for chips (set in driver_data) */

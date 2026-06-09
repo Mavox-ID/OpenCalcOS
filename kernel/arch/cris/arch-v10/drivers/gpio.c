@@ -9,17 +9,17 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/ioport.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/poll.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
 
 #include <asm/etraxgpio.h>
 #include <arch/svinto.h>

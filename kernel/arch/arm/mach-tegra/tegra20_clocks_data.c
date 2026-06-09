@@ -18,14 +18,14 @@
  *
  */
 
-#include <linux/clk-private.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/clk.h>
+#include <beep/clk-private.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/clk.h>
 
 #include "clock.h"
 #include "fuse.h"

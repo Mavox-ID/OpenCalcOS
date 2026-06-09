@@ -1,4 +1,4 @@
-#include <linux/ptrace.h>
+#include <beep/ptrace.h>
 
 /**
  * regs_query_register_offset() - query register offset from its name

@@ -1,5 +1,5 @@
 /*
- * delay.h: Linux delay routines on the Sparc.
+ * delay.h: Beep delay routines on the Sparc.
  *
  * Copyright (C) 1994 David S. Miller (davem@caip.rutgers.edu).
  */

@@ -8,10 +8,10 @@
  * modify it under the terms of the GNU General Public License as
  * published by the Free Software Foundation; version 2 only.
  */
-#include <linux/scatterlist.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/scatterlist.h>
+#include <beep/blkdev.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #include "sas_internal.h"
 

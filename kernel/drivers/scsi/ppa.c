@@ -8,15 +8,15 @@
  * 
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/parport.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>
+#include <beep/parport.h>
+#include <beep/workqueue.h>
+#include <beep/delay.h>
+#include <beep/jiffies.h>
 #include <asm/io.h>
 
 #include <scsi/scsi.h>

@@ -9,8 +9,8 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
 
 #include "rtc-core.h"
 
@@ -201,7 +201,7 @@ rtc_sysfs_set_wakealarm(struct device *dev, struct device_attribute *attr,
 	} else {
 		alm.enabled = 0;
 
-		/* Provide a valid future alarm time.  Linux isn't EFI,
+		/* Provide a valid future alarm time.  Beep isn't EFI,
 		 * this time won't be ignored when disabling the alarm.
 		 */
 		alarm = now + 300;

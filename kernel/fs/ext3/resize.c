@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext3/resize.c
+ *  beep/fs/ext3/resize.c
  *
  * Support for resizing an ext3 filesystem while it is mounted.
  *

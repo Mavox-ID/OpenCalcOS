@@ -6,18 +6,18 @@
  * License terms: GNU General Public License (GPL) version 2
  */
 
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/mfd/db8500-prcmu.h>
-#include <linux/clksrc-dbx500-prcmu.h>
-#include <linux/sys_soc.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/irq.h>
-#include <linux/platform_data/clk-ux500.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/mfd/db8500-prcmu.h>
+#include <beep/clksrc-dbx500-prcmu.h>
+#include <beep/sys_soc.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/irq.h>
+#include <beep/platform_data/clk-ux500.h>
 
 #include <asm/hardware/gic.h>
 #include <asm/mach/map.h>

@@ -4,7 +4,7 @@
  * Copyright (C) 2006 Thomas Maier <balagi@justmail.de>
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See beep/COPYING for more information.
  *
  * Packet writing layer for ATAPI and SCSI CD-RW, DVD+RW, DVD-RW and
  * DVD-RAM devices.
@@ -44,26 +44,26 @@
  *
  *************************************************************************/
 
-#include <linux/pktcdvd.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/compat.h>
-#include <linux/kthread.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/file.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/miscdevice.h>
-#include <linux/freezer.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/pktcdvd.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/compat.h>
+#include <beep/kthread.h>
+#include <beep/errno.h>
+#include <beep/spinlock.h>
+#include <beep/file.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/miscdevice.h>
+#include <beep/freezer.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_ioctl.h>
 #include <scsi/scsi.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
+#include <beep/debugfs.h>
+#include <beep/device.h>
 
 #include <asm/uaccess.h>
 

@@ -23,10 +23,10 @@
  * package it's not a general device driver.
  * This driver is for the RC Systems DoubleTalk PC internal synthesizer.
  */
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/kthread.h>
+#include <beep/jiffies.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/kthread.h>
 
 #include "spk_priv.h"
 #include "serialio.h"

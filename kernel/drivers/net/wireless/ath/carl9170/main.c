@@ -37,11 +37,11 @@
  *    OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/random.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/etherdevice.h>
+#include <beep/random.h>
 #include <net/mac80211.h>
 #include <net/cfg80211.h>
 #include "hw.h"

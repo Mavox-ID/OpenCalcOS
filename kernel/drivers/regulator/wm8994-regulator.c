@@ -11,19 +11,19 @@
  *  option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
 
-#include <linux/mfd/wm8994/core.h>
-#include <linux/mfd/wm8994/registers.h>
-#include <linux/mfd/wm8994/pdata.h>
+#include <beep/mfd/wm8994/core.h>
+#include <beep/mfd/wm8994/registers.h>
+#include <beep/mfd/wm8994/pdata.h>
 
 struct wm8994_ldo {
 	struct regulator_dev *regulator;

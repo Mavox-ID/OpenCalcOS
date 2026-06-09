@@ -9,9 +9,9 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <beep/hardirq.h>
+#include <beep/init.h>
+#include <beep/irq.h>
 
 #include <asm/gt64120.h>
 #include <asm/irq_cpu.h>

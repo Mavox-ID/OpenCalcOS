@@ -16,7 +16,7 @@
  * Place - Suite 330, Boston, MA 02111-1307 USA.
  *
  */
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/traps.h>
 #include <asm/ptrace.h>
 

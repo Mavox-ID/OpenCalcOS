@@ -19,12 +19,12 @@
 
 #ifdef __KERNEL__
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _BEEP_BITOPS_H
+#error only <beep/bitops.h> can be included directly
 #endif
 
-#include <linux/compiler.h>
-#include <linux/irqflags.h>
+#include <beep/compiler.h>
+#include <beep/irqflags.h>
 
 #define smp_mb__before_clear_bit()	smp_mb()
 #define smp_mb__after_clear_bit()	smp_mb()
@@ -214,7 +214,7 @@ extern int _find_next_bit_be(const unsigned long *p, int size, int offset);
 
 #endif
 
-#if __LINUX_ARM_ARCH__ < 5
+#if __BEEP_ARM_ARCH__ < 5
 
 #include <asm-generic/bitops/ffz.h>
 #include <asm-generic/bitops/__fls.h>

@@ -31,12 +31,12 @@
 #ifndef __CYTTSP_CORE_H__
 #define __CYTTSP_CORE_H__
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/input/cyttsp.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/device.h>
+#include <beep/input/cyttsp.h>
 
 #define CY_NUM_RETRY		16 /* max number of retries for read ops */
 

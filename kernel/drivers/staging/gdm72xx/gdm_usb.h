@@ -14,9 +14,9 @@
 #ifndef __GDM_USB_H__
 #define __GDM_USB_H__
 
-#include <linux/types.h>
-#include <linux/usb.h>
-#include <linux/list.h>
+#include <beep/types.h>
+#include <beep/usb.h>
+#include <beep/list.h>
 
 #define B_DIFF_DL_DRV		(1 << 4)
 #define B_DOWNLOAD		(1 << 5)

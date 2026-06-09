@@ -19,17 +19,17 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
 #include "cifs_debug.h"
 #include "cifs_unicode.h"
 #include "cifsproto.h"
 #include "ntlmssp.h"
-#include <linux/ctype.h>
-#include <linux/random.h>
-#include <linux/highmem.h>
+#include <beep/ctype.h>
+#include <beep/random.h>
+#include <beep/highmem.h>
 
 /*
  * Calculate and return the CIFS signature based on the mac key and SMB PDU.

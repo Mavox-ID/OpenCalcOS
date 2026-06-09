@@ -11,9 +11,9 @@
  * option) any later version.
  */
 
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <beep/pci.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
 
 #include <asm/time.h>
 #include <asm/ipic.h>

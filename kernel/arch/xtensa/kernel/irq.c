@@ -1,5 +1,5 @@
 /*
- * linux/arch/xtensa/kernel/irq.c
+ * beep/arch/xtensa/kernel/irq.c
  *
  * Xtensa built-in interrupt controller and some generic functions copied
  * from i386.
@@ -13,13 +13,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel_stat.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/kernel_stat.h>
+#include <beep/irqdomain.h>
+#include <beep/of.h>
 
 #include <asm/uaccess.h>
 #include <asm/platform.h>

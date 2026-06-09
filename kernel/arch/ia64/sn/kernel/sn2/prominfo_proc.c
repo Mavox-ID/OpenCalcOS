@@ -8,10 +8,10 @@
  * Module to export the system's Firmware Interface Tables, including
  * PROM revision numbers and banners, in /proc
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/nodemask.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/proc_fs.h>
+#include <beep/nodemask.h>
 #include <asm/io.h>
 #include <asm/sn/sn_sal.h>
 #include <asm/sn/sn_cpuid.h>
@@ -35,7 +35,7 @@ MODULE_LICENSE("GPL");
 #define FIT_ENTRY_SALRUNTIME	0x12	/* SAL runtime entry */
 #define FIT_ENTRY_EFI		0x1F	/* EFI entry */
 #define FIT_ENTRY_FPSWA		0x20	/* embedded fpswa entry */
-#define FIT_ENTRY_VMLINUX	0x21	/* embedded vmlinux entry */
+#define FIT_ENTRY_VMBEEP	0x21	/* embedded vmbeep entry */
 
 #define FIT_MAJOR_SHIFT	(32 + 8)
 #define FIT_MAJOR_MASK	((1 << 8) - 1)
@@ -68,7 +68,7 @@ static const struct fit_type_map_t fit_entry_types[] = {
 	{FIT_ENTRY_SAL_B, "SAL_B"},
 	{FIT_ENTRY_SALRUNTIME, "SAL runtime"},
 	{FIT_ENTRY_EFI, "EFI"},
-	{FIT_ENTRY_VMLINUX, "Embedded Linux"},
+	{FIT_ENTRY_VMBEEP, "Embedded Beep"},
 	{FIT_ENTRY_FPSWA, "Embedded FPSWA"},
 	{FIT_ENTRY_UNUSED, "Unused"},
 	{0xff, "Error"},

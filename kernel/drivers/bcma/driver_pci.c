@@ -10,8 +10,8 @@
  */
 
 #include "bcma_private.h"
-#include <linux/export.h>
-#include <linux/bcma/bcma.h>
+#include <beep/export.h>
+#include <beep/bcma/bcma.h>
 
 /**************************************************
  * R/W ops.

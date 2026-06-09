@@ -7,8 +7,8 @@
 #ifndef _IRQ_HANDLER_H
 #define _IRQ_HANDLER_H
 
-#include <linux/types.h>
-#include <linux/linkage.h>
+#include <beep/types.h>
+#include <beep/linkage.h>
 #include <mach/irq.h>
 
 /* init functions only */

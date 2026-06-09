@@ -20,16 +20,16 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/netdevice.h>
-#include <linux/can/dev.h>
-#include <linux/of_platform.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/netdevice.h>
+#include <beep/can/dev.h>
+#include <beep/of_platform.h>
 #include <sysdev/fsl_soc.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <beep/clk.h>
+#include <beep/io.h>
 #include <asm/mpc52xx.h>
 
 #include "mscan.h"

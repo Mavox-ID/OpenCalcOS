@@ -1,5 +1,5 @@
 /*
- *  linux/fs/affs/amigaffs.c
+ *  beep/fs/affs/amigaffs.c
  *
  *  (c) 1996  Hans-Joachim Widmaier - Rewritten
  *

@@ -17,8 +17,8 @@
  *
  */
 
-#include <linux/platform_device.h>
-#include <linux/rfkill-gpio.h>
+#include <beep/platform_device.h>
+#include <beep/rfkill-gpio.h>
 #include "board.h"
 #include "board-paz00.h"
 

@@ -12,10 +12,10 @@
  * by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/fsl_devices.h>
-#include <linux/of_platform.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/fsl_devices.h>
+#include <beep/of_platform.h>
 
 #include <asm/io.h>
 #include <asm/cpm2.h>

@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2002 Yoshinori Sato
  *
- * Based on: linux/asm-m68nommu/processor.h
+ * Based on: beep/asm-m68nommu/processor.h
  *
  * Copyright (C) 1995 Hamish Macdonald
  */
@@ -17,7 +17,7 @@
  */
 #define current_text_addr() ({ __label__ _l; _l: &&_l;})
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/segment.h>
 #include <asm/fpu.h>
 #include <asm/ptrace.h>

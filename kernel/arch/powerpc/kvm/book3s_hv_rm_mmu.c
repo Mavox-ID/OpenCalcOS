@@ -6,12 +6,12 @@
  * Copyright 2010-2011 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/hugetlb.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/kvm.h>
+#include <beep/kvm_host.h>
+#include <beep/hugetlb.h>
+#include <beep/module.h>
 
 #include <asm/tlbflush.h>
 #include <asm/kvm_ppc.h>
@@ -27,7 +27,7 @@ static void *real_vmalloc_addr(void *x)
 	unsigned long addr = (unsigned long) x;
 	pte_t *p;
 
-	p = find_linux_pte(swapper_pg_dir, addr);
+	p = find_beep_pte(swapper_pg_dir, addr);
 	if (!p || !pte_present(*p))
 		return NULL;
 	/* assume we don't have huge pages in vmalloc space... */
@@ -145,14 +145,14 @@ static void remove_revmap_chain(struct kvm *kvm, long pte_index,
 	unlock_rmap(rmap);
 }
 
-static pte_t lookup_linux_pte(pgd_t *pgdir, unsigned long hva,
+static pte_t lookup_beep_pte(pgd_t *pgdir, unsigned long hva,
 			      int writing, unsigned long *pte_sizep)
 {
 	pte_t *ptep;
 	unsigned long ps = *pte_sizep;
 	unsigned int shift;
 
-	ptep = find_linux_pte_or_hugepte(pgdir, hva, &shift);
+	ptep = find_beep_pte_or_hugepte(pgdir, hva, &shift);
 	if (!ptep)
 		return __pte(0);
 	if (shift)
@@ -163,7 +163,7 @@ static pte_t lookup_linux_pte(pgd_t *pgdir, unsigned long hva,
 		return __pte(0);
 	if (!pte_present(*ptep))
 		return __pte(0);
-	return kvmppc_read_update_linux_pte(ptep, writing);
+	return kvmppc_read_update_beep_pte(ptep, writing);
 }
 
 static inline void unlock_hpte(unsigned long *hpte, unsigned long hpte_v)
@@ -242,9 +242,9 @@ long kvmppc_do_h_enter(struct kvm *kvm, unsigned long flags,
 		/* Translate to host virtual address */
 		hva = __gfn_to_hva_memslot(memslot, gfn);
 
-		/* Look up the Linux PTE for the backing page */
+		/* Look up the Beep PTE for the backing page */
 		pte_size = psize;
-		pte = lookup_linux_pte(pgdir, hva, writing, &pte_size);
+		pte = lookup_beep_pte(pgdir, hva, writing, &pte_size);
 		if (pte_present(pte)) {
 			if (writing && !pte_write(pte))
 				/* make the actual HPTE be read-only */
@@ -633,7 +633,7 @@ long kvmppc_h_protect(struct kvm_vcpu *vcpu, unsigned long flags,
 		 * If the host has this page as readonly but the guest
 		 * wants to make it read/write, reduce the permissions.
 		 * Checking the host permissions involves finding the
-		 * memslot and then the Linux PTE for the page.
+		 * memslot and then the Beep PTE for the page.
 		 */
 		if (hpte_is_writable(r) && kvm->arch.using_mmu_notifiers) {
 			unsigned long psize, gfn, hva;
@@ -646,7 +646,7 @@ long kvmppc_h_protect(struct kvm_vcpu *vcpu, unsigned long flags,
 			memslot = __gfn_to_memslot(kvm_memslots(kvm), gfn);
 			if (memslot) {
 				hva = __gfn_to_hva_memslot(memslot, gfn);
-				pte = lookup_linux_pte(pgdir, hva, 1, &psize);
+				pte = lookup_beep_pte(pgdir, hva, 1, &psize);
 				if (pte_present(pte) && !pte_write(pte))
 					r = hpte_make_readonly(r);
 			}

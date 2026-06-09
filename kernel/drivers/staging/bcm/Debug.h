@@ -6,7 +6,7 @@
  */
 #ifndef _DEBUG_H
 #define _DEBUG_H
-#include <linux/string.h>
+#include <beep/string.h>
 #define NONE 0xFFFF
 
 

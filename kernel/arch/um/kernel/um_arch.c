@@ -1,16 +1,16 @@
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/utsname.h>
-#include <linux/sched.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
+#include <beep/string.h>
+#include <beep/utsname.h>
+#include <beep/sched.h>
 #include <asm/pgtable.h>
 #include <asm/processor.h>
 #include <asm/setup.h>
@@ -72,7 +72,7 @@ static int show_cpuinfo(struct seq_file *m, void *v)
 #endif
 
 	seq_printf(m, "processor\t: %d\n", index);
-	seq_printf(m, "vendor_id\t: User Mode Linux\n");
+	seq_printf(m, "vendor_id\t: User Mode Beep\n");
 	seq_printf(m, "model name\t: UML\n");
 	seq_printf(m, "mode\t\t: skas\n");
 	seq_printf(m, "host\t\t: %s\n", host_info);
@@ -105,7 +105,7 @@ const struct seq_operations cpuinfo_op = {
 	.show	= show_cpuinfo,
 };
 
-/* Set in linux_main */
+/* Set in beep_main */
 unsigned long uml_physmem;
 EXPORT_SYMBOL(uml_physmem);
 
@@ -119,12 +119,12 @@ int ncpus = 1;
 /* Set in early boot */
 static int have_root __initdata = 0;
 
-/* Set in uml_mem_setup and modified in linux_main */
+/* Set in uml_mem_setup and modified in beep_main */
 long long physmem_size = 32 * 1024 * 1024;
 
 static const char *usage_string =
-"User Mode Linux v%s\n"
-"	available at http://user-mode-linux.sourceforge.net/\n\n";
+"User Mode Beep v%s\n"
+"	available at http://user-mode-beep.sourceforge.net/\n\n";
 
 static int __init uml_version_setup(char *line, int *add)
 {
@@ -157,7 +157,7 @@ __uml_setup("root=", uml_root_setup,
 static int __init no_skas_debug_setup(char *line, int *add)
 {
 	printf("'debug' is not necessary to gdb UML in skas mode - run \n");
-	printf("'gdb linux'\n");
+	printf("'gdb beep'\n");
 
 	return 0;
 }
@@ -261,7 +261,7 @@ EXPORT_SYMBOL(end_iomem);
 
 extern char __binary_start;
 
-int __init linux_main(int argc, char **argv)
+int __init beep_main(int argc, char **argv)
 {
 	unsigned long avail, diff;
 	unsigned long virtmem_size, max_physmem;

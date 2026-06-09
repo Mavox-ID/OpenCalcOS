@@ -12,7 +12,7 @@
 #ifndef _ASM_SERIAL_REGS_H
 #define _ASM_SERIAL_REGS_H
 
-#include <linux/serial_reg.h>
+#include <beep/serial_reg.h>
 #include <asm/irc-regs.h>
 
 #define SERIAL_ICLK	33333333	/* the target serial input clock */

@@ -22,16 +22,16 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/notifier.h>
-#include <linux/platform_device.h>
-#include <linux/jiffies.h>
-#include <linux/stddef.h>
-#include <linux/acpi.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/notifier.h>
+#include <beep/platform_device.h>
+#include <beep/jiffies.h>
+#include <beep/stddef.h>
+#include <beep/acpi.h>
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
 

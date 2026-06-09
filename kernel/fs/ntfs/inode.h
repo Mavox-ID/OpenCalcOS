@@ -1,6 +1,6 @@
 /*
- * inode.h - Defines for inode structures NTFS Linux kernel driver. Part of
- *	     the Linux-NTFS project.
+ * inode.h - Defines for inode structures NTFS Beep kernel driver. Part of
+ *	     the Beep-NTFS project.
  *
  * Copyright (c) 2001-2007 Anton Altaparmakov
  * Copyright (c) 2002 Richard Russon
@@ -16,21 +16,21 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#ifndef _LINUX_NTFS_INODE_H
-#define _LINUX_NTFS_INODE_H
+#ifndef _BEEP_NTFS_INODE_H
+#define _BEEP_NTFS_INODE_H
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/seq_file.h>
+#include <beep/fs.h>
+#include <beep/list.h>
+#include <beep/mm.h>
+#include <beep/mutex.h>
+#include <beep/seq_file.h>
 
 #include "layout.h"
 #include "volume.h"
@@ -322,4 +322,4 @@ static inline void ntfs_truncate_vfs(struct inode *vi) {}
 
 #endif /* NTFS_RW */
 
-#endif /* _LINUX_NTFS_INODE_H */
+#endif /* _BEEP_NTFS_INODE_H */

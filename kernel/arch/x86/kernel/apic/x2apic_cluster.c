@@ -1,11 +1,11 @@
-#include <linux/threads.h>
-#include <linux/cpumask.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/dmar.h>
-#include <linux/cpu.h>
+#include <beep/threads.h>
+#include <beep/cpumask.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/ctype.h>
+#include <beep/init.h>
+#include <beep/dmar.h>
+#include <beep/cpu.h>
 
 #include <asm/smp.h>
 #include <asm/x2apic.h>

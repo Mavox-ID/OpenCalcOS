@@ -29,7 +29,7 @@
 
 */
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 #include "b43legacy.h"
 #include "main.h"

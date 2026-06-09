@@ -11,17 +11,17 @@
  *	2 as published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/slab.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/slab.h>
+#include <beep/tty_flip.h>
+#include <beep/serial.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
+#include <beep/uaccess.h>
 
 #define CONTROL_RTS			0x02
 #define RESEND_CTS_STATE	0x03

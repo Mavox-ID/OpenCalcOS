@@ -11,14 +11,14 @@
  * kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/mdio.h>
-#include <linux/of_platform.h>
-#include <linux/of_mdio.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/phy.h>
+#include <beep/mdio.h>
+#include <beep/of_platform.h>
+#include <beep/of_mdio.h>
 
 /* Number of microseconds to wait for a register to respond */
 #define TIMEOUT	1000

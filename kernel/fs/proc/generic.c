@@ -8,20 +8,20 @@
  * Copyright (C) 1997 Theodore Ts'o
  */
 
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mount.h>
-#include <linux/init.h>
-#include <linux/idr.h>
-#include <linux/namei.h>
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
+#include <beep/errno.h>
+#include <beep/time.h>
+#include <beep/proc_fs.h>
+#include <beep/stat.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/mount.h>
+#include <beep/init.h>
+#include <beep/idr.h>
+#include <beep/namei.h>
+#include <beep/bitops.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
 #include <asm/uaccess.h>
 
 #include "internal.h"

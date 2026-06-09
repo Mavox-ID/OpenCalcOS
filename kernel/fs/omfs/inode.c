@@ -3,20 +3,20 @@
  * Copyright (C) 2006 Bob Copeland <me@bobcopeland.com>
  * Released under GPL v2.
  */
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/vfs.h>
-#include <linux/parser.h>
-#include <linux/buffer_head.h>
-#include <linux/vmalloc.h>
-#include <linux/writeback.h>
-#include <linux/crc-itu-t.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/vfs.h>
+#include <beep/parser.h>
+#include <beep/buffer_head.h>
+#include <beep/vmalloc.h>
+#include <beep/writeback.h>
+#include <beep/crc-itu-t.h>
 #include "omfs.h"
 
 MODULE_AUTHOR("Bob Copeland <me@bobcopeland.com>");
-MODULE_DESCRIPTION("OMFS (ReplayTV/Karma) Filesystem for Linux");
+MODULE_DESCRIPTION("OMFS (ReplayTV/Karma) Filesystem for Beep");
 MODULE_LICENSE("GPL");
 
 struct buffer_head *omfs_bread(struct super_block *sb, sector_t block)

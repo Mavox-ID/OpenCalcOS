@@ -18,17 +18,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sh_mobile_sdhi.h>
-#include <linux/mfd/tmio.h>
-#include <linux/sh_dma.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/slab.h>
+#include <beep/mod_devicetable.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/sh_mobile_sdhi.h>
+#include <beep/mfd/tmio.h>
+#include <beep/sh_dma.h>
+#include <beep/delay.h>
 
 #include "tmio_mmc.h"
 

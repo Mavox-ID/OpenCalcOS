@@ -13,9 +13,9 @@
  * OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
  * CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#include <linux/debugfs.h>
-#include <linux/netdevice.h>
-#include <linux/module.h>
+#include <beep/debugfs.h>
+#include <beep/netdevice.h>
+#include <beep/module.h>
 
 #include <brcmu_wifi.h>
 #include <brcmu_utils.h>

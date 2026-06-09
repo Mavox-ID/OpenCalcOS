@@ -7,16 +7,16 @@
  *	Andi Kleen / Andreas Herrmann	: CPUID4 emulation on AMD.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/compiler.h>
-#include <linux/cpu.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/compiler.h>
+#include <beep/cpu.h>
+#include <beep/sched.h>
+#include <beep/pci.h>
 
 #include <asm/processor.h>
-#include <linux/smp.h>
+#include <beep/smp.h>
 #include <asm/amd_nb.h>
 #include <asm/smp.h>
 
@@ -905,9 +905,9 @@ static int __cpuinit detect_cache_attributes(unsigned int cpu)
 	return retval;
 }
 
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
-#include <linux/cpu.h>
+#include <beep/kobject.h>
+#include <beep/sysfs.h>
+#include <beep/cpu.h>
 
 /* pointer to kobject for cpuX/cache */
 static DEFINE_PER_CPU(struct kobject *, ici_cache_kobject);

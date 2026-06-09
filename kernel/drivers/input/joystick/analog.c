@@ -3,7 +3,7 @@
  */
 
 /*
- * Analog joystick and gamepad driver for Linux
+ * Analog joystick and gamepad driver for Beep
  */
 
 /*
@@ -26,16 +26,16 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/gameport.h>
-#include <linux/jiffies.h>
-#include <linux/timex.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/bitops.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/gameport.h>
+#include <beep/jiffies.h>
+#include <beep/timex.h>
 
 #define DRIVER_DESC	"Analog joystick and gamepad driver"
 
@@ -136,7 +136,7 @@ struct analog_port {
 
 #ifdef __i386__
 
-#include <linux/i8253.h>
+#include <beep/i8253.h>
 
 #define GET_TIME(x)	do { if (cpu_has_tsc) rdtscl(x); else x = get_time_pit(); } while (0)
 #define DELTA(x,y)	(cpu_has_tsc ? ((y) - (x)) : ((x) - (y) + ((x) < (y) ? PIT_TICK_RATE / HZ : 0)))

@@ -15,8 +15,8 @@
  * a new cpu.  See the documentation in homecache.c for more information.
  */
 
-#include <linux/linkage.h>
-#include <linux/threads.h>
+#include <beep/linkage.h>
+#include <beep/threads.h>
 #include <asm/page.h>
 #include <asm/thread_info.h>
 #include <asm/types.h>

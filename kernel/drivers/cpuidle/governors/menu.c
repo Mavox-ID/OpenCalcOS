@@ -4,22 +4,22 @@
  * Copyright (C) 2006-2007 Adam Belay <abelay@novell.com>
  * Copyright (C) 2009 Intel Corporation
  * Author:
- *        Arjan van de Ven <arjan@linux.intel.com>
+ *        Arjan van de Ven <arjan@beep.intel.com>
  *
  * This code is licenced under the GPL version 2 as described
- * in the COPYING file that acompanies the Linux Kernel.
+ * in the COPYING file that acompanies the Beep Kernel.
  */
 
-#include <linux/kernel.h>
-#include <linux/cpuidle.h>
-#include <linux/pm_qos.h>
-#include <linux/time.h>
-#include <linux/ktime.h>
-#include <linux/hrtimer.h>
-#include <linux/tick.h>
-#include <linux/sched.h>
-#include <linux/math64.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/cpuidle.h>
+#include <beep/pm_qos.h>
+#include <beep/time.h>
+#include <beep/ktime.h>
+#include <beep/hrtimer.h>
+#include <beep/tick.h>
+#include <beep/sched.h>
+#include <beep/math64.h>
+#include <beep/module.h>
 
 #define BUCKETS 12
 #define INTERVALS 8

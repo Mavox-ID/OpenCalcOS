@@ -82,17 +82,17 @@
 
 		button@1 {
 			label = "Power Button";
-			linux,code = <116>;
+			beep,code = <116>;
 			gpios = <&gpio1 14 0>;
 		};
 		button@2 {
 			label = "Copy Button";
-			linux,code = <133>;
+			beep,code = <133>;
 			gpios = <&gpio1 5 1>;
 		};
 		button@3 {
 			label = "Reset Button";
-			linux,code = <0x198>;
+			beep,code = <0x198>;
 			gpios = <&gpio1 4 1>;
 		};
 	};

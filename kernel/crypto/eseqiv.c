@@ -18,14 +18,14 @@
 #include <crypto/internal/skcipher.h>
 #include <crypto/rng.h>
 #include <crypto/scatterwalk.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/scatterlist.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
 
 struct eseqiv_request_ctx {
 	struct scatterlist src[2];

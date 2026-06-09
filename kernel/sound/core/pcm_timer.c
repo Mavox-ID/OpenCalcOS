@@ -19,8 +19,8 @@
  *
  */
 
-#include <linux/time.h>
-#include <linux/gcd.h>
+#include <beep/time.h>
+#include <beep/gcd.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/timer.h>

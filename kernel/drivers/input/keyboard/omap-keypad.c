@@ -1,5 +1,5 @@
 /*
- * linux/drivers/input/keyboard/omap-keypad.c
+ * beep/drivers/input/keyboard/omap-keypad.c
  *
  * OMAP Keypad Driver
  *
@@ -24,20 +24,20 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/platform_data/keypad-omap.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/types.h>
+#include <beep/input.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/mutex.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/gpio.h>
+#include <beep/platform_data/gpio-omap.h>
+#include <beep/platform_data/keypad-omap.h>
 
 #undef NEW_BOARD_LEARNING_MODE
 

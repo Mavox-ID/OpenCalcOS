@@ -19,12 +19,12 @@
  * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/via-core.h>
-#include <linux/via_i2c.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
+#include <beep/via-core.h>
+#include <beep/via_i2c.h>
 
 /*
  * There can only be one set of these, so there's no point in having

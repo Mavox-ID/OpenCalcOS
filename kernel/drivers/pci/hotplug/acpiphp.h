@@ -35,9 +35,9 @@
 #ifndef _ACPIPHP_H
 #define _ACPIPHP_H
 
-#include <linux/acpi.h>
-#include <linux/mutex.h>
-#include <linux/pci_hotplug.h>
+#include <beep/acpi.h>
+#include <beep/mutex.h>
+#include <beep/pci_hotplug.h>
 
 #define dbg(format, arg...)					\
 	do {							\

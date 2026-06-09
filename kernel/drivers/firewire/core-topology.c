@@ -18,18 +18,18 @@
  * Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/bug.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/bug.h>
+#include <beep/errno.h>
+#include <beep/firewire.h>
+#include <beep/firewire-constants.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/byteorder.h>
 
 #include "core.h"

@@ -7,13 +7,13 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/idr.h>
-#include <linux/cb710.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/spinlock.h>
+#include <beep/idr.h>
+#include <beep/cb710.h>
+#include <beep/gfp.h>
 
 static DEFINE_IDA(cb710_ida);
 static DEFINE_SPINLOCK(cb710_ida_lock);
@@ -353,7 +353,7 @@ static void __exit cb710_cleanup_module(void)
 module_init(cb710_init_module);
 module_exit(cb710_cleanup_module);
 
-MODULE_AUTHOR("Michał Mirosław <mirq-linux@rere.qmqm.pl>");
+MODULE_AUTHOR("Michał Mirosław <mirq-beep@rere.qmqm.pl>");
 MODULE_DESCRIPTION("ENE CB710 memory card reader driver");
 MODULE_LICENSE("GPL");
 MODULE_DEVICE_TABLE(pci, cb710_pci_tbl);

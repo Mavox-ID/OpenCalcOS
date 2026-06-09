@@ -1,4 +1,4 @@
-/* linux/drivers/spi/spi_s3c24xx_fiq.S
+/* beep/drivers/spi/spi_s3c24xx_fiq.S
  *
  * Copyright 2009 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
@@ -10,7 +10,7 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 
 #include <mach/map.h>

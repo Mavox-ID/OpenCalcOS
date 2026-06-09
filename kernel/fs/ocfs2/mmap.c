@@ -23,13 +23,13 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
-#include <linux/signal.h>
-#include <linux/rbtree.h>
+#include <beep/fs.h>
+#include <beep/types.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/uio.h>
+#include <beep/signal.h>
+#include <beep/rbtree.h>
 
 #include <cluster/masklog.h>
 

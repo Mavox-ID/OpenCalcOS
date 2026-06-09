@@ -4,7 +4,7 @@
  *  Name: crystalhd_misc . h
  *
  *  Description:
- *		BCM70012 Linux driver general purpose routines.
+ *		BCM70012 Beep driver general purpose routines.
  *		Includes reg/mem read and write routines.
  *
  *  HISTORY:
@@ -30,13 +30,13 @@
 
 #include "crystalhd.h"
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/ioctl.h>
-#include <linux/dma-mapping.h>
-#include <linux/sched.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/ioctl.h>
+#include <beep/dma-mapping.h>
+#include <beep/sched.h>
 #include "bc_dts_glob_lnx.h"
 
 /* Global log level variable defined in crystal_misc.c file */
@@ -134,7 +134,7 @@ enum BC_STATUS crystalhd_mem_wr(struct crystalhd_adp *, uint32_t, uint32_t, uint
 enum BC_STATUS crystalhd_pci_cfg_rd(struct crystalhd_adp *, uint32_t, uint32_t, uint32_t *);
 enum BC_STATUS crystalhd_pci_cfg_wr(struct crystalhd_adp *, uint32_t, uint32_t, uint32_t);
 
-/*========= Linux Kernel Interface routines. ======================= */
+/*========= Beep Kernel Interface routines. ======================= */
 void *bc_kern_dma_alloc(struct crystalhd_adp *, uint32_t, dma_addr_t *);
 void bc_kern_dma_free(struct crystalhd_adp *, uint32_t,
 		      void *, dma_addr_t);

@@ -14,16 +14,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/iio/consumer.h>
-#include <linux/extcon/extcon-adc-jack.h>
-#include <linux/extcon.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/iio/consumer.h>
+#include <beep/extcon/extcon-adc-jack.h>
+#include <beep/extcon.h>
 
 /**
  * struct adc_jack_data - internal data for adc_jack device driver

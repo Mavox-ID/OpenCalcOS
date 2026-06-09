@@ -1,17 +1,17 @@
 /*
- *  linux/arch/arm/mach-shark/irq.c
+ *  beep/arch/arm/mach-shark/irq.c
  *
  * by Alexander Schulz
  *
- * derived from linux/arch/ppc/kernel/i8259.c and:
+ * derived from beep/arch/ppc/kernel/i8259.c and:
  * arch/arm/mach-ebsa110/include/mach/irq.h
  * Copyright (C) 1996-1998 Russell King
  */
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
 
 #include <asm/irq.h>
 #include <asm/mach/irq.h>

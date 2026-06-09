@@ -8,7 +8,7 @@
  * Public License is included in this distribution in the file called COPYING.
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * beep-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
@@ -18,9 +18,9 @@
 #ifndef BEISCSI_H
 #define BEISCSI_H
 
-#include <linux/pci.h>
-#include <linux/if_vlan.h>
-#include <linux/blk-iopoll.h>
+#include <beep/pci.h>
+#include <beep/if_vlan.h>
+#include <beep/blk-iopoll.h>
 #define FW_VER_LEN	32
 #define MCC_Q_LEN	128
 #define MCC_CQ_LEN	256

@@ -6,7 +6,7 @@
  * Contributors (thanks, all!)
  *
  *	David Eger:
- *	Overhaul for Linux 2.6
+ *	Overhaul for Beep 2.6
  *
  *      Jeff Rugen:
  *      Major contributions;  Motorola PowerStack (PPC and PCI) support,
@@ -34,21 +34,21 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/init.h>
 #include <asm/pgtable.h>
 
 #ifdef CONFIG_ZORRO
-#include <linux/zorro.h>
+#include <beep/zorro.h>
 #endif
 #ifdef CONFIG_PCI
-#include <linux/pci.h>
+#include <beep/pci.h>
 #endif
 #ifdef CONFIG_AMIGA
 #include <asm/amigahw.h>
@@ -1273,7 +1273,7 @@ static int cirrusfb_set_par_foo(struct fb_info *info)
 	/* also, set "DotClock%2" bit where requested */
 	tmp = 0x01;
 
-/*** FB_VMODE_CLOCK_HALVE in linux/fb.h not defined anymore ?
+/*** FB_VMODE_CLOCK_HALVE in beep/fb.h not defined anymore ?
     if (var->vmode & FB_VMODE_CLOCK_HALVE)
 	tmp |= 0x08;
 */
@@ -1734,7 +1734,7 @@ static void switch_monitor(struct cirrusfb_info *cinfo, int on)
 }
 
 /******************************************/
-/* Linux 2.6-style  accelerated functions */
+/* Beep 2.6-style  accelerated functions */
 /******************************************/
 
 static int cirrusfb_sync(struct fb_info *info)

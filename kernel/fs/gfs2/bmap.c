@@ -7,12 +7,12 @@
  * of the GNU General Public License version 2.
  */
 
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/blkdev.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/crc32.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
+#include <beep/buffer_head.h>
+#include <beep/blkdev.h>
+#include <beep/gfs2_ondisk.h>
+#include <beep/crc32.h>
 
 #include "gfs2.h"
 #include "incore.h"

@@ -1,12 +1,12 @@
 /* #define DEBUG */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/spi/spi.h>
-#include <linux/backlight.h>
-#include <linux/fb.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/gpio.h>
+#include <beep/spi/spi.h>
+#include <beep/backlight.h>
+#include <beep/fb.h>
 
 #include <video/omapdss.h>
 #include <video/omap-panel-n8x0.h>

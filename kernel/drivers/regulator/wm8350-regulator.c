@@ -4,7 +4,7 @@
  * Copyright 2007, 2008 Wolfson Microelectronics PLC.
  *
  * Author: Liam Girdwood
- *         linux@wolfsonmicro.com
+ *         beep@wolfsonmicro.com
  *
  *  This program is free software; you can redistribute  it and/or modify it
  *  under  the terms of  the GNU General  Public License as published by the
@@ -12,17 +12,17 @@
  *  option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/mfd/wm8350/core.h>
-#include <linux/mfd/wm8350/pmic.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/mfd/wm8350/core.h>
+#include <beep/mfd/wm8350/pmic.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/machine.h>
 
 /* Maximum value possible for VSEL */
 #define WM8350_DCDC_MAX_VSEL 0x66

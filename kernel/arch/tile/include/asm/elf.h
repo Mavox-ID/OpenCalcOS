@@ -21,7 +21,7 @@
 
 #include <arch/chip.h>
 
-#include <linux/ptrace.h>
+#include <beep/ptrace.h>
 #include <asm/byteorder.h>
 #include <asm/page.h>
 
@@ -124,13 +124,13 @@ extern void elf_plat_init(struct pt_regs *regs, unsigned long load_addr);
 extern int dump_task_regs(struct task_struct *, elf_gregset_t *);
 #define ELF_CORE_COPY_TASK_REGS(tsk, elf_regs) dump_task_regs(tsk, elf_regs)
 
-/* Tilera Linux has no personalities currently, so no need to do anything. */
+/* Tilera Beep has no personalities currently, so no need to do anything. */
 #define SET_PERSONALITY(ex) do { } while (0)
 
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES
 /* Support auto-mapping of the user interrupt vectors. */
-struct linux_binprm;
-extern int arch_setup_additional_pages(struct linux_binprm *bprm,
+struct beep_binprm;
+extern int arch_setup_additional_pages(struct beep_binprm *bprm,
 				       int executable_stack);
 #ifdef CONFIG_COMPAT
 
@@ -157,12 +157,12 @@ extern int arch_setup_additional_pages(struct linux_binprm *bprm,
 #undef SET_PERSONALITY
 #define SET_PERSONALITY(ex) \
 do { \
-	set_personality(PER_LINUX | (current->personality & (~PER_MASK))); \
+	set_personality(PER_BEEP | (current->personality & (~PER_MASK))); \
 	current_thread_info()->status &= ~TS_COMPAT; \
 } while (0)
 #define COMPAT_SET_PERSONALITY(ex) \
 do { \
-	set_personality(PER_LINUX | (current->personality & (~PER_MASK))); \
+	set_personality(PER_BEEP | (current->personality & (~PER_MASK))); \
 	current_thread_info()->status |= TS_COMPAT; \
 } while (0)
 

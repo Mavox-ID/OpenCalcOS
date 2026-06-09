@@ -1,5 +1,5 @@
 /*
- * linux/fs/ext3/xattr_trusted.c
+ * beep/fs/ext3/xattr_trusted.c
  * Handler for trusted extended attributes.
  *
  * Copyright (C) 2003 by Andreas Gruenbacher, <a.gruenbacher@computer.org>

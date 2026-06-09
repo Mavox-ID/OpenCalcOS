@@ -5,7 +5,7 @@
  *
  * cloned from:
  *
- *  linux/arch/arm/mach-realview/localtimer.c
+ *  beep/arch/arm/mach-realview/localtimer.c
  *
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
@@ -14,16 +14,16 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/smp.h>
-#include <linux/jiffies.h>
-#include <linux/percpu.h>
-#include <linux/clockchips.h>
-#include <linux/hardirq.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/smp.h>
+#include <beep/jiffies.h>
+#include <beep/percpu.h>
+#include <beep/clockchips.h>
+#include <beep/hardirq.h>
+#include <beep/irq.h>
 
 static DEFINE_PER_CPU(struct clock_event_device, local_clockevent);
 

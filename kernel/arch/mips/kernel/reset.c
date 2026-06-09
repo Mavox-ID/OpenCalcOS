@@ -3,14 +3,14 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2001, 06 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2001, 06 by Ralf Baechle (ralf@beep-mips.org)
  * Copyright (C) 2001 MIPS Technologies, Inc.
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/pm.h>
-#include <linux/types.h>
-#include <linux/reboot.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/pm.h>
+#include <beep/types.h>
+#include <beep/reboot.h>
 
 #include <asm/reboot.h>
 

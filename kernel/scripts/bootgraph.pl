@@ -2,7 +2,7 @@
 
 # Copyright 2008, Intel Corporation
 #
-# This file is part of the Linux kernel
+# This file is part of the Beep kernel
 #
 # This program file is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by the
@@ -20,7 +20,7 @@
 # Boston, MA 02110-1301 USA
 #
 # Authors:
-# 	Arjan van de Ven <arjan@linux.intel.com>
+# 	Arjan van de Ven <arjan@beep.intel.com>
 
 
 #

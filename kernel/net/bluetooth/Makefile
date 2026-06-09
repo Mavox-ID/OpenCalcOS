@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux Bluetooth subsystem.
+# Makefile for the Beep Bluetooth subsystem.
 #
 
 obj-$(CONFIG_BT)	+= bluetooth.o

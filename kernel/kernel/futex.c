@@ -44,22 +44,22 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/jhash.h>
-#include <linux/init.h>
-#include <linux/futex.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/syscalls.h>
-#include <linux/signal.h>
-#include <linux/export.h>
-#include <linux/magic.h>
-#include <linux/pid.h>
-#include <linux/nsproxy.h>
-#include <linux/ptrace.h>
+#include <beep/slab.h>
+#include <beep/poll.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/jhash.h>
+#include <beep/init.h>
+#include <beep/futex.h>
+#include <beep/mount.h>
+#include <beep/pagemap.h>
+#include <beep/syscalls.h>
+#include <beep/signal.h>
+#include <beep/export.h>
+#include <beep/magic.h>
+#include <beep/pid.h>
+#include <beep/nsproxy.h>
+#include <beep/ptrace.h>
 
 #include <asm/futex.h>
 

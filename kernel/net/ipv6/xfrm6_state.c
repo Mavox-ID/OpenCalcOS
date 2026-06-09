@@ -12,10 +12,10 @@
  */
 
 #include <net/xfrm.h>
-#include <linux/pfkeyv2.h>
-#include <linux/ipsec.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/export.h>
+#include <beep/pfkeyv2.h>
+#include <beep/ipsec.h>
+#include <beep/netfilter_ipv6.h>
+#include <beep/export.h>
 #include <net/dsfield.h>
 #include <net/ipv6.h>
 #include <net/addrconf.h>

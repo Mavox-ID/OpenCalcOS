@@ -1,7 +1,7 @@
 #ifndef _UAPI_GENERIC_STATFS_H
 #define _UAPI_GENERIC_STATFS_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 
 /*

@@ -24,19 +24,19 @@
  * This file may also be available under a different license from Cavium.
  * Contact Cavium Networks for more information
 *********************************************************************/
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/string.h>
-#include <linux/ethtool.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/init.h>
+#include <beep/etherdevice.h>
+#include <beep/ip.h>
+#include <beep/string.h>
+#include <beep/ethtool.h>
+#include <beep/seq_file.h>
+#include <beep/proc_fs.h>
 #include <net/dst.h>
 #ifdef CONFIG_XFRM
-#include <linux/xfrm.h>
+#include <beep/xfrm.h>
 #include <net/xfrm.h>
 #endif /* CONFIG_XFRM */
 

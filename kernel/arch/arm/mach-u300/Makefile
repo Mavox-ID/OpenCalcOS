@@ -1,5 +1,5 @@
 #
-# Makefile for the linux kernel, U300 machine.
+# Makefile for the beep kernel, U300 machine.
 #
 
 obj-y		:= core.o timer.o

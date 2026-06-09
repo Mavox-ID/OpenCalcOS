@@ -8,9 +8,9 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

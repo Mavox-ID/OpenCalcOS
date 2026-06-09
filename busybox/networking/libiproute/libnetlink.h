@@ -3,8 +3,8 @@
 #define LIBNETLINK_H 1
 
 #include <linux/types.h>
-/* We need linux/types.h because older kernels use __u32 etc
- * in linux/[rt]netlink.h. 2.6.19 seems to be ok, though */
+/* We need beep/types.h because older kernels use __u32 etc
+ * in beep/[rt]netlink.h. 2.6.19 seems to be ok, though */
 #include <linux/netlink.h>
 #include <linux/rtnetlink.h>
 

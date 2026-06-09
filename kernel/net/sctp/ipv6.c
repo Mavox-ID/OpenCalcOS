@@ -41,7 +41,7 @@
  *    Ardelle Fan	    <ardelle.fan@intel.com>
  *
  * Based on:
- *	linux/net/ipv6/tcp_ipv6.c
+ *	beep/net/ipv6/tcp_ipv6.c
  *
  * Any bugs reported given to us we will try to fix... any fixes shared will
  * be incorporated into the next SCTP release.
@@ -49,23 +49,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/ipsec.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/in.h>
+#include <beep/in6.h>
+#include <beep/netdevice.h>
+#include <beep/init.h>
+#include <beep/ipsec.h>
+#include <beep/slab.h>
 
-#include <linux/ipv6.h>
-#include <linux/icmpv6.h>
-#include <linux/random.h>
-#include <linux/seq_file.h>
+#include <beep/ipv6.h>
+#include <beep/icmpv6.h>
+#include <beep/random.h>
+#include <beep/seq_file.h>
 
 #include <net/protocol.h>
 #include <net/ndisc.h>

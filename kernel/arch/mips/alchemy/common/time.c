@@ -31,10 +31,10 @@
  * will be installed instead (and use of 'wait' instruction is prohibited).
  */
 
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
+#include <beep/clockchips.h>
+#include <beep/clocksource.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
 
 #include <asm/processor.h>
 #include <asm/time.h>

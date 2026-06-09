@@ -30,7 +30,7 @@
  *
  */
 
-#include <linux/pci_hotplug.h>
+#include <beep/pci_hotplug.h>
 
 extern int ibmphp_debug;
 

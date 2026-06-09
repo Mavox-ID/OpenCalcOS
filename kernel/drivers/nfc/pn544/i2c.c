@@ -18,15 +18,15 @@
  * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/crc-ccitt.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/miscdevice.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <beep/crc-ccitt.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/gpio.h>
+#include <beep/miscdevice.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
 
-#include <linux/platform_data/pn544.h>
+#include <beep/platform_data/pn544.h>
 
 #include <net/nfc/hci.h>
 #include <net/nfc/llc.h>

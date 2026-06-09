@@ -13,19 +13,19 @@
  *  Released under the GPLv2.
  */
 
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/usb/iowarrior.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/mutex.h>
+#include <beep/poll.h>
+#include <beep/usb/iowarrior.h>
 
 /* Version Information */
 #define DRIVER_VERSION "v0.4.0"
 #define DRIVER_AUTHOR "Christian Lucht <lucht@codemercs.com>"
-#define DRIVER_DESC "USB IO-Warrior driver (Linux 2.6.x)"
+#define DRIVER_DESC "USB IO-Warrior driver (Beep 2.6.x)"
 
 #define USB_VENDOR_ID_CODEMERCS		1984
 /* low speed iowarrior */

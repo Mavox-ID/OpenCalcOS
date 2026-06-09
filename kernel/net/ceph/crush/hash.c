@@ -1,6 +1,6 @@
 
-#include <linux/types.h>
-#include <linux/crush/hash.h>
+#include <beep/types.h>
+#include <beep/crush/hash.h>
 
 /*
  * Robert Jenkins' function for mixing 32-bit values

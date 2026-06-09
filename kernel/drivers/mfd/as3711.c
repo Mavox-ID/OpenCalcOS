@@ -9,16 +9,16 @@
  * published by the Free Software Foundation
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mfd/as3711.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/mfd/as3711.h>
+#include <beep/mfd/core.h>
+#include <beep/module.h>
+#include <beep/regmap.h>
+#include <beep/slab.h>
 
 enum {
 	AS3711_REGULATOR,

@@ -1,5 +1,5 @@
 /*
- *	linux/arch/alpha/kernel/sys_sio.c
+ *	beep/arch/alpha/kernel/sys_sio.c
  *
  *	Copyright (C) 1995 David A Rusling
  *	Copyright (C) 1996 Jay A Estabrook
@@ -10,13 +10,13 @@
  * Kenetics's Platform 2000, Avanti (AlphaStation), XL, and AlphaBook1.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/screen_info.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/screen_info.h>
 
 #include <asm/compiler.h>
 #include <asm/ptrace.h>

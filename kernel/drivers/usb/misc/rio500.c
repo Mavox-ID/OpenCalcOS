@@ -1,4 +1,4 @@
-/* -*- linux-c -*- */
+/* -*- beep-c -*- */
 
 /* 
  * Driver for USB Rio 500
@@ -28,19 +28,19 @@
  *             Daniele Bellucci  bellucda@tiscali.it
  * */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/random.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/mutex.h>
+#include <beep/errno.h>
+#include <beep/random.h>
+#include <beep/poll.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/usb.h>
+#include <beep/wait.h>
 
 #include "rio500_usb.h"
 

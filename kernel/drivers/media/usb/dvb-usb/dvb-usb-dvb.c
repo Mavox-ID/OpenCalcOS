@@ -4,7 +4,7 @@
  * see dvb-usb-init.c for copyright information.
  *
  * This file contains functions for initializing and handling the
- * linux-dvb API.
+ * beep-dvb API.
  */
 #include "dvb-usb-common.h"
 

@@ -1,8 +1,8 @@
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/topology.h>
-#include <linux/cpu.h>
-#include <linux/range.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/topology.h>
+#include <beep/cpu.h>
+#include <beep/range.h>
 
 #include <asm/amd_nb.h>
 #include <asm/pci_x86.h>

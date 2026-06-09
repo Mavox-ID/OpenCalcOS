@@ -8,17 +8,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
 
 #include <asm/ptrace.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/irq.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>

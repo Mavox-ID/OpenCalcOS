@@ -87,7 +87,7 @@ struct pci_hba_data {
 #endif /* !CONFIG_64BIT */
 
 /*
-** KLUGE: linux/pci.h include asm/pci.h BEFORE declaring struct pci_bus
+** KLUGE: beep/pci.h include asm/pci.h BEFORE declaring struct pci_bus
 ** (This eliminates some of the warnings).
 */
 struct pci_bus;

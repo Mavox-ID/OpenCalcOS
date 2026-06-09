@@ -18,10 +18,10 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/posix_acl_xattr.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/posix_acl_xattr.h>
 #include "jfs_incore.h"
 #include "jfs_txnmgr.h"
 #include "jfs_xattr.h"

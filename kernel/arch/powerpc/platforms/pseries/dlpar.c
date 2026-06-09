@@ -10,13 +10,13 @@
  * 2 as published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/notifier.h>
-#include <linux/spinlock.h>
-#include <linux/cpu.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <beep/kernel.h>
+#include <beep/kref.h>
+#include <beep/notifier.h>
+#include <beep/spinlock.h>
+#include <beep/cpu.h>
+#include <beep/slab.h>
+#include <beep/of.h>
 #include "offline_states.h"
 
 #include <asm/prom.h>

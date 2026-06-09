@@ -22,14 +22,14 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/memblock.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/notifier.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/slab.h>
+#include <beep/memblock.h>
 
 #include <asm/prom.h>
 #include <asm/iommu.h>

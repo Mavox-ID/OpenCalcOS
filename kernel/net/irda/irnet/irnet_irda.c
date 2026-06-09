@@ -9,9 +9,9 @@
  */
 
 #include "irnet_irda.h"		/* Private header */
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
 #include <asm/unaligned.h>
 
 /*

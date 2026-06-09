@@ -8,12 +8,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":" fmt
 
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/io.h>
+#include <beep/spinlock.h>
+#include <beep/sched.h>
+#include <beep/list.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/io.h>
 
 #include <net/caif/caif_device.h>
 #include <net/caif/caif_shm.h>

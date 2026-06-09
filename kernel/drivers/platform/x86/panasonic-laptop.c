@@ -84,15 +84,15 @@
  *			fix return value of pcc_acpi_get_key()
  *			fix checking return value of acpi_bus_register_driver()
  *
- *      Aug.22, 2004    David Bronaugh <dbronaugh@linuxboxen.org>
+ *      Aug.22, 2004    David Bronaugh <dbronaugh@beepboxen.org>
  *              -v0.6.2 Add check on ACPI data (num_sifr)
  *                      Coding style cleanups, better error messages/handling
  *			Fixed an off-by-one error in memory allocation
  *
- *      Aug.21, 2004    David Bronaugh <dbronaugh@linuxboxen.org>
+ *      Aug.21, 2004    David Bronaugh <dbronaugh@beepboxen.org>
  *              -v0.6.1 Fix a silly error with status checking
  *
- *      Aug.20, 2004    David Bronaugh <dbronaugh@linuxboxen.org>
+ *      Aug.20, 2004    David Bronaugh <dbronaugh@beepboxen.org>
  *              - v0.6  Correct brightness controls to reflect reality
  *                      based on information gleaned by Hiroshi Miura
  *                      and discussions with Hiroshi Miura
@@ -116,19 +116,19 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/backlight.h>
-#include <linux/ctype.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/backlight.h>
+#include <beep/ctype.h>
+#include <beep/seq_file.h>
+#include <beep/uaccess.h>
+#include <beep/slab.h>
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
+#include <beep/input.h>
+#include <beep/input/sparse-keymap.h>
 
 
 #ifndef ACPI_HOTKEY_COMPONENT

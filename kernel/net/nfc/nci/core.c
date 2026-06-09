@@ -27,19 +27,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": %s: " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/completion.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
-#include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/workqueue.h>
+#include <beep/completion.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/bitops.h>
+#include <beep/skbuff.h>
 
 #include "../nfc.h"
 #include <net/nfc/nci.h>
 #include <net/nfc/nci_core.h>
-#include <linux/nfc.h>
+#include <beep/nfc.h>
 
 static void nci_cmd_work(struct work_struct *work);
 static void nci_rx_work(struct work_struct *work);

@@ -9,12 +9,12 @@
  * (at your option) any later version.
  */
 
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/platform_device.h>
 
 #include <mach/hardware.h>
 

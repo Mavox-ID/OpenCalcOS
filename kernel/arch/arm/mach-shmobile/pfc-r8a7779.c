@@ -17,10 +17,10 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sh_pfc.h>
-#include <linux/ioport.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sh_pfc.h>
+#include <beep/ioport.h>
 #include <mach/r8a7779.h>
 
 #define CPU_32_PORT(fn, pfx, sfx)				\

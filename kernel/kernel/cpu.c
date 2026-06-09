@@ -3,22 +3,22 @@
  *
  * This code is licenced under the GPL.
  */
-#include <linux/proc_fs.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/notifier.h>
-#include <linux/sched.h>
-#include <linux/unistd.h>
-#include <linux/cpu.h>
-#include <linux/oom.h>
-#include <linux/rcupdate.h>
-#include <linux/export.h>
-#include <linux/bug.h>
-#include <linux/kthread.h>
-#include <linux/stop_machine.h>
-#include <linux/mutex.h>
-#include <linux/gfp.h>
-#include <linux/suspend.h>
+#include <beep/proc_fs.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/notifier.h>
+#include <beep/sched.h>
+#include <beep/unistd.h>
+#include <beep/cpu.h>
+#include <beep/oom.h>
+#include <beep/rcupdate.h>
+#include <beep/export.h>
+#include <beep/bug.h>
+#include <beep/kthread.h>
+#include <beep/stop_machine.h>
+#include <beep/mutex.h>
+#include <beep/gfp.h>
+#include <beep/suspend.h>
 
 #include "smpboot.h"
 

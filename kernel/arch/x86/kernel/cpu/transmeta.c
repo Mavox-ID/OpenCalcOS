@@ -1,6 +1,6 @@
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/init.h>
 #include <asm/processor.h>
 #include <asm/msr.h>
 #include "cpu.h"

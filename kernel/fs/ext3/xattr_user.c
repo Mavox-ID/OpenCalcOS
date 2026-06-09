@@ -1,5 +1,5 @@
 /*
- * linux/fs/ext3/xattr_user.c
+ * beep/fs/ext3/xattr_user.c
  * Handler for extended user attributes.
  *
  * Copyright (C) 2001 by Andreas Gruenbacher, <a.gruenbacher@computer.org>

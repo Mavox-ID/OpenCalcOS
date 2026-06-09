@@ -4,12 +4,12 @@
  * Copyright (C) 2007 Steven Rostedt <srostedt@redhat.com>
  *
  */
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
-#include <linux/kallsyms.h>
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/debugfs.h>
+#include <beep/kallsyms.h>
+#include <beep/uaccess.h>
+#include <beep/ftrace.h>
 #include <trace/events/sched.h>
 
 #include "trace.h"

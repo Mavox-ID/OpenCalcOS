@@ -1,5 +1,5 @@
 /*
- *  linux/kernel/profile.c
+ *  beep/kernel/profile.c
  *  Simple profiling. Manages a direct-mapped profile hit count buffer,
  *  with configurable resolution, support for restricting the cpus on
  *  which profiling is done, and switching between cpu time and
@@ -14,17 +14,17 @@
  *	Oracle, 2004
  */
 
-#include <linux/export.h>
-#include <linux/profile.h>
-#include <linux/bootmem.h>
-#include <linux/notifier.h>
-#include <linux/mm.h>
-#include <linux/cpumask.h>
-#include <linux/cpu.h>
-#include <linux/highmem.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <beep/export.h>
+#include <beep/profile.h>
+#include <beep/bootmem.h>
+#include <beep/notifier.h>
+#include <beep/mm.h>
+#include <beep/cpumask.h>
+#include <beep/cpu.h>
+#include <beep/highmem.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
 #include <asm/sections.h>
 #include <asm/irq_regs.h>
 #include <asm/ptrace.h>
@@ -444,8 +444,8 @@ void profile_tick(int type)
 }
 
 #ifdef CONFIG_PROC_FS
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #include <asm/uaccess.h>
 
 static int prof_cpu_mask_proc_show(struct seq_file *m, void *v)

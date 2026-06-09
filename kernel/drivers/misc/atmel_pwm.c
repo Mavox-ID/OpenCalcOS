@@ -1,19 +1,19 @@
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/atmel_pwm.h>
+#include <beep/module.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/atmel_pwm.h>
 
 
 /*
  * This is a simple driver for the PWM controller found in various newer
  * Atmel SOCs, including the AVR32 series and the AT91sam9263.
  *
- * Chips with current Linux ports have only 4 PWM channels, out of max 32.
- * AT32UC3A and AT32UC3B chips have 7 channels (but currently no Linux).
+ * Chips with current Beep ports have only 4 PWM channels, out of max 32.
+ * AT32UC3A and AT32UC3B chips have 7 channels (but currently no Beep).
  * Docs are inconsistent about the width of the channel counter registers;
  * it's at least 16 bits, but several places say 20 bits.
  */
@@ -389,7 +389,7 @@ static struct platform_driver atmel_pwm_driver = {
 
 	/* NOTE: PWM can keep running in AVR32 "idle" and "frozen" states;
 	 * and all AT91sam9263 states, albeit at reduced clock rate if
-	 * MCK becomes the slow clock (i.e. what Linux labels STR).
+	 * MCK becomes the slow clock (i.e. what Beep labels STR).
 	 */
 };
 

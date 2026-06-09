@@ -3,17 +3,17 @@
  *
  * Copyright 2008-2011 Analog Devices Inc.
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucbeep.org/
  *
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
+#include <beep/console.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
 
 #include "hvc_console.h"
 

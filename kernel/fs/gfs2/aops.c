@@ -7,19 +7,19 @@
  * of the GNU General Public License version 2.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/mpage.h>
-#include <linux/fs.h>
-#include <linux/writeback.h>
-#include <linux/swap.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/backing-dev.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
+#include <beep/buffer_head.h>
+#include <beep/pagemap.h>
+#include <beep/pagevec.h>
+#include <beep/mpage.h>
+#include <beep/fs.h>
+#include <beep/writeback.h>
+#include <beep/swap.h>
+#include <beep/gfs2_ondisk.h>
+#include <beep/backing-dev.h>
 
 #include "gfs2.h"
 #include "incore.h"
@@ -405,7 +405,7 @@ static int gfs2_jdata_writepages(struct address_space *mapping,
 }
 
 /**
- * stuffed_readpage - Fill in a Linux page with stuffed file data
+ * stuffed_readpage - Fill in a Beep page with stuffed file data
  * @ip: the inode
  * @page: the page
  *
@@ -1032,7 +1032,7 @@ out:
 /**
  * gfs2_releasepage - free the metadata associated with a page
  * @page: the page that's being released
- * @gfp_mask: passed from Linux VFS, ignored by us
+ * @gfp_mask: passed from Beep VFS, ignored by us
  *
  * Call try_to_free_buffers() if the buffers in this page can be
  * released.

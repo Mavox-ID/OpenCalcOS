@@ -8,12 +8,12 @@
  * Free Software Foundation; version 2 of the License.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/hw_random.h>
-#include <linux/delay.h>
-#include <linux/of_platform.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/hw_random.h>
+#include <beep/delay.h>
+#include <beep/of_platform.h>
 #include <asm/io.h>
 
 #define PPC4XX_TRNG_DEV_CTRL 0x60080
@@ -142,5 +142,5 @@ static struct platform_driver ppc4xx_rng_driver = {
 module_platform_driver(ppc4xx_rng_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Josh Boyer <jwboyer@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Josh Boyer <jwboyer@beep.vnet.ibm.com>");
 MODULE_DESCRIPTION("HW RNG driver for PPC 4xx processors");

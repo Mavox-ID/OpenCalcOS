@@ -28,18 +28,18 @@
  *   Alan Hourihane <alanh-at-tungstengraphics-dot-com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/fb.h>
+#include <beep/pci.h>
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>
-#include <linux/mmzone.h>
+#include <beep/mmzone.h>
 
 /* #define VERMILION_DEBUG */
 

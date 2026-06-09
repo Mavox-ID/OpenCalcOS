@@ -8,16 +8,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/random.h>
-#include <linux/compiler.h>
-#include <linux/crc32.h>
-#include <linux/crypto.h>
-#include <linux/err.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <beep/netdevice.h>
+#include <beep/types.h>
+#include <beep/random.h>
+#include <beep/compiler.h>
+#include <beep/crc32.h>
+#include <beep/crypto.h>
+#include <beep/err.h>
+#include <beep/mm.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
 #include <asm/unaligned.h>
 
 #include <net/mac80211.h>

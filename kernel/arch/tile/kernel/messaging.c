@@ -12,10 +12,10 @@
  *   more details.
  */
 
-#include <linux/percpu.h>
-#include <linux/smp.h>
-#include <linux/hardirq.h>
-#include <linux/ptrace.h>
+#include <beep/percpu.h>
+#include <beep/smp.h>
+#include <beep/hardirq.h>
+#include <beep/ptrace.h>
 #include <asm/hv_driver.h>
 #include <asm/irq_regs.h>
 #include <asm/traps.h>

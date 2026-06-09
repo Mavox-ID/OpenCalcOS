@@ -119,20 +119,20 @@
  *	20011003 Fix multiple requests
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/random.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/usb.h>
-#include <linux/proc_fs.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/errno.h>
+#include <beep/random.h>
+#include <beep/poll.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/usb.h>
+#include <beep/proc_fs.h>
 
-#include <linux/atomic.h>
-#include <linux/blkdev.h>
+#include <beep/atomic.h>
+#include <beep/blkdev.h>
 #include "../../scsi/scsi.h"
 #include <scsi/scsi_host.h>
 

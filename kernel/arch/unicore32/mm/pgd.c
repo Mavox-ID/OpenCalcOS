@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/mm/pgd.c
+ * beep/arch/unicore32/mm/pgd.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -9,9 +9,9 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/highmem.h>
+#include <beep/mm.h>
+#include <beep/gfp.h>
+#include <beep/highmem.h>
 
 #include <asm/pgalloc.h>
 #include <asm/page.h>

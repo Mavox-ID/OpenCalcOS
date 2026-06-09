@@ -6,7 +6,7 @@
 #ifndef _ASM_PCI_H
 #define _ASM_PCI_H
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 #ifdef __KERNEL__
 
@@ -16,8 +16,8 @@
  * into include/asm/pci.h file.
  */
 
-#include <linux/ioport.h>
-#include <linux/of.h>
+#include <beep/ioport.h>
+#include <beep/of.h>
 
 /*
  * Each pci channel is a top-level PCI bus seem by CPU.  A machine  with
@@ -89,10 +89,10 @@ extern int pci_mmap_page_range(struct pci_dev *dev, struct vm_area_struct *vma,
  * MIPS has everything mapped statically.
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/slab.h>
 #include <asm/scatterlist.h>
-#include <linux/string.h>
+#include <beep/string.h>
 #include <asm/io.h>
 #include <asm-generic/pci-bridge.h>
 

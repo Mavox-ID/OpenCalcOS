@@ -38,13 +38,13 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  *
  */
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/math64.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/math64.h>
 #include <asm/io.h>
 
 #include <sound/core.h>
@@ -76,10 +76,10 @@ MODULE_PARM_DESC(enable, "Enable/disable specific HDSPM soundcards.");
 MODULE_AUTHOR
 (
 	"Winfried Ritsch <ritsch_AT_iem.at>, "
-	"Paul Davis <paul@linuxaudiosystems.com>, "
+	"Paul Davis <paul@beepaudiosystems.com>, "
 	"Marcus Andersson, Thomas Charbonnel <thomas@undata.org>, "
 	"Remy Bruno <remy.bruno@trinnov.com>, "
-	"Florian Faber <faberman@linuxproaudio.org>, "
+	"Florian Faber <faberman@beepproaudio.org>, "
 	"Adrian Knoth <adi@drcomp.erfurt.thur.de>"
 );
 MODULE_DESCRIPTION("RME HDSPM");

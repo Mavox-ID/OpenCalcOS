@@ -1,6 +1,6 @@
 #ifndef _ASM_FB_H_
 #define _ASM_FB_H_
-#include <linux/fb.h>
+#include <beep/fb.h>
 
 #define fb_pgprotect(...) do {} while (0)
 

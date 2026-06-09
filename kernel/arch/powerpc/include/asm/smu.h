@@ -5,9 +5,9 @@
  * Definitions for talking to the SMU chip in newer G5 PowerMacs
  */
 #ifdef __KERNEL__
-#include <linux/list.h>
+#include <beep/list.h>
 #endif
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * Known SMU commands
@@ -158,7 +158,7 @@
   *
   * This driver provides an asynchronous paramblock based i2c command
   * interface to be used either directly by low level code or by a higher
-  * level driver interfacing to the linux i2c layer. The current
+  * level driver interfacing to the beep i2c layer. The current
   * implementation of this relies on working timers & timer interrupts
   * though, so be careful of calling context for now. This may be "fixed"
   * in the future by adding a polling facility.

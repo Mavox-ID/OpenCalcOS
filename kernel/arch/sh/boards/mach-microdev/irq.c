@@ -6,12 +6,12 @@
  * SuperH SH4-202 MicroDev board support.
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See beep/COPYING for more information.
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
 #include <asm/io.h>
 #include <mach/microdev.h>
 
@@ -40,27 +40,27 @@ static const struct {
 	{ 0,				0,	"unused"   },		/* IRQ #15	IRL=0	0x3e0  */
 };
 
-#if (MICRODEV_LINUX_IRQ_KEYBOARD != 1)
+#if (MICRODEV_BEEP_IRQ_KEYBOARD != 1)
 #  error Inconsistancy in defining the IRQ# for Keyboard!
 #endif
 
-#if (MICRODEV_LINUX_IRQ_ETHERNET != 3)
+#if (MICRODEV_BEEP_IRQ_ETHERNET != 3)
 #  error Inconsistancy in defining the IRQ# for Ethernet!
 #endif
 
-#if (MICRODEV_LINUX_IRQ_USB_HC != 7)
+#if (MICRODEV_BEEP_IRQ_USB_HC != 7)
 #  error Inconsistancy in defining the IRQ# for USB!
 #endif
 
-#if (MICRODEV_LINUX_IRQ_MOUSE != 12)
+#if (MICRODEV_BEEP_IRQ_MOUSE != 12)
 #  error Inconsistancy in defining the IRQ# for PS/2 Mouse!
 #endif
 
-#if (MICRODEV_LINUX_IRQ_IDE2 != 13)
+#if (MICRODEV_BEEP_IRQ_IDE2 != 13)
 #  error Inconsistancy in defining the IRQ# for secondary IDE!
 #endif
 
-#if (MICRODEV_LINUX_IRQ_IDE1 != 14)
+#if (MICRODEV_BEEP_IRQ_IDE1 != 14)
 #  error Inconsistancy in defining the IRQ# for primary IDE!
 #endif
 

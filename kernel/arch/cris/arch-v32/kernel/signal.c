@@ -2,18 +2,18 @@
  * Copyright (C) 2003, Axis Communications AB.
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/syscalls.h>
-#include <linux/vmalloc.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/errno.h>
+#include <beep/wait.h>
+#include <beep/ptrace.h>
+#include <beep/unistd.h>
+#include <beep/stddef.h>
+#include <beep/syscalls.h>
+#include <beep/vmalloc.h>
 
 #include <asm/io.h>
 #include <asm/processor.h>

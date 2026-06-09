@@ -8,8 +8,8 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/sys.h>
-#include <linux/linkage.h>
+#include <beep/sys.h>
+#include <beep/linkage.h>
 #include <asm/smp.h>
 #include <asm/page.h>
 #include <asm/cache.h>

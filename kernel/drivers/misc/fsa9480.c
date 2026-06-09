@@ -10,17 +10,17 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/fsa9480.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/platform_data/fsa9480.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
 
 /* FSA9480 I2C registers */
 #define FSA9480_REG_DEVID		0x01

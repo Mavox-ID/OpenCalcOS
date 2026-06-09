@@ -553,7 +553,7 @@ enum {
  * 943	-----------------------------------------
  */
 
-/* PINT interrupts are located at Linux IRQ 700 and up */
+/* PINT interrupts are located at Beep IRQ 700 and up */
 #define SH73A0_PINT0_IRQ(irq) ((irq) + 700)
 #define SH73A0_PINT1_IRQ(irq) ((irq) + 732)
 

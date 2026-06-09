@@ -1,8 +1,8 @@
 /*
  * mm.c - Micro Memory(tm) PCI memory board block device driver - v2.3
  *
- * (C) 2001 San Mehat <nettwerk@valinux.com>
- * (C) 2001 Johannes Erdfelt <jerdfelt@valinux.com>
+ * (C) 2001 San Mehat <nettwerk@vabeep.com>
+ * (C) 2001 Johannes Erdfelt <jerdfelt@vabeep.com>
  * (C) 2001 NeilBrown <neilb@cse.unsw.edu.au>
  *
  * This driver for the Micro Memory PCI Memory Module with Battery Backup
@@ -35,22 +35,22 @@
  */
 
 #undef DEBUG	/* #define DEBUG if you want debugging info (pr_debug) */
-#include <linux/fs.h>
-#include <linux/bio.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/gfp.h>
-#include <linux/ioctl.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
+#include <beep/fs.h>
+#include <beep/bio.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/gfp.h>
+#include <beep/ioctl.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/timer.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
 
-#include <linux/fcntl.h>        /* O_ACCMODE */
-#include <linux/hdreg.h>  /* HDIO_GETGEO */
+#include <beep/fcntl.h>        /* O_ACCMODE */
+#include <beep/hdreg.h>  /* HDIO_GETGEO */
 
 #include "umem.h"
 
@@ -94,8 +94,8 @@ static int pci_cmds;
 
 static int major_nr;
 
-#include <linux/blkdev.h>
-#include <linux/blkpg.h>
+#include <beep/blkdev.h>
+#include <beep/blkpg.h>
 
 struct cardinfo {
 	struct pci_dev	*dev;

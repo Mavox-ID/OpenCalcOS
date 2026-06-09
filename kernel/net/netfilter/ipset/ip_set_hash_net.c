@@ -7,21 +7,21 @@
 
 /* Kernel module implementing an IP set type: the hash:net type */
 
-#include <linux/jhash.h>
-#include <linux/module.h>
-#include <linux/ip.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/random.h>
+#include <beep/jhash.h>
+#include <beep/module.h>
+#include <beep/ip.h>
+#include <beep/skbuff.h>
+#include <beep/errno.h>
+#include <beep/random.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 #include <net/netlink.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter/ipset/pfxlen.h>
-#include <linux/netfilter/ipset/ip_set.h>
-#include <linux/netfilter/ipset/ip_set_timeout.h>
-#include <linux/netfilter/ipset/ip_set_hash.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter/ipset/pfxlen.h>
+#include <beep/netfilter/ipset/ip_set.h>
+#include <beep/netfilter/ipset/ip_set_timeout.h>
+#include <beep/netfilter/ipset/ip_set_hash.h>
 
 #define REVISION_MIN	0
 /*			1    Range as input support for IPv4 added */
@@ -150,7 +150,7 @@ nla_put_failure:
 
 #define PF		4
 #define HOST_MASK	32
-#include <linux/netfilter/ipset/ip_set_ahash.h>
+#include <beep/netfilter/ipset/ip_set_ahash.h>
 
 static inline void
 hash_net4_data_next(struct ip_set_hash *h,
@@ -380,7 +380,7 @@ nla_put_failure:
 
 #define PF		6
 #define HOST_MASK	128
-#include <linux/netfilter/ipset/ip_set_ahash.h>
+#include <beep/netfilter/ipset/ip_set_ahash.h>
 
 static inline void
 hash_net6_data_next(struct ip_set_hash *h,

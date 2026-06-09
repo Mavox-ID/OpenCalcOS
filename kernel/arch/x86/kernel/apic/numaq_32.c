@@ -23,21 +23,21 @@
  *
  * Send feedback to <gone@us.ibm.com>
  */
-#include <linux/nodemask.h>
-#include <linux/topology.h>
-#include <linux/bootmem.h>
-#include <linux/memblock.h>
-#include <linux/threads.h>
-#include <linux/cpumask.h>
-#include <linux/kernel.h>
-#include <linux/mmzone.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/numa.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/mm.h>
+#include <beep/nodemask.h>
+#include <beep/topology.h>
+#include <beep/bootmem.h>
+#include <beep/memblock.h>
+#include <beep/threads.h>
+#include <beep/cpumask.h>
+#include <beep/kernel.h>
+#include <beep/mmzone.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/numa.h>
+#include <beep/smp.h>
+#include <beep/io.h>
+#include <beep/mm.h>
 
 #include <asm/processor.h>
 #include <asm/fixmap.h>

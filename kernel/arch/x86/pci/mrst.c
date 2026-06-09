@@ -18,11 +18,11 @@
  * the writes.
  */
 
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/dmi.h>
+#include <beep/sched.h>
+#include <beep/pci.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/dmi.h>
 
 #include <asm/acpi.h>
 #include <asm/segment.h>

@@ -9,15 +9,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/videodev2.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/dma/ipu-dma.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/videodev2.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/vmalloc.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/dma/ipu-dma.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-dev.h>
@@ -25,8 +25,8 @@
 #include <media/soc_camera.h>
 #include <media/soc_mediabus.h>
 
-#include <linux/platform_data/camera-mx3.h>
-#include <linux/platform_data/dma-imx.h>
+#include <beep/platform_data/camera-mx3.h>
+#include <beep/platform_data/dma-imx.h>
 
 #define MX3_CAM_DRV_NAME "mx3-camera"
 

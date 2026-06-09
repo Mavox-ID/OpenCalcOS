@@ -20,7 +20,7 @@
  * Author:       David VomLehn
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/mach-powertv/asic.h>
 
 /*

@@ -19,14 +19,14 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_reg.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/serial_8250.h>
+#include <beep/serial_reg.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/io.h>
 
 #include <mach/serial.h>
 #include <mach/cputype.h>

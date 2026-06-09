@@ -9,9 +9,9 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/acpi.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/acpi.h>
 #include <acpi/video.h>
 
 #define DRIVER_NAME "poulsbo"

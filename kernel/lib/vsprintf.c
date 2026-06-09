@@ -1,5 +1,5 @@
 /*
- *  linux/lib/vsprintf.c
+ *  beep/lib/vsprintf.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -17,15 +17,15 @@
  */
 
 #include <stdarg.h>
-#include <linux/module.h>	/* for KSYM_SYMBOL_LEN */
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/kallsyms.h>
-#include <linux/math64.h>
-#include <linux/uaccess.h>
-#include <linux/ioport.h>
+#include <beep/module.h>	/* for KSYM_SYMBOL_LEN */
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/kernel.h>
+#include <beep/kallsyms.h>
+#include <beep/math64.h>
+#include <beep/uaccess.h>
+#include <beep/ioport.h>
 #include <net/addrconf.h>
 
 #include <asm/page.h>		/* for PAGE_SIZE */

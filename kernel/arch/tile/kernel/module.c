@@ -14,12 +14,12 @@
  * Based on i386 version, copyright (C) 2001 Rusty Russell.
  */
 
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <beep/moduleloader.h>
+#include <beep/elf.h>
+#include <beep/vmalloc.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
 #include <asm/pgtable.h>
 #include <asm/homecache.h>
 #include <arch/opcode.h>

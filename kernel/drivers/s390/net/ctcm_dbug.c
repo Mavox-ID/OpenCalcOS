@@ -4,16 +4,16 @@
  *
  */
 
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/ctype.h>
-#include <linux/sysctl.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
+#include <beep/stddef.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/ctype.h>
+#include <beep/sysctl.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/debugfs.h>
 #include "ctcm_dbug.h"
 
 /*

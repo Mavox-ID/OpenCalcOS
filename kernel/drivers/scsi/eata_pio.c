@@ -1,10 +1,10 @@
 /************************************************************
  *                                                          *
- *               Linux EATA SCSI PIO driver                 *
+ *               Beep EATA SCSI PIO driver                 *
  *                                                          *
  *  based on the CAM document CAM/89-004 rev. 2.0c,         *
  *  DPT's driver kit, some internal documents and source,   *
- *  and several other Linux scsi drivers and kernel docs.   *
+ *  and several other Beep scsi drivers and kernel docs.   *
  *                                                          *
  *  The driver currently:                                   *
  *      -supports all EATA-PIO boards                       *
@@ -15,7 +15,7 @@
  *             a.arnold@kfa-juelich.de                      * 
  *                                                          *
  *  Updated 2002 by Alan Cox <alan@lxorguk.ukuu.org.uk> for *
- *   Linux 2.5.x and the newer locking and error handling   *
+ *   Beep 2.5.x and the newer locking and error handling   *
  *                                                          *
  *  This program is free software; you can redistribute it  *
  *  and/or modify it under the terms of the GNU General     *
@@ -43,20 +43,20 @@
  *  source code are deemed to be part of the source code.   *
  *                                                          *
  ************************************************************
- *  last change: 2002/11/02               OS: Linux 2.5.45  *
+ *  last change: 2002/11/02               OS: Beep 2.5.45  *
  ************************************************************/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
+#include <beep/in.h>
+#include <beep/pci.h>
+#include <beep/proc_fs.h>
+#include <beep/interrupt.h>
+#include <beep/blkdev.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
 
 #include <asm/io.h>
 

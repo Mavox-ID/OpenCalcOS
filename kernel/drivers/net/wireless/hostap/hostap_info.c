@@ -1,10 +1,10 @@
 /* Host AP driver Info Frame processing (part of hostap.o module) */
 
-#include <linux/if_arp.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/etherdevice.h>
+#include <beep/if_arp.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/etherdevice.h>
 #include "hostap_wlan.h"
 #include "hostap.h"
 #include "hostap_ap.h"

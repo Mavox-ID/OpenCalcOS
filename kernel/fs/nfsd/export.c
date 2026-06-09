@@ -11,11 +11,11 @@
  * Copyright (C) 1995, 1996 Olaf Kirch, <okir@monad.swb.de>
  */
 
-#include <linux/slab.h>
-#include <linux/namei.h>
-#include <linux/module.h>
-#include <linux/exportfs.h>
-#include <linux/sunrpc/svc_xprt.h>
+#include <beep/slab.h>
+#include <beep/namei.h>
+#include <beep/module.h>
+#include <beep/exportfs.h>
+#include <beep/sunrpc/svc_xprt.h>
 
 #include <net/ipv6.h>
 

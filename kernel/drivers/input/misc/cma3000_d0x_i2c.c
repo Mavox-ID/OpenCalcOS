@@ -17,9 +17,9 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/input/cma3000.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/input/cma3000.h>
 #include "cma3000_d0x.h"
 
 static int cma3000_i2c_set(struct device *dev,

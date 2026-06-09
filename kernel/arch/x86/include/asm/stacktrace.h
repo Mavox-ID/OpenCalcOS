@@ -6,8 +6,8 @@
 #ifndef _ASM_X86_STACKTRACE_H
 #define _ASM_X86_STACKTRACE_H
 
-#include <linux/uaccess.h>
-#include <linux/ptrace.h>
+#include <beep/uaccess.h>
+#include <beep/ptrace.h>
 
 extern int kstack_depth_to_print;
 

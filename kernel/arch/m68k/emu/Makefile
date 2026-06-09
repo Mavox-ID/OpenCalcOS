@@ -1,5 +1,5 @@
 #
-# Makefile for Linux arch/m68k/emu source directory
+# Makefile for Beep arch/m68k/emu source directory
 #
 
 obj-y			+= natfeat.o

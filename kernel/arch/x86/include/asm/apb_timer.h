@@ -14,7 +14,7 @@
 
 #ifndef ASM_X86_APBT_H
 #define ASM_X86_APBT_H
-#include <linux/sfi.h>
+#include <beep/sfi.h>
 
 #ifdef CONFIG_APB_TIMER
 

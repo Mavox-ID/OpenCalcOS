@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mtd/onenand/omap2.c
+ *  beep/drivers/mtd/onenand/omap2.c
  *
  *  OneNAND driver for OMAP2 / OMAP3
  *
@@ -23,25 +23,25 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/onenand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/regulator/consumer.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/onenand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/regulator/consumer.h>
 
 #include <asm/mach/flash.h>
-#include <linux/platform_data/mtd-onenand-omap2.h>
+#include <beep/platform_data/mtd-onenand-omap2.h>
 #include <asm/gpio.h>
 
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 
 #define DRIVER_NAME "omap2-onenand"
 

@@ -4,16 +4,16 @@
  * for more details.
  *
  * Copyright (C) 2011 Wind River Systems,
- *   written by Ralf Baechle <ralf@linux-mips.org>
+ *   written by Ralf Baechle <ralf@beep-mips.org>
  */
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/module.h>
-#include <linux/personality.h>
-#include <linux/random.h>
-#include <linux/sched.h>
+#include <beep/compiler.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/module.h>
+#include <beep/personality.h>
+#include <beep/random.h>
+#include <beep/sched.h>
 
 unsigned long shm_align_mask = PAGE_SIZE - 1;	/* Sane caches */
 EXPORT_SYMBOL(shm_align_mask);

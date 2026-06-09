@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-nspire/include/mach/irqs.h
+ *  beep/arch/arm/mach-nspire/include/mach/irqs.h
  *
  *  Copyright (C) 2012 Daniel Tang <tangrs@tangrs.id.au>
  *

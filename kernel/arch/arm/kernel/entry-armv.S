@@ -1,8 +1,8 @@
 /*
- *  linux/arch/arm/kernel/entry-armv.S
+ *  beep/arch/arm/kernel/entry-armv.S
  *
  *  Copyright (C) 1996,1997,1998 Russell King.
- *  ARM700 fix by Matthew Godbolt (linux-user@willothewisp.demon.co.uk)
+ *  ARM700 fix by Matthew Godbolt (beep-user@willothewisp.demon.co.uk)
  *  nommu support by Hyok S. Choi (hyok.choi@samsung.com)
  *
  * This program is free software; you can redistribute it and/or modify
@@ -140,7 +140,7 @@ ENDPROC(__und_invalid)
  * SVC mode handlers
  */
 
-#if defined(CONFIG_AEABI) && (__LINUX_ARM_ARCH__ >= 5)
+#if defined(CONFIG_AEABI) && (__BEEP_ARM_ARCH__ >= 5)
 #define SPFIX(code...) code
 #else
 #define SPFIX(code...)
@@ -352,7 +352,7 @@ ENDPROC(__pabt_svc)
  * EABI note: sp_svc is always 64-bit aligned here, so should S_FRAME_SIZE
  */
 
-#if defined(CONFIG_AEABI) && (__LINUX_ARM_ARCH__ >= 5) && (S_FRAME_SIZE & 7)
+#if defined(CONFIG_AEABI) && (__BEEP_ARM_ARCH__ >= 5) && (S_FRAME_SIZE & 7)
 #error "sizeof(struct pt_regs) must be a multiple of 8"
 #endif
 
@@ -470,14 +470,14 @@ __und_usr:
 __und_usr_thumb:
 	@ Thumb instruction
 	sub	r4, r2, #2			@ First half of thumb instr at LR - 2
-#if CONFIG_ARM_THUMB && __LINUX_ARM_ARCH__ >= 6 && CONFIG_CPU_V7
+#if CONFIG_ARM_THUMB && __BEEP_ARM_ARCH__ >= 6 && CONFIG_CPU_V7
 /*
  * Thumb-2 instruction handling.  Note that because pre-v6 and >= v6 platforms
  * can never be supported in a single kernel, this code is not applicable at
- * all when __LINUX_ARM_ARCH__ < 6.  This allows simplifying assumptions to be
+ * all when __BEEP_ARM_ARCH__ < 6.  This allows simplifying assumptions to be
  * made about .arch directives.
  */
-#if __LINUX_ARM_ARCH__ < 7
+#if __BEEP_ARM_ARCH__ < 7
 /* If the target CPU may not be Thumb-2-capable, a run-time check is needed: */
 #define NEED_CPU_ARCHITECTURE
 	ldr	r5, .LCcpu_architecture
@@ -504,15 +504,15 @@ __und_usr_thumb:
 	@ r4 = PC value for the first 16-bit Thumb instruction
 	@ lr = 32bit undefined instruction function
 
-#if __LINUX_ARM_ARCH__ < 7
+#if __BEEP_ARM_ARCH__ < 7
 /* If the target arch was overridden, change it back: */
 #ifdef CONFIG_CPU_32v6K
 	.arch	armv6k
 #else
 	.arch	armv6
 #endif
-#endif /* __LINUX_ARM_ARCH__ < 7 */
-#else /* !(CONFIG_ARM_THUMB && __LINUX_ARM_ARCH__ >= 6 && CONFIG_CPU_V7) */
+#endif /* __BEEP_ARM_ARCH__ < 7 */
+#else /* !(CONFIG_ARM_THUMB && __BEEP_ARM_ARCH__ >= 6 && CONFIG_CPU_V7) */
 	b	__und_usr_fault_16
 #endif
  UNWIND(.fnend)
@@ -527,7 +527,7 @@ ENDPROC(__und_usr)
 	.popsection
 	.pushsection __ex_table,"a"
 	.long	1b, 4b
-#if CONFIG_ARM_THUMB && __LINUX_ARM_ARCH__ >= 6 && CONFIG_CPU_V7
+#if CONFIG_ARM_THUMB && __BEEP_ARM_ARCH__ >= 6 && CONFIG_CPU_V7
 	.long	2b, 4b
 	.long	3b, 4b
 #endif
@@ -857,7 +857,7 @@ kuser_cmpxchg64_fixup:
 	subs	r8, r4, r7
 	rsbcss	r8, r8, #(2b - 1b)
 	strcs	r7, [sp, #S_PC]
-#if __LINUX_ARM_ARCH__ < 6
+#if __BEEP_ARM_ARCH__ < 6
 	bcc	kuser_cmpxchg32_fixup
 #endif
 	mov	pc, lr
@@ -902,7 +902,7 @@ __kuser_cmpxchg:				@ 0xffff0fc0
 	ldmfd	sp!, {r7, pc}
 1:	.word	__ARM_NR_cmpxchg
 
-#elif __LINUX_ARM_ARCH__ < 6
+#elif __BEEP_ARM_ARCH__ < 6
 
 #ifdef CONFIG_MMU
 

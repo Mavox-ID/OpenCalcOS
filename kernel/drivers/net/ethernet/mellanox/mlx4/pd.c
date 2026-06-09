@@ -31,10 +31,10 @@
  * SOFTWARE.
  */
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/io-mapping.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/export.h>
+#include <beep/io-mapping.h>
 
 #include <asm/page.h>
 

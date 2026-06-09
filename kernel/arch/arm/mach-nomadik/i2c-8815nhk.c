@@ -1,10 +1,10 @@
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/i2c-gpio.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/pinctrl-nomadik.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
+#include <beep/i2c-gpio.h>
+#include <beep/platform_device.h>
+#include <beep/platform_data/pinctrl-nomadik.h>
 
 /*
  * There are two busses in the 8815NHK.

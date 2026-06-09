@@ -10,9 +10,9 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/dccp.h>
-#include <linux/skbuff.h>
-#include <linux/export.h>
+#include <beep/dccp.h>
+#include <beep/skbuff.h>
+#include <beep/export.h>
 
 #include "dccp.h"
 
@@ -201,7 +201,7 @@ static void dccp_delack_timer(unsigned long data)
 	if (sock_owned_by_user(sk)) {
 		/* Try again later. */
 		icsk->icsk_ack.blocked = 1;
-		NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_DELAYEDACKLOCKED);
+		NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_DELAYEDACKLOCKED);
 		sk_reset_timer(sk, &icsk->icsk_delack_timer,
 			       jiffies + TCP_DELACK_MIN);
 		goto out;
@@ -231,7 +231,7 @@ static void dccp_delack_timer(unsigned long data)
 			icsk->icsk_ack.ato = TCP_ATO_MIN;
 		}
 		dccp_send_ack(sk);
-		NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_DELAYEDACKS);
+		NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_DELAYEDACKS);
 	}
 out:
 	bh_unlock_sock(sk);

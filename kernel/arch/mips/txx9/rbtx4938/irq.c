@@ -62,9 +62,9 @@
  * RBTX4938_IRQ_IOC+06 MODEM
  * RBTX4938_IRQ_IOC+07 SWINT
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 #include <asm/mipsregs.h>
 #include <asm/txx9/generic.h>
 #include <asm/txx9/rbtx4938.h>

@@ -1,4 +1,4 @@
-# Makefile for Linux PHY drivers
+# Makefile for Beep PHY drivers
 
 libphy-objs			:= phy.o phy_device.o mdio_bus.o
 

@@ -29,7 +29,7 @@
  *
  ********************************************************************/
 
-#include <linux/init.h>
+#include <beep/init.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/irlmp.h>

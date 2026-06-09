@@ -21,11 +21,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/hardirq.h>
-#include <linux/types.h>
-#include <linux/crypto.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/hardirq.h>
+#include <beep/types.h>
+#include <beep/crypto.h>
+#include <beep/err.h>
 #include <crypto/algapi.h>
 #include <crypto/twofish.h>
 #include <crypto/cryptd.h>
@@ -40,8 +40,8 @@
 #include <asm/crypto/ablk_helper.h>
 #include <asm/crypto/glue_helper.h>
 #include <crypto/scatterwalk.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/spinlock.h>
 
 #define TWOFISH_PARALLEL_BLOCKS 8
 

@@ -9,8 +9,8 @@
 #ifndef _ASM_PGTABLE_64_H
 #define _ASM_PGTABLE_64_H
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
+#include <beep/compiler.h>
+#include <beep/linkage.h>
 
 #include <asm/addrspace.h>
 #include <asm/page.h>
@@ -33,7 +33,7 @@
  * invalid_pte_table, each pte is initialized to 0. When memory is low,
  * and a pmd table or a page table allocation fails, empty_bad_pmd_table
  * and empty_bad_page_table is returned back to higher layer code, so
- * that the failure is recognized later on. Linux does not seem to
+ * that the failure is recognized later on. Beep does not seem to
  * handle these failures very well though. The empty_bad_page_table has
  * invalid pte entries in it, to force page faults.
  *

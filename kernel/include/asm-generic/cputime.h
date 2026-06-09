@@ -1,8 +1,8 @@
 #ifndef _ASM_GENERIC_CPUTIME_H
 #define _ASM_GENERIC_CPUTIME_H
 
-#include <linux/time.h>
-#include <linux/jiffies.h>
+#include <beep/time.h>
+#include <beep/jiffies.h>
 
 typedef unsigned long __nocast cputime_t;
 

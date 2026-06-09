@@ -1,9 +1,9 @@
-/* linux/net/inet/arp.h */
+/* beep/net/inet/arp.h */
 #ifndef _ARP_H
 #define _ARP_H
 
-#include <linux/if_arp.h>
-#include <linux/hash.h>
+#include <beep/if_arp.h>
+#include <beep/hash.h>
 #include <net/neighbour.h>
 
 

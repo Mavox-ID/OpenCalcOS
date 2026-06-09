@@ -1,5 +1,5 @@
-#include <linux/module.h>
-#include <linux/irq.h>
+#include <beep/module.h>
+#include <beep/irq.h>
 #include <arch/dma.h>
 #include <arch/intmem.h>
 #include <mach/pinmux.h>

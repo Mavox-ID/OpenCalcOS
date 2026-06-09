@@ -24,8 +24,8 @@
 #ifndef __THERMAL_CORE_H__
 #define __THERMAL_CORE_H__
 
-#include <linux/device.h>
-#include <linux/thermal.h>
+#include <beep/device.h>
+#include <beep/thermal.h>
 
 /* Initial state of a cooling device during binding */
 #define THERMAL_NO_TARGET -1UL

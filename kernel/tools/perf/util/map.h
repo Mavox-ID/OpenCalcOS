@@ -1,9 +1,9 @@
 #ifndef __PERF_MAP_H
 #define __PERF_MAP_H
 
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
+#include <beep/compiler.h>
+#include <beep/list.h>
+#include <beep/rbtree.h>
 #include <stdio.h>
 #include <stdbool.h>
 #include "types.h"
@@ -105,7 +105,7 @@ struct symbol *map__find_symbol_by_name(struct map *self, const char *name,
 void map__fixup_start(struct map *self);
 void map__fixup_end(struct map *self);
 
-void map__reloc_vmlinux(struct map *self);
+void map__reloc_vmbeep(struct map *self);
 
 size_t __map_groups__fprintf_maps(struct map_groups *mg,
 				  enum map_type type, int verbose, FILE *fp);

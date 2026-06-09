@@ -1,5 +1,5 @@
 /*
- *    Copyright (c) 1995-1996 Gary Thomas <gdt@linuxppc.org>
+ *    Copyright (c) 1995-1996 Gary Thomas <gdt@beepppc.org>
  *      Initial PowerPC version.
  *    Copyright (c) 1996 Cort Dougan <cort@cs.nmt.edu>
  *      Rewritten for PReP
@@ -31,7 +31,7 @@
  *
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 #include <asm/mmu.h>
@@ -313,7 +313,7 @@ label:
 	beq	2f			/* Bail if no table */
 
 	rlwimi	r12, r10, 22, 20, 29	/* Compute PTE address */
-	lwz	r11, 0(r12)		/* Get Linux PTE */
+	lwz	r11, 0(r12)		/* Get Beep PTE */
 
 	andi.	r9, r11, _PAGE_RW	/* Is it writeable? */
 	beq	2f			/* Bail if not */
@@ -321,12 +321,12 @@ label:
 	/* Update 'changed'.
 	*/
 	ori	r11, r11, _PAGE_DIRTY|_PAGE_ACCESSED|_PAGE_HWWRITE
-	stw	r11, 0(r12)		/* Update Linux page table */
+	stw	r11, 0(r12)		/* Update Beep page table */
 
-	/* Most of the Linux PTE is ready to load into the TLB LO.
+	/* Most of the Beep PTE is ready to load into the TLB LO.
 	 * We set ZSEL, where only the LS-bit determines user access.
 	 * We set execute, because we don't have the granularity to
-	 * properly set this at the page level (Linux problem).
+	 * properly set this at the page level (Beep problem).
 	 * If shared is set, we cause a zero PID->TID load.
 	 * Many of these bits are software only.  Bits we don't set
 	 * here we (properly should) assume have the appropriate value.
@@ -505,7 +505,7 @@ label:
 	beq	2f			/* Bail if no table */
 
 	rlwimi	r12, r10, 22, 20, 29	/* Compute PTE address */
-	lwz	r11, 0(r12)		/* Get Linux PTE */
+	lwz	r11, 0(r12)		/* Get Beep PTE */
 	andi.	r9, r11, _PAGE_PRESENT
 	beq	5f
 
@@ -605,7 +605,7 @@ label:
 	beq	2f			/* Bail if no table */
 
 	rlwimi	r12, r10, 22, 20, 29	/* Compute PTE address */
-	lwz	r11, 0(r12)		/* Get Linux PTE */
+	lwz	r11, 0(r12)		/* Get Beep PTE */
 	andi.	r9, r11, _PAGE_PRESENT
 	beq	5f
 
@@ -759,7 +759,7 @@ DataAccess:
 	 * exception space :-).  Both the instruction and data TLB
 	 * miss get to this point to load the TLB.
 	 * 	r10 - TLB_TAG value
-	 * 	r11 - Linux PTE
+	 * 	r11 - Beep PTE
 	 *	r12, r9 - available to use
 	 *	PID - loaded with proper value when we get here
 	 *	Upon exit, we reload everything and RFI.

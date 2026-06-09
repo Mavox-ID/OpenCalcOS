@@ -1,5 +1,5 @@
 /*
- *  linux/include/asm-h8300/traps.h
+ *  beep/include/asm-h8300/traps.h
  *
  *  Copyright (C) 2003 Yoshinori Sato <ysato@users.sourceforge.jp>
  *

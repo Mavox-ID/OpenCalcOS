@@ -12,18 +12,18 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/completion.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/completion.h>
 
-#include <linux/mfd/da9055/core.h>
-#include <linux/mfd/da9055/reg.h>
+#include <beep/mfd/da9055/core.h>
+#include <beep/mfd/da9055/reg.h>
 
 #define DA9055_ADCIN_DIV	102
 #define DA9055_VSYS_DIV	85

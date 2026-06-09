@@ -4,12 +4,12 @@
  * Copyright (C) 1996 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/seq_file.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/threads.h>
+#include <beep/seq_file.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/threads.h>
 
 #include <asm/spitfire.h>
 #include <asm/pgtable.h>

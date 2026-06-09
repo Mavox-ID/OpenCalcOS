@@ -1,4 +1,4 @@
-/*   -*- linux-c -*-
+/*   -*- beep-c -*-
  *   include/asm-blackfin/ipipe.h
  *
  *   Copyright (C) 2002-2007 Philippe Gerum.
@@ -24,15 +24,15 @@
 
 #ifdef CONFIG_IPIPE
 
-#include <linux/cpumask.h>
-#include <linux/list.h>
-#include <linux/threads.h>
-#include <linux/irq.h>
-#include <linux/ipipe_percpu.h>
+#include <beep/cpumask.h>
+#include <beep/list.h>
+#include <beep/threads.h>
+#include <beep/irq.h>
+#include <beep/ipipe_percpu.h>
 #include <asm/ptrace.h>
 #include <asm/irq.h>
 #include <asm/bitops.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/traps.h>
 #include <asm/bitsperlong.h>
 

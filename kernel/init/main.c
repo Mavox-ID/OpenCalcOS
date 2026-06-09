@@ -1,5 +1,5 @@
 /*
- *  linux/init/main.c
+ *  beep/init/main.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -9,67 +9,67 @@
  *  Simplified starting of init:  Michael A. Griffith <grif@acm.org> 
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
-#include <linux/stackprotector.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/bootmem.h>
-#include <linux/acpi.h>
-#include <linux/tty.h>
-#include <linux/percpu.h>
-#include <linux/kmod.h>
-#include <linux/vmalloc.h>
-#include <linux/kernel_stat.h>
-#include <linux/start_kernel.h>
-#include <linux/security.h>
-#include <linux/smp.h>
-#include <linux/profile.h>
-#include <linux/rcupdate.h>
-#include <linux/moduleparam.h>
-#include <linux/kallsyms.h>
-#include <linux/writeback.h>
-#include <linux/cpu.h>
-#include <linux/cpuset.h>
-#include <linux/cgroup.h>
-#include <linux/efi.h>
-#include <linux/tick.h>
-#include <linux/interrupt.h>
-#include <linux/taskstats_kern.h>
-#include <linux/delayacct.h>
-#include <linux/unistd.h>
-#include <linux/rmap.h>
-#include <linux/mempolicy.h>
-#include <linux/key.h>
-#include <linux/buffer_head.h>
-#include <linux/page_cgroup.h>
-#include <linux/debug_locks.h>
-#include <linux/debugobjects.h>
-#include <linux/lockdep.h>
-#include <linux/kmemleak.h>
-#include <linux/pid_namespace.h>
-#include <linux/device.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/idr.h>
-#include <linux/kgdb.h>
-#include <linux/ftrace.h>
-#include <linux/async.h>
-#include <linux/kmemcheck.h>
-#include <linux/sfi.h>
-#include <linux/shmem_fs.h>
-#include <linux/slab.h>
-#include <linux/perf_event.h>
-#include <linux/file.h>
-#include <linux/ptrace.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/kernel.h>
+#include <beep/syscalls.h>
+#include <beep/stackprotector.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/initrd.h>
+#include <beep/bootmem.h>
+#include <beep/acpi.h>
+#include <beep/tty.h>
+#include <beep/percpu.h>
+#include <beep/kmod.h>
+#include <beep/vmalloc.h>
+#include <beep/kernel_stat.h>
+#include <beep/start_kernel.h>
+#include <beep/security.h>
+#include <beep/smp.h>
+#include <beep/profile.h>
+#include <beep/rcupdate.h>
+#include <beep/moduleparam.h>
+#include <beep/kallsyms.h>
+#include <beep/writeback.h>
+#include <beep/cpu.h>
+#include <beep/cpuset.h>
+#include <beep/cgroup.h>
+#include <beep/efi.h>
+#include <beep/tick.h>
+#include <beep/interrupt.h>
+#include <beep/taskstats_kern.h>
+#include <beep/delayacct.h>
+#include <beep/unistd.h>
+#include <beep/rmap.h>
+#include <beep/mempolicy.h>
+#include <beep/key.h>
+#include <beep/buffer_head.h>
+#include <beep/page_cgroup.h>
+#include <beep/debug_locks.h>
+#include <beep/debugobjects.h>
+#include <beep/lockdep.h>
+#include <beep/kmemleak.h>
+#include <beep/pid_namespace.h>
+#include <beep/device.h>
+#include <beep/kthread.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
+#include <beep/idr.h>
+#include <beep/kgdb.h>
+#include <beep/ftrace.h>
+#include <beep/async.h>
+#include <beep/kmemcheck.h>
+#include <beep/sfi.h>
+#include <beep/shmem_fs.h>
+#include <beep/slab.h>
+#include <beep/perf_event.h>
+#include <beep/file.h>
+#include <beep/ptrace.h>
 
 #include <asm/io.h>
 #include <asm/bugs.h>
@@ -150,7 +150,7 @@ static int __init set_reset_devices(char *str)
 __setup("reset_devices", set_reset_devices);
 
 static const char * argv_init[MAX_INIT_ARGS+2] = { "init", NULL, };
-const char * envp_init[MAX_INIT_ENVS+2] = { "HOME=/", "TERM=linux", NULL, };
+const char * envp_init[MAX_INIT_ENVS+2] = { "HOME=/", "TERM=beep", NULL, };
 static const char *panic_later, *panic_param;
 
 extern const struct obs_kernel_param __setup_start[], __setup_end[];
@@ -495,7 +495,7 @@ asmlinkage void __init start_kernel(void)
 	tick_init();
 	boot_cpu_init();
 	page_address_init();
-	printk(KERN_NOTICE "%s", linux_banner);
+	printk(KERN_NOTICE "%s", beep_banner);
 	setup_arch(&command_line);
 	mm_init_owner(&init_mm, &init_task);
 	mm_init_cpumask(&init_mm);
@@ -731,7 +731,7 @@ static initcall_t *initcall_levels[] __initdata = {
 	__initcall_end,
 };
 
-/* Keep these in sync with initcalls in include/linux/init.h */
+/* Keep these in sync with initcalls in include/beep/init.h */
 static char *initcall_level_names[] __initdata = {
 	"early",
 	"core",
@@ -842,7 +842,7 @@ static int __ref kernel_init(void *unused)
 		return 0;
 
 	panic("No init found.  Try passing init= option to kernel. "
-	      "See Linux Documentation/init.txt for guidance.");
+	      "See Beep Documentation/init.txt for guidance.");
 }
 
 static noinline void __init kernel_init_freeable(void)

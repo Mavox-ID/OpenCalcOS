@@ -1,9 +1,9 @@
 #ifndef _ASM_X86_ALTERNATIVE_H
 #define _ASM_X86_ALTERNATIVE_H
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/stringify.h>
+#include <beep/types.h>
+#include <beep/stddef.h>
+#include <beep/stringify.h>
 #include <asm/asm.h>
 
 /*

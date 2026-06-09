@@ -10,7 +10,7 @@
 #ifndef _MACH_DAVINCI_CDCE949_H
 #define _MACH_DAVINCI_CDCE949_H
 
-#include <linux/clk.h>
+#include <beep/clk.h>
 
 #include <mach/clock.h>
 

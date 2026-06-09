@@ -8,8 +8,8 @@
  *  option) any later version.
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/i8259.h>

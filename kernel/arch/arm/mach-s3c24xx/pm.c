@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-s3c24xx/pm.c
+/* beep/arch/arm/plat-s3c24xx/pm.c
  *
  * Copyright (c) 2004-2006 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
@@ -26,14 +26,14 @@
  * Thanks to Dimitry Andric for debugging
 */
 
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/serial_core.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/suspend.h>
+#include <beep/errno.h>
+#include <beep/time.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/serial_core.h>
+#include <beep/io.h>
 
 #include <plat/regs-serial.h>
 #include <mach/regs-clock.h>

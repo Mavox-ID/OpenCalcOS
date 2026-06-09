@@ -26,12 +26,12 @@
  * the Free Software Foundation; version 2 of the License.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
 
 /* The MAX6875 can only read/write 16 bytes at a time */
 #define SLICE_SIZE			16

@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/kyro/fbdev.c
+ *  beep/drivers/video/kyro/fbdev.c
  *
  *  Copyright (C) 2002 STMicroelectronics
  *  Copyright (C) 2003, 2004 Paul Mundt
@@ -9,19 +9,19 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/ioctl.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/ioctl.h>
+#include <beep/init.h>
+#include <beep/pci.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 #ifdef CONFIG_MTRR
 #include <asm/mtrr.h>
 #endif
@@ -806,5 +806,5 @@ module_init(kyrofb_init);
 module_exit(kyrofb_exit);
 #endif
 
-MODULE_AUTHOR("STMicroelectronics; Paul Mundt <lethal@linux-sh.org>");
+MODULE_AUTHOR("STMicroelectronics; Paul Mundt <lethal@beep-sh.org>");
 MODULE_LICENSE("GPL");

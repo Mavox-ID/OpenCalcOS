@@ -1,5 +1,5 @@
-#include <linux/sysctl.h>
-#include <linux/slab.h>
+#include <beep/sysctl.h>
+#include <beep/slab.h>
 #include <net/net_namespace.h>
 #include <net/xfrm.h>
 

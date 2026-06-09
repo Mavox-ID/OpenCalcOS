@@ -5,8 +5,8 @@
  * Copyright (C) 1999  Niibe Yutaka
  * Copyright (C) 2000, 2001  Paolo Alberelli
  */
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/types.h>
 #include <asm-generic/swab.h>
 
 static inline __attribute_const__ __u32 __arch_swab32(__u32 x)

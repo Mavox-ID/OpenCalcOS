@@ -29,20 +29,20 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/stddef.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/of_i2c.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/stddef.h>
+#include <beep/i2c.h>
+#include <beep/io.h>
+#include <beep/dma-mapping.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
+#include <beep/of_i2c.h>
 #include <sysdev/fsl_soc.h>
 #include <asm/cpm.h>
 
@@ -502,7 +502,7 @@ static int cpm_i2c_setup(struct cpm_i2c *cpm)
 	}
 	cpm->cp_command = *data;
 
-	data = of_get_property(ofdev->dev.of_node, "linux,i2c-class", &len);
+	data = of_get_property(ofdev->dev.of_node, "beep,i2c-class", &len);
 	if (data && len == 4)
 		cpm->adap.class = *data;
 
@@ -661,7 +661,7 @@ static int cpm_i2c_probe(struct platform_device *ofdev)
 
 	/* register new adapter to i2c module... */
 
-	data = of_get_property(ofdev->dev.of_node, "linux,i2c-index", &len);
+	data = of_get_property(ofdev->dev.of_node, "beep,i2c-index", &len);
 	cpm->adap.nr = (data && len == 4) ? be32_to_cpup(data) : -1;
 	result = i2c_add_numbered_adapter(&cpm->adap);
 

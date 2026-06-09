@@ -1,8 +1,8 @@
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
+#include <beep/compiler.h>
+#include <beep/module.h>
+#include <beep/highmem.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
 #include <asm/fixmap.h>
 #include <asm/tlbflush.h>
 

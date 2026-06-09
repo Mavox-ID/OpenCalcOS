@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/amiga/cia.c - CIA support
+ *  beep/arch/m68k/amiga/cia.c - CIA support
  *
  *  Copyright (C) 1996 Roman Zippel
  *
@@ -10,14 +10,14 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/kernel_stat.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/kernel_stat.h>
+#include <beep/init.h>
+#include <beep/seq_file.h>
+#include <beep/interrupt.h>
 
 #include <asm/irq.h>
 #include <asm/amigahw.h>

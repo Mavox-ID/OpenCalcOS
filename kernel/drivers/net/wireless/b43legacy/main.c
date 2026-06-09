@@ -29,17 +29,17 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/firmware.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
-#include <linux/skbuff.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/if_arp.h>
+#include <beep/etherdevice.h>
+#include <beep/firmware.h>
+#include <beep/workqueue.h>
+#include <beep/sched.h>
+#include <beep/skbuff.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
 #include <net/dst.h>
 #include <asm/unaligned.h>
 

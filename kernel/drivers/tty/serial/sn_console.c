@@ -37,18 +37,18 @@
  * http://oss.sgi.com/projects/GenInfo/NoticeExplan
  */
 
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/console.h>
-#include <linux/module.h>
-#include <linux/sysrq.h>
-#include <linux/circ_buf.h>
-#include <linux/serial_reg.h>
-#include <linux/delay.h> /* for mdelay */
-#include <linux/miscdevice.h>
-#include <linux/serial_core.h>
+#include <beep/interrupt.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial.h>
+#include <beep/console.h>
+#include <beep/module.h>
+#include <beep/sysrq.h>
+#include <beep/circ_buf.h>
+#include <beep/serial_reg.h>
+#include <beep/delay.h> /* for mdelay */
+#include <beep/miscdevice.h>
+#include <beep/serial_core.h>
 
 #include <asm/io.h>
 #include <asm/sn/simulator.h>

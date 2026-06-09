@@ -17,17 +17,17 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/time.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/time.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/clockchips.h>
+#include <beep/clocksource.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
 
 #include <asm/mach/time.h>
 #include <asm/smp_twd.h>

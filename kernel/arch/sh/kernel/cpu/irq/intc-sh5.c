@@ -14,12 +14,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/bitops.h>
 #include <cpu/irq.h>
 #include <asm/page.h>
 

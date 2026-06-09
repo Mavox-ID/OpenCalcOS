@@ -1,5 +1,5 @@
 .text
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/segment.h>
 #include <asm/pgtable_types.h>
 #include <asm/page_types.h>

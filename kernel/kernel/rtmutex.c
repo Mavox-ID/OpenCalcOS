@@ -10,10 +10,10 @@
  *
  *  See Documentation/rt-mutex-design.txt for details.
  */
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
+#include <beep/spinlock.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
 
 #include "rtmutex_common.h"
 

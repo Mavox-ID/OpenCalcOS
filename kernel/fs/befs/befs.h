@@ -5,8 +5,8 @@
  * Copyright (C) 1999 Makoto Kato (m_kato@ga2.so-net.ne.jp)
  */
 
-#ifndef _LINUX_BEFS_H
-#define _LINUX_BEFS_H
+#ifndef _BEEP_BEFS_H
+#define _BEEP_BEFS_H
 
 #include "befs_fs_types.h"
 
@@ -153,4 +153,4 @@ befs_brun_size(struct super_block *sb, befs_block_run run)
 
 #include "endian.h"
 
-#endif				/* _LINUX_BEFS_H */
+#endif				/* _BEEP_BEFS_H */

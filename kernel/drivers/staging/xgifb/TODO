@@ -8,7 +8,7 @@ TODO:
 - sort out dup ids with SiS driver
 - remove useless/wrong/unused #ifdef/code/...
 - fix printk usages
-- get rid of non-linux related stuff
+- get rid of non-beep related stuff
 
 Please send patches to:
 Arnaud Patard <arnaud.patard@rtp-net.org>

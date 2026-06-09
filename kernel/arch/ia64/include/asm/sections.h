@@ -6,8 +6,8 @@
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
 
-#include <linux/elf.h>
-#include <linux/uaccess.h>
+#include <beep/elf.h>
+#include <beep/uaccess.h>
 #include <asm-generic/sections.h>
 
 extern char __per_cpu_start[], __per_cpu_end[], __phys_per_cpu_start[];

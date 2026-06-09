@@ -5,9 +5,9 @@
  *
  * Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
-#include <linux/moduleloader.h>
-#include <linux/netdevice.h>
-#include <linux/filter.h>
+#include <beep/moduleloader.h>
+#include <beep/netdevice.h>
+#include <beep/filter.h>
 #include <asm/cacheflush.h>
 #include <asm/processor.h>
 #include <asm/facility.h>

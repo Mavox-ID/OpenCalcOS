@@ -29,22 +29,22 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/spinlock.h>
-#include <linux/poll.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
+#include <beep/spinlock.h>
+#include <beep/poll.h>
+#include <beep/miscdevice.h>
+#include <beep/slab.h>
 
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 
-#include <linux/vgaarb.h>
+#include <beep/vgaarb.h>
 
 static void vga_arbiter_notify_clients(void);
 /*

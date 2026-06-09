@@ -81,7 +81,7 @@
 #define IFNAMSIZ 16
 #endif
 
-/* Taken from linux/sockios.h */
+/* Taken from beep/sockios.h */
 #define SIOCSIFNAME  0x8923  /* set interface name */
 
 /* Octets in one Ethernet addr, from <linux/if_ether.h> */

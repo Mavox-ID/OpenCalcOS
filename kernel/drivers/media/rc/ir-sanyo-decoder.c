@@ -21,8 +21,8 @@
  * Information for this protocol is available at the Sanyo LC7461 datasheet.
  */
 
-#include <linux/module.h>
-#include <linux/bitrev.h>
+#include <beep/module.h>
+#include <beep/bitrev.h>
 #include "rc-core-priv.h"
 
 #define SANYO_NBITS		(13+13+8+8)

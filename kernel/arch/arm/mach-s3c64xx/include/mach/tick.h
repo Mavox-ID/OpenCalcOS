@@ -1,8 +1,8 @@
-/* linux/arch/arm/mach-s3c6400/include/mach/tick.h
+/* beep/arch/arm/mach-s3c6400/include/mach/tick.h
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C64XX - Timer tick support definitions

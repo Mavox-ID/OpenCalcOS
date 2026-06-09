@@ -16,15 +16,15 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <beep/clk.h>
+#include <beep/device.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/of_platform.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/regmap.h>
+#include <beep/slab.h>
 #include <mach/clk.h>
 #include <sound/soc.h>
 #include "tegra30_ahub.h"

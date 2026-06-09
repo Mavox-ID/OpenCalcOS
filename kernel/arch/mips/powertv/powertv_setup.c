@@ -16,17 +16,17 @@
  *  with this program; if not, write to the Free Software Foundation, Inc.,
  *  59 Temple Place - Suite 330, Boston MA 02111-1307, USA.
  */
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/screen_info.h>
-#include <linux/notifier.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/ctype.h>
-#include <linux/cpu.h>
-#include <linux/time.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/screen_info.h>
+#include <beep/notifier.h>
+#include <beep/etherdevice.h>
+#include <beep/if_ether.h>
+#include <beep/ctype.h>
+#include <beep/cpu.h>
+#include <beep/time.h>
 
 #include <asm/bootinfo.h>
 #include <asm/irq.h>

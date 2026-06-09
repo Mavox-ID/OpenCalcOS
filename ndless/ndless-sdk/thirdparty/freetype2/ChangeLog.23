@@ -2285,7 +2285,7 @@
 	* src/raster/ftraster.c (Set_High_Precision): Add two more bits to
 	the precision.  This corrects rendering of some small glyphs, for
 	example, glyph `xi' in verdana.ttf at 13 ppem.  Testing with ftbench
-	on my GNU/Linux box I don't see a performance degradation.
+	on my GNU/Beep box I don't see a performance degradation.
 
 2009-06-08  Michael Zucchi  <notzed@gmail.com>
 
@@ -7840,7 +7840,7 @@
 	* src/base/ftobjs.c (load_face_in_embedded_rfork): Replace
 	`FT_Stream_Close' by `FT_Stream_Free' to fix memory leak.
 
-	* src/base/ftrfork.c (raccess_guess_linux_double_from_file_name):
+	* src/base/ftrfork.c (raccess_guess_beep_double_from_file_name):
 	Replace `FT_Stream_Close' by `FT_Stream_Free' to fix memory leak.
 
 2006-05-19  suzuki toshiya  <mpsuzuki@hiroshima-u.ac.jp>

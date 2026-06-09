@@ -9,11 +9,11 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/lglock.h>
+#include <beep/lglock.h>
 
 struct super_block;
 struct file_system_type;
-struct linux_binprm;
+struct beep_binprm;
 struct path;
 struct mount;
 

@@ -6,16 +6,16 @@
  * under the terms of the GNU General Public License version 2 as published by
  * the Free Software Foundation.
  */
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <beep/err.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
 
-#include <linux/iio/iio.h>
+#include <beep/iio/iio.h>
 #include "iio_core.h"
-#include <linux/iio/machine.h>
-#include <linux/iio/driver.h>
-#include <linux/iio/consumer.h>
+#include <beep/iio/machine.h>
+#include <beep/iio/driver.h>
+#include <beep/iio/consumer.h>
 
 struct iio_map_internal {
 	struct iio_dev *indio_dev;

@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5pc100/mach-smdkc100.c
+/* beep/arch/arm/mach-s5pc100/mach-smdkc100.c
  *
  * Copyright 2009 Samsung Electronics Co.
  * Author: Byungho Min <bhmin@samsung.com>
@@ -9,21 +9,21 @@
  *
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/pwm_backlight.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/serial_core.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/fb.h>
+#include <beep/delay.h>
+#include <beep/input.h>
+#include <beep/pwm_backlight.h>
 
 #include <asm/hardware/vic.h>
 #include <asm/mach/arch.h>
@@ -45,12 +45,12 @@
 #include <plat/devs.h>
 #include <plat/cpu.h>
 #include <plat/fb.h>
-#include <linux/platform_data/i2c-s3c2410.h>
-#include <linux/platform_data/ata-samsung_cf.h>
+#include <beep/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/ata-samsung_cf.h>
 #include <plat/adc.h>
 #include <plat/keypad.h>
-#include <linux/platform_data/touchscreen-s3c2410.h>
-#include <linux/platform_data/asoc-s3c.h>
+#include <beep/platform_data/touchscreen-s3c2410.h>
+#include <beep/platform_data/asoc-s3c.h>
 #include <plat/backlight.h>
 
 #include "common.h"

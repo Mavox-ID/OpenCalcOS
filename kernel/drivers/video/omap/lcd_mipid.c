@@ -18,14 +18,14 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/spi/spi.h>
+#include <beep/module.h>
 
-#include <linux/platform_data/lcd-mipid.h>
+#include <beep/platform_data/lcd-mipid.h>
 
 #include "omapfb.h"
 

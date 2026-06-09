@@ -19,12 +19,12 @@
  * General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/stop_machine.h>
-#include <linux/stringify.h>
+#include <beep/kernel.h>
+#include <beep/kprobes.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/stop_machine.h>
+#include <beep/stringify.h>
 #include <asm/traps.h>
 #include <asm/cacheflush.h>
 

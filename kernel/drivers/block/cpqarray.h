@@ -26,10 +26,10 @@
 #define CPQARRAY_H
 
 #ifdef __KERNEL__
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/timer.h>
+#include <beep/blkdev.h>
+#include <beep/slab.h>
+#include <beep/proc_fs.h>
+#include <beep/timer.h>
 #endif
 
 #include "ida_cmd.h"

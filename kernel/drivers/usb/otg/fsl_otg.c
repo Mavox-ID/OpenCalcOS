@@ -21,25 +21,25 @@
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/timer.h>
-#include <linux/usb.h>
-#include <linux/device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/workqueue.h>
-#include <linux/time.h>
-#include <linux/fsl_devices.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/proc_fs.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/timer.h>
+#include <beep/usb.h>
+#include <beep/device.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
+#include <beep/workqueue.h>
+#include <beep/time.h>
+#include <beep/fsl_devices.h>
+#include <beep/platform_device.h>
+#include <beep/uaccess.h>
 
 #include <asm/unaligned.h>
 

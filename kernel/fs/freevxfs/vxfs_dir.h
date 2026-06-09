@@ -45,7 +45,7 @@
  * a hash for speeding up directory search (lookup).
  *
  * The hash may be empty and in fact we do not use it all in the
- * Linux driver for now.
+ * Beep driver for now.
  */
 struct vxfs_dirblk {
 	u_int16_t	d_free;		/* free space in dirblock */

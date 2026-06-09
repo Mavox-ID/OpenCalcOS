@@ -10,9 +10,9 @@
  * option) any later version.
  */
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/rio.h>
+#include <beep/device.h>
+#include <beep/list.h>
+#include <beep/rio.h>
 
 #define RIO_MAX_CHK_RETRY	3
 

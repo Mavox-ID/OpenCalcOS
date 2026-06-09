@@ -29,7 +29,7 @@
 #define LUA_WIN
 #endif
 
-#if defined(LUA_USE_LINUX)
+#if defined(LUA_USE_BEEP)
 #define LUA_USE_POSIX
 #define LUA_USE_DLOPEN		/* needs an extra library: -ldl */
 #define LUA_USE_READLINE	/* needs some extra libraries */

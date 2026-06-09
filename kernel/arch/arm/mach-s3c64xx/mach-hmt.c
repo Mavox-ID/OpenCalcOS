@@ -8,19 +8,19 @@
  *
 */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/fb.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/leds.h>
-#include <linux/pwm_backlight.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/serial_core.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/i2c.h>
+#include <beep/fb.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/leds.h>
+#include <beep/pwm_backlight.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -35,9 +35,9 @@
 #include <asm/mach-types.h>
 
 #include <plat/regs-serial.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 #include <plat/fb.h>
-#include <linux/platform_data/mtd-nand-s3c2410.h>
+#include <beep/platform_data/mtd-nand-s3c2410.h>
 
 #include <plat/clock.h>
 #include <plat/devs.h>

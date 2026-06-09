@@ -19,7 +19,7 @@
  *      v0.1 - Initial release
  *      v0.2 - Hack to get around fake event 28's. (Bryan W. Headley)
  *      v0.3 - Make URB dynamic (Bryan W. Headley, Jun-8-2002)
- *             Released to Linux 2.4.19 and 2.5.x
+ *             Released to Beep 2.4.19 and 2.5.x
  *      v0.4 - Rewrote substantial portions of the code to deal with
  *             corrected control sequences, timing, dynamic configuration,
  *             support of 6000U - 12000U, procfs, and macro key support
@@ -70,12 +70,12 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/usb/input.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/usb/input.h>
 #include <asm/uaccess.h>
 #include <asm/unaligned.h>
 
@@ -84,7 +84,7 @@
  */
 #define DRIVER_VERSION "v2.3 (May 2, 2007)"
 #define DRIVER_AUTHOR  "Bryan W. Headley/Chris Atenasio/Cedric Brun/Rene van Paassen"
-#define DRIVER_DESC    "Aiptek HyperPen USB Tablet Driver (Linux 2.6.x)"
+#define DRIVER_DESC    "Aiptek HyperPen USB Tablet Driver (Beep 2.6.x)"
 
 /*
  * Aiptek status packet:
@@ -402,7 +402,7 @@ static const char *map_val_to_str(const struct aiptek_map *map, int val)
  * The documentation for each is in the body of the function.
  *
  * The tablet reports on several attributes per invocation of
- * aiptek_irq. Because the Linux Input Event system allows the
+ * aiptek_irq. Because the Beep Input Event system allows the
  * transmission of ONE attribute per input_report_xxx() call,
  * collation has to be done on the other end to reconstitute
  * a complete tablet report. Further, the number of Input Event reports
@@ -427,7 +427,7 @@ static const char *map_val_to_str(const struct aiptek_map *map, int val)
  * another 'by convention' behavior, the documentation for which
  * would be spread between two (or more) pieces of software.
  *
- * EV_MSC usage was terminated for this purpose in Linux 2.5.x, and
+ * EV_MSC usage was terminated for this purpose in Beep 2.5.x, and
  * replaced with the input_sync() method (which emits EV_SYN.)
  */
 
@@ -866,7 +866,7 @@ static void aiptek_close(struct input_dev *inputdev)
 }
 
 /***********************************************************************
- * aiptek_set_report and aiptek_get_report() are borrowed from Linux 2.4.x,
+ * aiptek_set_report and aiptek_get_report() are borrowed from Beep 2.4.x,
  * where they were known as usb_set_report and usb_get_report.
  */
 static int

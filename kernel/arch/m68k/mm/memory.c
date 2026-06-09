@@ -1,17 +1,17 @@
 /*
- *  linux/arch/m68k/mm/memory.c
+ *  beep/arch/m68k/mm/memory.c
  *
  *  Copyright (C) 1995  Hamish Macdonald
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/pagemap.h>
+#include <beep/gfp.h>
 
 #include <asm/setup.h>
 #include <asm/segment.h>

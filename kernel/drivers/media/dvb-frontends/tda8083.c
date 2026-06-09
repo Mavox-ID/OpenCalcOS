@@ -24,12 +24,12 @@
 
 */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/jiffies.h>
 #include "dvb_frontend.h"
 #include "tda8083.h"
 

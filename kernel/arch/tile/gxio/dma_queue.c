@@ -12,9 +12,9 @@
  *   more details.
  */
 
-#include <linux/io.h>
-#include <linux/atomic.h>
-#include <linux/module.h>
+#include <beep/io.h>
+#include <beep/atomic.h>
+#include <beep/module.h>
 #include <gxio/dma_queue.h>
 
 /* Wait for a memory read to complete. */

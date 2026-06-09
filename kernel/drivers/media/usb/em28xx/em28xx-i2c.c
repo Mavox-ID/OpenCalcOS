@@ -21,10 +21,10 @@
    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/usb.h>
-#include <linux/i2c.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/usb.h>
+#include <beep/i2c.h>
 
 #include "em28xx.h"
 #include "tuner-xc2028.h"
@@ -300,7 +300,7 @@ err:
 	return rc;
 }
 
-/* based on linux/sunrpc/svcauth.h and linux/hash.h
+/* based on beep/sunrpc/svcauth.h and beep/hash.h
  * The original hash function returns a different value, if arch is x86_64
  *  or i386.
  */

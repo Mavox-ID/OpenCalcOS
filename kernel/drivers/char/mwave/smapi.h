@@ -46,8 +46,8 @@
 *	First release to the public
 */
 
-#ifndef _LINUX_SMAPI_H
-#define _LINUX_SMAPI_H
+#ifndef _BEEP_SMAPI_H
+#define _BEEP_SMAPI_H
 
 #define TRUE 1
 #define FALSE 0

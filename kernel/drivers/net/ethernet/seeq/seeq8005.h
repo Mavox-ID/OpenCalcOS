@@ -6,7 +6,7 @@
  * This file is distributed under GPL.
  *
  * This style and layout of this file is also copied
- * from many of the other linux network device drivers.
+ * from many of the other beep network device drivers.
  */
 
 /* The number of low I/O ports used by the ethercard. */

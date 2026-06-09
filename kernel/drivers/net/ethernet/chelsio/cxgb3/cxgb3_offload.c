@@ -30,17 +30,17 @@
  * SOFTWARE.
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 #include <net/neighbour.h>
-#include <linux/notifier.h>
-#include <linux/atomic.h>
-#include <linux/proc_fs.h>
-#include <linux/if_vlan.h>
+#include <beep/notifier.h>
+#include <beep/atomic.h>
+#include <beep/proc_fs.h>
+#include <beep/if_vlan.h>
 #include <net/netevent.h>
-#include <linux/highmem.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
+#include <beep/highmem.h>
+#include <beep/vmalloc.h>
+#include <beep/export.h>
 
 #include "common.h"
 #include "regs.h"

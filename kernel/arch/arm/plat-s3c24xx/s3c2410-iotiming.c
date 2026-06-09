@@ -1,7 +1,7 @@
-/* linux/arch/arm/plat-s3c24xx/s3c2410-iotiming.c
+/* beep/arch/arm/plat-s3c24xx/s3c2410-iotiming.c
  *
  * Copyright (c) 2006-2009 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C24XX CPU Frequency scaling - IO timing for S3C2410/S3C2440/S3C2442
@@ -11,13 +11,13 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/cpufreq.h>
-#include <linux/seq_file.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/cpufreq.h>
+#include <beep/seq_file.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 #include <mach/map.h>
 #include <mach/regs-mem.h>

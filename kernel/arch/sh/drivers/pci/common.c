@@ -1,7 +1,7 @@
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/kernel.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/timer.h>
+#include <beep/kernel.h>
 
 /*
  * These functions are used early on before PCI scanning is done

@@ -1,7 +1,7 @@
 /*
  * IO definitions for the Hexagon architecture
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -23,9 +23,9 @@
 
 #ifdef __KERNEL__
 
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/vmalloc.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/vmalloc.h>
 #include <asm/string.h>
 #include <asm/mem-layout.h>
 #include <asm/iomap.h>

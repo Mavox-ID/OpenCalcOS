@@ -36,7 +36,7 @@
  * contributors:
  * 	Daris A Nevil <dnevil@snmc.com>
  *      Nicolas Pitre <nico@fluxnic.net>
- *	Russell King <rmk@arm.linux.org.uk>
+ *	Russell King <rmk@arm.beep.org.uk>
  *
  * History:
  *   08/20/00  Arnaldo Melo       fix kfree(skb) in smc_hardware_send_packet
@@ -66,26 +66,26 @@ static const char version[] =
 #endif
 
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/crc32.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/workqueue.h>
-#include <linux/of.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/crc32.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/workqueue.h>
+#include <beep/of.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
 
 #include <asm/io.h>
 

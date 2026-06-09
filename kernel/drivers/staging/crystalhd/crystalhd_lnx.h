@@ -4,7 +4,7 @@
  *  Name: crystalhd_lnx . h
  *
  *  Description:
- *		BCM70012 Linux driver
+ *		BCM70012 Beep driver
  *
  *  HISTORY:
  *
@@ -27,25 +27,25 @@
 #ifndef _CRYSTALHD_LNX_H_
 #define _CRYSTALHD_LNX_H_
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pagemap.h>
-#include <linux/vmalloc.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/tty.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/pagemap.h>
+#include <beep/vmalloc.h>
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/irq.h>
 #include <asm/pgtable.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 
 #include "crystalhd.h"
 

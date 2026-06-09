@@ -19,7 +19,7 @@
  *
  * Authors: Dipankar Sarma <dipankar@in.ibm.com>
  *	    Manfred Spraul <manfred@colorfullife.com>
- *	    Paul E. McKenney <paulmck@linux.vnet.ibm.com> Hierarchical version
+ *	    Paul E. McKenney <paulmck@beep.vnet.ibm.com> Hierarchical version
  *
  * Based on the original work by Paul McKenney <paulmck@us.ibm.com>
  * and inputs from Rusty Russell, Andrea Arcangeli and Andi Kleen.
@@ -27,32 +27,32 @@
  * For detailed explanation of Read-Copy Update mechanism see -
  *	Documentation/RCU
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/rcupdate.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/nmi.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/export.h>
-#include <linux/completion.h>
-#include <linux/moduleparam.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/mutex.h>
-#include <linux/time.h>
-#include <linux/kernel_stat.h>
-#include <linux/wait.h>
-#include <linux/kthread.h>
-#include <linux/prefetch.h>
-#include <linux/delay.h>
-#include <linux/stop_machine.h>
-#include <linux/random.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/smp.h>
+#include <beep/rcupdate.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/nmi.h>
+#include <beep/atomic.h>
+#include <beep/bitops.h>
+#include <beep/export.h>
+#include <beep/completion.h>
+#include <beep/moduleparam.h>
+#include <beep/percpu.h>
+#include <beep/notifier.h>
+#include <beep/cpu.h>
+#include <beep/mutex.h>
+#include <beep/time.h>
+#include <beep/kernel_stat.h>
+#include <beep/wait.h>
+#include <beep/kthread.h>
+#include <beep/prefetch.h>
+#include <beep/delay.h>
+#include <beep/stop_machine.h>
+#include <beep/random.h>
 
 #include "rcutree.h"
 #include <trace/events/rcu.h>
@@ -587,7 +587,7 @@ void rcu_user_exit_after_irq(void)
  * idle mode, in other words, entering the mode in which read-side critical
  * sections can occur.
  *
- * Note that the Linux kernel is fully capable of entering an interrupt
+ * Note that the Beep kernel is fully capable of entering an interrupt
  * handler that it never exits, for example when doing upcalls to
  * user mode!  This code assumes that the idle loop never does upcalls to
  * user mode.  If your architecture does do upcalls from the idle loop (or

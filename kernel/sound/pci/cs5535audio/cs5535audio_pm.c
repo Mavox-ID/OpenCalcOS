@@ -18,9 +18,9 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/initval.h>

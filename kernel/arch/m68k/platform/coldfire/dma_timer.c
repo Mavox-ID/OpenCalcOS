@@ -6,8 +6,8 @@
  *
  */
 
-#include <linux/clocksource.h>
-#include <linux/io.h>
+#include <beep/clocksource.h>
+#include <beep/io.h>
 
 #include <asm/machdep.h>
 #include <asm/coldfire.h>

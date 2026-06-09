@@ -17,8 +17,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/init.h>
-#include <linux/highmem.h>
+#include <beep/init.h>
+#include <beep/highmem.h>
 #include <asm/mem-layout.h>
 #include <asm/spr-regs.h>
 #include <asm/mb-regs.h>
@@ -27,7 +27,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include <asm/kmap_types.h>
 #include <asm/pgtable.h>
 

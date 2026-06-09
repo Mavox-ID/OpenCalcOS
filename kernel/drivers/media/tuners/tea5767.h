@@ -17,7 +17,7 @@
 #ifndef __TEA5767_H__
 #define __TEA5767_H__
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 #include "dvb_frontend.h"
 
 enum tea5767_xtal {

@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for Beep.
  *
  * Copyright (c) 2003-2010 Chelsio Communications, Inc. All rights reserved.
  *
@@ -35,11 +35,11 @@
 #ifndef __CXGB4_OFLD_H
 #define __CXGB4_OFLD_H
 
-#include <linux/cache.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/inetdevice.h>
-#include <linux/atomic.h>
+#include <beep/cache.h>
+#include <beep/spinlock.h>
+#include <beep/skbuff.h>
+#include <beep/inetdevice.h>
+#include <beep/atomic.h>
 
 /* CPL message priority levels */
 enum {

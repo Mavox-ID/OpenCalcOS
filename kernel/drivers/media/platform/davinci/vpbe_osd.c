@@ -21,12 +21,12 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/slab.h>
 
 #include <mach/cputype.h>
 #include <mach/hardware.h>
@@ -36,7 +36,7 @@
 #include <media/davinci/vpbe_types.h>
 #include <media/davinci/vpbe_osd.h>
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include "vpbe_osd_regs.h"
 
 #define MODULE_NAME	VPBE_OSD_SUBDEV_NAME

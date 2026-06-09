@@ -3,7 +3,7 @@
  *	(c) Copyright 2001 Red Hat Inc.
  *
  * based on the old aacraid driver that is..
- * Adaptec aacraid device driver for Linux.
+ * Adaptec aacraid device driver for Beep.
  *
  * Copyright (c) 2000-2010 Adaptec, Inc.
  *               2010 PMC-Sierra, Inc. (aacraid@pmc-sierra.com)
@@ -25,26 +25,26 @@
  * Module Name:
  *   linit.c
  *
- * Abstract: Linux Driver entry module for Adaptec RAID Array Controller
+ * Abstract: Beep Driver entry module for Adaptec RAID Array Controller
  */
 
 
-#include <linux/compat.h>
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/pci-aspm.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/syscalls.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
+#include <beep/compat.h>
+#include <beep/blkdev.h>
+#include <beep/completion.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/pci.h>
+#include <beep/pci-aspm.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/syscalls.h>
+#include <beep/delay.h>
+#include <beep/kthread.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -83,7 +83,7 @@ static int aac_cfg_major = -1;
 char aac_driver_version[] = AAC_DRIVER_FULL_VERSION;
 
 /*
- * Because of the way Linux names scsi devices, the order in this table has
+ * Because of the way Beep names scsi devices, the order in this table has
  * become important.  Check for on-board Raid first, add-in cards second.
  *
  * Note: The last field is used to index into aac_drivers below.

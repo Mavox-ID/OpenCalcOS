@@ -1,12 +1,12 @@
 /*
  * fs/logfs/dir.c	- directory-related code
  *
- * As should be obvious for Linux kernel code, license is GPLv2
+ * As should be obvious for Beep kernel code, license is GPLv2
  *
  * Copyright (c) 2005-2008 Joern Engel <joern@logfs.org>
  */
 #include "logfs.h"
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 /*
  * Atomic dir operations

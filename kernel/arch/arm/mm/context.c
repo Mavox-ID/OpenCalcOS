@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/context.c
+ *  beep/arch/arm/mm/context.c
  *
  *  Copyright (C) 2002-2003 Deep Blue Solutions Ltd, all rights reserved.
  *  Copyright (C) 2012 ARM Limited
@@ -10,11 +10,11 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/percpu.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/percpu.h>
 
 #include <asm/mmu_context.h>
 #include <asm/smp_plat.h>

@@ -6,9 +6,9 @@
  *
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 #include <asm/dma.h>
 #include <asm/dmabrg.h>
 #include <asm/io.h>

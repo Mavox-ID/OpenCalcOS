@@ -16,7 +16,7 @@
  *  59 Temple Place - Suite 330, Boston MA 02111-1307, USA.
  *
  *  Nov 7, 2000
- *  Modification to allow integration with Linux kernel
+ *  Modification to allow integration with Beep kernel
  *
  *  Kevin D. Kissell, kevink@mips.com and Carsten Langgard, carstenl@mips.com
  *  Copyright (C) 2000 MIPS Technologies, Inc. All rights reserved.
@@ -25,11 +25,11 @@
 #define __ARCH_MIPS_MATH_EMU_IEEE754_H
 
 #include <asm/byteorder.h>
-#include <linux/types.h>
-#include <linux/sched.h>
+#include <beep/types.h>
+#include <beep/sched.h>
 
 /*
- * Not very pretty, but the Linux kernel's normal va_list definition
+ * Not very pretty, but the Beep kernel's normal va_list definition
  * does not allow it to be used as a structure element, as it is here.
  */
 #ifndef _STDARG_H

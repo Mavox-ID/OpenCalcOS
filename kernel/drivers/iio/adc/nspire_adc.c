@@ -6,13 +6,13 @@
  * Licensed under the GPLv2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/iio/iio.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/completion.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/iio/iio.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/completion.h>
 
 #define OFFSET_INT_RAW_STATUS	0x004
 #define OFFSET_INT_MASK		0x008

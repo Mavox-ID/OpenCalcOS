@@ -8,9 +8,9 @@
 #ifndef _BLACKFIN_DMA_H_
 #define _BLACKFIN_DMA_H_
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include <mach/dma.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/blackfin.h>
 #include <asm/page.h>
 #include <asm-generic/dma.h>

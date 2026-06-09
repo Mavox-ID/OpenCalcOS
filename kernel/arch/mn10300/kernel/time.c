@@ -9,16 +9,16 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/profile.h>
-#include <linux/cnt32_to_63.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/time.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/profile.h>
+#include <beep/cnt32_to_63.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
 #include <asm/irq.h>
 #include <asm/div64.h>
 #include <asm/processor.h>

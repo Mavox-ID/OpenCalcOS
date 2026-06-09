@@ -18,13 +18,13 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/parport.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/parport.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/rawmidi.h>

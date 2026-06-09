@@ -1,6 +1,6 @@
 /* arch/arm/mach-s3c2410/include/mach/h1940.h
  *
- * Copyright 2006 Ben Dooks <ben-linux@fluff.org>
+ * Copyright 2006 Ben Dooks <ben-beep@fluff.org>
  *
  * H1940 definitions
  *

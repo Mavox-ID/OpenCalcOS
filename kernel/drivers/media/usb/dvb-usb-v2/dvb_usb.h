@@ -22,8 +22,8 @@
 #ifndef DVB_USB_H
 #define DVB_USB_H
 
-#include <linux/usb/input.h>
-#include <linux/firmware.h>
+#include <beep/usb/input.h>
+#include <beep/firmware.h>
 #include <media/rc-core.h>
 
 #include "dvb_frontend.h"

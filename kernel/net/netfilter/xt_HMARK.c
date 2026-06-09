@@ -9,12 +9,12 @@
  * the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/icmp.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/icmp.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_HMARK.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_HMARK.h>
 
 #include <net/ip.h>
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
@@ -22,7 +22,7 @@
 #endif
 #if IS_ENABLED(CONFIG_IP6_NF_IPTABLES)
 #include <net/ipv6.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <beep/netfilter_ipv6/ip6_tables.h>
 #endif
 
 MODULE_LICENSE("GPL");

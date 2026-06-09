@@ -11,35 +11,35 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/hash.h>
-#include <linux/spinlock.h>
-#include <linux/syscalls.h>
-#include <linux/rbtree.h>
-#include <linux/wait.h>
-#include <linux/eventpoll.h>
-#include <linux/mount.h>
-#include <linux/bitops.h>
-#include <linux/mutex.h>
-#include <linux/anon_inodes.h>
-#include <linux/device.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/signal.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/poll.h>
+#include <beep/string.h>
+#include <beep/list.h>
+#include <beep/hash.h>
+#include <beep/spinlock.h>
+#include <beep/syscalls.h>
+#include <beep/rbtree.h>
+#include <beep/wait.h>
+#include <beep/eventpoll.h>
+#include <beep/mount.h>
+#include <beep/bitops.h>
+#include <beep/mutex.h>
+#include <beep/anon_inodes.h>
+#include <beep/device.h>
 #include <asm/uaccess.h>
 #include <asm/io.h>
 #include <asm/mman.h>
-#include <linux/atomic.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/atomic.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 
 /*
  * LOCKING:
@@ -280,7 +280,7 @@ static LIST_HEAD(tfile_check_list);
 
 #ifdef CONFIG_SYSCTL
 
-#include <linux/sysctl.h>
+#include <beep/sysctl.h>
 
 static long zero;
 static long long_max = LONG_MAX;
@@ -961,7 +961,7 @@ static int ep_poll_callback(wait_queue_t *wait, unsigned mode, int sync, void *k
 
 	/*
 	 * If we are transferring events to userspace, we can hold no locks
-	 * (because we're accessing user memory, and because of linux f_op->poll()
+	 * (because we're accessing user memory, and because of beep f_op->poll()
 	 * semantics). All the events that happen during that period of time are
 	 * chained in ep->ovflist and requeued later on.
 	 */

@@ -4,25 +4,25 @@
 #define MANUAL_PNP
 #undef  DO_TIMINGS
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #ifdef __KERNEL__
-#include <linux/string.h>
-#include <linux/fs.h>
+#include <beep/string.h>
+#include <beep/fs.h>
 #include <asm/dma.h>
 #include <asm/io.h>
 #include <asm/param.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/ioport.h>
 #include <asm/page.h>
-#include <linux/vmalloc.h>
+#include <beep/vmalloc.h>
 #include <asm/uaccess.h>
-#include <linux/poll.h>
-#include <linux/pci.h>
+#include <beep/poll.h>
+#include <beep/pci.h>
 #endif
 
-#include <linux/soundcard.h>
+#include <beep/soundcard.h>
 
 #define FALSE	0
 #define TRUE	1

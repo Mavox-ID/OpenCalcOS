@@ -7,18 +7,18 @@
  *	      Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/reboot.h>
-#include <linux/jiffies.h>
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/completion.h>
-#include <linux/platform_device.h>
+#include <beep/kernel_stat.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/timer.h>
+#include <beep/reboot.h>
+#include <beep/jiffies.h>
+#include <beep/init.h>
+#include <beep/suspend.h>
+#include <beep/completion.h>
+#include <beep/platform_device.h>
 #include <asm/types.h>
 #include <asm/irq.h>
 

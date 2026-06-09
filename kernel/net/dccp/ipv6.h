@@ -11,8 +11,8 @@
  *	published by the Free Software Foundation.
  */
 
-#include <linux/dccp.h>
-#include <linux/ipv6.h>
+#include <beep/dccp.h>
+#include <beep/ipv6.h>
 
 struct dccp6_sock {
 	struct dccp_sock  dccp;

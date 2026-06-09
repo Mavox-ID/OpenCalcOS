@@ -4,10 +4,10 @@
  */
 #define DEBUG
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/mm.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/mm.h>
 
 #include <asm/processor-flags.h>
 #include <asm/cpufeature.h>

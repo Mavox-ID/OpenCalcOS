@@ -21,9 +21,9 @@
  * "drm/gem: add functions to get/put pages" patch is merged..
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/shmem_fs.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/shmem_fs.h>
 
 #include <drm/drmP.h>
 

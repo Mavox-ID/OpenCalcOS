@@ -95,7 +95,7 @@ out_delete:
 
 /*
  * Constructor variant for modules (where we know from /proc/modules where
- * they are loaded) and for vmlinux, where only after we load all the
+ * they are loaded) and for vmbeep, where only after we load all the
  * symbols we'll know where it starts and ends.
  */
 struct map *map__new2(u64 start, struct dso *dso, enum map_type type)
@@ -184,7 +184,7 @@ int map__load(struct map *self, symbol_filter_t filter)
 	 * module ones.
 	 */
 	if (self->dso->kernel)
-		map__reloc_vmlinux(self);
+		map__reloc_vmbeep(self);
 
 	return 0;
 }
@@ -527,7 +527,7 @@ static u64 map__reloc_unmap_ip(struct map *map, u64 ip)
 	return ip - (s64)map->pgoff;
 }
 
-void map__reloc_vmlinux(struct map *self)
+void map__reloc_vmbeep(struct map *self)
 {
 	struct kmap *kmap = map__kmap(self);
 	s64 reloc;

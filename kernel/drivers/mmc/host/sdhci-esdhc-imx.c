@@ -11,21 +11,21 @@
  * the Free Software Foundation; either version 2 of the License.
  */
 
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sdio.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_data/mmc-esdhc-imx.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/mmc.h>
+#include <beep/mmc/sdio.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_gpio.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/platform_data/mmc-esdhc-imx.h>
 #include "sdhci-pltfm.h"
 #include "sdhci-esdhc.h"
 

@@ -19,22 +19,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/uaccess.h>
-#include <linux/watchdog.h>
+#include <beep/bitops.h>
+#include <beep/clk.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/fs.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/pm.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/timer.h>
+#include <beep/uaccess.h>
+#include <beep/watchdog.h>
 
 #define WDOG_CONTROL_REG_OFFSET		    0x00
 #define WDOG_CONTROL_REG_WDT_EN_MASK	    0x01

@@ -34,10 +34,10 @@
  * be incorporated into the next SCTP release.
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/crypto.h>
+#include <beep/scatterlist.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/auth.h>
 

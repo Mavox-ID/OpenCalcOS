@@ -7,16 +7,16 @@
  * published by the Free Software Foundation.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
-#include <linux/ip.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/in.h>
+#include <beep/ip.h>
 
-#include <linux/netfilter/xt_esp.h>
-#include <linux/netfilter/x_tables.h>
+#include <beep/netfilter/xt_esp.h>
+#include <beep/netfilter/x_tables.h>
 
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <beep/netfilter_ipv4/ip_tables.h>
+#include <beep/netfilter_ipv6/ip6_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Yon Uriarte <yon@astaro.de>");

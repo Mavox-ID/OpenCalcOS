@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-msm/devices.c
+/* beep/arch/arm/mach-msm/devices.c
  *
  * Copyright (C) 2008 Google, Inc.
  *
@@ -13,21 +13,21 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/clkdev.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/clkdev.h>
 
 #include <mach/irqs.h>
 #include <mach/msm_iomap.h>
 #include "devices.h"
 
 #include <asm/mach/flash.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
 
 #include "clock.h"
 #include "clock-pcom.h"
-#include <linux/platform_data/mmc-msm_sdcc.h>
+#include <beep/platform_data/mmc-msm_sdcc.h>
 
 static struct resource resources_uart1[] = {
 	{

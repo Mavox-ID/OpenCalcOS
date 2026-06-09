@@ -22,12 +22,12 @@
 
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
 #include <sound/core.h>
 #include "pmac.h"
 #include <sound/pcm_params.h>

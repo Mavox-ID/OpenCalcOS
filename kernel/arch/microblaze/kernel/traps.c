@@ -8,11 +8,11 @@
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/kallsyms.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/debug_locks.h>
+#include <beep/kernel.h>
+#include <beep/kallsyms.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/debug_locks.h>
 
 #include <asm/exceptions.h>
 #include <asm/unwind.h>

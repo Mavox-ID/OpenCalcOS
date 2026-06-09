@@ -13,20 +13,20 @@
 
 #include <video/da8xx-fb.h>
 
-#include <linux/platform_device.h>
-#include <linux/davinci_emac.h>
-#include <linux/spi/spi.h>
-#include <linux/platform_data/davinci_asp.h>
-#include <linux/videodev2.h>
+#include <beep/platform_device.h>
+#include <beep/davinci_emac.h>
+#include <beep/spi/spi.h>
+#include <beep/platform_data/davinci_asp.h>
+#include <beep/videodev2.h>
 
 #include <mach/serial.h>
 #include <mach/edma.h>
 #include <mach/pm.h>
-#include <linux/platform_data/i2c-davinci.h>
-#include <linux/platform_data/mmc-davinci.h>
-#include <linux/platform_data/usb-davinci.h>
-#include <linux/platform_data/spi-davinci.h>
-#include <linux/platform_data/uio_pruss.h>
+#include <beep/platform_data/i2c-davinci.h>
+#include <beep/platform_data/mmc-davinci.h>
+#include <beep/platform_data/usb-davinci.h>
+#include <beep/platform_data/spi-davinci.h>
+#include <beep/platform_data/uio_pruss.h>
 
 #include <media/davinci/vpif_types.h>
 

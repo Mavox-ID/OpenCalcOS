@@ -11,9 +11,9 @@
 
 /*
  * The following break codes are or were in use for specific purposes in
- * other MIPS operating systems.  Linux/MIPS doesn't use all of them.  The
+ * other MIPS operating systems.  Beep/MIPS doesn't use all of them.  The
  * unused ones are here as placeholders; we might encounter them in
- * non-Linux/MIPS object files or make use of them in the future.
+ * non-Beep/MIPS object files or make use of them in the future.
  */
 #define BRK_USERBP	0	/* User bp (used by debuggers) */
 #define BRK_KERNELBP	1	/* Break in the kernel */
@@ -25,7 +25,7 @@
 #define BRK_DIVZERO	7	/* Divide by zero check */
 #define BRK_RANGE	8	/* Range error check */
 #define BRK_STACKOVERFLOW 9	/* For Ada stackchecking */
-#define BRK_NORLD	10	/* No rld found - not used by Linux/MIPS */
+#define BRK_NORLD	10	/* No rld found - not used by Beep/MIPS */
 #define _BRK_THREADBP	11	/* For threads, user bp (used by debuggers) */
 #define BRK_BUG		512	/* Used by BUG() */
 #define BRK_KDB		513	/* Used in KDB_ENTER() */

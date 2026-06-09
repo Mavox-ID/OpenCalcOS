@@ -1,6 +1,6 @@
 #include "hisax_if.h"
 #include "hisax_isac.h"
-#include <linux/pci.h>
+#include <beep/pci.h>
 
 #define HSCX_BUFMAX	4096
 

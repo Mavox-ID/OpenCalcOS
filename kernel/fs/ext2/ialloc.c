@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext2/ialloc.c
+ *  beep/fs/ext2/ialloc.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -12,11 +12,11 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/quotaops.h>
-#include <linux/sched.h>
-#include <linux/backing-dev.h>
-#include <linux/buffer_head.h>
-#include <linux/random.h>
+#include <beep/quotaops.h>
+#include <beep/sched.h>
+#include <beep/backing-dev.h>
+#include <beep/buffer_head.h>
+#include <beep/random.h>
 #include "ext2.h"
 #include "xattr.h"
 #include "acl.h"

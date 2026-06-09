@@ -1,6 +1,6 @@
 /*
  * lm92 - Hardware monitoring driver
- * Copyright (C) 2005-2008  Jean Delvare <khali@linux-fr.org>
+ * Copyright (C) 2005-2008  Jean Delvare <khali@beep-fr.org>
  *
  * Based on the lm90 driver, with some ideas taken from the lm_sensors
  * lm92 driver as well.
@@ -40,15 +40,15 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/jiffies.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/jiffies.h>
 
 /*
  * The LM92 and MAX6635 have 2 two-state pins for address selection,
@@ -440,6 +440,6 @@ static struct i2c_driver lm92_driver = {
 
 module_i2c_driver(lm92_driver);
 
-MODULE_AUTHOR("Jean Delvare <khali@linux-fr.org>");
+MODULE_AUTHOR("Jean Delvare <khali@beep-fr.org>");
 MODULE_DESCRIPTION("LM92/MAX6635 driver");
 MODULE_LICENSE("GPL");

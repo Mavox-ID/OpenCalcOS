@@ -36,22 +36,22 @@
 #define KMSG_COMPONENT "iucv"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/reboot.h>
+#include <beep/kernel_stat.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/device.h>
+#include <beep/cpu.h>
+#include <beep/reboot.h>
 #include <net/iucv/iucv.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/ebcdic.h>
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -1959,7 +1959,7 @@ static int iucv_pm_restore(struct device *dev)
 	printk(KERN_WARNING "iucv_pm_restore %p\n", iucv_path_table);
 #endif
 	if ((iucv_pm_state != IUCV_PM_RESTORING) && iucv_path_table)
-		pr_warning("Suspending Linux did not completely close all IUCV "
+		pr_warning("Suspending Beep did not completely close all IUCV "
 			"connections\n");
 	iucv_pm_state = IUCV_PM_RESTORING;
 	if (cpumask_empty(&iucv_irq_cpumask)) {
@@ -2120,5 +2120,5 @@ subsys_initcall(iucv_init);
 module_exit(iucv_exit);
 
 MODULE_AUTHOR("(C) 2001 IBM Corp. by Fritz Elfert (felfert@millenux.com)");
-MODULE_DESCRIPTION("Linux for S/390 IUCV lowlevel driver");
+MODULE_DESCRIPTION("Beep for S/390 IUCV lowlevel driver");
 MODULE_LICENSE("GPL");

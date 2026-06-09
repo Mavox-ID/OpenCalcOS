@@ -7,11 +7,11 @@
  *  Copyright (C) 2012 Lantiq GmbH
  */
 
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
+#include <beep/of_platform.h>
+#include <beep/of_irq.h>
 
 #include <lantiq_soc.h>
 #include "../clk.h"

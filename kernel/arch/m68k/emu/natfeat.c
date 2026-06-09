@@ -3,18 +3,18 @@
  *
  * Copyright (c) 2005 Petr Stehlik of ARAnyM dev team
  *
- * Reworked for Linux by Roman Zippel <zippel@linux-m68k.org>
+ * Reworked for Beep by Roman Zippel <zippel@beep-m68k.org>
  *
  * This software may be used and distributed according to the terms of
  * the GNU General Public License (GPL), incorporated herein by reference.
  */
 
-#include <linux/types.h>
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <beep/types.h>
+#include <beep/console.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/io.h>
 #include <asm/machdep.h>
 #include <asm/natfeat.h>
 

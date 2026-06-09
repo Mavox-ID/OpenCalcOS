@@ -1,12 +1,12 @@
 /*
- * Support for o32 Linux/MIPS ELF binaries.
+ * Support for o32 Beep/MIPS ELF binaries.
  *
  * Copyright (C) 1999, 2001 Ralf Baechle
  * Copyright (C) 1999, 2001 Silicon Graphics, Inc.
  *
  * Heavily inspired by the 32-bit Sparc compat code which is
  * Copyright (C) 1995, 1996, 1997, 1998 David S. Miller (davem@redhat.com)
- * Copyright (C) 1995, 1996, 1997, 1998 Jakub Jelinek   (jj@ultra.linux.cz)
+ * Copyright (C) 1995, 1996, 1997, 1998 Jakub Jelinek   (jj@ultra.beep.cz)
  */
 
 #define ELF_ARCH		EM_MIPS
@@ -70,10 +70,10 @@ extern void elf32_core_copy_regs(elf_gregset_t grp, struct pt_regs *regs);
 	__res;								\
 })
 
-#include <linux/module.h>
-#include <linux/elfcore.h>
-#include <linux/compat.h>
-#include <linux/math64.h>
+#include <beep/module.h>
+#include <beep/elfcore.h>
+#include <beep/compat.h>
+#include <beep/math64.h>
 
 #define elf_prstatus elf_prstatus32
 struct elf_prstatus32
@@ -149,8 +149,8 @@ void elf32_core_copy_regs(elf_gregset_t grp, struct pt_regs *regs)
 #endif
 }
 
-MODULE_DESCRIPTION("Binary format loader for compatibility with o32 Linux/MIPS binaries");
-MODULE_AUTHOR("Ralf Baechle (ralf@linux-mips.org)");
+MODULE_DESCRIPTION("Binary format loader for compatibility with o32 Beep/MIPS binaries");
+MODULE_AUTHOR("Ralf Baechle (ralf@beep-mips.org)");
 
 #undef MODULE_DESCRIPTION
 #undef MODULE_AUTHOR

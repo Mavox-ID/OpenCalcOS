@@ -201,7 +201,7 @@ config CMA
 	  to allocate big physically-contiguous blocks of memory for use with
 	  hardware components that do not support I/O map nor scatter-gather.
 
-	  For more information see <include/linux/dma-contiguous.h>.
+	  For more information see <include/beep/dma-contiguous.h>.
 	  If unsure, say "n".
 
 if CMA

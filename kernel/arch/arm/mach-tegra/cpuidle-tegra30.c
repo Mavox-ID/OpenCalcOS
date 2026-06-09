@@ -19,11 +19,11 @@
  * more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/cpuidle.h>
-#include <linux/cpu_pm.h>
-#include <linux/clockchips.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/cpuidle.h>
+#include <beep/cpu_pm.h>
+#include <beep/clockchips.h>
 
 #include <asm/cpuidle.h>
 #include <asm/proc-fns.h>

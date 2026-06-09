@@ -81,7 +81,7 @@
 #define PTRACE_SINGLEBLOCK	33	/* resume execution until next branch */
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <beep/types.h>
 #endif
 
 #endif /* _ASM_X86_PTRACE_ABI_H */

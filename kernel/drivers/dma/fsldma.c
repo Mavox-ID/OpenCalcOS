@@ -24,16 +24,16 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/dmaengine.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/of_platform.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/dmaengine.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmapool.h>
+#include <beep/of_platform.h>
 
 #include "dmaengine.h"
 #include "fsldma.h"

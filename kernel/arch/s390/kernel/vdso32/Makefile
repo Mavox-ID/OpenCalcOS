@@ -12,7 +12,7 @@ KBUILD_AFLAGS_31 += -m31 -s
 
 KBUILD_CFLAGS_31 := $(filter-out -m64,$(KBUILD_CFLAGS))
 KBUILD_CFLAGS_31 += -m31 -fPIC -shared -fno-common -fno-builtin
-KBUILD_CFLAGS_31 += -nostdlib -Wl,-soname=linux-vdso32.so.1 \
+KBUILD_CFLAGS_31 += -nostdlib -Wl,-soname=beep-vdso32.so.1 \
 			$(call cc-ldoption, -Wl$(comma)--hash-style=sysv)
 
 $(targets:%=$(obj)/%.dbg): KBUILD_CFLAGS = $(KBUILD_CFLAGS_31)

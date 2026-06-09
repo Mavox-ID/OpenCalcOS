@@ -15,10 +15,10 @@
  *	- cache integrity information associated with an inode
  *	  using a rbtree tree.
  */
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/rbtree.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/rbtree.h>
 #include "integrity.h"
 
 static struct rb_root integrity_iint_tree = RB_ROOT;

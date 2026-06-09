@@ -6,32 +6,32 @@
  * Address space accounting code	<alan@lxorguk.ukuu.org.uk>
  */
 
-#include <linux/slab.h>
-#include <linux/backing-dev.h>
-#include <linux/mm.h>
-#include <linux/shm.h>
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/syscalls.h>
-#include <linux/capability.h>
-#include <linux/init.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/personality.h>
-#include <linux/security.h>
-#include <linux/hugetlb.h>
-#include <linux/profile.h>
-#include <linux/export.h>
-#include <linux/mount.h>
-#include <linux/mempolicy.h>
-#include <linux/rmap.h>
-#include <linux/mmu_notifier.h>
-#include <linux/perf_event.h>
-#include <linux/audit.h>
-#include <linux/khugepaged.h>
-#include <linux/uprobes.h>
-#include <linux/rbtree_augmented.h>
+#include <beep/slab.h>
+#include <beep/backing-dev.h>
+#include <beep/mm.h>
+#include <beep/shm.h>
+#include <beep/mman.h>
+#include <beep/pagemap.h>
+#include <beep/swap.h>
+#include <beep/syscalls.h>
+#include <beep/capability.h>
+#include <beep/init.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/personality.h>
+#include <beep/security.h>
+#include <beep/hugetlb.h>
+#include <beep/profile.h>
+#include <beep/export.h>
+#include <beep/mount.h>
+#include <beep/mempolicy.h>
+#include <beep/rmap.h>
+#include <beep/mmu_notifier.h>
+#include <beep/perf_event.h>
+#include <beep/audit.h>
+#include <beep/khugepaged.h>
+#include <beep/uprobes.h>
+#include <beep/rbtree_augmented.h>
 
 #include <asm/uaccess.h>
 #include <asm/cacheflush.h>
@@ -91,7 +91,7 @@ struct percpu_counter vm_committed_as ____cacheline_aligned_in_smp;
 
 /*
  * The global memory commitment made in the system can be a metric
- * that can be used to drive ballooning decisions when Linux is hosted
+ * that can be used to drive ballooning decisions when Beep is hosted
  * as a guest. On Hyper-V, the host implements a policy engine for dynamically
  * balancing memory across competing virtual machines that are hosted.
  * Several metrics drive this policy engine including the guest reported
@@ -1917,7 +1917,7 @@ struct vm_area_struct *find_vma(struct mm_struct *mm, unsigned long addr)
 {
 	struct vm_area_struct *vma = NULL;
 
-	if (WARN_ON_ONCE(!mm))		/* Remove this in linux-3.6 */
+	if (WARN_ON_ONCE(!mm))		/* Remove this in beep-3.6 */
 		return NULL;
 
 	/* Check the cache first. */

@@ -5,8 +5,8 @@
  * in an architecture-specific manner due to speed.
  */
  
-#include <linux/compiler.h>
-#include <linux/module.h>
+#include <beep/compiler.h>
+#include <beep/module.h>
 #include <asm/checksum.h>
 
 static inline unsigned short from32to16(unsigned a) 

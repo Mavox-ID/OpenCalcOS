@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-exynos/dev-ohci.c
+/* beep/arch/arm/mach-exynos/dev-ohci.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -10,9 +10,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/usb-exynos.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/platform_data/usb-exynos.h>
 
 #include <mach/irqs.h>
 #include <mach/map.h>

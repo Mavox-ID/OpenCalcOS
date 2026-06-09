@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5pc100/include/mach/irqs.h
+/* beep/arch/arm/mach-s5pc100/include/mach/irqs.h
  *
  * Copyright 2009 Samsung Electronics Co.
  *      Byungho Min <bhmin@samsung.com>

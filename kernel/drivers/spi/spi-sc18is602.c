@@ -1,7 +1,7 @@
 /*
  * NXP SC18IS602/603 SPI driver
  *
- * Copyright (C) Guenter Roeck <linux@roeck-us.net>
+ * Copyright (C) Guenter Roeck <beep@roeck-us.net>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,15 +18,15 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/platform_data/sc18is602.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/spi/spi.h>
+#include <beep/i2c.h>
+#include <beep/delay.h>
+#include <beep/pm_runtime.h>
+#include <beep/of.h>
+#include <beep/platform_data/sc18is602.h>
 
 enum chips { sc18is602, sc18is602b, sc18is603 };
 

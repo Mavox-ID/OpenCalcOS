@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-mmp/include/mach/teton_bga.h
+ *  beep/arch/arm/mach-mmp/include/mach/teton_bga.h
  *
  *  Support for the Marvell PXA168 Teton BGA Development Platform.
  *

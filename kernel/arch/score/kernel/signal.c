@@ -23,12 +23,12 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/uaccess.h>
-#include <linux/tracehook.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/ptrace.h>
+#include <beep/unistd.h>
+#include <beep/uaccess.h>
+#include <beep/tracehook.h>
 
 #include <asm/cacheflush.h>
 #include <asm/syscalls.h>

@@ -19,11 +19,11 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
 
 #include <sound/core.h>
 #include <sound/ak4531_codec.h>

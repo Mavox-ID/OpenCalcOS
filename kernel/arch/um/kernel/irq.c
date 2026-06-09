@@ -1,18 +1,18 @@
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  * Derived (i.e. mostly copied) from arch/i386/kernel/irq.c:
  *	Copyright (C) 1992, 1998 Linus Torvalds, Ingo Molnar
  */
 
-#include <linux/cpumask.h>
-#include <linux/hardirq.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <beep/cpumask.h>
+#include <beep/hardirq.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
 #include <as-layout.h>
 #include <kern_util.h>
 #include <os.h>

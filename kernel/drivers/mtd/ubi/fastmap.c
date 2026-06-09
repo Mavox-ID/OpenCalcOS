@@ -13,7 +13,7 @@
  *
  */
 
-#include <linux/crc32.h>
+#include <beep/crc32.h>
 #include "ubi.h"
 
 /**

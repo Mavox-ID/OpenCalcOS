@@ -26,11 +26,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/fs.h>
-#include <linux/agpgart.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/fs.h>
+#include <beep/agpgart.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 #include "agp.h"
 #include "compat_ioctl.h"

@@ -6,14 +6,14 @@
  *    Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com),
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/sysrq.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/sysrq.h>
 
-#include <linux/consolemap.h>
-#include <linux/kbd_kern.h>
-#include <linux/kbd_diacr.h>
+#include <beep/consolemap.h>
+#include <beep/kbd_kern.h>
+#include <beep/kbd_diacr.h>
 #include <asm/uaccess.h>
 
 #include "keyboard.h"

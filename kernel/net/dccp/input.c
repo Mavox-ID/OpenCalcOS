@@ -10,9 +10,9 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/dccp.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <beep/dccp.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
 
 #include <net/sock.h>
 

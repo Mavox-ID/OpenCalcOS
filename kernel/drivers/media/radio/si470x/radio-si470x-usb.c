@@ -34,9 +34,9 @@
 #define DRIVER_VERSION "1.0.10"
 
 /* kernel includes */
-#include <linux/usb.h>
-#include <linux/hid.h>
-#include <linux/slab.h>
+#include <beep/usb.h>
+#include <beep/hid.h>
+#include <beep/slab.h>
 
 #include "radio-si470x.h"
 
@@ -516,7 +516,7 @@ static void si470x_usb_release(struct v4l2_device *v4l2_dev)
 
 
 /**************************************************************************
- * Video4Linux Interface
+ * Video4Beep Interface
  **************************************************************************/
 
 /*
@@ -707,7 +707,7 @@ static int si470x_usb_driver_probe(struct usb_interface *intf,
 			"If you have some trouble using this driver,\n");
 		dev_warn(&intf->dev,
 			"please report to V4L ML at "
-			"linux-media@vger.kernel.org\n");
+			"beep-media@vger.kernel.org\n");
 	}
 
 	/* set led to connect state */

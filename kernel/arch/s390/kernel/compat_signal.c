@@ -8,25 +8,25 @@
  *  1997-11-28  Modified for POSIX.1b signals by Richard Henderson
  */
 
-#include <linux/compat.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/tty.h>
-#include <linux/personality.h>
-#include <linux/binfmts.h>
+#include <beep/compat.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/errno.h>
+#include <beep/wait.h>
+#include <beep/ptrace.h>
+#include <beep/unistd.h>
+#include <beep/stddef.h>
+#include <beep/tty.h>
+#include <beep/personality.h>
+#include <beep/binfmts.h>
 #include <asm/ucontext.h>
 #include <asm/uaccess.h>
 #include <asm/lowcore.h>
 #include <asm/switch_to.h>
-#include "compat_linux.h"
+#include "compat_beep.h"
 #include "compat_ptrace.h"
 #include "entry.h"
 

@@ -5,20 +5,20 @@
  *
  *  [Modify History]
  *   #0001, Evan, 2008.10.22, V0.00, New release.
- *   #0002, Evan, 2008.11.01, V0.90, Test Work In Ubuntu Linux 8.04.
+ *   #0002, Evan, 2008.11.01, V0.90, Test Work In Ubuntu Beep 8.04.
  *   #0003, Evan, 2008.01.08, V0.91, Change Name "PCIE-SSD" to "E-BOX".
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/device.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
-#include <linux/ata.h>
+#include <beep/libata.h>
+#include <beep/ata.h>
 
 #define PHISON_DEBUG
 

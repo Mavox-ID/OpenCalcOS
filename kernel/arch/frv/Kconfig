@@ -63,7 +63,7 @@ config MMU
 	bool "MMU support"
 	help
 	  This options switches on and off support for the FR-V MMU
-	  (effectively switching between vmlinux and uClinux). Not all FR-V
+	  (effectively switching between vmbeep and uCbeep). Not all FR-V
 	  CPUs support this. Currently only the FR451 has a sufficiently
 	  featured MMU.
 
@@ -100,11 +100,11 @@ config HIGHPTE
 source "mm/Kconfig"
 
 choice
-	prompt "uClinux kernel load address"
+	prompt "uCbeep kernel load address"
 	depends on !MMU
 	default UCPAGE_OFFSET_C0000000
 	help
-	  This option sets the base address for the uClinux kernel. The kernel
+	  This option sets the base address for the uCbeep kernel. The kernel
 	  will rearrange the SDRAM layout to start at this address, and move
 	  itself to start there. It must be greater than 0, and it must be
 	  sufficiently less than 0xE0000000 that the SDRAM does not intersect
@@ -147,7 +147,7 @@ config PROTECT_KERNEL
 	depends on !MMU
 	default y
 	help
-	  Selecting this option causes the uClinux kernel to change the
+	  Selecting this option causes the uCbeep kernel to change the
 	  permittivity of DAMPR register covering the core kernel image to
 	  prevent userspace accessing the underlying memory directly.
 
@@ -338,7 +338,7 @@ config RESERVE_DMA_COHERENT
 	  table settings, but if not, a region has to be set aside and marked
 	  with a special DAMPR register.
 
-	  Setting this option causes uClinux to set aside a portion of the
+	  Setting this option causes uCbeep to set aside a portion of the
 	  available memory for use in this manner. The memory will then be
 	  unavailable for normal kernel use.
 

@@ -1,7 +1,7 @@
 #ifndef __TRACE_EVENTS_H
 #define __TRACE_EVENTS_H
 
-#include <linux/trace_seq.h>
+#include <beep/trace_seq.h>
 #include "trace.h"
 
 extern enum print_line_t

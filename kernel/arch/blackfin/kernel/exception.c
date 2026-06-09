@@ -5,7 +5,7 @@
  * Licensed under the GPL-2 or later
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/irq_handler.h>
 
 int bfin_request_exception(unsigned int exception, void (*handler)(void))

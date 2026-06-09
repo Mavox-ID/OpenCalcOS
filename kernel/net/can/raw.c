@@ -39,18 +39,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/uio.h>
-#include <linux/net.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/socket.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/can.h>
-#include <linux/can/core.h>
-#include <linux/can/raw.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/uio.h>
+#include <beep/net.h>
+#include <beep/slab.h>
+#include <beep/netdevice.h>
+#include <beep/socket.h>
+#include <beep/if_arp.h>
+#include <beep/skbuff.h>
+#include <beep/can.h>
+#include <beep/can/core.h>
+#include <beep/can/raw.h>
 #include <net/sock.h>
 #include <net/net_namespace.h>
 

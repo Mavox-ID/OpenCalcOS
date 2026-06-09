@@ -23,9 +23,9 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/sched.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/sched.h>
 #include <media/rc-core.h>
 
 #define DRIVER_NAME	"rc-loopback"

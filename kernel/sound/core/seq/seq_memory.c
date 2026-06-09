@@ -20,10 +20,10 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
 #include <sound/core.h>
 
 #include <sound/seq_kernel.h>

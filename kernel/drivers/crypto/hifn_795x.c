@@ -17,21 +17,21 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mod_devicetable.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/highmem.h>
-#include <linux/crypto.h>
-#include <linux/hw_random.h>
-#include <linux/ktime.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/mod_devicetable.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/mm.h>
+#include <beep/dma-mapping.h>
+#include <beep/scatterlist.h>
+#include <beep/highmem.h>
+#include <beep/crypto.h>
+#include <beep/hw_random.h>
+#include <beep/ktime.h>
 
 #include <crypto/algapi.h>
 #include <crypto/des.h>

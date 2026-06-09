@@ -8,12 +8,12 @@
  * by the Free Software Foundation, incorporated herein by reference.
  */
 
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/rtnetlink.h>
+#include <beep/bitops.h>
+#include <beep/module.h>
+#include <beep/mtd/mtd.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/rtnetlink.h>
 
 #include "net_driver.h"
 #include "spi.h"

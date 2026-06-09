@@ -1,10 +1,10 @@
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/clk-provider.h>
-#include <linux/of.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/clkdev.h>
+#include <beep/err.h>
+#include <beep/clk-provider.h>
+#include <beep/of.h>
 
 #include "clk.h"
 #include "common.h"

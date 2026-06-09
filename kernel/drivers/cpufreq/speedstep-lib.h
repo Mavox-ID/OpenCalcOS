@@ -1,5 +1,5 @@
 /*
- * (C) 2002 - 2003 Dominik Brodowski <linux@brodo.de>
+ * (C) 2002 - 2003 Dominik Brodowski <beep@brodo.de>
  *
  *  Licensed under the terms of the GNU GPL License version 2.
  *

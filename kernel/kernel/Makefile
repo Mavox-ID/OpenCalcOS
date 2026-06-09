@@ -1,5 +1,5 @@
 #
-# Makefile for the linux kernel.
+# Makefile for the beep kernel.
 #
 
 obj-y     = fork.o exec_domain.o panic.o printk.o \

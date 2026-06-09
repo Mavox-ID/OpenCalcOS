@@ -27,14 +27,14 @@
 #define DEBUG_NCQ
 #endif
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/libata.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/of_platform.h>
+#include <beep/platform_device.h>
+#include <beep/libata.h>
+#include <beep/slab.h>
 #include "libata.h"
 
 #include <scsi/scsi_host.h>

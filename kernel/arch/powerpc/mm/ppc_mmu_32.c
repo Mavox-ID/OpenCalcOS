@@ -6,7 +6,7 @@
  *  -- paulus
  *
  *  Derived from arch/ppc/mm/init.c:
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -22,11 +22,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/memblock.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/highmem.h>
+#include <beep/memblock.h>
 
 #include <asm/prom.h>
 #include <asm/mmu.h>
@@ -207,7 +207,7 @@ void __init MMU_init_hw(void)
 	/*
 	 * Allow 1 HPTE (1/8 HPTEG) for each page of memory.
 	 * This is less than the recommended amount, but then
-	 * Linux ain't AIX.
+	 * Beep ain't AIX.
 	 */
 	n_hpteg = total_memory / (PAGE_SIZE * 8);
 	if (n_hpteg < MIN_N_HPTEG)

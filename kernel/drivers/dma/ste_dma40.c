@@ -6,20 +6,20 @@
  * License terms: GNU General Public License (GPL) version 2
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/dmaengine.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/err.h>
-#include <linux/amba/bus.h>
-#include <linux/regulator/consumer.h>
-#include <linux/platform_data/dma-ste-dma40.h>
+#include <beep/dma-mapping.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/dmaengine.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/pm_runtime.h>
+#include <beep/err.h>
+#include <beep/amba/bus.h>
+#include <beep/regulator/consumer.h>
+#include <beep/platform_data/dma-ste-dma40.h>
 
 #include "dmaengine.h"
 #include "ste_dma40_ll.h"

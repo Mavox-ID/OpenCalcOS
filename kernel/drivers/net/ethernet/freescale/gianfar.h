@@ -23,29 +23,29 @@
 #ifndef __GIANFAR_H
 #define __GIANFAR_H
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/mm.h>
+#include <beep/mii.h>
+#include <beep/phy.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/uaccess.h>
-#include <linux/module.h>
-#include <linux/crc32.h>
-#include <linux/workqueue.h>
-#include <linux/ethtool.h>
+#include <beep/module.h>
+#include <beep/crc32.h>
+#include <beep/workqueue.h>
+#include <beep/ethtool.h>
 
 struct ethtool_flow_spec_container {
 	struct ethtool_rx_flow_spec fs;

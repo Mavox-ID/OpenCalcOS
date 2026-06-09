@@ -31,11 +31,11 @@
  * SOFTWARE.
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 
-#include <linux/mlx4/cmd.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
+#include <beep/mlx4/cmd.h>
+#include <beep/export.h>
+#include <beep/gfp.h>
 
 #include "mlx4.h"
 #include "icm.h"

@@ -17,7 +17,7 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/capability.h>
+#include <beep/capability.h>
 
 #include "ptp_private.h"
 

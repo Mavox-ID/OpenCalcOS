@@ -8,7 +8,7 @@
  *
  * Rewritten and ported to the merged powerpc tree:
  * Copyright 2007 IBM Corporation
- * Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Josh Boyer <jwboyer@beep.vnet.ibm.com>
  *
  * 2002 (c) MontaVista, Software, Inc.  This file is licensed under
  * the terms of the GNU General Public License version 2.  This program
@@ -16,9 +16,9 @@
  * or implied.
  */
 
-#include <linux/init.h>
-#include <linux/of_platform.h>
-#include <linux/rtc.h>
+#include <beep/init.h>
+#include <beep/of_platform.h>
+#include <beep/rtc.h>
 
 #include <asm/machdep.h>
 #include <asm/prom.h>

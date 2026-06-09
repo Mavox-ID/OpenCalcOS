@@ -15,19 +15,19 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/fb.h>
-#include <linux/msm_mdp.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/clk.h>
-#include <linux/file.h>
-#include <linux/major.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/fb.h>
+#include <beep/msm_mdp.h>
+#include <beep/interrupt.h>
+#include <beep/wait.h>
+#include <beep/clk.h>
+#include <beep/file.h>
+#include <beep/major.h>
+#include <beep/slab.h>
 
-#include <linux/platform_data/video-msm_fb.h>
-#include <linux/platform_device.h>
-#include <linux/export.h>
+#include <beep/platform_data/video-msm_fb.h>
+#include <beep/platform_device.h>
+#include <beep/export.h>
 
 #include "mdp_hw.h"
 

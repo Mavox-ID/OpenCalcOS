@@ -1,7 +1,7 @@
 #ifndef PXA2XX_LIB_H
 #define PXA2XX_LIB_H
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 #include <sound/ac97_codec.h>
 
 /* PCM */

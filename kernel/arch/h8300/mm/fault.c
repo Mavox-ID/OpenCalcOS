@@ -1,21 +1,21 @@
 /*
- *  linux/arch/h8300/mm/fault.c
+ *  beep/arch/h8300/mm/fault.c
  *
  *  Copyright (C) 1998  D. Jeff Dionne <jeff@lineo.ca>,
  *  Copyright (C) 2000  Lineo, Inc.  (www.lineo.com) 
  *
  *  Based on:
  *
- *  linux/arch/m68knommu/mm/fault.c
- *  linux/arch/m68k/mm/fault.c
+ *  beep/arch/m68knommu/mm/fault.c
+ *  beep/arch/m68k/mm/fault.c
  *
  *  Copyright (C) 1995  Hamish Macdonald
  */
 
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/kernel.h>
+#include <beep/ptrace.h>
 
 #include <asm/pgtable.h>
 

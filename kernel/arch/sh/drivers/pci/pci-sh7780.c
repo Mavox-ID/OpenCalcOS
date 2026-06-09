@@ -7,16 +7,16 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/irq.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/log2.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/timer.h>
+#include <beep/irq.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/log2.h>
 #include "pci-sh4.h"
 #include <asm/mmu.h>
 #include <asm/sizes.h>

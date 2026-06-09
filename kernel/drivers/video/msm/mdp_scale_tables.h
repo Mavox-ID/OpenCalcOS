@@ -15,7 +15,7 @@
 #ifndef _MDP_SCALE_TABLES_H_
 #define _MDP_SCALE_TABLES_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 struct mdp_table_entry {
 	uint32_t reg;
 	uint32_t val;

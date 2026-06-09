@@ -19,13 +19,13 @@
  *
  * Copyright (c) 2010 Linaro
  *
- * Author: Paul E. McKenney <paulmck@linux.vnet.ibm.com>
+ * Author: Paul E. McKenney <paulmck@beep.vnet.ibm.com>
  */
 
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/kthread.h>
+#include <beep/module.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 /* Global control variables for rcupdate callback mechanism. */
 struct rcu_ctrlblk {
@@ -56,7 +56,7 @@ EXPORT_SYMBOL_GPL(rcu_scheduler_active);
 
 #ifdef CONFIG_TINY_PREEMPT_RCU
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 /* Global control variables for preemptible RCU. */
 struct rcu_preempt_ctrlblk {
@@ -955,7 +955,7 @@ early_initcall(rcu_scheduler_really_started);
 #endif /* #else #ifdef CONFIG_RCU_BOOST */
 
 #ifdef CONFIG_DEBUG_LOCK_ALLOC
-#include <linux/kernel_stat.h>
+#include <beep/kernel_stat.h>
 
 /*
  * During boot, we forgive RCU lockdep issues.  After this function is

@@ -15,11 +15,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/gpio.h>
-#include <linux/err.h>
-#include <linux/of_gpio.h>
-#include <linux/regulator/consumer.h>
+#include <beep/kernel.h>
+#include <beep/gpio.h>
+#include <beep/err.h>
+#include <beep/of_gpio.h>
+#include <beep/regulator/consumer.h>
 
 #include <asm/mach-types.h>
 

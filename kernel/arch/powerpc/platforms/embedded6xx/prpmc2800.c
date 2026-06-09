@@ -9,11 +9,11 @@
  * or implied.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/seq_file.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/seq_file.h>
 
 #include <asm/machdep.h>
 #include <asm/prom.h>

@@ -1,5 +1,5 @@
 /*
- * Linux driver for TerraTec DMX 6Fire USB
+ * Beep driver for TerraTec DMX 6Fire USB
  *
  * Author:	Torsten Schenk <torsten.schenk@zoho.com>
  * Created:	Jan 01, 2011
@@ -15,7 +15,7 @@
 #define USB6FIRE_PCM_H
 
 #include <sound/pcm.h>
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 
 #include "common.h"
 

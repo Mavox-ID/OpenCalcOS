@@ -17,13 +17,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/personality.h>
-#include <linux/freezer.h>
-#include <linux/uaccess.h>
-#include <linux/tracehook.h>
-#include <linux/ratelimit.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/personality.h>
+#include <beep/freezer.h>
+#include <beep/uaccess.h>
+#include <beep/tracehook.h>
+#include <beep/ratelimit.h>
 
 #include <asm/compat.h>
 #include <asm/debug-monitors.h>

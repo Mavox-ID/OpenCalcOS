@@ -21,7 +21,7 @@
  */
 
 #include "rc-core-priv.h"
-#include <linux/module.h>
+#include <beep/module.h>
 
 #define RC5_NBITS		14
 #define RC5X_NBITS		20

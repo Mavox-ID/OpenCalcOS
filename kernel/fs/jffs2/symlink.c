@@ -11,9 +11,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/namei.h>
 #include "nodelist.h"
 
 static void *jffs2_follow_link(struct dentry *dentry, struct nameidata *nd);

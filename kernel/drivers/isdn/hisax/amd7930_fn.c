@@ -57,9 +57,9 @@
 #include "isdnl1.h"
 #include "isac.h"
 #include "amd7930_fn.h"
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/gfp.h>
 
 static void Amd7930_new_ph(struct IsdnCardState *cs);
 

@@ -19,15 +19,15 @@
  * See also Documentation/block/ioprio.txt
  *
  */
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/ioprio.h>
-#include <linux/blkdev.h>
-#include <linux/capability.h>
-#include <linux/syscalls.h>
-#include <linux/security.h>
-#include <linux/pid_namespace.h>
+#include <beep/gfp.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/ioprio.h>
+#include <beep/blkdev.h>
+#include <beep/capability.h>
+#include <beep/syscalls.h>
+#include <beep/security.h>
+#include <beep/pid_namespace.h>
 
 int set_task_ioprio(struct task_struct *task, int ioprio)
 {

@@ -5,14 +5,14 @@
  * Copyright (C) 2011 Peter Zijlstra <pzijlstr@redhat.com>
  *
  */
-#include <linux/memory.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/err.h>
-#include <linux/static_key.h>
+#include <beep/memory.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/sort.h>
+#include <beep/err.h>
+#include <beep/static_key.h>
 
 #ifdef HAVE_JUMP_LABEL
 

@@ -3,15 +3,15 @@
 /* Written 1997-2000 by Werner Almesberger, EPFL LRC/ICA */
 
 
-#include <linux/module.h>
-#include <linux/wait.h>
-#include <linux/atmdev.h>
-#include <linux/atm_tcp.h>
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/wait.h>
+#include <beep/atmdev.h>
+#include <beep/atm_tcp.h>
+#include <beep/bitops.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 
 extern int atm_init_aal5(struct atm_vcc *vcc); /* "raw" AAL5 transport */

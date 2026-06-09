@@ -11,19 +11,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/cpufreq.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/rculist.h>
-#include <linux/rcupdate.h>
-#include <linux/opp.h>
-#include <linux/of.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/cpufreq.h>
+#include <beep/device.h>
+#include <beep/list.h>
+#include <beep/rculist.h>
+#include <beep/rcupdate.h>
+#include <beep/opp.h>
+#include <beep/of.h>
+#include <beep/export.h>
 
 /*
  * Internal data structure organization with the OPP layer library is as

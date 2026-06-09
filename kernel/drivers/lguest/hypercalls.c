@@ -22,10 +22,10 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 */
-#include <linux/uaccess.h>
-#include <linux/syscalls.h>
-#include <linux/mm.h>
-#include <linux/ktime.h>
+#include <beep/uaccess.h>
+#include <beep/syscalls.h>
+#include <beep/mm.h>
+#include <beep/ktime.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>
 #include "lg.h"

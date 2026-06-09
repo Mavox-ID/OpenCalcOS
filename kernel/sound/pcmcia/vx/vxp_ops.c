@@ -20,10 +20,10 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/io.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/firmware.h>
+#include <beep/io.h>
 #include <sound/core.h>
 #include "vxpocket.h"
 

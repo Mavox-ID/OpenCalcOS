@@ -1,7 +1,7 @@
 #ifndef _ASM_GENERIC_BUG_H
 #define _ASM_GENERIC_BUG_H
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 #ifdef CONFIG_GENERIC_BUG
 #define BUGFLAG_WARNING		(1 << 0)
@@ -10,7 +10,7 @@
 #endif
 
 #ifndef __ASSEMBLY__
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 #ifdef CONFIG_BUG
 

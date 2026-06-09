@@ -16,7 +16,7 @@
 
 #include <asm/page.h>
 
-#include <linux/workqueue.h>
+#include <beep/workqueue.h>
 
 #define UX500_PLATFORM_MIN_RATE_PLAYBACK 8000
 #define UX500_PLATFORM_MAX_RATE_PLAYBACK 48000

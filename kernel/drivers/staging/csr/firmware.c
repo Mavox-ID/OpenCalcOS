@@ -4,10 +4,10 @@
  *
  *  PURPOSE:
  *      Implements the f/w related HIP core lib API.
- *      It is part of the porting exercise in Linux.
+ *      It is part of the porting exercise in Beep.
  *
  *      Also, it contains example code for reading the loader and f/w files
- *      from the userspace and starting the SME in Linux.
+ *      from the userspace and starting the SME in Beep.
  *
  * Copyright (C) 2005-2009 by Cambridge Silicon Radio Ltd.
  *
@@ -16,9 +16,9 @@
  *
  * ---------------------------------------------------------------------------
  */
-#include <linux/kmod.h>
-#include <linux/vmalloc.h>
-#include <linux/firmware.h>
+#include <beep/kmod.h>
+#include <beep/vmalloc.h>
+#include <beep/firmware.h>
 #include <asm/uaccess.h>
 #include "csr_wifi_hip_unifi.h"
 #include "csr_wifi_hip_unifi_udi.h"
@@ -40,7 +40,7 @@
  *
  *      Returns a structure to be passed in unifi_fw_read().
  *      This structure is an OS specific description of the f/w file.
- *      In the linux implementation it is a buffer with the f/w and its' length.
+ *      In the beep implementation it is a buffer with the f/w and its' length.
  *      The HIP driver calls this functions to request for the loader or
  *      the firmware file.
  *      The structure pointer can be freed when unifi_fw_read_stop() is called.

@@ -17,9 +17,9 @@
  * The sid value of 0 is invalid.
  */
 
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/err.h>
+#include <beep/spinlock.h>
+#include <beep/errno.h>
+#include <beep/err.h>
 
 #include "include/sid.h"
 

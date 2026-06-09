@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext3/hash.c
+ *  beep/fs/ext3/hash.c
  *
  * Copyright (C) 2002 by Theodore Ts'o
  *
@@ -10,7 +10,7 @@
  */
 
 #include "ext3.h"
-#include <linux/cryptohash.h>
+#include <beep/cryptohash.h>
 
 #define DELTA 0x9E3779B9
 

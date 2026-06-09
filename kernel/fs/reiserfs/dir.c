@@ -2,13 +2,13 @@
  * Copyright 2000 by Hans Reiser, licensing governed by reiserfs/README
  */
 
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
 #include "reiserfs.h"
-#include <linux/stat.h>
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
+#include <beep/stat.h>
+#include <beep/buffer_head.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 
 extern const struct reiserfs_key MIN_KEY;

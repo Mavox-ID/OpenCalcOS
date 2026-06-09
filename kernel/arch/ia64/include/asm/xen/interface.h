@@ -32,7 +32,7 @@
  * Christian Limpach <Christian.Limpach@cl.cam.ac.uk>
  * Dietmar Hahn <dietmar.hahn@fujitsu-siemens.com>
  * Hollis Blanchard <hollisb@us.ibm.com>
- * Isaku Yamahata <yamahata@valinux.co.jp>
+ * Isaku Yamahata <yamahata@vabeep.co.jp>
  * Jan Beulich <jbeulich@novell.com>
  * John Levon <john.levon@sun.com>
  * Kazuhiro Suzuki <kaz@jp.fujitsu.com>
@@ -333,7 +333,7 @@ typedef struct xen_callback xen_callback_t;
  * If this feature is switched on, the hypervisor inserts the
  * tlb entries without calling the guests traphandler.
  * This is useful in guests using region 7 for identity mapping
- * like the linux kernel does.
+ * like the beep kernel does.
  */
 #define XEN_IA64_OPTF_IDENT_MAP_REG7	1
 

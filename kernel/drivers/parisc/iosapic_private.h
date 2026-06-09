@@ -2,8 +2,8 @@
  *    Private structs/constants for PARISC IOSAPIC support
  *
  *    Copyright (C) 2000 Hewlett Packard (Grant Grundler)
- *    Copyright (C) 2000,2003 Grant Grundler (grundler at parisc-linux.org)
- *    Copyright (C) 2002 Matthew Wilcox (willy at parisc-linux.org)
+ *    Copyright (C) 2000,2003 Grant Grundler (grundler at parisc-beep.org)
+ *    Copyright (C) 2002 Matthew Wilcox (willy at parisc-beep.org)
  *
  *
  *    This program is free software; you can redistribute it and/or modify

@@ -6,13 +6,13 @@
  *  Copyright (C) 2006, Timesys Corp., Thomas Gleixner <tglx@timesys.com>
  *
  */
-#include <linux/device.h>
-#include <linux/kthread.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/freezer.h>
+#include <beep/device.h>
+#include <beep/kthread.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/timer.h>
+#include <beep/freezer.h>
 
 #include "rtmutex.h"
 

@@ -5,8 +5,8 @@
 #ifndef DMAENGINE_H
 #define DMAENGINE_H
 
-#include <linux/bug.h>
-#include <linux/dmaengine.h>
+#include <beep/bug.h>
+#include <beep/dmaengine.h>
 
 /**
  * dma_cookie_init - initialize the cookies for a DMA channel

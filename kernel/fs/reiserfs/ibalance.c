@@ -3,10 +3,10 @@
  */
 
 #include <asm/uaccess.h>
-#include <linux/string.h>
-#include <linux/time.h>
+#include <beep/string.h>
+#include <beep/time.h>
 #include "reiserfs.h"
-#include <linux/buffer_head.h>
+#include <beep/buffer_head.h>
 
 /* this is one and only function that is used outside (do_balance.c) */
 int balance_internal(struct tree_balance *,

@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/include/plat/pwm-clock.h
+/* beep/arch/arm/plat-samsung/include/plat/pwm-clock.h
  *
  * Copyright (c) 2010-2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -6,7 +6,7 @@
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armbeep.simtec.co.uk/
  *
  * SAMSUNG - pwm clock and timer support
  *

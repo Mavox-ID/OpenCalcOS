@@ -5,7 +5,7 @@
    One window per bus, that is.  */
 #define MCPCIA_ONE_HAE_WINDOW 1
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/compiler.h>
 #include <asm/mce.h>
 

@@ -7,7 +7,7 @@ menuconfig MEDIA_PARPORT_SUPPORT
 
 if MEDIA_PARPORT_SUPPORT
 config VIDEO_BWQCAM
-	tristate "Quickcam BW Video For Linux"
+	tristate "Quickcam BW Video For Beep"
 	depends on PARPORT && VIDEO_V4L2
 	help
 	  Say Y have if you the black and white version of the QuickCam
@@ -17,18 +17,18 @@ config VIDEO_BWQCAM
 	  module will be called bw-qcam.
 
 config VIDEO_CQCAM
-	tristate "QuickCam Colour Video For Linux"
+	tristate "QuickCam Colour Video For Beep"
 	depends on PARPORT && VIDEO_V4L2
 	help
-	  This is the video4linux driver for the colour version of the
+	  This is the video4beep driver for the colour version of the
 	  Connectix QuickCam.  If you have one of these cameras, say Y here,
 	  otherwise say N.  This driver does not work with the original
 	  monochrome QuickCam, QuickCam VC or QuickClip.  It is also available
 	  as a module (c-qcam).
-	  Read <file:Documentation/video4linux/CQcam.txt> for more information.
+	  Read <file:Documentation/video4beep/CQcam.txt> for more information.
 
 config VIDEO_PMS
-	tristate "Mediavision Pro Movie Studio Video For Linux"
+	tristate "Mediavision Pro Movie Studio Video For Beep"
 	depends on ISA && VIDEO_V4L2
 	help
 	  Say Y if you have the ISA Mediavision Pro Movie Studio
@@ -38,15 +38,15 @@ config VIDEO_PMS
 	  module will be called pms.
 
 config VIDEO_W9966
-	tristate "W9966CF Webcam (FlyCam Supra and others) Video For Linux"
+	tristate "W9966CF Webcam (FlyCam Supra and others) Video For Beep"
 	depends on PARPORT_1284 && PARPORT && VIDEO_V4L2
 	help
-	  Video4linux driver for Winbond's w9966 based Webcams.
+	  Video4beep driver for Winbond's w9966 based Webcams.
 	  Currently tested with the LifeView FlyCam Supra.
 	  If you have one of these cameras, say Y here
 	  otherwise say N.
 	  This driver is also available as a module (w9966).
 
-	  Check out <file:Documentation/video4linux/w9966.txt> for more
+	  Check out <file:Documentation/video4beep/w9966.txt> for more
 	  information.
 endif

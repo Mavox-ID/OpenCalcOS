@@ -45,11 +45,11 @@
  * be incorporated into the next SCTP release.
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/in.h>
-#include <linux/random.h>	/* get_random_bytes() */
-#include <linux/crypto.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/in.h>
+#include <beep/random.h>	/* get_random_bytes() */
+#include <beep/crypto.h>
 #include <net/sock.h>
 #include <net/ipv6.h>
 #include <net/sctp/sctp.h>

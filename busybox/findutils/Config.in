@@ -223,7 +223,7 @@ config FEATURE_FIND_REGEX
 config FEATURE_FIND_CONTEXT
 	bool "Enable -context: security context matching"
 	default n
-	depends on FIND && SELINUX
+	depends on FIND && SEBEEP
 	help
 	Support the 'find -context' option for matching security context.
 

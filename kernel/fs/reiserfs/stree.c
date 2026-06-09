@@ -48,12 +48,12 @@
  * reiserfs_insert_item
  */
 
-#include <linux/time.h>
-#include <linux/string.h>
-#include <linux/pagemap.h>
+#include <beep/time.h>
+#include <beep/string.h>
+#include <beep/pagemap.h>
 #include "reiserfs.h"
-#include <linux/buffer_head.h>
-#include <linux/quotaops.h>
+#include <beep/buffer_head.h>
+#include <beep/quotaops.h>
 
 /* Does the buffer contain a disk block which is in the tree. */
 inline int B_IS_IN_TREE(const struct buffer_head *bh)

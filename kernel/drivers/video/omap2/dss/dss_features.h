@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/omap2/dss/dss_features.h
+ * beep/drivers/video/omap2/dss/dss_features.h
  *
  * Copyright (C) 2010 Texas Instruments
  * Author: Archit Taneja <archit@ti.com>

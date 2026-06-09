@@ -1,13 +1,13 @@
 /*
- * linux/arch/sh/boards/se/770x/setup.c
+ * beep/arch/sh/boards/se/770x/setup.c
  *
  * Copyright (C) 2000  Kazumoto Kojima
  *
  * Hitachi SolutionEngine Support.
  *
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
 #include <mach-se/mach/se.h>
 #include <mach-se/mach/mrshpc.h>
 #include <asm/machvec.h>

@@ -19,7 +19,7 @@
 
 #include "main.h"
 
-#include <linux/debugfs.h>
+#include <beep/debugfs.h>
 
 #include "debugfs.h"
 #include "translation-table.h"

@@ -31,8 +31,8 @@
  *
  */
 
-#include <linux/dcbnl.h>
-#include <linux/math64.h>
+#include <beep/dcbnl.h>
+#include <beep/math64.h>
 
 #include "mlx4_en.h"
 

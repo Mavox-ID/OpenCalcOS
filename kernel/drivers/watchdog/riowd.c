@@ -5,19 +5,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/miscdevice.h>
+#include <beep/watchdog.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
+#include <beep/slab.h>
 
 
 /* RIO uses the NatSemi Super I/O power management logical device

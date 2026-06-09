@@ -16,10 +16,10 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/kernel.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/proc_fs.h>
+#include <beep/kernel.h>
 
 #include <asm/machdep.h>
 #include <asm/vdso_datapage.h>

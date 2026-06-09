@@ -10,15 +10,15 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/serial_8250.h>
-#include <linux/mv643xx_i2c.h>
-#include <linux/ata_platform.h>
-#include <linux/delay.h>
-#include <linux/clk-provider.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/serial_8250.h>
+#include <beep/mv643xx_i2c.h>
+#include <beep/ata_platform.h>
+#include <beep/delay.h>
+#include <beep/clk-provider.h>
 #include <net/dsa.h>
 #include <asm/page.h>
 #include <asm/setup.h>
@@ -30,8 +30,8 @@
 #include <mach/bridge-regs.h>
 #include <mach/hardware.h>
 #include <mach/orion5x.h>
-#include <linux/platform_data/mtd-orion_nand.h>
-#include <linux/platform_data/usb-ehci-orion.h>
+#include <beep/platform_data/mtd-orion_nand.h>
+#include <beep/platform_data/usb-ehci-orion.h>
 #include <plat/time.h>
 #include <plat/common.h>
 #include <plat/addr-map.h>

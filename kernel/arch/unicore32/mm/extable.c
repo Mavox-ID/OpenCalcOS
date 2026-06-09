@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/mm/extable.c
+ * beep/arch/unicore32/mm/extable.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -9,8 +9,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
 
 int fixup_exception(struct pt_regs *regs)
 {

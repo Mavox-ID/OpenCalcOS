@@ -9,17 +9,17 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/spinlock.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/module.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/platform_device.h>
+#include <beep/pm.h>
+#include <beep/spinlock.h>
 #include <asm/mach/irq.h>
 
 #define MAX_GPIO_PER_REG		32

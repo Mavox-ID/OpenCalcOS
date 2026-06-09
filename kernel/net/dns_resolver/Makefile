@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux DNS Resolver.
+# Makefile for the Beep DNS Resolver.
 #
 
 obj-$(CONFIG_DNS_RESOLVER) += dns_resolver.o

@@ -20,8 +20,8 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 
 #include "wl1251.h"
 #include "reg.h"

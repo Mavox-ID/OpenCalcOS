@@ -907,9 +907,9 @@ wifi_off(unifi_priv_t *priv)
     }
 
     /* Unregister the interrupt handler */
-    if (csr_sdio_linux_remove_irq(priv->sdio)) {
+    if (csr_sdio_beep_remove_irq(priv->sdio)) {
         unifi_notice(priv,
-                "csr_sdio_linux_remove_irq failed to talk to card.\n");
+                "csr_sdio_beep_remove_irq failed to talk to card.\n");
     }
 
     if (power_off) {

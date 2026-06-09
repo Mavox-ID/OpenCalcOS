@@ -1,13 +1,13 @@
 /*
- * linux/drivers/net/ethernet/amd/am79c961a.h
+ * beep/drivers/net/ethernet/amd/am79c961a.h
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
 
-#ifndef _LINUX_am79c961a_H
-#define _LINUX_am79c961a_H
+#ifndef _BEEP_am79c961a_H
+#define _BEEP_am79c961a_H
 
 /* use 0 for production, 1 for verification, >2 for debug. debug flags: */
 #define DEBUG_TX	 2

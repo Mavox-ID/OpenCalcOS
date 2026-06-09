@@ -7,18 +7,18 @@
  *      (c) 2008 Alexey Starikovskiy <astarikovskiy@suse.de>
  */
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/bootmem.h>
-#include <linux/memblock.h>
-#include <linux/kernel_stat.h>
-#include <linux/mc146818rtc.h>
-#include <linux/bitops.h>
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/smp.h>
-#include <linux/pci.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/bootmem.h>
+#include <beep/memblock.h>
+#include <beep/kernel_stat.h>
+#include <beep/mc146818rtc.h>
+#include <beep/bitops.h>
+#include <beep/acpi.h>
+#include <beep/module.h>
+#include <beep/smp.h>
+#include <beep/pci.h>
 
 #include <asm/mtrr.h>
 #include <asm/mpspec.h>
@@ -606,7 +606,7 @@ void __init default_find_smp_config(void)
 	unsigned int address;
 
 	/*
-	 * FIXME: Linux assumes you have 640K of base ram..
+	 * FIXME: Beep assumes you have 640K of base ram..
 	 * this continues the error...
 	 *
 	 * 1) Scan the bottom 1K for a signature
@@ -625,7 +625,7 @@ void __init default_find_smp_config(void)
 	 * there is a real-mode segmented pointer pointing to the
 	 * 4K EBDA area at 0x40E, calculate and scan it here.
 	 *
-	 * NOTE! There are Linux loaders that will corrupt the EBDA
+	 * NOTE! There are Beep loaders that will corrupt the EBDA
 	 * area, and as such this kind of SMP config may be less
 	 * trustworthy, simply because the SMP table may have been
 	 * stomped on during early boot. These loaders are buggy and

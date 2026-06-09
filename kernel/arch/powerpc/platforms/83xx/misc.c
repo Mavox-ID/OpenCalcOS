@@ -9,10 +9,10 @@
  * option) any later version.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/of_platform.h>
-#include <linux/pci.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/of_platform.h>
+#include <beep/pci.h>
 
 #include <asm/io.h>
 #include <asm/hw_irq.h>

@@ -40,11 +40,11 @@
 #define _ASM_EBUS_H
 #ifdef __KERNEL__
 
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/mod_devicetable.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
 
 extern struct bus_type ibmebus_bus_type;
 

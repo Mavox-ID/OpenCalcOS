@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux TIPC layer
+# Makefile for the Beep TIPC layer
 #
 
 obj-$(CONFIG_TIPC) := tipc.o

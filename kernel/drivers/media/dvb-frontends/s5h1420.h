@@ -4,7 +4,7 @@
  *    PnpNetwork PN1010 QPSK Demodulator
  *
  * Copyright (C) 2005 Andrew de Quincey <adq_dvb@lidskialf.net>
- * Copyright (C) 2005-8 Patrick Boettcher <pb@linuxtv.org>
+ * Copyright (C) 2005-8 Patrick Boettcher <pb@beeptv.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,7 +24,7 @@
 #ifndef S5H1420_H
 #define S5H1420_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 struct s5h1420_config
 {

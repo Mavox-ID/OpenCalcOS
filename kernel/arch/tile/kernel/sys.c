@@ -12,23 +12,23 @@
  *   more details.
  *
  * This file contains various random system calls that
- * have a non-standard calling sequence on the Linux/TILE
+ * have a non-standard calling sequence on the Beep/TILE
  * platform.
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/file.h>
-#include <linux/mempolicy.h>
-#include <linux/binfmts.h>
-#include <linux/fs.h>
-#include <linux/compat.h>
-#include <linux/uaccess.h>
-#include <linux/signal.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/syscalls.h>
+#include <beep/mman.h>
+#include <beep/file.h>
+#include <beep/mempolicy.h>
+#include <beep/binfmts.h>
+#include <beep/fs.h>
+#include <beep/compat.h>
+#include <beep/uaccess.h>
+#include <beep/signal.h>
 #include <asm/syscalls.h>
 #include <asm/pgtable.h>
 #include <asm/homecache.h>
@@ -71,7 +71,7 @@ int sys32_fadvise64_64(int fd, u32 offset_lo, u32 offset_hi,
 
 #endif /* 32-bit syscall wrappers */
 
-/* Note: used by the compat code even in 64-bit Linux. */
+/* Note: used by the compat code even in 64-bit Beep. */
 SYSCALL_DEFINE6(mmap2, unsigned long, addr, unsigned long, len,
 		unsigned long, prot, unsigned long, flags,
 		unsigned long, fd, unsigned long, off_4k)
@@ -112,7 +112,7 @@ SYSCALL_DEFINE6(mmap, unsigned long, addr, unsigned long, len,
 #define sys_clone _sys_clone
 
 /*
- * Note that we can't include <linux/unistd.h> here since the header
+ * Note that we can't include <beep/unistd.h> here since the header
  * guard will defeat us; <asm/unistd.h> checks for __SYSCALL as well.
  */
 void *sys_call_table[__NR_syscalls] = {

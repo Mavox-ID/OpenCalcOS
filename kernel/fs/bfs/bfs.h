@@ -5,7 +5,7 @@
 #ifndef _FS_BFS_BFS_H
 #define _FS_BFS_BFS_H
 
-#include <linux/bfs_fs.h>
+#include <beep/bfs_fs.h>
 
 /*
  * BFS file system in-core superblock info

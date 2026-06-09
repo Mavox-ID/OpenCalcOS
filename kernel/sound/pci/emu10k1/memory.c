@@ -21,11 +21,11 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/gfp.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
+#include <beep/pci.h>
+#include <beep/gfp.h>
+#include <beep/time.h>
+#include <beep/mutex.h>
+#include <beep/export.h>
 
 #include <sound/core.h>
 #include <sound/emu10k1.h>

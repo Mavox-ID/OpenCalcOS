@@ -1,9 +1,9 @@
 /*
- *  linux/fs/hfsplus/ioctl.c
+ *  beep/fs/hfsplus/ioctl.c
  *
  * Copyright (C) 2003
  * Ethan Benson <erbenson@alaska.net>
- * partially derived from linux/fs/ext2/ioctl.c
+ * partially derived from beep/fs/ext2/ioctl.c
  * Copyright (C) 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
  * Laboratoire MASI - Institut Blaise Pascal
@@ -12,11 +12,11 @@
  * hfsplus ioctls
  */
 
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/sched.h>
-#include <linux/xattr.h>
+#include <beep/capability.h>
+#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/sched.h>
+#include <beep/xattr.h>
 #include <asm/uaccess.h>
 #include "hfsplus_fs.h"
 
@@ -98,7 +98,7 @@ static int hfsplus_ioctl_setflags(struct file *file, int __user *user_flags)
 
 	if ((flags & (FS_IMMUTABLE_FL|FS_APPEND_FL)) ||
 	    inode->i_flags & (S_IMMUTABLE|S_APPEND)) {
-		if (!capable(CAP_LINUX_IMMUTABLE)) {
+		if (!capable(CAP_BEEP_IMMUTABLE)) {
 			err = -EPERM;
 			goto out_unlock_inode;
 		}

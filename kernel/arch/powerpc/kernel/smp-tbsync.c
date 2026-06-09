@@ -5,13 +5,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/unistd.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/unistd.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/atomic.h>
 #include <asm/smp.h>
 #include <asm/time.h>
 

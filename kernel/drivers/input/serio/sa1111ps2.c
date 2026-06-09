@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/input/serio/sa1111ps2.c
+ *  beep/drivers/input/serio/sa1111ps2.c
  *
  *  Copyright (C) 2002 Russell King
  *
@@ -7,17 +7,17 @@
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/serio.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
 #include <asm/io.h>
 
@@ -373,6 +373,6 @@ static void __exit ps2_exit(void)
 module_init(ps2_init);
 module_exit(ps2_exit);
 
-MODULE_AUTHOR("Russell King <rmk@arm.linux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk@arm.beep.org.uk>");
 MODULE_DESCRIPTION("SA1111 PS2 controller driver");
 MODULE_LICENSE("GPL");

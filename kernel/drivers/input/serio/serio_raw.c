@@ -9,18 +9,18 @@
  * the Free Software Foundation.
  */
 
-#include <linux/kref.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/module.h>
-#include <linux/serio.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
+#include <beep/kref.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/poll.h>
+#include <beep/module.h>
+#include <beep/serio.h>
+#include <beep/init.h>
+#include <beep/major.h>
+#include <beep/device.h>
+#include <beep/miscdevice.h>
+#include <beep/wait.h>
+#include <beep/mutex.h>
 
 #define DRIVER_DESC	"Raw serio driver"
 

@@ -18,14 +18,14 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/module.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <asm/mach/irq.h>

@@ -25,9 +25,9 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/futex.h>
-#include <linux/uaccess.h>
-#include <linux/errno.h>
+#include <beep/futex.h>
+#include <beep/uaccess.h>
+#include <beep/errno.h>
 #include <asm/atomic.h>
 
 /*

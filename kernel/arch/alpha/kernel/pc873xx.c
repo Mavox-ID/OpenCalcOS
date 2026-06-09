@@ -1,4 +1,4 @@
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 #include <asm/io.h>
 
 #include "pc873xx.h"

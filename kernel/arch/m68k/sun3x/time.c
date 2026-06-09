@@ -1,17 +1,17 @@
 /*
- *  linux/arch/m68k/sun3x/time.c
+ *  beep/arch/m68k/sun3x/time.c
  *
  *  Sun3x-specific time handling
  */
 
-#include <linux/types.h>
-#include <linux/kd.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/interrupt.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
+#include <beep/types.h>
+#include <beep/kd.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/kernel_stat.h>
+#include <beep/interrupt.h>
+#include <beep/rtc.h>
+#include <beep/bcd.h>
 
 #include <asm/irq.h>
 #include <asm/io.h>

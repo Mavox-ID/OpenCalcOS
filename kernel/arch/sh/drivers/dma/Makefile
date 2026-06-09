@@ -1,5 +1,5 @@
 #
-# Makefile for the SuperH DMA specific kernel interface routines under Linux.
+# Makefile for the SuperH DMA specific kernel interface routines under Beep.
 #
 
 obj-$(CONFIG_SH_DMA_API)	+= dma-sh.o dma-api.o dma-sysfs.o

@@ -1,23 +1,23 @@
 /*
- *  linux/mm/swap_state.c
+ *  beep/mm/swap_state.c
  *
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  *  Swap reorganised 29.12.95, Stephen Tweedie
  *
  *  Rewritten to use page cache, (C) 1998 Stephen Tweedie
  */
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/kernel_stat.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/backing-dev.h>
-#include <linux/blkdev.h>
-#include <linux/pagevec.h>
-#include <linux/migrate.h>
-#include <linux/page_cgroup.h>
+#include <beep/mm.h>
+#include <beep/gfp.h>
+#include <beep/kernel_stat.h>
+#include <beep/swap.h>
+#include <beep/swapops.h>
+#include <beep/init.h>
+#include <beep/pagemap.h>
+#include <beep/backing-dev.h>
+#include <beep/blkdev.h>
+#include <beep/pagevec.h>
+#include <beep/migrate.h>
+#include <beep/page_cgroup.h>
 
 #include <asm/pgtable.h>
 

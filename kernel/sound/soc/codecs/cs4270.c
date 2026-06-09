@@ -21,16 +21,16 @@
  * - Power management is supported
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include <sound/core.h>
 #include <sound/soc.h>
 #include <sound/initval.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
+#include <beep/i2c.h>
+#include <beep/delay.h>
+#include <beep/regulator/consumer.h>
+#include <beep/of_device.h>
+#include <beep/of_gpio.h>
 
 /*
  * The codec isn't really big-endian or little-endian, since the I2S

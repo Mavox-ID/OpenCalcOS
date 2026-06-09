@@ -26,7 +26,7 @@ config H8300H_H8MAX
 	help
 	  H8MAX Evaluation Board Support
 	  More Information. (Japanese Only)
-	  <http://strawberry-linux.com/h8/index.html>
+	  <http://strawberry-beep.com/h8/index.html>
 
 config H8300H_SIM
 	bool "H8/300H Simulator"
@@ -47,7 +47,7 @@ config H8S_EDOSK2674
 	help
 	  Renesas EDOSK-2674 Evaluation Board Support
 	  More Information.
-	  <http://www.azpower.com/H8-uClinux/index.html>
+	  <http://www.azpower.com/H8-uCbeep/index.html>
  	  <http://www.renesas.eu/products/tools/introductory_evaluation_tools/evaluation_development_os_kits/edosk2674r/edosk2674r_software_tools_root.jsp>
 
 config H8S_SIM

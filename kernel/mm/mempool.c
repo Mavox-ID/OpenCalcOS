@@ -1,5 +1,5 @@
 /*
- *  linux/mm/mempool.c
+ *  beep/mm/mempool.c
  *
  *  memory buffer pool support. Such pools are mostly used
  *  for guaranteed, deadlock-free memory allocations during
@@ -8,12 +8,12 @@
  *  started by Ingo Molnar, Copyright (C) 2001
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/mempool.h>
-#include <linux/blkdev.h>
-#include <linux/writeback.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/mempool.h>
+#include <beep/blkdev.h>
+#include <beep/writeback.h>
 
 static void add_element(mempool_t *pool, void *element)
 {

@@ -1,6 +1,6 @@
 /*
- * runlist.h - Defines for runlist handling in NTFS Linux kernel driver.
- *	       Part of the Linux-NTFS project.
+ * runlist.h - Defines for runlist handling in NTFS Beep kernel driver.
+ *	       Part of the Beep-NTFS project.
  *
  * Copyright (c) 2001-2005 Anton Altaparmakov
  * Copyright (c) 2002 Richard Russon
@@ -16,13 +16,13 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#ifndef _LINUX_NTFS_RUNLIST_H
-#define _LINUX_NTFS_RUNLIST_H
+#ifndef _BEEP_NTFS_RUNLIST_H
+#define _BEEP_NTFS_RUNLIST_H
 
 #include "types.h"
 #include "layout.h"
@@ -99,4 +99,4 @@ int ntfs_rl_punch_nolock(const ntfs_volume *vol, runlist *const runlist,
 
 #endif /* NTFS_RW */
 
-#endif /* _LINUX_NTFS_RUNLIST_H */
+#endif /* _BEEP_NTFS_RUNLIST_H */

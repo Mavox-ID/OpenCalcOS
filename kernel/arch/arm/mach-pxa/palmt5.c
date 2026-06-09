@@ -16,18 +16,18 @@
  *
  */
 
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/memblock.h>
-#include <linux/pda_power.h>
-#include <linux/pwm_backlight.h>
-#include <linux/gpio.h>
-#include <linux/wm97xx.h>
-#include <linux/power_supply.h>
-#include <linux/usb/gpio_vbus.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/gpio_keys.h>
+#include <beep/input.h>
+#include <beep/memblock.h>
+#include <beep/pda_power.h>
+#include <beep/pwm_backlight.h>
+#include <beep/gpio.h>
+#include <beep/wm97xx.h>
+#include <beep/power_supply.h>
+#include <beep/usb/gpio_vbus.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -36,12 +36,12 @@
 #include <mach/pxa27x.h>
 #include <mach/audio.h>
 #include <mach/palmt5.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/irda-pxaficp.h>
-#include <linux/platform_data/keypad-pxa27x.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/video-pxafb.h>
+#include <beep/platform_data/irda-pxaficp.h>
+#include <beep/platform_data/keypad-pxa27x.h>
 #include <mach/udc.h>
-#include <linux/platform_data/asoc-palm27x.h>
+#include <beep/platform_data/asoc-palm27x.h>
 #include <mach/palm27x.h>
 
 #include "generic.h"

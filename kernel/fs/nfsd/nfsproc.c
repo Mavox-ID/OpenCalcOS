@@ -4,7 +4,7 @@
  * Copyright (C) 1995-1997 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/namei.h>
+#include <beep/namei.h>
 
 #include "cache.h"
 #include "xdr.h"

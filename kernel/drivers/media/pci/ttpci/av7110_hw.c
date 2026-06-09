@@ -22,18 +22,18 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  * Or, point your browser to http://www.gnu.org/copyleft/gpl.html
  *
- * the project's page is at http://www.linuxtv.org/ 
+ * the project's page is at http://www.beeptv.org/ 
  */
 
 /* for debugging ARM communication: */
 //#define COM_DEBUG
 
 #include <stdarg.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/fs.h>
 
 #include "av7110.h"
 #include "av7110_hw.h"

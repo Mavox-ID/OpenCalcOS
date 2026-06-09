@@ -4,19 +4,19 @@
  * Copyright (C) 2008 Bryan Wu <cooloney@kernel.org>
  * Copyright (C) 2008 Analog Devices, Inc
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucbeep.org/
  *
  * Licensed under the GPL-2 or later.
  */
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb/composite.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/usb/composite.h>
 
 #include "gadget_chips.h"
-#define DRIVER_DESC		"Linux USB Audio Gadget"
+#define DRIVER_DESC		"Beep USB Audio Gadget"
 #define DRIVER_VERSION		"Feb 2, 2012"
 
 USB_GADGET_COMPOSITE_OPTIONS();
@@ -54,9 +54,9 @@ static struct usb_gadget_strings *audio_strings[] = {
  * Instead:  allocate your own, using normal USB-IF procedures.
  */
 
-/* Thanks to Linux Foundation for donating this product ID. */
-#define AUDIO_VENDOR_NUM		0x1d6b	/* Linux Foundation */
-#define AUDIO_PRODUCT_NUM		0x0101	/* Linux-USB Audio Gadget */
+/* Thanks to Beep Foundation for donating this product ID. */
+#define AUDIO_VENDOR_NUM		0x1d6b	/* Beep Foundation */
+#define AUDIO_PRODUCT_NUM		0x0101	/* Beep-USB Audio Gadget */
 
 /*-------------------------------------------------------------------------*/
 

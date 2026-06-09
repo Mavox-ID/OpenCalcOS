@@ -1,5 +1,5 @@
-#include <linux/io.h>
-#include <linux/memblock.h>
+#include <beep/io.h>
+#include <beep/memblock.h>
 
 #include <asm/cacheflush.h>
 #include <asm/pgtable.h>

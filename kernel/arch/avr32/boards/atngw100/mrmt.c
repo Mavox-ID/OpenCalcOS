@@ -9,19 +9,19 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/linkage.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/fb.h>
-#include <linux/leds.h>
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
-#include <linux/atmel_serial.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/linkage.h>
+#include <beep/platform_device.h>
+#include <beep/types.h>
+#include <beep/fb.h>
+#include <beep/leds.h>
+#include <beep/input.h>
+#include <beep/gpio_keys.h>
+#include <beep/atmel_serial.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/ads7846.h>
 
 #include <video/atmel_lcdc.h>
 #include <sound/atmel-ac97c.h>

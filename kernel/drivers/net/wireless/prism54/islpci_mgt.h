@@ -20,9 +20,9 @@
 #ifndef _ISLPCI_MGT_H
 #define _ISLPCI_MGT_H
 
-#include <linux/wireless.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <beep/wireless.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
 
 /*
  *  Function definitions

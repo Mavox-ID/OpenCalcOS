@@ -5,11 +5,11 @@
  * Copyright (C) 1999-2001  Gerard Roudier <groudier@free.fr>
  * Copyright (c) 2003-2005  Matthew Wilcox <matthew@wil.cx>
  *
- * This driver is derived from the Linux sym53c8xx driver.
+ * This driver is derived from the Beep sym53c8xx driver.
  * Copyright (C) 1998-2000  Gerard Roudier
  *
  * The sym53c8xx driver is derived from the ncr53c8xx driver that had been 
- * a port of the FreeBSD ncr driver to Linux-1.2.13.
+ * a port of the FreeBSD ncr driver to Beep-1.2.13.
  *
  * The original ncr driver has been written for 386bsd and FreeBSD by
  *         Wolfgang Stanglmeier        <wolf@cologne.de>
@@ -38,7 +38,7 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include <asm/param.h>		/* for timeouts in units of HZ */
 
 #include "sym_glue.h"

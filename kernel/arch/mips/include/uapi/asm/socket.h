@@ -14,7 +14,7 @@
 /*
  * For setsockopt(2)
  *
- * This defines are ABI conformant as far as Linux supports these ...
+ * This defines are ABI conformant as far as Beep supports these ...
  */
 #define SOL_SOCKET	0xffff
 
@@ -45,7 +45,7 @@ To add: #define SO_REUSEPORT 0x0200	/* Allow local address and port reuse.  */
 #define SO_PROTOCOL	0x1028	/* protocol type */
 #define SO_DOMAIN	0x1029	/* domain/socket family */
 
-/* linux-specific, might as well be the same as on i386 */
+/* beep-specific, might as well be the same as on i386 */
 #define SO_NO_CHECK	11
 #define SO_PRIORITY	12
 #define SO_BSDCOMPAT	14

@@ -19,12 +19,12 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
  *
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/leds.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/leds.h>
+#include <beep/adb.h>
+#include <beep/pmu.h>
 #include <asm/prom.h>
 
 static spinlock_t pmu_blink_lock;

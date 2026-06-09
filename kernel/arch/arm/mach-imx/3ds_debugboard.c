@@ -10,16 +10,16 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/smsc911x.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
+#include <beep/smsc911x.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/fixed.h>
 
 #include "hardware.h"
 

@@ -9,10 +9,10 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

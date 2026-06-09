@@ -12,14 +12,14 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/spi/spi.h>
-#include <linux/regmap.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pm.h>
+#include <beep/spi/spi.h>
+#include <beep/regmap.h>
+#include <beep/err.h>
 
-#include <linux/mfd/wm831x/core.h>
+#include <beep/mfd/wm831x/core.h>
 
 static int wm831x_spi_probe(struct spi_device *spi)
 {

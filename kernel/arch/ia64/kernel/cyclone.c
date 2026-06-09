@@ -1,9 +1,9 @@
-#include <linux/module.h>
-#include <linux/smp.h>
-#include <linux/time.h>
-#include <linux/errno.h>
-#include <linux/timex.h>
-#include <linux/clocksource.h>
+#include <beep/module.h>
+#include <beep/smp.h>
+#include <beep/time.h>
+#include <beep/errno.h>
+#include <beep/timex.h>
+#include <beep/clocksource.h>
 #include <asm/io.h>
 
 /* IBM Summit (EXA) Cyclone counter code*/

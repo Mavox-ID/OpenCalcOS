@@ -6,10 +6,10 @@
  * Copyright (C) 2008 Maxime Bizon <mbizon@freebox.fr>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
 #include <asm/bootinfo.h>
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 #include <bcm63xx_cs.h>
 #include <bcm63xx_cpu.h>
 #include <bcm63xx_dev_pcmcia.h>

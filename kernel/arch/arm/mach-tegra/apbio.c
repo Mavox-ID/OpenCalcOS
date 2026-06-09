@@ -13,15 +13,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
+#include <beep/sched.h>
+#include <beep/mutex.h>
 
 #include "apbio.h"
 #include "iomap.h"

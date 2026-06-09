@@ -20,18 +20,18 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA	02110-1301, USA.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/delay.h>
 
-#include <linux/gpio.h>
+#include <beep/gpio.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
 /*
  * Register definitions, as well as various shifts and masks to get at the
  * individual fields of the registers.

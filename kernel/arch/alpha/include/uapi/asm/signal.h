@@ -1,7 +1,7 @@
 #ifndef _UAPI_ASMAXP_SIGNAL_H
 #define _UAPI_ASMAXP_SIGNAL_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* Avoid too many header ordering problems.  */
 struct siginfo;
@@ -16,7 +16,7 @@ typedef unsigned long sigset_t;
 
 
 /*
- * Linux/AXP has different signal numbers that Linux/i386: I'm trying
+ * Beep/AXP has different signal numbers that Beep/i386: I'm trying
  * to make it OSF/1 binary compatible, at least for normal binaries.
  */
 #define SIGHUP		 1
@@ -69,7 +69,7 @@ typedef unsigned long sigset_t;
  * SA_NOCLDWAIT flag on SIGCHLD to inhibit zombies.
  * SA_NODEFER prevents the current signal from being masked in the handler.
  *
- * SA_ONESHOT and SA_NOMASK are the historical Linux names for the Single
+ * SA_ONESHOT and SA_NOMASK are the historical Beep names for the Single
  * Unix names RESETHAND and NODEFER respectively.
  */
 

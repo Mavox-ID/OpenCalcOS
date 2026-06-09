@@ -7,13 +7,13 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mtd/mtd.h>
+#include <beep/slab.h>
+#include <beep/types.h>
 
 #include <asm/addrspace.h>
 #include <asm/bootinfo.h>
@@ -29,7 +29,7 @@
 static char version[] __initdata =
 	"ms02-nv.c: v.1.0.0  13 Aug 2001  Maciej W. Rozycki.\n";
 
-MODULE_AUTHOR("Maciej W. Rozycki <macro@linux-mips.org>");
+MODULE_AUTHOR("Maciej W. Rozycki <macro@beep-mips.org>");
 MODULE_DESCRIPTION("DEC MS02-NV NVRAM module driver");
 MODULE_LICENSE("GPL");
 

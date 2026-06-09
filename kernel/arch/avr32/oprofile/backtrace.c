@@ -13,9 +13,9 @@
  *
  */
 
-#include <linux/oprofile.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
+#include <beep/oprofile.h>
+#include <beep/sched.h>
+#include <beep/uaccess.h>
 
 /* The first two words of each frame on the stack look like this if we have
  * frame pointers */

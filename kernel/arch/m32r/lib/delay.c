@@ -1,14 +1,14 @@
 /*
- * linux/arch/m32r/lib/delay.c
+ * beep/arch/m32r/lib/delay.c
  *
  * Copyright (c) 2002  Hitoshi Yamamoto, Hirokazu Takata
  * Copyright (c) 2004  Hirokazu Takata
  */
 
-#include <linux/param.h>
-#include <linux/module.h>
+#include <beep/param.h>
+#include <beep/module.h>
 #ifdef CONFIG_SMP
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include <asm/current.h>
 #include <asm/smp.h>
 #endif  /* CONFIG_SMP */

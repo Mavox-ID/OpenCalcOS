@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/platforms/mappi/io.c
+ *  beep/arch/m32r/platforms/mappi/io.c
  *
  *  Typical I/O routines for Mappi board.
  *
@@ -13,7 +13,7 @@
 #include <asm/byteorder.h>
 
 #if defined(CONFIG_PCMCIA) && defined(CONFIG_M32R_PCC)
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define M32R_PCC_IOMAP_SIZE 0x1000
 

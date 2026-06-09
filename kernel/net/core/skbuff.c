@@ -38,28 +38,28 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/kmemcheck.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/kmemcheck.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/in.h>
+#include <beep/inet.h>
+#include <beep/slab.h>
+#include <beep/netdevice.h>
 #ifdef CONFIG_NET_CLS_ACT
 #include <net/pkt_sched.h>
 #endif
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/splice.h>
-#include <linux/cache.h>
-#include <linux/rtnetlink.h>
-#include <linux/init.h>
-#include <linux/scatterlist.h>
-#include <linux/errqueue.h>
-#include <linux/prefetch.h>
+#include <beep/string.h>
+#include <beep/skbuff.h>
+#include <beep/splice.h>
+#include <beep/cache.h>
+#include <beep/rtnetlink.h>
+#include <beep/init.h>
+#include <beep/scatterlist.h>
+#include <beep/errqueue.h>
+#include <beep/prefetch.h>
 
 #include <net/protocol.h>
 #include <net/dst.h>
@@ -69,7 +69,7 @@
 
 #include <asm/uaccess.h>
 #include <trace/events/skb.h>
-#include <linux/highmem.h>
+#include <beep/highmem.h>
 
 struct kmem_cache *skbuff_head_cache __read_mostly;
 static struct kmem_cache *skbuff_fclone_cache __read_mostly;

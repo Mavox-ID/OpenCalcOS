@@ -11,9 +11,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/sh_intc.h>
+#include <beep/pci.h>
+#include <beep/io.h>
+#include <beep/sh_intc.h>
 #include "pci-sh4.h"
 
 #define IRQ_INTA	evt2irq(0xa20)

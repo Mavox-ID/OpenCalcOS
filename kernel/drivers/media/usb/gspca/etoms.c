@@ -1,5 +1,5 @@
 /*
- * Etoms Et61x151 GPL Linux driver by Michel Xhaard (09/09/2004)
+ * Etoms Et61x151 GPL Beep driver by Michel Xhaard (09/09/2004)
  *
  * V4L2 by Jean-Francois Moine <http://moinejf.free.fr>
  *

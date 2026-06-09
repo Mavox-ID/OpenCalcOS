@@ -13,18 +13,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/cpufreq.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/hardirq.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/adb.h>
+#include <beep/pmu.h>
+#include <beep/cpufreq.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/hardirq.h>
 #include <asm/prom.h>
 #include <asm/machdep.h>
 #include <asm/irq.h>

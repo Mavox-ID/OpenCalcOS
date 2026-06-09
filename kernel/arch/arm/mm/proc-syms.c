@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/proc-syms.c
+ *  beep/arch/arm/mm/proc-syms.c
  *
  *  Copyright (C) 2000-2002 Russell King
  *
@@ -7,8 +7,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <beep/module.h>
+#include <beep/mm.h>
 
 #include <asm/cacheflush.h>
 #include <asm/proc-fns.h>

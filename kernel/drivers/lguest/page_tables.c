@@ -9,19 +9,19 @@
 
 /* Copyright (C) Rusty Russell IBM Corporation 2006.
  * GPL v2 and any later version */
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/random.h>
-#include <linux/percpu.h>
+#include <beep/mm.h>
+#include <beep/gfp.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/random.h>
+#include <beep/percpu.h>
 #include <asm/tlbflush.h>
 #include <asm/uaccess.h>
 #include "lg.h"
 
 /*M:008
  * We hold reference to pages, which prevents them from being swapped.
- * It'd be nice to have a callback in the "struct mm_struct" when Linux wants
+ * It'd be nice to have a callback in the "struct mm_struct" when Beep wants
  * to swap out.  If we had this, and a shrinker callback to trim PTE pages, we
  * could probably consider launching Guests as non-root.
 :*/
@@ -833,7 +833,7 @@ void guest_new_pagetable(struct lg_cpu *cpu, unsigned long pgtable)
  * The Guest expects _PAGE_ACCESSED to be set on its PTE the first time a page
  * is read from, and _PAGE_DIRTY when it's written to.
  *
- * But Avi Kivity pointed out that most Operating Systems (Linux included) set
+ * But Avi Kivity pointed out that most Operating Systems (Beep included) set
  * these bits on PTEs immediately anyway.  This is done to save the CPU from
  * having to update them, but it helps us the same way: if they set
  * _PAGE_ACCESSED then we can put a read-only PTE entry in immediately, and if

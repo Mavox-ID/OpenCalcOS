@@ -19,24 +19,24 @@
  *
  */
 
-#include <linux/netdevice.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/can/platform/flexcan.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/netdevice.h>
+#include <beep/can.h>
+#include <beep/can/dev.h>
+#include <beep/can/error.h>
+#include <beep/can/platform/flexcan.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/if_arp.h>
+#include <beep/if_ether.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/platform_device.h>
+#include <beep/pinctrl/consumer.h>
 
 #define DRV_NAME			"flexcan"
 

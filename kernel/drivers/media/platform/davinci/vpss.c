@@ -17,14 +17,14 @@
  *
  * common vpss system module platform driver for all video drivers.
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/compiler.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/compiler.h>
+#include <beep/io.h>
 #include <mach/hardware.h>
 #include <media/davinci/vpss.h>
 

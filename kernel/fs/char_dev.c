@@ -1,26 +1,26 @@
 /*
- *  linux/fs/char_dev.c
+ *  beep/fs/char_dev.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/kdev_t.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/kdev_t.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
+#include <beep/major.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
 
-#include <linux/kobject.h>
-#include <linux/kobj_map.h>
-#include <linux/cdev.h>
-#include <linux/mutex.h>
-#include <linux/backing-dev.h>
-#include <linux/tty.h>
+#include <beep/kobject.h>
+#include <beep/kobj_map.h>
+#include <beep/cdev.h>
+#include <beep/mutex.h>
+#include <beep/backing-dev.h>
+#include <beep/tty.h>
 
 #include "internal.h"
 

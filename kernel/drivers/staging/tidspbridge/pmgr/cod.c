@@ -20,12 +20,12 @@
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*  ----------------------------------- Host OS */
 #include <dspbridge/host_os.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
+#include <beep/fs.h>
+#include <beep/uaccess.h>
 
 /*  ----------------------------------- DSP/BIOS Bridge */
 #include <dspbridge/dbdefs.h>

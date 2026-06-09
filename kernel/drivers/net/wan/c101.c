@@ -1,5 +1,5 @@
 /*
- * Moxa C101 synchronous serial card driver for Linux
+ * Moxa C101 synchronous serial card driver for Beep
  *
  * Copyright (C) 2000-2003 Krzysztof Halasa <khc@pm.waw.pl>
  *
@@ -7,7 +7,7 @@
  * under the terms of version 2 of the GNU General Public License
  * as published by the Free Software Foundation.
  *
- * For information see <http://www.kernel.org/pub/linux/utils/net/hdlc/>
+ * For information see <http://www.kernel.org/pub/beep/utils/net/hdlc/>
  *
  * Sources of information:
  *    Hitachi HD64570 SCA User's Manual
@@ -16,18 +16,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/capability.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/netdevice.h>
-#include <linux/hdlc.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/capability.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/moduleparam.h>
+#include <beep/netdevice.h>
+#include <beep/hdlc.h>
+#include <beep/delay.h>
 #include <asm/io.h>
 
 #include "hd64570.h"

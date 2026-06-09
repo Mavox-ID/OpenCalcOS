@@ -1,5 +1,5 @@
 /*
- * (C) 2002 - 2003 Dominik Brodowski <linux@brodo.de>
+ * (C) 2002 - 2003 Dominik Brodowski <beep@brodo.de>
  *
  *  Licensed under the terms of the GNU GPL License version 2.
  *
@@ -8,11 +8,11 @@
  *  BIG FAT DISCLAIMER: Work in progress code. Possibly *dangerous*
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
 
 #include <asm/msr.h>
 #include <asm/tsc.h>
@@ -209,7 +209,7 @@ static unsigned int pentium4_get_frequency(void)
 
 	if (!fsb)
 		printk(KERN_DEBUG PFX "couldn't detect FSB speed. "
-				"Please send an e-mail to <linux@brodo.de>\n");
+				"Please send an e-mail to <beep@brodo.de>\n");
 
 	/* Multiplier. */
 	mult = msr_lo >> 24;
@@ -474,6 +474,6 @@ MODULE_PARM_DESC(relaxed_check,
 		"Don't do all checks for speedstep capability.");
 #endif
 
-MODULE_AUTHOR("Dominik Brodowski <linux@brodo.de>");
+MODULE_AUTHOR("Dominik Brodowski <beep@brodo.de>");
 MODULE_DESCRIPTION("Library for Intel SpeedStep 1 or 2 cpufreq drivers.");
 MODULE_LICENSE("GPL");

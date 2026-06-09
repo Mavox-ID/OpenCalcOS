@@ -3,7 +3,7 @@
  *
  * Copyright 2008-2009 Analog Devices Inc.
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucbeep.org/
  *
  * Licensed under the GPL-2 or later.
  */
@@ -12,20 +12,20 @@
 #define DEV_NAME "ttyBFJC"
 #define pr_fmt(fmt) DRV_NAME ": " fmt
 
-#include <linux/circ_buf.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/atomic.h>
+#include <beep/circ_buf.h>
+#include <beep/console.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/kernel.h>
+#include <beep/kthread.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/atomic.h>
 
 #define pr_init(fmt, args...) ({ static const __initconst char __fmt[] = fmt; printk(__fmt, ## args); })
 

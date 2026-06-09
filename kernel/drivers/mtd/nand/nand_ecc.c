@@ -34,17 +34,17 @@
  * The STANDALONE macro is useful when running the code outside the kernel
  * e.g. when running the code in a testbed or a benchmark program.
  * When STANDALONE is used, the module related macros are commented out
- * as well as the linux include files.
+ * as well as the beep include files.
  * Instead a private definition of mtd_info is given to satisfy the compiler
  * (the code does not use mtd_info, so the code does not care)
  */
 #ifndef STANDALONE
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand_ecc.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/nand_ecc.h>
 #include <asm/byteorder.h>
 #else
 #include <stdint.h>

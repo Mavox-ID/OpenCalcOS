@@ -18,14 +18,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/88pm860x.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/mfd/88pm860x.h>
+#include <beep/slab.h>
 
 #define PM8607_WAKEUP		0x0b
 

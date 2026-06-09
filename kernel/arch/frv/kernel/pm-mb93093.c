@@ -10,13 +10,13 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/sysctl.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/pm.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/sysctl.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
 #include <asm/uaccess.h>
 
 #include <asm/mb86943a.h>

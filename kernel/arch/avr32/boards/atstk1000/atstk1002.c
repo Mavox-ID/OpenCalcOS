@@ -7,16 +7,16 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/clk.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/at73c213.h>
-#include <linux/atmel-mci.h>
+#include <beep/clk.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/at73c213.h>
+#include <beep/atmel-mci.h>
 
 #include <video/atmel_lcdc.h>
 
@@ -48,7 +48,7 @@ unsigned long at32_board_osc_rates[3] = {
  * difference we end up handling here is the NAND flash.
  */
 #ifdef CONFIG_BOARD_ATSTK1006
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/partitions.h>
 #include <mach/smc.h>
 
 static struct smc_timing nand_timing __initdata = {

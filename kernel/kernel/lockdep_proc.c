@@ -11,13 +11,13 @@
  * Code for /proc/lockdep and /proc/lockdep_stats:
  *
  */
-#include <linux/export.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/kallsyms.h>
-#include <linux/debug_locks.h>
-#include <linux/vmalloc.h>
-#include <linux/sort.h>
+#include <beep/export.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/kallsyms.h>
+#include <beep/debug_locks.h>
+#include <beep/vmalloc.h>
+#include <beep/sort.h>
 #include <asm/uaccess.h>
 #include <asm/div64.h>
 

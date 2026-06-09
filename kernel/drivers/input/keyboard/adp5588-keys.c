@@ -2,26 +2,26 @@
  * File: drivers/input/keyboard/adp5588_keys.c
  * Description:  keypad driver for ADP5588 and ADP5587
  *		 I2C QWERTY Keypad and IO Expander
- * Bugs: Enter bugs at http://blackfin.uclinux.org/
+ * Bugs: Enter bugs at http://blackfin.ucbeep.org/
  *
  * Copyright (C) 2008-2010 Analog Devices Inc.
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/workqueue.h>
-#include <linux/errno.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/workqueue.h>
+#include <beep/errno.h>
+#include <beep/pm.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/i2c.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
 
-#include <linux/i2c/adp5588.h>
+#include <beep/i2c/adp5588.h>
 
 /* Key Event Register xy */
 #define KEY_EV_PRESSED		(1 << 7)
@@ -657,5 +657,5 @@ static struct i2c_driver adp5588_driver = {
 module_i2c_driver(adp5588_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("ADP5588/87 Keypad driver");

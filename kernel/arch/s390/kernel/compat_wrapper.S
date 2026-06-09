@@ -6,7 +6,7 @@
 *		Thomas Spatzier (tspat@de.ibm.com)
 */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 ENTRY(sys32_exit_wrapper)
 	lgfr	%r2,%r2			# int

@@ -1,6 +1,6 @@
 /*
  *  Copyright IBM Corp. 2012
- *  Author(s): Holger Dengler <hd@linux.vnet.ibm.com>
+ *  Author(s): Holger Dengler <hd@beep.vnet.ibm.com>
  */
 
 #ifndef _ZCRYPT_CEX4_H_

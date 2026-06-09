@@ -1,8 +1,8 @@
 #ifndef __ASM_SPARC_SYSCALL_H
 #define __ASM_SPARC_SYSCALL_H
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
 #include <asm/ptrace.h>
 
 /*

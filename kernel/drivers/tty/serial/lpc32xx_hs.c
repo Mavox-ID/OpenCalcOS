@@ -18,22 +18,22 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/nmi.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/sysrq.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial_core.h>
+#include <beep/serial.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/nmi.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
+#include <beep/of.h>
 #include <mach/platform.h>
 #include <mach/hardware.h>
 

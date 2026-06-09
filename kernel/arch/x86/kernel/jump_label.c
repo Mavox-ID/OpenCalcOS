@@ -4,13 +4,13 @@
  * Copyright (C) 2009 Jason Baron <jbaron@redhat.com>
  *
  */
-#include <linux/jump_label.h>
-#include <linux/memory.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/jhash.h>
-#include <linux/cpu.h>
+#include <beep/jump_label.h>
+#include <beep/memory.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/jhash.h>
+#include <beep/cpu.h>
 #include <asm/kprobes.h>
 #include <asm/alternative.h>
 

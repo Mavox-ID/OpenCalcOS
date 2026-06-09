@@ -5,16 +5,16 @@
  *
  * Licensed under the GPL-2.
  */
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
+#include <beep/export.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/spi/spi.h>
+#include <beep/slab.h>
 #include <asm/unaligned.h>
 
-#include <linux/iio/iio.h>
+#include <beep/iio/iio.h>
 #include "../ring_sw.h"
-#include <linux/iio/trigger_consumer.h>
+#include <beep/iio/trigger_consumer.h>
 #include "ade7758.h"
 
 /**

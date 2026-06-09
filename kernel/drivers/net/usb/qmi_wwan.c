@@ -10,14 +10,14 @@
  * version 2 as published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/usbnet.h>
-#include <linux/usb/cdc-wdm.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/usb.h>
+#include <beep/usb/cdc.h>
+#include <beep/usb/usbnet.h>
+#include <beep/usb/cdc-wdm.h>
 
 /* This driver supports wwan (3G/LTE/?) devices using a vendor
  * specific management protocol called Qualcomm MSM Interface (QMI) -

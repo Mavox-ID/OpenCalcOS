@@ -12,7 +12,7 @@
  * While read{b,w,l,q} and write{b,w,l,q} contain memory barriers
  * automatically, there are also __raw versions, which do not.
  */
-#include <linux/errno.h>
+#include <beep/errno.h>
 #include <asm/cache.h>
 #include <asm/addrspace.h>
 #include <asm/machvec.h>

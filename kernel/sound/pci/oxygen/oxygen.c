@@ -48,10 +48,10 @@
  *   GPO 0 -> route line-in (0) or AC97 output (1) to ADC input
  */
 
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
+#include <beep/pci.h>
+#include <beep/module.h>
 #include <sound/ac97_codec.h>
 #include <sound/control.h>
 #include <sound/core.h>

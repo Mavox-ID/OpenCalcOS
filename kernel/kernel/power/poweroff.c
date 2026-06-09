@@ -4,13 +4,13 @@
  * This file is released under the GPL v2
  */
 
-#include <linux/kernel.h>
-#include <linux/sysrq.h>
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/workqueue.h>
-#include <linux/reboot.h>
-#include <linux/cpumask.h>
+#include <beep/kernel.h>
+#include <beep/sysrq.h>
+#include <beep/init.h>
+#include <beep/pm.h>
+#include <beep/workqueue.h>
+#include <beep/reboot.h>
+#include <beep/cpumask.h>
 
 /*
  * When the user hits Sys-Rq o to power down the machine this is the

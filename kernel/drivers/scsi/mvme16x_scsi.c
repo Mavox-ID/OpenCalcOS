@@ -1,18 +1,18 @@
 /*
- * Detection routine for the NCR53c710 based MVME16x SCSI Controllers for Linux.
+ * Detection routine for the NCR53c710 based MVME16x SCSI Controllers for Beep.
  *
  * Based on work by Alan Hourihane
  *
- * Rewritten to use 53c700.c by Kars de Jong <jongk@linux-m68k.org>
+ * Rewritten to use 53c700.c by Kars de Jong <jongk@beep-m68k.org>
  */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 #include <asm/mvme16xhw.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_device.h>
@@ -21,7 +21,7 @@
 
 #include "53c700.h"
 
-MODULE_AUTHOR("Kars de Jong <jongk@linux-m68k.org>");
+MODULE_AUTHOR("Kars de Jong <jongk@beep-m68k.org>");
 MODULE_DESCRIPTION("MVME16x NCR53C710 driver");
 MODULE_LICENSE("GPL");
 

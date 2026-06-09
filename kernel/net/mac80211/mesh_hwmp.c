@@ -7,8 +7,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/slab.h>
-#include <linux/etherdevice.h>
+#include <beep/slab.h>
+#include <beep/etherdevice.h>
 #include <asm/unaligned.h>
 #include "wme.h"
 #include "mesh.h"

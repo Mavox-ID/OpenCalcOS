@@ -4,15 +4,15 @@
  *  Copyright (C) 2000 Andrea Arcangeli <andrea@suse.de> SuSE
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/percpu.h>
-#include <linux/start_kernel.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/percpu.h>
+#include <beep/start_kernel.h>
+#include <beep/io.h>
+#include <beep/memblock.h>
 
 #include <asm/processor.h>
 #include <asm/proto.h>

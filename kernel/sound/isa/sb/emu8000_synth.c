@@ -21,8 +21,8 @@
  */
 
 #include "emu8000_local.h"
-#include <linux/init.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/module.h>
 #include <sound/initval.h>
 
 MODULE_AUTHOR("Takashi Iwai, Steve Ratcliffe");

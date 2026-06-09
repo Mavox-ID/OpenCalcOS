@@ -25,7 +25,7 @@
  * in the file called LICENSE.GPL.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel Beep Wireless <ilw@beep.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  * BSD LICENSE
@@ -63,8 +63,8 @@
 #ifndef __iwl_trans_h__
 #define __iwl_trans_h__
 
-#include <linux/ieee80211.h>
-#include <linux/mm.h> /* for page_address */
+#include <beep/ieee80211.h>
+#include <beep/mm.h> /* for page_address */
 
 #include "iwl-debug.h"
 #include "iwl-config.h"
@@ -144,7 +144,7 @@ struct iwl_cmd_header {
 	 * example, uCode issues REPLY_RX when it sends a received frame
 	 * to the driver; it is not a direct response to any driver command.
 	 *
-	 * The Linux driver uses the following format:
+	 * The Beep driver uses the following format:
 	 *
 	 *  0:7		tfd index - position within TX queue
 	 *  8:12	TX queue id

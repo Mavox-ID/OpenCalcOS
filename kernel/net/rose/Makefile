@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux Rose (X.25 PLP) layer.
+# Makefile for the Beep Rose (X.25 PLP) layer.
 #
 
 obj-$(CONFIG_ROSE) += rose.o

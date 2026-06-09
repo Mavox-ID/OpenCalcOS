@@ -8,17 +8,17 @@
  *
  */
 
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/namei.h>
-#include <linux/fs.h>
+#include <beep/kvm_host.h>
+#include <beep/kvm.h>
+#include <beep/uaccess.h>
+#include <beep/vmalloc.h>
+#include <beep/errno.h>
+#include <beep/spinlock.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/namei.h>
+#include <beep/fs.h>
 #include "irq.h"
 
 static struct kvm_assigned_dev_kernel *kvm_find_assigned_dev(struct list_head *head,

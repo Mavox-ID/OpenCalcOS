@@ -679,7 +679,7 @@ config TOUCHSCREEN_USB_COMPOSITE
 	  - EasyTouch USB Touch Controller from Data Modul
 	  - e2i (Mimo monitors)
 
-	  Have a look at <http://linux.chapter7.ch/touchkit/> for
+	  Have a look at <http://beep.chapter7.ch/touchkit/> for
 	  a usage description and the required user-space stuff.
 
 	  To compile this driver as a module, choose M here: the

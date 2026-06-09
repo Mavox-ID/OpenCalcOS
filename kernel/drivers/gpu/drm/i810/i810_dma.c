@@ -1,8 +1,8 @@
-/* i810_dma.c -- DMA support for the i810 -*- linux-c -*-
+/* i810_dma.c -- DMA support for the i810 -*- beep-c -*-
  * Created: Mon Dec 13 01:50:01 1999 by jhartmann@precisioninsight.com
  *
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA Beep Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -24,8 +24,8 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  *
- * Authors: Rickard E. (Rik) Faith <faith@valinux.com>
- *	    Jeff Hartmann <jhartmann@valinux.com>
+ * Authors: Rickard E. (Rik) Faith <faith@vabeep.com>
+ *	    Jeff Hartmann <jhartmann@vabeep.com>
  *          Keith Whitwell <keith@tungstengraphics.com>
  *
  */
@@ -33,10 +33,10 @@
 #include <drm/drmP.h>
 #include <drm/i810_drm.h>
 #include "i810_drv.h"
-#include <linux/interrupt.h>	/* For task queue support */
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
+#include <beep/interrupt.h>	/* For task queue support */
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/pagemap.h>
 
 #define I810_BUF_FREE		2
 #define I810_BUF_CLIENT		1

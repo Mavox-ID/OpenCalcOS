@@ -7,10 +7,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/random.h>
-#include <linux/netfilter.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/random.h>
+#include <beep/netfilter.h>
+#include <beep/export.h>
 
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_core.h>

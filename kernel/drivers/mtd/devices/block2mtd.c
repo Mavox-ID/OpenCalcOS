@@ -6,17 +6,17 @@
  *
  * Licence: GPL
  */
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/pagemap.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mutex.h>
-#include <linux/mount.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/blkdev.h>
+#include <beep/bio.h>
+#include <beep/pagemap.h>
+#include <beep/list.h>
+#include <beep/init.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mutex.h>
+#include <beep/mount.h>
+#include <beep/slab.h>
 
 #define ERROR(fmt, args...) printk(KERN_ERR "block2mtd: " fmt "\n" , ## args)
 #define INFO(fmt, args...) printk(KERN_INFO "block2mtd: " fmt "\n" , ## args)

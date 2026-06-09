@@ -1,8 +1,8 @@
-/* linux/arch/arm/plat-s3c/pm-check.c
- *  originally in linux/arch/arm/plat-s3c24xx/pm.c
+/* beep/arch/arm/plat-s3c/pm-check.c
+ *  originally in beep/arch/arm/plat-s3c24xx/pm.c
  *
  * Copyright (c) 2004-2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk
+ *	http://armbeep.simtec.co.uk
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C Power Mangament - suspend/resume memory corruptiuon check.
@@ -12,12 +12,12 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/suspend.h>
-#include <linux/init.h>
-#include <linux/crc32.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/suspend.h>
+#include <beep/init.h>
+#include <beep/crc32.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
 
 #include <plat/pm.h>
 

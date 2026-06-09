@@ -8,16 +8,16 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
 #if defined(CONFIG_USB_ISP1362_HCD) || defined(CONFIG_USB_ISP1362_HCD_MODULE)
-#include <linux/usb/isp1362.h>
+#include <beep/usb/isp1362.h>
 #endif
-#include <linux/irq.h>
+#include <beep/irq.h>
 
 #include <asm/dma.h>
 #include <asm/bfin5xx_spi.h>
@@ -68,7 +68,7 @@ static struct platform_device dm9000_device = {
 #endif
 
 #if defined(CONFIG_SMC91X) || defined(CONFIG_SMC91X_MODULE)
-#include <linux/smc91x.h>
+#include <beep/smc91x.h>
 
 static struct smc91x_platdata smc91x_info = {
 	.flags = SMC91X_USE_16BIT | SMC91X_NOWAIT,
@@ -140,7 +140,7 @@ static struct mtd_partition bfin_spi_flash_partitions[] = {
 		.size =   0x30000,
 		.offset = 0x40000
 	}, {
-		.name = "linux kernel (spi)",
+		.name = "beep kernel (spi)",
 		.size =   0x150000,
 		.offset =  0x70000
 	}, {
@@ -311,8 +311,8 @@ static struct platform_device bfin_sir0_device = {
 
 #if defined(CONFIG_SERIAL_8250) || defined(CONFIG_SERIAL_8250_MODULE)
 
-#include <linux/serial_8250.h>
-#include <linux/serial.h>
+#include <beep/serial_8250.h>
+#include <beep/serial.h>
 
 /*
  * Configuration for two 16550 UARTS in FPGA at addresses 0x20200000 and 0x202000010.

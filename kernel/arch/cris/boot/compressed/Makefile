@@ -2,8 +2,8 @@
 # arch/cris/boot/compressed/Makefile
 #
 
-asflags-y += $(LINUXINCLUDE)
-ccflags-y += -O2 $(LINUXINCLUDE)
+asflags-y += $(BEEPINCLUDE)
+ccflags-y += -O2 $(BEEPINCLUDE)
 
 # asflags-$(CONFIG_ETRAX_ARCH_V32) += -I$(srctree)/include/asm/mach \
 # 				    -I$(srctree)/include/asm/arch
@@ -23,7 +23,7 @@ OBJCOPYFLAGS = -O binary --remove-section=.bss
 quiet_cmd_image = BUILD   $@
 cmd_image = cat $(obj)/decompress.bin $(obj)/piggy.gz > $@
 
-targets := vmlinux piggy.gz decompress.o decompress.bin
+targets := vmbeep piggy.gz decompress.o decompress.bin
 
 $(obj)/decompress.o: $(OBJECTS) FORCE
 	$(call if_changed,ld)
@@ -31,7 +31,7 @@ $(obj)/decompress.o: $(OBJECTS) FORCE
 $(obj)/decompress.bin: $(obj)/decompress.o FORCE
 	$(call if_changed,objcopy)
 
-$(obj)/vmlinux: $(obj)/piggy.gz $(obj)/decompress.bin FORCE
+$(obj)/vmbeep: $(obj)/piggy.gz $(obj)/decompress.bin FORCE
 	$(call if_changed,image)
 
 $(obj)/piggy.gz: $(obj)/../Image FORCE

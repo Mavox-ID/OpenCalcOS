@@ -10,7 +10,7 @@
 #ifndef EFX_FILTER_H
 #define EFX_FILTER_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /**
  * enum efx_filter_type - type of hardware filter

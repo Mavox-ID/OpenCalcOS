@@ -11,16 +11,16 @@
  *
  */
 
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/videodev2.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
-#include <linux/version.h>
+#include <beep/atomic.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/videodev2.h>
+#include <beep/vmalloc.h>
+#include <beep/wait.h>
+#include <beep/version.h>
 #include <asm/unaligned.h>
 
 #include <media/v4l2-common.h>
@@ -1870,7 +1870,7 @@ static int uvc_probe(struct usb_interface *intf,
 		uvc_printk(KERN_INFO, "Forcing device quirks to 0x%x by module "
 			"parameter for testing purpose.\n", dev->quirks);
 		uvc_printk(KERN_INFO, "Please report required quirks to the "
-			"linux-uvc-devel mailing list.\n");
+			"beep-uvc-devel mailing list.\n");
 	}
 
 	/* Register the media and V4L2 devices. */
@@ -1882,7 +1882,7 @@ static int uvc_probe(struct usb_interface *intf,
 			sizeof(dev->mdev.serial));
 	strcpy(dev->mdev.bus_info, udev->devpath);
 	dev->mdev.hw_revision = le16_to_cpu(udev->descriptor.bcdDevice);
-	dev->mdev.driver_version = LINUX_VERSION_CODE;
+	dev->mdev.driver_version = BEEP_VERSION_CODE;
 	if (media_device_register(&dev->mdev) < 0)
 		goto error;
 

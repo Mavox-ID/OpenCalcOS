@@ -1,5 +1,5 @@
 /*
- * An implementation of key value pair (KVP) functionality for Linux.
+ * An implementation of key value pair (KVP) functionality for Beep.
  *
  *
  * Copyright (C) 2010, Novell, Inc.
@@ -34,9 +34,9 @@
 #include <ctype.h>
 #include <errno.h>
 #include <arpa/inet.h>
-#include <linux/connector.h>
-#include <linux/hyperv.h>
-#include <linux/netlink.h>
+#include <beep/connector.h>
+#include <beep/hyperv.h>
+#include <beep/netlink.h>
 #include <ifaddrs.h>
 #include <netdb.h>
 #include <syslog.h>

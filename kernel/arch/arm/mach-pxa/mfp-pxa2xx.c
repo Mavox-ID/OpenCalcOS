@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/mfp-pxa2xx.c
+ *  beep/arch/arm/mach-pxa/mfp-pxa2xx.c
  *
  *  PXA2xx pin mux configuration support
  *
@@ -12,13 +12,13 @@
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/syscore_ops.h>
+#include <beep/gpio.h>
+#include <beep/gpio-pxa.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/syscore_ops.h>
 
 #include <mach/pxa2xx-regs.h>
 #include <mach/mfp-pxa2xx.h>

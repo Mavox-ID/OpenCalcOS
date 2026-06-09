@@ -10,20 +10,20 @@
  * more details.
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/scatterlist.h>
-#include <linux/skbuff.h>
-#include <linux/mm.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/random.h>
+#include <beep/scatterlist.h>
+#include <beep/skbuff.h>
+#include <beep/mm.h>
 #include <asm/string.h>
 
 #include <net/lib80211.h>
 
-#include <linux/crypto.h>
-#include <linux/crc32.h>
+#include <beep/crypto.h>
+#include <beep/crc32.h>
 
 MODULE_AUTHOR("Jouni Malinen");
 MODULE_DESCRIPTION("lib80211 crypt: WEP");

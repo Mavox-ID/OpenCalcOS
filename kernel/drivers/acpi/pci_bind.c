@@ -23,12 +23,12 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/pci-acpi.h>
-#include <linux/acpi.h>
-#include <linux/pm_runtime.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/pci-acpi.h>
+#include <beep/acpi.h>
+#include <beep/pm_runtime.h>
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
 

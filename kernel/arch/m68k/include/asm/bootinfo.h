@@ -1,5 +1,5 @@
 /*
-** asm/bootinfo.h -- Definition of the Linux/m68k boot information structure
+** asm/bootinfo.h -- Definition of the Beep/m68k boot information structure
 **
 ** Copyright 1992 by Greg Harp
 **
@@ -273,7 +273,7 @@ struct bootversion {
 #define COMPAT_ATARI_BOOTI_VERSION    MK_BI_VERSION( 1, 0 )
 #define COMPAT_MAC_BOOTI_VERSION      MK_BI_VERSION( 1, 0 )
 
-#include <linux/zorro.h>
+#include <beep/zorro.h>
 
 #define COMPAT_NUM_AUTO    16
 

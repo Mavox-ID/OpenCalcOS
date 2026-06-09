@@ -35,7 +35,7 @@
  * SOFTWARE.
  *
  */
-#include <linux/gfp.h>
+#include <beep/gfp.h>
 
 #include "c2.h"
 #include "c2_vq.h"

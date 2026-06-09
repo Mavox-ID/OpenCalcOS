@@ -17,11 +17,11 @@
  * option) any later version.
  *
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/sysrq.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/sysrq.h>
 #include <asm/io.h>
 
 #include "core.h"

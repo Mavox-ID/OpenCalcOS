@@ -18,19 +18,19 @@
 #define KMSG_COMPONENT "cpu"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/workqueue.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/kernel_stat.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/irqflags.h>
-#include <linux/cpu.h>
-#include <linux/slab.h>
-#include <linux/crash_dump.h>
+#include <beep/workqueue.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/err.h>
+#include <beep/spinlock.h>
+#include <beep/kernel_stat.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/irqflags.h>
+#include <beep/cpu.h>
+#include <beep/slab.h>
+#include <beep/crash_dump.h>
 #include <asm/asm-offsets.h>
 #include <asm/switch_to.h>
 #include <asm/facility.h>

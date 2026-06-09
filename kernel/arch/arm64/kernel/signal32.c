@@ -18,10 +18,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/compat.h>
-#include <linux/signal.h>
-#include <linux/syscalls.h>
-#include <linux/ratelimit.h>
+#include <beep/compat.h>
+#include <beep/signal.h>
+#include <beep/syscalls.h>
+#include <beep/ratelimit.h>
 
 #include <asm/fpsimd.h>
 #include <asm/signal32.h>

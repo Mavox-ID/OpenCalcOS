@@ -63,9 +63,9 @@ in the interface descriptor provided by the 1401. See the USB_INT_ constants
 for the values that this field can hold.
 
 ****************************************************************************
-Linux implementation
+Beep implementation
 
-Although Linux Device Drivers (3rd Edition) was a major source of information,
+Although Beep Device Drivers (3rd Edition) was a major source of information,
 it is very out of date. A lot of information was gleaned from the latest
 usb_skeleton.c code (you need to download the kernel sources to get this).
 
@@ -83,17 +83,17 @@ tracked by anchoring them. Status and debug ioctls are implemented with the
 synchronous non-Urb based transfers.
 */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kref.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/usb.h>
+#include <beep/mutex.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/kref.h>
+#include <beep/uaccess.h>
 
 #include "usb1401.h"
 

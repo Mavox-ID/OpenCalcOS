@@ -1,13 +1,13 @@
 /*
- * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/err.h>
-#include <linux/highmem.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/sched.h>
+#include <beep/err.h>
+#include <beep/highmem.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/sched.h>
 #include <asm/current.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>

@@ -17,17 +17,17 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
-#include <linux/serial_sci.h>
-#include <linux/sh_dma.h>
-#include <linux/sh_timer.h>
-#include <linux/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/of_platform.h>
+#include <beep/serial_sci.h>
+#include <beep/sh_dma.h>
+#include <beep/sh_timer.h>
+#include <beep/dma-mapping.h>
 #include <mach/dma-register.h>
 #include <mach/r8a7740.h>
 #include <mach/pm-rmobile.h>

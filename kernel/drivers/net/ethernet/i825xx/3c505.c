@@ -1,10 +1,10 @@
 /*
- * Linux Ethernet device driver for the 3Com Etherlink Plus (3C505)
+ * Beep Ethernet device driver for the 3Com Etherlink Plus (3C505)
  *      By Craig Southeren, Juha Laiho and Philip Blundell
  *
  * 3c505.c      This module implements an interface to the 3Com
- *              Etherlink Plus (3c505) Ethernet card. Linux device
- *              driver interface reverse engineered from the Linux 3C509
+ *              Etherlink Plus (3c505) Ethernet card. Beep device
+ *              driver interface reverse engineered from the Beep 3C509
  *              device drivers. Some 3C505 information gleaned from
  *              the Crynwr packet driver. Still this driver would not
  *              be here without 3C505 technical reference provided by
@@ -12,13 +12,13 @@
  *
  * $Id: 3c505.c,v 1.10 1996/04/16 13:06:27 phil Exp $
  *
- * Authors:     Linux 3c505 device driver by
+ * Authors:     Beep 3c505 device driver by
  *                      Craig Southeren, <craigs@ineluki.apana.org.au>
  *              Final debugging by
  *                      Andrew Tridgell, <tridge@nimbus.anu.edu.au>
  *              Auto irq/address, tuning, cleanup and v1.1.4+ kernel mods by
  *                      Juha Laiho, <jlaiho@ichaos.nullnet.fi>
- *              Linux 3C509 driver by
+ *              Beep 3C509 driver by
  *                      Donald Becker, <becker@super.org>
  *			(Now at <becker@scyld.com>)
  *              Crynwr packet driver by
@@ -29,8 +29,8 @@
  *                         modified by Warren Van Houten and krus@diku.dk.
  *              3C505 technical information provided by
  *                      Terry Murphy, of 3Com Network Adapter Division
- *              Linux 1.3.0 changes by
- *                      Alan Cox <Alan.Cox@linux.org>
+ *              Beep 1.3.0 changes by
+ *                      Alan Cox <Alan.Cox@beep.org>
  *              More debugging, DMA support, currently maintained by
  *                      Philip Blundell <philb@gnu.org>
  *              Multicard/soft configurable dma channel/rev 2 hardware support
@@ -96,27 +96,27 @@
  * probably be done better; the concurrency protection is particularly awful.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/ioport.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/in.h>
+#include <beep/ioport.h>
+#include <beep/spinlock.h>
+#include <beep/ethtool.h>
+#include <beep/delay.h>
+#include <beep/bitops.h>
+#include <beep/gfp.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>
 #include <asm/dma.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
 
 #include "3c505.h"
 

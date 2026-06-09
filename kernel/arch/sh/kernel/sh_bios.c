@@ -1,5 +1,5 @@
 /*
- *  C interface for trapping into the standard LinuxSH BIOS.
+ *  C interface for trapping into the standard BeepSH BIOS.
  *
  *  Copyright (C) 2000 Greg Banks, Mitch Davis
  *  Copyright (C) 1999, 2000  Niibe Yutaka
@@ -10,12 +10,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/console.h>
+#include <beep/tty.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/delay.h>
 #include <asm/sh_bios.h>
 
 #define BIOS_CALL_CONSOLE_WRITE		0
@@ -67,7 +67,7 @@ void sh_bios_shutdown(unsigned int how)
 
 /*
  * Read the old value of the VBR register to initialise the vector
- * through which debug and BIOS traps are delegated by the Linux trap
+ * through which debug and BIOS traps are delegated by the Beep trap
  * handler.
  */
 void sh_bios_vbr_init(void)

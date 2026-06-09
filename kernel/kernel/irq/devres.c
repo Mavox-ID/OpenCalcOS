@@ -1,7 +1,7 @@
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/gfp.h>
 
 /*
  * Device resource management aware IRQ request/free implementation.

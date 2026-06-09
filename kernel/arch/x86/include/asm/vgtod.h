@@ -2,7 +2,7 @@
 #define _ASM_X86_VGTOD_H
 
 #include <asm/vsyscall.h>
-#include <linux/clocksource.h>
+#include <beep/clocksource.h>
 
 struct vsyscall_gtod_data {
 	seqcount_t	seq;

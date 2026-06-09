@@ -13,21 +13,21 @@
  *
  */
 
-#include <linux/bcd.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/string.h>
+#include <beep/bcd.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/string.h>
 #ifdef CONFIG_RTC_DRV_M41T80_WDT
-#include <linux/fs.h>
-#include <linux/ioctl.h>
-#include <linux/miscdevice.h>
-#include <linux/reboot.h>
-#include <linux/watchdog.h>
+#include <beep/fs.h>
+#include <beep/ioctl.h>
+#include <beep/miscdevice.h>
+#include <beep/reboot.h>
+#include <beep/watchdog.h>
 #endif
 
 #define M41T80_REG_SSEC	0

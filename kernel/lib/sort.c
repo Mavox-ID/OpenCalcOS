@@ -1,13 +1,13 @@
 /*
- * A fast, small, non-recursive O(nlog n) sort for the Linux kernel
+ * A fast, small, non-recursive O(nlog n) sort for the Beep kernel
  *
  * Jan 23 2005  Matt Mackall <mpm@selenic.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sort.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/sort.h>
+#include <beep/slab.h>
 
 static void u32_swap(void *a, void *b, int size)
 {

@@ -1,7 +1,7 @@
 #ifndef __SOUND_UTIL_MEM_H
 #define __SOUND_UTIL_MEM_H
 
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 /*
  *  Copyright (C) 2000 Takashi Iwai <tiwai@suse.de>
  *

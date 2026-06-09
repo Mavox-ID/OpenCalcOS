@@ -10,14 +10,14 @@
  *  (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/err.h>
 #include <asm/types.h>
 #include <loongson.h>
-#include <linux/gpio.h>
+#include <beep/gpio.h>
 
 #define STLS2F_N_GPIO		4
 #define STLS2F_GPIO_IN_OFFSET	16

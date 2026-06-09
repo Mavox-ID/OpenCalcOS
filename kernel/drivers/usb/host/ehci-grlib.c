@@ -26,11 +26,11 @@
  */
 
 
-#include <linux/signal.h>
+#include <beep/signal.h>
 
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <beep/of_irq.h>
+#include <beep/of_address.h>
+#include <beep/of_platform.h>
 
 #define GRUSBHC_HCIVERSION 0x0100 /* Known value of cap. reg. HCIVERSION */
 

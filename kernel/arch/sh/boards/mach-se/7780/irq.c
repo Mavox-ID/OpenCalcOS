@@ -1,5 +1,5 @@
 /*
- * linux/arch/sh/boards/se/7780/irq.c
+ * beep/arch/sh/boards/se/7780/irq.c
  *
  * Copyright (C) 2006,2007  Nobuhiro Iwamatsu
  *
@@ -9,10 +9,10 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
 #include <mach-se/mach/se7780.h>
 
 #define INTC_BASE	0xffd00000

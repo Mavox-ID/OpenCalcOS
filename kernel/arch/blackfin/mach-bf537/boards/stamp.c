@@ -6,31 +6,31 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/plat-ram.h>
-#include <linux/mtd/physmap.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
+#include <beep/device.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/plat-ram.h>
+#include <beep/mtd/physmap.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
 #if defined(CONFIG_USB_ISP1362_HCD) || defined(CONFIG_USB_ISP1362_HCD_MODULE)
-#include <linux/usb/isp1362.h>
+#include <beep/usb/isp1362.h>
 #endif
-#include <linux/i2c.h>
-#include <linux/i2c/adp5588.h>
-#include <linux/etherdevice.h>
-#include <linux/ata_platform.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/usb/sl811.h>
-#include <linux/spi/mmc_spi.h>
-#include <linux/leds.h>
-#include <linux/input.h>
+#include <beep/i2c.h>
+#include <beep/i2c/adp5588.h>
+#include <beep/etherdevice.h>
+#include <beep/ata_platform.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/usb/sl811.h>
+#include <beep/spi/mmc_spi.h>
+#include <beep/leds.h>
+#include <beep/input.h>
 #include <asm/dma.h>
 #include <asm/bfin5xx_spi.h>
 #include <asm/reboot.h>
@@ -38,11 +38,11 @@
 #include <asm/dpmc.h>
 #include <asm/bfin_sport.h>
 #ifdef CONFIG_REGULATOR_FIXED_VOLTAGE
-#include <linux/regulator/fixed.h>
+#include <beep/regulator/fixed.h>
 #endif
-#include <linux/regulator/machine.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regulator/userspace-consumer.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/consumer.h>
+#include <beep/regulator/userspace-consumer.h>
 
 /*
  * Name the Board for the /proc/cpuinfo
@@ -54,7 +54,7 @@ const char bfin_board_name[] = "ADI BF537-STAMP";
  */
 
 #if defined(CONFIG_USB_ISP1760_HCD) || defined(CONFIG_USB_ISP1760_HCD_MODULE)
-#include <linux/usb/isp1760.h>
+#include <beep/usb/isp1760.h>
 static struct resource bfin_isp1760_resources[] = {
 	[0] = {
 		.start  = 0x203C0000,
@@ -89,7 +89,7 @@ static struct platform_device bfin_isp1760_device = {
 #endif
 
 #if defined(CONFIG_KEYBOARD_GPIO) || defined(CONFIG_KEYBOARD_GPIO_MODULE)
-#include <linux/gpio_keys.h>
+#include <beep/gpio_keys.h>
 
 static struct gpio_keys_button bfin_gpio_keys_table[] = {
 	{BTN_0, GPIO_PF2, 1, "gpio-keys: BTN0"},
@@ -148,7 +148,7 @@ static struct platform_device rtc_device = {
 #endif
 
 #if defined(CONFIG_SMC91X) || defined(CONFIG_SMC91X_MODULE)
-#include <linux/smc91x.h>
+#include <beep/smc91x.h>
 
 static struct smc91x_platdata smc91x_info = {
 	.flags = SMC91X_USE_16BIT | SMC91X_NOWAIT,
@@ -329,7 +329,7 @@ static struct platform_device bfin_can_device = {
 #endif
 
 #if defined(CONFIG_BFIN_MAC) || defined(CONFIG_BFIN_MAC_MODULE)
-#include <linux/bfin_mac.h>
+#include <beep/bfin_mac.h>
 static const unsigned short bfin_mac_peripherals[] = P_MII0;
 
 static struct bfin_phydev_platform_data bfin_phydev_data[] = {
@@ -390,7 +390,7 @@ const char *part_probes[] = { "cmdlinepart", "RedBoot", NULL };
 
 static struct mtd_partition bfin_plat_nand_partitions[] = {
 	{
-		.name   = "linux kernel(nand)",
+		.name   = "beep kernel(nand)",
 		.size   = 0x400000,
 		.offset = 0,
 	}, {
@@ -467,7 +467,7 @@ static struct mtd_partition stamp_partitions[] = {
 		.size       = 0x40000,
 		.offset     = 0,
 	}, {
-		.name       = "linux kernel(nor)",
+		.name       = "beep kernel(nor)",
 		.size       = 0x180000,
 		.offset     = MTDPART_OFS_APPEND,
 	}, {
@@ -517,7 +517,7 @@ static struct mtd_partition bfin_spi_flash_partitions[] = {
 		.offset = 0,
 		.mask_flags = MTD_CAP_ROM
 	}, {
-		.name = "linux kernel(spi)",
+		.name = "beep kernel(spi)",
 		.size = 0x180000,
 		.offset = MTDPART_OFS_APPEND,
 	}, {
@@ -541,7 +541,7 @@ static struct bfin5xx_spi_chip spi_flash_chip_info = {
 #endif
 
 #if defined(CONFIG_INPUT_AD714X_SPI) || defined(CONFIG_INPUT_AD714X_SPI_MODULE)
-#include <linux/input/ad714x.h>
+#include <beep/input/ad714x.h>
 
 static struct ad714x_slider_plat ad7147_spi_slider_plat[] = {
 	{
@@ -602,7 +602,7 @@ static struct ad714x_platform_data ad7147_spi_platform_data = {
 #endif
 
 #if defined(CONFIG_INPUT_AD714X_I2C) || defined(CONFIG_INPUT_AD714X_I2C_MODULE)
-#include <linux/input/ad714x.h>
+#include <beep/input/ad714x.h>
 static struct ad714x_button_plat ad7142_i2c_button_plat[] = {
 	{
 		.keycode = BTN_1,
@@ -759,7 +759,7 @@ static struct bfin5xx_spi_chip  mmc_spi_chip_info = {
 #endif
 
 #if defined(CONFIG_TOUCHSCREEN_AD7877) || defined(CONFIG_TOUCHSCREEN_AD7877_MODULE)
-#include <linux/spi/ad7877.h>
+#include <beep/spi/ad7877.h>
 static const struct ad7877_platform_data bfin_ad7877_ts_info = {
 	.model			= 7877,
 	.vref_delay_usecs	= 50,	/* internal, no capacitor */
@@ -776,7 +776,7 @@ static const struct ad7877_platform_data bfin_ad7877_ts_info = {
 #endif
 
 #if defined(CONFIG_TOUCHSCREEN_AD7879) || defined(CONFIG_TOUCHSCREEN_AD7879_MODULE)
-#include <linux/spi/ad7879.h>
+#include <beep/spi/ad7879.h>
 static const struct ad7879_platform_data bfin_ad7879_ts_info = {
 	.model			= 7879,	/* Model = AD7879 */
 	.x_plate_ohms		= 620,	/* 620 Ohm from the touch datasheet */
@@ -793,7 +793,7 @@ static const struct ad7879_platform_data bfin_ad7879_ts_info = {
 #endif
 
 #if defined(CONFIG_INPUT_ADXL34X) || defined(CONFIG_INPUT_ADXL34X_MODULE)
-#include <linux/input/adxl34x.h>
+#include <beep/input/adxl34x.h>
 static const struct adxl34x_platform_data adxl34x_info = {
 	.x_axis_offset = 0,
 	.y_axis_offset = 0,
@@ -838,7 +838,7 @@ static struct bfin5xx_spi_chip enc28j60_spi_chip_info = {
 #endif
 
 #if defined(CONFIG_ADF702X) || defined(CONFIG_ADF702X_MODULE)
-#include <linux/spi/adf702x.h>
+#include <beep/spi/adf702x.h>
 #define TXREG 0x0160A470
 static const u32 adf7021_regs[] = {
 	0x09608FA0,
@@ -880,7 +880,7 @@ static inline void adf702x_mac_init(void) {}
 #endif
 
 #if defined(CONFIG_TOUCHSCREEN_ADS7846) || defined(CONFIG_TOUCHSCREEN_ADS7846_MODULE)
-#include <linux/spi/ads7846.h>
+#include <beep/spi/ads7846.h>
 static int ads7873_get_pendown_state(void)
 {
 	return gpio_get_value(GPIO_PF6);
@@ -908,7 +908,7 @@ static struct mtd_partition bfin_spi_dataflash_partitions[] = {
 		.offset = 0,
 		.mask_flags = MTD_CAP_ROM
 	}, {
-		.name = "linux kernel(spi)",
+		.name = "beep kernel(spi)",
 		.size = 0x180000,
 		.offset = MTDPART_OFS_APPEND,
 	}, {
@@ -1560,7 +1560,7 @@ static struct platform_device bfin_lq035q1_device = {
 
 #if defined(CONFIG_VIDEO_BLACKFIN_CAPTURE) \
 	|| defined(CONFIG_VIDEO_BLACKFIN_CAPTURE_MODULE)
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 #include <media/blackfin/bfin_capture.h>
 #include <media/blackfin/ppi.h>
 
@@ -1902,7 +1902,7 @@ static struct adp5588_kpad_platform_data adp5588_kpad_data = {
 #endif
 
 #if defined(CONFIG_PMIC_ADP5520) || defined(CONFIG_PMIC_ADP5520_MODULE)
-#include <linux/mfd/adp5520.h>
+#include <beep/mfd/adp5520.h>
 
 	/*
 	 *  ADP5520/5501 Backlight Data
@@ -2020,7 +2020,7 @@ static struct adp5588_gpio_platform_data adp5588_gpio_data = {
 #endif
 
 #if defined(CONFIG_BACKLIGHT_ADP8870) || defined(CONFIG_BACKLIGHT_ADP8870_MODULE)
-#include <linux/i2c/adp8870.h>
+#include <beep/i2c/adp8870.h>
 static struct led_info adp8870_leds[] = {
 	{
 		.name = "adp8870-led7",
@@ -2072,7 +2072,7 @@ static struct adp8870_backlight_platform_data adp8870_pdata = {
 #endif
 
 #if defined(CONFIG_BACKLIGHT_ADP8860) || defined(CONFIG_BACKLIGHT_ADP8860_MODULE)
-#include <linux/i2c/adp8860.h>
+#include <beep/i2c/adp8860.h>
 static struct led_info adp8860_leds[] = {
 	{
 		.name = "adp8860-led7",

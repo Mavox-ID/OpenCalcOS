@@ -20,18 +20,18 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/crc32.h>
-#include <linux/bitrev.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/gfp.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/crc32.h>
+#include <beep/bitrev.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/gfp.h>
+#include <beep/interrupt.h>
 #include <asm/io.h>
 #include <asm/macints.h>
 #include <asm/mac_psc.h>

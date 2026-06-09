@@ -1,7 +1,7 @@
 /*
 	ne3210.c
 
-	Linux driver for Novell NE3210 EISA Network Adapter
+	Beep driver for Novell NE3210 EISA Network Adapter
 
 	Copyright (C) 1998, Paul Gortmaker.
 
@@ -11,7 +11,7 @@
 	Information and Code Sources:
 
 	1) Based upon my other EISA 8390 drivers (lne390, es3210, smc-ultra32)
-	2) The existing myriad of other Linux 8390 drivers by Donald Becker.
+	2) The existing myriad of other Beep 8390 drivers by Donald Becker.
 	3) Info for getting IRQ and sh-mem gleaned from the EISA cfg file
 
 	The NE3210 is an EISA shared memory NS8390 implementation.  Shared
@@ -26,17 +26,17 @@
 	Updated to EISA probing API 5/2003 by Marc Zyngier.
 */
 
-#include <linux/module.h>
-#include <linux/eisa.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/mm.h>
+#include <beep/module.h>
+#include <beep/eisa.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/mm.h>
 
 #include <asm/io.h>
 

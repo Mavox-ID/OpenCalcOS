@@ -6,12 +6,12 @@
  */
 #undef DEBUG
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/vmstat.h>
-#include <linux/pagemap.h>
-#include <linux/rwsem.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/hugetlb.h>
+#include <beep/vmstat.h>
+#include <beep/pagemap.h>
+#include <beep/rwsem.h>
 #include <asm/pgtable.h>
 
 #ifdef __HAVE_ARCH_PTE_SPECIAL

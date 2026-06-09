@@ -36,11 +36,11 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/sched.h>
+#include <beep/uaccess.h>
 
 #include "dgrp_common.h"
 
@@ -910,7 +910,7 @@ static int dgrp_tty_open(struct tty_struct *tty, struct file *file)
 
 	if (un->un_open_count == 1) {
 		/*
-		 *  Since all terminal options are always sticky in Linux,
+		 *  Since all terminal options are always sticky in Beep,
 		 *  we don't need the UN_STICKY flag to be handled specially.
 		 */
 		/* clears all the digi flags, leaves serial flags */
@@ -922,7 +922,7 @@ static int dgrp_tty_open(struct tty_struct *tty, struct file *file)
 		/* TODO : include "session" and "pgrp" */
 
 		/*
-		 *  In Linux, all terminal parameters are intended to be sticky.
+		 *  In Beep, all terminal parameters are intended to be sticky.
 		 *  as a result, we "remove" the code which once reset the ports
 		 *  to sane values.
 		 */
@@ -941,7 +941,7 @@ unlock:
 
 done:
 	/*
-	 * Linux does a close for every open, even failed ones!
+	 * Beep does a close for every open, even failed ones!
 	 */
 	if (!counts_were_incremented) {
 		un->un_open_count++;
@@ -1632,13 +1632,13 @@ static int dgrp_tty_write(struct tty_struct *tty,
 
 	/*
 	 *	If space is 0 and its because the ch->tbuf
-	 *	is full, then Linux will handle a callback when queue
+	 *	is full, then Beep will handle a callback when queue
 	 *	space becomes available.
 	 *	tty_write returns count = 0
 	 */
 
 	if (space <= 0) {
-		/* the linux tty_io.c handles this if we return 0 */
+		/* the beep tty_io.c handles this if we return 0 */
 		/* if (fp->flags & O_NONBLOCK) return -EAGAIN; */
 
 		un->un_flag |= UN_EMPTY;
@@ -2632,7 +2632,7 @@ static int dgrp_tty_ioctl(struct tty_struct *tty, unsigned int cmd,
 
 	case TCFLSH:
 		/*
-		 * The linux tty driver doesn't have a flush
+		 * The beep tty driver doesn't have a flush
 		 * input routine for the driver, assuming all backed
 		 * up data is in the line disc. buffers.  However,
 		 * we all know that's not the case.  Here, we
@@ -2676,7 +2676,7 @@ static int dgrp_tty_ioctl(struct tty_struct *tty, unsigned int cmd,
 	case TIOCGETP:
 #endif
 	/*****************************************
-	Linux		HPUX		Function
+	Beep		HPUX		Function
 	TCSETA		TCSETA		- set the termios
 	TCSETAF		TCSETAF		- wait for drain first, then set termios
 	TCSETAW		TCSETAW		- wait for drain, flush the input queue, then set termios
@@ -2703,7 +2703,7 @@ static int dgrp_tty_ioctl(struct tty_struct *tty, unsigned int cmd,
 	case TCSETSF:
 	case TCSETSW:
 		/*
-		 * The linux tty driver doesn't have a flush
+		 * The beep tty driver doesn't have a flush
 		 * input routine for the driver, assuming all backed
 		 * up data is in the line disc. buffers.  However,
 		 * we all know that's not the case.  Here, we
@@ -2744,7 +2744,7 @@ static int dgrp_tty_ioctl(struct tty_struct *tty, unsigned int cmd,
 
 	case TCXONC:
 		/*
-		 * The Linux Line Discipline (LD) would do this for us if we
+		 * The Beep Line Discipline (LD) would do this for us if we
 		 * let it, but we have the special firmware options to do this
 		 * the "right way" regardless of hardware or software flow
 		 * control so we'll do it outselves instead of letting the LD

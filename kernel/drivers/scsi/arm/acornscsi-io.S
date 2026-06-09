@@ -1,11 +1,11 @@
 /*
- *  linux/drivers/acorn/scsi/acornscsi-io.S: Acorn SCSI card IO
+ *  beep/drivers/acorn/scsi/acornscsi-io.S: Acorn SCSI card IO
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #include <asm/assembler.h>
 #include <mach/hardware.h>

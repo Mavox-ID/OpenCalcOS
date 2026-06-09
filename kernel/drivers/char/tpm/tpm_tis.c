@@ -18,15 +18,15 @@
  * published by the Free Software Foundation, version 2 of the
  * License.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pnp.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/acpi.h>
-#include <linux/freezer.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/pnp.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/wait.h>
+#include <beep/acpi.h>
+#include <beep/freezer.h>
 #include "tpm.h"
 
 enum tis_access {

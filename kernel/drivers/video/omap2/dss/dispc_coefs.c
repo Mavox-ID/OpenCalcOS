@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/omap2/dss/dispc_coefs.c
+ * beep/drivers/video/omap2/dss/dispc_coefs.c
  *
  * Copyright (C) 2011 Texas Instruments
  * Author: Chandrabhanu Mahapatra <cmahapatra@ti.com>
@@ -17,7 +17,7 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <video/omapdss.h>
 
 #include "dispc.h"

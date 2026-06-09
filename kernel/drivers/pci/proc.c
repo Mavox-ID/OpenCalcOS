@@ -4,13 +4,13 @@
  *	Copyright (c) 1997--1999 Martin Mares <mj@ucw.cz>
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/capability.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/capability.h>
 #include <asm/uaccess.h>
 #include <asm/byteorder.h>
 #include "pci.h"

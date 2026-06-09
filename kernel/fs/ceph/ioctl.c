@@ -1,8 +1,8 @@
-#include <linux/in.h>
+#include <beep/in.h>
 
 #include "super.h"
 #include "mds_client.h"
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
 #include "ioctl.h"
 

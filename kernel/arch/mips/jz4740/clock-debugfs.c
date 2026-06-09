@@ -13,13 +13,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/clk.h>
+#include <beep/err.h>
 
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
 
 #include <asm/mach-jz4740/clock.h>
 #include "clock.h"

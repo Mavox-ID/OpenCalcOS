@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2002  David McCullough <davidm@snapgear.com>
- * Copyright (C) 2003  Paul Mundt <lethal@linux-sh.org>
+ * Copyright (C) 2003  Paul Mundt <lethal@beep-sh.org>
  *
  * Based on files with the following comments:
  *
@@ -9,13 +9,13 @@
  *           Modified for 7751 Solution Engine by
  *           Ian da Silva and Jeremy Siegel, 2001.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/sched.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/sched.h>
 #include <asm/machvec.h>
 #include <mach/secureedge5410.h>
 #include <asm/irq.h>

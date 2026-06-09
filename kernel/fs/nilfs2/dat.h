@@ -23,9 +23,9 @@
 #ifndef _NILFS_DAT_H
 #define _NILFS_DAT_H
 
-#include <linux/types.h>
-#include <linux/buffer_head.h>
-#include <linux/fs.h>
+#include <beep/types.h>
+#include <beep/buffer_head.h>
+#include <beep/fs.h>
 
 
 struct nilfs_palloc_req;

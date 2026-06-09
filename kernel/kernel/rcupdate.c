@@ -30,23 +30,23 @@
  *		http://lse.sourceforge.net/locking/rcupdate.html
  *
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
-#include <linux/hardirq.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/atomic.h>
+#include <beep/bitops.h>
+#include <beep/percpu.h>
+#include <beep/notifier.h>
+#include <beep/cpu.h>
+#include <beep/mutex.h>
+#include <beep/export.h>
+#include <beep/hardirq.h>
+#include <beep/delay.h>
+#include <beep/module.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/rcu.h>

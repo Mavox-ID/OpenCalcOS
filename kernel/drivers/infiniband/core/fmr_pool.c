@@ -31,12 +31,12 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/jhash.h>
-#include <linux/kthread.h>
+#include <beep/errno.h>
+#include <beep/spinlock.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/jhash.h>
+#include <beep/kthread.h>
 
 #include <rdma/ib_fmr_pool.h>
 

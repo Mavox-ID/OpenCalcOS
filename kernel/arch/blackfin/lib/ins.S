@@ -6,7 +6,7 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/blackfin.h>
 
 .align 2

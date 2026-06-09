@@ -12,8 +12,8 @@
 #ifndef _ASM_HARDIRQ_H
 #define _ASM_HARDIRQ_H
 
-#include <linux/threads.h>
-#include <linux/irq.h>
+#include <beep/threads.h>
+#include <beep/irq.h>
 #include <asm/exceptions.h>
 
 /* assembly code in softirq.h is sensitive to the offsets of these fields */
@@ -25,7 +25,7 @@ typedef struct {
 #endif
 } ____cacheline_aligned irq_cpustat_t;
 
-#include <linux/irq_cpustat.h>	/* Standard mappings for irq_cpustat_t above */
+#include <beep/irq_cpustat.h>	/* Standard mappings for irq_cpustat_t above */
 
 extern void ack_bad_irq(int irq);
 

@@ -8,7 +8,7 @@
  *  as published by the Free Software Foundation; either version
  *  2 of the License, or (at your option) any later version.
  *
- * The linux i2c layer isn't completely suitable for our needs for various
+ * The beep i2c layer isn't completely suitable for our needs for various
  * reasons ranging from too late initialisation to semantics not perfectly
  * matching some requirements of the apple platform functions etc...
  *
@@ -21,7 +21,7 @@
  * The drivers in this file are synchronous/blocking. In addition, the
  * keywest one is fairly slow due to the use of msleep instead of interrupts
  * as the interrupt is currently used by i2c-keywest. In the long run, we
- * might want to get rid of those high-level interfaces to linux i2c layer
+ * might want to get rid of those high-level interfaces to beep i2c layer
  * either completely (converting all drivers) or replacing them all with a
  * single stub driver on top of this one. Once done, the interrupt will be
  * available for our use.
@@ -30,20 +30,20 @@
 #undef DEBUG
 #undef DEBUG_LOW
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/mutex.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/adb.h>
+#include <beep/pmu.h>
+#include <beep/delay.h>
+#include <beep/completion.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/timer.h>
+#include <beep/mutex.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
 #include <asm/keylargo.h>
 #include <asm/uninorth.h>
 #include <asm/io.h>

@@ -12,10 +12,10 @@
  *      as published by the Free Software Foundation; either version
  *      2 of the License, or (at your option) any later version.
  */
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
+#include <beep/kobject.h>
+#include <beep/string.h>
+#include <beep/pci.h>
+#include <beep/pci_hotplug.h>
 #include "rpadlpar.h"
 #include "../pci.h"
 

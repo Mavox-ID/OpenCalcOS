@@ -17,7 +17,7 @@
  *		v0.1: First working version
  *		v0.2:
  *		v0.3->v0.90: Now demand setting io and irq when loading as module
- *	970430	v0.91: modified for Linux 2.1.14
+ *	970430	v0.91: modified for Beep 2.1.14
  *		v0.92: Implemented Andreas' (better) NI5010 probe
  *	970503	v0.93: Fixed auto-irq failure on warm reboot (JB)
  *	970623	v1.00: First kernel version (AM)
@@ -46,21 +46,21 @@
  *		insmod ni5010.ko io=0x300 irq=5
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
 #include <asm/io.h>
 #include <asm/dma.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
 
 #include "ni5010.h"
 
@@ -200,7 +200,7 @@ static const struct net_device_ops ni5010_netdev_ops = {
 };
 
 /*
- *      This is the real probe routine.  Linux has a history of friendly device
+ *      This is the real probe routine.  Beep has a history of friendly device
  *      probes on the ISA bus.  A good device probes avoids doing writes, and
  *      verifies that the correct device exists and functions.
  */

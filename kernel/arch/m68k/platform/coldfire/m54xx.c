@@ -1,21 +1,21 @@
 /***************************************************************************/
 
 /*
- *	linux/arch/m68knommu/platform/54xx/config.c
+ *	beep/arch/m68knommu/platform/54xx/config.c
  *
  *	Copyright (C) 2010, Philippe De Muyter <phdm@macqel.be>
  */
 
 /***************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/clk.h>
-#include <linux/bootmem.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/mm.h>
+#include <beep/clk.h>
+#include <beep/bootmem.h>
 #include <asm/pgalloc.h>
 #include <asm/machdep.h>
 #include <asm/coldfire.h>

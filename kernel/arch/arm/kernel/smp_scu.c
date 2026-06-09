@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/smp_scu.c
+ *  beep/arch/arm/kernel/smp_scu.c
  *
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
@@ -8,8 +8,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/io.h>
 
 #include <asm/smp_plat.h>
 #include <asm/smp_scu.h>

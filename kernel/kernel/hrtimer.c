@@ -1,5 +1,5 @@
 /*
- *  linux/kernel/hrtimer.c
+ *  beep/kernel/hrtimer.c
  *
  *  Copyright(C) 2005-2006, Thomas Gleixner <tglx@linutronix.de>
  *  Copyright(C) 2005-2007, Red Hat, Inc., Ingo Molnar
@@ -31,20 +31,20 @@
  *  For licencing details see kernel-base/COPYING
  */
 
-#include <linux/cpu.h>
-#include <linux/export.h>
-#include <linux/percpu.h>
-#include <linux/hrtimer.h>
-#include <linux/notifier.h>
-#include <linux/syscalls.h>
-#include <linux/kallsyms.h>
-#include <linux/interrupt.h>
-#include <linux/tick.h>
-#include <linux/seq_file.h>
-#include <linux/err.h>
-#include <linux/debugobjects.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
+#include <beep/cpu.h>
+#include <beep/export.h>
+#include <beep/percpu.h>
+#include <beep/hrtimer.h>
+#include <beep/notifier.h>
+#include <beep/syscalls.h>
+#include <beep/kallsyms.h>
+#include <beep/interrupt.h>
+#include <beep/tick.h>
+#include <beep/seq_file.h>
+#include <beep/err.h>
+#include <beep/debugobjects.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
 
 #include <asm/uaccess.h>
 

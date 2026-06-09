@@ -2,7 +2,7 @@
 #define _ASM_POWERPC_MMU_H_
 #ifdef __KERNEL__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #include <asm/asm-compat.h>
 #include <asm/feature-fixups.h>

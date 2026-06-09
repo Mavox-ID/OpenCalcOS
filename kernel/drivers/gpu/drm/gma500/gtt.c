@@ -16,11 +16,11 @@
  * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  *
  * Authors: Thomas Hellstrom <thomas-at-tungstengraphics.com>
- *	    Alan Cox <alan@linux.intel.com>
+ *	    Alan Cox <alan@beep.intel.com>
  */
 
 #include <drm/drmP.h>
-#include <linux/shmem_fs.h>
+#include <beep/shmem_fs.h>
 #include "psb_drv.h"
 
 

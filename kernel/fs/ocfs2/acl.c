@@ -6,7 +6,7 @@
  * Copyright (C) 2004, 2008 Oracle.  All rights reserved.
  *
  * CREDITS:
- * Lots of code in this file is copy from linux/fs/ext3/acl.c.
+ * Lots of code in this file is copy from beep/fs/ext3/acl.c.
  * Copyright (C) 2001-2003 Andreas Gruenbacher, <agruen@suse.de>
  *
  * This program is free software; you can redistribute it and/or
@@ -19,10 +19,10 @@
  * General Public License for more details.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 
 #include <cluster/masklog.h>
 

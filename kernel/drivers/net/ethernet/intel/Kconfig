@@ -39,7 +39,7 @@ config E100
 
 	  to identify the adapter.
 
-	  For the latest Intel PRO/100 network driver for Linux, see:
+	  For the latest Intel PRO/100 network driver for Beep, see:
 
 	  <http://www.intel.com/p/en_US/support/highlights/network/pro100plus>
 

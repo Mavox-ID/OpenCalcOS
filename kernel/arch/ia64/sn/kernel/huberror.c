@@ -6,8 +6,8 @@
  * Copyright (C) 1992 - 1997, 2000,2002-2007 Silicon Graphics, Inc. All rights reserved.
  */
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
 #include <asm/delay.h>
 #include <asm/sn/sn_sal.h>
 #include "ioerror.h"

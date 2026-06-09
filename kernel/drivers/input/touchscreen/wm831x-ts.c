@@ -10,21 +10,21 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/pm.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/irq.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/pm.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/mfd/wm831x/core.h>
+#include <beep/mfd/wm831x/irq.h>
+#include <beep/mfd/wm831x/pdata.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/types.h>
 
 /*
  * R16424 (0x4028) - Touch Control 1

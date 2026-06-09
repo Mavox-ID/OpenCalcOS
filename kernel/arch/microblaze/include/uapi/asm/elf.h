@@ -31,7 +31,7 @@
  */
 #define ELF_CLASS	ELFCLASS32
 
-#ifndef __uClinux__
+#ifndef __uCbeep__
 
 /*
  * ELF register definitions..
@@ -116,6 +116,6 @@ do {							\
 } while (0)
 
 
-#endif /* __uClinux__ */
+#endif /* __uCbeep__ */
 
 #endif /* _UAPI_ASM_MICROBLAZE_ELF_H */

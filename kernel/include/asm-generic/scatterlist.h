@@ -1,7 +1,7 @@
 #ifndef __ASM_GENERIC_SCATTERLIST_H
 #define __ASM_GENERIC_SCATTERLIST_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct scatterlist {
 #ifdef CONFIG_DEBUG_SG

@@ -52,19 +52,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/net.h>
-#include <linux/inet.h>
-#include <linux/scatterlist.h>
-#include <linux/crypto.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/net.h>
+#include <beep/inet.h>
+#include <beep/scatterlist.h>
+#include <beep/crypto.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 
-#include <linux/skbuff.h>
-#include <linux/random.h>	/* for get_random_bytes */
+#include <beep/skbuff.h>
+#include <beep/random.h>	/* for get_random_bytes */
 #include <net/sctp/sctp.h>
 #include <net/sctp/sm.h>
 

@@ -9,8 +9,8 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/key.h>
-#include <linux/sysctl.h>
+#include <beep/key.h>
+#include <beep/sysctl.h>
 #include "internal.h"
 
 static const int zero, one = 1, max = INT_MAX;

@@ -1,5 +1,5 @@
 /*
- *  IBM eServer eHCA Infiniband device driver for Linux on POWER
+ *  IBM eServer eHCA Infiniband device driver for Beep on POWER
  *
  *  auxiliary functions
  *
@@ -44,21 +44,21 @@
 #ifndef EHCA_TOOLS_H
 #define EHCA_TOOLS_H
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/idr.h>
-#include <linux/kthread.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/vmalloc.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
+#include <beep/idr.h>
+#include <beep/kthread.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/vmalloc.h>
+#include <beep/notifier.h>
+#include <beep/cpu.h>
+#include <beep/device.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/ibmebus.h>
 #include <asm/io.h>
 #include <asm/pgtable.h>

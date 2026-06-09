@@ -19,16 +19,16 @@
  *  the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/pwm.h>
-#include <linux/radix-tree.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/module.h>
+#include <beep/pwm.h>
+#include <beep/radix-tree.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 #define MAX_PWMS 1024
 

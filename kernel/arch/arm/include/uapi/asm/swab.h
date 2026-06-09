@@ -15,15 +15,15 @@
 #ifndef _UAPI__ASM_ARM_SWAB_H
 #define _UAPI__ASM_ARM_SWAB_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/types.h>
 
 #if !defined(__STRICT_ANSI__) || defined(__KERNEL__)
 #  define __SWAB_64_THRU_32__
 #endif
 
 
-#if !defined(__KERNEL__) || __LINUX_ARM_ARCH__ < 6
+#if !defined(__KERNEL__) || __BEEP_ARM_ARCH__ < 6
 static inline __attribute_const__ __u32 __arch_swab32(__u32 x)
 {
 	__u32 t;

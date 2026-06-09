@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-sa1100/ssp.c
+ *  beep/arch/arm/mach-sa1100/ssp.c
  *
  *  Copyright (C) 2003 Russell King.
  *
@@ -10,14 +10,14 @@
  *  Generic SSP driver.  This provides the generic core for simple
  *  IO-based SSP applications.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <mach/irqs.h>

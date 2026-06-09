@@ -8,19 +8,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/platform_data/atmel.h>
-#include <linux/of.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/spi/spi.h>
+#include <beep/slab.h>
+#include <beep/platform_data/atmel.h>
+#include <beep/of.h>
 
 #include <asm/io.h>
 #include <asm/gpio.h>

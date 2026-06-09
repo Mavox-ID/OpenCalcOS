@@ -24,36 +24,36 @@
   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
   The GNU GPL is contained in /usr/doc/copyright/GPL on a Debian
-  system and in the file COPYING in the Linux kernel source.
+  system and in the file COPYING in the Beep kernel source.
 */
 
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/poison.h>
-#include <linux/errno.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/sonet.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/ioport.h> /* for request_region */
-#include <linux/uio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/capability.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/pci.h>
+#include <beep/poison.h>
+#include <beep/errno.h>
+#include <beep/atm.h>
+#include <beep/atmdev.h>
+#include <beep/sonet.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/delay.h>
+#include <beep/ioport.h> /* for request_region */
+#include <beep/uio.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/capability.h>
+#include <beep/bitops.h>
+#include <beep/slab.h>
 #include <asm/byteorder.h>
 #include <asm/string.h>
 #include <asm/io.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/uaccess.h>
-#include <linux/wait.h>
+#include <beep/wait.h>
 
 #include "firestream.h"
 
@@ -71,7 +71,7 @@ static int num=0x5a;
  * smaller buffers more efficiently than the larger ones. -- REW
  */
 
-/* Due to the way Linux memory management works, specifying "576" as
+/* Due to the way Beep memory management works, specifying "576" as
  * an allocation size here isn't going to help. They are allocated
  * from 1024-byte regions anyway. With the size of the sk_buffs (quite
  * large), it doesn't pay to allocate the smallest size (64) -- REW */
@@ -137,7 +137,7 @@ static int rx_pool_sizes[NP] = {128,  128,  128, 64,   64,   64,   32,    32};
 
    You could queue up a bunch of outgoing packets without telling the
    FireStream. I'm not sure that's going to win you much though. The
-   Linux layer won't tell us in advance when it's not going to give us
+   Beep layer won't tell us in advance when it's not going to give us
    any more packets in a while. So this is tricky to implement right without
    introducing extra delays. 
   

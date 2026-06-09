@@ -1,13 +1,13 @@
 /*
- *	linux/arch/alpha/kernel/err_marvel.c
+ *	beep/arch/alpha/kernel/err_marvel.c
  *
  *	Copyright (C) 2001 Jeff Wiedemeier (Compaq Computer Corporation)
  *
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/sched.h>
 
 #include <asm/io.h>
 #include <asm/console.h>

@@ -20,7 +20,7 @@
 #ifndef _FC_ENCODE_H_
 #define _FC_ENCODE_H_
 #include <asm/unaligned.h>
-#include <linux/utsname.h>
+#include <beep/utsname.h>
 
 /*
  * F_CTL values for simple requests and responses.

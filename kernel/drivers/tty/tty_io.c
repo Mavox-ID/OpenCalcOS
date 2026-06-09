@@ -37,7 +37,7 @@
  * Reorganized FASYNC support so mouse code can share it.
  *	-- ctm@ardi.com, 9Sep95
  *
- * New TIOCLINUX variants added.
+ * New TIOCBEEP variants added.
  *	-- mj@k332.feld.cvut.cz, 19-Nov-95
  *
  * Restrict vt switching via ioctl()
@@ -57,53 +57,53 @@
  *      -- C. Scott Ananian <cananian@alumni.princeton.edu>, 14-Jan-1998
  *
  * Reduced memory usage for older ARM systems
- *      -- Russell King <rmk@arm.linux.org.uk>
+ *      -- Russell King <rmk@arm.beep.org.uk>
  *
  * Move do_SAK() into process context.  Less stack use in devfs functions.
  * alloc_tty_struct() always uses kmalloc()
  *			 -- Andrew Morton <andrewm@uow.edu.eu> 17Mar01
  */
 
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/fcntl.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/devpts_fs.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/console.h>
-#include <linux/timer.h>
-#include <linux/ctype.h>
-#include <linux/kd.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/serial.h>
-#include <linux/ratelimit.h>
+#include <beep/types.h>
+#include <beep/major.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/fcntl.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/devpts_fs.h>
+#include <beep/file.h>
+#include <beep/fdtable.h>
+#include <beep/console.h>
+#include <beep/timer.h>
+#include <beep/ctype.h>
+#include <beep/kd.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/poll.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/wait.h>
+#include <beep/bitops.h>
+#include <beep/delay.h>
+#include <beep/seq_file.h>
+#include <beep/serial.h>
+#include <beep/ratelimit.h>
 
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 
-#include <linux/kbd_kern.h>
-#include <linux/vt_kern.h>
-#include <linux/selection.h>
+#include <beep/kbd_kern.h>
+#include <beep/vt_kern.h>
+#include <beep/selection.h>
 
-#include <linux/kmod.h>
-#include <linux/nsproxy.h>
+#include <beep/kmod.h>
+#include <beep/nsproxy.h>
 
 #undef TTY_DEBUG_HANGUP
 
@@ -2210,7 +2210,7 @@ done:
  *	@arg: user buffer for result
  *
  *	Copies the user idea of the window size to the kernel. Traditionally
- *	this is just advisory information but for the Linux console it
+ *	this is just advisory information but for the Beep console it
  *	actually has driver level meaning and triggers a VC resize.
  *
  *	Locking:

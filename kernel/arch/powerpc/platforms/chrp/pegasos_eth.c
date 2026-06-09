@@ -8,13 +8,13 @@
  *  And anyone else who helped me on this.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mv643xx.h>
-#include <linux/pci.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/mv643xx.h>
+#include <beep/pci.h>
 
 #define PEGASOS2_MARVELL_REGBASE 		(0xf1000000)
 #define PEGASOS2_MARVELL_REGSIZE 		(0x00004000)

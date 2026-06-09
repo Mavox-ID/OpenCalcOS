@@ -33,15 +33,15 @@
  * SOFTWARE.
  */
 
-#include <linux/completion.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/mutex.h>
-#include <linux/random.h>
-#include <linux/idr.h>
-#include <linux/inetdevice.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/completion.h>
+#include <beep/in.h>
+#include <beep/in6.h>
+#include <beep/mutex.h>
+#include <beep/random.h>
+#include <beep/idr.h>
+#include <beep/inetdevice.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <net/route.h>
 
 #include <net/tcp.h>

@@ -2,7 +2,7 @@
  *  Derived from arch/i386/kernel/irq.c
  *    Copyright (C) 1992 Linus Torvalds
  *  Adapted from arch/i386 by Gary Thomas
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *  Updated and modified by Cort Dougan <cort@fsmlabs.com>
  *    Copyright (C) 1996-2001 Cort Dougan
  *  Adapted for Power Macintosh by Paul Mackerras
@@ -30,31 +30,31 @@
 
 #undef DEBUG
 
-#include <linux/export.h>
-#include <linux/threads.h>
-#include <linux/kernel_stat.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/timex.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/cpumask.h>
-#include <linux/profile.h>
-#include <linux/bitops.h>
-#include <linux/list.h>
-#include <linux/radix-tree.h>
-#include <linux/mutex.h>
-#include <linux/bootmem.h>
-#include <linux/pci.h>
-#include <linux/debugfs.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
+#include <beep/export.h>
+#include <beep/threads.h>
+#include <beep/kernel_stat.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/ptrace.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/timex.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/seq_file.h>
+#include <beep/cpumask.h>
+#include <beep/profile.h>
+#include <beep/bitops.h>
+#include <beep/list.h>
+#include <beep/radix-tree.h>
+#include <beep/mutex.h>
+#include <beep/bootmem.h>
+#include <beep/pci.h>
+#include <beep/debugfs.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>

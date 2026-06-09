@@ -1,9 +1,9 @@
 /*
- * Linux WiMAX
+ * Beep WiMAX
  * Internal API for kernel space WiMAX stack
  *
  *
- * Copyright (C) 2007 Intel Corporation <linux-wimax@intel.com>
+ * Copyright (C) 2007 Intel Corporation <beep-wimax@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *
  * This program is free software; you can redistribute it and/or
@@ -23,14 +23,14 @@
  *
  * This header file is for declarations and definitions internal to
  * the WiMAX stack. For public APIs and documentation, see
- * include/net/wimax.h and include/linux/wimax.h.
+ * include/net/wimax.h and include/beep/wimax.h.
  */
 
 #ifndef __WIMAX_INTERNAL_H__
 #define __WIMAX_INTERNAL_H__
 #ifdef __KERNEL__
 
-#include <linux/device.h>
+#include <beep/device.h>
 #include <net/wimax.h>
 
 

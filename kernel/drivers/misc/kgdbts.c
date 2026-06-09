@@ -94,15 +94,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/kgdb.h>
-#include <linux/ctype.h>
-#include <linux/uaccess.h>
-#include <linux/syscalls.h>
-#include <linux/nmi.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/kgdb.h>
+#include <beep/ctype.h>
+#include <beep/uaccess.h>
+#include <beep/syscalls.h>
+#include <beep/nmi.h>
+#include <beep/delay.h>
+#include <beep/kthread.h>
+#include <beep/module.h>
 
 #define v1printk(a...) do { \
 	if (verbose) \

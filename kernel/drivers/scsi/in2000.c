@@ -1,5 +1,5 @@
 /*
- *    in2000.c -  Linux device driver for the
+ *    in2000.c -  Beep device driver for the
  *                Always IN2000 ISA SCSI card.
  *
  * Copyright (c) 1996 John Shifflett, GeoLog Consulting
@@ -24,7 +24,7 @@
  *
  * Drew Eckhardt's excellent 'Generic NCR5380' sources provided
  * much of the inspiration and some of the code for this driver.
- * The Linux IN2000 driver distributed in the Linux kernels through
+ * The Beep IN2000 driver distributed in the Beep kernels through
  * version 1.2.13 was an extremely valuable reference on the arcane
  * (and still mysterious) workings of the IN2000's fifo. It also
  * is where I lifted in2000_biosparam(), the gist of the card
@@ -35,7 +35,7 @@
  * Matt Postiff, Peter Lu, zerucha@shell.portal.com, and Eric
  * Youngdale). I should also mention the driver written by
  * Hamish Macdonald for the (GASP!) Amiga A2091 card, included
- * in the Linux-m68k distribution; it gave me a good initial
+ * in the Beep-m68k distribution; it gave me a good initial
  * understanding of the proper way to run a WD33c93 chip, and I
  * ended up stealing lots of code from it.
  *
@@ -67,7 +67,7 @@
  *       either the LILO or the 'insmod' command line. For LILO do:
  *          "in2000=blah,blah,blah"
  *       and with insmod go like:
- *          "insmod /usr/src/linux/modules/in2000.o setup_strings=blah,blah"
+ *          "insmod /usr/src/beep/modules/in2000.o setup_strings=blah,blah"
  *       The defaults should be good for most people. See the comment
  *       for 'setup_strings' below for more details.
  *
@@ -107,20 +107,20 @@
  * this thing into as good a shape as possible, and I'm positive
  * there are lots of lurking bugs and "Stupid Places".
  *
- * Updated for Linux 2.5 by Alan Cox <alan@lxorguk.ukuu.org.uk>
+ * Updated for Beep 2.5 by Alan Cox <alan@lxorguk.ukuu.org.uk>
  *	- Using new_eh handler
  *	- Hopefully got all the locking right again
  *	See "FIXME" notes for items that could do with more work
  */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/proc_fs.h>
-#include <linux/ioport.h>
-#include <linux/stat.h>
+#include <beep/module.h>
+#include <beep/blkdev.h>
+#include <beep/interrupt.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/proc_fs.h>
+#include <beep/ioport.h>
+#include <beep/stat.h>
 
 #include <asm/io.h>
 
@@ -137,7 +137,7 @@
  * 'setup_strings' is a single string used to pass operating parameters and
  * settings from the kernel/module command-line to the driver. 'setup_args[]'
  * is an array of strings that define the compile-time default values for
- * these settings. If Linux boots with a LILO or insmod command-line, those
+ * these settings. If Beep boots with a LILO or insmod command-line, those
  * settings are combined with 'setup_args[]'. Note that LILO command-lines
  * are prefixed with "in2000=" while insmod uses a "setup_strings=" prefix.
  * The driver recognizes the following keywords (lower case required) and

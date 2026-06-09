@@ -18,28 +18,28 @@
  * Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/bug.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/idr.h>
-#include <linux/jiffies.h>
-#include <linux/kobject.h>
-#include <linux/list.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/random.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/workqueue.h>
+#include <beep/bug.h>
+#include <beep/ctype.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/firewire.h>
+#include <beep/firewire-constants.h>
+#include <beep/idr.h>
+#include <beep/jiffies.h>
+#include <beep/kobject.h>
+#include <beep/list.h>
+#include <beep/mod_devicetable.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/random.h>
+#include <beep/rwsem.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/workqueue.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/byteorder.h>
 
 #include "core.h"

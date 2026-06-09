@@ -42,13 +42,13 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mtd/mtd.h>
-#include <linux/err.h>
-#include <linux/mtd/nand.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/mtd/mtd.h>
+#include <beep/err.h>
+#include <beep/mtd/nand.h>
+#include <beep/slab.h>
 
 static int dev;
 module_param(dev, int, S_IRUGO);

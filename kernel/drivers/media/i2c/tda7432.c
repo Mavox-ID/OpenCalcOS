@@ -22,16 +22,16 @@
  * maxvol   - set maximium volume to +20db (1), default is 0db(0)
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/i2c.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/videodev2.h>
+#include <beep/i2c.h>
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>

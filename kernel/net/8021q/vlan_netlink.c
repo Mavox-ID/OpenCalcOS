@@ -8,10 +8,10 @@
  *	version 2 as published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/if_vlan.h>
+#include <beep/module.h>
 #include <net/net_namespace.h>
 #include <net/netlink.h>
 #include <net/rtnetlink.h>

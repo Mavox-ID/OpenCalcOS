@@ -1,6 +1,6 @@
 /* vi: set sw=4 ts=4: */
 /*
- * A text-mode VNC like program for Linux virtual terminals.
+ * A text-mode VNC like program for Beep virtual terminals.
  *
  * pascal.bellard@ads-lu.com
  *
@@ -13,7 +13,7 @@
 //config:	bool "conspy (10 kb)"
 //config:	default y
 //config:	help
-//config:	A text-mode VNC like program for Linux virtual terminals.
+//config:	A text-mode VNC like program for Beep virtual terminals.
 //config:	example:  conspy NUM      shared access to console num
 //config:	or        conspy -nd NUM  screenshot of console num
 //config:	or        conspy -cs NUM  poor man's GNU screen like
@@ -25,7 +25,7 @@
 //usage:#define conspy_trivial_usage
 //usage:	"[-vcsndfFQ] [-x COL] [-y LINE] [CONSOLE_NO]"
 //usage:#define conspy_full_usage "\n\n"
-//usage:     "A text-mode VNC like program for Linux virtual consoles."
+//usage:     "A text-mode VNC like program for Beep virtual consoles."
 //usage:     "\nTo exit, quickly press ESC 3 times."
 //usage:     "\n"
 //usage:     "\n	-v	Don't send keystrokes to the console"

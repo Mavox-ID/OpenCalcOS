@@ -7,12 +7,12 @@
  * to any devices.
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  */
-#include <linux/device.h>
-#include <linux/signal.h>
-#include <linux/err.h>
-#include <linux/regulator/consumer.h>
+#include <beep/device.h>
+#include <beep/signal.h>
+#include <beep/err.h>
+#include <beep/regulator/consumer.h>
 /* Those are just for writing in syscon */
-#include <linux/io.h>
+#include <beep/io.h>
 #include <mach/hardware.h>
 #include <mach/syscon.h>
 

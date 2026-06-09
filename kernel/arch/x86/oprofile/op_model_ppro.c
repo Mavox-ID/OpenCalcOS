@@ -13,8 +13,8 @@
  * @author Robert Richter <robert.richter@amd.com>
  */
 
-#include <linux/oprofile.h>
-#include <linux/slab.h>
+#include <beep/oprofile.h>
+#include <beep/slab.h>
 #include <asm/ptrace.h>
 #include <asm/msr.h>
 #include <asm/apic.h>

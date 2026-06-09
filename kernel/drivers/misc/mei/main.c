@@ -1,6 +1,6 @@
 /*
  *
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) Beep driver
  * Copyright (c) 2003-2012, Intel Corporation.
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -16,29 +16,29 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/aio.h>
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/ioctl.h>
-#include <linux/cdev.h>
-#include <linux/sched.h>
-#include <linux/uuid.h>
-#include <linux/compat.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/miscdevice.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/fs.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/aio.h>
+#include <beep/pci.h>
+#include <beep/poll.h>
+#include <beep/init.h>
+#include <beep/ioctl.h>
+#include <beep/cdev.h>
+#include <beep/sched.h>
+#include <beep/uuid.h>
+#include <beep/compat.h>
+#include <beep/jiffies.h>
+#include <beep/interrupt.h>
+#include <beep/miscdevice.h>
 
 #include "mei_dev.h"
-#include <linux/mei.h>
+#include <beep/mei.h>
 #include "interface.h"
 
 /* AMT device is a singleton on the platform */

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -19,7 +19,7 @@
 #ifndef _ASM_TLB_H
 #define _ASM_TLB_H
 
-#include <linux/pagemap.h>
+#include <beep/pagemap.h>
 #include <asm/tlbflush.h>
 
 /*

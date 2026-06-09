@@ -5,8 +5,8 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/oprofile.h>
-#include <linux/init.h>
+#include <beep/oprofile.h>
+#include <beep/init.h>
 
 int __init oprofile_arch_init(struct oprofile_operations *ops)
 {

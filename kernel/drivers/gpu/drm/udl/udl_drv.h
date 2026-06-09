@@ -14,7 +14,7 @@
 #ifndef UDL_DRV_H
 #define UDL_DRV_H
 
-#include <linux/usb.h>
+#include <beep/usb.h>
 
 #define DRIVER_NAME		"udl"
 #define DRIVER_DESC		"DisplayLink"

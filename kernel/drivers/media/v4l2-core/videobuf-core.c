@@ -1,5 +1,5 @@
 /*
- * generic helper functions for handling video4linux capture buffers
+ * generic helper functions for handling video4beep capture buffers
  *
  * (c) 2007 Mauro Carvalho Chehab, <mchehab@infradead.org>
  *
@@ -13,13 +13,13 @@
  * the Free Software Foundation; either version 2
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
 
 #include <media/videobuf-core.h>
 
@@ -37,7 +37,7 @@
 static int debug;
 module_param(debug, int, 0644);
 
-MODULE_DESCRIPTION("helper module to manage video4linux buffers");
+MODULE_DESCRIPTION("helper module to manage video4beep buffers");
 MODULE_AUTHOR("Mauro Carvalho Chehab <mchehab@infradead.org>");
 MODULE_LICENSE("GPL");
 

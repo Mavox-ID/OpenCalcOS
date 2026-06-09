@@ -1,15 +1,15 @@
-#include <linux/blkdev.h>
-#include <linux/blkpg.h>
-#include <linux/blktrace_api.h>
-#include <linux/cdrom.h>
-#include <linux/compat.h>
-#include <linux/elevator.h>
-#include <linux/fd.h>
-#include <linux/hdreg.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <beep/blkdev.h>
+#include <beep/blkpg.h>
+#include <beep/blktrace_api.h>
+#include <beep/cdrom.h>
+#include <beep/compat.h>
+#include <beep/elevator.h>
+#include <beep/fd.h>
+#include <beep/hdreg.h>
+#include <beep/slab.h>
+#include <beep/syscalls.h>
+#include <beep/types.h>
+#include <beep/uaccess.h>
 
 static int compat_put_ushort(unsigned long arg, unsigned short val)
 {

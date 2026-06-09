@@ -3,37 +3,37 @@
  *  -- upcalls
  *  -- upcall routines
  *
- * Linux 2.0 version
+ * Beep 2.0 version
  * Copyright (C) 1996 Peter J. Braam <braam@maths.ox.ac.uk>, 
  * Michael Callahan <callahan@maths.ox.ac.uk> 
  * 
- * Redone for Linux 2.1
+ * Redone for Beep 2.1
  * Copyright (C) 1997 Carnegie Mellon University
  *
  * Carnegie Mellon University encourages users of this code to contribute
  * improvements to the Coda project. Contact Peter Braam <coda@cs.cmu.edu>.
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/time.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/stat.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
 #include <asm/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/vfs.h>
+#include <beep/vmalloc.h>
+#include <beep/vfs.h>
 
-#include <linux/coda.h>
-#include <linux/coda_psdev.h>
-#include "coda_linux.h"
+#include <beep/coda.h>
+#include <beep/coda_psdev.h>
+#include "coda_beep.h"
 #include "coda_cache.h"
 
 #include "coda_int.h"

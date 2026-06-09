@@ -11,10 +11,10 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/uaccess.h>
-#include <linux/syscalls.h>
-#include <linux/tracehook.h>
+#include <beep/kernel.h>
+#include <beep/uaccess.h>
+#include <beep/syscalls.h>
+#include <beep/tracehook.h>
 
 #include <asm/ucontext.h>
 #include <asm/cacheflush.h>

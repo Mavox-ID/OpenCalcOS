@@ -11,8 +11,8 @@
  * (at your option) any later version.
  */
 
-#include <linux/backlight.h>
-#include <linux/clk.h>
+#include <beep/backlight.h>
+#include <beep/clk.h>
 
 #include <drm/drmP.h>
 #include <drm/drm_crtc.h>

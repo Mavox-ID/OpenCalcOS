@@ -1,29 +1,29 @@
 /*
  * Copyright (C) 2001 Lennert Buytenhek (buytenh@gnu.org)
- * Copyright (C) 2001 - 2008 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2001 - 2008 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/console.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/proc_fs.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/utsname.h>
-#include <linux/socket.h>
-#include <linux/un.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/file.h>
+#include <beep/console.h>
+#include <beep/ctype.h>
+#include <beep/string.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/notifier.h>
+#include <beep/reboot.h>
+#include <beep/proc_fs.h>
+#include <beep/slab.h>
+#include <beep/syscalls.h>
+#include <beep/utsname.h>
+#include <beep/socket.h>
+#include <beep/un.h>
+#include <beep/workqueue.h>
+#include <beep/mutex.h>
+#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/file.h>
 #include <asm/uaccess.h>
 #include <asm/switch_to.h>
 
@@ -612,7 +612,7 @@ static void with_console(struct mc_request *req, void (*proc)(void *),
 
 #ifdef CONFIG_MAGIC_SYSRQ
 
-#include <linux/sysrq.h>
+#include <beep/sysrq.h>
 
 static void sysrq_proc(void *arg)
 {
@@ -655,7 +655,7 @@ static void stack_proc(void *arg)
 /*
  * Mconsole stack trace
  *  Added by Allan Graves, Jeff Dike
- *  Dumps a stacks registers to the linux console.
+ *  Dumps a stacks registers to the beep console.
  *  Usage stack <pid>.
  */
 void mconsole_stack(struct mc_request *req)

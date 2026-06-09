@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/strlen.S --  strlen code.
+ *  beep/arch/m32r/strlen.S --  strlen code.
  *
  *  Copyright (C) 2001  Hirokazu Takata
  *
@@ -7,7 +7,7 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 
 #ifdef CONFIG_ISA_DUAL_ISSUE

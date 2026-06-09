@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 1992 obz under the linux copyright
+ *  Copyright (C) 1992 obz under the beep copyright
  *
  *  Dynamic diacritical handling - aeb@cwi.nl - Dec 1993
  *  Dynamic keymap and string allocation - aeb@cwi.nl - May 1994
@@ -8,33 +8,33 @@
  *  Check put/get_user, cleanups - acme@conectiva.com.br - Jun 2001
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/tty.h>
-#include <linux/timer.h>
-#include <linux/kernel.h>
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/kd.h>
-#include <linux/vt.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/console.h>
-#include <linux/consolemap.h>
-#include <linux/signal.h>
-#include <linux/suspend.h>
-#include <linux/timex.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/tty.h>
+#include <beep/timer.h>
+#include <beep/kernel.h>
+#include <beep/compat.h>
+#include <beep/module.h>
+#include <beep/kd.h>
+#include <beep/vt.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/major.h>
+#include <beep/fs.h>
+#include <beep/console.h>
+#include <beep/consolemap.h>
+#include <beep/signal.h>
+#include <beep/suspend.h>
+#include <beep/timex.h>
 
 #include <asm/io.h>
 #include <asm/uaccess.h>
 
-#include <linux/kbd_kern.h>
-#include <linux/vt_kern.h>
-#include <linux/kbd_diacr.h>
-#include <linux/selection.h>
+#include <beep/kbd_kern.h>
+#include <beep/vt_kern.h>
+#include <beep/kbd_diacr.h>
+#include <beep/selection.h>
 
 char vt_dont_switch;
 extern struct tty_driver *console_driver;
@@ -47,7 +47,7 @@ extern struct tty_driver *console_driver;
  * experimentation and study of X386 SYSV handling.
  *
  * One point of difference: SYSV vt's are /dev/vtX, which X >= 0, and
- * /dev/console is a separate ttyp. Under Linux, /dev/tty0 is /dev/console,
+ * /dev/console is a separate ttyp. Under Beep, /dev/tty0 is /dev/console,
  * and the vc start at /dev/ttyX, X >= 1. We maintain that here, so we will
  * always treat our set of vt as numbered 1..MAX_NR_CONSOLES (corresponding to
  * ttys 0..MAX_NR_CONSOLES-1). Explicitly naming VT 0 is illegal, but using
@@ -56,7 +56,7 @@ extern struct tty_driver *console_driver;
  */
 
 #ifdef CONFIG_X86
-#include <linux/syscalls.h>
+#include <beep/syscalls.h>
 #endif
 
 static void complete_change_console(struct vc_data *vc);
@@ -319,8 +319,8 @@ int vt_ioctl(struct tty_struct *tty,
 		perm = 1;
  
 	switch (cmd) {
-	case TIOCLINUX:
-		ret = tioclinux(tty, arg);
+	case TIOCBEEP:
+		ret = tiocbeep(tty, arg);
 		break;
 	case KIOCSOUND:
 		if (!perm)
@@ -391,7 +391,7 @@ int vt_ioctl(struct tty_struct *tty,
 		break;
 #endif
 
-	/* Linux m68k/i386 interface for setting the keyboard delay/repeat rate */
+	/* Beep m68k/i386 interface for setting the keyboard delay/repeat rate */
 		
 	case KDKBDREP:
 	{

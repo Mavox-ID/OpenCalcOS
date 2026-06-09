@@ -11,9 +11,9 @@
 #ifndef _S390_PGALLOC_H
 #define _S390_PGALLOC_H
 
-#include <linux/threads.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
+#include <beep/threads.h>
+#include <beep/gfp.h>
+#include <beep/mm.h>
 
 unsigned long *crst_table_alloc(struct mm_struct *);
 void crst_table_free(struct mm_struct *, unsigned long *);

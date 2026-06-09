@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hpfs/dnode.c
+ *  beep/fs/hpfs/dnode.c
  *
  *  Mikulas Patocka (mikulas@artax.karlin.mff.cuni.cz), 1998-1999
  *

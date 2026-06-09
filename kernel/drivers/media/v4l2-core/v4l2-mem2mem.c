@@ -1,5 +1,5 @@
 /*
- * Memory-to-memory device framework for Video for Linux 2 and videobuf.
+ * Memory-to-memory device framework for Video for Beep 2 and videobuf.
  *
  * Helper functions for devices that use videobuf buffers for both their
  * source and destination.
@@ -13,9 +13,9 @@
  * Free Software Foundation; either version 2 of the License, or (at your
  * option) any later version.
  */
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 #include <media/videobuf2-core.h>
 #include <media/v4l2-mem2mem.h>

@@ -4,9 +4,9 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/fs.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
+#include <beep/fs.h>
+#include <beep/fcntl.h>
+#include <beep/mm.h>
 
 #include <asm/bootinfo.h>
 
@@ -62,8 +62,8 @@ int __uncached_access(struct file *file, unsigned long addr)
 
 #ifdef CONFIG_CPU_SUPPORTS_UNCACHED_ACCELERATED
 
-#include <linux/pci.h>
-#include <linux/sched.h>
+#include <beep/pci.h>
+#include <beep/sched.h>
 #include <asm/current.h>
 
 static unsigned long uca_start, uca_end;

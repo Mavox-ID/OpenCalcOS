@@ -1,5 +1,5 @@
-#include <linux/pagemap.h>
-#include <linux/slab.h>
+#include <beep/pagemap.h>
+#include <beep/slab.h>
 
 #include <subdev/fb.h>
 

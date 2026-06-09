@@ -11,15 +11,15 @@
  * This driver is based on wm8350 implementation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/gpio.h>
-#include <linux/mfd/core.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/mfd/tps65912.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/gpio.h>
+#include <beep/mfd/core.h>
+#include <beep/platform_device.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/mfd/tps65912.h>
 
 struct tps65912_gpio_data {
 	struct tps65912 *tps65912;

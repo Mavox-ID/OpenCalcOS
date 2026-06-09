@@ -1,21 +1,21 @@
 /*
- *	linux/mm/madvise.c
+ *	beep/mm/madvise.c
  *
  * Copyright (C) 1999  Linus Torvalds
  * Copyright (C) 2002  Christoph Hellwig
  */
 
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/syscalls.h>
-#include <linux/mempolicy.h>
-#include <linux/page-isolation.h>
-#include <linux/hugetlb.h>
-#include <linux/falloc.h>
-#include <linux/sched.h>
-#include <linux/ksm.h>
-#include <linux/fs.h>
-#include <linux/file.h>
+#include <beep/mman.h>
+#include <beep/pagemap.h>
+#include <beep/syscalls.h>
+#include <beep/mempolicy.h>
+#include <beep/page-isolation.h>
+#include <beep/hugetlb.h>
+#include <beep/falloc.h>
+#include <beep/sched.h>
+#include <beep/ksm.h>
+#include <beep/fs.h>
+#include <beep/file.h>
 
 /*
  * Any behaviour which results in changes to the vma->vm_flags needs to

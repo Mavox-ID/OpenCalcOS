@@ -20,7 +20,7 @@
 #define __MACH_MXS_H__
 
 #ifndef __ASSEMBLER__
-#include <linux/io.h>
+#include <beep/io.h>
 #endif
 #include <asm/mach-types.h>
 #include <mach/digctl.h>

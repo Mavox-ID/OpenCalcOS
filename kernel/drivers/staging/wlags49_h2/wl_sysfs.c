@@ -2,14 +2,14 @@
  * ex: sw=4
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
 #include <net/sock.h>
-#include <linux/rtnetlink.h>
-#include <linux/wireless.h>
+#include <beep/rtnetlink.h>
+#include <beep/wireless.h>
 #include <net/iw_handler.h>
-#include <linux/sysfs.h>
+#include <beep/sysfs.h>
 
 #include <debug.h>
 #include <hcf.h>

@@ -6,14 +6,14 @@
  *
  *  Copyright (C) 2003 Jens Axboe <axboe@kernel.dk>
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/elevator.h>
-#include <linux/jiffies.h>
-#include <linux/rbtree.h>
-#include <linux/ioprio.h>
-#include <linux/blktrace_api.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/blkdev.h>
+#include <beep/elevator.h>
+#include <beep/jiffies.h>
+#include <beep/rbtree.h>
+#include <beep/ioprio.h>
+#include <beep/blktrace_api.h>
 #include "blk.h"
 #include "blk-cgroup.h"
 

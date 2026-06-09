@@ -15,9 +15,9 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/irq.h>
 #include <asm/mach/pci.h>
 #include <asm/mach-types.h>
 

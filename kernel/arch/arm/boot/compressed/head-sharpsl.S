@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/boot/compressed/head-sharpsl.S
+ * beep/arch/arm/boot/compressed/head-sharpsl.S
  *
  * Copyright (C) 2004-2005 Richard Purdie <rpurdie@rpsys.net>
  *
@@ -12,7 +12,7 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/mach-types.h>
 
 #ifndef CONFIG_PXA_SHARPSL

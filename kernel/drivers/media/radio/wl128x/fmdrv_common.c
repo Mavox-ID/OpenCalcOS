@@ -32,13 +32,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/firmware.h>
+#include <beep/delay.h>
 #include "fmdrv.h"
 #include "fmdrv_v4l2.h"
 #include "fmdrv_common.h"
-#include <linux/ti_wilink_st.h>
+#include <beep/ti_wilink_st.h>
 #include "fmdrv_rx.h"
 #include "fmdrv_tx.h"
 

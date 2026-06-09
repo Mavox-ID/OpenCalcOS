@@ -5,7 +5,7 @@
       driver.
     Copyright (C) 2001 Frank Mori Hess <fmhess@users.sourceforge.net>
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -39,7 +39,7 @@ significantly different.
 I was _barely_ able to reach the full 1 MHz capability
 of this board, using a hard real-time interrupt
 (set the TRIG_RT flag in your struct comedi_cmd and use
-rtlinux or RTAI).  The board can't do dma, so the bottleneck is
+rtbeep or RTAI).  The board can't do dma, so the bottleneck is
 pulling the data across the ISA bus.  I timed the interrupt
 handler, and it took my computer ~470 microseconds to pull 512
 samples from the board.  So at 1 Mhz sampling rate,
@@ -58,8 +58,8 @@ Options:
 irq can be omitted, although the cmd interface will not work without it.
 */
 
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
 #include "../comedidev.h"
 
 #include "8255.h"

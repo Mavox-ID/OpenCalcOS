@@ -1,13 +1,13 @@
 /*
- * linux/drivers/pcmcia/sa1100_neponset.c
+ * beep/drivers/pcmcia/sa1100_neponset.c
  *
  * Neponset PCMCIA specific routines
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/init.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>

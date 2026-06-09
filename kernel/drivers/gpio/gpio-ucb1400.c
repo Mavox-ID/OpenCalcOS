@@ -9,8 +9,8 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/ucb1400.h>
+#include <beep/module.h>
+#include <beep/ucb1400.h>
 
 struct ucb1400_gpio_data *ucbdata;
 

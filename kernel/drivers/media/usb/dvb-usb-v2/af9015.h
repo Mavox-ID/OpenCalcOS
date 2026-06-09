@@ -1,5 +1,5 @@
 /*
- * DVB USB Linux driver for Afatech AF9015 DVB-T USB2.0 receiver
+ * DVB USB Beep driver for Afatech AF9015 DVB-T USB2.0 receiver
  *
  * Copyright (C) 2007 Antti Palosaari <crope@iki.fi>
  *
@@ -24,7 +24,7 @@
 #ifndef AF9015_H
 #define AF9015_H
 
-#include <linux/hash.h>
+#include <beep/hash.h>
 #include "dvb_usb.h"
 #include "af9013.h"
 #include "dvb-pll.h"

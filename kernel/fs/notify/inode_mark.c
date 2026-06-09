@@ -16,16 +16,16 @@
  *  the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
-#include <linux/fsnotify_backend.h>
+#include <beep/fsnotify_backend.h>
 #include "fsnotify.h"
 
 #include "../internal.h"

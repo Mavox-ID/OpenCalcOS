@@ -11,14 +11,14 @@
  * (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/of_platform.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/export.h>
+#include <beep/suspend.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/of_platform.h>
 
 struct pmc_regs {
 	__be32 devdisr;

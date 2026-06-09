@@ -2,7 +2,7 @@
  *  libata-core.c - helper library for ATA
  *
  *  Maintained by:  Jeff Garzik <jgarzik@pobox.com>
- *    		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *    		    Please ALWAYS copy beep-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2003-2004 Red Hat, Inc.  All rights reserved.
@@ -40,34 +40,34 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
-#include <linux/suspend.h>
-#include <linux/workqueue.h>
-#include <linux/scatterlist.h>
-#include <linux/io.h>
-#include <linux/async.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/mm.h>
+#include <beep/spinlock.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/completion.h>
+#include <beep/suspend.h>
+#include <beep/workqueue.h>
+#include <beep/scatterlist.h>
+#include <beep/io.h>
+#include <beep/async.h>
+#include <beep/log2.h>
+#include <beep/slab.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <beep/libata.h>
 #include <asm/byteorder.h>
-#include <linux/cdrom.h>
-#include <linux/ratelimit.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_device.h>
+#include <beep/cdrom.h>
+#include <beep/ratelimit.h>
+#include <beep/pm_runtime.h>
+#include <beep/platform_device.h>
 
 #include "libata.h"
 #include "libata-transport.h"
@@ -4062,7 +4062,7 @@ struct ata_blacklist_entry {
 };
 
 static const struct ata_blacklist_entry ata_device_blacklist [] = {
-	/* Devices with DMA related problems under Linux */
+	/* Devices with DMA related problems under Beep */
 	{ "WDC AC11000H",	NULL,		ATA_HORKAGE_NODMA },
 	{ "WDC AC22100H",	NULL,		ATA_HORKAGE_NODMA },
 	{ "WDC AC32500H",	NULL,		ATA_HORKAGE_NODMA },
@@ -4105,7 +4105,7 @@ static const struct ata_blacklist_entry ata_device_blacklist [] = {
 	/* NCQ is slow */
 	{ "WDC WD740ADFD-00",	NULL,		ATA_HORKAGE_NONCQ },
 	{ "WDC WD740ADFD-00NLR1", NULL,		ATA_HORKAGE_NONCQ, },
-	/* http://thread.gmane.org/gmane.linux.ide/14907 */
+	/* http://thread.gmane.org/gmane.beep.ide/14907 */
 	{ "FUJITSU MHT2060BH",	NULL,		ATA_HORKAGE_NONCQ },
 	/* NCQ is broken */
 	{ "Maxtor *",		"BANC*",	ATA_HORKAGE_NONCQ },
@@ -4128,7 +4128,7 @@ static const struct ata_blacklist_entry ata_device_blacklist [] = {
 						ATA_HORKAGE_FIRMWARE_WARN },
 
 	/* Blacklist entries taken from Silicon Image 3124/3132
-	   Windows driver .inf file - also several Linux problem reports */
+	   Windows driver .inf file - also several Beep problem reports */
 	{ "HTS541060G9SA00",    "MB3OC60D",     ATA_HORKAGE_NONCQ, },
 	{ "HTS541080G9SA00",    "MB4OC60D",     ATA_HORKAGE_NONCQ, },
 	{ "HTS541010G9SA00",    "MBZOC60D",     ATA_HORKAGE_NONCQ, },
@@ -5340,7 +5340,7 @@ static int __ata_port_suspend_common(struct ata_port *ap, pm_message_t mesg, int
 	 * resumed, we don't need to touch the device.  Ask EH to skip
 	 * the usual stuff and proceed directly to suspend.
 	 *
-	 * http://thread.gmane.org/gmane.linux.ide/46764
+	 * http://thread.gmane.org/gmane.beep.ide/46764
 	 */
 	if (mesg.event == PM_EVENT_SUSPEND)
 		ehi_flags |= ATA_EHI_NO_AUTOPSY | ATA_EHI_NO_RECOVERY;

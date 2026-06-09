@@ -29,22 +29,22 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/device.h>
-#include <linux/bootmem.h>
-#include <linux/dma-mapping.h>
-#include <linux/fs_uart_pd.h>
-#include <linux/of_platform.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
-#include <linux/clk.h>
+#include <beep/module.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/serial.h>
+#include <beep/console.h>
+#include <beep/sysrq.h>
+#include <beep/device.h>
+#include <beep/bootmem.h>
+#include <beep/dma-mapping.h>
+#include <beep/fs_uart_pd.h>
+#include <beep/of_platform.h>
+#include <beep/gpio.h>
+#include <beep/of_gpio.h>
+#include <beep/clk.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -56,8 +56,8 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/serial_core.h>
-#include <linux/kernel.h>
+#include <beep/serial_core.h>
+#include <beep/kernel.h>
 
 #include "cpm_uart.h"
 

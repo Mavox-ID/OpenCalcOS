@@ -20,13 +20,13 @@
  *    of (e_tag, e_id). Solaris ACLs are unsorted.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/nfsacl.h>
-#include <linux/nfs3.h>
-#include <linux/sort.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/gfp.h>
+#include <beep/sunrpc/xdr.h>
+#include <beep/nfsacl.h>
+#include <beep/nfs3.h>
+#include <beep/sort.h>
 
 MODULE_LICENSE("GPL");
 

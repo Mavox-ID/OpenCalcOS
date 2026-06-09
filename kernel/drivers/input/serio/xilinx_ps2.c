@@ -15,17 +15,17 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/serio.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <beep/module.h>
+#include <beep/serio.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/io.h>
+#include <beep/of_address.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
 
 #define DRIVER_NAME		"xilinx_ps2"
 

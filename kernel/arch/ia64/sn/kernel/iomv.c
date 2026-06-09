@@ -6,8 +6,8 @@
  * Copyright (C) 2000-2003, 2006 Silicon Graphics, Inc. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/acpi.h>
+#include <beep/module.h>
+#include <beep/acpi.h>
 #include <asm/io.h>
 #include <asm/delay.h>
 #include <asm/vga.h>

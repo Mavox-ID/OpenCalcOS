@@ -1,7 +1,7 @@
 #ifndef _NF_CONNTRACK_EXTEND_H
 #define _NF_CONNTRACK_EXTEND_H
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 #include <net/netfilter/nf_conntrack.h>
 

@@ -1,25 +1,25 @@
 /*
  * Versatile Express V2M Motherboard Support
  */
-#include <linux/device.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/mmci.h>
-#include <linux/io.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/of_address.h>
-#include <linux/of_fdt.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/smsc911x.h>
-#include <linux/spinlock.h>
-#include <linux/usb/isp1760.h>
-#include <linux/mtd/physmap.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/vexpress.h>
+#include <beep/device.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/mmci.h>
+#include <beep/io.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/of_address.h>
+#include <beep/of_fdt.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
+#include <beep/platform_device.h>
+#include <beep/ata_platform.h>
+#include <beep/smsc911x.h>
+#include <beep/spinlock.h>
+#include <beep/usb/isp1760.h>
+#include <beep/mtd/physmap.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
+#include <beep/vexpress.h>
 
 #include <asm/arch_timer.h>
 #include <asm/mach-types.h>

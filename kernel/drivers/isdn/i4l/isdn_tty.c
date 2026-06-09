@@ -1,7 +1,7 @@
 /*
- * Linux ISDN subsystem, tty functions and AT-command emulator (linklevel).
+ * Beep ISDN subsystem, tty functions and AT-command emulator (linklevel).
  *
- * Copyright 1994-1999  by Fritz Elfert (fritz@isdn4linux.de)
+ * Copyright 1994-1999  by Fritz Elfert (fritz@isdn4beep.de)
  * Copyright 1995,96    by Thinking Objects Software GmbH Wuerzburg
  *
  * This software may be used and distributed according to the terms
@@ -10,11 +10,11 @@
  */
 #undef ISDN_TTY_STAT_DEBUG
 
-#include <linux/isdn.h>
-#include <linux/serial.h> /* ASYNC_* flags */
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
+#include <beep/isdn.h>
+#include <beep/serial.h> /* ASYNC_* flags */
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
 #include "isdn_common.h"
 #include "isdn_tty.h"
 #ifdef CONFIG_ISDN_AUDIO
@@ -534,7 +534,7 @@ isdn_tty_senddown(modem_info *info)
  *
  * Modem-functions
  *
- * mostly "stolen" from original Linux-serial.c and friends.
+ * mostly "stolen" from original Beep-serial.c and friends.
  *
  ************************************************************/
 
@@ -755,8 +755,8 @@ isdn_tty_modem_hup(modem_info *info, int local)
  * Begin of a CAPI like interface, currently used only for
  * supplementary service (CAPI 2.0 part III)
  */
-#include <linux/isdn/capicmd.h>
-#include <linux/module.h>
+#include <beep/isdn/capicmd.h>
+#include <beep/module.h>
 
 int
 isdn_tty_capi_facility(capi_msg *cm) {
@@ -3482,7 +3482,7 @@ isdn_tty_parse_at(modem_info *info)
 		case 'I':
 			/* I - Information */
 			p++;
-			isdn_tty_at_cout("\r\nLinux ISDN", info);
+			isdn_tty_at_cout("\r\nBeep ISDN", info);
 			switch (*p) {
 			case '0':
 			case '1':

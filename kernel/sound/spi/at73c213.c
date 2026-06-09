@@ -10,27 +10,27 @@
 
 /*#define DEBUG*/
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
 
 #include <sound/initval.h>
 #include <sound/control.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 
-#include <linux/atmel-ssc.h>
+#include <beep/atmel-ssc.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/at73c213.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/at73c213.h>
 
 #include "at73c213.h"
 

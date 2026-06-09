@@ -5,7 +5,7 @@
 * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
 * --------------------------------------------------------------------
 *
-* linux-wlan
+* beep-wlan
 *
 *   The contents of this file are subject to the Mozilla Public
 *   License Version 1.1 (the "License"); you may not use this file
@@ -30,12 +30,12 @@
 *
 * --------------------------------------------------------------------
 *
-* Inquiries regarding the linux-wlan Open Source project can be
+* Inquiries regarding the beep-wlan Open Source project can be
 * made directly to:
 *
 * AbsoluteValue Systems Inc.
-* info@linux-wlan.com
-* http://www.linux-wlan.com
+* info@beep-wlan.com
+* http://www.beep-wlan.com
 *
 * --------------------------------------------------------------------
 *
@@ -45,7 +45,7 @@
 * --------------------------------------------------------------------
 *
 * This file declares some of the constants and types used in various
-* parts of the linux-wlan system.
+* parts of the beep-wlan system.
 *
 * Notes:
 *   - Constant values are always in HOST byte order.

@@ -20,11 +20,11 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/errno.h>
 #include <sound/core.h>
 #include <sound/i2c.h>
 

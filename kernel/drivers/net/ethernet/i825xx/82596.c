@@ -1,4 +1,4 @@
-/* 82596.c: A generic 82596 ethernet driver for linux. */
+/* 82596.c: A generic 82596 ethernet driver for beep. */
 /*
    Based on Apricot.c
    Written 1994 by Mark Evans.
@@ -40,19 +40,19 @@
 
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/gfp.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

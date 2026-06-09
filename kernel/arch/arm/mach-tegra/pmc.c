@@ -15,9 +15,9 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/of.h>
 
 #include "iomap.h"
 

@@ -2,7 +2,7 @@
  *  Copyright (C) 1995  Linus Torvalds
  *
  *  Pentium III FXSR, SSE support
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@vabeep.com>, May 2000
  *
  *  X86-64 port
  *	Andi Kleen.
@@ -14,27 +14,27 @@
  * This file handles the architecture-dependent parts of process handling..
  */
 
-#include <linux/cpu.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/elfcore.h>
-#include <linux/smp.h>
-#include <linux/slab.h>
-#include <linux/user.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/notifier.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/prctl.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/ftrace.h>
+#include <beep/cpu.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/elfcore.h>
+#include <beep/smp.h>
+#include <beep/slab.h>
+#include <beep/user.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/ptrace.h>
+#include <beep/notifier.h>
+#include <beep/kprobes.h>
+#include <beep/kdebug.h>
+#include <beep/prctl.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
+#include <beep/ftrace.h>
 
 #include <asm/pgtable.h>
 #include <asm/processor.h>

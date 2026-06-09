@@ -1,20 +1,20 @@
 /*
- *  linux/fs/read_write.c
+ *  beep/fs/read_write.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/slab.h> 
-#include <linux/stat.h>
-#include <linux/fcntl.h>
-#include <linux/file.h>
-#include <linux/uio.h>
-#include <linux/fsnotify.h>
-#include <linux/security.h>
-#include <linux/export.h>
-#include <linux/syscalls.h>
-#include <linux/pagemap.h>
-#include <linux/splice.h>
+#include <beep/slab.h> 
+#include <beep/stat.h>
+#include <beep/fcntl.h>
+#include <beep/file.h>
+#include <beep/uio.h>
+#include <beep/fsnotify.h>
+#include <beep/security.h>
+#include <beep/export.h>
+#include <beep/syscalls.h>
+#include <beep/pagemap.h>
+#include <beep/splice.h>
 #include "read_write.h"
 
 #include <asm/uaccess.h>
@@ -627,7 +627,7 @@ ssize_t rw_copy_check_uvector(int type, const struct iovec __user * uvector,
 
 	/*
 	 * SuS says "The readv() function *may* fail if the iovcnt argument
-	 * was less than or equal to 0, or greater than {IOV_MAX}.  Linux has
+	 * was less than or equal to 0, or greater than {IOV_MAX}.  Beep has
 	 * traditionally returned zero for zero segments, so...
 	 */
 	if (nr_segs == 0) {
@@ -661,7 +661,7 @@ ssize_t rw_copy_check_uvector(int type, const struct iovec __user * uvector,
 	 * total length would overflow the ssize_t return value of the
 	 * system call.
 	 *
-	 * Linux caps all read/write calls to MAX_RW_COUNT, and avoids the
+	 * Beep caps all read/write calls to MAX_RW_COUNT, and avoids the
 	 * overflow case.
 	 */
 	ret = 0;

@@ -7,8 +7,8 @@
  *
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
 
 #include <asm/bootinfo.h>
 #include <asm/sgialib.h>
@@ -17,7 +17,7 @@
 #undef DEBUG_PROM_INIT
 
 /* Master romvec interface. */
-struct linux_romvec *romvec;
+struct beep_romvec *romvec;
 int prom_argc;
 LONG *_prom_argv, *_prom_envp;
 

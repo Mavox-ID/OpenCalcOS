@@ -2,7 +2,7 @@
  * Host AP crypto routines
  *
  * Copyright (c) 2002-2003, Jouni Malinen <jkmaline@cc.hut.fi>
- * Portions Copyright (C) 2004, Intel Corporation <jketreno@linux.intel.com>
+ * Portions Copyright (C) 2004, Intel Corporation <jketreno@beep.intel.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -11,11 +11,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/errno.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/errno.h>
 
 #include "rtllib.h"
 

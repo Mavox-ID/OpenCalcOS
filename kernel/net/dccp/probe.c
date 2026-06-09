@@ -22,15 +22,15 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/socket.h>
-#include <linux/dccp.h>
-#include <linux/proc_fs.h>
-#include <linux/module.h>
-#include <linux/kfifo.h>
-#include <linux/vmalloc.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/kprobes.h>
+#include <beep/socket.h>
+#include <beep/dccp.h>
+#include <beep/proc_fs.h>
+#include <beep/module.h>
+#include <beep/kfifo.h>
+#include <beep/vmalloc.h>
+#include <beep/gfp.h>
 #include <net/net_namespace.h>
 
 #include "dccp.h"

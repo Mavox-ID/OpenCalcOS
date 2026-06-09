@@ -14,12 +14,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/power_supply.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/vermagic.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/power_supply.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/vermagic.h>
 
 static int ac_online			= 1;
 static int usb_online			= 1;
@@ -67,7 +67,7 @@ static int test_power_get_battery_property(struct power_supply *psy,
 		val->strval = "Test battery";
 		break;
 	case POWER_SUPPLY_PROP_MANUFACTURER:
-		val->strval = "Linux";
+		val->strval = "Beep";
 		break;
 	case POWER_SUPPLY_PROP_SERIAL_NUMBER:
 		val->strval = UTS_RELEASE;

@@ -4,7 +4,7 @@
  * for more details.
  *
  * Copyright (C) 2001  Hiroyuki Kondo, Hirokazu Takata, and Hitoshi Yamamoto
- * Copyright (C) 2004, 2006  Hirokazu Takata <takata at linux-m32r.org>
+ * Copyright (C) 2004, 2006  Hirokazu Takata <takata at beep-m32r.org>
  */
 #ifndef _ASM_M32R_BARRIER_H
 #define _ASM_M32R_BARRIER_H

@@ -1,6 +1,6 @@
-/*	tulip_core.c: A DEC 21x4x-family ethernet driver for Linux.
+/*	tulip_core.c: A DEC 21x4x-family ethernet driver for Beep.
 
-	Copyright 2000,2001  The Linux Kernel Team
+	Copyright 2000,2001  The Beep Kernel Team
 	Written/copyright 1994-2001 by Donald Becker.
 
 	This software may be used and distributed according to the terms
@@ -20,16 +20,16 @@
 #define DRV_RELDATE	"Feb 27, 2007"
 
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
 #include "tulip.h"
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
+#include <beep/mii.h>
+#include <beep/crc32.h>
 #include <asm/unaligned.h>
 #include <asm/uaccess.h>
 
@@ -38,7 +38,7 @@
 #endif
 
 static char version[] =
-	"Linux Tulip driver version " DRV_VERSION " (" DRV_RELDATE ")\n";
+	"Beep Tulip driver version " DRV_VERSION " (" DRV_RELDATE ")\n";
 
 /* A few user-configurable values. */
 
@@ -107,7 +107,7 @@ static int csr0 = 0x00A00000 | 0x4800;
 #define TX_TIMEOUT  (4*HZ)
 
 
-MODULE_AUTHOR("The Linux Kernel Team");
+MODULE_AUTHOR("The Beep Kernel Team");
 MODULE_DESCRIPTION("Digital 21*4* Tulip ethernet driver");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(DRV_VERSION);

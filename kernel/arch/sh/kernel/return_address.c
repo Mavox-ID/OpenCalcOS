@@ -8,8 +8,8 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 #include <asm/dwarf.h>
 
 #ifdef CONFIG_DWARF_UNWINDER

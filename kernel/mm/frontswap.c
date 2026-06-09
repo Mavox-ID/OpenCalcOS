@@ -11,14 +11,14 @@
  * This work is licensed under the terms of the GNU GPL, version 2.
  */
 
-#include <linux/mman.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/security.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/frontswap.h>
-#include <linux/swapfile.h>
+#include <beep/mman.h>
+#include <beep/swap.h>
+#include <beep/swapops.h>
+#include <beep/security.h>
+#include <beep/module.h>
+#include <beep/debugfs.h>
+#include <beep/frontswap.h>
+#include <beep/swapfile.h>
 
 /*
  * frontswap_ops is set by frontswap_register_ops to contain the pointers

@@ -24,8 +24,8 @@
  | entry points for wm-FPU-emu.                                              |
  +---------------------------------------------------------------------------*/
 
-#include <linux/signal.h>
-#include <linux/regset.h>
+#include <beep/signal.h>
+#include <beep/regset.h>
 
 #include <asm/uaccess.h>
 #include <asm/traps.h>

@@ -8,8 +8,8 @@
  * kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/of_platform.h>
+#include <beep/init.h>
+#include <beep/of_platform.h>
 #include <asm/machdep.h>
 #include <asm/prom.h>
 #include <asm/time.h>

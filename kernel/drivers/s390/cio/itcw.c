@@ -5,12 +5,12 @@
  *    Author(s): Peter Oberparleiter <peter.oberparleiter@de.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/module.h>
 #include <asm/fcx.h>
 #include <asm/itcw.h>
 

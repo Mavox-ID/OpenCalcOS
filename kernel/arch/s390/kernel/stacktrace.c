@@ -5,10 +5,10 @@
  *  Author(s): Heiko Carstens <heiko.carstens@de.ibm.com>
  */
 
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
-#include <linux/kallsyms.h>
-#include <linux/module.h>
+#include <beep/sched.h>
+#include <beep/stacktrace.h>
+#include <beep/kallsyms.h>
+#include <beep/module.h>
 
 static unsigned long save_context_stack(struct stack_trace *trace,
 					unsigned long sp,

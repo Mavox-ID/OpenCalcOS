@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux WAN router layer.
+# Makefile for the Beep WAN router layer.
 #
 
 obj-$(CONFIG_WAN_ROUTER) += wanrouter.o

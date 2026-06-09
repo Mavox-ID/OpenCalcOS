@@ -17,17 +17,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/mutex.h>
 
-#include <linux/mfd/core.h>
-#include <linux/mfd/viperboard.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/viperboard.h>
 
-#include <linux/usb.h>
+#include <beep/usb.h>
 
 
 static const struct usb_device_id vprbrd_table[] = {

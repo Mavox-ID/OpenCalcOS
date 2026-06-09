@@ -1,7 +1,7 @@
-#include <linux/kernel.h>
-#include <linux/of_pci.h>
-#include <linux/of_irq.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/of_pci.h>
+#include <beep/of_irq.h>
+#include <beep/export.h>
 #include <asm/prom.h>
 
 /**
@@ -66,8 +66,8 @@ int of_irq_map_pci(const struct pci_dev *pdev, struct of_irq *out_irq)
 
 		/* Ok, we have found a parent with a device-node, hand over to
 		 * the OF parsing code.
-		 * We build a unit address from the linux device to be used for
-		 * resolution. Note that we use the linux bus number which may
+		 * We build a unit address from the beep device to be used for
+		 * resolution. Note that we use the beep bus number which may
 		 * not match your firmware bus numbering.
 		 * Fortunately, in most cases, interrupt-map-mask doesn't
 		 * include the bus number as part of the matching.

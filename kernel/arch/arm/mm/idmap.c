@@ -1,4 +1,4 @@
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 #include <asm/cputype.h>
 #include <asm/idmap.h>

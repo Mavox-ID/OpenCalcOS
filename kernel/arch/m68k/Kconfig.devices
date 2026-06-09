@@ -73,7 +73,7 @@ config AMIGA_BUILTIN_SERIAL
 	tristate "Amiga builtin serial support"
 	depends on AMIGA
 	help
-	  If you want to use your Amiga's built-in serial port in Linux,
+	  If you want to use your Amiga's built-in serial port in Beep,
 	  answer Y.
 
 	  To compile this driver as a module, choose M here.

@@ -7,25 +7,25 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sh_mobile_sdhi.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/onenand.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/input/sh_keysc.h>
-#include <linux/i2c.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/usb/r8a66597.h>
-#include <linux/videodev2.h>
-#include <linux/sh_intc.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/sh_mobile_sdhi.h>
+#include <beep/mfd/tmio.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/onenand.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/gpio.h>
+#include <beep/input.h>
+#include <beep/input/sh_keysc.h>
+#include <beep/i2c.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
+#include <beep/usb/r8a66597.h>
+#include <beep/videodev2.h>
+#include <beep/sh_intc.h>
 #include <media/rj54n1cb0c.h>
 #include <media/soc_camera.h>
 #include <media/sh_mobile_ceu.h>

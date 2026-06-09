@@ -12,11 +12,11 @@
  *  by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/err.h>
-#include <linux/clk.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/err.h>
+#include <beep/clk.h>
 
 #include <asm/bootinfo.h>
 #include <asm/time.h>		/* for mips_hpt_frequency */

@@ -29,10 +29,10 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/debugfs.h>
-#include <linux/vmalloc.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/debugfs.h>
+#include <beep/vmalloc.h>
 
 #include <rdma/ib_verbs.h>
 

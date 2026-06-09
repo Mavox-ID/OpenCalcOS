@@ -7,17 +7,17 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/string.h>
+#include <beep/types.h>
 
-#include <linux/spi/at73c213.h>
-#include <linux/spi/spi.h>
-#include <linux/atmel-mci.h>
+#include <beep/spi/at73c213.h>
+#include <beep/spi/spi.h>
+#include <beep/atmel-mci.h>
 
 #include <asm/setup.h>
 

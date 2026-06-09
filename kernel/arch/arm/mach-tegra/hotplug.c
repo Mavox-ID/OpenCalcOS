@@ -8,8 +8,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/smp.h>
+#include <beep/kernel.h>
+#include <beep/smp.h>
 
 #include <asm/cacheflush.h>
 #include <asm/smp_plat.h>

@@ -3,7 +3,7 @@
  * All rights reserved
  * www.brocade.com
  *
- * Linux driver for Brocade Fibre Channel Host Bus Adapter.
+ * Beep driver for Brocade Fibre Channel Host Bus Adapter.
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License (GPL) Version 2 as
@@ -75,7 +75,7 @@ struct bfa_trc_mod_s {
 enum {
 	BFA_TRC_HAL  = 1,	/*  BFA modules */
 	BFA_TRC_FCS  = 2,	/*  BFA FCS modules */
-	BFA_TRC_LDRV = 3,	/*  Linux driver modules */
+	BFA_TRC_LDRV = 3,	/*  Beep driver modules */
 	BFA_TRC_CNA  = 4,	/*  Common modules */
 };
 #define BFA_TRC_MOD_SH	10

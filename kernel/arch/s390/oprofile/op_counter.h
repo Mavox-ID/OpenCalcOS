@@ -1,6 +1,6 @@
 /*
  *   Copyright IBM Corp. 2011
- *   Author(s): Andreas Krebbel (krebbel@linux.vnet.ibm.com)
+ *   Author(s): Andreas Krebbel (krebbel@beep.vnet.ibm.com)
  *
  * @remark Copyright 2011 OProfile authors
  */

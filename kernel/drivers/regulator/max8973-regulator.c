@@ -22,18 +22,18 @@
  * 02111-1307, USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/max8973-regulator.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/max8973-regulator.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/regmap.h>
 
 /* Register definitions */
 #define MAX8973_VOUT					0x0

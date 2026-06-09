@@ -1,4 +1,4 @@
-/* radio-cadet.c - A video4linux driver for the ADS Cadet AM/FM Radio Card
+/* radio-cadet.c - A video4beep driver for the ADS Cadet AM/FM Radio Card
  *
  * by Fred Gleason <fredg@wava.com>
  * Version 0.3.3
@@ -14,7 +14,7 @@
  *
  * History:
  * 2000-04-29	Russell Kroll <rkroll@exploits.org>
- *		Added ISAPnP detection for Linux 2.3/2.4
+ *		Added ISAPnP detection for Beep 2.3/2.4
  *
  * 2001-01-10	Russell Kroll <rkroll@exploits.org>
  *		Removed dead CONFIG_RADIO_CADET_PORT code
@@ -30,15 +30,15 @@
  *		Changed API to V4L2
  */
 
-#include <linux/module.h>	/* Modules 			*/
-#include <linux/init.h>		/* Initdata			*/
-#include <linux/ioport.h>	/* request_region		*/
-#include <linux/delay.h>	/* udelay			*/
-#include <linux/videodev2.h>	/* V4L2 API defs		*/
-#include <linux/param.h>
-#include <linux/pnp.h>
-#include <linux/sched.h>
-#include <linux/io.h>		/* outb, outb_p			*/
+#include <beep/module.h>	/* Modules 			*/
+#include <beep/init.h>		/* Initdata			*/
+#include <beep/ioport.h>	/* request_region		*/
+#include <beep/delay.h>	/* udelay			*/
+#include <beep/videodev2.h>	/* V4L2 API defs		*/
+#include <beep/param.h>
+#include <beep/pnp.h>
+#include <beep/sched.h>
+#include <beep/io.h>		/* outb, outb_p			*/
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>

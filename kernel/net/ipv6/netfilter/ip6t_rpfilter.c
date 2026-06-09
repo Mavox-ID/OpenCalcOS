@@ -6,15 +6,15 @@
  * published by the Free Software Foundation.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/route.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/route.h>
 #include <net/ip6_fib.h>
 #include <net/ip6_route.h>
 
-#include <linux/netfilter/xt_rpfilter.h>
-#include <linux/netfilter/x_tables.h>
+#include <beep/netfilter/xt_rpfilter.h>
+#include <beep/netfilter/x_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Florian Westphal <fw@strlen.de>");

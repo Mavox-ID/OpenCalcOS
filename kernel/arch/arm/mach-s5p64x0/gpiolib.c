@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5p64x0/gpiolib.c
+/* beep/arch/arm/mach-s5p64x0/gpiolib.c
  *
  * Copyright (c) 2009-2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -10,10 +10,10 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
 
 #include <mach/map.h>
 #include <mach/regs-gpio.h>

@@ -262,7 +262,7 @@
 			};
 
 			EMAC0: ethernet@f0000800 {
-				linux,network-index = <0x0>;
+				beep,network-index = <0x0>;
 				device_type = "network";
 				compatible = "ibm,emac-440spe", "ibm,emac4";
 				interrupt-parent = <&UIC1>;
@@ -442,6 +442,6 @@
 	};
 
 	chosen {
-		linux,stdout-path = "/plb/opb/serial@f0000200";
+		beep,stdout-path = "/plb/opb/serial@f0000200";
 	};
 };

@@ -2,7 +2,7 @@
  * Copyright (C) 1999 - 2010 Intel Corporation.
  * Copyright (C) 2010 - 2012 LAPIS SEMICONDUCTOR CO., LTD.
  *
- * This code was derived from the Intel e1000e Linux driver.
+ * This code was derived from the Intel e1000e Beep driver.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,9 +20,9 @@
 
 #include "pch_gbe.h"
 #include "pch_gbe_api.h"
-#include <linux/module.h>
-#include <linux/net_tstamp.h>
-#include <linux/ptp_classify.h>
+#include <beep/module.h>
+#include <beep/net_tstamp.h>
+#include <beep/ptp_classify.h>
 
 #define DRV_VERSION     "1.01"
 const char pch_driver_version[] = DRV_VERSION;

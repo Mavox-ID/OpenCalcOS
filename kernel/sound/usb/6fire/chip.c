@@ -1,5 +1,5 @@
 /*
- * Linux driver for TerraTec DMX 6Fire USB
+ * Beep driver for TerraTec DMX 6Fire USB
  *
  * Main routines and module definitions.
  *
@@ -20,11 +20,11 @@
 #include "comm.h"
 #include "midi.h"
 
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
+#include <beep/moduleparam.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/gfp.h>
 #include <sound/initval.h>
 
 MODULE_AUTHOR("Torsten Schenk <torsten.schenk@zoho.com>");

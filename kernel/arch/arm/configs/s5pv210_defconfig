@@ -18,7 +18,7 @@ CONFIG_HIGH_RES_TIMERS=y
 CONFIG_VMSPLIT_2G=y
 CONFIG_PREEMPT=y
 CONFIG_AEABI=y
-CONFIG_CMDLINE="root=/dev/ram0 rw ramdisk=8192 initrd=0x20800000,8M console=ttySAC1,115200 init=/linuxrc"
+CONFIG_CMDLINE="root=/dev/ram0 rw ramdisk=8192 initrd=0x20800000,8M console=ttySAC1,115200 init=/beeprc"
 CONFIG_VFP=y
 CONFIG_NEON=y
 CONFIG_UEVENT_HELPER_PATH="/sbin/hotplug"

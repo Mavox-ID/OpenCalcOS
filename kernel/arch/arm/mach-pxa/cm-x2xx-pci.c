@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/cm-x2xx-pci.c
+ * beep/arch/arm/mach-pxa/cm-x2xx-pci.c
  *
  * PCI bios-type initialisation for PCI machines
  *
@@ -13,13 +13,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
 
 #include <asm/mach/pci.h>
 #include <asm/mach-types.h>

@@ -8,10 +8,10 @@
  * This code is released under the GPL version 2.
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/eisa.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/eisa.h>
+#include <beep/init.h>
 
 /* The default EISA device parent (virtual root device).
  * Now use a platform device, since that's the obvious choice. */

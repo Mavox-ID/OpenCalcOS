@@ -17,9 +17,9 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/err.h>
 #include "bmp085.h"
 
 #define BMP085_I2C_ADDRESS	0x77

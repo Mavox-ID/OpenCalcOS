@@ -4,12 +4,12 @@
  * Originally from kernel/power/process.c
  */
 
-#include <linux/interrupt.h>
-#include <linux/suspend.h>
-#include <linux/export.h>
-#include <linux/syscalls.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
+#include <beep/interrupt.h>
+#include <beep/suspend.h>
+#include <beep/export.h>
+#include <beep/syscalls.h>
+#include <beep/freezer.h>
+#include <beep/kthread.h>
 
 /* total number of freezing conditions in effect */
 atomic_t system_freezing_cnt = ATOMIC_INIT(0);

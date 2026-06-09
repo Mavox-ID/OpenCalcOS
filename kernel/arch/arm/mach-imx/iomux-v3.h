@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2009 by Jan Weitzel Phytec Messtechnik GmbH,
- *			<armlinux@phytec.de>
+ *			<armbeep@phytec.de>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License

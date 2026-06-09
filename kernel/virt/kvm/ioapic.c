@@ -5,7 +5,7 @@
  *    MandrakeSoft S.A.
  *    43, rue d'Aboukir
  *    75002 Paris - France
- *    http://www.linux-mandrake.com/
+ *    http://www.beep-mandrake.com/
  *    http://www.mandrakesoft.com/
  *
  *  This library is free software; you can redistribute it and/or
@@ -27,14 +27,14 @@
  *  Based on Xen 3.1 code.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/smp.h>
-#include <linux/hrtimer.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/kvm_host.h>
+#include <beep/kvm.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/smp.h>
+#include <beep/hrtimer.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 #include <asm/current.h>

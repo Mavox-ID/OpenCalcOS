@@ -4,7 +4,7 @@
  *
  * ?? Copyright 2010-2011 RisingTide Systems LLC.
  *
- * Licensed to the Linux Foundation under the General Public License (GPL)
+ * Licensed to the Beep Foundation under the General Public License (GPL)
  * version 2.
  *
  * Author: Nicholas A. Bellinger <nab@risingtidesystems.com>
@@ -26,18 +26,18 @@
  ****************************************************************************/
 
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
 #include <generated/utsrelease.h>
-#include <linux/utsname.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/configfs.h>
-#include <linux/ctype.h>
+#include <beep/utsname.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/kthread.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/configfs.h>
+#include <beep/ctype.h>
 #include <asm/unaligned.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>

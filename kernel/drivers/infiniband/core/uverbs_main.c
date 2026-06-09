@@ -34,17 +34,17 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/file.h>
-#include <linux/cdev.h>
-#include <linux/anon_inodes.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/fs.h>
+#include <beep/poll.h>
+#include <beep/sched.h>
+#include <beep/file.h>
+#include <beep/cdev.h>
+#include <beep/anon_inodes.h>
+#include <beep/slab.h>
 
 #include <asm/uaccess.h>
 

@@ -14,10 +14,10 @@
  * Some code taken from mips and parisc architecture.
  *
  *    Copyright (C) 2001, 2002  Hiroyuki Kondo, Hirokazu Takata
- *    Copyright (C) 2004  Hirokazu Takata <takata at linux-m32r.org>
+ *    Copyright (C) 2004  Hirokazu Takata <takata at beep-m32r.org>
  */
 
-#include <linux/in6.h>
+#include <beep/in6.h>
 
 /*
  * computes the checksum of a memory block at buff, length len,

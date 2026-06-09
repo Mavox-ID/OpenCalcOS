@@ -27,17 +27,17 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
-#include <linux/suspend.h>
-#include <linux/memblock.h>
-#include <linux/gfp.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/vmalloc.h>
+#include <beep/suspend.h>
+#include <beep/memblock.h>
+#include <beep/gfp.h>
 #include <asm/io.h>
 #include <asm/prom.h>
 #include <asm/iommu.h>

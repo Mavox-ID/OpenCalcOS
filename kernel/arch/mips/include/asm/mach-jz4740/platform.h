@@ -17,7 +17,7 @@
 #ifndef __JZ4740_PLATFORM_H
 #define __JZ4740_PLATFORM_H
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 
 extern struct platform_device jz4740_usb_ohci_device;
 extern struct platform_device jz4740_udc_device;

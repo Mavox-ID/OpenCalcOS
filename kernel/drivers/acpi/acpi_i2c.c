@@ -2,18 +2,18 @@
  * ACPI I2C enumeration support
  *
  * Copyright (C) 2012, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@beep.intel.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/i2c.h>
-#include <linux/ioport.h>
+#include <beep/acpi.h>
+#include <beep/device.h>
+#include <beep/export.h>
+#include <beep/i2c.h>
+#include <beep/ioport.h>
 
 ACPI_MODULE_NAME("i2c");
 
@@ -82,7 +82,7 @@ static acpi_status acpi_i2c_add_device(acpi_handle handle, u32 level,
  * @adapter: pointer to adapter
  *
  * Enumerate all I2C slave devices behind this adapter by walking the ACPI
- * namespace. When a device is found it will be added to the Linux device
+ * namespace. When a device is found it will be added to the Beep device
  * model and bound to the corresponding ACPI handle.
  */
 void acpi_i2c_register_devices(struct i2c_adapter *adapter)

@@ -18,13 +18,13 @@
 	Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
 #include <asm/irq.h>
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 #include "dmxdev.h"
 #include "dvbdev.h"

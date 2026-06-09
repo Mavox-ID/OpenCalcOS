@@ -1,7 +1,7 @@
 #ifndef _ASM_GENERIC_LOCAL64_H
 #define _ASM_GENERIC_LOCAL64_H
 
-#include <linux/percpu.h>
+#include <beep/percpu.h>
 #include <asm/types.h>
 
 /*
@@ -55,7 +55,7 @@ typedef struct {
 
 #else /* BITS_PER_LONG != 64 */
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 /* Don't use typedef: don't want them to be mixed with atomic_t's. */
 typedef struct {

@@ -6,10 +6,10 @@
 #endif
 
 #ifndef __ASSEMBLY__
-#include <linux/pagemap.h>
+#include <beep/pagemap.h>
 
 #ifdef CONFIG_MMU
-#include <linux/swap.h>
+#include <beep/swap.h>
 #include <asm/pgalloc.h>
 #include <asm/tlbflush.h>
 #include <asm/mmu_context.h>

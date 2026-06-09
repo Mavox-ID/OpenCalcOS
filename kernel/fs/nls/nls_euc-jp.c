@@ -1,16 +1,16 @@
 /*
- * linux/fs/nls/nls_euc-jp.c
+ * beep/fs/nls/nls_euc-jp.c
  *
  * Added `OSF/JVC Recommended Code Set Conversion Specification
  * between Japanese EUC and Shift-JIS' support: <hirofumi@mail.parknet.co.jp>
  * (http://www.opengroup.or.jp/jvc/cde/sjis-euc-e.html)
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/nls.h>
-#include <linux/errno.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/nls.h>
+#include <beep/errno.h>
 
 static struct nls_table *p_nls;
 

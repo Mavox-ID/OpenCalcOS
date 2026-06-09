@@ -23,8 +23,8 @@ static inline void setup_cputime_one_jiffy(void) { }
 #endif
 #else
 
-#include <linux/types.h>
-#include <linux/time.h>
+#include <beep/types.h>
+#include <beep/time.h>
 #include <asm/div64.h>
 #include <asm/time.h>
 #include <asm/param.h>

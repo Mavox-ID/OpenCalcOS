@@ -7,17 +7,17 @@
  *  2 of the License, or (at your option) any later version.
  */
 
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <beep/cpu.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/msi.h>
+#include <beep/of.h>
+#include <beep/slab.h>
+#include <beep/smp.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

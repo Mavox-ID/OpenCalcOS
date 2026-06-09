@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/lib/ucmpdi2.S
+ *  beep/arch/arm/lib/ucmpdi2.S
  *
  *  Author:	Nicolas Pitre
  *  Created:	Oct 19, 2005
@@ -10,7 +10,7 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #ifdef __ARMEB__
 #define xh r0

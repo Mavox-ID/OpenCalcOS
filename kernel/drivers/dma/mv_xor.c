@@ -16,20 +16,20 @@
  * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/memory.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/platform_data/dma-mv_xor.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/memory.h>
+#include <beep/clk.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/irqdomain.h>
+#include <beep/platform_data/dma-mv_xor.h>
 
 #include "dmaengine.h"
 #include "mv_xor.h"

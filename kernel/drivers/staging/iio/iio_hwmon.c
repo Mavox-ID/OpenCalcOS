@@ -7,15 +7,15 @@
  * the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/iio/consumer.h>
-#include <linux/iio/types.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/iio/consumer.h>
+#include <beep/iio/types.h>
 
 /**
  * struct iio_hwmon_state - device instance state

@@ -1,7 +1,7 @@
 /*
  * OpenRISC head.S
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -15,10 +15,10 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/linkage.h>
-#include <linux/threads.h>
-#include <linux/errno.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/threads.h>
+#include <beep/errno.h>
+#include <beep/init.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 #include <asm/mmu.h>
@@ -26,7 +26,7 @@
 #include <asm/cache.h>
 #include <asm/spr_defs.h>
 #include <asm/asm-offsets.h>
-#include <linux/of_fdt.h>
+#include <beep/of_fdt.h>
 
 #define tophys(rd,rs)				\
 	l.movhi	rd,hi(-KERNELBASE)		;\
@@ -1534,10 +1534,10 @@ ENTRY(_emergency_print_nr)
 
 /*
  * This should be used for debugging only.
- * It messes up the Linux early serial output
+ * It messes up the Beep early serial output
  * somehow, so use it sparingly and essentially
  * only if you need to debug something that goes wrong
- * before Linux gets the early serial going.
+ * before Beep gets the early serial going.
  *
  * Furthermore, you'll have to make sure you set the
  * UART_DEVISOR correctly according to the system
@@ -1577,8 +1577,8 @@ ENTRY(_early_uart_init)
 	l.jr	r9
 	l.nop
 
-_string_copying_linux:
-	.string "\n\n\n\n\n\rCopying Linux... \0"
+_string_copying_beep:
+	.string "\n\n\n\n\n\rCopying Beep... \0"
 
 _string_ok_booting:
 	.string "Ok, booting the kernel.\n\r\0"
@@ -1602,7 +1602,7 @@ _string_esr_irq_bug:
 
 /*
  * .data section should be page aligned
- *	(look into arch/or32/kernel/vmlinux.lds)
+ *	(look into arch/or32/kernel/vmbeep.lds)
  */
 	.section .data,"aw"
 	.align	8192

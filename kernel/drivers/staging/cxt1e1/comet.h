@@ -21,7 +21,7 @@
  *-----------------------------------------------------------------------------
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define VINT32  volatile u_int32_t
 

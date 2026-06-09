@@ -12,9 +12,9 @@
  *  GNU General Public License for more details.
  */
 
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/module.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
+#include <beep/module.h>
 #include <media/lirc.h>
 #include <media/lirc_dev.h>
 #include <media/rc-core.h>

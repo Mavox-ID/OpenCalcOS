@@ -1,5 +1,5 @@
 /*
- *  Point-to-Point Tunneling Protocol for Linux
+ *  Point-to-Point Tunneling Protocol for Beep
  *
  *	Authors: Dmitry Kozlov <xeb@mail.ru>
  *
@@ -10,28 +10,28 @@
  *
  */
 
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/ppp_channel.h>
-#include <linux/ppp_defs.h>
-#include <linux/if_pppox.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/notifier.h>
-#include <linux/file.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/rcupdate.h>
-#include <linux/spinlock.h>
+#include <beep/string.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/net.h>
+#include <beep/skbuff.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/ppp_channel.h>
+#include <beep/ppp_defs.h>
+#include <beep/if_pppox.h>
+#include <beep/ppp-ioctl.h>
+#include <beep/notifier.h>
+#include <beep/file.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/rcupdate.h>
+#include <beep/spinlock.h>
 
 #include <net/sock.h>
 #include <net/protocol.h>
@@ -40,7 +40,7 @@
 #include <net/route.h>
 #include <net/gre.h>
 
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 
 #define PPTP_DRIVER_VERSION "0.8.5"
 

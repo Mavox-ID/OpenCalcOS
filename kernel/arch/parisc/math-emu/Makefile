@@ -1,5 +1,5 @@
 #
-# Makefile for the linux/parisc floating point code
+# Makefile for the beep/parisc floating point code
 #
 
 # See arch/parisc/math-emu/README

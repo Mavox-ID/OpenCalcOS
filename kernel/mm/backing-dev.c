@@ -1,15 +1,15 @@
 
-#include <linux/wait.h>
-#include <linux/backing-dev.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/writeback.h>
-#include <linux/device.h>
+#include <beep/wait.h>
+#include <beep/backing-dev.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/writeback.h>
+#include <beep/device.h>
 #include <trace/events/writeback.h>
 
 static atomic_long_t bdi_seq = ATOMIC_LONG_INIT(0);
@@ -51,8 +51,8 @@ void bdi_lock_two(struct bdi_writeback *wb1, struct bdi_writeback *wb2)
 }
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 static struct dentry *bdi_debug_root;
 

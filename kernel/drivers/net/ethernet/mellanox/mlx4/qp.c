@@ -33,12 +33,12 @@
  * SOFTWARE.
  */
 
-#include <linux/gfp.h>
-#include <linux/export.h>
-#include <linux/init.h>
+#include <beep/gfp.h>
+#include <beep/export.h>
+#include <beep/init.h>
 
-#include <linux/mlx4/cmd.h>
-#include <linux/mlx4/qp.h>
+#include <beep/mlx4/cmd.h>
+#include <beep/mlx4/qp.h>
 
 #include "mlx4.h"
 #include "icm.h"

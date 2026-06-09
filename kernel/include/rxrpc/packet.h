@@ -9,8 +9,8 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#ifndef _LINUX_RXRPC_PACKET_H
-#define _LINUX_RXRPC_PACKET_H
+#ifndef _BEEP_RXRPC_PACKET_H
+#define _BEEP_RXRPC_PACKET_H
 
 typedef u32	rxrpc_seq_t;	/* Rx message sequence number */
 typedef u32	rxrpc_serial_t;	/* Rx message serial number */
@@ -211,4 +211,4 @@ struct rxkad_response {
 #define RXKADDATALEN		19270411	/* user data too long */
 #define RXKADILLEGALLEVEL	19270412	/* caller not authorised to use encrypted conns */
 
-#endif /* _LINUX_RXRPC_PACKET_H */
+#endif /* _BEEP_RXRPC_PACKET_H */

@@ -15,11 +15,11 @@
  * then is used by multiple filesystems.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/vmalloc.h>
-#include <linux/zlib.h>
-#include <linux/cramfs_fs.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/vmalloc.h>
+#include <beep/zlib.h>
+#include <beep/cramfs_fs.h>
 
 static z_stream stream;
 static int initialized;

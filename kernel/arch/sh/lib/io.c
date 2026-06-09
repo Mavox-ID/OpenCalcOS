@@ -11,8 +11,8 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/module.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/io.h>
 
 void __raw_readsl(const void __iomem *addr, void *datap, int len)
 {

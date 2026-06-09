@@ -1,5 +1,5 @@
 /*
- *  linux/include/asm/setup.h
+ *  beep/include/asm/setup.h
  *
  *  Copyright (C) 1997-1999 Russell King
  *
@@ -14,7 +14,7 @@
 #ifndef _UAPI__ASMARM_SETUP_H
 #define _UAPI__ASMARM_SETUP_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define COMMAND_LINE_SIZE 1024
 
@@ -98,7 +98,7 @@ struct tag_revision {
 };
 
 /* initial values for vesafb-type framebuffers. see struct screen_info
- * in include/linux/tty.h
+ * in include/beep/tty.h
  */
 #define ATAG_VIDEOLFB	0x54410008
 

@@ -1,8 +1,8 @@
 #ifndef _CRIS_PGALLOC_H
 #define _CRIS_PGALLOC_H
 
-#include <linux/threads.h>
-#include <linux/mm.h>
+#include <beep/threads.h>
+#include <beep/mm.h>
 
 #define pmd_populate_kernel(mm, pmd, pte) pmd_set(pmd, pte)
 #define pmd_populate(mm, pmd, pte) pmd_set(pmd, page_address(pte))

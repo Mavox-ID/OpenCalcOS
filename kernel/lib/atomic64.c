@@ -9,12 +9,12 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/types.h>
-#include <linux/cache.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/atomic.h>
+#include <beep/types.h>
+#include <beep/cache.h>
+#include <beep/spinlock.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/atomic.h>
 
 /*
  * We use a hashed array of spinlocks to provide exclusive access

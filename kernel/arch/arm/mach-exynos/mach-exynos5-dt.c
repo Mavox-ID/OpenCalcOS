@@ -9,11 +9,11 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/of_platform.h>
-#include <linux/of_fdt.h>
-#include <linux/serial_core.h>
-#include <linux/memblock.h>
-#include <linux/io.h>
+#include <beep/of_platform.h>
+#include <beep/of_fdt.h>
+#include <beep/serial_core.h>
+#include <beep/memblock.h>
+#include <beep/io.h>
 
 #include <asm/mach/arch.h>
 #include <asm/hardware/gic.h>

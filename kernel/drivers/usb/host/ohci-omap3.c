@@ -29,8 +29,8 @@
  *	- add kernel-doc
  */
 
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
 
 /*-------------------------------------------------------------------------*/
 

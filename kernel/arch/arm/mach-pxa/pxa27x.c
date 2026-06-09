@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/pxa27x.c
+ *  beep/arch/arm/mach-pxa/pxa27x.c
  *
  *  Author:	Nicolas Pitre
  *  Created:	Nov 05, 2002
@@ -11,17 +11,17 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/platform_device.h>
-#include <linux/syscore_ops.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/i2c/pxa-i2c.h>
+#include <beep/gpio.h>
+#include <beep/gpio-pxa.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/suspend.h>
+#include <beep/platform_device.h>
+#include <beep/syscore_ops.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/i2c/pxa-i2c.h>
 
 #include <asm/mach/map.h>
 #include <mach/hardware.h>
@@ -30,7 +30,7 @@
 #include <mach/irqs.h>
 #include <mach/pxa27x.h>
 #include <mach/reset.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
 #include <mach/pm.h>
 #include <mach/dma.h>
 #include <mach/smemc.h>

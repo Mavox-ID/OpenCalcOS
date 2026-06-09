@@ -5,14 +5,14 @@
  *
  * Copyright (C) 2005-2009 Cavium Networks
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/swiotlb.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/time.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/swiotlb.h>
 
 #include <asm/time.h>
 
@@ -28,7 +28,7 @@
 /*
  * Octeon's PCI controller uses did=3, subdid=2 for PCI IO
  * addresses. Use PCI endian swapping 1 so no address swapping is
- * necessary. The Linux io routines will endian swap the data.
+ * necessary. The Beep io routines will endian swap the data.
  */
 #define OCTEON_PCI_IOSPACE_BASE     0x80011a0400000000ull
 #define OCTEON_PCI_IOSPACE_SIZE     (1ull<<32)
@@ -66,8 +66,8 @@ enum octeon_dma_bar_type octeon_dma_bar_type = OCTEON_DMA_BAR_TYPE_INVALID;
 /**
  * Map a PCI device to the appropriate interrupt line
  *
- * @dev:    The Linux PCI device structure for the device to map
- * @slot:   The slot number for this device on __BUS 0__. Linux
+ * @dev:    The Beep PCI device structure for the device to map
+ * @slot:   The slot number for this device on __BUS 0__. Beep
  *               enumerates through all the bridges and figures out the
  *               slot on Bus 0 where this device eventually hooks to.
  * @pin:    The PCI interrupt pin read from the device, then swizzled
@@ -93,7 +93,7 @@ int pcibios_plat_dev_init(struct pci_dev *dev)
 	int pos;
 	/*
 	 * Force the Cache line setting to 64 bytes. The standard
-	 * Linux bus scan doesn't seem to set it. Octeon really has
+	 * Beep bus scan doesn't seem to set it. Octeon really has
 	 * 128 byte lines, but Intel bridges get really upset if you
 	 * try and set values above 64 bytes. Value is specified in
 	 * 32bit words.
@@ -224,8 +224,8 @@ const char *octeon_get_pci_interrupts(void)
 /**
  * Map a PCI device to the appropriate interrupt line
  *
- * @dev:    The Linux PCI device structure for the device to map
- * @slot:   The slot number for this device on __BUS 0__. Linux
+ * @dev:    The Beep PCI device structure for the device to map
+ * @slot:   The slot number for this device on __BUS 0__. Beep
  *               enumerates through all the bridges and figures out the
  *               slot on Bus 0 where this device eventually hooks to.
  * @pin:    The PCI interrupt pin read from the device, then swizzled

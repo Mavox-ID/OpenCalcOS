@@ -1,6 +1,6 @@
 /*
  *
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) Beep driver
  * Copyright (c) 2003-2012, Intel Corporation.
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -14,27 +14,27 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/aio.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ioctl.h>
-#include <linux/cdev.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/uuid.h>
-#include <linux/jiffies.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/aio.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/ioctl.h>
+#include <beep/cdev.h>
+#include <beep/list.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/uuid.h>
+#include <beep/jiffies.h>
+#include <beep/uaccess.h>
 
 
 #include "mei_dev.h"
 #include "hw.h"
-#include <linux/mei.h>
+#include <beep/mei.h>
 #include "interface.h"
 
 const uuid_le mei_amthi_guid  = UUID_LE(0x12f80028, 0xb4b7, 0x4b2d, 0xac,

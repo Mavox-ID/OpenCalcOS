@@ -22,17 +22,17 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/leds.h>
-#include <linux/pm.h>
-#include <linux/i2c/lm8323.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/mutex.h>
+#include <beep/delay.h>
+#include <beep/input.h>
+#include <beep/leds.h>
+#include <beep/pm.h>
+#include <beep/i2c/lm8323.h>
+#include <beep/slab.h>
 
 /* Commands to send to the chip. */
 #define LM8323_CMD_READ_ID		0x80 /* Read chip ID. */

@@ -3,12 +3,12 @@
  *
  * Copyright IBM Corp. 2009
  *
- * Author(s): Hans-Joachim Picht <hans@linux.vnet.ibm.com>
+ * Author(s): Hans-Joachim Picht <hans@beep.vnet.ibm.com>
  */
 
-#include <linux/pfn.h>
-#include <linux/suspend.h>
-#include <linux/mm.h>
+#include <beep/pfn.h>
+#include <beep/suspend.h>
+#include <beep/mm.h>
 #include <asm/ctl_reg.h>
 
 /*

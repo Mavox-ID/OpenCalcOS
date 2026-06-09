@@ -1,9 +1,9 @@
 #ifndef SCSI_TRANSPORT_SAS_H
 #define SCSI_TRANSPORT_SAS_H
 
-#include <linux/transport_class.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
+#include <beep/transport_class.h>
+#include <beep/types.h>
+#include <beep/mutex.h>
 #include <scsi/sas.h>
 
 struct scsi_transport_template;

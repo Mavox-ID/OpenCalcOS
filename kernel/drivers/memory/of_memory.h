@@ -9,8 +9,8 @@
  * (at your option) any later version.
  */
 
-#ifndef __LINUX_MEMORY_OF_REG_H
-#define __LINUX_MEMORY_OF_REG_H
+#ifndef __BEEP_MEMORY_OF_REG_H
+#define __BEEP_MEMORY_OF_REG_H
 
 #if defined(CONFIG_OF) && defined(CONFIG_DDR)
 extern const struct lpddr2_min_tck *of_get_min_tck(struct device_node *np,
@@ -33,4 +33,4 @@ static inline const struct lpddr2_timings
 }
 #endif /* CONFIG_OF && CONFIG_DDR */
 
-#endif /* __LINUX_MEMORY_OF_REG_ */
+#endif /* __BEEP_MEMORY_OF_REG_ */

@@ -14,35 +14,35 @@
  *
  *****************************************************************************
  */
-#ifndef __LINUX_UNIFI_PRIV_H__
-#define __LINUX_UNIFI_PRIV_H__ 1
+#ifndef __BEEP_UNIFI_PRIV_H__
+#define __BEEP_UNIFI_PRIV_H__ 1
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/wireless.h>
-#include <linux/cdev.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/wait.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/wireless.h>
+#include <beep/cdev.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
 
 #ifdef CSR_WIFI_SUPPORT_MMC_DRIVER
-#include <linux/mmc/core.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio.h>
+#include <beep/mmc/core.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/sdio_func.h>
+#include <beep/mmc/sdio_ids.h>
+#include <beep/mmc/sdio.h>
 #endif /* CSR_WIFI_SUPPORT_MMC_DRIVER */
 
-#include <linux/fs.h>
+#include <beep/fs.h>
 
 #ifdef ANDROID_BUILD
-#include <linux/wakelock.h>
+#include <beep/wakelock.h>
 #endif
 
 #include "csr_wifi_hip_unifi.h"
@@ -70,7 +70,7 @@ extern struct wake_lock unifi_sdio_wake_lock;
 
 #include "unifi_clients.h"
 
-#ifdef CSR_NATIVE_LINUX
+#ifdef CSR_NATIVE_BEEP
 #include "sme_native/unifi_native.h"
 #else
 #include "unifi_sme.h"
@@ -413,7 +413,7 @@ struct unifi_priv {
      */
     unsigned int drop_unencrypted       : 1;
 
-    /* Our list of unifi linux clients. */
+    /* Our list of unifi beep clients. */
     ul_client_t ul_clients[MAX_UDI_CLIENTS];
 
     /* Mutex to protect using the logging hook after UDI client is gone */
@@ -475,7 +475,7 @@ struct unifi_priv {
     /* lock to protect stainfo members and priv members*/
     spinlock_t staRecord_lock;
 #endif
-#ifdef CSR_NATIVE_LINUX
+#ifdef CSR_NATIVE_BEEP
 #ifdef CSR_SUPPORT_WEXT
     /* wireless config */
     struct wext_config wext_conf;
@@ -487,7 +487,7 @@ struct unifi_priv {
     /* The ul_client that provides the blocking API for WEXT calls */
     ul_client_t *wext_client;
 
-#endif /* CSR_NATIVE_LINUX */
+#endif /* CSR_NATIVE_BEEP */
 
 #ifdef CSR_SUPPORT_SME
     wait_queue_head_t sme_request_wq;
@@ -793,8 +793,8 @@ int uf_find_priv(unifi_priv_t *priv);
 int uf_find_netdev_priv(netInterface_priv_t *priv);
 unifi_priv_t *uf_get_instance(int inst);
 void uf_put_instance(int inst);
-int csr_sdio_linux_install_irq(CsrSdioFunction *sdio);
-int csr_sdio_linux_remove_irq(CsrSdioFunction *sdio);
+int csr_sdio_beep_install_irq(CsrSdioFunction *sdio);
+int csr_sdio_beep_remove_irq(CsrSdioFunction *sdio);
 
 void uf_add_os_device(int bus_id, struct device *os_device);
 void uf_remove_os_device(int bus_id);
@@ -886,7 +886,7 @@ void uf_wait_for_thread_to_stop(unifi_priv_t *priv, struct uf_thread *thread);
 
 
 /*
- * Unifi Linux functions
+ * Unifi Beep functions
  */
 void ul_init_clients(unifi_priv_t *priv);
 
@@ -1133,4 +1133,4 @@ int unifi_putest_gp_write16(unifi_priv_t *priv, unsigned char *arg);
 int unifi_putest_dl_fw(unifi_priv_t *priv, unsigned char *arg);
 int unifi_putest_dl_fw_buff(unifi_priv_t *priv, unsigned char *arg);
 
-#endif /* __LINUX_UNIFI_PRIV_H__ */
+#endif /* __BEEP_UNIFI_PRIV_H__ */

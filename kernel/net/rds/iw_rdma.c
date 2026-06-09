@@ -30,9 +30,9 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/ratelimit.h>
 
 #include "rds.h"
 #include "iw.h"

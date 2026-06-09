@@ -18,9 +18,9 @@
  *  Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include "lola.h"

@@ -13,8 +13,8 @@
  *
  * Licensed under the GNU/GPL. See COPYING for details.
  */
-#include <linux/platform_device.h>
-#include <linux/usb/ohci_pdriver.h>
+#include <beep/platform_device.h>
+#include <beep/usb/ohci_pdriver.h>
 
 static int ohci_platform_reset(struct usb_hcd *hcd)
 {

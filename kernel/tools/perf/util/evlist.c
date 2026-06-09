@@ -20,8 +20,8 @@
 
 #include <sys/mman.h>
 
-#include <linux/bitops.h>
-#include <linux/hash.h>
+#include <beep/bitops.h>
+#include <beep/hash.h>
 
 #define FD(e, x, y) (*(int *)xyarray__entry(e->fd, x, y))
 #define SID(e, x, y) xyarray__entry(e->sample_id, x, y)

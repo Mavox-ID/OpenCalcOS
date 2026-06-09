@@ -7,7 +7,7 @@
  * by the Free Software Foundation, incorporated herein by reference.
  */
 
-#include <linux/rtnetlink.h>
+#include <beep/rtnetlink.h>
 
 #include "net_driver.h"
 #include "phy.h"

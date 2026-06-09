@@ -39,9 +39,9 @@ struct w1_reg_num
 
 #ifdef __KERNEL__
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
+#include <beep/completion.h>
+#include <beep/device.h>
+#include <beep/mutex.h>
 
 #include "w1_family.h"
 

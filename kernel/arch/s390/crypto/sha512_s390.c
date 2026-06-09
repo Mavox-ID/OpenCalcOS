@@ -14,10 +14,10 @@
  */
 #include <crypto/internal/hash.h>
 #include <crypto/sha.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 
 #include "sha.h"
 #include "crypt_s390.h"

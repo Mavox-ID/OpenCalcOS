@@ -16,15 +16,15 @@
  *		heavily optimized ring buffer access function.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/spi/spi.h>
+#include <beep/sysfs.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
 
 #define KXSD9_REG_X		0x00
 #define KXSD9_REG_Y		0x02

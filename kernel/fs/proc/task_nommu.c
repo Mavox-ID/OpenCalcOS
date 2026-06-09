@@ -1,12 +1,12 @@
 
-#include <linux/mm.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/fs_struct.h>
-#include <linux/mount.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
+#include <beep/mm.h>
+#include <beep/file.h>
+#include <beep/fdtable.h>
+#include <beep/fs_struct.h>
+#include <beep/mount.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/seq_file.h>
 #include "internal.h"
 
 /*

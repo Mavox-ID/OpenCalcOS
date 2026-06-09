@@ -5,9 +5,9 @@
 #ifndef __CTTIMER_H
 #define __CTTIMER_H
 
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/list.h>
+#include <beep/spinlock.h>
+#include <beep/timer.h>
+#include <beep/list.h>
 
 struct snd_pcm_substream;
 struct ct_atc;

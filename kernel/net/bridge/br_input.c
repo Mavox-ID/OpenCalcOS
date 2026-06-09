@@ -1,6 +1,6 @@
 /*
  *	Handle incoming frames
- *	Linux ethernet bridge
+ *	Beep ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -11,12 +11,12 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/netfilter_bridge.h>
+#include <beep/export.h>
 #include "br_private.h"
 
 /* Hook for brouter */

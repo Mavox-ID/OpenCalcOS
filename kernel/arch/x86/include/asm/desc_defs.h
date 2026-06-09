@@ -9,7 +9,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * FIXME: Accessing the desc_struct through its fields is more elegant,

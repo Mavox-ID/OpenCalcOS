@@ -12,19 +12,19 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/bcd.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/completion.h>
-#include <linux/mfd/wm831x/core.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/random.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/time.h>
+#include <beep/rtc.h>
+#include <beep/slab.h>
+#include <beep/bcd.h>
+#include <beep/interrupt.h>
+#include <beep/ioctl.h>
+#include <beep/completion.h>
+#include <beep/mfd/wm831x/core.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/random.h>
 
 /*
  * R16416 (0x4020) - RTC Write Counter

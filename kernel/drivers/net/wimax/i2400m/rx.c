@@ -32,7 +32,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  *
- * Intel Corporation <linux-wimax@intel.com>
+ * Intel Corporation <beep-wimax@intel.com>
  * Yanir Lubetkin <yanirx.lubetkin@intel.com>
  *  - Initial implementation
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
@@ -144,13 +144,13 @@
  *       i2400m_msg_size_check
  *       wimax_msg
  */
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/workqueue.h>
-#include <linux/export.h>
-#include <linux/moduleparam.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/if_arp.h>
+#include <beep/netdevice.h>
+#include <beep/workqueue.h>
+#include <beep/export.h>
+#include <beep/moduleparam.h>
 #include "i2400m.h"
 
 

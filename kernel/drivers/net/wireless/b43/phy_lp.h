@@ -1,5 +1,5 @@
-#ifndef LINUX_B43_PHY_LP_H_
-#define LINUX_B43_PHY_LP_H_
+#ifndef BEEP_B43_PHY_LP_H_
+#define BEEP_B43_PHY_LP_H_
 
 /* Definitions for the LP-PHY */
 
@@ -909,4 +909,4 @@ enum tssi_mux_mode {
 struct b43_phy_operations;
 extern const struct b43_phy_operations b43_phyops_lp;
 
-#endif /* LINUX_B43_PHY_LP_H_ */
+#endif /* BEEP_B43_PHY_LP_H_ */

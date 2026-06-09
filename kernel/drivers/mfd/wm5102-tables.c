@@ -10,10 +10,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/mfd/arizona/core.h>
-#include <linux/mfd/arizona/registers.h>
+#include <beep/mfd/arizona/core.h>
+#include <beep/mfd/arizona/registers.h>
 
 #include "arizona.h"
 

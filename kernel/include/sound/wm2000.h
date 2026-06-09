@@ -1,5 +1,5 @@
 /*
- * linux/sound/wm2000.h -- Platform data for WM2000
+ * beep/sound/wm2000.h -- Platform data for WM2000
  *
  * Copyright 2010 Wolfson Microelectronics. PLC.
  *
@@ -8,8 +8,8 @@
  * published by the Free Software Foundation.
  */
 
-#ifndef __LINUX_SND_WM2000_H
-#define __LINUX_SND_WM2000_H
+#ifndef __BEEP_SND_WM2000_H
+#define __BEEP_SND_WM2000_H
 
 struct wm2000_platform_data {
 	/** Filename for system-specific image to download to device. */

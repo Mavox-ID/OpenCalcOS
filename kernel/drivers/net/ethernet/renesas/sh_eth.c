@@ -20,26 +20,26 @@
  *  the file called "COPYING".
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/mdio-bitbang.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/cache.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/clk.h>
-#include <linux/sh_eth.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/mdio-bitbang.h>
+#include <beep/netdevice.h>
+#include <beep/phy.h>
+#include <beep/cache.h>
+#include <beep/io.h>
+#include <beep/pm_runtime.h>
+#include <beep/slab.h>
+#include <beep/ethtool.h>
+#include <beep/if_vlan.h>
+#include <beep/clk.h>
+#include <beep/sh_eth.h>
 
 #include "sh_eth.h"
 

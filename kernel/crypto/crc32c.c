@@ -15,8 +15,8 @@
  * month =        {June},
  *}
  * Used by the iSCSI driver, possibly others, and derived from the
- * the iscsi-crc.c module of the linux-iscsi driver at
- * http://linux-iscsi.sourceforge.net.
+ * the iscsi-crc.c module of the beep-iscsi driver at
+ * http://beep-iscsi.sourceforge.net.
  *
  * Following the example of lib/crc32, this function is intended to be
  * flexible and useful for all users.  Modules that currently have their
@@ -36,11 +36,11 @@
  */
 
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/crc32.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/crc32.h>
 
 #define CHKSUM_BLOCK_SIZE	1
 #define CHKSUM_DIGEST_SIZE	4

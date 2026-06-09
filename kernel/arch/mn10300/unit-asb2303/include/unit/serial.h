@@ -14,7 +14,7 @@
 
 #include <asm/cpu-regs.h>
 #include <proc/irq.h>
-#include <linux/serial_reg.h>
+#include <beep/serial_reg.h>
 
 #define SERIAL_PORT0_BASE_ADDRESS	0xA6FB0000
 #define SERIAL_PORT1_BASE_ADDRESS	0xA6FC0000

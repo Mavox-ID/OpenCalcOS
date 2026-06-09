@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/proc-v7.S
+ *  beep/arch/arm/mm/proc-v7.S
  *
  *  Copyright (C) 2001 Deep Blue Solutions Ltd.
  *
@@ -9,8 +9,8 @@
  *
  *  This is the "shell" of the ARMv7 processor support.
  */
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/hwcap.h>

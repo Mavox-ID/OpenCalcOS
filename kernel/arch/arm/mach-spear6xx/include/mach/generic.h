@@ -14,7 +14,7 @@
 #ifndef __MACH_GENERIC_H
 #define __MACH_GENERIC_H
 
-#include <linux/init.h>
+#include <beep/init.h>
 
 void __init spear_setup_of_timer(void);
 void spear_restart(char, const char *);

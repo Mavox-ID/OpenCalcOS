@@ -17,7 +17,7 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 #include <sound/ac97_codec.h>
 #include <sound/asoundef.h>
 #include <sound/control.h>

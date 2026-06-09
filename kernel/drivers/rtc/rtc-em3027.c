@@ -11,10 +11,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/i2c.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/module.h>
+#include <beep/i2c.h>
+#include <beep/rtc.h>
+#include <beep/bcd.h>
+#include <beep/module.h>
 
 /* Registers */
 #define EM3027_REG_ON_OFF_CTRL	0x00

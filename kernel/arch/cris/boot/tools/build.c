@@ -1,5 +1,5 @@
 /*
- *  linux/tools/build.c
+ *  beep/tools/build.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */

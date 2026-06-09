@@ -3,7 +3,7 @@
  *              This is included directly into the trap table.
  *
  * Copyright (C) 1996,1998 David S. Miller (davem@redhat.com)
- * Copyright (C) 1997,1998 Jakub Jelinek   (jj@ultra.linux.cz)
+ * Copyright (C) 1997,1998 Jakub Jelinek   (jj@ultra.beep.cz)
  */
 
 /* Ways we can get here:

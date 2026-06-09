@@ -4,9 +4,9 @@
  * Copyright (C) 2005-2011  NTT DATA CORPORATION
  */
 
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/security.h>
+#include <beep/uaccess.h>
+#include <beep/slab.h>
+#include <beep/security.h>
 #include "common.h"
 
 /* String table for operation mode. */

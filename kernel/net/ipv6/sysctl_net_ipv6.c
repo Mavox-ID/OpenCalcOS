@@ -5,12 +5,12 @@
  * YOSHIFUJI Hideaki @USAGI:	added icmp sysctl table.
  */
 
-#include <linux/mm.h>
-#include <linux/sysctl.h>
-#include <linux/in6.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/mm.h>
+#include <beep/sysctl.h>
+#include <beep/in6.h>
+#include <beep/ipv6.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include <net/ndisc.h>
 #include <net/ipv6.h>
 #include <net/addrconf.h>

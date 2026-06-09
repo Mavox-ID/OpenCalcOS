@@ -1,11 +1,11 @@
 /*
- * linux/fs/jbd/journal.c
+ * beep/fs/jbd/journal.c
  *
  * Written by Stephen C. Tweedie <sct@redhat.com>, 1998
  *
  * Copyright 1998 Red Hat corp --- All Rights Reserved
  *
- * This file is part of the Linux kernel and is made available under
+ * This file is part of the Beep kernel and is made available under
  * the terms of the GNU General Public License, version 2, or at your
  * option, any later version, incorporated herein by reference.
  *
@@ -22,21 +22,21 @@
  * journaling (ext2 can use a reserved inode for storing the log).
  */
 
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/jbd.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/freezer.h>
-#include <linux/pagemap.h>
-#include <linux/kthread.h>
-#include <linux/poison.h>
-#include <linux/proc_fs.h>
-#include <linux/debugfs.h>
-#include <linux/ratelimit.h>
+#include <beep/module.h>
+#include <beep/time.h>
+#include <beep/fs.h>
+#include <beep/jbd.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/freezer.h>
+#include <beep/pagemap.h>
+#include <beep/kthread.h>
+#include <beep/poison.h>
+#include <beep/proc_fs.h>
+#include <beep/debugfs.h>
+#include <beep/ratelimit.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/jbd.h>

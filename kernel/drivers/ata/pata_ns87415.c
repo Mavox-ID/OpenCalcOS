@@ -22,16 +22,16 @@
  *	See if we need to kill the FIFO for ATAPI
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/device.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
-#include <linux/ata.h>
+#include <beep/libata.h>
+#include <beep/ata.h>
 
 #define DRV_NAME	"pata_ns87415"
 #define DRV_VERSION	"0.0.1"

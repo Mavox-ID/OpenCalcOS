@@ -30,8 +30,8 @@
 #ifndef _ATMEL_SSC_DAI_H
 #define _ATMEL_SSC_DAI_H
 
-#include <linux/types.h>
-#include <linux/atmel-ssc.h>
+#include <beep/types.h>
+#include <beep/atmel-ssc.h>
 
 #include "atmel-pcm.h"
 
@@ -50,7 +50,7 @@
 #define SSC_DIR_MASK_CAPTURE	2
 
 /*
- * SSC register values that Atmel left out of <linux/atmel-ssc.h>.  These
+ * SSC register values that Atmel left out of <beep/atmel-ssc.h>.  These
  * are expected to be used with SSC_BF
  */
 /* START bit field values */

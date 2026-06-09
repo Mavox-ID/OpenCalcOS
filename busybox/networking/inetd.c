@@ -503,7 +503,7 @@ static void register_rpc(servtab_t *sep)
 	struct sockaddr_in ir_sin;
 
 	if (bb_getsockname(sep->se_fd, (struct sockaddr *) &ir_sin, sizeof(ir_sin)) < 0) {
-//TODO: verify that such failure is even possible in Linux kernel
+//TODO: verify that such failure is even possible in Beep kernel
 		bb_simple_perror_msg("getsockname");
 		return;
 	}
@@ -533,7 +533,7 @@ static void bump_nofile(void)
 	enum { FD_CHUNK = 32 };
 	struct rlimit rl;
 
-	/* Never fails under Linux (except if you pass it bad arguments) */
+	/* Never fails under Beep (except if you pass it bad arguments) */
 	getrlimit(RLIMIT_NOFILE, &rl);
 	rl.rlim_cur = MIN(rl.rlim_max, rl.rlim_cur + FD_CHUNK);
 	rl.rlim_cur = MIN(FD_SETSIZE, rl.rlim_cur + FD_CHUNK);
@@ -1258,7 +1258,7 @@ int inetd_main(int argc UNUSED_PARAM, char **argv)
 
 	write_pidfile_std_path_and_ext("inetd");
 
-	/* never fails under Linux (except if you pass it bad arguments) */
+	/* never fails under Beep (except if you pass it bad arguments) */
 	getrlimit(RLIMIT_NOFILE, &rlim_ofile);
 	rlim_ofile_cur = rlim_ofile.rlim_cur;
 	if (rlim_ofile_cur == RLIM_INFINITY)    /* ! */

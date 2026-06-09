@@ -9,24 +9,24 @@
  * published by the Free Software Foundation.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/cache.h>
-#include <linux/capability.h>
-#include <linux/skbuff.h>
-#include <linux/kmod.h>
-#include <linux/vmalloc.h>
-#include <linux/netdevice.h>
-#include <linux/module.h>
-#include <linux/icmp.h>
+#include <beep/cache.h>
+#include <beep/capability.h>
+#include <beep/skbuff.h>
+#include <beep/kmod.h>
+#include <beep/vmalloc.h>
+#include <beep/netdevice.h>
+#include <beep/module.h>
+#include <beep/icmp.h>
 #include <net/ip.h>
 #include <net/compat.h>
 #include <asm/uaccess.h>
-#include <linux/mutex.h>
-#include <linux/proc_fs.h>
-#include <linux/err.h>
-#include <linux/cpumask.h>
+#include <beep/mutex.h>
+#include <beep/proc_fs.h>
+#include <beep/err.h>
+#include <beep/cpumask.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_ipv4/ip_tables.h>
 #include <net/netfilter/nf_log.h>
 #include "../../netfilter/xt_repldata.h"
 

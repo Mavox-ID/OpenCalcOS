@@ -53,11 +53,11 @@
 
 #include <drm/ttm/ttm_object.h>
 #include <drm/ttm/ttm_module.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/atomic.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/atomic.h>
 
 struct ttm_object_file {
 	struct ttm_object_device *tdev;

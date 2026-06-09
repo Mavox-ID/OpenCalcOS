@@ -13,7 +13,7 @@
 #include <sound/info.h>
 #include <sound/control.h>
 #include <sound/ac97_codec.h>
-#include <linux/gpio.h>
+#include <beep/gpio.h>
 
 #include <asm/olpc.h>
 #include "cs5535audio.h"

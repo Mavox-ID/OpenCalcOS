@@ -11,7 +11,7 @@
  *
  *  Group scheduling enhancements by Srivatsa Vaddagiri
  *  Copyright IBM Corporation, 2007
- *  Author: Srivatsa Vaddagiri <vatsa@linux.vnet.ibm.com>
+ *  Author: Srivatsa Vaddagiri <vatsa@beep.vnet.ibm.com>
  *
  *  Scaled math optimizations by Thomas Gleixner
  *  Copyright (C) 2007, Thomas Gleixner <tglx@linutronix.de>
@@ -20,15 +20,15 @@
  *  Copyright (C) 2007 Red Hat, Inc., Peter Zijlstra <pzijlstr@redhat.com>
  */
 
-#include <linux/latencytop.h>
-#include <linux/sched.h>
-#include <linux/cpumask.h>
-#include <linux/slab.h>
-#include <linux/profile.h>
-#include <linux/interrupt.h>
-#include <linux/mempolicy.h>
-#include <linux/migrate.h>
-#include <linux/task_work.h>
+#include <beep/latencytop.h>
+#include <beep/sched.h>
+#include <beep/cpumask.h>
+#include <beep/slab.h>
+#include <beep/profile.h>
+#include <beep/interrupt.h>
+#include <beep/mempolicy.h>
+#include <beep/migrate.h>
+#include <beep/task_work.h>
 
 #include <trace/events/sched.h>
 

@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/include/plat/s5p-clock.h
+/* beep/arch/arm/plat-samsung/include/plat/s5p-clock.h
  *
  * Copyright (c) 2009-2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -13,7 +13,7 @@
 #ifndef __ASM_PLAT_S5P_CLOCK_H
 #define __ASM_PLAT_S5P_CLOCK_H __FILE__
 
-#include <linux/clk.h>
+#include <beep/clk.h>
 
 #define GET_DIV(clk, field) ((((clk) & field##_MASK) >> field##_SHIFT) + 1)
 

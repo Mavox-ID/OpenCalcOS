@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2001-2002	Andre Hedrick <andre@linux-ide.org>
+ * Copyright (C) 2001-2002	Andre Hedrick <andre@beep-ide.org>
  * Copyright (C) 2003		Red Hat
  * Copyright (C) 2007-2008	MontaVista Software, Inc.
  * Copyright (C) 2007-2008	Bartlomiej Zolnierkiewicz
@@ -35,12 +35,12 @@
  * - VDMA support
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/ide.h>
+#include <beep/init.h>
+#include <beep/io.h>
 
 #define DRV_NAME "siimage"
 

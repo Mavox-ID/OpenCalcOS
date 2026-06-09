@@ -20,13 +20,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/libata.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/libata.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
 
 #include <scsi/scsi_host.h>
 #include <mach/palmld.h>

@@ -21,8 +21,8 @@
  *               David Schleef <ds@schleef.org>
  */
 
-#include <linux/init.h>
-#include <linux/ioport.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
 #include <asm/mach-powertv/asic.h>
 #include "prealloc.h"
 

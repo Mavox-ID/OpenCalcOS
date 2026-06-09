@@ -23,9 +23,9 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>
 
 #include <cluster/masklog.h>
 

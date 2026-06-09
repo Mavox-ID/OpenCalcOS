@@ -13,7 +13,7 @@
 #else /* !__ASSEMBLY__ */
 
 
-#include <linux/threads.h>
+#include <beep/threads.h>
 
 #ifdef CONFIG_SMP
 

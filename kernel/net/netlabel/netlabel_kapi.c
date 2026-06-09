@@ -28,18 +28,18 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/audit.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/audit.h>
+#include <beep/in.h>
+#include <beep/in6.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 #include <net/netlabel.h>
 #include <net/cipso_ipv4.h>
 #include <asm/bug.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include "netlabel_domainhash.h"
 #include "netlabel_unlabeled.h"

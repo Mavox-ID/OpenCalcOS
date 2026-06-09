@@ -1,5 +1,5 @@
 /*
- * Linux GPIOlib driver for the VIA VX855 integrated southbridge GPIO
+ * Beep GPIOlib driver for the VIA VX855 integrated southbridge GPIO
  *
  * Copyright (C) 2009 VIA Technologies, Inc.
  * Copyright (C) 2010 One Laptop per Child
@@ -23,14 +23,14 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/pci.h>
+#include <beep/io.h>
 
 #define MODULE_NAME "vx855_gpio"
 

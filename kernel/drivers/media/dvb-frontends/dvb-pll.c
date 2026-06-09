@@ -18,9 +18,9 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/dvb/frontend.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/dvb/frontend.h>
 #include <asm/types.h>
 
 #include "dvb-pll.h"

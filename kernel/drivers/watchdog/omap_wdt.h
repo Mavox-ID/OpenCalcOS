@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/char/watchdog/omap_wdt.h
+ *  beep/drivers/char/watchdog/omap_wdt.h
  *
  *  BRIEF MODULE DESCRIPTION
  *      OMAP Watchdog timer register definitions

@@ -1,5 +1,5 @@
 #
-# Makefile for Linux arch/m68k/amiga source directory
+# Makefile for Beep arch/m68k/amiga source directory
 #
 
 obj-y		:= config.o amiints.o cia.o chipram.o amisound.o platform.o

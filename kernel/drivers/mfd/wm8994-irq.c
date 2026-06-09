@@ -12,19 +12,19 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/mfd/core.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/irq.h>
+#include <beep/mfd/core.h>
+#include <beep/interrupt.h>
+#include <beep/regmap.h>
 
-#include <linux/mfd/wm8994/core.h>
-#include <linux/mfd/wm8994/pdata.h>
-#include <linux/mfd/wm8994/registers.h>
+#include <beep/mfd/wm8994/core.h>
+#include <beep/mfd/wm8994/pdata.h>
+#include <beep/mfd/wm8994/registers.h>
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 static struct regmap_irq wm8994_irqs[] = {
 	[WM8994_IRQ_TEMP_SHUT] = {

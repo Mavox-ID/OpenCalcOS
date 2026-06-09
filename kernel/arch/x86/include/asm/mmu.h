@@ -1,8 +1,8 @@
 #ifndef _ASM_X86_MMU_H
 #define _ASM_X86_MMU_H
 
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
 
 /*
  * The x86 doesn't have a mmu context, but

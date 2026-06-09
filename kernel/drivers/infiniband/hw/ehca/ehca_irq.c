@@ -1,5 +1,5 @@
 /*
- *  IBM eServer eHCA Infiniband device driver for Linux on POWER
+ *  IBM eServer eHCA Infiniband device driver for Beep on POWER
  *
  *  Functions for EQs, NEQs and interrupts
  *
@@ -41,8 +41,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/slab.h>
-#include <linux/smpboot.h>
+#include <beep/slab.h>
+#include <beep/smpboot.h>
 
 #include "ehca_classes.h"
 #include "ehca_irq.h"

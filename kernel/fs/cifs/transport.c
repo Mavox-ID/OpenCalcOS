@@ -20,18 +20,18 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/gfp.h>
-#include <linux/wait.h>
-#include <linux/net.h>
-#include <linux/delay.h>
-#include <linux/freezer.h>
-#include <linux/tcp.h>
-#include <linux/highmem.h>
+#include <beep/fs.h>
+#include <beep/list.h>
+#include <beep/gfp.h>
+#include <beep/wait.h>
+#include <beep/net.h>
+#include <beep/delay.h>
+#include <beep/freezer.h>
+#include <beep/tcp.h>
+#include <beep/highmem.h>
 #include <asm/uaccess.h>
 #include <asm/processor.h>
-#include <linux/mempool.h>
+#include <beep/mempool.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
 #include "cifsproto.h"
@@ -631,7 +631,7 @@ cifs_check_receive(struct mid_q_entry *mid, struct TCP_Server_Info *server,
 	}
 
 	/* BB special case reconnect tid and uid here? */
-	return map_smb_to_linux_error(mid->resp_buf, log_error);
+	return map_smb_to_beep_error(mid->resp_buf, log_error);
 }
 
 struct mid_q_entry *

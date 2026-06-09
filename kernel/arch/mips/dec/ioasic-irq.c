@@ -9,9 +9,9 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/types.h>
 
 #include <asm/dec/ioasic.h>
 #include <asm/dec/ioasic_addrs.h>

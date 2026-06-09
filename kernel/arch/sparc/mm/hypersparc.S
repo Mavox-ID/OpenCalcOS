@@ -10,7 +10,7 @@
 #include <asm/asi.h>
 #include <asm/page.h>
 #include <asm/pgtsrmmu.h>
-#include <linux/init.h>
+#include <beep/init.h>
 
 	.text
 	.align	4

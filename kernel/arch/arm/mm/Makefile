@@ -1,5 +1,5 @@
 #
-# Makefile for the linux arm-specific parts of the memory manager.
+# Makefile for the beep arm-specific parts of the memory manager.
 #
 
 obj-y				:= dma-mapping.o extable.o fault.o init.o \

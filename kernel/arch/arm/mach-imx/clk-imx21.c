@@ -18,12 +18,12 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/err.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/clk-provider.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/err.h>
 
 #include "clk.h"
 #include "common.h"

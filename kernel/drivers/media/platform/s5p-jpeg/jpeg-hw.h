@@ -1,4 +1,4 @@
-/* linux/drivers/media/platform/s5p-jpeg/jpeg-hw.h
+/* beep/drivers/media/platform/s5p-jpeg/jpeg-hw.h
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -12,8 +12,8 @@
 #ifndef JPEG_HW_H_
 #define JPEG_HW_H_
 
-#include <linux/io.h>
-#include <linux/videodev2.h>
+#include <beep/io.h>
+#include <beep/videodev2.h>
 
 #include "jpeg-hw.h"
 #include "jpeg-regs.h"

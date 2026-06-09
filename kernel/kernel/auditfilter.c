@@ -19,16 +19,16 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/audit.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/netlink.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/security.h>
+#include <beep/kernel.h>
+#include <beep/audit.h>
+#include <beep/kthread.h>
+#include <beep/mutex.h>
+#include <beep/fs.h>
+#include <beep/namei.h>
+#include <beep/netlink.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/security.h>
 #include "audit.h"
 
 /*
@@ -44,7 +44,7 @@
  * 		be written directly provided audit_filter_mutex is held.
  */
 
-/* Audit filter lists, defined in <linux/audit.h> */
+/* Audit filter lists, defined in <beep/audit.h> */
 struct list_head audit_filter_list[AUDIT_NR_FILTERS] = {
 	LIST_HEAD_INIT(audit_filter_list[0]),
 	LIST_HEAD_INIT(audit_filter_list[1]),
@@ -1149,7 +1149,7 @@ static void audit_log_rule_change(kuid_t loginuid, u32 sessionid, u32 sid,
  * @datasz: size of payload data
  * @loginuid: loginuid of sender
  * @sessionid: sessionid for netlink audit message
- * @sid: SE Linux Security ID of sender
+ * @sid: SE Beep Security ID of sender
  */
 int audit_receive_filter(int type, int pid, int seq, void *data,
 			 size_t datasz, kuid_t loginuid, u32 sessionid, u32 sid)

@@ -14,13 +14,13 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_pdt.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/errno.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/of_pdt.h>
 #include <asm/prom.h>
 #include <asm/oplib.h>
 

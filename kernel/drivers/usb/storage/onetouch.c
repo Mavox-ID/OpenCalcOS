@@ -28,12 +28,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/input.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb/input.h>
+#include <beep/kernel.h>
+#include <beep/input.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/usb/input.h>
 #include "usb.h"
 #include "debug.h"
 

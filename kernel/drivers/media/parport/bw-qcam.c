@@ -1,7 +1,7 @@
 /*
- *    QuickCam Driver For Video4Linux.
+ *    QuickCam Driver For Video4Beep.
  *
- *	Video4Linux conversion work by Alan Cox.
+ *	Video4Beep conversion work by Alan Cox.
  *	Parport compatibility by Phil Blundell.
  *	Busy loop avoidance by Mark Cooke.
  *
@@ -62,17 +62,17 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 ******************************************************************/
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/parport.h>
-#include <linux/sched.h>
-#include <linux/videodev2.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/parport.h>
+#include <beep/sched.h>
+#include <beep/videodev2.h>
+#include <beep/mutex.h>
 #include <asm/uaccess.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
@@ -640,7 +640,7 @@ static long qc_capture(struct qcam *q, char __user *buf, unsigned long len)
 }
 
 /*
- *	Video4linux interfacing
+ *	Video4beep interfacing
  */
 
 static int qcam_querycap(struct file *file, void  *priv,

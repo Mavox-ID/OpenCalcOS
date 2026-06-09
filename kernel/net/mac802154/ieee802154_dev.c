@@ -4,7 +4,7 @@
  * Written by:
  * Alexander Smirnov <alex.bluesman.smirnov@gmail.com>
  *
- * Based on the code from 'linux-zigbee.sourceforge.net' project.
+ * Based on the code from 'beep-zigbee.sourceforge.net' project.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2
@@ -20,12 +20,12 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
 
 #include <net/netlink.h>
-#include <linux/nl802154.h>
+#include <beep/nl802154.h>
 #include <net/mac802154.h>
 #include <net/route.h>
 #include <net/wpan-phy.h>

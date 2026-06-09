@@ -1,20 +1,20 @@
 #ifndef _FIREWIRE_FWSERIAL_H
 #define _FIREWIRE_FWSERIAL_H
 
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/list.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/mutex.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
+#include <beep/kernel.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/list.h>
+#include <beep/firewire.h>
+#include <beep/firewire-constants.h>
+#include <beep/spinlock.h>
+#include <beep/rcupdate.h>
+#include <beep/mutex.h>
+#include <beep/serial.h>
+#include <beep/serial_reg.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
 
 #include "dma_fifo.h"
 

@@ -8,13 +8,13 @@
  * Check max730x.c for further details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/i2c.h>
-#include <linux/spi/max7301.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/mutex.h>
+#include <beep/i2c.h>
+#include <beep/spi/max7301.h>
+#include <beep/slab.h>
 
 static int max7300_i2c_write(struct device *dev, unsigned int reg,
 				unsigned int val)

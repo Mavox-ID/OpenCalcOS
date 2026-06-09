@@ -27,16 +27,16 @@
  *
  */
 
-#include <linux/wait.h>
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/kthread.h>
+#include <beep/wait.h>
+#include <beep/time.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/semaphore.h>
+#include <beep/kthread.h>
 #include "ibmphp.h"
 
 static int to_debug = 0;

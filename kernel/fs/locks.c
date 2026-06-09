@@ -1,5 +1,5 @@
 /*
- *  linux/fs/locks.c
+ *  beep/fs/locks.c
  *
  *  Provide support for fcntl()'s F_GETLK, F_SETLK, and F_SETLKW calls.
  *  Doug Evans (dje@spiff.uucp), August 07, 1992
@@ -105,7 +105,7 @@
  *  Andy Walker (andy@lysaker.kvaerner.no), May 12, 1997.
  *
  *  Use slab allocator instead of kmalloc/kfree.
- *  Use generic list implementation from <linux/list.h>.
+ *  Use generic list implementation from <beep/list.h>.
  *  Sped up posix_locks_deadlock by only considering blocked locks.
  *  Matthew Wilcox <willy@debian.org>, March, 2000.
  *
@@ -114,18 +114,18 @@
  *  Stephen Rothwell <sfr@canb.auug.org.au>, June, 2000.
  */
 
-#include <linux/capability.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/time.h>
-#include <linux/rcupdate.h>
-#include <linux/pid_namespace.h>
+#include <beep/capability.h>
+#include <beep/file.h>
+#include <beep/fdtable.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/security.h>
+#include <beep/slab.h>
+#include <beep/syscalls.h>
+#include <beep/time.h>
+#include <beep/rcupdate.h>
+#include <beep/pid_namespace.h>
 
 #include <asm/uaccess.h>
 
@@ -2137,8 +2137,8 @@ int vfs_cancel_lock(struct file *filp, struct file_lock *fl)
 EXPORT_SYMBOL_GPL(vfs_cancel_lock);
 
 #ifdef CONFIG_PROC_FS
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 
 static void lock_get_status(struct seq_file *f, struct file_lock *fl,
 			    loff_t id, char *pfx)

@@ -1,17 +1,17 @@
 /*
- * linux/arch/ia64/sn/kernel/sn2/timer.c
+ * beep/arch/ia64/sn/kernel/sn2/timer.c
  *
  * Copyright (C) 2003 Silicon Graphics, Inc.
  * Copyright (C) 2003 Hewlett-Packard Co
  *	David Mosberger <davidm@hpl.hp.com>: updated for new timer-interpolation infrastructure
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/interrupt.h>
-#include <linux/clocksource.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/time.h>
+#include <beep/interrupt.h>
+#include <beep/clocksource.h>
 
 #include <asm/hw_irq.h>
 #include <asm/timex.h>

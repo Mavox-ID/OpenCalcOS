@@ -21,14 +21,14 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/pci.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/ratelimit.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/pci.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
+#include <beep/ratelimit.h>
 
 #include "dvbdev.h"
 #include "dvb_demux.h"

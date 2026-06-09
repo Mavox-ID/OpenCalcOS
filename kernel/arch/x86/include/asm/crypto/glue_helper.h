@@ -5,8 +5,8 @@
 #ifndef _CRYPTO_GLUE_HELPER_H
 #define _CRYPTO_GLUE_HELPER_H
 
-#include <linux/kernel.h>
-#include <linux/crypto.h>
+#include <beep/kernel.h>
+#include <beep/crypto.h>
 #include <asm/i387.h>
 #include <crypto/b128ops.h>
 

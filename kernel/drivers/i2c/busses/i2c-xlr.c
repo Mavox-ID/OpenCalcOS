@@ -7,16 +7,16 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/i2c.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
 
 /* XLR I2C REGISTERS */
 #define XLR_I2C_CFG		0x00

@@ -7,11 +7,11 @@
  * Copyright (C) 1999, 2000 by Silicon Graphics
  * Copyright (C) 2002  Maciej W. Rozycki
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/signal.h>	/* for SIGBUS */
-#include <linux/sched.h>	/* schow_regs(), force_sig() */
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/signal.h>	/* for SIGBUS */
+#include <beep/sched.h>	/* schow_regs(), force_sig() */
 
 #include <asm/module.h>
 #include <asm/sn/addrs.h>

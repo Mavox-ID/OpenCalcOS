@@ -4,12 +4,12 @@
  * Copyright 1995-2002, Russell King
  */
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/signal.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/blkdev.h>
+#include <beep/init.h>
 
 #include <asm/ecard.h>
 #include <asm/io.h>

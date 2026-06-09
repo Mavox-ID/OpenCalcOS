@@ -10,7 +10,7 @@
 #ifndef EFX_MDIO_10G_H
 #define EFX_MDIO_10G_H
 
-#include <linux/mdio.h>
+#include <beep/mdio.h>
 
 /*
  * Helper functions for doing 10G MDIO as specified in IEEE 802.3 clause 45.

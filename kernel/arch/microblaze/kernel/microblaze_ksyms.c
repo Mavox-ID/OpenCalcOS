@@ -7,19 +7,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/cryptohash.h>
-#include <linux/delay.h>
-#include <linux/in6.h>
-#include <linux/syscalls.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/cryptohash.h>
+#include <beep/delay.h>
+#include <beep/in6.h>
+#include <beep/syscalls.h>
 
 #include <asm/checksum.h>
 #include <asm/cacheflush.h>
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/page.h>
-#include <linux/ftrace.h>
-#include <linux/uaccess.h>
+#include <beep/ftrace.h>
+#include <beep/uaccess.h>
 
 #ifdef CONFIG_FUNCTION_TRACER
 extern void _mcount(void);

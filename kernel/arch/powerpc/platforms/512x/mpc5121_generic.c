@@ -13,8 +13,8 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/of_platform.h>
+#include <beep/kernel.h>
+#include <beep/of_platform.h>
 
 #include <asm/machdep.h>
 #include <asm/ipic.h>

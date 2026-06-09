@@ -18,8 +18,8 @@
 #error "This file is PCI bus glue.  CONFIG_PCI must be defined."
 #endif
 
-#include <linux/pci.h>
-#include <linux/io.h>
+#include <beep/pci.h>
+#include <beep/io.h>
 
 
 /*-------------------------------------------------------------------------*/

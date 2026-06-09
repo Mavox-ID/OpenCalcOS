@@ -6,9 +6,9 @@
  * GPL v2, can be found in COPYING.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/list.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/list.h>
 #include "../aoa.h"
 #include "alsa.h"
 

@@ -5,7 +5,7 @@
  *
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/init.h>
+#include <beep/init.h>
 
 int coherentio;		/* 0 => no DMA cache coherency (may be set by user) */
 int hw_coherentio;	/* 0 => no HW DMA cache coherency (reflects real HW) */

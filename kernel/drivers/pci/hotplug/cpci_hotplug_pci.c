@@ -23,11 +23,11 @@
  * Send feedback to <scottm@somanetworks.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/proc_fs.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/pci_hotplug.h>
+#include <beep/proc_fs.h>
 #include "../pci.h"
 #include "cpci_hotplug.h"
 

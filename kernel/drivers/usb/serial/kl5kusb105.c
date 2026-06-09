@@ -35,18 +35,18 @@
  *	implement handshaking or decide that we do not support it
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
 #include <asm/unaligned.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
 #include "kl5kusb105.h"
 
 #define DRIVER_AUTHOR "Utz-Uwe Haus <haus@uuhaus.de>, Johan Hovold <jhovold@gmail.com>"
@@ -154,7 +154,7 @@ static int klsi_105_chg_port_settings(struct usb_serial_port *port,
 	return rc;
 }
 
-/* translate a 16-bit status value from the device to linux's TIO bits */
+/* translate a 16-bit status value from the device to beep's TIO bits */
 static unsigned long klsi_105_status2linestate(const __u16 status)
 {
 	unsigned long res = 0;

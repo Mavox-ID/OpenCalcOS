@@ -38,12 +38,12 @@
  * ipath_user.h serves a similar purpose for user code.
  */
 
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/scatterlist.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/mutex.h>
+#include <beep/list.h>
+#include <beep/scatterlist.h>
 #include <asm/io.h>
 #include <rdma/ib_verbs.h>
 
